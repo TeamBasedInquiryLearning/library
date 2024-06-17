@@ -95,5 +95,8 @@ GitHub.sublime-settings
 .dropbox.attr
 .dropbox.cache
 
+# Python files
+__pycache__
+
 # Don't track codechat config (will be generated automatically)
 codechat_config.yaml
