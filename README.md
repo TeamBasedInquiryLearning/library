@@ -1,2 +1,3 @@
-# library
-Monorepo for the TBIL library and project webpage
+# My Great Book
+
+Visit <https://pretextbook.org/documentation.html> to learn more.
