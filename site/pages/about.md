@@ -1,5 +1,6 @@
 ---
 title: About TBIL
+slug: about
 ---
 
 ## What is TBIL?
