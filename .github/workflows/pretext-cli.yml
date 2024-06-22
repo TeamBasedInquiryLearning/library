@@ -59,6 +59,7 @@ jobs:
             - name: Create 404.html
               run: echo "404 page not found" >> deploy/404.html
             - name: Publish to Cloudflare
+              id: cloudflare_publish
               uses: cloudflare/pages-action@v1
               with:
                   apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -72,12 +73,11 @@ jobs:
               if: github.event_name == 'pull_request'
               with:
                 script: |
-                  branch = `${{ github.head_ref || github.ref_name }}`.replace('/'', '-')
                   github.rest.issues.createComment({
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: `🚀 Preview available at https://${branch}.tbil.pages.dev 🚀`
+                    body: '🚀 Preview available at ${{ steps.cloudflare_publish.outputs.url }} 🚀'
                   })
 
     deploy-ghpages:
