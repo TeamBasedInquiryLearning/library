@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Demonstrate and explain how to find the derivative of the following functions.
+            Be sure to explicitly denote which derivative rules (constant multiple, sum and difference, etc.) you are using in your work.
+        </p>
+    </intro>
+    <!-- {{#functions}} -->
+        <knowl>
+            <!-- {{#frac}} -->
+                <content><p><me>
+                    {{fn}}({{x}}) = \left( {{frac}} \right)^{ {{exp}} }
+                </me></p></content>
+                <outtro><p><me>
+                    {{fn}} ' ({{x}}) = {{exp}}
+                    \left( {{frac}} \right)^{ {{exp_m1}} }
+                    \left( {{dfrac}} \right)
+                </me></p></outtro>
+            <!-- {{/frac}} -->
+            <!-- {{^frac}} -->
+                <content><p><me>{{fn}}({{x}}) = {{f}}</me></p></content>
+                <outtro><p><me>{{fn}} ' ({{x}}) = {{df}}</me></p></outtro>
+            <!-- {{/frac}} -->
+        </knowl>
+    <!-- {{/functions}} -->
+</knowl>
+
+

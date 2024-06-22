@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Explain how to find
+the value of each limit.
+        </p>
+    </intro>
+    {{#limits}}
+        <knowl>
+            <content><p><me>
+\lim_{x\to-\infty } {{frac}}
+\,\text{ and }\,
+\lim_{x\to+\infty } {{frac}}
+            </me></p></content>
+            <outtro><p><me>
+\lim_{x\to-\infty } {{frac}} = {{neg_limit}}
+\,\text{ and }\,
+\lim_{x\to+\infty } {{frac}} = {{pos_limit}}
+            </me></p></outtro>
+        </knowl>
+    {{/limits}}
+</knowl>

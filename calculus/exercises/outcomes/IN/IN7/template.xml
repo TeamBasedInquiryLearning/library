@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Answer the following questions concerning
+<m>f(x)={{fx}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+What is the total area between <m>f(x)={{fx}}</m> and the <m>x</m>-axis
+from <m>x={{a}}</m> to <m>x={{b}}</m>?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+\left| \int_{ {{a}} }^{ {{z}} } 
+\left( {{fx}} \right) dx \right| +
+\left| \int_{ {{z}} }^{ {{b}} } 
+\left( {{fx}} \right) dx \right| = {{ total }}
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+What is the net area between <m>f(x)={{fx}}</m> and the <m>x</m>-axis
+from <m>x={{a}}</m> to <m>x={{b}}</m>?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+\int_{ {{a}} }^{ {{b}} } 
+\left( {{fx}} \right) dx = {{ net }}
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

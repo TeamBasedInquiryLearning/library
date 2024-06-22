@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+    <!-- {{#ladder}} -->
+
+            <content>
+                <p>
+                    Suppose a ladder of length <m>{{ladderlength}}</m> ft is leaning against a wall.  Then the base of the ladder is pulled away from the wall at a rate of <m>{{velocityx}}</m> feet/second.  What is the velocity of the top of the ladder when the base of the ladder is <m>{{distancex}}</m> feet away from the wall?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>-\frac{ {{numerator}} }{ {{distancey}} }\approx {{velyround}}</m> feet/second.
+                </p>
+            </outtro>
+
+    <!-- {{/ladder}} -->
+
+
+    <!-- {{#oilslick}} -->
+
+            <content>
+                <p>
+                    Suppose an oil spill in the ocean formed a circle and was growing at a rate of <m>{{dadt}}</m> feet<m>^2/</m>minute.  When the oil slick reaches a radius of <m>{{radius}}</m>, how fast is the radius of the oil spill growing?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>\frac{ {{dadt}} }{ {{denomoil}} }\approx {{drdtround}}</m> feet/minute.
+                </p>
+            </outtro>
+
+    <!-- {{/oilslick}} -->
+
+
+    <!-- {{#shadow}} -->
+
+            <content>
+                <p>
+                    Suppose a person who was <m> {{heightperson}} </m> feet tall was standing between a light on the ground and a wall.  They are <m>{{disttolight}}</m> feet away from the light and <m>{{disttowall}}</m> feet away from the wall.  If they start walking torwards the {{persondirection}} at a speed of <m>{{personspeed}}</m> feet/second, how fast would the height of the shadow they cast change and in what direction?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{dHdtround}}</m> feet/second {{shadowdirection}}.
+                </p>
+            </outtro>
+
+    <!-- {{/shadow}} -->
+
+    <!-- {{#car}} -->
+
+            <content>
+                <p>
+                    Suppose a car was <m>{{d1}}</m> miles east of a town, traveling {{direction1}} at <m>{{s1}}</m> mph.  A second car was <m>{{d2}}</m> miles north of the same town, traveling {{direction2}} at <m>{{s2}}</m> mph.  At this exact moment, how fast is the distance between the cars changing?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>\frac{ {{numcar}} }{ {{distcar}} }\approx {{dDdtround}}</m> mph.
+                </p>
+            </outtro>
+
+    <!-- {{/car}} -->
+
+</knowl>

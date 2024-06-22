@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
+                Explain and demonstrate how to find the anti-derivative of <m>\renewcommand{\log}{\ln} f(x)={{dfdx}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\renewcommand{\log}{\ln}
+                \displaystyle \int {{dfdx}} dx={{f}}+C.</m>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                Explain and demonstrate how to evaluate the following definite integral:
+                <me>
+                    \renewcommand{\log}{\ln} \int_{ {{a}} }^{ {{b}} } {{g}} dx.
+                </me>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\renewcommand{\log}{\ln} \displaystyle \int_{ {{a}} }^{ {{b}} } {{g}} dx = {{defint}}.</m>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

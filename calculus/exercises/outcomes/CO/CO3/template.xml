@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Given the vector equation <m>\hat{ {{name}} }(t)=\langle {{xt}}, {{yt}} \rangle</m>, write a definite integral which computes the length of the curve defined by <m>{{a}}\leq t \leq {{b}}</m>.
+        </p>
+    </content>
+    <outtro>
+        <p><m>\displaystyle \int_{ {{a}} }^{ {{b}} } \sqrt{ \left( {{xtd}}\right)^2+\left( {{ytd}}\right)^2} dt</m>.</p>
+    </outtro>
+</knowl>

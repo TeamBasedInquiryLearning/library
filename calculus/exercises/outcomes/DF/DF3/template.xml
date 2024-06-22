@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Demonstrate and explain how to find the derivative of the following functions.
+Be sure to explicitly denote which derivative rules (scalar multiple, sum/difference, etc.) you are using in your work.
+(Note that we use the notation <m>\log(x)=\ln(x)=\log_e(x)</m>.)
+        </p>
+    </intro>
+    <!-- {{#fs}} -->
+        <knowl>
+            <content>
+                <p>
+<me>{{fn}}({{x}}) = {{f}}</me>
+                </p>
+            </content>
+            <outtro>
+                <p>
+<me>{{fn}}'({{x}}) = {{df}}</me>
+                </p>
+            </outtro>
+        </knowl>
+    <!-- {{/fs}} -->
+</knowl>
+

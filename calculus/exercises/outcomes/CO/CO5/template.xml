@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Find an integral computing the arclength of the polar curved defined by <m>r={{f}}</m> on <m>{{a}}\leq \theta \leq {{b}}</m>.
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>\displaystyle \int_{ {{a}} }^{ {{b}} }\sqrt{\left({{df}}\right)^2+\left({{f}}\right)^2 } d\theta</m>.
+        </p>
+    </outtro>
+</knowl>

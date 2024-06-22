@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#tasks}} -->
+    <!-- {{#parameter}} -->
+        <knowl>
+            <content>
+                <p>Determine the value of <m>b</m> to make <m>{{fn}}(x)</m> continuous at <m>x={{x}}</m>. Explain your reasoning using limits.</p>
+                <p>
+                    <me>
+                        {{fn}}(x) = \begin{cases}
+                        {{f1}}, &amp; x {{f1ineq}} {{x}} \\
+                        {{f2}}, &amp; x {{f2ineq}} {{x}}
+                        \end{cases}
+                    </me>
+                </p>
+            </content>
+            <outtro><p>To make <m>{{fn}}(x)</m> continuous at <m>x={{x}}</m>, let <m>b={{parameter}}</m>.</p></outtro>
+        </knowl>
+    <!-- {{/parameter}} -->
+    <!-- {{#discontinuity}} -->
+        <knowl>
+            <content>
+                <p>
+Classify the type of discontinuity present at <m>x={{a}}</m> for 
+the function <m>{{fn}}(x)</m>. Explain your reasoning using limits. </p>
+                <p>
+                    <me>
+                        {{fn}}(x) = \begin{cases}
+                        {{f1}}, &amp; x &lt; {{a}} \\
+                        {{f2}}, &amp; x = {{a}} \\
+                        {{f3}}, &amp; x &gt; {{a}} \\
+                        \end{cases}
+                    </me>
+                </p>
+            </content>
+            <outtro>
+                <p>
+The function <m>{{fn}}(x)</m> has a
+    <!-- {{#jump}} -->
+    jump
+    <!-- {{/jump}} -->
+    <!-- {{^jump}} -->
+    removable
+    <!-- {{/jump}}  -->
+discontinuity.
+                </p>
+            </outtro>
+        </knowl>
+    <!-- {{/discontinuity}} -->
+    <!-- {{/tasks}} -->
+</knowl>

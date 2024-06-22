@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Find <m>f'(x)</m> using the limit definition of the derivative. Then evaluate at <m>x={{a}}</m>.
+        </p>
+        <p>
+            <me>
+                f(x) = {{f}}
+            </me>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <me>
+                f'(x) = {{dfdx}}
+            </me>
+            <me> 
+                f'({{a}}) = {{dfdxa}}
+            </me>
+        </p>
+    </outtro>
+</knowl>

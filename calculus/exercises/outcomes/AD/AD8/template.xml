@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+
+        <!-- {{#box}} -->
+            <!-- {{#wording0}} -->
+            <p>
+You've been asked to design a metalic box that is constructed from a
+rectangular sheet of metal of size <m>{{length}} \times {{width}}</m> {{units}}<m>^2</m>.
+Four equally sized squares must be cut from each corner of the rectangle, so that the remaining
+material can be folded and welded into a lidless box. How large should these
+squares be to maximize the volume that this box can contain?
+            </p>
+            <!-- {{/wording0}} -->
+            <!-- {{#wording1}} -->
+            <p>
+Suppose you wished to build a gift box from a rectangular sheet
+of construction paper that measures <m>{{length}}</m> {{units}} long by
+<m>{{width}}</m> {{units}} wide. By cutting identical square pieces from each
+corner, the sides can be folded up and taped together, creating a lidless box.
+How large should you cut these squares so that the resulting box has maximum volume?
+            </p>
+            <!-- {{/wording1}} -->
+            <!-- {{#wording2}} -->
+            <p>
+Suppose you wished to design a metalic box that is constructed from a
+rectangular sheet of metal of size <m>{{length}}</m> by <m>{{width}}</m> {{units}}<m>^2</m>.
+Four equally sized squares must be cut from each corner of the rectangle, so that the remaining
+material can be folded and welded into a lidless box. How large should these
+squares be to maximize the volume that this box can contain?
+            </p>
+            <!-- {{/wording2}} -->
+            <!-- {{#wording3}} -->
+            <p>
+You've been asked to build a gift box from a rectangular sheet
+of construction paper that measures <m>{{length}}</m> {{units}} long by
+<m>{{width}}</m> {{units}} wide. By cutting identical square pieces from each
+corner, the sides can be folded up and taped together, creating a lidless box.
+How large should you cut these squares so that the resulting box has maximum volume?
+            </p>
+            <!-- {{/wording3}} -->
+        <!-- {{/box}} -->
+
+
+        <!-- {{#sales}} -->
+            <!-- {{#wording0}} -->
+            <p>
+Suppose that if a {{widget}} is priced at <m>\${{base_cost}}</m>, then
+you are able to sell <m>{{base_sales}}</m> units each day. According to
+a survey of customers, increasing this price by <m>\$1</m> will result
+in losing <m>{{change_in_sales}}</m> daily sales; decreasing by <m>\$1</m>
+will gain <m>{{change_in_sales}}</m> daily sales.
+Your {{person}} asks you how to adjust the price of a {{widget}} to
+maximize the revenue ({{widget}}s sold times price). Write an explanation
+of what this change in price should be and why.
+            </p>
+            <!-- {{/wording0}} -->
+            <!-- {{#wording1}} -->
+            <p>
+Suppose that
+you are able to sell <m>{{base_sales}}</m> {{widget}}s each week when
+priced at <m>\${{base_cost}}</m> per {{widget}}. According to
+a survey of customers, decreasing this price by <m>\$1</m> will result
+in adding <m>{{change_in_sales}}</m> weekly sales; increasing by <m>\$1</m>
+will lose <m>{{change_in_sales}}</m> weekly sales.
+Your {{person}} is considering changing the price per {{widget}} to
+maximize revenue (units sold times price). Explain what this change
+in price should be, and why.
+            </p>
+            <!-- {{/wording1}} -->
+            <!-- {{#wording2}} -->
+            <p>
+A {{farmer}} currently grows <m>{{base_cost}}</m> {{plant}}s,
+which average a yield of <m>{{base_sales}}</m> {{pound}}s of
+product from each {{plant}} per year. They could increase or decrease
+the number of {{plant}}s grown annually,
+but due to crowding the yield for each {{plant}}
+would be reduced by <m>{{change_in_sales}}</m> {{pound}}s for each additional
+{{plant}}. Explain how the {{farmer}} should change their annual growth
+in order to maximize production.
+            </p>
+            <!-- {{/wording2}} -->
+            <!-- {{#wording3}} -->
+            <p>
+Suppose a {{farmer}} observes that on their land, they are
+able to produce <m>{{base_sales}}</m> {{pound}}s of
+product from each {{plant}} annually, provided they grow <m>{{base_cost}}</m>
+{{plant}}s. But for each additional {{plant}} grown in the limited space,
+the harvest for each is lessened by <m>{{change_in_sales}}</m> {{pound}}s.
+Assuming the {{farmer}} wants to maximize the amount of product harvested each
+year, how should they adjust the number of plants grown?
+            </p>
+            <!-- {{/wording3}} -->
+        <!-- {{/sales}} -->
+
+        <!-- {{#river}} -->
+            <!-- {{#wording0}} -->
+            <p>
+A {{predator}} is separated from a motionless {{prey}} by a river of width
+<m>{{width}}</m> {{units}}, and a length of <m>{{length}}</m> {{units}}
+along the river's edge. The {{predator}} is able to run at a speed of
+<m>{{land_speed}}</m> {{units}} per second, and swim at a speed of
+<m>{{river_speed}}</m> {{units}} per second. How much of the {{predator}}'s
+movement should be along the edge of the river in order to minimize the time
+required to reach the {{prey}}?
+            </p>
+            <!-- {{/wording0}} -->
+            <!-- {{#wording1}} -->
+            <p>
+A {{predator}} is distanced from a motionless {{prey}} <m>{{length}}</m>
+{{units}} along a stream's edge and <m>{{width}}</m> {{units}} across
+the water. The {{predator}} is able to swim at a speed of
+<m>{{river_speed}}</m> {{units}} per second, and run at a speed of
+<m>{{land_speed}}</m> {{units}} per second. If the {{predator}} wishes
+to to minimize the time required to reach the {{prey}}, how much of its 
+movement should be along the stream's edge?
+            </p>
+            <!-- {{/wording1}} -->
+            <!-- {{#wording2}} -->
+            <p>
+A video game speedrunner by the handle {{speedrunner}} wants to minimize
+the time it takes to manuever their {{avatar}} down and across a hallway
+in order to finish a level as quickly as possible. The length of the hallway
+necessary to travel is <m>{{length}}</m> {{pixels}} long,
+and the hallway is <m>{{width}}</m> {{pixels}} wide;
+the {{avatar}} moves <m>{{land_speed}}</m> {{pixels}} per frame
+along the hallway's wall and <m>{{river_speed}}</m> {{pixels}} per frame
+across the hallway. How much of {{speedrunner}}'s movement should
+be along the wall of the hallway?
+            </p>
+            <!-- {{/wording2}} -->
+            <!-- {{#wording3}} -->
+            <p>
+A popular streamer named {{speedrunner}} is speedrunning a video game
+that includes a rectangular corridor
+<m>{{width}}</m> {{pixels}} wide.
+Their {{avatar}} moves <m>{{land_speed}}</m> {{pixels}} per frame
+along the edge of the corridor and <m>{{river_speed}}</m> {{pixels}} per frame
+across it. How should {{speedrunner}} move their {{avatar}} along
+the corridor's edge in order to minimize
+the time required to move their {{avatar}}
+a distance of <m>{{length}}</m> {{pixels}} down the corridor,
+from one side of the corridor to the opposite side?
+            </p>
+            <!-- {{/wording3}} -->
+        <!-- {{/river}} -->
+
+    </content>
+    <outtro>
+
+        <!-- {{#box}} -->
+            <p>
+Each square should have side length <m>{{crit}}</m> {{units}}.
+            </p>
+        <!-- {{/box}} -->
+
+
+        <!-- {{#sales}} -->
+            <!-- {{#wording0}} -->
+            <p>
+{{#increase}}Increase the cost by <m>\${{optimal_cost_change}}</m>.{{/increase}}
+{{#decrease}}Decrease the cost by <m>\${{optimal_cost_change}}</m>.{{/decrease}}
+{{#keep}}Keep the cost the same.{{/keep}}
+            </p>
+            <!-- {{/wording0}} -->
+            <!-- {{#wording1}} -->
+            <p>
+{{#increase}}Increase the cost by <m>\${{optimal_cost_change}}</m>.{{/increase}}
+{{#decrease}}Decrease the cost by <m>\${{optimal_cost_change}}</m>.{{/decrease}}
+{{#keep}}Keep the cost the same.{{/keep}}
+            </p>
+            <!-- {{/wording1}} -->
+            <!-- {{#wording2}} -->
+            <p>
+{{#increase}}Grow <m>{{optimal_cost_change}}</m> more {{plant}}s annually.{{/increase}}
+{{#decrease}}Grow <m>{{optimal_cost_change}}</m> less {{plant}}s annually.{{/decrease}}
+{{#keep}}Keep growing the same number of {{plant}}s.{{/keep}}
+            </p>
+            <!-- {{/wording2}} -->
+            <!-- {{#wording3}} -->
+            <p>
+{{#increase}}Grow <m>{{optimal_cost_change}}</m> more {{plant}}s annually.{{/increase}}
+{{#decrease}}Grow <m>{{optimal_cost_change}}</m> less {{plant}}s annually.{{/decrease}}
+{{#keep}}Keep growing the same number of {{plant}}s.{{/keep}}
+            </p>
+            <!-- {{/wording3}} -->
+        <!-- {{/sales}} -->
+
+        <!-- {{#river}} -->
+            <!-- {{#wording0}} -->
+            <p>
+<m>{{optimal_running}}</m> {{units}}.
+            </p>
+            <!-- {{/wording0}} -->
+            <!-- {{#wording1}} -->
+            <p>
+<m>{{optimal_running}}</m> {{units}}.
+            </p>
+            <!-- {{/wording1}} -->
+            <!-- {{#wording2}} -->
+            <p>
+<m>{{optimal_running}}</m> {{pixels}}.
+            </p>
+            <!-- {{/wording2}} -->
+            <!-- {{#wording3}} -->
+            <p>
+<m>{{optimal_running}}</m> {{pixels}}.
+            </p>
+            <!-- {{/wording3}} -->
+        <!-- {{/river}} -->
+
+    </outtro>
+</knowl>

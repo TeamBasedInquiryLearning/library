@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <intro>
+                <p>
+    For each of the following matrices, explain why it is not in reduced row
+    echelon form.
+                </p>
+        </intro>
+        <!-- {{#non_rrefs}} -->
+        <knowl>
+            <content><p><me>{{label}} = {{matrix}}</me></p></content>
+            <outtro>
+                        <p>
+    <m>{{label}}={{matrix}}</m> is not in reduced row echelon form because
+                            <!-- {{#elementary}} -->
+    there is a non-zero entry above or below a pivot.
+                            <!-- {{/elementary}} -->
+                            <!-- {{#permutation}} -->
+    the pivots are not descending to the right.
+                            <!-- {{/permutation}} -->
+                            <!-- {{#diagonal}} -->
+    a leading term has a value besides <m>1</m>.
+                            <!-- {{/diagonal}} -->
+                        </p>
+            </outtro>
+        </knowl>
+        <!-- {{/non_rrefs}} -->
+    </knowl>
+    <knowl>
+        <content><p>Show step by step why
+        <me>\operatorname{RREF}{{A}} = {{rref}}</me></p></content>
+        <outtro><p><me>{{A}} \sim \cdots \sim {{rref}}</me></p></outtro>
+    </knowl>
+</knowl>

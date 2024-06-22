@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Use technology to complete the following table of values.
+<me>f(x)=\frac{ {{top}} }{ {{bottom}} }</me>
+            <me>
+\begin{array}{c|ccccccc}
+x {{#nearbys}}&amp; {{x}}{{/nearbys}} \\\hline
+f(x) {{#nearbys}}&amp; \hspace{3em}{{/nearbys}} \\
+\end{array}
+            </me>
+        </p>
+        <p>
+Then explain how to use it to make an educated guess as to the value of
+the limit <me>\lim_{ x\to {{a}} } \frac{ {{top}} }{ {{bottom}} }</me>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <me>
+\begin{array}{c|ccccccc}
+x {{#nearbys}}&amp; {{x}}{{/nearbys}} \\\hline
+f(x) {{#nearbys}}&amp; {{fx}}{{/nearbys}} \\
+\end{array}
+            </me>
+        </p>
+        <p>
+The limit seems to be <m>{{limit}}</m>.
+        </p>
+    </outtro>
+</knowl>

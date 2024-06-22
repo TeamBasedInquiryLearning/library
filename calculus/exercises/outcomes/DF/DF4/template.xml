@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Demonstrate and explain how to find the derivative of the following functions.
+            Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
+        </p>
+    </intro>
+    <!-- {{#functions}} -->
+    <knowl>
+        <content><p><me>\renewcommand{\log}{\ln} {{fn}}({{v}})= {{f}}</me></p></content>
+        <outtro><p><me>\renewcommand{\log}{\ln} {{fn}}&apos; ({{v}})= {{dfdx}}</me></p></outtro>
+    </knowl>
+    <!-- {{/functions}} -->
+</knowl>
+
+
+
+
+

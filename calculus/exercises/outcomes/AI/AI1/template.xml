@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Explain and demonstrate how to compute the average value
+            of <m>f(x)={{f}}</m> over the interval <m>[{{a}}, {{b}}]</m>.
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            The average value of <m>f(x)={{f}}</m> over the interval
+            <m>[{{a}}, {{b}}]</m> is
+            <me>\frac{1}{ {{b-a}} } \int_{ {{a}} }^{ {{b}} } ({{f}})dx= {{favg}}.</me>
+        </p>
+    </outtro>
+</knowl>

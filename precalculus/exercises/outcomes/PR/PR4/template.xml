@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <knowl>
+        <content>
+            <p>
+                Find the {{name1}} of the polynomial <m>f(x)={{f}}</m>.
+            </p>
+        </content>
+
+        <!-- {{#precal}} -->
+        <outtro>
+            <p>
+                The {{name1}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}, {{r3}}, {{r4}}</m>.
+            </p>
+        </outtro>
+        <!-- {{/precal}} -->
+        
+        <!-- {{#CA}} -->
+        <outtro>
+            <p>
+                The {{name2}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}, {{r3}}</m>.
+            </p>
+        </outtro>
+        <!-- {{/CA}} -->
+    </knowl>   
+    
+    <knowl>
+        <content>
+            <p>
+                Find a polynomial <m>g(x)</m> of degree <m>{{n}}</m> which has a root <m>x={{s1}}</m> with multiplicty <m>{{m1}}</m>, 
+                a root <m>x={{s2}}</m> with multiplicty <m>{{m2}}</m>, and a root <m>x={{s3}}</m> with multiplicty <m>{{m3}}</m>.
+            </p>
+        </content>
+
+        <outtro>
+            <p>
+                An example is <m>g(x)={{g}}</m>.
+            </p>
+        </outtro>
+    </knowl>   
+    
+    <knowl>
+        <content>
+            <p>
+                Consider the following graph of a polynomial <m>y=h(x)</m>.  Write a potential expression for <m>h(x)</m> emphasizing the roots and their multiplicities.
+            </p>
+            <p>
+                <image
+                source="assets/PR4/generated/{{__seed__}}/plot.png"
+                description="The plot of y=h(x), along with special points."/>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>h(x)={{h}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    
+
+        
+
+        
+    
+</knowl>

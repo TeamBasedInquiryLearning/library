@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- The contents of <intro></intro> should specify
+         the task you wish them to complete. -->
+    <intro>
+        <p>
+For each of the following functions, describe the open intervals
+where it is concave up or concave down, and any inflection points.
+        </p>
+    </intro>
+    <!-- {{#fs}} -->
+        <knowl>
+            <content>
+                <p><m>f(x)={{f}}</m></p>
+            </content>
+            <outtro>
+                <p><m>f''(x)={{fpp}}</m></p>
+                <list>
+                    <!-- {{#data}} -->
+                        <!-- {{#interval}} -->
+                            <item>
+                                <p>
+<m>{{interval}}</m> is concave <em>{{concavity}}</em>
+                                </p>
+                            </item>
+                        <!-- {{/interval}} -->
+                        <!-- {{#point}} -->
+                            <item>
+                                <p>
+<m>{{point}}</m>
+{{#inflection}}<em>is</em>{{/inflection}}
+{{^inflection}}is <em>not</em>{{/inflection}}
+an inflection point
+                                </p>
+                            </item>
+                        <!-- {{/point}} -->
+                    <!-- {{/data}} -->
+                </list>
+            </outtro>
+        </knowl>
+    <!-- {{/fs}} -->
+</knowl>

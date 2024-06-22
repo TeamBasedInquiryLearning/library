@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Let <m>T:\mathbb{R}^{{columns}} \to \mathbb{R}^{{rows}}</m>
+            be the linear transformation given by
+            <me>T\left( {{varvector}} \right) = {{Tvar}}.</me>
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>Explain and demonstrate how to find the image of <m>T</m> and a basis for it.</p>
+        </content>
+        <outtro>
+            <p>
+                <m>\operatorname{Im} T =  \operatorname{span}{{image}}</m>, and
+                a basis for it is <m>{{image_basis}}</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Explain and demonstrate how to find the kernel of <m>T</m> and a basis for it.</p>
+        </content>
+        <outtro>
+            <p>
+                <m>\operatorname{Ker} T = {{kernel}}</m>, and
+                a basis for it is <m>{{kernel_basis}}</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Explain and demonstrate how to find the rank and nullity of <m>T</m>, and why the rank-nullity theorem holds for <m>T</m>.</p>
+        </content>
+        <outtro>
+            <p>
+                We have <m>\mathrm{rank}={{rank}}</m>
+                and <m>\mathrm{nullity}={{nullity}}</m>.
+                The rank-nullity theorem asserts that <m>\mathrm{rank}+\mathrm{nullity}=\mathrm{dim}(\mathrm{dom}T)</m>,
+                which we may verify as
+                <me>\mathrm{rank}+\mathrm{nullity}={{rank}}+{{nullity}}={{columns}}=\mathrm{dim}(\mathbb R^{ {{columns}} }).</me>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

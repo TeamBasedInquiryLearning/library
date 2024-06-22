@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+For each of the following sequences, determine which of the properties:
+<em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. 
+If a sequence is convergent, determine to what it converges.
+        </p>
+    </intro>
+<!-- {{#Problems}} -->
+    <knowl>
+        <content>
+            <p><m>\displaystyle \left\{ {{Sequence}} \right\}_{n=0}^\infty</m>.</p>
+        </content>
+        <outtro>
+            <list>
+                <item>
+                    <p>
+<!-- {{#Mono}} -->
+The sequence is monotonic.                
+<!-- {{/Mono}} -->
+<!-- {{^Mono}} -->
+The sequence is not monotonic.                
+<!-- {{/Mono}} -->
+                    </p>
+                </item>
+                <item>
+                    <p>
+<!-- {{#Bounded}} -->
+The sequence is bounded.                
+<!-- {{/Bounded}} -->
+<!-- {{^Bounded}} -->
+The sequence is not bounded.                
+<!-- {{/Bounded}} -->
+                    </p>
+                </item>
+                <item>
+                    <p>
+<!-- {{#Converge}} -->
+The sequence converges to <m>{{Limit}}</m>.                
+<!-- {{/Converge}} -->
+<!-- {{^Converge}} -->
+The sequence does not converge.                
+<!-- {{/Converge}} -->
+                    </p>
+                </item>
+            </list>
+        </outtro>
+    </knowl>      
+<!-- {{/Problems}} -->
+</knowl>

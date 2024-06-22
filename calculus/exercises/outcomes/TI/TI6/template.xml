@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
+    Explain and demonstrate how to use partial fractions to decompose
+    <m>{{g}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p><me>{{pg}}</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+    Consider the partial fraction decomposition <me> {{f}}={{pf}}.</me>
+    Use this decomposition to compute <m>\displaystyle\int {{f}}dx</m>.
+            </p>
+        </content>
+        <outtro>
+            <p><me>\renewcommand{\log}{\ln} \displaystyle\int {{f}}dx=\displaystyle\int \left({{pf}}\right)dx={{F}}+C.</me></p>
+        </outtro>
+    </knowl>
+</knowl>

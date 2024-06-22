@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
+Suppose that there is a function <m>g</m> such that
+<m>g({{base}}) = {{baseval}}</m> and <m>g({{increment}}) = {{incrementval}}</m>.
+Explain how to use these values to estimate <m>g'({{base}})</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>g'({{base}}) \approx {{secantslope}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Sketch the graph of a function <m>f(x)</m>
+that satisfies the following criteria.
+(You do not need to define the function algebraically.)
+            </p>
+            <list>
+                <item>
+                    <p>
+Defined and continuous on the interval <m>[-10,10]</m>.
+                    </p>
+                </item>
+                <!-- {{#criteria}} -->
+                    <item>
+                        <p>
+                            <!-- {{#positive}} -->
+                                <!-- {{#v0}} -->
+<m>f'(x) &gt; 0</m> at <m>x={{a}}</m>
+                                <!-- {{/v0}} -->
+                                <!-- {{#v1}} -->
+<m>\displaystyle\lim_{h\to 0} \frac{f( {{a}} +h)-f( {{a}} )}{h} &gt; 0</m>
+                                <!-- {{/v1}} -->
+                                <!-- {{#v2}} -->
+The slope tangent to the graph of <m>f(x)</m> at <m>x={{a}}</m> is positive
+                                <!-- {{/v2}} -->
+                                <!-- {{#v3}} -->
+The rate of change of <m>f(x)</m> when <m>x={{a}}</m> is positive
+                                <!-- {{/v3}} -->
+                            <!-- {{/positive}} -->
+                            <!-- {{#negative}} -->
+                                <!-- {{#v0}} -->
+<m>f'(x) &lt; 0</m> at <m>x={{a}}</m>
+                                <!-- {{/v0}} -->
+                                <!-- {{#v1}} -->
+<m>\displaystyle\lim_{h\to 0} \frac{f( {{a}} +h)-f( {{a}} )}{h} &lt; 0</m>
+                                <!-- {{/v1}} -->
+                                <!-- {{#v2}} -->
+The slope tangent to the graph of <m>f(x)</m> at <m>x={{a}}</m> is negative
+                                <!-- {{/v2}} -->
+                                <!-- {{#v3}} -->
+The rate of change of <m>f(x)</m> when <m>x={{a}}</m> is negative
+                                <!-- {{/v3}} -->
+                            <!-- {{/negative}} -->
+                            <!-- {{#zero}} -->
+                                <!-- {{#v0}} -->
+<m>f'(x)=0</m> at <m>x={{a}}</m>
+                                <!-- {{/v0}} -->
+                                <!-- {{#v1}} -->
+<m>\displaystyle\lim_{h\to 0} \frac{f( {{a}} +h)-f( {{a}} )}{h}= 0</m>
+                                <!-- {{/v1}} -->
+                                <!-- {{#v2}} -->
+The slope tangent to the graph of <m>f(x)</m> at <m>x={{a}}</m> is zero
+                                <!-- {{/v2}} -->
+                                <!-- {{#v3}} -->
+The rate of change of <m>f(x)</m> when <m>x={{a}}</m> is zero
+                                <!-- {{/v3}} -->
+                            <!-- {{/zero}} -->
+                            <!-- {{#DNE}} -->
+                                <!-- {{#v0}} -->
+<m>f'(x)</m> does not exist at <m>x={{a}}</m>
+                                <!-- {{/v0}} -->
+                                <!-- {{#v1}} -->
+<m>\displaystyle\lim_{h\to 0} \frac{f( {{a}} +h)-f( {{a}} )}{h}</m> does not exist
+                                <!-- {{/v1}} -->
+                                <!-- {{#v2}} -->
+The graph of <m>f(x)</m> at <m>x={{a}}</m> has no well-defined tangent line
+                                <!-- {{/v2}} -->
+                                <!-- {{#v3}} -->
+The rate of change of <m>f(x)</m> when <m>x={{a}}</m> is not well-defined
+                                <!-- {{/v3}} -->
+                            <!-- {{/DNE}} -->
+                        </p>
+                    </item>
+                <!-- {{/criteria}} -->
+            </list>
+        </content>
+    </knowl>
+</knowl>

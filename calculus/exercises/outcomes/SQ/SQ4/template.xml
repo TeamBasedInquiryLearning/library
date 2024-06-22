@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Find the limit of the following series.
+            <me>
+{{I}} + \sum_{n = {{k}} }^\infty {{c}}\cdot\left({{r}}\right)^n.
+            </me>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <me>
+{{I}} + \sum_{n = {{k}} }^\infty {{c}}\cdot\left({{r}}\right)^n={{limit1}}.
+            </me>
+        </p>
+    </outtro>
+</knowl>

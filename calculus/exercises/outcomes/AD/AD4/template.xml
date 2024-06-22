@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p> 
+Explain how to find the global minimum and global maximum values of the
+function <m>f(x)={{fx}}</m> on the interval <m>[{{a}},{{b}}]</m>.
+        </p>
+    </content>
+    <outtro>
+        <p>
+The global extrema may occur at these <m>x</m>-values:
+<m>{{a}}, {{z}}, {{b}}</m>.
+        </p>
+        <ul>
+            <content><p><m>f({{a}})={{fa}}</m></p></content>
+            <content><p><m>f({{z}})={{fz}}</m></p></content>
+            <content><p><m>f({{b}})={{fb}}</m></p></content>
+        </ul>
+        <p>
+Thus the global minimum is <m>{{min}}</m> and the global
+maximum is <m>{{max}}</m>.
+        </p>
+        <p>
+(The value <m>f({{ignored}})={{fignored}}</m>
+is ignored as <m>{{ignored}}</m> isn't in the given interval.)
+        </p>
+    </outtro>
+</knowl>
