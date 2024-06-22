@@ -66,6 +66,15 @@ jobs:
                   gitHubToken: ${{ secrets.GITHUB_TOKEN }}
                   branch:  ${{ github.head_ref || github.ref_name }}
                   directory: deploy
+            - uses: actions/github-script@v6
+              with:
+                script: |
+                  github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: '🚀 Preview available at https://${{ github.head_ref || github.ref_name }}.tbil.pages.dev 🚀'
+                  })
 
     deploy-ghpages:
         runs-on: ubuntu-latest
