@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AI2" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Arclength (AI2)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/02.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    <activity>
+        <introduction>
+            <p>
+                Suppose we wanted to find the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>.
+                <figure>
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
+                    <image xml:id="parabolaarclength" width="50%">
+                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                             %grid
+                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
+                              %axes
+                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
+                              \foreach \x in {1,2,3,4,5}
+                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                              \foreach \y in {0,...,10}
+                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
+                               %function
+                               \draw[blue] plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*\x^2+6*\x });
+                             \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+            </p>
+        </introduction>
+        
+        <task>
+            <p>
+                Suppose we wished to estimate this length with two line segments where <m>\Delta x=2</m>.
+                <figure>
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with two line segments where <m>\Delta x=2</m>.</caption>
+                    <image xml:id="parabolaarclengthtwopieces" width="50%">
+                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                             %grid
+                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
+                              %axes
+                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
+                              \foreach \x in {1,2,3,4,5}
+                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                              \foreach \y in {0,...,10}
+                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
+                               %function
+                               \draw[blue] plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*\x^2+6*\x });
+                            
+                               \draw[dashed] (0,0)--(2,8)--(4,8);
+                                
+                               \draw[fill] (0,0) circle (2pt);
+                               \draw[fill] (2,8) circle (2pt);
+                               \draw[fill] (4,8) circle (2pt);
+                            
+                           
+   
+                             \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    </p>
+            <p>Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(2,8)</m> and  <m>(4,8)</m>?</p>
+                
+                <ol marker="A." cols="2">
+                    <li><m>\sqrt{4+8}</m></li>
+                    <li><m>\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-8)^2}</m></li>
+                    <li><m>\sqrt{4^2+8^2}</m></li>
+                    <li><m>\sqrt{2^2+8^2}+\sqrt{4^2+8^2}</m></li>
+                </ol>
+        </task>
+        
+        <task>
+            <p>
+                Suppose we wished to estimate this length with four line segments where <m>\Delta x=1</m>.
+                <figure>
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with four line segments where <m>\Delta x=1</m>.</caption>
+                    <image xml:id="parabolaarclengthfourpieces" width="50%">
+                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                             %grid
+                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
+                              %axes
+                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
+                              \foreach \x in {1,2,3,4,5}
+                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                              \foreach \y in {0,...,10}
+                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
+                               %function
+                               \draw[blue] plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*\x^2+6*\x });
+                            
+                               \draw[dashed] (0,0)--(1,5)--(2,8)--(3,9)--(4,8);
+                                
+                               \draw[fill] (0,0) circle (2pt);
+                               \draw[fill] (1,5) circle (2pt);
+                               \draw[fill] (2,8) circle (2pt);
+                               \draw[fill] (3,9) circle (2pt);
+                               \draw[fill] (4,8) circle (2pt);
+                            
+                           
+   
+                             \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+            </p>
+            <p>Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(1,5)</m>, <m>(2,8)</m>, <m>(3,9)</m> and <m>(4,8)</m>?</p>
+                <ol marker='A'>
+                    <li><m>\sqrt{4^2+8^2}</m></li>
+                    <li><m>\sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}</m></li>
+                    <li><m>\sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}</m></li>
+                </ol>
+        </task>
+        
+        <task>
+            <p>
+                Suppose we wished to estimate this length with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.  Let <m>f(x)=-x^2+6x</m>.
+                <figure>
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.</caption>
+                    <image xml:id="parabolaarclengthnpieces" width="50%">
+                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                             %grid
+                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
+                              %axes
+                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
+                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
+                              \foreach \x in {1,2,3,4,5}
+                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                              \foreach \y in {0,...,10}
+                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
+                               %function
+                               \draw[blue] plot [
+                                samples=100,
+                                domain=0:4,
+                                ] (\x,{-1*\x^2+6*\x });
+                            
+                               \draw[dashed, red] (2.1,8.19)--(2.65,8.8775)--(2.65,8.19)--(2.1,8.19);
+                                
+                               \draw[fill, red] (2.1,8.19) circle (2pt);
+                               \draw[red] (2.1,8.19)--node[above left]{$(x_0,f(x_0))$} (2.1,8.19);
+                               \draw[red] (2.65,8.8775)--node[above right]{$(x_0+\Delta x,f(x_0+\Delta x))$} (2.65,8.8775);
+                               \draw[fill, red] (2.65,8.8775) circle (2pt);
+                            
+                               \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt, red](2.1,8.19)--(2.65,8.19) node[red,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
+
+                             \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+            </p>
+            <p>Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(x_0+\Delta x, f(x_0+\Delta x))</m>?</p>
+                <ol marker="A." cols="2">
+                    <li><m>\sqrt{x_0^2+f(x_0)^2}</m></li>
+                    <li><m>\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}</m></li>
+                    <li><m>\sqrt{(\Delta x)^2+f(\Delta x)^2}</m></li>
+                    <li><m>\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}</m></li>
+                </ol>
+        </task>
+        
+        <task>
+            <p>Which of  the following Riemann sums best estimates the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>?  Let <m>f(x)=-x^2+6x</m>.</p>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}</m></li>
+                    <li><m>\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}</m></li>
+                    <li><m>\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}</m></li>
+                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2}</m></li>
+                </ol>
+        </task>
+        
+        <task>
+            <p>
+                Note that
+                <md>
+                    <mrow>\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}</mrow>
+                    <mrow>&amp;=\sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
+                </md>.
+              </p>
+            <p>
+                 Which of the following best describes <m>\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}</m>?
+                <ol marker="A." cols="4">
+                    <li><m>0</m></li>
+                    <li><m>1</m></li>
+                    <li><m>f'(x_i)</m></li>
+                    <li>This limit is undefined.</li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+    
+    <fact xml:id="fact-arclength">
+        <statement>        <p>
+            Given a differentiable function <m>f(x)</m>, the <term>arclength</term><idx>arclength</idx> of <m>y=f(x)</m> defined on <m>[a,b]</m> is computed by the integral
+            
+            <md>
+                <mrow>\lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
+                <mrow>&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx</mrow>
+            </md>.
+        </p>
+            </statement>
+
+    </fact>
+    
+    <activity>
+        <statement>
+            <p>
+                Use <xref ref="fact-arclength"/> to find an integral which measures the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>.
+            </p>
+        </statement>
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the curve <m>y=2^x-1</m> defined on <m>[1,5]</m>.
+            </p>
+        </introduction>
+        
+        <task>
+            <p>
+                Estimate the arclength of this curve with two line segments where <m>\Delta x=2</m>.
+            </p>
+            <tabular>
+                <row bottom="minor">
+                  <cell>
+                      <m>x_i</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i,f(x_i))</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i+\Delta x,f(x_i+\Delta x))</m>
+                  </cell>
+                  <cell>
+                      Length of segment
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>1</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>3</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+            </tabular>
+        </task>
+        
+        <task>
+            <p>
+                Estimate the arclength of this curve with four line segments where <m>\Delta x=1</m>.
+            </p>
+            <tabular>
+                <row bottom="minor">
+                  <cell>
+                      <m>x_i</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i,f(x_i))</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i+\Delta x,f(x_i+\Delta x))</m>
+                  </cell>
+                  <cell>
+                      Length of segment
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>1</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>2</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>3</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>4</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+            </tabular>
+        </task>
+        <task>
+            <p>
+                Find an integral which computes the arclength of the curve <m>y=2^x-1</m> defined on <m>[1,5]</m>.
+            </p>
+        </task>
+    </activity>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the curve <m>y=5e^{-x^2}</m> over the interval <m>[-1,4]</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Estimate this arclength with 5 line segments where <m>\Delta x=1</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find an integral which computes this arclength.
+            </p>
+        </task>
+    </activity>
+<!--     
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI2.slides.html"/>.</p>
+    </subsection> -->
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI2" youtube="SFflh9YOhK8">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength</caption>
+    </figure>
+    </subsection>
+    
+        
+       
+    
+</section>
+

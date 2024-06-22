@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<backmatter xml:id="backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Back Matter</title>
+
+        <xi:include href="../applications/main.ptx"/>
+        <appendix xml:id="appendix-extras">
+            <title>Appendix</title>
+            <xi:include href="sample-exercises.ptx"/>
+            <xi:include href="definitions.ptx"/>
+        </appendix>
+    <index>
+    <title>Index</title>
+    <index-list />
+    </index>
+
+</backmatter>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ8" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Absolute Convergence (SQ8)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/08.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    <activity>
+        <introduction>
+            <p>
+                Recall the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}</m> from <xref ref="activity-SQ7alternatingharmonic"/>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}</m> converge or diverge?
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right|</m> converge or diverge?
+            </p>
+        </task>
+    </activity>
+ 
+    <activity>
+        <introduction>
+            <p>
+               Consider the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}</m> converge or diverge?
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n^2}\right|</m> converge or diverge?
+            </p>
+        </task>
+    </activity>    
+    
+    <definition xml:id="definition-absoluteconvergence">
+        <statement>
+        <p>
+            Given a series <me>\sum a_n</me> we say that <m>\displaystyle \sum a_n</m> is <em>absolutely convergent</em> if <m>\displaystyle \sum |a_n|</m> converges.
+        </p>
+        </statement>    
+    </definition>
+
+   <activity>
+        <introduction>
+            <p>
+                Consider the series: <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}</m> converge or diverge?  (Recall <xref ref="fact-SQ7ratioTest"/>.)
+            </p>
+        </task>
+        
+       <task>
+           <p>Compute <m>|a_n|</m>.</p>
+       </task>
+       
+       <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}</m> converge absolutely?
+            </p>
+        </task>
+    </activity>
+    
+    <fact>
+        <p>
+            Notice that <xref ref="fact-SQ7ratioTest"/> and <xref ref="fact-SQ7rootTest"/> both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).
+        </p>
+    </fact>
+
+       <activity>
+        <introduction>
+            <p>
+                Consider the series: <m>\displaystyle \sum_{n=1}^\infty -n</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty -n</m> converge or diverge?
+            </p>
+        </task>
+        
+       <task>
+           <p>Compute <m>|a_n|</m>.</p>
+       </task>
+       
+       <task>
+            <p>
+                Does the series <m>\displaystyle \sum_{n=1}^\infty -n</m> converge absolutely?
+            </p>
+        </task>
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                For each of the following series, determine if the series is <em>convergent</em>, and if the series is <em>absolutely convergent</em>.
+            </p>
+        </introduction>
+            <task>
+                <m>\displaystyle \sum_{n=1}^\infty \frac{n^2(-1)^n}{n^3+1}</m>.
+            </task>
+            <task>
+                <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}</m>.
+            </task>
+            <task>
+                <m>\displaystyle \sum_{n=1}^\infty (-1)^n \left(\frac{2}{3}\right)^n</m>.
+            </task>
+    </activity>
+    
+    <activity>
+        <statement>
+            <p>
+                If you know a series <m>\displaystyle \sum a_n</m> is absolutely convergent, what can you conclude about whether or not <m>\displaystyle \sum a_n</m> is convergent?
+                <ol marker="A." cols="2">
+                    <li>We cannot determine if <m>\displaystyle \sum a_n</m> is convergent.</li>
+                    <li><m>\displaystyle \sum a_n</m> is convergent since it <q>grows slower</q> than <m>\displaystyle \sum |a_n|</m> (and falls slower than <m>\displaystyle \sum -|a_n|</m>).</li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+    
+    <fact>
+        <statement>
+        <p>
+            If <m>\displaystyle \sum a_n</m> is absolutely convergent, then it must be convergent.
+        </p>
+        </statement>    
+    </fact>
+    
+    <activity>
+        <statement>
+            <p>
+                Find 3 series that are convergent but not absolutely convergent (recall <xref ref="fact-SQ8alternatingSeriesTest"/>, <xref ref="SQ6"/>).
+            </p>
+        </statement>
+    </activity>
+    
+    <!-- <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ8.slides.html"/>.</p>
+    </subsection> -->
+
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ8" youtube="snRKVwCkymQ">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Determine if a series converges absolutely or conditionally
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+    
+</section>

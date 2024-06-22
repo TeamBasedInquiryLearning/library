@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AD7" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Graphing with derivatives (AD7)</title>
+  <objectives>
+    <ul>
+      <li>
+          <xi:include href="outcomes/07.ptx" /></li>
+      
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+    <remark><statement><p>In <xref ref="AD5"/> and <xref ref="AD6"/> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any local extrema or inflection points. Now we will put that information together to sketch the graph of a function.</p></statement></remark>
+   
+    <activity xml:id="activity-graphing-words">
+      <introduction>
+      <p>
+       Which of the following features best describe the curve graphed below?  </p>
+     
+
+       <figure xml:id="dec-cdown">
+<!--       <caption>A curve</caption> -->
+      <image width="30%" source="dec-cdown.png" />
+    </figure> 
+    </introduction>
+    
+          
+          <ol marker="A." cols="2">
+               <li><p>Increasing and concave up</p></li>
+               <li><p>Increasing and concave down</p></li>
+               <li><p>Decreasing and concave up</p></li>
+               <li><p>Decreasing and concave down</p></li>
+            </ol>
+
+     
+        
+    </activity>
+    
+ <activity xml:id="activity-graphing-der-signs">
+      <task>
+      <p>
+       Which of the following features best describe the curve graphed below?  </p>
+     
+
+       <figure xml:id="inc-cdown">
+<!--       <caption>A curve</caption> -->
+      <image width="30%" source="inc-cdown.png" />
+    </figure> 
+    
+    
+          
+          <ol marker="A." cols="2">
+               <li><p><m>f'&gt;0</m> and <m>f''&gt;0</m></p></li>
+               <li><p><m>f'&gt;0</m> and <m>f''&lt;0 </m></p></li>
+               <li><p><m>f'&lt;0</m> and <m>f''&gt;0</m></p></li>
+               <li><p><m>f'&lt;0</m> and <m>f''&lt;0 </m></p></li>
+            </ol>
+</task>
+     
+     <task>
+    <p>For each of the <em>other</em> three answer choices, sketch a curve that matches that description.</p> 
+     </task>
+     
+        
+    </activity>    
+    
+    <activity xml:id="activity-graphing-ac">
+    
+    <introduction> 
+      <p>
+        For each prompt that follows,
+        sketch a possible graph of a function on the interval
+          <m>-3 \lt x \lt 3</m> that satisfies the stated properties.</p>
+          </introduction>
+<task>
+        
+          
+           <p>
+              A function <m>f(x)</m> that is increasing on <m>-3 \lt x \lt 3</m>,
+              concave up on <m>-3 \lt x \lt 0</m>,
+              and concave down on <m>0 \lt x \lt 3</m>.
+            </p>
+          </task>
+
+          
+           <task> <p>
+               A function <m>g(x)</m> that is increasing on <m>-3 \lt x \lt 3</m>,
+              concave down on <m>-3 \lt x \lt 0</m>,
+              and concave up on <m>0 \lt x \lt 3</m>.
+            </p>
+          </task>
+           <task> <p>
+              A function <m>h(x)</m> thatis decreasing on <m>-3 \lt x \lt 3</m>,
+              concave up on <m>-3 \lt x \lt -1</m>,
+              neither concave up nor concave down on <m>-1 \lt x \lt 1</m>,
+              and concave down on <m>1 \lt x \lt 3</m>.
+            </p>
+        </task>
+            <task><p>
+              A function <m>p(x)</m> that is decreasing and concave down on
+              <m>-3 \lt x \lt 0</m> and is increasing and concave down on <m>0 \lt x \lt 3</m>.
+                </p></task>
+          
+       
+     
+    </activity>
+    
+    <observation xml:id="obs-sketch-additional-info"> <statement>
+        <p>To draw an accurate sketch, we must keep in mind additional characteristics of a function, such as the domain and the  horizontal and vertical asymptotes (when they exist). The next problem <xref ref="activity-graphing-checkit"/> includes those aspects in addition to increasing, decreasing, and concavity features.
+    </p></statement></observation>
+    
+    
+    <activity xml:id="activity-graphing-checkit">
+    <introduction>
+
+        <p>
+The following chart describes the values of <m>f(x)</m> and its
+first and second derivatives at or between a few given values of <m>x</m>,
+where <m>\nexists</m> denotes that <m>f(x)</m> does not exist at that value
+of <m>x</m>.
+        </p>
+        <p>
+        <me>
+\begin{array}{c|cccccccccccccccccccc}
+x
+        &amp; &amp; -8
+            &amp; &amp; -6
+            &amp; &amp; -3
+            &amp; &amp; 0
+            &amp; &amp; 2
+            &amp; &amp; 5
+            &amp; &amp; 8
+            &amp; &amp; 11
+            &amp; &amp; 13
+     \\\hline
+f(x)
+        &amp; &amp; 3
+            &amp; &amp; 5
+            &amp; &amp; \nexists
+            &amp; &amp; -5
+            &amp; &amp; \nexists
+            &amp; &amp; 4
+            &amp; &amp; \nexists
+            &amp; &amp; -5
+            &amp; &amp; -3
+     \\
+f'(x) &amp;
+        + &amp; &amp;
+            + &amp; &amp;
+            - &amp; &amp;
+            - &amp; &amp;
+            - &amp; &amp;
+            - &amp; &amp;
+            + &amp; &amp;
+            + &amp; &amp;
+            + &amp; &amp;
+            + 
+     \\
+f''(x) &amp;
+        + &amp; &amp;
+            - &amp; &amp;
+            - &amp; &amp;
+            + &amp; &amp;
+            - &amp; &amp;
+            + &amp; &amp;
+            + &amp; &amp;
+            - &amp; &amp;
+            - &amp; &amp;
+            - 
+     \\
+\end{array}
+        </me>
+        </p>
+        <p>
+Assume that <m>f(x)</m> has vertical asymptotes at each
+<m>x</m>-value where <m>f(x)</m> does not exist, that
+<m>\displaystyle \lim_{x\to-\infty}f(x)= 1</m>, and that
+<m>\displaystyle \lim_{x\to\infty}f(x)= -1</m>.
+        </p></introduction>
+        
+        <task><p>
+List all the asymptotes of <m>f(x)</m> and mark them on the graph.
+        </p></task>
+ 
+                <task><p>
+Does <m>f(x)</m> have any local maxima or local minima? If so, at what point(s)?
+        </p></task>
+                        <task><p>
+Does <m>f(x)</m> have any inflection points? If so, at what point(s)?
+        </p></task>
+ 
+        
+        <task><p>
+Use the information provided to sketch a reasonable graph of <m>f(x)</m>. Watch changes in behavior due to changes in the sign of each derivative.
+     </p></task>       
+
+
+    
+    
+    </activity>
+    
+<!--     
+<p>Now we will practice sketching the graph of a function from start to finish. We'll begin with an overview of the process.</p>
+     -->
+    <remark xml:id="guide-curve-sketching"> <title>A guide to curve sketching</title>  
+    <p>
+    <ol>   
+    <li>Identify the domain of the function.</li> 
+        <li>Identify any vertical or horizontal asymptotes, if they exist.</li>
+        <li>Find <m>f'(x)</m>. Then use it to determine the intervals where the function is increasing and the intervals where the function is decreasing. State any local extrema.</li>
+        <li>Find <m>f''(x)</m>. Then use it to determine the intervals where the function is concave up and the intervals where the function is concave down. State any inflection points.</li>
+       
+        <li>Put everything together and draw sketch.</li>
+     </ol> </p>
+    
+    </remark>
+
+    
+<activity xml:id="activity-graphing-full">
+<!--     
+Note that some of the graphs below are definitely hard... might want to tell this to instructors or break in two
+     -->    
+    <introduction>Sketch the graph of each of the following functions using the guide to curve sketching found in <xref ref="guide-curve-sketching"/></introduction>
+                <task><m>f(x)=x^4-4x^3+10</m></task>
+                <task><m>f(x)=\frac{x^2-4}{x^2-9}</m></task>
+            <task><p><m>f(x)=x+2\cos x</m> on the interval <m>[0,2\pi]</m></p></task>
+                <task><m>f(x)=\frac{x^2+x-2}{x+3}</m></task>
+                <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m></task>
+                <task><m>f(x)=x^6+\frac{12}{5}x^5-12x^4+10</m></task>  
+    </activity>
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <p>No video is available for this learning outcome.</p>
+    </subsection>
+</section>

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="CO4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Polar coordinates (CO4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+
+    <fact xml:id="fact-CO4polar">
+          
+      <p permid="QCd">
+        
+    <q>As the crow flies</q> is an idiom used to describe the most direct path between two points.
+    The <term>polar coordinate system</term><idx>polar coordinate system</idx> is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction.
+          The origin is also known as the <term>pole</term><idx>pole</idx> (hence polar coordinates).</p>
+    <p>Let <m>\overline{OP}</m> be a line segment from the origin to a given point <m>P</m> in the plane.
+    The length of <m>\overline{OP}</m> is the distance (or <term>radius</term><idx><h>polar coordinate system</h></idx><idx>radius</idx>) <m>r</m> from the origin to <m>P</m>.
+    The <term>polar axis</term><idx><h>polar coordinate system</h></idx><idx>polar axis</idx> is a ray starting at the origin.</p>
+    <p>To define the "direction" of <m>P</m>, we form an angle <m>\theta</m> by letting the polar axis serve as the initial ray and <m>\overrightarrow{OP}</m> as the terminal ray.
+    We will set the positive <m>x</m>-axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry).
+    Notice that, unlike in the rectangular (or <em> Cartesian</em>) coordinate system, the polar coordinates <m>(r,\theta)</m> for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction).</p>
+    <p>Furthermore, by allowing <m>r</m> to be negative, we can also "walk backwards" to get to a point by facing in the opposite direction.
+    Rather than the grid lines defined by specific values for <m>x</m> and <m>y</m> in the rectangular coordinate system, specific values of <m>r</m> correspond to circles of radius <m>r</m> centered about the origin, and specific values of <m>\theta</m> correspond to lines going through the pole (called <term>radial lines</term><idx><h>polar coordinate system</h></idx><idx>radial lines</idx>).
+    
+    
+      </p>
+        </fact>
+      
+    
+    <figure>
+                <caption>A point in the polar coordinate system.</caption>
+                    <image xml:id="polarPoint" width="100%">
+                        <description>A point in the polar coordinate system.</description>
+                        <latex-image><xi:include href="./tikz/polarPoint.tex" parse="text"/></latex-image>
+                    </image>
+            </figure>
+    
+    
+    
+    <figure>
+                <caption>The polar grid.</caption>
+                    <image xml:id="polarCoord" width="100%">
+                        <description>The polar grid</description>
+                        <latex-image><xi:include href="./tikz/polarCoord.tex" parse="text"/></latex-image>
+
+                    </image>
+            </figure>
+    
+    
+    
+    <activity xml:id="activity-CO4pointConversions">
+        
+        <task>
+            <p>
+                Plot the Cartesian point <m>P=(x,y)=(\sqrt{3},-1)</m> and draw line segments connecting the origin to <m>P</m>, the origin to <m>(x,y)=(\sqrt{3},0)</m>, and <m>P</m> to <m>(x,y)=(\sqrt{3},0)</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Solve the triangle formed by the line segments you just drew (i.e. find the lengths of all sides and the measures of each angle).
+            </p>
+        </task>
+        <task>
+            <p>
+                Find all polar coordinates for the Cartesian point <m>(x,y)=(\sqrt{3},-1)</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find Cartesian coordinates for the polar point <m>(r,\theta)=\left(-\sqrt{2},\displaystyle\frac{3\pi}{4}\right)</m>.
+            </p>
+        </task>
+    </activity>
+    
+    
+    <activity xml:id="activity-CO4polarGraphs">
+        <introduction>
+            <p>
+Graph each of the following.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                <m>r=1</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>r=-1</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>\theta=\displaystyle\frac{\pi}{6}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>\theta=\displaystyle\frac{7\pi}{6}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>\theta=\displaystyle\frac{-5\pi}{6}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>1\leq r &lt; -1</m>, <m>0\leq\theta\leq\displaystyle\frac{\pi}{2}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>-3\leq r \leq 2</m>, <m>\theta=\displaystyle\frac{\pi}{4}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>r \leq 0</m>, <m>\theta=\displaystyle\frac{-\pi}{2}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>\displaystyle\frac{2\pi}{3}\leq\theta\leq\displaystyle\frac{5\pi}{6}</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>r=3\sec(\theta)</m>
+            </p>
+        </task>
+    </activity>
+    
+    <fact xml:id="fact-CO4symmetryTestX">
+          
+      <p permid="QCd">
+        If a polar graph is symmetric about the <m>x</m>-axis, then if the point <m>(r,\theta)</m> lies on the graph, then the point <m>(r,-\theta)</m> or <m>(-r, \pi-\theta)</m> also lies on the graph.
+
+      </p>
+        </fact>
+    
+    
+    <fact xml:id="fact-CO4symmetryTestY">
+          
+      <p permid="QCd">
+        If a polar graph is symmetric about the <m>y</m>-axis, then if the point <m>(r,\theta)</m> lies on the graph, then the point <m>(r,\pi-\theta)</m> or <m>(-r,-\theta)</m> also lies on the graph.
+
+      </p>
+        </fact>
+    
+    
+    <fact xml:id="fact-CO4symmetryTestOrigin">
+          
+      <p permid="QCd">
+        If a polar graph is rotationally symmetric about the origin, then if the point <m>(r,\theta)</m> lies on the graph, then the point <m>(-r,\theta)</m> or <m>(r,\pi+\theta)</m> also lies on the graph.
+
+      </p>
+        </fact>
+<!--     
+    INSERT PICTURES AND DISCUSS SPECIAL POLAR GRAPHS (LIMACON/CARDIOID, ROSE, LEMNISCATE, CIRCLE)
+    
+    MAKE TABLE FOR CONVERSIONS BETWEEN POLAR AND CARTESIAN COORDINATES
+    
+     -->
+    
+    <activity xml:id="activity-CO4polarEquation">
+        
+        <task>
+            <p>
+                Find a polar form of the the Cartesian equation <m>x^2+(y-3)^2=9</m>.
+            </p>
+        </task>
+    </activity>
+    
+    
+    <activity xml:id="activity-CO4cartesianEquation">
+        <introduction>
+            <p>
+Find a Cartesian form of each of the given polar equations.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                <m>r^2=4r\cos(\theta)</m>
+            </p>
+        </task>
+        <task>
+            <p>
+                <m>r=\displaystyle\frac{4}{2\cos(\theta)-\sin(\theta)}</m>
+            </p>
+        </task>
+        
+        <fact xml:id="fact-CO4slopePolarCurve">
+          
+      <p permid="QCd">
+        The slope of a polar curve <m>r=f(\theta)</m>is <m>\displaystyle\frac{dy}{dx}=\displaystyle\frac{dy/d\theta}{dx/d\theta}=\displaystyle\frac{f^\prime(\theta)\sin(\theta)+f(\theta)\cos(\theta)}{f^\prime(\theta)\cos(\theta)-f(\theta)\sin(\theta)}</m>, provided that <m>dx/d\theta\neq 0</m> at <m>(r,\theta)</m>.
+          Vertical tangents occur when <m>dy/d\theta=0</m> and <m>dx/d\theta\neq 0</m>;
+          horizontal tangents occur when <m>dx/d\theta=0</m> and <m>dy/d\theta\neq 0</m>.
+
+      </p>
+        </fact>
+        
+    </activity>
+    
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-CO4" youtube="KH8n4dihFNU"/>
+            <caption>Video for CO4</caption>
+        </figure>
+    </subsection>  
+
+</section>
+

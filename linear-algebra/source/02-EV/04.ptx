@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section xml:id="EV4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Linear Independence (EV4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+
+    <subsection>
+        <title>Warm Up</title>
+        <activity>
+            <introduction>
+                <p>
+                    Consider the vector equation
+                    <me>x_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+x_2\left[\begin{array}{c}2\\0\\-1\end{array}\right]+x_3\left[\begin{array}{c}-1\\2\\0\end{array}\right]=\left[\begin{array}{c}-1\\7\\6\end{array}\right].</me>
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Decide which of <m>\left[\begin{array}{c}3\\-1\\2\end{array}\right]</m> or <m>\left[\begin{array}{c}1\\1\\1\end{array}\right]</m> is a solution vector. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Consider now the following vector equation:
+                        <me>y_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+y_2\left[\begin{array}{c}2\\0\\-1\end{array}\right]+y_3\left[\begin{array}{c}-1\\2\\0\end{array}\right]+y_4\left[\begin{array}{c}-1\\7\\6\end{array}\right]=\vec{0}.</me>
+                        How is this vector equation related to the original one?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                    Use the solution vector you found in part (a) to construct a solution vector to this new equation. 
+                    </p>
+                </statement>
+            </task>
+        </activity>
+        </subsection>
+
+<subsection><title>Class Activities</title>
+<activity estimated-time='10'>
+    <statement>
+        <p>
+  Consider the two sets
+            <me>
+    S=\left\{
+  \left[\begin{array}{c}2\\3\\1\end{array}\right],
+  \left[\begin{array}{c}1\\1\\4\end{array}\right]
+  \right\} \hspace{3em}
+    T=\left\{
+  \left[\begin{array}{c}2\\3\\1\end{array}\right],
+  \left[\begin{array}{c}1\\1\\4\end{array}\right],
+  \left[\begin{array}{c}-1\\0\\-11\end{array}\right]
+  \right\}
+            </me>.
+  Which of the following is true?
+        </p>
+    <ol marker="A.">
+<li> <m>\vspan S</m> is bigger than <m>\vspan T</m>.
+    </li>
+<li> <m>\vspan S</m> and <m>\vspan T</m> are the same size.
+    </li>
+<li> <m>\vspan S</m> is smaller than <m>\vspan T</m>.
+    </li>
+    </ol>
+    </statement>
+</activity>
+
+<definition xml:id="EV4-definition-independence">
+    <statement>
+        <p>
+  We say that a set of vectors is <term>linearly dependent</term><idx>linearly dependent</idx> if one vector
+  in the set belongs to the span of the others. Otherwise, we say the set
+  is <term>linearly independent</term>.<idx>linearly independent</idx>
+        </p>
+        <figure xml:id="EV4-figure-linearly-dependent">
+			<image width="75%" xml:id="EV4-image-linearly-dependent">
+				<latex-image>
+  \begin{tikzpicture}[x={(210:0.8cm)}, y={(0:1cm)}, z={(90:1cm)}]
+    \draw[->] (0,0,0) -- (6,0,0);
+    \draw[->] (0,0,0) -- (0,6,0);
+    \draw[->] (0,0,0) -- (0,0,6);
+    \draw[fill=purple!20,fill opacity=0.5]
+      (-2,-2,2) -- (6,-2,-2) -- (2,2,-2) -- (-6,2,2) -- (-2,-2,2);
+    \draw[thick,blue,->] (0,0,0) -- (1,-1,0);
+    \draw[thick,red,->] (0,0,0) -- (-2,0,1);
+    \draw[thick,purple,->] (0,0,0) -- (1,1,-1);
+  \end{tikzpicture}
+				</latex-image>
+			</image>
+			<caption>A linearly dependent set of three vectors</caption>
+        </figure>
+        <p>
+  You can think of linearly dependent sets as containing a redundant vector,
+  in the sense that you can drop a vector out without reducing the span of the set. In the above image, all three vectors lay in the same planar subspace,
+  but only two vectors are needed to span the plane, so the set is
+  linearly dependent.
+        </p>
+    </statement>
+</definition>
+<activity estimated-time='10'>
+    <introduction>
+    <p>Consider the following three vectors in <m>\IR^3</m>:
+        <me>\vec v_1=\left[\begin{array}{c}-2 \\ 0 \\ 0\end{array}\right],
+    \vec v_2=\left[\begin{array}{c}1 \\ 3 \\ 0\end{array}\right],
+   \text{ and }
+    \vec v_3=\left[\begin{array}{c}-2 \\ 5 \\ 4\end{array}\right]
+  </me>.
+        </p>
+    </introduction>
+    <task>
+        <p>
+            Let <m> \vec w = 3\vec v_1 - \vec v_2 - 5 \vec v_3 = \left[\begin{array}{c}\unknown \\ \unknown \\ \unknown\end{array}\right]</m>. 
+            The set <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m> is...
+            <ol marker="A.">
+                <li><p>linearly dependent: at least one vector is a linear combination of others</p></li>
+                <li><p>linearly independent: no vector is a linear combination of others</p></li>
+            </ol>
+        </p>
+    </task>
+    <task> 
+        <p>
+       Find <me>\RREF \left[\begin{array}{cccc}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
+            \end{array}\right]= 
+        \RREF \left[\begin{array}{cccc}
+        -2 &amp; 1 &amp;-2 &amp; \unknown \\
+        0 &amp; 3  &amp; 5 &amp; \unknown  \\
+        0 &amp;0 &amp;4 &amp; \unknown 
+            \end{array}\right]=  \unknown .</me>
+        </p>
+        <p>   
+            What does this tell you about solution set for the vector equation 
+            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>?
+            <ol marker="A.">
+                <li>
+                    <p>
+                    It is inconsistent.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    It is consistent with one solution.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    It is consistent with infinitely many solutions.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        </task>
+        <task> 
+            <p>
+                Which of these might explain the connection?
+                <ol marker="A.">
+                    <li>
+                        <p>
+A pivot column establishes linear independence and creates a
+contradiction.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+A non-pivot column both describes a linear combination and
+reveals the number of solutions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+A pivot row describes the bound variables and prevents
+a contradiction.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+A non-pivot row prevents contradictions and makes the vector
+equation solvable.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            </task>
+    </activity>
+
+<fact>
+    <statement>
+        <p>
+  For any vector space,
+  the set <m>\{\vec v_1,\dots\vec v_n\}</m> is linearly dependent if and only
+  if the vector equation <m>x_1\vec v_1+ x_2 \vec v_2+\dots+x_n\vec v_n=\vec{0}</m> is consistent with
+  infinitely many solutions.
+        </p>
+        <p>
+   Likewise, the set of vectors
+        <m>\{\vec v_1,\dots\vec v_n\}</m> is linearly independent 
+        if and only the vector equation <me>x_1\vec v_1+ x_2 \vec v_2 + \cdots + x_n\vec v_n = \vec{0}</me> 
+        has exactly one solution: <m>\left[\begin{array}{c}
+            x_1 \\ \vdots  \\ x_n
+                \end{array}\right]=\left[\begin{array}{c}
+                0 \\ \vdots  \\ 0
+                    \end{array}\right]</m>.
+        </p>
+    </statement>
+</fact>
+
+<activity estimated-time='10'>
+    <statement>
+        <p>
+  Find
+  <me>\RREF\left[\begin{array}{ccccc|c}
+  2&amp;2&amp;3&amp;-1&amp;4&amp;0\\
+  3&amp;0&amp;13&amp;10&amp;3&amp;0\\
+  0&amp;0&amp;7&amp;7&amp;0&amp;0\\
+  -1&amp;3&amp;16&amp;14&amp;1&amp;0
+  \end{array}\right]
+  </me>
+  and mark the part of the matrix that demonstrates that
+  <me>S=\left\{
+  \left[\begin{array}{c}2\\3\\0\\-1\end{array}\right],
+  \left[\begin{array}{c}2\\0\\0\\3\end{array}\right],
+  \left[\begin{array}{c}3\\13\\7\\16\end{array}\right],
+  \left[\begin{array}{c}-1\\10\\7\\14\end{array}\right],
+  \left[\begin{array}{c}4\\3\\0\\1\end{array}\right]
+  \right\}
+  </me>
+  is linearly dependent (the part that shows its linear system has
+  infinitely many solutions).
+        </p>
+    </statement>
+</activity>
+
+<sage language="octave">
+</sage>
+
+<observation xml:id="def_of_LI">
+    <statement>
+        <p>
+  Compare the following results:
+        </p>
+  <ul>
+    <li>
+        <p>
+        A set of <m>\IR^m</m> vectors
+      <m>\{\vec v_1,\dots\vec v_n\}</m> is linearly independent if and only
+      if <m>\RREF\left[\begin{array}{ccc}\vec v_1&amp;\dots&amp;\vec v_n\end{array}\right]</m>
+      has all pivot <em>columns</em>.
+        </p>
+      </li>
+      <li>
+          <p>
+          A set of <m>\IR^m</m> vectors
+        <m>\{\vec v_1,\dots\vec v_n\}</m> is linearly dependent if and only
+        if <m>\RREF\left[\begin{array}{ccc}\vec v_1&amp;\dots&amp;\vec v_n\end{array}\right]</m>
+        has at least one non-pivot <em>column</em>.
+          </p>
+        </li>
+        <li>
+            <p>
+            A set of <m>\IR^m</m> vectors
+          <m>\{\vec v_1,\dots\vec v_n\}</m> spans <m>\IR^m</m> if and only
+          if <m>\RREF\left[\begin{array}{ccc}\vec v_1&amp;\dots&amp;\vec v_n\end{array}\right]</m>
+          has all pivot <em>rows</em>.
+            </p>
+          </li>
+      <li>
+          <p>
+          A set of <m>\IR^m</m> vectors
+        <m>\{\vec v_1,\dots\vec v_n\}</m> fails to span <m>\IR^m</m> if and only
+        if <m>\RREF\left[\begin{array}{ccc}\vec v_1&amp;\dots&amp;\vec v_n\end{array}\right]</m>
+        has at least one non-pivot <em>row</em>.
+          </p>
+        </li>
+  </ul>
+    </statement>
+</observation>
+
+<activity>
+      <task>
+        <introduction>
+          <p> Write a statement involving the solutions of a vector equation that's equivalent to each claim: </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
+                    1 \\
+                    -1 \\
+                    0 \\
+                    -1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    5 \\
+                    5 \\
+                    3 \\
+                    1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    9 \\
+                    11 \\
+                    6 \\
+                    3
+                    \end{array}\right] \right\}</m> is linearly <em>independent</em>.</q>
+                    </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+                <p>
+                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
+                    1 \\
+                    -1 \\
+                    0 \\
+                    -1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    5 \\
+                    5 \\
+                    3 \\
+                    1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    9 \\
+                    11 \\
+                    6 \\
+                    3
+                    \end{array}\right] \right\}</m> is linearly <em>dependent</em>.</q>
+                </p>
+            </statement>
+          </task>
+      </task>
+      <task>
+        <statement>
+          <p> Explain how to determine which of these statements is true. </p>
+        </statement>
+      </task>
+</activity>
+
+<sage language="octave">
+</sage>
+
+<!-- <activity estimated-time='10'>
+    <introduction>
+        <p>
+  Consider whether the set of polynomials <m>\left\{
+  x^3+1,x^2+2x,x^2+7x+4
+  \right\}</m> is linearly dependent or linearly independent.
+        </p>
+    </introduction>
+<task>
+    <p>
+Reinterpret this question as an appropriate question about solutions to a polynomial equation.
+    </p>
+</task>
+<task>
+    <p>
+Use the solution to this question to answer the original question.
+    </p>
+</task>
+</activity>
+
+<sage language="octave">
+</sage> -->
+
+<activity estimated-time='5'>
+    <statement>
+        <p>
+What is the largest number of <m>\IR^4</m> vectors that can form a linearly independent set?
+        </p>
+<ol marker="A." cols="2">
+<li>
+    <p>
+    <m>3</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>4</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>5</m>
+    </p>
+</li>
+<li>
+    <p>
+    You can have infinitely many vectors and still be linearly independent.
+    </p>
+</li>
+</ol>
+    </statement>
+</activity>
+
+<!-- <activity estimated-time='5'>
+    <statement>
+        <p>
+What is the largest number of 
+<me>\P_4=\setBuilder{ax^4+bx^3+cx^2+dx+e}{a,b,c,d,e\in\IR}</me>
+vectors that can form a linearly independent set?
+        </p>
+<ol marker="A." cols="2">
+<li>
+    <p>
+    <m>3</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>4</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>5</m>
+    </p>
+</li>
+<li>
+    <p>
+    You can have infinitely many vectors and still be linearly independent.
+    </p>
+</li>
+</ol>
+    </statement>
+</activity> -->
+
+<!-- <activity estimated-time='5'>
+    <statement>
+        <p>
+What is the largest number of 
+<me>\P=\setBuilder{f(x)}{f(x)\text{ is any polynomial}}</me>
+vectors that can form a linearly independent set?
+        </p>
+<ol marker="A." cols="2">
+<li>
+    <p>
+    <m>3</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>4</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>5</m>
+    </p>
+</li>
+<li>
+    <p>
+    You can have infinitely many vectors and still be linearly independent.
+    </p>
+</li>
+</ol>
+    </statement>
+</activity>
+     -->
+<activity estimated-time="5">
+    <statement>
+        <p>
+    Is it possible for the set of Euclidean vectors <m>\{\vec v_1, \vec v_2,\ldots, \vec v_n, \vec 0\}</m>
+    to be linearly independent?
+    <ol marker="A." cols="2">
+    <li>
+        <p>
+            Yes
+        </p>
+    </li>
+    <li>
+        <p>
+            No
+        </p>
+    </li>
+    </ol>
+        </p>
+    </statement>
+</activity>
+</subsection>
+<subsection>
+    <title>Cool Down</title>
+    <remark>
+        Recall that in <xref ref="EV2-Analogy"/> we used the words <em>vector</em>, <em>linear combination</em>, and <em>span</em> to make an anology with recipes, ingredients, and meals.
+        In this analogy, a <em>recipe</em> was defined to be a list of amounts of each ingredient to build a particular meal.
+    </remark>
+    <activity>
+            <statement>
+                <p>
+                    Consider the statement: The set of vectors <m>\left\{\vec{v}_1,\vec{v}_2,\vec{v}_3\right\}</m> is linearly independent because the vector <m>\vec{v}_3</m> is a linear combination of <m>\vec{v_1}</m> and <m>\vec{v}_2</m>. 
+                    Construct an analogous statement involving ingredients, meals, and recipes, using the terms <em>linearly independent</em> and <em>linear combination</em>.
+                </p>
+            </statement>
+    </activity>
+    <activity>
+        <introduction>
+            <p>
+                The following exercises are designed to help develop your geometric intution around linear dependence.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Draw sketches that depict the following:
+                    <ul>
+                        <li>
+                            <p>
+                                Three linearly independent vectors in <m>\IR^3</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Three linearly dependent vectors in <m>\IR^3</m>. 
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    If you have three linearly dependent vectors, is it necessarily the case that one of the vectors is a multiple of the other? 
+                </p>
+            </statement>
+        </task>
+    </activity>
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-EV4" youtube="EZ9BX1z-H4Y">
+              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+            </video>
+            <caption>Video: Linear independence</caption>
+        </figure>
+    </subsection>
+
+ 
+
+    <exercises>
+        <p>Exercises available at <url href="https://teambasedinquirylearning.github.io/linear-algebra/2024/exercises/#/bank/EV4/"/>.</p>
+    </exercises>
+<subsection>    
+    <title>Mathematical Writing Explorations</title>
+            <exploration>
+                <statement>
+                    Prove the result of <xref ref="def_of_LI"></xref>, by showing that, given a set <m>S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}</m> of vectors, <m>S</m> is linearly independent iff the equation <m>x_1\vec{v}_1 + x_2\vec{v}_2 + \ldots\ + x_n\vec{v}_n = \vec{0}</m> is only true when <m>x_1 = x_2 = \cdots = x_n = 0</m>. 
+                </statement>
+    </exploration>
+    </subsection>
+    
+    <subsection>
+        <title>Sample Problem and Solution</title>
+        <p>
+            Sample problem <xref ref="sample-EV4"/>.
+        </p>
+    </subsection>
+
+</section>

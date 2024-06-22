@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appendix xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="trig-table">
+     <title>List of Trigonometric Identities</title>
+    <ol marker="a.">
+    <li><p><m>[\sin(\alpha)]^2+[\cos(\alpha)]^2=1</m></p></li>
+    
+    <li><p><m>\cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)</m></p></li>
+    
+    <li><p><m>\sin(\alpha+\beta)=\sin(\alpha)\cos(\beta)+\cos(\alpha)\sin(\beta)</m></p></li>
+    
+    <li><p><m>\cos(2\alpha) = [\cos(\alpha)]^2-[\sin(\alpha)]^2 = 2[\cos(\alpha)]^2-1 = 1-2[\sin(\alpha)]^2</m></p></li>
+    
+    <li><p><m>\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)</m></p></li>
+    
+    <li><p><m>[\cos(\alpha)]^2=\displaystyle\frac{1+\cos(2\alpha)}{2}</m></p></li>
+    
+    <li><p><m>[\sin(\alpha)]^2=\displaystyle\frac{1-\cos(2\alpha)}{2}</m></p></li>
+    
+    <li><p><m>\sin(\alpha)\cos(\beta)=\displaystyle\frac{\sin(\alpha+\beta)+\sin(\alpha-\beta)}{2}</m></p></li>
+    
+    <li><p><m>\sin(\alpha)\sin(\beta)=\displaystyle\frac{\cos(\alpha-\beta)-\cos(\alpha+\beta)}{2}</m></p></li>
+    
+    <li><p><m>\cos(\alpha)\sin(\beta)=\displaystyle\frac{\sin(\alpha+\beta)-\sin(\alpha-\beta)}{2}</m></p></li>
+    
+    <li><p><m>\cos(\alpha)\cos(\beta)=\displaystyle\frac{\cos(\alpha-\beta)+\cos(\alpha+\beta)}{2}</m></p></li>
+    
+    <li><p><m>\sin(\alpha)+\sin(\beta)=2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m></p></li>
+    
+    <li><p><m>\sin(\alpha)-\sin(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m></p></li>
+    
+    <li><p><m>\cos(\alpha)+\cos(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m></p></li>
+    
+    <li><p><m>\cos(\alpha)-\cos(\beta)=-2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m></p></li>
+    </ol>
+</appendix>

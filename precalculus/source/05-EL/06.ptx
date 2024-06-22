@@ -1,0 +1,824 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EL6" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Solving Exponential and Logarithmic Equations (EL6) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/06.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+
+    <remark>
+      Recall that we can convert between exponential and logarithmic forms. <me>\log_bx=y</me> is equivalent to <me>b^y=x</me>
+    </remark>
+
+    <activity xml:id="solve-by-converting">
+      <introduction>
+        <p>
+          This activity will investigate ways we can solve logarithmic equations using properties and definitions from previous sections.
+        </p>
+      </introduction> 
+      <task>
+        <statement>
+          <p>
+            Given that <m>\log_39=x</m>, how can we rewrite this into an exponential equation?
+            <ol marker= "A." cols="2">
+              <li><m>9^x=3</m></li>
+              <li><m>\log\left(\frac{9}{3}\right)</m></li>
+              <li><m>3^x=9</m></li>
+              <li><m>x^3=9</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Now that <m>\log_39=x</m> is rewritten as an exponential equation, what is the value of <m>x</m>?
+            <ol marker= "A." cols="2">
+              <li><m>-2</m></li>
+              <li><m>2</m></li>
+              <li><m>-\frac{1}{2}</m></li>
+              <li><m>\frac{1}{2}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      Notice in <xref ref="solve-by-converting"/>, you were able to solve a logarithmic equation by converting it into an exponential equation. This is one method in solving logarithmic equations.
+    </remark>
+
+    <activity xml:id="solve-by-converting-2">
+    <introduction>
+      <p>
+        For each of the following, solve the logarithmic equations by first converting them to exponential equations.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\log_{10}(1{,}000{,}000)=x</m>
+          <ol marker= "A." cols="2">
+            <li><m>-6</m></li>
+            <li><m>100{,}000</m></li>
+            <li><m>6</m></li>
+            <li><m>0.00001</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\log_3(x+3)=0</m>
+          <ol marker= "A." cols="2">
+            <li><m>0</m></li>
+            <li><m>-2</m></li>
+            <li><m>2</m></li>
+            <li><m>-1</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\log_5(2x+4)=2</m>
+          <ol marker= "A." cols="2">
+            <li><m>14</m></li>
+            <li><m>\frac{29}{2}</m></li>
+            <li><m>16</m></li>
+            <li><m>\frac{21}{2}</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+    </activity>
+  
+    <activity xml:id="solving-log-equations-with-logs-on-both-sides">
+      <introduction>
+        <p>
+          Not all logarithmic equations can be solved by converting to exponential equations. In this activity, we will explore another way to solve logarithmic equations.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given the equation, <me>\log(4x-5)=\log(2x-1)</me>, and you
+           brought all the logs to one side to get <me>\log(4x-5)-\log(2x-1)=0</me>. Using the quotient property of logs, how could you condense the left side of the equation?
+              <ol marker= "A." cols="2">
+                <li><m>\log\left(\frac{4x-5}{2x-1}\right)</m></li>
+                <li><m>\log\left(\frac{2x-1}{4x-5}\right)</m></li>
+                <li><m>\frac{\log(4x-5)}{\log(2x-1)}</m></li>
+                <li><m>\frac{\log(2x-1)}{\log(4x-5)}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Now that you have a single logarithm, convert this logarithmic form into exponential form. What does this new equation look like?
+            <ol marker= "A." cols="2">
+              <li><m>\frac{4x-5}{2x-1}=10^0</m></li>
+              <li><m>\frac{2x-1}{4x-5}=1</m></li>
+              <li><m>\frac{2x-1}{4x-5}=10^0</m></li>
+              <li><m>\frac{4x-5}{2x-1}=1</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A and D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Notice that the "log" has disappeared and you now have an equation with just the variable <m>x</m>. Which of the following is equivalent to the equation you got in part b?
+            <ol marker= "A." cols="1">
+              <li><m>4x-5=2x-1</m></li>
+              <li><m>4x-5=0</m></li>
+              <li><m>2x-1=0</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Compare the answer you got in part c to the original equation given <m>\log(4x-5)=\log(2x-1)</m>. What do you notice?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students should notice that the equation they have thus far is <m>4x-5=2x-1</m>, which is very similar to the original equation (only without the logs). Students may make a conjecture about "dropping" the logs to solve.
+          </p>
+        </answer>
+      </task>  
+      <task>
+        <statement>
+          <p>
+            Solve the equation you got in part d to find the value of <m>x</m>.
+            <ol marker= "A." cols="2">
+              <li><m>-3</m></li>
+              <li><m>\frac{5}{4}</m></li>
+              <li><m>\frac{1}{2}</m></li>
+              <li><m>2</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      Notice in <xref ref="solving-log-equations-with-logs-on-both-sides"/>, that you did not have to convert the logarithmic equation into an exponential equation. A faster method, when you have a log on both sides of the equals sign, is to "drop" the logs and set the arguments equal to one another. Be careful though - you can only have one log on each side before you can "drop" them!
+    </remark> 
+
+    <definition xml:id="def-one-to-one-property">
+      <statement>
+        <p>
+          The <term>one-to-one property of logarithms</term> states that if both sides of an equation can be rewritten as a single logarithm with the same base, then the arguments can be set equal to each other (and then solved algebraically).
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="solving-using-one-to-one-property">
+      <introduction>
+        <p>
+          Apply <xref ref="def-one-to-one-property"/> and other properties of logarithms (i.e., product, quotient, and power) to solve the following logarithmic equations.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\log(-2a+9)=\log(7-4a)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-1</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\log_9(x+6)-\log_9x=\log_92</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>6</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\log_82+\log_8(4x^2)=1</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1</m> and <m>-1</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\ln(4x+1)-\ln3=5</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3e^5-1}{4}</m> or <m>111.06</m>
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="solving-log-equations-with-different-bases">
+      <introduction>
+        <p>
+          In some cases, you will get equations with logs of different bases. Apply properties of logarithms to solve the following logarithmic equations.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\log_3(x-6)=\log_9x</m>
+          </p>
+        </statement>
+        <hint>
+              <p>
+                Use the change of base formula to rewrite <m>\log_9x</m> so that it has a base of <m>3</m>.
+              </p>
+        </hint>
+        <answer>
+          <p>
+            <m>x=9</m>
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\log_2x=\log_8(4x)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>x=0</m> and <m>x=2</m> 
+            </p>
+          </answer>
+        </task>
+    </activity>
+    <activity xml:id="solving-exponential-equations-by-converting">
+      <introduction>
+        <p>
+          Now that we've looked at how to solve logarithmic equations, let's see how we can apply similar methods to solving exponential equations.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given the equation <m>2^x=48</m>. There is no whole number value we can raise <m>2</m> to to get <m>48</m>. What two whole numbers must <m>x</m> be between?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Between <m>5</m> and <m>6</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            We'll use logarithms to isolate the variable in the exponent. How can we convert <m>2^x=48</m> into a logarithmic equation?
+            <ol marker= "A." cols="2">
+              <li><m>x=\log_{48}2</m></li>
+              <li><m>x=\log_248</m></li>
+              <li><m>48=\log_2x</m></li>
+              <li><m>2=\log_{48}x</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+    <task>
+      <statement>
+        <p>
+          Notice that the answer you got in part b is an exact answer for <m>x</m>. There will be times, though, that it will be helpful to also have an approximation for <m>x</m>. Which of the following is a good approximation for <m>x</m>?
+          <ol marker= "A." cols="2">
+            <li><m>x \approx 5.585</m></li>
+            <li><m>x \approx 0.179</m></li>
+            <li><m>x \approx 24</m></li>
+            <li><m>x \approx \frac{1}{24}</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      Notice in <xref ref="solving-exponential-equations-by-converting"/> we started with an exponential equation and then solved by converting the equation into a logarithmic equation. Logarithms can help us get the variable out of the exponent.
+    </remark>
+
+    <activity xml:id="explore-using-logs-to-solve">
+      <introduction>
+        <p>
+          Although rewriting an exponential equation into a logarithmic equation is helpful at times, it is not the only method in solving exponential equations. In this activity, we will explore what happens when we take the log of both sides of an exponential equation and use the properties of logarithms to solve in another way.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given the equation: <me>3^x=7</me>. Take the log of both sides. What equation do you now have?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\log{3^x}=\log7</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Apply the power property of logarithms (<xref ref="def-power-property"/>) to bring down the exponent. What equation do you now have?
+          </p> 
+        </statement>
+        <answer>
+          <p>
+            <m>x \cdot \log3=\log7</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Solve for <m>x</m>. What does <m>x</m> equal?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=\frac{\log7}{\log3}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Using the change-of-base formula (<xref ref="def-change-of-base"/>), rewrite your answer from part c so that <m>x</m> is written as a single logarithm. What is the exact value of <m>x</m>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=\log_37</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            If you were to solve <m>3^x=7</m> by converting it into a logarithmic equation, what would it look like?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\log_37=x</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What do you notice about your answer from parts d and e?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students should see that the two answers they got for parts d and e are the same. This might be a good time to discuss why taking the log of both sides is a valid method in solving an exponential equation.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="using-logs-to-solve-unlike-bases">
+      <introduction>
+        <p>
+          Use the method of taking the log of both sides (as you saw in <xref ref="explore-using-logs-to-solve"/>) to solve <m>5^{2x+3}=8</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Take the log of both sides and use the power property of logarithms to bring down the exponent. What equation do you have now?
+            <ol marker= "A." cols="1">
+              <li><m>2x+3\log5=\log8</m></li>
+              <li><m>2x+(3\log5)=\log8</m></li>
+              <li><m>(2x+3) \cdot \log5=\log8</m></li>
+              <li><m>2x\log5+3=\log8</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Solve for <m>x</m>.
+            <ol marker= "A." cols="1">
+              <li><m>x=\frac{\log_58-3}{2}</m></li>
+              <li><m>x=\frac{\log8-3\log5}{2}</m></li>
+              <li><m>x=\frac{\log8}{3\log5}-2</m></li>
+              <li><m>x=\frac{\log8-3}{2\log5}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the approximate value of <m>x</m>?
+            <ol marker= "A." cols="1">
+              <li><m>x \approx -0.85</m></li>
+              <li><m>x \approx -1.5</m></li>
+              <li><m>x \approx -0.60</m></li>
+              <li><m>x \approx -1.57</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="solving-by-like-bases">
+      <introduction>
+        <p>
+          In this activity, we will explore other types of exponential equations, which will require other methods of solving.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given the equation <me>
+              5^{3x}=5^{7x-2}</me> and you decide to take the log of both sides as your first step to get <me>\log5^{3x}=\log5^{7x-2}</me> What would you use next to solve this equation?
+                <ol marker= "A." cols="1">
+                  <li>Quotient property of logarithms</li>
+                  <li>Power property of logarithms</li>
+                  <li>Product property of logarithms</li>
+                  <li>Change of base formula</li>
+                  <li>One-to-one property of logarithms</li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Applying the property you chose in part a, what would the resulting equation be?
+            <ol marker= "A." cols="1">
+                <li><m>3x\log5=7x-2\log5</m></li>
+                <li><m>3x\log5=7x\log5-2\log5</m></li>
+                <li><m>\log5^{3x}=\log5^{7x-2}</m></li>
+                <li><m>(3x)\log5=(7x-2)\log5</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B and D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Now that you have a logarithmic equation, divide both sides by <m>\log5</m> to begin to isolate the variable <m>x</m>. After dividing by <m>\log5</m>, what equation do you now have?
+            <ol marker= "A." cols="1">
+              <li><m>3x=\frac{7x}{\log5}-2</m></li>
+              <li><m>3x=7x-2</m></li>
+              <li><m>5^{3x}=5^{7x-2}</m></li>
+              <li><m>\frac{3x\log5}{\log5}=\frac{(7x-2)\log5}{\log5}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Compare the equation you got in part c to the original equation given. What do you notice?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students will probably notice that their resulting equation are just the exponents of the original equation set equal to one another.
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Solve for <m>x</m>.
+              <ol marker= "A." cols="2">
+                <li><m>2</m></li>
+                <li><m>\frac{1}{2}</m></li>
+                <li><m>-2</m></li>
+                <li><m>\frac{1}{2}</m></li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+      </task>
+    </activity>
+
+    <remark>
+      Notice in <xref ref="solving-by-like-bases"/>, it is much faster to set the exponents equal to one another. Make sure to check that the bases are equal <em>before</em> you set the exponents equal! And if the bases are not equal, you might have to use properties of exponents to help you get the bases to be the same.
+    </remark>
+
+    <definition xml:id="def-one-to-one-property-of-exponentials">
+      <statement>
+        <p>
+          When you are given an exponential equation with the same bases on both sides, you can simply set the exponents equal to one another and solve. This is known as the <term>one-to-one property of exponentials</term>. 
+        </p> 
+      </statement>
+    </definition>
+
+    <activity xml:id="solving-like-bases-scaffolded">
+      <introduction>
+        <p>
+          When an exponential equation has the same base on each side, the exponents can be set equal to one another. If the bases aren't the same, we can rewrite them using properties of exponents and use the one-to-one property of exponentials.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given <me>5^x=625</me>, how could you rewrite this equation so that both sides have a base of <m>5</m>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>5^x=5^4</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given <me>4^x=32</me>, how could you rewrite this equation so that both sides have a base of <m>2</m>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2^{2x}=2^5</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given <me>3^{1-x}=\frac{1}{27}</me>, how could you rewrite this equation so that both sides have a base of <m>3</m>? (Hint: you many need to revisit properties of exponents)
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>3^{1-x}=3^{-3}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose you are given <me>6^{\frac{x-3}{4}}=\sqrt{6}</me>, how could you rewrite this equation so that both sides have a base of <m>6</m>? (Hint: you many need to revisit properties of exponents)
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>6^{\frac{x-3}{4}}=6^{\frac{1}{2}}</m>
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="solving-exponentials-practice">
+      <introduction>
+        <p>
+          For each of the following, use properties of exponentials and logarithms to solve.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>6^{-2x}=6^{2-3x}</m>
+            <ol marker= "A." cols="2">
+              <li><m>2</m></li>
+              <li><m>-\frac{2}{5}</m></li>
+              <li><m>-2</m></li>
+              <li><m>-\frac{5}{2}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\log_2256=x</m>
+            <ol marker= "A." cols="2">
+              <li><m>-8</m></li>
+              <li><m>254</m></li>
+              <li><m>8</m></li>
+              <li><m>128</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>5\ln(9x)=20</m>
+            <ol marker= "A." cols="2">
+              <li><m>e^4</m></li>
+              <li><m>\frac{e^4}{9}</m></li>
+              <li><m>e^{\left(\frac{4}{9}\right)}</m></li>
+              <li><m>\frac{4}{\ln9}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>10^x=4.23</m>
+            <ol marker= "A." cols="2">
+              <li><m>\log4.23</m></li>
+              <li><m>42.3</m></li>
+              <li><m>1.44</m></li>
+              <li><m>0.63</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A and D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\log_6(5x-5)=\log_6(3x+7)</m>
+            <ol marker= "A." cols="2">
+              <li><m>2</m></li>
+              <li><m>0</m></li>
+              <li><m>6</m></li>
+              <li><m>1</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="solving-both-practice-2">
+      <introduction>
+        <p>
+          For each of the following, use properties of exponentials and logarithms to solve. 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\log_82+\log_8{4x^2}=1</m> 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=1,-1</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>5^{x+7}=3</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=\frac{log3}{log5}-7</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>8^{\frac{x-6}{6}}=\sqrt8</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=9</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\log_6(x+1)-\log_6x=\log_6{29}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=\frac{1}{28}</m>
+          </p>
+        </answer>
+      </task>
+    </activity>
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

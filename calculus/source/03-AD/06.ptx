@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AD6" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Concavity and inflection (AD6) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/06.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+    <observation><statement><p>In addition to asking <em>whether</em>
+      a function is increasing or decreasing,
+      it is also natural to inquire <em>how</em>
+      a function is increasing or decreasing.
+      <xref ref="activity-derivative-concavity1"/> describes three basic behaviors that an increasing function can demonstrate on an interval,
+      as pictured in <xref ref="concavity-1"/> </p></statement></observation>
+      
+    
+    <activity xml:id="activity-derivative-concavity1">
+      <introduction>
+      <p>
+        Sketch a sequence of tangent lines at various points to each of the following curves in <xref ref="concavity-1"/>. 
+      </p>
+          
+    <figure xml:id="concavity-1">
+      <caption>Three increasing functions</caption>
+      <image width="100%" source="concavity-1" />
+    </figure>
+    </introduction>
+      <task>
+      <statement>
+          <p> Look at the curve pictured on the left of <xref ref="concavity-1"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines remain constant as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+            </ol>
+          </statement>
+      </task>
+      <task>
+      <statement>
+          <p> Look at the curve pictured in the middle of <xref ref="concavity-1"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines remain constant as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+            </ol>
+          </statement>
+      </task>
+      <task>
+      <statement>
+          <p> Look at the curve pictured on the right of <xref ref="concavity-1"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines remain constant as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+            </ol>
+          </statement>
+      </task>
+    </activity>
+    
+    
+    <remark>
+      <statement>
+      <p> On the leftmost curve in <xref ref="concavity-1"/>,
+      as we move from left to right,
+      the slopes of the tangent lines will increase.
+      Therefore, the rate of change of the pictured function is increasing,
+      and this explains why we say this function is
+      <em>increasing at an increasing rate</em>.
+          </p>    
+        </statement>
+      </remark>
+        
+ <observation><statement><p> We must be extra careful with our language when dealing with negative numbers.
+      For example, it can be tempting to say that
+      <q><m>-100</m> is bigger than <m>-2</m>.</q>
+      But we must remember that <q>greater than</q>
+      describes how numbers lie on a number line: <m>-100</m> is less than <m>-2</m> becomes it comes earlier on the number line.
+      It might be helpful to say that
+      <q><m>-100</m> is "more negative" than <m>-2</m>.</q>
+      </p></statement></observation>
+    
+    
+    <activity xml:id="activity-derivative-concavity2">
+      <introduction>
+      <p>
+        Sketch a sequence of tangent lines at various points to each of the following curves in <xref ref="concavity-2"/>. 
+      </p>
+          <figure xml:id="concavity-2" permid="PJf">
+      <caption>From left to right, three functions that are all decreasing.</caption>
+      <image width="100%" source="concavity-2" />
+    </figure>
+    
+    </introduction>
+      <task>
+      <statement>
+          <p> Look at the curve pictured on the left in <xref ref="concavity-2"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines remain constant as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+            </ol>
+          </statement>
+      </task>
+      <task>
+      <statement>
+          <p> Look at the curve pictured in the middle in <xref ref="concavity-2"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines remain constant as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+            </ol>
+          </statement>
+      </task>
+      <task>
+      <statement>
+          <p> Look at the curve pictured on the right in <xref ref="concavity-2"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines remain constant as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+            </ol>
+          </statement>
+      </task>
+        
+    </activity>
+    
+
+<remark xml:id="activity-remark-concavity-terminology"><statement><p>Recall the terminology of concavity: when a curve bends upward, we say its shape is concave up. When a curve bends downwards, we say its shape is concave down.</p></statement></remark>
+<!--     <p permid="KZm">
+      We now introduce the notion of <em>concavity</em>
+          <idx><h>concavity</h></idx>
+      which provides simpler language to describe these behaviors.
+      When a curve opens upward on a given interval,
+      like the parabola <m>y = x^2</m> or the exponential growth function <m>y = e^x</m>,
+      we say that the curve is <em>concave up</em> on that interval.
+      Likewise, when a curve opens down,
+      like the parabola <m>y = -x^2</m> or the opposite of the exponential function <m>y = -e^{x}</m>,
+      we say that the function is <em>concave down</em>.
+      Concavity is linked to both the first and second derivatives of the function.
+    </p>
+ -->
+<!-- Maybe insert examples like in the commented text     -->
+
+    <activity xml:id="activity-derivative-concavity3a">
+    <statement><p>Look at in <xref ref="concavity-3"/>. Which curve is concave up? Which one is concave down? Why? Try to explain using the graph!</p>
+
+    <figure xml:id="concavity-3" permid="vQo">
+      <caption>Two concavity, which is which? </caption>
+      <image width="90%" source="concavity-3" />
+    </figure>
+        
+        </statement></activity>
+    
+    <definition xml:id="concavity-and-first-derivative" permid="hcP">
+      <statement>
+        <p permid="slO">
+          Let <m>f</m> be a differentiable function on some interval <m>(a,b)</m>.
+          Then <m>f</m> is <term>concave up</term>
+              <idx><h>concave up</h></idx>
+          on <m>(a,b)</m> if and only if <m>f'</m> is increasing on <m>(a,b)</m>;
+          <m>f</m> is <term>concave down</term>
+              <idx><h>concave down</h></idx>
+          on <m>(a,b)</m> if and only if <m>f'</m> is decreasing on <m>(a,b)</m>.
+        </p>
+      </statement>
+    </definition>
+<!-- 
+ In <xref ref="AD5"/>, we used <xref ref="first-derivative-test"/> as a tool to determine when continuous functions had local maxima and local minima. In this section, we would like to develop a similar test that can identify where continous fucntions are concave up and concave down.  
+     -->
+    <activity xml:id="activity-derivative-concavity3">
+        <introduction>
+            <p>
+             Look at how the slopes of the tangent lines change from left to right for each of the two graphs in <xref ref="concavity-3"/>
+            </p>
+        </introduction>
+      <task>
+      <statement>
+          <p> Look at the curve pictured on the left in <xref ref="concavity-3"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines go from increasing to decreasing as you move from right to left.</p></li>
+              <li><p> The slopes of the tangent lines go from decreasing to increasing as you move from right to left.  </p></li>
+            </ol>
+          </statement>
+      </task>
+      <task>
+      <statement>
+          <p> Which of the following statements is true about the function on the left in <xref ref="concavity-3"/>? </p>
+          <ol marker="A." cols="2">
+              <li><p> <m>f'(x) &gt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f'(x) &lt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f''(x) &gt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f''(x) &lt; 0 </m> on the entire interval shown. </p></li>
+            </ol>
+          </statement>
+      </task>        
+      <task>
+      <statement>
+          <p> Look at the curve pictured on the right in <xref ref="concavity-3"/>. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+          <ol marker="A." cols="2">
+              <li><p>The slopes of the tangent lines decrease as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
+              <li><p> The slopes of the tangent lines go from increasing to decreasing as you move from right to left.</p></li>
+              <li><p> The slopes of the tangent lines go from decreasing to increasing as you move from right to left.  </p></li>
+            </ol>
+          </statement>
+      </task>
+      <task>
+      <statement>
+          <p> Which of the following statements is true about the function on the right in <xref ref="concavity-3"/>? </p>
+          <ol marker="A." cols="2">
+              <li><p> <m>f'(x) &gt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f'(x) &lt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f''(x) &gt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f''(x) &lt; 0 </m> on the entire interval shown. </p></li>
+            </ol>
+          </statement>
+      </task>
+    </activity>
+
+   <theorem xml:id="concavity-test"> <title>Test for Concavity</title>
+     <statement>
+      <p>
+       Suppose that <m>f(x)</m> is twice differentiable on some interval <m>(a,b)</m>. If <m>f'' &gt; 0</m> on <m>(a,b)</m>, then <m>f</m> is concave up on <m>(a,b)</m>. If <m>f'' &lt; 0</m> on <m>(a,b)</m>, then <m>f</m> is concave down on <m>(a,b)</m>. 
+      </p>
+      </statement>
+<!--        
+       
+    <p>
+    <ol>  
+    <li>If <m>f'(x) &gt; 0</m> and <m>f''(x) &gt; 0 </m> on <m>(a,b)</m>, then <m>f</m> is increasing and concave up on <m>(a,b)</m>. </li>
+    <li>If <m>f'(x) &gt; 0</m> and <m>f''(x) &lt; 0 </m> on <m>(a,b)</m>, then <m>f</m> is increasing and concave down on <m>(a,b)</m>.</li>
+    <li>If <m>f'(x) &lt; 0</m> and <m>f''(x) &gt; 0 </m> on <m>(a,b)</m>, then <m>f</m> is decreasing and concave up on <m>(a,b)</m>.</li>
+    <li>If <m>f'(x) &lt; 0</m> and <m>f''(x) &lt; 0 </m> on <m>(a,b)</m>, then <m>f</m> is decreasing and concave down on <m>(a,b)</m>.</li>
+     </ol> 
+    </p> -->
+    </theorem>
+    
+    <observation xml:id="concavity-test-usage"> <statement><p>In the previous section, we saw in  <xref ref="activity-using-FDT"/> how to use critical points of the function and the sign of the first derivative to identify intervals of increase/decrease of a function. The next activity <xref ref="activity-derivative-concavity4"/> uses the critical points of the first derivative function and the sign of the second derivative (accordingly to <xref ref="concavity-test"/>) to identify where the original function is concave up/down. </p></statement></observation>
+    
+    <activity xml:id="activity-derivative-concavity4">
+        <introduction>
+            <p>
+             Let <m>f(x)=x^4-54x^2</m>.
+            </p>
+        </introduction>
+        <task> 
+            <p>Find all the zeros of <m>f''(x)</m>. </p>
+        </task>
+        <task> 
+            <p>What intervals have been created by subdividing the number line at zeros of <m>f''(x)</m>?</p>
+        </task>
+        <task> 
+            <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f''(x)</m> is positive or negative at each point.</p>
+        </task>
+        <task> 
+            <p>On which intervals is <m>f'(x)</m> increasing? On which intervals is <m>f'(x)</m> decreasing?</p>
+        </task>
+        <task> 
+            <p>List all the intervals where <m>f(x)</m> is concave up and all the intervals where <m>f(x)</m> is concave down.</p>
+        </task>
+    </activity>
+     
+              
+    
+    
+   <definition xml:id="definition-inflection-point">
+       <p>
+           If <m>x=c</m> is a point where <m>f''(x)</m> changes sign, then the concavity of graph of <m>f(x)</m> changes at this point and we call <m>x=c</m> an  <term>inflection point</term> of <m>f(x)</m>.
+       </p> 
+    </definition>
+    
+    <activity xml:id="activity-derivative-concavity5">
+        <introduction>
+            <p>
+             Use the results from <xref ref="activity-derivative-concavity4"/> to identify all of the inflection points of <m>f(x)=x^4-4x^3+4x^2</m>.
+            </p>
+        </introduction>
+    </activity>
+
+<activity xml:id="concavity-fluency-checkit">
+
+    <introduction>
+        <p>
+For each of the following functions, describe the open intervals
+where it is concave up or concave down, and any inflection points.      
+        </p></introduction>
+
+                <task>
+                    <p><m>f(x)=-\frac{1}{4} \, x^{5} - \frac{5}{2} \, x^{4} - \frac{15}{2} \, x^{3}</m></p>
+                </task>
+                <task>
+                    <p><m>f(x)=\frac{3}{20} \, x^{5} + x^{4} - \frac{5}{2} \, x^{3}</m></p>
+                </task>
+        
+ <!--   <answer>
+         <ol>
+                <li>
+                    <p><m>f''(x)=-5 \, {\left(x + 3\right)}^{2} x</m></p>
+                    <ul>
+                                <li>
+                                    <p>
+<m>(-\infty, -3 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>-3</m>
+
+is <em>not</em>
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( -3 , 0 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>0</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( 0, \infty )</m> is concave <em>up</em>
+                                    </p>
+                                </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><m>f''(x)=3 \, {\left(x + 5\right)} {\left(x - 1\right)} x</m></p>
+                    <ul>
+                                <li>
+                                    <p>
+<m>(-\infty, -5 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>-5</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( -5 , 0 )</m> is concave <em>up</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>0</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( 0 , 1 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>1</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( 1 , \infty )</m> is concave <em>up</em>
+                                    </p>
+                                </li>
+                    </ul>
+                </li>
+        </ol>
+    </answer>-->
+ </activity>
+
+    <activity xml:id="derivative-tests-concavity-extension">
+         <introduction>
+            <p>   
+        Consider the following table. The values of the first and second derivatives of <m>f(x)</m> are given on the domain <m>[0,7]</m>. The function <m>f(x)</m>  does not suddenly change behavior between the points given, so the table gives you enough information to completely determine where <m>f(x)</m>  is increasing, decreasing, concave up, and concave down.
+                </p>
+<p>
+        <me>
+\begin{array}{c|cccccccc}
+x
+        &amp;  0
+            &amp;  1
+            &amp; 2
+            &amp; 3
+            &amp; 4
+            &amp;  5
+            &amp;  6
+            &amp; 7
+     \\\hline
+f'(x)
+        &amp;  2
+            &amp;  0
+            &amp; -2
+            &amp; 0
+            &amp; 2
+            &amp;  1
+            &amp;  0
+            &amp; -1
+        
+     \\\hline
+f''(x)
+        &amp;  -2
+            &amp;  -1
+            &amp; 0
+            &amp; 1
+            &amp; 0
+            &amp;  -1
+            &amp;  0
+            &amp; 3        
+     \\ 
+\end{array}
+        </me>
+        </p>
+        </introduction>
+        <task> 
+            <p>List all the critical points of <m>f(x)</m> that you can find using the table above. </p>
+        </task>
+        <task> 
+            <p>Use the First Derivative Test to classify the critical numbers (decide if they are a max or min). Write full sentence stating the conclusion of the test for each critical number. </p>
+        </task>
+        <task> 
+            <p>On which interval(s) is <m>f(x)</m> increasing? On which interval(s) is <m>f(x)</m> decreasing? List all the critical points of <m>f(x)</m> that you can find using the table above. </p>
+        </task>
+        <task> 
+            <p>There is one critical number for which the Second Derivative Test is inconclusive. Which one? You can still determine if it is a max or min using the First Derivative Test! </p>
+        </task>
+        <task> 
+            <p>List all the critical points of <m>f'(x)</m> that you can find using the table above. </p>
+        </task>
+         <task> 
+            <p>On which intervals is <m>f(x)</m> concave up? On which intervals is <m>f(x)</m>  concave down? </p>
+        </task>
+        <task> 
+            <p>List all the inflection points of <m>f(x)</m> that you can find using the table above. </p>
+        </task>
+ </activity>
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <p>See <xref ref="figure-video-AD5-AD6"/>.</p>
+    </subsection>     
+
+</section>

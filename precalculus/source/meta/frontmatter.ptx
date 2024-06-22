@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter. Fill in and comment/uncomment to see how this -->
+<!-- works. -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <titlepage>
+    <author>
+      <personname>TBIL Fellows</personname>
+
+    </author>
+    <credit>
+      <title>Editors</title>
+        <author>
+          <personname>Steven Clontz</personname>
+          <department>Department of Mathematics and Statistics</department>
+          <institution>University of South Alabama</institution>
+          <email>sclontz@southalabama.edu</email>
+        </author>
+        <author>
+          <personname>Drew Lewis</personname>
+          <email>drew.lewis@gmail.com</email>
+        </author>
+    </credit>
+    <credit>
+      <title>Contributing Authors</title>
+      <author>
+        <personname>Tonya DeGeorge</personname>
+        <department>Department of Mathematics</department>
+        <institution>Georgia Gwinnett College</institution>
+        <email>tdegeorge@ggc.edu</email>
+      </author>
+      <author>
+        <personname>Abby Noble</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>Middle Georgia State University</institution>
+        <email>abby.noble@mga.edu</email>
+      </author>
+      <author>
+        <personname>Kathy Pinzon</personname>
+        <department>Department of Mathematics</department>
+        <institution>Georgia Gwinnett College</institution>
+        <email>kpinzon@ggc.edu</email>
+      </author>
+    </credit>
+    <date>
+      <today />
+    </date>
+  </titlepage>
+
+  <colophon xml:id="colophon">
+    <website>
+        <url href="https://teambasedinquirylearning.github.io/precalculus/">Precalculus for Team-Based Inquiry Learning</url>
+    </website>
+    <xi:include href="./copyright.ptx" />
+    <p>
+      This work includes materials used under license from the following works:
+            </p>
+            <ul>
+                <li>
+                    <p><pubtitle>Active Prelude to Calculus</pubtitle></p>
+                    <ul>
+                        <li>
+                            <p><url href="https://activecalculus.org/prelude/"/></p>
+                        </li>
+                        <li>
+                            <p>CC BY-SA 4.0</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul> 
+      
+    <p>The authors would like to acknowledge the contributions of Wendy Sheppard to drafts of <xref ref="EQ7"/>, <xref ref="PR3"/>, and <xref ref="PR4"/>.</p> 
+    <p>This work is supported in part by a grant from Affordable Learning Georgia.</p>
+    <p>This material is based upon work supported by the National Science Foundation under Grant No. DUE-2011807.
+      Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+    </p>
+  </colophon>
+<!--
+    <colophon xml:id="tbil-rl">
+      <title>TBIL Resource Library</title>
+      <p>
+This work is made available as part of the
+<url href="https://sites.google.com/southalabama.edu/tbil/tbil-resource-library" visual="sites.google.com/southalabama.edu/tbil/tbil-resource-library">TBIL Resource Library</url>,
+a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807" visual="nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
+      </p>
+  </colophon>
+-->
+</frontmatter>
+

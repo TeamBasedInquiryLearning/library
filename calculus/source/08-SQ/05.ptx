@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ5" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Basic Convergence Tests (SQ5)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/05.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    
+    <activity xml:id="activity-SQ5investigateDivergentSeries">
+            <introduction>
+                <p>
+                    Which of the following series seem(s) to diverge? It might be helpful to write out the first several terms.
+                </p>
+            </introduction>
+        <ol marker="A." cols="2">
+            <li><m>\displaystyle \sum_{n=0}^\infty n^2</m>.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{n+1}{n}</m>.</li>
+            <li><m>\displaystyle \sum_{n=0}^\infty (-1)^n</m>.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty \frac{1}{n}</m>.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}</m>.</li>
+        </ol>
+        </activity>
+    
+    
+    
+    <fact xml:id="fact-SQ5convergenceTheorem">
+          <statement>
+      <p permid="QCd">
+        If the series <m>\displaystyle\sum a_n</m> is convergent,
+        then  <m>\displaystyle\lim_{n\rightarrow\infty} a_n=0</m>.
+      </p>
+              </statement>
+        </fact>
+    
+    
+    
+    <fact xml:id="fact-SQ5divergenceTest">
+            <title>The Divergence (<m>n^{th}</m> term) Test</title>
+        <statement>
+      <p permid="QCd">
+        If the  <m>\displaystyle\lim_{n\rightarrow\infty} a_n\neq 0</m>,
+        then <m>\displaystyle\sum a_n</m> diverges.
+      </p>
+            </statement>
+        </fact>
+    
+    <activity xml:id="applyDTtoinvestigate">
+        <p>Which of the series from <xref ref="activity-SQ5investigateDivergentSeries"/> diverge by <xref ref="fact-SQ5divergenceTest"/>?</p>
+    </activity>
+    
+    <fact xml:id="fact-SQ5boundedPartialSums">
+           <statement>
+      <p permid="QCd">
+        If <m>a_n>0</m> for all <m>n</m>, then <m>\displaystyle\sum a_n</m> is convergent if and only if the sequence of partial sums is bounded from above.
+        </p>
+               </statement>
+        </fact>
+        
+        <activity xml:id="activity-SQ5harmonicSeries">
+            <introduction>
+                <p>
+                    Consider the so-called <em>harmonic series</em>, <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}</m>, and let <m>S_n</m> be its <m>n^{th}</m> partial sum.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                Determine which of the following inequalities hold(s).
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle\frac{1}{3}+\frac{1}{4}\lt \frac{1}{2}</m>.</li>
+                    <li><m>\displaystyle\frac{1}{3}+\frac{1}{4}\gt \frac{1}{2}</m>.</li>
+                    <li><m>S_4\geq S_2+\displaystyle\frac{1}{2}</m>.</li>
+                    <li><m>S_4\leq S_2+\displaystyle\frac{1}{2}</m>.</li>
+                    <li><m>S_4= S_2+\displaystyle\frac{1}{2}</m>.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+                Determine which of the following inequalities hold(s).
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle\frac{1}{2}\lt \frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}</m>.</li>
+                    <li><m>\displaystyle\frac{1}{2}\gt \frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}</m>.</li>
+                    <li><m>S_8=S_4+\displaystyle\frac{1}{2}</m>.</li>
+                    <li><m>S_8\geq S_4+\displaystyle\frac{1}{2}</m>.</li>
+                    <li><m>S_8\leq S_4+\displaystyle\frac{1}{2}</m>.</li>
+                </ol>
+            </task>
+        </activity>
+    
+    <activity>
+        <p>
+            In <xref ref="activity-SQ5harmonicSeries"/>, we found that <m>S_4\geq S_2+\displaystyle\frac{1}{2}</m> and <m>S_8\geq S_4+\displaystyle\frac{1}{2}</m>. Based on these inequalities, which statement seems most likely to hold?
+        </p>
+                <ol marker="A." cols="2">
+                    <li><p>The harmonic series converges.</p></li>
+                    <li><p>The harmonic series diverges.</p></li>
+                </ol>        
+    </activity>
+    
+        <activity xml:id="activity-SQ5pEquals2Series">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                We want to compare this series to an improper integral. Which of the following is the best candidate?
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle\int_1^\infty x^2 \, dx</m>.</li>
+                    <li><m>\displaystyle\int_1^\infty \displaystyle\frac{1}{x^3} \, dx</m>.</li>
+                    <li><m>\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx</m>.</li>
+                    <li><m>\displaystyle\int_1^\infty \displaystyle\frac{1}{x} \, dx</m>.</li>
+                    <li><m>\displaystyle\int_1^\infty x \, dx</m>.</li>
+                </ol>
+            </task>
+        
+           <task>
+                <p>
+                Select the true statements below.
+                    <ol marker="A." cols="2">
+                        <li>The sum <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}</m> corresponds to approximating the integral chosen above using left Riemann sums where <m>\Delta x=1</m>.</li>
+                        <li>The sum <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}</m> corresponds to approximating the integral chosen above using right Riemann sums where <m>\Delta x=1</m>.</li>
+                        <li>The sum <m>\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}</m> corresponds to approximating the integral chosen above using left Riemann sums where <m>\Delta x=1</m>.</li>
+                        <li>The sum <m>\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}</m> corresponds to approximating the integral chosen above using right Riemann sums where <m>\Delta x=1</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                Using the Riemann sum interpretation of the series, identify which of the following inequalities holds.
+                </p>                    
+                    <ol marker="A." cols="2">
+                        <li><m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2} \leq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx</m>.</li>
+                        <li><m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2} \geq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx</m>.</li>
+                        <li><m>\displaystyle \sum_{n=2}^\infty \frac{1}{n^2} \geq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx</m>.</li>
+                        <li><m>\displaystyle \sum_{n=2}^\infty \frac{1}{n^2} \leq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx</m>.</li>
+                    </ol>
+            </task>
+            
+            <task>
+                <p>
+                    What can we say about the improper integral <m>\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx</m>?
+                    <ol marker="A." cols="2">
+                        <li>This improper integral converges.</li>
+                        <li>This improper integral diverges.</li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    What do you think is true about the series <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}</m>?
+                    <ol marker="A." cols="2">
+                        <li>The series converges.</li>
+                        <li>The series diverges.</li>
+                    </ol>
+                </p>
+            </task>            
+        </activity>
+        
+    <fact xml:id="fact-SQ5integralTest">
+                      <title>The Integral Test</title> 
+        <statement>
+      <p permid="QCd">
+        Let <m>\{a_n\}</m> be a sequence of positive numbers.
+          If <m>f(x)</m> is continuous, positive, and decreasing,
+          and there is some positive integer <m>N</m> such that <m>f(n)=a_n</m> for all <m>n\geq N</m>,
+          then <m>\displaystyle \sum_{n=N}^\infty a_n</m> and <m>\displaystyle\int_N^\infty \displaystyle f(x) \, dx</m> both converge or both diverge.
+        </p>
+            </statement>
+        </fact>
+    
+        <activity xml:id="activity-SQ5pSeries">
+            <introduction>
+                <p>Consider the <m>p</m>-series <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^p}</m>.</p>
+            </introduction>
+            <task>
+                <p>
+                    Recall that the harmonic series diverges. What value of <m>p</m> corresponds to the harmonic series?
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>p=-1</m>.</li>
+                    <li><m>p=1</m>.</li>
+                    <li><m>p=-2</m>.</li>
+                    <li><m>p=2</m>.</li>
+                    <li><m>p=0</m>.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+                From <xref ref="fact-SQ5integralTest"/>, what can we conclude about the <m>p</m>-series with <m>p=2</m>?
+                <ol marker="A." cols="2">
+                    <li>There is not enough information to draw a conclusion.</li>
+                    <li>This series converges.</li>
+                    <li>This series diverges.</li>
+                </ol>
+                </p>
+            </task>
+     </activity>          
+
+    <fact xml:id="fact-SQ5pTest">
+                                 <title>The <m>p</m>-Test</title> 
+        <statement>
+      <p permid="QCd">
+The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> converges for <m>p\gt 1</m>, and diverges otherwise.
+        </p>
+            </statement>
+        </fact>
+    
+        <activity xml:id="activity-SQ5pSeriesAlmost">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                If we aim to use the integral test, what is an appropriate choice for <m>f(x)</m>?
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \frac{1}{x^2}</m>.</li>
+                    <li><m>x^2+1</m>.</li>
+                    <li><m>\displaystyle \frac{1}{x^2+1}</m>.</li>
+                    <li><m>x^2</m>.</li>       
+                    <li><m>\displaystyle \frac{1}{x}</m>.</li>                    
+                </ol>
+            </task>
+        
+       <task>
+                <p>
+                Does the series converge or diverge by <xref ref="fact-SQ5integralTest"/>?
+                </p>
+            </task>
+     </activity>
+    
+    <activity>
+        <p>Prove <xref ref="fact-SQ5pTest"/>.</p>
+    </activity>
+    
+    <activity>
+        <p> Which of the following statements seem(s) most likely to be true?
+        <ol marker="A." cols="2">
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}</m> diverges.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}</m> converges.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n^2}</m> converges.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n^2}</m> diverges.</li>
+        </ol>            
+        </p>
+    </activity>
+    
+    <fact xml:id="fact-SQ8alternatingSeriesTest">
+                      <title>The Alternating Series Test (Leibniz's Theorem)</title>
+         <statement>
+      <p permid="QCd">
+        The series <m>\displaystyle\sum (-1)^{n+1}u_n</m> converges if all of the following conditions are satisfied:
+          <ol>
+          <li><m>u_n</m> is always positive,</li>
+              <li>there is an integer <m>N</m> such that <m>u_n\geq u_{n+1}</m> for all <m>n\geq N</m>, and</li>
+              <li><m>\displaystyle\lim_{n\rightarrow\infty}u_n=0</m>.</li>
+          </ol>
+        </p>
+             </statement>
+        </fact>
+    
+    <activity>
+        <p> What conclusions can you now make?
+        <ol marker="A." cols="2">
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}</m> diverges.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}</m> converges.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n^2}</m> converges.</li>
+            <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n^2}</m> diverges.</li>
+        </ol>            
+        </p>
+    </activity>
+    
+<activity checkit-seed="9464" checkit-slug="SQ5" checkit-title="Basic convergence tests">
+    <introduction>
+        <p>
+            For each of the following series, use the <em>Divergence</em>, <em>Alternating Summation</em> or <em>Integral</em> test to determine if the series converges.
+        </p></introduction>
+        
+            <task>
+                <m>\displaystyle \sum_{n=1}^\infty \frac{2 \, {\left(n^{2} + 2\right)}}{n^{2}}.</m>
+            </task>            
+            <task>
+                <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^{4}}.</m>
+            </task>            
+            <task>
+                <m>\displaystyle \sum_{n=1}^\infty \frac{3 \, \left(-1\right)^{n}}{4 \, n}.</m>
+            </task>            
+        
+  <!--  <answer>
+       <ol>
+            <li>
+                
+                        <m>\displaystyle \sum_{n=1}^\infty \frac{2 \, {\left(n^{2} + 2\right)}}{n^{2}}</m> diverges by the <em>Divergence</em> test.               
+                   
+                
+            </li>            
+            <li>
+                
+                        <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^{4}}</m> converges by the <em>Integral</em> test.                
+                   
+                
+            </li>            
+            <li>
+                
+                        <m>\displaystyle \sum_{n=1}^\infty \frac{3 \, \left(-1\right)^{n}}{4 \, n}</m> converges by the <em>Alternating Summation</em> test.                
+                   
+                
+            </li>            
+        </ol>
+    </answer>-->
+</activity>
+    
+     <fact xml:id="fact-SQ8alternatingSeriesEstimation">
+                      <title>The Alternating Series Estimation Theorem</title> 
+         
+         <statement>
+      <p permid="QCd">
+        If the alternating series <m>\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n</m> converges to <m>L</m> and has <m>n^{th}</m> partial sum <m>S_n</m>,
+          then for <m>n\geq N</m> (as in the alternating series test):
+          <ol>
+          <li><m>|L-S_n|</m> is less than <m>|a_{n+1}|</m>, and</li>
+              <li><m>(L-S_n)</m> has the same sign as <m>a_{n+1}</m>.</li>
+          </ol>
+        </p>
+             </statement>
+        </fact>
+    
+    
+    
+    
+        <activity xml:id="activity-SQ5alternatingHarmonicSeries">
+            <introduction>
+                <p>
+                    Consider the so-called <em>alternating harmonic series</em>, <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(-1)^{n+1}}{n}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                Use the alternating series test to determine if the series converges.
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                If so, estimate the series using the first 3 terms.
+                </p>
+            </task>
+            
+     </activity>
+    
+    <!-- <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ5.slides.html"/>.</p>
+    </subsection> -->
+    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ5" youtube="XPGsG1Usjxg">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+</section>

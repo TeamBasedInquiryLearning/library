@@ -1,0 +1,825 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EL4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Graphs of Logarithmic Functions (EL4) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/04.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+
+    <activity xml:id="activity-log-graphs-intro">
+      <introduction>
+        <p> Consider the function <m>g(x)=\log_2 x</m>. 
+        </p> 
+      </introduction>
+
+      <task xml:id="log-graph-sketch1">
+        <statement>
+          <p>
+            Since we are familiar with graphing exponential functions, we'll use that to help us graph logarithmic ones. Rewrite <m>g(x)</m> in exponential form, replacing <m>g(x)</m> with <m>y</m>. 
+            <ol marker= "A.">  
+              <li> <p> <m>x^y=2</m> </p>  </li>
+              <li> <p> <m>2^y=x</m> </p>  </li>
+              <li> <p> <m>y^2=x</m> </p>  </li>
+              <li> <p> <m>2^x=y</m> </p>  </li>
+              <li> <p> <m>x^2=y</m> </p>  </li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Fill in the table of values. Notice you are given <m>y</m>-values, not <m>x</m>-values to plug in since those are easier in the equivalent exponential form. Then plot the points on a graph.
+            <tabular halign="right">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>y</m></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell><m>-2</m></cell>              
+              </row>
+              <row>
+                <cell></cell>
+                <cell><m>-1</m></cell>  
+              </row>
+              <row>
+                <cell></cell>
+                <cell><m>0</m></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell><m>1</m></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell><m>2</m></cell>
+              </row>
+            </tabular>
+          </p>
+        </statement>
+        <answer>
+          <sidebyside>
+            
+            <tabular halign="right">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>y</m></cell>
+              </row>
+              <row>
+                <cell><m>\frac{1}{4}</m></cell>    
+                <cell><m>-2</m></cell> 
+                          
+              </row>
+              <row>
+                <cell><m>\frac{1}{2}</m></cell>   
+                <cell><m>-1</m></cell> 
+                
+              </row>
+              <row>
+                <cell><m>1</m></cell>  
+                <cell><m>0</m></cell>
+                
+              </row>
+              <row>
+                <cell><m>2</m></cell> 
+                <cell><m>1</m></cell>
+                
+              </row>
+              <row>
+                <cell><m>4</m></cell> 
+                <cell><m>2</m></cell>
+                
+              </row>
+            </tabular>
+
+            <image xml:id="stuff">
+              <sageplot>
+p=point([(.25,-2),(.5,-1),(1,0),(2,1),(4,2)],pointsize=50,color='blue',ymin=-8, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+p
+              </sageplot>
+            </image>
+ 
+          </sidebyside>
+          
+        </answer>
+      </task>
+    
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as <m>x</m> goes toward infinity? Plug in large positive values of <m>x</m> to test your guess, then describe the end behavior.
+
+            <ol marker= "A.">  
+              <li> <p>As <m>x \to \infty</m>, <m>y \to -\infty</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>y \to 0</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>y \to 6</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>y \to \infty</m>. </p>  </li>
+              <li> <p> The graph isn't defined as <m>x \to \infty</m>. </p>  </li>
+              
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          D
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as <m>x</m> goes toward negative infinity? Plug in large negative values of <m>x</m> to test your guess, then describe the end behavior.
+
+            <ol marker= "A.">  
+            <li> <p>As <m>x \to -\infty</m>, <m>y \to -\infty</m>. </p>  </li>
+            <li> <p>As <m>x \to -\infty</m>, <m>y \to 0</m>. </p>  </li>
+            <li> <p>As <m>x \to -\infty</m>, <m>y \to 6</m>. </p>  </li>
+            <li> <p>As <m>x \to -\infty</m>, <m>y \to \infty</m>. </p>  </li>
+            <li> <p> The graph isn't defined as <m>x \to -\infty</m>. </p>  </li>
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          E
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as we approach <m>x</m>-values closer and closer to zero from the positive direction? 
+
+            <ol marker= "A.">  
+            <li> <p>As <m>x \to 0</m> from the positive direction, <m>y \to -\infty</m>. </p>  </li>
+            <li> <p>As <m>x \to 0</m> from the positive direction, <m>y \to 0</m>. </p>  </li>
+            <li> <p>As <m>x \to 0</m> from the positive direction, <m>y \to \infty</m>. </p>  </li>
+            <li> <p>As <m>x \to 0</m> from the positive direction, the graph isn't defined. </p>  </li>
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          A
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as we approach <m>x</m>-values closer and closer to zero from the negative direction? 
+
+            <ol marker= "A.">  
+            <li> <p>As <m>x \to 0</m> from the negative direction, <m>y \to -\infty</m>. </p>  </li>
+            <li> <p>As <m>x \to 0</m> from the negative direction, <m>y \to 0</m>. </p>  </li>
+            <li> <p>As <m>x \to 0</m> from the negative direction, <m>y \to \infty</m>. </p>  </li>
+            <li> <p>As <m>x \to 0</m> from the negative direction, the graph isn't defined. </p>  </li>
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          D
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Complete the graph you started in <xref ref="log-graph-sketch1"/>, connecting the points and including the end behavior and behavior near zero that you've just determined.
+          </p>  
+        </statement>
+        <answer>
+          <p>
+            <image xml:id="log-2-graph">
+              <sageplot>
+                f(x) = log(x)/log(2)
+                p=point([(.25,-2),(.5,-1),(1,0),(2,1),(4,2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+            </image>
+            
+          </p>
+        </answer>
+      </task>
+
+      <!-- <task>
+        <statement>
+          <p>
+            Does your graph seem to have any asymptotes?
+
+            (NOTE TO REVIEWERS: I feel like my students tend to think there is a horizontal asymptote here because it kind of looks like it since it looks like it might level out. Does 4 seem a reasonable distractor for a HA? Or would you pick a different number or no numbers at all? I'm thinking either answer choices A-E or F-I, not all of these!! Also, there's a question like this in the exponential graphs section and I think maybe they should be similar in how they ask.)
+
+            <ol marker= "A.">  
+              <li> <p>No. There are no asymptotes.</p>  </li>
+
+              <li> <p>Yes. A vertical asymptote of <m>0</m> and a horizontal asymptote of about <m>4</m>. </p>  </li> 
+
+              <li> <p>Yes. A vertical asymptote of <m>0</m> but no horizontal asymptote. </p>  </li> 
+
+              <li> <p>Yes. A horizontal asymptote of <m>0</m> but no vertical asymptote. </p>  </li> 
+
+              <li> <p>Yes. A vertical asymptote of about <m>4</m> and a horizontal asymptote of <m>0</m>. </p>  </li> 
+
+              <li> <p>No. There are no asymptotes.</p>  </li>
+
+              <li> <p>There is a vertical asymptote but no horizontal one.</p>  </li>
+
+              <li> <p>There is a horizontal asymptote but no vertical one.</p>  </li>
+
+              <li> <p>The graph has both a horizontal and vertical asymptote.</p>  </li>
+
+
+            </ol>
+
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Depends on how the question is finished! :)
+          </p>
+        </answer>
+      </task>  -->
+
+      <task>
+        <statement>
+          <p>
+            Does your graph seem to have any asymptotes?
+
+            <ol marker= "A.">  
+              
+              <li> <p>No. There are no asymptotes.</p>  </li>
+
+              <li> <p>There is a vertical asymptote but no horizontal one.</p>  </li>
+
+              <li> <p>There is a horizontal asymptote but no vertical one.</p>  </li>
+
+              <li> <p>The graph has both a horizontal and vertical asymptote.</p>  </li>
+
+
+            </ol>
+
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            What the equation for each asymptote of <m>f(x)</m>? Select all that apply.
+
+            <ol marker= "A.">  
+              <li> <p>There are no asymptotes.</p>  </li>
+              <li> <p><m>x=0</m></p>  </li>
+              <li> <p><m>x=6</m></p>  </li>
+              <li> <p><m>y=0</m></p>  </li>
+              <li> <p><m>y=6</m></p>  </li>
+            </ol>
+
+          </p>
+        </statement>
+        <answer>
+          <p>
+          B
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            Find the domain and range of <m>g(x)</m>. Write your answers using interval notation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Domain: <m>(0,\infty)</m>, Range: <m>(-\infty, \infty)</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Find the interval(s) where <m>g(x)</m> is increasing and the interval(s) where <m>g(x)</m> is decreasing. Write your answers using interval notation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Increasing: <m>(0,\infty)</m>, Decreasing: nowhere
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+    
+    <activity xml:id="activity-log-graphs-compare">
+      <introduction>
+        <p> The function we've just graphed, <m>g(x)=\log_2 x</m>, and the function <m>f(x)=2^x</m> (which we graphed in <xref ref="activity-exp-graphs-intro"/>) are inverse functions. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            How are the graphs of <m>f(x)</m> and <m>g(x)</m> similar?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Answers could include basic shape (though mirrored), both are increasing.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How are the graphs of <m>f(x)</m> and <m>g(x)</m> different?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Answers could include flipped <m>x</m> and <m>y</m> values, flipped asymptote, one has <m>x</m>-intercept and one has <m>y</m>-intercept, domain and range are swapped.
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+    <remark>
+      <p>
+        The graph of a logarithmic function <m>g(x)=\log_b x</m> where <m>b>0</m> and <m>b \neq 1</m> has the following characteristics:
+  
+      </p>
+      <p>
+
+        <ul>
+          <li><p>Its domain is <m>(0,\infty)</m> and its range is <m>(-\infty,\infty)</m>. </p></li>
+      
+          <li><p>There is a vertical asymptote at <m>x=0</m>. There is no horizontal asymptote. </p></li>
+          <li><p>There is an <m>x</m>-intercept at <m>(1,0)</m>. There is no <m>y</m>-intercept. </p></li>
+        </ul>
+      </p>
+    
+    </remark>
+
+    <remark>
+      <p> Just as with other types of functions, we can use transformations to graph logarithmic functions. For a reminder of these transformations, see <xref ref="FN4"/> and the following definitions:
+        <ul>
+          <li><p> <xref ref="def-vertical-shift"/>  </p></li>
+          <li><p> <xref ref="def-horizontal-shift"/>  </p></li>
+          <li><p> <xref ref="def-vreflection"/>  </p></li>
+          <li><p> <xref ref="def-hreflection"/>  </p></li>
+          <li><p> <xref ref="def-vstretch"/>  </p></li>
+          <li><p> <xref ref="def-hstretch"/>  </p></li>
+        </ul>
+      </p>
+      </remark>
+
+      <activity xml:id="activity-log-graphs-match">
+        <introduction>
+          <p> Let  <m>f(x)=\log_4 x</m>. 
+          </p> 
+        </introduction>
+  
+        <task>
+          <statement>
+            <p>
+              Graph <m>f(x)</m>. 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <image>
+                <sageplot>
+                  f(x) = log(x)/log(4)
+                  p=point([(1,0),(2,1/2),(4,1),(8,3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image> 
+            </p>
+          </answer>
+        </task> 
+  
+        <task>
+          <statement>
+            <p>
+              Match the following functions to their graphs.
+              <ul>
+                <li> <p><m> g(x)= -\log_4 x </m></p> </li>
+                <li> <p><m> h(x)= \log_4 (-x) </m></p> </li>
+                <li> <p><m> j(x)= \log_4 (x+1) </m></p> </li>
+                <li> <p><m> k(x)= \log_4 (x) + 1 </m></p> </li>
+              </ul>
+            
+              <ol marker= "A." cols="2">  
+                <li> <p> 
+                    <image>
+                      <sageplot>
+                        f(x) = -log(x)/log(4)
+                        p=point([(1,0),(2,-1/2),(4,-1),(8,-3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                        p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                        p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                        p
+                      </sageplot>
+                    </image> 
+                 </p>  </li>
+
+                 <li>
+                  <p>
+                    <image>
+                      <sageplot>
+                        f(x) = log(x)/log(4) +1
+                        p=point([(1,1),(2,3/2),(4,2),(8,5/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                        p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                        p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                        p
+                      </sageplot>
+                    </image> 
+                  </p>
+                 </li>
+
+                 <li>
+                  <p>
+                    <image>
+                      <sageplot>
+                        f(x) = log(-x)/log(4) 
+                        p=point([(-1,0),(-2,1/2),(-4,1),(-8,3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                        p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                        p+=plot(f, (x, -9, -.00001), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                        p
+                      </sageplot>
+                    </image> 
+                  </p>
+                 </li>
+
+                 <li>
+                  <p>
+                    <image>
+                      <sageplot>
+                        f(x) = log(x+1)/log(4) 
+                        p=point([(0,0),(1,1/2),(3,1),(7,3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                        p+=line([(-1,-9),(-1,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                        p+=plot(f, (x, -.99999, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                        p
+                      </sageplot>
+                    </image> 
+                  </p>
+                 </li>
+  
+                
+              </ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <ul>
+                <li> <p><m> g(x)= -\log_4 x </m> is A.</p> </li>
+                <li> <p><m> h(x)= \log_4 (-x) </m> is C.</p> </li>
+                <li> <p><m> j(x)= \log_4 (x+1) </m> is D.</p> </li>
+                <li> <p><m> k(x)= \log_4 (x) + 1 </m> is B.</p> </li>
+              </ul>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+            Find the domain, range, and equation of the asymptote for the parent function <m>\left(f(x)\right)</m> and each of the four transformations <m>\left(g(x), h(x), j(x), \text{ and } k(x)\right)</m>. 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(x)</m>:
+              <ul>
+                <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=0</m> </p> </li>
+              </ul>
+  
+              <m>g(x)</m>:
+              <ul>
+                <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=0</m> </p> </li>
+              </ul>
+  
+              <m>h(x)</m>:
+              <ul>
+                <li> <p>Domain: <m>(-\infty,0)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=0</m> </p> </li>
+              </ul>
+  
+              <m>j(x)</m>:
+              <ul>
+                <li> <p>Domain: <m>(-1,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=-1</m> </p> </li>
+              </ul>
+  
+              <m>k(x)</m>:
+              <ul>
+                <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=0</m> </p> </li>
+              </ul>
+            </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+            <p>
+            Which of the transformations affected the domain of the logarithmic function? Select all that apply.
+  
+            <ol marker= "A.">  
+              <li> <p>A vertical shift. </p>  </li>
+              <li> <p>A horizontal shift. </p>  </li>
+              <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+              <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+              <li> <p>None of these. </p>  </li>
+            </ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B,C
+            </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+            <p>
+            Which of the transformations affected the range of the logarithmic function? Select all that apply.
+  
+            <ol marker= "A.">  
+              <li> <p>A vertical shift. </p>  </li>
+              <li> <p>A horizontal shift. </p>  </li>
+              <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+              <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+              <li> <p>None of these. </p>  </li>
+            </ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              E
+            </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+            <p>
+            Which of the transformations affected the asymptote of the logarithmic function? Select all that apply.
+  
+            <ol marker= "A.">  
+              <li> <p>A vertical shift. </p>  </li>
+              <li> <p>A horizontal shift. </p>  </li>
+              <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+              <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+              <li> <p>None of these. </p>  </li>
+            </ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+
+      </activity>
+
+      <activity xml:id="activity-log-e">
+        <introduction>
+          <p>
+            Consider the function <m>f(x)=\ln(x)</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Graph  <m>f(x)=\ln(x)</m>. First find <m>f(1)</m> and <m>f(e)</m>.  Then use what you know about the characteristics of logarithmic graphs to sketch the rest. Then state the domain, range, and equation of the asymptote. (Recall that <m>e \approx 2.72</m> to help estimate where to put your points.) 
+            </p>
+          </statement>
+          <answer>
+              <image xml:id="graph-log-1-e">
+                <sageplot>
+                  f(x) = log(x)/log(e)
+                  p=point([(1,0),(e,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image>
+            <p>
+              <ul>
+                <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=0</m> </p> </li>
+              </ul>
+              </p>
+          </answer>
+        </task>
+      
+        <task>
+          <statement>
+            <p>
+              Sketch the graph of <m>g(x)=\ln(x-3)</m> using transformations. State the transformation(s) used, the domain, the range, and the equation of the asymptote.
+            </p>
+          </statement>
+          <answer>
+            
+              <image xml:id="graph-log-x-3"> 
+                <sageplot>
+                  f(x) = log(x-3)/log(e)
+                  p=point([(4,0),(e+3,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(3,-9),(3,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, 3.0000001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image>
+              <p>
+                <ul>
+                  <li> <p>Transformation: shift right 3 </p> </li>
+                  <li> <p>Domain: <m>(3,\infty)</m> </p> </li>
+                  <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                  <li> <p>Asymptote: <m>x=3</m> </p> </li>
+                </ul>
+              </p>
+          </answer>
+        </task>
+      
+        <task>
+          <statement>
+            <p>
+              Sketch the graph of <m>h(x)=3\ln(x)</m> using transformations. State the transformation(s) used, the domain, the range, and the equation of the asymptote.
+            </p>
+          </statement>
+          <answer>
+              <image xml:id="graph-3-log">
+                <sageplot>
+                  f(x) = 3*log(x)/log(e)
+                  p=point([(1,0),(e,3)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image>
+              <p>
+                <ul>
+                  <li> <p>Transformation: vertical stretch with factor of three. </p> </li>
+                  <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                  <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                  <li> <p>Asymptote: <m>x=0</m> </p> </li>
+                </ul>
+              </p>
+          </answer>
+        </task>
+      
+          </activity>
+
+
+      <activity xml:id="activity-log-graphs-fluency">
+        <introduction>
+          <p> Graph each of the following logarithmic functions. Include any asymptotes with a dotted line. State the domain, the range, and the equation of the asymptote.
+          </p> 
+        </introduction>
+  
+        <task>
+          <statement>
+            <p>
+              <m>f(x)=\log_3 x</m>
+            </p>
+          </statement>
+          <answer>
+              <image xml:id="graph-log-base-3">
+                <sageplot>
+                  f(x) = log(x)/log(3)
+                  p=point([(1,0),(3,1),(9,2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image>
+              <p> 
+                <ul>
+                  <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                  <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                  <li> <p>Asymptote: <m>x=0</m> </p> </li>
+                </ul>
+              </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+            <p>
+              <m>f(x)=\log_6 (-x)</m>
+            </p>
+          </statement>
+          <answer>
+              <image xml:id="graph-log-base-6">
+                <sageplot>
+                  f(x) = log(-x)/log(6)
+                  p=point([(-1,0),(-6,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, -9, -.000001), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image> 
+              <p> 
+                <ul>
+                  <li> <p>Domain: <m>(-\infty,0)</m> </p> </li>
+                  <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                  <li> <p>Asymptote: <m>x=0</m> </p> </li>
+                </ul>
+              </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+            <p>
+              <m>f(x)=\log_{\frac{1}{5}} x</m>
+            </p>
+          </statement>
+          <answer>
+              <image xml:id="graph-log-base-1-5">
+                <sageplot>
+                  f(x) = log(x)/log(1/5)
+                  p=point([(1,0),(5,-1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, .000001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                  p
+                </sageplot>
+              </image>
+              <p> 
+                <ul>
+                  <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                  <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                  <li> <p>Asymptote: <m>x=0</m> </p> </li>
+                </ul>
+              </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+            <p>
+              <m>f(x)=\log_{\frac{1}{3}} x +2</m>
+            </p>
+          </statement>
+          <answer>
+            <image xml:id="graph-log-base-1-3">
+              <sageplot>
+                f(x) = log(x)/log(1/3) +2
+                p=point([(1,2),(3,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
+                p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                p+=plot(f, (x, .000001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+            </image>
+            <p> 
+              <ul>
+                <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>x=0</m> </p> </li>
+              </ul>
+            </p>
+          </answer>
+        </task>
+  
+      
+      </activity>
+
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

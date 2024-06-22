@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="IN1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Geometry of definite integrals (IN1) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/01.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+<definition>
+    <p>The <term>definite integral</term> for a positive function <m>f(x) \geq 0 </m> between the points <m>x=a</m> and <m>x=b</m> is the area between the function and the <m>x</m>-axis. We denote this quantity as <m>\displaystyle \int_a^b f(x) \, dx</m></p>
+    </definition>
+    
+<remark><p>
+    For some functions which have known geometric shapes (like pieces of lines or circles) we can already compute these area exactly and we will do so in this section. But for most functions we do not know quite yet how to compute these areas. In the next section, we will see that because we can compute the areas of rectangles quite easily, we can always try to approximate a shape with rectangles, even if this could be a very coarse approximation.
+    </p></remark>    
+    
+    
+<activity>
+    <p>
+    Consider the linear function <m>f(x)=2x</m>. Sketch a graph of this function. Consider the area between the <m>x</m>-axis and the function on the interval <m>[0,1]</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
+     <ol marker="A." cols="2">
+              <li><p>1</p></li>
+                <li><p>2</p></li>
+                <li><p>3</p></li>
+                <li><p>4</p></li>
+            </ol>
+    </activity>    
+    
+
+<activity>
+    <p>
+    Consider the linear function <m>f(x)=4x</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
+     <ol marker="A." cols="2">
+              <li><p>1</p></li>
+                <li><p>2</p></li>
+                <li><p>3</p></li>
+                <li><p>4</p></li>
+            </ol>
+    </activity>    
+    
+<activity>
+    <p>
+    Consider the linear function <m>f(x)=2x +2</m>. Notice that on the interval <m>[0,1]</m>, the shape formed between the graph and the <m>x</m>-axis is a trapezoid. What is <m>\int_0^1 f(x) \, dx</m>?</p>
+     <ol marker="A." cols="2">
+              <li><p>1</p></li>
+                <li><p>2</p></li>
+                <li><p>3</p></li>
+                <li><p>4</p></li>
+            </ol>
+    </activity>  
+    
+    
+ <activity>
+    <p>
+    Consider the function <m>f(x)=\sqrt{4-x^2}</m>. Notice that on the domain <m>[-2,2]</m>, the shape formed between the graph and the <m>x</m>-axis is a semicircle. What is <m>\int_{-2}^2 f(x) \, dx</m>?</p>
+     <ol marker="A." cols="2">
+              <li><p><m>\pi</m></p></li>
+                  <li><p><m>2\pi</m></p></li>
+                  <li><p><m>3\pi</m></p></li>
+                <li><p><m>4\pi</m></p></li>
+            </ol>
+    </activity>  
+ 
+    <definition>
+    <p>
+    
+    If a function <m>f(x) \leq 0</m> on <m>[a,b]</m>, then we define the integral between <m>a</m> and <m>b</m> to be  </p>
+<me> \int_a^b f(x) \, dx \,  = \,  (-1) \times \text{area between the graph of <m>f(x)</m> and the <m>x</m> axis on the interval <m>[a,b]</m>.}</me>
+<p> So the definite integral for a negative function is the "negative" of the area between the graph and the <m>x</m>-axis. </p>
+   
+    </definition>
+    
+   <activity>
+    <statement>
+        <p>
+            Explain how to use geometric formulas for area to compute the following definite
+  integrals. For each part, sketch the function to support your explanation.
+         <ol>
+                <li><me>\int_{ 1 }^{ 6 }\left(-3 \, x + 6\right)dx</me></li>
+                    <li><me>\int_{ 2 }^{ 6 }\left(-3 \, x + 6\right)dx</me></li>
+                <li><me>\int_{ 1 }^{ 5 }\left(-\sqrt{-{\left(x - 1\right)}^{2} + 16}\right)dx</me></li>
+         
+        </ol>
+        </p>
+    </statement>
+       
+       </activity>
+<!--     <answer>
+<p>
+    <ol>
+            <li><p><m>-\frac{45}{2}</m></p></li>
+            <li><p><m>-4 \, \pi</m></p></li>
+            <li><p><m>-24</m></p></li>
+    </ol>
+</p>
+    </answer> -->
+
+    
+    
+
+
+
+<activity>
+    <introduction> <p>
+    The graph of <m>g(t)</m> and the areas <m>A_1, A_2, A_3</m> are given below. </p>
+     <figure xml:id="figure-signed-areas">
+       <image width="100%" source="fig2d.JPG" />
+         </figure>
+    </introduction>
+    <task> <p> Find <m>\int_{3}^{3} g(t) \, dt</m></p></task>
+    <task> <p> Find <m>\int_{3}^{6} g(t) \, dt</m></p></task>
+        <task> <p> Find <m>\int_{0}^{10} g(t) \, dt</m></p></task>
+        <task> <p> Suppose that <m>g(t)</m> gives the velocity in fps at time <m>t</m> (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?</p></task>
+    </activity>
+
+    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN1" youtube="h6ur1M83jI0"/>
+            <caption>Video for IN1</caption>
+        </figure>
+    </subsection>
+</section>

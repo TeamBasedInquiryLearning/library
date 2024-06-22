@@ -1,0 +1,612 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EL5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Properties of logarithms (EL5) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/05.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+<introduction>
+  In this section, we will explore the properties of logarithms and learn how to manipulate them that will be helpful when we are ready to solve logarithmic equations.
+  </introduction>
+   
+  <remark>
+    Recall that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. In addition, because exponentials and logarithms are inverses, we also know that <m>\log_b(b^{k})=k</m>.
+    In addition, according to the law of exponents, we know that: <me>x^a \cdot x^b=x^{a+b}</me>
+      <me>\frac{x^a}{x^b}=x^{a-b}</me>
+      <me>\left(x^a\right)^b=x^{a \cdot b}</me> 
+      
+      Consider all these as you move through the activities in this section.
+   </remark>
+    
+   <activity xml:id="investigate-product-property-of-logs">
+    <introduction>
+      <p>
+        Let's begin with the law of exponents to see if we can understand the product property of logs. According to the law of exponents, we know that <m>10^x \cdot 10^y=10^{x+y}</m>. Start with this equation as you move through this activity.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Let <m>a=10^x</m> and <m>b=10^y</m>. How could you rewrite the left side of the equation <m>10^x \cdot 10^y</m>?
+          <ol marker= "A." cols="2">
+            <li><m>a+b</m></li>
+            <li><m>a-b</m></li>
+            <li><m>10^{x+y}</m></li>
+            <li><m>a \cdot b</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall from <xref ref="EL3"/> that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. Use this property to apply the logarithm to both sides of the rewritten equation from part a. What is that equation?
+          <ol marker= "A." cols="1">
+            <li><m>\log_{10}(a+b)=\log_{10}\left(10^{x+y}\right)</m></li>
+            <li><m>\log_{10}(a \cdot b)=\log_{10}\left(10^{x+y}\right)</m></li>
+            <li><m>\log_{10}(a \cdot b)=\log_{10}\left(10^{a+b}\right)</m></li>
+            <li><m>\log_{10}(a+b)=\log_{10}\left(10^{a+b}\right)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Knowing that <m>\log_b(b^k)=k</m>, how could you simplify the right side of the equation?
+          <aside>
+            Recall that this property was covered in Section 3 (Introduction to logs).
+          </aside>
+          <ol marker= "A." cols="2">
+            <li><m>\log_{10}(a+b)</m></li>
+            <li><m>\log_{10}(x+y)</m></li>
+            <li><m>a+b</m></li>
+            <li><m>x+y</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall in part a, we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
+          <ol marker= "A." cols="2">
+            <li><m>\log_{10}a=x</m></li>
+            <li><m>\log_{x}a=10</m></li>
+            <li><m>\log_{10}b=y</m></li>
+            <li><m>\log_{y}b=10</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using your solutions in part d, how can we rewrite the right side of the equation?
+          <ol marker= "A." cols="1">
+            <li><m>10^{a+b}</m></li>
+            <li><m>\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}a+\log_{10}b</m></li>
+            <li><m>10^x+10^y</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Combining parts a and d, which equation represents <m>10^x \cdot 10^y=10^{x+y}</m> in terms of logarithms?
+          <ol marker= "A." cols="1">
+            <li><m>\log_{10}(a+b)=10^{a+b}</m></li>
+            <li><m>\log_{10}(a \cdot b)=\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}(a \cdot b)=\log_{10}a+\log_{10}b</m></li>
+            <li><m>\log_{10}(a \cdot b)=10^x+10^y</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <activity xml:id="investigate-quotient-property-of-logs">
+    <introduction>
+      <p>
+        According to the law of exponents, we know that <m>\frac{10^x}{10^y}=10^{x-y}</m>. Start with this equation as you move through this activity.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Let <m>a=10^x</m> and <m>b=10^y</m>. How could you rewrite the left side of the equation <m>\frac{10^x}{10^y}</m>?
+          <ol marker= "A." cols="2">
+            <li><m>a+b</m></li>
+            <li><m>a-b</m></li>
+            <li><m>10^{x+y}</m></li>
+            <li><m>a \cdot b</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall from <xref ref="EL3"/> that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. Use this property to apply the logarithm to both sides of the rewritten equation from part a. What is that equation?
+          <ol marker= "A." cols="1">
+            <li><m>\log_{10}(a-b)=\log_{10}\left(10^{x-y}\right)</m></li>
+            <li><m>\log_{10}\left(\frac{a}{b}\right)=\log_{10}\left(10^{x-y}\right)</m></li>
+            <li><m>\log_{10}\left(\frac{a}{b}\right)=\log_{10}\left(10^{a+b}\right)</m></li>
+            <li><m>\log_{10}(a-b)=\log_{10}\left(10^{a-b}\right)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Knowing that <m>\log_b(b^k)=k</m>, how could you simplify the right side of the equation?
+          <aside>
+            Recall that this property was covered in <xref ref="EL3"/>.
+          </aside>
+          <ol marker= "A." cols="2">
+            <li><m>\log_{10}(a-b)</m></li>
+            <li><m>\log_{10}(x-y)</m></li>
+            <li><m>x-y</m></li>
+            <li><m>a-b</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall in part a, we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
+          <ol marker= "A." cols="2">
+            <li><m>\log_{10}a=x</m></li>
+            <li><m>\log_{x}a=10</m></li>
+            <li><m>\log_{10}b=y</m></li>
+            <li><m>\log_{y}b=10</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using your solutions in part d, how can we rewrite the right side of the equation?
+          <ol marker= "A." cols="1">
+            <li><m>10^{a+b}</m></li>
+            <li><m>\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}a-\log_{10}b</m></li>
+            <li><m>10^{x-y}</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Combining parts a and d, which equation represents <m>\frac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
+          <ol marker= "A." cols="1">
+            <li><m>\log_{10}(a-b)=10^{a+b}</m></li>
+            <li><m>\log_{10}(a-b)=\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}\left(\frac{a}{b}\right)=\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}\left(\frac{a}{b}\right)=10^{x-y}</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <remark>
+    In <xref ref="investigate-product-property-of-logs"/> and <xref ref="investigate-quotient-property-of-logs"/>, you explored an example of two common properties of logarithms!
+   </remark>
+   
+   <definition xml:id="def-product-and-quotient-property-of-logs">
+    <statement>
+      <p>
+        The <term>product property of logarithms</term> states <me>\log_{a}(m \cdot n)=\log_{a}m+\log_{a}n</me>.
+        The <term>quotient property of logarithms</term> states <me>\log_{a}\left(\frac{m}{n}\right)=\log_{a}m-\log_{a}n</me>.
+        Notice that for each of these properties, the base has to be the same. 
+      </p>
+    </statement>
+   </definition>
+
+   <activity xml:id="investigate-power-property">
+    <introduction>
+      <p>
+        There is still one more property to consider. This activity will investigate the power property. Suppose you are given <me>\log(x^3)=\log(x \cdot x \cdot x)</me>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          By applying <xref ref="def-product-and-quotient-property-of-logs"/>, how could you rewrite the right-hand side of the equation?
+          <ol marker= "A." cols="1">
+            <li><m>\log(3x)</m></li>
+            <li><m>\log(x)-\log(x)-\log(x)</m></li>
+            <li><m>\log(x^3)</m></li>
+            <li><m>\log(x)+\log(x)+\log(x)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          By combining "like" terms, you can simplify the right-hand side of the equation further. What equation do you have after simplifying the right-hand side?
+          <ol marker= "A." cols="1">
+            <li><m>\log(x^3)=\log(3x)</m></li>
+            <li><m>\log(x^3)=-3\log(x)</m></li>
+            <li><m>\log(x^3)=\log(x^3)</m></li>
+            <li><m>\log(x^3)=3\log(x)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <definition xml:id="def-power-property">
+    <statement>
+      <p>
+        The <term>power property of logarithms</term> states <me>\log_a(m^n)=n \cdot \log_a(m)</me>.
+      </p>
+    </statement>
+   </definition>
+
+   <activity xml:id="expand-logs">
+    <introduction>
+      <p>
+        Apply <xref ref="def-product-and-quotient-property-of-logs"/> and <xref ref="def-power-property"/> to expand the following. (Note: When you are asked to expand logarithmic expressions, your goal is to express a single logarithmic expression into many individual parts or components.)
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <me>\log_3\left(\frac{6}{19}\right)</me>
+          <ol marker= "A." cols="1">
+            <li><m>\log_36+\log_319</m></li>
+            <li><m>\log_3(6-19)</m></li>
+            <li><m>\log_36-\log_319</m></li>
+            <li><m>\log_3(6+19)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <me>\log(a \cdot b)^2</me>
+          <ol marker= "A." cols="1">
+            <li><m>2(\log a+\log b)</m></li>
+            <li><m>2\log a-\log b</m></li>
+            <li><m>\log a+2\log b</m></li>
+            <li><m>2\log a+2\log b</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <me>\ln\left(\frac{x^3}{y}\right)</me>
+          <ol marker= "A." cols="1">
+            <li><m>3\ln x+\ln y</m></li>
+            <li><m>3\ln x-\ln y</m></li>
+            <li><m>3(\ln x-\ln y)</m></li>
+            <li><m>\ln x^3-\ln y</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B. Note that D is also correct, but it is not expanded fully.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <me>\log(x \cdot y \cdot z^3)</me>
+          <ol marker= "A." cols="1">
+            <li><m>\log x+\log y+3\log z</m></li>
+            <li><m>\log x+\log y+\log z^3</m></li>
+            <li><m>\log x-\log y-3\log z</m></li>
+            <li><m>3(\log x+y+z)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+  <activity xml:id="condense-logs">
+    <introduction>
+      <p>
+        Apply <xref ref="def-product-and-quotient-property-of-logs"/> and <xref ref="def-power-property"/> to condense into a single logarithm.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <me>6\log_6 a+3\log_6 b</me>
+          <ol marker= "A." cols="1">
+            <li><m>6(\log_6 a)+3(\log_6 b)</m></li>
+            <li><m>\log_6 a^6+\log_6 b^3</m></li>
+            <li><m>(\log_6 a)^6+(\log_6 b)^3</m></li>
+            <li><m>\log_6\left(a^6 \cdot b^3\right)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D. B is also correct, but it is not condensed fully.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <me>\ln x-4\ln y</me>
+          <ol marker= "A." cols="1">
+            <li><m>\ln x-\ln y^4</m></li>
+            <li><m>\ln\left(\frac{x}{y^4}\right)</m></li>
+            <li><m>\ln\left(\frac{x}{y}\right)^4</m></li>
+            <li><m>\ln(x \cdot y^4)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <me>2(\log(2x)-\log y)</me>
+          <ol marker= "A." cols="1">
+            <li><m>\log\left(\frac{4x^2}{y^2}\right)</m></li>
+            <li><m>\log\left(\frac{2x^2}{y^2}\right)</m></li>
+            <li><m>2 \cdot \log\left(\frac{2x}{y}\right)</m></li>
+            <li><m>\log\left(\frac{4x^2}{y}\right)</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <me>\log 3+2\log 5</me>
+          <ol marker= "A." cols="1">
+            <li><m>\log(3 \cdot 5^2)</m></li>
+            <li><m>2 \cdot \log 75</m></li>
+            <li><m>\log 75</m></li>
+            <li><m>\log 225</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C. Note that A is also correct, but not condensed completely.
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <remark>
+    You might have noticed that a scientific calculator has only "log" and "ln" buttons (because those are the most common bases we use), but not all logs have base 10 or e as their bases.
+   </remark>
+
+   <activity xml:id="exploring-change-of-base">
+    <introduction>
+      <p>
+        Suppose you wanted to find the value of <m>\log_53</m> in your calculator but you do not know how to input a base other than <m>10</m> or <m>e</m> (i.e., you only have the "log" and "ln" buttons on your calculator). Let's explore another helpful tool that can help us find the value of <m>\log_53</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Let's start with the general statement, <m>\log_ba=x</m>. How can we rewrite this logarithmic equation into an exponential equation?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>b^x=a</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Now take the log of both sides of your equation and apply the power property of logarithms to bring the exponent down. What equation do you have now?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x \cdot \log b=\log a</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Solve for <m>x</m>. What does <m>x</m> equal?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\frac{\log a}{\log b}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Recall that when we started, we defined <m>x=\log_ba</m>. Substitute <m>\log_ba</m> into your equation you got in part c for <m>x</m>. What is the resulting equation?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_ba=\frac{\log a}{\log b}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Apply what you got in part d to find the value of <m>\log_53</m>. What is the approximate value of <m>\log_53</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_53</m> is approximately <m>0.683</m>
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <remark>
+    Notice in <xref ref="exploring-change-of-base"/>, we were able to calculate <m>\log_53</m> using logs of base <m>10</m>. You should now be able to find the value of a logarithm of any base!
+   </remark>
+
+   <definition xml:id="def-change-of-base">
+    <statement>
+      <p>
+        The <term>change of base formula</term> is used to write a logarithm of a number with a given base as the ratio of two logarithms each with the same base that is different from the base of the original logarithm.
+        <me>\log_{b}a=\frac{\log a}{\log b}</me>
+      </p>
+    </statement>
+   </definition>
+
+   <activity xml:id="change-of-base-practice">
+    <introduction>
+      <p>
+        Apply <xref ref="def-change-of-base"/> and a calculator to approximate the value of each logarithm. 
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\log_2 30</m>
+          <ol marker= "A." cols="2">
+            <li><m>0.204</m></li>
+            <li><m>4.907</m></li>
+            <li><m>\frac{\log30}{\log2}</m></li>
+            <li><m>\frac{\log2}{\log30}</m></li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B and C
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ln 183</m>
+          <ol marker= "A." cols="2">
+            <li><m>\frac{\ln183}{\ln e}</m></li>
+            <li><m>67.32</m></li>
+            <li><m>\frac{\ln e}{\ln183}</m></li>
+            <li><m>5.209</m></li></ol>
+        </p> 
+      </statement> 
+      <answer> 
+        <p>
+          A and D 
+        </p>
+      </answer>
+    </task>
+   </activity>
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

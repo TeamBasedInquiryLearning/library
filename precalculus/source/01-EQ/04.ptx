@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EQ4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Absolute Value Equations and Inequalities (EQ4) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/04.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    
+    <title>Activities</title>
+    <remark>
+      An absolute value, written <m>\lvert x \rvert</m>, is the non-negative value of <m>x</m>. If <m>x</m> is a positive number, then <m>\lvert x \rvert=x</m>. If <m>x</m> is a negative number, then <m>\lvert x \rvert=-x</m>. 
+    </remark>
+    <activity>
+      <introduction>
+        <p>Let's consider how to solve an equation when an absolute value is involved.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> Which values are solutions to the absolute value equation <m>\lvert x \rvert = 2</m>?
+          <ol marker="A." cols="2">
+            <li><p><m>x=2</m> </p></li>
+            <li><p> <m>x=0</m> </p></li>
+            <li><p> <m>x=-1</m> </p></li>
+            <li><p> <m>x=-2</m></p></li>
+        </ol> </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+        <p> Which values are solutions to the absolute value equation <m>\lvert x-7 \rvert = 2</m>?
+          <ol marker="A." cols="2">
+            <li><p><m>x=9</m> </p></li>
+            <li><p> <m>x=7</m> </p></li>
+            <li><p> <m>x=5</m> </p></li>
+            <li><p> <m>x=-9</m></p></li>
+        </ol> </p>
+      </statement>
+      </task>
+      <task>
+        <statement>
+        <p> Which values are solutions to the absolute value equation <m>3\lvert x-7 \rvert +5= 11</m>? It may be helpful to rewrite the equation to isolate the absolute value.
+          <ol marker="A." cols="2">
+            <li><p><m>x=7</m> </p></li>
+            <li><p> <m>x=-9</m> </p></li>
+            <li><p> <m>x=5</m> </p></li>
+            <li><p> <m>x=9</m></p></li>
+        </ol> </p>
+      </statement>
+      </task>
+      
+    </activity>
+    <activity>
+      <introduction>
+        <p>Absolute value represents the distance a value is from 0 on the number line. So, <m>\lvert x-7 \rvert = 2</m> means that the expression <m>x-7</m> is 2 units away from 0. 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> What values on the number line could <m>x-7 </m> equal?
+          <ol marker="A." cols="2">
+            <li><p><m>x=-7</m> </p></li>
+            <li><p> <m>x=-2</m> </p></li>
+            <li><p> <m>x=0</m> </p></li>
+            <li><p> <m>x=2</m></p></li>
+            <li><p> <m>x=7</m></p></li>
+        </ol> </p>
+      </statement>
+      </task>
+      <task>
+        <statement>
+        <p> This gives us two separate equations to solve.  What are those two equations?
+          <ol marker="A." cols="1">
+            <li><p><m>x-7=-7</m> </p></li>
+            <li><p> <m>x-7=-2</m> </p></li>
+            <li><p> <m>x-7=0</m> </p></li>
+            <li><p> <m>x-7=2</m></p></li>
+            <li><p> <m>x-7=7</m></p></li>
+        </ol> </p>
+      </statement>
+      </task>
+      <task>
+        <statement>
+        <p> Solve each equation for <m>x</m>.
+          </p>
+      </statement>
+      </task>
+      
+    </activity>
+    <remark>
+      When solving an absolute value equation, begin by isolating the absolute value expression. Then rewrite the equation into two linear equations and solve.
+      
+      If <m>c \gt 0</m>, 
+      <me>
+        \lvert ax+b \rvert = c
+      </me>
+      becomes the following two equations
+      <me>ax+b =c \quad \text{and} \quad ax+b=-c</me>
+    </remark>
+<activity>
+  <introduction>
+    <p>Solve the following absolute value equations.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> <m>\lvert 3x+4 \rvert = 10</m>
+      <ol marker="A." cols="2">
+        <li><p><m>\{-2, 2\}</m> </p></li>
+        <li><p> <m>\left\{-\frac{14}{3}, 2\right\}</m> </p></li>
+        <li><p> <m>\{-10, 10\}</m> </p></li>
+        <li><p> No solution</p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> <m>3\lvert x-7 \rvert+5 = 11</m>
+      <ol marker="A." cols="2">
+        <li><p><m>\{-2, 2\}</m> </p></li>
+        <li><p> <m>\{-9, 9\}</m> </p></li>
+        <li><p> <m>\{5, 9\}</m> </p></li>
+        <li><p> No solution</p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> <m>2\lvert x+1 \rvert+8 = 4</m>
+      <ol marker="A." cols="2">
+        <li><p><m>\{-4, 4\}</m> </p></li>
+        <li><p> <m>\{-6, 6\}</m> </p></li>
+        <li><p> <m>\{5, 7\}</m> </p></li>
+        <li><p> No solution</p></li>
+    </ol> </p>
+  </statement>
+  </task>
+</activity>
+<remark>
+  Since the absolute value represents a distance, it is always a positive number. Whenever you encounter an isolated absolute value equation equal to a negative value, there will be no solution.
+</remark>
+<activity>
+  <introduction>
+    <p>Just as with linear equations and inequalities, we can consider absolute value inequalities from equations.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> Which values are solutions to the absolute value inequality <m>\lvert x-7 \rvert \le 2</m>?
+      <ol marker="A." cols="2">
+        <li><p><m>x=9</m> </p></li>
+            <li><p> <m>x=7</m> </p></li>
+            <li><p> <m>x=5</m> </p></li>
+            <li><p> <m>x=-9</m></p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Rewrite the absolute value inequality <m>\lvert x-7 \rvert \le 2</m> as a compound inequality.
+      <ol marker="A." cols="2">
+        <li><p><m>0 \le x-7 \le 2</m> </p></li>
+            <li><p> <m>-2 \le x-7 \le 2</m> </p></li>
+            <li><p> <m>-2 \le x-7 \le 0</m> </p></li>
+            <li><p> <m>2 \le x \le 7</m></p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Solve the compound inequality that is equivalent to <m>\lvert x-7 \rvert \le 2</m> found in part (b). Write the solution in interval notation.
+      <ol marker="A." cols="2">
+        <li><p><m>[7,9]</m> </p></li>
+            <li><p> <m>[5,9]</m> </p></li>
+            <li><p> <m>[5,7]</m> </p></li>
+            <li><p> <m>[2,7]</m></p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  
+  <task>
+    <statement>
+    <p>
+      Draw the solution to <m>\lvert x-7 \rvert \le 2</m> on the number line. 
+    <ol marker="A." cols="1">
+      <li><p> 
+        <image xml:id="eq4-image-xm7le2">
+            <latex-image>
+              \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\draw[{-]}, ultra thick, blue] (0.79,0) -- (0.8,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (0.8, -.16ex) -- (0.8, .16ex) -- (0.6,.16ex) -- cycle;
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </p></li>
+    <li><p> 
+      <image xml:id="eq4-image-xm7le2-2">
+          <latex-image>
+            \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (0.39,0) -- (0.4,0);
+\draw[{-]}, ultra thick, blue] (0.79,0) -- (0.8,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.4,-.16ex) -- (0.8, -.16ex) -- (0.8, .16ex) -- (0.4,.16ex) -- cycle;
+\end{tikzpicture}
+          </latex-image>
+      </image>
+  </p></li>
+  <li><p> 
+    <image xml:id="eq4-image-xm7le2-3">
+        <latex-image>
+          \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (0.39,0) -- (0.4,0);
+\draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.4,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (0.4,.16ex) -- cycle;
+\end{tikzpicture}
+        </latex-image>
+    </image>
+</p></li>
+<li><p> 
+  <image xml:id="eq4-image-xm7le2-4">
+      <latex-image>
+        \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (0.09,0) -- (0.1,0);
+\draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (0.1,.16ex) -- cycle;
+\end{tikzpicture}
+</latex-image>
+</image>
+</p></li>
+</ol> </p>
+
+</statement>
+</task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <p> Now let's consider another type of absolute value inequality.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+      <p> Which values are solutions to the absolute value inequality <m>\lvert x-7 \rvert \ge 2</m>?
+        <ol marker="A." cols="2">
+          <li><p><m>x=9</m> </p></li>
+              <li><p> <m>x=7</m> </p></li>
+              <li><p> <m>x=5</m> </p></li>
+              <li><p> <m>x=-9</m></p></li>
+      </ol> </p>
+    </statement>
+    </task>
+    <task>
+      <statement>
+      <p> Which two of the following inequalities are equivalent to <m>\lvert x-7 \rvert \ge 2</m>.
+        <ol marker="A." cols="1">
+          <li><p><m>x-7 \le 2 </m> </p></li>
+              <li><p> <m> x-7 \le -2</m> </p></li>
+              <li><p> <m>x-7 \ge 2</m> </p></li>
+              <li><p> <m>x-7 \ge -2</m></p></li>
+      </ol> </p>
+    </statement>
+    </task>
+    <task>
+      <statement>
+      <p> Solve the two inequalities found in part (b). Write the solution in interval notation and graph on the number line.
+        <ol marker="A." cols="1">
+          <li><p><m>(-\infty,7] \cup [9,\infty)</m> 
+            <image xml:id="eq4-image-safasfewafd">
+              <latex-image>
+                \begin{tikzpicture}[scale=7]
+  \draw[->, thick] (-0.1,0) -- (1.1,0);
+  \foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+    \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+  \draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
+  \draw[{[-}, ultra thick, blue] (0.79,0) -- (0.8,0);
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (-0.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-0.1,.16ex) -- cycle;
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (.8,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.8,.16ex) -- cycle;
+  \end{tikzpicture}
+              </latex-image>
+          </image>
+          </p></li>
+          <li><p><m>(-\infty,5] \cup [9,\infty)</m> 
+            <image xml:id="eq4-image-safasfewafd-2">
+              <latex-image>
+                \begin{tikzpicture}[scale=7]
+  \draw[->, thick] (-0.1,0) -- (1.1,0);
+  \foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+    \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+  \draw[{-]}, ultra thick, blue] (0.39,0) -- (0.4,0);
+  \draw[{[-}, ultra thick, blue] (0.79,0) -- (0.8,0);
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (-0.1,-.16ex) -- (0.4, -.16ex) -- (0.4, .16ex) -- (-0.1,.16ex) -- cycle;
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (.8,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.8,.16ex) -- cycle;
+  \end{tikzpicture}
+              </latex-image>
+          </image>
+          </p></li>
+          <li><p><m>(-\infty,5] \cup [7,\infty)</m> 
+            <image xml:id="eq4-image-safasfewafd-3">
+              <latex-image>
+                \begin{tikzpicture}[scale=7]
+  \draw[->, thick] (-0.1,0) -- (1.1,0);
+  \foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+    \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+  \draw[{-]}, ultra thick, blue] (0.39,0) -- (0.4,0);
+  \draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (-0.1,-.16ex) -- (0.4, -.16ex) -- (0.4, .16ex) -- (-0.1,.16ex) -- cycle;
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+  \end{tikzpicture}
+              </latex-image>
+          </image>
+          </p></li>
+          <li><p><m>(-\infty,2] \cup [7,\infty)</m> 
+            <image xml:id="eq4-image-safasfewafd-4">
+              <latex-image>
+                \begin{tikzpicture}[scale=7]
+  \draw[->, thick] (-0.1,0) -- (1.1,0);
+  \foreach \x/\xtext in {0/1,0.2/3,0.4/5,0.6/7,0.8/9, 1/11}
+    \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+  \draw[{-]}, ultra thick, blue] (0.09,0) -- (0.1,0);
+  \draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (-0.1,-.16ex) -- (0.1, -.16ex) -- (0.1, .16ex) -- (-0.1,.16ex) -- cycle;
+  \fill[opacity = 0.2, blue,rounded corners=1ex] (.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+  \end{tikzpicture}
+              </latex-image>
+          </image>
+          </p></li>
+      </ol> </p>
+    </statement>
+    </task>
+    </activity>
+<definition xml:id="def-absineq">
+    <p>
+      When solving an absolute value inequality, rewrite it as compound inequalities. Assume <m>k</m> is positive.
+
+      <m>\lvert x \rvert \lt k \text{ becomes } -k \lt x \lt k</m>. 
+
+      <m>\lvert x \rvert \gt k \text{ becomes } x\gt k \text{ and } x\lt-k</m>.
+    </p>
+</definition>
+<activity>
+  <introduction>
+    <p>Solve the following absolute value inequalities. Write your solution in interval notation and graph on a number line.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> <m>\lvert 3x+4 \rvert \lt 10</m>
+    </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> <m>3\lvert x-7 \rvert+5 \gt 11</m>
+      </p>
+    </statement>
+  </task>
+
+</activity>
+
+    </subsection>
+
+
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

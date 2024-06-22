@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AI6" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Work (AI6)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/06.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+        <fact xml:id="fact-AI5work">
+            <statement>
+                <p>
+                    Given a physical object <m>m</m>, the <term>work</term><idx>work</idx> done on that object is <me>W=Fd=mad,</me> where <m>F</m> is the force applied to the object over a distance of <m>d</m>.  Recall that force <m>F=ma</m>, where <m>m</m> is the mass of the object, and <m>a</m> is the acceleration applied to it.
+                </p>
+            </statement>
+        </fact>
+        <activity xml:id="activity-AI5bucket">
+            <statement>
+                <p>
+                    Consider a bucket with 10 kg of water being pulled against the acceleration of gravity, <m>g=9.8</m> m/s<m>^2</m>, at a constant speed for 20 meters.  Using <xref ref="fact-AI5work"/>, what is the work needed to pull this bucket up 20 meters in kgm<m>^2</m>/<m>s^2</m> (or Nm)?
+                    <ol marker="A." cols="2">
+                        <li>10 kgm<m>^2</m>/<m>s^2</m></li>
+                        <li>20 kgm<m>^2</m>/<m>s^2</m></li>
+                        <li>98 kgm<m>^2</m>/<m>s^2</m></li> 
+                        <li>200 kgm<m>^2</m>/<m>s^2</m></li>
+                        <li>1960 kgm<m>^2</m>/<m>s^2</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI5bucket2">
+            <statement>
+                <p>
+                    Consider the bucket from <xref ref="activity-AI5bucket"/>  with 10 kg of water, being pulled against the acceleration of gravity, <m>g=9.8</m> m/s<m>^2</m>, at a constant speed for 20 meters.  Suppose that halfway up at a height of 10m, 5kg of water spilled out, leaving 5kg left.  How much total work does it take to get this bucket to a height of 20m?
+                    <ol marker="A." cols="2">
+                        <li>980 kgm<m>^2</m>/<m>s^2</m> or Nm</li>
+                        <li>1470 kgm<m>^2</m>/<m>s^2</m> or Nm</li>
+                        <li>1960 kgm<m>^2</m>/<m>s^2</m> or Nm</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-A5bucket3">
+            <introduction>
+                <p>
+                    Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of <m>h</m> meters, the mass of the bucket is <m>m(h)=2+8e^{-0.2h}</m> kg.
+                    <figure>
+                <caption>Bucket 5 m in the air, to be hoisted by another 5 meters.</caption>
+                    <image xml:id="bucket5meters" width="50%">
+                        <description>Bucket 5 m in the air, to be hoisted by another 5 meters.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (1,3)--(2,3)--(1.8,2)--(1.2,2)--(1,3);
+                        \draw[dashed] (1,5)--(2,5)--(1.8,4)--(1.2,4)--(1,5);
+                        \draw (1.5,3)--(1.5,9)--(3,9)--(3,0);
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1,2) -- (1,4) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=5$ m};
+                        
+                        \draw[dotted] (1.8,2) -- (-1,2);
+                        \draw (-1,2)--node[left]{\tiny$h_i=5$ m} (-1,2);
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    What is the mass of the bucket at height <m>h_i=5</m> m?
+                </p>
+            </task> 
+            <task>
+                <p>
+                    Assuming that the bucket does not lose water, estimate the amount of work needed to lift this bucket up <m>\Delta h=5</m> meters.
+                    
+                </p>
+            </task>
+        </activity>
+        
+        
+        <activity xml:id="activity-A5bucketestimate">
+            <introduction>
+                <p>
+                    using the same the bucket from <xref ref="activity-A5bucket3"/>,  consider the bucket's mass at heights <m>h_i=0, 5, 10, 15</m> meters.
+                    <figure>
+                <caption>Bucket lifted 5 m at a time.</caption>
+                    <image xml:id="bucketestimate" width="50%">
+                        <description>Bucket raised 5 m at a time, h_i are 0, 5, 10, 15 meters.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (1,1)--(2,1)--(1.8,0)--(1.2,0)--(1,1);
+                         \draw[dashed] (1,3)--(2,3)--(1.8,2)--(1.2,2)--(1,3);
+                        \draw[dashed] (1,5)--(2,5)--(1.8,4)--(1.2,4)--(1,5);
+                         \draw[dashed] (1,7)--(2,7)--(1.8,6)--(1.2,6)--(1,7);
+                        \draw[dashed] (1,9)--(2,9)--(1.8,8)--(1.2,8)--(1,9); 
+                        \draw (1.5,1)--(1.5,9)--(3,9)--(3,0);
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1,0) -- (1,2) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=5$ m};
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1,2) -- (1,4) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=5$ m};
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1,4) -- (1,6) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=5$ m};
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (1,6) -- (1,8) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=5$ m};    
+                        \draw[dotted] (1.2,0) -- (-1,0);
+                        \draw (-1,0)--node[left]{\tiny$h_1=0$ m} (-1,0);
+                        \draw[dotted] (1.2,2) -- (-1,2);
+                        \draw (-1,2)--node[left]{\tiny$h_2=5$ m} (-1,2);
+                        \draw[dotted] (1.2,4) -- (-1,4);
+                        \draw (-1,4)--node[left]{\tiny$h_3=10$ m} (-1,4);
+                        \draw[dotted] (1.2,6) -- (-1,6);
+                        \draw (-1,6)--node[left]{\tiny$h_4=15$ m} (-1,6);
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>Fill out the following table, estimating the work it would take to lift the bucket 20 meters.
+                    <me>
+                        \begin{array}{|c|c|c|c|}
+                        \hline
+                        h_i &amp; \text{Mass } m(h_i) &amp; \text{Distance} &amp; \text{Estimated Work}\\
+                        \hline
+                        h_4=15\ \text{m} &amp; m(15)=2+8e^{-0.2\cdot 15}\approx 2.398\ \text{kg} &amp; 5\ \text{m} &amp; \\
+                        \hline
+                        h_3=10\ \text{m} &amp; m(10)=2+8e^{-0.2\cdot 10}\approx 3.083\ \text{kg} &amp; 5\ \text{m} &amp; \\
+                        \hline
+                        h_2=5\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 5}\approx 4.943\ \text{kg} &amp;   5\ \text{m} &amp; 242.207\ \text{Nm}\\
+                        \hline
+                        h_1=0\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 0}= 10\ \text{kg} &amp;  5\ \text{m} &amp; \\
+                        \hline
+                        \end{array}
+                    </me>
+                
+                
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the total estimated work to lift this bucket 20 meters?
+                </p>
+            </task>
+        </activity>
+        
+        <activity xml:id="activity-AI5bucketriemann">
+            <statement>
+                <p>
+                    If we estimate the mass and work of the bucket from <xref ref="activity-A5bucketestimate"/> at height <m>h_i</m> with intervals of length <m>\Delta h</m> meters, which of the following best represents the Riemann sum of the work it would take to lift this bucket 20 meters?
+                    <ol marker="A." cols="2">
+                        <li><m>\displaystyle \sum h_i\cdot 9.8\Delta h</m>. Nm</li>
+                        <li><m>\displaystyle \sum \left( 2+8e^{-0.02h}\right)\cdot 9.8\Delta m</m> Nm</li>
+                        <li><m>\displaystyle \sum \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\Delta h</m> Nm</li>
+                        <li><m>\displaystyle \sum \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\Delta m</m> Nm</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI5bucketintegral">
+            <statement>
+                <p>
+                    Based on the Riemann sum chosen in <xref ref="activity-AI5bucketriemann"/>, which of the following integrals computes the work it would take to lift this bucket 20 meters?
+                    <ol marker="A." cols="2">
+                        <li><m>\displaystyle \int_0^{20} h_i\cdot 9.8 dh</m>. Nm</li>
+                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dm</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h_i}\right)\cdot 9.8 dh</m> Nm</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI5bucketwork">
+            <statement>
+                <p>
+                    Based on the integral chosen in <xref ref="activity-AI5bucketintegral"/>, compute the work it would take to lift this bucket 20 meters.
+                    
+                </p>
+            </statement>
+        </activity>
+        
+        <observation xml:id="observation-AI5howtophysics">
+            <title>A <q>how to</q> for applying integrals to physics</title>
+            <statement>
+                <p>
+                    <ol>
+                        <li>Estimate the value over a piece of the problem with <m>x</m> value <m>x_i</m> over interval of length <m>\Delta x</m>.</li>
+                        <li>Find a Riemann sum using (1) which estimates the value in question.</li>
+                        <li>Convert the Riemann sum to an integral and solve.</li>
+                    </ol>
+                </p>
+            </statement>
+        </observation>
+        
+        <activity xml:id="activity-AI5slicewater">
+            <statement>
+                <p>
+                    Consider a cylindrical tank filled with water, where the base of the cylinder has a radius of 3 meters and a height of 10 meters.  Consider a 2 meter thick slice of water sitting 6 meters high in the tank.  Using the fact that the mass of this water is <m>1000\cdot \pi (3)^2\cdot 2=18000\pi</m> kg, estimate how much work is needed to lift this slice 4 more meters to the top of the tank.
+                    
+                    <figure>
+                <caption>2m thick slice of water lifted 4m.</caption>
+                    <image xml:id="tankslicelift" width="50%">
+                        <description>2m thick slice of water lifted 4m.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (-1.5,0)--(1.5,0)--(1.5,5)--(-1.5,5)--(-1.5,0);
+                        \draw[dashed] (-1.5,3)--(1.5,3)--(1.5,4)--(-1.5,4)--(-1.5,3);
+                        \draw[fill, blue, opacity=0.2] (-1.5,3) rectangle (1.5,4);
+                        
+
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-1.5,3) -- (-1.5,4) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=2$ m};
+                        \draw (1.5, 3) --node[right]{\tiny$h_i=6$ m} (1.5,3);
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    <ol marker="A." cols="2">
+                        <li><m>18000\pi\cdot 4</m> Nm</li>
+                        <li><m>18000\pi\cdot 9.8</m> Nm</li>
+                        <li><m>18000\pi\cdot 4\cdot 9.8</m> Nm</li>
+                        <li><m>18000\pi\cdot 6</m> Nm</li>
+                        <li><m>18000\pi\cdot 6\cdot 9.8</m> Nm</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI5estimatewater">
+            <introduction>
+                <p>
+                    Consider the cylindrical tank filled with water from <xref ref="activity-AI5slicewater"/>.  We wish to estimate the amount of work required to pump all the water out of the tank.  Suppose we slice the water into 5 pieces and estimate the work it would take to lift each piece out of the tank.
+                    
+                    <figure>
+                <caption>2m thick slices of water.</caption>
+                    <image xml:id="tanksliceliftpieces" width="50%">
+                        <description>2m thick slice of water at 0, 2, 4, 6, 8m.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (-1.5,0)--(1.5,0)--(1.5,5)--(-1.5,5)--(-1.5,0);
+                        
+                        \foreach \x in {1,2,3,4,5}{
+                        \draw[dashed] (-1.5,\x-1)--(1.5,\x-1)--(1.5,\x)--(-1.5,\x)--(-1.5,\x-1);
+                        \draw[fill, blue, opacity=0.2] (-1.5,\x-1) rectangle (1.5,\x);
+                        
+
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-1.5,\x-1) -- (-1.5,\x) node [black,midway,xshift=-1.2cm] {\footnotesize
+                            $\Delta h=2$ m};
+                        };    
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>Fill out the following table, estimating the work it would take to pump all the water out.
+                    <me>
+                        \begin{array}{|c|c|c|c|}
+                        \hline
+                         h_i &amp; \text{Mass}  &amp; \text{Distance} &amp; \text{Estimated Work}\\
+                        \hline
+                        h_5=8\ \text{m} &amp; 18000\pi\ \text{kg} &amp;    &amp; \\
+                        \hline
+                        h_4=6\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  4\ \text{m} &amp; 705600\pi\ \text{Nm}\\
+                        \hline
+                        h_3=4\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  &amp; \\
+                        \hline
+                        h_2=2\ \text{m} &amp; 18000\pi\ \text{kg} &amp;    &amp; \\
+                        \hline
+                        h_1=0\ \text{m} &amp; 18000\pi\ \text{kg} &amp;  10\ \text{m} &amp; \\
+                        \hline
+                        \end{array}
+                    </me>
+                
+                
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the total estimated work to pump out all the water?
+                </p>
+            </task>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI5waterriemann">
+            <statement>
+                <p>
+                    Recall <xref ref="activity-AI5estimatewater"/>.  If we estimate the work needed to lift slices of thickness <m>\Delta h</m> m at heights <m>h_i</m> m, which of the following Riemann sums best estimates the total work needed to pump all the water from the tank?
+                    <ol marker="A.">
+                        <li><m>\displaystyle \sum 1000\cdot \pi3^2 \cdot 9.8(10-h)\Delta h</m> Nm</li>
+                        <li><m>\displaystyle \sum 1000\cdot\pi3^2 \cdot 9.8(10-h_i)\Delta h</m> Nm</li>
+                        <li><m>\displaystyle \sum 1000\cdot\pi(h_i)^2 \cdot 9.8(10-h)\Delta h</m> Nm</li>
+                        <li><m>\displaystyle \sum 1000\cdot\pi(h_i)^2 \cdot 9.8(10-h_i)\Delta h</m> Nm</li>
+                        
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI5waterintegral">
+            <statement>
+                <p>
+                    Based on the Riemann sum chosen in <xref ref="activity-AI5waterriemann"/>, which of the following integrals computes the work it would take to pump all the water from the tank?
+                    <ol marker="A.">
+                        <li><m>\displaystyle \int_0^{10} 9000\pi\cdot 9.8 (10-h) dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{10} 1000\pi\cdot 9.8 h^2(10-h) dh</m> Nm</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI5waterwork">
+            <statement>
+                <p>
+                    Based on the integral chosen in <xref ref="activity-AI5waterintegral"/>, compute the work it would take to pump all the water out of the tank.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI5cone">
+            <introduction>
+                <p>
+                    Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m.
+                    
+                    <figure>
+                <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
+                    <image xml:id="coneslicelift" width="50%">
+                        <description>A slice at height <m>h_i</m> of width <m>\Delta h</m>, with radius <m>r_i</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \draw (-0.5,0)--(0.5,0)--(1,5)--(-1,5)--(-0.5,0);
+                        
+                        \draw[dashed] (-0.7,2)--(0.7,2)--(0.7, 2.2)--(-0.7,2.2)--(-0.7,2);
+                        
+                        \draw[fill, blue, opacity=0.2] (-0.7,2) rectangle (0.7,2.2);
+                        
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt, mirror},yshift=0pt]
+                            (0,2) -- (0.7,2) node [black,midway,yshift=-0.6cm] {\footnotesize
+                            $r_i$ };
+                        
+
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-0.7,2) -- (-0.7,2.2) node [black,midway,xshift=-0.8cm] {\footnotesize
+                            $\Delta h$ };
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+                            (-1.5,0) -- (-1.5,5) node [black,midway,xshift=-1cm] {\footnotesize
+                            $100$ m};    
+                        \draw (0.7, 2) --node[right]{\tiny$h_{i}$} (0.7,2);
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt, mirror},yshift=0pt]
+                            (0,0) -- (0.5,0) node [black,midway,yshift=-0.6cm] {\footnotesize
+                            $10$ m};
+                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt},yshift=0pt]
+                            (0,5) -- (1,5) node [black,midway,yshift=0.6cm] {\footnotesize
+                            $20$ m};
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    What is the radius <m>r_i</m> in meters of the cross section made at height <m>h_i</m> meters?
+                </p>
+            </task>
+            <task>
+                <p>
+                    What is the volume of a cylinder with radius <m>r_i</m> meters with width <m>\Delta h</m> meters?
+                </p>
+            </task>
+            <task>
+                <p>
+                    Using the fact that water has density 1000 kg/m<m>^3</m>, what is the mass of the volume of water you found in (b)?
+                </p>
+            </task>
+            <task>
+                <p>
+                    How far must this cylinder of water be lifted to be out of the tank?
+                </p>
+            </task>
+        </activity>
+        
+        <activity xml:id="activity-AI5conesolve">
+            <introduction>
+                <p>
+                    Recall the computations done in <xref ref="activity-AI5cone"/>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    Find a Riemann sum which estimates the total work needed to pump all the water out of this tank, using slices at heights <m>h_i</m> m, of width <m>\Delta h</m> m.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Use (a) to find an integral expression which computes the amount of work needed to pump all the water out of this tank.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Evaluate the integral found in (b).
+                </p>
+            </task>
+        </activity>
+        
+    
+    
+    <!-- <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI6.slides.html"/>.</p>
+    </subsection> -->
+    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI6" youtube="mky7ZYL642Y">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Set up integrals to solve problems involving work, force, and/or pressure</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+    
+    
+</section>
+

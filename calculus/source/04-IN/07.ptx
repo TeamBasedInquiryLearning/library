@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="IN7" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Area under curves (IN7)</title>
+  <objectives>
+    <ul>
+      <li>
+          <xi:include href="outcomes/07.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+  <remark>
+  <statement>
+  <p>
+A geometrical interpretation of <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx</me>
+(<xref ref="definition-in5-2"/>) defines <m>\int_a^bf(x)dx</m> as the <term>net area</term>
+between the graph of <m>y=f(x)</m> and the <m>x</m>-axis. By net area, we mean the area above the <m>x</m>-axis
+(when <m>f(x)</m> is positive) minus the area below the <m>x</m>-axis (when <m>f(x)</m> is negative).
+  </p>
+    <figure>
+        <image xml:id="IN7-image-integral-as-net-area">
+            <sageplot><xi:include href="./sageplot/integral-as-net-area.sage" parse="text"/></sageplot>
+            <description>As the number of subdivisions increases, the Riemann sum more closely appears to measure the
+            net area between a curve and the x-axis.</description>
+        </image>
+        <caption>Improving approximations of <m>\int_0^5(x-2)(x-4)dx</m></caption>
+    </figure>
+  </statement>
+  </remark>
+
+  <activity>
+    <task>
+        <statement>
+                <p>
+Write the net area between <m>f(x)=6 \, x^{2} - 18 \, x</m> and the <m>x</m>-axis
+from <m>x=2</m> to <m>x=7</m> as a definite integral.
+                </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+                <p>
+Evaluate this definite integral to verify the net area is equal to <m>265</m> square units.
+                </p>
+        </statement>
+    </task>
+</activity>
+
+  <observation>
+  <statement>
+  <p>
+In order to find the total area between a curve and the <m>x</m>-axis, one
+must break up the definite integral at points where <m>f(x)=0</m>, that is,
+wherever <m>f(x)</m> may change from positive to negative, or vice versa.
+  </p>
+    <figure>
+        <image xml:id="IN7-image-integral-as-total-area">
+            <sageplot><xi:include href="./sageplot/integral-as-total-area.sage" parse="text"/></sageplot>
+            <description>The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4
+            where (x-2) and (x-4) are equal to 0.</description>
+        </image>
+        <caption>Partitioning <m>\int_0^5(x-2)(x-4)dx</m> at <m>x=2</m> and <m>x=4</m>.</caption>
+    </figure>
+    <p>
+        Since <m>f(x)=(x-2)(x-4)</m> is zero when <m>x=2</m> and <m>x=4</m>, we may compute the total
+        area between <m>y=(x-2)(x-4)</m> and the <m>x</m>-axis using absolute values as follows:
+        <me>\text{Area} = {\color{blue} \left|\int_0^2(x-2)(x-4)dx\right|}+
+        {\color{red} \left|\int_2^4(x-2)(x-4)dx\right|}+{\color{blue}\left|\int_4^5(x-2)(x-4)dx\right|}</me>
+        </p>
+  </statement>
+  </observation>
+
+  <activity>
+        <introduction>
+                <p>
+Follow these steps to find the total area between <m>f(x)=6 \, x^{2} - 18 \, x</m> and the <m>x</m>-axis
+from <m>x=2</m> to <m>x=7</m>.
+                </p>
+    </introduction>
+    <task>
+        <statement>
+                <p>
+Find all values for <m>x</m> where <m>f(x)=6 \, x^{2} - 18 \, x</m> is equal to <m>0</m>.
+                </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+                <p>
+Only one such value is between <m>x=2</m> and <m>x=7</m>. Use this value to fill in the <m>\unknown</m> below,
+then verify that its value is <m>279</m> square units.
+                    <me>
+\text{Area} =
+\left| \int_{ 2 }^{ \unknown } 
+\left( 6 \, x^{2} - 18 \, x \right) dx \right| +
+\left| \int_{ \unknown }^{ 7 } 
+\left( 6 \, x^{2} - 18 \, x \right) dx \right|
+                    </me>
+                </p>
+        </statement>
+    </task>
+</activity>
+
+  <activity checkit-seed="0019" checkit-slug="IN7" checkit-title="Area under curves">
+   <introduction>
+        <p>
+            Answer the following questions concerning
+            <m>f(x)=6 \, x^{2} - 96</m>.
+       </p></introduction>
+        
+            <task>
+                <p>
+What is the total area between <m>f(x)=6 \, x^{2} - 96</m> and the <m>x</m>-axis
+from <m>x=-1</m> to <m>x=9</m>?
+                </p>
+            </task>
+            <task>
+                <p>
+What is the net area between <m>f(x)=6 \, x^{2} - 96</m> and the <m>x</m>-axis
+from <m>x=-1</m> to <m>x=9</m>?
+                </p>
+            </task>
+        
+  <!--  <answer>
+         <ol>
+            <li>
+                <p>
+                    <me>
+\left| \int_{ -1 }^{ 4 } 
+\left( 6 \, x^{2} - 96 \right) dx \right| +
+\left| \int_{ 4 }^{ 9 } 
+\left( 6 \, x^{2} - 96 \right) dx \right| = 1200
+                    </me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <me>
+\int_{ -1 }^{ 9 } 
+\left( 6 \, x^{2} - 96 \right) dx = 500
+                    </me>
+                </p>
+            </li>
+        </ol>
+    </answer>-->
+</activity>
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN7" youtube="n05Ffx6Dm8g"/>
+            <caption>Video for IN7</caption>
+        </figure>
+    </subsection>
+</section>
