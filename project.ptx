@@ -37,7 +37,7 @@
       output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
       deploy-dir="precalculus/preview/print"
       />
-    <!-- <target
+    <target
       name="calc-web"
       format="html"
       source="calculus/source/main.ptx"
@@ -106,6 +106,6 @@
       source="linear-algebra/source/main.ptx"
       output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
       deploy-dir="linear-algebra/preview/print"
-      /> -->
+      />
   </targets>
 </project>
