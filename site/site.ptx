@@ -2,7 +2,6 @@
 <site xmlns:xi="http://www.w3.org/2001/XInclude">
     <sitename>Team-Based Inquiry Learning</sitename>
     <sitesubtitle>Open Resources and Research supporting Active Learning in Mathematics</sitesubtitle>
-    <site-description><xi:include href="description.html" parse="text"/></site-description>
-    <page-url>{slug}/</page-url>
-    <page-save-as>{slug}/index.html</page-save-as>
+    <ptx-site-description><xi:include href="description.html" parse="text"/></ptx-site-description>
+    <ptx-show-targets>no</ptx-show-targets>
 </site>
