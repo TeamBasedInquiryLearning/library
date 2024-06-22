@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains all of the "backmatter" material  -->
+<!-- We show examples of how to have hints to divisional  -->
+<!-- excercies appear in a section, and then their        -->
+<!-- solutions in the next.  Then there is an appendix    -->
+<!-- with all notation generated, and finally the index.  -->
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
+  <title>Backmatter</title>
+
+  <!-- <xi:include href="./sample-solutions.ptx"/> -->
+  <xi:include href="./integral-table.ptx"/>
+  <xi:include href="./trig-table.ptx"/>
+
+</backmatter>
+

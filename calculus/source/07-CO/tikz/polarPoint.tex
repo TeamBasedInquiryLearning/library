@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    %Coordinates
+\coordinate (A) at (6,0);
+\coordinate (B) at (0,0);
+\coordinate (C) at (2.5,2.5);
+\coordinate (B') at (2.5,3.5);
+\coordinate (A') at (1.8,3.2);
+
+%Axis
+
+\draw[thick,-latex] (-1ex,0) -- (6,0) node [below] {$x$};
+\draw[thick,-latex] (0,-1ex) -- (0,5) node [left] {$y$};
+
+%Vectors
+\draw[thick,-latex] (0,0) -- (2.5,2.5) node[pos=0.6, above left] {$r$};
+
+%Help Lines
+\draw[dashed, red] (0,2.5) -- (2.5,2.5) -- (2.5,0);
+\draw[dashed] (3.53,0) arc (0:90:3.53);
+\draw[red] (2.5,0)--node[below]{$x$}(2.5,0);
+\draw[red] (0,2.5)--node[left]{$y$}(0,2.5);
+\draw (2.5, 2.5) --node[above right]{$(r,\theta)$} (2.5, 2.5);
+
+%Angle
+\draw (0.3,0) arc[start angle=0, end angle=45, radius=0.3];
+\node[anchor=south west] at (0.3,0) {$\theta$};
+
+\end{tikzpicture}

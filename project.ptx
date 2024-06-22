@@ -1,8 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
-<project ptx-version="2">
+<project ptx-version="2" source=".">
   <targets>
-    <target name="web" format="html" deploy="yes" />
-    <target name="print" format="pdf" deploy="yes" />
+    <target
+      name="precal-web"
+      format="html"
+      source="precalculus/source/main.ptx"
+      deploy-dir="precalculus/preview"
+      />
+    <target
+      name="precal-print"
+      format="pdf"
+      source="precalculus/source/main.ptx"
+      output-filename="TBIL-Precalculus-Preview.pdf"
+      deploy-dir="precalculus/preview/print"
+      />
+    <target
+      name="precal-web-instructor"
+      format="html"
+      source="precalculus/source/main.ptx"
+      publication="instructor.ptx"
+      deploy-dir="precalculus/preview/instructor"
+      />
+    <target
+      name="precal-print-instructor"
+      format="pdf"
+      source="precalculus/source/main.ptx"
+      publication="instructor.ptx"
+      output-filename="TBIL-Precalculus-Instructor-Preview.pdf"
+      deploy-dir="precalculus/preview/print"
+      />
+    <target
+      name="precal-print-slides"
+      format="pdf"
+      source="precalculus/source/main.ptx"
+      output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
+      deploy-dir="precalculus/preview/print"
+      />
+    <!-- <target
+      name="calc-web"
+      format="html"
+      source="calculus/source/main.ptx"
+      deploy-dir="calculus/preview"
+      />
+    <target
+      name="calc-print"
+      format="pdf"
+      source="calculus/source/main.ptx"
+      output-filename="TBIL-Calculus-Preview.pdf"
+      deploy-dir="calculus/preview/print"
+      />
+    <target
+      name="calc-web-instructor"
+      format="html"
+      source="calculus/source/main.ptx"
+      publication="instructor.ptx"
+      deploy-dir="calculus/preview/instructor"
+      />
+    <target
+      name="calc-print-instructor"
+      format="pdf"
+      source="calculus/source/main.ptx"
+      publication="instructor.ptx"
+      output-filename="TBIL-Calculus-Instructor-Preview.pdf"
+      deploy-dir="calculus/preview/print"
+      />
+    <target
+      name="calc-print-slides"
+      format="pdf"
+      source="calculus/source/main.ptx"
+      output-filename="TBIL-Calculus-Instructor-Slides.pdf"
+      deploy-dir="calculus/preview/print"
+      />
+    <target
+      name="la-web"
+      format="html"
+      source="linear-algebra/source/main.ptx"
+      deploy-dir="linear-algebra/preview"
+      />
+    <target
+      name="la-print"
+      format="pdf"
+      source="linear-algebra/source/main.ptx"
+      output-filename="TBIL-Precalculus-Preview.pdf"
+      deploy-dir="linear-algebra/preview/print"
+      />
+    <target
+      name="la-web-instructor"
+      format="html"
+      source="linear-algebra/source/main.ptx"
+      publication="instructor.ptx"
+      deploy-dir="linear-algebra/preview/instructor"
+      />
+    <target
+      name="la-print-instructor"
+      format="pdf"
+      source="linear-algebra/source/main.ptx"
+      publication="instructor.ptx"
+      output-filename="TBIL-Precalculus-Instructor-Preview.pdf"
+      deploy-dir="linear-algebra/preview/print"
+      />
+    <target
+      name="la-print-slides"
+      format="pdf"
+      source="linear-algebra/source/main.ptx"
+      output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
+      deploy-dir="linear-algebra/preview/print"
+      /> -->
   </targets>
 </project>

@@ -1,0 +1,828 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="FN4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Transformation of Functions (FN4) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/04.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+<remark>
+  <p> Informally, a transformation of a given function is an algebraic process by which we change the function to a related function that has the same fundamental shape, but may be shifted, reflected, and/or stretched in a systematic way. </p>
+</remark>
+
+    <activity xml:id="activity-vup">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(spline([(-2,-1),(0,3),(1,2),(2,4)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-1),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,4),pointsize=50,color='blue')
+              p+=text('$f(x)+1$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>f(x)+1</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Shifted up 1 unit </p></li>
+            <li><p> Shifted left 1 unit </p></li>
+            <li><p> Shifted down 1 unit </p></li>
+            <li><p> Shifted right 1 unit </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice A: shifted up 1 unit
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+    <activity xml:id="activity-vdown">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(spline([(-2,-4),(0,0),(1,-1),(2,1)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-4),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,1),pointsize=50,color='blue')
+              p+=text('$f(x)-2$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>f(x)-2</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p>Shifted up 2 units </p></li>
+            <li><p> Shifted left 2 units </p></li>
+            <li><p> Shifted down 2 units </p></li>
+            <li><p> Shifted right 2 units </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice C: shifted down 2 units
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+    <remark>
+      <p>
+        Notice that in <xref ref="activity-vup"/> and <xref ref="activity-vdown"/> the <m>y</m>-values of the transformed graph are changed while the <m>x</m>-values remain the same.
+      </p>
+    </remark>
+
+    <definition xml:id="def-vertical-shift">
+      <statement>
+        <p>
+          Given a function <m>f(x)</m> and a constant <m>c</m>, the transformed function <m>g(x)=f(x)+c</m> is a <term>vertical translation</term> of the graph of <m>f(x)</m>. That is, all the outputs change by <m>c</m> units.  If <m>c</m> is positive, the graph will shift up.  If <m>c</m> is negative, the graph will shift down.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-hleft">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(spline([(-3,-2),(-1,2),(0,1),(1,3)]),(x,-3,1),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-3,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((1,3),pointsize=50,color='blue')
+              p+=text('$f(x+1)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>f(x+1)</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p>Shifted up by 1 unit </p></li>
+            <li><p> Shifted left 1 unit </p></li>
+            <li><p> Shifted down 1 unit </p></li>
+            <li><p> Shifted right 1 unit </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice B: shifted left 1 unit
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+    <activity xml:id="activity-hright">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-5, -4,-3,-2,-1,1,2,3,4,5],[-5, -4,-3,-2,-1,1,2,3,4, 5]])
+              p+=point((-2,-2),pointsize=50,color='blue',xmin=-5,xmax=5,ymin=-5,ymax=5)
+              p+=point((2,3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(spline([(1,-2),(3,2),(4,1),(5,3)]),(x,1,5),thickness=3, gridlines=[[-5, -4,-3,-2,-1,1,2,3,4,5],[-5,-4,-3,-2,-1,1,2,3,4,5]])
+              p+=point((1,-2),pointsize=50,color='blue',xmin=-5,xmax=5,ymin=-5,ymax=5)
+              p+=point((5,3),pointsize=50,color='blue')
+              p+=text('$f(x-3)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>f(x-3)</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p>Shifted up by 3 units </p></li>
+            <li><p> Shifted left 3 units </p></li>
+            <li><p> Shifted down 3 units </p></li>
+            <li><p> Shifted right 3 units </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice D: shifted right 3 units
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+    <remark>
+      <p>
+        Notice that in <xref ref="activity-hleft"/> and <xref ref="activity-hright"/> the <m>x</m>-values of the transformed graph are changed while the <m>y</m>-values remain the same.
+      </p>
+    </remark>
+
+    <definition xml:id="def-horizontal-shift">
+      <statement>
+        <p>
+          Given a function <m>f(x)</m> and a constant <m>c</m>, the transformed function <m>g(x)=f(x+c)</m> is a <term>horizontal translation</term> of the graph of <m>f(x)</m>.  If <m>c</m> is positive, the graph will shift left.  If <m>c</m> is negative, the graph will shift right.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-hv-mix-eq">
+      <introduction>
+        <p>
+          Describe how the graph of the function is a transformation of the graph of the original function <m>f</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> <m>f(x-4)+1</m> 
+          <ol marker="A." cols="1">
+            <li><p> Shifted down 4 units </p></li>
+            <li><p> Shifted left 4 units </p></li>
+            <li><p> Shifted down 1 unit </p></li>
+            <li><p> Shifted right 4 units </p></li>
+            <li><p> Shifted up 1 unit </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choices D and E: shifted right 4 units and up 1 unit
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p> <m>f(x+3)-2</m> 
+          <ol marker="A." cols="1">
+            <li><p> Shifted down 2 units </p></li>
+            <li><p> Shifted left 3 units </p></li>
+            <li><p> Shifted up 3 unit </p></li>
+            <li><p> Shifted right 3 units </p></li>
+            <li><p> Shifted up 2 unit </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choices A and B: shifted left 3 units and down 2 units
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+    <activity xml:id="activity-vertref">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(spline([(-2,2),(0,-2),(1,-1),(2,-3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,-3),pointsize=50,color='blue')
+              p+=text('$-f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>-f(x)</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Shifted down 2 units </p></li>
+            <li><p> Reflected over the <m>x</m>-axis </p></li>
+            <li><p> Reflected over the <m>y</m>-axis </p></li>
+            <li><p> Shifted right 2 units </p></li>
+        </ol> </p>
+      </statement>
+        <answer>
+          <p>
+            Choice B: reflected over the <m>x</m>-axis
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+    <activity xml:id="activity-horref">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((2,3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(spline([(2,-2),(0,2),(-1,1),(-2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
+              p+=point((-2,3),pointsize=50,color='blue')
+              p+=text('$f(-x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>f(-x)</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Shifted down 2 units </p></li>
+            <li><p> Reflected over the <m>x</m>-axis </p></li>
+            <li><p> Reflected over the <m>y</m>-axis </p></li>
+            <li><p> Shifted left 2 units </p></li>
+        </ol> </p>
+      </statement>
+        <answer>
+          <p>
+            Choice C: reflected over the <m>y</m>-axis
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+        Notice that in <xref ref="activity-vertref"/> the <m>y</m>-values of the transformed graph are changed while the <m>x</m>-values remain the same. While in <xref ref="activity-horref"/>, the <m>x</m>-values of the transformed graph are changed while the <m>y</m>-values remain the same.
+      </p>
+    </remark>
+
+    <definition xml:id="def-vreflection">
+      <statement>
+        <p>
+          Given a function <m>f(x)</m>, the transformed function <m>g(x)=-f(x)</m> is a <term>vertical reflection</term> of the graph of <m>f(x)</m>.  That is, all the outputs, are multiplied by <m>-1</m>.  The new graph is a reflection of the old graph about the <m>x</m>-axis.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-hreflection">
+      <statement>
+        <p>
+          Given a function <m>f(x)</m>, the transformed function <m>y=g(x)=f(-x)</m> is a <term>horizontal reflection</term> of the graph of <m>f(x)</m>.  That is, all the inputs, are multiplied by <m>-1</m>.  The new graph is a reflection of the old graph about the <m>y</m>-axis.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-graph-move">
+      <introduction>
+        <p>Consider the following graph of the function <m>f(x)</m>.
+          
+            <image>
+            <sageplot>
+              p=plot(sqrt(-1*x**2+9),(x,-3,3),thickness=3)
+              p+=point((-3,0),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
+              p+=point((3,0),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>-f(x+2)+3</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Shifted up 2 units </p></li>
+            <li><p> Shifted up 3 units </p></li>
+            <li><p> Reflected over the <m>x</m>-axis </p></li>
+            <li><p> Reflected over the <m>y</m>-axis </p></li>
+            <li><p> Shifted left 3 units </p></li>
+            <li><p> Shifted left 2 units </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choices B, C and F: shifted left 2 units, reflected over the <m>x</m>-axis, and shifted up 3 units
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p> Which of the following represents the graph of the transformed function <m>g(x)=-f(x+2)+3</m>?
+          <ol marker="A." cols="1">
+            <li><p> <image>
+              <sageplot>
+                p=plot(-1*sqrt(-1*(x+2)**2+9)+3,(x,-5,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+                p+=point((-5,3),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
+                p+=point((1,3),pointsize=50,color='blue')
+                p
+              </sageplot>
+            </image> </p></li>
+            <li><p> <image>
+              <sageplot>
+                p=plot(sqrt(-1*(x+2)**2+9)-3,(x,-5,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+                p+=point((-5,-3),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
+                p+=point((1,-3),pointsize=50,color='blue')
+                p
+              </sageplot>
+            </image> </p></li>
+            <li><p> <image>
+              <sageplot>
+                p=plot(-1*sqrt(-1*(x-2)**2+9)+3,(x,-1,5),thickness=3,gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+                p+=point((-1,3),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
+                p+=point((5,3),pointsize=50,color='blue')
+                p
+              </sageplot>
+            </image> </p></li>
+            <li><p> <image>
+              <sageplot>
+                p=plot(-1*sqrt(-1*(x-2)**2+9),(x,-1,5),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+                p+=point((-1,0),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
+                p+=point((5,0),pointsize=50,color='blue')
+                p
+              </sageplot>
+            </image> </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+      Notice that in <xref ref="activity-graph-move"/> the resulting graph is different if you perform the reflection first and then the vertical shift, versus the other order.  When combining transformations, it is very important to consider the order of the transformations. Be sure to follow the order of operations.
+    </p>
+  </remark>
+    <activity xml:id="activity-graph-eq">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(abs(x+2)-4,(x,-5,-1),thickness=3, gridlines=[[-5,-4,-3,-2,-1,1,2,3,4,5],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-5,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
+              p+=point((-1,-3),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(abs(-x+2)-1,(x,1,5),thickness=3,gridlines=[[-5,-4,-3,-2,-1,1,2,3,4,5],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((1,0),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
+              p+=point((5,2),pointsize=50,color='blue')
+              p+=text('$g(x)$', (1, 4), fontsize=18, color='black')
+              p              
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+        <task>
+          <statement>
+          <p> How is the graph of <m>g(x)</m> related to that of <m>f(x)</m>?
+            <ol marker="A." cols="1">
+              <li><p> Shifted up 3 units </p></li>
+              <li><p> Shifted up 1 unit </p></li>
+              <li><p> Reflected over the <m>x</m>-axis </p></li>
+              <li><p> Reflected over the <m>y</m>-axis </p></li>
+              <li><p> Shifted left 1 unit </p></li>
+              <li><p> Shifted right 4 units </p></li>
+          </ol> </p>
+        </statement>
+          <answer>
+            <p>
+              Choices A and D: reflected over the <m>y</m>-axis, and shifted up 3 units
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              List the order the transformations must be applied.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+          <p> Write an equation for the graphed function <m>g(x)</m> using transformations of the graph <m>f(x)</m>.
+            <ol marker="A." cols="1">
+              <li><p> <m>g(x)=-f(x)+3</m> </p></li>
+              <li><p> <m>g(x)=f(-x)+3 </m> </p></li>
+              <li><p> <m>g(x)=f(-x+3) </m> </p></li>
+              <li><p> <m>g(x)=-f(x+3) </m> </p></li>
+          </ol> </p>
+          </statement>
+          <answer>
+            <p>
+              Choice B: 
+            </p>
+          </answer>
+        </task>
+        
+    </activity>
+    <activity xml:id="activity-vstretch">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(2,(x,-1,1),thickness=3, gridlines=[[-6, -5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p+=plot(-x+3,(x,1,4), thickness =3)
+              p+=plot(x+3,(x,-4,-1), thickness =3)
+              p+=point((-4,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
+              p+=point((4,-1),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(4,(x,-1,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p+=plot(2*(-x+3),(x,1,4), thickness =3)
+              p+=plot(2*(x+3),(x,-4,-1), thickness =3)
+              p+=point((-4,-2),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
+              p+=point((4,-2),pointsize=50,color='blue')
+              p+=text('$2f(x)$', (3, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> Consider the <m>y</m>-value of the two graphs at <m>x=1</m>.  How do they compare?
+          <ol marker="A." cols="1">
+            <li><p> The <m>y</m>-value of <m>2f(x)</m> is twice that of <m>f(x)</m>. </p></li>
+            <li><p> The <m>y</m>-value of <m>2f(x)</m> is half that of <m>f(x)</m>. </p></li>
+            <li><p> The <m>y</m>-value of <m>2f(x)</m> and <m>f(x)</m> are the same. </p></li>
+            <li><p> The <m>y</m>-value of <m>2f(x)</m> is negative that of <m>f(x)</m>. </p></li>
+        </ol> </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+        <p> How is the graph of <m>2f(x)</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Vertically stretched by a factor of 2 </p></li>
+            <li><p> Vertically compressed by a factor of 2 </p></li>
+            <li><p> Horizontally stretched by a factor of 2 </p></li>
+            <li><p> Horizontally compressed by a factor of 2 </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice A: vertically stretched by a factor of 2
+          </p>
+        </answer>
+      </task>
+    </activity>
+    <activity xml:id="activity-hcompress">
+      <introduction>
+        <p>Consider the following two graphs.
+          <sidebyside width="50%">
+            <image>
+            <sageplot>
+              p=plot(2,(x,-1,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p+=plot(-x+3,(x,1,4), thickness =3)
+              p+=plot(x+3,(x,-4,-1), thickness =3)
+              p+=point((-4,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
+              p+=point((4,-1),pointsize=50,color='blue')
+              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+              p=plot(2,(x,-.5,.5),thickness=3, gridlines=[[-6, -5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p+=plot((-2*x+3),(x,.5,2), thickness =3)
+              p+=plot((2*x+3),(x,-2,-.5), thickness =3)
+              p+=point((-2,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
+              p+=point((2,-1),pointsize=50,color='blue')
+              p+=text('$f(2x)$', (3, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </sidebyside>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> How is the graph of <m>f(2x)</m> related to that of <m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Vertically stretched by a factor of 2 </p></li>
+            <li><p> Vertically compressed by a factor of 2 </p></li>
+            <li><p> Horizontally stretched by a factor of 2 </p></li>
+            <li><p> Horizontally compressed by a factor of 2 </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice D: horizontally compressed by a factor of 2
+          </p>
+        </answer>
+      </task>
+    </activity>
+    <remark>
+      <p>
+      Notice that in <xref ref="activity-vstretch"/> the <m>y</m>-values are doubled while the <m>x</m>-values remain the same.  While, in <xref ref="activity-hcompress"/> the <m>x</m>-values are cut in half while the <m>y</m>-values remain the same.
+    </p>
+    </remark>
+    <definition xml:id="def-vstretch">
+      <statement>
+        <p>
+          Given a function <m>f(x)</m>, the transformed function <m>g(x)=af(x)</m> is a <term>vertical stretch</term> or <term>vertical compression</term> of the graph of <m>f(x)</m>.  That is, all the outputs, are multiplied by <m>a</m>.  If <m>a \gt 1</m> the new graph is a vertical stretch of the old graph away from the <m>x</m>-axis. If <m>0 \lt a \lt 1</m> the new graph is a vertical compression of the old graph towards the <m>x</m>-axis.  Points on the <m>x</m>-axis are unchanged.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-hstretch">
+      <statement>
+        <p>
+          Given a function <m>f(x)</m>, the transformed function <m>g(x)=f(ax)</m> is a <term>horizontal stretch</term> or <term>horizontal compression</term> of the graph of <m>f(x)</m>.  That is, all the inputs, are divided by <m>a</m>.  If <m>a \gt 1</m> the new graph is a horizontal compression of the old graph toward the <m>y</m>-axis. If <m>0 \lt a \lt 1</m> the new graph is a horizontal stretch of the old graph away from the <m>y</m>-axis.  Points on the <m>y</m>-axis are unchanged.
+        </p>
+      </statement>
+    </definition>
+
+    <remark>
+      <p> We often use a set of basic functions with which to begin transformations. We call these parent functions.
+        <sidebyside width="50%">
+          <image>
+          <sageplot>
+            p=plot(x,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
+            p+=text('$f(x)=x$', (1, 4), fontsize=18, color='black')
+            p
+          </sageplot>
+        </image>
+        <image>
+          <sageplot>
+            p=plot(x**2,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
+            p+=text('$f(x)=x^2$', (1, 4), fontsize=18, color='black')
+            p
+          </sageplot>
+        </image>
+      </sidebyside>
+
+      <sidebyside width="50%">
+        <image>
+        <sageplot>
+          p=plot(abs(x),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
+          p+=text('$f(x)=|x|$', (1, 4), fontsize=18, color='black')
+          p
+        </sageplot>
+      </image>
+      <image>
+        <sageplot>
+          p=plot(sqrt(x),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
+          p+=text(r"$f(x)=\sqrt{x}$", (1, 4), fontsize=18, color='black')
+          p
+        </sageplot>
+      </image>
+    </sidebyside>
+
+    <sidebyside width="50%">
+      <image>
+      <sageplot>
+        p=plot(x**3,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
+        p+=text('$f(x)=x^3$', (-2, 4), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+    <image>
+      <sageplot>
+        p=plot(1/x, thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, detect_poles=True)
+        p+=text(r"$f(x)=\frac{1}{x}$", (-2, 4), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+  </sidebyside>
+      </p>
+    </remark>
+
+    <activity xml:id="activity-peq">
+      <introduction>
+        <p>Consider the function <m>g(x)=3\sqrt{-x}+2</m>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> Identify the parent function <m>f(x)</m>.
+          <ol marker="A." cols="2">
+            <li><p> <m>f(x)=x^{2}</m> </p></li>
+            <li><p> <m>f(x)=\lvert x \rvert</m> </p></li>
+            <li><p> <m>f(x)=\sqrt{x}</m> </p></li>
+            <li><p> <m>f(x)=x</m> </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice C: <m>f(x)=\sqrt{x}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Graph the parent function <m>f(x)</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+        <p> How is the graph of <m>g(x)</m> related to that of the parent function<m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Reflected over the <m>x</m>-axis </p></li>
+            <li><p> Reflected over the <m>y</m>-axis </p></li>
+            <li><p> Shifted down 2 units </p></li>
+            <li><p> Shifted up 2 units </p></li>
+            <li><p> Vertically stretched by a factor of 3 </p></li>
+            <li><p> Horizontally compressed by a factor of 3 </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choices B, D, E: reflected over the <m>y</m>-axis, vertically stretched by a factor of 3, shifted up 2 units
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Graph the transformed function <m>g(x)</m>.
+          </p>
+        </statement>
+      </task>
+      
+    </activity>
+    <activity xml:id="activity-pgraph-move">
+      <introduction>
+        <p>Consider the following graph of the function <m>g(x)</m>.
+          
+            <image>
+            <sageplot>
+              p=plot(-1*(x+2)**2-3,thickness=3, xmin=-6,xmax=6,ymin=-10,ymax=10, gridlines=[[-6,-6,-4,-3,-2,-1,1,2,3,4,5,6],[-10,-8,-6,-4,-2,2,4,6,8,10]])
+              p+=text('$g(x)$', (1, 4), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+          
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> Identify the parent function.
+          <ol marker="A." cols="2">
+            <li><p> <m>f(x)=x^{2}</m> </p></li>
+            <li><p> <m>f(x)=\lvert x \rvert</m> </p></li>
+            <li><p> <m>f(x)=\sqrt{x}</m> </p></li>
+            <li><p> <m>f(x)=x</m> </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice A: <m>f(x)=x^{2}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p> How is the graph of <m>g(x)</m> related to that of the parent function<m>f(x)</m>?
+          <ol marker="A." cols="1">
+            <li><p> Reflected over the <m>x</m>-axis </p></li>
+            <li><p> Reflected over the <m>y</m>-axis </p></li>
+            <li><p> Shifted down 3 units </p></li>
+            <li><p> Shifted up 3 units </p></li>
+            <li><p> Shifted left 2 units </p></li>
+            <li><p> Shifted right 2 units </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choices A, B, D: shifted left 2 units, reflected over the <m>x</m>-axis, shifted down 3 units
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p> Write an equation to represent the transformed function <m>g(x)</m>.
+          <ol marker="A." cols="1">
+            <li><p> <m>g(x)=-(x-2)^{2}-3</m> </p></li>
+            <li><p> <m>g(x)=-(x+2)^{2}+3</m> </p></li>
+            <li><p> <m>g(x)=(-x+2)^{2}-3</m> </p></li>
+            <li><p> <m>g(x)=-(x+2)^{2}-3</m> </p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            Choice D: <m>g(x)=-(x+2)^2+3</m>
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

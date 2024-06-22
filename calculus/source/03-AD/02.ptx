@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AD2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear approximation (AD2)</title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/02.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+<!--   <activity>
+    <introduction>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </introduction>
+  </activity> -->
+
+    
+<definition xml:id="defn-linear-approx"><p>
+The <em>linear approximation</em> (or tangent line approximation or linearization) of a function <m>f(x)</m> at <m>x=a</m> is the tangent line <m>L(x)</m> at <m>x=a</m>. In formulas, <m>L(x)</m> is the linear function
+<me>L(x) = f'(a)(x-a) + f(a). </me>
+Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a,f(a))</m> in point-slope form and calling the resulting linear function <m>L(x)</m>. The linear approximation <m>L(x)</m> is a linear function that looks like <m>f(x)</m> when we zoom in near <m>x=a</m>.
+</p></definition>
+    
+<activity xml:id="activity-linear-approx-ln">
+    <introduction>     
+<!--     Approximating natural log -->
+<p>Without using a calculator, we will use calculus to approximate <m>\ln(1.1)</m>. </p>
+    </introduction>
+
+<task>    
+   <p> Find the equation of the tangent line to <m>\ln(x)</m> at <m>x=1</m>. This will be your linear approximation <m>L(x)</m>. What do you get for <m>L(x)</m>? </p>
+  <ol marker="A." cols="2">
+                <li><p>  <m>L(x) = x</m> </p></li>
+                  <li><p>  <m>L(x) = x+1</m></p></li> 
+                  <li><p>  <m>L(x)= x - 1</m> </p></li>     
+       <li><p>  <m>L(x)= -x + 1</m> </p></li>               
+    </ol>      
+    </task>
+    <task><p>As 1.1 is close to 1, we can use <m>L(1.1)</m> to approximate <m>\ln(1.1)</m>. What approximation do you get? </p> 
+  <ol marker="A." cols="2">
+                <li><p>  <m>\ln(1.1) \approx 1.1 </m> </p></li>
+                 <li><p>  <m>\ln(1.1) \approx 2.1 </m> </p></li>
+                 <li><p>  <m>\ln(1.1) \approx 0.1 </m> </p></li>
+                 <li><p>  <m>\ln(1.1) \approx -0.1 </m> </p></li>             
+    </ol>      
+    </task>
+    <task><p>Sketch the tangent line <m>L(x)</m> on the same plane as the graph of <m>\ln(x)</m>. What do you notice? 
+</p>
+         <figure>
+                    <image width="50%" xml:id="graph-tangent-line-plane-ln">
+                    <latex-image>  
+\begin{minipage}{\textwidth}
+\begin{center}
+    \begin{tikzpicture}[scale=0.9]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+    xmin=0, xmax=5,
+    ymin=-2, ymax=2,
+    % xtick={0,10,...,80},
+    % ytick={0,10,...,50},
+    % yticklabels={0, 0.01, 0.02, 0.03, 0.04, 0.05},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=0.1:5, blue, ultra thick] {ln(x)} node [pos=0.8,above left , ultra thick] {$\boldsymbol{\ln(x)}$};
+%      \addplot [only marks, blue] table {
+% 40	20
+% };
+%  \addplot[only marks, color=blue, nodes near coords={$(40,20)$}] coordinates {(30,20)};
+%   \addplot[domain=20:70, black, thick] {(x-40)+20} node [pos=0.6, below right, ultra thick] {$\boldsymbol{L(x)}$};
+%      \addplot [only marks, black] table {
+% 20	0
+% };
+%  \addplot[only marks, color=black, nodes near coords={$(20,0)$}] coordinates {(30,0)};
+ \end{axis}
+\end{tikzpicture}
+\end{center}
+                        \end{minipage}
+                          </latex-image>
+                    </image>
+                    <caption>The graph of <m> \ln(x)</m></caption>
+                    </figure>
+        </task>
+</activity>
+
+<activity xml:id="activity-linear-approx-overestimate">
+    <introduction><p>
+  Using the equation of the tangent line to the graph of <m>\ln(x)</m> at <m>x=1</m> and the shape of this graph, you can show that for all values of <m>x</m>, we have that
+<m>\ln(x) \leq x-1</m>.</p>
+    </introduction>
+    <task><p>
+Compute the second derivative of <m>\ln(x)</m>. What do you notice about the sign of the second derivative of <m>\ln(x)</m>? What does this tell you about the shape of the graph?
+</p></task>
+    <task><p>
+Conclude that because the graph of <m>\ln(x)</m> has a certain shape, the graph will bend below the tangent line and so that <m>\ln(x)</m> will always be smaller than the tangent line approximation <m>L(x)= x -1 </m>.
+</p></task>
+</activity>
+
+    <activity xml:id="activity-linear-approx-power-functions">
+<!--  Approximating powers -->
+        <introduction><p>In this activity you will approximate power functions near <m>x=1</m>.</p></introduction>
+<task> <p>
+Find the tangent line approximation to <m>x^2</m> at  <m>x=1</m>.</p>
+    <ol marker="A." cols="2">
+                <li><p>  <m>L(x) = 2x</m> </p></li>
+                  <li><p>  <m>L(x) = 2x+1</m></p></li> 
+                  <li><p>  <m>L(x)= 2x - 1</m> </p></li>     
+       <li><p>  <m>L(x)= -2x + 1</m> </p></li>               
+    </ol>      
+ </task>
+<task> <p>Show that for any constant <m>k</m>, the tangent line approximation to <m>x^k</m> at <m>x=1</m> is <m>L(x) = k(x -1) + 1</m>. </p> </task>
+<task> <p> Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not? </p> </task>
+<task> <p>  Is the actual value <m>\sqrt{1.1}</m> above or below 1.05? What feature of the graph of <m>\sqrt{x}</m> makes this an over or under estimate? </p> </task>
+ 
+        </activity>
+
+<remark xml:id="rmk-linear-approx-concavity"><p>
+If a function <m>f(x)</m> is <em>concave up</em> around <m>x=a</m>, then the function is turning upwards from its tangent line. So when we use a linear approximation, the value of the approximation will be below the actual value of the function and the approximation is an underestimate. If a function <m>f(x)</m> is <em>concave down</em> around <m>x=a</m>, then the function is turning downwards from its tangent line. So when we use a linear approximation, the value of the approximation will be above the actual value of the function and the approximation is an overestimate.
+</p></remark>
+    
+<activity xml:id="activity-linear-approx-differentials">
+<p> Suppose <m>f</m> has a continuous positive second derivative and <m>\Delta x</m> is a small increment in <m>x</m> (like <m>h</m> in the limit definition of the derivative).
+ Which one is larger...
+   </p>
+   <me>f(1 + \Delta x ) \quad \text{or} \quad  f'(1) \Delta x + f(1) \quad? </me>
+    </activity>
+
+
+    <activity xml:id="activity-linear-approx1">
+    <statement>
+        <p>
+A certain function <m>p(x)</m> satisfies
+<m>p(7) = 49</m> and <m>p'(7) = 8</m>.
+            <ol>
+                <li>
+                    <p>
+Explain how to find the local linearization <m>L(x)</m>
+of <m>p(x)</m> at <m>7</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Explain how to estimate the value of <m>p(6.951)</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Suppose that <m>p'(7)=0</m> and you know that
+<m>p''(x) &lt; 0</m> for <m>x &lt; 7</m>.
+Explain how to determine if your estimate of <m>p(6.951)</m>
+is too large or too small.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Suppose that <m>p''(x) &gt; 0</m> for <m>x &gt; 7</m>.
+Use this fact and the additional information above to sketch an accurate
+graph of <m>y=p(x)</m> near <m>x=7</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+ <answer>
+        <ol>
+            <li><p><m>L(x)=8 \, x - 7</m></p></li>
+            <li><p><m>p(6.951) \approx 48.6064</m></p></li>
+            <li><p>The estimate is too large.</p></li>
+        </ol>
+    </answer> 
+</activity>
+ 
+<activity xml:id="activity-quad-approx1">
+<!--   Better approximations   -->
+<introduction> <p>
+         Let's find the quadratic polynomial </p>
+<me> q(x) = ax^2 +bx +c </me>
+    <p> where <m>a,b,c</m> are parameters to be determined so that <m>q(x)</m> best approximates the graph of <m>f(x)=\ln(x)</m> at <m>x=1</m>. 
+    </p>
+    </introduction>
+    <task><p>We want to choose <m>a,b,c</m> such that our quadratic polynomial resembles <m>f(x)</m> at <m>x=1</m>. First thing, we want <m>f(1)=q(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p> 
+      <ol marker="A." cols="2">
+                <li><p>  <m>a+b+c = 1</m> </p></li>
+                  <li><p>  <m>a+b+c = 0</m></p></li> 
+                  <li><p>  <m>c = 0</m> </p></li>     
+       <li><p>  <m>c = 1</m> </p></li>               
+    </ol>      
+    </task>
+    <task><p>We also want <m>f'(1)=q'(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p></task>
+       <task><p>Finally, we want <m>f''(1)=q''(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p></task>
+    <task><p>Find a solution to this system of linear equations! Your answer will give you values of <m>a,b,c</m> that can be used to draw a quadratic approximating the natural logarithm. You can check your answer on Desmos <url href = "https://www.desmos.com/calculator/bad2xrwmvl"/> </p></task>
+</activity>
+
+
+<observation xml:id="obs-poly-approx">
+    <p>    A linear approximation <m>L(x)</m> to <m>f(x)</m> at <m>x=a</m> is a linear function with </p>
+<me> L(a) = f(a), \quad L'(a) = f'(a). </me>
+<p> A quadratic approximation <m>Q(x)</m> to <m>f(x)</m> at <m>x=a</m> is a quadratic function with </p>
+<me> Q(a) = f(a), \quad Q'(a) = f'(a), \quad Q''(a) = f''(a) .</me>
+    </observation>
+    
+    <activity xml:id="activity-quad-approx2"> <p>  Find the linear approximation <m>L(x)</m> of <m>\cos(x)</m> at <m>x=0</m>. Then find the quadratic approximation <m>Q(x)</m> of <m>\cos(x)</m> at <m>x=0</m>. Graph both and compare the two approximations! </p>
+    </activity>
+    
+<activity xml:id="linear-approx-fluency-checkit">
+    <introduction>
+        <p>
+Suppose the function <m>p(x)</m> satisfies
+<m>p(-2) = 5</m>, <m>p'(-2) = 1</m>,
+and <m>p''(x) &lt; 0</m> for <m>x</m>
+            values nearby <m>-2</m>.</p></introduction>
+       
+                <task>
+                    <p>
+Explain and demonstrate
+how to find the linearization <m>L(x)</m>
+of <m>p(x)</m> at <m>x =-2</m>.
+                    </p>
+                </task>
+                <task>
+                    <p>
+Explain and demonstrate
+how to estimate the value of <m>p(-2.03)</m> using
+this linearization.
+                    </p>
+                </task>
+                <task>
+                    <p>
+Explain why your estimate of
+<m>p(-2.03)</m>
+is greater than or less than the actual value.
+                    </p>
+                </task>
+                <task>
+                    <p>
+Sketch a possible graph of <m>p(x)</m> and its linearization <m>L(x)</m> nearby <m>x =-2</m>
+to illustrate your findings.
+                    </p>
+                </task>
+           
+  <!--  <answer>
+        <ol>
+            <li>
+                <p>
+<m>L(x)=x + 7</m>
+                </p>
+            </li>
+            <li>
+                <p>
+<m>p(-2.03) \approx 4.97</m>
+                </p>
+            </li>
+            <li>
+                <p>
+The estimate is greater than the actual value.
+                </p>
+            </li>
+        </ol>
+    </answer>-->
+
+</activity>    
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AD2" youtube="SOLt2jmdKuA"/>
+            <caption>Video for AD2</caption>
+        </figure>
+    </subsection>
+  
+</section>

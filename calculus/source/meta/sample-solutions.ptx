@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appendix xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sample-solutions.ptx">
+  <title>Sample Solutions</title>
+
+  <example>
+    <title>LT1</title>
+    <statement>
+      <p>
+        Sketch the graph of a function \(f(x)\) that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph. 
+        <ul>
+          <li>
+            <p>
+  \(f(x)\) has a vertical asymptote at \(2\), but \(\displaystyle\lim_{x\to 2^+} f(x)\) is finite.
+            </p>
+          </li>
+          <li>
+            <p>
+              \(\displaystyle\lim_{x\to 0} f(x)=-4\), but \(f(0)=-3\).
+            </p>
+          </li>
+          <li>
+            <p>
+              \(\displaystyle\lim_{x\to 6^-} f(x)=2\) and \(\displaystyle\lim_{x\to 6^+} f(x)=4\).
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Answers vary. Here are some things to check for:
+        <ul>
+          <li>
+            <p>
+              The graph should have a vertical asymptote at \(x=2\). As the function approaches the vertical asymptote from the left, the function outputs should grow infinitely large in magnitude (either in the postive or negative \(y\)-direction). As the function approaches the vertical asymptote from the right, the function should bump straight into the vertical asymptote.
+            </p>
+          </li>
+          <li>
+            <p>
+              The graph should approach the point \((0,-4)\), but there should be a removable discontinuity (hole) in the graph right at that point (indicated by an open circle). The actual value of the function at \(x=0\) should be \(-3\), so the point \((0,-3)\) should be included on the graph.
+            </p>
+          </li>
+          <li>
+            <p>
+              There is a jump discontinuity at \(x=6\) with the graph approaching the point \((6,2)\) as \(x\) approaches \(6\) from the left and approaching the point \((6,4)\) as \(x\) approaches \(6\) from the right.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </solution>
+  </example>
+
+</appendix>

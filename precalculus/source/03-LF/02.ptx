@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="LF2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Equations of Lines (LF2) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/02.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    
+    <activity xml:id="activity-need-y">
+      <introduction>
+        <p>
+          Consider the graph of two lines.
+          <image>
+            <sageplot>
+              p=plot(2*x+3,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=plot(2*x-2,(x,-5,5),thickness=3, color='red')
+              p+=text('line A', (-1, 4), fontsize=18, color='black')
+              p+=text('line B', (1, -2), fontsize=18, color='black')
+              p
+            </sageplot>
+          </image>
+        </p>
+        </introduction>
+  <task>
+  <statement>
+    
+    <p> Find the slope of line A.
+      <ol marker="A." cols="2">
+        <li><p><m>1</m> </p></li>
+        <li><p> <m>2</m> </p></li>
+        <li><p> <m>\frac{1}{2} </m> </p></li>
+        <li><p> <m>-2</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice B: slope is 2
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    
+    <p> Find the slope of line B.
+      <ol marker="A." cols="2">
+        <li><p>1 </p></li>
+        <li><p> 2 </p></li>
+        <li><p> <m>\frac{1}{2} </m> </p></li>
+        <li><p> <m>-2</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice B: slope is 2
+    </p>
+  </answer>
+</task>
+
+<task>
+  <statement>
+    
+    <p> Find the <m>y</m>-intercept of line A.
+      <ol marker="A." cols="2">
+        <li><p> <m>-2</m> </p></li>
+        <li><p> <m>-1.5</m> </p></li>
+        <li><p> <m>1 </m> </p></li>
+        <li><p> <m>3</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice D: <m>y</m>-intercept is 3
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    
+    <p> Find the <m>y</m>-intercept of line B.
+      <ol marker="A." cols="2">
+        <li><p> <m>-2</m> </p></li>
+        <li><p> <m>-1.5</m> </p></li>
+        <li><p> <m>1 </m> </p></li>
+        <li><p> <m>3</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice A: <m>y</m>-intercept is <m>-2</m>
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      What is the same about the two lines?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What is different about the two lines?
+    </p>
+  </statement>
+</task>
+
+</activity>
+
+<remark>
+  <p>
+    Notice that in <xref ref="activity-need-y"/> the lines have the same slope but different <m>y</m>-intercepts.  It is not enough to just know one piece of information to determine a line, you need both a slope and a point.
+  </p>
+</remark>
+
+<definition xml:id="def-slope-intercept">
+  <statement>
+    <p>
+      Linear functions can be written in <term>slope-intercept form</term> 
+      <me>f(x)=mx+b</me>
+      where <m>b</m> is the <m>y</m>-intercept (or starting value) and <m>m</m> is the slope (or constant rate of change).
+    </p>
+  </statement>
+</definition>
+
+<activity xml:id="activity-slope-int-form">
+  <introduction>
+    <p>
+      Write the equation of each line in slope-intercept form.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <image>
+            <sageplot>
+              p=plot(-1/3*x+1,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p
+            </sageplot>
+          </image>
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y= -3x+1</m> </p></li>
+        <li><p> <m>y= -x+3</m> </p></li>
+        <li><p> <m>y= -\frac{1}{3}x+1</m> </p></li>
+        <li><p> <m>y= -\frac{1}{3}x+3</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice C: <m>y=-\frac{1}{3}x+1</m> (A has wrong slope, B has wrong everything, D has wrong y-intercept)
+    </p>
+  </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          The slope is <m>4</m> and the <m>y</m>-intercept is <m>(0,-3)</m>.
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>f(x)= 4x-3</m> </p></li>
+        <li><p> <m>f(x)= 3x-4</m> </p></li>
+        <li><p> <m>f(x)= -4x+3</m> </p></li>
+        <li><p> <m>f(x)= 4x+3</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice A: <m>y=4x-3</m> (B has wrong slope, C has wrong everything, D has wrong y-intercept)
+    </p>
+  </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Two points on the line are <m> (0,1)</m> and <m>(2,4)</m>.
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y= 2x+1</m> </p></li>
+        <li><p> <m>y= -\frac{3}{2}x+4</m> </p></li>
+        <li><p> <m>y= \frac{3}{2}x+1</m> </p></li>
+        <li><p> <m>y= \frac{3}{2}x+4</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice C: <m>y=\frac{3}{2}x+1</m> 
+    </p>
+  </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+         
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell><m>x</m></cell> 
+                <cell><m>f(x)</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>
+                <cell><m>-8</m></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>-2</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>1</m></cell>
+              </row>
+              <row>
+                <cell><m>4</m></cell>
+                <cell><m>10</m></cell>
+              </row>
+              
+            </tabular>
+         
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>f(x)= -3x-2</m> </p></li>
+        <li><p> <m>f(x)= -\frac{1}{3}x-2</m> </p></li>
+        <li><p> <m>f(x)= 3x+1</m> </p></li>
+        <li><p> <m>f(x)= 3x-2</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice D: <m>f(x)=3x-2</m> 
+    </p>
+  </answer>
+    </task>
+  
+</activity>
+<activity xml:id="activity-2-points">
+  <introduction>
+    <p>
+      Let's try to write the equation of a line given two points that don't include the <m>y</m>-intercept.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Plot the points <m>(2,1)</m> and <m>(-3,4)</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find the slope of the line joining the points.
+        </p>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p> <m>-\frac{5}{3}</m> </p></li>
+            <li><p> <m>-\frac{3}{5}</m> </p></li>
+            <li><p> <m>\frac{3}{5}</m> </p></li>
+            <li><p> <m>-3</m> </p></li>
+        </ol> </p>
+      </statement>
+      <answer>
+        <p>
+          Choice B: <m>\frac{4-1}{-3-2}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          When you draw a line connecting the two points, it's often hard to draw an accurate enough graph to determine the <m>y</m>-intercept of the line exactly.  Let's use the slope-intercept form and one of the given points to solve for the <m>y</m>-intercept. Try using the slope and one of the points on the line to solve the equation <m>y=mx+b</m> for <m>b</m>.
+        </p>
+      <p>
+        <ol marker="A." cols="2">
+          <li><p> <m>2</m> </p></li>
+          <li><p> <m>\frac{11}{5}</m> </p></li>
+          <li><p> <m>\frac{5}{2}</m> </p></li>
+          <li><p> <m>3</m> </p></li>
+      </ol> </p>
+    </statement>
+    <answer>
+      <p>
+        Choice B:
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Write the equation of the line in slope-intercept form.
+        </p>
+      </statement>
+    </task>
+</activity>
+<remark>
+  It would be nice if there was another form of the equation of a line that works for any points and does not require the <m>y</m>-intercept.
+</remark>
+<definition xml:id="def-point-slope">
+  <statement>
+    <p>
+      Linear functions can be written in <term>point-slope form</term> 
+      <me>y-y_0=m(x-x_0)</me>
+      where <m>(x_0, y_0)</m> is any point on the line and <m>m</m> is the slope.
+    </p>
+  </statement>
+</definition>
+
+<activity xml:id="activity-point-slope-form">
+  <introduction>
+    <p>
+      Write an equation of each line in point-slope form.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <image>
+            <sageplot>
+              p=plot(1/3*x+2/3,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((1,1),pointsize=50,color='blue')
+              p+=point((-2,0),pointsize=50,color='blue')
+              p
+            </sageplot>
+          </image>
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y= \frac{1}{3}x+\frac{2}{3}</m> </p></li>
+        <li><p> <m>y-1= 3(x-1)</m> </p></li>
+        <li><p> <m>y-1= \frac{1}{3}(x-1)</m> </p></li>
+        <li><p> <m>y+2= \frac{1}{3}(x+2)</m> </p></li>
+        <li><p> <m>y= \frac{1}{3}(x+2)</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice C or E
+    </p>
+  </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          The slope is 4 and <m>(-1,-7)</m> is a point on the line.
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y+7= 4(x+1)</m> </p></li>
+        <li><p> <m>y-7= 4(x-1)</m> </p></li>
+        <li><p> <m>y+1= 4(x+7)</m> </p></li>
+        <li><p> <m>y-4= 7(x-1)</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice A
+    </p>
+  </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Two points on the line are <m> (1,0)</m> and <m>(2,-4)</m>.
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y= -4x+1</m> </p></li>
+        <li><p> <m>y-0=-2(x-1) </m> </p></li>
+        <li><p> <m>y+4=-4(x-2)</m> </p></li>
+        <li><p> <m>y+4=-3(x-2)</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice C: 
+    </p>
+  </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+         
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell><m>x</m></cell> 
+                <cell><m>f(x)</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>
+                <cell><m>-8</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>1</m></cell>
+              </row>
+              <row>
+                <cell><m>4</m></cell>
+                <cell><m>10</m></cell>
+              </row>
+              
+            </tabular>
+         
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y+8= 3(x-2)</m> </p></li>
+        <li><p> <m>y-1= -\frac{1}{3}(x-1)</m> </p></li>
+        <li><p> <m>y+8= -\frac{1}{3}(x+2)</m> </p></li>
+        <li><p> <m>y-10= 3(x-4)</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice D
+    </p>
+  </answer>
+    </task>
+  
+</activity>
+
+<activity xml:id="activity-2-points-revisit">
+  <introduction>
+    <p>
+      Consider again the two points from <xref ref="activity-2-points"/>, <m>(2,1)</m> and <m>(-3,4)</m>.
+      </p>
+    </introduction>
+    
+    
+    <task>
+      <statement>
+        <p>
+          Use point-slope form to find an equation of the line.
+        </p>
+      <p>
+        <ol marker="A." cols="1">
+          <li><p> <m>y=-\frac{3}{5}x+\frac{11}{5}</m> </p></li>
+          <li><p> <m>y-1=-\frac{3}{5}(x-2)</m> </p></li>
+          <li><p> <m>y-4 =-\frac{3}{5}(x+3)</m> </p></li>
+          <li><p> <m>y-2=-\frac{3}{5}(x-1) </m> </p></li>
+      </ol> </p>
+    </statement>
+    <answer>
+      <p>
+        Choice B or C
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Solve the point-slope form of the equation for <m>y</m> to rewrite the equation in slope-intercept form. Identify the slope and intercept of the line.
+        </p>
+      </statement>
+    </task>
+</activity>
+<remark>
+  Notice that it was possible to use either point to find an equation of the line in point-slope form.  But, when rewritten in slope-intercept form the equation is unique.
+</remark>
+
+<activity xml:id="activity-line-eq">
+  <introduction>
+    <p>
+      For each of the following lines, determine which form (point-slope or slope-intercept) would be "easier" and why.  Then, write the equation of each line.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <image>
+            <sageplot>
+              p=plot(3/4*x+2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-6,ymax=6, color='blue', gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p+=point((-4,-1),pointsize=50,color='blue')
+              p+=point((4,5),pointsize=50,color='blue')
+              p
+            </sageplot>
+          </image>
+        </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Slope-intercept: <m>y=\frac{3}{4}x+2</m>
+    </p>
+  </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          The slope is <m>-\frac{1}{2}</m> and <m>(1,-3)</m> is a point on the line.
+        </p>
+        
+  </statement>
+  <answer>
+    <p>
+      Point-slope: <m>y+3=-\frac{1}{2}(x-1)</m>
+    </p>
+  </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Two points on the line are <m> (0,3)</m> and <m>(2,0)</m>.
+        </p>
+       
+  </statement>
+  <answer>
+    <p>
+      Slope-intercept: <m>y=-\frac{3}{2}x+3</m> 
+    </p>
+  </answer>
+    </task>
+</activity>
+
+<remark>
+  It is always possible to use both forms to write the equation of a line and they are both valid. Although, sometimes the given information lends itself to make one form easier.
+</remark>
+
+<activity xml:id="activity-hor-vert">
+  <introduction>
+    <p>
+      Write the equation of each line.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          The slope is 0 and <m>(-1,-7)</m> is a point on the line.
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y=-7</m> </p></li>
+        <li><p> <m>y=7x</m> </p></li>
+        <li><p> <m>y=-x</m> </p></li>
+        <li><p> <m>x=-1</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice A
+    </p>
+  </answer>
+</task>
+  <task>
+      <statement>
+        <p>
+          Two points on the line are <m> (3,0)</m> and <m>(3,5)</m>.
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>y=3x+3</m> </p></li>
+        <li><p> <m>y=3x+5 </m> </p></li>
+        <li><p> <m>x=3</m> </p></li>
+        <li><p> <m>y=3</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice C
+    </p>
+  </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          <image>
+            <sageplot>
+              p=plot(-2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]],color='blue')
+              p
+            </sageplot>
+          </image>
+        </p>
+        <p>
+      <ol marker="A." cols="1">
+        <li><p> <m>x=-2 </m> </p></li>
+        <li><p> <m>y-2=x</m> </p></li>
+        <li><p> <m>y=-2x-2</m> </p></li>
+        <li><p> <m>y=-2</m> </p></li>
+    </ol> </p>
+    
+  </statement>
+  <answer>
+    <p>
+      Choice D
+    </p>
+  </answer>
+    </task>
+      
+</activity>
+
+<definition xml:id="def-hor-vert-lines">
+  <statement>
+    <p>
+      A <term>horizontal line</term> has a slope of zero and has the form <m>y=k</m> where <m>k</m> is a constant. A <term>vertical line</term> has an undefined slope and has the form <m>x=h</m> where <m>h</m> is a constant.
+    </p>
+  </statement>
+</definition>
+<definition xml:id="standard-form-line">
+  <statement>
+    <p>
+      The equation of a line can also be written in <term>standard form</term>.  Standard form looks like <m>Ax+By=C</m>.  
+    </p>
+  </statement>
+</definition>
+<remark>
+  It is possible to rearrange a line written in standard form to slope-intercept form, by solving for <m>y</m>.
+</remark>
+<activity xml:id="act-standard-form">
+    <statement>
+      <p>
+        Given a line in standard form 
+        <me>5x+4y=2.</me>
+        Find the slope and <m>y</m>-intercept of the line.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Slope: <m>-\frac{5}{4}</m> <m>y</m>-intercept: <m>\frac{2}{5}</m>
+      </p>
+    </answer>
+</activity>
+
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

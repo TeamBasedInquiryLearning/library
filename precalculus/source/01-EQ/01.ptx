@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EQ1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Linear Equations and Inequalities (EQ1) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/01.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    
+<remark>
+  Recall that when solving a linear equation, you use addition, subtraction, multiplication and division to isolate the variable.
+</remark>
+<activity>
+  <introduction>
+    <p>Solve the linear equations.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> <m>3x-8=5x+2</m>
+      <ol marker="A." cols="2">
+        <li><p><m>x=2</m> </p></li>
+        <li><p> <m>x=5</m> </p></li>
+        <li><p> <m>x=-5</m> </p></li>
+        <li><p> <m>x=-2</m></p></li>
+    </ol> </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p> <m>5(3x-4)=2x-(x+3)</m>   
+      <ol marker="A." cols="2">
+        <li><p><m>x=\frac{17}{14}</m> </p></li>
+        <li><p> <m>x=\frac{14}{17}</m> </p></li>
+        <li><p> <m>x=\frac{23}{14}</m> </p></li>
+        <li><p> <m>x=\frac{14}{23}</m></p></li>
+    </ol> </p>
+    </statement>
+  </task>
+</activity>
+<activity>
+  <introduction>
+    <p>Solve the linear equation.
+      <me>\frac{2}{3}x-8=\frac{5x+1}{6}</me>
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> Which equation is equivalent to  <m>\frac{2}{3}x-8=\frac{5x+1}{6}</m> but does not contain any fractions?    
+        <ol marker="A." cols="2">
+          <li><p><m>12x-48=15x+3</m> </p></li>
+          <li><p> <m>3x-24=10x+2</m> </p></li>
+          <li><p> <m>4x-8=5x+1</m> </p></li>
+          <li><p> <m>4x-48=5x+1</m></p></li>
+      </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Use the simplified equation from part (a) to solve <m>\frac{2}{3}x-8=\frac{5x+1}{6}</m>.    
+        <ol marker="A." cols="2">
+          <li><p><m>x=-17</m> </p></li>
+          <li><p> <m>x=-\frac{26}{7}</m> </p></li>
+          <li><p> <m>x=-9</m> </p></li>
+          <li><p> <m>x=-49</m></p></li>
+      </ol> </p>
+    </statement>
+  </task>
+</activity>
+<activity>
+  <introduction>
+    <p>It is not always the case that a linear equation has exactly one solution.  Consider the following linear equations which appear similar, but their solutions are very different.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> Which of these equations has one unique solution?
+      <ol marker="A." cols="2">
+        <li><p><m>4(x-2)=4x+6</m> </p></li>
+        <li><p> <m>4(x-1)=4x+4</m> </p></li>
+        <li><p> <m>4(x-1)=x+4</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Which of these equations has no solutions?
+      <ol marker="A." cols="2">
+        <li><p><m>4(x-2)=4x+6</m> </p></li>
+        <li><p> <m>4(x-1)=4x+4</m> </p></li>
+        <li><p> <m>4(x-1)=x+4</m> </p></li>
+    </ol> </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Which of these equations has many solutions?
+      <ol marker="A." cols="2">
+        <li><p><m>4(x-2)=4x+6</m> </p></li>
+        <li><p> <m>4(x-1)=4x+4</m> </p></li>
+        <li><p> <m>4(x-1)=x+4</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What happens to the <m>x</m> variable when a linear equation has no solution or many solutions?
+      </p>
+    </statement>
+  </task>
+</activity>
+<definition>
+  A linear equation with one unique solution is a <term>conditional equation.</term> A linear equation that is true for all values of the variable is an <term>identity equation</term>. A linear equation with no solutions is an <term>inconsistent equation.</term>
+</definition>
+<activity>
+  <introduction>
+    <p>
+      An inequality is a relationship between two values that are not equal.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> What is the solution to the linear equation <m>3x-1=5</m>?</p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Which of these values is a solution of the inequality <m>3x-1 \ge 5</m>?
+      <ol marker="A." cols="2">
+        <li><p><m>x=0</m> </p></li>
+        <li><p> <m>x=2</m> </p></li>
+        <li><p> <m>x=4</m> </p></li>
+        <li><p> <m>x=10</m> </p></li>
+    </ol> </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Express the solution of the inequality <m>3x-1 \ge 5</m> in interval notation.
+      <ol marker="A." cols="2">
+        <li><p> <m>(-\infty, 2]</m> </p></li>
+        <li><p><m>(-\infty, 2)</m> </p></li>
+        <li><p> <m>(2,\infty) </m></p></li>
+        <li><p> <m>[2,\infty)</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Draw the solution to the inequality on a number line. 
+      <ol marker="A." cols="1">
+        <li><p> 
+          <image>
+              <latex-image>
+                \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
+    \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
+\end{tikzpicture}
+              </latex-image>
+          </image>
+      </p></li>
+      <li><p> 
+        <image>
+            <latex-image>
+              \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{-)}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </p></li>
+    <li><p> 
+      <image>
+          <latex-image>
+            \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
+\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{(-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+\end{tikzpicture}
+          </latex-image>
+      </image>
+  </p></li>
+  <li><p> 
+    <image>
+        <latex-image>
+          \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
+\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+\end{tikzpicture}
+        </latex-image>
+    </image>
+</p></li>
+    </ol> </p>
+  
+  </statement>
+  </task>
+</activity>
+<activity>
+  <introduction>
+    <p>
+      Let's consider what happens to the inequality when the variable has a negative coefficient.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p> Which of these values is a solution of the inequality <m>-x\lt 8</m>?
+      <ol marker="A." cols="2">
+        <li><p> <m>x=-10</m> </p></li>
+        <li><p><m>x=-8</m> </p></li>
+        <li><p> <m>x=4</m> </p></li>
+        <li><p> <m>x=10</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Solve the linear inequality <m>-x\lt 8</m>.  How does your solution compare to the values chosen in part (a)?
+     </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Expression the solution of the inequality <m>-x\lt 8</m> in interval notation.
+      <ol marker="A." cols="2">
+        <li><p><m>(-\infty,-8]</m> </p></li>
+        <li><p> <m>(-\infty,-8)</m> </p></li>
+        <li><p> <m>(-8, \infty)</m> </p></li>
+        <li><p> <m>[-8,\infty)</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Draw the solution to the inequality on a number line. 
+    <ol marker="A." cols="1">
+      <li><p> 
+        <image>
+            <latex-image>
+              \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </p></li>
+    <li><p> 
+      <image>
+          <latex-image>
+            \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{-)}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
+\end{tikzpicture}
+          </latex-image>
+      </image>
+  </p></li>
+  <li><p> 
+    <image>
+        <latex-image>
+          \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{(-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+\end{tikzpicture}
+        </latex-image>
+    </image>
+</p></li>
+<li><p> 
+  <image>
+      <latex-image>
+        \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.1,0);
+\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+\end{tikzpicture}
+</latex-image>
+</image>
+</p></li>
+</ol> </p>
+
+</statement>
+</task>
+</activity>
+<remark>
+  
+  You can treat solving linear inequalities, just like solving an equation.  The one exception is when you multiply or divide by a negative value, reverse the inequality symbol.
+</remark>
+<activity>
+  <introduction>
+    <p>Solve the following inequalities.  Express your solution in interval notation and graphically on a number line.
+    </p>
+  </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>-3x-1 \le 5</m>
+        </p>
+    </statement>
+    </task>
+    <task>
+      <statement>
+      <p>
+        <m>3(x+4) \gt 2x-1</m>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+    <p>
+      <m>-\frac{1}{2}x \ge -\frac{2}{4}+\frac{5}{4}x</m>
+    </p>
+  </statement>
+</task>
+  
+</activity>
+<definition xml:id="def-compound_ineq">
+  <statement>
+    <p>
+      A <term>compound inequality</term> includes multiple inequalities in one statement.
+    </p>
+  </statement>
+</definition>
+<activity>
+  
+  <introduction>
+    <p>Consider the statement <m>3 \le x \lt 8</m>. This really means that <m>3 \le x</m> and <m>x \lt 8</m>.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p>
+      Which of the following inequalities are equivalent to the compound inequality <m>3 \le 2x-3 \lt 8 </m>?
+      <ol marker="A." cols="2">
+        <li><p> <m>3 \le 2x-3</m> </p></li>
+        <li><p><m>3 \ge 2x-3</m> </p></li>
+        <li><p> <m>2x-3 \lt 8</m> </p></li>
+        <li><p> <m>2x-3 \gt 8</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Solve the inequality <m>3 \le 2x-3</m>.
+      <ol marker="A." cols="2">
+        <li><p> <m>x \le 0</m> </p></li>
+        <li><p><m>x \ge 0</m> </p></li>
+        <li><p> <m>x \le 3</m> </p></li>
+        <li><p> <m>x \ge 3</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Solve the inequality <m>2x-3 \lt 8</m>.
+      <ol marker="A." cols="2">
+        <li><p> <m>x \gt \frac{11}{2}</m> </p></li>
+        <li><p><m>x \lt \frac{11}{2}</m> </p></li>
+        <li><p> <m>x \gt \frac{5}{2}</m> </p></li>
+        <li><p> <m>x \lt \frac{5}{2}</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p> Which compound inequality describes how the two solutions overlap?
+      <ol marker="A." cols="2">
+        <li><p> <m>0 \le x \lt \frac{11}{2}</m> </p></li>
+        <li><p><m>0 \le x \lt \frac{5}{2}
+        </m> </p></li>
+        <li><p> <m>\frac{5}{2} \lt x \le 3</m> </p></li>
+        <li><p> <m>3 \le x \lt \frac{11}{2}</m> </p></li>
+    </ol> </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Draw the solution to the inequality on a number line. 
+    <ol marker="A." cols="1">
+      <li><p> 
+        <image>
+            <latex-image>
+              \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.3,0);
+\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{[-}, ultra thick, blue] (-0.01,0) -- (0,0);
+\draw[{-)}, ultra thick, blue] (1.09,0) -- (1.1,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0,.16ex) -- cycle;
+\end{tikzpicture}
+            </latex-image>
+        </image>
+    </p></li>
+    <li><p> 
+      <image>
+          <latex-image>
+            \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.3,0);
+\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+  \draw[{[-}, ultra thick, blue] (-0.01,0) -- (0,0);
+  \draw[{-)}, ultra thick, blue] (.49,0) -- (.5,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0,-.16ex) -- (0.5, -.16ex) -- (0.5, .16ex) -- (0,.16ex) -- cycle;
+\end{tikzpicture}
+          </latex-image>
+      </image>
+  </p></li>
+  <li><p> 
+    <image>
+        <latex-image>
+          \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.3,0);
+\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+\draw[{(-}, ultra thick, blue] (0.29,0) -- (0.3,0);
+\draw[{-]}, ultra thick, blue] (0.39,0) -- (0.4,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.3,-.16ex) -- (0.4, -.16ex) -- (0.4, .16ex) -- (0.3,.16ex) -- cycle;
+\end{tikzpicture}
+        </latex-image>
+    </image>
+</p></li>
+<li><p> 
+  <image>
+      <latex-image>
+        \begin{tikzpicture}[scale=7]
+\draw[->, thick] (-0.1,0) -- (1.3,0);
+\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
+  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+  \draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
+  \draw[{-)}, ultra thick, blue] (1.09,0) -- (1.1,0);
+\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
+\end{tikzpicture}
+</latex-image>
+</image>
+</p></li>
+</ol> </p>
+
+</statement>
+</task>
+  
+</activity>
+<remark>
+  Solving a compound linear inequality, uses the same methods as a single linear inequality ensuring that you perform the same operations on all three parts. Alternatively, you can break the compound inquality up into two and solve separately.
+</remark>
+<activity>
+  <introduction>
+    <p>
+      Solve the following inequalities. Express your solution in interval notation and graphically on a number line.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        <m>8 \lt -3x-1 \le 11</m>
+      </p>
+  </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        <m> -6 \le \frac{x-12}{4} \lt -2</m>
+      </p>
+  </statement>
+  </task>
+</activity>
+
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection>
+</section>

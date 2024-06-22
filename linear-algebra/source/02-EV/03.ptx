@@ -1,0 +1,938 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section xml:id="EV3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Subspaces (EV3)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/03.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+    <subsection>
+        <title>Warm Up</title>
+        <activity>
+            <introduction>
+                <p>
+                    Consider the linear equation <me>x+2y+z=0.</me>
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Verify that both <m>\vec{v}=\left[\begin{array}{c}1\\-1\\1\end{array}\right]</m> and <m>\vec{w}=\left[\begin{array}{c}1\\0\\-1\end{array}\right]</m> are solutions.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Is the vector <m>2\vec{v}-3\vec{w}</m> also a solution?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+        </subsection>
+
+
+<subsection><title>Class Activities</title>
+
+    <observation>
+        <p>
+            Recall that if <m>S=\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> is subset of vectors in <m>\IR^n</m>, then <m>\vspan(S)</m> is the set of all linear combinations of vectors in <m>S</m>.
+            In EV2 (<xref ref="EV2"/>), we learned how to decide whether <m>\vspan(S)</m> was equal to all of <m>\IR^n</m> or something strictly smaller. 
+        </p>
+    </observation>
+    <activity>
+        <statement>
+            <p>
+        Let <m>S</m> denote a set of vectors in <m>\IR^n</m> and suppose that <m>\vec{u},\vec{v}\in\vspan(S)</m>, 
+        <m>c\in\IR</m> and that <m>\vec{w}\in\IR^n</m>. Which of the following vectors might
+        <em>not</em> belong to <m>\vspan(S)</m>?
+        <ol marker="A.">
+          <li><m>\vec{0}</m></li>
+          <li><m>\vec{u}+\vec{w}</m></li>
+          <li><m>\vec{u}+\vec{v}</m></li>
+          <li><m>c\vec{u}</m></li>
+        </ol>
+            </p>
+        </statement>
+    </activity>
+
+    <definition>
+        <statement>
+        <p>
+    A <term>homogeneous</term><idx>homogeneous</idx> system of linear equations is one of the form:
+      <md alignat-columns='5' alignment="alignat">
+          <mrow>
+        a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 
+          </mrow>
+          <mrow>
+        a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 
+    </mrow>
+    <mrow>
+         \vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots
+    </mrow>
+    <mrow>
+        a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
+          </mrow>
+      </md>
+            </p>
+            <p>
+      This system is equivalent to the vector equation:
+      <me>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</me>
+      and the augmented matrix:
+      <me>
+        \left[\begin{array}{cccc|c}
+          a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
+          a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
+          \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
+          a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
+        \end{array}\right]
+      </me>
+        </p>
+        </statement>
+    </definition>
+    
+    <activity estimated-time='5'>
+        <introduction>
+            <p>
+    Consider the homogeneous vector equation <m>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</m>.<abbr></abbr>
+            </p>
+        </introduction>
+        <task>
+            <p>
+        Is this equation consistent?
+                </p>
+        <ol marker="A.">
+        <li>
+            <p>
+                no.
+            </p>
+          </li>
+        <li>
+            <p>
+                yes.
+            </p>
+          </li>
+          <li>
+              <p>
+                  more information is required.
+              </p>
+            </li>
+        </ol>
+            </task>
+        <task>
+        <p>
+    Note that if <m>\left[\begin{array}{c} a_1 \\ \vdots \\ a_n \end{array}\right] </m> and
+    <m>\left[\begin{array}{c} b_1 \\ \vdots \\ b_n \end{array}\right] </m> are both solutions,
+    we know that
+    <me>a_1 \vec{v}_1+\cdots+a_n \vec{v}_n = \vec{0}
+    \text{ and }
+    b_1 \vec{v}_1+\cdots+b_n \vec{v}_n = \vec{0} </me>.
+    Therefore by adding these equations:
+    <me>(a_1 + b_1) \vec{v}_1+\cdots+(a_n+b_n) \vec{v}_n = \vec{0},</me>
+            </p>
+        <p>
+    we may conclude that the vector <m>\left[\begin{array}{c} a_1+ b_1 \\ \vdots \\ a_n+b_n \end{array}\right] </m> 
+    is...
+        </p>
+    <ol marker="A.">
+    <li>
+        <p>
+            another solution.
+        </p>
+      </li>
+    <li>
+        <p>
+            not a solution.
+        </p>
+      </li>
+      <li>
+          <p>
+              is equal to <m>\vec{0}</m>.
+          </p>
+        </li>
+    </ol>
+        </task>
+        <task>
+        <p>
+    Similarly, if <m>c \in \IR</m>, then since multiplying by <m>c</m> yields: <me>
+        (ca_1)\vec{v}_1+\cdots+(ca_n)\vec{v}_n=\vec{0},
+    </me>
+    we may conclude that the vector <m>\left[\begin{array}{c} ca_1 \\ \vdots \\ ca_n \end{array}\right] </m> is...
+        </p>
+    <ol marker="A.">
+    <li>
+        <p>
+        another solution.
+        </p>
+      </li>
+    <li>
+        <p>
+        not a solution.
+        </p>
+      </li>
+      <li>
+          <p>
+          is equal to <m>\vec{0}</m>.
+          </p>
+        </li>
+    <li>
+        <p>
+        The empty set.
+        </p>
+      </li>
+    </ol>
+        </task>
+    </activity>
+
+    <observation>
+        <p>
+            If <m>S</m> is any set of vectors in <m>\IR^n</m>, then the set <m>\vspan(S)</m> has the following properties:
+            <ul>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is non-empty.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is closed under addition: for any <m>\vec{u},\vec{v}\in \vspan(S)</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>\vspan(S)</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is closed under scalar multiplication: for any <m>\vec{u}\in\vspan(S)</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>\vspan(S)</m>.    
+                    </p>
+                </li>
+            </ul>
+            Likewise, if <m>W</m> is the solution set to a homogenous vector equation, it too satisfies:
+            <ul>
+                <li>
+                    <p>
+                        the set <m>W</m> is non-empty.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the set <m>W</m> is closed under addition: for any <m>\vec{u},\vec{v}\in W</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>W</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is closed under scalar multiplication: for any <m>\vec{u}\in W</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>W</m>.    
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </observation>
+    
+    <definition xml:id="EV3-definition-subspace">
+        <statement>
+            <p>
+      A subset <m>W</m> of a vector space is called a <term>subspace</term><idx>subspace</idx>
+      provided that it satisfies the following properties:
+      <ul>
+        <li>
+            <p>
+            the subset is non-empty.    
+            </p>
+        </li>
+        <li>
+            <p>
+            the subset is <term>closed under addition</term><idx><h>vector space</h></idx><idx>closed under addition</idx>: for any <m>\vec{u},\vec{v} \in W</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>W</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+            the subset is <term>closed under scalar multiplication</term><idx><h>vector space</h></idx><idx>closed under scalar multiplication</idx>: for any <m>\vec{u} \in W</m> and scalar <m>c \in \IR</m>, the product <m>c\vec{u}</m> is also in <m>W</m>.
+            </p>
+        </li>
+        </ul>
+        </p>
+    </statement>
+    </definition>
+
+<observation>
+        <p>
+Note the similarities between a planar subspace spanned by two non-colinear vectors in <m>\IR^3</m>,
+and the Euclidean plane <m>\IR^2</m>. While they are not the same thing (and shouldn't be referred to
+interchangably), algebraists call such similar spaces <term>isomorphic</term><idx>isomorphic</idx>;
+we'll learn what this means more carefully in a later chapter.
+        </p>
+        <figure xml:id="EV3-planar-subspace-vs-r2">
+			<caption>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</caption>
+			<image width="100%" xml:id="EV3-image-r2-in-r3">
+			    <description>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</description>
+				<latex-image>
+                \begin{tikzpicture}[scale=0.5]
+    \draw[-&gt;] (0,0,0) -- (6,0,0);
+    \draw[-&gt;] (0,0,0) -- (0,6,0);
+    \draw[-&gt;] (0,0,0) -- (0,0,6);
+    \draw[fill=purple!20,fill opacity=0.5]
+      (-2,-2,2) -- (6,-2,-2) -- (2,2,-2) -- (-6,2,2) -- (-2,-2,2);
+    \draw[thick,blue,-&gt;] (0,0,0) -- (1,-1,0);
+    \draw[thick,red,-&gt;] (0,0,0) -- (-2,0,1);
+    \begin{scope}[shift={(12,2)}]
+    \draw (-4,0) -- (4,0);
+    \draw (0,-4) -- (0,4);
+    \draw[fill=purple!20,fill opacity=0.5]
+      (-3.8,-3.8) -- (-3.8,3.8) -- (3.8,3.8) -- (3.8,-3.8) -- (-3.8,-3.8);
+    \draw[very thick,blue,-&gt;] (0,0) -- (1,0);
+    \draw[very thick,red,-&gt;] (0,0) -- (0,1);
+    \end{scope}
+                \end{tikzpicture}
+				</latex-image>
+			</image>
+		</figure>
+</observation>
+
+
+
+<activity estimated-time='10'>
+    <introduction>
+        <p>
+Let <m>W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2y+z=0}</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Is <m>W</m> the empty set?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <p>
+    Let's assume that <m>\vec{v}=\left[\begin{array}{c} x \\ y \\ z \end{array}\right]</m> and
+    <m>\vec{w} = \left[\begin{array}{c} a \\ b \\ c \end{array}\right] </m> are in <m>W</m>.
+    What are we allowed to assume?
+    <ol marker="A." cols='2'>
+        <li>
+            <p>
+                <m>x+2y+z=0</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                <m>a+2b+c=0</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                Both of these.
+            </p>
+        </li>
+        <li>
+            <p>
+                Neither of these.
+            </p>
+        </li>
+    </ol>
+        </p>
+    </task>
+    <task>
+        <p>
+      Which equation must be verified to show that
+      <m>\vec v+\vec w = \left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]</m>
+      also belongs to <m>W</m>?
+            <ol marker="A.">
+                <li>
+                    <p>
+                        <m>(x+a)+2(y+b)+(z+c)=0</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x+a+2y+b+z+c=0</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x+2y+z=a+2b+c</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </task>
+    <task>
+        <p>
+Use the assumptions from (a) to verify the equation from (b).
+        </p>
+    </task>
+    <task>
+        <p>
+      Is <m>W</m> is a subspace of <m>\IR^3</m>?
+      <ol marker="A." cols="3">
+          <li>
+              <p>
+                  Yes
+              </p>
+          </li>
+          <li>
+              <p>
+                  No
+              </p>
+          </li>
+          <li>
+              <p>
+                  Not enough information
+              </p>
+          </li>
+      </ol>
+        </p>
+    </task>
+<task>
+    <p>
+  Show that <m>k\vec v=\left[\begin{array}{c}kx\\ky\\kz\end{array}\right]</m> 
+  also belongs to <m>W</m> for any <m>k\in\IR</m> by verifying
+  <m>(kx)+2(ky)+(kz)=0</m> under these assumptions.
+    </p>
+</task>
+<task>
+    <p>
+  Is <m>W</m> is a subspace of <m>\IR^3</m>?
+  <ol marker="A." cols="3">
+      <li>
+          <p>
+              Yes
+          </p>
+      </li>
+      <li>
+          <p>
+              No
+          </p>
+      </li>
+      <li>
+          <p>
+              Not enough information
+          </p>
+      </li>
+  </ol>
+    </p>
+</task>
+</activity>
+
+<activity estimated-time='10'>
+    <introduction>
+        <p>
+Let <m>W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2y+z=4}</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Is <m>W</m> the empty set?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <p>
+Which of these statements is valid?
+<ol marker="A.">
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>and</em>
+<m>\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\in W</m>, so <m>W</m> <em>is</em> a subspace.
+        </p>
+    </li>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>and</em>
+<m>\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\in W</m>, so <m>W</m> <em>is not</em> a subspace.
+        </p>
+    </li>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>but</em>
+<m>\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\not\in W</m>, so <m>W</m> <em>is</em> a subspace.
+        </p>
+    </li>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>but</em>
+<m>\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\not\in W</m>, so <m>W</m> <em>is not</em> a subspace.
+        </p>
+    </li>
+</ol>
+        </p>
+    </task>
+    <task>
+        <p>
+Which of these statements is valid?
+<ol>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>and</em>
+<m>\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in W</m>, so <m>W</m> <em>is</em> a subspace.
+        </p>
+    </li>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>and</em>
+<m>\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in W</m>, so <m>W</m> <em>is not</em> a subspace.
+        </p>
+    </li>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>but</em>
+<m>\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\not\in W</m>, so <m>W</m> <em>is</em> a subspace.
+        </p>
+    </li>
+    <li>
+        <p>
+<m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W</m>, <em>but</em>
+<m>\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\not\in W</m>, so <m>W</m> <em>is not</em> a subspace.
+        </p>
+    </li>
+</ol>
+        </p>
+    </task>
+</activity>
+
+<remark xml:id="EV3-subspace-check">
+    <p>
+In summary, <em>any one</em> of the following is enough to
+prove that a nonempty subset <m>W</m> is <em>not</em> a subspace:
+<ul>
+    <li>
+        <p>
+Find specific values for <m>\vec u,\vec v\in W</m>
+such that <m>\vec u+\vec v\not\in W</m>.
+        </p>
+    </li>
+    <li>
+        <p>
+Find specific values for <m>c\in\IR,\vec v\in W</m>
+such that <m>c\vec v\not\in W</m>.
+        </p>
+    </li>
+    <li>
+      <p>
+Show that <m>\vec 0\not\in W</m>. 
+      </p>
+    </li>
+</ul>
+</p>
+<p>
+If you cannot do any of these, then <m>W</m> can be proven to be a subspace
+by doing <em>all</em> of the following:
+<ol>
+    <li>
+        <p>
+            Show that <m>W</m> is non-empty.
+        </p>
+    </li>
+  <li>
+    <p>
+For all <m>\vec v,\vec w\in W</m> (not just specific values), 
+<m>\vec u+\vec v\in W</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+For all <m>\vec v\in W</m> and <m>c\in \IR</m> (not just specific values),
+<m>c\vec v\in W</m>.
+    </p>
+  </li>
+</ol>
+</p>
+</remark>
+
+<activity estimated-time='20'>
+    <introduction>
+        <p>
+  Consider these subsets of <m>\IR^3</m>:
+  <me>
+    R=
+    \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=z+1}
+    \hspace{2em}
+    S=
+    \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=|z|}
+    \hspace{2em}
+    T=
+    \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{z=xy}
+  </me>.
+        </p>
+    </introduction>
+  <task>
+      <p>
+  Show <m>R</m> isn't a subspace by showing that <m>\vec 0\not\in R</m>.
+      </p>
+  </task>
+  <task>
+      <p>
+  Show <m>S</m> isn't a subspace by finding two vectors <m>\vec u,\vec v\in S</m>
+  such that <m>\vec u+\vec v\not\in S</m>.
+      </p>
+  </task>
+  <task>
+      <p>
+  Show <m>T</m> isn't a subspace by finding a vector <m>\vec v\in T</m>
+  such that <m>2\vec v\not\in T</m>.
+      </p>
+  </task>
+</activity>
+
+<activity>
+    <statement>
+      <p> Consider the following two sets of Euclidean vectors: <me>U=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle|\,7 \, x + 4 \, y = 0\right\} \hspace{2em} W=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle|\,3 \, x y^{2} = 0\right\}</me> </p>
+      <p> Explain why one of these sets is a subspace of <m>\mathbb{R}^2</m> and one is not. </p>
+    </statement>
+    <!-- <answer>
+      <p><m>U</m> is a subspace of <m>\mathbb{R}^2</m> and <m>W</m> is not.</p>
+    </answer> -->
+  </activity>
+
+  <activity>
+      <statement>
+        <p> 
+            Consider the following attempted proof that 
+            <me>U=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle| x+y=xy\right\}</me>
+            is closed under scalar multiplication.
+        </p>
+        <blockquote>
+            <p>
+Let <m>\left[\begin{array}{c} x \\ y \end{array}\right]\in U</m>, so we know that <m>x+y=xy</m>.
+We want to show <m>k\left[\begin{array}{c} x \\ y \end{array}\right]=\left[\begin{array}{c} kx \\ ky \end{array}\right]\in U</m>,
+that is, <m>(kx)+(ky)=(kx)(ky)</m>. This is verified by the following calculation:
+<md>
+    <mrow>
+(kx)+(ky)&amp;=(kx)(ky)
+    </mrow>
+    <mrow>
+k(x+y)&amp;=k^2xy
+    </mrow>
+    <mrow>
+0[k(x+y)]&amp;=0[k^2xy]
+    </mrow>
+    <mrow>
+0&amp;=0
+    </mrow>
+</md>
+            </p>
+        </blockquote>
+        <p>
+            Is this reasoning valid?
+            <ol marker="A." cols="2">
+                <li>
+                    <p>
+                        Yes
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        No
+                    </p>
+                </li>
+            </ol>
+        </p>
+      </statement>
+      <!-- <answer>
+        <p><m>U</m> is a subspace of <m>\mathbb{R}^2</m> and <m>W</m> is not.</p>
+      </answer> -->
+    </activity>
+
+    <remark>
+            <p>
+Proofs of an equality <m>\mathrm{LEFT}=\mathrm{RIGHT}</m> should generally be of one of these forms:
+<ol>
+    <li>
+        <p>
+            Using a chain of equalities:
+            <md>
+                <mrow>
+            \mathrm{LEFT} &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \mathrm{RIGHT}
+                    </mrow>
+            </md>
+            Alternatively:
+            <md>
+                <mrow>
+            \mathrm{LEFT} &amp;= \cdots &amp; \mathrm{RIGHT} &amp;=\cdots
+                </mrow>
+                <mrow>
+             &amp;= \cdots &amp; &amp;= \cdots
+                </mrow>
+                <mrow>
+              &amp;= \cdots &amp; &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \mathrm{SAME}&amp; &amp;= \mathrm{SAME}
+                    </mrow>
+            </md>
+        </p>
+    </li>
+    <li>
+        <p>
+When the assumption <m>\mathrm{THIS}=\mathrm{THAT}</m> is already known or assumed to be true :
+            <md>
+                <mrow>
+                    &amp;&amp;    \mathrm{THIS} &amp;= \mathrm{THAT}
+                </mrow>
+                <mrow>
+                    &amp;  \Rightarrow&amp;  \cdots &amp;= \cdots
+                </mrow>
+                <mrow>
+                    &amp;  \Rightarrow&amp; \cdots &amp;= \cdots
+                </mrow>
+                <mrow>
+                 &amp;   \Rightarrow&amp; \mathrm{LEFT} &amp;= \mathrm{RIGHT}
+                </mrow>
+            </md>
+        </p>
+    </li>
+</ol>
+            </p>
+    </remark>
+
+    <warning>
+        <p>
+The following proof is <em>invalid</em>.
+    <md>
+        <mrow>
+            &amp;&amp;    \mathrm{LEFT} &amp;= \mathrm{RIGHT}
+        </mrow>
+        <mrow>
+            &amp;  \Rightarrow&amp;  \cdots &amp;= \cdots
+        </mrow>
+        <mrow>
+            &amp;  \Rightarrow&amp; \cdots &amp;= \cdots
+        </mrow>
+        <mrow>
+         &amp;   \Rightarrow&amp; 0 &amp;= 0
+        </mrow>
+        <mrow>
+         &amp;   \Rightarrow&amp; \mathrm{ANYTHING} &amp;= \mathrm{ANYTHING}
+        </mrow>
+    </md>
+Basically, you cannot prove something is true by assuming it's true,
+and it's not helpful to prove to someone that zero equals itself
+(they probably already know that).
+        </p>
+    </warning>
+
+<!-- <activity estimated-time='10'>
+    <introduction>
+        <p>
+  Consider these subsets of <m>M_{2 \times 2}</m>, the vector space of all <m> 2 \times 2</m> matrices with real entries. Show that each of these sets is or is not a subspace of <m>M_{2 \times 2}</m>.
+   
+           </p> 
+           </introduction>
+  <task>
+      <p>
+          <me>
+    \setBuilder{ \left[\begin{array}{cc}a&amp;0\\0&amp;b\end{array}\right]}{a,b \in \IR}
+              </me>.
+
+      </p>
+  </task>
+    <task>
+      <p>
+          <me>
+    \setBuilder{ \left[\begin{array}{cc}a&amp;0\\0&amp;b\end{array}\right]}{a + b = 0}
+              </me>.
+
+      </p>
+  </task>
+    <task>
+      <p>
+          <me>
+    \setBuilder{ \left[\begin{array}{cc}a&amp;0\\0&amp;b\end{array}\right]}{a + b = 5}
+              </me>.
+
+      </p>
+  </task>
+    <task>
+      <p>
+          <me>
+      \setBuilder{ \left[\begin{array}{cc}a&amp;c\\0&amp;b\end{array}\right]}{a + b = 0, c \in \IR}
+  </me>.
+
+      </p>
+  </task>
+
+</activity> -->
+
+
+
+<!-- <activity estimated-time='5'>
+    <statement>
+        <p>
+Let <m>W</m> be a subspace of a vector space <m>V</m>.  How are <m>\vspan W</m> and <m>W</m> related?
+        </p>
+<ol marker="A.">
+<li>
+    <p>
+    <m>\vspan W</m> may include vectors that aren't in <m>W</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>W</m> may include vectors that aren't in <m>\vspan W</m>
+    </p>
+</li>
+<li>
+    <p>
+    <m>W</m> and <m>\vspan W</m> always contain the same vectors
+    </p>
+</li>
+</ol>
+    </statement>
+</activity>
+
+<fact>
+    <statement>
+        <p>
+  If <m>S</m> is any subset of a vector space <m>V</m>, then
+  since <m>\vspan S</m> collects all possible linear combinations,
+  <m>\vspan S</m> is automatically a subspace of <m>V</m>.
+        </p>
+        <p>
+  In fact, <m>\vspan S</m> is always the smallest
+  subspace of <m>V</m> that contains all the vectors in <m>S</m>.
+        </p>
+    </statement>
+</fact>-->
+    </subsection> 
+
+    <subsection>
+        <title>Cool Down</title>
+        <remark>
+            Recall that in <xref ref="EV2-Analogy"/> we used the words <em>vector</em>, <em>linear combination</em>, and <em>span</em> to make an anology with recipes, ingredients, and meals.
+            In this analogy, a <em>recipe</em> was defined to be a list of amounts of each ingredient to build a particular meal.
+        </remark>
+        <activity>
+            <task>
+                <statement>
+                    <p>
+                        Given the set of ingredients <m>S=\{\textrm{flour}, \textrm{yeast}, \textrm{salt}, \textrm{water}, \textrm{sugar}, \textrm{milk}\}</m>, how should we think of the subspace <m>\vspan(S)</m>? 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is one meal that lives in the subspace <m>\vspan(S)</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is one meal that does not live in the subspace <m>\vspan(S)</m>?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <activity>
+            <introduction>
+                <p>
+                    Let <me>W=\left\{\left[\begin{array}{c}x\\y\\z\\w\end{array}\right]\middle|x+y=3z+2w\right\}.</me>
+                    The set <m>W</m> is a subspace. Below are two attempted proofs of the fact that <m>W</m> is closed under vector addition. 
+                    Both of them are invalid; explain why. 
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\vec{u}=\left[\begin{array}{c}1\\4\\1\\1\end{array}\right],\vec{v}=\left[\begin{array}{c}2\\-1\\1\\-1\end{array}\right].</m>
+                        Then both <m>\vec{u},\vec{w}</m> are elements of <m>W</m>. Their sum is
+                        <me>\vec{w}=\left[\begin{array}{c}3\\3\\2\\0\end{array}\right]</me>
+                        and since <me>3+3=3\cdot (2)+2\cdot (0),</me>
+                        it follows that <m>\vec{w}</m> is also in <m>W</m> and so <m>W</m> is closed under vector addition.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If <m>\left[\begin{array}{c}x\\y\\z\\w\end{array}\right],\left[\begin{array}{c}a\\b\\c\\d\end{array}\right]</m> are in <m>W</m>, we need to show that <m>\left[\begin{array}{c}x+a\\y+b\\z+c\\w+d\end{array}\right]</m> is also in W. 
+                        To be in <m>W</m>, we need 
+                        <me>(x+a)+(y+b)=3(z+c)+2(w+d).</me>
+                        Well, if <me>(x+a)+(y+b)=3(z+c)+2(w+d),</me>
+                        then we know that <me>x+y-3z-2w+a+b-3c-2d=0</me>
+                        by moving everything over to the left hand side. 
+                        Since we are assumming that <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m>, it follows that
+                        <m>0=0</m>, which is true, which proves that vector addition is closed.
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        </subsection>
+
+
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-EV3-a" youtube="ccXgu4NIzSA">
+              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+            </video>
+            <caption>Video: Showing that a subset of a vector space is a subspace</caption>
+        </figure>
+        <figure>
+            <video xml:id="video-EV3-b" youtube="7qv8-2GaE2A">
+              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+            </video>
+            <caption>Video: Showing that a subset of a vector space is not a subspace</caption>
+        </figure>
+    </subsection>
+    
+
+
+    <exercises>
+        <p>Exercises available at <url href="https://teambasedinquirylearning.github.io/linear-algebra/2024/exercises/#/bank/EV3/"/>.</p>
+    </exercises>
+<subsection>    
+    <title>Mathematical Writing Explorations</title>
+            <exploration>
+                <statement>
+                    A square matrix <m>M</m> is <term>symmetric</term><idx>symmetric matrix</idx> if, for each index <m>i,j</m>, the entries <m>m_{ij} = m_{ji}</m>. That is, the matrix is itself when reflected over the diagonal from upper left to lower right.
+ 
+Prove that the set of <m>n \times n</m> symmetric matrices is a subspace of <m>M_{n \times n}</m>.
+                </statement>s
+    </exploration>
+    <exploration>
+    <statement>
+        The space of all real-valued function of one real variable is a vector space. First, define <m>\oplus</m> and <m>\odot</m> for this vector space. Check that you have closure (both kinds!) and show what the zero vector is under your chosen addition.
+
+Decide if each of the following is a subspace. If so, prove it. If not, provide the counterexample.
+<ul>
+<li>The set of even functions, <m>\{f:\mathbb{R} \rightarrow \mathbb{R}: f(-x) = f(x) \mbox{ for all } x\}</m>.</li>
+<li>The set of odd functions, <m>\{f:\mathbb{R} \rightarrow \mathbb{R}: f(-x) = -f(x) \mbox{ for all } x\}</m>.</li>
+        </ul>
+</statement></exploration>
+<exploration>
+    <statement>
+Give an example of each of these, or explain why it's not possible that such a thing would exist.
+<ul> <li>A nonempty subset of <m>M_{2 \times 2}</m> that is not a subspace.</li>
+<li> A set of two vectors in <m>\mathbb{R}^2</m> that is not a spanning set.</li>
+</ul>
+</statement></exploration>
+<exploration>
+    <statement>
+Let <m>V</m> be a vector space and <m>S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}</m> a subset of <m>V</m>. Show that the span of <m>S</m> is a subspace. 
+
+Is it possible that there is a subset of <m>V</m> containing fewer vectors than <m>S</m>, but whose span contains all of the vectors in the span of <m>S</m>?
+</statement></exploration>
+    </subsection>
+    
+    <subsection>
+        <title>Sample Problem and Solution</title>
+        <p>
+            Sample problem <xref ref="sample-EV3"/>.
+        </p>
+    </subsection>
+
+</section>
