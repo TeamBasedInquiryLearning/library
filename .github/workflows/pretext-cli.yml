@@ -72,11 +72,12 @@ jobs:
               if: github.event_name == 'pull_request'
               with:
                 script: |
+                  branch = `${{ github.head_ref || github.ref_name }}`.replace('/'', '-')
                   github.rest.issues.createComment({
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: '🚀 Preview available at https://${{ github.head_ref || github.ref_name }}.tbil.pages.dev 🚀'
+                    body: `🚀 Preview available at https://${branch}.tbil.pages.dev 🚀`
                   })
 
     deploy-ghpages:
