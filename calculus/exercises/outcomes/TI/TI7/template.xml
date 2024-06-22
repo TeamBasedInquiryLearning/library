@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+For each of the following integrals, describe which strategy you would use to integrate it,
+and why that is the best choice.  (You do <em>not</em> need to actually compute the integral.)
+        </p>
+    </intro>
+    <!-- {{#integrals}} -->
+        <knowl>
+            <content><p><m>\renewcommand{\log}{\ln}\displaystyle \int {{integrand}}dx</m>.</p></content>
+            <outtro><p>{{method}}</p></outtro>
+        </knowl>
+    <!-- {{/integrals}} -->
+</knowl>

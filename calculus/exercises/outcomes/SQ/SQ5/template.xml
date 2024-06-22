@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            For each of the following series, use the <em>Divergence</em>, <em>Alternating Summation</em> or <em>Integral</em> test to determine if the series converges.
+        </p>
+    </intro>
+    <!-- {{#Problems}} -->
+    <knowl>
+        <content>
+            <p><m>\displaystyle \sum_{n=1}^\infty {{Sequence}}.</m></p>
+        </content>  
+        <outtro>
+            <p>
+<!-- {{#Converge}} -->
+<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m> converges by the <em>{{Test}}</em> test.                
+<!-- {{/Converge}} -->
+<!-- {{^Converge}} -->
+<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m> diverges by the <em>{{Test}}</em> test.               
+<!-- {{/Converge}} -->
+            </p>
+        </outtro>       
+    </knowl>
+    <!-- {{/Problems}} -->
+</knowl>

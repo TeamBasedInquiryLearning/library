@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Consider a function <m>p(x)</m> defined by <me>p(x)=\sum_{n=0}^\infty {{sn}}x^n.</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>Find <m>p_{ {{k}} }(x)</m>, the degree <m>{{k}}</m> polynomial approximation for <m>p(x)</m>.</p></content>
+        <outtro><p> <m> p_{ {{k}} }(x)={{pk}}</m>.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Use this polynomial approximation to estimate <m>p({{c}})</m>.</p></content>
+        <outtro><p><m>p({{c}})\approx p_{ {{k}} }({{c}}) = {{pkc}}</m>.</p></outtro>
+    </knowl>
+    <!-- <knowl>
+        <content><p>Use <m>p_{ {{k}} }(x)</m> to estimate <m>\displaystyle \int_{ {{a}} }^{ {{b}} }p(x)dx</m> by computing <m>\displaystyle \int_{ {{a}} }^{ {{b}} }p_{ {{k}} }(x)dx</m>.</p></content>
+        <outtro><p><m> \displaystyle \int_{ {{a}} }^{ {{b}} }p_{ {{k}} }(x)dx = {{pint}}</m>.</p></outtro>
+    </knowl> -->
+</knowl>

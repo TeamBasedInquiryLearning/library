@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#bucket}} -->
+            <content>
+                <p>
+                    Suppose a  bucket of water is being pulled into the air by a rope at a constant rate.  The bucket is constantly losing water as it's pulled up, so at a height of <m>h</m> meters, the mass of the bucket is <m>m(h)={{bucket}}</m> kg.  Find an integral which computes how much work is needed to lift the bucket <m>{{height}}</m> meters into the air.  Recall that the acceleration of gravity is 9.8 m<m>/\text{s}^2</m>.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <me>\int_0^{ {{height}} } 9.8\left({{bucket}}\right)dh</me>
+                </p>
+            </outtro>
+    <!-- {{/bucket}} -->
+
+
+
+    <!-- {{#well}} -->
+            <content>
+                <p>
+                    Suppose a  well filled with water has height {{height}} meters and radius {{radius}} meters.  Find an integral which computes how much work is needed to pump all the water out of the well.  Recall that the acceleration of gravity is 9.8 m<m>/\text{s}^2</m> and the density of water is <m>1000\text{kg}/\text{m}^3</m>.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <me>\int_0^{ {{height}} } 9.8\cdot 1000\cdot \pi \left({{radius}}\right)^2\cdot({{height}}-h )dh</me>
+                </p>
+            </outtro>
+    <!-- {{/well}} -->
+
+
+
+    
+</knowl>

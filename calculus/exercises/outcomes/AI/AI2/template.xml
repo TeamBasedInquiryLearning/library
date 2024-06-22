@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Consider the curve <m>y={{ f }}</m> defined on <m>[{{a}}, {{b}}]</m>.
+        </p>
+        
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Estimate the arclength of this curve with <m>{{n}}</m> line segments with <m>\Delta x = {{DX}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<me>
+\begin{array}{|c|c|c|c|c|}
+\hline
+x_i
+&amp;
+x_{i+1}
+&amp;
+f(x_{i})
+&amp;
+f(x_{i+1})
+&amp;
+\text{Length of segment}          
+\\
+\hline
+{{#Datalist}}
+{{xi}}
+&amp; 
+{{xip1}}
+&amp;
+{{fxi}}
+&amp; 
+{{fxip1}}
+&amp;
+{{length}}         
+\\
+{{/Datalist}}
+
+\hline
+\end{array}
+</me>
+The estimated length of this curve is {{estlength}}.  
+            </p>    
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Find an integral that computes the arclength of this curve.
+            </p>
+        </content>
+        <outtro>
+            <p>
+The arclength is computed via <me>\int_{ {{a}} }^{ {{b}} }\sqrt{1+ \left({{fp}}\right)^2}dx.</me> 
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

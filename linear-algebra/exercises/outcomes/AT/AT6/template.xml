@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Consider how to construct the
+<!-- {{#matrix}} -->
+matrix <m>{{matrix}}</m>
+<!-- {{/matrix}} -->
+<!-- {{#polynomial}} -->
+polynomial <m>{{polynomial}}</m>
+<!-- {{/polynomial}} -->
+<!-- {{#quarternion}} -->
+quarternion <m>{{quarternion}}</m>
+<!-- {{/quarternion}} -->
+as a linear combination of 
+<!-- {{#matrix}} -->
+matrices
+<!-- {{/matrix}} -->
+<!-- {{#polynomial}} -->
+polynomials
+<!-- {{/polynomial}} -->
+<!-- {{#quarternion}} -->
+quarternions
+<!-- {{/quarternion}} -->
+from the set
+<me>{{set}}.</me>
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Describe the vector space involved in this problem, and an isomorphic
+Euclidean space and relevant Eucldean vectors that
+can be used to solve this problem.
+            </p>
+        </content>
+        <outtro>
+            <p>
+The given set of vectors is from the vector space of
+<!-- {{#matrix}} -->
+<m>2\times 2</m> matrices
+<!-- {{/matrix}} -->
+<!-- {{#polynomial}} -->
+degree-<m>3</m> polynomials
+<!-- {{/polynomial}} -->
+<!-- {{#quarternion}} -->
+quarternions
+<!-- {{/quarternion}} -->
+which is isomorphic to the Euclidean vector space <m>\mathbb R^4</m>.
+Thus the problem can be solved by showing how the Euclidean
+vector <m>{{e_vector}}</m> can be constructed as a linear combination
+from the set <me>{{e_set}}.</me>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Show how to construct an appropriate Euclidean vector from
+an approriate set of Euclidean vectors.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<me>\operatorname{RREF}{{aug_matrix}} = {{rref}}</me>
+            </p>
+            <p>
+<me>{{e_vector}} = {{e_combo}}</me>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Use this result to answer the original question.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<!-- {{#matrix}} -->
+<me>{{matrix}} = {{combo}}</me>
+<!-- {{/matrix}} -->
+<!-- {{#polynomial}} -->
+<me>{{polynomial}} = {{combo}}</me>
+<!-- {{/polynomial}} -->
+<!-- {{#quarternion}} -->
+<me>{{quarternion}} = {{combo}}</me>
+<!-- {{/quarternion}} -->
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

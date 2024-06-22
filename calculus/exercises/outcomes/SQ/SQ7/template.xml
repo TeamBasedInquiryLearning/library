@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Use the <em>ratio</em> or <em>root</em> test to determine if 
+<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m>
+converges or diverges.
+        </p>        
+    </content>
+    <outtro>
+        <p>
+<!-- {{#Converge}} -->
+<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m> converges.                
+<!-- {{/Converge}} -->
+<!-- {{^Converge}} -->
+<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m> diverges.               
+<!-- {{/Converge}} -->
+        </p>
+    </outtro>
+</knowl>

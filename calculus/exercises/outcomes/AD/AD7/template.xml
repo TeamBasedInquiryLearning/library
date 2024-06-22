@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+The following chart describes the values of <m>f(x)</m> and its
+first and second derivatives at or between a few given values of <m>x</m>,
+where <m>\nexists</m> denotes that <m>f(x)</m> does not exist at that value
+of <m>x</m>.
+        </p>
+        <p>
+        <me>
+\begin{array}{c|{{#fps}}cc{{/fps}}}
+x
+    {{#xs}}
+        &amp; &amp; {{x}}
+    {{/xs}} \\\hline
+f(x)
+    {{#fs}}
+        &amp; &amp; {{f}}
+    {{/fs}} \\
+f'(x) &amp;
+    {{#fps}}
+        {{fp}} {{^last}}&amp; &amp;{{/last}}
+    {{/fps}} \\
+f''(x) &amp;
+    {{#fpps}}
+        {{fpp}} {{^last}}&amp; &amp;{{/last}}
+    {{/fpps}} \\
+\end{array}
+        </me>
+        </p>
+        <p>
+Assume that <m>f(x)</m> has vertical asymptotes at each
+<m>x</m>-value where <m>f(x)</m> does not exist, that
+<m>\displaystyle\lim_{x\to-\infty}f(x)= {{l}}</m>, and that
+<m>\displaystyle\lim_{x\to\infty}f(x)= {{r}}</m>.
+        </p>
+        <p>
+Use this information to sketch a reasonable graph of <m>f(x)</m>.
+        </p>
+    </content>
+</knowl>

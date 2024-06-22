@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Consider the curve segment given by 
+            <!-- {{#givenfx}} -->
+            <m>\renewcommand{\log}{\ln} y={{ f }}</m> defined over the interval <m>{{a}} \leq x \leq {{b}} </m>.  
+            <!-- {{/givenfx}}-->
+            <!-- {{#givengy}} -->
+            <m>\renewcommand{\log}{\ln} x={{ g }}</m> defined over the interval <m>{{aa}} \leq y \leq {{bb}} </m>.  
+            <!-- {{/givengy}}-->
+        </p>
+    </intro>
+    <knowl>
+        <content>
+           <p>
+            Find an integral which computes the surface area of the solid obtained from rotating the curve segment about the <m>x</m>-axis.  
+           </p> 
+        </content>
+        <outtro>
+            <p>
+                <me>\renewcommand{\log}{\ln} \int_{ {{a}} }^{ {{b}} } 2\pi \left({{f}}\right)\sqrt{1+ \left( {{fp}}\right)^2  }dx.</me>
+            </p>
+        </outtro>
+    </knowl>    
+    <knowl>
+        <content>
+           <p>
+            Find an integral which computes the surface area of the solid obtained from rotating the curve segment about the <m>y</m>-axis.  
+           </p> 
+        </content>
+        <outtro>
+            <p>
+                <me>\renewcommand{\log}{\ln} \int_{ {{aa}} }^{ {{bb}} } 2\pi \left({{g}}\right)\sqrt{1+ \left( {{gp}}\right)^2  }dy.</me>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

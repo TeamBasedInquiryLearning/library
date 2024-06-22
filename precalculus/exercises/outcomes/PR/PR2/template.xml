@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <!-- {{#age}} -->
+    <intro>
+        <p>
+            Suppose that in the town of {{townname}} that the average age of adult residents <m>x</m> years after 1900 was <m>a(x)={{q}}</m> years old.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+                In what year was the average age at a minimum?  (Round to the nearest year.)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The year {{minyear}}.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                What was the minimum average age?  (Round to the nearest tenth of a year)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The minimum average age was {{minage}} years.
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/age}} -->
+    
+    
+    <!-- {{#proj}} -->
+    <intro>
+        <p>
+            Consider a projectile that is fired into the air from an initial height of {{c}} feet.  The height after <m>t</m> seconds is <m>h(t)={{q}}</m> feet.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+                When does the projectile hit the ground?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The projectile hits the ground in {{r1}} seconds.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                When does the projectile achieve the maximum height?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The projectile achieve the maximum height in <m>{{maxtime}}</m> seconds.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                What is the maximum height achieved?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The maximum height achieved is <m>{{maxheight}}</m> feet.
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/proj}} -->
+    
+
+    
+    <!-- {{#cost}} -->
+    <intro>
+        <p>
+            Suppose that in the cost per unit to produce <m>x</m> {{widgetname}} is <m>C(x)=
+            \${{q}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+                How many {{widgetname}} should be produced to minimize the unit cost?  (Round to the nearest unit.)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                 {{minprod}} {{widgetname}}.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                What was the minimum unit cost?  (Round to the nearest cent.)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The minimum unit cost was ${{mincost}}.
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/cost}} -->
+        
+
+        
+    
+</knowl>

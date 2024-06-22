@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#terms}} -->
+    <knowl>
+        <content>
+            <p>
+Find the first 5 terms, beginning with <m>a_{ {{closed_start}} }</m>,
+of the sequence defined by the closed formula
+<m>a_n={{closed}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{#closed_terms}} {{term}},{{/closed_terms}} \dots</m>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Find the first 5 terms
+of the sequence defined by the recursive formula
+<m>a_{ {{recursive_start}} }= {{recursive_first}}, a_{n+1}={{recursive}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{#recursive_terms}} {{term}},{{/recursive_terms}} \dots</m>
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/terms}} -->
+    <!-- {{#formulas}} -->
+    <knowl>
+        <content>
+            <p>
+Find a closed form for the following sequence:
+<m>{{#closed_terms}} {{term}},{{/closed_terms}} \dots</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+Beginning with <m>a_{ {{closed_start}} }</m>, let
+<m>a_n={{closed}}</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Find a recursive form for the following sequence:
+<m>{{#recursive_terms}} {{term}},{{/recursive_terms}} \dots</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>a_{ {{recursive_start}} }= {{recursive_first}}, a_{n+1}={{recursive}}</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/formulas}} -->
+</knowl>

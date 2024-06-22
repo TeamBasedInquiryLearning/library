@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+For each limit, explain if L'Hôpital's Rule may be applied.
+If it can, explain how to use this rule to find the limit.
+        </p>
+    </intro>
+    <!-- {{#limits}} -->
+        <knowl>
+            <content>
+                <p>
+                    <me>\renewcommand{\log}{\ln}
+\lim_{x\to {{to}} } \frac{ {{num}} }{ {{den}} }
+                    </me>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <!-- {{#is}} -->
+                    <me>\renewcommand{\log}{\ln}
+\lim_{x\to {{to}} } \frac{ {{num}} }{ {{den}} } = {{is}}
+                    </me>
+                    <!-- {{/is}} -->
+                    <!-- {{^is}} -->
+L'Hôptial's Rule does not apply.
+                    <!-- {{/is}} -->
+                </p>
+            </outtro>
+        </knowl>
+    <!-- {{/limits}} -->
+</knowl>

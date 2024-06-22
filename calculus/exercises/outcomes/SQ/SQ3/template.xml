@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <intro>
+            <p>
+Consider the partial sum sequence
+<m>\displaystyle A_n=\left({{s0}}\right)+\left({{s1}}\right)+\left({{s2}}\right)+\cdots+
+\left({{k}}\cdot \left( {{r}}\right)^n \right).</m>
+            </p>
+        </intro>
+        <knowl>
+            <content><p>Find a closed form for <m>A_n</m>.</p></content>
+            <outtro><p><m>\displaystyle A_n={{ geo_closed }}</m>.</p></outtro>
+        </knowl>
+        <knowl>
+            <content><p>Does <m>\{A_n\}</m> converge?  If so, to what value?</p></content>
+            <!-- {{#Problem1}} -->
+            <outtro><p>
+                <!-- {{#Converge}} -->
+                <m>\displaystyle\lim_{n\to\infty} {{ geo_closed }} </m> converges to <m>{{Limit}}</m>.                
+                <!-- {{/Converge}} -->
+                <!-- {{^Converge}} -->
+                <m>\displaystyle\lim_{n\to\infty} {{ geo_closed }}</m> diverges.               
+                <!-- {{/Converge}} -->
+            </p></outtro>            
+            <!-- {{/Problem1}} -->
+        </knowl>
+    </knowl>
+    <knowl>
+        <intro>
+            <p>
+Consider the partial sum sequence <m>\displaystyle B_n=\sum_{i=1}^n \left( {{fi}}-{{fi1}} \right).</m>
+            </p>
+        </intro>
+        <knowl>
+            <content><p>Find a closed form for <m>B_n</m>.</p></content>
+            <outtro><p><m>\displaystyle B_n={{f1}}-{{fn1}}</m>.</p></outtro>
+        </knowl>
+        <knowl>
+            <content><p>Does <m>\{B_n\}</m> converge?  If so, to what value?</p></content>
+            <!-- {{#Problem2}} -->
+            <outtro><p>
+                <!-- {{#Converge}} -->
+                <m>\displaystyle\lim_{n\to\infty} {{f1}}-{{fn1}} </m> converges to <m>{{Limit}}</m>.                
+                <!-- {{/Converge}} -->
+                <!-- {{^Converge}} -->
+                <m>\displaystyle\lim_{n\to\infty} {{f1}}-{{fn1}}</m> diverges.               
+                <!-- {{/Converge}} -->
+            </p></outtro>            
+            <!-- {{/Problem2}} -->
+        </knowl>
+    </knowl>
+</knowl>

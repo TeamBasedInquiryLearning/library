@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Explain how to find the following for the function <m>f(x)={{function}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+The open intervals where <m>f(x)</m> is increasing or decreasing.
+            </p>
+        </content>
+    <!-- {{#increasing}} -->
+        <outtro>
+            <p>
+The function increases on <m>(-\infty,{{a}})</m>,
+decreases on <m>({{a}},{{b}})</m>, and increases on
+<m>({{b}},\infty)</m>.
+            </p>
+        </outtro>
+    <!-- {{/increasing}} -->
+    <!-- {{#decreasing}} -->
+        <outtro>
+            <p>
+The function decreases on <m>(-\infty,{{a}})</m>,
+increases on <m>({{a}},{{b}})</m>, and decreases on
+<m>({{b}},\infty)</m>.
+            </p>
+        </outtro>
+    <!-- {{/decreasing}} -->
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+The local extrema of <m>f(x)</m>.
+            </p>
+        </content>
+    <!-- {{#increasing}} -->
+        <outtro>
+            <p>
+The point <m>(x,y)=({{a}},{{fa}})</m> is a local maximum,
+and the point <m>(x,y)=({{b}},{{fb}})</m> is a local minimum.
+            </p>
+        </outtro>
+    <!-- {{/increasing}} -->
+    <!-- {{#decreasing}} -->
+        <outtro>
+            <p>
+The point <m>(x,y)=({{a}},{{fa}})</m> is a local minimum,
+and the point <m>(x,y)=({{b}},{{fb}})</m> is a local maximum.
+            </p>
+        </outtro>
+    <!-- {{/decreasing}} -->
+    </knowl>
+</knowl>

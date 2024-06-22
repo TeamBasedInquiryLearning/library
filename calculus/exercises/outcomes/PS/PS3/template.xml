@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Recall that the power series for <m>f(x)={{f}}</m> is:
+<me>{{f}}=\sum_{n=0}^{\infty} {{seq}}.</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>Find a power series for <m>{{f_comp}}</m>.</p></content>
+        <outtro><p><m>\displaystyle {{f_comp}} = 
+        \sum_{n=0}^{\infty}{{seq_comp}} = \sum_{n=0}^{\infty}{{seq_comp_simp}}</m>.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Find a power series for <m>{{f_prod}}</m>.</p></content>
+        <outtro><p><m>\displaystyle {{f_prod}} = \sum_{n= 0 }^{\infty}{{seq_prod}}</m>.</p></outtro>
+    </knowl>
+    <!-- {{#diff}} -->
+    <knowl>
+        <content><p>Find a power series for <m>f'(x)</m>.</p></content>
+        <outtro><p><m>\displaystyle f'(x)=\sum_{n=0}^{\infty}{{seq_diff}}
+        =\sum_{n=0}^{\infty}{{seq_diff_simp}}</m>.</p></outtro>
+    </knowl>
+    <!-- {{/diff}} -->
+    <!-- {{#int}} -->
+    <knowl>
+        <content><p>Find a power series for <m>F(x)</m>, the antiderivative of <m>f(x)</m> where <m>F(0)={{c}}</m>.</p></content>
+        <outtro><p><m>\displaystyle F(x)={{c}}+\sum_{n=0}^{\infty}{{seq_int}}
+        ={{c}}+\sum_{n=1}^{\infty}{{seq_int_simp}}</m>.</p></outtro>
+    </knowl>
+    <!-- {{/int}} -->
+</knowl>

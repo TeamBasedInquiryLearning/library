@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Let <m>\mathbf{R}</m> be the finite region bounded by the graphs of
+<m>y={{parabola}}</m> and <m>y={{line}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Sketch an illustration of <m>\mathbf R</m>.
+            </p>
+        </content>
+        <outtro><p>(no illustration provided)</p></outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Explain how to express the area of <m>\mathbf R</m>
+as a definite integral with respect to <m>x</m>.
+(Do not evaluate this definite integral.)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+\int_{ {{xlbound}} }^{ {{xubound}} } \left({{ansfx}}\right)dx
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Explain how to express the area of <m>\mathbf R</m>
+a a definite integral with respect to <m>y</m>.
+(Do not evaluate this definite integral.)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+\int_{ {{ylbound}} }^{ {{yubound}} } \left({{ansfy}}\right)dy
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

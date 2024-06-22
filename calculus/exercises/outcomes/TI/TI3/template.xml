@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
+Use trigonometric identities and 
+{{#hint_2}}
+<m>(1-z)^2=1-2z+z^2</m>
+{{/hint_2}}
+{{#hint_3}}
+<m>(1-z)^3=1-3z+3z^2-z^3</m>
+{{/hint_3}}
+to explain and demonstrate how to find
+<m>\displaystyle \int {{f}} dx</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{F}}+C</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate how to use double-angle identities to
+rewrite <m>\displaystyle \int {{g}} dx</m>. (Do not solve the
+rewritten integral.)
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\displaystyle \int {{also_g}} dx</m>.
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

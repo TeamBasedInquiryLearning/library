@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Consider these given integrals of trigonometric functions.
+        </p>
+        <list>
+<!-- {{#hint0}} -->
+<item><p><m>\int \tan^2\theta\,d\theta=\tan\theta-\theta+C</m></p></item>
+<!-- {{/hint0}} -->
+<!-- {{#hint1}} -->
+<item><p><m>\int \sec\theta\,d\theta=
+\log|\sec\theta+\tan\theta|+C</m></p></item>
+<!-- {{/hint1}} -->
+<!-- {{#hint2}} -->
+<item><p><m>\int d\theta=\theta+C</m></p></item>
+<!-- {{/hint2}} -->
+<!-- {{#hint3}} -->
+<item><p><m>\int \frac{\cos^2\theta}{\sin^2\theta}d\theta=
+-\theta-\frac{\cos\theta}{\sin\theta}+C</m></p></item>
+<!-- {{/hint3}} -->
+        </list>
+        <p>
+Use appropriate trigonometric substitutions and the above
+integrals to find each of the following.
+        </p>
+    </intro>
+<!-- {{#tasks}} -->
+    <knowl>
+        <content>
+            <p>
+<me>\int {{integrand}}\,dx</me>
+            </p>
+        </content>
+        <outtro>
+            <p>
+Substitute <m>{{sub}}</m> to find
+                <me>
+\int {{integrand}}\,dx =
+{{result}} +C
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+<!-- {{/tasks}} -->
+</knowl>

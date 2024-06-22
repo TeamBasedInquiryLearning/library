@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <intro>
+        <p>
+            Consider the quadratic function <m>q(x) = {{q}}</m>.
+        </p>
+    </intro>
+    
+    
+    <knowl>
+        <content>
+            <p>
+                Determine if the parabola <m>y=q(x)</m> opens upwards or downwards.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The parabola opens {{face}}.
+            </p>
+        </outtro>
+        
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Determine where the coordinates of the vertex of the parabola <m>y=q(x)</m> and whether or not it is a maximum or a minimum.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The vertex occurs at <m>({{h}}, {{k}})</m> and is a {{extrema}}.
+            </p>
+        </outtro>
+        
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Determine the axis of symmetry for the parabola <m>y=q(x)</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The axis of symmetry is the line <m>x={{h}}</m>.
+            </p>
+        </outtro>
+        
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Find all <m>x</m> and <m>y</m> intercepts for the parabola <m>y=q(x)</m>, if any.
+            </p>
+        </content>
+        <!-- {{#none}} -->
+        <outtro>
+            <p>
+                The <m>y</m> intercept is <m>(0, {{c}})</m>.  There are no <m>x</m> intercepts.
+            </p>
+        </outtro>
+        <!-- {{/none}} -->
+        <!-- {{#one}} -->
+        <outtro>
+            <p>
+                The <m>y</m> intercept is <m>(0, {{c}})</m>.  There is an <m>x</m> intercept at <m>({{r1}}, 0)</m>.
+            </p>
+        </outtro>
+        <!-- {{/one}} -->
+        <!-- {{#two}} -->
+        <outtro>
+            <p>
+                The <m>y</m> intercept is <m>(0, {{c}})</m>.  There are <m>x</m> intercepts at <m>({{r1}}, 0)</m> and <m>({{r2}}, 0)</m>.
+            </p>
+        </outtro>
+        <!-- {{/two}} -->
+        
+        
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Sketch <m>y={{q}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <image
+                source="assets/PR1/generated/{{__seed__}}/plot.png"
+                description="The plot of y=q(x), along with special points."/>
+            </p>
+        </outtro>
+    </knowl>
+    
+
+        
+
+        
+    
+</knowl>

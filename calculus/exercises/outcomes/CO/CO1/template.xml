@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Given the vector equation <m>\vec{ {{name}} }(t)=\langle {{xt}}, {{yt}} \rangle</m>:
+        </p>
+        
+    </intro>
+    <knowl>
+        <content><p>Write this equation as parametric equations.</p></content>
+    <outtro>
+        <p><m>x(t)={{xt}}, y(t)={{yt}}</m>.</p>
+    </outtro>
+    </knowl>
+    <knowl>
+        <content><p>Sketch the graph of the corresponding curve.</p></content>
+        <outtro>
+            <p>
+                <image
+                    source="assets/CO1/generated/{{__seed__}}/graph.png"
+                    description="Graph of parametric equations."/>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Consider a {{solid}}  that has {{base}} base with {{measuretype}} {{b}} {{unit}}, and height {{height}} {{unit}}.  Suppose that at height <m>h</m> {{unit}} the density of this {{solid}} is <m>\delta(h)={{d}}\ \text{kg}/\text{ {{symbol}} }^3 </m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>Find an integral which computes the mass of this {{solid}}.</p>
+        </content>
+        <outtro>
+                <p><me>\int_{ 0 }^{ {{height}} } \left({{A}}\right)\left({{d}}\right) dh.</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Find an expression involving integrals which computes the height of the center of mass for this {{solid}}.</p>
+        </content>
+        <outtro><p><me>\frac{\displaystyle\int_{ 0 }^{ {{height}} } h\left({{A}}\right)\left({{d}}\right) dh}{\displaystyle\int_{ 0 }^{ {{height}} } \left({{A}}\right)\left({{d}}\right) dh}.</me></p></outtro>
+    </knowl>
+</knowl>

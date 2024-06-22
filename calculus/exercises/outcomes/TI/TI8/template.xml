@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Explain and demonstrate how to write each of the following improper integrals
+as a limit, and why this limit converges or diverges.
+        </p>
+    </intro>
+    <!-- {{#tasks}} -->
+    <knowl>
+        <content><p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx.</m></p></content>
+        <outtro>
+            <!-- {{#converges}} -->
+            <p>Converges.</p>
+            <!-- {{/converges}} -->
+            <!-- {{^converges}} -->
+            <p>Diverges.</p>
+            <!-- {{/converges}} -->
+        </outtro>
+    </knowl>
+    <!-- {{/tasks}} -->
+</knowl>

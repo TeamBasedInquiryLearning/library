@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Suppose the function <m>p(x)</m> satisfies
+<m>p({{a}}) = {{La}}</m>, <m>p'({{a}}) = {{Lpa}}</m>,
+and <m>p''(x) {{concavity_ineq}} 0</m> for <m>x</m>
+values nearby <m>{{a}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate
+how to find the linearization <m>L(x)</m>
+of <m>p(x)</m> at <m>x ={{a}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>L(x)={{L}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate
+how to estimate the value of <m>p({{adx}})</m> using
+this linearization.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>p({{adx}}) \approx {{Ladx}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Explain why your estimate of
+<m>p({{adx}})</m>
+is greater than or less than the actual value.
+            </p>
+        </content>
+        <outtro>
+            <p>
+The estimate is {{concavity_word}} than the actual value.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Sketch a possible graph of <m>p(x)</m> and its linearization <m>L(x)</m> nearby <m>x ={{a}}</m>
+to illustrate your findings.
+            </p>
+        </content>
+    </knowl>
+</knowl>

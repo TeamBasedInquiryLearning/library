@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Let <m>f(x)</m> be a function such that:
+            <me>
+\begin{array}{c|c|c|c|c|c|c}
+f({{center}}) &amp; f'({{center}}) &amp; f''({{center}}) &amp; f'''({{center}}) &amp; f^{(4)}({{center}}) &amp; f^{(5)}({{center}}) &amp; f^{(6)}({{center}}) \\
+\hline
+{{a0}} &amp; {{a1}} &amp; {{a2}} &amp; {{a3}} &amp; {{a4}} &amp; {{a5}} &amp; {{a6}} 
+\end{array}
+            </me>
+        </p>
+    </intro>
+            
+    <knowl>
+        <content>
+            <p>
+Find a Taylor polynomial for <m>f(x)</m> centered at <m>x={{center}}</m> of degree <m>{{degree}}</m>.
+            </p>
+        </content>  
+        <outtro><p><m>f_{ {{degree}} }(x)={{poly}}</m>.</p></outtro>
+    </knowl>  
+    <knowl>
+        <content>
+            <p>
+Using the table above, find a general closed form for <m>f^{(n)}({{center}})</m>.
+            </p>
+        </content>
+        <outtro><p><m>f^{(n)}({{center}})={{seq}}</m>.</p></outtro>
+    </knowl>  
+    <knowl>
+        <content><p>Use this closed form to find a Taylor series for <m>f(x)</m> centered at <m>x={{center}}</m>.</p></content>
+        <outtro><p><m>\displaystyle f(x)=\sum_{n=0}^\infty {{seq_frac}} {{seq_term}}</m>.</p></outtro>
+    </knowl>
+</knowl>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>Convert the following rectangular equation to a polar equation: <m>{{rect_q}}</m>.</p>
+        </content>
+        <outtro>
+            <p><m>{{rect_a}}</m>.</p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Convert the following polar equation to a rectangular equation: <m>{{polar_q}}</m>.</p>
+        </content>
+        <outtro>
+            <p><m>{{polar_a}}</m>.</p>
+        </outtro>
+    </knowl>
+</knowl>

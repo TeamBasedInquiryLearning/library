@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Determine which of the following series is <em>convergent</em> and which is <em>divergent</em>.
+Justify both choices with an appropriate test.
+        </p>
+    </intro>
+    <!-- {{#Problems}} -->
+    <knowl>
+        <content>
+            <p><m>\renewcommand{\log}{\ln} \displaystyle \sum_{n=1}^\infty {{Sequence}}.</m></p>
+        </content>
+        <outtro>
+            <p>
+<!-- {{#Converge}} -->
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n=1}^\infty {{Sequence}}</m> is convergent.                
+<!-- {{/Converge}} -->
+<!-- {{^Converge}} -->
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n=1}^\infty {{Sequence}}</m> is divergent.               
+<!-- {{/Converge}} -->
+            </p>
+        </outtro>
+    </knowl>        
+    <!-- {{/Problems}} -->
+</knowl>

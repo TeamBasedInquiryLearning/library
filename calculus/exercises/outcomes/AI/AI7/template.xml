@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+    <!-- {{#dam}} -->
+            <content>
+                <p>
+                    Suppose a  trapezoidal dam has height {{height}} feet, top width of {{top}} feet and bottom width of {{bottom}} feet.  Water is pressed against the entire surface of the dam. Find an integral which computes the force exerted against this dam. Recall that the pressure of water at depth <m>h</m> feet  is <m>62.4h</m> pounds per square foot. 
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <me>\int_0^{ {{height}} } 62.4h\left( {{width}} \right)dh\  \text{lbs}.</me>
+                </p>
+            </outtro>
+    <!-- {{/dam}} -->
+    
+</knowl>
