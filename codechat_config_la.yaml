@@ -1,5 +1,5 @@
 # Replace the contents of `codechat_config.yaml` with this file to edit Linear Algebra
 source_path: linear-algebra/source
-output_path: output/la-web-insructor
-args: "{sys_executable} -m pretext build la-web-insructor --xmlid {xml_id} --no-knowls"
+output_path: output/la-web-instructor
+args: "{sys_executable} -m pretext build la-web-instructor --xmlid {xml_id} --no-knowls"
 project_type: PreTeXt
