@@ -1,7 +1,4 @@
-# <!-- Managed automatically by PreTeXt authoring tools -->
-# (delete the above line to manage this file manually)
-
-name: PreTeXt-CLI Actions
+name: PreTeXt-CLI Actions (TBIL Customization)
 on:
     # Runs on pull requests
     pull_request:
@@ -24,8 +21,17 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
+            - name: quick build instructor versions
+              if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
+              run: |
+                pretext build precal-web-instructor -q
+                pretext build calc-web-instructor -q
+                pretext build la-web-instructor -q
+
             - name: build deploy targets
+              if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch) or github.event_name == 'workflow_dispatch'
               run: pretext build --deploys
+
             - name: stage deployment
               run: pretext deploy --stage-only
 
