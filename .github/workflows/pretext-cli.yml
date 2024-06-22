@@ -48,6 +48,7 @@ jobs:
         permissions:
           contents: read
           deployments: write
+          pull-requests: write
 
         steps:
             - name: Download artifact
@@ -58,6 +59,7 @@ jobs:
             - name: Create 404.html
               run: echo "404 page not found" >> deploy/404.html
             - name: Publish to Cloudflare
+              id: cloudflare_publish
               uses: cloudflare/pages-action@v1
               with:
                   apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -66,6 +68,17 @@ jobs:
                   gitHubToken: ${{ secrets.GITHUB_TOKEN }}
                   branch:  ${{ github.head_ref || github.ref_name }}
                   directory: deploy
+            - name: Report preview link
+              uses: actions/github-script@v6
+              if: github.event_name == 'pull_request'
+              with:
+                script: |
+                  github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: '## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}'
+                  })
 
     deploy-ghpages:
         runs-on: ubuntu-latest
