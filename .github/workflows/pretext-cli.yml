@@ -77,7 +77,7 @@ jobs:
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: '🚀 Preview available at ${{ steps.cloudflare_publish.outputs.alias }} / ${{ steps.cloudflare_publish.outputs.url }} 🚀'
+                    body: '🚀 Preview available at ${{ steps.cloudflare_publish.outputs.url }} 🚀 \n\n `alias` ${{ steps.cloudflare_publish.outputs.alias }} \n\n `id` ${{ steps.cloudflare_publish.outputs.id }} \n\n `environment` ${{ steps.cloudflare_publish.outputs.environment }}'
                   })
 
     deploy-ghpages:
