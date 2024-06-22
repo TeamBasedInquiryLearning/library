@@ -64,7 +64,7 @@ jobs:
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                   projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
                   gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-                  branch: ${{ github.ref }}
+                  branch:  ${{ github.head_ref || github.ref_name }}
                   directory: deploy
 
     deploy-ghpages:
