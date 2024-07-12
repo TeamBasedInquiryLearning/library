@@ -14,7 +14,7 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 ### Publications
 
-- Lewis, D., Clontz, S., and Estis, J. 2021. Team-Based Inquiry Learning. PRIMUS 31 (2), 223-238. https://doi.org/10.1080/10511970.2019.1666440
+- Lewis, D., Clontz, S., and Estis, J. 2021. Team-Based Inquiry Learning. PRIMUS 31 (2), 223-238. <https://doi.org/10.1080/10511970.2019.1666440>
 
     - Team-Based Learning (TBL) is a cooperative learning strategy blending elements of flipped learning, inquiry-based learning, and problem-based learning. Although used quite frequently in other disciplines, use of this strategy in mathematics has been limited. In this article, we describe how TBL can be implemented in math courses with adherence to essential elements of TBL and introduce modifications specific to mathematics instruction. In particular, we introduce a particular style of TBL, which we term Team-Based Inquiry Learning, that satisfies the defining pillars of inquiry-based learning.
 
