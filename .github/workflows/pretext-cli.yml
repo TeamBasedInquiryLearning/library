@@ -36,6 +36,13 @@ jobs:
             - name: stage deployment
               run: pretext deploy --stage-only
 
+            - name: build and stage all banks
+              if: steps.quickbuild.outcome == 'skipped'
+              run: |
+                python scripts/build-bank.py precalculus
+                python scripts/build-bank.py calculus
+                python scripts/build-bank.py linear-algebra
+
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
               with:

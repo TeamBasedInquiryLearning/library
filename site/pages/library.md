@@ -43,27 +43,27 @@ but be warned - these are under active development and can change at any time!
 
 #### Precalculus PREVIEW Edition
 
-- [HTML](/precalculus/preview/)
-    - [Instructor Edition](/precalculus/preview/instructor/)
-- [PDF](/precalculus/preview/print/TBIL-Precal-Preview.pdf)
-    - [Slides](/precalculus/preview/print/TBIL-Precal-Preview-slides.pdf)
-- [Exercises](/precalculus/preview/exercises/)
+- [HTML](../precalculus/preview/)
+    - [Instructor Edition](../precalculus/preview/instructor/)
+- [PDF](../precalculus/preview/print/TBIL-Precal-Preview.pdf)
+    - [Slides](../precalculus/preview/print/TBIL-Precal-Preview-slides.pdf)
+- [Exercises](../precalculus/preview/exercises/)
 
 #### Calculus PREVIEW Edition
 
-- [HTML](/calculus/preview/)
-    - [Instructor Edition](/calculus/preview/instructor/)
-- [PDF](/calculus/preview/print/TBIL-Calc-Preview.pdf)
-    - [Slides](/calculus/preview/print/TBIL-Calc-Preview-slides.pdf)
-- [Exercises](/calculus/preview/exercises/)
+- [HTML](../calculus/preview/)
+    - [Instructor Edition](../calculus/preview/instructor/)
+- [PDF](../calculus/preview/print/TBIL-Calc-Preview.pdf)
+    - [Slides](../calculus/preview/print/TBIL-Calc-Preview-slides.pdf)
+- [Exercises](../calculus/preview/exercises/)
 
 #### Linear Algebra PREVIEW Edition
 
-- [HTML](/linear-algebra/preview/)
-    - [Instructor Edition](/linear-algebra/preview/instructor/)
-- [PDF](/linear-algebra/preview/print/TBIL-LA-Preview.pdf)
-    - [Slides](/linear-algebra/preview/print/TBIL-LA-Preview-slides.pdf)
-- [Exercises](/linear-algebra/preview/exercises/)
+- [HTML](../linear-algebra/preview/)
+    - [Instructor Edition](../linear-algebra/preview/instructor/)
+- [PDF](../linear-algebra/preview/print/TBIL-LA-Preview.pdf)
+    - [Slides](../linear-algebra/preview/print/TBIL-LA-Preview-slides.pdf)
+- [Exercises](../linear-algebra/preview/exercises/)
 
 ### Older Editions
 
