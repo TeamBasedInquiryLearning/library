@@ -30,7 +30,7 @@ jobs:
                 pretext build la-web-instructor -q
 
             - name: build all deploy targets
-              if: steps.quickbuild.result == 'skipped'
+              if: steps.quickbuild.outcome == 'skipped'
               run: pretext build --deploys
 
             - name: stage deployment
