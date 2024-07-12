@@ -39,9 +39,9 @@ jobs:
             - name: build and stage all banks
               if: steps.quickbuild.outcome == 'skipped'
               run: |
-                python scripts/build-bank.py precalculus
-                python scripts/build-bank.py calculus
-                python scripts/build-bank.py linear-algebra
+                python scripts/build-bank.py precalculus --full
+                python scripts/build-bank.py calculus --full
+                python scripts/build-bank.py linear-algebra --full
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4

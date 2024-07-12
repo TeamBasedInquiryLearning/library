@@ -7,6 +7,8 @@ from checkit import static
 
 parser = argparse.ArgumentParser(description='Build a CheckIt bank.')
 parser.add_argument('book', choices=['precalculus', 'calculus', 'linear-algebra'])
+parser.add_argument('-f', '--full',
+                    action='store_true')
 args = parser.parse_args()
 
 bank_path = os.path.join(args.book,"exercises")
@@ -14,7 +16,7 @@ bank_path = os.path.join(args.book,"exercises")
 print(f"Building exercises from `{bank_path}`")
 
 b = Bank(bank_path)
-b.generate_exercises()
+b.generate_exercises(regenerate=args.full, images=args.full)
 b.write_json()
 
 # b.build_viewer() # <-- broken, reimplemented below
