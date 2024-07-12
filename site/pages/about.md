@@ -30,31 +30,30 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 ### Presentations
 
-Kate Owens\* has created these excellent slides overviewing TBIL and resources to implement it in your classroom.
+- Kate Owens† has created [these excellent slides](https://docs.google.com/presentation/d/1824oMy2HetUVz4AlEZFufjftg72gh0Zqqu4RzOP08PE/edit?usp=sharing) overviewing TBIL and resources to implement it in your classroom.
 
-Drew Lewis gave a colloquium presentation on "Team-Based Inquiry Learning" at the University of Tennessee Department of Mathematics (October 2022)
+- Drew Lewis gave a colloquium presentation on "[Team-Based Inquiry Learning](https://drive.google.com/file/d/19zgcQU37PqaxUka8AgBL9sh2tBz2VO56/view?usp=sharing)" at the University of Tennessee Department of Mathematics (October 2022)
 
-Kate Owens\* & Abby Noble\* presented "How we juggled all the things: SBG+TBIL+CheckIt+LMS" at the Fall 2023 Southeast Sectional Meeting of the American Mathematics Society
+- Kate Owens† & Abby Noble† presented "[How we juggled all the things: SBG+TBIL+CheckIt+LMS](https://docs.google.com/presentation/d/1tjZNkLplPyYpanPpkzfN0a-1n8FSTdNgMAh7RYkFFbs/edit?usp=sharing)" at the Fall 2023 Southeast Sectional Meeting of the American Mathematics Society
 
-Jordan Kostiuk\* presented on "TBIL & Student Motivation" at the 2023 AAC&U STEM Conference
+- Jordan Kostiuk† presented on "[TBIL & Student Motivation](https://drive.google.com/file/d/1PtJmaPv24viRJPOUWGqvRu-Dx3jQvSB3/view?usp=sharing)" at the 2023 AAC&U STEM Conference
 
-Manoj Lamichhane\* presented "Implementation of Team Based Inquiry Learning (TBIL) in Calculus Classes at Florida Polytechnic University" at the Third International Conference on Applications of Mathematics to Nonlinear Sciences (May 2023)
+- Manoj Lamichhane† presented "Implementation of Team Based Inquiry Learning (TBIL) in Calculus Classes at Florida Polytechnic University" at the Third International Conference on Applications of Mathematics to Nonlinear Sciences (May 2023)
 
-Francesca Gandini\* & Joe Hibdon\* presented "Making Student Thinking Visible with Team-Based Inquiry Learning" at the 2024 Joint Mathematics Meeting 
+- Francesca Gandini† & Joe Hibdon† presented "Making Student Thinking Visible with Team-Based Inquiry Learning" at the 2024 Joint Mathematics Meeting 
 
-Drew Lewis presented  "Team-Based Inquiry Learning in Lower Division Mathematics Courses" at the 2024 Joint Mathematics Meeting
+- Drew Lewis presented  "[Team-Based Inquiry Learning in Lower Division Mathematics Courses](https://docs.google.com/presentation/d/11Ssh8PXw233QkBK3M17togEX0y6PE2_yaC9j4Z0OPYM/edit?usp=sharing)" at the 2024 Joint Mathematics Meeting
 
-Megan Chang-Lee\* presented "Teaching with Team-Based Inquiry Learning: Joyful Teaching" at the 2024 Joint Mathematics Meeting 
+- Megan Chang-Lee† presented "Teaching with Team-Based Inquiry Learning: Joyful Teaching" at the 2024 Joint Mathematics Meeting 
 
-Kate Owens\* presented "A Quick-Start Guide on Team-Based Inquiry Learning"  on February 16, 2024 for the Southeast IBL COMMIT
+- Kate Owens† presented "A Quick-Start Guide on Team-Based Inquiry Learning"  on February 16, 2024 for the Southeast IBL COMMIT
 
-Jared Bunn\* and Manoj Lamichhane\* presented a "Team-Based Inquiry Learning Workshop" at the 2024 joint meeting of the MAA-Florida Section and FTYCMA
+- Jared Bunn† and Manoj Lamichhane† presented a "Team-Based Inquiry Learning Workshop" at the 2024 joint meeting of the MAA-Florida Section and FTYCMA
 
-Drew Lewis presented "Supporting Instructors in Implementing Team-Based Inquiry Learning" at the 26th annual Conference on Research in Undergraduate Mathematics Education (February 2024)
+- Drew Lewis presented "[Supporting Instructors in Implementing Team-Based Inquiry Learning](https://docs.google.com/presentation/d/1bt167oTp0N3oYGwJiaenAwakCcFsMUidjBled__bQig/edit?usp=sharing)" at the 26th annual Conference on Research in Undergraduate Mathematics Education (February 2024)
 
-Joe Hibdon\* presented "Using Team-Based Inquiry Learning in Mathematics Courses" at the April 2024 Chicago Symposium Series, Excellence in Teaching Mathematics and Science: Research and Practice
+- Joe Hibdon† presented "Using Team-Based Inquiry Learning in Mathematics Courses" at the April 2024 Chicago Symposium Series, Excellence in Teaching Mathematics and Science: Research and Practice
 
-Drew Lewis presented a workshop on "Team-Based Inquiry Learning" for the Brown University Sheridan Center for Teaching and Learning (April 2024)
+- Drew Lewis presented a workshop on "Team-Based Inquiry Learning" for the Brown University Sheridan Center for Teaching and Learning (April 2024)
 
-
-(\* TBIL Fellows)
+(† TBIL Fellows)
