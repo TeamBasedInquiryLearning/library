@@ -28,6 +28,10 @@ Lewis, D., Clontz, S., Parrish, C., Estis, J., and Chaudhury, S.R. To Appear. Su
 
 Abstract: Team-Based Inquiry Learning (TBIL) is a novel active learning pedagogy designed to facilitate the use of inquiry-based learning in lower division courses. This preliminary report examines supports provided by the TBIL project to instructors, as well as the fidelity of implementation of TBIL by participants of the project. Initial findings suggest that classroom-ready materials and ongoing support, both synchronous and asynchronous, were most helpful to faculty in their TBIL implementations.
 
+#### Selected mentions in other literature
+
+- Muhammad, R. A., & Saidi, R. (2024). Applications in Linear Algebra: Bridging Data Science with Mathematical Foundations. Scatterplot, 1(1). <https://doi.org/10.1080/29932955.2024.2370620>
+
 ### Presentations
 
 Kate Owens* has created these excellent slides overviewing TBIL and resources to implement it in your classroom.
