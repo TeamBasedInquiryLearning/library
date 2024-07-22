@@ -243,7 +243,7 @@
     </p> -->
     </theorem>
     
-    <observation xml:id="concavity-test-usage"> <statement><p>In the previous section, we saw in  <xref ref="activity-using-FDT"/> how to use critical points of the function and the sign of the first derivative to identify intervals of increase/decrease of a function. The next activity <xref ref="activity-derivative-concavity4"/> uses the critical points of the first derivative function and the sign of the second derivative (accordingly to <xref ref="concavity-test"/>) to identify where the original function is concave up/down. </p></statement></observation>
+    <observation xml:id="concavity-test-usage"> <statement><p>In the previous section, we saw in  <xref ref="activity-using-FDT"/> how to use critical points of the function and the sign of the first derivative to identify intervals of increase/decrease of a function. The next activity <xref ref="activity-derivative-concavity4"/> uses the critical points of a first derivative function and the sign of its second derivative (accordingly to <xref ref="concavity-test"/>) to identify where the original function is concave up/down. </p></statement></observation>
     
     <activity xml:id="activity-derivative-concavity4">
         <introduction>
@@ -280,7 +280,7 @@
     <activity xml:id="activity-derivative-concavity5">
         <introduction>
             <p>
-             Use the results from <xref ref="activity-derivative-concavity4"/> to identify all of the inflection points of <m>f(x)=x^4-4x^3+4x^2</m>.
+             Use the results from <xref ref="activity-derivative-concavity4"/> to identify all of the inflection points of <m>f(x)=x^4-54x^2</m>.
             </p>
         </introduction>
     </activity>
@@ -298,6 +298,13 @@ where it is concave up or concave down, and any inflection points.
                 </task>
                 <task>
                     <p><m>f(x)=\frac{3}{20} \, x^{5} + x^{4} - \frac{5}{2} \, x^{3}</m></p>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            <m>g(x) = x - \cos\left(\dfrac{\pi}{2}x\right)</m>
+                        </p>
+                    </statement>
                 </task>
         
  <!--   <answer>
