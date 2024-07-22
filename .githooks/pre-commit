@@ -1,0 +1,19 @@
+#!/bin/bash
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$branch" = "main" ]; then
+  echo "Do not commit directly to the main branch. Instead, create a new branch and commit there."
+  exit 1
+fi
+
+git_status=`git status 2> /dev/null`
+remote_behind_pattern="Your branch is behind"
+remote_diverge_pattern="Your branch and (.*) have diverged"
+if [[ ${git_status} =~ ${remote_behind_pattern} ]]; then
+  echo "There are remote changes you should pull before making a new commit."
+  exit 1
+elif [[ ${git_status} =~ ${remote_diverge_pattern} ]]; then
+  echo "The local and remote branches have diverged and need to be synced before committing."
+  exit 1
+fi
