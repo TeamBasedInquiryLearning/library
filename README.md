@@ -27,3 +27,18 @@ You're directed to these resources:
   [wiki](https://github.com/TeamBasedInquiryLearning/library/wiki)
   to learn how to fix our typos with just a free GitHub account and your
   web browser.
+
+## Contributing for Advanced Users
+
+We recommend using Codespaces to propose changes to this repository or a fork,
+even for advanced users:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TeamBasedInquiryLearning/library)
+
+If developing locally anyway, you are encouraged to review `.devcontainer.json`
+to learn our dependencies, and to install our `pre-commit` hook to prevent
+accidentally committing to the main branch:
+
+```
+git config core.hooksPath .githooks
+```
