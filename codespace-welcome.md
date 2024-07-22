@@ -8,7 +8,7 @@ press [Ctrl/Cmd]+[Shift]+[v] on your keyboard.
 To begin editing a book, open the appropriate file:
 
 - Calculus: [`codechat_config_calc.yaml`](codechat_config_calc.yaml)
-- Preclculus: [`codechat_config_precal.yaml`](codechat_config_precal.yaml)
+- Precalculus: [`codechat_config_precal.yaml`](codechat_config_precal.yaml)
 - Linear Algebra: [`codechat_config_la.yaml`](codechat_config_la.yaml)
 
 Copy its entire contents, then open and overwrite *ALL* the contents of
