@@ -1,7 +1,7 @@
 ## Welcome to the TBIL Resource Library Codespace!
 
 (To see a prettier version of this file with clickable links, 
-tap `[Ctrl/Cmd]+[k]` then `[v]` on your keyboard.)
+tap `[Ctrl/Cmd]+[Shift]+[v]` on your keyboard.)
 
 To begin editing a book, open the appropriate file:
 
