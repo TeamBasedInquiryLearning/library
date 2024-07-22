@@ -72,7 +72,10 @@
         },
         "editor.snippetSuggestions": "top",
         "xml.validation.enabled": false,
-        "CodeChat.CodeChatServer.Command": "CodeChat_Server"
+        "CodeChat.CodeChatServer.Command": "CodeChat_Server",     
+        "workbench.editorAssociations": {
+            "*.md": "vscode.markdown.preview.editor"
+        }
       },
       "extensions": [
         "ms-vscode.live-server",
