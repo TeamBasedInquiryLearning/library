@@ -1,7 +1,9 @@
 ## Welcome to the TBIL Resource Library Codespace!
 
-(To see a prettier version of this file with clickable links, 
-tap `[Ctrl/Cmd]+[Shift]+[v]` on your keyboard.)
+<!--
+To see a prettier version of this file with clickable links, 
+press [Ctrl/Cmd]+[Shift]+[v] on your keyboard.
+-->
 
 To begin editing a book, open the appropriate file:
 
@@ -12,7 +14,8 @@ To begin editing a book, open the appropriate file:
 Copy its entire contents, then open and overwrite *ALL* the contents of
 the [`codechat_config.yaml`](codechat_config.yaml) file.
 
-Alternatively, open a terminal and type `cp codechat_config_BOOK.yaml codechat_config.yaml`, replacing BOOK with either 'calc', 'precal', or 'la'.
+Alternatively, open a terminal and type `cp codechat_config_BOOK.yaml codechat_config.yaml`,
+replacing `BOOK` with either `calc`, `precal`, or `la`.
 
 For more information, visit our wiki at
 <https://github.com/TeamBasedInquiryLearning/library/wiki/GitHub-Codespaces-for-Authors>.
