@@ -8,39 +8,34 @@
             </p>
         </content>
 
+        <!-- {{#precal}} -->
         <outtro>
             <p>
-                The {{name1}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}</m>.
+                The {{name1}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}, {{r3}}, {{r4}}</m>.
             </p>
         </outtro>
+        <!-- {{/precal}} -->
         
-    </knowl> 
+        <!-- {{#CA}} -->
+        <outtro>
+            <p>
+                The {{name2}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}, {{r3}}</m>.
+            </p>
+        </outtro>
+        <!-- {{/CA}} -->
+    </knowl>   
     
     <knowl>
         <content>
             <p>
-                Find the <m>y</m>-intercept of <m>y={{f}}</m>.
+                Find a polynomial <m>g(x)</m> of degree <m>{{n}}</m> which has a root <m>x={{s1}}</m> with multiplicty <m>{{m1}}</m>, 
+                a root <m>x={{s2}}</m> with multiplicty <m>{{m2}}</m>, and a root <m>x={{s3}}</m> with multiplicty <m>{{m3}}</m>.
             </p>
         </content>
 
         <outtro>
             <p>
-                The <m>y</m>-intercept of <m>y={{f}}</m> is <m>\left( 0, {{yint}}\right)</m>.
-            </p>
-        </outtro>
-        
-    </knowl> 
-    
-    <knowl>
-        <content>
-            <p>
-                Describe the end behavior of the graph <m>y={{f}}</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                As <m>x</m> approaches infinity, <m>y</m> {{rightbehavior}}.  As <m>x</m> approaches negative infinity, <m>y</m> {{leftbehavior}}.
+                An example is <m>g(x)={{g}}</m>.
             </p>
         </outtro>
     </knowl>   
@@ -48,41 +43,17 @@
     <knowl>
         <content>
             <p>
-                Identify where any local maximums and minimums may occur.
+                Consider the following graph of a polynomial <m>y=h(x)</m>.  Write a potential expression for <m>h(x)</m> emphasizing the roots and their multiplicities.
             </p>
-        </content>
-
-        <outtro>
-            <p>
-                There is a local {{extrema1}} when <m>x={{r1o}}</m>.
-            </p>
-            
-            {{#three}}
-            <p>
-                There is a local {{extrema2}} when <m>x={{r2o}}</m>.
-            </p>
-            {{/three}}
-            
-            
-            <p>
-                There is a local {{extrema3}} between <m>x={{r1}}</m> and <m>x={{r2}}</m>.
-            </p>
-            
-        </outtro>
-    </knowl>   
-    
-    <knowl>
-        <content>
-            <p>
-                Sketch <m>y={{f}}</m>.
-            </p>
-            
-        </content>
-        <outtro>
             <p>
                 <image
-                source="assets/PR5/generated/{{__seed__}}/plot.png"
-                description="The plot of y=f(x), along with special points."/>
+                source="assets/PR4/generated/{{__seed__}}/plot.png"
+                description="The plot of y=h(x), along with special points."/>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>h(x)={{h}}</m>
             </p>
         </outtro>
     </knowl>
