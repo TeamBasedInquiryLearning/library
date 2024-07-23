@@ -91,7 +91,7 @@
         <me> \frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2+h)-f(2)}{h}.</me>
     </observation>
     
-    <observation><p>We want to be able to consider intervals before and after <m>t=2</m>. A positive value of <m>h</m> will give an interval after <m>t=2</m>. For example, the interval <m>[2,3]</m> for <m>h=1</m>. A negative value of <m>h</m> will give an interval before <m>t=2</m>. For example, the interval <m>[1,2]</m> corresponds <m>h=-1</m>. In the formula above, it looks like the interval would be <m>[2,1]</m>, but the standard notation in an interval is to write the smallest number first. This does not change the difference quotient because </p>
+    <observation><p>We want to be able to consider intervals before and after <m>t=2</m>. A positive value of <m>h</m> will give an interval after <m>t=2</m>. For example, the interval <m>[2,3]</m> corresponds to <m>h=1</m>. A negative value of <m>h</m> will give an interval before <m>t=2</m>. For example, the interval <m>[1,2]</m> corresponds to <m>h=-1</m>. In the formula above, it looks like the interval would be <m>[2,1]</m>, but the standard notation in an interval is to write the smallest number first. This does not change the difference quotient because </p>
        <me> \frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2)-f(2+h)}{2-(2+h)}.</me>
     </observation>
     
