@@ -1,5 +1,5 @@
 ---
-title: Library
+title: TBIL Resource Library
 slug: library
 ---
 
