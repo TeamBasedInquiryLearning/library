@@ -1,0 +1,53 @@
+<!-- https://www.doenet.org/portfolioeditor/_AaXvsmulK6Z1Z1a4egHvM/_t0HTPkuac6Jx0v8CGFzKO -->
+<p>
+  Adjust the vectors <m>\vec u</m>, <m>\vec v</m>, and <m>\vec w</m> in the
+  left graph to visualize the areas calculated by
+  <m>\det[\vec u\hspace{0.5em}\vec w]</m>, <m>\det[\vec v\hspace{0.5em}\vec w]</m>,
+  and
+  <m>\det[\vec u+\vec v\hspace{0.5em}\vec w]</m>.
+</p>
+<sideBySide>
+  <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
+    <m draggable="false" anchor="$u/2+$w/2">
+      \det[\vec u\hspace{0.5em}\vec w]
+    </m>
+    <m draggable="false" anchor="$uPlusV/2+$u/2+$w/2">
+      \det[\vec v\hspace{0.5em}\vec w]
+    </m>
+    <point name="u" styleNumber="3">
+      (5,1)
+      <label><m>\vec u</m></label>
+    </point>
+    <point name="w" styleNumber="3">
+      (2,9)
+      <label><m>\vec w</m></label>
+    </point>
+    <point name="uPlusV" styleNumber="4">
+      (10,6)
+      <label><m>\vec v</m></label>
+    </point>
+    <polygon vertices="(0,0) $u $u+$w $w" filled draggable="false" styleNumber="3"/>
+    <polygon vertices="$u $uPlusV $uPlusV+$w $u+$w" filled draggable="false" styleNumber="4"/>
+    <lineSegment endpoints="(0,0) $uPlusV" styleNumber="6"/>
+    <lineSegment endpoints="$w $uPlusV+$w" styleNumber="6"/>
+  </graph>
+  <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
+    <m draggable="false" anchor="$uPlusV/2+$w/2">
+      \det[\vec u+\vec v\hspace{0.5em}\vec w]
+    </m>
+    <polygon vertices="(0,0) $uPlusV $uPlusV+$w $w" filled draggable="false" styleNumber="2"/>
+    <point draggable="false" styleNumber="3">
+      $w
+      <label><m>\vec w</m></label>
+    </point>
+    <point draggable="false" styleNumber="4">
+      $uPlusV
+      <label><m>\vec u+\vec v</m></label>
+    </point>
+    <lineSegment endpoints="(0,0) $u" styleNumber="6"/>
+    <lineSegment endpoints="$u $uPlusV" styleNumber="6"/>
+    <lineSegment endpoints="$w $w+$u" styleNumber="6"/>
+    <lineSegment endpoints="$u $w+$u" styleNumber="6"/>
+    <lineSegment endpoints="$w+$u $w+$uPlusV" styleNumber="6"/>
+  </graph>
+</sideBySide>
