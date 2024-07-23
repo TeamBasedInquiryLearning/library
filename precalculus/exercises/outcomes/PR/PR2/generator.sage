@@ -1,9 +1,7 @@
 class Generator(BaseGenerator):
     def data(self):
         var('x y t')
-        
-        sign = choice([-1, 1])
-        
+               
         scenariotypes = ["age", "proj", "cost"]
         scenario = choice(scenariotypes)
         
@@ -25,8 +23,8 @@ class Generator(BaseGenerator):
                 minage = round(q(minyear),1)
 
             tasks = [
-                {"taskX": {"minyear": minyear+1900}},
-                {"taskY": {"minage": minage}}
+                {"task_minyear": {"minyear": minyear+1900}},
+                {"task_minage": {"minage": minage}}
             ]
             shuffle(tasks)
 
@@ -51,16 +49,14 @@ class Generator(BaseGenerator):
             maxheight = q(maxtime)
 
             tasks = [
-                {"taskX": {"maxtime": round(maxtime,1)}},
-                {"taskY": {"maxheight": maxheight}},
+                {"task_maxtime": {"maxtime": round(maxtime,1)}},
+                {"task_maxheight": {"maxheight": maxheight}},
             ]
             shuffle(tasks)
 
             return {
                 scenario:True,
                 "q": q(t),
-                #"maxtime": round(maxtime,1),
-                #"maxheight": maxheight,
                 "c": c,
                 "r1":r1,
                 "tasks":tasks,
@@ -85,16 +81,14 @@ class Generator(BaseGenerator):
                 mincost = round(q(minprod),2)
 
             tasks = [
-                {"taskX": {"minprod": minprod}},
-                {"taskY": {"mincost": mincost}}
+                {"task_minprod": {"minprod": minprod}},
+                {"task_mincost": {"mincost": mincost}}
             ]
             shuffle(tasks)
 
             return {
                 scenario:True,
                 "q": q(x),
-                #"minprod": minprod,
-                #"mincost": mincost,
                 "widgetname": widgetname,
                 "tasks": tasks,
                 }
