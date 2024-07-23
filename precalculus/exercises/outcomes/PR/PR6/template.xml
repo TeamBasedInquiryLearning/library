@@ -2,22 +2,39 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
     
-    
-        
-    <!-- {{#zero}} -->
+    <intro>
+        <p>
+            Consider the rational function <m>\displaystyle f(x)=\frac{ {{num}} }{ {{denom}}  }</m>.
+        </p>
+    </intro>    
     <knowl>
         <content>
             <p>
-                Find the {{name1}} of the rational function <m>\displaystyle f(x)=\frac{ {{num}} }{ {{denom}}  }</m>.
+                Find the {{name1}} of the rational function <m>f(x)</m>.
             </p>
         </content>
 
+    <!-- {{^root}} -->
         <outtro>
             <p>
                 <m>f(x)=\displaystyle \frac{ {{num}} }{ {{denom}} }</m> has no {{name1}}.
             </p>
         </outtro>
-        
+    <!-- {{/root}} -->   
+    <!--{{#root}}-->
+        <outtro>
+            <p>
+                <m>x={{root}}</m>.
+            </p>
+        </outtro>
+    <!--{{/root}}-->
+    <!--{{#two}}-->
+        <outtro>
+            <p>
+                <m>x={{root}}</m>.
+            </p>
+        </outtro>
+    <!--{{/two}}-->
     </knowl> 
     
     <knowl>
@@ -92,189 +109,7 @@
             </p>
         </outtro>
     </knowl>
-    <!-- {{/zero}} -->
     
-    <!-- {{#one}} -->
-    <knowl>
-        <content>
-            <p>
-                Find the {{name1}} of the rational function <m>f(x)=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>x={{root}}</m>.
-            </p>
-        </outtro>
-        
-    </knowl> 
-    
-    <knowl>
-        <content>
-            <p>
-                Find the <m>y</m>-intercept of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                The <m>y</m>-intercept of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m> is <m>\left(0,{{yint}} \right)</m>.
-            </p>
-        </outtro>
-        
-    </knowl> 
-    
-    <knowl>
-        <content>
-            <p>
-                Find any horizontal asymptotes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>y={{horizontal}}</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find any vertical asymptotes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>x={{vertical}}</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find any holes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                There is a hole at <m>\left({{holex}}, {{holey}} \right)</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Sketch <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-            
-        </content>
-        <outtro>
-            <p>
-                <image
-                source="assets/PR6/generated/{{__seed__}}/plot.png"
-                description="The plot of y=f(x), along with special points."/>
-            </p>
-        </outtro>
-    </knowl>
-    <!-- {{/one}} -->
-    
-    <!-- {{#two}} -->
-    <knowl>
-        <content>
-            <p>
-                Find the {{name1}} of the rational function <m>f(x)=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>x={{root}}</m>.
-            </p>
-        </outtro>
-        
-    </knowl> 
-    
-    <knowl>
-        <content>
-            <p>
-                Find the <m>y</m>-intercept of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                The <m>y</m>-intercept of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m> is <m>\left(0,{{yint}} \right)</m>.
-            </p>
-        </outtro>
-        
-    </knowl> 
-    
-    <knowl>
-        <content>
-            <p>
-                Find any horizontal asymptotes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m> does not have a horizontal assymptote.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find any vertical asymptotes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>x={{vertical}}</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find any holes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                There is a hole at <m>\left({{holex}}, {{holey}} \right)</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Sketch <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
-            </p>
-            
-        </content>
-        <outtro>
-            <p>
-                <image
-                source="assets/PR6/generated/{{__seed__}}/plot.png"
-                description="The plot of y=f(x), along with special points."/>
-            </p>
-        </outtro>
-    </knowl>
-    <!-- {{/two}} -->
-    
-
         
 
         
