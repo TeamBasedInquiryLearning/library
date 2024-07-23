@@ -1,58 +1,47 @@
 class Generator(BaseGenerator):
     def data(self):
-        x=var("x")
-        y=var("y")
-        t=var("t")
-        w=var("w")
-        f="f"
-        g="g"
-        h="h"
-        
-        index1 = randint(0, 3)
-        index2 = randint(0, 3)
-        index3 = randint(0, 3)
-        
-        listvars=[x,y,t,w]
-        
-        functionnames=[f,g,h]
-
-        factors = [
-            #   x^(randrange(2,10)*choice([-1,1])),
-            #       x^(1/randint(2,10)*choice([-1,1])),
-            e^x,
-            cos(x),
-            sin(x),
-            log(x,e),
-        ]
-
-        shuffle(factors)
-        shuffle(functionnames)
-
-        coeffs = [randint(1,6)*choice([-1,1]) for _ in range(9)]
-        polynomials=[coeffs[3*i]*x^2+coeffs[3*i+1]*x+coeffs[3*i+2] for i in range(3)]
-
-        f1=factors[0]*polynomials[0]
-        f2=choice([factors[1]/polynomials[1], polynomials[1]/factors[1]])
-        f3=choice([x^(randrange(2,10)*(-1)), x^(1/randrange(2,10)*(-1))])*polynomials[2]
-
-        f1a = f1()(x=listvars[index1])
-        f2a = f2()(x=listvars[index2])
-        f3a = f3()(x=listvars[index3])
-        
-        df1=f1a.diff()
-        df2=f2a.diff()
-        df3=(f3a.diff()).full_simplify()
-
-        
-        functions = [
-            {"f":f1a,"dfdx":df1, "fn": functionnames[0], "v": listvars[index1]},
-            {"f":f2a,"dfdx":df2, "fn": functionnames[1], "v": listvars[index2]},
-            {"f":f3a,"dfdx":df3, "fn": functionnames[2], "v": listvars[index3]},
-        ]
-        shuffle(functions)
-        
-
+        x = var("x")
+        # generate a random table of values    
+        xs = sample(list(range(-2,3)),3)
+        xs.sort()
+        hx = sample([Integer(i) for i in range(-6, 7) if i != 0], 3)
+        hpx = sample(list(range(-2,3)),3)
+        table = [
+                {"xs":xs[i],"hx":hx[i], "hpx":hpx[i]}
+                for i in range(0,len(xs))
+            ]
+        #     generate a trig and transc function
+        trig = choice([cos,sin])
+        p = randrange(2,5)
+        f = randrange(1,5)*choice([-1,1])*trig(x)
+        g = randrange(1,5)*choice([-1,1])*exp(x)+ x^p
+        # solution
+        df=f.diff()
+        dg=g.diff()
+        prod1 = (f*g).diff()
+        quot1 = (df*g-f*dg)/(g^2)
+        prod2 = df(x=xs[0])*hx[0]+f(x=xs[0])*hpx[0]
+        quot2 = (dg(x=xs[1])*hx[1]-g(x=xs[1])*hpx[1])/((hx[1])^2)
+        r = x*f
+        dr=r.diff()
+        ddr=dr.diff()
+        dddr=ddr.diff()
+        ddddr=dddr.diff()
+        #dictionary for question
         return {
-          "functions": functions,
+            "f":f,
+            "g":g,
+            "table": table,
+            "x1": xs[0],
+            "x2": xs[1],
+            "x3": xs[2],
+            "prod1": prod1,
+            "prod2": prod2,
+            "quot1": quot1,
+            "quot2": quot2,
+            "dr":dr,
+            "ddr": ddr,
+            "dddr": dddr,
+            "ddddr": ddddr,
         }
 

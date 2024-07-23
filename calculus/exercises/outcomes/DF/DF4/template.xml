@@ -1,20 +1,68 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    <intro>
+    <content>
         <p>
-            Demonstrate and explain how to find the derivative of the following functions.
-            Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
+        Consider the functions 
+            <me>f(x)={{f}}, \, \, g(x)={{g}}</me>
+            and the function <m>h(x)</m> for which a table of values is given.
+             <me>
+\begin{array}{c|ccc}
+x {{#table}}&amp; \,{{xs}}\,{{/table}} \\\hline
+h(x) {{#table}}&amp; {{hx}}{{/table}}  \\\hline
+h'(x) {{#table}}&amp; {{hpx}}{{/table}}  \\             
+\end{array}
+            </me>
+In answering the following questions, be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.            
+  </p>
+ <list mode="ordered"> 
+      <item>
+                    <p>
+     Find the derivative of <m>f(x)\cdot g(x)</m>. 
         </p>
-    </intro>
-    <!-- {{#functions}} -->
-    <knowl>
-        <content><p><me>\renewcommand{\log}{\ln} {{fn}}({{v}})= {{f}}</me></p></content>
-        <outtro><p><me>\renewcommand{\log}{\ln} {{fn}}&apos; ({{v}})= {{dfdx}}</me></p></outtro>
-    </knowl>
-    <!-- {{/functions}} -->
+                </item>
+      <item>
+                    <p>
+     Find the derivative of <m>\displaystyle \frac{f(x)}{g(x)}</m>. 
+        </p>
+                </item>
+      <item>
+                    <p>
+     Find the value of the derivative of <m>f(x) \cdot h(x) </m> at <m>x={{x1}}</m>. 
+        </p>
+                </item>
+     <item>
+                    <p>
+     Find the value of the derivative of <m> \displaystyle \frac{g(x)}{h(x)}</m> at <m>x={{x2}}</m>. 
+        </p>
+                </item>
+         <item>
+                    <p>
+     Consider the function  
+                        <me>r(x) = {{f}} \cdot x .</me>
+    Find <m>r'(x)</m>, <m>r''(x)</m>, <m>r'''(x)</m>, and <m>r^{(iv)}(x)</m> so the first, second, third, and fourth derivative of <m>r(x)</m>. What pattern do you notice? What do you expect the twelfth derivative of <m>r(x)</m> to be? 
+        </p>
+                </item>
+            </list>
+    </content>
+    <outtro>
+        <list>
+        <item><p><m>(fg)'(x)={{prod1}}</m></p> </item> 
+            <item><p><m>(f/g)'(x)={{quot1}}</m></p> </item>   
+        <item><p><m>{{prod2}}</m></p> </item>
+        <item><p><m>{{quot2}}</m></p> </item>
+        <item><p>We have</p>
+            <list>
+                <item><p><m>r(x)={{f}} \cdot x</m></p></item>
+                <item><p><m>r'(x)={{dr}}</m></p></item>
+                <item><p><m>r''(x)={{ddr}}</m></p></item>
+                <item><p><m>r'''(x)={{dddr}}</m></p></item>
+                <item><p><m>r^{(iv)}={{ddddr}}</m></p></item>
+            </list>
+           <p>Patterns will vary but functions involved should repeat every four derivatives. </p> </item>
+        </list>
+        
+        
+        
+       <p></p>
+    </outtro>
 </knowl>
-
-
-
-
-
