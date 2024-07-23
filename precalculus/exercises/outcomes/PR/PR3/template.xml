@@ -1,18 +1,91 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <content>
-        <p>
-            Use long division to find the quotient and remainder for  <m>\displaystyle f(x) = \frac{ {{f}} }{ {{g}} }</m>.
-        </p>
-    </content>
+    <knowl>
+        <content>
+            <p>
+                Find the {{name1}} of the polynomial <m>f(x)={{f}}</m>.
+            </p>
+        </content>
+
+        <outtro>
+            <p>
+                The {{name1}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}</m>.
+            </p>
+        </outtro>
+        
+    </knowl> 
     
+    <knowl>
+        <content>
+            <p>
+                Find the <m>y</m>-intercept of <m>y={{f}}</m>.
+            </p>
+        </content>
+
+        <outtro>
+            <p>
+                The <m>y</m>-intercept of <m>y={{f}}</m> is <m>\left( 0, {{yint}}\right)</m>.
+            </p>
+        </outtro>
+        
+    </knowl> 
     
-    <outtro>
-        <p>
-            <m>\displaystyle f(x) = {{q}} + \frac{ {{r}} }{ {{g}} }</m>
-        </p>
-    </outtro>
+    <knowl>
+        <content>
+            <p>
+                Describe the end behavior of the graph <m>y={{f}}</m>.
+            </p>
+        </content>
+
+        <outtro>
+            <p>
+                As <m>x</m> approaches infinity, <m>y</m> {{rightbehavior}}.  As <m>x</m> approaches negative infinity, <m>y</m> {{leftbehavior}}.
+            </p>
+        </outtro>
+    </knowl>   
+    
+    <knowl>
+        <content>
+            <p>
+                Identify where any local maximums and minimums may occur.
+            </p>
+        </content>
+
+        <outtro>
+            <p>
+                There is a local {{extrema1}} when <m>x={{r1o}}</m>.
+            </p>
+            
+            {{#three}}
+            <p>
+                There is a local {{extrema2}} when <m>x={{r2o}}</m>.
+            </p>
+            {{/three}}
+            
+            
+            <p>
+                There is a local {{extrema3}} between <m>x={{r1}}</m> and <m>x={{r2}}</m>.
+            </p>
+            
+        </outtro>
+    </knowl>   
+    
+    <knowl>
+        <content>
+            <p>
+                Sketch <m>y={{f}}</m>.
+            </p>
+            
+        </content>
+        <outtro>
+            <p>
+                <image
+                source="assets/PR5/generated/{{__seed__}}/plot.png"
+                description="The plot of y=f(x), along with special points."/>
+            </p>
+        </outtro>
+    </knowl>
     
 
         
