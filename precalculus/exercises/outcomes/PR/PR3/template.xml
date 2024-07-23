@@ -4,7 +4,7 @@
     <knowl>
         <content>
             <p>
-                Find the {{name1}} of the polynomial <m>f(x)={{f}}</m>.
+                Find the {{name1}}, along with their corresponding multiplicities, of the polynomial <m>f(x)={{f}}</m>.
             </p>
         </content>
 
@@ -42,32 +42,6 @@
             <p>
                 As <m>x</m> approaches infinity, <m>y</m> {{rightbehavior}}.  As <m>x</m> approaches negative infinity, <m>y</m> {{leftbehavior}}.
             </p>
-        </outtro>
-    </knowl>   
-    
-    <knowl>
-        <content>
-            <p>
-                Identify where any local maximums and minimums may occur.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                There is a local {{extrema1}} when <m>x={{r1o}}</m>.
-            </p>
-            
-            {{#three}}
-            <p>
-                There is a local {{extrema2}} when <m>x={{r2o}}</m>.
-            </p>
-            {{/three}}
-            
-            
-            <p>
-                There is a local {{extrema3}} between <m>x={{r1}}</m> and <m>x={{r2}}</m>.
-            </p>
-            
         </outtro>
     </knowl>   
     

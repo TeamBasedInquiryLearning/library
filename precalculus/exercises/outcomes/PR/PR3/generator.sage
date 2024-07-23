@@ -60,31 +60,11 @@ class Generator(BaseGenerator):
             rightbehavior = "approaches negative infinity"
         
         
-        fpp(x) = f(x).derivative(x,2)
-        
-        half = (r1+r2)/2
-        extrema3 = "maximum"
-        
-        if f(half)<0:
-            extrema3 = "minimum"
-            
-        extrema1 = "maximum"
-        if fpp(r1)>0:
-            extrema1 = "minimum"
-        
-        extrema2 = "maximum"
-        if fpp(r2)>0:
-            extrema2 = "minimum"
-        scenario = "two"
-        
-        if n == 2:
-            scenario = "three"
             
         P = find_local_maximum(abs(f(x)), min(r1, r2), max(r1,r2))    
         height = P[0]
         
         return{
-            scenario:True,
             "f":f(x),
             "r1": min(r1, r2),
             "r2": max(r1, r2),
@@ -94,9 +74,6 @@ class Generator(BaseGenerator):
             "leftbehavior":leftbehavior,
             "rightbehavior":rightbehavior,
             "name1":name1,
-            "extrema1":extrema1,
-            "extrema2":extrema2,
-            "extrema3":extrema3,
             "height":ceil(height),
         }
         
