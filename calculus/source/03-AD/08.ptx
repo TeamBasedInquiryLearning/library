@@ -12,30 +12,96 @@
   <subsection>
     <title>Activities</title>
     
-      <activity xml:id="activity-ad8-box"> <title>The box</title>
+      <activity xml:id="activity-ad8-box"> 
+        <title>The box</title>
         <introduction>
             <p>
-              Help your company design an open box (no lid) with maximum volume given the following constraints:
+              Help your company design an open box (that is, a box with no lid) with maximum volume given the following constraints:
                 <ul>
-                <li>The box must be made from the following material: an 8 by 8 inches piece of cardboard.</li>
-                <li>To create the box, you are asked to cut out a square from each corner of the 8 by 8 inches piece of cardboard and to fold up the flaps to create the sides.</li>
+                <li>The box must be made from a square piece of cardboard that is 8 inches on each side.</li>
+                <li>To create the box, you are asked to cut out smaller squares from each corner of the 8 by 8 inches piece of cardboard and to 
+                  fold up the flaps to form the sides.</li>
                 </ul>
             </p>
         </introduction>
         <task>
-            <p>Draw a diagram illustrating how the box is created.</p>
+            <statement>
+              <p>Draw a diagram illustrating how the box is created. Label the lengths of segments in the diagram and write <m>x</m> for the
+              sides of the smaller squares to be removed from the 8 by 8 square.</p>
+            </statement>
+          <solution>
+            <image source="thebox-1">
+              <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
+            </image>
+          </solution>
         </task>
         <task>
-         <p> Explain why the volume of the box is a function of the side length <m>x</m> of the cutout squares.</p>
+          <statement>
+            <p>Which of the following gives the volume of the box as a function of the side length <m>x</m> of the smaller squares?</p>
+            <ol label="A.">
+              <li>
+                <m>V(x) = x^3</m>
+              </li>
+              <li>
+                <m>V(x) = x^2 \cdot (8 - x)</m>
+              </li>
+              <li>
+                <m>V(x) = x^2 \cdot (8 - 2x)</m>
+              </li>
+              <li>
+                <m>V(x) = x(8 - x)^2</m>
+              </li>
+            </ol>
+          </statement>
         </task>
-        <task>
+        <!-- <task>
          <p>Express the volume of the box <m>V</m> as a function of the length of the cuts <m>x</m>.</p>
+        </task> -->
+        <task>
+          <statement>
+            <p>For this problem, what is the best choice of domain for the function <m>V(x)</m>?</p>
+            <ol label="A.">
+              <li>
+                <m>0 \le x \le 4</m>
+              </li>
+              <li>
+                <m>0 \le x \le 8</m>
+              </li>
+              <li>
+                <m>0 \le x \lt \infty</m>
+              </li>
+              <li>
+                <m>-\infty \lt x \lt \infty</m>
+              </li>
+            </ol>
+          </statement>
         </task>
         <task>
-         <p>What is a realistic domain of the function <m>V(x)</m>?</p>
+         <statement>
+           <p>Which equations's solution(s) will include the cut value <m>x</m> that yields
+          the box of maximum volume?</p>
+           <ol label="A.">
+            <li>
+              <m>x^2 (8-2x) = 0</m>
+            </li>
+            <li>
+              <m>x(8-2x)^2 = 0</m>
+            </li>
+            <li>
+              <m>(8-2x)^2 - 2x = 0</m>
+            </li>
+            <li>
+              <m>(8-2x)^2 - 2x(8-2x) = 0</m>
+            </li>
+          </ol>
+         </statement>
         </task>
         <task>
-         <p>What cut length <m>x</m> maximizes the volume of the box?</p>
+          <statement>
+            <p>
+              What is the cut value that yields the box of maximum volume?
+            </p>
+          </statement>
         </task>
     </activity>
     
