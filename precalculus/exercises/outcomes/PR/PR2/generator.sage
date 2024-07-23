@@ -23,14 +23,18 @@ class Generator(BaseGenerator):
                 q(x) = a*x^2+b*x+c
                 minyear = round(-b/(2*a))
                 minage = round(q(minyear),1)
+
+            tasks = [
+                {"taskX": {"minyear": minyear+1900}},
+                {"taskY": {"minage": minage}}
+            ]
+            shuffle(tasks)
+
             return {
                 scenario:True,
                 "q": q(x),
-                "minyear": minyear+1900,
-                "minage": minage,
                 "townname": townname,
-
-
+                "tasks":tasks,
             }
         
         if scenario == "proj":
@@ -45,15 +49,21 @@ class Generator(BaseGenerator):
             q(t) = a*t^2+b*t+c
             maxtime = -b/(2*a)
             maxheight = q(maxtime)
+
+            tasks = [
+                {"taskX": {"maxtime": round(maxtime,1)}},
+                {"taskY": {"maxheight": maxheight}},
+            ]
+            shuffle(tasks)
+
             return {
                 scenario:True,
                 "q": q(t),
-                "maxtime": round(maxtime,1),
-                "maxheight": maxheight,
+                #"maxtime": round(maxtime,1),
+                #"maxheight": maxheight,
                 "c": c,
                 "r1":r1,
-
-
+                "tasks":tasks,
             }
             
            
@@ -73,12 +83,20 @@ class Generator(BaseGenerator):
                 q(x) = a*x^2+b*x+c
                 minprod = round(-1*b/(2*a))
                 mincost = round(q(minprod),2)
+
+            tasks = [
+                {"taskX": {"minprod": minprod}},
+                {"taskY": {"mincost": mincost}}
+            ]
+            shuffle(tasks)
+
             return {
                 scenario:True,
                 "q": q(x),
-                "minprod": minprod,
-                "mincost": mincost,
+                #"minprod": minprod,
+                #"mincost": mincost,
                 "widgetname": widgetname,
+                "tasks": tasks,
                 }
         
         

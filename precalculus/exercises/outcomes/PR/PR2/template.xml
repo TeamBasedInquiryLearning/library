@@ -7,6 +7,8 @@
             Suppose that in the town of {{townname}} that the average age of adult residents <m>x</m> years after 1900 was <m>a(x)={{q}}</m> years old.
         </p>
     </intro>
+    <!--{{#tasks}}-->
+    <!--{{#taskX}}-->
     <knowl>
         <content>
             <p>
@@ -19,10 +21,12 @@
             </p>
         </outtro>
     </knowl>
+    <!--{{/taskX}}-->
+    <!--{{#taskY}}-->
     <knowl>
         <content>
             <p>
-                What was the minimum average age?  (Round to the nearest tenth of a year)
+                What was the minimum average age?  (Round to the nearest tenth of a year).
             </p>
         </content>
         <outtro>
@@ -31,6 +35,8 @@
             </p>
         </outtro>
     </knowl>
+    <!--{{/taskY}}-->
+    <!--{{/tasks}}-->
     <!-- {{/age}} -->
     
     
@@ -40,6 +46,8 @@
             Consider a projectile that is fired into the air from an initial height of {{c}} feet.  The height after <m>t</m> seconds is <m>h(t)={{q}}</m> feet.
         </p>
     </intro>
+    <!-- {{#tasks}} -->
+    <!-- {{#taskZ}} -->
     <knowl>
         <content>
             <p>
@@ -52,6 +60,8 @@
             </p>
         </outtro>
     </knowl>
+    <!-- {{/taskZ}} -->
+    <!-- {{#taskX}} -->
     <knowl>
         <content>
             <p>
@@ -64,6 +74,8 @@
             </p>
         </outtro>
     </knowl>
+    <!-- {{/taskX}} -->
+    <!-- {{#taskY}}-->
     <knowl>
         <content>
             <p>
@@ -76,6 +88,8 @@
             </p>
         </outtro>
     </knowl>
+    <!-- {{/taskY}} -->
+    <!-- {{/tasks}} -->
     <!-- {{/proj}} -->
     
 
@@ -83,10 +97,12 @@
     <!-- {{#cost}} -->
     <intro>
         <p>
-            Suppose that in the cost per unit to produce <m>x</m> {{widgetname}} is <m>C(x)=
+            Suppose that the cost per unit to produce <m>x</m> {{widgetname}} is <m>C(x)=
             \${{q}}</m>.
         </p>
     </intro>
+    <!--{{#tasks}}-->
+    <!--{{#taskX}}-->
     <knowl>
         <content>
             <p>
@@ -99,6 +115,8 @@
             </p>
         </outtro>
     </knowl>
+    <!--{{/taskX}}-->
+    <!--{{#taskY}}-->
     <knowl>
         <content>
             <p>
@@ -111,6 +129,8 @@
             </p>
         </outtro>
     </knowl>
+    <!--{{/taskY}}-->
+    <!--{{/tasks}}-->
     <!-- {{/cost}} -->
         
 
