@@ -40,13 +40,13 @@
     <knowl>
         <content>
             <p>
-                Find the <m>y</m>-intercept of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
+                Find the <m>y</m>-intercept of <m>y=f(x)</m>.
             </p>
         </content>
 
         <outtro>
             <p>
-                The <m>y</m>-intercept of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m> is <m>\left(0,{{yint}} \right)</m>.
+                 <m>\left(0,{{yint}} \right)</m>
             </p>
         </outtro>
         
@@ -61,7 +61,12 @@
 
         <outtro>
             <p>
+            <!--{{^two}}-->
                 <m>y={{horizontal}}</m>.
+            <!--{{/two}}-->
+            <!--{{#two}}-->
+            None.
+            <!--{{/two}}-->
             </p>
         </outtro>
     </knowl>
@@ -69,7 +74,7 @@
     <knowl>
         <content>
             <p>
-                Find any vertical asymptotes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
+                Find any vertical asymptotes of <m>y=f(x)</m>.
             </p>
         </content>
 
@@ -83,13 +88,13 @@
     <knowl>
         <content>
             <p>
-                Find any holes of <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
+                Find any holes of <m>y=f(x)</m>.
             </p>
         </content>
 
         <outtro>
             <p>
-                There is a hole at <m>\left({{holex}}, {{holey}} \right)</m>.
+                <m>\left({{holex}}, {{holey}} \right)</m>.
             </p>
         </outtro>
     </knowl>
@@ -97,7 +102,8 @@
     <knowl>
         <content>
             <p>
-                Sketch <m>y=\displaystyle \frac{ {{num}} }{ {{denom}} }</m>.
+                Sketch the graph of <m>y=f(x)</m>. 
+                Be sure to include all important points and asymptotes you've found.
             </p>
             
         </content>
