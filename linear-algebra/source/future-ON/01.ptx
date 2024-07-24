@@ -123,14 +123,14 @@ The dot product combines two vectors and creates a scalar that gives us geometri
 <activity estimated-time="5">
     <introduction>
         <p>
-            Consider the vectors <m>\vec u=\left[\begin{array}{c} 2 \\ 1  \end{array}\right]</m> and <m>\vec u=\left[\begin{array}{c} 1 \\ 3  \end{array}\right].</m>
+            Consider the vectors <m>\vec u=\left[\begin{array}{c} 2 \\ 1  \end{array}\right]</m> and <m>\vec v=\left[\begin{array}{c} 1 \\ 3  \end{array}\right].</m>
         </p>
     </introduction>
 <task><p> Draw the triangle created by the two vectors in <m>\IR^2.</m> What vector represents the third side of the triangle? Is the answer unique?</p></task>
 <task><p> Find the length of each side of the triangle. </p></task>
 <task><p> Calculate the distance between <m>\vec u</m> and <m>\vec v</m>. </p></task>
 <task><p> Does the Pythagorean Theorem hold for this triangle? </p></task>
-<task><p> There exists a pair of orthogonal angles in the triangle from part (a). 
+<task><p> There exists a pair of orthogonal vectors in the triangle from part (a). 
     <ol marker="A.">
         <li>
             <p>
