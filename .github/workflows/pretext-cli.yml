@@ -87,7 +87,7 @@ jobs:
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: '## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}'
+                    body: '## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}\n\n- Precalculus: {{ steps.cloudflare_publish.outputs.url }}/precalculus/preview/instructor/frontmatter\n\n- Calculus: {{ steps.cloudflare_publish.outputs.url }}/calculus/preview/instructor/frontmatter\n\n- Linear Algebra: {{ steps.cloudflare_publish.outputs.url }}/linear-algebra/preview/instructor/frontmatter'
                   })
 
     deploy-ghpages:
