@@ -74,7 +74,7 @@ class Generator(BaseGenerator):
 
     @provide_data
     def graphics(data):
-        P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1)
+        P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
         P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
         for i in range(-9,10):
             P += line([(i,-0.2),(i,0.2)],color="black")
@@ -83,10 +83,18 @@ class Generator(BaseGenerator):
             P += arrow((data["solution2"],0),(10,0),color="#0088ff", width=3, arrowsize=3)
         else:
             P += arrow((data["solution2"],0),(-10,0),color="#0088ff", width=3, arrowsize=3)
-        P += circle((data["solution2"],0),0.2,color="#0088ff",fill=True)
+        # P += circle((data["solution2"],0),0.2,color="#0088ff",fill=True)
         P += text(f"${round(data['solution2'],ndigits=2)}$", (data["solution2"],0.6), color="black")
-        if data["ineq"] in ["<", ">"]:
-            P += circle((data["solution2"],0),0.15,color="white",fill=True)
+        if data["ineq"] == ">":
+            P += text("(", (data['solution2'],0), color="#0088ff", fontsize=16)
+        elif data["ineq"] == "<":
+            P += text(")", (data['solution2'],0), color="#0088ff", fontsize=16)
+        elif data["ineq"] == ">=":
+            P += text("[", (data['solution2'],0), color="#0088ff", fontsize=16)
+        elif data["ineq"] == "<=":
+            P += text("]", (data['solution2'],0), color="#0088ff", fontsize=16)
+        # if data["ineq"] in ["<", ">"]:
+        #     P += circle((data["solution2"],0),0.15,color="white",fill=True)
         P.axes(False)
         return {
             "plot": plot(P)
