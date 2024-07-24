@@ -43,13 +43,35 @@ class Generator(BaseGenerator):
             "eq": eq,
             "eq_set": eq_set,
             "ineq": ineq,
-            "ineq_interval": ineq_interval
+            "ineq_interval": ineq_interval,
+            "ineq_inside": ineq_inside,
+            "ineq_strict": ineq_strict,
+            "ineq_center": ineq_center,
+            "ineq_radius": ineq_radius,
         }
 
     @provide_data
     def graphics(data):
         P = TBILCalc.numberline_plot()
-        P += TBILCalc.inequality_plot(start=-2, strict_start=True, end=4, strict_end=False)
+        if data["ineq_inside"]:
+            P += TBILCalc.inequality_plot(
+                start=data["ineq_center"]-data["ineq_radius"],
+                strict_start=data["ineq_strict"],
+                end=data["ineq_center"]+data["ineq_radius"],
+                strict_end=data["ineq_strict"],
+                label_endpoints=False,
+            )
+        else:
+            P += TBILCalc.inequality_plot(
+                end=data["ineq_center"]-data["ineq_radius"],
+                strict_end=data["ineq_strict"],
+                label_endpoints=False,
+            )
+            P += TBILCalc.inequality_plot(
+                start=data["ineq_center"]+data["ineq_radius"],
+                strict_start=data["ineq_strict"],
+                label_endpoints=False,
+            )
         P.axes(False)
         return {
             "ineq_plot": plot(P)
