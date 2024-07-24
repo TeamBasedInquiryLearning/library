@@ -61,7 +61,7 @@
         <p> The last type of notation is known as <em>differential</em> (or Leibniz) notation for the derivative.</p></remark>
     
    <remark xml:id="derivative-notation2"> 
-    <p>Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'(t)=\frac{dy}{dt}=\frac{dv}{dt}</m>.</p>
+    <p>Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'(t)=\dfrac{dy}{dt}=\dfrac{dv}{dt}</m>.</p>
     </remark>
     
     <activity xml:id="activity-derivative-analytically-algebraic1">
@@ -190,7 +190,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     
       <activity xml:id="activity-derivative-analytically-algebraic4">
           <introduction>
-            <p> Consider the function <m>f(x) = \frac{1}{x^2}</m>. You will find <m>f'(1)</m> in two ways!  </p>   </introduction>
+            <p> Consider the function <m>f(x) = \dfrac{1}{x^2}</m>. You will find <m>f'(1)</m> in two ways!  </p>   </introduction>
                  <task> <p> Using the limit definition of the derivative at a point, compute the difference quotient on the interval <m>[1,1+h]</m> and then take the limit as <m>h\to 0</m>. What do you get? </p> 
              <ol marker="A." cols="2">
                 <li><p> -1 </p></li>

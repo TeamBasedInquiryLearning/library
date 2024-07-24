@@ -48,7 +48,7 @@
       <p>  My neighborhood is being invaded! The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. How fast is the squirrel population growing per week? </p>
       </introduction>
            <task>
-        <p> The scenario gives you information regarding the rate of growth of <m>s(a)</m>, the squirrel population as a function of acorn availability (measured in bushels). What is the current value of <m>\frac{ds}{da}</m>? </p>
+        <p> The scenario gives you information regarding the rate of growth of <m>s(a)</m>, the squirrel population as a function of acorn availability (measured in bushels). What is the current value of <m>\dfrac{ds}{da}</m>? </p>
            <ol marker="A." cols="2">
                 <li><p> 2 </p></li>
                  <li><p>100  </p></li>
@@ -57,7 +57,7 @@
               </ol>
                </task>
         <task>
-        <p> The scenario gives you information regarding the rate of growth of <m>a(t)</m>, the acorn availability as a function of time (measured in weeks). What is the current value of <m>\frac{da}{dt}</m>? </p>
+        <p> The scenario gives you information regarding the rate of growth of <m>a(t)</m>, the acorn availability as a function of time (measured in weeks). What is the current value of <m>\dfrac{da}{dt}</m>? </p>
            <ol marker="A." cols="2">
                 <li><p> 2 </p></li>
                  <li><p>100  </p></li>
@@ -66,7 +66,7 @@
               </ol>
                </task>
        <task>
-        <p> Given all the information provided, what is your best guess for the value of  <m>\frac{ds}{dt}</m>, the rate at which the squirrel population is growing per week? </p>
+        <p> Given all the information provided, what is your best guess for the value of  <m>\dfrac{ds}{dt}</m>, the rate at which the squirrel population is growing per week? </p>
            <ol marker="A." cols="2">
                 <li><p> 2 </p></li>
                  <li><p>100  </p></li>
@@ -75,7 +75,7 @@
               </ol>
                </task>
              <task>
-        <p> Given your answers above, what is the relationship between <m>\frac{ds}{da}, \frac{da}{dt}, \frac{ds}{dt}</m>? </p>
+        <p> Given your answers above, what is the relationship between <m>\dfrac{ds}{da}, \dfrac{da}{dt}, \dfrac{ds}{dt}</m>? </p>
                </task>
                    </activity>
 
@@ -84,14 +84,14 @@
     <title>Chain Rule</title>
     <p>
         When looking at the composite function <m>f(g(x))</m>, we have that
-        <me>\frac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). </me>
+        <me>\dfrac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). </me>
         Using differential notation, if we consider the composite function <m>(v \circ u)(x)</m>, we have that
-        <me>\frac{dv}{dx}= \frac{dv}{du} \cdot \frac{du}{dx} </me>.
+        <me>\dfrac{dv}{dx}= \dfrac{dv}{du} \cdot \dfrac{du}{dx} </me>.
         This is known as the <term>chain rule</term><idx>chain rule</idx>.
     </p>
 </theorem>
 
-    <warning xml:id="chain-rule-warning"> <p> It is important to consider the input of a function when taking the derivative! In fact, <m>f'(g(x))</m>  and <m>f'(x)</m> are different functions... So computing <m>  \frac{dv}{dx} </m> gives a different result than computing <m>  \frac{dv}{du} </m>. </p></warning>
+    <warning xml:id="chain-rule-warning"> <p> It is important to consider the input of a function when taking the derivative! In fact, <m>f'(g(x))</m>  and <m>f'(x)</m> are different functions... So computing <m>  \dfrac{dv}{dx} </m> gives a different result than computing <m>  \dfrac{dv}{du} </m>. </p></warning>
 
     <activity xml:id="activity-chain-rule-warning">
            <task>
@@ -272,11 +272,11 @@
 = 2\left(50\sin(2t)+60\right)+10. </me>
           </introduction>
            <task>
-        <p> Check that the model satisfies the data <m>\frac{ds}{da}=2</m> and <m>\frac{da}{dt}\big|_{t=0} = 100 </m></p>
+        <p> Check that the model satisfies the data <m>\dfrac{ds}{da}=2</m> and <m>\dfrac{da}{dt}\big|_{t=0} = 100 </m></p>
 
                </task>
            <task>
-        <p> Find the derivative function <m>\frac{ds}{dt}</m> and check that <m>\frac{ds}{dt}|_{t=0} = 200</m>.  </p>
+        <p> Find the derivative function <m>\dfrac{ds}{dt}</m> and check that <m>\dfrac{ds}{dt}|_{t=0} = 200</m>.  </p>
                </task>
        <task>
         <p> According to this model, what is the maximum and minimum squirrel population? What is the fastest rate of increase and decrease of the squirrel population? When will these extremal scenarions occur?</p>
