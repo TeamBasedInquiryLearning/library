@@ -64,7 +64,9 @@ class Generator(BaseGenerator):
             face = "downwards"
             extrema = "maximum"
         
-        
+        form = choice(["standard","vertex"])
+        if form=="vertex":
+            q(x)=a*(x-h)^2+k
         
         
         
