@@ -1,47 +1,62 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-Solve the following. Express your solution in set or interval notation,
-and graphically on a number line.
-        </p>
-    </intro>
     
     <knowl>
         <content>
             <p>
+Solve the following equation:
 <m>{{eq}}</m>
             </p>
         </content>
         <outtro>
             <p>
-Set notation: <m>{{eq_set}}</m>
-            </p>
-            <p>
-<image
-    source="assets/EQ4/generated/{{__seed__}}/eq_plot.png"
-    description="Solution to inequality."/>
+<m>x = {{eq_set}}</m>
             </p>
         </outtro>
     </knowl>
-    
+
+    <!-- {{#ineqs}} -->
     <knowl>
-        <content>
+        <intro>
             <p>
-<m>{{ineq}}</m>
+Consider the inequality <m>{{ineq}}</m>.
             </p>
-        </content>
-        <outtro>
-            <p>
-Interval notation: <m>{{ineq_interval}}</m>
-            </p>
-            <p>
+        </intro>
+        <knowl>
+            <content>
+                <p>
+Describe its solutions using interval notation.
+                </p>
+            </content>
+            <outtro>
+                <p>
+<m>{{ineq_interval}}</m>
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+Graph its solutions on a number line.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                <!-- {{#ineq_inside}} -->
 <image
-    source="assets/EQ4/generated/{{__seed__}}/ineq_plot.png"
+    source="assets/EQ4/generated/{{__seed__}}/ineq_inside_plot.png"
     description="Solution to inequality."/>
-            </p>
-        </outtro>
+                <!-- {{/ineq_inside}} -->
+                <!-- {{^ineq_inside}} -->
+<image
+source="assets/EQ4/generated/{{__seed__}}/ineq_outside_plot.png"
+description="Solution to inequality."/>
+            <!-- {{/ineq_inside}} -->
+                </p>
+            </outtro>
+        </knowl>
     </knowl>
+    <!-- {{/ineqs}} -->
     
 </knowl>
