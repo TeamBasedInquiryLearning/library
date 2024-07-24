@@ -10,7 +10,9 @@
 
         <outtro>
             <p>
-                The {{name1}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}</m>.
+                The {{name1}} of <m>f(x)={{f}}</m> are
+                <m>x  = {{r1o}}</m> with multiplicity <m>2</m>,
+                and <m>x = {{r2o}}</m> with multiplicity <m>{{r2mult}}</m>.
             </p>
         </outtro>
         

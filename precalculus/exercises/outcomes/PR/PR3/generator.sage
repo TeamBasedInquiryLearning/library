@@ -46,6 +46,7 @@ class Generator(BaseGenerator):
             "r2": max(r1, r2),
             "r1o": r1,
             "r2o": r2,
+            "r2mult": n,
             "yint":yint,
             "leftbehavior":leftbehavior,
             "rightbehavior":rightbehavior,
