@@ -14,7 +14,7 @@
     
 <activity xml:id="activity-in5-1">
     <introduction>
-        <p> Find the area beteween <m>f(x)=\frac{1}{2}x+2</m> and the <m>x</m>-axis from <m>x=2</m> to <m>x=6</m>. </p>
+        <p> Find the area between <m>f(x)=\dfrac{1}{2}x+2</m> and the <m>x</m>-axis from <m>x=2</m> to <m>x=6</m>. </p>
     </introduction>
     
     <figure xml:id="in5-figure-1">
@@ -34,24 +34,24 @@
     <definition xml:id="definition-in5-2">
         <statement>
             <p>Let <m>f(x)</m> be a continuous function on the interval <m>[a,b]</m>. Divide the interval into <m>n</m> subdivisions of equal width, <m>\Delta x</m>, and choose a point <m>x_i</m> in each interval. Then, the <b>definite integral of <m>f(x)</m> from <m>a</m> to <m>b</m></b> is</p>
-            <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx</me>
+            <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)\, dx</me>
         </statement>
     </definition>
 
     <activity xml:id="activity-in5-3">
     <introduction>
-        <p>How does <m>\displaystyle \int_2^6 \left(\frac{1}{2}x+2\right) \, dx</m> relate to <xref ref="activity-in5-1"/>? Could you use <xref ref="activity-in5-1"/> to find <m>\displaystyle \int_0^4 \left(\frac{1}{2}x+2\right) \, dx</m>? What about <m>\displaystyle \int_1^7 \left(\frac{1}{2}x+2\right) \, dx</m>? </p>
+        <p>How does <m>\displaystyle \int_2^6 \left(\dfrac{1}{2}x+2\right) \, dx</m> relate to <xref ref="activity-in5-1"/>? Could you use <xref ref="activity-in5-1"/> to find <m>\displaystyle \int_0^4 \left(\dfrac{1}{2}x+2\right) \, dx</m>? What about <m>\displaystyle \int_1^7 \left(\dfrac{1}{2}x+2\right) \, dx</m>? </p>
     </introduction>
     </activity>
 
     <remark xml:id="remark-in5-1"> <title>Properties of Definite Integrals</title>  
     <p>
     <ol>   
-    <li>If <m>f</m> is defined at <m>x=a</m>, then <m>\displaystyle \int_a^a f(x)  \, dx =0</m>.</li>
-    <li>If <m>f</m> is integrable on <m>[a,b]</m>, then <m>\displaystyle \int_a^b f(x)  \, dx = - \displaystyle \int_b^a f(x)  \, dx</m>. </li>
-    <li>If <m>f</m> is integrable on <m>[a,b]</m> and <m>c</m> is in <m>[a,b]</m>, then <m>\displaystyle \int_a^b f(x)  \, dx  = \displaystyle \int_a^c f(x)  \, dx + \displaystyle \int_c^b f(x)  \, dx</m>. </li>
-    <li>If <m>f</m> is integrable on <m>[a,b]</m> and <m>k</m> is a constant, then <m>kf</m> is integrable on <m>[a,b]</m> and <m> \displaystyle \int_a^b kf(x)  \, dx = k\displaystyle \int_a^b f(x)  \, dx</m>.</li>
-    <li>If <m>f</m> and <m>g</m> are integrable on <m>[a,b]</m>, then <m>f\pm g</m> are integrable on <m>[a,b]</m> and <m>\displaystyle \int_a^b [f(x) \pm g(x)]  \, dx =\displaystyle \int_a^b f(x) \, dx \pm \displaystyle  \int_a^b g(x) \, dx</m>. </li>
+    <li>If <m>f</m> is defined at <m>x=a</m>, then <m>\displaystyle \int_a^a f(x) \, dx =0</m>.</li>
+    <li>If <m>f</m> is integrable on <m>[a,b]</m>, then <m>\displaystyle \int_a^b f(x) \, dx = - \displaystyle \int_b^a f(x)  \, dx</m>. </li>
+    <li>If <m>f</m> is integrable on <m>[a,b]</m> and <m>c</m> is in <m>[a,b]</m>, then <m>\displaystyle \int_a^b f(x)  \, dx  = \displaystyle \int_a^c f(x) \, dx + \displaystyle \int_c^b f(x)  \, dx</m>. </li>
+    <li>If <m>f</m> is integrable on <m>[a,b]</m> and <m>k</m> is a constant, then <m>kf</m> is integrable on <m>[a,b]</m> and <m> \displaystyle \int_a^b kf(x) \, dx = k\displaystyle \int_a^b f(x)  \, dx</m>.</li>
+    <li>If <m>f</m> and <m>g</m> are integrable on <m>[a,b]</m>, then <m>f\pm g</m> are integrable on <m>[a,b]</m> and <m>\displaystyle \int_a^b [f(x) \pm g(x)] \, dx =\displaystyle \int_a^b f(x) \, dx \pm \displaystyle  \int_a^b g(x) \, dx</m>. </li>
      </ol> </p>
     </remark>
     
@@ -84,7 +84,7 @@
 <theorem xml:id="theorem-in5-2"><title>The Fundamental Theorem of Calculus </title>
     <introduction>
     <p>If a function <m>f</m> is continuous on the closed interval <m>[a,b]</m> and <m>F</m> is an antiderivative of <m>f</m> on the interval <m>[a,b]</m>, then</p>
-        <me>\displaystyle \int_a^b f(x) \, dx = F(b)-F(a)</me>
+        <me>\displaystyle \int_a^b f(x)\, dx = F(b)-F(a)</me>
     </introduction>
 </theorem>
     
@@ -94,21 +94,21 @@
     </introduction>
     
    <task>
-       <p> <m> \displaystyle \int_0^2 \left(x^2+3\right) \, dx </m></p>
+       <p> <m> \displaystyle \int_0^2 \left(x^2+3\right)\, dx </m></p>
        <figure xml:id="in5-figure-3">
           <image width="50%" source="x2plus3.png" />
        </figure>
     </task>
     
     <task>
-       <p> <m> \displaystyle \int_1^4 \left(\sqrt{x}\right) \, dx </m></p>
+       <p> <m> \displaystyle \int_1^4 \left(\sqrt{x}\right)\, dx </m></p>
        <figure xml:id="in5-figure-4">
           <image width="50%" source="sqrtx.png" />
        </figure>
     </task>
     
     <task>
-       <p> <m> \displaystyle \int_{-\pi/4}^{\pi/2} \left(\cos x\right) \, dx </m></p>
+       <p> <m> \displaystyle \int_{-\pi/4}^{\pi/2} \left(\cos x\right)\, dx </m></p>
        <figure xml:id="in5-figure-5">
           <image width="50%" source="cosx.png" />
        </figure>
@@ -144,7 +144,7 @@
             <p>Set up a definite integral that represents the shaded area. Then find the area of the given region using the definite integral. </p>
         </introduction>
         <task>
-            <p><m>y=\frac{1}{x^2}</m></p>
+            <p><m>y=\dfrac{1}{x^2}</m></p>
             <figure xml:id="in5-figure-8">
           <image width="50%" source="defintarea1.png" />
        </figure>
@@ -168,21 +168,21 @@ Leave all answers in exact form, with no decimal approximations.
                 <task>
                     <p>
                         <me>
-\int_{ -3 }^{ -2 } \left( -9 \, x^{3} - 9 \, x^{2} + 1 \right) dx
+\int_{ -3 }^{ -2 } \left( -9 \, x^{3} - 9 \, x^{2} + 1 \right) \, dx
                         </me>
                     </p>
                 </task>
                 <task>
                     <p>
                         <me>
-\int_{ \frac{7}{6} \, \pi }^{ \frac{5}{4} \, \pi } \left( -3 \, \sin\left(x\right) \right) dx
+\int_{ \dfrac{7}{6} \, \pi }^{ \dfrac{5}{4} \, \pi } \left( -3 \, \sin\left(x\right) \right) \, dx
                         </me>
                     </p>
                 </task>
                 <task>
                     <p>
                         <me>
-\int_{ 2 }^{ 6 } \left( 3 \, e^{x} \right) dx
+\int_{ 2 }^{ 6 } \left( 3 \, e^{x} \right) \, dx
                         </me>
                     </p>
                 </task>
@@ -190,8 +190,8 @@ Leave all answers in exact form, with no decimal approximations.
    <!-- <answer>
         <p>
            <ol>
-                <li><p><me>\frac{361}{4}</me></p></li>
-                <li><p><me>\frac{3}{2} \, \sqrt{3} - \frac{3}{2} \, \sqrt{2}</me></p></li>
+                <li><p><me>\dfrac{361}{4}</me></p></li>
+                <li><p><me>\dfrac{3}{2} \, \sqrt{3} - \dfrac{3}{2} \, \sqrt{2}</me></p></li>
                 <li><p><me>3 \, e^{6} - 3 \, e^{2}</me></p></li>
             </ol>
         </p>

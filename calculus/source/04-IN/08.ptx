@@ -25,7 +25,7 @@
     
     <task><p>Use algebra to find the points where the graphs of <m>f</m> and <m>g</m> intersect. </p></task>
     
-    <task><p>Sketch an accurate graph of <m>f</m> and <m>g</m> on the <m>xy</m> plane,
+    <task><p>Sketch an accurate graph of <m>f</m> and <m>g</m> on the <m>xy</m><ndash/>plane,
           labeling the curves by name and the intersection points with ordered pairs.</p>
      </task>
     
@@ -94,7 +94,7 @@
         <m>y = g(x)</m> intersect at <m>(a,g(a))</m> and <m>(b,g(b))</m>,
         and for all <m>x</m> such that
         <m>a \le x \le b</m>, <m>f(x) \ge g(x)</m>,
-        then the area between the curves is <m>A = \int_a^b (f(x) - g(x)) \, dx</m>.
+        then the area between the curves is <m>A = \displaystyle \int_a^b (f(x) - g(x)) \, dx</m>.
       </p>
     </fact>
     
@@ -111,7 +111,7 @@
       </p></introduction>
     
     <task><p>The finite region bounded by
-            <m>y = \sqrt{x}</m> and <m>y = \frac{1}{4}x</m>.</p></task>
+            <m>y = \sqrt{x}</m> and <m>y = \dfrac{1}{4}x</m>.</p></task>
     
     <task><p> The finite region bounded by
         <m>y = 12-4x^2</m> and <m>y = x^2 - 8</m>.</p></task>
@@ -136,7 +136,7 @@ Let <m>\mathbf{R}</m> be the finite region bounded by the graphs of
         <p>
 Sketch an illustration of <m>\mathbf R</m>, and then
 explain how to express the area of <m>\mathbf R</m> in the
-following two ways:(Do not evaluate either definite integral.)
+following two ways (Do not evaluate either definite integral):
         </p>
 
         <ol>
@@ -168,7 +168,7 @@ As a definite integral with respect to <m>y</m>.
             <li>
                 <p>
                     <me>
-\int_{ -1 }^{ 48 } \left(\frac{1}{7} \, y + \sqrt{y + 1} + \frac{1}{7}\right)dy
+\int_{ -1 }^{ 48 } \left(\dfrac{1}{7} \, y + \sqrt{y + 1} + \dfrac{1}{7}\right)dy
                     </me>
                 </p>
             </li>
