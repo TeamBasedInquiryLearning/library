@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <knowl>
+        <content>
+            <p> Solve the linear equation 
+                <!--{{#shuffle}}-->
+                <m>{{a}}({{LHS}})={{RHS}}</m>.
+                <!--{{/shuffle}}-->
+                <!--{{^shuffle}}-->
+                <m>{{RHS}}={{a}}({{LHS}})</m>.
+                <!--{{/shuffle}}-->
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{variable}}={{solution}}</m>
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                Solve the linear inequality 
+                <!--{{#shuffleineq}}-->
+                <me>{{aa}}({{LHSineq}}) {{ineq}} {{RHSineq}}.</me>
+                <!--{{/shuffleineq}}-->
+                <!--{{^shuffleineq}}-->
+                <me>{{LHSineq}} {{ineq}} {{aa}}({{RHSineq}}).</me>
+                <!--{{/shuffleineq}}-->
+                Express your solution in interval notation and graphically on a number line.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{interval}}</m>
+            </p>
+            <p>
+                <image
+                    source="assets/EQ1/generated/{{__seed__}}/plot.png"
+                    description="Solution to inequality."/>
+            </p>
+        </outtro>
+    </knowl>
+    
+</knowl>

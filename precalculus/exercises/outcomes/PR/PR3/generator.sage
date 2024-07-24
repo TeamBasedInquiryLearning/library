@@ -59,6 +59,8 @@ class Generator(BaseGenerator):
             leftbehavior = "approaches negative infinity"
             rightbehavior = "approaches negative infinity"
         
+        half = (r1+r2)/2
+        extrema3 = "maximum"
         
             
         P = find_local_maximum(abs(f(x)), min(r1, r2), max(r1,r2))    
