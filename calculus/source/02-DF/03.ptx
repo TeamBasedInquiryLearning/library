@@ -140,12 +140,12 @@
         </statement>
     </activity>
     
-    <activity xml:id="neg-fract-powers"><introduction><p>We can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \dfrac{1}{x^4}</m>. What is the derivative of these two functions?</p></introduction>
+    <activity xml:id="neg-fract-powers"><introduction><p>We can look at power functions with fractional exponents like <m>f(x)= x^{1/4}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \dfrac{1}{x^4}</m>. What is the derivative of these two functions?</p></introduction>
      <ol marker="A." cols="2">
-                <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^3}.</m></li>
-                 <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^5}.</m></li>
-                <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^3}.</m></li>
-                <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^5}.</m></li>
+                <li><m>f'(x) = \dfrac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \dfrac{-4}{x^3}.</m></li>
+                 <li><m>f'(x) = \dfrac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \dfrac{-4}{x^5}.</m></li>
+                <li><m>f'(x) = \dfrac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \dfrac{-4}{x^3}.</m></li>
+                <li><m>f'(x) = \dfrac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \dfrac{-4}{x^5}.</m></li>
             </ol>
     </activity>
     

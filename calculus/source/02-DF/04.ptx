@@ -259,7 +259,7 @@
      <task> <p> What is the domain of <m>p(x)</m>?</p></task>
      <task> <p>  Use the quotient rule to develop a formula for <m> p'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
 </p> </task>
-     <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the cotangent and cosecant functions.</p></task>
+     <task><p>Use other relationships among trigonometric functions to write <m> p'(x)</m> only in terms of the the cotangent and cosecant functions.</p></task>
      <task><p>  What is the domain of <m>p'(x)</m>?
           How does this domain compare to the domain of <m>p'(x)</m>?</p></task>
      
@@ -267,12 +267,12 @@
     
 <theorem xml:id="thm-df-other-trig-rules"> <p> We can now summarize the derivatives of all six trigonometric functions.</p>
     <ul>
-        <li><m>\dfrac{d}{dx} \sin x = \cos x</m></li>
-        <li><m>\dfrac{d}{dx} \cos x = -\sin x</m></li>
-        <li><m>\dfrac{d}{dx} \tan x = (\sec x)^2</m></li>
-        <li><m>\dfrac{d}{dx} \cot x = -(\csc x)^2</m></li>
-        <li><m>\dfrac{d}{dx} \sec x = \sec x \tan x </m></li>
-        <li><m>\dfrac{d}{dx} \csc x = -\csc x \cot x </m></li>
+        <li><m>\dfrac{d}{dx} [\sin x] = \cos x</m></li>
+        <li><m>\dfrac{d}{dx} [\cos x] = -\sin x</m></li>
+        <li><m>\dfrac{d}{dx} [\tan x] = (\sec x)^2</m></li>
+        <li><m>\dfrac{d}{dx} [\cot x] = -(\csc x)^2</m></li>
+        <li><m>\dfrac{d}{dx} [\sec x] = \sec x \tan x </m></li>
+        <li><m>\dfrac{d}{dx} [\csc x] = -\csc x \cot x </m></li>
     </ul>
     </theorem>
     
@@ -301,7 +301,7 @@ In answering the following questions, be sure to explicitly denote which derivat
                 </task>
       <task>
                     <p>
-     Find the derivative of <m>\displaystyle \frac{f(x)}{g(x)}</m>. 
+     Find the derivative of <m> \dfrac{f(x)}{g(x)}</m>. 
         </p>
                 </task>
       <task>
@@ -311,7 +311,7 @@ In answering the following questions, be sure to explicitly denote which derivat
                 </task>
      <task>
                     <p>
-     Find the value of the derivative of <m> \displaystyle \frac{g(x)}{h(x)}</m> at <m>x=0</m>. 
+     Find the value of the derivative of <m>\dfrac{g(x)}{h(x)}</m> at <m>x=0</m>. 
         </p>
                 </task>
          <task>
@@ -343,7 +343,7 @@ In answering the following questions, be sure to explicitly denote which derivat
 </activity>
     
       <activity xml:id="quotient-rule-graphs">
-    <task><p> Differentiate <m>y = \displaystyle  \frac{e^x}{x}, y = \displaystyle \frac{e^x}{x^2}, y = \displaystyle \frac{e^x}{x^3}</m>. Simplify your answers as much as possible.
+    <task><p> Differentiate <m>y = \displaystyle  \frac{e^x}{x},\, y = \displaystyle \frac{e^x}{x^2},\, y = \displaystyle \frac{e^x}{x^3}</m>. Simplify your answers as much as possible.
     </p></task>
         <task><p> What do you expect the derivative of <m>y = \displaystyle \frac{e^x}{x^n}</m> to be? Prove your guess!
     </p></task>
@@ -368,7 +368,7 @@ In answering the following questions, be sure to explicitly denote which derivat
         </task>
             <task> <p>
       Find the derivative of the revenue when <m>p=140</m>, so find the value of
-            <me> \frac{dR}{dp}\Big|_{p=140}. </me> </p>
+            <me> \frac{dR}{dp}\bigg\rvert_{p=140}. </me> </p>
         </task>
             <task> <p>
       What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from  $140 to  $141? </p>

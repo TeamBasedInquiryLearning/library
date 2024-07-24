@@ -12,14 +12,14 @@
   <subsection>
     <title>Activities</title>
     <observation xml:id="obs-df-implicit1">
-    Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <m>x</m> and <m>y</m> is given explicitly, such as <m>y = f(x)</m>.  In this section we will examine when the relationship between <m>x</m> and <m>y</m> is given implicity. An implicit equation looks like <m>f(x,y) = g(x,y)</m> where both sides of the equation may depend on both <m>x</m> and <m>y</m>.
+    Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <m>x</m> and <m>y</m> is given explicitly, such as <m>y = f(x)</m>.  In this section we will examine when the relationship between <m>x</m> and <m>y</m> is given implicitly. An implicit equation looks like <m>f(x,y) = g(x,y)</m> where both sides of the equation may depend on both <m>x</m> and <m>y</m>.
     </observation>
     
     <observation xml:id="obs-df-implicit2">
     Note that if we are taking the derivative of <m>f(x)</m> with respect to <m>x</m>, then  
-        <me>\frac{d}{dx}(f(x)) = f'(x).</me>
+        <me>\frac{d}{dx}(f(x)) = f'(x)</me>
         However, if we are taking the derivative of <m>g(y(x))</m> with respect to <m>x</m>, then 
-          <me>\frac{d}{dx}(g(y)) = g'(y) \cdot \frac{dy}{dx}.</me>
+          <me>\frac{d}{dx}(g(y)) = g'(y) \cdot \frac{dy}{dx}</me>
     </observation>
     
   <activity xml:id="activity-derivative-implicit1">

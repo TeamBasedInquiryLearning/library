@@ -112,7 +112,7 @@
     </activity>
     
  <definition xml:id = "def-inst-vel"> 
-     <p> The instanteous velocity at <m>t=a</m> is the limit as <m>h \to 0</m> of the difference quotient <m>\dfrac{f(a+h)-f(a)}{h}</m>. In the activity above the instantaneous velocity at <m>t=2</m> is given by the limit
+     <p> The instantaneous velocity at <m>t=a</m> is the limit as <m>h \to 0</m> of the difference quotient <m>\dfrac{f(a+h)-f(a)}{h}</m>. In the activity above the instantaneous velocity at <m>t=2</m> is given by the limit
      </p>
      <me>
      v(2) = \lim_{h\to 0} \dfrac{f(2+h)-f(2)}{h}</me>    

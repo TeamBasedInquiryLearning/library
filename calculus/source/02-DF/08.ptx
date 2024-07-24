@@ -144,7 +144,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 
 <activity xml:id="activity-df-inv2"> <introduction><p>Use the general formula for the derivative of the inverse function from <xref ref ="rmk-df-inv-general"/>  to find...</p></introduction>
     <task><p>The derivative of the inverse function of <m>f(x) = e^x</m>... This should match the result of <xref ref ="activity-df-inv-ln"/>!</p></task>
-      <task><p>The derivative of the inverse function of <m>f(x) = \dfrac{1}{x}</m>... This should match a derative that you have seen before! See if you can explain why.</p></task>
+      <task><p>The derivative of the inverse function of <m>f(x) = \dfrac{1}{x}</m>... This should match a derivative that you have seen before! See if you can explain why.</p></task>
     </activity>
 
 
@@ -154,7 +154,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     
 <activity xml:id="activity-df-inv3"> 
     <introduction><p>In this activity you will study the arcsine function.</p></introduction>
-    <task> <p> Consider the values of <m>y=\sin(x)</m> given in the table below for an angle <m>x</m> between <m>-\pi/2</m> and <m>\pi/2</m>. Fill in the corresponding values for the inverse function arcsine <m>x = \sin^{-1}(y)</m>. In other words, you need to provide the angle in <m>[-\pi/2, \pi/2]</m> whose sine value is given. You can use the unit circle to help you remember which angles yield the given values of sine. The first entry is provided: a sine value of <m>-1</m> corresponds to the angle <m>-\pi/2</m>.
+    <task> <p> Consider the values of <m>y=\sin(x)</m> given in the table below for an angle <m>x</m> between <m>-\pi/2</m> and <m>\pi/2</m>. Fill in the corresponding values for the inverse function arcsine, <m>x = \sin^{-1}(y)</m>. In other words, you need to provide the angle in <m>[-\pi/2, \pi/2]</m> whose sine value is given. You can use the unit circle to help you remember which angles yield the given values of sine. The first entry is provided: a sine value of <m>-1</m> corresponds to the angle <m>-\pi/2</m>.
     <table xml:id="table-sine">
         <tabular>
              <row bottom="minor">
