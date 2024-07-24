@@ -19,9 +19,11 @@ class Generator(BaseGenerator):
         aa=choice([-1,1])*randrange(2,5)
         bb=choice([-1,1])*randrange(2,5)
         cc=choice([-1,1])*randrange(2,9)
-        ff=choice([-1,1])*randrange(2,9)
 
-        # ensure aa*bb-dd != 0
+        ## ensure |ff-aa*cc| =< 15 (prevent big sols)
+        ff = aa*cc + randrange(-15,16)
+
+        # ensure |aa*bb-dd| >= 2 (prevent division by zero)
         dd = aa*bb + choice([-1,1])*randrange(2,6)
 
         LHSineq = bb*var2+cc
@@ -68,4 +70,24 @@ class Generator(BaseGenerator):
             "ineq": ineq,
             "solution2": solution_ineq,
             "interval": interval
+        }
+
+    @provide_data
+    def graphics(data):
+        P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1)
+        P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
+        for i in range(-9,10):
+            P += line([(i,-0.2),(i,0.2)],color="black")
+            P += text(f"${i}$", (i,-0.6),color="black")
+        if data["ineq"] in [">", ">="]:
+            P += arrow((data["solution2"],0),(10,0),color="#0088ff", width=3, arrowsize=3)
+        else:
+            P += arrow((data["solution2"],0),(-10,0),color="#0088ff", width=3, arrowsize=3)
+        P += circle((data["solution2"],0),0.2,color="#0088ff",fill=True)
+        P += text(f"${round(data['solution2'],ndigits=2)}$", (data["solution2"],0.6), color="black")
+        if data["ineq"] in ["<", ">"]:
+            P += circle((data["solution2"],0),0.15,color="white",fill=True)
+        P.axes(False)
+        return {
+            "plot": plot(P)
         }

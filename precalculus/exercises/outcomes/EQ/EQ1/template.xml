@@ -36,6 +36,11 @@
             <p>
                 <m>{{interval}}</m>
             </p>
+            <p>
+                <image
+                    source="assets/EQ1/generated/{{__seed__}}/plot.png"
+                    description="Solution to inequality."/>
+            </p>
         </outtro>
     </knowl>
     
