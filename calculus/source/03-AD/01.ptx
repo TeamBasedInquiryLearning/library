@@ -49,10 +49,10 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     </activity>
 
     <definition xml:id="defn-motion"><p>
-        If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then the derivative of the position function tells us how the position is changing over time, so <m>f'(t)</m> gives us the (instantenous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so <m>f''(t)</m> gives us the (instantenous) acceleration in meters per second squared. Summarizing, 
+        If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then the derivative of the position function tells us how the position is changing over time, so <m>f'(t)</m> gives us the (instantaneous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so <m>f''(t)</m> gives us the (instantaneous) acceleration in meters per second squared. Summarizing, 
         <ul>
-        <li><p><m>v(t) = f'(t)</m> is the velocity of the particle in <m>m/s</m>.</p></li>
-        <li><p><m>a(t) = f''(t)</m> is the acceleration of the particle in <m>m/s^2</m>. </p></li>
+        <li><p><m>v(t) = f'(t)</m> is the velocity of the particle in <m>\mathrm{m/s}</m>.</p></li>
+        <li><p><m>a(t) = f''(t)</m> is the acceleration of the particle in <m>\mathrm{m/s}^2</m>. </p></li>
         </ul>
         
         </p></definition>
@@ -140,9 +140,9 @@ Acceleration: <m>-18</m> miles per <m>s^2</m>
   
 <definition xml:id = "defn-rate-parametric"> <p> In a parametric motion on a curve <m>C</m> given by <m>x=f(t)</m> and <m>y=g(t)</m> we have that </p>
     <ul>
-    <li><p><m>\frac{dx}{dt}=f'(t)</m> is the rate of change of <m>f(t)</m>, one component of the slope (or velocity)</p></li>
-         <li><p><m>\frac{dy}{dt}=g'(t)</m> is the rate of change of <m>g(t)</m>, one component of the slope (or velocity)</p></li>
-        <li><p><m>\frac{dy}{dx}</m> is the actual slope (or velocity) of the object and by the chain rule <m>\frac{dy}{dx} = \frac{g'(t)}{f'(t)} </m></p></li>
+    <li><p><m>\dfrac{dx}{dt}=f'(t)</m> is the rate of change of <m>f(t)</m>, one component of the slope (or velocity)</p></li>
+         <li><p><m>\dfrac{dy}{dt}=g'(t)</m> is the rate of change of <m>g(t)</m>, one component of the slope (or velocity)</p></li>
+        <li><p><m>\dfrac{dy}{dx}</m> is the actual slope (or velocity) of the object and by the chain rule <m>\dfrac{dy}{dx} = \dfrac{g'(t)}{f'(t)} </m></p></li>
     </ul>
 </definition>
 
@@ -182,7 +182,7 @@ be <m>C</m> dollars, where
         <p> What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.
             </p></task>
           <task>
-        <p>Find the marginal cost
+        <p>Find the marginal cost.
             </p></task>
          <task>
         <p>Now suppose that <m>x</m> computers give revenue <m>R(x) = 1000x</m>. What is the marginal revenue? What is the real world interpretation of your finding?

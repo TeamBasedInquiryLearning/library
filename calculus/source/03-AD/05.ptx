@@ -177,7 +177,7 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
     
     <activity xml:id="activity-derivatives-derviativetest5">
         <introduction>
-            <p>Let <m>f(x)=\frac{x}{(x-2)^2}</m>.</p>
+            <p>Let <m>f(x)=\dfrac{x}{(x-2)^2}</m>.</p>
     
         </introduction>
     <task>        <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. But the function may be increasing on one side of <m>x=2</m> and decreasing on the other! So we include <m>x=2</m> on your number line.</p></task>
@@ -206,7 +206,7 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
             <p><m>f(x)=x^3+3x^2+3x+1</m></p>
         </task>
         <task>
-            <p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
+            <p><m>f(x)=\dfrac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
         </task>
         <task>
             <p><m>f(x)=(x^2-9)^{2/3}</m></p>
@@ -215,7 +215,7 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
             <p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p>
         </task>
         <task>
-            <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
+            <p><m>f(x)=\dfrac{x^2}{x^2-4}</m></p>
         </task>
     </activity>
     
@@ -223,7 +223,7 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
     
     <theorem xml:id="MVT"><title>The Mean Value Theorem</title>  
     <p>If <m>f</m> is continuous and differentiable on the closed interval <m>[a,b]</m>, then there is some point <m>c</m> in the interval where <m>f'(c)</m>  is equal to the slope of the secant line through the points <m>(a,f(a))</m> and <m>(b,f(b))</m>. In symbols, for some <m>c</m> in <m>(a,b)</m> we have that </p>
-<me>f'(c) = \frac{f(b)-f(a)}{b-a} </me>
+<me>f'(c) = \dfrac{f(b)-f(a)}{b-a} </me>
     </theorem>
 
 <activity xml:id="activity-connection-MVT">

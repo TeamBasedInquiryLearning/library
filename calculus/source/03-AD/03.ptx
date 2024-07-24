@@ -17,7 +17,7 @@
       So far
       we have been interested in the instantaneous rate at which one variable,
       say <m>y</m>, changes with respect to another, say <m>x</m>,
-      leading us to compute and interpret <m>\frac{dy}{dx}</m>.
+      leading us to compute and interpret <m>\dfrac{dy}{dx}</m>.
       We also have situations where several variables change together and often each quantity is a function of time,
       represented by the variable <m>t</m>.
       Knowing how the quantities are related,
@@ -27,12 +27,12 @@
     
 <example xml:id = "eg-related-rates-chain"> <p>In a sense, the chain rule is our first example of related rates: 
 recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function of <m>t</m>, we are considering the composite function <m>y(x(t))</m>, and we learned that by the chain rule </p>
-<me>\frac{d y}{d t} = \frac{d y}{d x} \cdot \frac{d x}{d t} </me>
-<p>Notice that the chain rule gives a relationship between three rates: <m>\frac{d y}{d t} , \frac{d y}{d x},  \frac{d x}{d t}</m>.</p>
+<me>\dfrac{d y}{d t} = \dfrac{d y}{d x} \cdot \dfrac{d x}{d t} </me>
+<p>Notice that the chain rule gives a relationship between three rates: <m>\dfrac{d y}{d t} , \dfrac{d y}{d x},  \dfrac{d x}{d t}</m>.</p>
 </example>
 
 <activity xml:id = "activity-squirrels-related-rates">
-<p>Remember the squirrels taking over my neighborhood?  The population <m>s</m> grows based on acorn availability <m>a</m>, at a rate of 2 squirrels per bushel. The acorn availability <m>a</m> is currently growing at a rate of 100 bushels per week. What is <m>\frac{ds}{dt}</m> in this situation? </p>
+<p>Remember the squirrels taking over my neighborhood?  The population <m>s</m> grows based on acorn availability <m>a</m>, at a rate of 2 squirrels per bushel. The acorn availability <m>a</m> is currently growing at a rate of 100 bushels per week. What is <m>\dfrac{ds}{dt}</m> in this situation? </p>
  <ol marker="A." cols="2">
                 <li><p>  2 </p></li>
                   <li><p>  100 </p></li> 
@@ -41,7 +41,7 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
               </ol>      
 </activity>    
     
-<example xml:id = "eg-related-rates-baloon">    
+<example xml:id = "eg-related-rates-balloon">    
     <p>
       In a more serious example,
       suppose that air is being pumped into a spherical balloon so that its volume increases at a constant rate of 20 cubic inches per second.
@@ -70,17 +70,17 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
 
      <task>
         <p>
-          Recall that the volume of a sphere of radius <m>r</m> is <m>V = \frac{4}{3} \pi r^3</m>.
+          Recall that the volume of a sphere of radius <m>r</m> is <m>V = \dfrac{4}{3} \pi r^3</m>.
           Note as well that in the setting of this problem,
           <em>both</em> <m>V</m> <em>and </em> <m>r</m> are changing with time <m>t</m>.
           Hence both <m>V</m> and <m>r</m> may be viewed as <em>implicit</em> functions of <m>t</m>,
           with respective derivatives
-          <m>\frac{dV}{dt}</m> and <m>\frac{dr}{dt}</m>.
+          <m>\dfrac{dV}{dt}</m> and <m>\dfrac{dr}{dt}</m>.
           Differentiate both sides of the equation
-          <m>V = \frac{4}{3} \pi r^3</m> with respect to <m>t</m>
+          <m>V = \dfrac{4}{3} \pi r^3</m> with respect to <m>t</m>
           (using the chain rule on the right)
           to find a formula for
-          <m>\frac{dV}{dt}</m> that depends on both <m>r</m> and <m>\frac{dr}{dt}</m>.
+          <m>\dfrac{dV}{dt}</m> that depends on both <m>r</m> and <m>\dfrac{dr}{dt}</m>.
         </p>
       </task>
 
@@ -93,7 +93,7 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
           Recall that we are given in the problem that the balloon is being inflated at a constant <em>rate</em>
           of 20 cubic inches per second.
           Is this rate the value of
-          <m>\frac{dr}{dt}</m> or <m>\frac{dV}{dt}</m>?
+          <m>\dfrac{dr}{dt}</m> or <m>\dfrac{dV}{dt}</m>?
           Why?
         </p>
       </task>
@@ -101,13 +101,13 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
      <task>
         <p>
           From part (c), we know the value of
-          <m>\frac{dV}{dt}</m> at every value of <m>t</m>.
+          <m>\dfrac{dV}{dt}</m> at every value of <m>t</m>.
           Next,
           observe that when the diameter of the balloon is 12,
           we know the value of the radius.
-          In the equation <m>\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}</m>,
+          In the equation <m>\dfrac{dV}{dt} = 4\pi r^2 \dfrac{dr}{dt}</m>,
           substitute these values for the relevant quantities and solve for the remaining unknown quantity,
-          which is <m>\frac{dr}{dt}</m>.
+          which is <m>\dfrac{dr}{dt}</m>.
           How fast is the radius changing at the instant <m>d = 12</m>?
         </p>
       </task>
@@ -150,9 +150,9 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
 <remark xml:id = "rmk-volume-formulas"> <title>Volume formulas</title>  
     <p>
     <ul>   
-    <li> A sphere of radius <m>r</m> has volume <m>V= \frac{4}{3} \pi r^3 </m></li>
+    <li> A sphere of radius <m>r</m> has volume <m>V= \dfrac{4}{3} \pi r^3 </m></li>
          <li> A vertical cylinder of radius <m>r</m> and height <m>h</m> has volume <m>V=  \pi r^2 h</m></li>
-         <li> A cone of radius <m>r</m> and height <m>h</m> has volume <m>V= \frac{\pi}{3} r^2 h </m></li>
+         <li> A cone of radius <m>r</m> and height <m>h</m> has volume <m>V= \dfrac{\pi}{3} r^2 h </m></li>
      </ul> </p>
     </remark>
 
@@ -174,11 +174,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
           Recall that the volume of a cylinder of radius <m>r</m> and height <m> h</m> is <m>V = \pi r^2 h</m>. What is the related rates equation in the context of the vertical cylindrical tank? What derivative rules did you use to find this equation?
           </p>
               <ol marker="A." cols="2">
-                <li> <m> \frac{dV}{dt}= \pi 2 r \frac{dh}{dt}</m></li>
-                   <li> <m> \frac{dV}{dt}= \pi r^2 \frac{dh}{dt}</m></li>
-                   <li> <m> \frac{dV}{dt}= \pi \frac{dr}{dt} h</m></li>
-                            <li> <m> \frac{dV}{dt}= \pi 2r \frac{dr}{dt} h + \pi r^2 \frac{dh}{dt}</m></li>
-                               <li> <m> \frac{dV}{dt}= \pi 2r h + \pi r^2 </m></li>
+                <li> <m> \dfrac{dV}{dt}= \pi 2 r \dfrac{dh}{dt}</m></li>
+                   <li> <m> \dfrac{dV}{dt}= \pi r^2 \dfrac{dh}{dt}</m></li>
+                   <li> <m> \dfrac{dV}{dt}= \pi \dfrac{dr}{dt} h</m></li>
+                            <li> <m> \dfrac{dV}{dt}= \pi 2r \dfrac{dr}{dt} h + \pi r^2 \dfrac{dh}{dt}</m></li>
+                               <li> <m> \dfrac{dV}{dt}= \pi 2r h + \pi r^2 </m></li>
               </ol>         
       </task>
 
@@ -289,7 +289,7 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
 <task>
   <statement>
     <p> Notice that by differentiating the equation above with respect to <m>t</m> we get a relationship between
-      <m>a,b,c, \frac{da}{dt}, \frac{db}{dt}, \frac{dc}{dt}</m>. Find this related rates equation.    
+      <m>a,b,c, \dfrac{da}{dt}, \dfrac{db}{dt}, \dfrac{dc}{dt}</m>. Find this related rates equation.    
     </p>
   </statement>
 </task>
@@ -325,7 +325,7 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
             </statement>
  <!--           <answer>
                 <p>
-                    <m>\frac{ -14025 }{ 15 \, \sqrt{89} }\approx -99.11</m> mph.
+                    <m>\dfrac{ -14025 }{ 15 \, \sqrt{89} }\approx -99.11</m> mph.
                 </p>
             </answer>-->
     </activity>
