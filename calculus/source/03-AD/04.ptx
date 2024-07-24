@@ -154,7 +154,7 @@
     
 <activity xml:id = "activity-ad-extrema-5">
 <statement>
-    <p>Which of the following are critical numbers for <m>f(x) = \frac{1}{3}x^3 - 2x + 2</m>?</p>
+    <p>Which of the following are critical numbers for <m>f(x) = \dfrac{1}{3}x^3 - 2x + 2</m>?</p>
     <ol marker="A." cols="2">
                 <li><m>x = \sqrt{2}</m> and <m>x = -\sqrt{2}</m>. </li>
                 <li><m>x = \sqrt{2}</m>. </li>
@@ -169,7 +169,7 @@
 
 <remark xml:id = "CIM"><title>The Closed Interval Method</title>
     <p>The following is a way of finding the global extrema of a continuous  function <m>f</m> on a closed interval <m>[a,b]</m>.</p>
-    <ol marker="1">
+    <ol marker="1.">
         <li>Make a list of all critical points of <m>f</m> in <m>(a,b)</m>. (Do not include any critical points outside of the interval). </li>
         <li>Add the endpoints <m>a</m> and <m>b</m> to the list. </li>
         <li>Evaluate <m>f</m> at all points on your list. </li>
@@ -199,9 +199,9 @@
     <p>What are the global extrema for <m>f(x) = x\sqrt{4-x}</m> on <m>[-2,4]</m>.
         </p>
         <ol marker="A." cols="2">
-                <li>Global maximum is when <m>x = -2</m> and global minimum when <m>x = \frac{8}{3}</m>. </li>
-                <li>Global maximum is when <m>x = 4</m> and global minimum when <m>x = \frac{8}{3}</m>. </li>
-                <li>Global maximum is when <m>x = \frac{8}{3}</m> and global minimum when <m>x = -2</m>. </li>
+                <li>Global maximum is when <m>x = -2</m> and global minimum when <m>x = \dfrac{8}{3}</m>. </li>
+                <li>Global maximum is when <m>x = 4</m> and global minimum when <m>x = \dfrac{8}{3}</m>. </li>
+                <li>Global maximum is when <m>x = \dfrac{8}{3}</m> and global minimum when <m>x = -2</m>. </li>
                 <li>Global maximum is when <m>x = 4</m> and global minimum when <m>x = -2</m>. </li>
             </ol>
     </statement>
