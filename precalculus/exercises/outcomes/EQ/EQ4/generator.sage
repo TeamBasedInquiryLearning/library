@@ -42,6 +42,8 @@ class Generator(BaseGenerator):
         return {
             "eq": eq,
             "eq_set": eq_set,
+            "eq_center": eq_center,
+            "eq_radius": eq_radius,
             "ineq": ineq,
             "ineq_interval": ineq_interval,
             "ineq_inside": ineq_inside,
@@ -52,6 +54,11 @@ class Generator(BaseGenerator):
 
     @provide_data
     def graphics(data):
+        Q = TBILCalc.numberline_plot()
+        Q += circle((data["eq_center"]-data["eq_radius"],0),0.2,color="#0088ff",fill=True)
+        Q += circle((data["eq_center"]+data["eq_radius"],0),0.2,color="#0088ff",fill=True)
+        Q.axes(False)
+
         P = TBILCalc.numberline_plot()
         if data["ineq_inside"]:
             P += TBILCalc.inequality_plot(
@@ -74,5 +81,6 @@ class Generator(BaseGenerator):
             )
         P.axes(False)
         return {
+            "eq_plot": plot(Q),
             "ineq_plot": plot(P)
         }

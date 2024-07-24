@@ -19,7 +19,9 @@ and graphically on a number line.
 Set notation: <m>{{eq_set}}</m>
             </p>
             <p>
-Graph: {{eq_graph}}
+<image
+    source="assets/EQ4/generated/{{__seed__}}/eq_plot.png"
+    description="Solution to inequality."/>
             </p>
         </outtro>
     </knowl>
@@ -35,9 +37,9 @@ Graph: {{eq_graph}}
 Interval notation: <m>{{ineq_interval}}</m>
             </p>
             <p>
-                <image
-                    source="assets/EQ4/generated/{{__seed__}}/ineq_plot.png"
-                    description="Solution to inequality."/>
+<image
+    source="assets/EQ4/generated/{{__seed__}}/ineq_plot.png"
+    description="Solution to inequality."/>
             </p>
         </outtro>
     </knowl>
