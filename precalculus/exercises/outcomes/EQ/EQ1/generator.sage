@@ -35,24 +35,24 @@ class Generator(BaseGenerator):
 
         ineq=choice(['<','<=','>=','>'])
         if ineq=='<':
-            if a*b-d>0:
+            if aa*bb-dd>0:
                 interval = f"(-\\infty, {solution_ineq})"
-            if a*b-d<0:
+            if aa*bb-dd<0:
                 interval = f"({solution_ineq},\\infty)"
         if ineq=='<=':
-            if a*b-d>0:
+            if aa*bb-dd>0:
                 interval = f"(-\\infty, {solution_ineq}]"
-            if a*b-d<0:
+            if aa*bb-dd<0:
                 interval = f"[{solution_ineq},\\infty)"
         if ineq=='>':
-            if a*b-d>0:
+            if aa*bb-dd>0:
                 interval = f"({solution_ineq},\\infty)"
-            if a*b-d<0:
+            if aa*bb-dd<0:
                 interval = f"(-\\infty, {solution_ineq})"        
         if ineq=='>=':
-            if a*b-d>0:
+            if aa*bb-dd>0:
                 interval = f"[{solution_ineq},\\infty)"
-            if a*b-d<0:
+            if aa*bb-dd<0:
                 interval = f"(-\\infty, {solution_ineq}]"
 
 
