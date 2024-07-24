@@ -15,8 +15,8 @@
   <remark>
   <statement>
   <p>
-A geometrical interpretation of <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx</me>
-(<xref ref="definition-in5-2"/>) defines <m>\int_a^bf(x)dx</m> as the <term>net area</term>
+A geometrical interpretation of <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)\, dx</me>
+(<xref ref="definition-in5-2"/>) defines <m>\displaystyle \int_a^bf(x)\, dx</m> as the <term>net area</term>
 between the graph of <m>y=f(x)</m> and the <m>x</m>-axis. By net area, we mean the area above the <m>x</m>-axis
 (when <m>f(x)</m> is positive) minus the area below the <m>x</m>-axis (when <m>f(x)</m> is negative).
   </p>
@@ -26,7 +26,7 @@ between the graph of <m>y=f(x)</m> and the <m>x</m>-axis. By net area, we mean t
             <description>As the number of subdivisions increases, the Riemann sum more closely appears to measure the
             net area between a curve and the x-axis.</description>
         </image>
-        <caption>Improving approximations of <m>\int_0^5(x-2)(x-4)dx</m></caption>
+        <caption>Improving approximations of <m>\displaystyle \int_0^5(x-2)(x-4)dx</m></caption>
     </figure>
   </statement>
   </remark>
@@ -62,13 +62,13 @@ wherever <m>f(x)</m> may change from positive to negative, or vice versa.
             <description>The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4
             where (x-2) and (x-4) are equal to 0.</description>
         </image>
-        <caption>Partitioning <m>\int_0^5(x-2)(x-4)dx</m> at <m>x=2</m> and <m>x=4</m>.</caption>
+        <caption>Partitioning <m>\displaystyle \int_0^5(x-2)(x-4)dx</m> at <m>x=2</m> and <m>x=4</m>.</caption>
     </figure>
     <p>
         Since <m>f(x)=(x-2)(x-4)</m> is zero when <m>x=2</m> and <m>x=4</m>, we may compute the total
         area between <m>y=(x-2)(x-4)</m> and the <m>x</m>-axis using absolute values as follows:
-        <me>\text{Area} = {\color{blue} \left|\int_0^2(x-2)(x-4)dx\right|}+
-        {\color{red} \left|\int_2^4(x-2)(x-4)dx\right|}+{\color{blue}\left|\int_4^5(x-2)(x-4)dx\right|}</me>
+        <me>\text{Area} = {\color{blue} \left|\int_0^2(x-2)(x-4)\, dx\right|}+
+        {\color{red} \left|\int_2^4(x-2)(x-4)\, dx\right|}+{\color{blue}\left|\int_4^5(x-2)(x-4)\, dx\right|}</me>
         </p>
   </statement>
   </observation>
@@ -95,9 +95,9 @@ then verify that its value is <m>279</m> square units.
                     <me>
 \text{Area} =
 \left| \int_{ 2 }^{ \unknown } 
-\left( 6 \, x^{2} - 18 \, x \right) dx \right| +
+\left( 6 \, x^{2} - 18 \, x \right)\, dx \right| +
 \left| \int_{ \unknown }^{ 7 } 
-\left( 6 \, x^{2} - 18 \, x \right) dx \right|
+\left( 6 \, x^{2} - 18 \, x \right)\, dx \right|
                     </me>
                 </p>
         </statement>

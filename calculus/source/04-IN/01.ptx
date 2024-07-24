@@ -23,7 +23,7 @@
     
 <activity>
     <p>
-    Consider the linear function <m>f(x)=2x</m>. Sketch a graph of this function. Consider the area between the <m>x</m>-axis and the function on the interval <m>[0,1]</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
+    Consider the linear function <m>f(x)=2x</m>. Sketch a graph of this function. Consider the area between the <m>x</m>-axis and the function on the interval <m>[0,1]</m>. What is <m>\displaystyle \int_0^1 f(x) \, dx</m>?  </p>
      <ol marker="A." cols="2">
               <li><p>1</p></li>
                 <li><p>2</p></li>
@@ -35,7 +35,7 @@
 
 <activity>
     <p>
-    Consider the linear function <m>f(x)=4x</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
+    Consider the linear function <m>f(x)=4x</m>. What is <m>\displaystyle \int_0^1 f(x) \, dx</m>?  </p>
      <ol marker="A." cols="2">
               <li><p>1</p></li>
                 <li><p>2</p></li>
@@ -46,7 +46,7 @@
     
 <activity>
     <p>
-    Consider the linear function <m>f(x)=2x +2</m>. Notice that on the interval <m>[0,1]</m>, the shape formed between the graph and the <m>x</m>-axis is a trapezoid. What is <m>\int_0^1 f(x) \, dx</m>?</p>
+    Consider the linear function <m>f(x)=2x +2</m>. Notice that on the interval <m>[0,1]</m>, the shape formed between the graph and the <m>x</m>-axis is a trapezoid. What is <m>\displaystyle \int_0^1 f(x) \, dx</m>?</p>
      <ol marker="A." cols="2">
               <li><p>1</p></li>
                 <li><p>2</p></li>
@@ -58,7 +58,7 @@
     
  <activity>
     <p>
-    Consider the function <m>f(x)=\sqrt{4-x^2}</m>. Notice that on the domain <m>[-2,2]</m>, the shape formed between the graph and the <m>x</m>-axis is a semicircle. What is <m>\int_{-2}^2 f(x) \, dx</m>?</p>
+    Consider the function <m>f(x)=\sqrt{4-x^2}</m>. Notice that on the domain <m>[-2,2]</m>, the shape formed between the graph and the <m>x</m>-axis is a semicircle. What is <m>\displaystyle \int_{-2}^2 f(x) \, dx</m>?</p>
      <ol marker="A." cols="2">
               <li><p><m>\pi</m></p></li>
                   <li><p><m>2\pi</m></p></li>
@@ -113,9 +113,9 @@
        <image width="100%" source="fig2d.JPG" />
          </figure>
     </introduction>
-    <task> <p> Find <m>\int_{3}^{3} g(t) \, dt</m></p></task>
-    <task> <p> Find <m>\int_{3}^{6} g(t) \, dt</m></p></task>
-        <task> <p> Find <m>\int_{0}^{10} g(t) \, dt</m></p></task>
+    <task> <p> Find <m>\displaystyle \int_{3}^{3} g(t) \, dt</m></p></task>
+    <task> <p> Find <m>\displaystyle \int_{3}^{6} g(t) \, dt</m></p></task>
+        <task> <p> Find <m>\displaystyle \int_{0}^{10} g(t) \, dt</m></p></task>
         <task> <p> Suppose that <m>g(t)</m> gives the velocity in fps at time <m>t</m> (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?</p></task>
     </activity>
 
