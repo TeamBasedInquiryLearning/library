@@ -9,17 +9,49 @@
     
     
     <knowl>
+        <intro>
+            <p>
+                Explain why each of the following is or is not a function.
+            </p>
+        </intro>
+                <!-- {{#tasks}} -->
+                <!-- {{#map_task}} -->
+                <knowl>
+                    <content>
+                    <p>
+                    <image
+                        source="assets/FN1/generated/{{__seed__}}/mapping.png"
+                        description="Solution to inequality."/>
+                    </p>
+                    </content>
+                </knowl>
+                <!-- {{/map_task}} -->
+                <!-- {{#table_task}} -->
+                <knowl>
+                    <content>
+                    <p>Table goes here. </p>
+                    </content>
+                </knowl>
+                <!-- {{/table_task}} -->
+                <!-- {{/tasks}} -->
+    </knowl>
+
+    <knowl>
         <content>
-            <p>
-                Task 
-            </p>
+            <p>Explain why each of the following equations does or does not define a function.</p>
         </content>
-        <outtro>
-            <p>
-                Task answer
-            </p>
-        </outtro>
-        
+        <outro>
+            <p>Answer</p>
+        </outro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>Explain why each of the following graphs does or does not represent a function.</p>
+        </content>
+        <outro>
+            <p>Answer</p>
+        </outro>
     </knowl>
       
     
