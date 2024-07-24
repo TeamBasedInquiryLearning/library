@@ -9,6 +9,46 @@
         </ul>
     </objectives>
 
+    <subsection xml:id="subsec-Class Activities">
+        <title>Class Activities</title>
+
+        <fact xml:id="fact-ortho-decomp-thm">
+            <statement>
+                <p>
+                    Let <m>W</m> be a subspace of <m>\IR^n</m> and let <m>\vec u</m> be a vector in <m>\IR^n</m>.
+                    Then we can write <m>\vec u</m> uniquely as
+                    <me>\vec u=\vec u_W+\vec u_{W^\perp}</me>
+                    where <m>\vec u_W</m> is the closest vector to <m>\vec u</m> on <m>W</m> and <m>\vec u_{W^\perp}</m> is in <m>W^\perp</m>
+                </p>
+            </statement>
+        </fact>
+
+        <definition xml:id="def-orthogonal decompostion">
+            <statement>
+                <p>
+                    Let <m>W</m> be a subspace of <m>\IR^n</m> and let <m>\vec u</m> be a vector in <m>\IR^n</m>.
+                    The <term>orthogonal decompostion </term> of <m>\vec u</m> is the decomposition of <m>\vec u</m> given by 
+                    <xref ref="fact-ortho-decomp-thm"/>. The <term>orthogonal projection</term> of <m>\vec u</m> is <m>\vec u_W</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <activity>
+            <introduction>
+                <p>
+                    Let <m>W</m> be a the <m>xy</m>-plane in <m>\IR^2</m>. 
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        have them find a simple orthogonal decomposition
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+    </subsection>
 
 
     <subsection>
