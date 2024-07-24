@@ -3,29 +3,6 @@ class Generator(BaseGenerator):
     def data(self):
         
         
-        def poly_with_zeros(zeros, x=var("x"), mults=None, vrange=None):
-            """
-            Returns a polynomial with the specified zeros and mulitiplicies
-            (defaults to multiplicity 1 for all zeros).
-            If a vrange is provided, points on the polynomial between the given zeros
-            are within this distance of zero (for a prettier graph, but a messier
-            polynomial).
-            """
-            if mults is None:
-                mults = [1 for _ in zeros]
-            poly = prod((x-zero)^mults[i] for i,zero in enumerate(zeros))
-            if vrange is None:
-                return poly
-            auto_vrange = 0
-            sorted_zeros = list(zeros)
-            sorted_zeros.sort()
-            for i in range(len(sorted_zeros)-1):
-                if abs(poly.find_local_minimum(sorted_zeros[i],sorted_zeros[i+1])[0]) > auto_vrange:
-                    auto_vrange = abs(poly.find_local_minimum(sorted_zeros[i],sorted_zeros[i+1])[0])
-                if abs(poly.find_local_maximum(sorted_zeros[i],sorted_zeros[i+1])[0]) > auto_vrange:
-                    auto_vrange = abs(poly.find_local_maximum(sorted_zeros[i],sorted_zeros[i+1])[0])
-            return poly/auto_vrange*vrange
-        
         var('x y')
         
         name1 = choice(["zeroes", "roots"])
@@ -59,9 +36,6 @@ class Generator(BaseGenerator):
             leftbehavior = "approaches negative infinity"
             rightbehavior = "approaches negative infinity"
         
-        half = (r1+r2)/2
-        extrema3 = "maximum"
-        
             
         P = find_local_maximum(abs(f(x)), min(r1, r2), max(r1,r2))    
         height = P[0]
@@ -90,11 +64,11 @@ class Generator(BaseGenerator):
         b = max(r1, r2, 0)+1
         f(x) = data['f']
         height = data['height']
-    # updated by clontz, who is solely responsible for anything written here
-    
-    
-        return {"plot": plot(f(x), (a,b), ymin=-height, ymax = height)+point((r1,0), color='red', size=22)+point((r2,0), color='red', size=22)+point((0, yint), color='green', size=22) ,
-               }  
+        P = plot(f(x), (a,b), ymin=-height, ymax = height)
+        P += point((r1,0), color='red', size=22)
+        P += point((r2,0), color='red', size=22)
+        P += point((0, yint), color='blue', size=22)
+        return {"plot": P}
         
         
         
