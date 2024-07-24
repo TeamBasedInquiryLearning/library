@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <intro>
+        <p>
+            Solve the following inequalities. Express your solution in interval notation and graphically on a number line..
+        </p>
+    </intro>
+    
+    
+    <knowl>
+        <content>
+            <p>
+                {{eq}}
+            </p>
+        </content>
+        <outtro>
+            <p>
+                Interval notation:    {{eqansinterval}}
+            </p>
+            <p>
+                Graph: {{eqansgraph}}
+            </p>
+        </outtro>
+        
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                {{ineq}}
+            </p>
+        </content>
+        <outtro>
+            <p>
+                Interval notation:    {{ineqansinterval}}
+            </p>
+            <p>
+                Graph: {{ineqansgraph}}
+            </p>
+        </outtro>
+        
+    </knowl>
+    
+   
+    
+
+        
+
+        
+    
+</knowl>
