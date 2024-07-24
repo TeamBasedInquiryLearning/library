@@ -3,43 +3,43 @@
     
     <intro>
         <p>
-            Solve the following inequalities. Express your solution in interval notation and graphically on a number line.
+Solve the following. Express your solution in set or interval notation,
+and graphically on a number line.
         </p>
     </intro>
-    
     
     <knowl>
         <content>
             <p>
-                {{eq}}
+<m>{{eq}}</m>
             </p>
         </content>
         <outtro>
             <p>
-                Interval notation:    {{eqansinterval}}
+Set notation: <m>{{eq_set}}</m>
             </p>
             <p>
-                Graph: {{eqansgraph}}
+Graph: {{eq_graph}}
             </p>
         </outtro>
-        
     </knowl>
     
     <knowl>
         <content>
             <p>
-                {{ineq}}
+<m>{{ineq}}</m>
             </p>
         </content>
         <outtro>
             <p>
-                Interval notation:    {{ineqansinterval}}
+Interval notation: <m>{{ineq_interval}}</m>
             </p>
             <p>
-                Graph: {{ineqansgraph}}
+                <image
+                    source="assets/EQ4/generated/{{__seed__}}/ineq_plot.png"
+                    description="Solution to inequality."/>
             </p>
         </outtro>
-        
     </knowl>
     
 </knowl>
