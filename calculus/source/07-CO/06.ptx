@@ -20,7 +20,7 @@
           
       <p permid="QCd">
         The area of the <q>fan-shaped</q> region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
-          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
+          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}\, d\theta</me>.
 
       </p>
         </fact>
@@ -104,7 +104,7 @@
             <p>Find an integral computing the area of the region defined by <m>0\leq r\leq-\cos(\theta)+5</m> and <m>\pi/2\leq \theta\leq 3\pi/4</m>.</p>
         </task>
         <task>
-            <p>Find the area enclosed by the cardioid <m>r=2(1+\cos(\theta)</m>.</p>
+            <p>Find the area enclosed by the cardioid <m>r=2(1+\cos(\theta))</m>.</p>
         </task>
         <task>
             <p>Find the area enclosed by one loop of the 4-petaled rose <m>r=\cos(2\theta)</m>.</p>
