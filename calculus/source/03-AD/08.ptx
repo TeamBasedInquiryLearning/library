@@ -26,14 +26,23 @@
         </introduction>
         <task>
             <statement>
-              <p>Draw a diagram illustrating how the box is created. Label the lengths of segments in the diagram and write <m>x</m> for the
-              sides of the smaller squares to be removed from the 8 by 8 square.</p>
-            </statement>
-          <solution>
-            <image source="thebox-1">
-              <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
-            </image>
-          </solution>
+              <p>Which of the following diagrams best illustrates how the box is created?</p>
+              <!-- <solution> -->
+                <sbsgroup widths="45% 45%">
+                  <sidebyside>
+                    <image source="thebox-1">
+                      <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
+                    </image>
+                    <image source="thebox-2" />
+                  </sidebyside>
+                  <sidebyside>
+                    <image source="thebox-3" />
+                    <image source="thebox-4" />
+                  </sidebyside>
+                </sbsgroup>
+              </statement>
+            
+          <!-- </solution> -->
         </task>
         <task>
           <statement>
