@@ -41,9 +41,9 @@
             <statement>
                 <p>
  To avoid repetitive substitution, the following integral formulas will be useful.
- <me>\int\frac{1}{x+b}dx=\ln|x+b|+C</me>
- <me>\int\frac{1}{(x+b)^2}dx=-\frac{1}{x+b}+C</me>
- <me>\int\frac{1}{x^2+b^2}dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C</me>
+ <me>\int\frac{1}{x+b}\, dx=\ln|x+b|+C</me>
+ <me>\int\frac{1}{(x+b)^2}\, dx=-\frac{1}{x+b}+C</me>
+ <me>\int\frac{1}{x^2+b^2}\, dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C</me>
                 </p>
             </statement>
         </observation>
@@ -79,7 +79,7 @@
             <statement>
                 <p>
                      Suppose we know <me>\frac{10x-11}{x^2+x-2}=\frac{7}{x-1}+\frac{3}{x+2}</me>.
-                     Which of these is equal to <m>\int\frac{10x-11}{x^2+x-2} dx</m>?
+                     Which of these is equal to <m>\displaystyle \int\frac{10x-11}{x^2+x-2}\, dx</m>?
                     <ol marker="A.">
                         <li><m>7\ln|x-1|+3\arctan(x+2)+C</m></li>
                         <li><m>7\ln|x-1|+3\ln|x+2|+C</m></li>
@@ -94,12 +94,12 @@
             <statement>
                 <p>
  To find integrals like 
- <m>\int \frac{x^2+x+1}{x^3+x} dx</m> and
- <m>\int\frac{10x-11}{x^2+x-2} dx</m>, we'd like to <term>decompose</term> the fractions
+ <m>\displaystyle \int \frac{x^2+x+1}{x^3+x} dx</m> and
+ <m>\displaystyle \int\frac{10x-11}{x^2+x-2} dx</m>, we'd like to <term>decompose</term> the fractions
  into simpler <term>partial fractions</term> that may be integrated with these formulas
- <me>\int\frac{1}{x+b}dx=\ln|x+b|+C</me>
- <me>\int\frac{1}{(x+b)^2}dx=-\frac{1}{x+b}+C</me>
- <me>\int\frac{1}{x^2+b^2}dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C</me>
+ <me>\int\frac{1}{x+b}\, dx=\ln|x+b|+C</me>
+ <me>\int\frac{1}{(x+b)^2}\, dx=-\frac{1}{x+b}+C</me>
+ <me>\int\frac{1}{x^2+b^2}\, dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C</me>
                 </p>
             </statement>
         </observation>
@@ -117,7 +117,7 @@
                   <ol marker="1.">
                     <li>
                       <p>
-                        <em>Linear Terms:</em> Let <m>(x-a)^n</m> divide <m>q(x)</m>,
+                        <em>Linear Terms:</em> Let <m>(x-a)^n</m> divide <m>q(x)</m>.
                         Then the decomposition of <m>\frac{p(x)}{q(x)}</m> will contain the terms
                         <me>
                           \frac{A_1}{(x-a)} + \frac{A_2}{(x-a)^2} + \cdots +\frac{A_n}{(x-a)^n}
@@ -129,8 +129,8 @@
                       <p>
                         <em>Quadratic Terms:</em> Let
                         <m>(x^2+bx+c)^n</m> divide <m>q(x)</m>,
-                        where <m>x^2+bx+c</m> is irreducable.
-                        Then the decomposition of <m>\frac{p(x)}{q(x)}</m> will contain the terms
+                        where <m>x^2+bx+c</m> is irreducible.
+                        Then the decomposition of <m>\dfrac{p(x)}{q(x)}</m> will contain the terms
                         <me>
                           \frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}
                         </me>.
