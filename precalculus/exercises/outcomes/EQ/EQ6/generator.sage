@@ -51,7 +51,29 @@ class Generator(BaseGenerator):
             "f": f,
         }]
 
+        # generate rational equation with one solution
+        a,b,f = [choice([-1,1])*i for i in sample(range(2,6), 3)]
+        c = 1
+        d = f + b*c
+        e = b*d-a*f-a*b*c
+        whatif_eq = (c + d/(x-a) + e/(x-a)/(x-b) == 0)
+        whatif_simp = ((x-a)*(c*x+f)==0)
+        whatif_explainer = choice([
+            "explainA",
+            "explainB",
+            "explainC",
+            "explainD",
+        ])
+
         shuffle(eqs)
         return {
-          "eqs": eqs
+            "eqs": eqs,
+            "whatif": {
+                "eq": whatif_eq,
+                "simp": whatif_simp,
+                "sol": -f/c,
+                "notsol": a,
+                "notsol_term": x-a,
+                whatif_explainer: True,
+            }
         }
