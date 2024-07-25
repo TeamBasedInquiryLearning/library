@@ -54,6 +54,17 @@ outcome_path = (exercise_path/outcome_ele.find("{*}path").text)
 shutil.copy(outcome_path/"template.xml", sandbox_bank_path/"outcome"/"template.xml")
 shutil.copy(outcome_path/"generator.sage", sandbox_bank_path/"outcome"/"generator.sage")
 
+
+# quick and dirty validation
+template_root = ET.parse(sandbox_bank_path/"outcome"/"template.xml")
+valid_tags = ["knowl", "title", "intro", "content", "outtro", "p", "list", "item", "m",
+              "q", "c", "em", "url", "image"]
+for b in template_root.xpath('//*'):
+    bare_tag = b.tag.split("}")[1].lower()  # remove "${https://spatext.clontz.org}" namespace
+    if bare_tag not in valid_tags:
+        raise Exception(f"Template includes an invalid SpaTeXt tag: ${b.tag}")
+
+
 b = Bank(str(sandbox_path/"bank"))
 print('generate exercises')
 
