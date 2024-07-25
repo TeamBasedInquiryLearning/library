@@ -34,10 +34,23 @@ class Generator(BaseGenerator):
             ]
       shuffle(tasks)
 
+      var('x', 'y')
+      #f needs to be a bijection
+      f(y)= choice([1..5])*y^choice([3,5,7])
+      g(x)= choice([1..5])*x^choice([2,4,6])
+
+      tasks2 = [
+        {"eq":CheckIt.shuffled_equation(f(y),-g(x)), "eq_function":True},
+        {"eq":CheckIt.shuffled_equation(f(x),-g(y)), "eq_function":False},
+      ]
+      shuffle(tasks2)
+
       return {
         "tasks":tasks,
         "map_function":map_function,
-
+        #"table_function":table_function,
+        #"pairs_function":pairs_function,
+        "tasks2":tasks2,
       } 
 
     @provide_data

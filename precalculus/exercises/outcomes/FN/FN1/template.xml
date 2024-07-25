@@ -1,13 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
-    
-    
     <knowl>
         <intro>
             <p>
@@ -75,12 +68,24 @@
     </knowl>
 
     <knowl>
-        <content>
+        <intro>
             <p>Explain why each of the following equations does or does not define a function.</p>
-        </content>
-        <outro>
-            <p>Answer</p>
-        </outro>
+        </intro>
+            <!--{{#tasks2}}-->
+            <knowl>
+                <content>
+                    <p><me>{{eq}}</me></p>
+                </content>
+                <outtro>
+                    <!--{{#eq_function}}-->
+                    <p>This equation is a function.</p>
+                    <!--{{/eq_function}}-->
+                    <!--{{^eq_function}}-->
+                    <p>This equation is not a function.</p>
+                    <!--{{/eq_function}}-->
+                </outtro>
+            </knowl>
+            <!--{{/tasks2}}-->
     </knowl>
 
     <knowl>
