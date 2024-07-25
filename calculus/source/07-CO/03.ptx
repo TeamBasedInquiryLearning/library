@@ -65,8 +65,8 @@ and hypotenuse length <m>c</m>, we have...
             <ol marker="A." cols="2">
                 <li><p><m>a=b=c</m>.</p></li>
                 <li><p><m>a+b=c</m>.</p></li>
-                <li><p><m>a^2=b^2=c^2</m>.</p></li>
-                <li><p><m>a^2+b^2=c^2</m>.</p></li><!--correct-->
+                <li><p><m>a^2=b^2=c^2</m></p></li>
+                <li><p><m>a^2+b^2=c^2</m></p></li><!--correct-->
             </ol>
         </task>
         <task>
@@ -74,10 +74,10 @@ and hypotenuse length <m>c</m>, we have...
 Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?
             </p>
             <ol marker="A." cols="2">
-                <li><p><m>\sqrt{20}\approx 4.47</m>.</p></li>
-                <li><p><m>\sqrt{58}\approx 7.62</m>.</p></li><!--correct-->
-                <li><p><m>\sqrt{67}\approx 8.19</m>.</p></li>
-                <li><p><m>\sqrt{100}=10</m>.</p></li>
+                <li><p><m>\sqrt{20}\approx 4.47</m></p></li>
+                <li><p><m>\sqrt{58}\approx 7.62</m></p></li><!--correct-->
+                <li><p><m>\sqrt{67}\approx 8.19</m></p></li>
+                <li><p><m>\sqrt{100}=10</m></p></li>
             </ol>
         </task>
         <task>
@@ -196,7 +196,7 @@ the Riemann sum
             <p>
 Thus arclength<idx>arclength formula</idx> along a parametric curve from <m>a\leq t\leq b</m> may be calculated by using the corresponding
 definite integral
-<me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>.
+<me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\, dt</me>.
             </p>
         </statement>
     </observation>
@@ -205,12 +205,12 @@ definite integral
         <introduction>
             <p>
 Let's gain confidence in the arclength formula
-<me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>
+<me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\, dt</me>
 by checking to make sure it matches the distance formula for line segments.
             </p>
             <p>
 The parametric equations <m>x=3t-1</m> and <m>y=2-4t</m> for <m>1\leq t\leq 3</m> represent
-the segment of the line <m>y=-\frac{4}{3}x-\frac{2}{3}</m> connecting <m>(2,-2)</m> to
+the segment of the line <m>y=-\dfrac{4}{3}x-\dfrac{2}{3}</m> connecting <m>(2,-2)</m> to
 <m>(8,-10)</m>.
             </p>
         </introduction>
@@ -237,7 +237,7 @@ Show that the length of the line segment connecting <m>(2,-2)</m> to
         <introduction>
             <p>
 For each of these parametric equations, use 
-<me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>
+<me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\, dt</me>
 to write a definite integral that computes the given length. (Do not evaluate the
 integral.)
             </p>
@@ -263,13 +263,13 @@ The portion of <m>x=t+1, y=t^2</m> between the points <m>(3,4)</m> and <m>(5,16)
         <introduction>
             <p>
 Let's see how to modify
-<m>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</m>
+<m>\displaystyle \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\, dt</m>
 to produce the arclength of the graph of a function <m>y=f(x)</m>.
             </p>
         </introduction>
         <task>
             <p>
-Let <m>x=t</m>. How can <m>\frac{dx}{dt}</m> be simplified?
+Let <m>x=t</m>. How can <m>\dfrac{dx}{dt}</m> be simplified?
             </p>
             <ol marker="A." cols="2">
                 <li><p><m>dx</m></p></li>
@@ -280,19 +280,19 @@ Let <m>x=t</m>. How can <m>\frac{dx}{dt}</m> be simplified?
         </task>
         <task>
             <p>
-Given <m>x=t</m>, how should <m>\frac{dy}{dt}</m> and <m>dt</m> be rewritten?
+Given <m>x=t</m>, how should <m>\dfrac{dy}{dt}</m> and <m>dt</m> be rewritten?
             </p>
             <ol marker="A." cols="2">
-                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=dx</m>.</p></li>
-                <li><p><m>\frac{dy}{dt}=\frac{dx}{dt}</m> and <m>dt=dx</m>.</p></li>
-                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=1</m>.</p></li>
-                <li><p><m>\frac{dy}{dt}=\frac{dy}{dt}</m> and <m>dt=1</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dt}=\dfrac{dy}{dx}</m> and <m>dt=dx</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dt}=\dfrac{dx}{dt}</m> and <m>dt=dx</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dt}=\dfrac{dy}{dx}</m> and <m>dt=1</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dt}=\dfrac{dy}{dt}</m> and <m>dt=1</m>.</p></li>
             </ol>
         </task>
         <task>
             <p>
 Write a modified, simplified formula for
-<m>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</m>
+<m>\displaystyle \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</m>
 with <m>t</m> replaced with <m>x</m>.
             </p>
         </task>

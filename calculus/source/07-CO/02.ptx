@@ -22,7 +22,7 @@ The coordinate on this graph at <m>t=2</m> is <m>(3,-3)</m>.
         <task>
             <p>
 Which of the following equations of <m>x,y</m> describes the graph of
-these paramteric equations?
+these parametric equations?
             </p>
             <ol marker="A." cols="2">
                 <li><p><m>y=2x(x+2)=2x^2+2x</m></p></li>
@@ -37,49 +37,49 @@ Which of the following describes the slope of the line tangent to the
 graph at the point <m>(3,-3)</m>?
             </p>
             <ol marker="A." cols="2">
-                <li><p><m>\frac{dy}{dx}=2x+4</m>, which is <m>10</m> when <m>x=3</m>.</p></li>
-                <li><p><m>\frac{dy}{dx}=2x+4</m>, which is <m>8</m> when <m>t=2</m>.</p></li>
-                <li><p><m>\frac{dy}{dx}=2x-4</m>, which is <m>2</m> when <m>x=3</m>.</p></li><!--correct-->
-                <li><p><m>\frac{dy}{dx}=2x-4</m>, which is <m>0</m> when <m>t=2</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dx}=2x+4</m>, which is <m>10</m> when <m>x=3</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dx}=2x+4</m>, which is <m>8</m> when <m>t=2</m>.</p></li>
+                <li><p><m>\dfrac{dy}{dx}=2x-4</m>, which is <m>2</m> when <m>x=3</m>.</p></li><!--correct-->
+                <li><p><m>\dfrac{dy}{dx}=2x-4</m>, which is <m>0</m> when <m>t=2</m>.</p></li>
             </ol>
         </task>
         <task>
             <p>
 Note that the parametric equation for <m>y</m> simplifies to <m>y=4t^2-12t+5</m>.
-What do we get for the derivatives <m>\frac{dx}{dt}</m> of <m>x=2t-1</m> and <m>\frac{dy}{dt}</m>
+What do we get for the derivatives <m>\dfrac{dx}{dt}</m> of <m>x=2t-1</m> and <m>\dfrac{dy}{dt}</m>
 for <m>y=4t^2-12t+5</m>?
             </p>
             <ol marker="A." cols="2">
-                <li><p><m>\frac{dx}{dt}=2</m> and <m>\frac{dy}{dt}=8t-12</m>.</p></li><!--correct-->
-                <li><p><m>\frac{dx}{dt}=-1</m> and <m>\frac{dy}{dt}=8t-12</m>.</p></li>
-                <li><p><m>\frac{dx}{dt}=2</m> and <m>\frac{dy}{dt}=6t+5</m>.</p></li>
-                <li><p><m>\frac{dx}{dt}=-1</m> and <m>\frac{dy}{dt}=6t+5</m>.</p></li>
+                <li><p><m>\dfrac{dx}{dt}=2</m> and <m>\dfrac{dy}{dt}=8t-12</m>.</p></li><!--correct-->
+                <li><p><m>\dfrac{dx}{dt}=-1</m> and <m>\dfrac{dy}{dt}=8t-12</m>.</p></li>
+                <li><p><m>\dfrac{dx}{dt}=2</m> and <m>\dfrac{dy}{dt}=6t+5</m>.</p></li>
+                <li><p><m>\dfrac{dx}{dt}=-1</m> and <m>\dfrac{dy}{dt}=6t+5</m>.</p></li>
             </ol>
         </task>
         <task>
             <p>
-It follows that when <m>t=2</m>, <m>\frac{dx}{dt}=2</m> and <m>\frac{dy}{dt}=4</m>.
+It follows that when <m>t=2</m>, <m>\dfrac{dx}{dt}=2</m> and <m>\dfrac{dy}{dt}=4</m>.
 Which of the following conjectures seems most likely?
             </p>
             <ol marker="A." cols="2">
                 <li>
                     <p>
-The slope <m>\frac{dy}{dx}</m> could also be found by computing <m>\frac{dx}{dt}+\frac{dy}{dt}</m>.
+The slope <m>\dfrac{dy}{dx}</m> could also be found by computing <m>\dfrac{dx}{dt}+\dfrac{dy}{dt}</m>.
                     </p>
                 </li>
                 <li><!--correct-->
                     <p>
-The slope <m>\frac{dy}{dx}</m> could also be found by computing <m>\frac{dy/dt}{dx/dt}</m>.
+The slope <m>\dfrac{dy}{dx}</m> could also be found by computing <m>\dfrac{dy/dt}{dx/dt}</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-The slope <m>\frac{dy}{dx}</m> is always equal to <m>\frac{dx}{dt}</m>.
+The slope <m>\dfrac{dy}{dx}</m> is always equal to <m>\dfrac{dx}{dt}</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-The slope <m>\frac{dy}{dx}</m> is always equal to <m>\frac{dy}{dt}</m>.
+The slope <m>\dfrac{dy}{dx}</m> is always equal to <m>\dfrac{dy}{dt}</m>.
                     </p>
                 </li>
             </ol>
@@ -91,9 +91,9 @@ The slope <m>\frac{dy}{dx}</m> is always equal to <m>\frac{dy}{dt}</m>.
             <p>
 Suppose <m>x</m> is a function of <m>t</m>, and <m>y</m> may be thought of
 as a function of either <m>x</m> or <m>t</m>. Then the Chain Rule requires that
-<me>\frac{dy}{dt}=\frac{dy}{dx}\frac{dx}{dt}</me>. This provides the slope formula
+<me>\dfrac{dy}{dt}=\dfrac{dy}{dx}\dfrac{dx}{dt}</me>. This provides the slope formula
 for parametric equations:
-<me>\frac{dy}{dx}=\frac{dy/dt}{dx/dt}</me>. 
+<me>\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt}</me>. 
             </p>
         </statement>
     </fact>
@@ -147,36 +147,36 @@ What are the corresponding parametric equations and their derivatives?
             <ol marker="A." cols="2">
                 <li>
                     <p>
-<m>y=3t^2-9</m> and <m>x=t^3-3t</m>; <m>\frac{dy}{dt}=9t</m> and <m>\frac{dx}{dt}=3t-6</m>
+<m>y=3t^2-9</m> and <m>x=t^3-3t</m>; <m>\dfrac{dy}{dt}=9t</m> and <m>\dfrac{dx}{dt}=3t-6</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>x=3t^2-9</m> and <m>y=t^3-3t</m>; <m>\frac{dx}{dt}=9t</m> and <m>\frac{dy}{dt}=3t-6</m>
+<m>x=3t^2-9</m> and <m>y=t^3-3t</m>; <m>\dfrac{dx}{dt}=9t</m> and <m>\dfrac{dy}{dt}=3t-6</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>y=3t^2-9</m> and <m>x=t^3-3t</m>; <m>\frac{dy}{dt}=6t</m> and <m>\frac{dx}{dt}=3t^2-3</m>
+<m>y=3t^2-9</m> and <m>x=t^3-3t</m>; <m>\dfrac{dy}{dt}=6t</m> and <m>\dfrac{dx}{dt}=3t^2-3</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>x=3t^2-9</m> and <m>y=t^3-3t</m>; <m>\frac{dx}{dt}=6t</m> and <m>\frac{dy}{dt}=3t^2-3</m>
+<m>x=3t^2-9</m> and <m>y=t^3-3t</m>; <m>\dfrac{dx}{dt}=6t</m> and <m>\dfrac{dy}{dt}=3t^2-3</m>
                     </p>
                 </li>
             </ol>
         </task>
         <task>
             <p>
-The formula <m>\frac{dy}{dx}=\frac{dy/dt}{dx/dt}</m> allows us to compute slopes
+The formula <m>\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt}</m> allows us to compute slopes
 as which of the following functions of <m>t</m>?
             </p>
             <ol marker="A." cols="2">
-                <li><p><m>\frac{6t}{t^2+3}</m></p></li>
-                <li><p><m>\frac{6t}{t^2+1}</m></p></li>
-                <li><p><m>\frac{t^2-1}{2t}</m></p></li><!--correct-->
-                <li><p><m>\frac{2t}{3t^2-1}</m></p></li>
+                <li><p><m>\dfrac{6t}{t^2+3}</m></p></li>
+                <li><p><m>\dfrac{6t}{t^2+1}</m></p></li>
+                <li><p><m>\dfrac{t^2-1}{2t}</m></p></li><!--correct-->
+                <li><p><m>\dfrac{2t}{3t^2-1}</m></p></li>
             </ol>
         </task>
         <task>
@@ -185,10 +185,10 @@ Find the point, tangent slope, and tangent line equation (recall <m>y-y_0=m(x-x_
 corresponding to the parameter <m>t=-3</m>.
             </p>
             <ol marker="A." cols="2">
-                <li><p>Point <m>(-12,9)</m>, slope <m>-\frac{4}{3}</m>, EQ <m>y=-\frac{4}{3}x-7</m></p></li>
-                <li><p>Point <m>(18,-18)</m>, slope <m>-\frac{4}{3}</m>, EQ <m>y=-\frac{4}{3}x+6</m></p></li><!--correct-->
-                <li><p>Point <m>(-12,9)</m>, slope <m>\frac{3}{4}</m>, EQ <m>y=\frac{3}{4}x-8</m></p></li>
-                <li><p>Point <m>(18,-18)</m>, slope <m>\frac{3}{4}</m>, EQ <m>y=\frac{3}{4}x+5</m></p></li>
+                <li><p>Point <m>(-12,9)</m>, slope <m>-\dfrac{4}{3}</m>, EQ <m>y=-\dfrac{4}{3}x-7</m></p></li>
+                <li><p>Point <m>(18,-18)</m>, slope <m>-\dfrac{4}{3}</m>, EQ <m>y=-\dfrac{4}{3}x+6</m></p></li><!--correct-->
+                <li><p>Point <m>(-12,9)</m>, slope <m>\dfrac{3}{4}</m>, EQ <m>y=\dfrac{3}{4}x-8</m></p></li>
+                <li><p>Point <m>(18,-18)</m>, slope <m>\dfrac{3}{4}</m>, EQ <m>y=\dfrac{3}{4}x+5</m></p></li>
             </ol>
         </task>
     </activity>
