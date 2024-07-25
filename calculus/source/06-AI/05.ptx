@@ -788,7 +788,7 @@
         <fact xml:id="fact-AI4centerofmass">
             <statement>
                 <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\displaystyle\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\displaystyle\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\displaystyle\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation2" width="50%">
