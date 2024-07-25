@@ -8,12 +8,10 @@ class Generator(BaseGenerator):
         name1 = choice(["zeroes", "roots"])
         
         n = choice([1, 2])
-        k = randrange(1,6)
+        k = randrange(2,6)
         c = choice([-1,1])
-        R = [randrange(-2,3), randrange(3,6)*choice([-1,1])] #[-5,-4,-3,-2,-1,0,1,2,3,4,5]
-        shuffle(R)
-        r1 = R[0]
-        r2 = R[1]
+        root_opts = [choice([-1,1])*i for i in range(2,6)]
+        r1, r2 = sample(root_opts,2)
         
         
         f(x) = c*k*(x-r1)^2*(x-r2)^n
