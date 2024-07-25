@@ -509,7 +509,7 @@
         <fact xml:id="fact-AI4masscomputation">
             <statement>
                 <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  If one slices the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.</me>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  If one slices the solid into <m>n</m> pieces of width <m>\Delta x=\dfrac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation" width="50%">
@@ -541,7 +541,7 @@
             </figure>
                 </p>
                 <p>
-                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b \delta(x)A(x) dx.</me>
+                    We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b \delta(x)A(x)\, dx.</me>
                     <figure>
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass2" width="50%">
@@ -788,7 +788,7 @@
         <fact xml:id="fact-AI4centerofmass">
             <statement>
                 <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\displaystyle\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\displaystyle\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation2" width="50%">
@@ -820,7 +820,7 @@
             </figure>
                 </p>
                 <p>
-                    We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
+                    We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\displaystyle\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\displaystyle\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\displaystyle\int_a^b x\delta(x)A(x)dx}{\displaystyle\int_a^b \delta(x)A(x)dx}=\frac{\displaystyle\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
                     <figure>
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass" width="50%">
@@ -869,7 +869,7 @@
         <activity xml:id="activity-TI4conecentermass">
             <statement>
                 <p>
-                    Consider that for the prism from <xref ref="activity-TI4conemass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \frac{60-h}{4}\right)^2</m> in<m>^2</m>.  Also recall that the density of the cone is <m>\delta(h)=15+\sqrt{h}</m> oz/in<m>^3</m>, where <m>h</m> is the height in inches, and that we found the total mass to be about 142492.6  oz.
+                    Consider that for the prism from <xref ref="activity-TI4conemass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \dfrac{60-h}{4}\right)^2</m> in<m>^2</m>.  Also recall that the density of the cone is <m>\delta(h)=15+\sqrt{h}</m> oz/in<m>^3</m>, where <m>h</m> is the height in inches, and that we found the total mass to be about 142492.6  oz.
                 </p>
                 <p>
                     Use <xref ref="fact-AI4centerofmass"/> to find the height where the center of mass occurs.
@@ -881,7 +881,7 @@
         <activity xml:id="activity-TI4pyramidcentermass">
             <statement>
                 <p>
-                    Consider that for the pyramid from <xref ref="activity-A4pyramidmass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \frac{16-h}{2}\right)^2</m> ft<m>^2</m>.  Also recall that the density of the pyramid is <m>\delta(h)=10+\cos{\pi h}</m> lb/feet<m>^3</m>, where <m>h</m> is the height in feet, and that we found the total mass to be about 3414.14.6  lbs.
+                    Consider that for the pyramid from <xref ref="activity-A4pyramidmass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \dfrac{16-h}{2}\right)^2</m> ft<m>^2</m>.  Also recall that the density of the pyramid is <m>\delta(h)=10+\cos{\pi h}</m> lb/feet<m>^3</m>, where <m>h</m> is the height in feet, and that we found the total mass to be about 3414.14.6  lbs.
                 </p>
                 <p>
                     Use <xref ref="fact-AI4centerofmass"/> to find the height where the center of mass occurs.
