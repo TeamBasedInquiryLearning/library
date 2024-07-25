@@ -29,7 +29,7 @@ class Generator(BaseGenerator):
       tasks = [
                 {"map_task": {"map_function": map_function}},
                 {"table_task": {"table_function": table_function,
-                                "table_rows": [{"x": x, "y": y} for (x,y) in table_pairs],
+                                "table_rows": [{"x": x, "y": y} for (x,y) in table_pairs]}},
                 {"pairs_task": {"pairs_function": pairs_function,"pairs":pairs}},
             ]
       shuffle(tasks)
