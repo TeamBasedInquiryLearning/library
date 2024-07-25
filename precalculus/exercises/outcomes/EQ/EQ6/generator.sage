@@ -27,11 +27,29 @@ class Generator(BaseGenerator):
             }]
 
         # generate rational equation with two solutions
-        # (x+6)/(x+2) - 1 = (x+5)/(x+7)
-        # (x+6)(x+7) - (x+2)(x+7) = (x+5)(x+2)
-        # x2+13x+42 - (x2+9x+14) = (x2+7x+10)
-        # 0 = x2+3x-18
-        # 0 = (x+6)(x-3)
+        # h/t https://math.stackexchange.com/a/4950440
+        while True:
+            offset = choice([-1,1])
+            a,b,d = [choice([-1,1])*(2*i+offset) for i in sample(range(1,4), 3)]
+            e = 1
+            g = d + choice([-1,1])
+            c = d + e*(a+d)*(b+d)/(g-d)
+            f = g + e*(a+g)*(b+g)/(g-d)
+            if abs(c)<=12 and abs(f)<=12:
+                break
+        eq = CheckIt.shuffled_equation(
+            (x+c)/(x+d),
+            e,
+            -(x+f)/(x+g)
+        )
+        eqs += [{
+            "eq": eq,
+            "sols": [{"sol": a},{"sol": b},],
+            "d": d,
+            "g": g,
+            "c": c,
+            "f": f,
+        }]
 
         shuffle(eqs)
         return {
