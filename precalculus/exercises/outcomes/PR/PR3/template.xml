@@ -4,13 +4,15 @@
     <knowl>
         <content>
             <p>
-                Find the {{name1}} of the polynomial <m>f(x)={{f}}</m>.
+                Find the {{name1}}, along with their corresponding multiplicities, of the polynomial <m>f(x)={{f}}</m>.
             </p>
         </content>
 
         <outtro>
             <p>
-                The {{name1}} of <m>f(x)={{f}}</m> are <m>x  = {{r1}}, {{r2}}</m>.
+                The {{name1}} of <m>f(x)={{f}}</m> are
+                <m>x  = {{r1o}}</m> with multiplicity <m>2</m>,
+                and <m>x = {{r2o}}</m> with multiplicity <m>{{r2mult}}</m>.
             </p>
         </outtro>
         
@@ -48,32 +50,6 @@
     <knowl>
         <content>
             <p>
-                Identify where any local maximums and minimums may occur.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                There is a local {{extrema1}} when <m>x={{r1o}}</m>.
-            </p>
-            
-            {{#three}}
-            <p>
-                There is a local {{extrema2}} when <m>x={{r2o}}</m>.
-            </p>
-            {{/three}}
-            
-            
-            <p>
-                There is a local {{extrema3}} between <m>x={{r1}}</m> and <m>x={{r2}}</m>.
-            </p>
-            
-        </outtro>
-    </knowl>   
-    
-    <knowl>
-        <content>
-            <p>
                 Sketch <m>y={{f}}</m>.
             </p>
             
@@ -81,7 +57,7 @@
         <outtro>
             <p>
                 <image
-                source="assets/PR5/generated/{{__seed__}}/plot.png"
+                source="assets/PR3/generated/{{__seed__}}/plot.png"
                 description="The plot of y=f(x), along with special points."/>
             </p>
         </outtro>
