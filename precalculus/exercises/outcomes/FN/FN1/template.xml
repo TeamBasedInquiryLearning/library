@@ -24,6 +24,14 @@
                         description="Solution to inequality."/>
                     </p>
                     </content>
+                    <outtro>
+                        <!-- {{#map_function}}-->
+                        <p>This mapping is a function.</p>
+                        <!-- {{/map_function}}-->
+                        <!-- {{^map_function}}-->
+                        <p>This mapping is not a function.</p>
+                        <!-- {{/map_function}}-->
+                    </outtro>
                 </knowl>
                 <!-- {{/map_task}} -->
                 <!-- {{#table_task}} -->
@@ -31,7 +39,16 @@
                     <content>
                     <p>Table goes here. </p>
                     </content>
+                    <outtro>
+                        <!-- {{#map_function}}-->
+                        <p>This table defines a function.</p>
+                        <!-- {{/map_function}}-->
+                        <!-- {{^map_function}}-->
+                        <p>This table does not define a function.</p>
+                        <!-- {{/map_function}}-->
+                    </outtro>
                 </knowl>
+                
                 <!-- {{/table_task}} -->
                 <!-- {{/tasks}} -->
     </knowl>
