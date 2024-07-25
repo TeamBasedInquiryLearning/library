@@ -38,15 +38,16 @@
                 <knowl>
                     <content>
                     <p>Table goes here.  </p>
-                    <table>
-                    <tabular>
-                        <row header="yes" bottom="minor">
-                            <cell><m>x</m></cell> 
-                            <cell><m>y</m></cell>
-                        </row>
-                        {{table_rows}}
-                    </tabular>
-                </table>
+<p>
+  <me>
+\begin{array}{c|c} 
+x &amp; y \\\hline
+{{#table_rows}}
+{{x}} &amp; {{y}} \\
+{{/table_rows}}
+\end{array}
+  </me>
+</p>
                     </content>
                     <outtro>
                         <!-- {{#table_function}}-->
