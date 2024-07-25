@@ -45,18 +45,15 @@ class Generator(BaseGenerator):
       ]
       shuffle(tasks2)
 
-      #plots={x:None for x in sample(["ellipse","parabola","points","line","cubic","hyperbola","piecewise"],3)}
       plots = { "ellipse": False, "parabola": choice([True,False]), "points": choice([True,False]),
                 "line": True, "cubic": True, "hyperbola": False, "piecewise": choice([True,False])}
-      plots= {k:plots[k] for k in sample(list(plots),3)}
+      plots= [(k,plots[k]) for k in sample(list(plots),3)]
 
-      tasks3=[ {"plot": f"plot{n}", "is_function": list(plots.values())[n]} for n in [0..2]]
+      tasks3=[ {"plot": f"plot{n}", "is_function": plots[n][1]} for n in [0..2]]
 
       return {
         "tasks":tasks,
         "map_function":map_function,
-        #"table_function":table_function,
-        #"pairs_function":pairs_function,
         "tasks2":tasks2,
         "tasks3":tasks3,
         "plots": plots,
@@ -84,6 +81,34 @@ class Generator(BaseGenerator):
 
       p.axes(False)
 
+      q=[]
+      x = var('x')
+      y = var('y')
+      for (plot_type,is_function) in data["plots"]:
+        if plot_type == "ellipse": 
+          q.append(ellipse((2,2),4,2))
+        if plot_type == "parabola" and is_function: 
+          q.append(plot((x,x^2),(x,-4,4),parametric=True))
+        if plot_type == "parabola" and not is_function: 
+          q.append(parametric_plot((y^2,y),(y,-4,4)))
+        if plot_type == "points" and is_function: 
+          q.append(point([(2,2),(3,3)]))
+        if plot_type == "points" and not is_function: 
+          q.append(point([(3,2),(3,3)]))
+        if plot_type == "line":
+          q.append(plot(2*x+3,(x,-5,5)))
+        if plot_type == "cubic":
+          q.append(plot(x^3,(x,-5,5)))
+        if plot_type == "hyperbola":
+          q.append(implicit_plot(x^2-y^2-1,(x,-3,3),(y,-3,3)))
+        if plot_type ==  "piecewise" and is_function:
+          q.append(plot(x^2,(x,-5,0))+plot(x-2,(x,1,5)))
+        if plot_type ==  "piecewise" and not is_function:
+          q.append(plot(x^2,(x,-5,1))+plot(x-2,(x,-1,5)))
+
       return {
-            "mapping": plot(p)
+            "mapping": plot(p),
+            "plot0": plot(q[0]),
+            "plot1": plot(q[1]),
+            "plot2": plot(q[2]),
       }

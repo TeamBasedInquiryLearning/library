@@ -14,7 +14,7 @@
                     <p>
                     <image
                         source="assets/FN1/generated/{{__seed__}}/mapping.png"
-                        description="Solution to inequality."/>
+                        description="Mapping"/>
                     </p>
                     </content>
                     <outtro>
@@ -95,7 +95,11 @@
         <!--{{#tasks3}}-->
         <knowl>
             <content>
-                <p>{{plot}}</p>
+                <p>
+                    <image
+                        source="assets/FN1/generated/{{__seed__}}/{{plot}}.png"
+                        description="Plot"/>
+                </p>
             </content>
             <outtro>
                 <!--{{#is_function}}-->
