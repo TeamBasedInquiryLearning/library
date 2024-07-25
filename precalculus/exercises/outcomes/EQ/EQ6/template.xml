@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    
     <knowl>
         <intro>
             <p>
@@ -9,21 +8,24 @@ Solve the following rational equations. Give solutions as integers
 or fractions, not decimals or approximations.
             </p>
         </intro>
-        {{#eqs}}
+        <!-- {{#eqs}} -->
         <knowl>
             <content>
                 <p>
-(eq)
+<m mode="display">{{eq}}</m>
                 </p>
             </content>
             <outtro>
-                <p>
-(sols)
-                </p>
+                <list>
+                    <!-- {{#sols}} -->
+                    <item><p><m>x={{sol}}</m></p></item>
+                    <!-- {{/sols}} -->
+                </list>
             </outtro>
         </knowl>
-        {{/eqs}}
+        <!-- {{/eqs}} -->
     </knowl>
+
     <knowl>
         <content>
             <p>
@@ -36,4 +38,5 @@ answer
             </p>
         </outtro>
     </knowl>
+
 </knowl>
