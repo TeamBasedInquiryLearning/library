@@ -1,26 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
     
-    
+    <knowl>
+        <intro>
+            <p>
+Solve the following rational equations. Give solutions as integers
+or fractions, not decimals or approximations.
+            </p>
+        </intro>
+        {{#eqs}}
+        <knowl>
+            <content>
+                <p>
+(eq)
+                </p>
+            </content>
+            <outtro>
+                <p>
+(sols)
+                </p>
+            </outtro>
+        </knowl>
+        {{/eqs}}
+    </knowl>
     <knowl>
         <content>
             <p>
-                Task 
+what-if question
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+answer
             </p>
         </outtro>
-        
     </knowl>
-      
-    
 </knowl>
