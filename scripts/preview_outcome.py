@@ -45,7 +45,7 @@ sandbox_path.mkdir()
 """.strip())
 (sandbox_path/"outcome").mkdir()
 (sandbox_path/"library").mkdir()
-if args.book == "linear-algebra":
+if args.book in ["linear-algebra", "precalculus"]:
     shutil.copy(exercise_path/"library"/"common.sage", sandbox_path/"library"/"common.sage")
 outcome_path = (exercise_path/outcome_ele.find("{*}path").text)
 shutil.copy(outcome_path/"template.xml", sandbox_path/"outcome"/"template.xml")
