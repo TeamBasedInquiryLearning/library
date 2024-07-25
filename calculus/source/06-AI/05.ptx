@@ -820,7 +820,7 @@
             </figure>
                 </p>
                 <p>
-                    We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\displaystyle\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\displaystyle\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\displaystyle\int_a^b x\delta(x)A(x)dx}{\displaystyle\int_a^b \delta(x)A(x)dx}=\frac{\displaystyle\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
+                    We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\displaystyle\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
                     <figure>
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass" width="50%">
