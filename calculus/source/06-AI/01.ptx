@@ -133,7 +133,7 @@
             <statement>
             <p>
 To obtain the average velocity of an object traveling with velocity <m>v(t)</m> for <m>a\leq t\leq b</m>,
-we may find its distance traveled by calculating <m>\int_a^b v(t)</m>. Thus, the average velocity is obtained
+we may find its distance traveled by calculating <m>\displaystyle \int_a^b v(t)</m>. Thus, the average velocity is obtained
 by dividing by the time <m>b-a</m> elapsed:
                 <me>\frac{1}{b-a}\int_a^b v(t)\,dt</me>.
             </p>
@@ -160,10 +160,10 @@ For example, the following calculuation confirms the previous activity:
                     Which of the following expressions represent the average value of <m>f(x)=-12 \, x^{2} + 8 \, x + 4</m> over the interval <m>[-1, 2]</m>?
                     
                     <ol marker="A." cols="2">
-                        <li><m>\displaystyle \frac{1}{3}\int_{-1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
-                        <li><m>\displaystyle \frac{-1}{1}\int_{1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
-                        <li><m>\displaystyle \frac{1}{2}\int_{1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
-                        <li><m>\displaystyle \frac{-1}{4}\int_{-1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
+                        <li><m>\displaystyle \frac{1}{3}\int_{-1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right)\, dx</m></li>
+                        <li><m>\displaystyle \frac{-1}{1}\int_{1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right)\, dx</m></li>
+                        <li><m>\displaystyle \frac{1}{2}\int_{1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right)\, dx</m></li>
+                        <li><m>\displaystyle \frac{-1}{4}\int_{-1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right)\, dx</m></li>
                     </ol>
                 </p>
                 </task>
@@ -178,10 +178,10 @@ For example, the following calculuation confirms the previous activity:
                     Which of the following expressions represent the average value of <m>f(x)=x\cos(x^2)+x</m> on the interval <m>[\pi, 4\pi]</m>?
                     
                     <ol marker="A." cols="2">
-                        <li><m>\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m></li>
-                        <li><m>\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m></li>
-                        <li><m>\displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m></li>
-                        <li><m>\displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m></li>
+                        <li><m>\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big)\, dx</m></li>
+                        <li><m>\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big)\, dx</m></li>
+                        <li><m>\displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big)\, dx</m></li>
+                        <li><m>\displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big)\, dx</m></li>
                     
                     </ol>
                 </p>
@@ -196,7 +196,7 @@ For example, the following calculuation confirms the previous activity:
         <activity xml:id="activity-AI1averagehandsoff">
             <statement>
                 <p>
-                    Find the average value of <m>\displaystyle g(t)=\frac{t}{t^2+1}</m> on the interval <m>[0, 4]</m>.
+                    Find the average value of <m> g(t)=\dfrac{t}{t^2+1}</m> on the interval <m>[0, 4]</m>.
                 </p>
             </statement>    
         </activity>

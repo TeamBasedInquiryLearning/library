@@ -219,7 +219,7 @@
             Given a differentiable function <m>f(x)</m>, the <term>arclength</term><idx>arclength</idx> of <m>y=f(x)</m> defined on <m>[a,b]</m> is computed by the integral
             
             <md>
-                <mrow>\lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
+                <mrow>\lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
                 <mrow>&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx</mrow>
             </md>.
         </p>

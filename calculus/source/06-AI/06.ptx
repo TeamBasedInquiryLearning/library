@@ -88,7 +88,7 @@
         <activity xml:id="activity-A5bucketestimate">
             <introduction>
                 <p>
-                    using the same the bucket from <xref ref="activity-A5bucket3"/>,  consider the bucket's mass at heights <m>h_i=0, 5, 10, 15</m> meters.
+                    Using the same the bucket from <xref ref="activity-A5bucket3"/>,  consider the bucket's mass at heights <m>h_i=0, 5, 10, 15</m> meters.
                     <figure>
                 <caption>Bucket lifted 5 m at a time.</caption>
                     <image xml:id="bucketestimate" width="50%">
@@ -175,10 +175,10 @@
                 <p>
                     Based on the Riemann sum chosen in <xref ref="activity-AI5bucketriemann"/>, which of the following integrals computes the work it would take to lift this bucket 20 meters?
                     <ol marker="A." cols="2">
-                        <li><m>\displaystyle \int_0^{20} h_i\cdot 9.8 dh</m>. Nm</li>
-                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dm</m> Nm</li>
-                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8 dh</m> Nm</li>
-                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h_i}\right)\cdot 9.8 dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{20} h_i\cdot 9.8 \,dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8\, dm</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h}\right)\cdot 9.8\, dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{20} \left( 2+8e^{-0.02h_i}\right)\cdot 9.8\, dh</m> Nm</li>
                     </ol>
                 </p>
             </statement>
@@ -323,8 +323,8 @@
                 <p>
                     Based on the Riemann sum chosen in <xref ref="activity-AI5waterriemann"/>, which of the following integrals computes the work it would take to pump all the water from the tank?
                     <ol marker="A.">
-                        <li><m>\displaystyle \int_0^{10} 9000\pi\cdot 9.8 (10-h) dh</m> Nm</li>
-                        <li><m>\displaystyle \int_0^{10} 1000\pi\cdot 9.8 h^2(10-h) dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{10} 9000\pi\cdot 9.8 (10-h)\, dh</m> Nm</li>
+                        <li><m>\displaystyle \int_0^{10} 1000\pi\cdot 9.8 h^2(10-h)\, dh</m> Nm</li>
                     </ol>
                 </p>
             </statement>
