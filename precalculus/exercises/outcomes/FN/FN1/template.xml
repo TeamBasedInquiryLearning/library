@@ -37,17 +37,14 @@
                 <!-- {{#table_task}} -->
                 <knowl>
                     <content>
-                    <p>Table goes here.  </p>
-<p>
-  <me>
-\begin{array}{c|c} 
-x &amp; y \\\hline
-{{#table_rows}}
-{{x}} &amp; {{y}} \\
-{{/table_rows}}
-\end{array}
-  </me>
-</p>
+                    <p><me>
+                        \begin{array}{c|c} 
+                        x &amp; y \\\hline
+                        {{#table_rows}}
+                        {{x}} &amp; {{y}} \\
+                        {{/table_rows}}
+                        \end{array}
+                    </me></p>
                     </content>
                     <outtro>
                         <!-- {{#table_function}}-->
