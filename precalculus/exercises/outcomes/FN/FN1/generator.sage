@@ -86,25 +86,32 @@ class Generator(BaseGenerator):
       y = var('y')
       for (plot_type,is_function) in data["plots"]:
         if plot_type == "ellipse": 
-          q.append(ellipse((2,2),4,2))
+          q.append(ellipse((choice([-3..3]),choice([-3..3])),choice([1..4]),choice([1..4]),thickness=2))
         if plot_type == "parabola" and is_function: 
-          q.append(plot((x,x^2),(x,-4,4),parametric=True))
+          q.append(plot(choice([-1,1])*choice([1..3])*x^2+choice([-3..3])*x+choice([-3..3]),(x,-5,5),thickness=2))
         if plot_type == "parabola" and not is_function: 
-          q.append(parametric_plot((y^2,y),(y,-4,4)))
+          q.append(parametric_plot((choice([-1,1])*choice([1,3])*y^2+choice([-3..3])*y+choice([-3..3]),y),(y,-5,5),thickness=2))
         if plot_type == "points" and is_function: 
-          q.append(point([(2,2),(3,3)]))
+          q.append(point([(x,choice([-5..5])) for x in sample([-5..5],5)],size=30))
         if plot_type == "points" and not is_function: 
-          q.append(point([(3,2),(3,3)]))
+          xlist=[-5..5]
+          duped_x=xlist.pop()
+          q.append(point([(x,choice([-5..5])) for x in sample(xlist,3)],size=30)+point([(duped_x,y) for y in sample([-5..5],2)],size=30))
         if plot_type == "line":
-          q.append(plot(2*x+3,(x,-5,5)))
+          q.append(plot(choice([-4..4])*x+choice([-4..4]),(x,-5,5),thickness=2))
         if plot_type == "cubic":
-          q.append(plot(x^3,(x,-5,5)))
+          q.append(plot(choice([-1,1])*choice([1..3])*x^3+choice([-3..3])*x^2+choice([-3..3])*x+choice([-3..3]),(x,-5,5),thickness=2))
         if plot_type == "hyperbola":
-          q.append(implicit_plot(x^2-y^2-1,(x,-3,3),(y,-3,3)))
-        if plot_type ==  "piecewise" and is_function:
-          q.append(plot(x^2,(x,-5,0))+plot(x-2,(x,1,5)))
-        if plot_type ==  "piecewise" and not is_function:
-          q.append(plot(x^2,(x,-5,1))+plot(x-2,(x,-1,5)))
+          q.append(implicit_plot(choice([1..4])*x^2-choice([1..4])*y^2+choice([-1,1])*choice([1..4]),(x,-3,3),(y,-3,3),linewidth=2))
+        if plot_type ==  "piecewise":
+          cut=choice([-2..2])
+          if is_function:
+            xranges=[(x,-5,cut),(x,cut+1,5)]
+          if not is_function:
+            xranges=[(x,-5,cut),(x,cut-1,5)]
+          shuffle(xranges)
+          q.append(plot(choice([-1,1])*x^2+choice([-3..3])*x,xranges[0],thickness=2)+plot(choice([-3..3])*x+choice([-3..3]),xranges[1],thickness=2))
+
 
       return {
             "mapping": plot(p),
