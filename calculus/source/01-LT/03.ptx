@@ -19,7 +19,7 @@
     </remark>
     
     <activity xml:id="activity-limits-analytically1">
-            <p>Given <m>f(x)=3x^2-\frac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\displaystyle \lim_{x\to2}f(x)</m> numerically (or graphically). What do you think is more likely?</p>
+            <p>Given <m>f(x)=3x^2-\dfrac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\displaystyle \lim_{x\to2}f(x)</m> numerically (or graphically). What do you think is more likely?</p>
       <ol marker="A." cols="2">
                 <li><m>\displaystyle \lim_{x \to 2}f(x)=f(2)</m></li>
                 <li><m>\displaystyle \lim_{x \to 2}f(x) \approx f(2)</m></li>
@@ -34,7 +34,7 @@
               <tabular>
                     <row bottom="minor">
                   <cell>
-                    x
+                    <m>x</m>
                   </cell>
                   <cell>
                     6.99
@@ -304,7 +304,7 @@
     
         <activity xml:id="activity-limits-rationals1">
         <statement>
-            <p> Given <m>p(x)=-3x^2-5x+7</m> and <m>q(x)=x^4-x^2+3</m>, which of the following describes the most efficient way to determine <m>\displaystyle \lim_{x \to -1} \frac{p(x)}{q(x)}</m>?
+            <p> Given <m>p(x)=-3x^2-5x+7</m> and <m>q(x)=x^4-x^2+3</m>, which of the following describes the most efficient way to determine <m>\displaystyle \lim_{x \to -1} \dfrac{p(x)}{q(x)}</m>?
             </p>
        <ol marker="A.">
                 <li>Sums/difference, scalar multiple, and product laws </li> 
@@ -319,16 +319,16 @@
     <theorem xml:id="theorem-limits-rationals">
     <title>Limits of Rational Functions </title>
         <statement>
-        <p>If <m>p(x)</m> and <m>q(x)</m> are polynomials, <m>c</m> is a real number, and <m>q(c) \neq 0</m> then <m>\displaystyle \lim_{x \to c} \frac{p(x)}{q(x)}=\frac{p(c)}{q(c)}</m>.</p>
+        <p>If <m>p(x)</m> and <m>q(x)</m> are polynomials, <m>c</m> is a real number, and <m>q(c) \neq 0</m> then <m>\displaystyle \lim_{x \to c} \dfrac{p(x)}{q(x)}=\dfrac{p(c)}{q(c)}</m>.</p>
         </statement>
     </theorem>
     
     <activity xml:id="activity-limits-rationals2">
-        <statement><p>Consider taking the limit of a rational function <m>\frac{p(x)}{q(x)}</m> as <m>x \to c</m>. If <m>q(c)=0</m>, is it possible for <m>\displaystyle\lim_{x \to c}\frac{p(x)}{q(x)} </m> to equal a number? </p> 
+        <statement><p>Consider taking the limit of a rational function <m>\dfrac{p(x)}{q(x)}</m> as <m>x \to c</m>. If <m>q(c)=0</m>, is it possible for <m>\displaystyle\lim_{x \to c}\dfrac{p(x)}{q(x)} </m> to equal a number? </p> 
   <ol marker="A.">
-            <li>No, because <m>\frac{p(x)}{q(x)}</m> is not defined at <m>x=c</m> since <m>q(c)=0</m>.</li>
-            <li>Yes, because if you graph <m>f(x)=\frac{x^2-1}{x-1}</m>, the value <m>f(1)</m> is not defined, but the graph shows that the limit of <m>f(x)</m> does exist as <m>x \to 1</m>.</li>
-            <li>No, because if you graph <m>g(x)=\frac{x^2+1}{x-1}</m>, the value <m>g(1)</m> is not defined and the graph shows that the limit of <m>\displaystyle\lim_{x \to c}g(x)</m> does not exist.</li>
+            <li>No, because <m>\dfrac{p(x)}{q(x)}</m> is not defined at <m>x=c</m> since <m>q(c)=0</m>.</li>
+            <li>Yes, because if you graph <m>f(x)=\dfrac{x^2-1}{x-1}</m>, the value <m>f(1)</m> is not defined, but the graph shows that the limit of <m>f(x)</m> does exist as <m>x \to 1</m>.</li>
+            <li>No, because if you graph <m>g(x)=\dfrac{x^2+1}{x-1}</m>, the value <m>g(1)</m> is not defined and the graph shows that the limit of <m>\displaystyle\lim_{x \to c}g(x)</m> does not exist.</li>
             <li>Yes, because we can use  <xref ref="theorem-limits-rationals"/>.</li>
         </ol>
         </statement>
@@ -348,14 +348,14 @@
     </activity>
     
     <remark xml:id="zero-over-zero">
-    <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\frac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
+    <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
     </remark>
     
 <definition xml:id="def-hole"><statement><p>A function <m>f(x)</m> has a <term>hole</term><idx>hole</idx> at <m>x=c</m> if <m>f(c)</m> does not exist but <m>\displaystyle \lim_{x \to c} f(x)</m> does exist and is equal to a real number. </p></statement></definition>    
     
-<example><statement><p>The function <m>f(x)=\frac{x^2-1}{x-1}</m> has a hole at <m>x=1</m> because <m>f(1)</m> is not defined but 
-    <me>\lim_{x \to 1} \frac{x^2-1}{x-1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2 ,</me>
-    so the limit exists and is equal to a real number. Notice that <m>\displaystyle \lim_{x \to 1} \frac{x^2-1}{x-1}</m> is also an example of a limit giving an indeterminate form <m>\frac{0}{0}</m> which we could then compute using an algebraic manipulation of the function given.
+<example><statement><p>The function <m>f(x)=\dfrac{x^2-1}{x-1}</m> has a hole at <m>x=1</m> because <m>f(1)</m> is not defined but 
+    <me>\lim_{x \to 1} \dfrac{x^2-1}{x-1} = \lim_{x \to 1} \dfrac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2 ,</me>
+    so the limit exists and is equal to a real number. Notice that <m>\displaystyle \lim_{x \to 1} \dfrac{x^2-1}{x-1}</m> is also an example of a limit giving an indeterminate form <m>\dfrac{0}{0}</m> which we could then compute using an algebraic manipulation of the function given.
     </p></statement></example>
 
 <activity xml:id="limits-alg-checkit">
@@ -364,9 +364,9 @@
             Determine the following limits and explain your reasoning.
         </p>
         
-            <task><me>\lim_{x\to-6 } \frac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></task>
-            <task><me>\lim_{x\to-1 } \frac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></task>
-        <task><me>\lim_{x\to5 } \frac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></task>
+            <task><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></task>
+            <task><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></task>
+        <task><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></task>
        
     </statement>
     </activity>
@@ -375,11 +375,11 @@
     
       <activity xml:id = "activity-bolt2">
               <introduction> 
-                <p> In activity <xref ref = "activity-bolt1"/> you studied the velocity of Usain Bolt in his Beijing 100 meters dash. We will now study this situation analytically. To make our computations simpler, we will approximate that he could run 100 meters in 10 seconds and we will consider the model <m>d=f(t)=t^2</m>, where <m>d</m> is the distance in meters and <m>t</m> is the time in seconds. </p>
+                <p> In <xref ref = "activity-bolt1"/> you studied the velocity of Usain Bolt in his Beijing 100 meters dash. We will now study this situation analytically. To make our computations simpler, we will approximate that he could run 100 meters in 10 seconds and we will consider the model <m>d=f(t)=t^2</m>, where <m>d</m> is the distance in meters and <m>t</m> is the time in seconds. </p>
                   
                   <note xml:id="inst-velocity">
-                  <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m>\displaystyle  \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: </p>
-       <me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}</me>. </note>
+                  <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m>\displaystyle  \dfrac{f(a+h)-f(a)}{(a+h) - a} = \dfrac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: </p>
+       <me> \lim_{h \to 0} \dfrac{f(a+h)-f(a)}{h}</me>. </note>
     </introduction>
              <task> <statement> <p> Compute the average velocity on the interval <m>[5,6]</m>. We think of this interval as <m>[5,5+h]</m> for the value of <m>h=1</m>.</p>
          </statement> </task>    
