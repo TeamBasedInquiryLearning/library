@@ -37,19 +37,42 @@
                 <!-- {{#table_task}} -->
                 <knowl>
                     <content>
-                    <p>Table goes here. </p>
+                    <p>Table goes here.  </p>
+                    <table>
+                    <tabular>
+                        <row header="yes" bottom="minor">
+                            <cell><m>x</m></cell> 
+                            <cell><m>y</m></cell>
+                        </row>
+                        {{table_rows}}
+                    </tabular>
+                </table>
                     </content>
                     <outtro>
-                        <!-- {{#map_function}}-->
+                        <!-- {{#table_function}}-->
                         <p>This table defines a function.</p>
-                        <!-- {{/map_function}}-->
-                        <!-- {{^map_function}}-->
+                        <!-- {{/table_function}}-->
+                        <!-- {{^table_function}}-->
                         <p>This table does not define a function.</p>
-                        <!-- {{/map_function}}-->
+                        <!-- {{/table_function}}-->
                     </outtro>
                 </knowl>
-                
                 <!-- {{/table_task}} -->
+                <!-- {{#pairs_task}} -->
+                <knowl>
+                    <content>
+                    <p> <m>{{pairs}}</m> </p>
+                    </content>
+                    <outtro>
+                        <!-- {{#pairs_function}}-->
+                        <p>These ordered pairs define a function.</p>
+                        <!-- {{/pairs_function}}-->
+                        <!-- {{^pairs_function}}-->
+                        <p>These ordered pairs do not define a function.</p>
+                        <!-- {{/pairs_function}}-->
+                    </outtro>
+                </knowl>
+                <!-- {{/pairs_task}} -->
                 <!-- {{/tasks}} -->
     </knowl>
 

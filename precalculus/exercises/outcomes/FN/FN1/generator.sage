@@ -6,12 +6,31 @@ class Generator(BaseGenerator):
       table_function = choice([True,False])
       pairs_function = choice([True,False])
 
+      table_domain = sample([1..20],6)
+      table_codomain = sample([1..20],6)
+      table_pairs = [ (x, choice(table_codomain)) for x in table_domain]
+      if not table_function:
+        duplicated_x = choice([x for x in table_domain if x != table_domain[0]])
+        #Make sure we don't put the same ordered pair in there twice.
+        second_y= choice([y for y in table_codomain if (duplicated_x,y) not in table_pairs])                      
+        table_pairs[0] = (duplicated_x, second_y)
+        shuffle(table_pairs)
 
+      pairs_domain = sample([1..20],6)
+      pairs_codomain = sample([1..20],6)
+      pairs = [ (x, choice(pairs_codomain)) for x in pairs_domain]
+      if not pairs_function:
+        duplicated_x = choice([x for x in pairs_domain if x != pairs_domain[0]])
+        #Make sure we don't put the same ordered pair in there twice.
+        second_y= choice([y for y in pairs_codomain if (duplicated_x,y) not in pairs])                      
+        pairs[0] = (duplicated_x, second_y)
+        shuffle(pairs)
 
       tasks = [
                 {"map_task": {"map_function": map_function}},
-                {"table_task": {"table_function": table_function}},
-                {"pairs_task": {"pairs_function": pairs_function}},
+                {"table_task": {"table_function": table_function,
+                                "table_rows":" ".join([f"<row halign='center'><cell><m>{x}</m></cell><cell><m>{y}</m></cell></row>" for (x,y) in table_pairs])}},
+                {"pairs_task": {"pairs_function": pairs_function,"pairs":pairs}},
             ]
       shuffle(tasks)
 
