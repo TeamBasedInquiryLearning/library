@@ -279,40 +279,41 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
     
 <!-- Using triangles     -->
 
+<remark xml:id = "thm-right-triangles">
+    <p>Recall that in a right triangle with sides <m>a,b</m>, and hypotenuse <m>c</m> we have the relationship 
+    </p>
+<me> a^2 + b^2 = c^2. </me>
+<p> You might know this as the Pythagorean theorem, even though this relationship was known by the Babylonians already a thousand years before his time!
+</p>
+</remark>
+
+
 <activity xml:id="right-triangles-related-rates">
   <introduction>
-<p>Recall that in a right triangle with sides <m>a,b</m> and hypotenuse <m>c</m> we have the relationship </p>
-<me> a^2 + b^2 = c^2,</me>
-<p>also known in the western world as the Pythagorean theorem (even though this result was well know well before his time by other civilizations).</p> 
-  </introduction>
-
-<task>
-  <statement>
+    <p>Consider the relationship between the lengths of the sides of a right triangle given by <xref ref="thm-right-triangles"/>.
+    </p>
+    </introduction>  
+      <task>
     <p> Notice that by differentiating the equation above with respect to <m>t</m> we get a relationship between
       <m>a,b,c, \frac{da}{dt}, \frac{db}{dt}, \frac{dc}{dt}</m>. Find this related rates equation.    
     </p>
-  </statement>
 </task>
    
 <task>
-  <statement>
    <p> A rectangle has one side of 8 cm. How fast is the diagonal of the rectangle changing at the instant when the other 
     side is 6 cm and increasing at a rate of 3 cm per minute?
  </p>  
-</statement>
 </task>
     
 <task>
-  <statement>
-   <p> A 10 m ladder leans against a vertical wall and the bottom of the ladder slides away at a rate of 0.5 m/sec. 
-    When is the top of the ladder sliding the fastest down the wall?
+   <p> A 10 m ladder leans against a vertical wall whilst the bottom of the ladder is sliding away at a rate of 0.5 m/sec. 
+    At which time is the top of the ladder sliding down the wall the fastest?
  </p> 
      <ol marker="A." cols="2">
                 <li><p>  When the bottom of the ladder is 4 meters from the wall. </p></li>
                   <li><p> When the bottom of the ladder is 8 meters from the wall. </p></li> 
                   <li><p> The top of the ladder is sliding down at a constant rate. </p></li>   
       </ol>      
-  </statement>
 </task>
 </activity>
 
