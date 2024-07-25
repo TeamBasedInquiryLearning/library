@@ -1,26 +1,77 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
+    <!-- distance types -->
     <intro>
         <p>
-            Question
+            Two trains are {{dist}} {{d-unit}} apart and heading toward each other. One is traveling at {{rate1}} {{r-unit}} and the other at {{rate2}} {{r-unit}}. After how much time will they meet?
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            Two trains are {{dist}} {{d-unit}} apart and traveling toward each other. One train is traveling {{rate1}} {{r-unit}} faster than the other. If they meet after {{time}} {{t-unit}}, at what rate is each train moving?  
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            Two trains leave a station at the same time, one traveling {{direction1}} and the other {{direction2}}. One is traveling at {{rate1}} {{r-unit}} and the other at {{rate2}} {{r-unit}}. How much time will have passed when they are {{distance}} {{d-unit}} apart?
+        </p>
+    </intro>
+                <!-- on the problems above and below, have the directions be opposite. either north/south or east/west -->
+
+    <intro>
+        <p>
+            Two trains leave a station at the same time, one traveling {{direction1}} and the other {{direction2}}. One train is traveling {{rate1}} {{r-unit}} faster than the other. If they are {{distance}} {{d-unit}} apart after {{time}} {{t-unit}}, how fast is each train moving?
+        </p>
+    </intro>            
+
+    <!-- value mixtures -->
+
+    <intro>
+        <p>
+            In {{name}} candy shop, chocolate, which sells for {{amount1}} per {{weight}}, is mixed with nuts, which are sold for {{amount2}} per {{weight}}. Chocolate and nuts are combined to form a chocolate-nut candy, which sells for {{combinedamount}} per {{weight}}. How much of each are used to make {{totaamount}} {{weight}} of the mixture?
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            A smoothie shop sells pureed strawberries for {{amount1}} per {{weight}} and pureed bananas for {{amount2}} per {{weight}}. If you ask nicely, they'll also sell a {{totalamount}} {{weight}} strawberry banana puree for {{combinedamount}} per {{weight}}. How much of the strawberry puree and the banana puree are used to make the mixed strawberry banana puree?
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            Target sells Hot Wheels in {{count1}}-packs and {{count2}}-packs. On a certain day there were {{amount1}} {{count1}}-packs sold and {{amount2}} {{count2}}-packs. In total, {{totalcars}} individual cars were sold. How many of each size pack was sold?
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            At a certain theater, it costs {{cost1}} to buy {{child1}} child tickets and {{adult1}} adult tickets. If you buy {{child2}} child tickets and {{adult2}} adult tickets, it will cost {{cost2}}. What is the cost for one adult ticket? What about one child ticket?
         </p>
     </intro>
     
+    <!-- percent mixtures -->
+   
+    <intro>
+        <p>
+            {{name}} has two investment accounts, one earning {{percent1}} annual interest and the other earning {{percent2}} annual interest. After one year, the original investment of {{original}} has earned {{interest}} in interest. How much was invested in each account?
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            A hamburger blend is made from {{percent1}} Ground Chuck that is {{chuckfat}} fat and {{percent2}} brisket that is {{brisketfat}}. What is the fat percentage of the hamburger blend?
+        </p>
+    </intro>
+
+    <intro>
+        <p>
+            A gas station has... ask Drew to finish this one. 
+        </p>
+    </intro>
     
-    <knowl>
-        <content>
-            <p>
-                Task 
-            </p>
-        </content>
-        <outtro>
-            <p>
-                Task answer
-            </p>
-        </outtro>
-        
-    </knowl>
-      
     
 </knowl>
