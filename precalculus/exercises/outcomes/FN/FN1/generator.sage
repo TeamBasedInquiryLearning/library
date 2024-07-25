@@ -45,12 +45,21 @@ class Generator(BaseGenerator):
       ]
       shuffle(tasks2)
 
+      #plots={x:None for x in sample(["ellipse","parabola","points","line","cubic","hyperbola","piecewise"],3)}
+      plots = { "ellipse": False, "parabola": choice([True,False]), "points": choice([True,False]),
+                "line": True, "cubic": True, "hyperbola": False, "piecewise": choice([True,False])}
+      plots= {k:plots[k] for k in sample(list(plots),3)}
+
+      tasks3=[ {"plot": f"plot{n}", "is_function": list(plots.values())[n]} for n in [0..2]]
+
       return {
         "tasks":tasks,
         "map_function":map_function,
         #"table_function":table_function,
         #"pairs_function":pairs_function,
         "tasks2":tasks2,
+        "tasks3":tasks3,
+        "plots": plots,
       } 
 
     @provide_data
