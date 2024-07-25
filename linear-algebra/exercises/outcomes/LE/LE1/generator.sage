@@ -1,4 +1,4 @@
-load("library/common.sage")
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):

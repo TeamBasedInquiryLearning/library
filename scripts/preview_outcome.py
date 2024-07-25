@@ -15,19 +15,22 @@ args = parser.parse_args()
 
 # check that this outcome exists
 exercise_path = Path(args.book, "exercises")
+sage_library_path = Path(args.book, "sage")
 bank_root = ET.parse(exercise_path/"bank.xml")
 search_string = f'.//*[name()="slug" and text()="{args.outcome}"]/./..'
 outcome_ele = bank_root.xpath(search_string)[0]
 
 # get path to sandbox
 sandbox_path = Path("exercise-sandbox")
+sandbox_bank_path = sandbox_path/"bank"
 
 # destroy any existing sandbox
 shutil.rmtree(sandbox_path, ignore_errors=True)
 
 # create new sandbox with that outcome
 sandbox_path.mkdir()
-(sandbox_path/"bank.xml").write_text(f"""
+sandbox_bank_path.mkdir()
+(sandbox_bank_path/"bank.xml").write_text(f"""
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
     <title>Preview: {args.book} {args.outcome}</title>
@@ -43,21 +46,21 @@ sandbox_path.mkdir()
     </outcomes>
 </bank>
 """.strip())
-(sandbox_path/"outcome").mkdir()
-(sandbox_path/"library").mkdir()
+(sandbox_bank_path/"outcome").mkdir(exist_ok=True)
+(sandbox_path/"sage").mkdir()
 if args.book in ["linear-algebra", "precalculus"]:
-    shutil.copy(exercise_path/"library"/"common.sage", sandbox_path/"library"/"common.sage")
+    shutil.copy(sage_library_path/"common.sage", sandbox_path/"sage"/"common.sage")
 outcome_path = (exercise_path/outcome_ele.find("{*}path").text)
-shutil.copy(outcome_path/"template.xml", sandbox_path/"outcome"/"template.xml")
-shutil.copy(outcome_path/"generator.sage", sandbox_path/"outcome"/"generator.sage")
+shutil.copy(outcome_path/"template.xml", sandbox_bank_path/"outcome"/"template.xml")
+shutil.copy(outcome_path/"generator.sage", sandbox_bank_path/"outcome"/"generator.sage")
 
-b = Bank(str(sandbox_path))
+b = Bank(str(sandbox_path/"bank"))
 print('generate exercises')
 
 # build 20 seeds and images
 cmds = [
     "sage",
-    os.path.join("scripts", "preview_outcome.sage"),
+    os.path.join("scripts", "_preview_outcome.sage"),
     args.outcome
 ]
 subprocess.run(cmds,check=True)
@@ -75,4 +78,4 @@ archive.extractall(docs_path)
 shutil.copytree(b.build_path(), os.path.join(docs_path, "assets"), dirs_exist_ok=True)
 
 
-subprocess.run(['python', '-m', 'http.server', '-d', str(sandbox_path/'docs')])
+subprocess.run(['python', '-m', 'http.server', '-d', str(sandbox_bank_path/'docs')])
