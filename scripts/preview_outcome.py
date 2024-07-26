@@ -57,7 +57,7 @@ shutil.copy(outcome_path/"generator.sage", sandbox_bank_path/"outcome"/"generato
 
 # quick and dirty validation
 template_root = ET.parse(sandbox_bank_path/"outcome"/"template.xml")
-valid_tags = ["knowl", "title", "intro", "content", "outtro", "p", "list", "item", "m",
+valid_tags = ["knowl", "title", "intro", "content", "outtro", "p", "list", "item", "m", "me",
               "q", "c", "em", "url", "image"]
 for b in template_root.xpath('//*'):
     bare_tag = b.tag.split("}")[1].lower()  # remove "${https://spatext.clontz.org}" namespace
