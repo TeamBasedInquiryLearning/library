@@ -8,7 +8,7 @@ class Generator(BaseGenerator):
         ])
         scenario_alt = choice([
             "scenarioA",
-            # "scenarioB",
+            "scenarioB",
             # "scenarioC",
             # "scenarioD",
         ])

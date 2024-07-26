@@ -229,6 +229,22 @@ How much was invested in each account?
         </p>
     </outtro>
     <!-- {{/scenarioA}} -->
+    <!-- {{#scenarioB}} -->
+    <content>
+        <p>
+{{name}} has two one-year loans, one costing <m>{{apr1}}\%</m> annual interest and the 
+other costing <m>{{apr2}}\%</m> annual interest. To pay off these loans, {{name}} must
+repay the total <m>\${{totalinvestment}}</m> loaned in addition to <m>\${{totalinterest}}</m>
+total interest. How much money was loaned at each rate?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>\${{investment1}}</m> at <m>{{apr1}}\%</m>, and 
+<m>\${{investment2}}</m> at <m>{{apr2}}\%</m>
+        </p>
+    </outtro>
+    <!-- {{/scenarioB}} -->
     <!-- {{#scenarioC}} -->
     <content>
         <p>
