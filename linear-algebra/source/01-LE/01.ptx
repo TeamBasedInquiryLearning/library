@@ -630,9 +630,8 @@ Augmented matrix:
     <definition xml:id="LE1-def-coefficient-matrix">
         <statement>
             <p>
-We won't always care to know the value of the constant terms <m>b_i</m>
-(for example, when they are all <m>0</m>).
-In this case, we may use a <term>coefficient matrix</term>:
+In the case we need to only analyze the coefficients of a linear system,
+we will use a <term>coefficient matrix</term> rather than the full augmented matrix:
             </p>
             <md alignment="alignat" alignat-columns="4">
                 <mrow>
