@@ -143,10 +143,10 @@ and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }<
     <content>
         <p>
 In {{name}}'s candy shop, they purchase {{ingredient1}} from their distributor
-at a cost of <m>\${{cost1}}</m> per {{weight}}, and {{ingredient2}} at a cost of
-<m>\${{cost2}}</m> per {{weight}}.
+at a cost of <m>\${{part1}}</m> per {{weight}}, and {{ingredient2}} at a cost of
+<m>\${{part2}}</m> per {{weight}}.
 {{name}} uses these to prepare a {{ingredient1}}-{{ingredient2}} candy, using a mixture that ends
-up costing <m>\${{mixcost}}</m> per {{weight}}. How much {{ingredient1}} and {{ingredient2}} is
+up costing <m>\${{mixpart}}</m> per {{weight}}. How much {{ingredient1}} and {{ingredient2}} is
 used to create <m>{{totalamount}}</m> {{weight}} of the mixture?
         </p>
     </content>
@@ -162,9 +162,9 @@ used to create <m>{{totalamount}}</m> {{weight}} of the mixture?
         <p>
 {{name}} sells a candy using a {{ingredient1}}-{{ingredient2}}
 mixture that they hope to produce
-at a cost of <m>\${{mixcost}}</m> per {{weight}}.
-It costs {{name}} <m>\${{cost1}}</m> to produce one {{weight}}
-of {{ingredient1}}, and <m>\${{cost2}}</m> to produce one {{weight}}
+at a cost of <m>\${{mixpart}}</m> per {{weight}}.
+It costs {{name}} <m>\${{part1}}</m> to produce one {{weight}}
+of {{ingredient1}}, and <m>\${{part2}}</m> to produce one {{weight}}
 of {{ingredient2}}. How much {{ingredient1}} and {{ingredient2}} should be mixed together
 to create <m>{{totalamount}}</m> {{weight}} of the mixture?
         </p>
@@ -179,10 +179,10 @@ to create <m>{{totalamount}}</m> {{weight}} of the mixture?
     <!-- {{#scenarioC}} -->
     <content>
         <p>
-{{name}}'s smoothie shop sells {{ingredient1}} puree for <m>\$0.{{cost1}}</m> per {{weight}} 
-and  {{ingredient2}} puree for <m>\$0.{{cost2}}</m> per {{weight}}. If you ask nicely,
+{{name}}'s smoothie shop sells {{ingredient1}} puree for <m>\$0.{{part1}}</m> per {{weight}} 
+and  {{ingredient2}} puree for <m>\$0.{{part2}}</m> per {{weight}}. If you ask nicely,
 {{name}} will also sell a <m>{{totalamount}}</m> {{weight}} {{ingredient1}}-{{ingredient2}} 
-puree at cost for <m>\$0.{{mixcost}}</m> per {{weight}}. How much of each ingredient is used 
+puree at cost for <m>\$0.{{mixpart}}</m> per {{weight}}. How much of each ingredient is used 
 to make the mixed {{ingredient1}}-{{ingredient2}} puree?
         </p>
     </content>
@@ -196,10 +196,10 @@ to make the mixed {{ingredient1}}-{{ingredient2}} puree?
     <!-- {{#scenarioD}} -->
     <content>
         <p>
-The sorbet shop owned by {{name}} offers {{ingredient1}} sorbet for <m>\$0.{{cost1}}</m> per
-{{weight}} and {{ingredient2}} sorbet for <m>\$0.{{cost2}}</m> per {{weight}}. {{name}} allows
+The sorbet shop owned by {{name}} offers {{ingredient1}} sorbet for <m>\$0.{{part1}}</m> per
+{{weight}} and {{ingredient2}} sorbet for <m>\$0.{{part2}}</m> per {{weight}}. {{name}} allows
 customers to blend different sorbets together, so you purchased <m>{{totalamount}}</m> {{weight}}
-of blended {{ingredient1}}-{{ingredient2}} sorbet. If you were charged <m>\$0.{{mixcost}}</m> 
+of blended {{ingredient1}}-{{ingredient2}} sorbet. If you were charged <m>\$0.{{mixpart}}</m> 
 per {{weight}}, how much of each ingredient was used in your blend?
         </p>
     </content>
@@ -216,26 +216,28 @@ per {{weight}}, how much of each ingredient was used in your blend?
     <!-- {{#scenarioA}} -->
     <content>
         <p>
-{{name}} has two investment accounts, one earning {{percent1}} annual interest and the 
-other earning {{percent2}} annual interest. After one year, the original investment of 
-{{original}} has earned {{interest}} in interest. How much was invested in each account?
+{{name}} has two investment accounts, one earning <m>{{apr1}}\%</m> annual interest and the 
+other earning <m>{{apr2}}\%</m> annual interest. After one year, the original investment of 
+<m>\${{totalinvestment}}</m> has earned <m>\${{totalinterest}}</m> in interest.
+How much was invested in each account?
         </p>
     </content>
+    <outtro>
+        <p>
+<m>\${{investment1}}</m> at <m>{{apr1}}\%</m>, and 
+<m>\${{investment2}}</m> at <m>{{apr2}}\%</m>
+        </p>
+    </outtro>
     <!-- {{/scenarioA}} -->
-    <!-- {{#scenarioB}} -->
+    <!-- {{#scenarioC}} -->
     <content>
         <p>
-A hamburger blend is made from {{percent1}} Ground Chuck that is {{chuckfat}} fat and 
+A hamburger blend is made from {{part1}} Ground Chuck that is {{chuckfat}} fat and 
 {{percent2}} brisket that is {{brisketfat}}. What is the fat percentage of the hamburger
  blend?
         </p>
     </content>
-    <!-- {{/scenarioB}} -->
-    <!-- <content>
-        <p>
-A gas station has... ask Drew to finish this one. 
-        </p>
-    </content> -->
+    <!-- {{/scenarioC}} -->
     <!-- {{/mixture_percent}} -->
 </knowl>
 
@@ -249,9 +251,14 @@ In total, {{totalcars}} individual cars were sold. How many of each size pack wa
 </content>
 <content>
     <p>
-At {{name}}'s theater, it costs {{cost1}} to buy {{child1}} child tickets and {{adult1}} 
+At {{name}}'s theater, it costs {{part1}} to buy {{child1}} child tickets and {{adult1}} 
 adult tickets. If you buy {{child2}} child tickets and {{adult2}} adult tickets, it will 
-cost {{cost2}}. What is the cost for one adult ticket? What about one child ticket?
+cost {{part2}}. What is the cost for one adult ticket? What about one child ticket?
     </p>
 </content>
 -->
+    <!-- <content>
+        <p>
+A gas station has... ask Drew to finish this one. 
+        </p>
+    </content> -->

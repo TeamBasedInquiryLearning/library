@@ -1,16 +1,28 @@
 class Generator(BaseGenerator):
     def data(self):
         scenario = choice([
-            "distance_toward",
-            "distance_apart",
-            "mixture_value",
-            # "mixture_percent",
+            # "distance_toward",
+            # "distance_apart",
+            # "mixture_value",
+            "mixture_percent",
         ])
         scenario_alt = choice([
             "scenarioA",
-            "scenarioB",
-            "scenarioC",
-            "scenarioD",
+            # "scenarioB",
+            # "scenarioC",
+            # "scenarioD",
+        ])
+        name = choice([
+            "Anne-Fatima",
+            "Boram",
+            "Consolata",
+            "Dalisay",
+            "Edgar",
+            "Fionnuala",
+            "Gurlez",
+            "Hisako",
+            "Inga",
+            "Julia",
         ])
 
         data = {}
@@ -44,23 +56,12 @@ class Generator(BaseGenerator):
             }
         
         if scenario == "mixture_value":
-            name = choice([
-                "Anne-Fatima",
-                "Boram",
-                "Consolata",
-                "Dalisay",
-                "Edgar",
-                "Fionnuala",
-                "Gurlez",
-                "Hisako",
-                "Inga",
-                "Julia",
-            ])
-            cost1, cost2, percentage = sample([10,20,30,40,60,70,80,90], 3)
-            mixcost = cost1*percentage/100 + cost2*(100-percentage)/100
+            part1, part2, percentage = sample([10,20,30,40,60,70,80,90], 3)
+            mixpart = part1*percentage/100 + part2*(100-percentage)/100
             totalamount = choice(range(10,100,10))
             amount1 = totalamount*percentage/100
             amount2 = totalamount*(100-percentage)/100
+
             if scenario_alt in ["scenarioA", "scenarioB"]:
                 weight = choice(["lb", "kg"])
                 ingredient1, ingredient2 = sample([
@@ -80,15 +81,31 @@ class Generator(BaseGenerator):
             data = {
                 "name": name,
                 "weight": weight,
-                "cost1": cost1,
-                "cost2": cost2,
+                "part1": part1,
+                "part2": part2,
                 "percentage": percentage,
-                "mixcost": mixcost,
+                "mixpart": mixpart,
                 "totalamount": totalamount,
                 "amount1": amount1,
                 "amount2": amount2,
                 "ingredient1": ingredient1,
                 "ingredient2": ingredient2,
+            }
+        
+        if scenario == "mixture_percent":
+            aprs = sample([4,5,6,7,8,9,11,12], 2)
+            investments = [n*1000 for n in sample(range(2,10),2)]
+            totalinvestment = sum(investments)
+            interests = [investments[i]*aprs[i]/100 for i in range(2)]
+            totalinterest = sum(interests)
+            data = {
+                "name": name,
+                "apr1": aprs[0],
+                "apr2": aprs[1],
+                "totalinvestment": totalinvestment,
+                "totalinterest": totalinterest,
+                "investment1": investments[0],
+                "investment2": investments[1],
             }
 
 
