@@ -34,8 +34,8 @@ class Generator(BaseGenerator):
         roots2.sort()
 
         fnames=sample(["f","g","h"],2)
-        tasks = [ {"f": expand(f(x)), "f_factored": f(x), "roots": [{"r": r} for r in roots],"fname":fnames[0]},
-                {"f": expand(g(x)), "f_factored": g(x), "roots": [{"r": r} for r in roots2],"fname":fnames[1]}
+        tasks = [ {"f": expand(f(x)), "f_factored": f(x), "roots":",".join([latex(r) for r in roots]),"fname":fnames[0]},
+                {"f": expand(g(x)), "f_factored": g(x), "roots":",".join([latex(r) for r in roots2]),"fname":fnames[1]}
                 ]
         shuffle(tasks)
 
