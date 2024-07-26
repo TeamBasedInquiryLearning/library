@@ -3,25 +3,25 @@
 <project ptx-version="2" source=".">
   <targets>
 
-
     <!-- start custom stuff -->
 
     <target
       name="calc-web-custom"
       format="html"
       source="calculus/source/main-custom.ptx"
-      deploy-dir="calculus/preview" >
+      deploy-dir="calculus/custom" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="la-web-custom"
       format="html"
       source="linear-algebra/source/main-custom.ptx"
-      deploy-dir="linear-algebra/preview" >
+      deploy-dir="linear-algebra/custom" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
 
     <!-- end custom stuff -->
+
 
     <target
       name="precal-web"
