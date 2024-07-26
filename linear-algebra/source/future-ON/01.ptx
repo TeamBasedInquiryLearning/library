@@ -148,8 +148,32 @@ The dot product combines two vectors and creates a scalar that gives us geometri
 
         <p>Need to create a segue to the fact that you can find the angle between vectors using the Law of Cosines as a starting place.</p>   
 
-    
-    
+        <definition>
+            <statement>
+                <p> Given two vectors <m>\vec u</m> and <m>\vec v</m> in <m>\IR^n</m>, such that  <m>\vec u</m> and <m>\vec v</m>  are not parallel, let <m>\theta</m> be the  <term>angle</term> between the two vectors, 
+                    then 
+                    <me>
+                        \cos \theta = \frac{\vec u \cdot \vec v }{|\vec u||\vec v|}.
+                    </me>
+                     By  the Law of Cosine:
+                     <me>
+                        |\vec u- \vec v|^2 = |\vec u|^2+|\vec v|^2- 2 |\vec u||\vec v| \cos \theta.
+                    </me>
+                    Using dot product of vector  <m>\vec u-\vec v</m> with itself:
+                  
+                    <md>
+                        <mrow> |\vec u- \vec v|^2 \amp =  (\vec u- \vec v) \cdot (\vec u- \vec v)  \amp </mrow>
+                        <mrow>  \amp =  \vec u \cdot \vec u - 2 ( \vec u \cdot \vec v) + \vec v \cdot \vec v \amp   </mrow>
+                        <mrow>  \amp =  |\vec u|^2 - 2 ( \vec u.\vec v) + |\vec v|^2 \amp   </mrow>
+                      </md> 
+Hence from above, we have:
+<me>
+    \vec u \cdot \vec v = |\vec u||\vec v| \cos \theta .
+</me>
+     </p></statement>
+    </definition>
+  
+    <p> One of these activity should be deleted from here. </p>   
 
 <activity estimated-time="10">
     <introduction>
@@ -165,7 +189,7 @@ The dot product combines two vectors and creates a scalar that gives us geometri
         <introduction>
         <p>Consider two vectors <m>\vec u =\left[\begin{array}{c} 1 \\ 3 \\ 4 \\ -4 \end{array}\right]</m> and <m>\vec v = \left[\begin{array}{c} -1 \\ -3 \\ -4 \\ 4 \end{array}\right]</m>.</p>
         </introduction>
-    <task><p>Use dot product to determine  <m>||\vec u||</m> and  <m> ||\vec v||</m>.</p></task>
+    <task><p>Use dot product to determine  <m>|\vec u| </m> and  <m> |\vec v|</m>.</p></task>
     <task><p> Using dot product, find the distance between <m>\vec u</m> and  <m>\vec v </m>.</p></task>
     <task><p>Find the angle between <m>\vec u</m> and <m>\vec v</m>.</p></task>
         </activity>
