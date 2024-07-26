@@ -19,10 +19,10 @@
                     </content>
                     <outtro>
                         <!-- {{#map_function}}-->
-                        <p>This mapping is a function.</p>
+                        <p>This mapping defines a function.</p>
                         <!-- {{/map_function}}-->
                         <!-- {{^map_function}}-->
-                        <p>This mapping is not a function.</p>
+                        <p>This mapping does not define a function.</p>
                         <!-- {{/map_function}}-->
                     </outtro>
                 </knowl>
