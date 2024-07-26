@@ -8,11 +8,12 @@ class Generator(BaseGenerator):
         ])
         scenario_alt = choice([
             "scenarioA",
-            "scenarioB"
+            "scenarioB",
+            "scenarioC",
+            "scenarioD",
         ])
 
         scenario = "distance_toward"
-        scenario_alt = "scenarioB"
         data = {}
 
         if scenario == "distance_toward":
@@ -20,8 +21,8 @@ class Generator(BaseGenerator):
             vehicles = choice(["trains", "cars", "trucks"])
             mults = sample(range(4,11),2)
             rates = [20*m for m in mults]
-            time = 15*choice([3,5,7,9,11])  # minutes
-            dist = sum(rates)*time/60
+            time = choice([3,5,7,9,11])/4  # hours
+            dist = sum(rates)*time
             data = {
                 "dist": dist,
                 "rate1": rates[0],
