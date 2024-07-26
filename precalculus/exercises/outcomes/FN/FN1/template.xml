@@ -103,10 +103,10 @@
             </content>
             <outtro>
                 <!--{{#is_function}}-->
-                <p>This graph is a function.</p>
+                <p>This graph represents a function.</p>
                 <!--{{/is_function}}-->
                 <!--{{^is_function}}-->
-                <p>This graph is not a function.</p>
+                <p>This graph does not represent a function.</p>
                 <!--{{/is_function}}-->
             </outtro>
         </knowl>
