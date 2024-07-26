@@ -78,10 +78,10 @@
                 </content>
                 <outtro>
                     <!--{{#eq_function}}-->
-                    <p>This equation is a function.</p>
+                    <p>This equation defines a function of <m>x</m>.</p>
                     <!--{{/eq_function}}-->
                     <!--{{^eq_function}}-->
-                    <p>This equation is not a function.</p>
+                    <p>This equation does not define a function of <m>x</m>.</p>
                     <!--{{/eq_function}}-->
                 </outtro>
             </knowl>
