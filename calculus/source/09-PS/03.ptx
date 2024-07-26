@@ -35,7 +35,7 @@ Which operation describes the relationship between these two series?
             </task>
             <task>
                 <p>
-What is the result of applying this operation to <m>\frac{1}{1-x}</m>?
+What is the result of applying this operation to <m>\dfrac{1}{1-x}</m>?
                 </p>
                 <ol marker="A.">
                     <li><m>0</m></li>
@@ -87,10 +87,10 @@ Let's investigate the power series
                     What is the value of <m>\exp'(x)</m>?
                     </p>
                 <ol marker="A." cols="1">
-                    <li><m>0+1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots</m>.</li>
-                    <li><m>1+x+\frac{x^2}{6}+\frac{x^3}{24}+\frac{x^4}{120}+\dots</m>.</li>
-                    <li><m>0+1+x+\frac{x^2}{3}+\frac{x^3}{12}+\frac{x^4}{60}+\dots</m>.</li>
-                    <li><m>1+x+\frac{x^2}{3}+\frac{x^3}{12}+\frac{x^4}{60}+\dots</m>.</li>
+                    <li><m>\displaystyle 0+1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots</m>.</li>
+                    <li><m>\displaystyle 1+x+\frac{x^2}{6}+\frac{x^3}{24}+\frac{x^4}{120}+\dots</m>.</li>
+                    <li><m>\displaystyle 0+1+x+\frac{x^2}{3}+\frac{x^3}{12}+\frac{x^4}{60}+\dots</m>.</li>
+                    <li><m>\displaystyle 1+x+\frac{x^2}{3}+\frac{x^3}{12}+\frac{x^4}{60}+\dots</m>.</li>
                 </ol>
             </task>
             
@@ -210,12 +210,12 @@ Let's investigate the power series
     <activity xml:id="activity-PS3series1overx">
         <introduction>
             <p>
-                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{x}</m>.
+                Suppose we wish to find the power series for the function <m>f(x)=\dfrac{1}{x}</m>.
             </p>
         </introduction>
         <task>
             <p>
-                Which of the following represents the power series for <m>g(r)=\frac{1}{1-r}</m>?
+                Which of the following represents the power series for <m>g(r)=\dfrac{1}{1-r}</m>?
                 <ol marker="A." cols="2">
                     <li><m>g(r)=\displaystyle\sum_{n=0}^\infty rx^n</m>.</li>
                     <li><m>g(r)=\displaystyle\sum_{n=0}^\infty (rx)^n</m>.</li>
@@ -226,7 +226,7 @@ Let's investigate the power series
         </task>
         <task>
             <p>
-                For what value of <m>r</m> is <m>\frac{1}{1-r}=\frac{1}{x}</m>?
+                For what value of <m>r</m> is <m>\dfrac{1}{1-r}=\dfrac{1}{x}</m>?
                 <ol marker="A." cols="2">
                     <li><m>r=x-1</m>.</li>
                     <li><m>r=1-x</m>.</li>
@@ -237,7 +237,7 @@ Let's investigate the power series
         </task>
         <task>
             <p>
-                Substituting <m>r</m> with this value, which of the following is a power series for <m>f(x)=\frac{1}{x}</m>?
+                Substituting <m>r</m> with this value, which of the following is a power series for <m>f(x)=\dfrac{1}{x}</m>?
                 <ol marker="A." cols="2">
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (-x)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (1-x)^n</m>.</li>
@@ -264,14 +264,14 @@ Let's investigate the power series
     <activity xml:id="activity-PS3series1overoneminus2x">
         <introduction>
             <p>
-                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{3-2x}</m>. 
-                Recall that <m>g(x)=\frac{1}{1-r}=\displaystyle\sum_{n=0}^\infty r^n.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=\dfrac{1}{3-2x}</m>. 
+                Recall that <m>g(x)=\dfrac{1}{1-r}=\displaystyle\sum_{n=0}^\infty r^n.</m>
             </p>
         </introduction>
         
         <task>
             <p>
-                For what value of <m>r</m> is <m>\frac{1}{1-r}=\frac{1}{3-2x}</m>?
+                For what value of <m>r</m> is <m>\dfrac{1}{1-r}=\dfrac{1}{3-2x}</m>?
                 <ol marker="A." cols="2">
                     <li><m>r=2x-2</m>.</li>
                     <li><m>r=2-2x</m>.</li>
@@ -283,7 +283,7 @@ Let's investigate the power series
         <task>
             <p>
                 Evaluating <m>r</m> at the previously found value,
-                which of the following is the power series of <m>f(x)=\frac{1}{3-2x}</m>?
+                which of the following is the power series of <m>f(x)=\dfrac{1}{3-2x}</m>?
                 <ol marker="A." cols="2">
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (3-2x)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (2x-3)^n</m>.</li>
@@ -299,9 +299,9 @@ Let's investigate the power series
                 what is the interval of convergence for <m>x</m>?
                 <ol marker="A." cols="2">
                     <li><m>-1 &lt; x &lt; \frac{3}{2}</m>.</li>
-                    <li><m>-\frac{1}{2} &lt; x &lt; 1</m>.</li>
-                    <li><m>\frac{1}{2} &lt; x &lt; \frac{3}{2}</m>.</li>
-                    <li><m>-\frac{1}{2} &lt; x &lt; \frac{3}{2}</m>.</li>
+                    <li><m>-\dfrac{1}{2} &lt; x &lt; 1</m>.</li>
+                    <li><m>\dfrac{1}{2} &lt; x &lt; \dfrac{3}{2}</m>.</li>
+                    <li><m>-\dfrac{1}{2} &lt; x &lt; \dfrac{3}{2}</m>.</li>
                 </ol>
             </p>
         </task>
@@ -312,14 +312,14 @@ Let's investigate the power series
     <activity xml:id="activity-PS3series1overoneplusxsquared">
         <introduction>
             <p>
-                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{1+x^2}</m>.
-                Recall that <m>g(x)=\frac{1}{1-r}=\displaystyle\sum_{n=0}^\infty r^n.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=\dfrac{1}{1+x^2}</m>.
+                Recall that <m>g(x)=\dfrac{1}{1-r}=\displaystyle\sum_{n=0}^\infty r^n.</m>
             </p>
         </introduction>
         
         <task>
             <p>
-                For what value of <m>r</m> is <m>\frac{1}{1-r}=\frac{1}{1+x^2}</m>?
+                For what value of <m>r</m> is <m>\dfrac{1}{1-r}=\dfrac{1}{1+x^2}</m>?
                 <ol marker="A." cols="2">
                     <li><m>r=x^2</m>.</li>
                     <li><m>r=-x^2</m>.</li>
@@ -331,7 +331,7 @@ Let's investigate the power series
         <task>
             <p>
                 Evaluating <m>r</m> at the previously found value, which of the following is the power series of
-                <m>f(x)=\frac{1}{1+x^2}</m>?
+                <m>f(x)=\dfrac{1}{1+x^2}</m>?
                 <ol marker="A.">
                     <li><m>\displaystyle\frac{1}{1+x^2}=\sum_{n=0}^\infty (-1)^nx^{2n}</m>.</li>
                     <li><m>\displaystyle\frac{1}{1+x^2}=\sum_{n=0}^\infty (1-x^2)^n</m>.</li>
@@ -427,10 +427,10 @@ Let's investigate the power series
                 What function <m>f(x)</m> has power series <m>f(x)=\displaystyle \sum_{n=3}^\infty x^n=x^3+x^4+\cdots</m>?
             </p>
             <ol marker="A." cols="2">
-                <li><m>f(x)=\frac{1}{1-3x}</m>.</li>
-                <li><m>f(x)=\frac{3}{1-x}</m>.</li>
-                <li><m>f(x)=\frac{1}{1-x}-x^2-x-1</m>.</li>
-                <li><m>f(x)=\frac{x^3}{1-x}</m>.</li>
+                <li><m>f(x)=\dfrac{1}{1-3x}</m>.</li>
+                <li><m>f(x)=\dfrac{3}{1-x}</m>.</li>
+                <li><m>f(x)=\dfrac{1}{1-x}-x^2-x-1</m>.</li>
+                <li><m>f(x)=\dfrac{x^3}{1-x}</m>.</li>
             </ol>
         </statement>
     </activity>
@@ -457,7 +457,7 @@ Let's investigate the power series
                 <ol marker="A.">
                         <li><m>n_{10}(x)=\displaystyle -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6-\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}</m>.</li>
                         <li><m>n_{10}(x)=\displaystyle x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6-\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}</m>.</li>
-                        <li><m>n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}</m>.</li>
+                        <li><m>\displaystyle n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}</m>.</li>
                     </ol>
                 </p>
                 
@@ -465,7 +465,7 @@ Let's investigate the power series
             
             <task>
                 <p>
-                    Use your choice of <m>n_{10}(x)</m> to estimate <m>\displaystyle \int_0^1 n(x)dx</m> by computing <m>\displaystyle \int_0^1 n_{10}(x)dx</m>.
+                    Use your choice of <m>n_{10}(x)</m> to estimate <m>\displaystyle \int_0^1 n(x)\, dx</m> by computing <m>\displaystyle \int_0^1 n_{10}(x)\, dx</m>.
                 </p>
             </task>
         </activity>
@@ -504,7 +504,7 @@ Let's investigate the power series
             </task>
             <task>
                 <p>
-                    Use <m>G_4(x)</m> to estimate <m>\displaystyle \int_2^4 \ln|1-x|dx</m>.
+                    Use <m>G_4(x)</m> to estimate <m>\displaystyle \int_2^4 \ln|1-x|\, dx</m>.
                 </p>
             </task>
             
@@ -532,11 +532,11 @@ Let's investigate the power series
 <activity checkit-seed="9587" checkit-slug="PS3" checkit-title="Manipulation of power series">
     <introduction>
         <p>
-            Recall that the power series for <m>f(x)=-\frac{1}{x - 1}</m> is: <me>-\frac{1}{x - 1}=\sum_{n=0}^{\infty} x^{n}.</me></p></introduction>
+            Recall that the power series for <m>f(x)=-\dfrac{1}{x - 1}</m> is: <me>-\frac{1}{x - 1}=\sum_{n=0}^{\infty} x^{n}.</me></p></introduction>
             
             
-    <task><p>Find a power series for <m>\frac{1}{x^{4} + 1}</m>.</p></task>
-    <task><p>Find a power series for <m>-\frac{x^{5}}{x - 1}</m>.</p></task>
+    <task><p>Find a power series for <m>\dfrac{1}{x^{4} + 1}</m>.</p></task>
+    <task><p>Find a power series for <m>-\dfrac{x^{5}}{x - 1}</m>.</p></task>
     <task><p>Find a power series for <m>f'(x)</m>.</p></task>
             
   <!--  <answer>
@@ -551,7 +551,7 @@ Let's investigate the power series
         <activity xml:id="activity-PS3arctan">
             <introduction>
                 <p>
-                    Recall that <me>g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}</me> for <m>-1&lt; x&lt; 1</m> and <m>\frac{d}{dx}[\arctan(x)]=\frac{1}{1+x^2}=g(-x^2)</m>.  We computed the power series for  <m>g(-x^2)</m> in <xref ref="activity-PS3series1overoneplusxsquared"/>.
+                    Recall that <me>g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}</me> for <m>-1&lt; x&lt; 1</m> and <m>\dfrac{d}{dx}[\arctan(x)]=\dfrac{1}{1+x^2}=g(-x^2)</m>.  We computed the power series for  <m>g(-x^2)</m> in <xref ref="activity-PS3series1overoneplusxsquared"/>.
                 </p>
             </introduction>
             <task>
