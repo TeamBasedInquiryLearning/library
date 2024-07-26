@@ -1,25 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
+    <knowl>
+        <intro>
+            <p>
+                Let <m>{{fname}}(x)={{f}}</m>
+            </p>
+        </intro>
+        <!--{{#tasks}}-->
+        <knowl>
+            <content>
+                <p>Find <m>{{fname}}({{value}})</m>.
+                </p>
+            </content>
+            <outtro>
+                <p><m>{{fname}}({{value}})={{result}}</m></p>
+            </outtro>
+        </knowl>
+        <!--{{/tasks}}-->
+    </knowl>
     
     
     <knowl>
-        <content>
+        <intro>
             <p>
-                Task 
+               Let <m>{{gname}}(x)</m> be the function graphed below.
+
             </p>
-        </content>
-        <outtro>
-            <p>
-                Task answer
-            </p>
-        </outtro>
-        
+        </intro>
+        <knowl>
+            <content>
+                <p>Find <m>{{fname}}({{value}})</m>.
+                </p>
+            </content>
+            <outtro>
+                <p><m>{{fname}}({{value}})={{result}}</m></p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>For which <m>x</m>-values in the interval <m>{{interval}}</m> does <m>{{fname}}(x)={{result}}</m>?
+                </p>
+            </content>
+            <outtro>
+                <p><m>{{fname}}({{value}})={{result}}</m></p>
+            </outtro>
+        </knowl>
     </knowl>
       
     
