@@ -1,16 +1,16 @@
 class Generator(BaseGenerator):
     def data(self):
         scenario = choice([
-            "distance_toward",
-            "distance_apart",
-            # "mixture_value",
+            # "distance_toward",
+            # "distance_apart",
+            "mixture_value",
             # "mixture_percent",
         ])
         scenario_alt = choice([
             "scenarioA",
             "scenarioB",
-            "scenarioC",
-            "scenarioD",
+            # "scenarioC",
+            # "scenarioD",
         ])
 
         data = {}
@@ -41,6 +41,45 @@ class Generator(BaseGenerator):
                 "direction1": directions[0],
                 "direction2": directions[1],    
                 "faster_slower": faster_slower,   
+            }
+        
+        if scenario == "mixture_value":
+            name = choice([
+                "Anne-Fatima",
+                "Boram",
+                "Consolata",
+                "Dalisay",
+                "Edgar",
+                "Fionnuala",
+                "Gurlez",
+                "Hisako",
+                "Inga",
+                "Julia",
+            ])
+            weight = choice(["lb", "kg"])
+            cost1, cost2, percentage = sample([10,20,30,40,60,70,80,90], 3)
+            mixcost = cost1*percentage/100 + cost2*(100-percentage)/100
+            totalamount = choice(range(100,1000,100))
+            amount1 = totalamount*percentage/100
+            amount2 = totalamount*(100-percentage)/100
+            ingredient1, ingredient2 = sample([
+                "chocolate",
+                "caramel",
+                "nuts",
+                "taffy",
+            ], 2)
+            data = {
+                "name": name,
+                "weight": weight,
+                "cost1": cost1,
+                "cost2": cost2,
+                "percentage": percentage,
+                "mixcost": mixcost,
+                "totalamount": totalamount,
+                "amount1": amount1,
+                "amount2": amount2,
+                "ingredient1": ingredient1,
+                "ingredient2": ingredient2,
             }
 
 
