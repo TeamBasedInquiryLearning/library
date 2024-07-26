@@ -155,7 +155,7 @@ The dot product combines two vectors and creates a scalar that gives us geometri
                     <me>
                         \cos \theta = \frac{\vec u \cdot \vec v }{|\vec u||\vec v|}.
                     </me>
-                     By Law of Cosine:
+                     By  the Law of Cosine:
                      <me>
                         |\vec u- \vec v|^2 = |\vec u|^2+|\vec v|^2- 2 |\vec u||\vec v| \cos \theta.
                     </me>
@@ -168,7 +168,7 @@ The dot product combines two vectors and creates a scalar that gives us geometri
                       </md> 
 Hence from above, we have:
 <me>
-    \vec u.\vec v = |\vec u||\vec v| \cos \theta .
+    \vec u \cdot \vec v = |\vec u||\vec v| \cos \theta .
 </me>
      </p></statement>
     </definition>
