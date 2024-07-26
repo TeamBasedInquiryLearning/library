@@ -1,5 +1,5 @@
 # Library of helpful functions
-class TBILCalc:
+class TBILPrecal:
     @staticmethod
     def numberline_plot(center=0, radius=10):
         P = arrow((center,0),(center-radius,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
