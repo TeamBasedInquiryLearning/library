@@ -36,7 +36,7 @@ of <m>{{dist}} \,\mathrm{ {{d_unit}} }</m>. The first moves at a rate of
     <content>
         <p>
 Two trains are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart and traveling toward each other. 
-One train is traveling <m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> faster than the other. 
+One train is traveling <m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> {{faster_slower}} than the other. 
 If they meet after <m>\displaystyle {{time}}</m> hours, at what rate is each train moving?  
         </p>
     </content>
@@ -52,7 +52,7 @@ and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }<
         <p>
 A pair of {{vehicles}} are heading directly towards one another from an initial distance
 of <m>{{dist}} \,\mathrm{ {{d_unit}} }</m>. The first moves at a rate of
-<m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> faster than the second, and they eventually
+<m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> {{faster_slower}} than the second, and they eventually
 meet in the middle after <m>\displaystyle {{time}}</m> hours. How fast is each of the
 {{vehicles}} moving?
         </p>
@@ -70,24 +70,72 @@ and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }<
     <!-- {{#scenarioA}} -->
     <content>
         <p>
-Two trains leave a station at the same time, one traveling {{direction1}} 
-and the other {{direction2}}. One is traveling at {{rate1}} {{r_unit}} and 
-the other at {{rate2}} {{r_unit}}. How much time will have passed when they 
-are {{distance}} {{d_unit}} apart?
+Two {{vehicles}} leave from the same location at the same time,
+one traveling {{direction1}} and the other traveling {{direction2}}. 
+One is traveling at <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> and the other at
+<m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>. How much time will pass before these
+{{vehicles}} are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart?
         </p>
     </content>
+    <outtro>
+        <p>
+<m>\displaystyle {{time}}</m> hours
+        </p>
+    </outtro>
     <!-- {{/scenarioA}} -->
-    <!-- {{#scenarioB}} -->
-<!-- on the problems above and below, have the directions be opposite. either north/south or east/west -->
+    <!-- {{#scenarioB}} --> <!-- rewrite of A -->
     <content>
         <p>
-Two trains leave a station at the same time, one traveling {{direction1}}
-and the other {{direction2}}. One train is traveling {{rate1}} {{r_unit}} 
-faster than the other. If they are {{distance}} {{d_unit}} apart after {{time}} 
-{{t-unit}}, how fast is each train moving?
+A pair of {{vehicles}} are heading directly away one another,
+one heading {{direction1}} and the other heading {{direction2}}.
+The first moves at a rate of
+<m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> while the second moves at a rate of
+<m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>. How long will it take for the two
+{{vehicles}} to be <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart?
         </p>
-    </content>     
+    </content>
+    <outtro>
+        <p>
+<m>\displaystyle {{time}}</m> hours
+        </p>
+    </outtro>
     <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <content>
+        <p>
+Two {{vehicles}} leave from the same location at the same time,
+one traveling {{direction1}} and the other traveling {{direction2}}. 
+One is traveling <m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m>
+{{faster_slower}} than the other. If it takes <m>\displaystyle {{time}}</m> hours for
+the {{vehicles}} to end up <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart,
+how fast are they traveling?
+        </p>
+    </content>
+    <outtro>
+        <p>
+One is traveling at a rate of <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m>,
+and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>.
+        </p>
+    </outtro>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} --> <!-- rewrite of C -->
+    <content>
+        <p>
+A pair of {{vehicles}} are heading directly away from one another from the same
+location, one headed {{direction1}} and the other headed {{direction2}},
+and after <m>\displaystyle {{time}}</m> hours they are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m>
+apart. If the first moves at a rate of
+<m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> {{faster_slower}} than the second,
+how fast is each of the {{vehicles}} moving?
+        </p>
+    </content>
+    <outtro>
+        <p>
+One is traveling at a rate of <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m>,
+and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>.
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
     <!-- {{/distance_apart}} -->
 
     <!-- {{#mixture_value}} -->
