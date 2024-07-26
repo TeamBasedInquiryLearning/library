@@ -1,16 +1,16 @@
 class Generator(BaseGenerator):
     def data(self):
         scenario = choice([
-            # "distance_toward",
-            # "distance_apart",
+            "distance_toward",
+            "distance_apart",
             "mixture_value",
             # "mixture_percent",
         ])
         scenario_alt = choice([
             "scenarioA",
             "scenarioB",
-            # "scenarioC",
-            # "scenarioD",
+            "scenarioC",
+            "scenarioD",
         ])
 
         data = {}
@@ -56,18 +56,27 @@ class Generator(BaseGenerator):
                 "Inga",
                 "Julia",
             ])
-            weight = choice(["lb", "kg"])
             cost1, cost2, percentage = sample([10,20,30,40,60,70,80,90], 3)
             mixcost = cost1*percentage/100 + cost2*(100-percentage)/100
-            totalamount = choice(range(100,1000,100))
+            totalamount = choice(range(10,100,10))
             amount1 = totalamount*percentage/100
             amount2 = totalamount*(100-percentage)/100
-            ingredient1, ingredient2 = sample([
-                "chocolate",
-                "caramel",
-                "nuts",
-                "taffy",
-            ], 2)
+            if scenario_alt in ["scenarioA", "scenarioB"]:
+                weight = choice(["lb", "kg"])
+                ingredient1, ingredient2 = sample([
+                    "chocolate",
+                    "caramel",
+                    "nuts",
+                    "taffy",
+                ], 2)
+            else:
+                weight = choice(["oz"])
+                ingredient1, ingredient2 = sample([
+                    "strawberry",
+                    "banana",
+                    "mango",
+                    "peach",
+                ], 2)
             data = {
                 "name": name,
                 "weight": weight,

@@ -179,14 +179,37 @@ to create <m>{{totalamount}}</m> {{weight}} of the mixture?
     <!-- {{#scenarioC}} -->
     <content>
         <p>
-{{name}}'s smoothie shop sells pureed strawberries for {{amount1}} per {{weight}} and 
-pureed bananas for {{amount2}} per {{weight}}. If you ask nicely, {{name}} will also 
-sell a {{totalamount}} {{weight}} strawberry banana puree for {{combinedamount}} 
-per {{weight}}. How much of the strawberry puree and the banana puree are used 
-to make the mixed strawberry banana puree?
+{{name}}'s smoothie shop sells {{ingredient1}} puree for <m>\$0.{{cost1}}</m> per {{weight}} 
+and  {{ingredient2}} puree for <m>\$0.{{cost2}}</m> per {{weight}}. If you ask nicely,
+{{name}} will also sell a <m>{{totalamount}}</m> {{weight}} {{ingredient1}}-{{ingredient2}} 
+puree at cost for <m>\$0.{{mixcost}}</m> per {{weight}}. How much of each ingredient is used 
+to make the mixed {{ingredient1}}-{{ingredient2}} puree?
         </p>
     </content>
+    <outtro>
+        <p>
+<m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+<m>{{amount2}}</m> {{weight}} of {{ingredient2}}
+        </p>
+    </outtro>
     <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} -->
+    <content>
+        <p>
+The sorbet shop owned by {{name}} offers {{ingredient1}} sorbet for <m>\$0.{{cost1}}</m> per
+{{weight}} and {{ingredient2}} sorbet for <m>\$0.{{cost2}}</m> per {{weight}}. {{name}} allows
+customers to blend different sorbets together, so you purchased <m>{{totalamount}}</m> {{weight}}
+of blended {{ingredient1}}-{{ingredient2}} sorbet. If you were charged <m>\$0.{{mixcost}}</m> 
+per {{weight}}, how much of each ingredient was used in your blend?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+<m>{{amount2}}</m> {{weight}} of {{ingredient2}}
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
     <!-- {{/mixture_value}} -->
     
     <!-- {{#mixture_percent}} -->
