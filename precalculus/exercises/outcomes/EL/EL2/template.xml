@@ -3,7 +3,7 @@
     
     <intro>
         <p>
-            Question
+           Let <m>f(x)={{equation}}</m>.
         </p>
     </intro>
     
@@ -11,12 +11,43 @@
     <knowl>
         <content>
             <p>
-                Task 
+                Find the domain and range of <m>f(x)</m>. Write your answers in interval notation.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                Domain: <m>{{domain}}</m>
+            </p>
+            <p>
+                Range: <m>{{range}}</m>
+            </p>
+        </outtro>
+        
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                Write the equation of any asymptotes of <m>f(x)</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>y={{asymptote}}</m>
+            </p>
+        </outtro>
+        
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                Graph <m>f(x)</m>. Label at least two points on the graph, and include any asymptotes with a dotted line.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                graph goes here; dot in the points that (0,1) and (1,b) shifted to
             </p>
         </outtro>
         
