@@ -1,24 +1,106 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
+
+    <!-- There are four functions in this CheckIt. Give them all a different name so there's no confusion. f, g, h, j, etc are okay. Stick with x's though.-->
     
     
+
+
     <knowl>
-        <content>
+        <intro>
             <p>
-                Task 
+                Let <m>{{fname1}}={{funct1}}</m> and <m>{{fname2}}={{funct2}}</m>. Find the following.
             </p>
-        </content>
-        <outtro>
+        </intro>
+            <knowl>
+                <content>
+                    <p>
+                        <m>{{fname1}} + {{fname2}}</m>
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        answer
+                    </p>
+                </outtro>
+                
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>{{fname1}} - {{fname2}}</m>
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        answer
+                    </p>
+                </outtro>
+                
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>{{fname1}} \times {{fname2}}</m>
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        answer
+                    </p>
+                </outtro>
+                
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>{{fname1}} \div {{fname2}}</m>
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        answer
+                    </p>
+                </outtro>
+                
+            </knowl>
+        
+    </knowl>
+
+    <knowl>
+        <intro>
             <p>
-                Task answer
+                Let <m>{{fname3}}={{funct3}}</m> and <m>{{fname4}}={{funct4}}</m>. Find the following.
             </p>
-        </outtro>
+        </intro>
+            <knowl>
+                <content>
+                    <p>
+                        coin flip f(g(x)) or g(f(x))
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        answer, not super simplified so it still looks like it was just plugged in
+                    </p>
+                </outtro>
+                
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        opposite of previous, but number instead of x
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        answer
+                    </p>
+                </outtro>
+                
+            </knowl>
+            
         
     </knowl>
       
