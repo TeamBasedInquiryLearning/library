@@ -84,7 +84,7 @@
         </introduction>
         <task>
             <p>
-                Letting <m>c_n=\frac{1}{n^2+1}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+                Letting <m>c_n=\dfrac{1}{n^2+1}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
             </p>
             
         </task>
@@ -136,7 +136,7 @@
         </introduction>
         <task>
             <p>
-                Letting <m>c_n=\frac{2^n}{5^n}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+                Letting <m>c_n=\dfrac{2^n}{5^n}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
             </p>
             
         </task>
@@ -145,23 +145,23 @@
             <p>
                 For what values of <m>x</m> is <m>\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
                 <ol marker="A." cols="2">
-                    <li><m>-\frac{2}{5} &lt; x &lt; \frac{2}{5}</m>.</li>
-                    <li><m>\frac{8}{5} &lt; x &lt; \frac{12}{5}</m>.</li>
-                    <li><m>-\frac{5}{2} &lt; x &lt; \frac{5}{2}</m>.</li>
-                    <li><m>-\frac{1}{2} &lt; x &lt; \frac{9}{2}</m>.</li>
+                    <li><m>-\dfrac{2}{5} &lt; x &lt; \dfrac{2}{5}</m>.</li>
+                    <li><m>\dfrac{8}{5} &lt; x &lt; \dfrac{12}{5}</m>.</li>
+                    <li><m>-\dfrac{5}{2} &lt; x &lt; \dfrac{5}{2}</m>.</li>
+                    <li><m>-\dfrac{1}{2} &lt; x &lt; \dfrac{9}{2}</m>.</li>
                 </ol>
             </p>
         </task>
         
         <task>
             <p>
-                If <m>x=\frac{9}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
+                If <m>x=\dfrac{9}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
             </p>
         </task>
         
         <task>
             <p>
-                If <m>x=-\frac{1}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
+                If <m>x=-\dfrac{1}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
             </p>
         </task>
         
@@ -170,10 +170,10 @@
             <p>
                 Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converges?
                 <ol marker="A." cols="2">
-                    <li><m>(-\frac{1}{2},\frac{9}{2})</m>.</li>
-                    <li><m>[-\frac{1}{2},\frac{9}{2})</m>.</li>
-                    <li><m>(-\frac{1}{2},\frac{9}{2}]</m>.</li>
-                    <li><m>[-\frac{1}{2},\frac{9}{2}]</m>.</li>
+                    <li><m>\left(-\dfrac{1}{2},\dfrac{9}{2}\right)</m>.</li>
+                    <li><m>\left[-\dfrac{1}{2},\dfrac{9}{2}\right)</m>.</li>
+                    <li><m>\left(-\dfrac{1}{2},\dfrac{9}{2}\right]</m>.</li>
+                    <li><m>\left[-\dfrac{1}{2},\dfrac{9}{2}\right]</m>.</li>
                 </ol>
             </p>
         </task>
@@ -190,7 +190,7 @@
         </introduction>
         <task>
             <p>
-                Letting <m>c_n=\frac{n^2}{n!}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+                Letting <m>c_n=\dfrac{n^2}{n!}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
             </p>
             
         </task>
