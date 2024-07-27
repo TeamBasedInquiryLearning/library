@@ -44,9 +44,31 @@ class Generator(BaseGenerator):
       tasks= [ {"value": x1, "result": f(x1)}, {"value": x2, "result": f(x2)}, {"value":cut, "result":f(cut)}]
       shuffle(tasks)
 
+
+      g0(x)= choice([-4..-1,1..4])*x+choice([-4..4])
+      g1(x)= choice([-4..-1,1..4])*x+choice([-4..4])
+
+      cut2 = choice([-2..2])
+      g1(x)=g1(x)+g0(cut2)-g1(cut2)
+
+      g=piecewise([((-5,cut2),g0(x)),([cut2,5],g1(x))] )
+      xvalue=choice([-4..4])
+
       return {
         "fname": fname,
         "f":flatex,
-        "gname": gname,
         "tasks":tasks,
+        "gname": gname,
+        "g_pieces":[g0,g1],
+        "g_interval":[(x,-5,cut2),(x,cut2,5)],
+        "xvalue":xvalue, 
+        "gx":g(xvalue),
+        
       } 
+
+
+    @provide_data
+    def graphics(data):
+      p=plot(data["g_pieces"][0],data["g_interval"][0])+plot(data["g_pieces"][1],data["g_interval"][1])
+      return {"plot": plot(p)}
+        

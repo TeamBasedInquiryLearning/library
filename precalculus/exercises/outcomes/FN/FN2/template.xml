@@ -25,16 +25,18 @@
         <intro>
             <p>
                Let <m>{{gname}}(x)</m> be the function graphed below.
-
+                <image
+                    source="assets/FN2/generated/{{__seed__}}/plot.png"
+                    description="Plot"/>
             </p>
         </intro>
         <knowl>
             <content>
-                <p>Find <m>{{fname}}({{value}})</m>.
+                <p>Find <m>{{gname}}({{xvalue}})</m>.
                 </p>
             </content>
             <outtro>
-                <p><m>{{fname}}({{value}})={{result}}</m></p>
+                <p><m>{{gname}}({{xvalue}})={{gx}}</m></p>
             </outtro>
         </knowl>
         <knowl>
