@@ -373,10 +373,25 @@
     <statement>
         <p>
 Explain how to approximate the area under the curve
-<m>f(x)=-9 \, x^{3} + 3 \, x - 9</m> on the
+<me>
+  f(x) = -\frac{1}{5} (x-4)(x-10)(x-12)
+</me> on the
 interval <m>[4,10]</m> using a right Riemann
 sum with 3 subintervals.
         </p>
+        <image>
+          <description>The graph of the function <m>f(x) = -1/5 (x-4)(x-10)(x-12)</m>
+          crosses the <m>x</m>-axis upward at <m>(4,0)</m> and downward at <m>(10,0)</m>
+          with a maximum at about <m>(6.3, 9.7)</m>.
+        </description>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[axes=true,xmin=3,xmax=11,ymin=-1,ymax=12]
+                \addplot [domain=3:11] {1/5*(x-4)*(x-10)*(x-12)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
     </statement>
 <!--    <answer>
         <p>
