@@ -198,7 +198,8 @@ def json_ready(obj):
 
 # this script should be called from the root directory of the bank
 # so loads in the generator file work as intended
-generator_path = "exercise-sandbox/outcome/generator.sage"
+os.chdir("exercise-sandbox/bank")
+generator_path = "outcome/generator.sage"
 load(generator_path) # must provide Generator class extending BaseGenerator
 generator = Generator()
 outcome_slug = sys.argv[1]
@@ -212,7 +213,7 @@ for i in range(amount):
     if gen_images:
         graphics = generator.graphics()
         if graphics is not None:
-            directory = f"exercise-sandbox/assets/{outcome_slug}/generated/"
+            directory = f"assets/{outcome_slug}/generated/"
             os.makedirs(directory, exist_ok=True)
             for filename in graphics:
                 seed_path = os.path.join(directory,f"{seed_int:04}")
@@ -223,6 +224,7 @@ data = {
     "seeds": seeds,
     "generated_on": datetime.datetime.now(datetime.timezone.utc).isoformat(),
 }
-os.makedirs(f"exercise-sandbox/assets/{outcome_slug}/generated", exist_ok=True)
-with open(f"exercise-sandbox/assets/{outcome_slug}/generated/seeds.json", 'w') as f:
+os.makedirs(f"assets/{outcome_slug}/generated", exist_ok=True)
+with open(f"assets/{outcome_slug}/generated/seeds.json", 'w') as f:
     json.dump(data, f)
+os.chdir("../..")

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="DF7" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Differentiating implicitly defined functions (DF7)</title>
+  <title>Differentiating Implicitly Defined Functions (DF7)</title>
   <objectives>
     <ul>
       <li>
@@ -32,21 +32,21 @@
       <statement>
           <p>The derivative with respect to <m>x</m> for the equation of the circle is given by which expression.</p>
           <ol marker="A." cols="2">
-                <li><p><m>2x + 2y\frac{dy}{dx} = 25</m></p></li>
-                <li><p><m>2x + y\frac{dy}{dx} = 0</m></p></li>
-                <li><p><m>2x + 2y\frac{dy}{dx} = 0</m></p></li>
-                <li><p><m>2x + 2\frac{dy}{dx} = 25</m></p></li>
+                <li><p><m>2x + 2y\dfrac{dy}{dx} = 25</m></p></li>
+                <li><p><m>2x + y\dfrac{dy}{dx} = 0</m></p></li>
+                <li><p><m>2x + 2y\dfrac{dy}{dx} = 0</m></p></li>
+                <li><p><m>2x + 2\dfrac{dy}{dx} = 25</m></p></li>
             </ol>
           </statement>
       </task>
       <task>
       <statement>
-          <p>Solving for <m>\frac{dy}{dx}</m> gives?</p>
+          <p>Solving for <m>\dfrac{dy}{dx}</m> gives?</p>
           <ol marker="A." cols="2">
-                <li><p><m>\frac{dy}{dx} = \frac{25-2x}{2y}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = -\frac{2x}{y}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = -\frac{x}{y}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{25-2x}{2}</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = \dfrac{25-2x}{2y}</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = -\dfrac{2x}{y}</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = -\dfrac{x}{y}</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = \dfrac{25-2x}{2}</m></p></li>
             </ol>
           </statement>
       </task>
@@ -63,7 +63,7 @@
 
     <activity xml:id="activity-derivative-implicit2">
     <introduction>
-        <p>The curve given in <xref ref = "figure-derivative-implicit2"/> is an example of an astroid.  The equation of this astroid is <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.  What is the derivative with respect <m>x</m> for this astroid? (Solve for <m>\frac{dy}{dx}</m>).</p>
+        <p>The curve given in <xref ref = "figure-derivative-implicit2"/> is an example of an astroid.  The equation of this astroid is <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.  What is the derivative with respect <m>x</m> for this astroid? (Solve for <m>\dfrac{dy}{dx}</m>).</p>
         </introduction>
          <figure xml:id="figure-derivative-implicit2">
        <image width="70%" source="derivative_implicit2_graph.png" />
@@ -79,7 +79,7 @@
     
     <activity xml:id="activity-derivative-implicit3">
     <introduction>
-        <p>An example of a lemniscate is given in <xref ref = "figure-derivative-implicit3"/>.  The equation of this lemniscate is <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.  What is the derivative with respect <m>x</m> for this lemniscate? (Solve for <m>\frac{dy}{dx}</m>).</p>
+        <p>An example of a lemniscate is given in <xref ref = "figure-derivative-implicit3"/>.  The equation of this lemniscate is <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.  What is the derivative with respect <m>x</m> for this lemniscate? (Solve for <m>\dfrac{dy}{dx}</m>).</p>
         </introduction>
          <figure xml:id="figure-derivative-implicit3">
        <image width="70%" source="derivative_implicit3_graph.png" />
@@ -97,7 +97,7 @@
     <introduction>
         <p>
 Explain how to use implicit differentiation to find
-<m>\frac{dy}{dx}</m> for each of the following equations.
+<m>\dfrac{dy}{dx}</m> for each of the following equations.
         </p></introduction>
         
                 <task><p><me>-5 \, x^{5} - 5 \, \cos\left(y\right) = 3 \, y^{4} + 2</me></p></task>
@@ -113,13 +113,13 @@ Explain how to use implicit differentiation to find
 </activity>
     <activity xml:id="activity-derivative-implicit4">
     <introduction>
-        <p>To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\frac{dy}{dx}</m>? This process to find a derivative is known as logarithmic differentiation. </p>
+        <p>To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\dfrac{dy}{dx}</m>? This process to find a derivative is known as logarithmic differentiation. </p>
         </introduction>
          <ol marker="A." cols="2">
-                <li><p><m>\frac{dy}{dx} = x^x(\ln(x) + 1)</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{(\ln(x)+1)}{x^x}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{(\ln(x)+x)}{x^x}</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + 1)</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+1)}{x^x}</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
+                <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+x)}{x^x}</m></p></li>
             </ol>
      </activity> 
     
@@ -151,5 +151,12 @@ Explain how to use implicit differentiation to find
             <caption>Video for DF7</caption>
         </figure>
     </subsection>
+
+    <subsection>
+      <title>Exercises</title>
+      <p>
+          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF7/"/>
+      </p>
+  </subsection>
 
 </section>

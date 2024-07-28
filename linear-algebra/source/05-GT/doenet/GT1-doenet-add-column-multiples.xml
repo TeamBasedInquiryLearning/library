@@ -1,0 +1,53 @@
+<!-- https://www.doenet.org/portfolioeditor/_i3xTNmyK2WkCsCItXRSm1/_NLbMiguvDxuKQcvxpvhxp -->
+<p>
+  Adjust the vectors <m>\vec v</m> and <m>\vec w</m> and
+  <m>\vec w+c\vec v</m> in the left graph to visualize the areas calculated by
+  <m>\det[\vec v\hspace{0.5em}\vec w]</m> and <m>\det[\vec v\hspace{0.5em}\vec w+c\vec v]</m>.
+</p>
+<sideBySide>
+  <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
+    <m draggable="false" anchor="$v/2+$w/2">
+      \det[\vec v\hspace{0.5em}\vec w]
+    </m>
+    <point name="v" styleNumber="3">
+      (10,4)
+      <label><m>\vec v</m></label>
+    </point>
+    <point name="w" styleNumber="3">
+      (2,6)
+      <label><m>\vec w</m></label>
+    </point>
+    <point name="wcv" styleNumber="2">
+      (5,7.2)
+      <label><m>c\vec v</m></label>
+      <constraints>
+        <constrainTo>
+          <line slope="$v.y/$v.x" through="$w"/>
+        </constrainTo/>
+      </constraints>
+    </point>
+    <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="3"/>
+    <lineSegment draggable="false" endpoints="$w $wcv" styleNumber="2"/>
+    <m anchor="(12,14)">
+      c = <math simplify>($wcv.x-$w.x)/$v.x</math>
+    </m>
+  </graph>
+  <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
+    <m draggable="false" anchor="$v/2+$wcv/2">
+      \det[\vec v\hspace{0.5em}\vec w+c\vec v]
+    </m>
+    <point draggable="false" styleNumber="2">
+      $wcv
+      <label><m>\vec w+c\vec v</m></label>
+    </point>
+    <point draggable="false" styleNumber="4">
+      $uPlusV
+      <label><m>\vec u+\vec v</m></label>
+    </point>
+    <polygon vertices="(0,0) $v $v+$wcv $wcv" filled draggable="false" styleNumber="2"/>
+    <lineSegment draggable="false" endpoints="(0,0) $v" styleNumber="6"/>
+    <lineSegment draggable="false" endpoints="$v $v+$w" styleNumber="6"/>
+    <lineSegment draggable="false" endpoints="$w $v+$w" styleNumber="6"/>
+    <lineSegment draggable="false" endpoints="(0,0) $w" styleNumber="6"/>
+  </graph>
+</sideBySide>

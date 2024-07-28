@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="DF2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Derivatives analytically (DF2)</title>
+  <title>Derivatives Analytically (DF2)</title>
   <objectives>
     <ul>
       <li>
@@ -13,7 +13,7 @@
     <title>Activities</title>
    <observation xml:id="derivative-on-interval">
        <statement>
-      <p> Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit as <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>. If <m>f'(a)</m> exists, then say that <m>f(x)</m> is differentiable at <m>a</m>. If for some open interval <m>(a,b)</m>, we have that <m>f'(x)</m> exists for every point <m>x</m> in <m>(a,b)</m>, then we say that <m>f(x)</m> is differentiable on <m>(a,b)</m>. </p> </statement>
+      <p> Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit as <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>. If <m>f'(a)</m> exists, then we say that <m>f(x)</m> is differentiable at <m>a</m>. If for some open interval <m>(a,b)</m>, we have that <m>f'(x)</m> exists for every point <m>x</m> in <m>(a,b)</m>, then we say that <m>f(x)</m> is differentiable on <m>(a,b)</m>. </p> </statement>
     </observation>
 
     <activity xml:id="activity-derivative-analytically-point">
@@ -61,7 +61,7 @@
         <p> The last type of notation is known as <em>differential</em> (or Leibniz) notation for the derivative.</p></remark>
     
    <remark xml:id="derivative-notation2"> 
-    <p>Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'(t)=\frac{dy}{dt}=\frac{dv}{dt}</m>.</p>
+    <p>Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'(t)=\dfrac{dy}{dt}=\dfrac{dv}{dt}</m>.</p>
     </remark>
     
     <activity xml:id="activity-derivative-analytically-algebraic1">
@@ -190,7 +190,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     
       <activity xml:id="activity-derivative-analytically-algebraic4">
           <introduction>
-            <p> Consider the function <m>f(x) = \frac{1}{x^2}</m>. You will find <m>f'(1)</m> in two ways!  </p>   </introduction>
+            <p> Consider the function <m>f(x) = \dfrac{1}{x^2}</m>. You will find <m>f'(1)</m> in two ways!  </p>   </introduction>
                  <task> <p> Using the limit definition of the derivative at a point, compute the difference quotient on the interval <m>[1,1+h]</m> and then take the limit as <m>h\to 0</m>. What do you get? </p> 
              <ol marker="A." cols="2">
                 <li><p> -1 </p></li>
@@ -286,4 +286,10 @@ The second derivative is the derivative of the derivative. It encodes informatio
         </figure>
     </subsection> 
     
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF2/"/>
+        </p>
+    </subsection>
 </section>

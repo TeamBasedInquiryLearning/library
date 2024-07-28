@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="DF4" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>The product and quotient rules (DF4)</title>
+  <title>The Product and Quotient Rules (DF4)</title>
   <objectives>
     <ul>
       <li>
@@ -100,7 +100,7 @@
 
       <task>
         <p>
-           Let <m>Q(t) = \frac{t^3 + 4t}{2t^2}</m> and observe that <m>Q(t) = \frac{g(t)}{f(t)}</m>.
+           Let <m>Q(t) = \dfrac{t^3 + 4t}{2t^2}</m> and observe that <m>Q(t) = \dfrac{g(t)}{f(t)}</m>.
           Rewrite the formula for <m>Q</m> by dividing each term in the numerator by the denominator and use rules of exponents to write <m>Q</m> as a sum of scalar multiples of power functions.
           Then,
           compute <m>Q'(t)</m> using the sum and scalar multiple rules.
@@ -109,7 +109,7 @@
 
       <task>
         <p>
-          True or false: <m>Q'(t) = \frac{g'(t)}{f'(t)}</m>.
+          True or false: <m>Q'(t) = \dfrac{g'(t)}{f'(t)}</m>.
         </p>
       </task>
 </activity>
@@ -119,9 +119,9 @@
       <p>
            
        If <m>f</m> and <m>g</m> are differentiable functions,
-        then their quotient <m>Q(x) = \frac{f(x)}{g(x)}</m> is also a differentiable function for all <m>x</m> where <m>g(x) \ne 0</m> and
+        then their quotient <m>Q(x) = \dfrac{f(x)}{g(x)}</m> is also a differentiable function for all <m>x</m> where <m>g(x) \ne 0</m> and
         <me>
-          Q'(x) = \frac{ f'(x) \cdot g(x) -  f(x) \cdot g'(x)}{g(x)^2}
+          Q'(x) = \dfrac{ f'(x) \cdot g(x) -  f(x) \cdot g'(x)}{g(x)^2}
         </me>.
       </p>
     
@@ -139,10 +139,10 @@
         
            
             <ol marker="A." cols="2">
-                <li><m>f(x) = \frac{6}{x^3}</m></li>
-                <li><m>f(x) = \frac{2}{\ln x}</m></li>
-                <li><m>f(x) = \frac{e^x}{\sin x}</m></li>
-                <li><m>f(x) = \frac{x^3+3x}{x}</m></li>
+                <li><m>f(x) = \dfrac{6}{x^3}</m></li>
+                <li><m>f(x) = \dfrac{2}{\ln x}</m></li>
+                <li><m>f(x) = \dfrac{e^x}{\sin x}</m></li>
+                <li><m>f(x) = \dfrac{x^3+3x}{x}</m></li>
                 
             </ol>
     </activity>    
@@ -154,10 +154,10 @@
 
             </p>
         </introduction>
-       <task><m>f(x) = \frac{6}{x^3}</m></task>
-                <task><m>f(x) = \frac{2}{\ln x}</m></task>
-                <task><m>f(x) = \frac{e^x}{\sin x}</m></task>
-                <task><m>f(x) = \frac{x^3+3x}{x}</m></task>
+       <task><m>f(x) = \dfrac{6}{x^3}</m></task>
+                <task><m>f(x) = \dfrac{2}{\ln x}</m></task>
+                <task><m>f(x) = \dfrac{e^x}{\sin x}</m></task>
+                <task><m>f(x) = \dfrac{x^3+3x}{x}</m></task>
      
     </activity>
     
@@ -167,8 +167,8 @@
             Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
             </p></introduction>
         
-            <task><me>f(w)= -\frac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}</me></task>
-            <task><me>g(t)= \frac{t^{2} + 6 \, t + 1}{t^{2}}</me></task>
+            <task><me>f(w)= -\dfrac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}</me></task>
+            <task><me>g(t)= \dfrac{t^{2} + 6 \, t + 1}{t^{2}}</me></task>
             <task><me>h(t)= -2 \, {\left(t^{2} + 3 \, t + 3\right)} \cos\left(t\right)</me></task>
         
  <!--   <answer>
@@ -195,7 +195,7 @@
         <introduction>
             <p>
                Consider the function <m>f(x) = \tan x </m>, and remember that
-    <m>\tan x  = \frac{\sin x}{\cos x}</m>.
+    <m>\tan x  = \dfrac{\sin x}{\cos x}</m>.
 
 
             </p>
@@ -203,11 +203,11 @@
      <task> <p> What is the domain of <m>f</m>?</p></task>
      <task> <p>  Use the quotient rule to show that one expression for <m>f'(x)</m> is
           <me>
-            f'(x) = \frac{(\cos x)(\cos x) + (\sin x)(\sin x)}{(\cos x)^2}
+            f'(x) = \dfrac{(\cos x)(\cos x) + (\sin x)(\sin x)}{(\cos x)^2}
           </me>.</p> </task>
      <task><p>Which trig identity might be useful here to simplify this expression?
           How can this identity be used to find a simpler form for <m>f'(x)</m>?</p></task>
-     <task><p> Recall that <m>\sec x = \frac{1}{\cos x}</m>.
+     <task><p> Recall that <m>\sec x = \dfrac{1}{\cos x}</m>.
           How can we express <m>f'(x)</m> in terms of the secant function?</p></task>
      <task><p>  For what values of <m>x</m> is <m>f'(x)</m> defined?
           How does this domain compare to the domain of <m>f</m>?</p></task>
@@ -217,7 +217,7 @@
     <activity xml:id="activity-df-quotient-rule-cotx">
         <introduction>
             <p> Let <m>g(x) = \cot x </m>, and recall that
-    <m>\cot  x  = \frac{\cos x }{\sin x }</m>.
+    <m>\cot  x  = \dfrac{\cos x }{\sin x }</m>.
 
 
             </p>
@@ -234,7 +234,7 @@
     <activity xml:id="activity-df-quotient-rule-secx">
         <introduction>
             <p> Let <m>h(x) = \sec x </m>, and recall that
-    <m>\sec x  = \frac{1}{\cos x }</m>.
+    <m>\sec x  = \dfrac{1}{\cos x }</m>.
 
 
             </p>
@@ -251,7 +251,7 @@
     <activity xml:id="activity-df-quotient-rule-cscx">
         <introduction>
             <p> Let <m>p(x) = \csc x </m>, and recall that
-    <m>\csc x  = \frac{1}{\sin x }</m>.
+    <m>\csc x  = \dfrac{1}{\sin x }</m>.
 
 
             </p>
@@ -267,12 +267,12 @@
     
 <theorem xml:id="thm-df-other-trig-rules"> <p> We can now summarize the derivatives of all six trigonometric functions.</p>
     <ul>
-        <li><m>\frac{d}{dx} \sin x = \cos x</m></li>
-        <li><m>\frac{d}{dx} \cos x = -\sin x</m></li>
-        <li><m>\frac{d}{dx} \tan x = (\sec x)^2</m></li>
-        <li><m>\frac{d}{dx} \cot x = -(\csc x)^2</m></li>
-        <li><m>\frac{d}{dx} \sec x = \sec x \tan x </m></li>
-        <li><m>\frac{d}{dx} \csc x = -\csc x \cot x </m></li>
+        <li><m>\dfrac{d}{dx} \sin x = \cos x</m></li>
+        <li><m>\dfrac{d}{dx} \cos x = -\sin x</m></li>
+        <li><m>\dfrac{d}{dx} \tan x = (\sec x)^2</m></li>
+        <li><m>\dfrac{d}{dx} \cot x = -(\csc x)^2</m></li>
+        <li><m>\dfrac{d}{dx} \sec x = \sec x \tan x </m></li>
+        <li><m>\dfrac{d}{dx} \csc x = -\csc x \cot x </m></li>
     </ul>
     </theorem>
     
@@ -396,5 +396,12 @@ In answering the following questions, be sure to explicitly denote which derivat
             <caption>Video for DF4</caption>
         </figure>
     </subsection> 
+
+    <subsection>
+      <title>Exercises</title>
+      <p>
+          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF4/"/>
+      </p>
+  </subsection>
 
 </section>

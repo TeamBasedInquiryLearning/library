@@ -53,7 +53,7 @@ class Generator(BaseGenerator):
         if n1==0:
             horizontal = 0
             scenario = "zero"
-            root = 0
+            root = False 
         
         elif n1 < n2:
             horizontal = 0

@@ -9,33 +9,62 @@
         </ul>
     </objectives>
 
-<definition>
-    <statement>
-        <p>
-    A set <m>S</m> of vectors is called an <term>orthogonal set</term> provided <m>\vec u \cdot \vec v = 0</m> for any pair of vectors <m>\vec u</m>, <m>\vec v \in S</m> with <m>\vec u \ne \vec v</m>.
-        </p>
-    </statement>
-</definition>
+    <subsection xml:id="ON2-subsec-class-activities">
+        <title>Class Activities</title>
 
-<activity estimated-time='5'>
-    <introduction>
-        <p>
-            If we rotate the standard basis of <m>\IR^2</m> by <m>45^{\circ}</m>, we produce the set <m>B=\left\{\vec b_1, \vec b_2\right\}=\left\{ \left[\begin{array}{c} \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} \end{array}\right], \left[\begin{array}{c} -\frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} \end{array}\right]\right\}</m>
-        </p>
-    </introduction>
-    <task><p>Determine the length of <m>\vec b_1</m> and <m>\vec b_2</m>.</p></task>
-    <task><p>Determine the dot product <m>\vec b_1 \cdot \vec b_2</m>.</p></task>
-    <task><p>Is <m>B</m> is an orthogonal set? Explain why or why not.</p></task>
-    <task><p>Is <m>B</m> is a basis of <m>\IR^2</m>? Explain why or why not.</p></task>
-</activity>
+        <fact xml:id="fact-ortho-decomp-thm">
+            <statement>
+                <p>
+                    Let <m>W</m> be a subspace of <m>\IR^n</m> and let <m>\vec u</m> be a vector in <m>\IR^n</m>.
+                    Then we can write <m>\vec u</m> uniquely as
+                    <me>\vec u=\vec u_W+\vec u_{W^\perp}</me>
+                    where <m>\vec u_W</m> is the closest vector to <m>\vec u</m> on <m>W</m> and <m>\vec u_{W^\perp}</m> is in <m>W^\perp</m>
+                </p>
+            </statement>
+        </fact>
 
-<definition>
-    <statement>
-        <p>
-            A basis <m>B</m> of a vector space is called an <term>orthogonal basis</term> provided every pair of vectors in <m>B</m> is orthogonal. If, in addition, each vector in <m>B</m> is a unit vector, then <m>B</m> is called an <term>orthonormal basis</term>.
-        </p>
-    </statement>
-</definition>
+        <definition xml:id="def-orthogonal-decompostion">
+            <statement>
+                <p>
+                    Let <m>W</m> be a subspace of <m>\IR^n</m> and let <m>\vec u</m> be a vector in <m>\IR^n</m>.
+                    The <term>orthogonal decompostion </term> of <m>\vec u</m> is the decomposition of <m>\vec u</m> given by 
+                    <xref ref="fact-ortho-decomp-thm"/>. The <term>orthogonal projection</term> of <m>\vec u</m> is <m>\vec u_W</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <activity>
+            <introduction>
+                <p>
+                    Let <m>W</m> be a the <m>xy</m>-plane in <m>\IR^2</m>. 
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        have them find a simple orthogonal decomposition
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <fact>
+            <statement>
+                <p>
+                    Let <m>T:\IR^n\rightarrow\IR^m</m> be a linear transformation with standard matrix <m>A</m>.
+                    Let <m>W</m> be the image of <m>T</m>, that is, <m>W</m> is spanned by the columns of <m>A</m>.
+                    Then for any <m>\vec u</m> in <m>\IR^m</m>, the matrix equation 
+                    <me>
+                        A^TA\vec x=A^T\vec u
+                    </me>
+                    is consistent, and <m>\vec u_W=A\vec x</m> for any solution <m>\vec x</m>.
+                    
+                </p>
+            </statement>
+        </fact>
+
+    </subsection>
+
 
     <subsection>
         <title>Videos</title>

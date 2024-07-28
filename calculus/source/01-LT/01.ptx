@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="LT1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Limits graphically (LT1)</title>
+  <title>Limits Graphically (LT1)</title>
     <objectives>
         <ul>
             <li>
@@ -275,7 +275,7 @@
          
    <activity  xml:id="squeeze-thm-ex" estimated-time="10">
         <introduction>
-            <p>    In this activity we will explore a mathematical theorem, the Squeeze Theorem <xref ref="squeeze-thm"/>. </p>
+            <p>    In this activity we will explore a mathematical theorem, the Squeeze Theorem (<xref ref="squeeze-thm"/>). </p>
        </introduction>
  <task>
             <statement>
@@ -300,12 +300,12 @@
         </task>
         <task>
             <statement>
-                <p> Match the functions <m>f(x), g(x), h(x)</m> in the picture to the functions <m>\cos(x), 1, \frac{\sin(x)}{x}</m>.</p>
+                <p> Match the functions <m>f(x), g(x), h(x)</m> in the picture to the functions <m>\cos(x), 1, \dfrac{\sin(x)}{x}</m>.</p>
             </statement>
         </task>
         <task>
             <statement>
-                <p> Using trigonometry, one can show algebraically that <m>\cos(x) \leq \frac{\sin(x)}{x} \leq 1 </m> for <m>x</m> values close to zero. Moreover, <m>\displaystyle\lim_{x \to 0} \cos(x) = \cos(0)=1</m> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <m>\displaystyle\lim_{x\to 0} \frac{\sin(x)}{x} </m>.</p>
+                <p> Using trigonometry, one can show algebraically that <m>\cos(x) \leq \dfrac{\sin(x)}{x} \leq 1 </m> for <m>x</m> values close to zero. Moreover, <m>\displaystyle\lim_{x \to 0} \cos(x) = \cos(0)=1</m> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <m>\displaystyle\lim_{x\to 0} \dfrac{\sin(x)}{x} </m>.</p>
             </statement>
         </task>
     </activity> 
@@ -318,6 +318,13 @@
             <caption>Video for LT1</caption>
         </figure>
     </subsection>  
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT1/"/>
+        </p>
+    </subsection>
 
 </section>
 

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="LT5" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Limits with infinite inputs (LT5)</title>
+  <title>Limits with Infinite Inputs (LT5)</title>
     <objectives>
         <ul>
             <li>
@@ -80,7 +80,7 @@
 
       <remark>
         <statement>
-            <p>    We say that the function <m>1/x^3</m> has horizontal asymptote y=0 because the limit as <m>x</m> tends to positive infinity of <m>1/x^3</m> is 0. Alternatively, we could also justify it by saying that the limit as <m>x</m> goes to negative infinity is 0. </p>
+            <p>    We say that the function <m>1/x^3</m> has horizontal asymptote <m>y=0</m> because the limit as <m>x</m> tends to positive infinity of <m>1/x^3</m> is 0. Alternatively, we could also justify it by saying that the limit as <m>x</m> goes to negative infinity is 0. </p>
              </statement>
         </remark>
 
@@ -243,11 +243,11 @@
       
 
             <ol marker="A." cols="2">
-                <li><p><m>\displaystyle  f(x)= \frac{x^3-x+3}{2x^3-6x+1} </m></p></li>
-                <li><p><m>\displaystyle  f(x)= \frac{x^2-3}{5x^3-2x^2+5} </m></p></li>
-                <li><p><m>\displaystyle  f(x)= \frac{x^4-3x-2}{3x^3-5x+1} </m></p></li>
-                <li><p><m>\displaystyle  f(x)= \frac{10x^5-3x+2}{5x^5-3x^2+1} </m></p></li>
-                <li><p><m>\displaystyle  f(x)= \frac{-8x^2-5x+1}{2x^2-2x+3} </m></p></li>
+                <li><p><m>\displaystyle  f(x)= \dfrac{x^3-x+3}{2x^3-6x+1} </m></p></li>
+                <li><p><m>\displaystyle  f(x)= \dfrac{x^2-3}{5x^3-2x^2+5} </m></p></li>
+                <li><p><m>\displaystyle  f(x)= \dfrac{x^4-3x-2}{3x^3-5x+1} </m></p></li>
+                <li><p><m>\displaystyle  f(x)= \dfrac{10x^5-3x+2}{5x^5-3x^2+1} </m></p></li>
+                <li><p><m>\displaystyle  f(x)= \dfrac{-8x^2-5x+1}{2x^2-2x+3} </m></p></li>
             </ol></task>
     <task> <p>Conjecture a rule for how to determine that a rational function has a nonzero constant limit as <m>x</m> approaches positive and negative infinity. Test your rule by creating a rational function whose limit as <m>x \to \infty</m> equals 3 and then check it graphically. </p> </task>
     </activity>
@@ -257,7 +257,7 @@
         <introduction> <p>  What about when the limit is not a nonzero constant? How do we recognize those? In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</p>
               </introduction>
           <task> <p>
-  Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 0 as <m>x \to \infty? </m>
+  Consider a rational function <m>r(x) = \dfrac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 0 as <m>x \to \infty? </m>
             </p>
      <ol marker="A.">
                
@@ -271,7 +271,7 @@
               </ol>
 </task>
           <task> <p>
-  Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit approaching infinity as <m>x \to \infty? </m>
+  Consider a rational function <m>r(x) = \dfrac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit approaching infinity as <m>x \to \infty? </m>
             </p>
      <ol marker="A.">
             
@@ -296,37 +296,37 @@ the value of each limit.
         </p></introduction>
         
                 <task><p><me>
-\lim_{x\to-\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
+\lim_{x\to-\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
 \,\text{ and }\,
-\lim_{x\to+\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
+\lim_{x\to+\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
                 </me></p></task>
                 <task><p><me>
-\lim_{x\to-\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
+\lim_{x\to-\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
 \,\text{ and }\,
-\lim_{x\to+\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
+\lim_{x\to+\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
                 </me></p></task>
                 <task><p><me>
-\lim_{x\to-\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
+\lim_{x\to-\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
 \,\text{ and }\,
-\lim_{x\to+\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
+\lim_{x\to+\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
                 </me></p></task>
        
  <!--   <answer>
         <ol>
                 <li><p><me>
-\lim_{x\to-\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6
+\lim_{x\to-\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6
 \,\text{ and }\,
-\lim_{x\to+\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6
+\lim_{x\to+\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6
                 </me></p></li>
                 <li><p><me>
-\lim_{x\to-\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} = 0
+\lim_{x\to-\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} = 0
 \,\text{ and }\,
-\lim_{x\to+\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} = 0
+\lim_{x\to+\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} = 0
                 </me></p></li>
                 <li><p><me>
-\lim_{x\to-\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = +\infty
+\lim_{x\to-\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = +\infty
 \,\text{ and }\,
-\lim_{x\to+\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = -\infty
+\lim_{x\to+\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = -\infty
                 </me></p></li>
         </ol>
     </answer>-->
@@ -381,12 +381,12 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
         <introduction> <p>  Compute the following limits.</p>
               </introduction>
        
-    <task><p><m>\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} </m></p></task>
-    <task><p><m>\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} </m></p></task>
-    <task><p><m>\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}</m></p></task>
-    <task><p><m>\displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}</m></p></task>
-    <task><p>(Challenge) <m>\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}</m></p></task>
-    <task><p>(Challenge) <m>\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}</m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to -\infty} \dfrac{x^3-x+83}{1} </m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to -\infty} \dfrac{1}{x^3-x+83} </m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to +\infty} \dfrac{x+3}{2-x}</m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to -\infty} \dfrac{\pi-3x}{\pi x-3}</m></p></task>
+    <task><p>(Challenge) <m>\displaystyle  \lim_{x\to + \infty} \dfrac{3e^x+2}{2e^x+3}</m></p></task>
+    <task><p>(Challenge) <m>\displaystyle  \lim_{x\to - \infty} \dfrac{3e^x+2}{2e^x+3}</m></p></task>
         
     </activity>    
 
@@ -394,7 +394,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
 
    <activity xml:id="study-rational1">
         <introduction>
-            <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}</m>.   </p>
+            <p>   The graph below represents the function <m>f(x) =  \displaystyle\dfrac{2(x+3)(x+1)}{x^2-2x-3}</m>.   </p>
              <figure>
                     <image width="50%" xml:id="graph-rational-function">
                     <latex-image>
@@ -503,5 +503,12 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
             <caption>Video for LT5</caption>
         </figure>
     </subsection>  
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT5/"/>
+        </p>
+    </subsection>
 
 </section>

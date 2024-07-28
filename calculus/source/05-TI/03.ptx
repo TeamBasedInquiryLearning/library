@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="TI3" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
-  <title>Integration of trigonometry (TI3)</title>
+  <title>Integration of Trigonometry (TI3)</title>
     <objectives>
         <ul>
             <li>
@@ -57,11 +57,11 @@
     <activity>
             <statement>
                 <p>
-                    It's possible to use subtitution to evaluate <m>\displaystyle\int \sin^4(x)\cos^3(x) \, dx</m>,
+                    It's possible to use substitution to evaluate <m>\displaystyle\int \sin^4(x)\cos^3(x) \, dx</m>,
                     by taking advantage of the trigonometric identity <m>\sin^2(x)+\cos^2(x)=1</m>.
                 </p>
                 <p>
-                    Complete the following substitution of <m>u=\sin(x),du=\cos(x)\,dx</m>
+                    Complete the following substitution of <m>u=\sin(x),\, du=\cos(x)\,dx</m>
                     by filling in the missing <m>\unknown</m>s.
                 </p>
             <md>
@@ -135,19 +135,19 @@ Which substitution worked better and why?
     <observation>
         <statement>
             <p>
-When integrating the form <m>\int \sin^m(x)\cos^n(x)\,dx</m>:
+When integrating the form <m>\displaystyle \int \sin^m(x)\cos^n(x)\,dx</m>:
             </p>
             <ul>
                 <li>
                     <p>
 If <m>\sin</m>'s power is odd, rewrite the integral as
-<m>\int g(\cos(x))\sin(x)\,dx</m> and use <m>u=\cos(x)</m>.
+<m>\displaystyle \int g(\cos(x))\sin(x)\,dx</m> and use <m>u=\cos(x)</m>.
                     </p>
                 </li>
                 <li>
                     <p>
 If <m>\cos</m>'s power is odd, rewrite the integral as
-<m>\int h(\sin(x))\cos(x)\,dx</m> and use <m>u=\sin(x)</m>.
+<m>\displaystyle \int h(\sin(x))\cos(x)\,dx</m> and use <m>u=\sin(x)</m>.
                     </p>
                 </li>
             </ul>
@@ -166,7 +166,7 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                 </task>
                 <task>
                     <statement>
-                        <p>Show that the integral evaluates to <m>\frac{1}{2} \, x - \frac{1}{4} \, \sin\left(2 \, x\right)+C</m>.</p>
+                        <p>Show that the integral evaluates to <m>\dfrac{1}{2} \, x - \dfrac{1}{4} \, \sin\left(2 \, x\right)+C</m>.</p>
                     </statement>
                 </task>   
     </activity>
@@ -187,7 +187,7 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                 </task>
                 <task>
                     <statement>
-                        <p>Show that integral evaluates to <m>\frac{1}{8} \, x - \frac{1}{32} \, \sin\left(4 \, x\right)+C</m>.</p>
+                        <p>Show that integral evaluates to <m>\dfrac{1}{8} \, x - \dfrac{1}{32} \, \sin\left(4 \, x\right)+C</m>.</p>
                     </statement>
                 </task>   
     </activity>
@@ -263,6 +263,13 @@ We might also use some other trigonometric identities to manipulate our integran
 		</video>
         <caption>Video: Compute integrals involving products of trigonometric functions</caption>
     </figure>
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/TI3/"/>
+        </p>
     </subsection>
     
     

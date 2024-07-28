@@ -25,7 +25,7 @@
     <knowl>
         <content>
             <p>
-                Determine where the coordinates of the vertex of the parabola <m>y=q(x)</m> and whether or not it is a maximum or a minimum.
+                Determine the coordinates of the vertex of the parabola <m>y=q(x)</m>.  Is this point a maximum or a minimum of <m>q(x)</m>?
             </p>
         </content>
         <outtro>
@@ -47,37 +47,6 @@
                 The axis of symmetry is the line <m>x={{h}}</m>.
             </p>
         </outtro>
-        
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find all <m>x</m> and <m>y</m> intercepts for the parabola <m>y=q(x)</m>, if any.
-            </p>
-        </content>
-        <!-- {{#none}} -->
-        <outtro>
-            <p>
-                The <m>y</m> intercept is <m>(0, {{c}})</m>.  There are no <m>x</m> intercepts.
-            </p>
-        </outtro>
-        <!-- {{/none}} -->
-        <!-- {{#one}} -->
-        <outtro>
-            <p>
-                The <m>y</m> intercept is <m>(0, {{c}})</m>.  There is an <m>x</m> intercept at <m>({{r1}}, 0)</m>.
-            </p>
-        </outtro>
-        <!-- {{/one}} -->
-        <!-- {{#two}} -->
-        <outtro>
-            <p>
-                The <m>y</m> intercept is <m>(0, {{c}})</m>.  There are <m>x</m> intercepts at <m>({{r1}}, 0)</m> and <m>({{r2}}, 0)</m>.
-            </p>
-        </outtro>
-        <!-- {{/two}} -->
-        
         
     </knowl>
     

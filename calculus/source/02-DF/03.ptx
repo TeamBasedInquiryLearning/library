@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="DF3" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Elementary derivative rules (DF3)</title>
+  <title>Elementary Derivative Rules (DF3)</title>
   <objectives>
     <ul>
       <li>
@@ -76,7 +76,7 @@
     
     <observation xml:id="obs-derivative-notation3">
         <p>
-    We have been using <m>f'(x)</m>, read <q><m>f</m> prime</q>, to denote a derivative of the function <m>f(x)</m>.  There are other ways to denote the derivative of <m>y=f(x)</m>: <m>y'</m> or <m>\frac{df}{dx}</m>, pronounced <q>dee-f dee-x</q>.  If you want to take the derivative of <m>f'(x)</m>, <m>y'</m>, or <m>\frac{df}{dx}</m> to get the second derivative of <m>f(x)</m>, the notation is <m>f''(x)</m>, <m>y''</m>, or <m>\frac{d^2f}{dx^2}</m>. </p>
+    We have been using <m>f'(x)</m>, read <q><m>f</m> prime</q>, to denote a derivative of the function <m>f(x)</m>.  There are other ways to denote the derivative of <m>y=f(x)</m>: <m>y'</m> or <m>\dfrac{df}{dx}</m>, pronounced <q>dee-f dee-x</q>.  If you want to take the derivative of <m>f'(x)</m>, <m>y'</m>, or <m>\dfrac{df}{dx}</m> to get the second derivative of <m>f(x)</m>, the notation is <m>f''(x)</m>, <m>y''</m>, or <m>\dfrac{d^2f}{dx^2}</m>. </p>
     </observation>
     
     <activity xml:id="activity-derivative-elementary2">
@@ -140,7 +140,7 @@
         </statement>
     </activity>
     
-    <activity xml:id="neg-fract-powers"><introduction><p>We can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \frac{1}{x^4}</m>. What is the derivative of these two functions?</p></introduction>
+    <activity xml:id="neg-fract-powers"><introduction><p>We can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \dfrac{1}{x^4}</m>. What is the derivative of these two functions?</p></introduction>
      <ol marker="A." cols="2">
                 <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^3}.</m></li>
                  <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^5}.</m></li>
@@ -200,10 +200,10 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
     <statement>
         <p> Which of the following statements is NOT true?</p>
         <ol marker="A." cols="2">
-                <li>The derivative of <m>y = 2\ln(x)</m> is <m>y' = \frac{2}{x}.</m></li>
-                <li>The derivative of <m>y = \frac{\ln(x)}{2}</m> is <m>y' = \frac{1}{2x}.</m></li>
-                <li>The derivative of <m>y = \frac{2}{3}\ln(x)</m> is <m>y' = \frac{3}{2x}.</m></li>
-                <li>The derivative of <m>y = \ln(x^{2})</m> is <m>y' = \frac{2}{x}</m>.</li>
+                <li>The derivative of <m>y = 2\ln(x)</m> is <m>y' = \dfrac{2}{x}.</m></li>
+                <li>The derivative of <m>y = \dfrac{\ln(x)}{2}</m> is <m>y' = \dfrac{1}{2x}.</m></li>
+                <li>The derivative of <m>y = \dfrac{2}{3}\ln(x)</m> is <m>y' = \dfrac{3}{2x}.</m></li>
+                <li>The derivative of <m>y = \ln(x^{2})</m> is <m>y' = \dfrac{2}{x}</m>.</li>
         </ol>
         </statement>
     </activity>
@@ -289,4 +289,11 @@ Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial
             <caption>Video for DF3</caption>
         </figure>
     </subsection> 
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF3/"/>
+        </p>
+    </subsection>
 </section>

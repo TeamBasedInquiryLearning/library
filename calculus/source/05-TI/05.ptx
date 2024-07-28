@@ -12,7 +12,7 @@
   <subsection>
     <title>Activities</title>
         <activity estimated-time="99" xml:id="activity-TI5BestSub">
-        <introduction><p>Consider the integral <m>\displaystyle\int \sqrt{16-9x^2} \,dx</m>. Which of the following substitutions appears most promising to find an antiderivaitve for this integral?</p></introduction>
+        <introduction><p>Consider the integral <m>\displaystyle\int \sqrt{16-9x^2} \,dx</m>. Which of the following substitutions appears most promising to find an antiderivative for this integral?</p></introduction>
             <ol marker="A." cols="2">
                 <li><p><m>u=16-9x^2</m></p></li>
                 <li><p><m>u=9x^2</m></p></li>
@@ -103,11 +103,11 @@
                     <p>Substituting <m>\displaystyle \frac{3}{x\sqrt{49x^2-4}} \,dx</m> with <m>\displaystyle3\int \frac{1}{u\sqrt{u^2-a^2}} \,du</m> and finding the best match of f from <xref ref="integral-table"/>.</p>
                 </li>
                 <li>
-                    <p>Integrating <m>\displaystyle3\int \frac{1}{u\sqrt{u^2-a^2}} \,du=3(\frac{1}{a}\arcsec(\frac{u}{a}))+C</m>.
+                    <p>Integrating <m>\displaystyle 3\int \dfrac{1}{u\sqrt{u^2-a^2}} \,du=3\left(\frac{1}{a}\arcsec\left(\dfrac{u}{a}\right)\right)+C</m>.
                     </p>
                 </li>
                 <li>
-                    <p>Unsubstituting <m>\displaystyle3(\frac{1}{a}\arcsec(\frac{u}{a}))+C</m> to get <m>\displaystyle\frac{3}{2}\arcsec(\frac{7x}{2})+C</m>.</p>
+                    <p>Unsubstituting <m>\displaystyle 3\left(\frac{1}{a}\arcsec\left(\frac{u}{a}\right)\right)+C</m> to get <m>\dfrac{3}{2}\arcsec\left(\dfrac{7x}{2}\right)+C</m>.</p>
                 </li>
             </ol>
         </statement>
@@ -145,7 +145,7 @@
     </activity>
     <activity estimated-time="99" xml:id="activity-TI5matchE">
         <statement>
-            <p>Use the appropriate substitution and entry from <xref ref="integral-table"/> to show that <m>\displaystyle\int \frac{7}{x\sqrt{4+49x^2}} \,dx=-\frac{7}{2}\ln\big|\frac{2+\sqrt{49x^2+4}}{7x}\big|+C</m>.</p>
+            <p>Use the appropriate substitution and entry from <xref ref="integral-table"/> to show that <m>\displaystyle\int \frac{7}{x\sqrt{4+49x^2}} \,dx=-\frac{7}{2}\ln\left|\frac{2+\sqrt{49x^2+4}}{7x}\right|+C</m>.</p>
         </statement>
     </activity>
         <activity estimated-time="99" xml:id="activity-TI5matchK">
@@ -169,6 +169,13 @@
 		</video>
         <caption>Video: I can integrate functions using a table of integrals</caption>
     </figure>
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/TI5/"/>
+        </p>
     </subsection>
     
     

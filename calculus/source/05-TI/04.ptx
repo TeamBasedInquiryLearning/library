@@ -73,7 +73,7 @@ dx&amp;=\unknown\,d\theta
         <activity xml:id="activity-TI4sinsubrewrite">
             <statement>
                 <p>
-                    From <xref ref="TI3"/> we may find <m>\int\cos^2 \theta\,d\theta=\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta+C</m>.
+                    From <xref ref="TI3"/> we may find <m>\displaystyle \int\cos^2 \theta\,d\theta=\dfrac{1}{2}\theta+\dfrac{1}{2}\sin\theta\cos\theta+C</m>.
                 </p>
                 <p>
                     Use this to continue your work in the previous activity and complete the integration by trigonometric substitution.
@@ -97,7 +97,7 @@ dx&amp;=\unknown\,d\theta
 &amp;= \frac{9}{2}\left(\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta\right)+C
                 </mrow>
                 <mrow>
-&amp;= \frac{9}{4}(\unknown)+\frac{9}{4}(\unknown)(\unknown)+C
+&amp;= \frac{9}{4}(\unknown)+\dfrac{9}{4}(\unknown)(\unknown)+C
                 </mrow>
             </md>
             </statement>
@@ -106,7 +106,7 @@ dx&amp;=\unknown\,d\theta
         <activity>
             <statement>
                 <p>
-Use similar reasoning to complete the following proof that <m>\frac{d}{dx}\left[\arcsin(x)\right]=\frac{1}{\sqrt{1-x^2}}</m>.
+Use similar reasoning to complete the following proof that <m>\dfrac{d}{dx}\left[\arcsin(x)\right]=\dfrac{1}{\sqrt{1-x^2}}</m>.
             <md>
                 <mrow>
 \text{Let }1-x^2&amp;=1-\unknown\theta=\unknown\theta
@@ -126,10 +126,10 @@ dx&amp;=\unknown\,d\theta
             </md>
             <md>
                 <mrow>
-\int \frac{1}{\sqrt{1-x^2}} \,dx&amp;=\int\frac{1}{\sqrt{\unknown}}\,(\unknown\,d\theta)
+\int \dfrac{1}{\sqrt{1-x^2}} \,dx&amp;=\displaystyle \int\frac{1}{\sqrt{\unknown}}\,(\unknown\,d\theta)
                 </mrow>
                 <mrow>
-&amp;= \int d\theta
+&amp;= \int \,d\theta
                 </mrow>
                 <mrow>
 &amp;= \unknown + C
@@ -198,7 +198,7 @@ trigonometric functions to take advantage of trigonometric identities and simpli
         <activity>
             <statement>
                 <p>
-Complete the following trignometric substitution to find <m>\displaystyle\int\frac{3}{4+25x^2}\,dx</m>.
+Complete the following trigonometric substitution to find <m>\displaystyle\int\dfrac{3}{4+25x^2}\,dx</m>.
             <md>
                 <mrow>
 \text{Let }4+25x^2&amp;=2+\unknown\theta=\unknown\theta
@@ -218,16 +218,16 @@ dx&amp;=\unknown\,d\theta
             </md>
             <md>
                 <mrow>
-\int\frac{3}{4+25x^2}\,dx &amp;=\int\frac{3}{\unknown}\,(\unknown\,d\theta)
+\int\frac{3}{4+25x^2}\,dx &amp;=\int\dfrac{3}{\unknown}\,(\unknown\,d\theta)
                 </mrow>
                 <mrow>
-&amp;= \int \unknown d\theta
+&amp;= \int \unknown \, d\theta
                 </mrow>
                 <mrow>
 &amp;= \unknown + C
                 </mrow>
                 <mrow>
-&amp;= \frac{3}{10}\arctan(\frac{5}{2}x) + C
+&amp;= \dfrac{3}{10}\arctan\left(\dfrac{5}{2}x\right) + C
                 </mrow>
             </md>
                 </p>
@@ -237,7 +237,7 @@ dx&amp;=\unknown\,d\theta
         <activity>
             <statement>
                 <p>
-Complete the following trignometric substitution to find <m>\displaystyle\int\frac{7}{x\sqrt{9x^2-16}}\,dx</m>.
+Complete the following trigonometric substitution to find <m>\displaystyle\int\dfrac{7}{x\sqrt{9x^2-16}}\,dx</m>.
             <md>
                 <mrow>
 \text{Let }9x^2-16&amp;=\unknown\theta-16=\unknown\theta
@@ -257,16 +257,16 @@ dx&amp;=\unknown\,d\theta
             </md>
             <md>
                 <mrow>
-\int\frac{7}{x\sqrt{9x^2-16}}\,dx &amp;=\int\frac{7}{\unknown\sqrt{\unknown}}\,(\unknown\,d\theta)
+\displaystyle \int\dfrac{7}{x\sqrt{9x^2-16}}\,dx &amp;=\int\dfrac{7}{\unknown\sqrt{\unknown}}\,(\unknown\,d\theta)
                 </mrow>
                 <mrow>
-&amp;= \int \unknown d\theta
+&amp;= \int \unknown\, d\theta
                 </mrow>
                 <mrow>
 &amp;= \unknown + C
                 </mrow>
                 <mrow>
-&amp;= \frac{7}{4}\arcsec(\frac{3}{4}x) + C
+&amp;= \frac{7}{4}\arcsec\left(\dfrac{3}{4}x\right) + C
                 </mrow>
             </md>
                 </p>
@@ -275,7 +275,7 @@ dx&amp;=\unknown\,d\theta
 
          <activity>
     <introduction>
-      <p> Use appropriate trignometric substitutions and the given trigonometric integrals to find each of the following. </p>
+      <p> Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following. </p>
     </introduction>
       <task>
         <statement>
@@ -366,6 +366,13 @@ dx&amp;=\unknown\,d\theta
 		</video>
         <caption>Video: Use trigonometric substitution to compute indefinite integrals</caption>
     </figure>
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/TI4/"/>
+        </p>
     </subsection>
         
         
