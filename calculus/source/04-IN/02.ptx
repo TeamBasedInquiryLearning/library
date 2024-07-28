@@ -235,7 +235,7 @@
         \node[above, font=\tiny] at (3.8, 0.85) {$(s_4, f(s_4))$};
         \node[above, font=\tiny] at (4.5, 0.35)  {$(s_5, f(s_5))$};
         \node[below, font=\tiny] at (6.0, -0.5)  {$(s_6, f(s_6))$};
-        \draw[thick, style=dashed, color=black] 
+        \draw[thick, style=dashed, color=blue] 
           (0, 0.8) .. controls (0.1, 0.9) and (0.1, 1.1) ..
           (0.2, 1.0) .. controls (1, 2) and (1, -1.0) ..
           (1.55, 1.75) .. controls (1.8, -0.42) and (2.1, 1.9) ..
@@ -397,10 +397,10 @@
                 ylabel=$y$,
                 xtick={3,4,...,10},
                 ytick={0,1,...,12},
-                legend pos=north west,
+                legend pos=north east,
               ]
                 \addplot[domain=3:11, smooth, thick, blue] {1/5*(x-4)*(x-10)*(x-12)};
-                \addlegendentry{{\small $f(x)=\frac{1}{5}(x-4)(x-10)(x-12)$}}
+                \addlegendentry{{\tiny $f(x)=\frac{1}{5}(x-4)(x-10)(x-12)$}}
               \end{axis}
             \end{tikzpicture}
           </latex-image>
