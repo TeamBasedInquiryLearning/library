@@ -48,6 +48,21 @@
             </task>
         </activity>
 
+        <fact>
+            <statement>
+                <p>
+                    Let <m>T:\IR^n\rightarrow\IR^m</m> be a linear transformation with standard matrix <m>A</m>.
+                    Let <m>W</m> be the image of <m>T</m>, that is, <m>W</m> is spanned by the columns of <m>A</m>.
+                    Then for any <m>\vec u</m> in <m>\IR^m</m>, the matrix equation 
+                    <me>
+                        A^TA\vec x=A^T\vec u
+                    </me>
+                    is consistent, and <m>\vec u_W=A\vec x</m> for any solution <m>\vec x</m>.
+                    
+                </p>
+            </statement>
+        </fact>
+
     </subsection>
 
 

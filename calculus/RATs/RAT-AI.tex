@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[utf8]{inputenc}
+\usepackage[paperwidth=8.5in, paperheight=11in, top=1in, bottom=.5in, left=.5in, right=.5in]{geometry}
+\usepackage{fancyhdr, graphicx,tikz}
+
+
+\pagestyle{fancy}
+\lhead{\large{\textbf{AI - Readiness Assurance Test}}}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+%\rfoot{\thepage/\pageref{LastPage} }
+
+\begin{document}
+
+
+
+
+\begin{enumerate}
+
+%Chain Rule
+%Product Rule
+%definite integral
+%indefinite integral
+%Trig derivative1
+%trig identity
+%sum of rational functions
+%limit to infinity
+%limit to 0
+
+  \item Suppose the velocity of a remote control car after $t$ seconds of driving is $v(t)=2+\sqrt{t}$ feet per second.  How far does it travel in 25 seconds?
+  \begin{enumerate}
+    \item 7 feet.
+    \item 50 feet.
+    %\item 112.5 feet.
+    \item 133.33 feet. %correct
+    \item 165 feet.
+  \end{enumerate}
+
+  
+  \item Letting $\Delta x=\frac{5}{n}$ what is $\displaystyle \lim_{n\to \infty} \sum_{i=1}^n \left(1+i\cdot \Delta x\right)^2\cdot\Delta x$.
+  \begin{enumerate}
+    \item $\displaystyle \int_0^5 x^2 dx$.
+    \item $\displaystyle \int_1^6 x^2 dx$.  %correct
+    %\item $\displaystyle \int_0^5 (1+x)^2 dx$.%same as b -- we do not want two different correct answers
+    \item $\displaystyle \int_1^5 (1+x)^2 dx$.    
+    \item $\displaystyle \int_1^6 (1+x)^2 dx$.
+  \end{enumerate}
+  
+  \item Which of these Riemann sums approximates $\int_0^2 f(x) dx$ with $\Delta x=\frac{1}{2}$?
+  \begin{enumerate}
+    %\item $\sum_{i=1}^4 f(i)$.
+    \item $\sum_{i=1}^4 f\left(\frac{1}{2}i\right)$. %correct
+    \item $\sum_{i=1}^4 f(2i)$.
+    \item $\sum_{i=1}^4 f\left(\frac{1}{2}\right)$.
+    \item $\sum_{i=1}^4 f(2)$.
+  \end{enumerate}
+  
+  \item Let $f(x)$ be a function. Which of these computes the distance between points $(1, f(1))$ and $(3, f(3))$?
+  \begin{enumerate}
+    \item $\sqrt{2^2+f(2)^2}$.
+    \item $\sqrt{3^2-1^2+f(3)^2-f(1)^2}$.
+    \item $\sqrt{(3^2-1^2)+(f(3)^2-f(1))^2}$.
+    \item $\sqrt{2^2+(f(3)-f(1))^2}$.%correct
+    %\item $\sqrt{2^2 + (f(3)-f(1))^2}$.
+    
+  \end{enumerate}
+  
+  \item What is the volume of a cylinder with height 5 inches and radius 2 inches?
+  \begin{enumerate}
+    \item $10$ in$^3$.
+    %\item $20$ in$^3$.
+    \item $50\pi$ in$^3$.
+    \item $5\pi$ in$^3$.
+    \item $20\pi$ in$^3$. %correct
+  \end{enumerate}
+  
+  \item What is the mass of a cylinder with height 5 inches and radius 2 inches and density 5 g/in$^3$?
+  \begin{enumerate}
+    \item $25\pi$ g.
+    %\item $100$ g.
+    \item $100\pi$ g. %correct
+    \item $50$ g.
+    \item $250\pi$ g.
+  \end{enumerate}
+  
+  
+  \newpage
+  
+  \item Suppose a string was cut into 100 segments and ordered by length.  Segment $i$ is $5/i$ inches long (So, 5, 2.5, 1.667 etc).  How long was the original string?
+  \begin{enumerate}
+    \item $\displaystyle \sum_{i=1}^{100} \frac{5}{i}$ inches.  %correct
+    %\item $\displaystyle \sum_{i=1}^5 \frac{5}{i}$ inches. 
+    \item $\displaystyle \sum_{i=1}^n \frac{5}{i}$ inches. 
+    \item 500 inches. 
+    \item 5 inches.
+  \end{enumerate}
+  
+  \item Suppose you had 10 rectangles labeled $1, 2, \ldots 10$.  A rectangle with label $i$ has width 2 inches and height $i$ inches.  What is the total area of these rectangles?
+  \begin{enumerate}
+    \item $\displaystyle \sum_{i=1}^{10} i$ in$^2$.  
+    \item $\displaystyle \sum_{i=1}^{10} 2i$ in$^2$. %correct
+    \item $\displaystyle \sum_{i=1}^{10} i^2$ in$^2$.
+    \item $\displaystyle \sum_{i=1}^{10} 2$ in$^2$.
+    %\item $\displaystyle \sum_{i=1}^{10} 10$ in$^2$.
+  \end{enumerate}
+
+
+  \item Consider two similar triangles $A$ and $B$.  $A$ has height 8 inches and base width 12 inches.  If $B$ has base width 3 inches, what is its height?
+  \begin{enumerate}
+    \item 2 inches. %correct
+    \item 32 inches.
+    \item $\frac{4}{3}$ inches.
+    \item $\frac{3}{4}$ inches.
+    %\item 5 inches.
+    %\item 8 inches.
+    %\item 12 inches.
+
+  \end{enumerate}
+  
+ % \item Recall that work (in N) moving an object of mass $m$ kg, over a distance of $d$ m, at acceleration a $m/s^2$ is computed $$W=Fd=mad.$$  How much work is it to lift a 10kg bucket of water up 20m at a constant rate of speed?  Use the gravitational acceleration constant $g=9.8\ m/s^2$.
+  %\begin{enumerate}
+   % \item $0$ N.
+   % \item $9.8$ N.
+   % \item $10$ N.
+   % \item $20$ N.
+   % \item $1960$.  %correct
+  %\end{enumerate}
+
+
+\item Recall that the pressure ($P$) asserted on a region of area $A$ is $$P=\frac{F}{A}$$ where $F$ is the force applied that region.  If 10 lb/in$^2$ of pressure is applied uniformly across a 5 in by 5 in square, how much force is applied?
+  \begin{enumerate}
+    \item $2.5$ lb.
+    \item $10$ lb.
+    %\item $25$ lb.
+    \item $50$ lb.      
+    \item $250$ lb. %correct
+ 
+  \end{enumerate}
+  
+  
+    
+\end{enumerate}
+
+
+\end{document}
