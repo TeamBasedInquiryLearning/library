@@ -372,12 +372,12 @@
 <activity xml:id="riemann-fluency-checkit">
     <statement>
         <p>
-Explain how to approximate the area under the curve
-<me>
-  f(x) = -\frac{1}{5} (x-4)(x-10)(x-12)
-</me> on the
-interval <m>[4,10]</m> using a right Riemann
-sum with 3 subintervals.
+          Explain how to approximate the area under the curve
+          <me>
+            f(x) = -\frac{1}{5} (x-4)(x-10)(x-12)
+          </me> on the
+          interval <m>[4,10]</m> using a right Riemann
+          sum with 3 subintervals.
         </p>
         <image>
           <description>The graph of the function <m>f(x) = -1/5 (x-4)(x-10)(x-12)</m>
@@ -386,27 +386,39 @@ sum with 3 subintervals.
         </description>
           <latex-image>
             \begin{tikzpicture}
-              \begin{axis}[axes=true,xmin=3,xmax=11,ymin=-1,ymax=12]
-                \addplot [domain=3:11] {1/5*(x-4)*(x-10)*(x-12)};
+              \begin{axis}[
+                axis lines=middle,
+                grid=both,
+                xmin=3,
+                xmax=11,
+                ymin=-1,
+                ymax=12,
+                xlabel=$x$,
+                ylabel=$y$,
+                xtick={3,4,...,10},
+                ytick={0,1,...,12},
+                legend pos=north west,
+              ]
+                \addplot[domain=3:11, smooth, thick, blue] {1/5*(x-4)*(x-10)*(x-12)};
+                \addlegendentry{{\small $f(x)=\frac{1}{5}(x-4)(x-10)(x-12)$}}
               \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
     </statement>
-<!--    <answer>
-        <p>
-            <m>-31014</m> square units
-        </p>
-    </answer>-->
-
-    </activity>    
+    <solution>
+      <p>
+        36.
+      </p>
+    </solution>
+  </activity>    
     
-    </subsection>
-    <subsection>
-        <title>Videos</title>
-        <figure>
-            <video xml:id="video-IN2" youtube="hUO4bHeiSuI"/>
-            <caption>Video for IN2</caption>
-        </figure>
-    </subsection>
+  </subsection>
+  <subsection>
+      <title>Videos</title>
+      <figure>
+          <video xml:id="video-IN2" youtube="hUO4bHeiSuI"/>
+          <caption>Video for IN2</caption>
+      </figure>
+  </subsection>
 </section>
