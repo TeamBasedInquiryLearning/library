@@ -46,38 +46,17 @@ class Generator(BaseGenerator):
 
 
     R.<z> = PolynomialRing(QQ)
-    count = choice([0..3])
-    xpoints = sample([-8..8],3)
+
+    level=choice([-10..-1,1..10])
+    xpoints=sample([-8..8],3)
     xpoints.sort()
-    ypoints = sample([-20..20],2)
-    ypoints.sort()
-    ypoints.append(choice([-20..(ypoints[1]-1)]))
+    points = [ (p,level) for p in xpoints]+[(xpoints[0]-choice([2..4]), level+choice([-1,1])*choice([3..5])) ]
+    g=R.lagrange_polynomial(points)
 
-    level=choice([-10..-1,1..7])
-    ypoints=sample([(level+1)..12],3)
-    ypoints.sort()
-    xpoints=[]
-    xpoints.append(choice([-8..-2]))
-    xpoints.append(choice([(xpoints[0]+2)..8]))
-    xpoints.append(choice([(xpoints[1]+2)..11]))
-    xpoints.append(choice([(xpoints[2]+2)..15]))
-
-    g_domain=(min(xpoints)-choice([3..5]),max(xpoints)+choice([2..5]))
-
-    L1=[(xpoints[0]-1,level),(xpoints[0]+1,level), (xpoints[1],ypoints[0])]
-    L2=[(xpoints[1],ypoints[1]),(xpoints[2],ypoints[2]), (xpoints[3],level) ]
-
-    g1=R.lagrange_polynomial(L1)
-    g2=R.lagrange_polynomial(L2)
+    g_domain = [xpoints[0]-5, xpoints[2]+3]
 
 
-    from sage.symbolic.integration.integral import indefinite_integral
-    g=indefinite_integral((z-xpoints[0])*(z-xpoints[1])*(z-xpoints[2]),z)
-    critical_points=xpoints+list(g_domain)
-    r=max([abs(g.subs({z:p})) for p in critical_points])
-    g=10/r*g+choice([-5,5])
 
-    #g=R.lagrange_polynomial(lagrange_points)
 
     xvalue=choice([-4..4])
 
@@ -87,19 +66,16 @@ class Generator(BaseGenerator):
       "tasks":tasks,
       "gname": gname,
       "g":g,
-      "g1":g1,
-      "g2":g2,
-      "cut":xpoints[1],
       "g_domain":g_domain,
       "xvalue":xvalue, 
       "gx":g.subs({z:xvalue}),
       "result":level,
-      "values": [ {x:i for i in [xpoints[0],xpoints[]]}]
+      "values": [{"x": i} for i in xpoints]
     } 
 
 
   @provide_data
   def graphics(data):
-    p=plot(data["g1"],data["g_domain"][0],data["cut"],thickness=3)+plot(data["g2"],data["cut"],data["g_domain"][1],thickness=3)
+    p=plot(data["g"],data["g_domain"][0],data["g_domain"][1],thickness=3)
     return {"plot": plot(p)}
       

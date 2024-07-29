@@ -23,9 +23,8 @@
     
     <knowl>
         <intro>
-            <p>
-               Let <m>{{gname}}(x)</m> be the function graphed below.
-                <image
+            <p> Let <m>{{gname}}(x)</m> be the function graphed below.</p>
+               <p> <image
                     source="assets/FN2/generated/{{__seed__}}/plot.png"
                     description="Plot"/>
             </p>
@@ -45,7 +44,9 @@
                 </p>
             </content>
             <outtro>
-                <p><m>{{gname}}({{value}})={{result}}</m></p>
+                <!--{{#values}}-->
+                <p><m>{{gname}}({{x}})={{result}}</m></p>
+                <!--{{/values}}-->
             </outtro>
         </knowl>
     </knowl>
