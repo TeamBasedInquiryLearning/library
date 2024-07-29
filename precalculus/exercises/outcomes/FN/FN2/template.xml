@@ -1,25 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
+    <knowl>
+        <intro>
+            <p>
+                Let <m>{{fname}}(x)={{f}}</m>
+            </p>
+        </intro>
+        <!--{{#tasks}}-->
+        <knowl>
+            <content>
+                <p>Find <m>{{fname}}({{value}})</m>.
+                </p>
+            </content>
+            <outtro>
+                <p><m>{{fname}}({{value}})={{result}}</m></p>
+            </outtro>
+        </knowl>
+        <!--{{/tasks}}-->
+    </knowl>
     
     
     <knowl>
-        <content>
-            <p>
-                Task 
+        <intro>
+            <p> Let <m>{{gname}}(x)</m> be the function graphed below.</p>
+               <p> <image
+                    source="assets/FN2/generated/{{__seed__}}/plot.png"
+                    description="Plot"/>
             </p>
-        </content>
-        <outtro>
-            <p>
-                Task answer
-            </p>
-        </outtro>
-        
+        </intro>
+        <knowl>
+            <content>
+                <p>Find <m>{{gname}}({{xvalue}})</m>.
+                </p>
+            </content>
+            <outtro>
+                <p><m>{{gname}}({{xvalue}})={{gx}}</m></p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>For which <m>x</m>-values in the interval <m>{{interval}}</m> does <m>{{gname}}(x)={{result}}</m>?
+                </p>
+            </content>
+            <outtro>
+                <!--{{#values}}-->
+                <p><m>{{gname}}({{x}})={{result}}</m></p>
+                <!--{{/values}}-->
+            </outtro>
+        </knowl>
     </knowl>
       
     
