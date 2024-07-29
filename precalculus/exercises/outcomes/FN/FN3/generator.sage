@@ -17,14 +17,6 @@ class Generator(BaseGenerator):
                                     (-1*a,choice([(graph["y_intercept"][1]+1)..13])),
                                     (c,choice([1..(graph["y_intercept"][1]-1)]))],
                           "type": ["min","max","min"]}
-      graph["cut_points"] = [graph["x_intercept"][1], (-2*a,graph["y_intercept"][1]), 
-                             graph["y_intercept"], (2*c,graph["y_intercept"][1])] 
-      graph["pieces"] = [R.lagrange_polynomial([graph["endpoints"][0],graph["extrema"]["points"][0],graph["cut_points"][0]]),
-                        R.lagrange_polynomial([graph["cut_points"][0], graph["cut_points"][1]]),
-                        R.lagrange_polynomial([graph["cut_points"][1],graph["extrema"]["points"][1],graph["cut_points"][2]]),
-                        R.lagrange_polynomial([graph["cut_points"][2],graph["extrema"]["points"][2],graph["cut_points"][3]]),
-                        R.lagrange_polynomial([graph["cut_points"][3], graph["endpoints"][1]])
-                        ]
 
       graph["decreasing"] = [ [graph["domain"][0],graph["extrema"]["points"][0][0]],
                               [graph["extrema"]["points"][1][0], graph["extrema"]["points"][2][0]]
@@ -32,6 +24,28 @@ class Generator(BaseGenerator):
       graph["increasing"] = [ [graph["extrema"]["points"][0][0], graph["extrema"]["points"][1][0]],
                               [graph["extrema"]["points"][2][0], graph["domain"][1]]
                             ]
+
+      #Flip vertically sometimes
+      flip_vertically = choice([True,False])
+      if flip_vertically:
+        graph["y_intercept"]=(graph["y_intercept"][0],-1*graph["y_intercept"][1])
+        graph["endpoints"][1] = (graph["endpoints"][1][0], -1*graph["endpoints"][1][1])
+        for i in range(0,2):
+          graph["extrema"]["points"][i]=(graph["extrema"]["points"][i][0], -1*graph["extrema"]["points"][i][1])
+        graph["extrema"]["type"]=["max","min","max"] 
+        graph["increasing"],graph["decreasing"]=graph["decreasing"],graph["increasing"]
+
+
+      graph["cut_points"] = [graph["x_intercept"][1], (-2*a,graph["y_intercept"][1]), 
+                             graph["y_intercept"], (2*c,graph["y_intercept"][1])] 
+
+      graph["pieces"] = [R.lagrange_polynomial([graph["endpoints"][0],graph["extrema"]["points"][0],graph["cut_points"][0]]),
+                        R.lagrange_polynomial([graph["cut_points"][0], graph["cut_points"][1]]),
+                        R.lagrange_polynomial([graph["cut_points"][1],graph["extrema"]["points"][1],graph["cut_points"][2]]),
+                        R.lagrange_polynomial([graph["cut_points"][2],graph["extrema"]["points"][2],graph["cut_points"][3]]),
+                        R.lagrange_polynomial([graph["cut_points"][3], graph["endpoints"][1]])
+                        ]
+
       graph["plot_pieces"] = [plot(graph["pieces"][0],xmin=graph["domain"][0],xmax=graph["cut_points"][0][0],thickness=3),
                               plot(graph["pieces"][1],xmin=graph["cut_points"][0][0],xmax=graph["cut_points"][1][0],thickness=3),
                               plot(graph["pieces"][2],xmin=graph["cut_points"][1][0],xmax=graph["cut_points"][2][0],thickness=3),
@@ -40,23 +54,24 @@ class Generator(BaseGenerator):
                             ]
 
       extreme_point_possibilities = [ graph["pieces"][0].subs({x:graph["domain"][0]}), graph["pieces"][4].subs({x:graph["domain"][1]})] + [ p[1] for p in graph["extrema"]["points"] ]
-      #It will be hard to ensure these are integers.  If min on right is at (c,d), intercept must be
-      # at a multiple of c^2+d to ensure the poly for that piece has integer coefficients
       graph["range"] = [ min(extreme_point_possibilities), max(extreme_point_possibilities)]
+
 
       graph["features"] =  [
         {"feature": "has domain", "result": f'[{",".join(str(i) for i in graph["domain"])}]'},
         {"feature": "has a y-intercept at", "result": graph["y_intercept"]},
-        {"feature": "has an x-intercepts at", "result": graph["x_intercept"]},
-        {"feature": f'''has a local {graph["extrema"]["type"][0]} at <m>{graph["extrema"]["points"][0]}</m>, 
-                            a local {graph["extrema"]["type"][1]} at <m>{graph["extrema"]["points"][1]}</m>,
-                        and a local {graph["extrema"]["type"][2]} at <m>{graph["extrema"]["points"][2]}</m>'''}, 
+        {"feature": "has a x-intercepts at", "result": graph["x_intercept"]}
+        ] + [
+          {"feature": f'has a local {graph["extrema"]["type"][i]} at ', "result":graph["extrema"]["points"][i]} for i in range(0,3)
+        ] + [
         #{"feature": "has a local "+extreme+" at", "result": vector(P[2])},
         #{"feature": "has domain", "result": str(domain[0])+r"\leq x \leq"+str(domain[1])},
         {"feature": "is increasing on ", "result": "\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graph["increasing"]]) }
-         ]
+        ] 
 
     graphs[1]["features"].insert(1,{"feature": "has range", "result": f'({",".join(str(d) for d in graphs[1]["range"])})'})
+    graphs[1]["features"].insert(7,{"feature": "has global maximum of ", "result": graphs[1]["range"][1]})
+    graphs[1]["features"].insert(8,{"feature": "has global minimum of ", "result": graphs[1]["range"][0]})
       
     return {
 #        "expr": expr,
