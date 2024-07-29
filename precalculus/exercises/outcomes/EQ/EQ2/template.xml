@@ -248,12 +248,33 @@ total interest. How much money was loaned at each rate?
     <!-- {{#scenarioC}} -->
     <content>
         <p>
-A hamburger blend is made from {{part1}} Ground Chuck that is {{chuckfat}} fat and 
-{{percent2}} brisket that is {{brisketfat}}. What is the fat percentage of the hamburger
- blend?
+A hamburger blend is made using <m>{{part1}}\%</m> ground {{meat1}} that has 
+<m>{{percent1}}\%</m> fat content, and <m>{{part2}}\%</m> ground {{meat2}} 
+that has <m>{{percent2}}\%</m> fat content.
+What is the fat percentage of the hamburger blend?
         </p>
     </content>
+    <outtro>
+        <p>
+<m>{{mixpercent}}\%</m> fat.
+        </p>
+    </outtro>
     <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} -->
+    <content>
+        <p>
+A juice cocktail mixes <m>{{part1}}\%</m> {{juice1}} with
+<m>{{part2}}\%</m> {{juice2}}. If {{juice1}} contains <m>{{percent1}}\%</m>
+sugar, and {{juice2}} contains <m>{{percent2}}\%</m> sugar, what percentage
+of the juice cocktail is sugar?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{mixpercent}}\%</m> sugar.
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
     <!-- {{/mixture_percent}} -->
 </knowl>
 
