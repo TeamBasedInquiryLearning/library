@@ -69,11 +69,13 @@
         </p> -->
 
         <observation>
+            <p>
         When the image of a linear transformation is one-dimensional, then its standard matrix <m>A</m> only has one column <m>\vec v</m>,
         and for any vector <m>\vec u</m>,
         <me>
             \vec u_W=\dfrac{\vec u\cdot \vec v}{\vec v\cdot \vec v}\vec v.
         </me>
+            </p>
         </observation>
 
     </subsection>
