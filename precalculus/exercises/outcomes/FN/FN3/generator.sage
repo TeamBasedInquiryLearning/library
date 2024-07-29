@@ -64,8 +64,6 @@ class Generator(BaseGenerator):
         ] + [
           {"feature": f'has a local {graph["extrema"]["type"][i]} at ', "result":graph["extrema"]["points"][i]} for i in range(0,3)
         ] + [
-        #{"feature": "has a local "+extreme+" at", "result": vector(P[2])},
-        #{"feature": "has domain", "result": str(domain[0])+r"\leq x \leq"+str(domain[1])},
         {"feature": "is increasing on ", "result": "\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graph["increasing"]]) }
         ] 
 
@@ -74,9 +72,6 @@ class Generator(BaseGenerator):
     graphs[1]["features"].insert(8,{"feature": "has global minimum of ", "result": graphs[1]["range"][0]})
       
     return {
-#        "expr": expr,
-#        "domain": domain,
-#        "points": [tuple(P[i]) for i in range(3)],
         "features1": graphs[0]["features"],
         "features2": graphs[1]["features"],
         "graphs": graphs
@@ -88,6 +83,5 @@ class Generator(BaseGenerator):
       return {
           "graph1": plot(sum(data["graphs"][0]["plot_pieces"])),
           "graph2": plot(sum(data["graphs"][1]["plot_pieces"])),
-          #"graph2": plot(sum(graphs[1]["plot_pieces"])),
           }
 
