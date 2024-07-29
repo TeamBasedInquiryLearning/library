@@ -3,24 +3,80 @@
     
     <intro>
         <p>
-            Question
+            Graph each line.
         </p>
     </intro>
     
-    
+    <!-- Task 1 chooses randomly from the following 3 situations; I've made each a different paragraph. Ensure none produce a horizontal or vertical line. -->
     <knowl>
         <content>
             <p>
-                Task 
+                The line containing the points <m>{{point1}}</m> and <m>{{point2}}</m>. 
+            </p>
+            <p>
+                The line containing the point <m>{{point3}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept1}}</m>. 
+                <!-- make this intercept a scalar, not a point -->
+            </p>
+            <p>
+                The line whose <m>x</m>-intercept is <m>{{intercept2}}</m> and whose <m>y</m>-intercept is <m>{{intercept3}}</m>.  
+                <!-- make the intercepts scalars, not  points, can vary which order the x and y are given -->
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                graph goes here. If a point was mentioned, dot it in.
             </p>
         </outtro>
         
     </knowl>
-      
+
+    <!-- Task 2 chooses randomly from the following 2 situations; I've made each a different paragraph. Ensure none produce a horizontal or vertical line. -->
+    <knowl>
+        <content>
+            <p>
+                The line whose slope is <m>{{slope1}}</m> that goes through the point <m>{{point4}}</m>. 
+            </p>
+            <p>
+                The line whose slope is <m>{{slope2}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept4}}</m>.
+                <!-- make int_type opposite of the one that may have popped up in task 1 -->
+            </p>
+        </content>
+        <outtro>
+            <p>
+                graph goes here. If a point was mentioned, dot it in.
+            </p>
+        </outtro>
+        
+    </knowl>
+
+    <!-- Task 3  randomly chooses a horizontal or vertical line. This is the only task with a horizontal or vertical line! Ensure the line is not an axis. -->
+    <knowl>
+        <content>
+            <p>
+                The line <m>{{x_or_y}}={{value}}</m>. 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                graph goes here. 
+            </p>
+        </outtro>
     
-</knowl>
+        </knowl>
+
+        <!-- Task 4  randomly chooses an equation in slope-intercept, point-slope, or standard form.  -->
+        <knowl>
+            <content>
+                <p>
+                    The line whose equation is <m>{{equation}}</m>. 
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    graph goes here. 
+                </p>
+            </outtro>
+
+        </knowl>
+
+    </knowl>
