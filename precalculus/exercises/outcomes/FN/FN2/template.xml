@@ -41,11 +41,11 @@
         </knowl>
         <knowl>
             <content>
-                <p>For which <m>x</m>-values in the interval <m>{{interval}}</m> does <m>{{fname}}(x)={{result}}</m>?
+                <p>For which <m>x</m>-values in the interval <m>{{interval}}</m> does <m>{{gname}}(x)={{result}}</m>?
                 </p>
             </content>
             <outtro>
-                <p><m>{{fname}}({{value}})={{result}}</m></p>
+                <p><m>{{gname}}({{value}})={{result}}</m></p>
             </outtro>
         </knowl>
     </knowl>
