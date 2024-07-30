@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="TI5" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Tables of Integrals (TI5)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/05.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+        <activity estimated-time="99" xml:id="activity-TI5BestSub">
+        <introduction><p>Consider the integral <m>\displaystyle\int \sqrt{16-9x^2} \,dx</m>. Which of the following substitutions appears most promising to find an antiderivative for this integral?</p></introduction>
+            <ol marker="A." cols="2">
+                <li><p><m>u=16-9x^2</m></p></li>
+                <li><p><m>u=9x^2</m></p></li>
+                <li><p><m>u=3x</m></p></li>
+                <li><p><m>u=x</m></p></li>
+            </ol>
+    </activity>
+        <activity estimated-time="99" xml:id="activity-TI5BestMatch">
+        <introduction><p>The form of which entry from <xref ref="integral-table"/> best matches the form of the integral <m>\displaystyle\int \sqrt{16-9x^2} \,dx</m>?</p></introduction>
+            <ol marker="A." cols="4">
+                <li><p>b.</p></li>
+                <li><p>c.</p></li>
+                <li><p>g.</p></li>
+                <li><p>h.</p></li>
+            </ol>
+    </activity>
+        <activity estimated-time="99" xml:id="activity-TI5BestMatchSeries">
+        <introduction><p>For each of the following integrals, identify which entry from <xref ref="integral-table"/> best matches the form of that integral.</p></introduction>
+            <task>
+                <p><m>\displaystyle\int \frac{25x^2}{\sqrt{25x^2-9}} \,dx</m></p>
+            </task>
+            <task>
+                <p><m>\displaystyle\int \frac{81x^2}{\sqrt{16-x^2}} \,dx</m></p>
+            </task>
+            <task>
+                <p><m>\displaystyle\int \frac{1}{10x \sqrt{100-x^2}} \,dx</m></p>
+            </task>
+            <task>
+                <p><m>\displaystyle\int \frac{7}{\sqrt{25x^2-9}} \,dx</m></p>
+            </task>
+            <task>
+                <p><m>\displaystyle\int \frac{1}{\sqrt{25x^2+16}} \,dx</m></p>
+            </task>
+    </activity>
+    
+    <example>
+    <statement>
+            <p>Here is how one might write out the explanation of how to find <m>\displaystyle\int \frac{3}{x\sqrt{49x^2-4}} \,dx</m> from start to finish:
+            </p>
+            <md>
+                <mrow>
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;&amp;\text{Let }&amp;u^2=49x^2
+                </mrow>
+                <mrow>
+&amp;&amp;\text{Let }&amp;a^2=4                
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; u = 7x
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \,du = 7\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; \frac{1}{7}\,du = \,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp; a = 2
+                </mrow>
+                <mrow>
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;= 3\int \frac{1}{x\sqrt{49x^2-4}} (\,dx)
+                </mrow>
+                <mrow>
+&amp;= 3\int \frac{1}{\frac{u}{7}\sqrt{u^2-a^2}} \bigg(\frac{1}{7}\,du\bigg)
+                </mrow>
+                <mrow>
+&amp;= 3\int \frac{1}{u\sqrt{u^2-a^2}} \,du &amp; \text{which best matches f.}
+                </mrow>
+                <mrow>
+&amp;= 3\bigg(\frac{1}{a}\arcsec \bigg(\frac{u}{a}\bigg)\bigg)+C
+                </mrow>
+                <mrow>
+&amp;= \frac{3}{2}\arcsec \bigg(\frac{7x}{2}\bigg)+C
+                </mrow>
+            </md>
+        </statement>
+    </example>
+    <activity estimated-time="99">
+        <statement>
+            <p>Which step of the previous example do you think was the most important?</p>
+            <ol marker="A.">
+                <li>
+                    <p>Choosing <m>u^2=49x^2</m> and <m>a^2=4</m>.</p>
+                </li>
+                <li>
+                    <p>Finding <m>u=7x</m>, <m>du=7\,dx</m>, <m>\displaystyle\frac{1}{7}\,du=\,dx</m>, and <m>a=2</m>.</p>
+                </li>
+                <li>
+                    <p>Substituting <m>\displaystyle \frac{3}{x\sqrt{49x^2-4}} \,dx</m> with <m>\displaystyle3\int \frac{1}{u\sqrt{u^2-a^2}} \,du</m> and finding the best match of f from <xref ref="integral-table"/>.</p>
+                </li>
+                <li>
+                    <p>Integrating <m>\displaystyle 3\int \dfrac{1}{u\sqrt{u^2-a^2}} \,du=3\left(\frac{1}{a}\arcsec\left(\dfrac{u}{a}\right)\right)+C</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>Unsubstituting <m>\displaystyle 3\left(\frac{1}{a}\arcsec\left(\frac{u}{a}\right)\right)+C</m> to get <m>\dfrac{3}{2}\arcsec\left(\dfrac{7x}{2}\right)+C</m>.</p>
+                </li>
+            </ol>
+        </statement>
+    </activity>
+    
+    <activity estimated-time="99" xml:id="activity-TI5BadSubChoice">
+        <introduction>
+            <p>Consider the integral <m>\displaystyle\int \frac{1}{\sqrt{64-9x^2}} \,dx</m>. Suppose we proceed using <xref ref="integral-table"/>. We choose <m>u^2=9x^2</m> and <m>a^2=64</m>.</p>
+        </introduction>
+        <task>
+            <p>What is <m>u</m>?</p>
+        </task>
+        <task>
+            <p>What is <m>du</m>?</p>
+        </task>
+        <task>
+            <p>What is <m>a</m>?</p>
+        </task>
+        <task>
+            <p>What do you get when plugging these pieces into the integral <m>\displaystyle\int \frac{1}{\sqrt{64-9x^2}} \,dx</m>?</p>
+        </task>
+        <task>
+            <p>Is this a good substitution choice or a bad substitution choice?</p>
+        </task>
+    </activity>
+    <activity estimated-time="99" xml:id="activity-TI5BetterSubChoice">
+        <statement>
+            <p>Consider the integral <m>\displaystyle\int \frac{1}{\sqrt{64-9x^2}} \,dx</m> once more. Suppose we still proceed using <xref ref="integral-table"/>. However, this time we choose <m>u^2=x^2</m> and <m>a^2=64</m>. Do you prefer this choice of substitution or the choice we made in <xref ref="activity-TI5BadSubChoice"/>?</p>
+            <ol marker="A.">
+                <li><p>We prefer the substitution choice of <m>u^2=x^2</m> and <m>a^2=64</m>.</p></li>
+                <li><p>We prefer the substitution choice of <m>u^2=9x^2</m> and <m>a^2=64</m>.</p></li>
+                <li><p>We do not have a strong preference, since these substitution choices are of the same difficulty.</p></li>
+            </ol>
+        </statement>
+    </activity>
+    <activity estimated-time="99" xml:id="activity-TI5matchE">
+        <statement>
+            <p>Use the appropriate substitution and entry from <xref ref="integral-table"/> to show that <m>\displaystyle\int \frac{7}{x\sqrt{4+49x^2}} \,dx=-\frac{7}{2}\ln\left|\frac{2+\sqrt{49x^2+4}}{7x}\right|+C</m>.</p>
+        </statement>
+    </activity>
+        <activity estimated-time="99" xml:id="activity-TI5matchK">
+        <statement>
+            <p>Use the appropriate substitution and entry from <xref ref="integral-table"/> to show that <m>\displaystyle\int \frac{3}{5x^2\sqrt{36-49x^2}} \,dx=-\frac{\sqrt{36-49x^2}}{60x}+C</m>.</p>
+        </statement>
+    </activity>
+    <activity estimated-time="99" xml:id="activity-TI5matchC">
+        <statement>
+            <p>Evaluate the integral <m>\displaystyle\int 8\sqrt{4x^2-81} \,dx</m>. Be sure to specify which entry is used from <xref ref="integral-table"/> at the corresponding step.</p>
+        </statement>
+    </activity>
+    
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI5" youtube="r8KqUVrHsdQ">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: I can integrate functions using a table of integrals</caption>
+    </figure>
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/TI5/"/>
+        </p>
+    </subsection>
+    
+    
+    <!-- <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI5.slides.html"/>.</p>
+    </subsection> -->
+    
+</section>

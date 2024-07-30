@@ -1,0 +1,882 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="FN3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Characteristics of a Function's Graph (FN3) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/03.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+
+    <remark>
+      In this section, we will be looking at different kinds of graphs and will identify various characteristics. These ideas can span all kinds of functions, so you will see these come up multiple times!
+    </remark>
+
+    <definition xml:id="def-x-and-y-intercepts">
+      <statement>
+        <p>
+          One of the easiest things to identify from a graph are the <term>intercepts</term>, which are points at which the graph crosses the axes. 
+          An <term><m>x</m>-intercept</term> is a point at which the graph crosses the <m>x</m>-axis and a <term><m>y</m>-intercept</term> is a point at which the graph crosses the <m>y</m>-axis. Because intercepts are points, they are typically written as an ordered pair: <m>(x,y)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="identify-intercepts-from-graph">
+      <introduction>
+        <p>
+          Use the following graphs to answer the questions.
+        </p>
+              <sidebyside width="50%">
+                <image>
+                  <sageplot>
+                    f(x) = -1/2*x-2
+                    p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3) 
+                    p+=text('f(x)', (4,-2), fontsize=18, color='black')
+                    p
+                  </sageplot>
+                </image>
+                <image>
+                  <sageplot>
+                    f(x) = (x+1)*(x-3)
+                    p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3)
+                    p+=text('g(x)', (4, 1), fontsize=18, color='black')
+                    p
+                  </sageplot>
+                </image>
+            </sidebyside>
+      </introduction>
+      <task>
+        <statement>
+        <p> What are the <m>x</m>-intercept(s) of <m>f(x)</m>? 
+          <ol marker= "A." cols="2">
+            <li> <m>(0, -4)</m> </li>
+            <li> <m>(-2, 0)</m> </li>
+            <li> <m>(-4, 0)</m> </li>
+            <li> <m>(0, -2)</m> </li></ol></p>
+          </statement>
+            <answer>
+              <p>
+                C
+              </p>
+            </answer>
+        </task>
+        <task>
+          <statement>
+          <p> What are the <m>x</m>-intercept(s) of <m>g(x)</m>? 
+            <ol marker= "A." cols="2">
+              <li> <m>(0, -3)</m> </li>
+              <li> <m>(-1, 0)</m> </li>
+              <li> <m>(3, 0)</m> </li>
+              <li> <m>(-3, 0)</m> </li></ol></p>
+            </statement>
+              <answer>
+                <p>
+                  B and C
+                </p>
+              </answer>
+          </task>
+          <task>
+            <statement>
+            <p> What are the <m>y</m>-intercept(s) of <m>f(x)</m>? 
+              <ol marker= "A." cols="2">
+                <li> <m>(0, -4)</m> </li>
+                <li> <m>(-2, 0)</m> </li>
+                <li> <m>(-4, 0)</m> </li>
+                <li> <m>(0, -2)</m> </li></ol></p>
+              </statement>
+                <answer>
+                  <p>
+                    D
+                  </p>
+                </answer>
+            </task>
+            <task>
+              <statement>
+              <p> What are the <m>y</m>-intercept(s) of <m>g(x)</m>? 
+                <ol marker= "A." cols="2">
+                  <li> <m>(0, -3)</m> </li>
+              <li> <m>(-1, 0)</m> </li>
+              <li> <m>(3, 0)</m> </li>
+              <li> <m>(-3, 0)</m> </li></ol></p>
+                </statement>
+              <answer>
+                <p>
+                  A
+                </p>
+              </answer>
+              </task>
+              <task>
+                <statement>
+                  <p>
+                    Sketch a graph of a function with the following intercepts: 
+                   <ul>
+                    <li>
+                        <m>x</m>-intercepts: <m>(-2,0)</m> and <m>(6,0)</m>
+                    </li>
+                    <li>
+                      <m>y</m>-intercept: <m>(0,4)</m>
+                  </li>
+                   </ul> 
+                  </p>
+                </statement>
+                  <answer>
+                    <p>
+                      Answers will vary. Students should make sure that their sketch is a function.
+                    </p>
+                  </answer>
+              </task>
+              <task>
+                <statement>
+                  <p>
+                    Sketch a graph of a function with the following intercepts: 
+                   <ul>
+                    <li>
+                        <m>x</m>-intercept: <m>(-1,0)</m>
+                    </li>
+                    <li>
+                      <m>y</m>-intercept: <m>(0,6)</m> and <m>(0,-2)</m>
+                  </li>
+                   </ul> 
+                  </p>
+                </statement>
+                  <answer>
+                    <p>
+                      You could draw a variety of graphs, but they would not be functions.
+                    </p>
+                  </answer>
+              </task>
+    </activity>
+
+    <remark>
+      Notice in <xref ref="identify-intercepts-from-graph"/>, that a function can have multiple <m>x</m>-intercepts, but only one <m>y</m>-intercept. Having more than one <m>y</m>-intercept would create a graph that is not a function!
+    </remark>
+
+    <definition xml:id="def-domain-and-range-of-graphs">
+      <statement>
+        <p>
+          The <term>domain</term> refers to the set of possible input values and the <term>range</term> refers to the set of possible output values. If given a graph, however, it would be impossible to list out all the values for the domain and range so we use interval notation to represent the set of values.
+        </p>
+      </statement>
+
+      <aside>
+        <p>Recall that the terms <term>domain</term> and <term>range</term> were first introduced in <xref ref="def-relation"/>.</p>
+      </aside>
+    </definition>
+
+    <activity xml:id="find-domain-and-range-from-graph">
+      <introduction>
+        <p>
+          Use the following graph to answer the questions below.
+        </p>
+        <figure xml:id="graph-of-line-segment">
+          <image>
+            <sageplot>
+              f(x) = 9/8*(x-4)+4
+              p=plot(f, (x, -4, 4), ymin=-7, ymax=7, xmin=-5,xmax=5,color='blue', thickness=3,gridlines=[[-8..8],[-8..8]])
+              p+=point((4,4),pointsize=75,color='blue')
+              p+=point((-4,-5),pointsize=75,color='blue')
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Draw on the <m>x</m>-axis all the values in the domain.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students should shade all values of <m>x</m> from <m>-4</m> to <m>4</m>. The intent here is to help students visualize that the domain consists of more than <m>x</m>-values that are integers.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What interval represents the domain you drew in part (a)?
+            <ol marker= "A." cols="2">
+              <li> <m>[4, -4]</m> </li>
+              <li> <m>[-4, 4]</m> </li>
+              <li> <m>(-4, 4)</m> </li>
+              <li> <m>(4, -4)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Draw on the <m>y</m>-axis all the values in the range.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students should shade all values of <m>y</m> from <m>-5</m> to <m>4</m>. The intent here is to help students visualize that the range consists of more than <m>y</m>-values that are integers.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What interval represents the range you drew in part (c)?
+            <ol marker= "A." cols="2">
+              <li> <m>(-5, 4)</m> </li>
+              <li> <m>[-4, 4]</m> </li>
+              <li> <m>[-5, 4]</m> </li>
+              <li> <m>(4, -5)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
+    
+    <activity xml:id="domain-and-range-of-ray">
+      <introduction>
+        <p>
+          Use the following graph to answer the questions below.
+        </p>
+        <figure xml:id="graph-of-ray">
+          <image>
+            <sageplot>
+              p=arrow((0,4), (9,-2),xmin=-2,xmax=9,ymin=-5,ymax=6, gridlines=[[-8..8],[-8..8]])
+              p+=point((0,4),pointsize=75,color='blue')
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the domain of this graph?
+            <ol marker= "A." cols="2">
+              <li> <m>[4, \infty)</m> </li>
+              <li> <m>(-\infty, 0]</m> </li>
+              <li> <m>(-\infty, 4]</m> </li>
+              <li> <m>[0, \infty)</m> </li></ol></p>
+        </statement>
+        <answer>
+                <p>
+                  D
+                </p>
+              </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the range of this graph?
+            <ol marker= "A." cols="2">
+              <li> <m>[4, \infty)</m> </li>
+              <li> <m>(-\infty, 0]</m> </li>
+              <li> <m>(-\infty, 4]</m> </li>
+              <li> <m>[0, \infty)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      When writing your intervals for domain and range, notice that you will need to write them from the smallest values to the highest values. For example, we wouldn't write <m>[4,-\infty)</m> as an interval because <m>-\infty</m> is smaller than <m>4</m>.
+      <p>
+        For domain, read the graph from left to right. For range, read the graph from bottom to top.
+      </p>
+    </remark>
+
+    <activity xml:id="domain-and-range-practice-ray-with-open-endpoint">
+      <introduction>
+        <p>
+          Use the following graph to answer the questions below.
+        </p>
+        <figure xml:id="graph-of-ray-with-open-endpoint">
+            <image>
+            <sageplot>
+              p=arrow((3,-4), (-4,8),xmin=-6,xmax=5,ymin=-6,ymax=8, gridlines=[[-8..8],[-8..8]])
+              p+=point((3,-4), pointsize=75, markeredgecolor='blue',color='white',zorder=2)
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the domain of this graph?
+            <ol marker= "A." cols="2">
+              <li> <m>(-\infty, 3)</m> </li>
+              <li> <m>(\infty, -4]</m> </li>
+              <li> <m>(-4, \infty)</m> </li>
+              <li> <m>(-\infty, 3]</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the range of this graph?
+            <ol marker= "A." cols="2">
+              <li> <m>(-\infty, 3)</m> </li>
+              <li> <m>(\infty, -4]</m> </li>
+              <li> <m>(-4, \infty)</m> </li>
+              <li> <m>(-\infty, 3]</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity> 
+    
+    <activity xml:id="domain-and-range-of-nonlinear-function">
+      <introduction>
+        <p>
+          Use the following graph to answer the questions below.
+        </p>
+        <figure xml:id="graph-of-nonlinear-function">
+            <image>
+            <sageplot>
+              p=line([(5,-1), (4,-5)],thickness=3,xmin=-6,xmax=8,ymin=-6,ymax=8, gridlines=[[-8..8],[-8..8]])
+              p+=line([(4,-5),(-1,6)],thickness=3)
+              p+=line([(-1,6),(-3,1)],thickness=3)
+
+              p+=point((-3,1),pointsize=75,color='blue')
+              p+=point((5,-1),pointsize=75,markeredgecolor='blue',color='white',zorder=2)
+
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the domain of this graph?
+            <ol marker= "A." cols="2">
+              <li> <m>(-3, 5)</m> </li>
+              <li> <m>(-5, 7)</m> </li>
+              <li> <m>[-5, 7]</m> </li>
+              <li> <m>[-3,5)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the range of this graph?
+            <ol marker= "A." cols="2">
+              <li> <m>(-3, 5)</m> </li>
+              <li> <m>(-5, 6)</m> </li>
+              <li> <m>[-5, 6]</m> </li>
+              <li> <m>[-3,5)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      Notice that finding the domain and range can be tricky! Be sure to pay attention to the <m>x</m>- and <m>y</m>-values of the entire graph - not just the endpoints!
+    </remark>
+
+    <activity xml:id="finding-intervals-of-increase-and-decrease">
+      <introduction>
+        <p>
+          In this activity, we will look at where the function is increasing and decreasing. Use the following graph to answer the questions below.
+        </p>
+          <image>
+            <sageplot>
+              f(x) = (-x^2-2*x+3)
+              p=plot(f, (x, -4, 2),  ymin=-1, ymax=5, color='blue', thickness=3, gridlines=[[-8..8],[-8..8]])
+            </sageplot>
+          </image>
+      </introduction>
+      <task>
+        <statement>
+        <p>
+          Where do you think the graph is increasing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The function is increasing from <m>(-\infty, -1)</m>. Instructors can emphasize this by having students think about where the function is "going up." It may be helpful to also note that the function is no longer "going up" once you get to the "top". This could help students think about how to write their answer in interval notation (with parentheses and not brackets).
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Which interval best represents where the function is increasing?
+            <ol marker= "A." cols="2">
+              <li> <m>(-\infty, -1]</m> </li>
+              <li> <m>(-\infty, -1)</m> </li>
+              <li> <m>(-1,\infty)</m> </li>
+              <li> <m>[-1,\infty)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p>
+        Where do you think the graph is decreasing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The function is decreasing from <m>(-1, \infty)</m>. Instructors can emphasize this by having students think about where the function is "going down." It may be helpful to also note that the function is no longer "going down" once you get to the "bottom". In this case, the "bottom" does not exist...This might be a good opportunity to discuss with students how to address this when writing the range in interval notation.
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Which interval best represents where the function is decreasing?
+            <ol marker= "A." cols="2">
+              <li> <m>(-\infty, -1]</m> </li>
+              <li> <m>(-\infty, -1)</m> </li>
+              <li> <m>(-1,\infty)</m> </li>
+              <li> <m>[-1,\infty)</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+      <p>
+        Based on what you see on the graph, do you think this graph has any maxima or minima?
+        </p>
+        </statement>
+        <answer>
+          <p>
+            The intent here is for students to visually see there that the graph reaches a high point (i.e., the maximum). To extend this thinking, instructors could also ask students to draw a sketch (or discuss) when a graph would have a minimum.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <definition xml:id="def-intervals-of-increase-and-decrease-and-constant">
+      <statement>
+        <p>
+          As you noticed in <xref ref="finding-intervals-of-increase-and-decrease"/>, functions can increase or decrease (or even remain constant!) for a period of time. The <term>interval of increase</term> is when the <m>y</m>-values of the function increase as the <m>x</m>-values increase. The <term>interval of decrease</term> is when the <m>y</m>-values of the function decrease as the <m>x</m>-values increase. The function is constant when the <m>y</m>-values remain constant as <m>x</m>-values increase (also known as the <term>constant interval</term>).
+        </p>
+        <p>
+          The easiest way to identify these intervals is to read the graph from left to right and look at what is happening to the <m>y</m>-values.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-max-and-min">
+      <statement>
+        <p>
+          The <term>maximum</term>, or <term>global maximum</term>, of a graph is the point where the <m>y</m>-coordinate has the largest value. The <term>minimum</term>, or <term>global minimum</term> is the point on the graph where the <m>y</m>-coordinate has the smallest value.
+        </p>
+        <p>
+          Graphs can also have <term>local maximums</term> and <term>local minimums</term>. A local maximum point is a point where the function value (i.e, <m>y</m>-value) is larger than all others in some neighborhood around the point. Similarly, a local minimum point is a point where the function value (i.e, <m>y</m>-value) is smaller than all others in some neighborhood around the point.
+        </p>
+      </statement>
+    </definition>
+
+    <remark xml:id="difference-in-max-min-terminology">
+      <p>
+        Global extrema are sometimes referred to as absolute extrema, while local extrema are sometimes referred to as relative extrema. 
+      </p>
+    </remark>
+
+    <activity xml:id="distinguish-between-max-and-min">
+      <introduction>
+        <p>
+          Use the following graph to answer the questions below.
+        </p>
+        <figure xml:id="graph-with-max-and-min-values">
+            <image>
+            <sageplot>
+              p=plot(spline([(-4,4),(-2,7),(2,-4),(5,10)]),(x,-4,5),thickness=3, gridlines=[[-8..11],[-8..11]])
+              p+=point((-4,4),pointsize=50,color='blue',xmin=-7,xmax=8,ymin=-5,ymax=10)
+              p+=point((5,10),pointsize=50,color='blue')
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            At what value of <m>x</m> is there a global maximum?
+            <ol marker= "A." cols="2">
+              <li> <m>x=-4</m> </li>
+              <li> <m>x=-2</m> </li>
+              <li> <m>x=2</m> </li>
+              <li> <m>x=5</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the global maximum value?
+            <ol marker= "A." cols="2">
+              <li> <m>10</m> </li>
+              <li> <m>7</m> </li>
+              <li> <m>4</m> </li>
+              <li> <m>-4</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            At what value of <m>x</m> is there a global minimum?
+            <ol marker= "A." cols="2">
+              <li> <m>x=-4</m> </li>
+              <li> <m>x=-2</m> </li>
+              <li> <m>x=2</m> </li>
+              <li> <m>x=5</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the global minimum value?
+            <ol marker= "A." cols="2">
+              <li> <m>10</m> </li>
+              <li> <m>7</m> </li>
+              <li> <m>4</m> </li>
+              <li> <m>-4</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            At approximately what value of <m>x</m> is there a local maximum?
+            <ol marker= "A." cols="2">
+              <li> <m>x \approx -4</m> </li>
+              <li> <m>x \approx -2</m> </li>
+              <li> <m>x \approx 2</m> </li>
+              <li> <m>x \approx 5</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the local maximum value?
+            <ol marker= "A." cols="2">
+              <li> <m>10</m> </li>
+              <li> <m>7</m> </li>
+              <li> <m>4</m> </li>
+              <li> <m>-4</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            At approximately what value of <m>x</m> is there a local minimum?
+            <ol marker= "A." cols="2">
+              <li> <m>x \approx -4</m> </li>
+              <li> <m>x \approx -2</m> </li>
+              <li> <m>x \approx 2</m> </li>
+              <li> <m>x \approx 5</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the local minimum value?
+            <ol marker= "A." cols="2">
+              <li> <m>10</m> </li>
+              <li> <m>7</m> </li>
+              <li> <m>4</m> </li>
+              <li> <m>-4</m> </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      Notice that in <xref ref="distinguish-between-max-and-min"/>, there are two ways we talk about max and min. We might want to know the location of where the max or min are (i.e., determining at which <m>x</m>-value the max or min occurs at) or we might want to know what the max or min values are (i.e., the <m>y</m>-value). 
+      <p> Also, note that in <xref ref="distinguish-between-max-and-min"/>, a local minimum is also a global minimum.
+      </p>
+    </remark>
+
+    <activity xml:id="extension-activity-investigating-minima">
+<introduction>
+  <p>
+    Sometimes, it is not always clear what the maxima or minima are or if they exist. Consider the following graph of <m>f(x)</m>:
+  </p>
+  <image>
+    <sageplot>
+      f(x) = abs(1*x)
+      p=plot(f, (x, -5, 5), ymin=-5, ymax=5, color='blue', thickness=3) 
+      p+=point((0,0), pointsize=75, markeredgecolor='blue',color='white',zorder=3)
+      p+=point((0,1),pointsize=75,color='blue')
+      p
+    </sageplot>
+  </image>
+</introduction>
+<task>
+  <statement>
+    <p>
+      What is the value of <m>f(0)</m>?
+      <ol marker= "A." cols="1">
+        <li> <m>1</m> </li>
+        <li> <m>0</m> </li>
+        <li> There is no local minimum </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
+</task>
+
+<task>
+  <statement>
+    <p>
+      What is the local minimum of <m>f(x)</m>?
+      <ol marker= "A." cols="1">
+        <li> <m>1</m> </li>
+        <li> <m>0</m> </li>
+        <li> There is no local minimum </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
+</task>
+<task>
+  <statement> 
+    <p>
+      What is the global minimum of <m>f(x)</m>?
+      <ol marker= "A." cols="1">
+        <li> <m>1</m> </li>
+        <li> <m>0</m> </li>
+        <li> There is no global minimum </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
+</task>
+    </activity>
+
+    <activity xml:id="find-all-characteristics">
+      <introduction>
+        <p>
+          Use the following graph to answer the questions below.
+        </p>
+        <figure xml:id="graph-with-all-characteristics">
+            <image>
+            <sageplot>
+              p=line([(-8,4),(-2,4)],thickness=3, gridlines=[[-8..11],[-8..11]])
+              p+=plot(spline([(-2,4.1),(-0.5,8),(2,-3),(4.9,9.4)]),(x,-2,5),thickness=3)
+              p+=arrow((4.9,9.4),(5,10),thickness=3)
+              p+=point((-8,4),pointsize=50,color='blue',xmin=-9,xmax=6,ymin=-5,ymax=10)
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the domain?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>[-8,\infty)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the range?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>[-3.5, \infty)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the <m>x</m>-intercept(s)?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>(1.25,0)</m> and <m>(3.5,0)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the <m>y</m>-intercept?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>(0, 6.5)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Where is the function increasing?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>(-2,-0.5)\cup(2.25,\infty)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Where is the function decreasing?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>(-0.5,2.25)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Where is the constant interval?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>(-8,-2)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            At what <m>x</m>-values do the local maxima occur?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=-0.5</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            At what <m>x</m>-values do the local minima occur?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x=2.25</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What are the global max and min?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Global minimum is <m>-3.5</m>. There is no global maximum.
+          </p>
+        </answer>
+      </task>
+    </activity>
+    
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/FN3/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>
