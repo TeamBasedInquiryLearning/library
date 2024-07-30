@@ -6,8 +6,8 @@
 
   <book xml:id="my-great-book">
     <title>Precalculus for Team-Based Inquiry Learning</title>
-    <subtitle component="main">PREVIEW Edition</subtitle>
-    <subtitle component="instructor">PREVIEW Edition &#x2014; Instructor Version</subtitle>
+    <subtitle component="main"><!-- edition -->PREVIEW<!-- /edition --> Edition</subtitle>
+    <subtitle component="instructor"><!-- edition -->PREVIEW<!-- /edition --> Edition &#x2014; Instructor Version</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="meta/frontmatter.ptx" />
