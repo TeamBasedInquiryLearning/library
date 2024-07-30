@@ -9,6 +9,10 @@ on:
     # Runs on demand
     workflow_dispatch:
 
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -92,6 +96,7 @@ jobs:
 
     deploy-ghpages:
         runs-on: ubuntu-latest
+        concurrency:
         needs: build
         if: vars.PTX_ENABLE_DEPLOY_GHPAGES == 'yes' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
         permissions:
