@@ -94,7 +94,10 @@ class Generator(BaseGenerator):
         
         if scenario == "mixture_percent":
             if scenario_alt[-1] in ["A", "B"]:
-                aprs = sample([4,5,6,7,8,9,11,12], 2)
+                if scenario_alt == "A":
+                    aprs = sample([4,5,6,7,8,9], 2)
+                else:
+                    aprs = sample([7,8,9,11,12,13], 2)
                 investments = [n*1000 for n in sample(range(2,10),2)]
                 totalinvestment = sum(investments)
                 interests = [investments[i]*aprs[i]/100 for i in range(2)]
