@@ -90,19 +90,15 @@ This work includes materials used under license from the following works:
       </ul>
 
   </colophon>
-  <preface xml:id="tbil-rl">
-      <title>TBIL Resource Library</title>
-      <p>
-This work is made available as part of the
-<url href="https://sites.google.com/southalabama.edu/tbil">TBIL Resource Library</url>,
-a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
-      </p>
+
+
+  <xi:include href="../../../common/resource-library.ptx"/>
+  <preface xml:id="instructor-notes">
+  <title>For Instructors</title>
+    <xi:include href="../../../common/features.ptx"/>
+    <xi:include href="../../../common/community.ptx"/>
   </preface>
-    <preface xml:id="instructor-notes">
-    <title>For Instructors</title>
-        <p>If you are adopting this text in your class, please fill out this <url href="https://forms.gle/Ktfbma6iBn2gN1W78">short form</url> so we can track usage, let you know about updates, etc.</p>
-    </preface>
-    <!-- <xi:include href="./slideshow.ptx" /> -->
+
 <preface xml:id="video-resources">
     <title>Video Resources</title>
     <p>
@@ -119,44 +115,5 @@ aligned with this text is
 A PDF with all activities may be printed by visiting <url href="pdf/main.pdf"/>.
     </p>
 </preface> -->
-<preface xml:id="features">
-    <title>Features of the text</title>
-    <p> Here is a list of essential features of the text.   
-    </p>
-        <ul>
-            <li>
-                <p>
-                    The book is organized into Modules. You can think of a module as a chapter in a textbook.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Each module starts with a Readiness Assurance Process to check and solidify prerequisite knowledge from other courses or previous modules.
-                    Students are provided a list of study resources to refresh the needed notions and instructors use a Readiness Assurance Test to taylor just-in-time content mini-lectures. Join the TBIL community to gain access to these materials.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Within each module there is a varying amount of sections, one per learning outcome. Each section is designed to guide students into being able to demonstrate their understanding of that specific outcome. The learning outcome can be tested with a CheckIt Exercise.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Within each section, students engage in Activities, which are dispersed with definitions, theorems, remarks, examples, ... as needed to guide the learning process. The activities start in an exploratory way then building the concepts on the results of this exploration. The concepts are then practiced with less scaffolding to build fluency. Finally, towards the end of the section we connect the concepts and extend them to new settings.
-                </p>
-            </li>
-            <li>
-                <p>
-                   Each section/learning outcome is designed with an exercise, a specific set of tasks, that the students need to be able to solve to demonstrate their competency. Virtually limitless randomized versions of the exercise can be generated to build a problem bank and allow for reassessment. 
-                </p>
-            </li>
-            <li>
-                <p>
-                   Implementation of these materials is supported by a TBIL community which offers both formal and informal professional opportunities.  <url href="http://chat.tbil.org/">
-                    Join the slack workspace
-                  </url>.
-                </p>
-            </li>
-        </ul>
-</preface>
+
       </frontmatter>

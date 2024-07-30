@@ -76,15 +76,13 @@
       Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
     </p>
   </colophon>
-<!--
-    <colophon xml:id="tbil-rl">
-      <title>TBIL Resource Library</title>
-      <p>
-This work is made available as part of the
-<url href="https://sites.google.com/southalabama.edu/tbil/tbil-resource-library" visual="sites.google.com/southalabama.edu/tbil/tbil-resource-library">TBIL Resource Library</url>,
-a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807" visual="nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
-      </p>
-  </colophon>
--->
+
+  <xi:include href="../../../common/resource-library.ptx"/>
+  <preface xml:id="instructor-notes">
+  <title>For Instructors</title>
+    <xi:include href="../../../common/features.ptx"/>
+    <xi:include href="../../../common/community.ptx"/>
+  </preface>
+
 </frontmatter>
 
