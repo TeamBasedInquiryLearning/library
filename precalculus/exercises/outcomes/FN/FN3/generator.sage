@@ -64,7 +64,7 @@ class Generator(BaseGenerator):
         ] + [
           {"feature": f'has a local {graph["extrema"]["type"][i]} at ', "result":graph["extrema"]["points"][i]} for i in range(0,3)
         ] + [
-        {"feature": "is increasing on ", "result": "\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graph["increasing"]]) }
+        {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graph["increasing"]]) }
         ] 
 
     graphs[1]["features"].insert(1,{"feature": "has range", "result": f'({",".join(str(d) for d in graphs[1]["range"])})'})
