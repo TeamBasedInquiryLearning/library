@@ -25,24 +25,25 @@
             </p>
         </introduction>
         <task>
-            <statement>
-              <p>Which of the following diagrams best illustrates how the box is created?</p>
-              <!-- <solution> -->
-                <sbsgroup widths="45% 45%">
-                  <sidebyside>
-                    <image source="thebox-1">
-                      <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
-                    </image>
-                    <image source="thebox-2" />
-                  </sidebyside>
-                  <sidebyside>
-                    <image source="thebox-3" />
-                    <image source="thebox-4" />
-                  </sidebyside>
-                </sbsgroup>
-              </statement>
-            
-          <!-- </solution> -->
+          <statement>
+            <p>Which of the following diagrams best illustrates how the box is created?</p>
+            <ol marker="A." cols="2">
+              <li>
+                <image source="thebox-1">
+                  <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
+                </image>
+              </li>
+              <li>
+                <image source="thebox-2" />
+              </li>
+              <li>
+                <image source="thebox-3" />
+              </li>
+              <li>
+                <image source="thebox-4" />
+              </li>
+            </ol> 
+          </statement>
         </task>
         <task>
           <statement>
@@ -69,7 +70,7 @@
         <task>
           <statement>
             <p>For this problem, what is the best choice of domain for the function <m>V(x)</m>?</p>
-            <ol label="A.">
+            <ol marker="A.">
               <li>
                 <m>0 \le x \le 4</m>
               </li>
