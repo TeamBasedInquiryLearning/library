@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="LF5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Linear Models and Meanings (LF5) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/05.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    
+    <remark>
+      <p>
+      We begin by revisiting <xref ref="activity-fn-application"/> from <xref ref="FN2"/>.
+      </p>
+    </remark>
+
+    <activity xml:id="activity-lf5-revisitFN2">
+      <introduction>
+       <p>
+         Ellie has <m>\$13</m> in her piggy bank, and she gets an additional <m>\$1.50</m> each week for her allowance. Assuming she does not spend any money, the total amount of allowance, <m>A(w)</m>, she has after <m>w</m> weeks can be modeled by the function <me>A(w)=13+1.50w</me>. 
+       </p>
+      </introduction> 
+       <task>
+         <statement>
+           <p> How much money will be in her piggy bank after <m>5</m> weeks?</p>
+         </statement>
+           <answer>
+             <p>
+              <m>\$20.50</m> 
+             </p>
+           </answer>
+       </task>
+
+       <task>
+         <statement>
+           <p> After how many weeks will she have <m>\$40</m> in her piggy bank?</p>
+         </statement>
+           <answer>
+             <p>
+              <m>18</m> weeks 
+             </p>
+           </answer>
+       </task>
+     </activity>
+
+    <remark>
+      The function in the previous activity is an example of a <term>linear model</term>. A linear model is a linear function that describes, or models, a real-life application. In this section we will build and use linear models. 
+    </remark>
+
+    <activity xml:id="activity-lin-model-cookies">
+      <introduction>
+       <p>
+         Jack bought a package containing <m>40</m>  cookies. Each day he takes two in his lunch to work.
+       </p>
+      </introduction> 
+       <task>
+         <statement>
+           <p> How many cookies are left in the package after <m>3</m> days?
+            <ol marker= "A.">  
+              <li> <m>46</m>  </li>
+              <li> <m>42</m>  </li>
+              <li> <m>38</m>  </li>
+              <li> <m>36</m>  </li>
+              <li> <m>34</m>  </li>
+            </ol>
+          </p>
+         </statement>
+           <answer>
+             <p>
+              E 
+             </p>
+           </answer>
+       </task>
+
+       <task>
+        <statement>
+          <p>
+           Fill out the following table to represent the number of cookies left in the package after the given number of days. 
+          </p>
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell>number of days</cell> 
+                <cell>number of cookies left</cell>
+              </row>
+              <row halign="center">
+                <cell><m>0</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>2</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>5</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>10</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>20</m></cell>
+              </row>
+            </tabular>
+        </statement>
+        <answer>
+          <p>
+              <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell>number of days</cell> 
+                  <cell>number of cookies left</cell>
+                </row>
+                <row halign="center">
+                  <cell><m>0</m></cell>
+                  <cell><m>40</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2</m></cell>
+                  <cell><m>38</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>5</m></cell>
+                  <cell><m>30</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>10</m></cell>
+                  <cell><m>20</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>20</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+              </tabular>
+          </p>
+        </answer>
+       </task>
+
+       <task>
+        <statement>
+          <p>
+            What is the <m>y</m>-intercept? Explain what it represents in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>40</m>; It represents the initial amount of cookies in the package.
+          </p>
+        </answer>
+       </task>
+
+       <task>
+        <statement>
+          <p>
+            What is the rate of change? Explain what it represents in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-2</m>; It represents how the number of cookies in the package changes per day.
+          </p>
+        </answer>
+       </task> 
+
+       <task>
+        <statement>
+          <p>
+            Write a linear function to model the situation. Let <m>d</m> represent the number of days elapsed and <m>C(d)</m> represent the number of cookies in the package. (Hint: Use the previous two questions to help!)
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>C(d)=40-2d</m>
+          </p>
+        </answer>
+       </task>
+
+       <task>
+        <statement>
+          <p>
+            Find <m>C(6)</m>. Explain what that means in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>28</m>; After <m>6</m> days, there will be <m>28</m> cookies left in the package.
+          </p>
+        </answer>
+       </task>
+
+       <task>
+       <statement>
+        <p>
+          How many days will it take to empty the package? What does this correspond to on the graph?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>20</m>; This corresponds to the <m>x</m>-intercept.
+        </p>
+      </answer>
+     </task>
+     </activity>
+
+    <activity xml:id="activity-lin-model-doughnuts">
+      <introduction>
+       <p>
+         Daisy's Doughnut Shop sells delicious doughnuts. Each month, they incur a fixed cost of <m>\$2000</m> for rent, insurance, and other expenses. Then, for each doughnut they produce, it costs them an additional <m>\$0.25</m>.
+ 
+       </p>
+      </introduction> 
+       <task>
+         <statement>
+           <p> In January, Daisy's Doughnut Shop produced <m>1000</m> doughnuts. What was their total monthy cost to run the shop?  
+            <ol marker= "A.">  
+              <li> <m>\$2000.25</m>  </li>
+              <li> <m>\$2002.50</m>  </li>
+              <li> <m>\$2025.00</m>  </li>
+              <li> <m>\$2250.00</m>  </li>
+              <li> <m>\$4500.00</m>  </li>
+            </ol>
+          </p>
+         </statement>
+           <answer>
+             <p>
+              D 
+             </p>
+           </answer>
+       </task>
+
+       <task>
+        <statement>
+          <p>
+           Fill out the following table to represent the cost for producing various amounts of doughnuts. 
+          </p>
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell>number of doughnuts</cell> 
+                <cell>cost</cell>
+              </row>
+              <row halign="center">
+                <cell><m>0</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>500</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1000</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1500</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>2000</m></cell>
+              </row>
+            </tabular>
+        </statement>
+        <answer>
+              <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell>number of doughnuts</cell> 
+                  <cell>cost</cell>
+                </row>
+                <row halign="center">
+                  <cell><m>0</m></cell>
+                  <cell><m>\$2000</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>500</m></cell>
+                  <cell><m>\$2125</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>1000</m></cell>
+                  <cell><m>\$2250</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>1500</m></cell>
+                  <cell><m>\$2375</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2000</m></cell>
+                  <cell><m>\$2500</m></cell>
+                </row>
+              </tabular>
+        </answer>
+       </task>
+       <task>
+        <statement>
+          <p>
+            What is the <m>y</m>-intercept? Explain what it represents in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$2000</m>; It is the fixed cost that must be paid regardless.
+          </p>
+        </answer>
+       </task>
+       <task>
+        <statement>
+          <p>
+            What is the rate of change? Explain what it represents in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.25</m>; This how much the total cost changes for each additional doughnut produced.
+          </p>
+        </answer>
+       </task>
+       <task>
+        <statement>
+          <p>
+            Write a linear function to model the situation. Let <m>x</m> represent the number of doughnuts produced and <m>C(x)</m> represent the total cost. (Hint: Use the previous two questions to help!)
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>C(x)=2000+0.25x</m>
+          </p>
+        </answer>
+       </task>
+       <task>
+        <statement>
+          <p>
+            Find <m>C(1300)</m>. Explain what that means in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$2325</m>; The cost to produce <m>1300</m> doughnuts is <m>\$2325</m>.
+          </p>
+        </answer>
+       </task>
+       <task>
+        <statement>
+          <p>
+            Find the <m>x</m>-intercept. Explain what it means in the context of the problem.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-8000</m>; This doesn't make sense in the context in the problem. Daisy can't produce a negative number of doughnuts.
+          </p>
+        </answer>
+       </task>
+     </activity>
+
+
+     <activity xml:id="activity-lin-model-taxi">
+      <introduction>
+       <p>
+         A taxi costs <m>\$5.00</m> up front, and then charges <m>\$0.73</m> per mile traveled. 
+       </p>
+      </introduction> 
+
+      <task>
+        <statement>
+          <p>
+            Write a linear function to model this situation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>C(x)=5+0.73x</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How much will it cost for a <m>13</m> mile taxi ride?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$14.49</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            If the taxi ride cost <m>\$11.06</m>, how many miles did it travel?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>8.3</m> miles
+          </p>
+        </answer>
+      </task>
+
+      </activity>
+
+      <activity xml:id="activity-lin-model-temperature">
+        <introduction>
+         <p>
+          When reporting the weather, temperature is given in degrees Fahrenheit (<m>F</m>) or degrees Celsius (<m>C</m>). The two scales are related linearly, which means we can find a linear model to describe their relationship. This model lets us convert between the two scales.
+         </p>
+        </introduction> 
+  
+        <task>
+          <statement>
+            <p>
+             Water freezes at <m>0</m><degree/><m>C</m> and <m>32</m><degree/><m>F</m>. Water boils at <m>100</m><degree/><m>C</m> and <m>212</m><degree/><m>F</m>. Use this information to write two ordered pairs. 
+            </p>
+          </statement>
+          <hint>
+              <p>
+                Choose Celsius to be your input value, and Fahrenheit to be the output value.
+              </p>
+          </hint>
+          <answer>
+            <p>
+              <m>(0,32)</m> and <m>(100,212)</m>
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Use the two points to write a linear model for this situation. Use <m>C</m> and <m>F</m> as your variables.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>F=\frac{9}{5}C+32
+              </m>
+            </p>
+          </answer>
+        </task>
+          <task>
+            <statement>
+              <p>
+                If the temperature outside is <m>25</m><degree/><m>C</m>, what is the temperature in Fahrenheit?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>77</m><degree/><m>F</m>
+              </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                If the temperature outside is <m>50</m><degree/><m>F</m>, what is the temperature in Celsius?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>10</m><degree/><m>C</m>
+              </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                What temperature value is the same in Fahrenheit as it is in Celsius?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>-40</m><degree/><m>C=-40</m><degree/><m>F</m>
+              </p>
+            </answer>
+          </task> 
+        
+  
+        
+        </activity>
+
+        <activity xml:id="activity-two-lin-models">
+          <introduction>
+           <p>
+            Erin needs to print t-shirts for her company retreat. She has found two businesses that produce quality shirts, but they have different pricing structures. Shirts-R-Us requires a <m>\$60</m> set up fee, then charges <m>\$7</m> for each shirt produced. Graphix! has no set up fee and charges <m>\$8.50</m> per shirt produced.
+           </p>
+          </introduction> 
+    
+          <task>
+            <statement>
+              <p>
+               Write a linear function <m>S(x)</m> that models the pricing structure for producing <m>x</m> shirts at Shirts-R-Us.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>S(x)=60+7x</m>
+              </p>
+            </answer>
+          </task>
+
+          <task>
+            <statement>
+              <p>
+               Write a linear function <m>G(x)</m> that models the pricing structure for producing <m>x</m> shirts at Graphix!.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>G(x)=8.50x</m>
+              </p>
+            </answer>
+          </task>
+
+          <task>
+            <statement>
+              <p>
+               At which business would it be less expensive to buy <m>1</m> shirt? <m>10</m> shirts? <m>100</m> shirts? Explain your reasoning.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                One shirt: <m>S(1) = 67</m> and <m>G(1)=8.50</m>, so less expensive at Graphix!
+              </p>
+              <p>
+                <m>10</m> shirts: <m>S(10) = 130</m> and <m>G(10)=85</m>, so less expensive at Graphix!
+              </p>
+              <p>
+                <m>100</m> shirts: <m>S(100) = 760</m> and <m>G(100)=850</m>, so less expensive at Shirts-R-Us.
+              </p>
+            </answer>
+          </task>
+
+          <task>
+            <statement>
+              <p>
+              It depended on how many shirts were needed to determine which business was less expensive. For what range of number of shirts should Erin choose Shirts-R-Us and for what range should she choose Graphix!?
+              </p>
+            </statement>
+            <hint>
+              <p>
+                Try finding where the cost is the same at both businesses. And looking at a graph may help as well!
+              </p>
+          </hint>
+            <answer>
+              <p>
+                The businesses charge the same amount to produce <m>40</m> shirts. For less, choose Graphix! For more, choose Shirts-R-Us.
+              </p>
+            </answer>
+          </task>
+  
+          
+          </activity>
+
+
+
+
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/LF5/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

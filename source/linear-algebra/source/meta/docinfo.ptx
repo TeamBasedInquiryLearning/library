@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <docinfo>
+        <document-id>tbilla</document-id>
+        <initialism>TBIL-LA</initialism>
+        <blurb shelf="math">Activities and exercises for implementing Team-Based Inquiry Learning in a sophomore linear algebra classroom.</blurb>
+        <macros><xi:include href="../../../common/macros.tex" parse="text"/></macros>
+    <latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tikz-cd}
+    </latex-image-preamble>
+    <rename element="objectives" xml:lang="en-US">Learning Outcomes</rename>
+    <numbering><figures level="0"/></numbering>
+<!-- Specify the default type of cross reference:           -->
+    <cross-references text="type-global" />
+</docinfo>
