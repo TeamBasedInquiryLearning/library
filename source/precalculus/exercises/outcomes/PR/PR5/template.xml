@@ -14,9 +14,14 @@
         <outtro>
 
         <p>
-            The {{name}} of <m>{{fname}}(x)={{f}}</m> are <m>x  = {{roots}} </m>.
+            The {{name}} of <m>{{fname}}(x)={{f}}</m> are <me>x  = {{roots}}.</me>
         </p>
-        <p><m>{{fname}}(x)</m> expressed as a product of linear factors is <me>{{fname}}(x)={{f_factored}}.</me></p>
+        <p>
+            <m>{{fname}}(x)</m> factors into 
+            <me>{{fname}}(x)={{f_factored}}</me>
+            and further into the linear factors
+            <me>{{fname}}(x)={{f_linear}}.</me>
+        </p>
         </outtro>
     </knowl>
     <!--{{/tasks}}-->
