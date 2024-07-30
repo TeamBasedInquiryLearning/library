@@ -1,26 +1,279 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
+    <!-- {{#distance_toward}} -->
+    <!-- {{#scenarioA}} -->
+    <content>
         <p>
-            Question
+Two {{vehicles}} are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart and heading toward each other. 
+One is traveling at <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> and the other at
+<m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>. After how much time will they meet?
         </p>
-    </intro>
+    </content>
+    <outtro>
+        <p>
+<m>\displaystyle {{time}}</m> hours
+        </p>
+    </outtro>
+    <!-- {{/scenarioA}} -->
+    <!-- {{#scenarioB}} --> <!-- rewrite of A -->
+    <content>
+        <p>
+A pair of {{vehicles}} are heading directly towards one another from an initial distance
+of <m>{{dist}} \,\mathrm{ {{d_unit}} }</m>. The first moves at a rate of
+<m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> while the second moves at a rate of
+<m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>. How long will it take for the two
+{{vehicles}} to meet in the middle?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>\displaystyle {{time}}</m> hours
+        </p>
+    </outtro>
+    <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <content>
+        <p>
+Two trains are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart and traveling toward each other. 
+One train is traveling <m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> {{faster_slower}} than the other. 
+If they meet after <m>\displaystyle {{time}}</m> hours, at what rate is each train moving?  
+        </p>
+    </content>
+    <outtro>
+        <p>
+One is traveling at a rate of <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m>,
+and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>.
+        </p>
+    </outtro>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} --> <!-- rewrite of C -->
+    <content>
+        <p>
+A pair of {{vehicles}} are heading directly towards one another from an initial distance
+of <m>{{dist}} \,\mathrm{ {{d_unit}} }</m>. The first moves at a rate of
+<m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> {{faster_slower}} than the second, and they eventually
+meet in the middle after <m>\displaystyle {{time}}</m> hours. How fast is each of the
+{{vehicles}} moving?
+        </p>
+    </content>
+    <outtro>
+        <p>
+One is traveling at a rate of <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m>,
+and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>.
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
+    <!-- {{/distance_toward}} -->
+
+    <!-- {{#distance_apart}} -->
+    <!-- {{#scenarioA}} -->
+    <content>
+        <p>
+Two {{vehicles}} leave from the same location at the same time,
+one traveling {{direction1}} and the other traveling {{direction2}}. 
+One is traveling at <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> and the other at
+<m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>. How much time will pass before these
+{{vehicles}} are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>\displaystyle {{time}}</m> hours
+        </p>
+    </outtro>
+    <!-- {{/scenarioA}} -->
+    <!-- {{#scenarioB}} --> <!-- rewrite of A -->
+    <content>
+        <p>
+A pair of {{vehicles}} are heading directly away one another,
+one heading {{direction1}} and the other heading {{direction2}}.
+The first moves at a rate of
+<m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m> while the second moves at a rate of
+<m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>. How long will it take for the two
+{{vehicles}} to be <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>\displaystyle {{time}}</m> hours
+        </p>
+    </outtro>
+    <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <content>
+        <p>
+Two {{vehicles}} leave from the same location at the same time,
+one traveling {{direction1}} and the other traveling {{direction2}}. 
+One is traveling <m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m>
+{{faster_slower}} than the other. If it takes <m>\displaystyle {{time}}</m> hours for
+the {{vehicles}} to end up <m>{{dist}} \,\mathrm{ {{d_unit}} }</m> apart,
+how fast are they traveling?
+        </p>
+    </content>
+    <outtro>
+        <p>
+One is traveling at a rate of <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m>,
+and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>.
+        </p>
+    </outtro>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} --> <!-- rewrite of C -->
+    <content>
+        <p>
+A pair of {{vehicles}} are heading directly away from one another from the same
+location, one headed {{direction1}} and the other headed {{direction2}},
+and after <m>\displaystyle {{time}}</m> hours they are <m>{{dist}} \,\mathrm{ {{d_unit}} }</m>
+apart. If the first moves at a rate of
+<m>{{rate_diff}} \,\mathrm{ {{d_unit}}/hr }</m> {{faster_slower}} than the second,
+how fast is each of the {{vehicles}} moving?
+        </p>
+    </content>
+    <outtro>
+        <p>
+One is traveling at a rate of <m>{{rate1}} \,\mathrm{ {{d_unit}}/hr }</m>,
+and the other is traveling at a rate of <m>{{rate2}} \,\mathrm{ {{d_unit}}/hr }</m>.
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
+    <!-- {{/distance_apart}} -->
+
+    <!-- {{#mixture_value}} -->
+    <!-- {{#scenarioA}} -->
+    <content>
+        <p>
+In {{name}}'s candy shop, they purchase {{ingredient1}} from their distributor
+at a cost of <m>\${{part1}}</m> per {{weight}}, and {{ingredient2}} at a cost of
+<m>\${{part2}}</m> per {{weight}}.
+{{name}} uses these to prepare a {{ingredient1}}-{{ingredient2}} candy, using a mixture that ends
+up costing <m>\${{mixpart}}</m> per {{weight}}. How much {{ingredient1}} and {{ingredient2}} is
+used to create <m>{{totalamount}}</m> {{weight}} of the mixture?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+<m>{{amount2}}</m> {{weight}} of {{ingredient2}}
+        </p>
+    </outtro>
+    <!-- {{/scenarioA}} -->
+    <!-- {{#scenarioB}} -->
+    <content>
+        <p>
+{{name}} sells a candy using a {{ingredient1}}-{{ingredient2}}
+mixture that they hope to produce
+at a cost of <m>\${{mixpart}}</m> per {{weight}}.
+It costs {{name}} <m>\${{part1}}</m> to produce one {{weight}}
+of {{ingredient1}}, and <m>\${{part2}}</m> to produce one {{weight}}
+of {{ingredient2}}. How much {{ingredient1}} and {{ingredient2}} should be mixed together
+to create <m>{{totalamount}}</m> {{weight}} of the mixture?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+<m>{{amount2}}</m> {{weight}} of {{ingredient2}}
+        </p>
+    </outtro>
+    <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <content>
+        <p>
+{{name}}'s smoothie shop sells {{ingredient1}} puree for <m>\$0.{{part1}}</m> per {{weight}} 
+and  {{ingredient2}} puree for <m>\$0.{{part2}}</m> per {{weight}}. If you ask nicely,
+{{name}} will also sell a <m>{{totalamount}}</m> {{weight}} {{ingredient1}}-{{ingredient2}} 
+puree at cost for <m>\$0.{{mixpart}}</m> per {{weight}}. How much of each ingredient is used 
+to make the mixed {{ingredient1}}-{{ingredient2}} puree?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+<m>{{amount2}}</m> {{weight}} of {{ingredient2}}
+        </p>
+    </outtro>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} -->
+    <content>
+        <p>
+The sorbet shop owned by {{name}} offers {{ingredient1}} sorbet for <m>\$0.{{part1}}</m> per
+{{weight}} and {{ingredient2}} sorbet for <m>\$0.{{part2}}</m> per {{weight}}. {{name}} allows
+customers to blend different sorbets together, so you purchased <m>{{totalamount}}</m> {{weight}}
+of blended {{ingredient1}}-{{ingredient2}} sorbet. If you were charged <m>\$0.{{mixpart}}</m> 
+per {{weight}}, how much of each ingredient was used in your blend?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+<m>{{amount2}}</m> {{weight}} of {{ingredient2}}
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
+    <!-- {{/mixture_value}} -->
     
-    
-    <knowl>
-        <content>
-            <p>
-                Task 
-            </p>
-        </content>
-        <outtro>
-            <p>
-                Task answer
-            </p>
-        </outtro>
-        
-    </knowl>
-      
-    
+    <!-- {{#mixture_percent}} -->
+    <!-- {{#scenarioA}} -->
+    <content>
+        <p>
+{{name}} has two investment accounts, one earning <m>{{apr1}}\%</m> annual interest and the 
+other earning <m>{{apr2}}\%</m> annual interest. After one year, the original investment of 
+<m>\${{totalinvestment}}</m> has earned <m>\${{totalinterest}}</m> in interest.
+How much was invested in each account?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>\${{investment1}}</m> at <m>{{apr1}}\%</m>, and 
+<m>\${{investment2}}</m> at <m>{{apr2}}\%</m>
+        </p>
+    </outtro>
+    <!-- {{/scenarioA}} -->
+    <!-- {{#scenarioB}} -->
+    <content>
+        <p>
+{{name}} has two one-year loans, one costing <m>{{apr1}}\%</m> annual interest and the 
+other costing <m>{{apr2}}\%</m> annual interest. To pay off these loans, {{name}} must
+repay the total <m>\${{totalinvestment}}</m> loaned in addition to <m>\${{totalinterest}}</m>
+total interest. How much money was loaned at each rate?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>\${{investment1}}</m> at <m>{{apr1}}\%</m>, and 
+<m>\${{investment2}}</m> at <m>{{apr2}}\%</m>
+        </p>
+    </outtro>
+    <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <content>
+        <p>
+A hamburger blend is made using <m>{{part1}}\%</m> ground {{meat1}} that has 
+<m>{{percent1}}\%</m> fat content, and <m>{{part2}}\%</m> ground {{meat2}} 
+that has <m>{{percent2}}\%</m> fat content.
+What is the fat percentage of the hamburger blend?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{mixpercent}}\%</m> fat.
+        </p>
+    </outtro>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} -->
+    <content>
+        <p>
+A juice cocktail mixes <m>{{part1}}\%</m> {{juice1}} with
+<m>{{part2}}\%</m> {{juice2}}. If {{juice1}} contains <m>{{percent1}}\%</m>
+sugar, and {{juice2}} contains <m>{{percent2}}\%</m> sugar, what percentage
+of the juice cocktail is sugar?
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m>{{mixpercent}}\%</m> sugar.
+        </p>
+    </outtro>
+    <!-- {{/scenarioD}} -->
+    <!-- {{/mixture_percent}} -->
 </knowl>
