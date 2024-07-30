@@ -1,63 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <titlepage>
-        <author>
-            <personname>Steven Clontz</personname>
-            <department>Department of Mathematics and Statistics</department>
-            <institution>University of South Alabama</institution>
-            <email>sclontz@southalabama.edu</email>
-        </author>
-        <author>
-            <personname>Drew Lewis</personname>
-            <email>drew.lewis@gmail.com</email>
-        </author>
-  <credit>
-    <title>Contributing Authors</title>
-    <author>
-      <personname>Jessalyn Bolkema</personname>
-      <department>Department of Mathematics</department>
-      <institution>California State University, Dominguez Hills</institution>
-      <email>jbolkema@csudh.edu</email>
-    </author>
-    <author>
-      <personname>Jeff Ford</personname>
-      <department>Department of Mathematics, Computer Science, and Statistics</department>
-      <institution>Gustavus Adolphus College</institution>
-      <email>jford@gustavus.edu</email>
-    </author>
-    <author>
-        <personname>Jordan Kostiuk</personname>
+  <titlepage>
+    <xi:include href="../../../common/authors/clontz.ptx"/>
+    <xi:include href="../../../common/authors/lewis.ptx"/>
+    <credit>
+      <title>Contributing Authors</title>
+      <author>
+        <personname>Jessalyn Bolkema</personname>
         <department>Department of Mathematics</department>
-        <institution>Brown University</institution>
-        <email>jordan_kostiuk@brown.edu</email>
-    </author>
-    <author>
-      <personname>Sharona Krinsky</personname>
-      <department>Department of Mathematics</department>
-      <institution>California State University, Los Angeles</institution>
-      <email>skrinsk@calstatela.edu</email>
-    </author>
-    <author>
-      <personname>Jennifer Nordstrom</personname>
-      <department>Department of Mathematics</department>
-      <institution>Linfield University</institution>
-      <email>jnordstrom@linfield.edu</email>
-    </author>
-    <author>
-      <personname>Kate Owens</personname>
-      <department>Department of Mathematics</department>
-      <institution>College of Charleston</institution>
-      <email>owensks@cofc.edu</email>
-    </author>
-  </credit>
-        <date><today /></date>
-    </titlepage>
+        <institution>California State University, Dominguez Hills</institution>
+        <email>jbolkema@csudh.edu</email>
+      </author>
+      <author>
+        <personname>Jeff Ford</personname>
+        <department>Department of Mathematics, Computer Science, and Statistics</department>
+        <institution>Gustavus Adolphus College</institution>
+        <email>jford@gustavus.edu</email>
+      </author>
+      <author>
+          <personname>Jordan Kostiuk</personname>
+          <department>Department of Mathematics</department>
+          <institution>Brown University</institution>
+          <email>jordan_kostiuk@brown.edu</email>
+      </author>
+      <author>
+        <personname>Sharona Krinsky</personname>
+        <department>Department of Mathematics</department>
+        <institution>California State University, Los Angeles</institution>
+        <email>skrinsk@calstatela.edu</email>
+      </author>
+      <author>
+        <personname>Jennifer Nordstrom</personname>
+        <department>Department of Mathematics</department>
+        <institution>Linfield University</institution>
+        <email>jnordstrom@linfield.edu</email>
+      </author>
+      <author>
+        <personname>Kate Owens</personname>
+        <department>Department of Mathematics</department>
+        <institution>College of Charleston</institution>
+        <email>owensks@cofc.edu</email>
+      </author>
+    </credit>
+    <date><today /></date>
+  </titlepage>
   <colophon xml:id="colophon">
-    <website>
-        <url href="https://linear.tbil.org">
-            Linear Algebra for Team-Based Inquiry Learning
-        </url>
-    </website>
+    <xi:include href="../../../common/website.ptx"/>
 
     <xi:include href="./copyright.ptx" />
 

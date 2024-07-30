@@ -6,21 +6,13 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>TBIL Fellows</personname>
-
+      <personname>TBIL Community</personname>
+      <email>sclontz+tbil@southalabama.edu</email>
     </author>
     <credit>
       <title>Editors</title>
-        <author>
-          <personname>Steven Clontz</personname>
-          <department>Department of Mathematics and Statistics</department>
-          <institution>University of South Alabama</institution>
-          <email>sclontz@southalabama.edu</email>
-        </author>
-        <author>
-          <personname>Drew Lewis</personname>
-          <email>drew.lewis@gmail.com</email>
-        </author>
+      <xi:include href="../../../common/authors/clontz.ptx"/>
+      <xi:include href="../../../common/authors/lewis.ptx"/>
     </credit>
     <credit>
       <title>Contributing Authors</title>
@@ -49,9 +41,8 @@
   </titlepage>
 
   <colophon xml:id="colophon">
-    <website>
-        <url href="https://teambasedinquirylearning.github.io/precalculus/">Precalculus for Team-Based Inquiry Learning</url>
-    </website>
+    <xi:include href="../../../common/website.ptx"/>
+
     <xi:include href="./copyright.ptx" />
     <p>
       This work includes materials used under license from the following works:
