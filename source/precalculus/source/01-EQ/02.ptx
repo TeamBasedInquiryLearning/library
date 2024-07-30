@@ -36,7 +36,7 @@
     
     <activity xml:id="activity-la-trains1">
       <introduction>
-        <p>Two trains leave a station at the same time. One is heading east at a speed of 75 mph, while the other is heading west at a speed of 85 mph. After how long will the trains be 400 miles apart? </p>
+        <p>Two trains leave a station at the same time. One is heading east at a speed of <m>75</m> mph, while the other is heading west at a speed of <m>85</m> mph. After how long will the trains be <m>400</m> miles apart? </p>
         
       </introduction>
       
@@ -57,7 +57,7 @@
         </statement>
         <answer>
           <p>
-            B.
+            B
           </p>
         </answer>
       </task>
@@ -77,7 +77,7 @@
         </statement>
         <answer>
           <p>
-            C.
+            C
           </p>
         </answer>
       </task>
@@ -86,7 +86,6 @@
         <statement>
           <p>
             Fill in the following table using the information you've just determined about the trains' rates and times since they left the station. Some values are there to help you get started.
-
             
               <tabular halign="center">
                 <row header="yes" bottom="minor" >
@@ -139,18 +138,18 @@
       <task>
         <statement>
           <p>
-            At the moment in question, the trains are 400 miles apart. How does that total distance relate to the distance each train has traveled? 
+            At the moment in question, the trains are <m>400</m> miles apart. How does that total distance relate to the distance each train has traveled? 
             <ol marker= "A.">  
-              <li>The 400 miles is irrelevant. They've been traveling the same amount of time so they must be the same distance away from the station. That tells us  <m>d_E = d_W </m>. </li>
-              <li>The 400 miles is the difference between the distance each train traveled, so <m>d_E - d_W = 400</m>. </li>
-              <li>The 400 miles represents the sum of the distances that each train has traveled, so <m>d_E + d_W = 400</m>. </li>
-              <li>The 400 miles is the product of the distance each train traveled, so <m>(d_E)( d_W) = 400</m>. </li>
+              <li>The <m>400</m> miles is irrelevant. They've been traveling the same amount of time so they must be the same distance away from the station. That tells us  <m>d_E = d_W </m>. </li>
+              <li>The <m>400</m> miles is the difference between the distance each train traveled, so <m>d_E - d_W = 400</m>. </li>
+              <li>The <m>400</m> miles represents the sum of the distances that each train has traveled, so <m>d_E + d_W = 400</m>. </li>
+              <li>The <m>400</m> miles is the product of the distance each train traveled, so <m>(d_E)( d_W) = 400</m>. </li>
             </ol>
           </p>
         </statement>
         <answer>
           <p>
-            C.
+            C
           </p>
         </answer>
       </task>
@@ -170,7 +169,7 @@
         </statement>
         <answer>
           <p>
-            C.
+            C
           </p>
         </answer>
       </task>
@@ -180,17 +179,17 @@
           <p>
             Notice that we now have a linear equation in one variable, <m>t</m>. Solve for <m>t</m>, and put that answer in context of the problem.
             <ol marker= "A.">  
-              <li>The trains are 400 miles apart after 2 hours. </li>
-              <li>The trains are 400 miles apart after 2.5 hours. </li>
-              <li>The trains are 400 miles apart after 3 hours. </li>
-              <li>The trains are 400 miles apart after 3.5 hours. </li>
-              <li>The trains are 400 miles apart after 4 hours. </li>
+              <li>The trains are <m>400</m> miles apart after <m>2</m> hours. </li>
+              <li>The trains are <m>400</m> miles apart after <m>2.5</m> hours. </li>
+              <li>The trains are <m>400</m> miles apart after <m>3</m> hours. </li>
+              <li>The trains are <m>400</m> miles apart after <m>3.5</m> hours. </li>
+              <li>The trains are <m>400</m> miles apart after <m>4</m> hours. </li>
             </ol>
           </p>
         </statement>
         <answer>
           <p>
-            B.
+            B
           </p>
         </answer>
       </task>
@@ -198,7 +197,7 @@
     </activity> 
 
     <remark>
-     In <xref ref="activity-la-trains1" /> we examined the motion of two objects moving at the same time in opposite directions. In <xref ref="activity-la-walkbike"/> we will examine a different perspective, but still apply <m>d=rt</m> to solve. 
+     In <xref ref="activity-la-trains1" />, we examined the motion of two objects moving at the same time in opposite directions. In <xref ref="activity-la-walkbike"/>, we will examine a different perspective, but still apply <m>d=rt</m> to solve. 
     </remark>
 
     <activity xml:id="activity-la-walkbike">
@@ -226,7 +225,7 @@
         </statement>
         <answer>
           <p>
-            C.
+            C
           </p>
         </answer>
       </task>
@@ -246,7 +245,7 @@
         </statement>
         <answer>
           <p>
-            D.
+            D
           </p>
         </answer>
       </task>
@@ -305,8 +304,8 @@
           <p>
            Our goal is to figure out how far away Jalen lives from the store. To help us get there, write an equation relating <m>d_b</m> and <m>d_c</m>. 
             <ol marker= "A.">  
-              <li>The distance he traveled by bike is the same as the distance he traveled by car, so <m>d_b = d_c</m></li>
-              <li>The distance he traveled by bike took longer than the distance he traveled by car, so <m>d_b + \frac{1}{2} = d_c + \frac{1}{5}</m></li>
+              <li>The distance he traveled by bike is the same as the distance he traveled by car, so <m>d_b = d_c</m>.</li>
+              <li>The distance he traveled by bike took longer than the distance he traveled by car, so <m>d_b + \frac{1}{2} = d_c + \frac{1}{5}</m>.</li>
               <li>The distance, <m>d</m>, between his house and the grocery store is sum of the distance he traveled on his bike and the distance he traveled in the car, so <m>d_b + d_c = d</m>. </li>
               <li>The distance, <m>d</m>, between his house and the grocery store is sum of the difference he traveled on his bike and the distance he traveled in the car, so <m>d_b - d_c = d</m>. </li>
 
@@ -315,7 +314,7 @@
         </statement>
         <answer>
           <p>
-            A.
+            A
           </p>
         </answer>
       </task>
@@ -336,20 +335,26 @@
       <task>
         <statement>
           <p>
-            Our goal was to determine the distance between Jalen's house and the grocery store. Solving for <m>r</m> did not tell us that distance, but it did get us one step closer. Use that value to help you determine the distance between his house and the store, and write your answer using the context of the problem. (Hint: can you find an expression involving <m>r</m> that we made that represents that distance? )
+            Our goal was to determine the distance between Jalen's house and the grocery store. Solving for <m>r</m> did not tell us that distance, but it did get us one step closer. Use that value to help you determine the distance between his house and the store, and write your answer using the context of the problem. 
+
             <ol marker= "A.">  
-              <li>The grocery store is 6 miles away from Jalen's house. </li>
-              <li>The grocery store is 8 miles away from Jalen's house. </li>
-              <li>The grocery store is 10 miles away from Jalen's house. </li>
-              <li>The grocery store is 12 miles away from Jalen's house. </li>
-              <li>The grocery store is 14 miles away from Jalen's house. </li>
+              <li>The grocery store is <m>6</m> miles away from Jalen's house. </li>
+              <li>The grocery store is <m>8</m> miles away from Jalen's house. </li>
+              <li>The grocery store is <m>10</m> miles away from Jalen's house. </li>
+              <li>The grocery store is <m>12</m> miles away from Jalen's house. </li>
+              <li>The grocery store is <m>14</m> miles away from Jalen's house. </li>
               
             </ol>
           </p>
         </statement>
+        <hint>
+          <p>
+            Can you find an expression involving <m>r</m> that we made that represents that distance?
+          </p>
+        </hint>
         <answer>
           <p>
-            A.
+            A
           </p>
         </answer>
       </task>
@@ -362,7 +367,7 @@
 
     <activity xml:id="activity-la-candymixture">
       <introduction>
-        <p> Ammie's favorite snack to share with friends is candy salad, which is a mixture of different types of candy. Today she chooses to mix Nerds Gummy Clusters, which cost $8.38 per pound, and Starburst Jelly Beans, which cost $7.16 per pound. If she makes seven pounds of candy salad and spends a total of $55.61, how many pounds of each candy did she buy?   </p>
+        <p> Ammie's favorite snack to share with friends is candy salad, which is a mixture of different types of candy. Today she chooses to mix Nerds Gummy Clusters, which cost <m>\$8.38</m> per pound, and Starburst Jelly Beans, which cost <m>\$7.16</m> per pound. If she makes seven pounds of candy salad and spends a total of <m>\$55.61</m>, how many pounds of each candy did she buy?   </p>
         
       </introduction>
 
@@ -380,7 +385,7 @@
         </statement>
         <answer>
           <p>
-            C.
+            C
           </p>
         </answer>
       </task>
@@ -399,7 +404,7 @@
         </statement>
         <answer>
           <p>
-            B.
+            B
           </p>
         </answer>
       </task>
@@ -418,15 +423,15 @@
         </statement>
         <answer>
           <p>
-            B.
+            B
           </p>
         </answer>
       </task>
 
       <task>
         <statement>
-          <p> We are almost ready to solve, but we have two variables in our weight equation and our cost equation. We will get the cost equation to one variable by using the weight equation as a substitution. Which of the following is a way to express one variable in terms of the other? (Hint: More than one answer may be correct here!)
-           
+          <p> We are almost ready to solve, but we have two variables in our weight equation and our cost equation. We will get the cost equation to one variable by using the weight equation as a substitution. Which of the following is a way to express one variable in terms of the other?
+
             <ol marker= "A.">  
               <li>If <m>N</m> is the total weight of the Nerds Gummy Clusters, then <m>7-N</m> could represent the weight of the Starburst Jelly Beans.</li>
               <li>If <m>N</m> is the total weight of the Nerds Gummy Clusters, then <m>7+N</m> could represent the weight of the Starburst Jelly Beans.</li>
@@ -437,16 +442,21 @@
             </ol>
           </p>
         </statement>
+        <hint>
+          <p>
+            More than one answer may be correct here!
+          </p>
+        </hint>
         <answer>
           <p>
-            A. or C.
+            A or C
           </p>
         </answer>
       </task>
 
       <task>
         <statement>
-          <p> Plug your expressions in to the total cost equation. (Hint: More than one of these may be correct!) 
+          <p> Plug your expressions in to the total cost equation.
            
             <ol marker= "A.">  
               <li><m>8.38N+7.16(7-N)=55.61</m></li>
@@ -457,9 +467,14 @@
             </ol>
           </p>
         </statement>
+        <hint>
+          <p>
+            More than one of these may be correct!
+          </p>
+        </hint> 
         <answer>
           <p>
-            A. or D., depending on the substitution chosen
+            A or D, depending on the substitution chosen.
           </p>
         </answer>
       </task>
@@ -478,7 +493,7 @@
         </statement>
         <answer>
           <p>
-            C.
+            C
           </p>
         </answer>
       </task>
@@ -489,7 +504,7 @@
     <activity xml:id="activity-la-percentmixture">
       <statement>
         <p>
-          A chemist needs to mix two solutions to create a mixture consisting of 30% alcohol. She uses 20 liters of the first solution, which has a concentration of 21% alcohol. How many liters of the second solution (that is 45% alcohol) should she add to the first solution to create the mixture that is 30% alcohol?
+          A chemist needs to mix two solutions to create a mixture consisting of <m>30\%</m> alcohol. She uses <m>20</m> liters of the first solution, which has a concentration of <m>21\%</m> alcohol. How many liters of the second solution (that is <m>45\%</m> alcohol) should she add to the first solution to create the mixture that is <m>30\%</m> alcohol?
         </p>
         
       </statement>
@@ -502,8 +517,12 @@
 
     </subsection>
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ2/"/>. </p>  
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>Coming eventually.....</p>
-    </subsection>
+    </subsection> -->
 </section>

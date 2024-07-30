@@ -740,62 +740,7 @@
    
       
     </activity>
-    
-    <remark xml:id="def-number-e">
-      <statement>
-        <p>
-          The letter <term><m>e</m></term> represents an irrational number and is used as a base for many real-world exponential models. To work with base <m>e</m>, we use the approximation, <m>e \approx 2.718282</m>.  It can also be found on most calculators. 
-        </p> 
-      </statement> 
-      <aside>
-        <p> See <xref ref="compound-interest"/> for a more detailed derivation of <m>e</m>.
-        </p>
-      </aside>
-      
-    </remark>
-    <activity xml:id="act-evaluate-base-e">
-      <introduction>
-        <p>
-          Use a calculator to evaluate the following exponentials involving the base <m>e</m>.
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            <m>f(x)=-2e^{x}-2</m> for <m>f(-2)</m>
-          </p>
-          <ol marker= "A." cols="2">
-            <li> <m>-0.0366</m> </li>
-            <li> <m>-2.2707</m> </li>
-            <li> <m>-1.7293</m> </li>
-            <li> <m>-16.778</m></li>
-          </ol>
-        </statement>
-        <answer>
-          <p>
-            B 
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>f(x)=\frac{1}{3}e^{x+1}</m> for <m>f(-1)</m>
-            <ol marker= "A." cols="2">
-              <li> <m>1</m> </li>
-              <li> <m>0</m> </li>
-              <li> <m>1.122</m> </li>
-              <li> <m>\frac{1}{3}</m></li>
-            </ol>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            D
-          </p>
-        </answer>
-      </task>
-    </activity>
+
     <remark xml:id="neg-exp">
       Recall the negative rule of exponents which states that for any nonzero real number <m>a</m> and natural number <m>n</m>
     <me>
@@ -953,10 +898,73 @@
       </task>
     </activity>
 
+        
+    <remark xml:id="remark-number-e">
+      <statement>
+        <p>
+          Similar to how <m>\pi</m> arises naturally in geometry, there is an irrational number called <term><m>e</m></term> that
+          arises naturally when working with exponentials.  We usually use the approximation  <m>e \approx 2.718282</m>.  
+          <m>e</m> is also found on most scientific and graphing calculators. 
+        </p> 
+      </statement> 
+      <aside>
+        <p> See <xref ref="activity-introducing-e"/> for an exploration of how <m>e</m> arises naturally.
+        </p>
+      </aside>
+    </remark>
+
+    <activity xml:id="act-evaluate-base-e">
+      <introduction>
+        <p>
+          Use a calculator to evaluate the following exponentials involving the base <m>e</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=-2e^{x}-2</m> for <m>f(-2)</m>
+          </p>
+          <ol marker= "A." cols="2">
+            <li> <m>-0.0366</m> </li>
+            <li> <m>-2.2707</m> </li>
+            <li> <m>-1.7293</m> </li>
+            <li> <m>-16.778</m></li>
+          </ol>
+        </statement>
+        <answer>
+          <p>
+            B 
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=\frac{1}{3}e^{x+1}</m> for <m>f(-1)</m>
+            <ol marker= "A." cols="2">
+              <li> <m>1</m> </li>
+              <li> <m>0</m> </li>
+              <li> <m>1.122</m> </li>
+              <li> <m>\frac{1}{3}</m></li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+    </activity>
+
     </subsection>
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL1/"/>. </p> 
+    </exercises>
+    
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

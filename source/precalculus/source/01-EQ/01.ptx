@@ -30,6 +30,11 @@
         <li><p> <m>x=-2</m></p></li>
     </ol> </p>
     </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -41,6 +46,11 @@
         <li><p> <m>x=\frac{14}{23}</m></p></li>
     </ol> </p>
     </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
   </task>
 </activity>
 <activity>
@@ -59,6 +69,11 @@
           <li><p> <m>4x-48=5x+1</m></p></li>
       </ol> </p>
   </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -70,6 +85,11 @@
           <li><p> <m>x=-49</m></p></li>
       </ol> </p>
     </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
   </task>
 </activity>
 <activity>
@@ -82,30 +102,45 @@
     <p> Which of these equations has one unique solution?
       <ol marker="A." cols="2">
         <li><p><m>4(x-2)=4x+6</m> </p></li>
-        <li><p> <m>4(x-1)=4x+4</m> </p></li>
+        <li><p> <m>4(x-1)=4x-4</m> </p></li>
         <li><p> <m>4(x-1)=x+4</m> </p></li>
     </ol> </p>
   </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
     <p> Which of these equations has no solutions?
       <ol marker="A." cols="2">
         <li><p><m>4(x-2)=4x+6</m> </p></li>
-        <li><p> <m>4(x-1)=4x+4</m> </p></li>
+        <li><p> <m>4(x-1)=4x-4</m> </p></li>
         <li><p> <m>4(x-1)=x+4</m> </p></li>
     </ol> </p>
     </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
     <p> Which of these equations has many solutions?
       <ol marker="A." cols="2">
         <li><p><m>4(x-2)=4x+6</m> </p></li>
-        <li><p> <m>4(x-1)=4x+4</m> </p></li>
+        <li><p> <m>4(x-1)=4x-4</m> </p></li>
         <li><p> <m>4(x-1)=x+4</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -113,6 +148,11 @@
         What happens to the <m>x</m> variable when a linear equation has no solution or many solutions?
       </p>
     </statement>
+    <answer>
+      <p>
+        The <m>x</m> variable cancels leaving only constants.
+      </p>
+    </answer>
   </task>
 </activity>
 <definition>
@@ -128,6 +168,11 @@
     <statement>
     <p> What is the solution to the linear equation <m>3x-1=5</m>?</p>
   </statement>
+  <answer>
+    <p>
+      <m>x=2</m>
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -139,6 +184,11 @@
         <li><p> <m>x=10</m> </p></li>
     </ol> </p>
     </statement>
+    <answer>
+      <p>
+        B, C, and D
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -150,6 +200,11 @@
         <li><p> <m>[2,\infty)</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -211,6 +266,11 @@
     </ol> </p>
   
   </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
   </task>
 </activity>
 <activity>
@@ -229,12 +289,22 @@
         <li><p> <m>x=10</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      C and D
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
     <p> Solve the linear inequality <m>-x\lt 8</m>.  How does your solution compare to the values chosen in part (a)?
      </p>
     </statement>
+    <answer>
+      <p>
+        <m>x>-8</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -246,6 +316,11 @@
         <li><p> <m>[-8,\infty)</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -257,7 +332,7 @@
             <latex-image>
               \begin{tikzpicture}[scale=7]
 \draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
   \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
 \draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
 \fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
@@ -270,7 +345,7 @@
           <latex-image>
             \begin{tikzpicture}[scale=7]
 \draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
 \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
 \draw[{-)}, ultra thick, blue] (0.59,0) -- (0.6,0);
 \fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
@@ -283,7 +358,7 @@
         <latex-image>
           \begin{tikzpicture}[scale=7]
 \draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
 \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
 \draw[{(-}, ultra thick, blue] (0.59,0) -- (0.6,0);
 \fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
@@ -296,7 +371,7 @@
       <latex-image>
         \begin{tikzpicture}[scale=7]
 \draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/5,0.2/6,0.4/7,0.6/8,0.8/9, 1/10}
+\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
 \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
 \draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
 \fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
@@ -307,6 +382,11 @@
 </ol> </p>
 
 </statement>
+<answer>
+  <p>
+    C
+  </p>
+</answer>
 </task>
 </activity>
 <remark>
@@ -324,6 +404,24 @@
           <m>-3x-1 \le 5</m>
         </p>
     </statement>
+    <answer>
+      <p>
+        <m>x \ge -2</m>, <m>[-2,\infty]</m>
+        <image>
+          <sageplot>
+            P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
+            P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
+            for i in range(-9,10):
+              P += line([(i,-0.2),(i,0.2)],color="black")
+              P += text(f"${i}$", (i,-0.6),color="black")
+            P+= arrow((-2,0),(10,0),color="#0088ff", width=3, arrowsize=3)
+            P += text("[", (-2,0), color="#0088ff", fontsize=16)
+            P.axes(False)
+            P
+          </sageplot>
+        </image>
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -331,13 +429,50 @@
         <m>3(x+4) \gt 2x-1</m>
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>x \gt -13</m>, <m>(-13,\infty)</m>
+        <image>
+        <sageplot>
+          P = arrow((0,0),(20,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
+          P += arrow((0,0),(-20,0),color="black", width=1, arrowsize=1)
+          for i in range(-19,20):
+            P += line([(i,-0.2),(i,0.2)],color="black")
+          for i in range(-9,10):
+            P += text(f"${2*i}$", (2*i,-0.6),color="black")
+          P+= arrow((-13,0),(20,0),color="#0088ff", width=3, arrowsize=3)
+          P += text("(", (-13,0), color="#0088ff", fontsize=16)
+          P.axes(False)
+          P
+        </sageplot>
+      </image>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
     <p>
-      <m>-\frac{1}{2}x \ge -\frac{2}{4}+\frac{5}{4}x</m>
+      <m>-\frac{1}{2}x \ge -\frac{3}{4}+\frac{5}{4}x</m>
     </p>
   </statement>
+  <answer>
+    <p>
+      <m>x \le \dfrac{7}{3}</m>, <m>\left(-\infty, \dfrac{7}{3} \right)</m>
+      <image>
+      <sageplot>
+        P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
+        P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
+        for i in range(-9,10):
+          P += line([(i,-0.2),(i,0.2)],color="black")
+          P += text(f"${i}$", (i,-0.6),color="black")
+        P+= arrow((7/3,0),(-10,0),color="#0088ff", width=3, arrowsize=3)
+        P += text("]", (7/3,0), color="#0088ff", fontsize=16)
+        P.axes(False)
+        P
+      </sageplot>
+      </image>
+    </p>
+  </answer>
 </task>
   
 </activity>
@@ -365,6 +500,11 @@
         <li><p> <m>2x-3 \gt 8</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      A and C
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -377,6 +517,11 @@
         <li><p> <m>x \ge 3</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -389,6 +534,11 @@
         <li><p> <m>x \lt \frac{5}{2}</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -401,6 +551,11 @@
         <li><p> <m>3 \le x \lt \frac{11}{2}</m> </p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -466,6 +621,11 @@
 </ol> </p>
 
 </statement>
+<answer>
+  <p>
+    A
+  </p>
+</answer>
 </task>
   
 </activity>
@@ -484,6 +644,24 @@
         <m>8 \lt -3x-1 \le 11</m>
       </p>
   </statement>
+  <answer>
+    <p>
+      <m>-4 \le x \lt -3</m>, <m>[-4,-3)</m>
+      <image>
+        <sageplot>
+          P = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+          for i in range(-9,10):
+            P += line([(i,-0.2),(i,0.2)],color="black")
+            P += text(f"${i}$", (i,-0.6),color="black")
+          P+= line([(-4,0),(-3,0)],color="#0088ff", thickness=3)
+          P += text("[", (-4,0), color="#0088ff", fontsize=16)
+          P += text(")", (-3,0), color="#0088ff", fontsize=16)
+          P.axes(False)
+          P
+        </sageplot>
+      </image>
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -491,13 +669,35 @@
         <m> -6 \le \frac{x-12}{4} \lt -2</m>
       </p>
   </statement>
+  <answer>
+    <p>
+      <m>-12 \le x \lt 4</m>, <m>[-12,4)</m>
+      <image>
+        <sageplot>
+          P = arrow((-14,0),(13,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+          for i in range(-13,13):
+            P += line([(i,-0.2),(i,0.2)],color="black")
+            P += text(f"${i}$", (i,-0.6),color="black")
+          P+= line([(-12,0),(4,0)],color="#0088ff", thickness=3)
+          P += text("[", (-12,0), color="#0088ff", fontsize=16)
+          P += text(")", (4,0), color="#0088ff", fontsize=16)
+          P.axes(False)
+          P
+        </sageplot>
+      </image>
+    </p>
+  </answer>
   </task>
 </activity>
 
     </subsection>
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ1/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

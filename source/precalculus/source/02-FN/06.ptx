@@ -26,17 +26,20 @@
       
       <task>
         <statement>
-          <p> Room temperature is around 68 degrees Fahrenheit.  Use the above equation to convert this temperature to Celsius.
+          <p> Room temperature is around <m>68</m> degrees Fahrenheit.  Use the above equation to convert this temperature to Celsius.
         <ol marker= "A." cols="2">  
         <li> <m>5.8</m></li>
         <li> <m>20</m></li>
         <li> <m>155.4</m></li>
         <li> <m>293</m></li>
-        
-        
       </ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
       </task>
       <task>
         <statement>
@@ -49,11 +52,16 @@
       </ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
       </task>
     
       <task>
         <statement>
-          <p> Alternatively, 20 degrees Celsius is a fairly comfortable temperature.  Use your solution for <m>F</m> in terms of <m>C</m> to convert this temperature to Fahrenheit.
+          <p> Alternatively, <m>20</m> degrees Celsius is a fairly comfortable temperature.  Use your solution for <m>F</m> in terms of <m>C</m> to convert this temperature to Fahrenheit.
         <ol marker= "A." cols="2">  
         <li> <m>43.1</m></li>
         <li> <m>-20.9</m></li>
@@ -62,11 +70,16 @@
       </ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
       </task>
       
   </activity>
   <remark>
-    Notice that when you converted 68 degrees Fahrenheit, you got a value of 20 degrees Celsius. Alternatively, when you converted 20 degrees Celsius, you got 68 degrees Fahrenheit. This indicates that the equation you were given for <m>C</m> and the equation you found for <m>F</m> are inverses.
+    Notice that when you converted <m>68</m> degrees Fahrenheit, you got a value of <m>20</m> degrees Celsius. Alternatively, when you converted <m>20</m> degrees Celsius, you got <m>68</m> degrees Fahrenheit. This indicates that the equation you were given for <m>C</m> and the equation you found for <m>F</m> are inverses.
   </remark>
   <definition xml:id="def-inverse-function">
     <statement>
@@ -163,6 +176,11 @@
     </ol>
     </p>
     </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -170,6 +188,11 @@
           Is it possible to reverse the input and output rows of the function <m>g(x)</m> and have the new table result in a function?
         </p>
       </statement>
+      <answer>
+        <p>
+          Yes. If you reverse the input and output values, you will see that every input goes to exactly one output (which defines a function).
+        </p>
+      </answer>
     </task>
     <task>
       <statement>
@@ -183,6 +206,11 @@
     </ol>
     </p>
     </statement>
+    <answer>
+      <p>
+        B and D
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -190,11 +218,16 @@
           Is it possible to reverse the input and output rows of the function <m>f(x)</m> and have the new table result in a function?
         </p>
       </statement>
+      <answer>
+        <p>
+          If you reverse the input and output values, the resulting table is NOT a function. This is because the new input <m>x=4</m> will be mapping onto two <m>y</m>-values (<m>1</m> and <m>3</m>).
+        </p>
+      </answer>
     </task>
     
   </activity>
   <remark xml:id="remark-invert"> 
-    Some functions, like <m>f(x)</m> in <xref ref="table-not-func" />, have a given output value that corresponds to two or more input values: <m>f(0)=6</m> and <m>f(4)=6 </m>. If we attempt to reverse the process of this function, we have a situation where the new input 6 would correspond to two potential outputs.
+    Some functions, like <m>f(x)</m> in <xref ref="table-not-func" />, have a given output value that corresponds to two or more input values: <m>f(0)=6</m> and <m>f(4)=6 </m>. If we attempt to reverse the process of this function, we have a situation where the new input <m>6</m> would correspond to two potential outputs.
   </remark>
   
   <definition xml:id="def-one-to-one">
@@ -220,25 +253,35 @@
       <statement>
         <p> When you evaluate this expression for a given input value of <m>x</m>, what operations do you perform and in what order?
       <ol marker= "A." cols="1">  
-      <li> divide by 3, subtract 5</li>
-      <li> subtract 5, divide by 3</li>
-      <li> add 5, multiply by 3</li>
-      <li> multiply by 3, add 5</li> 
+      <li> divide by <m>3</m>, subtract <m>5</m></li>
+      <li> subtract <m>5</m>, divide by <m>3</m></li>
+      <li> add <m>5</m>, multiply by <m>3</m></li>
+      <li> multiply by <m>3</m>, add <m>5</m></li> 
     </ol>
     </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
         <p> When you "undo" this expression to solve for a given ouput value of <m>y</m>, what operations do you perform and in what order?
       <ol marker= "A." cols="1">  
-      <li> divide by 3, subtract 5</li>
-      <li> subtract 5, divide by 3</li>
-      <li> add 5, multiply by 3</li>
-      <li> multiply by 3, add 5</li> 
+      <li> divide by <m>3</m>, subtract <m>5</m></li>
+      <li> subtract <m>5</m>, divide by <m>3</m></li>
+      <li> add <m>5</m>, multiply by <m>3</m></li>
+      <li> multiply by <m>3</m>, add <m>5</m></li> 
     </ol>
     </p>
     </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -251,6 +294,11 @@
     </ol>
     </p>
     </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -258,14 +306,18 @@
           Check your answer to the previous question by finding <m>f(f^{-1}(x))</m> and <m>f^{-1}(f(x))</m>.
         </p>
         </statement>
+        <answer>
+          <p>
+            By completing this task, students should find that when they do the composition (in both directions), they will get an output of <m>x</m>.
+          </p>
+        </answer>
     </task>
   </activity>
 
   <observation xml:id="def-find-inverse">
     <statement>
       <p>
-        To find the inverse of a one-to-one function, perform the reverse operations in the opposite order.  
-
+        To find the inverse of a one-to-one function, perform the reverse operations in the opposite order.
       </p>
     </statement>
   </observation>
@@ -292,12 +344,12 @@
         </ol>
         </p>  
       </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
     </task>
-    <answer>
-      <p>
-        Choice C: <m>x=\frac{y}{y+1}</m>
-      </p>
-    </answer>
     <task>
       <statement>
       <p>
@@ -305,17 +357,17 @@
        <ol marker= "A." cols="1">  
         <li> <m>y(x+1)=x</m></li>
       <li> <m>x(x+1)=y</m></li>
-      <li> <m>x(y+1)=y</m></li>
       <li> <m>x(y+1)=x</m></li>
+      <li> <m>x(y+1)=y</m></li>
       </ol>
       </p>  
   </statement>
-  </task>
   <answer>
     <p>
-      Choice C: <m>x(y+1)=y</m>
+      D
     </p>
   </answer>
+  </task>
   <task>
     <statement>
     <p>
@@ -328,12 +380,12 @@
     </ol>
     </p>  
 </statement>
-</task>
 <answer>
   <p>
-    Choice C: <m>x=\frac{y}{y+1}</m>
+    C
   </p>
 </answer>
+</task>
 
     <task>
       <statement>
@@ -347,12 +399,12 @@
       </ol>
       </p>  
   </statement>
-  </task>
   <answer>
     <p>
-      Choice B: <m>h^{-1}(x)=\frac{x}{1-x}</m>
+      B
     </p>
   </answer>
+  </task>
   </activity>
 
   <activity xml:id="activity-find-inverse">
@@ -372,6 +424,11 @@
     </ol>
     </p>
   </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
     </task>
 
     <task>
@@ -385,14 +442,23 @@
     </ol>
     </p>
     </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
     </task>
   </activity> 
 
     </subsection>
     
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/FN6/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

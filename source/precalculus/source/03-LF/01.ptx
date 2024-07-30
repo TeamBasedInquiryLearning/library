@@ -18,7 +18,7 @@
 
    <activity xml:id="LR-1-Investigation-of-slope">
     <introduction>
-        <p> Robert came home one day after school to a very hot house! When he got home, the temperature on the thermostat indicated that it was 85 degrees! Robert decided that was too hot for him, so he turned on the air conditioner. The table of values below indicate the temperature of his house after turning on the air conditioner.
+        <p> Robert came home one day after school to a very hot house! When he got home, the temperature on the thermostat indicated that it was <m>85</m> degrees! Robert decided that was too hot for him, so he turned on the air conditioner. The table of values below indicate the temperature of his house after turning on the air conditioner.
           <table xml:id="Time-versus-temperature">
             <tabular>
               <row header="yes" bottom="minor" >
@@ -68,7 +68,7 @@
     </statement>
       <answer>
         <p>
-          B: The temperature decreased by <m>1.4</m> degrees
+          B
         </p>
       </answer>
     </task>
@@ -83,7 +83,7 @@
     </statement>
       <answer>
         <p>
-          B: The temperature decreased by <m>1.4</m> degrees
+          B
         </p>
       </answer>
     </task>
@@ -107,7 +107,7 @@
       </statement>
       <answer>
         <p>
-          Overall, the temperature of Robert's house is decreasing (the air conditioner appears to be working!). Notice that in parts <m>a</m> and <m>b</m>, the temperature decreased <m>1.4</m> degrees in <m>2</m> minutes.
+          Overall, the temperature of Robert's house is decreasing (the air conditioner appears to be working!). Notice that in parts (a) and (b), the temperature decreased <m>1.4</m> degrees in <m>2</m> minutes.
         </p>
       </answer>
     </task>
@@ -136,7 +136,7 @@
       </statement>
       <answer>
         <p>
-          D: <m>79.4</m>
+          D
         </p>
       </answer>
     </task>
@@ -153,7 +153,7 @@
       </statement>
       <answer>
         <p>
-          C: <m>10</m> minutes
+          C
         </p>
       </answer>
     </task>
@@ -226,7 +226,7 @@
       </statement>
       <answer>
         <p>
-          C: <m>-7</m>
+          C
         </p>
       </answer>
     </task>
@@ -243,7 +243,7 @@
       </statement>
       <answer>
         <p>
-          A: <m>-5</m>
+          A
         </p>
       </answer>
     </task>
@@ -287,7 +287,7 @@
       </statement>
       <answer>
         <p>
-          B: <m>\frac{1}{2}</m>
+          B
         </p>
       </answer>
     </task>
@@ -304,7 +304,7 @@
       </statement>
       <answer>
         <p>
-          A: <m>\frac{1}{6}</m>
+          A
         </p>
       </answer>
     </task>
@@ -330,7 +330,7 @@
     </statement>
     <answer>
       <p>
-        B: <m>-3</m>
+        B
       </p>
     </answer>
   </task>
@@ -348,7 +348,7 @@
     </statement>
     <answer>
       <p>
-        D: <m>-12</m>
+        D
       </p>
     </answer>
   </task>
@@ -380,7 +380,7 @@
     </statement>
     <answer>
       <p>
-        B: <m>3</m>
+        B
       </p>
     </answer>
   </task>
@@ -397,16 +397,21 @@
     </statement>
     <answer>
       <p>
-        A: <m>3</m>
+        A 
       </p>
     </answer>
   </task>
   <task>
     <statement>
       <p>
-        Based on your observations in parts <m>a</m> and <m>b</m>, what do you think will be the average rate of change on the interval <m>[5,25]</m>?
+        Based on your observations in parts (a) and (b), what do you think will be the average rate of change on the interval <m>[5,25]</m>?
       </p>
     </statement>
+  <answer>
+    <p>
+      The average rate of change is <m>3</m>. Based on the previous parts, it shows that the average rate of change does not change for this function.
+    </p>
+  </answer>
   </task>
   </activity>
 
@@ -473,7 +478,7 @@
 <task>
   <statement>
     <p>
-      Using information from parts <m>a</m> and <m>b</m>, what value could we use to describe the steepness of the red line?
+      Using information from parts (a) and (b), what value could we use to describe the steepness of the red line?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -524,7 +529,7 @@
 <task>
   <statement>
     <p>
-      Using information from parts <m>d</m> and <m>e</m>, what value could we use to describe the steepness of the blue line?
+      Using information from parts (d) and (e), what value could we use to describe the steepness of the blue line?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -615,7 +620,7 @@
     </statement>
     <answer>
       <p>
-        Students will probably notice that both slopes have the same steepness (<m>\frac{1}{2}</m>).
+        Students will probably notice that both slopes have the same steepness <m>(\frac{1}{2})</m>.
       </p>
     </answer>
   </task>
@@ -627,7 +632,7 @@
     </statement>
     <answer>
       <p>
-        Although both slopes have the same steepness (<m>\frac{1}{2}</m>), one line has a positive slope (blue line) and the other line has a negative slope (green line).
+        Although both slopes have the same steepness <m>(\frac{1}{2})</m>, one line has a positive slope (blue line) and the other line has a negative slope (green line).
       </p>
     </answer>
   </task>
@@ -680,7 +685,7 @@
   <task>
     <statement>
       <p>
-        What do you notice about the slopes you got in parts <m>a</m> and <m>b</m>?
+        What do you notice about the slopes you got in parts (a) and (b)?
       </p>
     </statement>
     <answer>
@@ -732,6 +737,11 @@
            </tabular>
     </p>
   </statement>
+  <answer>
+    <p>
+      <m>m=3</m>
+    </p>
+  </answer>
 </task>
 
 <task>
@@ -742,6 +752,11 @@
       p
     </sageplot>
   </image>
+  <answer>
+    <p>
+      <m>m=0</m>
+    </p>
+  </answer>
 </task>
 
 <task>
@@ -750,6 +765,11 @@
       <m>(-4,7)</m> and <m>(-4,1)</m>
     </p>
   </statement>
+  <answer>
+    <p>
+      The slope is undefined. 
+    </p>
+  </answer> 
 </task>
 </activity>
 
@@ -759,8 +779,12 @@
 
     </subsection>
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/LF1/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

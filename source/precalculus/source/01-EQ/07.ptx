@@ -121,23 +121,53 @@
 </definition>
 
   <activity xml:id="quadratic-inequality-coeff-less-than-0">
-    <statement>
-      <p>Solve the quadratic inequality algebraically<me>2x^2-28 \lt 10x</me>.
-        Write your solution using interval notation.</p>
+    <introduction>
+      <p>Solve the quadratic inequality algebraically<me>2x^2-28 \lt 10x</me>.</p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Write your solution using interval notation.</p>
         <ol marker="A." cols="1">
           <li><p> <m>\left(-\infty,-2\right)\cup\left(7,\infty\right)</m> </p></li>
           <li><p> <m>\left(-\infty,-7\right)\cup\left(2,\infty\right)</m> </p></li>
           <li><p> <m>\left(-7,2\right)</m> </p></li>
           <li><p> <m>\left(-2,7\right)</m></p></li>
-      </ol> 
-    </statement>
-    <answer><p>D.</p></answer>
+        </ol> 
+      </statement>
+      <answer><p>D.</p></answer>
+    </task>
+    <task>
+      <statement>
+      <p>Draw a number line representing your solution.</p>
+      </statement>
+    <answer>
+      <image>
+        <sageplot>
+          <!--<xi:include parse="text" href="../../sage/common.sage"/> -->
+          #p = TBILPrecal.numberline_plot()
+          #p += TBILPrecal.inequality_plot(start=-2,end=7,label_endpoints=False)
+          p = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+          for i in range(-9,10):
+            p += line([(i,-0.2),(i,0.2)],color="black")
+            p += text(f"${i}$", (i,-0.6),color="black")
+          p += line([(-2,0),(7,0)],color="#0088ff", thickness=3, aspect_ratio=1)
+          p += text("(", (-2,0), color="#0088ff", fontsize=18)
+          p += text(")", (7,0), color="#0088ff", fontsize=18)
+          p.axes(False)
+          p
+        </sageplot>
+      </image>
+    </answer>
+    </task>
   </activity>
 
   <activity xml:id="quadratic-inequality-coeff-greater-than-or-equal-0">
+    <introduction>
+      <p>Solve the inequality <me>-2x^2-10x-10 \ge 6x+20</me>.</p>
+    </introduction>
+    <task>
     <statement>
-      <p>Solve the inequality <me>-2x^2-10x-10 \ge 6x+20</me>.
-       Write your solution using interval notation.</p>
+       <p>Write your solution using interval notation.</p>
         <ol marker="A." cols="1">
           <li><p><m>[-5,-3]</m> </p></li>
           <li><p> <m>(-\infty,-5]\cup[-3,\infty)</m> </p></li>
@@ -146,6 +176,66 @@
       </ol> 
     </statement>
     <answer><p>A.</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Draw a number line representing your solution.</p>
+    </statement>
+  <answer>
+    <image>
+      <sageplot>
+        <!--<xi:include parse="text" href="../../sage/common.sage"/> -->
+        #p = TBILPrecal.numberline_plot()
+        #p += TBILPrecal.inequality_plot(start=-5,end=3,strict_start=False,strict_end=False,label_endpoints=False)
+        p = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+        for i in range(-9,10):
+          p += line([(i,-0.2),(i,0.2)],color="black")
+          p += text(f"${i}$", (i,-0.6),color="black")
+        p += line([(-5,0),(3,0)],color="#0088ff", thickness=3, aspect_ratio=1)
+        p += text("[", (-5,0), color="#0088ff", fontsize=18)
+        p += text("]", (3,0), color="#0088ff", fontsize=18)
+        p.axes(False)
+        p
+      </sageplot>
+    </image>
+  </answer>
+  </task>
+  </activity>
+
+  <activity xml:id="activity-rational-inequality-0">
+    <introduction>
+      <p>
+        Consider the rational inequality <me> \frac{x+3}{x-2} \leq 0.</me>
+      </p>
+    </introduction>
+    <task>
+      <statement>
+      <p> 
+        Use a graphing utility to graph the function <m>f(x)=\dfrac{x+3}{x-2}</m>.  
+        Which part of the graph represents where <m>\dfrac{x+3}{x-2}\leq 0</m>? 
+        Write your answer in interval notation.
+      </p> 
+      </statement>
+    <answer>
+      <image>
+        <sageplot>
+          f(x) = (x+3)/(x-2)
+          fill_opt = {'fillcolor': 'blue', 'thickness': 0}
+          p=plot(f,(x,-3,2),fill=True,**fill_opt,ymin=-15,ymax=15)+plot(f,(x,-5,5),thickness=3,detect_poles=True)
+          p
+        </sageplot>
+      </image>
+      <p>The graph is below the <m>x</m>-axis on the interval <m>[-3,2)</m>.</p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+    <p> How does the interval you found in part (a) relate to the numerator and the denominator 
+      of the function <m>f(x)=\dfrac{x+3}{x-2}</m>? 
+      </p>
+  </statement>
+  <answer><p>The places where the numerator or denominator are zero are the potential places where the sign can change.</p></answer> 
+  </task>   
   </activity>
 
   <activity xml:id="activity-rational-inequality-1">
@@ -166,9 +256,23 @@
     </task>
     <task>
       <statement>
-      <p> Use a graphing utility to graph the function <m>g(x)=\frac{4x+3}{x+2}-x</m>.  
-        Which part of the graph represents where <m>\frac{4x+3}{x+2}-x\gt0</m>?</p> 
+      <p> 
+        Use a graphing utility to graph the function <m>g(x)=\frac{4x+3}{x+2}-x</m>.  
+        Which part of the graph represents where <m>\frac{4x+3}{x+2}-x\gt0</m>? 
+        Write your answer in interval notation.
+      </p> 
     </statement>
+    <answer>
+      <image>
+        <sageplot>
+          f(x) = (4*x+3)/(x+2)-x
+          fill_opt = {'fillcolor': 'blue', 'thickness': 0}
+          p=plot(f,(x,-1,3),fill=True,**fill_opt)+plot(f,(x,-7,-2),fill=True,**fill_opt)+plot(f, (x, -7, 7), ymin=-15, ymax=15, color='blue', thickness=3, detect_poles=True)
+          p
+        </sageplot>
+      </image>
+      <p>The graph is above the <m>x</m>-axis on the interval <m>(-\infty, -2) \cup (-1,3)</m>.</p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -184,12 +288,12 @@
     </task>
     <task>
       <statement>
-      <p> How do these values you found in part (b) relate to the numerator and the denominator 
+      <p> How does the interval you found in part (b) relate to the numerator and the denominator 
         of the combined rational function in part (c)? 
         </p>
     </statement>
     <hint><p>Factor the numerator.</p></hint>
-    <answer><p>The places where the numerator or denominator vanishes are the potential places where the sign can change.</p></answer> 
+    <answer><p>The places where the numerator or denominator are zero are the potential places where the sign can change.</p></answer> 
     </task>   
 <task>
     <statement>
@@ -207,10 +311,10 @@
     <statement>
     <p> How can we express the answers to part (e) for the rational inequality using interval notation?</p>
     <ol marker="A." cols="1">
-      <li><m>\left(-\infty,-2\right) \cup (-1,3)</m></li>
+      <li><m>\left(1,3\right) </m></li>
       <li><m>\left(-2,-1\right) \cup (3,\infty)</m></li>
       <li><m>\left(-2,-1\right) </m></li>
-      <li><m>\left(1,3\right) </m></li>
+      <li><m>\left(-\infty,-2\right) \cup (-1,3)</m></li>
   </ol>
 </statement>
 <answer><p>A.</p></answer>
@@ -243,6 +347,32 @@
     </task>
     <task>
       <statement>
+      <p>Draw a number line representing your solution.</p>
+      </statement>
+    <answer>
+      <image>
+        <sageplot>
+          <!--<xi:include parse="text" href="../../sage/common.sage"/> -->
+          #p = TBILPrecal.numberline_plot()
+          #p += TBILPrecal.inequality_plot(end=-12,strict_end=False,label_endpoints=False)
+          #p += TBILPrecal.inequality_plot(start=-5,end=2,label_endpoints=False)
+          p = arrow((-14,0),(5,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+          for i in range(-14,5):
+              p += line([(i,-0.2),(i,0.2)],color="black")
+              p += text(f"${i}$", (i,-0.6),color="black")
+          p += arrow((-12,0),(-15,0),color="#0088ff", width=3)
+          p += line([(-5,0),(2,0)],color="#0088ff", thickness=3)
+          p += text("]", (-12,0), color="#0088ff", fontsize=18)
+          p += text("(", (-5,0), color="#0088ff", fontsize=18)
+          p += text(")", (2,0), color="#0088ff", fontsize=18)
+          p.axes(False)
+          p
+        </sageplot>
+      </image>
+    </answer>
+    </task>
+    <task>
+      <statement>
       <p> 
         Compare the interval notation from <xref ref="activity-rational-inequality-1"/> to the interval 
         notation for this activity. When do we include the partition values in the answer with a bracket?
@@ -254,8 +384,13 @@
   </activity>
   
 </subsection>
-  <subsection>
+
+<exercises>
+  <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ7/"/>. </p> 
+</exercises>
+
+  <!-- <subsection>
     <title>Videos</title>
     <p>It would be great to include videos down here, like in the Calculus book!</p>
-  </subsection>
+  </subsection> -->
 </section>

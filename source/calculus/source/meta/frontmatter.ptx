@@ -5,107 +5,97 @@
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
-      <author>
-        <personname>TBIL Institute Fellows</personname>
-        <email>sclontz@southalabama.edu</email>
-      </author>
+    <author>
+      <personname>TBIL Community</personname>
+      <email>sclontz+tbil@southalabama.edu</email>
+    </author>
 
-  <credit>
-    <title>Editors</title>
+    <credit>
+      <title>Editors</title>
+      <xi:include href="../../../common/authors/clontz.ptx"/>
+      <xi:include href="../../../common/authors/lewis.ptx"/>
+    </credit>
+    <credit>
+      <title>Contributing Authors</title>
       <author>
-        <personname>Steven Clontz</personname>
-        <department>Department of Mathematics and Statistics</department>
-        <institution>University of South Alabama</institution>
-        <email>sclontz@southalabama.edu</email>
+        <personname>Tien Chih</personname>
+        <department>Department of Mathematics</department>
+        <institution>Montana State University-Billings</institution>
+        <email>tien.chih@msubillings.edu</email>
       </author>
       <author>
-        <personname>Drew Lewis</personname>
-        <department>Department of Mathematics and Statistics</department>
-        <institution>University of South Alabama</institution>
-        <email>drew.lewis@gmail.com</email>
+        <personname>PJ Couch</personname>
+        <department>Department of Mathematics</department>
+        <institution>Lamar University</institution>
+        <email>pjcouch@lamar.edu</email>
       </author>
-  </credit>
-  <credit>
-    <title>Contributing Authors</title>
-    <author>
-      <personname>Tien Chih</personname>
-      <department>Department of Mathematics</department>
-      <institution>Montana State University-Billings</institution>
-      <email>tien.chih@msubillings.edu</email>
-    </author>
-    <author>
-      <personname>PJ Couch</personname>
-      <department>Department of Mathematics</department>
-      <institution>Lamar University</institution>
-      <email>pjcouch@lamar.edu</email>
-    </author>
-    <author>
-      <personname>Francesca Gandini</personname>
-      <department>Department of Mathematics, Statistics, and Computer Scince</department>
-      <institution>St. Olaf College</institution>
-      <email>fra.gandi.phd@gmail.com</email>
-    </author>
-    <author>
-      <personname>Joseph Hibdon</personname>
-      <department>Department of Mathematics</department>
-      <institution>Northeastern Illinois University</institution>
-      <email>j-hibdonjr@neiu.edu</email>
-    </author>
-    <author>
-      <personname>Sarah A. Nelson</personname>
-      <department>Donald and Helen Schort School of Mathematics and Computing Sciences</department>
-      <institution>Lenoir-Rhyne University</institution>
-      <email>sarah.nelson@lr.edu</email>
-    </author>
-    <author>
-      <personname>Abby Noble</personname>
-      <department>Department of Mathematics and Statistics</department>
-      <institution>Middle Georgia State University</institution>
-      <email>abby.noble@mga.edu</email>
-    </author>
-    <author>
-      <personname>Dave Rosoff</personname>
-      <department>Department of Mathematics and Physical Sciences</department>
-      <institution>The College of Idaho</institution>
-      <email>drosoff@collegeofidaho.edu</email>
-    </author>
-    <author>
-      <personname>Belin Tsinnajinnie</personname>
-      <department>Department of Mathematics</department>
-      <institution>Santa Fe Community College</institution>
-      <email>belin.tsinnajinnie@sfcc.edu</email>
-    </author>
-  </credit>
-        <date><today /></date>
+      <author>
+        <personname>Francesca Gandini</personname>
+        <department>Department of Mathematics, Statistics, and Computer Scince</department>
+        <institution>St. Olaf College</institution>
+        <email>fra.gandi.phd@gmail.com</email>
+      </author>
+      <author>
+        <personname>Joseph Hibdon</personname>
+        <department>Department of Mathematics</department>
+        <institution>Northeastern Illinois University</institution>
+        <email>j-hibdonjr@neiu.edu</email>
+      </author>
+      <author>
+        <personname>Sarah A. Nelson</personname>
+        <department>Donald and Helen Schort School of Mathematics and Computing Sciences</department>
+        <institution>Lenoir-Rhyne University</institution>
+        <email>sarah.nelson@lr.edu</email>
+      </author>
+      <author>
+        <personname>Abby Noble</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>Middle Georgia State University</institution>
+        <email>abby.noble@mga.edu</email>
+      </author>
+      <author>
+        <personname>Dave Rosoff</personname>
+        <department>Department of Mathematics and Physical Sciences</department>
+        <institution>The College of Idaho</institution>
+        <email>drosoff@collegeofidaho.edu</email>
+      </author>
+      <author>
+        <personname>Belin Tsinnajinnie</personname>
+        <department>Department of Mathematics</department>
+        <institution>Santa Fe Community College</institution>
+        <email>belin.tsinnajinnie@sfcc.edu</email>
+      </author>
+    </credit>
+    <date><today /></date>
   </titlepage>
 
 
   <colophon xml:id="colophon">
-    <website>
-      <url href="http://calculus.tbil.org">Calculus for Team-Based Inquiry Learning</url>
-    </website>
-
-    <xi:include href="./copyright.ptx" />
-      <p>
+    <xi:include href="../../../common/website.ptx"/>
+    <xi:include href="../../../common/copyright.ptx" />
+    <p>
 This work includes materials used under license from the following works:
-      </p>
-      <ul>
-          <li>
-              <p><pubtitle>Active Calculus - single variable</pubtitle></p>
-              <ul>
-                  <li>
-                      <p><url href="https://activecalculus.org/ACS.html"/></p>
-                  </li>
-                  <li>
-                      <p>CC BY-SA 4.0</p>
-                  </li>
-              </ul>
-          </li>
-      </ul>
+    </p>
+    <ul>
+        <li>
+            <p><pubtitle>Active Calculus - single variable</pubtitle></p>
+            <ul>
+                <li>
+                    <p><url href="https://activecalculus.org/ACS.html"/></p>
+                </li>
+                <li>
+                    <p>CC BY-SA 4.0</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <xi:include href="../../../common/nsf.ptx" />
   </colophon>
+
   <xi:include href="../../../common/resource-library.ptx"/>
+
   <preface xml:id="instructor-notes">
-  <title>For Instructors</title>
+    <title>For Instructors</title>
     <xi:include href="../../../common/features.ptx"/>
     <xi:include href="../../../common/community.ptx"/>
   </preface>
@@ -116,11 +106,11 @@ This work includes materials used under license from the following works:
       Videos are available at the end of each section. A complete playlist of videos 
       aligned with this text is available in two parts on YouTube:
       <ul>
-        <li><p><url href="https://www.youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">Chapters LT through IN</url></p></li>
-        <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBMrS1eTKOhX4FfZ7D1U07Ly&amp;si=Iy4v1Vh3U2yHhLr1">Chapters TI through PS</url></p></li>
+        <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">Chapters LT through IN</url></p></li>
+        <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBMrS1eTKOhX4FfZ7D1U07Ly">Chapters TI through PS</url></p></li>
       </ul>
     </p>
-</preface>
+  </preface>
 
 </frontmatter>
 

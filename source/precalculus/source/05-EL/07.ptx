@@ -387,7 +387,7 @@
     <activity xml:id="compound-interest">
       <introduction>
         <p>
-          A <m>529</m> Plan is a college-savings plan that allows relatives to invest money to pay for a child's future college tuition; the account grows tax-free. Lily currently has $<m>10{,}000</m> and opens a <m>529</m> account that will earn <m>6 \%</m> compounded semi-annually.
+          A <m>529</m> Plan is a college-savings plan that allows relatives to invest money to pay for a child's future college tuition; the account grows tax-free. Lily currently has <m>\$10{,}000</m> and opens a <m>529</m> account that will earn <m>6 \%</m> compounded semi-annually.
         </p>
       </introduction>
       <task>
@@ -412,10 +412,10 @@
           <p>
             To the nearest dollar, how much will Lily have in the account in <m>10</m> years?
             <ol marker= "A." cols="2">
-              <li>$<m>106{,}090</m></li>
-              <li>$<m>103{,}000</m></li>
-              <li>$<m>13{,}439</m></li>
-              <li>$<m>18{,}061</m></li></ol>
+              <li><m>\$106{,}090</m></li>
+              <li><m>\$103{,}000</m></li>
+              <li><m>\$13{,}439</m></li>
+              <li><m>\$18{,}061</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -427,7 +427,7 @@
       <task>
         <statement>
           <p>
-            How many years will it take Lily to have $<m>40{,}000</m> in the account for her granddaughter? Round to the nearest tenth.
+            How many years will it take Lily to have <m>\$40{,}000</m> in the account for her granddaughter? Round to the nearest tenth.
             <ol marker= "A." cols="2">
               <li><m>23.4</m> years</li>
               <li><m>46.9</m> years</li>
@@ -452,7 +452,7 @@
       <task>
         <statement>
           <p>
-            Kathy plans to purchase a car that depreciates (loses value) at a rate of <m>14 \%</m> per year.  The initial cost of the car is $<m>21{,}000</m>.  Which equation represents the value, <m>v</m>, of the car after <m>3</m> years?
+            Kathy plans to purchase a car that depreciates (loses value) at a rate of <m>14 \%</m> per year.  The initial cost of the car is <m>\$21{,}000</m>.  Which equation represents the value, <m>v</m>, of the car after <m>3</m> years?
             <ol marker= "A." cols="2">
               <li><m>v=21{,}000(0.14)^3</m></li>
               <li><m>v=21{,}000(0.86)^3</m></li>
@@ -469,7 +469,7 @@
       <task>
         <statement>
           <p>
-            Mr. Smith invested $<m>2{,}500</m> in a savings account that earns <m>3 \%</m> interest compounded annually.  He made no additional deposits or withdrawals.  Which expression can be used to determine the number of dollars in this account at the end of <m>4</m> years? 
+            Mr. Smith invested <m>\$2{,}500</m> in a savings account that earns <m>3 \%</m> interest compounded annually.  He made no additional deposits or withdrawals.  Which expression can be used to determine the number of dollars in this account at the end of <m>4</m> years? 
             <ol marker= "A." cols="2">
               <li><m>2{,}500(1+0.03)^4</m></li>
               <li><m>2{,}500(1+0.3)^4</m></li>
@@ -484,6 +484,167 @@
         </answer>
       </task>
     </activity>
+
+    <activity xml:id="activity-introducing-e">
+      <introduction>
+        <p>
+          Suppose you want to invest <m>\$100</m> in a banking account that has a <m>100 \%</m> interest rate. Let's investigate what would happen to the amount of money you have at the end of one year in the account with varying compounding periods. Use the formula, <m> A(t)=P\left(1+\frac{r}{n}\right)^{nt} </m>, to help you solve the following problems.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose the account is compounded annually (i.e., <m>n=1</m>). How much money would you have in the account at the end of the year?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$200</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            By what factor did the money in your account grow in part a?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Because you initially started with <m>\$100</m> and the account grew to <m>\$200</m> by the end of the year, the account grew by <m>100 \%</m> (doubled), or by a factor of <m>2</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose the account is compounded semi-annually. How much money would you have in the account at the end of the year?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$225</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            By what factor did the money in your account grow in part b?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            At the end of the year, you will have <m>\$225</m>, which is <m>225 \%</m> in growth, or a factor of <m>2.25</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Let's investigate as the compounding periods increase. Fill in the following table.
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>n</m> </cell> 
+                <cell><m>A(t)</m> </cell>
+                <cell>Growth Factor</cell>
+              </row>
+              <row>
+                <cell> <m>1</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>2</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>5</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>1{,}000</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10{,}000</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100{,}000</m> </cell> 
+              </row>
+            </tabular>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>n</m> </cell> 
+                <cell><m>A(t)</m> </cell>
+                <cell>Growth Factor</cell>
+              </row>
+              <row>
+                <cell> <m>1</m> </cell> 
+                <cell> <m>\$200</m> </cell>
+                <cell> <m>2</m> </cell>  
+              </row>
+              <row>
+                <cell> <m>2</m> </cell>
+                <cell> <m>\$225</m> </cell>
+                <cell> <m>2.25</m> </cell>  
+              </row>
+              <row>
+                <cell> <m>5</m> </cell> 
+                <cell> <m>\$248.83</m> </cell>
+                <cell> <m>\approx 2.4883</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10</m> </cell> 
+                <cell> <m>\$259.37</m> </cell>
+                <cell> <m>\approx 2.5937</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100</m> </cell>
+                <cell> <m>\$270.48</m> </cell>
+                <cell> <m>\approx 2.7048</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>1{,}000</m> </cell>
+                <cell> <m>\$271.69</m> </cell>
+                <cell> <m>\approx 2.7169</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10{,}000</m> </cell>
+                <cell> <m>\$271.82</m> </cell>
+                <cell> <m>\approx 2.7182</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100{,}000</m> </cell>
+                <cell> <m>\$271.83</m> </cell>
+                <cell> <m>\approx 2.7183</m> </cell> 
+              </row>
+            </tabular>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What do you notice as the value of <m>n</m> increases? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The growth factor seems to tend towards <m>\approx 2.71</m> as the value of <m>n</m> increases. In other words, as the interval gets smaller, the total returns get slightly higher. If interest is calculated <m>n</m> times per year, at a rate of <m>\frac{100\%}{n}</m>, the total accreted wealth at the end of the first year would be slightly greater than <m>2.7</m> times the initial investment if <m>n</m> is sufficiently large.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <observation>
+      In <xref ref="activity-introducing-e"/>, we can see that as the value of <m>n</m> increases, the factor by which the money increased by tended toward the value of <m>2.71</m>. This value is a significant mathematical constant and is denoted by the symbol <m>e</m>. It is approximately equal to <m>2.718</m>.
+    </observation>
 
     <remark>
       For many real-world phenomena, <m>e</m> is used as the base for exponential functions. Exponential models that use <m>e</m> as the base are called continuous growth or decay models. We see these models in finance, computer science, and most of the sciences, such as physics, toxicology, and fluid dynamics. 
@@ -502,12 +663,12 @@
       <task>
         <statement>
           <p>
-            A person invested $<m>1{,}000</m> in an account earning <m>10 \%</m> per year compounded continuously. How much was in the account at the end of one year?
+            A person invested <m>\$1{,}000</m> in an account earning <m>10 \%</m> per year compounded continuously. How much was in the account at the end of one year?
           </p>
         </statement>
         <answer>
           <p>
-            $<m>1{,}105.17</m>
+            <m>\$1{,}105.17</m>
           </p>
         </answer>
       </task>
@@ -525,10 +686,14 @@
       </task>
     </activity>
 
-    </subsection>
+    </subsection> 
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL7/"/>. </p> 
+    </exercises> 
+    
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

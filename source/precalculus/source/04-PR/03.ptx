@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="PR3" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Polynomial Long Division (PR3) </title>
+    <title>Graphs of Polynomial Functions (PR3) </title>
     <objectives>
     <ul>
       <li>
@@ -9,377 +9,806 @@
       </li>
     </ul>
     </objectives>
-
     <subsection>
     <title>Activities</title>
-    <observation>
-      <p>We have seen previously that we can reduce rational functions by factoring, for example
-        <me>\frac{x^2+5x+4}{x^3+3x^2+2x}=\frac{(x+1)(x+4)}{x(x+2)(x+1)}=\frac{x+4}{x(x+2)}.</me>
-        In this section, we will explore what can we do to simplify rational functions if we are not able to 
-        reduce by easily factoring?
+    
+  <remark
+    xml:id="zeros-and-x-intercepts">
+      <statement>
+        <p>Just like with quadratic functions, we should be able to determine key characteristics that will help guide us in creating a sketch of any polynomial function. We can start by finding both <m> x </m> and <m> y </m>-intercepts and then explore other characteristics polynomial functions can have. Recall that the <term>zeros</term> of a function are the <term><m>x</m>-intercepts </term> - i.e., the values of <m>x</m> that cross or touch the <m>x</m>-axis. Just like with quadratic functions, we can find the zeros of a function by setting the function equal to <m>0</m> and solving for <m>x</m>.</p>
+      </statement>
+    </remark>
+
+    <activity
+    xml:id="find-intercepts">
+      <introduction>
+    <p> Given the function, <m> f(x)=(x-2)(x+1)(x-3)^2 </m>, determine the following characteristics.
     </p>
-  </observation>
-    <definition xml:id="proper-rational-function">
-      <statement>
-        <p> Recall that a fraction is called <term>proper</term> if its numerator is smaller than its denominator, and <term>improper</term> 
-          if the numerator is larger than the denominator (so <m>\frac{3}{5}</m> is a proper fraction, but <m>\frac{32}{7}</m> is an 
-          improper fraction).  Similarly, we define a <term>proper rational function</term> to be a rational function where 
-          the degree of the numerator is less than the degree of the denominator.  </p>
-      </statement>
-    </definition>
-
-    <activity xml:id="identify-improper-rational-functions">
-      <statement>
-        Label each of the following rational functions as either <term>proper</term> or <term>improper</term>.
-        <ol marker="A.">
-          <li><m> \frac{x^3+x}{x^2+4}</m></li>
-          <li><m> \frac{3}{x^2+3x+4}</m></li>
-          <li><m> \frac{7+x^3}{x^2+x+1}</m></li>
-          <li><m> \frac{x^4+x+1}{x^4+4x^2}</m></li>
-        </ol>
-      </statement>
-      <answer><p>A, C, and D are improper, while B is proper.</p></answer>
-    </activity>
-
-    <observation>
-      <p>When dealing with an improper fraction such as <m>\frac{32}{7}</m>, it is sometimes useful to rewrite this
-        as an integer plus an improper fraction, e.g. <m>\frac{32}{7}=4+\frac{4}{7}</m>.  Similarly, it will sometimes be
-        useful to rewrite an improper rational function as the sum of a polynomial and a proper rational function, such 
-        as <m>\frac{x^3+x}{x^2+4}=x-\frac{3x}{x^2+4}</m>.
-      </p>
-    </observation>
-
-    <activity xml:id="Long-division-integer">
-    <introduction>
-      Consider the improper fraction <m>\frac{357}{11}</m>.
     </introduction>
-    <task>
-      <statement>
-        <p>Use long division to write <m>\frac{357}{11}</m> as an integer plus a proper fraction.</p>
-      </statement>
-      <answer>
-      <image xml:id="long-division-integers" width="30%">                
-                  <latex-image>
-                  \(
-                \begin{array}{ r *{19}{c@{}} }
-                &amp;3 &amp; 2 &amp;   \\  
-                \cline{2-4}\\[-14.5pt]
-                \multicolumn{1}{r}{11\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;5 &amp;7  \\
-                &amp; 3&amp;3 &amp;  \\
-                \cline{2-3}
-                &amp; &amp; 2 &amp; 7 \\
-                &amp; &amp; 2 &amp; 2 \\
-                \cline{3-4}
-                &amp; &amp; &amp; 5 \\
-                \end{array}
-                \)
-                </latex-image>
-                </image>
-                <p>So <m>\frac{357}{11}=32+\frac{5}{11}</m>.</p>
-              </answer>
+<task> 
+  <statement>  
+  <p> How many zeros does <m> f(x) </m> have?
+  <ol marker= "A." cols="2">
+    <li> <m> 1 </m> </li>
+    <li> <m> 2 </m> </li>
+    <li> <m> 3 </m> </li>
+    <li> <m> 4 </m>  </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
+</task>
+<task> 
+  <statement>
+    <p> What are the zeros of <m> f(x) </m>?
+    <ol marker= "A." cols="2">
+      <li> <m> 1, 2, 3 </m> </li>
+      <li> <m> -1, 2, 3 </m> </li>
+      <li> <m> 1, -2, -3 </m> </li>
+      <li> <m> -1, 2, -3 </m>  </li></ol></p>
+  
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+    </task>
+<task> 
+     <statement> <p> What is the <m>y</m>-intercept of <m> f(x) </m>?
+        <ol marker= "A." cols="2">
+          <li> <m> -1 </m> </li>
+          <li> <m> -6 </m> </li>
+          <li> <m> 6 </m> </li>
+          <li> <m> -18 </m>  </li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+        </task>
+<task> <statement><p> Now that we have found both the <m>x</m> and <m>y</m>-intercepts of <m>f(x)</m>, do we have enough information to draw a possible sketch of <m>f(x)</m>? What other characteristics would be useful to help us draw an accurate sketch of <m> f(x) </m>?</p></statement><answer>
+  <p>
+    Answers may include, <m>x</m>-intercepts, end behaviour, max and min
+  </p>
+</answer>
+</task>
+</activity>
+
+<definition xml:id="def-end-behavior">
+  <statement>
+    <p> The <term>end behavior</term> <idx><h>polynomial function</h><h>end behavior</h></idx> of a polynomial function describes the behavior of the graph at the "ends" of the function. In other words, as we move to the right of the graph (as the <m>x</m> values increase), what happens to the <m> y </m> values? Similarly, as we move to the left of the graph (as the <m>x</m> values decrease), what happens to the <m> y </m> values? </p>
+    <aside>
+      <p>Although we are looking at the "ends" to determine the end behavior, note that polynomials do not actually have ends. In other words, polynomial functions have <m>y</m>-values that exist for every <m>x</m>-value.</p>
+    </aside>
+  </statement>
+</definition>
+
+<activity
+    xml:id="act-end-behavior-of-polynomial-functions">
+      <introduction>
+Use the graphs of the following polynomial functions to answer the questions below.
+<sbsgroup>
+  <sidebyside width="50%">
+    <image>
+      <sageplot>
+        f(x) = x^4-11*x^3+42*x^2-64*x+32
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
+        p+=text('Graph A', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+    <image>
+      <sageplot>
+        f(x) = -4*x^3+2*x^2+3
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
+        p+=text('Graph B', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+  </sidebyside>
+  <sidebyside width="50%">
+    <image>
+      <sageplot>
+        f(x) = x^7+2*x^3-5*x^2+2
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
+        p+=text('Graph C', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+    <image>
+      <sageplot>
+        f(x) = -2*x^4+3*x^2-5
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
+        p+=text('Graph D', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+  </sidebyside>
+</sbsgroup>
+      </introduction>
+<task>
+  <statement>
+<p> How would you describe the behavior of Graph A as you approach the ends? 
+  <ol marker= "A." cols="1">
+    <li> Graph A rises on the left and on the right. </li>
+    <li> Graph A rises on the left, but falls on the right. </li>
+    <li> Graph A rises on the right, but falls on the left. </li>
+    <li> Graph A falls on the left and on the right.  </li></ol></p>
+</statement>
+<answer>
+  <p>
+    A
+  </p>
+</answer>
+</task>
+<task>
+  <statement>
+  <p> How would you describe the behavior of Graph B as you approach the ends? 
+    <ol marker= "A." cols="1">
+      <li> Graph B rises on the left and on the right. </li>
+      <li> Graph B rises on the left, but falls on the right. </li>
+      <li> Graph B rises on the right, but falls on the left. </li>
+      <li> Graph B falls on the left and on the right.  </li></ol></p>
+</statement>
+<answer>
+  <p>
+    B
+  </p>
+</answer>
+  </task>
+  <task>
+    <statement>
+    <p> How would you describe the behavior of Graph C as you approach the ends? 
+      <ol marker= "A." cols="1">
+        <li> Graph C rises on the left and on the right. </li>
+        <li> Graph C rises on the left, but falls on the right. </li>
+        <li> Graph C rises on the right, but falls on the left. </li>
+        <li> Graph C falls on the left and on the right.  </li></ol></p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
-      <p>Now we will carefully redo this process in a way that we can generalize to rational functions.  
-      Note that we can rewrite <m>357</m> as <m>357=3\cdot10^2+5\cdot10+7</m>, and <m>11</m> as <m>11=1\cdot10+1</m>. 
-      By comparing the leading terms in these expansions, we see that to knock off the leading term of <m>357</m>, we need to
-      multiply <m>11</m> by <m>3\cdot10^1</m>.
-    </p>
-    <p>Using the fact that <m>357=11\cdot30+27</m>, rewrite <m>\frac{357}{11}</m> as <m>\frac{357}{11}=30+\frac{?}{11}</m>.
-    </p>
+      <p> How would you describe the behavior of Graph D as you approach the ends? 
+        <ol marker= "A." cols="1">
+          <li> Graph D rises on the left and on the right. </li>
+          <li> Graph D rises on the left, but falls on the right. </li>
+          <li> Graph D rises on the right, but falls on the left. </li>
+          <li> Graph D falls on the left and on the right.  </li></ol></p>
       </statement>
-      <answer><p><m>\frac{357}{11}=30+\frac{27}{11}</m>.</p></answer>
-  </task>
-  <task>
-    <statement>
-    <p>Note now that if we can rewrite <m>\frac{27}{11}</m> as an integer plus a proper fraction, we will be done, 
-      since <m>\frac{357}{11}=30+\frac{27}{11}</m>.
-    </p>
-    <p>
-      Rewrite <m>\frac{27}{11}=?+\frac{?}{11}</m> as an integer plus a proper fraction.
-    </p>
-    </statement>
-      <answer><p><m>\frac{27}{11}=2+\frac{5}{11}</m>.</p></answer>
-  </task>
-  <task>
-    <statement>
-    <p>Combine your work in the previous two parts to rewrite <m>\frac{357}{11}</m> as an integer plus a proper fraction.  
-      How does this compare to what you obtained in part (a)?
-    </p>
-    </statement>
-      <answer><p><m>\frac{357}{11}=30+\frac{27}{11}=30+2+\frac{5}{11}=32+\frac{5}{11}</m>.</p></answer>
-  </task>
-  </activity>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+      </task>
+    </activity>
 
-<activity xml:id="long-division-activity-1">
-  <introduction>
-    <p>
-      Now let's consider the rational function <m>\frac{3x^2+5x+7}{x+1}</m>.  We want to rewrite this as a polynomial
-      plus a proper rational function.
+<definition xml:id="def-degree-and-leading-coefficient">
+  <statement>
+    <p> Typically, when given an equation of a polynomial function, we look at the <term>degree</term> and <term> leading coefficient</term> to help us determine the behavior of the ends. The <term> degree </term> is the highest exponential power in the polynomial. The <term> leading coefficient </term> is the number written in front of the variable with the highest exponential power.
     </p>
+  </statement>
+</definition>
+
+<activity
+    xml:id="degree-and-leading-coefficient-of-polynomial-graphs">
+      <introduction>
+Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-functions"/> and look at the equations of those polynomial functions. Let's apply <xref ref="def-degree-and-leading-coefficient"/> to see if we can determine how the degree and leading coefficients of those graphs affect their end behavior.
+<ul><li> Graph A: <m>f(x)=-11x^3+32+42x^2+x^4-64x</m> </li>
+  <li> Graph B: <m>g(x)=2x^2+3-4x^3</m></li>
+  <li> Graph C: <m>h(x)=x^7+2x^3-5x^2+2</m></li>
+  <li> Graph D: <m>j(x)=3x^2-2x^4-5</m></li> 
+</ul>
+<sbsgroup>
+  <sidebyside width="50%">
+    <image>
+      <sageplot>
+        f(x) = x^4-11*x^3+42*x^2-64*x+32
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
+        p+=text('Graph A', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+    <image>
+      <sageplot>
+        f(x) = -4*x^3+2*x^2+3
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
+        p+=text('Graph B', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+  </sidebyside>
+  <sidebyside width="50%">
+    <image>
+      <sageplot>
+        f(x) = x^7+2*x^3-5*x^2+2
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
+        p+=text('Graph C', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+    <image>
+      <sageplot>
+        f(x) = -2*x^4+3*x^2-5
+        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
+        p+=text('Graph D', (0, 8), fontsize=18, color='black')
+        p
+      </sageplot>
+    </image>
+  </sidebyside>
+</sbsgroup>
+      </introduction>
+<task>
+  <statement>
+<p> What is the degree and leading coefficient of Graph A? 
+  <ol marker= "A." cols="1">
+    <li> Degree: <m>-64</m>; Leading Coefficient: <m>4</m> </li>
+    <li> Degree: <m>4</m>; Leading Coefficient: <m>0</m> </li>
+    <li> Degree: <m>1</m>; Leading Coefficient: <m>-64</m> </li>
+    <li> Degree: <m>4</m>; Leading Coefficient: <m>1</m>  </li></ol></p>
+</statement>
+<answer>
+  <p>
+    D
+  </p>
+</answer>
+</task>
+<task>
+  <statement>
+  <p> What is the degree and leading coefficient of Graph B? 
+    <ol marker= "A." cols="1">
+      <li> Degree: <m>3</m>; Leading Coefficient: <m>-4</m> </li>
+      <li> Degree: <m>-4</m>; Leading Coefficient: <m>3</m> </li>
+      <li> Degree: <m>2</m>; Leading Coefficient: <m>3</m> </li>
+      <li> Degree: <m>3</m>; Leading Coefficient: <m>4</m>  </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
+  </task>
+  <task>
+    <statement>
+    <p> What is the degree and leading coefficient of Graph C? 
+      <ol marker= "A." cols="1">
+        <li> Degree: <m>-5</m>; Leading Coefficient: <m>2</m> </li>
+        <li> Degree: <m>0</m>; Leading Coefficient: <m>7</m> </li>
+        <li> Degree: <m>-5</m>; Leading Coefficient: <m>3</m> </li>
+        <li> Degree: <m>7</m>; Leading Coefficient: <m>1</m>  </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+      <p> What is the degree and leading coefficient of Graph D? 
+        <ol marker= "A." cols="1">
+          <li> Degree: <m>-2</m>; Leading Coefficient: <m>4</m> </li>
+          <li> Degree: <m>3</m>; Leading Coefficient: <m>2</m> </li>
+          <li> Degree: <m>4</m>; Leading Coefficient: <m>-2</m> </li>
+          <li> Degree: <m>-5</m>; Leading Coefficient: <m>4</m>  </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+      </task>
+    <task>
+      <statement>
+        <p> Notice that Graph A and Graph D have their ends going in the same direction. What conjectures can you make about the relationship between their degrees and leading coefficients with the behavior of their graphs?
+        </p>
+    </statement>
+    <answer>
+      <p>
+        Even degree go the same way
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+      <p> Notice that Graph B and Graph C have their ends going in opposite directions. What conjectures can you make about the relationship between their degrees and leading coefficients with the behavior of their graphs?
+      </p>
+  </statement>
+  <answer>
+    <p>
+      Odd degree go the opposite direction
+    </p>
+  </answer>
+  </task>
+    </activity>
+
+    <remark xml:id="remark-end-behavior-chart">
+      <statement>
+        <p> From <xref ref="degree-and-leading-coefficient-of-polynomial-graphs"/>, we saw that the degree and leading coefficient of a polynomial function can give us more clues about the behavior of the function. In summary, we know: 
+          <ul><li>If the degree is even, the ends of the polynomial function will be going in the same direction. If the leading coefficient is positive, both ends will be pointing up. If the leading coefficient is negative, both ends will be pointing down. </li>
+          <li> If the degree is odd, the ends of the polynomial function will be going in opposite directions. If the leading coefficient is positive, the left end will fall and the right end will rise. If the leading coefficient is negative, the left end will rise and the right end will fall.</li></ul>
+        </p>
+      </statement>
+    </remark>
+
+    <definition xml:id="arrow-notation">
+      <statement>
+        <p> When describing end behavior, mathematicians typically use <term>arrow notation</term>. Just as the name suggests, arrows are used to indicate the behavior of certain values on a graph.
+        </p>
+        <p> For end behavior, students are often asked to determine the behavior of <m>y</m>-values as <m>x</m>-values either increase or decrease. The statement "As <m> x\to \infty</m>, <m>f(x)\to -\infty</m>" can be translated to "As <m>x</m> approaches infinity (or as <m>x</m> increases), <m>f(x)</m> (or the <m>y</m>-values) go to negative infinity (i.e., it decreases)." </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="using-arrow-notation">
+      <introduction>
+        <p>Use the graph of <m>f(x)</m> to answer the questions below.</p>
+      <figure width="100%" xml:id="PR5-polynomial-function-2">
+        <image xml:id="PR5-polynomial-image-2">
+          <description>A polynomial function with one even and one odd multiplicity</description>
+          <sageplot>
+            f(x) = (x-5)*(x+1)^2
+              p=plot(f, (x, -10, 10), ymin=-40, ymax=20, color='blue', thickness=3)
+          </sageplot>
+        </image>
+      </figure>
+      </introduction>
+    <task>
+      <statement>
+          <p> How would you describe the end behavior of <m> f(x) </m>? 
+            <ol marker= "A." cols="1">
+              <li> <m> f(x) </m> rises on the left and on the right. </li>
+              <li> <m> f(x) </m> rises on the left, but falls on the right. </li>
+              <li> <m> f(x) </m> rises on the right, but falls on the left. </li>
+              <li> <m> f(x) </m> falls on the left and on the right.  </li></ol></p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p> How would you describe the end behavior of <m> f(x) </m> using arrow notation?
+          <ol marker= "A." cols="1">
+            <li> <p> As <m> x\to -\infty</m>, <m>f(x)\to -\infty</m> </p>
+              <p> As <m> x\to \infty</m>, <m>f(x)\to -\infty</m> </p> </li>
+            <li> <p> As <m> x\to -\infty</m>, <m>f(x)\to -\infty</m> </p>
+              <p> As <m> x\to \infty</m>, <m>f(x)\to \infty</m> </p> </li>
+            <li> <p> As <m> x\to -\infty</m>, <m>f(x)\to \infty</m> </p>
+              <p> As <m> x\to \infty</m>, <m>f(x)\to -\infty</m> </p> </li>
+            <li> <p> As <m> x\to -\infty</m>, <m>f(x)\to \infty</m> </p>
+              <p> As <m> x\to \infty</m>, <m>f(x)\to \infty</m> </p>  </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <activity
+xml:id="intro-to-multiplicities">
+  <introduction>
+    <p>Let's now look at the graph of <m>f(x)=(x-2)(x+1)(x-3)^2</m> to answer the questions below.</p>
+  <figure width="100%" xml:id="PR5-polynomial-function">
+    <image xml:id="PR5-polynomial-image">
+      <description>A polynomial function with different multiplicities</description>
+      <sageplot>
+        f(x) = (x-2)*(x+1)*(x-3)^2
+          p=plot(f, (x, -5, 5), ymin=-20, ymax=10, color='blue', thickness=3, detect_poles=True)
+      </sageplot>
+    </image>
+  </figure>
   </introduction>
   <task>
-    <statement>
-    <p>Looking at the leading terms, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
-      as <m>3x^2+5x+7</m>?
-    </p>
-    <ol marker="A.">
-      <li><m>3</m></li>
-      <li><m>x</m></li>
-      <li><m>3x</m></li>
-      <li><m>3x+5</m></li>
-    </ol>
-  </statement>
-  <answer><p>C</p></answer>
+      <statement><p> What are the zeros of <m> f(x) </m>?
+        <ol marker= "A." cols="2">
+          <li> <m> 1, 2, 3 </m> </li>
+          <li> <m> -1, 2, 3 </m> </li>
+          <li> <m> 1, -2, -3 </m> </li>
+          <li> <m> -1, 2, -3 </m>  </li></ol></p></statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
   </task>
   <task>
-    <statement>
-    <p>Rewrite <m>3x^2+5x+7=3x(x+1)+?</m>, and use this to rewrite <m>\frac{3x^2+5x+7}{x+1}=3x+\frac{?}{x+1}</m>.
-    </p>
-    </statement>
-    <answer><p><m>\frac{3x^2+5x+7}{x+1}=3x+\frac{2x+7}{x+1}</m></p></answer>
-  </task>
-  <task>
-    <statement>
-    <p>
-      Now focusing on <m>\frac{2x+7}{x+1}</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
-      as <m>2x+7</m>?
-    </p>
-    <ol marker="A.">
-      <li><m>2</m></li>
-      <li><m>x</m></li>
-      <li><m>2x</m></li>
-      <li><m>2x+7</m></li>
-    </ol>
-  </statement>
-  <answer><p>A</p></answer>
-  </task>
-  <task>
-    <statement>
-  <p> Rewrite <m>\frac{2x+7}{x+1}=2+\frac{?}{x+1}</m>.</p>
-    </statement>
-    <answer><p><m>\frac{2x+7}{x+1}=2+\frac{5}{x+1}</m></p></answer>
-  </task>
-  <task>
-    <statement>
-    <p>Combine this with the previous parts to rewrite <m>\frac{3x^2+5x+7}{x+1}=3x+?+\frac{?}{x+1}</m>.</p>
-    </statement>
-    <answer><p><m>\frac{3x^2+5x+7}{x+1}=3x+2+\frac{5}{x+1}</m></p></answer>
+      <statement><p>
+        Describe the behavior at each zero. What do you notice?
+      </p></statement>
+      <answer>
+        <p>
+          At <m>-1</m> and <m>2</m> the graph crosses the <m>x</m>-axis.  At <m>3</m> the graph touches the axis and turns around.
+        </p>
+      </answer>
   </task>
 </activity>
 
-    <activity xml:id="Long-Division-Intro-Steps">
-        <introduction>
-          <p>Next we will use the notation of long division to rewrite the rational function  <m>\frac{3x^2+5x+7}{x+1}</m> as a 
-            polynomial plus a proper rational function.</p> 
+<definition xml:id="the-multiplicity-of-a-polynomial-function">
+  <statement>
+    <p> The <term>multiplicity</term> <idx><h>polynomial function</h><h>multiplicity</h></idx> of a polynomial function is the number of times a given factor appears in the factored form of the equation of a polynomial.
+    </p>
+    <p>The zero, <m>x=3</m> in <xref ref="intro-to-multiplicities"/> has multiplicity <m>2</m> because the factor <m>(x−3)</m> occurs twice (the exponent is a <m>2</m>). 
+    </p>
+  </statement>
+</definition>
+
+<activity
+    xml:id="PR5-finding-multiplicity-from-equation-and-graph">
+      <introduction> 
+        <p> Use the function, <m> f(x)=(x-3)^2(x-1)</m> to answer the following questions:</p>
         </introduction>
-       
-              <task>
-                <statement>
-                <p> First, let's use long division notation to write the quotient.</p>
-                <image xml:id="example-long-division-setup" width="50%">                
-                  <latex-image>
-                  \(
-                \begin{array}{ r *{19}{c@{}} }
-                &amp; &amp; ? &amp; &amp;  &amp; &amp;  &amp; &amp;  \\  
-                \cline{2-9}\\[-14.5pt]
-                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                \end{array}
-                \)
-                </latex-image>
-                </image>
-                <p>What do we need to multiply <m>x+1</m> by so that it would have the same leading term
-                  as <m>3x^2+5x+7</m>?</p>
-                <!--<image xml:id="existing-example">
-                <latex-image>
-                  \(
-                \begin{array}{ r *{19}{c@{}} }
-                &amp;  &amp; ?&amp; &amp; &amp; ? &amp; &amp;  \\ \cline{2-9}\\[-14.5pt]
-                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                &amp;  &amp; ? &amp; &amp; 3 &amp;x \\ \cline{2-6}
-                &amp; &amp; &amp;  &amp;? &amp; &amp;  &amp;7 &amp; \\
-                &amp; &amp; &amp; &amp; ? &amp; &amp;  &amp; ?&amp; &amp; &amp; &amp;  &amp; \\  \cline{4-11}
-                &amp; &amp; &amp; &amp;  &amp; &amp;  &amp; ? &amp; &amp; &amp; &amp;  \\
-                &amp; &amp; &amp;  &amp; &amp; &amp;  &amp; &amp; \\
-                \end{array}
-                  \)
-                </latex-image>
-                </image>-->
-              </statement>
+        <task>
+          <statement><p> What are the zeros of <m> f(x) </m>? 
+            <ol marker= "A." cols="2">
+              <li> <m> -1, -3 </m> </li>
+              <li> <m> -1, 3 </m> </li>
+              <li> <m> 1, -3 </m> </li>
+              <li> <m> 1, 3 </m>  </li></ol></p></statement>
               <answer>
-                <image xml:id="example-long-division-step-1" width="50%">
-                <latex-image>
-                  \(
-                \begin{array}{ r *{19}{c@{}} }
-                &amp;3 &amp; x &amp;  &amp;  &amp; &amp;  &amp; &amp;  \\  
-                \cline{2-9}\\[-14.5pt]
-                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                \end{array}
-                \)
-                </latex-image>
-                </image>
+                <p>
+                  D
+                </p>
               </answer>
-              </task>
-              <task>
-                <statement>
-                <p>Now to rewrite <m>3x^2+5x+7</m> as <m>3x(x+1)+?</m>, place the product <m>3x(x+1)</m> below and subtract.</p>
-                <image xml:id="example-long-division-step-2" width="50%">
-                  <latex-image>
-                    \(
-                  \begin{array}{ r *{19}{c@{}} }
-                  &amp; 3 &amp; x &amp; &amp;  &amp; &amp;  &amp; &amp;  \\  
-                  \cline{2-9}\\[-14.5pt]
-                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
-                  \cline{2-6} 
-                  &amp;  &amp; &amp;  &amp; ? &amp;  &amp; +  &amp; ? &amp;  \\
-                  \end{array}
-                  \)
-                  </latex-image>
-                  </image> 
-                </statement>
-              <answer>
-                <image xml:id="example-long-division-step-3" width="50%">
-                  <latex-image>
-                    \(
-                  \begin{array}{ r *{19}{c@{}} }
-                  &amp;3 &amp; x &amp; &amp;  &amp; &amp;  &amp; &amp;  \\  
-                  \cline{2-9}\\[-14.5pt]
-                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
-                  \cline{2-6} 
-                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
-                  \end{array}
-                  \)
-                  </latex-image>
-                  </image> 
-              </answer>
-              </task>
-
-              <task>
-                <statement>
-                  <p>Now focusing on <m>2x+7</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term as <m>2x+7</m>?</p>
-                  <image xml:id="example-long-division-step-4" width="50%">
-                  <latex-image>
-                    \(
-                  \begin{array}{ r *{19}{c@{}} }
-                  &amp;3 &amp; x &amp;+ &amp;?  &amp; &amp;  &amp; &amp;  \\  
-                  \cline{2-9}\\[-14.5pt]
-                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
-                  \cline{2-6} 
-                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
-                  \end{array}
-                  \)
-                  </latex-image>
-                  </image> 
-                </statement>
-                <answer>
-                  <image xml:id="example-long-division-step-5" width="50%">
-                  <latex-image>
-                    \(
-                  \begin{array}{ r *{19}{c@{}} }
-                  &amp;3 &amp; x &amp;+ &amp;2  &amp; &amp;  &amp; &amp;  \\  
-                  \cline{2-9}\\[-14.5pt]
-                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
-                  \cline{2-6} 
-                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
-                  \end{array}
-                  \)
-                  </latex-image>
-                  </image> 
-                </answer>
-              </task>
-              <task>
-                <statement>
-                  <p>Now, subtract <m>2(x+1)</m> to finish the long division.</p>
-                  <image xml:id="example-long-division-step-6" width="50%">
-                  <latex-image>
-                    \(
-                  \begin{array}{ r *{19}{c@{}} }
-                  &amp;3 &amp; x &amp;+ &amp;2  &amp; &amp;  &amp; &amp;  \\  
-                  \cline{2-9}\\[-14.5pt]
-                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
-                  \cline{2-6} 
-                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
-                  &amp; &amp; &amp; &amp; ? &amp;  &amp;+ &amp; ? &amp; \\
-                  \cline{5-9}
-                  &amp; &amp; &amp; &amp;  &amp;  &amp; &amp; ? &amp; \\
-                  \end{array}
-                  \)
-                  </latex-image>
-                  </image> 
-                </statement>
-                <answer>                  
-                <image xml:id="example-long-division-step-7" width="50%">
-                  <latex-image>
-                    \(
-                  \begin{array}{ r *{19}{c@{}} }
-                  &amp;3 &amp; x &amp;+ &amp;2  &amp; &amp;  &amp; &amp;  \\  
-                  \cline{2-9}\\[-14.5pt]
-                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
-                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
-                  \cline{2-6} 
-                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
-                  &amp; &amp; &amp; &amp; 2 &amp; x &amp;+ &amp; 2 &amp; \\
-                  \cline{5-9}
-                  &amp; &amp; &amp; &amp;  &amp;  &amp; &amp; 5 &amp; \\
-                  \end{array}
-                  \)
-                  </latex-image>
-                  </image> 
-                </answer>
-              </task>
-              <task>
-                <statement>
-                <p>This long division calculation has shown that <me>3x^2+5x+7 = (x+1)(3x+2)+5</me>.  
-                  Use this to rewrite <m>\frac{3x^2+5x+7}{x+1}</m> as a polynomial plus a proper rational function.</p>
-                </statement>
-                <answer>
-                  <p><m>\frac{3x^2+5x+7}{x+1} = 3x+2+\frac{5}{x+1}</m></p>
-                </answer>
-              </task>
-            </activity>
-      <remark>
-        <p>Note that in <xref ref="long-division-activity-1"/> and <xref ref="Long-Division-Intro-Steps"/> we performed the same computations, but just organized our work a little differently.</p>
-      </remark>
-
-      <activity>
-        <statement>
-          <p>Rewrite <m>\frac{x^2+1}{x-1}</m> as a polynomial plus a proper rational function.</p>
-        </statement>
-        <hint><p>Note that <m>x^2+1=x^2+0x+1</m>.</p></hint>
-        <answer><p><m>x+1+\frac{3}{x-1}</m>.</p></answer>
+        </task>
+        <task>
+          <statement><p> Using <xref ref="the-multiplicity-of-a-polynomial-function"/>, determine the multiplicities of the zeros you found in part (a).</p></statement>
+          <answer>
+            <p>
+              <m>3</m> has multiplicity 2. <m>1</m> has multiplicty 1.
+            </p>
+          </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Now graph <m>f(x)</m> and look at the zeros on the graph. What do you notice about the behavior of the graph at each zero?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>3</m> touches the axis and turns around. <m>1</m> crosses the axis.
+              </p>
+            </answer>
+          </task>
       </activity>
 
-      <activity>
+      <remark
+  xml:id="zeros-and-multiplicities">
         <statement>
-          <p>Rewrite <m>\frac{x^5+x^3+2x^2-6x+7}{x^2+x-1}</m> as a polynomial plus a proper rational function.</p> 
+          <p> Refer back to <xref ref="intro-to-multiplicities"/> and <xref ref="PR5-finding-multiplicity-from-equation-and-graph"/>. Notice that when the graph crosses the <m> x </m>-axis at the zero, the mulitplicity of that zero is odd. When the graph touches the <m> x </m>-axis at the zero, the multiplicity is even. In other words, factors of <m> f(x)</m> with odd exponents will cross the <m> x </m>-axis and factors of <m> f(x)</m> with even exponents will touch the <m> x</m>-axis. </p>
+        </statement>
+</remark>
+
+<definition xml:id="max-and-min">
+  <statement>
+    <p> When graphing polynomial functions, you may notice that these functions have some "hills" and "valleys." These characteristics of the graph are known as the <term> local maxima </term> and <term> local minima </term> of the graph - similar to what we've already seen with quadratic functions. Unlike quadratic functions, however, a polynomial graph can have many local maxima/minima (quadratic functions only have one).</p>
+  </statement>
+</definition>
+
+<activity xml:id="activity-characteristics-from-polynomial-graph">
+  <introduction>
+    <p> Now that we know all the different characterisitics of polynomials, we should also be able to identify them from a graph. Use the graph below to find the given charactertistics. </p>
+    <figure width="100%" xml:id="PR1-polynomial">
+      <image xml:id="PR1-polynomial-image">
+        <description>Polynomial Function</description>
+        <sageplot>
+          f(x) = (1*x^3-3*x-2)
+            p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3)
+        </sageplot>
+      </image>
+    </figure>
+  </introduction>
+  <task> 
+    <statement>
+      <p> What are the <m>x</m>-intercept(s) of the polynomial function? Select all that apply.  
+    <ol marker= "A." cols="2">
+    <li> <m> (1, 0) </m> </li>
+    <li> <m> (-1, 0) </m> </li>
+    <li> <m> (2, 0)</m> </li>
+    <li> <m> (0, -2) </m>  </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      A and C
+    </p>
+  </answer>
+  </task>
+  <task>
+    <statement>
+       <p> What are the <m>y</m>-intercept(s) of the polynomial function?  
+    <ol marker= "A." cols="2">
+      <li> <m> (1, 0) </m> </li>
+      <li> <m> (-1, 0) </m> </li>
+      <li> <m> (2, 0)</m> </li>
+      <li> <m> (0, -2) </m>  </li></ol></p>
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+  </task>
+  <task> 
+    <statement>
+      <p> How many zeros does this polynomial function have? 
+    <ol marker= "A." cols="2">
+      <li> <m> 0 </m> </li>
+      <li> <m> 1 </m>  </li>
+      <li> <m> 2 </m> </li>
+      <li> <m> 3 </m> </li></ol>
+  </p>
+  </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
+  </task>
+  <task> 
+    <statement>
+      <p> At what point is the local minimum located?
+    <ol marker= "A." cols="2">
+    <li> <m> (2, -4) </m> </li>
+    <li> <m> (-1, 0) </m> </li>
+    <li> <m> (-2, 0)</m> </li>
+    <li> <m> (1, -4) </m>  </li>
+    <li> <m> (2, 0) </m>  </li>
+    </ol></p>
+  </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
+  </task>
+  <task> 
+    <statement>
+      <p> At what point is the local maximum located?
+    <ol marker= "A." cols="2">
+    <li> <m> (2, -4) </m> </li>
+    <li> <m> (-1, 0) </m> </li>
+    <li> <m> (-2, 0)</m> </li>
+    <li> <m> (1, -4) </m>  </li>
+    <li> <m> (2, 0) </m>  </li>
+    </ol></p>
+  </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
+  </task>
+  <task> 
+    <statement>
+      <p> How do you describe the behavior of the polynomial function as <m> x\to \infty</m>?
+    <ol marker= "A." cols="2">
+    <li> the <m>y</m>-values go to negative infinity </li>
+    <li> <m>f(x) \to \infty</m> </li>
+    <li> the <m>y</m>-values go to positive infinity </li>
+    <li> <m>f(x) \to -\infty</m> </li>
+    </ol></p>
+  </statement>
+  <answer>
+    <p>
+      B and C
+    </p>
+  </answer>
+  </task>
+  <task> 
+    <statement>
+      <p> How do you describe the behavior of the polynomial function as <m> x\to -\infty</m>?
+    <ol marker= "A." cols="2">
+    <li> the <m>y</m>-values go to negative infinity </li>
+    <li> <m>f(x) \to \infty</m> </li>
+    <li> the <m>y</m>-values go to positive infinity </li>
+    <li> <m>f(x) \to -\infty</m> </li>
+    </ol></p>
+  </statement>
+  <answer>
+    <p>
+      A and D
+    </p>
+  </answer>
+  </task>
+</activity>
+
+
+    <activity
+    xml:id="PR5-activity-5">
+      <introduction>
+    <p> Sketch the function, <m> f(x)=(x-2)(x+1)(x-3)^2 </m>, by first finding the given characteristics.
+    </p>
+    </introduction>
+      <task>
+        <statement>
+          <p> Find the zeros of <m>f(x)</m>.</p>
         </statement>
         <answer>
-          <p><m>x^3-x^2+3x-2+\frac{-x+5}{x^2+x-1}</m>.</p>
+          <p>
+            <m>2</m>, <m>1</m>, and <m>3</m>
+          </p>
         </answer>
-      </activity>
-
-      <activity>
+      </task>
+      <task> 
         <statement>
-          <p>Rewrite <m>\frac{3x^4-5x^2+2}{x-1}</m> as a polynomial plus a proper rational function.</p> 
+          <p> Find the multiplicities and describe the behavior at each zero.</p>
+          </statement>
+          <answer>
+            <p>
+              <m>2</m> and <m>-1</m> multiplicty 1 and crosses axis. <m>3</m> multiplicity 2 and touches the axis and turns around
+            </p>
+          </answer>
+      </task>
+      <task>
+        <statement> 
+          <p>Find the <m>y</m>-intercept of <m>f(x)</m>.</p>
+          </statement>
+          <answer>
+            <p>
+              <m>(0,-18)</m>
+            </p>
+          </answer>
+      </task>
+      <task> 
+        <statement>
+          <p> Describe the end behavior of <m>f(x)</m>.</p>
+          </statement>
+          <answer>
+            <p>
+              As <m>x \to \infty</m>, <m>y \to \infty</m>.  As <m>x \to -\infty</m>, <m>y \to -\infty</m>.
+            </p>
+          </answer>
+      </task>
+    <task> 
+      <statement>
+        <p> Estimate where any local maximums and minimums may occur.</p>
         </statement>
-        <answer><p><m>3x^3+3x^2-2x-2</m>.</p></answer>
-      </activity>
+        <answer>
+          <p>
+            Minimum occurs between <m>x=-1</m> and <m>x=2</m>.  Then a maximum at <m>x=3</m>
+          </p>
+        </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="use-information-to-sketch-graph-of-polynomial">
+    <introduction>
+      <p> Sketch the graph of a function <m>f(x) </m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph. </p>
+    </introduction>
+    <ul><li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
+    <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
+    <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
+    </ul>
+    <answer>
+      <p>
+        One such graph is
+        <figure width="100%" xml:id="PR1-polynomial-2">
+          <image xml:id="PR1-polynomial-image-2">
+            <description>Polynomial Function</description>
+            <sageplot>
+              f(x) = 1*x^5-9*x^4+24*x^3-20*x^2
+              p=plot(f, (x, -5, 10), ymin=-100, ymax=10, color='blue', thickness=3)
+              p
+            </sageplot>
+          </image>
+        </figure>
+      </p>
+    </answer>
+</activity>
+
+  <activity
+    xml:id="PR5-finding-max-and-min">
+      <introduction>
+    <p> Use the given function, <m> f(x)=(x+1)^2(x-5) </m>, to answer the following questions.
+    </p>
+    </introduction>
+    <task>
+      <statement>
+        <p> What are the zeros of <m> f(x) </m>? 
+          <ol marker= "A." cols="2">
+            <li> <m> -1, -5 </m> </li>
+            <li> <m> -1, 5 </m> </li>
+            <li> <m> 1, -5 </m> </li>
+            <li> <m> 1, 5 </m>  </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> What are the multiplicities at each zero? 
+          <ol marker= "A." cols="1">
+            <li> <p> At <m> x=-1</m>, the mulitplicity is even. </p>
+            <p> At <m> x=5</m>, the mulitplicity is even. </p> </li>
+            <li> <p> At <m> x=-1</m>, the mulitplicity is even. </p>
+              <p> At <m> x=5</m>, the mulitplicity is odd. </p></li>
+            <li> <p> At <m> x=-1</m>, the mulitplicity is odd. </p>
+              <p> At <m> x=5</m>, the mulitplicity is even. </p> </li>
+            <li> <p> At <m> x=-1</m>, the mulitplicity is odd. </p>
+              <p> At <m> x=5</m>, the mulitplicity is odd. </p>  </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> What is the end behavior of <m> f(x) </m>? 
+          <ol marker= "A." cols="1">
+            <li> <m> f(x) </m> rises on the left and on the right. </li>
+              <li> <m> f(x) </m> rises on the left, but falls on the right. </li>
+              <li> <m> f(x) </m> rises on the right, but falls on the left. </li>
+              <li> <m> f(x) </m> falls on the left and on the right.  </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Using what you know about the zeros, multiplicities, and end behavior, where on the graph can we estimate the local maxima and minima to be?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Between <m>x=-1</m> and <m>x=5</m> since the graph must touch the <m>x</m>-axis at both places.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Now look at the graph of <m> f(x)</m>. At which zero does a local maximum or local minimum occur? Explain how you know.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          At <m>x=-1</m> since the graph touches the axis and turns around.
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark xml:id="remark-estimating-max-and-min-values">
+    <statement>
+      <p> We can estimate where these local maxima and minima occur by looking at other characteristics, such as multiplicities and end behavior.
+      </p>
       
+      <p> From <xref ref="PR5-finding-max-and-min"/>, we saw that when the function touches the <m>x</m>-axis at a zero, then that zero could be either a local maximum or a local minimum of the graph. When the function crosses the <m>x</m>-axis, however, the local maximum or local minimum occurs between the zeros. 
+      </p>
+    </statement>
+  </remark>
+</subsection>
 
-    </subsection>
+<exercises>
+  <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR3/"/>. </p> 
+</exercises>
 
-    <exercises>
-      <p>Exercises available at <url href="https://teambasedinquirylearning.github.io/precalculus/2024/exercises/#/bank/PR3/"/>.</p>
-    </exercises>
-    
-    <subsection>
-        <title>Videos</title>
-        <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+<!-- <subsection>
+    <title>Videos</title>
+    <p>It would be great to include videos down here, like in the Calculus book!</p>
+</subsection> -->
 </section>
-

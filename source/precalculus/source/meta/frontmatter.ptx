@@ -6,21 +6,13 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>TBIL Fellows</personname>
-
+      <personname>TBIL Community</personname>
+      <email>sclontz+tbil@southalabama.edu</email>
     </author>
     <credit>
       <title>Editors</title>
-        <author>
-          <personname>Steven Clontz</personname>
-          <department>Department of Mathematics and Statistics</department>
-          <institution>University of South Alabama</institution>
-          <email>sclontz@southalabama.edu</email>
-        </author>
-        <author>
-          <personname>Drew Lewis</personname>
-          <email>drew.lewis@gmail.com</email>
-        </author>
+      <xi:include href="../../../common/authors/clontz.ptx"/>
+      <xi:include href="../../../common/authors/lewis.ptx"/>
     </credit>
     <credit>
       <title>Contributing Authors</title>
@@ -49,40 +41,38 @@
   </titlepage>
 
   <colophon xml:id="colophon">
-    <website>
-        <url href="https://teambasedinquirylearning.github.io/precalculus/">Precalculus for Team-Based Inquiry Learning</url>
-    </website>
-    <xi:include href="./copyright.ptx" />
+    <xi:include href="../../../common/website.ptx"/>
+    <xi:include href="../../../common/copyright.ptx" />
+
     <p>
-      This work includes materials used under license from the following works:
-            </p>
+This work includes materials used under license from the following works:
+    </p>
+    <ul>
+        <li>
+            <p><pubtitle>Active Prelude to Calculus</pubtitle></p>
             <ul>
                 <li>
-                    <p><pubtitle>Active Prelude to Calculus</pubtitle></p>
-                    <ul>
-                        <li>
-                            <p><url href="https://activecalculus.org/prelude/"/></p>
-                        </li>
-                        <li>
-                            <p>CC BY-SA 4.0</p>
-                        </li>
-                    </ul>
+                    <p><url href="https://activecalculus.org/prelude/"/></p>
                 </li>
-            </ul> 
-      
+                <li>
+                    <p>CC BY-SA 4.0</p>
+                </li>
+            </ul>
+        </li>
+    </ul> 
+  
     <p>The authors would like to acknowledge the contributions of Wendy Sheppard to drafts of <xref ref="EQ7"/>, <xref ref="PR3"/>, and <xref ref="PR4"/>.</p> 
     <p>This work is supported in part by a grant from Affordable Learning Georgia.</p>
-    <p>This material is based upon work supported by the National Science Foundation under Grant No. DUE-2011807.
-      Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
-    </p>
+  
+    <xi:include href="../../../common/nsf.ptx" />
   </colophon>
 
   <xi:include href="../../../common/resource-library.ptx"/>
+
   <preface xml:id="instructor-notes">
-  <title>For Instructors</title>
+    <title>For Instructors</title>
     <xi:include href="../../../common/features.ptx"/>
     <xi:include href="../../../common/community.ptx"/>
   </preface>
 
 </frontmatter>
-
