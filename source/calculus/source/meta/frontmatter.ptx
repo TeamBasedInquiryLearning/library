@@ -103,14 +103,24 @@ This work includes materials used under license from the following works:
           </li>
       </ul>
   </colophon>
-  <colophon xml:id="tbil-rl">
-      <title>TBIL Resource Library</title>
-      <p>
-This work is made available as part of the
-<url href="https://sites.google.com/southalabama.edu/tbil/tbil-resource-library" visual="sites.google.com/southalabama.edu/tbil/tbil-resource-library">TBIL Resource Library</url>,
-a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807" visual="nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
-      </p>
-  </colophon>
+  <xi:include href="../../../common/resource-library.ptx"/>
+  <preface xml:id="instructor-notes">
+  <title>For Instructors</title>
+    <xi:include href="../../../common/features.ptx"/>
+    <xi:include href="../../../common/community.ptx"/>
+  </preface>
+
+  <preface xml:id="video-resources">
+    <title>Video Resources</title>
+    <p>
+      Videos are available at the end of each section. A complete playlist of videos 
+      aligned with this text is available in two parts on YouTube:
+      <ul>
+        <li><p><url href="https://www.youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">Chapters LT through IN</url></p></li>
+        <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBMrS1eTKOhX4FfZ7D1U07Ly&amp;si=Iy4v1Vh3U2yHhLr1">Chapters TI through PS</url></p></li>
+      </ul>
+    </p>
+</preface>
 
 </frontmatter>
 
