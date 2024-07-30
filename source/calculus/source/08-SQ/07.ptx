@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ7" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Ratio and Root Tests (SQ7)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/07.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}.</m>
+            </p>
+            
+        </introduction>
+        <task>
+            <p>
+                Which of these series most closely resembles <m>\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}</m>?
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}</m>.</li>
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}n</m>.</li>
+                    <li><m>\displaystyle \sum_{n=0}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Based on your previous choice, do we think this series is more likely to converge or diverge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.</m>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=0</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2}{3}</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=1</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=2</m>.</li>
+                    <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=3</m>.</li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
+                <ol marker="A." cols="2">
+                    <li><m>2</m>.</li>
+                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
+                    <li><m>\displaystyle \frac{2^n}{2^n+1}</m>.</li>
+                    <li><m>\displaystyle \frac{9}{2^{2n+1}}</m>.</li>
+                    <li><m>\displaystyle \frac{9}{2^{n+2}}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+                <ol marker="A." cols="2">
+                    <li><m>-\infty</m>.</li>
+                    <li><m>0</m>.</li>
+                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
+                    <li><m>2</m>.</li>
+                    <li><m>\infty</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \frac{n+1}{2}</m>.</li>                    
+                    <li><m>\displaystyle \frac{(n^2+1)(n+1)}{(n+2)n^2}</m>.</li>
+                    <li><m>\displaystyle \frac{(n+1)^2}{n+2}</m>.</li>
+                    <li><m>\displaystyle \frac{1}{2}</m>.</li>                    
+                    <li><m>\displaystyle \frac{(n+1)n^2}{n+2}</m>.</li>
+                </ol>                
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+                <ol marker="A." cols="2">
+                    <li><m>-\infty</m>.</li>
+                    <li><m>0</m>.</li>
+                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
+                    <li><m>2</m>.</li>
+                    <li><m>\infty</m>.</li>
+                </ol>              
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    <activity xml:id="activity-SQ7harmonic">
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    <activity xml:id="activity-SQ7alternatingharmonic">
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m> converge?
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\frac{a_{n+1}}{a_n}</m>.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+            </p>
+        </task>
+        
+        
+    </activity>
+    
+    
+    <fact xml:id="fact-SQ7ratioTest">
+        <title>The Ratio Test</title>
+          <statement>
+      <p permid="QCd">
+        Let <m>\displaystyle\sum a_n</m> be a series 
+          and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_n}\right|=\rho</m>.
+          Then
+          <ol>
+          <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
+              <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
+              <li>If <m>\rho=1</m>, we cannot determine if <m>\displaystyle\sum a_n</m> converges or diverges <em>with this method</em>.</li>
+          </ol>
+       
+      </p>
+              
+              </statement>
+        </fact>
+    
+    
+    <fact xml:id="fact-SQ7rootTest">
+        <title>The Root Test</title>
+          <statement>
+      <p permid="QCd">
+        Let <m>N</m> be an integer and let <m>\displaystyle\sum a_n</m> be a series with <m>a_n\geq 0</m> for <m>n\geq N</m>,
+          and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}=\rho</m>.
+          Then
+          <ol>
+          <li><m>\displaystyle\sum a_n</m> converges if <m>\rho</m> is less than 1, and</li>
+              <li><m>\displaystyle\sum a_n</m> diverges if <m>\rho</m> is greater than 1.</li>
+              <li>If <m>\rho=1</m>, we cannot determine if <m>\displaystyle\sum a_n</m> converges or diverges <em>with this method</em>.</li>
+          </ol>
+       
+      </p>
+              </statement>
+        </fact>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Which of the following is <m>a_n</m>?
+                <ol marker="A." cols="2">
+                    <li><m>n^2</m>.</li>
+                    <li><m>n!</m>.</li>
+                    <li><m>\displaystyle\frac{n^2}{n!}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Which of the following is <m>a_{n+1}</m>?
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle\frac{n^2}{n!}</m>.</li>
+                    <li><m>\displaystyle(n+1)^2</m>.</li>
+                    <li><m>\displaystyle(n+1)!</m>.</li>
+                    <li><m>\displaystyle\frac{(n+1)^2}{(n+1)!}</m>.</li>
+                    <li><m>\displaystyle\frac{n^2+1}{n!+1}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Which of the following is <m>\displaystyle\left|\frac{a_{n+1}}{a_n}\right|</m>?
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle\frac{(n+1)^2n^2}{(n+1)!n!}</m>.</li>
+                    <li><m>\displaystyle\frac{(n+1)^2n!}{(n+1)!n^2}</m>.</li>
+                    <li><m>\displaystyle\frac{(n+1)!n!}{(n+1)^2n^2}</m>.</li>
+                    <li><m>\displaystyle\frac{(n+1)!n^2}{(n+1)^2n!}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                Using the fact <m>(n+1)!=(n+1)\cdot n!</m>, simplify <m>\displaystyle\left|\frac{a_{n+1}}{a_n}\right|</m> as much as possible.
+            </p>
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|</m>.
+            </p>
+        </task>
+        <task>
+            <p>Does <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}</m> converge?</p>
+        </task>
+    </activity>
+    
+    <activity>
+        <p>
+            Consider the series <m>\displaystyle \sum_{n=1}^\infty \frac{n^n}{9^n}.</m>
+        </p>            
+            <task>
+                <p>What is <m>a_n</m>?</p>
+            </task>
+            <task>
+                <p>
+                    Which of the following is <m>\displaystyle\sqrt[n]{|a_n|}</m>?
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \frac{n+1}{9}</m>.</li>
+                    <li><m>\displaystyle \frac{n}{9}</m>.</li>
+                    <li><m>n</m>.</li>
+                    <li><m>9</m>.</li>
+                    <li><m>\displaystyle \frac{1}{9}</m>.</li>
+                </ol>
+                </p>
+            </task>
+            <task>
+                <p>Find <m>\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}</m>.</p>
+            </task>
+            <task>
+                <p>Does <m>\displaystyle \sum_{n=1}^\infty \frac{n^n}{9^n}</m> converge?</p>
+            </task>
+    </activity>
+
+        <activity xml:id="activity-SQ7rootRatioChoices">
+            <introduction>
+                <p>
+                    For each series, use the <em>ratio</em> or <em>root</em> test to determine if the series converges or diverges.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\left(\frac{1}{1+n}\right)^n</m>
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{2^n}{n^n}</m>
+                </p>
+            </task>
+            
+            
+            <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(2n)!}{(n!)(n!)}</m>
+                </p>
+            </task>
+        
+        
+            <task>
+                <p>
+                <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{4^n(n!)(n!)}{(2n)!}</m>
+                </p>
+            </task>
+            
+        </activity>
+
+    <activity xml:id="activity-SQ7rootRatioComparison2">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=0}^\infty \displaystyle\frac{2^n+5}{3^n}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                Use the root test to check for convergence of this series.
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                Use the ratio test to check for convergence of this series.
+                </p>
+            </task>
+            
+            
+            <task>
+                <p>
+                Use the comparison (or limit comparison) test to check for convergence of this series.
+                </p>
+            </task>
+        
+        
+            <task>
+                <p>
+                Find the sum of this series.
+                </p>
+            </task>
+            
+        </activity>    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}</m>.  Recall that <m>\displaystyle \sqrt[n]{\frac{n}{3^n}}=\left(\frac{n}{3^n}\right)^{1/n}=\frac{n^{1/n}}{(3^n)^{1/n}}.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Let <m>\displaystyle \alpha=\lim_{n\to\infty}\ln(n^{1/n})=\lim_{n\to\infty}\frac{1}{n}\ln(n)</m>.  Find <m>\alpha</m>.
+            </p>
+            
+        </task>
+        <task>
+            <p>
+                Recall that <m>\displaystyle \lim_{n\to\infty}n^{1/n}=\lim_{n\to\infty} e^{\ln(n^{1/n})}=e^\alpha.</m> Find <m>\displaystyle \lim_{n\to\infty}n^{1/n}</m>.
+            </p>
+            
+        </task>
+        <task>
+            <p>
+                Find <m>\displaystyle \lim_{n\to\infty} \sqrt[n]{\frac{n}{3^n}}=\lim_{n\to\infty}\left(\frac{n}{3^n}\right)^{1/n}=\lim_{n\to\infty}\frac{n^{1/n}}{(3^n)^{1/n}}</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                Does <m>\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}</m> converge?
+            </p>
+        </task>
+    </activity>
+
+    <activity xml:id="activity-SQ7rootRatioComparison">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=0}^\infty \displaystyle\frac{n^2}{2^n}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                Use the root test to check for convergence of this series.
+                </p>
+            </task>
+        
+       <task>
+                <p>
+                Use the ratio test to check for convergence of this series.
+                </p>
+            </task>
+            
+            
+            <task>
+                <p>
+                Use the comparison (or limit comparison) test to check for convergence of this series.
+                </p>
+            </task>
+            
+        </activity>
+<!--     
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ7.slides.html"/>.</p>
+    </subsection> -->
+    
+    
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ7" youtube="YmGXeuGeC3I">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Use the ratio and root tests to determine if a series converges or diverges
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/SQ7/"/>
+        </p>
+    </subsection>
+    
+    
+</section>

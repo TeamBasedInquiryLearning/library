@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <knowl>
+        <intro>
+            <p>
+                Explain why each of the following constructions does or does not define a function.
+            </p>
+        </intro>
+                <!-- {{#tasks}} -->
+                <!-- {{#map_task}} -->
+                <knowl>
+                    <content>
+                    <p>
+                    <image
+                        source="assets/FN1/generated/{{__seed__}}/mapping.png"
+                        description="Mapping"/>
+                    </p>
+                    </content>
+                    <outtro>
+                        <!-- {{#map_function}}-->
+                        <p>This mapping defines a function.</p>
+                        <!-- {{/map_function}}-->
+                        <!-- {{^map_function}}-->
+                        <p>This mapping does not define a function.</p>
+                        <!-- {{/map_function}}-->
+                    </outtro>
+                </knowl>
+                <!-- {{/map_task}} -->
+                <!-- {{#table_task}} -->
+                <knowl>
+                    <content>
+                    <p><me>
+                        \begin{array}{c|c} 
+                        x &amp; y \\\hline
+                        {{#table_rows}}
+                        {{x}} &amp; {{y}} \\
+                        {{/table_rows}}
+                        \end{array}
+                    </me></p>
+                    </content>
+                    <outtro>
+                        <!-- {{#table_function}}-->
+                        <p>This table defines a function.</p>
+                        <!-- {{/table_function}}-->
+                        <!-- {{^table_function}}-->
+                        <p>This table does not define a function.</p>
+                        <!-- {{/table_function}}-->
+                    </outtro>
+                </knowl>
+                <!-- {{/table_task}} -->
+                <!-- {{#pairs_task}} -->
+                <knowl>
+                    <content>
+                    <p> <m>{{pairs}}</m> </p>
+                    </content>
+                    <outtro>
+                        <!-- {{#pairs_function}}-->
+                        <p>These ordered pairs define a function.</p>
+                        <!-- {{/pairs_function}}-->
+                        <!-- {{^pairs_function}}-->
+                        <p>These ordered pairs do not define a function.</p>
+                        <!-- {{/pairs_function}}-->
+                    </outtro>
+                </knowl>
+                <!-- {{/pairs_task}} -->
+                <!-- {{/tasks}} -->
+    </knowl>
+
+    <knowl>
+        <intro>
+            <p>Explain why each of the following equations does or does not define a function of <m>x</m>.</p>
+        </intro>
+            <!--{{#tasks2}}-->
+            <knowl>
+                <content>
+                    <p><me>{{eq}}</me></p>
+                </content>
+                <outtro>
+                    <!--{{#eq_function}}-->
+                    <p>This equation defines a function of <m>x</m>.</p>
+                    <!--{{/eq_function}}-->
+                    <!--{{^eq_function}}-->
+                    <p>This equation does not define a function of <m>x</m>.</p>
+                    <!--{{/eq_function}}-->
+                </outtro>
+            </knowl>
+            <!--{{/tasks2}}-->
+    </knowl>
+
+    <knowl>
+        <intro>
+            <p>Explain why each of the following graphs does or does not represent a function.</p>
+        </intro>
+        <!--{{#tasks3}}-->
+        <knowl>
+            <content>
+                <p>
+                    <image
+                        source="assets/FN1/generated/{{__seed__}}/{{plot}}.png"
+                        description="Plot"/>
+                </p>
+            </content>
+            <outtro>
+                <!--{{#is_function}}-->
+                <p>This graph represents a function.</p>
+                <!--{{/is_function}}-->
+                <!--{{^is_function}}-->
+                <p>This graph does not represent a function.</p>
+                <!--{{/is_function}}-->
+            </outtro>
+        </knowl>
+        <!--{{/tasks3}}-->
+    </knowl>
+      
+    
+</knowl>

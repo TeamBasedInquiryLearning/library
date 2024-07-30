@@ -72,16 +72,14 @@
         },
         "editor.snippetSuggestions": "top",
         "xml.validation.enabled": false,
-        "CodeChat.CodeChatServer.Command": "CodeChat_Server",     
-        "workbench.editorAssociations": {
-            "*.md": "vscode.markdown.preview.editor"
-        }
+        "CodeChat.CodeChatServer.Command": "CodeChat_Server"
       },
       "extensions": [
         "ms-vscode.live-server",
         "oscarlevin.pretext-tools",
         "CodeChat.codechat",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "Lov3.sagemath-enhanced"
       ]
     }
   }
