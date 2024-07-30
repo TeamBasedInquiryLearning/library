@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="LT4" tbil-slides="build" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Continuity (LT4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    <remark><statement>
+    <p>A continuous function is one whose values change smoothly, with no jumps or gaps in the graph. We'll explore the idea first, and arrive at a mathematical definition soon.</p>
+</statement></remark>
+    
+    <activity estimated-time="5" xml:id="activity-continuous-scenarios">
+        <statement>
+          <p>
+            Which of the following scenarios best describes a continuous function?
+          </p>
+          <ol marker="A.">
+            <li>
+              <p>
+                The age of a person reported in years
+              </p>
+            </li>
+            <li>
+              <p>
+                The price of postage for a parcel depending on its weight
+              </p>
+            </li>
+            <li>
+              <p>
+                The volume of water in a tank that is gradually filled over time
+              </p>
+            </li>
+            <li>
+              <p>
+                The number of likes on my latest TikTok depending on the time since I posted it
+              </p>
+            </li>
+          </ol>
+         
+        </statement>
+    </activity>
+
+    <remark xml:id="activity-continuity-def">
+        <statement>
+     <p>
+            How would you use the language of limits to clarify the definition of continuity? 
+          </p>
+        </statement>
+    </remark>
+    <activity xml:id="activity-continuous-graph1" estimated-time="10">
+      <introduction>
+        <p>
+          A function <m>f</m> defined on <m>-4 \lt x \lt 4</m> has the graph pictured below. Use the graph to answer each of the following questions.
+        </p>
+        <figure xml:id="figure-limits-different-kinds">
+          <image source="limits-different-kinds.png" width="50%">
+            <description>I need help with alt text for this that doesn't give the answers away.</description>
+          </image>
+        </figure>
+          </introduction>
+        <task>
+            <p>
+              For each of the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>, determine whether the limit <m>\displaystyle\lim_{x \to a} f(x)</m> exists. If the limit does not exist, be ready to explain why not.
+            </p>
+        </task>
+        <task>
+            <p>
+              For each of the values of <m>a</m> where the limit of <m>f</m> exists, determine the value of <m>f(a)</m> at each such point.
+            </p>
+         </task>
+         <task>
+            <p>
+              For each such <m>a</m> value, is <m>f(a)</m> equal to <m>\displaystyle\lim_{x \to a} f(x)</m>?
+            </p>
+         </task>
+         <task>
+            <p>
+              Use your understanding of continuity to determine whether <m>f</m> is continuous at each value of <m>a</m>.
+            </p>
+          </task>
+          <task>
+            <p>
+              Are there any revisions you would make to the definition of continuity that you arrived at toward the end of <xref ref="activity-continuity-def"/>?
+            </p>
+          </task>
+          </activity>
+
+    <definition xml:id="definition-continuity">
+      <statement>
+        <p>
+          A function <m>f</m> is <term>continuous</term><idx>continuous function</idx> at <m>x = a</m> provided that
+          <ol marker="1.">
+            <li>
+              <p>
+                <m>f</m> has a limit as <m>x \to a</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>f</m> is defined at <m>x = a</m> (equivalently, <m>a</m> is in the domain of <m>f</m>), and
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle\lim_{x \to a} f(x) = f(a)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-continuity-which-are-equal" estimated-time="5">
+      <statement>
+        <p>
+          Suppose that some function <m>h(x)</m> is continuous at <m>x = -3</m>. Use <xref ref="definition-continuity"/> to decide which of the following quantities are equal to each other.
+        </p>
+        <ol marker="A." cols="2">
+          <li>
+            <p>
+              <m>\displaystyle\lim_{x \to -3^+} h(x)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle\lim_{x \to -3^-} h(x)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle\lim_{x \to -3} h(x)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>h(-3)</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </activity>
+
+    <activity xml:id="activity-continuous-graph2" estimated-time="10">
+      <introduction>
+        <p>
+          Consider the function <m>f</m> whose graph is pictured below (it's the same graph from <xref ref="activity-continuous-graph1"/>). In the
+            questions below, consider the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>.
+        </p>
+        <figure xml:id="figure-continuous-graph2">
+          <image source="limits-different-kinds.png" width="50%">
+            <description>(for accessibility)</description>
+          </image>
+        </figure>
+      </introduction>
+        <task>
+            <p>
+              For which values of <m>a</m> do we have <m>\displaystyle\lim_{x \to a^-} f(x) \ne \lim_{x \to a^+} f(x)</m>?
+            </p>
+        </task>
+        <task>
+            <p>
+              For which values of <m>a</m> is <m>f(a)</m> not defined?
+            </p>
+        </task>
+        <task>
+            <p>
+              For which values of <m>a</m> does <m>f</m> have a limit at <m>a</m>, yet <m>\displaystyle f(a) \ne \lim_{x \to a} f(x)</m>?
+            </p>
+        </task>
+        <task>
+            <p>
+              For which values of <m>a</m> does <m>f</m> fail to be continuous? Give a complete list of intervals on which <m>f</m> is continuous.
+            </p>
+        </task>
+      </activity>
+
+    <activity xml:id="activity-continuity-limit-strength" estimated-time="5">
+      <statement>
+        <p>
+          Which condition is <em>stronger</em>, meaning it implies the other?
+        </p>
+        <ol marker="A." cols="2">
+          <li>
+            <p>
+                <m>f</m> has a limit at <m>x = a</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f</m> is continuous at <m>x = a</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </activity>
+
+    <activity xml:id="activity-continuity-graph-vs-table-vs-formula" estimated-time="5">
+      <statement>
+        <p>
+          Previously, you have used graphs, tables, and formulas to answer questions about limits. Which of those are suitable for answering questions about continuity?
+        </p>
+        <ol marker="A." cols="2">
+          <li>
+            <p>
+              Graphs only
+            </p>
+          </li>
+          <li>
+            <p>
+              Formulas only
+            </p>
+          </li>
+          <li>
+            <p>
+              Graphs and formulas only
+            </p>
+          </li>
+          <li>
+            <p>
+              Tables and formulas only
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </activity>
+
+    <activity xml:id="activity-continuity-graphs-and-discontinuities" estimated-time="10">
+     <statement>
+        <p>
+          Consider the function <m>f</m> whose graph is pictured below.
+        </p>
+                    <figure>
+                <image width="50%" xml:id="graph-continuity-and-discontinuities">
+                          <latex-image>
+                  \begin{tikzpicture}[scale=1]
+\begin{axis}[  %human, 
+	axis lines=middle,
+    grid=major,
+    xmin=-2, xmax=8.5,
+    ymin=-3, ymax=3,
+    xtick={-2,-1,...,8},
+    ytick={-4,-3,...,4},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-2:1, blue, ultra thick] {(1/3)*(x)-1/3};
+    \addplot[domain=1:5, blue, ultra thick] {-0.5*x +0.5};
+    \addplot[domain=5:7, blue, ultra thick] {x-5};
+    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
+\addplot [only marks, blue] table {
+5 0 \\
+1 2 \\
+8 2 \\
+};
+
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates{(1,0) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(5,-2) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(7,2) };
+                              
+
+\end{axis}
+\end{tikzpicture}
+                               </latex-image>
+                    </image>
+                    <caption> The graph of <m>f(x)</m>.</caption>
+                </figure> 
+        <p>
+          Give a list of <m>x</m>-values where <m>f(x)</m> is not continuous. Be prepared to defend your answer based on <xref ref="definition-continuity"/>.
+        </p>
+      </statement>
+    </activity>
+
+    <remark>
+      <statement>
+        <p>
+          When <m>\displaystyle\lim_{x \to a} f(x)</m> exists but is not equal to <m>f(a)</m>, we say that <m>f</m> has a <term>removable discontinuity</term><idx>removable discontinuity</idx> at <m>x = a</m>. This is because if <m>f(a)</m> were redefined to be equal to <m>\displaystyle\lim_{x \to a} f(x)</m>, the redefined function would be continuous at <m>x = a</m>, thus <q>removing</q> the discontinuity.
+        </p>
+        <p>
+          When the left and right limit exist separately, but are not equal, the discontinuity is not removable and is called a <term>jump discontinuity</term><idx>jump discontinuity</idx>.
+        </p>
+      </statement>
+    </remark>
+
+    
+   
+    <activity xml:id="continuity-checkit">
+    
+            <task>
+                <p>Determine the value of <m>b</m> to make <m>h(x)</m> continuous at <m>x=5</m>.</p>
+                <p>
+                    <me>
+                        h(x) = \begin{cases}
+                        b - x, &amp; x &lt; 5 \\
+                        -x^{2} + 6 \, x - 6, &amp; x \geq 5
+                        \end{cases}
+                    </me>
+                </p>
+            </task>
+            <task>
+                <p>
+Classify the type of discontinuity present at <m>x=-6</m> for 
+the function <m>f(x)</m>.</p>
+                <p>
+                    <me>
+                        f(x) = \begin{cases}
+                        -8 \, x - 46, &amp; x &lt; -6 \\
+                        6, &amp; x = -6 \\
+                        4 \, x + 30, &amp; x &gt; -6 \\
+                        \end{cases}
+                    </me>
+                </p>
+            </task>
+       
+  <!--  <answer>
+        <ol>
+            <li>To make <m>h(x)</m> continuous at <m>x=5</m>, let <m>b=4</m>.</li>
+                <li>
+The function <m>f(x)</m> has a
+jump discontinuity.
+                </li>
+        </ol>
+    </answer>-->
+</activity>
+    
+    
+    
+      <theorem xml:id="theorem-continuity-combining-functions">
+      <statement>
+        <p>
+          If <m>f</m> and <m>g</m> are continuous at <m>x = a</m> and <m>c</m> is a real number, then the functions <m>f + g</m>, <m>f - g</m>, <m>cf</m>, and <m>fg</m> are also continuous at <m>x = a</m>. Moreover, <m>f/g</m> is continuous at <m>x = a</m> provided that <m>g(a) \ne 0</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+    <activity xml:id="activity-continuity-piecewise" estimated-time="10">
+     <introduction> 
+        <p>
+          Answer the questions below about piecewise functions. It may be helpful to look at some graphs.
+        </p>
+         </introduction>
+        <task>
+            <p>
+              Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
+                g(x) = \begin{cases}
+                  x + c \amp x \leq 2 \\
+                  x^2   \amp x \gt  2
+                \end{cases}
+              </me>
+            </p>
+        </task>  
+        <task>
+            <p>
+              Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
+                h(x) = \begin{cases}
+                  4     \amp x \leq c \\
+                  x^2   \amp x \gt  c
+                \end{cases}
+              </me>
+            </p>
+          </task>
+          <task>
+            <p>
+              Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
+                k(x) = \begin{cases}
+                  x   \amp x \leq c \\
+                  x^2 \amp x \gt c
+                \end{cases}
+              </me>
+            </p>
+          </task>
+        </activity>
+
+  
+<theorem xml:id="IVT"><title>Intermediate Value Theorem</title><idx>Intermediate Value Theorem</idx>
+             <statement>
+             <p> Suppose that: </p>
+             <ul>
+                  <li> <p> the function <m>f</m> is continuous on the interval <m>[a,b]</m> ;</p></li>
+                  <li> <p> you pick a value <m>N</m> such that <m>f(a)\leq N \leq f(b)</m> or <m>f(b)\leq N \leq f(a)</m>.</p></li>
+             </ul>
+<p>Then, there is some input <m>c</m> in the interval <m>[a,b]</m> such that <m>f(c)=N</m>.  </p></statement> </theorem>
+
+    
+    <activity xml:id="IVT-ex">
+        <introduction>
+            <p>    In this activity we will explore a mathematical theorem, the Intermediate Value Theorem.</p> 
+       </introduction>
+ <task>
+            <statement>
+                <p> To get an idea for the theorem, draw a continuous function <m>f(x)</m> on the interval <m>[0,10]</m> such that <m>f(0)=8</m> and <m>f(10)=2</m>. Find an input <m>c</m> where <m>f(c)=5</m>.
+</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p> Now try to draw a graph similar to the previous one, but that does not have any input corresponding to the output 5. Then, find where your graph violates these conditions: <m>f(x) </m> is continuous on <m>[0,10]</m>, <m>f(0)=8</m>, and <m>f(10)=2</m>.
+</p>
+            </statement>
+        </task>
+         <task>
+            <statement>
+                <p> The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, while the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Intermediate Value Theorem? What is the conclusion?
+</p> </statement> </task>
+        <task>
+            <statement>
+                <p> Apply the Intermediate Value Theorem to show that the function <m>f(x) = x^3  +x -3</m> has a zero (so crosses the <m>x</m>-axis) at some point between <m>x=-1</m> and <m>x=2</m>. (Hint: What interval of <m>x</m> values is being considered here? What is <m>N</m>? Why is <m>N</m> between <m>f(a)</m> and <m>f(b)</m>?) </p>
+            </statement>
+        </task>
+                 </activity>
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-LT4" youtube="6rKqQyTD4gc"/>
+            <caption>Video for LT4</caption>
+        </figure>
+    </subsection>  
+
+    <subsection>
+      <title>Exercises</title>
+      <p>
+          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT4/"/>
+      </p>
+    </subsection>
+
+</section>
