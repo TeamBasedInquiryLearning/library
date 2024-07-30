@@ -4,30 +4,16 @@
 <!-- This is where you can define macros and other book-wide -->
 <!--  settings.                                              -->
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
-
-  <initialism>TBIL-Calc</initialism>
+  <document-id>tbilcal</document-id>
+  <initialism>TBIL-Cal</initialism>
+  <blurb shelf="math">Activities and exercises for implementing Team-Based Inquiry Learning in a single-variable calculus classroom.</blurb>
 
 <!-- The next three lines are likely for mature projects only: -->
 
 <!-- <brandlogo url="" source="images/cover.png"/> -->
 <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
-<!-- <document-id>unique-book-id</document-id> -->
 
-<!-- macros for defining latex math shortcuts. It is good practice  -->
-<!-- to define these semantically, so that the macro relates to what-->
-<!-- it defines.                                                    -->
-<!-- borrowed \unknown from cal-2 text for IN-9 [dave r]            -->
-<macros>
-\newcommand{\N}{\mathbb N}
-\newcommand{\Z}{\mathbb Z}
-\newcommand{\Q}{\mathbb Q}
-\newcommand{\R}{\mathbb R}
-\newcommand{\unknown}{{\color{gray} ?}}
-\DeclareMathOperator{\arcsec}{arcsec}
-\DeclareMathOperator{\arccot}{arccot}
-\DeclareMathOperator{\arccsc}{arccsc}
-\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
-</macros>
+<macros><xi:include href="../../../common/macros.tex" parse="text"/></macros>
 
 <!-- If you put any latex-image elements you can include preambles  -->
 <!-- for those in the next element.                                 -->
