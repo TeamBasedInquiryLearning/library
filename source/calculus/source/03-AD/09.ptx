@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AD9" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limits and Derivatives (AD9) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/09.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    
+<remark><p>When we compute a limit algebraically, we often encounter the indeterminate form </p>
+<me>\frac{0}{0}</me>
+    <p> but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
+
+<activity>
+    <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
+<me> \lim_{x\to 1} \frac{4x - 4}{x^2 -1} .</me> </introduction>
+    <task>
+    <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{0}{0}</m>.
+        </p></task>
+    <task>
+    <p> As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?
+        </p>
+        <ol marker="A." cols="2">
+                <li><p>  4 </p></li>
+                  <li><p>  2 </p></li> 
+                  <li><p>  <m>\frac{1}{2}</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    
+    </activity>
+
+
+<remark><p> Consider the limits </p>
+<me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = f'(a). </me>
+<me>  \lim_{x \to a} \frac{f(x)-f(a)}{x-a} = f'(a). </me>
+    <p>Notice that these limits give indeterminate forms of the type <m>\frac{0}{0}</m>. However, these limits are equal to <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>. If you can compute <m>f'(a)</m>, then you have computed the value of the limit! </p> </remark>
+
+<activity>
+    <introduction> <p> Use the limit definition of the derivative to compute the following limits. Each limit is <m>f'(a)</m>, the derivative of some function <m>f(x)</m> at some point <m>x=a</m>. You need to determine the function and the point to find the value of the limit: <m>f'(a)</m>.</p>
+ </introduction>
+    <task>
+    <p>  Notice that <m>\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}</m> is the derivative of <m>e^x</m> at <m>x=2</m> (where <m>x</m> was used for <m>h</m>). Given this observation, what is this limit equal to?
+        </p>
+    <ol marker="A." cols="2">
+                <li><p>  2 </p></li>
+                  <li><p>  <m>e</m> </p></li> 
+                  <li><p>  <m>e^2</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    <task>
+    <p>  Consider <m>\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}</m>. This limit is also the limit definition of some derivative at some point. What is the value of this limit?
+        </p>
+    <ol marker="A." cols="2">
+                <li><p>  1 </p></li>
+                  <li><p> 0 </p></li> 
+                  <li><p>  <m>\ln(2)</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    
+     </activity>
+    <activity><introduction><p> Compute the following limits using the limit defintion of the derivative at a point.</p> </introduction>
+    <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p></task>
+     <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}</m></p></task>
+      <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}</m></p></task>  
+    
+    </activity>
+
+    <remark><p>When we compute a limit algebraically, we might encounter the indeterminate form </p>
+<me>\frac{\infty}{\infty}</me>
+    <p> but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
+
+<activity>
+    <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
+<me> \lim_{x\to +\infty} \frac{2x^2 + 1}{x^2 -1} .</me> </introduction>
+    <task>
+    <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{\infty}{\infty}</m>.
+        </p></task>
+    <task>
+    <p> You can manipulate this fraction algebraically by dividing numerator and denominator by <m>x^2</m>. Then, notice that <m>\pm \frac{1}{x^2} \to 0</m> as <m>x \to \infty </m>. Given these observations, what is the given limit equal to?
+        </p>
+        <ol marker="A." cols="2">
+                <li><p>  2 </p></li>
+                  <li><p>  1 </p></li> 
+                  <li><p>  <m>\frac{1}{2}</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    
+    </activity>
+
+<!-- Use &#xF4; to get the circumflex o in L'Hopital-->
+<theorem> <title>L' H&#xF4;pital's Rule</title> <statement> <p> If the functions <m>f(x), g(x)</m> are both differentiable around <m>x = a</m> and for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> (or <m>x \to \pm \infty</m>) we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>, then </p>
+
+<me> \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} </me> 
+<p>provided that the limit exists! </p> 
+    </statement>
+    </theorem>
+
+
+
+<activity><p>Look back at some limits that gave you an indeterminate form. Can you use L'H&#xF4;pital's Rule to find the limit? 
+    If using the L'H&#xF4;pital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.  </p></activity>
+
+<activity xml:id="lhospital-instead-squeeze">
+        <introduction><p> In <xref ref="squeeze-thm-ex"/>, when we started to study limits, we encountered the Squeeze Theorem and computed the limit <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m> using this theorem. Let's find new ways to compute this limit. </p>
+        </introduction>
+    <task>
+    <p>Thinking about <m>x</m> as the length of an interval <m>h</m>, this limit is actually equal to the value of some derivative, so <m>f'(a) = \displaystyle \lim_{h\to 0} \frac{\sin(h)}{h}</m>. What function <m>f(x)</m> and what point <m>x=a</m> would lead to this limit? Use these to find <m>f'(a)</m>, the value of this limit (in a new way!).</p>
+    </task>
+       <task>
+    <p>Verify, one more time, that this limit is indeed an indeterminate form. Then use L'H&#xF4;pital's Rule to find this limit (again, in another way!).</p>
+    </task>
+    </activity>
+
+<activity>
+    <introduction><p>
+    For the following limits, check if they give an indeterminate form. If they do, try to use L'H&#xF4;pital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits. </p>
+    </introduction>
+    <task>
+    <p><m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p>
+    </task>
+    <task>
+    <p><m>\displaystyle \lim_{x\to 0} \frac{e^x-1}{x}</m></p>
+    </task>
+     <task>
+    <p><m>\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}</m></p>
+    </task>
+     <task>
+    <p><m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}</m></p>
+    </task>
+    <task>
+    <p><m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}</m></p>
+    </task>
+     <task>
+    <p><m>\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}</m></p>
+    </task>
+    </activity>
+
+    <activity xml:id="checkit-ad9">
+    <introduction>
+        <p>
+For each limit, explain if L'H&#xF4;pital's Rule may be applied.
+If it can, explain how to use this rule to find the limit.
+        </p></introduction>
+        
+                <task>
+                    <p>
+                        <me>
+\lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} }
+                        </me>
+                    </p>
+                </task>
+                <task>
+                    <p>
+                        <me>
+\lim_{x\to 0 } \frac{ 6 \, \cos\left(8 \, x\right) }{ 4 \, x - 7 }
+                        </me>
+                    </p>
+                </task>
+                <task>
+                    <p>
+                        <me>
+\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x }
+                        </me>
+                    </p>
+                </task>
+                <task>
+                    <p>
+                        <me>
+\lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 }
+                        </me>
+                    </p>
+                </task>
+      
+ <!--   <answer>
+         <ol>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} } = -1
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+L'H&#244;ptial's Rule does not apply.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x } = 0
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 } = -\frac{7}{5}
+                        </me>
+                    </p>
+                </li>
+        </ol>
+    </answer>-->
+</activity>
+
+    
+    <activity xml:id="lhospital-fail">
+    <introduction><p>
+        There are situations in which using L'H&#xF4;pital's Rule does not help and you do need some algebra skills! Consider the function <m>r(x)=\frac{x}{\sqrt{x^2 +2}}</m> and suppose that we want to find the limits as <m>x</m> tends to <m>\pm \infty</m>.</p>
+    </introduction>
+    <task>
+    <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'H&#xF4;pital's Rule... what happens? What if you use it again? </p>
+    </task>
+    <task>
+    <p>We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <m>\sqrt{x^2 +2}</m>. We want to factor out an <m>x^2</m> under the square root. What do you get? </p>
+        <ol marker="A." cols="2">
+                <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x}\right) } </m>  </p></li>
+                 <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x^2}\right) } </m>  </p></li>
+                  <li><p>  <m>\sqrt{ x^2\left(1 + x \right)} </m>  </p></li> 
+                    <li><p>  <m>\sqrt{ x^2\left(1 + x^2 \right)} </m>  </p></li>          
+    </ol>       
+    </task>
+     <task>
+    <p>Now we need to be careful when computing <m>\sqrt{x^2}</m> as <m>\sqrt{x^2}=|x|</m>. The absolute value function <m>|x|</m> equals <m>+x</m> when we have a positive input and <m>-x</m> when we have a negative output. So we have the two limits.
+       <me> \lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me> 
+        <me> \lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me>  
+        Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... The two limits have different values! </p>
+    </task>
+    </activity>
+        </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AD9" youtube="pjKpqh2Hbkw"/>
+            <caption>Video for AD9</caption>
+        </figure>
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/AD9/"/>
+        </p>
+    </subsection>
+</section>
+
+

@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="TI4" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Trigonometric Substitution (TI4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+        <activity xml:id="activity-TI4fakeusub">
+            <statement>
+                <p>
+                    Consider <m>\displaystyle \int \sqrt{9-4x^2} \,dx</m>.   Which substitution would you choose to evaluate this integral?
+                    <ol marker="A." cols="2">
+                        <li><m>u=9-4x^2</m></li>
+                        <li><m>u=\sqrt{9-4x^2}</m></li>
+                        <li><m>u=3-2x</m></li>
+                        <li>Substitution is not effective</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4intropythagoras">
+            <statement>
+                <p>
+                    To find <m>\displaystyle \int \sqrt{9-4x^2} \,dx</m>, we will need a more advanced substitution.
+                    Which of these candidates is most reasonable?
+                    <ol marker="A.">
+                        <li>Let <m>v</m> satisfy <m>9-4x^2=9-9e^{2v}=9e^{-2v}</m>.</li>
+                        <li>Let <m>\theta</m> satisfy <m>9-4x^2=9-9\sin^2\theta=9\cos^2\theta</m>.</li>
+                        <li>Let <m>w</m> satisfy <m>9-4x^2=4-8\ln|w|=4\ln|2w|</m>.</li>
+                        <li>Let <m>\phi</m> satisfy <m>9-4x^2=4-4\cos^2\phi=4\sin^2\phi</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsub">
+            <statement>
+                <p>
+                    Fill in the missing <m>\unknown</m>s for the following calculation.
+            <md>
+                <mrow>
+\text{Let }9-4x^2&amp;=9-9\sin^2\theta=9\cos^2\theta
+                </mrow>
+                <mrow>
+4x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\sqrt{9-4x^2} \,dx&amp;=\int\sqrt{\unknown}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int\frac{9}{2}\cos^2 \theta\,d\theta
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsubrewrite">
+            <statement>
+                <p>
+                    From <xref ref="TI3"/> we may find <m>\displaystyle \int\cos^2 \theta\,d\theta=\dfrac{1}{2}\theta+\dfrac{1}{2}\sin\theta\cos\theta+C</m>.
+                </p>
+                <p>
+                    Use this to continue your work in the previous activity and complete the integration by trigonometric substitution.
+                </p>
+            <md>
+                <mrow>
+\sin(\theta)&amp;=\unknown
+                </mrow>
+                <mrow>
+\theta&amp;=\arcsin(\unknown)
+                </mrow>
+                <mrow>
+\cos(\theta)&amp;=\unknown\sqrt{\unknown}
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\sqrt{9-4x^2} \,dx&amp;= \cdots = \int\frac{9}{2}\cos^2 \theta\,d\theta
+                </mrow>
+                <mrow>
+&amp;= \frac{9}{2}\left(\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta\right)+C
+                </mrow>
+                <mrow>
+&amp;= \frac{9}{4}(\unknown)+\dfrac{9}{4}(\unknown)(\unknown)+C
+                </mrow>
+            </md>
+            </statement>
+        </activity>
+        
+        <activity>
+            <statement>
+                <p>
+Use similar reasoning to complete the following proof that <m>\dfrac{d}{dx}\left[\arcsin(x)\right]=\dfrac{1}{\sqrt{1-x^2}}</m>.
+            <md>
+                <mrow>
+\text{Let }1-x^2&amp;=1-\unknown\theta=\unknown\theta
+                </mrow>
+                <mrow>
+x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+                <mrow>
+\theta&amp;=\unknown
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int \dfrac{1}{\sqrt{1-x^2}} \,dx&amp;=\displaystyle \int\frac{1}{\sqrt{\unknown}}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int \,d\theta
+                </mrow>
+                <mrow>
+&amp;= \unknown + C
+                </mrow>
+                <mrow>
+&amp;= \arcsin(x) + C
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity>
+            <statement>
+                <p>
+Substitutions of the form <me>16-25x^2=16-16\sin^2x=16\cos^2x</me> are made possible due to the
+Pythagorean identity <m>\sin^2(x)+\cos^2(x)=1</m>.
+                </p>
+                <p>
+Which two of these four identities can be obtained from dividing both sides of
+<m>\sin^2(x)+\cos^2(x)=1</m> by <m>\cos^2(x)</m> and rearranging?
+                    <ol marker="A." cols="2">
+                        <li><m>\tan^2(x)-1=\sec^2(x)</m> </li>
+                        <li><m>\tan^2(x)+1=\sec^2(x)</m> </li>
+                        <li><m>\sec^2(x)-1=\tan^2(x)</m> </li>
+                        <li><m>\sec^2(x)+1=\tan^2(x)</m> </li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <observation>
+            <statement>
+                <p>
+In summary, certain quadratic expressions inside an integral may be substituted with
+trigonometric functions to take advantage of trigonometric identities and simplify the integrand:
+            <md>
+                <mrow>
+\text{Let } b^2-a^2x^2&amp;=b^2-b^2\sin^2(\theta)=b^2\cos^2(\theta)
+                </mrow>
+                <mrow>
+\text{So } x&amp;=\frac{b}{a}\sin(\theta)
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\text{Let } b^2+a^2x^2&amp;=b^2+b^2\tan^2(\theta)=b^2\sec^2(\theta)
+                </mrow>
+                <mrow>
+\text{So } x&amp;=\frac{b}{a}\tan(\theta)
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\text{Let } a^2x^2-b^2&amp;=b^2\sec^2(\theta)-b^2=b^2\tan^2(\theta)
+                </mrow>
+                <mrow>
+\text{So } x&amp;=\frac{b}{a}\sec(\theta)
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </observation>
+        
+                
+        <activity>
+            <statement>
+                <p>
+Complete the following trigonometric substitution to find <m>\displaystyle\int\dfrac{3}{4+25x^2}\,dx</m>.
+            <md>
+                <mrow>
+\text{Let }4+25x^2&amp;=2+\unknown\theta=\unknown\theta
+                </mrow>
+                <mrow>
+25x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+                <mrow>
+\theta&amp;=\unknown
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\frac{3}{4+25x^2}\,dx &amp;=\int\dfrac{3}{\unknown}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int \unknown \, d\theta
+                </mrow>
+                <mrow>
+&amp;= \unknown + C
+                </mrow>
+                <mrow>
+&amp;= \dfrac{3}{10}\arctan\left(\dfrac{5}{2}x\right) + C
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+Complete the following trigonometric substitution to find <m>\displaystyle\int\dfrac{7}{x\sqrt{9x^2-16}}\,dx</m>.
+            <md>
+                <mrow>
+\text{Let }9x^2-16&amp;=\unknown\theta-16=\unknown\theta
+                </mrow>
+                <mrow>
+9x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+                <mrow>
+\theta&amp;=\unknown
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\displaystyle \int\dfrac{7}{x\sqrt{9x^2-16}}\,dx &amp;=\int\dfrac{7}{\unknown\sqrt{\unknown}}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int \unknown\, d\theta
+                </mrow>
+                <mrow>
+&amp;= \unknown + C
+                </mrow>
+                <mrow>
+&amp;= \frac{7}{4}\arcsec\left(\dfrac{3}{4}x\right) + C
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </activity>
+
+         <activity>
+    <introduction>
+      <p> Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following. </p>
+    </introduction>
+      <task>
+        <statement>
+          <p> <md>
+            <mrow>
+\int \frac{\sqrt{-9 \, x^{2} + 16}}{x^{2}}\,dx &amp;= \cdots 
+            </mrow>
+            <mrow>
+&amp;=\int \frac{3\cos^2\theta}{\sin^2\theta}\,d\theta
+            </mrow>
+            <mrow>
+&amp;=-3\theta-3\frac{\cos\theta}{\sin\theta}+C
+            </mrow>
+            <mrow>
+&amp;=  - 3 \, \arcsin\left(\unknown\right)-\frac{\sqrt{\unknown}}{\unknown} +C
+            </mrow>
+            </md> </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p> <md>
+            <mrow>
+\int \frac{2 \, \sqrt{9 \, x^{2} - 16}}{x}\,dx &amp;= \cdots 
+            </mrow>
+            <mrow>
+&amp;=\int 8\tan^2\theta\,d\theta
+            </mrow>
+            <mrow>
+&amp;=8\tan\theta-8\theta+C
+            </mrow>
+            <mrow>
+&amp;=  \unknown \, \sqrt{\unknown} - 8 \, \operatorname{arcsec}\left(\unknown\right) +C
+            </mrow>
+            </md> </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p> <md>
+            <mrow>
+\int \frac{1}{\sqrt{81 \, x^{2} + 4}}\,dx&amp;= \cdots 
+            </mrow>
+            <mrow>
+&amp;=\int \frac{1}{9}\sec\theta\,d\theta
+            </mrow>
+            <mrow>
+&amp;=\frac{1}{9}\log|\sec\theta+\tan\theta|+C
+            </mrow>
+            <mrow>
+&amp;=  \frac{1}{9} \, \log\left| \unknown + \frac{1}{2} \, \sqrt{\unknown} \right| +C
+            </mrow>
+            </md> </p>
+        </statement>
+      </task>
+  </activity>
+
+
+        <activity xml:id="activity-TI4semicircle">
+            <statement>
+                <p>
+                    Consider the unit circle <m>x^2+y^2=1</m>.  Find a function <m>f(x)</m> so that <m>y=f(x)</m> is the graph of the upper-half semicircle of the unit circle.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4semicirclearea">
+            <task>
+                <p>
+                    Find the area under the curve <m>y=f(x)</m> from <xref ref="activity-TI4semicircle"/>.
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    How does this value compare to what we know about areas of circles?
+                </p>
+            </task>
+        </activity>
+    
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI4" youtube="FTFtiiDARf0">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Use trigonometric substitution to compute indefinite integrals</caption>
+    </figure>
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/TI4/"/>
+        </p>
+    </subsection>
+        
+        
+        <!-- <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI4.slides.html"/>.</p>
+    </subsection> -->
+        
+        
+</section>

@@ -1,0 +1,167 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[paperwidth=8.5in, paperheight=11in, top=1in, bottom=.5in, left=.5in, right=.5in]{geometry}
+\usepackage{fancyhdr, graphicx,tikz,amsmath,multicol,paracol}
+\usepackage[inline]{enumitem}
+
+
+\pagestyle{fancy}
+\lhead{\large{\textbf{Module 4: Integration - Readiness Assurance Test}}}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+%\rfoot{\thepage/\pageref{LastPage} }
+\setlength{\headheight}{14pt} %added in bc warning
+
+%%% The answers will be aligned to IF-AT Form B012, questions 41-50. 
+
+%OLD - B021
+% 1 A
+% 2 D
+% 3 D
+% 4 C
+% 5 A
+% 6 A
+% 7 C
+% 8 C
+% 9 A
+% 10 B
+
+% 1 D
+% 2 B
+% 3 C
+% 4 A
+% 5 D
+% 6 A
+% 7 D
+% 8 A
+% 9 C
+% 10 B
+
+
+\begin{document}
+
+
+\begin{enumerate}
+
+
+%derivative practice; polynomial, root, negative exponent
+
+\item Let $f(x)=x^3-4x^2+5$. Find $f'(x)$.
+
+  \begin{enumerate}
+  
+ 
+  \item $f'(x) = \frac{1}{4}x^4-\frac{4}{3}x^3+5x$ %anti-derivative
+  \item $f'(x) = \frac{1}{4}x^4-\frac{4}{3}x^3+5$ 
+  \item $f'(x) = 3x^2-8x +5$ %left constant in
+  \item $f'(x) = 3x^2-8x$ %correct
+  \end{enumerate}
+
+
+
+\item Let $g(x)=\sqrt[3]{x^2}$. Find $g'(x)$.
+
+  \begin{enumerate}
+  
+  
+  \item $g'(x) = \dfrac{3}{2}\sqrt{x}$ % derivative of x^3/2 instead
+  \item $g'(x) = \dfrac{2}{3\sqrt[3]{x}}$ %correct
+  \item $g'(x) = \dfrac{3}{2\sqrt[3]{x}}$ %wrong coefficient 
+  \item $g'(x) = \dfrac{2}{3}\sqrt[3]{x}$
+  
+  
+  \end{enumerate}
+
+\item Let $h(x)=\dfrac{3}{x^4}$. Find $h'(x)$.
+
+  \begin{enumerate}
+  \item $h'(x) = 12x^3$ %did not change sign of exponent
+  \item $h'(x) = -\dfrac{12}{x^3}$ %added 1 to exponent
+  \item $h'(x) = -\dfrac{12}{x^5}$ %correct
+  \item $h'(x) = \dfrac{3}{4x^3}$ %took derivative of bottom only
+  
+  \end{enumerate}
+
+
+% visual of intersection of graphs
+
+\item Let $f(x)=x^2$ and $g(x)=x+6$. At what points do $f(x)$ and $g(x)$ intersect? 
+
+  \begin{enumerate} %include answer choices around correct one
+  
+  \item $(-2,4)$ and $(3,9)$ %correct
+  \item $(2,4)$ and $(-3,9)$
+  \item $(4,-2)$ and $(9,3)$
+  \item $(4,2)$ and $(9,-3)$
+  \end{enumerate}
+
+%area of rectangle in coordinate plane
+
+\item A rectangle is placed in the coordinate plane with its vertices at the points $(2,3)$, $(7,3)$, $(7,7)$ and $(2,7)$. What is the area of this rectangle?
+
+  \begin{enumerate} %include answer choices around correct one
+  
+  \item 14 square units
+  \item 16 square units
+  \item 18 square units
+  \item 20 square units %correct
+  \end{enumerate}
+
+
+% area of shapes
+
+\item A circle is placed in the coordinate plane such that its center is at $(3,1)$ and the point $(3,4)$ lies on the boundary. What is the area of this circle?
+
+    \begin{enumerate} %include answer choices around correct one
+  \item $9\pi$ square units %correct
+  \item $16\pi$ square units %used r=4
+  \item $3\pi$ square units %didn't square r
+  \item $6\pi$ square units %circumference
+  \end{enumerate}
+
+\pagebreak
+% sigma notation
+
+\item Evaluate the sum:
+  \[\sum_{i=1}^{4} (3i-2)  \]
+  
+    \begin{enumerate} %include answer choices around correct one
+  \item 16
+  \item 18
+  \item 20
+  \item 22 %correct
+ 
+  \end{enumerate}
+
+%chain rule (IF YOU GET TO U-SUB IN YOUR CLASS! You may want to edit based on your wording in class!)
+
+\item Let's consider the composite function $f(x)=\sin(x^3+1)$. If you were asked to find $f'(x)$, using the chain rule would be a good approach. What would the inside function be in this case?
+
+  \begin{enumerate}
+  
+  \item $x^3+1$ % correct
+  \item $\sin x$
+  \item $x^3$
+  \item $\sin(x^3+1)$
+  \end{enumerate}
+
+%area of trapezoid in coordinate plane
+
+\item A trapezoid is placed in the coordinate plane with its vertices at the points $(-1,0)$, $(1,0)$, $(1,6)$ and $(-1,8)$. What is the area of this trapezoid?
+
+  \begin{enumerate} %include answer choices around correct one
+  
+  \item 10 square units
+  \item 12 square units
+  \item 14 square units %correct
+  \item 16 square units
+  
+  \end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}

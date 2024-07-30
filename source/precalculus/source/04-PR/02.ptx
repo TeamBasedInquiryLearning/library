@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PR2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Quadratic Models and Meanings (PR2) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/02.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    <p><observation> Objects launched into the air follow a path that can be described by a quadratic function. We can also use quadratic functions to model area, profit, and population. Knowing the key components of a quadratic function allow us to find maximum profit, the point where an object hits the ground, or how much of an object to make for a minimum cost. </observation></p>
+
+    <activity xml:id="activity-2-1">
+        <introduction>
+          <p>A water balloon is tossed vertically from a fifth story window. It's height <m>h(t)</m>, in feet, at a time <m>t</m>, in seconds, is modeled by the function
+            <md>
+              <mrow>h(t)=-16t^2+40t+50 \amp </mrow>
+            </md>
+          </p>
+        </introduction>
+        <task> 
+          <statement>
+            <p>Complete the following table. Do all the values have meaning in terms of the model?
+          <table>
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell><m>t</m></cell> 
+                <cell><m>h(t)</m></cell>
+              </row>
+              <row>
+                <cell>0</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+              </row>
+              <row>
+                <cell>4</cell>
+              </row>
+              <row>
+                <cell>5</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+        </statement>
+        <answer>
+          <p> After completing the table, students might notice that there are some negative values, which does not make sense because the height of the balloon cannot be negative.
+            <table>
+              <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell><m>t</m></cell> 
+                  <cell><m>h(t)</m></cell>
+                </row>
+                <row>
+                  <cell>0</cell>
+                  <cell>50</cell>
+                </row>
+                <row>
+                  <cell>1</cell>
+                  <cell>74</cell>
+                </row>
+                <row>
+                  <cell>2</cell>
+                  <cell>66</cell>
+                </row>
+                <row>
+                  <cell>3</cell>
+                  <cell>26</cell>
+                </row>
+                <row>
+                  <cell>4</cell>
+                  <cell>-46</cell>
+                </row>
+                <row>
+                  <cell>5</cell>
+                  <cell>-150</cell>
+                </row>
+              </tabular>
+            </table>
+          </p>
+        </answer>
+        </task>
+        <task> 
+          <statement>
+            <p>Compute the slope of the line joining <m>t=0</m> and <m>t=1</m>. Then, compute the slope of the line joining <m>t=1</m> and <m>t=2</m>. What do you notice about the slopes?</p>
+          </statement>
+          <answer>
+            <p>
+              The slope of the line joining <m>t=0</m> and <m>t=1</m> is <m>24</m>. The slope of the line joining <m>t=1</m> and <m>t=2</m> is <m>-8</m>. One slope is positive and one slope is negative.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p> What is the meaning of <m>h(0)=50</m>?</p>
+          <ol marker="A." cols="1">
+            <li><p> The initial height of the water balloon is <m>50</m> feet.</p></li>
+            <li><p> The water balloon reaches a maximum height of <m>50</m> feet. </p></li>
+            <li><p> The water balloon hits the ground after <m>50</m> seconds.</p></li>
+            <li><p> The water balloon travels <m>50</m> feet before hitting the ground.</p></li>
+        </ol> 
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+        <task>
+          <statement>
+          <p> Find the vertex of the quadratic function <m>h(t)</m>.
+            <ol marker="A." cols="2">
+              <li><p><m>(0,50)</m> </p></li>
+              <li><p> <m>(1,74)</m> </p></li>
+              <li><p> <m>(1.25,75)</m> </p></li>
+              <li><p> <m>(3.4,0)</m></p></li>
+          </ol>     
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+        </task>
+        <task> 
+          <statement>
+            <p>What is the meaning of the vertex?
+          <ol marker="A." cols="1">
+            <li><p> The water balloon reaches a maximum height of <m>50</m> feet at the start.</p></li>
+            <li><p> After <m>1</m> second, the water balloon reaches a maximum height of <m>74</m> feet. </p></li>
+            <li><p>After <m>1.25</m> seconds, the water balloon reaches the maximum height. </p></li>
+            <li><p> After <m>3.4</m> seconds, the water balloon hits the ground.</p></li>
+        </ol>     
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+        </task>
+      </activity>
+      <activity>
+        <introduction>
+          <p>The population of a small city is given by the function <m>P(t)=-50t^2+1200t+32000</m>, where <m>t</m> is the number of years after <m>2015</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+          <p> When will the population of the city reach a maximum?
+            <ol marker="A." cols="2">
+              <li><p><m>2020</m> </p></li>
+              <li><p> <m>2022</m> </p></li>
+              <li><p> <m>2025</m> </p></li>
+              <li><p> <m>2027</m></p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+            <p> Determine when the population of the city is increasing and when it is decreasing.    
+            </p>
+        </statement>
+        <answer>
+          <p>
+            The poplulation increases until <m>2027</m> (i.e., until it reaches its maximum) and then will decrease. So, the population increases from <m>2015</m> till <m>2027</m> and then decreases from <m>2027</m>.
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+          <p> When will the population of the city reach <m>36{,}000</m> people?
+            <ol marker="A." cols="2">
+              <li><p><m>2019</m></p></li>
+              <li><p><m>2025</m></p></li>
+              <li><p><m>2027</m></p></li>
+              <li><p><m>2035</m></p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+        </task>
+       
+      </activity>
+      <activity>
+        <introduction>
+          <p>The unit price of an item affects its supply and demand. That is, if the unit price increases, the demand for the item will usually decrease. For example, an online streaming service currently has <m>84</m> million subscribers at a monthly charge of <m>\$6</m>. Market research has suggested that if the owners raise the price to <m>\$8</m>, they would lose <m>4</m> million subscribers. Assume that subscriptions are linearly related to the price.
+            
+          </p>
+        </introduction>
+        <task>
+          <statement>
+          <p> Which of the following represents a linear function which relates the price of the streaming service <m>p</m> to the number of subscribers <m>Q</m> (in millions)?
+            <ol marker="A." cols="2">
+              <li><p><m>Q(p)=-2p</m> </p></li>
+              <li><p> <m>Q(p)=-2p+84</m> </p></li>
+              <li><p> <m>Q(p)=-2p-4</m> </p></li>
+              <li><p> <m>Q(p)=-2p+96</m></p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+            <p> Using the fact that revenue <m>R</m> is price times the number of items sold,  <m>R=pQ</m>, which of the following represents the revenue in terms of the price?
+              <ol marker="A." cols="2">
+              <li><p><m>R(p)=-2p^2</m> </p></li>
+              <li><p> <m>R(p)=-2p^2+84p</m> </p></li>
+              <li><p> <m>R(p)=-2p^2-4p</m> </p></li>
+              <li><p> <m>R(p)=-2p^2+96p</m></p></li>
+          </ol>      
+            </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+        </task>
+        <task> 
+          <statement>
+            <p> What price should the streaming service charge for a monthly subscription to maximize their revenue?<ol marker="A." cols="2">
+          <li><p><m>\$10</m> </p></li>
+          <li><p> <m>\$19.50</m> </p></li>
+          <li><p> <m>\$24</m> </p></li>
+          <li><p> <m>\$28.25</m></p></li>
+      </ol>   </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+             <p> How many subscribers would the company have at this price?
+          <ol marker="A." cols="2">
+          <li><p><m>39.5</m> million </p></li>
+          <li><p> <m>48</m> million </p></li>
+          <li><p> <m>57</m> million </p></li>
+          <li><p> <m>76</m> million </p></li>
+      </ol>   </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+        </task>
+        <task>
+          <statement>
+             <p> What is the maximum revenue?
+          <ol marker="A." cols="2">
+          <li><p> <m>760</m> million </p></li>
+          <li><p> <m>1112</m> million </p></li>
+          <li><p> <m>1152</m> million </p></li>
+          <li><p> <m>1116</m> million </p></li>
+      </ol>   </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+        </task>
+      </activity>
+
+      <activity>
+        <introduction>
+          The owner of a ranch decides to enclose a rectangular region with <m>240</m> feet of fencing. To help the fencing cover more land, he plans to use one side of his barn as part of the enclosed region. What is the maximum area the rancher can enclose?
+          </introduction>
+          <task>
+           <statement>
+              <p>
+                Draw a picture to represent the fenced area against the barn. Use <m>w</m> to represent the length of fence parallel to the barn and <m>l</m> to represent the two sides perpendicular to the barn.
+              </p>
+          </statement>
+          <answer>
+            <p>
+              Instructors might use to this time to make sure students are setting up their picture correctly and to find an equation that represents the amount of fencing that would be used: <m>2l+w=240</m>.
+            </p>
+          </answer>
+          </task>
+        <task> 
+          <statement>
+            <p> Find an equation for the area of the fence in terms of the length <m>l</m>. It may be useful to find an equation for the total amount of fencing in terms of the length <m>l</m> and width <m>w</m>.
+          <ol marker="A." cols="1">
+          <li><p> <m>A=lw</m> </p></li>
+          <li><p> <m>A=l^{2}</m> </p></li>
+          <li><p> <m>A=l(240-2l)</m> </p></li>
+          <li><p> <m>A=l\left(120-\frac{l}{2}\right) </m></p></li>
+      </ol>   </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+        </task>
+        <task>
+           <statement>
+          <p>
+            Use the area equation to find the maximum area the rancher can enclose.
+          </p>
+      </statement>
+      <answer>
+        <p>
+          Using the area equation in part (b), we can see that the vertex is <m>(60,7200)</m>, which indicates that the maximum area the rancher can enclose is <m>7{,}200</m> square feet.
+        </p>
+      </answer>
+    </task>
+      </activity>
+
+    </subsection>
+
+
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR2/"/>. </p> 
+    </exercises>
+    
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

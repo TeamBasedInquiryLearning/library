@@ -1,0 +1,699 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EL7" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Applications of Exponential and Logarithmic Functions (EL7) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/07.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+
+    <remark>
+      Now that we have explored multiple methods for solving exponential and logarithmic equations, let's put those in to practice using some real-world application problems.
+    </remark>
+
+    <activity xml:id="exponential-application-1">
+      <introduction>
+        <p>
+          A coffee is sitting on Mr. Abacus's desk cooling. It cools according to the function <m>T = 70(0.80)^x + 20</m>, where <m>x</m> is the time elapsed in minutes and <m>T</m> is the temperature in degrees Celsius. 
+        </p>
+        <aside>
+          Newton's Law of Heating and Cooling states that the temperature of a body changes at a rate proportional to the difference in temperature between the body and its surroundings. In this case, we will be oberving what happens to the temperature of Mr. Abacus's coffee as it's temperature adjusts to its surroundings.
+        </aside>
+      </introduction>
+    
+      <task>
+        <statement> 
+          <p>
+            What is the initial temperature of Mr. Abacus's coffee?
+            <ol marker= "A." cols="2">
+              <li><m>20</m><degree/><m>C</m></li>
+              <li><m>70</m><degree/><m>C</m></li>
+              <li><m>0.80</m><degree/><m>C</m></li>
+              <li><m>90</m><degree/><m>C</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the temperature of Mr. Abacus's coffee after <m>10</m> minutes?
+            <ol marker= "A." cols="2">
+              <li><m>7.5</m><degree/><m>C</m></li>
+              <li><m>20</m><degree/><m>C</m></li>
+              <li><m>27.5</m><degree/><m>C</m></li>
+              <li><m>76</m><degree/><m>C</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            According to the function given, if Mr. Abacus leaves his coffee on his desk all day, what will the coffee eventually cool to?
+            <ol marker= "A." cols="2">
+              <li><m>90</m><degree/><m>C</m></li>
+              <li><m>70</m><degree/><m>C</m></li>
+              <li><m>20</m><degree/><m>C</m></li>
+              <li><m>0</m><degree/><m>C</m></li></ol>
+          </p>
+        </statement>
+        <hint><p>Think about what happens to the function as <m>x\to \infty</m>.</p></hint>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      </activity>
+
+      <activity xml:id="exponential-application-2">
+        <introduction>
+          <p>
+            A video posted on YouTube initially had <m>80</m> views as soon as it was posted. The total number of views to date has been increasing exponentially according to the exponential growth function  <m>y=80e^{0.2t}</m>, where  <m>t</m> represents time measured in days since the video was posted.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+             How many views will the video have after <m>3</m> days? Round to the nearest whole number.
+             <ol marker= "A." cols="2">
+              <li><m>293</m> views</li>
+              <li><m>146</m> views</li>
+              <li><m>98</m> views</li>
+              <li><m>82</m> views</li></ol> 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              How many days does it take until <m>2{,}500</m> people have viewed this video?
+              <ol marker= "A." cols="2">
+                <li><m>18</m> days</li>
+                <li><m>156</m> days</li>
+                <li><m>39</m> days</li>
+                <li><m>17</m> days</li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="exponential-application-3">
+        <introduction>
+          <p>
+            In <m>2006</m>, <m>80</m> deer were introduced into a wildlife refuge. By <m>2012</m>, the population had grown to <m>180</m> deer. The population was growing exponentially. Recall that the general form of an exponential equation is <m>f(x)=a \cdot b^x</m>, where <m>a</m> is the initial value, <m>b</m> is the growth/decay factor, and <m>t</m> is time. We want to write a function <m>N(t)</m> to represent the deer population after <m>t</m> years.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              What is the initial value for the deer population? 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>80</m> deer
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              We are not given the growth factor, so we must solve for it. Write an exponential equation using the initial population, the <m>2012</m> population, and the time elapsed.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>180=80 \cdot b^6</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Take your equation in part b and solve for <m>b</m> using logs.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>b</m> is approximately <m>1.1447</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Now that you have found the growth factor (from part b), what is the equation, in terms of <m>N(t)</m> and <m>t</m> that represents the deer population?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>N(t)=80(1.1447)^t</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              If the growth continues according to this exponential function, when will the population reach <m>250</m>?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              It will take <m>8.43</m> years, which means the deer population will reach <m>250</m> in the year <m>2015</m>.
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="logarithmic-application-1">
+        <introduction>
+          <p>
+            The concentration of salt in ocean water, called salinity, varies as you go deeper in the ocean. Suppose <m>f(x) = 28.9 + 1.3\log (x + 1)</m> models salinity of ocean water to depths of <m>1000</m> meters at a certain latitude, where <m>x</m> is the depth in meters and <m>f(x)</m> is in grams of salt per kilogram of seawater. (Note that salinity is expressed in the unit g/kg, which is often written as ppt (part per thousand) or ‰ (permil).)
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              At <m>50</m> meters, what is the salinity of the seawater?
+              <ol marker= "A." cols="2">
+                <li><m>31.1</m> ppt</li>
+                <li><m>32.1</m> ppt</li>
+                <li><m>51.6</m> ppt</li>
+                <li><m>30.6</m> ppt</li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Approximate the depth (to the nearest tenth of a meter) where the salinity equals <m>33</m> ppt.
+              <ol marker= "A." cols="2">
+                <li><m>-1.0</m> meters</li>
+                <li><m>1426.1</m> meters</li>
+                <li><m>-0.9</m> meters</li>
+                <li><m>1424.1</m> meters</li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="logarithmic-application-2">
+        <introduction>
+          <p>
+            The first key on a piano keyboard (called <m>A_0</m>) corresponds to a pitch with a frequency of <m>27.5</m> cycles per second. With every successive key, going up the black and white keys, the pitch multiplies by a constant. The formula for the frequency, <m>f</m> of the pitch sounded when the <m>n</m>th note up the keyboard is played is given by <me>
+              n=1+12\log_2\frac{f}{27.5}
+            </me>
+          </p>
+          <aside>
+            The equal tempered scale is the common musical scale used for the tuning of pianos and other instruments of relatively fixed scale. This is a <m>12</m>-tone equal temperament, but there are many other temperaments.
+          </aside>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              A note has a frequency of <m>220</m> cycles per second. How many notes up the piano keyboard is this?
+              <ol marker= "A." cols="2">
+                <li><m>37</m> notes</li>
+                <li><m>39</m> notes</li>
+                <li><m>12</m> notes</li>
+                <li><m>96</m> notes</li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A. This note is called A_3.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What frequency does the <m>12</m>th note have? Round to the nearest tenth.
+              <ol marker= "A." cols="1">
+                <li><m>0.1</m> cycles per second</li>
+                <li><m>227.0</m> cycles per second</li>
+                <li><m>51.9</m> cycles per second</li>
+                <li><m>49.4</m> cycles per second</li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              C
+            </p>
+          </answer>
+        </task>
+      </activity>
+    
+    <remark>
+      Another application of exponential equations is compound interest. Savings instruments in which earnings are continually reinvested, such as mutual funds and retirement accounts, use compound interest. The term compounding refers to interest earned not only on the original value, but on the accumulated value of the account.  
+      <p>
+        Compound interest can be calcuated by using the formula <me> A(t)=P\left(1+\frac{r}{n}\right)^{nt} </me>, where <m>A(t)</m> is the account value, <m>t</m> is measured in years, <m>P</m> is the starting amount of the account (also known as the principal), <m>r</m> is the annual percentage rate (APR) written as a decimal, and <m>n</m> is the number of compounding periods in one year.
+      </p>
+    </remark>
+
+    <activity xml:id="compounding-periods">
+      <introduction>
+        <p>
+          Before we can apply the compound interest formula, we need to understand what "compounding" means. Recall that compounding refers to interest earned not only on the original value, but on the accumulated value of the account. This amount is calculated a certain number of times in a given year. 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose an account is compounded quarterly, what value of <m>n</m> would we use in the formula?
+            <ol marker= "A." cols="2">
+              <li><m>1</m></li>
+              <li><m>2</m></li>
+              <li><m>4</m></li>
+              <li><m>12</m></li>
+              <li><m>365</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose an account is compounded daily, what value of <m>n</m> would we use in the formula?
+            <ol marker= "A." cols="2">
+              <li><m>1</m></li>
+              <li><m>2</m></li>
+              <li><m>4</m></li>
+              <li><m>12</m></li>
+              <li><m>365</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            E
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose an account is compounded semi-annually, what value of <m>n</m> would we use in the formula?
+            <ol marker= "A." cols="2">
+              <li><m>1</m></li>
+              <li><m>2</m></li>
+              <li><m>4</m></li>
+              <li><m>12</m></li>
+              <li><m>365</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose an account is compounded monthly, what value of <m>n</m> would we use in the formula?
+            <ol marker= "A." cols="2">
+              <li><m>1</m></li>
+              <li><m>2</m></li>
+              <li><m>4</m></li>
+              <li><m>12</m></li>
+              <li><m>365</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose an account is compounded annually, what value of <m>n</m> would we use in the formula?
+            <ol marker= "A." cols="2">
+              <li><m>1</m></li>
+              <li><m>2</m></li>
+              <li><m>4</m></li>
+              <li><m>12</m></li>
+              <li><m>365</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="compound-interest">
+      <introduction>
+        <p>
+          A <m>529</m> Plan is a college-savings plan that allows relatives to invest money to pay for a child's future college tuition; the account grows tax-free. Lily currently has <m>\$10{,}000</m> and opens a <m>529</m> account that will earn <m>6 \%</m> compounded semi-annually.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Which equation could we use to determine how much money Lily will have for her granddaughter after <m>t</m> years?
+            <ol marker= "A." cols="1">
+              <li><m>A(t)=10{,}000\left(1+\frac{6}{2}\right)^{2t}</m></li>
+              <li><m>A(t)=10{,}000\left(1+\frac{0.06}{2}\right)^{2t}</m></li>
+              <li><m>A(t)=10{,}000\left(1+\frac{6}{\frac{1}{2}}\right)^{\frac{1}{2}t}</m></li>
+              <li><m>A(t)=10{,}000\left(1+\frac{0.06}{2}\right)^{18}</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            To the nearest dollar, how much will Lily have in the account in <m>10</m> years?
+            <ol marker= "A." cols="2">
+              <li><m>\$106{,}090</m></li>
+              <li><m>\$103{,}000</m></li>
+              <li><m>\$13{,}439</m></li>
+              <li><m>\$18{,}061</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How many years will it take Lily to have <m>\$40{,}000</m> in the account for her granddaughter? Round to the nearest tenth.
+            <ol marker= "A." cols="2">
+              <li><m>23.4</m> years</li>
+              <li><m>46.9</m> years</li>
+              <li><m>52.1</m> years</li>
+              <li><m>25.6</m> years</li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="mixing-it-up">
+      <introduction>
+        <p>
+          For each of the following, determine the appropriate equation to use to solve the problem.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Kathy plans to purchase a car that depreciates (loses value) at a rate of <m>14 \%</m> per year.  The initial cost of the car is <m>\$21{,}000</m>.  Which equation represents the value, <m>v</m>, of the car after <m>3</m> years?
+            <ol marker= "A." cols="2">
+              <li><m>v=21{,}000(0.14)^3</m></li>
+              <li><m>v=21{,}000(0.86)^3</m></li>
+              <li><m>v=21{,}000(1.14)^3</m></li>
+              <li><m>v=21{,}000(0.86)(3)</m></li></ol> 
+          </p>
+        </statement> 
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Mr. Smith invested <m>\$2{,}500</m> in a savings account that earns <m>3 \%</m> interest compounded annually.  He made no additional deposits or withdrawals.  Which expression can be used to determine the number of dollars in this account at the end of <m>4</m> years? 
+            <ol marker= "A." cols="2">
+              <li><m>2{,}500(1+0.03)^4</m></li>
+              <li><m>2{,}500(1+0.3)^4</m></li>
+              <li><m>2{,}500(1+0.04)^3</m></li>
+              <li><m>2{,}500(1+0.4)^3</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-introducing-e">
+      <introduction>
+        <p>
+          Suppose you want to invest <m>\$100</m> in a banking account that has a <m>100 \%</m> interest rate. Let's investigate what would happen to the amount of money you have at the end of one year in the account with varying compounding periods. Use the formula, <m> A(t)=P\left(1+\frac{r}{n}\right)^{nt} </m>, to help you solve the following problems.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Suppose the account is compounded annually (i.e., <m>n=1</m>). How much money would you have in the account at the end of the year?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$200</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            By what factor did the money in your account grow in part a?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Because you initially started with <m>\$100</m> and the account grew to <m>\$200</m> by the end of the year, the account grew by <m>100 \%</m> (doubled), or by a factor of <m>2</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Suppose the account is compounded semi-annually. How much money would you have in the account at the end of the year?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$225</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            By what factor did the money in your account grow in part b?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            At the end of the year, you will have <m>\$225</m>, which is <m>225 \%</m> in growth, or a factor of <m>2.25</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Let's investigate as the compounding periods increase. Fill in the following table.
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>n</m> </cell> 
+                <cell><m>A(t)</m> </cell>
+                <cell>Growth Factor</cell>
+              </row>
+              <row>
+                <cell> <m>1</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>2</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>5</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>1{,}000</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10{,}000</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100{,}000</m> </cell> 
+              </row>
+            </tabular>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>n</m> </cell> 
+                <cell><m>A(t)</m> </cell>
+                <cell>Growth Factor</cell>
+              </row>
+              <row>
+                <cell> <m>1</m> </cell> 
+                <cell> <m>\$200</m> </cell>
+                <cell> <m>2</m> </cell>  
+              </row>
+              <row>
+                <cell> <m>2</m> </cell>
+                <cell> <m>\$225</m> </cell>
+                <cell> <m>2.25</m> </cell>  
+              </row>
+              <row>
+                <cell> <m>5</m> </cell> 
+                <cell> <m>\$248.83</m> </cell>
+                <cell> <m>\approx 2.4883</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10</m> </cell> 
+                <cell> <m>\$259.37</m> </cell>
+                <cell> <m>\approx 2.5937</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100</m> </cell>
+                <cell> <m>\$270.48</m> </cell>
+                <cell> <m>\approx 2.7048</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>1{,}000</m> </cell>
+                <cell> <m>\$271.69</m> </cell>
+                <cell> <m>\approx 2.7169</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>10{,}000</m> </cell>
+                <cell> <m>\$271.82</m> </cell>
+                <cell> <m>\approx 2.7182</m> </cell> 
+              </row>
+              <row>
+                <cell> <m>100{,}000</m> </cell>
+                <cell> <m>\$271.83</m> </cell>
+                <cell> <m>\approx 2.7183</m> </cell> 
+              </row>
+            </tabular>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What do you notice as the value of <m>n</m> increases? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The growth factor seems to tend towards <m>\approx 2.71</m> as the value of <m>n</m> increases. In other words, as the interval gets smaller, the total returns get slightly higher. If interest is calculated <m>n</m> times per year, at a rate of <m>\frac{100\%}{n}</m>, the total accreted wealth at the end of the first year would be slightly greater than <m>2.7</m> times the initial investment if <m>n</m> is sufficiently large.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <observation>
+      In <xref ref="activity-introducing-e"/>, we can see that as the value of <m>n</m> increases, the factor by which the money increased by tended toward the value of <m>2.71</m>. This value is a significant mathematical constant and is denoted by the symbol <m>e</m>. It is approximately equal to <m>2.718</m>.
+    </observation>
+
+    <remark>
+      For many real-world phenomena, <m>e</m> is used as the base for exponential functions. Exponential models that use <m>e</m> as the base are called continuous growth or decay models. We see these models in finance, computer science, and most of the sciences, such as physics, toxicology, and fluid dynamics. 
+      <p>For all real numbers <m>t</m>, and all positive numbers <m>a</m> and <m>r</m>, continuous growth or decay is represented by the formula <me>A(t)=ae^{rt}</me>, where   <m>a</m> is the initial value, <m>r</m> is the continuous growth rate per of unit time, and <m>t</m> is the elapsed time. If <m>r\gt 0</m>, then the formula represents continuous growth. If <m>r\lt 0</m>, then the formula represents continuous decay.</p>
+        
+      <p>For business applications, the continuous growth formula is called the continuous compounding formula and takes the form <me>A(t)=Pe^{rt}</me>, where <m>P</m> is the principal or the initial invested, <m>r</m> is the growth or interest rate per of unit time, and <m>t</m> is the period or term of the investment.
+      </p>
+    </remark>
+
+    <activity xml:id="continuous">
+      <introduction>
+        <p>
+          Use the continuous formulas to answer the following questions.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            A person invested <m>\$1{,}000</m> in an account earning <m>10 \%</m> per year compounded continuously. How much was in the account at the end of one year?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\$1{,}105.17</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Radon-222 decays at a continuous rate of <m>17.3 \%</m> per day. How much will <m>100</m> mg of Radon-222 decay to in <m>3</m> days?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>59.51</m> mg 
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    </subsection> 
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL7/"/>. </p> 
+    </exercises> 
+    
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

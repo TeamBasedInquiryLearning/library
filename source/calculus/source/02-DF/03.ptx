@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="DF3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Elementary Derivative Rules (DF3)</title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/03.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    <observation> We know how to find the derivative function using the limit definition of the derivative.  From the activities in the previous section, we have seen that this process gets cumbersome when the functions are more complicated.  In this section we will discuss shortcuts to calculate derivatives, known as <q>differentiation rules</q>.</observation>
+    
+  <activity xml:id="activity-derivative-elementary1">
+    <introduction>
+      <p>
+        In this activity we will try to deduce a rule for finding the derivative of a power function.  Note, a power function is a function of the form <m>f(x) = x^{n}</m> where <m>n</m> is any real number.
+      </p>
+    </introduction>
+      <task>
+      <statement> <p>Using the limit definition of the derivative, what is <m>f'(x)</m> for the power function <m>f(x) = x</m>? </p>
+          <ol marker="A." cols="2">
+                <li><p>-1</p></li>
+                <li><p>1</p></li>
+                <li><p>0</p></li>
+                <li><p>Does not exist</p></li>
+            </ol>
+      </statement>
+      </task>
+      
+      <task>
+          <statement>
+          <p> Using the limit definition of the derivative, what is <m>f'(x)</m> for the power function <m>f(x) = x^{2}</m>?</p>
+              <ol marker="A." cols="2">
+                <li><p>0</p></li>
+                <li><p><m>-2x</m></p></li>
+                <li><p><m>2x</m></p></li>
+                <li><p><m>2x+1</m> </p></li>
+            </ol>
+          </statement>
+      </task>
+      
+      <task>
+          <statement>
+          <p> Using the limit definition of the derivative, what is <m>f'(x)</m> for the power function <m>f(x) = x^{3}</m>?</p>
+              <ol marker="A." cols="2">
+                <li><p><m>3x^2</m></p></li>
+                <li><p><m>-3x^2</m></p></li>
+                <li><p><m>3x^2-3x</m></p></li>
+                <li><p><m>-3x^2+3x</m></p></li>
+            </ol>
+          </statement>
+      </task>
+      
+      <task>
+          <statement>
+          <p> WITHOUT using the limit definition of the derivative, what is your best guess for <m>f'(x)</m> when <m>f(x) = x^{4}</m>? (See if you can find a pattern from the first three tasks of this activity.)</p>
+              <ol marker="A." cols="2">
+                <li><p><m>3x^2</m></p></li>
+                <li><p><m>3x^3</m></p></li>
+                <li><p><m>4x^2</m></p></li>
+                <li><p><m>4x^3</m></p></li>
+            </ol>
+          </statement>
+      </task>
+  </activity>
+    
+<theorem xml:id="thm-power-rule-derivative">
+       <title>The Power Rule</title><p>The derivative of the power function<m>f(x) = x^n</m>, for any real number <m>n</m>, is
+</p>
+        <me>f'(x) = n \, x^{n-1}.</me>
+    </theorem>
+    
+    <observation xml:id="obs-derivative-notation3">
+        <p>
+    We have been using <m>f'(x)</m>, read <q><m>f</m> prime</q>, to denote a derivative of the function <m>f(x)</m>.  There are other ways to denote the derivative of <m>y=f(x)</m>: <m>y'</m> or <m>\dfrac{df}{dx}</m>, pronounced <q>dee-f dee-x</q>.  If you want to take the derivative of <m>f'(x)</m>, <m>y'</m>, or <m>\dfrac{df}{dx}</m> to get the second derivative of <m>f(x)</m>, the notation is <m>f''(x)</m>, <m>y''</m>, or <m>\dfrac{d^2f}{dx^2}</m>. </p>
+    </observation>
+    
+    <activity xml:id="activity-derivative-elementary2">
+    <statement>
+            <p>Using <xref ref = "thm-power-rule-derivative" />, which of the following statement(s) are true?  For those statements that are wrong, give the correct derivative. </p>
+            <ol marker="A." cols="2">
+                <li>The derivative of <m>y = x^{10}</m> is <m>y' = 10x^{11}.</m></li>
+                <li>The derivative of <m>y = x^{-8}</m> is <m>y' = -8x^{-9}.</m></li>
+                <li>The derivative of <m>y = x^{100}</m> is <m>y' = 100x^{99}.</m></li>
+                <li>The derivative of <m>y = x^{-17}</m> is <m>y' = -17x^{-16}.</m></li>
+            </ol>
+        </statement>
+    </activity>
+    <theorem  xml:id="def-constant-derivative">
+    <title>The Derivative of a Constant Function</title><p> If <m>f(x) = c</m>, for some constant real number <m>c</m>, then <m>f'(x) = 0</m>.
+        </p>
+    </theorem>
+    <activity xml:id="activity-derivative-elementary3">
+    <statement>
+        <p> Using <xref ref = "def-constant-derivative" />, which of the following statement(s) are true?  Note: Pay attention to the independent variable (the input) of the function.
+        <ol marker="A." cols="2">
+                <li>The derivative of <m>y(x) = 10</m> is <m>y'(x) = 9</m>.</li>
+                <li>The derivative of <m>y(t) = x</m> is <m>y'(t) = 0</m>.</li>
+                <li>The derivative of <m>y(a) = x^2</m> is <m>y'(a) = 2x</m>.</li>
+                <li>The derivative of <m>y(x) = -5</m> is <m>y'(x) = -4</m>.</li>
+            </ol>
+        </p>
+        </statement>
+    </activity>
+    <theorem xml:id="def-constmult-derivative">
+   <title>The Scalar Multiple Rule</title> <p>If <m>c</m> is a real number and <m>f(x)</m> is a differentiable function, then using the Scalar Multiple Law for limits, we have that
+        <me>\frac{d}{dx}\left[cf(x)\right] = c\frac{d}{dx}\left[f(x)\right]</me>
+        </p>
+    </theorem>
+    <activity xml:id="activity-derivative-elementary4">
+    <statement>
+        <p>What is the derivative of the function <m>y(x) = 12x^{2/3}</m>?
+        <ol marker="A." cols="2">
+                <li><m>y'(x) = 8x^{5/3}.</m></li>
+                <li><m>y'(x) = 18x^{-1/3}.</m></li>
+                <li><m>y'(x) = 8x^{-1/3}.</m></li>
+                <li><m>y'(x) = 18x^{5/3}.</m></li>
+            </ol>
+        </p>
+        </statement>
+    </activity>
+    <theorem xml:id="def-sumdiff-derivative">
+    <title>The Sum/Difference Rule</title> <p>If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then using the Sum/Differences Law for limits, we have that
+        <me>\frac{d}{dx}\left[f(x) \pm g(x)\right] = \frac{d}{dx}\left[f(x)\right]\pm\frac{d}{dx}\left[g(x)\right]</me>
+        </p>
+    </theorem>
+    <activity xml:id="activity-derivative-elementary5">
+    <statement>
+        <p> What are the first and second derivatives for the arbitrary quadratic function given by <m>f(x) = ax^2 + bx + c</m>, where <m>a,\,b,\,c</m> are any real numbers? </p>
+        <ol marker="A.">
+                <li><m>f'(x) = 2ax + bx + c, \, f''(x)=2a +b.</m></li>
+                <li><m>f'(x) = 2x + 1, \, f''(x)=2.</m></li>
+                <li><m>f'(x) = 2ax + b , \, f''(x)=2a.</m></li>
+                <li><m>f'(x) = ax + b, \, f''(x)=a.</m></li>
+            </ol>
+        </statement>
+    </activity>
+    
+    <activity xml:id="neg-fract-powers"><introduction><p>We can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \dfrac{1}{x^4}</m>. What is the derivative of these two functions?</p></introduction>
+     <ol marker="A." cols="2">
+                <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^3}.</m></li>
+                 <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^5}.</m></li>
+                <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^3}.</m></li>
+                <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^5}.</m></li>
+            </ol>
+    </activity>
+    
+    <theorem xml:id="thm-expon-derivative">
+    <title>The Derivative of an Exponential Function</title>
+        <p>
+The derivative of the exponential function<m>f(x) = b^x</m>, for any positive number <m>b</m>, is
+<me>f'(x) =\ln(b) \,  b^x=\log(b)\,b^x=\log_e(b)b^x</me>.
+<p>(In this book, we use both <m>\ln</m> and <m>\log</m> to denote the <q>natural logarithm</q> with base <m>e</m>.
+While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <m>10</m>, we prefer to write
+<m>\log_{10}</m> in that case.)</p>
+        </p>
+    </theorem>
+   <observation>
+    <p>A special case of <xref ref = "thm-expon-derivative" /> is when <m>b = e</m>, where <m>e</m> is the base of the natural logarithm function. In this case let <m>f(x) = e^x</m>. Then 
+       <me>f'(x) =\ln(e) \,  e^{x} = e^{x}.</me>
+        So <m>f(x)=e^x</m> is a special function for which <m>f'(x)=f(x)</m>.</p>
+    </observation>
+    <activity xml:id="activity-derivative-elementary6">
+        <statement>
+    <p>The first derivative of the function <m>g(x) = x^e + e^{x}</m> is given by <m>g'(x) = ex^{e-1} + e^{x}</m>.  What is the second derivative of <m>g(x)</m>? </p>
+            <ol marker="A." cols="2">
+                <li><m>g''(x) = x^{e} + e^{x}.</m></li>
+                <li><m>g''(x) = e(e-1)x^{e-2} + e^x.</m></li>
+                <li><m>g''(x) = ex^{e-1} + e^x.</m></li>
+                <li><m>g''(x) = e^x.</m></li>
+            </ol>
+        </statement>
+    </activity>
+    
+    <theorem xml:id="def-trig-derivative">
+    <title>The Derivative of the Sine and Cosine Functions</title><p>If <m>f(x) = \sin(x)</m>, then <m>f'(x) = \cos(x)</m>.  If <m>f(x) = \cos(x)</m>, then <m>f'(x) = -\sin(x)</m>.</p>
+    </theorem>
+    <activity xml:id="activity-derivative-elementary7">
+        <statement>
+        <p>The derivative of <m>f(x) = 7\sin(x) + 2e^x + 3x^{1/3} - 2</m> is,</p>
+            <ol marker="A." >
+                <li><m>f'(x) = 7\cos(x) + 2e^{x} + x^{-2/3} - 2x.</m></li>
+                <li><m>f'(x) = 7\cos(x) + 2e^{x} + -2x^{-2/3} - 2.</m></li>
+                <li><m>f'(x) = -7\sin(x) + e^{x} + x^{-2/3}.</m></li>
+                <li><m>f'(x) = -7\cos(x) + 2e^{x}\ln(x) + x^{-2/3}.</m></li>
+                <li><m>f'(x) = 7\cos(x) + 2e^x + x^{-2/3}.</m></li>
+            </ol>
+            
+        </statement>
+    </activity>
+    
+    <theorem xml:id="def-log-derivative">
+    <title>The Derivative of the Natural Log Function</title><p>If <m>f(x) = \ln(x)</m>, then <me>f'(x) = \frac{1}{x}</me>.</p>
+    </theorem>
+    <activity>
+    <statement>
+        <p> Which of the following statements is NOT true?</p>
+        <ol marker="A." cols="2">
+                <li>The derivative of <m>y = 2\ln(x)</m> is <m>y' = \dfrac{2}{x}.</m></li>
+                <li>The derivative of <m>y = \dfrac{\ln(x)}{2}</m> is <m>y' = \dfrac{1}{2x}.</m></li>
+                <li>The derivative of <m>y = \dfrac{2}{3}\ln(x)</m> is <m>y' = \dfrac{3}{2x}.</m></li>
+                <li>The derivative of <m>y = \ln(x^{2})</m> is <m>y' = \dfrac{2}{x}</m>.</li>
+        </ol>
+        </statement>
+    </activity>
+    
+    <activity xml:id="checkit-DF3">
+    <introduction>
+        <p>
+            Demonstrate and explain how to find the derivative of the following functions.
+            Be sure to explicitly denote which derivative rules (scalar multiple, sum/difference, etc.) you are using in your work.
+        </p></introduction>
+        
+                <task>
+                    <p>
+<me>g(x) = 2 \, \cos\left(x\right) - 3 \, e^x</me>
+                    </p>
+                </task>
+                <task>
+                    <p>
+<me>h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}</me>
+                    </p>
+                </task>
+                <task>
+                    <p>
+<me>f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8</me>
+                    </p>
+                </task>
+       
+  <!--  <answer>
+        <ol>
+                <li>
+                    <p>
+<me>g'(x) = - 2 \, \sin\left(x\right) - 3 \, e^x</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<me>h'(w) = \frac{7}{5} \, w^{\frac{2}{5}} - \frac{30}{w^{6}}</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<me>f'(t) = -20 \, t^{4} + 15 \, t^{2} + 1</me>
+                    </p>
+                </li>
+        </ol>
+    </answer>-->
+</activity>
+    
+      <activity xml:id="der-exp-context">
+<p>
+  Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m> minutes after forgetting it on a bench outside, is given by the function
+    <me>f(t) = 40 \, (0.5)^t + 50</me>
+    Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your result in the context of this problem. </p>
+</activity>
+    
+   
+    <activity xml:id="polynomials-tangent-slope"><introduction><p>In this activity you will use our first derivative rules to study the slope of tangent lines. </p></introduction>
+        <task><p> The graph of <m>y=x^3-9x^2-16x+1</m> has a slope of 5 at two points.  Find the coordinates of these points. </p></task>
+<task><p>        
+Find the equations of the two lines tangent to the parabola <m>y=(x-2)^2</m> which pass through the origin. You will want to think about slope in two ways: as the derivative at <m>x=a</m> and the rise over the run in a linear function through the origin and the point <m>(a, f(a))</m>. Use a graph to check your work and sketch the tangent lines on your graph.
+    </p></task>
+    </activity>
+    
+   
+    <activity xml:id="approx-shape-der">
+<p>
+Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial
+<m> q(x) = ax^2 +bx +c </m> that best approximates the graph of <m>f(x)=e^x</m> at <m>x=0</m>. This means choosing <m>a,b,c</m> such that </p>
+<ul>
+    <li><m>q(0) = f(0)</m></li>
+    <li><m>q'(0) = f'(0)</m></li>
+    <li><m>q''(0) = f''(0)</m></li>
+    </ul> 
+  <p>Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m> at zero will involve some parameters. You can solve for these parameters using the equations above.</p>
+      </activity>
+         
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-DF3" youtube="Z9xDIjqNY4U"/>
+            <caption>Video for DF3</caption>
+        </figure>
+    </subsection> 
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF3/"/>
+        </p>
+    </subsection>
+</section>

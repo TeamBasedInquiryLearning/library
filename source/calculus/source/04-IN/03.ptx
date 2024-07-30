@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="IN3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Elementary Antiderivatives (IN3)</title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/03.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+    <!--DEFINITION OF ANTIDERIVATIVE from Active Calculus -->
+    <definition xml:id="def-antiderivative">
+      <statement>
+        <p permid="ctJ">
+          If <m>g</m> and <m>G</m> are functions such that <m>G' = g</m>,
+          we say that <m>G</m> is an <term>antiderivative</term>
+              <idx><h>antiderivative</h></idx>
+          of <m>g</m>.
+        </p>
+        <p>
+            The collection of all antiderivatives of <m>g</m> is called the
+            <term>general antiderivative</term> or
+            <term>indefinite integral</term>,
+            denoted by <m>\int g(x)\,dx</m>.
+            All antiderivatives differ by a constant <m>C</m> (since
+            <m>\frac{d}{dx}[C]=0</m>), so
+            we may write: <me>\int g(x)\,dx=G(x)+C</me>.
+        </p>
+      </statement>
+    </definition>
+
+     <activity xml:id="elem-antider-intro">
+        <statement>
+    <p>Consider the function <m>f(x)=\cos x</m>. Which of the following could be <m>F(x)</m>, an antiderivative of <m>f(x)</m>? </p>
+    <ol marker="A." cols="2">
+                <li><p> <m>\sin x</m> </p></li>
+                <li><p> <m>\cos x</m> </p></li>
+                <li><p> <m>\tan x</m> </p></li>
+                <li><p> <m>\sec x</m> </p></li>
+
+            </ol>
+    </statement>
+        </activity>
+
+
+             <activity xml:id="elem-antider-intro2">
+        <statement>
+    <p>Consider the function <m>f(x)=x^2</m>. Which of the following could be <m>F(x)</m>, an antiderivative of <m>f(x)</m>? </p>
+    <ol marker="A." cols="2">
+               <li><p><m> 2x </m></p></li>
+               <li><p><m> \frac{1}{3}x^3 </m></p></li>
+               <li><p><m> x^3</m></p></li>
+               <li><p><m> \frac{2}{3}x^3 </m></p></li>
+
+            </ol>
+    </statement>
+        </activity>  
+         
+       <remark>
+
+    <p permid="cfB">
+      We now note that whenever we know the derivative of a function,
+      we have a <em>function-derivative pair</em>,
+      so we also know the antiderivative of a function.
+      For instance, in <xref ref="elem-antider-intro"/> we could use our prior knowledge that 
+      <me permid="YfC">
+        \frac{d}{dx}[\sin(x)] = \cos(x)
+      </me>,
+     to determine that <m>F(x) = \sin(x)</m> is an antiderivative of <m>f(x) = \cos(x)</m>.
+      <m>F</m> and <m>f</m> together form a function-derivative pair.
+      Every elementary derivative rule leads us to such a pair,
+      and thus to a known antiderivative.
+    </p>
+
+
+      <p permid="MWD">
+      In the following activity,
+      we work to build a list of basic functions whose antiderivatives we already know.
+    </p>  
+    </remark>
+    
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-4-4-2" permid="ovP">
+  <statement>
+    <p permid="yUU">
+      Use your knowledge of derivatives of basic functions to complete <xref ref="T-4-4-Act2">Table</xref> of antiderivatives.
+      For each entry,
+      your task is to find a function <m>F</m> whose derivative is the given function <m>f</m>.
+    
+    </p>
+
+    <table xml:id="T-4-4-Act2" permid="PTf">
+      <title>Familiar basic functions and their antiderivatives.</title>
+      <tabular top="minor" bottom="minor" permid="wao">
+        <row bottom="medium">
+          <cell>given function, <m>f(x)</m></cell>
+          <cell>antiderivative, <m>F(x)</m>   <nbsp /></cell>
+        </row>
+        <row>
+          <cell  ><m>k</m>, (<m>k</m> is constant)</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>x^n</m>, <m>n \ne -1</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\frac{1}{x}</m>, <m>x \gt 0</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin(x)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos(x)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec(x) \tan(x)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc(x) \cot(x)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec^2 (x)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc^2 (x)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>e^x</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>a^x</m> <m>(a \gt 1)</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\frac{1}{1+x^2}</m></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\frac{1}{\sqrt{1-x^2}}</m></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+
+    </table>
+
+  
+  </statement>
+
+</activity>
+    
+    
+
+  
+
+<activity xml:id="act-antider-const-mult">
+    
+  <introduction> <p permid="ImK">
+      In <xref ref="act-4-4-2">Activity</xref>,
+      we constructed a list of the basic antiderivatives we know at this time.
+      Those rules will help us  antidifferentiate sums and constant multiples of basic functions. For example,
+      we found that <m>-\cos(x)</m> is an antiderivative of <m>\sin(x)</m> and
+      <m>\frac{1}{3}x^3</m> is an antiderivative of <m>x^2</m>.</p></introduction> 
+      
+     
+      <statement>
+          <p>Using this information, which of the following is an antiderivative for <m>f(x) = 5\sin(x) - 4x^2</m>?</p>
+          <ol marker="A." cols="2">
+   
+              <li><p><m>F(x) = -5\cos(x) +\frac{4}{3}x^3</m>.</p></li>
+              <li><p><m>F(x) = 5\cos(x) + \frac{4}{3}x^3</m>.</p></li>
+              <li><p><m>F(x) = -5\cos(x) - \frac{4}{3}x^3</m>.</p></li>
+              <li><p><m>F(x) = 5\cos(x) - \frac{4}{3}x^3</m>.</p></li>
+         
+            </ol>
+          </statement>
+   
+     
+    
+    </activity>
+
+
+ 
+ 
+    
+    <activity xml:id="act-antider-fluency">
+    
+       
+         <introduction>
+        <p>
+Find the general antiderivative for each function.
+        </p>    
+        </introduction>
+        
+        
+                <task><me>f(x) = -4 \, \sec^2\left(x\right)</me></task>
+                <task><me>f(x) = \frac{8}{\sqrt{x}}</me></task>
+
+          </activity>
+    
+    
+        <activity xml:id="act-ind-int-fluency">
+    
+       
+         <introduction>
+        <p>
+Find each indefinite integral. 
+        </p>    
+        </introduction>
+        
+
+                <task><me>\int (-9 \, x^{4} - 7 \, x^{2} + 4) \, dx</me></task>
+                <task><me>\int 3 \, e^{x}\, dx</me></task>
+          </activity>
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN3" youtube="Xf7dKslAR3M"/>
+            <caption>Video for IN3</caption>
+        </figure>
+    </subsection>
+
+    <subsection>
+      <title>Exercises</title>
+      <p>
+          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/IN3/"/>
+      </p>
+    </subsection>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
