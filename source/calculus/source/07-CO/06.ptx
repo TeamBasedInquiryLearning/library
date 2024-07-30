@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="CO6" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Polar Area (CO6)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/06.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+    
+    
+    
+    
+      <fact xml:id="fact-CO6polarIntegral">
+          
+      <p permid="QCd">
+        The area of the <q>fan-shaped</q> region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
+          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
+
+      </p>
+        </fact>
+    
+    
+        <figure>
+                <caption>Finding the polar area differential</caption>
+                    <image xml:id="polarAreaDifferential" width="100%">
+                        <description>Illustration of polar area differential.</description>
+                        <latex-image>
+                          \begin{tikzpicture}[>=latex]
+
+% Draw the lines at multiples of pi/12
+\foreach \ang in {0,...,31} {
+  \draw [lightgray] (0,0) -- (\ang * 180 / 16:4);
+}
+
+% Concentric circles and radius labels
+\foreach \s in {0, 1, 2, 3} {
+  \draw [lightgray] (0,0) circle (\s + 0.5);
+  \draw (0,0) circle (\s);
+  \node [fill=white] at (\s, 0) [below] {\scriptsize $\s$};
+}
+
+% Add the labels at multiples of pi/4
+\foreach \ang/\lab/\dir in {
+  0/0/right,
+  1/{\pi/4}/{above right},
+  2/{\pi/2}/above,
+  3/{3\pi/4}/{above left},
+  4/{\pi}/left,
+  5/{5\pi/4}/{below left},
+  7/{7\pi/4}/{below right},
+  6/{3\pi/2}/below} {
+  \draw (0,0) -- (\ang * 180 / 4:4.1);
+  \node [fill=white] at (\ang * 180 / 4:4.2) [\dir] {\scriptsize $\lab$};
+}
+
+% The double-lined circle around the whole diagram
+\draw [style=double] (0,0) circle (4);
+
+\draw [fill=red!50!black, opacity=0.4] ({cos(30)},{sin(30)})--plot [domain=pi/6:pi/3]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(\x r)})--plot [domain=pi/3:pi/6]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(30)},{sin(30)});
+\draw [thick, color=red, domain=0:2*pi, samples=200, smooth]
+  plot (xy polar cs:angle=\x r, radius={2+2*cos(\x r)});
+\draw [thick, color=blue, domain=0:2*pi, samples=200, smooth]
+  plot (xy polar cs:angle=\x r, radius={1});  
+  
+\draw [fill=blue!50!black, opacity=0.4] ({cos(30)},{sin(30)})--plot [domain=pi/6:4*pi/18]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(pi/6 r)})--plot [domain=4*pi/18:pi/6]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(30)},{sin(30)});
+  
+\draw [fill=blue!50!black, opacity=0.4] ({cos(40)},{sin(40)})--plot [domain=4*pi/18:5*pi/18]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(4*pi/18 r)})--plot [domain=5*pi/18:4*pi/18]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(40)},{sin(40)});
+
+\draw [fill=blue!50!black, opacity=0.4] ({cos(50)},{sin(50)})--plot [domain=5*pi/18:6*pi/18]
+  (xy polar cs:angle=\x r, radius= {2+2*cos(5*pi/18 r)})--plot [domain=6*pi/18:5*pi/18]
+  (xy polar cs:angle=\x r, radius= {1})--({cos(50)},{sin(50)});  
+%\node [fill=white] at (2,1) {$r=1+\cos\theta$};
+
+\draw[purple, dashed] (0,0)--({cos(30)*(2+2*cos(30))}, {sin(30)*(2+2*cos(30))});
+\draw[purple, dashed] (0,0)--({cos(40)*(2+2*cos(30))}, {sin(40)*(2+2*cos(30))});
+\draw[purple, dashed] (0,0)--({cos(50)*(2+2*cos(40))}, {sin(50)*(2+2*cos(40))});
+\draw[purple, dashed] (0,0)--({cos(60)*(2+2*cos(50))}, {sin(60)*(2+2*cos(50))});
+
+\end{tikzpicture} 
+                        </latex-image>
+                    </image>
+            </figure>
+        
+        
+    
+    
+    <activity xml:id="co6-activity-polar-area">
+        
+        
+        
+        <task>
+            <p>Find an integral computing the area of the region defined by <m>0\leq r\leq-\cos(\theta)+5</m> and <m>\pi/2\leq \theta\leq 3\pi/4</m>.</p>
+        </task>
+        <task>
+            <p>Find the area enclosed by the cardioid <m>r=2(1+\cos(\theta)</m>.</p>
+        </task>
+        <task>
+            <p>Find the area enclosed by one loop of the 4-petaled rose <m>r=\cos(2\theta)</m>.</p>
+        </task>
+    </activity>
+    
+
+<!--     <activity xml:id="co1-activity-xy-chart">
+        <introduction>
+            <p>
+Consider how we might graph the equation <m>y=2-x^2</m> in the <m>xy</m>-plane.
+            </p>
+        </introduction>
+        <task>
+            <p>
+Complete the following chart of <m>xy</m> values by plugging each <m>x</m> value
+into the equation to produce its <m>y</m> value.
+            </p>
+            <table>
+                <title>Chart of <m>x</m> and <m>y</m> values to graph</title>
+                <tabular>
+                    <row bottom="minor"><cell><m>x</m></cell><cell><m>y</m></cell></row>
+                    <row><cell><m>-2</m></cell><cell></cell></row>
+                    <row><cell><m>-1</m></cell><cell><m>1</m></cell></row>
+                    <row><cell><m>0</m></cell><cell></cell></row>
+                    <row><cell><m>1</m></cell><cell></cell></row>
+                    <row><cell><m>2</m></cell><cell></cell></row>
+                </tabular>
+            </table>
+        </task>
+        <task>
+            <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane.</p>
+            <figure>
+                <caption>Plot of <m>y=2-x^2</m>.</caption>
+                <image width="100%" xml:id="graph-parabola-plotpoints-3">
+                    <description>Plot of <m>y=2-x^2</m>.</description>
+                    <latex-image>
+                        \begin{tikzpicture}
+                        \begin{axis}[
+                            axis lines=middle,
+                            grid=major,
+                            xmin=-3,
+                            xmax=3,
+                            ymin=-3,
+                            ymax=3,
+                            xlabel=$x$,
+                            ylabel=$y$,
+                            xtick={-2,-1,...,2},
+                            ytick={-2,-1,...,2},
+                            tick style={very thick},
+                            legend style={
+                            at={(rel axis cs:0,1)},
+                            anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                        ]
+                        \node[label={180:{(-1,1)}},circle,fill,inner sep=2pt] at (axis cs:-1,1) {};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                </image>
+            </figure> 
+        </task>
+        <task>
+            <p>Connect the dots to obtain a reasonable sketch of the equation's graph.</p>
+        </task>
+    </activity>
+
+    <activity xml:id="co1-activity-txy-chart">
+        <introduction>
+            <p>
+Suppose that we are told that at after <m>t</m> seconds, an object is located at the
+<m>x</m>-coordinate given by <m>x=t-2</m> and the <m>y</m>-coordinate given by
+<m>y=-t^2+4t-2</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>
+Complete the following chart of <m>txy</m> values by plugging each <m>t</m> value
+into the equations to produce its <m>x</m> and <m>y</m> values.
+            </p>
+            <table>
+                <title>Chart of <m>x</m> and <m>y</m> values for each <m>t</m></title>
+                <tabular>
+                    <row bottom="minor"><cell><m>t</m></cell><cell><m>x</m></cell><cell><m>y</m></cell></row>
+                    <row><cell><m>0</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>1</m></cell><cell><m>-1</m></cell><cell><m>1</m></cell></row>
+                    <row><cell><m>2</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>3</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>4</m></cell><cell></cell><cell></cell></row>
+                </tabular>
+            </table>
+        </task>
+        <task>
+            <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane, labeling it with its <m>t</m> value.</p>
+            <figure>
+                <caption>Plot of <m>x=t-2</m>, <m>y=-t^2+4t-2</m>.</caption>
+                <image width="100%" xml:id="graph-parbola-plot-points-4">
+                    <description>Plot of <m>y=2-x^2</m>.</description>
+                    <latex-image>
+                        \begin{tikzpicture}
+                        \begin{axis}[
+                            axis lines=middle,
+                            grid=major,
+                            xmin=-3,
+                            xmax=3,
+                            ymin=-3,
+                            ymax=3,
+                            xlabel=$x$,
+                            ylabel=$y$,
+                            xtick={-2,-1,...,2},
+                            ytick={-2,-1,...,2},
+                            tick style={very thick},
+                            legend style={
+                            at={(rel axis cs:0,1)},
+                            anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                        ]
+                        \node[label={180:{t=1}},circle,fill,inner sep=2pt] at (axis cs:-1,1) {};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                </image>
+            </figure> 
+        </task>
+        <task>
+            <p>Connect the dots to obtain a reasonable sketch of the equation's graph.</p>
+        </task>
+    </activity>
+
+    <definition xml:id="co1-definition-parametric">
+        <statement>
+            <p>
+Graphs in the <m>xy</m> plane can be described by <term>parametric equations</term>
+<m>x=f(t)</m> and <m>y=g(t)</m>, where plugging in different values of <m>t</m> into the functions
+<m>f</m> and <m>g</m> produces different points of the graph.
+            </p>
+            <p>
+The <m>t</m>-values may be thought of representing the moment of <em>time</em> when an object is located
+at a particular position, and the graph may be thought of as the path the object travels throughout
+time.
+            </p>
+        </statement>
+    </definition>
+
+    <activity xml:id="co1-activity-txy-to-xy">
+        <introduction>
+            <p>
+Earlier we obtained the same graphs for the <m>xy</m> equation <m>y=2-x^2</m>
+and the parametric equations <m>x=t-2</m> and <m>y=-t^2+4t-2</m>. Do the following
+steps to find out why.
+            </p>
+        </introduction>
+        <task>
+            <p>
+Which of the following equations describes <m>t</m> in terms of <m>x</m>?
+            </p>
+            <ol marker="A." cols="2">
+                <li><p><m>t=x-2</m></p></li>
+                <li><p><m>t=x+2</m></p></li>
+                <li><p><m>t=2x</m></p></li>
+                <li><p><m>t=-2x</m></p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+Which of these is the result of plugging this choice in for <m>t</m> in the
+parametric equation for <m>y</m>?
+            </p>
+            <ol marker="A." cols="2">
+                <li><p><m>y=-x+2^2+4x+2-2</m></p></li>
+                <li><p><m>y=-(x+2)^2+4(x+2)-2</m></p></li>
+                <li><p><m>y=-x^2+2^2+4x+4\cdot2-2</m></p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+Show how to simplify this choice to obtain the equation <m>y=2-x^2</m>.
+            </p>
+        </task>
+    </activity>
+
+    <fact>
+        <statement>
+            <p>
+One method of graphing parametric equations <m>x=f(t)</m> and <m>y=g(t)</m>
+is to combine them into a single equation only involving <m>x</m> and <m>y</m>,
+and using your usual graphing techniques.
+            </p>
+        </statement>
+    </fact>
+
+    <activity xml:id="co1-activity-parametric-circle">
+        <introduction>
+            <p>
+Parametric equations have the advantage of describing paths that cannot be
+described by a function <m>y=h(x)</m>. One such example is the graph of
+<m>x=3\sin(\pi t)</m> and <m>y=-3\cos(\pi t)</m>. (Use technology or the
+approximation <m>\sqrt 2\approx 0.707</m> to approximate coordinates as needed.)
+            </p>
+        </introduction>
+        <task>
+            <p>Complete the folowing table.</p>
+            <table>
+                <title>Chart of approximate <m>x</m> and <m>y</m> values</title>
+                <tabular>
+                    <row bottom="minor"><cell><m>t</m></cell><cell><m>x</m></cell><cell><m>y</m></cell></row>
+                    <row><cell><m>0</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>1/4</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>1/2</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>3/4</m></cell><cell><m>2.12</m></cell><cell><m>2.12</m></cell></row>
+                    <row><cell><m>1</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>5/4</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>3/2</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>7/4</m></cell><cell></cell><cell></cell></row>
+                    <row><cell><m>2</m></cell><cell></cell><cell></cell></row>
+                </tabular>
+            </table>
+        </task>
+        <task>
+            <p>
+Plot these <m>(x,y)</m> points in the <m>xy</m> plane and connect the dots to draw a
+sketch of the graph.
+            </p>
+        </task>
+        <task>
+            <p>
+What do you obtain by plugging the parametric equations into the expression <m>x^2+y^2</m>?
+            </p>
+            <ol marker="A." cols="2">
+                <li><p><m>x^2+y^2=6\sin(\pi x)\cos(\pi x)</m></p></li>
+                <li><p><m>x^2+y^2=-6\sin(\pi x)\cos(\pi x)</m></p></li>
+                <li><p><m>x^2+y^2=9</m></p></li>
+                <li><p><m>x^2+y^2=0</m></p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+Which of these describes the <m>xy</m> equation and graph given by these parametric equations?
+            </p>
+            <ol marker="A." cols="2">
+                <li><p>a parabola</p></li>
+                <li><p>a line</p></li>
+                <li><p>a circle</p></li>
+                <li><p>a square</p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+The graph of these parametric equations cannot be described by a function. Why?
+            </p>
+            <ol marker="A." cols="2">
+                <li><p>The graph fails the vertical line test.</p></li>
+                <li><p>The graph fails the horizontal line test.</p></li>
+                <li><p>The graph doesn't extend vertically to <m>+\infty</m>.</p></li>
+                <li><p>The graph doesn't extend horizontally to <m>-\infty</m>.</p></li>
+            </ol>
+        </task>
+    </activity>
+
+    <definition>
+        <statement>
+            <p>
+The parametric equations <m>x=f(t)</m> and <m>y=g(t)</m> are sometimes written in the form of
+the <term>vector equation</term> <m>\vec r=\tuple{f(t),g(t)}</m>.
+            </p>
+            <p>
+For example, the parametric equations <m>x=3\sin(\pi t)</m> and <m>y=-3\cos(\pi t)</m>
+may be combined into the single vector equation <m>\vec r=\tuple{3\sin(\pi t),-3\cos(\pi t)}</m>.
+            </p>
+        </statement>
+    </definition>
+
+    <activity xml:id="co1-activity-vector">
+        <introduction>
+            <p>
+Consider the vector equation <m>\vec r=\tuple{2t-3,-6t+13}</m>.
+            </p>
+        </introduction>
+        <task>
+            <p>What are the corresponding parametric equations?</p>
+            <ol marker="A." cols="2">
+                <li><p><m>x=2t-3</m> and <m>y=-6t+13</m></p></li>
+                <li><p><m>y=2t-3</m> and <m>x=-6t+13</m></p></li>
+                <li><p><m>xy=2t-3-6t+13</m></p></li>
+                <li><p>Vector equations cannot be converted into parametric equations.</p></li>
+            </ol>
+        </task>
+        <task>
+            <p>Draw a table of <m>txy</m> values with <m>t=0,1,2,3,4</m>.</p>
+        </task>
+        <task>
+            <p>
+Plot these <m>(x,y)</m> points in the plane and connect the dots to sketch the graph
+of this vector equation.
+            </p>
+        </task>
+        <task>
+            <p>
+Solve for <m>t</m> in terms of <m>x</m> and plug into the <m>y</m> parametric equation to
+show that this is the vector equation for the line <m>y=-3x+4</m>.
+            </p>
+        </task>
+    </activity> -->
+    </subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-CO6" youtube="zBmgRvJlWtU"/>
+            <caption>Video for CO6</caption>
+        </figure>
+    </subsection>  
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/CO6/"/>
+        </p>
+    </subsection>
+
+</section>
+

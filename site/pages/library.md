@@ -60,3 +60,16 @@ you can find them at their former homes:
 
 - [Calculus archive](https://teambasedinquirylearning.github.io/calculus/)
 - [Linear Algebra archive](https://teambasedinquirylearning.github.io/linear-algebra/)
+
+---
+
+### Affiliated Resources
+
+- TBIL Activities for Understanding Linear Algebra
+    - <https://nordstromjf.github.io/TBIL_ULA>
+    - TBIL activities adapted by TBIL fellow Jennifer Nordstrom to be  aligned with David Austin's free and open-source Understanding Linear Algebra
+
+- Team-Based Statistics
+    - <https://tienchih.github.io/tbil-stats/>
+    - TBIL activities designed by TBIL fellow Tien Chih
+    - CheckIt exercise bank: <https://tienchih.github.io/checkit-stats/>

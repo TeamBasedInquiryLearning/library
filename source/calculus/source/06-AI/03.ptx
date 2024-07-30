@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AI3" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Volumes of Revolution (AI3)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/03.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title> 
+    
+        <activity>
+            <statement>
+                <p>
+Consider the following visualization to decide which of these statements is most appropriate for
+describing the relationship of lengths and areas.
+                </p>
+                <image xml:id="AI3-length-area-relationship">
+                    <sageplot>
+<xi:include href="../sage/AI3-length-area-relationship.sage" parse="text" />
+                    </sageplot>
+                </image>
+                <ol marker="A.">
+                    <li>Length is the integral of areas.</li>
+                    <li>Area is the integral of lengths.</li>
+                    <li>Length is the derivative of areas.</li>
+                    <li>None of these.</li>
+                </ol>
+            </statement>
+        </activity>
+
+        <definition>
+            <statement>
+                <p>
+We define the <term>volume</term> of a solid with cross sectional area given by <m>A(x)</m>
+laying between <m>a\leq x\leq b</m> to be the definite integral
+<me>\mathrm{Volume}=\int_a^b A(x)\,dx</me>.
+                </p>
+                <image xml:id="AI3-volume-definition">
+                    <sageplot variant="3d" aspect="1.0">
+<xi:include href="../sage/AI3-volume-definition.sage" parse="text"/>
+                    </sageplot>
+                </image>
+            </statement> 
+        </definition>
+
+        <activity>
+            <introduction>
+                <p>
+We will be focused on the volumes of solids obtained by revolving a region around an axis.
+Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x^2</m>.
+                </p>
+                <image width="50%" xml:id="AI3-x0-y4-yx2">
+                    <sageplot>
+<xi:include href="../sage/AI3-x0-y4-yx2.sage" parse="text"/>
+                    </sageplot>
+                </image>
+            </introduction>
+            <task>
+                <p>
+Consider the below illustrated revolution of this region, and the cross-section drawn
+from a horizontal line segment. Choose the most appropriate description of this illustration.
+                </p>
+                <image xml:id="AI3-x0-y4-yx2-revolution-1">
+                    <sageplot variant="3d" aspect="1.0">
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-1.sage" parse="text"/>
+                    </sageplot>
+                </image>
+                <ol marker="A.">
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which of these formulas is most appropriate to find this illustration's cross-sectional area?
+                </p>
+                <ol marker="A.">
+                    <li><m>\pi r^2</m></li>
+                    <li><m>2\pi rh</m></li>
+                    <li><m>\pi R^2-\pi r^2</m></li>
+                    <li><m>\frac{1}{2}bh</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Consider the below illustrated revolution of this region, and the cross-section drawn
+from a vertical line segment. Choose the most appropriate description of this illustration.
+                </p>
+                <image xml:id="AI3-x0-y4-yx2-revolution-2">
+                    <sageplot variant="3d" aspect="1.0">
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-2.sage" parse="text"/>
+                    </sageplot>
+                </image>
+                <ol marker="A.">
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which of these formulas is most appropriate to find this illustration's cross-sectional area?
+                </p>
+                <ol marker="A.">
+                    <li><m>\pi r^2</m></li>
+                    <li><m>2\pi rh</m></li>
+                    <li><m>\pi R^2-\pi r^2</m></li>
+                    <li><m>\frac{1}{2}bh</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Consider the below illustrated revolution of this region, and the cross-section drawn
+from a horizontal line segment. Choose the most appropriate description of this illustration.
+                </p>
+                <image xml:id="AI3-x0-y4-yx2-revolution-3">
+                    <sageplot variant="3d" aspect="1.0">
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-3.sage" parse="text"/>
+                    </sageplot>
+                </image>
+                <ol marker="A.">
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which of these formulas is most appropriate to find this illustration's cross-sectional area?
+                </p>
+                <ol marker="A.">
+                    <li><m>\pi r^2</m></li>
+                    <li><m>2\pi rh</m></li>
+                    <li><m>\pi R^2-\pi r^2</m></li>
+                    <li><m>\frac{1}{2}bh</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Consider the below illustrated revolution of this region, and the cross-section drawn
+from a vertical line segment. Choose the most appropriate description of this illustration.
+                </p>
+                <image xml:id="AI3-x0-y4-yx2-revolution-4">
+                    <sageplot variant="3d" aspect="1.0">
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-4.sage" parse="text"/>
+                    </sageplot>
+                </image>
+                <ol marker="A.">
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
+                    <li>Region is rotated around the <m>y</m>-axis; the cross-sectional area is determined by the line segment's <m>y</m>-value.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which of these formulas is most appropriate to find this illustration's cross-sectional area?
+                </p>
+                <ol marker="A.">
+                    <li><m>\pi r^2</m></li>
+                    <li><m>2\pi rh</m></li>
+                    <li><m>\pi R^2-\pi r^2</m></li>
+                    <li><m>\frac{1}{2}bh</m></li>
+                </ol>
+            </task>
+        </activity>
+
+        <remark>
+            <statement>
+                <p>
+Generally when solving problems without the aid of technology, it's useful to draw your region in
+two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation
+to determine the cross-sectional shape.
+                </p>
+                <p>
+When the shape is a disk, this is called the <term>disk method</term> and we use one of these formulas
+depending on whether the cross-sectional area depends on <m>x</m> or <m>y</m>.
+<me>V=\int_a^b \pi r(x)^2\,dx,\hspace{2em}V=\int_a^b \pi r(y)^2\,dy</me>.
+                </p>
+                <p>
+When the shape is a washer, this is called the <term>washer method</term> and we use one of these formulas
+depending on whether the cross-sectional area depends on <m>x</m> or <m>y</m>.
+<me>V=\int_a^b\left(\pi R(x)^2- \pi r(x)^2\right)\,dx,\hspace{2em}V=\int_a^b\left(\pi R(y)^2- \pi r(y)^2\right)\,dy</me>.
+                </p>
+                <p>
+When the shape is a cylindrical shell, this is called the <term>shell method</term> and we use one of these formulas
+depending on whether the cross-sectional area depends on <m>x</m> or <m>y</m>.
+<me>V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy</me>.
+                </p>
+            </statement>
+        </remark>
+
+        <activity>
+            <introduction>
+                <p>
+Let's now consider the region bounded by the curves <m>x=0,x=1,y=0,y=5e^x</m>,
+rotated about the <m>x</m>-axis.
+                </p>
+            </introduction>
+            <task>
+                <p>
+Sketch two copies of this region in the <m>xy</m> plane.
+                </p>
+            </task>
+            <task>
+                <p>
+Draw a vertical line segment in one region and its rotation around the <m>x</m>-axis.
+Draw a horizontal line segment in the other region and its rotation around the <m>x</m>-axis.
+                </p>
+            </task>
+            <task>
+                <p>
+Consider the method required for each cross-section drawn. Which would be the <em>easiest</em>
+strategy to proceed with?
+                </p>
+                <ol marker="A.">
+                    <li>The horizontal line segment, using the disk/washer method.</li>
+                    <li>The horizontal line segment, using the shell method.</li>
+                    <li>The vertical line segment, using the disk/washer method.</li>
+                    <li>The vertical line segment, using the shell method.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Let's proceed with the vertical segment. Which formula is most appropriate for the radius?
+                </p>
+                <ol marker="A.">
+                    <li><m>r(x)=x</m></li>
+                    <li><m>r(x)=5e^x</m></li>
+                    <li><m>r(x)=5\ln(x)</m></li>
+                    <li><m>r(x)=\frac{1}{5}\ln(x)</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which of these integrals is equal to the volume of the solid of revolution?
+                </p>
+                <ol marker="A.">
+                    <li><m>\int_0^1 25\pi e^{2x}\,dx</m></li>
+                    <li><m>\int_0^1 5\pi^2 e^{x}\,dx</m></li>
+                    <li><m>\int_0^2 25\pi e^{x}\,dx</m></li>
+                    <li><m>\int_0^2 5\pi^2 e^{2x}\,dx</m></li>
+                </ol>
+            </task>
+        </activity>
+
+        <activity>
+            <introduction>
+                <p>
+Let's now consider the same region, bounded by the curves <m>x=0,x=1,y=0,y=5e^x</m>,
+but this time rotated about the <m>y</m>-axis.
+                </p>
+            </introduction>
+            <task>
+                <p>
+Sketch two copies of this region in the <m>xy</m> plane.
+                </p>
+            </task>
+            <task>
+                <p>
+Draw a vertical line segment in one region and its rotation around the <m>y</m>-axis.
+Draw a horizontal line segment in the other region and its rotation around the <m>y</m>-axis.
+                </p>
+            </task>
+            <task>
+                <p>
+Consider the method required for each cross-section drawn. Which would be the <em>easiest</em>
+strategy to proceed with?
+                </p>
+                <ol marker="A.">
+                    <li>The horizontal line segment, using the disk/washer method.</li>
+                    <li>The horizontal line segment, using the shell method.</li>
+                    <li>The vertical line segment, using the disk/washer method.</li>
+                    <li>The vertical line segment, using the shell method.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Let's proceed with the vertical segment. Which formula is most appropriate for the radius?
+                </p>
+                <ol marker="A.">
+                    <li><m>r(x)=x</m></li>
+                    <li><m>r(x)=5e^x</m></li>
+                    <li><m>r(x)=5\ln(x)</m></li>
+                    <li><m>r(x)=\frac{1}{5}\ln(x)</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which formula is most appropriate for the height?
+                </p>
+                <ol marker="A.">
+                    <li><m>h(x)=x</m></li>
+                    <li><m>h(x)=5e^x</m></li>
+                    <li><m>h(x)=5\ln(x)</m></li>
+                    <li><m>h(x)=\frac{1}{5}\ln(x)</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>
+Which of these integrals is equal to the volume of the solid of revolution?
+                </p>
+                <ol marker="A.">
+                    <li><m>\int_0^1 5\pi^2 xe^{x}\,dx</m></li>
+                    <li><m>\int_0^1 10\pi xe^{x}\,dx</m></li>
+                    <li><m>\int_0^2 5\pi xe^{x}\,dx</m></li>
+                    <li><m>\int_0^2 10\pi x^2e^{x}\,dx</m></li>
+                </ol>
+            </task>
+        </activity>
+
+        
+  <activity>
+    <introduction>
+      <p> Consider the region bounded by <m>y=2 \, x + 3, y=0, x=4, x=7</m>. </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>Find an integral which computes the volume of the solid formed by rotating this region about the <m>x</m>-axis.</p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>Find an integral which computes the volume of the solid formed by rotating this region about the <m>y</m>-axis.</p>
+        </statement>
+      </task>
+  </activity>
+    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI31" youtube="CBL66Ro9Vcc">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, washer <m>x</m>-axis</caption>
+    </figure>
+        <figure>
+		<video xml:id="video-AI32" youtube="KOPFv12uC68">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, shell <m>x</m>-axis</caption>
+    </figure>
+        
+    <figure>
+		<video xml:id="video-AI33" youtube="Y16cc0Z43Uc">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, washer <m>y</m>-axis</caption>
+    </figure>
+        <figure>
+		<video xml:id="video-AI34" youtube="j8A0rflmA2I">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute volumes of solids of revolution, shell <m>y</m>-axis</caption>
+    </figure>    
+        
+        
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/AI3/"/>
+        </p>
+    </subsection>
+    
+    
+        
+       
+    
+</section>
+

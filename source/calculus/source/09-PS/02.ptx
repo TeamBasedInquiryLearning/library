@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PS2" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Convergence of Power Series (PS2)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/02.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+        <activity xml:id="activity-PS2introexp">
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> where <m>x</m> is a real number.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                If <m>x=2</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m>.  What can be said about this series?
+                <ol marker="A.">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                If <m>x=-100</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m>.  What can be said about this series?
+                <ol marker="A.">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Suppose that <m>x</m> were some arbitrary real number.  What can be said about this series?
+                <ol marker="A.">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+        
+    <remark>
+        <statement>
+        <p>Consider a power series <m>\displaystyle\sum c_n(x-a)^n</m>.  Recall from <xref ref="fact-SQ7ratioTest"/> that if 
+            <md>
+                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1</mrow>
+                <!--<mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right| &amp; &lt; 1</mrow>
+                <mrow>\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| &amp; &lt; 1</mrow>
+                <mrow>\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &amp; &lt; 1</mrow>-->
+            </md>
+            then <m>\displaystyle\sum c_n(x-a)^n</m> converges.
+        </p>
+        
+        <p>Then recall:
+            <md>
+                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|</mrow>
+                <mrow>&amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| </mrow>
+                <mrow>&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|. </mrow>
+            </md>
+        
+        
+        </p>
+            
+            </statement>
+    </remark>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Letting <m>c_n=\frac{1}{n^2+1}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                For what values of <m>x</m> is <m>\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                <ol marker="A." cols="2">
+                    <li><m>x &lt; 1</m>.</li>
+                    <li><m>0\leq x &lt; 1</m>.</li>
+                    <li><m>-1 &lt; x &lt; 1</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=1</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converge?
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=-1</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converge?
+            </p>
+        </task>
+        
+        
+         <task>
+            <p>
+                Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converges?
+                <ol marker="A." cols="2">
+                    <li><m>(-1,1)</m>.</li>
+                    <li><m>[-1,1)</m>.</li>
+                    <li><m>(-1,1]</m>.</li>
+                    <li><m>[-1,1]</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+    </activity>
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Letting <m>c_n=\frac{2^n}{5^n}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                For what values of <m>x</m> is <m>\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                <ol marker="A." cols="2">
+                    <li><m>-\frac{2}{5} &lt; x &lt; \frac{2}{5}</m>.</li>
+                    <li><m>\frac{8}{5} &lt; x &lt; \frac{12}{5}</m>.</li>
+                    <li><m>-\frac{5}{2} &lt; x &lt; \frac{5}{2}</m>.</li>
+                    <li><m>-\frac{1}{2} &lt; x &lt; \frac{9}{2}</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=\frac{9}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=-\frac{1}{2}</m>, does <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converge?
+            </p>
+        </task>
+        
+        
+         <task>
+            <p>
+                Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converges?
+                <ol marker="A." cols="2">
+                    <li><m>(-\frac{1}{2},\frac{9}{2})</m>.</li>
+                    <li><m>[-\frac{1}{2},\frac{9}{2})</m>.</li>
+                    <li><m>(-\frac{1}{2},\frac{9}{2}]</m>.</li>
+                    <li><m>[-\frac{1}{2},\frac{9}{2}]</m>.</li>
+                </ol>
+            </p>
+        </task>
+        
+    </activity>
+    
+    
+    
+    <activity>
+        <introduction>
+            <p>
+                Consider <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n.</m>
+            </p>
+        </introduction>
+        <task>
+            <p>
+                Letting <m>c_n=\frac{n^2}{n!}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+            </p>
+            
+        </task>
+        
+        <task>
+            <p>
+                For what values of <m>x</m> is <m>\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                <ol marker="A." cols="2">
+                    <li><m>0\leq x &lt; \infty</m>.</li>
+                    <li>All real numbers.</li>
+                </ol>
+            </p>
+        </task>
+        
+        
+         <task>
+            <p>
+                What describes the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n</m> converges?
+                
+            </p>
+        </task>
+        
+    </activity>
+    
+    
+    <fact xml:id="intervalofconvergence">
+        <statement>
+        <p>
+            Given the power series <m>\displaystyle\sum c_n(x-a)^n</m>, the <term>center of convergence</term><idx>center of convergence</idx> is <m>x=a</m>.  The <term>radius of convergence</term><idx>radius of convergence</idx> is <me>r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.</me>  If <m>\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|=0</m>, we say that <m>r=\infty</m>.
+        </p>
+        
+        <p>
+            The <term>interval of convergence</term><idx>interval of convergence</idx> represents all possible values of <m>x</m> for which <m>\displaystyle\sum c_n(x-a)^n</m> converges, which is of the form:
+            <ul>
+                <li><m>(a-r, a+r)</m></li>
+                <li><m>[a-r, a+r)</m></li>
+                <li><m>(a-r, a+r]</m></li>
+                <li><m>[a-r, a+r]</m></li>
+            </ul>
+            Depending on if <m>\displaystyle\sum c_n(x-a)^n</m> converges when <m>x=a-r</m> or <m>x=a+r</m>.</p>
+            <p>If <m>r=\infty</m> the interval of convergence is all real numbers.
+        </p>
+            </statement>
+    </fact>
+    
+<activity checkit-seed="7542" checkit-slug="PS2" checkit-title="Domain of power series">
+    <statement>
+        <p>
+            Find the center of convergence, radius of convergence, and interval of convergence for the series: <me>\sum_{n=0}^\infty \frac{3^{n} \left(-1\right)^{n} {\left(x - 1\right)}^{n}}{n!}.</me>
+        </p>
+        
+    </statement>
+  <!--  <answer>
+            <ul>
+                <li>The center of convergence is <m>1</m>.</li>
+                <li>The radius of convergence is <m>+\infty</m>.</li>
+                <li>The interval of convergence is <m>( -\infty, +\infty )</m>.</li>
+            </ul>
+    </answer>-->
+</activity>
+    
+<activity checkit-seed="4283" checkit-slug="PS2" checkit-title="Domain of power series">
+    <statement>
+        <p>
+            Find the center of convergence, radius of convergence, and interval of convergence for the series: <me>\sum_{n=0}^\infty \frac{3^{n} {\left(x + 2\right)}^{n}}{n}.</me>
+        </p>
+        
+    </statement>
+  <!--  <answer>
+            <ul>
+                <li>The center of convergence is <m>-2</m>.</li>
+                <li>The radius of convergence is <m>\frac{1}{3}</m>.</li>
+                <li>The interval of convergence is <m>[ -\frac{7}{3}, -\frac{5}{3} )</m>.</li>
+            </ul>
+    </answer>-->
+</activity>    
+    
+    <activity>
+        <introduction>
+            <p>Consider the power series <m>\displaystyle \sum_{n=0}^\infty \frac{2^n+1}{n3^n}\left(x+1\right)^n</m>.</p>
+        </introduction>
+        <task>
+            <p>
+                What is the center of convergence for this power series?
+            </p>
+        </task>
+        <task>
+            <p>
+                What is the radius of convergence for this power series?
+            </p>
+        </task>    
+        
+        <task>
+            <p>
+                What is the interval of convergence for this power series?
+            </p>
+        </task>
+            
+        <task>
+            <p>
+                If <m>x=-0.5</m>, does this series converge? (Use the interval of convergence.)
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                If <m>x=1</m>, does this series converge? (Use the interval of convergence.)
+            </p>
+        </task>
+    </activity>
+    
+    <!-- <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="PS2.slides.html"/>.</p>
+    </subsection> -->
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-PS2" youtube="npxONByK-GQ">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Determine the interval of convergence for a given power series
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+
+    <subsection>
+        <title>Exercises</title>
+        <p>
+            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/PS2/"/>
+        </p>
+    </subsection>
+    
+    
+    
+
+</section>
