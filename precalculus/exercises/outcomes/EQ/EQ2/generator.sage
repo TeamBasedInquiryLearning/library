@@ -25,7 +25,7 @@ class Generator(BaseGenerator):
             "Julia",
         ])
 
-        data = {}
+        result = {}
 
         if scenario == "distance_toward" or scenario == "distance_apart":
             d_unit = choice(["mi","km"])
@@ -42,7 +42,7 @@ class Generator(BaseGenerator):
             rates = [20*m for m in mults]
             time = choice([3,5,7,9,11])/4  # hours
             dist = sum(rates)*time
-            data = {
+            result = {
                 "dist": dist,
                 "rate1": rates[0],
                 "rate2": rates[1],
@@ -78,7 +78,7 @@ class Generator(BaseGenerator):
                     "mango",
                     "peach",
                 ], 2)
-            data = {
+            result = {
                 "name": name,
                 "weight": weight,
                 "part1": part1,
@@ -102,7 +102,7 @@ class Generator(BaseGenerator):
                 totalinvestment = sum(investments)
                 interests = [investments[i]*aprs[i]/100 for i in range(2)]
                 totalinterest = sum(interests)
-                data = {
+                result = {
                     "name": name,
                     "apr1": aprs[0],
                     "apr2": aprs[1],
@@ -135,7 +135,7 @@ class Generator(BaseGenerator):
                     part1 = choice([20,30,40,60,70,80])
                     parts = [part1,100-part1]
                 mixpercent = (parts[0]*percents[0]+parts[1]*percents[1])/100
-                data = {
+                result = {
                     "name": name,
                     "meat1": meats[0],
                     "meat2": meats[1],
@@ -151,6 +151,6 @@ class Generator(BaseGenerator):
 
         return {
           scenario: {
-            scenario_alt: data
+            scenario_alt: result
           }
         } 
