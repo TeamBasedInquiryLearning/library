@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="PR4" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Zeros of Polynomial Functions (PR4) </title>
+    <title>Polynomial Long Division (PR4) </title>
     <objectives>
     <ul>
       <li>
@@ -9,393 +9,377 @@
       </li>
     </ul>
     </objectives>
-    <subsection>
-      <title>Activities</title>
-      <introduction>
-        <remark xml:id="x-intercepts">
-         
-  <statement><p> Recall that to find the <m>x</m>-intercepts of a function <m>f(x)</m>, we need to find the values
-                of <m>x</m> that make <m>f(x)=0</m>.  
-              We saw in <xref ref="EQ5"/> that the zero product property (<xref ref="def-zero-product-property"/>) was helpful when <m>f(x)</m>
-              is a polynomial that we can factor.
-              </p>
-  </statement></remark></introduction>
-      <activity xml:id="Quadratic-Zeros">
-        <introduction>
-          <p>
-            Consider the following polynomials.
-          </p>
-        </introduction>
-        <task>
-          <statement>
-            <p>What are the <m>x</m>-intercepts of the function <m>f(x)=(x+5)(x-3)</m>?</p>
-          </statement>
-          <answer>
-            <p><m>-5</m> and <m>3</m></p>
-          </answer>
-        </task>
-        <task>
-          <statement>
-            <p>What are the <m>x</m>-intercepts of the function <m>g(x)=(x+5)(x-3)(x-7)</m>?</p>
-          </statement>
-          <answer>
-            <p><m>-5</m>, <m>3</m>, and <m>7</m></p>
-          </answer>
-        </task>        
-        <task>
-          <statement>
-            <p>What are the <m>x</m>-intercepts of the function <m>h(x)=x^3-x^2-56x</m>?</p>
-          </statement>
-          <hint><p><m>h(x)=x(x^2-x-56)</m>.</p></hint>
-          <answer>
-            <p><m>-7</m>, <m>0</m>, and <m>8</m></p>
-          </answer>
-        </task>
-      </activity> 
 
-      <definition xml:id="def-real-zeros"> 
-        <statement> <p><term>Real zeros</term> of a polynomial function are the same as the <m>x</m>-intercepts.
-        </p> 
+    <subsection>
+    <title>Activities</title>
+    <observation>
+      <p>We have seen previously that we can reduce rational functions by factoring, for example
+        <me>\frac{x^2+5x+4}{x^3+3x^2+2x}=\frac{(x+1)(x+4)}{x(x+2)(x+1)}=\frac{x+4}{x(x+2)}.</me>
+        In this section, we will explore the question: what can we do to simplify rational functions if we are not able to 
+        reduce by easily factoring?
+    </p>
+  </observation>
+    <definition xml:id="proper-rational-function">
+      <statement>
+        <p> Recall that a fraction is called <term>proper</term> if its numerator is smaller than its denominator, and <term>improper</term> 
+          if the numerator is larger than the denominator (so <m>\frac{3}{5}</m> is a proper fraction, but <m>\frac{32}{7}</m> is an 
+          improper fraction).  Similarly, we define a <term>proper rational function</term> to be a rational function where 
+          the degree of the numerator is less than the degree of the denominator.  </p>
       </statement>
     </definition>
-      
-      <theorem xml:id="thm-factor-theorem">
-        <title>Factor Theorem</title> 
-        <statement> 
-          <p> A number <m>c</m> is a zero of a polynomial function <m>f(x)</m> (that is, <m>f(c)=0</m>) if and only if 
-             <m>x-c</m>  is a factor of <m>f(x)</m>.</p>
-        </statement>
-      </theorem>
 
-      <activity xml:id="zeros-cubic-factoring">
-          <statement>
-          <p>Use <xref ref="thm-factor-theorem"/> to find the zeros of the polynomial  <m>f(x)=x^4-x^3</m>.
-          </p>
-          </statement>
-          <answer><p><m>0</m> and <m>1</m>.</p></answer>
-      </activity>
-
-      <activity xml:id="zeros-cubic-division-with-linear-factor">
-          <introduction>
-            <p>Consider the polynomial <m>f(x)=2x^3-7x^2-33x+108</m>.</p>
-            </introduction>
-          <task>
-            <statement>
-              <p>It turns out that <m>x-3</m> is a factor of <m>f(x)</m>.  Use this fact to find a polynomial <m>g(x)</m> such that
-                <m>f(x)=(x-3)g(x)</m>. 
-              </p>
-            <ol marker= "A.">
-              <li> <m>g(x)=2x^2-x-36</m></li>
-              <li> <m>g(x)=2x^2+x-36</m></li>
-              <li> <m>g(x)=2x^2-15x-27</m></li>
-              <li> <m>g(x)=2x^2+15x-27</m></li>
-            </ol>
-          </statement>
-          <answer>
-            <p>A.</p>
-          </answer>
-        </task>
-        <task>
-          <statement>
-            <p>Since <m>f(x)=(x-3)(2x^2-x-36)</m>, how can we rewrite <m>f(x)</m>?.</p>
-            <ol marker= "A.">
-              <li> <m>f(x)=(x-3)(x+4)(2x-9)</m></li>
-              <li> <m>f(x)=(x-3)(x-4)(2x+9)</m></li>
-              <li> <m>f(x)=(x-3)(2x+3)(x-9)</m></li>
-              <li> <m>f(x)=(x-3)(2x-3)(x+9)</m></li>
-            </ol>
-          </statement>
-          <answer>
-            <p>A.</p>
-          </answer>
-          </task>
-          <task> 
-            <statement>
-              <p> How many zeros does <m>f(x)</m> have? 
-            <ol marker= "A.">
-              <li> <m>1</m></li>
-              <li> <m>2</m></li>
-              <li> <m>3</m></li>
-              <li> <m>4</m></li>
-            </ol>
-          </p> 
-        </statement>
-        <answer><p><m>3</m></p></answer>
-      </task>
-      </activity>
-      
-      <definition xml:id="degree-of-poly">
-        <statement>
-          <p> The <term>degree</term> <idx><h>polynomial function</h><h>multiplicity</h></idx> of a polynomial function is the highest power of <m>x</m> in the expanded form of the function.</p>
-          </statement>
-      </definition>
-      <activity xml:id="degree-linear-example">
-        <introduction><p>Consider the function <m>f(x)=5x-4</m>.</p>
-        </introduction>
-       <task> <statement><p>What is the degree of <m>f(x)</m>?</p>
-            <ol marker= "A.">
-              <li> <m>0</m></li>
-              <li> <m>1</m></li>
-              <li> <m>2</m></li>
-              <li> <m>5</m></li>
-            </ol>
-        </statement>
-        <answer><p><m>1</m>.</p></answer>
-      </task>
-      <task>
-        <statement>
-          <p>Find the zeros of <m>f(x)</m>. How many are there?</p>
-        <ol marker= "A.">
-          <li> <m>0</m></li>
-          <li> <m>1</m></li>
-          <li> <m>2</m></li>
-          <li> <m>5</m></li>
+    <activity xml:id="identify-improper-rational-functions">
+      <statement>
+        Label each of the following rational functions as either <term>proper</term> or <term>improper</term>.
+        <ol marker="A.">
+          <li><m> \frac{x^3+x}{x^2+4}</m></li>
+          <li><m> \frac{3}{x^2+3x+4}</m></li>
+          <li><m> \frac{7+x^3}{x^2+x+1}</m></li>
+          <li><m> \frac{x^4+x+1}{x^4+4x^2}</m></li>
         </ol>
-    </statement>
-        <answer><p><m>1</m>.</p></answer>
-      </task>
-        </activity>
-          <activity xml:id="degree-quadratic-example">
-        <introduction><p>Consider the function <m>g(x)=5x^2+7x-6</m>.</p>
-        </introduction>
-            <task>
-              <statement>
-                <p>What is the degree of <m>g(x)</m>?</p>
-              <ol marker= "A.">
-                <li> <m>0</m></li>
-                <li> <m>1</m></li>
-                <li> <m>2</m></li>
-                <li> <m>5</m></li>
-              </ol>
-            </statement>
-        <answer><p><m>2</m>.</p></answer>
-            </task>
-            <task>
-              <statement>
-                <p>Find the zeros of <m>g(x)</m>. How many are there?</p>
-              <ol marker= "A.">
-                <li> <m>0</m></li>
-                <li> <m>1</m></li>
-                <li> <m>2</m></li>
-                <li> <m>5</m></li>
-              </ol>
-          </statement>
-        <answer><p><m>2</m>.</p></answer>
-            </task>
-      </activity>  
-      
-      <activity xml:id="degree-quintic-example">
-        <introduction><p>Consider the function <m>h(x)=x^5+x^4</m>.</p>
-        </introduction>
-            <task>
-              <statement>
-                <p>What is the degree of <m>g(x)</m>?</p>
-              <ol marker= "A.">
-                <li> <m>0</m></li>
-                <li> <m>1</m></li>
-                <li> <m>2</m></li>
-                <li> <m>5</m></li>
-              </ol>
-            </statement>
-        <answer><p><m>5</m>.</p></answer>
-            </task>
-            <task>
-              <statement>
-                <p>Find the zeros of <m>h(x)</m>. How many are there?</p>
-              <ol marker= "A.">
-                <li> <m>0</m></li>
-                <li> <m>1</m></li>
-                <li> <m>2</m></li>
-                <li> <m>5</m></li>
-              </ol>
-          </statement>
-        <answer><p>There are <m>2</m> distinct real zeros.</p></answer>
-            </task>
-      </activity>     
-
-         <definition xml:id="multiplicity">
-        <statement>
-          <p> The <term>multiplicity</term> <idx><h>polynomial function</h><h>multiplicity</h></idx> of a zero is the number of times the corresponding linear factor appears in the factored form of the polynomial function.
-          </p>
-          </statement>
-      </definition>   
-
-      <observation>
-        <p>In the polynomial <m>h(x)=x^5+x^4=x^4(x+1)</m>, <m>0</m> was a zero with multiplicity <m>4</m>.</p>
-        </observation>
-
-      <activity>
-      <statement> <p>How many zeros does the polynomial <m>f(x)=x^2+4</m> have?</p>
-      <ol marker="A.">
-        <li> <m>0</m> </li>
-        <li> <m>1</m> </li>
-        <li> <m>2</m> </li>
-        <li> <m>3</m> </li>
-      </ol>
       </statement>
-      <answer><p>There are no real zeros, but two distinct complex zeros.</p></answer>
-      </activity>
+      <answer><p>A, C, and D are improper, while B is proper.</p></answer>
+    </activity>
 
+    <observation>
+      <p>When dealing with an improper fraction such as <m>\frac{32}{7}</m>, it is sometimes useful to rewrite this
+        as an integer plus a proper fraction, e.g. <m>\frac{32}{7}=4+\frac{4}{7}</m>.  Similarly, it will sometimes be
+        useful to rewrite an improper rational function as the sum of a polynomial and a proper rational function, such 
+        as <m>\frac{x^3+x}{x^2+4}=x-\frac{3x}{x^2+4}</m>.
+      </p>
+    </observation>
 
-      <theorem>
-        <title>Fundamental Theorem of Algebra</title> 
-        <statement> 
-          <p> A polynomial function of degree <m>n > 0</m> has at least one, possibly complex zero. 
-            Nonzero polynomials of degree <m>n</m> have exactly <m>n</m> zeros, counted with multiplicity.</p>
-        </statement>
-      </theorem>
-
-     
-      <activity xml:id="Degree-polynomial-factored">
-        <introduction><p>Consider the polynomial <m>f(x)=(3x-2)(x+1)^2(x-6)^3</m>.</p>
-        </introduction>
-        <task>
-          <statement>
-            <p>Find all of the zeros of <m>f(x)</m> with their corresponding multiplicities. 
-        
-        </p>
-        </statement>
-        <answer><p>The zeros are <m>\frac{2}{3}</m> with multiplicty 1, <m>-1</m> with multiplicity 2, and <m>6</m> with multiplicity 3.</p></answer>
-        </task>
-        <task>
-          <statement>
-            <p>Find the degree of <m>f(x)</m>.
-            </p> <ol marker= "A.">
-          <li> <m>1</m></li>
-          <li> <m>2</m></li>
-          <li> <m>3</m></li>
-          <li> <m>6</m></li>
-        </ol> 
-        </statement>
-        <answer><p>D</p></answer>
-        </task>
-        <task> 
-          <statement> 
-            <p>How do all of the exponents on the factors relate to the degree of <m>f(x)</m>?</p>
-          </statement>
-          <answer>
-            <p>The degree is the sum of the exponents.</p>
-          </answer>
-        </task>
-            <task> 
-              <statement> 
-                <p>How do the multiplicities of the zeros relate to the degree of <m>f(x)</m>?</p>
-              </statement>
-            </task>
-          <answer>
-            <p>Each exponent is the multiplicity of the corresponding zero.</p>
-          </answer>
-          </activity>  
-
-
-<activity xml:id="write-polynomial-given-zeros">
-  
-    <statement>
-      <p>Find a polynomial that satisfies the following properties:</p>
-      <ul>
-        <li> <m>-1</m> is a zero with multiplicity <m>2</m></li>
-        <li> <m>4</m> is a zero with multiplicity <m>1</m></li>
-        <li> <m>7</m> is a zero with multiplicity <m>3</m></li>
-      </ul>
-  </statement>
-  <answer>
-    <p>One such polynomial is <m>(x+1)^2(x-4)(x-7)^3</m>.</p>
-  </answer>
-  
-</activity> 
-
-<activity xml:id="Complex-zeros-quadratic">
-  
-    <statement>
-      <p>Find the (complex) zeros for the function, <m>f(x)=x^2+16</m>.</p>
-      </statement>
-      <answer><p>The zeros are <m>4i</m> and <m>-4i</m>.</p></answer>
-  
-</activity> 
-<theorem>
-  <title>Conjugate Zeros Theorem</title> 
-  <statement> 
-    <p> Let <m>f(x)</m> be a polynomial function with real coefficients. If <m>a+bi</m>, is a complex zero of the function, 
-      then the conjugate <m>a-bi</m> is also a zero of the function. 
-      These two zeroes are called <term>conjugate zeros</term>, or a <term>conjugate pair of zeros</term>.
-  </p>
-  </statement>
-</theorem>
-
-<activity xml:id="poly-create">
-  <introduction>
-    <p>Consider the following information about a polynomial <m>f(x)</m>:</p>
-      <ul>
-        <li><m>x=2</m> is a zero with multiplicity <m>1</m></li>
-        <li><m>x=-1</m> is a zero with multiplicity <m>2</m></li>
-        <li><m>x=i</m> is a zero with multiplicity <m>1</m></li>
-      </ul>
+    <activity xml:id="Long-division-integer">
+    <introduction>
+      Consider the improper fraction <m>\frac{357}{11}</m>.
     </introduction>
     <task>
       <statement>
-        <p>What is the smallest possible degree of such a polynomial <m>f(x)</m> with real coefficients?</p>
-        <ol marker="A.">
-          <li><m>2</m></li>
-          <li><m>3</m></li>
-          <li><m>4</m></li>
-          <li><m>5</m></li>
-          <li><m>6</m></li>
-        </ol>
+        <p>Use long division to write <m>\frac{357}{11}</m> as an integer plus a proper fraction.</p>
       </statement>
-      <answer><p><m>5</m></p></answer>
+      <answer>
+      <image xml:id="long-division-integers" width="30%">                
+                  <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp; &amp;3  &amp;2   \\  
+                \cline{2-4}\\[-14.5pt]
+                \multicolumn{1}{r}{11\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;5 &amp;7  \\
+                &amp; 3&amp;3 &amp;  \\
+                \cline{2-3}
+                &amp; &amp; 2 &amp; 7 \\
+                &amp; &amp; 2 &amp; 2 \\
+                \cline{3-4}
+                &amp; &amp; &amp; 5 \\
+                \end{array}
+                \)
+                </latex-image>
+                </image>
+                <p>So <m>\frac{357}{11}=32+\frac{5}{11}</m>.</p>
+              </answer>
     </task>
     <task>
       <statement>
-        <p>
-       Write an express for such a polynomial  <m>f(x)</m> with real coefficients of smallest possible degree. 
-        </p>
+      <p>Now we will carefully redo this process in a way that we can generalize to rational functions.  
+      Note that we can rewrite <m>357</m> as <m>357=3\cdot10^2+5\cdot10+7</m>, and <m>11</m> as <m>11=1\cdot10+1</m>. 
+      By comparing the leading terms in these expansions, we see that to knock off the leading term of <m>357</m>, we need to
+      multiply <m>11</m> by <m>3\cdot10^1</m>.
+    </p>
+    <p>Using the fact that <m>357=11\cdot30+27</m>, rewrite <m>\frac{357}{11}</m> as <m>\frac{357}{11}=30+\frac{?}{11}</m>.
+    </p>
       </statement>
-    <answer>
-      <p><m>f(x)=(x-2)(x-1)^2(x^2+1)=x^5-4x^4+6x^3-6x^2+5x-2</m> is one such polynomial.</p>
-      </answer>
-      </task>
-  </activity> 
+      <answer><p><m>\frac{357}{11}=30+\frac{27}{11}</m>.</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Note now that if we can rewrite <m>\frac{27}{11}</m> as an integer plus a proper fraction, we will be done, 
+      since <m>\frac{357}{11}=30+\frac{27}{11}</m>.
+    </p>
+    <p>
+      Rewrite <m>\frac{27}{11}=?+\frac{?}{11}</m> as an integer plus a proper fraction.
+    </p>
+    </statement>
+      <answer><p><m>\frac{27}{11}=2+\frac{5}{11}</m>.</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Combine your work in the previous two parts to rewrite <m>\frac{357}{11}</m> as an integer plus a proper fraction.  
+      How does this compare to what you obtained in part (a)?
+    </p>
+    </statement>
+      <answer><p><m>\frac{357}{11}=30+\frac{27}{11}=30+2+\frac{5}{11}=32+\frac{5}{11}</m>.</p></answer>
+  </task>
+  </activity>
 
-    <activity xml:id="poly-degree-4">
+<activity xml:id="long-division-activity-1">
+  <introduction>
+    <p>
+      Now let's consider the rational function <m>\frac{3x^2+5x+7}{x+1}</m>.  We want to rewrite this as a polynomial
+      plus a proper rational function.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p>Looking at the leading terms, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
+      as <m>3x^2+5x+7</m>?
+    </p>
+    <ol marker="A.">
+      <li><m>3</m></li>
+      <li><m>x</m></li>
+      <li><m>3x</m></li>
+      <li><m>3x+5</m></li>
+    </ol>
+  </statement>
+  <answer><p>C</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Rewrite <m>3x^2+5x+7=3x(x+1)+?</m>, and use this to rewrite <m>\frac{3x^2+5x+7}{x+1}=3x+\frac{?}{x+1}</m>.
+    </p>
+    </statement>
+    <answer><p><m>\frac{3x^2+5x+7}{x+1}=3x+\frac{2x+7}{x+1}</m></p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Now focusing on <m>\frac{2x+7}{x+1}</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
+      as <m>2x+7</m>?
+    </p>
+    <ol marker="A.">
+      <li><m>2</m></li>
+      <li><m>x</m></li>
+      <li><m>2x</m></li>
+      <li><m>2x+7</m></li>
+    </ol>
+  </statement>
+  <answer><p>A</p></answer>
+  </task>
+  <task>
+    <statement>
+  <p> Rewrite <m>\frac{2x+7}{x+1}=2+\frac{?}{x+1}</m>.</p>
+    </statement>
+    <answer><p><m>\frac{2x+7}{x+1}=2+\frac{5}{x+1}</m></p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Combine this with the previous parts to rewrite <m>\frac{3x^2+5x+7}{x+1}=3x+?+\frac{?}{x+1}</m>.</p>
+    </statement>
+    <answer><p><m>\frac{3x^2+5x+7}{x+1}=3x+2+\frac{5}{x+1}</m></p></answer>
+  </task>
+</activity>
+
+    <activity xml:id="Long-Division-Intro-Steps">
         <introduction>
-        <p>Consider the function <m>f(x)=x^4+x^3+2x^2+4x-8</m>.  </p>
+          <p>Next we will use the notation of long division to rewrite the rational function  <m>\frac{3x^2+5x+7}{x+1}</m> as a 
+            polynomial plus a proper rational function.</p> 
         </introduction>
-        <task>
-        <statement>
-        <p>Use a graphing utility to graph <m>f(x)</m>.</p>
-        </statement>
-        <answer>
-        <image>
-          <sageplot>
-            f(x)=x^4+x^3+2*x^2+4*x-8
-            p=plot(f, xmin=-5,xmax=5,ymin=-10,ymax=10,color="blue",thickness=3,gridlines=[[-5..5],[-10..10]])
-            p+=text("$f(x)$",(3,3),color="blue",fontsize=20)
-            p
-            </sageplot>
-            </image>
-            </answer>
-        </task>
-        <task>
-          <statement>
-        <p>Find <em>all</em> the zeros of <m>f(x)</m> and their corresponding multiplicities.</p>
-        </statement>
-        <answer>
-          <p><m>f(x)</m> has zeros at <m>-2</m>, <m>1</m>, <m>-2i</m>, and <m>2i</m>, all of multiplicity 1.</p>
-          </answer>
-        </task>
-    </activity>
+       
+              <task>
+                <statement>
+                <p> First, let's use long division notation to write the quotient.</p>
+                <image xml:id="example-long-division-setup" width="50%">                
+                  <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp; &amp;  &amp; &amp; ? &amp; &amp;  &amp; &amp;  \\  
+                \cline{2-9}\\[-14.5pt]
+                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                \end{array}
+                \)
+                </latex-image>
+                </image>
+                <p>What do we need to multiply <m>x+1</m> by so that it would have the same leading term
+                  as <m>3x^2+5x+7</m>?</p>
+                <!--<image xml:id="existing-example">
+                <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp;  &amp; ?&amp; &amp; &amp; ? &amp; &amp;  \\ \cline{2-9}\\[-14.5pt]
+                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                &amp;  &amp; ? &amp; &amp; 3 &amp;x \\ \cline{2-6}
+                &amp; &amp; &amp;  &amp;? &amp; &amp;  &amp;7 &amp; \\
+                &amp; &amp; &amp; &amp; ? &amp; &amp;  &amp; ?&amp; &amp; &amp; &amp;  &amp; \\  \cline{4-11}
+                &amp; &amp; &amp; &amp;  &amp; &amp;  &amp; ? &amp; &amp; &amp; &amp;  \\
+                &amp; &amp; &amp;  &amp; &amp; &amp;  &amp; &amp; \\
+                \end{array}
+                  \)
+                </latex-image>
+                </image>-->
+              </statement>
+              <answer>
+                <image xml:id="example-long-division-step-1" width="50%">
+                <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp; &amp;  &amp;  &amp; 3 &amp;x &amp;  &amp; &amp;  \\  
+                \cline{2-9}\\[-14.5pt]
+                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                \end{array}
+                \)
+                </latex-image>
+                </image>
+              </answer>
+              </task>
+              <task>
+                <statement>
+                <p>Now to rewrite <m>3x^2+5x+7</m> as <m>3x(x+1)+?</m>, place the product <m>3x(x+1)</m> below and subtract.</p>
+                <image xml:id="example-long-division-step-2" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp;  &amp;  &amp; &amp; 3 &amp; x &amp;  &amp; &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; ? &amp;  &amp; +  &amp; ? &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </statement>
+              <answer>
+                <image xml:id="example-long-division-step-3" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp; 3 &amp;x  &amp;  &amp; &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+              </answer>
+              </task>
 
- 
+              <task>
+                <statement>
+                  <p>Now focusing on <m>2x+7</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term as <m>2x+7</m>?</p>
+                  <image xml:id="example-long-division-step-4" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp;3  &amp;x &amp; + &amp;? &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </statement>
+                <answer>
+                  <image xml:id="example-long-division-step-5" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp; 3  &amp;x &amp; + &amp;2 &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </answer>
+              </task>
+              <task>
+                <statement>
+                  <p>Now, subtract <m>2(x+1)</m> to finish the long division.</p>
+                  <image xml:id="example-long-division-step-6" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp;3  &amp;x &amp; + &amp;2 &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  &amp; &amp; &amp; &amp; ? &amp;  &amp;+ &amp; ? &amp; \\
+                  \cline{5-9}
+                  &amp; &amp; &amp; &amp;  &amp;  &amp; &amp; ? &amp; \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </statement>
+                <answer>                  
+                <image xml:id="example-long-division-step-7" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp; 3 &amp;x &amp; + &amp; 2 &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  &amp; &amp; &amp; &amp; 2 &amp; x &amp;+ &amp; 2 &amp; \\
+                  \cline{5-9}
+                  &amp; &amp; &amp; &amp;  &amp;  &amp; &amp; 5 &amp; \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </answer>
+              </task>
+              <task>
+                <statement>
+                <p>This long division calculation has shown that <me>3x^2+5x+7 = (x+1)(3x+2)+5</me>.  
+                  Use this to rewrite <m>\frac{3x^2+5x+7}{x+1}</m> as a polynomial plus a proper rational function.</p>
+                </statement>
+                <answer>
+                  <p><m>\frac{3x^2+5x+7}{x+1} = 3x+2+\frac{5}{x+1}</m></p>
+                </answer>
+              </task>
+            </activity>
+      <remark>
+        <p>Note that in <xref ref="long-division-activity-1"/> and <xref ref="Long-Division-Intro-Steps"/> we performed the same computations, but just organized our work a little differently.</p>
+      </remark>
+
+      <activity>
+        <statement>
+          <p>Rewrite <m>\frac{x^2+1}{x-1}</m> as a polynomial plus a proper rational function.</p>
+        </statement>
+        <hint><p>Note that <m>x^2+1=x^2+0x+1</m>.</p></hint>
+        <answer><p><m>x+1+\frac{3}{x-1}</m>.</p></answer>
+      </activity>
+
+      <activity>
+        <statement>
+          <p>Rewrite <m>\frac{x^5+x^3+2x^2-6x+7}{x^2+x-1}</m> as a polynomial plus a proper rational function.</p> 
+        </statement>
+        <answer>
+          <p><m>x^3-x^2+3x-2+\frac{-x+5}{x^2+x-1}</m>.</p>
+        </answer>
+      </activity>
+
+      <activity>
+        <statement>
+          <p>Rewrite <m>\frac{3x^4-5x^2+2}{x-1}</m> as a polynomial plus a proper rational function.</p> 
+        </statement>
+        <answer><p><m>3x^3+3x^2-2x-2</m>.</p></answer>
+      </activity>
+      
 
     </subsection>
-    
+
     <exercises>
-      <p>Exercises available at <url href="https://teambasedinquirylearning.github.io/precalculus/2024/exercises/#/bank/PR4/"/>.</p>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR4/"/>. </p> 
     </exercises>
-
-
-    <subsection>
+    
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>
+

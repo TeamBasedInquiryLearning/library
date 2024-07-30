@@ -75,7 +75,7 @@
             </statement>
               <answer>
                 <p>
-                  Choices B and C
+                  B and C
                 </p>
               </answer>
           </task>
@@ -125,7 +125,7 @@
                 </statement>
                   <answer>
                     <p>
-                      Answers will vary.
+                      Answers will vary. Students should make sure that their sketch is a function.
                     </p>
                   </answer>
               </task>
@@ -199,7 +199,7 @@
       <task>
         <statement>
           <p>
-            What interval represents the domain you drew in part a?
+            What interval represents the domain you drew in part (a)?
             <ol marker= "A." cols="2">
               <li> <m>[4, -4]</m> </li>
               <li> <m>[-4, 4]</m> </li>
@@ -227,7 +227,7 @@
       <task>
         <statement>
           <p>
-            What interval represents the range you drew in part c?
+            What interval represents the range you drew in part (c)?
             <ol marker= "A." cols="2">
               <li> <m>(-5, 4)</m> </li>
               <li> <m>[-4, 4]</m> </li>
@@ -479,6 +479,11 @@
         Based on what you see on the graph, do you think this graph has any maxima or minima?
         </p>
         </statement>
+        <answer>
+          <p>
+            The intent here is for students to visually see there that the graph reaches a high point (i.e., the maximum). To extend this thinking, instructors could also ask students to draw a sketch (or discuss) when a graph would have a minimum.
+          </p>
+        </answer>
       </task>
     </activity>
 
@@ -496,13 +501,19 @@
     <definition xml:id="def-max-and-min">
       <statement>
         <p>
-          The <term>maximum value</term>, or <term>global maximum</term>, of a graph is the point where the <m>y</m>-coordinate has the largest value. The <term>minimum value</term>, or <term>global minimum</term> is the point on the graph where the <m>y</m>-coordinate has the smallest value.
+          The <term>maximum</term>, or <term>global maximum</term>, of a graph is the point where the <m>y</m>-coordinate has the largest value. The <term>minimum</term>, or <term>global minimum</term> is the point on the graph where the <m>y</m>-coordinate has the smallest value.
         </p>
         <p>
-          Graphs can also have <term>relative/local maximums</term> and <term>relative/local minimums</term>. A relative maximum point is a point where the function value (i.e, <m>y</m>-value) is larger than all others in some neighborhood around the point. Similarly, a relative minimum point is a point where the function value (i.e, <m>y</m>-value) is smaller than all others in some neighborhood around the point.
+          Graphs can also have <term>local maximums</term> and <term>local minimums</term>. A local maximum point is a point where the function value (i.e, <m>y</m>-value) is larger than all others in some neighborhood around the point. Similarly, a local minimum point is a point where the function value (i.e, <m>y</m>-value) is smaller than all others in some neighborhood around the point.
         </p>
       </statement>
     </definition>
+
+    <remark xml:id="difference-in-max-min-terminology">
+      <p>
+        Global extrema are sometimes referred to as absolute extrema, while local extrema are sometimes referred to as relative extrema. 
+      </p>
+    </remark>
 
     <activity xml:id="distinguish-between-max-and-min">
       <introduction>
@@ -539,7 +550,7 @@
       <task>
         <statement>
           <p>
-            What is the global maximum?
+            What is the global maximum value?
             <ol marker= "A." cols="2">
               <li> <m>10</m> </li>
               <li> <m>7</m> </li>
@@ -571,7 +582,7 @@
       <task>
         <statement>
           <p>
-            What is the global minimum?
+            What is the global minimum value?
             <ol marker= "A." cols="2">
               <li> <m>10</m> </li>
               <li> <m>7</m> </li>
@@ -587,12 +598,12 @@
       <task>
         <statement>
           <p>
-            At what value of <m>x</m> is there a local or relative maximum?
+            At approximately what value of <m>x</m> is there a local maximum?
             <ol marker= "A." cols="2">
-              <li> <m>x=-4</m> </li>
-              <li> <m>x=-2</m> </li>
-              <li> <m>x=2</m> </li>
-              <li> <m>x=5</m> </li></ol></p>
+              <li> <m>x \approx -4</m> </li>
+              <li> <m>x \approx -2</m> </li>
+              <li> <m>x \approx 2</m> </li>
+              <li> <m>x \approx 5</m> </li></ol></p>
         </statement>
         <answer>
           <p>
@@ -603,7 +614,7 @@
       <task>
         <statement>
           <p>
-            What is the local or relative maximum?
+            What is the local maximum value?
             <ol marker= "A." cols="2">
               <li> <m>10</m> </li>
               <li> <m>7</m> </li>
@@ -619,12 +630,12 @@
       <task>
         <statement>
           <p>
-            At what value of <m>x</m> is there a local or relative minimum?
+            At approximately what value of <m>x</m> is there a local minimum?
             <ol marker= "A." cols="2">
-              <li> <m>x=-4</m> </li>
-              <li> <m>x=-2</m> </li>
-              <li> <m>x=2</m> </li>
-              <li> <m>x=5</m> </li></ol></p>
+              <li> <m>x \approx -4</m> </li>
+              <li> <m>x \approx -2</m> </li>
+              <li> <m>x \approx 2</m> </li>
+              <li> <m>x \approx 5</m> </li></ol></p>
         </statement>
         <answer>
           <p>
@@ -635,7 +646,7 @@
       <task>
         <statement>
           <p>
-            What is the local or relative minimum?
+            What is the local minimum value?
             <ol marker= "A." cols="2">
               <li> <m>10</m> </li>
               <li> <m>7</m> </li>
@@ -651,7 +662,7 @@
     </activity>
 
     <remark>
-      Notice that in <xref ref="distinguish-between-max-and-min"/>, there are two ways we talk about max and min. We might want to know the location of where the max or min are (i.e., determining at which <m>x</m>-value the max or min occurs at) or we might want to know what the max or min are (i.e., the <m>y</m>-value). 
+      Notice that in <xref ref="distinguish-between-max-and-min"/>, there are two ways we talk about max and min. We might want to know the location of where the max or min are (i.e., determining at which <m>x</m>-value the max or min occurs at) or we might want to know what the max or min values are (i.e., the <m>y</m>-value). 
       <p> Also, note that in <xref ref="distinguish-between-max-and-min"/>, a local minimum is also a global minimum.
       </p>
     </remark>
@@ -678,7 +689,7 @@
       <ol marker= "A." cols="1">
         <li> <m>1</m> </li>
         <li> <m>0</m> </li>
-        <li> There is no relative minimum </li></ol></p>
+        <li> There is no local minimum </li></ol></p>
   </statement>
   <answer>
     <p>
@@ -690,11 +701,11 @@
 <task>
   <statement>
     <p>
-      What is the relative minimum of <m>f(x)</m>?
+      What is the local minimum of <m>f(x)</m>?
       <ol marker= "A." cols="1">
         <li> <m>1</m> </li>
         <li> <m>0</m> </li>
-        <li> There is no relative minimum </li></ol></p>
+        <li> There is no local minimum </li></ol></p>
   </statement>
   <answer>
     <p>
@@ -792,7 +803,7 @@
         </statement>
         <answer>
           <p>
-            <m>(-2,-0.5)U(2.25,\infty)</m>
+            <m>(-2,-0.5)\cup(2.25,\infty)</m>
           </p>
         </answer>
       </task>
@@ -804,7 +815,7 @@
         </statement>
         <answer>
           <p>
-            <m>(-0.5,2,25)</m>
+            <m>(-0.5,2.25)</m>
           </p>
         </answer>
       </task>
@@ -828,7 +839,7 @@
         </statement>
         <answer>
           <p>
-            At <m>x=-0,5</m>
+            <m>x=-0.5</m>
           </p>
         </answer>
       </task>
@@ -840,7 +851,7 @@
         </statement>
         <answer>
           <p>
-            At <m>x=2.25</m>
+            <m>x=2.25</m>
           </p>
         </answer>
       </task>
@@ -860,8 +871,12 @@
     
     </subsection>
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/FN3/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

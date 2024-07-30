@@ -34,12 +34,17 @@
             <li> <m>4(x-3)+7=0</m> </li>
             <li> <m>(x-4)^2+1=0</m> </li>
             <li> <m>5x^2-3x=17-4x</m> </li></ol></p>
+            <answer>
+              <p>
+                A, B, D, and E
+              </p>
+            </answer>
     </activity>
 
     <definition xml:id="def-zero-product-property">
       <statement>
         <p>
-          To solve a quadratic equation, we will need to apply the <term>zero product property</term>, which states that if <m>a*b=0</m>, then either <m>a=0</m> or <m>b=0</m>. In other words, you can only have a product of <m>0</m> if one (or both!) of the factors is <m>0</m>.
+          To solve a quadratic equation, we will need to apply the <term>zero product property</term>, which states that if <m>a \cdot b=0</m>, then either <m>a=0</m> or <m>b=0</m>. In other words, you can only have a product of <m>0</m> if one (or both!) of the factors is <m>0</m>.
         </p>
       </statement>
     </definition>
@@ -59,15 +64,25 @@
               <li> <m>3x^2-4=6x</m></li>
               <li> <m>x(3x+5)=0</m></li></ol></p>
         </statement>
+        <answer>
+          <p>
+            B and D
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
-          <p> Suppose you are given the quadratic equation, <m>(2x-1)(x-1)=0</m>. Applying <xref ref="def-zero-product-property"/>, would give you:
+          <p> Suppose you are given the quadratic equation, <m>(2x-1)(x-1)=0</m>. Applying <xref ref="def-zero-product-property"/> would give you:
             <ol marker= "A." cols="1">
               <li> <m>2x^2-3x+1=0</m> </li>
               <li> <m>(2x+1)=0</m> and <m>(x+1)=0</m> </li>
               <li> <m>(2x-1)=0</m> and <m>(x-1)=0</m></li></ol></p>
         </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
@@ -78,6 +93,11 @@
               <li> <m>x=-\frac{1}{2}</m> and <m>x=-1</m></li>
               <li> <m>x=\frac{1}{2}</m> and <m>x=1</m></li></ol></p>
         </statement>
+        <answer>
+          <p>
+            D 
+          </p>
+        </answer>
       </task>
     </activity>
 
@@ -102,6 +122,11 @@
               <li> <m>(2x+3)(x+4)=0</m></li>
               <li> <m>(2x-3)(x+4)=0</m></li></ol></p>
         </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
@@ -112,6 +137,11 @@
               <li> <m>x=-\frac{3}{2}</m> and <m>x=4</m></li>
               <li> <m>x=\frac{3}{2}</m> and <m>x=-4</m></li></ol></p>
         </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
       </task>
     </activity>
 
@@ -125,21 +155,41 @@
         <statement>
             <m>(2x-5)(x+7)=0</m>
         </statement>
+        <answer>
+          <p>
+            <m>x=\frac{5}{2}</m> and <m>x=-7</m>
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
           <m>3x(4x-1)=0</m>
     </statement>
+    <answer>
+      <p>
+        <m>x=0</m> and <m>x=\frac{1}{4}</m>
+      </p>
+    </answer>
     </task>
       <task>
         <statement>
           <m>3x^2-14x-5=0</m>
     </statement>
+    <answer>
+      <p>
+        <m>x=-\frac{1}{3}</m> and <m>x=5</m>
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
-        <m>6-x^2=3x</m>
+        <m>6-x^2=5x</m>
   </statement>
+  <answer>
+    <p>
+      <m>x=1</m> and <m>x=-6</m>
+    </p>
+  </answer>
   </task>
     </activity>
 
@@ -160,6 +210,11 @@
               <li> <m>3</m> </li></ol>
           </p>
         </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
@@ -168,10 +223,15 @@
             <ol marker= "A." cols="2">
               <li> <m>x=0</m> </li>
               <li> <m>x=3</m> </li>
-              <li> <m>x=3,-3</m> </li>
-              <li> <m>x=9,-9</m> </li></ol>
+              <li> <m>x=9,-9</m> </li>
+              <li> <m>x=3,-3</m> </li></ol>
           </p>
         </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
@@ -179,13 +239,18 @@
             How is this quadratic equation different than the equations we've solved thus far?
           </p>
         </statement>
+        <answer>
+          <p>
+            When solving for <m>x</m>, we have to consider both the positive and negative values.
+          </p>
+        </answer>
       </task>
     </activity>
     
     <definition xml:id="def-square-root-property">
       <statement>
         <p>
-          The <term>square root property</term> states that a quadratic equation of the form <m>x^2=k^2</m> (where <m>k</m> is a nonzero number) will give solutions <m>x=k</m> and <m>x=-k</m>.
+          The <term>square root property</term> states that a quadratic equation of the form <me>x^2=k^2</me> (where <m>k</m> is a nonzero number) will give solutions <m>x=k</m> and <m>x=-k</m>.
           <p>
             In other words, if we have an equation with a perfect square on one side and a number on the other side, we can take the square root of both sides to solve the equation.
           </p>
@@ -210,13 +275,23 @@
               <li>Multiply by <m>3</m> on both sides</li></ol>
           </p>
         </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
           <p>
-            Isolate the <m>x^2</m> term and apply <xref ref="def-square-root-property"/> solve for <m>x</m>.
+            Isolate the <m>x^2</m> term and apply <xref ref="def-square-root-property"/> to solve for <m>x</m>.
           </p>
         </statement>
+        <answer>
+          <p>
+            To continue to isolate the <m>x^2</m> term, the next step is to divide by <m>3</m> and then take the square root of both sides.
+          </p>
+        </answer> 
       </task>
       <task>
         <statement>
@@ -229,6 +304,11 @@
               <li><m>x=2</m></li></ol>
           </p>
         </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
       </task>
     </activity>
 
@@ -240,28 +320,63 @@
       </introduction>
       <task>
         <statement>
+        <m>3x^2+1=28</m>
+      </statement>
+      <answer>
+        <p>
+          <m>x=3,-3</m>
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
         <m>5x^2+7=47</m>
         </statement>
+        <answer>
+          <p>
+            <m>x=\sqrt{8},-\sqrt{8}</m> or <m>x \approx -2.828, 2.828</m>
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
         <m>2x^2=-144</m>
         </statement>
-      </task>
-      <task>
-        <statement>
-        <m>3x^2+1=25</m>
-      </statement>
+        <hint>
+          <p>
+            Recall that when you have a negative number under a square root, that gives an imaginary number <m>(\sqrt{-1}=i)</m>.
+          </p>
+        </hint>
+        <answer>
+          <p>
+           <m>x=\sqrt{72}i,-\sqrt{72}i</m> or in simplified form: <m>x=6\sqrt{2}i,-6\sqrt{2}i</m>
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
         <m>(x+2)^2+3=19</m>
       </statement>
+      <hint>
+        <p>
+          Isolate the binomial <m>(x+2)</m> first.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>x=2,-6</m>
+        </p>
+      </answer>
       </task>
       <task>
         <statement>
         <m>3(x-4)^2=15</m>
       </statement>
+      <answer>
+        <p>
+          <m>x=4+\sqrt{5},4-\sqrt{5}</m>
+        </p>
+      </answer>
       </task>
     </activity>
     
@@ -287,7 +402,7 @@
   <task>
     <statement>
       <p>
-        In order to apply <xref ref="def-completing-the-square"/>, we first need to have a perfect square trinomial on one side of the equals sign. Which of the following number(s) could we add to the left side of the equation to create a perfect square trinomial?
+        In order to apply <xref ref="def-completing-the-square"/>, we first need to have a perfect square trinomial on one side of the equal sign. Which of the following number(s) could we add to the left side of the equation to create a perfect square trinomial?
         <ol marker= "A." cols="2">
           <li><m>4</m></li>
           <li><m>9</m></li>
@@ -295,6 +410,11 @@
           <li><m>2</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -307,6 +427,11 @@
           <li><m>(x-3)^2=-5</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -319,6 +444,11 @@
           <li><m>-3+\sqrt{5}</m> and <m>-3-\sqrt{5}</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
   </task>
 </activity>
 
@@ -329,7 +459,7 @@
 <activity xml:id="complete-the-square-a-not-one">
   <introduction>
     <p>
-      Let's solve the equation <m>2x^2+8x-5=0</m> by completing the square.
+      Let's solve the equation <m>2x^2+8x-6=0</m> by completing the square.
     </p>
   </introduction>
   <task>
@@ -338,6 +468,11 @@
         Rewrite the equation so that all the terms with the variable <m>x</m> is on one side of the equation and a constant is on the other.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>2x^2+8x=6</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -345,18 +480,28 @@
         Notice that the coefficient of the <m>x^2</m> term is not <m>1</m>. What could we factor the left side of the equation by so that the coefficient of the <m>x^2</m> is <m>1</m>?
       </p>
     </statement>
+    <answer>
+      <p>
+        Factor the left side by <m>2</m>.
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
       <p>
         Once you factor the left side, what equation represents the equation you now have?
         <ol marker= "A." cols="2">
-          <li><m>2(x^2-8x)=-5</m></li>
-          <li><m>2(x^2-4x)=-5</m></li>
-          <li><m>2(x^2+4x)=5</m></li>
-          <li><m>2(x^2+8x)=5</m></li></ol>
+          <li><m>2(x^2-8x)=-6</m></li>
+          <li><m>2(x^2-4x)=-6</m></li>
+          <li><m>2(x^2+4x)=6</m></li>
+          <li><m>2(x^2+8x)=6</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -369,6 +514,11 @@
           <li><m>2</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -381,6 +531,11 @@
           <li><m>2</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B. Students may need help understanding that adding <m>4</m> to the right-hand side of the equation does not keep the equation balanced.
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -388,11 +543,16 @@
         Which of the following equation represents the quadratic equation you have now?
         <ol marker= "A." cols="2">
           <li><m>2(x+2)^2=9</m></li>
-          <li><m>2(x-2)^2=9</m></li>
-          <li><m>2(x+2)^2=13</m></li>
-          <li><m>2(x-2)^2=13</m></li></ol>
+          <li><m>2(x-2)^2=2</m></li>
+          <li><m>2(x+2)^2=14</m></li>
+          <li><m>2(x-2)^2=14</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -400,6 +560,11 @@
         Apply the square root property and solve the quadratic equation.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>x=-2+\sqrt{7}, -2-\sqrt{7}</m>
+      </p>
+    </answer>
   </task>
 </activity>
 
@@ -413,16 +578,31 @@
     <statement>
     <m>x^2-12x=-11</m>
   </statement>
+  <answer>
+    <p>
+      <m>x=1,11</m>
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
     <m>x^2+2x-33=0</m>
   </statement>
+  <answer>
+    <p>
+      <m>x=-1+\sqrt{34},-1-\sqrt{34}</m>
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
-    <m>4x^2+16x=65</m>
+    <m>5x^2+29x=6</m>
   </statement>
+  <answer>
+    <p>
+      <m>x=-6, \frac{1}{5}</m>
+    </p>
+  </answer>
   </task>
 </activity>
 
@@ -447,6 +627,11 @@
         When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>a=1, b=4,</m> and <m>c=3</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -459,6 +644,11 @@
           <li><m>x=\frac{4\pm\sqrt{4^2-4(1)(-3)}}{2(1)}</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -471,6 +661,11 @@
           <li><m>x=1,-3</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
   </task>
 </activity>
 
@@ -486,6 +681,11 @@
         When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>a=2, b=-7,</m> and <m>c=-13</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -498,6 +698,11 @@
           <li><m>x=\frac{7\pm\sqrt{7^2-4(2)(-13)}}{2(2)}</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -505,11 +710,16 @@
         What is the solution(s) to <m>2x^2-13=7x</m>?
         <ol marker= "A." cols="1">
           <li><m>x=\frac{7+\sqrt{73}}{4}</m> and <m>\frac{7-\sqrt{73}}{4}</m></li>
-          <li><m>x=\frac{7+\sqrt{101}}{4}</m> and <m>\frac{-7-\sqrt{101}}{4}</m></li>
+          <li><m>x=\frac{7+\sqrt{153}}{4}</m> and <m>\frac{-7-\sqrt{153}}{4}</m></li>
           <li><m>x=\frac{-7+\sqrt{55}}{4}</m> and <m>\frac{7-\sqrt{55}}{4}</m></li>
           <li><m>x=\frac{-7+\sqrt{155}}{4}</m> and <m>\frac{-7-\sqrt{155}}{4}</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
   </task>
 </activity>
 
@@ -525,6 +735,11 @@
         When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>a=1, b=-6,</m> and <m>c=12</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -537,11 +752,16 @@
           <li><m>x=\frac{6\pm\sqrt{6^2-4(1)(-12)}}{2(1)}</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
       <p>
-        Notice that the number under the square root is a negative. Recall that when you have a negative number under a square root, that gives an imaginary number (<m>\sqrt{-1}=i</m>. What is the solution(s) to <m>x^2=6x-12</m>?
+        Notice that the number under the square root is a negative. Recall that when you have a negative number under a square root, that gives an imaginary number <m>(\sqrt{-1}=i)</m>. What is the solution(s) to <m>x^2=6x-12</m>?
         <ol marker= "A." cols="1">
           <li><m>x=3+i\sqrt{3}</m> and <m>3-i\sqrt{3}</m></li>
           <li><m>x=6+i\sqrt{12}</m> and <m>6-i\sqrt{12}</m></li>
@@ -549,6 +769,11 @@
           <li><m>x=-6+i\sqrt{12}</m> and <m>-6-i\sqrt{12}</m></li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
   </task>
 </activity>
 
@@ -562,21 +787,41 @@
     <statement>
     <m>2x^2-3x=5</m>
   </statement>
+  <answer>
+    <p>
+      <m>x=-1,\frac{5}{2}</m>
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
     <m>4x^2-1=-8x</m>
     </statement>
+    <answer>
+      <p>
+        <m>x=\frac{-2+\sqrt{5}}{2}, \frac{-2-\sqrt{5}}{2}</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
     <m>2x^2-7x-13=-10</m>
     </statement>
+    <answer>
+      <p>
+        <m>x=\frac{7+\sqrt{73}}{4}, \frac{7-\sqrt{73}}{4}</m>
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
     <m>x^2-6x+12=0</m>
     </statement>
+    <answer>
+      <p>
+        <m>x=3+i\sqrt{3}, 3-i\sqrt{3}</m>
+      </p>
+    </answer>
   </task>
 </activity>
 
@@ -597,6 +842,11 @@
           <li>Quadratic Formula</li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -609,6 +859,11 @@
           <li>Quadratic Formula</li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        C or D
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -621,6 +876,11 @@
           <li>Quadratic Formula</li></ol>
       </p>
     </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
   </task>
   <task>
     <statement>
@@ -628,12 +888,22 @@
         Go back to parts <m>a</m>, <m>b</m>, and <m>c</m> and solve each of the quadratic equations. Would you still use the same method?
       </p>
     </statement>
+    <answer>
+      <p>
+        Answers will vary. It is important, though, for students to look at the overall structure to help them determine which method might be the best method to use and then discuss their reasons why with their peers.
+      </p>
+    </answer>
   </task>
 </activity>
 
   </subsection>
-    <subsection>
+
+  <exercises>
+    <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ5/"/>. </p> 
+  </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

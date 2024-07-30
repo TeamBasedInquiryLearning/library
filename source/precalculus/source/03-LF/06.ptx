@@ -28,7 +28,7 @@
   <task>
     <statement>
       <p>
-        Let <m>c</m> represent the cost of a child's admission and <m>a</m> the cost of an adult admission.  Write an equation to represent the total cost for 4 children and 2 adults.
+        Let <m>c</m> represent the cost of a child's admission and <m>a</m> the cost of an adult admission.  Write an equation to represent the total cost for <m>4</m> children and <m>2</m> adults.
       </p>
       <p>
         <ol marker="A." cols="1">
@@ -41,14 +41,14 @@
     </statement>
     <answer>
       <p>
-        C: <m>4c+2a=128.50</m>
+        C
       </p>
     </answer>
   </task>
   <task>
     <statement>
       <p>
-        Now write an equation to represent the total cost for 6 children and 4 adults.
+        Now write an equation to represent the total cost for <m>6</m> children and <m>4</m> adults.
       </p>
       <p>
         <ol marker="A." cols="1">
@@ -61,7 +61,7 @@
     </statement>
     <answer>
       <p>
-        A: <m>6c+4a=208</m>
+        A
       </p>
     </answer>
   </task>
@@ -80,7 +80,7 @@
     </statement>
     <answer>
       <p>
-        B: <m>c=\$24.50</m> and <m>a=\$15.25</m>
+        B
       </p>
     </answer>
   </task>
@@ -94,23 +94,20 @@
     </p>
   </statement>
 </definition>
+
 <activity xml:id="LF4-solution-to-system">
-  <introduction>
-    <p>
+  <introduction> 
+  <p>
       Consider the following system of equations.
   <me> \begin{cases}
    y=2x+4\\
     3x+2y=1
   \end{cases}</me>
-    </p>
-  </introduction>
-  
-  <task>
-    <statement>
+  </p>
       <p>
         Which of the ordered pairs is a solution to the system?
-
       </p>
+  </introduction> 
       <p>
         <ol marker="A." cols="2">
           <li><p> <m>(3,10)</m></p></li>
@@ -118,18 +115,17 @@
           <li><p> <m>(1,-1)</m></p></li>
           <li><p> <m>(-1,2)</m></p></li>
       </ol> </p>
-    </statement>
     <answer>
       <p>
-        D: <m> (-1,2) </m>
+        D
       </p>
     </answer>
-  </task>
-  
 </activity>
+
 <remark>
   While we can test points to determine if they are solutions, it is not feasible to test every possible point to find a solution. We need a method to solve a system.
 </remark>
+
 <activity xml:id="LF4-system-graph">
   <introduction>
     <p>
@@ -146,32 +142,64 @@
       Rewrite the first equation in terms of <m>y</m>.
     </p>
   </statement>
+  <answer>
+    <p>
+      <m>y=3x-2</m>
+    </p>
+  </answer>
 </task>
+
 <task>
   <statement>
     <p>
       Rewrite the second equation in terms of <m>y</m>.
     </p>
   </statement>
+  <answer>
+    <p>
+      <m>y=\frac{-x+5}{4}</m>
+    </p>
+  </answer>
 </task>
+
   <task>
   <statement>
     <p>
       Graph the two equations on the same set of axes. Where do the lines intersect?
     </p>
   </statement>
+  <answer>
+    <p>
+      <image>
+        <sageplot>
+          p=plot(3*x-2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]])
+          p+=plot(-0.25*x+1.25,(x,-5,5),thickness=3, color='red')
+          p
+        </sageplot>
+      </image>
+    </p>
+    The point of intersection is <m>(1,1)</m>.
+  </answer>
 </task>
+
 <task>
   <statement>
     <p>
       Check that the point of intersection of the two lines is a solution to the system of equations.
     </p>
   </statement>
+  <answer>
+    <p>
+      To check to see if the point of intersection is a solution, plug in <m>1</m> in for <m>x</m> and <m>1</m> in for <m>y</m> into BOTH equations.  
+    </p>
+  </answer>
 </task>
   </activity>
+
   <remark>
     Sometimes it is difficult to determine the exact intersection point of two lines using a graph. Let's explore another possible method for solving a system of equations.
   </remark>
+ 
   <activity xml:id="LF4-system-sub">
     <introduction>
       <p>
@@ -188,7 +216,20 @@
           Graph the two equations on the same set of axes.  Is it possible to determine exactly where the lines intersect?
         </p>
       </statement>
+      <answer>
+        <p>
+          <image>
+            <sageplot>
+              p=plot(-3*x+4,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]])
+              p+=plot((-1/3)*x+(10/3),(x,-5,5),thickness=3, color='red')
+              p
+            </sageplot> 
+          </image>
+        </p>
+        The point of intersection is not at a "nice" point, making it hard to see exactly where it is.
+      </answer>
     </task>
+
     <task>
       <statement>
         <p>
@@ -204,10 +245,11 @@
       </statement>
       <answer>
         <p>
-          B: <m>x+3(4-3x)=10</m>
+          B
         </p>
       </answer>
     </task>
+
     <task>
       <statement>
         <p>
@@ -220,14 +262,14 @@
             <li><p> <m>x=\frac{7}{3}</m></p></li>
             <li><p> <m>x=0</m></p></li>
         </ol> </p>
-        
       </statement>
       <answer>
         <p>
-          B: <m>x=\frac{1}{4}</m>
+          B
         </p>
       </answer>
     </task>
+
     <task>
       <statement>
         <p>
@@ -243,15 +285,11 @@
       </statement>
       <answer>
         <p>
-          B: <m>y=\frac{13}{4}</m>
+          B
         </p>
       </answer>
     </task>
-    <answer>
-      <p>
-        B: <m>y=\frac{13}{4}</m>
-      </p>
-    </answer>
+
     <task>
       <statement>
         <p>
@@ -259,6 +297,11 @@
           (the found values of <m>x</m> and <m>y</m>) as an ordered pair.
         </p>
       </statement>
+      <answer>
+        <p>
+          <m>(0.25, 3.25)</m>
+        </p>
+      </answer>
     </task>
 
     </activity>
@@ -281,7 +324,6 @@
           </p>
         </li>
       </ol>
-
     </remark>
 
     <activity xml:id="LF4-sub-practice">
@@ -300,9 +342,11 @@
           </p>
         </answer> 
     </activity>
+    
     <remark>
       While the substitution method will always work, sometimes the resulting equations will be difficult to solve.  Let's explore a third method for solving a system of two linear equations with two variables.
     </remark>
+    
     <activity xml:id="elimination">
       <introduction>
         <p>
@@ -328,10 +372,11 @@
         </statement>
         <answer>
           <p>
-           D: <m>8x=49</m>
+           D
           </p>
         </answer>
       </task>
+
       <task>
         <statement>
           <p>
@@ -347,7 +392,7 @@
         </statement>
         <answer>
           <p>
-            D: <m>x=\frac{49}{8}</m>
+            D
           </p>
         </answer>
 
@@ -364,8 +409,8 @@
           </p>
         </answer>
       </task>
-      
     </activity>
+    
     <remark>
       This method of solving a system of equations is referred to as the <term>Elimination Method</term>. 
       <ol>
@@ -386,6 +431,7 @@
         </li>
       </ol>
     </remark>
+    
     <activity xml:id="elimination-practice">
       <statement>
         <p>
@@ -401,7 +447,6 @@
             <m>\left(-\frac{41}{7} ,-11 \right)</m>
           </p>
         </answer>
-      
     </activity>
 
     <activity xml:id="elimination-multiply">
@@ -415,6 +460,7 @@
           Notice that if you simply add the two equations together, it will not eliminate a variable. Substitution will also be difficult since it involves fractions.
         </p>
       </introduction>
+      
       <task>
         <statement>
           <p>
@@ -430,10 +476,11 @@
         </statement>
         <answer>
           <p>
-           B: Multiply the second equation by <m>2</m> and the <m>x</m> will cancel
+           B
           </p>
         </answer>
       </task>
+
       <task>
         <statement>
           <p>
@@ -449,10 +496,11 @@
         </statement>
         <answer>
           <p>
-            B: <m>-14y=14</m>
+            B
           </p>
         </answer>
       </task>
+
       <task>
         <statement>
           <p>
@@ -468,11 +516,12 @@
         </statement>
         <answer>
           <p>
-            C: <m>(3,1)</m>
+            C
           </p>
         </answer>
       </task>
     </activity>
+    
     <activity xml:id="systems-best-method">
       <introduction>
         <p>
@@ -496,10 +545,11 @@
         </statement>
         <answer>
           <p>
-            B: Substitution
+            B
           </p>
         </answer>
       </task>
+
       <task>
         <statement>
           <p>
@@ -517,10 +567,11 @@
         </statement>
         <answer>
           <p>
-            A: Graphical
+            A
           </p>
         </answer>
       </task>
+
       <task>
         <statement>
           <p>
@@ -538,10 +589,11 @@
         </statement>
         <answer>
           <p>
-           C: Elimination
+           C
           </p>
         </answer>
       </task>
+
     </activity>
     <activity xml:id="systems-practice">
         <statement> 
@@ -551,20 +603,25 @@
         <answer>
           <p>
             (a) <m>(-4,4)</m> 
-
+          </p>
+          <p>
             (b) <m>(3,6)</m>
-
+          </p>
+          <p>
             (c) <m>(11,-1)</m>
           </p>
         </answer>
-      
     </activity>
-
+ 
     </subsection>
     
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/LF6/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

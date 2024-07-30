@@ -20,7 +20,7 @@
     <p>
       Let's begin by revisiting the carnival admission problem from <xref ref="LF6"/>. </p>
       <p>
-       Admission into a carnival for 4 children and 2 adults is $128.50.  For 6 children and 4 adults, the admission is $208. Assuming a different price for children and adults, what is the price of the child's admission and the price of the adult admission?
+       Admission into a carnival for <m>4</m> children and <m>2</m> adults is <m>\$128.50</m>.  For <m>6</m> children and <m>4</m> adults, the admission is <m>\$208</m>. Assuming a different price for children and adults, what is the price of the child's admission and the price of the adult admission?
     </p>
   </introduction>
 
@@ -51,13 +51,11 @@
   </statement>
   <answer>
     <p>
-      C: <m>\begin{cases}
-        4x+2y=128.50\\
-         6x+4y=208
-       \end{cases}</m>
+      C
     </p>
   </answer>
 </task>
+
 <task>
   <statement>
     <p>
@@ -73,7 +71,7 @@
   </statement>
   <answer>
     <p>
-      C: <m>(24.5, 15.25)</m>
+      C
     </p>
   </answer>
 
@@ -90,12 +88,12 @@
     </p>
   </answer>
 </task>
-
 </activity>
+
 <activity xml:id="LF7-candy-mix">
   <introduction>
     <p> Let's revisit another application we've encountered before in <xref ref="EQ2"/>, <xref ref="activity-la-candymixture"/>.</p>
-    <p> Ammie's favorite snack to share with friends is candy salad, which is a mixture of different types of candy. Today she chooses to mix Nerds Gummy Clusters, which cost $8.38 per pound, and Starburst Jelly Beans, which cost <m>\$7.16</m> per pound. If she makes seven pounds of candy salad and spends a total of <m>\$55.61</m>, how many pounds of each candy did she buy?   </p>
+    <p> Ammie's favorite snack to share with friends is candy salad, which is a mixture of different types of candy. Today she chooses to mix Nerds Gummy Clusters, which cost <m>\$8.38</m> per pound, and Starburst Jelly Beans, which cost <m>\$7.16</m> per pound. If she makes seven pounds of candy salad and spends a total of <m>\$55.61</m>, how many pounds of each candy did she buy?   </p>
   </introduction>
   <task> 
       <statement>
@@ -124,10 +122,7 @@
       </statement>
       <answer>
         <p>
-          B: <m>\begin{cases}
-            N+S=7 \\
-            8.38N+7.16S=55.61
-           \end{cases}</m>
+          B
         </p>
       </answer>
     </task>
@@ -147,7 +142,7 @@
       </statement>
       <answer>
         <p>
-          C: Ammie bought <m>4.5</m> lbs of Nerds Gummy Clusters and <m>2.5</m> lbs of Starburst Jelly Beans.
+          C
         </p>
       </answer>
     </task>
@@ -185,13 +180,11 @@
     </statement>
     <answer>
       <p>
-        D: <m>\begin{cases}
-          w+h=104000 \\
-          w=2h-16000
-         \end{cases}</m>
+        D
       </p>
     </answer>
   </task>
+
   <task>
     <statement>
       <p>
@@ -203,23 +196,22 @@
           <li>The wife earns <m>\$40{,}000</m>.</li>
           <li>The wife earns <m>\$64{,}000</m>.</li>
           <li>The wife earns <m>\$74{,}600</m>.</li>
-
         </ol>
       </p>
     </statement>
     <answer>
       <p>
-        C: <m>\$64{,}000</m>
+        C
       </p>
     </answer>
   </task>
 </activity>
+
 <activity>
   <statement>
     <p>
       Kenneth currently sells suits for Company A at a salary of  <m>\$22{,}000</m>  plus a  <m>\$10</m>  commission for each suit sold. Company B offers him a position with a salary of <m>\$28{,}000</m>  plus a  <m>\$4</m>  commission for each suit sold. How many suits would Kenneth need to sell for the options to be equal?
     </p>
-
     <p>
     Set-up and solve a system of equations to represent the situation.
         </p>
@@ -231,16 +223,19 @@
            y=4x+28000
            \end{cases}</me>
 
-          1000 suits
+          <m>1000</m> suits
         </p>
       </answer>
-
 </activity>
 
     </subsection>
 
-    <subsection>
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/LF7/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>

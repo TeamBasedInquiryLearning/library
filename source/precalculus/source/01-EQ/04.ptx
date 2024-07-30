@@ -30,6 +30,11 @@
             <li><p> <m>x=-2</m></p></li>
         </ol> </p>
         </statement>
+        <answer>
+          <p>
+            A and D
+          </p>
+        </answer>
       </task>
       <task>
         <statement>
@@ -41,6 +46,11 @@
             <li><p> <m>x=-9</m></p></li>
         </ol> </p>
       </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
       </task>
       <task>
         <statement>
@@ -52,12 +62,17 @@
             <li><p> <m>x=9</m></p></li>
         </ol> </p>
       </statement>
+      <answer>
+        <p>
+          C and D
+        </p>
+      </answer>
       </task>
       
     </activity>
     <activity>
       <introduction>
-        <p>Absolute value represents the distance a value is from 0 on the number line. So, <m>\lvert x-7 \rvert = 2</m> means that the expression <m>x-7</m> is 2 units away from 0. 
+        <p>Absolute value represents the distance a value is from 0 on the number line. So, <m>\lvert x-7 \rvert = 2</m> means that the expression <m>x-7</m> is <m>2</m> units away from <m>0</m>. 
         </p>
       </introduction>
       <task>
@@ -71,6 +86,11 @@
             <li><p> <m>x=7</m></p></li>
         </ol> </p>
       </statement>
+      <answer>
+        <p>
+          B and D
+        </p>
+      </answer>
       </task>
       <task>
         <statement>
@@ -83,12 +103,22 @@
             <li><p> <m>x-7=7</m></p></li>
         </ol> </p>
       </statement>
+      <answer>
+        <p>
+          B and D
+        </p>
+      </answer>
       </task>
       <task>
         <statement>
         <p> Solve each equation for <m>x</m>.
           </p>
       </statement>
+      <answer>
+        <p>
+          <m>x=-5</m> and <m>x=9</m>
+        </p>
+      </answer>
       </task>
       
     </activity>
@@ -117,6 +147,11 @@
         <li><p> No solution</p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -128,6 +163,11 @@
         <li><p> No solution</p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -139,6 +179,11 @@
         <li><p> No solution</p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
   </task>
 </activity>
 <remark>
@@ -159,6 +204,11 @@
             <li><p> <m>x=-9</m></p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      A, B and C
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -170,6 +220,11 @@
             <li><p> <m>2 \le x \le 7</m></p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
@@ -181,6 +236,11 @@
             <li><p> <m>[2,7]</m></p></li>
     </ol> </p>
   </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
   </task>
   
   <task>
@@ -247,6 +307,11 @@
 </ol> </p>
 
 </statement>
+<answer>
+  <p>
+    B
+  </p>
+</answer>
 </task>
   </activity>
 
@@ -265,6 +330,11 @@
               <li><p> <m>x=-9</m></p></li>
       </ol> </p>
     </statement>
+    <answer>
+      <p>
+        A, C and D
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -276,6 +346,11 @@
               <li><p> <m>x-7 \ge -2</m></p></li>
       </ol> </p>
     </statement>
+    <answer>
+      <p>
+        B and C
+      </p>
+    </answer>
     </task>
     <task>
       <statement>
@@ -343,6 +418,11 @@
           </p></li>
       </ol> </p>
     </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
     </task>
     </activity>
 <definition xml:id="def-absineq">
@@ -351,7 +431,7 @@
 
       <m>\lvert x \rvert \lt k \text{ becomes } -k \lt x \lt k</m>. 
 
-      <m>\lvert x \rvert \gt k \text{ becomes } x\gt k \text{ and } x\lt-k</m>.
+      <m>\lvert x \rvert \gt k \text{ becomes } x\gt k \text{ or } x\lt-k</m>.
     </p>
 </definition>
 <activity>
@@ -364,21 +444,61 @@
     <p> <m>\lvert 3x+4 \rvert \lt 10</m>
     </p>
   </statement>
+  <answer>
+    <p>
+      <m>-\dfrac{14}{3} \lt x \lt 2</m>, <m>\left( -\dfrac{14}{3}, 2 \right)</m>
+      <image>
+        <sageplot>
+          P = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+          for i in range(-9,10):
+            P += line([(i,-0.2),(i,0.2)],color="black")
+            P += text(f"${i}$", (i,-0.6),color="black")
+          P+= line([(-14/3,0),(2,0)],color="#0088ff", thickness=3)
+          P += text("(", (-14/3,0), color="#0088ff", fontsize=16)
+          P += text(")", (2,0), color="#0088ff", fontsize=16)
+          P.axes(False)
+          P
+        </sageplot>
+      </image>
+    </p>
+  </answer>
   </task>
   <task>
     <statement>
     <p> <m>3\lvert x-7 \rvert+5 \gt 11</m>
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>x \lt 5</m> and <m>x \gt 9</m>, <m>(-\infty, 5) \cup (9, \infty)</m>
+        <image>
+          <sageplot>
+            P = arrow((-5,0),(15,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+            for i in range(-5,15):
+              P += line([(i,-0.2),(i,0.2)],color="black")
+              P += text(f"${i}$", (i,-0.6),color="black")
+            P+= arrow((5,0),(-5,0),color="#0088ff", width=3,arrowsize=3)
+            P+= arrow((9,0),(15,0),color="#0088ff", width=3,arrowsize=3)
+            P += text(")", (5,0), color="#0088ff", fontsize=16)
+            P += text("(", (9,0), color="#0088ff", fontsize=16)
+            P.axes(False)
+            P
+          </sageplot>
+        </image>
+      </p>
+    </answer>
   </task>
 
 </activity>
 
     </subsection>
 
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ4/"/>. </p> 
+    </exercises>
 
-    <subsection>
+    <!-- <subsection>
         <title>Videos</title>
         <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection>
+    </subsection> -->
 </section>
