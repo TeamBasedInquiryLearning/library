@@ -66,13 +66,14 @@
                 of <m>x^3</m> is negative infinity</q> and that <q>the limit as
                 <m>x</m> tends to positive infinity of <m>x^3</m> is positive
                 infinity.</q> In symbols, we write
+                <me>
+                    \lim_{x \to \infty} x^3  = \infty
+                </me>
+                and
+                <me>
+                    \lim_{x \to -\infty} x^3 = -\infty
+                </me>.
             </p>
-            <me>
-                \begin{align}
-                    \lim_{x \to \infty} x^3   \amp = \infty \\
-                    \lim_{x \to -\infty} x^3 \amp = -\infty.
-                \end{align}
-            </me>
         </remark>
 
         <activity xml:id="LT5-infinity-inutition2">
