@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="FN6" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Finding the Inverse Function (FN6) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/06.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    <remark>
+      A function is a process that converts a collection of inputs to a corresponding collection of outputs. One question we can ask is: for a particular function, can we reverse the process and  think of the original function's outputs as the inputs? 
+    </remark>
+    <activity xml:id="activity-temp-conversion">
+      <introduction>
+        <p> Temperature can be measured using many different units such as Fahrenheit, Celsius, and Kelvin.  Fahrenheit is what is usually reported on the news each night in the United States, while Celsius is commonly used for scientific work. We will begin by converting between these two units.
+      
+          To convert from degrees Fahrenheit to Celsius use the following formula.
+          <me>C=\frac{5}{9} (F-32)</me>
+      </p>
+        
+      </introduction>
+      
+      <task>
+        <statement>
+          <p> Room temperature is around <m>68</m> degrees Fahrenheit.  Use the above equation to convert this temperature to Celsius.
+        <ol marker= "A." cols="2">  
+        <li> <m>5.8</m></li>
+        <li> <m>20</m></li>
+        <li> <m>155.4</m></li>
+        <li> <m>293</m></li>
+      </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Solve the equation <m>C=\frac{5}{9} (F-32)</m> for <m>F</m> in terms of <m>C</m>.
+        <ol marker= "A." cols="1">  
+        <li> <m>F=\frac{5}{9} C + 32</m></li>
+        <li> <m>F=\frac{5}{9} C - 32</m> </li>
+        <li> <m>F=\frac{9}{5}( C + 32)</m> </li>
+        <li> <m>F=\frac{9}{5} C + 32</m> </li> 
+      </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+      </task>
+    
+      <task>
+        <statement>
+          <p> Alternatively, <m>20</m> degrees Celsius is a fairly comfortable temperature.  Use your solution for <m>F</m> in terms of <m>C</m> to convert this temperature to Fahrenheit.
+        <ol marker= "A." cols="2">  
+        <li> <m>43.1</m></li>
+        <li> <m>-20.9</m></li>
+        <li> <m>93.6</m></li>
+        <li> <m>68</m></li>
+      </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+      </task>
+      
+  </activity>
+  <remark>
+    Notice that when you converted <m>68</m> degrees Fahrenheit, you got a value of <m>20</m> degrees Celsius. Alternatively, when you converted <m>20</m> degrees Celsius, you got <m>68</m> degrees Fahrenheit. This indicates that the equation you were given for <m>C</m> and the equation you found for <m>F</m> are inverses.
+  </remark>
+  <definition xml:id="def-inverse-function">
+    <statement>
+      <p>
+        Let <m>f</m> be a function.  If there exists a function <m>g</m> such that
+        <me>
+          f(g(x))=x \quad \text{and} \quad g(f(x))=x
+        </me>
+        for all <m>x</m>, then we say <m>f</m> has an <term>inverse function</term>, or that <m>g</m> is the <term>inverse of</term> <m>f</m>.
+
+        When a given function <m>f</m> has an inverse function, we usually denote it as <m>f^{-1}</m>, which is read as "<m>f</m> inverse".
+      </p>
+    </statement>
+  </definition>
+  <remark>
+    An inverse is a function that "undoes" another function. For any input in the domain, the function <m>g</m> will reverse the process of <m>f</m>.
+  </remark>
+  <activity xml:id="activity-inverse-exist">
+    <introduction>
+      <p> It is important to note that in  <xref ref="def-inverse-function" /> we say "if there exists a function," but we don't guarantee that this is always the case. How can we determine whether a function has a corresponding inverse or not?
+
+        Consider the following two functions <m>f</m> and <m>g</m> represented by the tables.
+        <table xml:id="table-not-func">
+          <tabular>
+                 <row header="yes" bottom="minor" >
+                     <cell><m>x</m></cell> 
+                     <cell><m>f(x)</m></cell>
+                 </row>
+                 <row>
+                  <cell><m>0</m></cell>
+                  <cell> <m>6</m> </cell>
+              </row>
+            <row>
+                     <cell><m>1</m></cell>
+                     <cell> <m>4</m> </cell>
+                 </row>
+                 <row>
+                     <cell><m>2</m></cell>
+                     <cell> <m>3</m> </cell>
+                 </row>
+                 <row>
+                     <cell><m>3</m></cell>
+                     <cell> <m>4</m> </cell>
+                 </row>
+                 <row>
+                     <cell><m>4</m></cell>
+                     <cell> <m>6</m> </cell>
+                 </row>
+             </tabular>
+     </table>
+
+     <table xml:id="table-func">
+      <tabular>
+             <row header="yes" bottom="minor" >
+                 <cell><m>x</m></cell> 
+                 <cell><m>g(x)</m></cell>
+             </row>
+             <row>
+              <cell><m>0</m></cell>
+              <cell> <m>3</m> </cell>
+          </row>
+        <row>
+                 <cell><m>1</m></cell>
+                 <cell> <m>1</m> </cell>
+             </row>
+             <row>
+                 <cell><m>2</m></cell>
+                 <cell> <m>4</m> </cell>
+             </row>
+             <row>
+                 <cell><m>3</m></cell>
+                 <cell> <m>2</m> </cell>
+             </row>
+             <row>
+                 <cell><m>4</m></cell>
+                 <cell> <m>0</m> </cell>
+             </row>
+         </tabular>
+ </table>
+    </p>
+
+      
+    </introduction>
+    
+    <task>
+      <statement>
+        <p> Use the definition of <m>g(x)</m> in <xref ref="table-func" /> to find an <m>x</m> such that <m>g(x)=4</m>.
+      <ol marker= "A." cols="1">  
+      <li> <m>x=0</m></li>
+      <li> <m>x=1</m></li>
+      <li> <m>x=2</m></li>
+      <li> <m>x=3</m></li> 
+      <li> <m>x=4</m></li> 
+    </ol>
+    </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is it possible to reverse the input and output rows of the function <m>g(x)</m> and have the new table result in a function?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Yes. If you reverse the input and output values, you will see that every input goes to exactly one output (which defines a function).
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Use the definition of <m>f(x)</m> in <xref ref="table-not-func" /> to find an <m>x</m> such that <m>f(x)=4</m>.
+      <ol marker= "A." cols="1">  
+      <li> <m>x=0</m></li>
+      <li> <m>x=1</m></li>
+      <li> <m>x=2</m></li>
+      <li> <m>x=3</m></li> 
+      <li> <m>x=4</m></li> 
+    </ol>
+    </p>
+    </statement>
+    <answer>
+      <p>
+        B and D
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is it possible to reverse the input and output rows of the function <m>f(x)</m> and have the new table result in a function?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If you reverse the input and output values, the resulting table is NOT a function. This is because the new input <m>x=4</m> will be mapping onto two <m>y</m>-values (<m>1</m> and <m>3</m>).
+        </p>
+      </answer>
+    </task>
+    
+  </activity>
+  <remark xml:id="remark-invert"> 
+    Some functions, like <m>f(x)</m> in <xref ref="table-not-func" />, have a given output value that corresponds to two or more input values: <m>f(0)=6</m> and <m>f(4)=6 </m>. If we attempt to reverse the process of this function, we have a situation where the new input <m>6</m> would correspond to two potential outputs.
+  </remark>
+  
+  <definition xml:id="def-one-to-one">
+    <statement>
+      <p>
+        A <term>one-to-one function</term> is a function in which each output value corresponds to exactly one input.
+      </p>
+    </statement>
+  </definition>
+
+  <remark>
+    A function must be one-to-one in order to have an inverse.
+  </remark>
+  
+  <activity xml:id="activity-inverse-operations">
+    <introduction>
+      <p> Consider the function <m>f(x)=\dfrac{x-5}{3}</m>.
+    </p>
+      
+    </introduction>
+    
+    <task>
+      <statement>
+        <p> When you evaluate this expression for a given input value of <m>x</m>, what operations do you perform and in what order?
+      <ol marker= "A." cols="1">  
+      <li> divide by <m>3</m>, subtract <m>5</m></li>
+      <li> subtract <m>5</m>, divide by <m>3</m></li>
+      <li> add <m>5</m>, multiply by <m>3</m></li>
+      <li> multiply by <m>3</m>, add <m>5</m></li> 
+    </ol>
+    </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p> When you "undo" this expression to solve for a given ouput value of <m>y</m>, what operations do you perform and in what order?
+      <ol marker= "A." cols="1">  
+      <li> divide by <m>3</m>, subtract <m>5</m></li>
+      <li> subtract <m>5</m>, divide by <m>3</m></li>
+      <li> add <m>5</m>, multiply by <m>3</m></li>
+      <li> multiply by <m>3</m>, add <m>5</m></li> 
+    </ol>
+    </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p> This set of operations reverses the process for the original function, so can be considered the inverse function.  Write an equation to express the inverse function <m>f^{-1}</m>.
+      <ol marker= "A." cols="1">  
+      <li> <m>f^{-1}(x)=\frac{x}{3}-5</m></li>
+      <li> <m>f^{-1}(x)=\frac{x-5}{3}</m></li>
+      <li> <m>f^{-1}(x)=5(x+3)</m></li>
+      <li> <m>f^{-1}(x)=3x+5</m></li> 
+    </ol>
+    </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Check your answer to the previous question by finding <m>f(f^{-1}(x))</m> and <m>f^{-1}(f(x))</m>.
+        </p>
+        </statement>
+        <answer>
+          <p>
+            By completing this task, students should find that when they do the composition (in both directions), they will get an output of <m>x</m>.
+          </p>
+        </answer>
+    </task>
+  </activity>
+
+  <observation xml:id="def-find-inverse">
+    <statement>
+      <p>
+        To find the inverse of a one-to-one function, perform the reverse operations in the opposite order.
+      </p>
+    </statement>
+  </observation>
+  
+    
+  <activity xml:id="activity-find-inverse-xy">
+    <introduction>
+      <p> Let's look at an alternate method for finding an inverse by solving the function for <m>x</m> and then interchanging the <m>x</m> and <m>y</m>.
+        <me>
+          h(x)=\dfrac{x}{x+1}
+        </me>
+    </p>
+      
+    </introduction>
+    <task>
+      <statement>
+        <p>
+         Interchange the variables <m>x</m> and <m>y</m>.
+         <ol marker= "A." cols="1">  
+          <li> <m>y=\frac{x}{x+1}</m></li>
+          <li> <m>x=\frac{y}{x+1}</m></li>
+          <li> <m>x=\frac{y}{y+1}</m></li>
+          <li> <m>x=\frac{x}{y+1}</m></li> 
+        </ol>
+        </p>  
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+      <p>
+       Eliminate the denominator.
+       <ol marker= "A." cols="1">  
+        <li> <m>y(x+1)=x</m></li>
+      <li> <m>x(x+1)=y</m></li>
+      <li> <m>x(y+1)=x</m></li>
+      <li> <m>x(y+1)=y</m></li>
+      </ol>
+      </p>  
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+  </task>
+  <task>
+    <statement>
+    <p>
+     Distribute and gather the <m>y</m> terms together.
+     <ol marker= "A." cols="1">  
+      <li> <m>yx+y=x</m></li>
+        <li> <m>x^{2}+x=y</m></li>
+        <li> <m>xy-y=-x</m></li>
+        <li> <m>xy=0</m></li>  
+    </ol>
+    </p>  
+</statement>
+<answer>
+  <p>
+    C
+  </p>
+</answer>
+</task>
+
+    <task>
+      <statement>
+      <p>
+       Write the inverse function, by factoring and solving for <m>y</m>.
+       <ol marker= "A." cols="1">  
+        <li> <m>h^{-1}(x)= \frac{x}{x-1}</m></li>
+        <li> <m>h^{-1}(x)=\frac{x}{1-x}</m></li>
+        <li> <m>h^{-1}(x)= \frac{-x}{1-x}</m></li>
+        <li> <m>h^{-1}(x)= \frac{x+1}{x}</m></li> 
+      </ol>
+      </p>  
+  </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
+  </task>
+  </activity>
+
+  <activity xml:id="activity-find-inverse">
+    <introduction>
+      <p> Find the inverse of each function, using either method.  Check your answer using function composition.
+    </p>
+      
+    </introduction>
+    <task>
+      <statement>
+        <p> <m> g(x)=\dfrac{4x-1}{7} </m>
+      <ol marker= "A." cols="1">  
+      <li> <m>g^{-1}(x)=\frac{7x+1}{4} </m></li>
+      <li> <m>g^{-1}(x)= \frac{7x}{4}+1</m></li>
+      <li> <m>g^{-1}(x)= \frac{4x+1}{7}</m></li>
+      <li> <m>g^{-1}(x)=\frac{7}{4x-1} </m></li> 
+    </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p> <m> f(x)=3-\sqrt{x+5} </m>
+      <ol marker= "A." cols="1">  
+      <li> <m>f^{-1}(x)=3+\sqrt{x-5} </m></li>
+      <li> <m>f^{-1}(x)=(x-3)^{2}+5 </m></li>
+      <li> <m>f^{-1}(x)= \frac{1}{3-\sqrt{x+5}}</m></li>
+      <li> <m>f^{-1}(x)=(3-x)^{2}-5 </m></li> 
+    </ol>
+    </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+  </activity> 
+
+    </subsection>
+    
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/FN6/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

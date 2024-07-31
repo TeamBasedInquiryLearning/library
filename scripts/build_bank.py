@@ -11,7 +11,7 @@ parser.add_argument('-f', '--full',
                     action='store_true')
 args = parser.parse_args()
 
-bank_path = os.path.join(args.book,"exercises")
+bank_path = os.path.join("source", args.book, "exercises")
 
 print(f"Building exercises from `{bank_path}`")
 
