@@ -319,12 +319,12 @@
       </task><task>
         <statement>
           <p>
-            <m>f(x)=\left( \frac{1}{3} \right)^{x}</m> for <m>f(3)</m>
+            <m>f(x)=\left( \dfrac{1}{3} \right)^{x}</m> for <m>f(3)</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(3)=\frac{1}{27}</m>
+            <m>f(3)=\dfrac{1}{27}</m>
           </p>
         </answer>
       </task>
@@ -336,7 +336,7 @@
         </statement>
         <answer>
           <p>
-            <m>f(-2)=\frac{3}{25}</m>
+            <m>f(-2)=\dfrac{3}{25}</m>
           </p>
         </answer>
       </task>
@@ -365,7 +365,7 @@
     <activity xml:id="act-exp-growthvsdecay">
       <introduction>
         <p>
-          Consider two exponential functions <m>f(x)=100(2)^{x}</m> and <m>g(x)=100 \left( \frac{1}{2} \right)^{x}</m>.
+          Consider two exponential functions <m>f(x)=100(2)^{x}</m> and <m>g(x)=100 \left( \dfrac{1}{2} \right)^{x}</m>.
         </p>
       </introduction>
       <task>
@@ -500,7 +500,7 @@
     <remark>
       <p>
         In <xref ref="act-exp-growthvsdecay"/>, the only difference between the two exponential functions was the base.
-        <m>f(x)</m> has a base of <m>2</m>, while <m>g(x)</m> has a base of <m>\frac{1}{2}</m>.
+        <m>f(x)</m> has a base of <m>2</m>, while <m>g(x)</m> has a base of <m>\dfrac{1}{2}</m>.
         Let's use this fact to update <xref ref="def-exp-func"/>.
       </p>
     </remark>
@@ -632,7 +632,7 @@
     </statement>
     <answer>
       <p>
-        <m>-\frac{2}{3}</m>
+        <m>-\dfrac{2}{3}</m>
       </p>
     </answer>
   </task>
@@ -653,10 +653,10 @@
       <p>
         What is the ratio of consecutive outputs in the exponential function?
         <ol marker= "A." cols="2">
-          <li> <m>\frac{4}{3}</m> </li>
-          <li> <m>\frac{3}{4}</m> </li>
-          <li> <m>-\frac{4}{3}</m> </li>
-          <li> <m>-\frac{3}{4}</m> </li>
+          <li> <m>\dfrac{4}{3}</m> </li>
+          <li> <m>\dfrac{3}{4}</m> </li>
+          <li> <m>-\dfrac{4}{3}</m> </li>
+          <li> <m>-\dfrac{3}{4}</m> </li>
         </ol>
       </p>
     </statement>
@@ -706,10 +706,10 @@
               <p>
                 Find the common ratio.
                 <ol marker= "A." cols="2">
-                  <li> <m>\frac{3}{2}</m> </li>
+                  <li> <m>\dfrac{3}{2}</m> </li>
                   <li> <m>6</m> </li>
-                  <li> <m>\frac{2}{3}</m> </li>
-                  <li> <m>\frac{1}{6}</m></li>
+                  <li> <m>\dfrac{2}{3}</m> </li>
+                  <li> <m>\dfrac{1}{6}</m></li>
                 </ol>
               </p>
             </statement>
@@ -724,16 +724,16 @@
               <p>
                 Find the equation.
                 <ol marker= "A." cols="2">
-                  <li> <m>f(x)=6\left( \frac{3}{2} \right)^x</m> </li>
+                  <li> <m>f(x)=6\left( \dfrac{3}{2} \right)^x</m> </li>
                   <li> <m>f(x)=4\left( 6 \right)^x</m> </li>
-                  <li> <m>f(x)=4\left( \frac{2}{3} \right)^x</m> </li>
-                  <li> <m>f(x)=4\left( \frac{3}{2} \right)^x</m></li>
+                  <li> <m>f(x)=4\left( \dfrac{2}{3} \right)^x</m> </li>
+                  <li> <m>f(x)=4\left( \dfrac{3}{2} \right)^x</m></li>
                 </ol>
               </p>
             </statement>
             <answer>
               <p>
-                D: <m>f(x)=4\left( \frac{3}{2} \right)^x</m>
+                D: <m>f(x)=4\left( \dfrac{3}{2} \right)^x</m>
               </p>
             </answer>
           </task>
@@ -744,14 +744,14 @@
     <remark xml:id="neg-exp">
       Recall the negative rule of exponents which states that for any nonzero real number <m>a</m> and natural number <m>n</m>
     <me>
-      a^{-n}=\frac{1}{a^n}
+      a^{-n}=\dfrac{1}{a^n}
     </me>
     
     </remark>
     <activity xml:id="act-neg-exp">
       <introduction>
         <p>
-          Let's consider the two exponential functions <m>f(x)=2^{-x}</m> and <m>g(x)=\left(\frac{1}{2}\right)^{x}</m>.
+          Let's consider the two exponential functions <m>f(x)=2^{-x}</m> and <m>g(x)=\left(\dfrac{1}{2}\right)^{x}</m>.
         </p>
       </introduction>
       <task>
@@ -802,11 +802,11 @@
               </row>
               <row>
                 <cell><m>1</m></cell>
-                <cell><m>\frac{1}{2}</m></cell>
+                <cell><m>\dfrac{1}{2}</m></cell>
               </row>
               <row>
                 <cell><m>2</m></cell>
-                <cell><m>\frac{1}{4}</m></cell>
+                <cell><m>\dfrac{1}{4}</m></cell>
               </row>
             </tabular>
           </p>
@@ -860,11 +860,11 @@
               </row>
               <row>
                 <cell><m>1</m></cell>
-                <cell><m>\frac{1}{2}</m></cell>
+                <cell><m>\dfrac{1}{2}</m></cell>
               </row>
               <row>
                 <cell><m>2</m></cell>
-                <cell><m>\frac{1}{4}</m></cell>
+                <cell><m>\dfrac{1}{4}</m></cell>
               </row>
             </tabular>
           </p>
@@ -891,7 +891,7 @@
         <answer>
           <p>
             <me>
-              f(x)=2^{-x}=\frac{1}{2^x}=\left(\frac{1}{2}\right)^x=g(x)
+              f(x)=2^{-x}=\dfrac{1}{2^x}=\left(\dfrac{1}{2}\right)^x=g(x)
             </me>
           </p>
         </answer>
@@ -940,12 +940,12 @@
       <task>
         <statement>
           <p>
-            <m>f(x)=\frac{1}{3}e^{x+1}</m> for <m>f(-1)</m>
+            <m>f(x)=\dfrac{1}{3}e^{x+1}</m> for <m>f(-1)</m>
             <ol marker= "A." cols="2">
               <li> <m>1</m> </li>
               <li> <m>0</m> </li>
               <li> <m>1.122</m> </li>
-              <li> <m>\frac{1}{3}</m></li>
+              <li> <m>\dfrac{1}{3}</m></li>
             </ol>
           </p>
         </statement>

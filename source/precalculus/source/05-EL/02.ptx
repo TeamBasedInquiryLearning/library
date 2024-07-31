@@ -55,11 +55,11 @@
               </row>
               <row>
                 <cell><m>-2</m></cell> 
-                <cell><m>\frac{1}{4}</m></cell>              
+                <cell><m>\dfrac{1}{4}</m></cell>              
               </row>
               <row>
                 <cell><m>-1</m></cell> 
-                <cell><m>\frac{1}{2}</m></cell>   
+                <cell><m>\dfrac{1}{2}</m></cell>   
               </row>
               <row>
                 <cell><m>0</m></cell>
@@ -241,7 +241,7 @@
     
     <activity xml:id="activity-exp-graphs-intro2">
       <introduction>
-        <p> Consider the function <m>g(x)=\left(\frac{1}{2}\right)^x</m>. 
+        <p> Consider the function <m>g(x)=\left(\dfrac{1}{2}\right)^x</m>. 
         </p> 
       </introduction>
 
@@ -294,11 +294,11 @@
               </row>
               <row>
                 <cell><m>1</m></cell>
-                <cell><m>\frac{1}{2}</m></cell> 
+                <cell><m>\dfrac{1}{2}</m></cell> 
               </row>
               <row>
                 <cell><m>2</m></cell>
-                <cell><m>\frac{1}{4}</m></cell> 
+                <cell><m>\dfrac{1}{4}</m></cell> 
               </row>
             </tabular>
 
@@ -420,7 +420,7 @@
 
       <activity xml:id="activity-exp-graphs-compare">
         <introduction>
-          <p> Consider the two exponential functions we've just graphed: <m>f(x)=2^x</m> and <m>g(x)=\left(\frac{1}{2}\right)^x</m>. 
+          <p> Consider the two exponential functions we've just graphed: <m>f(x)=2^x</m> and <m>g(x)=\left(\dfrac{1}{2}\right)^x</m>. 
           </p> 
         </introduction>
 
@@ -543,11 +543,11 @@
             </row>
             <row>
               <cell><m>1</m></cell>
-              <cell><m>\frac{1}{2}</m></cell> 
+              <cell><m>\dfrac{1}{2}</m></cell> 
             </row>
             <row>
               <cell><m>2</m></cell>
-              <cell><m>\frac{1}{4}</m></cell> 
+              <cell><m>\dfrac{1}{4}</m></cell> 
             </row>
           </tabular>
 
@@ -572,7 +572,7 @@
       </statement>
       <answer>
         <p>
-          <m>2^{-x} = (2^{-1})^x = \left(\frac{1}{2} \right)^x </m>
+          <m>2^{-x} = (2^{-1})^x = \left(\dfrac{1}{2} \right)^x </m>
         </p>
       </answer>
     </task>
@@ -1011,7 +1011,7 @@
       <task>
         <statement>
           <p>
-            <m>f(x)=\frac{1}{5}^{x-2}</m>
+            <m>f(x)=\dfrac{1}{5}^{x-2}</m>
           </p>
         </statement>
         <answer>
@@ -1040,7 +1040,7 @@
       <task>
         <statement>
           <p>
-            <m>f(x)=\frac{1}{3}^{x}+4</m>
+            <m>f(x)=\dfrac{1}{3}^{x}+4</m>
           </p>
         </statement>
         <answer>

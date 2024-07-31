@@ -28,7 +28,7 @@
             Given that <m>\log_39=x</m>, how can we rewrite this into an exponential equation?
             <ol marker= "A." cols="2">
               <li><m>9^x=3</m></li>
-              <li><m>\log\left(\frac{9}{3}\right)</m></li>
+              <li><m>\log\left(\dfrac{9}{3}\right)</m></li>
               <li><m>3^x=9</m></li>
               <li><m>x^3=9</m></li></ol>
           </p>
@@ -46,8 +46,8 @@
             <ol marker= "A." cols="2">
               <li><m>-2</m></li>
               <li><m>2</m></li>
-              <li><m>-\frac{1}{2}</m></li>
-              <li><m>\frac{1}{2}</m></li></ol>
+              <li><m>-\dfrac{1}{2}</m></li>
+              <li><m>\dfrac{1}{2}</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -108,9 +108,9 @@
           <m>\log_5(2x+4)=2</m>
           <ol marker= "A." cols="2">
             <li><m>14</m></li>
-            <li><m>\frac{29}{2}</m></li>
+            <li><m>\dfrac{29}{2}</m></li>
             <li><m>16</m></li>
-            <li><m>\frac{21}{2}</m></li></ol>
+            <li><m>\dfrac{21}{2}</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -133,10 +133,10 @@
             Suppose you are given the equation, <me>\log(4x-5)=\log(2x-1)</me>, and you
            brought all the logs to one side to get <me>\log(4x-5)-\log(2x-1)=0</me>. Using the quotient property of logs, how could you condense the left side of the equation?
               <ol marker= "A." cols="2">
-                <li><m>\log\left(\frac{4x-5}{2x-1}\right)</m></li>
-                <li><m>\log\left(\frac{2x-1}{4x-5}\right)</m></li>
-                <li><m>\frac{\log(4x-5)}{\log(2x-1)}</m></li>
-                <li><m>\frac{\log(2x-1)}{\log(4x-5)}</m></li></ol>
+                <li><m>\log\left(\dfrac{4x-5}{2x-1}\right)</m></li>
+                <li><m>\log\left(\dfrac{2x-1}{4x-5}\right)</m></li>
+                <li><m>\dfrac{\log(4x-5)}{\log(2x-1)}</m></li>
+                <li><m>\dfrac{\log(2x-1)}{\log(4x-5)}</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -150,10 +150,10 @@
           <p>
             Now that you have a single logarithm, convert this logarithmic form into exponential form. What does this new equation look like?
             <ol marker= "A." cols="2">
-              <li><m>\frac{4x-5}{2x-1}=10^0</m></li>
-              <li><m>\frac{2x-1}{4x-5}=1</m></li>
-              <li><m>\frac{2x-1}{4x-5}=10^0</m></li>
-              <li><m>\frac{4x-5}{2x-1}=1</m></li></ol>
+              <li><m>\dfrac{4x-5}{2x-1}=10^0</m></li>
+              <li><m>\dfrac{2x-1}{4x-5}=1</m></li>
+              <li><m>\dfrac{2x-1}{4x-5}=10^0</m></li>
+              <li><m>\dfrac{4x-5}{2x-1}=1</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -196,8 +196,8 @@
             Solve the equation you got in part d to find the value of <m>x</m>.
             <ol marker= "A." cols="2">
               <li><m>-3</m></li>
-              <li><m>\frac{5}{4}</m></li>
-              <li><m>\frac{1}{2}</m></li>
+              <li><m>\dfrac{5}{4}</m></li>
+              <li><m>\dfrac{1}{2}</m></li>
               <li><m>2</m></li></ol>
           </p>
         </statement>
@@ -271,7 +271,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{3e^5-1}{4}</m> or <m>111.06</m>
+            <m>\dfrac{3e^5-1}{4}</m> or <m>111.06</m>
           </p>
         </answer>
       </task>
@@ -356,7 +356,7 @@
             <li><m>x \approx 5.585</m></li>
             <li><m>x \approx 0.179</m></li>
             <li><m>x \approx 24</m></li>
-            <li><m>x \approx \frac{1}{24}</m></li></ol>
+            <li><m>x \approx \dfrac{1}{24}</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -409,7 +409,7 @@
         </statement>
         <answer>
           <p>
-            <m>x=\frac{\log7}{\log3}</m>
+            <m>x=\dfrac{\log7}{\log3}</m>
           </p>
         </answer>
       </task>
@@ -479,10 +479,10 @@
           <p>
             Solve for <m>x</m>.
             <ol marker= "A." cols="1">
-              <li><m>x=\frac{\log_58-3}{2}</m></li>
-              <li><m>x=\frac{\log8-3\log5}{2}</m></li>
-              <li><m>x=\frac{\log8}{3\log5}-2</m></li>
-              <li><m>x=\frac{\log8-3}{2\log5}</m></li></ol>
+              <li><m>x=\dfrac{\log_58-3}{2}</m></li>
+              <li><m>x=\dfrac{\log8-3\log5}{2}</m></li>
+              <li><m>x=\dfrac{\log8}{3\log5}-2</m></li>
+              <li><m>x=\dfrac{\log8-3}{2\log5}</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -557,10 +557,10 @@
           <p>
             Now that you have a logarithmic equation, divide both sides by <m>\log5</m> to begin to isolate the variable <m>x</m>. After dividing by <m>\log5</m>, what equation do you now have?
             <ol marker= "A." cols="1">
-              <li><m>3x=\frac{7x}{\log5}-2</m></li>
+              <li><m>3x=\dfrac{7x}{\log5}-2</m></li>
               <li><m>3x=7x-2</m></li>
               <li><m>5^{3x}=5^{7x-2}</m></li>
-              <li><m>\frac{3x\log5}{\log5}=\frac{(7x-2)\log5}{\log5}</m></li></ol>
+              <li><m>\dfrac{3x\log5}{\log5}=\dfrac{(7x-2)\log5}{\log5}</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -587,9 +587,9 @@
               Solve for <m>x</m>.
               <ol marker= "A." cols="2">
                 <li><m>2</m></li>
-                <li><m>\frac{1}{2}</m></li>
+                <li><m>\dfrac{1}{2}</m></li>
                 <li><m>-2</m></li>
-                <li><m>\frac{1}{2}</m></li></ol>
+                <li><m>\dfrac{1}{2}</m></li></ol>
             </p>
           </statement>
           <answer>
@@ -645,7 +645,7 @@
       <task>
         <statement>
           <p>
-            Suppose you are given <me>3^{1-x}=\frac{1}{27}</me>, how could you rewrite this equation so that both sides have a base of <m>3</m>? (Hint: you many need to revisit properties of exponents)
+            Suppose you are given <me>3^{1-x}=\dfrac{1}{27}</me>, how could you rewrite this equation so that both sides have a base of <m>3</m>? (Hint: you many need to revisit properties of exponents)
           </p>
         </statement>
         <answer>
@@ -657,12 +657,12 @@
       <task>
         <statement>
           <p>
-            Suppose you are given <me>6^{\frac{x-3}{4}}=\sqrt{6}</me>, how could you rewrite this equation so that both sides have a base of <m>6</m>? (Hint: you many need to revisit properties of exponents)
+            Suppose you are given <me>6^{\dfrac{x-3}{4}}=\sqrt{6}</me>, how could you rewrite this equation so that both sides have a base of <m>6</m>? (Hint: you many need to revisit properties of exponents)
           </p>
         </statement>
         <answer>
           <p>
-            <m>6^{\frac{x-3}{4}}=6^{\frac{1}{2}}</m>
+            <m>6^{\dfrac{x-3}{4}}=6^{\dfrac{1}{2}}</m>
           </p>
         </answer>
       </task>
@@ -680,9 +680,9 @@
             <m>6^{-2x}=6^{2-3x}</m>
             <ol marker= "A." cols="2">
               <li><m>2</m></li>
-              <li><m>-\frac{2}{5}</m></li>
+              <li><m>-\dfrac{2}{5}</m></li>
               <li><m>-2</m></li>
-              <li><m>-\frac{5}{2}</m></li></ol>
+              <li><m>-\dfrac{5}{2}</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -714,9 +714,9 @@
             <m>5\ln(9x)=20</m>
             <ol marker= "A." cols="2">
               <li><m>e^4</m></li>
-              <li><m>\frac{e^4}{9}</m></li>
-              <li><m>e^{\left(\frac{4}{9}\right)}</m></li>
-              <li><m>\frac{4}{\ln9}</m></li></ol>
+              <li><m>\dfrac{e^4}{9}</m></li>
+              <li><m>e^{\left(\dfrac{4}{9}\right)}</m></li>
+              <li><m>\dfrac{4}{\ln9}</m></li></ol>
           </p>
         </statement>
         <answer>
@@ -787,14 +787,14 @@
         </statement>
         <answer>
           <p>
-            <m>x=\frac{log3}{log5}-7</m>
+            <m>x=\dfrac{log3}{log5}-7</m>
           </p>
         </answer>
       </task>
       <task>
         <statement>
           <p>
-            <m>8^{\frac{x-6}{6}}=\sqrt8</m>
+            <m>8^{\dfrac{x-6}{6}}=\sqrt8</m>
           </p>
         </statement>
         <answer>
@@ -811,7 +811,7 @@
         </statement>
         <answer>
           <p>
-            <m>x=\frac{1}{28}</m>
+            <m>x=\dfrac{1}{28}</m>
           </p>
         </answer>
       </task>
