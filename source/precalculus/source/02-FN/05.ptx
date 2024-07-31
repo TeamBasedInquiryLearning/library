@@ -87,14 +87,14 @@
       <task>
         <statement>
           <p>
-            Which of the following seems likely to be the most simplified form of  <m>\frac{f(x)}{g(x)}</m>?
+            Which of the following seems likely to be the most simplified form of  <m>\dfrac{f(x)}{g(x)}</m>?
 
             <ol marker= "A.">  
-              <li> <m>\frac{5x}{\sqrt{x+1}}
+              <li> <m>\dfrac{5x}{\sqrt{x+1}}
               </m></li>
-              <li> <m>\frac{\sqrt{x+1}}{5x}</m></li>
-              <li> <m> \sqrt{\frac{x}{5x}+\frac{1}{5x}} </m></li>
-              <li> <m>\sqrt{\frac{5x}{x}+\frac{5x}{1}} </m></li>
+              <li> <m>\dfrac{\sqrt{x+1}}{5x}</m></li>
+              <li> <m> \sqrt{\dfrac{x}{5x}+\dfrac{1}{5x}} </m></li>
+              <li> <m>\sqrt{\dfrac{5x}{x}+\dfrac{5x}{1}} </m></li>
             </ol>
           </p>
         </statement>
@@ -114,17 +114,17 @@
           <mrow>(f+g)(x) \amp = f(x)+g(x) </mrow>
           <mrow>(f-g)(x) \amp = f(x)-g(x) </mrow>
           <mrow>(f\cdot g)(x) \amp = f(x)\cdot g(x) </mrow>
-          <mrow>\left(\frac{f}{g}\right)(x) \amp = \frac{f(x)}{g(x)}</mrow>
+          <mrow>\left(\dfrac{f}{g}\right)(x) \amp = \dfrac{f(x)}{g(x)}</mrow>
         </md>
 
-      With <m>\left(\frac{f}{g}\right)(x) </m>, we note that the quotient is only defined when <m>g(x)\neq 0</m>.
+      With <m>\left(\dfrac{f}{g}\right)(x) </m>, we note that the quotient is only defined when <m>g(x)\neq 0</m>.
 
       </p>
     </remark>
 
     <activity xml:id="activity-fn5-composition-1">
       <introduction>
-        <p> Let <m>\displaystyle f(x)=\frac{1}{3x-5}</m>. </p> 
+        <p> Let <m>\displaystyle f(x)=\dfrac{1}{3x-5}</m>. </p> 
       </introduction>
       
       <task>
@@ -132,9 +132,9 @@
           <p>
             Find <m>f(4)</m>.
             <ol marker= "A.">  
-              <li> <m>\frac{4}{3x-5}</m> </li>
-              <li> <m>\frac{1}{4(3x-5)}</m> </li>
-              <li> <m>\frac{1}{7}</m> </li>
+              <li> <m>\dfrac{4}{3x-5}</m> </li>
+              <li> <m>\dfrac{1}{4(3x-5)}</m> </li>
+              <li> <m>\dfrac{1}{7}</m> </li>
               <li> <m>7</m> </li>
             </ol>
           </p>
@@ -157,9 +157,9 @@
             If you were asked to find <m>f(x^3-2)</m>, how do you think you would proceed?
 
             <ol marker= "A.">  
-              <li> Multiply the original function <m>\frac{1}{3x-5}</m> by <m>x^3-2</m>.</li>
-              <li> Plug the expression <m>x^3-2</m> in for all the <m>x</m>-values in <m>\frac{1}{3x-5}</m>. </li>
-              <li> Plug the original function <m>\frac{1}{3x-5}</m> in for all the <m>x</m>-values in <m>x^3-2</m>. </li>
+              <li> Multiply the original function <m>\dfrac{1}{3x-5}</m> by <m>x^3-2</m>.</li>
+              <li> Plug the expression <m>x^3-2</m> in for all the <m>x</m>-values in <m>\dfrac{1}{3x-5}</m>. </li>
+              <li> Plug the original function <m>\dfrac{1}{3x-5}</m> in for all the <m>x</m>-values in <m>x^3-2</m>. </li>
               <li> Multiply <m>3x-5</m> by <m>
                 x^3-2</m>. </li>
               
@@ -178,9 +178,9 @@
           <p>
             Find <m>f(x^3-2)</m>.
             <ol marker= "A.">  
-              <li> <m>\frac{1}{3x-5} \cdot (x^3-2)</m></li>
-              <li> <m>\frac{1}{3(x^3-2)-5}</m></li>
-              <li>  <m>\left(\frac{1}{3x-5} \right)^3-2</m> </li>
+              <li> <m>\dfrac{1}{3x-5} \cdot (x^3-2)</m></li>
+              <li> <m>\dfrac{1}{3(x^3-2)-5}</m></li>
+              <li>  <m>\left(\dfrac{1}{3x-5} \right)^3-2</m> </li>
               <li> <m>(3x-5)(x^3-2)</m> </li>
               
             </ol>
@@ -201,7 +201,7 @@
               <li> <m>f(x) \cdot g(x)</m></li>
               <li> <m>g(f(x))</m></li>
               <li>  <m>f(g(x))</m> </li>
-              <li> <m>\frac{f(x)}{g(x)}  </m> </li>
+              <li> <m>\dfrac{f(x)}{g(x)}  </m> </li>
             </ol>
           </p>
         </statement>
@@ -235,7 +235,7 @@
 
     <activity xml:id="activity-fn5-composition-2">
       <introduction>
-        <p> Let <m>\displaystyle f(x)=\frac{1}{3x-5}</m> and <m>g(x)=x^3-2</m>. </p> 
+        <p> Let <m>\displaystyle f(x)=\dfrac{1}{3x-5}</m> and <m>g(x)=x^3-2</m>. </p> 
       </introduction>
       
       <task>
@@ -243,10 +243,10 @@
           <p>
             Find <m>f(g(x))</m>.
             <ol marker= "A.">  
-              <li> <m>\frac{x^3-2}{3x-5}</m> </li>
-              <li> <m>\frac{1}{(3x-5)(x^3-2)}</m> </li>
-              <li> <m>\frac{1}{3(x^3-2)-5}</m> </li>
-              <li> <m> \left( \frac{1}{3x-5} \right)^{3} -2</m> </li>
+              <li> <m>\dfrac{x^3-2}{3x-5}</m> </li>
+              <li> <m>\dfrac{1}{(3x-5)(x^3-2)}</m> </li>
+              <li> <m>\dfrac{1}{3(x^3-2)-5}</m> </li>
+              <li> <m> \left( \dfrac{1}{3x-5} \right)^{3} -2</m> </li>
             </ol>
           </p>
         </statement>
@@ -262,10 +262,10 @@
           <p>
             Find <m>g(f(x))</m>.
             <ol marker= "A.">  
-              <li> <m>\frac{x^3-2}{3x-5}</m> </li>
-              <li> <m>\frac{1}{(3x-5)(x^3-2)}</m> </li>
-              <li> <m>\frac{1}{3(x^3-2)-5}</m> </li>
-              <li> <m> \left( \frac{1}{3x-5} \right)^{3} -2</m></li>
+              <li> <m>\dfrac{x^3-2}{3x-5}</m> </li>
+              <li> <m>\dfrac{1}{(3x-5)(x^3-2)}</m> </li>
+              <li> <m>\dfrac{1}{3(x^3-2)-5}</m> </li>
+              <li> <m> \left( \dfrac{1}{3x-5} \right)^{3} -2</m></li>
             </ol>
           </p>
         </statement>
@@ -429,7 +429,7 @@ Let functions <m>p</m> and <m>q</m> be given by the graphs below. </p>
         </statement>
         <answer>
           <p>
-            <m>-\frac{1}{2}</m> 
+            <m>-\dfrac{1}{2}</m> 
           </p>
         </answer>
       </task>

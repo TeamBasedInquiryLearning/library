@@ -71,7 +71,7 @@
               <li>The eastbound train left an hour before the westbound train, so if we let <m>t_E=t</m>, then <m>t_W=t-1</m>. </li>
               <li>Both trains have been traveling the same amount of time, so <m>t_E=t_W</m>. Since they are the same, we can just call them both <m>t</m>.</li>
               <li>We don't know how the times relate to each other, so we must denote them separately as <m>t_E</m> and <m>t_W</m>. </li>
-              <li>Since the trains are traveling at different speeds, we need the proportion <m>\frac{r_E}{r_W}=\frac{t_E}{t_W}</m>. </li>
+              <li>Since the trains are traveling at different speeds, we need the proportion <m>\dfrac{r_E}{r_W}=\dfrac{t_E}{t_W}</m>. </li>
             </ol>
           </p>
         </statement>
@@ -216,8 +216,8 @@
            
             <ol marker= "A.">  
               <li><m>t_b=18</m> hours, <m>t_c=18</m> hours </li>
-              <li><m>t_b=\frac{1}{5}</m> of an hour, <m>t_c=\frac{1}{2}</m> of an hour </li>
-              <li><m>t_b=\frac{1}{2}</m> of an hour, <m>t_c=\frac{1}{5}</m> of an hour </li>
+              <li><m>t_b=\dfrac{1}{5}</m> of an hour, <m>t_c=\dfrac{1}{2}</m> of an hour </li>
+              <li><m>t_b=\dfrac{1}{2}</m> of an hour, <m>t_c=\dfrac{1}{5}</m> of an hour </li>
               <li><m>t_b=2</m> hours, <m>t_c=5</m> hours </li>
               <li><m>t_b=5</m> hours, <m>t_c=2</m> hours </li>
             </ol>
@@ -285,14 +285,14 @@
               <row>
                 <cell> bike trip (to the store) </cell> 
                 <cell><m>r</m></cell>
-                <cell><m>\frac{1}{2}</m></cell>
-                <cell><m>\frac{1}{2}r</m></cell>
+                <cell><m>\dfrac{1}{2}</m></cell>
+                <cell><m>\dfrac{1}{2}r</m></cell>
               </row>
               <row>
                 <cell> car trip (going back home) </cell> 
                 <cell><m>r+18</m></cell>
-                <cell><m>\frac{1}{5}</m></cell>
-                <cell><m>\frac{1}{5}(r+18)</m></cell>
+                <cell><m>\dfrac{1}{5}</m></cell>
+                <cell><m>\dfrac{1}{5}(r+18)</m></cell>
               </row>
             </tabular>
           </p>
@@ -305,7 +305,7 @@
            Our goal is to figure out how far away Jalen lives from the store. To help us get there, write an equation relating <m>d_b</m> and <m>d_c</m>. 
             <ol marker= "A.">  
               <li>The distance he traveled by bike is the same as the distance he traveled by car, so <m>d_b = d_c</m>.</li>
-              <li>The distance he traveled by bike took longer than the distance he traveled by car, so <m>d_b + \frac{1}{2} = d_c + \frac{1}{5}</m>.</li>
+              <li>The distance he traveled by bike took longer than the distance he traveled by car, so <m>d_b + \dfrac{1}{2} = d_c + \dfrac{1}{5}</m>.</li>
               <li>The distance, <m>d</m>, between his house and the grocery store is sum of the distance he traveled on his bike and the distance he traveled in the car, so <m>d_b + d_c = d</m>. </li>
               <li>The distance, <m>d</m>, between his house and the grocery store is sum of the difference he traveled on his bike and the distance he traveled in the car, so <m>d_b - d_c = d</m>. </li>
 
@@ -379,7 +379,7 @@
               <li><m>N-S=7</m></li>
               <li><m>NS=7</m></li>
               <li><m>N+S=7</m></li>
-              <li><m>\frac{N}{S}=7</m></li>
+              <li><m>\dfrac{N}{S}=7</m></li>
             </ol>
           </p>
         </statement>

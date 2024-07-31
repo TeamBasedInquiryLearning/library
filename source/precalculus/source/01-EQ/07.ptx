@@ -205,7 +205,7 @@
   <activity xml:id="activity-rational-inequality-0">
     <introduction>
       <p>
-        Consider the rational inequality <me> \frac{x+3}{x-2} \leq 0.</me>
+        Consider the rational inequality <me> \dfrac{x+3}{x-2} \leq 0.</me>
       </p>
     </introduction>
     <task>
@@ -240,16 +240,16 @@
 
   <activity xml:id="activity-rational-inequality-1">
     <introduction>
-      <p>Consider the rational inequality <me>\frac{4x+3}{x+2} \gt x</me>.
+      <p>Consider the rational inequality <me>\dfrac{4x+3}{x+2} \gt x</me>.
       </p>
     </introduction>
     <task>
       <statement>
       <p>For which of the following functions will a graph help us solve the rational inequality above?</p>
       <ol marker="A.">
-        <li><m>f(x)=\frac{4x+3}{x+2}</m></li>
-        <li><m>g(x)=\frac{4x+3}{x+2}-x</m></li>
-        <li><m>h(x)=x-\frac{4x+3}{x+2}</m></li>
+        <li><m>f(x)=\dfrac{4x+3}{x+2}</m></li>
+        <li><m>g(x)=\dfrac{4x+3}{x+2}-x</m></li>
+        <li><m>h(x)=x-\dfrac{4x+3}{x+2}</m></li>
         </ol>
       </statement>
       <answer><p>B or C is most helpful.</p></answer>
@@ -257,8 +257,8 @@
     <task>
       <statement>
       <p> 
-        Use a graphing utility to graph the function <m>g(x)=\frac{4x+3}{x+2}-x</m>.  
-        Which part of the graph represents where <m>\frac{4x+3}{x+2}-x\gt0</m>? 
+        Use a graphing utility to graph the function <m>g(x)=\dfrac{4x+3}{x+2}-x</m>.  
+        Which part of the graph represents where <m>\dfrac{4x+3}{x+2}-x\gt0</m>? 
         Write your answer in interval notation.
       </p> 
     </statement>
@@ -276,12 +276,12 @@
     </task>
     <task>
       <statement>
-      <p> Simplify <m>\frac{4x+3}{x+2} - x</m> into a single rational expression. 
+      <p> Simplify <m>\dfrac{4x+3}{x+2} - x</m> into a single rational expression. 
         <ol marker="A." cols="1">
-          <li><p><m>\frac{4x+3}{x+2}</m> </p></li>
-          <li><p> <m>\frac{3x+3}{x+2}</m> </p></li>
-          <li><p> <m>\frac{x^2+6x+3}{x+2}</m> </p></li>
-          <li><p> <m>\frac{-x^2+2x+3}{x+2}</m></p></li>
+          <li><p><m>\dfrac{4x+3}{x+2}</m> </p></li>
+          <li><p> <m>\dfrac{3x+3}{x+2}</m> </p></li>
+          <li><p> <m>\dfrac{x^2+6x+3}{x+2}</m> </p></li>
+          <li><p> <m>\dfrac{-x^2+2x+3}{x+2}</m></p></li>
       </ol> </p>
     </statement>
     <answer><p>D.</p></answer>
@@ -330,7 +330,7 @@
 
   <activity xml:id="rational-inequality-both-sides">
     <introduction>
-      <p>Solve the rational inequality <me>\frac{x+8}{x-2} \le \frac{x+10}{x+5}</me>.
+      <p>Solve the rational inequality <me>\dfrac{x+8}{x-2} \le \dfrac{x+10}{x+5}</me>.
       </p>
     </introduction>
     <task>
