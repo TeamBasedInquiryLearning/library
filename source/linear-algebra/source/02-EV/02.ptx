@@ -180,7 +180,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     </statement>
     </fact>
 
-<activity estimated-time='15'>
+<activity xml:id="EV2-activity-guess-check">
     <introduction>
         <p>
             Consider the question: Does every vector in <m>\IR^3</m> belong to 
@@ -200,12 +200,29 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     <task>
         <statement>
             <p>
+                Determine if <m>\left[\begin{array}{c} 0 \\ -4 \\ 3 \end{array}\right]</m> belongs to 
+                <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
                 Determine if <m>\left[\begin{array}{c} 2 \\ 5 \\ 7 \end{array}\right]</m> belongs to 
                 <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
                 \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
             </p>
         </statement>
     </task>
+</activity>
+<activity>
+    <introduction>
+        <p>
+We'd prefer a more methodical method to decide if every vector in <m>\IR^n</m> belongs to
+some spanning set, compared to the guess-and-check method we used in <xref ref="EV2-activity-guess-check"/>.
+        </p>
+    </introduction>
     <task>
         <statement>
             <p>
@@ -258,8 +275,9 @@ we may conclude that the set does not span all of <m>\IR^3</m> because...
   is inconsistent for <em>some</em> vector <m>\vec{w}</m>.
         </p>
         <p>
-  Note these two possibilities are decided based on whether or not
-  <m>\RREF[\vec v_1\,\dots\,\vec v_n]</m> has either all pivot rows, or at
+  Note these two possibilities are decided based on whether or not the RREF of the
+  vector equation's coefficient matrix
+  (that is, <m>\RREF[\vec v_1\,\dots\,\vec v_n]</m>) has either all pivot rows, or at
   least one non-pivot row (a row of zeroes):
   <me>\left[\begin{array}{ccc|c}1&amp;-2&amp;-2\\-1&amp;0&amp;-2\\0&amp;1&amp;2\end{array}\right]\sim
   \left[\begin{array}{ccc|c}1&amp;0&amp;2\\0&amp;1&amp;2\\0&amp;0&amp;0\end{array}\right]</me>.
