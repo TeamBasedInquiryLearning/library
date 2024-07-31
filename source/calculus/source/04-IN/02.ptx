@@ -170,22 +170,248 @@
         </task>
 </activity>
     
+<definition xml:id="def-riemann-sum">
+  <statement>
+    <p>
+      If <m>f(x)</m> is a function defined on the interval <m>[a,b]</m>,
+      a <term>Riemann sum</term> for <m>f</m> on <m>[a,b]</m> is a sum of the form
+      <me xml:id="eq-def-riemann-sum">\sum_{i=1}^{n} f(s_{i}) \cdot (x_i - x_{i-1})</me>,
+      where <m>a = x_0 \lt x_1 \lt \dots \lt x_{n-1} \lt x_n = b</m> 
+      and where <m>s_{i}</m> is a point in the <m>i</m>-th subinterval.
+    </p>
+  </statement>
+</definition>
+
+<remark>
+  <p>
+    The Riemann sum in <xref ref="def-riemann-sum"/> is <em>almost</em> a 
+    sum of the areas of rectangles.
+    The height of the <m>i</m>-th rectangle is <m>f(s_{i})</m>
+    and the width is <m>x_i - x_{i-1}</m>.
+  </p>
+</remark>
+
+<activity>
+  <statement>
+    <p>
+      Why is the Riemann sum in <xref ref="def-riemann-sum"/> only <em>almost</em>
+      a sum of the areas of rectangles?
+    </p>
+    <ol label="A.">
+      <li>The function is not continuous.</li>
+      <li>The function is not differentiable.</li>
+      <li>Some of the values <m>f(s_i)</m> are negative.</li>
+      <li>The <m>x</m>-coordinates <m>s_i</m> are not equally spaced.</li>
+    </ol>
+  </statement>
+  <solution>
+    <p>
+      Some of the values <m>f(s_i)</m> are negative.
+    </p>
+  </solution>
+</activity>
+
+<figure xml:id="fig-riemann-sum-generic">
+  <caption>A generic Riemann sum.</caption>
+  <image width="100%">
+    <latex-image>
+      \begin{tikzpicture}
+        \draw[thick] (0,0) -- (5,0);
+        \draw[fill=gray!50] (0, 0) rectangle (0.8, 1);
+        \draw[fill=gray!50] (0.8, 0) rectangle (1.9, 1.75);
+        \draw[fill=gray!50] (1.9, 0) rectangle (3.4, -1.2);
+        \draw[fill=gray!50] (3.4, 0) rectangle (4.2, 0.85);
+        \draw[fill=gray!50] (4.2, 0) rectangle (5.7, 0.35);
+        \draw[fill=gray!50] (5.7, 0) rectangle (6, -0.5);
+        \draw[fill=black] (0.2, 1.0) circle (0.05);
+        \draw[fill=black] (1.55, 1.75) circle (0.05);
+        \draw[fill=black] (2.15, -1.2) circle (0.05);
+        \draw[fill=black] (3.8, 0.85) circle (0.05);
+        \draw[fill=black] (4.5, 0.35) circle (0.05);
+        \draw[fill=black] (6.0, -0.5) circle (0.05);
+        \node[above, font=\tiny] at (0.2, 1.0)  {$(s_1, f(s_1))$};
+        \node[above, font=\tiny] at (1.55, 1.75) {$(s_2, f(s_2))$};
+        \node[below, font=\tiny] at (2.15, -1.2)  {$(s_3, f(s_3))$};
+        \node[above, font=\tiny] at (3.8, 0.85) {$(s_4, f(s_4))$};
+        \node[above, font=\tiny] at (4.5, 0.35)  {$(s_5, f(s_5))$};
+        \node[below, font=\tiny] at (6.0, -0.5)  {$(s_6, f(s_6))$};
+        \draw[thick, style=dashed, color=blue] 
+          (0, 0.8) .. controls (0.1, 0.9) and (0.1, 1.1) ..
+          (0.2, 1.0) .. controls (1, 2) and (1, -1.0) ..
+          (1.55, 1.75) .. controls (1.8, -0.42) and (2.1, 1.9) ..
+          (2.15, -1.2) .. controls (2.6, -1.3) and (3.2, -1.1) ..
+          (3.8, 0.85) .. controls (3.9, 0.9) and (3.9, 0.8) ..
+          (4.5, 0.35) .. controls (4.6, 0.4) and (4.6, 0.3) ..
+          (6.0, -0.5)
+        ;
+        \node[font=\tiny] at (0,-0.15) {$x_0$};
+        \node[font=\tiny] at (0.8,-0.15) {$x_1$};
+        \node[font=\tiny] at (1.9,-0.15) {$x_2$};
+        \node[font=\tiny] at (3.4,-0.15) {$x_3$};
+        \node[font=\tiny] at (4.2,-0.15) {$x_4$};
+        \node[font=\tiny] at (5.7,-0.15) {$x_5$};
+        \node[font=\tiny] at (6,-0.15) {$x_6$};
+      \end{tikzpicture}
+          
+          %(2.15, -1.2)
+          %(3.8, 0.85) 
+          %(4.5, 0.35) 
+          %(6.0, -0.5)
+          
+    </latex-image>
+  </image>
+</figure>
+
+<activity>
+  <statement>
+    <p>
+      Why is the Riemann sum in <xref ref="fig-riemann-sum-generic"/> only <em>almost</em>
+      a sum of the areas of rectangles?
+    </p>
+    <ol label="A.">
+      <li>The subintervals have different widths.</li>
+      <li>The function is not differentiable.</li>
+      <li>Some of the values <m>f(s_i)</m> are negative.</li>
+      <li>The <m>x</m>-coordinates <m>s_i</m> are not equally spaced.</li>
+    </ol>
+  </statement>
+  <solution>
+    <p>
+      Some of the values <m>f(s_i)</m> are negative.
+    </p>
+  </solution>
+</activity>
+
+<activity xml:id="activity-left-riemann-sum">
+  <introduction>
+    <p>
+      There are some special Riemann sums that are often easier to
+      work with than the general Riemann sum of <xref ref="def-riemann-sum"/>.
+    </p>
+    <p>
+      In a <term>left Riemann sum</term>, the point <m>s_i</m> in each subinterval
+      is the left endpoint of the subinterval. That is,
+      <me>s_i = x_{i-1}</me>.
+    </p>
+    <p>
+      Consider the left Riemann sum for <m>f(x) = x^{2/3}</m> 
+      on the interval <m>[2, 4]</m> with 3 subintervals.
+    </p>
+  </introduction>
+  <task>
+      <p>What are <m>a</m> and <m>b</m> in this case?</p>
+  </task>
+  <task>
+    <p>
+      What is the value of <m>n</m>?
+    </p>
+  </task>
+  <task>
+    <p>
+      What are the values of the <m>x_i</m>?
+    </p>
+  </task>
+  <task>
+    <p>
+      What are the values of the <m>s_i</m>?
+    </p>
+  </task>
+  <task>
+    <p>What do you notice about the subinterval widths <m>x_{i} - x_{i-1}</m>?</p>
+  </task>
+  <task>
+    <p>
+      What is the value of the left Riemann sum?
+    </p>
+  </task>
+</activity>
+
+<activity xml:id="activity-right-riemann-sum">
+  <introduction>
+    <p>
+      The <term>right Riemann sum</term> is similar to the left Riemann sum,
+      but the point <m>s_i</m> in each subinterval is the right endpoint 
+      of the subinterval instead of the left endpoint.
+    </p>
+  </introduction>
+  <task>
+    <p>
+      Repeat the tasks in <xref ref="activity-left-riemann-sum"/> for
+      the right sum, again with 3 subintervals on the interval <m>[2, 4]</m>.
+    </p>
+  </task>
+</activity>
+
+<activity>
+  <introduction>
+    <p>
+      The <term>midpoint Riemann sum</term> is similar to the left and right Riemann sums,
+      but the point <m>s_i</m> in each subinterval is the midpoint of the subinterval.
+    </p>
+  </introduction>
+  <task>
+    <p>
+      What is the only thing that is different
+      from <xref ref="activity-left-riemann-sum"/> and
+      <xref ref="activity-right-riemann-sum"/> when computing 
+      the midpoint Riemann sum? Describe the difference precisely.
+    </p>
+    <solution>
+      <p>
+        The students should find the values of <m>s_i</m> for the midpoint Riemann sum.
+      </p>
+    </solution>
+  </task>
+  <task>
+    <p>
+      What is the value of this midpoint Riemann sum?
+    </p>
+  </task>
+</activity>
+
 <activity xml:id="riemann-fluency-checkit">
     <statement>
         <p>
-Explain how to approximate the area under the curve
-<m>f(x)=-9 \, x^{3} + 3 \, x - 9</m> on the
-interval <m>[4,10]</m> using a right Riemann
-sum with 3 rectangles of uniform width.
+          Explain how to approximate the area under the curve
+          <me>
+            f(x) = -\frac{1}{5} (x-4)(x-10)(x-12)
+          </me> on the
+          interval <m>[4,10]</m> using a right Riemann
+          sum with 3 subintervals.
         </p>
+        <image>
+          <description>The graph of the function <m>f(x) = -1/5 (x-4)(x-10)(x-12)</m>
+          crosses the <m>x</m>-axis upward at <m>(4,0)</m> and downward at <m>(10,0)</m>
+          with a maximum at about <m>(6.3, 9.7)</m>.
+        </description>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                axis lines=middle,
+                grid=both,
+                xmin=3,
+                xmax=11,
+                ymin=-1,
+                ymax=12,
+                xlabel=$x$,
+                ylabel=$y$,
+                xtick={3,4,...,10},
+                ytick={0,1,...,12},
+                legend pos=north east,
+              ]
+                \addplot[domain=3:11, smooth, thick, blue] {1/5*(x-4)*(x-10)*(x-12)};
+                \addlegendentry{{\tiny $f(x)=\frac{1}{5}(x-4)(x-10)(x-12)$}}
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
     </statement>
-<!--    <answer>
-        <p>
-            <m>-31014</m> square units
-        </p>
-    </answer>-->
-
-    </activity>    
+    <solution>
+      <p>
+        36.
+      </p>
+    </solution>
+  </activity>    
     
     </subsection>
     <subsection>
