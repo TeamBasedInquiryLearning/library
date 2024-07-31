@@ -60,7 +60,10 @@ class Generator(BaseGenerator):
     #         denomshadow=disttolight^2
 
             name = choice(["Cory","Mr. Feeny","Amy","Eric","Shawn","Morgan","Topanga"])
-            if name in ["Amy","Morgan","Topanga"]:
+            if choice([True, False, False]):
+                pronoun1="they"
+                pronoun2="their"
+            elif name in ["Amy","Morgan","Topanga"]:
                 pronoun1="she"
                 pronoun2="her"
             else: 
