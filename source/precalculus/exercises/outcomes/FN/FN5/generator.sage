@@ -2,17 +2,11 @@ class Generator(BaseGenerator):
 
   def data(self):
     function_type = choice(["rational","odd_root"])
+    a,b,c,d = sample([choice([-1,1]*n for n in range(1,10))], 4)
     if function_type=="rational":
-      a=choice([-5..-1,1..5])
-      b=choice([-5..-1,1..5])
-      c=choice([-5..-1,1..5])
-      d=choice([-5..-1,1..5])
-
       f=(a*x+b)/(c*x+d)
       f_inv = (-d*x+b)/(c*x-a)
     if function_type=="odd_root":
-      a=choice([-5..-1,1..5])
-      b=choice([-5..-1,1..5])
       r=choice([1/3,1/5,1/7,3,5,7])
       f=a+(x+b)^r
       f_inv = (x-a)^(1/r)-b
