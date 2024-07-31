@@ -1,44 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-
+    
+    <intro>
+        <p>
+            Question
+        </p>
+    </intro>
+    
+    
     <knowl>
         <content>
             <p>
-                On a coordinate plane large enough so that all of these features can be clearly visible, 
-                sketch the graph <m>y = f(x)</m> of a function which meets <em>all</em> of the following criteria.
-                Label and briefly explain how each criterion is visible on your graph. 
-                (You do not need to find a formula for your function.)
+                Task 
             </p>
-            <list mode="unordered">
-            {{#features1}}
-            <item><p><m>f</m> {{feature}} <m>{{result}}</m></p></item>
-            {{/features1}}
-            </list>
-            
         </content>
         <outtro>
-            <p>Answers will vary. Here is one example of such a graph.</p>
-            <p><image source="assets/FN3/generated/{{__seed__}}/graph1.png" 
-                description="An example of a graph meeting the criteria"/></p>
-            
-        </outtro>
-    </knowl>
-    <knowl>
-        <content>
             <p>
-                For the graph of the function <m>g(x)</m>below, determine the domain, 
-                range, x-intercepts, y-intercepts, local maxima and minima, global maxima and minima, and intervals of increase/decrease. 
+                Task answer
             </p>
-                <p><image source="assets/FN3/generated/{{__seed__}}/graph2.png" 
-                          description="An example of a graph meeting the criteria"/></p>
-        </content>
-        <outtro>
-            <p>Features are</p>
-            <list mode="unordered">
-            {{#features2}}
-            <item><p><m>g</m> {{feature}} <m>{{result}}</m></p></item>
-            {{/features2}}
-            </list>
         </outtro>
+        
     </knowl>
+      
+    
 </knowl>
