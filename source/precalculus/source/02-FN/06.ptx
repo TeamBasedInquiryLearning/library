@@ -19,7 +19,7 @@
         <p> Temperature can be measured using many different units such as Fahrenheit, Celsius, and Kelvin.  Fahrenheit is what is usually reported on the news each night in the United States, while Celsius is commonly used for scientific work. We will begin by converting between these two units.
       
           To convert from degrees Fahrenheit to Celsius use the following formula.
-          <me>C=\frac{5}{9} (F-32)</me>
+          <me>C=\dfrac{5}{9} (F-32)</me>
       </p>
         
       </introduction>
@@ -43,12 +43,12 @@
       </task>
       <task>
         <statement>
-          <p> Solve the equation <m>C=\frac{5}{9} (F-32)</m> for <m>F</m> in terms of <m>C</m>.
+          <p> Solve the equation <m>C=\dfrac{5}{9} (F-32)</m> for <m>F</m> in terms of <m>C</m>.
         <ol marker= "A." cols="1">  
-        <li> <m>F=\frac{5}{9} C + 32</m></li>
-        <li> <m>F=\frac{5}{9} C - 32</m> </li>
-        <li> <m>F=\frac{9}{5}( C + 32)</m> </li>
-        <li> <m>F=\frac{9}{5} C + 32</m> </li> 
+        <li> <m>F=\dfrac{5}{9} C + 32</m></li>
+        <li> <m>F=\dfrac{5}{9} C - 32</m> </li>
+        <li> <m>F=\dfrac{9}{5}( C + 32)</m> </li>
+        <li> <m>F=\dfrac{9}{5} C + 32</m> </li> 
       </ol>
       </p>
     </statement>
@@ -287,8 +287,8 @@
       <statement>
         <p> This set of operations reverses the process for the original function, so can be considered the inverse function.  Write an equation to express the inverse function <m>f^{-1}</m>.
       <ol marker= "A." cols="1">  
-      <li> <m>f^{-1}(x)=\frac{x}{3}-5</m></li>
-      <li> <m>f^{-1}(x)=\frac{x-5}{3}</m></li>
+      <li> <m>f^{-1}(x)=\dfrac{x}{3}-5</m></li>
+      <li> <m>f^{-1}(x)=\dfrac{x-5}{3}</m></li>
       <li> <m>f^{-1}(x)=5(x+3)</m></li>
       <li> <m>f^{-1}(x)=3x+5</m></li> 
     </ol>
@@ -337,10 +337,10 @@
         <p>
          Interchange the variables <m>x</m> and <m>y</m>.
          <ol marker= "A." cols="1">  
-          <li> <m>y=\frac{x}{x+1}</m></li>
-          <li> <m>x=\frac{y}{x+1}</m></li>
-          <li> <m>x=\frac{y}{y+1}</m></li>
-          <li> <m>x=\frac{x}{y+1}</m></li> 
+          <li> <m>y=\dfrac{x}{x+1}</m></li>
+          <li> <m>x=\dfrac{y}{x+1}</m></li>
+          <li> <m>x=\dfrac{y}{y+1}</m></li>
+          <li> <m>x=\dfrac{x}{y+1}</m></li> 
         </ol>
         </p>  
       </statement>
@@ -392,10 +392,10 @@
       <p>
        Write the inverse function, by factoring and solving for <m>y</m>.
        <ol marker= "A." cols="1">  
-        <li> <m>h^{-1}(x)= \frac{x}{x-1}</m></li>
-        <li> <m>h^{-1}(x)=\frac{x}{1-x}</m></li>
-        <li> <m>h^{-1}(x)= \frac{-x}{1-x}</m></li>
-        <li> <m>h^{-1}(x)= \frac{x+1}{x}</m></li> 
+        <li> <m>h^{-1}(x)= \dfrac{x}{x-1}</m></li>
+        <li> <m>h^{-1}(x)=\dfrac{x}{1-x}</m></li>
+        <li> <m>h^{-1}(x)= \dfrac{-x}{1-x}</m></li>
+        <li> <m>h^{-1}(x)= \dfrac{x+1}{x}</m></li> 
       </ol>
       </p>  
   </statement>
@@ -417,10 +417,10 @@
       <statement>
         <p> <m> g(x)=\dfrac{4x-1}{7} </m>
       <ol marker= "A." cols="1">  
-      <li> <m>g^{-1}(x)=\frac{7x+1}{4} </m></li>
-      <li> <m>g^{-1}(x)= \frac{7x}{4}+1</m></li>
-      <li> <m>g^{-1}(x)= \frac{4x+1}{7}</m></li>
-      <li> <m>g^{-1}(x)=\frac{7}{4x-1} </m></li> 
+      <li> <m>g^{-1}(x)=\dfrac{7x+1}{4} </m></li>
+      <li> <m>g^{-1}(x)= \dfrac{7x}{4}+1</m></li>
+      <li> <m>g^{-1}(x)= \dfrac{4x+1}{7}</m></li>
+      <li> <m>g^{-1}(x)=\dfrac{7}{4x-1} </m></li> 
     </ol>
     </p>
   </statement>
@@ -437,7 +437,7 @@
       <ol marker= "A." cols="1">  
       <li> <m>f^{-1}(x)=3+\sqrt{x-5} </m></li>
       <li> <m>f^{-1}(x)=(x-3)^{2}+5 </m></li>
-      <li> <m>f^{-1}(x)= \frac{1}{3-\sqrt{x+5}}</m></li>
+      <li> <m>f^{-1}(x)= \dfrac{1}{3-\sqrt{x+5}}</m></li>
       <li> <m>f^{-1}(x)=(3-x)^{2}-5 </m></li> 
     </ol>
     </p>

@@ -14,7 +14,7 @@
     <title>Activities</title>
     <observation>
       <p>We have seen previously that we can reduce rational functions by factoring, for example
-        <me>\frac{x^2+5x+4}{x^3+3x^2+2x}=\frac{(x+1)(x+4)}{x(x+2)(x+1)}=\frac{x+4}{x(x+2)}.</me>
+        <me>\dfrac{x^2+5x+4}{x^3+3x^2+2x}=\dfrac{(x+1)(x+4)}{x(x+2)(x+1)}=\dfrac{x+4}{x(x+2)}.</me>
         In this section, we will explore the question: what can we do to simplify rational functions if we are not able to 
         reduce by easily factoring?
     </p>
@@ -22,7 +22,7 @@
     <definition xml:id="proper-rational-function">
       <statement>
         <p> Recall that a fraction is called <term>proper</term> if its numerator is smaller than its denominator, and <term>improper</term> 
-          if the numerator is larger than the denominator (so <m>\frac{3}{5}</m> is a proper fraction, but <m>\frac{32}{7}</m> is an 
+          if the numerator is larger than the denominator (so <m>\dfrac{3}{5}</m> is a proper fraction, but <m>\dfrac{32}{7}</m> is an 
           improper fraction).  Similarly, we define a <term>proper rational function</term> to be a rational function where 
           the degree of the numerator is less than the degree of the denominator.  </p>
       </statement>
@@ -32,30 +32,30 @@
       <statement>
         Label each of the following rational functions as either <term>proper</term> or <term>improper</term>.
         <ol marker="A.">
-          <li><m> \frac{x^3+x}{x^2+4}</m></li>
-          <li><m> \frac{3}{x^2+3x+4}</m></li>
-          <li><m> \frac{7+x^3}{x^2+x+1}</m></li>
-          <li><m> \frac{x^4+x+1}{x^4+4x^2}</m></li>
+          <li><m> \dfrac{x^3+x}{x^2+4}</m></li>
+          <li><m> \dfrac{3}{x^2+3x+4}</m></li>
+          <li><m> \dfrac{7+x^3}{x^2+x+1}</m></li>
+          <li><m> \dfrac{x^4+x+1}{x^4+4x^2}</m></li>
         </ol>
       </statement>
       <answer><p>A, C, and D are improper, while B is proper.</p></answer>
     </activity>
 
     <observation>
-      <p>When dealing with an improper fraction such as <m>\frac{32}{7}</m>, it is sometimes useful to rewrite this
-        as an integer plus a proper fraction, e.g. <m>\frac{32}{7}=4+\frac{4}{7}</m>.  Similarly, it will sometimes be
+      <p>When dealing with an improper fraction such as <m>\dfrac{32}{7}</m>, it is sometimes useful to rewrite this
+        as an integer plus a proper fraction, e.g. <m>\dfrac{32}{7}=4+\dfrac{4}{7}</m>.  Similarly, it will sometimes be
         useful to rewrite an improper rational function as the sum of a polynomial and a proper rational function, such 
-        as <m>\frac{x^3+x}{x^2+4}=x-\frac{3x}{x^2+4}</m>.
+        as <m>\dfrac{x^3+x}{x^2+4}=x-\dfrac{3x}{x^2+4}</m>.
       </p>
     </observation>
 
     <activity xml:id="Long-division-integer">
     <introduction>
-      Consider the improper fraction <m>\frac{357}{11}</m>.
+      Consider the improper fraction <m>\dfrac{357}{11}</m>.
     </introduction>
     <task>
       <statement>
-        <p>Use long division to write <m>\frac{357}{11}</m> as an integer plus a proper fraction.</p>
+        <p>Use long division to write <m>\dfrac{357}{11}</m> as an integer plus a proper fraction.</p>
       </statement>
       <answer>
       <image xml:id="long-division-integers" width="30%">                
@@ -75,7 +75,7 @@
                 \)
                 </latex-image>
                 </image>
-                <p>So <m>\frac{357}{11}=32+\frac{5}{11}</m>.</p>
+                <p>So <m>\dfrac{357}{11}=32+\dfrac{5}{11}</m>.</p>
               </answer>
     </task>
     <task>
@@ -85,36 +85,36 @@
       By comparing the leading terms in these expansions, we see that to knock off the leading term of <m>357</m>, we need to
       multiply <m>11</m> by <m>3\cdot10^1</m>.
     </p>
-    <p>Using the fact that <m>357=11\cdot30+27</m>, rewrite <m>\frac{357}{11}</m> as <m>\frac{357}{11}=30+\frac{?}{11}</m>.
+    <p>Using the fact that <m>357=11\cdot30+27</m>, rewrite <m>\dfrac{357}{11}</m> as <m>\dfrac{357}{11}=30+\dfrac{?}{11}</m>.
     </p>
       </statement>
-      <answer><p><m>\frac{357}{11}=30+\frac{27}{11}</m>.</p></answer>
+      <answer><p><m>\dfrac{357}{11}=30+\dfrac{27}{11}</m>.</p></answer>
   </task>
   <task>
     <statement>
-    <p>Note now that if we can rewrite <m>\frac{27}{11}</m> as an integer plus a proper fraction, we will be done, 
-      since <m>\frac{357}{11}=30+\frac{27}{11}</m>.
+    <p>Note now that if we can rewrite <m>\dfrac{27}{11}</m> as an integer plus a proper fraction, we will be done, 
+      since <m>\dfrac{357}{11}=30+\dfrac{27}{11}</m>.
     </p>
     <p>
-      Rewrite <m>\frac{27}{11}=?+\frac{?}{11}</m> as an integer plus a proper fraction.
+      Rewrite <m>\dfrac{27}{11}=?+\dfrac{?}{11}</m> as an integer plus a proper fraction.
     </p>
     </statement>
-      <answer><p><m>\frac{27}{11}=2+\frac{5}{11}</m>.</p></answer>
+      <answer><p><m>\dfrac{27}{11}=2+\dfrac{5}{11}</m>.</p></answer>
   </task>
   <task>
     <statement>
-    <p>Combine your work in the previous two parts to rewrite <m>\frac{357}{11}</m> as an integer plus a proper fraction.  
+    <p>Combine your work in the previous two parts to rewrite <m>\dfrac{357}{11}</m> as an integer plus a proper fraction.  
       How does this compare to what you obtained in part (a)?
     </p>
     </statement>
-      <answer><p><m>\frac{357}{11}=30+\frac{27}{11}=30+2+\frac{5}{11}=32+\frac{5}{11}</m>.</p></answer>
+      <answer><p><m>\dfrac{357}{11}=30+\dfrac{27}{11}=30+2+\dfrac{5}{11}=32+\dfrac{5}{11}</m>.</p></answer>
   </task>
   </activity>
 
 <activity xml:id="long-division-activity-1">
   <introduction>
     <p>
-      Now let's consider the rational function <m>\frac{3x^2+5x+7}{x+1}</m>.  We want to rewrite this as a polynomial
+      Now let's consider the rational function <m>\dfrac{3x^2+5x+7}{x+1}</m>.  We want to rewrite this as a polynomial
       plus a proper rational function.
     </p>
   </introduction>
@@ -134,15 +134,15 @@
   </task>
   <task>
     <statement>
-    <p>Rewrite <m>3x^2+5x+7=3x(x+1)+?</m>, and use this to rewrite <m>\frac{3x^2+5x+7}{x+1}=3x+\frac{?}{x+1}</m>.
+    <p>Rewrite <m>3x^2+5x+7=3x(x+1)+?</m>, and use this to rewrite <m>\dfrac{3x^2+5x+7}{x+1}=3x+\dfrac{?}{x+1}</m>.
     </p>
     </statement>
-    <answer><p><m>\frac{3x^2+5x+7}{x+1}=3x+\frac{2x+7}{x+1}</m></p></answer>
+    <answer><p><m>\dfrac{3x^2+5x+7}{x+1}=3x+\dfrac{2x+7}{x+1}</m></p></answer>
   </task>
   <task>
     <statement>
     <p>
-      Now focusing on <m>\frac{2x+7}{x+1}</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
+      Now focusing on <m>\dfrac{2x+7}{x+1}</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
       as <m>2x+7</m>?
     </p>
     <ol marker="A.">
@@ -156,21 +156,21 @@
   </task>
   <task>
     <statement>
-  <p> Rewrite <m>\frac{2x+7}{x+1}=2+\frac{?}{x+1}</m>.</p>
+  <p> Rewrite <m>\dfrac{2x+7}{x+1}=2+\dfrac{?}{x+1}</m>.</p>
     </statement>
-    <answer><p><m>\frac{2x+7}{x+1}=2+\frac{5}{x+1}</m></p></answer>
+    <answer><p><m>\dfrac{2x+7}{x+1}=2+\dfrac{5}{x+1}</m></p></answer>
   </task>
   <task>
     <statement>
-    <p>Combine this with the previous parts to rewrite <m>\frac{3x^2+5x+7}{x+1}=3x+?+\frac{?}{x+1}</m>.</p>
+    <p>Combine this with the previous parts to rewrite <m>\dfrac{3x^2+5x+7}{x+1}=3x+?+\dfrac{?}{x+1}</m>.</p>
     </statement>
-    <answer><p><m>\frac{3x^2+5x+7}{x+1}=3x+2+\frac{5}{x+1}</m></p></answer>
+    <answer><p><m>\dfrac{3x^2+5x+7}{x+1}=3x+2+\dfrac{5}{x+1}</m></p></answer>
   </task>
 </activity>
 
     <activity xml:id="Long-Division-Intro-Steps">
         <introduction>
-          <p>Next we will use the notation of long division to rewrite the rational function  <m>\frac{3x^2+5x+7}{x+1}</m> as a 
+          <p>Next we will use the notation of long division to rewrite the rational function  <m>\dfrac{3x^2+5x+7}{x+1}</m> as a 
             polynomial plus a proper rational function.</p> 
         </introduction>
        
@@ -335,10 +335,10 @@
               <task>
                 <statement>
                 <p>This long division calculation has shown that <me>3x^2+5x+7 = (x+1)(3x+2)+5</me>.  
-                  Use this to rewrite <m>\frac{3x^2+5x+7}{x+1}</m> as a polynomial plus a proper rational function.</p>
+                  Use this to rewrite <m>\dfrac{3x^2+5x+7}{x+1}</m> as a polynomial plus a proper rational function.</p>
                 </statement>
                 <answer>
-                  <p><m>\frac{3x^2+5x+7}{x+1} = 3x+2+\frac{5}{x+1}</m></p>
+                  <p><m>\dfrac{3x^2+5x+7}{x+1} = 3x+2+\dfrac{5}{x+1}</m></p>
                 </answer>
               </task>
             </activity>
@@ -348,24 +348,24 @@
 
       <activity>
         <statement>
-          <p>Rewrite <m>\frac{x^2+1}{x-1}</m> as a polynomial plus a proper rational function.</p>
+          <p>Rewrite <m>\dfrac{x^2+1}{x-1}</m> as a polynomial plus a proper rational function.</p>
         </statement>
         <hint><p>Note that <m>x^2+1=x^2+0x+1</m>.</p></hint>
-        <answer><p><m>x+1+\frac{3}{x-1}</m>.</p></answer>
+        <answer><p><m>x+1+\dfrac{3}{x-1}</m>.</p></answer>
       </activity>
 
       <activity>
         <statement>
-          <p>Rewrite <m>\frac{x^5+x^3+2x^2-6x+7}{x^2+x-1}</m> as a polynomial plus a proper rational function.</p> 
+          <p>Rewrite <m>\dfrac{x^5+x^3+2x^2-6x+7}{x^2+x-1}</m> as a polynomial plus a proper rational function.</p> 
         </statement>
         <answer>
-          <p><m>x^3-x^2+3x-2+\frac{-x+5}{x^2+x-1}</m>.</p>
+          <p><m>x^3-x^2+3x-2+\dfrac{-x+5}{x^2+x-1}</m>.</p>
         </answer>
       </activity>
 
       <activity>
         <statement>
-          <p>Rewrite <m>\frac{3x^4-5x^2+2}{x-1}</m> as a polynomial plus a proper rational function.</p> 
+          <p>Rewrite <m>\dfrac{3x^4-5x^2+2}{x-1}</m> as a polynomial plus a proper rational function.</p> 
         </statement>
         <answer><p><m>3x^3+3x^2-2x-2</m>.</p></answer>
       </activity>

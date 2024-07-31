@@ -3,20 +3,47 @@
     
     <intro>
         <p>
-            Question
+            Let <m>{{fname}}(x)</m> be the function given by the graph below.
         </p>
+        <p>
+                <image
+                        source="assets/FN4/generated/{{__seed__}}/plot1.png"
+                        description="Original graph"/>
+        </p>
+        <p>Let <m>{{gname}}(x)={{g_transform}}</m>.</p>
     </intro>
     
     
     <knowl>
         <content>
             <p>
-                Task 
+                Describe how the graph of <m>{{gname}}(x)</m> is related to the graph of <m>{{fname}}(x)</m>. 
+                Be sure to explicitly state the sequence of transformations.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                To produce <m>{{gname}}(x)</m>, the graph of <m>{{fname}}(x)</m>is shifted {{hshift}} by <m>{{b}}</m>,
+                <!--{{#flip}}-->
+                flipped vertically,
+                <!--{{/flip}}-->
+                and then shifted {{vshift}} by <m>{{c}}</m>.
+            </p>
+        </outtro>
+        
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                Sketch a graph of <m>{{gname}}(x)</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <image
+                        source="assets/FN4/generated/{{__seed__}}/plot2.png"
+                        description="Transformed graph"/>
             </p>
         </outtro>
         

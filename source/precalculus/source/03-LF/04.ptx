@@ -33,7 +33,7 @@
       <ol marker="A." cols="2">
         <li><p><m>1</m> </p></li>
         <li><p> <m>2</m> </p></li>
-        <li><p> <m>\frac{1}{2} </m> </p></li>
+        <li><p> <m>\dfrac{1}{2} </m> </p></li>
         <li><p> <m>-2</m> </p></li>
     </ol> </p>
   </statement>
@@ -49,7 +49,7 @@
       <ol marker="A." cols="2">
         <li><p> <m>1</m> </p></li>
         <li><p> <m>2</m> </p></li>
-        <li><p> <m>\frac{1}{2}</m> </p></li>
+        <li><p> <m>\dfrac{1}{2}</m> </p></li>
         <li><p> <m>-2</m> </p></li>
     </ol> </p>
   </statement>
@@ -132,7 +132,7 @@
 <activity xml:id="LR4-write-equation-of-parallel-line">
  <introduction>
   <p>
-   Suppose you have the function, <me>f(x)=-\frac{1}{2}x-1</me>
+   Suppose you have the function, <me>f(x)=-\dfrac{1}{2}x-1</me>
   </p>
  </introduction> 
  <task>
@@ -143,7 +143,7 @@
       <li><m>-1</m></li>
       <li><m>2</m></li>
       <li><m>1</m></li>
-      <li><m>-\frac{1}{2}</m></li></ol>
+      <li><m>-\dfrac{1}{2}</m></li></ol>
     </p>
   </statement>
   <answer>
@@ -160,7 +160,7 @@
       <li><m>-1</m></li>
       <li><m>2</m></li>
       <li><m>1</m></li>
-      <li><m>-\frac{1}{2}</m></li></ol>
+      <li><m>-\dfrac{1}{2}</m></li></ol>
     </p>
   </statement>
   <answer>
@@ -177,7 +177,7 @@
   </statement>
   <answer>
     <p>
-      <m>y-2=-\frac{1}{2}(x+4)</m> or <p> <m>y=-\frac{1}{2}x</m> </p>
+      <m>y-2=-\dfrac{1}{2}(x+4)</m> or <p> <m>y=-\dfrac{1}{2}x</m> </p>
     </p>
   </answer>
 </task>
@@ -204,7 +204,7 @@
       <ol marker="A." cols="2">
         <li><p><m>3</m> </p></li>
         <li><p> <m>2</m> </p></li>
-        <li><p> <m>-\frac{1}{2} </m> </p></li>
+        <li><p> <m>-\dfrac{1}{2} </m> </p></li>
         <li><p> <m>-2</m> </p></li>
     </ol> </p>
   </statement>
@@ -220,7 +220,7 @@
       <ol marker="A." cols="2">
         <li><p> <m>3</m> </p></li>
         <li><p> <m>2</m> </p></li>
-        <li><p> <m>-\frac{1}{2} </m> </p></li>
+        <li><p> <m>-\dfrac{1}{2} </m> </p></li>
         <li><p> <m>-2</m> </p></li>
     </ol> </p>
   </statement>
@@ -235,7 +235,7 @@
     <p> What is the <m>y</m>-intercept of line A?
       <ol marker="A." cols="2">
         <li><p> <m>-2</m> </p></li>
-        <li><p> <m>-\frac{1}{2}</m> </p></li>
+        <li><p> <m>-\dfrac{1}{2}</m> </p></li>
         <li><p> <m>2 </m> </p></li>
         <li><p> <m>3</m> </p></li>
     </ol> </p>
@@ -251,7 +251,7 @@
     <p> What is the <m>y</m>-intercept of line B?
         <ol marker="A." cols="2">
           <li><p> <m>-2</m> </p></li>
-          <li><p> <m>-\frac{1}{2}</m> </p></li>
+          <li><p> <m>-\dfrac{1}{2}</m> </p></li>
           <li><p> <m>1 </m> </p></li>
           <li><p> <m>3</m> </p></li>
       </ol> </p>
@@ -270,7 +270,7 @@
   </statement>
   <answer>
     <p>
-      Line A could be written as <m>-\frac{1}{2}</m> and Line B could be written as <m>\frac{2}{1}</m>.
+      Line A could be written as <m>-\dfrac{1}{2}</m> and Line B could be written as <m>\dfrac{2}{1}</m>.
     </p>
   </answer>
 </task>
@@ -289,7 +289,7 @@
   </activity>
 
   <remark>
-    Notice in <xref ref="LR4-investigating-perpendicular-lines"/>, that even though the two lines have different slopes, the slopes are somewhat similar. For example, if you take the slope of Line A <m>\left(-\frac{1}{2}\right)</m> and flip and negate it, you will get the slope of Line B <m>\left(\frac{2}{1}\right)</m>.
+    Notice in <xref ref="LR4-investigating-perpendicular-lines"/>, that even though the two lines have different slopes, the slopes are somewhat similar. For example, if you take the slope of Line A <m>\left(-\dfrac{1}{2}\right)</m> and flip and negate it, you will get the slope of Line B <m>\left(\dfrac{2}{1}\right)</m>.
   </remark>
 
   <definition xml:id="def-perpendicular-lines">
@@ -311,10 +311,10 @@
        <p>
          What is the slope of <m>f(x)</m>?
        <ol marker= "A." cols="2">
-         <li><m>-\frac{1}{3}</m></li>
+         <li><m>-\dfrac{1}{3}</m></li>
          <li><m>3</m></li>
          <li><m>5</m></li>
-         <li><m>-\frac{1}{5}</m></li></ol>
+         <li><m>-\dfrac{1}{5}</m></li></ol>
        </p>
      </statement>
      <answer>
@@ -328,10 +328,10 @@
        <p>
          Applying <xref ref="def-perpendicular-lines"/>, what would the slope of a line perpendicular to <m>f(x)</m> be?
        <ol marker= "A." cols="2">
-        <li><m>-\frac{1}{3}</m></li>
+        <li><m>-\dfrac{1}{3}</m></li>
         <li><m>3</m></li>
         <li><m>5</m></li>
-        <li><m>-\frac{1}{5}</m></li></ol>
+        <li><m>-\dfrac{1}{5}</m></li></ol>
        </p>
      </statement>
      <answer>
@@ -348,7 +348,7 @@
      </statement>
      <answer>
        <p>
-         <m>y-6=-\frac{1}{3}(x-3)</m> or <p> <m>y=-\frac{1}{3}x+7</m> </p>
+         <m>y-6=-\dfrac{1}{3}(x-3)</m> or <p> <m>y=-\dfrac{1}{3}x+7</m> </p>
        </p>
      </answer>
    </task>
@@ -391,25 +391,25 @@
       <statement>
         <p>
           <me>f(x)=6x-5</me>
-          <me>g(x)=\frac{1}{6}x+8</me>
+          <me>g(x)=\dfrac{1}{6}x+8</me>
         </p>
       </statement>
       <answer>
         <p>
-          Neither. The slope of <m>f(x)</m> is <m>6</m> and the slope of <m>g(x)</m> is <m>\frac{1}{6}</m>. Although they are reciprocals of one another, they are not negative reciprocals.
+          Neither. The slope of <m>f(x)</m> is <m>6</m> and the slope of <m>g(x)</m> is <m>\dfrac{1}{6}</m>. Although they are reciprocals of one another, they are not negative reciprocals.
         </p>
       </answer>
     </task>
     <task>
       <statement>
         <p>
-          <me>f(x)=\frac{4}{5}x+3</me>
-          <me>g(x)=-\frac{5}{4}x-1</me>
+          <me>f(x)=\dfrac{4}{5}x+3</me>
+          <me>g(x)=-\dfrac{5}{4}x-1</me>
         </p>
       </statement>
       <answer>
         <p>
-          Perpendicular. The slope of <m>f(x)</m> is <m>\frac{4}{5}</m> and the slope of <m>g(x)</m> is <m>-\frac{5}{4}</m> (and are negative reciprocals of one another).
+          Perpendicular. The slope of <m>f(x)</m> is <m>\dfrac{4}{5}</m> and the slope of <m>g(x)</m> is <m>-\dfrac{5}{4}</m> (and are negative reciprocals of one another).
         </p> 
       </answer>
     </task>
@@ -418,7 +418,7 @@
    <activity xml:id="write-equations-for-both-parallel-and-perpendicular">
     <introduction>
       <p>
-        Consider the linear equation, <m>f(x)=-\frac{2}{3}x-4</m> and the point A: <m>(-6,4)</m>.
+        Consider the linear equation, <m>f(x)=-\dfrac{2}{3}x-4</m> and the point A: <m>(-6,4)</m>.
       </p>
     </introduction>
     <task>
@@ -429,8 +429,8 @@
       </statement>
       <answer>
         <p>
-          <m>y-4=-\frac{2}{3}(x+6)</m> or <p>
-            <m>y=-\frac{2}{3}x</m>
+          <m>y-4=-\dfrac{2}{3}(x+6)</m> or <p>
+            <m>y=-\dfrac{2}{3}x</m>
           </p>
         </p>
       </answer>
@@ -443,8 +443,8 @@
       </statement>
       <answer>
         <p>
-          <m>y-4=\frac{3}{2}(x+6)</m> or <p>
-            <m>y=\frac{3}{2}x+13</m>
+          <m>y-4=\dfrac{3}{2}(x+6)</m> or <p>
+            <m>y=\dfrac{3}{2}x+13</m>
           </p>
         </p>
       </answer>
@@ -471,7 +471,7 @@
             <li>undefined</li>
             <li><m>0</m></li>
             <li><m>1</m></li>
-            <li><m>-\frac{1}{2}</m></li></ol>
+            <li><m>-\dfrac{1}{2}</m></li></ol>
         </p>
         </statement>
         <answer>
@@ -488,7 +488,7 @@
             <li>undefined</li>
             <li><m>0</m></li>
             <li><m>1</m></li>
-            <li><m>-\frac{1}{2}</m></li></ol>
+            <li><m>-\dfrac{1}{2}</m></li></ol>
         </p>
         </statement>
         <answer>
@@ -517,12 +517,12 @@
               <li>undefined</li>
               <li><m>0</m></li>
               <li><m>1</m></li>
-              <li><m>-\frac{1}{2}</m></li></ol>
+              <li><m>-\dfrac{1}{2}</m></li></ol>
           </p>
           </statement>
           <answer>
             <p>
-              A. You might need to help students see why the slope is undefined by showing that <m>-\frac{1}{0}</m> is not defined.
+              A. You might need to help students see why the slope is undefined by showing that <m>-\dfrac{1}{0}</m> is not defined.
             </p>
           </answer>
         </task>

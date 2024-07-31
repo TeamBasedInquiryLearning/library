@@ -16,7 +16,7 @@
     <definition xml:id="def-rational-func">
       <statement>
         <p> A function <m>r</m> is <term>rational</term><idx>rational function</idx> provided that it is possible to write <m>r</m> as the ratio of two polynomials, <m>p</m> and <m>q</m>. That is, <m>r</m> is rational provided that for some polynomial functions <m>p</m> and <m>q</m>, we have <me>
-          r(x) = \frac{p(x)}{q(x)}\text{.}</me>
+          r(x) = \dfrac{p(x)}{q(x)}\text{.}</me>
         
         </p>
       </statement>
@@ -33,7 +33,7 @@
     <activity xml:id="activity-rf-domain-and-zeros">
       <introduction>
         <p>Consider the rational function <me>
-          r(x) = \frac{x^2-3x+2}{x^2-4x+3}\text{.}</me> </p>
+          r(x) = \dfrac{x^2-3x+2}{x^2-4x+3}\text{.}</me> </p>
         
       </introduction>
       <task>
@@ -67,7 +67,7 @@
     <observation xml:id="obs-rf-domain">
       <statement>
         <p>
-          Let <m>p</m> and <m>q</m> be polynomial functions so that <m>r(x) = \frac{p(x)}{q(x)}</m> is a rational function.  The domain<idx><h>rational function</h><h>domain</h></idx> of <m>r</m> is the set of all real numbers except those for which <m>q(x) = 0</m>.
+          Let <m>p</m> and <m>q</m> be polynomial functions so that <m>r(x) = \dfrac{p(x)}{q(x)}</m> is a rational function.  The domain<idx><h>rational function</h><h>domain</h></idx> of <m>r</m> is the set of all real numbers except those for which <m>q(x) = 0</m>.
         </p>
        
       </statement>
@@ -79,7 +79,7 @@
     <activity xml:id="activity-rf-domain">
       <introduction>
         <p><p>  Let's investigate the domain of <m>r(x)</m> more closely. We will be using the same function from the previous activity:</p> <me>
-          r(x) = \frac{x^2-3x+2}{x^2-4x+3}\text{.}</me> </p>
+          r(x) = \dfrac{x^2-3x+2}{x^2-4x+3}\text{.}</me> </p>
         
       </introduction>
       <task>
@@ -306,7 +306,7 @@
     <observation xml:id="obs-rf-domain">
       <statement>
         <p>
-          When we are finding the domain of a rational function<idx><h>rational function</h><h>domain</h></idx>, <m>r(x) = \frac{p(x)}{q(x)}</m>, we look for all values that would make the denominator equal zero. Then the domain is the set of all real numbers except those for which <m>q(x) = 0</m>
+          When we are finding the domain of a rational function<idx><h>rational function</h><h>domain</h></idx>, <m>r(x) = \dfrac{p(x)}{q(x)}</m>, we look for all values that would make the denominator equal zero. Then the domain is the set of all real numbers except those for which <m>q(x) = 0</m>
         </p>
        
       </statement>
@@ -345,7 +345,7 @@
       <remark xml:id="rf-zeros-asymptotes-holes">
         <title>Features of a rational function</title>
        <p>
-         Let <m>r(x) = \frac{p(x)}{q(x)}</m> be a rational function.
+         Let <m>r(x) = \dfrac{p(x)}{q(x)}</m> be a rational function.
        </p>
   
        <p>
@@ -385,7 +385,7 @@
       <activity xml:id="activity-rf-ha">
         <introduction>
           <p> 
-          Consider the rational function <m>\displaystyle r(x)=\frac{1}{x^3}</m>.
+          Consider the rational function <m>\displaystyle r(x)=\dfrac{1}{x^3}</m>.
         </p>
         </introduction> 
         <task>
@@ -432,10 +432,10 @@
       <observation xml:id="obs-rf-HA">
         <statement>
           <p>
-            We can generalize what we have just found to any function of the form <m>\frac{1}{x^n}</m>, where <m>n>0</m>. Since <m>x^n</m> increases without bound as <m>x \to \infty</m>, we find that <m>\frac{1}{x^n}</m> will tend to 0. In fact, the numerator can be any constant and the function will still tend to 0!
+            We can generalize what we have just found to any function of the form <m>\dfrac{1}{x^n}</m>, where <m>n>0</m>. Since <m>x^n</m> increases without bound as <m>x \to \infty</m>, we find that <m>\dfrac{1}{x^n}</m> will tend to 0. In fact, the numerator can be any constant and the function will still tend to 0!
           </p>
            <p>
-            Similarly, as <m>x \to -\infty</m>, we find that <m>\frac{1}{x^n}</m> will tend to 0 too. 
+            Similarly, as <m>x \to -\infty</m>, we find that <m>\dfrac{1}{x^n}</m> will tend to 0 too. 
            </p>   
           
          
@@ -445,7 +445,7 @@
       <activity xml:id="act-rf-ha2">
         <introduction>
           <p>
-            Consider the rational function <m>\displaystyle r(x) = \frac{3x^2 - 5x + 1}{7x^2 + 2x - 11}</m>.
+            Consider the rational function <m>\displaystyle r(x) = \dfrac{3x^2 - 5x + 1}{7x^2 + 2x - 11}</m>.
           </p>
           <p>
             Observe that the largest power of <m>x</m> that's present in <m>r(x)</m> is <m>x^2</m>.  In addition, because of the dominant terms of <m>3x^2</m> in the numerator and <m>7x^2</m> in the denominator, both the numerator and denominator of <m>r</m> increase without bound as <m>x</m> increases without bound.
@@ -458,24 +458,24 @@
               In order to understand the end behavior of <m>r</m>, we will start by writing the function in a different algebraic form.  
           </p>
           <p>
-            Multiply the numerator and denominator of <m>r</m> by <m>\frac{1}{x^2}</m>.  Then distribute and simplify as much as possible in both the numerator and denominator to write <m>r</m> in a different algebraic form. Which of the following is that new form? 
+            Multiply the numerator and denominator of <m>r</m> by <m>\dfrac{1}{x^2}</m>.  Then distribute and simplify as much as possible in both the numerator and denominator to write <m>r</m> in a different algebraic form. Which of the following is that new form? 
 
             <ol marker= "A.">  
               <li> <m>
-                \frac{3x^4 - 5x^3 +x^2}{7x^4+2x^3-11x^2}
+                \dfrac{3x^4 - 5x^3 +x^2}{7x^4+2x^3-11x^2}
               </m>
               </li>
               <li> <m>
-                \frac{3 - \frac{5}{x} + \frac{1}{x^2}}{7 + \frac{2}{x} - \frac{11}{x^2}}
+                \dfrac{3 - \dfrac{5}{x} + \dfrac{1}{x^2}}{7 + \dfrac{2}{x} - \dfrac{11}{x^2}}
               </m>
               </li>
               <li> <m>
-                \frac{\frac{3x^2}{x^2} - \frac{5x}{x^2} + \frac{1}{x^2}}{\frac{7x^2}{x^2} + \frac{2x}{x^2} - \frac{11}{x^2}}
+                \dfrac{\dfrac{3x^2}{x^2} - \dfrac{5x}{x^2} + \dfrac{1}{x^2}}{\dfrac{7x^2}{x^2} + \dfrac{2x}{x^2} - \dfrac{11}{x^2}}
               </m>
               </li>
               <li>
                 <m>
-                  \frac{3x^2 - 5x +1}{7x^4+2x^3-11x^2}
+                  \dfrac{3x^2 - 5x +1}{7x^4+2x^3-11x^2}
                 </m>
               </li>
                
@@ -514,7 +514,7 @@
              <ol marker= "A.">  
               <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>0</m>.
               </li>
-              <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>\frac{3}{7}</m>.
+              <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>\dfrac{3}{7}</m>.
               </li>
               <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>\infty</m>.
               </li>
@@ -557,11 +557,11 @@
            <ol marker= "A.">  
             <li> <m>y=0</m>
             </li>
-            <li> <m>y=\frac{4}{9}</m>
+            <li> <m>y=\dfrac{4}{9}</m>
             </li>
-            <li> <m>y=-\frac{3}{7}</m>
+            <li> <m>y=-\dfrac{3}{7}</m>
             </li>
-            <li> <m>y=-\frac{6}{5}</m>
+            <li> <m>y=-\dfrac{6}{5}</m>
             </li>
             <li> There is no horizontal asymptote.
             </li>       
@@ -582,11 +582,11 @@
         <ol marker= "A.">  
           <li> <m>y=0</m>
           </li>
-          <li> <m>y=\frac{4}{9}</m>
+          <li> <m>y=\dfrac{4}{9}</m>
           </li>
-          <li> <m>y=-\frac{3}{7}</m>
+          <li> <m>y=-\dfrac{3}{7}</m>
           </li>
-          <li> <m>y=-\frac{6}{5}</m>
+          <li> <m>y=-\dfrac{6}{5}</m>
           </li>
           <li> There is no horizontal asymptote.
           </li>       
@@ -605,11 +605,11 @@
          <ol marker= "A.">  
           <li> <m>y=0</m>
           </li>
-          <li> <m>y=\frac{4}{9}</m>
+          <li> <m>y=\dfrac{4}{9}</m>
           </li>
-          <li> <m>y=-\frac{3}{7}</m>
+          <li> <m>y=-\dfrac{3}{7}</m>
           </li>
-          <li> <m>y=-\frac{6}{5}</m>
+          <li> <m>y=-\dfrac{6}{5}</m>
           </li>
           <li> There is no horizontal asymptote.
           </li>       
@@ -748,7 +748,7 @@
       </introduction>
       <task>
         <statement>
-        <p>Which of the graphs above represents the function <m>\displaystyle f(x)=\frac{2x}{x^2-2x-8}</m>?</p>
+        <p>Which of the graphs above represents the function <m>\displaystyle f(x)=\dfrac{2x}{x^2-2x-8}</m>?</p>
       </statement>
       <answer>
         <p>
@@ -758,7 +758,7 @@
       </task>
       <task>
         <statement>
-        <p>Which of the graphs above represents the function <m>\displaystyle g(x)=\frac{x^2+3}{2x^2-8}</m>?</p>
+        <p>Which of the graphs above represents the function <m>\displaystyle g(x)=\dfrac{x^2+3}{2x^2-8}</m>?</p>
         </statement>
         <answer>
           <p>
@@ -858,7 +858,7 @@
       </introduction>
       <task>
         <statement>
-        <p>Which of the graphs above represents the function <m>\displaystyle f(x)=\frac{x^2+5x+6}{(x^2-3x-10)(x+4)}</m>?</p>
+        <p>Which of the graphs above represents the function <m>\displaystyle f(x)=\dfrac{x^2+5x+6}{(x^2-3x-10)(x+4)}</m>?</p>
         </statement>
         <answer>
           <p>
@@ -868,7 +868,7 @@
       </task>
       <task>
         <statement>
-        <p>Which of the graphs above represents the function <m>\displaystyle g(x)=\frac{x^2-3x-10}{(x+2)(x^2-x-20)}</m>?</p>
+        <p>Which of the graphs above represents the function <m>\displaystyle g(x)=\dfrac{x^2-3x-10}{(x+2)(x^2-x-20)}</m>?</p>
       </statement>
       <answer>
         <p>
@@ -881,7 +881,7 @@
     <activity xml:id="activity-rf-domain-and-zeros-fluency">
       <introduction>
         <p>
-          Let <m>f(x)=\displaystyle \frac{ -{\left(x - 1\right)} {\left(x - 4\right)} }{ 2 \, {\left(x + 3\right)}^{2} {\left(x - 1\right)} }</m>.
+          Let <m>f(x)=\displaystyle \dfrac{ -{\left(x - 1\right)} {\left(x - 4\right)} }{ 2 \, {\left(x + 3\right)}^{2} {\left(x - 1\right)} }</m>.
         </p>
       </introduction>
       <task>
@@ -931,7 +931,7 @@
           <p> Find any holes on the graph of <m>f(x)</m>. </p>
         </statement>
         <answer>
-          <p> There is a hole at <m>\left(1, \frac{3}{32} \right)</m>. </p>
+          <p> There is a hole at <m>\left(1, \dfrac{3}{32} \right)</m>. </p>
         </answer>
       </task>
       <task>
@@ -964,7 +964,7 @@ https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-ratio
       <task>
         <statement>
         <p>
-          <m>\displaystyle r(x) = \frac{x^2-16}{x+4}</m>
+          <m>\displaystyle r(x) = \dfrac{x^2-16}{x+4}</m>
         </p>
       </statement>
       <answer>
@@ -976,7 +976,7 @@ https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-ratio
       <task>
         <statement>
         <p>
-          <m>\displaystyle s(x) = \frac{(x-2)^2(x+3)}{x^2 - 5x + 6}</m>
+          <m>\displaystyle s(x) = \dfrac{(x-2)^2(x+3)}{x^2 - 5x + 6}</m>
         </p>
       </statement>
       <answer>
@@ -988,7 +988,7 @@ https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-ratio
       <task>
         <statement>
         <p>
-          <m>\displaystyle u(x) = \frac{(x-2)^3(x+3)}{x^2 - 5x + 6}</m> 
+          <m>\displaystyle u(x) = \dfrac{(x-2)^3(x+3)}{x^2 - 5x + 6}</m> 
         </p>
       </statement>
       <answer>
@@ -1000,7 +1000,7 @@ https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-ratio
       <task>
         <statement>
         <p>
-          <m>\displaystyle w(x) = \frac{(x-2)(x+3)}{(x^2 - 5x + 6)^2}</m>
+          <m>\displaystyle w(x) = \dfrac{(x-2)(x+3)}{(x^2 - 5x + 6)^2}</m>
         </p>
       </statement>
       <answer>
@@ -1014,7 +1014,7 @@ https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-ratio
     <activity>
       <statement>
         <p>
-          Suppose you are given a function <m>r(x) = \frac{p(x)}{q(x)}</m>, and you know that <m>p(3) = 0</m> and <m>q(3) = 0</m>.
+          Suppose you are given a function <m>r(x) = \dfrac{p(x)}{q(x)}</m>, and you know that <m>p(3) = 0</m> and <m>q(3) = 0</m>.
           What can you conlude about the function <m>r(x)</m> at <m>x = 3</m>?
         </p>
         <ol marker="A.">
@@ -1042,27 +1042,27 @@ https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-ratio
           <ol marker="a.">
             <li>
               <p>
-                  <m>\displaystyle r(x) = \frac{x^2-16}{x+4}</m>
+                  <m>\displaystyle r(x) = \dfrac{x^2-16}{x+4}</m>
               </p>
             </li>
             <li>
               <p>
-                <m>\displaystyle s(x) = \frac{(x-2)^2(x+3)}{x^2 - 5x - 6}</m>
+                <m>\displaystyle s(x) = \dfrac{(x-2)^2(x+3)}{x^2 - 5x - 6}</m>
               </p>
             </li>
             <li>
               <p>
-                <m>\displaystyle u(x) = \frac{(x-2)^3(x+3)}{(x^2 - 5x - 6)(x-7)}</m>
+                <m>\displaystyle u(x) = \dfrac{(x-2)^3(x+3)}{(x^2 - 5x - 6)(x-7)}</m>
               </p>
             </li>
             <li>
               <p>
-                <m>\displaystyle w(x) = \frac{x^2 + x - 6}{(x^2 + 5x + 6)(x+3)}</m>
+                <m>\displaystyle w(x) = \dfrac{x^2 + x - 6}{(x^2 + 5x + 6)(x+3)}</m>
               </p>
             </li>
             <li>
               <p>
-                True or false:  given <m>r(x) = \frac{p(x)}{q(x)}</m>, if <m>p(a) = 0</m> and <m>q(a) = 0</m>, then <m>r</m> has a hole at <m>x = a</m>.
+                True or false:  given <m>r(x) = \dfrac{p(x)}{q(x)}</m>, if <m>p(a) = 0</m> and <m>q(a) = 0</m>, then <m>r</m> has a hole at <m>x = a</m>.
               </p>
             </li>
           </ol>

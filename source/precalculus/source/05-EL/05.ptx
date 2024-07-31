@@ -18,7 +18,7 @@
   <remark>
     Recall that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. In addition, because exponentials and logarithms are inverses, we also know that <m>\log_b(b^{k})=k</m>.
     In addition, according to the law of exponents, we know that: <me>x^a \cdot x^b=x^{a+b}</me>
-      <me>\frac{x^a}{x^b}=x^{a-b}</me>
+      <me>\dfrac{x^a}{x^b}=x^{a-b}</me>
       <me>\left(x^a\right)^b=x^{a \cdot b}</me> 
       
       Consider all these as you move through the activities in this section.
@@ -142,13 +142,13 @@
    <activity xml:id="investigate-quotient-property-of-logs">
     <introduction>
       <p>
-        According to the law of exponents, we know that <m>\frac{10^x}{10^y}=10^{x-y}</m>. Start with this equation as you move through this activity.
+        According to the law of exponents, we know that <m>\dfrac{10^x}{10^y}=10^{x-y}</m>. Start with this equation as you move through this activity.
       </p>
     </introduction>
     <task>
       <statement>
         <p>
-          Let <m>a=10^x</m> and <m>b=10^y</m>. How could you rewrite the left side of the equation <m>\frac{10^x}{10^y}</m>?
+          Let <m>a=10^x</m> and <m>b=10^y</m>. How could you rewrite the left side of the equation <m>\dfrac{10^x}{10^y}</m>?
           <ol marker= "A." cols="2">
             <li><m>a+b</m></li>
             <li><m>a-b</m></li>
@@ -169,8 +169,8 @@
           Recall from <xref ref="EL3"/> that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. Use this property to apply the logarithm to both sides of the rewritten equation from part a. What is that equation?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a-b)=\log_{10}\left(10^{x-y}\right)</m></li>
-            <li><m>\log_{10}\left(\frac{a}{b}\right)=\log_{10}\left(10^{x-y}\right)</m></li>
-            <li><m>\log_{10}\left(\frac{a}{b}\right)=\log_{10}\left(10^{a+b}\right)</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}\left(10^{x-y}\right)</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}\left(10^{a+b}\right)</m></li>
             <li><m>\log_{10}(a-b)=\log_{10}\left(10^{a-b}\right)</m></li></ol>
         </p>
       </statement>
@@ -238,12 +238,12 @@
     </task>
     <task>
       <statement>
-        <p> Combining parts a and d, which equation represents <m>\frac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
+        <p> Combining parts a and d, which equation represents <m>\dfrac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a-b)=10^{a+b}</m></li>
             <li><m>\log_{10}(a-b)=\log_{10}a-\log_{10}b</m></li>
-            <li><m>\log_{10}\left(\frac{a}{b}\right)=\log_{10}a-\log_{10}b</m></li>
-            <li><m>\log_{10}\left(\frac{a}{b}\right)=10^{x-y}</m></li></ol>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=10^{x-y}</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -262,7 +262,7 @@
     <statement>
       <p>
         The <term>product property of logarithms</term> states <me>\log_{a}(m \cdot n)=\log_{a}m+\log_{a}n</me>.
-        The <term>quotient property of logarithms</term> states <me>\log_{a}\left(\frac{m}{n}\right)=\log_{a}m-\log_{a}n</me>.
+        The <term>quotient property of logarithms</term> states <me>\log_{a}\left(\dfrac{m}{n}\right)=\log_{a}m-\log_{a}n</me>.
         Notice that for each of these properties, the base has to be the same. 
       </p>
     </statement>
@@ -329,7 +329,7 @@
     <task>
       <statement>
         <p>
-          <me>\log_3\left(\frac{6}{19}\right)</me>
+          <me>\log_3\left(\dfrac{6}{19}\right)</me>
           <ol marker= "A." cols="1">
             <li><m>\log_36+\log_319</m></li>
             <li><m>\log_3(6-19)</m></li>
@@ -365,7 +365,7 @@
     <task>
       <statement>
         <p>
-          <me>\ln\left(\frac{x^3}{y}\right)</me>
+          <me>\ln\left(\dfrac{x^3}{y}\right)</me>
           <ol marker= "A." cols="1">
             <li><m>3\ln x+\ln y</m></li>
             <li><m>3\ln x-\ln y</m></li>
@@ -428,8 +428,8 @@
           <me>\ln x-4\ln y</me>
           <ol marker= "A." cols="1">
             <li><m>\ln x-\ln y^4</m></li>
-            <li><m>\ln\left(\frac{x}{y^4}\right)</m></li>
-            <li><m>\ln\left(\frac{x}{y}\right)^4</m></li>
+            <li><m>\ln\left(\dfrac{x}{y^4}\right)</m></li>
+            <li><m>\ln\left(\dfrac{x}{y}\right)^4</m></li>
             <li><m>\ln(x \cdot y^4)</m></li></ol>
         </p>
       </statement>
@@ -445,10 +445,10 @@
         <p>
           <me>2(\log(2x)-\log y)</me>
           <ol marker= "A." cols="1">
-            <li><m>\log\left(\frac{4x^2}{y^2}\right)</m></li>
-            <li><m>\log\left(\frac{2x^2}{y^2}\right)</m></li>
-            <li><m>2 \cdot \log\left(\frac{2x}{y}\right)</m></li>
-            <li><m>\log\left(\frac{4x^2}{y}\right)</m></li></ol>
+            <li><m>\log\left(\dfrac{4x^2}{y^2}\right)</m></li>
+            <li><m>\log\left(\dfrac{2x^2}{y^2}\right)</m></li>
+            <li><m>2 \cdot \log\left(\dfrac{2x}{y}\right)</m></li>
+            <li><m>\log\left(\dfrac{4x^2}{y}\right)</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -519,7 +519,7 @@
       </statement>
       <answer>
         <p>
-          <m>x=\frac{\log a}{\log b}</m>
+          <m>x=\dfrac{\log a}{\log b}</m>
         </p>
       </answer>
     </task>
@@ -531,7 +531,7 @@
       </statement>
       <answer>
         <p>
-          <m>\log_ba=\frac{\log a}{\log b}</m>
+          <m>\log_ba=\dfrac{\log a}{\log b}</m>
         </p>
       </answer>
     </task>
@@ -557,7 +557,7 @@
     <statement>
       <p>
         The <term>change of base formula</term> is used to write a logarithm of a number with a given base as the ratio of two logarithms each with the same base that is different from the base of the original logarithm.
-        <me>\log_{b}a=\frac{\log a}{\log b}</me>
+        <me>\log_{b}a=\dfrac{\log a}{\log b}</me>
       </p>
     </statement>
    </definition>
@@ -575,8 +575,8 @@
           <ol marker= "A." cols="2">
             <li><m>0.204</m></li>
             <li><m>4.907</m></li>
-            <li><m>\frac{\log30}{\log2}</m></li>
-            <li><m>\frac{\log2}{\log30}</m></li></ol>
+            <li><m>\dfrac{\log30}{\log2}</m></li>
+            <li><m>\dfrac{\log2}{\log30}</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -590,9 +590,9 @@
         <p>
           <m>\ln 183</m>
           <ol marker= "A." cols="2">
-            <li><m>\frac{\ln183}{\ln e}</m></li>
+            <li><m>\dfrac{\ln183}{\ln e}</m></li>
             <li><m>67.32</m></li>
-            <li><m>\frac{\ln e}{\ln183}</m></li>
+            <li><m>\dfrac{\ln e}{\ln183}</m></li>
             <li><m>5.209</m></li></ol>
         </p> 
       </statement> 

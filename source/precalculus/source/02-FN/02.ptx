@@ -60,11 +60,11 @@
   
         <task>
           <statement>
-          <p><m>\displaystyle \frac{2}{x}-x^4 = y-5          </m></p>
+          <p><m>\displaystyle \dfrac{2}{x}-x^4 = y-5          </m></p>
           </statement>
           <answer>
             <p>
-              <m>f(x)=\displaystyle \frac{2}{x}-x^4 +5  </m>
+              <m>f(x)=\displaystyle \dfrac{2}{x}-x^4 +5  </m>
             </p>
           </answer>
         </task>
@@ -85,7 +85,7 @@
               <cell><m>-5</m></cell>
             </row>
             <row halign="center">
-              <cell><m>-\frac{1}{2}</m></cell>
+              <cell><m>-\dfrac{1}{2}</m></cell>
             </row>
             <row halign="center">
               <cell><m>0</m></cell>
@@ -113,8 +113,8 @@
                   <cell><m>96</m></cell>
                 </row>
                 <row halign="center">
-                  <cell><m>-\frac{1}{2}</m></cell>
-                  <cell><m>\frac{15}{4}</m></cell>
+                  <cell><m>-\dfrac{1}{2}</m></cell>
+                  <cell><m>\dfrac{15}{4}</m></cell>
                 </row>
                 <row halign="center">
                   <cell><m>0</m></cell><cell><m>1</m></cell>
@@ -140,7 +140,7 @@
             <md>
             <mrow>f(x)&amp;=3x^2-4x+1</mrow>
             <mrow>g(x)&amp;=\sqrt{13-x^2}</mrow>
-            <mrow>h(x)&amp;=\frac{x^2-6x+8}{x^2-4x+3}</mrow>
+            <mrow>h(x)&amp;=\dfrac{x^2-6x+8}{x^2-4x+3}</mrow>
             </md>
             Find the following, if they exist.
         </p>
@@ -180,7 +180,7 @@
           </statement>
           <answer>
             <p>
-              <m>h(3)</m> is not defined, <m>h(4)=0</m>, and <m>h(10)=\frac{16}{21}</m>
+              <m>h(3)</m> is not defined, <m>h(4)=0</m>, and <m>h(10)=\dfrac{16}{21}</m>
             </p>
           </answer>
         </task>
