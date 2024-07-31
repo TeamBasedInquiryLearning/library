@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AD8" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Applied Optimization (AD8)</title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/08.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+    
+      <activity xml:id="activity-ad8-box"> 
+        <title>The box</title>
+        <introduction>
+            <p>
+              Help your company design an open box (that is, a box with no lid) with maximum volume given the following constraints:
+                <ul>
+                <li>The box must be made from a square piece of cardboard that is 8 inches on each side.</li>
+                <li>To create the box, you are asked to cut out smaller squares from each corner of the 8 by 8 inches piece of cardboard and to 
+                  fold up the flaps to form the sides.</li>
+                </ul>
+            </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>Which of the following diagrams best illustrates how the box is created?</p>
+            <ol marker="A." cols="2">
+              <li>
+                <image source="thebox-1">
+                  <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
+                </image>
+              </li>
+              <li>
+                <image source="thebox-2" />
+              </li>
+              <li>
+                <image source="thebox-3" />
+              </li>
+              <li>
+                <image source="thebox-4" />
+              </li>
+            </ol> 
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>Which of the following gives the volume of the box as a function of the side length <m>x</m> of the smaller squares?</p>
+            <ol marker="A.">
+              <li>
+                <m>V(x) = x^3</m>
+              </li>
+              <li>
+                <m>V(x) = x^2 \cdot (8 - x)</m>
+              </li>
+              <li>
+                <m>V(x) = x^2 \cdot (8 - 2x)</m>
+              </li>
+              <li>
+                <m>V(x) = x(8 - x)^2</m>
+              </li>
+            </ol>
+          </statement>
+        </task>
+        <!-- <task>
+         <p>Express the volume of the box <m>V</m> as a function of the length of the cuts <m>x</m>.</p>
+        </task> -->
+        <task>
+          <statement>
+            <p>For this problem, what is the best choice of domain for the function <m>V(x)</m>?</p>
+            <ol marker="A.">
+              <li>
+                <m>0 \le x \le 4</m>
+              </li>
+              <li>
+                <m>0 \le x \le 8</m>
+              </li>
+              <li>
+                <m>0 \le x \lt \infty</m>
+              </li>
+              <li>
+                <m>-\infty \lt x \lt \infty</m>
+              </li>
+            </ol>
+          </statement>
+        </task>
+        <task>
+         <statement>
+           <p>Which equations's solution(s) will include the cut value <m>x</m> that yields
+          the box of maximum volume?</p>
+           <ol label="A.">
+            <li>
+              <m>x^2 (8-2x) = 0</m>
+            </li>
+            <li>
+              <m>x(8-2x)^2 = 0</m>
+            </li>
+            <li>
+              <m>(8-2x)^2 - 2x = 0</m>
+            </li>
+            <li>
+              <m>(8-2x)^2 - 2x(8-2x) = 0</m>
+            </li>
+          </ol>
+         </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What is the cut value that yields the box of maximum volume?
+            </p>
+          </statement>
+        </task>
+    </activity>
+    
+          <remark xml:id="guide-optimization"> <title>A guide for optimization problems</title>  
+    <p>
+    <ol>   
+    <li>Draw a diagram and introduce variables. 
+        </li>
+    <li>Determine a function of a single variable that models the quantity to be optimized.
+        </li>
+    <li>Decide the domain on which to consider the function being optimized. 
+        </li>
+    <li>Use calculus to identify the global maximum and/or minimum of the quantity being optimized.
+        </li>
+    <li>Conclusion: what are the optimal points and what optimal values do we obtain at these points?
+        </li>     
+          </ol> </p>
+    
+    </remark>
+
+ <!--              Identify the quantity to be optimized as well as any <em>key relationships among the variables</em>.
+              Write down equations that involve the variables that have been introduced:
+              one should represent the quantity whose minimum or maximum is sought,
+              and others could show how multiple variables in the problem are interrelated.
+            </p>
+          </li>
+
+          <li permid="vol">
+            <p permid="stF">
+              Determine a <em>function of a single variable</em> that models the quantity to be optimized;
+              this may involve using other relationships among variables to eliminate one or more variables in the function formula.
+              For example, in <xref ref="activity-ad8-box"/>,
+              we initially found that <m>V = l \times w \times h </m>,
+              but then the additional relationships that <m>l = w = 8 - 2x</m> and <m>h=x</m>
+              yield <m>V(x) = (8-2x)^2 x</m>,
+              and thus we have written the volume as a function of the single variable <m>x</m>.
+            </p>
+          </li>
+
+          <li permid="bvu">
+            <p permid="YAO">
+              Decide the <em>domain</em> on which to consider the function being optimized.
+              Often the physical constraints of the problem will limit the possible values that the independent variable can take on.
+              Thinking back to the diagram describing the overall situation and any relationships among variables in the problem often helps identify the smallest and largest values of the input variable.
+            </p>
+          </li>
+
+          <li permid="HCD">
+            <p permid="EHX">
+              <em>Use calculus</em> to identify the global maximum and/or minimum of the quantity being optimized.
+              This always involves finding the critical numbers of the function first.
+              Then, depending on the domain,
+              we either construct a first derivative sign chart
+              (for an open or unbounded interval we use the First or Second Derivative Tests)
+              or evaluate the function at the endpoints and critical numbers
+              (for a closed, bounded interval and a continuous function we use the Closed Interval Method).
+            </p>
+          </li>
+
+          <li permid="nJM">
+            <p permid="kPg">
+              Finally, we make certain we have <em>answered the question</em>:
+             what are the optimal points and what optimal values do we obtain at these points? 
+            </p>
+          </li> -->
+
+  <activity xml:id="activity-ad8-1">
+    <introduction>
+  <p>
+    According to U.S.<nbsp />postal regulations,
+    the girth plus the length of a parcel sent by mail may not exceed 108 inches,
+    where the <q>girth</q> is the perimeter of the smallest end.
+    What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail?
+    What are the dimensions of the package of largest volume?
+  </p>
+    </introduction>
+
+   
+  <task>
+     
+        <p>
+          Let <m>x</m> represent the length of one side of the square end and <m>y</m> the length of the longer side.
+          Label these quantities appropriately on the image shown in <xref ref="F-3-4-PA1">Figure</xref>.
+        </p>
+
+        <figure xml:id="F-3-4-PA1" permid="RHW">
+          <caption>A rectangular parcel with a square end.</caption>
+          <image width="47%" source="3_4_PA1" />
+        </figure>
+</task>
+    
+
+<task>
+        <p>
+          What is the quantity to be optimized in this problem?
+<!--           Find a formula for this quantity in terms of <m>x</m> and <m>y</m>. -->
+        </p>
+<ol marker="A.">
+                <li><p>  maximize volume (call this <m>V</m>) </p></li>
+<li><p>  maximize the girth plus length (call this <m>P</m>) </p></li>
+            <li><p>  minimize volume (call this <m>V</m>) </p></li>
+                    <li><p>  minimize the girth plus length (call this <m>P</m>) </p></li>
+    </ol>  
+</task>
+ <task><p>  Which formula below represents the quantity you want to optimize in terms of <m>x</m> and <m>y</m>?</p>
+        <ol marker="A.">
+                <li><p>  <m>V=x^2y</m> </p></li>
+<li><p> <m>V=xy^2</m> </p></li>
+            <li><p>  <m>P=2x+y</m> </p></li>
+                    <li><p>   <m>P=4x+y</m> </p></li>
+    </ol>  
+      
+      </task>
+      <task>
+        <p>
+          The problem statement tells us that the parcel's girth plus length (<m>P</m>) may not exceed 108 inches.
+          In order to maximize volume,
+          we assume that we will actually need the girth plus length <m>P</m> to equal 108 inches.
+          What equation does this constraint give us involving <m>x</m> and <m>y</m>?
+        </p>
+          <ol marker="A.">
+                <li><p>  <m>108=4x+y</m> </p></li>
+<li><p> <m>108 = 2x +y</m> </p></li>
+            <li><p>  <m>108 = x^2 +y</m> </p></li>
+                    <li><p>   <m>108 = xy^2</m> </p></li>
+    </ol>  
+</task>
+<task><p>The equation above gives the relationship between  <m>x</m> and <m>y</m>. For ease of notation, solve this equation for <m>y</m> as a function on <m>x</m> and then find a formula for the volume of the parcel as a function of the single variable <m>x</m>. What is the formula for <m>V(x)</m>? </p>
+       <ol marker="A.">
+                <li><p>  <m>V(x) = x^2 (108-4x)</m> </p></li>
+<li><p> <m>V(x) = x(108-4x)^2</m> </p></li>
+            <li><p> <m>V(x) =x ^2 (108-2x)</m> </p></li>
+                    <li><p>  <m>V(x) =x (108-2x)^2</m> </p></li>
+    </ol>  
+      
+      </task>
+  
+   <task><p> Over what domain should we consider this function? To answer this question, notice that the problem gives us the constraint that <m>P</m> (girth plus length) is 108 inches. This constraint produces intervals of possible values for <m>x</m> and <m>y</m>.</p>
+  <ol marker="A.">
+                <li><p>  <m>0 \leq x \leq 108 </m> </p></li>
+   <li><p>  <m>0 \leq y \leq 108 </m> </p></li>
+                <li><p>  <m>0 \leq x \leq 27 </m> </p></li>
+              <li><p>  <m>0 \leq y \leq 27 </m> </p> </li>
+    </ol>  
+         </task>   
+<task>
+        <p>
+          Use <em>calculus</em> to find the global maximum of the volume of the parcel on the domain you just determined. Justify that you have found the global maximum using either the Closed Interval Method, the First Derivative Test, or the Second Derivative Test!
+        </p>
+   </task>   
+  </activity>
+
+      <remark xml:id="AD8-remark2">
+       <p>  Notice that a critical point might or might not be a global maximum or minimum, so just finding the critical points is not enough to answer an optimization problem. Moreover, some of the critical points might be outside of the domain imposed by the context and thus they cannot be feasible optimal points. </p>
+    </remark>
+    
+    
+    <activity xml:id="activity-ad8-2"> <title>Revenue = Number of tickets <m>\times</m> Price of ticket</title>
+        <introduction>
+            <p>
+                Waterford movie theater currently charges $8 for a ticket. At this price, the theater sells 200 tickets daily. The general manager wonders if they can generate more revenue by increasing the price of a tickets. A survey shows that they will lose 20 customers for every dollar increase in the ticket price.
+            </p>
+        </introduction>
+        <task>
+            <p>If the price of a movie ticket is increased by <m>d</m> dollars, write a formula for the price <m>P</m> in terms of <m>d</m>.</p>
+        </task>
+        <task>
+         <p> If the price of a ticket is increased by one dollar, how many many customers will the theater lose?</p>
+        </task>
+        <task>
+         <p>Write a formula for the number of tickets sold <m>T</m> as a function of a price increase of <m>d</m> dollars.</p>
+        </task>
+        <task>
+         <p>Consider the new price of a ticket <m>P(d)</m> and the new number of tickets sold <m>T(d)</m>. Write a formula for the
+revenue earned by ticket sales <m>R(d)</m> as a function of a price increase of <m>d</m> dollars.</p>
+        </task>
+        <task>
+         <p>What is a realistic domain for the function <m>R(d)</m>?</p>
+        </task>
+        <task>
+         <p>What increase in price <m>d</m> should the general manager choose to maximize the revenue? What price would a movie ticket cost then and what would the revenue be at that price?</p>
+        </task>
+        <task>
+         <p>Suppose now that the cost of running the business when the price is increased by <m>d</m> dollars is given by
+<m>C(d) = 10d^3 −40d^2 +40d+600</m>.
+If the manager decides that they will definitely increase the price, what price increase <m>d</m> maximizes the
+profit? (Recall that Profit = Revenue - Cost).</p>
+        </task>
+    </activity>
+
+  
+    
+    <activity xml:id="activity-ad8-4"> <title>Modeling given a geometric shape</title>
+        <introduction>
+            <p>
+             The city council is planning to construct a new sports ground in the shape of a rectangle with semicircular ends. A running track 400 meters long is to go around the perimeter. 
+            </p>
+        </introduction>
+        <task>
+            <p>What choice of dimensions will make the rectangular area in the center as large as possible?</p>
+        </task>
+        <task>
+         <p> What should the dimensions so the total area enclosed by the running track is maximized?</p>
+        </task>
+
+    </activity>
+    
+    <activity xml:id="activity-ad8-5"> <title>Modeling in algebraic situations</title>
+        <task>
+            <p>Find the coordinates of the point on the curve <m>y=\sqrt{x}</m> closest to the point <m>(1,0)</m>.</p>
+        </task>
+        <task>
+         <p> The sum of two positive numbers is 48. What is the smallest possible value of the sum of their squares?</p>
+        </task>
+
+    </activity>
+
+    <activity xml:id="optimization-fluency-checkit">
+    <statement>
+
+
+
+
+            <p>
+Suppose that if a widget is priced at <m>\$176</m>, then
+you are able to sell <m>672</m> units each day. According to
+a survey of customers, increasing this price by <m>\$1</m> will result
+in losing <m>4</m> daily sales; decreasing by <m>\$1</m> will gain <m>4</m> daily sales.
+Your manager asks you how to adjust the price of a widget to
+maximize the revenue (widgets sold times price). Write an explanation
+of what this change in price should be and why.
+            </p>
+
+
+    </statement>
+ <!--   <answer>
+
+
+
+            <p>
+
+Decrease the cost by <m>\$4</m>.
+
+            </p>
+
+
+    </answer>-->
+
+
+    
+    </activity>
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AD8" youtube="rpoDVt0nVeQ"/>
+            <caption>Video for AD8</caption>
+        </figure>
+        <figure>
+            <video xml:id="video-AD8a" youtube="nLxzVHnzTKw"/>
+            <caption>Another Video for AD8</caption>
+        </figure>
+    </subsection>
+
+    <subsection>
+      <title>Exercises</title>
+      <p>
+          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/AD8/"/>
+      </p>
+    </subsection>
+</section>
