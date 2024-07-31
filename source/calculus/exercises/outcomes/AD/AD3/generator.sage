@@ -59,6 +59,19 @@ class Generator(BaseGenerator):
     #         numshadow=lighttowall*personspeed
     #         denomshadow=disttolight^2
 
+            name = choice(["Cory","Mr. Feeny","Amy","Eric","Shawn","Morgan","Topanga"])
+            if choice([True, False, False]):
+                pronoun1="they are"
+                pronoun2="their"
+            elif name in ["Amy","Morgan","Topanga"]:
+                pronoun1="she is"
+                pronoun2="her"
+            else: 
+                pronoun1="he is"
+                pronoun2="his"
+
+
+
             return {
                 scenario: True,
                 "disttolight": disttolight,
@@ -70,6 +83,9 @@ class Generator(BaseGenerator):
                 "dHdtround": dHdtround,
     #             "numshadow": numshadow,
     #             "denomshadow": denomshadow,
+                "name": name,
+                "pronoun1": pronoun1,
+                "pronoun2": pronoun2
             }
 
         #car scenario
