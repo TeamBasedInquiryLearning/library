@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <intro>
+        <p>
+            Find the {{name}} of each polynomial, and express it as a product of linear factors.
+        </p>
+    </intro>
+    <!--{{#tasks}}-->
+    <knowl>
+        <content>
+            <p><me>{{fname}}(x)={{f}}.</me></p>
+        </content>
+        <outtro>
+
+        <p>
+            The {{name}} of <m>{{fname}}(x)={{f}}</m> are <me>x  = {{roots}}.</me>
+        </p>
+        <p>
+            <m>{{fname}}(x)</m> factors into 
+            <me>{{fname}}(x)={{f_factored}}</me>
+            and further into the linear factors
+            <me>{{fname}}(x)={{f_linear}}.</me>
+        </p>
+        </outtro>
+    </knowl>
+    <!--{{/tasks}}-->
+</knowl>
