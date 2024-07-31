@@ -14,8 +14,8 @@ parser.add_argument('outcome')
 args = parser.parse_args()
 
 # check that this outcome exists
-exercise_path = Path(args.book, "exercises")
-sage_library_path = Path(args.book, "sage")
+exercise_path = Path("source", args.book, "exercises")
+sage_library_path = Path("source", args.book, "sage")
 bank_root = ET.parse(exercise_path/"bank.xml")
 search_string = f'.//*[name()="slug" and text()="{args.outcome}"]/./..'
 outcome_ele = bank_root.xpath(search_string)[0]

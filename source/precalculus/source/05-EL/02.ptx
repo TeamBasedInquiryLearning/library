@@ -1,0 +1,1086 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EL2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Graphs of Exponential Functions (EL2) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/02.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+
+    <activity xml:id="activity-exp-graphs-intro">
+      <introduction>
+        <p> Consider the function <m>f(x)=2^x</m>. 
+        </p> 
+      </introduction>
+
+      <task xml:id="exp-graph-sketch1">
+        <statement>
+          <p>
+            Fill in the table of values for <m>f(x)</m>. Then plot the points on a graph.
+            <tabular halign="right">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>              
+              </row>
+              <row>
+                <cell><m>-1</m></cell>  
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+              </row>
+            </tabular>
+          </p>
+        </statement>
+        <answer>
+          <sidebyside>
+            
+            <tabular halign="right">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell> 
+                <cell><m>\frac{1}{4}</m></cell>              
+              </row>
+              <row>
+                <cell><m>-1</m></cell> 
+                <cell><m>\frac{1}{2}</m></cell>   
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>  
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>2</m></cell> 
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+                <cell><m>4</m></cell> 
+              </row>
+            </tabular>
+
+            <image>
+              <sageplot>
+                p=point([(-2,.25),(-1,.5),(0,1),(1,2),(2,4)],pointsize=50,color='blue',ymin=-2, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+              
+            </image>
+          
+          </sidebyside>
+          
+        </answer>
+      </task>
+    
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as <m>x</m> goes toward infinity? Plug in large positive values of <m>x</m> to test your guess, then describe the end behavior.
+
+            <ol marker= "A.">  
+              <li> <p>As <m>x \to \infty</m>, <m>f(x) \to -\infty</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>f(x) \to -2</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>f(x) \to 0</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>f(x) \to 2</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>f(x) \to \infty</m>. </p>  </li>
+              
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          E
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as <m>x</m> goes toward negative infinity? Plug in large negative values of <m>x</m> to test your guess, then describe the end behavior.
+
+            <ol marker= "A.">  
+              <li> <p>As <m>x \to-\infty</m>, <m>f(x) \to -\infty</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>f(x) \to -2</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>f(x) \to 0</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>f(x) \to 2</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>f(x) \to \infty</m>. </p>  </li> 
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          C
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Complete the graph you started in <xref ref="exp-graph-sketch1"/>, connecting the points and including the end behavior you've just determined.
+          </p>  
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = 2^x
+                p=point([(-2,.25),(-1,.5),(0,1),(1,2),(2,4)],pointsize=50,color='blue')
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+            </image>
+            
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Does your graph seem to have any asymptotes?
+
+            <ol marker= "A.">  
+              
+              <li> <p>No. There are no asymptotes.</p>  </li>
+
+              <li> <p>There is a vertical asymptote but no horizontal one.</p>  </li>
+
+              <li> <p>There is a horizontal asymptote but no vertical one.</p>  </li>
+
+              <li> <p>The graph has both a horizontal and vertical asymptote.</p>  </li>
+
+
+            </ol>
+
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            What the equation for each asymptote of <m>f(x)</m>? Select all that apply.
+
+            <ol marker= "A.">  
+              <li> <p>There are no asymptotes.</p>  </li>
+              <li> <p><m>x=0</m></p>  </li>
+              <li> <p><m>x=3</m></p>  </li>
+              <li> <p><m>y=0</m></p>  </li>
+              <li> <p><m>y=3</m></p>  </li>
+            </ol>
+
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            Find the domain and range of <m>f(x)</m>. Write your answers using interval notation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Domain: <m>(-\infty,\infty)</m>, Range: <m>(0, \infty)</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Find the interval(s) where <m>f(x)</m> is increasing and the interval(s) where <m>f(x)</m> is decreasing. Write your answers using interval notation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Increasing: <m>(-\infty,\infty)</m>, Decreasing: nowhere
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+ 
+    <remark xml:id="remark-exp-graph">
+      <p>
+        The graph of an exponential function <m>f(x)=b^x</m> where <m>b>1</m> has the following characteristics:
+
+        <ul>
+          <li><p>Its domain is <m>(-\infty,\infty)</m> and its range is <m>(0,\infty)</m>. </p></li>
+          <li><p>It is an exponential growth function; that is it is increasing on <m>(-\infty,\infty)</m>. </p></li>
+          <li><p>There is a horizontal asymptote at <m>y=0</m>. There is no vertical asymptote. </p></li>
+          <li><p>There is a <m>y</m>-intercept at <m>(0,1)</m>. There is no <m>x</m>-intercept. </p></li>
+        </ul>
+      </p>
+    </remark>
+    
+    <activity xml:id="activity-exp-graphs-intro2">
+      <introduction>
+        <p> Consider the function <m>g(x)=\left(\frac{1}{2}\right)^x</m>. 
+        </p> 
+      </introduction>
+
+      <task xml:id="exp-graph-sketch2">
+        <statement>
+          <p>
+            Fill in the table of values for <m>g(x)</m>. Then plot the points on a graph.
+            <tabular halign="right">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>g(x)</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>              
+              </row>
+              <row>
+                <cell><m>-1</m></cell>  
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+              </row>
+            </tabular>
+          </p>
+        </statement>
+        <answer>
+          <sidebyside>
+            
+            <tabular halign="right">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>g(x)</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell> 
+                <cell><m>4</m></cell>              
+              </row>
+              <row>
+                <cell><m>-1</m></cell> 
+                <cell><m>2</m></cell>   
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>  
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>\frac{1}{2}</m></cell> 
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+                <cell><m>\frac{1}{4}</m></cell> 
+              </row>
+            </tabular>
+
+            <image>
+              <sageplot>
+                p=point([(-2,4),(-1,2),(0,1),(1,.5),(2,.25)],pointsize=50,color='blue',ymin=-2, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+              
+            </image>
+          
+          </sidebyside>
+          
+        </answer>
+      </task>
+    
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as <m>x</m> goes toward infinity? Plug in large positive values of <m>x</m> to test your guess, then describe the end behavior.
+
+            <ol marker= "A.">  
+              <li> <p>As <m>x \to \infty</m>, <m>g(x) \to -\infty</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>g(x) \to -2</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>g(x) \to 0</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>g(x) \to 2</m>. </p>  </li>
+              <li> <p>As <m>x \to \infty</m>, <m>g(x) \to \infty</m>. </p>  </li>
+              
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          C
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What seems to be happening with the graph as <m>x</m> goes toward negative infinity? Plug in large negative values of <m>x</m> to test your guess, then describe the end behavior.
+
+            <ol marker= "A.">  
+              <li> <p>As <m>x \to-\infty</m>, <m>g(x) \to -\infty</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>g(x) \to -2</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>g(x) \to 0</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>g(x) \to 2</m>. </p>  </li>
+              <li> <p>As <m>x \to -\infty</m>, <m>g(x) \to \infty</m>. </p>  </li> 
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          E
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Complete the graph you started in <xref ref="exp-graph-sketch2"/>, connecting the points and including the end behavior you've just determined.
+          </p>  
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = (.5)^x
+                p=point([(-2,4),(-1,2),(0,1),(1,.5),(2,.25)],pointsize=50,color='blue')
+                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+            </image>
+            
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What are the equations of the asymptote(s) of the graph?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y=0</m>
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            Find the domain and range of <m>f(x)</m>. Write your answers using interval notation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Domain: <m>(-\infty,\infty)</m>, Range: <m>(0, \infty)</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Find the interval(s) where <m>f(x)</m> is increasing and the interval(s) where <m>f(x)</m> is decreasing. Write your answers using interval notation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Increasing: nowhere, Decreasing: <m>(-\infty,\infty)</m>
+          </p>
+        </answer>
+      </task>
+
+      </activity>
+
+      <activity xml:id="activity-exp-graphs-compare">
+        <introduction>
+          <p> Consider the two exponential functions we've just graphed: <m>f(x)=2^x</m> and <m>g(x)=\left(\frac{1}{2}\right)^x</m>. 
+          </p> 
+        </introduction>
+
+      <task>
+        <statement>
+          <p>
+            How are the graphs of <m>f(x)</m> and <m>g(x)</m> similar?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Answers could include basic shape, asymptote, domain, range.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How are the graphs of <m>f(x)</m> and <m>g(x)</m> different?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Answers could include reflection over <m>y</m>-axis, one is increasing, one is decreasing.
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <remark>
+      <p>
+        We can now update <xref ref="remark-exp-graph"/> so that it includes all values of the base of an exponential function.   
+      </p>
+      <p>
+        The graph of an exponential function <m>f(x)=b^x</m> has the following characteristics: 
+
+        <ul>
+          <li><p>Its domain is <m>(-\infty,\infty)</m> and its range is <m>(0,\infty)</m>. </p></li>
+          <li><aside>
+        <p>
+            Remember, exponential functions are only defined when <m>b>0</m> and <m>b\neq 1</m> as we saw in <xref ref="def-exp-func"/>.
+        </p>
+      </aside>
+      <p>If <m>b>1</m>, <m>f(x)</m> is increasing on <m>(-\infty,\infty)</m> and is an exponential growth function. If <m>0 &lt; b &lt; 1</m>, <m>f(x)</m> is decreasing on <m>(-\infty,\infty)</m> and is an exponential decay function. </p>  
+      </li>
+      <li><p>There is a horizontal asymptote at <m>y=0</m>. There is no vertical asymptote. </p></li>
+          <li><p>There is a <m>y</m>-intercept at <m>(0,1)</m>. There is no <m>x</m>-intercept. </p></li>
+        </ul>
+      </p>
+
+    </remark>
+
+    <activity xml:id="activity-exp-graphs-transformations-intro">
+      <introduction>
+        <p> Let's look at a third exponential function,  <m>h(x)=2^{-x}</m>. 
+        </p> 
+      </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Before plotting any points or graphing, what do you think the graph might look like? What sort of characteristics might it have?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          With the <m>2</m> as the base, students may assume exponential growth. But the negative in the exponent may change their mind if they remember transformations!
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Fill in the table of values for <m>h(x)</m>. Then plot the points on a graph.
+          <tabular halign="right">
+            <row header="yes" bottom="minor" >
+              <cell> <m>x</m></cell>
+              <cell><m>h(x)</m></cell>
+            </row>
+            <row>
+              <cell><m>-2</m></cell>              
+            </row>
+            <row>
+              <cell><m>-1</m></cell>  
+            </row>
+            <row>
+              <cell><m>0</m></cell>
+            </row>
+            <row>
+              <cell><m>1</m></cell>
+            </row>
+            <row>
+              <cell><m>2</m></cell>
+            </row>
+          </tabular>
+        </p>
+      </statement>
+      <answer>
+        <sidebyside>
+          
+          <tabular halign="right">
+            <row header="yes" bottom="minor" >
+              <cell> <m>x</m></cell>
+              <cell><m>h(x)</m></cell>
+            </row>
+            <row>
+              <cell><m>-2</m></cell> 
+              <cell><m>4</m></cell>              
+            </row>
+            <row>
+              <cell><m>-1</m></cell> 
+              <cell><m>2</m></cell>   
+            </row>
+            <row>
+              <cell><m>0</m></cell>
+              <cell><m>1</m></cell>  
+            </row>
+            <row>
+              <cell><m>1</m></cell>
+              <cell><m>\frac{1}{2}</m></cell> 
+            </row>
+            <row>
+              <cell><m>2</m></cell>
+              <cell><m>\frac{1}{4}</m></cell> 
+            </row>
+          </tabular>
+
+          <image>
+            <sageplot>
+              p=point([(-2,4),(-1,2),(0,1),(1,.5),(2,.25)],pointsize=50,color='blue',ymin=-2, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+              p
+            </sageplot>
+            
+          </image>
+        
+        </sidebyside>
+        
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          This function <m>h(x)</m> looks to be the same as a function we looked at previously. Use properties of exponents to rewrite <m>h(x)</m> in a different way.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2^{-x} = (2^{-1})^x = \left(\frac{1}{2} \right)^x </m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          In addition to plotting points, we can use transformations to graph. If we consider <m>f(x)=2^x</m> to be the parent function, what transformation is needed to graph <m>h(x)=2^{-x}</m>?
+
+          <ol marker= "A.">  
+            <li> <p>A vertical stretch. </p>  </li>
+            <li> <p>A horizontal stretch. </p>  </li>
+            <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+            <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+            
+          </ol>
+
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    </activity>
+
+    <remark>
+    <p> For a reminder of transformations, see <xref ref="FN4"/> and the following definitions:
+      <ul>
+        <li><p> <xref ref="def-vertical-shift"/>  </p></li>
+        <li><p> <xref ref="def-horizontal-shift"/>  </p></li>
+        <li><p> <xref ref="def-vreflection"/>  </p></li>
+        <li><p> <xref ref="def-hreflection"/>  </p></li>
+        <li><p> <xref ref="def-vstretch"/>  </p></li>
+        <li><p> <xref ref="def-hstretch"/>  </p></li>
+      </ul>
+    </p>
+    </remark>
+
+    <activity xml:id="activity-exp-graphs-match">
+      <introduction>
+        <p> Let  <m>f(x)=4^{x}</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Graph <m>f(x)</m>. 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = (4)^x
+                p=point([(-2,1/8),(-1,1/4),(0,1),(1,4),(2,16)],pointsize=50,color='blue')
+                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
+                p
+              </sageplot>
+            </image> 
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            Match the following functions to their graphs.
+            <ul>
+              <li> <p><m> g(x)= -4^x </m></p> </li>
+              <li> <p><m> h(x)= 4^{-x} </m></p> </li>
+              <li> <p><m> j(x)= 4^{x+1} </m></p> </li>
+              <li> <p><m> k(x)= 4^x +1 </m></p> </li>
+            </ul>
+          
+            <ol marker= "A." cols="2">  
+              <li> <p> <image>
+                <sageplot>
+                  f(x) = (4)^x +1
+                  p=point([(-2,9/8),(-1,5/4),(0,2),(1,5),(2,17)],pointsize=50,color='blue')
+                  p+=line([(-9,1),(9,1)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                  p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
+                  p
+                </sageplot>
+              </image> </p>  </li>
+
+              <li> <p> <image>
+                  <sageplot>
+                    f(x) = (4)^(-x)
+                    p=point([(2,1/8),(1,1/4),(0,1),(-1,4),(-2,16)],pointsize=50,color='blue')
+                    p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                    p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
+                    p
+                  </sageplot>
+                </image> </p>  </li>
+
+                <li> <p> <image>
+                  <sageplot>
+                    f(x) = (4)^(x+1)
+                    p=point([(-3,1/8),(-2,1/4),(-1,1),(0,4),(1,16)],pointsize=50,color='blue')
+                    p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                    p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
+                    p
+                  </sageplot>
+                </image> </p>  </li>
+
+                <li> <p> <image>
+                  <sageplot>
+                    f(x) = -4^(x)
+                    p=point([(-2,-1/8),(-1,-1/4),(0,-1),(1,-4),(2,-16)],pointsize=50,color='blue')
+                    p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3) 
+                    p+=plot(f, (x, -9, 8), ymin=-20, ymax=2, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-20,-19,..,2]])
+                    p
+                  </sageplot>
+                </image> </p>  </li>
+              
+              
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <ul>
+              <li> <p><m> g(x)= -4^x </m> is D</p> </li>
+              <li> <p><m> h(x)= 4^{-x} </m> is B</p> </li>
+              <li> <p><m> j(x)= 4^{x+1} </m> is C</p> </li>
+              <li> <p><m> k(x)= 4^x +1 </m> is A</p> </li>
+            </ul>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+          Find the domain, range, and equation of the asymptote for the parent function <m>\left(f(x)\right)</m> and each of the four transformations <m>\left(g(x), h(x), j(x), \text{ and } k(x)\right)</m>. 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x)</m>:
+            <ul>
+              <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+              <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+              <li> <p>Asymptote: <m>y=0</m> </p> </li>
+            </ul>
+
+            <m>g(x)</m>:
+            <ul>
+              <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+              <li> <p>Range: <m>(-\infty,0)</m> </p> </li>
+              <li> <p>Asymptote: <m>y=0</m> </p> </li>
+            </ul>
+
+            <m>h(x)</m>:
+            <ul>
+              <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+              <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+              <li> <p>Asymptote: <m>y=0</m> </p> </li>
+            </ul>
+
+            <m>j(x)</m>:
+            <ul>
+              <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+              <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+              <li> <p>Asymptote: <m>y=0</m> </p> </li>
+            </ul>
+
+            <m>k(x)</m>:
+            <ul>
+              <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+              <li> <p>Range: <m>(1,\infty)</m> </p> </li>
+              <li> <p>Asymptote: <m>y=1</m> </p> </li>
+            </ul>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+          Which of the transformations affected the domain of the exponential function? Select all that apply.
+
+          <ol marker= "A.">  
+            <li> <p>A vertical shift. </p>  </li>
+            <li> <p>A horizontal shift. </p>  </li>
+            <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+            <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+            <li> <p>None of these. </p>  </li>
+          </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            E
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+          Which of the transformations affected the range of the exponential function? Select all that apply.
+
+          <ol marker= "A.">  
+            <li> <p>A vertical shift. </p>  </li>
+            <li> <p>A horizontal shift. </p>  </li>
+            <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+            <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+            <li> <p>None of these. </p>  </li>
+          </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A and C
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+          Which of the transformations affected the asymptote of the exponential function? Select all that apply.
+
+          <ol marker= "A.">  
+            <li> <p>A vertical shift. </p>  </li>
+            <li> <p>A horizontal shift. </p>  </li>
+            <li> <p>A reflection over the <m>x</m>-axis. </p>  </li>
+            <li> <p>A reflection over the <m>y</m>-axis. </p>  </li>
+            <li> <p>None of these. </p>  </li>
+          </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-exp-e">
+      <introduction>
+        <p>
+          Consider the function <m>f(x)=e^{x}</m>.
+        </p>
+      </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Graph  <m>f(x)=e^{x}</m>. First find <m>f(0)</m> and <m>f(1)</m>.  Then use what you know about the characteristics of exponential graphs to sketch the rest. Then state the domain, range, and equation of the asymptote. (Recall that <m>e \approx 2.72</m> to help estimate where to put your points.) 
+      </p>
+    </statement>
+    <answer>
+        <image>
+          <sageplot>
+            f(x) = e^(x)
+            p=point([(0,1),(1,e)],pointsize=50,color='blue')
+            p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+            p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+            p
+          </sageplot>
+        </image>
+      <p>
+        <ul>
+          <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+          <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+          <li> <p>Asymptote: <m>y=0</m> </p> </li>
+        </ul>
+      </p>
+
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Sketch the graph of <m>g(x)=e^{x-2}</m> using transformations. State the transformation(s) used, the domain, the range, and the equation of the asymptote.
+      </p>
+    </statement>
+    <answer>
+      
+        <image>
+          <sageplot>
+            f(x) = e^(x-2)
+            p=point([(2,1),(3,e)],pointsize=50,color='blue')
+            p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+            p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+            p
+          </sageplot>
+        </image>
+
+        <p>
+          <ul>
+            <li> <p>Transformation: shift right 2 </p> </li>
+            <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+            <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+            <li> <p>Asymptote: <m>y=0</m> </p> </li>
+          </ul>
+        </p>
+      
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Sketch the graph of <m>h(x)=-3e^x</m> using transformations. State the transformation(s) used, the domain, the range, and the equation of the asymptote.
+      </p>
+    </statement>
+    <answer>
+        <image>
+          <sageplot>
+            f(x) = -1*3*e^x
+            p=point([(0,f(x=0)),(1,f(x=1))],pointsize=50,color='blue')
+            p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+            p+=plot(f, (x, -9, 8), ymin=-10, ymax=2, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-10,-9,..,2]])
+            p
+          </sageplot>
+        </image>
+        <p>
+          <ul>
+            <li> <p>Transformations: vertical stretch of 3, reflection over <m>x</m>-axis </p> </li>
+            <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+            <li> <p>Range: <m>(-\infty,0)</m> </p> </li>
+            <li> <p>Asymptote: <m>y=0</m> </p> </li> 
+          </ul>
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Sketch the graph of <m>g(x)=e^{-x}-4</m> using transformations. State the transformation(s) used, the domain, the range, and the equation of the asymptote.
+      </p>
+    </statement>
+    <answer>
+      
+        <image>
+          <sageplot>
+            f(x) = e^(-x)-4
+            p=point([(0,f(x=0)),(-1,f(x=-1))],pointsize=50,color='blue')
+            p+=line([(-9,-4),(9,-4)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+            p+=plot(f, (x, -9, 8), ymin=-6, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+            p
+          </sageplot>
+        </image>
+
+        <p>
+          <ul>
+            <li> <p>Transformations: reflection over <m>y</m>-axis, shift down 4 </p> </li>
+            <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+            <li> <p>Range: <m>(-4,\infty)</m> </p> </li>
+            <li> <p>Asymptote: <m>y=-4</m> </p> </li>
+          </ul>
+        </p>
+      
+    </answer>
+  </task>
+
+
+    </activity>
+
+    <activity xml:id="activity-exp-graphs-fluency">
+      <introduction>
+        <p> Graph each of the following exponential functions. Include any asymptotes with a dotted line. State the domain, the range, the equation of the asymptote, and whether it is growth or decay.
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=3^x</m>
+          </p>
+        </statement>
+        <answer>
+
+            <image>
+              <sageplot>
+                f(x) = (3)^x
+                p=point([(0,1),(1,3)],pointsize=50,color='blue')
+                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p 
+              </sageplot>
+            </image> 
+            
+            <p> 
+              <ul>
+                <li> <p>Exponential growth </p> </li>
+                <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>y=0</m> </p> </li>
+              </ul>
+            </p>
+         
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=6^{-x}</m>
+          </p>
+        </statement>
+        <answer>
+          
+            <image>
+              <sageplot>
+                f(x) = (6)^(-x)
+                p=point([(0,1),(-1,6)],pointsize=50,color='blue')
+                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3) 
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+            </image>  
+          
+            <p> 
+              <ul>
+                <li> <p>Exponential decay </p> </li>
+                <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>y=0</m> </p> </li>
+              </ul>
+            </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=\frac{1}{5}^{x-2}</m>
+          </p>
+        </statement>
+        <answer>
+          
+            <image>
+              <sageplot>
+                f(x) = (1/5)^(x-2)
+                p=point([(1,5),(2,1)],pointsize=50,color='blue')
+                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3) 
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
+                p
+              </sageplot>
+            </image>  
+          
+            <p> 
+              <ul>
+                <li> <p>Exponential decay </p> </li> 
+                <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(0,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>y=0</m> </p> </li>
+              </ul>
+            </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=\frac{1}{3}^{x}+4</m>
+          </p>
+        </statement>
+        <answer>
+          
+            <image>
+              <sageplot>
+                f(x) = (1/3)^(x)+4
+                p=point([(0,5),(-1,7)],pointsize=50,color='blue')
+                p+=line([(-9,4),(9,4)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=12, thickness=2)
+                p+=plot(f, (x, -9, 8), ymin=-2, ymax=12, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,12]]) 
+                p
+              </sageplot>
+            </image>  
+          
+            <p> 
+              <ul>
+                <li> <p>Exponential decay </p> </li>
+                <li> <p>Domain: <m>(-\infty,\infty)</m> </p> </li>
+                <li> <p>Range: <m>(4,\infty)</m> </p> </li>
+                <li> <p>Asymptote: <m>y=4</m> </p> </li>
+              </ul>
+            </p>
+        </answer>
+      </task>
+
+    
+    </activity>
+
+
+
+
+
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL2/"/>. </p> 
+    </exercises>
+    
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

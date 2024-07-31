@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <titlepage>
+    <xi:include href="../../../common/authors/clontz.ptx"/>
+    <xi:include href="../../../common/authors/lewis.ptx"/>
+    <credit>
+      <title>Contributing Authors</title>
+      <author>
+        <personname>Jessalyn Bolkema</personname>
+        <department>Department of Mathematics</department>
+        <institution>California State University, Dominguez Hills</institution>
+        <email>jbolkema@csudh.edu</email>
+      </author>
+      <author>
+        <personname>Jeff Ford</personname>
+        <department>Department of Mathematics, Computer Science, and Statistics</department>
+        <institution>Gustavus Adolphus College</institution>
+        <email>jford@gustavus.edu</email>
+      </author>
+      <author>
+          <personname>Jordan Kostiuk</personname>
+          <department>Department of Mathematics</department>
+          <institution>Brown University</institution>
+          <email>jordan_kostiuk@brown.edu</email>
+      </author>
+      <author>
+        <personname>Sharona Krinsky</personname>
+        <department>Department of Mathematics</department>
+        <institution>California State University, Los Angeles</institution>
+        <email>skrinsk@calstatela.edu</email>
+      </author>
+      <author>
+        <personname>Jennifer Nordstrom</personname>
+        <department>Department of Mathematics</department>
+        <institution>Linfield University</institution>
+        <email>jnordstrom@linfield.edu</email>
+      </author>
+      <author>
+        <personname>Kate Owens</personname>
+        <department>Department of Mathematics</department>
+        <institution>College of Charleston</institution>
+        <email>owensks@cofc.edu</email>
+      </author>
+    </credit>
+    <date><today /></date>
+  </titlepage>
+
+  <colophon xml:id="colophon">
+    <xi:include href="../../../common/website.ptx"/>
+    <xi:include href="../../../common/copyright.ptx" />
+    <p>
+This work includes materials used under license from the following works:
+    </p>
+    <ul>
+        <li>
+            <p><pubtitle>Understanding Linear Algebra</pubtitle></p>
+            <ul>
+                <li>
+                    <p><url href="https://davidaustinm.github.io/ula/"/></p>
+                </li>
+                <li>
+                    <p>CC BY 4.0</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><xref ref="figure-teapot-projection"/></p>
+            <ul>
+                <li>
+                    <p>Copyright 2023 Reeve Hunter</p>
+                </li>
+                <li>
+                    <p>CC BY 4.0</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <xi:include href="../../../common/nsf.ptx" />
+  </colophon>
+
+  <xi:include href="../../../common/resource-library.ptx"/>
+
+  <preface xml:id="instructor-notes">
+    <title>For Instructors</title>
+    <xi:include href="../../../common/features.ptx"/>
+    <xi:include href="../../../common/community.ptx"/>
+  </preface>
+
+  <preface xml:id="video-resources">
+    <title>Video Resources</title>
+    <p>
+Videos are available at the end of each section. A complete playlist of videos 
+aligned with this text is 
+<url href="https://www.youtube.com/watch?v=kpOK7RhFEiQ&amp;list=PLwXCBkIf7xBMo3zMnD7WVt39rANLlSdmj">
+  available on YouTube
+</url>.
+    </p>
+  </preface>
+
+</frontmatter>

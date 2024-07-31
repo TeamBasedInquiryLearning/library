@@ -1,0 +1,509 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="FN2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Function Notation (FN2) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/02.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    
+      <remark>
+        <p>
+          As we saw in the last section, we can represent functions in many ways, like using a set of ordered pairs, a graph, a description, or an equation. When describing a function with an equation, we will often use function notation. 
+        </p>
+        <p>
+          If <m>y</m> is written as a function of <m>x</m>, like in the equation <me>y=x+5</me>, we can replace the <m>y</m> with <m>f(x)</m> and get the function notation <me>f(x)=x+5</me>. 
+        </p>
+          
+         <p> 
+          The <m>x</m> is the input variable, and <m>f(x)</m> is the <m>y</m>-value or output that corresponds to <m>x</m>.  
+        </p>
+
+        <p>
+          Generally, we use the letter <m>f</m> for functions. Other letters are okay as well; <m>g(x)</m> and <m>h(x)</m> are common. If we are using multiple functions at one time, we often denote them with different letters so we can refer to one without any confusion as to which function we mean.
+        </p>
+      </remark>
+
+      <activity xml:id="activity-fn-rewrite">
+        <introduction>
+          <p> Rewrite the following equations using function notation. In each case, assume <m>y</m> is a function of the variable <m>x</m>. 
+        </p>
+          
+        </introduction>
+        
+        <task>
+          <statement>
+          <p><m>y=2x+14</m></p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(x)=2x+14</m>
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+          <p><m>y+x=3x^2-5</m></p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(x)=3x^2-x-5</m>
+            </p>
+          </answer>
+        </task>
+  
+        <task>
+          <statement>
+          <p><m>\displaystyle \frac{2}{x}-x^4 = y-5          </m></p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(x)=\displaystyle \frac{2}{x}-x^4 +5  </m>
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="activity-fn-table">
+        <statement>
+          <p> Let <m>f(x)=3x^2-4x+1</m>. Find the value of <m>f(x)</m> for the given values of <m>x</m>.
+        </p>
+        
+        <table>
+          <tabular>
+            <row header="yes" bottom="minor" >
+              <cell><m>x</m></cell> 
+              <cell><m>f(x)</m></cell>
+            </row>
+            <row halign="center">
+              <cell><m>-5</m></cell>
+            </row>
+            <row halign="center">
+              <cell><m>-\frac{1}{2}</m></cell>
+            </row>
+            <row halign="center">
+              <cell><m>0</m></cell>
+            </row>
+            <row halign="center">
+              <cell><m>2</m></cell>
+            </row>
+            <row halign="center">
+              <cell><m>10</m></cell>
+            </row>
+          </tabular>
+        </table>  
+      </statement>
+
+        <answer>
+          <p>
+            
+              <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell><m>x</m></cell> 
+                  <cell><m>f(x)</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>-5</m></cell>
+                  <cell><m>96</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>-\frac{1}{2}</m></cell>
+                  <cell><m>\frac{15}{4}</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>0</m></cell><cell><m>1</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2</m></cell><cell><m>5</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>10</m></cell><cell><m>261</m></cell>
+                </row>
+              </tabular> 
+          </p>
+        </answer>
+      </activity>
+
+      <remark xml:id="remark-fn-notation">
+      If we are asked to find the value of <m>f(x)</m> for a certain <m>x</m>-value, say <m>x=5</m>, we use the notation <m>f(5)</m> to indicate that.
+      </remark>
+
+      <activity xml:id="activity-fn-values">
+        <introduction>
+          <p> Let <m>f(x)</m>, <m>g(x)</m>, and <m>h(x)</m> be defined as shown. 
+            <md>
+            <mrow>f(x)&amp;=3x^2-4x+1</mrow>
+            <mrow>g(x)&amp;=\sqrt{13-x^2}</mrow>
+            <mrow>h(x)&amp;=\frac{x^2-6x+8}{x^2-4x+3}</mrow>
+            </md>
+            Find the following, if they exist.
+        </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              <m>f(-4)</m>, <m>f(0)</m>, and <m>f(2)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(-4)=65</m>, <m>f(0)=1</m>, and <m>f(2)=5</m>
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              <m>g(0)</m>, <m>g(2)</m>, and <m>g(8)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>g(0)=\sqrt{13}</m>, <m>g(2)=3</m>, and <m>g(8)</m> is not defined
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              <m>h(3)</m>, <m>h(4)</m>, and <m>h(10)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>h(3)</m> is not defined, <m>h(4)=0</m>, and <m>h(10)=\frac{16}{21}</m>
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <remark>
+        <p>
+        Sometimes functions are made up of multiple functions put together. We call these <term>piecewise functions</term>.  Each piece is defined for only a certain interval, and these intervals do not overlap. When evaluating a piecewise function at a given <m>x</m>-value, we first need to find the interval that includes the <m>x</m>-value, and then plug in to the corresponding function piece.
+        </p>
+      </remark>
+
+      <activity xml:id="activity-fn-piecewise">
+        <introduction>
+          <p> Let <m>f(x)</m> be a piecewise function as shown below. 
+            <me>
+              f(x)=\begin{cases}
+              x^2+3, &amp; x &lt; 5 \\
+              9-2x, &amp; x \geq 5
+              \end{cases}
+            </me>
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              On which interval from the piecewise function does the value <m>x=1</m> belong?
+              <ol marker= "A." cols="5">  
+                <li> <m>x &lt; 5</m></li>
+                <li> <m>x \leq 5</m></li>
+                <li> <m>x &gt; 5</m></li>
+                <li> <m>x \geq 5</m></li>
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+                A
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Find <m>f(1)</m>.
+              <ol marker= "A." cols="5">  
+                <li> <m>3</m></li>
+                <li> <m>4</m></li>
+                <li> <m>5</m></li>
+                <li> <m>6</m></li>
+                <li> <m>7</m></li>
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               B
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              On which interval from the piecewise function does the value <m>x=5</m> belong?
+              <ol marker= "A." cols="5">  
+                <li> <m>x &lt; 5</m></li>
+                <li> <m>x \leq 5</m></li>
+                <li> <m>x &gt; 5</m></li>
+                <li> <m>x \geq 5</m></li>
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               D
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Find <m>f(5)</m>.
+              <ol marker= "A." cols="5">  
+                <li> <m>-10</m></li>
+                <li> <m>-5</m></li>
+                <li> <m>-1</m></li>
+                <li> <m>17</m></li>
+                <li> <m>28</m></li>
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               C
+              </p>
+            </answer>
+        </task>
+      </activity>
+
+      <remark>
+        <p>
+          We've been practicing evaluating functions at specific numeric values. It's also possible to evaluate a function given an expression involving variables.
+        </p>
+      </remark>
+
+      <activity xml:id="activity-fn-variables">
+        <introduction>
+          <p> Let <m>g(x)=x^2-3x</m>. 
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Find <m>g(a)</m>.
+              <ol marker= "A.">  
+                <li> <m>(ax)^2-3ax</m></li>
+                <li> <m>a^2-3a</m></li>
+                <li> <m>a(x^2-3x)</m></li>
+                <li> <m>ax^2-3ax</m></li>
+                <li> <m>a-3</m></li>
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               B
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Find <m>g(x+h)</m>. 
+              <ol marker= "A.">  
+                <li> <m>x^2-3x+h</m></li>
+                <li> <m>(x+h)^2-3x</m></li>
+                <li> <m>(x+h)^2-3(x+h)</m></li>
+                <li> <m>x^2-3(x+h)</m></li>
+                
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               C
+              </p>
+            </answer>
+        </task>
+      </activity>
+
+      <remark>
+        <p>
+          We should also be able to look at a graph of a function and evaluate it for different values of <m>x</m>. The next activity explores that.
+        </p>
+      </remark>
+
+      <activity xml:id="activity-fn-graphical">
+        <introduction>
+          <p> Let <m>f(x)</m> be the function graphed below. 
+            <image>
+              <sageplot>
+                f(x) = (.5*(x-2)*(x-4)*(x+1)+1)
+                p=plot(f, (x, -3, 5.5), ymin=-6, ymax=12, color='blue', thickness=3, gridlines=[[-5,-4,..,6],[-5,-4,..,12]])                
+                p
+              </sageplot>
+            </image>
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Find <m>f(1)</m>.
+              <ol marker= "A." cols="5">  
+                
+                <li> <m>-4</m></li>
+                <li> <m>-2</m></li>
+                <li> <m>0</m></li>
+                <li> <m>2</m></li>
+                <li> <m>4</m></li>
+                
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               E
+              </p>
+            </answer>
+        </task>
+        
+        <task>
+          <statement>
+            <p>
+              Find <m>f(3)</m>.
+              <ol marker= "A." cols="6">  
+                
+                <li> <m>-1</m></li>
+                <li> <m>0</m></li>
+                <li> <m>1</m></li>
+                <li> <m>2</m></li>
+                <li> <m>3</m></li>
+                <li> <m>4</m></li> 
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               A
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              For which <m>x</m>-value(s) does <m>f(x)=1</m>?
+              <ol marker= "A." cols="6">  
+               
+                <li> <m>-1</m></li>
+                <li> <m>0</m></li>
+                <li> <m>1</m></li>
+                <li> <m>2</m></li>
+                <li> <m>3</m></li>
+                <li> <m>4</m></li> 
+                
+              </ol>
+            </p>
+          </statement>
+            <answer>
+              <p>
+               A, D, and F
+              </p>
+            </answer>
+        </task>
+        
+        <task>
+          <statement>
+            <p>
+              For which <m>x</m>-value(s) does <m>f(x)=4</m>. Estimate as needed!
+              
+            </p>
+          </statement>
+            <answer>
+              <p>
+               approximately <m>-0.5, 1,</m> and <m>4.5</m>
+              </p>
+            </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="activity-fn-solving">
+        <introduction>
+          <p>
+            In these activities, we are flipping the question around. This time we know what the function equals at some <m>x</m>-value, and we want to recover that <m>x</m>-value (or values!).
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p> Let <m>h(x)=5x+7</m>. 
+              Find the <m>x</m>-value(s) such that <m>h(x)=-13</m>.</p>
+          </statement>
+            <answer>
+              <p>
+               <m>x=-4</m> 
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p> Let <m>f(x)=x^2-3x-9</m>. 
+              Find the <m>x</m>-value(s) such that <m>f(x)=9</m>.</p>
+          </statement>
+            <answer>
+              <p>
+               <m>x=-3,6</m>
+              </p>
+            </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="activity-fn-application">
+       <introduction>
+        <p>
+          Ellie has <m>\$13</m> in her piggy bank, and she gets an additional <m>\$1.50</m> each week for her allowance. Assuming she does not spend any money, the total amount of allowance, <m>A(w)</m>, she has after <m>w</m> weeks can be modeled by the function <me>A(w)=13+1.50w</me>. 
+        </p>
+       </introduction> 
+        <task>
+          <statement>
+            <p> How much money will be in her piggy bank after <m>5</m> weeks?</p>
+          </statement>
+            <answer>
+              <p>
+               <m>\$20.50</m> 
+              </p>
+            </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p> After how many weeks will she have $<m>40</m> in her piggy bank?</p>
+          </statement>
+            <answer>
+              <p>
+               <m>18</m> weeks 
+              </p>
+            </answer>
+        </task>
+      </activity>
+
+      
+    
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/FN2/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>
