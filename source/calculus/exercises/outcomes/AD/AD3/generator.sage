@@ -61,13 +61,13 @@ class Generator(BaseGenerator):
 
             name = choice(["Cory","Mr. Feeny","Amy","Eric","Shawn","Morgan","Topanga"])
             if choice([True, False, False]):
-                pronoun1="they"
+                pronoun1="they are"
                 pronoun2="their"
             elif name in ["Amy","Morgan","Topanga"]:
-                pronoun1="she"
+                pronoun1="she is"
                 pronoun2="her"
             else: 
-                pronoun1="he"
+                pronoun1="he is"
                 pronoun2="his"
 
 
