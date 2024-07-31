@@ -42,7 +42,7 @@
                 </p>
                  -->
                 <p>
-                    {{name}} is <m>{{heightperson}}</m> ft tall, and is walking in a straight line from a light on the ground toward a wall at a rate of <m>{{personspeed}}</m> ft/sec. At the moment {{pronoun1}} is <m>{{disttolight}}</m> ft away from the light (and <m>{{disttowall}}</m> ft from the wall), how fast is the height of {{pronoun2}} shadow on the wall changing? In which direction is the shadow changing?
+                    {{name}} is <m>{{heightperson}}</m> ft tall, and is walking in a straight line from a light on the ground toward a wall at a rate of <m>{{personspeed}}</m> ft/sec. At the moment {{pronoun1}} <m>{{disttolight}}</m> ft away from the light (and <m>{{disttowall}}</m> ft from the wall), how fast is the height of {{pronoun2}} shadow on the wall changing? In which direction is the shadow changing?
                 </p>
             </content>
             <outtro>
