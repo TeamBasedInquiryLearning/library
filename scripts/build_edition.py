@@ -1,13 +1,11 @@
 import argparse
 import glob
+from pathlib import Path
+import shutil
 import build_bank
 from pretext.project import Project
 
-def main():
-    parser = argparse.ArgumentParser(description='Build fixed editions of books.')
-    parser.add_argument('edition_name')
-    parser.add_argument('edition_slug')
-    args = parser.parse_args()
+def main(name:str, slug:str):
  
     # update edition name
     files = glob.glob('source/**/source/main.ptx')
@@ -19,7 +17,7 @@ def main():
         # Replace the target string
         filedata = filedata.replace(
             "PREVIEW Edition",
-            f"{args.edition_name} Edition"
+            f"{name} Edition"
         )
         # Write the file out again
         with open(filestr, 'w') as file:
@@ -34,25 +32,47 @@ def main():
         # Replace the target string
         filedata = filedata.replace(
             "https://tbil.org/calculus/preview", 
-            f"https://tbil.org/calculus/{args.edition_slug}"
+            f"https://tbil.org/calculus/{slug}"
         )
         filedata = filedata.replace(
             "https://tbil.org/precalculus/preview", 
-            f"https://tbil.org/precalculus/{args.edition_slug}"
+            f"https://tbil.org/precalculus/{slug}"
         )
         filedata = filedata.replace(
             "https://tbil.org/linear-algebra/preview", 
-            f"https://tbil.org/linear-algebra/{args.edition_slug}"
+            f"https://tbil.org/linear-algebra/{slug}"
         )
         # Write the file out again
         with open(filestr, 'w') as file:
             file.write(filedata)
 
-    # p = Project.parse()
-    # for t in p.deploy_targets():
-    #     t.build()
+    # # build and stage targets
+    p = Project.parse()
+    for t in p.deploy_targets():
+        t.build(clean=True)
+    p.stage_deployment()
 
-    # build_bank.main()
+    # build and stage banks
+    for book in ["precalculus", "calculus", "linear-algebra"]:
+        build_bank.main(book=book, full=True)
+
+    # save edition to site directory
+    shutil.copytree(
+        Path("output", "stage", "calculus", "preview"),
+        Path("site", "calculus", slug)
+    )
+    shutil.copytree(
+        Path("output", "stage", "precalculus", "preview"),
+        Path("site", "precalculus", slug)
+    )
+    shutil.copytree(
+        Path("output", "stage", "linear-algebra", "preview"),
+        Path("site", "linear-algebra", slug)
+    )
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Build fixed editions of books.')
+    parser.add_argument('edition_name')
+    parser.add_argument('edition_slug')
+    args = parser.parse_args()
+    main(name=args.edition_name, slug=args.edition_slug)

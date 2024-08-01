@@ -5,19 +5,14 @@ import zipfile
 from checkit.bank import Bank
 from checkit import static
 
-def main():
-    parser = argparse.ArgumentParser(description='Build a CheckIt bank.')
-    parser.add_argument('book', choices=['precalculus', 'calculus', 'linear-algebra'])
-    parser.add_argument('-f', '--full',
-                        action='store_true')
-    args = parser.parse_args()
+def main(book:str, full:bool):
 
-    bank_path = os.path.join("source", args.book, "exercises")
+    bank_path = os.path.join("source", book, "exercises")
 
     print(f"Building exercises from `{bank_path}`")
 
     b = Bank(bank_path)
-    b.generate_exercises(regenerate=args.full, images=args.full)
+    b.generate_exercises(regenerate=full, images=full)
     b.write_json()
 
     # b.build_viewer() # <-- broken, reimplemented below
@@ -30,7 +25,7 @@ def main():
     # copy assets
     shutil.copytree(b.build_path(), os.path.join(docs_path,"assets"), dirs_exist_ok=True)
 
-    stage_path = os.path.join("output", "stage", args.book, "preview", "exercises")
+    stage_path = os.path.join("output", "stage", book, "preview", "exercises")
     print(f"Staging bank at `{stage_path}`")
     # stage bank
     shutil.copytree(
@@ -40,4 +35,9 @@ def main():
     )
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Build a CheckIt bank.')
+    parser.add_argument('book', choices=['precalculus', 'calculus', 'linear-algebra'])
+    parser.add_argument('-f', '--full',
+                        action='store_true')
+    args = parser.parse_args()
+    main(book=args.book, full=args.full)
