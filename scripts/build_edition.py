@@ -6,6 +6,7 @@ from pretext.project import Project
 def main():
     parser = argparse.ArgumentParser(description='Build fixed editions of books.')
     parser.add_argument('edition_name')
+    parser.add_argument('edition_slug')
     args = parser.parse_args()
  
     # update edition name
@@ -17,8 +18,8 @@ def main():
             filedata = file.read()
         # Replace the target string
         filedata = filedata.replace(
-            "<!-- edition -->PREVIEW<!-- /edition -->", 
-            f"<!-- edition -->{args.edition_name}<!-- /edition -->"
+            "PREVIEW Edition",
+            f"{args.edition_name} Edition"
         )
         # Write the file out again
         with open(filestr, 'w') as file:
@@ -33,15 +34,15 @@ def main():
         # Replace the target string
         filedata = filedata.replace(
             "https://tbil.org/calculus/preview", 
-            f"https://tbil.org/calculus/{args.edition_name}"
+            f"https://tbil.org/calculus/{args.edition_slug}"
         )
         filedata = filedata.replace(
             "https://tbil.org/precalculus/preview", 
-            f"https://tbil.org/precalculus/{args.edition_name}"
+            f"https://tbil.org/precalculus/{args.edition_slug}"
         )
         filedata = filedata.replace(
             "https://tbil.org/linear-algebra/preview", 
-            f"https://tbil.org/linear-algebra/{args.edition_name}"
+            f"https://tbil.org/linear-algebra/{args.edition_slug}"
         )
         # Write the file out again
         with open(filestr, 'w') as file:
