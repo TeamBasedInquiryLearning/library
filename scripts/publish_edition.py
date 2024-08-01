@@ -2,6 +2,7 @@ import argparse
 import glob
 from pathlib import Path
 import shutil
+import subprocess
 import build_bank
 from pretext.project import Project
 
@@ -55,6 +56,9 @@ def main(name:str, slug:str):
     # build and stage banks
     for book in ["precalculus", "calculus", "linear-algebra"]:
         build_bank.main(book=book, full=True)
+
+    # undo changes to source
+    subprocess.run("git", "reset", "HEAD", "--hard")
 
     # save edition to site directory
     shutil.copytree(
