@@ -69,8 +69,7 @@ def build_books(slug:str, books=None):
 
 def build_banks(slug:str, books=None):
     if books is None:
-        # TODO add precalculus in future
-        books = ["calculus", "linear-algebra"]
+        books = ["calculus", "linear-algebra", "precalculus"]
     # build and stage banks
     for book in books:
         build_bank.main(book=book, full=True)
