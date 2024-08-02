@@ -1,26 +1,43 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
-    
-    
     <knowl>
         <content>
             <p>
-                Task 
+                There are many ways to solve a quadratic equation, but sometimes it is better to use 
+                one particular method. For each equation, determine which method would be the best to use 
+                and explain why. You must choose a different method for each equation and cannot use a 
+                method more than once. 
             </p>
+            <list mode="ordered">
+                <!--{{#equations}}-->
+                <item><p><m>{{equation}}</m></p></item>
+                <!--{{/equations}}-->
+            </list>
         </content>
         <outtro>
-            <p>
-                Task answer
-            </p>
+            <list mode="ordered">
+                <!--{{#equations}}-->
+                <item><p>This equation is best solved by {{method}}</p></item>
+                <!--{{/equations}}-->
+            </list>
         </outtro>
         
     </knowl>
-      
+    <knowl>
+        <content>
+            <p>
+                Choose two of the equations above and solve using the method you stated 
+                is the best to use. Do you still think that method was the best? Why or why not?
+            </p>
+        </content>
+        <outtro>
+            <list mode="ordered">
+                <!--{{#equations}}-->
+                <item><p>The solutions are <m>{{roots}}</m></p></item>
+                <!--{{/equations}}-->
+            </list>
+        </outtro> 
+    </knowl>
     
 </knowl>
