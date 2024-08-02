@@ -58,7 +58,7 @@ def main(name:str, slug:str):
         build_bank.main(book=book, full=True)
 
     # undo changes to source
-    subprocess.run("git", "reset", "HEAD", "--hard")
+    subprocess.run(["git", "reset", "HEAD", "--hard"])
 
     # save edition to site directory
     shutil.copytree(
