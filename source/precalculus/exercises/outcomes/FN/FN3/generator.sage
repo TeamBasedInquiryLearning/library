@@ -30,7 +30,7 @@ class Generator(BaseGenerator):
       if flip_vertically:
         graph["y_intercept"]=(graph["y_intercept"][0],-1*graph["y_intercept"][1])
         graph["endpoints"][1] = (graph["endpoints"][1][0], -1*graph["endpoints"][1][1])
-        for i in range(0,2):
+        for i in range(0,3):
           graph["extrema"]["points"][i]=(graph["extrema"]["points"][i][0], -1*graph["extrema"]["points"][i][1])
         graph["extrema"]["type"]=["max","min","max"] 
         graph["increasing"],graph["decreasing"]=graph["decreasing"],graph["increasing"]
