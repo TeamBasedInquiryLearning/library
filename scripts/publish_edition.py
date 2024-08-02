@@ -57,9 +57,6 @@ def main(name:str, slug:str):
     for book in ["precalculus", "calculus", "linear-algebra"]:
         build_bank.main(book=book, full=True)
 
-    # undo changes to source
-    subprocess.run(["git", "reset", "HEAD", "--hard"])
-
     # save edition to site directory
     shutil.copytree(
         Path("output", "stage", "calculus", "preview"),
