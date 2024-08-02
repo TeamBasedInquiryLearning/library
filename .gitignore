@@ -106,8 +106,8 @@ codechat_config.yaml
 
 # CheckIt
 
-**/exercises/assets
-**/exercises/docs
+source/**/exercises/assets
+source/**/exercises/docs
 exercise-sandbox
 *.sage.py
 

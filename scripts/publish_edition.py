@@ -72,10 +72,10 @@ def build_banks(slug:str, books=None):
         books = ["calculus", "linear-algebra", "precalculus"]
     # build and stage banks
     for book in books:
-        build_bank.main(book=book, full=True)
+        build_bank.main(book=book, full=True, sandbox=True, stage=False)
         shutil.copytree(
-            Path("edition-sandbox", "output", "stage", book, "preview", "exercises"),
-            Path("site", book, slug, "exercises")
+            Path("edition-sandbox") / "source" / book / "exercises" / "docs",
+            Path("site") / book / slug / "exercises"
         )
 
 def main(name:str, slug:str, clean=True):
