@@ -13,7 +13,7 @@
       name="precal-print"
       format="pdf"
       source="precalculus/source/main.ptx"
-      output-filename="TBIL-Precalculus.pdf"
+      output-filename="TBIL-Precal.pdf"
       deploy-dir="precalculus/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -30,7 +30,7 @@
       format="pdf"
       source="precalculus/source/main.ptx"
       publication="instructor.ptx"
-      output-filename="TBIL-Precalculus-Instructor.pdf"
+      output-filename="TBIL-Precal-Instructor.pdf"
       deploy-dir="precalculus/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -38,7 +38,7 @@
       name="precal-print-slides"
       format="pdf"
       source="precalculus/source/main.ptx"
-      output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
+      output-filename="TBIL-Precal-Slides.pdf"
       deploy-dir="precalculus/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -53,7 +53,7 @@
       name="cal-print"
       format="pdf"
       source="calculus/source/main.ptx"
-      output-filename="TBIL-Calculus.pdf"
+      output-filename="TBIL-Cal.pdf"
       deploy-dir="calculus/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -70,7 +70,7 @@
       format="pdf"
       source="calculus/source/main.ptx"
       publication="instructor.ptx"
-      output-filename="TBIL-Calculus-Instructor.pdf"
+      output-filename="TBIL-Cal-Instructor.pdf"
       deploy-dir="calculus/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -78,7 +78,7 @@
       name="cal-print-slides"
       format="pdf"
       source="calculus/source/main.ptx"
-      output-filename="TBIL-Calculus-Instructor-Slides.pdf"
+      output-filename="TBIL-Cal-Slides.pdf"
       deploy-dir="calculus/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -93,7 +93,7 @@
       name="la-print"
       format="pdf"
       source="linear-algebra/source/main.ptx"
-      output-filename="TBIL-Precalculus.pdf"
+      output-filename="TBIL-LA.pdf"
       deploy-dir="linear-algebra/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -110,7 +110,7 @@
       format="pdf"
       source="linear-algebra/source/main.ptx"
       publication="instructor.ptx"
-      output-filename="TBIL-Precalculus-Instructor.pdf"
+      output-filename="TBIL-LA-Instructor.pdf"
       deploy-dir="linear-algebra/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
@@ -118,7 +118,7 @@
       name="la-print-slides"
       format="pdf"
       source="linear-algebra/source/main.ptx"
-      output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
+      output-filename="TBIL-LA-Slides.pdf"
       deploy-dir="linear-algebra/preview/print" >
     <stringparams debug.project.number="the-way-it-should-be"/>
   </target>
