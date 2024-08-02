@@ -2,15 +2,17 @@ import argparse
 import glob
 from pathlib import Path
 import shutil
-import build_bank
+import subprocess
 from pretext.project import Project
+from . import build_bank
 
-def main(name:str, slug:str):
-
+def clean_edition_sandbox():
+    # delete subdirectory
+    subprocess.run(["rm", "-rf", "edition-sandbox"])
     # copy repo to subdirectory
-    # be sure to delete the sandbox unless using cached build files is intentional...
-    shutil.copytree(Path("."), Path("edition-sandbox"), dirs_exist_ok=True)
- 
+    subprocess.run(["git", "clone", ".", "edition-sandbox"])
+
+def update_edition_source(name:str, slug:str):
     # update edition name
     files = glob.glob('edition-sandbox/source/**/source/main.ptx')
     files += glob.glob('edition-sandbox/source/**/exercises/bank.xml')
@@ -50,29 +52,39 @@ def main(name:str, slug:str):
         with open(filestr, 'w') as file:
             file.write(filedata)
 
+def build_books(slug:str, books=None):
+    if books is None:
+        books = ["calculus", "linear-algebra", "precalculus"]
     # # build and stage targets
     p = Project.parse("edition-sandbox")
     for t in p.deploy_targets():
         t.build(clean=True)
     p.stage_deployment()
-
-    # build and stage banks
-    for book in ["precalculus", "calculus", "linear-algebra"]:
-        build_bank.main(book=book, full=True)
-
     # save edition to site directory
-    shutil.copytree(
-        Path("edition-sandbox", "output", "stage", "calculus", "preview"),
-        Path("site", "calculus", slug)
-    )
-    shutil.copytree(
-        Path("edition-sandbox", "output", "stage", "precalculus", "preview"),
-        Path("site", "precalculus", slug)
-    )
-    shutil.copytree(
-        Path("edition-sandbox", "output", "stage", "linear-algebra", "preview"),
-        Path("site", "linear-algebra", slug)
-    )
+    for book in books:
+        shutil.copytree(
+            Path("edition-sandbox", "output", "stage", book, "preview"),
+            Path("site", book, slug)
+        )
+
+def build_banks(slug:str, books=None):
+    if books is None:
+        # TODO add precalculus in future
+        books = ["calculus", "linear-algebra"]
+    # build and stage banks
+    for book in books:
+        build_bank.main(book=book, full=True)
+        shutil.copytree(
+            Path("edition-sandbox", "output", "stage", book, "preview", "exercises"),
+            Path("site", book, slug, "exercises")
+        )
+
+def main(name:str, slug:str, clean=True):
+    if clean:
+        clean_edition_sandbox()
+    update_edition_source(name, slug)
+    build_books(slug)
+    build_banks(slug)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Build fixed editions of books.')
