@@ -2,15 +2,18 @@ import argparse
 import glob
 from pathlib import Path
 import shutil
-import subprocess
 import build_bank
 from pretext.project import Project
 
 def main(name:str, slug:str):
+
+    # copy repo to subdirectory
+    # be sure to delete the sandbox unless using cached build files is intentional...
+    shutil.copytree(Path("."), Path("edition-sandbox"), dirs_exist_ok=True)
  
     # update edition name
-    files = glob.glob('source/**/source/main.ptx')
-    files += glob.glob('source/**/exercises/bank.xml')
+    files = glob.glob('edition-sandbox/source/**/source/main.ptx')
+    files += glob.glob('edition-sandbox/source/**/exercises/bank.xml')
     for filestr in files:
         # Read in the file
         with open(filestr, 'r') as file:
@@ -25,7 +28,7 @@ def main(name:str, slug:str):
             file.write(filedata)
 
     # update edition links
-    files = glob.glob('source/**/source/**/*.ptx')
+    files = glob.glob('edition-sandbox/source/**/source/**/*.ptx')
     for filestr in files:
         # Read in the file
         with open(filestr, 'r') as file:
@@ -48,7 +51,7 @@ def main(name:str, slug:str):
             file.write(filedata)
 
     # # build and stage targets
-    p = Project.parse()
+    p = Project.parse("edition-sandbox")
     for t in p.deploy_targets():
         t.build(clean=True)
     p.stage_deployment()
@@ -59,15 +62,15 @@ def main(name:str, slug:str):
 
     # save edition to site directory
     shutil.copytree(
-        Path("output", "stage", "calculus", "preview"),
+        Path("edition-sandbox", "output", "stage", "calculus", "preview"),
         Path("site", "calculus", slug)
     )
     shutil.copytree(
-        Path("output", "stage", "precalculus", "preview"),
+        Path("edition-sandbox", "output", "stage", "precalculus", "preview"),
         Path("site", "precalculus", slug)
     )
     shutil.copytree(
-        Path("output", "stage", "linear-algebra", "preview"),
+        Path("edition-sandbox", "output", "stage", "linear-algebra", "preview"),
         Path("site", "linear-algebra", slug)
     )
 
