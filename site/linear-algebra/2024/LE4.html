@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-LA Linear Systems with Infinitely-Many Solutions (LE4)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Linear Algebra for Team-Based Inquiry Learning">
+<meta property="book:author" content="Steven Clontz">
+<meta property="book:author" content="Drew Lewis">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-octave' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-octave",
+  "linked": true,
+  "linkKey": "linked-octave",
+  "autoeval": false,
+  "languages": [
+    "octave"
+  ],
+  "evalButtonText": "Evaluate (Octave)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_green_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#LE-2-2 { counter-set: LE-2-2 0; }
+#LE-2-2 > li::marker { content: ""counter(LE-2-2,decimal)"."; }
+#LE-2-2 > li { counter-increment: LE-2-2; }
+#LE-readiness-3 { counter-set: LE-readiness-3 0; }
+#LE-readiness-3 > li::marker { content: ""counter(LE-readiness-3,decimal)"."; }
+#LE-readiness-3 > li { counter-increment: LE-readiness-3; }
+#linearsystemsfact-1-2 { counter-set: linearsystemsfact-1-2 0; }
+#linearsystemsfact-1-2 > li::marker { content: ""counter(linearsystemsfact-1-2,decimal)"."; }
+#linearsystemsfact-1-2 > li { counter-increment: linearsystemsfact-1-2; }
+#LE2-4-4-1-1-3 { counter-set: LE2-4-4-1-1-3 0; }
+#LE2-4-4-1-1-3 > li::marker { content: ""counter(LE2-4-4-1-1-3,decimal)"."; }
+#LE2-4-4-1-1-3 > li { counter-increment: LE2-4-4-1-1-3; }
+#LE2-4-7-1-2 { counter-set: LE2-4-7-1-2 0; }
+#LE2-4-7-1-2 > li::marker { content: ""counter(LE2-4-7-1-2,decimal)"."; }
+#LE2-4-7-1-2 > li { counter-increment: LE2-4-7-1-2; }
+#LE2-4-8-1-2 { counter-set: LE2-4-8-1-2 0; }
+#LE2-4-8-1-2 > li::marker { content: ""counter(LE2-4-8-1-2,decimal)"."; }
+#LE2-4-8-1-2 > li { counter-increment: LE2-4-8-1-2; }
+#LE2-4-9-1-2 { counter-set: LE2-4-9-1-2 0; }
+#LE2-4-9-1-2 > li::marker { content: ""counter(LE2-4-9-1-2,decimal)"."; }
+#LE2-4-9-1-2 > li { counter-increment: LE2-4-9-1-2; }
+#LE2-4-11-1-2 { counter-set: LE2-4-11-1-2 0; }
+#LE2-4-11-1-2 > li::marker { content: ""counter(LE2-4-11-1-2,upper-alpha)"."; }
+#LE2-4-11-1-2 > li { counter-increment: LE2-4-11-1-2; }
+#LE2-4-12-1-2 { counter-set: LE2-4-12-1-2 0; }
+#LE2-4-12-1-2 > li::marker { content: ""counter(LE2-4-12-1-2,upper-alpha)"."; }
+#LE2-4-12-1-2 > li { counter-increment: LE2-4-12-1-2; }
+#LE2-4-13-1-2 { counter-set: LE2-4-13-1-2 0; }
+#LE2-4-13-1-2 > li::marker { content: ""counter(LE2-4-13-1-2,upper-alpha)"."; }
+#LE2-4-13-1-2 > li { counter-increment: LE2-4-13-1-2; }
+#LE2-4-14-1-1 { counter-set: LE2-4-14-1-1 0; }
+#LE2-4-14-1-1 > li::marker { content: ""counter(LE2-4-14-1-1,decimal)"."; }
+#LE2-4-14-1-1 > li { counter-increment: LE2-4-14-1-1; }
+#LE2-4-17-1-2-3 { counter-set: LE2-4-17-1-2-3 0; }
+#LE2-4-17-1-2-3 > li::marker { content: ""counter(LE2-4-17-1-2-3,upper-alpha)"."; }
+#LE2-4-17-1-2-3 > li { counter-increment: LE2-4-17-1-2-3; }
+#LE3-4-3-4-2 { counter-set: LE3-4-3-4-2 0; }
+#LE3-4-3-4-2 > li::marker { content: ""counter(LE3-4-3-4-2,upper-alpha)"."; }
+#LE3-4-3-4-2 > li { counter-increment: LE3-4-3-4-2; }
+#LE3-4-5-4-2 { counter-set: LE3-4-5-4-2 0; }
+#LE3-4-5-4-2 > li::marker { content: ""counter(LE3-4-5-4-2,upper-alpha)"."; }
+#LE3-4-5-4-2 > li { counter-increment: LE3-4-5-4-2; }
+#LE3-4-7-1-2 { counter-set: LE3-4-7-1-2 0; }
+#LE3-4-7-1-2 > li::marker { content: ""counter(LE3-4-7-1-2,upper-alpha)"."; }
+#LE3-4-7-1-2 > li { counter-increment: LE3-4-7-1-2; }
+#LE3-inf-4-2 { counter-set: LE3-inf-4-2 0; }
+#LE3-inf-4-2 > li::marker { content: ""counter(LE3-inf-4-2,upper-alpha)"."; }
+#LE3-inf-4-2 > li { counter-increment: LE3-inf-4-2; }
+#LE3-5-2-1-1-2 { counter-set: LE3-5-2-1-1-2 0; }
+#LE3-5-2-1-1-2 > li::marker { content: ""counter(LE3-5-2-1-1-2,decimal)"."; }
+#LE3-5-2-1-1-2 > li { counter-increment: LE3-5-2-1-1-2; }
+#EV-2-2 { counter-set: EV-2-2 0; }
+#EV-2-2 > li::marker { content: ""counter(EV-2-2,decimal)"."; }
+#EV-2-2 > li { counter-increment: EV-2-2; }
+#EV-readiness-3 { counter-set: EV-readiness-3 0; }
+#EV-readiness-3 > li::marker { content: ""counter(EV-readiness-3,decimal)"."; }
+#EV-readiness-3 > li { counter-increment: EV-readiness-3; }
+#EV1-4-5-3-1-4 { counter-set: EV1-4-5-3-1-4 0; }
+#EV1-4-5-3-1-4 > li::marker { content: ""counter(EV1-4-5-3-1-4,upper-alpha)"."; }
+#EV1-4-5-3-1-4 > li { counter-increment: EV1-4-5-3-1-4; }
+#EV1-4-7-3-1-3 { counter-set: EV1-4-7-3-1-3 0; }
+#EV1-4-7-3-1-3 > li::marker { content: ""counter(EV1-4-7-3-1-3,upper-alpha)"."; }
+#EV1-4-7-3-1-3 > li { counter-increment: EV1-4-7-3-1-3; }
+#EV1-4-8-1-1-3 { counter-set: EV1-4-8-1-1-3 0; }
+#EV1-4-8-1-1-3 > li::marker { content: ""counter(EV1-4-8-1-1-3,upper-alpha)"."; }
+#EV1-4-8-1-1-3 > li { counter-increment: EV1-4-8-1-1-3; }
+#EV1-4-9-2-2-1 { counter-set: EV1-4-9-2-2-1 0; }
+#EV1-4-9-2-2-1 > li::marker { content: ""counter(EV1-4-9-2-2-1,upper-alpha)"."; }
+#EV1-4-9-2-2-1 > li { counter-increment: EV1-4-9-2-2-1; }
+#EV2-4-3-1-3 { counter-set: EV2-4-3-1-3 0; }
+#EV2-4-3-1-3 > li::marker { content: ""counter(EV2-4-3-1-3,upper-alpha)"."; }
+#EV2-4-3-1-3 > li { counter-increment: EV2-4-3-1-3; }
+#EV2-4-4-1-3 { counter-set: EV2-4-4-1-3 0; }
+#EV2-4-4-1-3 > li::marker { content: ""counter(EV2-4-4-1-3,upper-alpha)"."; }
+#EV2-4-4-1-3 > li { counter-increment: EV2-4-4-1-3; }
+#EV2-4-7-2-1-1-4 { counter-set: EV2-4-7-2-1-1-4 0; }
+#EV2-4-7-2-1-1-4 > li::marker { content: ""counter(EV2-4-7-2-1-1-4,upper-alpha)"."; }
+#EV2-4-7-2-1-1-4 > li { counter-increment: EV2-4-7-2-1-1-4; }
+#EV2-4-7-3-1-1-4 { counter-set: EV2-4-7-3-1-1-4 0; }
+#EV2-4-7-3-1-1-4 > li::marker { content: ""counter(EV2-4-7-3-1-1-4,upper-alpha)"."; }
+#EV2-4-7-3-1-1-4 > li { counter-increment: EV2-4-7-3-1-1-4; }
+#EV2-4-11-1-2 { counter-set: EV2-4-11-1-2 0; }
+#EV2-4-11-1-2 > li::marker { content: ""counter(EV2-4-11-1-2,upper-alpha)"."; }
+#EV2-4-11-1-2 > li { counter-increment: EV2-4-11-1-2; }
+#EV3-4-3-1-1-8 { counter-set: EV3-4-3-1-1-8 0; }
+#EV3-4-3-1-1-8 > li::marker { content: ""counter(EV3-4-3-1-1-8,upper-alpha)"."; }
+#EV3-4-3-1-1-8 > li { counter-increment: EV3-4-3-1-1-8; }
+#EV3-4-5-2-2 { counter-set: EV3-4-5-2-2 0; }
+#EV3-4-5-2-2 > li::marker { content: ""counter(EV3-4-5-2-2,upper-alpha)"."; }
+#EV3-4-5-2-2 > li { counter-increment: EV3-4-5-2-2; }
+#EV3-4-5-3-3 { counter-set: EV3-4-5-3-3 0; }
+#EV3-4-5-3-3 > li::marker { content: ""counter(EV3-4-5-3-3,upper-alpha)"."; }
+#EV3-4-5-3-3 > li { counter-increment: EV3-4-5-3-3; }
+#EV3-4-5-4-2 { counter-set: EV3-4-5-4-2 0; }
+#EV3-4-5-4-2 > li::marker { content: ""counter(EV3-4-5-4-2,upper-alpha)"."; }
+#EV3-4-5-4-2 > li { counter-increment: EV3-4-5-4-2; }
+#EV3-4-9-3-1-4 { counter-set: EV3-4-9-3-1-4 0; }
+#EV3-4-9-3-1-4 > li::marker { content: ""counter(EV3-4-9-3-1-4,upper-alpha)"."; }
+#EV3-4-9-3-1-4 > li { counter-increment: EV3-4-9-3-1-4; }
+#EV3-4-9-4-1-3 { counter-set: EV3-4-9-4-1-3 0; }
+#EV3-4-9-4-1-3 > li::marker { content: ""counter(EV3-4-9-4-1-3,upper-alpha)"."; }
+#EV3-4-9-4-1-3 > li { counter-increment: EV3-4-9-4-1-3; }
+#EV3-4-9-6-1-3 { counter-set: EV3-4-9-6-1-3 0; }
+#EV3-4-9-6-1-3 > li::marker { content: ""counter(EV3-4-9-6-1-3,upper-alpha)"."; }
+#EV3-4-9-6-1-3 > li { counter-increment: EV3-4-9-6-1-3; }
+#EV3-4-9-8-1-3 { counter-set: EV3-4-9-8-1-3 0; }
+#EV3-4-9-8-1-3 > li::marker { content: ""counter(EV3-4-9-8-1-3,upper-alpha)"."; }
+#EV3-4-9-8-1-3 > li { counter-increment: EV3-4-9-8-1-3; }
+#EV3-4-10-3-1-1 { counter-set: EV3-4-10-3-1-1 0; }
+#EV3-4-10-3-1-1 > li::marker { content: ""counter(EV3-4-10-3-1-1,upper-alpha)"."; }
+#EV3-4-10-3-1-1 > li { counter-increment: EV3-4-10-3-1-1; }
+#EV3-4-10-4-1-1 { counter-set: EV3-4-10-4-1-1 0; }
+#EV3-4-10-4-1-1 > li::marker { content: ""counter(EV3-4-10-4-1-1,decimal)"."; }
+#EV3-4-10-4-1-1 > li { counter-increment: EV3-4-10-4-1-1; }
+#EV3-subspace-check-2-3 { counter-set: EV3-subspace-check-2-3 0; }
+#EV3-subspace-check-2-3 > li::marker { content: ""counter(EV3-subspace-check-2-3,decimal)"."; }
+#EV3-subspace-check-2-3 > li { counter-increment: EV3-subspace-check-2-3; }
+#EV3-4-14-1-3-1 { counter-set: EV3-4-14-1-3-1 0; }
+#EV3-4-14-1-3-1 > li::marker { content: ""counter(EV3-4-14-1-3-1,upper-alpha)"."; }
+#EV3-4-14-1-3-1 > li { counter-increment: EV3-4-14-1-3-1; }
+#EV3-4-15-1-2 { counter-set: EV3-4-15-1-2 0; }
+#EV3-4-15-1-2 > li::marker { content: ""counter(EV3-4-15-1-2,decimal)"."; }
+#EV3-4-15-1-2 > li { counter-increment: EV3-4-15-1-2; }
+#EV4-4-2-1-2 { counter-set: EV4-4-2-1-2 0; }
+#EV4-4-2-1-2 > li::marker { content: ""counter(EV4-4-2-1-2,upper-alpha)"."; }
+#EV4-4-2-1-2 > li { counter-increment: EV4-4-2-1-2; }
+#EV4-4-4-2-1-3 { counter-set: EV4-4-4-2-1-3 0; }
+#EV4-4-4-2-1-3 > li::marker { content: ""counter(EV4-4-4-2-1-3,upper-alpha)"."; }
+#EV4-4-4-2-1-3 > li { counter-increment: EV4-4-4-2-1-3; }
+#EV4-4-4-3-2-2 { counter-set: EV4-4-4-3-2-2 0; }
+#EV4-4-4-3-2-2 > li::marker { content: ""counter(EV4-4-4-3-2-2,upper-alpha)"."; }
+#EV4-4-4-3-2-2 > li { counter-increment: EV4-4-4-3-2-2; }
+#EV4-4-4-4-1-1 { counter-set: EV4-4-4-4-1-1 0; }
+#EV4-4-4-4-1-1 > li::marker { content: ""counter(EV4-4-4-4-1-1,upper-alpha)"."; }
+#EV4-4-4-4-1-1 > li { counter-increment: EV4-4-4-4-1-1; }
+#EV4-4-11-1-2 { counter-set: EV4-4-11-1-2 0; }
+#EV4-4-11-1-2 > li::marker { content: ""counter(EV4-4-11-1-2,upper-alpha)"."; }
+#EV4-4-11-1-2 > li { counter-increment: EV4-4-11-1-2; }
+#EV4-4-12-1-1-2 { counter-set: EV4-4-12-1-1-2 0; }
+#EV4-4-12-1-1-2 > li::marker { content: ""counter(EV4-4-12-1-1-2,upper-alpha)"."; }
+#EV4-4-12-1-1-2 > li { counter-increment: EV4-4-12-1-1-2; }
+#activity-EV5-intro-4-1-1-3 { counter-set: activity-EV5-intro-4-1-1-3 0; }
+#activity-EV5-intro-4-1-1-3 > li::marker { content: ""counter(activity-EV5-intro-4-1-1-3,upper-alpha)"."; }
+#activity-EV5-intro-4-1-1-3 > li { counter-increment: activity-EV5-intro-4-1-1-3; }
+#EV5-4-4-2-1-2 { counter-set: EV5-4-4-2-1-2 0; }
+#EV5-4-4-2-1-2 > li::marker { content: ""counter(EV5-4-4-2-1-2,upper-alpha)"."; }
+#EV5-4-4-2-1-2 > li { counter-increment: EV5-4-4-2-1-2; }
+#EV5-4-4-3-1-5 { counter-set: EV5-4-4-3-1-5 0; }
+#EV5-4-4-3-1-5 > li::marker { content: ""counter(EV5-4-4-3-1-5,upper-alpha)"."; }
+#EV5-4-4-3-1-5 > li { counter-increment: EV5-4-4-3-1-5; }
+#EV5-4-4-4-1-3 { counter-set: EV5-4-4-4-1-3 0; }
+#EV5-4-4-4-1-3 > li::marker { content: ""counter(EV5-4-4-4-1-3,upper-alpha)"."; }
+#EV5-4-4-4-1-3 > li { counter-increment: EV5-4-4-4-1-3; }
+#EV5-definition-basis-1-2 { counter-set: EV5-definition-basis-1-2 0; }
+#EV5-definition-basis-1-2 > li::marker { content: ""counter(EV5-definition-basis-1-2,decimal)"."; }
+#EV5-definition-basis-1-2 > li { counter-increment: EV5-definition-basis-1-2; }
+#EV5-4-7-1-3 { counter-set: EV5-4-7-1-3 0; }
+#EV5-4-7-1-3 > li::marker { content: ""counter(EV5-4-7-1-3,upper-alpha)"."; }
+#EV5-4-7-1-3 > li { counter-increment: EV5-4-7-1-3; }
+#EV5-4-10-2-1-2 { counter-set: EV5-4-10-2-1-2 0; }
+#EV5-4-10-2-1-2 > li::marker { content: ""counter(EV5-4-10-2-1-2,upper-alpha)"."; }
+#EV5-4-10-2-1-2 > li { counter-increment: EV5-4-10-2-1-2; }
+#EV5-4-10-3-1-2 { counter-set: EV5-4-10-3-1-2 0; }
+#EV5-4-10-3-1-2 > li::marker { content: ""counter(EV5-4-10-3-1-2,upper-alpha)"."; }
+#EV5-4-10-3-1-2 > li { counter-increment: EV5-4-10-3-1-2; }
+#EV5-4-10-4-1-2 { counter-set: EV5-4-10-4-1-2 0; }
+#EV5-4-10-4-1-2 > li::marker { content: ""counter(EV5-4-10-4-1-2,upper-alpha)"."; }
+#EV5-4-10-4-1-2 > li { counter-increment: EV5-4-10-4-1-2; }
+#EV5-4-10-5-1-2 { counter-set: EV5-4-10-5-1-2 0; }
+#EV5-4-10-5-1-2 > li::marker { content: ""counter(EV5-4-10-5-1-2,upper-alpha)"."; }
+#EV5-4-10-5-1-2 > li { counter-increment: EV5-4-10-5-1-2; }
+#EV5-4-10-6-1-2 { counter-set: EV5-4-10-6-1-2 0; }
+#EV5-4-10-6-1-2 > li::marker { content: ""counter(EV5-4-10-6-1-2,upper-alpha)"."; }
+#EV5-4-10-6-1-2 > li { counter-increment: EV5-4-10-6-1-2; }
+#EV6-4-3-3-1-1 { counter-set: EV6-4-3-3-1-1 0; }
+#EV6-4-3-3-1-1 > li::marker { content: ""counter(EV6-4-3-3-1-1,upper-alpha)"."; }
+#EV6-4-3-3-1-1 > li { counter-increment: EV6-4-3-3-1-1; }
+#EV6-4-13-1-1 { counter-set: EV6-4-13-1-1 0; }
+#EV6-4-13-1-1 > li::marker { content: ""counter(EV6-4-13-1-1,upper-alpha)"."; }
+#EV6-4-13-1-1 > li { counter-increment: EV6-4-13-1-1; }
+#EV7-3-3-2-1 { counter-set: EV7-3-3-2-1 0; }
+#EV7-3-3-2-1 > li::marker { content: ""counter(EV7-3-3-2-1,upper-alpha)"."; }
+#EV7-3-3-2-1 > li { counter-increment: EV7-3-3-2-1; }
+#EV7-4-2-5-1-2 { counter-set: EV7-4-2-5-1-2 0; }
+#EV7-4-2-5-1-2 > li::marker { content: ""counter(EV7-4-2-5-1-2,upper-alpha)"."; }
+#EV7-4-2-5-1-2 > li { counter-increment: EV7-4-2-5-1-2; }
+#EV7-4-9-3-1-1-1 { counter-set: EV7-4-9-3-1-1-1 0; }
+#EV7-4-9-3-1-1-1 > li::marker { content: ""counter(EV7-4-9-3-1-1-1,upper-alpha)""; }
+#EV7-4-9-3-1-1-1 > li { counter-increment: EV7-4-9-3-1-1-1; }
+#AT-2-2 { counter-set: AT-2-2 0; }
+#AT-2-2 > li::marker { content: ""counter(AT-2-2,decimal)"."; }
+#AT-2-2 > li { counter-increment: AT-2-2; }
+#AT-readiness-3 { counter-set: AT-readiness-3 0; }
+#AT-readiness-3 > li::marker { content: ""counter(AT-readiness-3,decimal)"."; }
+#AT-readiness-3 > li { counter-increment: AT-readiness-3; }
+#AT1-definition-map-1-1-7 { counter-set: AT1-definition-map-1-1-7 0; }
+#AT1-definition-map-1-1-7 > li::marker { content: ""counter(AT1-definition-map-1-1-7,decimal)"."; }
+#AT1-definition-map-1-1-7 > li { counter-increment: AT1-definition-map-1-1-7; }
+#AT1-4-5-2-1-3 { counter-set: AT1-4-5-2-1-3 0; }
+#AT1-4-5-2-1-3 > li::marker { content: ""counter(AT1-4-5-2-1-3,upper-alpha)"."; }
+#AT1-4-5-2-1-3 > li { counter-increment: AT1-4-5-2-1-3; }
+#AT1-4-5-3-1-3 { counter-set: AT1-4-5-3-1-3 0; }
+#AT1-4-5-3-1-3 > li::marker { content: ""counter(AT1-4-5-3-1-3,upper-alpha)"."; }
+#AT1-4-5-3-1-3 > li { counter-increment: AT1-4-5-3-1-3; }
+#AT1-4-5-4-1-2 { counter-set: AT1-4-5-4-1-2 0; }
+#AT1-4-5-4-1-2 > li::marker { content: ""counter(AT1-4-5-4-1-2,upper-alpha)"."; }
+#AT1-4-5-4-1-2 > li { counter-increment: AT1-4-5-4-1-2; }
+#AT1-4-5-5-1-3 { counter-set: AT1-4-5-5-1-3 0; }
+#AT1-4-5-5-1-3 > li::marker { content: ""counter(AT1-4-5-5-1-3,upper-alpha)"."; }
+#AT1-4-5-5-1-3 > li { counter-increment: AT1-4-5-5-1-3; }
+#AT1-4-5-6-1-3 { counter-set: AT1-4-5-6-1-3 0; }
+#AT1-4-5-6-1-3 > li::marker { content: ""counter(AT1-4-5-6-1-3,upper-alpha)"."; }
+#AT1-4-5-6-1-3 > li { counter-increment: AT1-4-5-6-1-3; }
+#AT1-4-5-7-1-2 { counter-set: AT1-4-5-7-1-2 0; }
+#AT1-4-5-7-1-2 > li::marker { content: ""counter(AT1-4-5-7-1-2,upper-alpha)"."; }
+#AT1-4-5-7-1-2 > li { counter-increment: AT1-4-5-7-1-2; }
+#AT1-4-6-2-1-2 { counter-set: AT1-4-6-2-1-2 0; }
+#AT1-4-6-2-1-2 > li::marker { content: ""counter(AT1-4-6-2-1-2,upper-alpha)"."; }
+#AT1-4-6-2-1-2 > li { counter-increment: AT1-4-6-2-1-2; }
+#AT1-4-6-3-1-2 { counter-set: AT1-4-6-3-1-2 0; }
+#AT1-4-6-3-1-2 > li::marker { content: ""counter(AT1-4-6-3-1-2,upper-alpha)"."; }
+#AT1-4-6-3-1-2 > li { counter-increment: AT1-4-6-3-1-2; }
+#AT1-4-6-4-1-2 { counter-set: AT1-4-6-4-1-2 0; }
+#AT1-4-6-4-1-2 > li::marker { content: ""counter(AT1-4-6-4-1-2,upper-alpha)"."; }
+#AT1-4-6-4-1-2 > li { counter-increment: AT1-4-6-4-1-2; }
+#AT1-4-8-2-3 { counter-set: AT1-4-8-2-3 0; }
+#AT1-4-8-2-3 > li::marker { content: ""counter(AT1-4-8-2-3,decimal)"."; }
+#AT1-4-8-2-3 > li { counter-increment: AT1-4-8-2-3; }
+#AT1-4-9-1-1-1-5 { counter-set: AT1-4-9-1-1-1-5 0; }
+#AT1-4-9-1-1-1-5 > li::marker { content: ""counter(AT1-4-9-1-1-1-5,upper-alpha)"."; }
+#AT1-4-9-1-1-1-5 > li { counter-increment: AT1-4-9-1-1-1-5; }
+#AT2-3-2-1-2 { counter-set: AT2-3-2-1-2 0; }
+#AT2-3-2-1-2 > li::marker { content: ""counter(AT2-3-2-1-2,decimal)"."; }
+#AT2-3-2-1-2 > li { counter-increment: AT2-3-2-1-2; }
+#AT2-4-2-1-2 { counter-set: AT2-4-2-1-2 0; }
+#AT2-4-2-1-2 > li::marker { content: ""counter(AT2-4-2-1-2,upper-alpha)"."; }
+#AT2-4-2-1-2 > li { counter-increment: AT2-4-2-1-2; }
+#AT2-4-3-1-2 { counter-set: AT2-4-3-1-2 0; }
+#AT2-4-3-1-2 > li::marker { content: ""counter(AT2-4-3-1-2,upper-alpha)"."; }
+#AT2-4-3-1-2 > li { counter-increment: AT2-4-3-1-2; }
+#AT2-4-4-1-2 { counter-set: AT2-4-4-1-2 0; }
+#AT2-4-4-1-2 > li::marker { content: ""counter(AT2-4-4-1-2,upper-alpha)"."; }
+#AT2-4-4-1-2 > li { counter-increment: AT2-4-4-1-2; }
+#AT2-4-5-1-2 { counter-set: AT2-4-5-1-2 0; }
+#AT2-4-5-1-2 > li::marker { content: ""counter(AT2-4-5-1-2,upper-alpha)"."; }
+#AT2-4-5-1-2 > li { counter-increment: AT2-4-5-1-2; }
+#AT3-4-2-1-2 { counter-set: AT3-4-2-1-2 0; }
+#AT3-4-2-1-2 > li::marker { content: ""counter(AT3-4-2-1-2,upper-alpha)"."; }
+#AT3-4-2-1-2 > li { counter-increment: AT3-4-2-1-2; }
+#AT3-4-4-1-2 { counter-set: AT3-4-4-1-2 0; }
+#AT3-4-4-1-2 > li::marker { content: ""counter(AT3-4-4-1-2,upper-alpha)"."; }
+#AT3-4-4-1-2 > li { counter-increment: AT3-4-4-1-2; }
+#AT3-4-9-1-2 { counter-set: AT3-4-9-1-2 0; }
+#AT3-4-9-1-2 > li::marker { content: ""counter(AT3-4-9-1-2,upper-alpha)"."; }
+#AT3-4-9-1-2 > li { counter-increment: AT3-4-9-1-2; }
+#AT3-4-11-1-2 { counter-set: AT3-4-11-1-2 0; }
+#AT3-4-11-1-2 > li::marker { content: ""counter(AT3-4-11-1-2,upper-alpha)"."; }
+#AT3-4-11-1-2 > li { counter-increment: AT3-4-11-1-2; }
+#AT3-4-12-4-1-1-4 { counter-set: AT3-4-12-4-1-1-4 0; }
+#AT3-4-12-4-1-1-4 > li::marker { content: ""counter(AT3-4-12-4-1-1-4,upper-alpha)"."; }
+#AT3-4-12-4-1-1-4 > li { counter-increment: AT3-4-12-4-1-1-4; }
+#AT3-4-12-5-1-1-3 { counter-set: AT3-4-12-5-1-1-3 0; }
+#AT3-4-12-5-1-1-3 > li::marker { content: ""counter(AT3-4-12-5-1-1-3,upper-alpha)"."; }
+#AT3-4-12-5-1-1-3 > li { counter-increment: AT3-4-12-5-1-1-3; }
+#AT3-4-17-1-2 { counter-set: AT3-4-17-1-2 0; }
+#AT3-4-17-1-2 > li::marker { content: ""counter(AT3-4-17-1-2,upper-alpha)"."; }
+#AT3-4-17-1-2 > li { counter-increment: AT3-4-17-1-2; }
+#AT3-4-18-1-2 { counter-set: AT3-4-18-1-2 0; }
+#AT3-4-18-1-2 > li::marker { content: ""counter(AT3-4-18-1-2,upper-alpha)"."; }
+#AT3-4-18-1-2 > li { counter-increment: AT3-4-18-1-2; }
+#AT4-3-2-1-2 { counter-set: AT4-3-2-1-2 0; }
+#AT4-3-2-1-2 > li::marker { content: ""counter(AT4-3-2-1-2,upper-alpha)"."; }
+#AT4-3-2-1-2 > li { counter-increment: AT4-3-2-1-2; }
+#AT4-4-3-1-2 { counter-set: AT4-4-3-1-2 0; }
+#AT4-4-3-1-2 > li::marker { content: ""counter(AT4-4-3-1-2,upper-alpha)"."; }
+#AT4-4-3-1-2 > li { counter-increment: AT4-4-3-1-2; }
+#AT4-4-4-1-2 { counter-set: AT4-4-4-1-2 0; }
+#AT4-4-4-1-2 > li::marker { content: ""counter(AT4-4-4-1-2,upper-alpha)"."; }
+#AT4-4-4-1-2 > li { counter-increment: AT4-4-4-1-2; }
+#AT4-4-6-1-2 { counter-set: AT4-4-6-1-2 0; }
+#AT4-4-6-1-2 > li::marker { content: ""counter(AT4-4-6-1-2,upper-alpha)"."; }
+#AT4-4-6-1-2 > li { counter-increment: AT4-4-6-1-2; }
+#AT4-4-7-1-2 { counter-set: AT4-4-7-1-2 0; }
+#AT4-4-7-1-2 > li::marker { content: ""counter(AT4-4-7-1-2,upper-alpha)"."; }
+#AT4-4-7-1-2 > li { counter-increment: AT4-4-7-1-2; }
+#AT4-4-8-1-2 { counter-set: AT4-4-8-1-2 0; }
+#AT4-4-8-1-2 > li::marker { content: ""counter(AT4-4-8-1-2,upper-alpha)"."; }
+#AT4-4-8-1-2 > li { counter-increment: AT4-4-8-1-2; }
+#AT4-4-10-1-2 { counter-set: AT4-4-10-1-2 0; }
+#AT4-4-10-1-2 > li::marker { content: ""counter(AT4-4-10-1-2,upper-alpha)"."; }
+#AT4-4-10-1-2 > li { counter-increment: AT4-4-10-1-2; }
+#AT4-4-13-1-1-7 { counter-set: AT4-4-13-1-1-7 0; }
+#AT4-4-13-1-1-7 > li::marker { content: ""counter(AT4-4-13-1-1-7,decimal)"."; }
+#AT4-4-13-1-1-7 > li { counter-increment: AT4-4-13-1-1-7; }
+#AT4-4-14-1-1-7 { counter-set: AT4-4-14-1-1-7 0; }
+#AT4-4-14-1-1-7 > li::marker { content: ""counter(AT4-4-14-1-1-7,decimal)"."; }
+#AT4-4-14-1-1-7 > li { counter-increment: AT4-4-14-1-1-7; }
+#AT4-4-15-1-1-7 { counter-set: AT4-4-15-1-1-7 0; }
+#AT4-4-15-1-1-7 > li::marker { content: ""counter(AT4-4-15-1-1-7,decimal)"."; }
+#AT4-4-15-1-1-7 > li { counter-increment: AT4-4-15-1-1-7; }
+#AT4-4-16-1-1-7 { counter-set: AT4-4-16-1-1-7 0; }
+#AT4-4-16-1-1-7 > li::marker { content: ""counter(AT4-4-16-1-1-7,decimal)"."; }
+#AT4-4-16-1-1-7 > li { counter-increment: AT4-4-16-1-1-7; }
+#AT4-4-18-1-2 { counter-set: AT4-4-18-1-2 0; }
+#AT4-4-18-1-2 > li::marker { content: ""counter(AT4-4-18-1-2,upper-alpha)"."; }
+#AT4-4-18-1-2 > li { counter-increment: AT4-4-18-1-2; }
+#AT4-4-19-1-2 { counter-set: AT4-4-19-1-2 0; }
+#AT4-4-19-1-2 > li::marker { content: ""counter(AT4-4-19-1-2,upper-alpha)"."; }
+#AT4-4-19-1-2 > li { counter-increment: AT4-4-19-1-2; }
+#AT4-4-22-1-2 { counter-set: AT4-4-22-1-2 0; }
+#AT4-4-22-1-2 > li::marker { content: ""counter(AT4-4-22-1-2,upper-alpha)"."; }
+#AT4-4-22-1-2 > li { counter-increment: AT4-4-22-1-2; }
+#AT4-4-24-1-2 { counter-set: AT4-4-24-1-2 0; }
+#AT4-4-24-1-2 > li::marker { content: ""counter(AT4-4-24-1-2,upper-alpha)"."; }
+#AT4-4-24-1-2 > li { counter-increment: AT4-4-24-1-2; }
+#AT4-4-26-1-2 { counter-set: AT4-4-26-1-2 0; }
+#AT4-4-26-1-2 > li::marker { content: ""counter(AT4-4-26-1-2,upper-alpha)"."; }
+#AT4-4-26-1-2 > li { counter-increment: AT4-4-26-1-2; }
+#AT4-4-28-1-2 { counter-set: AT4-4-28-1-2 0; }
+#AT4-4-28-1-2 > li::marker { content: ""counter(AT4-4-28-1-2,upper-alpha)"."; }
+#AT4-4-28-1-2 > li { counter-increment: AT4-4-28-1-2; }
+#AT4-4-30-1-2 { counter-set: AT4-4-30-1-2 0; }
+#AT4-4-30-1-2 > li::marker { content: ""counter(AT4-4-30-1-2,upper-alpha)"."; }
+#AT4-4-30-1-2 > li { counter-increment: AT4-4-30-1-2; }
+#AT4-5-2-1-2 { counter-set: AT4-5-2-1-2 0; }
+#AT4-5-2-1-2 > li::marker { content: ""counter(AT4-5-2-1-2,decimal)"."; }
+#AT4-5-2-1-2 > li { counter-increment: AT4-5-2-1-2; }
+#AT4-5-3-1-2 { counter-set: AT4-5-3-1-2 0; }
+#AT4-5-3-1-2 > li::marker { content: ""counter(AT4-5-3-1-2,decimal)"."; }
+#AT4-5-3-1-2 > li { counter-increment: AT4-5-3-1-2; }
+#AT5-4-2-2 { counter-set: AT5-4-2-2 0; }
+#AT5-4-2-2 > li::marker { content: ""counter(AT5-4-2-2,decimal)"."; }
+#AT5-4-2-2 > li { counter-increment: AT5-4-2-2; }
+#AT5-4-3-1-2 { counter-set: AT5-4-3-1-2 0; }
+#AT5-4-3-1-2 > li::marker { content: ""counter(AT5-4-3-1-2,upper-alpha)"."; }
+#AT5-4-3-1-2 > li { counter-increment: AT5-4-3-1-2; }
+#AT5-4-4-2 { counter-set: AT5-4-4-2 0; }
+#AT5-4-4-2 > li::marker { content: ""counter(AT5-4-4-2,decimal)"."; }
+#AT5-4-4-2 > li { counter-increment: AT5-4-4-2; }
+#AT5-4-5-1-2 { counter-set: AT5-4-5-1-2 0; }
+#AT5-4-5-1-2 > li::marker { content: ""counter(AT5-4-5-1-2,upper-alpha)"."; }
+#AT5-4-5-1-2 > li { counter-increment: AT5-4-5-1-2; }
+#AT5-4-6-1-2 { counter-set: AT5-4-6-1-2 0; }
+#AT5-4-6-1-2 > li::marker { content: ""counter(AT5-4-6-1-2,decimal)"."; }
+#AT5-4-6-1-2 > li { counter-increment: AT5-4-6-1-2; }
+#AT5-properties-1-3 { counter-set: AT5-properties-1-3 0; }
+#AT5-properties-1-3 > li::marker { content: ""counter(AT5-properties-1-3,decimal)"."; }
+#AT5-properties-1-3 > li { counter-increment: AT5-properties-1-3; }
+#AT5-4-10-1-3 { counter-set: AT5-4-10-1-3 0; }
+#AT5-4-10-1-3 > li::marker { content: ""counter(AT5-4-10-1-3,upper-alpha)"."; }
+#AT5-4-10-1-3 > li { counter-increment: AT5-4-10-1-3; }
+#AT5-4-11-1-3 { counter-set: AT5-4-11-1-3 0; }
+#AT5-4-11-1-3 > li::marker { content: ""counter(AT5-4-11-1-3,upper-alpha)"."; }
+#AT5-4-11-1-3 > li { counter-increment: AT5-4-11-1-3; }
+#AT5-4-13-4-1-2 { counter-set: AT5-4-13-4-1-2 0; }
+#AT5-4-13-4-1-2 > li::marker { content: ""counter(AT5-4-13-4-1-2,upper-alpha)"."; }
+#AT5-4-13-4-1-2 > li { counter-increment: AT5-4-13-4-1-2; }
+#AT5-4-15-4-1-2 { counter-set: AT5-4-15-4-1-2 0; }
+#AT5-4-15-4-1-2 > li::marker { content: ""counter(AT5-4-15-4-1-2,upper-alpha)"."; }
+#AT5-4-15-4-1-2 > li { counter-increment: AT5-4-15-4-1-2; }
+#AT5-4-16-4-1-2 { counter-set: AT5-4-16-4-1-2 0; }
+#AT5-4-16-4-1-2 > li::marker { content: ""counter(AT5-4-16-4-1-2,upper-alpha)"."; }
+#AT5-4-16-4-1-2 > li { counter-increment: AT5-4-16-4-1-2; }
+#AT6-3-2-1-1-2 { counter-set: AT6-3-2-1-1-2 0; }
+#AT6-3-2-1-1-2 > li::marker { content: ""counter(AT6-3-2-1-1-2,decimal)"."; }
+#AT6-3-2-1-1-2 > li { counter-increment: AT6-3-2-1-1-2; }
+#AT6-4-3-1-1-5 { counter-set: AT6-4-3-1-1-5 0; }
+#AT6-4-3-1-1-5 > li::marker { content: ""counter(AT6-4-3-1-1-5,upper-alpha)"."; }
+#AT6-4-3-1-1-5 > li { counter-increment: AT6-4-3-1-1-5; }
+#AT6-4-5-2-1-1-2 { counter-set: AT6-4-5-2-1-1-2 0; }
+#AT6-4-5-2-1-1-2 > li::marker { content: ""counter(AT6-4-5-2-1-1-2,upper-alpha)"."; }
+#AT6-4-5-2-1-1-2 > li { counter-increment: AT6-4-5-2-1-1-2; }
+#AT6-4-5-3-1-1-2 { counter-set: AT6-4-5-3-1-1-2 0; }
+#AT6-4-5-3-1-1-2 > li::marker { content: ""counter(AT6-4-5-3-1-1-2,upper-alpha)"."; }
+#AT6-4-5-3-1-1-2 > li { counter-increment: AT6-4-5-3-1-1-2; }
+#AT6-4-6-2-1-1-2 { counter-set: AT6-4-6-2-1-1-2 0; }
+#AT6-4-6-2-1-1-2 > li::marker { content: ""counter(AT6-4-6-2-1-1-2,upper-alpha)"."; }
+#AT6-4-6-2-1-1-2 > li { counter-increment: AT6-4-6-2-1-1-2; }
+#AT6-4-6-3-1-1-2 { counter-set: AT6-4-6-3-1-1-2 0; }
+#AT6-4-6-3-1-1-2 > li::marker { content: ""counter(AT6-4-6-3-1-1-2,upper-alpha)"."; }
+#AT6-4-6-3-1-1-2 > li { counter-increment: AT6-4-6-3-1-1-2; }
+#MX-2-2 { counter-set: MX-2-2 0; }
+#MX-2-2 > li::marker { content: ""counter(MX-2-2,decimal)"."; }
+#MX-2-2 > li { counter-increment: MX-2-2; }
+#MX-readiness-3 { counter-set: MX-readiness-3 0; }
+#MX-readiness-3 > li::marker { content: ""counter(MX-readiness-3,decimal)"."; }
+#MX-readiness-3 > li { counter-increment: MX-readiness-3; }
+#MX1-4-3-2-2 { counter-set: MX1-4-3-2-2 0; }
+#MX1-4-3-2-2 > li::marker { content: ""counter(MX1-4-3-2-2,upper-alpha)"."; }
+#MX1-4-3-2-2 > li { counter-increment: MX1-4-3-2-2; }
+#MX1-4-3-3-2 { counter-set: MX1-4-3-3-2 0; }
+#MX1-4-3-3-2 > li::marker { content: ""counter(MX1-4-3-3-2,upper-alpha)"."; }
+#MX1-4-3-3-2 > li { counter-increment: MX1-4-3-3-2; }
+#MX2-card-sort-1-2 { counter-set: MX2-card-sort-1-2 0; }
+#MX2-card-sort-1-2 > li::marker { content: ""counter(MX2-card-sort-1-2,upper-alpha)"."; }
+#MX2-card-sort-1-2 > li { counter-increment: MX2-card-sort-1-2; }
+#MX2-4-8-2-1-3 { counter-set: MX2-4-8-2-1-3 0; }
+#MX2-4-8-2-1-3 > li::marker { content: ""counter(MX2-4-8-2-1-3,upper-alpha)"."; }
+#MX2-4-8-2-1-3 > li { counter-increment: MX2-4-8-2-1-3; }
+#MX2-4-12-1-1-2 { counter-set: MX2-4-12-1-1-2 0; }
+#MX2-4-12-1-1-2 > li::marker { content: ""counter(MX2-4-12-1-1-2,upper-alpha)"."; }
+#MX2-4-12-1-1-2 > li { counter-increment: MX2-4-12-1-1-2; }
+#MX3-3-2-1-1-1 { counter-set: MX3-3-2-1-1-1 0; }
+#MX3-3-2-1-1-1 > li::marker { content: ""counter(MX3-3-2-1-1-1,upper-alpha)"."; }
+#MX3-3-2-1-1-1 > li { counter-increment: MX3-3-2-1-1-1; }
+#MX3-4-2-2-1-2 { counter-set: MX3-4-2-2-1-2 0; }
+#MX3-4-2-2-1-2 > li::marker { content: ""counter(MX3-4-2-2-1-2,upper-alpha)"."; }
+#MX3-4-2-2-1-2 > li { counter-increment: MX3-4-2-2-1-2; }
+#MX3-4-2-3-2 { counter-set: MX3-4-2-3-2 0; }
+#MX3-4-2-3-2 > li::marker { content: ""counter(MX3-4-2-3-2,upper-alpha)"."; }
+#MX3-4-2-3-2 > li { counter-increment: MX3-4-2-3-2; }
+#MX3-4-2-4-1-3 { counter-set: MX3-4-2-4-1-3 0; }
+#MX3-4-2-4-1-3 > li::marker { content: ""counter(MX3-4-2-4-1-3,upper-alpha)"."; }
+#MX3-4-2-4-1-3 > li { counter-increment: MX3-4-2-4-1-3; }
+#MX3-5-2-2-1-1-3 { counter-set: MX3-5-2-2-1-1-3 0; }
+#MX3-5-2-2-1-1-3 > li::marker { content: ""counter(MX3-5-2-2-1-1-3,upper-alpha)"."; }
+#MX3-5-2-2-1-1-3 > li { counter-increment: MX3-5-2-2-1-1-3; }
+#MX3-5-2-3-1-1-3 { counter-set: MX3-5-2-3-1-1-3 0; }
+#MX3-5-2-3-1-1-3 > li::marker { content: ""counter(MX3-5-2-3-1-1-3,upper-alpha)"."; }
+#MX3-5-2-3-1-1-3 > li { counter-increment: MX3-5-2-3-1-1-3; }
+#MX3-5-2-4-1-1-3 { counter-set: MX3-5-2-4-1-1-3 0; }
+#MX3-5-2-4-1-1-3 > li::marker { content: ""counter(MX3-5-2-4-1-1-3,upper-alpha)"."; }
+#MX3-5-2-4-1-1-3 > li { counter-increment: MX3-5-2-4-1-1-3; }
+#MX4-4-2-2-1-4 { counter-set: MX4-4-2-2-1-4 0; }
+#MX4-4-2-2-1-4 > li::marker { content: ""counter(MX4-4-2-2-1-4,upper-alpha)"."; }
+#MX4-4-2-2-1-4 > li { counter-increment: MX4-4-2-2-1-4; }
+#MX4-4-2-3-1-4 { counter-set: MX4-4-2-3-1-4 0; }
+#MX4-4-2-3-1-4 > li::marker { content: ""counter(MX4-4-2-3-1-4,upper-alpha)"."; }
+#MX4-4-2-3-1-4 > li { counter-increment: MX4-4-2-3-1-4; }
+#MX4-4-2-4-1-5 { counter-set: MX4-4-2-4-1-5 0; }
+#MX4-4-2-4-1-5 > li::marker { content: ""counter(MX4-4-2-4-1-5,upper-alpha)"."; }
+#MX4-4-2-4-1-5 > li { counter-increment: MX4-4-2-4-1-5; }
+#MX4-4-5-1-1-2 { counter-set: MX4-4-5-1-1-2 0; }
+#MX4-4-5-1-1-2 > li::marker { content: ""counter(MX4-4-5-1-1-2,upper-alpha)"."; }
+#MX4-4-5-1-1-2 > li { counter-increment: MX4-4-5-1-1-2; }
+#GT-2-2 { counter-set: GT-2-2 0; }
+#GT-2-2 > li::marker { content: ""counter(GT-2-2,decimal)"."; }
+#GT-2-2 > li { counter-increment: GT-2-2; }
+#GT-readiness-3 { counter-set: GT-readiness-3 0; }
+#GT-readiness-3 > li::marker { content: ""counter(GT-readiness-3,decimal)"."; }
+#GT-readiness-3 > li { counter-increment: GT-readiness-3; }
+#GT1-4-7-1-4 { counter-set: GT1-4-7-1-4 0; }
+#GT1-4-7-1-4 > li::marker { content: ""counter(GT1-4-7-1-4,upper-alpha)"."; }
+#GT1-4-7-1-4 > li { counter-increment: GT1-4-7-1-4; }
+#GT1-4-8-1-4 { counter-set: GT1-4-8-1-4 0; }
+#GT1-4-8-1-4 > li::marker { content: ""counter(GT1-4-8-1-4,upper-alpha)"."; }
+#GT1-4-8-1-4 > li { counter-increment: GT1-4-8-1-4; }
+#GT1-activity-scale-column-1-2-2 { counter-set: GT1-activity-scale-column-1-2-2 0; }
+#GT1-activity-scale-column-1-2-2 > li::marker { content: ""counter(GT1-activity-scale-column-1-2-2,upper-alpha)"."; }
+#GT1-activity-scale-column-1-2-2 > li { counter-increment: GT1-activity-scale-column-1-2-2; }
+#GT1-activity-add-column-1-2-2 { counter-set: GT1-activity-add-column-1-2-2 0; }
+#GT1-activity-add-column-1-2-2 > li::marker { content: ""counter(GT1-activity-add-column-1-2-2,upper-alpha)"."; }
+#GT1-activity-add-column-1-2-2 > li { counter-increment: GT1-activity-add-column-1-2-2; }
+#GT1-4-11-1-1-3 { counter-set: GT1-4-11-1-1-3 0; }
+#GT1-4-11-1-1-3 > li::marker { content: ""counter(GT1-4-11-1-1-3,decimal)"."; }
+#GT1-4-11-1-1-3 > li { counter-increment: GT1-4-11-1-1-3; }
+#GT1-4-15-1-2 { counter-set: GT1-4-15-1-2 0; }
+#GT1-4-15-1-2 > li::marker { content: ""counter(GT1-4-15-1-2,decimal)"."; }
+#GT1-4-15-1-2 > li { counter-increment: GT1-4-15-1-2; }
+#GT1-4-16-1-3 { counter-set: GT1-4-16-1-3 0; }
+#GT1-4-16-1-3 > li::marker { content: ""counter(GT1-4-16-1-3,upper-alpha)"."; }
+#GT1-4-16-1-3 > li { counter-increment: GT1-4-16-1-3; }
+#GT1-4-23-2-1-2-1 { counter-set: GT1-4-23-2-1-2-1 0; }
+#GT1-4-23-2-1-2-1 > li::marker { content: ""counter(GT1-4-23-2-1-2-1,upper-alpha)""; }
+#GT1-4-23-2-1-2-1 > li { counter-increment: GT1-4-23-2-1-2-1; }
+#GT1-4-23-3-1-2-1 { counter-set: GT1-4-23-3-1-2-1 0; }
+#GT1-4-23-3-1-2-1 > li::marker { content: ""counter(GT1-4-23-3-1-2-1,upper-alpha)""; }
+#GT1-4-23-3-1-2-1 > li { counter-increment: GT1-4-23-3-1-2-1; }
+#GT1-4-23-4-1-2-1 { counter-set: GT1-4-23-4-1-2-1 0; }
+#GT1-4-23-4-1-2-1 > li::marker { content: ""counter(GT1-4-23-4-1-2-1,upper-alpha)""; }
+#GT1-4-23-4-1-2-1 > li { counter-increment: GT1-4-23-4-1-2-1; }
+#GT1-4-24-1-2 { counter-set: GT1-4-24-1-2 0; }
+#GT1-4-24-1-2 > li::marker { content: ""counter(GT1-4-24-1-2,decimal)"."; }
+#GT1-4-24-1-2 > li { counter-increment: GT1-4-24-1-2; }
+#GT2-4-3-1-4 { counter-set: GT2-4-3-1-4 0; }
+#GT2-4-3-1-4 > li::marker { content: ""counter(GT2-4-3-1-4,upper-alpha)"."; }
+#GT2-4-3-1-4 > li { counter-increment: GT2-4-3-1-4; }
+#GT2-4-14-1-2 { counter-set: GT2-4-14-1-2 0; }
+#GT2-4-14-1-2 > li::marker { content: ""counter(GT2-4-14-1-2,upper-alpha)"."; }
+#GT2-4-14-1-2 > li { counter-increment: GT2-4-14-1-2; }
+#GT3-4-2-1-4 { counter-set: GT3-4-2-1-4 0; }
+#GT3-4-2-1-4 > li::marker { content: ""counter(GT3-4-2-1-4,upper-alpha)"."; }
+#GT3-4-2-1-4 > li { counter-increment: GT3-4-2-1-4; }
+#GT3-4-6-2-2 { counter-set: GT3-4-6-2-2 0; }
+#GT3-4-6-2-2 > li::marker { content: ""counter(GT3-4-6-2-2,upper-alpha)"."; }
+#GT3-4-6-2-2 > li { counter-increment: GT3-4-6-2-2; }
+#GT3-4-6-3-2 { counter-set: GT3-4-6-3-2 0; }
+#GT3-4-6-3-2 > li::marker { content: ""counter(GT3-4-6-3-2,upper-alpha)"."; }
+#GT3-4-6-3-2 > li { counter-increment: GT3-4-6-3-2; }
+#GT3-4-6-4-2 { counter-set: GT3-4-6-4-2 0; }
+#GT3-4-6-4-2 > li::marker { content: ""counter(GT3-4-6-4-2,upper-alpha)"."; }
+#GT3-4-6-4-2 > li { counter-increment: GT3-4-6-4-2; }
+#GT4-3-2-1-2 { counter-set: GT4-3-2-1-2 0; }
+#GT4-3-2-1-2 > li::marker { content: ""counter(GT4-3-2-1-2,upper-alpha)"."; }
+#GT4-3-2-1-2 > li { counter-increment: GT4-3-2-1-2; }
+#truss-2-3-1-4 { counter-set: truss-2-3-1-4 0; }
+#truss-2-3-1-4 > li::marker { content: ""counter(truss-2-3-1-4,decimal)"."; }
+#truss-2-3-1-4 > li { counter-increment: truss-2-3-1-4; }
+#pagerank-2-3-2-2 { counter-set: pagerank-2-3-2-2 0; }
+#pagerank-2-3-2-2 > li::marker { content: ""counter(pagerank-2-3-2-2,decimal)"."; }
+#pagerank-2-3-2-2 > li { counter-increment: pagerank-2-3-2-2; }
+#pagerank-2-4-1-3 { counter-set: pagerank-2-4-1-3 0; }
+#pagerank-2-4-1-3 > li::marker { content: ""counter(pagerank-2-4-1-3,decimal)"."; }
+#pagerank-2-4-1-3 > li { counter-increment: pagerank-2-4-1-3; }
+#pagerank-2-6-1-2 { counter-set: pagerank-2-6-1-2 0; }
+#pagerank-2-6-1-2 > li::marker { content: ""counter(pagerank-2-6-1-2,upper-alpha)"."; }
+#pagerank-2-6-1-2 > li { counter-increment: pagerank-2-6-1-2; }
+#sample-LE1-2-2 { counter-set: sample-LE1-2-2 0; }
+#sample-LE1-2-2 > li::marker { content: ""counter(sample-LE1-2-2,decimal)"."; }
+#sample-LE1-2-2 > li { counter-increment: sample-LE1-2-2; }
+#sample-LE1-3-1 { counter-set: sample-LE1-3-1 0; }
+#sample-LE1-3-1 > li::marker { content: ""counter(sample-LE1-3-1,decimal)"."; }
+#sample-LE1-3-1 > li { counter-increment: sample-LE1-3-1; }
+#sample-LE2-2-1 { counter-set: sample-LE2-2-1 0; }
+#sample-LE2-2-1 > li::marker { content: ""counter(sample-LE2-2-1,decimal)"."; }
+#sample-LE2-2-1 > li { counter-increment: sample-LE2-2-1; }
+#sample-LE2-3-1 { counter-set: sample-LE2-3-1 0; }
+#sample-LE2-3-1 > li::marker { content: ""counter(sample-LE2-3-1,decimal)"."; }
+#sample-LE2-3-1 > li { counter-increment: sample-LE2-3-1; }
+#sample-LE3-2-2 { counter-set: sample-LE3-2-2 0; }
+#sample-LE3-2-2 > li::marker { content: ""counter(sample-LE3-2-2,decimal)"."; }
+#sample-LE3-2-2 > li { counter-increment: sample-LE3-2-2; }
+#sample-LE3-3-1 { counter-set: sample-LE3-3-1 0; }
+#sample-LE3-3-1 > li::marker { content: ""counter(sample-LE3-3-1,decimal)"."; }
+#sample-LE3-3-1 > li { counter-increment: sample-LE3-3-1; }
+#sample-LE4-2-2 { counter-set: sample-LE4-2-2 0; }
+#sample-LE4-2-2 > li::marker { content: ""counter(sample-LE4-2-2,decimal)"."; }
+#sample-LE4-2-2 > li { counter-increment: sample-LE4-2-2; }
+#sample-EV1-2-1 { counter-set: sample-EV1-2-1 0; }
+#sample-EV1-2-1 > li::marker { content: ""counter(sample-EV1-2-1,decimal)"."; }
+#sample-EV1-2-1 > li { counter-increment: sample-EV1-2-1; }
+#sample-EV2-2-1 { counter-set: sample-EV2-2-1 0; }
+#sample-EV2-2-1 > li::marker { content: ""counter(sample-EV2-2-1,decimal)"."; }
+#sample-EV2-2-1 > li { counter-increment: sample-EV2-2-1; }
+#sample-EV4-2-1 { counter-set: sample-EV4-2-1 0; }
+#sample-EV4-2-1 > li::marker { content: ""counter(sample-EV4-2-1,decimal)"."; }
+#sample-EV4-2-1 > li { counter-increment: sample-EV4-2-1; }
+#sample-EV5-2-1 { counter-set: sample-EV5-2-1 0; }
+#sample-EV5-2-1 > li::marker { content: ""counter(sample-EV5-2-1,decimal)"."; }
+#sample-EV5-2-1 > li { counter-increment: sample-EV5-2-1; }
+#sample-EV6-2-2 { counter-set: sample-EV6-2-2 0; }
+#sample-EV6-2-2 > li::marker { content: ""counter(sample-EV6-2-2,decimal)"."; }
+#sample-EV6-2-2 > li { counter-increment: sample-EV6-2-2; }
+#sample-EV6-3-1 { counter-set: sample-EV6-3-1 0; }
+#sample-EV6-3-1 > li::marker { content: ""counter(sample-EV6-3-1,decimal)"."; }
+#sample-EV6-3-1 > li { counter-increment: sample-EV6-3-1; }
+#sample-EV7-2-2 { counter-set: sample-EV7-2-2 0; }
+#sample-EV7-2-2 > li::marker { content: ""counter(sample-EV7-2-2,decimal)"."; }
+#sample-EV7-2-2 > li { counter-increment: sample-EV7-2-2; }
+#sample-EV7-3-1 { counter-set: sample-EV7-3-1 0; }
+#sample-EV7-3-1 > li::marker { content: ""counter(sample-EV7-3-1,decimal)"."; }
+#sample-EV7-3-1 > li { counter-increment: sample-EV7-3-1; }
+#sample-AT1-2-2 { counter-set: sample-AT1-2-2 0; }
+#sample-AT1-2-2 > li::marker { content: ""counter(sample-AT1-2-2,decimal)"."; }
+#sample-AT1-2-2 > li { counter-increment: sample-AT1-2-2; }
+#sample-AT1-3-1 { counter-set: sample-AT1-3-1 0; }
+#sample-AT1-3-1 > li::marker { content: ""counter(sample-AT1-3-1,decimal)"."; }
+#sample-AT1-3-1 > li { counter-increment: sample-AT1-3-1; }
+#sample-AT2-2-1 { counter-set: sample-AT2-2-1 0; }
+#sample-AT2-2-1 > li::marker { content: ""counter(sample-AT2-2-1,decimal)"."; }
+#sample-AT2-2-1 > li { counter-increment: sample-AT2-2-1; }
+#sample-AT2-3-1 { counter-set: sample-AT2-3-1 0; }
+#sample-AT2-3-1 > li::marker { content: ""counter(sample-AT2-3-1,decimal)"."; }
+#sample-AT2-3-1 > li { counter-increment: sample-AT2-3-1; }
+#sample-AT3-2-2 { counter-set: sample-AT3-2-2 0; }
+#sample-AT3-2-2 > li::marker { content: ""counter(sample-AT3-2-2,decimal)"."; }
+#sample-AT3-2-2 > li { counter-increment: sample-AT3-2-2; }
+#sample-AT3-3-1 { counter-set: sample-AT3-3-1 0; }
+#sample-AT3-3-1 > li::marker { content: ""counter(sample-AT3-3-1,decimal)"."; }
+#sample-AT3-3-1 > li { counter-increment: sample-AT3-3-1; }
+#sample-AT4-2-2 { counter-set: sample-AT4-2-2 0; }
+#sample-AT4-2-2 > li::marker { content: ""counter(sample-AT4-2-2,decimal)"."; }
+#sample-AT4-2-2 > li { counter-increment: sample-AT4-2-2; }
+#sample-AT4-3-2 { counter-set: sample-AT4-3-2 0; }
+#sample-AT4-3-2 > li::marker { content: ""counter(sample-AT4-3-2,decimal)"."; }
+#sample-AT4-3-2 > li { counter-increment: sample-AT4-3-2; }
+#sample-AT5-2-3 { counter-set: sample-AT5-2-3 0; }
+#sample-AT5-2-3 > li::marker { content: ""counter(sample-AT5-2-3,decimal)"."; }
+#sample-AT5-2-3 > li { counter-increment: sample-AT5-2-3; }
+#sample-AT5-3-1 { counter-set: sample-AT5-3-1 0; }
+#sample-AT5-3-1 > li::marker { content: ""counter(sample-AT5-3-1,decimal)"."; }
+#sample-AT5-3-1 > li { counter-increment: sample-AT5-3-1; }
+#sample-AT6-2-1 { counter-set: sample-AT6-2-1 0; }
+#sample-AT6-2-1 > li::marker { content: ""counter(sample-AT6-2-1,decimal)"."; }
+#sample-AT6-2-1 > li { counter-increment: sample-AT6-2-1; }
+#sample-MX4-2-2 { counter-set: sample-MX4-2-2 0; }
+#sample-MX4-2-2 > li::marker { content: ""counter(sample-MX4-2-2,decimal)"."; }
+#sample-MX4-2-2 > li { counter-increment: sample-MX4-2-2; }
+#sample-MX4-3-1 { counter-set: sample-MX4-3-1 0; }
+#sample-MX4-3-1 > li::marker { content: ""counter(sample-MX4-3-1,decimal)"."; }
+#sample-MX4-3-1 > li { counter-increment: sample-MX4-3-1; }
+#sample-GT1-2-2 { counter-set: sample-GT1-2-2 0; }
+#sample-GT1-2-2 > li::marker { content: ""counter(sample-GT1-2-2,decimal)"."; }
+#sample-GT1-2-2 > li { counter-increment: sample-GT1-2-2; }
+#sample-GT1-3-1 { counter-set: sample-GT1-3-1 0; }
+#sample-GT1-3-1 > li::marker { content: ""counter(sample-GT1-3-1,decimal)"."; }
+#sample-GT1-3-1 > li { counter-increment: sample-GT1-3-1; }
+</style>
+</head>
+<body id="tbilla" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="linear-algebra-for-team-based-inquiry-learning.html"><span class="title">Linear Algebra for Team-Based Inquiry Learning:</span> <span class="subtitle">2024 Edition</span></a></h1>
+<p class="byline">Steven Clontz, Drew Lewis</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="LE3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="LE.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="EV.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IC}{\mathbb{C}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\RREF}{\operatorname{RREF}}
+\newcommand{\vspan}{\operatorname{span}}
+\newcommand{\setList}[1]{\left\{#1\right\}}
+\newcommand{\setBuilder}[2]{\left\{#1\,\middle|\,#2\right\}}
+\newcommand{\unknown}{\,{\color{gray}?}\,}
+\newcommand{\drawtruss}[2][1]{
+\begin{tikzpicture}[scale=#1, every node/.style={scale=#1}]
+\draw (0,0) node[left,magenta]{C} -- 
+      (1,1.71) node[left,magenta]{A} -- 
+      (2,0) node[above,magenta]{D} -- cycle;
+\draw (2,0) -- 
+      (3,1.71) node[right,magenta]{B} -- 
+      (1,1.71) -- cycle;
+\draw (3,1.71) -- (4,0) node[right,magenta]{E} -- (2,0) -- cycle;
+\draw[blue] (0,0) -- (0.25,-0.425) -- (-0.25,-0.425) -- cycle;
+\draw[blue] (4,0) -- (4.25,-0.425) -- (3.75,-0.425) -- cycle;
+\draw[thick,red,-&gt;] (2,0) -- (2,-0.75);
+#2
+\end{tikzpicture}
+}
+\newcommand{\trussNormalForces}{
+\draw [thick, blue,-&gt;] (0,0) -- (0.5,0.5);
+\draw [thick, blue,-&gt;] (4,0) -- (3.5,0.5);
+}
+\newcommand{\trussCompletion}{
+\trussNormalForces
+\draw [thick, magenta,&lt;-&gt;] (0.4,0.684) -- (0.6,1.026);
+\draw [thick, magenta,&lt;-&gt;] (3.4,1.026) -- (3.6,0.684);
+\draw [thick, magenta,&lt;-&gt;] (1.8,1.71) -- (2.2,1.71);
+\draw [thick, magenta,-&gt;] (1.6,0.684) -- (1.5,0.855);
+\draw [thick, magenta,&lt;-] (1.5,0.855) -- (1.4,1.026);
+\draw [thick, magenta,-&gt;] (2.4,0.684) -- (2.5,0.855);
+\draw [thick, magenta,&lt;-] (2.5,0.855) -- (2.6,1.026);
+}
+\newcommand{\trussCForces}{
+\draw [thick, blue,-&gt;] (0,0) -- (0.5,0.5);
+\draw [thick, magenta,-&gt;] (0,0) -- (0.4,0.684);
+\draw [thick, magenta,-&gt;] (0,0) -- (0.5,0);
+}
+\newcommand{\trussStrutVariables}{
+\node[above] at (2,1.71) {\(x_1\)};
+\node[left] at (0.5,0.866) {\(x_2\)};
+\node[left] at (1.5,0.866) {\(x_3\)};
+\node[right] at (2.5,0.866) {\(x_4\)};
+\node[right] at (3.5,0.866) {\(x_5\)};
+\node[below] at (1,0) {\(x_6\)};
+\node[below] at (3,0) {\(x_7\)};
+}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="tbil-rl.html" class="internal"><span class="title">TBIL Resource Library</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="instructor-notes.html" class="internal"><span class="title">For Instructors</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="video-resources.html" class="internal"><span class="title">Video Resources</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="LE.html" class="internal"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations (LE)</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LE1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems, Vector Equations, and Augmented Matrices (LE1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE1.html#LE1-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE1.html#LE1-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE1.html#LE1-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE1.html#LE1-6" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LE1.html#LE1-7" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE1.html#LE1-8" class="internal"><span class="codenumber">1.1.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE1.html#LE1-9" class="internal"><span class="codenumber">1.1.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LE2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Row Reduction of Matrices (LE2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-5" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-6" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LE2.html#LE2-7" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-8" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-9" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LE3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Counting Solutions for Linear Systems (LE3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LE3.html#LE3-7" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-8" class="internal"><span class="codenumber">1.3.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-9" class="internal"><span class="codenumber">1.3.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="LE4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Linear Systems with Infinitely-Many Solutions (LE4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE4.html#LE4-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE4.html#LE4-4" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE4.html#LE4-5" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE4.html#LE4-6" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="LE4.html#LE4-7" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE4.html#LE4-8" class="internal"><span class="codenumber">1.4.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE4.html#LE4-9" class="internal"><span class="codenumber">1.4.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="EV.html" class="internal"><span class="codenumber">2</span> <span class="title">Euclidean Vectors (EV)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Linear Combinations (EV1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-5" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-6" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV1.html#EV1-7" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-8" class="internal"><span class="codenumber">2.1.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-9" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spanning Sets (EV2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-6" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV2.html#EV2-7" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-8" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-9" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subspaces (EV3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV3.html#EV3-7" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-8" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-9" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Linear Independence (EV4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV4.html#EV4-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV4.html#EV4-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV4.html#EV4-5" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV4.html#EV4-6" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV4.html#EV4-7" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV4.html#EV4-8" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV4.html#EV4-9" class="internal"><span class="codenumber">2.4.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Identifying a Basis (EV5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-6" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV5.html#EV5-7" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-8" class="internal"><span class="codenumber">2.5.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-9" class="internal"><span class="codenumber">2.5.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Subspace Basis and Dimension (EV6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-4" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-5" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-6" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV6.html#EV6-7" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-8" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-4" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-5" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-6" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="EV7.html#EV7-7" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-8" class="internal"><span class="codenumber">2.7.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-9" class="internal"><span class="codenumber">2.7.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="AT.html" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Properties of Linear Maps (AT)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AT1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Linear Transformations (AT1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT1.html#AT1-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT1.html#AT1-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT1.html#AT1-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT1.html#AT1-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AT1.html#AT1-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT1.html#AT1-8" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT1.html#AT1-9" class="internal"><span class="codenumber">3.1.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AT2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Standard Matrices (AT2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT2.html#AT2-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT2.html#AT2-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT2.html#AT2-5" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT2.html#AT2-6" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AT2.html#AT2-7" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT2.html#AT2-8" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT2.html#AT2-9" class="internal"><span class="codenumber">3.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AT3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Image and Kernel (AT3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT3.html#AT3-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT3.html#AT3-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT3.html#AT3-5" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT3.html#AT3-6" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AT3.html#AT3-7" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT3.html#AT3-8" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT3.html#AT3-9" class="internal"><span class="codenumber">3.3.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AT4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Injective and Surjective Linear Maps (AT4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT4.html#AT4-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT4.html#AT4-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="AT4.html#AT4-5" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT4.html#AT4-6" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AT4.html#AT4-7" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT4.html#AT4-8" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT4.html#AT4-9" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AT5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Vector Spaces (AT5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-3" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-4" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-5" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Cooldown</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-6" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AT5.html#AT5-7" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-8" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-9" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AT6.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Polynomial and Matrix Spaces (AT6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT6.html#AT6-3" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT6.html#AT6-4" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT6.html#AT6-5" class="internal"><span class="codenumber">3.6.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT6.html#AT6-6" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="AT6.html#AT6-7" class="internal"><span class="codenumber">3.6.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT6.html#AT6-8" class="internal"><span class="codenumber">3.6.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT6.html#AT6-9" class="internal"><span class="codenumber">3.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="MX.html" class="internal"><span class="codenumber">4</span> <span class="title">Matrices (MX)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="MX1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Matrices and Multiplication (MX1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX1.html#MX1-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX1.html#MX1-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX1.html#MX1-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX1.html#MX1-6" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="MX1.html#MX1-7" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX1.html#MX1-8" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX1.html#MX1-9" class="internal"><span class="codenumber">4.1.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="MX2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Inverse of a Matrix (MX2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-6" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="MX2.html#MX2-7" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-8" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-9" class="internal"><span class="codenumber">4.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="MX3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Solving Systems with Matrix Inverses (MX3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="MX3.html#MX3-7" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-8" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-9" class="internal"><span class="codenumber">4.3.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="MX4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Row Operations as Matrix Multiplication (MX4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX4.html#MX4-3" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX4.html#MX4-4" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX4.html#MX4-5" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX4.html#MX4-6" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="MX4.html#MX4-7" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX4.html#MX4-8" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="GT.html" class="internal"><span class="codenumber">5</span> <span class="title">Geometric Properties of Linear Maps (GT)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="GT1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Row Operations and Determinants (GT1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT1.html#GT1-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT1.html#GT1-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT1.html#GT1-5" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT1.html#GT1-6" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="GT1.html#GT1-7" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT1.html#GT1-8" class="internal"><span class="codenumber">5.1.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT1.html#GT1-9" class="internal"><span class="codenumber">5.1.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="GT2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Computing Determinants (GT2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT2.html#GT2-3" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT2.html#GT2-4" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT2.html#GT2-5" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT2.html#GT2-6" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="GT2.html#GT2-7" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT2.html#GT2-8" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT2.html#GT2-9" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="GT3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Eigenvalues and Characteristic Polynomials (GT3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT3.html#GT3-3" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT3.html#GT3-4" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT3.html#GT3-5" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT3.html#GT3-6" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="GT3.html#GT3-7" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT3.html#GT3-8" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT3.html#GT3-9" class="internal"><span class="codenumber">5.3.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="GT4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Eigenvectors and Eigenspaces (GT4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT4.html#GT4-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Warm Up</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT4.html#GT4-4" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Class Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT4.html#GT4-5" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Individual Practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT4.html#GT4-6" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Videos</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="GT4.html#GT4-7" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT4.html#GT4-8" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Mathematical Writing Explorations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="GT4.html#GT4-9" class="internal"><span class="codenumber">5.4.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="applications.html" class="internal"><span class="codenumber">A</span> <span class="title">Applications</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="truss.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Civil Engineering: Trusses and Struts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="truss.html#truss-2" class="internal"><span class="codenumber">A.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="truss.html#truss-3" class="internal"><span class="codenumber">A.1.2</span> <span class="title">Slideshow</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="pagerank.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Computer Science: PageRank</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="pagerank.html#pagerank-2" class="internal"><span class="codenumber">A.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="pagerank.html#pagerank-3" class="internal"><span class="codenumber">A.2.2</span> <span class="title">Slideshow</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="geology.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Geology: Phases and Components</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="geology.html#geology-2" class="internal"><span class="codenumber">A.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="geology.html#geology-3" class="internal"><span class="codenumber">A.3.2</span> <span class="title">Slideshow</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="appendix-extras.html" class="internal"><span class="codenumber">B</span> <span class="title">Appendix</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sample-exercises.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Sample Exercises with Solutions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="list-of-definitions.html" class="internal"><span class="codenumber">B.2</span> <span class="title">Definitions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="LE4"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Linear Systems with Infinitely-Many Solutions (LE4)</span>
+</h2>
+<article class="objectives goal-like" id="LE4-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="LE4-2-1"><li id="LE4-2-1-1"><div class="para" id="LE4-2-1-1-1">Compute the solution set for a system of linear equations or a vector equation with infinitely many solutions.</div></li></ul></article><section class="subsection" id="LE4-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">Warm Up</span>
+</h3>
+<article class="activity project-like" id="LE4-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="LE4-3-2-1-1">Write down any three linear systems and determine if they are consistent, have a single solution, or have infinitely many solutions.</div></article></section><section class="subsection" id="LE4-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</h3>
+<article class="activity project-like" id="LE4-4-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE4-4-2-1">
+<div class="para" id="LE4-4-2-1-1">Consider this simplified linear system found to be equivalent to the system from <a href="LE3.html#LE3-inf" class="xref" data-knowl="./knowl/xref/LE3-inf.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.3.6">Activity 1.3.6</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE3-inf.html" id="LE4-4-2-1-2">
+\begin{alignat*}{3}
+x_1 &amp;+ 2x_2 &amp; &amp;= 4\\
+&amp; &amp;\phantom{+}x_3 &amp;= -1
+\end{alignat*}
+</div>
+<div class="para" id="LE4-4-2-1-3">Earlier, we determined this system has infinitely-many solutions.</div>
+</div>
+<article class="task exercise-like" id="LE4-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE4-4-2-2-1">Let <span class="process-math">\(x_1=a\)</span> and write the solution set in the form <span class="process-math">\(\setBuilder
+{
+\left[\begin{array}{c} a \\ \unknown \\ \unknown \end{array}\right]
+}{
+a \in \IR
+}
+\text{.}\)</span>
+</div></article><article class="task exercise-like" id="LE4-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE4-4-2-3-1">Let <span class="process-math">\(x_2=b\)</span> and write the solution set in the form <span class="process-math">\(\setBuilder
+{
+\left[\begin{array}{c} \unknown \\ b \\ \unknown \end{array}\right]
+}{
+b \in \IR
+}
+\text{.}\)</span>
+</div></article><article class="task exercise-like" id="LE4-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="LE4-4-2-4-1">Which of these was easier?  What features of the RREF matrix <span class="process-math">\(\left[\begin{array}{ccc|c}
+\markedPivot{1} &amp; 2 &amp; 0 &amp; 4 \\
+0 &amp; 0 &amp; \markedPivot{1} &amp; -1
+\end{array}\right]\)</span> caused this?</div></article></article><article class="definition definition-like" id="LE4-4-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="LE4-4-3-1-1">Recall that the pivots of a matrix in <span class="process-math">\(\RREF\)</span> form are the leading <span class="process-math">\(1\)</span>s in each non-zero row.</div> <div class="para" id="LE4-4-3-1-2">The pivot columns in an augmented matrix correspond to the <dfn class="terminology">bound variables</dfn> in the system of equations (<span class="process-math">\(x_1,x_3\)</span> below). The remaining variables are called <dfn class="terminology">free variables</dfn> (<span class="process-math">\(x_2\)</span> below).</div> <div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c}
+\markedPivot{1} &amp; 2 &amp; 0 &amp; 4 \\
+0 &amp; 0 &amp; \markedPivot{1} &amp; -1
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="para" id="LE4-4-3-1-4">To efficiently solve a system in RREF form, assign letters to the free variables, and then solve for the bound variables.</div></article><article class="activity project-like" id="LE4-4-4"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE4-4-4-1"><div class="para logical" id="LE4-4-4-1-1">
+<div class="para">Find the solution set for the system</div>
+<div class="displaymath process-math" id="LE4-4-4-1-1-1">
+\begin{alignat*}{6}
+2x_1&amp;\,-\,&amp;2x_2&amp;\,-\,&amp;6x_3&amp;\,+\,&amp;x_4&amp;\,-\,&amp;x_5&amp;\,=\,&amp;3 \\
+-x_1&amp;\,+\,&amp;x_2&amp;\,+\,&amp;3x_3&amp;\,-\,&amp;x_4&amp;\,+\,&amp;2x_5 &amp;\,=\,&amp; -3 \\
+x_1&amp;\,-\,&amp;2x_2&amp;\,-\,&amp;x_3&amp;\,+\,&amp;x_4&amp;\,+\,&amp;x_5 &amp;\,=\,&amp; 2
+\end{alignat*}
+</div>
+<div class="para">by doing the following.</div>
+</div></div>
+<article class="task exercise-like" id="LE4-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE4-4-4-2-1">Row-reduce its augmented matrix.</div></article><article class="task exercise-like" id="LE4-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE4-4-4-3-1">Assign letters to the free variables (given by the non-pivot columns): <div class="para logical" id="LE4-4-4-3-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\unknown = a
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\unknown = b
+\end{equation*}
+</div>
+</div>
+</div></article><article class="task exercise-like" id="LE4-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="LE4-4-4-4-1">
+<div class="para">Solve for the bound variables (given by the pivot columns) to show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\unknown = 1+5a+2b
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\unknown = 1+2a+3b
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\unknown=3+3b
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="LE4-4-4-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="LE4-4-4-5-1-1">Replace <span class="process-math">\(x_1\)</span> through <span class="process-math">\(x_5\)</span> with the appropriate expressions of <span class="process-math">\(a,b\)</span> in the following set-builder notation.</div> <div class="para logical" id="LE4-4-4-5-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\setBuilder
+{
+\left[\begin{array}{c}
+\hspace{2em}x_1\hspace{2em} \\ 
+\hspace{2em}x_2\hspace{2em} \\ 
+\hspace{2em}x_3\hspace{2em} \\ 
+\hspace{2em}x_4\hspace{2em} \\ 
+\hspace{2em}x_5\hspace{2em}
+\end{array}\right]
+}{
+a,b\in \IR
+}
+\end{equation*}
+</div></div></article></article><div id="LE4-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+<article class="remark remark-like" id="LE4-4-6"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="LE4-4-6-1-1">Don’t forget to correctly express the solution set of a linear system. Systems with zero or one solutions may be written by listing their elements, while systems with infinitely-many solutions may be written using set-builder notation.</div> <ul class="disc" id="LE4-4-6-1-2">
+<li id="LE4-4-6-1-2-1"><div class="para logical" id="LE4-4-6-1-2-1-1">
+<div class="para">
+<em class="emphasis">Inconsistent</em>: <span class="process-math">\(\emptyset\)</span> or <span class="process-math">\(\{\}\)</span>
+</div>
+<ul class="circle" id="LE4-4-6-1-2-1-1-4"><li id="LE4-4-6-1-2-1-1-4-1"><div class="para" id="p-derived-LE4-4-6-1-2-1-1-4-1">(not <span class="process-math">\(0\)</span> or <span class="process-math">\(\left[\begin{array}{c}0\\0\\0\end{array}\right]\)</span>)</div></li></ul>
+</div></li>
+<li id="LE4-4-6-1-2-2"><div class="para logical" id="LE4-4-6-1-2-2-1">
+<div class="para">
+<em class="emphasis">Consistent</em> with <em class="emphasis">one solution</em>: e.g. <span class="process-math">\(\setList{ \left[\begin{array}{c}1\\2\\3\end{array}\right] }\)</span>
+</div>
+<ul class="circle" id="LE4-4-6-1-2-2-1-4"><li id="LE4-4-6-1-2-2-1-4-1"><div class="para" id="p-derived-LE4-4-6-1-2-2-1-4-1">(not just <span class="process-math">\(\left[\begin{array}{c}1\\2\\3\end{array}\right]\)</span>)</div></li></ul>
+</div></li>
+<li id="LE4-4-6-1-2-3"><div class="para logical" id="LE4-4-6-1-2-3-1">
+<div class="para">
+<em class="emphasis">Consistent</em> with <em class="emphasis">infinitely-many solutions</em>: e.g. <span class="process-math">\(\setBuilder
+{
+\left[\begin{array}{c}1\\2-3a\\a\end{array}\right]
+}{
+a\in\IR
+}\)</span>
+</div>
+<ul class="circle" id="LE4-4-6-1-2-3-1-4"><li id="LE4-4-6-1-2-3-1-4-1"><div class="para" id="p-derived-LE4-4-6-1-2-3-1-4-1">(not just <span class="process-math">\(\left[\begin{array}{c}1\\2-3a\\a\end{array}\right]\)</span> )</div></li></ul>
+</div></li>
+</ul></article><article class="activity project-like" id="LE4-4-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE4-4-7-1"><div class="para logical" id="LE4-4-7-1-1">
+<div class="para">Consider the following system of linear equations.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_{1} \left[\begin{array}{c}
+1 \\
+0 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+1 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
+5 \\
+-5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+13 \\
+-13
+\end{array}\right] = \left[\begin{array}{c}
+-3 \\
+12 \\
+-12
+\end{array}\right]\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="LE4-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE4-4-7-2-1">Explain how to find a simpler system or vector equation that has the same solution set.</div></article><article class="task exercise-like" id="LE4-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE4-4-7-3-1">Explain how to describe this solution set using set notation.</div></article></article><article class="activity project-like" id="LE4-4-8"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE4-4-8-1"><div class="para logical" id="LE4-4-8-1-1">
+<div class="para">Consider the following system of linear equations.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix}
+x_{1} &amp;  &amp;  &amp;  -  &amp; 2 \, x_{3} &amp; = &amp; -3 \\
+5 \, x_{1} &amp;  +  &amp; x_{2} &amp;  -  &amp; 7 \, x_{3} &amp; = &amp; -18 \\
+5 \, x_{1} &amp;  -  &amp; x_{2} &amp;  -  &amp; 13 \, x_{3} &amp; = &amp; -12 \\
+x_{1} &amp;  +  &amp; 3 \, x_{2} &amp;  +  &amp; 7 \, x_{3} &amp; = &amp; -12 \\
+\end{matrix}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="LE4-4-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE4-4-8-2-1">Explain how to find a simpler system or vector equation that has the same solution set.</div></article><article class="task exercise-like" id="LE4-4-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE4-4-8-3-1">Explain how to describe this solution set using set notation.</div></article></article></section><section class="subsection" id="LE4-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="space"> </span><span class="title">Individual Practice</span>
+</h3>
+<article class="activity project-like" id="LE4-5-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE4-5-2-1"><div class="para logical" id="LE4-5-2-1-1">
+<div class="para">Consider the following linear system, its augmented matrix <span class="process-math">\(A\text{,}\)</span> and <span class="process-math">\(\RREF(A)\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; + &amp; x_{3} &amp; = &amp; 4 \\ &amp; &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; -1 \\ &amp; &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; -3 \\ x_{1} &amp; + &amp; 2 \, x_{2} &amp; - &amp; 5 \, x_{3} &amp; = &amp; 0 \\ \end{matrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{ccc|c}
+1 &amp; -1 &amp; 1 &amp; 4 \\
+0 &amp; 1 &amp; -2 &amp; -1 \\
+0 &amp; 1 &amp; -2 &amp; -3 \\
+1 &amp; 2 &amp; -5 &amp; 0
+\end{array}\right],\  \RREF(A)=\left[\begin{array}{ccc|c}
+1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">All of the following statements are not accurate or otherwise incorrect; identify what is problematic about the statements and correct them.</div>
+</div></div>
+<article class="task exercise-like" id="LE4-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE4-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is inconsistent.</div></article><article class="task exercise-like" id="LE4-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE4-5-2-3-1-1">The linear system has two bound variables and one free variable.</div></article><article class="task exercise-like" id="LE4-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="LE4-5-2-4-1-1">The solution set to the given linear system is <span class="process-math">\(\{\emptyset\}\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="LE4-5-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE4-5-3-1"><div class="para logical" id="LE4-5-3-1-1">
+<div class="para">Consider the following linear system, its augmented matrix <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(\RREF(B)\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} 2 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; - &amp; 8 \, x_{3} &amp; + &amp; 3 \, x_{4} &amp; - &amp; 9 \, x_{5} &amp; = &amp; -17 \\ -x_{1} &amp; &amp; &amp; + &amp; x_{3} &amp; - &amp; x_{4} &amp; + &amp; 2 \, x_{5} &amp; = &amp; 6 \\ 2 \, x_{1} &amp; - &amp; x_{2} &amp; - &amp; 5 \, x_{3} &amp; + &amp; x_{4} &amp; - &amp; 5 \, x_{5} &amp; = &amp; -10 \\ -x_{1} &amp; + &amp; 3 \, x_{2} &amp; + &amp; 10 \, x_{3} &amp; &amp; &amp; + &amp; 7 \, x_{5} &amp; = &amp; 6 \\ \end{matrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\left[\begin{array}{ccccc|c}
+2 &amp; -2 &amp; -8 &amp; 3 &amp; -9 &amp; -17\\
+-1 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; 6\\
+2 &amp; -1 &amp; -5 &amp; 1 &amp; -5 &amp; -10\\
+-1 &amp; 3 &amp; 10 &amp; 0 &amp; 7 &amp; 6\\
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\RREF(B)=\left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; -1 &amp; 0 &amp; -1 &amp; -3\\
+0 &amp; 1 &amp; 3 &amp; 0 &amp; 2 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -1 &amp; -3\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">All of the following statements are not accurate or otherwise incorrect; identify what is problematic about the statements and correct them.</div>
+</div></div>
+<article class="task exercise-like" id="LE4-5-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE4-5-3-2-1-1">The matrix <span class="process-math">\(B\)</span> is consistent with infinitely many solutions.</div></article><article class="task exercise-like" id="LE4-5-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE4-5-3-3-1-1">The solution set is given by <span class="process-math">\(\left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\ a \\ b - 3 \\ b \end{array}\right]\text{.}\)</span>
+</div></article><article class="task exercise-like" id="LE4-5-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="LE4-5-3-4-1-1">The variables <span class="process-math">\(x_3,x_5\)</span> are free. Setting them equal to <span class="process-math">\(a,b\)</span> respectively and solving for the bound variables, the solution set to the linear system is given by <span class="process-math">\(\left\{ \left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\ b - 3 \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}\text{.}\)</span>
+</div></article></article></section><section class="subsection" id="LE4-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="LE4-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/_ievdPswLoE?&amp;modestbranding=1&amp;rel=0" id="video-LE4"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span>Video: Solving a system of linear equations with infinitely-many solutions</figcaption></figure></section><section class="exercises" id="LE4-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="LE4-7-1">Exercises available at <a class="external" href="https://tbil.org/linear-algebra/2024/exercises/#/bank/LE4/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/linear-algebra/2024/exercises/#/bank/LE4/</code></a>.</div></section><section class="subsection" id="LE4-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+</h3>
+<article class="exploration project-like" id="LE4-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="LE4-8-2-1-1">
+<div class="para">Construct a system of 3 equations in 3 variables having:</div>
+<ul class="disc" id="LE4-8-2-1-1-1">
+<li id="LE4-8-2-1-1-1-1"><div class="para" id="p-derived-LE4-8-2-1-1-1-1">0 free variables</div></li>
+<li id="LE4-8-2-1-1-1-2"><div class="para" id="p-derived-LE4-8-2-1-1-1-2">1 free variable</div></li>
+<li id="LE4-8-2-1-1-1-3"><div class="para" id="p-derived-LE4-8-2-1-1-1-3">2 free variables</div></li>
+</ul>
+<div class="para">In each case, solve the system you have created. Conjecture a relationship between the number of free variables and the type of solution set that can be obtained from a given system.</div>
+</div></article><article class="exploration project-like" id="LE4-8-3"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="LE4-8-3-1-1">
+<div class="para">For each of the following, decide if it’s true or false. If you think it’s true, can we construct a proof? If you think it’s false, can we find a counterexample?</div>
+<ul class="disc" id="LE4-8-3-1-1-1">
+<li id="LE4-8-3-1-1-1-1"><div class="para" id="p-derived-LE4-8-3-1-1-1-1">If the coefficient matrix of a system of linear equations has a pivot in the rightmost column, then the system is inconsistent.</div></li>
+<li id="LE4-8-3-1-1-1-2"><div class="para" id="p-derived-LE4-8-3-1-1-1-2">If a system of equations has two equations and four unknowns, then it must be consistent.</div></li>
+<li id="LE4-8-3-1-1-1-3"><div class="para" id="p-derived-LE4-8-3-1-1-1-3">If a system of equations having four equations and three unknowns is consistent, then the solution is unique.</div></li>
+<li id="LE4-8-3-1-1-1-4"><div class="para" id="p-derived-LE4-8-3-1-1-1-4">Suppose that a linear system has four equations and four unknowns and that the coefficient matrix has four pivots. Then the linear system is consistent and has a unique solution.</div></li>
+<li id="LE4-8-3-1-1-1-5"><div class="para" id="p-derived-LE4-8-3-1-1-1-5">Suppose that a linear system has five equations and three unknowns and that the coefficient matrix has a pivot in every column. Then the linear system is consistent and has a unique solution.</div></li>
+</ul>
+</div></article></section><section class="subsection" id="LE4-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</h3>
+<div class="para" id="LE4-9-2">Sample problem <a href="sample-exercises.html#sample-LE4" class="xref" data-knowl="./knowl/xref/sample-LE4.html" data-reveal-label="Reveal" data-close-label="Close" title="Example B.1.4: LE4">Example B.1.4</a>.</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="LE3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="EV.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
