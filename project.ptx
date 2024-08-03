@@ -7,24 +7,24 @@
       format="html"
       source="precalculus/source/main.ptx"
       deploy-dir="precalculus/preview" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="precal-print"
       format="pdf"
       source="precalculus/source/main.ptx"
       output-filename="TBIL-Precalculus.pdf"
       deploy-dir="precalculus/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="precal-web-instructor"
       format="html"
       source="precalculus/source/main.ptx"
       publication="instructor.ptx"
       deploy-dir="precalculus/preview/instructor" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="precal-print-instructor"
       format="pdf"
@@ -32,39 +32,40 @@
       publication="instructor.ptx"
       output-filename="TBIL-Precalculus-Instructor.pdf"
       deploy-dir="precalculus/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="precal-print-slides"
       format="pdf"
       source="precalculus/source/main.ptx"
-      output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
+      xsl="slides.xsl"
+      output-filename="TBIL-Precalculus-Slides.pdf"
       deploy-dir="precalculus/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="cal-web"
       format="html"
       source="calculus/source/main.ptx"
       deploy-dir="calculus/preview" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="cal-print"
       format="pdf"
       source="calculus/source/main.ptx"
       output-filename="TBIL-Calculus.pdf"
       deploy-dir="calculus/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="cal-web-instructor"
       format="html"
       source="calculus/source/main.ptx"
       publication="instructor.ptx"
       deploy-dir="calculus/preview/instructor" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="cal-print-instructor"
       format="pdf"
@@ -72,55 +73,57 @@
       publication="instructor.ptx"
       output-filename="TBIL-Calculus-Instructor.pdf"
       deploy-dir="calculus/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="cal-print-slides"
       format="pdf"
       source="calculus/source/main.ptx"
-      output-filename="TBIL-Calculus-Instructor-Slides.pdf"
+      xsl="slides.xsl"
+      output-filename="TBIL-Calculus-Slides.pdf"
       deploy-dir="calculus/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="la-web"
       format="html"
       source="linear-algebra/source/main.ptx"
       deploy-dir="linear-algebra/preview" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="la-print"
       format="pdf"
       source="linear-algebra/source/main.ptx"
-      output-filename="TBIL-Precalculus.pdf"
+      output-filename="TBIL-Linear-Algebra.pdf"
       deploy-dir="linear-algebra/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="la-web-instructor"
       format="html"
       source="linear-algebra/source/main.ptx"
       publication="instructor.ptx"
       deploy-dir="linear-algebra/preview/instructor" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="la-print-instructor"
       format="pdf"
       source="linear-algebra/source/main.ptx"
       publication="instructor.ptx"
-      output-filename="TBIL-Precalculus-Instructor.pdf"
+      output-filename="TBIL-Linear-Algebra-Instructor.pdf"
       deploy-dir="linear-algebra/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
     <target
       name="la-print-slides"
       format="pdf"
       source="linear-algebra/source/main.ptx"
-      output-filename="TBIL-Precalculus-Instructor-Slides.pdf"
+      xsl="slides.xsl"
+      output-filename="TBIL-Linear-Algebra-Slides.pdf"
       deploy-dir="linear-algebra/preview/print" >
-    <stringparams debug.project.number="the-way-it-should-be"/>
-  </target>
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
   </targets>
 </project>
