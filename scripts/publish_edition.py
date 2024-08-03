@@ -57,8 +57,24 @@ def build_books(slug:str, books=None):
         books = ["calculus", "linear-algebra", "precalculus"]
     # # build and stage targets
     p = Project.parse("edition-sandbox")
-    for t in p.deploy_targets():
-        t.build(clean=True)
+    if "precalculus" in books:
+        p.get_target("precal-web").build(clean=True)
+        p.get_target("precal-web-instructor").build(clean=True)
+        p.get_target("precal-print").build(clean=True)
+        p.get_target("precal-print-instructor").build(clean=True)
+        p.get_target("precal-print-slides").build(clean=True)
+    if "calculus" in books:
+        p.get_target("cal-web").build(clean=True)
+        p.get_target("cal-web-instructor").build(clean=True)
+        p.get_target("cal-print").build(clean=True)
+        p.get_target("cal-print-instructor").build(clean=True)
+        p.get_target("cal-print-slides").build(clean=True)
+    if "linear-algebra" in books:
+        p.get_target("la-web").build(clean=True)
+        p.get_target("la-web-instructor").build(clean=True)
+        p.get_target("la-print").build(clean=True)
+        p.get_target("la-print-instructor").build(clean=True)
+        p.get_target("la-print-slides").build(clean=True)
     p.stage_deployment()
     # save edition to site directory
     for book in books:
@@ -72,10 +88,10 @@ def build_banks(slug:str, books=None):
         books = ["calculus", "linear-algebra", "precalculus"]
     # build and stage banks
     for book in books:
-        build_bank.main(book=book, full=True)
+        build_bank.main(book=book, full=True, sandbox=True, stage=False)
         shutil.copytree(
-            Path("edition-sandbox", "output", "stage", book, "preview", "exercises"),
-            Path("site", book, slug, "exercises")
+            Path("edition-sandbox") / "source" / book / "exercises" / "docs",
+            Path("site") / book / slug / "exercises"
         )
 
 def main(name:str, slug:str, clean=True):
