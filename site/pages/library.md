@@ -10,30 +10,30 @@ edition for use beginning in August.
 
 #### Precalculus 2024 Edition
 
-- [HTML](http://library.tbil.org/2024/precalculus/)
-    - [Instructor Edition](http://library.tbil.org/2024/precalculus/instructor/)
-- [PDF](http://library.tbil.org/2024/precalculus/print/TBIL-Precalculus.pdf)
-    - [Instructor Edition](http://library.tbil.org/2024/precalculus/print/TBIL-Precalculus-Instructor.pdf)
-- [Slides](http://library.tbil.org/2024/precalculus/print/TBIL-Precalculus-Slides.pdf)
-- [Exercises](http://library.tbil.org/2024/precalculus/exercises/)
+- [HTML](https://library.tbil.org/2024/precalculus/)
+    - [Instructor Edition](https://library.tbil.org/2024/precalculus/instructor/)
+- [PDF](https://library.tbil.org/2024/precalculus/print/TBIL-Precalculus.pdf)
+    - [Instructor Edition](https://library.tbil.org/2024/precalculus/print/TBIL-Precalculus-Instructor.pdf)
+- [Slides](https://library.tbil.org/2024/precalculus/print/TBIL-Precalculus-Slides.pdf)
+- [Exercises](https://library.tbil.org/2024/precalculus/exercises/)
 
 #### Calculus 2024 Edition
 
-- [HTML](http://library.tbil.org/2024/calculus/)
-    - [Instructor Edition](http://library.tbil.org/2024/calculus/instructor/)
-- [PDF](http://library.tbil.org/2024/calculus/print/TBIL-Calculus.pdf)
-    - [Instructor Edition](http://library.tbil.org/2024/calculus/print/TBIL-Calculus-Instructor.pdf)
-- [Slides](http://library.tbil.org/2024/calculus/print/TBIL-Calculus-Slides.pdf)
-- [Exercises](http://library.tbil.org/2024/calculus/exercises/)
+- [HTML](https://library.tbil.org/2024/calculus/)
+    - [Instructor Edition](https://library.tbil.org/2024/calculus/instructor/)
+- [PDF](https://library.tbil.org/2024/calculus/print/TBIL-Calculus.pdf)
+    - [Instructor Edition](https://library.tbil.org/2024/calculus/print/TBIL-Calculus-Instructor.pdf)
+- [Slides](https://library.tbil.org/2024/calculus/print/TBIL-Calculus-Slides.pdf)
+- [Exercises](https://library.tbil.org/2024/calculus/exercises/)
 
 #### Linear Algebra 2024 Edition
 
-- [HTML](http://library.tbil.org/2024/linear-algebra/)
-    - [Instructor Edition](http://library.tbil.org/2024/linear-algebra/instructor/)
-- [PDF](http://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra.pdf)
-    - [Instructor Edition](http://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
-- [Slides](http://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
-- [Exercises](http://library.tbil.org/2024/linear-algebra/exercises/)
+- [HTML](https://library.tbil.org/2024/linear-algebra/)
+    - [Instructor Edition](https://library.tbil.org/2024/linear-algebra/instructor/)
+- [PDF](https://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra.pdf)
+    - [Instructor Edition](https://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
+- [Slides](https://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
+- [Exercises](https://library.tbil.org/2024/linear-algebra/exercises/)
 
 ---
 
