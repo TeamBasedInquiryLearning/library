@@ -29,30 +29,30 @@ but be warned - these are under active development and can change at any time!
 
 #### Precalculus PREVIEW Edition
 
-- [HTML](../precalculus/preview/)
-    - [Instructor Edition](../precalculus/preview/instructor/)
-- [PDF](../precalculus/preview/print/TBIL-Precalculus.pdf)
-    - [Instructor Edition](../precalculus/preview/print/TBIL-Precalculus-Instructor.pdf)
-- [Slides](../precalculus/preview/print/TBIL-Precalculus-Slides.pdf)
-- [Exercises](../precalculus/preview/exercises/)
+- [HTML](../preview/precalculus/)
+    - [Instructor Edition](../preview/precalculus/instructor/)
+- [PDF](../preview/precalculus/print/TBIL-Precalculus.pdf)
+    - [Instructor Edition](../preview/precalculus/print/TBIL-Precalculus-Instructor.pdf)
+- [Slides](../preview/precalculus/print/TBIL-Precalculus-Slides.pdf)
+- [Exercises](../preview/precalculus/exercises/)
 
 #### Calculus PREVIEW Edition
 
-- [HTML](../calculus/preview/)
-    - [Instructor Edition](../calculus/preview/instructor/)
-- [PDF](../calculus/preview/print/TBIL-Calculus.pdf)
-    - [Instructor Edition](../calculus/preview/print/TBIL-Calculus-Instructor.pdf)
-- [Slides](../calculus/preview/print/TBIL-Calculus-Slides.pdf)
-- [Exercises](../calculus/preview/exercises/)
+- [HTML](../preview/calculus/)
+    - [Instructor Edition](../preview/calculus/instructor/)
+- [PDF](../preview/calculus/print/TBIL-Calculus.pdf)
+    - [Instructor Edition](../preview/calculus/print/TBIL-Calculus-Instructor.pdf)
+- [Slides](../preview/calculus/print/TBIL-Calculus-Slides.pdf)
+- [Exercises](../preview/calculus/exercises/)
 
 #### Linear Algebra PREVIEW Edition
 
-- [HTML](../linear-algebra/preview/)
-    - [Instructor Edition](../linear-algebra/preview/instructor/)
-- [PDF](../linear-algebra/preview/print/TBIL-Linear-Algebra.pdf)
-    - [Instructor Edition](../linear-algebra/preview/print/TBIL-Linear-Algebra-Instructor.pdf)
-- [Slides](../linear-algebra/preview/print/TBIL-Linear-Algebra-Slides.pdf)
-- [Exercises](../linear-algebra/preview/exercises/)
+- [HTML](../preview/linear-algebra/)
+    - [Instructor Edition](../preview/linear-algebra/instructor/)
+- [PDF](../preview/linear-algebra/print/TBIL-Linear-Algebra.pdf)
+    - [Instructor Edition](../preview/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
+- [Slides](../preview/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
+- [Exercises](../preview/linear-algebra/exercises/)
 
 ---
 
