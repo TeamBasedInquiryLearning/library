@@ -73,8 +73,7 @@ but be warned - these are under active development and can change at any time!
 
 ### Older Editions
 
-Older editions will be made available here soon. In the meantime,
-you can find them at their former homes:
+Older editions of our Calculus and Linear Algebra books are archived at these links:
 
 - [Calculus archive](https://teambasedinquirylearning.github.io/calculus/)
 - [Linear Algebra archive](https://teambasedinquirylearning.github.io/linear-algebra/)
