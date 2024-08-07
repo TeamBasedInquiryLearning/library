@@ -30,7 +30,7 @@ def main(book:str, full:bool, sandbox=False, stage=True):
     shutil.copytree(b.build_path(), docs_path / "assets", dirs_exist_ok=True)
 
     if stage:
-        stage_path = base_path / "output" / "stage" / book / "preview" / "exercises"
+        stage_path = base_path / "output" / "stage" / "preview" / book / "exercises"
         print(f"Staging bank at `{stage_path}`")
         # stage bank
         shutil.copytree(
