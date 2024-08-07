@@ -3,9 +3,16 @@ class TBILPrecal:
     @staticmethod
     def numberline_plot(center=0, radius=10):
         P = arrow((center-radius,0),(center+radius,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+        
+        #Print approximately every (radius/10)-th label for longer lines
+        label_skip=1
+        if radius>10:
+            label_skip=round(radius/10)
+
         for i in range(center-radius+1,center+radius):
-            P += line([(i,-0.2),(i,0.2)],color="black")
-            P += text(f"${i}$", (i,-0.6),color="black")
+            if i % label_skip == 0:
+                P += line([(i,-0.2),(i,0.2)],color="black")
+                P += text(f"${i}$", (i,-0.6),color="black")
         return P
     
     @staticmethod
