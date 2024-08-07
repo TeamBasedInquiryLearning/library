@@ -46,15 +46,17 @@ class TBILPrecal:
         #Assumes intervals are sorted and non-overlapping
         P=Graphics()
         scale=10
+        interval_dict_list=[]
         for interval in intervals:
+            interval_dict_list.append({})
             if interval[0] == "(":
-                left_strict=True
+                interval_dict_list[-1]["left_strict"]=True
             else:
-                left_strict=False
+                interval_dict_list[-1]["left_strict"]=False
             if interval[-1] == ")":
-                right_strict=True
+                interval_dict_list[-1]["right_strict"]=True
             else:
-                right_strict=False
+                interval_dict_list[-1]["right_strict"]=False
             
             #Discard opening ( or [ and closing ])
             interval=interval[1:-1]
@@ -62,21 +64,22 @@ class TBILPrecal:
             left=left.strip()
             right=right.strip()
             if left == "-\\infty":
-                left=None
+                interval_dict_list[-1]["left"]=None
             else:
-                left=int(left)
-                if abs(left)>= scale:
-                    scale=abs(left)+3
+                interval_dict_list[-1]["left"]=int(left)
+                if abs(int(left))>= scale:
+                    scale=abs(int(left))+3
             if right == "\\infty":
-                right=None
+                interval_dict_list[-1]["right"]=None
             else:
-                right=int(right)
-                if abs(right)>= scale:
-                    scale=abs(right)+3
+                interval_dict_list[-1]["right"]=int(right)
+                if abs(int(right))>= scale:
+                    scale=abs(int(right))+3
 
-            P+=TBILPrecal.inequality_plot( start=left, strict_start=left_strict, 
-            end=right, strict_end=right_strict, label_endpoints=False,scale=scale)
         P+=TBILPrecal.numberline_plot(radius=scale)
+        for i in interval_dict_list:
+            P+=TBILPrecal.inequality_plot( start=i["left"], strict_start=i["left_strict"], 
+            end=i["right"], strict_end=i["right_strict"], label_endpoints=False,scale=scale)
         return P
 
     @staticmethod
