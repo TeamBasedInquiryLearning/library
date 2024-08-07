@@ -64,6 +64,4 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Drew Lewis presented a workshop on "Team-Based Inquiry Learning" for the Brown University Sheridan Center for Teaching and Learning (April 2024)
 
-- Drew Lewis presented "Team-Based Inquiry Learning in Lower Division Mathematics Courses" at the 2024 IUSE Summit
-
 († TBIL Fellows)
