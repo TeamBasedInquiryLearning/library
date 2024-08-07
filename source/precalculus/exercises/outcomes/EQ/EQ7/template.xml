@@ -10,26 +10,30 @@
     <knowl>
         <content>
             <p>
-                Task 
+                <m>{{quad_ineq}}</m> 
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                <m>{{quad_interval_string}}</m>
+            </p>
+            <p>
+                <image
+                    source="assets/EQ7/generated/{{__seed__}}/quad_plot.png"
+                    description="Solution to inequality."/>
             </p>
         </outtro>
-        
     </knowl>
     
     <knowl>
         <content>
             <p>
-                <m>{{eq}}</m> 
+                <m>{{rational_ineq}}</m> 
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{interval_string}}</m>
+                <m>{{rational_interval_string}}</m>
             </p>
             <p>
                 <image

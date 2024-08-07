@@ -73,15 +73,15 @@ class TBILPrecal:
             if left == "-\\infty":
                 interval_dict_list[-1]["left"]=None
             else:
-                interval_dict_list[-1]["left"]=int(left)
-                if abs(int(left))>= scale:
-                    scale=abs(int(left))+3
+                interval_dict_list[-1]["left"]=Rational(left)
+                if abs(Rational(left))>= scale:
+                    scale=abs(Rational(left))+3
             if right == "\\infty":
                 interval_dict_list[-1]["right"]=None
             else:
-                interval_dict_list[-1]["right"]=int(right)
-                if abs(int(right))>= scale:
-                    scale=abs(int(right))+3
+                interval_dict_list[-1]["right"]=Rational(right)
+                if abs(Rational(right))>= scale:
+                    scale=abs(Rational(right))+3
 
         P+=TBILPrecal.numberline_plot(radius=scale)
         for i in interval_dict_list:
