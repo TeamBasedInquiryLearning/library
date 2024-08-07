@@ -83,5 +83,14 @@ class Generator(BaseGenerator):
       "eq": f"{latex(LHS)} {(ineq)} {latex(RHS)}",
       "cut": partition_points,
       "numberline":numberline,
-      "intervals": "\\cup".join(intervals),
+      "interval_string": "\\cup".join(intervals),
+      "intervals": intervals,
     } 
+  
+  @provide_data
+  def graphics(data):
+      P=TBILPrecal.numberline_from_intervals(data["intervals"])      
+      P.axes(False)
+      return {
+          "plot": plot(P)
+      }

@@ -32,10 +32,12 @@
                 <m>{{cut}}</m>
             </p>
             <p>
-                <m>{{intervals}}</m>
+                <m>{{interval_string}}</m>
             </p>
             <p>
-                <m>{{numberline}}</m>
+                <image
+                    source="assets/EQ7/generated/{{__seed__}}/plot.png"
+                    description="Solution to inequality."/>
             </p>
         </outtro>
         

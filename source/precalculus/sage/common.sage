@@ -14,12 +14,13 @@ class TBILPrecal:
             strict_start=True, 
             end=None, 
             strict_end=True,
-            label_endpoints=True):
+            label_endpoints=True,
+            scale=10):
         P = Graphics()
         if start is None:
-            P += arrow((end,0),(-10,0),color="#0088ff", width=3, arrowsize=3, aspect_ratio=1)
+            P += arrow((end,0),(-1*scale,0),color="#0088ff", width=3, arrowsize=3, aspect_ratio=1)
         if end is None:
-            P += arrow((start,0),(10,0),color="#0088ff", width=3, arrowsize=3, aspect_ratio=1)
+            P += arrow((start,0),(1*scale,0),color="#0088ff", width=3, arrowsize=3, aspect_ratio=1)
         if start is not None and end is not None:
             P += line([(start,0),(end,0)],color="#0088ff", thickness=3, aspect_ratio=1)
 
@@ -38,6 +39,44 @@ class TBILPrecal:
                 P += text(")", (end,0), color="#0088ff", fontsize=18)
             else:
                 P += text("]", (end,0), color="#0088ff", fontsize=18)
+        return P
+
+    @staticmethod
+    def numberline_from_intervals(intervals):
+        #Assumes intervals are sorted and non-overlapping
+        P=Graphics()
+        scale=10
+        for interval in intervals:
+            if interval[0] == "(":
+                left_strict=True
+            else:
+                left_strict=False
+            if interval[-1] == ")":
+                right_strict=True
+            else:
+                right_strict=False
+            
+            #Discard opening ( or [ and closing ])
+            interval=interval[1:-1]
+            left,right = interval.split(",")
+            left=left.strip()
+            right=right.strip()
+            if left == "-\\infty":
+                left=None
+            else:
+                left=int(left)
+                if abs(left)>= scale:
+                    scale=abs(left)+3
+            if right == "\\infty":
+                right=None
+            else:
+                right=int(right)
+                if abs(right)>= scale:
+                    scale=abs(right)+3
+
+            P+=TBILPrecal.inequality_plot( start=left, strict_start=left_strict, 
+            end=right, strict_end=right_strict, label_endpoints=False,scale=scale)
+        P+=TBILPrecal.numberline_plot(radius=scale)
         return P
 
     @staticmethod
