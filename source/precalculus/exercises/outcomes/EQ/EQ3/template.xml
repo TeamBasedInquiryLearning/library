@@ -3,7 +3,7 @@
     
     <intro>
         <p>
-            Question
+           On a map, {{placeA}} is located at <m>{{pointA}}</m> and {{placeB}} is at <m>{{pointB}}</m>.
         </p>
     </intro>
     
@@ -11,16 +11,29 @@
     <knowl>
         <content>
             <p>
-                Task 
+                What is the distance between {{placeA}} and {{placeB}}?
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                <m>{{distance}}</m>
             </p>
         </outtro>
         
     </knowl>
-      
+    <knowl>
+        <content>
+            <p>
+               Suppose that {{placeC}} is exactly in the middle between {{placeA}} and {{placeB}}.  
+               What is the location of {{placeC}} on the map?  
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{midpoint}}</m>
+            </p>
+        </outtro>
+        
+    </knowl>
     
 </knowl>
