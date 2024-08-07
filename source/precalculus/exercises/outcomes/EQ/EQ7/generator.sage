@@ -79,10 +79,7 @@ class Generator(BaseGenerator):
 
     
     return {
-      #"eq": f"\dfrac{{{latex(a*x+b)}}}{{{latex(x+c)}}} {ineq} \dfrac{{{latex(d*x+e)}}}{{{latex(x+f)}}}",
       "eq": f"{latex(LHS)} {(ineq)} {latex(RHS)}",
-      "cut": partition_points,
-      "numberline":numberline,
       "interval_string": "\\cup".join(intervals),
       "intervals": intervals,
     } 
