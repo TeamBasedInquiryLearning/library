@@ -13,4 +13,6 @@ def main():
         json.dump(site_dict, f, indent=4)
 
 if __name__ == "__main__":
+    # we're not using this right now...
+    raise NotImplementedError
     main()
