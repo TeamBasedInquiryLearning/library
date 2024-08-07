@@ -77,11 +77,11 @@ class Generator(BaseGenerator):
       if s != "":
         intervals.append(s)
 
-
+    
     return {
       #"eq": f"\dfrac{{{latex(a*x+b)}}}{{{latex(x+c)}}} {ineq} \dfrac{{{latex(d*x+e)}}}{{{latex(x+f)}}}",
       "eq": f"{latex(LHS)} {(ineq)} {latex(RHS)}",
       "cut": partition_points,
       "numberline":numberline,
-      "intervals": intervals,
+      "intervals": "\\cup".join(intervals),
     } 
