@@ -9,15 +9,14 @@
         <xi:include href="meta/frontmatter.ptx"/>
         <preface>
             <xi:include href="../../custom/syllabus/syllabus-la.ptx"/>
+            <xi:include href="../../custom/problemsetguide/pset-intro.ptx"/>
         </preface>
         <xi:include href="01-LE/main.ptx"/>
         <xi:include href="02-EV/main.ptx"/>
         <xi:include href="03-AT/main.ptx"/>
         <xi:include href="04-MX/main.ptx"/>
         <xi:include href="05-GT/main.ptx"/>
-        <xi:include href="future-ON/main.ptx"/>
-        <xi:include href="../../custom/sample.ptx"/>
-
+       <!--<xi:include href="future-ON/main.ptx"/>--> 
         <xi:include href="meta/backmatter.ptx"/>
 
     </book>
