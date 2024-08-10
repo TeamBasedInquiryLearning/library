@@ -51,7 +51,6 @@ class Generator(BaseGenerator):
     xpoints=sample([-4..4],3)
     xpoints.sort()
     pieces=[]
-    print(xpoints)
     left=xpoints[0]-1
     domain=[left]
     for i in [0..len(xpoints)-1]:
@@ -63,13 +62,14 @@ class Generator(BaseGenerator):
         pieces.append( ((left, right), (-1)^i*(x-xpoints[i])))
         left=right 
 
+    #Piecewise is slow, refactor to not use this.
+    #Also doesn't support half open intervals
+    g=piecewise(pieces)
+    g=g-g.subs({x:0})+level
 
-    g_domain = [xpoints[0]-1, xpoints[2]+1]
 
 
-
-
-    xvalue=choice([-4..4])
+    xvalue=choice([domain[0]..domain[1]])
 
     return {
       "fname": fname,
@@ -77,9 +77,9 @@ class Generator(BaseGenerator):
       "tasks":tasks,
       "gname": gname,
       "g":g,
-      "g_domain":g_domain,
+      "g_domain":domain,
       "xvalue":xvalue, 
-      "gx":g.subs({z:xvalue}),
+      "gx":g.subs({x:xvalue}),
       "result":level,
       "values": [{"x": i} for i in xpoints]
     } 
