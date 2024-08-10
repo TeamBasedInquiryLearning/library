@@ -47,39 +47,37 @@ class Generator(BaseGenerator):
 
     #R.<z> = PolynomialRing(QQ)
 
-    level=choice([-10..-1,1..10])
-    xpoints=sample([-4..4],3)
+    level=choice([-5..-1,1..5])
+    xpoints=sample([-6..6],3)
     xpoints.sort()
+    flip=choice([-1,1])
     pieces=[]
     left=xpoints[0]-1
     domain=[left]
     for i in [0..len(xpoints)-1]:
       if i == len(xpoints)-1:
         domain.append(xpoints[i]+choice([1..3]))
-        pieces.append( ((left, domain[1]), (-1)^i*(x-xpoints[i])))
+        pieces.append( ((left, domain[1]), (-1)^i*flip*(x-xpoints[i])+level))
       else:
         right=1/2*(xpoints[i]+xpoints[i+1])
-        pieces.append( ((left, right), (-1)^i*(x-xpoints[i])))
+        pieces.append( ((left, right), (-1)^i*flip*(x-xpoints[i])+level))
         left=right 
 
-    #Piecewise is slow, refactor to not use this.
-    #Also doesn't support half open intervals
-    g=piecewise(pieces)
-    g=g-g.subs({x:0})+level
-
-
-
     xvalue=choice([domain[0]..domain[1]])
+    gxvalue=None
+    for p in pieces:
+      if p[0][0] <= xvalue and xvalue <= p[0][1]:
+        gxvalue = p[1].subs({x:xvalue})
 
     return {
       "fname": fname,
       "f":flatex,
       "tasks":tasks,
       "gname": gname,
-      "g":g,
+      "g_pieces":pieces,
       "g_domain":domain,
       "xvalue":xvalue, 
-      "gx":g.subs({x:xvalue}),
+      "gx":gxvalue,
       "result":level,
       "values": [{"x": i} for i in xpoints]
     } 
@@ -87,7 +85,9 @@ class Generator(BaseGenerator):
 
   @provide_data
   def graphics(data):
-    p=plot(data["g"],data["g_domain"][0],data["g_domain"][1],thickness=3,gridlines=True,ticks=[1,1])
+    p=Graphics()
+    for piece in data["g_pieces"]:
+      p+=plot(piece[1],piece[0][0],piece[0][1],thickness=3,gridlines=True,ticks=[1,1])
     #If you return plot(p) the gridlines disappear, so return p
     return {"plot": p}
       
