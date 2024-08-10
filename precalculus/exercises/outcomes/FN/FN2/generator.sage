@@ -45,15 +45,26 @@ class Generator(BaseGenerator):
     shuffle(tasks)
 
 
-    R.<z> = PolynomialRing(QQ)
+    #R.<z> = PolynomialRing(QQ)
 
     level=choice([-10..-1,1..10])
-    xpoints=sample([-8..8],3)
+    xpoints=sample([-4..4],3)
     xpoints.sort()
-    points = [ (p,level) for p in xpoints]+[(xpoints[0]-choice([2..4]), level+choice([-1,1])*choice([3..5])) ]
-    g=R.lagrange_polynomial(points)
+    pieces=[]
+    print(xpoints)
+    left=xpoints[0]-1
+    domain=[left]
+    for i in [0..len(xpoints)-1]:
+      if i == len(xpoints)-1:
+        domain.append(xpoints[i]+choice([1..3]))
+        pieces.append( ((left, domain[1]), (-1)^i*(x-xpoints[i])))
+      else:
+        right=1/2*(xpoints[i]+xpoints[i+1])
+        pieces.append( ((left, right), (-1)^i*(x-xpoints[i])))
+        left=right 
 
-    g_domain = [xpoints[0]-5, xpoints[2]+3]
+
+    g_domain = [xpoints[0]-1, xpoints[2]+1]
 
 
 
@@ -76,6 +87,7 @@ class Generator(BaseGenerator):
 
   @provide_data
   def graphics(data):
-    p=plot(data["g"],data["g_domain"][0],data["g_domain"][1],thickness=3)
-    return {"plot": plot(p)}
+    p=plot(data["g"],data["g_domain"][0],data["g_domain"][1],thickness=3,gridlines=True,ticks=[1,1])
+    #If you return plot(p) the gridlines disappear, so return p
+    return {"plot": p}
       
