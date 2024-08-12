@@ -50,18 +50,19 @@ class Generator(BaseGenerator):
     level=choice([-5..-1,1..5])
     xpoints=sample([-6..6],3)
     xpoints.sort()
-    flip=choice([-1,1])
     pieces=[]
     left=xpoints[0]-1
     domain=[left]
+    slope=choice([-3..-1,1..3])
     for i in [0..len(xpoints)-1]:
       if i == len(xpoints)-1:
         domain.append(xpoints[i]+choice([1..3]))
-        pieces.append( ((left, domain[1]), (-1)^i*flip*(x-xpoints[i])+level))
+        pieces.append( ((left, domain[1]), (-1)^i*slope*(x-xpoints[i])+level))
       else:
         right=1/2*(xpoints[i]+xpoints[i+1])
-        pieces.append( ((left, right), (-1)^i*flip*(x-xpoints[i])+level))
-        left=right 
+        pieces.append( ((left, right), (-1)^i*slope*(x-xpoints[i])+level))
+        left=right
+
 
     xvalue=choice([domain[0]..domain[1]])
     gxvalue=None
