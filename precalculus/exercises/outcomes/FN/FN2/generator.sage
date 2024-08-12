@@ -51,7 +51,7 @@ class Generator(BaseGenerator):
     xpoints=sample([-6..6],3)
     xpoints.sort()
     pieces=[]
-    left=xpoints[0]-1
+    left=xpoints[0]-choice([1..3])
     domain=[left]
     slope=choice([-3..-1,1..3])
     for i in [0..len(xpoints)-1]:
