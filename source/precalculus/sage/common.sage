@@ -73,3 +73,17 @@ class TBILPrecal:
                       imaginary_part=[i for i in range(-5,6) if i != 0],length=1):
         '''Generates a list of unique 2-tuples of conjugate pairs of complex (not real) numbers of the form a+bi.'''
         return sample([(a+b*I,a-b*I) for a in real_part for b in imaginary_part],length)
+
+    @staticmethod
+    def inequality_string(ineq):
+        '''Turns inequalities like <= into \leq for nicer printing'''
+        if ineq=="<=":
+            return r"\leq"
+        elif ineq==">=":
+            return r"\leq"
+        elif ineq=="<":
+            return r"\lt"
+        elif ineq==">":
+            return r"\gt"
+        else:
+            return "Not an inequality symbol"

@@ -1,3 +1,5 @@
+load("../sage/common.sage")
+
 class Generator(BaseGenerator):
     def data(self):        
         var1, var2 = sample([var('x'),var('y'),var('z')],2)
@@ -67,7 +69,7 @@ class Generator(BaseGenerator):
             "shuffleineq": choice([True,False]),
             "LHSineq": LHSineq,
             "RHSineq": RHSineq,
-            "ineq": ineq,
+            "ineq": TBILPrecal.inequality_string(ineq),
             "solution2": solution_ineq,
             "interval": interval
         }
