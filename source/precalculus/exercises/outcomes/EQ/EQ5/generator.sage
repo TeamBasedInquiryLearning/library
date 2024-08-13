@@ -24,14 +24,17 @@ class Generator(BaseGenerator):
 
     a=choice([-7..7])
     b=(a+choice([1..4]))^2-a^2
-    equations.append( { "equation":  x^2+2*a*x== (b+a^2) , "method":"completing the square", "roots": f"{-1*a+sqrt(b+a^2)}\\text{{ and }}{-1*a-sqrt(b+a^2)} "})
+    r1=-1*a+sqrt(b+a^2)
+    r2=-1*a-sqrt(b+a^2)
+    #equations.append( { "equation":  x^2+2*a*x== (b+a^2) , "method":"completing the square", "roots": f"{-1*a+sqrt(b+a^2)}\\text{{ and }}{-1*a-sqrt(b+a^2)} "})
+    equations.append( { "equation":  x^2+2*a*x== (b+a^2) , "method":"completing the square", "roots": f"{r1}\\text{{ and }}{r2} "})
 
     #Quadratic Equation
     irrationals = list(TBILPrecal.small_irrationals(rational_part=[-8..1,1..8]).items())[0]
     r1,r2=irrationals[0]
     c=irrationals[1]
     equations.append( { "equation": c^2*x^2-2*(r1+r2)*c^2*x == expand(-1*c^2*r1*r2), 
-                       "method":"the square root property", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
+                       "method":"the quadratic equation", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
     shuffle(equations)
 
 
