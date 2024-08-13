@@ -17,9 +17,6 @@ class Generator(BaseGenerator):
     f1(x)=pieces[0]
     f2(x)=pieces[1]
 
-    #f1(x)=-x^2
-    #f2(x)=x^3
-
     cut_left = choice([True,False])
     if cut_left:
       intervals=[[-5,cut],(cut,5)]
@@ -45,42 +42,71 @@ class Generator(BaseGenerator):
     shuffle(tasks)
 
 
-    #R.<z> = PolynomialRing(QQ)
-
-    level=choice([-5..-1,1..5])
-    xpoints=sample([-6..6],3)
+    #Construct some line segments with integral slopes so that it passes through
+    #few points (x,y) with y an integer and x not an integer
+    #Pick endpoints of line segments
+    xpoints=sample([-8..8],choice([4..5]))
     xpoints.sort()
-    pieces=[]
-    left=xpoints[0]-choice([1..3])
-    domain=[left]
-    slope=choice([-3..-1,1..3])
-    for i in [0..len(xpoints)-1]:
-      if i == len(xpoints)-1:
-        domain.append(xpoints[i]+choice([1..3]))
-        pieces.append( ((left, domain[1]), (-1)^i*slope*(x-xpoints[i])+level))
-      else:
-        right=1/2*(xpoints[i]+xpoints[i+1])
-        pieces.append( ((left, right), (-1)^i*slope*(x-xpoints[i])+level))
-        left=right
+    #Pick first point arbitrarily
+    points=[(xpoints[0], choice([-8..8]))]
+    lines=[]
+    slope=choice([-2..-1,1..2])
+    for i in [1..len(xpoints)-1]:
+      lines.append(slope*(x-points[i-1][0])+points[i-1][1])
+      points.append((xpoints[i],lines[i-1].subs({x:xpoints[i]})))
+      #Ensure slope for next piece is different
+      slopes=[-2..-1,1..2]
+      slopes.remove(slope)
+      slope=choice(slopes)
+   
+    #Need to give them c, ask them to compute g(c)
+    #So pick a point on the graph (c,gc)
+    #Start with c
+    c=choice([xpoints[0]+1,..,xpoints[-1]-1])
+    #Figure out which line segment its on
+    index=0
+    while c>=xpoints[index+1]:
+        index+=1
+        if index==len(xpoints)-2:
+            break
+    #Get y-value from correct line
+    gc=lines[index].subs({x:c})
+
+    #Need to give them b, have them find all points a with g(a)=b
+    #Pick a point on the graph (a,b)
+    #Start with a
+    a=choice([xpoints[0]+1,..,xpoints[-1]-1])
+    #Figure out which line segment its on
+    index=0
+    while a>=xpoints[index+1]:
+        index+=1
+        if index==len(xpoints)-2:
+            break
+    #Get y-value from correct line
+    b=lines[index].subs({x:a})
+
+    #Find out what other x-values map to b
+    xvalues=set()
+    for j in [0..len(lines)-1]:
+        if (points[j][1]<=b and b<=points[j+1][1]) or (points[j][1]>=b and b>=points[j+1][1]):
+            s=solve(lines[j]==b,x)[0].rhs()
+            if xpoints[j]<=s and s<=xpoints[j+1]:
+                xvalues.add(round(s,1))
 
 
-    xvalue=choice([domain[0]..domain[1]])
-    gxvalue=None
-    for p in pieces:
-      if p[0][0] <= xvalue and xvalue <= p[0][1]:
-        gxvalue = p[1].subs({x:xvalue})
 
     return {
       "fname": fname,
       "f":flatex,
       "tasks":tasks,
       "gname": gname,
-      "g_pieces":pieces,
-      "g_domain":domain,
-      "xvalue":xvalue, 
-      "gx":gxvalue,
-      "result":level,
-      "values": [{"x": i} for i in xpoints]
+      "g_pieces":[((xpoints[i],xpoints[i+1]),lines[i]) for i in [0..len(lines)-1] ],
+      "interval":f"[{xpoints[0]},{xpoints[-1]}]",
+      "xvalue":c, 
+      "gx":gc,
+      "result":b,
+      #Use the g (general format) to make sure 4 prints as 4, not 4.0
+      "values": [{"x": f"{i:g}"} for i in xvalues]
     } 
 
 
@@ -88,7 +114,7 @@ class Generator(BaseGenerator):
   def graphics(data):
     p=Graphics()
     for piece in data["g_pieces"]:
-      p+=plot(piece[1],piece[0][0],piece[0][1],thickness=3,gridlines=True,ticks=[1,1])
+      p+=plot(piece[1],piece[0][0],piece[0][1],thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1)
     #If you return plot(p) the gridlines disappear, so return p
     return {"plot": p}
       
