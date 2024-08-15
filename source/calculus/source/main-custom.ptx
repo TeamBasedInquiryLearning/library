@@ -8,10 +8,7 @@
     <subtitle component="main">2024 Edition CUSTOM </subtitle>
     <subtitle component="instructor">2024 Edition PREVIEW (Instructor Version)</subtitle>
 
-    <xi:include href="meta/frontmatter.ptx" />
-    <preface>
-        <xi:include href="../../custom/problemsetguide/pset-intro.ptx"/>
-    </preface>
+    <xi:include href="meta/frontmatter.ptx" /><!-- (inserted custom preface here) -->
 
     <xi:include href="01-LT/main.ptx" />
 

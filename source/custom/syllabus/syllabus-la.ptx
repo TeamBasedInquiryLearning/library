@@ -1,12 +1,12 @@
-<section xml:id="syllabus">
+<preface xml:id="syllabus">
     <title>Syllabus</title>
-    <subsection xml:id="sec-welcome">
+    <paragraphs xml:id="sec-welcome">
         <title>Welcome</title>
         <p>
         Welcome to Math 0520! This page is our official syllabus; it's main purpose is to orient you to our course structure, learning outcomes, and resources that you will access throughout the semester. 
         Please familiarize yourself with the information on this page and refer back to it as needed.
         </p>
-        <subsubsection xml:id="subsubsec-LinearAlgebra">
+        <paragraphs xml:id="subsubsec-LinearAlgebra">
             <title>Linear Algebra</title>
             <p>
                 Linear algebra is a branch of mathematics devoted to theory of linear equations and transformations.
@@ -140,8 +140,8 @@
                 </ul>
                 Additional topics will be covered depending on time and class interests.
             </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-prerequisites">
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-prerequisites">
             <title>Am I Ready for Math 0520?</title>
             <p>
                 Almost certainly!
@@ -157,8 +157,8 @@
                 In addition to Math 0520, Brown also offers Math 0540: Linear Algebra with Theory. 
                 Math 0540 is a higher-level introduction to linear algebra with a greater emphasis on the development of axiomatic principles and proof-writing skills. 
             </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-inclusiveteaching">
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-inclusiveteaching">
             <title>Inclusive Teaching</title>
             <p>
                 Large, introductory STEM courses are well-documented as playing an outsized role in dissuading members of historically excluded groups from pursuing STEM careers. 
@@ -174,8 +174,8 @@
                 I am committed to continuing my education about evidenced-based and equity-focussed approaches to teaching, and to learning from the hundreds of students I have the pleasure of teaching each semester. 
                 If you have thoughts, questions, or concerns about this course, or STEM education at Brown, I welcome your perspective and encourage you to reach out to me.
             </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-accessibility">
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-accessibility">
             <title>Accessibility Roadmap</title>
             <p>
                 It's important to me that you feel you have all the tools you need to succeed in this course. 
@@ -215,15 +215,15 @@
                     </p>
                 </li>
             </ul>
-        </subsubsection>
-    </subsection>
+        </paragraphs>
+    </paragraphs>
 
-    <subsection xml:id="subsec-course-structure">
+    <paragraphs xml:id="subsec-course-structure">
         <title>Course Design</title>
         <p>
             But why? Why is this course weird?
         </p>
-        <subsubsection xml:id="subsubsec-TBIL">
+        <paragraphs xml:id="subsubsec-TBIL">
             <title>Team Based Inquiry Learning</title>
 
             <p>
@@ -238,8 +238,8 @@
                 The research underlying TBIL indicates that this format leads to greater content mastery and flexibility in problem solving, among other important findings. 
                 For more information about this research, please visit the website for <url href="tbil.org">Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning</url>, an NSF-funded collaboration to study the effects of TBIL in introductory mathematics courses across the United States.
             </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-Teams">
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-Teams">
             <title>Team Structure &amp; Accountability</title>
             <p>
                 You team will consist of 6 people and will be formed by the teaching team.
@@ -295,8 +295,8 @@
                 In order to help you identify areas of growth and assess the quality of teamwork over the semester, teams will undergo two rounds of anonymous feedback. 
                 More details about this process and its logistics are located in Canvas.
             </p>
-        </subsubsection>
-        <subsubsection>
+        </paragraphs>
+        <paragraphs>
             <title>Office Hours</title>
             <p>
                 Office Hours are one of the most useful resources we have available to you to support your learning. 
@@ -327,12 +327,16 @@
                 </ul>
                 You will find the complete Calendar on our Canvas homepage.
             </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-schedule">
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-schedule">
             <title>Schedule and Time Expectations</title>
             <table>
                 <title>Tentative Schedule</title>
                 <tabular halign="center">
+                    <col/>
+                    <col/>
+                    <col width="40%"/>
+                    <col/>
                     <row header="yes" bottom="minor">
                         <cell>Week</cell>
                         <cell>Sections Covered</cell>
@@ -472,16 +476,16 @@
                 </ol> 
                 for a total for 180 hours throughout the semester. 
             </p>
-        </subsubsection>
-    </subsection>
+        </paragraphs>
+    </paragraphs>
 
-    <subsection xml:id="subsec-assessment">
+    <paragraphs xml:id="subsec-assessment">
         <title>Assessment</title>
         <p>
             This section describes the key assessments for this course and how the fit into your overall grade. 
             More detailed instructions and evaluation criteria are located on Canvas. 
         </p>
-        <subsubsection xml:id="subsubsec-readiness">
+        <paragraphs xml:id="subsubsec-readiness">
             <title>Readiness Assurance Tests</title>
             <p>
                 To prepare for each of our course modules, you will work through a Readiness Assurance Process (RAP). 
@@ -496,9 +500,9 @@
                 You will find these quizzes on Canvas and we will only remember the greater of your two scores on the test. 
                 The RATs contribute 7.5% towards your overall grade.
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection xml:id="subsubsec-FluencyAssessments">
+        <paragraphs xml:id="subsubsec-FluencyAssessments">
             <title>Fluency Assessments</title>
             <p>
                 Each section of our Activity Book corresponds to a single targeted learning outcome, each of which is assessed via a <em>Fluency Assessment</em>.
@@ -529,9 +533,9 @@
             </p>
              
 
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection>
+        <paragraphs>
             <title>Problem Sets</title>
             <p>
               In this course, Problem Sets make up the most significant portion of assessment. 
@@ -553,9 +557,9 @@
                 Collaborating on solving the problems on a problem set with other classmates is permitted, though our expectation is that all written work is produced by you and represents your authentic thinking. 
                 Written work that closely resembles that of another classmate may be investigated for plagiarism, as is described below on this syllabus. 
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection>
+        <paragraphs>
             <title>Capstone Problem Set</title>
             <p>
                 The Final Assessment for this course is a Capstone Problem Set. 
@@ -564,9 +568,9 @@
                 The Capstone Problem Set is worth 20% of your overall grade. 
                 More detailed instructions will be provided on Canvas closer to the end of the semester. 
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection>
+        <paragraphs>
             <title>Reflections</title>
             <p>
                 Critical reflection is an integral part of the deep learning process. 
@@ -576,9 +580,9 @@
                 In other words, these reflections will help you consolidate your learning gains over the term.
                 Reflections are worth 7.5% of your overall grade.
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection>
+        <paragraphs>
             <title>Team Work and Attendance</title>
             <p>
                 To assess teamwork, your team will provide both formative and summative feedback to each other throughout the term. 
@@ -592,9 +596,9 @@
                 Attendance will be recorded after the end of shopping period. 
                 It accounts for 7.5% of a student's overall grade.
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection>
+        <paragraphs>
             <title>Your Final Grade</title>
             <p>
                 Your final grade is calculated as a weighted average of the assessments described above.
@@ -673,13 +677,13 @@
            <p>
             Students taking this course S/NC will receive a grade of S provided that their overall grade is above 65%.
            </p>
-        </subsubsection>
-    </subsection>
+        </paragraphs>
+    </paragraphs>
 
 
-    <subsection xml:id="subsec-course-policies">
+    <paragraphs xml:id="subsec-course-policies">
         <title>Course Policies</title>
-        <subsubsection xml:id="subsubsec-attendance">
+        <paragraphs xml:id="subsubsec-attendance">
             <title>Attendance</title>
             <p>
                 Attendance in class sessions is recorded and contributes 7.5% towards your final grade; it is recorded by the teaching team in Canvas beginning after shopping period.
@@ -693,9 +697,9 @@
                 Our classroom is equipped with Zoom and I (Jordan) will record all of my class meetings. 
                 The recordings will appear in the Media Library on Canvas shortly after class. 
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection xml:id="subsubsec-LatePolicies">
+        <paragraphs xml:id="subsubsec-LatePolicies">
             <title>Late Work</title>
             <p>
                 Deadlines help me keep my workload balanced and keep you on track, ultimately resulting in a better learning experience for all of us. 
@@ -779,9 +783,9 @@
                     </li>
                 </ul>
             </p>
-        </subsubsection>
+        </paragraphs>
 
-        <subsubsection xml:id="subsubsec-Communication">
+        <paragraphs xml:id="subsubsec-Communication">
             <title>Communication</title>
             <p>
                 This course has two primary channels for communicating outside of class and office hours: <em>Ed STEM</em> and <em>e-mail</em>.
@@ -828,11 +832,11 @@
                     </li>
                 </ul>
             </p>
-        </subsubsection>
+        </paragraphs>
 
     
-    </subsection>
-    <subsection xml:id="subsec-AcademicIntegrity">
+    </paragraphs>
+    <paragraphs xml:id="subsec-AcademicIntegrity">
         <title>Academic Integrity</title>
         <p>
             High expectations are important because they set the bar for where we want to be. 
@@ -845,7 +849,7 @@
         <p>
             Please familiarize yourself with <url href="https://www.brown.edu/academics/college/degree/policies/academic-code">Brown's Academic Integrity Policies </url>.
         </p>
-        <subsubsection xml:id="subsubsec-Plagiarism">
+        <paragraphs xml:id="subsubsec-Plagiarism">
             <title>Plagiarism</title>
             <p>
                 In this course, plagiarism is defined as submitted work that appears identical in wording, structure, or substance to that of another person's work, whether it appears online or in writing. 
@@ -879,8 +883,8 @@
                 Upon a second occurrence, the case will be forwarded to the Academic Code Committee. 
             </p>
             
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-Collaboration">
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-Collaboration">
             <title>Best Practices for Collaborating and Using Sample Solutions</title>
             <p>
                 We want you to collaborate with your teammates and classmates, and use all the resources that are available to you to support your learning. 
@@ -901,6 +905,6 @@
                     </li>
                 </ul>
             </p>
-        </subsubsection>
-    </subsection>
-</section>
+        </paragraphs>
+    </paragraphs>
+</preface>
