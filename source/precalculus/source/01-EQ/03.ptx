@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EQ3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Distance and Midpoint (EQ3) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/03.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+   
+    <activity xml:id="calculating-distance-using-Pythagorean-Theorem">
+      <introduction>
+        <p> The points <m> A </m> and <m> B </m> are shown in the graph below. Use the graph to answer the following questions:
+        </p>
+        <figure xml:id="line-segment"><image>
+        <sageplot>
+          A = point((2,6),size=40)+text('A',(2.05,6),horizontal_alignment="left", gridlines=[[2,2.5,3.0,3.5,4],[2,2.5,3.0,3.5,4,4.5,5.0,5.5,6]])
+          B = point((4,2),size=40)+text('B',(4.05,2),horizontal_alignment="left")
+          L=line([(2,6),(4,2)],color="purple")
+          A+B+L
+        </sageplot>
+      </image></figure>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Draw a right triangle so that the hypotenuse is the line segment between points <m>A</m> and <m>B </m>. Label the third point of the triangle <m>C</m>.
+          </p>
+        </statement>
+          <answer>
+            Point <m>C</m> should be at the point <m>(2,2)</m>.
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find the lengths of line segments <m> AC </m> and <m> BC </m>.
+          </p>
+        </statement>
+          <answer>
+            <m>AC</m> is <m>4</m> units long.
+            <m>BC</m> is <m>2</m> units long.
+            Make sure students pay attention to the scale.
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Now that you know the lengths of <m> AC </m> and <m> BC </m>, how can you find the length of <m> AB </m>? Find the length of <m>AB</m>.
+          </p>
+        </statement>
+          <answer>
+            Students should see that they can use the Pythagorean Theorem to find the length of side <m>AB</m> (which is <m>\sqrt{20}</m> or approximately <m>4.5</m>).
+          </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p> Using the <term>Pythagorean Theorem</term> <m>(a^2+b^2=c^2)</m> can be helpful in finding the distance of a line segment (as long as you create a right triangle!).
+      </p>
+    </remark>
+
+    <activity xml:id="calculating-distance-using-Pythagorean-Theorem-from-two-points">
+      <introduction>
+        <p> Suppose you are given two points <m>(x_{1},y_{1})</m> and <m>(x_{2},y_{2})</m>. Let's investigate how to find the length of the line segment that connects these two points!
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Draw a sketch of a right triangle so that the hypotenuse is the line segment between the two points.
+          </p>
+        </statement>
+          <answer>
+            Students may need help in their drawing. Make sure the hypotenuse is the line segment that connects the two points.
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find the lengths of the legs of the right triangle.
+          </p>
+        </statement>
+          <answer>
+            The lengths of the legs of the triangle should be <m>y_{2}-y_{1}</m> and <m>x_{2}-x_{1}</m> (or <m>y_{1}-y_{2}</m> and <m>x_{1}-x_{2}</m> depending on how students created their drawing).
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find the length of the line segment that connects the two original points.
+          </p>
+        </statement>
+          <answer>
+            Students should see the connection to the previous activity and apply the Pythagorean Theorem. They should get either <m>\sqrt{(x_{2}-x_{1})^2+(y_{2}-y_{1})^2}</m> or <m>\sqrt{(x_{1}-x_{2})^2+(y_{1}-y_{2})^2}</m> to represent the length of the side that connects the two points.
+          </answer>
+      </task>
+    </activity>
+
+    <definition xml:id="def-distance-formula">
+      <statement>
+        <p>
+          The distance, <m>d</m>, between two points, <m>(x_{1},y_{1})</m> and <m>(x_{2}, y_{2})</m>, can be found by using the <term>distance formula</term>: <me>d=\sqrt{(x_{2}-x_{1})^2+(y_{2}-y_{1})^2}</me> Notice that the distance formula is an application of the Pythagorean Theorem!
+        </p>
+      </statement>
+    </definition>
+  
+    <activity xml:id="calculating-distance-practice">
+      <introduction>
+        <p>
+          Apply <xref ref="def-distance-formula"/> to calculate the distance between the given points.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> What is the distance between <m>(4,6)</m> and <m>(9,15)</m>? 
+          <ol marker= "A." cols="2">
+            <li> <m>10.2</m> </li>
+            <li> <m> 10.3</m> </li>
+            <li> <m>\sqrt{106}</m> </li>
+            <li> <m>\sqrt{56}</m> </li></ol></p>
+        </statement>
+          <answer>
+            B and C
+          </answer>
+        </task>
+        <task>
+        <statement>
+          <p> What is the distance between <m>(-2,5)</m> and <m>(-7,-1)</m>? 
+            <ol marker= "A." cols="2">
+              <li> <m>\sqrt{11}</m> </li>
+              <li> <m> 7.8</m> </li>
+              <li> <m>3.3</m> </li>
+              <li> <m>\sqrt{61}</m> </li></ol></p>
+          </statement>
+              <answer>
+                B and D
+              </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Suppose the line segment <m>AB</m> has one endpoint, <m>A</m>, at the origin. For which coordinate of <m>B</m> would make the line segment <m>AB</m> the longest?
+                <ol marker= "A." cols="2">
+                  <li> <m>(3,7)</m> </li>
+                  <li> <m> (2,-8)</m> </li>
+                  <li> <m>(-6,4)</m> </li>
+                  <li> <m>(-5,-5)</m> </li></ol></p>
+          </statement>
+                  <answer>
+                    B
+                  </answer>
+          </task>
+    </activity>
+
+    <remark>
+      <p>
+        Notice in <xref ref="calculating-distance-practice"/>, you can give a distance in either exact form (leaving it with a square root) or as an approximation (as a decimal). Make sure you can give either form as sometimes one form is more useful than another!
+      </p>
+    </remark>
+    <remark>
+      <p> A <term>midpoint</term> refers to the point that is located in the middle of a line segment. In other words, the midpoint is the point that is halfway between the two endpoints of a given line segment.
+      </p>
+    </remark>
+
+    <activity
+    xml:id="finding-midpoint">
+    <introduction>
+      <p> Two line segments are shown in the graph below. Use the graph to answer the following questions:
+      </p>
+      <figure xml:id="two-line-segments"><image>
+      <sageplot>
+        A = point((8,2),size=40)+text('A',(8.1,2),horizontal_alignment="left", gridlines=[[2,3,4,5,6,7,8],[2,2.5,3,3.5,4,4.5,5,5.5,6]])
+        B = point((8,6),size=40)+text('B',(8.1,6),horizontal_alignment="left")
+        C = point ((2,2),size=40)+text('C',(2,2.1),horizontal_alignment="center")
+        L=line([(8,2),(2,2)],color="black")
+        M=line([(8,2),(8,6)],color="purple")
+        A+B+C+L+M
+      </sageplot>
+    </image></figure>
+    </introduction>
+    <task>
+      <statement>
+      <p> What is the midpoint of the line segment <m>AB</m>? 
+        <ol marker= "A." cols="2">
+          <li> <m>(16,4)</m> </li>
+          <li> <m>(8,4)</m> </li>
+          <li> <m>(8,8)</m> </li>
+          <li> <m>(10,2)</m> </li></ol></p>
+        </statement>
+          <answer>
+            B
+          </answer>
+      </task>
+      <task>
+        <statement>
+        <p> What is the midpoint of the line segment <m>AC</m>? 
+          <ol marker= "A." cols="2">
+            <li> <m>(6,0)</m> </li>
+            <li> <m>(4,4)</m> </li>
+            <li> <m>(6,4)</m> </li>
+            <li> <m>(5,2)</m> </li></ol></p>
+          </statement>
+            <answer>
+              D
+            </answer>
+        </task>
+        <task>
+          <statement>
+          <p> Suppose we connect the two endpoints of the two line segments together, to create the new line segment, <m>BC</m>. Can you make an educated guess to where the midpoint of <m>BC</m> is? 
+            <ol marker= "A." cols="2">
+              <li> <m>(10,8)</m> </li>
+              <li> <m> (6,4)</m> </li>
+              <li> <m>(5,4)</m> </li>
+              <li> <m>(5,2)</m> </li></ol></p>
+          </statement>
+              <answer>
+                C
+              </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                How can you test your conjecture? Is there a mathematical way to find the midpoint of any line segment?  
+              </p>
+            </statement>
+            <answer>
+              <p>
+                Not all students may get to the midpoint formula, but the idea is to get them in that general direction.
+              </p>
+            </answer>
+          </task>
+    </activity>
+
+    <definition xml:id="def-midpoint-formula">
+      <statement>
+        <p>
+          The midpoint of a line segment with endpoints <m> (x_{1},y_{1})</m> and <m> (x_{2}, y_{2})</m>, can be found by taking the average of the <m>x</m> and <m>y</m> values. Mathematically, the <term>midpoint formula</term> states that the midpoint of a line segment can be found by: <me>\left(\dfrac{x_{1}+x_{2}}{2},\dfrac{y_{1}+y_{2}}{2}\right)</me>
+      </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="calculating-midpoint-practice">
+      <introduction>
+        <p>
+          Apply <xref ref="def-midpoint-formula"/> to calculate the midpoint of the following line segments.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> What is the midpoint of the line segment with endpoints <m>(-4,5)</m> and <m>(-2,-3)</m>? 
+          <ol marker= "A." cols="2">
+            <li> <m>(3,1)</m> </li>
+            <li> <m>(-3,1)</m> </li>
+            <li> <m>(1,1)</m> </li>
+            <li> <m>(1,4)</m> </li></ol></p>
+        </statement>
+            <answer>
+              B
+            </answer>
+        </task>
+        <task>
+          <statement>
+        <p> What is the midpoint of the line segment with endpoints <m>(2,6)</m> and <m>(-6,-8)</m>? 
+          <ol marker= "A." cols="2">
+            <li> <m>(-3,-1)</m> </li>
+            <li> <m>(-2,0)</m> </li>
+            <li> <m>(-2,-1)</m> </li>
+            <li> <m>(4,7)</m> </li></ol></p>
+        </statement>
+            <answer>
+              C
+            </answer>
+        </task>
+        <task>
+          <statement>
+          <p> Suppose <m>C</m> is the midpoint of <m>AB</m> and is located at <m>(9,8)</m>. The coordinates of <m>A</m> are <m>(10,10)</m>. What are the coordinates of <m>B</m>?
+            <ol marker= "A." cols="2">
+              <li> <m>(9.5,9)</m> </li>
+              <li> <m>(11,12)</m> </li>
+              <li> <m>(18,16)</m> </li>
+              <li> <m>(8,6)</m> </li></ol></p>
+          </statement>
+              <answer>
+                D
+              </answer>
+          </task>
+    </activity>
+    
+    <activity xml:id="distance-and-midpoint-application">
+    <introduction>
+      <p>
+        On a map, your friend Sarah's house is located at <m>(-2, 5)</m> and your other friend Austin's house is at <m>(6,-2)</m>.
+      </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            How long is the direct path from Sarah's house to Austin's house?
+          </p>
+        </statement>
+          <answer>
+            <m>\sqrt{113}</m> or <m>10.6</m>
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           Suppose your other friend, Micah, lives in the middle between Sarah and Austin. What is the location of Micah's house on the map?
+          </p>
+        </statement>
+          <answer>
+            <m>(2,1.5)</m>
+          </answer>
+      </task>
+</activity>
+
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ3/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

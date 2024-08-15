@@ -1,0 +1,754 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="LF3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Graphs of Linear Equations (LF3) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/03.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    
+    <activity xml:id="activity-lf3-intro">
+      <introduction>
+        <p> 
+        </p> 
+      </introduction>
+    
+      <task>
+        <statement>
+          <p>
+            Draw a line that goes through the point <m>(1,4)</m>.
+          </p>
+            <image>
+              <sageplot>
+                p=point((1,4),pointsize=50,color='blue',ymin=-7, ymax=7, xmin=-5,xmax=5)
+              </sageplot>
+            </image> 
+        </statement>
+        <answer>
+        Many answers possible.
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Was this the only possible line that goes through the point <m>(1,4)</m>?
+  
+              <ol marker= "A.">  
+                <li> <p>Yes. The line is unique.</p>  </li>
+                <li> <p> No. There is exactly one more line possible.   </p> </li>
+                <li> <p> No. There are a lot of lines that go through <m>(1,4)</m>. </p> </li>
+                <li> <p>  No. There are an infinite number of lines that go through <m>(1,4)</m>.  </p> </li>
+              </ol>
+          </p>
+        </statement>
+        <answer>
+        <p>D </p> 
+        <p> (Though C is also true. D is just more descriptive.) </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now draw a line that goes through the points <m>(1,4)</m> and <m>(-3,-2)</m>.
+          </p>
+            <image>
+              <sageplot>
+                p=point([(1,4),(-3,-2)],pointsize=50,color='blue',ymin=-7, ymax=7, xmin=-5,xmax=5)
+              </sageplot>
+            </image> 
+        </statement>
+        <answer>
+        Just the one possible line.
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Was this the only possible line that goes through the points <m>(1,4)</m> and <m>(-3,-2)</m>?
+  
+              <ol marker= "A.">  
+                <li> <p>Yes. The line is unique.</p>  </li>
+                <li> <p> No. There is exactly one more line possible.   </p> </li>
+                <li> <p> No. There are a lot of lines that go through <m>(1,4)</m> and <m>(-3,-2)</m>. </p> </li>
+                <li> <p>  No. There are an infinite number of lines that go through <m>(1,4)</m> and <m>(-3,-2)</m>.  </p> </li>
+              </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>A </p> 
+          <p> (Discussion could include that we would have to make the line curve to connect the points in more than one way. But, a line has to have the same slope everywhere.) </p>
+          </answer>
+      </task>   
+    </activity>
+
+    <observation>
+      <p>
+        If you are given two points, then you can always graph the  line containing them by plotting them and connecting them with a line. 
+      </p>
+    </observation>
+
+    <activity xml:id="activity-lf3-two-points-dif-ways">
+      <introduction>
+        <p> 
+        </p> 
+      </introduction>
+    
+      <task>
+        <statement>
+          <p>
+            Graph the line containing the points <m>(-7,1)</m> and <m>(6,-2)</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = (-3/13*(x+7)+1)
+                p=point({(-7,1),(6,-2)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Graph the line containing the points <m>(-3,0)</m> and <m>(0,8)</m>. 
+          </p>  
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = ((8/3)*x+8)
+                p=point({(-3,0),(0,8)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Graph the line given by the table below.
+            
+              <tabular halign="right">
+                <row header="yes" bottom="minor" >
+                  <cell> <m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m>-3</m></cell>
+                  <cell><m>-12</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>-9</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>-6</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>-3</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>3</m></cell>
+                </row>
+              </tabular>
+            
+            
+             
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = 3*x-3
+                p=point({(-3,-12),(-2,-9),(-1,-6),(0,-3),(1,0),(2,3)},pointsize=50,color='blue')
+                p+=plot(f, (x, -12, 12), ymin=-12, ymax=12, color='blue', thickness=3, gridlines=[[-12,-11,..,12],[-12,-11,..,12]])                
+                p
+              </sageplot>
+            </image>
+          </p>
+        </answer>
+      </task> 
+
+      <task>
+        <statement>
+          <p>
+            Let's say you are given a table that listed six points that are on the same line. How many of those points are necessary to use to graph the line?
+
+            <ol marker= "A.">  
+              <li> <p>One point is enough.</p>  </li>
+              <li> <p>Two points are enough.</p>  </li>
+              <li> <p>Three points are enough.</p>  </li>
+              <li> <p>You need to plot all six points.</p>  </li>
+              <li> <p>You can use however many you want.</p>  </li>
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>B </p> 
+          <p>Discussion could include pointing out that only two are <em>necessary</em>, but we can include more if we want. Also, including more is a good way to catch an error in plotting. One will stick out! </p>
+          </answer>
+      </task>
+
+
+    </activity>
+
+    </subsection>
+
+    <remark>
+      <p>
+        In <xref ref="activity-lf3-two-points-dif-ways"/>, we were given at least two points in each question. However, sometimes we are not directly given two points to graph a line. Instead we are given some combination of characteristics about the line that will help us <em>find</em> two points. These characteristics could include a point, the intercepts, the slope, or an equation.
+      </p>
+    </remark>
+
+    <activity xml:id="activity-lf3-slope-intercept">
+      <introduction>
+        <p> A line has a slope of <m>-\dfrac{1}{3}</m> and its <m>y</m>-intercept is <m>4</m>.
+        </p> 
+      </introduction>
+    
+      
+      <task>
+        <statement>
+          <p>
+            We were given the <m>y</m>-intercept. What point does that correspond to?
+
+            <ol marker= "A.">  
+              <li> <m>(4,0)</m> </li>
+              <li> <m>(0,4)</m> </li>
+              <li> <m>\left(4,-\dfrac{1}{3}\right)</m> </li>
+              <li> <m>\left(-\dfrac{1}{3},4\right)</m> </li>
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>B </p> 
+          </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+           After we plot the <m>y</m>-intercept, how can we use the slope to find another point?
+
+            <ol marker= "A.">  
+              
+              <li> Start at the <m>y</m>-intercept, then move up one space and to the left three spaces to find another point.  </li>
+              <li> Start at the <m>y</m>-intercept, then move up one space and to the right three spaces to find another point.  </li>
+              <li> Start at the <m>y</m>-intercept, then move down one space and to the left three spaces to find another point.  </li>
+              <li> Start at the <m>y</m>-intercept, then move down one space and to the right three spaces to find another point.  </li>
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>A and D </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Graph the line that has a slope of <m>-\dfrac{1}{3}</m> and its <m>y</m>-intercept is <m>4</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+                f(x) = ((-1/3)*x+4)
+                p=point({(0,4)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image>
+          </p>
+        </answer>
+      </task>
+
+     
+    </activity>
+
+    <activity xml:id="activity-lf3-slope-intercept-eq">
+      <introduction>
+        <p> A line is given by the equation <m>y=-2x+5</m>.
+        </p> 
+      </introduction>
+    
+      
+      <task>
+        <statement>
+          <p>
+           What form is the equation given in?
+
+            <ol marker= "A.">  
+              <li> Standard form </li>
+              <li> Point-slope form </li>
+              <li> Slope-intercept form  </li>
+              <li> The form it is in doesn't have a name.</li>
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>C </p> 
+          </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+          The form gives us one point right away: the <m>y</m>-intercept. Which of the following is the <m>y</m>-intercept?
+            <ol marker= "A.">  
+              
+              <li> <m>(-2,0)</m>  </li>
+              <li> <m>(0,-2)</m>  </li>
+              <li> <m>(5,0)</m>  </li>
+              <li> <m>(0,5)</m>  </li>
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>D </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          After we plot the <m>y</m>-intercept, we can use the slope to find another point. Find another point and graph the resulting line.
+          </statement>
+          <answer>
+            <p>
+              <image>
+                <sageplot>
+                  f(x) = ((-2)*x+5)
+                  p=point({(0,5)},pointsize=50,color='blue')
+                  p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                  p
+                </sageplot>
+              </image>
+            </p>
+          </answer>
+      </task>
+      
+
+     
+    </activity>
+
+    <activity xml:id="activity-lf3-point-slope">
+          <statement>
+          <p> A line contains the point <m>(-3,-2)</m> and has slope <m>\dfrac{1}{5} </m>. Which of the following is the graph of that line?
+          </p> 
+          <ol marker= "A." cols="2">  
+            <li> <image>
+              <sageplot>
+                f(x) = (-.2*(x+3)-2)
+                p=point({(-3,-2),(2,-3)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image> </li>
+            <li> <image>
+              <sageplot>
+                f(x) = (.2*(x+3)-2)
+                p=point({(-3,-2),(2,-1)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image> </li>
+            <li> <image>
+              <sageplot>
+                f(x) = (5*(x+3)-2)
+                p=point({(-3,-2),(-2,3)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image> </li>
+            <li> <image>
+              <sageplot>
+                f(x) = (-5*(x+3)-2)
+                p=point({(-3,-2),(-2,-7)},pointsize=50,color='blue')
+                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                p
+              </sageplot>
+            </image> </li>
+          </ol>
+        </statement>
+        <answer>
+          <p>B </p> 
+          </answer>
+     
+      
+    
+
+
+     
+    </activity>
+
+    <activity xml:id="activity-lf3-point-slope-eq">
+      <introduction>
+        <p> A line is given by the equation <m>y-6=-4(x+2)</m>.
+        </p> 
+      </introduction>
+    
+      
+      <task>
+        <statement>
+          <p>
+           What form is the equation given in?
+
+            <ol marker= "A.">  
+              <li> Standard form </li>
+              <li> Point-slope form </li>
+              <li> Slope-intercept form  </li>
+              <li> The form it is in doesn't have a name.</li>
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>B </p> 
+          </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+          The form gives us one point right away. Which of the following is a point on the line?
+            <ol marker= "A.">  
+              
+              <li> <m>(-2,-6)</m>  </li>
+              <li> <m>(-2,6)</m>  </li>
+              <li> <m>(2,-6)</m>  </li>
+              <li> <m>(2,6)</m>  </li>
+              
+            </ol>
+          </p>  
+        </statement>
+        <answer>
+          <p>B </p> 
+          </answer>
+      </task>
+      
+      <task>
+        <statement>
+          After we plot this point, we can use the slope to find another point. Find another point and graph the resulting line.
+          </statement>
+          <answer>
+            <p>
+              <image>
+                <sageplot>
+                  f(x) = ((-4)*(x+2)+6)
+                  p=point({(-2,6)},pointsize=50,color='blue')
+                  p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+                  p
+                </sageplot>
+              </image>
+            </p>
+          </answer>
+      </task>
+   </activity>
+
+   <activity xml:id="activity-lf3-horiz-vert">
+    <introduction>
+      <p> Recall from <xref ref="def-hor-vert-lines"/> that the equation of a horizontal line has the form <m>y=k</m> where <m>k</m> is a constant and a vertical line has the form <m>x=h</m> where <m>h</m> is a constant.
+      </p> 
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Which type of line has a slope of zero?
+          <ol marker= "A.">  
+            <li> <p>Horizontal</p>  </li>
+            <li> <p>Vertical</p>  </li>
+                     
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Which type of line has an undefined slope?
+          <ol marker= "A.">  
+            <li> <p>Horizontal</p>  </li>
+            <li> <p>Vertical</p>  </li>
+                     
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+  <task>
+    <statement>
+      <p>
+        Graph the vertical line that goes through the point <m>(4,-2)</m>.
+      </p>
+    </statement>
+    <answer>
+      <p> <image>
+        <sageplot>
+          f(x) = (7/2*(x)+7)
+          p=point({(4,-2)},pointsize=50,color='blue')
+          p+=line([(4,-8),(4,8)], xmin=-8, xmax=8, ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+          p
+        </sageplot>
+      </image> </p> 
+      </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the equation of the vertical line through the point <m>(4,-2)</m>?
+        <ol marker= "A.">  
+          <li> <m>x=4</m> </li>
+          <li> <m>y=4</m> </li>
+          <li> <m>x=-2</m> </li>
+          <li> <m>y=-2</m> </li>        
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Graph the horizontal line that goes through the point <m>(4,-2)</m>.
+      </p>
+    </statement>
+    <answer>
+      <p> <image>
+        <sageplot>
+          f(x) = -2
+          p=point({(4,-2)},pointsize=50,color='blue')
+          p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+          p
+        </sageplot>
+      </image> </p> 
+      </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the equation of the horizontal line through the point <m>(4,-2)</m>?
+        <ol marker= "A.">  
+          <li> <m>x=4</m> </li>
+          <li> <m>y=4</m> </li>
+          <li> <m>x=-2</m> </li>
+          <li> <m>y=-2</m> </li>        
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+  </task>
+    </activity>
+
+    <activity xml:id="activity-lf3-fluency">
+      <introduction>
+        <p> Graph each line described below.
+        </p> 
+      </introduction>
+      <task>
+        <statement>
+          <p>
+           The line containing the points <m>(-3,4)</m> and <m>(5,-2)</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (-3/4*(x+3)+4)
+              p=point({(-3,4),(5,-2)},pointsize=50,color='blue')
+              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The line whose <m>x</m>-intercept is <m>-2</m> and whose <m>y</m>-intercept is <m>7</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (7/2*(x)+7)
+              p=point({(-2,0),(0,7)},pointsize=50,color='blue')
+              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The line whose slope is <m>\dfrac{2}{5}</m> that goes through the point <m>(4,6)</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (2/5*(x-4)+6)
+              p=point({(4,6)},pointsize=50,color='blue')
+              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The line whose slope is <m>-\dfrac{1}{3}</m> and whose <m>y</m>-intercept is <m>-4</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (-1/3*(x)-4)
+              p=point({(0,-4)},pointsize=50,color='blue')
+              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The vertical line through the point <m>(-2,-7)</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              p=point({(-2,-7)},pointsize=50,color='blue')
+              p+=line([(-2,-8),(-2,8)], xmin=-8,xmax=8,ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The horizontal line through the point <m>(-6,3)</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p>  <image>
+            <sageplot>
+              f(x) = 3
+              p=point({(-6,3)},pointsize=50,color='blue')
+              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The line with equation <m>y=-\dfrac{5}{3}x-6</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (-5/3*x-6)
+              p=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The line with equation <m>y-5=\dfrac{7}{2}(x-2)</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (7/2*(x-2)+5)
+              p=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+           The line with equation <m>3x-6y=8</m>.
+          </p>  
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (1/2*x-(4/3))
+              p=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
+              p
+            </sageplot>
+          </image> </p> 
+          </answer>
+      </task>
+      </activity>
+
+
+
+      <exercises>
+        <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/LF3/"/>. </p> 
+      </exercises>
+  
+      <!-- <subsection>
+          <title>Videos</title>
+          <p>It would be great to include videos down here, like in the Calculus book!</p>
+      </subsection> -->
+</section>

@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PR5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Zeros of Polynomial Functions (PR5) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/05.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+      <title>Activities</title>
+      <introduction>
+        <remark xml:id="x-intercepts">
+         
+  <statement><p> Recall that to find the <m>x</m>-intercepts of a function <m>f(x)</m>, we need to find the values of <m>x</m> that make <m>f(x)=0</m>. We saw in <xref ref="EQ5"/> that the zero product property (<xref ref="def-zero-product-property"/>) was helpful when <m>f(x)</m> is a polynomial that we can factor. Let's consider how we approach polynomials which are not in factored form or easily factorable.
+              </p>
+  </statement></remark></introduction>
+      <activity xml:id="motivate-remainder-theorem">
+        <introduction>
+          <p>
+            Consider the function <m>f(x)=x^3 - 7 x^2 + 7 x + 15</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Use polynomial division from <xref ref="PR4"/> to divide <m>f(x)</m> by <m>x-2</m>. What is the remainder?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>9</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Find <m>f(2)</m>. What do you notice?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(2)=9</m> Remainder and value are the same
+            </p>
+          </answer>
+        </task>
+      </activity>
+      
+      <theorem xml:id="thm-remainder">
+        <title>Remainder Theorem</title> 
+        <statement> 
+          <p> If a polynomial <m>p(x)</m> is divided by <m>x-a</m> then the remainder is equal to <m>p(a)</m>.</p>
+        </statement>
+      </theorem>
+      <activity xml:id="motivate-factor-theorem">
+        <introduction>
+          <p>
+            Again consider the function <m>f(x)=x^3 - 7 x^2 + 7 x + 15</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Divide <m>f(x)</m> by <m>x-3</m>. What is the remainder?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>0</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Find <m>f(3)</m>. What do you notice?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(3)=0</m> When value is 0 there is no remainder
+            </p>
+          </answer>
+        </task>
+      </activity>
+      
+      <theorem xml:id="thm-factor-theorem">
+        <title>Factor Theorem</title> 
+        <statement> 
+          <p> A number <m>a</m> is a zero of a polynomial function <m>p(x)</m> (that is, <m>p(a)=0</m>) if and only if 
+             <m>x-a</m>  is a factor of <m>p(x)</m>.</p>
+        </statement>
+      </theorem>
+
+      <remark xml:id="remark-divide-to-find-zeros">
+        If we know one zero, then we can divide by <m>x-a</m> where <m>a</m> is a zero. After this, the quotient will have smaller degree and we can work on factoring the rest. We can “chip away” at the polynomial one zero at a time.
+      </remark>
+
+      <activity xml:id="motivate-factor-fully">
+        <introduction>
+          <p>
+            One more time consider the function <m>f(x)=x^3 - 7 x^2 + 7 x + 15</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              We already know from <xref ref="motivate-factor-theorem"/> that <m>x-3</m> is a factor of the polynomial <m>f(x)</m>. Use division to express <m>f(x)</m> as <m>(x-3)\cdot q(x)</m>, where <m>q(x)</m> is a quadratic function.
+            </p>
+            <ol marker= "A.">
+              <li> <m>q(x)=x^2-2x-3</m></li>
+              <li> <m>q(x)=x^2-10x-37</m></li>
+              <li> <m>q(x)=x^2-4x-5</m></li>
+              <li> <m>q(x)=x^2+4x-5</m></li>
+            </ol>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Notice that <m>q(x)</m> is something we can factor.  Factor this quadratic and find the remaining zeros.
+            </p>
+            <ol marker= "A.">
+              <li> <m>-5</m></li>
+              <li> <m>5</m></li>
+              <li> <m>4</m></li>
+              <li> <m>-1</m></li>
+              <li> <m>3</m></li>
+              <li> <m>1</m></li>
+            </ol>
+          </statement>
+          <answer>
+            <p>
+              B and F
+            </p>
+          </answer>
+        </task>
+      </activity>
+    
+      <remark xml:id="remark-intro-rational-root">
+        We were able to find all the zeros of the polynomial in <xref ref="motivate-factor-fully"/> because we were given one of the zeros. If we don't have a zero to help us get started (or need more than one zero for a function of higher degree), we have a couple of options.
+      </remark>
+
+      <activity xml:id="motivate-rational-root">
+        <introduction>
+          <p>
+            Consider the function <m>f(x) = 18 x^4 + 67 x^3 - 81 x^2 - 202 x + 168</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Graph the function. According to the graph, what value(s) seem to be zeros?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-4</m> and <m>-2</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Use the Remainder Theorem to confirm that your guesses are actually zeros.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>f(-4)=0</m> and <m>f(-2)=0</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Now use these zeros along with polynomial division to rewrite the function as <m>f(x)=(x-a)(x-b)q(x)</m> where <m>a</m> and <m>b</m> are zeros and <m>q(x)</m> is the remaining quadratic function.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>(x+4)(x+2)(18x^2-41x+21)</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Solve the quadratic <m>q(x)</m> to find the remaining zeros.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\dfrac{3}{2}</m> and <m>\dfrac{7}{9}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              List all zeros of <m>f(x)</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-4, -2, \dfrac{7}{9}, \dfrac{3}{2}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Rewrite <m>f(x)</m> as a product of linear factors.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>(x+4)(x+2)(2x-3)(9x-7)</m>
+            </p>
+          </answer>
+        </task>
+        
+      </activity>
+
+      <remark>
+        Using the graph to find an initial zero can be helpful, but they may not always be easy to identify.
+      </remark>
+
+   <activity xml:id="quad-rational-root">
+    <introduction>
+      <p>
+        Consider the quadratic function <m>f(x)=(2x-5)(3x-8)=6x^2-31x+40</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          What are the roots of this quadratic?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{5}{2}</m> and <m>\dfrac{8}{3}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What do you notice about these roots in relation to the factors of <m>a=6</m> and <m>c=40</m> in <m>f(x)=6x^2-31x+40</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The numerator is a factor of <m>c</m> and the denominator is a factor of <m>a</m>.
+        </p>
+      </answer>
+    </task>
+   </activity>
+   
+   <remark>
+    In <xref ref="quad-rational-root"/> we found that the roots were both factors of the constant term divided by factors of the leading coefficient.  This can be extended to polynomials of larger degree.
+   </remark>
+   <theorem xml:id="thm-rational-root">
+   <title>Rational Root Theorem</title>
+    <statement>
+      <p>
+        If a polynomial <m>p(x)=a_nx^n+x_{n-1}x^{n-1}+\cdots +a_1x+a_0 </m> has integer coefficients, then the rational zeros have the form <m>\dfrac{p}{q}</m> where <m>p</m> is a factor of the constant term <m>a_0</m> and <m>q</m> is a factor of the leading coefficient <m>a_n</m>.
+      </p>
+    </statement>
+   </theorem>
+   
+   <activity xml:id="practice-rational-root">
+    <introduction>
+      <p>
+        Consider the polynomial <m>f(x)=5x^3-2x^2+20x-8</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          List the factors of the constant term.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pm 8, \pm 4, \pm 2 \pm 1</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          List the factors of the leading coefficient.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pm 5, \pm 1</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use parts (a) and (b) to list all the possible rational roots.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pm 8, \pm 4, \pm 2 \pm 1, \pm \dfrac{8}{5}, \pm \dfrac{4}{5}, \pm \dfrac{2}{5}, \pm \dfrac{1}{5}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use the Remainder Theorem to determine at least one root of <m>f(x)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{2}{5}</m>
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <activity xml:id="factor-fully">
+    <introduction>
+      <p>
+        Consider the polynomial <m>f(x)=6x^4+5x^3-6x-5</m>
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Use the graph and the Rational Root Theorem (<xref ref="thm-rational-root"/>) to find the rational zeros of <m>f(x)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>1</m> and <m>-\dfrac{5}{6}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use the roots, along with the Factor Theorem, to simplify the polynomial into linear and quadratic factors.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(6x+5)(x-1)(x^2+x+1)</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find the zeros of the quadratic factor.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-1\pm \sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          List the roots of the polynomial.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-1+ \sqrt{3}}{2}, \dfrac{-1- \sqrt{3}}{2}, 1, </m> and <m>-\dfrac{5}{6}</m>
+        </p>
+      </answer>
+    </task>
+   </activity>
+<remark>
+  Notice that the zeros of the quadratic factor were imaginary and are related. This also occured in <xref ref="quadratic-formula-imaginary"/>.
+</remark>
+
+<theorem>
+  <title>Conjugate Zeros Theorem</title> 
+  <statement> 
+    <p> Let <m>p(x)</m> be a polynomial function with real coefficients. If <m>a+bi</m>, is a complex zero of the function, 
+      then the conjugate <m>a-bi</m> is also a zero of the function. 
+      These two zeroes are called <term>conjugate zeros</term>, or a <term>conjugate pair of zeros</term>.
+  </p>
+  </statement>
+</theorem>
+
+<activity xml:id="poly-degree-4">
+  <introduction>
+  <p>Consider the function <m>f(x)=x^5+3x^4+4x^3+8x^2-16</m>.  </p>
+  </introduction>
+  <task>
+  <statement>
+  <p>Use a graphing utility to graph <m>f(x)</m>.</p>
+  </statement>
+  <answer>
+  <image>
+    <sageplot>
+      f(x)=x^5+3*x^4+4*x^3+8*x^2-16
+      p=plot(f, xmin=-5,xmax=5,ymin=-20,ymax=10,color="blue",thickness=3,gridlines=[[-5..5],[-20..10]])
+      p+=text("$f(x)$",(3,3),color="blue",fontsize=20)
+      p
+      </sageplot>
+      </image>
+      </answer>
+  </task>
+  <task>
+    <statement>
+  <p>Find <em>all</em> the zeros of <m>f(x)</m> and their corresponding multiplicities.</p>
+  </statement>
+  <answer>
+    <p><m>f(x)</m> has zeros at <m>-2</m>, <m>1</m>, <m>-2i</m>, and <m>2i</m>, all of multiplicity 1 except <m>-2</m> has multiplicity 2</p>
+    </answer>
+  </task>
+</activity>     
+
+<activity xml:id="poly-create">
+  <introduction>
+    <p>Consider the following information about a polynomial <m>f(x)</m>:</p>
+      <ul>
+        <li><m>x=2</m> is a zero with multiplicity <m>1</m></li>
+        <li><m>x=-1</m> is a zero with multiplicity <m>2</m></li>
+        <li><m>x=i</m> is a zero with multiplicity <m>1</m></li>
+      </ul>
+    </introduction>
+    <task>
+      <statement>
+        <p>What is the smallest possible degree of such a polynomial <m>f(x)</m> with real coefficients?</p>
+        <ol marker="A.">
+          <li><m>2</m></li>
+          <li><m>3</m></li>
+          <li><m>4</m></li>
+          <li><m>5</m></li>
+          <li><m>6</m></li>
+        </ol>
+      </statement>
+      <answer><p>D</p></answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+       Write an expression for such a polynomial  <m>f(x)</m> with real coefficients of smallest possible degree. 
+        </p>
+      </statement>
+    <answer>
+      <p><m>f(x)=(x-2)(x-1)^2(x^2+1)=x^5-4x^4+6x^3-6x^2+5x-2</m> is one such polynomial.</p>
+      </answer>
+      </task>
+  </activity> 
+
+
+    </subsection>
+    
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR5/"/>. </p> 
+    </exercises>
+    
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>
