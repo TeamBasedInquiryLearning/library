@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section xml:id="AT1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Linear Transformations (AT1)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/01.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+
+<subsection>
+  <title>Warm Up</title>
+  <activity>
+    <task>
+      <statement>
+        <p>
+          What is our definition for a set <m>S</m> of vectors to be linearly independent?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What specific calculation would you perform to test is a set <m>S</m> of Euclidean vectors is linearly independent?
+        </p>
+      </statement>
+    </task>
+  </activity>
+  <activity>
+    <task>
+      <statement>
+        <p>
+          What is our definition for a set <m>S</m> of vectors in <m>\IR^n</m> to span <m>\IR^n</m> ?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What specific calculation would you perform to test is a set <m>S</m> of Euclidean vectors spans all of <m>\IR^n</m> ?
+        </p>
+      </statement>
+    </task>
+  </activity>
+</subsection>
+<subsection><title>Class Activities</title>
+
+<definition xml:id="AT1-definition-map">
+    <statement>
+        <p>
+A <term>linear transformation</term> <idx>linear transformation</idx>(also called a <term>linear map</term>)
+is a map between vector spaces that preserves the vector space operations.
+More precisely, if <m>V</m> and <m>W</m> are vector spaces, a map
+<m>T:V\rightarrow W</m> is called a linear transformation if
+<ol>
+<li>
+    <p>
+    <m>T(\vec{v}+\vec{w}) = T(\vec{v})+T(\vec{w})</m>
+      for any <m>\vec{v},\vec{w} \in V</m>, and
+    </p>
+</li>
+<li>
+    <p>
+    <m>T(c\vec{v}) = cT(\vec{v})</m>
+        for any <m>c \in \IR,</m> and <m>\vec{v} \in V</m>.
+    </p>
+</li>
+</ol>
+In other words, a map is linear when vector space operations
+can be applied before or after the transformation without affecting the result.
+        </p>
+    </statement>
+</definition>
+
+<definition xml:id="AT1-definition-domain">
+    <statement>
+        <p>
+Given a linear transformation <m>T:V\to W</m>,
+<m>V</m> is called the <term>domain</term> of <m>T</m> and
+<m>W</m> is called the <term>co-domain</term> of <m>T</m>.
+        </p>
+    <figure>
+    <caption>A linear transformation with a domain of <m>\IR^3</m> and a co-domain of <m>\IR^2</m></caption>
+		<image width="75%" xml:id="AT1-image-domain-codomain">
+			<latex-image>
+\begin{tikzpicture}[x=0.2in,y=0.2in]
+  \begin{scope}[shift={(0,0)}]
+    \draw (0,0) -- (3,0);
+    \draw (0,0) -- (0,3);
+    \draw (0,0) -- (-2,-1);
+    \draw[thick,-latex,blue] (0,0) -- (2,1)
+          node[anchor=south west] {\(\vec v\)};
+    \node[anchor=west] at (-1,-1) {domain \(\IR^3\)};
+  \end{scope}
+  \draw[dashed,-latex] (3,3) to [bend left=30] (7,3);
+  \node[anchor=south] at (5,4) {Linear transformation \(T:\IR^3\to\IR^2\)};
+  \begin{scope}[shift={(9,0.5)}]
+    \draw (-2,0) -- (2,0);
+    \draw (0,-2) -- (0,2);
+    \draw[thick,-latex,red] (0,0) -- (-1.5,1)
+          node[anchor=south east] {\(T(\vec v)\)};
+    \node[anchor=west] at (0,-1) {co-domain \(\IR^2\)};
+  \end{scope}
+\end{tikzpicture}
+			</latex-image>
+		</image>
+    </figure>
+    </statement>
+</definition>
+
+<observation>
+        <p>
+One example of a linear transformation <m>\IR^3\to\IR^2</m>
+is the projection of three-dimesional data onto a two-dimensional screen,
+as is necessary for computer animiation in film or video games.
+        </p>
+    <figure xml:id="figure-teapot-projection">
+    <caption>A projection of a <m>3D</m> teapot onto a <m>2D</m> screen</caption>
+		<image source="teapot.png" xml:id="AT1-image-teapot"/>
+    </figure>
+</observation>
+
+<activity>
+  <introduction>
+  <p>
+Let <m>T : \IR^3 \rightarrow \IR^2</m> be given by
+<me>
+T\left(\left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)
+=
+\left[\begin{array}{c} x-z \\ 3y \end{array}\right].
+</me>
+  </p>
+</introduction>
+<task>
+  <p>
+Compute the result of adding vectors before a <m>T</m> transformation:
+<me>
+T\left(
+  \left[\begin{array}{c} x \\ y \\ z \end{array}\right] +
+  \left[\begin{array}{c} u \\ v \\ w \end{array}\right]
+\right)
+=
+T\left(
+  \left[\begin{array}{c} x+u \\ y+v \\ z+w \end{array}\right]
+\right)
+</me>
+<ol marker="A." cols="2">
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x-u+z-w \\ 3y-3v \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x+u-z-w \\ 3y+3v \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x+u \\ 3y+3v \\ z+w \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x-u \\ 3y-3v \\ z-w \end{array}\right]</m>
+  </p>
+</li>
+</ol>
+</p>
+</task>
+<task>
+<p>
+Compute the result of adding vectors after a <m>T</m> transformation:
+<me>
+T\left(
+  \left[\begin{array}{c} x \\ y \\ z \end{array}\right]
+\right) + T\left(
+  \left[\begin{array}{c} u \\ v \\ w \end{array}\right]
+\right)
+=
+\left[\begin{array}{c} x-z \\ 3y \end{array}\right] +
+\left[\begin{array}{c} u-w \\ 3v \end{array}\right]
+</me>
+<ol marker="A." cols="2">
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x-u+z-w \\ 3y-3v \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x+u-z-w \\ 3y+3v \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x+u \\ 3y+3v \\ z+w \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x-u \\ 3y-3v \\ z-w \end{array}\right]</m>
+  </p>
+</li>
+</ol>
+</p>
+</task>
+<task>
+<p>
+Is <m>T</m> a linear transformation? 
+<ol marker="A.">
+<li>
+  <p>
+    Yes.
+  </p>
+</li>
+<li>
+  <p>
+    No.
+  </p>
+</li>
+<li>
+  <p>
+    More work is necessary to know.
+  </p>
+</li>
+</ol>
+</p>
+</task>
+<task>
+<p>
+  Compute the result of scalar multiplcation before a <m>T</m> transformation:
+<me>
+T\left(c\left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)
+=
+T\left(\left[\begin{array}{c} cx \\ cy \\ cz \end{array}\right] \right)
+</me>
+<ol marker="A." cols="2">
+<li>
+  <p>
+    <m>\left[\begin{array}{c} cx-cz\\ 3cy \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} cx+cz \\ -3cy \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x+c \\ 3y+c \\ z+c \end{array}\right]</m>
+  </p>
+</li>
+<li>
+  <p>
+    <m>\left[\begin{array}{c} x-c \\ 3y-c \\ z-c \end{array}\right]</m>
+  </p>
+</li>
+</ol>
+  </p>
+</task>
+<task>
+  <p>
+    Compute the result of scalar multiplcation after a <m>T</m> transformation:
+<me>
+  cT\left(\left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)
+=
+  c\left[\begin{array}{c} x-z \\ 3y \end{array}\right]
+</me>
+<ol marker="A." cols="2">
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} cx-cz\\ 3cy \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} cx+cz \\ -3cy \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} x+c \\ 3y+c \\ z+c \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} x-c \\ 3y-c \\ z-c \end{array}\right]</m>
+    </p>
+  </li>
+</ol>
+    </p>
+  </task>
+<task>
+  <p>
+Is <m>T</m> a linear transformation? 
+<ol marker="A.">
+  <li>
+    <p>
+      Yes.
+    </p>
+  </li>
+  <li>
+    <p>
+      No.
+    </p>
+  </li>
+  <li>
+    <p>
+      More work is necessary to know.
+    </p>
+  </li>
+</ol>
+  </p>
+</task>
+</activity>
+
+<activity>
+    <introduction>
+    <p>
+Let <m>S : \IR^2 \rightarrow \IR^4</m> be given by
+<me>
+  S\left(\left[\begin{array}{c} x \\ y \end{array}\right] \right)
+=
+  \left[\begin{array}{c} x+y \\ x^2 \\ y+3 \\ y-2^x \end{array}\right]
+</me>
+    </p>
+  </introduction>
+  <task>
+    <p>
+Compute
+<me>
+  S\left(
+    \left[\begin{array}{c} 0 \\ 1 \end{array}\right] +
+    \left[\begin{array}{c} 2 \\ 3 \end{array}\right]
+  \right)
+=
+  S\left(
+    \left[\begin{array}{c} 2 \\ 4 \end{array}\right]
+  \right)
+</me>
+<ol marker="A." cols="4">
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} 6 \\ 4 \\ 7 \\ 0 \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} -3 \\ 0 \\ 1 \\ 5 \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} -3 \\ -1 \\ 7 \\ 5 \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} 6 \\ 4 \\ 10 \\ -1 \end{array}\right]</m>
+    </p>
+  </li>
+</ol>
+</p>
+</task>
+<task>
+  <p>
+Compute
+<me>
+  S\left(
+    \left[\begin{array}{c} 0 \\ 1 \end{array}\right]
+  \right) + S\left(
+    \left[\begin{array}{c} 2 \\ 3 \end{array}\right]
+  \right)
+=
+  \left[\begin{array}{c} 0+1 \\ 0^2 \\ 1+3 \\ 1-2^0 \end{array}\right] +
+  \left[\begin{array}{c} 2+3 \\ 2^2 \\ 3+3 \\ 3-2^2 \end{array}\right]
+</me>
+<ol marker="A." cols="4">
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} 6 \\ 4 \\ 7 \\ 0 \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} -3 \\ 0 \\ 1 \\ 5 \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} -3 \\ -1 \\ 7 \\ 5 \end{array}\right]</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\left[\begin{array}{c} 6 \\ 4 \\ 10 \\ -1 \end{array}\right]</m>
+    </p>
+  </li>
+</ol>
+</p>
+</task>
+<task>
+  <p>
+Is <m>T</m> a linear transformation? 
+<ol marker="A.">
+  <li>
+    <p>
+      Yes.
+    </p>
+  </li>
+  <li>
+    <p>
+      No.
+    </p>
+  </li>
+  <li>
+    <p>
+      More work is necessary to know.
+    </p>
+  </li>
+</ol>
+  </p>
+</task>
+</activity>
+
+<!-- <fact>
+    <statement>
+        <p>
+A map between Euclidean spaces <m>T:\IR^n\to\IR^m</m> is linear
+exactly when every component of the output is a linear combination
+of the variables of <m>\IR^n</m>.
+        </p>
+        <p>
+For example, the following map is definitely linear
+because <m>x-z</m> and <m>3y</m> are linear combinations of <m>x,y,z</m>:
+<me>
+  T\left(\left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)
+=
+  \left[\begin{array}{c} x-z \\ 3y \end{array}\right]
+=
+  \left[\begin{array}{c} 1x+0y-1z \\ 0x+3y+0z \end{array}\right]
+</me>.
+        </p>
+        <p>
+But the map below is not linear because <m>x^2</m>, <m>y+3</m>, and <m>y-2^x</m>
+are not linear combinations (even though <m>x+y</m> is):
+<me>
+  S\left(\left[\begin{array}{c} x \\ y \end{array}\right] \right)
+=
+  \left[\begin{array}{c} x+y \\ x^2 \\ y+3 \\ y-2^x \end{array}\right]
+</me>.
+        </p>
+    </statement>
+</fact> -->
+
+<!-- <activity estimated-time='5'>
+    <statement>
+        <p>
+  Let <m>D:\P\to\P</m>
+  be the derivative map defined by <m>D(f(x))=f'(x)</m> for each
+  polynomial <m>f \in \P</m>. We recall from calculus that
+        </p>
+  <me>
+    D(f(x)+g(x))=f'(x)+g'(x)
+  </me>, and
+  <me>
+    D(cf(x))=cf'(x)
+  </me>.
+        <p>
+  Which of the following can we conclude from these calculus rules?
+        </p>
+  <ol marker="A." cols="2">
+<li>
+    <p>
+    <m>\P</m> is not a vector space
+    </p>
+    </li>
+<li>
+    <p>
+    <m>D</m> is a linear map
+    </p>
+    </li>
+<li>
+    <p>
+    <m>D</m> is not a linear map
+    </p>
+    </li>
+  </ol>
+    </statement>
+</activity> -->
+
+
+<!-- <activity estimated-time='10'>
+    <statement>
+        <p>
+Let the polynomial maps <m>S: \P_4 \rightarrow \P_3</m>
+and <m>T: \P_4 \rightarrow \P_3</m> be defined by
+<me>S(f(x)) = 2f'(x)-f''(x) \hspace{3em} T(f(x)) = f'(x)+x^3</me>.
+        </p>
+        <p>
+Compute <m>S(x^4+x)</m>, <m>S(x^4)+S(x)</m>, <m>T(x^4+x)</m>, and <m>T(x^4)+T(x)</m>. Based on these computations, can you conclude that either <m>S</m> or <m>T</m> is definitely <emph>not</emph> a linear transformation? 
+        </p>
+    </statement>
+</activity> -->
+
+<activity>
+    <statement>
+        <p>
+Fill in the <m>\unknown</m>s, assuming <m>T:\mathbb R^3\to\mathbb R^3</m> is linear:
+<me>
+  T\left(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\right)
+  = T\left(\unknown \left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\right)
+  = \unknown T\left(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\right)
+  = \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \end{array}\right]
+</me>
+        </p>
+    </statement>
+</activity>
+
+<!-- <fact>
+    <statement>
+        <p>
+If <m>L:V\to W</m> is a linear transformation, then <m>L(\vec z)=L(0\vec v)=0L(\vec v)=\vec z</m>
+where <m>\vec z</m> is the additive identity of the vector spaces <m>V,W</m>.
+        </p>
+        <p>
+Put another way, an easy way to prove that a map like
+<m>T(f(x)) = f'(x)+x^3</m> can not be linear is to check that 
+<me>T(0)=\frac{d}{dx}[0]+x^3=0+x^3=x^3\not=0.</me>
+        </p>
+    </statement>
+</fact> -->
+
+<remark>
+        <p>
+In summary, <em>any one</em> of the following is enough to
+prove that <m>T:V\to W</m> is <em>not</em> a linear transformation:
+<ul>
+  <li>
+    <p>
+Find specific values for <m>\vec v,\vec w\in V</m>
+such that <m>T(\vec v+\vec w)\not=T(\vec v)+T(\vec w)</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+Find specific values for <m>\vec v\in V</m> and <m>c\in \IR</m>
+such that <m>T(c\vec v)\not=cT(\vec v)</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+Show <m>T(\vec 0)\not=\vec 0</m>.
+    </p>
+  </li>
+</ul>
+</p>
+<p>
+If you cannot do any of these, then <m>T</m> can be proven to be a
+linear transformation by doing <em>both</em> of the following:
+<ol>
+  <li>
+    <p>
+For all <m>\vec v,\vec w\in V</m> (not just specific values), 
+<m>T(\vec v+\vec w)=T(\vec v)+T(\vec w)</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+For all <m>\vec v\in V</m> and <m>c\in \IR</m> (not just specific values),
+<m>T(c\vec v)=cT(\vec v)</m>.
+    </p>
+  </li>
+</ol>
+</p>
+        <p>
+(Note the similarities between this process and showing that a subset of a vector
+space is or is not a subspace: <xref ref="EV3-subspace-check"/>.)
+        </p>
+</remark>
+
+
+<activity>
+    <task>
+      <statement>
+        <p> Consider the following maps of Euclidean vectors <m>P:\mathbb R^3\rightarrow\mathbb R^3</m> and 
+          <m>Q:\mathbb R^3\rightarrow\mathbb R^3</m> defined by 
+          <me>P\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)= 
+            \left[\begin{array}{c} -2 \, x - 3 \, y - 3 \, z \\ 3 \, x + 4 \, y + 4 \, z \\ 3 \, x + 4 \, y + 5 \, z \end{array}\right] 
+            \hspace{1em} \text{and} \hspace{1em} Q\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)= 
+            \left[\begin{array}{c} x - 4 \, y + 9 \, z \\ y - 2 \, z \\ 8 \, y^{2} - 3 \, x z \end{array}\right].</me> 
+            Which do you <em>suspect</em>?
+            <ol marker="A." cols="2">
+              <li>
+                <p>
+                  <m>P</m> is linear, but <m>Q</m> is not.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>Q</m> is linear, but <m>P</m> is not.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Both maps are linear.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Neither map is linear.
+                </p>
+              </li>
+            </ol>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p> Consider the following map of Euclidean vectors <m>S:\mathbb R^2\rightarrow\mathbb R^2</m> <me>S\left( \left[\begin{array}{c} x \\ y \end{array}\right]\right)= \left[\begin{array}{c} x + 2 \, y \\ 9 \, x y \end{array}\right].</me> Prove that <m>S</m> <em>is not</em> a linear transformation. </p>
+      </statement>
+      <!-- <answer>
+        <p>Show that <m>T</m> fails to preserve either vector addition or scalar multiplication.</p>
+      </answer> -->
+    </task>
+    <task>
+      <statement>
+        <p> Consider the following map of Euclidean vectors <m>T:\mathbb R^2\rightarrow\mathbb R^2</m> <me>T\left( \left[\begin{array}{c} x \\ y \end{array}\right] \right)= \left[\begin{array}{c} 8 \, x - 6 \, y \\ 6 \, x - 4 \, y \end{array}\right].</me> Prove that <m>T</m> <em>is</em> a linear transformation. </p>
+      </statement>
+      <!-- <answer>
+        <p>Show that <m>T</m> preserves both vector addition and scalar multiplication.</p>
+      </answer> -->
+    </task>
+</activity>
+
+<!-- <activity estimated-time='15'>
+    <introduction>
+        <p>
+Continue to consider <m>S: \P_4 \rightarrow \P_3</m> defined by
+<me>S(f(x)) = 2f'(x)-f''(x)</me>.
+        </p>
+    </introduction>
+<task>
+    <p>
+  Verify that
+  <me>S(f(x)+g(x))=2f'(x)+2g'(x)-f''(x)-g''(x)</me>
+  is equal to <m>S(f(x))+S(g(x))</m> for all polynomials <m>f,g \in \P_4</m>.
+    </p>
+</task>
+<task>
+    <p>
+  Verify that <m>S(cf(x))</m> is equal to <m>cS(f(x))</m> for all real numbers <m>c</m>
+  and polynomials <m>f \in \P_4</m>. 
+    </p>
+</task>
+<task>
+    <p>
+  Is <m>S</m> linear?
+    </p>
+</task>
+</activity>
+
+
+<activity estimated-time='20'>
+    <introduction>
+        <p>
+Let polynomial maps <m>S: \P \rightarrow \P</m>
+and <m>T: \P \rightarrow \P</m> be defined by
+<me>S(f(x)) = (f(x))^2 \hspace{3em} T(f(x)) = 3xf(x^2)</me>
+        </p>
+    </introduction>
+<task>
+    <p>
+Note that <m>S(0)=0</m> and <m>T(0)=0</m>. So instead,
+show that <m>S(x+1)\not= S(x)+S(1)</m> to verify that <m>S</m> is not linear.
+    </p>
+</task>
+<task>
+    <p>
+Prove that <m>T</m> is linear by verifying that <m>T(f(x)+g(x))=T(f(x))+T(g(x))</m>
+and <m>T(cf(x))=cT(f(x))</m>.
+    </p>
+</task>
+</activity> -->
+
+</subsection>
+
+<subsection>
+  <title>Individual Practice</title>
+  <activity>
+      <p>
+        Let <m>f(x)=x^3-1</m>.
+        Then, <m>f\colon\IR\to\IR</m> is a function with domain and codomain equal to <m>\IR</m>. 
+        Is <m>f(x)</m> is a linear transformation?
+      </p>
+  </activity>
+  <activity>
+    <p>
+      Consider two vectors <m>\vec{u},\vec{v}</m> and their sum <m>\vec{u}+\vec{v}</m>.
+    </p>
+    <task>
+      <statement>
+        <p>
+          Is it the case that rotating <m>\vec{u}+\vec{v}</m> about the origin by <m>\frac{\pi}{2}=90^\circ</m> is the same as first rotating each of <m>\vec{u},\vec{v}</m> and then adding them together?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is it the case that rotating <m>5\vec{u}</m> about the origin by <m>\frac{\pi}{2}=90^\circ</m> is the same as first rotating <m>\vec{u}</m> by <m>\frac{\pi}{2}=90^\circ</m> and then scaling by <m>5</m>?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Based on this, do you suspect that the transformation <m>R\colon\IR^2\to\IR^2</m> given by rotating vectors about the origin through an angle of <m>\frac{\pi}{2}=90^\circ</m> is linear? Do you think there is anything special about the angle <m>\frac{\pi}{2}=90^\circ</m>?
+        </p>
+      </statement>
+    </task>
+</activity>
+<activity>
+  In <xref ref="EV2-Analogy"/>, we made an analogy between vectors and linear combinations with ingredients and recipes.
+  Let us think of <em>cooking</em> as a transformation of ingredients. 
+  In this analogy, would it be appropriate for us to consider "cooking" to be a linear transformation or not? 
+  Describe your reasoning. 
+</activity>
+</subsection>
+
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AT1-1" youtube="b1BC2rceq44">
+              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+            </video>
+            <caption>Video: Showing a transformation is linear</caption>
+        </figure>
+        <figure>
+            <video xml:id="video-AT1-2" youtube="Z4tUZgJrCxU">
+              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+            </video>
+            <caption>Video: Showing a transformation is not linear</caption>
+        </figure>
+    </subsection>
+
+
+
+    <exercises>
+        <p>Exercises available at <url href="https://tbil.org/linear-algebra/preview/exercises/#/bank/AT1/"/>.</p>
+    </exercises>
+<subsection>    
+    <title>Mathematical Writing Explorations</title>
+            <exploration>
+                <statement>
+                    <p>If <m>V,W</m> are vectors spaces, with associated zero vectors <m>\vec{0}_V</m> and <m>\vec{0}_W</m>, and <m>T:V \rightarrow W</m> is a linear transformation, does <m>T(\vec{0}_V)  = \vec{0}_W</m>? Prove this is true, or find a counterexample.</p></statement></exploration>
+
+                    
+    <exploration><statement>
+
+                    <p>Assume <m>f: V \rightarrow W</m> is a linear transformation between vector spaces. Let <m>\vec{v} \in V</m> with additive inverse <m>\vec{v}^{-1}</m>. Prove that <m>f(\vec{v}^{-1}) = [f(\vec{v})]^{-1}</m>.</p>
+                </statement>
+    </exploration>
+    </subsection>
+    
+    <subsection>
+        <title>Sample Problem and Solution</title>
+        <p>
+            Sample problem <xref ref="sample-AT1"/>.
+        </p>
+    </subsection>
+
+</section>

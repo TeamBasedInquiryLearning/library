@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter. Fill in and comment/uncomment to see how this -->
+<!-- works. -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <titlepage>
+    <author>
+      <personname>TBIL Community</personname>
+      <email>sclontz+tbil@southalabama.edu</email>
+    </author>
+    <credit>
+      <title>Editors</title>
+      <xi:include href="../../../common/authors/clontz.ptx"/>
+      <xi:include href="../../../common/authors/lewis.ptx"/>
+    </credit>
+    <credit>
+      <title>Contributing Authors</title>
+      <author>
+        <personname>Tonya DeGeorge</personname>
+        <institution>Gwinnett County Public Schools</institution>
+        <email>tonyadegeorge@gmail.com</email>
+      </author>
+      <author>
+        <personname>Abby Noble</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>Middle Georgia State University</institution>
+        <email>abby.noble@mga.edu</email>
+      </author>
+      <author>
+        <personname>Kathy Pinzon</personname>
+        <department>Department of Mathematics</department>
+        <institution>Georgia Gwinnett College</institution>
+        <email>kpinzon@ggc.edu</email>
+      </author>
+    </credit>
+    <date>
+      <today />
+    </date>
+  </titlepage>
+
+  <colophon xml:id="colophon">
+    <xi:include href="../../../common/website.ptx"/>
+    <xi:include href="../../../common/copyright.ptx" />
+
+    <p>
+This work includes materials used under license from the following works:
+    </p>
+    <ul>
+        <li>
+            <p><pubtitle>Active Prelude to Calculus</pubtitle></p>
+            <ul>
+                <li>
+                    <p><url href="https://activecalculus.org/prelude/"/></p>
+                </li>
+                <li>
+                    <p>CC BY-SA 4.0</p>
+                </li>
+            </ul>
+        </li>
+    </ul> 
+  
+    <p>The authors would like to acknowledge the contributions of Wendy Sheppard to drafts of <xref ref="EQ7"/>, <xref ref="PR3"/>, and <xref ref="PR4"/>.</p> 
+    <p>This work is supported in part by a grant from Affordable Learning Georgia.</p>
+  
+    <xi:include href="../../../common/nsf.ptx" />
+  </colophon>
+
+  <xi:include href="../../../common/resource-library.ptx"/>
+
+  <preface xml:id="instructor-notes">
+    <title>For Instructors</title>
+    <paragraphs xml:id="first-edition-welcome">
+      <title>Welcome to our first edition!</title>
+   
+      <p>
+We're excited to share with you our first edition of
+Precalculus for Team-Based Inquiry Learning! These activities, which mostly
+cover topics from College Algebra, are being
+used in a few classrooms for the first time in Fall 2024. More
+activities are being designed to be included in our 2025 editions,
+with a goal of fully supporting Precalculus courses in Fall 2025.
+Similarly, our exercise bank is a work-in-progress.
+      </p>
+      <p>
+We're providing this first edition for those who are eager to try out
+TBIL in their precalculus classrooms, with the understanding that this
+book will likely change a lot between now and our next edition, once we've
+tried it in our own classrooms! Are you interested in joining the community
+using these materials, and possibly contributing back to these free and
+open-source resources? Join the conversation at <url href="http://chat.tbil.org"/>;
+we look forward to hearing from you, particularly if you have feedback
+from your students on these activities.
+      </p>
+  
+    </paragraphs>
+  
+    <xi:include href="../../../common/features.ptx"/>
+    <xi:include href="../../../common/community.ptx"/>
+  </preface>
+
+</frontmatter>

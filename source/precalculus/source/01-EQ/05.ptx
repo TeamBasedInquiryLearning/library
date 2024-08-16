@@ -1,0 +1,909 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="EQ5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Quadratic Equations (EQ5) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/05.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+
+    <definition xml:id="def-quadratic-equation">
+      <statement>
+        <p>
+          A <term>quadratic equation</term> is of the form: <me>ax^2+bx+c=0</me> 
+          where <m>a</m> and <m>b</m> are coefficients (and <m>a</m> <m>\neq0</m>), <m>x</m> is the variable, and <m>c</m> is the constant term.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="determine-quadratic-equation">
+      <introduction>
+        <p>
+          Before beginning to solve quadratic equations, we need to be able to identify all various forms of quadratics.
+        </p>
+      </introduction>
+        <p> Which of the following is a quadratic equation? 
+          <ol marker= "A." cols="2">
+            <li> <m>6-x^2=3x</m> </li>
+            <li> <m> (2x-1)(x+3)=0</m> </li>
+            <li> <m>4(x-3)+7=0</m> </li>
+            <li> <m>(x-4)^2+1=0</m> </li>
+            <li> <m>5x^2-3x=17-4x</m> </li></ol></p>
+            <answer>
+              <p>
+                A, B, D, and E
+              </p>
+            </answer>
+    </activity>
+
+    <definition xml:id="def-zero-product-property">
+      <statement>
+        <p>
+          To solve a quadratic equation, we will need to apply the <term>zero product property</term>, which states that if <m>a \cdot b=0</m>, then either <m>a=0</m> or <m>b=0</m>. In other words, you can only have a product of <m>0</m> if one (or both!) of the factors is <m>0</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="applying-zero-product-property">
+      <introduction>
+        <p>
+          In this activity, we will look at how to apply the zero product property when solving quadratic equations.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> Which of the following equations can you apply <xref ref="def-zero-product-property"/> as your first step in solving?
+            <ol marker= "A." cols="1">
+              <li> <m>2x^2-3x+1=0</m> </li>
+              <li> <m>(2x+1)(x+1)=0</m></li>
+              <li> <m>3x^2-4=6x</m></li>
+              <li> <m>x(3x+5)=0</m></li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            B and D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Suppose you are given the quadratic equation, <m>(2x-1)(x-1)=0</m>. Applying <xref ref="def-zero-product-property"/> would give you:
+            <ol marker= "A." cols="1">
+              <li> <m>2x^2-3x+1=0</m> </li>
+              <li> <m>(2x+1)=0</m> and <m>(x+1)=0</m> </li>
+              <li> <m>(2x-1)=0</m> and <m>(x-1)=0</m></li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> After applying the zero product property, what are the solutions to the quadratic equation <m>(2x-1)(x-1)=0</m>?
+            <ol marker= "A." cols="1">
+              <li> <m>x=-\dfrac{1}{2}</m> and <m>x=1</m> </li>
+              <li> <m>x=\dfrac{1}{2}</m> and <m>x=-1</m> </li>
+              <li> <m>x=-\dfrac{1}{2}</m> and <m>x=-1</m></li>
+              <li> <m>x=\dfrac{1}{2}</m> and <m>x=1</m></li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D 
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+        Notice in <xref ref="determine-quadratic-equation"/> and <xref ref="applying-zero-product-property"/>, that not all equations are set up "nicely." You will need to do some manipulation to get everything on one side (AND in factored form!) and <m>0</m> on the other *before* applying the zero product property.
+      </p>
+    </remark>
+
+    <activity xml:id="solve-unfactored-equation">
+      <introduction>
+        <p>
+          Suppose you want to solve the equation <m>2x^2+5x-12=0</m>, which is NOT in factored form.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> Which of the following is the correct factored form of <m>2x^2+5x-12=0</m>?
+            <ol marker= "A." cols="1">
+              <li> <m>(2x-3)(x-4)=0</m> </li>
+              <li> <m>(2x+3)(x-4)=0</m></li>
+              <li> <m>(2x+3)(x+4)=0</m></li>
+              <li> <m>(2x-3)(x+4)=0</m></li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> After applying <xref ref="def-zero-product-property"/>, which of the following will be a solution to <m>2x^2+5x-12=0</m>?
+            <ol marker= "A." cols="1">
+              <li> <m>x=-\dfrac{3}{2}</m> and <m>x=-4</m> </li>
+              <li> <m>x=\dfrac{3}{2}</m> and <m>x=4</m> </li>
+              <li> <m>x=-\dfrac{3}{2}</m> and <m>x=4</m></li>
+              <li> <m>x=\dfrac{3}{2}</m> and <m>x=-4</m></li></ol></p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="solve-quadratic-equations-practice">
+      <introduction>
+        <p>
+          Solve each of the following quadratic equations:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+            <m>(2x-5)(x+7)=0</m>
+        </statement>
+        <answer>
+          <p>
+            <m>x=\dfrac{5}{2}</m> and <m>x=-7</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <m>3x(4x-1)=0</m>
+    </statement>
+    <answer>
+      <p>
+        <m>x=0</m> and <m>x=\dfrac{1}{4}</m>
+      </p>
+    </answer>
+    </task>
+      <task>
+        <statement>
+          <m>3x^2-14x-5=0</m>
+    </statement>
+    <answer>
+      <p>
+        <m>x=-\dfrac{1}{3}</m> and <m>x=5</m>
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <m>6-x^2=5x</m>
+  </statement>
+  <answer>
+    <p>
+      <m>x=1</m> and <m>x=-6</m>
+    </p>
+  </answer>
+  </task>
+    </activity>
+
+    <activity xml:id="square-root-property-intro">
+      <introduction>
+        <p>
+          Suppose you are given the equation, <m>x^2=9</m>:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            How many solutions does this equation have?
+            <ol marker= "A." cols="2">
+              <li> <m>0</m> </li>
+              <li> <m>1</m> </li>
+              <li> <m>2</m> </li>
+              <li> <m>3</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What are the solutions to this equation?
+            <ol marker= "A." cols="2">
+              <li> <m>x=0</m> </li>
+              <li> <m>x=3</m> </li>
+              <li> <m>x=9,-9</m> </li>
+              <li> <m>x=3,-3</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How is this quadratic equation different than the equations we've solved thus far?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            When solving for <m>x</m>, we have to consider both the positive and negative values.
+          </p>
+        </answer>
+      </task>
+    </activity>
+    
+    <definition xml:id="def-square-root-property">
+      <statement>
+        <p>
+          The <term>square root property</term> states that a quadratic equation of the form <me>x^2=k^2</me> (where <m>k</m> is a nonzero number) will give solutions <m>x=k</m> and <m>x=-k</m>.
+          <p>
+            In other words, if we have an equation with a perfect square on one side and a number on the other side, we can take the square root of both sides to solve the equation.
+          </p>
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="square-root-property-other">
+      <introduction>
+        <p>
+          Suppose you are given the equation, <m>3x^2-8=4</m>:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What would be the first step in solving <m>3x^2-8=4</m>? 
+            <ol marker= "A." cols="1">
+              <li>Divide by <m>3</m> on both sides</li>
+              <li>Subtract <m>4</m> on both sides</li>
+              <li>Add <m>8</m> on both sides</li>
+              <li>Multiply by <m>3</m> on both sides</li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Isolate the <m>x^2</m> term and apply <xref ref="def-square-root-property"/> to solve for <m>x</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            To continue to isolate the <m>x^2</m> term, the next step is to divide by <m>3</m> and then take the square root of both sides.
+          </p>
+        </answer> 
+      </task>
+      <task>
+        <statement>
+          <p>
+            What are the solution(s) to <m>3x^2-8=4</m>? 
+            <ol marker= "A." cols="2">
+              <li><m>x=6,-6</m></li>
+              <li><m>x=2,-2</m></li>
+              <li><m>x=0</m></li>
+              <li><m>x=2</m></li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="square-root-property-practice">
+      <introduction>
+        <p>
+          Solve the following quadratic equations by applying the square root property (<xref ref="def-square-root-property"/>).
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <m>3x^2+1=28</m>
+      </statement>
+      <answer>
+        <p>
+          <m>x=3,-3</m>
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <m>5x^2+7=47</m>
+        </statement>
+        <answer>
+          <p>
+            <m>x=\sqrt{8},-\sqrt{8}</m> or <m>x \approx -2.828, 2.828</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <m>2x^2=-144</m>
+        </statement>
+        <hint>
+          <p>
+            Recall that when you have a negative number under a square root, that gives an imaginary number <m>(\sqrt{-1}=i)</m>.
+          </p>
+        </hint>
+        <answer>
+          <p>
+           <m>x=\sqrt{72}i,-\sqrt{72}i</m> or in simplified form: <m>x=6\sqrt{2}i,-6\sqrt{2}i</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <m>(x+2)^2+3=19</m>
+      </statement>
+      <hint>
+        <p>
+          Isolate the binomial <m>(x+2)</m> first.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>x=2,-6</m>
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <m>3(x-4)^2=15</m>
+      </statement>
+      <answer>
+        <p>
+          <m>x=4+\sqrt{5},4-\sqrt{5}</m>
+        </p>
+      </answer>
+      </task>
+    </activity>
+    
+    <remark>
+      Not all quadratic equations can be factored or can be solved by using the square root property. In the next few activities, we will learn two additional methods in solving quadratics.
+    </remark>
+
+    <definition xml:id="def-completing-the-square">
+      <statement>
+        <p>
+          Another method for solving a quadratic equation is known as <term>completing the square</term>. With this method, we add or subtract terms to both sides of an equation until we have a perfect square trinomial on one side of the equal sign and a constant on the other side. We then apply the square root property. 
+          
+          <p>Note: A perfect square trinomial is a trinomial that can be factored into a binomial squared. For example, <m>x^2+4x+4</m> is a perfect square trinomial because it can be factored into <m>(x+2)(x+2)</m> or <m>(x+2)^2</m>.</p>
+        </p>
+      </statement>
+    </definition>
+<activity xml:id="complete-the-square-intro">
+  <introduction>
+    <p>
+      Let's work through an example together to solve <m>x^2+6x=4</m>. (Notice that the methods of factoring and the square root property do not work with this equation.)
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        In order to apply <xref ref="def-completing-the-square"/>, we first need to have a perfect square trinomial on one side of the equal sign. Which of the following number(s) could we add to the left side of the equation to create a perfect square trinomial?
+        <ol marker= "A." cols="2">
+          <li><m>4</m></li>
+          <li><m>9</m></li>
+          <li><m>-9</m></li>
+          <li><m>2</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Add your answer from part <m>a</m> to the right side of the equation as well (i.e. whatever you do to one side of an equation you must do to the other side too!) and then factor the perfect square trinomial on the left side. Which equation best represents the equation now?
+        <ol marker= "A." cols="1">
+          <li><m>(x+3)^2=-5</m></li>
+          <li><m>(x-3)^2=13</m></li>
+          <li><m>(x+3)^2=13</m></li>
+          <li><m>(x-3)^2=-5</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Apply the square root property (<xref ref="def-square-root-property"/>) to both sides of the equation to determine the solution(s). Which of the following is the solution(s) of <m>x^2+6x=4</m>?
+        <ol marker= "A." cols="1">
+          <li><m>3+\sqrt{13}</m> and <m>3-\sqrt{13}</m></li>
+          <li><m>-3+\sqrt{13}</m> and <m>-3-\sqrt{13}</m></li>
+          <li><m>3+\sqrt{5}</m> and <m>3-\sqrt{5}</m></li>
+          <li><m>-3+\sqrt{5}</m> and <m>-3-\sqrt{5}</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<remark>
+  <p> To complete the square, the leading coefficient, <m>a</m> (i.e., the coefficient of the <m>x^2</m> term), must equal <m>1</m>. If it does not, then factor the entire equation by <m>a</m> and then follow similar steps as in <xref ref="complete-the-square-intro"/>.</p>
+</remark>
+
+<activity xml:id="complete-the-square-a-not-one">
+  <introduction>
+    <p>
+      Let's solve the equation <m>2x^2+8x-6=0</m> by completing the square.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        Rewrite the equation so that all the terms with the variable <m>x</m> is on one side of the equation and a constant is on the other.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>2x^2+8x=6</m>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Notice that the coefficient of the <m>x^2</m> term is not <m>1</m>. What could we factor the left side of the equation by so that the coefficient of the <m>x^2</m> is <m>1</m>?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Factor the left side by <m>2</m>.
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Once you factor the left side, what equation represents the equation you now have?
+        <ol marker= "A." cols="2">
+          <li><m>2(x^2-8x)=-6</m></li>
+          <li><m>2(x^2-4x)=-6</m></li>
+          <li><m>2(x^2+4x)=6</m></li>
+          <li><m>2(x^2+8x)=6</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Just like in <xref ref="complete-the-square-intro"/>, let's now try and create the perfect square trinomial (inside the parentheses) on the left side of the equation. Which of the following number(s) could we add to the left side of the equation to create a perfect square trinomial?
+        <ol marker= "A." cols="2">
+          <li><m>4</m></li>
+          <li><m>8</m></li>
+          <li><m>-8</m></li>
+          <li><m>2</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What would we need to add to the right-hand side of the equation to keep the equation balanced?
+        <ol marker= "A." cols="2">
+          <li><m>4</m></li>
+          <li><m>8</m></li>
+          <li><m>-8</m></li>
+          <li><m>2</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B. Students may need help understanding that adding <m>4</m> to the right-hand side of the equation does not keep the equation balanced.
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Which of the following equation represents the quadratic equation you have now?
+        <ol marker= "A." cols="2">
+          <li><m>2(x+2)^2=9</m></li>
+          <li><m>2(x-2)^2=2</m></li>
+          <li><m>2(x+2)^2=14</m></li>
+          <li><m>2(x-2)^2=14</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Apply the square root property and solve the quadratic equation.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>x=-2+\sqrt{7}, -2-\sqrt{7}</m>
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<activity xml:id="complete-the-square-practice">
+  <introduction>
+    <p>
+      Solve the following quadratic equations by completing the square.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <m>x^2-12x=-11</m>
+  </statement>
+  <answer>
+    <p>
+      <m>x=1,11</m>
+    </p>
+  </answer>
+  </task>
+  <task>
+    <statement>
+    <m>x^2+2x-33=0</m>
+  </statement>
+  <answer>
+    <p>
+      <m>x=-1+\sqrt{34},-1-\sqrt{34}</m>
+    </p>
+  </answer>
+  </task>
+  <task>
+    <statement>
+    <m>5x^2+29x=6</m>
+  </statement>
+  <answer>
+    <p>
+      <m>x=-6, \dfrac{1}{5}</m>
+    </p>
+  </answer>
+  </task>
+</activity>
+
+<definition xml:id="def-quadratic-formula">
+  The last method for solving quadratic equations is the <term>quadratic formula</term> - a formula that will solve all quadratic equations!
+  <p>
+    A quadratic equation of the form <m>ax^2+bx+c=0</m> can be solved by the quadratic formula:
+      <me>x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}</me>
+      where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a</m><m>\neq0</m>.
+  </p>
+</definition>
+
+<activity xml:id="quadratic-formula-intro">
+  <introduction>
+    <p>
+      Use the quadratic formula (<xref ref="def-quadratic-formula"/>) to solve <m>x^2+4x=-3</m>.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>a=1, b=4,</m> and <m>c=3</m>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        When applying the quadratic formula, what would you get when you substitute <m>a</m>, <m>b</m>, and <m>c</m>?
+        <ol marker= "A." cols="1">
+          <li><m>x=\dfrac{-4\pm\sqrt{4^2-4(1)(3)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{4\pm\sqrt{(-4)^2-4(1)(3)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{-4\pm\sqrt{(-4)^2-4(1)(-3)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{4\pm\sqrt{4^2-4(1)(-3)}}{2(1)}</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the solution(s) to <m>x^2+4x=-3</m>?
+        <ol marker= "A." cols="2">
+          <li><m>x=-1,3</m></li>
+          <li><m>x=1,3</m></li>
+          <li><m>x=-1,-3</m></li>
+          <li><m>x=1,-3</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<activity xml:id="quadratic-formula-square-root">
+  <introduction>
+    <p>
+      Use the quadratic formula (<xref ref="def-quadratic-formula"/>) to solve <m>2x^2-13=7x</m>.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>a=2, b=-7,</m> and <m>c=-13</m>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        When applying the quadratic formula, what would you get when you substitute <m>a</m>, <m>b</m>, and <m>c</m>?
+        <ol marker= "A." cols="1">
+          <li><m>x=\dfrac{-7\pm\sqrt{7^2-4(2)(13)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{7\pm\sqrt{(-7)^2-4(2)(-13)}}{2(2)}</m></li>
+          <li><m>x=\dfrac{-7\pm\sqrt{(-7)^2-4(1)(-13)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{7\pm\sqrt{7^2-4(2)(-13)}}{2(2)}</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the solution(s) to <m>2x^2-13=7x</m>?
+        <ol marker= "A." cols="1">
+          <li><m>x=\dfrac{7+\sqrt{73}}{4}</m> and <m>\dfrac{7-\sqrt{73}}{4}</m></li>
+          <li><m>x=\dfrac{7+\sqrt{153}}{4}</m> and <m>\dfrac{-7-\sqrt{153}}{4}</m></li>
+          <li><m>x=\dfrac{-7+\sqrt{55}}{4}</m> and <m>\dfrac{7-\sqrt{55}}{4}</m></li>
+          <li><m>x=\dfrac{-7+\sqrt{155}}{4}</m> and <m>\dfrac{-7-\sqrt{155}}{4}</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<activity xml:id="quadratic-formula-imaginary">
+  <introduction>
+    <p>
+      Use the quadratic formula (<xref ref="def-quadratic-formula"/>) to solve <m>x^2=6x-12</m>.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>a=1, b=-6,</m> and <m>c=12</m>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        When applying the quadratic formula, what would you get when you substitute <m>a</m>, <m>b</m>, and <m>c</m>?
+        <ol marker= "A." cols="1">
+          <li><m>x=\dfrac{-6\pm\sqrt{6^2-4(1)(12)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{6\pm\sqrt{(-6)^2-4(1)(12)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{-6\pm\sqrt{(-6)^2-4(1)(-12)}}{2(1)}</m></li>
+          <li><m>x=\dfrac{6\pm\sqrt{6^2-4(1)(-12)}}{2(1)}</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Notice that the number under the square root is a negative. Recall that when you have a negative number under a square root, that gives an imaginary number <m>(\sqrt{-1}=i)</m>. What is the solution(s) to <m>x^2=6x-12</m>?
+        <ol marker= "A." cols="1">
+          <li><m>x=3+i\sqrt{3}</m> and <m>3-i\sqrt{3}</m></li>
+          <li><m>x=6+i\sqrt{12}</m> and <m>6-i\sqrt{12}</m></li>
+          <li><m>x=-3+i\sqrt{3}</m> and <m>-3-i\sqrt{3}</m></li>
+          <li><m>x=-6+i\sqrt{12}</m> and <m>-6-i\sqrt{12}</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<activity xml:id="quadratic-formula-practice">
+  <introduction>
+    <p>
+      Solve the following quadratic equations by applying the quadratic formula (<xref ref="def-quadratic-formula"/>).
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <m>2x^2-3x=5</m>
+  </statement>
+  <answer>
+    <p>
+      <m>x=-1,\dfrac{5}{2}</m>
+    </p>
+  </answer>
+  </task>
+  <task>
+    <statement>
+    <m>4x^2-1=-8x</m>
+    </statement>
+    <answer>
+      <p>
+        <m>x=\dfrac{-2+\sqrt{5}}{2}, \dfrac{-2-\sqrt{5}}{2}</m>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+    <m>2x^2-7x-13=-10</m>
+    </statement>
+    <answer>
+      <p>
+        <m>x=\dfrac{7+\sqrt{73}}{4}, \dfrac{7-\sqrt{73}}{4}</m>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+    <m>x^2-6x+12=0</m>
+    </statement>
+    <answer>
+      <p>
+        <m>x=3+i\sqrt{3}, 3-i\sqrt{3}</m>
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<activity xml:id="determine-which-method">
+  <introduction>
+    <p>
+      Now that you have seen all the different ways to solve a quadratic equation, you will need to know WHEN to use which method. Are some methods better than others?
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        Which is the best method to use to solve <m>5x^2=80</m>?
+        <ol marker= "A." cols="2">
+          <li>Factoring and Zero Product Property</li>
+          <li>Square Root Property</li>
+          <li>Completing the Square</li>
+          <li>Quadratic Formula</li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Which is the best method to use to solve <m>5x^2+9x=-4</m>?
+        <ol marker= "A." cols="2">
+          <li>Factoring and Zero Product Property</li>
+          <li>Square Root Property</li>
+          <li>Completing the Square</li>
+          <li>Quadratic Formula</li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C or D
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Which is the best method to use to solve <m>3x^2+9x=0</m>?
+        <ol marker= "A." cols="2">
+          <li>Factoring and Zero Product Property</li>
+          <li>Square Root Property</li>
+          <li>Completing the Square</li>
+          <li>Quadratic Formula</li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Go back to parts <m>a</m>, <m>b</m>, and <m>c</m> and solve each of the quadratic equations. Would you still use the same method?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Answers will vary. It is important, though, for students to look at the overall structure to help them determine which method might be the best method to use and then discuss their reasons why with their peers.
+      </p>
+    </answer>
+  </task>
+</activity>
+
+  </subsection>
+
+  <exercises>
+    <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ5/"/>. </p> 
+  </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

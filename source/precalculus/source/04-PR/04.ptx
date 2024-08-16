@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PR4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Polynomial Long Division (PR4) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/04.ptx" />
+      </li>
+    </ul>
+    </objectives>
+
+    <subsection>
+    <title>Activities</title>
+    <observation>
+      <p>We have seen previously that we can reduce rational functions by factoring, for example
+        <me>\dfrac{x^2+5x+4}{x^3+3x^2+2x}=\dfrac{(x+1)(x+4)}{x(x+2)(x+1)}=\dfrac{x+4}{x(x+2)}.</me>
+        In this section, we will explore the question: what can we do to simplify rational functions if we are not able to 
+        reduce by easily factoring?
+    </p>
+  </observation>
+    <definition xml:id="proper-rational-function">
+      <statement>
+        <p> Recall that a fraction is called <term>proper</term> if its numerator is smaller than its denominator, and <term>improper</term> 
+          if the numerator is larger than the denominator (so <m>\dfrac{3}{5}</m> is a proper fraction, but <m>\dfrac{32}{7}</m> is an 
+          improper fraction).  Similarly, we define a <term>proper rational function</term> to be a rational function where 
+          the degree of the numerator is less than the degree of the denominator.  </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="identify-improper-rational-functions">
+      <statement>
+        Label each of the following rational functions as either <term>proper</term> or <term>improper</term>.
+        <ol marker="A.">
+          <li><m> \dfrac{x^3+x}{x^2+4}</m></li>
+          <li><m> \dfrac{3}{x^2+3x+4}</m></li>
+          <li><m> \dfrac{7+x^3}{x^2+x+1}</m></li>
+          <li><m> \dfrac{x^4+x+1}{x^4+4x^2}</m></li>
+        </ol>
+      </statement>
+      <answer><p>A, C, and D are improper, while B is proper.</p></answer>
+    </activity>
+
+    <observation>
+      <p>When dealing with an improper fraction such as <m>\dfrac{32}{7}</m>, it is sometimes useful to rewrite this
+        as an integer plus a proper fraction, e.g. <m>\dfrac{32}{7}=4+\dfrac{4}{7}</m>.  Similarly, it will sometimes be
+        useful to rewrite an improper rational function as the sum of a polynomial and a proper rational function, such 
+        as <m>\dfrac{x^3+x}{x^2+4}=x-\dfrac{3x}{x^2+4}</m>.
+      </p>
+    </observation>
+
+    <activity xml:id="Long-division-integer">
+    <introduction>
+      Consider the improper fraction <m>\dfrac{357}{11}</m>.
+    </introduction>
+    <task>
+      <statement>
+        <p>Use long division to write <m>\dfrac{357}{11}</m> as an integer plus a proper fraction.</p>
+      </statement>
+      <answer>
+      <image xml:id="long-division-integers" width="30%">                
+                  <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp; &amp;3  &amp;2   \\  
+                \cline{2-4}\\[-14.5pt]
+                \multicolumn{1}{r}{11\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;5 &amp;7  \\
+                &amp; 3&amp;3 &amp;  \\
+                \cline{2-3}
+                &amp; &amp; 2 &amp; 7 \\
+                &amp; &amp; 2 &amp; 2 \\
+                \cline{3-4}
+                &amp; &amp; &amp; 5 \\
+                \end{array}
+                \)
+                </latex-image>
+                </image>
+                <p>So <m>\dfrac{357}{11}=32+\dfrac{5}{11}</m>.</p>
+              </answer>
+    </task>
+    <task>
+      <statement>
+      <p>Now we will carefully redo this process in a way that we can generalize to rational functions.  
+      Note that we can rewrite <m>357</m> as <m>357=3\cdot10^2+5\cdot10+7</m>, and <m>11</m> as <m>11=1\cdot10+1</m>. 
+      By comparing the leading terms in these expansions, we see that to knock off the leading term of <m>357</m>, we need to
+      multiply <m>11</m> by <m>3\cdot10^1</m>.
+    </p>
+    <p>Using the fact that <m>357=11\cdot30+27</m>, rewrite <m>\dfrac{357}{11}</m> as <m>\dfrac{357}{11}=30+\dfrac{?}{11}</m>.
+    </p>
+      </statement>
+      <answer><p><m>\dfrac{357}{11}=30+\dfrac{27}{11}</m>.</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Note now that if we can rewrite <m>\dfrac{27}{11}</m> as an integer plus a proper fraction, we will be done, 
+      since <m>\dfrac{357}{11}=30+\dfrac{27}{11}</m>.
+    </p>
+    <p>
+      Rewrite <m>\dfrac{27}{11}=?+\dfrac{?}{11}</m> as an integer plus a proper fraction.
+    </p>
+    </statement>
+      <answer><p><m>\dfrac{27}{11}=2+\dfrac{5}{11}</m>.</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Combine your work in the previous two parts to rewrite <m>\dfrac{357}{11}</m> as an integer plus a proper fraction.  
+      How does this compare to what you obtained in part (a)?
+    </p>
+    </statement>
+      <answer><p><m>\dfrac{357}{11}=30+\dfrac{27}{11}=30+2+\dfrac{5}{11}=32+\dfrac{5}{11}</m>.</p></answer>
+  </task>
+  </activity>
+
+<activity xml:id="long-division-activity-1">
+  <introduction>
+    <p>
+      Now let's consider the rational function <m>\dfrac{3x^2+5x+7}{x+1}</m>.  We want to rewrite this as a polynomial
+      plus a proper rational function.
+    </p>
+  </introduction>
+  <task>
+    <statement>
+    <p>Looking at the leading terms, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
+      as <m>3x^2+5x+7</m>?
+    </p>
+    <ol marker="A.">
+      <li><m>3</m></li>
+      <li><m>x</m></li>
+      <li><m>3x</m></li>
+      <li><m>3x+5</m></li>
+    </ol>
+  </statement>
+  <answer><p>C</p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Rewrite <m>3x^2+5x+7=3x(x+1)+?</m>, and use this to rewrite <m>\dfrac{3x^2+5x+7}{x+1}=3x+\dfrac{?}{x+1}</m>.
+    </p>
+    </statement>
+    <answer><p><m>\dfrac{3x^2+5x+7}{x+1}=3x+\dfrac{2x+7}{x+1}</m></p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Now focusing on <m>\dfrac{2x+7}{x+1}</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term
+      as <m>2x+7</m>?
+    </p>
+    <ol marker="A.">
+      <li><m>2</m></li>
+      <li><m>x</m></li>
+      <li><m>2x</m></li>
+      <li><m>2x+7</m></li>
+    </ol>
+  </statement>
+  <answer><p>A</p></answer>
+  </task>
+  <task>
+    <statement>
+  <p> Rewrite <m>\dfrac{2x+7}{x+1}=2+\dfrac{?}{x+1}</m>.</p>
+    </statement>
+    <answer><p><m>\dfrac{2x+7}{x+1}=2+\dfrac{5}{x+1}</m></p></answer>
+  </task>
+  <task>
+    <statement>
+    <p>Combine this with the previous parts to rewrite <m>\dfrac{3x^2+5x+7}{x+1}=3x+?+\dfrac{?}{x+1}</m>.</p>
+    </statement>
+    <answer><p><m>\dfrac{3x^2+5x+7}{x+1}=3x+2+\dfrac{5}{x+1}</m></p></answer>
+  </task>
+</activity>
+
+    <activity xml:id="Long-Division-Intro-Steps">
+        <introduction>
+          <p>Next we will use the notation of long division to rewrite the rational function  <m>\dfrac{3x^2+5x+7}{x+1}</m> as a 
+            polynomial plus a proper rational function.</p> 
+        </introduction>
+       
+              <task>
+                <statement>
+                <p> First, let's use long division notation to write the quotient.</p>
+                <image xml:id="example-long-division-setup" width="50%">                
+                  <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp; &amp;  &amp; &amp; ? &amp; &amp;  &amp; &amp;  \\  
+                \cline{2-9}\\[-14.5pt]
+                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                \end{array}
+                \)
+                </latex-image>
+                </image>
+                <p>What do we need to multiply <m>x+1</m> by so that it would have the same leading term
+                  as <m>3x^2+5x+7</m>?</p>
+                <!--<image xml:id="existing-example">
+                <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp;  &amp; ?&amp; &amp; &amp; ? &amp; &amp;  \\ \cline{2-9}\\[-14.5pt]
+                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                &amp;  &amp; ? &amp; &amp; 3 &amp;x \\ \cline{2-6}
+                &amp; &amp; &amp;  &amp;? &amp; &amp;  &amp;7 &amp; \\
+                &amp; &amp; &amp; &amp; ? &amp; &amp;  &amp; ?&amp; &amp; &amp; &amp;  &amp; \\  \cline{4-11}
+                &amp; &amp; &amp; &amp;  &amp; &amp;  &amp; ? &amp; &amp; &amp; &amp;  \\
+                &amp; &amp; &amp;  &amp; &amp; &amp;  &amp; &amp; \\
+                \end{array}
+                  \)
+                </latex-image>
+                </image>-->
+              </statement>
+              <answer>
+                <image xml:id="example-long-division-step-1" width="50%">
+                <latex-image>
+                  \(
+                \begin{array}{ r *{19}{c@{}} }
+                &amp; &amp;  &amp;  &amp; 3 &amp;x &amp;  &amp; &amp;  \\  
+                \cline{2-9}\\[-14.5pt]
+                \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                \end{array}
+                \)
+                </latex-image>
+                </image>
+              </answer>
+              </task>
+              <task>
+                <statement>
+                <p>Now to rewrite <m>3x^2+5x+7</m> as <m>3x(x+1)+?</m>, place the product <m>3x(x+1)</m> below and subtract.</p>
+                <image xml:id="example-long-division-step-2" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp;  &amp;  &amp; &amp; 3 &amp; x &amp;  &amp; &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; ? &amp;  &amp; +  &amp; ? &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </statement>
+              <answer>
+                <image xml:id="example-long-division-step-3" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp; 3 &amp;x  &amp;  &amp; &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+              </answer>
+              </task>
+
+              <task>
+                <statement>
+                  <p>Now focusing on <m>2x+7</m>, what do we need to multiply <m>x+1</m> by so that it would have the same leading term as <m>2x+7</m>?</p>
+                  <image xml:id="example-long-division-step-4" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp;3  &amp;x &amp; + &amp;? &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </statement>
+                <answer>
+                  <image xml:id="example-long-division-step-5" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp; 3  &amp;x &amp; + &amp;2 &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </answer>
+              </task>
+              <task>
+                <statement>
+                  <p>Now, subtract <m>2(x+1)</m> to finish the long division.</p>
+                  <image xml:id="example-long-division-step-6" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp;3  &amp;x &amp; + &amp;2 &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  &amp; &amp; &amp; &amp; ? &amp;  &amp;+ &amp; ? &amp; \\
+                  \cline{5-9}
+                  &amp; &amp; &amp; &amp;  &amp;  &amp; &amp; ? &amp; \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </statement>
+                <answer>                  
+                <image xml:id="example-long-division-step-7" width="50%">
+                  <latex-image>
+                    \(
+                  \begin{array}{ r *{19}{c@{}} }
+                  &amp; &amp;  &amp; &amp; 3 &amp;x &amp; + &amp; 2 &amp;  \\  
+                  \cline{2-9}\\[-14.5pt]
+                  \multicolumn{1}{r}{(x+1)\rlap{\kern4.5pt\smash{\raise.2ex\hbox{)}}}} &amp; 3 &amp;x^2 &amp;+ &amp;5 &amp;x &amp;+ &amp; 7 \\
+                  &amp; 3 &amp; x^2 &amp; + &amp; 3 &amp; x &amp; &amp; &amp;  \\
+                  \cline{2-6} 
+                  &amp;  &amp; &amp;  &amp; 2 &amp; x &amp; +  &amp; 7 &amp;  \\
+                  &amp; &amp; &amp; &amp; 2 &amp; x &amp;+ &amp; 2 &amp; \\
+                  \cline{5-9}
+                  &amp; &amp; &amp; &amp;  &amp;  &amp; &amp; 5 &amp; \\
+                  \end{array}
+                  \)
+                  </latex-image>
+                  </image> 
+                </answer>
+              </task>
+              <task>
+                <statement>
+                <p>This long division calculation has shown that <me>3x^2+5x+7 = (x+1)(3x+2)+5</me>.  
+                  Use this to rewrite <m>\dfrac{3x^2+5x+7}{x+1}</m> as a polynomial plus a proper rational function.</p>
+                </statement>
+                <answer>
+                  <p><m>\dfrac{3x^2+5x+7}{x+1} = 3x+2+\dfrac{5}{x+1}</m></p>
+                </answer>
+              </task>
+            </activity>
+      <remark>
+        <p>Note that in <xref ref="long-division-activity-1"/> and <xref ref="Long-Division-Intro-Steps"/> we performed the same computations, but just organized our work a little differently.</p>
+      </remark>
+
+      <activity>
+        <statement>
+          <p>Rewrite <m>\dfrac{x^2+1}{x-1}</m> as a polynomial plus a proper rational function.</p>
+        </statement>
+        <hint><p>Note that <m>x^2+1=x^2+0x+1</m>.</p></hint>
+        <answer><p><m>x+1+\dfrac{3}{x-1}</m>.</p></answer>
+      </activity>
+
+      <activity>
+        <statement>
+          <p>Rewrite <m>\dfrac{x^5+x^3+2x^2-6x+7}{x^2+x-1}</m> as a polynomial plus a proper rational function.</p> 
+        </statement>
+        <answer>
+          <p><m>x^3-x^2+3x-2+\dfrac{-x+5}{x^2+x-1}</m>.</p>
+        </answer>
+      </activity>
+
+      <activity>
+        <statement>
+          <p>Rewrite <m>\dfrac{3x^4-5x^2+2}{x-1}</m> as a polynomial plus a proper rational function.</p> 
+        </statement>
+        <answer><p><m>3x^3+3x^2-2x-2</m>.</p></answer>
+      </activity>
+      
+
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR4/"/>. </p> 
+    </exercises>
+    
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>
+

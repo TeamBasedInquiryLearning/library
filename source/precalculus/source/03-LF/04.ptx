@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="LF4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Parallel and Perpendicular Lines (LF4) </title>
+    <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/04.ptx" />
+      </li>
+    </ul>
+    </objectives>
+    <subsection>
+    <title>Activities</title>
+    
+<activity xml:id="LR4-investigating-parallel-lines">
+  <introduction>
+    <p>
+      Let's revisit <xref ref="activity-need-y"/> to investigate special types of lines.
+    </p>
+  <image>
+    <sageplot>
+      p=plot(2*x+3,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]])
+      p+=plot(2*x-2,(x,-5,5),thickness=3, color='red')
+      p+=text('Line A', (-1, 3), fontsize=18, color='black')
+      p+=text('Line B', (1, -2), fontsize=18, color='black')
+      p
+    </sageplot>
+  </image>
+</introduction>
+<task>
+  <statement>
+    <p> What is the slope of line A?
+      <ol marker="A." cols="2">
+        <li><p><m>1</m> </p></li>
+        <li><p> <m>2</m> </p></li>
+        <li><p> <m>\dfrac{1}{2} </m> </p></li>
+        <li><p> <m>-2</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p> What is the slope of line B?
+      <ol marker="A." cols="2">
+        <li><p> <m>1</m> </p></li>
+        <li><p> <m>2</m> </p></li>
+        <li><p> <m>\dfrac{1}{2}</m> </p></li>
+        <li><p> <m>-2</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p> What is the <m>y</m>-intercept of line A?
+      <ol marker="A." cols="2">
+        <li><p> <m>-2</m> </p></li>
+        <li><p> <m>-1.5</m> </p></li>
+        <li><p> <m>1 </m> </p></li>
+        <li><p> <m>3</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p> What is the <m>y</m>-intercept of line B?
+      <ol marker="A." cols="2">
+        <li><p> <m>-2</m> </p></li>
+        <li><p> <m>-1.5</m> </p></li>
+        <li><p> <m>1 </m> </p></li>
+        <li><p> <m>3</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      A
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      What is the same about the two lines?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      Both lines have the same slope (<m>m=2</m>).
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      What is different about the two lines?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      The lines have different <m>y</m>-intercepts.
+    </p>
+  </answer>
+</task>
+  </activity>
+
+<remark>
+  Notice that in <xref ref="LR4-investigating-parallel-lines"/> the two lines never touch. 
+</remark>
+  
+<definition xml:id="def-parallel-lines">
+  <statement>
+    <p>
+      <term>Parallel lines</term> are lines that always have the same distance apart (equidistant) and will never meet. Parallel lines have the same slope, but different <m>y</m>-intercepts.
+    </p>
+  </statement>
+</definition>
+
+<activity xml:id="LR4-write-equation-of-parallel-line">
+ <introduction>
+  <p>
+   Suppose you have the function, <me>f(x)=-\dfrac{1}{2}x-1</me>
+  </p>
+ </introduction> 
+ <task>
+  <statement>
+    <p>
+      What is the slope of <m>f(x)</m>?
+    <ol marker= "A." cols="2">
+      <li><m>-1</m></li>
+      <li><m>2</m></li>
+      <li><m>1</m></li>
+      <li><m>-\dfrac{1}{2}</m></li></ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      Applying <xref ref="def-parallel-lines"/>, what would the slope of a line parallel to <m>f(x)</m> be?
+    <ol marker= "A." cols="2">
+      <li><m>-1</m></li>
+      <li><m>2</m></li>
+      <li><m>1</m></li>
+      <li><m>-\dfrac{1}{2}</m></li></ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      Find the equation of a line parallel to <m>f(x)</m> that passes through the point <m>(-4,2)</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>y-2=-\dfrac{1}{2}(x+4)</m> or <p> <m>y=-\dfrac{1}{2}x</m> </p>
+    </p>
+  </answer>
+</task>
+</activity>
+
+<activity xml:id="LR4-investigating-perpendicular-lines">
+  <introduction>
+    <p>
+      Consider the graph of the two lines below.
+    </p>
+  <image>
+    <sageplot>
+      p=plot(2*x+3,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]],aspect_ratio=1)
+      p+=plot(-1/2*x+1,(x,-5,5),thickness=3, color='red')
+      p+=text('Line A', (-2.5, 3), fontsize=18, color='red')
+      p+=text('Line B', (-1.8, -3), fontsize=18, color='blue')
+      p
+    </sageplot>
+  </image>
+</introduction>
+<task>
+  <statement>
+    <p> What is the slope of line A?
+      <ol marker="A." cols="2">
+        <li><p><m>3</m> </p></li>
+        <li><p> <m>2</m> </p></li>
+        <li><p> <m>-\dfrac{1}{2} </m> </p></li>
+        <li><p> <m>-2</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      C
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p> What is the slope of line B?
+      <ol marker="A." cols="2">
+        <li><p> <m>3</m> </p></li>
+        <li><p> <m>2</m> </p></li>
+        <li><p> <m>-\dfrac{1}{2} </m> </p></li>
+        <li><p> <m>-2</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      B
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p> What is the <m>y</m>-intercept of line A?
+      <ol marker="A." cols="2">
+        <li><p> <m>-2</m> </p></li>
+        <li><p> <m>-\dfrac{1}{2}</m> </p></li>
+        <li><p> <m>2 </m> </p></li>
+        <li><p> <m>3</m> </p></li>
+    </ol> </p>
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p> What is the <m>y</m>-intercept of line B?
+        <ol marker="A." cols="2">
+          <li><p> <m>-2</m> </p></li>
+          <li><p> <m>-\dfrac{1}{2}</m> </p></li>
+          <li><p> <m>1 </m> </p></li>
+          <li><p> <m>3</m> </p></li>
+      </ol> </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      If you were to think of slope as "rise over run," how would you write the slope of each line?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      Line A could be written as <m>-\dfrac{1}{2}</m> and Line B could be written as <m>\dfrac{2}{1}</m>.
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      How would you compare the slopes of the two lines?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      Students might notice that when writing the slopes of Line A and Line B, the slopes are negative reciprocals of each other.
+    </p>
+  </answer>
+</task>
+  </activity>
+
+  <remark>
+    Notice in <xref ref="LR4-investigating-perpendicular-lines"/>, that even though the two lines have different slopes, the slopes are somewhat similar. For example, if you take the slope of Line A <m>\left(-\dfrac{1}{2}\right)</m> and flip and negate it, you will get the slope of Line B <m>\left(\dfrac{2}{1}\right)</m>.
+  </remark>
+
+  <definition xml:id="def-perpendicular-lines">
+    <statement>
+      <p>
+        <term>Perpendicular lines</term> are two lines that meet or intersect each other at a right angle. The slopes of two perpendicular lines are <em>negative reciprocals</em> of each other (given that the slope exists!).
+      </p>
+    </statement>
+  </definition>
+
+  <activity xml:id="LR4-write-equation-of-perpendicular-line">
+    <introduction>
+     <p>
+      Suppose you have the function, <me>f(x)=3x+5</me>
+     </p>
+    </introduction> 
+    <task>
+     <statement>
+       <p>
+         What is the slope of <m>f(x)</m>?
+       <ol marker= "A." cols="2">
+         <li><m>-\dfrac{1}{3}</m></li>
+         <li><m>3</m></li>
+         <li><m>5</m></li>
+         <li><m>-\dfrac{1}{5}</m></li></ol>
+       </p>
+     </statement>
+     <answer>
+       <p>
+         B
+       </p>
+     </answer>
+   </task>
+   <task>
+     <statement>
+       <p>
+         Applying <xref ref="def-perpendicular-lines"/>, what would the slope of a line perpendicular to <m>f(x)</m> be?
+       <ol marker= "A." cols="2">
+        <li><m>-\dfrac{1}{3}</m></li>
+        <li><m>3</m></li>
+        <li><m>5</m></li>
+        <li><m>-\dfrac{1}{5}</m></li></ol>
+       </p>
+     </statement>
+     <answer>
+       <p>
+         A
+       </p>
+     </answer>
+   </task>
+   <task>
+     <statement>
+       <p>
+        Find an equation of the line perpendicular to <m>f(x)</m> that passes through the point <m>(3,6)</m>.
+       </p>
+     </statement>
+     <answer>
+       <p>
+         <m>y-6=-\dfrac{1}{3}(x-3)</m> or <p> <m>y=-\dfrac{1}{3}x+7</m> </p>
+       </p>
+     </answer>
+   </task>
+   </activity>
+
+   <activity xml:id="determine-if-parallel-or-perpendicular">
+
+    <introduction>
+      <p>
+        For each pair of lines, determine if they are parallel, perpendicular, or neither.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <me>f(x)=-3x+4</me>
+          <me>g(x)=5-3x</me>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Parallel. The slope of <m>f(x)</m> is <m>-3</m> and the slope of <m>g(x)</m> is <m>-3</m>.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <me>f(x)=2x-5</me>
+          <me>g(x)=6x-5</me>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Neither. The slope of <m>f(x)</m> is <m>2</m> and the slope of <m>g(x)</m> is <m>6</m>. These lines do, however, have the same <m>y</m>-intercept.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <me>f(x)=6x-5</me>
+          <me>g(x)=\dfrac{1}{6}x+8</me>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Neither. The slope of <m>f(x)</m> is <m>6</m> and the slope of <m>g(x)</m> is <m>\dfrac{1}{6}</m>. Although they are reciprocals of one another, they are not negative reciprocals.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <me>f(x)=\dfrac{4}{5}x+3</me>
+          <me>g(x)=-\dfrac{5}{4}x-1</me>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Perpendicular. The slope of <m>f(x)</m> is <m>\dfrac{4}{5}</m> and the slope of <m>g(x)</m> is <m>-\dfrac{5}{4}</m> (and are negative reciprocals of one another).
+        </p> 
+      </answer>
+    </task>
+   </activity>
+
+   <activity xml:id="write-equations-for-both-parallel-and-perpendicular">
+    <introduction>
+      <p>
+        Consider the linear equation, <m>f(x)=-\dfrac{2}{3}x-4</m> and the point A: <m>(-6,4)</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Find an equation of the line that is parallel to <m>f(x)</m> and passes through the point A.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y-4=-\dfrac{2}{3}(x+6)</m> or <p>
+            <m>y=-\dfrac{2}{3}x</m>
+          </p>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find an equation of the line that is perpendicular to <m>f(x)</m> and passes through the point A.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y-4=\dfrac{3}{2}(x+6)</m> or <p>
+            <m>y=\dfrac{3}{2}x+13</m>
+          </p>
+        </p>
+      </answer>
+    </task>
+   </activity>
+
+   <activity xml:id="special-cases">
+    <introduction>
+      <p>
+        Consider the line, <m>y=2</m>, as shown in the graph below.
+      </p>
+      <image>
+        <sageplot>
+          p=plot(2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]])
+          p
+        </sageplot>
+      </image>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          What is the slope of the line <m>y=2</m>?
+          <ol marker= "A." cols="2">
+            <li>undefined</li>
+            <li><m>0</m></li>
+            <li><m>1</m></li>
+            <li><m>-\dfrac{1}{2}</m></li></ol>
+        </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What is the slope of a line that is parallel to <m>y=2</m>?
+          <ol marker= "A." cols="2">
+            <li>undefined</li>
+            <li><m>0</m></li>
+            <li><m>1</m></li>
+            <li><m>-\dfrac{1}{2}</m></li></ol>
+        </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find an equation of the line that is parallel to <m>y=2</m> and passes through the point <m>(-1,-4)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y=-4</m>. Students might need the graph to help them visualize why the equation is in the form <m>y=</m> number.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the slope of a line that is perpendicular to <m>y=2</m>?
+            <ol marker= "A." cols="2">
+              <li>undefined</li>
+              <li><m>0</m></li>
+              <li><m>1</m></li>
+              <li><m>-\dfrac{1}{2}</m></li></ol>
+          </p>
+          </statement>
+          <answer>
+            <p>
+              A. You might need to help students see why the slope is undefined by showing that <m>-\dfrac{1}{0}</m> is not defined.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Find an equation of the line that is perpendicular to <m>y=2</m> and passes through the point <m>(-1,2)</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>x=-1</m>. Students might need the graph to help them visualize why the equation is in the form <m>x=</m> number.
+            </p>
+          </answer>
+        </task>
+   </activity>
+
+    </subsection>
+
+    <exercises>
+      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/LF4/"/>. </p> 
+    </exercises>
+
+    <!-- <subsection>
+        <title>Videos</title>
+        <p>It would be great to include videos down here, like in the Calculus book!</p>
+    </subsection> -->
+</section>

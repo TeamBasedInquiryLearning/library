@@ -9,6 +9,10 @@ on:
     # Runs on demand
     workflow_dispatch:
 
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -26,7 +30,7 @@ jobs:
               if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch) && github.event_name != 'workflow_dispatch'
               run: |
                 pretext build precal-web-instructor -q
-                pretext build calc-web-instructor -q
+                pretext build cal-web-instructor -q
                 pretext build la-web-instructor -q
 
             - name: build all deploy targets
@@ -98,9 +102,6 @@ jobs:
             contents: read
             pages: write
             id-token: write
-        concurrency:
-            group: "page"
-            cancel-in-progress: false
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
