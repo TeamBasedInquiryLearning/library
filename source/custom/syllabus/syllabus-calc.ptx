@@ -1,0 +1,910 @@
+<preface xml:id="syllabus">
+    <title>Syllabus</title>
+    <paragraphs xml:id="sec-welcome">
+        <title>Welcome</title>
+        <p>
+        Welcome to Math 0190! This page is our official syllabus; it's main purpose is to orient you to our course structure, learning outcomes, and resources that you will access throughout the semester. 
+        Please familiarize yourself with the information on this page and refer back to it as needed.
+        </p>
+        <paragraphs xml:id="subsubsec-CalcII">
+            <title>Calculus II</title>
+            <p>
+                Linear algebra is a branch of mathematics devoted to theory of linear equations and transformations.
+                A solid understanding of linear algebra allows you to (among other things):
+                <ul>
+                    <li>
+                        <p>
+                            solve systems of linear equations;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            determine the geometry of the set of solutions to such a system;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            analyze the geometry and identify important properties of a linear transformation;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            use linear algebra to model problems in a variety of disciplines. 
+                        </p>
+                    </li>
+                </ul> 
+                These skills will no doubt be used in your future mathematics and STEM courses and we'll feature a few such applications throughout the term. 
+            </p>
+            <p>
+                Math 0520 is a first course in linear algebra that will focus on the development of the standard algorithms in the subject via student inquiry, as well as the underlying geometry. 
+                Along the way, you will also develop your ability to understand proofs<mdash/>the logical arguments that form the foundation of mathematical reasoning<mdash/>and get the opportunity to write many of your own. 
+            </p>
+            <objectives>
+                <introduction>
+                    <p>
+                        By the end of this course, you will be able to:
+                    </p>
+                </introduction>
+                <ol>
+                    <li>
+                        <p>
+                            hold a conversation with an expert about linear algebra concepts using correct terminology;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            use the critical and abstract thinking skills developed in this course as a foundation for future courses in geometry and algebra;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            work productively with a team to analyze different approaches to solving the same problem;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            use introspective methods to help you monitor the development of your mathematical maturity;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            produce accurate, well-written arguments that communicate solutions to problems that are audience-appropriate;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            use your knowledge of algorithms in linear algebra to solve systems of linear equations and to calculate optimal coordinate systems for linear transformations;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            explain phenomena surrounding the nature of systems of linear equations, and properties of transformations, in both geometric and algebraic terms;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            apply your linear algebra skills to solve problems from a variety of other disciplines.
+                        </p>
+                    </li>
+                </ol>
+            </objectives>
+
+            <p>
+                In addition to the high-level learning outcomes for the course described above, each section of our Activity Book corresponds to a single <em>targeted learning outcome</em><mdash/>a specific learning outcome that will be assessed throughout our Fluency Assessment protocol that is described below. 
+                These targeted learning outcomes are chosen to form a strong foundation for your continued exploration of the course material, with all further knowledge being built up, in some way, from these outcomes. 
+            </p>
+
+            <p>
+                Here are some of the topics that we will cover in Math 0520:
+                <ul>
+                    <li>
+                        <p>
+                            vectors and vector operations;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            systems of linear equations;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            matrix operations;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            linear transformations;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            vector spaces;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            determinants;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            dot-products and orthogonality;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            eigenvalues and eigenvectors
+                        </p>
+                    </li>
+                </ul>
+                Additional topics will be covered depending on time and class interests.
+            </p>
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-prerequisites">
+            <title>Am I Ready for Math 0520?</title>
+            <p>
+                Almost certainly!
+                There are no prerequisities for Math 0520.
+                Most students have usually taken one semester of college-level math (typically calculus), but this is not at all necessary and the contents will not draw upon previous knowledge. 
+                This is a great option for a first-year college-level mathematics course. 
+            </p>
+            <p>
+                If it has been a while since you've taken a college-level math course, you may find yourself needing more time to adjust than your classmates. 
+                That is normal and we can talk about strategies to accelerate your adaption if this is a concern of yours. 
+            </p>
+            <p>
+                In addition to Math 0520, Brown also offers Math 0540: Linear Algebra with Theory. 
+                Math 0540 is a higher-level introduction to linear algebra with a greater emphasis on the development of axiomatic principles and proof-writing skills. 
+            </p>
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-inclusiveteaching">
+            <title>Inclusive Teaching</title>
+            <p>
+                Large, introductory STEM courses are well-documented as playing an outsized role in dissuading members of historically excluded groups from pursuing STEM careers. 
+                I recognize that, as an instructor of this large, introductory mathematics course, the course design decisions that I have made will affect your perceived ability and desire to concentrate in a STEM field. 
+                My sincere hope is that you leave Math 0520 a more capable and resilient problem solver and that you feel supported in this journey.
+            </p>
+
+            <p>
+                I acknowledge that not every student will have this idealized experience.
+            </p>
+
+            <p>
+                I am committed to continuing my education about evidenced-based and equity-focussed approaches to teaching, and to learning from the hundreds of students I have the pleasure of teaching each semester. 
+                If you have thoughts, questions, or concerns about this course, or STEM education at Brown, I welcome your perspective and encourage you to reach out to me.
+            </p>
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-accessibility">
+            <title>Accessibility Roadmap</title>
+            <p>
+                It's important to me that you feel you have all the tools you need to succeed in this course. 
+                Here are some high-level accessibility features that may help you:
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Lesson Recordings
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Jordan's lessons are recorded on Zoom and uploaded to the Media Library on Canvas. 
+                                These may be helpful to you if you miss class, or otherwise want to consult or remind yourself of the flow of a particular lesson. 
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        Activity Book and Vidoes
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                This open-access Activity Book is e-reader compatible; we also have the ability to print a braille version!
+                                The Activity Book contains short videos at the bottom of each section that may assist you in reviewing after lessons. 
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        If you have SAS accommodations, I will receive your letter through the online portal and send you an email with a detailed plan of your accommodations will be be implemented. 
+                        Whether or not you have SAS accommodations, you are invited to speak with me about how we can work to better include you in our course.
+                    </p>
+                </li>
+            </ul>
+        </paragraphs>
+    </paragraphs>
+
+    <paragraphs xml:id="subsec-course-structure">
+        <title>Course Design</title>
+        <p>
+            But why? Why is this course weird?
+        </p>
+        <paragraphs xml:id="subsubsec-TBIL">
+            <title>Team Based Inquiry Learning</title>
+
+            <p>
+                Team-Based Inquiry Learning (TBIL) is a cooperative learning strategy that blends elements of flipped learning, inquiry-based learning, and problem-based learning.  
+                It is a blend of team-based learning and inquiry learning first developed by <url href="https://www.tandfonline.com/doi/abs/10.1080/10511970.2019.1666440">Lewis, Clontz, and Estis</url>.
+                At its core, students prepare individually for scaffolded team-based problem-solving sessions that are designed to develop the course content and to foster the creativity and curiosity that necessitates strong problem-solving skills. 
+            </p>
+            <p>
+                In short, you'll be spending most of your class time this year working to solve problems in teams of 6, with Instructors and Teaching Fellows guiding you along the way. 
+            </p>
+            <p>
+                The research underlying TBIL indicates that this format leads to greater content mastery and flexibility in problem solving, among other important findings. 
+                For more information about this research, please visit the website for <url href="tbil.org">Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning</url>, an NSF-funded collaboration to study the effects of TBIL in introductory mathematics courses across the United States.
+            </p>
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-Teams">
+            <title>Team Structure &amp; Accountability</title>
+            <p>
+                You team will consist of 6 people and will be formed by the teaching team.
+                Working with teams allows you to learn from the perspectives and ideas of your teammates, and provides you a sounding board and feedback system to work through your own ideas. 
+                The problems that are discussed in class are solely for the purpose of us developing our linear algebra skills collaboratively and do not have any grading structure attached.
+            </p>
+            <p>
+                We will place you in stable, term-long teams so that you have the time to grow with each other over the term. 
+                Here is what to expect for team formation:
+                <ul>
+                    <li>
+                        Weeks 1 and 2: teams shuffled each class to accommodate shopping period---get to know as many of your classmates as possible!
+                    </li>
+                    <li>
+                        End of Week 2: a survey will be distributed to collect information from you needed to form teams;
+                    </li>
+                    <li>
+                        Week 3: first team assignments made by teaching team;
+                    </li>
+                    <li>
+                        Week 7: Formative Peer Feedback on Team Performance;
+                    </li>
+                    <li>
+                        Week 13: Summative Peer Feedback on Team Performance.
+                    </li>
+                    </ul>
+                    Our main goal in creating teams is to ensure that each team represents a diversity of mathematical experiences, while ensuring that individuals do not feel isolated. 
+                    We want you to meet new people and learn from each other's perspectives and experiences. 
+                    Early in the term, we will send out a survey that will help us form teams.
+            </p>
+
+            <p>
+                Your team is primarily responsible for working together on the activities in class and reporting out your responses to the facilitators and other teams. 
+                Other team responsibilities that you should consider as a team are:
+                <ul>
+                    <li>
+                        (how) will we share notes/our work from the white board?
+                    </li>
+                    <li>
+                        (how) will we meet outside of class to study or collaborate on problem sets?;
+                    </li>
+                    <li>
+                        what is our plan to catch up a teammate if they're ill or otherwise unable to participate in a session?
+                    </li>
+                    <li>
+                        how else can our team support each other this term?</li>
+                    </ul>
+                Note that the team structure in this course only pertains to our in-person class time. 
+                While we encourage you to collaborate with your teammates over the semester, there is no academic expectation that you work together outside of class, nor are are there any team projects.
+            </p>
+
+            <p>
+                In order to help you identify areas of growth and assess the quality of teamwork over the semester, teams will undergo two rounds of anonymous feedback. 
+                More details about this process and its logistics are located in Canvas.
+            </p>
+        </paragraphs>
+        <paragraphs>
+            <title>Office Hours</title>
+            <p>
+                Office Hours are one of the most useful resources we have available to you to support your learning. 
+                Every member of the teaching team offers Office Hours and you will find their times, locations, and mode (online/hybrid/in-person) on Canvas, using a shared Google Calendar. 
+                You are welcome (and encouraged) to attend any and all office hours that fit with your schedule<mdash/>it does not have to be your Instructor or Teaching Fellow's.
+                Here are some reasons you might consider attending Office Hours:
+                <ul>
+                    <li>
+                        <p>
+                            Get to know your Instructor of Teaching Fellow! We're ordinary people and like to know our students. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Get more focussed assistance with concepts from class. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Meet other students working on homework. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Practice having conversations about Mathematics.
+                        </p>
+                    </li>
+                </ul>
+                You will find the complete Calendar on our Canvas homepage.
+            </p>
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-schedule">
+            <title>Schedule and Time Expectations</title>
+            <table>
+                <title>Tentative Schedule</title>
+                <tabular halign="center">
+                    <col/>
+                    <col/>
+                    <col width="40%"/>
+                    <col/>
+                    <row header="yes" bottom="minor">
+                        <cell>Week</cell>
+                        <cell>Sections Covered</cell>
+                        <cell>Assignments Due</cell>
+                        <cell>Additional Notes</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>One (Sept. 1st-8th) </cell>
+                        <cell>Stage Setting, LE RAP</cell>
+                        <cell>
+                        </cell>
+                        <cell>
+                              First Week of Class
+                        </cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Two (Sept. 8th-15th)</cell>
+                        <cell>LE1, LE2, LE3</cell>
+                        <cell> <p>Reflection 1</p><p>Fluency Assessment(s)</p><p>Team Creation Form</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Three (Sept. 15th-22nd)</cell>
+                        <cell>LE4, EV RAP, EV1</cell>
+                        <cell> Fluency Assessments(s)</cell>
+                        <cell>Teams Assigned</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Four (Sept. 22nd-29th)</cell>
+                        <cell>EV2, EV3</cell>
+                        <cell> <p>Problem Set 1</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Five (Sept. 29th-Oct. 6th)</cell>
+                        <cell>EV4, EV5</cell>
+                        <cell> <p>Reflection 2</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Six (Oct. 6th-13th)</cell>
+                        <cell>EV6, EV7, AT RAP</cell>
+                        <cell> <p>Problem Set 2</p><p>AT RAP</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Seven (Oct. 13th-20th)</cell>
+                        <cell>AT1, AT2, AT3</cell>
+                        <cell> <p>Formative Team Feedback</p><p>Fluency Assessment(s)</p></cell>
+                        <cell><p>No Class on Monday for Indigenous Peoples' Day</p></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Eight (Oct. 20th-27th)</cell>
+                        <cell>AT4, AT5</cell>
+                        <cell> <p>Problem Set 3</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Nine (Oct. 27th-Nov. 3rd)</cell>
+                        <cell>AT6, MX RAP, MX1</cell>
+                        <cell> <p>Reflection 3</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Ten (Nov. 3rd-10th)</cell>
+                        <cell>MX2, MX3</cell>
+                        <cell> <p>Problem Set 4</p><p>Fluency Assessment(s)</p></cell>
+                        <cell><p>
+                            No Class Tuesday US Election
+                        </p></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Eleven (Nov. 10th-17th)</cell>
+                        <cell>MX3, MX4, GT RAP</cell>
+                        <cell> <p>Reflection 4</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Twelve (Nov. 17th-24th)</cell>
+                        <cell>GT1, GT2</cell>
+                        <cell> <p>Problem Set 5</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Thirteen (Nov. 24th-Dec. 1st)</cell>
+                        <cell>GT3, GT4</cell>
+                        <cell><p>Fluency Assessment(s)</p></cell>
+                        <cell><p>
+                            No Class Wednesday-Friday for Thanksgiving
+                        </p></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Fourteen (Dec. 1st-8th)</cell>
+                        <cell>GT4, Applications</cell>
+                        <cell> <p>Reflection 5</p><p>Summative Team Feedback</p><p>Fluency Assessment(s)</p></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Fifteen (Dec. 8th-15th)</cell>
+                        <cell>Class as Needed</cell>
+                        <cell><p>Fluency Assessment(s)</p></cell>
+                        <cell>Reading Period</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell>Sixteen (Dec. 15th-22nd)</cell>
+                        <cell></cell>
+                        <cell> <p>Capstone Problem Set</p></cell>
+                        <cell>Final Exam Period</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+                In this course, you'll spend three hours each week in your in-person class sessions and about an hour preparing for class activities. 
+                Outside of these sessions, you will be studying, working on problem sets, reflecting on your progress, and preparing your major assessments. 
+                We expect a typical students in this course to spend the following time allocations throughout the term:
+                <ol>
+                    <li>
+                        <p>
+                            3 hours/week preparing for an attending class
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            6 hours/week working on problem sets
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            1hour/week working on self-assessments
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            2 hours/week reviewing and/or attending office hours
+                        </p>
+                    </li>
+                </ol> 
+                for a total for 180 hours throughout the semester. 
+            </p>
+        </paragraphs>
+    </paragraphs>
+
+    <paragraphs xml:id="subsec-assessment">
+        <title>Assessment</title>
+        <p>
+            This section describes the key assessments for this course and how the fit into your overall grade. 
+            More detailed instructions and evaluation criteria are located on Canvas. 
+        </p>
+        <paragraphs xml:id="subsubsec-readiness">
+            <title>Readiness Assurance Tests</title>
+            <p>
+                To prepare for each of our course modules, you will work through a Readiness Assurance Process (RAP). 
+                The RAP consists of three separate phases. 
+                First, you will be provided learning outcomes and review materials to refresh yourself on knowledge that you will need for the upcoming module.
+                These materials are found directly in our Activity Book (on the title page of each section) but will also be linked to in Canvas. 
+            </p>
+            <p>
+                After reviewing material, you will then complete the Readiness Assurance Test (RAT). 
+                This test has two phases: first you complete the quiz individually (this is known as the individual-RAT or i-RAT) on your own. 
+                Then, you will complete the test a second time with your teammates in class (this is known as the team-RAT or t-RAT). 
+                You will find these quizzes on Canvas and we will only remember the greater of your two scores on the test. 
+                The RATs contribute 7.5% towards your overall grade.
+            </p>
+        </paragraphs>
+
+        <paragraphs xml:id="subsubsec-FluencyAssessments">
+            <title>Fluency Assessments</title>
+            <p>
+                Each section of our Activity Book corresponds to a single targeted learning outcome, each of which is assessed via a <em>Fluency Assessment</em>.
+                On a fluency assessment, you will be asked to complete a number of tasks to demonstrate fluency on the corresponding outcome. 
+                If you complete all of these tasks correctly, and provide adequate explanations using our principles of mathematical writing, you will receive a score of <em>Fluent</em>. 
+            </p>
+
+            <p>
+                If you fall short, you will receive a score of <em>Not Yet Fluent</em>. 
+                In this case, you will recieve a second opportunity to earn a score of <em>Fluent</em> by completing a new version of the Fluency Assessment. 
+                If you still fall short on the second attempt, you will have yet another third (and final) opportunity a few weeks later. 
+                Note that the last handful of objectives in the semester will only have two opportunities total due to logistical constraints. 
+            </p>
+            <p>
+                At the end of the term, your Fluency Assessment score, which is worth 25% of your overall course grade, will be equal to the number of objectives you earned Fluent in out of the total number of objectives we assessed.
+            </p>
+
+            <p>
+                The main purpose of the Fluency Assessments is to ensure that you are able to accurately complete the tasks that are aligned with our targeted learning outcomes. 
+                In turn, this ensures that you are adequately prepared for further explorations both inside and outside of this course. 
+                Since it is important for us to ensure you are doing these tasks accurately, we have a high bar to earn fluency. 
+                However, we do not care if you earn fluency on your first attempt, or on a subsequent attempt; all that matters is that, by some combination of practice, review, and the incorporation of feedback, you can eventually demonstrate you are fluent in the objective. 
+            </p>
+
+            <p>
+                Fluency Assessments are to be completed individually, without the use of your notes or external resources. 
+                Representive Fluency Assessments and sample solutions are contained at the bottom of each section of our Activity Book, and an exercise bank of Fluency Assessments is available to you on CheckIt, which is linked throughout the Activity Book and also on Canvas.
+            </p>
+             
+
+        </paragraphs>
+
+        <paragraphs>
+            <title>Problem Sets</title>
+            <p>
+              In this course, Problem Sets make up the most significant portion of assessment. 
+              Their main purpose is to assess your ability to make sense of new problems, apply concepts in new settings, and further develop your ability to communicate mathematical ideas to an audience of your peers and professionals alike. 
+              Problem Sets are significant assignments that we expect students to devote substantial time throughout the available two week period to complete them; they are not designed to be successfully completed within a single sitting. 
+            </p>
+            <p>
+                There are <alert>five (5) Problem Sets total</alert> throughout the semester and they combine to account for 25% of your overall grade. 
+                After receiving your Problem Set back from the teach team, you will have an opportunity to reflect on feedback to earn an additional 4% of credit. 
+                Note that <alert>this course does not drop any Problem Sets</alert>.  
+            </p>
+
+            <p>
+                To support your success in Problem Sets, we have created a Problem Set Success Guide that is included in this Activity Book. 
+                It contains more detailed instructions, expands on our evaluation criteria, and shares resources and strategies to help you succeed on these assessments.
+            </p>
+
+            <p>
+                Collaborating on solving the problems on a problem set with other classmates is permitted, though our expectation is that all written work is produced by you and represents your authentic thinking. 
+                Written work that closely resembles that of another classmate may be investigated for plagiarism, as is described below on this syllabus. 
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Capstone Problem Set</title>
+            <p>
+                The Final Assessment for this course is a Capstone Problem Set. 
+                The Capstone Problem Set is structured identically to a standard Problem Set, but is comprehensive in nature. 
+                Students will have about one week to complete this assessment throughout the Final Exam Period. 
+                The Capstone Problem Set is worth 20% of your overall grade. 
+                More detailed instructions will be provided on Canvas closer to the end of the semester. 
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Reflections</title>
+            <p>
+                Critical reflection is an integral part of the deep learning process. 
+                It helps us digest and personalize what we learn which, in turn, makes our learnings more valuable. 
+                Roughly every other week, you'll be asked to share your perspective on a variety of applications and topics in this course, as well as your thought processes. 
+                In doing so, we hope you'll be better able to contextualize your learning and identify your growth as a problem solver and mathematician over the course of the term. 
+                In other words, these reflections will help you consolidate your learning gains over the term.
+                Reflections are worth 7.5% of your overall grade.
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Team Work and Attendance</title>
+            <p>
+                To assess teamwork, your team will provide both formative and summative feedback to each other throughout the term. 
+                Near the half-way mark of the semester, an anonymous form will be shared for your team to provide formative feedback to each other. 
+                The main purpose of this feedback is to help you and your team identify way to improve your processes and further cultivate a strong working group. 
+                The results of this survey do not affect one's grade, but completion of the survey is worth 2.5% of your overall grade. 
+                At the end of the semester, teammates will score their teamwork using criteria co-created by our class; this will make up 5% of your overall grade. 
+            </p>
+
+            <p>
+                Attendance will be recorded after the end of shopping period. 
+                It accounts for 7.5% of a student's overall grade.
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Your Final Grade</title>
+            <p>
+                Your final grade is calculated as a weighted average of the assessments described above.
+                <xref ref="OverallGradetable"/> summarizes this calculation.  
+            </p>
+
+            <table xml:id="OverallGradetable">
+                <title>Overall Course Grade</title>
+                <tabular>
+                    <row header="yes" bottom="minor">
+                        <cell>Assessment</cell>
+                        <cell>Contribution</cell>
+                    </row>
+                    <row>
+                        <cell>Readiness Assurance</cell>
+                        <cell>7.5%</cell>
+                    </row>
+                    <row>
+                        <cell>Attendance</cell>
+                        <cell>7.5%</cell>
+                    </row>
+                    <row>
+                        <cell>Teamwork</cell>
+                        <cell>7.5%</cell>
+                    </row>
+                    <row>
+                        <cell>Attendance</cell>
+                        <cell>7.5%</cell>
+                    </row>
+                    <row>
+                        <cell>Fluency Assessments</cell>
+                        <cell>25%</cell>
+                    </row>
+                    <row>
+                        <cell>Problem Sets</cell>
+                        <cell>25%</cell>    
+                    </row>
+                    <row bottom="minor">
+                        <cell>Capstone Problem Set</cell>
+                        <cell>20%</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>100%</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+                In turn, your overall course grade will be translated into a letter grade using the cutoffs in
+            </p>
+            <table xml:id="lettergrade">
+                <title>Letter Grades</title>
+                <tabular>
+                    <row header="yes" bottom="minor">
+                        <cell>Overall Grade </cell>
+                        <cell>Letter Grade</cell>
+                    </row>
+                    <row>
+                        <cell>90<mdash/>100%</cell>
+                        <cell>A</cell>
+                    </row>
+                    <row>
+                        <cell>80<mdash/>89.9%</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell>65<mdash/>79.9%</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                        <cell>0<mdash/>64.9%</cell>
+                        <cell>NC</cell>
+                    </row>
+                </tabular>
+            </table>
+           <p>
+            Students taking this course S/NC will receive a grade of S provided that their overall grade is above 65%.
+           </p>
+        </paragraphs>
+    </paragraphs>
+
+
+    <paragraphs xml:id="subsec-course-policies">
+        <title>Course Policies</title>
+        <paragraphs xml:id="subsubsec-attendance">
+            <title>Attendance</title>
+            <p>
+                Attendance in class sessions is recorded and contributes 7.5% towards your final grade; it is recorded by the teaching team in Canvas beginning after shopping period.
+                Each student is provided <em>one week's worth of personal days</em> (3 sessions for MWF students; 2 sessions to TTh students) to use for absences of any kind. 
+                Absences other than these personal days will not be excused, unless accompanied by a Dean's Note. 
+                If you are ill or otherwise unable to attend class for a long period of time, please contact your instructor to come up with a plan to keep you on pace for the term. 
+                Late attendances (defined as entering class sometime after the first activity of class has begun) are worth 50% of attendances.
+            </p>
+
+            <p>
+                Our classroom is equipped with Zoom and I (Jordan) will record all of my class meetings. 
+                The recordings will appear in the Media Library on Canvas shortly after class. 
+            </p>
+        </paragraphs>
+
+        <paragraphs xml:id="subsubsec-LatePolicies">
+            <title>Late Work</title>
+            <p>
+                Deadlines help me keep my workload balanced and keep you on track, ultimately resulting in a better learning experience for all of us. 
+                Every assessment in this course has a deadline; some of them are hard deadlines, but there are others for which there is flexibility. 
+                Here are the descriptions of the deadlines of our most common assessments:
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Readiness Assurance Tests
+                            <ul>
+                                <li>
+                                    <p>
+                                        First attempt due prior to first class of new module (will be indicated on Canvas)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Hard deadline for first attempt. 
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Fluency Assessments
+                            <ul>
+                                <li>
+                                    <p>
+                                        Hard deadline of Sunday 11:59pm Eastern every week.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        If you miss an attempt, you have two others remaining.
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Problem Sets
+                            <ul>
+                                <li>
+                                    <p>
+                                        Due 11:59pm Eastern Tuesdays, as/when indicated on Canvas (there are 5 total)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        24-hour no-questions-asked grace period. 
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        No extensions beyond the grace period, unless communicated prior to the due date and accompanied by a Dean's Note.
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Reflections
+                            <ul>
+                                <li>
+                                    <p>
+                                        Due Sundays 11:59pm Eastern as indicated on Canvas (there are 5 total)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        May turn in within one week after deadline, after which submission closes.
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+        <paragraphs xml:id="subsubsec-Communication">
+            <title>Communication</title>
+            <p>
+                This course has two primary channels for communicating outside of class and office hours: <em>Ed STEM</em> and <em>e-mail</em>.
+                If you have a question about an assignment, course, policy, concept, or anything else that might benefit the class as a whole, please post on Ed STEM; you're welcome to post anonymously if you are shy. 
+                On the other hand, if you need to talk to us about something that is personal to your situation, please do send us an e-mail. 
+            </p>
+
+            <p>
+                Everyone has different workflows and boundaries around email communication.
+                Here are my expectations when it comes to email communication in this course; your instructor's expectations may differ from these, so take note when they share their own expectations.
+                <ul>
+                    <li>
+                        <p>
+                            I will work to respond to your message within 24 hours, or else on Monday if you write to me on Friday. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I will generally not respond or check email outside of 7:00am-4:30pm Eastern.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            You are welcome to refer to me as <q>Jordan</q> via email. 
+                            If you prefer to use a salutation, then please use one of the following (and no others):
+                            <ul>
+                                <li>
+                                    <p>
+                                        Prof.(essor) Jordan
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Prof.(essor) Kostiuk
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Dr. Kostiuk
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+    
+    </paragraphs>
+    <paragraphs xml:id="subsec-AcademicIntegrity">
+        <title>Academic Integrity</title>
+        <p>
+            High expectations are important because they set the bar for where we want to be. 
+            I set high expectations for you, and all of my students, because I know that you can reach them. 
+            You set high expectations of me because you know you deserve a quality education. 
+            Academic integrity is the intersection of these expectations. 
+            In exchange for teaching you to the best ability I can, and continuing to refine my teaching practice, I expect that the work you turn in each and every day is an accurate and faithful snapshot of what you are capable of. 
+            Hold yourself and your peers to a high standard of integrity and strive to get the most out of your education.
+        </p>
+        <p>
+            Please familiarize yourself with <url href="https://www.brown.edu/academics/college/degree/policies/academic-code">Brown's Academic Integrity Policies </url>.
+        </p>
+        <paragraphs xml:id="subsubsec-Plagiarism">
+            <title>Plagiarism</title>
+            <p>
+                In this course, plagiarism is defined as submitted work that appears identical in wording, structure, or substance to that of another person's work, whether it appears online or in writing. 
+                Some specific examples of plagiarism include:
+                <ul>
+                    <li>
+                        <p>
+                        Fluency Assessments that appear identical to sample solutions. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Problem Set solutions that appear near-identical to those submitted by another student. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Problem Set solutions that appear near-identical to solutions provided in a previous iteration of this course. 
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                If work you submit on a Fluency Assessment is deemed plagiarism by an Instructor, you will receive a score of <q>Not Yet Fluent</q>, and a warning, provided it is the first occurrence. 
+                Upon a second occurrence, the case will be forwarded to the Academic Code Committee. 
+            </p>
+
+            <p>
+                If work you submit on a Problem Set is deemed plagiarism by an Instructor, you will receive a score of 0 for each plagiarized problem, and a warning, provided it is the first occurrence. 
+                Upon a second occurrence, the case will be forwarded to the Academic Code Committee. 
+            </p>
+            
+        </paragraphs>
+        <paragraphs xml:id="subsubsec-Collaboration">
+            <title>Best Practices for Collaborating and Using Sample Solutions</title>
+            <p>
+                We want you to collaborate with your teammates and classmates, and use all the resources that are available to you to support your learning. 
+                We also want you to submit authentic work. 
+                Here are some tips to help you maximize the resources available and avoid submitting work that may be deemed plagiarism:
+                <ul>
+                    <li>
+                        <p>
+                            When reviewing sample solutions to the CheckIt problems, reflect critically on what each sentence is contributing to the solution. 
+                            We do not expect (or want) you to turn in solutions that are identical to the ones provided; we want you to communicate the required ideas and structures in your own words, using the new terminology you are learning.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            When collaborating on a Problem Set, avoid looking at the written work of a collaborate. 
+                            Instead, use a white board or scrap paper and attempt to communicate ideas verbally, and internalizing them.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+    </paragraphs>
+</preface>
