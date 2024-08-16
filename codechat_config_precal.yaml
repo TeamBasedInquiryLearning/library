@@ -1,5 +1,4 @@
 # Replace the contents of `codechat_config.yaml` with this file to edit Precalculus
-source_path: precalculus/source
 output_path: output/precal-web-instructor
 args: "{sys_executable} -m pretext build precal-web-instructor --xmlid {xml_id} --no-knowls"
 project_type: PreTeXt
