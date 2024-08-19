@@ -64,6 +64,26 @@ class Generator(BaseGenerator):
     variable = choice(["x","y"])
     value = choice([-7..7])
 
+    #Task 4
+    form = choice(["point_slope","slope_intercept","standard"])
+    if form == "point_slope":
+      point = (choice([-6..6]),choice([-6..6]))
+      slope = choice([-3..-1,1..3])
+      equation = y-point[1]== (x-point[0]).mul(slope,hold=True)
+      line4 = equation.rhs()+point[1]
+    elif form == "slope_intercept":
+      b=choice([-6..6])
+      slope = choice([-3..-1,1..3])
+      equation = y==slope*x+b
+      line4 = equation.rhs()
+    elif form=="standard":
+      A=choice([-6..-1,1..6])
+      B=choice([-6..-1,1..6])
+      C=choice([-7..7])
+      equation = A*x+B*y==C
+      line4 = -A/B*x+C/B
+
+
     return {
       "points1": points1,
       "line1": line1,
@@ -73,7 +93,8 @@ class Generator(BaseGenerator):
       task2_type: task2,
       "var": variable,
       "value": value,
-      "equation": 16,
+      "equation": equation,
+      "line4": line4,
     } 
 
   @provide_data
@@ -93,5 +114,6 @@ class Generator(BaseGenerator):
       #p3+=parametric_plot((x,data["value"]),(x,-8,8),ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
       p3+=plot(data["value"],-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
 
+    p4 = plot(data["line4"],-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
         
-    return {"plot1":p1, "plot2":p2, "plot3": p3}
+    return {"plot1":p1, "plot2":p2, "plot3": p3, "plot4": p4}
