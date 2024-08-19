@@ -83,4 +83,9 @@ class TBILPrecal:
             return y==point1[1]
         else:
             slope= (point2[1]-point1[1])/(point2[0]-point1[0])
-            return y==slope*x+point1[1]-slope*point1[0]
+            return TBILPrecal.line_from_point_slope(point1,slope)
+
+    @staticmethod
+    def line_from_point_slope(point,slope):
+        '''Returns the equation of a line from a point and slope'''
+        return y==slope*x+point[1]-slope*point[0]

@@ -41,15 +41,33 @@ class Generator(BaseGenerator):
 
     line1 = TBILPrecal.line_from_points(points1[0],points1[1])
 
+    #Task 2   
+    #Point and slope
+    task2={}
+    task2_type = choice(["point_slope","intercept_slope"])
+    
+    slope = choice([-4..4])
+    task2.update({"slope":slope})
+    if task2_type == "point_slope":
+      task2["point"]=( (choice([-5..5]),choice([-5..5])))
+    elif task2_type == "intercept_slope":
+      task2["int_type"]=choice(["x","y"])
+      task2["intercept"] = choice([-6..-1,1..6])
+      if task2["int_type"]=="x":
+        task2["point"] = (task2["intercept"],0)
+      if task2["int_type"]=="y":
+        task2["point"] = (0,task2["intercept"])
+
+    line2 = TBILPrecal.line_from_point_slope(task2["point"],slope)
+
+
     return {
       "points1": points1,
       "line1": line1,
       task1_type: task1,
-      #"point3": 5,
-      #"int_type": 6,
-      #"intercept1": 7, 
-      #"intercept2": 8, 
-      #"intercept3": 9, 
+      "point2": task2["point"],
+      "line2": line2,
+      task2_type: task2,
       "point4": 10,
       "slope1":11,
       "slope2": 12,
@@ -62,8 +80,12 @@ class Generator(BaseGenerator):
   @provide_data
   def graphics(data):
     #Graph for Task 1
-    p=Graphics()
+    #p=Graphics()
     p=plot(data["line1"].rhs(),-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
     p+=point(data["points1"],size=30)
+
+    q=plot(data["line2"].rhs(),-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
+    q+=point(data["point2"],size=30)
+
         
-    return {"plot1":p}
+    return {"plot1":p, "plot2":q}

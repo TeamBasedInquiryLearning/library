@@ -37,17 +37,22 @@
     <!-- Task 2 chooses randomly from the following 2 situations; I've made each a different paragraph. Ensure none produce a horizontal or vertical line. -->
     <knowl>
         <content>
+            <!--{{#point_slope}}-->
             <p>
-                The line whose slope is <m>{{slope1}}</m> that goes through the point <m>{{point4}}</m>. 
+                The line whose slope is <m>{{slope}}</m> that goes through the point <m>{{point}}</m>. 
             </p>
+            <!--{{/point_slope}}-->
+            <!--{{#intercept_slope}}-->
             <p>
-                The line whose slope is <m>{{slope2}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept4}}</m>.
+                The line whose slope is <m>{{slope}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept}}</m>.
                 <!-- make int_type opposite of the one that may have popped up in task 1 -->
             </p>
+            <!--{{/intercept_slope}}-->
         </content>
         <outtro>
-            <p>
-                graph goes here. If a point was mentioned, dot it in.
+            <p> <image
+                source="assets/LF3/generated/{{__seed__}}/plot2.png"
+                description="Plot"/>
             </p>
         </outtro>
         
