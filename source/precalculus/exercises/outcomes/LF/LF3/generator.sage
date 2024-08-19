@@ -60,6 +60,9 @@ class Generator(BaseGenerator):
 
     line2 = TBILPrecal.line_from_point_slope(task2["point"],slope)
 
+    #Task 3
+    variable = choice(["x","y"])
+    value = choice([-7..7])
 
     return {
       "points1": points1,
@@ -68,12 +71,8 @@ class Generator(BaseGenerator):
       "point2": task2["point"],
       "line2": line2,
       task2_type: task2,
-      "point4": 10,
-      "slope1":11,
-      "slope2": 12,
-      "intercept4": 13,
-      "x_or_y": 14,
-      "value": 15,  
+      "var": variable,
+      "value": value,
       "equation": 16,
     } 
 
@@ -81,11 +80,18 @@ class Generator(BaseGenerator):
   def graphics(data):
     #Graph for Task 1
     #p=Graphics()
-    p=plot(data["line1"].rhs(),-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
-    p+=point(data["points1"],size=30)
+    p1=plot(data["line1"].rhs(),-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
+    p1+=point(data["points1"],size=30)
 
-    q=plot(data["line2"].rhs(),-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
-    q+=point(data["point2"],size=30)
+    p2=plot(data["line2"].rhs(),-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
+    p2+=point(data["point2"],size=30)
+
+    p3=Graphics()
+    if data["var"]=="x":
+      p3+=line([(data["value"],-8),(data["value"],8)],xmin=-8,xmax=8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
+    elif data["var"]=="y":
+      #p3+=parametric_plot((x,data["value"]),(x,-8,8),ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
+      p3+=plot(data["value"],-8,8,ymin=-8,ymax=8,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
 
         
-    return {"plot1":p, "plot2":q}
+    return {"plot1":p1, "plot2":p2, "plot3": p3}

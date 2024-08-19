@@ -62,12 +62,13 @@
     <knowl>
         <content>
             <p>
-                The line <m>{{x_or_y}}={{value}}</m>. 
+                The line <m>{{var}}={{value}}</m>. 
             </p>
         </content>
         <outtro>
-            <p>
-                graph goes here. 
+            <p> <image
+                source="assets/LF3/generated/{{__seed__}}/plot3.png"
+                description="Plot"/>
             </p>
         </outtro>
     
