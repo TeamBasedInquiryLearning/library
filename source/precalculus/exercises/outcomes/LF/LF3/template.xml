@@ -7,24 +7,28 @@
         </p>
     </intro>
     
-    <!-- Task 1 chooses randomly from the following 3 situations; I've made each a different paragraph. Ensure none produce a horizontal or vertical line. -->
     <knowl>
         <content>
+            <!--{{#two_points}}-->
             <p>
                 The line containing the points <m>{{point1}}</m> and <m>{{point2}}</m>. 
             </p>
+            <!--{{/two_points}}-->
+            <!--{{#point_intercept}}-->
             <p>
-                The line containing the point <m>{{point3}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept1}}</m>. 
-                <!-- make this intercept a scalar, not a point -->
+                The line containing the point <m>{{point}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept}}</m>. 
             </p>
+            <!--{{/point_intercept}}-->
+            <!--{{#two_intercepts}}-->
             <p>
-                The line whose <m>x</m>-intercept is <m>{{intercept2}}</m> and whose <m>y</m>-intercept is <m>{{intercept3}}</m>.  
-                <!-- make the intercepts scalars, not  points, can vary which order the x and y are given -->
+                The line whose <m>x</m>-intercept is <m>{{x_intercept}}</m> and whose <m>y</m>-intercept is <m>{{y_intercept}}</m>.  
             </p>
+            <!--{{/two_intercepts}}-->
         </content>
         <outtro>
-            <p>
-                graph goes here. If a point was mentioned, dot it in.
+            <p> <image
+                source="assets/LF3/generated/{{__seed__}}/plot1.png"
+                description="Plot"/>
             </p>
         </outtro>
         
