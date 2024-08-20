@@ -3,91 +3,24 @@
     
     <intro>
         <p>
-            Graph each line.
+            Question
         </p>
     </intro>
     
-    <knowl>
-        <content>
-            <!--{{#two_points}}-->
-            <p>
-                The line containing the points <m>{{point1}}</m> and <m>{{point2}}</m>. 
-            </p>
-            <!--{{/two_points}}-->
-            <!--{{#point_intercept}}-->
-            <p>
-                The line containing the point <m>{{point}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept}}</m>. 
-            </p>
-            <!--{{/point_intercept}}-->
-            <!--{{#two_intercepts}}-->
-            <p>
-                The line whose <m>x</m>-intercept is <m>{{x_intercept}}</m> and whose <m>y</m>-intercept is <m>{{y_intercept}}</m>.  
-            </p>
-            <!--{{/two_intercepts}}-->
-        </content>
-        <outtro>
-            <p> <image
-                source="assets/LF3/generated/{{__seed__}}/plot1.png"
-                description="Plot"/>
-            </p>
-        </outtro>
-        
-    </knowl>
-
-    <!-- Task 2 chooses randomly from the following 2 situations; I've made each a different paragraph. Ensure none produce a horizontal or vertical line. -->
-    <knowl>
-        <content>
-            <!--{{#point_slope}}-->
-            <p>
-                The line whose slope is <m>{{slope}}</m> that goes through the point <m>{{point}}</m>. 
-            </p>
-            <!--{{/point_slope}}-->
-            <!--{{#intercept_slope}}-->
-            <p>
-                The line whose slope is <m>{{slope}}</m> and whose <m>{{int_type}}</m>-intercept is <m>{{intercept}}</m>.
-                <!-- make int_type opposite of the one that may have popped up in task 1 -->
-            </p>
-            <!--{{/intercept_slope}}-->
-        </content>
-        <outtro>
-            <p> <image
-                source="assets/LF3/generated/{{__seed__}}/plot2.png"
-                description="Plot"/>
-            </p>
-        </outtro>
-        
-    </knowl>
-
-    <!-- Task 3  randomly chooses a horizontal or vertical line. This is the only task with a horizontal or vertical line! Ensure the line is not an axis. -->
-    <knowl>
-        <content>
-            <p>
-                The line <m>{{var}}={{value}}</m>. 
-            </p>
-        </content>
-        <outtro>
-            <p> <image
-                source="assets/LF3/generated/{{__seed__}}/plot3.png"
-                description="Plot"/>
-            </p>
-        </outtro>
     
-        </knowl>
-
-        <!-- Task 4  randomly chooses an equation in slope-intercept, point-slope, or standard form.  -->
-        <knowl>
-            <content>
-                <p>
-                    The line whose equation is <m>{{equation}}</m>. 
-                </p>
-            </content>
-            <outtro>
-                <p> <image
-                    source="assets/LF3/generated/{{__seed__}}/plot4.png"
-                    description="Plot"/>
-                </p>
-            </outtro>
-
-        </knowl>
-
+    <knowl>
+        <content>
+            <p>
+                Task 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                Task answer
+            </p>
+        </outtro>
+        
     </knowl>
+      
+    
+</knowl>
