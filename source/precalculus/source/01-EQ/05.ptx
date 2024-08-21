@@ -27,6 +27,7 @@
           Before beginning to solve quadratic equations, we need to be able to identify all various forms of quadratics.
         </p>
       </introduction>
+      <statement>
         <p> Which of the following is a quadratic equation? 
           <ol marker= "A." cols="2">
             <li> <m>6-x^2=3x</m> </li>
@@ -34,11 +35,12 @@
             <li> <m>4(x-3)+7=0</m> </li>
             <li> <m>(x-4)^2+1=0</m> </li>
             <li> <m>5x^2-3x=17-4x</m> </li></ol></p>
-            <answer>
+       </statement>
+       <answer>
               <p>
                 A, B, D, and E
               </p>
-            </answer>
+       </answer>
     </activity>
 
     <definition xml:id="def-zero-product-property">
