@@ -2,25 +2,93 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
     <intro>
+        <!--{{#scenarioA}}-->
         <p>
-            Question
+            The cost of manufacturing {{thing}}s is <m>\${{amount}}</m> per {{thing}} 
+            plus an additional <m>\${{fixed_amount}}</m> for fixed costs. 
+            Let <m>C(x)</m> be a linear function that models the cost of 
+            producing <m>x</m> {{thing}}s. 
         </p>
+        <!--{{/scenarioA}}-->
     </intro>
     
     
+    <!--{{#taskset1}}-->
+    <!--{{#slope_task}}-->
     <knowl>
         <content>
             <p>
-                Task 
+                What is the slope?  Explain what this represents in the context of the problem.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                The slope is <m>{{slope}}</m>
             </p>
         </outtro>
-        
     </knowl>
-      
+    <!--{{/slope_task}}-->
+    <!--{{#intercept_task}}-->
+    <knowl>
+        <content>
+            <p>
+                What is the <m>y</m>-intercept?  Explain what this represents in the context of the problem.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The <m>y</m>-intercept is <m>{{intercept}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <!--{{/intercept_task}}-->
+    <!--{{/taskset1}}-->
+
+    <!--{{#scenarioA}}-->
+    <knowl>
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent {{thing}}s and let <m>C(x)</m>represent the costs.
+            </p>
+        </content>
+    </knowl>
+    <outro>
+        <p>
+            <m>C(x)={{function}}</m>
+        </p>
+    </outro>
+    <!--{{/scenarioA}}-->
+
+
+    <!--{{#taskset2}}-->
+    <!--{{#find_x_task}}-->
+    <knowl>
+        <content>
+            <p>
+                How many {{things}} can be produced for 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                
+            </p>
+        </outtro>
+    </knowl>
+    <!--{{/find_x_task}}-->
+    <!--{{#find_y_task}}-->
+    <knowl>
+        <content>
+            <p>
+                What is the <m>y</m>-intercept?  Explain what this represents in the context of the problem.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The <m>y</m>-intercept is <m>{{intercept}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <!--{{/find_y_task}}-->
+    <!--{{/taskset2}}-->
     
 </knowl>
