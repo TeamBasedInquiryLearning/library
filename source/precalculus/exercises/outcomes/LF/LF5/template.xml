@@ -31,6 +31,13 @@
             Let <m>R(d)</m> represent the amount of rice left in the bag after <m>d</m> days.
         </p>
         <!--{{/scenarioD}}-->    
+        <!--{{#scenarioE}}-->
+        <p>
+            A leaky {{vessel}} is losing water at a constant rate of <m>{{rate}}</m> ounces per {{time_unit}}.
+            The {{vessel}} originally contained <m>{{initial_amount}}</m> ounces of water.  
+            Let <m>W(x)</m> be the amount of water left in the {{vessel}} after <m>x</m> {{time_unit}}s.
+        </p>
+        <!--{{/scenarioE}}-->    
     </intro>
     <!--{{#taskset1}}-->
     <!--{{#slope_task}}-->
@@ -113,6 +120,19 @@
             </p>
         </outtro>
         <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent the number of {{time_unit}}s elapsed and let <m>W(x)</m> 
+                represent the amount of water left in the {{vessel}}.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>W(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
     </knowl>
 
 
@@ -163,10 +183,22 @@
         </content>
         <outtro>
             <p>
-                <m>{{x}}</m> 
+                <m>{{x}}</m> days
             </p>
         </outtro>
         <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>
+                After how many {{time_unit}}s will the {{vessel}} contain <m>{{y}}</m> ounces of water?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> {{time_unit}}s
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
     </knowl>
     <!--{{/find_x_task}}-->
 
@@ -216,10 +248,23 @@
         </content>
         <outtro>
             <p>
-                <m>{{y}}</m>
+                <m>{{y}}</m> ounces
             </p>
         </outtro>
-        <!--{{/scenarioD}}--></knowl>
+        <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>
+                How much water will be left in the {{vessel}} after <m>{{x}}</m> {{time_unit}}s?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m> ounces
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
+    </knowl>
     <!--{{/find_y_task}}-->
     <!--{{/taskset2}}-->
     

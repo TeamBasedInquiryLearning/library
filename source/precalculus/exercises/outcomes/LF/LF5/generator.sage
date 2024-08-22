@@ -1,7 +1,7 @@
 class Generator(BaseGenerator):
   def data(self):
     
-    scenario = choice(["scenario"+letter for letter in ["A","B","C","D"]])
+    scenario = "scenario"+choice(["A","B","C","D","E"])
 
     #At least one scenario the model doesn't start at 0
     offset=0
@@ -73,6 +73,19 @@ class Generator(BaseGenerator):
       scenario_params = { "bag_size": b,
                           "usage": m,
                           "function": f.subs({x:var("d")}),
+                        }
+
+    elif scenario == "scenarioE":
+      b=choice([50,55,200])
+      m=choice([1,..,7])
+      f=-1*m*x+b
+      xrange=[1,..,floor(b/m)-1]
+
+      scenario_params = { "initial_amount": b,
+                          "rate": m,
+                          "function": f,
+                          "time_unit": choice(["minute","hour"]),
+                          "vessel": choice(["bucket", "tank"])
                         }
 
 
