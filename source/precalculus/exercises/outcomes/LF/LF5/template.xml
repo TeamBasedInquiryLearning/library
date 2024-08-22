@@ -10,6 +10,14 @@
             {{verbing}} <m>x</m> {{thing}}s. 
         </p>
         <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <p>
+            The recent change in population of {{town}} can be described linearly.
+            In <m>{{year}}</m>, the population was <m>{{initial_population}}</m>, and it has {{verbed}}
+            by <m>{{rate}}</m> per year since. 
+            Let <m>P(x)</m> be a linear function that models the population <m>x</m> years after <m>{{year}}</m>.
+        </p>
+        <!--{{/scenarioB}}-->
     </intro>
     
     
@@ -57,6 +65,18 @@
             </p>
         </outtro>
         <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent the year since <m>{{year}}</m> and let <m>P(x)</m> represent the popuation.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>P(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
     </knowl>
 
 
@@ -75,6 +95,18 @@
             </p>
         </outtro>
         <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>
+                In what year will the population be <m>{{y}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
     </knowl>
     <!--{{/find_x_task}}-->
 
@@ -92,6 +124,18 @@
             </p>
         </outtro>
         <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>
+                What will the population be in <m>{{x}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
     </knowl>
     <!--{{/find_y_task}}-->
     <!--{{/taskset2}}-->
