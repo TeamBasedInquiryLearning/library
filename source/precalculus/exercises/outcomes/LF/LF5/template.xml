@@ -4,10 +4,10 @@
     <intro>
         <!--{{#scenarioA}}-->
         <p>
-            The cost of manufacturing {{thing}}s is <m>\${{amount}}</m> per {{thing}} 
+            The cost of {{verbing}} {{thing}}s is <m>\${{amount}}</m> per {{thing}} 
             plus an additional <m>\${{fixed_amount}}</m> for fixed costs. 
             Let <m>C(x)</m> be a linear function that models the cost of 
-            producing <m>x</m> {{thing}}s. 
+            {{verbing}} <m>x</m> {{thing}}s. 
         </p>
         <!--{{/scenarioA}}-->
     </intro>
@@ -44,49 +44,54 @@
     <!--{{/intercept_task}}-->
     <!--{{/taskset1}}-->
 
-    <!--{{#scenarioA}}-->
     <knowl>
+        <!--{{#scenarioA}}-->
         <content>
             <p>Write a linear function to model the situation. Let <m>x</m>
-                represent {{thing}}s and let <m>C(x)</m>represent the costs.
+                represent {{thing}}s and let <m>C(x)</m> represent the costs.
             </p>
         </content>
+        <outtro>
+            <p>
+                <m>C(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioA}}-->
     </knowl>
-    <outro>
-        <p>
-            <m>C(x)={{function}}</m>
-        </p>
-    </outro>
-    <!--{{/scenarioA}}-->
 
 
     <!--{{#taskset2}}-->
     <!--{{#find_x_task}}-->
     <knowl>
+        <!--{{#scenarioA}}-->
         <content>
             <p>
-                How many {{things}} can be produced for 
+                How many {{thing}}s can be {{verbed}} for <m>\${{y}}?</m>
             </p>
         </content>
         <outtro>
             <p>
-                
+                <m>{{x}}</m> {{thing}}s
             </p>
         </outtro>
+        <!--{{/scenarioA}}-->
     </knowl>
     <!--{{/find_x_task}}-->
+
     <!--{{#find_y_task}}-->
     <knowl>
+        <!--{{#scenarioA}}-->
         <content>
             <p>
-                What is the <m>y</m>-intercept?  Explain what this represents in the context of the problem.
+                How much does it cost to {{verb}} <m>{{x}}</m> {{thing}}s?
             </p>
         </content>
         <outtro>
             <p>
-                The <m>y</m>-intercept is <m>{{intercept}}</m>
+                <m>\${{y}}</m>
             </p>
         </outtro>
+        <!--{{/scenarioA}}-->
     </knowl>
     <!--{{/find_y_task}}-->
     <!--{{/taskset2}}-->
