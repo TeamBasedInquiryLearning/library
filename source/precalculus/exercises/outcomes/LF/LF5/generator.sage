@@ -1,8 +1,10 @@
 class Generator(BaseGenerator):
   def data(self):
     
-    scenario = choice(["scenarioA", "scenarioB"])
+    scenario = choice(["scenarioA", "scenarioB", "scenarioC"])
 
+    #At least one scenario the model doesn't start at 0
+    offset=0
     if scenario == "scenarioA":
       m=choice([5,10])
       b=100
@@ -16,7 +18,6 @@ class Generator(BaseGenerator):
                                                         ("produce", "produced", "producing"),
                                                       ])
       f=m*x+b
-      offset = 0 
       scenario_params = { "thing":thing,
                           "amount": m,
                           "fixed_amount": b,
@@ -52,6 +53,16 @@ class Generator(BaseGenerator):
                           "verbed": verb,
                         }
 
+    elif scenario == "scenarioC":
+      b=choice([20,..40])
+      m=choice([5,10,15])
+      f=m*x+b
+      xrange=[1..5]
+
+      scenario_params = { "first_line": b,
+                          "additional_lines": m,
+                          "function": f,
+                        }
 
 
     taskset1 = [ {"slope_task": { "slope": m}},
@@ -60,9 +71,7 @@ class Generator(BaseGenerator):
     shuffle(taskset1)
 
     point1, point2 = tuple([ (a, f.subs({x:a})) for a in sample(xrange,2)])
-    taskset2 = [ #{"find_y_task": { "x":f"{point1[0]+offset:,}", "y": f"{point1[1]:,}"}},
-                 #{"find_x_task": { "x":f"{point2[0]+offset:,}", "y": f"{point2[1]:,}"}},
-                 {"find_y_task": { "x":point1[0]+offset, "y": "{:,}".format(int(point1[1]))}},
+    taskset2 = [ {"find_y_task": { "x":point1[0]+offset, "y": "{:,}".format(int(point1[1]))}},
                  {"find_x_task": { "x":point2[0]+offset, "y": "{:,}".format(int(point2[1]))}},
                ]
     shuffle(taskset2)

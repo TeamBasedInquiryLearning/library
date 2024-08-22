@@ -18,9 +18,13 @@
             Let <m>P(x)</m> be a linear function that models the population <m>x</m> years after <m>{{year}}</m>.
         </p>
         <!--{{/scenarioB}}-->
-    </intro>
-    
-    
+        <!--{{#scenarioC}}-->
+        <p>
+            The monthly cost for a cell phone plan is <m>\${{first_line}}</m> for the first line
+            and an additional <m>\${{additional_lines}}</m> for each additional line on this plan.
+            Let <m>C(x)</m> be the cost of the cell phone plan for <m>x</m> additional lines
+        </p>
+        <!--{{/scenarioC}}-->    </intro>
     <!--{{#taskset1}}-->
     <!--{{#slope_task}}-->
     <knowl>
@@ -77,7 +81,18 @@
             </p>
         </outtro>
         <!--{{/scenarioB}}-->
-    </knowl>
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent the number of additional lines and let <m>C(x)</m> represent the cost.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>C(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}--></knowl>
 
 
     <!--{{#taskset2}}-->
@@ -107,6 +122,18 @@
             </p>
         </outtro>
         <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>
+                How many additional lines can be purchased for <m>\${{y}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
     </knowl>
     <!--{{/find_x_task}}-->
 
@@ -136,6 +163,18 @@
             </p>
         </outtro>
         <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>
+                How much does it cost to have a plan with <m>{{x}}</m> additional lines?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\${{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
     </knowl>
     <!--{{/find_y_task}}-->
     <!--{{/taskset2}}-->
