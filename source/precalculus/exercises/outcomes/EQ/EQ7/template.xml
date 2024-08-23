@@ -10,16 +10,16 @@
     <knowl>
         <content>
             <p>
-                <m>{{quad_ineq}}</m> 
+                <m>{{quadratic_ineq}}</m> 
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{quad_interval_string}}</m>
+                <m>{{quadratic_interval_string}}</m>
             </p>
             <p>
                 <image
-                    source="assets/EQ7/generated/{{__seed__}}/quad_plot.png"
+                    source="assets/EQ7/generated/{{__seed__}}/quadratic_plot.png"
                     description="Solution to inequality."/>
             </p>
         </outtro>
@@ -37,7 +37,7 @@
             </p>
             <p>
                 <image
-                    source="assets/EQ7/generated/{{__seed__}}/plot.png"
+                    source="assets/EQ7/generated/{{__seed__}}/rational_plot.png"
                     description="Solution to inequality."/>
             </p>
         </outtro>

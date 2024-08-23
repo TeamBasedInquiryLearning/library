@@ -49,6 +49,54 @@ class TBILPrecal:
         return P
 
     @staticmethod
+    def intervals_from_inequality(inequality, partition_points,undefined_points=[],checkpoints=None):
+        '''Generates a list of strings which are the intervals on which inequality is true.
+         Note that you must supply the partition_points, and it is assumed that the inequality
+          is defined between them. '''
+        #Remove duplicates
+        partition_points=list(dict.fromkeys(partition_points))
+
+        if not checkpoints:
+            checkpoints=[partition_points[0]-1]
+            for i in [0..len(partition_points)-2]:
+                checkpoints.extend(1/2*(partition_points[i]+partition_points[i+1]))
+            checkpoints.append(partition_points[-1]+1)
+        if len(checkpoints)!=len(partition_points)+1:
+            raise ValueError("Supplied list of checkpoints should contain one more item than list of partition points")
+
+        intervals= []
+        for i in range(0,len(checkpoints)):
+            p=checkpoints[i]
+            s=""
+            if inequality.subs({x:p}): 
+                if p<partition_points[0]:
+                    if partition_points[0] not in undefined_points and inequality.subs({x:partition_points[0]}):
+                        intervals.append(f"(-\\infty, {partition_points[0]}]")
+                    else:
+                        intervals.append(f"(-\\infty, {partition_points[0]})")
+                elif p>partition_points[-1]:
+                    if partition_points[-1] not in undefined_points and inequality.subs({x:partition_points[-1]}):
+                        intervals.append(f"[{partition_points[-1]}, \\infty)")
+                    else:
+                        intervals.append(f"({partition_points[-1]}, \\infty)")
+                else:
+                    s=""
+                    if partition_points[i] not in undefined_points and inequality.subs({x:partition_points[i]}):
+                        s+="["
+                    else:
+                        s+="("
+                    s+=f"{partition_points[i-1]}, {partition_points[i]}"
+                    if partition_points[i] not in undefined_points and inequality.subs({x:partition_points[i]}):
+                        s+="]"
+                    else:
+                        s+=")"
+
+            if s != "":
+                intervals.append(s)
+
+        return intervals
+
+    @staticmethod
     def numberline_from_intervals(intervals):
         #Assumes intervals are sorted and non-overlapping
         P=Graphics()
@@ -123,11 +171,3 @@ class TBILPrecal:
         '''Generates a list of unique 2-tuples of conjugate pairs of complex (not real) numbers of the form a+bi.'''
         return sample([(a+b*I,a-b*I) for a in real_part for b in imaginary_part],length)
 
-    @staticmethod
-    def check(LHS,operator, RHS):
-        if operator == '<': return LHS > RHS
-        if operator == '>': return LHS < RHS
-        if operator == '=': return LHS == RHS
-        if operator == '!=': return LHS != RHS
-        if operator == '>=': return LHS <= RHS
-        if operator == '<=': return LHS >= RHS

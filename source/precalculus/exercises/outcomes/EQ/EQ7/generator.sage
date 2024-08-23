@@ -9,50 +9,10 @@ class Generator(BaseGenerator):
     r1,r2=sample(roots,2)
     d1=r1.denominator()
     d2=r2.denominator()
-    f=expand(d1*d2*(x-r1)*(x-r2))
-    m = choice([a*x^r for (a,r) in f.coefficients()])
-    if choice([True,False]):
-      LHS_quad=f-m
-      RHS_quad=-1*m
-    else:
-      RHS_quad=f-m
-      LHS_quad=-1*m
-    ineq_quad=choice(["<","<=",">",">="])
+    quadratic_inequality = CheckIt.shuffled_inequality(*[a*x^b for (a,b) in expand(d1*d2*(x-r1)*(x-r2)).coefficients()])
     partition_points=sorted([r1,r2])
-    checkpoints=[partition_points[0]-1,1/2*(partition_points[0]+partition_points[1]),partition_points[1]+1]
 
-    #Now duplicate what happens below
-    quad_intervals= []
-    s=""
-    #for p in checkpoints:
-    for i in range(0,len(checkpoints)):
-      p=checkpoints[i]
-      s=""
-      if TBILPrecal.check(LHS_quad.subs({x:p}), ineq_quad, RHS_quad.subs({x:p})):
-        if p<partition_points[0]:
-          if TBILPrecal.check(LHS_quad.subs({x:partition_points[0]}), ineq_quad, RHS_quad.subs({x:partition_points[0]})):
-            quad_intervals.append(f"(-\\infty, {partition_points[0]}]")
-          else:
-            quad_intervals.append(f"(-\\infty, {partition_points[0]})")
-        elif p>partition_points[-1]:
-          if TBILPrecal.check(LHS_quad.subs({x:partition_points[-1]}), ineq_quad, RHS_quad.subs({x:partition_points[-1]})):
-            quad_intervals.append(f"[{partition_points[-1]}, \\infty)")
-          else:
-            quad_intervals.append(f"({partition_points[-1]}, \\infty)")
-        else:
-          s=""
-          if TBILPrecal.check(LHS_quad.subs({x:partition_points[i]}), ineq_quad, RHS_quad.subs({x:partition_points[i]})):
-            s+="["
-          else:
-            s+="("
-          s+=f"{partition_points[i-1]}, {partition_points[i]}"
-          if TBILPrecal.check(LHS_quad.subs({x:partition_points[i]}), ineq_quad, RHS_quad.subs({x:partition_points[i]})):
-            s+="]"
-          else:
-            s+=")"
-
-      if s != "":
-        quad_intervals.append(s)
+    quadratic_intervals=TBILPrecal.intervals_from_inequality(quadratic_inequality,partition_points)
 
     #Task 2
     partition_points=[]
@@ -71,10 +31,11 @@ class Generator(BaseGenerator):
 
     else:
       #Quadratic
-      r1,r2,c = sample([-5..-1,1..5],3)
-      b=1
       e=choice([-6..-1,1..6])
-      #c=choice([-6..6])
+      r1,r2 = sample([-5..-1,1..5],2)
+      #Pre-empt f=c causing a divide by zero error below
+      c= choice([a for a in [-5..-1,1..5] if a!=r1 and a!=r2 and (e==1 or a!= r1*r2/(1-e))])
+      b=1
       f=r1*r2+e*c
       a=(-r1-r2+e-c-b)/(f-c)
       d=a-1
@@ -88,64 +49,33 @@ class Generator(BaseGenerator):
     LHS = (expand((a*x+b)*a.denominator())).mul(1/(x+c),hold=True)
     RHS = (expand((d*x+e)*a.denominator())).mul(1/(x+f),hold=True)
     ineq=choice(["<","<=",">",">="])
+    if ineq == "<":
+      rational_inequality = LHS < RHS
+    elif ineq == "<=":
+      rational_inequality = LHS <= RHS
+    elif ineq == ">":
+      rational_inequality = LHS > RHS
+    elif ineq == ">=":
+      rational_inequality = LHS >= RHS
 
-    numberline=[]
-    checkpoints = [partition_points[0]-1/2]
-    checkpoints.extend([ p+1/2 for p in partition_points])
-
-    intervals= []
-    s=""
-    #for p in checkpoints:
-    for i in range(0,len(checkpoints)):
-      p=checkpoints[i]
-      s=""
-      if TBILPrecal.check(LHS.subs({x:p}), ineq, RHS.subs({x:p})):
-        if p<partition_points[0]:
-          if partition_points[0] not in undefined_points and \
-            TBILPrecal.check(LHS.subs({x:partition_points[0]}), ineq, RHS.subs({x:partition_points[0]})):
-            intervals.append(f"(-\\infty, {partition_points[0]}]")
-          else:
-            intervals.append(f"(-\\infty, {partition_points[0]})")
-        elif p>partition_points[-1]:
-          if partition_points[-1] not in undefined_points and \
-            TBILPrecal.check(LHS.subs({x:partition_points[-1]}), ineq, RHS.subs({x:partition_points[-1]})):
-            intervals.append(f"[{partition_points[-1]}, \\infty)")
-          else:
-            intervals.append(f"({partition_points[-1]}, \\infty)")
-        else:
-          s=""
-          if partition_points[i] not in undefined_points and \
-              TBILPrecal.check(LHS.subs({x:partition_points[i]}), ineq, RHS.subs({x:partition_points[i]})):
-            s+="["
-          else:
-            s+="("
-          s+=f"{partition_points[i-1]}, {partition_points[i]}"
-          if partition_points[i] not in undefined_points and \
-              TBILPrecal.check(LHS.subs({x:partition_points[i]}), ineq, RHS.subs({x:partition_points[i]})):
-            s+="]"
-          else:
-            s+=")"
-
-      if s != "":
-        intervals.append(s)
-
+    rational_intervals=TBILPrecal.intervals_from_inequality(rational_inequality,partition_points,undefined_points)
     
     return {
-      "quad_ineq": f"{latex(LHS_quad)} {(ineq_quad)} {latex(RHS_quad)}",
-      "rational_ineq": f"{latex(LHS)} {(ineq)} {latex(RHS)}",
-      "rational_interval_string": "\\cup".join(intervals),
-      "intervals": intervals,
-      "quad_intervals": quad_intervals,
-      "quad_interval_string": "\\cup".join(quad_intervals)
+      "quadratic_ineq": quadratic_inequality,
+      "quadratic_intervals": quadratic_intervals,
+      "quadratic_interval_string": "\\cup".join(quadratic_intervals),
+      "rational_ineq": rational_inequality,
+      "rational_interval_string": "\\cup".join(rational_intervals),
+      "rational_intervals": rational_intervals,
     } 
   
   @provide_data
   def graphics(data):
-      P=TBILPrecal.numberline_from_intervals(data["intervals"])      
+      P=TBILPrecal.numberline_from_intervals(data["rational_intervals"])      
       P.axes(False)
-      Q=TBILPrecal.numberline_from_intervals(data["quad_intervals"])      
+      Q=TBILPrecal.numberline_from_intervals(data["quadratic_intervals"])      
       Q.axes(False)
       return {
-          "plot": plot(P),
-          "quad_plot": plot(Q)
+          "rational_plot": plot(P),
+          "quadratic_plot": plot(Q)
       }
