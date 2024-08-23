@@ -85,5 +85,4 @@ class TBILPrecal:
             return r"\lt"
         elif ineq==">":
             return r"\gt"
-        else:
-            return "Not an inequality symbol"
+        raise ValueError("Not an inequality symbol")
