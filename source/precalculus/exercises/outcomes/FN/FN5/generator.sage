@@ -6,7 +6,7 @@ class Generator(BaseGenerator):
       functions = [choice([2..6])*x+choice([-5..5]),
                             choice([2..4])*x^2+choice([-3..3])*x^(choice([0,1])),
                             choice([1,2])*x^3+choice([-3..3])*x^(choice([0,1,2])),
-                            sqrt(choice([2..5])*x+choice([-4..4])),
+                            sqrt(choice([2..5])*x+choice([-4..4]),hold=True),
                             choice([1..4])*x/(x+choice([-5..-1,1..5]))
                             ]
       #f3(x)=choice(functions)
