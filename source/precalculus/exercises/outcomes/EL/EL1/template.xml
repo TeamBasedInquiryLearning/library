@@ -1,26 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
     
     
     <knowl>
         <content>
             <p>
-                Task 
+                Determine if the following table represents an exponential function. Explain your reasoning.
+            </p>
+            <p><me>
+                \begin{array}{c|c} 
+                x &amp; y \\\hline
+                {{#table_rows}}
+                {{x}} &amp; {{y}} \\[0.5ex]
+                {{/table_rows}}
+                \end{array}
+            </me></p>
+        </content>
+        <outtro>
+            <p>
+                This table {{does}} represent an exponential function.
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <intro>
+            <p>
+                Evaluate the following exponential functions.
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p><m>{{fname1}}({{val1}})</m> for <m>{{fname1}}(x)={{function1}}</m></p>
+            </content>
+            <outtro>
+                <p><m>{{evaluate1}}</m></p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p><m>{{fname2}}({{val2}})</m> for <m>{{fname2}}(x)={{function2}}</m></p>
+            </content>
+            <outtro>
+                <p><m>{{evaluate2}}</m></p>
+            </outtro>
+        </knowl>
+    </knowl>
+      
+    <knowl>
+        <content>
+            <p>
+            Find an equation for an exponential function passing through the points <m>{{point1}}</m> and <m>{{point2}}</m>.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                <m>{{exponential_function}}</m>
             </p>
         </outtro>
-        
     </knowl>
-      
     
 </knowl>
