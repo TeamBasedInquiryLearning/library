@@ -9,7 +9,11 @@ class Generator(BaseGenerator):
 
     #Factoring
     r1=choice([-1,1])*choice([2..6])
-    r2=choice([-1,1])*choice([2..6])
+    #Make sure r1+r2 is odd
+    if r1 % 2 == 0:
+      r2=choice([-1,1])*choice([1,3,5,7])
+    else:
+      r2 = choice([-1,1])*choice([2,4,6,8])
     equations.append( { "equation":  x^2-(r1+r2)*x==-1*r1*r2, "method":"factoring", "roots": f"{r1}\\text{{ and }}{r2}"})
 
     #Square root property
