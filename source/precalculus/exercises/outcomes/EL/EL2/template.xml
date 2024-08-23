@@ -3,7 +3,7 @@
     
     <intro>
         <p>
-           Let <m>f(x)={{equation}}</m>.
+           Let <m>f(x)={{f}}</m>.
         </p>
     </intro>
     
@@ -16,7 +16,7 @@
         </content>
         <outtro>
             <p>
-                Domain: <m>{{domain}}</m>
+                Domain: <m>(-\infty,\infty)</m>
             </p>
             <p>
                 Range: <m>{{range}}</m>
@@ -47,8 +47,10 @@
         </content>
         <outtro>
             <p>
-                graph goes here; dot in the points that (0,1) and (1,b) shifted to
-            </p>
+                <image
+                    source="assets/EL2/generated/{{__seed__}}/plot.png"
+                    description="Plot"/>
+            </p> 
         </outtro>
         
     </knowl>
