@@ -3,18 +3,11 @@
     
     <knowl>
         <content>
-            <p> Solve the linear equation 
-                <!--{{#shuffle}}-->
-                <m>{{a}}({{LHS}})={{RHS}}</m>.
-                <!--{{/shuffle}}-->
-                <!--{{^shuffle}}-->
-                <m>{{RHS}}={{a}}({{LHS}})</m>.
-                <!--{{/shuffle}}-->
-            </p>
+            <p>Solve the linear equation <m>{{equation}}</m>.</p>
         </content>
         <outtro>
             <p>
-                <m>{{variable}}={{solution}}</m>
+                <m>{{variable}}={{solution_eq}}</m>
             </p>
         </outtro>
     </knowl>
@@ -22,19 +15,13 @@
     <knowl>
         <content>
             <p>
-                Solve the linear inequality 
-                <!--{{#shuffleineq}}-->
-                <me>{{aa}}({{LHSineq}}) {{ineq}} {{RHSineq}}.</me>
-                <!--{{/shuffleineq}}-->
-                <!--{{^shuffleineq}}-->
-                <me>{{LHSineq}} {{ineq}} {{aa}}({{RHSineq}}).</me>
-                <!--{{/shuffleineq}}-->
+                Solve the linear inequality <me>{{inequality}}.</me>
                 Express your solution in interval notation and graphically on a number line.
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{interval}}</m>
+                <m>{{interval_ineq}}</m>
             </p>
             <p>
                 <image
