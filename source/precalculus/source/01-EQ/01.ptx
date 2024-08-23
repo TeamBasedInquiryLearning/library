@@ -457,7 +457,7 @@
   </statement>
   <answer>
     <p>
-      <m>x \le \dfrac{7}{3}</m>, <m>\left(-\infty, \dfrac{7}{3} \right)</m>
+      <m>x \le \dfrac{3}{7}</m>, <m>\left(-\infty, \dfrac{3}{7} \right]</m>
       <image>
       <sageplot>
         P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
@@ -465,8 +465,8 @@
         for i in range(-9,10):
           P += line([(i,-0.2),(i,0.2)],color="black")
           P += text(f"${i}$", (i,-0.6),color="black")
-        P+= arrow((7/3,0),(-10,0),color="#0088ff", width=3, arrowsize=3)
-        P += text("]", (7/3,0), color="#0088ff", fontsize=16)
+        P+= arrow((3/7,0),(-10,0),color="#0088ff", width=3, arrowsize=3)
+        P += text("]", (3/7,0), color="#0088ff", fontsize=16)
         P.axes(False)
         P
       </sageplot>
