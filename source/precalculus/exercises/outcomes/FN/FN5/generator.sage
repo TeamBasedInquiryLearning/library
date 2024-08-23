@@ -13,12 +13,9 @@ class Generator(BaseGenerator):
       f1,f2,f3,f4 = sample(functions,4)
       swap=choice([True,False])
       xval=choice([-5..-1,1..5])
-      if swap:
-        comp = f4.subs(x=f3)
-        compx= f3.subs(x=f4).subs(x=xval)
-      else:
-        comp = f3.subs(x=f4)
-        compx= f4.subs(x=f3).subs(x=xval)
+
+      comp = f4.subs(x=f3,hold=True)
+      compx= f3.subs(x=f4).subs(x=xval)
 
       return {
         "funct1": f1,
