@@ -16,7 +16,7 @@ class Generator(BaseGenerator):
 
     b=choice([2..10])
     d=choice([-1,1])*choice([1/2,2,3,4])
-    logarithm = f"\\log _{{ {b} }} \\left({latex(simplify(b^d))} \\right)"
+    logarithm = f"\\log _{{ {b} }} \\left({latex(simplify(pow(b,d)))} \\right)"
     logarithm_evaluated = d
     
 
