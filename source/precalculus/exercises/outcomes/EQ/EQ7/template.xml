@@ -3,24 +3,47 @@
     
     <intro>
         <p>
-            Question
+            Solve the following inequalities.  Express your answers in interval notation and graphically on a number line.
         </p>
     </intro>
-    
     
     <knowl>
         <content>
             <p>
-                Task 
+                <m>{{quadratic_ineq}}</m> 
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                <m>{{quadratic_interval_string}}</m>
+            </p>
+            <p>
+                <image
+                    source="assets/EQ7/generated/{{__seed__}}/quadratic_plot.png"
+                    description="Solution to inequality."/>
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                <m>{{rational_ineq}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{rational_interval_string}}</m>
+            </p>
+            <p>
+                <image
+                    source="assets/EQ7/generated/{{__seed__}}/rational_plot.png"
+                    description="Solution to inequality."/>
             </p>
         </outtro>
         
     </knowl>
       
+
     
 </knowl>
