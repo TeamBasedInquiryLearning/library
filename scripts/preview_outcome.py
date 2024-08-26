@@ -62,7 +62,7 @@ def main(book:str, outcome:str, amount:int = 20):
 
 
     b = Bank(str(sandbox_path/"bank"))
-    print('generate exercises')
+    print(f"Generating {amount} exercises")
 
     # build {amount} seeds and images
     cmds = [
