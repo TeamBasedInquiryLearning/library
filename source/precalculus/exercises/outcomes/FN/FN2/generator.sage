@@ -45,7 +45,7 @@ class Generator(BaseGenerator):
     #Construct some line segments with integral slopes so that it passes through
     #few points (x,y) with y an integer and x not an integer
     #Pick endpoints of line segments
-    xpoints=sample([-8..8],choice([4..5]))
+    xpoints=sample([2*n+choice([0,1]) for n in range(-4,4)],choice([4..5]))
     xpoints.sort()
     #Pick first point arbitrarily
     points=[(xpoints[0], choice([-8..8]))]
@@ -115,5 +115,4 @@ class Generator(BaseGenerator):
     p=Graphics()
     for piece in data["g_pieces"]:
       p+=plot(piece[1],piece[0][0],piece[0][1],thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1)
-    #If you return plot(p) the gridlines disappear, so return p
     return {"plot": p}
