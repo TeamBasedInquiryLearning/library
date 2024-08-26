@@ -6,20 +6,49 @@
     <knowl>
         <content>
             <p>
-                Determine if the following table represents an exponential function. Explain your reasoning.
+                Determine which of the following tables represents an exponential function. Explain your reasoning.
             </p>
+            <!-- {{#left}} -->
             <p><me>
                 \begin{array}{c|c} 
                 x &amp; y \\\hline
-                {{#table_rows}}
+                {{#exp_table_rows}}
                 {{x}} &amp; {{y}} \\[0.5ex]
-                {{/table_rows}}
+                {{/exp_table_rows}}
+                \end{array}
+                \hspace{1em}
+                \begin{array}{c|c} 
+                x &amp; y \\\hline
+                {{#nonexp_table_rows}}
+                {{x}} &amp; {{y}} \\[0.5ex]
+                {{/nonexp_table_rows}}
                 \end{array}
             </me></p>
+            <!-- {{/left}} -->
+            <!-- {{#right}} -->
+            <p><me>
+                \begin{array}{c|c} 
+                x &amp; y \\\hline
+                {{#nonexp_table_rows}}
+                {{x}} &amp; {{y}} \\[0.5ex]
+                {{/nonexp_table_rows}}
+                \end{array}
+                \hspace{1em}
+                \begin{array}{c|c} 
+                x &amp; y \\\hline
+                {{#exp_table_rows}}
+                {{x}} &amp; {{y}} \\[0.5ex]
+                {{/exp_table_rows}}
+                \end{array}
+            </me></p>
+            <!-- {{/right}} -->
         </content>
         <outtro>
             <p>
-                This table {{does}} represent an exponential function.
+                The {{#left}}left{{/left}}{{#right}}right{{/right}}
+                table represents an exponential function, but the
+                {{#left}}right{{/left}}{{#right}}left{{/right}}
+                table does not.
             </p>
         </outtro>
     </knowl>
