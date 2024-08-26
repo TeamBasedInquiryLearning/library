@@ -14,7 +14,7 @@ class Generator(BaseGenerator):
     shuffle(log_vars)
     log_equation = pow(log_vars[0],log_vars[1])== log_vars[2]
 
-    b=choice(range(2,11))
+    b=ZZ(choice(range(2,11)))
     d=choice([-1,1])*choice([1/2,2,3,4])
     logarithm = f"\\log _{{ {b} }} \\left({latex(simplify(pow(b,d)))} \\right)"
     logarithm_evaluated = d
