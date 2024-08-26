@@ -1,3 +1,4 @@
+import operator
 load("../sage/common.sage")
 
 class Generator(BaseGenerator):
@@ -48,15 +49,9 @@ class Generator(BaseGenerator):
 
     LHS = (expand((a*x+b)*a.denominator())).mul(1/(x+c),hold=True)
     RHS = (expand((d*x+e)*a.denominator())).mul(1/(x+f),hold=True)
-    ineq=choice(["<","<=",">",">="])
-    if ineq == "<":
-      rational_inequality = LHS < RHS
-    elif ineq == "<=":
-      rational_inequality = LHS <= RHS
-    elif ineq == ">":
-      rational_inequality = LHS > RHS
-    elif ineq == ">=":
-      rational_inequality = LHS >= RHS
+
+    op = choice([operator.lt, operator.le, operator.ge, operator.gt])
+    rational_inequality = op(LHS,RHS)
 
     rational_intervals=TBILPrecal.intervals_from_inequality(rational_inequality,partition_points,undefined_points)
     
