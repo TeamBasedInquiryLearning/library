@@ -46,7 +46,7 @@ class Generator(BaseGenerator):
 
 
       scenario_params = { "town": choice(["Sunnydale", "Capeside", "Hawkins", "Pawnee", "Hill Valley", "Springfield", "Stars Hollow", "Bayside"]),
-                          "initial_population": "{:,}".format(b),
+                          "initial_population": "{:,}".format(b).replace(",","{,}"),
                           "year": offset,
                           "rate": abs(m),
                           "function": f,
@@ -95,8 +95,8 @@ class Generator(BaseGenerator):
     shuffle(taskset1)
 
     point1, point2 = tuple([ (a, f.subs({x:a})) for a in sample(xrange,2)])
-    taskset2 = [ {"find_y_task": { "x":point1[0]+offset, "y": "{:,}".format(int(point1[1]))}},
-                 {"find_x_task": { "x":point2[0]+offset, "y": "{:,}".format(int(point2[1]))}},
+    taskset2 = [ {"find_y_task": { "x":point1[0]+offset, "y": "{:,}".format(int(point1[1])).replace(",","{,}")}},
+                 {"find_x_task": { "x":point2[0]+offset, "y": "{:,}".format(int(point2[1])).replace(",","{,}")}},
                ]
     shuffle(taskset2)
 
