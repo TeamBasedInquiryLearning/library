@@ -171,3 +171,18 @@ class TBILPrecal:
         '''Generates a list of unique 2-tuples of conjugate pairs of complex (not real) numbers of the form a+bi.'''
         return sample([(a+b*I,a-b*I) for a in real_part for b in imaginary_part],length)
 
+    @staticmethod
+    def line_from_points(point1,point2):
+        '''Returns the equation of a line through the two given points'''
+        if point1[0]==point2[0]:
+            return x==point1[0]
+        elif point1[1]==point2[1]:
+            return y==point1[1]
+        else:
+            slope= (point2[1]-point1[1])/(point2[0]-point1[0])
+            return TBILPrecal.line_from_point_slope(point1,slope)
+
+    @staticmethod
+    def line_from_point_slope(point,slope):
+        '''Returns the equation of a line from a point and slope'''
+        return y==slope*x+point[1]-slope*point[0]
