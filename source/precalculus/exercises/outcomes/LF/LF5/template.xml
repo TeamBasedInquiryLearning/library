@@ -2,25 +2,270 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
     <intro>
+        <!--{{#scenarioA}}-->
         <p>
-            Question
+            The cost of {{verbing}} {{thing}}s is <m>\${{amount}}</m> per {{thing}} 
+            plus an additional <m>\${{fixed_amount}}</m> for fixed costs. 
+            Let <m>C(x)</m> be a linear function that models the cost of 
+            {{verbing}} <m>x</m> {{thing}}s. 
         </p>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <p>
+            The recent change in population of {{town}} can be described linearly.
+            In <m>{{year}}</m>, the population was <m>{{initial_population}}</m>, and it has {{verbed}}
+            by <m>{{rate}}</m> per year since. 
+            Let <m>P(x)</m> be a linear function that models the population <m>x</m> years after <m>{{year}}</m>.
+        </p>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <p>
+            The monthly cost for a cell phone plan is <m>\${{first_line}}</m> for the first line
+            and an additional <m>\${{additional_lines}}</m> for each additional line on this plan.
+            Let <m>C(x)</m> be the cost of the cell phone plan for <m>x</m> additional lines
+        </p>
+        <!--{{/scenarioC}}-->    
+        <!--{{#scenarioD}}-->
+        <p>
+            A family buys a <m>{{bag_size}}</m>-ounce bag of rice.  They use <m>{{usage}}</m> ounces per day.
+            Let <m>R(d)</m> represent the amount of rice left in the bag after <m>d</m> days.
+        </p>
+        <!--{{/scenarioD}}-->    
+        <!--{{#scenarioE}}-->
+        <p>
+            A leaky {{vessel}} is losing water at a constant rate of <m>{{rate}}</m> ounces per {{time_unit}}.
+            The {{vessel}} originally contained <m>{{initial_amount}}</m> ounces of water.  
+            Let <m>W(x)</m> be the amount of water left in the {{vessel}} after <m>x</m> {{time_unit}}s.
+        </p>
+        <!--{{/scenarioE}}-->    
     </intro>
-    
-    
+    <!--{{#taskset1}}-->
+    <!--{{#slope_task}}-->
     <knowl>
         <content>
             <p>
-                Task 
+                What is the slope?  Explain what this represents in the context of the problem.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                The slope is <m>{{slope}}</m>
             </p>
         </outtro>
-        
     </knowl>
-      
+    <!--{{/slope_task}}-->
+    <!--{{#intercept_task}}-->
+    <knowl>
+        <content>
+            <p>
+                What is the <m>y</m>-intercept?  Explain what this represents in the context of the problem.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The <m>y</m>-intercept is <m>{{intercept}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <!--{{/intercept_task}}-->
+    <!--{{/taskset1}}-->
+
+    <knowl>
+        <!--{{#scenarioA}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent {{thing}}s and let <m>C(x)</m> represent the costs.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>C(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent the year since <m>{{year}}</m> and let <m>P(x)</m> represent the popuation.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>P(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent the number of additional lines and let <m>C(x)</m> represent the cost.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>C(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
+        <!--{{#scenarioD}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>d</m>
+                represent the number of days elapsed and let <m>R(d)</m> 
+                represent the amount of rice left in the bag.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>R(d)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>Write a linear function to model the situation. Let <m>x</m>
+                represent the number of {{time_unit}}s elapsed and let <m>W(x)</m> 
+                represent the amount of water left in the {{vessel}}.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>W(x)={{function}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
+    </knowl>
+
+
+    <!--{{#taskset2}}-->
+    <!--{{#find_x_task}}-->
+    <knowl>
+        <!--{{#scenarioA}}-->
+        <content>
+            <p>
+                How many {{thing}}s can be {{verbed}} for <m>\${{y}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> {{thing}}s
+            </p>
+        </outtro>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>
+                In what year will the population be <m>{{y}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>
+                How many additional lines can be purchased for <m>\${{y}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
+        <!--{{#scenarioD}}-->
+        <content>
+            <p>
+                After how many days will the family have <m>{{y}}</m> ounces of rice left in the bag?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> days
+            </p>
+        </outtro>
+        <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>
+                After how many {{time_unit}}s will the {{vessel}} contain <m>{{y}}</m> ounces of water?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> {{time_unit}}s
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
+    </knowl>
+    <!--{{/find_x_task}}-->
+
+    <!--{{#find_y_task}}-->
+    <knowl>
+        <!--{{#scenarioA}}-->
+        <content>
+            <p>
+                How much does it cost to {{verb}} <m>{{x}}</m> {{thing}}s?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\${{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>
+                What will the population be in <m>{{x}}?</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>
+                How much does it cost to have a plan with <m>{{x}}</m> additional lines?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\${{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
+        <!--{{#scenarioD}}-->
+        <content>
+            <p>
+                How much rice will be left in the bag after <m>{{x}}</m> days?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m> ounces
+            </p>
+        </outtro>
+        <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>
+                How much water will be left in the {{vessel}} after <m>{{x}}</m> {{time_unit}}s?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m> ounces
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
+    </knowl>
+    <!--{{/find_y_task}}-->
+    <!--{{/taskset2}}-->
     
 </knowl>
