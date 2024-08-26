@@ -1,24 +1,59 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
-    
     
     <knowl>
         <content>
             <p>
-                Task 
+            Find the average rate of change of <m>{{f}}</m> on the interval <m>{{interval}}.</m>
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                The average rate of change is <m>{{rate}}.</m>
             </p>
         </outtro>
+        
+    </knowl>
+    <knowl>
+        <intro>
+            <p>
+            Calculate the slope of each line.
+            </p>
+        </intro>
+        <!--{{#line_tasks}}-->
+        <knowl>
+            <content>
+                <!--{{#table_task}}-->
+                <p>The line defined by the table
+                    <me>
+                        \begin{array}{c|c} 
+                        x &amp; y \\\hline
+                        {{#table_rows}}
+                        {{x}} &amp; {{y}} \\
+                        {{/table_rows}}
+                        \end{array}
+                    </me> 
+                </p>
+                <!--{{/table_task}}-->
+                <!--{{#graph_task}}-->
+                <p>The line graphed below.</p>
+                <p> <image
+                    source="assets/LF1/generated/{{__seed__}}/plot.png"
+                    description="Plot"/>
+            </p>
+                <!--{{/graph_task}}-->
+                <!--{{#points_task}}-->
+                <p>The line through the points <m>{{point1}}</m> and <m>{{point2}}.</m></p>
+                <!--{{/points_task}}-->
+            </content>
+            <outtro>
+                <p>
+                    The slope is <m>{{slope}}.</m>
+                </p>
+            </outtro>
+        </knowl>
+        <!--{{/line_tasks}}-->
         
     </knowl>
       
