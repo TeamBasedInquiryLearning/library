@@ -1,7 +1,7 @@
 class Generator(BaseGenerator):
   def data(self):
     a=1
-    b = choice([2..6]+[e])
+    b = choice([2,3,4,5,6])
     c=0
     d=0
     k=1
@@ -17,15 +17,15 @@ class Generator(BaseGenerator):
     if reflection == "vertical":
       a=-1
     if shift == "horizontal":
-      c = choice([-4..-1,1..4])
+      c = choice(range(1,5))*choice([-1,1])
     if shift == "vertical":
-      d = choice([-5..-1,1..5])
+      d = choice(range(1,6))*choice([-1,1])
     
     f=a*b^(k*x-c)+d
 
     return {
       "f": f,
-      "range": f"(-\infty,{d})" if reflection=="vertical" else f"({d},\infty)",
+      "range": f"(-\\infty,{d})" if reflection=="vertical" else f"({d},\\infty)",
       "asymptote": d,
       "hshift": c,
       "flipped": reflection == "vertical",
