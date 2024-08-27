@@ -239,7 +239,7 @@ Multiply a row by a nonzero constant, for example:
     <task>
         <statement>
             <p>
-Subtract one row by another row, for example:
+Add one row to another row, for example:
             </p>
 <sidebyside>
     <p>
@@ -248,7 +248,7 @@ Subtract one row by another row, for example:
                                     \\ 1 &amp; 3 &amp; 5 \end{array}\right]
         \sim
             \left[\begin{array}{cc|c} 1 &amp; 2 &amp; 4
-                                    \\1-1 &amp; 3-2 &amp; 5-4 \end{array}\right]
+                                    \\1+1 &amp; 3+2 &amp; 5+4 \end{array}\right]
         </me>
     </p>
     <p>
