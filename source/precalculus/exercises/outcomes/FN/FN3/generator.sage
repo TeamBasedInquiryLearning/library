@@ -46,12 +46,7 @@ class Generator(BaseGenerator):
                         R.lagrange_polynomial([graph["cut_points"][3], graph["endpoints"][1]])
                         ]
 
-      graph["plot_pieces"] = [plot(graph["pieces"][0],xmin=graph["domain"][0],xmax=graph["cut_points"][0][0],thickness=3),
-                              plot(graph["pieces"][1],xmin=graph["cut_points"][0][0],xmax=graph["cut_points"][1][0],thickness=3),
-                              plot(graph["pieces"][2],xmin=graph["cut_points"][1][0],xmax=graph["cut_points"][2][0],thickness=3),
-                              plot(graph["pieces"][3],xmin=graph["cut_points"][2][0],xmax=graph["cut_points"][3][0],thickness=3),
-                              plot(graph["pieces"][4],xmin=graph["cut_points"][3][0],xmax=graph["domain"][1],thickness=3),
-                            ]
+
 
       extreme_point_possibilities = [ graph["pieces"][0].subs({x:graph["domain"][0]}), graph["pieces"][4].subs({x:graph["domain"][1]})] + [ p[1] for p in graph["extrema"]["points"] ]
       graph["range"] = [ min(extreme_point_possibilities), max(extreme_point_possibilities)]
@@ -80,7 +75,16 @@ class Generator(BaseGenerator):
   @provide_data
   def graphics(data):
   # updated by clontz
+      plots=[]
+      for i in [0,1]:
+        plots.append( plot(data["graphs"][i]["pieces"][0],xmin=data["graphs"][i]["domain"][0],xmax=data["graphs"][i]["cut_points"][0][0],thickness=3) +
+                      plot(data["graphs"][i]["pieces"][1],xmin=data["graphs"][i]["cut_points"][0][0],xmax=data["graphs"][i]["cut_points"][1][0],thickness=3) +
+                      plot(data["graphs"][i]["pieces"][2],xmin=data["graphs"][i]["cut_points"][1][0],xmax=data["graphs"][i]["cut_points"][2][0],thickness=3) +
+                      plot(data["graphs"][i]["pieces"][3],xmin=data["graphs"][i]["cut_points"][2][0],xmax=data["graphs"][i]["cut_points"][3][0],thickness=3) +
+                      plot(data["graphs"][i]["pieces"][4],xmin=data["graphs"][i]["cut_points"][3][0],xmax=data["graphs"][i]["domain"][1],thickness=3)
+                    )
       return {
-          "graph1": plot(sum(data["graphs"][0]["plot_pieces"])),
-          "graph2": plot(sum(data["graphs"][1]["plot_pieces"])),
+          
+          "graph1": plots[0],
+          "graph2": plots[1]
           }
