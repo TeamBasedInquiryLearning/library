@@ -2,25 +2,170 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
     <intro>
+        <!--{{#scenarioA}}-->
         <p>
-            Question
+            A {{account}} has <m>\${{amount}}</m> in it initially.  
+            It earns interest at a rate of <m>{{APR}}\%</m>, compounded {{compounding}}.
+            The amount in the account after <m>{{var}}</m> years is modeled by the function <me>{{f}},</me>
+            where <m>P</m> represents the initial amount, <m>r</m> represents the interest rate, and <m>n</m> 
+            is the number of times per year interest is compounded.
         </p>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <p>
+            A population of {{creatures}} is growing exponentially, with the popultation after <m>t</m> {{units}}
+            modeled by the equation
+            <me>P(t) = a \cdot b^t,</me>
+            where <m>a</m> is the initial population and <m>b</m> is the growth rate.
+            Suppose that there are initially <m>{{amount}}</m> {{creatures}}, and
+            after <m>{{x0}}</m> {{units}}, there are <m>{{y0}}</m> {{creatures}}.
+        </p>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <p>
+        </p>
+        <!--{{/scenarioC}}-->    
+        <!--{{#scenarioD}}-->
+        <p>
+        </p>
+        <!--{{/scenarioD}}-->    
+        <!--{{#scenarioE}}-->
+        <p>
+        </p>
+        <!--{{/scenarioE}}-->    
     </intro>
     
     
+   <!--{{#tasks}}-->
+    <!--{{#find_x_task}}-->
     <knowl>
+        <!--{{#scenarioA}}-->
         <content>
             <p>
-                Task 
+                How long will it take for the account to have <m>\${{y}}</m>?
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                <m>{{x}}</m>  years.
             </p>
         </outtro>
-        
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>
+                How long will it take for there to be <m>{{y}}</m>  {{creatures}}?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> {{units}}
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>
+                Give <m>{{y}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
+        <!--{{#scenarioD}}-->
+        <content>
+            <p>
+                Give <m>{{y}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>
+                Give <m>{{y}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{x}}</m> 
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
     </knowl>
-      
+    <!--{{/find_x_task}}-->
+
+    <!--{{#find_y_task}}-->
+    <knowl>
+        <!--{{#scenarioA}}-->
+        <content>
+            <p>
+                How much will be in the account after <m>{{x}}</m> years? Round to the nearest dollar.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\${{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+            <p>
+               How many {{creatures}} will there be after <m>{{x}}</m>  {{units}}?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m> {{creatures}}
+            </p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+        <!--{{#scenarioC}}-->
+        <content>
+            <p>
+               Give <m>{{x}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioC}}-->
+        <!--{{#scenarioD}}-->
+        <content>
+            <p>
+               Give <m>{{x}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioD}}-->
+        <!--{{#scenarioE}}-->
+        <content>
+            <p>
+               Give <m>{{x}}</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{y}}</m>
+            </p>
+        </outtro>
+        <!--{{/scenarioE}}-->
+    </knowl>
+    <!--{{/find_y_task}}-->
+    <!--{{/tasks}}-->
     
 </knowl>

@@ -1,10 +1,49 @@
+from decimal import Decimal
 class Generator(BaseGenerator):
-    def data(self):
-      return {
-        "eq": 3,
-        "ineq": 4,
-        "eqansinterval": 5,
-        "eqansgraph": 6,
-        "ineqansinterval": 7,
-        "ineqansgraph": 8
-      } 
+  def data(self):
+    scenario = "scenario"+choice(["A","B"])#"C","D","E"])
+
+    if scenario == "scenarioA":
+      APR = choice([2,2.25,..,6])
+      r=APR/100
+      compounding , n = choice([("annually", 1), ("semiannually", 2), ("quarterly", 4), ("monthly", 6)])
+      amount = choice([10,..,30])*1000
+      variable = var('t')
+      f=amount*pow(1+r/n,n*variable)
+      xrange = [5..25]
+      scenario_params={"APR": Decimal(str(APR)).normalize(), 
+                       "compounding": compounding,
+                       "amount": amount,
+                       "f": f"A({variable})=P\left(1+\dfrac{{r}}{{n}}\\right)^{{ n{variable} }}",
+                       "var": variable,
+                       "account": choice(["savings account", "529 college savings account", "certificate of deposit"]),
+                      }
+    elif scenario == "scenarioB":
+      creatures, units, amount, b = choice([("bacteria", "days", 1000*choice([1..9]), choice([1.2,1.4,..,2.6])),
+                                            ("deer", "years", 100*choice([2..8]), choice([1.5,1.6,..,2.5])), 
+                                            ("algae", "days", 1000*choice([2..8]), choice([1.5,1.6,..,3.5])), 
+                                            ("jellyfish", "weeks", 1000*choice([2..8]), choice([1.5,1.6,..,3.5])), 
+                                           ])
+      variable = var('t')
+      f=amount*b^variable
+      x0=choice([2..5])
+      xrange = [x0+1..10]
+      scenario_params={"creatures": creatures,
+                       "units": units,
+                       "amount": amount,
+                       "x0": x0,
+                       "y0": round(f.subs({variable:x0}),0),
+                      }
+    
+
+
+    point1, point2 = tuple([ (a, f.subs({variable:a})) for a in sample(xrange,2)])
+    tasks = [ {"find_y_task": { "x": point1[0], "y": round(point1[1],0) }},
+              {"find_x_task": { "x": point2[0], "y": round(point2[1],0) }},
+            ]
+    shuffle(tasks)
+
+    return {
+      scenario: scenario_params, 
+      "tasks": tasks,
+    } 
