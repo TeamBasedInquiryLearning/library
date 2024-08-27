@@ -15,7 +15,7 @@
         <p>
             A population of {{creatures}} is growing exponentially, with the popultation after <m>t</m> {{units}}
             modeled by the equation
-            <me>P(t) = a \cdot b^t,</me>
+            <me>{{f}},</me>
             where <m>a</m> is the initial population and <m>b</m> is the growth rate.
             Suppose that there are initially <m>{{amount}}</m> {{creatures}}, and
             after <m>{{x0}}</m> {{units}}, there are <m>{{y0}}</m> {{creatures}}.
@@ -23,6 +23,9 @@
         <!--{{/scenarioB}}-->
         <!--{{#scenarioC}}-->
         <p>
+            A {{asset}} is initially valued at <m>\${{amount}}</m>, and depreciates at a rate of <m>{{APR}}\%</m> each year.
+            The value of the {{asset}} after <m>t</m> years is modeled by the equation <me>{{f}},</me> where <m>A</m> is the initial
+            value and <m>r</m> represents the annual rate of depreciation.
         </p>
         <!--{{/scenarioC}}-->    
         <!--{{#scenarioD}}-->
@@ -66,12 +69,12 @@
         <!--{{#scenarioC}}-->
         <content>
             <p>
-                Give <m>{{y}}</m> 
+                After how long will the {{asset}} be worth <m>\${{y}}</m>? 
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{x}}</m> 
+                <m>{{x}}</m> years
             </p>
         </outtro>
         <!--{{/scenarioC}}-->
@@ -131,12 +134,12 @@
         <!--{{#scenarioC}}-->
         <content>
             <p>
-               Give <m>{{x}}</m> 
+               How much will the {{asset}} be worth after <m>{{x}}</m>  years?
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{y}}</m>
+                <m>\${{y}}</m>
             </p>
         </outtro>
         <!--{{/scenarioC}}-->

@@ -1,7 +1,7 @@
 from decimal import Decimal
 class Generator(BaseGenerator):
   def data(self):
-    scenario = "scenario"+choice(["A","B"])#"C","D","E"])
+    scenario = "scenario"+choice(["A","B","C"])#,"D","E"])
 
     if scenario == "scenarioA":
       APR = choice([2,2.25,..,6])
@@ -31,10 +31,24 @@ class Generator(BaseGenerator):
       scenario_params={"creatures": creatures,
                        "units": units,
                        "amount": amount,
+                       "f": f"P({variable})=a\cdot b^{variable}",
                        "x0": x0,
                        "y0": round(f.subs({variable:x0}),0),
                       }
     
+    elif scenario == "scenarioC":
+      APR = choice([2,2.25,..,6])
+      r=APR/100
+      amount = choice([30,..,60])*1000
+      variable = var('t')
+      f=amount*pow(1-r,variable)
+      xrange = [5..25]
+      scenario_params={"APR": Decimal(str(APR)).normalize(), 
+                       "amount": amount,
+                       "f": f"A({variable})=A\left(1-r\\right)^{{ {variable} }}",
+                       "var": variable,
+                       "asset": choice(["car", "RV", "boat"]),
+                      }
 
 
     point1, point2 = tuple([ (a, f.subs({variable:a})) for a in sample(xrange,2)])
