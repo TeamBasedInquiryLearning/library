@@ -70,7 +70,7 @@ class Generator(BaseGenerator):
       point = (choice([-6..6]),choice([-6..6]))
       slope = choice([-3..-1,1..3])
       equation = y-point[1]== (x-point[0]).mul(slope,hold=True)
-      line4 = equation.rhs()+point[1]
+      line4 = equation.rhs().unhold()+point[1]
     elif form == "slope_intercept":
       b=choice([-6..6])
       slope = choice([-3..-1,1..3])
