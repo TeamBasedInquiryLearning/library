@@ -781,37 +781,6 @@ Augmented matrix:
         </p>
         </statement>
     </example>
-
-    <definition xml:id="LE1-def-coefficient-matrix">
-        <statement>
-            <p>
-In the case we need to only analyze the coefficients of a linear system,
-we will use a <term>coefficient matrix</term> rather than the full augmented matrix:
-            </p>
-            <md alignment="alignat" alignat-columns="5">
-                <mrow>
-    a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; b_1
-                </mrow>
-                <mrow>
-    a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; b_2
-                </mrow>
-                <mrow>
-     \vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots
-                </mrow>
-                <mrow>
-    a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; b_m
-                </mrow>
-            </md>
-            <me>
-    \left[\begin{array}{cccc}
-      a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
-      a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
-      \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
-      a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
-    \end{array}\right]
-            </me>
-        </statement>
-    </definition>
     </subsection>
 
     <subsection>
