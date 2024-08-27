@@ -30,6 +30,10 @@
         <!--{{/scenarioC}}-->    
         <!--{{#scenarioD}}-->
         <p>
+            The isotope {{isotope}} has a half-life of <m>{{half_life}}</m> {{time_units}}. A scientist has a sample
+            of <m>{{amount}}</m> {{units}} of {{isotope}}, which decays radioactively according to the model
+            <me>{{f}},</me>
+            where <m>A</m> is the initial amount, and <m>h</m> is the half-life.
         </p>
         <!--{{/scenarioD}}-->    
         <!--{{#scenarioE}}-->
@@ -81,12 +85,12 @@
         <!--{{#scenarioD}}-->
         <content>
             <p>
-                Give <m>{{y}}</m> 
+                After how long will there be <m>{{y}}</m> {{units}} of {{isotope}} left?
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{x}}</m> 
+                <m>{{x}}</m> {{time_units}}
             </p>
         </outtro>
         <!--{{/scenarioD}}-->
@@ -146,12 +150,12 @@
         <!--{{#scenarioD}}-->
         <content>
             <p>
-               Give <m>{{x}}</m> 
+               How much {{isotope}} will be left after <m>{{x}}</m>  {{time_units}}?
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{y}}</m>
+                <m>{{y}}</m> {{units}}
             </p>
         </outtro>
         <!--{{/scenarioD}}-->
