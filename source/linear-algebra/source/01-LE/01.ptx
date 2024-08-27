@@ -466,28 +466,122 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
         </introduction>
         <task>
             <p>
-  Find three different solutions
-  for this system.
+  Find several different solutions
+  for this system:
             </p>
+            <me>             
+\left[\begin{array}{c}
+1 \\
+-1
+\end{array}\right] \hspace{3em}       
+\left[\begin{array}{c}
+\unknown \\
+2
+\end{array}\right] \hspace{3em}    
+\left[\begin{array}{c}
+0 \\
+\unknown
+\end{array}\right] \hspace{3em}
+\left[\begin{array}{c}
+\unknown \\
+\unknown
+\end{array}\right] \hspace{3em}
+\left[\begin{array}{c}
+\unknown \\
+\unknown
+\end{array}\right]
+            </me>
         </task>
         <task>
+            <statement>
             <p>
-  Let <m>x_2=a</m> where <m>a</m> is an arbitrary real number, then find an
-  expression for <m>x_1</m> in terms of <m>a</m>. Use this to write
-  the solution set
-  <m>
-    \setBuilder
-    {
-        \left[\begin{array}{c}
-        \unknown \\
-        a
-      \end{array}\right]
-    }{
-      a \in \IR
-      }
-  </m>
-  for the linear system.
+Suppose we let <m>x_2=a</m> where <m>a</m> is an arbitrary real number. Which of these
+expressions for <m>x_1</m> in terms of <m>a</m> satisfies both equations of the linear system?
             </p>
+            <p>
+                <ol marker="A." cols="2">
+                    <li><m>x_1=-3a</m></li>
+                    <li><m>x_1=3</m></li>
+                    <li><m>x_1=2a-3</m></li>
+                    <li><m>x_1=-4a+6</m></li>
+                </ol>
+            </p>
+            </statement>
+            <answer><p>C. <m>x_1=2a-3</m></p></answer>
+        </task>
+        <task>
+            <statement>
+            <p>
+Given <m>x_2=a</m> and the expression you found in the previous task, which of these
+describes the solution set for this system?
+            </p>
+            <ol marker="A." cols="2">
+                <li>
+                    <m>
+\setBuilder
+{
+    \left[\begin{array}{c}
+    2a-3 \\
+    a
+\end{array}\right]
+}{
+a \in \IR
+}
+                    </m>
+                </li>
+                <li>
+                    <m>
+\setBuilder
+{
+    \left[\begin{array}{c}
+    a \\
+    2a-3
+\end{array}\right]
+}{
+a \in \IR
+}
+                    </m>
+                </li>
+                <li>
+                    <m>
+\setBuilder
+{
+    \left[\begin{array}{c}
+    a \\
+    b
+\end{array}\right]
+}{
+a \in \IR
+}
+                    </m>
+                </li>
+                <li>
+                    <m>
+\setBuilder
+{
+    \left[\begin{array}{c}
+    2a-3 \\
+    2b-3
+\end{array}\right]
+}{
+a \in \IR
+}
+                    </m>
+                </li>
+            </ol>
+        </statement>
+        <answer><p>A.
+            <m>
+\setBuilder
+{
+\left[\begin{array}{c}
+2a-3 \\
+a
+\end{array}\right]
+}{
+a \in \IR
+}
+            </m></p></answer>
         </task>
     </activity>
 
@@ -505,12 +599,14 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
                 </mrow>
             </md>
             <p>
-  Describe the solution set
+Substitute <m>x_2=a</m> and <m>x_4=b</m>, and then solve for <m>x_1</m> and <m>x_3</m>:
+<me>x_1 = \unknown \hspace{6em} x_3 = \unknown \hspace{6em}</me>
+Then use these to describe the solution set
   <me>
       \setBuilder
     {
         \left[\begin{array}{c}
-          \unknown \\
+          \hspace{3em}\unknown\hspace{3em} \\
           a \\
           \unknown \\
           b
@@ -519,9 +615,7 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
       a,b \in \IR
     }
   </me>
-  to the linear system
-  by setting <m>x_2=a</m> and <m>x_4=b</m>, and then solving for <m>x_1</m> and
-  <m>x_3</m>.
+  to the linear system.
             </p>
         </statement>
     </activity>
