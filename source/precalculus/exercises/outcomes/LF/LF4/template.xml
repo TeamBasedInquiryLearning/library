@@ -1,25 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
-    
-    
     <knowl>
         <content>
             <p>
-                Task 
+                 Find the value of <m>{{var}}</m> so that the line passing through the points
+                 <m>{{point1}}</m> and <m>{{point2}}</m> is {{orientation1}} to the line that passes
+                 through the points <m>{{point3}}</m> and <m>{{point4}}.</m>
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                <m>{{var}}={{answer}}</m>
             </p>
         </outtro>
-        
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                 Find an equation of the line that passes through the point <m>{{point5}}</m> 
+                 and is {{orientation2}} to the line <m>{{line}}.</m> 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{new_line}}</m>
+            </p>
+        </outtro>
     </knowl>
       
     

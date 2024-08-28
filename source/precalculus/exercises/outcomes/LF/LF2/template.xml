@@ -1,26 +1,77 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
-    
-    
     <knowl>
         <content>
             <p>
-                Task 
+                Determine the slope and <m>y</m>-intercept of the following line. 
+                <m mode="display">{{line1}}</m>
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                The slope is <m>{{slope1}}</m> and the <m>y</m>-intercept is <m>(0,{{yint1}}).</m>
             </p>
         </outtro>
         
     </knowl>
+
+    <knowl>
+        <intro>
+            <p>
+                Find an equation for each line represented below.
+            </p>
+        </intro>
+        
+        <knowl>
+            <content>
+                <p>
+                    The line graphed below.
+                    <!-- include two integer points so it's clear what the lines goes through like in activity 3.2.8, fractional slope fine   -->
+                </p>
+                <p> <image
+                    source="assets/LF2/generated/{{__seed__}}/plot.png"
+                    description="Plot"/>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{line2_si}}</m> or <m>{{line2_ps}}</m>
+                    <!-- using si for slope-intercept and ps for point-slope -->
+                </p>
+            </outtro> 
+        </knowl>
+
+        <knowl>
+            <content>
+                <p>
+                The line with a slope of <m>{{slope3}}</m> and passing through the point <m>{{point3}}.</m>
+                <!-- integer points, but fractional slope is fine -->
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{line3_si}}</m> or <m>{{line3_ps}}</m>
+                    <!-- using si for slope-intercept and ps for point-slope -->
+                </p>
+            </outtro> 
+        </knowl>
+
+        <knowl>
+            <content>
+                <p>
+                The line through the points <m>{{point4_1}}</m> and <m>{{point4_2}}</m>. 
+                <!-- integer points, but fractional slope is fine -->
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{line4_si}}</m> or <m>{{line4_ps}}</m>
+                    <!-- using si for slope-intercept and ps for point-slope -->
+                </p>
+            </outtro> 
+        </knowl>
+
+    </knowl>
       
-    
 </knowl>

@@ -1,97 +1,87 @@
-class Generator(BaseGenerator):
-    def data(self):        
-        var1, var2 = sample([var('x'),var('y'),var('z')],2)
+load("../sage/common.sage")
 
-        a=choice([-1,1])*randrange(2,5)
-        b=choice([-1,1])*randrange(2,5)
-        c=choice([-1,1])*randrange(2,9)
-        d=choice([-1,1])*randrange(2,6)
-        f=choice([-1,1])*randrange(2,9)
+class Generator(BaseGenerator):
+    def data(self):
+        eqvar, ineqvar = sample([var('x'),var('y'),var('z')],2)
+
+        a,b,c,d,f = sample([n*choice([-1,1]) for n in range(2,7)], 5)
 
         # ensure a*b-d != 0
         d = a*b + choice([-1,1])*randrange(2,6)
 
-        LHS = b*var1+c
-        RHS = d*var1+f
+        LHS = b*eqvar+c
+        RHS = d*eqvar+f
 
-        solution = (f-a*c)/(a*b-d)
-
-        aa=choice([-1,1])*randrange(2,5)
-        bb=choice([-1,1])*randrange(2,5)
-        cc=choice([-1,1])*randrange(2,9)
-
-        ## ensure |ff-aa*cc| =< 15 (prevent big sols)
-        ff = aa*cc + randrange(-15,16)
-
-        # ensure |aa*bb-dd| >= 2 (prevent division by zero)
-        dd = aa*bb + choice([-1,1])*randrange(2,6)
-
-        LHSineq = bb*var2+cc
-        RHSineq = dd*var2+ff
+        solution_eq = (f-a*c)/(a*b-d)
+        equation = choice([
+            SR(a).mul(LHS, hold=True) == RHS,
+            RHS == SR(a).mul(LHS, hold=True)
+        ])
 
 
-        solution_ineq = (ff-aa*cc)/(aa*bb-dd)
+        a,b,c= sample([n*choice([-1,1]) for n in range(2,7)], 3)
 
-
-        ineq=choice(['<','<=','>=','>'])
-        if ineq=='<':
-            if aa*bb-dd>0:
-                interval = f"(-\\infty, {solution_ineq})"
-            if aa*bb-dd<0:
-                interval = f"({solution_ineq},\\infty)"
-        if ineq=='<=':
-            if aa*bb-dd>0:
-                interval = f"(-\\infty, {solution_ineq}]"
-            if aa*bb-dd<0:
-                interval = f"[{solution_ineq},\\infty)"
-        if ineq=='>':
-            if aa*bb-dd>0:
-                interval = f"({solution_ineq},\\infty)"
-            if aa*bb-dd<0:
-                interval = f"(-\\infty, {solution_ineq})"        
-        if ineq=='>=':
-            if aa*bb-dd>0:
-                interval = f"[{solution_ineq},\\infty)"
-            if aa*bb-dd<0:
-                interval = f"(-\\infty, {solution_ineq}]"
+        ## ensure |f-a*c| =< 15 (prevent big sols)
+        f = a*c + randrange(-15,16)
+        # ensure |a*b-d| >= 2 (prevent division by zero)
+        d = a*b + choice([-1,1])*randrange(2,6)
+        direction = choice(["left","right"])
+        strict = choice([True,False])
+        solution_ineq = (f-a*c)/(a*b-d)
+        if direction == "left":
+            if strict:
+                interval_ineq = f"(-\\infty, {solution_ineq})"
+                inequality = choice([
+                    SR(a).mul(b*ineqvar+c,hold=True) < d*ineqvar+f,
+                    d*ineqvar+f > SR(a).mul(b*ineqvar+c,hold=True)
+                ])
+            else:
+                interval_ineq = f"(-\\infty, {solution_ineq}]"
+                inequality = choice([
+                    SR(a).mul(b*ineqvar+c,hold=True) <= d*ineqvar+f,
+                    d*ineqvar+f >= SR(a).mul(b*ineqvar+c,hold=True)
+                ])
+        else:
+            if strict:
+                interval_ineq = f"({solution_ineq}, \\infty)"
+                inequality = choice([
+                    SR(a).mul(b*ineqvar+c,hold=True) > d*ineqvar+f,
+                    d*ineqvar+f < SR(a).mul(b*ineqvar+c,hold=True)
+                ])
+            else:
+                interval_ineq = f"[{solution_ineq}, \\infty)"
+                inequality = choice([
+                    SR(a).mul(b*ineqvar+c,hold=True) >= d*ineqvar+f,
+                    d*ineqvar+f <= SR(a).mul(b*ineqvar+c,hold=True)
+                ])
 
 
         return {
-            "a": a,
-            "shuffle": choice([True,False]),
-            "LHS": LHS,
-            "RHS": RHS,
-            "solution": solution,
-            "variable": var1,
-            "aa": a,
-            "shuffleineq": choice([True,False]),
-            "LHSineq": LHSineq,
-            "RHSineq": RHSineq,
-            "ineq": ineq,
-            "solution2": solution_ineq,
-            "interval": interval
+            "equation": equation,
+            "solution_eq": solution_eq,
+            "variable": eqvar,
+            "solution_ineq": solution_ineq,
+            "interval_ineq": interval_ineq,
+            "inequality": inequality,
+            "direction": direction,
+            "strict": strict,
         }
 
     @provide_data
     def graphics(data):
-        P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
-        P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
-        for i in range(-9,10):
-            P += line([(i,-0.2),(i,0.2)],color="black")
-            P += text(f"${i}$", (i,-0.6),color="black")
-        if data["ineq"] in [">", ">="]:
-            P += arrow((data["solution2"],0),(10,0),color="#0088ff", width=3, arrowsize=3)
+        P = TBILPrecal.numberline_plot()
+        if data["direction"] == "left":
+            P += TBILPrecal.inequality_plot(
+                end=data["solution_ineq"],
+                strict_end=data["strict"],
+                label_endpoints=True,
+            )
         else:
-            P += arrow((data["solution2"],0),(-10,0),color="#0088ff", width=3, arrowsize=3)
-        P += text(f"${round(data['solution2'],ndigits=2)}$", (data["solution2"],0.6), color="black")
-        if data["ineq"] == ">":
-            P += text("(", (data['solution2'],0), color="#0088ff", fontsize=16)
-        elif data["ineq"] == "<":
-            P += text(")", (data['solution2'],0), color="#0088ff", fontsize=16)
-        elif data["ineq"] == ">=":
-            P += text("[", (data['solution2'],0), color="#0088ff", fontsize=16)
-        elif data["ineq"] == "<=":
-            P += text("]", (data['solution2'],0), color="#0088ff", fontsize=16)
+            P += TBILPrecal.inequality_plot(
+                start=data["solution_ineq"],
+                strict_start=data["strict"],
+                label_endpoints=True,
+            )
         P.axes(False)
         return {
             "plot": plot(P)

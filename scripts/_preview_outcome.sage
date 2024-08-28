@@ -203,7 +203,7 @@ generator_path = "outcome/generator.sage"
 load(generator_path) # must provide Generator class extending BaseGenerator
 generator = Generator()
 outcome_slug = sys.argv[1]
-amount = 20
+amount = int(sys.argv[2])
 seeds = []
 for i in range(amount):
     seed_int = int(i)

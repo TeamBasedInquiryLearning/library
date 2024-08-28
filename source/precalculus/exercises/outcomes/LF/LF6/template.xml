@@ -1,26 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    <intro>
+    <content>
         <p>
-            Question
+            Solve the system of equations.
         </p>
-    </intro>
-    
-    
-    <knowl>
-        <content>
-            <p>
-                Task 
-            </p>
-        </content>
-        <outtro>
-            <p>
-                Task answer
-            </p>
-        </outtro>
+        <p>
+            <me>{{system}}</me>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>{{solution}}</m>
+        </p>
+    </outtro>
         
-    </knowl>
-      
-    
 </knowl>
