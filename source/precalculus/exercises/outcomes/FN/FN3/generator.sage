@@ -62,7 +62,7 @@ class Generator(BaseGenerator):
         {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graph["increasing"]]) }
         ] 
 
-    graphs[1]["features"].insert(1,{"feature": "has range", "result": f'({",".join(str(d) for d in graphs[1]["range"])})'})
+    graphs[1]["features"].insert(1,{"feature": "has range", "result": f'[{",".join(str(d) for d in graphs[1]["range"])}]'})
     graphs[1]["features"].insert(7,{"feature": "has global maximum of ", "result": graphs[1]["range"][1]})
     graphs[1]["features"].insert(8,{"feature": "has global minimum of ", "result": graphs[1]["range"][0]})
       
