@@ -11,7 +11,8 @@ class Generator(BaseGenerator):
       line_length=3
       graph["y_intercept"] = (0,choice([3..10]))
       graph["endpoints"]=[(-2*a-2*b-line_length,0), (2*c+line_length,math.ceil(graph["y_intercept"][1])+line_length)]
-      graph["domain"] = [graph["endpoints"][0][0]-choice([1..3]), graph["endpoints"][1][0]]
+      #graph["domain"] = [graph["endpoints"][0][0]-choice([1..3]), graph["endpoints"][1][0]]
+      graph["domain"] = [graph["endpoints"][0][0]-b, graph["endpoints"][1][0]]
       graph["x_intercept"] = [(-2*a-2*b-line_length,0),(-2*a-line_length,0)]
       graph["extrema"] = {"points":[(-2*a-b-line_length,choice([-8..-3])),
                                     (-1*a,choice([(graph["y_intercept"][1]+1)..13])),
