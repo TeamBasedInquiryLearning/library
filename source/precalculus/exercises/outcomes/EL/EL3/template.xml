@@ -1,25 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    
-    <intro>
-        <p>
-            Question
-        </p>
-    </intro>
-    
-    
+
+    <knowl>
+        <knowl>
+            <content>
+                <p>
+                    Write the following exponential equation in logarithmic form. 
+                </p>
+                <p><me>{{exponential_equation}}</me></p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{exponential_equation_in_logarithmic}}</m>
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+                    Write the following logarithmic equation in exponential form. 
+                </p>
+                <p><me>{{logarithmic_equation}}</me></p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{logarithmic_equation_in_exponential}}</m>
+                </p>
+            </outtro>
+        </knowl> 
+    </knowl>
+
     <knowl>
         <content>
-            <p>
-                Task 
-            </p>
+            <p>Evaluate the logarithm <m>{{logarithm}}.</m></p>
         </content>
         <outtro>
-            <p>
-                Task answer
-            </p>
+            <p><m>{{evaluated_logarithm}}</m></p>
         </outtro>
-        
     </knowl>
       
     

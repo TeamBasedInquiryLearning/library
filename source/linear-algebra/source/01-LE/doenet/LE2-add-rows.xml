@@ -1,0 +1,72 @@
+<p>
+    Observe what happens geometrically when we add a multiple of <m>R_1</m> to <m>R_2</m>
+    in the below matrix:
+  </p>
+  <slider bindValueTo="$scale" from="-5" to="5" step="1"/>
+  <setup>
+    <math name="scale">0</math>
+    <point name="solution" coords="(-3,3)">
+        <constraints>
+          <constrainToGrid/>
+        </constraints>
+    </point>
+    <math name="a_1">1</math>
+    <math name="b_1">2</math>
+    <math simplify name="c_1">$a_1*$solution.x + $b_1*$solution.y</math>
+    <line slope="-$a_1/$b_1" through="$solution" name="eq_1"/>
+    <math name="a_2">3</math>
+    <math name="b_2">-4</math>
+    <math simplify name="c_2">$a_2*$solution.x + $b_2*$solution.y</math>
+    <math simplify name="a_3">$a_2+$scale*$a_1</math>
+    <math simplify name="b_3">$b_2+$scale*$b_1</math>
+    <math simplify name="c_3">$c_2+$scale*$c_1</math>
+    <line slope="-$a_2/$b_2" through="$solution" name="eq_2"/>
+    <line slope="-$a_3/$b_3" through="$solution" name="eq_3"/>
+    <latex name="scale_op">R_2 + $scale R_1 \to R_2</latex>
+  </setup>
+  <me>
+  \left[
+  \begin{array}{cc|c}
+    $a_1 \amp $b_1 \amp $c_1 \\
+    $a_2 \amp $b_2 \amp $c_2
+  \end{array}
+  \right] \stackrel{$scale_op}{\sim}
+  \left[
+  \begin{array}{cc|c}
+    $a_1 \amp $b_1 \amp $c_1 \\
+    $a_2 + $scale($a_1) \amp $b_2 + $scale($b_1) \amp $c_2 + $scale($c_1)
+  \end{array}
+  \right]
+  </me>
+  <me> =
+  \left[
+  \begin{array}{cc|c}
+    $a_1 \amp $b_1 \amp $c_1 \\
+    $a_3 \amp $b_3 \amp $c_3
+  \end{array}
+  \right]
+  </me>
+  <sideBySide>
+    <graph xmin="-10" ymin="-10" xmax="10" ymax="10">
+      <point coords="$solution"/>
+      <line equation="$eq_1" styleNumber="1"/>
+      <m draggable="false" anchor="(-5,-6)">
+        R_1: <math simplify>$a_1*x + $b_1*y</math> = $c_1
+      </m>
+      <m draggable="false" anchor="(-5,-8)">
+        R_2: <math simplify>$a_2*x + $b_2*y</math> = $c_2
+      </m>
+      <line equation="$eq_2" styleNumber="2"/>
+    </graph>
+    <graph xmin="-10" ymin="-10" xmax="10" ymax="10">
+      <point draggable="false" coords="$solution"/>
+      <line equation="$eq_1" styleNumber="1"/>
+      <m draggable="false" anchor="(-5,-6)">
+        R_1: <math simplify>$a_1*x + $b_1*y</math> = $c_1
+      </m>
+      <m draggable="false" anchor="(-5,-8)">
+        R_2: <math simplify>$a_3*x + $b_3*y</math> = $c_3
+      </m>
+      <line equation="$eq_3" styleNumber="2"/>
+    </graph>
+  </sideBySide>

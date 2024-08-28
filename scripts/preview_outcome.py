@@ -8,7 +8,7 @@ import lxml.etree as ET
 from checkit.bank import Bank
 from checkit import static
 
-def main(book:str, outcome:str):
+def main(book:str, outcome:str, amount:int = 20):
     # check that this outcome exists
     exercise_path = Path("source", book, "exercises")
     sage_library_path = Path("source", book, "sage")
@@ -62,13 +62,14 @@ def main(book:str, outcome:str):
 
 
     b = Bank(str(sandbox_path/"bank"))
-    print('generate exercises')
+    print(f"Generating {amount} exercises")
 
-    # build 20 seeds and images
+    # build {amount} seeds and images
     cmds = [
         "sage",
         os.path.join("scripts", "_preview_outcome.sage"),
-        outcome
+        outcome, 
+        f"{amount}"
     ]
     subprocess.run(cmds,check=True)
 
@@ -91,5 +92,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Preview a CheckIt outcome.')
     parser.add_argument('book', choices=['precalculus', 'calculus', 'linear-algebra'])
     parser.add_argument('outcome')
+    parser.add_argument('--all', action=argparse.BooleanOptionalAction)
     args = parser.parse_args()
-    main(book=args.book, outcome=args.outcome)
+    if args.all:
+        amount = 1000
+    else:
+        amount = 20
+    main(book=args.book, outcome=args.outcome, amount=amount)
