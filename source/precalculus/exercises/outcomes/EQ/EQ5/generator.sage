@@ -14,7 +14,7 @@ class Generator(BaseGenerator):
       r2=choice([-1,1])*choice([1,3,5,7])
     else:
       r2 = choice([-1,1])*choice([2,4,6,8])
-    equations.append( { "equation":  x^2-(r1+r2)*x==-1*r1*r2, "method":"factoring", "roots": f"{r1}\\text{{ and }}{r2}"})
+    equations.append( { "equation":  x^2-(r1+r2)*x==-1*r1*r2, "method":"factoring and the zero product property", "roots": f"{r1}\\text{{ and }}{r2}"})
 
     #Square root property
     a=choice([2..5])
@@ -38,7 +38,7 @@ class Generator(BaseGenerator):
     r1,r2=irrationals[0]
     c=irrationals[1]
     equations.append( { "equation": c^2*x^2-2*(r1+r2)*c^2*x == expand(-1*c^2*r1*r2), 
-                       "method":"the quadratic equation", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
+                       "method":"the quadratic formula", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
     shuffle(equations)
 
 
