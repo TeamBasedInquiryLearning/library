@@ -323,81 +323,81 @@ different solutions. We'll learn how to find such solution sets in
     <introduction>
       <p> Consider each of the following systems of linear equations or vector equations. </p>
     </introduction>
+    <task>
+      <introduction>
+        <p>
+          <me>\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; - &amp; 3 \, x_{3} &amp; = &amp; 8 \\ 3 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; - &amp; 5 \, x_{3} &amp; = &amp; 17 \\ x_{1} &amp; - &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; 7 \\ 10 \, x_{1} &amp; - &amp; 8 \, x_{2} &amp; - &amp; 21 \, x_{3} &amp; = &amp; 65 \\ \end{matrix}</me>
+        </p>
+      </introduction>
       <task>
-        <introduction>
-          <p>
-            <me>\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; + &amp; x_{3} &amp; = &amp; 4 \\ &amp; &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; -1 \\ &amp; &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; -3 \\ x_{1} &amp; + &amp; 2 \, x_{2} &amp; - &amp; 5 \, x_{3} &amp; = &amp; 0 \\ \end{matrix}</me>
-          </p>
-        </introduction>
-          <task>
-            <statement>
-              <p> Explain and demonstrate how to find a simpler linear system that has the same solution set. </p>
-            </statement>
-            <answer>
-              <p>
-                <me>\begin{matrix} x_{1} &amp; &amp; &amp; - &amp; x_{3} &amp; = &amp; 0 \\ &amp; &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
-              </p>
-            </answer>
-          </task>
-          <task>
-            <statement>
-              <p> Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation. </p>
-            </statement>
-            <answer>
-              <p> The solution set has no solutions.  The solution set is <m>\emptyset</m>.  </p>
-            </answer>
-          </task>
+          <statement>
+            <p> Explain and demonstrate how to find a simpler linear system that has the same solution set. </p>
+          </statement>
+          <answer>
+            <p>
+              <me>\begin{matrix} x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; 2 \\ &amp; &amp; x_{2} &amp; &amp; &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; = &amp; -1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
+            </p>
+          </answer>
         </task>
-      <task>
-        <introduction>
-          <p>
-            <me>\begin{matrix} -x_{1} &amp; + &amp; x_{2} &amp; + &amp; x_{3} &amp; = &amp; 2 \\ -3 \, x_{1} &amp; + &amp; x_{2} &amp; - &amp; 4 \, x_{3} &amp; = &amp; -9 \\ 2 \, x_{1} &amp; - &amp; x_{2} &amp; + &amp; 2 \, x_{3} &amp; = &amp; 5 \\ -6 \, x_{1} &amp; + &amp; 3 \, x_{2} &amp; - &amp; 4 \, x_{3} &amp; = &amp; -9 \\ \end{matrix}</me>
-          </p>
-        </introduction>
-          <task>
-            <statement>
-              <p> Explain and demonstrate how to find a simpler linear system that has the same solution set. </p>
-            </statement>
-            <answer>
-              <p>
-                <me>\begin{matrix} x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; -2 \\ &amp; &amp; x_{2} &amp; &amp; &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; = &amp; 3 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
-              </p>
-            </answer>
-          </task>
-          <task>
-            <statement>
-              <p> Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation. </p>
-            </statement>
-            <answer>
-              <p> The solution set has one solution.  The solution set is <m>\left\{ \left[\begin{array}{c} -2 \\ -3 \\ 3 \end{array}\right] \right\}</m>.  </p>
-            </answer>
-          </task>
+        <task>
+          <statement>
+            <p> Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation. </p>
+          </statement>
+          <answer>
+            <p> The solution set has one solution.  The solution set is <m>\left\{ \left[\begin{array}{c} 2 \\ -3 \\ -1 \end{array}\right] \right\}</m>.  </p>
+          </answer>
         </task>
+    </task>
+    <task>
+      <introduction>
+        <p>
+          <me>\begin{matrix} x_{1} &amp; - &amp; 5 \, x_{2} &amp; - &amp; 15 \, x_{3} &amp; = &amp; -8 \\ &amp; &amp; x_{2} &amp; + &amp; 3 \, x_{3} &amp; = &amp; 1 \\ x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; 2 \\ 5 \, x_{1} &amp; - &amp; 7 \, x_{2} &amp; - &amp; 21 \, x_{3} &amp; = &amp; -10 \\ \end{matrix}</me>
+        </p>
+      </introduction>
       <task>
-        <introduction>
-          <p>
-            <me>\begin{matrix} x_{1} &amp; + &amp; 4 \, x_{2} &amp; - &amp; 14 \, x_{3} &amp; = &amp; 11 \\ -x_{1} &amp; - &amp; 3 \, x_{2} &amp; + &amp; 11 \, x_{3} &amp; = &amp; -8 \\ -x_{1} &amp; - &amp; 3 \, x_{2} &amp; + &amp; 11 \, x_{3} &amp; = &amp; -8 \\ &amp; &amp; 3 \, x_{2} &amp; - &amp; 9 \, x_{3} &amp; = &amp; 9 \\ \end{matrix}</me>
-          </p>
-        </introduction>
-          <task>
-            <statement>
-              <p> Explain and demonstrate how to find a simpler linear system that has the same solution set. </p>
-            </statement>
-            <answer>
-              <p>
-                <me>\begin{matrix} x_{1} &amp; &amp; &amp; - &amp; 2 \, x_{3} &amp; = &amp; -1 \\ &amp; &amp; x_{2} &amp; - &amp; 3 \, x_{3} &amp; = &amp; 3 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
-              </p>
-            </answer>
-          </task>
-          <task>
-            <statement>
-              <p> Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation. </p>
-            </statement>
-            <answer>
-              <p> The solution set has infinitely-many solutions.  </p>
-            </answer>
-          </task>
-      </task>
+          <statement>
+            <p> Explain and demonstrate how to find a simpler linear system that has the same solution set. </p>
+          </statement>
+          <answer>
+            <p>
+              <me>\begin{matrix} x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; 0 \\ &amp; &amp; x_{2} &amp; + &amp; 3 \, x_{3} &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p> Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation. </p>
+          </statement>
+          <answer>
+            <p> The solution set has no solutions.  The solution set is <m>\emptyset</m>.  </p>
+          </answer>
+        </task>
+    </task>
+    <task>
+      <introduction>
+        <p>
+          <me>\begin{matrix} -2 \, x_{1} &amp; + &amp; 2 \, x_{2} &amp; + &amp; 5 \, x_{3} &amp; = &amp; 1 \\ -x_{1} &amp; + &amp; x_{2} &amp; + &amp; 2 \, x_{3} &amp; = &amp; 1 \\ 2 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; + &amp; x_{3} &amp; = &amp; -7 \\ -2 \, x_{1} &amp; + &amp; 2 \, x_{2} &amp; + &amp; 16 \, x_{3} &amp; = &amp; -10 \\ \end{matrix}</me>
+        </p>
+      </introduction>
+        <task>
+          <statement>
+            <p> Explain and demonstrate how to find a simpler linear system that has the same solution set. </p>
+          </statement>
+          <answer>
+            <p>
+              <me>\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; &amp; &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; = &amp; -1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p> Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation. </p>
+          </statement>
+          <answer>
+            <p> The solution set has infinitely-many solutions.  </p>
+          </answer>
+        </task>
+    </task>
   </activity>
 
 <sage language="octave">
