@@ -26,8 +26,7 @@ class Generator(BaseGenerator):
       d=a
       c=choice([-6..-1,1..6])
       e=choice([-6..-1,1..6])
-      #If f=c, then necessarily b=e and we end up with LHS=RHS.  So let's avoid that
-      f=choice([ i for i in [-6..-1,1..6] if i!=c])
+      f=choice([-6..-1,1..6])
       b=(f-1)*a*(f-c)+e*(c-f+1)
       partition_points = [1-f]
 
