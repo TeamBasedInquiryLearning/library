@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="meta/docinfo.ptx"/>
+    <book xml:id="linear-algebra-for-team-based-inquiry-learning">
+        <title>Linear Algebra for Team-Based Inquiry Learning</title>
+        <subtitle component="main">Fall 2024 Math 0520 Edition</subtitle>
+        <subtitle component="instructor">2024 Edition PREVIEW (Instructor Version)</subtitle>
+
+        <xi:include href="meta/frontmatter.ptx"/><!-- inserted custom prefaces -->
+        <xi:include href="01-LE/main.ptx"/>
+        <xi:include href="02-EV/main.ptx"/>
+        <xi:include href="03-AT/main.ptx"/>
+        <xi:include href="04-MX/main.ptx"/>
+        <xi:include href="05-GT/main.ptx"/>
+       <!--<xi:include href="future-ON/main.ptx"/>--> 
+        <xi:include href="meta/backmatter.ptx"/>
+
+    </book>
+</pretext>
+

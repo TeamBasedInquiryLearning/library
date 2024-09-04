@@ -2,6 +2,27 @@
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2">
   <targets>
+
+    <!-- start custom stuff -->
+
+    <target
+      name="cal-web-custom"
+      format="html"
+      source="calculus/source/main-custom.ptx"
+      deploy-dir="calculus/custom" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    <target
+      name="la-web-custom"
+      format="html"
+      source="linear-algebra/source/main-custom.ptx"
+      deploy-dir="linear-algebra/custom" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+
+    <!-- end custom stuff -->
+
+
     <target
       name="precal-web"
       format="html"

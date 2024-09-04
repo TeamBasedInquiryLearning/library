@@ -1,0 +1,208 @@
+<section xml:id="sec-pset1-calc">
+    <title>Problem Set 1</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <introduction>
+            <statement>
+                <p>
+                    The purpose of this problem is practice correctly implementing a given <m>u</m>-substitution.
+                </p>
+            </statement>
+            <p>
+                Consider the integral <m>\displaystyle \int\left((x^2-1)(x+1)\right)^\frac{-2}{3}dx</m>.
+                For each of the following choices of <m>u</m>, explain how to use <m>u</m>-substitution to re-write the integral completely in terms of <m>u</m>. 
+                <alert>Do not evaluate the resulting integrals!</alert>.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        <m>u=\frac{1}{x+1}</m>;
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>u=(x-1)(x+1)</m>;
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>u=\arctan(x)</m>.
+                    </p>
+                </statement>
+            </task>
+            <p>
+                Of the three <m>u</m>-integrals you've written down, which of them would you consider your best option for continuing to evaluate and why?
+            </p>
+        </introduction>
+       
+       <!--- <solution>
+            <p>
+                Here is the solution
+            </p>
+        </solution>-->
+    </problem>
+
+    <problem xml:id="reducformula-motivation">
+        <introduction>
+            <p>
+                This problem asks you to expand on the ideas in <xref ref="activity-partssinsquare"/>. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to use integration by parts to show that <m>\displaystyle \int\sin^2{x}dx=\frac{1}{2}(-\sin{x}\cos{x}+x)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to use a similar method to evaluate <m>\displaystyle \int\cos^2{x}dx</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        More generally, let <m>I_n=\displaystyle\int\sin^n{x}dx</m>, where <m>is</m> a positive integer. 
+                        Use integration by parts to explain why
+                        <me>I_n=\frac{-\sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}}{n}.</me>
+                    </p>
+                </statement>
+            </task>
+            <p>
+                While you do not need to turn it in, consider finding an analogous formula relating the integrals <m>\int\cos^n{x}dx</m>.
+            </p>
+        </introduction>
+        <hint>
+            <p>
+                Follow the suggestions in <xref ref="activity-partssinsquare"/> and be prepared to do some trial-and-error with your integration-by-parts.
+            </p>
+        </hint>
+
+        <!--<solution>
+            <p>
+                
+            </p>
+        </solution>-->
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                The formula that you established in <xref ref="reducformula-motivation"/> is an example of a <alert>reduction formula</alert>: a formula that that reduces the computation of an integral to that of a simpler integral. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to use the reduction formula in <xref ref="activity-partssinsquare"/> to evaluate <m>\displaystyle\int\sin^5{x}dx</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to evaluate <m>\displaystyle\int \sin^5{x}dx</m> using a <m>u</m>-substitution.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Which method do you prefer and why?
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+
+        <!--<solution>
+            <p>
+                
+            </p>
+        </solution>-->
+    </problem>
+
+    <problem xml:id="tansecsub-motivation">
+        <introduction>
+            <p>
+                In <xref ref="TI4"/>, we developed strategies to evaluate integrals of the form <m>\displaystyle\int\sin^n{x}\cos^m{x}dx</m>.
+                Similar strategies often work for integrals of the form <m>\displaystyle \tan^n{x}dx</m>.
+                Before exploring this further, we need to understand how to evaluate two foundational integrals; this Problem asks you to do just that. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to use an appropriate <m>u</m>-substitution to show that <me>\displaystyle\int\tan{x}dx=\ln(\sec{x})+C</me>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain why <me>\displaystyle\int\sec{x}dx=\ln|\sec{x}+\tan{x}|+C</me> by first multiplying and dividing the integrand by <m>\sec{x}+\tan{x}</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        While the above trick might seem elusive (because it is!), try using a similar trick to evaluate the integral <m>\displaystyle\int\csc{x}dx</m>. 
+                    </p>
+                </statement>
+            </task>
+            <p>
+                    From now on, you may use these results in future problems without having to reproduce them. 
+            </p>
+        </introduction>
+        <!--<solution>
+            <p>
+                
+            </p>
+        </solution>-->
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                Building off of <xref ref="tansecsub-motivation"/> and using ideas that we discussed in <xref ref="TI4"/>, try using substitutions of the form <m>u=\tan{x}</m> and <m>u=\sec{x}</m>, along with the identity <m>1+\tan^2{x}=\sec^2{x}</m>, to evaluate the following integrals:
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle \int\tan^9{x}\sec^2{x}dx</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle \int\tan^8{x}\sec^6{x}dx</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle \int\tan^3{x}\sec^3{x}dx</m>.
+                    </p>
+                </statement>
+            </task>
+            <p>
+                Based on your explorations here, do you think substitution and trig identities alone will help you evaluate <m>\displaystyle \int\tan^2{x}\sec^3{x}dx</m>?
+            </p>
+        </introduction>
+    </problem>
+
+</section>

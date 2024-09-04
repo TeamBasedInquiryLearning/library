@@ -200,16 +200,8 @@
             </ol>
         </statement>
     </activity>
-    <activity estimated-time="99" xml:id="activity-TI2LinearCosineProduct">
-        <statement>
-            <p>Evaluate the integral <m>\displaystyle \int x\cos(x)\,dx</m> using integration by parts.</p>
-        </statement>
-    </activity>
-    <activity estimated-time="99" xml:id="activity-TI2DefiniteLinearCosineProduct">
-        <statement>
-            <p>Now use integration by parts to evaluate the integral <m>\displaystyle \int_{\pi/6}^{\pi} x\cos(x)\,dx</m>.</p>
-        </statement>
-    </activity>
+   
+
     <activity estimated-time="99" xml:id="activity-TI2ExtensionArctangent">
         <statement>
             <p>Consider the integral <m>\displaystyle \int x\arctan(x)\,dx</m>. Suppose we proceed using integration by parts. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to evaluate this integral?</p>
@@ -229,7 +221,8 @@
             </ol>
         </statement>
     </activity>
-    <activity estimated-time="99" xml:id="activity-TI2ExtensionExpTrigStep1">
+
+    <!--<activity estimated-time="99" xml:id="activity-TI2ExtensionExpTrigStep1">
         <statement>
             <p>Consider the integral <m>\displaystyle \int e^x\cos(x)\,dx</m>. Suppose we proceed using integration by parts. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to evaluate this integral?</p>
             <ol marker="A." cols="2">
@@ -247,7 +240,8 @@
                 </li>
             </ol>
         </statement>
-    </activity>
+    </activity>-->
+
      <activity estimated-time="99" xml:id="activity-TI2ExtensionExpTrigStep2">
         <statement>
             <p>Suppose we started using integration by parts to solve the integral <m>\displaystyle \int e^x\cos(x)\,dx</m> as follows:</p>
@@ -268,52 +262,50 @@
 &amp;= \cos(x)e^x+\int e^x\sin(x) \,dx
                 </mrow>
             </md>
-                <p>We will have to use integration by parts a second time to evaluate the integral <m>\displaystyle \int e^x\sin(x) \,dx</m>. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to continue evaluating the original integral <m>\displaystyle \int e^x\cos(x)\,dx</m>?</p>
+            <p>
+                Using integration by parts again on the integral <m>\displaystyle \int e^x\sin(x)dx</m> we get:
+                <md>
+                    <mrow>
+    \cos(x)e^x+\int e^x\sin(x)\,dx
+                    </mrow>
+                    <mrow>
+ u=\sin(x) &amp;\ \  dv = e^x\,dx
+                    </mrow>
+                    <mrow>
+ du=\cos(x) \,dx &amp;\ \  v=e^x
+                    </mrow>
+                    <mrow>
+    \cos(x)e^x+\int e^x\sin(x)\,dx &amp;= \cos(x)e^x+\left(e^x\sin(x)-\int e^x\cos{x}\,dx\right)
+                    </mrow>
+                    <mrow>
+    &amp;= \cos(x)e^x+\int e^x\sin(x) \,dx
+                    </mrow>
+                </md>
+                Putting this all together:
+                <me>\displaystyle \int e^x\cos(x)dx=\cos(x)e^x+\sin(x)e^x-\int e^x\cos(x)dx.</me>
+            </p>
+                <p>Have these computations helped us make progress?</p>
             <ol marker="A." cols="2">
                 <li>
-                    <p><m>u=e^x</m>, <m>dv=\sin(x)\,dx</m></p>
+                    <p>
+                        No. We are still no closer to evaluating <m>\displaystyle\int e^x\cos(x)dx</m>.
+                    </p>
                 </li>
                 <li>
-                    <p><m>u=\sin(x)</m>, <m>dv=e^x\,dx</m></p>
-                </li>
-                <li>
-                    <p><m>u=e^x\,dx</m>, <m>dv=\sin(x)</m></p>
-                </li>
-                <li>
-                    <p><m>u=\sin(x)\,dx</m>, <m>dv=e^x</m></p>
+                    <p>
+                        Yes. This equation is helpful in evaluating <m>\displaystyle\int e^x\cos(x)dx</m>.
+                    </p>
                 </li>
             </ol>
         </statement>
     </activity>
-    <activity estimated-time="99" xml:id="activity-TI2DefiniteSinePoly">
-        <statement>
-            <p>Use integration by parts to show that <m>\displaystyle \int_0^{\pi/4} x\sin(2x)\,dx=\dfrac{1}{4}</m>.</p>
-        </statement>
-    </activity>
-    <activity estimated-time="99" xml:id="activity-TI2ExtensionProductChain">
-        <introduction>
-            <p>Consider the integral <m>\displaystyle \int t^5 \sin(t^3)\,dt</m>.</p>
-        </introduction>
-        <task>
-            <p>Use the substitution <m>x=t^3</m> to rewrite the integral in terms of <m>x</m>.</p>
-        </task>
-        <task>
-            <p>Use integration by parts to evaluate the integral in terms of <m>x</m>.</p>
-        </task>
-        <task>
-            <p>Replace <m>x</m> with <m>t^3</m> to finish evaluating the original integral.</p>
-        </task>
-    </activity>
+    
     <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLog">
         <statement>
             <p>Use integration by parts to show that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>.</p>
         </statement>
     </activity>
-    <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLogSquared">
-        <statement>
-            <p>Given that that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>, evaluate <m>\displaystyle \int (\ln(z))^2\,dz</m>.</p>
-        </statement>
-    </activity>
+    
     
     
     <activity xml:id="activity-partssinsquare">
@@ -350,14 +342,59 @@
     </activity>
     
     
-    <activity>
-        <statement>
-            <p>
-                Modifying the approach from <xref ref="activity-partssinsquare"/>, use parts to find <m>\displaystyle\int (\cos(x))^2\, dx.</m>
-            </p>
-        </statement>
-    </activity>
     
+    
+    </subsection>
+
+    <subsection>
+        <title>Individual Practice</title>
+
+        <activity estimated-time="99" xml:id="activity-TI2LinearCosineProduct">
+            <statement>
+                <p>Evaluate the integral <m>\displaystyle \int x\cos(x)\,dx</m> using integration by parts.</p>
+            </statement>
+        </activity>
+        <activity estimated-time="99" xml:id="activity-TI2DefiniteLinearCosineProduct">
+            <statement>
+                <p>Now use integration by parts to evaluate the integral <m>\displaystyle \int_{\pi/6}^{\pi} x\cos(x)\,dx</m>.</p>
+            </statement>
+        </activity>
+
+        <activity estimated-time="99" xml:id="activity-TI2DefiniteSinePoly">
+            <statement>
+                <p>Use integration by parts to show that <m>\displaystyle \int_0^{\pi/4} x\sin(2x)\,dx=\dfrac{1}{4}</m>.</p>
+            </statement>
+        </activity>
+
+        <activity estimated-time="99" xml:id="activity-TI2ExtensionProductChain">
+            <introduction>
+                <p>Consider the integral <m>\displaystyle \int t^5 \sin(t^3)\,dt</m>.</p>
+            </introduction>
+            <task>
+                <p>Use the substitution <m>x=t^3</m> to rewrite the integral in terms of <m>x</m>.</p>
+            </task>
+            <task>
+                <p>Use integration by parts to evaluate the integral in terms of <m>x</m>.</p>
+            </task>
+            <task>
+                <p>Replace <m>x</m> with <m>t^3</m> to finish evaluating the original integral.</p>
+            </task>
+        </activity>
+
+
+        <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLogSquared">
+            <statement>
+                <p>Given that that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>, evaluate <m>\displaystyle \int (\ln(z))^2\,dz</m>.</p>
+            </statement>
+        </activity>
+        <activity>
+            <statement>
+                <p>
+                    Modifying the approach from <xref ref="activity-partssinsquare"/>, use parts to find <m>\displaystyle\int (\cos(x))^2\, dx.</m>
+                </p>
+            </statement>
+        </activity>
+        
     </subsection>
 
     <subsection>

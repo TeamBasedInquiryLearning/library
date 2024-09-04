@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="meta/docinfo.ptx" />
+
+  <book xml:id="cal1">
+    <title>Calculus for Team-Based Inquiry Learning</title>
+    <subtitle component="main">Fall 2024 Math 0190 Edition </subtitle>
+    <subtitle component="instructor">2024 Edition PREVIEW (Instructor Version)</subtitle>
+
+    <xi:include href="meta/frontmatter.ptx" /><!-- (inserted custom preface here) -->
+
+    <xi:include href="01-LT/main.ptx" />
+
+    <xi:include href="02-DF/main.ptx" />
+
+    <xi:include href="03-AD/main.ptx" />
+
+    <xi:include href="04-IN/main.ptx" />
+
+    <xi:include href="05-TI/main.ptx" />
+
+    <xi:include href="06-AI/main.ptx" />
+
+    <xi:include href="07-CO/main.ptx" />
+
+    <xi:include href="08-SQ/main.ptx" />
+
+    <xi:include href="09-PS/main.ptx" />
+
+    <xi:include href="meta/backmatter.ptx" />
+  </book>
+</pretext>
