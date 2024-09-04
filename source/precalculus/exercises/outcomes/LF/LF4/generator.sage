@@ -3,8 +3,8 @@ class Generator(BaseGenerator):
 
     x=var('x')
     y=var('y')
-    #Shuffle which task asks for parallel, which for perpendicular
-    (orientation1,orientation2) = tuple(sample(["perpendicular","parallel"],2))
+    #Shuffle which task asks for parallel, which for perpindicular
+    (orientation1,orientation2) = tuple(sample(["perpindicular","parallel"],2))
 
     #Task 1
     variable = choice(["a","b","c","d"])
@@ -20,7 +20,7 @@ class Generator(BaseGenerator):
 
     if orientation1=="parallel":
       m2=m
-    elif orientation1=="perpendicular":
+    elif orientation1=="perpindicular":
       m2=-1/m
 
     #Vary whether solving for x or y component
@@ -43,7 +43,7 @@ class Generator(BaseGenerator):
     slope = -1*line.lhs().coefficients(x)[1][0]/line.lhs().coefficients(y)[1][0]
     if orientation1=="parallel":
       slope2=slope
-    elif orientation1=="perpendicular":
+    elif orientation1=="perpindicular":
       slope2=-1/slope
     new_line = y-point5[1]==(x-point5[0]).mul(slope2,hold=True)
 

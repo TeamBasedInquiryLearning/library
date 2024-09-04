@@ -14,11 +14,7 @@ def main(book:str, outcome:str, amount:int = 20):
     sage_library_path = Path("source", book, "sage")
     bank_root = ET.parse(exercise_path/"bank.xml")
     search_string = f'.//*[name()="slug" and text()="{outcome}"]/./..'
-    try:
-        outcome_ele = bank_root.xpath(search_string)[0]
-    except IndexError:
-        error_message = f"{outcome} is not an outcome defined in {exercise_path}/bank.xml"
-        raise ValueError(error_message)
+    outcome_ele = bank_root.xpath(search_string)[0]
 
     # get path to sandbox
     sandbox_path = Path("exercise-sandbox")
