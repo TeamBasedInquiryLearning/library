@@ -502,7 +502,7 @@ expressions for <m>x_1</m> in terms of <m>a</m> satisfies both equations of the 
                 <ol marker="A." cols="2">
                     <li><m>x_1=-3a</m></li>
                     <li><m>x_1=3</m></li>
-                    <li><m>x_1=2a-3</m></li>
+                    <li><m>x_1=3+2a</m></li>
                     <li><m>x_1=-4a+6</m></li>
                 </ol>
             </p>
@@ -521,7 +521,7 @@ describes the solution set for this system?
 \setBuilder
 {
     \left[\begin{array}{c}
-    2a-3 \\
+    3+2a \\
     a
 \end{array}\right]
 }{
