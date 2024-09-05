@@ -22,7 +22,7 @@ Write an augmented matrix corresponding to this system.
         </statement>
         <solution >
             <ol>
-                <li><p>
+                <li><p>Written as a vector equation, the above linear system corresponds to:
 <me> x_1\left[\begin{array}{c} 3 \\ -1 \\ 0 \end{array}{}\right] +
     x_2 \left[\begin{array}{c}2 \\ -4 \\ 1 \end{array}{}\right]+
     x_3 \left[\begin{array}{c} 1 \\ 1 \\ -1 \end{array}{}\right] 
@@ -30,7 +30,7 @@ Write an augmented matrix corresponding to this system.
     = \left[\begin{array}{c} 1 \\ 0 \\ -2 \end{array}{}\right] </me></p>
                 </li>
                 <li>
-                    <p>
+                    <p>Written as an augmented matrix, the above linear system corresponds to:
 <me>
 \left[\begin{array}{cccc|c}
 3 &amp; 2 &amp; 0 &amp; 1 &amp; 1 \\
