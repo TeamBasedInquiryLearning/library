@@ -27,10 +27,10 @@ class Generator(BaseGenerator):
     #Completing the square
 
     a=choice([-7..7])
-    b=(a+choice([1..4]))^2-a^2
+    b=choice([i for i in [-1*a^2+5,..,10] if not (i+a^2).is_square()])
     r1=-1*a+sqrt(b+a^2)
     r2=-1*a-sqrt(b+a^2)
-    equations.append( { "equation":  x^2+2*a*x== b , "method":"completing the square", "roots": f"{r1}\\text{{ and }}{r2} "})
+    equations.append( { "equation":  x^2+2*a*x== b , "method":"completing the square", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)} "})
 
     #Quadratic Equation
     irrationals = list(TBILPrecal.small_irrationals(rational_part=[-8..1,1..8]).items())[0]
