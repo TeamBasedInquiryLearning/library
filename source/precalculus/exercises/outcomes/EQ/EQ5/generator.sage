@@ -19,7 +19,7 @@ class Generator(BaseGenerator):
     #Square root property
     a=choice([2..5])
     h=choice([-7..-1,1..7])
-    c=choice([sqrt(i) for i in [2..12]])
+    c=choice([sqrt(i) for i in [2..12] if not i.is_square()])
     k=choice([-10..-1,1..10])
     d=k+a*c^2
     equations.append( { "equation":  a*(x-h)^2+k==d , "method":"the square root property", "roots": f"{latex(h+c)}\\text{{ and }}{latex(h-c)}"})
