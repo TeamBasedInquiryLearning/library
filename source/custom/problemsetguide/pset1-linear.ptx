@@ -80,9 +80,67 @@
         </hint>
 
         <!--<solution>
-            <p>
-                Here is the solution to the problem. 
-            </p>
+            <task>
+                <ol>
+                    <li>
+                        <p>
+                            One algebraic approach is to first consider the corresponding augmented matrix:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                                3&amp; -3&amp; k\end{array}\right].</me>
+                            Using row operations, the corresponding RREF is equal to:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                               0 &amp; 0&amp; k-3\end{array}\right].</me>
+                            Then, by <xref ref="LE3-fact-scenarios"/>, the linear system is inconsistent when <m>k=3</m> and is consistent with infinitely many solutions whenever <m>k\neq 3</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Geometrically, each of the given linear equations describe lines in the <m>x_1x_2</m>-plane. 
+                            Re-writing the equations as follows:
+                            <md alignment="alignat" alignat-columns="2">
+                                <mrow>
+                                        x_1 &amp;\,=\,&amp; 1+x_2
+                                </mrow>
+                                <mrow>
+                                        x_1 &amp;\,=\,&amp;\frac{k}{3}+x_2,
+                                </mrow>
+                            </md>
+                            we see that the lines have the same slopes, i.e., they are parallel. 
+                            It follows that the lines must be identical (in which case the corresponding) solution is infinite, or else they do not intersect at all, in which case there are no solutions. 
+                            This corresponds to the case where <m>k=3</m> and <m>k\neq 3</m> respectively. 
+
+                        </p>
+                    </li>
+                </ol>
+            </task>
+            <task>
+                <ol>
+                    <li>
+                        <p>
+                            One algebraic approach is to first consider the corresponding augmented matrix:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                                3&amp; -k&amp; 3\end{array}\right].</me>
+                            Using row operations, the corresponding equivalent to:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                               0 &amp; k-3&amp; 0\end{array}\right].</me>
+                            If <m>k=3</m>, then this augmented matrix is in RREF and by <xref ref="LE3-fact-scenarios"/>, the system has infinitely many solutions. 
+                            Otherwise, when <m>k\neq 3</m>, then the RREF is given by:
+                            <me>\left[\begin{array}{cc|c}1 &amp; 0 &amp; 1\\
+                                0 &amp; 1&amp; 0\end{array}\right]</me>
+                            and the linear system is consistent with a unique solution.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            In the <m>x_1x_2</m>-plane, the first equation describes the line passing through <m>(1,0)</m> with slope equal to <m>1</m>. 
+                            The second line corresponds to the line passing through <m>(1,0)</m> with slope equal to <m>\frac{k}{3}</m>. 
+                            Two lines passing through the same point are either equal or intersect in a single point (the point of common intersection). 
+                            This happens when <m>k=3</m> and <m>k\neq 3</m> respectively, which correspond to the system having infinitely many solutions or a single solution, as desired.
+
+                        </p>
+                    </li>
+                </ol>
+            </task>
         </solution>-->
     </problem>
 
