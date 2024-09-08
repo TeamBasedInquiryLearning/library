@@ -181,7 +181,7 @@
         <task>
           <statement>
             <p>
-              The solution set is given by 
+              The solution set to the linear system is given by 
               <m>\left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\ a \\ b - 3 \\ b \end{array}\right]</m>.
             </p>
           </statement>
@@ -197,9 +197,35 @@
         </introduction>
 
         <!--<solution>
-            <p>
-                
-            </p>
+            <task>
+                <statement>
+                    <p>
+                        A matrix is not an equation, or even a system of equations; a matrix an array of real numbers. 
+                        Therefore, it does not make sense to say that <m>B</m> is consistent/inconsistent, let alone speak to how many solutions it has. 
+                    </p>
+                    <p>
+                       The given features of <m>\RREF(B)</m>, together with <xref ref="LE3-fact-scenarios"/> indicate that the linear system we were provided is consistent with infinitely many solutions.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The given expression is a single vector with parameters, for which we are not told anything about. 
+                        The correct way to express the solution set of this system of equations is: 
+                        <me>\left\{ \left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\a\\ b - 3\\b \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The variables <m>x_3,x_5</m> are indeed free variables and the components of the vectors supplied are the correct expressions for the bound variables <m>x_1,x_2,x_4</m> in terms of the free ones.
+                        However, solutions to the linear system have five components (our variables are <m>x_1,x_2,x_3,x_4,x_5</m>) and so our solution set must consist of vectors in <m>\IR^5</m>.
+                        The correct solution set is given above in part (b). 
+                    </p>
+                </statement>
+            </task>
         </solution>-->
     </problem>
 
@@ -247,9 +273,123 @@
             </task>
         </introduction>
         <!--<solution>
-            <p>
-                
-            </p>
+            <task>
+                    <p>
+                        Note that solutions will undoubtedly vary because there are lots of different choices for valid examples!
+                        Here is what came to my mind:
+                    </p>
+                <ul>
+                    <li>
+                        <p>
+                            The following system has no free variables:
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                        x_1 &amp; &amp;\,=\,&amp; 1
+                                </mrow>
+                                <mrow>
+                                        &amp;x_2 &amp;\,=\,&amp; 2
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;x_3\,=\,&amp;3. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right]\right\}</m>.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            The following system has 1 free variable (namely, <m>x_3</m>):
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                        x_1 &amp; &amp;\,=\,&amp; 1
+                                </mrow>
+                                <mrow>
+                                        &amp;x_2 &amp;\,=\,&amp; 2
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;0\,=\,&amp;0. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\left\{\left[\begin{array}{c}1\\2\\b\end{array}\right]\,\middle|\, b \in\mathbb R\right\}</m>.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            The following system has 2 free variable (namely, <m>x_2,x_3</m>):
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                        x_1 &amp; &amp;\,=\,&amp; 1
+                                </mrow>
+                                <mrow>
+                                        &amp; &amp;0\,=\,&amp; 0
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;0\,=\,&amp;0. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\left\{\left[\begin{array}{c}1\\a\\b\end{array}\right]\,\middle|\, a,b \in\mathbb R\right\}</m>.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            In the following system, all three of <m>x_1,x_2,x_3</m> are free:
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                         &amp; &amp;0\,=\,&amp; 0
+                                </mrow>
+                                <mrow>
+                                        &amp; &amp;0\,=\,&amp; 0
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;0\,=\,&amp;0. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\IR^3</m> because these equations are valid no matter what. 
+                        </p>
+                    </li>
+                </ul>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The RREF of the following matrices are all equal to the given matrix:
+                        <ul>
+                            <li>
+                                <p>
+                                    <me>
+                                        \left[\begin{array}{ccc|c} 2 &amp; 8 &amp; 4 &amp; -8 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right];
+                                    </me>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <me>
+                                        \left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 2 &amp; 8 &amp; 4 &amp; -8 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right];
+                                    </me>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <me>
+                                        \left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 2 &amp; 8 &amp; 4 &amp; -8 \\ 3 &amp; 12 &amp; 6 &amp; -12 \end{array}\right].
+                                    </me>
+                                </p>
+                            </li>
+                        </ul>                        
+                    </p>
+                    <p>
+                        All of these matrices satisfy the following property: each row is a multiple of the first (and only) non-zero row of the matrix that was given to us.
+                        In general, any matrix that we can find that is equivalent to our given matrix must be obtained by apply row operations. 
+                        If we start with a matrix, such as this, with only one non-zero row, then our row operations can only create rows that are multiples of this original row, which means that this phenomena was not a coincidence of the examples we wrote down but, rather, will happen generally. 
+                    </p>
+                </statement>
+            </task>
         </solution>-->
     </problem>
 
@@ -281,7 +421,37 @@
         </introduction>
         <!--<solution>
             <p>
-                
+                <ul>
+                    <li>
+                        <p>
+                            This statement is false. 
+                            Consider the following augmented matrix:
+                            <me>\left[\begin{array}{cc|c}1&amp; 0&amp; 4\\0&amp;1&amp; 3\end{array}\right].</me>
+                            Then, all columns of the coefficient matrix have a pivot (in particular the right-most), but the system is consistent because the rightmost column of the <em>augmented</em> matrix does not contain a pivot.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            This statement is false. 
+                            Consider the following augmented matrix:
+                            <me>\left[\begin{array}{ccc|c}1&amp; 0&amp; 0&amp; 1\\0&amp; 0&amp;0&amp; 0\\0&amp;0&amp; 0&amp;0\end{array}\right].</me>
+                            This matrix corresponds to a linear system that is consistent and for which <m>x_2,x_3</m> are free variables; in particular, the solution set is infinite. 
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            This statement is also false. 
+                            The assumptions tell us that, if the system were consistent, then there would be no free variable and, therefore, any solution would be unique.
+                            However, the assumptions do not rule out a system corresponding to the following augmented matrix:
+                            <me>\left[\begin{array}{ccc|c}1&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;2\\0&amp;0&amp;1&amp;5\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\end{array}\right].</me>
+                            This augmented matrix corresponds to a linear system that is inconsistent, despite the coefficient matrix having a pivot in each of its columns.
+                        </p>
+                    </li>
+                </ul>
             </p>
         </solution>-->
     </problem>
@@ -296,7 +466,9 @@
         </introduction>
         <!--<solution>
             <p>
-                
+                This statement is false. 
+                Indeed, because we are told that the two systems are consistent, the number of free and bound variables is completely determined by the number of columns that contain pivots in their <em>coefficient</em> matrices. 
+                Since we're assuming the two systems have the same coefficient matrices, these values must be the same for both systems, even if their right-hand sides are different.
             </p>
         </solution>-->
     </problem>
