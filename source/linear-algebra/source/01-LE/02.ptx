@@ -160,8 +160,8 @@ Swapping two columns, for example:
     </p>
     <p>
         <md>
-            <mrow>x  +2y \amp= 4 \amp x + 3y \amp= 5</mrow>
-            <mrow>2x + y \amp= 4 \amp 3x  +y \amp= 5 </mrow>
+            <mrow>x  +2y \amp= 4 \amp 2x + y \amp= 4</mrow>
+            <mrow>x + 3y \amp= 5 \amp 3x  +y \amp= 5 </mrow>
         </md>
     </p>
 </sidebyside>
@@ -217,12 +217,12 @@ Multiply a row by a nonzero constant, for example:
                                     \\ 1 &amp; 3 &amp; 5 \end{array}\right]
         \sim
             \left[\begin{array}{cc|c} 3(1) &amp; 3(2) &amp; 3(4) 
-                                    \\ 4 &amp; 5 &amp; 6 \end{array}\right]
+                                    \\ 1 &amp; 3 &amp; 5 \end{array}\right]
         </me>
     </p>
     <p>
         <md>
-            <mrow>x  +2y \amp= 3 \amp 3x + 6y \amp= 9</mrow>
+            <mrow>x  +2y \amp= 3 \amp 3x + 6y \amp= 12</mrow>
             <mrow>x + 3y \amp= 5 \amp x  +3y \amp= 5 </mrow>
         </md>
     </p>
