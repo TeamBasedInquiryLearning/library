@@ -47,11 +47,33 @@
             </p>
         </introduction>
        
-       <!--- <solution>
-            <p>
-                Here is the solution
-            </p>
-        </solution>-->
+       <solution>
+            <task>
+                    <p>
+                        If we use <m>u</m>-substitution with <m>u=\frac{1}{x+1}</m>, then we find that <m>du=-\frac{dx}{(x+1)^2}</m>, or:
+                        <me>-\frac{du}{u}^2=dx.</me>
+                        Moreover, by doing some more algebra, we find the following that will be helpful to us:
+                        <me>x+1=\frac{1}{u},\ \ x-1=\frac{1}{u}-2=\frac{1-2u}{u}.</me>
+                    </p>
+                    <p>
+                        It follows that:
+                        <md>
+                            <mrow>\displaystyle \int\frac{dx}{\left((x^2-1)(x+1)\right)^\frac{2}{3}} &amp;=&amp; \displaystyle \int\frac{dx}{\left((x-1)(x+1)^2\right)^\frac{2}{3}} </mrow>
+                            <mrow>&amp;=&amp;-\displaystyle\int \frac{1}{\left[\left(\frac{1-2u}{u}\right)\left(\frac{1}{u^2}\right)\right]^\frac{2}{3}}\cdot\frac{1}{u^2}du</mrow>
+                            <mrow>&amp;=-\displaystyle\int\frac{du}{(1-2u)^\frac{2}{3}}.</mrow>
+                        </md>
+                    </p>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If we use substitution with <m>u=(x-1)(x+1)=x^2-1</m>, then we find:
+                        <me>x=\sqrt{u+1},\ \ du=2xdx.</me>
+                        It follows that <m>dx=\frac{du}{2x}=\frac{du}{2\sqrt{u+1}}</m> and then we transform the integral as follows:
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem xml:id="reducformula-motivation">
