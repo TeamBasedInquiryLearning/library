@@ -47,7 +47,7 @@
             </p>
         </introduction>
        
-       <solution>
+       <!--<solution>
             <task>
                     <p>
                         If we use <m>u</m>-substitution with <m>u=\frac{1}{x+1}</m>, then we find that <m>du=-\frac{dx}{(x+1)^2}</m>, or:
@@ -58,22 +58,35 @@
                     <p>
                         It follows that:
                         <md>
-                            <mrow>\displaystyle \int\frac{dx}{\left((x^2-1)(x+1)\right)^\frac{2}{3}} &amp;=&amp; \displaystyle \int\frac{dx}{\left((x-1)(x+1)^2\right)^\frac{2}{3}} </mrow>
-                            <mrow>&amp;=&amp;-\displaystyle\int \frac{1}{\left[\left(\frac{1-2u}{u}\right)\left(\frac{1}{u^2}\right)\right]^\frac{2}{3}}\cdot\frac{1}{u^2}du</mrow>
-                            <mrow>&amp;=-\displaystyle\int\frac{du}{(1-2u)^\frac{2}{3}}.</mrow>
+                            <mrow>\displaystyle \int\frac{dx}{\left((x^2-1)(x+1)\right)^\frac{2}{3}} &amp;=\amp \displaystyle \int\frac{dx}{\left((x-1)(x+1)^2\right)^\frac{2}{3}} </mrow>
+                            <mrow>&amp;=\amp -\displaystyle\int \frac{1}{\left[\left(\frac{1-2u}{u}\right)\left(\frac{1}{u^2}\right)\right]^\frac{2}{3}}\cdot\frac{1}{u^2}du</mrow>
+                            <mrow>&amp;=\amp -\displaystyle\int\frac{du}{(1-2u)^\frac{2}{3}}.</mrow>
                         </md>
                     </p>
             </task>
             <task>
-                <statement>
                     <p>
                         If we use substitution with <m>u=(x-1)(x+1)=x^2-1</m>, then we find:
                         <me>x=\sqrt{u+1},\ \ du=2xdx.</me>
                         It follows that <m>dx=\frac{du}{2x}=\frac{du}{2\sqrt{u+1}}</m> and then we transform the integral as follows:
+                       <me>\displaystyle \int\frac{dx}{\left((x^2-1)(x+1)\right)^\frac{2}{3}}=\displaystyle\int\frac{1}{u^\frac{2}{3}\left(\sqrt{u+1}+1\right)^\frac{2}{3}}\cdot\frac{du}{2\sqrt{u+1}}.</me>
                     </p>
-                </statement>
             </task>
-        </solution>
+            <task>
+                    <p>
+                        Finally, if we let <m>u=\arctan{x}</m>, then we find <m>du=\frac{dx}{1+x^2}</m> and <m>x=\tan{u}</m>. 
+                        From here, it follows that:
+                        <me>dx=(1+x^2)du=(1+\tan^2{u})du=\sec^2{u}du.</me>
+                        It follows that:
+                        <me>\displaystyle \int\frac{dx}{\left((x^2-1)(x+1)\right)^\frac{2}{3}}=\displaystyle\int\frac{\sec^2{u}du}{\left((\tan^2{u}-1)(\tan{u}+1)\right)^\frac{2}{3}}.</me>
+                    </p>
+            </task>
+            <p>
+                Of these integrals, I think I would prefer to keep working with the first one in (a). 
+                My main reasoning is that I think a further substitution, say of the form <m>v=1-2u</m> might further simplify the integral.
+            </p>
+        </solution>-->
+
     </problem>
 
     <problem xml:id="reducformula-motivation">
@@ -115,9 +128,57 @@
         </hint>
 
         <!--<solution>
-            <p>
-                
-            </p>
+            <task>
+                <p>
+                    We begin by using integration by parts. 
+                    For this, I chose <m>u=\sin{x}</m> and <m>dv=\sin{x}dx</m>.  
+                    With these choices, we have <m>du=\cos{x}dx</m>, <m>v=-\cos{x}</m>, and applying the integration by parts formula yields:
+                    <me>I=\displaystyle\int\sin^2{x}dx=\int\sin{x}\sin{x}dx=-\sin{x}\cos{x}+\int\cos^2{x}dx.</me>
+                    Inspired by <xref ref="activity-partssinsquare"/>, we use the identity <m>\cos^2{x}=1-\sin^2{x}</m> to re-write the above equation as:
+                    <md>
+                        <mrow>I \amp =\amp \sin{x}\cos{x}+\int dx-\int\sin^2{x}dx</mrow>
+                        <mrow> \amp =\amp -\sin{x}\cos{x}+x-I.</mrow>
+                    </md>
+                    Moving <m>I</m> to the left hand side allows us to solve:
+                    <me>I=\frac{x-\sin{x}\cos{x}}{2}</me>
+                    as desired.
+                </p>
+            </task>
+            <task>
+                    <p>
+                        We imitate and modify the techniques we used above. 
+                        Letting <m>I=\int\cos^2{x}dx</m>, we use integration by parts as follows:
+                        <md>
+                            <mrow>I \amp =\amp \int\cos{x}\cos{x}dx </mrow>
+                            <mrow> \amp\amp u=\cos{x},\ \ dv=\cos{x}dx </mrow>
+                            <mrow> \amp\amp du=-\sin{x}dx,\ \ v=\sin{x} </mrow>
+                            <mrow>\amp =\amp \cos{x}\sin{x}+\int\sin^2{x}dx</mrow>
+                            <mrow> \amp =\amp \cos{x}\sin{x}+\int dx-\int\cos^2{x}dx</mrow>
+                            <mrow> \amp =\amp \cos{x}\sin{x}+x-I,</mrow>
+                        </md> 
+                        where, in the second last line, we used the identity <m>\sin^2{x}=1-\cos^2{x}</m>.
+                    </p>
+                    <p>
+                        From here, we solve for <m>I</m>:
+                        <me>I=\frac{x+\cos{x}\sin{x}}{2}.</me>
+                    </p>
+            </task>
+            <task>
+                    <p>
+                        While the algebra might look a little weird, let's see if we can use what we've done to help us here. 
+                        Start with <m>I_n=\int\sin^n{x}dx</m>.
+                        If we let <m>u=\sin^{n-1}{x}dx</m> and <m>dv=\sin{x}dx</m> and apply the integration by parts formula, we get:
+                        <me>I_n=-\sin^{n-1}{x}\cos{x}+\int(n-1)\sin^{n-2}{x}\cos^2{x}dx.</me>
+                        Using the identity <m>\cos^2{x}=1-\sin^2{x}</m>, we can continue as:
+                        <md>
+                            <mrow>I \amp =\amp -\sin^{n-1}{x}\cos{x}+\displaystyle\int (n-1)\sin^{n-2}{x}(1-\sin^2{x})dx</mrow>
+                            <mrow> \amp =\amp -\sin^{n-1}{x}\cos{x}+(n-1)\int\sin^{n-2}{x}dx-(n-1)\int\sin^n{x}dx</mrow>
+                            <mrow> \amp =\amp \sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}-(n-1)I_n,</mrow>
+                        </md>
+                        from which we can move the <m>I_n</m> terms to the left to find:
+                        <me>nI_n=-\sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}.</me>
+                    </p>
+            </task>
         </solution>-->
     </problem>
 
@@ -150,9 +211,47 @@
         </introduction>
 
         <!--<solution>
-            <p>
-                
-            </p>
+            <task>
+                    <p>
+                        We can use the reduction formula from above with <m>n=5</m>. 
+                        So, if <m>I_n=\int\sin^n{x}dx</m>, then
+                        <me>I_5=\frac{-\sin^4{x}\cos{x}+4I_3}{5}=-\frac{1}{5}\sin^4{x}\cos{x}+\frac{4}{5}I_3.</me>
+                        To proceed further, we need to use the reduction formula again to find <m>I_3</m>:
+                        <md>
+                            <mrow>I_3 \amp =\amp \frac{-\sin^2{x}\cos{x}+2I_1}{3}</mrow>
+                            <mrow> \amp =\amp \frac{-\sin^2{x}\cos{x}+2\int\sin{x}dx}{3}</mrow>
+                            <mrow> \amp =\amp -\frac{\sin^2{x}\cos{x}}{3}-\frac{2\cos{x}}{3}+C.</mrow>
+                        </md>
+                        Combining these equations together, we get:
+                        <me>I_5=-\frac{1}{5}\sin^4{x}\cos{x}-\frac{4}{5}\cdot\frac{1}{3}\sin^2{x}\cos{x}-\frac{4}{5}\cdot\frac{2}{3}\cos{x}+C.</me>
+                    </p>
+            </task>
+            <task>
+                    <p>
+                        Using our strategies from <xref ref="TI3"/>, we begin by re-writing the integral as follows:
+                        <md>
+                            <mrow>\int\sin^5{x}dx \amp =\amp \int\sin^4{x}\sin{x}dx</mrow>
+                            <mrow> \amp =\amp \int(1-\cos^2{x})^2\sin{x}dx.</mrow>
+                        </md>
+                        From here, we make the substitution <m>u=\cos{x}</m> (so <m>du=-\sin{x}dx</m>) and proceed as shown:
+                        <md>
+                            <mrow> \int\sin^5{x}dx \amp=\amp \int(1-\cos^2{x})^2\sin{x}dx </mrow>
+                            <mrow> \amp =\amp -\int(1-u^2)^2du</mrow>
+                            <mrow> \amp =\amp -u^4+2u^2-1du</mrow>
+                            <mrow> \amp =\amp-\frac{u^5}{5}+2\frac{u^3}{3}-u+C</mrow>
+                            <mrow> \amp =\amp -\frac{\cos^5{x}}{5}+\frac{2\cos^3{x}}{3}-\cos{x}+C.</mrow>
+                        </md>
+                    </p>
+            </task>
+            <task>
+                    <p>
+                        Personally, I found (b) easier to me because I like substitution and don't like formulas. 
+                    </p>
+                    <p>
+                        <alert>Note:</alert> though the answers above look different, they both differentiate to the same thing.
+                        The two different looking answers are related to each other by a trig identity and additive constant!
+                    </p>
+            </task>
         </solution>-->
     </problem>
 
@@ -189,9 +288,40 @@
             </p>
         </introduction>
         <!--<solution>
-            <p>
-                
-            </p>
+            <task>
+                <p>
+                    Start by re-writing <m>\tan{x}=\frac{\sin{x}}{\cos{x}}</m> and then make the substitution <m>u=\cos{x}</m>:
+                    <md>
+                        <mrow>\int\tan{x}dx \amp =\amp \int\frac{\sin{x}}{\cos{x}}dx</mrow>
+                        <mrow> \amp =\amp \int\frac{-du}{u}</mrow>
+                        <mrow> \amp =\amp -\ln|u|+C</mrow>
+                        <mrow> \amp =\amp -\ln|\cos{x}|+C</mrow>
+                        <mrow> \amp =\amp \ln|\sec{x}|+C.</mrow>
+                    </md>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Let's follow the advice:
+                    <me>\sec{x}=\sec{x}\cdot\frac{\sec{x}+\tan{x}}{\sec{x}+\tan{x}}=\frac{\sec^2{x}+\tan{x}\sec{x}}{\sec{x}+\tan{x}}.</me>
+                    From here, if we let <m>u=\sec{x}+\tan{x}</m>, then <m>du=(\sec{x}\tan{x}+sec^2{x})dx</m>. 
+                    It follows that if we use this substitution, the integral transforms into:
+                    <me>\int\frac{du}{u}=\ln|u|+C=\ln|\sec{x}+\tan{x}|+C.</me>    
+                </p>
+            </task>
+            <task>
+                <p>
+                    Recall that <m>\frac{d}{dx}\csc{x}=-\csc{x}\cot{x}</m> and <m>\frac{d}{dx}\cot{x}=-\csc^2{x}</m>.
+                    Mimicking what we did above, let's multiply and divide <m>\csc{x}</m> by <m>\csc{x}+\cot{x}</m>:
+                    <me>\csc{x}=\frac{\csc^2{x}+\csc{x}\cot{x}}{\csc{x}+\cot{x}}.</me>
+                    From here, if <m>u=\csc{x}+\cot{x}</m> then <m>du=-(\csc{x}\cot{x}+\csc^2{x})dx</m> which allows use to use substitution:
+                    <md>
+                        <mrow>\int\csc{x}dx \amp =\amp-\int\frac{du}{u}</mrow>
+                        <mrow> \amp =\amp -\ln|u|+C</mrow>
+                        <mrow> \amp =\amp -\ln|\cot{x}+\csc{x}|+C.</mrow>
+                    </md>
+                </p>
+            </task>
         </solution>-->
     </problem>
 
@@ -225,6 +355,52 @@
                 Based on your explorations here, do you think substitution and trig identities alone will help you evaluate <m>\displaystyle \int\tan^2{x}\sec^3{x}dx</m>?
             </p>
         </introduction>
+        <!--<solution>
+            <task>
+                <p>
+                    Here, if we let <m>u=\tan{x}</m>, then <m>du=\sec^2{x}dx</m> and so
+                    <me>\int\tan^9{x}\sec^2{x}dx=\int u^9du=\frac{u^10}{10}+C=\frac{\tan^{10}{x}}{10}+C.</me>        
+                </p>
+            </task>
+            <task>
+                <p>
+                    Here, we once again try <m>u=\tan{x}</m> (and so <m>du=\sec^2{x}dx</m>). 
+                    This time, we re-write the guts of the integral as follows, taking advantage of the identity <m>1+\tan^2{x}=\sec^2{x}</m>:
+                    <md>
+                        <mrow>\int\tan^8{x}\sec^6{x}dx\amp =\amp \int\tan^8{x}\sec^4{x}\sec^2{x}dx</mrow>
+                        <mrow> \amp =\amp \int\tan^8{x}(\sec^2{x})^2\sec^2{x}dx</mrow>
+                        <mrow> \amp =\amp \int\tan^8(1+\tan^2{x})^2\sec^2{x}dx.</mrow>
+                    </md>
+                    From here, we can complete our <m>u</m>-substitution; the resulting integral is:
+                    <me>I=\int u^8(1+u^2)^2du.</me>
+                    The rest of the evaluation is as follows:
+                    <md>
+                        <mrow>I \amp =\amp \int u^8(1+2u^2+u^4)du</mrow>
+                        <mrow> \amp =\amp \int u^8+2u^{10}+u^{12}du</mrow>
+                        <mrow> \amp =\amp \frac{u^9}{9}+2\frac{u^11}{11}+\frac{u^{13}{13}}+C</mrow>
+                        <mrow> \amp =\amp \frac{\tan^9{x}}{9}+2\frac{\tan^{11}{x}}{11}+\frac{\tan^{13}{x}}{13}+C .</mrow>
+                    </md> 
+                </p>
+            </task>
+            <task>
+                <p>
+                    Here, the odd power of <m>\sec{x}</m> makes it difficult to use <m>u=\tan{x}</m> since we would have a rogue <m>\sec{x}</m> leftover. 
+                    Instead, if we try <m>u=\sec{x}</m>, then <m>du=\sec{x}\tan{x}dx</m>, then the gets of the integral can be re-written as:
+                    <md>
+                        <mrow>\sec^3{x}\tan^3{x}dx \amp =\amp \sec^2{x}\tan^2{x}(\sec{x}\tan{x}dx)</mrow>
+                        <mrow> \amp =\amp \sec^2{x}(\sec^2{x}-1)(\sec{x}\tan{x}dx),</mrow>
+                    </md>
+                    where we have used the identity <m>1+\tan^2{x}=\sec^2{x}</m>. 
+                </p>
+                <p>
+                    Putting this altogether, this substitution transforms the integral to 
+                    <me>I=\int u^2(u^2-1)du=\frac{u^5}{5}-\frac{u^3}{3}+C=\frac{\sec^5{x}}{5}-\frac{\sec^3{x}}{3}+C.</me>
+                </p>
+            </task>
+            <p>
+                Neither of the substitutions <m>u=\tan{x}</m> nor <m>u=\sec{x}</m> seem effective here because the integrands don't contain what we need to finish the substitution. We would have to try something new. 
+            </p>
+        </solution>-->
     </problem>
 
 </section>
