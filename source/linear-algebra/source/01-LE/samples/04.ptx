@@ -1,82 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <example xml:id="sample-LE4"><title>LE4</title>
-  <statement>
-    <p>
-Consider the following
-vector equation.
-      <me>
-        
-        x_{1} \left[\begin{array}{c}
--3 \\
-0 \\
-4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--3 \\
-0 \\
-4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-1 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--4 \\
--5 \\
-5
-\end{array}\right] = \left[\begin{array}{c}
--11 \\
--9 \\
-14
-\end{array}\right]
-      </me>
-    </p>
-    <ol>
-      <li>
-        <p>
-Explain how to find a simpler system or vector equation
-that has the same solution set.
+  <introduction>
+    <p> Consider the following vector equation. <me>x_{1} \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array}\right] + x_{2} \left[\begin{array}{c} -2 \\ 0 \\ -2 \\ -2 \end{array}\right] + x_{3} \left[\begin{array}{c} -5 \\ 1 \\ -5 \\ -2 \end{array}\right] + x_{4} \left[\begin{array}{c} 13 \\ -2 \\ 13 \\ 7 \end{array}\right] + x_{5} \left[\begin{array}{c} -14 \\ 3 \\ -14 \\ -5 \end{array}\right] = \left[\begin{array}{c} 18 \\ -3 \\ 18 \\ 9 \end{array}\right]</me> </p>
+  </introduction>
+    <task>
+      <statement>
+        <p> Explain how to find a simpler linear system that has the same solution set. </p>
+      </statement>
+      <solution>
+      <p>
+        The given linear system is represented by this augmented matrix, which row reduces as follows:
+        <me>
+          \left[\begin{array}{ccccc|c} 
+          1 &amp; -2 &amp; -5 &amp; 13 &amp; -14  &amp; 18\\ 
+          0 &amp; 0 &amp; 1 &amp; -2 &amp;  3 &amp; -3\\ 
+          1 &amp; -2 &amp; -5 &amp; 13 &amp; -14 &amp;18\\ 
+          1 &amp; -2 &amp; -2 &amp; 7  &amp; -5 &amp;9\\ 
+          \end{array}\right]
+          \sim
+          \left[\begin{array}{ccccc|c} 
+          1 &amp; -2 &amp; 0 &amp; 3 &amp; 1  &amp; 3\\ 
+          0 &amp; 0 &amp; 1 &amp; -2 &amp;  3 &amp; -3\\ 
+          0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 
+          0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 
+          \end{array}\right]
+        </me>
+        The RREF matrix then yields the following simplified linear system with the same solution set:
+          <me>\begin{matrix} x_{1} &amp; - &amp; 2 \, x_{2} &amp; &amp; &amp; + &amp; 3 \, x_{4} &amp; + &amp; x_{5} &amp; = &amp; 3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; - &amp; 2 \, x_{4} &amp; + &amp; 3 \, x_{5} &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}</me>
         </p>
-      </li>
-      <li>
-        <p>
-Explain how to describe this solution set using set notation.
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p> Explain how to describe this solution set using set notation. </p>
+      </statement>
+      <solution>
+        <p>We can assign free variables for each of the non-pivot columns: <m>x_2=a</m>, <m>x_4=b</m>, and <m>x_5=c</m>:
+          <me>\begin{matrix} x_{1} &amp; - &amp; 2 \, a &amp; &amp; &amp; + &amp; 3 \, b &amp; + &amp; c &amp; = &amp; 3 \\
+             &amp; &amp; &amp; &amp; x_{3} &amp; - &amp; 2 \, b &amp; + &amp; 3 \, c &amp; = &amp; -3 \\ \end{matrix}</me>
         </p>
-      </li>
-    </ol>
-  </statement>
-
-  <solution>
-    <p>First, we compute 
-      <me>\mathrm{RREF}\left[\begin{array}{cccc|c}
--3 &amp; -3 &amp; 0 &amp; -4 &amp; -11 \\
-0 &amp; 0 &amp; 1 &amp; -5 &amp; -9 \\
-4 &amp; 4 &amp; 0 &amp; 5 &amp; 14
-\end{array}\right]=\left[\begin{array}{cccc|c}
-1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
-\end{array}\right].</me>
-      This corresponds to the simpler system 
-<me>
-              \begin{matrix}
-  x_{1} &amp;  +  &amp; x_2 &amp;    &amp;  &amp;  &amp; &amp; = &amp; 1 \\
-       &amp;    &amp;  &amp;    &amp; x_3  &amp;  &amp; &amp; = &amp; 1 \\
-       &amp;    &amp;  &amp;    &amp;  &amp;  &amp; x_4 &amp; = &amp; 2 \\
- \end{matrix}.
-            </me>
-      Since the second column is a non-pivot column, we let <m>x_2=a</m>.  Making this substitution
-        and then solving for <m>x_1</m>, <m>x_3</m>, and <m>x_4</m> produces the system
-        <me>\begin{matrix}
-        x_1 &amp;=&amp; 1-a \\
-        x_2 &amp;=&amp; a \\
-        x_3 &amp;=&amp; 1 \\
-        x_4 &amp;=&amp; 2 \\
-        \end{matrix}</me>
-      Thus, the solution set is <m> \left\{ \left[\begin{array}{c}
--a + 1 \\
-a \\
-1 \\
-2
-\end{array}\right] \,\middle|\, a \in\mathbb R \right\} </m>.
-    </p>
-  </solution>
+        <p>
+          Then we may solve for the bound variables <m>x_1</m> and <m>x_3</m>:
+          <me>x_1=2a-3b-c+3</me>
+          <me>x_3=2b-3c-3</me>
+        </p>
+        <p>Therefore, the solution set is <m>\left\{ \left[\begin{array}{c} 2 \, a - 3 \, b - c + 3 \\ a \\ 2 \, b - 3 \, c - 3 \\ b \\ c \end{array}\right] \,\middle|\, a,b,c \in\mathbb R \right\}</m>.</p>
+      </solution>
+    </task>
 </example>    
