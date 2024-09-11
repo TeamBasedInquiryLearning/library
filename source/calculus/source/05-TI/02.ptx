@@ -278,7 +278,7 @@
     \cos(x)e^x+\int e^x\sin(x)\,dx &amp;= \cos(x)e^x+\left(e^x\sin(x)-\int e^x\cos{x}\,dx\right)
                     </mrow>
                     <mrow>
-    &amp;= \cos(x)e^x+\int e^x\sin(x) \,dx
+    &amp;= \cos(x)e^x+\sin(x)e^x-\int e^x\cos(x) \,dx
                     </mrow>
                 </md>
                 Putting this all together:
