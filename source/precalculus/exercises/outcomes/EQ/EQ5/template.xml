@@ -39,5 +39,15 @@
             </list>
         </outtro> 
     </knowl>
+    <knowl>
+        <content>
+            <p>Find all solutions of the below equation, including any complex solutions.
+                <me>{{imaginary_equation}}</me>
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{imaginary_roots}}</m></p>
+        </outtro>
+    </knowl>
     
 </knowl>

@@ -40,7 +40,14 @@ class Generator(BaseGenerator):
                        "method":"the quadratic formula", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
     shuffle(equations)
 
+    #Imaginary roots task
+    r1=choice([-5..,-1,1..5])+choice([1..5])*I
+    r2=conjugate(r1)
+    imaginary_equation = expand((x-r1)*(x-r2)) == 0
+    imaginary_roots = f"{latex(r1)}\\text{{ and }}{latex(r2)}"
 
     return {
-      "equations": equations
+      "equations": equations,
+      "imaginary_equation": imaginary_equation,
+      "imaginary_roots": imaginary_roots
     } 
