@@ -1,6 +1,7 @@
 load("../sage/common.sage")
 
 class Generator(BaseGenerator):
+  irrational_dict = TBILPrecal.small_irrationals(rational_part=[-8..1,1..8],full_list=True)
   def data(self):
     
 
@@ -33,9 +34,9 @@ class Generator(BaseGenerator):
     equations.append( { "equation":  x^2+2*a*x== b , "method":"completing the square", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)} "})
 
     #Quadratic Equation
-    irrationals = list(TBILPrecal.small_irrationals(rational_part=[-8..1,1..8]).items())[0]
-    r1,r2=irrationals[0]
-    c=irrationals[1]
+    irrational = choice(list(self.irrational_dict.keys()))
+    r1,r2=irrational
+    c=self.irrational_dict[irrational]
     equations.append( { "equation": c^2*x^2-(r1+r2)*c^2*x == expand(-1*c^2*r1*r2), 
                        "method":"the quadratic formula", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
     shuffle(equations)
