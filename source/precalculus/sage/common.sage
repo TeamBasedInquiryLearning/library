@@ -155,11 +155,14 @@ class TBILPrecal:
                           irrational_part=[2,3,5,6,7,8],
                           denominators=[i for i in range(-5,6) if i != 0],
                           dictionary=True,
-                          length=1):
+                          length=1,
+                          full_list=False):
         '''Generates a list or dictionary of uniqe irrational numbers of the form (a+sqrt(b))/c. 
         For a dictionary, keys are tuples of rationals and their conjugate, and values are the denominators.'''
         fulldict = { ((a+sqrt(b))/c,(a-sqrt(b))/c):c for a in rational_part for b in irrational_part for c in denominators}
-        dict= { pair:fulldict[pair] for pair in sample(list(fulldict.keys()),length)}
+        if full_list:
+            length=len(fulldict)
+        dict= { pair:fulldict[pair] for pair in sample(list(fulldict.keys()),min(length,len(fulldict)))}
         if dictionary:
             return dict
         else:
