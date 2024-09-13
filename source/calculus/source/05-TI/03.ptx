@@ -171,10 +171,9 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                 </task>   
     </activity>
     
-    <activity xml:id="activity-TI3evenEvenRedux">
+    <example xml:id="activity-TI3evenEvenRedux">
             <introduction>
                 <p>Let's consider <m>\displaystyle\int \sin^2(x)\cos^2(x) \, dx</m>.</p>
-        </introduction>
                 <task>
                     <statement>
                         <p>Use the fact that <m>\cos^2(\theta)=\displaystyle\frac{1+\cos(2\theta)}{2}</m> and <m>\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos^2(2x)</m>.</p>
@@ -189,8 +188,21 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                     <statement>
                         <p>Show that integral evaluates to <m>\dfrac{1}{8} \, x - \dfrac{1}{32} \, \sin\left(4 \, x\right)+C</m>.</p>
                     </statement>
-                </task>   
-    </activity>
+                </task> 
+        </introduction>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\displaystyle\int\sin^2(x)\cos^2(x)dx \amp =\amp\displaystyle\int\left(\frac{1+\cos(2x)}{2}\right)\left(\frac{1-\cos(2x)}{2}\right)</mrow>
+                    <mrow> \amp =\amp \displaystyle\int\frac{1}{4}\left(1-\cos^2(2x)\right)dx</mrow>
+                    <mrow> \amp =\amp \displaystyle\int\frac{1}{4}\left(1-\left(\frac{1-\cos(4x)}{2}\right)\right)dx</mrow>
+                    <mrow> \amp =\amp \displaystyle\int\frac{1}{8}-\frac{1}{8}\cos(4x)dx</mrow>
+                    <mrow> \amp =\amp \dfrac{1}{8} \, x - \dfrac{1}{32} \, \sin\left(4 \, x\right)+C.</mrow>
+                </md>
+            </p>
+        </solution>
+                
+    </example>
     
     
     <activity xml:id="activity-TI3evenEvenFluency">
