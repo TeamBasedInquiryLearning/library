@@ -83,8 +83,8 @@ Prove that <m>R</m> <em>is</em> a subspace.
         <outtro>
             <p>
 First show that <m>R</m> is closed under
-vector addition. Assume <m>{{v}}\in R</m> so that
-<m>{{R_eq}}</m>, and assume <m>{{valt}}\in R</m> so that
+vector addition. Let <m>{{v}}\in R</m> so that
+<m>{{R_eq}}</m>, and let <m>{{valt}}\in R</m> so that
 <m>{{R_eq_alt}}</m>. Then use those assumptions to show
 <m>{{R_eq_sum}}</m> and therefore <m>{{v}}+{{valt}}\in R</m>.
             </p>
