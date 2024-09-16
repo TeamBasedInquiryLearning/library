@@ -25,7 +25,7 @@
             </statement>
         </activity>
         
-        <activity xml:id="activity-TI4intropythagoras">
+        <!--<activity xml:id="activity-TI4intropythagoras">
             <statement>
                 <p>
                     To find <m>\displaystyle \int \sqrt{9-4x^2} \,dx</m>, we will need a more advanced substitution.
@@ -38,9 +38,91 @@
                     </ol>
                 </p>
             </statement>
+        </activity>-->
+
+        <activity>
+            <introduction>
+                <p>
+                    To solve <m>\displaystyle\int\sqrt{9-4x^2}dx</m>, we will consider a different kind of substitution.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Consider a substitution of the form <m>x=\frac{3}{2}\sin\theta</m> and the following calculations that demonstrate how the integral transforms:
+                        <md>
+                            <mrow>
+            \text{If }x &amp;=\frac{3}{2}\sin\theta,
+                            </mrow>
+                            <mrow>
+            \text{then } 9-4x^2&amp;=9-9\sin^2\theta=9\cos^2\theta
+                            </mrow>
+                            <mrow>
+            \textrm{and }dx&amp;=\frac{3}{2}\cos\theta.
+                            </mrow>
+                        </md>
+                        <md>
+                            <mrow>
+            \text{Therefore }\int\sqrt{9-4x^2} \,dx&amp;=\int\sqrt{9\cos^2\theta}\,(\frac{3}{2}\cos\theta\,d\theta)
+                            </mrow>
+                            <mrow>
+            &amp;= \int\frac{9}{2}\cos^2 \theta\,d\theta
+                            </mrow>
+                        </md>
+                    </p>
+                    <p>
+                        Which of the following do you think were most helpful about our substitution <m>x=\frac{3}{2}\sin\theta</m>?
+                    </p> 
+                        
+                        <ol marker="A.">
+                            <li>
+                                <p>
+                                    With this choice of <m>x</m>, the expression <m>9-4x^2</m> is a perfect square. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    It was possible to compute <m>dx</m> from the information available to us. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    The integral <m>\displaystyle\int \frac{9}{2}\cos^2\theta d\theta</m> can be solved using our strategies we've seen.
+                                </p>
+                            </li>
+                        </ol>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let us continue our calculation above. 
+                        Using strategies from <xref ref="TI4"/>, we can compute <m>\displaystyle\int\cos^2\theta d\theta=\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta+C</m>. 
+                        This allows to continue as follows:
+                <md>
+                    
+                </md>
+                <md>
+                    <mrow>\int\sqrt{9-4x^2}dx \amp = \int\frac{9}{2}\cos^2\theta d\theta</mrow>
+                    <mrow> \amp = \frac{9}{2}\left(\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta\right)+C</mrow>
+                    <mrow> \amp = \frac{9}{4}\theta+\frac{9}{4}\sin\theta\cos\theta+C.</mrow>
+                </md>
+                To complete our integration, we need to re-write this anti-derivative in terms of <m>x</m>. 
+                Given that <m>x=\frac{3}{2}\sin\theta</m>, explain and demonstrate how to solve for the following:
+    
+                <md>
+                    <mrow>x \amp =\frac{3}{2}\sin\theta</mrow>
+                    <mrow>\sin\theta \amp = \unknown</mrow>
+                    <mrow>\cos\theta \amp = \unknown</mrow>
+                    <mrow>\theta \amp =\unknown</mrow>
+                </md>
+                Use this to express the final answer as a function of <m>x</m>. 
+            </p>
+                </statement>
+            </task>
         </activity>
         
-        <activity xml:id="activity-TI4sinsub">
+        <!--<activity xml:id="activity-TI4sinsub">
             <statement>
                 <p>
                     Fill in the missing <m>\unknown</m>s for the following calculation.
@@ -101,9 +183,26 @@ dx&amp;=\unknown\,d\theta
                 </mrow>
             </md>
             </statement>
-        </activity>
+        </activity>-->
         
         <activity>
+            <introduction>
+                <p>
+                    Use the substitution <m>x=\sin\theta</m> and similar ideas to above show that
+                    <me>
+                        \displaystyle\int\frac{dx}{\sqrt{1-x^2}}=\arcsin{x}+C.
+                    </me>
+                </p>
+                <md>
+                    <mrow>x \amp =\sin\theta</mrow>
+                    <mrow>dx \amp =\unknown</mrow>
+                    <mrow>\sqrt{1-x^2} \amp =\unknown</mrow>
+                    <mrow>\displaystyle\int\frac{dx}{\sqrt{1-x^2}} \amp =\unknown</mrow>
+                </md>
+            </introduction>
+        </activity>
+
+        <!--<activity>
             <statement>
                 <p>
 Use similar reasoning to complete the following proof that <m>\dfrac{d}{dx}\left[\arcsin(x)\right]=\dfrac{1}{\sqrt{1-x^2}}</m>.
@@ -140,9 +239,9 @@ dx&amp;=\unknown\,d\theta
             </md>
                 </p>
             </statement>
-        </activity>
+        </activity>-->
         
-        <activity>
+        <!--<activity>
             <statement>
                 <p>
 Substitutions of the form <me>16-25x^2=16-16\sin^2x=16\cos^2x</me> are made possible due to the
@@ -159,9 +258,35 @@ Which two of these four identities can be obtained from dividing both sides of
                     </ol>
                 </p>
             </statement>
-        </activity>
+        </activity>-->
+
+        <observation xml:id="TrigSubObservation">
+            <statement>
+                <p>
+                    The identity <m>\sin^2\theta+\cos^2\theta=1</m> can always be used to help us re-write expressions of the form <m>b^2-a^2x^2</m> as perfect squares:
+                    <md>
+                        <mrow>\text{If } x \amp =\frac{b}{a}\sin\theta</mrow>
+                        <mrow>\text{then } b^2-a^2x^2\amp =b^2-b^2\sin^2\theta =b^2\cos^2\theta.</mrow>
+                    </md>
+                </p>
+                <p>
+                    More generally, the identities <m>1+\tan^2\theta=\sec^2\theta</m> and <m>\sec^2\theta-1=\tan^2\theta</m> help us re-write the following expression as perfect squares:
+                    <md>
+                        <mrow>\text{If } x \amp =\frac{b}{a}\tan\theta</mrow>
+                        <mrow>\text{then } b^2+a^2x^2\amp =b^2+b^2\tan^2\theta =b^2\sec^2\theta.</mrow>
+                    </md>
+                    <md>
+                        <mrow>\text{If } x \amp =\frac{b}{a}\sec\theta</mrow>
+                        <mrow>\text{then } a^2x^2-b^2\amp =b^2\sec^2\theta-b^2=b^2\tan^2\theta.</mrow>
+                    </md>
+                    
+                A substitution of this kind is called a <alert>trigonometric substitution</alert>.
+                </p>
+            </statement>
+        </observation>
+
         
-        <observation>
+        <!--<observation>
             <statement>
                 <p>
 In summary, certain quadratic expressions inside an integral may be substituted with
@@ -192,10 +317,27 @@ trigonometric functions to take advantage of trigonometric identities and simpli
             </md>
                 </p>
             </statement>
-        </observation>
+        </observation>-->
         
-                
         <activity>
+            <statement>
+                <p>
+                    Use <xref ref="TrigSubObservation"/> to make an appropriate trigonometric substitution and show that
+                    <me>\displaystyle\int\frac{3}{4+25x^2}dx=\frac{3}{10}\arctan\left(\frac{5}{2}x\right)+C.</me>
+                </p>
+            </statement>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Use <xref ref="TrigSubObservation"/> to make an appropriate trigonometric substitution and show that
+                    <me>\displaystyle\int\frac{7}{x\sqrt{9x^2-16}}dx=\frac{7}{4}\arcsec\left(\frac{3}{4}x\right)+C.</me>
+                </p>
+            </statement>
+        </activity>
+        
+       <!-- <activity>
             <statement>
                 <p>
 Complete the following trigonometric substitution to find <m>\displaystyle\int\dfrac{3}{4+25x^2}\,dx</m>.
@@ -271,7 +413,7 @@ dx&amp;=\unknown\,d\theta
             </md>
                 </p>
             </statement>
-        </activity>
+        </activity>-->
 
          <activity>
     <introduction>
