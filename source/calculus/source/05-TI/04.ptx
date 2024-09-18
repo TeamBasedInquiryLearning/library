@@ -475,6 +475,39 @@ dx&amp;=\unknown\,d\theta
       </task>
   </activity>
 
+        <example>
+            <introduction>
+                <p>
+                    Use an appropriate trigonometric substitution to solve <m>\displaystyle\int\frac{\sqrt{9-49x^2}}{x^2}dx</m>, given that
+                    <me>\int\frac{\cos^2\theta}{\sin^2\theta}d\theta=-\theta-\frac{\cos\theta}{\sin\theta}+C</me>.
+                </p>
+            </introduction>
+            <solution>
+                <p>
+                    Here, given the form of the quadratic under the square-root, I will try <m>x=\frac{3}{7}\sin\theta</m>.
+                    With this choice, we have:
+                    <md>
+                        <mrow>x \amp =\frac{3}{7}\sin\theta</mrow>
+                        <mrow>dx \amp =\frac{3}{7}\cos\theta d\theta</mrow>
+                        <mrow>9-49x^2 \amp =9(1-\sin^2\theta)=9\cos^2\theta.</mrow>
+                    </md>
+                    We can then transform and integrate as follows:
+                    <md>
+                        <mrow>\displaystyle\int\frac{\sqrt{9-49x^2}}{x^2}dx \amp =\displaystyle\int\frac{3\cos\theta}{\frac{3^2}{7^2}\cdot\sin^2\theta}\cdot\frac{3}{7}\cos\theta d\theta</mrow>
+                        <mrow> \amp =7\displaystyle\int\frac{\cos^2\theta}{\sin^2\theta}d\theta</mrow>
+                        <mrow> \amp =-7\theta-7\frac{\cos\theta}{\sin\theta}+C.</mrow>
+                    </md>
+                    Since <m>x=\frac{3}{7}\sin\theta</m>, we solve for <m>\theta</m> and <m>\cos\theta</m> as:
+                    <md>
+                        <mrow>\theta \amp =\arcsin\left(\frac{7x}{3}\right)</mrow>
+                        <mrow>\cos\theta \amp =\sqrt{9-49x^2}</mrow>
+                    </md>
+                    and so our integral expressed in terms of <m>x</m> is:
+                    <me>-7\arcsin\left(\frac{7x}{3}\right)-\frac{\sqrt{9-49x^2}}{x}+C.</me>
+                </p>
+            </solution>
+        </example>
+
 
         <activity xml:id="activity-TI4semicircle">
             <statement>
