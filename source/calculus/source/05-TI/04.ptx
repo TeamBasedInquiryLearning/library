@@ -500,7 +500,7 @@ dx&amp;=\unknown\,d\theta
                     Since <m>x=\frac{3}{7}\sin\theta</m>, we solve for <m>\theta</m> and <m>\cos\theta</m> as:
                     <md>
                         <mrow>\theta \amp =\arcsin\left(\frac{7x}{3}\right)</mrow>
-                        <mrow>\cos\theta \amp =\sqrt{9-49x^2}</mrow>
+                        <mrow>\cos\theta \amp =\frac{\sqrt{9-49x^2}}{3}</mrow>
                     </md>
                     and so our integral expressed in terms of <m>x</m> is:
                     <me>-7\arcsin\left(\frac{7x}{3}\right)-\frac{\sqrt{9-49x^2}}{x}+C.</me>
