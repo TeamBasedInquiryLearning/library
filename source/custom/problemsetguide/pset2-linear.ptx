@@ -53,6 +53,68 @@
         </introduction>
     </problem>
 
+    <problem>
+        <title>(Problem 2)</title>
+        <introduction>
+            <p>
+                Let <me>W=\left\{\left[\begin{array}{c}x\\y\\z\\w\end{array}\right]\middle|x+y=3z+2w\right\}.</me>
+                The set <m>W</m> is a subspace. Below are two attempted proofs of the fact that <m>W</m> is closed under vector addition. 
+                Both of them are invalid; explain why. 
+            </p>
+        <task>
+            <statement>
+                <p>
+                    Let <m>\vec{u}=\left[\begin{array}{c}1\\4\\1\\1\end{array}\right],\vec{v}=\left[\begin{array}{c}2\\-1\\1\\-1\end{array}\right].</m>
+                    Then both <m>\vec{u},\vec{w}</m> are elements of <m>W</m>. Their sum is
+                    <me>\vec{w}=\left[\begin{array}{c}3\\3\\2\\0\end{array}\right]</me>
+                    and since <me>3+3=3\cdot (2)+2\cdot (0),</me>
+                    it follows that <m>\vec{w}</m> is also in <m>W</m> and so <m>W</m> is closed under vector addition.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    If <m>\left[\begin{array}{c}x\\y\\z\\w\end{array}\right],\left[\begin{array}{c}a\\b\\c\\d\end{array}\right]</m> are in <m>W</m>, we need to show that <m>\left[\begin{array}{c}x+a\\y+b\\z+c\\w+d\end{array}\right]</m> is also in W. 
+                    To be in <m>W</m>, we need 
+                    <me>(x+a)+(y+b)=3(z+c)+2(w+d).</me>
+                    Well, if <me>(x+a)+(y+b)=3(z+c)+2(w+d),</me>
+                    then we know that <me>x+y-3z-2w+a+b-3c-2d=0</me>
+                    by moving everything over to the left hand side. 
+                    Since we are assumming that <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m>, it follows that
+                    <m>0=0</m>, which is true, which proves that vector addition is closed.
+                </p>
+            </statement>
+        </task>
+        </introduction>
+    </problem>
+
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+            <p>
+                Consider <m>n</m> vector <m>\vec{v}_1,\dots, \vec{v}_n</m> living inside <m>\IR^m</m>. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        If <m>n &lt;m</m>, explain why it is impossible for these vectors to span all of <m>\IR^m</m>. 
+                        That is, prove <xref ref="EV2-n-vectors-span"/>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If <m>m &lt;n</m>, explain why it is impossible for these vectors to be linearly independent.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        
+    </problem>
+
     <subsection>
         <title>Background Information: The Dot-Product</title>
         <p>
@@ -176,13 +238,78 @@
 
     
     <problem>
-        <title>(Problem 2)</title>
-        
-        
+        <title>(Problem 4)</title>
+        <introduction>
+            <task>
+                <statement>
+                    <p>
+                        Use the properties of dot products in <xref ref="def-Dot-Product"/> to prove that the following equation is true for all <m>\vec{u},\vec{v}\in\IR^n</m>:
+                <me>||\vec{u}-\vec{v}||^2=||\vec{u}||^2+||\vec{v}||^2-2\left(\vec{u}\bullet\vec{v}\right).</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        There are several equivalent ways to describe planes in <m>\IR^3</m>. 
+                        One way to do so is to provide its equation:
+                        <me>ax+by+cz=d,</me>
+                        where <m>a,b,c,d\in\IR</m>. 
+                        Another way to describe a plane is to pick a point <m>\vec{p}</m> on the plane and a <em>normal vector</em> <m>\vec{n}</m>; then, the plane is described as the set of all vectors <m>\vec{x}</m> for which <m>\vec{x}-\vec{p}</m> is perpendicular to <m>\vec{n}</m>.
+                    </p>
+                    <p>
+                        If you are given a normal vector <m>\vec{n}\in\IR^3</m> and a point <m>\vec{p}\in\IR^3</m>, explain how to find an algebraic equation for the plane <m>P</m> that with normal vector <m>\vec{n}</m> passing through <m>\vec{p}</m>. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Continuing from the above, suppose instead you are given an algebraic equation for a plane:
+                        <me>ax+by+cz=d.</me>
+                        Explain and demonstrate how to find a point on the plane and its normal vector. 
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 5)</title>
         <introduction>
             <p>
-                blah
+                Let <m>W\subseteq\IR^n</m> be a subspace. 
+                If <m>\vec{u}\in\IR^n</m> is orthogonal to all vectors in <m>W</m>, we will say that <m>\vec{u}</m> is <em>orthogonal to <m>W</m></em>.
+                The set of all vectors <m>\vec{u}</m> that are orthogonal to <m>W</m> is called the <term>orthogonal complement</term> of <m>W</m> and is denoted by <m>W^\perp</m>; in other words, we have
+                <me>W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in W\}.</me>
             </p>
+            <p> 
+                For example, if <m>W=\textrm{span}\left\{\begin{bmatrix}1\\1\end{bmatrix}\right\}</m>, then <m>\vec{u}=\begin{bmatrix}1\\-1\end{bmatrix}</m> lives in <m>W^\perp</m> since it's perpendicular to any multiple of <m>\begin{bmatrix}1\\1\end{bmatrix}</m>, but the vector <m>\begin{bmatrix}1\\0\end{bmatrix}</m> does not live in <m>W^\perp</m>.
+    The set <m>W^\perp</m> is always a subspace, as you will prove below. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Prove tha <m>W^\perp</m> is always a subspace of <m>\IR^n</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, explain why saying that <m>\vec{u}\in W^\perp</m> is the same as saying that <m>\vec{u}</m> is orthogonal to each of the vectors <m>\vec{v}_1,\dots, \vec{v}_n</m> individually. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that <m>W=\vspan\left\{\begin{bmatrix}2\\-1\\1\end{bmatrix},\begin{bmatrix}0\\-3\\7\end{bmatrix}\right\}</m>. 
+                        Find a set of vectors that spans <m>W^\perp</m>. 
+                    </p>
+                </statement>
+            </task>
         </introduction>
+        
     </problem>
 </section>
