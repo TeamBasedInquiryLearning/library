@@ -1,0 +1,188 @@
+<section xml:id="sec-pset2-linear">
+    <title>Problem Set 2</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1): Application to Traffic Modelling</title>
+        <introduction>
+            <p>
+                You are working for a traffic consulting firm that is deciding how best to build a bike line in downtown Banff, Canada.
+                The centre that you are studying is depicted below; every street is a one-way street with directions as shown, and there are six intersections denoted by <m>A, B, C, D, E,</m> and <m>F</m>.
+                The numbers on the perimeter denote the total number of vehicles through the given direction in rush-hour and were obtained by using historical data from the City of Banff.
+                In order to provide the City of Banff with the most informed options, you need to determine the unknown traffic flows <m>x_1,\dots, x_7</m> labelled below.
+            </p>
+            <figure xml:id="BanffIntersection">
+                <caption>Traffic flow counts for a portion of a map of the City of Banff.</caption>
+                <image source="custom/TrafficFlow.png" width="75%">
+                    <description>
+                        <p>
+                            Traffic flow counts for a portion of a map of the City of Banff.
+                        </p>
+                    </description>
+                </image>
+            </figure>
+            
+            <p>
+                For each of the six intersections depicted in <xref ref="BanffIntersection"/>, the total number of vehicles entering the intersection is equal to the total number of vehicles leaving the intersection. 
+                For instance, looking at intersection <m>A</m>, we find:
+                <me>410+x_5=x_1+200.</me>
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Write down the system of linear equations that arises from considering all six intersections.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Are you able to say definitively what the values of <m>x_1,\dots, x_7</m> are? 
+                        If so, explain and demonstrate how to find them. 
+                        If not, what additional information do you need to ask the City of Banff to collect or otherwise provide for you in order to best inform their design?
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <subsection>
+        <title>Background Information: The Dot-Product</title>
+        <p>
+            The purpose of the next few problems are to introduce you to some new definitions and concepts, namely, that of dot product and orthogonality. 
+            In doing so, you are being asked to practice working with new definitions and to explore ideas related to them. 
+            This short section contains all of the background information you need to complete the problems and you'll get the most learning benefit by working on these exercises without consulting further outside sources. 
+        </p>
+
+        <definition xml:id="def-Dot-Product">
+            <statement>
+                <p>
+                    Given two Euclidean vectors <m>\vec{u}=\left[\begin{array}{c}u_{1}\\u_{2}  \\\vdots\\u_{n}\end{array}\right]</m> and <m>\vec{v}=\left[\begin{array}{c}v_{1}\\v_{2}  \\\vdots\\v_{n}\end{array}\right]</m>, the <term>dot product</term> of <m>\vec{u}</m> and <m>\vec{v}</m> is defined to be:
+                    <me>\vec{u}\bullet\vec{v}=\vec{u}=\left[\begin{array}{c}u_{1}\\u_{2}  \\\vdots\\u_{n}\end{array}\right]\bullet\vec{v}=\left[\begin{array}{c}v_{1}\\v_{2}  \\\vdots\\v_{n}\end{array}\right]=u_1v_1+u_2v_2+\cdots+u_nv_n.</me>
+                    In particular, note that the dot product of two Euclidean vectors is a real number. 
+                </p>
+                <p>
+                    The dot product satisfies the following properties for any Euclidean vectors <m>\vec{u},\vec{v}</m> and scalar <m>c\in\IR</m>:
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\vec{u}\bullet\vec{v}=\vec{v}\bullet\vec{u}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>(\vec{u}+\vec{v})\bullet\vec{w}=\vec{u}\bullet\vec{w}+\vec{v}\bullet\vec{w}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>(c\vec{u})\bullet\vec{v}=c(\vec{u}\bullet\vec{v})=\vec{u}\bullet (c\vec{v})</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\vec{u}\bullet\vec{u}\geq 0</m> and, the only way we can have <m>\vec{u}\bullet\vec{u}=\vec{0}</m> is if <m>\vec{u}=\vec{0}.</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    The <term>length (or norm)</term> of a vector <m>\vec{u}\in\IR^n</m> is denoted by <m>||\vec{u}||</m> and is given by:
+                    <me>||\vec{u}||=\sqrt{\vec{u}\bullet\vec{u}}=\sqrt{u_1^2+\cdots u_n^2}.</me>
+                    Interpreting the vector <m>\vec{u}</m> as an arrow starting at the origin and point in the direction of <m>\vec{u}</m>, this norm agrees with our usual notion of length. 
+                </p>
+                <p>
+                    Lastly, the dot product can be used to calculate the angle between two vectors. 
+                    Consider two vectors <m>\vec{u}</m> and <m>\vec{v}</m> and interpret them as arrows with their tails at the origin. 
+                    If <m>\theta</m> denotes the angle between these vectors, then it is computed by using the following formula:
+                    <me>\cos\theta=\frac{\vec{u}\bullet\vec{v}}{||\vec{u}||\cdot||\vec{v}||}.</me>
+                    In particular, it follows that the vectors <m>\vec{u},\vec{v}</m> are <term>perpendicular (or orthogonal)</term> if and only if
+                    <me>\vec{u}\bullet\vec{v}=0.</me>
+                </p>
+                <figure xml:id="Angles">
+                    <caption>Angle between two vectors.</caption>
+                    <image source="custom/AngleVector.png" width="50%">
+                        <description>
+                            <p>
+                                The angle <m>\theta</m> measured from <m>\vec{u}</m> to <m>\vec{v}.</m>
+                            </p>
+                        </description>
+                    </image>
+                </figure>
+            </statement>
+        </definition>
+        <p>
+            Consider working on the following exercise to practice these terms before attempting the next few problems. 
+            Answers are provided here for you to check your work; do not include answers to this exercise in your Problem Set solutions.
+        </p>
+        <exercise>
+            <introduction>
+                <task>
+                    <statement>
+                        <p>
+                            Let <m>\vec{u}=\left[\begin{array}{c}1\\1\\1\end{array}\right], \vec{v}=\left[\begin{array}{c}1\\2\\3\end{array}\right], \vec{w}=\left[\begin{array}{c}1\\0\\1\end{array}\right]</m>.
+                            Calculate <m>\vec{u}\bullet\vec{v}</m>, <m>||\vec{w}||</m>, and determine the angle between <m>\vec{v}</m> and <m>\vec{w}</m>. 
+                        </p>
+                    </statement>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            Explain why <m>\vec{u}\bullet\vec{v}=\vec{v}\bullet\vec{u}</m> for every choice of Euclidean vector <m>\vec{u},\vec{v}</m>. 
+                        </p>
+                    </statement>
+                </task>
+            </introduction>
+            <solution>
+                <task>
+                    <statement>
+                        <p>
+                            Using the formulae in <xref ref="def-Dot-Product"/>, we compute:
+                            <me>\vec{u}\bullet\vec{v}=\left[\begin{array}{c}1\\1\\1\end{array}\right]\bullet\left[\begin{array}{c}1\\2\\3\end{array}\right]=(1)(1)+(1)(2)+(1)(3)=6;</me>
+                            <me>||\vec{w}||=\sqrt{1^2+0^2+1^2}=\sqrt{2}.</me>
+                            To determine the angle between <m>\vec{v}</m> and <m>\vec{w}</m>, we first calculate the following:
+                            <md>
+                                <mrow>\vec{v}\bullet\vec{w} \amp =(1)(1)+(2)(0)+(3)(1)=4</mrow>
+                                <mrow>||\vec{v}|| \amp =\sqrt{1^2+2^2+3^2}=\sqrt{14}.</mrow>
+                            </md>
+                            This allows us to see that
+                            <me>\cos\theta=\frac{\vec{v}\bullet\vec{w}}{||\vec{v}||\cdot||\vec{w}||}=\frac{4}{\sqrt{2}\sqrt{14}}=\frac{2\sqrt{2}}{\sqrt{14}}=\frac{2}{\sqrt{7}}.</me>
+                            It follows that
+                            <me>\theta=\arccos\left(\frac{2}{\sqrt{7}}\right).</me>
+                        </p>
+                    </statement>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            If <m>\vec{u}=\left[\begin{array}{c}u_1\\\vdots\\u_n\end{array}\right]</m> and <m>\vec{v}=\left[\begin{array}{c}v_1\\\vdots\\v_n\end{array}\right],</m> then by using <xref ref="def-Dot-Product"/>, we find that
+                            <me>\vec{u}\bullet\vec{v}=u_1v_1+\cdots u_nv_n.</me>
+                            On the other hand, if we compute <m>\vec{v}\bullet\vec{u}</m>, we get:
+                            <me>\vec{v}\bullet\vec{u}=v_1u_1+\cdots+v_nu_n.</me>
+                            Since it doesn't matter what order we multiply two real numbers in, these two expressions represent the same quantity. 
+                        </p>
+                    </statement>
+                </task>
+            </solution>
+        </exercise>    
+    </subsection>
+
+    
+    <problem>
+        <title>(Problem 2)</title>
+        
+        
+        <introduction>
+            <p>
+                blah
+            </p>
+        </introduction>
+    </problem>
+</section>
