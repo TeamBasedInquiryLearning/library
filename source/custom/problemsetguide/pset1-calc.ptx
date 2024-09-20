@@ -360,7 +360,7 @@
             <task>
                 <p>
                     Here, if we let <m>u=\tan{x}</m>, then <m>du=\sec^2{x}dx</m> and so
-                    <me>\int\tan^9{x}\sec^2{x}dx=\int u^9du=\frac{u^10}{10}+C=\frac{\tan^{10}{x}}{10}+C.</me>        
+                    <me>\int\tan^9{x}\sec^2{x}dx=\int u^9du=\frac{u^{10}}{10}+C=\frac{\tan^{10}{x}}{10}+C.</me>        
                 </p>
             </task>
             <task>
@@ -378,7 +378,7 @@
                     <md>
                         <mrow>I \amp =\amp \int u^8(1+2u^2+u^4)du</mrow>
                         <mrow> \amp =\amp \int u^8+2u^{10}+u^{12}du</mrow>
-                        <mrow> \amp =\amp \frac{u^9}{9}+2\frac{u^11}{11}+\frac{u^{13}{13}}+C</mrow>
+                        <mrow> \amp =\amp \frac{u^9}{9}+2\frac{u^{11}}{11}+\frac{u^{13}}{{13}}+C</mrow>
                         <mrow> \amp =\amp \frac{\tan^9{x}}{9}+2\frac{\tan^{11}{x}}{11}+\frac{\tan^{13}{x}}{13}+C .</mrow>
                     </md> 
                 </p>
