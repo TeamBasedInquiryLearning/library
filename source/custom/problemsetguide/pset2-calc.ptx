@@ -1,0 +1,166 @@
+<section xml:id="sec-pset2-calc">
+    <title>Problem Set 2</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <introduction>
+            <p>
+                Explain and demonstrate how to evaluate the following integrals:
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle\int_{\ln(\frac{3}{4})}^{\ln(\frac{4}{3})}\frac{e^tdt}{\left(1+e^{2t}\right)^{\frac{3}{2}}};</m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle\int\frac{\sqrt{1-(\ln(x))^2}}{x\ln(x)}dx;</m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle\int\frac{\sin\theta d\theta}{\cos^2\theta+\cos\theta-2}.</m>
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                Recall that the standard equation of an ellipse is given by:
+                <me>\frac{x^2}{a^2}+\frac{y^2}{b^2}=1.</me>
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to find an integral that computes the area of the ellipse whose equation is given above. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use an appropriate technique of integration to evaluate the integral you found above to derive a formula for the area of the ellipse. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain how your formula can be applied to derive the area of a circle of radius <m>r</m>.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                Trigonometric substitution is a valued technique of integration because it can often transform expressions involving quadratic terms into more manageable trigonometric integrals which we have more tools for. 
+                More generally, if <m>\int f(x)dx</m> is an integral, then an <em>inverse</em> substitution is a substitution of the form <m>x=g(t)</m> where <m>t</m> is some variable we introduce. 
+                If <m>x=g(t)</m>, then <m>dx=g'(t)dt</m> and so:
+                <me>\int f(x)dx=\int f(g(t))\cdot g'(t)dt.</me>
+                Trigonometric substitution is the special case where <m>x=\frac{b}{a}\sin\theta,\frac{b}{a}\tan\theta,\frac{b}{a}\sec\theta</m>, depending on the context. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to evaluate <m>\int\frac{\sqrt{x}}{1+\sqrt[3]{x}}dx</m> using the inverse substitution <m>x=u^6</m>.
+                        To aid in your calculation, you may use the fact that 
+                        <me>\frac{u^8}{1+u^2}=u^6-u^4+u^2-1+\frac{1}{1+u^2}</me>
+                        if you would find it useful. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to evaluate <m>\int\sqrt{\frac{x}{1-x^3}}dx</m> by using an inverse substitution of the from <m>x=u^a</m> for some suitable choice of real number <m>a</m>.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                The <em>Weierstrass Substitution</em> is an example of an inverse substitution that transforms trigonometric integrals into integrals of rational functions. 
+                If we are given <m>\int f(x)dx</m>, then the Weierstrass substitution is given by <m>u=\tan\left(\frac{x}{2}\right)</m>.
+                Explore this in the following steps:
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Given that <m>u=\tan\left(\frac{x}{2}\right)</m>, use the Pythagorean theorem and trig identities as needed to explain why the following formulae are true:
+                        <md>
+                            <mrow>\sin(x) \amp =\frac{2u}{1+u^2}</mrow>
+                            <mrow>\cos(x) \amp =\frac{1-u^2}{1+u^2}</mrow>
+                            <mrow>\tan(x) \amp =\frac{2u}{1-u^2}</mrow>
+                            <mrow>dx \amp =\frac{2du}{1+u^2}.</mrow>
+                        </md>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to use this substitution to evaluate <m>\int\frac{dx}{1+\sin{x}}</m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to use this substitution to evaluate <m>\int\frac{dx}{\sin{x}+\tan{x}}</m>
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <hint>
+            <p>
+                For part (a), start by letting <m>\theta=\frac{x}{2}</m> and drawing the right triangle that expresses <m>u=\tan(\theta)</m>.
+            </p>
+        </hint>
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                If <m>f(x)</m> is function defined for all real numbers, then we define the improper integral <m>\int_{-\infty}^\infty f(x)dx</m> as follows:
+                Fix some real number <m>a</m>; if both integrals <m>\int_{-\infty}^a f(x)dx</m> and <m>\int_a^\infty f(x)dx</m> coverge, then we say that <m>\int_{-\infty}^\infty f(x)dx</m> converges and set
+                <me>\int_{-\infty}^\infty f(x)dx=\int_{-\infty}^a f(x)dx+\int_a^\infty f(x)dx.</me>
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to decide if <m>\int_{-\infty}^\infty \sin(x)dx</m> converges or diverges.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to decide if <m>\int_{-\infty}^\infty \frac{xdx}{\left(x^2+4\right)^\frac{3}{2}}</m> converges or diverges.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+</section>
