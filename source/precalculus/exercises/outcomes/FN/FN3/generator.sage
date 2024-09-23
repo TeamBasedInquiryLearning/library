@@ -58,9 +58,23 @@ class Generator(BaseGenerator):
         {"feature": "has a x-intercepts at", "result": graph["x_intercept"]}
         ] + [
           {"feature": f'has a local {graph["extrema"]["type"][i]} at ', "result":graph["extrema"]["points"][i]} for i in range(0,3)
-        ] + [
-        {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graph["increasing"]]) }
         ] 
+
+    #Increasing/decreasing intervals.  For Task 1, alternate which is supplied
+    if choice(["increasing","decreasing"])== "increasing":
+      graphs[0].append(
+      {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[0]["increasing"]]) }
+                      ) 
+    else:
+      graphs[0].append(
+      {"feature": "is decreasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[0]["decreasing"]]) }
+                      ) 
+    graphs[1].append(
+      {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[1]["increasing"]]) }
+                    ) 
+    graphs[1].append(
+      {"feature": "is decreasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[1]["decreasing"]]) }
+                      ) 
 
     graphs[1]["features"].insert(1,{"feature": "has range", "result": f'({",".join(str(d) for d in graphs[1]["range"])})'})
     graphs[1]["features"].insert(7,{"feature": "has global maximum of ", "result": graphs[1]["range"][1]})
