@@ -12,6 +12,8 @@ class Generator(BaseGenerator):
       graph["y_intercept"] = (0,choice([3..10]))
       graph["endpoints"]=[(-2*a-2*b-line_length,0), (2*c+line_length,math.ceil(graph["y_intercept"][1])+line_length)]
       graph["domain"] = [graph["endpoints"][0][0]-choice([1..3]), graph["endpoints"][1][0]]
+      graph["domain_left_included"]=choice([True,False])
+      graph["domain_right_included"]=choice([True,False])
       graph["x_intercept"] = [(-2*a-2*b-line_length,0),(-2*a-line_length,0)]
       graph["extrema"] = {"points":[(-2*a-b-line_length,choice([-8..-3])),
                                     (-1*a,choice([(graph["y_intercept"][1]+1)..13])),
@@ -51,9 +53,11 @@ class Generator(BaseGenerator):
       extreme_point_possibilities = [ graph["pieces"][0].subs({x:graph["domain"][0]}), graph["pieces"][4].subs({x:graph["domain"][1]})] + [ p[1] for p in graph["extrema"]["points"] ]
       graph["range"] = [ min(extreme_point_possibilities), max(extreme_point_possibilities)]
 
-
+      domain_string = ('[' if graph["domain_left_included"] else '(') + \
+                      ",".join(str(i) for i in graph["domain"]) +  \
+                      (']' if graph["domain_right_included"] else ')')  
       graph["features"] =  [
-        {"feature": "has domain", "result": f'[{",".join(str(i) for i in graph["domain"])}]'},
+        {"feature": "has domain", "result": domain_string},
         {"feature": "has a y-intercept at", "result": graph["y_intercept"]},
         {"feature": "has a x-intercepts at", "result": graph["x_intercept"]}
         ] + [
@@ -62,17 +66,17 @@ class Generator(BaseGenerator):
 
     #Increasing/decreasing intervals.  For Task 1, alternate which is supplied
     if choice(["increasing","decreasing"])== "increasing":
-      graphs[0].append(
+      graphs[0]["features"].append(
       {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[0]["increasing"]]) }
                       ) 
     else:
-      graphs[0].append(
+      graphs[0]["features"].append(
       {"feature": "is decreasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[0]["decreasing"]]) }
                       ) 
-    graphs[1].append(
+    graphs[1]["features"].append(
       {"feature": "is increasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[1]["increasing"]]) }
                     ) 
-    graphs[1].append(
+    graphs[1]["features"].append(
       {"feature": "is decreasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[1]["decreasing"]]) }
                       ) 
 
@@ -97,6 +101,22 @@ class Generator(BaseGenerator):
                       plot(data["graphs"][i]["pieces"][3],xmin=data["graphs"][i]["cut_points"][2][0],xmax=data["graphs"][i]["cut_points"][3][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][4],xmin=data["graphs"][i]["cut_points"][3][0],xmax=data["graphs"][i]["domain"][1],thickness=3)
                     )
+        #Left endpoint
+        if data["graphs"][i]["domain_left_included"]:
+          plots[i]+= point( (data["graphs"][i]["domain"][0],data["graphs"][i]["pieces"][0].subs(data["graphs"][i]["domain"][0])), 
+                           color='blue',size=75)
+        else:
+          plots[i] +=point( (data["graphs"][i]["domain"][0],data["graphs"][i]["pieces"][0].subs(data["graphs"][i]["domain"][0])), 
+                           pointsize=75,markeredgecolor='blue',color='white',zorder=5)
+
+        #Right endpoint
+        if data["graphs"][i]["domain_right_included"]:
+          plots[i]+= point( (data["graphs"][i]["domain"][1],data["graphs"][i]["pieces"][-1].subs(data["graphs"][i]["domain"][1])), 
+                           color='blue',size=75)
+        else:
+          plots[i]+= point( (data["graphs"][i]["domain"][1],data["graphs"][i]["pieces"][-1].subs(data["graphs"][i]["domain"][1])), 
+                           pointsize=75,markeredgecolor='blue',color='white',zorder=5)
+
       return {
           
           "graph1": plots[0],
