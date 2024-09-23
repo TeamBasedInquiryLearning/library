@@ -1,5 +1,4 @@
 import numpy as np
-from matplotlib.ticker import FuncFormatter
 class Generator(BaseGenerator):
   def data(self):
     #Adapted from https://github.com/matthematician/collegealgebra/blob/main/outcomes/FN5/generator.sage -- Thanks Matt!
@@ -12,7 +11,7 @@ class Generator(BaseGenerator):
       line_length=3
       graph["y_intercept"] = (0,choice([3..10]))
       graph["endpoints"]=[(-2*a-2*b-line_length,0), (2*c+line_length,math.ceil(graph["y_intercept"][1])+line_length)]
-      graph["domain"] = [graph["endpoints"][0][0]-choice([1..3]), graph["endpoints"][1][0]]
+      graph["domain"] = [graph["endpoints"][0][0]-b, graph["endpoints"][1][0]]
       graph["domain_left_included"]=choice([True,False])
       graph["domain_right_included"]=choice([True,False])
       graph["x_intercept"] = [(-2*a-2*b-line_length,0),(-2*a-line_length,0)]
@@ -51,8 +50,9 @@ class Generator(BaseGenerator):
 
 
 
-      extreme_point_possibilities = [ graph["pieces"][0].subs({x:graph["domain"][0]}), graph["pieces"][4].subs({x:graph["domain"][1]})] + [ p[1] for p in graph["extrema"]["points"] ]
-      graph["range"] = [ min(extreme_point_possibilities), max(extreme_point_possibilities)]
+      #extreme_point_possibilities = [ graph["pieces"][0].subs({x:graph["domain"][0]}), graph["pieces"][4].subs({x:graph["domain"][1]})] + [ p[1] for p in graph["extrema"]["points"] ]
+
+      #graph["range"] = [ min(extreme_point_possibilities), max(extreme_point_possibilities)]
 
       domain_string = ('[' if graph["domain_left_included"] else '(') + \
                       ",".join(str(i) for i in graph["domain"]) +  \
@@ -81,9 +81,77 @@ class Generator(BaseGenerator):
       {"feature": "is decreasing on ", "result": "\\cup".join( [f'({",".join(str(i) for i in interval)})' for interval in graphs[1]["decreasing"]]) }
                       ) 
 
-    graphs[1]["features"].insert(1,{"feature": "has range", "result": f'({",".join(str(d) for d in graphs[1]["range"])})'})
-    graphs[1]["features"].insert(7,{"feature": "has global maximum of ", "result": graphs[1]["range"][1]})
-    graphs[1]["features"].insert(8,{"feature": "has global minimum of ", "result": graphs[1]["range"][0]})
+    #Determine global max/min and range for Task 2
+    extrema_possibilities = [p[1] for p in graphs[1]["extrema"]["points"]]
+    interior_max = max(extrema_possibilities)
+    interior_min = min(extrema_possibilities)
+    left_endpoint = (graphs[1]["domain"][0], graphs[1]["pieces"][0].subs(graphs[1]["domain"][0]))
+    right_endpoint = (graphs[1]["domain"][1], graphs[1]["pieces"][-1].subs(graphs[1]["domain"][1]))
+    range_string=""
+    #Min and left endpoint
+    if min(left_endpoint[1],right_endpoint[1]) < interior_min:
+      if left_endpoint[1] < right_endpoint[1]:
+        if graphs[1]["domain_left_included"]:
+          global_min=left_endpoint[1]
+          range_string+=f"[{global_min},"
+        else:
+          global_min=None
+          range_string+=f"({left_endpoint[1]},"
+      elif left_endpoint[1] == right_endpoint[1]:
+        if graphs[1]["domain_left_included"] or graphs[1]["domain_right_included"]:
+          global_min=left_endpoint[1]
+          range_string+=f"[{global_min},"
+        else:
+          global_min=None
+          range_string+=f"({left_endpoint[1]},"
+      elif right_endpoint[1] < left_endpoint[1]:
+        if graphs[1]["domain_right_included"]:
+          global_min=right_endpoint[1]
+          range_string+=f"[{global_min},"
+        else:
+          global_min=None
+          range_string+=f"({right_endpoint[1]},"
+    else:
+      global_min = interior_min
+      range_string+=f"[{global_min},"
+
+    #Max and right endpoint
+    if max(left_endpoint[1],right_endpoint[1]) > interior_max:
+      if left_endpoint[1] > right_endpoint[1]:
+        if graphs[1]["domain_left_included"]:
+          global_max=left_endpoint[1]
+          range_string+=f"{global_max}]"
+        else:
+          global_max=None
+          range_string+=f"{left_endpoint[1]})"
+      elif left_endpoint[1] == right_endpoint[1]:
+        if graphs[1]["domain_left_included"] or graphs[1]["domain_right_included"]:
+          global_max=left_endpoint[1]
+          range_string+=f"{global_max}]"
+        else:
+          global_max=None
+          range_string+=f"{left_endpoint[1]})"
+      elif right_endpoint[1] > left_endpoint[1]:
+        if graphs[1]["domain_right_included"]:
+          global_max=right_endpoint[1]
+          range_string+=f"{global_max}]"
+        else:
+          global_max=None
+          range_string+=f"{right_endpoint[1]})"
+    else:
+      global_max = interior_max
+      range_string+=f"{global_max}]"
+    
+
+    graphs[1]["features"].insert(1,{"feature": "has range", "result": range_string})
+    if global_max:
+      graphs[1]["features"].insert(7,{"feature": "has a global maximum of ", "result": global_max})
+    else:
+      graphs[1]["features"].insert(7,{"feature": "has no global maximum", "result": ""})
+    if global_min:
+      graphs[1]["features"].insert(8,{"feature": "has a global minimum of ", "result": global_min})
+    else:
+      graphs[1]["features"].insert(8,{"feature": "has no global minimum", "result": ""})
       
     return {
         "features1": graphs[0]["features"],
@@ -94,14 +162,13 @@ class Generator(BaseGenerator):
   @provide_data
   def graphics(data):
   # updated by clontz
-      tick_format = FuncFormatter(lambda x,pos: int(x) if not x % 5 else "" )   
       plots=[]
       for i in [0,1]:
         plots.append( plot(data["graphs"][i]["pieces"][0],xmin=data["graphs"][i]["domain"][0],xmax=data["graphs"][i]["cut_points"][0][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][1],xmin=data["graphs"][i]["cut_points"][0][0],xmax=data["graphs"][i]["cut_points"][1][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][2],xmin=data["graphs"][i]["cut_points"][1][0],xmax=data["graphs"][i]["cut_points"][2][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][3],xmin=data["graphs"][i]["cut_points"][2][0],xmax=data["graphs"][i]["cut_points"][3][0],thickness=3) +
-                      plot(data["graphs"][i]["pieces"][4],xmin=data["graphs"][i]["cut_points"][3][0],xmax=data["graphs"][i]["domain"][1],thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1,tick_formatter=(tick_format,tick_format))
+                      plot(data["graphs"][i]["pieces"][4],xmin=data["graphs"][i]["cut_points"][3][0],xmax=data["graphs"][i]["domain"][1],thickness=3,gridlines="minor")
                     )
         #Left endpoint
         if data["graphs"][i]["domain_left_included"]:
