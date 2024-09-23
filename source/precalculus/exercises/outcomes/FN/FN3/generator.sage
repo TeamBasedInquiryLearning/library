@@ -1,4 +1,5 @@
 import numpy as np
+from matplotlib.ticker import FuncFormatter
 class Generator(BaseGenerator):
   def data(self):
     #Adapted from https://github.com/matthematician/collegealgebra/blob/main/outcomes/FN5/generator.sage -- Thanks Matt!
@@ -93,13 +94,14 @@ class Generator(BaseGenerator):
   @provide_data
   def graphics(data):
   # updated by clontz
+      tick_format = FuncFormatter(lambda x,pos: int(x) if not x % 5 else "" )   
       plots=[]
       for i in [0,1]:
         plots.append( plot(data["graphs"][i]["pieces"][0],xmin=data["graphs"][i]["domain"][0],xmax=data["graphs"][i]["cut_points"][0][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][1],xmin=data["graphs"][i]["cut_points"][0][0],xmax=data["graphs"][i]["cut_points"][1][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][2],xmin=data["graphs"][i]["cut_points"][1][0],xmax=data["graphs"][i]["cut_points"][2][0],thickness=3) +
                       plot(data["graphs"][i]["pieces"][3],xmin=data["graphs"][i]["cut_points"][2][0],xmax=data["graphs"][i]["cut_points"][3][0],thickness=3) +
-                      plot(data["graphs"][i]["pieces"][4],xmin=data["graphs"][i]["cut_points"][3][0],xmax=data["graphs"][i]["domain"][1],thickness=3)
+                      plot(data["graphs"][i]["pieces"][4],xmin=data["graphs"][i]["cut_points"][3][0],xmax=data["graphs"][i]["domain"][1],thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1,tick_formatter=(tick_format,tick_format))
                     )
         #Left endpoint
         if data["graphs"][i]["domain_left_included"]:
@@ -116,6 +118,7 @@ class Generator(BaseGenerator):
         else:
           plots[i]+= point( (data["graphs"][i]["domain"][1],data["graphs"][i]["pieces"][-1].subs(data["graphs"][i]["domain"][1])), 
                            pointsize=75,markeredgecolor='blue',color='white',zorder=5)
+
 
       return {
           
