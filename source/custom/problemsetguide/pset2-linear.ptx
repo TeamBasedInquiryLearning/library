@@ -87,34 +87,6 @@
             </statement>
         </task>
         </introduction>
-       <!-- <solution>
-            <task>
-                <statement>
-                    <p>
-                        While the calculations in the attempted proof are valid, they only indicate that a specific example of two vectors <m>\vec{u},\vec{v}</m> satisfy the given condition. 
-                        That is, the argument is not general: a correct proof would have to argue that <m>\vec{u}+\vec{v}\in W</m> for <em>any</em> choice of <m>\vec{u},\vec{v}</m> and not just these two choices. 
-                    </p>
-                </statement>
-            </task>
-            <task>
-                <statement>
-                    <p>
-                        The author begins by starting with the assumption that 
-                        <me>(x+a)+(y+b)=3(z+c)+2(w+d),</me>
-                        and then concludes that <m>0=0</m>. 
-                        This isn't what we want to do for two reasons: Firstly, we already know that <m>0=0</m>, so we haven't learned anything new. 
-                        More importantly, we <em>do not yet know that</em> the equation
-                        <me>(x+a)+(y+b)=3(z+c)+2(w+d)</me>
-                        is actually true! 
-                    </p>
-                    <p>
-                        To correctly prove this statement, we could start with our assumptions <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m> and explain how to manipulate them in order to show that
-                        <me>(x+a)+(y+b)=3(z+c)+2(w+d)</me>
-                        is true. 
-                    </p>
-                </statement>
-            </task>
-        </solution>-->
     </problem>
 
 
@@ -140,30 +112,6 @@
                 </statement>
             </task>
         </introduction>
-       <!-- <solution>
-            <task>
-                <statement>
-                    <p>
-                        To decide if the set of vectors <m>\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> spans all of <m>\IR^m</m>, we can use <xref ref="EV2-span-fact"/>. 
-                        Consider the matrix <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m>. 
-                        This matrix will have <m>m</m> rows and <m>n</m> columns. 
-                        If we assume that <m>n &lt; m</m>, then the maximum number of pivots that can appear in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> is equal to <m>n</m> since each pivot is in a unique row and column. 
-                        It follows that there must be at least one row in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> that is missing a pivot and, therefore, these vectors cannot span all of <m>\IR^m</m>.
-                    </p>
-                </statement>
-            </task>
-            <task>
-                <statement>
-                    <p>
-                        To decide if the set of vectors <m>\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> is linearly independent, we can use <xref ref="EV4-lindep-fact"/>.
-                        Consider the matrix <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m>. 
-                        This matrix will have <m>m</m> rows and <m>n</m> columns. 
-                        If we assume that <m>m &lt; n</m>, then the maximum number of pivots that can appear in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> is equal to <m>m</m> since each pivot is in a unique row and column. 
-                        It follows that there must be at least one column in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> that is missing a pivot and, therefore, these vectors cannot be linearly independent.
-                    </p>
-                </statement>
-            </task>
-        </solution>-->
     </problem>
 
     <subsection>
@@ -323,65 +271,6 @@
                 </statement>
             </task>
         </introduction>
-
-       <!-- <solution>
-            <task>
-                <statement>
-                    <p>
-                        Using a combination of our dot product properties, the following chain of equalities explains the result:
-                        <md>
-                            <mrow>||\vec{u} -\vec{v}||^2\amp \,=\,\amp (\vec{u}-\vec{v})\bullet(\vec{u}-\vec{v})</mrow>
-                            <mrow> \text{Property 2} \amp\,=\,\amp \vec{u}\bullet(\vec{u}-\vec{v})+(-\vec{v})\bullet(\vec{u}-\vec{v}) </mrow>
-                            <mrow> \text{Property 2}\amp\,=\,\amp \vec{u}\bullet\vec{u}+\vec{u}\bullet(-\vec{v})+(-\vec{v})\bullet\vec{u}+(-\vec{v})\bullet(-\vec{v}) </mrow>
-                            <mrow>\text{Property 1 and 3} \amp\,=\,\amp \vec{u}\bullet\vec{u}-\vec{u}\bullet\vec{v}-\vec{u}\bullet\vec{v}+\vec{v}\bullet\vec{v} </mrow>
-                            <mrow> \amp \,=\,\amp \vec{u}\bullet\vec{u}-2\vec{u}\bullet\vec{v}+\vec{v}\bullet\vec{v}</mrow>
-                            <mrow> \amp \,=\,\amp ||\vec{u}||^2+||\vec{v}||^2-2\vec{u}\bullet\vec{v}.</mrow>
-                        </md>
-                    </p>
-                </statement>
-            </task>
-            <task>
-                <statement>
-                    <p>
-                        Suppose that we are given a normal vector <m>\vec{n}=\left[\begin{array}{c}a\\b\\c\end{array}\right]</m> and that <m>\vec{p}=\left[\begin{array}{c}x_0\\y_0\\z_0\end{array}\right]</m>.
-                        We are given that a plane is described by consider all vectors <m>\vec{x}=\left[\begin{array}{c}x\\y\\z\end{array}\right]</m> for which <m>\vec{n}</m> is perpendicular to <m>\vec{x}-\vec{p}</m>. 
-                        It follows, then, that
-                        <me>\vec{n}\bullet(\vec{x}-\vec{p})=0,</me>
-                        by our dot-product results above. 
-                    </p>
-                    <p>
-                        Expanding this out, we get
-                        <md>
-                            <mrow>\vec{n}\bullet(\vec{x}-\vec{p})\amp \,=\,\amp 0</mrow>
-                            <mrow>a(x-x_0)+b(y-y_0)+c(z-z_0) \amp \,=\, \amp 0</mrow>
-                            <mrow>ax+by+cz \amp\,=\,\amp d, </mrow>
-                        </md>
-                        where <m>d=ax_0+by_0+cz_0</m>.
-                        Thus, we've recovered an algebraic equation for the plane.
-                    </p>
-                </statement>
-            </task>
-            <task>
-                <statement>
-                    <p>
-                        To find a point <m>(x_0,y_0,z_0)</m>, we can basically guess and check. 
-                        At least one of the coefficients <m>a,b,c</m> must be non-zero. 
-                        For sake of argument, if we assume that <m>a\neq 0</m>, then the point <m>(\frac{d}{a},0,0)</m> satisfies the equation and thus lies on the plane. 
-                    </p>
-                    <p>
-                        For the second part, if <m>(x_0,y_0,z_0)</m> is some specific point on the plane and <m>(x,y,z)</m> is some other general point, then we know the following are true:
-                        <md>
-                            <mrow>ax+by+cz \amp =d</mrow>
-                            <mrow>ax_0+by_0+cz_0 \amp =d.</mrow>
-                        </md>
-                        Subtracting, we find
-                        <me>a(x-x_0)+b(y-y_0)+c(z-z_0)=0,</me>
-                        from which it follows that the vector <m>\vec{n}=\left[\begin{array}{c}a\\b\\c\end{array}\right]</m> works as the normal vector. 
-                    </p>
-                </statement>
-            </task>
-        </solution>-->
-
     </problem>
 
     <problem>
@@ -420,97 +309,5 @@
                 </statement>
             </task>
         </introduction>
-        
-        <!--<solution>
-            <task>
-                <statement>
-                    <p>
-                        Referring to the definition of subspace, we have to check that <m>W^\perp</m> satisfies all three conditions:
-                        <ol>
-                            <li>
-                                <p>
-                                    First, we check that <m>\vec{0}\in W^\perp</m>. 
-                                    Since <m>\vec{0}\bullet\vec{w}</m> for all <m>\vec{w}\in W</m>, it follows that, indeed, we have <m>\vec{0}\in W^\perp</m>. 
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Next, we check closure under addition.
-                                    Suppose that we have two vectors <m>\vec{u},\vec{v}</m> and that we know that <m>\vec{u},\vec{v}</m> both live in <m>W^\perp</m>. 
-                                    By definition, it means that we know that
-                                    <me>\vec{u}\bullet\vec{w}=0\ \text{and } \vec{v}\bullet\vec{w}=0</me>
-                                    for all <m>\vec{w}\in W</m>.  
-                                </p>
-                                <p>
-                                    Using these equations, we then find that
-                                    <me>(\vec{u}+\vec{v})\bullet\vec{w}=\vec{u}\bullet\vec{w}+\vec{v}\bullet\vec{w}=0+0</me>
-                                    for all <m>\vec{w}\in W</m> and so <m>\vec{u}+\vec{v}</m> lives in <m>W^\perp</m>.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Lastly, we check closure under scalar multiplication.
-                                    Suppose that we have a <m>\vec{u}</m> and that we know that <m>\vec{u}</m> lives in <m>W^\perp</m>. 
-                                    By definition, it means that we know that
-                                    <me>\vec{u}\bullet\vec{w}=0</me>
-                                    for all <m>\vec{w}\in W</m>.  
-                                </p>
-                                <p>
-                                    Using this fact, we then find that if <m>c\in \IR</m>, then:
-                                    <me>(c\vec{u})\bullet\vec{w}=c(\vec{u}\bullet\vec{w})=0</me>
-                                    for all <m>\vec{w}\in W</m> and so <m>c\vec{u}</m> lives in <m>W^\perp</m>.
-                                </p>
-                            </li>
-                        </ol>
-                    </p>
-                </statement>
-            </task>
-            <task>
-                <statement>
-                    <p>
-                        Most critically, we must explain two things separately. 
-                        First, we need to explain why, if <m>\vec{u}\in W^\perp</m>, then <m>\vec{u}</m> is perpendicular to the vectors in the set <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m>. 
-                        Secondly, we also have to explain why, if <m>\vec{u}</m> is perpendicular to the vectors in <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m>, then we can conclude that <m>\vec{u}\in W^\perp</m>. 
-                    </p>
-                    <p>
-                        Let's deal with the first statement first. 
-                        If we know that <m>\vec{u}\in W^\perp</m>, then <m>\vec{u}</m> is perpendicular to all vectors in <m>W</m>. 
-                        Okay, but all the vectors in the set <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m> live in <m>W</m> and so <m>\vec{u}</m> must therefore be perpendicular to them. 
-                    </p>
-                    <p>
-                        Now let's deal with the second statement. 
-                        Suppose all we know is that <m>\vec{u}</m> is perpendicular to <m>\vec{v}_1,\dots, \vec{v}_n</m>. 
-                        If we take some arbitrary vector <m>\vec{w}\in W</m>, we now need to argue that <m>\vec{u}</m> is perpendicular to it as well. 
-                        For this, since we are given that <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, it follows that we can find scalars <m>c_1,\dots, c_n</m> for which
-                        <me>\vec{w}=c_1\vec{v}_1+\cdots+c_n\vec{v}_n.</me>
-                        But then:
-                        <md>
-                            <mrow>\vec{u}\bullet\vec{v} \amp\,=\,\amp \vec{u}\bullet(c_1\vec{v}_1+\cdots+c_n\vec{v}_n) </mrow>
-                            <mrow> \amp \,=\, \amp c_1(\vec{u}\bullet\vec{v}_1)+\cdots+c_n(\vec{u}\bullet\vec{v}_n)</mrow>
-                            <mrow> \amp \,=\,\amp 0+\cdots +0</mrow>
-                            <mrow> \amp \,=\,\amp 0.</mrow>
-                        </md>
-                        It follows that <m>\vec{u}</m> is perpendicular to <m>\vec{w}</m> and since <m>\vec{w}</m> was arbitrary, <m>\vec{u}\in W^\perp</m>.
-                    </p>
-                </statement>
-            </task>
-            <task>
-                <statement>
-                    <p>
-                        Well, if <m>\vec{u}=\left[\begin{array}{c}x\\y\\z\end{array}\right]\in W^\perp</m>, then we know by part (b) that this is the same as saying that <m>\vec{u}</m> is perpendicular to our two vectors individually. 
-                        That is, we know that
-                        <me>\vec{u}\bullet\left[\begin{array}{c}2\\-1\\1\end{array}\right]=2x-y+z=0</me>
-                        and
-                        <me>\vec{u}\bullet\left[\begin{array}{c}0\\-3\\7\end{array}\right]=-3y+7z=0.</me> 
-                        Thus, this gives us a system of linear equations to solve!
-                    </p>
-                    <p>
-                        Using our methods from <xref ref="LE"/> to solve this system, we find that the solution set is given by 
-                        <me>\left\{\left[\begin{array}{c}2z\\7z\\3z\end{array}\right]|\ z\in\IR\right\},</me>
-                        which means that <m>W^\perp=\vspan\left\{\left[\begin{array}{c}2\\7\\3\end{array}\right]\right\}.</m>
-                    </p>
-                </statement>
-            </task>
-        </solution>-->
     </problem>
 </section>
