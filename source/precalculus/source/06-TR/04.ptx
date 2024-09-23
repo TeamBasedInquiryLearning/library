@@ -12,6 +12,134 @@
     <subsection>
     <title>Activities</title>
 
+      <remark>
+        <p>
+          Recall from the previous section that we can find values of trigonometric functions of right triangles. In this section, we can take what we know about right triangles and use the same idea to find exact values of trigonometric functions of special angles.
+        </p>
+      </remark>
+      <definition xml:id="def-special-right-triangles">
+        <statement>
+          <p>
+            There are two special right triangle relationships that will continually appear throughout the study of mathematics.
+            <ul>
+              <li>
+                <p>
+                  <m>45-45-90</m> triangle
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>30-60-90</m> triangle
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </definition>
+
+      <activity xml:id="exploring-45-45-90-triangle">
+        <introduction>
+          <p>
+            In this activity, let's explore the relationship of the <m>45-45-90</m> special right triangle.
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Draw a right triangle and label the angles to have <m>45</m><degree/>, <m>45</m> <degree/>, and <m>90</m><degree/>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should be able to draw a right triangle with one <m>90</m><degree/> angle (indicated by a box) and two <m>45</m><degree/> angles.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              In a <m>45-45-90</m> triangle, two angles are the same size. If those two angles are the same size, what do we know about the sides opposite those angles? 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should recognize that the two legs of the triangle must be the same size.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Suppose one of the legs of the right triangle is of length <m>1</m>, how long is the other leg?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students may notice that because the two legs are equal, then the two legs should both be equal to <m>1</m>.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Now that we know two sides of the right triangle, use that information and the Pythagorean Theorem to find the length of the third side.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>1^2+1^2=c^2</m>
+            </p>
+            <p>
+              <m>2=c^2</m>
+            </p>
+            <p>
+              <m>\sqrt{2}=c</m>
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <remark>
+        <p>
+          From <xref ref="exploring-45-45-90-triangle"/>, we saw that a <m>45-45-90</m> triangle is an isosceles right triangle, which means that two of the sides of the triangle are equal. The ratio of its legs and hypotenuse is expressed as follows: <me>Leg:Leg:Hypotenuse=1:1:\sqrt{2}</me>. In terms of <m>x</m>, this ratio can be expressed as <me>x:x:\sqrt{2}</me>.
+        </p>
+      </remark>
+
+      <activity xml:id="exploring-30-60-90-triangle">
+        <introduction>
+          <p>
+            Suppose you are given a <m>30-60-90</m> triangle, where you know the angle opposite the <m>30</m><degree/> angle is of length <m>1</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Draw a right triangle and label the angles to have <m>30</m><degree/>, <m>60</m> <degree/>, and <m>90</m><degree/> and the side opposite of the <m>30</m><degree/> angle as having a length of <m>1</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should be able to draw a right triangle with one <m>90</m><degree/> angle (indicated by a box), one <m>30</m><degree/> angle and one <m>45</m><degree/> angle. THe side opposite the <m>30</m><degree/> angle should have a side length of <m>1</m>.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Unlike the <m>45-45-90</m> triangle, we cannot easily find another side length with the information given. Using trigonometry, which trigonometric function would help us find the length of the hypotenuse with the information given?
+              <ol marker= "A." cols="1">
+                <li> <m>\sin$\theta$</m> </li>
+                <li> <m>\cos$\theta$</m></li>
+                <li> <m>\tan$\theta$</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\sin$\theta$</m> 
+            </p>
+          </answer>
+        </task>
+        
+      </activity>
     </subsection>
 
     <exercises>

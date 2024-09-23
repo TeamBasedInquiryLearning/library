@@ -12,6 +12,97 @@
     <subsection>
     <title>Activities</title>
 
+<remark>
+  <p>
+    In this section, we will learn how to use right triangles to evaluate trigonometric functions. Before doing that, however, let's review some key concepts of right triangles that can also come in handy when solving.
+  </p>
+</remark>
+<definition xml:id="def-pythagorean-theorem">
+  <statement>
+    <p>
+      The <term>Pythagorean Theorem</term> is <me>a^2+b^2=c^2</me>, where <m>a</m> and <m>b</m> are lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse. In other words, the theorem tells us that if we know the lengths of any two sides of a right triangle, we can find out the length of the third side. 
+    </p>
+  </statement>
+</definition>
+
+<activity>
+  Suppose the hypotenuse of a right triangle is 13 cm long and one of the legs is 5 cm long.
+  <task>
+    <statement>
+      <p>
+        Draw a picture of this right triangle and label the sides. Use <m>x</m> to refer to the missing side.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <figure xml:id="drawing-of-5-12-13-triangle">
+          <image source="Images/5-12-13-triangle.png"/>
+          <caption>One example of how a student can draw the triangle.</caption>
+        </figure>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>x</m> (i.e., the length of the third side)?
+        <ol marker= "A." cols="1">
+          <li> <m>144</m> </li>
+          <li> <m>12</m></li>
+          <li> <m>194</m> </li>
+          <li> <m>14</m> </li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<remark>
+  The Pythagorean Theorem can be very helpful in finding the third side of a right triangle as long as we know the length of two other sides. What if we are given the side length of only one side of a given right triangle? How could we find the lengths of the other two sides?
+</remark>
+
+<definition xml:id="def-sides-of-right-triangles">
+  <statement>
+    <p>
+      Before we can answer the question posed, we must first make sure we know how to call specific sides of a right triangle. 
+    </p>
+    <ul>
+      <li>
+        <p>
+          The <term>hypotenuse</term> of a right triangle is always the side opposite the right angle. This side also happens to be the longest side of the triangle.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <term>opposite side</term> is across from a given angle.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <term>adjacent side</term> is the non-hypotenuse side that is next to a given angle.
+        </p>
+      </li>
+    </ul>
+    </p>
+    <p>
+      When given an angle, all sides of a triangle can be labeled. For example, suppose angle <m>A</m> is given, then the sides of a right triangle can be labeled as:
+      <figure xml:id="labeling-sides-of-right-triangle">
+        <image source="Images/Defining-sides-of-a-triangle.png"/>
+        <caption>From the perspective of angle A, all sides of a right triangle can be labeled.</caption>
+      </figure>
+    </p>
+  </statement>
+</definition>
+
+    <remark>
+    <p>
+    Right triangles can be used to evaluate trigonometric functions, such as sine and cosine. Let's explore how to evaluate all six trigonometric functions! 
+    </p>
+    </remark>
     </subsection>
 
     <exercises>
