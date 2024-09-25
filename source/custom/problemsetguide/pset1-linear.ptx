@@ -90,7 +90,7 @@
                             Using row operations, the corresponding RREF is equal to:
                             <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
                                0 &amp; 0&amp; k-3\end{array}\right].</me>
-                            Then, by <xref ref="LE3-fact-scenarios"/>, the linear system is inconsistent when <m>k=3</m> and is consistent with infinitely many solutions whenever <m>k\neq 3</m>.
+                            Then, by <xref ref="LE3-fact-scenarios"/>, the linear system is inconsistent whenever <m>k\neq 3</m> and is consistent with infinitely many solutions when <m>k=3</m>.
                         </p>
                     </li>
                     <li>
