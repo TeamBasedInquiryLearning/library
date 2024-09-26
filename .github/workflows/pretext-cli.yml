@@ -29,23 +29,24 @@ jobs:
               id: quickbuild
               if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch) && github.event_name != 'workflow_dispatch'
               run: |
-                pretext build precal-web-instructor -q
-                pretext build cal-web-instructor -q
-                pretext build la-web-instructor -q
+                pretext build cal-web-custom -q
+                pretext build la-web-custom -q
 
             - name: build all deploy targets
               if: steps.quickbuild.outcome == 'skipped'
-              run: pretext build --deploys
+              run: |
+                pretext build cal-web-custom
+                pretext build la-web-custom
 
             - name: stage deployment
               run: pretext deploy --stage-only
 
-            - name: build and stage all banks
-              if: steps.quickbuild.outcome == 'skipped'
-              run: |
-                python scripts/build_bank.py precalculus --full
-                python scripts/build_bank.py calculus --full
-                python scripts/build_bank.py linear-algebra --full
+            # - name: build and stage all banks
+            #   if: steps.quickbuild.outcome == 'skipped'
+            #   run: |
+            #     python scripts/build_bank.py precalculus --full
+            #     python scripts/build_bank.py calculus --full
+            #     python scripts/build_bank.py linear-algebra --full
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
@@ -91,7 +92,7 @@ jobs:
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: '## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}\n\n- [Precalculus](${{ steps.cloudflare_publish.outputs.url }}/preview/precalculus/instructor/frontmatter)\n\n- [Calculus](${{ steps.cloudflare_publish.outputs.url }}/preview/calculus/instructor/frontmatter)\n\n- [Linear Algebra](${{ steps.cloudflare_publish.outputs.url }}/preview/linear-algebra/instructor/frontmatter)'
+                    body: '## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}\n\n- [Calculus](${{ steps.cloudflare_publish.outputs.url }}/calculus/custom/frontmatter)\n\n- [Linear Algebra](${{ steps.cloudflare_publish.outputs.url }}/linear-algebra/custom/frontmatter)'
                   })
 
     deploy-ghpages:
