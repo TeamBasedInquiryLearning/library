@@ -28,8 +28,13 @@
         <!-- {{/non_rrefs}} -->
     </knowl>
     <knowl>
-        <content><p>Show step by step why
-        <me>\operatorname{RREF}{{A}} = {{rref}}</me></p></content>
+        <content><p>Use technology to compute
+        <m>\operatorname{RREF}{{A}}</m>.</p></content>
+        <outtro><p><me>{{rref}}</me></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Show step by step how to compute
+        <me>\operatorname{RREF}{{A}}</me> without technology.</p></content>
         <outtro><p><me>{{A}} \sim \cdots \sim {{rref}}</me></p></outtro>
     </knowl>
 </knowl>

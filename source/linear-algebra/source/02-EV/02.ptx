@@ -439,15 +439,15 @@ What can you conclude about
         <task>
             <statement>
                 <p>
-                    Let <m>\{\vec{v}_1,\dots, \vec{v}_m\}</m> be a set of vectors living in <m>\IR^n</m> and assume that <m>m &lt;n</m>.
-                    How many rows and how many columns will the matrix <m>[\vec{v}_1\cdots \vec{v}_m]</m> have?
+                    Let <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m> be a set of vectors living in <m>\IR^n</m> and assume that <m>m &lt;n</m>.
+                    How many rows and how many columns will the matrix <m>[\vec{v}_1\cdots \vec{v}_n]</m> have?
                 </p>
             </statement>
         </task>
         <task>
             <statement>
                 <p>
-Given no additional information about the vectors <m>\vec{v}_1,\dots, \vec{v}_m</m>, what is the maximum possible number of pivots in <m>\RREF[\vec v_1\,\dots\,\vec v_n]</m>?                </p>
+Given no additional information about the vectors <m>\vec{v}_1,\dots, \vec{v}_n</m>, what is the maximum possible number of pivots in <m>\RREF[\vec v_1\,\dots\,\vec v_n]</m>?                </p>
             </statement>
         </task>
         <task>

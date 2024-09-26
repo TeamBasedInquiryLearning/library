@@ -83,17 +83,17 @@ Prove that <m>R</m> <em>is</em> a subspace.
         <outtro>
             <p>
 First show that <m>R</m> is closed under
-vector addition, since if <m>{{v}}\in R</m> because it satisfies
-<m>{{R_eq}}</m>, and <m>{{valt}}\in R</m> because it satisfies
-<m>{{R_eq_alt}}</m>, then <m>{{v}}+{{valt}}\in R</m> also as it satisfies
-<m>{{R_eq_sum}}</m>.
+vector addition. Let <m>{{v}}\in R</m> so that
+<m>{{R_eq}}</m>, and let <m>{{valt}}\in R</m> so that
+<m>{{R_eq_alt}}</m>. Then use those assumptions to show
+<m>{{R_eq_sum}}</m> and therefore <m>{{v}}+{{valt}}\in R</m>.
             </p>
             <p>
 Then show that <m>R</m> is closed under
-scalar multiplication, since if <m>{{v}}\in R</m> because it satisfies
-<m>{{R_eq}}</m>, and <m>k</m> is a scalar,
-then <m>k{{v}}\in R</m> also as it satisfies
-<m>{{R_eq_mul}}</m>.
+scalar multiplication. Let <m>{{v}}\in R</m> so that
+<m>{{R_eq}}</m>, and let <m>k\in\mathbb R</m> is a scalar.
+Then use those assumptions to show <m>{{R_eq_mul}}</m>
+and therefore <m>k{{v}}\in R</m>.
             </p>
         </outtro>
     </knowl>
