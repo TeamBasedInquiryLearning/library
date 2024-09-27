@@ -47,7 +47,7 @@
             </p>
         </introduction>
        
-       <!--<solution>
+       <solution>
             <task>
                     <p>
                         If we use <m>u</m>-substitution with <m>u=\frac{1}{x+1}</m>, then we find that <m>du=-\frac{dx}{(x+1)^2}</m>, or:
@@ -85,7 +85,7 @@
                 Of these integrals, I think I would prefer to keep working with the first one in (a). 
                 My main reasoning is that I think a further substitution, say of the form <m>v=1-2u</m> might further simplify the integral.
             </p>
-        </solution>-->
+        </solution>
 
     </problem>
 
@@ -128,7 +128,7 @@
             </p>
         </hint>
 
-        <!--<solution>
+        <solution>
             <task>
                 <p>
                     We begin by using integration by parts. 
@@ -180,7 +180,7 @@
                         <me>nI_n=-\sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}.</me>
                     </p>
             </task>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem>
@@ -211,7 +211,7 @@
             </task>
         </introduction>
 
-        <!--<solution>
+        <solution>
             <task>
                     <p>
                         We can use the reduction formula from above with <m>n=5</m>. 
@@ -253,7 +253,7 @@
                         The two different looking answers are related to each other by a trig identity and additive constant!
                     </p>
             </task>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem xml:id="tansecsub-motivation">
@@ -288,7 +288,7 @@
                     From now on, you may use these results in future problems without having to reproduce them. 
             </p>
         </introduction>
-        <!--<solution>
+        <solution>
             <task>
                 <p>
                     Start by re-writing <m>\tan{x}=\frac{\sin{x}}{\cos{x}}</m> and then make the substitution <m>u=\cos{x}</m>:
@@ -323,7 +323,7 @@
                     </md>
                 </p>
             </task>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem>
@@ -356,7 +356,7 @@
                 Based on your explorations here, do you think substitution and trig identities alone will help you evaluate <m>\displaystyle \int\tan^2{x}\sec^3{x}dx</m>?
             </p>
         </introduction>
-        <!--<solution>
+        <solution>
             <task>
                 <p>
                     Here, if we let <m>u=\tan{x}</m>, then <m>du=\sec^2{x}dx</m> and so
@@ -401,7 +401,7 @@
             <p>
                 Neither of the substitutions <m>u=\tan{x}</m> nor <m>u=\sec{x}</m> seem effective here because the integrands don't contain what we need to finish the substitution. We would have to try something new. 
             </p>
-        </solution>-->
+        </solution>
     </problem>
 
 </section>

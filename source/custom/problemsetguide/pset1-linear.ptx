@@ -79,7 +79,7 @@
             </p>
         </hint>
 
-        <!--<solution>
+        <solution>
             <task>
                 <ol>
                     <li>
@@ -141,7 +141,7 @@
                     </li>
                 </ol>
             </task>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem>
@@ -196,7 +196,7 @@
         </task>
         </introduction>
 
-        <!--<solution>
+        <solution>
             <task>
                 <statement>
                     <p>
@@ -226,7 +226,7 @@
                     </p>
                 </statement>
             </task>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem>
@@ -272,7 +272,7 @@
                 </statement>
             </task>
         </introduction>
-        <!--<solution>
+        <solution>
             <task>
                     <p>
                         Note that solutions will undoubtedly vary because there are lots of different choices for valid examples!
@@ -390,7 +390,7 @@
                     </p>
                 </statement>
             </task>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem>
@@ -419,7 +419,7 @@
                 </ul>
             </p>
         </introduction>
-        <!--<solution>
+        <solution>
             <p>
                 <ul>
                     <li>
@@ -453,7 +453,7 @@
                     </li>
                 </ul>
             </p>
-        </solution>-->
+        </solution>
     </problem>
 
     <problem>
@@ -464,13 +464,13 @@
                 If you think it is true, provide an example that demonstrates as such; if you think it is false, explain why it is not possible to find two such systems.
             </p>
         </introduction>
-        <!--<solution>
+        <solution>
             <p>
                 This statement is false. 
                 Indeed, because we are told that the two systems are consistent, the number of free and bound variables is completely determined by the number of columns that contain pivots in their <em>coefficient</em> matrices. 
                 Since we're assuming the two systems have the same coefficient matrices, these values must be the same for both systems, even if their right-hand sides are different.
             </p>
-        </solution>-->
+        </solution>
     </problem>
 
 
