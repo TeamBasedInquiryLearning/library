@@ -832,7 +832,7 @@ Let <m>W</m> be a subspace of a vector space <m>V</m>.  How are <m>\vspan W</m> 
                 <statement>
                     <p>
                         Let <m>\vec{u}=\left[\begin{array}{c}1\\4\\1\\1\end{array}\right],\vec{v}=\left[\begin{array}{c}2\\-1\\1\\-1\end{array}\right].</m>
-                        Then both <m>\vec{u},\vec{w}</m> are elements of <m>W</m>. Their sum is
+                        Then both <m>\vec{u},\vec{v}</m> are elements of <m>W</m>. Their sum is
                         <me>\vec{w}=\left[\begin{array}{c}3\\3\\2\\0\end{array}\right]</me>
                         and since <me>3+3=3\cdot (2)+2\cdot (0),</me>
                         it follows that <m>\vec{w}</m> is also in <m>W</m> and so <m>W</m> is closed under vector addition.
