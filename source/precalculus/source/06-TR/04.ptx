@@ -17,6 +17,7 @@
           Recall from the previous section that we can find values of trigonometric functions of right triangles. In this section, we can take what we know about right triangles and use the same idea to find exact values of trigonometric functions of special angles.
         </p>
       </remark>
+      
       <definition xml:id="def-special-right-triangles">
         <statement>
           <p>
@@ -45,7 +46,7 @@
         <task>
           <statement>
             <p>
-              Draw a right triangle and label the angles to have <m>45</m><degree/>, <m>45</m> <degree/>, and <m>90</m><degree/>.
+              Draw a right triangle and label the angles to have <m>45</m><degree/>, <m>45</m><degree/>, and <m>90</m><degree/>.
             </p>
           </statement>
           <answer>
@@ -127,14 +128,14 @@
             <p>
               Unlike the <m>45-45-90</m> triangle, we cannot easily find another side length with the information given. Using trigonometry, which trigonometric function would help us find the length of the hypotenuse with the information given?
               <ol marker= "A." cols="1">
-                <li> <m>\sin$\theta$</m> </li>
-                <li> <m>\cos$\theta$</m></li>
-                <li> <m>\tan$\theta$</m> </li></ol>
+                <li> <m>\sin\theta</m> </li>
+                <li> <m>\cos\theta</m></li>
+                <li> <m>\tan\theta</m> </li></ol>
             </p>
           </statement>
           <answer>
             <p>
-              <m>\sin$\theta$</m> 
+              A
             </p>
           </answer>
         </task>
