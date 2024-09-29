@@ -216,6 +216,8 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
             <p>Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>. Applying the integration power rule gives us the indefinite integral <m>\displaystyle \int \frac{1}{x^p}\, dx=\frac{1}{(1-p)}x^{1-p}+C</m>.</p>
         </statement>
     </fact>
+
+    <!--
     <activity xml:id="activity-TI8prule1">
         <task>
             <p>If <m>0&lt; p&lt; 1</m>, which of the following statements must be true? Select all that apply.</p>
@@ -273,23 +275,93 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
             </ol>            
         </task>
     </activity>
-
+-->
         <fact xml:id="fact-TI8prule">
             <statement>
                 <p>
-                    Let <m>c, p>0</m>.
+                    Let <m>p>0</m>.
                     <ul>
                         <li>
-                            <m>\displaystyle \int_0^c \frac{1}{x^p}\, dx</m> converges if and only if <m>p&lt; 1</m>.
+                            <m>\displaystyle \int_0^1 \frac{1}{x^p}\, dx</m> converges if and only if <m>p&lt; 1</m>.
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <m>\displaystyle \int_c^\infty \frac{1}{x^p}\, dx</m> converges if and only if <m>p &gt; 1</m>.
+                            <m>\displaystyle \int_1^\infty \frac{1}{x^p}\, dx</m> converges if and only if <m>p &gt; 1</m>.
                         </li>
                     </ul>
                 </p>
             </statement>
+            <proof>
+                <p>
+                    Suppose first that <m>p\neq 1</m>. 
+                    To evaluate <m>\int_1^\infty\frac{1}{x^p}dx</m>, we consider the limit:
+                    <me>\int_1^\infty\frac{1}{x^p}dx=\lim_{t\to\infty}\int_1^t\frac{1}{x^p}dx=\lim_{t\to\infty}\frac{1}{(1-p)}\left(t^{1-p}-1\right).</me>
+                    Now, if <m>p>1</m>, then <m>(1-p)</m> is:
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                positive
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                negative
+                            </p>
+                        </li>
+                    </ol>
+                    Accordingly, the limit <m>\lim_{t\to\infty}\int_1^t\frac{1}{x^p}dx=\lim_{t\to\infty}\frac{1}{(1-p)}\left(t^{1-p}-1\right)</m>:
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                does not exist as a finite number
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                is equal to <m>\frac{1}{p-1}</m>
+                            </p>
+                        </li>
+                    </ol>
+                    On the other hand, if <m>0&lt; p&lt; 1</m>, then <m>(1-p)</m> is:
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                positive
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                negative
+                            </p>
+                        </li>
+                    </ol>
+                    In this case, the limit <m>\lim_{t\to\infty}\int_1^t\frac{1}{x^p}dx=\lim_{t\to\infty}\frac{1}{(1-p)}\left(t^{1-p}-1\right)</m>:
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                does not exist as a finite number
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                is equal to <m>\frac{1}{p-1}</m>
+                            </p>
+                        </li>
+                    </ol>
+                    Summing up, we have shown that the integral <m>\int_1^\infty\frac{dx}{x^p}</m> converges when <m>p>1</m> and diverges when <m>0&lt; p&lt; 1</m>.
+                </p>
+                <p>
+                    Using similar logic, but this time consider limits as <m>t\to 0^+</m>, one can show that the integral <m>\int_0^1\frac{dx}{x^p}</m> diverges when <m>p>1</m> and converges when <m>0&lt; p&lt; 1</m>.
+                </p>
+                <p>
+                    Finally, when <m>p=1</m>, we have <m>\int\frac{dx}{x^p}=\int\frac{dx}{x}=\ln|x|+C</m>. 
+                    In this case, since both 
+                    <me>\lim_{t\to\infty}\ln|t|=\infty</me> and
+                    <me>\lim_{\to 0^+}\ln|t|=-\infty,</me>
+                    it follows that both integrals <m>\int_0^1\frac{dx}{x}</m> and <m>\int_1^\infty\frac{dx}{x}</m> diverge.
+                </p>
+            </proof>
         </fact>
         
         <activity xml:id="activity-TI8finfinitybounded">
@@ -502,7 +574,7 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
         </fact>
         
         
-        <activity xml:id="activity-TI8comparison">
+       <activity xml:id="activity-TI8comparison">
             <introduction>
             <p>
                 Compare <m>\dfrac{1}{x^3+1}</m> to one of the following functions where <m>x>2</m> and use this to determine if <m>\displaystyle \int_2^\infty \frac{1}{x^3+1}\, dx</m> is convergent or divergent.
@@ -515,7 +587,7 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
             </p>
             </introduction>    
         </activity>
-        
+        <!--
         <activity xml:id="activity-TI8comparison2">
             <introduction>
             <p>
@@ -542,6 +614,7 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
             </ol>
         </task>
     </activity>
+    -->
     
     </subsection>
     <subsection>
