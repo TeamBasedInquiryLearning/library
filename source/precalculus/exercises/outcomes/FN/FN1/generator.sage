@@ -61,8 +61,8 @@ class Generator(BaseGenerator):
 
     @provide_data
     def graphics(data):
-      p=ellipse((-2,0),1,2,fill=True,alpha=0.3)
-      p+=ellipse((2,0),1,2,fill=True,alpha=0.3)
+      p=ellipse((-2,0),1,2,fill=True,alpha=0.1)
+      p+=ellipse((2,0),1,2,fill=True,alpha=0.1)
       domain = sample([1..20],6)
       codomain = sample([1..20],6)
       for x in domain:
