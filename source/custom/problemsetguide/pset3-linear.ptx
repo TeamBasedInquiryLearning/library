@@ -1,0 +1,241 @@
+<section xml:id="sec-pset3-linear">
+    <title>Problem Set 3</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                Let <m>S=\setList{
+                    \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
+                    \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
+                    \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
+                  }</m> and <m>A=\left[\begin{array}{ccc}
+                    -2 &amp; -1 &amp;1\\
+                    1 &amp; 0 &amp;0\\
+                    0 &amp; -4 &amp;-2\\
+                    0 &amp; 1 &amp;3
+                  \end{array}\right];</m> note that 
+                  <me>\RREF(A)=\left[\begin{array}{ccc}
+                    1 &amp; 0 &amp;0\\
+                    0 &amp; 1 &amp;0\\
+                    0 &amp; 0 &amp;1\\
+                    0 &amp; 0 &amp;0
+                  \end{array}\right].</me>
+                  The following statements are all <em>invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em>valid</em> statements that the author may have meant instead.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        The matrix <m>A</m> is linearly independent because <m>\RREF(A)</m> has a pivot in each column.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The matrix <m>A</m> does not span <m>\IR^4</m> because <m>\RREF(A)</m> has a row of zeroes. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The set of vectors <m>S</m> spans. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The set of vectors <m>S</m> is a basis. 
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 2)</title>
+        <introduction>
+                <p>
+                  In <xref ref="observation-subspace-basis"/>, we found a basis for the subspace 
+                  <me>W=\vspan\setList{
+                    \left[\begin{array}{c}1\\2\\3\end{array}\right],
+                    \left[\begin{array}{c}2\\4\\6\end{array}\right],
+                    \left[\begin{array}{c}0\\-2\\-2\end{array}\right],
+                    \left[\begin{array}{c}1\\2\\1\end{array}\right]
+                  }.</me>
+                  To do so, we use the results of the calculation: 
+                  <me>
+                    \RREF
+                    \left[\begin{array}{cccc}
+                    1 &amp; 2 &amp; 0 &amp; 1 \\
+                    2 &amp; 4 &amp; -2 &amp; 2 \\
+                    3 &amp; 6 &amp; -2 &amp; 1 \\
+                    \end{array}\right]
+                      =
+                    \left[\begin{array}{cccc}
+                      \markedPivot{1} &amp; 2 &amp; 0 &amp; 1 \\
+                      0 &amp; 0 &amp; \markedPivot{1} &amp; 1 \\
+                      0 &amp; 0 &amp; 0 &amp; 0
+                    \end{array}\right]
+                  </me>
+                  to conclude that the set <m>\setList{
+                    \left[\begin{array}{c}1\\2\\3\end{array}\right],
+                    \left[\begin{array}{c}0\\-2\\-2\end{array}\right]
+                  }</m>, the set of vectors <em>corresponding</em> to the pivot columns of the RREF, is a basis for <m>W</m>. 
+                </p>
+              <task>
+                <statement>
+                  <p>
+                    Explain why neither of the vectors <m>
+                      \left[\begin{array}{c}1\\0\\0\end{array}\right],
+                      \left[\begin{array}{c}0\\1\\0\end{array}\right]</m> are elements of <m>W</m>. 
+                  </p>
+                </statement>
+              </task>
+              <task>
+                <statement>
+                  <p>
+                    Explain why this shows that, in general, when we calculate a basis for <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, the pivot columns of <m>\RREF[\vec{v}_1\dots \vec{v}_n]</m> themselves do not form a basis for <m>W</m>.
+                  </p>
+                </statement>
+              </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+            <p>
+                Let <m>A</m> denote an <m>m\times n</m> matrix so that the column vectors of <m>A</m> are vectors in <m>\IR^m</m> and the row vectors of <m>A</m> (i.e., the rows) are vectors in <m>\IR^n</m>.
+                The <term>column space</term> of <m>A</m> (denoted <m>\text{Col}(A)</m>) is the subspace spanned by the columns of <m>A</m>. 
+                The <term>row space</term> of <m>A</m> (denoted <m>\text{Row}(A)</m>) is the subspace spanned by the rows of <m>A</m>. 
+                For instance, if <m>A=\left[\begin{array}1&amp; 2&amp; 3\\ -1&amp;4&amp; 7\end{array}\right]</m>, then:
+                <me>\text{Col}(A)=\vspan\left\{\left[\begin{array}{c}1\\-1\end{array}\right],\left[\begin{array}{c}2\\4\end{array}\right],\left[\begin{array}{c}3\\7\end{array}\right]\right\}</me>
+                and 
+                <me>\text{Row}(A)=\vspan\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right],\left[\begin{array}{c}-1\\4\\7\end{array}\right]\right\}.</me>
+            </p>
+            <p>
+                In <xref ref="EV6"/>, we learned how to calculate a basis for <m>\text{Col}(A)</m>: we row reduce to calculate <m>\RREF(A)</m> and then the columns <em>corresponding</em> to the columns containing pivot positions in <m>\RREF(A)</m> form a basis. 
+                The Problem just above demonstrates why it's important to not take the pivot columns of <m>\RREF(A)</m> itself. 
+            </p>
+            <p>
+                In contrast, the non-zero rows of <m>\RREF(A)</m> will always form a basis for <m>\text{Row}(A)</m> as you will now show:
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain why the non-zero rows of <m>\RREF(A)</m> span the same subspace as the rows of <m>A</m>. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain why the non-zero rows of <m>\RREF(A)</m> are always linearly independent. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Even though <m>\text{Row}(A)</m> and <m>\text{Col}(A)</m> are different subspaces of Euclidean vectors (in fact, unless <m>n=m</m>, the vectors in each set do not even live in the same ambient space), explain why <m>\dim(\text{Col}(A))=\dim(\text{Row}(A))</m>.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+            <p> 
+                An <m>n \times n</m> matrix <m>M</m> is <term>non-singular</term><idx>non-singular</idx> if the associated homogeneous system with coefficient matrix <m>M</m> is consistent with one solution. 
+                In what follows, assume that <m>M</m> is a non-singular matrix.
+            </p> 
+            <task>
+                <statement>
+                    <p>
+                        Explain why the RREF of <m>M</m> is the identity matrix. 
+                    </p>
+                </statement>
+            </task>     
+            <task>
+                <statement>
+                    <p>
+                        Explain why, for any column vector <m>\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]</m>, the system of equations given by <m>\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
+                            \right]</m> has a unique solution.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain why the columns of <m>M</m> form a basis of <m>\IR^n</m>.
+                    </p>
+                </statement>
+            </task>   
+        </introduction>
+        
+    </problem>
+
+    <problem>
+        <title>(Problem 5)</title>
+        
+        <introduction>
+            <p>
+                A set of vectors <m>\{\vec{u}_1,\dots,\vec{u}_p\}</m> in <m>\IR^n</m> is called an <em>orthogonal set</em> if each pair of distinct vectors are orthogonal. 
+                That is, we have <m>\vec{u}_i\bullet\vec{u}_j=0</m> whenever <m>i\neq j</m>. 
+                If <m>W</m> is a subspace of <m>\IR^n</m>, then an <em>orthogonal basis</em> for <m>W</m> is a basis of <m>W</m> that is also an orthogonal set.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that <m>S=\{\vec{u}_1,\dots, \vec{u}_p\}</m> is an orthogonal set of non-zero vectors. 
+                        Suppose further that <m>c_1,\dots, c_p</m> are scalars for which 
+                        <me>c_1\vec{u}_1+\cdots+c_p\vec{u}_p=\vec{0}.</me>
+                        Show that, in fact, each <m>c_i</m> must be equal to <m>0</m> and conclude that <m>S</m> must be linearly independent.
+                        In other words, show that any orthogonal set of non-zero vectors is linearly independent. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose further that <m>S=\{\vec{u}_1,\dots, \vec{u}_p\}</m> is an orthogonal basis for some subspace <m>W</m> of <m>\IR^n</m> and that <m>\vec{y}\in W</m>. 
+                        Then, since <m>S</m> is a basis, we know that we can find unique scalars <m>c_1,\dots, c_p</m> for which 
+                        <me>\vec{y}=c_1\vec{u}_1+\cdots+c_p\vec{u}_p.</me>
+                        Explain why we can solve for these scalars as follows: 
+                        <me>c_i=\frac{\vec{y}\bullet\vec{u}_i}{\vec{u}_i\bullet\vec{u}_i}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let's put this together and practice the new terms/concepts. 
+                        Let <m>S=\vspan\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}-1\\0\\1\end{bmatrix},\begin{bmatrix}0\\1\\0\end{bmatrix}\right\}</m>. 
+                        Verify that <m>S</m> is an orthogonal basis of <m>\IR^3</m> and explain and demonstrate how to write the vector <m>\left[\begin{array}{c}1\\2\\3\end{array}\right]</m> as a linear combination of vectors in <m>S</m> <em>without</em> doing any row reducing or solving of linear equations (for either task). 
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <hint>
+            <p>
+                For (a): what happens if you take the left-hand-side of the vector equation in (a) and calculate the dot-product with <m>\vec{u}_i</m>?
+            </p>
+            <p>
+                For (b): try something similar to part (a). 
+            </p>
+        </hint>
+    </problem>
+</section>
