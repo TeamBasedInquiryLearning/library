@@ -1,0 +1,54 @@
+<section xml:id="sec-pset3-calc">
+    <title>Problem Set 3</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                Let <m>R</m> denote the region in the <m>xy</m>-plane that is inside the circle <m>(x-2)^2+y^2=1</m>. 
+                If we revolve the region <m>R</m> about the <m>y</m>-axis, we obtain a <em>torus</em>, which is fancy word for doughnut.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use <url href="https://www.wolframalpha.com/" visual="wolframalpha.com">Wolfram Alpha</url> Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. 
+                        To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate <m>\int_0^\frac{\pi}{4} \sin(x)dx</m>:
+                        <c>integral of sin(x)dx where x goes from 0 to pi/4</c>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        After this check, explain and demonstrate how to evaluate <em>one</em> of the two integrals using methods of integrations we've learned in class. 
+                        Why did you choose the integral you chose?
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        
+    </problem>
+
+</section>
