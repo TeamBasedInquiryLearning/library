@@ -244,6 +244,68 @@ equation solvable.
 <sage language="octave">
 </sage>
 
+
+
+<activity>
+      <task>
+        <introduction>
+          <p> Write a statement involving the solutions of a vector equation that's equivalent to each claim: </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
+                    1 \\
+                    -1 \\
+                    0 \\
+                    -1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    5 \\
+                    5 \\
+                    3 \\
+                    1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    9 \\
+                    11 \\
+                    6 \\
+                    2
+                    \end{array}\right] \right\}</m> is linearly <em>independent</em>.</q>
+                    </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+                <p>
+                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
+                    1 \\
+                    -1 \\
+                    0 \\
+                    -1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    5 \\
+                    5 \\
+                    3 \\
+                    1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    9 \\
+                    11 \\
+                    6 \\
+                    2
+                    \end{array}\right] \right\}</m> is linearly <em>dependent</em>.</q>
+                </p>
+            </statement>
+          </task>
+      </task>
+      <task>
+        <statement>
+          <p> Explain how to determine which of these statements is true. </p>
+        </statement>
+      </task>
+</activity>
+
+<sage language="octave">
+</sage>
+
 <observation xml:id="def_of_LI">
     <statement>
         <p>
@@ -285,66 +347,6 @@ equation solvable.
   </ul>
     </statement>
 </observation>
-
-<activity>
-      <task>
-        <introduction>
-          <p> Write a statement involving the solutions of a vector equation that's equivalent to each claim: </p>
-        </introduction>
-        <task>
-            <statement>
-                <p>
-                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
-                    1 \\
-                    -1 \\
-                    0 \\
-                    -1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    5 \\
-                    5 \\
-                    3 \\
-                    1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    9 \\
-                    11 \\
-                    6 \\
-                    3
-                    \end{array}\right] \right\}</m> is linearly <em>independent</em>.</q>
-                    </p>
-            </statement>
-          </task>
-          <task>
-            <statement>
-                <p>
-                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
-                    1 \\
-                    -1 \\
-                    0 \\
-                    -1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    5 \\
-                    5 \\
-                    3 \\
-                    1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    9 \\
-                    11 \\
-                    6 \\
-                    3
-                    \end{array}\right] \right\}</m> is linearly <em>dependent</em>.</q>
-                </p>
-            </statement>
-          </task>
-      </task>
-      <task>
-        <statement>
-          <p> Explain how to determine which of these statements is true. </p>
-        </statement>
-      </task>
-</activity>
-
-<sage language="octave">
-</sage>
 
 <!-- <activity estimated-time='10'>
     <introduction>
