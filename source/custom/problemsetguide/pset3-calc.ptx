@@ -1,0 +1,225 @@
+<section xml:id="sec-pset3-calc">
+    <title>Problem Set 3</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                Let <m>R</m> denote the region in the <m>xy</m>-plane that is inside the circle <m>(x-2)^2+y^2=1</m>. 
+                If we revolve the region <m>R</m> about the <m>y</m>-axis, we obtain a <em>torus</em>, which is fancy word for doughnut.
+                <sage>
+                    <input>
+                        x,y,z = var('x y z')
+            p = revolution_plot3d(sqrt(1-(x-2)^2),(x,1,3), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
+            p += revolution_plot3d(-sqrt(1-(x-2)^2),(x,1,3), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
+            p += line([(0,0,-2), (0,0,2)],color="black",label="z")
+            p
+                    </input>
+                    <output>
+                        
+                    </output>
+                </sage>
+            </p>
+            
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use <url href="https://www.wolframalpha.com/" visual="wolframalpha.com">Wolfram Alpha</url> Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. 
+                        To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate <m>\int_0^\frac{\pi}{4} \sin(x)dx</m>:
+                        <c>integral of sin(x)dx where x goes from 0 to pi/4</c>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        After this check, explain and demonstrate how to evaluate <em>one</em> of the two integrals using methods of integrations we've learned in class. 
+                        Why did you choose the integral you chose?
+                    </p>
+                </statement>
+            </task>
+            
+        </introduction>
+        
+    </problem>
+
+    <problem>
+        <title>(Problem 2)</title>    
+        <introduction>
+            <p>
+                Let <m>S</m> denote the region in 3-space that is above the <m>xy</m>-plane and contained inside the cylinders <m>x^2+z^2=1</m> and <m>y^2+z^2=1</m>; this region is depicted in <xref ref="cylinders"/> below.
+            </p>
+            <figure xml:id="cylinders">
+                <caption>Two intersecting cylinders above the <m>xy</m>-plane. </caption>
+                <image source="custom/intersectingcylinders.png" width="50%">
+                </image>
+            </figure>
+            <p>
+                Explain and demonstrate how to calculate the volume of <m>S</m> by considering cross-sections obtained by cutting <m>S</m> with planes perpendicular to one of the three coordinate axes. 
+            </p>
+        </introduction>
+        <hint>
+            <p>
+                Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with. 
+            </p>
+        </hint>
+    </problem>
+
+    <problem>
+        <title>(Problem 3)</title>
+        
+        <introduction>
+            <p>
+                Let <m>R</m> denote the region of the <m>xy</m>-plane that lies above the <m>x</m>-axis, to the right of the line <m>x=1</m>, and below the graph of <m>f(x)=\frac{1}{x}</m>.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                       Is the area of <m>R</m> finite or infinite? 
+                       Justify your reasoning using concepts covered in this course. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Now revolve <m>R</m> about the <m>x</m>-axis to obtain an infinite trumpet-like shape <m>S</m>. 
+                        Explain and demonstrate how to set up an (improper) integral that computes the volume of <m>S</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Does your integral above converge? That is, is the volume of <m>S</m> finite?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What?????????
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+            <p>
+                In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. 
+                Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. 
+                In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope. 
+            </p>
+            <p>
+                The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. 
+                You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of <m>10</m> meters using a Riemann sum if we cut the rope into <m>4</m> pieces of equal length.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of <m>10</m> meters using a Riemann sum if we cut the rope into <m>n</m> pieces of equal length.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 5)</title>
+        <introduction>
+            <p>
+                NASA wants you to do your best to calculate the length of a piece of wire shaped as the graph the <m>f(x)=xe^{-x^2}</m> over the interval <m>[0,2]</m>.
+            </p>
+            <sage>
+                <input>
+                    P=plot(x*exp(-x^2),0,2)
+                    P
+                </input>
+                <output>
+                    
+                </output>
+            </sage>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to write down a definite integral that computes the arc length that NASA wants. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Think about the techniques of integration you know, and write a few sentences explaining why none of them are particularly helpful in evaluating the integral above. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. 
+                        By editing the code cell below, vary <m>n</m> (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA.
+                        You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. 
+                        Start with <m>n=10, 15, 20</m>, and then trying larger numbers at your discretion. 
+                        Based on your experimenting, how large do you think you should take <m>n</m> to be and what do you think is the approximate length?
+                    </p>
+                    <sage>
+                        <input>
+                            f(x)=x*exp(-x^2) ###this tells sage what function we're working with
+                            a=0 ##this establishes the left endpoint of our interval
+                            b=2 ##this establishes the right endpoint
+                            n=10 ##this is the number of pieces we cut the wire into. this is what you should vary
+                            dx=(b-a)/n ##this is the width of interval
+                            k=var("k") ##here, i'm telling sage i want to use "k" as the index variable in the sum
+                            ##what follows is the actual sum. you shouldn't alter this line, but if feel free to change the function and starting points above. If you get an error, refresh the activity book to reset this cell
+                            Estimate=sum(sqrt(dx^2+(f(a+(k+1)*dx)-f(a+k*dx))^2),k,0,n-1).n() 
+                            Estimate
+                        </input>
+                        <output>
+                            
+                        </output>
+                    </sage>
+                </statement>
+            </task>
+        </introduction>
+        
+    </problem>
+</section>
