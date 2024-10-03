@@ -436,7 +436,12 @@
     <sageplot>
       f(x) = (1/2)*x-1
       g(x) = 4*x-3
-      p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3,  gridlines=[[-10..10],[-10..10]]) + point((0,-1),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)+ point((4,1),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10) + plot(g, (x, -10, 10), ymin=-10, ymax=10, color='red', thickness=3) + point((0,-3),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10, color='red')+ point((2,5),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10, color='red')
+      p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3,  gridlines=[[-10..10],[-10..10]])
+      p+=point((0,-1),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)+ point((4,1),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)
+      p+=text("$f(x)$", (7.5,1.5), color="blue", fontsize=20)
+      p+=plot(g, (x, -10, 10), ymin=-10, ymax=10, color='red', thickness=3) 
+      p+=point((0,-3),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10, color='red')+ point((2,5),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10, color='red')
+      p+=text("$g(x)$", (1,6), color="red", fontsize=20)
       p
     </sageplot>
   </image>
@@ -444,7 +449,7 @@
 <task>
   <statement>
     <p>
-      What is the vertical distance between the two points on the red line?
+      What is the vertical distance between the two points on the line <m>y=g(x)</m> (the red line)?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -461,7 +466,7 @@
 <task>
   <statement>
     <p>
-      What is the horizontal distance between the two points on the red line?
+      What is the horizontal distance between the two points on the line <m>y=g(x)</m> (the red line)?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -478,7 +483,7 @@
 <task>
   <statement>
     <p>
-      Using information from parts (a) and (b), what value could we use to describe the steepness of the red line?
+      Using information from parts (a) and (b), what value could we use to describe the steepness of the line <m>y=g(x)</m> (the red line)?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -495,7 +500,7 @@
 <task>
   <statement>
     <p>
-      What is the vertical distance between the two points on the blue line?
+      What is the vertical distance between the two points on the line <m>y=f(x)</m> (the blue line)?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -512,7 +517,7 @@
 <task>
   <statement>
     <p>
-      What is the horizontal distance between the two points on the blue line?
+      What is the horizontal distance between the two points on the line <m>y=f(x)</m> (the blue line)?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -529,7 +534,7 @@
 <task>
   <statement>
     <p>
-      Using information from parts (d) and (e), what value could we use to describe the steepness of the blue line?
+      Using information from parts (d) and (e), what value could we use to describe the steepness of the line <m>y=f(x)</m> (the blue line)?
       <ol marker= "A." cols="2">
         <li><m>2</m></li>
         <li><m>4</m></li>
@@ -551,7 +556,7 @@
   </statement>
   <answer>
     <p>
-      The red line. The slope of the red line is <m>4</m> and the slope of the blue line is <m>\dfrac{1}{2}</m>. Because <m>4</m> is larger than <m>\dfrac{1}{2}</m>, the red line is steeper. 
+      The line <m>y=g(x)</m> (the red line). The slope of <m>y=g(x)</m> is <m>4</m> and the slope of <m>y=f(x)</m> (the blue line) is <m>\dfrac{1}{2}</m>. Because <m>4</m> is larger than <m>\dfrac{1}{2}</m>, the line <m>y=g(x)</m> (the red line) is steeper. 
     </p>
   </answer>
 </task>
@@ -573,7 +578,10 @@
       <sageplot>
         f(x) = (1/2)*x-1
         g(x) = -(1/2)*x-1
-        p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]]) + plot(g, (x, -10, 10), ymin=-10, ymax=10, color='green', thickness=3, gridlines=[[-10..10],[-10..10]])
+        p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]]) 
+        p+=text("$f(x)$", (7.5,4.5), color="blue", fontsize=20)
+        p+=plot(g, (x, -10, 10), ymin=-10, ymax=10, color='green', thickness=3, gridlines=[[-10..10],[-10..10]])
+        p+=text("$g(x)$", (-7.5,4.5), color="green", fontsize=20)
         p
       </sageplot>
     </image>
@@ -581,7 +589,7 @@
   <task>
     <statement>
       <p>
-        What is the slope of the blue line?
+        What is the slope of the line <m>y=f(x)</m> (the blue line)?
       <ol marker= "A." cols="2">
         <li><m>\dfrac{1}{2}</m></li>
         <li><m>2</m></li>
@@ -598,7 +606,7 @@
   <task>
     <statement>
       <p>
-        What is the slope of the green line?
+        What is the slope of <m>y=g(x)</m> (the green line)?
       <ol marker= "A." cols="2">
         <li><m>\dfrac{1}{2}</m></li>
         <li><m>2</m></li>
@@ -632,7 +640,7 @@
     </statement>
     <answer>
       <p>
-        Although both slopes have the same steepness <m>(\dfrac{1}{2})</m>, one line has a positive slope (blue line) and the other line has a negative slope (green line).
+        Although both slopes have the same steepness <m>(\dfrac{1}{2})</m>, one line has a positive slope (<m>y=f(x)</m> , the blue line) and the other line has a negative slope (<m>y=g(x)</m>, the green line).
       </p>
     </answer>
   </task>
