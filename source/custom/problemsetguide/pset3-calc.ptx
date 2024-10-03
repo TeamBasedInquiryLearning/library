@@ -198,6 +198,7 @@
                         You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. 
                         By editing the code cell below, vary <m>n</m> (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA.
                         You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. 
+                        Start with <m>n=10, 15, 20</m>, and then trying larger numbers at your discretion. 
                         Based on your experimenting, how large do you think you should take <m>n</m> to be and what do you think is the approximate length?
                     </p>
                     <sage>
