@@ -62,5 +62,5 @@ class Generator(BaseGenerator):
 
     @provide_data
     def graphics(data):
-       p=plot(data["g"],-6,6,thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1)
+       p=plot(data["g"],-10,10,ymin=-10,ymax=10,thickness=2,gridlines=True,ticks=[1,1],aspect_ratio=1)
        return {"plot":p}
