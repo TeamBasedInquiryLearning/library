@@ -60,6 +60,40 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Linear independence is not a property of matrices; it's a property of sets of vectors. 
+                        One possible alternative to this statement that would be valid is <q>The set <m>S</m> is linearly independent because <m>\RREF(A)</m> has a pivot in each column.</q>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Similar to above,  <q>spanning</q> is not a property of matrices; it's a property of sets of vectors. 
+                        One possible valid alternative would be <q>The set <m>S</m> does not span <m>\IR^4</m> because <m>\RREF(A)</m> has a row of zeroes.</q>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Here, the author needs to be more precise: what exactly do they claim <m>S</m> to span? 
+                        Based on above, we know that <m>S</m> does not span <m>\IR^4</m>. However, perhaps the author meant to say <m>S</m> spans some three-dimensional subspace. 
+                        That is, perhaps they really meant that <m>S</m> spanned the subspace <m>\vspan(S)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Likewise, we need more precision. The set <m>S</m> is not a basis for <m>\IR^4</m>, but it is a basis for the subspace <m>\vspan(S)</m>. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -110,6 +144,36 @@
                 </statement>
               </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>The following RREF calculations illustrate that neither  <m>\left[\begin{array}{c}1\\0\\0\end{array}\right]</m> nor <m>\left[\begin{array}{c}0\\1\\0\end{array}\right]</m> are linear combinations of the set <m>\setList{
+                        \left[\begin{array}{c}1\\2\\3\end{array}\right],
+                        \left[\begin{array}{c}0\\-2\\-2\end{array}\right]
+                      }</m>:
+                        <sage language="octave">
+                            <input>
+                                rref([1,0,1;2,-2,0;3,-2,0])
+                                rref([1,0,0;2,-2,1;3,-2,0])
+                            </input>
+                        </sage>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Consider the example above. 
+                        If we take the set consisting of the pivot columns of <m>RREF[\vec{v}_1 \vec{v}_2 \vec{v}_3 \vec{v}_4]</m>, then we get two vectors that do not even live in <m>W</m>. 
+                        Thus, there is no this set is a basis for <m>W</m>. 
+                        On the other hand, the set consisting of the first and third vectors of the original set does give us a basis. 
+                    </p>
+                    <p>
+                        This example is enough to demonstrate that, in general, we wouldn't expect the pivot columns of the RREF itself to help us. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -119,7 +183,7 @@
                 Let <m>A</m> denote an <m>m\times n</m> matrix so that the column vectors of <m>A</m> are vectors in <m>\IR^m</m> and the row vectors of <m>A</m> (i.e., the rows) are vectors in <m>\IR^n</m>.
                 The <term>column space</term> of <m>A</m> (denoted <m>\text{Col}(A)</m>) is the subspace spanned by the columns of <m>A</m>. 
                 The <term>row space</term> of <m>A</m> (denoted <m>\text{Row}(A)</m>) is the subspace spanned by the rows of <m>A</m>. 
-                For instance, if <m>A=\left[\begin{array}1&amp; 2&amp; 3\\ -1&amp;4&amp; 7\end{array}\right]</m>, then:
+                For instance, if <m>A=\left[\begin{array}{ccc}1&amp; 2&amp; 3\\ -1&amp;4&amp; 7\end{array}\right]</m>, then:
                 <me>\text{Col}(A)=\vspan\left\{\left[\begin{array}{c}1\\-1\end{array}\right],\left[\begin{array}{c}2\\4\end{array}\right],\left[\begin{array}{c}3\\7\end{array}\right]\right\}</me>
                 and 
                 <me>\text{Row}(A)=\vspan\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right],\left[\begin{array}{c}-1\\4\\7\end{array}\right]\right\}.</me>
@@ -153,6 +217,71 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that the rows of the matrix <m>A</m> are <m>\vec{R}_1,\dots, \vec{R}_m</m>.
+                        Then, <m>\text{Row}(A)=\vspan\{\vec{R}_1,\dots, \vec{R}_m\}</m>. 
+                        We claim that for each row operation we perform on <m>A</m>, the span of the row space doesn't change. 
+                        <ul>
+                            <li>
+                                <p>
+                                    <em>Row-swapping:</em> If we swap the order of any two rows, the underlying set of vectors doesn't change. 
+                                    Therefore, the two matrices would have the same row spaces, even though the rows are in different orders. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <em>Scaling a row by a non-zero scalar <m>c</m>:</em> Suppose we multiply row <m>\vec{R}_i</m> by <m>c\neq 0</m>. 
+                                    Then, any linear combination that can be made with <m>\{\vec{R}_1,\dots, \vec{R}_m\}</m> can be made with the set <m>\{\vec{R}_1,\dots, c\vec{R}_i,\dots, \vec{R}_m\}</m> by scaling the corresponding amount of <m>\vec{R}_i</m> needed.
+                                    So, the span will not change. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <em>Adding a multiple of one row to another:</em> For concreteness, let's assume we do <m>\vec{R}_1+c\vec{R}_2\to \vec{R}_1</m>. 
+                                    Then, our original row space is <m>S=\vspan\{\vec{R}_1,\dots, \vec{R}_m\}</m> and our new row space is <m>T=\vspan\{\vec{R}_1+c\vec{R}_2,\vec{R}_2,\cdots,\vec{R}_m\}</m>.
+                                    Now, since all the vectors in <m>T</m> are linear combinations of vectors in <m>S</m>, it follows that anything in the new row space actually already lives in the old row space. 
+                                    On the other hand, since we can re-build the vector <m>\vec{R}_1</m> from <m>\vec{R}_1+c\vec{R}_2</m> by subtracting <m>c\vec{R}_2</m>, it follows that that anything in the old row space can also be built of the vectors in the new row space.
+                                </p>
+                            </li>
+                        </ul>
+                        Since calculating the RREF involves a sequence of row operations and the row operations aren't changing the row space, the result follows.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose we start with the matrix <m>A</m>, compute its RREF and that <m>\vec{S}_1,\dots, \vec{S}_r</m> are the non-zero rows that appear in <m>\RREF(A)</m>.
+                        For each <m>i</m>, if we read the row from the left to the right, the first non-zero entry that we will see is a <m>1</m> because that's what corresponds to the pivots. 
+                        If we were to take a linear combination of the rows <m>a_1\vec{S}_1+\cdots+a_r\vec{S}_r</m>, then the resulting vector's entries will be one of two forms:
+                        <ol>
+                            <li>
+                                <p>
+                                    If the entry corresponds to the position of a pivot column, then this entry will just be <m>a_i</m>, corresponding to the variable in front of the pivot.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Otherwise, the entry will be some linear combination of the coefficients <m>a_1,\dots, a_r</m>.
+                                </p>
+                            </li>
+                        </ol>
+                        The only way that this combination can be the zero vector is if all of the coefficients <m>a_i</m> are themselves equal to <m>0</m>; it follows that these non-zero rows are linearly independent.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The dimension of the column space is equal to the number of pivot columns in <m>\RREF(A)</m>. 
+                        This is equal to the number of non-zero rows in <m>\RREF(A)</m>, which gives us the dimension of the row space. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -185,7 +314,33 @@
                 </statement>
             </task>   
         </introduction>
-        
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        By definition, the system <m>\left[\begin{array}{c|c}M &amp; \vec{0}\end{array}\right]</m> has a unique solution. 
+                        This means that every column of <m>M</m> is a pivot column.
+                        Since <m>M</m> is a square matrix, it follows that every row has a pivot as well, which explains why <m>M</m> is the identity matrix. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        In part (a), we saw that <m>\RREF(M)</m> is equal to the identity matrix. 
+                        This means that the columns of <m>M</m> span all of <m>\IR^n</m>, which tells us that the system in question is consistent no matter what <m>\vec{b}</m> is. 
+                        But we also know that each column is a pivot column, so there are no free-variables, which tells us the system is unique. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This follows from Fact 2.5.15 in <xref ref="EV5"/>.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
