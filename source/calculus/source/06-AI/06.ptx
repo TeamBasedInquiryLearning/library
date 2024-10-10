@@ -140,7 +140,7 @@
                         \hline
                         h_2=5\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 5}\approx 4.943\ \text{kg} &amp;   5\ \text{m} &amp; 242.207\ \text{Nm}\\
                         \hline
-                        h_1=0\ \text{m} &amp; m(5)=2+8e^{-0.2\cdot 0}= 10\ \text{kg} &amp;  5\ \text{m} &amp; \\
+                        h_1=0\ \text{m} &amp; m(0)=2+8e^{-0.2\cdot 0}= 10\ \text{kg} &amp;  5\ \text{m} &amp; \\
                         \hline
                         \end{array}
                     </me>
@@ -342,12 +342,12 @@
         <activity xml:id="activity-AI5cone">
             <introduction>
                 <p>
-                    Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 100 m, and the height of the tank is 100m.
+                    Consider a cylindrical truncated-cone tank where the radius on the bottom of the tank is 10 m, the radius at the top of the tank is 20 m, and the height of the tank is 100m.
                     
                     <figure>
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
                     <image xml:id="coneslicelift" width="50%">
-                        <description>A slice at height <m>h_i</m> of width <m>\Delta h</m>, with radius <m>r_i</m>.</description>
+                        <description>A slice at height <m>h_i</m> of height <m>\Delta h</m>, with radius <m>r_i</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
                             \draw (-0.5,0)--(0.5,0)--(1,5)--(-1,5)--(-0.5,0);
