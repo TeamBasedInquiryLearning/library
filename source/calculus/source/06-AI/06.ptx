@@ -347,7 +347,7 @@
                     <figure>
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
                     <image xml:id="coneslicelift" width="50%">
-                        <description>A slice at height <m>h_i</m> of width <m>\Delta h</m>, with radius <m>r_i</m>.</description>
+                        <description>A slice at height <m>h_i</m> of height <m>\Delta h</m>, with radius <m>r_i</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
                             \draw (-0.5,0)--(0.5,0)--(1,5)--(-1,5)--(-0.5,0);
