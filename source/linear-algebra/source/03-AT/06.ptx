@@ -162,31 +162,94 @@ Which of these completes the following definition for a bijective linear map
 </fact>
 
 
-
 <activity>
     <introduction>
         <p>
-The matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
+Consider matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
     a&amp;b\\c&amp;d
-\end{array}\right]\middle| a,b,c,d\in\IR\right\}</m> has the basis
+\end{array}\right]\middle| a,b,c,d\in\IR\right\}</m> and the following matrix equation:
 <me>
-\left\{
-\left[\begin{array}{cc}
+x_1\left[\begin{array}{cc}
     1&amp;0\\0&amp;0
-\end{array}\right],
-\left[\begin{array}{cc}
+\end{array}\right]+x_2\left[\begin{array}{cc}
     0&amp;1\\0&amp;0
-\end{array}\right],
-\left[\begin{array}{cc}
+\end{array}\right]+x_3\left[\begin{array}{cc}
     0&amp;0\\1&amp;0
-\end{array}\right],
-\left[\begin{array}{cc}
+\end{array}\right]+x_4\left[\begin{array}{cc}
     0&amp;0\\0&amp;1
-\end{array}\right]
-\right\}
-</me>.
+\end{array}\right]=\left[\begin{array}{cc}
+2&amp;-3\\0&amp;5
+\end{array}\right].
+</me>
         </p>
     </introduction>
+    <task>
+        <statement>
+            <p> How many solutions does this equation have?
+                <ol marker="A." cols="2">
+                    <li>1</li>
+                    <li>infinitely many</li>
+                    <li>none</li>
+                    <li>2</li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How many solutions do the following matrix equation have?
+                    <me>
+                        x_1\left[\begin{array}{cc}
+                            1&amp;0\\0&amp;0
+                        \end{array}\right]+x_2\left[\begin{array}{cc}
+                            0&amp;1\\0&amp;0
+                        \end{array}\right]+x_3\left[\begin{array}{cc}
+                            0&amp;0\\1&amp;0
+                        \end{array}\right]+x_4\left[\begin{array}{cc}
+                            0&amp;0\\0&amp;1
+                        \end{array}\right]=\left[\begin{array}{cc}
+                        4&amp;3\\1&amp;2
+                        \end{array}\right].
+                        </me>
+                <ol marker="A." cols="2">
+                    <li>1</li>
+                    <li>infinitely many</li>
+                    <li>none</li>
+                    <li>2</li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What statement do you think best describes the set 
+                <me>
+                    S=\left\{
+                    \left[\begin{array}{cc}
+                        1&amp;0\\0&amp;0
+                    \end{array}\right],
+                    \left[\begin{array}{cc}
+                        0&amp;1\\0&amp;0
+                    \end{array}\right],
+                    \left[\begin{array}{cc}
+                        0&amp;0\\1&amp;0
+                    \end{array}\right],
+                    \left[\begin{array}{cc}
+                        0&amp;0\\0&amp;1
+                    \end{array}\right]
+                    \right\}?
+                </me>
+                <ol marker="A." cols="2">
+                    <li><m>S</m> is linearly independent</li>
+                    <li><m>S</m> spans <m>M_{2,2}</m></li>
+                    <li><m>S</m> is a basis of <m>M_{2,2}</m></li>
+                    <li><m>S</m> is a basis of <m>\IR^4</m></li>
+                </ol>
+            </p>
+        </statement>
+    </task>
     <task>
         <statement>
             <p> What is the dimension of <m>M_{2,2}</m>?
@@ -231,15 +294,75 @@ The matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
 <activity>
     <introduction>
         <p>
-The polynomial space <m>\P^4=\left\{a+bx+cx^2+dx^3+ex^4\middle| a,b,c,d,e\in\IR\right\}</m> has the basis
+Consider polynomial space <m>\P^4=\left\{a+by+cy^2+dy^3+ey^4\middle| a,b,c,d,e\in\IR\right\}</m> and the following equation:
 <me>
-\left\{1,x,x^2,x^3,x^4\right\}
-</me>.
+x_1\cdot 1+x_2\cdot y+x_3\cdot y^2+x_4\cdot y^3+x_5\cdot y^4=1-3y^2+y^3-y^4
+</me>
         </p>
     </introduction>
-    <task>        
+    <task>
         <statement>
-            <p> What is the dimension of <m>\P^4</m>?
+            <p> How many solutions (in <m>x_1,\dots,x_5</m>) does this equation have?
+                <ol marker="A." cols="2">
+                    <li>1</li>
+                    <li>infinitely many</li>
+                    <li>none</li>
+                    <li>2</li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How many solutions (in <m>x_1,\dots,x_5</m>) does the following equation have?
+                <me>
+                    x_1\cdot 1+x_2\cdot y+x_3\cdot y^2+x_4\cdot y^3+x_5\cdot y^4=2+y^2-5y^3+6y^4
+                    </me>
+                <ol marker="A." cols="2">
+                    <li>1</li>
+                    <li>infinitely many</li>
+                    <li>none</li>
+                    <li>2</li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How many solutions (in <m>x_1,\dots,x_5</m>) does the following equation have?
+                <me>
+                    x_1\cdot 1+x_2\cdot y+x_3\cdot y^2+x_4\cdot y^3+x_5\cdot y^4=0
+                    </me>
+                <ol marker="A." cols="2">
+                    <li>1</li>
+                    <li>infinitely many</li>
+                    <li>none</li>
+                    <li>2</li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What statement do you think best describes the set 
+                <me>
+                    S=\left\{
+                    1,y,y^2,y^3,y^4\right\}?
+                </me>
+                <ol marker="A." cols="2">
+                    <li><m>S</m> is linearly independent</li>
+                    <li><m>S</m> spans <m>\P^4</m></li>
+                    <li><m>S</m> is a basis of <m>\P^4</m></li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p> What is the dimension of <m>\P^5</m>?
                 <ol marker="A." cols="2">
                     <li>2</li>
                     <li>3</li>
@@ -267,7 +390,7 @@ The polynomial space <m>\P^4=\left\{a+bx+cx^2+dx^3+ex^4\middle| a,b,c,d,e\in\IR\
             <p>
                 Describe an isomorphism <m>T:\P^4\to\IR^{\unknown}</m>:
                 <me>
-                    T\left(a+bx+cx^2+dx^3+ex^4\right)=\left[\begin{array}{c}
+                    T\left(a+by+cy^2+dy^3+ey^4\right)=\left[\begin{array}{c}
                         \unknown\\\\\vdots\\\\\unknown
                     \end{array}\right]
                 </me>
