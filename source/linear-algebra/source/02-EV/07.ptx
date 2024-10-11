@@ -128,11 +128,6 @@ Rewrite this solution space in the form <me>\setBuilder{ a \left[\begin{array}{c
 </task>
 <task>
     <p>
-Rewrite this solution space in the form <me>\vspan\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}.</me>
-    </p>
-</task>
-<task>
-    <p>
 Which of these choices best describes the set of two vectors
 <m>\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}</m>
 used in this span?
@@ -164,6 +159,73 @@ used in this span?
 
 <sage language="octave">
 </sage>
+<activity estimated-time='10'>
+    <introduction>
+        <p>
+Consider the homogeneous system of equations
+<md alignat-columns='5' alignment="alignat">
+    <mrow>
+2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0
+</mrow>
+<mrow>
+-1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0
+</mrow>
+<mrow>
+x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
+    </mrow>
+</md>
+        </p>
+    </introduction>
+<task>
+    <p>
+Find its solution set (a subspace of <m>\IR^4</m>).
+    </p>
+</task>
+<task>
+    <p>
+Rewrite this solution space in the form <me>\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.</me>
+    </p>
+</task>
+<task>
+    <p>
+Which of these choices best describes the set of two vectors
+<m>\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}</m>
+used in this span?
+<ol marker="A.">
+<li>
+    <p>
+    The set is linearly dependent.
+    </p>
+  </li>
+<li>
+    <p>
+        The set is linearly independent.
+    </p>
+  </li>
+  <li>
+      <p>
+        The set spans all of <m>\IR^7</m>.
+      </p>
+    </li>
+<li>
+    <p>
+        The set fails to span the solution space.
+    </p>
+  </li>
+</ol>
+    </p>
+</task>
+</activity>
+
+<sage language="octave">
+    <input>
+    row1=[]
+    row2=[]
+    row3=[]
+    rref([row1;row2,row3])
+    </input>
+</sage>
+
 
 <fact xml:id="fact-solution-space-basis">
     <statement>
@@ -193,54 +255,6 @@ used in this span?
     </p>
     </statement>
 </fact>
-
-
-
-<activity estimated-time='10'>
-    <statement>
-        <p>
-Consider the homogeneous system of equations
-<md alignat-columns='5' alignment="alignat">
-    <mrow>
-    2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp; 2x_3&amp;\,-\,&amp;4x_4  &amp;=&amp; 0 
-    </mrow>
-            <mrow>
--2x_1&amp;\,-\,&amp;4x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;=&amp; 0
-            </mrow>
-    <mrow>
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;4 x_4 &amp;=&amp; 0
-    </mrow>
-</md>
-        </p>
-<p>
-Find a basis for its solution space.
-        </p>
-    </statement>
-</activity>
-<sage language="octave">
-</sage>
-
-
-<activity estimated-time='10'>
-    <statement>
-        <p>
-Consider the homogeneous vector equation
-<me> 
-   x_1 \left[\begin{array}{c} 2 \\ -2 \\ 3 \end{array}\right]+
-   x_2 \left[\begin{array}{c} 4 \\ -4 \\ 6 \end{array}\right]+
-   x_3 \left[\begin{array}{c} 2 \\ 1 \\ -1 \end{array}\right]+
-   x_4 \left[\begin{array}{c} -4 \\ 1 \\ -4 \end{array}\right]=
-       \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]
-</me>
-        </p>
-        <p>
-Find a basis for its solution space.
-        </p>
-    </statement>
-</activity>
-<sage language="octave">
-</sage>
-
 
 <activity estimated-time='5'>
     <introduction>
