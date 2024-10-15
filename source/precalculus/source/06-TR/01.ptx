@@ -25,7 +25,7 @@
         <statement>
         <p> <figure xml:id="90-degree-angle"><image width="50%">
           <sageplot>
-            p=arrow((0,0),(3,3))
+            p=arrow((0,0),(3,3),aspect_ratio=1)
             p+=arrow((0,0),(-3,3))
             p.axes(False)
             p
@@ -46,13 +46,16 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="180-degree-angle"><image>
+        <figure><image width="50%">
           <sageplot>
-            p=arrow((0,0),(-4,1))
+            p=arrow((0,0),(-4,1),aspect_ratio=1)
             p+=arrow((0,0),(4,-1))
+            p+=point((0,0))
             p.axes(False)
+            p
           </sageplot>
         </image></figure>
+        <p>
           <ol marker="A." cols="2">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
@@ -70,9 +73,10 @@
         <statement>
         <p> <figure xml:id="135-degree-angle"><image>
           <sageplot>
-            p=arrow((0,0),(0,4))
+            p=arrow((0,0),(0,4),aspect_ratio=1)
             p+=arrow((0,0),(-3,-3))
             p.axes(False)
+            p
           </sageplot>
         </image></figure>
           <ol marker="A." cols="2">
@@ -95,11 +99,12 @@
           An angle is in <term>standard position</term> if its vertex is located at the origin and its initial side extends along the positive <m>x</m>-axis. 
         </p>
       </statement>
-      <figure xml:id="standard-position"><image>
+      <figure xml:id="standard-position"><image width="50%">
         <sageplot>
-          p=arrow((0,0),(0,4))
+          p=arrow((0,0),(0,4),aspect_ratio=1)
           p+=arrow((0,0),(-3,-3))
           p.axes(False)
+          p
         </sageplot>
       </image></figure>
 <statement>
@@ -118,11 +123,12 @@
       </introduction>
       <task>
         <statement>
-        <p> <figure xml:id="45-degree-angle"><image>
+        <p> <figure xml:id="45-degree-angle"><image width="50%">
           <sageplot>
-            p=arrow((0,0),(4,0))
+            p=arrow((0,0),(4,0), aspect_ratio=1)
             p+=arrow((0,0),(3,3))
             p.axes(False)
+            p
           </sageplot>
         </image></figure>
           <ol marker="A." cols="2">
@@ -140,11 +146,12 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="-180-degree-angle"><image>
+        <p> <figure xml:id="-180-degree-angle"><image width="50%">
           <sageplot>
-            p=arrow((0,0),(4,0))
+            p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(-4,0))
             p.axes(False)
+            p
           </sageplot>
         </image></figure>
           <ol marker="A." cols="2">
@@ -163,11 +170,12 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="210-degree-angle"><image>
+        <p> <figure xml:id="210-degree-angle"><image width="50%">
           <sageplot>
-            p=arrow((0,0),(4,0))
+            p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(4*cos(4*pi/3),3*sin(4*pi/3)))
             p.axes(False)
+            p
           </sageplot>
         </image></figure>
           <ol marker="A." cols="2">
