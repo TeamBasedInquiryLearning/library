@@ -176,7 +176,7 @@ What is <m>T\left(\left[\begin{array}{c} -2 \\ 0 \\ -3 \end{array}\right]\right)
     </statement>
 </activity>
 
-<activity estimated-time='5'>
+<activity estimated-time='5' xml:id="AT2-pick-a-basis">
     <statement>
         <p>
 Suppose <m>T: \IR^3 \rightarrow \IR^2</m> is a linear map, and you know
@@ -196,17 +196,20 @@ What piece of information would help you compute <m>T\left(\left[\begin{array}{c
 <ol marker="A." cols="2">
 <li>
     <p>
-    The value of <m>T\left(\left[\begin{array}{c} 0\\-4\\0\end{array}\right]\right)</m>.
+    The value of <m>T\left(\left[\begin{array}{c} 0\\4\\0\end{array}\right]\right)=
+    \left[\begin{array}{c} -4 \\ 16\end{array}\right]</m>.
     </p>
 </li>
 <li>
     <p>
-    The value of <m>T\left(\left[\begin{array}{c} 0\\1\\0\end{array}\right]\right)</m>.
+    The value of <m>T\left(\left[\begin{array}{c} 0\\1\\0\end{array}\right]\right)=
+    \left[\begin{array}{c} -1 \\ 4\end{array}\right]</m>.
     </p>
 </li>
 <li>
     <p>
-    The value of <m>T\left(\left[\begin{array}{c} 1\\1\\1\end{array}\right]\right)</m>.
+    The value of <m>T\left(\left[\begin{array}{c} 1\\1\\1\end{array}\right]\right)=
+    \left[\begin{array}{c} -2 \\ 7\end{array}\right]</m>.
     </p>
 </li>
 <li>
@@ -217,6 +220,69 @@ What piece of information would help you compute <m>T\left(\left[\begin{array}{c
 </ol>
     </statement>
 </activity>
+
+<observation>
+  <p>
+Since all three choices in
+<xref ref="AT2-pick-a-basis"/>
+create a spanning and linearly independent set along with
+<m>\left[\begin{array}{c} 1 \\ 0 \\ 0 \end{array}\right]</m> and
+<m>\left[\begin{array}{c} 0 \\ 0 \\ 1 \end{array}\right]</m>, they each may be used
+to compute
+<m>T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)</m>:
+<me>
+  T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
+  =
+  T\left(\left[\begin{array}{c}0\\4\\0\end{array}\right]\right)
+  -
+  T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
+  =
+  \left[\begin{array}{c} -4 \\ 16\end{array}\right]
+  -
+  \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
+  =
+  \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
+</me>
+<me>
+  T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
+  =
+  4
+  T\left(\left[\begin{array}{c}0\\1\\0\end{array}\right]\right)
+  -
+  T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
+  =
+  4
+  \left[\begin{array}{c} -1 \\ 4\end{array}\right]
+  -
+  \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
+  =
+  \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
+</me>
+<me>
+  T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
+  =
+  4
+  T\left(\left[\begin{array}{c}1\\1\\1\end{array}\right]\right)
+  -5
+  T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
+  -4
+  T\left(\left[\begin{array}{c}1\\0\\0\end{array}\right]\right)
+</me>
+<me>
+  =
+  4
+  \left[\begin{array}{c} -2 \\ 7\end{array}\right]
+  -5
+  \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
+  -4
+  \left[\begin{array}{c} 2 \\ 1 \end{array}\right]
+  =
+  \left[\begin{array}{c} -8+15-8 \\ 28-10-4 \end{array}\right]
+  =
+  \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
+</me>
+  </p>
+</observation>
 
 <fact>
     <statement>
@@ -258,7 +324,7 @@ the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
 =
   T\left(\left[\begin{array}{c} 1 \\ 0 \\ 0 \end{array}\right] \right)
 =
-  \left[\begin{array}{c} 3 \\ 2\end{array}\right]
+  \left[\begin{array}{c} 2 \\ 1\end{array}\right]
 \hspace{2em}
   T\left(\vec e_2 \right)
 =
@@ -270,14 +336,14 @@ the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
 =
   T\left(\left[\begin{array}{c} 0 \\ 0 \\ 1 \end{array}\right] \right)
 =
-  \left[\begin{array}{c} 5 \\ 0\end{array}\right]
+  \left[\begin{array}{c} -3 \\ 2\end{array}\right]
 </me>
         <p>
 Then the standard matrix corresponding to <m>T</m> is
 <me>
   \left[\begin{array}{ccc}T(\vec e_1) &amp; T(\vec e_2) &amp; T(\vec e_3)\end{array}\right]
 =
-  \left[\begin{array}{ccc}3 &amp; -1 &amp; 5 \\ 2 &amp; 4 &amp; 0 \end{array}\right]
+  \left[\begin{array}{ccc}2 &amp; -1 &amp; -3 \\ 1 &amp; 4 &amp; 2 \end{array}\right]
 .</me>
         </p>
     </statement>
