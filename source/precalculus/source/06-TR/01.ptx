@@ -50,7 +50,8 @@
           <sageplot>
             p=arrow((0,0),(-4,1),aspect_ratio=1)
             p+=arrow((0,0),(4,-1))
-            p+=point((0,0))
+            p+=point((0,0),size=50)
+            p+=arc((0,0),0.2,sector=(atan(-1/4), atan(-1/4)+pi),color="gray")
             p.axes(False)
             p
           </sageplot>
@@ -71,7 +72,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="135-degree-angle"><image>
+        <p> <figure xml:id="135-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(0,4),aspect_ratio=1)
             p+=arrow((0,0),(-3,-3))
