@@ -14,7 +14,7 @@
 
 <remark>
   <p>
-    In this section, we will learn how to use right triangles to evaluate trigonometric functions. Before doing that, however, let's review some key concepts of right triangles that can also come in handy when solving.
+    In this section, we will learn how to use right triangles to evaluate trigonometric functions. Before doing that, however, let's review some key concepts of right triangles that can be helpful when solving.
   </p>
 </remark>
 
@@ -110,7 +110,7 @@
 <definition xml:id="def-pythagorean-triple">
   <statement>
     <p>
-      <term>Pythagorean triples</term> are integers <m>a</m>, <m>b</m>, and <m>c</m> that satisfy the Pythagorean theorem. <xref ref="finding-length-of-3-4-5-triangle"/> and <xref ref="finding-length-of-5-12-13-triangle"/> highlight some of the most common types of Pythagorean triples: <m>3-4-5</m> and <m>5-12-13</m>. All triangles similar to the <m>3-4-5</m> triangle will also have side lengths that are multiples of <m>3-4-5</m> (like <m>6-8-10</m>). Similarly, this is true for all triangles similar to the <m>5-12-13</m> triangle.
+      <term>Pythagorean triples</term> are integers <m>a</m>, <m>b</m>, and <m>c</m> that satisfy the Pythagorean Theorem. <xref ref="finding-length-of-3-4-5-triangle"/> and <xref ref="finding-length-of-5-12-13-triangle"/> highlight some of the most common types of Pythagorean triples: <m>3-4-5</m> and <m>5-12-13</m>. All triangles similar to the <m>3-4-5</m> triangle will also have side lengths that are multiples of <m>3-4-5</m> (like <m>6-8-10</m>). Similarly, this is true for all triangles similar to the <m>5-12-13</m> triangle.
     </p>
   </statement>
 </definition>
@@ -118,7 +118,9 @@
 <definition xml:id="def-sides-of-right-triangles">
   <statement>
     <p>
-      When working with right triangles, it is often helpful to refer to specific angles and sides. One way this is done is by using letters, such as <m>A</m> and <m>a</m> to show that these are an angle-side pair because every angle has a side opposite the angle in a triangle. Note that the capital letter indicates the angle, and the lower case letter indicates the side. Another way to label the sides of a triangle is to use the relationships between a given angle within a triangle and the sides. 
+      When working with right triangles, it is often helpful to refer to specific angles and sides. One way this is done is by using letters, such as <m>A</m> and <m>a</m> to show that these are an angle-side pair because every angle has a side opposite the angle in a triangle. Note that the capital letter indicates the angle, and the lower case letter indicates the side. </p>
+
+      <p>Another way to label the sides of a triangle is to use the relationships between a given angle within a triangle and the sides. 
     </p>
     <ul>
       <li>
@@ -150,7 +152,7 @@
 <activity xml:id="intro-to-using-trig">
   <introduction>
     <p>
-      Suppose you are given a right triangle where the hypotenuse is <m>11</m> cm long and and one of the interior angles is <m>60</m> degrees.
+      Suppose you are given a right triangle where the hypotenuse is <m>11</m> cm long and one of the interior angles is <m>60</m><degree/>.
     </p>
   </introduction>
   
@@ -160,6 +162,11 @@
         Draw a picture of this right triangle and label the sides (refer back to <xref ref="def-sides-of-right-triangles"/> to help you label the sides).
       </p>
     </statement>
+    <answer>
+      <p>
+        Students should draw a right triangle with the hypotenuse labeled as <m>11</m> cm and one of the other angles (not the angle opposite the hypotenuse) is labeled <m>60</m><degree/>.
+      </p>
+    </answer>
   </task>
   
   <task>
@@ -167,10 +174,10 @@
       <p>
         What is the measure of the third angle?
         <ol marker= "A." cols="1">
-          <li> <m>90</m> degrees </li>
-          <li> <m>60</m> degrees </li>
-          <li> <m>30</m> degrees  </li>
-          <li> <m>180</m> degrees  </li></ol>
+          <li> <m>90</m><degree/> </li>
+          <li> <m>60</m><degree/> </li>
+          <li> <m>30</m><degree/> </li>
+          <li> <m>180</m><degree/> </li></ol>
       </p>
     </statement>
     <answer>
@@ -222,76 +229,6 @@
   </statement>
 </definition>
 
-<activity xml:id="applying-trig-ratios">
-  <statement>
-    <p>The top of the Eiffel Tower is seen from a distance of <m>d = 500</m> meters at an angle of <m>\alpha=31</m> degrees.
-    </p>
-  </statement>
-  
-  <task>
-    <statement>
-      <p>
-        Draw a diagram to represent the situation. Use <m>x</m> to refer to the missing side.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        Students should draw a right triangle where <m>\theta</m> is the angle formed with the ground, <m>500</m> meters as the side adjacent to <m>\theta</m>, and the height of the Eiffel Tower (side opposite <m>\theta</m>) as <m>x</m>.
-      </p>
-    </answer>
-  </task>
-  
-  <task>
-    <statement>
-      <p>
-        Which trig function could we use to find the height of the tower? 
-        <ol marker= "A." cols="1">
-          <li> sine </li>
-          <li> cosine </li>
-          <li> tangent </li></ol></p>
-    </statement>
-    <answer>
-      <p>
-        C
-      </p>
-    </answer>
-  </task>
-
-  <task>
-    <statement>
-      <p>
-        How could we correctly set up the trigonometric ratio to find the height of the Eiffel Tower? 
-        <ol marker= "A." cols="2">
-          <li> <m>\sin{31}=\frac{x}{500}</m></li>
-          <li> <m>\cos{31}=\frac{500}{x}</m> </li>
-          <li> <m>\cos{31}=\frac{500}{x}</m> </li>
-          <li> <m>\tan{31}=\frac{x}{500}</m> </li></ol></p>
-    </statement>
-    <answer>
-      <p>
-        D
-      </p>
-    </answer>
-  </task>
-
-  <task>
-    <statement>
-      <p>
-        Find the height of the tower.
-        <ol marker= "A." cols="1">
-          <li> <m>428.58</m> meters </li>
-          <li> <m>300.43</m> meters </li>
-          <li> <m>220.85</m> meters </li>
-          <li> <m>257.52</m> meters </li></ol></p>
-    </statement>
-    <answer>
-      <p>
-        B
-      </p>
-    </answer>
-  </task>
-  </activity>
-
   <activity xml:id="determine-which-trig-ratio">
     <introduction>
       <p>
@@ -302,7 +239,7 @@
     <task>
       <statement>
         <p>
-          In triangle <m>ABC</m>, <m>B=37</m> degrees and <m>a=11</m>. Which trigonometric function will best help determine the length of side <m>c</m>?
+          In triangle <m>ABC</m>, <m>B=37</m><degree/> and <m>a=11</m>. Which trigonometric function will best help determine the length of side <m>c</m>?
           <ol marker= "A." cols="1">
             <li> sine </li>
             <li> cosine </li>
@@ -318,7 +255,7 @@
     <task>
       <statement>
         <p>
-          In triangle <m>ABC</m>, <m>A=32</m> degrees and <m>b=13</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
+          In triangle <m>ABC</m>, <m>A=32</m><degree/> and <m>b=13</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
           <ol marker= "A." cols="1">
             <li> sine </li>
             <li> cosine </li>
@@ -334,7 +271,7 @@
     <task>
       <statement>
         <p>
-          In triangle <m>ABC</m>, angle <m>A=24</m> degrees and the hypotenuse is <m>14</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
+          In triangle <m>ABC</m>, angle <m>A=24</m><degree/> and the hypotenuse is <m>14</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
           <ol marker= "A." cols="1">
             <li> sine </li>
             <li> cosine </li>
@@ -347,6 +284,76 @@
       </answer>
     </task>
   </activity>
+
+  <activity xml:id="applying-trig-ratios">
+    <introduction>
+        <p>The top of the Eiffel Tower is seen from a distance of <m>d = 500</m> meters at an angle of <m>\alpha=31</m><degree/>.
+        </p>
+    </introduction> 
+    
+    <task>
+      <statement>
+        <p>
+          Draw a diagram to represent the situation. Use <m>x</m> to refer to the missing side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw a right triangle where <m>\theta</m> is the angle formed with the ground, <m>500</m> meters as the side adjacent to <m>\theta</m>, and the height of the Eiffel Tower (side opposite <m>\theta</m>) as <m>x</m>.
+        </p>
+      </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Which trig function could we use to find the height of the tower? 
+          <ol marker= "A." cols="1">
+            <li> sine </li>
+            <li> cosine </li>
+            <li> tangent </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+  
+    <task>
+      <statement>
+        <p>
+          How could we correctly set up the trigonometric ratio to find the height of the Eiffel Tower? 
+          <ol marker= "A." cols="2">
+            <li> <m>\sin{31}=\frac{x}{500}</m></li>
+            <li> <m>\cos{31}=\frac{500}{x}</m> </li>
+            <li> <m>\cos{31}=\frac{500}{x}</m> </li>
+            <li> <m>\tan{31}=\frac{x}{500}</m> </li></ol></p> 
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+  
+    <task>
+      <statement>
+        <p>
+          Find the height of the tower to the nearest hundredth.
+          <ol marker= "A." cols="1">
+            <li> <m>428.58</m> meters </li>
+            <li> <m>300.43</m> meters </li>
+            <li> <m>220.85</m> meters </li>
+            <li> <m>257.52</m> meters </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    </activity> 
 
   <activity xml:id="finding-trig-ratios-when-given-all-sides">
     <introduction>
@@ -414,7 +421,7 @@
       </statement>
       <answer>
         <p>
-         Students should be able to write all three trigonometric functions: <m>\cos{A}=\frac{12}{37}</m>, <m>\sin{A}=\frac{35}{37}</m>, and <m>\tan{A}=\frac{35}{312}</m>.
+         Students should be able to write all three trigonometric functions: <m>\cos{A}=\frac{12}{37}</m>, <m>\sin{A}=\frac{35}{37}</m>, and <m>\tan{A}=\frac{35}{12}</m>.
         </p>
       </answer>
     </task>
@@ -434,11 +441,11 @@
   </activity>
 
   <remark>
-  <p>Sometimes you will need to use trigonometric functions to find the measure of an angle. In these cases, you will need to use the inverse trig function key on your calculator (such as <m>\sin^(-1)</m>)to find the angle that yields that trig value.
+  <p>Sometimes you will need to use trigonometric functions to find the measure of an angle. In these cases, you will need to use the inverse trig function key on your calculator, such as <m>\sin^{-1}</m>, to find the angle that yields that trig value.
   </p>
-  <p> For example, the sine function <m>\sin</m> takes an angle and gives us the ratio <m>\frac{opposite}{hypotenuse}</m>, but <m>\sin^{-1}</m>(called "inverse sine") takes the ratio <m>\frac{opposite}{hypotenuse}</m> and gives us an angle.
+  <p> For example, the sine function takes an angle and gives us the ratio <m>\frac{opposite}{hypotenuse}</m>, but <m>\sin^{-1}</m> (called "inverse sine") takes the ratio <m>\frac{opposite}{hypotenuse}</m> and gives us an angle.
   </p>
-  </remark>
+  </remark> 
 
   <activity xml:id="finding-angle-measures">
  <introduction>
@@ -472,7 +479,7 @@
   </statement>
   <answer>
     <p>
-      Students should get approximately <m>71.08</m> degrees.
+      Students should get approximately <m>71.08</m><degree/>.
     </p>
   </answer>
  </task>
@@ -502,7 +509,7 @@
   </statement>
   <answer>
     <p>
-      Students should get approximately <m>71.08</m> degrees.
+      Students should get approximately <m>71.08</m><degree/>.
     </p>
   </answer>
  </task>
@@ -532,7 +539,7 @@
   </statement>
   <answer>
     <p>
-      Students should get approximately <m>71.08</m> degrees.
+      Students should get approximately <m>71.08</m><degree/>.
     </p>
   </answer>
  </task>
@@ -558,7 +565,7 @@
   </statement>
   <answer>
     <p>
-      Angle <m>B</m> is approximately <m>18.92</m> degrees.
+      Angle <m>B</m> is approximately <m>18.92</m><degree/>.
     </p>
   </answer>
  </task>
@@ -580,12 +587,12 @@
   <task>
     <statement>
       <p>
-        In triangle <m>ABC</m>, <m>B=53</m> degrees and <m>c=5</m> meters (with <m>c</m> being the hypotenuse).
+        In triangle <m>ABC</m>, <m>B=53</m><degree/> and <m>c=5</m> meters (with <m>c</m> being the hypotenuse).
       </p>
     </statement>
     <answer>
       <p>
-        <m>A=37</m> degrees, <m>C=90</m> degrees, <m>a=3</m> meters, and <m>b=4</m> meters.
+        <m>A=37</m><degree/>, <m>C=90</m><degree/>, <m>a=3</m> meters, and <m>b=4</m> meters.
       </p>
     </answer>
   </task>
@@ -593,12 +600,12 @@
   <task>
     <statement>
       <p>
-        In triangle <m>ABC</m>, <m>A=28</m> degrees and <m>b=29.3</m> miles (with <m>c</m> being the hypotenuse).
+        In triangle <m>ABC</m>, <m>A=28</m><degree/> and <m>b=29.3</m> miles (with <m>c</m> being the hypotenuse).
       </p>
     </statement>
     <answer>
       <p>
-        <m>B=62</m> degrees, <m>C=90</m> degrees, <m>a=15.6</m> miles, and <m>c=33.2</m> miles.
+        <m>B=62</m><degree/>, <m>C=90</m><degree/>, <m>a=15.6</m> miles, and <m>c=33.2</m> miles.
       </p>
     </answer>
   </task>
@@ -611,7 +618,7 @@
     </statement>
     <answer>
       <p>
-        <m>A=28.07</m> degrees, <m>B=90</m> degrees, and <m>C=61.93</m> degrees.
+        <m>A=28.07</m><degree/>, <m>B=90</m><degree/>, and <m>C=61.93</m><degree/>.
       </p>
     </answer>
   </task>
