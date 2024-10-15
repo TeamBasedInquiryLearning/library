@@ -12,6 +12,374 @@
     <subsection>
     <title>Activities</title>
 
+    <remark>
+      <p>
+        In the last module, we learned about finding values of trigonometric functions. Now, we will learn about the graphs of these functions.
+      </p>
+    </remark>
+
+    <activity xml:id="activity-sine-table">
+      <introduction>
+        <p> We'll begin with the graph of the sine function, <m>f(x)=\sin x</m>.
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Fill in the following table for <m>f(x)=\sin x</m>. Find the exact values, then approximate each to two decimal places. (Notice that the values in the table are all the standard angles found on the unit circle!)
+
+            NOTE FROM ABBY: this table looks terrible. 
+            <sidebyside>
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)</m> (exact)</cell>
+                <cell><m>f(x)</m> (approximate)</cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell></cell>
+                <cell></cell>              
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{2}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{2\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{3\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{5\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\pi</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+            </tabular>
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)</m> (exact)</cell>
+                <cell><m>f(x)</m> (approximate)</cell>
+              </row>
+              <row>
+                <cell><m>\dfrac{7\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{5\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{4\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{3\pi}{2}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{5\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{7\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{11\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>2\pi</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+            </tabular>
+          </sidebyside>
+          </p>
+        </statement>
+        <answer>
+          <p>
+           Answers coming once the table is formatted and looks better!
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Plot these values on a graph. 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            insert pic
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is the range of the function? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>[-1,1]</m> 
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+    <activity xml:id="activity-sine-amplitude">
+      <introduction>
+        <p> Let's change our function a bit and look at <m>g(x)=3\sin x</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>Fill in the table below. 
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)=\sin x</m></cell>
+                <cell><m>g(x)=3\sin x</m> </cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell></cell>
+                <cell></cell>              
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{2}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+            
+            </tabular>
+          </p>
+        </statement>
+        <answer>
+          <p>
+           Answers coming!
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Which of the following best describes how <m>g(x)</m> is related to <m>f(x)=\sin x</m>?
+
+            <ol marker= "A.">  
+              <li> <p> The <m>x</m>-values in <m>g(x)</m> are three times the <m>x</m>-values of <m>f(x)</m>. </p>  </li>
+              <li> <p> The <m>x</m>-values in <m>g(x)</m> are one third of the <m>x</m>-values of <m>f(x)</m>. </p>  </li>
+              <li> <p> The <m>y</m>-values in <m>g(x)</m> are three times the <m>y</m>-values of <m>f(x)</m>. </p>  </li>
+              <li> <p> The <m>y</m>-values in <m>g(x)</m> are one third of the <m>y</m>-values of <m>f(x)</m>. </p>  </li>
+            </ol>  
+              
+              
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C 
+          </p>
+        </answer>
+      </task>
+
+
+
+      <task>
+        <statement>
+          <p>
+            What is the range of <m>g(x)</m> ? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>[-3,3]</m> 
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+
+
+    <definition xml:id="def-amplitude">
+      <statement>
+        <p>
+        The <term>amplitude</term> of a sine curve is vertical distance from the center of the curve to the maximum (or minimum) value. 
+        </p> 
+
+        <p>
+          We can also think of the <term>amplitude</term> as the value of the vertical stretch or compression.
+        </p>
+
+        <p>
+          When written as a function <m>f(x)=A\sin x</m>, the <term>amplitude</term> is <m>|A|</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-sine-domain">
+
+
+      <task>
+        <statement>
+          <p>We only found <m>f(x)=\sin x</m> for some values of <m>x</m> in the table in <xref ref="activity-sine-table"/>, but those did not represent the entire domain. For which values of  <m>x</m> can you find <m>\sin x</m>? (That is, what is the domain of <m>f(x)=\sin x</m>?)
+
+          </p>
+        </statement>
+        <answer>
+          <p>
+           <m>(-\infty,\infty)</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p> Coterminal angles will have the same sine values. How do we know if two angles are coterminal?
+            <ol marker= "A.">  
+              <li> <p> The difference between them is a multiple of <m>\dfrac{\pi}{2}</m>. </p>  </li>
+              <li> <p> The difference between them is a multiple of <m>\pi</m>. </p>  </li>
+              <li> <p> The difference between them is a multiple of <m>\dfrac{3\pi}{2}</m>. </p>  </li>
+              <li> <p> The difference between them is a multiple of <m>2\pi</m>. </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p> How often will the sine values repeat?
+            <ol marker= "A.">  
+              <li> <p> Every <m>\dfrac{\pi}{2}</m> radians. </p>  </li>
+              <li> <p> Every <m>\pi</m> radians. </p>  </li>
+              <li> <p> Every <m>\dfrac{2\pi}{2}</m> radians. </p>  </li>
+              <li> <p> Every <m>2\pi</m> radians. </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p> Extend the graph you made in <xref ref="activity-sine-table"/> in both the positive and negative direction to show the repeated sine values.
+          </p>
+        </statement>
+        <answer>
+          <p>
+           coming soon!
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+    <definition xml:id="def-period">
+      <statement>
+        <p>
+          The <term>period</term> of a sine function is the minimum value for which the <m>y</m>-values begin repeating.
+        </p>
+        <p>
+          The <term>period</term> for <m>f(x)=\sin x</m>, the standard sine curve, is <m>2\pi</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-sine-period">
+      <introduction>
+        <p> Now let's look at <m>h(x)=\sin \left( \dfrac{1}{2}x \right)</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>Think back to the types of transformations a function can have. (See <xref ref="FN4"/> if you need a refresher!) What kind of transformation is happening in <m>h(x)</m> compared the parent function <m>f(x)=\sin x</m>?
+            <ol marker= "A.">  
+              <li> <p> A vertical stretch/compression. </p>  </li>
+              <li> <p> A horizontal stretch/compression.  </p>  </li>
+              <li> <p> A vertical shift. </p>  </li>
+              <li> <p> A horizontal shift.  </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           B
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+
     </subsection>
 
     <exercises>
