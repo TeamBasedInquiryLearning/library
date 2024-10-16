@@ -109,7 +109,7 @@
       </p>
     </remark>
 
-    <activity xml:id="solve-unfactored-equation">
+    <activity xml:id="solve-equation-not-factored">
       <introduction>
         <p>
           Suppose you want to solve the equation <m>2x^2+5x-12=0</m>, which is NOT in factored form.
@@ -629,9 +629,14 @@
         When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
       </p>
     </statement>
+    <hint>
+      <p>
+        Rewrite the equation so that your <m>a</m>-value is positive.
+      </p>
+    </hint>
     <answer>
       <p>
-        <m>a=1, b=4,</m> and <m>c=3</m>
+        <m>a=1, b=4,</m> and <m>c=3</m>. Students may also get <m>a=-1, b=-4,</m> and <m>c=-3</m> if they moved <m>x^2</m> and <m>4x</m> to the right side.
       </p>
     </answer>
   </task>
@@ -683,10 +688,15 @@
         When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
       </p>
     </statement>
+    <hint>
+      <p>
+        Rewrite the equation so that your <m>a</m>-value is positive. 
+      </p>
+    </hint>
     <answer>
       <p>
-        <m>a=2, b=-7,</m> and <m>c=-13</m>
-      </p>
+        <m>a=2, b=-7,</m> and <m>c=-13</m>. Students may also get <m>a=-2, b=7,</m> and <m>c=13</m> if they moved <m>2x^2</m> and <m>-13</m> to the right side.
+      </p> 
     </answer>
   </task>
   <task>
@@ -712,8 +722,8 @@
         What is the solution(s) to <m>2x^2-13=7x</m>?
         <ol marker= "A." cols="1">
           <li><m>x=\dfrac{7+\sqrt{73}}{4}</m> and <m>\dfrac{7-\sqrt{73}}{4}</m></li>
-          <li><m>x=\dfrac{7+\sqrt{153}}{4}</m> and <m>\dfrac{-7-\sqrt{153}}{4}</m></li>
-          <li><m>x=\dfrac{-7+\sqrt{55}}{4}</m> and <m>\dfrac{7-\sqrt{55}}{4}</m></li>
+          <li><m>x=\dfrac{7+\sqrt{153}}{4}</m> and <m>\dfrac{7-\sqrt{153}}{4}</m></li>
+          <li><m>x=\dfrac{-7+\sqrt{55}}{4}</m> and <m>\dfrac{-7-\sqrt{55}}{4}</m></li>
           <li><m>x=\dfrac{-7+\sqrt{155}}{4}</m> and <m>\dfrac{-7-\sqrt{155}}{4}</m></li></ol>
       </p>
     </statement>
@@ -737,9 +747,14 @@
         When written in standard form, what are the values of <m>a</m>, <m>b</m>, and <m>c</m>?
       </p>
     </statement>
+    <hint>
+      <p>
+        Rewrite the equation so that your <m>a</m>-value is positive. 
+      </p>
+    </hint>
     <answer>
       <p>
-        <m>a=1, b=-6,</m> and <m>c=12</m>
+        <m>a=1, b=-6,</m> and <m>c=12</m>. Students may also get <m>a=-1, b=6,</m> and <m>c=-12</m> if they moved <m>x^2</m> to the right side.
       </p>
     </answer>
   </task>
