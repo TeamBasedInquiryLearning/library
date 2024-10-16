@@ -62,7 +62,7 @@ class Generator(BaseGenerator):
             amount1 = totalamount*percentage/100
             amount2 = totalamount*(100-percentage)/100
 
-            if scenario_alt[-1] in ["A", "B"]:
+            if scenario_alt in ["scenarioA", "scenarioB"]:
                 weight = choice(["lb", "kg"])
                 ingredient1, ingredient2 = sample([
                     "chocolate",
@@ -93,8 +93,8 @@ class Generator(BaseGenerator):
             }
         
         if scenario == "mixture_percent":
-            if scenario_alt[-1] in ["A", "B"]:
-                if scenario_alt == "A":
+            if scenario_alt in ["scenarioA", "scenarioB"]:
+                if scenario_alt == "scenarioA":
                     aprs = sample([4,5,6,7,8,9], 2)
                 else:
                     aprs = sample([7,8,9,11,12,13], 2)

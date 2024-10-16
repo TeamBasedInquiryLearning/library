@@ -3,7 +3,7 @@
     
     <intro>
         <p>
-            Question
+           Let <m>f(x)={{f_string}}</m>.
         </p>
     </intro>
     
@@ -11,13 +11,46 @@
     <knowl>
         <content>
             <p>
-                Task 
+                Find the domain and range of <m>f(x)</m>. Write your answers in interval notation.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                Domain: <m>{{domain}}</m>
             </p>
+            <p>
+                Range: <m>(-\infty,\infty)</m>
+            </p>
+        </outtro>
+        
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                Write the equation of any asymptotes of <m>f(x)</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>x={{asymptote}}</m>
+            </p>
+        </outtro>
+        
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+                Graph <m>f(x)</m>. Label at least two points on the graph, and include any asymptotes with a dotted line.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <image
+                    source="assets/EL4/generated/{{__seed__}}/plot.png"
+                    description="Plot"/>
+            </p> 
         </outtro>
         
     </knowl>

@@ -16,7 +16,7 @@
             <introduction>
                 <p>
                     Consider the vector equation
-                    <me>x_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+x_2\left[\begin{array}{c}2\\0\\-1\end{array}\right]+x_3\left[\begin{array}{c}-1\\2\\0\end{array}\right]=\left[\begin{array}{c}-1\\7\\6\end{array}\right].</me>
+                    <me>x_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+x_2\left[\begin{array}{c}2\\0\\-1\end{array}\right]+x_3\left[\begin{array}{c}-1\\2\\0\end{array}\right]=\left[\begin{array}{c}-1\\7\\4\end{array}\right].</me>
                 </p>
             </introduction>
             <task>
@@ -30,7 +30,7 @@
                 <statement>
                     <p>
                         Consider now the following vector equation:
-                        <me>y_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+y_2\left[\begin{array}{c}2\\0\\-1\end{array}\right]+y_3\left[\begin{array}{c}-1\\2\\0\end{array}\right]+y_4\left[\begin{array}{c}-1\\7\\6\end{array}\right]=\vec{0}.</me>
+                        <me>y_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+y_2\left[\begin{array}{c}2\\0\\-1\end{array}\right]+y_3\left[\begin{array}{c}-1\\2\\0\end{array}\right]+y_4\left[\begin{array}{c}-1\\7\\4\end{array}\right]=\vec{0}.</me>
                         How is this vector equation related to the original one?
                     </p>
                 </statement>
@@ -191,6 +191,8 @@ equation solvable.
             </p>
             </task>
     </activity>
+<sage language="octave">
+</sage>
 
 <fact>
     <statement>
@@ -242,6 +244,68 @@ equation solvable.
 <sage language="octave">
 </sage>
 
+
+
+<activity>
+      <task>
+        <introduction>
+          <p> Write a statement involving the solutions of a vector equation that's equivalent to each claim: </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
+                    1 \\
+                    -1 \\
+                    0 \\
+                    -1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    5 \\
+                    5 \\
+                    3 \\
+                    1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    9 \\
+                    11 \\
+                    6 \\
+                    2
+                    \end{array}\right] \right\}</m> is linearly <em>independent</em>.</q>
+                    </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+                <p>
+                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
+                    1 \\
+                    -1 \\
+                    0 \\
+                    -1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    5 \\
+                    5 \\
+                    3 \\
+                    1
+                    \end{array}\right] , \left[\begin{array}{c}
+                    9 \\
+                    11 \\
+                    6 \\
+                    2
+                    \end{array}\right] \right\}</m> is linearly <em>dependent</em>.</q>
+                </p>
+            </statement>
+          </task>
+      </task>
+      <task>
+        <statement>
+          <p> Explain how to determine which of these statements is true. </p>
+        </statement>
+      </task>
+</activity>
+
+<sage language="octave">
+</sage>
+
 <observation xml:id="def_of_LI">
     <statement>
         <p>
@@ -283,66 +347,6 @@ equation solvable.
   </ul>
     </statement>
 </observation>
-
-<activity>
-      <task>
-        <introduction>
-          <p> Write a statement involving the solutions of a vector equation that's equivalent to each claim: </p>
-        </introduction>
-        <task>
-            <statement>
-                <p>
-                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
-                    1 \\
-                    -1 \\
-                    0 \\
-                    -1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    5 \\
-                    5 \\
-                    3 \\
-                    1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    9 \\
-                    11 \\
-                    6 \\
-                    3
-                    \end{array}\right] \right\}</m> is linearly <em>independent</em>.</q>
-                    </p>
-            </statement>
-          </task>
-          <task>
-            <statement>
-                <p>
-                    <q>The set of vectors <m>\left\{ \left[\begin{array}{c}
-                    1 \\
-                    -1 \\
-                    0 \\
-                    -1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    5 \\
-                    5 \\
-                    3 \\
-                    1
-                    \end{array}\right] , \left[\begin{array}{c}
-                    9 \\
-                    11 \\
-                    6 \\
-                    3
-                    \end{array}\right] \right\}</m> is linearly <em>dependent</em>.</q>
-                </p>
-            </statement>
-          </task>
-      </task>
-      <task>
-        <statement>
-          <p> Explain how to determine which of these statements is true. </p>
-        </statement>
-      </task>
-</activity>
-
-<sage language="octave">
-</sage>
 
 <!-- <activity estimated-time='10'>
     <introduction>
@@ -491,8 +495,8 @@ vectors that can form a linearly independent set?
     <activity>
             <statement>
                 <p>
-                    Consider the statement: The set of vectors <m>\left\{\vec{v}_1,\vec{v}_2,\vec{v}_3\right\}</m> is linearly independent because the vector <m>\vec{v}_3</m> is a linear combination of <m>\vec{v_1}</m> and <m>\vec{v}_2</m>. 
-                    Construct an analogous statement involving ingredients, meals, and recipes, using the terms <em>linearly independent</em> and <em>linear combination</em>.
+                    Consider the statement: The set of vectors <m>\left\{\vec{v}_1,\vec{v}_2,\vec{v}_3\right\}</m> is linearly dependent because the vector <m>\vec{v}_3</m> is a linear combination of <m>\vec{v_1}</m> and <m>\vec{v}_2</m>. 
+                    Construct an analogous statement involving ingredients, meals, and recipes, using the terms <em>linearly (in)dependent</em> and <em>linear combination</em>.
                 </p>
             </statement>
     </activity>
