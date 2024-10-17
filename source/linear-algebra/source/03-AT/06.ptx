@@ -117,17 +117,17 @@ was actually defined for all kinds of vector spaces:
 Let <m>V</m> be a vector space with the basis <m>\{\vec v_1,\vec v_2,\vec v_3\}</m>.
 Which of these completes the following definition for a bijective linear map
 <m>T:V\to\mathbb R^3</m>?
-<me>T(\vec v)=T(a\vec v_1+b\vec v_2+c\vec v_3)=\left[\begin{array}{c}
+<me>T(\vec v)=T(a\vec v_1+b\vec v_2+c\vec v_3)=\unknown\vec e_1+\unknown\vec e_2+\unknown\vec e_3=\left[\begin{array}{c}
     \unknown\\\unknown\\\unknown
   \end{array}\right]</me>
-  <ol marker="A." cols="3">
-    <li><p><m>\left[\begin{array}{c}
+  <ol marker="A.">
+    <li><p><m>0\vec e_1+0\vec e_2+0\vec e_3=\left[\begin{array}{c}
         0\\ 0\\ 0
       \end{array}\right]</m></p></li>
-    <li><p><m>\left[\begin{array}{c}
+    <li><p><m>(a+b+c)\vec e_1+0\vec e_2+0\vec e_3=\left[\begin{array}{c}
         a+b+c\\ 0\\ 0
     \end{array}\right]</m></p></li>
-    <li><p><m>\left[\begin{array}{c}
+    <li><p><m>a\vec e_1+b\vec e_2+c\vec e_3=\left[\begin{array}{c}
         a\\ b\\ c
         \end{array}\right]</m></p></li>
   </ol>
