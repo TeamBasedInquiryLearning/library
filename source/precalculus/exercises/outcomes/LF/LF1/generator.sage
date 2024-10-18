@@ -31,22 +31,36 @@ class Generator(BaseGenerator):
       #Task 2
       tasks=[]
 
-      #Table
-      m=choice([-6..6])
+      #Graph
+      m=choice([-3,-3+1/2,..,3])
       g=m*x+choice([-6..-1,1..6])
-      xvals=sample([-7..7],choice([4..6]))
+      #tasks.append({"graph_task":True,"line": "Line", "slope": f"{round(m,1):g}"})
+      tasks.append({"graph_task":True,"line": "Line", "slope": m})
+
+      slopes=[choice([-5..5])]
+      d=choice([2..5])
+      slopes.append(choice([-5..5])+choice([1..d-1])/d)
+      shuffle(slopes)
+
+      #Table
+      m=slopes.pop()
+      g=m*x+choice([-6..-1,1..6])
+      if m.is_integer():
+        xvals=sample([-7..7],choice([4..6]))
+      else:
+        xvals=sample([-3*d, -2*d, .., 3*d],choice([4..6]))
       points=[(a, g.subs({x:a})) for a in sorted(xvals)]
       tasks.append({"table_task":True,"table_rows": [{"x":p1, "y":p2} for (p1,p2) in points], "slope": m})
 
-      #Graph
-      m=choice([-3,-2.5,..,3])
-      g=m*x+choice([-6..-1,1..6])
-      tasks.append({"graph_task":True,"line": "Line", "slope": f"{round(m,1):g}"})
+
 
       #Two points
       p1=(choice([-8..8]),choice([-8..8]))
-      m=choice([-5..5])
-      px=choice([-4..-1,1..4])
+      m=slopes.pop()
+      if m.is_integer():
+        px=choice([-4..-1,1..4])
+      else:
+        px = choice([-3..-1,1..3])*d
       p2=(p1[0]+px, p1[1]+m*px )
       tasks.append({"points_task":True,"point1": p1, "point2": p2, "slope": m})
 
