@@ -12,6 +12,629 @@
     <subsection>
     <title>Activities</title>
 
+      <remark>
+        <p>
+          Recall from the previous section that we can find values of trigonometric functions of right triangles. In this section, we can take what we know about right triangles and find exact values of trigonometric functions of special angles.
+        </p>
+      </remark>
+      
+      <definition xml:id="def-special-right-triangles">
+        <statement>
+          <p>
+            There are two special right triangle relationships that will continually appear when speaking about special angles.
+            <ul>
+              <li>
+                <p>
+                  <m>45-45-90</m> triangle
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>30-60-90</m> triangle
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </definition>
+
+      <activity xml:id="exploring-45-45-90-triangle">
+        <introduction>
+          <p>
+            Let's explore the relationship of the <m>45-45-90</m> special right triangle.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Draw a right triangle and label the angles to have <m>45</m><degree/>, <m>45</m><degree/>, and <m>90</m><degree/>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should be able to draw a right triangle with one <m>90</m><degree/> angle (indicated by a box) and two <m>45</m><degree/> angles.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              In a <m>45-45-90</m> triangle, two angles are the same size. If those two angles are the same size, what do we know about the sides opposite those angles? 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should recognize that the two legs of the triangle must be the same size.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Suppose one of the legs of the right triangle is of length <m>1</m>, how long is the other leg?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students may notice that because the two legs are equal, then the two legs should both be equal to <m>1</m>.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Now that we know two sides of the right triangle, use that information and the Pythagorean Theorem to find the length of the third side.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>1^2+1^2=c^2</m>
+            </p>
+            <p>
+              <m>2=c^2</m>
+            </p>
+            <p>
+              <m>\sqrt{2}=c</m>
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <definition xml:id="45-45-90-triangle-rule">
+        <p>
+          From <xref ref="exploring-45-45-90-triangle"/>, we saw that a <m>45-45-90</m> triangle is an isosceles right triangle, which means that two of the sides of the triangle are equal. The ratio of its legs and hypotenuse is expressed as follows: <me>\text{Leg}:\text{Leg}:\text{Hypotenuse}=1:1:\sqrt{2}</me>. In terms of <m>x</m>, this ratio can be expressed as <me>x:x:x\sqrt{2}</me>. Therefore, the <term>45-45-90 triangle rule</term> states that the three sides of the triangle are in the ratio <m>x:x:x\sqrt{2}</m>.
+        </p> 
+      </definition> 
+
+      <activity xml:id="application-of-45-45-90-triangle">
+        <introduction>
+          <p>
+            Suppose you are given a right triangle <m>ABC</m>, where <m>C=45</m><degree/>, <m>a=6</m> cm, and <m>b</m> is the hypotenuse.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              Draw a picture of this right triangle and label the sides.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should draw a right triangle where <m>B</m> is the right angle and one of the legs is labeled <m>6</m> cm.
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              If we apply <xref ref="45-45-90-triangle-rule"/>, what would the length of <m>c</m> be? 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              According to the <m>45-45-90</m> triangle rule, the other leg (the side that is also labeled <m>c</m>) of this right triangle is also <m>6</m> cm long.
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              If we apply <xref ref="45-45-90-triangle-rule"/>, what would the length of the hypotenuse be?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              According to the <m>45-45-90</m> triangle rule, if the legs of the triangle are represented by <m>x</m>, then the length of the hypotenuse would be <m>x\sqrt{2}</m>. So, the length of the hypotenuse would be <m>6*\sqrt{2}</m> or <m>6\sqrt{2}</m>.
+            </p> 
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="45-45-90-practice">
+        <introduction>
+          <p>
+            For each of the following, use <xref ref="45-45-90-triangle-rule"/> to find the missing side.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              In triangle <m>ABC</m>, <m>A=90^\circ</m>, <m>c=3</m>, and <m>B=45^\circ</m>. What is the length of <m>a</m>?
+              <ol marker= "A." cols="2">
+                <li> <m>6</m> </li>
+                <li> <m>5</m></li>
+                <li> <m>4</m> </li>
+                <li> <m>3\sqrt{2}</m> </li></ol>
+              </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              In triangle <m>ABC</m>, <m>B=90^\circ</m>, <m>b=6\sqrt{2}</m>, and <m>C=45^\circ</m>. What is the length of <m>c</m>?
+              <ol marker= "A." cols="2">
+                <li> <m>6</m> </li>
+                <li> <m>5</m></li>
+                <li> <m>4</m> </li>
+                <li> <m>12</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              In triangle <m>ABC</m>, <m>B=90^\circ</m>, <m>b=4</m>, and <m>A=45^\circ</m>. What is the length of <m>c</m>?
+              <ol marker= "A." cols="2">
+                <li> <m>\sqrt{6}</m> </li>
+                <li> <m>2\sqrt{2}</m></li>
+                <li> <m>3</m> </li>
+                <li> <m>6</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="exploring-30-60-90-triangle">
+        <introduction>
+          <p>
+            Suppose you are given an equilateral triangle, which has three equal sides and three equal angles (<m>60</m><degree/>).
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Draw an equilateral triangle and then draw the height from the base of the triangle to the top angle. What kind of triangles did you just create when drawing the height?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students may recognize that the equilateral triangle is made up of two <m>30-60-90</m> triangles as the height bisects the top angle. 
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What do you notice about the relationships of the sides of the equilateral triangle to that of the <m>30-60-90</m> triangles?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students may notice a number of things, like the side of the equilateral triangle forms the hypotenuse of each of the <m>30-60-90</m> triangles, the base of the equilateral triangle is divided in half and is the shorter leg of the <m>30-60-90</m> triangles, and the height is the longer leg of the <m>30-60-90</m> triangles.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Label the angles to have <m>30</m><degree/>, <m>60</m><degree/>, and <m>90</m><degree/> and the side opposite of the <m>30</m><degree/> angle as having a length of <m>1</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should label all the angles and the side opposite the <m>30</m><degree/> angle as having a side length of <m>1</m> based on the information that was given.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Given that the side opposite the <m>30</m><degree/> angle has a length of <m>1</m>, how long is the length of one side of the equilateral triangle?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Because the side opposite of the <m>30</m><degree/> is half the length of the side of the equilateral triangle, the length of one side of the equilateral triangle is <m>2</m>.
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Now that you know the length of two sides of the <m>30-60-90</m> triangles, find the length of the third side using the Pythagorean Theorem.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Using the Pythagorean Theorem, students should get <m>\sqrt{3}</m> as the length of the third side (the side opposite the <m>60</m><degree/>).
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <definition xml:id="30-60-90-triangle-rule">
+        <p>
+          From <xref ref="exploring-30-60-90-triangle"/>, we saw that if a triangle has angle measures <m>30</m><degree/>, <m>60</m><degree/>, and <m>90</m><degree/>, then the sides are in the ratio: <me>1:\sqrt{3}:2</me>. In terms of <m>x</m>, this ratio can be expressed as <me>x:x\sqrt{3}:2x</me>. Therefore, the <term>30-60-90 triangle rule</term> states that the three sides of the triangle are in the ratio <m>x:x\sqrt{3}:2x</m>. Note that the shorter leg is always <m>x</m>, the longer leg is always <m>x\sqrt{3}</m>, and the hypotenuse is always <m>2x</m>.
+        </p> 
+      </definition>
+
+      <activity xml:id="application-of-30-60-90-triangle">
+        <introduction>
+          <p>
+            Suppose you are given a right triangle <m>ABC</m>, where <m>C=30</m><degree/>, <m>c=7</m> cm, and <m>b</m> is the hypotenuse.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              Draw a picture of this right triangle and label the sides.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should draw a right triangle where <m>B</m> is the right angle, <m>A</m> is <m>60</m><degree/>, and <m>C</m> is <m>30</m><degree/>.
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              If we apply <xref ref="30-60-90-triangle-rule"/>, what would the length of <m>a</m> be? 
+            </p>
+          </statement>
+          <answer>
+            <p>
+              According to the <m>30-60-90</m> triangle rule, the other leg (which is also the longer leg) of this right triangle would be <m>x\sqrt{3}</m>. In this case, <m>x</m> is equal to <m>7</m>, and so the longer leg would be <m>7*\sqrt{3}</m>, or <m>7\sqrt{3}</m> cm. 
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              If we apply <xref ref="30-60-90-triangle-rule"/>, what would the length of the hypotenuse be?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              According to the <m>30-60-90</m> triangle rule, if the shortest leg of the triangle is represented by <m>x</m>, then the length of the hypotenuse would be <m>2x</m>. So, the length of the hypotenuse would be <m>2*7</m> or <m>14</m> cm. 
+            </p> 
+          </answer>
+        </task>
+      </activity>
+
+      <activity xml:id="30-60-90-practice">
+        <introduction>
+          <p>
+            For each of the following, use <xref ref="30-60-90-triangle-rule"/> to find the missing side.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              In triangle <m>ABC</m>, <m>B=90</m>,<degree/>, <m>c=6</m>, and <m>C=30</m><degree/>. What is the length of <m>a</m>?
+              <ol marker= "A." cols="2">
+                <li> <m>6\sqrt{3}</m> </li>
+                <li> <m>4</m></li>
+                <li> <m>3</m> </li>
+                <li> <m>6\sqrt{2}</m> </li></ol>
+              </p>
+          </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              In triangle <m>ABC</m>, <m>C=90</m>,<degree/>, <m>a=4\sqrt{3}</m>, and <m>B=30</m><degree/>. What is the length of <m>b</m>?
+              <ol marker= "A." cols="2">
+                <li> <m>3</m> </li>
+                <li> <m>6</m></li>
+                <li> <m>4\sqrt{2}</m> </li>
+                <li> <m>4</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              In triangle <m>ABC</m>, <m>B=90</m>,<degree/>, <m>a=8\sqrt{3}</m>, and <m>A=60</m><degree/>. What is the length of <m>b</m>?
+              <ol marker= "A." cols="2">
+                <li> <m>4</m> </li>
+                <li> <m>16</m></li>
+                <li> <m>12</m> </li>
+                <li> <m>8\sqrt{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <remark>
+        Recall that we can find values of trigonometric functions of angles of right triangles. We can use the same idea to find values of trigonometric functions of angles of special right triangles.
+      </remark>
+
+      <activity xml:id="finding-trig-values-of-45-45-90-triangle">
+        <introduction>
+          <p>
+            Suppose you are given triangle <m>ABC</m>, where <m>C=45</m><degree/>, <m>a=5</m>, and <m>b</m> is the hypotenuse.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              Solve triangle <m>ABC</m> using the <m>45-45-90</m> triangle rule and other properties of right triangles.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>a=5</m>, <m>b=5\sqrt{2}</m>, and <m>c=5</m>
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Now that you have found all the sides and angles of triangle <m>ABC</m>, find the ratio that represents <m>\tan{A}</m>.
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{5}{5\sqrt{2}}</m> </li>
+                <li> <m>\frac{5\sqrt{2}}{5}</m></li>
+                <li> <m>\sqrt{2}</m> </li>
+                <li> <m>1</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Find the ratio that represents <m>\sin{A}</m>.
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{5}{5\sqrt{2}}</m> </li>
+                <li> <m>\frac{5\sqrt{2}}{5}</m></li>
+                <li> <m>\frac{1}{\sqrt{2}}</m> </li>
+                <li> <m>\frac{\sqrt{2}}{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A, C, and D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              What is the approximate value of <m>\sin{A}</m>?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>0.707</m>
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <remark>
+        In <xref ref="finding-trig-values-of-45-45-90-triangle"/>, notice that when finding a value of a trigonometric ratio, sometimes the values are "not nice." For example, the ratio for <m>\sin{A}</m> was <m>\frac{1}{\sqrt{2}}</m> (or <m>\frac{\sqrt{2}}{2}</m>), which gives an approximate value of <m>0.707</m>.
+      </remark>
+
+      <definition xml:id="exact-values-of-trig-functions">
+        The <term>exact values of trigonometric functions</term> are values of trigonometric functions of certain angles that can be expressed exactly using expressions containing real numbers and roots of real numbers. When finding trigonometric ratios, we often give an exact value, rather than an approximation.
+      </definition>
+
+      <activity xml:id="finding-exact-values-of-special-right-triangles">
+        <introduction>
+          <p>
+            Find the exact value of the trigonometric function you are asked to find for each of the following.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              Given the triangle, <m>ABC</m>, with <m>B=90</m><degree/>, <m>C=45</m><degree/>, and <m>a=7</m>, find <m>\cos{A}</m>.
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{7}{7\sqrt{2}}</m></li>
+                <li> <m>\frac{7\sqrt{2}}{7}</m></li>
+                <li> <m>\frac{1}{\sqrt{2}}</m> </li>
+                <li> <m>\frac{\sqrt{2}}{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A, C, and D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Using your calculator, find the value of <m>\cos{45}</m><degree/> to the nearest thousandth.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>0.707</m>
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Which of the followiing is equivalent to the value of <m>\cos{45}</m><degree/> that you found in part (b)?
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{7}{7\sqrt{2}}</m></li>
+                <li> <m>\frac{7\sqrt{2}}{7}</m></li>
+                <li> <m>\frac{1}{\sqrt{2}}</m> </li>
+                <li> <m>\frac{\sqrt{2}}{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A, C, and D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              How can using the <m>45-45-90</m> triangle help us find the value of <m>\sin{45}</m><degree/>?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should refer to the <m>45-45-90</m> triangle they drew in part (a) to find that <m>\sin{45}</m><degree/> is equal to <m>\frac{\sqrt{2}}{2}</m> (or approximately <m>0.707</m>).
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+      <remark>
+        Notice that if you know the relationships of the sides of special right triangles, it can help you find the exact value of special angles (i.e., <m>30</m><degree/>, <m>45</m><degree/>, and <m>60</m><degree/>).
+      </remark>
+
+      <activity xml:id="find-exact-value-of-special-angles">
+        <introduction>
+          <p>
+            For each of the following, find the exact value of the trigonometric function. Use the <m>45-45-90</m> and <m>30-60-90</m> trigonometric rules to help you: <me>1:1:\sqrt{2}</me><me>1:\sqrt{3}:2</me>
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              What is <m>\tan45</m><degree/>?
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{1}{\sqrt{2}}</m></li>
+                <li> <m>\sqrt{2}</m></li>
+                <li> <m>1</m> </li>
+                <li> <m>\frac{\sqrt{2}}{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              C
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              What is <m>\cos60</m><degree/>?
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{1}{2}</m></li>
+                <li> <m>\sqrt{3}</m></li>
+                <li> <m>2</m> </li>
+                <li> <m>1</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              What is <m>\sin30</m><degree/>?
+              <ol marker= "A." cols="2">
+                <li> <m>\sqrt{2}</m></li>
+                <li> <m>\sqrt{3}</m></li>
+                <li> <m>2</m> </li>
+                <li> <m>\frac{1}{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              What is <m>\cos45</m><degree/>?
+              <ol marker= "A." cols="2">
+                <li> <m>\frac{1}{\sqrt{2}}</m></li>
+                <li> <m>\sqrt{2}</m></li>
+                <li> <m>1</m> </li>
+                <li> <m>\frac{\sqrt{2}}{2}</m> </li></ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              D
+            </p>
+          </answer>
+        </task>
+
+      </activity>
     </subsection>
 
     <exercises>
