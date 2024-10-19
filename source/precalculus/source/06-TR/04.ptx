@@ -218,34 +218,54 @@
       <activity xml:id="exploring-30-60-90-triangle">
         <introduction>
           <p>
-            Suppose you are given a <m>30-60-90</m> triangle, where you know the angle opposite the <m>30</m><degree/> angle is of length <m>1</m>.
+            Suppose you are given an equilateral triangle, which has three equal sides and three equal angles (<m>60</m><degree/>).
           </p>
         </introduction>
         <task>
           <statement>
             <p>
-              Draw a right triangle and label the angles to have <m>30</m><degree/>, <m>60</m><degree/>, and <m>90</m><degree/> and the side opposite of the <m>30</m><degree/> angle as having a length of <m>1</m>.
+              Draw an equilateral triangle and then draw the height from the base of the triangle to the top angle. What kind of triangles did you just create when drawing the height?
             </p>
           </statement>
           <answer>
             <p>
-              Students should be able to draw a right triangle with one <m>90</m><degree/> angle (indicated by a box), one <m>30</m><degree/> angle and one <m>60</m><degree/> angle. The side opposite the <m>30</m><degree/> angle should have a side length of <m>1</m>.
+              Students may recognize that the equilateral triangle is made up of two <m>30-60-90</m> triangles as the height bisects the top angle. 
             </p>
           </answer>
         </task>
         <task>
           <statement>
             <p>
-              Unlike the <m>45-45-90</m> triangle, we cannot easily find another side length with the information given. Using trigonometry, which trigonometric function would help us find the length of the hypotenuse with the information given?
-              <ol marker= "A." cols="1">
-                <li> <m>\sin\theta</m> </li>
-                <li> <m>\cos\theta</m></li>
-                <li> <m>\tan\theta</m> </li></ol>
+              What do you notice about the relationships of the sides of the equilateral triangle to that of the <m>30-60-90</m> triangles?
             </p>
           </statement>
           <answer>
             <p>
-              A
+              Students may notice a number of things, like the side of the equilateral triangle forms the hypotenuse of each of the <m>30-60-90</m> triangles, the base of the equilateral triangle is divided in half and is the shorter leg of the <m>30-60-90</m> triangles, and the height is the longer leg of the <m>30-60-90</m> triangles.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Label the angles to have <m>30</m><degree/>, <m>60</m><degree/>, and <m>90</m><degree/> and the side opposite of the <m>30</m><degree/> angle as having a length of <m>1</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Students should label all the angles and the side opposite the <m>30</m><degree/> angle as having a side length of <m>1</m> based on the information that was given.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Given that the side opposite the <m>30</m><degree/> angle has a length of <m>1</m>, how long is the length of one side of the equilateral triangle?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Because the side opposite of the <m>30</m><degree/> is half the length of the side of the equilateral triangle, the length of one side of the equilateral triangle is <m>2</m>.
             </p>
           </answer>
         </task>
@@ -253,35 +273,12 @@
         <task>
           <statement>
             <p>
-              If we use the trigonometric ratio from part (b), what is the length of the hypotenuse? 
-              <ol marker= "A." cols="2">
-                <li> <m>0.5</m> </li>
-                <li> <m>2</m></li>
-                <li> <m>1.15</m></li>
-                <li> <m>0.58</m></li></ol>
+              Now that you know the length of two sides of the <m>30-60-90</m> triangles, find the length of the third side using the Pythagorean Theorem.
             </p>
           </statement>
           <answer>
             <p>
-              B
-            </p>
-          </answer>
-        </task>
-
-        <task>
-          <statement>
-            <p>
-              Now that we have two sides of the right triangle, use the Pythagorean Theorem to find the third side. 
-              <ol marker= "A." cols="2">
-                <li> <m>\sqrt{5}</m> </li>
-                <li> <m>1</m></li>
-                <li> <m>2</m></li>
-                <li> <m>\sqrt{3}</m></li></ol>
-            </p>
-          </statement>
-          <answer>
-            <p>
-              D
+              Using the Pythagorean Theorem, students should get <m>\sqrt{3}</m> as the length of the third side (the side opposite the <m>60</m><degree/>).
             </p>
           </answer>
         </task>
