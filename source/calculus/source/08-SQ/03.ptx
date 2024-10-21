@@ -251,10 +251,15 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
         <definition xml:id="definition-SQ3serieslimit">
             <statement>
                 <p>
-                    Given a sequence <m>a_n</m>, we define the limit of the series <me>\displaystyle\sum_{n=k}^\infty a_n:=\lim_{n\to \infty} A_n</me> where <m>A_n=\displaystyle \sum_{i=k}^n a_i</m>.  We call <m>\displaystyle\sum_{n=k}^\infty a_n</m> an <em>infinite series</em>.
+                    Given a sequence <m>\{a_n\}_{n=k}^\infty</m>, we call the pair <m>\{a_n\}_{n=k}^\infty</m> and its associated partial sum sequence <m>\{A_n\}_{n=k}^\infty</m> an <em>infinite series</em>, where <m>A_n=\displaystyle \sum_{i=k}^n a_i</m>. 
+                    We denote this infinite series <m>\sum_{n\geq k}a_n</m> (or <m>\sum a_n</m> when the starting index is understood.) We define the limit of the series <me>\displaystyle\sum_{n=k}^\infty a_n:=\lim_{n\to \infty} A_n</me>. 
                 </p>
             </statement>
         </definition>
+
+        <remark>
+            Most authors use the notation <m>\displaystyle\sum_{n=k}^\infty a_n</m> to simultaneously represent the series and also its limit (provided the limit exists.)
+        </remark>
         
         <activity xml:id="activity-SQ3geomserieslimit">
             <statement>
