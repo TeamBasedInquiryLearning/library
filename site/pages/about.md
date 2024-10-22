@@ -64,6 +64,16 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Drew Lewis presented a workshop on "Team-Based Inquiry Learning" for the Brown University Sheridan Center for Teaching and Learning (April 2024)
 
-- Drew Lewis presented "Team-Based Inquiry Learning in Lower Division Mathematics Courses" at the 2024 IUSE Summit
+- Drew Lewis presented "[Team-Based Inquiry Learning in Lower Division Mathematics Courses](https://docs.google.com/presentation/d/1Y_ymTdRXKWpV5m_QutkL51MFAhn5PNcs-aHYaAcBvJQ/edit?usp=sharing)" at the 2024 IUSE Summit
+
+- Drew Lewis presented "[Implementations of Team-Based Inquiry Learning Across Instructional Contexts](https://docs.google.com/presentation/d/15Pr5KiCgY4YIEh4Q5ivt6nC3VourR7mBCYw0yZMmDPk/edit?usp=sharing)" at Mathfest 2024
+
+- Tonya DeGeorge†, Abby Noble†, and Kathy Pinzon† presnted "Team-Based Inquiry Learning in College Algebra and Precalculus" at Mathfest 2024
+
+- Jordan Kostiuk† presented "Tailoring TBIL Resources Using Github" at Mathfest 2024
+
+- Sharona Krinsky† presented at "Team-Based Inquiry Learning in Linear Algebra" Mathfest 2024
+
+- Apoorva Mate† presented "Flipping the Script: Collaborative Learning Made Easy with Team-Based Inquiry" at the Fall 2024 New England COMMIT meeting
 
 († TBIL Fellows)
