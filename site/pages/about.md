@@ -72,7 +72,8 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Jordan Kostiuk† presented "Tailoring TBIL Resources Using Github" at Mathfest 2024
 
-- Sharona Krinsky† presented at "Team-Based Inquiry Learning in Linear Algebra" Mathfest 2024
+- Sharona Krinsky† presented "Team-Based Inquiry Learning in Linear Algebra" at MathFest 2024
+
 
 - Apoorva Mate† presented "Flipping the Script: Collaborative Learning Made Easy with Team-Based Inquiry" at the Fall 2024 New England COMMIT meeting
 
