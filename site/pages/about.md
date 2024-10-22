@@ -72,7 +72,8 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 - Tonya DeGeorge†, Abby Noble†, and Kathy Pinzon† presented "[Team-Based Inquiry Learning in College Algebra and Precalculus](https://docs.google.com/presentation/d/1ARM0NizRWN4wT4Dp52x0Y1aEDkrHaOK2wuQKCYS7L0Y/edit?usp=sharing)" at MathFest 2024
 
 
-- Jordan Kostiuk† presented "Tailoring TBIL Resources Using Github" at Mathfest 2024
+- Jordan Kostiuk† presented "Tailoring TBIL Resources Using Github" at MathFest 2024
+
 
 - Sharona Krinsky† presented "Team-Based Inquiry Learning in Linear Algebra" at MathFest 2024
 
