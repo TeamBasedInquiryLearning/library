@@ -364,52 +364,70 @@ the set of all vectors that are the result of using <m>T</m> to transform
         </p>
         <p>
           Consider the question: Which vectors <m>\vec{w}</m> in <m>\IR^3</m> belong to 
-  <m>\Im T</m>? 
+          <me>\Im T = \left\{ \vec{w} \in W\ \big|\ \text{there is some }\vec v\in V \text{ with } T(\vec{v})=\vec{w}\right\}</me>?
       </p>
   </introduction>
   <task>
       <statement>
           <p>
-              Determine if <m>\left[\begin{array}{c} 12 \\ 3 \\ 3 \end{array}\right]</m> belongs to 
-              <m>\Im T</m>. 
+              Does <m>T(\vec e_3)</m> belong to <m>\Im T</m>?
+              <ol marker="A.">
+                <li><p>Yes</p></li>
+                <li><p>No</p></li>
+              </ol>
           </p>
       </statement>
+      <answer><p>A. Yes</p></answer>
   </task>
   <task>
       <statement>
           <p>
-              Determine if <m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]</m> belongs to 
-              <m>\Im T</m>. 
+              Does <m>T(\vec e_2)+T(\vec e_4)</m> belong to <m>\Im T</m>?
+              <ol marker="A.">
+                <li><p>Yes</p></li>
+                <li><p>No</p></li>
+              </ol>
           </p>
       </statement>
+      <answer><p>A. Yes</p></answer>
   </task>
   <task>
       <statement>
           <p>
-An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</m> belongs to
-<m>\Im T</m> provided the equation
-<me>x_1 T(\vec{e}_1)+x_2 T(\vec{e}_2)+x_3T(\vec{e}_3)+x_4T(\vec{e}_4)=\vec{w}</me> has...
-  <ol marker="A.">
-      <li>no solutions.</li>
-      <li>exactly one solution.</li>
-      <li>at least one solution.</li>
-      <li>infinitely-many solutions.</li>
-  </ol>
+              Does <m>-7T(\vec e_1)</m> belong to <m>\Im T</m>?
+              <ol marker="A.">
+                <li><p>Yes</p></li>
+                <li><p>No</p></li>
+              </ol>
           </p>
       </statement>
+      <answer><p>A. Yes</p></answer>
   </task>
   <task>
       <statement>
           <p>
-            Based on this, how do <m>\Im T</m>  and  <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> relate to each other?
-          <ol marker="A.">
-              <li>The set <m>\Im T</m> contains <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> but is not equal to it.</li>
-              <li>The set <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> contains <m>\Im T</m> but is not equal to it.</li>
-              <li>The set <m>\Im T</m> and <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> are equal to each other.</li>
-              <li>There is no relation between these two sets.</li>
-          </ol>
-      </p>
+              Does <em>every</em> vector in <m>\span\{T(\vec e_1),T(\vec e_2),T(\vec e_3),T(\vec e_4)\}</m>
+              belong to <m>\Im T</m>?
+              <ol marker="A.">
+                <li><p>Yes</p></li>
+                <li><p>No</p></li>
+              </ol>
+          </p>
       </statement>
+      <answer><p>A. Yes</p></answer>
+  </task>
+  <task>
+      <statement>
+          <p>
+              Does <em>any</em> vector <em>not in</em> <m>\span\{T(\vec e_1),T(\vec e_2),T(\vec e_3),T(\vec e_4)\}</m>
+              belong to <m>\Im T</m>?
+              <ol marker="A.">
+                <li><p>Yes</p></li>
+                <li><p>No</p></li>
+              </ol>
+          </p>
+      </statement>
+      <answer><p>B. No</p></answer>
   </task>
 </activity>
 
