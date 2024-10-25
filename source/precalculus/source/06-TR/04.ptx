@@ -100,7 +100,7 @@
         </task>
       </activity>
 
-      <definition xml:id="45-45-90-triangle-rule">
+      <definition xml:id="def-45-45-90-triangle-rule">
         <p>
           From <xref ref="exploring-45-45-90-triangle"/>, we saw that a <m>45-45-90</m> triangle is an isosceles right triangle, which means that two of the sides of the triangle are equal. The ratio of its legs and hypotenuse is expressed as follows: <me>\text{Leg}:\text{Leg}:\text{Hypotenuse}=1:1:\sqrt{2}</me>. In terms of <m>x</m>, this ratio can be expressed as <me>x:x:x\sqrt{2}</me>. Therefore, the <term>45-45-90 triangle rule</term> states that the three sides of the triangle are in the ratio <m>x:x:x\sqrt{2}</m>.
         </p> 
@@ -129,7 +129,7 @@
         <task>
           <statement>
             <p>
-              If we apply <xref ref="45-45-90-triangle-rule"/>, what would the length of <m>c</m> be? 
+              If we apply <xref ref="def-45-45-90-triangle-rule"/>, what would the length of <m>c</m> be? 
             </p>
           </statement>
           <answer>
@@ -142,7 +142,7 @@
         <task>
           <statement>
             <p>
-              If we apply <xref ref="45-45-90-triangle-rule"/>, what would the length of the hypotenuse be?
+              If we apply <xref ref="def-45-45-90-triangle-rule"/>, what would the length of the hypotenuse be?
             </p>
           </statement>
           <answer>
@@ -153,10 +153,10 @@
         </task>
       </activity>
 
-      <activity xml:id="45-45-90-practice">
+      <activity xml:id="activity-45-45-90-practice">
         <introduction>
           <p>
-            For each of the following, use <xref ref="45-45-90-triangle-rule"/> to find the missing side.
+            For each of the following, use <xref ref="def-45-45-90-triangle-rule"/> to find the missing side.
           </p>
         </introduction>
 
@@ -284,7 +284,7 @@
         </task>
       </activity>
 
-      <definition xml:id="30-60-90-triangle-rule">
+      <definition xml:id="def-30-60-90-triangle-rule">
         <p>
           From <xref ref="exploring-30-60-90-triangle"/>, we saw that if a triangle has angle measures <m>30</m><degree/>, <m>60</m><degree/>, and <m>90</m><degree/>, then the sides are in the ratio: <me>1:\sqrt{3}:2</me>. In terms of <m>x</m>, this ratio can be expressed as <me>x:x\sqrt{3}:2x</me>. Therefore, the <term>30-60-90 triangle rule</term> states that the three sides of the triangle are in the ratio <m>x:x\sqrt{3}:2x</m>. Note that the shorter leg is always <m>x</m>, the longer leg is always <m>x\sqrt{3}</m>, and the hypotenuse is always <m>2x</m>.
         </p> 
@@ -313,7 +313,7 @@
         <task>
           <statement>
             <p>
-              If we apply <xref ref="30-60-90-triangle-rule"/>, what would the length of <m>a</m> be? 
+              If we apply <xref ref="def-30-60-90-triangle-rule"/>, what would the length of <m>a</m> be? 
             </p>
           </statement>
           <answer>
@@ -326,7 +326,7 @@
         <task>
           <statement>
             <p>
-              If we apply <xref ref="30-60-90-triangle-rule"/>, what would the length of the hypotenuse be?
+              If we apply <xref ref="def-30-60-90-triangle-rule"/>, what would the length of the hypotenuse be?
             </p>
           </statement>
           <answer>
@@ -337,10 +337,10 @@
         </task>
       </activity>
 
-      <activity xml:id="30-60-90-practice">
+      <activity xml:id="activity-30-60-90-practice">
         <introduction>
           <p>
-            For each of the following, use <xref ref="30-60-90-triangle-rule"/> to find the missing side.
+            For each of the following, use <xref ref="def-30-60-90-triangle-rule"/> to find the missing side.
           </p>
         </introduction>
 
