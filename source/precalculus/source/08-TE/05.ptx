@@ -21,7 +21,7 @@
     <activity xml:id="right-triangles-1">
       <introduction>
         <p>
-          A pilot signals to an air traffic controller that she wants to land. She wants to know what angle of fall to take when she is currently at <m>40{,}000</m> feet. Her plane is <m>100{,}000</m> feet from the runway, as the air traffic controller can see on the radar.
+          A pilot signals to an air traffic controller that she wants to land. She wants to know what angle of fall to take when she is currently at <m>40{,}000</m> feet. Her plane is <m>750{,}000</m> feet from the runway, as the air traffic controller can see on the radar.
         </p>
       </introduction>
       <task>
@@ -32,7 +32,7 @@
         </statement>
         <answer>
           <p>
-            Students should draw a right triangle where the height is <m>40,000</m> and the base is <m>100,000</m>.
+            Students should draw a right triangle where the height is <m>40{,}000</m> and the base is <m>750{,}000</m>.
           </p>
         </answer>
       </task>
@@ -40,7 +40,7 @@
       <task>
         <statement>
           <p>
-            The pilot wants to know what angle of fall to take in order to reach the runway. Where is this angle located in your diagram?
+            The pilot wants to know what angle of descent to take in order to reach the runway. Where is this angle located in your diagram?
           </p>
         </statement>
         <answer>
@@ -66,12 +66,12 @@
       <task>
         <statement>
           <p>
-            If we know that the pilot's line of sight is parallel to the base of the triangle you created in part (a), then the hypotenuse of the triangle could also be considered a transversal that cuts the two parallel lines.  What angle of the triangle is congruent to the "angle of fall" the pilot wants to take in order to descend the plane <m>100,000</m> feet from the runway?
+            If we know that the pilot's line of sight is parallel to the base of the triangle you created in part (a), then the hypotenuse of the triangle could also be considered a transversal that cuts the two parallel lines.  What angle of the triangle is congruent to the "angle of descent" the pilot wants to take in order to descend the plane <m>750{,}000</m> feet from the runway?
           </p>
         </statement>
         <answer>
           <p>
-            The "angle of fall" is congruent to the same angle that is created with the base of the triangle (not the right angle). 
+            The "angle of descent" is congruent to the same angle that is created with the base of the triangle (not the right angle). 
           </p>
         </answer>
       </task>
@@ -79,12 +79,12 @@
       <task>
         <statement>
           <p>
-            Now that we know which angle is congruent to the "angle of fall" the pilot needs, which of the <m>6</m> trig functions could we use to find the angle at which she should descend?
+            Now that we know which angle is congruent to the "angle of descent" the pilot needs, which of the <m>6</m> trig functions could we use to find the angle at which the pilot should descend?
           </p>
         </statement>
         <answer>
           <p>
-            If students label the triangle correctly, they should see that they can now use <m>\tan^{-1}</m> to find the measure of the angle because they have <m>40,000</m> as the opposite side and <m>100,000</m> as the adjacent side.
+            If students label the triangle correctly, they should see that they can now use <m>\tan^{-1}</m> to find the measure of the angle because they have <m>40{,}000</m> as the opposite side and <m>750{,}000</m> as the adjacent side.
           </p>
         </answer>
       </task>
@@ -97,7 +97,7 @@
         </statement>
         <answer>
           <p>
-            Approximately <m>21.8</m><degree/>.
+            Approximately <m>3.05</m><degree/>.
           </p>
         </answer>
       </task>
@@ -141,7 +141,7 @@
     <activity xml:id="right-triangles-2">
       <introduction>
         <p>
-          The Seattle Space Needle casts a <m>67</m>-meter shadow.
+          An observer is standing <m>67</m> meters away from the Seattle Space Needle.
         </p>
       </introduction>
       
@@ -153,7 +153,7 @@
         </statement>
         <answer>
           <p>
-            Students should draw a right triangle so that the base of the triangle is <m>67</m> meters, as it represents the shadow of the Space Needle.
+            Students should draw a right triangle so that the base of the triangle is <m>67</m> meters, as it represents the distance the observer is from the Space Needle.
           </p>
         </answer>
       </task>
@@ -161,12 +161,12 @@
         <task>
         <statement>
           <p>
-            If the angle of elevation from the tip of the shadow to the top of the Space Needle is <m>70</m><degree/>, which trig function could you use to find the height of the Space Needle?
+            If the angle of elevation from where the observers stands to the top of the Space Needle is <m>70</m><degree/>, which trig function could you use to find the height of the Space Needle?
           </p>
         </statement>
         <answer>
           <p>
-            The tangent function would be the best to use because the opposite of the given angle (angle of elevation) is the height of the Space Needle and the shadow of the Space Needle would be the adjacent side.
+            The tangent function would be the best to use because the opposite of the given angle (angle of elevation) is the height of the Space Needle and the distance from the Space Needle to the observer would be the adjacent side.
           </p>
         </answer>
       </task>
@@ -212,7 +212,7 @@
         </statement>
         <answer>
           <p>
-            <m>2,399</m> meters
+            <m>2{,}399</m> meters
           </p>
         </answer>
       </task>
@@ -229,19 +229,6 @@
           </p>
         </answer>
       </task>
-
-      <task>
-        <statement>
-          <p>
-            One of the legs of a right triangle is twice as long as the other, and the perimeter of the triangle is <m>28</m>. Find the lengths of all three sides (to the nearest whole number). 
-          </p>
-        </statement>
-        <answer>
-          <p>
-            The legs are approximately <m>5</m> and <m>11</m>. The hypotenuse is approximately <m>12</m>.
-          </p>
-        </answer>
-      </task>
     </activity>
 
     <remark>
@@ -253,7 +240,7 @@
     <activity xml:id="law-of-sines-example">
       <introduction>
         <p>
-          Airplane A is flying directly towards the airport which is <m>20</m> miles away. The pilot notices Airplane B <m>45</m> degrees to her right. Airplane B is also flying directly towards the airport. The pilot of airplane B calculates that Airplane A is <m>50</m> degrees to his left.
+          Airplane A is flying directly towards the airport which is <m>20</m> miles away. The pilot notices Airplane B <m>45</m> degrees to her right. Airplane B is also flying directly towards the airport. The pilot of Airplane B calculates that Airplane A is <m>50</m> degrees to his left.
         </p>
       </introduction>
       <task>
@@ -306,12 +293,12 @@
       <task>
         <statement>
           <p>
-            Refer back to the previous section. Which trigonometric law (the law of sines or the law of cosines) would be the best one to use if we wanted to find the angle at which Carlos is from his friends?
+            Refer back to the previous section. Which trigonometric law (the Law of Sines or the Law of Cosines) would be the best one to use if we wanted to find the angle at which Carlos is from his friends?
           </p>
         </statement>
         <answer>
           <p>
-            Because we are given all sides of this non-right triangle, the best trigonometric law to use would be the law of cosines.
+            Because we are given all sides of this non-right triangle, the best trigonometric law to use would be the Law of Cosines.
           </p>
         </answer>
       </task>
@@ -332,7 +319,7 @@
       <task>
         <statement>
           <p>
-            Now that we know the angle at which Carlos is located from Jean and Travis, determine the angle (to the nearest degree) at which Travis is located from his friends by using the law of sines.
+            Now that we know the angle at which Carlos is located from Jean and Travis, determine the angle (to the nearest degree) at which Travis is located from his friends by using the Law of Sines.
           </p>
         </statement>
         <answer>
