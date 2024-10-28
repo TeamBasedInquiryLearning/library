@@ -262,7 +262,7 @@ is either known from context or irrelevant.
 When the series (the sequence of partial sums) converges to a limit, we say the series is <term>convergent</term> and
 this limit is the <term>value</term> of the series, and write:
 <me>\sum_{i=k}^\infty a_i = a_k+a_{k+1}+a_{k+2}+\dots =
-\lim_{n\to\infty} \sum_{i=k}^n a_i = a_k+a_{k+1}+a_{k+2}+\dots+a_n</me>.
+\lim_{n\to\infty} \sum_{i=k}^n a_i</me>.
 When the series (the sequence of partial sums) diverges, we say the series is <term>divergent</term>.
                 </p>
             </statement>
