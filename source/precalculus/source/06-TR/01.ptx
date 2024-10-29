@@ -23,7 +23,7 @@
       </introduction>
       <task>
         <statement>
-        <p> <figure xml:id="90-degree-angle"><image width="50%">
+        <p> <figure xml:id="fig-90-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(3,3),aspect_ratio=1)
             p+=arrow((0,0),(-3,3))
@@ -73,7 +73,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="135-degree-angle"><image width="50%">
+        <p> <figure xml:id="fig-135-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(0,4),aspect_ratio=1)
             p+=arrow((0,0),(-3,-3))
@@ -134,7 +134,7 @@
       </introduction>
       <task>
         <statement>
-        <p> <figure xml:id="45-degree-angle"><image width="50%">
+        <p> <figure xml:id="fig-45-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0), aspect_ratio=1)
             p+=arrow((0,0),(3,3))
@@ -158,7 +158,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="-180-degree-angle"><image width="50%">
+        <p> <figure xml:id="fig-180-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(-4,0))
@@ -183,7 +183,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="210-degree-angle"><image width="50%">
+        <p> <figure xml:id="fig-210-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(4*cos(7*pi/6),3*sin(7*pi/6)))
@@ -210,7 +210,7 @@
          <p> Draw an angle of measure <m>-225^{\circ} </m> in standard position.
          </p></statement>
         <answer>
-          <figure xml:id="-225-degree-angle"><image width="50%">
+          <figure xml:id="fig-225-degree-angle"><image width="50%">
             <sageplot>
               p=arrow((0,0),(4,0),aspect_ratio=1)
               p+=arrow((0,0),(4*cos(3*pi/4),4*sin(3*pi/4)))
