@@ -27,6 +27,7 @@
           <sageplot>
             p=arrow((0,0),(3,3),aspect_ratio=1)
             p+=arrow((0,0),(-3,3))
+            p+=arc((0,0),0.5,sector=(pi/4, 3*pi/4),color="black")
             p.axes(False)
             p
           </sageplot>
@@ -51,7 +52,7 @@
             p=arrow((0,0),(-4,1),aspect_ratio=1)
             p+=arrow((0,0),(4,-1))
             p+=point((0,0),size=50)
-            p+=arc((0,0),0.2,sector=(atan(-1/4), atan(-1/4)+pi),color="gray")
+            p+=arc((0,0),0.5,sector=(atan(-1/4), atan(-1/4)+pi),color="black")
             p.axes(False)
             p
           </sageplot>
@@ -76,6 +77,7 @@
           <sageplot>
             p=arrow((0,0),(0,4),aspect_ratio=1)
             p+=arrow((0,0),(-3,-3))
+            p+=arc((0,0),0.5,sector=(pi/2, 5*pi/4),color="black")
             p.axes(False)
             p
           </sageplot>
@@ -102,9 +104,9 @@
       </statement>
       <figure xml:id="standard-position"><image width="50%">
         <sageplot>
-          p=arrow((0,0),(0,4),aspect_ratio=1)
+          p=arrow((0,0),(4,0),aspect_ratio=1)
           p+=arrow((0,0),(-3,-3))
-          p.axes(False)
+          p+=arc((0,0),0.5,sector=(0, 5*pi/4),color="black")
           p
         </sageplot>
       </image></figure>
@@ -113,6 +115,14 @@
     An angle measured counterclockwise from the initial side has a positive measure, while an angle measured clockwise from the initial side has a negative measure. 
   </p>
 </statement>
+<figure xml:id="standard-position-neg"><image width="50%">
+  <sageplot>
+    p=arrow((0,0),(4,0),aspect_ratio=1)
+    p+=arrow((0,0),(-3,-3))
+    p+=arc((0,0),0.5,sector=(5*pi/4,2*pi),color="black")
+    p
+  </sageplot>
+</image></figure>
      
     </definition>
     
@@ -128,6 +138,7 @@
           <sageplot>
             p=arrow((0,0),(4,0), aspect_ratio=1)
             p+=arrow((0,0),(3,3))
+            p+=arc((0,0),0.5,sector=(0,pi/4),color="black")
             p.axes(False)
             p
           </sageplot>
@@ -151,6 +162,7 @@
           <sageplot>
             p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(-4,0))
+            p+=arc((0,0),0.5,sector=(pi,2*pi),color="black")
             p.axes(False)
             p
           </sageplot>
@@ -174,7 +186,8 @@
         <p> <figure xml:id="210-degree-angle"><image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0),aspect_ratio=1)
-            p+=arrow((0,0),(4*cos(4*pi/3),3*sin(4*pi/3)))
+            p+=arrow((0,0),(4*cos(7*pi/6),3*sin(7*pi/6)))
+            p+=arc((0,0),0.5,sector=(0,7*pi/6),color="black")
             p.axes(False)
             p
           </sageplot>
@@ -192,20 +205,115 @@
           </p>
         </answer>
       </task>
+      <task> 
+        <statement>
+         <p> Draw an angle of measure <m>-225^{\circ} </m> in standard position.
+         </p></statement>
+        <answer>
+          <figure xml:id="-225-degree-angle"><image width="50%">
+            <sageplot>
+              p=arrow((0,0),(4,0),aspect_ratio=1)
+              p+=arrow((0,0),(4*cos(3*pi/4),4*sin(3*pi/4)))
+              p+=arc((0,0),0.5,sector=(3*pi/4,2*pi),color="black")
+              p.axes(False)
+              p
+            </sageplot>
+          </image></figure>
+        </answer>
+      </task>
     </activity>
 
     <remark>
-      Activity or remark - Something about the circumference of a circle being another way to measure the angle.  <m>C=2\pir</m> divide both sides by the radius, so a full circle or <m>360^{\circ}=2\pi</m> radians
+      Activity or remark - Something about the circumference of a circle being another way to measure the angle.  <m>C=2\pi r</m> divide both sides by the radius, so a full circle or <m>360^{\circ}=2\pi</m> radians
     </remark>
 
     <definition xml:id="def-radian">
       <statement>
         <p>
-          
+          One <term>radian</term> is the measure of a central angle of a circle that intersects an arc the same length as the radius.
         </p>
       </statement>
     </definition>
 
+    <activity>
+      <introduction>
+        <p>
+        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in radians.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> <m>180^{\circ}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>\frac{\pi}{4}</m> </p></li>
+              <li><p> <m>\pi</m> </p></li>
+              <li><p> <m>\frac{3\pi}{4}</m> </p></li>
+              <li><p> <m>\frac{\pi}{2}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>45^{\circ}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>\frac{\pi}{4}</m> </p></li>
+              <li><p> <m>\pi</m> </p></li>
+              <li><p> <m>\frac{3\pi}{4}</m> </p></li>
+              <li><p> <m>\frac{\pi}{2}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity>
+      <introduction>
+        <p>
+        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in degrees.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> <m>\frac{\pi}{2}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>45^{\circ}</m> </p></li>
+              <li><p> <m>90^{\circ}</m> </p></li>
+              <li><p> <m>180^{\circ}</m> </p></li>
+              <li><p> <m>360^{\circ}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>\frac{3\pi}{4}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>45^{\circ}</m> </p></li>
+              <li><p> <m>90^{\circ}</m> </p></li>
+              <li><p> <m>135^{\circ}</m> </p></li>
+              <li><p> <m>180^{\circ}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
     </subsection>
 
     <exercises>
