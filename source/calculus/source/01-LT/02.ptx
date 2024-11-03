@@ -260,11 +260,21 @@ the function as <m>x</m> tends to 2?
 
 
     <activity xml:id = "activity-limits-numerically5">
-              <introduction> 
-                <p> In <xref ref="figure-limit-numerical-5" /> is the graph for <m>f(x) = \sin\left(\dfrac{1}{x}\right)</m>.  Several values for <m>f(x)</m> in the neighborhood of <m>x = 0</m> are approximated in  <xref ref = "table-limit-numerical5"/>.  </p>
+      <introduction> 
+        <p> 
+          In <xref ref="figure-limit-numerical-5" /> is the graph for <m>f(x) = \sin\left(\dfrac{1}{x}\right)</m>.  Several values for <m>f(x)</m> in the neighborhood of <m>x = 0</m> are approximated in  <xref ref = "table-limit-numerical5"/>.
+        </p>
         <figure xml:id="figure-limit-numerical-5">
-       <image width="50%" source="limits_numerical5_graph.png" />
-                <caption>Graph of <m>f(x) = \sin(1/x)</m>.</caption>
+          <image width="50%">
+            <sageplot>
+              x = var('x')
+              f = sin(1/x)
+              p1 = plot(f,(x,-1,-0.01), ymin=-1,ymax=1, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=1, color='blue', aspect_ratio=1)
+              p2 = plot(f,(x,0.01,1), ymin=-1,ymax=1, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=1, color='blue', aspect_ratio=1)
+              p1+p2
+            </sageplot>
+          </image>
+          <caption>Graph of <m>f(x) = \sin(1/x)</m>.</caption>
         </figure>
         <table xml:id="table-limit-numerical5">
         <tabular halign="center">
