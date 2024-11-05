@@ -3,14 +3,14 @@
 <project ptx-version="2">
   <targets>
     <target
-      name="precal-web"
+      name="precalculus-web"
       format="html"
       source="precalculus/source/main.ptx"
       deploy-dir="preview/precalculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="precal-print"
+      name="precalculus-print"
       format="pdf"
       source="precalculus/source/main.ptx"
       output-filename="TBIL-Precalculus.pdf"
@@ -18,7 +18,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="precal-web-instructor"
+      name="precalculus-web-instructor"
       format="html"
       source="precalculus/source/main.ptx"
       publication="instructor.ptx"
@@ -26,7 +26,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="precal-print-instructor"
+      name="precalculus-print-instructor"
       format="pdf"
       source="precalculus/source/main.ptx"
       publication="instructor.ptx"
@@ -35,7 +35,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="precal-print-slides"
+      name="precalculus-print-slides"
       format="pdf"
       source="precalculus/source/main.ptx"
       xsl="slides.xsl"
@@ -44,14 +44,14 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="cal-web"
+      name="calculus-web"
       format="html"
       source="calculus/source/main.ptx"
       deploy-dir="preview/calculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="cal-print"
+      name="calculus-print"
       format="pdf"
       source="calculus/source/main.ptx"
       output-filename="TBIL-Calculus.pdf"
@@ -59,7 +59,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="cal-web-instructor"
+      name="calculus-web-instructor"
       format="html"
       source="calculus/source/main.ptx"
       publication="instructor.ptx"
@@ -67,7 +67,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="cal-print-instructor"
+      name="calculus-print-instructor"
       format="pdf"
       source="calculus/source/main.ptx"
       publication="instructor.ptx"
@@ -76,7 +76,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="cal-print-slides"
+      name="calculus-print-slides"
       format="pdf"
       source="calculus/source/main.ptx"
       xsl="slides.xsl"
@@ -85,14 +85,14 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="la-web"
+      name="linear-algebra-web"
       format="html"
       source="linear-algebra/source/main.ptx"
       deploy-dir="preview/linear-algebra" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="la-print"
+      name="linear-algebra-print"
       format="pdf"
       source="linear-algebra/source/main.ptx"
       output-filename="TBIL-Linear-Algebra.pdf"
@@ -100,7 +100,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="la-web-instructor"
+      name="linear-algebra-web-instructor"
       format="html"
       source="linear-algebra/source/main.ptx"
       publication="instructor.ptx"
@@ -108,7 +108,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="la-print-instructor"
+      name="linear-algebra-print-instructor"
       format="pdf"
       source="linear-algebra/source/main.ptx"
       publication="instructor.ptx"
@@ -117,7 +117,7 @@
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
-      name="la-print-slides"
+      name="linear-algebra-print-slides"
       format="pdf"
       source="linear-algebra/source/main.ptx"
       xsl="slides.xsl"
