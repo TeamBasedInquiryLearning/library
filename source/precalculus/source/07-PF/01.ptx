@@ -152,10 +152,13 @@
           <p> 
             <image>
               <sageplot>
-                f(x) = sin(x)
-                p=plot(f, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True) 
-                p+=point([(0,0),(pi/6,1/2)],pointsize=50,color='blue')
-                p
+f(x) = sin(x)
+p=Graphics()
+for i in [0..12]:
+    p+=point((pi*i/6,sin(pi*i/6)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+for i in [0..8]:
+    p+=point((pi*i/4,sin(pi*i/4)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+p
               </sageplot>
             </image> 
           </p>
