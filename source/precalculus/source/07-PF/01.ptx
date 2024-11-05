@@ -27,9 +27,11 @@
       <task>
         <statement>
           <p>
-            Fill in the following table for <m>f(x)=\sin x</m>. Find the exact values, then approximate each to two decimal places. (Notice that the values in the table are all the standard angles found on the unit circle!)
+            Fill in the following table for <m>f(x)=\sin x</m>. Find the exact values, then approximate each to two decimal places. (Notice that the values in the table are all the standard angles found on the unit circle!) </p>
 
-            NOTE FROM ABBY: this table looks terrible. 
+            <p>
+            NOTE FROM ABBY: this table looks terrible. How can we make it look better? Also, should we give the exact values to lighten the load some, and have them approximate so they can graph???
+            
             <sidebyside>
             <tabular halign="center">
               <row header="yes" bottom="minor" >
@@ -143,12 +145,19 @@
       <task>
         <statement>
           <p>
-            Plot these values on a graph. 
+            Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\sin x</m>.  
           </p>
         </statement>
         <answer>
-          <p>
-            insert pic
+          <p> 
+            <image>
+              <sageplot>
+                f(x) = sin(x)
+                p=plot(f, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True) 
+                p+=point([(0,0),(pi/6,1/2)],pointsize=50,color='blue')
+                p
+              </sageplot>
+            </image> 
           </p>
         </answer>
       </task>
@@ -353,9 +362,9 @@
       </statement>
     </definition>
 
-    <activity xml:id="activity-sine-period">
+    <activity xml:id="activity-sine-period-1">
       <introduction>
-        <p> Now let's look at <m>h(x)=\sin \left( \dfrac{1}{2}x \right)</m>. 
+        <p> Now let's look at <m>h(x)=\sin 2x</m>. 
         </p> 
       </introduction>
 
@@ -376,8 +385,337 @@
           </p>
         </answer>
       </task>
+
+      <task>
+        <statement>
+          <p>Which of the following graphs is likely to be <m>h(x)=\sin 2x</m>. (To help compare the functions, <m>f(x)=\sin x</m> is shown as a dashed line on each graph.)  
+            <ol marker= "A.">  
+              <!-- <sidebyside width="50%"> -->
+                <li>             <image>
+                <sageplot>
+                  f(x) = sin(2*x)
+                  p=plot(f, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=1, detect_poles=True,linestyle="--")
+                  p
+                </sageplot>
+              </image>  </li>
+              <li> <p> placeholder for graph of <m>\sin \frac{1}{2}x</m>  </p>  </li>
+            
+              <li> <p> placeholder for graph of <m>\sin (x-2)</m>  </p>  </li>
+              <li> <p> placeholder for graph of <m>2 \sin x</m>  </p>  </li>
+            
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           update once the order is fixed!
+          </p>
+        </answer>
+      </task>
+
+
+
+
       
     </activity>
+
+    <activity xml:id="activity-sine-period-2">
+      <introduction>
+        <p> Consider <m>j(x)=\sin \frac{1}{2}x</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>What type of transformation is happening in <m>j(x)</m> compared the parent function <m>f(x)=\sin x</m>?
+            <ol marker= "A.">  
+              <li> <p> A vertical stretch/compression. </p>  </li>
+              <li> <p> A horizontal stretch/compression.  </p>  </li>
+              <li> <p> A vertical shift. </p>  </li>
+              <li> <p> A horizontal shift.  </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           B
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>Which of the following graphs is likely to be <m>j(x)=\sin \frac{1}{2}x</m>. (To help compare the functions, <m>f(x)=\sin x</m> is shown as a dashed line on each graph.) 
+            <ol marker= "A.">  
+              <!-- <sidebyside width="50%"> -->
+                <li>             <image>
+                <sageplot>
+                  f(x) = sin(2*x)
+                  p=plot(f, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=1, detect_poles=True,linestyle="--")
+                  p
+                </sageplot>
+              </image>  </li>
+              <li> <p> placeholder for graph of <m>\sin \frac{1}{2}x</m>  </p>  </li>
+            
+              <li> <p> placeholder for graph of <m>\sin (x-2)</m>  </p>  </li>
+              <li> <p> placeholder for graph of <m>2 \sin x</m>  </p>  </li>
+            
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           update once the order is fixed!
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <remark xml:id="rem-find-period">
+      <statement>
+
+        <p>
+          When written as a function <m>f(x)=\sin Bx</m>, the <term>period</term> is <m>\dfrac{2\pi}{|B|}</m>.
+        </p>
+      </statement>
+    </remark>
+
+    <activity xml:id="activity-sine-phase-shift-1">
+      <introduction>
+        <p> Consider <m>k(x)=\sin \left(x+\dfrac{\pi}{2}\right)</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>What type of transformation is happening in <m>k(x)</m> compared the parent function <m>f(x)=\sin x</m>?
+            <ol marker= "A.">  
+              <li> <p> A vertical stretch/compression. </p>  </li>
+              <li> <p> A horizontal stretch/compression.  </p>  </li>
+              <li> <p> A vertical shift. </p>  </li>
+              <li> <p> A horizontal shift.  </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>Which of the following graphs is likely to be <m>k(x)=\sin \left(x+\dfrac{\pi}{2}\right)</m>. (To help compare the functions, <m>f(x)=\sin x</m> is shown as a dashed line on each graph.) 
+            <ol marker= "A.">  
+              <!-- <sidebyside width="50%"> -->
+                <li>             <image>
+                <sageplot>
+                  f(x) = sin(x+pi/2)
+                  p=plot(f, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, -.5, 7), ymin=-1.5, ymax=1.5, color='blue', thickness=1, detect_poles=True,linestyle="--")
+                  p
+                </sageplot>
+              </image>  </li>
+              <li> <p> placeholder for graph of <m>\sin \frac{1}{2}x</m>  </p>  </li>
+            
+              <li> <p> placeholder for graph of <m>\sin (x-2)</m>  </p>  </li>
+              <li> <p> placeholder for graph of <m>2 \sin x</m>  </p>  </li>
+            
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           update once the order is fixed!
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <definition xml:id="def-phase-shift">
+      <statement>
+        <p>
+          The <term>phase shift</term> is the amount which a sine function is shifted horizontally from the standard sine curve.
+        </p>
+        <p>
+          The <term>phase shift</term> for <m>f(x)=\sin (x+C)</m> is <m>C</m> units to the left. The <term>phase shift</term> for <m>f(x)=\sin (x-C)</m> is <m>C</m> units to the right. 
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-cosine-table">
+      <introduction>
+        <p> Let's now turn our focus to the cosine function, <m>f(x)=\cos x</m>.
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Fill in the following table for <m>f(x)=\cos x</m>. Find the exact values, then approximate each to two decimal places. (Notice that the values in the table are all the standard angles found on the unit circle!) </p>
+
+            <p>
+            NOTE FROM ABBY: This table is also terrible looking, same as with the first activity. Update both the same way!
+            
+            <sidebyside>
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)</m> (exact)</cell>
+                <cell><m>f(x)</m> (approximate)</cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell></cell>
+                <cell></cell>              
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{\pi}{2}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{2\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{3\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{5\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\pi</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+            </tabular>
+            <tabular halign="center">
+              <row header="yes" bottom="minor" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)</m> (exact)</cell>
+                <cell><m>f(x)</m> (approximate)</cell>
+              </row>
+              <row>
+                <cell><m>\dfrac{7\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{5\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{4\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{3\pi}{2}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{5\pi}{3}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{7\pi}{4}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>\dfrac{11\pi}{6}</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+              <row>
+                <cell><m>2\pi</m></cell>
+                <cell> </cell>
+                <cell> </cell>               
+              </row>
+            </tabular>
+          </sidebyside>
+          </p>
+        </statement>
+        <answer>
+          <p>
+           Answers coming once the table is formatted and looks better!
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Plot these values on a graph. 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            insert pic
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is the range of the function? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>[-1,1]</m> 
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+   <observation>
+    <statement>
+    <p>
+      The cosine function, <m>f(x)=\cos x</m>, is equivalent to the sine function shifted to the left <m>\dfrac{\pi}{2}</m> units, <m>g(x)=\sin\left(x+ \dfrac{\pi}{2}\right)</m>.
+    </p>
+    <p>
+      Because of this, all of the methods we used to find amplitude, period, and phase shift for the sine function apply to the cosine function as well.
+    </p>
+  </statement>
+   </observation> 
+
+
+
 
 
     </subsection>
