@@ -95,33 +95,54 @@
             </p>
         </introduction>
         <task>
-            <p>
-                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}</m> converge?
-            </p>
+            <statement>
+                <p>
+                    Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}</m> converge?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    No.
+                </p>
+            </answer>
         </task>
         <task>
-            <p>
-                Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
-                <ol marker="A." cols="2">
-                    <li><m>\displaystyle 1+\frac{n+1}{n^2}</m>.</li>      <!-- bad subscript usage-->              
-                    <li><m>\displaystyle \frac{(n^2+1)(n+1)}{(n+2)n^2}</m>.</li><!-- freshman dream thm-->
-                    <li><m>\displaystyle \frac{(n+1)}{(n+2)n^2}</m>.</li><!-- naive cancel-->
-                    <li><m>\displaystyle \frac{(n+1)^3}{(n+2)n^2}</m>.</li>    <!-- ans -->                
-                    <li><m>\displaystyle \frac{(n+1)n^2}{n+2}</m>.</li> <!-- recip fail -->
-                </ol>                
-            </p>
+            <statement>
+                <p>
+                    Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
+                    <ol marker="A." cols="2">
+                        <li><m>\displaystyle 1+\frac{n+1}{n^2}</m>.</li>      <!-- bad subscript usage-->              
+                        <li><m>\displaystyle \frac{(n^2+1)(n+1)}{(n+2)n^2}</m>.</li><!-- freshman dream thm-->
+                        <li><m>\displaystyle \frac{(n+1)}{(n+2)n^2}</m>.</li><!-- naive cancel-->
+                        <li><m>\displaystyle \frac{(n+1)^3}{(n+2)n^2}</m>.</li>    <!-- ans -->                
+                        <li><m>\displaystyle \frac{(n+1)n^2}{n+2}</m>.</li> <!-- recip fail -->
+                    </ol>                
+                </p>
+            </statement>   
+            <answer>
+                <p>
+                    D. <m> \displaystyle \frac{(n+1)^3}{(n+2)n^2}</m>.
+                </p>
+            </answer>
         </task>
         <task>
-            <p>
-                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
-                <ol marker="A." cols="2">
-                    <li><m>1</m>.</li><!-- ans -->
-                    <li><m>0</m>.</li>
-                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
-                    <li><m>2</m>.</li>
-                    <li><m>\infty</m>.</li>
-                </ol>              
-            </p>
+            <statement>
+                <p>
+                    Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+                    <ol marker="A." cols="2">
+                        <li><m>1</m>.</li><!-- ans -->
+                        <li><m>0</m>.</li>
+                        <li><m>\displaystyle \frac{1}{2}</m>.</li>
+                        <li><m>2</m>.</li>
+                        <li><m>\infty</m>.</li>
+                    </ol>              
+                </p>
+            </statement>
+            <answer>
+                <p>
+                   A. <m>1</m>. 
+                </p>
+            </answer>
         </task>
         
         
