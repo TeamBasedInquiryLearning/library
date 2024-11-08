@@ -25,9 +25,11 @@
 
                 <figure>
                     <image width="50%" xml:id="LT5-infinity-intuition1-img">
-                        <latex-image>
-                        <xi:include href="./tikz/LT5-infinity-intuition1.tex" parse="text"/>
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f = x^3
+                            plot(f,(x,-4,4),ymin=-60,ymax=60,gridlines=False, axes_labels=('$x$','$f(x)$'),thickness=2, aspect_ratio=0.05)
+                        </sageplot>
                     </image>
                     <caption> The graph of <m>x^3</m>.</caption>
                 </figure>
@@ -86,9 +88,13 @@
 
                 <figure>
                     <image width="50%" xml:id="LT5-infinity-intuition2-img">
-                        <latex-image>
-                        <xi:include href="./tikz/LT5-infinity-intuition2.tex" parse="text"/>
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f = 1/x^3
+                            p1 = plot(f,(x,-2,-0.05),ymin=-60,ymax=60,gridlines=False, axes_labels=('$x$','$f(x)$'),thickness=2, aspect_ratio=0.025)
+                            p2 = plot(f,(x,0.05,2),ymin=-60,ymax=60,gridlines=False, axes_labels=('$x$','$f(x)$'),thickness=2, aspect_ratio=0.025)
+                            p1+p2
+                        </sageplot>
                     </image>
                     <caption> The graph of <m>1/x^3</m>.</caption>
                 </figure>
@@ -172,61 +178,37 @@
                 <sidebyside>
                     <figure>
                         <image xml:id="graph-horizontal-asymptotes-1">
-                            <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[samples=500, domain=-5:5, blue, ultra thick] {e^x};
-                        \end{axis}
-                        \end{tikzpicture}
-                            </latex-image>
+                            <sageplot>
+                                x = var('x')
+                                f = exp(x)
+                                p1 = plot(f, (x,-4,4),gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.1)
+                                p1
+                            </sageplot>
                         </image>
                         <caption>A</caption>
                     </figure>
 
                     <figure>
                         <image xml:id="graph-horizontal-asymptotes-2">
-                            <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[samples=500, domain=0.01:5, blue, ultra thick] {ln(x)};
-                        \end{axis}
-                        \end{tikzpicture}
-                            </latex-image>
+                            <sageplot>
+                                x = var('x')
+                                f = ln(x)
+                                p1 = plot(f, (x,0.05,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=1)
+                                p1
+                            </sageplot>
                         </image>
                         <caption>B</caption>
                     </figure>
 
                     <figure>
                         <image xml:id="graph-horizontal-asymptotes-3">
-                            <latex-image>
-                  \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[domain=-5:-0.1, blue, ultra thick] {-1/x};
-                           \addplot[domain=0.1:5, blue, ultra thick] {-1/x};
-                        \end{axis}
-                        \end{tikzpicture}
-                            </latex-image>
+                            <sageplot>
+                                x = var('x')
+                                f = -1/x
+                                p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
+                                p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
+                                p1+p2
+                            </sageplot>
                         </image>
                         <caption>C</caption>
                     </figure>
@@ -235,63 +217,39 @@
                 <sidebyside>
                     <figure>
                         <image xml:id="graph-horizontal-asymptotes-4">
-                            <latex-image>
-                \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[domain=-5:0.9, blue, ultra thick] { (5*x+1)/(x-1)};
-                        \addplot[domain=1.1:5, blue, ultra thick] { (5*x+1)/(x-1)};
-                        \end{axis}
-                        \end{tikzpicture}
-                            </latex-image>
+                            <sageplot>
+                                x = var('x')
+                                f = (.5*x+1)/(x-1)
+                                p1 = plot(f,(x,-5,0.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
+                                p2 = plot(f,(x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
+                                p1+p2
+                            </sageplot>
                         </image>
                         <caption>D</caption>
                     </figure>
 
                     <figure>
                         <image xml:id="graph-horizontal-asymptotes-5">
-                            <latex-image>
-                       \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[domain=-2:-0.1, blue, ultra thick] { (e^x+1)/(e^x-1)};
-                        \addplot[domain=0.1:2, blue, ultra thick] { (e^x+1)/(e^x-1)};
-                        \end{axis}
-                        \end{tikzpicture}
-                            </latex-image>
+                            <sageplot>
+                                x = var('x')
+                                f = (exp(x)+1)/(exp(x)-1)
+                                p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                p1+p2
+                            </sageplot>
                         </image>
                         <caption>E</caption>
                     </figure>
 
                     <figure>
                         <image xml:id="graph-horizontal-asymptotes-6">
-                            <latex-image>
-                     \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[samples=500, domain=-5:0.9, blue, ultra thick] { (x^2+1)/(x-1)};
-                          \addplot[samples=500, domain=1.1:5, blue, ultra thick] { (x^2+1)/(x-1)};
-                        \end{axis}
-                        \end{tikzpicture}
-                            </latex-image>
+                            <sageplot>
+                                x = var('x')
+                                f = (x^2+1)/(x-1)
+                                p1 = plot(f, (x,-5,.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                p2 = plot(f, (x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                p1+p2
+                            </sageplot>
                         </image>
                         <caption>F</caption>
                     </figure>
@@ -545,22 +503,12 @@
 
                 <figure>
                     <image width="50%" xml:id="graph-limit-guess">
-                        <latex-image>
-                \begin{tikzpicture}
-\begin{axis}[
-		 axis lines=middle,
-    % 	 grid=major,
-    % 	 xmin=-3.14,
-    % 	 xmax=9.42,
-    	 ymin=-1.5,
-    	 ymax=1.5,
-    % 	 xtick={-3.14,0,...,9.42},
-    % 	 ytick={-1,-0.75,...,1},
-        ]
-   \addplot[samples=500,domain=-4*pi:4*pi, blue, thick]{sin(deg(x))};
-\end{axis}
-\end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f(x) = sin(x)
+                            p = plot(f, (x,-10,10), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=7)
+                            p
+                        </sageplot>
                     </image>
                     <caption> A mysterious periodic function.</caption>
                 </figure>
@@ -663,32 +611,14 @@
 
                 <figure>
                     <image width="50%" xml:id="graph-rational-function">
-                        <latex-image>
-\begin{tikzpicture}[scale=1]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=-10, xmax=10,
-    ymin=-5, ymax=8,
-    xtick={-10,-8,...,10},
-    ytick={-4,-2,...,10},
-  	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}},
-    ylabel=$y$,
-	xlabel=$x$,
-        ]
-    \addplot[domain=-10:-1.1, blue, ultra thick] {(2*x^2+8*x+6)/(x^2-2*x-3)};
-     \addplot[domain=-0.9:2.9, blue, ultra thick] {(2*x^2+8*x+6)/(x^2-2*x-3)};
-       \addplot[domain=3.1:10, blue, ultra thick] {(2*x^2+8*x+6)/(x^2-2*x-3)};
-    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
-   \draw[fill=white, draw=blue](axis cs:-1,-1) circle(1mm);
-                        <!-- \addplot [only marks, blue, mark=o] table {
--1	-1
-}; -->
-\end{axis}
-\end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f = 2*(x+3)*(x+1)/(x^2-2*x-3)
+                            p1 = plot(f, (x,-10,2.9), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+                            p2 = plot(f, (x,3.1, 10), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+                            c = circle((-1,-1), 0.2, fill=True, facecolor="white",thickness=1)
+                            p1+p2+c
+                        </sageplot>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>

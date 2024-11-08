@@ -60,9 +60,28 @@
           A function <m>f</m> defined on <m>-4 \lt x \lt 4</m> has the graph pictured below. Use the graph to answer each of the following questions.
         </p>
         <figure xml:id="figure-limits-different-kinds">
-          <image source="limits-different-kinds.png" width="50%">
-            <description>I need help with alt text for this that doesn't give the answers away.</description>
+          <image width="50%">
+            <sageplot>
+              x = var('x')
+              f = 2*x^2 + 16*x + 33
+              g = -x
+              h = x^2 + 0.5*x - 4
+              j = -2.5
+              k = sin(pi/(x-2))-3
+              p1 = plot(f,(x,-4,-3),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p2 = plot(g,(x,-3,-2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p3 = plot(h,(x,-2,1),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p4 = plot(j,(x,1,2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p5 = plot(k,(x,2.01,4),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              c1 = circle((-2,2),0.1,fill=True,facecolor='white',thickness=1)
+              c2 = circle((-2,-1),0.1,fill=True,facecolor='blue',thickness=1)
+              c3 = circle((-1,1),0.1,fill=True,facecolor='blue',thickness=1)
+              c4 = circle((-1,-3.5),0.1,fill=True,facecolor='white',thickness=1)
+              c5 = circle((3,-3),0.1,fill=True,facecolor='white',thickness=1)
+              p1+p2+p3+p4+p5+c1+c2+c3+c4+c5
+            </sageplot>
           </image>
+            <description>I need help with alt text for this that doesn't give the answers away.</description>
         </figure>
           </introduction>
         <task>
@@ -154,8 +173,26 @@
             questions below, consider the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>.
         </p>
         <figure xml:id="figure-continuous-graph2">
-          <image source="limits-different-kinds.png" width="50%">
-            <description>(for accessibility)</description>
+          <image width="50%">
+            <sageplot>
+              x = var('x')
+              f = 2*x^2 + 16*x + 33
+              g = -x
+              h = x^2 + 0.5*x - 4
+              j = -2.5
+              k = sin(pi/(x-2))-3
+              p1 = plot(f,(x,-4,-3),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p2 = plot(g,(x,-3,-2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p3 = plot(h,(x,-2,1),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p4 = plot(j,(x,1,2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              p5 = plot(k,(x,2.01,4),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+              c1 = circle((-2,2),0.1,fill=True,facecolor='white',thickness=1)
+              c2 = circle((-2,-1),0.1,fill=True,facecolor='blue',thickness=1)
+              c3 = circle((-1,1),0.1,fill=True,facecolor='blue',thickness=1)
+              c4 = circle((-1,-3.5),0.1,fill=True,facecolor='white',thickness=1)
+              c5 = circle((3,-3),0.1,fill=True,facecolor='white',thickness=1)
+              p1+p2+p3+p4+p5+c1+c2+c3+c4+c5
+            </sageplot>
           </image>
         </figure>
       </introduction>
@@ -236,46 +273,27 @@
         <p>
           Consider the function <m>f</m> whose graph is pictured below.
         </p>
-                    <figure>
-                <image width="50%" xml:id="graph-continuity-and-discontinuities">
-                          <latex-image>
-                  \begin{tikzpicture}[scale=1]
-\begin{axis}[  %human, 
-	axis lines=middle,
-    grid=major,
-    xmin=-2, xmax=8.5,
-    ymin=-3, ymax=3,
-    xtick={-2,-1,...,8},
-    ytick={-4,-3,...,4},
-  	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel=$y$,
-	xlabel=$x$,
-        ]
-    \addplot[domain=-2:1, blue, ultra thick] {(1/3)*(x)-1/3};
-    \addplot[domain=1:5, blue, ultra thick] {-0.5*x +0.5};
-    \addplot[domain=5:7, blue, ultra thick] {x-5};
-    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
-\addplot [only marks, blue] table {
-5 0 \\
-1 2 \\
-8 2 \\
-};
-
-    \addplot[only marks, color=blue, mark=*, fill=white] coordinates{(1,0) };
-    
-    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(5,-2) };
-    
-    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(7,2) };
-                              
-
-\end{axis}
-\end{tikzpicture}
-                               </latex-image>
-                    </image>
-                    <caption> The graph of <m>f(x)</m>.</caption>
-                </figure> 
+        <figure>
+          <image width="50%">
+            <sageplot>
+              x=var('x')
+              f = (1/3)*x-1/3
+              g= -0.5*x+0.5
+              h = x-5
+              p1 = plot(f,(x,-2,1), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
+              p2 = plot(g,(x,1,5), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
+              p3 = plot(h,(x,5,7), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
+              c1 = circle((1,0),0.1,fill=True,facecolor='white',thickness=1)
+              c2 = circle((1,2),0.1,fill=True,facecolor='blue',thickness=1)
+              c3 = circle((5,-2),0.1,fill=True,facecolor='white',thickness=1)
+              c4 = circle((5,0),0.1,fill=True,facecolor='blue', thickness=1)
+              c5 = circle((7,2),0.1,fill=True,facecolor='white',thickness=1)
+              c6 = circle((8,2),0.1,fill=True,facecolor='blue',thickness=1)
+              p1+p2+p3+c1+c2+c3+c4+c5+c6
+            </sageplot>
+          </image>
+          <caption> The graph of <m>f(x)</m>.</caption>
+        </figure> 
         <p>
           Give a list of <m>x</m>-values where <m>f(x)</m> is not continuous. Be prepared to defend your answer based on <xref ref="definition-continuity"/>.
         </p>
