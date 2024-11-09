@@ -26,19 +26,6 @@
       <task>
         <statement>
           <p>
-            Draw a diagram to represent the triangle. Be sure to label the sides with <m>a</m>, <m>b</m>, and <m>c</m> and angle <m>B</m> as <m>\theta</m>.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Students should draw a right triangle so that <m>C</m> is the right angle, <m>c</m> is the hypotenuse, and <m>B</m> is <m>\theta</m>.
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
             Let's begin with the Pythagorean Theorem, <m>a^2+b^2=c^2</m>. If we divide each term by <m>a^2</m>, what would the resulting equation be?
           </p>
         </statement>
@@ -149,22 +136,19 @@
     <activity xml:id="deriving-pythagorean-identity-3">
       <introduction>
         <p>
-          Consider the same triangle <m>ABC</m>, where <m>C</m> is the right angle and angle <m>B</m> is <m>\theta</m> like in <xref ref="deriving-pythagorean-identity-2"/>.
+         We can also derive identities from previous identities. Let's begin with <m>\sin^2\theta+\cos^2\theta=1</m>.
         </p>
       </introduction>
 
       <task>
         <statement>
           <p>
-            Beginning with the Pythagorean Theorem again <m> \left( a^2+b^2=c^2 \right) </m>, what would the resulting equation be if we  divide each term by <m>b^2</m>?
+            What do we get if we divide each term by <m>\sin^2\theta</m>?
           </p>
         </statement>
         <answer>
           <p>
-            <me>\frac{a^2}{b^2}+\frac{b^2}{b^2}=\frac{c^2}{b^2}</me>, which simplifies to
-            <me>
-              \frac{a^2}{b^2}+1=\frac{c^2}{b^2}
-            </me>
+            <m>1+\frac{\cos^2\theta}{\sin^2\theta}=\frac{1}{\sin^2\theta}</m>
           </p>
         </answer>
       </task>
@@ -172,68 +156,22 @@
       <task>
         <statement>
           <p>
-            How could we rewrite the equation we got in part (a) so that each term with a fraction can be represented as a fraction squared?
+            Rewrite each fractional term in the equation you got in part (a) as a single trigonometric function. 
           </p>
         </statement>
         <answer>
           <p>
-            <m> \left( \frac{a}{b} \right) ^2 + 1 =\left( \frac{c}{b} \right) ^2</m>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Let's now try and think of the relationships of the angle and sides (i.e., our trigonometric ratios). Replace <m>a</m>, <m>b</m>, and <m>c</m> in the equation we got in part (b) with the relationship each side has with <m>\theta</m> (i.e., opposite, adjacent, hypotenuse).
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Replace the <m>a</m>, <m>b</m>, and <m>c</m> in the equation <me> \left( \frac{a}{b} \right) ^2 + 1 = \left( \frac{c}{b} \right) ^2</me> will yield <me>\left( \frac{\text{adjacent}}{\text{opposite}} \right) ^2 + 1 = \left( \frac{\text{hypotenuse}}{\text{opposite}} \right) ^2</me> 
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Recall the following trigonometric functions:
-            <ul cols="2"> 
-              <li><m>\sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}
-              </m></li>
-              <li><m>
-                \csc\theta=\frac{\text{hypotenuse}}{\text{opposite}}
-              </m></li>
-              <li><m>
-                \cos\theta=\frac{\text{adjacent}}{\text{hypotenuse}}
-              </m></li>
-              <li><m>
-                \sec\theta=\frac{\text{hypotenuse}}{\text{adjacent}}
-              </m></li>
-              <li><m>
-                \tan\theta=\frac{\text{opposite}}{\text{adjacent}}
-              </m></li>
-              <li><m>
-                \cot\theta=\frac{\text{adjacent}}{\text{opposite}}
-              </m></li>
-            </ul>
-            Using these trigonometric ratios, how can we rewrite the equation in part (c)?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\cot^2\theta + 1 = \csc^2\theta</m>
+            <m>1+\cot^2\theta=\csc^2\theta</m>
           </p>
         </answer>
       </task>
     </activity>
 
     <remark>
-      In <xref ref="deriving-pythagorean-identity-3"/>, we derived the third Pythagorean Identity: <m>\csc^2\theta-\cot^2\theta=1</m>. Note that we can rewrite what we got in the previous activity <m> \left( \cot^2\theta + 1 = \csc^2\theta \right)</m> to get to this form. 
+      In <xref ref="deriving-pythagorean-identity-3"/>, we derived the third Pythagorean Identity: <m>\csc^2\theta-\cot^2\theta=1</m>. Note that we can rewrite what we got in the previous activity <m> \left( 1+ \cot^2\theta = \csc^2\theta \right)</m> to get to this form.
     </remark> 
 
-    <definition xml:id="def-pythagorean-identities">
+    <theorem xml:id="thm-pythagorean-identities">
       <statement>
         <p>
           The three <term>Pythagorean Identities</term> are:
@@ -259,7 +197,7 @@
           Note that each of these identities can be written in different forms, which are all equivalent to one another. For example, <m>\sin^2\theta + \cos^2\theta = 1</m> can be rewritten as <m>1 - \sin^2\theta = \cos^2\theta</m> or <m>1 - \cos^2\theta = \sin^2\theta</m>. You will want to become familiar with all these forms.
         </p>
       </statement>
-    </definition>
+    </theorem>
 
     <remark>
       Other identities and formulas (in addition to the Pythagorean Identities) can be used to solve various mathematical problems. The next few activities will lead us through an exploration of other types of identities and formulas.
@@ -514,7 +452,7 @@
       In <xref ref="derive-difference-formula-for-cosine"/>, we derived the difference formula for cosine. The development of the sum/difference formulas are similar for sine and cosine and same for <m>\tan(\alpha-\beta)</m> compared to <m>\tan(\alpha+\beta)</m>. 
     </remark>
 
-    <definition xml:id="def-sum-and-difference-formulas">
+    <theorem xml:id="thm-sum-and-difference-formulas">
       <statement>
         <p>
           The <term>Sum and Difference Formulas</term> in trigonometry are used to find the value of the trigonometric functions at specific angles where it is easier to express the angle as the sum or difference of unique angles such as <m> 0^\circ </m>, <m>30^\circ</m>, <m>45^\circ</m>, <m>60^\circ</m>, <m>90^\circ</m>, and <m>180^\circ</m>.
@@ -545,12 +483,12 @@
           </ul>
         </p>
       </statement>
-    </definition>
-
+    </theorem>
+    
     <activity xml:id="application-of-sum-formula">
       <introduction>
         <p>
-          Use the unit circle and <xref ref="def-sum-and-difference-formulas"/> to find the exact value of <m>\cos75</m><degree/>.
+          Use the unit circle and <xref ref="thm-sum-and-difference-formulas"/> to find the exact value of <m>\cos75</m><degree/>.
         </p>
       </introduction>
       <task>
@@ -582,7 +520,7 @@
       <task>
         <statement>
           <p>
-            Apply <xref ref="def-sum-and-difference-formulas"/> to rewrite <m>\cos75</m><degree/> with four trigonometric functions.
+            Apply <xref ref="thm-sum-and-difference-formulas"/> to rewrite <m>\cos75</m><degree/> with four trigonometric functions.
           </p>
         </statement>
         <answer>
@@ -622,7 +560,7 @@
     <activity xml:id="true-or-false">
       <introduction>
         <p>
-          Determine whether each statement is true or false by referring to <xref ref="def-sum-and-difference-formulas"/>.
+          Determine whether each statement is true or false by referring to <xref ref="thm-sum-and-difference-formulas"/>.
         </p>
       </introduction>
 
@@ -668,9 +606,9 @@
 
     <activity xml:id="sum-and-difference-formulas-practice">
 
-      <introduction>
+      <introduction> 
         <p>
-          Apply <xref ref="def-sum-and-difference-formulas"/> to find the exact value for each of the following trigonometric functions.
+          Apply <xref ref="thm-sum-and-difference-formulas"/> to find the exact value for each of the following trigonometric functions.
         </p>
       </introduction>
 
@@ -730,7 +668,7 @@
     <activity xml:id="sum-and-difference-reverse-practice">
       <introduction>
         <p>
-          Apply <xref ref="def-sum-and-difference-formulas"/> to find the exact value for each of the following trigonometric functions.
+          Apply <xref ref="thm-sum-and-difference-formulas"/> to find the exact value for each of the following trigonometric functions.
         </p>
       </introduction>
 
@@ -790,7 +728,7 @@
     <activity xml:id="derive-double-angle-identity">
       <introduction>
         <p>
-          Recall from <xref ref="def-sum-and-difference-formulas"/> the sum formulas for sine, cosine, and tangent.
+          Recall from <xref ref="thm-sum-and-difference-formulas"/> the sum formulas for sine, cosine, and tangent.
         </p>
       </introduction>
       <task>
@@ -842,7 +780,7 @@
       </task>
     </activity>
 
-    <definition xml:id="def-double-angle-identities">
+    <theorem xml:id="thm-double-angle-identities">
       <statement>
         <p>
           Double angle formulas are used to express the trigonometric ratios of double angles <m>(2\theta)</m> in terms of trigonometric ratios of single angle <m>(\theta)</m>.
@@ -862,7 +800,7 @@
           </ul>
         </p>
       </statement>
-    </definition>
+    </theorem>
 
     <activity xml:id="application-of-double-angle-identity">
       <introduction>
@@ -874,7 +812,7 @@
       <task>
         <statement>
           <p>
-            Use the Pythagorean Identities and <xref ref="def-double-angle-identities"/> to find <m>\sin2\alpha</m>.
+            Use the Pythagorean Identities and <xref ref="thm-double-angle-identities"/> to find <m>\sin2\alpha</m>.
           </p>
         </statement>
         <answer>
@@ -887,7 +825,7 @@
       <task>
         <statement>
           <p>
-            Use the Pythagorean Identities and <xref ref="def-double-angle-identities"/> to find <m>\cos2\alpha</m>.
+            Use the Pythagorean Identities and <xref ref="thm-double-angle-identities"/> to find <m>\cos2\alpha</m>.
           </p>
         </statement>
         <answer>
@@ -900,7 +838,7 @@
       <task>
         <statement>
           <p>
-            Use the Pythagorean Identities and <xref ref="def-double-angle-identities"/> to find <m>\tan2\alpha</m>.
+            Use the Pythagorean Identities and <xref ref="thm-double-angle-identities"/> to find <m>\tan2\alpha</m>.
           </p>
         </statement>
         <answer>
@@ -959,7 +897,7 @@
       </task>
     </activity>
 
-    <definition xml:id="def-power-reducing-formulas">
+    <theorem xml:id="thm-power-reducing-formulas">
       <p>The trigonometric power reduction formulas allow us to rewrite expressions involving trigonometric terms with trigonometric terms of smaller powers.
       </p>
       <p>
@@ -982,7 +920,7 @@
           </li>
         </ul>
       </p>
-    </definition>
+    </theorem>
 
     <activity xml:id="power-reducing-example">
 
@@ -1008,7 +946,7 @@
       <task>
         <statement>
           <p>
-            Rewrite <m>\sin^2\beta</m> using <xref ref="def-power-reducing-formulas"/>.
+            Rewrite <m>\sin^2\beta</m> using <xref ref="thm-power-reducing-formulas"/>.
           </p>
         </statement>
         <answer>
@@ -1034,7 +972,7 @@
       <task>
         <statement>
           <p>
-            Notice that you still have a cosine function being squared in your equation in part (c). Substitute the <m>\cos^2\beta</m> using the power reduction formula in <xref ref="def-power-reducing-formulas"/> and then simplify
+            Notice that you still have a cosine function being squared in your equation in part (c). Substitute the <m>\cos^2\beta</m> using the power reduction formula in <xref ref="thm-power-reducing-formulas"/> and then simplify
           </p>
         </statement>
         <answer>
@@ -1096,35 +1034,39 @@
       The derivation for <m>\cos\left(\frac{\theta}{2}\right)</m> and <m>\tan\left(\frac{\theta}{2}\right)</m> is similar to that in <xref ref="deriving-half-angle-formulas"/> when starting with the power-reduction formulas for each trigonometric function.
     </remark>
 
-    <definition xml:id="def-half-angle-formulas">
+    <theorem xml:id="thm-half-angle-formulas">
       <statement>
         <p>
           The <term>Half Angle Formulas</term> are:
           <ul>
             <li>
               <p>
-                <m>\sin\frac{\alpha}{2}=\pm\sqrt{\frac{1-\cos\alpha}{2}}</m>
+                <m>\sin\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{2}}</m>
               </p>
             </li>
             <li>
               <p>
-                <m>\cos\frac{\alpha}{2}=\pm\sqrt{\frac{1+\cos\alpha}{2}}</m>
+                <m>\cos\frac{\theta}{2}=\pm\sqrt{\frac{1+\cos\theta}{2}}</m>
               </p>
             </li>
             <li>
               <p>
-                <m>\tan\frac{\alpha}{2}=\pm\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}=\frac{\sin\alpha}{1+\cos\alpha}=\frac{1-\cos\alpha}{\sin\alpha}</m>
+                <m>\tan\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m>
               </p>
             </li>
           </ul>
         </p>
+
+        <p>
+          Note that the <m>\pm</m> in the formulas above refers to the fact that sometimes it's negative and sometimes it's positive. The sign is dependent upon the location of <m>\theta</m>.
+        </p>
       </statement>
-    </definition>
+    </theorem>
 
     <activity xml:id="half-angle-example">
       <introduction>
         <p>
-          Find  <m>\sin15°</m> using a half-angle formula in <xref ref="def-half-angle-formulas"/>.
+          Find  <m>\sin15°</m> using a half-angle formula in <xref ref="thm-half-angle-formulas"/>.
         </p>
       </introduction>
 
