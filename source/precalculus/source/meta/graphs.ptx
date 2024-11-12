@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<appendix xml:id="graphs-of-common-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Graphs of Common Funtions</title>
+    <paragraphs>
+        <title>Polynomial Functions</title>
+            <figure>
+                <image>
+                    <sageplot>
+                        f=x
+                        plot(f,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[[-5..5],[-5..5]])
+                    </sageplot>
+                </image>
+                <caption>Graph of <m>y=x</m>.</caption>
+            </figure>
+    </paragraphs>
+
+</appendix>
