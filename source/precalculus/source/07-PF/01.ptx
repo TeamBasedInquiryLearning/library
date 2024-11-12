@@ -1096,7 +1096,7 @@ p
         <p>
           <image>
             <sageplot>
-            f(x) = 0.5*sin(2x+2*pi)
+            f(x) = 0.5*sin(2*x+2*pi)
             p=Graphics()
             p+=plot(f, (x, -pi/2, 7.85),color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
             g(x) = sin(x)
