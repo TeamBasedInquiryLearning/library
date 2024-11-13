@@ -116,7 +116,7 @@
         
           <ol marker="A." cols="1">
             <li><p> The minimum value appears to occur near <m> (0, 8) </m>. </p></li>
-            <li><p> The minimum value appears to occur near <m> (-\dfrac {1}{5}, 10) </m>. </p></li>
+            <li><p> The minimum value appears to occur near <m> \left(-\dfrac {1}{5}, 10\right) </m>. </p></li>
             <li><p> The minimum value appears to occur near <m> (2, -4) </m>. </p></li>
             <li><p> There is no minimum value of this function.</p></li>
         </ol>
@@ -134,7 +134,7 @@
         
           <ol marker="A." cols="1">
             <li><p> The maximum value appears to occur near <m> (-2, 44) </m>. </p></li>
-            <li><p> The maximum value appears to occur near <m> (-\dfrac {1}{5}, 10) </m>. </p></li>
+            <li><p> The maximum value appears to occur near <m> \left(-\dfrac {1}{5}, 10\right) </m>. </p></li>
             <li><p> The maximum value appears to occur near <m> (2, -4) </m>. </p></li>
             <li><p> There is no maximum value of this function.</p></li>
         </ol>
@@ -202,7 +202,7 @@
 
   <observation xml:id="standard-form-aos">
     <statement>
-      <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=\dfrac {-b}{2a}</m> and the vertex is at the point <m> (\dfrac{-b}{2a},f(\dfrac{-b}{2a}))</m>.
+      <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=\dfrac {-b}{2a}</m> and the vertex is at the point <m> \left(\dfrac{-b}{2a},f\left(\dfrac{-b}{2a}\right)\right)</m>.
       </p>
     </statement>
   </observation>
@@ -390,7 +390,7 @@
   
   <activity xml:id="PR1-activity-5">
     <introduction>
-      <p> A function <m>f(x)</m> has a maximum value at <m>7</m> and its axis of symmetry at <m>x=-2</m>.</p>
+      <p> A quadratic function <m>f(x)</m> has a maximum value of <m>7</m> and axis of symmetry at <m>x=-2</m>.</p>
       </introduction>
 
         <task>
@@ -417,7 +417,7 @@
              </statement>
              <answer>
               <p>
-                No. There are many possible graphs students could sketch (think vertical shift along the axis of symmetry).
+                No. There are many possible graphs students could sketch, but each would have a maximum point at <m>(-2,7)</m>. The graph could be transformed by horizontal stretches or compressions.
               </p>
              </answer>
         </task> 
@@ -503,8 +503,85 @@
 </activity>
     </subsection> 
 
+    <activity xml:id="PR1-fluency">
+      <introduction>
+      <p>
+        Answer the following for each quadratic function below.
+        <ol>
+          <li><p> Determine if the parabola opens upwards or downwards.   </p></li>
+          <li><p> Determine the coordinates of the vertex of the parabola. Is this point a maximum or a minimum of the quadratic function?   </p></li>
+          <li><p> Determine the axis of symmetry for the parabola.  </p></li>
+          <li><p> Sketch the quadratic function. Be sure to include the vertex along with at least two points on each side of the vertex.   </p></li>
+        </ol>
+      </p>
+      </introduction>
+     
+      <task> 
+        <statement>
+          <p> <m>f(x)=x^2+2x-3</m></p>
+        </statement>
+        <answer>
+          <p>
+            <ol>
+              <li> <p> upwards   </p> </li>
+              <li> <p> <m>(-1,-4)</m>; minimum   </p> </li>
+              <li> <p> <m>x=-1</m>   </p> </li>
+              <li> <p> (placeholder for graph)   </p> </li>
+            </ol>
+          </p>
+        </answer>
+        </task>
+     
+      <task> 
+        <statement>
+          <p> <m>f(x)=-5(x-3)^2+20</m></p>
+        </statement>
+        <answer>
+          <p>
+            <ol>
+              <li> <p> downwards   </p> </li>
+              <li> <p> <m>(3,20)</m>; maximum   </p> </li>
+              <li> <p> <m>x=3</m>   </p> </li>
+              <li> <p> (placeholder for graph)   </p> </li>
+            </ol>
+          </p>
+        </answer>
+        </task>
+
+        <task> 
+          <statement>
+            <p> <m>f(x)=5x^2+30x+40</m></p>
+          </statement>
+          <answer>
+            <p>
+              <ol>
+                <li> <p> upwards   </p> </li>
+                <li> <p> <m>(-3,-5)</m>; minimum   </p> </li>
+                <li> <p> <m>x=-3</m>   </p> </li>
+                <li> <p> (placeholder for graph)   </p> </li>
+              </ol>
+            </p>
+          </answer>
+          </task>
+
+          <task> 
+            <statement>
+              <p> <m>f(x)=2(x+4)^2-3</m></p>
+            </statement>
+            <answer>
+              <p>
+                <ol>
+                  <li> <p> upwards   </p> </li>
+                  <li> <p> <m>(-4,-3)</m>; minimum   </p> </li>
+                  <li> <p> <m>x=-4</m>   </p> </li>
+                  <li> <p> (placeholder for graph)   </p> </li>
+                </ol>
+              </p>
+            </answer>
+            </task>
 
 
+    </activity>
 <exercises>
   <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR1/"/>. </p> 
 </exercises>

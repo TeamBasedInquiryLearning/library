@@ -1,4 +1,0 @@
-# Replace the contents of `codechat_config.yaml` with this file to edit Calculus
-output_path: output/cal-web-instructor
-args: "{sys_executable} -m pretext build cal-web-instructor --xmlid {xml_id} --no-knowls"
-project_type: PreTeXt

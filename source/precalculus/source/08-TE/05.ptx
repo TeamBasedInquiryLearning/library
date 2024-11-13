@@ -12,6 +12,451 @@
     <subsection>
     <title>Activities</title>
 
+    <remark>
+      <p>
+      Trigonometry is the branch of mathematics that focuses on the relationships between the angles and sides of triangles. It has a wide range of applications across various fields, including science, engineering, architecture, and more. In this section, we will look at some common ways trigonometry is used.
+      </p>
+    </remark>
+
+    <activity xml:id="right-triangles-1">
+      <introduction>
+        <p>
+          A pilot signals to an air traffic controller that she wants to land. She wants to know what angle of fall to take when she is currently at <m>40{,}000</m> feet. Her plane is <m>750{,}000</m> feet from the runway, as the air traffic controller can see on the radar.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Draw a diagram to represent this situation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students should draw a right triangle where the height is <m>40{,}000</m> and the base is <m>750{,}000</m>.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            The pilot wants to know what angle of descent to take in order to reach the runway. Where is this angle located in your diagram?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students may notice that the angle they are looking for is not inside the triangle and the line of sight of the pilot is looking down at the ground.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Draw a line that represents the line of sight of the pilot. What do you notice about this line and the base of your triangle?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The pilot's line of sight is parallel to the base of the triangle. 
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            If we know that the pilot's line of sight is parallel to the base of the triangle you created in part (a), then the hypotenuse of the triangle could also be considered a transversal that cuts the two parallel lines.  What angle of the triangle is congruent to the "angle of descent" the pilot wants to take in order to descend the plane <m>750{,}000</m> feet from the runway?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The "angle of descent" is congruent to the same angle that is created with the base of the triangle (not the right angle). 
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now that we know which angle is congruent to the "angle of descent" the pilot needs, which of the <m>6</m> trig functions could we use to find the angle at which the pilot should descend?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            If students label the triangle correctly, they should see that they can now use <m>\tan^{-1}</m> to find the measure of the angle because they have <m>40{,}000</m> as the opposite side and <m>750{,}000</m> as the adjacent side.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Find the measure of the angle the pilot needs to make her initial descent.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Approximately <m>3.05</m><degree/>.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+      Notice that <xref ref="right-triangles-1"/>, the angle that we needed to find was an angle that was not inside the right triangle. In these cases, it would be helpful to use prior knowledge of parallel lines and angle relationships to determine which other angle is congruent to that given angle.
+      </p>
+    </remark>
+    
+    <definition xml:id="def-angle-of-depression-and-elevation">
+      <statement>
+        <p>
+          Many applications of trigonometry will include the angle of elevation and the angle of depression which are formed by two parallel lines cut by a transversal. 
+          <ul>
+            <li>
+              <p>
+                An <term>angle of elevation</term> is the angle formed by a horizontal line and a line of sight to a point above the line.
+              </p>
+            </li>
+            <li>
+              <p>
+                An <term>angle of depression</term> is the angle formed by a horizontal line and a line of sight to a point below the line.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p> 
+          <figure xml:id="angle-of-elevation-and-depression">
+            <image source="Images/depression-elevation-angle.jpg"/>
+            <caption> The angle of elevation and the angle of depression are congruent.</caption>
+          </figure>
+        </p>
+        <p>
+          Notice that because both the angle of elevation and the angle of depression are formed by horizontal lines that are parallel, the angle of elevation is congruent to the angle of depression (by the alternate interior angles theorem).
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="right-triangles-2">
+      <introduction>
+        <p>
+          An observer is standing <m>67</m> meters away from the Seattle Space Needle.
+        </p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>
+            Draw a diagram to represent this situation.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students should draw a right triangle so that the base of the triangle is <m>67</m> meters, as it represents the distance the observer is from the Space Needle.
+          </p>
+        </answer>
+      </task>
+        
+        <task>
+        <statement>
+          <p>
+            If the angle of elevation from where the observers stands to the top of the Space Needle is <m>70</m><degree/>, which trig function could you use to find the height of the Space Needle?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The tangent function would be the best to use because the opposite of the given angle (angle of elevation) is the height of the Space Needle and the distance from the Space Needle to the observer would be the adjacent side.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How tall is the Space Needle (to the nearest meter)?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Approximately <m>184</m> meters.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="right-triangles-practice">
+      <introduction>
+        <p>
+          Use <xref ref="def-angle-of-depression-and-elevation"/> and your knowledge of right triangles to solve each of the following. It might be helpful to draw a diagram to represent the situation before solving.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Sarah's kite is flying above a field at the end of <m>65</m> meters of string. If the angle of elevation to the kite measures <m>70</m>, how high is the kite above Sarah's head?  
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>61</m> meters
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Standing on a cliff <m>380</m> meters above the sea, Sean sees an approaching ship and measures its angle of depression, obtaining <m>9</m> degrees. How far from shore is the ship (to the nearest meter)? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2{,}399</m> meters
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            A <m>14</m>-foot ladder is used to scale a <m>13</m>-foot wall. At what angle of elevation (to the nearest degree) must the ladder be situated in order to reach the top of the wall? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>68</m><degree/>
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+        All applications we have done so far have involved right triangles. Let's now look at some examples of non-right triangle applications.
+      </p>
+    </remark>
+
+    <activity xml:id="law-of-sines-example">
+      <introduction>
+        <p>
+          Airplane A is flying directly towards the airport which is <m>20</m> miles away. The pilot notices Airplane B <m>45</m> degrees to her right. Airplane B is also flying directly towards the airport. The pilot of Airplane B calculates that Airplane A is <m>50</m> degrees to his left.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Draw a diagram to represent this situation.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Based on the information given and your diagram, how far is Airplane B from the airport (to the nearest tenth of a mile)?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>18.5</m> miles
+          </p>
+        </answer>
+      </task>
+    </activity>
+    
+    <activity xml:id="law-of-cosines-and-sines-example">
+      <introduction>
+        <p>
+          Carlos, Jean, and Travis are camping in their tents. The distance between Carlos and Jean is <m>153</m> feet, the distance between Carlos and Travis is <m>201</m> feet, and the distance between Jean and Travis is <m>175</m> feet.
+        </p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>
+            Draw a diagram to represent this situation.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            It might be helpful to label your triangle in terms of A, B, and C for the angles and a, b, and c for the sides of the triangle.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            In their diagram, students should see that this is a non-right triangle with all three sides given.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Refer back to the previous section. Which trigonometric law (the Law of Sines or the Law of Cosines) would be the best one to use if we wanted to find the angle at which Carlos is from his friends?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Because we are given all sides of this non-right triangle, the best trigonometric law to use would be the Law of Cosines.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Find the angle at which Carlos is located from his friends to the nearest degree.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>57</m><degree/>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now that we know the angle at which Carlos is located from Jean and Travis, determine the angle (to the nearest degree) at which Travis is located from his friends by using the Law of Sines.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>47</m><degree/>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Find the remaining angle left of the triangle.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>76</m><degree/>
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+        Trigonometric functions can model relationships between different quantities that follow a periodic nature: height over time, distance over time, temperature over time and so on. Scientists observe this back-and-forth movement and collect data so they can model them using an equation or a graph. They then use this information to make predictions for the future.
+      </p>
+    </remark>
+
+    <activity xml:id="periodic-example-1">
+      <introduction>
+        <p>
+          The depth of the water in meters at a certain pier varies with the tide and is modeled by the equation <m>d(t)=2+\frac{1}{2}\sin{\frac{\pi}{6}}t</m> where <m>t</m> is the number of hours after <m>10</m> a.m.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            How deep will the water be at high tide?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the maximum value <m>d(t)</m> is <m>2+ \frac{1}{2}</m>, or <m>2.5</m> meters deep at high tide.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How deep will it be at low tide?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the minimum value <m>d(t)</m> is <m>2- \frac{1}{2}</m>, or <m>1.5</m> meters deep at low tide.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How many hours are there between two successive high tides?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            This is really asking for the period. The period of a sine function is <m>\frac{2pi}{b}</m>. In the equation given, the <m>b</m> value is <m>\frac{pi}{6}</m>. Therefore, the period is <m>\frac{2pi}{\frac{pi}{6}}</m>, which is equal to <m>12</m>. So, the time between successive high tides is <m>12</m> hours. 
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            How many of these tide cycles are there in a <m>24</m> hour day?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            From part (c), we know the period is <m>12</m> hours. So, that means one cycle is <m>12</m> hours, so there are <m>2</m> cycles in a <m>24</m>-hour day.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="periodic-example-2">
+      <introduction>
+        <p>
+          A circular Ferris wheel is <m>120</m> meters in diameter and contains several carriages. Jesus and Allison enter a carriage at the bottom of the wheel and get off <m>24</m> minutes later after having gone around <m>8</m> times. When a carriage is at the bottom of the wheel, it is <m>1</m> meter off the ground.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            What is the maximum and minimum height of Jesus and Allison's carriage?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Because the diameter of the Ferris wheel is <m>120</m> meters and that the carriage is at its lowest height off the ground at the bottom of the wheel (<m>1</m> meter), the minimum height is <m>1</m> and the maximum height is <m>1+120 = 121</m> meters.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is the period of the function <m>h(t)</m>, the height of the carriage <m>t</m> minutes after it has started moving?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The period is the amount of time it takes to complete one revolution (or one cycle around the Ferris wheel). We know that it takes <m>24</m> minutes to go around <m>8</m> times, so it must take <m>3</m> minutes to go around once.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Which trigonometric function would be the best to use to model this situation?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The cosine function would be the best to use because when people get on a Ferris wheel, they are starting at the minimum of a curve and then does a complete revolution when they ride the Ferris wheel. Because it starts at a minimum, it is really an upside down cosine graph (because the parent function starts at a maximum).
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+
     </subsection>
 
     <exercises>

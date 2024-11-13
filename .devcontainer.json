@@ -26,8 +26,8 @@
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
-  // Respect the project's designated dependencies
-  "postCreateCommand": "pip install -r requirements.txt && git config core.hooksPath .githooks",
+  // Respect the project's designated dependencies, and create codechat config file
+  "postCreateCommand": "pip install -r requirements.txt && git config core.hooksPath .githooks && touch codechat_config.yaml",
 
   // Port forwarding
   // ---------------
