@@ -208,16 +208,17 @@
                     f = (1/3)*x-1/3
                     g= -0.5*x+0.5
                     h = x-5
-                    p1 = plot(f,(x,-2,1), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
-                    p2 = plot(g,(x,1,5), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
-                    p3 = plot(h,(x,5,7), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
+                    b = polygon2d([[-3,-5],[-3,4],[9,4],[9,-5]], fill=False, thickness=0)
+                    p1 = plot(f,(x,-3,1), gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1, xmin=-3, xmax=9, ymin=-5, ymax=4)
+                    p2 = plot(g,(x,1,5), gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
+                    p3 = plot(h,(x,5,7), gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
                     c1 = circle((1,0),0.1,fill=True,facecolor='white',thickness=1)
                     c2 = circle((1,2),0.1,fill=True,facecolor='blue',thickness=1)
                     c3 = circle((5,-2),0.1,fill=True,facecolor='white',thickness=1)
                     c4 = circle((5,0),0.1,fill=True,facecolor='blue', thickness=1)
                     c5 = circle((7,2),0.1,fill=True,facecolor='white',thickness=1)
                     c6 = circle((8,2),0.1,fill=True,facecolor='blue',thickness=1)
-                    p1+p2+p3+c1+c2+c3+c4+c5+c6
+                    b+p1+p2+p3+c1+c2+c3+c4+c5+c6
                   </sageplot>
                 </image>
                     <caption> The graph of <m>f(x)</m>.</caption>
@@ -229,12 +230,13 @@
                     f = 0.5*x
                     g = 2^x
                     h = 0.5*x+3
-                    p1 = plot(f,(x,-3,0), ymin=-2,ymax=5, gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2,color='blue',aspect_ratio=1)
-                    p2 = plot(g,(x,0,2), ymin=-2,ymax=5, gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2,color='blue',aspect_ratio=1)
-                    p3 = plot(h,(x,2,4), ymin=-2,ymax=5, gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2,color='blue',aspect_ratio=1)
+                    b = polygon2d([[-6,-3],[-6,6],[6,6],[6,-3]], fill=False, thickness=0)
+                    p1 = plot(f,(x,-6,0), gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2,color='blue',aspect_ratio=1, xmin=-6, xmax=6, ymin=-3, ymax=6)
+                    p2 = plot(g,(x,0,2), gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2,color='blue',aspect_ratio=1)
+                    p3 = plot(h,(x,2,6), gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2,color='blue',aspect_ratio=1)
                     c1 = circle((0,0),0.1, fill=True, facecolor='white', thickness=1)
                     c2 = circle((0,1),0.1, fill=True, facecolor='blue', thickness=1)
-                    p1+p2+p3+c1+c2
+                    b+p1+p2+p3+c1+c2
                   </sageplot>
                 </image>
                     <caption> The graph of <m>g(x)</m>.</caption>
