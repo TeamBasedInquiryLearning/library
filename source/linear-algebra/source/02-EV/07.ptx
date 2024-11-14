@@ -49,7 +49,7 @@
             <p>
                 In <xref ref="EV3"/>, we observed that if
                 <me>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</me>
-                is a homogenous vector equation, then:
+                is a homogeneous vector equation, then:
                 <ul>
                     <li>
                         <p>
@@ -70,7 +70,7 @@
             </p>
         </introduction>
             <p>
-                Based on this recollection, which of the following best describes the solution set to the homogenous equation?
+                Based on this recollection, which of the following best describes the solution set to the homogeneous equation?
                 <ol marker="A.">
                     <li>
                         <p>
@@ -290,7 +290,7 @@ solution space?
 To create a computer-animated film, an animator first models a scene
 as a subset of <m>\mathbb R^3</m>. Then to transform this three-dimensional
 visual data for display on a two-dimensional movie screen or television set,
-the computer could apply a linear tranformation that maps visual information
+the computer could apply a linear transformation that maps visual information
 at the point <m>(x,y,z)\in\mathbb R^3</m> onto the pixel located at
 <m>(x+y,y-z)\in\mathbb R^2</m>.
         </p>

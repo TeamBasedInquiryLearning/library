@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="SQ3" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
-  <title>Partial Sum Sequence (SQ3)</title>
+  <title>Partial Sums and Series (SQ3)</title>
     <objectives>
         <ul>
             <li>
@@ -66,7 +66,6 @@
                 <p>
 Given a sequence <m>\{a_n\}_{n=0}^\infty</m> define the <term><m>k^{\text{th}}</m> partial sum</term> for this sequence to be
 <me>A_k=\sum_{i=0}^k a_i=a_0+a_1+a_2+\cdots+a_k.</me> 
-Note that <m>\{A_n\}_{n=0}^\infty=A_0, A_1, A_2, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
                 </p>
                 <p>
 More generally, partial sums may be defined for any starting index. Given <m>\{a_n\}_{n=N}^\infty</m>, let
@@ -76,16 +75,16 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
         </definition>
         
         <activity xml:id="activity-SQ3geompartialsum">
-            <statement>
+            <introduction>
                 <p>
                      Let <m>a_n=\frac{2}{3^n}.</m> Find the following partial sums of the sequence <m>\{a_n\}_{n=0}^\infty</m>.
                 </p>        
-            </statement>
-            <task><m>A_0</m>.</task>
-            <task><m>A_1</m>.</task>
-            <task><m>A_2</m>.</task>
-            <task><m>A_3</m>.</task>
-            <task><m>A_{100}</m>.</task>
+            </introduction>
+            <task><p><m>A_0</m>.</p></task>
+            <task><p><m>A_1</m>.</p></task>
+            <task><p><m>A_2</m>.</p></task>
+            <task><p><m>A_3</m>.</p></task>
+            <task><p><m>A_{100}</m>.</p></task>
         </activity>
         
         <activity xml:id="activity-SQ3closedformmotivation">
@@ -251,7 +250,21 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
         <definition xml:id="definition-SQ3serieslimit">
             <statement>
                 <p>
-                    Given a sequence <m>a_n</m>, we define the limit of the series <me>\displaystyle\sum_{n=k}^\infty a_n:=\lim_{n\to \infty} A_n</me> where <m>A_n=\displaystyle \sum_{i=k}^n a_i</m>.  We call <m>\displaystyle\sum_{n=k}^\infty a_n</m> an <em>infinite series</em>.
+Given a sequence <m>\{a_n\}_{n=k}^\infty</m>, we define its <term>infinite series</term>
+(or just <term>series</term>) to be its sequence of its partial sums
+<me>\left\{A_n\right\}_{n=k}^\infty=\left\{\sum_{i=k}^n a_i\right\}_{n=k}^\infty
+=\left\{a_k,a_k+a_{k+1},a_k+a_{k+1}+a_{k+2},\dots\right\}</me>
+and often use the notation
+<me>\sum_{i=k}^\infty a_i = a_k+a_{k+1}+a_{k+2}+\dots</me>
+to represent it. We will also write <m>\sum a_i</m> for short when the starting index <m>n=k</m>
+is either known from context or irrelevant.
+                </p>
+                <p>
+When the series (the sequence of partial sums) converges to a limit, we say the series is <term>convergent</term> and
+this limit is the <term>value</term> of the series, and write:
+<me>\sum_{i=k}^\infty a_i = a_k+a_{k+1}+a_{k+2}+\dots =
+\lim_{n\to\infty} \sum_{i=k}^n a_i</me>.
+When the series (the sequence of partial sums) diverges, we say the series is <term>divergent</term>.
                 </p>
             </statement>
         </definition>
