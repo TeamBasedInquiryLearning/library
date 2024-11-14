@@ -138,7 +138,7 @@
                     <sageplot>
                         x = var('x')
                         f = -2*abs(x)+2
-                        p = plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'))
+                        p = plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'), aspect_ratio=.5)
                         p
                     </sageplot>
                 </image>
