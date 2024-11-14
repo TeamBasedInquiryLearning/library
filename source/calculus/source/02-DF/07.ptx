@@ -69,7 +69,7 @@
           <image width="70%">
             <sageplot>
               x = var('x')
-              p = parametric_plot((3^(2/3)*(cos(x))^3,3^(2/3)*(sin(x))^3), (x,0,2*pi),thickness=2, axes_labels=('$x$','$y$'))
+              p = parametric_plot((3*(cos(x))^3,3*(sin(x))^3), (x,0,2*pi),thickness=2, axes_labels=('$x$','$y$'))
               p
             </sageplot>
           </image>
