@@ -1,41 +1,59 @@
 class Generator(BaseGenerator):
   def data(self):
-    a=1
-    b = choice([2,3,4,5,6])
-    c=0
-    d=0
-    k=1
-
-    reflection = choice(["vertical", "horizontal"])
-    if reflection == "horizontal":
-      shift="vertical"
+    flip = choice(["horizontal", "vertical"])
+    if flip == "horizontal":
+      shift = choice(["north", "south"])
     else:
-      shift = choice(["vertical","horizontal"])
+      shift = choice(["north", "south", "east", "west"])
     
-    if reflection == "horizontal":
-      k = -1
-    if reflection == "vertical":
-      a=-1
-    if shift == "horizontal":
-      c = choice(range(1,5))*choice([-1,1])
-    if shift == "vertical":
-      d = choice(range(1,6))*choice([-1,1])
-    
-    f=a*b^(k*x-c)+d
+    b, s = sample([2,3,4,5,6], 2)
+
+    if flip == "horizontal":
+      if shift == "north":
+        f = b^(-x)+s
+        ftex = LatexExpr("\\left(\\frac{1}{") + \
+          latex(b) + LatexExpr("}\\right)^x +") + latex(s)
+        c = 0
+        d = s
+      else:
+        f = b^(-x)-s
+        ftex = LatexExpr("\\left(\\frac{1}{") + \
+          latex(b) + LatexExpr("}\\right)^x -") + latex(s)
+        c = 0
+        d = -s
+    else:
+      if shift == "north":
+        f = -b^x+s
+        c = 0
+        d = s
+      elif shift == "south":
+        f = -b^x-s
+        c = 0
+        d = -s
+      elif shift == "west":
+        f = -b^(x+s)
+        c = -s
+        d = 0
+      else:
+        f = -b^(x-s)
+        c = s
+        d = 0
+      ftex = latex(f)
 
     return {
       "f": f,
-      "range": f"(-\\infty,{d})" if reflection=="vertical" else f"({d},\\infty)",
+      "ftex": ftex,
+      "range": f"(-\\infty,{d})" if flip=="vertical" else f"({d},\\infty)",
       "asymptote": d,
       "hshift": c,
-      "flipped": reflection == "vertical",
-      "hflipped": reflection == "horizontal",
+      "vflipped": flip == "vertical",
+      "hflipped": flip == "horizontal",
     } 
 
   @provide_data
   def graphics(data):
-    ymin = data["asymptote"]-8 if data["flipped"] else min(data["asymptote"]-2, -1)
-    ymax = max(data["asymptote"]+2,1) if data["flipped"] else data["asymptote"]+8
+    ymin = data["asymptote"]-8 if data["vflipped"] else min(data["asymptote"]-2, -1)
+    ymax = max(data["asymptote"]+2,1) if data["vflipped"] else data["asymptote"]+8
     p=plot( data["f"],(x,-8,8),ymin=ymin,ymax=ymax,thickness=3,gridlines=[[-8..8],[ymin..ymax]])
     p1 = (data["hshift"],data["f"].subs({x:data["hshift"]}))
     p2 = (data["hshift"]+1,data["f"].subs({x:data["hshift"]+1})) if not data["hflipped"] else (data["hshift"]-1,data["f"].subs({x:data["hshift"]-1}))
