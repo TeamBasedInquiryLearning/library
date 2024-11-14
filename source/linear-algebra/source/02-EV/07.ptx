@@ -156,6 +156,11 @@ used in this solution space?
     </p>
 </task>
 </activity>
+<answer>
+    <p>
+        D.
+    </p>
+</answer>
 
 <sage language="octave">
 </sage>
@@ -207,11 +212,6 @@ used in this solution space?
         The set spans the solution space.
       </p>
     </li>
-<li>
-    <p>
-        The set fails to span the solution space.
-    </p>
-  </li>
   <li>
     <p>
         The set is a basis for the solution space. 
@@ -221,13 +221,18 @@ used in this solution space?
     </p>
 </task>
 </activity>
+<answer>
+    <p>
+        D.
+    </p>
+</answer>
 
 <sage language="octave">
     <input>
     row1=[]
     row2=[]
     row3=[]
-    rref([row1;row2,row3])
+    rref([row1;row2;row3])
     </input>
 </sage>
 
@@ -242,18 +247,24 @@ used in this solution space?
   Thus if
   <me>
     \setBuilder{
-      a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right] +
-      b \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right]
+      a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
+      b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
+      c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
+      d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
     }{
-      a,b \in \IR
-    } = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right], 
-                     \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right] \right\}
+      a,b,c,d \in \IR
+    } = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
+    \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
+    \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
+    \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
   </me>
   is the solution space for a homogeneous system, then
   <me>
     \setList{
-      \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-      \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right]
+        \left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
+        \left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
+        \left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
+        \left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
     }
   </me>
   is a basis for the solution space.
@@ -299,6 +310,11 @@ solution space?
         </statement>
     </task>
 </activity>
+<answer>
+    <p>
+        A.
+    </p>
+</answer>
 <sage language="octave">
 </sage>
 
