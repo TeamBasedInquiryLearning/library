@@ -36,4 +36,39 @@
             </sbsgroup>
         </p>
     </paragraphs>
+    <paragraphs>
+        <title>Rational Functions</title>
+        <p>
+            <sbsgroup>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            plot(1/x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\dfrac{1}{x}</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        </sageplot></image>
+                        <caption><m>y=\dfrac{1}{x^2}</m></caption>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            plot(1/x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\dfrac{1}{x^3}</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            plot(1/x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        </sageplot></image>
+                        <caption><m>y=\dfrac{1}{x^4}</m></caption>
+                    </figure>
+                </sidebyside>
+            </sbsgroup>
+        </p>
+    </paragraphs>
 </appendix>
