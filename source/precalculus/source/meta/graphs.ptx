@@ -16,7 +16,7 @@
                         <image><sageplot>
                             plot(x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
                         </sageplot></image>
-                        <caption><m>y=x^2</m></caption>
+                        <caption>Graph of <m>y=x^2</m></caption>
                     </figure>
                 </sidebyside>
                 <sidebyside>
@@ -30,7 +30,7 @@
                         <image><sageplot>
                             plot(x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
                         </sageplot></image>
-                        <caption><m>y=x^4</m></caption>
+                        <caption>Graph of <m>y=x^4</m></caption>
                     </figure>
                 </sidebyside>
             </sbsgroup>
@@ -51,7 +51,7 @@
                         <image><sageplot>
                             plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
                         </sageplot></image>
-                        <caption><m>y=\dfrac{1}{x^2}</m></caption>
+                        <caption>Graph of <m>y=\dfrac{1}{x^2}</m></caption>
                     </figure>
                 </sidebyside>
                 <sidebyside>
@@ -65,7 +65,7 @@
                         <image><sageplot>
                             plot(1/x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
                         </sageplot></image>
-                        <caption><m>y=\dfrac{1}{x^4}</m></caption>
+                        <caption>Graph of <m>y=\dfrac{1}{x^4}</m></caption>
                     </figure>
                 </sidebyside>
             </sbsgroup>
