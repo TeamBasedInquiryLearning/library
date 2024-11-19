@@ -196,4 +196,71 @@
             </sbsgroup>
         </p>
     </paragraphs>
+    <paragraphs>
+        <title>Inverse Trigonometric Functions</title>
+        <p>
+            <sbsgroup>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p.SHOW_OPTIONS['xmin']=-pi
+                            p.SHOW_OPTIONS['xmax']=pi
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\sin^{-1}(x)</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(arccsc(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=plot(arccsc(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\csc^{-1}(x)</m></caption>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p.SHOW_OPTIONS['xmin']=-pi
+                            p.SHOW_OPTIONS['xmax']=pi
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\cos^{-1}(x)</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(arcsec(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=plot(arcsec(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\sec^{-1}(x)</m></caption>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
+                            p+=line([(-pi,-pi/2),(pi,-pi/2)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\tan^{-1}(x)</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(arccot(x),xmin=-pi,xmax=-0.001,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=plot(arccot(x),xmin=0.001,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                            p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\cot^{-1}(x)</m></caption>
+                    </figure>
+                </sidebyside>
+            </sbsgroup>
+        </p>
+    </paragraphs>
 </appendix>
