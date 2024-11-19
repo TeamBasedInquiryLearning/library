@@ -43,13 +43,19 @@
                 <sidebyside>
                     <figure>
                         <image><sageplot>
-                            plot(1/x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p=plot(1/x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                            p
                         </sageplot></image>
                         <caption>Graph of <m>y=\dfrac{1}{x}</m></caption>
                     </figure>
                     <figure>
                         <image><sageplot>
-                            plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p=plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                            p
                         </sageplot></image>
                         <caption>Graph of <m>y=\dfrac{1}{x^2}</m></caption>
                     </figure>
@@ -57,13 +63,19 @@
                 <sidebyside>
                     <figure>
                         <image><sageplot>
-                            plot(1/x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p=plot(1/x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                            p
                         </sageplot></image>
                         <caption>Graph of <m>y=\dfrac{1}{x^3}</m></caption>
                     </figure>
                     <figure>
                         <image><sageplot>
-                            plot(1/x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p=plot(1/x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                            p
                         </sageplot></image>
                         <caption>Graph of <m>y=\dfrac{1}{x^4}</m></caption>
                     </figure>
@@ -101,7 +113,9 @@
                 <sidebyside>
                     <figure>
                         <image><sageplot>
-                            plot(2^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p=plot(2^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                            p
                         </sageplot></image>
                         <caption>Graph of <m>y=b^x</m>, with <m>b=2</m></caption>
                     </figure>
@@ -118,7 +132,9 @@
                 <sidebyside>
                     <figure>
                         <image><sageplot>
-                            plot(e^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p=plot(e^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                            p
                         </sageplot></image>
                         <caption>Graph of <m>y=e^x</m></caption>
                     </figure>
