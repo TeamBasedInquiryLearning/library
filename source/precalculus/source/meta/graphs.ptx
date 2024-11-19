@@ -71,4 +71,27 @@
             </sbsgroup>
         </p>
     </paragraphs>
+    <paragraphs>
+        <title>Other Functions</title>
+        <p>
+            <sbsgroup>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            plot(abs(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        </sageplot></image>
+                        <caption>Graph of <m>y=|x|</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(sqrt(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                            p.SHOW_OPTIONS['xmin']=-5
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\sqrt{x}</m></caption>
+                    </figure>
+                </sidebyside>
+            </sbsgroup>
+        </p>
+    </paragraphs>
 </appendix>
