@@ -135,4 +135,65 @@
             </sbsgroup>
         </p>
     </paragraphs>
+    <paragraphs>
+        <title>Trigonometric Functions</title>
+        <p>
+            <sbsgroup>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            plot(sin(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\sin(x)</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(csc(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                            for i in [-2..2]:
+                                p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\csc x</m></caption>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            plot(cos(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\cos x</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(sec(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                            for i in [-2..1]:
+                                p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\sec x</m></caption>
+                    </figure>
+                </sidebyside>
+                <sidebyside>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(tan(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                            for i in [-2..1]:
+                                p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\tan x</m></caption>
+                    </figure>
+                    <figure>
+                        <image><sageplot>
+                            p=plot(cot(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                            for i in [-2..2]:
+                                p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+                            p
+                        </sageplot></image>
+                        <caption>Graph of <m>y=\cot x</m></caption>
+                    </figure>
+                </sidebyside>
+            </sbsgroup>
+        </p>
+    </paragraphs>
 </appendix>
