@@ -122,44 +122,30 @@
   <activity xml:id="chain-rule-practice-graphs">
    <introduction>  <p>Below you are given the graphs of two functions: <m>a(x)</m> and <m>b(x)</m>. Use the graphs to compute vaules of composite functions and of their derivatives, when possible (there are points where the derivative of these functions is not defined!). Notice that to compute the derivative at a point, you first want to find the derivative as a function of <m>x</m> and then plug in the input you want to study.  </p>
          <figure>
-                    <image xml:id="graph-chain-rule-practice">
-                    <latex-image>
-\begin{tikzpicture}
-\begin{axis}[
-    axis lines=middle,
-    xmin=-5,xmax=5,ymin=-3,ymax=3,
-%   xtick={-6.28, -4.71,...,6.28},
-%   ytick={-4, -3,...,4},
-%   xticklabels={$-2\pi$, $-3\pi/2$, $-\pi$ , $-\pi/2$, 0  , $\pi/2$, $\pi$, $3\pi/2$, $-2\pi$},
-    xlabel={$x$},
-    ylabel={$y$}
-    ]
-  \addplot[domain=-4:-0.1,blue, ultra thick,samples=500]  {-2} ;
-   \addplot[domain=0:4,blue,ultra thick, samples=500]  {2} ;
-   \addplot [only marks, blue] coordinates {(0,2)};
-\addplot [only marks, blue, mark=o] coordinates {(0,-2)};
- \addplot[mark=none, color=blue, nodes near coords={$a(x)$}] coordinates {(-4,2)};
-\end{axis}
-\end{tikzpicture}
-\begin{tikzpicture}
-\begin{axis}[
-    axis lines=middle,
-    xmin=-5,xmax=5,ymin=-3,ymax=3,
-%   xtick={-6.28, -4.71,...,6.28},
-%   ytick={-4, -3,...,4},
-%   xticklabels={$-2\pi$, $-3\pi/2$, $-\pi$ , $-\pi/2$, 0  , $\pi/2$, $\pi$, $3\pi/2$, $-2\pi$},
-    xlabel={$x$},
-    ylabel={$y$}
-    ]
-  \addplot[domain=-4:0,blue, ultra thick, samples=500]  {2+x} ;
-   \addplot[domain=0:4,blue, ultra thick, samples=500]  {2-x} ;
-    \addplot[mark=none, color=blue, nodes near coords={$b(x)$}] coordinates {(4,2)};
-\end{axis}
-\end{tikzpicture}
-    </latex-image>
-                    </image>
-                    <caption>The graphs of <m> a(x)</m> and <m> b(x)</m></caption>
-                </figure>
+            <sidebyside widths="50% 50%">
+                <image xml:id="graph-chain-rule-practice-img1">
+                    <sageplot>
+                        x = var('x')
+                        f = 2*sgn(x)
+                        p1 = plot(f,(x,-4,-0.05), gridlines=True, axes_labels=('$x$','$a(x)$'), thickness=2)
+                        p2 = plot(f,(x,.05,4), gridlines=True, axes_labels=('$x$','$a(x)$'), thickness=2)
+                        c1 = circle((0,-2),0.05,fill=True,facecolor='white',thickness=1)
+                        c2 = circle((0,2),0.05, fill=True,facecolor='blue', thickness=1)
+                        p1+p2+c1+c2
+                    </sageplot>
+                </image>
+                <image xml:id="graph-chain-rule-practice-img2">
+                    <sageplot>
+                        x = var('x')
+                        f = -2*abs(x)+2
+                        p = plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'), aspect_ratio=.5)
+                        p
+                    </sageplot>
+                </image>
+            </sidebyside>
+            
+            <caption>The graphs of <m> a(x)</m> and <m> b(x)</m></caption>
+        </figure>
   </introduction>
        <task>
         <p> Notice that the derivative of <m>a \circ b</m> is given by <m>a'(b(x)) \cdot b'(x)</m>, so the derivative of <m>a \circ b</m>  at <m> x= 4</m> is given by the quantity <m>a'(b(4)) \cdot b'(4) = a'(-2) \cdot b'(4)</m>, because <m>b(4)=-2</m>. Using the graphs to compute slopes, what is the derivative of <m>a \circ b</m> at <m> x= 4</m>? </p>
