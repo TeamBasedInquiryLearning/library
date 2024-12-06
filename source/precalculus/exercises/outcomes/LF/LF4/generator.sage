@@ -43,7 +43,7 @@ class Generator(BaseGenerator):
     slope = -1*line.lhs().coefficients(x)[1][0]/line.lhs().coefficients(y)[1][0]
     if orientation2=="parallel":
       slope2=slope
-    elif orientation2=="perpendicular
+    elif orientation2=="perpendicular":
       slope2=-1/slope
     new_line = y-point5[1]==(x-point5[0]).mul(slope2,hold=True)
 
