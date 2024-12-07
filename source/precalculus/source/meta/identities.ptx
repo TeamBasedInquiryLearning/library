@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <appendix xml:id="list-of-trig-identities" xmlns:xi="http://www.w3.org/2001/XInclude">
       <title>Trigonometric Identities</title>
-      <identity>
+      <identity xml:id="identity-pythagorean">
         <title>Pythagorean Identities</title>
         <statement>
             <ul>
@@ -12,7 +12,7 @@
         </statement>
       </identity>
 
-      <identity>
+      <identity xml:id="identity-sum-difference-formula">
         <title>Sum and Difference Formulas</title>
         <statement>
             <ul>
@@ -26,7 +26,7 @@
         </statement>
         </identity>
         
-        <identity>
+        <identity xml:id="identity-double-angle">
         <title>Double Angle Formulas</title>
         <statement>
             <ul>
@@ -37,7 +37,7 @@
         </statement>
         </identity>
         
-      <identity>
+      <identity xml:id="identity-power-reduction">
         <title>Power Reduction Formulas</title>
         <statement>
             <ul>
@@ -48,7 +48,7 @@
         </statement>
       </identity>
 
-      <identity>
+      <identity xml:id="identity-half-angle">
         <title>Half Angle Formulas</title>
         <statement>
             <ul>
