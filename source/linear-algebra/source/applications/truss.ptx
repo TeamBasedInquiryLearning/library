@@ -82,7 +82,7 @@ determine many of the forces at play.
     <remark>
         <statement>
             <p>
-For example, at the bottom left node there are 3 forces acting.
+For example, at the bottom left node, 3 forces are acting.
             </p>
         <figure>
             <image width="75%" xml:id="truss-image-simple-forces">
@@ -287,7 +287,7 @@ one variable may be used to represent each.
     <observation>
         <statement>
             <p>
-Since the angle of the normal forces for each anchor point are unknown,
+Since the angle of the normal forces for each anchor point is unknown,
 two variables may be used to represent each.
             </p>
         <figure>
@@ -388,7 +388,7 @@ x_7\begin{bmatrix}\unknown\\\unknown\end{bmatrix}=
         <statement>
             <p>
 The full augmented matrix given by the ten equations in this linear system
-is given below, where the eleven columns correspond to <m>x_1,\dots,x_7,y_1,y_2,z_1,z_2</m>,
+is shown below, where the eleven columns correspond to <m>x_1,\dots,x_7,y_1,y_2,z_1,z_2</m>,
 and the ten rows correspond to the horizontal and vertical components of the
 forces acting at <m>A,\dots,E</m>.
             </p>
@@ -455,7 +455,7 @@ y_2=z_2&amp;=5000
             </md>
             <p>
 In particular, the negative <m>x_1,x_2,x_5</m> represent tension (forces pointing into the nodes),
-and the postive <m>x_3,x_4</m> represent compression (forces pointing out of the nodes).
+and the positive <m>x_3,x_4</m> represent compression (forces pointing out of the nodes).
 The vertical normal forces <m>y_2+z_2</m> counteract the <m>10000</m> load.
             </p>
         <figure>
