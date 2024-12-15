@@ -1041,17 +1041,17 @@
           <ul>
             <li>
               <p>
-                <m>\sin\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{2}}</m>
+                <m>\sin\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{2}}</m> or <m>\sin\frac{\theta}{2}=-\sqrt{\frac{1-\cos\theta}{2}}</m> depending on which quadrant <m>\theta</m> is in.
               </p>
             </li>
             <li>
               <p>
-                <m>\cos\frac{\theta}{2}=\pm\sqrt{\frac{1+\cos\theta}{2}}</m>
+                <m>\cos\frac{\theta}{2}=\sqrt{\frac{1+\cos\theta}{2}}</m> or <m>\cos\frac{\theta}{2}=-\sqrt{\frac{1+\cos\theta}{2}}</m> depending on which quadrant <m>\theta</m> is in.
               </p>
             </li>
             <li>
               <p>
-                <m>\tan\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m>
+                <m>\tan\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m> or <m>\tan\frac{\theta}{2}=-\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m> depending on which quadrant <m>\theta</m> is in.
               </p>
             </li>
           </ul>
@@ -1073,6 +1073,19 @@
       <task>
         <statement>
           <p>
+            Which quadrant is the angle <m>15</m><degree/> in?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Quadrant I
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
             What angle is <m>15</m><degree/> half of?
           </p>
         </statement>
@@ -1086,12 +1099,25 @@
       <task>
         <statement>
           <p>
+            Which half angle formula should we use to determine <m>\sin15°</m>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Because the angle <m>15</m><degree/> lies in Quadrant I, we should use the formula: <m>\sin\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{2}}</m>. 
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
             Substitute <m>\theta</m> with <m>30</m><degree/> in the half-angle formula for sine.
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\pm\sqrt{\frac{1-\cos30}{2}}</m>
+            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{1-\cos30}{2}}</m>
           </p>
         </answer>
       </task>
@@ -1099,12 +1125,12 @@
       <task>
         <statement>
           <p>
-            Use the unit circle to find the exact value of <m>\cos30</m><degree/> and substitute that into the equation you got in part (b).
+            Use the unit circle to find the exact value of <m>\cos30</m><degree/> and substitute that into the equation you got in part (d).
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\pm\sqrt{\frac{1-\frac{\sqrt3}{2}}{2}}</m>
+            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{1-\frac{\sqrt3}{2}}{2}}</m>
           </p>
         </answer>
       </task>
@@ -1112,12 +1138,40 @@
       <task>
         <statement>
           <p>
-            Simplify your equation in part (c) to find the exact value of <m>\sin\left(\frac{30}{2}\right)</m>.
+            Simplify your equation in part (e) to find the exact value of <m>\sin\left(\frac{30}{2}\right)</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\pm\frac{\sqrt{2-\sqrt3}}{2}</m>
+            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{\frac{2-\sqrt{3}}{2}}{2}}</m>
+          </p>
+          <p>
+            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{2-\sqrt{3}}{4}}</m>
+          </p>
+          <p>
+            <m>\sin\left(\frac{30}{2}\right)=\frac{\sqrt{2-\sqrt{3}}}{2}</m> 
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <activity xml:id="half-angle-example-2">
+      <introduction>
+        <p>
+          Find  <m>\cos75°</m> using a half-angle formula in <xref ref="thm-half-angle-formulas"/>.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Which quadrant is the angle <m>75</m><degree/> in?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Quadrant II
           </p>
         </answer>
       </task>
@@ -1125,15 +1179,74 @@
       <task>
         <statement>
           <p>
-            Notice that there are two values for <m>\sin15</m><degree/> when using the half-angle formula. Which value should we use and why?
+            What angle is <m>75</m><degree/> half of?
           </p>
         </statement>
         <answer>
           <p>
-            Because <m>15</m><degree/> is in Quadrant I, we know that <m>\sin15</m><degree/> should be positive. So, we should use <m>\frac{\sqrt{2-\sqrt3}}{2}</m>.
+            <m>150</m><degree/>
           </p>
         </answer>
       </task>
+
+      <task>
+        <statement>
+          <p>
+            Which half angle formula should we use to determine <m>\cos75°</m>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Because the angle <m>75</m><degree/> lies in Quadrant II, we should use the formula: <m>\cos\frac{\theta}{2}=-\sqrt{\frac{1+\cos\theta}{2}}</m>. 
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Substitute <m>\theta</m> with <m>150</m><degree/> in the half-angle formula for cosine.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{1+\cos150}{2}}</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use the unit circle to find the exact value of <m>\cos150</m><degree/> and substitute that into the equation you got in part (d).
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{1+\frac{-\sqrt{3}}{2}}{2}}</m> 
+          </p> 
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Simplify your equation in part (e) to find the exact value of <m>\cos\left(\frac{150}{2}\right)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{\frac{2-\sqrt{3}}{2}}{2}}</m>
+          </p>
+          <p>
+            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{2-\sqrt{3}}{4}}</m>
+          </p>
+          <p>
+            <m>\cos\left(\frac{150}{2}\right)=-\frac{\sqrt{2-\sqrt{3}}}{2}</m> 
+          </p>
+        </answer>
+      </task>
+
     </activity>
     </subsection>
 
