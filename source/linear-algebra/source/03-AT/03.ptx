@@ -245,7 +245,6 @@ Which of these subspaces of <m>\IR^3</m> describes the set of all vectors that a
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation.
 The <term>image</term> of <m>T</m>
-(also known as the <term>column space</term> of <m>T</m>)
 is an important subspace of <m>W</m> defined by
 <me>
 \Im T = \left\{ \vec{w} \in W\ \big|\ \text{there is some }\vec v\in V \text{ with } T(\vec{v})=\vec{w}\right\}
