@@ -18,7 +18,6 @@ class Generator(BaseGenerator):
             bottom = bs[0] + randrange(1,6)
             shuffle(coeff)
             antidiff(x) = -1*(coeff[0]/coeff[1])/(x-bs[0])^(SR(p)/q)
-            #print(f"bottom={bottom}, bs[0]={bs[0]},p={p},q={q}")
             tasks.append({
                 "integrand": antidiff(x).diff(x),
                 "converges": True,
