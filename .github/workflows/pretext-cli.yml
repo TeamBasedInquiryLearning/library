@@ -26,14 +26,6 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            # - name: quick build instructor versions
-            #   id: quickbuild
-            #   if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch) && github.event_name != 'workflow_dispatch'
-            #   run: |
-            #     pretext build precalculus-web-instructor -q
-            #     pretext build calculus-web-instructor -q
-            #     pretext build linear-algebra-web-instructor -q
-
             - name: build all deploy targets
               # if: steps.quickbuild.outcome == 'skipped'
               run: pretext build --deploys
@@ -81,6 +73,37 @@ jobs:
             - name: Deploy to Github Pages
               id: deployment
               uses: actions/deploy-pages@v4
+
+    preview:
+        runs-on: ubuntu-latest
+        container: oscarlevin/pretext:full
+        if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
+
+        steps:
+            - name: Checkout source
+              uses: actions/checkout@v4
+
+            - name: install deps
+              run: pip install -r requirements.txt
+
+            - name: build previews of all changed files
+              run: python scripts/quickbuild_changes.py
+
+            - name: stage deployment
+              run: pretext deploy --stage-only
+
+            # - name: build and stage all banks
+            #   # if: steps.quickbuild.outcome == 'skipped'
+            #   run: |
+            #     python scripts/build_bank.py precalculus --full
+            #     python scripts/build_bank.py calculus --full
+            #     python scripts/build_bank.py linear-algebra --full
+
+            - name: Bundle output/stage as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: deploy
+                  path: output/stage
 
     deploy-cloudflare:
         runs-on: ubuntu-latest

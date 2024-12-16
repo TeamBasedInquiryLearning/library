@@ -25,6 +25,7 @@ for f in [f for f in changed_files if f.suffix == ".ptx"]:
         t = p.get_target(f"{book}-web-instructor")
         root = etree.parse(f).getroot()
         xml_id = root.get(r"{http://www.w3.org/XML/1998/namespace}id")
+        print(f"Building book `{book}` with ID `{xml_id}`")
         title_ele = root.find("title")
         if title_ele is None:
             if xml_id is None:
