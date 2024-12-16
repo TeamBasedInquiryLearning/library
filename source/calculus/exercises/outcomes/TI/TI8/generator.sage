@@ -7,31 +7,37 @@ class Generator(BaseGenerator):
        
         bs = sample([choice([-1,1])*n for n in range(2,10)],5)
 
+        coeff = [2,3,4,5,6,7,8]
 
-        case1 = 0
+        case1 = choice([0,1])
 
         # converges with infinite bound
         if case1 == 0:
             p = randrange(3,10)
-            q = randrange(2,p)
-            print(f"bottom={bottom}, bs[0]={bs[0]},p={p},q={q}")
+            q = randrange(3,10)
+            bottom = bs[0] + randrange(1,6)
+            shuffle(coeff)
+            antidiff(x) = -1*(coeff[0]/coeff[1])/(x-bs[0])^(SR(p)/q)
+            #print(f"bottom={bottom}, bs[0]={bs[0]},p={p},q={q}")
             tasks.append({
-                "integrand": 1/(x-bs[0])^(p/q),
+                "integrand": antidiff(x).diff(x),
                 "converges": True,
                 "top": oo,
                 "bottom": bottom,
                 "proper": False,
                 "improper": True,
-                "int": integral( 1/(x-bs[0])^(p/q), x, bottom, oo,algorithm="sympy"),
+                "int": 0-antidiff(bottom),
             })
 
         # diverges with infinite bound
         if case1 == 1:
-            p = randrange(2,9)
-            q = randrange(p+1,10)
+            p = randrange(1,5)
+            q = randrange(p+1,p+5)
             bottom = bs[1]+randrange(1,6)
+            shuffle(coeff)
+            antidiff(x) = choice([(coeff[0]/coeff[1])*(x-bs[1])^(SR(p)/q), (coeff[0]/coeff[1])*log(x-bs[1]) ])
             tasks.append({
-                "integrand": 1/(x-bs[1])^((p)/q),
+                "integrand": antidiff(x).diff(x),
                 "converges": False,
                 "top": oo,
                 "bottom": bottom,
@@ -43,26 +49,30 @@ class Generator(BaseGenerator):
         # converges with finite bounds
         if case1 == 1:
             case1 = randrange(0,2)
-            p = randrange(2,9)
-            q = randrange(p+1,10)
+            p = randrange(1,5)
+            q = randrange(p+1,p+5)
             top = bs[2]+randrange(1,6)
+            shuffle(coeff)
+            antidiff(x) = (coeff[0]/coeff[1])*(x-bs[2])^(SR(p)/q)
             tasks.append({
-                "integrand": 1/(x-bs[2])^((p)/q),
+                "integrand": antidiff(x).diff(x),
                 "converges": True,
                 "top": top,
                 "bottom": bs[2],
                 "proper": False,
                 "improper": True,
-                "int": definite_integral( 1/(x-bs[2])^((p)/q), x, bs[2], top),
+                "int": antidiff(top),
             })
 
         # diverges with finite bounds
         if case1 == 0:
             p = randrange(3,10)
-            q = randrange(2,p)
+            q = randrange(3,10)
             top = bs[3]+randrange(1,6)
+            shuffle(coeff)
+            antidiff(x) = choice([-1*(coeff[0]/coeff[1])/(x-bs[3])^(SR(p)/q), (coeff[0]/coeff[1])*log(x-bs[3]) ])
             tasks.append({
-                "integrand": 1/(x-bs[3])^((p)/q),
+                "integrand": 1/(x-bs[3])^(SR(p)/q),
                 "converges": False,
                 "top": top,
                 "bottom": bs[3],
@@ -75,11 +85,13 @@ class Generator(BaseGenerator):
         # proper
         p = randrange(3,10)
         q = randrange(3,10)
+        bottom = bs[4]+randrange(1,6)
+        top = bottom + randrange(1,6)
         tasks.append({
-            "integrand": 1/(x-bs[4])^((p)/q),
+            "integrand": 1/(x-bs[4])^(SR(p)/q),
             "converges": True,
-            "top": bs[4]+randrange(1,6),
-            "bottom": bs[4],
+            "top": top,
+            "bottom": bottom,
             "proper": True,
             "improper": False,
         })    

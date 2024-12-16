@@ -7,13 +7,13 @@ For each of the following integrals, identify if the integral is proper or impro
     </intro>
     <!-- {{#tasks}} -->
     <knowl>
-        <content><p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx.</m></p></content>
+        <content><p><m>\renewcommand{\log}{\ln} \displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx.</m></p></content>
         <outtro>
             <!-- {{#proper}} -->
-            <p>This integral is Proper.</p>
+            <p>This integral is proper.</p>
             <!-- {{/proper}} -->
             <!-- {{^proper}} -->
-            <p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx = {{int}}.</m></p>
+            <p><m>\renewcommand{\log}{\ln} \displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx = {{int}}.</m></p>
             <!-- {{/proper}} -->
         </outtro>
     </knowl>
