@@ -915,7 +915,7 @@
           </li>
           <li>
             <p>
-              <m>\tan^2\theta=\frac{1-\cos2\theta}{1+\cos\theta}</m>
+              <m>\tan^2\theta=\frac{1-\cos2\theta}{1+\cos2\theta}</m>
             </p>
           </li>
         </ul>
@@ -1056,10 +1056,6 @@
             </li>
           </ul>
         </p>
-
-        <p>
-          Note that the <m>\pm</m> in the formulas above refers to the fact that sometimes it's negative and sometimes it's positive. The sign is dependent upon the location of <m>\theta</m>.
-        </p>
       </statement>
     </theorem>
 
@@ -1159,19 +1155,19 @@
     <activity xml:id="half-angle-example-2">
       <introduction>
         <p>
-          Find  <m>\cos75°</m> using a half-angle formula in <xref ref="thm-half-angle-formulas"/>.
+          Use the appropriate half-angle formula in <xref ref="thm-half-angle-formulas"/> to find the exact value of each of the following.
         </p>
       </introduction>
 
       <task>
         <statement>
           <p>
-            Which quadrant is the angle <m>75</m><degree/> in?
+            <m>\cos75°</m> 
           </p>
         </statement>
         <answer>
           <p>
-            Quadrant II
+            <m>\cos75°=\cos\left(\frac{150}{2}\right)=-\frac{\sqrt{2-\sqrt{3}}}{2}</m> 
           </p>
         </answer>
       </task>
@@ -1179,70 +1175,12 @@
       <task>
         <statement>
           <p>
-            What angle is <m>75</m><degree/> half of?
+            <m>\sin165°</m> 
           </p>
         </statement>
         <answer>
           <p>
-            <m>150</m><degree/>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Which half angle formula should we use to determine <m>\cos75°</m>?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Because the angle <m>75</m><degree/> lies in Quadrant II, we should use the formula: <m>\cos\frac{\theta}{2}=-\sqrt{\frac{1+\cos\theta}{2}}</m>. 
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Substitute <m>\theta</m> with <m>150</m><degree/> in the half-angle formula for cosine.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{1+\cos150}{2}}</m>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Use the unit circle to find the exact value of <m>\cos150</m><degree/> and substitute that into the equation you got in part (d).
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{1+\frac{-\sqrt{3}}{2}}{2}}</m> 
-          </p> 
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Simplify your equation in part (e) to find the exact value of <m>\cos\left(\frac{150}{2}\right)</m>.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{\frac{2-\sqrt{3}}{2}}{2}}</m>
-          </p>
-          <p>
-            <m>\cos\left(\frac{150}{2}\right)=-\sqrt{\frac{2-\sqrt{3}}{4}}</m>
-          </p>
-          <p>
-            <m>\cos\left(\frac{150}{2}\right)=-\frac{\sqrt{2-\sqrt{3}}}{2}</m> 
+            <m>\sin165°=\sin\left(\frac{330}{2}\right)=\frac{\sqrt{2-\sqrt{3}}}{2}</m>  
           </p>
         </answer>
       </task>
