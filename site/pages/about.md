@@ -18,17 +18,17 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 ### Publications
 
-- Lewis, D., Clontz, S., and Estis, J. 2021. Team-Based Inquiry Learning. PRIMUS 31 (2), 223-238. <https://doi.org/10.1080/10511970.2019.1666440>
+- Lewis, D., Clontz, S., and Estis, J. (2021). Team-Based Inquiry Learning. _PRIMUS_ 31 (2), 223-238. <https://doi.org/10.1080/10511970.2019.1666440>
 
     - Team-Based Learning (TBL) is a cooperative learning strategy blending elements of flipped learning, inquiry-based learning, and problem-based learning. Although used quite frequently in other disciplines, use of this strategy in mathematics has been limited. In this article, we describe how TBL can be implemented in math courses with adherence to essential elements of TBL and introduce modifications specific to mathematics instruction. In particular, we introduce a particular style of TBL, which we term Team-Based Inquiry Learning, that satisfies the defining pillars of inquiry-based learning.
 
 
-- Lewis, D. and Estis, J. 2020. Improving Mathematics Content Mastery and Enhancing Flexible Problem Solving through Team-Based Inquiry Learning. Teaching & Learning Inquiry 8 (2), 165-183. <https://doi.org/10.20343/teachlearninqu.8.2.11>
+- Lewis, D. and Estis, J. (2020). Improving Mathematics Content Mastery and Enhancing Flexible Problem Solving through Team-Based Inquiry Learning. _Teaching & Learning Inquiry_ 8 (2), 165-183. <https://doi.org/10.20343/teachlearninqu.8.2.11>
 
     - This article examines how student learning is affected by the use of team-based inquiry learning, a novel pedagogy in mathematics that uses team-based learning to implement inquiry-based learning. We conducted quasi-experimental and observational studies in intermediate level mathematics courses, finding that team-based inquiry learning led to increased content mastery and that students took a more flexible approach to solving problems. We also found that in the courses using this pedagogy, women (but not men) had a reduction in communication apprehension over the course of a semester. We conclude that team-based inquiry learning effectively enhances student learning and problem solving, preparing students for future academic success and fostering career readiness.
 
 
-- Lewis, D., Clontz, S., Parrish, C., Estis, J., and Chaudhury, S.R. To Appear. Supporting Instructors in Implementing Team-Based Inquiry Learning. Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education. <http://sigmaa.maa.org/rume/crume2024/papers/117.pdf>
+- Lewis, D., Clontz, S., Parrish, C., Estis, J., and Chaudhury, S.R. 2024. Supporting Instructors in Implementing Team-Based Inquiry Learning. _Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education_, 1152-1157. <http://sigmaa.maa.org/rume/crume2024/papers/117.pdf>
 
     - Team-Based Inquiry Learning (TBIL) is a novel active learning pedagogy designed to facilitate the use of inquiry-based learning in lower division courses. This preliminary report examines supports provided by the TBIL project to instructors, as well as the fidelity of implementation of TBIL by participants of the project. Initial findings suggest that classroom-ready materials and ongoing support, both synchronous and asynchronous, were most helpful to faculty in their TBIL implementations.
 
