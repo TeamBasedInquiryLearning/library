@@ -1,21 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    
     <intro>
         <p>
-            Consider the region bounded by <m>y={{ f }}, y=0,  x={{a}}, x={{b}}</m>. 
+            Consider the region <m>\mathbf{R}</m> bound by the curves <m>y={{line}}, x={{quad}}</m>.
         </p>
-    </intro> 
+    </intro>
     
     <knowl>
-        <content><p>Find an integral or sum of integrals which computes the volume of the solid formed by rotating this region about the <m>x</m>-axis.</p></content>
-        <outtro><p>Using the washer/disk method, we obtain <me>\int_{ {{a}} }^{ {{b}} } \pi \left({{f}}\right)^2dx</me> and using the shell method, we obtain 
-            <me>\int_0^{ {{low}} } 2\pi y\left( {{b}}-{{a}}\right)dy +\int_{ {{low}} }^{ {{high}} } 2\pi y\left( {{b}}-\left({{g}}\right)\right)dy.</me></p></outtro>
+        <content>
+            <p>
+                Sketch the region <m>\mathbf{R}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <image
+                source="assets/AP3/generated/{{__seed__}}/region.png"
+                description="Region R"/>
+            </p>
+        </outtro>
     </knowl>
-    <knowl>  
-        <content><p>Find an integral or sum of integrals which computes the volume of the solid formed by rotating this region about the <m>y</m>-axis.</p></content>
-        <outtro><p>Using the washer/disk method, we obtain 
-            <me>\int_0^{ {{low}} } \pi\left({{b}}^2-{{a}}^2\right)dy + \int_{ {{low}} }^{ {{high}} } \pi\left({{b}}^2-\left({{g}}\right)^2\right)dy</me> and using the shell method, we obtain 
-            <me>\int_{ {{a}} }^{ {{b}} }2\pi x \left({{f}}\right)dx.</me></p>
-        </outtro>  
+    
+    <knowl>
+        <content>
+            <p>
+                Express the area of <m>\mathbf{R}</m> as a (sum of) integral(s) with respect to <m>x</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The area of <m>\mathbf{R}</m> is expresible as <me>\int_{ {{x1}} }^{ {{x2}} } \left( {{f1}} \right) - \left( {{f2}} \right)dx +\int_{ {{x2}} }^{ {{x3}} } \left( {{g1}} \right) - \left( {{g2}} \right)dx</me> <me> = \int_{ {{x1}} }^{ {{x2}} } \left( {{f}} \right)dx +\int_{ {{x2}} }^{ {{x3}} } \left( {{g}} \right)dx.</me>
+            </p>
+        </outtro>
     </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Express the area of <m>\mathbf{R}</m> as a (sum of) integral(s) with respect to <m>y</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The area of <m>\mathbf{R}</m> is expresible as <me>\int_{ {{a}} }^{ {{b}} } \left( {{right}}  \right)-\left( {{left}}  \right)dy = \int_{ {{a}} }^{ {{b}} } \left( {{poly}}  \right)dy</me>
+            </p>
+        </outtro>
+    </knowl>
+
+
+    
 </knowl>
