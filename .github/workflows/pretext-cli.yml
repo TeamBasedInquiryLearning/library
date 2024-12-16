@@ -150,8 +150,6 @@ jobs:
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: `${{ needs.preview.outputs.markdown }}
-
-                      ${{ steps.cloudflare_publish.outputs.url }}`
+                    body: "${{ needs.preview.outputs.markdown }}\n${{ steps.cloudflare_publish.outputs.url }}`
                   })
 
