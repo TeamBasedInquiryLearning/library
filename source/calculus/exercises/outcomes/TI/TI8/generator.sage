@@ -14,7 +14,7 @@ class Generator(BaseGenerator):
         if case1 == 0:
             p = randrange(3,10)
             q = randrange(2,p)
-            bottom = bs[0]+randrange(1,6)
+            print(f"bottom={bottom}, bs[0]={bs[0]},p={p},q={q}")
             tasks.append({
                 "integrand": 1/(x-bs[0])^(p/q),
                 "converges": True,
@@ -22,7 +22,7 @@ class Generator(BaseGenerator):
                 "bottom": bottom,
                 "proper": False,
                 "improper": True,
-                "int": definite_integral( 1/(x-bs[0])^((p)/q), x, bottom, oo),
+                "int": integral( 1/(x-bs[0])^(p/q), x, bottom, oo,algorithm="sympy"),
             })
 
         # diverges with infinite bound
