@@ -42,12 +42,13 @@ def main():
                 "path": path
             })
     
-    # create single-line markdown output
-    markdown = "## 🚀 Preview available 🚀\\n\\n"
+    # create Javascript template for markdown output
+    markdown = "## 🚀 Preview available 🚀\n\n"
     for link in preview_links:
-        markdown += f"- `{link["file"]}`: <{link["path"]}>\\n"
+        # ${{cf_url}} is provided by action Javascript
+        markdown += f"- `{link["file"]}`: <${{cf_url}}{link["path"]}>\\n"
     with open(os.environ["GITHUB_OUTPUT"], 'a') as fh:
-        fh.write(f"markdown={markdown}")
+        fh.write(f"markdown<<MARKDOWN\n{markdown}\nMARKDOWN\n")
         
 if __name__ == "__main__":
     main()

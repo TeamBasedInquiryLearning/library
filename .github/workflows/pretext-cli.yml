@@ -146,10 +146,11 @@ jobs:
               if: github.event_name == 'pull_request'
               with:
                 script: |
+                  cf_url = "${{ steps.cloudflare_publish.outputs.url }}"
                   github.rest.issues.createComment({
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: "${{ needs.preview.outputs.markdown }}\n${{ steps.cloudflare_publish.outputs.url }}"
+                    body: `${{ needs.preview.outputs.markdown }}`
                   })
 
