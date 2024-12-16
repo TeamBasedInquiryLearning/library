@@ -2,6 +2,7 @@ from pretext.project import Project
 from git import Repo
 from pathlib import Path
 from lxml import etree
+import os
 
 def main():
     repo = Repo()
@@ -40,6 +41,12 @@ def main():
                 "file": f,
                 "path": path
             })
+    
+    # create markdown output
+    markdown = "## 🚀 Preview available 🚀\n\n"
+    for link in preview_links:
+        markdown += f"- `{link["file"]}`: <{link["path"]}>\n"
+    os.environ["GITHUB_OUTPUT"] = markdown
         
 if __name__ == "__main__":
     main()
