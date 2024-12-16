@@ -9,8 +9,9 @@ commit_origin_main = repo.commit("main")
 commit_merge_base = repo.merge_base(commit_head, commit_origin_main)[0]
 diff_index = commit_merge_base.diff(commit_head)
 changed_files = [Path(item.a_path) for item in diff_index]
+preview_links = []
 
-p = Project()
+p = Project.parse()
 BOOKS = ['precalculus', 'calculus', 'linear-algebra']
 
 # for each .ptx file, try to build subtree of document
@@ -22,7 +23,19 @@ for f in [f for f in changed_files if f.suffix == ".ptx"]:
             book = b
     if book is not None:
         t = p.get_target(f"{book}-web-instructor")
-        root = etree.parse(f)
+        root = etree.parse(f).getroot()
         xml_id = root.get(r"{http://www.w3.org/XML/1998/namespace}id")
-        t.build(xmlid=xml_id, no_knowls=True)
+        title_ele = root.find("title")
+        if title_ele is None:
+            if xml_id is None:
+                path = f"/preview/{book}/instructor"
+            else:
+                path = f"/preview/{book}/instructor/{xml_id}.html"
+        else:
+            path = f"/preview/{book}/instructor/{xml_id}.html"
+        t.build(xmlid=xml_id, no_knowls=True, generate=(xml_id is not None))
+        preview_links.append({
+            "file": f,
+            "path": path
+        })
         
