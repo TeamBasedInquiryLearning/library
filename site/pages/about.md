@@ -40,13 +40,19 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Kate Owens† has created [these excellent slides](https://docs.google.com/presentation/d/1824oMy2HetUVz4AlEZFufjftg72gh0Zqqu4RzOP08PE/edit?usp=sharing) overviewing TBIL and resources to implement it in your classroom.
 
+- Drew Lewis presented a poster "[Transforming Lower Division Mathematics Through Team-Based Inquiry Learning](https://drive.google.com/file/d/1rruYnUEJKJZROXcXGkjl7aXdtc2v5FSs/view?usp=drive_link)" at the IUSE Summit (June 2022)
+
 - Drew Lewis gave a colloquium presentation on "[Team-Based Inquiry Learning](https://drive.google.com/file/d/19zgcQU37PqaxUka8AgBL9sh2tBz2VO56/view?usp=sharing)" at the University of Tennessee Department of Mathematics (October 2022)
 
 - Kate Owens† & Abby Noble† presented "[How we juggled all the things: SBG+TBIL+CheckIt+LMS](https://docs.google.com/presentation/d/1tjZNkLplPyYpanPpkzfN0a-1n8FSTdNgMAh7RYkFFbs/edit?usp=sharing)" at the Fall 2023 Southeast Sectional Meeting of the American Mathematics Society
 
 - Jordan Kostiuk† presented on "[TBIL & Student Motivation](https://drive.google.com/file/d/1PtJmaPv24viRJPOUWGqvRu-Dx3jQvSB3/view?usp=sharing)" at the 2023 AAC&U STEM Conference
 
+- Julie Estis presented a poster "[Transforming Lower Division Mathematics Through Team-Based Inquiry Learning: A Model for Training Faculty, Developing Resources, and Measuring Impact](https://drive.google.com/file/d/1fMj8_3Ea946Rvshmh6Z0oveKw7rk_N3c/view?usp=sharing)" at the 2023 Team-Based Learning Collaborative Annual Conference
+
 - Manoj Lamichhane† presented "Implementation of Team Based Inquiry Learning (TBIL) in Calculus Classes at Florida Polytechnic University" at the Third International Conference on Applications of Mathematics to Nonlinear Sciences (May 2023)
+
+- Raj Chaudhury presented a poster "[Actors, Scripts and Orchestration: a framework for understanding Team-Based Inquiry Learning](https://drive.google.com/file/d/17f2bvjhRxPK6xFbu_BemDwdKe72LKxl4/view?usp=drive_link)" at the 2023 Physics Education Research Conference.
 
 - Francesca Gandini† & Joe Hibdon† presented "Making Student Thinking Visible with Team-Based Inquiry Learning" at the 2024 Joint Mathematics Meeting 
 
