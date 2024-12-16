@@ -46,7 +46,8 @@ def main():
     markdown = "## 🚀 Preview available 🚀\n\n"
     for link in preview_links:
         markdown += f"- `{link["file"]}`: <{link["path"]}>\n"
-    os.environ["GITHUB_OUTPUT"] = f"markdown<<MARKDOWN\n{markdown}\nMARKDOWN"
+    with open(os.environ["GITHUB_OUTPUT"], 'a') as fh:
+        fh.write(f"markdown<<MARKDOWN\n{markdown}\nMARKDOWN\n")
         
 if __name__ == "__main__":
     main()

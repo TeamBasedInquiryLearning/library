@@ -96,9 +96,6 @@ jobs:
             - name: build previews of all changed files
               id: changes
               run: python scripts/quickbuild_changes.py
-            
-            - name: check output
-              run: echo $GITHUB_OUTPUT
 
             - name: stage deployment
               run: pretext deploy --stage-only
