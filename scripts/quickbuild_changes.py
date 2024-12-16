@@ -1,12 +1,9 @@
 from pretext.project import Project
 from git import Repo
-from gitdb import GitDB
 from pathlib import Path
 from lxml import etree
 
-repo = Repo(odbt=GitDB) # https://github.com/gitpython-developers/GitPython/discussions/1180#discussioncomment-408868
-config = repo.config_writer()
-config.set_value("safe", "directory", ".")
+repo = Repo()
 commit_head = repo.commit("HEAD")
 commit_origin_main = repo.commit("origin/main")
 commit_merge_base = repo.merge_base(commit_head, commit_origin_main)[0]
