@@ -40,7 +40,8 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Kate Owens† has created [these excellent slides](https://docs.google.com/presentation/d/1824oMy2HetUVz4AlEZFufjftg72gh0Zqqu4RzOP08PE/edit?usp=sharing) overviewing TBIL and resources to implement it in your classroom.
 
-- Drew Lewis presented a poster "[Transforming Lower Division Mathematics Through Team-Based Inquiry Learning](https://drive.google.com/file/d/1rruYnUEJKJZROXcXGkjl7aXdtc2v5FSs/view?usp=drive_link)" at the IUSE Summit (June 2022)
+- Drew Lewis presented a poster "[Transforming Lower Division Mathematics Through Team-Based Inquiry Learning](https://drive.google.com/file/d/1rruYnUEJKJZROXcXGkjl7aXdtc2v5FSs/view?usp=sharing)" at the IUSE Summit (June 2022)
+
 
 - Drew Lewis gave a colloquium presentation on "[Team-Based Inquiry Learning](https://drive.google.com/file/d/19zgcQU37PqaxUka8AgBL9sh2tBz2VO56/view?usp=sharing)" at the University of Tennessee Department of Mathematics (October 2022)
 
