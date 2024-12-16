@@ -150,6 +150,8 @@ jobs:
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    body: '${{ needs.preview.outputs.markdown }}\n\n---\n\n## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}\n\n- [Precalculus](${{ steps.cloudflare_publish.outputs.url }}/preview/precalculus/instructor/frontmatter)\n\n- [Calculus](${{ steps.cloudflare_publish.outputs.url }}/preview/calculus/instructor/frontmatter)\n\n- [Linear Algebra](${{ steps.cloudflare_publish.outputs.url }}/preview/linear-algebra/instructor/frontmatter)'
+                    body: `${{ needs.preview.outputs.markdown }}
+
+                      ${{ steps.cloudflare_publish.outputs.url }}`
                   })
 
