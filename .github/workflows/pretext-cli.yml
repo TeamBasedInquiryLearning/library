@@ -82,8 +82,8 @@ jobs:
         steps:
             - name: Checkout source
               uses: actions/checkout@v4
-              # with:
-              #   fetch-depth: 0
+              with:
+                fetch-depth: 0
 
             - name: install deps
               run: pip install -r requirements.txt
@@ -98,7 +98,6 @@ jobs:
               run: pretext deploy --stage-only
 
             # - name: build and stage all banks
-            #   # if: steps.quickbuild.outcome == 'skipped'
             #   run: |
             #     python scripts/build_bank.py precalculus --full
             #     python scripts/build_bank.py calculus --full
