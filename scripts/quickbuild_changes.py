@@ -43,7 +43,7 @@ def main():
             })
     
     # create Javascript template for markdown output
-    markdown = "## 🚀 Preview available 🚀\n\n"
+    markdown = "## 🚀 Preview available 🚀\n\n<${{cf_url}}>\n\n"
     for link in preview_links:
         # ${{cf_url}} is provided by action Javascript
         markdown += f"- \\`{link["file"]}\\`: <${{cf_url}}{link["path"]}>\n"
