@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section xml:id="GT5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Change of Basis (GT5)</title>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    Calculate the change-of-basis matrix between two bases of <m>\IR^n</m>.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+
+<subsection>
+    <title>Warm Up</title>
+    
+</subsection>
+
+<subsection><title>Class Activities</title>
+<remark>
+    <p>
+        So far, when working with the Euclidean vector space <m>\IR^n</m>, we have primarily worked with the standard basis <m>\mathcal{E}=\setList{\vec{e}_1,\dots, \vec{e}_n}</m>.
+        We can explore alternative perspectives more easily if we expand our toolkit to analyze different bases.    
+    </p>
+</remark>
+<activity>
+    <introduction>
+        <p>
+            Let <m>\cal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</m>.
+        </p>
+    </introduction>        
+    <task>
+            <p>
+                Is <m>\cal{B}</m> a basis of <m>\IR^3</m>?
+            </p>
+            <p>
+                <ol marker="A.">
+                    <li>
+                        <p>
+                            Yes.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+    </task>
+    <task>
+            <p>
+                Since <m>\cal{B}</m> is a basis, we know that if <m>\vec{v}\in \IR^3</m>, the following vector equation have will have a unique solution:
+                <me>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{v}</me>
+                Given this, we define a map <m>C_{\mathcal{B}}\colon\IR^3\to\IR^3</m> via the rule that <m>C_{\mathcal{B}}(\vec{v})</m> is equal to the unique solution to the above vector equation. 
+                The map <m>C_{\mathcal{B}}</m> is a linear map. 
+            </p>
+            <p>
+                Compute <m>C_{\mathcal{B}}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right).</m>
+            </p>
+    </task>
+    <task>
+            <p>
+                Compute <m>C_\mathcal{B}(\vec{e}_1),C_\mathcal{B}(\vec{e}_2), C_\mathcal{B}(\vec{e}_3)</m> and, in doing so, write down the standard matrix <m>M_\mathcal{B}</m> of <m>C_\mathcal{B}</m>.
+            </p>
+            <sage language="octave">
+                <input>
+                    
+                </input>
+                <output>
+                    
+                </output>
+            </sage>    
+    </task>
+    
+</activity>
+
+<observation>
+    <p>
+        Note that one way to compute <m>M_{\mathcal{B}}</m> is calculate the RREF of the following matrix:
+        <me>\left[\begin{array}{ccc|ccc}1&amp;1&amp;0&amp;1&amp;0&amp;0\\
+            0&amp;-1&amp;1&amp;0&amp;1&amp;0\\
+            1&amp;1&amp;1&amp;0&amp;0&amp;1\end{array}\right]\sim\left[\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;2&amp;1&amp;-1\\
+            0&amp;1&amp;0&amp;-1&amp;-1&amp;1\\
+            0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right]</me>
+            Thus, the matrix <m>M_{\mathcal{B}}</m> is the inverse of the matrix <m>[\vec{v}_1\ \vec{v}_2\ \vec{v}_3]</m>.
+            That is:
+            <me>M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \vec{v}_2\ \vec{v}_3].</me>
+    </p>
+</observation>
+<definition xml:id="def-change-of-basis">
+    <statement>
+        <p>
+            Given a basis <m>\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}</m> of <m>\IR^n</m>, the <term>change of basis/coordinate</term> transformation <em>from</em> the standard basis <em>to</em> <m>\mathcal{B}</m> is the transformation <m>C_\mathcal{B}\colon\IR^n\to\IR^n</m> defined by the property that, for any vector <m>\vec{v}\in\IR^n</m>, the vector <m>C_\mathcal{B}(\vec{v})</m> is the unique solution to the vector equation:
+            <me>x_1\vec{v}_1+\dots+x_n\vec{v}_n=\vec{v}.</me>
+            Its standard matrix is called the change-of-basis matrix from the standard basis to <m>\mathcal{B}</m> and is denoted by <m>M_{\mathcal{B}}</m>.
+            It satisfies the following:
+            <me>M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \cdots\ \vec{v}_n].</me>
+        </p>
+        <p>
+            The vector <m>C_\mathcal{B}(\vec{v})</m> is the <m>\mathcal{B}</m>-coordinates of <m>\vec{v}</m>.
+            If you work with standard coordinates, and I work with <m>\mathcal{B}</m>-coordinates, then to build the vector that you call <m>\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n</m>, I would first compute <m>C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m> and then build <m>\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n</m>.
+        </p>
+        <p>
+            In particular, notation as above, we would have:
+            <me>a_1\vec{e}_1+\cdots a_n\vec{e}_n=\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n.</me>
+        </p>
+    </statement>
+</definition>
+
+
+<activity>
+    <introduction>
+        <p>
+            Let <m>\vec{v}_1=\begin{bmatrix}1\\-2\\1\end{bmatrix},\ \vec{v}_2=\begin{bmatrix}-1\\0\\3\end{bmatrix},\ \vec{v}_3=\begin{bmatrix}0\\1\\-1\end{bmatrix}</m>, and <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m>
+        </p>
+    </introduction>
+    <task>
+        <p>
+            Calculate <m>M_{\mathcal{B}}</m> using technology. 
+        </p>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
+    </task>
+    <task>
+        <p>
+            Use your result to calculate <m>C_\mathcal{B}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right)</m> and express the vector <m>\begin{bmatrix}1\\1\\1\end{bmatrix}</m> as a linear combination of <m>\vec{v}_1,\vec{v}_2,\vec{v}_3</m>.
+        </p>
+    </task>
+</activity>
+<observation>
+    <p>
+        Let <m>T\colon\IR^n\to\IR^n</m> be a linear transformation and let <m>A</m> denote its standard matrix. 
+        If <m>\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}</m> is some other basis, then we have:
+        <md>
+            <mrow>M_\mathcal{B}AM_{\mathcal{B}}^{-1} \amp= M_\mathcal{B}A[\vec{v_1}\cdots\vec{v}_n] </mrow>
+            <mrow> \amp= M_\mathcal{B}[T(\vec{v}_1)\cdots T(\vec{v}_n)]</mrow>
+            <mrow> \amp= [C_\mathcal{B}(T(\vec{v}_1))\cdots C_\mathcal{B}(T(\vec{v}_n))]</mrow>
+        </md>
+        In other words, the matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is the matrix whose columns consist of <em><m>\mathcal{B}</m>-coordinate</em> vectors of the image vectors <m>T(\vec{v}_i)</m>.
+        The matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is called the <alert>matrix of <m>T</m> with respect to <m>\mathcal{B}</m>-coordinates</alert>.
+    </p>
+</observation>
+
+<activity>
+    <introduction>
+        <p>
+            Let <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\0\\3\end{bmatrix},\begin{bmatrix}0\\1\\-1\end{bmatrix}}</m> be basis from the previous Activity. 
+            Let <m>T</m> denote the linear transformation whose standard matrix is given by:
+            <me>A=\begin{bmatrix}9&amp;4&amp;4\\6&amp;9&amp;2\\-18&amp;-16&amp;-9\end{bmatrix}.</me>
+        </p>
+    </introduction>
+    <task>
+        <p>
+            Calculate the matrix <m>M_\mathcal{B}AM_{\mathcal{B}}^{-1}</m>.
+        </p>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
+    </task>
+    <task>
+        <p>
+            The matrix <m>A</m> describes how the standard basis of <m>\IR^3</m> is transformed by the linear transformation <m>T</m>.
+            The matrix <m>M_\mathcal{B}AM_{\mathcal{B}}^{-1}</m> describes how <m>\cal{B}</m> is transformed (in <m>\mathcal{B}</m>-coordinates). 
+            Which of these two descriptions is easier for you to describe/understand/visualize and why?
+        </p>
+    </task>
+</activity>
+
+
+</subsection>
+
+    <subsection>
+        <title>Sample Problem and Solution</title>
+        <example>
+            <introduction>
+                <p>
+                    Let <m>\mathcal{B}=\setList{\begin{bmatrix}-2\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\-2\\-1\end{bmatrix},\begin{bmatrix}1\\3\\2\end{bmatrix}}</m>, and <m>\vec{v}=\begin{bmatrix}1\\2\\3\end{bmatrix}</m>.
+                </p>
+                <task>
+                    <p>
+                        Explain and demonstrate how to verify that <m>\mathcal{B}</m> is a basis of <m>\IR^3</m> and how to calculate <m>M_\mathcal{B}</m>, the change-of-basis matrix from the standard basis of <m>\IR^3</m> to <m>\mathcal{B}</m>.
+                    </p>
+                </task>
+                <task>
+                    <p>
+                        Explain and demonstrate how to use <m>M_\mathcal{B}</m> to express <m>\vec{v}</m> in terms of <m>\mathcal{B}</m>-basis vectors. 
+                    </p>
+                </task>
+            </introduction>
+            <solution>
+                <task>
+                    <p>
+                        We can accomplish both tasks by calculating the RREF of the following matrix:
+                        <me>\RREF\left[\begin{array}{ccc|ccc}-2&amp;-1&amp;1&amp;1&amp;0&amp;0\\
+                            -2&amp;-2&amp;3&amp;0&amp;1&amp;0\\1&amp;-1&amp;2&amp;0&amp;0&amp;1\end{array}\right]
+                        =
+                    \left[\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;-1&amp;1\\
+                    0&amp;1&amp;0&amp;-7&amp;5&amp;-4\\
+                    0&amp;0&amp;1&amp;-4&amp; 3&amp;-2\end{array}\right].</me>
+                    The fact that the matrix to the left of the vertical bar is the identity matrix tells that <m>\mathcal{B}</m> is a basis. 
+                    The matrix on the right hand side of the bar is equal to the change-of-basis matrix:
+                    <me>M_\mathcal{B}=\left[\begin{array}{ccc}1&amp;-1&amp;1\\
+                        -7&amp;5&amp;-4\\
+                        -4&amp; 3&amp;-2\end{array}\right].</me>
+                    </p>
+                </task>
+                <task>
+                    <p>
+                        By definition of the change of basis matrix, if <m>\vec{v}=\begin{bmatrix}1\\2\\3\end{bmatrix}</m>, then the coordinates of <m>\vec{v}</m> with respect to <m>\mathcal{B}</m> are given by:
+                        <me>M_\mathcal{B}\vec{v}=M_\mathcal{B}=\left[\begin{array}{ccc}1&amp;-1&amp;1\\
+                        -7&amp;5&amp;-4\\
+                        -4&amp; 3&amp;-2\end{array}\right]\begin{bmatrix}1\\2\\3\end{bmatrix}=\begin{bmatrix}2\\-9\\-4\end{bmatrix}.</me>
+                        It follows that:
+                        <me>\begin{bmatrix}1\\2\\3\end{bmatrix}=2\begin{bmatrix}-2\\-2\\1\end{bmatrix} -9\begin{bmatrix}-1\\-2\\-1\end{bmatrix} -4\begin{bmatrix}1\\3\\2\end{bmatrix}. </me>
+                    </p>
+                </task>
+            </solution>
+        </example>
+    </subsection>
+
+</section>
