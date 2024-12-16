@@ -129,8 +129,8 @@ jobs:
                   path: deploy
             - name: Create 404.html
               run: echo "404 page not found" >> deploy/404.html
-            - name: Delete CheckIt builds not supported by CloudFlare
-              run: find . -name "bank.json" -type f -delete
+            # - name: Delete CheckIt builds not supported by CloudFlare
+            #   run: find . -name "bank.json" -type f -delete
             - name: Publish to Cloudflare
               id: cloudflare_publish
               uses: cloudflare/pages-action@v1
