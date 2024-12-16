@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="DF5" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>The Chain Rule (DF5)</title>
+  <title>Off The Chain Rule (DF5)</title>
   <objectives>
     <ul>
       <li>
@@ -12,7 +12,7 @@
   <subsection>
     <title>Activities</title>
 
-    <note xml:id="order-composition"><p> When we consider the consider the composition <m>f \circ g</m> of the function <m>f</m> with the function <m>g</m>, we mean the composite function <m>f(g(x))</m>, where the function <m>g</m> is applied first  and then <m>f</m> is applied to the output of <m>g</m>. We also call <m>f</m> the outside function whilst <m>g</m> is the inside function. </p> </note>
+    <note xml:id="order-composition"><p> If we consider the consider the composition <m>f \circ g</m> of the function <m>f</m> with the function <m>g</m>, we mean the composite function <m>f(g(x))</m>, where the function <m>g</m> is applied first  and then <m>f</m> is applied to the output of <m>g</m>. We also call <m>f</m> the outside function whilst <m>g</m> is the inside function. </p> </note>
 
        <activity xml:id="chain-rule-intuition">
            <task>
