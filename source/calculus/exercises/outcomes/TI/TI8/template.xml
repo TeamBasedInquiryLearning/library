@@ -2,20 +2,19 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Explain and demonstrate how to write each of the following improper integrals
-as a limit, and why this limit converges or diverges.
+For each of the following integrals, identify if the integral is proper or improper.  If improper, then compute the integral by finding the antiderivative, using the fundamental theorem of calculus, and computing the limit.
         </p>
     </intro>
     <!-- {{#tasks}} -->
     <knowl>
         <content><p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx.</m></p></content>
         <outtro>
-            <!-- {{#converges}} -->
-            <p>Converges.</p>
-            <!-- {{/converges}} -->
-            <!-- {{^converges}} -->
-            <p>Diverges.</p>
-            <!-- {{/converges}} -->
+            <!-- {{#proper}} -->
+            <p>This integral is Proper.</p>
+            <!-- {{/proper}} -->
+            <!-- {{^proper}} -->
+            <p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx = {{int}}.</m></p>
+            <!-- {{/proper}} -->
         </outtro>
     </knowl>
     <!-- {{/tasks}} -->
