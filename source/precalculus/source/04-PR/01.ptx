@@ -501,7 +501,13 @@
   </answer> 
   </task>
 </activity>
-    </subsection> 
+
+<remark>
+  <p>
+    Notice that in <xref ref="PR1-activity-6"/>, two different functions could have the same vertex and axis of symmetry. When <m>|a|\gt0</m>, the graph narrows. When <m>0\lt|a|\lt1</m>, the graph widens (refer back to <xref ref="FN4"/>). 
+  </p>
+</remark>
+
 
     <activity xml:id="PR1-fluency">
       <introduction>
@@ -526,7 +532,14 @@
               <li> <p> upwards   </p> </li>
               <li> <p> <m>(-1,-4)</m>; minimum   </p> </li>
               <li> <p> <m>x=-1</m>   </p> </li>
-              <li> <p> (placeholder for graph)   </p> </li>
+              <li> <p> <figure width="100%" xml:id="graph-of-x^2+2*x-3">
+        <image xml:id="graph-of-x^2+2*x-3">
+          <sageplot>
+            f(x) = (x^2+2*x-3)
+              p=plot(f, (x, -6, 6), ymin=-5, ymax=20, color='blue', thickness=3)
+          </sageplot>
+        </image>
+      </figure>   </p> </li>
             </ol>
           </p>
         </answer>
@@ -542,7 +555,14 @@
               <li> <p> downwards   </p> </li>
               <li> <p> <m>(3,20)</m>; maximum   </p> </li>
               <li> <p> <m>x=3</m>   </p> </li>
-              <li> <p> (placeholder for graph)   </p> </li>
+              <li> <p> <figure width="100%" xml:id="graph-of--5(x-3)^2+20">
+        <image xml:id="graph-of--5(x-3)^2+20">
+          <sageplot>
+            f(x) = (-5*(x-3)^2+20)
+              p=plot(f, (x, -1, 7), ymin=-5, ymax=30, color='blue', thickness=3)
+          </sageplot>
+        </image>
+      </figure>   </p> </li>
             </ol>
           </p>
         </answer>
@@ -558,7 +578,14 @@
                 <li> <p> upwards   </p> </li>
                 <li> <p> <m>(-3,-5)</m>; minimum   </p> </li>
                 <li> <p> <m>x=-3</m>   </p> </li>
-                <li> <p> (placeholder for graph)   </p> </li>
+                <li> <p> <figure width="100%" xml:id="graph-of-5x^2+30x+40">
+        <image xml:id="graph-of-5x^2+30x+40">
+          <sageplot>
+            f(x) = (5*x^2+30*x+40)
+              p=plot(f, (x, -6, 2), ymin=-10, ymax=30, color='blue', thickness=3)
+          </sageplot>
+        </image>
+      </figure>  </p> </li>
               </ol>
             </p>
           </answer>
@@ -574,14 +601,20 @@
                   <li> <p> upwards   </p> </li>
                   <li> <p> <m>(-4,-3)</m>; minimum   </p> </li>
                   <li> <p> <m>x=-4</m>   </p> </li>
-                  <li> <p> (placeholder for graph)   </p> </li>
+                  <li> <p> <figure width="100%" xml:id="graph-of-2(x+4)^2-3">
+        <image xml:id="graph-of-2(x+4)^2-3">
+          <sageplot>
+            f(x) = (2*(x+4)^2-3)
+              p=plot(f, (x, -8, 4), ymin=-5, ymax=30, color='blue', thickness=3)
+          </sageplot>
+        </image> 
+      </figure>  </p> </li>
                 </ol>
               </p>
             </answer>
             </task>
-
-
     </activity>
+    </subsection> 
 <exercises>
   <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR1/"/>. </p> 
 </exercises>
