@@ -26,7 +26,7 @@
 <activity>
     <introduction>
         <p>
-            Let <m>\cal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</m>.
+            Let <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</m>.
         </p>
     </introduction>        
     <task>
@@ -97,16 +97,19 @@
             It satisfies the following:
             <me>M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \cdots\ \vec{v}_n].</me>
         </p>
-        <p>
-            The vector <m>C_\mathcal{B}(\vec{v})</m> is the <m>\mathcal{B}</m>-coordinates of <m>\vec{v}</m>.
-            If you work with standard coordinates, and I work with <m>\mathcal{B}</m>-coordinates, then to build the vector that you call <m>\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n</m>, I would first compute <m>C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m> and then build <m>\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n</m>.
-        </p>
-        <p>
-            In particular, notation as above, we would have:
-            <me>a_1\vec{e}_1+\cdots a_n\vec{e}_n=\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n.</me>
-        </p>
     </statement>
 </definition>
+
+<remark>
+    <p>
+        The vector <m>C_\mathcal{B}(\vec{v})</m> is the <m>\mathcal{B}</m>-coordinates of <m>\vec{v}</m>.
+        If you work with standard coordinates, and I work with <m>\mathcal{B}</m>-coordinates, then to build the vector that you call <m>\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n</m>, I would first compute <m>C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m> and then build <m>\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n</m>.
+    </p>
+    <p>
+        In particular, notation as above, we would have:
+        <me>a_1\vec{e}_1+\cdots a_n\vec{e}_n=\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n.</me>
+    </p>
+</remark>
 
 
 <activity>
@@ -171,9 +174,11 @@
     </task>
     <task>
         <p>
-            The matrix <m>A</m> describes how the standard basis of <m>\IR^3</m> is transformed by the linear transformation <m>T</m>.
-            The matrix <m>M_\mathcal{B}AM_{\mathcal{B}}^{-1}</m> describes how <m>\cal{B}</m> is transformed (in <m>\mathcal{B}</m>-coordinates). 
-            Which of these two descriptions is easier for you to describe/understand/visualize and why?
+            The matrix <m>A</m> describes how <m>T</m> transforms the standard basis of <m>\IR^3</m>.
+            The matrix <m>M_\mathcal{B}AM_{\mathcal{B}}^{-1}</m> describes how <m>T</m> transforms the basis <m>\mathcal{B}</m> (in <m>\mathcal{B}</m>-coordinates).
+        </p>
+        <p>         
+            Which of these two descriptions is most helpful to you in describing/understanding/visualizing the transformation <m>T</m> and why?
         </p>
     </task>
 </activity>
