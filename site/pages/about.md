@@ -5,7 +5,10 @@ slug: about
 
 ### What is TBIL?
 
-Team-Based Inquiry Learning (TBIL) is an implementation of [Team-Based Learning](https://www.teambasedlearning.org/definition/) as [Inquiry-Based Learning](http://www.inquirybasedlearning.org/) for mathematics. Team-Based Learning is popular in other disciplines such as health sciences, where it is most often implemented as Flipped Learning and/or Case-Based Learning. In mathematics, however, we view it as a way to more easily bring Inquiry-Based Learning into lower division courses such as Calculus and Linear Algebra.
+Team-Based Inquiry Learning (TBIL) is an implementation of [Team-Based Learning](https://www.teambasedlearning.org/definition/) as [Inquiry-Based Learning](http://www.inquirybasedlearning.org/) for mathematics. Team-Based Learning is popular in other disciplines such as health sciences, where it is most often implemented as Flipped Learning and/or Case-Based Learning. In mathematics, however, we view it as a way to more easily bring Inquiry-Based Learning into lower division courses such as Precalculus, Calculus, and Linear Algebra.
+
+A typical day in a TBIL class involves students working teams through a series of scaffolded activities to learn the material.  After spending time on an activity, each team simultaneously reports their answer to the class, after which the instructor facilitates a class-wide debrief to inquire into students' thinking.  After bringing the class to a consensus, the instructor provides any needed exposition to prepare students for the next activity. For more details on the TBIL pedagogy, please see our [_PRIMUS_ paper](https://doi.org/10.1080/10511970.2019.1666440).
+
 
 To help instructors get started, we host a
 [library](/library/) of free and open-source educational resources
