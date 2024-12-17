@@ -1030,7 +1030,7 @@ Which of the following must be true?
 
 
     <exercises>
-        <p>Exercises available at <url href="https://tbil.org/linear-algebra/preview/exercises/#/bank/AT4/"/>.</p>
+        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT4/"/>.</p>
     </exercises>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
@@ -1038,9 +1038,9 @@ Which of the following must be true?
                 <statement>
                     Suppose that <m>f:V \rightarrow W</m> is a linear transformation between two vector spaces <m>V</m> and <m>W</m>. State carefully what conditions <m>f</m> must satisfy. Let <m>\vec{0_V}</m> and <m>\vec{0_W}</m> be the zero vectors in <m>V</m> and <m>W</m> respectively.
                     <ul>
-                    <li>Prove that <m>f</m> is one-to-one if and only if <m>f(\vec{0_V}) = \vec{0_W}</m>, and that <m>\vec{0_V}</m> is the unique element of <m>V</m> which is mapped to <m>\vec{0_W}</m>. Remember that this needs to be done in both directions. First prove the if and only if statement, and then show the uniqueness.</li>
+                    <li>Prove that <m>f</m> is one-to-one if and only if <m>f(\vec{0_V}) = \vec{0_W}</m>, and that <m>\vec{0_V}</m> is the unique element of <m>V</m> which is mapped to <m>\vec{0_W}</m>. Remember that this needs to be done in both directions. First, prove the if and only if statement, and then show the uniqueness.</li>
 
-<li>Do not use subtraction in your proof. The only vector space operation we have is addition, and a structure preserving function only preserves addition. If you are writing <m>\vec{v} - \vec{v} = \vec{0}_V</m>, what you really mean is that <m>\vec{v} \oplus \vec{v}^{-1} = \vec{0}_V</m>, where <m>\vec{v}^{-1}</m> is the additive inverse of <m>\vec{v}</m>. </li>   </ul>
+<li>Do not use subtraction in your proof. The only vector space operation we have is addition, and a structure-preserving function only preserves addition. If you are writing <m>\vec{v} - \vec{v} = \vec{0}_V</m>, what you really mean is that <m>\vec{v} \oplus \vec{v}^{-1} = \vec{0}_V</m>, where <m>\vec{v}^{-1}</m> is the additive inverse of <m>\vec{v}</m>. </li>   </ul>
                 </statement>
     </exploration>
  <exploration><statement>

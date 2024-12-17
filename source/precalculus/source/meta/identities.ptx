@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<appendix xml:id="list-of-trig-identities" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Trigonometric Identities</title>
+      <identity xml:id="identity-pythagorean">
+        <title>Pythagorean Identities</title>
+        <statement>
+            <ul>
+                <li><m>\sin ^2(\theta)+\cos^2(\theta)=1</m></li>
+                <li><m>\tan ^2(\theta)+1 = \sec^2(\theta)</m></li>
+                <li><m>1+\cot^2(\theta)=\csc^2(\theta)</m></li>
+            </ul>
+        </statement>
+      </identity>
+
+      <identity xml:id="identity-sum-difference-formula">
+        <title>Sum and Difference Formulas</title>
+        <statement>
+            <ul>
+                <li><m>\sin \left(\alpha+\beta\right) = \sin\alpha\cos\beta+\cos\alpha\sin\beta</m></li>
+                <li><m>\sin \left(\alpha-\beta\right) = \sin\alpha\cos\beta-\cos\alpha\sin\beta</m></li>
+                <li><m>\cos \left(\alpha+\beta\right) = \cos\alpha\cos\beta-\sin\alpha\sin\beta</m></li>
+                <li><m>\cos \left(\alpha-\beta\right) = \cos\alpha\cos\beta+\sin\alpha\sin\beta</m></li>
+                <li><m>\tan \left(\alpha+\beta\right) = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m></li>
+                <li><m>\tan \left(\alpha-\beta\right) = \frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}</m></li>
+              </ul>
+        </statement>
+        </identity>
+        
+        <identity xml:id="identity-double-angle">
+        <title>Double Angle Formulas</title>
+        <statement>
+            <ul>
+                <li><m>\sin(2\theta)=2\sin\theta\cos\theta</m></li>
+                <li><m>\cos(2\theta)=\cos^2\theta-\sin^2\theta=1-2\sin^2\theta=2\cos^2\theta-1</m></li>
+                <li><m>\tan(2\theta)=\frac{2\tan\theta}{1-\tan^2\theta}</m></li>
+            </ul>
+        </statement>
+        </identity>
+        
+      <identity xml:id="identity-power-reduction">
+        <title>Power Reduction Formulas</title>
+        <statement>
+            <ul>
+                <li><m>\sin^2\theta=\frac{1-\cos2\theta}{2}</m></li>
+                <li><m>\cos^2\theta=\frac{1+\cos2\theta}{2}</m></li>
+                <li><m>\tan^2\theta=\frac{1-\cos2\theta}{1+\cos2\theta}</m></li>
+            </ul>
+        </statement>
+      </identity>
+
+      <identity xml:id="identity-half-angle">
+        <title>Half Angle Formulas</title>
+        <statement>
+            <ul>
+                <li>
+                    <p>
+                      <m>\sin\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{2}}</m> or <m>\sin\frac{\theta}{2}=-\sqrt{\frac{1-\cos\theta}{2}}</m>, depending on which quadrant <m>\theta</m> is in.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <m>\cos\frac{\theta}{2}=\sqrt{\frac{1+\cos\theta}{2}}</m> or <m>\cos\frac{\theta}{2}=-\sqrt{\frac{1+\cos\theta}{2}}</m>, depending on which quadrant <m>\theta</m> is in.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <m>\tan\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m> or <m>\tan\frac{\theta}{2}=-\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m>, depending on which quadrant <m>\theta</m> is in.
+                    </p>
+                  </li>
+            </ul>
+        </statement>
+     </identity>
+
+</appendix>

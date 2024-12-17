@@ -2,55 +2,69 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Explain how to find the following for the function <m>f(x)={{function}}</m>.
+            For <m>\displaystyle f(x) = {{f}} </m>, identify the regions for which <m>f(x)</m> is increasing and decreasing (if any).   Additionally, identify and classify all local extrema.
         </p>
     </intro>
-    <knowl>
-        <content>
-            <p>
-The open intervals where <m>f(x)</m> is increasing or decreasing.
-            </p>
-        </content>
-    <!-- {{#increasing}} -->
-        <outtro>
-            <p>
-The function increases on <m>(-\infty,{{a}})</m>,
-decreases on <m>({{a}},{{b}})</m>, and increases on
-<m>({{b}},\infty)</m>.
-            </p>
-        </outtro>
-    <!-- {{/increasing}} -->
-    <!-- {{#decreasing}} -->
-        <outtro>
-            <p>
-The function decreases on <m>(-\infty,{{a}})</m>,
-increases on <m>({{a}},{{b}})</m>, and decreases on
-<m>({{b}},\infty)</m>.
-            </p>
-        </outtro>
-    <!-- {{/decreasing}} -->
-    </knowl>
-    <knowl>
-        <content>
-            <p>
-The local extrema of <m>f(x)</m>.
-            </p>
-        </content>
-    <!-- {{#increasing}} -->
-        <outtro>
-            <p>
-The point <m>(x,y)=({{a}},{{fa}})</m> is a local maximum,
-and the point <m>(x,y)=({{b}},{{fb}})</m> is a local minimum.
-            </p>
-        </outtro>
-    <!-- {{/increasing}} -->
-    <!-- {{#decreasing}} -->
-        <outtro>
-            <p>
-The point <m>(x,y)=({{a}},{{fa}})</m> is a local minimum,
-and the point <m>(x,y)=({{b}},{{fb}})</m> is a local maximum.
-            </p>
-        </outtro>
-    <!-- {{/decreasing}} -->
-    </knowl>
+    
+    <outtro>
+        <!-- {{#case1}} -->
+        <p>
+            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is neither a max nor min.
+        </p>
+        
+        <!-- {{/case1}} -->
+        
+        <!-- {{#case2}} -->
+        <p>
+            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is a local minimum and a critical point <m>{{cp2}}</m> is a local maximum.
+        </p>
+        <!-- {{/case2}} -->
+        
+        
+        <!-- {{#case3}} -->
+        <p>
+            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There are no critical points.
+        </p>
+        <!-- {{/case3}} -->
+        
+        
+        <!-- {{#case4}} -->
+        
+        <!-- {{#odd}} -->
+        <p>
+            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is a local minimum.
+        </p>
+        <!-- {{/odd}} -->
+        <!-- {{#even}} -->
+        <p>
+            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There are critical points <m>{{cp1}}</m> which is a local maximum and <m>{{cp2}}</m> which is a local minimum.
+        </p>
+        <!-- {{/even}} -->
+        
+        
+       
+        <!-- {{/case4}} -->
+        
+        
+        
+        
+        
+    </outtro>
+
+        
 </knowl>

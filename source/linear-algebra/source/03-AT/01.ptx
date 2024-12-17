@@ -112,8 +112,8 @@ Given a linear transformation <m>T:V\to W</m>,
 <observation>
         <p>
 One example of a linear transformation <m>\IR^3\to\IR^2</m>
-is the projection of three-dimesional data onto a two-dimensional screen,
-as is necessary for computer animiation in film or video games.
+is the projection of three-dimensional data onto a two-dimensional screen,
+as is necessary for computer animation in film or video games.
         </p>
     <figure xml:id="figure-teapot-projection">
     <caption>A projection of a <m>3D</m> teapot onto a <m>2D</m> screen</caption>
@@ -230,7 +230,7 @@ Is <m>T</m> a linear transformation?
 </task>
 <task>
 <p>
-  Compute the result of scalar multiplcation before a <m>T</m> transformation:
+  Compute the result of scalar multiplication before a <m>T</m> transformation:
 <me>
 T\left(c\left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)
 =
@@ -749,7 +749,7 @@ and <m>T(cf(x))=cT(f(x))</m>.
 
 
     <exercises>
-        <p>Exercises available at <url href="https://tbil.org/linear-algebra/preview/exercises/#/bank/AT1/"/>.</p>
+        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT1/"/>.</p>
     </exercises>
 <subsection>    
     <title>Mathematical Writing Explorations</title>

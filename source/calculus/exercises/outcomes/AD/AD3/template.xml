@@ -36,13 +36,8 @@
     <!-- {{#shadow}} -->
 
             <content>
-                <!--
                 <p>
-                    Suppose a person who was <m> {{heightperson}} </m> feet tall was standing between a light on the ground and a wall.  They are <m>{{disttolight}}</m> feet away from the light and <m>{{disttowall}}</m> feet away from the wall.  If they start walking towards the {{persondirection}} at a speed of <m>{{personspeed}}</m> feet/second, how fast would the height of the shadow they cast change and in what direction?
-                </p>
-                 -->
-                <p>
-                    {{name}} is <m>{{heightperson}}</m> ft tall, and is walking in a straight line from a light on the ground toward a wall at a rate of <m>{{personspeed}}</m> ft/sec. At the moment {{pronoun1}} <m>{{disttolight}}</m> ft away from the light (and <m>{{disttowall}}</m> ft from the wall), how fast is the height of {{pronoun2}} shadow on the wall changing? In which direction is the shadow changing?
+                    {{name}} is <m>{{heightperson}}</m> ft tall, and is walking in a straight line from a light on the ground toward the {{persondirection}} at a rate of <m>{{personspeed}}</m> ft/sec. At the moment {{pronoun1}} <m>{{disttolight}}</m> ft away from the light (and <m>{{disttowall}}</m> ft from the wall), how fast is the height of {{pronoun2}} shadow changing? In which direction is the shadow changing?
                 </p>
             </content>
             <outtro>
