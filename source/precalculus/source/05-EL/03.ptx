@@ -109,7 +109,7 @@
   <task>
     <statement>
       <p>
-        Since <m>P</m> has an inverse function, we know there exists some other function, say <m>L</m>, such that <m>y=P(t)</m> represent the same relationship between <m>t</m> and <m>y</m> as <m>t=L(y)</m>.  In words, this means that <m>L</m> reverses the process of raising to the power of 10, telling us the <em>power</em> to which we need to raise 10 to produce a desired result.
+        Since <m>P</m> has an inverse function, we know there exists some other function, say <m>L</m>, such that <m>y=P(t)</m> represent the same relationship between <m>t</m> and <m>y</m> as <m>t=L(y)</m>.  In words, this means that <m>L</m> reverses the process of raising to the power of <m>10</m>, telling us the <em>power</em> to which we need to raise <m>10</m> to produce a desired result.
         
         Fill in the table of values for <m>L(y)</m>.
         <tabular halign="right">
@@ -188,7 +188,10 @@
     </statement>
     <answer>
       <p>
-        Domain <m>(-\infty, \infty)</m> Range <m>(0,\infty)</m>
+        Domain: <m>(-\infty, \infty)</m>
+      </p>
+      <p>
+        Range: <m>(0,\infty)</m>
       </p>
     </answer>
   </task>
@@ -200,14 +203,19 @@
       </statement>
       <answer>
         <p>
-          Domain <m>(0,\infty)</m> Range <m>(-\infty, \infty)</m>
+          Domain: <m>(0,\infty)</m>
+        </p>
+        <p>
+          Range: <m>(-\infty, \infty)</m>
         </p>
       </answer>
   </task>
 </activity>
+
 <remark>
-  The powers of 10 function <m>P(t)</m> has an inverse <m>L</m>.  This new function <m>L</m> is called the base 10 logarithm.  But, we could have done a similar procedure with any base, which leads to the following definition.
+  The powers of <m>10</m> function <m>P(t)</m> has an inverse <m>L</m>.  This new function <m>L</m> is called the base <m>10</m> logarithm.  But, we could have done a similar procedure with any base, which leads to the following definition.
 </remark>
+
 <definition xml:id="def-log">
   <statement>
     <p>
@@ -223,7 +231,7 @@
   <me>
     \log_{b}(x)=y \iff b^{y}=x 
   </me>
-  whenever <m> b \gt 0, b \neq 1 </m>
+  whenever <m> b \gt 0, b \neq 1 </m>.
 </remark>
 <activity xml:id="act-log-exp">
   <introduction>
