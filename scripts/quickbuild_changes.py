@@ -3,6 +3,8 @@ from git import Repo
 from pathlib import Path
 from lxml import etree
 import os
+import shutil
+from .preview_outcome import build_preview
 
 def main():
     repo = Repo()
@@ -41,6 +43,25 @@ def main():
                 "file": f,
                 "path": path
             })
+    # for each CheckIt file, build its preview
+    for b in BOOKS:
+        EXERCISE_FILES = [f for f in changed_files if Path("source", b, "exercises", "outcomes") in f.parents]
+        # collect changed outcomes
+        changed_outcomes = []
+        for f in EXERCISE_FILES:
+            if f.parent.name not in changed_outcomes:
+                changed_outcomes.append(f.parent.name)
+        # build changed outcomes
+        for o in changed_outcomes:
+            _, sandbox_bank_path = build_preview(b, o)
+            output_path = Path("output", f"{b}-web-instructor", "exercises", o)
+            shutil.copytree(sandbox_bank_path, output_path)
+            preview_links.append({
+                "file": f,
+                "path": f"/preview/{book}/instructor/exercises/{o}/"
+            })
+
+
     
     # create Javascript template for markdown output
     markdown = f"## 🚀 Preview available 🚀\n\n<${{cf_url}}>\n\n"
