@@ -241,8 +241,10 @@ In particular, the standard basis for <m>\mathbb R^3</m> is <m>\{\vec e_1,\vec e
   </definition>
 
 <commentary component="instructor">
-            <title>Instructor Note</title>
-                <p> Using format rat aligns the columns nicely and actually converts decimals to fractions, when applicable.</p>
+<paragraphs>
+   <title>Instructor Note</title>
+   <p> In Octave, using "format rat" aligns the columns nicely and actually converts decimals to fractions, when applicable.</p>
+</paragraphs>
 </commentary>
 
 <activity estimated-time='15'>
