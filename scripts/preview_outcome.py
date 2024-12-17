@@ -79,12 +79,6 @@ def build_preview(book:str, outcome:str, amount:int = 20):
 
     b.write_json()
 
-    return b, sandbox_bank_path
-
-
-def main(book:str, outcome:str, amount:int = 20):
-    b, sandbox_bank_path = build_preview(book, outcome, amount)
-
     # b.build_viewer() # <-- broken, reimplemented below
     docs_path = os.path.join(b.abspath(), "docs")
     if os.path.exists(docs_path) and os.path.isdir(docs_path):
@@ -94,6 +88,12 @@ def main(book:str, outcome:str, amount:int = 20):
     archive.extractall(docs_path)
     # copy assets
     shutil.copytree(b.build_path(), os.path.join(docs_path, "assets"), dirs_exist_ok=True)
+
+    return sandbox_bank_path
+
+
+def main(book:str, outcome:str, amount:int = 20):
+    sandbox_bank_path = build_preview(book, outcome, amount)
 
     subprocess.run(['python', '-m', 'http.server', '-d', str(sandbox_bank_path/'docs')])
 
