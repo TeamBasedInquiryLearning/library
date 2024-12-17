@@ -53,7 +53,7 @@ def main():
                 changed_outcomes.append(f.parent.name)
         # build changed outcomes
         for o in changed_outcomes:
-            _, sandbox_bank_path = preview_outcome.build_preview(b, o)
+            sandbox_bank_path = preview_outcome.build_preview(b, o)
             output_path = Path("output", f"{b}-web-instructor", "exercises", o)
             output_path.mkdir(parents=True)
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
