@@ -50,7 +50,7 @@
     </task>
     <task>
             <p>
-                Since <m>\cal{B}</m> is a basis, we know that if <m>\vec{v}\in \IR^3</m>, the following vector equation have will have a unique solution:
+                Since <m>\cal{B}</m> is a basis, we know that if <m>\vec{v}\in \IR^3</m>, the following vector equation will have a unique solution:
                 <me>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{v}</me>
                 Given this, we define a map <m>C_{\mathcal{B}}\colon\IR^3\to\IR^3</m> via the rule that <m>C_{\mathcal{B}}(\vec{v})</m> is equal to the unique solution to the above vector equation. 
                 The map <m>C_{\mathcal{B}}</m> is a linear map. 
