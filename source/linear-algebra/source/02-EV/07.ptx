@@ -156,12 +156,13 @@ used in this solution space?
 </ol>
     </p>
 </statement>    
-</task>
 <answer>
     <p>
         D.
     </p>
 </answer>
+</task>
+
     
 </activity>
 
@@ -196,6 +197,7 @@ Rewrite this solution space in the form <me>\setBuilder{ a \left[\begin{array}{c
     </p>
 </task>
 <task>
+<statement>
     <p>
 Which of these choices best describes the set of two vectors
 <m>\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}</m>
@@ -223,20 +225,18 @@ used in this solution space?
   </li>
 </ol>
     </p>
-</task>
-</activity>
+</statement>
 <answer>
     <p>
         D.
     </p>
-</answer>
+</answer>    
+</task>
+</activity>
+
 
 <sage language="octave">
     <input>
-    row1=[]
-    row2=[]
-    row3=[]
-    rref([row1;row2;row3])
     </input>
 </sage>
 
@@ -312,13 +312,14 @@ solution space?
 </ol>
         </p>
         </statement>
-    </task>
-</activity>
-<answer>
+        <answer>
     <p>
         A.
     </p>
 </answer>
+    </task>
+</activity>
+
 <sage language="octave">
 </sage>
 
