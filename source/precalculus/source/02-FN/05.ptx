@@ -602,7 +602,139 @@ Let functions <m>p</m> and <m>q</m> be given by the graphs below. </p>
     </task>
 </activity>
 
+<remark>
+  <p>
+    Now that we've seen how to compose functions, let's take a look at how composition of functions can be applicable in our lives.
+  </p>
+</remark>
+<activity>
+  <introduction>
+    <p>
+      Suppose you have a <m>$50</m>-off coupon and there is a <m>15\%</m>-off sale on a TV. If you are allowed to apply both the coupon and sale price of the TV, which one should you apply first? Let's investigate to determine the better deal.
+    </p>
+  </introduction>
 
+  <task>
+    <statement>
+      <p>
+        Write a cost function, <m>C(p)</m>, for the price of the TV, <m>p</m>, if you applied the <m>$50</m>-off coupon.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>C(p)=p-50</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Write a cost function, <m>S(p)</m>, for the price of the TV, <m>p</m>, if you applied the <m>15\%</m>-off sale.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>S(p)=p-.15p</m>
+      </p>
+      <p>
+        <m>S(p)=.85p</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Suppose you apply the coupon first and then the <m>15\%</m>-off sale. Write a composite function to represent this situation.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>S(C(p))=S(p-50)</m>
+      </p>
+      <p>
+        <m>S(C(p))=.85(p-50)</m>
+      </p>
+      <p>
+        <m>S(C(p))=.85p-42.5</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Suppose you apply the <m>15\%</m>-off sale first and then the coupon. Write a composite function to represent this situation.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>C(S(p))=C(.85p)</m>
+      </p>
+      <p>
+        <m>S(C(p))=(.85p)-50</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Suppose the original cost of the TV is <m>$500</m>. Determine the cost of the TV if you applied the coupon first.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        From part (c), we know that: <m>S(C(p))=.85p-42.5</m>
+      </p>
+      <p>
+        <m>S(C(500))=.85(500)-42.5</m> 
+      </p>
+      <p>
+        <m>S(C(500))=382.50</m> 
+      </p>
+      <p>
+        When applying the coupon first, the reduced cost of the TV is <m>$382.50</m>.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Suppose the original cost of the TV is <m>$500</m>. Determine the cost of the TV if you applied the <m>15\%</m>-off sale first.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        From part (d), we know that: <m>S(C(p))=(.85p)-50</m>
+      </p>
+      <p>
+        <m>S(C(500))=(.85(500))-50</m>
+      </p>
+      <p>
+        <m>S(C(500))=375</m>
+      </p>
+      <p>
+        When applying the <m>15\%</m>-off sale first, the reduced cost of the TV is <m>$375</m>.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Which is the better deal and how much would you save?
+      </p>
+    </statement>
+    <answer>
+    <p>
+      When applying the coupon first, the TV would cost <m>$382.50</m>. If applying the <m>15\%</m>-off sale first, however, the TV would cost <m>$375</m>. Applying the <m>15\%</m>-off sale first is the better deal, saving you <m>$125</m> (versus <m>$117.50</m>)! 
+    </p>
+  </answer>
+  </task>
+</activity>
 
 
     </subsection>
