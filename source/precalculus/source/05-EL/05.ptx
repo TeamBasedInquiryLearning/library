@@ -86,7 +86,13 @@
     <definition xml:id="def-one-to-one-property">
       <statement>
         <p>
-          The <term>one-to-one property of logarithms</term> states that if both sides of an equation can be rewritten as a single logarithm with the same base, then the arguments can be set equal to each other.
+         For any values <m>S>0</m> and <m>T>0</m>,  and where <m>b>0</m> and <m>b\neq 1</m>, 
+         
+         <p>
+            <me>\log_bM=\log_bN</me> if and only if <me>M=N.</me>
+          </p>
+         
+        <p> This is called the <term>one-to-one property of logarithms</term></p>
           <p>
             <me>\log_bM=\log_bN</me> if and only if <me>M=N</me>
           </p>
