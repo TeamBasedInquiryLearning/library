@@ -55,7 +55,8 @@ def main():
         for o in changed_outcomes:
             _, sandbox_bank_path = preview_outcome.build_preview(b, o)
             output_path = Path("output", f"{b}-web-instructor", "exercises", o)
-            shutil.copytree(sandbox_bank_path, output_path)
+            output_path.mkdir(parents=True)
+            shutil.copytree(sandbox_bank_path, output_path, dirs_exist_ok=True)
             preview_links.append({
                 "file": f,
                 "path": f"/preview/{book}/instructor/exercises/{o}/"
