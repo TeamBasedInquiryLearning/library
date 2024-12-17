@@ -59,7 +59,7 @@ def main():
             shutil.copytree(sandbox_bank_path, output_path, dirs_exist_ok=True)
             preview_links.append({
                 "file": f,
-                "path": f"/preview/{book}/instructor/exercises/{o}/"
+                "path": f"/preview/{b}/instructor/exercises/{o}/"
             })
 
 
