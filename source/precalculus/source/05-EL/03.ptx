@@ -97,7 +97,7 @@
   <task>
     <statement>
       <p>
-        Do you think P will have an inverse function? Why or why not?
+        Do you think <m>P</m> will have an inverse function? Why or why not?
       </p>
     </statement>
     <answer>
@@ -236,9 +236,9 @@
       <p>
         <m>\log_{7} (\sqrt{7})=\dfrac{1}{2}</m>
         <ol marker= "A." cols="2">
-          <li> <m>7^{\dfrac{1}{2}}=\sqrt{7}</m> </li>
+          <li> <m>7^{\frac{1}{2}}=\sqrt{7}</m> </li>
           <li> <m>7^{\sqrt{7}}=\dfrac{1}{2}</m> </li>
-          <li> <m>\sqrt{7}^{\dfrac{1}{2}}=7</m> </li>
+          <li> <m>\sqrt{7}^{\frac{1}{2}}=7</m> </li>
           <li> <m>\dfrac{1}{2}^{7}=\sqrt{7}</m> </li>
         </ol>
       </p>
@@ -317,7 +317,7 @@
         <m>3^{-1}=\dfrac{1}{3}</m>
         <ol marker= "A." cols="2">
           <li> <m>\log_{3} (-1)=\dfrac{1}{3}</m> </li>
-          <li> <m>\log_{\dfrac{1}{3}} (-1)=3</m> </li>
+          <li> <m>\log_{\frac{1}{3}} (-1)=3</m> </li>
           <li> <m>\log_{3} \left(\dfrac{1}{3}\right)=-1</m> </li>
           <li> <m>\log_{-1} \left(\dfrac{1}{3}\right)=3</m> </li>
         </ol>
@@ -611,7 +611,7 @@
   </task>
 </activity>
 <remark>
-  Notice that in <xref ref="act-log-calc"/> part (g) you were unable to evaluate the logarithm. Given that exponentials and logarithms are inverses, their domain and range are related.  The range of an expnential function is <m>(0,\infty)</m> which becomes the domain of a logarithmic function.  This means that the argument of any logarithmic function must be greater than zero.
+  Notice that in <xref ref="act-log-calc"/> part (g) you were unable to evaluate the logarithm. Given that exponentials and logarithms are inverses, their domain and range are related.  The range of an exponential function is <m>(0,\infty)</m> which becomes the domain of a logarithmic function.  This means that the argument of any logarithmic function must be greater than zero.
 </remark>
 
 <activity xml:id="act-log-domain">
@@ -623,7 +623,7 @@
   <task>
     <statement>
       <p>
-        Set up an inquality that you must solve to find the domain.
+        Set up an inequality that you must solve to find the domain.
       </p>
     </statement>
     <answer>
@@ -651,7 +651,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL3/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL3/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

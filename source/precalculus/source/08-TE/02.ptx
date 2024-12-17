@@ -12,10 +12,377 @@
     <subsection>
     <title>Activities</title>
 
+  <remark>
+   <p>Occasionally a question may ask you to “prove the identity” or “establish the identity.” In these situations, you must show the algebraic manipulations that demonstrate that the left and right side of the equation are equal. You can think of a “prove the identity” problem as a simplification problem where you know the answer: you know what the end goal of the simplification should be, and just need to show the steps to get there.
+   </p>
+
+   <p>
+    To prove an identity, start with the expression on one side of the identity and manipulate it using algebra and trigonometric identities until you have simplified it to the expression on the other side of the equation. Do not treat the identity like an equation! The proof is establishing the two expressions are equal, so work with one side at a time rather than applying an operation simultaneously to both sides of the equation.
+   </p>
+  </remark>
+
+  <activity xml:id="verify-identity-practice-1">
+
+    <introduction>
+      <p>
+        Follow the steps to verify the identity <m>\tan\theta\cdot\cos\theta=\sin\theta</m>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Rewrite the left-hand side so that each trigonometric function is written in terms of sine and cosine.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\theta\cos\theta</m> can be rewritten as <m>\frac{\sin\theta}{\cos\theta}\cdot\cos\theta</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now simplify the left-hand side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\sin\theta}{\cos\theta}\cdot\cos\theta</m> simplifies to <m>\sin\theta</m>
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    As we saw in <xref ref="verify-identity-practice-1"/>, sometimes it is easier to rewrite everything in terms of sine and cosine to see if one side of the equation simplifies.
+  </remark>
+
+  <activity xml:id="verify-identity-practice-2">
+    <introduction>
+      <p>
+        Verify the identity <m>\cos\theta + \sin\theta\tan\theta = \sec\theta</m>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Rewrite the left-hand side in terms of sine and cosine.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\theta + \sin\theta\tan\theta</m> can be rewritten as <m>\cos\theta+\sin\theta \left(\frac{\sin\theta}{\cos\theta} \right) </m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now find a common denominator to add the two fractions. Add the fractions so that you have one fraction on the left-hand side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The common denominator is <m>\cos\theta</m>. If we rewrite the left-hand side as two fractions with a common denominator, we would get <m>\frac{\cos^2\theta}{\cos\theta}+\frac{\sin^2\theta}{\cos\theta}</m>, which then combines to <m>\frac{\cos^2\theta+\sin^2\theta}{\cos\theta}</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Simplify the numerator of your fraction by using one of the Pythagorean Identities. 
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The numerator, <m>\cos^2\theta+\sin^2\theta</m>, is equal to <m>1</m>, which then gives us <m>\frac{1}{\cos\theta}</m>. This term is the same as <m>\sec\theta</m>.
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="verify-identity-practice-3">
+
+    <introduction>
+      <p>
+        Verify the following identity: <m>\frac{\tan\theta - \cot\theta}{\sin\theta\cos\theta} = \sec^2\theta - \csc^2\theta</m>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          In some cases, the more complex side involves a fraction that can be split up. How can we rewrite the left side of the equation so that we end up with two fractions?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>{\frac{\tan\theta - \cot\theta}{\sin\theta\cos\theta}</m> can be rewritten as <m>\frac{\tan\theta}{\sin\theta\cos\theta}-\frac{\cot\theta}{\sin\theta\cos\theta}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Rewrite <m>\tan\theta</m> and <m>\cot\theta</m> in terms of sine and cosine.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\frac{\sin\theta}{\cos\theta}}{\sin\theta\cos\theta}-\frac{\frac{\cos\theta}{\sin\theta}}{\sin\theta\cos\theta}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Simplify each complex fraction to verify that the left-hand side is equal to <m>\sec^2\theta-\csc^2\theta</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\frac{\sin\theta}{\cos\theta}}{\sin\theta\cos\theta}</m> simplifies to <m>\frac{1}{\cos^2\theta}</m>, which is equivalent to <m>\sec^2\theta</m>. <m>-\frac{\frac{\cos\theta}{\sin\theta}}{\sin\theta\cos\theta}</m> simplifies to <m>\frac{1}{\sin^2\theta}</m>, which is equivalent to <m>\csc^2\theta</m>.
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    Starting with the more complex side can sometimes make the simplification easier.
+  </remark>
+
+  <activity xml:id="verify-identity-practice-4">
+
+    <introduction>
+      <p>
+        Refer back to <xref ref="verify-identity-practice-3"/> to help you verify the identity: <m>\frac{\csc\theta-\sin\theta}{\sin\theta\csc\theta} = \csc\theta - \sin\theta</m>
+      </p>
+    </introduction>
+    <answer>
+      <p>
+      We can simplify the left-hand side in the following way:
+            <me>\frac{\csc\theta-\sin\theta}{\sin\theta\csc\theta}</me>
+            <me>\frac{\csc\theta}{\sin\theta\csc\theta}-\frac{\sin\theta}{\sin\theta\csc\theta}</me> 
+            <me>\frac{1}{\sin\theta}-\frac{1}{\csc\theta}</me>
+            <me>\csc\theta-\sin\theta</me>
+      </p>
+    </answer>    
+  </activity>
+
+  <activity xml:id="verify-identity-practice-5">
+    <introduction>
+      <p>
+        Verify the following identity: <m>\frac{\cos^2\theta}{1+\sin\theta}=1-\sin\theta</m>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Since the left side of the identity is more complicated, we should probably start there. To simplify this, we will have to reduce the fraction, which would require the numerator to have a factor in common with the denominator. Additionally, we notice that the right side only involves sine. Both of these suggest that we need to convert the cosine into something involving sine. Which identity could help us rewrite <m>\cos^2\theta</m> into sine?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin^2\theta+\cos^2\theta=1</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Rewrite the numerator of the left-hand side into a function of sine (use the Pythagorean Identity you found in part (a)).
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\cos^2\theta}{1+\sin\theta}</m> can be rewritten as <m>\frac{1-\sin^2\theta}{1+\sin\theta}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Take a look at the numerator you now have. How can we factor the numerator?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The numerator can be factored into <m>(1-\sin\theta)(1+\sin\theta)</m>. Students might see that this is a difference of squares.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Simplify by canceling out terms.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          From part (c), we can see that the left-hand side can be simplified to <m>\frac{(1-\sin\theta)(1+\sin\theta)}{1+\sin\theta}</m> and that the <m>1+\sin\theta</m> will cancel from the numerator and denominator. The result is <m>1-\sin\theta</m>, which is equal to the right-hand side.
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    As we saw in <xref ref="verify-identity-practice-5"/>, knowing how to factor can be very useful when simplifying trigonometric identities.
+  </remark>
+
+  <remark>
+    Using the property of conjugates is sometimes helpful in simplifying trigonometric identities.  For an expression like <m>a+b</m>, the conjugate would be <m>a-b</m>.  When you multiply conjugates, you often get a more useful expression.  Sometimes multiplying by the conjugate will simplify an expression and help in verifying the given identity. Let's try this method in the next activity.
+  </remark>
+
+  <activity xml:id="verify-identity-practice-6">
+    <introduction>
+      <p>
+        Verify the following identity: <m>\frac{\cos\theta}{1-\sin\theta}=\frac{1+\sin\theta}{\cos\theta}</m>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Let's start with the left-hand side. Multiply the left-hand side by the conjugate of <m>1-\sin\theta</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          When multiplying by the conjugate, do not distribute the <m>\cos\theta</m> in the numerator.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          If we multiply by <m>1+\sin\theta</m>, we will get <m>\frac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Rewrite the denominator of your fraction in part (a) so that the denominator is written in terms of cosine.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Use a Pythagorean Identity.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          Using the Pythagorean Identity, <m>\sin^2\theta+\cos^2\theta=1</m>, <m>\frac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m> can simplify to <m>\frac{\cos\theta(1+\sin\theta)}{\cos^2\theta}</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Simplify your expression from part (b) to get the right-hand side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By canceling out the <m>\cos\theta</m> from the numerator and denominator, <m>\frac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m> simplifies to <m>\frac{1+\sin\theta}{\cos\theta}</m>.
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    As we've seen from the activities from this section, there are some basic tools that can be helpful when verifying trigonometric identities. Here are just some suggestions as you continue to work through these types of problems.
+    <ul>
+      <li>
+        <p>
+          Work on one side of the equation. It is usually better to start with the more complex side, as it is easier to simplify than to build.
+        </p>
+      </li>
+      <li>
+        <p>
+          Look for opportunities to 
+          <ul>
+            <li>
+              <p>
+                Multiply expressions out and combine like terms or factor expressions and cancel
+              </p>
+            </li>
+            <li>
+              <p>
+                Split apart fractions or rewrite fractions with a common denominator, and combine fractions into a single fraction
+              </p>
+            </li>
+            <li>
+              <p>
+                Simplify two term denominators by using a Pythagorean substitution or simplify two term denominators by multiplying numerator and denominator by the conjugate of the binomial denominator.
+              </p>
+            </li>
+          </ul> 
+        </p>
+      </li>
+      <li>
+        <p>
+          Observe which functions are in the final expression, and look for opportunities to use identities
+        </p>
+      </li>
+      <li>
+        <p>
+          If all else fails, try rewriting all terms to sines and cosines.
+        </p>
+      </li>
+    </ul>
+  </remark>
+
+  <activity xml:id="verifying-practice-variety">
+
+    <introduction>
+      <p>
+        Use the tools you have learned in this section to verify each of the identities given below.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>2\tan\theta\sec\theta=\frac{2\sin\theta}{1-\sin^2\theta}</m>
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\frac{\sec^2\theta-1}{\sec^2\theta}=\sin^2\theta</m>
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\frac{\tan\theta}{1-\cos\theta}=\frac{1-\cos\theta}{\sin\theta\cos\theta}</m>
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/TE2/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TE2/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

@@ -317,7 +317,11 @@
     <definition xml:id="definitionlimitsequence">
         <statement>
         <p>
-            Given a sequence <m>\{x_n\}</m>, we say <m>x_n</m> has <em>limit</em> <m>L</m>, denoted <me>\lim_{n\to\infty} x_n=L</me> if we can make <m>x_n</m> as close to <m>L</m> as we like by making <m>n</m> sufficiently large.  If such an <m>L</m> exists, we say <em><m>\{x_n\}</m> converges to <m>L</m>.</em>  If no such <m>L</m> exists, we say <em><m>\{x_n\}</m> does not converge.</em>
+            Given a sequence <m>\{x_n\}</m>, we say <m>x_n</m> has <term>limit</term> <m>L</m>,
+            denoted <me>\lim_{n\to\infty} x_n=L</me> if we can make <m>x_n</m> as close to <m>L</m>
+            as we like by making <m>n</m> sufficiently large.  If such an <m>L</m> exists, we say
+            <em><m>\{x_n\}</m> <term>converges</term> to <m>L</m>.</em> 
+            If no such <m>L</m> exists, we say <m>\{x_n\}</m> <term>diverges</term>.
         </p>
             </statement>
     </definition>
@@ -350,7 +354,7 @@
         </task>
         <task>
             <p>
-                Which of the following ia most likely true about <m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m>?
+                Which of the following is most likely true about <m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m>?
                 <ol marker="A." cols="2">
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 4.</li>
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 0.</li>
@@ -415,7 +419,7 @@
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/SQ2/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/SQ2/"/>
         </p>
     </subsection>
     

@@ -113,9 +113,9 @@ What can you conclude about <m>S</m>?
             <!-- {{/count}} -->
             <!-- {{#quality}} -->
             <list>
-                <item><p>(a) <m>S</m> is linearly independent.</p></item>
+                <item><p>(a) <m>S</m> is linearly independent, but we cannot tell if it spans <m>\mathbb R^{ {{dim}} }</m>.</p></item>
                 <item><p>(b) <m>S</m> is a basis.</p></item>
-                <item><p>(c) <m>S</m> spans <m>\mathbb R^{ {{dim}} }</m>.</p></item>
+                <item><p>(c) <m>S</m> spans <m>\mathbb R^{ {{dim}} }</m>, but we cannot tell if it is linearly independent.</p></item>
                 <item><p>(d) <m>S</m> is linearly dependent and fails to span <m>\mathbb R^{ {{dim}} }</m>.</p></item>
             </list>
             <!-- {{/quality}} -->
@@ -142,7 +142,7 @@ What can you conclude about <m>S</m>?
             <!-- {{#quality}} -->
             <!-- {{#independent}} -->
                 <!-- {{^spans}} -->
-                <p>(a) <m>S</m> is linearly independent.</p>
+                <p>(a) <m>S</m> is linearly independent, but we cannot tell if it spans <m>\mathbb R^{ {{dim}} }</m>.</p>
                 <!-- {{/spans}} -->
                 <!-- {{#spans}} -->
                 <p>(b) <m>S</m> is a basis.</p>
@@ -150,7 +150,7 @@ What can you conclude about <m>S</m>?
             <!-- {{/independent}} -->
             <!-- {{^independent}} -->
                 <!-- {{#spans}} -->
-                <p>(c) <m>S</m> spans <m>\mathbb R^{ {{dim}} }</m>.</p>
+                <p>(c) <m>S</m> spans <m>\mathbb R^{ {{dim}} }</m>, but we cannot tell if it is linearly independent.</p>
                 <!-- {{/spans}} -->
                 <!-- {{^spans}} -->
                 <p>ERROR</p>
