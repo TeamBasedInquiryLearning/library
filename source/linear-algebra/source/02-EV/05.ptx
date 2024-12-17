@@ -240,16 +240,17 @@ In particular, the standard basis for <m>\mathbb R^3</m> is <m>\{\vec e_1,\vec e
     </statement>
   </definition>
 
+<commentary component="instructor">
+            <title>Instructor Note</title>
+                <p> Using format rat aligns the columns nicely and actually converts decimals to fractions, when applicable.</p>
+</commentary>
+
 <activity estimated-time='15'>
     <introduction>
         <p>
   Take the RREF of an appropriate matrix to determine
   if each of the following sets is a basis for <m>\IR^4</m>. When using Octave on these large matrices, try first typing "format rat" at the top before you 
   enter the matrices. What do you notice about the formatting? Is this helpful?
-        <commentary component="instructor">
-            <title>Instructor Note</title>
-                <p> Using format rat aligns the columns nicely and actually converts decimals to fractions, when applicable.</p>
-        </commentary>
         </p>
     </introduction>
     <task>
