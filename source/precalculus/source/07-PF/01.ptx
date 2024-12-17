@@ -27,115 +27,205 @@
       <task>
         <statement>
           <p>
-            Fill in the following table for <m>f(x)=\sin x</m>. Find the exact values, then approximate each to two decimal places. (Notice that the values in the table are all the standard angles found on the unit circle!)
-
-            NOTE FROM ABBY: this table looks terrible. 
-            <sidebyside>
+            Fill in the missing values in the table below for <m>f(x)=\sin x</m>. Find the exact values, then express as a decimal,  approximated to two decimal places if needed. (Notice that the values in the table are all the standard angles found on the unit circle!)
+            
+            <!-- <sidebyside> -->
             <tabular halign="center">
-              <row header="yes" bottom="minor" >
+              <row header="yes" bottom="medium" >
                 <cell> <m>x</m></cell>
-                <cell><m>f(x)</m> (exact)</cell>
-                <cell><m>f(x)</m> (approximate)</cell>
+                <cell><m>\sin x</m> (exact)</cell>
+                <cell><m>\sin x</m> (as a decimal)</cell>
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>0</m></cell>
                 <cell></cell>
                 <cell></cell>              
               </row>
-              <row>
+              <row bottom="minor"> 
                 <cell><m>\dfrac{\pi}{6}</m></cell>
-                <cell> </cell>
+                <cell> <m>\dfrac{1}{2}</m> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{4}</m></cell>
                 <cell> </cell>
-                <cell> </cell>               
+                <cell><m>\approx 0.71</m> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{3}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{2}</m></cell>
                 <cell> </cell>
-                <cell> </cell>               
+                <cell> <m>1</m> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{2\pi}{3}</m></cell>
-                <cell> </cell>
+                <cell><m>\dfrac{\sqrt{3}}{2}</m> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{3\pi}{4}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{5\pi}{6}</m></cell>
                 <cell> </cell>
-                <cell> </cell>               
+                <cell> <m>0.5</m> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\pi</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-            </tabular>
+            <!-- </tabular>
             <tabular halign="center">
               <row header="yes" bottom="minor" >
                 <cell> <m>x</m></cell>
                 <cell><m>f(x)</m> (exact)</cell>
                 <cell><m>f(x)</m> (approximate)</cell>
-              </row>
-              <row>
+              </row> -->
+              <row bottom="minor">
                 <cell><m>\dfrac{7\pi}{6}</m></cell>
-                <cell> </cell>
+                <cell><m>-\dfrac{1}{2}</m> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{5\pi}{4}</m></cell>
-                <cell> </cell>
+                <cell><m>\dfrac{\sqrt{2}}{2}</m> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{4\pi}{3}</m></cell>
                 <cell> </cell>
-                <cell> </cell>               
+                <cell> <m>\approx -0.87</m> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{3\pi}{2}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{5\pi}{3}</m></cell>
-                <cell> </cell>
+                <cell><m>-\dfrac{\sqrt{3}}{2}</m> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{7\pi}{4}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{11\pi}{6}</m></cell>
                 <cell> </cell>
-                <cell> </cell>               
+                <cell> <m>-0.5</m> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>2\pi</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
             </tabular>
-          </sidebyside>
+          <!-- </sidebyside> -->
           </p>
         </statement>
         <answer>
           <p>
-           Answers coming once the table is formatted and looks better!
+            <tabular halign="center">
+              <row header="yes" bottom="medium" >
+                <cell> <m>x</m></cell>
+                <cell><m>\sin x</m> (exact)</cell>
+                <cell><m>\sin x</m> (as a decimal)</cell>
+              </row>
+              <row bottom="minor">
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell>              
+              </row>
+              <row bottom="minor"> 
+                <cell><m>\dfrac{\pi}{6}</m></cell>
+                <cell> <m>\dfrac{1}{2}</m> </cell>
+                <cell><m>0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{4}</m></cell>
+                <cell><m>\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell><m>\approx 0.71</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{3}</m></cell>
+                <cell><m>\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell><m>\approx 0.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{2}</m></cell>
+                <cell> <m>1</m> </cell>
+                <cell> <m>1</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{2\pi}{3}</m></cell>
+                <cell><m>\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell><m>\approx 0.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{3\pi}{4}</m></cell>
+                <cell><m>\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell><m>\approx 0.71</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{5\pi}{6}</m></cell>
+                <cell><m>\dfrac{1}{2}</m> </cell>
+                <cell> <m>0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\pi</m></cell>
+                <cell><m>0</m> </cell>
+                <cell> <m>0</m></cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{7\pi}{6}</m></cell>
+                <cell><m>-\dfrac{1}{2}</m> </cell>
+                <cell> <m>-0.5</m></cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{5\pi}{4}</m></cell>
+                <cell><m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell><m>\approx -0.71</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{4\pi}{3}</m></cell>
+                <cell><m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell> <m>\approx -0.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{3\pi}{2}</m></cell>
+                <cell><m>-1</m> </cell>
+                <cell><m>-1</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{5\pi}{3}</m></cell>
+                <cell><m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell><m>\approx -0.87</m>  </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{7\pi}{4}</m></cell>
+                <cell><m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell><m>\approx -0.71</m>  </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{11\pi}{6}</m></cell>
+                <cell> <m>-\dfrac{\sqrt{1}}{2}</m></cell>
+                <cell> <m>-0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>2\pi</m></cell>
+                <cell><m>0</m> </cell>
+                <cell><m>0</m> </cell>               
+              </row>
+            </tabular>
           </p>
         </answer>
       </task>
@@ -143,12 +233,23 @@
       <task>
         <statement>
           <p>
-            Plot these values on a graph. 
+            Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\sin x</m>.  Then sketch in the graph of the sine curve using the points as a guide.
           </p>
         </statement>
         <answer>
-          <p>
-            insert pic
+          <p> 
+            <image>
+              <sageplot>
+f(x) = sin(x)
+p=Graphics()
+p+=plot(f, (x, 0, 6.28), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+for i in [0..12]:
+    p+=point((pi*i/6,sin(pi*i/6)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+for i in [0..8]:
+    p+=point((pi*i/4,sin(pi*i/4)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+p
+              </sageplot>
+            </image> 
           </p>
         </answer>
       </task>
@@ -178,32 +279,32 @@
         <statement>
           <p>Fill in the table below. 
             <tabular halign="center">
-              <row header="yes" bottom="minor" >
+              <row header="yes" bottom="medium" >
                 <cell> <m>x</m></cell>
                 <cell><m>f(x)=\sin x</m></cell>
                 <cell><m>g(x)=3\sin x</m> </cell>
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>0</m></cell>
                 <cell></cell>
                 <cell></cell>              
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{6}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{4}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{3}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-              <row>
+              <row bottom="minor">
                 <cell><m>\dfrac{\pi}{2}</m></cell>
                 <cell> </cell>
                 <cell> </cell>               
@@ -214,7 +315,39 @@
         </statement>
         <answer>
           <p>
-           Answers coming!
+            <tabular halign="center">
+              <row header="yes" bottom="medium" >
+                <cell> <m>x</m></cell>
+                <cell><m>f(x)=\sin x</m></cell>
+                <cell><m>g(x)=3\sin x</m> </cell>
+              </row>
+              <row bottom="minor">
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell>              
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{6}</m></cell>
+                <cell><m>\dfrac{1}{2}</m> </cell>
+                <cell><m>\dfrac{3}{2}</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{4}</m></cell>
+                <cell><m>\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell> <m>\dfrac{3\sqrt{2}}{2}</m></cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{3}</m></cell>
+                <cell><m>\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell><m>\dfrac{3\sqrt{3}}{2}</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{2}</m></cell>
+                <cell><m>1</m> </cell>
+                <cell><m>3</m> </cell>               
+              </row>
+            
+            </tabular>
           </p>
         </answer>
       </task>
@@ -335,7 +468,14 @@
         </statement>
         <answer>
           <p>
-           coming soon!
+            <image>
+              <sageplot>
+f(x) = sin(x)
+p=Graphics()
+p+=plot(f, (x, -6.28, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/4,0.5], tick_formatter=pi)
+p
+              </sageplot>
+            </image> 
           </p>
         </answer>
       </task>
@@ -353,15 +493,15 @@
       </statement>
     </definition>
 
-    <activity xml:id="activity-sine-period">
+    <activity xml:id="activity-sine-period-1">
       <introduction>
-        <p> Now let's look at <m>h(x)=\sin \left( \dfrac{1}{2}x \right)</m>. 
+        <p> Now let's look at <m>h(x)=\sin 2x</m>. 
         </p> 
       </introduction>
 
       <task>
         <statement>
-          <p>Think back to the types of transformations a function can have. (See <xref ref="FN4"/> if you need a refresher!) What kind of transformation is happening in <m>h(x)</m> compared the parent function <m>f(x)=\sin x</m>?
+          <p>Think back to the types of transformations a function can have. (See <xref ref="FN4"/> if you need a reminder!) What kind of transformation is happening in <m>h(x)</m> compared the parent function <m>f(x)=\sin x</m>?
             <ol marker= "A.">  
               <li> <p> A vertical stretch/compression. </p>  </li>
               <li> <p> A horizontal stretch/compression.  </p>  </li>
@@ -376,8 +516,692 @@
           </p>
         </answer>
       </task>
+
+      <task>
+        <statement>
+          <p>Which of the following graphs represents one cycle of <m>h(x)=\sin 2x</m>. (To help compare the functions, one cycle of <m>f(x)=\sin x</m> is shown as a dashed line on each graph.)  
+            <ol marker= "A." cols="2"> 
+              <li> <image>
+                <sageplot>
+                f(x) = 2*sin(x)
+                p=Graphics()
+                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                g(x) = sin(x)
+                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                p 
+                </sageplot> 
+              </image>   </li>
+              <li>
+                <image>
+                  <sageplot>
+                  f(x) = sin(2*x)
+                  p=Graphics()
+                  p+=plot(f, (x, 0, 3.14), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                  p 
+                  </sageplot>
+                </image> 
+              </li> 
+              <li> <image>
+                <sageplot>
+                f(x) = sin(0.5*x)
+                p=Graphics()
+                p+=plot(f, (x, 0, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                g(x) = sin(x)
+                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                p 
+                </sageplot> 
+              </image>  </li>
+            
+              <li> <image>
+                <sageplot>
+                f(x) = sin(x)+2
+                p=Graphics()
+                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                g(x) = sin(x)
+                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                p 
+                </sageplot> 
+              </image>   </li>
+              
+            
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           B
+          </p>
+        </answer>
+      </task>
+
+
+
+
       
     </activity>
+
+    <activity xml:id="activity-sine-period-2">
+      <introduction>
+        <p> Consider <m>j(x)=\sin \frac{1}{2}x</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>What type of transformation is happening in <m>j(x)</m> compared the parent function <m>f(x)=\sin x</m>?
+            <ol marker= "A.">  
+              <li> <p> A vertical stretch/compression. </p>  </li>
+              <li> <p> A horizontal stretch/compression.  </p>  </li>
+              <li> <p> A vertical shift. </p>  </li>
+              <li> <p> A horizontal shift.  </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           B
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>Which of the following graphs represents one cycle of <m>j(x)=\sin \frac{1}{2}x</m>. (To help compare the functions, one cycle of <m>f(x)=\sin x</m> is shown as a dashed line on each graph.) 
+            <ol marker= "A." cols="2"> 
+              <li> <image>
+                <sageplot>
+                f(x) = 2*sin(x)
+                p=Graphics()
+                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                g(x) = sin(x)
+                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                p 
+                </sageplot> 
+              </image>   </li>
+              <li>
+                <image>
+                  <sageplot>
+                  f(x) = sin(2*x)
+                  p=Graphics()
+                  p+=plot(f, (x, 0, 3.14), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                  p 
+                  </sageplot>
+                </image> 
+              </li> 
+              <li> <image>
+                <sageplot>
+                f(x) = sin(0.5*x)
+                p=Graphics()
+                p+=plot(f, (x, 0, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                g(x) = sin(x)
+                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                p 
+                </sageplot> 
+              </image>  </li>
+            
+              <li> <image>
+                <sageplot>
+                f(x) = sin(x)+2
+                p=Graphics()
+                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                g(x) = sin(x)
+                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                p 
+                </sageplot> 
+              </image>   </li>
+              
+            
+            </ol> 
+          </p>
+        </statement>
+        <answer>
+          <p>
+           C
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <remark xml:id="rem-find-period">
+      <statement>
+
+        <p>
+          When written as a function <m>f(x)=\sin Bx</m>, the <term>period</term> is <m>\dfrac{2\pi}{|B|}</m>.
+        </p>
+      </statement>
+    </remark>
+
+    <activity xml:id="activity-sine-phase-shift-1">
+      <introduction>
+        <p> Consider <m>k(x)=\sin \left(x+\dfrac{\pi}{2}\right)</m>. 
+        </p> 
+      </introduction>
+
+      <task>
+        <statement>
+          <p>What type of transformation is happening in <m>k(x)</m> compared the parent function <m>f(x)=\sin x</m>?
+            <ol marker= "A.">  
+              <li> <p> A vertical stretch/compression. </p>  </li>
+              <li> <p> A horizontal stretch/compression.  </p>  </li>
+              <li> <p> A vertical shift. </p>  </li>
+              <li> <p> A horizontal shift.  </p>  </li>
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>Which of the following graphs represents one cycle of <m>k(x)=\sin \left(x+\dfrac{\pi}{2}\right)</m>. (To help compare the functions, one cycle of <m>f(x)=\sin x</m> is shown as a dashed line on each graph.) 
+            <ol marker= "A." cols="2">  
+                <li> <image>
+                  <sageplot>
+                  f(x) = sin(x-pi/2)
+                  p=Graphics()
+                  p+=plot(f, (x, pi/2, 7.85), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                  p 
+                  </sageplot> 
+                </image>   </li>
+
+                <li> <image>
+                  <sageplot>
+                  f(x) = sin(x+pi/2)
+                  p=Graphics()
+                  p+=plot(f, (x, -1*pi/2, 3*pi/2), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                  p 
+                  </sageplot> 
+                </image>   </li>
+            
+                <li> <image>
+                  <sageplot>
+                  f(x) = sin(x)+pi/2
+                  p=Graphics()
+                  p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                  p 
+                  </sageplot> 
+                </image>   </li>
+                <li> <image>
+                  <sageplot>
+                  f(x) = sin(x)-pi/2
+                  p=Graphics()
+                  p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+                  g(x) = sin(x)
+                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+                  p 
+                  </sageplot> 
+                </image>   </li>
+            
+            </ol>  
+          </p>
+        </statement>
+        <answer>
+          <p>
+           B
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <definition xml:id="def-phase-shift">
+      <statement>
+        <p>
+          The <term>phase shift</term> is the amount which a sine function is shifted horizontally from the standard sine curve.
+        </p>
+        <p>
+          The <term>phase shift</term> for <m>f(x)=\sin (x-C)</m> is <m>C</m>, or <m>C</m> units to the right. The <term>phase shift</term> for <m>f(x)=\sin (x+C)</m> is <m>-C</m>, or <m>C</m> units to the left.
+        </p>
+        <p>
+          A function can have both a horizontal shift and a change in period. In that case, it could be written as <m>f(x)=\sin(Bx-C)</m>. Here the phase shift would be <m>\dfrac{C}{B}</m>. You can think of solving the equation <m>Bx-C=0</m> for <m>x</m>. A positive value would represent a shift to the right and a negative value would represent a shift to the left. 
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="activity-cosine-table">
+      <introduction>
+        <p> Let's now turn our focus to the cosine function, <m>f(x)=\cos x</m>.
+        </p> 
+      </introduction>
+
+      <task>
+        <statement><p>
+          Fill in the missing values in the table below for <m>f(x)=\cos x</m>. Find the exact values, then express as a decimal,  approximated to two decimal places if needed. (Notice that the values in the table are all the standard angles found on the unit circle!)
+          
+
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\cos x</m> (exact)</cell>
+              <cell><m>\cos x</m> (as a decimal)</cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+              <cell></cell>              
+            </row>
+            <row bottom="minor"> 
+              <cell><m>\dfrac{\pi}{6}</m></cell>
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{\pi}{4}</m></cell>
+              <cell> </cell>
+              <cell><m>\approx 0.71</m> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{\pi}{3}</m></cell>
+              <cell> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{\pi}{2}</m></cell>
+              <cell> </cell>
+              <cell> <m>0</m> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{2\pi}{3}</m></cell>
+              <cell><m>\dfrac{-1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{3\pi}{4}</m></cell>
+              <cell> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{5\pi}{6}</m></cell>
+              <cell> </cell>
+              <cell> <m>\approx -.87</m> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\pi</m></cell>
+              <cell> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{7\pi}{6}</m></cell>
+              <cell><m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{5\pi}{4}</m></cell>
+              <cell><m>\dfrac{-\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{4\pi}{3}</m></cell>
+              <cell> </cell>
+              <cell> <m>-0.5</m> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{3\pi}{2}</m></cell>
+              <cell> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{5\pi}{3}</m></cell>
+              <cell><m>\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{7\pi}{4}</m></cell>
+              <cell> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>\dfrac{11\pi}{6}</m></cell>
+              <cell> </cell>
+              <cell> <m>\approx 0.87</m> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>2\pi</m></cell>
+              <cell> </cell>
+              <cell> </cell>               
+            </row>
+          </tabular>
+
+        </p>
+      </statement>
+        <answer>
+          <p>
+            <tabular halign="center">
+              <row header="yes" bottom="medium" >
+                <cell> <m>x</m></cell>
+                <cell><m>\cos x</m> (exact)</cell>
+                <cell><m>\cos x</m> (as a decimal)</cell>
+              </row>
+              <row bottom="minor">
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>1</m></cell>              
+              </row>
+              <row bottom="minor"> 
+                <cell><m>\dfrac{\pi}{6}</m></cell>
+                <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell> <m>\approx 0.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{4}</m></cell>
+                <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell><m>\approx 0.71</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{3}</m></cell>
+                <cell> <m>\dfrac{1}{2}</m>  </cell>
+                <cell> <m>0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{\pi}{2}</m></cell>
+                <cell> <m>0</m></cell>
+                <cell> <m>0</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{2\pi}{3}</m></cell>
+                <cell><m>\dfrac{-1}{2}</m> </cell>
+                <cell><m>-0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{3\pi}{4}</m></cell>
+                <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+                <cell><m>\approx 0.71</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{5\pi}{6}</m></cell>
+                <cell><m>-\dfrac{\sqrt{3}}{2}</m>  </cell>
+                <cell> <m>\approx -.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\pi</m></cell>
+                <cell> <m>-1</m></cell>
+                <cell> <m>-1</m></cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{7\pi}{6}</m></cell>
+                <cell><m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell><m>\approx -0.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{5\pi}{4}</m></cell>
+                <cell><m>\dfrac{-\sqrt{2}}{2}</m> </cell>
+                <cell> <m>\approx -0.71</m></cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{4\pi}{3}</m></cell>
+                <cell><m>-\dfrac{1}{2}</m>  </cell>
+                <cell> <m>-0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{3\pi}{2}</m></cell>
+                <cell><m>0</m> </cell>
+                <cell><m>0</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{5\pi}{3}</m></cell>
+                <cell><m>\dfrac{1}{2}</m> </cell>
+                <cell><m>0.5</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{7\pi}{4}</m></cell>
+                <cell> <m>\dfrac{2}{2}</m> </cell>
+                <cell><m>\approx 0.71</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>\dfrac{11\pi}{6}</m></cell>
+                <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+                <cell> <m>\approx 0.87</m> </cell>               
+              </row>
+              <row bottom="minor">
+                <cell><m>2\pi</m></cell>
+                <cell><m>1</m> </cell>
+                <cell><m>1</m> </cell>               
+              </row>
+            </tabular>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\cos x</m>.  Then sketch in the graph of the cosine curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <image>
+              <sageplot>
+f(x) = cos(x)
+p=Graphics()
+p+=plot(f, (x, 0, 6.28), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+for i in [0..12]:
+    p+=point((pi*i/6,cos(pi*i/6)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+for i in [0..8]:
+    p+=point((pi*i/4,cos(pi*i/4)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+p
+              </sageplot>
+            </image> 
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is the range of the function? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>[-1,1]</m> 
+          </p>
+        </answer>
+      </task>
+      
+    </activity>
+
+   <observation xml:id="sin-shifted-cos">
+    <statement>
+    <p>
+      The cosine function, <m>f(x)=\cos x</m>, is equivalent to the sine function shifted to the left <m>\dfrac{\pi}{2}</m> units, <m>g(x)=\sin\left(x+ \dfrac{\pi}{2}\right)</m>.
+    </p>
+    <p>
+      Because of this, all of the methods we used to find amplitude, period, and phase shift for the sine function apply to the cosine function as well.
+    </p>
+  </statement>
+   </observation> 
+
+   <observation xml:id="graphs-sin-cos">
+    <statement>
+      <p>
+        Now that we can graph both the standard sine and cosine curves, we can add them to our list of parent functions (INSERT LINK TO APPENDIX HERE). We also show them graphed below on the interval <m>[0,2\pi]</m>.</p>
+
+        <p>
+        <m>f(x)=\sin x</m>
+        <image>
+          <sageplot>
+          f(x) = sin(x)
+          p=Graphics()
+          p+=plot(f, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+          p 
+          </sageplot> 
+        </image>
+      </p>
+      <p> 
+        <m>f(x)=\cos x</m>
+        <image>
+          <sageplot>
+          f(x) = cos(x)
+          p=Graphics()
+          p+=plot(f, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+          p 
+          </sageplot> 
+        </image>
+      </p>
+    </statement>
+     
+   </observation>
+
+   <activity xml:id="act-fluency-from-graph">
+    <introduction>
+      <p>
+        Find the amplitude, period, and phase shift of each of the following sine functions shown as a solid line. To help, <m>f(x)=\sin x</m> is shown as a dotted line.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <image>
+            <sageplot>
+            f(x) = 2*sin(x-pi/2)
+            p=Graphics()
+            p+=plot(f, (x, -pi/2, 7.85), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+            g(x) = sin(x)
+            p+=plot(g, (x, -pi/2, 7.85), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+            p 
+            </sageplot> 
+          </image> 
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Amplitude: <m>2</m>
+        </p>
+        <p>
+          Period: <m>2\pi</m>
+        </p>
+        <p>
+          Phase shift: <m>\dfrac{\pi}{2}</m> or <m>-\dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <image>
+            <sageplot>
+            f(x) = 0.5*sin(2*x+2*pi)
+            p=Graphics()
+            p+=plot(f, (x, -pi/2, 7.85),color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
+            g(x) = sin(x)
+            p+=plot(g, (x, -pi/2, 7.85), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
+            p 
+            </sageplot> 
+          </image> 
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Amplitude: <m>\dfrac{1}{2}</m>
+        </p>
+        <p>
+          Period: <m>\pi</m>
+        </p>
+        <p>
+          Phase shift: <m>-\pi</m> or <m>\pi</m>
+        </p>
+      </answer>
+    </task>
+
+  </activity>
+
+   <activity xml:id="act-fluency-from-equation">
+    <introduction>
+      <p>
+        Find the amplitude, period, and phase shift of each of the following functions.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f(x)=\dfrac{3}{2}\cos(x+\pi)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Amplitude: <m>\dfrac{3}{2}</m>
+        </p>
+        <p>
+          Period: <m>2\pi</m>
+        </p>
+        <p>
+          Phase shift: <m>-\pi</m> (or <m>\pi</m> to the left)
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(x)=3\sin(2x-\pi)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Amplitude: <m>3</m>
+        </p>
+        <p>
+          Period: <m>\pi</m>
+        </p>
+        <p>
+          Phase shift: <m>\dfrac{\pi}{2}</m> (or <m>\dfrac{\pi}{2}</m> to the right)
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(x)=4\sin\left(3x+\dfrac{\pi}{2}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Amplitude: <m>4</m>
+        </p>
+        <p>
+          Period: <m>\dfrac{2\pi}{3}</m>
+        </p>
+        <p>
+          Phase shift: <m>-\dfrac{\pi}{6}</m> (or <m>\dfrac{\pi}{6}</m> to the left)
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(x)=\dfrac{1}{2}\cos\left(2x+\dfrac{\pi}{4}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Amplitude: <m>\dfrac{1}{2}</m>
+        </p>
+        <p>
+          Period: <m>\pi</m>
+        </p>
+        <p>
+          Phase shift: <m>-\dfrac{\pi}{8}</m> (or <m>\dfrac{\pi}{8}</m> to the left)
+        </p>
+      </answer>
+    </task>
+    
+  </activity>
+
 
 
     </subsection>

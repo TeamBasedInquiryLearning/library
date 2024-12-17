@@ -17,12 +17,22 @@
                 In <xref ref="limit_censored" /> the graph of a function is given, but something is wrong. The graphic card failed and one portion did not render properly. We can’t see what is happening in the neighborhood of <m>x=2</m>. 
             </p>
             <figure xml:id="limit_censored">
-                <image width="50%" source="limit_censored.png" />
+                <image width="50%">
+                    <sageplot>
+                        x = var('x')
+                        f(x) = -x^3+5*x^2-5.5*x
+                        p = plot(f,(x,-1,3.5),ymin=-2,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+                        q = line([(2,0.1),(2,3)],thickness=10,color='black')
+                        sh = p+q
+                        sh
+                    </sageplot>
+                </image>
                 <caption>A graph of a function that has not been rendered properly.</caption>
             </figure>
-
         </introduction>
-        <task>
+        <task> 
+        <statement>
+            
             <p>
                 Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <m>y</m>-value are you approaching?
             </p>
@@ -33,9 +43,17 @@
                 <li><p>2</p></li>
                 <li><p>2.5</p></li>
             </ol>
+             </statement>
+             <answer>
+                <p>
+                    B. 1
+                </p>
+             </answer>
         </task>
         <task>
+        <statement>
             <p>
+                
                 Think of the same process, but this time from the right. You're falling down and to the left this time as you come close to the missing portion. What <m>y</m>-value are you approaching?
             </p>
             <ol marker="A." cols="3">
@@ -45,25 +63,48 @@
                 <li><p>2</p></li>
                 <li><p>2.5</p></li>
             </ol>
+            </statement>
+            <answer>
+                <p>
+                    B. 1
+                </p>
+             </answer>
         </task>
     </activity>
+
     <activity xml:id="activity-limits-graphically2" estimated-time="10">
         <introduction>
             <p>
                 In <xref ref="limit_uncensored" /> the graphic card is working again and we can see more clearly what is happening in the neighborhood of <m>x=2</m>. 
             </p>
             <figure xml:id="limit_uncensored">
-                <image width="50%" source="limit_uncensored.png" />
+                <image width="50%">
+                    <sageplot>
+                        x = var('x')
+                        f(x) = -x^3+5*x^2-5.5*x
+                        p = plot(f,(x,-1,3.5),ymin=-2,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+                        q = circle((2,1), .1,thickness=2, fill=True, facecolor="white")
+                        sh=p+q
+                        sh
+                    </sageplot>
+                </image>
                 <caption>A graph of a function that has rendered properly</caption>
             </figure>
-
         </introduction>
         <task>
+        <statement>
             <p>
                What is the value of <m>f(2)</m>?
             </p>
+            </statement>
+            <answer>
+            <p>
+              Does not exist.  
+            </p>
+            </answer>
         </task>
         <task>
+        <statement>
             <p>
         What is the <m>y</m>-value that is approached as we move toward <m>x = 2</m> from the left?
             </p>
@@ -74,8 +115,15 @@
                 <li><p>2</p></li>
                 <li><p>2.5</p></li>
             </ol>
+            </statement>
+            <answer>
+                <p>
+                    B. 1
+                </p>
+            </answer>
         </task>
         <task>
+        <statement>
             <p>
                 What is the <m>y</m>-value that is approached as we move toward <m>x = 2</m> from the right?
             </p>
@@ -86,6 +134,12 @@
                 <li><p>2</p></li>
                 <li><p>2.5</p></li>
             </ol>
+            </statement>
+            <answer>
+                <p>
+                    B. 1
+                </p>
+            </answer>
         </task>
     </activity>
     <remark>
@@ -130,12 +184,26 @@
                 
             </p>
             <figure xml:id="limit-left-and-right">
-                <image width="50%" source="limit-left-and-right.png" />
+                <image width="50%">
+                    <sageplot>
+                        x = var('x')
+                        f(x) = piecewise([((-3,-0.05),-1),((0.05,3),1)])
+                        p = plot(f,(x,-3,3),ymin=-2,ymax=2, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2)
+                        q = circle((0,-1), .1,thickness=1, fill=True, facecolor="white")
+                        r = circle((0,1), .1,thickness=1, fill=True, facecolor="white")
+                        s = circle((0,0), .1,thickness=1, fill=True, facecolor="blue")
+                        sh = p+q+r+s
+                        sh
+                    </sageplot>
+                </image>
                 <caption>A piecewise-defined function</caption>
             </figure>
-
+            <!-- 
+            
+            -->
         </introduction>
-        
+     <task>
+        <statement>
             <p>
         What is the limit as <m>x</m> approaches <m>0</m> in <xref ref="limit-left-and-right"/>?
             </p>
@@ -145,7 +213,13 @@
                 <li><p>The limit is 0</p></li>
                 <li><p>The limit is not defined</p></li>
             </ol>
-      
+      </statement>
+      <answer>
+        <p>
+            D. <p>The limit is not defined</p>
+        </p>
+      </answer>
+      </task>   
     </activity>
 
     <definition>
@@ -175,6 +249,7 @@
 
         </introduction>
         <task>
+        <statement>
             <p>
         Which of the following best matches the definition of right and left limits? (Note that DNE is short for "does not exist.")
             </p>
@@ -185,8 +260,15 @@
                 <li><p>The left limit is -1. The right limit DNE. </p></li>
                 <li><p>The left limit DNE. The right limit DNE. </p></li>
             </ol>
+            </statement>
+            <answer>
+                <p>
+                    A. <p>The left limit is -1. The right limit is 1. </p>
+                </p>
+            </answer>
          </task>
         <task>
+        <statement>
             <p>
         What do you think the overall limit equals?
             </p>
@@ -196,6 +278,12 @@
                 <li><p>The limit is 0</p></li>
                 <li><p>The limit is not defined</p></li>
             </ol>
+            </statement>
+            <answer>
+                <p>
+                    D. <p>The limit is not defined</p>
+                </p>
+            </answer>
          </task>
     </activity>
 
@@ -205,33 +293,72 @@
              Consider the following graph: 
             </p>
             <figure xml:id="limits-one-sided-fluency">
-                <image width="50%" source="limits-one-sided-fluency.png" />
+                <image width="50%">
+                    <sageplot>
+                        x=var('x')
+                        f(x) = piecewise([((-7,-1),-0.5*x+1.5),((-0.95,1.95),1/(x+1)),((1.96,7),-3*cos(pi*x))])
+                        c1 = circle((-1,2), 0.1,thickness=1,fill=True, facecolor="white")
+                        c2 = circle((2,1/3),0.1,thickness=1,fill=True, facecolor="white")
+                        c3 = circle((2,-3),0.1,thickness=1, fill=True, facecolor="blue")
+                        p=plot(f, (x,-7,7), ymin=-4, ymax=6, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2)
+                        sh=p+c1+c2+c3
+                        sh
+                    </sageplot> 
+                </image>
                 <caption>Another piecewise-defined function</caption>
             </figure>
-
-
         </introduction>
         <task>
+        <statement>
             <p>
        Find  <m>\displaystyle \lim_{x \to -3^-} f(x)</m> and <m>\displaystyle \lim_{x \to -3^+} f(x)</m>.
             </p>
+            </statement>
+            <answer>
+                <p>
+                   <m>\displaystyle \lim_{x \to -3^-} f(x) = 3</m> and  
+                    <m>\displaystyle \lim_{x \to -3^+} f(x)= 3 </m> 
+                </p>
+            </answer>
          </task>
           <task>
+          <statement>
             <p>
        Find  <m>\displaystyle \lim_{x \to -1^-} f(x)</m> and <m>\displaystyle \lim_{x \to -1^+} f(x)</m>.
             </p>
+            </statement>
+            <answer>
+                <p>
+                  <m>\displaystyle \lim_{x \to -1^-} f(x)=2 </m> and <m>\displaystyle \lim_{x \to -1^+} f(x) = DNE </m>   
+                </p>
+            </answer>
          </task>
           <task>
+          <statement>
             <p>
        Find  <m> \displaystyle \lim_{x \to 2^-} f(x)</m> and <m>\displaystyle \lim_{x \to 2^+} f(x)</m>.
             </p>
+            </statement>
+            <answer>
+                <p>
+                    <m> \displaystyle \lim_{x \to 2^-} f(x)= 0.5 </m> and <m>\displaystyle \lim_{x \to 2^+} f(x) = -3 </m>
+                </p>
+            </answer>
          </task>       
           <task>
+          <statement>
             <p>
        Find  <m>\displaystyle \lim_{x \to 4^-} f(x)</m> and <m> \displaystyle \lim_{x \to 4^+} f(x)</m>.
             </p>
+            </statement>
+            <answer>
+                <p>
+                <m>\displaystyle \lim_{x \to 4^-} f(x)</m> =-3 and <m> \displaystyle \lim_{x \to 4^+} f(x) = -3 </m>    
+                </p>
+            </answer>
          </task>
          <task>
+         <statement>
             <p>
        For which <m>x</m>-values does the <em>overall</em> limit exist? Select all. If the limit exists, find it. If it does not, explain why. 
             </p>
@@ -241,9 +368,15 @@
                  <li><m>2</m></li>
                 <li><m>4</m></li>
             </ol>
+            </statement>
+            <answer>
+                <p>
+                   At  A.  -3  and D. 4, the limit exist. 
+                </p>
+            </answer>
          </task>
     </activity>
-
+<task>
      <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
     <statement>
         <p>Sketch the graph of a function <m>f(x)</m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
@@ -261,9 +394,10 @@
             <!-- Jump Discontinuity -->
                     <li><p><m>\displaystyle \lim_{x\to -1^-} f(x)=-1</m> but <m>\displaystyle \lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
         </ol>
-    </statement>   
+    </statement> 
+
     </activity>
-    
+    </task>
           <theorem xml:id="squeeze-thm"> 
              <statement> 
              <p> Suppose that: </p> 
@@ -282,31 +416,59 @@
                 <p> The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, while the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Squeeze Theorem? What is the conclusion?
 </p>
             </statement>
+            
         </task>
         <task>
             <statement>
                 <p> The assumptions of the Squeeze Theorem can be restated informally as “the function <m>g</m> is squeezed between the functions <m>f</m> and <m> h</m> around <m>a</m>.” Explain in your own words how the two assumptions result into a “squeezing effect.”
 </p>
             </statement>
+            
         </task>
         <task>
             <statement>
                 <p> Let’s see an example of the application of this theorem. First examine the following picture. Explain why, from the picture, it seems that both assumptions of the theorem hold. </p>
                 <figure xml:id="squeeze">
-                <image width="100%" source="squeeze.png" />
+                    <image>
+                        <sageplot>
+                            x=var('x')
+                            h(x) = 1
+                            g(x) = cos(0.5*x)
+                            f(x) = cos(x)
+                            p1=plot(f, (x,-pi,pi), ymin=-1.5, ymax=1.5, gridlines=True, axes_labels=('$x$',''), thickness=2, color="blue")
+                            p2=plot(g, (x,-pi,pi), ymin=-1.5, ymax=1.5, gridlines=True, axes_labels=('$x$',''), thickness=2, color="red")
+                            p3=plot(h, (x,-pi,pi), ymin=-1.5, ymax=1.5, gridlines=True, axes_labels=('$x$',''), thickness=2, color="green")
+                            label1 = text('$h(x)$', (2,1.25), color="green", fontsize="xx-large")
+                            label2 = text('$g(x)$', (2,.75), color = "red", fontsize="xx-large")
+                            label3 = text('$f(x)$', (2,-.75),color = "blue", fontsize="xx-large")
+                            sh = p1+p2+p3+label1+label2+label3
+                            sh
+                        </sageplot>
+                    </image>
                 <caption>A pictorial example of the Squeeze Theorem.</caption>
             </figure>
             </statement>
+            
         </task>
         <task>
             <statement>
                 <p> Match the functions <m>f(x), g(x), h(x)</m> in the picture to the functions <m>\cos(x), 1, \dfrac{\sin(x)}{x}</m>.</p>
             </statement>
+            <answer>
+                <p>
+                    <m> f(x)= \cos x</m>,  <m> g(x)= \dfrac{\sin(x)}{x}</m>, and <m> h(x)= 1 </m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p> Using trigonometry, one can show algebraically that <m>\cos(x) \leq \dfrac{\sin(x)}{x} \leq 1 </m> for <m>x</m> values close to zero. Moreover, <m>\displaystyle\lim_{x \to 0} \cos(x) = \cos(0)=1</m> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <m>\displaystyle\lim_{x\to 0} \dfrac{\sin(x)}{x} </m>.</p>
             </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0} \dfrac{\sin(x)}{x} = 1 </m>
+                </p>
+            </answer>
         </task>
     </activity> 
     
