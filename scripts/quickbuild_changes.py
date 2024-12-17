@@ -4,7 +4,7 @@ from pathlib import Path
 from lxml import etree
 import os
 import shutil
-from .preview_outcome import build_preview
+from . import preview_outcome
 
 def main():
     repo = Repo()
@@ -53,7 +53,7 @@ def main():
                 changed_outcomes.append(f.parent.name)
         # build changed outcomes
         for o in changed_outcomes:
-            _, sandbox_bank_path = build_preview(b, o)
+            _, sandbox_bank_path = preview_outcome.build_preview(b, o)
             output_path = Path("output", f"{b}-web-instructor", "exercises", o)
             shutil.copytree(sandbox_bank_path, output_path)
             preview_links.append({
