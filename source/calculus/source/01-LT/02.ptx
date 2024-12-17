@@ -69,6 +69,8 @@
                 </row>
             </tabular>
         </table>
+        
+        
         <p>
         Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\displaystyle\lim_{x\to 7} f(x)</m>?
         <ol marker="A." cols="2">
@@ -78,6 +80,13 @@
             <li><p> the limit is approximately 0.1667</p></li>
             <li><p> the limit is approximately 6.9999</p></li>
         </ol>
+        
+         <answer>
+          <p>
+            D. The limit is approximately 0.1667
+          </p>
+         </answer>
+         
         </p>
     </activity>
     
@@ -156,6 +165,11 @@ the function as <m>x</m> tends to 2?
             <li><p> The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure. </p></li>
             <li><p> The limit cannot be approximated because the function might not exist at <m>x = 2</m>.</p></li>
         </ol>
+         <answer>
+          <p>
+            C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
+          </p>
+         </answer> 
     </activity>
 
     <activity xml:id = "activity-limits-numerically3">
@@ -223,6 +237,11 @@ the function as <m>x</m> tends to 2?
             <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
             <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
         </ol>
+        <answer>
+          <p>
+            B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
+          </p>
+        </answer>
     </activity>
 
 
@@ -231,6 +250,7 @@ the function as <m>x</m> tends to 2?
     <p>Consider the following function <m>f(x)= 3x^3 + 2x^2- 5x+20.</m></p>
            </introduction>
        <task>
+       <statement>
         <p> Of the following options, at which values given would you evaluate <m>f(x)</m> to best determine <m>\displaystyle \lim_{x \to 2}f(x)</m> numerically?</p>
         
                <ol marker="A." cols="2">
@@ -239,11 +259,23 @@ the function as <m>x</m> tends to 2?
                     <li><p> 1.8, 1.9, 2.0, 2.1, 2.2</p></li>
                     <li><p> 1.0, 1.5, 2.0, 2.5, 3.0</p></li>
                 </ol>
-
+ </statement>
+              <answer>
+                <p>
+                  B. 1.98, 1.99, 2.0, 2.01, 2.02
+                </p>
+              </answer>
         </task>
 
 <task>  
+<statement>
         <p> Use the values that you chose in part (a) to calculate an approximation for <m>\displaystyle\lim_{x \to 2}f(x)</m>. </p>
+        </statement>
+        <answer>
+                <p>
+                  41.22, 41.61, 42, 42.39, 42.78
+                </p>
+              </answer>
         </task>
 <task>
         <p> Which value best describes the limit that you obtained in part (b)?</p>
@@ -254,7 +286,11 @@ the function as <m>x</m> tends to 2?
             <li><p> The approximate value is 41.75</p></li>
             <li><p> The approximate value is 42</p></li>
         </ol>
-        
+        <answer>
+                <p>
+                  D. The approximate value is 42.
+                </p>
+              </answer>
 </task>
     </activity>
 
@@ -341,13 +377,26 @@ the function as <m>x</m> tends to 2?
             <li><p> The limit does not exist because you are dividing by zero when <m>x = 0</m> for <m>f(x).</m></p></li>
 
         </ol>
-         </statement> </task>   
+         </statement> 
+         <answer>
+          <p>
+            C. The limit does not exist because the function is oscillating between -1 and 1.
+          </p>
+         </answer>
+         </task>   
  <task> <statement>
         <p>Would your conclusion that resulted from <xref ref = "activity-limits-numerically5"/> change if the function was <m>f(x) = \cos(1/x)</m> or <m>f(x) = \tan(1/x)</m>?</p>
-        </statement> </task>   
+        </statement>
+        <answer>
+          <p>
+            No, both <m>f(x) = \tan(1/x)</m> and <m>f(x) = \cos(1/x)</m> oscillate as <m> x </m> tends to 0. 
+          </p>
+        </answer>
+         </task>   
     </activity>
 
         <activity checkit-seed="0014" checkit-slug="LT2" checkit-title="Limits numerically">
+   
     <statement>
         <p>
 Use technology to complete the following table of values.
@@ -364,7 +413,9 @@ Then explain how to use it to make an educated guess as to the value of
 the limit <me>\displaystyle \lim_{ x\to -3 } \dfrac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }</me>
         </p>
     </statement>
-<!--     <answer>
+   
+    
+    <answer>
         <p>
             <me>
 \begin{array}{c|ccccccc}
@@ -376,7 +427,7 @@ f(x) &amp; -0.71717&amp; -0.7017&amp; -0.70017&amp; DNE&amp; -0.69983&amp; -0.69
         <p>
 The limit is <m>-0.7</m>.
         </p>
-    </answer> -->
+    </answer> 
 </activity>
     
     <aside>
@@ -466,15 +517,45 @@ The limit is <m>-0.7</m>.
         </table>
 </introduction>
      <task> <statement> <p>What was the average velocity on the first 50 meters? On the second 50 meters? </p>
-         </statement> </task>  
+         </statement> 
+         <answer>
+          <p>
+            The average velocity on the first 50 meters is <m>9.09</m> meters per second  and   <m>11.93 </m> meters per second on the second 50 meters.
+          </p>
+         </answer>
+         </task>  
                  <task> <statement> <p>What was the average velocity between 30 and 50 meters? Between 50 and 70 meters? </p>
-                  </statement> </task>    
+                  </statement>
+                  <answer>
+          <p>
+            The average velocity between 30 and 50 meters is   <m>11.62 </m> meters per second and   <m>12.19 </m> meters per second between 50 and 70 meters.
+          </p>
+         </answer>
+                   </task>    
                  <task> <statement> <p> What was the average velocity between 40 and 50 meters? Between 50 and 60 meters? </p>
-         </statement> </task> 
+         </statement>
+          <answer>
+          <p>
+            The average velocity between 40 and 50 meters is   <m>11.76 </m> meters per second and   <m>12.20 </m> meters per second between 50 and 60 meters.
+          </p>
+         </answer>
+          </task> 
             <task> <statement> <p>What is your best estimate for the Usain's velocity at the instant when he passed the 50 meters mark? This is your estimate for the instantaneous velocity. </p>
-         </statement> </task> 
+         </statement> 
+          <answer>
+          <p>
+            <m>12</m> meters per second.
+          </p>
+         </answer>
+          </task> 
                <task> <statement> <p>Using the table of values, explain why 50 meters is NOT the best guess for when the instantaneous velocity was the largest. What other point would be more reasonable? </p>
-         </statement> </task> 
+         </statement>
+        <answer>
+          <p>
+            <m>60</m>, <m>70</m>, or <m>80</m> meters are all more reasonable.
+          </p>
+         </answer>
+          </task> 
     </activity>
     
     </subsection>
