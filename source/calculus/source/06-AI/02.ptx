@@ -20,24 +20,12 @@
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
                     <image xml:id="parabolaarclength" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1,2,3,4,5}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {0,...,10}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*\x^2+6*\x });
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f(x) = -x^2+6*x
+                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'), aspect_ratio=.5)
+                            p
+                        </sageplot> 
                     </image>
             </figure>
             </p>
@@ -50,33 +38,26 @@
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with two line segments where <m>\Delta x=2</m>.</caption>
                     <image xml:id="parabolaarclengthtwopieces" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1,2,3,4,5}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {0,...,10}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*\x^2+6*\x });
-                            
-                               \draw[dashed] (0,0)--(2,8)--(4,8);
-                                
-                               \draw[fill] (0,0) circle (2pt);
-                               \draw[fill] (2,8) circle (2pt);
-                               \draw[fill] (4,8) circle (2pt);
-                            
-                           
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = -x^2+6*x
+                            segment_1 = line(([0,0],[2,f(2)]),linestyle='dashed')
+                            segment_2 = line(([2,f(2)],[4,f(4)]),linestyle='dashed')
+                            f0 = ellipse((0,f(0)),0.05,0.1,facecolor='black',fill=True)
+                            f2 = ellipse((2,f(2)),0.05,0.1,facecolor='black',fill=True)
+                            f4 = ellipse((4,f(4)),.05,0.1,facecolor='black',fill=True)
+                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'))
+                            geometry += f0
+                            geometry += f2
+                            geometry += f4
+                            geometry += segment_1
+                            geometry += segment_2
+                            geometry += p
+                            geometry.set_aspect_ratio(0.5)
+                            geometry
+                        </sageplot>     
                     </image>
             </figure>
                     </p>
@@ -97,35 +78,34 @@
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with four line segments where <m>\Delta x=1</m>.</caption>
                     <image xml:id="parabolaarclengthfourpieces" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1,2,3,4,5}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {0,...,10}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*\x^2+6*\x });
-                            
-                               \draw[dashed] (0,0)--(1,5)--(2,8)--(3,9)--(4,8);
-                                
-                               \draw[fill] (0,0) circle (2pt);
-                               \draw[fill] (1,5) circle (2pt);
-                               \draw[fill] (2,8) circle (2pt);
-                               \draw[fill] (3,9) circle (2pt);
-                               \draw[fill] (4,8) circle (2pt);
-                            
-                           
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = -x^2+6*x
+                            segment_0 = line(([0,0],[1,f(1)]),linestyle='dashed')
+                            segment_1 = line(([1,f(1)],[2,f(2)]),linestyle='dashed')
+                            segment_2 = line(([2,f(2)],[3,f(3)]),linestyle='dashed')
+                            segment_3 = line(([3,f(3)],[4,f(4)]),linestyle='dashed')
+                            f0 = ellipse((0,f(0)),0.05,0.1,facecolor='black',fill=True)
+                            f1 = ellipse((1,f(1)),0.05,0.1,facecolor='black',fill=True)
+                            f2 = ellipse((2,f(2)),0.05,0.1,facecolor='black',fill=True)
+                            f3 = ellipse((3,f(3)),0.05,0.1,facecolor='black',fill=True)
+                            f4 = ellipse((4,f(4)),0.05,0.1,facecolor='black',fill=True)
+                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'))
+                            geometry += f0
+                            geometry += f1
+                            geometry += f2
+                            geometry += f3
+                            geometry += f4
+                            geometry += segment_0
+                            geometry += segment_1
+                            geometry += segment_2
+                            geometry += segment_3
+                            geometry += p
+                            geometry.set_aspect_ratio(0.5)
+                            geometry
+                        </sageplot>
                     </image>
             </figure>
             </p>
@@ -144,34 +124,32 @@
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.</caption>
                     <image xml:id="parabolaarclengthnpieces" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-.5,-0.5) grid (5.5,10.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,0) -- (0,10) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1,2,3,4,5}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {0,...,10}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*\x^2+6*\x });
-                            
-                               \draw[dashed, red] (2.1,8.19)--(2.65,8.8775)--(2.65,8.19)--(2.1,8.19);
-                                
-                               \draw[fill, red] (2.1,8.19) circle (2pt);
-                               \draw[red] (2.1,8.19)--node[above left]{$(x_0,f(x_0))$} (2.1,8.19);
-                               \draw[red] (2.65,8.8775)--node[above right]{$(x_0+\Delta x,f(x_0+\Delta x))$} (2.65,8.8775);
-                               \draw[fill, red] (2.65,8.8775) circle (2pt);
-                            
-                               \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt, red](2.1,8.19)--(2.65,8.19) node[red,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = -x^2+6*x
+                            f0 = ellipse((2,f(2)),0.05,0.1,fill=True,facecolor='red')
+                            f1 = ellipse((2.5,f(2.5)),0.05,0.1,fill=True,facecolor='red')
+                            x_leg = line(([2,f(2)],[2.5,f(2)]),linestyle='dashed',color='red')
+                            y_leg = line(([2.5,f(2)],[2.5,f(2.5)]),linestyle='dashed',color='red')
+                            hyp = line(([2,f(2)],[2.5,f(2.5)]),linestyle='dashed',color='red')
+                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'))
+                            deltaX = text('$\\Delta x$',(2.25,f(1.8)),color='red',fontsize=12)
+                            f0_label = text('$(x_0,f(x_0))$',(1.25,f(2)), color='red',fontsize=12)
+                            f1_label = text('$(x_0+\\Delta x,f(x_0+\\Delta x))$',(3.5,9.5), color='red',fontsize=12)
+                            geometry += f0
+                            geometry += f1
+                            geometry += x_leg
+                            geometry += y_leg
+                            geometry += hyp
+                            geometry += p
+                            geometry += deltaX
+                            geometry += f0_label
+                            geometry += f1_label
+                            geometry.set_aspect_ratio(0.5)
+                            geometry
+                        </sageplot>     
                     </image>
             </figure>
             </p>
