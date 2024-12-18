@@ -8,7 +8,7 @@ import lxml.etree as ET
 from checkit.bank import Bank
 from checkit import static
 
-def main(book:str, outcome:str, amount:int = 20):
+def build_preview(book:str, outcome:str, amount:int = 20):
     # check that this outcome exists
     exercise_path = Path("source", book, "exercises")
     sage_library_path = Path("source", book, "sage")
@@ -89,8 +89,14 @@ def main(book:str, outcome:str, amount:int = 20):
     # copy assets
     shutil.copytree(b.build_path(), os.path.join(docs_path, "assets"), dirs_exist_ok=True)
 
+    return sandbox_bank_path
+
+
+def main(book:str, outcome:str, amount:int = 20):
+    sandbox_bank_path = build_preview(book, outcome, amount)
 
     subprocess.run(['python', '-m', 'http.server', '-d', str(sandbox_bank_path/'docs')])
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Preview a CheckIt outcome.')
