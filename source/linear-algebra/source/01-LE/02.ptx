@@ -646,7 +646,21 @@ in many applications we use it for in <xref ref="EV"/>.
 
 
 
-
+<commentary component="instructor">
+<paragraphs>
+   <title>Instructor Note</title>
+    <p> 
+        In the following 4-part activity, students make decisions about which row operations are most helpful for them in producing the RREF. 
+        The matrices appearing in parts (b) and (c) are obtained by applying specific choices of row operations to the matrix appearing previously; the matrix in part (d) is the one that we started with. 
+    </p>
+    <p>
+        Our experience in facilitating these activities is that student reasoning in part (a) is largely grounded in the production of zeroes, no matter how they appear; because of this, all of the choices in part (a) may appear to be equally valid to them. 
+        In contrast, choices made in parts (b) and (c) are more constrained as our students recognize the utility of using the marked pivot intentionally to clear entries above and below.
+        By revisiting the original matrix in part (d) after marking the pivot position, the instructor can highlight how choices are more intentionally guided by the pivots. 
+        In turn, this helps students develop a more strategic approach, which is codified in the observation following the activity.  
+    </p>
+</paragraphs>
+</commentary>
 <activity estimated-time='15'>
     <task>
     <p>
@@ -721,13 +735,6 @@ in many applications we use it for in <xref ref="EV"/>.
         </ol>
     </task>
 </activity>
-<commentary component="instructor">
-<paragraphs>
-   <title>Instructor Note</title>
-   <p> The fact that the matrix considered in part (d) is the same as in (a) is intentional. 
-   As you're facilitating this discussion with your students, explore how your students' reasoning has changed in coming to an answer in (d) compared to how they answered in (a).</p>
-</paragraphs>
-</commentary>
 
 <observation>
     <p>
