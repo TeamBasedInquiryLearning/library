@@ -1,3 +1,4 @@
+from sage.symbolic.function_factory import function_factory
 class Generator(BaseGenerator):
   def data(self):
     a=1
@@ -22,10 +23,8 @@ class Generator(BaseGenerator):
       d = choice(range(1,6))*choice([-1,1])
     
     f=a*log(k*x-c)/log(b)+d
-    if a == 1:
-      f_string = f"\\log _{{ {b} }} \\left({k*x-c}\\right)+{d}"
-    else:
-      f_string = f"-\\log _{{ {b} }} \\left({k*x-c}\\right)+{d}"
+    logb = function_factory("logb", 1, f"\\log_{{ {b} }}")
+    f_string = latex(a*logb(k*x-c)+d)
 
     return {
       "f": f,
