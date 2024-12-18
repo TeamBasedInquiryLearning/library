@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <titlepage>
+  <bibinfo>
     <xi:include href="../../../common/authors/clontz.ptx"/>
     <xi:include href="../../../common/authors/lewis.ptx"/>
     <credit>
@@ -43,7 +43,8 @@
       </author>
     </credit>
     <date><today /></date>
-  </titlepage>
+  </bibinfo>
+  <titlepage><titlepage-items/></titlepage>
 
   <colophon xml:id="colophon">
     <xi:include href="../../../common/website.ptx"/>
