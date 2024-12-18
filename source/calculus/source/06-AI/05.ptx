@@ -534,29 +534,33 @@
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        a = 0       # Start of the interval
+                        b = 4       # End of the interval
+                        n = 20       # Number of rectangles
+                        dx = (b - a) / n
+                        rectangles = Graphics()
+                        for i in range(n):
+                            x_left = a + i * dx
+                            x_right = x_left + dx
+                            y_height = f(x_left) 
+                            vertices = [
+                                (x_left, -f(x_left)),          # Bottom left
+                                (x_left, y_height),   # Top left
+                                (x_right, y_height),  # Top right
+                                (x_right, -f(x_left)),         # Bottom right
+                            ]
+                            rectangles += polygon2d(vertices, fill=True, color='blue', alpha=0.25, edgecolor='black')
+                            rectangles += polygon2d(vertices, fill=False,color='black')
 
-                            \foreach \i in {0,...,20}{
-                                \draw (0.2*\i, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {sqrt(0.2*\i)})--(0.2*\i, {sqrt(0.2*\i)})--(0.2*\i, {-1*sqrt(0.2*\i)});
-                                \draw [fill=blue, opacity=0.2] (0.2*\i,{-1*sqrt(0.2*\i)}) rectangle (0.2*\i+0.2,{sqrt(0.2*\i)});
-                            };
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-1.414) -- (2.2,-1.414) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        dx_label = text('$\\Delta x$',(1.9,-f(2.5)),color='black',fontsize=13)
+                        p + xaxis + xaxis_label + rectangles + dx_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -566,29 +570,14 @@
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass2" width="50%">
                         <description>Solid mass.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
-
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {sqrt(\x)})
-                              --(4,-2)
-                              --plot ({\x}, {-1*sqrt(\x)})
-                              -- cycle;
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),fill=-f,fillcolor='blue', fillalpha = 0.25, color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        p + xaxis + xaxis_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -623,29 +612,27 @@
                 <caption>The right triangles in this figure are similar.</caption>
                     <image xml:id="similartrianglecone" width="50%">
                         <description>a 15 by 60 triangle, with a similar r by 60-h triangle.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-2,0)--(2,0)--(0,8)--(-2,0);
-                            \draw[dashed] (-1.5,2)--(1.5,2);
-                            \draw[dashed] (0,0)--(0,8);
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](0,0) -- (2,0) node[black,midway,yshift=-0.5cm] {\footnotesize $15$\ in};
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](0,2) -- (1.5,2) node[black,midway,yshift=-0.5cm] {\footnotesize $r$};
-                            
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-2,0) -- (-2,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $60$ in};
-                            
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (0,0) -- (0,2) node [black,midway,xshift=-1cm] {\footnotesize
-                            $h$};
-                            \draw [decorate,decoration={brace, mirror, amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1.5,2) -- (1.5,8) node [black,midway,xshift=1cm] {\footnotesize
-                            $60-h$};
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        vert = line(([0,8],[0,0]),linestyle='dashed',color='black')
+                        rad1 = text('15 in',(1,-.25),color='black',fontsize=13)
+                        rad2 = text('$r$',(.5,3.75),color='black',fontsize=13)
+                        e1 = edger_x(-4,0,8)
+                        e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,4.1,8)
+                        e2_label = text('$60-h$', (2.75,6),color='black',fontsize=13)
+                        dash = line(([(-1,4),(1,4)]), linestyle='dashed',color = 'black')
+                        h = text('$h$',(-.5,2),color='black',fontsize=13)
+                        tri + vert + rad1 + rad2 + e1 + e1_label + e2 + e2_label + dash + h
+                        </sageplot>
                     </image>
             </figure>
                     </p>
@@ -680,28 +667,28 @@
                 <caption>The  triangles in this figure are similar.</caption>
                     <image xml:id="similartrianglepyramid" width="50%">
                         <description>a 8 by 60 triangle, with a similar r by 16-h triangle.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-2,0)--(2,0)--(0,8)--(-2,0);
-                            \draw[dashed] (-1.5,2)--(1.5,2);
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](-2,0) -- (2,0) node[black,midway,yshift=-0.5cm] {\footnotesize $8$\ ft};
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](-1.5,2) -- (1.5,2) node[black,midway,yshift=-0.5cm] {\footnotesize $b$};
-                            
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-2,0) -- (-2,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $16$ ft};
-                            
-                            \draw [decorate,decoration={brace,mirror, amplitude=10pt,raise=4pt},yshift=0pt]
-                            (2,0) -- (2,2) node [black,midway,xshift=-1cm] {\footnotesize
-                            $h$};
-                            \draw [decorate,decoration={brace, mirror, amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1.5,2) -- (1.5,8) node [black,midway,xshift=1cm] {\footnotesize
-                            $16-h$};
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
 
-                        \end{tikzpicture}
-                        </latex-image>
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        e1 = edger_x(-2.5,0,8)
+                        e1_label = text('16 ft',(-3.5,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,4.1,8)
+                        e2_label = text('$16-h$', (2.75,6),color='black',fontsize=13)
+                        dash = line(([(-1,4),(1,4)]), linestyle='dashed',color = 'black')
+                        dash_label = text('$b$',(0,3.75),color='black',fontsize=13)
+                        h_edge = edger_x(2.25,0,4)
+                        h = text('$h$',(2.5,2),color='black',fontsize=13)
+                        base_label = text('8 ft',(0,-.3),color='black',fontsize=13)
+                        tri + e1 + e1_label + e2 + e2_label + dash + dash_label + h + h_edge + base_label
+                        </sageplot>     
                     </image>
             </figure>
                     </p>
@@ -725,6 +712,108 @@
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
                     <image xml:id="blocksonaxis1" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.</description>
+                        <sageplot>
+                        from sage.plot.graphics import Graphics
+
+                        img = Graphics()
+
+                        xaxis = arrow((0,0),(8.5,0),color='black',axes=False)
+                        xaxis_label = text('$x$',(8.7,0),color='black',fontsize=13)
+
+                        ticks = Graphics()
+                        for i in range(9):
+                            tick = line(([(i,0.05),(i,0)]),color='black')
+                            tick_label = text(i,(i,-0.25),color='black',fontsize=11)
+                            ticks += tick
+                            ticks += tick_label
+
+                        squares = Graphics()
+                        sq1 = polygon([(0.5,0),(1.5,0),(1.5,1),(0.5,1)],color='powderblue',edgecolor='black')
+                        sq2 = polygon([(1.5,0),(2.5,0),(2.5,1),(1.5,1)],color='powderblue',edgecolor='black')
+                        sq3 = polygon([(0.5,1),(1.5,1),(1.5,2),(0.5,2)],color='powderblue',edgecolor='black')
+                        sq4 = polygon([(1.5,1),(2.5,1),(2.5,2),(1.5,2)],color='powderblue',edgecolor='black')
+                        sq5 = polygon([(1.5,2),(2.5,2),(2.5,3),(1.5,3)],color='powderblue',edgecolor='black')
+                        sq6 = polygon([(5.5,0),(6.5,0),(6.5,1),(5.5,1)],color='powderblue',edgecolor='black')
+                        squares += sq1 + sq2 + sq3 + sq4 + sq5 + sq6
+                        img += xaxis
+                        img += xaxis_label
+                        img += ticks
+                        img += squares
+                        img
+                        </sageplot>
+                    </image>
+            </figure>
+                    
+                </p>
+                <p>
+                    Which of the following describes the <m>x</m>-value of the center of gravity of the board with the blocks?
+                    <ol marker="A." cols="2">
+                        <li><m>\displaystyle\frac{1+6}{2}=3.5</m>.</li>
+                        <li><m>\displaystyle\frac{1+2+6}{3}=3</m>.</li>
+                        <li><m>\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI4balance2">
+            <statement>
+                <p>
+                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg placed upon it in the following way: two blocks are atop the 1, three blocks are atop the 2, and one block is atop the 8.
+                    
+                    <figure>
+                <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
+                    <image xml:id="blocksonaxis2" width="50%">
+                        <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.</description>
+                        <sageplot>
+                        from sage.plot.graphics import Graphics
+
+                        img = Graphics()
+
+                        xaxis = arrow((0,0),(8.5,0),color='black',axes=False)
+                        xaxis_label = text('$x$',(8.7,0),color='black',fontsize=13)
+
+                        ticks = Graphics()
+                        for i in range(9):
+                            tick = line(([(i,0.05),(i,0)]),color='black')
+                            tick_label = text(i,(i,-0.25),color='black',fontsize=11)
+                            ticks += tick
+                            ticks += tick_label
+
+                        squares = Graphics()
+                        sq1 = polygon([(0.5,0),(1.5,0),(1.5,1),(0.5,1)],color='powderblue',edgecolor='black')
+                        sq2 = polygon([(1.5,0),(2.5,0),(2.5,1),(1.5,1)],color='powderblue',edgecolor='black')
+                        sq3 = polygon([(0.5,1),(1.5,1),(1.5,2),(0.5,2)],color='powderblue',edgecolor='black')
+                        sq4 = polygon([(1.5,1),(2.5,1),(2.5,2),(1.5,2)],color='powderblue',edgecolor='black')
+                        sq5 = polygon([(1.5,2),(2.5,2),(2.5,3),(1.5,3)],color='powderblue',edgecolor='black')
+                        sq6 = polygon([(7.5,0),(8.5,0),(8.5,1),(7.5,1)],color='powderblue',edgecolor='black')
+                        squares += sq1 + sq2 + sq3 + sq4 + sq5 + sq6
+                        img += xaxis
+                        img += xaxis_label
+                        img += ticks
+                        img += squares
+                        img
+                        </sageplot>
+                    </image>
+            </figure>
+                    
+                </p>
+                <p>
+                    Find the <m>x</m>-value of the center of gravity of the board with the blocks.
+                </p>
+            </statement>
+        </activity>
+        
+        
+        
+        <fact xml:id="fact-AI4centerofmass">
+            <statement>
+                <p>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
+                    <figure>
+                <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
+                    <image xml:id="Solidmassapproximation2" width="50%">
+                        <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <sageplot>
                         x = var('x')
                         f(x) = sqrt(x)
@@ -754,95 +843,6 @@
                         </sageplot>
                     </image>
             </figure>
-                    
-                </p>
-                <p>
-                    Which of the following describes the <m>x</m>-value of the center of gravity of the board with the blocks?
-                    <ol marker="A." cols="2">
-                        <li><m>\displaystyle\frac{1+6}{2}=3.5</m>.</li>
-                        <li><m>\displaystyle\frac{1+2+6}{3}=3</m>.</li>
-                        <li><m>\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333</m>.</li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-AI4balance2">
-            <statement>
-                <p>
-                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg placed upon it in the following way: two blocks are atop the 1, three blocks are atop the 2, and one block is atop the 8.
-                    
-                    <figure>
-                <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
-                    <image xml:id="blocksonaxis2" width="50%">
-                        <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[very thick,->] (0,0) -- (8.5,0) node[anchor=north west] {\tiny$x$};
-                            \foreach \x in {1,2,3,4,5,6,7,8}
-    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                            \draw (0.5,0)--(1.5,0)--(1.5,1)--(0.5,1)--(0.5,0);
-                            \draw [fill=blue, opacity=0.2] (0.5,0) rectangle (1.5,1);
-                            \draw (0.5,1)--(1.5,1)--(1.5,2)--(0.5,2)--(0.5,1);
-                            \draw [fill=blue, opacity=0.2] (0.5,1) rectangle (1.5,2);
-                            
-                            \draw (1.5,0)--(2.5,0)--(2.5,1)--(1.5,1)--(1.5,0);
-                            \draw [fill=blue, opacity=0.2] (1.5,0) rectangle (2.5,1);
-                            \draw (1.5,1)--(2.5,1)--(2.5,2)--(1.5,2)--(1.5,1);
-                            \draw [fill=blue, opacity=0.2] (1.5,1) rectangle (2.5,2);
-                            \draw (1.5,2)--(2.5,2)--(2.5,3)--(1.5,3)--(1.5,2);
-                            \draw [fill=blue, opacity=0.2] (1.5,2) rectangle (2.5,3);
-                            
-                            \draw (7.5,0)--(8.5,0)--(8.5,1)--(7.5,1)--(7.5,0);
-                            \draw [fill=blue, opacity=0.2] (7.5,0) rectangle (8.5,1);
-
-                        \end{tikzpicture}
-                        </latex-image>
-                    </image>
-            </figure>
-                    
-                </p>
-                <p>
-                    Find the <m>x</m>-value of the center of gravity of the board with the blocks.
-                </p>
-            </statement>
-        </activity>
-        
-        
-        
-        <fact xml:id="fact-AI4centerofmass">
-            <statement>
-                <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
-                    <figure>
-                <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Solidmassapproximation2" width="50%">
-                        <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
-
-                            \foreach \i in {0,...,20}{
-                                \draw (0.2*\i, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {sqrt(0.2*\i)})--(0.2*\i, {sqrt(0.2*\i)})--(0.2*\i, {-1*sqrt(0.2*\i)});
-                                \draw [fill=blue, opacity=0.2] (0.2*\i,{-1*sqrt(0.2*\i)}) rectangle (0.2*\i+0.2,{sqrt(0.2*\i)});
-                            };
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-1.414) -- (2.2,-1.414) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-
-                        \end{tikzpicture}
-                        </latex-image>
-                    </image>
-            </figure>
                 </p>
                 <p>
                     We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
@@ -850,29 +850,14 @@
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass" width="50%">
                         <description>Solid mass.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
-
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {sqrt(\x)})
-                              --(4,-2)
-                              --plot ({\x}, {-1*sqrt(\x)})
-                              -- cycle;
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),fill=-f,fillcolor='blue', fillalpha = 0.25, color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        p + xaxis + xaxis_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
