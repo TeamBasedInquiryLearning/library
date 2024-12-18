@@ -725,28 +725,33 @@
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
                     <image xml:id="blocksonaxis1" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[very thick,->] (0,0) -- (8.5,0) node[anchor=north west] {\tiny$x$};
-                            \foreach \x in {1,2,3,4,5,6,7,8}
-    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                            \draw (0.5,0)--(1.5,0)--(1.5,1)--(0.5,1)--(0.5,0);
-                            \draw [fill=blue, opacity=0.2] (0.5,0) rectangle (1.5,1);
-                            \draw (0.5,1)--(1.5,1)--(1.5,2)--(0.5,2)--(0.5,1);
-                            \draw [fill=blue, opacity=0.2] (0.5,1) rectangle (1.5,2);
-                            
-                            \draw (1.5,0)--(2.5,0)--(2.5,1)--(1.5,1)--(1.5,0);
-                            \draw [fill=blue, opacity=0.2] (1.5,0) rectangle (2.5,1);
-                            \draw (1.5,1)--(2.5,1)--(2.5,2)--(1.5,2)--(1.5,1);
-                            \draw [fill=blue, opacity=0.2] (1.5,1) rectangle (2.5,2);
-                            \draw (1.5,2)--(2.5,2)--(2.5,3)--(1.5,3)--(1.5,2);
-                            \draw [fill=blue, opacity=0.2] (1.5,2) rectangle (2.5,3);
-                            
-                            \draw (5.5,0)--(6.5,0)--(6.5,1)--(5.5,1)--(5.5,0);
-                            \draw [fill=blue, opacity=0.2] (5.5,0) rectangle (6.5,1);
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        a = 0       # Start of the interval
+                        b = 4       # End of the interval
+                        n = 20       # Number of rectangles
+                        dx = (b - a) / n
+                        rectangles = Graphics()
+                        for i in range(n):
+                            x_left = a + i * dx
+                            x_right = x_left + dx
+                            y_height = f(x_left) 
+                            vertices = [
+                                (x_left, -f(x_left)),          # Bottom left
+                                (x_left, y_height),   # Top left
+                                (x_right, y_height),  # Top right
+                                (x_right, -f(x_left)),         # Bottom right
+                            ]
+                            rectangles += polygon2d(vertices, fill=True, color='blue', alpha=0.25, edgecolor='black')
+                            rectangles += polygon2d(vertices, fill=False,color='black')
 
-                        \end{tikzpicture}
-                        </latex-image>
+                        dx_label = text('$\\Delta x$',(1.9,-f(2.5)),color='black',fontsize=13)
+                        p + xaxis + xaxis_label + rectangles + dx_label
+                        </sageplot>
                     </image>
             </figure>
                     
