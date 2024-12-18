@@ -13,6 +13,7 @@
     <title>Activities</title>
 
     <activity xml:id="activity-limits-numerically1">
+<statement>
         <table xml:id="table-limit-numerical1">
             <tabular>
                 <row bottom="minor">
@@ -80,14 +81,15 @@
             <li><p> the limit is approximately 0.1667</p></li>
             <li><p> the limit is approximately 6.9999</p></li>
         </ol>
+         
+        </p>
+</statement>
         
          <answer>
           <p>
             D. The limit is approximately 0.1667
           </p>
          </answer>
-         
-        </p>
     </activity>
     
             <remark>
