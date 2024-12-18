@@ -436,15 +436,18 @@
           <image width="47%">
             <sageplot>
               from sage.plot.graphics import Graphics
-              front = polygon2d([(0,0), (0,2), (2,2), (2,0)],fill=True, color='purple', alpha = 0.5)
+
+              front = polygon2d([(0,0), (0,2), (2,2), (2,0)],fill=True, color='purple', alpha = 0.25)
               front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
-              back = polygon2d([(4,2), (4,4), (6,4),(6,2)], fill = True, color='purple')
+              back = polygon2d([(4,2), (4,4), (6,4),(6,2)], fill = True, color='purple', alpha=0.5)
               back_border= polygon2d([(4,2), (4,4), (6,4),(6,2)], fill = False, color='black', thickness=2)
-              left = polygon2d([(0,0),(0,2),(4,4),(4,2)], fill=True, color='purple')
+              left = polygon2d([(0,0),(0,2),(4,4),(4,2)], fill=True, color='purple',alpha=0.5)
               left_border = polygon2d([(0,0),(0,2),(4,4),(4,2)], fill=False, color='black', thickness=2)
-              right = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=True, color='purple', alpha = 0.5)
+              right = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=True, color='purple', alpha = 0.25)
               right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
+              bottom = polygon2d([(0,0),(2,0),(6,2),(4,2)],color='purple',alpha = 0.7)
               geometry = Graphics()
+              geometry += bottom
               geometry += left
               geometry += left_border
               geometry += front
@@ -453,7 +456,6 @@
               geometry += back_border
               geometry += right
               geometry += right_border
-              geometry.axes(False)
               geometry
             </sageplot>
           </image>
