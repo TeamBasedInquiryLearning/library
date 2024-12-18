@@ -131,8 +131,59 @@
       </activity>
 
       <remark xml:id="remark-fn-notation">
-      If we are asked to find the value of <m>f(x)</m> for a certain <m>x</m>-value, say <m>x=5</m>, we use the notation <m>f(5)</m> to indicate that.
+      <p>If we are asked to find the value of <m>f(x)</m> for a certain <m>x</m>-value, say <m>x=5</m>, we use the notation <m>f(5)</m> to indicate that.</p>
       </remark>
+
+            <activity xml:id="activity-fn-context">
+        <introduction>
+          
+             <p> A projectile is fired into the air from an initial height of 144 feet. The height <m>h(t)</m> after <m>t</m> seconds is defined by the function <m>h(t)=-16t^{2} + 128t + 144</m>. 
+        </p>
+        </introduction>
+
+        <task>
+          <statement>
+            <p>
+              Find <m>h(4)</m>.
+
+              <ol marker= "A.">  
+                <li> <m>400</m></li>
+                <li> <m>912</m></li>
+                <li> <m>-64 \, t^{2} + 512 \, t + 576</m></li>
+                <li> <m>-64t^{2} + 128t + 144</m></li>
+              </ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Describe what you've just found using the context of the situation. 
+
+              <ol marker= "A.">  
+                <li> After <m>400</m> seconds, the height of the projectile is <m>4</m> feet.</li>
+                <li> After <m>4</m> seconds, the height of the projectile is <m>400</m> feet.</li>
+                <li> After <m>4</m> feet, the height of the projectile is <m>400</m> seconds.</li>
+                <li> After <m>400</m> feet, the height of the projectile is <m>4</m> seconds.</li>
+                
+              </ol>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+
+      </activity>
+
 
       <activity xml:id="activity-fn-values">
         <introduction>
