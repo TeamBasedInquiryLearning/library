@@ -3,14 +3,8 @@
     <knowl>
         <content>
             <p>
-Use trigonometric identities and 
-{{#hint_2}}
-<m>(1-z)^2=1-2z+z^2</m>
-{{/hint_2}}
-{{#hint_3}}
-<m>(1-z)^3=1-3z+3z^2-z^3</m>
-{{/hint_3}}
-to explain and demonstrate how to find
+Using trigonometric identities and the fact that <m>{{hint}}</m>,
+explain and demonstrate how to find
 <m>\displaystyle \int {{f}} dx</m>.
             </p>
         </content>
