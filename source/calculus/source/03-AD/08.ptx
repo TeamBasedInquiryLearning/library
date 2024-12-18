@@ -60,8 +60,8 @@
                     lass2 = line2d([(8,8.25), (8,8.75)])
                     sll1 = line2d([(8.25,6),(8.75,6)])
                     sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("8-2x", (9,4), fontsize=10,color='black')
-                    label_x = text("x", (7,8.75), fontsize=10, color='black')
+                    label_side = text("8-2x", (9.1,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
 
                     # Combine all parts into one graphic
                     geometry = Graphics()
@@ -122,8 +122,8 @@
                     lass2 = line2d([(8,8.25), (8,8.75)])
                     sll1 = line2d([(8.25,6),(8.75,6)])
                     sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("8-x", (9,4), fontsize=10,color='black')
-                    label_x = text("x", (7,8.75), fontsize=10, color='black')
+                    label_side = text("8-x", (9,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
 
                     # Combine all parts into one graphic
                     geometry = Graphics()
@@ -184,8 +184,8 @@
                     lass2 = line2d([(8,8.25), (8,8.75)])
                     sll1 = line2d([(8.25,6),(8.75,6)])
                     sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("y", (8.75,4), fontsize=10,color='black')
-                    label_x = text("x", (7,8.75), fontsize=10, color='black')
+                    label_side = text("y", (8.75,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
 
                     # Combine all parts into one graphic
                     geometry = Graphics()
@@ -246,8 +246,8 @@
                     lass2 = line2d([(8,8.25), (8,8.75)])
                     sll1 = line2d([(8.25,6),(8.75,6)])
                     sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("8", (8.75,4), fontsize=10,color='black')
-                    label_x = text("x", (7,8.75), fontsize=10, color='black')
+                    label_side = text("8", (8.75,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
 
                     # Combine all parts into one graphic
                     geometry = Graphics()
