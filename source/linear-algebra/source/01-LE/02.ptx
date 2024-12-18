@@ -848,12 +848,12 @@ are available online.
 Now try using whitespace to write out the matrix and compute <m>\RREF</m> instead:
     </p>
     <program>
-        <input>
+        <code>
 A = [1 3 2
      2 5 7]
 
 rref(A)
-        </input>
+        </code>
     </program>
 </li>
 </ul>
