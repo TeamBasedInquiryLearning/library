@@ -665,6 +665,7 @@
           <sageplot>
             f(x) = (5*x^2+30*x+40)
               p=plot(f, (x, -6, 2), ymin=-10, ymax=30, color='blue', thickness=3)
+              p+=point([(-3,f(-3)),(-4,f(-4)),(-5,f(-5)),(-2,f(-2)),(-1,f(-1))],pointsize=50,color='blue')
           </sageplot>
         </image>
       </figure>  </p> </li>
