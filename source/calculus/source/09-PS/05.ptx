@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PS5" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+    <title>Taylor's Theorem (PS5)</title>
+        <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/05.ptx"/>
+            </li>
+        </ul>
+        </objectives>
+ <subsection>
+    <title>Activities</title>
+
+</subsection>
+
+<activity>
+    <introduction>
+        <p>
+            Recall that we can use a Taylor series for a function
+            to approximate that function by using an <m>n</m>th-degree Taylor
+            polynomial.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Which of the following is the <m>3</m>rd degree Taylor polynomial for <m>f(x)=\sin x</m>
+                centered at 0.
+            </p>
+            <ol marker="A.">
+                    <li><m>1-\dfrac{x^2}{2}</m></li>
+                    <li><m>x-\dfrac{x^3}{3!}</m></li>
+                    <li><m>x+\dfrac{x^3}{3!}</m></li>
+                    <li><m>x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}</m></li>
+                </ol>
+        </statement>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                Use the 3rd-degree Taylor polynomial for <m>f(x)=\sin x</m>
+                to approximate <m>\sin(1)</m>.
+            </p>
+        </statement>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                Use technology to approximate <m>\sin(1)</m>.
+            </p>
+        </statement>
+    </task>
+</activity>
+
+<subsection xml:id="subsec-Sample Problem">
+    <title>Sample Problem</title>
+        <introduction>
+            <p>
+                Here you are tasked with approximating the value of <m>\cos(1)</m>.
+            </p>
+        </introduction>
+            <task>
+                <statement>
+                    <p>
+                Calculate the 4th-degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
+                then use it to approximate the value of <m>\cos(1)</m> to three decimal places.    
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Apply Taylor's Theorem to find an upper bound for the error in this approximation. 
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Use technology to calculate <m>|R_4(1)|</m>. Is the error within the upper bound found
+                        in part (b)? 
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                       Explain whether the approximation error <m>|R_{n}(1)|</m> increases or decreases as 
+                       <m>n\rightarrow\infty</m>.
+                    </p>
+                </statement>
+            </task>
+</subsection>
+
+
+
+</section>
