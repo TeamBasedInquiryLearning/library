@@ -617,6 +617,7 @@
           <sageplot>
             f(x) = (x^2+2*x-3)
               p=plot(f, (x, -6, 6), ymin=-5, ymax=20, color='blue', thickness=3)
+              p+=point([(-1,-4),(-2,f(-2)),(-3,f(-3)),(0,f(0)),(1,f(1))],pointsize=50,color='blue')
           </sageplot>
         </image>
       </figure>   </p> </li>
