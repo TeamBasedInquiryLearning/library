@@ -436,25 +436,35 @@
           <image width="47%">
             <sageplot>
               from sage.plot.graphics import Graphics
-
-              front = polygon2d([(0,0), (0,2), (2,2), (2,0)],fill=True, color='purple', alpha = 0.25)
               front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
-              back = polygon2d([(4,2), (4,4), (6,4),(6,2)], fill = True, color='purple', alpha=0.5)
-              back_border= polygon2d([(4,2), (4,4), (6,4),(6,2)], fill = False, color='black', thickness=2)
-              left = polygon2d([(0,0),(0,2),(4,4),(4,2)], fill=True, color='purple',alpha=0.5)
-              left_border = polygon2d([(0,0),(0,2),(4,4),(4,2)], fill=False, color='black', thickness=2)
-              right = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=True, color='purple', alpha = 0.25)
               right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
-              bottom = polygon2d([(0,0),(2,0),(6,2),(4,2)],color='purple',alpha = 0.7)
-              geometry = Graphics()
-              geometry += bottom
-              geometry += left
-              geometry += left_border
+              front_bottom = polygon2d([(0,0),(2,0),(2,1)],color='cyan',alpha=1)
+              front = polygon2d([(0,0),(2,1),(2,2),(0,2)],color='powderblue')
+              left_top = polygon2d([(0,2),(2,2),(4,3),(4,4)],color='powderblue')
+              right_top = polygon2d([(4,3),(4,4),(6,4)],color='powderblue')
+              back = polygon2d([(4,3),(6,4),(6,2),(4,2)],color='powderblue')
+              middle = polygon2d([(2,1),(2,2),(4,3),(4,2)],color='powderblue')
+              bottom = polygon2d([(2,0),(2,1),(4,2),(6,2)],color='cyan',axes=False)
+              dash1 = line(([(0,0),(2,1)]),linestyle='dashed',color='black',thickness=2)
+              dash2 = line(([(2,1),(4,2)]),linestyle='dashed',color='black',thickness=2)
+              dash3 = line(([(4,2),(6,2)]),linestyle='dashed',color='black',thickness=2)
+              dash4 = line(([(4,2),(4,4)]),linestyle='dashed',color='black',thickness=2)
+              topline1 = line(([(4,4),(6,4)]),color='black',thickness=2)
+              topline2 = line(([(0,2),(4,4)]),color='black',thickness=2)
+              geometry += dash1
+              geometry += dash2
+              geometry += dash3
+              geometry += dash4
+              geometry += topline1
+              geometry += topline2
+              geometry += front_bottom
               geometry += front
-              geometry += front_border
+              geometry += left_top
+              geometry += right_top
               geometry += back
-              geometry += back_border
-              geometry += right
+              geometry += middle
+              geometry += bottom
+              geometry += front_border
               geometry += right_border
               geometry
             </sageplot>
