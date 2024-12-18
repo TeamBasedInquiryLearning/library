@@ -1,4 +1,11 @@
+#Functions to display powers of trig functions
+def print_cosp(self,*args): return f"\\cos ^{args[1]}({latex(args[0])})"
+cosp = function("cosp",nargs=2,print_latex_func=print_cosp)
+def print_sinp(self,*args): return f"\\sin ^{args[1]}({latex(args[0])})"
+sinp = function("sinp",nargs=2,print_latex_func=print_sinp)
+
 class Generator(BaseGenerator):
+
     def data(self):
         # integral with odd power
         x=var("x")
@@ -26,7 +33,7 @@ class Generator(BaseGenerator):
         m = randrange(2,5)
         n = randrange(2,5)
         k = 2^randrange(2,5)
-        g = k*cos(a*x)^(2*m)*sin(a*x)^(2*n)
+        g = k*cosp(a*x,2*m)*sinp(a*x,2*n)
         also_g = k/2^(m+n)*(1+cos(2*a*x))^m*(1-cos(2*a*x))^n
         
 
