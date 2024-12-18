@@ -84,10 +84,10 @@ Sketch the graph of a function <m>{{fn}}(x)</m> that meets all of the following 
                     </item>
                 <!-- {{/leftneqright}} -->
                 <!-- {{#jumpspecleft}} -->
-                    <item><p>There is a jump or infinite discontinuity at <m>x={{x}}</m>, but the function approaches the point <m>({{x}},{{y1}})</m> as <m>x</m> approaches <m>{{x}}</m> from the left.</p></item>
+                    <item><p>There is a jump or infinite discontinuity at <m>x={{x}}</m>, but the function approaches the point <m>({{x}},{{y1}})</m> as <m>x</m> approaches <m>{{x}}</m> from the left, but a different value from the right.</p></item>
                 <!-- {{/jumpspecleft}} -->
                 <!-- {{#jumpspecright}} -->
-                    <item><p>There is a jump or infinite discontinuity at <m>x={{x}}</m>, but the function approaches the point <m>({{x}},{{y1}})</m> as <m>x</m> approaches <m>{{x}}</m> from the right.</p></item>
+                    <item><p>There is a jump or infinite discontinuity at <m>x={{x}}</m>, but the function approaches the point <m>({{x}},{{y1}})</m> as <m>x</m> approaches <m>{{x}}</m> from the right, but a different value from the left.</p></item>
                 <!-- {{/jumpspecright}} -->
                 <!-- {{#jumpspecleftright}} -->
                     <item><p>There is a jump discontinuity at <m>x={{x}}</m> with the graph approaching the point <m>({{x}},{{y1}})</m> as <m>x</m> approaches <m>{{x}}</m> from the left and approaching the point <m>({{x}},{{y2}})</m> as <m>x</m> approaches <m>{{x}}</m> from the right.</p></item>

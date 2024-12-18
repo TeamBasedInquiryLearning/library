@@ -119,3 +119,5 @@ class Generator(BaseGenerator):
             "plot1": plot(q[1]),
             "plot2": plot(q[2]),
       }
+
+# trigger preview build...
