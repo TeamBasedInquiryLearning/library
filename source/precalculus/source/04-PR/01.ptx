@@ -200,6 +200,87 @@
     </statement>
   </definition>
 
+  <activity xml:id="standard-to-vertex-form">
+
+  <introduction>
+    <p>
+      Completing the square (see <xref ref="EQ5"/>) is a very useful tool or method to convert the quadratic equation in standard form into vertex form. Let's start with the standard form of <m>y=x^2-4x+3</m> and convert it into vertex form.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Before we begin, isolate the terms with <m>x</m> on one side of the equation. What equation do you now have?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>y-3=x^2-4x</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Notice that because <m>a=1</m>, apply the "completing the square" steps to determine the constant term that is added to both sides of the equation.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Refer back to <xref ref="def-completing-the-square"/> to help you determine how to find the constant term.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        By using the "completing the square" steps, students should get:
+        <me>
+          y-3+(4)=x^2-4x+(4)
+        </me>
+        <me>
+          y+1=x^2-4x+4
+        </me>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Factor the perfect square trinomial. 
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>
+          y+1=(x-2)^2
+        </me>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now isolate <m>y</m> and then determine the vertex and axis of symmetry.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>y=(x-2)^2-1</m>
+      </p>
+      <p>
+        Axis of Symmetry: <m>x=2</m>
+      </p>
+      <p>
+        Vertex: <m>(2,-1)</m>
+      </p>
+    </answer>
+  </task>
+    
+  </activity>
+
   <observation xml:id="standard-form-aos">
     <statement>
       <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=\dfrac {-b}{2a}</m> and the vertex is at the point <m> \left(\dfrac{-b}{2a},f\left(\dfrac{-b}{2a}\right)\right)</m>.
@@ -532,8 +613,8 @@
               <li> <p> upwards   </p> </li>
               <li> <p> <m>(-1,-4)</m>; minimum   </p> </li>
               <li> <p> <m>x=-1</m>   </p> </li>
-              <li> <p> <figure width="100%" xml:id="graph-of-x2+2x-3">
-        <image xml:id="graph-of-x^2+2*x-3">
+              <li> <p> <figure width="100%" xml:id="PR1-fluency-graph-1-figure">
+        <image xml:id="PR1-fluency-graph-1-image">
           <sageplot>
             f(x) = (x^2+2*x-3)
               p=plot(f, (x, -6, 6), ymin=-5, ymax=20, color='blue', thickness=3)
@@ -555,8 +636,8 @@
               <li> <p> downwards   </p> </li>
               <li> <p> <m>(3,20)</m>; maximum   </p> </li>
               <li> <p> <m>x=3</m>   </p> </li>
-              <li> <p> <figure width="100%" xml:id="graph-of--5(x-3)2+20">
-        <image xml:id="graph-of--5(x-3)^2+20">
+              <li> <p> <figure width="100%" xml:id="PR1-fluency-graph-2-figure">
+        <image xml:id="PR1-fluency-graph-2-image">
           <sageplot>
             f(x) = (-5*(x-3)^2+20)
               p=plot(f, (x, -1, 7), ymin=-5, ymax=30, color='blue', thickness=3)
@@ -578,8 +659,8 @@
                 <li> <p> upwards   </p> </li>
                 <li> <p> <m>(-3,-5)</m>; minimum   </p> </li>
                 <li> <p> <m>x=-3</m>   </p> </li>
-                <li> <p> <figure width="100%" xml:id="graph-of-5x2+30x+40">
-        <image xml:id="graph-of-5x^2+30x+40">
+                <li> <p> <figure width="100%" xml:id="PR1-fluency-graph-3-figure">
+        <image xml:id="PR1-fluency-graph-3-image">
           <sageplot>
             f(x) = (5*x^2+30*x+40)
               p=plot(f, (x, -6, 2), ymin=-10, ymax=30, color='blue', thickness=3)
@@ -601,8 +682,8 @@
                   <li> <p> upwards   </p> </li>
                   <li> <p> <m>(-4,-3)</m>; minimum   </p> </li>
                   <li> <p> <m>x=-4</m>   </p> </li>
-                  <li> <p> <figure width="100%" xml:id="graph-of-2(x+4)2-3">
-        <image xml:id="graph-of-2(x+4)^2-3">
+                  <li> <p> <figure width="100%" xml:id="PR1-fluency-graph-4-figure">
+        <image xml:id="PR1-fluency-graph-4-image">
           <sageplot>
             f(x) = (2*(x+4)^2-3)
               p=plot(f, (x, -8, 4), ymin=-5, ymax=30, color='blue', thickness=3)
