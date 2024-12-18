@@ -167,7 +167,7 @@ of how to find
             </md>
         </statement>
     </example>
-    <activity estimated-time="99">
+    <activity xml:id="activity-ti1-01" estimated-time="99">
         <statement>
             <p>
 Which step of the previous example do you think was
@@ -204,79 +204,15 @@ to get <m>\dfrac{1}{3}e^{x^3}+C</m>.
             </ol>
         </statement>
     </activity>
-    <activity estimated-time="99">
+    <remark>
         <statement>
             <p>
-Below are two correct solutions to the same integral, using
-two different choices for <m>u</m>. Which method would you prefer
-to use yourself?
+                Make sure you note the sequence of steps given in <xref ref="activity-ti1-01"/>. It is
+                typical for substitution integrals, although the details can vary considerably
+                from one integral to the next.
             </p>
-            <sidebyside widths="48% 48%">
-                <p>
-            <md>
-                <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=x+1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} 4u=4x+4
-                </mrow>
-                <mrow>
-&amp;\phantom{=} x=u-1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} du = dx
-                </mrow>
-                <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int (u-1)\sqrt{4u}\,du
-                </mrow>
-                <mrow>
-&amp;= \displaystyle \int (2u^{3/2}-2u^{1/2})\,du
-                </mrow>
-                <mrow>
-&amp;= \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C
-                </mrow>
-                <mrow>
-&amp;= \dfrac{4}{5}(x+1)^{5/2}
-                </mrow>
-                <mrow>
-&amp;\phantom{=}-\dfrac{4}{3}(x+1)^{3/2}+C
-                </mrow>
-            </md>
-                </p>
-                <p>
-            <md>
-                <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=\sqrt{4x+4}
-                </mrow>
-                <mrow>
-&amp;\phantom{=} u^2=4x+4
-                </mrow>
-                <mrow>
-&amp;\phantom{=} x=\dfrac{1}{4}u^2-1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} dx=\dfrac{1}{2}u\,du
-                </mrow>
-                <mrow> 
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)
-                </mrow>
-                <mrow>
-&amp;= \displaystyle \int \left(\dfrac{1}{8}u^4-\dfrac{1}{2}u^2\right)\,du
-                </mrow>
-                <mrow>
-&amp;= \dfrac{1}{40}u^5-\dfrac{1}{6}u^3+C
-                </mrow>
-                <mrow>
-&amp;= \dfrac{1}{40}(4x+4)^{5/2}
-                </mrow>
-                <mrow>
-&amp;\phantom{=}-\dfrac{1}{6}(4x+4)^{3/2}+C
-                </mrow>
-            </md>
-                </p>
-            </sidebyside>
         </statement>
-    </activity>
+    </remark>
     <activity estimated-time="99">
         <statement>
             <p>
@@ -363,6 +299,137 @@ to find <m>\displaystyle \int \dfrac{x^3}{x^4+4}\,dx</m>.
                 </mrow>
             </md>
         </statement>
+    </activity>
+    <activity estimated-time="99">
+        <introduction>
+            <p>
+Below are two correct solutions to the same integral, using
+two different choices for <m>u</m>. Which method would you prefer
+to use yourself?
+            </p>
+        </introduction>
+            <!-- <sidebyside widths="48% 48%"> -->
+        <task>
+            <statement>
+                <p>
+                    Sometimes it's not so easy to see the substitution that will
+                    <q>work</q>. It doesn't jump out at us. It's important to look
+                    for deeper possibilities for substitution, subexpressions that
+                    may result in a tractable integral. When you're reading the solutions,
+                    remember that there's no particular <q>reason</q> to choose any given
+                    subexpression as <q><m>u</m></q>. It's like the shape of a key. The
+                    key has its shape so that it can turn the lock.
+                </p>
+                <p>
+                    In this first solution, we'll follow the same steps that you saw in 
+                    <xref ref="activity-ti1-01"/>. Here, the choice of <m>u</m> is
+                    quite unexpected. It's important to think about unusual possibilities
+                    in times of desperation.
+                </p>
+                <ol marker="A.">
+                    <li>
+                        <p>
+                            Choose <m>u = x + 1</m>. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We then compute <m>du = dx</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The rest of the integrand becomes <m>(u-1) \sqrt{4u}</m>, since
+                            <m>x = u - 1</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now substitute to obtain a new integral expression with only <m>u</m>
+                            quantities, no <m>x</m> ones:
+                            <me>
+                                \displaystyle \int x\sqrt{4x+4}\,dx = \displaystyle \int (u-1)\sqrt{4u}\,du
+                            </me>.
+                            Expanding the integrand, we can use the power rule to integrate:
+                            <md>
+                                 <mrow>\displaystyle \int (u-1)\sqrt{4u}\,du \amp = \displaystyle \int (2u^{3/2}-2u^{1/2})\,du</mrow>
+                                 <mrow>\amp = \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C</mrow>
+                            </md>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Finally, we unsubstitute, obtaining
+                            <me>
+                                \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C =\dfrac{4}{5}(x+1)^{5/2} - \dfrac{4}{3}(x+1)^{3/2}+C
+                            </me>.
+                        </p>
+                    </li>
+                </ol>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    In this solution, the choice for <m>u</m> feels a little more natural,
+                    but it takes more persistence to arrive at a workable integral expression
+                    in <m>u</m>.
+                </p>
+                <ol marker="A.">
+                    <li>
+                        <p>
+                            This time, choose <m>u = \sqrt{4x+4}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It follows that <m>u^2 = 4x + 4</m>, so that
+                            <me>
+                                x = \dfrac{u^2 - 4}{4} = \dfrac{u^2}{4} - 1
+                            </me>.
+                            Then we compute
+                            <me>
+                                dx = \dfrac{2u}{4} \, du = \dfrac{u}{2} \, du.
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            This allows us to transform the integral:
+                            <md>
+                                <mrow>\displaystyle \int x\sqrt{4x+4}\,dx 
+                                \amp = \displaystyle \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)</mrow>
+                                <mrow>\amp = \displaystyle \int \left(\dfrac{1}{8}u^4-\dfrac{1}{2}u^2\right)\,du</mrow>
+                            </md>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Integrating, we obtain
+                            <md>
+                                <mrow>\displaystyle \int x\sqrt{4x+4}\,dx \amp = 
+                                \dfrac{1}{40}u^5-\dfrac{1}{6}u^3+C</mrow>
+                            </md>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Finally, we can unsubstitute to obtain
+                            <me>
+                                \dfrac{1}{40}(4x+4)^{5/2} - \dfrac{1}{6}(4x+4)^{3/2}+C
+                            </me>.
+                        </p>
+                    </li>
+                </ol>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Why are these solutions equivalent, if they don't look the same?
+                </p>
+            </statement>
+        </task>
     </activity>
     <activity estimated-time="99">
         <statement>
