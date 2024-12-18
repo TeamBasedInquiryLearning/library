@@ -689,6 +689,7 @@
           <sageplot>
             f(x) = (2*(x+4)^2-3)
               p=plot(f, (x, -8, 4), ymin=-5, ymax=30, color='blue', thickness=3)
+              p+=point([(-4,f(-4)),(-5,f(-5)),(-6,f(-6)),(-3,f(-3)),(-2,f(-2))],pointsize=50,color='blue')
           </sageplot>
         </image> 
       </figure>  </p> </li>
