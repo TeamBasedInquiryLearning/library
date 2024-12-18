@@ -454,12 +454,13 @@
        <me> \lim_{h \to 0} \dfrac{f(a+h)-f(a)}{h}</me>. </note>
     </introduction>
              <task> <statement> <p> Compute the average velocity on the interval <m>[5,6]</m>. We think of this interval as <m>[5,5+h]</m> for the value of <m>h=1</m>.</p>
+         </statement> 
          <answer>
           <p>
             11
           </p>
          </answer>
-         </statement> </task>    
+         </task>    
               <task> <statement> <p> Compute the average velocity starting at 5 seconds, but now with <m>h=0.5</m> seconds. </p>
         <answer>
           <p>
