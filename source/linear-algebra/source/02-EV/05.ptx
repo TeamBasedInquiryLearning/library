@@ -240,11 +240,19 @@ In particular, the standard basis for <m>\mathbb R^3</m> is <m>\{\vec e_1,\vec e
     </statement>
   </definition>
 
+<commentary component="instructor">
+<paragraphs>
+   <title>Instructor Note</title>
+   <p> In Octave, using "format rat" aligns the columns nicely and actually converts decimals to fractions, when applicable.</p>
+</paragraphs>
+</commentary>
+
 <activity estimated-time='15'>
     <introduction>
         <p>
   Take the RREF of an appropriate matrix to determine
-  if each of the following sets is a basis for <m>\IR^4</m>.
+  if each of the following sets is a basis for <m>\IR^4</m>. When using Octave on these large matrices, try first typing "format rat" at the top before you 
+  enter the matrices. What do you notice about the formatting? Is this helpful?
         </p>
     </introduction>
     <task>
@@ -545,7 +553,7 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
 
 
     <exercises>
-        <p>Exercises available at <url href="https://tbil.org/linear-algebra/preview/exercises/#/bank/EV5/"/>.</p>
+        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV5/"/>.</p>
     </exercises>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
