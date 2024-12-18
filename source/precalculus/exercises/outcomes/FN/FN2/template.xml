@@ -44,10 +44,7 @@
                 </p>
             </content>
             <outtro>
-                <p><m>{{gname}}(x)={{result}}</m> when 
-                <!--{{#values}}-->
-                <m>x={{x}}</m>,
-                <!--{{/values}}-->
+                <p><m>{{gname}}(x)={{result}}</m> when <m>{{values}}</m>
                 </p>
             </outtro>
         </knowl>

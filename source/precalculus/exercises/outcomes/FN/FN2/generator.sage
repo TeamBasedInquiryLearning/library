@@ -112,7 +112,8 @@ class Generator(BaseGenerator):
       "gx":gc,
       "result":b,
       #Use the g (general format) to make sure 4 prints as 4, not 4.0
-      "values": [{"x": f"{i:g}"} for i in xvalues]
+      #"values": [{"x": f"{i:g}"} for i in xvalues]
+      "values": ",".join([ f"x={i:g}" for i in xvalues])
     } 
 
 
