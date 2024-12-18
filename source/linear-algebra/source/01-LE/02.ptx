@@ -644,64 +644,96 @@ in many applications we use it for in <xref ref="EV"/>.
     </statement>
 </remark>
 
-<activity estimated-time='8'>
-    <statement>
+
+
+<commentary component="instructor">
+<paragraphs>
+   <title>Instructor Note</title>
+    <p> 
+        In the following 4-part activity, students make decisions about which row operations are most helpful for them in producing the RREF. 
+        The matrices appearing in parts (b) and (c) are obtained by applying specific choices of row operations to the matrix appearing previously; the matrix in part (d) is the one that we started with. 
+    </p>
     <p>
-Consider the matrix
-<me>\left[\begin{array}{cccc}2 &amp; 6 &amp; -1 &amp; 6  \\ 1 &amp; 3 &amp; -1 &amp; 2 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
-Which row operation is the best choice for the first move in converting to RREF?
-        </p>
-<ol marker="A.">
-<li> Add row 3 to row 2 (<m>R_2+R_3 \rightarrow R_2</m>)
-</li>
-<li> Add row 2 to row 3 (<m>R_3+R_2 \rightarrow R_3</m>)
-</li>
-<li> Swap row 1 to row 2 (<m>R_1 \leftrightarrow R_2</m>)
-</li>
-<li> Add -2 row 2 to row 1 (<m>R_1-2R_2 \rightarrow R_1</m>)
-</li>
-</ol>
-        </statement>
-</activity>
+        Our experience in facilitating these activities is that student reasoning in part (a) is largely grounded in the production of zeroes, no matter how they appear; because of this, all of the choices in part (a) may appear to be equally valid to them. 
+        In contrast, choices made in parts (b) and (c) are more constrained as our students recognize the utility of using the marked pivot intentionally to clear entries above and below.
+        By revisiting the original matrix in part (d) after marking the pivot position, the instructor can highlight how choices are more intentionally guided by the pivots. 
+        In turn, this helps students develop a more strategic approach, which is codified in the observation following the activity.  
+    </p>
+</paragraphs>
+</commentary>
+<activity estimated-time='15'>
+    <task>
+    <p>
+        Consider the matrix:
+        <me>\left[\begin{array}{cccc}2 &amp; 6 &amp; -1 &amp; 6  \\ 1 &amp; 3 &amp; -1 &amp; 2 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
+        Which row operation is the best choice for the first move in converting to RREF?
+    </p>
+    <ol marker="A.">
+        <li> Add row 3 to row 2 (<m>R_2+R_3 \rightarrow R_2</m>)
+        </li>
+        <li> Add row 2 to row 3 (<m>R_3+R_2 \rightarrow R_3</m>)
+        </li>
+        <li> Swap row 1 to row 2 (<m>R_1 \leftrightarrow R_2</m>)
+        </li>
+        <li> Add -2 row 2 to row 1 (<m>R_1-2R_2 \rightarrow R_1</m>)
+        </li>
+    </ol>
+    </task>
 
-<activity estimated-time='7'>
-    <statement>
+    <task>
         <p>
-Consider the matrix
-<me>\left[\begin{array}{cccc} \markedPivot{1} &amp; 3 &amp; -1 &amp; 2 \\ 2 &amp; 6 &amp; -1 &amp; 6 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
-Which row operation is the best choice for the next move in converting to RREF?
+            Consider the matrix:
+            <me>\left[\begin{array}{cccc} \markedPivot{1} &amp; 3 &amp; -1 &amp; 2 \\ 2 &amp; 6 &amp; -1 &amp; 6 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
+            Which row operation is the best choice for the next move in converting to RREF?
         </p>
-<ol marker="A.">
-<li> Add row 1 to  row 3 (<m>R_3+R_1 \rightarrow R_3</m>)
-</li>
-<li> Add -2 row 1 to  row 2 (<m>R_2-2R_1 \rightarrow R_2</m>)
-</li>
-<li> Add 2 row 2 to row 3 (<m>R_3+2R_2 \rightarrow R_3</m>)
-</li>
-<li> Add 2 row 3 to row 2 (<m>R_2+2R_3 \rightarrow R_2</m>)
-</li>
-</ol>
-    </statement>
-</activity>
+        <ol marker="A.">
+            <li> Add row 1 to  row 3 (<m>R_3+R_1 \rightarrow R_3</m>)
+            </li>
+            <li> Add -2 row 1 to  row 2 (<m>R_2-2R_1 \rightarrow R_2</m>)
+            </li>
+            <li> Add 2 row 2 to row 3 (<m>R_3+2R_2 \rightarrow R_3</m>)
+            </li>
+            <li> Add 2 row 3 to row 2 (<m>R_2+2R_3 \rightarrow R_2</m>)
+            </li>
+        </ol>
+    </task>
 
-<activity estimated-time='5'>
-    <statement>
+    <task>
         <p>
-Consider the matrix
-<me>\left[\begin{array}{cccc}\markedPivot{1} &amp; 3 &amp; -1 &amp; 2  \\ 0 &amp; 0 &amp; 1 &amp; 2 \\ 0 &amp; 0 &amp; 1 &amp; 2 \end{array}\right].</me>
-Which row operation is the best choice for the next move in converting to RREF?
+            Consider the matrix:
+            <me>\left[\begin{array}{cccc}\markedPivot{1} &amp; 3 &amp; -1 &amp; 2  \\ 0 &amp; 0 &amp; 1 &amp; 2 \\ 0 &amp; 0 &amp; 1 &amp; 2 \end{array}\right].</me>
+            Which row operation is the best choice for the next move in converting to RREF?
         </p>
-<ol marker="A.">
-<li> Add row 1 to row 2 (<m>R_2+R_1 \rightarrow R_2</m>)
-</li>
-<li> Add -1 row 3 to  row 2 (<m>R_2-R_3 \rightarrow R_2</m>)
-</li>
-<li> Add -1 row 2 to  row 3 (<m>R_3-R_2 \rightarrow R_3</m>)
-</li>
-<li> Add row 2 to row 1 (<m>R_1+R_2 \rightarrow R_1</m>)
-</li>
-</ol>
-    </statement>
+        <ol marker="A.">
+            <li> Add row 1 to row 2 (<m>R_2+R_1 \rightarrow R_2</m>)
+            </li>
+            <li> Add -1 row 3 to  row 2 (<m>R_2-R_3 \rightarrow R_2</m>)
+            </li>
+            <li> Add -1 row 2 to  row 3 (<m>R_3-R_2 \rightarrow R_3</m>)
+            </li>
+            <li> Add row 2 to row 1 (<m>R_1+R_2 \rightarrow R_1</m>)
+            </li>
+        </ol>
+    </task>
+
+    <task>
+        <p>
+            Consider the matrix:
+            <me>\left[\begin{array}{cccc}2 &amp; 6 &amp; -1 &amp; 6  \\ 1 &amp; 3 &amp; -1 &amp; 2 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
+            Mark the position where the first pivot should be. 
+            Which row operation is the best choice for the first move in converting to RREF?
+        </p>
+        <ol marker="A.">
+            <li> Add row 3 to row 2 (<m>R_2+R_3 \rightarrow R_2</m>)
+            </li>
+            <li> Add row 2 to row 3 (<m>R_3+R_2 \rightarrow R_3</m>)
+            </li>
+            <li> Swap row 1 to row 2 (<m>R_1 \leftrightarrow R_2</m>)
+            </li>
+            <li> Add -2 row 2 to row 1 (<m>R_1-2R_2 \rightarrow R_1</m>)
+            </li>
+        </ol>
+    </task>
 </activity>
 
 <observation>
