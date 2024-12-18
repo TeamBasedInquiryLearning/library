@@ -12,48 +12,138 @@
  <subsection>
     <title>Activities</title>
 
-</subsection>
+    <activity>
+        <introduction>
+            <p>
+                Recall that we can use a Taylor series for a function
+                to approximate that function by using an <m>k</m>th degree Taylor
+                polynomial.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Which of the following is the 3rd degree Taylor polynomial for <m>f(x)=\sin x</m>
+                    centered at 0.
+                </p>
+                <ol marker="A.">
+                        <li><m>1-\dfrac{x^2}{2}</m></li>
+                        <li><m>x-\dfrac{x^3}{3!}</m></li>
+                        <li><m>x+\dfrac{x^3}{3!}</m></li>
+                        <li><m>x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}</m></li>
+                    </ol>
+            </statement>
+        </task>
 
-<activity>
-    <introduction>
-        <p>
-            Recall that we can use a Taylor series for a function
-            to approximate that function by using an <m>n</m>th-degree Taylor
-            polynomial.
-        </p>
-    </introduction>
-    <task>
+        <task>
+            <statement>
+                <p>
+                    Use the 3rd degree Taylor polynomial for <m>f(x)=\sin x</m>
+                    to approximate <m>\sin(1)</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use technology to approximate <m>\sin(1)</m>.
+                </p>
+            </statement>
+        </task>
+    </activity>
+
+    <definition>
         <statement>
             <p>
-                Which of the following is the <m>3</m>rd degree Taylor polynomial for <m>f(x)=\sin x</m>
-                centered at 0.
+                Given a infinitely differentiable function <me>f(x)=\displaystyle\sum_{n=0}^\infty \dfrac{f^{(n)}(c)}{n!}(x-c)^n</me>, we define
+                the <term> remainder</term>, denoted  <m>R_k(x)</m>, to be the difference between the function <m>f(x)</m>
+                and its <m>n</m>th degree Taylor polynomial <m>T_k(x)</m>. That is,
+                <me>
+                    R_k(x)=f(x)-T_k(x).
+                </me>
+                
             </p>
-            <ol marker="A.">
-                    <li><m>1-\dfrac{x^2}{2}</m></li>
-                    <li><m>x-\dfrac{x^3}{3!}</m></li>
-                    <li><m>x+\dfrac{x^3}{3!}</m></li>
-                    <li><m>x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}</m></li>
+        </statement>
+    </definition>
+
+    <activity>
+        <introduction>
+            <p>
+                We saw in <xref ref="fact-maclaurin-series-common"/>, the Maclaurin series for 
+                <m>f(x)=e^x</m> is
+                <me>
+                    e^x=\displaystyle\sum_{n=0}^\infty \dfrac{1}{n!}x^n.
+                </me>
+                
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Compute <m>R_2(4)</m> using technology.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Compute <m>R_3(4)</m> using technology.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What do you expect from <m>R_4(4)</m>?
+                </p>
+                <ol marker="A.">
+                    <li>
+                        <p>
+                            Not enough information.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It will be greater than both <m>R_3(4)</m> and <m>R_4(4)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It will be between <m>R_3(4)</m> and <m>R_4(4)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It will be less than both <m>R_3(4)</m> and <m>R_4(4)</m>.
+                        </p>
+                    </li>
                 </ol>
-        </statement>
-    </task>
+            </statement>
+        </task>
+    </activity>
 
-    <task>
-        <statement>
-            <p>
-                Use the 3rd-degree Taylor polynomial for <m>f(x)=\sin x</m>
-                to approximate <m>\sin(1)</m>.
-            </p>
-        </statement>
-    </task>
+   <fact xml:id="fact-remainder goes to zero">
+    <statement>
+        <p>
+            Let <m>f(x)</m> be a function represented by a power series centered at <m>x=c</m>
+            <me>
+                f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n
+            </me>
+            with an interval of convegence <m>I</m>. Then for all <m>x\in I</m>,
+            <me>
+                \lim_{n\rightarrow\infty} R_n(x)=0.
+            </me>
+            
+        </p>
+    </statement>
+   </fact> 
 
-    <task>
-        <statement>
-            <p>
-                Use technology to approximate <m>\sin(1)</m>.
-            </p>
-        </statement>
-    </task>
-</activity>
+   
+
+
+
+</subsection>
 
 <subsection>
     <title>Sample Problem</title>
@@ -65,7 +155,7 @@
             <task>
                 <statement>
                     <p>
-                Calculate the 4th-degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
+                Calculate the 4th degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
                 then use it to approximate the value of <m>\cos(1)</m> to three decimal places.    
                     </p>
                 </statement>
@@ -91,8 +181,8 @@
             <task>
                 <statement>
                     <p>
-                       Explain whether the approximation error <m>|R_{n}(1)|</m> increases or decreases as 
-                       <m>n\rightarrow\infty</m>.
+                       Explain whether the approximation error <m>|R_{k}(1)|</m> increases or decreases as 
+                       <m>k\rightarrow\infty</m>.
                     </p>
                 </statement>
             </task>
