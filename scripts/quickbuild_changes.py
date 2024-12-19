@@ -19,7 +19,7 @@ def main():
     BOOKS = ['precalculus', 'calculus', 'linear-algebra']
 
     # for each .ptx file, try to build subtree of document
-    for f in [f for f in changed_files if f.suffix == ".ptx"]:
+    for f in [f for f in changed_files if f.suffix == ".ptx" and not f.deleted_file]:
         book = None
         for b in BOOKS:
             b_path = Path("source") / b
