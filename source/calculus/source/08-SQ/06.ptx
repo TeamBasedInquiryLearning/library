@@ -15,7 +15,7 @@
         <activity xml:id="activity-SQ6multipleofsequence">
             <introduction>
                 <p>
-                    Let <m>\{a_n\}_{n=1}^\infty</m> be a sequence, with infinite series <m>\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots </m>.  Suppose <m>\{b_n\}_{n=1}^\infty</m> is a sequence where each <m>b_n=3a_n</m>, whith infinite series <m>\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots </m>.
+                    Let <m>\{a_n\}_{n=1}^\infty</m> be a sequence, with infinite series <m>\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots </m>.  Suppose <m>\{b_n\}_{n=1}^\infty</m> is a sequence where each <m>b_n=3a_n</m>, with infinite series <m>\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots </m>.
                 </p>
             </introduction>
             <task>
@@ -430,7 +430,7 @@
         <fact xml:id="fact-SQ6comparesequence">
             <statement>
             <p>
-                Supppose we have sequences <m>\{a_n\}, \{b_n\}</m> so that for some <m>k</m> we have that <m>0\leq b_n\leq a_n</m> for each <m>k\geq n</m>. Then we have the following results:
+                Suppose we have sequences <m>\{a_n\}, \{b_n\}</m> so that for some <m>k</m> we have that <m>0\leq b_n\leq a_n</m> for each <m>k\geq n</m>. Then we have the following results:
                 <ul>
                     <li>If <m>\displaystyle\sum_{k=n}^\infty a_n</m> converges, then so does  <m>\displaystyle\sum_{k=n}^\infty b_n</m>.</li>
                     <li>If <m>\displaystyle\sum_{k=n}^\infty b_n</m> diverges, then so does  <m>\displaystyle\sum_{k=n}^\infty a_n</m>.</li>
