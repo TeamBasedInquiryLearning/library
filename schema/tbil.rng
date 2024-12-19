@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <include href="/root/.ptx/2.10.1/core/schema/pretext-dev.rng"/>
+    <start combine="choice">
+        <choice>
+            <ref name="Paragraph"/>
+        </choice>
+    </start>
+    <define name="MetaDataTitleOptional" combine="interleave">
+        <optional>
+            <attribute name="estimated-time"/>
+        </optional>
+    </define>
+</grammar>
