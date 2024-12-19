@@ -12,7 +12,9 @@
     <subsection>
     <title>Activities</title>
     <remark>
+    <p>
       A function is a process that converts a collection of inputs to a corresponding collection of outputs. One question we can ask is: for a particular function, can we reverse the process and  think of the original function's outputs as the inputs? 
+    </p>
     </remark>
     <activity xml:id="activity-temp-conversion">
       <introduction>
@@ -79,7 +81,9 @@
       
   </activity>
   <remark>
+  <p>
     Notice that when you converted <m>68</m> degrees Fahrenheit, you got a value of <m>20</m> degrees Celsius. Alternatively, when you converted <m>20</m> degrees Celsius, you got <m>68</m> degrees Fahrenheit. This indicates that the equation you were given for <m>C</m> and the equation you found for <m>F</m> are inverses.
+  </p>
   </remark>
   <definition xml:id="def-inverse-function">
     <statement>
@@ -95,7 +99,9 @@
     </statement>
   </definition>
   <remark>
+  <p>
     An inverse is a function that "undoes" another function. For any input in the domain, the function <m>g</m> will reverse the process of <m>f</m>.
+  </p>
   </remark>
   <activity xml:id="activity-inverse-exist">
     <introduction>
@@ -227,7 +233,9 @@
     
   </activity>
   <remark xml:id="remark-invert"> 
+  <p>
     Some functions, like <m>f(x)</m> in <xref ref="table-not-func" />, have a given output value that corresponds to two or more input values: <m>f(0)=6</m> and <m>f(4)=6 </m>. If we attempt to reverse the process of this function, we have a situation where the new input <m>6</m> would correspond to two potential outputs.
+  </p>
   </remark>
   
   <definition xml:id="def-one-to-one">
@@ -239,7 +247,9 @@
   </definition>
 
   <remark>
+  <p>
     A function must be one-to-one in order to have an inverse.
+  </p>
   </remark>
   
   <activity xml:id="activity-inverse-operations">

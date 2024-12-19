@@ -96,7 +96,9 @@
       </theorem>
 
       <remark xml:id="remark-divide-to-find-zeros">
+      <p>
         If we know one zero, then we can divide by <m>x-a</m> where <m>a</m> is a zero. After this, the quotient will have smaller degree and we can work on factoring the rest. We can “chip away” at the polynomial one zero at a time.
+      </p>
       </remark>
 
       <activity xml:id="motivate-factor-fully">
@@ -146,7 +148,9 @@
       </activity>
     
       <remark xml:id="remark-intro-rational-root">
+      <p>
         We were able to find all the zeros of the polynomial in <xref ref="motivate-factor-fully"/> because we were given one of the zeros. If we don't have a zero to help us get started (or need more than one zero for a function of higher degree), we have a couple of options.
+      </p>
       </remark>
 
       <activity xml:id="motivate-rational-root">
@@ -231,7 +235,9 @@
       </activity>
 
       <remark>
+      <p>
         Using the graph to find an initial zero can be helpful, but they may not always be easy to identify.
+      </p>
       </remark>
 
    <activity xml:id="quad-rational-root">
@@ -267,7 +273,9 @@
    </activity>
    
    <remark>
+   <p>
     In <xref ref="quad-rational-root"/> we found that the roots were both factors of the constant term divided by factors of the leading coefficient.  This can be extended to polynomials of larger degree.
+    </p>
    </remark>
    <theorem xml:id="thm-rational-root">
    <title>Rational Root Theorem</title>
@@ -390,7 +398,9 @@
     </task>
    </activity>
 <remark>
+<p>
   Notice that the zeros of the quadratic factor were imaginary and are related. This also occured in <xref ref="quadratic-formula-imaginary"/>.
+</p>
 </remark>
 
 <theorem>

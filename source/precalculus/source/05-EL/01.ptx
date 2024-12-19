@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       Linear functions have a constant rate of change - that is a constant change in output for every change in input. Let's consider functions which do not fit this model - those which grow more rapidly and change by a varying amount for every change in input.
+    </p>
     </remark>
     <activity xml:id="act-job-expvslog">
       <introduction>
@@ -285,7 +287,9 @@
   </task>
     </activity>
     <remark>
+    <p>
       This idea of a function that grows very rapidly by a factor, ratio, or percent each time, like the second job in <xref ref="act-job-expvslog"/>,  is considered exponential growth. 
+    </p>
     </remark>
     <definition xml:id="def-exp-func">
       <statement>
@@ -674,7 +678,9 @@
   
     </activity>
     <remark>
+    <p>
       In a linear function the differences are constant, while in an exponential function the ratios are constant.
+    </p>
     </remark>
 
     <activity xml:id="act-find-equation">
@@ -742,10 +748,12 @@
     </activity>
 
     <remark xml:id="neg-exp">
+    <p>
       Recall the negative rule of exponents which states that for any nonzero real number <m>a</m> and natural number <m>n</m>
     <me>
       a^{-n}=\dfrac{1}{a^n}
     </me>
+    </p>
     
     </remark>
     <activity xml:id="act-neg-exp">

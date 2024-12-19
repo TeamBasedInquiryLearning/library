@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       Recall that we can convert between exponential and logarithmic forms. <me>\log_bx=y</me> is equivalent to <me>b^y=x</me>
+      </p>
     </remark>
 
     <activity xml:id="solve-by-converting">
@@ -59,7 +61,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solve-by-converting"/>, you were able to solve a logarithmic equation by converting it into an exponential equation. This is one method in solving logarithmic equations.
+    </p>
     </remark>
 
     <activity xml:id="solve-by-converting-2">
@@ -210,7 +214,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solving-log-equations-with-logs-on-both-sides"/>, that you did not have to convert the logarithmic equation into an exponential equation. A faster method, when you have a log on both sides of the equals sign, is to "drop" the logs and set the arguments equal to one another. Be careful though - you can only have one log on each side before you can "drop" them!
+    </p>
     </remark> 
 
     <definition xml:id="def-one-to-one-property">
@@ -368,7 +374,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solving-exponential-equations-by-converting"/> we started with an exponential equation and then solved by converting the equation into a logarithmic equation. Logarithms can help us get the variable out of the exponent.
+    </p>
     </remark>
 
     <activity xml:id="explore-using-logs-to-solve">
@@ -601,7 +609,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solving-by-like-bases"/>, it is much faster to set the exponents equal to one another. Make sure to check that the bases are equal <em>before</em> you set the exponents equal! And if the bases are not equal, you might have to use properties of exponents to help you get the bases to be the same.
+    </p>
     </remark>
 
     <definition xml:id="def-one-to-one-property-of-exponentials">

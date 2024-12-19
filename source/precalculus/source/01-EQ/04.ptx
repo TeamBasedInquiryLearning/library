@@ -13,7 +13,9 @@
     
     <title>Activities</title>
     <remark>
+    <p>
       An absolute value, written <m>\lvert x \rvert</m>, is the non-negative value of <m>x</m>. If <m>x</m> is a positive number, then <m>\lvert x \rvert=x</m>. If <m>x</m> is a negative number, then <m>\lvert x \rvert=-x</m>. 
+    </p>
     </remark>
     <activity>
       <introduction>
@@ -123,6 +125,7 @@
       
     </activity>
     <remark>
+    <p>
       When solving an absolute value equation, begin by isolating the absolute value expression. Then rewrite the equation into two linear equations and solve.
       
       If <m>c \gt 0</m>, 
@@ -131,6 +134,7 @@
       </me>
       becomes the following two equations
       <me>ax+b =c \quad \text{and} \quad ax+b=-c</me>
+    </p>
     </remark>
 <activity>
   <introduction>
@@ -187,7 +191,9 @@
   </task>
 </activity>
 <remark>
+<p>
   Since the absolute value represents a distance, it is always a positive number. Whenever you encounter an isolated absolute value equation equal to a negative value, there will be no solution.
+</p>
 </remark>
 <activity>
   <introduction>
