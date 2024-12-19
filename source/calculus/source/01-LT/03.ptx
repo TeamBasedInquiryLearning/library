@@ -325,7 +325,7 @@
     </activity>
     
     <remark xml:id="zero-over-zero">
-    <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
+    <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeterminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
     </remark>
     
 <definition xml:id="def-hole"><statement><p>A function <m>f(x)</m> has a <term>hole</term><idx>hole</idx> at <m>x=c</m> if <m>f(c)</m> does not exist but <m>\displaystyle \lim_{x \to c} f(x)</m> does exist and is equal to a real number. </p></statement></definition>    

@@ -83,7 +83,7 @@ Using the leg lengths and Pythagorean theorem, how long must the red dashed hypo
         <task>
             <p>
 Compared with the blue parametric curve connecting the same two points, is the red dashed line
-segement length an overestimate or underestimate?
+segment length an overestimate or underestimate?
             </p>
             <ol marker="A." cols="2">
                 <li><p>Overestimate: the blue curve is shorter than the red line.</p></li>
@@ -112,7 +112,7 @@ This formula will need to be modified to measure a curved path between two point
     <observation>
         <statement>
             <p>
-By approximating the curve by several (say <m>N</m>) segements connecting
+By approximating the curve by several (say <m>N</m>) segments connecting
 points along the curve, we obtain a better approximation than a single line segment.
 For example, the illustration shown in <xref ref="CO3-parametric-subdivide"/> gives
 three segments whose distances sum to about <m>7.6315</m>, while the actual length of the curve turns
@@ -148,7 +148,7 @@ in <xref ref="CO3-parametric-subdivide"/>?
         <task>
             <p>
 Let <m>\Delta L_1,\Delta L_2,\Delta L_3</m> describe the lengths of each
-of the three segements. Which expression describes the total length of these
+of the three segments. Which expression describes the total length of these
 segments?
             </p>
             <ol marker="A." cols="2">
@@ -178,7 +178,7 @@ Finally, we'll want to increase <m>N</m> from <m>3</m> so that it limits to <m>\
 What can we conclude when that happens?
             </p>
             <ol marker="A." cols="2">
-                <li><p>Each segment is infintely small.</p></li>
+                <li><p>Each segment is infinitely small.</p></li>
                 <li><p><m>\Delta x_i\to 0</m></p></li>
                 <li><p><m>\frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}</m></p></li>
                 <li><p>All of the above.</p></li>
