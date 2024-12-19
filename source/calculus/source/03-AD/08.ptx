@@ -436,6 +436,7 @@
           <image width="47%">
             <sageplot>
               from sage.plot.graphics import Graphics
+              geometry = Graphics()
               front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
               right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
               front_bottom = polygon2d([(0,0),(2,0),(2,1)],color='cyan',alpha=1)
