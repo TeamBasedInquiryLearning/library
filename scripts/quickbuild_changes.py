@@ -12,14 +12,14 @@ def main():
     commit_origin_main = repo.commit("origin/main")
     commit_merge_base = repo.merge_base(commit_head, commit_origin_main)[0]
     diff_index = commit_merge_base.diff(commit_head)
-    changed_files = [Path(item.a_path) for item in diff_index]
+    changed_files = [Path(item.a_path) for item in diff_index if not item.deleted_file]
     preview_links = []
 
     p = Project.parse()
     BOOKS = ['precalculus', 'calculus', 'linear-algebra']
 
     # for each .ptx file, try to build subtree of document
-    for f in [f for f in changed_files if f.suffix == ".ptx" and not f.deleted_file]:
+    for f in [f for f in changed_files if f.suffix == ".ptx"]:
         book = None
         for b in BOOKS:
             b_path = Path("source") / b
