@@ -53,7 +53,7 @@
         </task>
     </activity>
 
-    <definition>
+    <definition xml:id="taylor-remainder">
         <statement>
             <p>
                 Given a infinitely differentiable function <me>f(x)=\displaystyle\sum_{n=0}^\infty \dfrac{f^{(n)}(c)}{n!}(x-c)^n</me>, we define
@@ -61,8 +61,10 @@
                 and its <m>n</m>th degree Taylor polynomial <m>T_k(x)</m>. That is,
                 <me>
                     R_k(x)=f(x)-T_k(x).
-                </me>
-                
+                </me>  
+            </p>
+            <p>
+                The <term>error</term> in the approximation <m>f(x)\approx T_k(x)</m> is given by <m>|R_k(x)|</m>.
             </p>
         </statement>
     </definition>
@@ -100,7 +102,7 @@
                 <ol marker="A.">
                     <li>
                         <p>
-                            Not enough information.
+                            There is not enough information.
                         </p>
                     </li>
                     <li>
@@ -130,7 +132,7 @@
             <me>
                 f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n
             </me>
-            with an interval of convegence <m>I</m>. Then for all <m>x\in I</m>,
+            with an interval of convergence <m>I</m>. Then for all <m>x\in I</m>,
             <me>
                 \lim_{n\rightarrow\infty} R_n(x)=0.
             </me>
@@ -139,9 +141,168 @@
     </statement>
    </fact> 
 
+    <theorem xml:id="thm-taylors-theorem">
+        <title>Taylor's Theorem</title> 
+        
+        <statement>
+            <p>
+                Let <m>f(x)</m> be an <m>(k+1)</m> times differentiable function on an interval <m>I</m> of <m>a</m>, and let <m>T_k(x)</m>
+                be its <m>k</m>th degree Taylor polynomial centered at <m>x=a</m>. Then for any <m>x</m> in the interval <m>I</m>, 
+                there exists <m>c</m> between <m>a</m> and <m>x</m> such that
+                <me>
+                    R_k(x)=\dfrac{f^{(k+1)}(c)}{(k+1)!}(x-a)^{k+1}.
+                </me>
+                If there exists <m>M_k</m> such that <m>|f^{(k+1)}(x)|\leq M_k</m> for all <m>x</m> in <m>I</m>, then the error in 
+                the approximation <m>f(x)\approx T_k(x)</m> has an upper bound:
+                <me>
+                    |R_k(x)|\leq \dfrac{M_k}{(k+1)!}|x-a|^{k+1}.
+                </me>               
+                
+            </p>
+        </statement>
+    </theorem>
+    
+    <remark>
+        <title>Using Taylor's Theorem</title>
+        <p>
+            The trickiest part to using Taylor's Theorem is calculating <m>M_k</m> to get a bound for the error
+            <m>|R_k(x)|</m> for the approximation <m>f(x)\approx T_k(x)</m>. 
+        </p>
+    </remark>
+
+    <activity>
+        <introduction>
+            <p>
+                Consider the function <m>f(x)=1/x</m> defined on the interval <m>I=[1,2]</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Calculate the derivatives <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>. 
+                </p>
+                <answer>
+                    <p>
+                        <m>f'(x)=-1/x^2</m>, <m>f''(x)=2/x^3</m>, <m>f'''(x)=-6/x^4</m>, <m>f^{(4)}(x)=24/x^5</m>
+                    </p>
+                </answer>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Which of the following can we say above the values of <m>|f^{(k)}(x)|</m> on <m>I</m> for <m>k=1,2,3,4</m>?
+                </p>
+                <ol marker="A.">
+                    <li>
+                        <p>
+                            <m>|f'(x)|</m> and <m>|f'''(x)|</m> are increasing, while <m>|f''(x)|</m> and <m>|f''''(x)|</m> are decreasing.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            All are decreasing.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            All are increasing.
+                        </p>
+                    </li>
+                     <li>
+                        <p>
+                            <m>|f'(x)|</m> and <m>|f'''(x)|</m> are decreasing, while <m>|f''(x)|</m> and <m>|f''''(x)|</m> are decreasing.
+                        </p>
+                    </li>
+                </ol>
+                <answer>
+                    <p>
+                        B.
+                    </p>
+                </answer>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Calculate <m>M_k</m> for each <m>k=1,2,3,4</m> using your results from part (b).
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Use Taylor's Theorem to calculate <m>|R_k(1.5)|</m> for each <m>k=1,2,3,4</m>
+                    to 3 decimal places. Use <m>a=1</m> as the center of the approximation.
+                </p>
+                <answer>
+                    <p>
+                        <m>0.125, 0.042, 0.016, 0.006</m>
+                    </p>
+                </answer>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Are the errors decreasing? Explain why or why not.
+                </p>
+            </statement>
+        </task>
+    </activity>
+
+    <!-- Would like a flexible extension here for calculating M maybe. -->
    
+    <activity>
+        <introduction>
+            <p>
+                Let <m>f(x)=e^x</m>. Your goal is to approximate <m>f(1)=e</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to determine the upper bound <m>M_k</m> from Taylor's 
+                    Theorem for <m>f(x)=e^x</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use your value for <m>M_k</m> in part (a) to find an upper bound for the error
+                    <m>|R_4(1)|</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use your value for <m>M_k</m> in part (a) to find an upper bound for the error
+                    <m>|R_8(1)|</m>.
+                </p>
+            </statement>
+        </task>
+    </activity>
 
+    <!-- <activity> This one is a bit hard since the derivatives blow up and are not nice.
+        <introduction>
+            <p>
+                        In <xref ref="activity-PS3arctan"/>, you found the Maclaurin series
+                        for <m>\arctan(x)</m>:
+                        <me>
+                            \arctan(x)=\displaystyle\sum_{n=0}^\infty (-1)^n\dfrac{x^{2n+1}}{2n+1}
+                        </me>
+                        along with its interval of convergence <m>-1 \leq x\leq 1</m>.
+            </p>
+        </introduction>
+    </activity> -->
 
+    <!-- I want an activity that has more work for M without being ridiculous, I'm thinking ln(x+1) with derivs
+    given -->
 
 </subsection>
 
@@ -186,6 +347,8 @@
                     </p>
                 </statement>
             </task>
+
+            
 </subsection>
 
 
