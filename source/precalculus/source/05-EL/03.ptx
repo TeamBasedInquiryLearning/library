@@ -226,7 +226,7 @@
     </p>
   </statement>
 </definition>
-<remark>
+<remark xml:id="remark-log-exp-form">
 <p>  We can use <xref ref="def-log"/> to express the relationship between logarithmic form and exponential form as follows:
   <me>
     \log_{b}(x)=y \iff b^{y}=x 
