@@ -42,6 +42,11 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                 <li><p>The limit does not exist </p></li>
                 <li><p>This limit is negative infinity</p></li>
             </ol>
+            <answer>
+                <p>
+                    C. The limit does not exist.
+                </p>
+            </answer>
         </task>
         <task>
             <p>
@@ -54,6 +59,11 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                 <li><p>The function is getting closer and closer to the line <m>x=0</m></p></li>
                 <li><p>The function has a jump in outputs around <m>x=0</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    D. The function is getting closer and closer to the line <m>x=0</m>
+                </p>
+            </answer>
         </task>
     </activity>
 
@@ -157,7 +167,12 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                             <caption>F</caption>
                         </figure>
                     </sidebyside>
-        </introduction>             
+        </introduction>
+        <answer>
+            <p>
+                B, C, D, E, and F
+            </p>
+        </answer>             
     </activity>
 
          <remark>
@@ -182,6 +197,11 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                 <li><p>A rational function always has a horizontal asymptote
 </p></li>
             </ol>
+            <answer>
+                <p>
+                    A. When dividing by an increasingly small number we get an increasing big number
+                </p>
+            </answer>
     </activity>
     
     <remark><statement><p>Informally, we say that the limit of "<m>\dfrac{1}{0}</m>" is infinite. Notice that this could be either positive or negative infinity, depending on how whether the outputs are becoming more and more positive or more and more negative as we approach zero.</p></statement></remark>
@@ -203,6 +223,11 @@ Consider the rational function <m>f(x) = \dfrac{2}{x-3} </m>. Which of the follo
                         <li><p>As <m>x \to 3^+</m>, the limit DNE and as <m>x \to 3^-</m> the limit DNE.
 </p></li>
             </ol>
+            <answer>
+                <p>
+                    B. As <m>x \to 3^+</m>, the limit is <m>+\infty</m>, but as <m>x \to 3^-</m> the limit is <m>-\infty </m>
+                </p>
+            </answer>
      </activity>
     
       <remark xml:id="vert-asymptote-den">
@@ -226,6 +251,11 @@ Consider the function <m>f(x)=\dfrac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT
                     <li><p>The function is always equal to <m>x-1</m>.
 </p></li>
             </ol>
+            <answer>
+                <p>
+                B. When <m>x</m> is not equal to <m>1</m>, we can simplify the fraction to <m>x+1</m>, so the limit is <m>2</m>
+                </p>
+            </answer>
      </activity>
 
   <remark xml:id="rational-hole">
@@ -240,22 +270,42 @@ Consider the function <m>f(x)=\dfrac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT
                 <p><m> y = \dfrac{3x-4}{7x+1}</m>
 </p>
             </statement>
+            <answer>
+                <p>
+                    <m> x = -\dfrac{1}{7} </m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p><m>y= \dfrac{x^2+10x+24}{x^2-2x+1}</m>
 </p>
             </statement>
+             <answer>
+                <p>
+                    <m> x = 1 </m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p><m>y= \dfrac{(x^2-4)(x^2+1)}{x^6}</m></p>
             </statement>
+             <answer>
+                <p>
+                    <m> x = 0 </m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p><m>y= \dfrac{2x+1}{2x^2+8x-10}</m></p>
             </statement>
+             <answer>
+                <p>
+                    <m> x = -5 </m> and <m> x = 1 </m>
+                </p>
+            </answer>
         </task>
     </activity>
 
@@ -269,16 +319,31 @@ Explain and demonstrate how to find the value of each limit.
                 <p> 
                     <me>\lim_{x\to-3^- } \dfrac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}</me>
                 </p>
+                <answer>
+                    <p>
+                        <me>\lim_{x\to-3^- } \dfrac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}=-\infty</me> 
+                    </p>
+                </answer>
             </task>
             <task>
                 <p> 
                     <me>\lim_{x\to-3^+ } \dfrac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}</me>
                 </p>
+                <answer>
+                    <p>
+                         <me>\lim_{x\to-3^+ } \dfrac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}=+\infty</me>
+                    </p>
+                </answer>
             </task>
             <task>
                 <p> 
                     <me>\lim_{x\to-3 } \dfrac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}</me>
                 </p>
+                <answer>
+                    <p>
+                        <me>\lim_{x\to-3 } \dfrac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}} \text{ does not exist }</me> 
+                    </p>
+                </answer>
             </task>
         
     
@@ -324,21 +389,44 @@ Explain and demonstrate how to find the value of each limit.
             <statement>
                 <p>Explain the behavior of <m> f(x)</m> at <m>x=-4 </m>.</p>
             </statement>
+            <answer>
+                <p>
+                    The function  <m> f(x)</m>   has a hole at  <m>x=-4 </m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p> Find the vertical asymptote(s) of <m> f(x)</m>. First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
             </statement>
+            <answer>
+                <p>
+                    The function has vertical asymptote at <m>x = 1</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p> Find the horizontal asymptote(s) of  <m> f(x)</m>. First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
             </statement>
+            <answer>
+                <p>
+                    The function has horizontal  asymptote at <m>y = 1</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its asymptotes.</p>
             </statement>
+             <answer>
+                <p>
+                    Vertical Asymptote : <me> \lim_{x\to 1 } \dfrac{(x + 2)(x +4)}{x^2+3x-4} = \infty </me>
+                </p>
+                <p>
+                    Horizontal Asymptote : <me> \lim_{x\to \infty } \dfrac{(x + 2)(x +4)}{x^2+3x-4} = 1 </me>
+                </p>
+             </answer>
         </task>
     </activity>
 
@@ -349,9 +437,27 @@ Explain and demonstrate how to find the value of each limit.
       <me> r(x) =  \dfrac{ 5 \, {\left(x - 3\right)} {\left(x - 6\right)}^{3} }{ 6 \, {\left(x + 2\right)}^{3} {\left(x - 3\right)} }</me>
       </p></introduction>
            
-                <task><p>Explain how to find the horizontal asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></task>
-                 <task><p>Explain how to find the hole(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></task>
-              <task><p>Explain how to find the vertical asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></task>
+                <task><p>Explain how to find the horizontal asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p>
+                <answer>
+                    <p>
+                       <me>  \lim_{ x \to \infty }\dfrac{ 5 \, {\left(x - 3\right)} {\left(x - 6\right)}^{3} }{ 6 \, {\left(x + 2\right)}^{3} {\left(x - 3\right)} } = \dfrac{5}{6}</me>  
+                    </p>
+                </answer>
+                </task>
+                 <task><p>Explain how to find the hole(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p>
+                 <answer>
+                    <p>
+                        There is a hole at <m>(3 , -\dfrac{9}{50}) </m>
+                    </p>
+                 </answer>
+                 </task>
+              <task><p>Explain how to find the vertical asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p>
+              <answer>
+                <p>
+                    The vertical asymptote is at <m> x = -2</m>
+                </p>
+              </answer>
+              </task>
                    <task><p>Draw a rough sketch of <m>r(x)</m> that showcases all the limits that you have found above. </p></task>
       
  <!--   <answer>
@@ -380,17 +486,31 @@ Explain and demonstrate how to find the value of each limit.
                 <p> At which <m>x</m> values will the limit not exist?
 </p>
             </statement>
+            <answer>
+                <p>
+                    The limit does not exist at <m>x= 0</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p> What are the asymptotes of this function?
 </p>
             </statement>
+             <answer>
+                
+                  <p>  Vertical Asymptotes is at <m> x= 0 </m>. </p>
+                         
+                <p> Horizontal Asymptotes is at <m> f(x) = 2 </m>. </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p>At which <m>x</m> values will the function be discontinuous? </p>
             </statement>
+            <answer>
+           <p> The function is discontinuous at <m> x = 0 </m> and <m> x= 3</m>. </p>
+           </answer>
         </task>
         <task>
             <statement>
