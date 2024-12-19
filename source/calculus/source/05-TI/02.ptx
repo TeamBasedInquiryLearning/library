@@ -150,8 +150,9 @@
         </statement>
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2GoodPartsChoice">
-        <statement>
+        <introduction>
             <p>Consider the integral <m>\displaystyle \int x^9\ln(x) \,dx</m>. Suppose we proceed using integration by parts. We choose <m>u=\ln(x)</m> and <m>dv=x^9\,dx</m>.</p>
+        </introduction>
             <task>
                 <p>What is <m>du</m>?</p>
             </task>
@@ -169,7 +170,6 @@
                     <li><p>Neither integral seems harder than the other one.</p></li>
                     </ol>
             </task>
-        </statement>
     </activity>
     <activity estimated-time="99" xml:id="activity-TI2WorseSubChoice">
         <statement>
