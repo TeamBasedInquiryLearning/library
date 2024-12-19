@@ -71,18 +71,16 @@
           "other": "off"
         },
         "editor.snippetSuggestions": "top",
-        "xml.validation.enabled": false,
+        "xml.validation.enabled": true,
+        "redhat.telemetry.enabled": false,
         "CodeChat.CodeChatServer.Command": "CodeChat_Server",
-        "files.eol": "\n",
-        "files.associations": {
-          "*.sage": "python"
-        }
+        "files.eol": "\n"
       },
       "extensions": [
-        "ms-vscode.live-server",
         "oscarlevin.pretext-tools",
         "CodeChat.codechat",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "lov3.sagemath-enhanced"
       ]
     }
   }
