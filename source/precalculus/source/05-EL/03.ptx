@@ -485,15 +485,29 @@
   </task>
 </activity>
 <remark>
-  Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  Using the rules of exponents and the fact that exponents and logarithms are inverses, these properties hold for any base:
-  <me>
-    \log_{b}(b^{x})=x
-  </me>
-  <me>
-    \log_b(1)=0
-  </me>
-  
-  
+<p>
+  Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  
+  Using the rules of exponents and the fact that exponents and logarithms are inverses, the following properties hold for any base:
+  <ul>
+    <li>
+      <m>\log_{b}(b^{x})=x</m>
+    </li>
+    <li>
+      <m>b^{\log_{b}(x)}=x</m>
+    </li>
+  </ul>
+  In particular, note the following special cases:
+  <ul>
+    <li>
+      <p>
+        <m>\log_b(1)=0</m> (and therefore <m>\ln(1)=0</m>)
+      </p>
+    </li>
+    <li>
+      <m>\log_b(b)=1</m> (and therefore <m>\ln(e)=1</m>)
+    </li>
+  </ul>
+</p> 
 </remark>
 
 <remark>
@@ -514,8 +528,6 @@
     </me>
     
   </p>
-  
-  
 </remark>
 
 <activity xml:id="act-log-calc">
