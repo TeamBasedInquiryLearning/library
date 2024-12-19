@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <titlepage>
+  <bibinfo>
     <xi:include href="../../../common/authors/clontz.ptx"/>
     <xi:include href="../../../common/authors/lewis.ptx"/>
     <credit>
@@ -43,11 +43,15 @@
       </author>
     </credit>
     <date><today /></date>
-  </titlepage>
-
-  <colophon xml:id="colophon">
     <xi:include href="../../../common/website.ptx"/>
     <xi:include href="../../../common/copyright.ptx" />
+  </bibinfo>
+  <titlepage><titlepage-items/></titlepage>
+
+  <colophon/>
+
+  <preface xml:id="attribution">
+    <title>Attribution and Acknowledgements</title>
     <p>
 This work includes materials used under license from the following works:
     </p>
@@ -76,7 +80,7 @@ This work includes materials used under license from the following works:
         </li>
     </ul>
     <xi:include href="../../../common/nsf.ptx" />
-  </colophon>
+  </preface>
 
   <xi:include href="../../../common/resource-library.ptx"/>
 
