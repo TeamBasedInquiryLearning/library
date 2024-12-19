@@ -1,0 +1,1019 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="VE1" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Vectors (VE1)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/01.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+  <subsection>
+    <title>Activities</title>
+
+     <definition xml:id="def-vector">
+            <title>Vector</title>
+            <idx><h>vector</h></idx>
+            <statement>
+                <p>
+                    A <term>vector</term> is a quantity which has both <em>magnitude/length</em> and <em>direction</em>. We will denote a vector using boldface type, as <m>\textbf{v}</m>. Vectors are generally depicted visually as an arrow beginning at an <term>initial point</term> (<m>
+                    A</m> below) and ending at a <term>terminal point</term> (<m>B</m> below). 
+                </p>
+                <figure xml:id="ve-vector-image">
+                    <image width = "50%">
+                        <latex-image>
+                            \begin{tikzpicture}
+                                \coordinate (a) at (0,0);
+                                \coordinate (b) at (4,3);
+                                \fill (a) circle (0.1);
+                                \draw[->] (a)--(b) node[midway, yshift=7.5pt] {$\textbf{v}$};
+                                \node at (0,-.5) {$A$};
+                                \node at (4.25,2.5) {$B$};
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <caption></caption>
+                </figure>
+            </statement>
+        </definition>
+
+        <activity xml:id="ve1-magnitude-direction-1">
+            <introduction>
+                <p>
+                    Vectors can be decomposed into <em>components</em>- horizontal and vertical. See the diagram below.
+                </p>
+                <figure xml:id="ve-vector-components-1">
+                    <image width = "50%">
+                        <latex-image>
+                            \begin{tikzpicture}
+                                \coordinate (a) at (0,0);
+                                \coordinate (b) at (4,3);
+                                \coordinate (c) at (4,0);
+                                \fill (a) circle (0.1);
+                                \draw[->] (a)--(b) node[midway, yshift=14.5pt] {$||\textbf{v}||$};
+                                \node at (0,-.5) {$A$};
+                                \node at (4.25,2.5) {$B$};
+                                \draw[densely dashed] (a)--(c);
+                                \draw[densely dashed] (b)--(c);
+                                \draw (c) rectangle (3.8,0.2);
+                                \draw (1,0) arc (0:37:1) node[midway, xshift=-7.5pt, yshift=-2.5pt] {$\theta$};
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <caption></caption>
+                </figure>
+                
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        If the length of the horizontal leg is <m>a</m>, and the length of the vertical leg is <m>b</m>, which is the best description for the magnitude of <m>\textbf{v}</m>, denoted <m>||\textbf{v}||</m>?
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>a + b</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\sqrt{b^2 - a^2}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\sqrt{a^2 + b^2}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>a^2 + b^2</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Which expression best identifies the direction of the vector, denoted <m>\theta</m> in the diagram?
+                        <ol marker="A." cols="2">
+                            
+                            <li>
+                                <p>
+                                    <m>\sin^{-1}\left(\dfrac{a}{b}\right)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\sin^{-1}\left(\dfrac{b}{a}\right)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\cos^{-1}\left(\dfrac{a}{b}\right)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\cos^{-1}\left(\dfrac{b}{a}\right)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\tan^{-1}\left(\dfrac{a}{b}\right)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\tan^{-1}\left(\dfrac{b}{a}\right)</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use trigonometry and/or part (a) to find expressions for the length of <m>a</m> and the length of <m>b</m> in terms of the direction and magnitude of <m>\textbf{v}</m>.
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <remark xml:id="ve1-rmk-component-form">
+            <p>
+                A vector <m>\textbf{v}</m> with horizontal component <m>x</m> and vertical component <m>y</m> is written in <term>component form</term> as <m>\langle x,y\rangle</m>. 
+            </p>
+        </remark>
+
+        <activity xml:id="ve1-vector-computation-1">
+            <introduction>
+                <p>
+                    Consider the points <m>A(1,2)</m> and <m>B(6,9)</m>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Write the component form of the vector beginning at <m>B</m> and ending at <m>A</m>.
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle7,5\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-7,-5\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle5,7\rangle
+                                    </m>    
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-5,-7\rangle
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is the direction of this vector?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Write the component form of the vector beginning at <m>A</m> and ending at <m>B</m>. 
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle7,5\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-7,-5\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle5,7\rangle
+                                    </m>    
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-5,-7\rangle
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is the direction of this vector?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What do you notice about the vectors <m>\textbf{BA}</m> from part (a) and <m>\textbf{AB}</m> from part (c)?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <activity xml:id="ve1-vector-computation-2">
+            <introduction>
+                <p>
+                    Now consider the points <m>A(3,2)</m> and <m>B(1,1)</m>
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Find the vector <m>\textbf{AB}</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Consider the additional point <m>C(2,2)</m>. Find the vector <m>\textbf{AC}</m>.
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle2,1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle1,2\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-1,-2\rangle   
+                                    </m>
+                                </p>    
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-2,-1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch <m>\textbf{AB}</m> and <m>\textbf{AC}</m> on the same coordinate grid. What relationship do you see between <m>\textbf{AC}</m> and <m>\textbf{AB}</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                         Now consider the point <m>D(-1,-1)</m>. Find the vector <m>\textbf{AD}</m>. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch <m>\textbf{AD}</m> on the same grid from part (f). What relationship do see between <m>\textbf{AB}</m> and <m>\textbf{AD}</m>?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <remark xml:id="ve1-rmk-add-subtract">
+            <statement>
+                <p>
+                    Vectors can be added and subtracted like regular numbers. Addition happens <em>component-wise</em>; for example, adding the vectors <m>\langle1,3\rangle + \langle-4,2\rangle</m> gives the <em>resultant vector</em> <m>\langle1-4,3+2\rangle = \langle-3,5\rangle</m>
+                </p>
+            </statement>
+        </remark>
+
+        <activity xml:id="ve1-vector-computation-3">
+            <introduction>
+                <p>
+                    Let <m>\textbf{u} = \langle-2,1\rangle</m> and <m>\textbf{v} = \langle0,3\rangle</m>. Find the following vectors.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        <m>\textbf{u} + \textbf{v}</m>
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle2,2\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-2,4\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle1,1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-1,3\rangle
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\textbf{u} - \textbf{v}</m>
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-2,-2\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle2,2\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-5,1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle5,-1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>2\textbf{u} - \dfrac{1}{2}\textbf{v}</m>
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle2,5\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-4,\frac{5}{2}\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle1,-\frac{5}{2}\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-4,-\frac{1}{2}\rangle
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <activity xml:id="ve1-activity-parallelogram-rule">
+            <introduction>
+                <p>
+                    This activity will develop the <em>parallelogram rule</em>, a method for visualizing the addition or subtraction of two vectors. 
+                </p>
+                <p>
+                    Consider the vectors <m>\textbf{a} = \langle2,0\rangle</m> and <m>\textbf{b} = \langle1,1\rangle</m> for the tasks below.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Find <m>\textbf{a} + \textbf{b}</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        On a coordinate grid, draw the vectors <m>\textbf{a}</m> and <m>\textbf{b}</m> so that their tails are touching.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Create a parallelogram by translating <m>\textbf{a}</m> and <m>\textbf{b}</m>, then include <m>\textbf{a} + \textbf{b}</m> on the parallelogram. What do you notice about its position on the diagram?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Compute <m>\textbf{a} - \textbf{b}</m>. How, if at all, does it fit in the diagram from (c)?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <assemblage xml:id="ve-vector-properties">
+            <title>Vector Properties</title>
+            <p>
+                Let <m>\textbf{a}, \textbf{b}</m> and <m>\textbf{c}</m> be three vectors, and let <m>k,r</m> be scalar values. The following properties hold:
+                <ol>
+                    <li>
+                        <p> 
+                            (Commutativity of Vectors)
+                            <m>
+                                \textbf{a} + \textbf{b} = \textbf{b} + \textbf{a}
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Associativity of Vectors)
+                            <m>
+                                (\textbf{a} + \textbf{b}) + \textbf{c} = \textbf{a} + (\textbf{b} + \textbf{c})
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                           (Additive Identity for Vectors) 
+                           <m>
+                                \textbf{a} + \textbf{0} = \textbf{a}
+                           </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Additive Inverse for Vectors)
+                            <m>
+                                \textbf{u} + (-\textbf{u}) = \textbf{0}
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Associativity of Scalar Muliplication)
+                            <m>
+                                k(r\textbf{a}) = (kr)\textbf{a}
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Distributivity)
+                            <m>
+                                (k+r)\textbf{a} = k\textbf{a} + r\textbf{a}
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Distributivity)
+                            <m>
+                                k(\textbf{a} + \textbf{b}) = k\textbf{a} + k\textbf{b}
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Multiplicative Identity for Vectors)
+                            <m>
+                                1\textbf{a} = \textbf{a}
+                            </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (Multiplicative Zero for Vectors)
+                            <m>
+                                0\textbf{a} = \textbf{0}
+                            </m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </assemblage>
+
+        <remark xml:id="ve1-rmk-vectors-dimension">
+            <p>
+                A convenient thing about working with vectors is that the same ideas that work in two dimensions work in any number of dimensions. The number of dimensions is equal to the number of components in the vector. For example, the vector <m>\langle1,4\rangle</m> is two-dimensional because there are only two components, while the vector <m>\langle0,1,2,3,4,5\rangle</m> is six-dimensional because there are six components.
+            </p>
+        </remark>
+
+        <activity xml:id="ve1-vector-computation-4">
+            <introduction>
+                <p>
+                    For the vectors <m>\textbf{a} = \langle-3,5,1\rangle</m>, <m>\textbf{b} = \langle1,0,2}</m>, find the following.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \textbf{a} + \textbf{b}
+                        </m>
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-2,5,3\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle-4,5,-1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        \langle4,-5,1\rangle
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        6
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            -\dfrac{1}{2}\textbf{a} + \dfrac{3}{4}\textbf{b}
+                        </m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            5\textbf{a} 
+                        </m>
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <remark xml:id="ve1-rmk-right-hand-rule">
+            <p>
+                In order to avoid confusion, we talk about a three-dimensional coordinate system using the <term>right-hand rule</term>: when using your right hand, point your index finger out, thumb up, and middle finger perpendicular to both. Your index finger represents the <m>y-</m>axis, your middle finger represents the <m>x-</m>axis, and your thumb represents the <m>z-</m>axis.
+            </p>
+            <image width = "25%">
+                <latex-image>
+                    \begin{tikzpicture}
+                        \draw[thick,->] (0,0) -- (1,0) node[right]{$y$};
+                        \draw[thick,->] (0,0,0) -- (0,1,0) node[above]{$z$};
+                        \draw[thick,->] (0,0,0) -- (0,0,1) node[below left]{$x$};
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </remark>
+        
+        <activity xml:id="ve1-activity-unit-vector">
+            <introduction>
+                <p>
+                    Recall from <xref ref="ve1-magnitude-direction-1"/> that the magnitude or length of a two-dimensional vector <m>\textbf{v} = \langle a,b\rangle</m> can be found by computing <m>\sqrt{a^2 + b^2}</m>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        For a three-dimensional vector <m>\textbf{u} = \langle a,b,c\rangle</m>, how might you compute <m>||\textbf{u}||</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Find the length of the vector <m>\textbf{a} = \langle0,3,4\rangle</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is the length of the vector <m>\dfrac{1}{||\textbf{a}||}\textbf{a}</m>?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <definition xml:id="def-unit-vector">
+            <statement>
+                <p>
+                    A <term>unit vector</term> is a vector with unit length, i.e. length exactly 1.
+                </p>
+            </statement>
+        </definition>
+
+        <activity xml:id="ve1-vector-computation-5">
+            <introduction>
+                <p>
+                    For each vector, find its associated unit vector.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle7,6\rangle
+                        </m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle-1,0,8\rangle
+                        </m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle0,1\rangle
+                        </m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle1,1,1\rangle
+                        </m>    
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <remark xml:id="ve1-rmk-ijk">
+            <p>
+
+                The unit vector <m>\textbf{i}</m> is the vector whose first component 1 and all others are 0, <m>\textbf{j}</m> is the one whose second component is 1 with all others 0, and <m>\textbf{k}</m> is the one whose third component is 1 with all others 0.
+            </p>
+        </remark>
+
+        <activity xml:id="ve1-unit-vectors-1">
+            <introduction>
+                <p>
+                    Write each vector as a sum of the standard unit vectors <m>\textbf{i}, \textbf{j}, \textbf{k}</m>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle-4,3\rangle
+                        </m>
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        -4\textbf{j} + 3\textbf{k}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        -4\textbf{i} + 3\textbf{k}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        -4\textbf{i} + 3\textbf{j}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        -4\textbf{j} + 3\textbf{i}
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle3,1,-5\rangle
+                        </m>
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                    3\textbf{j} + \textbf{i} - 5\textbf{k}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                    3\textbf{j} + \textbf{k} - 5\textbf{i}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                    3\textbf{i} + \textbf{j} - 5\textbf{k}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                    3\textbf{i} + \textbf{k} - 5\textbf{j}
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                    3\textbf{k} + \textbf{i} - 5\textbf{j}   
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                    3\textbf{k} + \textbf{j} - 5\textbf{i}
+                                    </m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>
+                            \langle-1,1,0\rangle
+                        </m>
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <activity xml:id="ve1-vector-application-1">
+            <introduction>
+                <p>
+                    The speed of an object is the magnitude of its associated velocity vector. A football is thrown by a player with an initial speed of 82 miles per hour and an angle of elevation of <m>25^{\circ}</m>. Determine the velocity vector in miles per hour and express in component form and in terms of the standard unit vectors. Assume the ball is thrown in the <m>xz-</m>plane.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Which of the following best expresses the horizontal component of the vector?
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        82\sin(25^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        25\cos(82^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        82\cos(25^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        25\sin(82^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        82\sin(65^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        82\cos(65^{\circ})
+                                    </m>   
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Which option best describes the vertical component of the vector?
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>
+                                        82\sin(25^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        25\cos(82^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        82\cos(25^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        25\sin(82^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        82\sin(65^{\circ})
+                                    </m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>
+                                        82\cos(65^{\circ})
+                                    </m>   
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use your answers to (a) and (b) to write the velocity vector in component form.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Use your answers to (a) and (b) to write the velocity vector using the standard unit vectors. Remember that the ball is thrown in the <m>xz-</m>plane.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Why would we consider the ball to be thrown in the <m>xz-</m>plane rather than the <m>xy-</m>plane or the <m>yz-</m>plane?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <activity xml:id="ve1-vector-application-2">
+            <introduction>
+                <p>
+                    In order to fly from Oklahoma City to Dayton, OH, a plane must fly <m>64^{\circ}</m> east of north. A plane leaves Oklahoma City at a ground speed of 525 miles per hour. A 30 mph wind blows from the north during the flight. 
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        What is the ground speed of the plane when the wind begins to blow?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is the new bearing of the plane?
+                    </p>
+                </statement>
+            </task>
+        </activity>
+
+        <activity xml:id="ve1-vector-application-3">
+            <statement>
+                <p>
+                    An object is said to be in static equilibrium if the resultant force of the forces that act on it is zero. Let <m>\textbf{F}_1 = \langle10,6,3\rangle</m>, <m>\textbf{F}_2 = \langle0,4,9\rangle</m>, and <m>\textbf{F}_3 = \langle 10,-3,-9\rangle</m> be three forces acting on an object. Find the resultant force necessary to place the object in static equilibrium.
+                </p>
+            </statement>
+        </activity>
+    </subsection>
+</section>
