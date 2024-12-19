@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-    <include href="/root/.ptx/2.10.1/core/schema/pretext-dev.rng"/>
+    <include href="/root/.ptx/2.10.1/core/schema/pretext-dev.rng">
+        <define name="Subtitle">
+            <zeroOrMore>
+                <element name="subtitle">
+                    <optional>
+                        <attribute name="component"/>
+                    </optional>
+                    <ref name="TextLong"/>
+                </element>
+            </zeroOrMore>
+        </define>
+    </include>
     <start combine="choice">
         <choice>
             <ref name="Paragraph"/>
