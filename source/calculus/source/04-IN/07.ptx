@@ -13,7 +13,6 @@
     <title>Activities</title>
 
   <remark>
-  <statement>
   <p>
 A geometrical interpretation of <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx</me>
 (<xref ref="definition-in5-2"/>) defines <m>\int_a^bf(x)dx</m> as the <term>net area</term>
@@ -28,7 +27,6 @@ between the graph of <m>y=f(x)</m> and the <m>x</m>-axis. By net area, we mean t
         </image>
         <caption>Improving approximations of <m>\int_0^5(x-2)(x-4)dx</m></caption>
     </figure>
-  </statement>
   </remark>
 
   <activity>
