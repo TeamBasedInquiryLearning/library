@@ -169,7 +169,7 @@
       <task>
         <statement>
           <p>
-            Notice that the "log" has disappeared and you now have an equation with just the variable <m>x</m>. Which of the following is equivalent to the equation you got in part b?
+            Notice that the "log" has disappeared and you now have an equation with just the variable <m>x</m>. Which of the following is equivalent to the equation you got in part (b)?
             <ol marker= "A." cols="1">
               <li><m>4x-5=2x-1</m></li>
               <li><m>4x-5=0</m></li>
@@ -185,7 +185,7 @@
       <task>
         <statement>
           <p>
-            Compare the answer you got in part c to the original equation given <m>\log(4x-5)=\log(2x-1)</m>. What do you notice?
+            Compare the answer you got in part (c) to the original equation given <m>\log(4x-5)=\log(2x-1)</m>. What do you notice?
           </p>
         </statement>
         <answer>
@@ -197,7 +197,7 @@
       <task>
         <statement>
           <p>
-            Solve the equation you got in part d to find the value of <m>x</m>.
+            Solve the equation you got in part (d) to find the value of <m>x</m>.
             <ol marker= "A." cols="2">
               <li><m>-3</m></li>
               <li><m>\dfrac{5}{4}</m></li>
@@ -219,18 +219,10 @@
     </p>
     </remark> 
 
-    <definition xml:id="def-one-to-one-property">
-      <statement>
-        <p>
-          The <term>one-to-one property of logarithms</term> states that if both sides of an equation can be rewritten as a single logarithm with the same base, then the arguments can be set equal to each other (and then solved algebraically).
-        </p>
-      </statement>
-    </definition>
-
     <activity xml:id="solving-using-one-to-one-property">
       <introduction>
         <p>
-          Apply <xref ref="def-one-to-one-property"/> and other properties of logarithms (i.e., product, quotient, and power) to solve the following logarithmic equations.
+          Apply the one-to-one property of logarithms (see <xref ref="def-one-to-one-property"/>) and other properties of logarithms (i.e., product, quotient, and power) to solve the following logarithmic equations.
         </p>
       </introduction>
       <task>
@@ -357,7 +349,7 @@
     <task>
       <statement>
         <p>
-          Notice that the answer you got in part b is an exact answer for <m>x</m>. There will be times, though, that it will be helpful to also have an approximation for <m>x</m>. Which of the following is a good approximation for <m>x</m>?
+          Notice that the answer you got in part (b) is an exact answer for <m>x</m>. There will be times, though, that it will be helpful to also have an approximation for <m>x</m>. Which of the following is a good approximation for <m>x</m>?
           <ol marker= "A." cols="2">
             <li><m>x \approx 5.585</m></li>
             <li><m>x \approx 0.179</m></li>
@@ -424,7 +416,7 @@
       <task>
         <statement>
           <p>
-            Using the change-of-base formula (<xref ref="def-change-of-base"/>), rewrite your answer from part c so that <m>x</m> is written as a single logarithm. What is the exact value of <m>x</m>?
+            Using the change-of-base formula (<xref ref="def-change-of-base"/>), rewrite your answer from part (c) so that <m>x</m> is written as a single logarithm. What is the exact value of <m>x</m>?
           </p>
         </statement>
         <answer>
@@ -448,12 +440,12 @@
       <task>
         <statement>
           <p>
-            What do you notice about your answer from parts d and e?
+            What do you notice about your answer from parts (d) and (e)?
           </p>
         </statement>
         <answer>
           <p>
-            Students should see that the two answers they got for parts d and e are the same. This might be a good time to discuss why taking the log of both sides is a valid method in solving an exponential equation.
+            Students should see that the two answers they got for parts (d) and (e) are the same. This might be a good time to discuss why taking the log of both sides is a valid method in solving an exponential equation.
           </p>
         </answer>
       </task>
@@ -580,7 +572,7 @@
       <task>
         <statement>
           <p>
-            Compare the equation you got in part c to the original equation given. What do you notice?
+            Compare the equation you got in part (c) to the original equation given. What do you notice?
           </p>
         </statement>
         <answer>
