@@ -64,7 +64,7 @@
                     <image xml:id="polarCoord" width="100%">
                         <description>The polar grid</description>
                         <sageplot>
-                        circ_range = [1,..,5]
+circ_range = [1,..,5]
 plt = Graphics()
 for i in circ_range:
     plt += polar_plot(i-0.5,x,0,2*pi,thickness=1,figsize=10)
@@ -74,8 +74,7 @@ for i in circ_range:
     plt += lbl
 for angle in [0,1,..,23]:
     plt += line(([(0,0),(5*cos(angle*pi/12),5*sin(angle*pi/12))]))
-    string = lazy_string("$\\dfrac{%s\\pi}{12}$",angle)
-    plt += text(string,(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+    plt += text(f"${latex(angle*pi/12)}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
 xaxis = arrow((0,0),(5.25,0),arrowsize=0.5,color='black')
 plt += xaxis
 plt
