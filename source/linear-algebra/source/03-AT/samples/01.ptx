@@ -2,7 +2,7 @@
 
 <example xml:id="sample-AT1"><title>AT1</title>
 <statement>
-    <p> Answer the following questions about transformations. </p>
+    <p> Answer the following questions about transformations.
     <ol>
         <li>
             <p> Consider the following maps of Euclidean vectors <m>P:\mathbb R^3\rightarrow\mathbb R^3</m> and 
@@ -25,10 +25,10 @@
                 <me>T\left( \left[\begin{array}{c} x \\ y \end{array}\right] \right)=\left[\begin{array}{c} -4 \, x - 5 \, y \\ 2 \, x - 4 \, y \end{array}\right].</me> 
                 Prove that <m>T</m> <em>is</em> a linear transformation. </p>
         </li>
-    </ol>
+    </ol></p>
 </statement>
 <solution>
-    <ol>
+    <p><ol>
         <li>
             <p>A linear map between Euclidean spaces must consist of linear polynomials in each component.  
                 All three components of <m>P</m> are linear so <m>P</m> is likely to be linear; however, the 
@@ -123,6 +123,6 @@
                 Since <m>T</m> preserves both addition and scalar multiplication, we have proven that <m>T</m> is a linear transformation.
             </p>
         </li>
-    </ol>
+    </ol></p>
 </solution>
 </example>

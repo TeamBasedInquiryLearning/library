@@ -12,7 +12,7 @@
 <subsection>
     <title>Warm Up</title>
     <activity>
-        <introduction>
+        <statement>
             <p>
                 Consider the following vector equation and statements about it:
         <me>x_1\vec{v}_1+x_2\vec{v}_2+\cdots+x_n\vec{v}_n=\vec{w}</me>
@@ -34,10 +34,10 @@
             </li>
         </ol>
             </p>
-        </introduction>
             <p>
                 Which, if any, of these statements make sense if we no longer assume that the vectors <m>\vec{v}_1,\dots, \vec{v}_n</m> are Euclidean vectors, but rather elements of a vector space?
             </p>
+        </statement>
     </activity>
 </subsection>
 
@@ -464,7 +464,6 @@ as a linear combination of polynomials from the set
   </activity>
 
 <observation>
-    <statement>
         <p>
   The space of polynomials <m>\P</m> (of <em>any</em> degree)
   has the basis <m>\{1,x,x^2,x^3,\dots\}</m>,
@@ -477,7 +476,6 @@ as a linear combination of polynomials from the set
   Fortunately, most of the examples we will be
   interested in for this course will be finite-dimensional.
         </p>
-    </statement>
 </observation>
 
     </subsection>
@@ -537,20 +535,19 @@ as a linear combination of polynomials from the set
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-AT6" youtube="yrKAM3QhOPk">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Polynomial and matrix calculations</caption>
+            <video xml:id="video-AT6" youtube="yrKAM3QhOPk"/>
         </figure>
     </subsection>
 
-     <exercises>
+     <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT6/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     Given a matrix <m>M</m>
 <ul>
 <li>the span of the set of all columns is the <term>column space</term><idx>column space</idx></li>
@@ -569,20 +566,20 @@ Calculate the rank of these matrices.
 <li> <m>\left[\begin{array}{ccc}0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;0\end{array}\right]</m></li>
 </ul>
                 
-        </statement>
+        </p>
     </exploration>
     <exploration>
-        <statement>
+        <p>
 
 Calculate a basis for the row space and a basis for the column space of the matrix
             <m>\left[\begin{array}{cccc}2&amp;0&amp;3&amp;4\\0&amp;1&amp;1&amp;-1\\3&amp;1&amp;0&amp;2\\10&amp;-4&amp;-1&amp;-1\end{array}\right]</m>.
-        </statement>
+        </p>
     </exploration>
     <exploration>
-        <statement>
+        <p>
 If you are given the values of <m>a,b,</m> and <m>c</m>, what value of <m>d</m> will cause the matrix <m>\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]</m> to have rank 1?
 
-     </statement>
+     </p>
     </exploration>
     </subsection>
     
