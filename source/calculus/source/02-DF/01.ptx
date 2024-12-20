@@ -76,15 +76,48 @@
         </table>
 </introduction>
      <task> <statement> <p>To start we will look at an interval of length one before <m>t=2</m> and after <m>t=2</m>, so we consider the intervals <m>[1,2]</m> and <m>[2,3]</m>. What was the average velocity on the interval <m>[1,2]</m>? What about on the interval <m>[2,3]</m>? </p>
-         </statement> </task>  
+         </statement>
+         <answer>
+          <p>
+            The average velocity on the interval <m>[1,2]</m> is <m>-16</m> ft/sec.
+          </p>
+           <p>
+            The average velocity on the interval <m>[2,3]</m> is <m>-48</m> ft/sec.
+          </p>
+         </answer>
+          </task>  
      <task> <statement> <p>Now let's consider smaller intervals of length <m>0.5</m>. What was the average velocity on the interval <m>[1.5,2]</m>? What about on the interval <m>[2,2.5]</m>? </p>
-         </statement> </task>
+         </statement>
+         <answer>
+          <p>
+            The average velocity on the interval <m>[1.5,2]</m> is <m>-24</m> ft/sec.
+          </p>
+           <p>
+            The average velocity on the interval <m>[2,2.5]</m> is <m>-40</m> ft/sec.
+          </p>
+         </answer>
+          </task>
                  
      <task> <statement> <p>What was the average velocity on the interval <m>[1.75,2]</m>? What about on the interval <m>[2,2.25]</m>? </p>
-         </statement> </task> 
+         </statement>
+          <answer>
+          <p>
+            The average velocity on the interval <m>[1.75,2]</m> is <m>-28</m> ft/sec.
+          </p>
+           <p>
+            The average velocity on the interval <m>[2,2.25]</m> is <m>-36</m> ft/sec.
+          </p>
+         </answer>
+          </task> 
                  
      <task> <statement> <p>If we wanted to approximate the velocity at the instant <m>t=2</m>, what would be your best estimate for this instantaneous velocity? </p>
-         </statement> </task> 
+         </statement>
+         <answer>
+          <p>
+            The best estimate for this instantaneous velocity would be <m>-32</m> ft/sec.
+          </p>
+         </answer>
+          </task> 
     </activity>
     
     <observation> <p> If we want to study the velocity at the instant <m>t=2</m>, it is helpful to study the average velocity on small intervals around <m>t=2</m>. If we consider the interval <m>[2,2+h]</m>, where <m>h</m> is the width of the interval, the average velocity is given by the difference quotient </p>
@@ -101,14 +134,47 @@
           Consider the height of the ball falling under gravity as in <xref ref = "table-ball1"/> .</p>
     </introduction>
     <task> <statement> <p> What was the average velocity on the interval <m>[2,2+h]</m> for <m>h=1</m> and <m>h=-1</m>?</p>
-         </statement> </task>  
+         </statement>
+         <answer>
+          <p>
+             For <m> h= -1</m>, the average velocity is <m>-16</m> ft/sec.
+          </p>
+          <p>
+             For <m> h= 1</m>, the average velocity is <m>-48</m> ft/sec.
+          </p>
+          </answer>
+          </task>  
        <task> <statement> <p> What was the average velocity on the interval <m>[2,2+h]</m> for <m>h=0.5</m> and <m>h=-0.5</m>?</p>
-         </statement> </task> 
+         </statement>
+         <answer>
+          <p>
+             For <m> h= -0.5</m>, the average velocity is <m>-24</m> ft/sec.
+          </p>
+          <p>
+             For <m> h= 0.5</m>, the average velocity is <m>-40</m> ft/sec.
+          </p>
+          </answer>
+          </task> 
     <task> <statement> <p> What was the average velocity on the interval <m>[2,2+h]</m> for <m>h=0.25</m> and <m>h=-0.25</m>?</p>
-         </statement> </task> 
+         </statement>
+         <answer>
+          <p>
+             For <m> h= -0.25</m>, the average velocity is <m>-28</m> ft/sec.
+          </p>
+          <p>
+             For <m> h= 0.25</m>, the average velocity is <m>-36</m> ft/sec.
+          </p>
+          </answer>
+          </task> 
                  
      <task> <statement> <p>What is your best estimate for the limiting value of these velocities as <m>h\to 0</m>? Notice that this is your estimate for the instantaneous velocity at <m>t=2</m>! </p>
-         </statement> </task> 
+         </statement>
+         <answer>
+          <p>
+             The best estimate for the limiting value of these velocities as <m>h\to 0</m> is <m>-32</m> ft/sec.
+          </p>
+         </answer>
+          </task> 
     </activity>
     
  <definition xml:id = "def-inst-vel"> 
@@ -186,11 +252,29 @@
         </table>
 </introduction>
      <task> <statement> <p>What is the slope of the line through <m>(1,g(1))</m> and <m>(2,g(2))</m>? Draw this line on the graph of <m>g(x)</m>.</p>
-         </statement> </task>  
+         </statement> 
+         <answer>
+          <p>
+            <m>1.5</m>
+          </p>
+         </answer>
+         </task>  
          <task> <statement> <p>What is the slope of the line through <m>(1.5,g(1.5))</m> and <m>(2,g(2))</m>?  Draw this line on the graph of <m>g(x)</m>. </p>
-         </statement> </task>
+         </statement>
+          <answer>
+          <p>
+            <m>1.75</m>
+          </p>
+         </answer>
+          </task>
      <task> <statement> <p>Draw the line tangent to <m>g(x)</m> at <m>x=2</m>. What would be your best estimate for the slope of this tangent line? </p>
-         </statement> </task> 
+         </statement>
+          <answer>
+          <p>
+            <m>2</m>
+          </p>
+         </answer>
+          </task> 
              <task> <statement> <p> Notice that the slope of the tangent line at <m>x=2</m> is positive. What feature of the graph of <m>f(x)</m> around <m>x=2</m> do you think causes the tangent line to have positive slope? </p>
               <ol marker="A." cols="2">
                 <li><p> The function <m>f(x)</m> is concave up </p></li>
@@ -198,7 +282,13 @@
                   <li><p> The function <m>f(x)</m> is concave down </p></li>
                   <li><p> The function <m>f(x)</m> is decreasing </p></li>               
               </ol>         
-         </statement> </task> 
+         </statement> 
+          <answer>
+          <p>
+           B. The function <m>f(x)</m> is increasing
+          </p>
+         </answer>
+         </task> 
     </activity>
     
      <observation xml:id = "secant-to-tangent"> 
@@ -229,7 +319,12 @@
          <li><p> The instantaneous velocity of the object at <m>x=a</m> </p></li>
          <li><p> The difference quotient <m>\dfrac{f(a+h)-f(a)}{h} </m> </p></li>
          <li><p> The limit <m>\displaystyle\lim_{h \to 0} \dfrac{f(a+h)-f(a)}{h} </m> </p></li>                    
-              </ol>    
+              </ol>   
+              <answer>
+                <p>
+                  A, B, C and E.
+                </p>
+              </answer> 
                    </activity>
  
     <observation xml:id = "estimating-der"> <p>We can use the difference quotient <m>\dfrac{f(a+h)-f(a)}{h} </m> for small values of <m>h</m> to <em>estimate</em> <m>f'(a)</m>, the value of the derivative at <m>x=a</m>. </p> </observation>
@@ -242,7 +337,12 @@
         <li><p> <m>g'(0) \approx -6</m> </p></li>
        <li><p> <m>g'(0) \approx -4</m> </p></li>
          <li><p> <m>g'(0) \approx -5</m> </p></li>
-              </ol>    
+              </ol>   
+              <answer>
+                <p>
+                  E. <m> g'(0) \approx -5</m> 
+                </p>
+              </answer> 
                    </activity>
    
             <activity xml:id = "estimating-der2">
@@ -252,7 +352,12 @@
                 <li><p> <m>f(2)=2</m> because the derivative is constant </p></li>
                 <li><p> <m>f(2) \approx 1</m> because the function's output decreases by about 2 units for each increase by 1 unit in the input  </p></li>
                 <li><p> <m>f(2) \approx 5</m> because the function's output increases by about 2 units for each increase by 1 unit in the input  </p></li>
-              </ol>    
+              </ol>   
+              <answer> 
+                <p>
+                  D. <m>f(2) \approx 5</m> because the function's output increases by about 2 units for each increase by 1 unit in the input.
+                </p>
+              </answer> 
                    </activity>
     
     <observation xml:id = "approx-increase-derivative"> <p>We can use the derivative at <m>x=a</m> to estimate the increase/decrease of the function <m>f(x)</m> close to <m>x=a</m>. A positive derivative at <m>x=a</m> suggests that the output values are increasing around <m>x=a</m> approximately at a rate given by the value of the derivative.  A negative derivative at <m>x=a</m> suggests that the output values are decreasing around <m>x=a</m> approximately at a rate given by the value of the derivative.</p> </observation>
@@ -279,7 +384,13 @@
                   <li><p> -1 </p></li>
                   <li><p> DNE </p></li>               
               </ol>         
-         </statement> </task>  
+         </statement>
+         <answer>
+          <p>
+            C. <m>-1</m>
+          </p>
+         </answer>
+          </task>  
           <task> <statement> <p>  What do you think is the slope of the function for any <m>x</m> value greater than zero?</p>
           <ol marker="A." cols="2">
                 <li><p> 0 </p></li>
@@ -287,7 +398,13 @@
                   <li><p> -1 </p></li>
                   <li><p> DNE </p></li>               
               </ol>         
-         </statement> </task>  
+         </statement>
+          <answer>
+          <p>
+            B. <m>1</m>
+          </p>
+         </answer>
+          </task>  
           <task> <statement> <p>  What do you think is the slope of the function at zero?</p>
           <ol marker="A." cols="2">
                 <li><p> 0 </p></li>
@@ -295,7 +412,13 @@
                   <li><p> -1 </p></li>
                   <li><p> DNE </p></li>               
               </ol>         
-         </statement> </task>  
+         </statement> 
+          <answer>
+          <p>
+            D. DNE
+          </p>
+         </answer>
+         </task>  
     </activity>
     
     <observation xml:id = "differentiability"><p> Because the derivative at a point is defined in terms of a limit, the quantity <m>f'(a)</m> <em>might not exist</em>! In that case we say that <m>f(x)</m> is not differentiable at <m>x=a</m>. This might happen when the slope on the left of the point is different from the slope on the right, like in the case of the absolute value function. We call this behavior a corner in the graph. </p></observation>
@@ -332,7 +455,12 @@
                   <li><p> 2 </p></li>  
                   <li><p> 5 </p></li>    
                   <li><p> 6 </p></li> 
-              </ol>                 
+              </ol>  
+               <answer>
+          <p>
+           A. -1
+          </p>
+         </answer>               
         </task>
           <task> <p> For which of the following points <m>a</m> is <m>h'(a)</m> negative? Select all that apply! </p>
            <ol marker="A." cols="2">
@@ -341,7 +469,12 @@
                   <li><p> 2 </p></li>  
                   <li><p> 5 </p></li>    
                   <li><p> 6 </p></li> 
-              </ol>                 
+              </ol>  
+                 <answer>
+          <p>
+           C. 2
+          </p>
+         </answer>                
         </task>
           <task> <p> For which of the following points <m>a</m> is <m>h'(a)</m> zero? Select all that apply! </p>
            <ol marker="A." cols="2">
@@ -350,7 +483,12 @@
                   <li><p> 2 </p></li>  
                   <li><p> 5 </p></li>    
                   <li><p> 6 </p></li>
-              </ol>                 
+              </ol> 
+               <answer>
+          <p>
+           E. 6
+          </p>
+         </answer>                 
         </task>
           <task> <p> For which of the following points <m>a</m> the quantity <m>h'(a)</m> does NOT exist? Select all that apply! </p>
            <ol marker="A." cols="2">
@@ -359,7 +497,12 @@
                   <li><p> 2 </p></li>  
                   <li><p> 5 </p></li>
                <li><p> 6 </p></li>
-              </ol>                 
+              </ol>  
+                 <answer>
+          <p>
+           B. 1 and D. 5
+          </p>
+         </answer>                
         </task>
     </activity>
     
@@ -419,6 +562,11 @@ The rate of change of <m>f(x)</m> when <m>x=-1</m> is positive
             </figure>
             </introduction>
         <task> <p>  Using the graph, estimate the slope of the tangent line at <m>x=2</m>. Make sure you can carefully describe your process for obtaining this estimate! </p>
+        <answer>
+          <p>
+           Slope of the tangent line at  <m>x=2</m> should be -4.5
+          </p>
+         </answer> 
         </task>
         <task> <p> If you call your approximation for the slope <m>m</m>, which one of the following expression gives you the equation of the tangent line at <m>x=2</m>? </p>
              <ol marker="A." cols="2">
@@ -426,9 +574,21 @@ The rate of change of <m>f(x)</m> when <m>x=-1</m> is positive
                 <li><p> <m> y + 2 = m (x-2)</m> </p></li>
                   <li><p> <m> y - 2 = m (x+2)</m> </p></li>
                     <li><p> <m> y + 2 = m (x+2)</m> </p></li>
-              </ol>    
+              </ol> 
+             <answer>
+          <p>
+          B. <m> y + 2 = m (x-2)</m> 
+          </p>
+         </answer>     
         </task>
-        <task> <p> Find the equation of the tangent line at <m>x=2</m>. </p> </task>
+        <task> <p> Find the equation of the tangent line at <m>x=2</m>. </p>
+          
+          <answer>
+          <p>
+          B. <m> y + 2 = -4.5 (x-2)</m> 
+          </p>
+         </answer>
+         </task>
                    </activity>
 
     </subsection>
