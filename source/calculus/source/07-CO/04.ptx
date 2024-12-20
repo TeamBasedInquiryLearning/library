@@ -74,7 +74,11 @@ for i in circ_range:
     plt += lbl
 for angle in [0,1,..,23]:
     plt += line(([(0,0),(5*cos(angle*pi/12),5*sin(angle*pi/12))]))
-    plt += text(f"${latex(angle*pi/12)}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+    actual_angle = angle*pi/12
+    if denominator(actual_angle) != 1:
+        plt += text(f"$\\dfrac{{{latex(numerator(actual_angle))}}}{{{denominator(actual_angle)}}}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+    else:
+        plt += text(f"${latex(angle*pi/12)}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
 xaxis = arrow((0,0),(5.25,0),arrowsize=0.5,color='black')
 plt += xaxis
 plt
