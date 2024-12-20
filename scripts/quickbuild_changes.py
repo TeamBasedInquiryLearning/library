@@ -20,7 +20,7 @@ def main():
 
     # for each .ptx file, try to build subtree of document
     for b in BOOKS:
-        PTX_FILES = [f for f in changed_files if Path("source", b) in f.parents and f.suffix == ".ptx"]:
+        PTX_FILES = [f for f in changed_files if Path("source", b) in f.parents and f.suffix == ".ptx"]
         xml_ids = set()
         root = etree.parse(f).getroot()
         if root.tag not in ["section", "chapter", "preface", "appendix", "frontmatter"]:
