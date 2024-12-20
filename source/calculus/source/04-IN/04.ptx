@@ -35,13 +35,11 @@
     </activity>
 
   <remark>
-    <statement>
     <p> In <xref ref = "activity-in-ivp-1"/> there are more than one solution that satisfies the differential equation.  In fact their is a family of functions that satisfies the differential equation, that is
         <me>f(x) = \frac{x^3}{3} + x^2 + c_1,</me>
         where <m>c_1</m> is an arbitrary constant yet to be defined.  To find <m>c_1</m> we have to have some initial value for the differential equation, <m>y(x_0) = y_0</m>, where the point <m>(x_0,y_0)</m> is the starting point for the differential equation.  In general this section we will focus on solving initial value problems (differential equation with an initial condition) of the form,
         <me>\frac{dy}{dx} = f(x), \;\;\; y(x_0) = y_0.</me>
         </p>
-    </statement>
   </remark>
     
     <activity xml:id="activity-in-ivp-2">
