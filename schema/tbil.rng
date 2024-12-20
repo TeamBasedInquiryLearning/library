@@ -102,6 +102,9 @@
             <ref name="Author" />
             <ref name="Website" />
             <ref name="Copyright" />
+            <ref name="Example" />
+            <ref name="IntroductionDivision" />
+            <ref name="Objectives" />
         </choice>
     </start>
     <define name="MetaDataTitleOptional" combine="interleave">
