@@ -21,27 +21,34 @@ def main():
     # for each .ptx file, try to build subtree of document
     for b in BOOKS:
         # collect changed xml_ids
-        xml_ids = set()
+        xml_ids = []
         for f in changed_files:
             if Path("source", b) in f.parents and f.suffix == ".ptx":
                 root = etree.parse(f).getroot()
-                if root.tag not in ["section", "chapter", "preface", "appendix", "frontmatter"]:
-                    xml_ids.add(None)
-                else:
-                    xml_ids.add(root.get(r"{http://www.w3.org/XML/1998/namespace}id"))
+                if root.tag in ["section", "chapter", "preface", "appendix", "frontmatter"]:
+                    xml_id = root.get(r"{http://www.w3.org/XML/1998/namespace}id")
+                    xml_ids.append({
+                        "file": f,
+                        "id": xml_id,
+                    })
         t = p.get_target(f"{b}-web-instructor")
-        for xml_id in xml_ids:
-            if xml_id is not None:
-                print(f"Building book `{b}` with ID `{xml_id}`")
-                path = f"/preview/{b}/instructor/{xml_id}.html"
-                t.build(xmlid=xml_id, no_knowls=True, generate=True)
-            else:
-                print(f"Building book `{b}`, skipping images")
-                path = f"/preview/{b}/instructor"
-                t.build(xmlid=None, no_knowls=True, generate=False)
+        if len(xml_ids) > 0:
+            print(f"Building book `{b}`, skipping images")
+            path = f"/preview/{b}/instructor"
+            t.build(xmlid=None, no_knowls=True, generate=False)
             preview_links.append({
-                "file": f,
+                "file": b,
                 "path": path
+            })
+        built_ids = set()
+        for xml_id in xml_ids:
+            if xml_id["id"] not in built_ids:
+                print(f"Building book `{b}` with ID `{xml_id["id"]}`")
+                t.build(xmlid=xml_id["id"], no_knowls=True, generate=True)
+                built_ids.add(xml_id["id"])
+            preview_links.append({
+                "file": xml_id["file"],
+                "path": f"/preview/{b}/instructor/{xml_id["id"]}.html"
             })
     # for each CheckIt file, build its preview
     for b in BOOKS:
