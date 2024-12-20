@@ -28,7 +28,36 @@
           
     <figure xml:id="concavity-1">
       <caption>Three increasing functions</caption>
-      <image width="100%" source="concavity-1" />
+      <sidebyside widths = "30% 30% 30%">
+        <image xml:id="concavity-1-down">
+        <sageplot>
+            x = var('x')
+            f = 2*exp(4*x-3)
+            ticks=[[],[]]
+            p = plot(f,(x,.2,1), xmin = -10, xmax = 1, ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.2)
+            p
+        </sageplot>
+        </image>
+        <image xml:id="concavity-1-none">
+        <sageplot>
+            x = var('x')
+            f = x+.75
+            ticks=[[],[]]
+            p = plot(f,(x,.05,1), xmin = -10, xmax = 1, ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.25)
+            p
+        </sageplot>
+        </image>
+        <image xml:id="concavity-1-up">
+            <sageplot>
+                x = var('x')
+                f = (x-1.5)^3+2.5
+                ticks=[[],[]]
+                p = plot(f,(x,.25,1.25), ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.25)
+                p
+            </sageplot>
+        </image>
+      </sidebyside>
+      
     </figure>
     </introduction>
       <task>
@@ -91,7 +120,35 @@
       </p>
           <figure xml:id="concavity-2" permid="PJf">
       <caption>From left to right, three functions that are all decreasing.</caption>
-      <image width="100%" source="concavity-2" />
+      <sidebyside widths="30% 30% 30%">
+        <image xml:id="concavity-2-up">
+            <sageplot>
+                x = var('x')
+                f = -(x-1.5)^3+.5
+                ticks=[[],[]]
+                p = plot(f,(x,.25,1.25), ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.25)
+                p
+            </sageplot>
+        </image>   
+        <image xml:id="concavity-2-none">
+            <sageplot>
+                x = var('x')
+                f = -2*x + 3
+                ticks = [[],[]]
+                p = plot(f, (x,.25, 1.25), ymin = -1, ymax = 3, gridlines=True, thickness=2, ticks=ticks, aspect_ratio = 0.25)
+                p
+            </sageplot>
+        </image>  
+        <image xml:id="concavity-2-down">
+            <sageplot>
+                x = var('x')
+                f = -(x)^3+2.5
+                ticks=[[],[]]
+                p = plot(f,(x,.25,1.25), ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.25)
+                p
+            </sageplot>
+        </image>       
+      </sidebyside>
     </figure>
     
     </introduction>
@@ -148,12 +205,54 @@
     <activity xml:id="activity-derivative-concavity3a">
     <statement><p>Look at in <xref ref="concavity-3"/>. Which curve is concave up? Which one is concave down? Why? Try to explain using the graph!</p>
 
-    <figure xml:id="concavity-3" permid="vQo">
-      <caption>Two concavity, which is which? </caption>
-      <image width="90%" source="concavity-3" />
-    </figure>
+        <figure xml:id="concavity-3" permid="vQo">
+        <caption>Two concavities, which is which? </caption>
+        <sidebyside widths="45% 45%">
+            <image>
+                <sageplot>
+                    x = var('x')
+                    f(x) = (x-1)^2 + 1
+                    line1 = -3*(x+0.5)+f(-0.5)
+                    line2 = -1*(x-0.5)+f(0.5)
+                    line3 = (x-1.5)+f(1.5)
+                    line4 = 3*(x-2.5)+f(2.5)
+                    p1 = plot(f,(x,-1,3), ymin = 0, ymax = 6, gridlines=True,thickness=2, aspect_ratio=1)
+                    p2 = plot(line1,(x,-.75,-.25), color="green", thickness=2.5)
+                    p3 = plot(line2,(x,.25,.75), color="green", thickness=2.5)
+                    p4 = plot(line3,(x,1.25,1.75), color="green", thickness=2.5)
+                    p5 = plot(line4,(x,2.25,2.75), color="green", thickness=2.5)
+                    c1 = circle((-.5,f(-.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    c2 = circle((.5,f(.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    c3 = circle((1.5,f(1.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    c4 = circle((2.5,f(2.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    p1+p2+p3+p4+p5+c1+c2+c3+c4
+                </sageplot>
+            </image>
+            <image>
+                <sageplot>
+                    x = var('x')
+                    f(x) = -(x-1)^2 +2
+                    line1 = 3*(x+0.5)+f(-0.5)
+                    line2 = 1*(x-0.5)+f(0.5)
+                    line3 = -(x-1.5)+f(1.5)
+                    line4 = -3*(x-2.5)+f(2.5)
+                    p1 = plot(f,(x,-1,3), ymin = -3, ymax = 3, gridlines=True,thickness=2, aspect_ratio=1)
+                    p2 = plot(line1,(x,-.75,-.25), color="green", thickness=2.5)
+                    p3 = plot(line2,(x,.25,.75), color="green", thickness=2.5)
+                    p4 = plot(line3,(x,1.25,1.75), color="green", thickness=2.5)
+                    p5 = plot(line4,(x,2.25,2.75), color="green", thickness=2.5)
+                    c1 = circle((-.5,f(-.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    c2 = circle((.5,f(.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    c3 = circle((1.5,f(1.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    c4 = circle((2.5,f(2.5)),0.1,fill=True,facecolor="red", aspect_ratio="automatic")
+                    p1+p2+p3+p4+p5+c1+c2+c3+c4
+                </sageplot>
+            </image>
+        </sidebyside>
         
-        </statement></activity>
+        </figure>
+        
+    </statement></activity>
     
     <definition xml:id="concavity-and-first-derivative" permid="hcP">
       <statement>
