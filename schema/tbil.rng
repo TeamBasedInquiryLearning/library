@@ -55,7 +55,9 @@
         </define>
         <define name="Author">
             <element name="author">
-                <ref name="XMLBase" />
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
                 <ref name="PersonName" />
                 <optional>
                     <ref name="Department" />
@@ -69,8 +71,10 @@
             </element>
         </define>
         <define name="Website">
-            <ref name="XMLBase" />
             <element name="website">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
                 <ref name="Url"/>
             </element>
         </define>
