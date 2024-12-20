@@ -20,13 +20,15 @@ def main():
 
     # for each .ptx file, try to build subtree of document
     for b in BOOKS:
-        PTX_FILES = [f for f in changed_files if Path("source", b) in f.parents and f.suffix == ".ptx"]
+        # collect changed xml_ids
         xml_ids = set()
-        root = etree.parse(f).getroot()
-        if root.tag not in ["section", "chapter", "preface", "appendix", "frontmatter"]:
-            xml_ids.add(None)
-        else:
-            xml_ids.add(root.get(r"{http://www.w3.org/XML/1998/namespace}id"))
+        for f in changed_files:
+            if Path("source", b) in f.parents and f.suffix == ".ptx":
+                root = etree.parse(f).getroot()
+                if root.tag not in ["section", "chapter", "preface", "appendix", "frontmatter"]:
+                    xml_ids.add(None)
+                else:
+                    xml_ids.add(root.get(r"{http://www.w3.org/XML/1998/namespace}id"))
         t = p.get_target(f"{b}-web-instructor")
         for xml_id in xml_ids:
             if xml_id is not None:
@@ -43,12 +45,11 @@ def main():
             })
     # for each CheckIt file, build its preview
     for b in BOOKS:
-        EXERCISE_FILES = [f for f in changed_files if Path("source", b, "exercises", "outcomes") in f.parents]
         # collect changed outcomes
-        changed_outcomes = []
-        for f in EXERCISE_FILES:
-            if f.parent.name not in changed_outcomes:
-                changed_outcomes.append(f.parent.name)
+        changed_outcomes = set()
+        for f in changed_files:
+            if Path("source", b, "exercises", "outcomes") in f.parents:
+                changed_outcomes.add(f.parent.name)
         # build changed outcomes
         for o in changed_outcomes:
             sandbox_bank_path = preview_outcome.build_preview(b, o)
