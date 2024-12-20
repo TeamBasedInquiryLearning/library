@@ -94,7 +94,9 @@
     </define>
     <define name="Copyright">
         <element name="copyright">
-            <ref name="XMLBase" />
+            <optional>
+                <ref name="XMLBase" />
+            </optional>
             <element name="year">
                 <ref name="TextShort" />
             </element>
