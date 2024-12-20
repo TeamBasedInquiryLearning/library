@@ -198,6 +198,7 @@ Let <m>T: V \rightarrow W</m> be a linear transformation.
 <m>T</m> is called <term>surjective</term> or <term>onto</term> if every element of <m>W</m> is mapped to by an element of <m>V</m>.  More precisely, for every <m>\vec{w} \in W</m>, there is some <m>\vec{v} \in V</m> with <m>T(\vec{v})=\vec{w}</m>.
         </p>
     <figure>
+		<caption>A surjective transformation and a non-surjective transformation</caption>
 		<image width="75%" xml:id="AT4-surjective-image">
 			<latex-image>
 \begin{tikzpicture}[x=0.15in,y=0.15in]
@@ -252,7 +253,6 @@ Let <m>T: V \rightarrow W</m> be a linear transformation.
 \end{tikzpicture}
 			</latex-image>
 		</image>
-		<caption>A surjective transformation and a non-surjective transformation</caption>
     </figure>
     </statement>
 </definition>
@@ -407,6 +407,7 @@ Put another way, an injective linear transformation may be
 recognized by its <term>trivial</term> kernel.
         </p>
         <figure>
+			<caption>A linear transformation with trivial kernel, which is therefore injective</caption>
 			<image width="75%" xml:id="AT4-trivial-kernel-image">
 				<latex-image>
 \begin{tikzpicture}[x=0.15in,y=0.15in]
@@ -435,7 +436,6 @@ recognized by its <term>trivial</term> kernel.
 \end{tikzpicture}
 				</latex-image>
 			</image>
-			<caption>A linear transformation with trivial kernel, which is therefore injective</caption>
         </figure>
     </statement>
 </fact>
@@ -480,6 +480,10 @@ A linear transformation <m>T:V \rightarrow W</m> is surjective <em>if and only i
 recognized by its identical codomain and image.
         </p>
     <figure>
+		<caption>
+    A linear transformation with identical codomain and image, which is therefore surjective; 
+    and a linear transformation with an image smaller than the codomain <m>\IR^3</m>, which is 
+    therefore not surjective.</caption>
 		<image width="75%" xml:id="AT4-codomain-range-image">
 			<latex-image>
 \begin{tikzpicture}[x=0.15in,y=0.15in]
@@ -534,7 +538,6 @@ recognized by its identical codomain and image.
 \end{tikzpicture}
 			</latex-image>
 		</image>
-		<caption>A linear transformation with identical codomain and image, which is therefore surjective; and a linear transformation with an image smaller than the codomain <m>\IR^3</m>, which is therefore not surjective.</caption>
     </figure>
     </statement>
 </fact>
@@ -689,19 +692,23 @@ means <m>T</m> is (A) <em>injective</em>, (B) <em>surjective</em>, or
 <fact>
     <statement>
 
-  <p>The following are true for any linear map <m>T:V\to W</m>:</p>
+  <p>The following are true for any linear map <m>T:V\to W</m>:
   <ul>
 <li><p> If <m>\dim(V)&gt;\dim(W)</m>, then <m>T</m> is not injective.
     </p></li>
 <li><p> If <m>\dim(V)&lt;\dim(W)</m>, then <m>T</m> is not surjective.
     </p></li>
   </ul>
-    <p>
   Basically, a linear transformation cannot reduce dimension without collapsing
   vectors into each other, and a linear transformation cannot
   increase dimension from its domain to its image.
     </p>
     <figure>
+		<caption>
+A linear transformation whose domain has a larger dimension than its codomain, 
+and is therefore not injective; and a linear transformation whose domain has a smaller 
+dimension than its codomain, and is therefore not surjective.
+    </caption>
 		<image width="75%" xml:id="AT4-image-dimension">
 			<latex-image>
     \begin{tikzpicture}[x=0.12in,y=0.12in]
@@ -750,7 +757,6 @@ means <m>T</m> is (A) <em>injective</em>, (B) <em>surjective</em>, or
     \end{tikzpicture}
 			</latex-image>
 		</image>
-		<caption>A linear transformation whose domain has a larger dimension than its codomain, and is therefore not injective; and a linear transformation whose domain has a smaller dimension than its codomain, and is therefore not surjective.</caption>
     </figure>
     <p>
   But dimension arguments <em>cannot</em> be used to prove a map <em>is</em>
@@ -809,12 +815,10 @@ for each <m>\vec b \in \IR^n</m>.
 </activity>
 
 <observation>
-    <statement>
     <p>
   The easiest way to show that the linear map with standard matrix <m>A</m>
   is bijective is to show that <m>\RREF(A)</m> is the identity matrix.
     </p>
-    </statement>
 </observation>
 
 <activity estimated-time='3'>
@@ -915,14 +919,13 @@ Which of the following must be true?
 
 </subsection>
 
-<subsubsection>
+<subsection>
   <title>Individual Practice</title>
   <activity>
     <introduction>
       <p>
         Let <m>T\colon\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A</m>. 
         We reasoned during class that the following statements are logically equivalent:
-      </p>
       <ol>
         <li>
           <p>
@@ -946,6 +949,7 @@ Which of the following must be true?
         </li>
       </ol>
       While they are all logically equivalent, they are different statements that offer varied perspectives on our growing conceptual knowledge of linear algebra.
+      </p>
     </introduction>
     <task>
       <statement>
@@ -968,7 +972,6 @@ Which of the following must be true?
       <p>
         Let <m>T\colon\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A</m>. 
         We reasoned during class that the following statements are logically equivalent:
-      </p>
       <ol>
         <li>
           <p>
@@ -992,6 +995,7 @@ Which of the following must be true?
         </li>
       </ol>
       While they are all logically equivalent, they are different statements that offer varied perspectives on our growing conceptual knowledge of linear algebra.
+      </p>
     </introduction>
     <task>
       <statement>
@@ -1008,40 +1012,37 @@ Which of the following must be true?
       </statement>
     </task>
   </activity>
-</subsubsection>
+</subsection>
 
 
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-AT4-1" youtube="97MK7_QJnhY">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: The kernel and image of a linear transformation</caption>
+            <video xml:id="video-AT4-1" youtube="97MK7_QJnhY"/>
         </figure>
         <figure>
-            <video xml:id="video-AT4-2" youtube="4WN1BQhtkK0">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Finding a basis of the image of a linear transformation</caption>
+            <video xml:id="video-AT4-2" youtube="4WN1BQhtkK0"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT4/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     Suppose that <m>f:V \rightarrow W</m> is a linear transformation between two vector spaces <m>V</m> and <m>W</m>. State carefully what conditions <m>f</m> must satisfy. Let <m>\vec{0_V}</m> and <m>\vec{0_W}</m> be the zero vectors in <m>V</m> and <m>W</m> respectively.
                     <ul>
                     <li>Prove that <m>f</m> is one-to-one if and only if <m>f(\vec{0_V}) = \vec{0_W}</m>, and that <m>\vec{0_V}</m> is the unique element of <m>V</m> which is mapped to <m>\vec{0_W}</m>. Remember that this needs to be done in both directions. First, prove the if and only if statement, and then show the uniqueness.</li>
 
 <li>Do not use subtraction in your proof. The only vector space operation we have is addition, and a structure-preserving function only preserves addition. If you are writing <m>\vec{v} - \vec{v} = \vec{0}_V</m>, what you really mean is that <m>\vec{v} \oplus \vec{v}^{-1} = \vec{0}_V</m>, where <m>\vec{v}^{-1}</m> is the additive inverse of <m>\vec{v}</m>. </li>   </ul>
-                </statement>
+                </p>
     </exploration>
  <exploration><statement>
      <p>Start with an <m>n</m>-dimensional vector space <m>V</m>. We can define the <term>dual</term> of <m>V</m>, denoted <m>V^*</m>, by 

@@ -90,6 +90,7 @@ is an important subspace of <m>V</m> defined by
 </me>
         </p>
             <figure>
+				<caption>The kernel of a linear transformation</caption>
 				<image width="75%" xml:id="AT3-image-kernel">
 					<latex-image>
   \begin{tikzpicture}[x=0.15in,y=0.15in]
@@ -109,7 +110,6 @@ is an important subspace of <m>V</m> defined by
   \end{tikzpicture}
 					</latex-image>
 				</image>
-				<caption>The kernel of a linear transformation</caption>
             </figure>
     </statement>
 </definition>
@@ -253,6 +253,7 @@ In the examples below, the left example's image is all of <m>\IR^2</m>, but the
 right example's image is a planar subspace of <m>\IR^3</m>.
         </p>
         <figure>
+			<caption>The image of a linear transformation</caption>
 			<image width="75%" xml:id="AT3-image-image">
 				<latex-image>
 \begin{tikzpicture}[x=0.15in,y=0.15in]
@@ -305,7 +306,6 @@ right example's image is a planar subspace of <m>\IR^3</m>.
 \end{tikzpicture}
 				</latex-image>
 			</image>
-			<caption>The image of a linear transformation</caption>
         </figure>
     </statement>
 </definition>
@@ -414,7 +414,6 @@ An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{ar
 </activity>
 
 <observation>
-    <statement>
         <p>
 Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by the
 standard matrix
@@ -448,14 +447,12 @@ and only using the vectors corresponding to pivot columns:
   }
 </me>
         </p>
-    </statement>
 </observation>
 
 <fact>
     <statement>
     <p>
 Let  <m>T:\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A</m>.
-    </p>
 <ul>
 <li>
     <p>
@@ -472,6 +469,7 @@ for the image (as in <xref ref="observation-subspace-basis"/>).
     </p>
 </li>
 </ul>
+    </p>
     </statement>
 </fact>
 
@@ -558,7 +556,6 @@ Which of the following is equal to the dimension of the image of <m>T</m>?
 </activity>
 
 <observation>
-    <statement>
         <p>
 Combining these with the observation that the number of columns is the dimension of the domain of <m>T</m>, we have the <term>rank-nullity theorem</term>:
         </p>
@@ -570,7 +567,6 @@ The dimension of the domain of <m>T</m> equals <m>\dim(\ker T)+\dim(\Im T)</m>.
         <p>
 The dimension of the image is called the <term>rank</term> of <m>T</m> (or <m>A</m>) and the dimension of the kernel is called the <term>nullity</term>. 
         </p>
-    </statement>
 </observation>
 
 <activity estimated-time='10'><introduction>
@@ -651,37 +647,30 @@ The dimension of the image is called the <term>rank</term> of <m>T</m> (or <m>A<
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-AT3-1" youtube="FGyD1KLFHwc">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: The kernel and image of a linear transformation. 
             Note that there is a typo: if you're following along, you should find that <m>T\left(\left[\begin{array}{c}2\\1\\3\\0\end{array}\right]\right)=\left[\begin{array}{c}14\\-5\\9\end{array}\right]</m>.</caption>
+            <video xml:id="video-AT3-1" youtube="FGyD1KLFHwc"/>
         </figure>
         <figure>
-            <video xml:id="video-AT3-2" youtube="ut_1dVFqwXw">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Finding a basis of the image of a linear transformation</caption>
+            <video xml:id="video-AT3-2" youtube="ut_1dVFqwXw"/>
         </figure>
         <figure>
-            <video xml:id="video-AT3-3" youtube="VO2bDSiwbJM">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Finding a basis of the kernel of a linear transformation</caption>
+            <video xml:id="video-AT3-3" youtube="VO2bDSiwbJM"/>
         </figure>
         <figure>
-            <video xml:id="video-AT3-4" youtube="A0RzdY_g44Y">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: The rank-nullity theorem</caption>
+            <video xml:id="video-AT3-4" youtube="A0RzdY_g44Y"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT3/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
@@ -699,7 +688,7 @@ Let <m>\{\vec{v_1},\vec{v_2},\ldots,\vec{v_n}\}</m> be a set of vectors in <m>V<
                 </statement>
     </exploration>
     <exploration>
-                <statement>
+                <p>
                     Prove the Rank-Nullity Theorem. Use the steps below to help you.
 <ul>
 <li>The theorem states that, given a linear map <m>h:V \rightarrow W</m>, with <m>V</m> and <m>W</m> vector spaces, the rank of <m>h</m>, plus the nullity of <m>h</m>, equals the dimension of the domain <m>V</m>. Assume that the dimension of <m>V</m> is <m>n</m>.</li>
@@ -712,7 +701,7 @@ Let <m>\{\vec{v_1},\vec{v_2},\ldots,\vec{v_n}\}</m> be a set of vectors in <m>V<
 <li>Show that <m>B_R</m> spans the range space.</li>
 <li>State your conclusion. </li>
  </ul>
-                </statement>
+                </p>
     </exploration>
     </subsection>
     <subsection>
