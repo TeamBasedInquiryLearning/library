@@ -46,8 +46,11 @@
     <activity>
         <statement>
             <p>
-        Let <m>S</m> denote a set of vectors in <m>\IR^n</m> and suppose that <m>\vec{u},\vec{v}\in\vspan(S)</m>, 
-        <m>c\in\IR</m> and that <m>\vec{w}\in\IR^n</m>. Which of the following vectors might
+        Let <m>S=\{\vec v_1,\dots,\vec v_n\}</m> denote a set of vectors in <m>\IR^n</m>.
+            </p>
+            <p>Suppose that
+        <m>\vec{u},\vec{v}\in\vspan(S)</m>, 
+        <m>c\in\IR</m>, and <m>\vec{w}\in\IR^n</m>. Which of the following vectors might
         <em>not</em> belong to <m>\vspan(S)</m>?
         <ol marker="A.">
           <li><m>\vec{0}</m></li>
@@ -58,6 +61,30 @@
             </p>
         </statement>
     </activity>
+
+    <remark>
+        <p>
+            If <m>S</m> is any set of vectors in <m>\IR^n</m>, then the set <m>\vspan(S)</m> has the following properties:
+            <ul>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is non-empty, specifically, it at least contains <m>\vec 0</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is closed under addition: for any <m>\vec{u},\vec{v}\in \vspan(S)</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>\vspan(S)</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the set <m>\vspan(S)</m> is closed under scalar multiplication: for any <m>\vec{u}\in\vspan(S)</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>\vspan(S)</m>.    
+                    </p>
+                </li>
+            </ul>
+            It will be interesting to see if these kinds of properties might hold in other scenarios.
+        </p>
+    </remark>
 
     <definition>
         <statement>
@@ -193,7 +220,7 @@
             <ul>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is non-empty.
+                        the set <m>\vspan(S)</m> is non-empty, specifically, it at least contains <m>\vec 0</m>.
                     </p>
                 </li>
                 <li>
@@ -211,17 +238,17 @@
             <ul>
                 <li>
                     <p>
-                        the set <m>W</m> is non-empty.
+                        the solution set <m>W</m> is non-empty, specifically, it at least contains <m>\vec 0</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        the set <m>W</m> is closed under addition: for any <m>\vec{u},\vec{v}\in W</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>W</m>.
+                        the solution set <m>W</m> is closed under addition: for any <m>\vec{u},\vec{v}\in W</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>W</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is closed under scalar multiplication: for any <m>\vec{u}\in W</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>W</m>.    
+                        the solution set <m>\W</m> is closed under scalar multiplication: for any <m>\vec{u}\in W</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>W</m>.    
                     </p>
                 </li>
             </ul>
