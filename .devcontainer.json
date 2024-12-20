@@ -27,7 +27,7 @@
   },
 
   // Respect the project's designated dependencies, and create codechat config file
-  "postCreateCommand": "pip install -r requirements.txt && git config core.hooksPath .githooks && touch codechat_config.yaml",
+  "postCreateCommand": "bash scripts/setup.sh",
 
   // Port forwarding
   // ---------------
@@ -72,6 +72,7 @@
         },
         "editor.snippetSuggestions": "top",
         "xml.validation.enabled": true,
+        "pretext-tools.schema.versionName": "Custom",
         "pretext-tools.schema.customPath": "/workspaces/library/schema/tbil.rng",
         "redhat.telemetry.enabled": false,
         "CodeChat.CodeChatServer.Command": "CodeChat_Server",
