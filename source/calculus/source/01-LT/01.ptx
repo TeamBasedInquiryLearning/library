@@ -376,8 +376,8 @@
             </answer>
          </task>
     </activity>
-<task>
-     <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
+
+    <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
     <statement>
         <p>Sketch the graph of a function <m>f(x)</m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
         <ol>
@@ -395,9 +395,8 @@
                     <li><p><m>\displaystyle \lim_{x\to -1^-} f(x)=-1</m> but <m>\displaystyle \lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
         </ol>
     </statement> 
-
     </activity>
-    </task>
+
           <theorem xml:id="squeeze-thm"> 
              <statement> 
              <p> Suppose that: </p> 
@@ -484,7 +483,7 @@
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT1/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT1/"/>
         </p>
     </subsection>
 

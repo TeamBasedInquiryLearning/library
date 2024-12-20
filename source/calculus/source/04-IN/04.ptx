@@ -88,28 +88,27 @@
     </activity>
 
   <activity xml:id="activity-in-ivp-5">
-    <statement>
-        <p>So far we have only been going from velocity to position of an object.  Recall that to find the acceleration of an object, you can take the derivative of the velocity of an object.  Let use say we have the acceleration of a falling object in m/s<m>^2</m> given by <m>a(t) = -9.8</m>.</p>
-          <task>
-          <p>What is the velocity of the falling object, if the initial velocity is given by <m>v(0) = 0</m> m/s.</p>
+    <introduction>
+      <p>So far we have only been going from velocity to position of an object.  Recall that to find the acceleration of an object, you can take the derivative of the velocity of an object.  Let use say we have the acceleration of a falling object in m/s<m>^2</m> given by <m>a(t) = -9.8</m>.</p>
+    </introduction>
+    <task>
+      <p>What is the velocity of the falling object, if the initial velocity is given by <m>v(0) = 0</m> m/s.</p>
         <ol marker="A." cols="2">
         <li><p>  <m>v(t) = -9.8t</m> m </p></li>
         <li><p>  <m>v(t) = -9.8t</m> m/s </p></li> 
         <li><p>  <m>v(t) = 9.8t</m> m/s </p></li>     
         <li><p>  <m>v(t) = 9.8t+1</m> m </p></li> 
-    </ol>
-          </task>
-        <task>
-          <p>What is the position of the object, if the initial position is given by <m>s(0) = 10</m> m.</p>
+      </ol>
+    </task>
+    <task>
+      <p>What is the position of the object, if the initial position is given by <m>s(0) = 10</m> m.</p>
         <ol marker="A." cols="2">
-        <li><p>  <m>s(t) = 4.9t + 10</m> m </p></li>
-        <li><p>  <m>s(t) = -4.9t^2 + 14.9</m> m </p></li> 
-        <li><p>  <m>s(t) = -4.9t^2 + 10</m> m </p></li>     
-        <li><p>  <m>s(t) = 4.9t + 5.1</m> m </p></li> 
-    </ol>
-          </task>
-        
-      </statement>
+          <li><p>  <m>s(t) = 4.9t + 10</m> m </p></li>
+          <li><p>  <m>s(t) = -4.9t^2 + 14.9</m> m </p></li> 
+          <li><p>  <m>s(t) = -4.9t^2 + 10</m> m </p></li>     
+          <li><p>  <m>s(t) = 4.9t + 5.1</m> m </p></li> 
+        </ol>
+      </task>
     </activity>  
 
 <activity xml:id="ivp-fluency-checkit">
@@ -137,7 +136,7 @@
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/IN4/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/IN4/"/>
       </p>
     </subsection>
 </section>

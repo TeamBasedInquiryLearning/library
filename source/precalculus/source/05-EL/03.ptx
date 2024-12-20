@@ -493,6 +493,7 @@
   </task>
 </activity>
 <remark>
+<p>
   Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  Using the rules of exponents and the fact that exponents and logarithms are inverses, these properties hold for any base:
   <me>
     \log_{b}(b^{x})=x
@@ -500,8 +501,7 @@
   <me>
     \log_b(1)=0
   </me>
-  
-  
+</p>
 </remark>
 
 <remark>
@@ -619,7 +619,9 @@
   </task>
 </activity>
 <remark>
+<p>
   Notice that in <xref ref="act-log-calc"/> part (g) you were unable to evaluate the logarithm. Given that exponentials and logarithms are inverses, their domain and range are related.  The range of an exponential function is <m>(0,\infty)</m> which becomes the domain of a logarithmic function.  This means that the argument of any logarithmic function must be greater than zero.
+</p>
 </remark>
 
 <activity xml:id="act-log-domain">
@@ -659,7 +661,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL3/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL3/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

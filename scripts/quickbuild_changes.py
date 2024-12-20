@@ -3,6 +3,8 @@ from git import Repo
 from pathlib import Path
 from lxml import etree
 import os
+import shutil
+from . import preview_outcome
 
 def main():
     repo = Repo()
@@ -10,7 +12,7 @@ def main():
     commit_origin_main = repo.commit("origin/main")
     commit_merge_base = repo.merge_base(commit_head, commit_origin_main)[0]
     diff_index = commit_merge_base.diff(commit_head)
-    changed_files = [Path(item.a_path) for item in diff_index]
+    changed_files = [Path(item.a_path) for item in diff_index if not item.deleted_file and not item.renamed_file]
     preview_links = []
 
     p = Project.parse()
@@ -41,6 +43,26 @@ def main():
                 "file": f,
                 "path": path
             })
+    # for each CheckIt file, build its preview
+    for b in BOOKS:
+        EXERCISE_FILES = [f for f in changed_files if Path("source", b, "exercises", "outcomes") in f.parents]
+        # collect changed outcomes
+        changed_outcomes = []
+        for f in EXERCISE_FILES:
+            if f.parent.name not in changed_outcomes:
+                changed_outcomes.append(f.parent.name)
+        # build changed outcomes
+        for o in changed_outcomes:
+            sandbox_bank_path = preview_outcome.build_preview(b, o)
+            output_path = Path("output", f"{b}-web-instructor", "exercises", o)
+            output_path.mkdir(parents=True)
+            shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
+            preview_links.append({
+                "file": f,
+                "path": f"/preview/{b}/instructor/exercises/{o}/"
+            })
+
+
     
     # create Javascript template for markdown output
     markdown = f"## 🚀 Preview available 🚀\n\n<${{cf_url}}>\n\n"

@@ -336,17 +336,16 @@
     </p></statement></example>
 
 <activity xml:id="limits-alg-checkit">
-    <statement>
+    <introduction>
         <p>
             Determine the following limits and explain your reasoning.
         </p>
-        
-            <task><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></task>
-            <task><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></task>
-        <task><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></task>
        
-    </statement>
-    </activity>
+    </introduction>
+    <task><statement><p><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></p></statement></task>
+    <task><statement><p><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></p></statement></task>
+    <task><statement><p><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></p></statement></task>
+</activity>
 
 
     
@@ -384,7 +383,7 @@
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT3/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT3/"/>
       </p>
     </subsection>
     

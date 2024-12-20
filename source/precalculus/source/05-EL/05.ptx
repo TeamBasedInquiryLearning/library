@@ -108,7 +108,8 @@
       <me>\dfrac{x^a}{x^b}=x^{a-b}</me>
       <me>\left(x^a\right)^b=x^{a \cdot b}</me> </p>
       
-      Consider all these as you move through the next few activities in this section.
+      Consider all these as you move through the activities in this section.
+    </p>
    </remark>
     
    <activity xml:id="investigate-product-property-of-logs">
@@ -342,7 +343,9 @@
    </activity>
 
    <remark>
+   <p>
     In <xref ref="investigate-product-property-of-logs"/> and <xref ref="investigate-quotient-property-of-logs"/>, you explored an example of two common properties of logarithms!
+  </p>
    </remark>
    
    <definition xml:id="def-product-and-quotient-property-of-logs">
@@ -565,7 +568,9 @@
    </activity>
 
    <remark>
+   <p>
     You might have noticed that a scientific calculator has only "log" and "ln" buttons (because those are the most common bases we use), but not all logs have base 10 or e as their bases.
+    </p>
    </remark>
 
    <activity xml:id="exploring-change-of-base">
@@ -637,7 +642,9 @@
    </activity>
 
    <remark>
+   <p>
     Notice in <xref ref="exploring-change-of-base"/>, we were able to calculate <m>\log_53</m> using logs of base <m>10</m>. You should now be able to find the value of a logarithm of any base!
+    </p>
    </remark>
 
    <definition xml:id="def-change-of-base">
@@ -693,7 +700,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL5/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL5/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

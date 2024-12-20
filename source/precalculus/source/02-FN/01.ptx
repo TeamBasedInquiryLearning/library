@@ -153,7 +153,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice that in <xref ref="FN1-exploring-relations-1"/>, <xref ref="FN1-exploring-relations-2"/>, and <xref ref="FN1-exploring-relations-3"/>, each set represents a very different relationship. Many concepts in mathematics will depend on particular relationships, so it is important to be able to visualize relationships and compare them.
+    </p>
     </remark>
 
     <definition xml:id="def-function">
@@ -241,7 +243,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice that when trying to determine if a relation is a function, we often have to rely on looking at the domain and range values. Thus, it is important to be able to idenfity the domain and range of any relation!
+    </p>
     </remark>
 
     <activity xml:id="FN1-determine-domain-and-range">
@@ -389,7 +393,9 @@
     </activity>
 
     <remark>
+    <p>
       You probably noticed (in <xref ref="FN1-determine-function-from-graph"/>) that when the graph has points that "line up" or are on top of each other, they have the same <m>x</m>-values. When this occurs, this shows that the same <m>x</m>-value has two different outputs (<m>y</m>-values) and that the relation is not a function.
+    </p>
     </remark>
     
     <definition xml:id="def-vertical-line-test">
@@ -577,7 +583,9 @@
 </activity>
 
 <remark xml:id="FN01-remark-square-nonfunction">
+<p>
   Notice that <xref ref="FN1-determine-if-function-from-equation"/> shows that equations with a <m>y^2</m> term generally do not define functions. This is because to solve for a squared variable, you must consider both positive and negative inputs. For example, both <m>2^2=4</m> and <m>(-2)^2=4</m>.
+</p>
 </remark>
 
 <activity xml:id="FN1-determine-domain-from-equation-square-root">
@@ -755,12 +763,14 @@
 </activity>
 
 <remark>
+<p>
   When determining the domain of an equation, it is often easier to first find values of <m>x</m> that make the function undefined. Once you have those values, then you know that <m>x</m> can be any value but those.
+</p>
 </remark>
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/FN1/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/FN1/"/>. </p> 
     </exercises>
 
     <!-- <subsection>
