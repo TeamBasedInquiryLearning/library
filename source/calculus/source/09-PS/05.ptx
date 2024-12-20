@@ -58,7 +58,7 @@
             <p>
                 Given a infinitely differentiable function <me>f(x)=\displaystyle\sum_{n=0}^\infty \dfrac{f^{(n)}(c)}{n!}(x-c)^n</me>, we define
                 the <term> remainder</term>, denoted  <m>R_k(x)</m>, to be the difference between the function <m>f(x)</m>
-                and its <m>n</m>th degree Taylor polynomial <m>T_k(x)</m>. That is,
+                and its <m>k</m>th degree Taylor polynomial <m>T_k(x)</m>. That is,
                 <me>
                     R_k(x)=f(x)-T_k(x).
                 </me>  
@@ -132,9 +132,9 @@
             <me>
                 f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n
             </me>
-            with an interval of convergence <m>I</m>. Then for all <m>x\in I</m>,
+            with an interval of convergence <m>I</m>. Then for all <m>x</m> in <m>I</m>,
             <me>
-                \lim_{n\rightarrow\infty} R_n(x)=0.
+                \lim_{k\rightarrow\infty} R_k(x)=0.
             </me>
             
         </p>
@@ -228,6 +228,11 @@
                 <p>
                     Calculate <m>M_k</m> for each <m>k=1,2,3,4</m> using your results from part (b).
                 </p>
+                <answer>
+                    <p>
+                        <m>M_1=1, M_2=2, M_3=6, M_4=24</m>
+                    </p>
+                </answer>
             </statement>
         </task>
 
