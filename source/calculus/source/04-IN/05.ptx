@@ -18,7 +18,15 @@
     </introduction>
     
     <figure xml:id="in5-figure-1">
-          <image width="50%" source="area1.png" />
+          <image width="50%">
+            <sageplot>
+                x= var('x')
+                f = 0.5*x+2
+                ticks = [[-4,-3,-2,-1,0,1,2,3,4,5,6,7,8],[1,2,3,4,5,6]]
+                p = plot(f,(x,-4,8),gridlines=True, thickness=2, axes_labels=('$x$','$f(x)$'), aspect_ratio=1.25, ticks=ticks)
+                p
+            </sageplot>
+          </image>
     </figure>
 </activity>
     
@@ -27,7 +35,14 @@
         <p>Approximate the area under the curve  <m>f(x)=(x-1)^2+2</m> on the interval <m>[1,5]</m> using a <b>left</b> Riemann sum with four uniform subdivisions. Draw your rectangles on the graph.</p>
     </introduction>
     <figure xml:id="in5-figure-2">
-          <image width="50%" source="riemann1.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = (x-1)^2 + 2
+                p = plot(f,(x,0,5), gridlines=True, thickness=2, axes_labels=('$x$','$f(x)$'), aspect_ratio = .25)
+                p
+            </sageplot>
+          </image>
     </figure>
 </activity>
     
@@ -96,21 +111,44 @@
    <task>
        <p> <m> \displaystyle \int_0^2 \left(x^2+3\right) \, dx </m></p>
        <figure xml:id="in5-figure-3">
-          <image width="50%" source="x2plus3.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = x^2 + 3
+                ticks = [True, [1..12]]
+                p = plot(f,(x,-3,3), ymin = 0, gridlines=True, thickness=2, axes_labels=('$x$','$y$'),ticks=ticks)
+                p
+            </sageplot>
+          </image>
        </figure>
     </task>
     
     <task>
        <p> <m> \displaystyle \int_1^4 \left(\sqrt{x}\right) \, dx </m></p>
        <figure xml:id="in5-figure-4">
-          <image width="50%" source="sqrtx.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = sqrt(x)
+                p = plot(f,(x,0,6), gridlines=True, thickness=2, axes_labels=('$x$','$y$'))
+                p
+            </sageplot>
+          </image>
        </figure>
     </task>
     
     <task>
        <p> <m> \displaystyle \int_{-\pi/4}^{\pi/2} \left(\cos x\right) \, dx </m></p>
        <figure xml:id="in5-figure-5">
-          <image width="50%" source="cosx.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = cos(x)
+                ticks = [[-pi/2, -pi/4,0,pi/4,pi/2,3*pi/4,pi],True]
+                p = plot(f,(x,-pi/2,pi), gridlines='minor', thickness=2, axes_labels=('$x$','$y$'), tick_formatter=[pi,None], ticks=ticks)
+                p
+            </sageplot>
+          </image>
        </figure>
     </task>
 </activity>
@@ -124,7 +162,14 @@
                </ol>         
            </p>
            <figure xml:id="in5-figure-6">
-          <image width="50%" source="linedefint.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = 2*x-6
+                p = plot(f,(x,0,8), gridlines=True, thickness=2, axes_labels=('$x$','$f(x)$'))
+                p
+            </sageplot>
+          </image>
        </figure>
            <p>What do you notice?</p>
        </introduction>
@@ -134,7 +179,14 @@
        <introduction>
            <p>Find the area bounded by the curves <m>f(x)=e^x-2</m>, the <m>x</m>-axis, <m>x=0</m>, and <m>x=1</m>. </p>
            <figure xml:id="in5-figure-7">
-          <image width="50%" source="exminus2.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = exp(x)-2
+                p = plot(f,(x,-1,1.5), gridlines=True, thickness=2, axes_labels=('$x$','$f(x)$'))
+                p
+            </sageplot>
+          </image>
        </figure>
        </introduction>
     </activity>
@@ -147,12 +199,29 @@
             <p><m>y=\frac{1}{x^2}</m></p>
             <figure xml:id="in5-figure-8">
           <image width="50%" source="defintarea1.png" />
+          <image width="50%">
+            <sageplot>
+                x = var('x')
+                f = 1/x^2
+                p1 = plot(f,(x,.5,3.5), gridlines=True, thickness=2, axes_labels=('$x$','$y$'))
+                p2 = plot(f,(x,1,3),fill=True)
+                p1+p2
+            </sageplot>
+          </image>
        </figure>
         </task>
         <task>
             <p><m>y=3x^2-x^3</m></p>
             <figure xml:id="in5-figure-9">
-          <image width="50%" source="defintarea2.png" />
+          <image width="50%">
+            <sageplot>
+                x=var('x')
+                f = 3*x^2-x^3
+                p1 = plot(f,(x,-1,4),ymin = -2, thickness=2,gridlines=True, axes_labels=('$x$','$y$'))
+                p2 = plot(f,(x,0,2),fill=True)
+                p1+p2
+            </sageplot>
+          </image>
        </figure>
         </task>
     </activity>
@@ -210,7 +279,7 @@ Leave all answers in exact form, with no decimal approximations.
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/IN5/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/IN5/"/>
         </p>
     </subsection>
 </section>

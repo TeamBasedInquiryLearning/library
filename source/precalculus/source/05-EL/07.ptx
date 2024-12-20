@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       Now that we have explored multiple methods for solving exponential and logarithmic equations, let's put those in to practice using some real-world application problems.
+      </p>
     </remark>
 
     <activity xml:id="exponential-application-1">
@@ -280,7 +282,9 @@
       </activity>
     
     <remark>
+    <p>
       Another application of exponential equations is compound interest. Savings instruments in which earnings are continually reinvested, such as mutual funds and retirement accounts, use compound interest. The term compounding refers to interest earned not only on the original value, but on the accumulated value of the account.  
+    </p>
       <p>
         Compound interest can be calculated by using the formula <me> A(t)=P\left(1+\dfrac{r}{n}\right)^{nt} </me>, where <m>A(t)</m> is the account value, <m>t</m> is measured in years, <m>P</m> is the starting amount of the account (also known as the principal), <m>r</m> is the annual percentage rate (APR) written as a decimal, and <m>n</m> is the number of compounding periods in one year.
       </p>
@@ -647,7 +651,9 @@
     </observation>
 
     <remark>
+    <p>
       For many real-world phenomena, <m>e</m> is used as the base for exponential functions. Exponential models that use <m>e</m> as the base are called continuous growth or decay models. We see these models in finance, computer science, and most of the sciences, such as physics, toxicology, and fluid dynamics. 
+    </p>
       <p>For all real numbers <m>t</m>, and all positive numbers <m>a</m> and <m>r</m>, continuous growth or decay is represented by the formula <me>A(t)=ae^{rt}</me>, where   <m>a</m> is the initial value, <m>r</m> is the continuous growth rate per of unit time, and <m>t</m> is the elapsed time. If <m>r\gt 0</m>, then the formula represents continuous growth. If <m>r\lt 0</m>, then the formula represents continuous decay.</p>
         
       <p>For business applications, the continuous growth formula is called the continuous compounding formula and takes the form <me>A(t)=Pe^{rt}</me>, where <m>P</m> is the principal or the initial invested, <m>r</m> is the growth or interest rate per of unit time, and <m>t</m> is the period or term of the investment.
@@ -689,7 +695,7 @@
     </subsection> 
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL7/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL7/"/>. </p> 
     </exercises> 
     
     <!-- <subsection>

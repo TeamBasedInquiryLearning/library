@@ -206,7 +206,9 @@
   </task>
 </activity>
 <remark>
+<p>
   The powers of 10 function <m>P(t)</m> has an inverse <m>L</m>.  This new function <m>L</m> is called the base 10 logarithm.  But, we could have done a similar procedure with any base, which leads to the following definition.
+</p>
 </remark>
 <definition xml:id="def-log">
   <statement>
@@ -219,11 +221,13 @@
   </statement>
 </definition>
 <remark>
+<p>
   We can use <xref ref="def-log"/> to express the relationship between logarithmic form and exponential form as follows:
   <me>
     \log_{b}(x)=y \iff b^{y}=x 
   </me>
   whenever <m> b \gt 0, b \neq 1 </m>
+</p>
 </remark>
 <activity xml:id="act-log-exp">
   <introduction>
@@ -485,6 +489,7 @@
   </task>
 </activity>
 <remark>
+<p>
   Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  Using the rules of exponents and the fact that exponents and logarithms are inverses, these properties hold for any base:
   <me>
     \log_{b}(b^{x})=x
@@ -492,8 +497,7 @@
   <me>
     \log_b(1)=0
   </me>
-  
-  
+</p>
 </remark>
 
 <remark>
@@ -611,7 +615,9 @@
   </task>
 </activity>
 <remark>
+<p>
   Notice that in <xref ref="act-log-calc"/> part (g) you were unable to evaluate the logarithm. Given that exponentials and logarithms are inverses, their domain and range are related.  The range of an exponential function is <m>(0,\infty)</m> which becomes the domain of a logarithmic function.  This means that the argument of any logarithmic function must be greater than zero.
+</p>
 </remark>
 
 <activity xml:id="act-log-domain">
@@ -651,7 +657,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL3/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL3/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

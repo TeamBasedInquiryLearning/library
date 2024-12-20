@@ -383,7 +383,9 @@
     </activity>
     
     <remark>
+    <p>
       Not all quadratic equations can be factored or can be solved by using the square root property. In the next few activities, we will learn two additional methods in solving quadratics.
+    </p>
     </remark>
 
     <definition xml:id="def-completing-the-square">
@@ -609,7 +611,9 @@
 </activity>
 
 <definition xml:id="def-quadratic-formula">
+<p>
   The last method for solving quadratic equations is the <term>quadratic formula</term> - a formula that will solve all quadratic equations!
+  </p>
   <p>
     A quadratic equation of the form <m>ax^2+bx+c=0</m> can be solved by the quadratic formula:
       <me>x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}</me>
@@ -916,7 +920,7 @@
   </subsection>
 
   <exercises>
-    <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ5/"/>. </p> 
+    <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EQ5/"/>. </p> 
   </exercises>
 
     <!-- <subsection>

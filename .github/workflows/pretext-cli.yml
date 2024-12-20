@@ -17,6 +17,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         container: oscarlevin/pretext:full
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
 
         steps:
             - name: Checkout source
@@ -25,23 +26,15 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            - name: quick build instructor versions
-              id: quickbuild
-              if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch) && github.event_name != 'workflow_dispatch'
-              run: |
-                pretext build precalculus-web-instructor -q
-                pretext build calculus-web-instructor -q
-                pretext build linear-algebra-web-instructor -q
-
             - name: build all deploy targets
-              if: steps.quickbuild.outcome == 'skipped'
+              # if: steps.quickbuild.outcome == 'skipped'
               run: pretext build --deploys
 
             - name: stage deployment
               run: pretext deploy --stage-only
 
             - name: build and stage all banks
-              if: steps.quickbuild.outcome == 'skipped'
+              # if: steps.quickbuild.outcome == 'skipped'
               run: |
                 python scripts/build_bank.py precalculus --full
                 python scripts/build_bank.py calculus --full
@@ -53,51 +46,10 @@ jobs:
                   name: deploy
                   path: output/stage
 
-    deploy-cloudflare:
-        runs-on: ubuntu-latest
-        needs: build
-        if: vars.CLOUDFLARE_PROJECT_NAME != '' && github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
-        permissions:
-          contents: read
-          deployments: write
-          pull-requests: write
-
-        steps:
-            - name: Download artifact
-              uses: actions/download-artifact@v4
-              with:
-                  name: deploy
-                  path: deploy
-            - name: Create 404.html
-              run: echo "404 page not found" >> deploy/404.html
-            - name: Delete CheckIt builds not supported by CloudFlare
-              run: find . -name "bank.json" -type f -delete
-            - name: Publish to Cloudflare
-              id: cloudflare_publish
-              uses: cloudflare/pages-action@v1
-              with:
-                  apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-                  accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                  projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-                  gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-                  branch:  ${{ github.head_ref || github.ref_name }}
-                  directory: deploy
-            - name: Report preview link
-              uses: actions/github-script@v6
-              if: github.event_name == 'pull_request'
-              with:
-                script: |
-                  github.rest.issues.createComment({
-                    issue_number: context.issue.number,
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    body: '## 🚀 Preview available 🚀\n\n${{ steps.cloudflare_publish.outputs.url }}\n\n- [Precalculus](${{ steps.cloudflare_publish.outputs.url }}/preview/precalculus/instructor/frontmatter)\n\n- [Calculus](${{ steps.cloudflare_publish.outputs.url }}/preview/calculus/instructor/frontmatter)\n\n- [Linear Algebra](${{ steps.cloudflare_publish.outputs.url }}/preview/linear-algebra/instructor/frontmatter)'
-                  })
-
     deploy-ghpages:
         runs-on: ubuntu-latest
         needs: build
-        if: vars.PTX_ENABLE_DEPLOY_GHPAGES == 'yes' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
         permissions:
             contents: read
             pages: write
@@ -121,3 +73,84 @@ jobs:
             - name: Deploy to Github Pages
               id: deployment
               uses: actions/deploy-pages@v4
+
+    preview:
+        runs-on: ubuntu-latest
+        container: oscarlevin/pretext:full
+        if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
+        outputs:
+          markdown: ${{ steps.changes.outputs.markdown }}
+
+        steps:
+            - name: Checkout source
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+
+            - name: install deps
+              run: pip install -r requirements.txt
+            
+            - name: Set necessary Git permission
+              run: git config --global --add safe.directory $(pwd)
+
+            - name: build previews of all changed files
+              id: changes
+              run: python -m scripts.quickbuild_changes
+
+            - name: stage deployment
+              run: pretext deploy --stage-only
+
+            # - name: build and stage all banks
+            #   run: |
+            #     python scripts/build_bank.py precalculus --full
+            #     python scripts/build_bank.py calculus --full
+            #     python scripts/build_bank.py linear-algebra --full
+
+            - name: Bundle output/stage as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: deploy
+                  path: output/stage
+
+    deploy-cloudflare:
+        runs-on: ubuntu-latest
+        needs: preview
+        if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
+        permissions:
+          contents: read
+          deployments: write
+          pull-requests: write
+
+        steps:
+            - name: Download artifact
+              uses: actions/download-artifact@v4
+              with:
+                  name: deploy
+                  path: deploy
+            - name: Create 404.html
+              run: echo "404 page not found" >> deploy/404.html
+            # - name: Delete CheckIt builds not supported by CloudFlare
+            #   run: find . -name "bank.json" -type f -delete
+            - name: Publish to Cloudflare
+              id: cloudflare_publish
+              uses: cloudflare/pages-action@v1
+              with:
+                  apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                  accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+                  projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+                  gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+                  branch:  ${{ github.head_ref || github.ref_name }}
+                  directory: deploy
+            - name: Report preview link
+              uses: actions/github-script@v6
+              if: github.event_name == 'pull_request'
+              with:
+                script: |
+                  cf_url = "${{ steps.cloudflare_publish.outputs.url }}"
+                  github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: `${{ needs.preview.outputs.markdown }}`
+                  })
+

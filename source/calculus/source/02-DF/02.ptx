@@ -155,7 +155,7 @@
         </statement>
     </activity>
     
-    <remark><statement><p>The first derivative encodes information about the rate of change of the original function. In particular,
+    <remark><p>The first derivative encodes information about the rate of change of the original function. In particular,
 <ul>
 <li>If <m>f'\gt 0 </m>, then <m>f</m> is increasing;</li>
 <li>If <m>f'\lt 0 </m>, then <m>f</m> is decreasing;</li>
@@ -168,7 +168,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
 <li>If <m>f'' \gt 0 </m>, then <m>f'</m> is increasing;</li>
 <li>If <m>f'' \lt 0 </m>, then <m>f'</m> is decreasing;</li>
     <li>If <m>f'' = 0 </m>, then <m>f'</m> has a horizontal tangent line (and it might have a max or min or it might just be changing pace).</li>
-</ul> </p> </statement></remark>
+</ul> </p> </remark>
     
      <activity xml:id="second-first-der-graph">
     <statement><p>Consider the function <m>f(x)=-x^2+2x-4</m>. Earlier you saw that <m>f'(x)=-2x+2</m> and <m>f''(x)=-2</m>. What does this tell you about the graph of <m>f(x)</m> for <m>x \gt 1</m>?</p>
@@ -281,7 +281,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-DF2" youtube="4UErodf99UE"/>
+            <video xml:id="video-DF2" youtube="_e4F_lKOUII"/>
             <caption>Video for DF2</caption>
         </figure>
     </subsection> 
@@ -289,7 +289,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF2/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/DF2/"/>
         </p>
     </subsection>
 </section>
