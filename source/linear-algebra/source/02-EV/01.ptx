@@ -308,7 +308,6 @@ x_3\left[\begin{array}{c}1\\0\\-3\end{array}\right]=0</m>
     <observation>
             <p>
 The following are all equivalent statements:
-            </p>
 <ul>
 <li>
     <p>
@@ -340,6 +339,7 @@ The following are all equivalent statements:
     </p>
 </li>
 </ul>
+            </p>
     </observation>
 
  <activity estimated-time="10">
@@ -499,18 +499,18 @@ in <m>\IR^3</m>.
 <subsection>
     <title>Videos</title>
     <figure>
-        <video xml:id="video-EV1" youtube="wkLa08LwSNs">
-          <!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-        </video>
         <caption>Video: Linear combinations</caption>
+        <video xml:id="video-EV1" youtube="wkLa08LwSNs"/>
     </figure>
 </subsection>
 
 
 
-<exercises>
-    <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV1/"/>.</p>
-</exercises>
+<subsection>
+  <title>Exercises</title>
+  <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV1/"/>.</p>
+</subsection>
+
 <subsection>    
 <title>Mathematical Writing Explorations</title>
                 <exploration>
