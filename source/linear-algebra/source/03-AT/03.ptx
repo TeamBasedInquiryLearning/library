@@ -249,8 +249,6 @@ is an important subspace of <m>W</m> defined by
 <me>
 \Im T = \left\{ \vec{w} \in W\ \big|\ \text{there is some }\vec v\in V \text{ with } T(\vec{v})=\vec{w}\right\}
 </me>
-Note that, if the transformation <m>T</m> is represented by the matrix <m>A</m>,
- then the image of <m>T</m> is the <term>column space</term><idx>column space</idx> of <m>A</m>.
         </p>
         <p>
 In the examples below, the left example's image is all of <m>\IR^2</m>, but the
@@ -451,6 +449,10 @@ and only using the vectors corresponding to pivot columns:
     \left[\begin{array}{c}4\\1\\1\end{array}\right]
   }
 </me>
+        </p>
+        <p>
+          Note that, if the transformation <m>T</m> is represented by the matrix <m>A</m>,
+ then the image of <m>T</m> is the <term>column space</term><idx>column space</idx> of <m>A</m>.
         </p>
     </statement>
 </observation>
