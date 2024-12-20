@@ -37,7 +37,23 @@
                 <caption>A point in the polar coordinate system.</caption>
                     <image xml:id="polarPoint" width="100%">
                         <description>A point in the polar coordinate system.</description>
-                        <latex-image><xi:include href="./tikz/polarPoint.tex" parse="text"/></latex-image>
+                        <sageplot>
+                            circ = arc((0,0),1,sector=(0,pi/2),color='black',thickness=2,linestyle='dashed',axes=False)
+                            xaxis = arrow((0,0),(1.5,0),color='black',axes=False)
+                            xaxis_label = text('$x$',(1.6,0),color='black',fontsize=13)
+                            yaxis = arrow((0,0),(0,1.5),color='black')
+                            yaxis_label = text('$y$',(0,1.6),color='black',fontsize=13)
+                            radius = arrow((0,0),(sqrt(2)/2,sqrt(2)/2),color='black')
+                            radius_label = text('$r$',(0.35,0.45), color='black',fontsize=15)
+                            yline = line(([(0,sqrt(2)/2),(sqrt(2)/2,sqrt(2)/2)]),linestyle='dashed',color='red')
+                            yline_label = text('$y$',(-.1,sqrt(2)/2),color='red',fontsize=15)
+                            xline = line(([(sqrt(2)/2,sqrt(2)/2),(sqrt(2)/2,0)]),color='red',linestyle='dashed')
+                            xline_label = text('$x$',(sqrt(2)/2,-.1),color='red',fontsize=15)
+                            pt = text('$(r,\\theta)$',(sqrt(2)/2+.1,sqrt(2)/2+.1),color='black',fontsize=15)
+                            inner_arc = arc((0,0),.2,sector=(0,pi/4),color='black')
+                            inner_arc_label = text('$\\theta$', (.25,.2*sqrt(2)/3),color='black',fontsize=15)
+                            circ + xaxis + xaxis_label + yaxis + yaxis_label + radius + radius_label + yline + yline_label + xline + xline_label + pt + inner_arc + inner_arc_label
+                        </sageplot>
                     </image>
             </figure>
     
@@ -47,13 +63,28 @@
                 <caption>The polar grid.</caption>
                     <image xml:id="polarCoord" width="100%">
                         <description>The polar grid</description>
-                        <latex-image><xi:include href="./tikz/polarCoord.tex" parse="text"/></latex-image>
-
+                        <sageplot>
+circ_range = [1,..,5]
+plt = Graphics()
+for i in circ_range:
+    plt += polar_plot(i-0.5,x,0,2*pi,thickness=1,figsize=10)
+    plt += polar_plot(i,(x,0,2*pi), axes=False, thickness=1.5,figsize=10)
+    bbox = {'boxstyle': 'square,pad=0.05','fc':"white", 'ec':"white"}
+    lbl = text(i,(i,-.25),color='black',background_color='white',bounding_box = bbox,fontsize=13)
+    plt += lbl
+for angle in [0,1,..,23]:
+    plt += line(([(0,0),(5*cos(angle*pi/12),5*sin(angle*pi/12))]))
+    actual_angle = angle*pi/12
+    if denominator(actual_angle) != 1:
+        plt += text(f"$\\dfrac{{{latex(numerator(actual_angle))}}}{{{denominator(actual_angle)}}}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+    else:
+        plt += text(f"${latex(angle*pi/12)}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+xaxis = arrow((0,0),(5.25,0),arrowsize=0.5,color='black')
+plt += xaxis
+plt
+                        </sageplot>
                     </image>
-            </figure>
-    
-    
-    
+            </figure>   
     <activity xml:id="activity-CO4pointConversions">
         
         <task>
