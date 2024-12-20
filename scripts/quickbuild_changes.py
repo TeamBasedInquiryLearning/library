@@ -33,11 +33,11 @@ def main():
         for xml_id in xml_ids:
             if xml_id is not None:
                 print(f"Building book `{b}` with ID `{xml_id}`")
-                path = f"/preview/{book}/instructor/{xml_id}.html"
+                path = f"/preview/{b}/instructor/{xml_id}.html"
                 t.build(xmlid=xml_id, no_knowls=True, generate=True)
             else:
                 print(f"Building book `{b}`, skipping images")
-                path = f"/preview/{book}/instructor"
+                path = f"/preview/{b}/instructor"
                 t.build(xmlid=None, no_knowls=True, generate=False)
             preview_links.append({
                 "file": f,
