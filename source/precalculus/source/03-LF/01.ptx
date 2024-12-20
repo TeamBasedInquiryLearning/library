@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       This section will explore ideas around average rate of change and slope. To help us get started, let's take a look at a context in which these ideas can be helpful.
+    </p>
     </remark>
 
    <activity xml:id="LR-1-Investigation-of-slope">
@@ -114,7 +116,9 @@
    </activity> 
     
    <remark>
+   <p>
     Notice in <xref ref="LR-1-Investigation-of-slope"/> that the temperature appears to be decreasing at a constant rate (i.e., the temperature decreased <m>1.4</m> degrees for every <m>2</m>-minute interval). Upon further investigation, you might have also noticed that the temperature decreased by <m>0.7</m> degrees every minute.
+  </p>
    </remark>
 
    <activity xml:id="LR-2-Investigation-of-slope-continued">
@@ -159,7 +163,9 @@
     </task>
    </activity>
    <remark>
+   <p>
     An average rate of change helps us to see and understand how a function is generally behaving. For example, in <xref ref="LR-1-Investigation-of-slope"/> and <xref ref="LR-2-Investigation-of-slope-continued"/>, we began to see how the temperature of Robert’s house was decreasing every minute the air conditioner was on. In other words, when looking at average rate of change, we are comparing how one quantity is changing with respect to something else changing.
+    </p>
    </remark>
 
    <definition xml:id="def-average-rate-of-change">
@@ -416,7 +422,9 @@
   </activity>
 
   <remark>
+  <p>
     Notice in <xref ref="LR-4-Investigate-slope"/>, the average rate of change was the same regardless of which interval you were given. But in <xref ref="LR-3-Calculate-AROC-from-graph"/>, the average rate of change was not the same across different intervals.
+  </p>
   </remark>
 
 <definition xml:id="def-slope">
@@ -563,7 +571,9 @@
 </activity>
 
 <remark>
+<p>
   The steepness, or slope, of a line can be found by the change in <m>y</m> (the vertical distance between two points on the line) divided by the change in <m>x</m> (the horizontal distance between two points on the line). Slope can be calculated as "rise over run."
+</p>
   <p>
     Slope is a way to describe the steepness of a line. The red line in <xref ref="LR-5-Compare-Slopes-of-Lines"/> has a larger value for it's slope than the blue line. Thus, the red line is steeper than the blue line.
   </p>
@@ -647,7 +657,9 @@
 </activity>
 
 <remark>
+<p>
   Notice in <xref ref="Direction-and-slope"/> that the slope does not just indicate how steep a line is, but also it's direction. A negative slope indicates that the line is decreasing (from left to right) and a positive slope indicates that the line is increasing (from left to right).
+</p>
 </remark>
 
 <activity xml:id="Calculating-slope-from-two-points">
@@ -705,7 +717,9 @@
 </activity>
 
 <remark>
+<p>
   We can calculate slope (<m>m</m>) by finding the change in <m>y</m> and dividing by the change in <m>x</m>. Mathematically, this means that when given <m> (x_{1},y_{1})</m> and <m> (x_{2}, y_{2})</m>,  <me>m=\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}</me>.
+</p>
 </remark>
 
 <activity xml:id="calculate-slope-using-formula">
@@ -782,7 +796,9 @@
 </activity>
 
 <remark>
+<p>
   In <xref ref="calculate-slope-using-formula"/>, there were slopes that were <m>0</m> and undefined. When a line is vertical, the slope is undefined. This means that there is only a vertical distance between two points and there is no horizontal distance. When a line is horizontal, the slope is <m>0</m>. This means that the line never rises vertically, giving a vertical distance of zero.
+</p>
 </remark>
 
     </subsection>
