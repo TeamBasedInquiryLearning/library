@@ -36,12 +36,12 @@
 
 <subsection><title>Class Activities</title>
 <observation>
-    <statement>
         <p>
 Any single non-zero vector/number <m>x</m> in <m>\IR^1</m> spans <m>\IR^1</m>,
 since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
         </p>
         <figure>
+            <caption>An <m>\IR^1</m> vector</caption>
             <image width="75%" xml:id="EV2-image-scale-r1">
                 <latex-image>
 \begin{tikzpicture}
@@ -51,9 +51,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
 \end{tikzpicture}
                     </latex-image>
             </image>
-            <caption>An <m>\IR^1</m> vector</caption>
     </figure>
-    </statement>
 </observation>
 
 <activity estimated-time='5'>
@@ -63,6 +61,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
   Sketch a drawing in the <m>xy</m> plane to support your answer.
         </p>
         <figure>
+            <caption>The <m>xy</m> plane <m>\IR^2</m></caption>
             <image width="50%" xml:id="EV2-image-r2">
                 <latex-image>
 \begin{tikzpicture}
@@ -71,7 +70,6 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
 \end{tikzpicture}
                 </latex-image>
             </image>
-            <caption>The <m>xy</m> plane <m>\IR^2</m></caption>
         </figure>
   <ol marker="A." cols="2">
 <li>
@@ -109,6 +107,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
   How many vectors are required to span <m>\IR^3</m>?
         </p>
         <figure>
+            <caption><m>\IR^3</m> space</caption>
         <image width="75%" xml:id="EV2-image-r3">
             <latex-image>
   \begin{tikzpicture}[x={(210:0.8cm)}, y={(0:1cm)}, z={(90:1cm)}]
@@ -118,7 +117,6 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
   \end{tikzpicture}
             </latex-image>
         </image>
-            <caption><m>\IR^3</m> space</caption>
         </figure>
   <ol marker="A." cols="2">
 <li>
@@ -156,6 +154,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
   At least <m>n</m> vectors are required to span <m>\IR^n</m>.
         </p>
         <figure>
+            <caption>Failed attempts to span <m>\IR^n</m> by <m>&lt;n</m> vectors</caption>
         <image width="75%" xml:id="EV2-image-span-r3">
             <latex-image>
   \begin{tikzpicture}[scale=0.5]
@@ -175,7 +174,6 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
   \end{tikzpicture}
             </latex-image>
         </image>
-            <caption>Failed attempts to span <m>\IR^n</m> by <m>&lt;n</m> vectors</caption>
         </figure>
     </statement>
     </fact>
@@ -461,23 +459,22 @@ Given no additional information about the vectors <m>\vec{v}_1,\dots, \vec{v}_m<
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-EV2" youtube="Mr8LJAPwp1E">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Determining if a set spans a Euclidean space</caption>
+            <video xml:id="video-EV2" youtube="Mr8LJAPwp1E"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV2/"/>.</p>
-    </exercises>
+    </subsection>
     
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     Construct each of the following, or show that it is impossible:
 <ul>
 <li>A set of 2 vectors that spans <m>\mathbb{R}^3</m></li>
@@ -486,12 +483,12 @@ Given no additional information about the vectors <m>\vec{v}_1,\dots, \vec{v}_m<
 <li>A set of 4 vectors that spans <m>\mathbb{R}^3</m></li>
 </ul>
                     For any of the sets you constructed that did span the required vector space, are any of the vectors a linear combination of the others in your set? 
-                </statement>
+                </p>
     </exploration>
     <exploration>
-                <statement>
+                <p>
                     Based on these results, generalize this a conjecture about how a set of <m>n-1, n</m> and <m>n+1</m> vectors would or would not span <m>\mathbb{R}^n</m>.
-        </statement>
+        </p>
     </exploration>
     </subsection>
     <subsection>
