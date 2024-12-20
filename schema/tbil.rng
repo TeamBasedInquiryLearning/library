@@ -78,6 +78,23 @@
                 <ref name="Url"/>
             </element>
         </define>
+        <define name="Paragraph">
+            <element name="p">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
+                <optional>
+                    <ref name="UniqueID" />
+                </optional>
+                <optional>
+                    <ref name="LabelID" />
+                </optional>
+                <optional>
+                    <ref name="Component" />
+                </optional>
+                <ref name="TextParagraph" />
+            </element>
+        </define>
     </include>
     <start combine="choice">
         <choice>
