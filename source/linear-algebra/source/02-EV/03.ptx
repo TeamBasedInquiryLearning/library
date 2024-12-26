@@ -258,7 +258,7 @@
         <p>
 Note the similarities between a planar subspace spanned by two non-colinear vectors in <m>\IR^3</m>,
 and the Euclidean plane <m>\IR^2</m>. While they are not the same thing (and shouldn't be referred to
-interchangably), algebraists call such similar spaces <term>isomorphic</term><idx>isomorphic</idx>;
+interchangeably), algebraists call such similar spaces <term>isomorphic</term><idx>isomorphic</idx>;
 we'll learn what this means more carefully in a later chapter.
         </p>
         <figure xml:id="EV3-planar-subspace-vs-r2">
@@ -777,7 +777,7 @@ and it's not helpful to prove to someone that zero equals itself
                         Well, if <me>(x+a)+(y+b)=3(z+c)+2(w+d),</me>
                         then we know that <me>x+y-3z-2w+a+b-3c-2d=0</me>
                         by moving everything over to the left hand side. 
-                        Since we are assumming that <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m>, it follows that
+                        Since we are assuming that <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m>, it follows that
                         <m>0=0</m>, which is true, which proves that vector addition is closed.
                     </p>
                 </statement>

@@ -49,7 +49,7 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     </activity>
 
     <definition xml:id="defn-motion"><p>
-        If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then the derivative of the position function tells us how the position is changing over time, so <m>f'(t)</m> gives us the (instantenous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so <m>f''(t)</m> gives us the (instantenous) acceleration in meters per second squared. Summarizing, 
+        If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then the derivative of the position function tells us how the position is changing over time, so <m>f'(t)</m> gives us the (instantaneous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so <m>f''(t)</m> gives us the (instantaneous) acceleration in meters per second squared. Summarizing, 
         <ul>
         <li><p><m>v(t) = f'(t)</m> is the velocity of the particle in <m>m/s</m>.</p></li>
         <li><p><m>a(t) = f''(t)</m> is the acceleration of the particle in <m>m/s^2</m>. </p></li>
