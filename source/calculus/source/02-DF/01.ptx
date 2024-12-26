@@ -112,7 +112,7 @@
     </activity>
     
  <definition xml:id = "def-inst-vel"> 
-     <p> The instanteous velocity at <m>t=a</m> is the limit as <m>h \to 0</m> of the difference quotient <m>\dfrac{f(a+h)-f(a)}{h}</m>. In the activity above the instantaneous velocity at <m>t=2</m> is given by the limit
+     <p> The instantaneous velocity at <m>t=a</m> is the limit as <m>h \to 0</m> of the difference quotient <m>\dfrac{f(a+h)-f(a)}{h}</m>. In the activity above the instantaneous velocity at <m>t=2</m> is given by the limit
      </p>
      <me>
      v(2) = \lim_{h\to 0} \dfrac{f(2+h)-f(2)}{h}</me>    
@@ -218,7 +218,7 @@
         <me>f'(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}.</me>
     </definition>
     
-      <observation> <p>In <xref ref ="activity-ball1" />  and <xref ref ="activity-ball2" /> you studied a ball falling under gravity and estimated the instantaneous velocity as a limiting value of average velocities on smaller and smaller intervals. Drawing the corresponding secant lines, we see how the secant lines approximate better the tangent line, showing graphically what we previouly saw numericaly. Here is a Desmos animation showing the secant lines approaching the tangent line  <url href = "https://www.desmos.com/calculator/bzs1bxz7fa"/>.  </p></observation>
+      <observation> <p>In <xref ref ="activity-ball1" />  and <xref ref ="activity-ball2" /> you studied a ball falling under gravity and estimated the instantaneous velocity as a limiting value of average velocities on smaller and smaller intervals. Drawing the corresponding secant lines, we see how the secant lines approximate better the tangent line, showing graphically what we previously saw numerically. Here is a Desmos animation showing the secant lines approaching the tangent line  <url href = "https://www.desmos.com/calculator/bzs1bxz7fa"/>.  </p></observation>
     
       
     <activity xml:id = "meanings-derivative">
@@ -259,7 +259,7 @@
     
      <activity xml:id = "activity-differentiability-intuition">
               <introduction> 
-                <p> In this activity you will study the abolute value function <m>f(x)=|x|</m>. The absolute value function is a piecewise defined function which outputs <m>x</m> when <m>x</m> is positive (or zero) and outputs <m>-x</m> when <m>x</m> is negative. So the absolute value always outputs a number which is positive (or zero). Here is the graph of this function. </p>
+                <p> In this activity you will study the absolute value function <m>f(x)=|x|</m>. The absolute value function is a piecewise defined function which outputs <m>x</m> when <m>x</m> is positive (or zero) and outputs <m>-x</m> when <m>x</m> is negative. So the absolute value always outputs a number which is positive (or zero). Here is the graph of this function. </p>
                    <figure>
                     <image width="50%" xml:id="graph-absolute-value">
                       <sageplot>
