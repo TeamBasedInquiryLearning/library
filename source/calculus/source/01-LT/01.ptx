@@ -143,11 +143,9 @@
         </task>
     </activity>
     <remark>
-        <statement>
             <p>
             When studying functions in algebra, we often focused on the <em>value</em> of a function given a specific <m>x</m>-value. For instance, finding <m>f(2)</m> for some function <m>f(x)</m>. In calculus, and here in <xref ref="activity-limits-graphically1"/> and <xref ref="activity-limits-graphically2"/>, we have instead been exploring what is happening as we <em>approach</em> a certain value on a graph.  This concept in mathematics is known as finding a limit.
             </p>
-        </statement>
     </remark>
     <activity estimated-time="15">
         <introduction>
@@ -376,8 +374,8 @@
             </answer>
          </task>
     </activity>
-<task>
-     <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
+
+    <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
     <statement>
         <p>Sketch the graph of a function <m>f(x)</m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
         <ol>
@@ -395,9 +393,8 @@
                     <li><p><m>\displaystyle \lim_{x\to -1^-} f(x)=-1</m> but <m>\displaystyle \lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
         </ol>
     </statement> 
-
     </activity>
-    </task>
+
           <theorem xml:id="squeeze-thm"> 
              <statement> 
              <p> Suppose that: </p> 

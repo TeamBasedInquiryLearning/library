@@ -1,25 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+<grammar xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://relaxng.org/ns/structure/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
     <include href="/root/.ptx/2.10.1/core/schema/pretext-dev.rng">
         <define name="Subtitle">
             <zeroOrMore>
                 <element name="subtitle">
                     <optional>
-                        <attribute name="component"/>
+                        <attribute name="component" />
                     </optional>
-                    <ref name="TextLong"/>
+                    <ref name="TextLong" />
                 </element>
             </zeroOrMore>
+        </define>
+        <define name="Bibinfo">
+            <element name="bibinfo">
+                <choice>
+                    <group>
+                        <ref name="Author" />
+                        <zeroOrMore>
+                            <ref name="Author" />
+                        </zeroOrMore>
+                        <zeroOrMore>
+                            <ref name="Editor" />
+                        </zeroOrMore>
+                    </group>
+                    <group>
+                        <ref name="Editor" />
+                        <zeroOrMore>
+                            <ref name="Editor" />
+                        </zeroOrMore>
+                    </group>
+                </choice>
+                <zeroOrMore>
+                    <ref name="Credit" />
+                </zeroOrMore>
+                <optional>
+                    <ref name="Date" />
+                </optional>
+                <zeroOrMore>
+                    <ref name="ColophonCredit" />
+                </zeroOrMore>
+                <optional>
+                    <element name="edition">
+                        <text />
+                    </element>
+                </optional>
+                <optional>
+                    <ref name="Website" />
+                </optional>
+                <optional>
+                    <ref name="Copyright" />
+                </optional>
+            </element>
+        </define>
+        <define name="Author">
+            <element name="author">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
+                <ref name="PersonName" />
+                <optional>
+                    <ref name="Department" />
+                </optional>
+                <optional>
+                    <ref name="Institution" />
+                </optional>
+                <optional>
+                    <ref name="Email" />
+                </optional>
+            </element>
+        </define>
+        <define name="Website">
+            <element name="website">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
+                <ref name="Url"/>
+            </element>
+        </define>
+        <define name="Paragraph">
+            <element name="p">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
+                <optional>
+                    <ref name="UniqueID" />
+                </optional>
+                <optional>
+                    <ref name="LabelID" />
+                </optional>
+                <optional>
+                    <ref name="Component" />
+                </optional>
+                <ref name="TextParagraph" />
+            </element>
         </define>
     </include>
     <start combine="choice">
         <choice>
-            <ref name="Paragraph"/>
+            <ref name="Paragraph" />
+            <ref name="Author" />
+            <ref name="Website" />
+            <ref name="Copyright" />
+            <ref name="Example" />
+            <ref name="IntroductionDivision" />
+            <ref name="Objectives" />
         </choice>
     </start>
     <define name="MetaDataTitleOptional" combine="interleave">
         <optional>
-            <attribute name="estimated-time"/>
+            <attribute name="estimated-time" />
         </optional>
+    </define>
+    <define name="Copyright">
+        <element name="copyright">
+            <optional>
+                <ref name="XMLBase" />
+            </optional>
+            <element name="year">
+                <ref name="TextShort" />
+            </element>
+            <element name="holder">
+                <text />
+            </element>
+            <optional>
+                <element name="minilicense">
+                    <ref name="TextShort" />
+                </element>
+            </optional>
+            <optional>
+                <ref name="ShortLicense" />
+            </optional>
+        </element>
     </define>
 </grammar>

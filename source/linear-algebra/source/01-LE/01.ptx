@@ -242,7 +242,7 @@ a_1x_1+a_2x_2+\dots+a_nx_n=b
 </me>.
             </p>
             <p>
-                A <term>solution</term> for a linear equation is a Euclidean vector
+                A <term>solution</term><idx><h>linear equation</h><h>solution</h></idx> for a linear equation is a Euclidean vector
 <me>
   \left[\begin{array}{c}
     s_1 \\
@@ -257,25 +257,24 @@ a_1s_1+a_2s_2+\dots+a_ns_n=b
 </me>
 (that is, a Euclidean vector whose components can be plugged into the equation).
             </p>
-        </statement><idx><h>linear equation</h><h>solution</h></idx>
+        </statement>
     </definition>
 
 
 <remark>
-    <statement>
     <p>
 In previous classes you likely used the variables <m>x,y,z</m> in equations.
 However, since this course often deals with equations of four or more
 variables, we will often write our variables as <m>x_i</m>, and assume
 <m>x=x_1,y=x_2,z=x_3,w=x_4</m> when convenient.
         </p>
-    </statement>
 </remark>
 
 <definition>
 <statement>
     <p>
-        A <term>system of linear equations</term> (or a <term>linear system</term> for short)
+        A <term>system of linear equations</term>
+        <idx>system of linear equations</idx><idx>linear system</idx> (or a <term>linear system</term> for short)
 is a collection of one or more linear equations.
         <md alignment="alignat" alignat-columns="5">
             <mrow>
@@ -312,10 +311,9 @@ is a collection of one or more linear equations.
     \text{is a solution to all equations in the system}
   }
 </me>.
-    </p></statement><idx>system of linear equations</idx><idx>linear system</idx></definition>
+    </p></statement></definition>
 
 <remark>
-    <statement>
     <p>
   When variables in a large linear system are missing, we prefer to
   write the system in one of the following standard forms:
@@ -364,11 +362,9 @@ is a collection of one or more linear equations.
             </md>
         </p>
     </sidebyside>
-    </statement>
 </remark>
 
     <remark>
-        <statement>
         <p>
 It will often be convenient to think of a system of equations as a vector equation.<idx>vector equation</idx>
         </p>
@@ -389,7 +385,6 @@ is equivalent to the system of equations
                 </mrow>
             </md>
         </p>
-        </statement>
     </remark>
 
 
@@ -407,7 +402,6 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
         <statement>
             <p>
   All linear systems are one of the following:
-            </p>
             <ol>
     <li><em>Consistent with one solution:</em>
           its solution set contains a single vector, e.g.
@@ -429,6 +423,7 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
           its solution set is the empty set, denoted by either <m>\{\}</m> or <m>\emptyset</m>.
                 </li>
             </ol>
+            </p>
         </statement>
     </fact>
 
@@ -438,7 +433,6 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
 All inconsistent linear systems contain a logical <term>contradiction</term>.
   Find a contradiction in this system to show that its solution set
   is the empty set.
-            </p>
             <md>
             <mrow>
   -x_1+2x_2  &amp;=  5
@@ -447,6 +441,7 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
   2x_1-4x_2  &amp;=  6
                 </mrow>
             </md>
+            </p>
         </statement>
     </activity>
 
@@ -454,7 +449,6 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
         <introduction>
         <p>
   Consider the following consistent linear system.
-            </p>
             <md>
                 <mrow>
   -x_1+2x_2  &amp;= -3
@@ -463,12 +457,12 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
   2x_1-4x_2  &amp;=  6
                 </mrow>
             </md>
+            </p>
         </introduction>
         <task>
             <p>
   Find several different solutions
   for this system:
-            </p>
             <me>             
 \left[\begin{array}{c}
 1 \\
@@ -491,6 +485,7 @@ All inconsistent linear systems contain a logical <term>contradiction</term>.
 \unknown
 \end{array}\right]
             </me>
+            </p>
         </task>
         <task>
             <statement>
@@ -514,7 +509,6 @@ expressions for <m>x_1</m> in terms of <m>a</m> satisfies both equations of the 
             <p>
 Given <m>x_2=a</m> and the expression you found in the previous task, which of these
 describes the solution set for this system?
-            </p>
             <ol marker="A." cols="2">
                 <li>
                     <m>
@@ -569,6 +563,7 @@ a \in \IR
                     </m>
                 </li>
             </ol>
+            </p>
         </statement>
         <answer><p>A.
             <m>
@@ -589,7 +584,6 @@ a \in \IR
         <statement>
             <p>
   Consider the following linear system.
-            </p>
             <md alignment="alignat" alignat-columns="5">
                 <mrow>
     x_1 &amp;\,+\,&amp; 2x_2 &amp;\, \,&amp;     &amp;\,-\,&amp;  x_4 &amp;\,=\,&amp; 3
@@ -598,7 +592,6 @@ a \in \IR
         &amp;\, \,&amp;      &amp;\, \,&amp; x_3 &amp;\,+\,&amp; 4x_4 &amp;\,=\,&amp; -2
                 </mrow>
             </md>
-            <p>
 Substitute <m>x_2=a</m> and <m>x_4=b</m>, and then solve for <m>x_1</m> and <m>x_3</m>:
 <me>x_1 = \unknown \hspace{6em} x_3 = \unknown \hspace{6em}</me>
 Then use these to describe the solution set
@@ -621,7 +614,6 @@ Then use these to describe the solution set
     </activity>
 
     <observation>
-        <statement>
         <p>
   Solving linear systems of two variables by graphing or substitution is
   reasonable for two-variable systems, but these simple techniques
@@ -642,11 +634,9 @@ Then use these to describe the solution set
   activity, but we'll want to learn new techniques
   to compute these solutions efficiently.
         </p>
-        </statement>
     </observation>
 
     <remark>
-        <statement>
         <p>
   The only important information in a linear system are its coefficients and
   constants.
@@ -695,7 +685,6 @@ Then use these to describe the solution set
             </md>
         </p>
         </sidebyside>
-        </statement>
     </remark>
 
     <definition>
@@ -705,7 +694,6 @@ Then use these to describe the solution set
             by writing its coefficients and constants in an
             <term>augmented matrix</term><idx>augmented matrix</idx>: the <m>m\times n</m> matrix of
             its coefficients augmented with the <m>m</m> constant values as a final column.
-                        </p>
             <md alignment="alignat" alignat-columns="5">
                 <mrow>
     a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; b_1
@@ -740,6 +728,7 @@ Then use these to describe the solution set
                   a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
                 \end{array}\right]
                         </me>
+                        </p>
         </statement>
     </definition>
 
@@ -852,18 +841,19 @@ Augmented matrix:
     <subsection>
         <title>Videos</title>
     <figure>
+        <caption>Video: Converting between systems, vector equations, and augmented matrices</caption>
 		<video xml:id="video-LE1" youtube="kpOK7RhFEiQ">
 			<!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
 		</video>
-        <caption>Video: Converting between systems, vector equations, and augmented matrices</caption>
     </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/LE1/"/>.</p>
-    </exercises>
+    </subsection>
             <subsection>
         <title>Mathematical Writing Explorations</title>
         <exploration>
@@ -886,7 +876,6 @@ Augmented matrix:
             <exploration>
             <statement>
                 <p>
-                    <p>
     Consider the linear system:
             <md alignment="alignat" alignat-columns="2">
                 <mrow>
@@ -896,7 +885,6 @@ Augmented matrix:
       cx_1 + dx_2 &amp;\,=\,&amp; k
                 </mrow>
             </md>
-        </p>
                     Assume <m>j</m> and <m>k</m> are arbitrary real numbers.
                     <ul>
                     <li> Choose values for <m>a,b,c</m>, and <m>d</m>, such that <m>ad-bc = 0</m>. Show that this system is inconsistent.</li>

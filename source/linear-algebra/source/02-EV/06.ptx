@@ -432,32 +432,31 @@ Thus the basis for a subspace is not unique in general.
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-EV6" youtube="iMYIbdtspyo">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Finding a basis of a subspace and computing the dimension of a subspace</caption>
+            <video xml:id="video-EV6" youtube="iMYIbdtspyo"/>
         </figure>
     </subsection>
 
  
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV6/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     Prove each of the following statements is true.
 <ul>
     <li> If <m>\{\vec{b}_1, \vec{b}_2,\ldots, \vec{b}_m\}</m> and <m>\{\vec{c}_1,\vec{c}_2,\ldots,\vec{c}_n\}</m> are each a basis for a vector space <m>V</m>, then <m>m=n.</m></li>
     <li>If <m>\{\vec{v}_1,\vec{v}_2\ldots, \vec{v}_n\}</m> is linearly independent, then so is <m>\{\vec{v}_1,\vec{v}_1 + \vec{v}_2, \ldots, \vec{v}_1 + \vec{v}_2 + \cdots + \vec{v}_n\}</m>.</li>
     <li> Let <m>V</m> be a vector space of dimension <m>n</m>, and <m>\vec{v} \in V</m>. Then there exists a basis for <m>V</m> which contains <m>\vec{v}</m>.</li>
 </ul>
-                </statement>
+                </p>
     </exploration>
     <exploration>
-    <statement>
+    <p>
         Suppose we have the set of all function <m>f:S \rightarrow \mathbb{R}</m>. We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of <m>S</m> below:
 
 <ul>
@@ -466,11 +465,11 @@ Thus the basis for a subspace is not unique in general.
 <li> <m>S = \{1,2,\ldots ,n\}</m></li>
 <li> <m>S = \mathbb{R}</m></li>
 </ul>
-        </statement></exploration>
+        </p></exploration>
     <exploration>
-    <statement>
+    <p>
         Suppose you have the vector space <m>V = \left\{\left(\begin{array}{c}x\\y\\z\end{array}\right)\in \mathbb{R}^3: x + y + z =  1\right\}</m> with the operations <m>\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) \oplus \left(\begin{array}{c}x_2\\y_2\\z_2\end{array}\right) = \left(\begin{array}{c}x_1 + x_2 - 1\\y_1 + y_2\\z_1+z_2\end{array}\right) \mbox{ and } \alpha\odot\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) = \left(\begin{array}{c}\alpha x_1 - \alpha +1\\\alpha y_1\\\alpha z_1\end{array}\right).</m> Find a basis for <m>V</m> and determine it's dimension.
-        </statement></exploration>
+        </p></exploration>
     </subsection>
     
     <subsection>
