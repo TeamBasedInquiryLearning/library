@@ -29,6 +29,8 @@
                     description="Plot"/>
             </p>
         </intro>
+        <!-- {{#tasks2}} -->
+        <!-- {{#findy}} -->
         <knowl>
             <content>
                 <p>Find <m>{{gname}}({{xvalue}})</m>.
@@ -38,17 +40,20 @@
                 <p><m>{{gname}}({{xvalue}})={{gx}}</m></p>
             </outtro>
         </knowl>
+        <!-- {{/findy}}-->
+        <!-- {{#findx}}-->
         <knowl>
             <content>
-                <p>For which <m>x</m>-values in the interval <m>{{interval}}</m> does <m>{{gname}}(x)={{result}}</m>?
+                <p>For which <m>x</m>-value(s) in the interval <m>{{interval}}</m> does <m>{{gname}}(x)={{result}}</m>?
                 </p>
             </content>
             <outtro>
-                <!--{{#values}}-->
-                <p><m>{{gname}}({{x}})={{result}}</m></p>
-                <!--{{/values}}-->
+                <p><m>{{gname}}(x)={{result}}</m> when <m>{{values}}</m>
+                </p>
             </outtro>
         </knowl>
+        <!-- {{/findx}}-->
+        <!-- {{/tasks2}}-->
     </knowl>
       
     
