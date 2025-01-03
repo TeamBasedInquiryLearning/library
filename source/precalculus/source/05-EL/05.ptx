@@ -14,13 +14,99 @@
 <introduction>
   In this section, we will explore the properties of logarithms and learn how to manipulate them that will be helpful when we are ready to solve logarithmic equations.
   </introduction>
+
+  <remark>
+     <p> Recall from <xref ref="remark-log-exp-form"/> that we can convert between exponential and logarithmic forms. <me>\log_bx=y</me> is equivalent to <me>b^y=x</me>.</p>
+    </remark>
+
+    <activity xml:id="intro-to-one-to-one-property">
+    <introduction>
+      <p>
+        Suppose you are given two equations
+        <m>\log_bM=x</m> and <m>\log_bN=x</m>.
+      </p>
+    </introduction>
+    
+    <task>
+      <statement>
+        <p>
+          Rewrite each logarithmic equation into an exponential equation.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_bM=x \iff b^{x}=M </m>
+        </p>
+        <p>
+          <m>\log_bN=x \iff b^{x}=N </m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Look at the exponential equations you found in part (a). What conclusion can you make about <m>M</m> and <m>N</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Because <m>b^{x}=M</m> and <m>b^{x}=N</m>, then it follows that <m>M=N</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given that both <m>\log_bM</m> and <m>\log_bN</m> are both equal to <m>x</m>, what can you say about <m>\log_bM</m> and <m>\log_bN</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_bM=\log_bN</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          If given <m>\log_bM=\log_bN</m>, what can you say about <m>M</m> and <m>N</m>? (Refer back to the previous parts of this activity.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Based on what we have seen in parts (b) and (c), we can conclude that <m>M=N</m>.
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <fact xml:id="def-one-to-one-property">
+      <statement>
+        <p>
+         For any values <m>S>0</m> and <m>T>0</m>,  and where <m>b>0</m> and <m>b\neq 1</m>, 
+         
+         
+            <me>\log_bM=\log_bN</me> if and only if <me>M=N.</me>
+          </p>
+         
+        <p> This is called the <term>one-to-one property of logarithms</term>.</p>
+      </statement>
+    </fact>
+
+    <observation>
+      <p>
+        Notice this fact will eventually help us solve logarithmic equations. If we have an equation where each side is expressed as a single logarithm with matching bases (such as <m>\log_b M = \log_bN</m>), then it follows that the arguments (<m>M</m> and <m>N</m>) are also equal to each other.
+      </p>
+    </observation>
    
   <remark>
-  <p>
-    Recall that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. In addition, because exponentials and logarithms are inverses, we also know that <m>\log_b(b^{k})=k</m>.
-    In addition, according to the law of exponents, we know that: <me>x^a \cdot x^b=x^{a+b}</me>
+ <p>   Recall that exponential functions and logarithmic functions are inverses. We know that <m>\log_b(b^{k})=k</m> and according to the law of exponents, we know that: 
+ <me>x^a \cdot x^b=x^{a+b}</me>
       <me>\dfrac{x^a}{x^b}=x^{a-b}</me>
-      <me>\left(x^a\right)^b=x^{a \cdot b}</me> 
+      <me>\left(x^a\right)^b=x^{a \cdot b}</me>
       
       Consider all these as you move through the activities in this section.
     </p>
@@ -53,7 +139,7 @@
     <task>
       <statement>
         <p>
-          Recall from <xref ref="EL3"/> that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. Use this property to apply the logarithm to both sides of the rewritten equation from part a. What is that equation?
+          Recall from <xref ref="def-one-to-one-property"/> that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. Use this property to apply the logarithm to both sides of the rewritten equation from part (a). What is that equation?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a+b)=\log_{10}\left(10^{x+y}\right)</m></li>
             <li><m>\log_{10}(a \cdot b)=\log_{10}\left(10^{x+y}\right)</m></li>
@@ -91,7 +177,7 @@
     <task>
       <statement>
         <p>
-          Recall in part a, we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
+          Recall in part (a), we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
           <ol marker= "A." cols="2">
             <li><m>\log_{10}a=x</m></li>
             <li><m>\log_{x}a=10</m></li>
@@ -109,7 +195,7 @@
     <task>
       <statement>
         <p>
-          Using your solutions in part d, how can we rewrite the right side of the equation?
+          Using your solutions in part (d), how can we rewrite the right side of the equation?
           <ol marker= "A." cols="1">
             <li><m>10^{a+b}</m></li>
             <li><m>\log_{10}a-\log_{10}b</m></li>
@@ -125,7 +211,7 @@
     </task>
     <task>
       <statement>
-        <p> Combining parts a and d, which equation represents <m>10^x \cdot 10^y=10^{x+y}</m> in terms of logarithms?
+        <p> Combining parts (a) and (d), which equation represents <m>10^x \cdot 10^y=10^{x+y}</m> in terms of logarithms?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a+b)=10^{a+b}</m></li>
             <li><m>\log_{10}(a \cdot b)=\log_{10}a-\log_{10}b</m></li>
@@ -168,7 +254,7 @@
     <task>
       <statement>
         <p>
-          Recall from <xref ref="EL3"/> that <m>\log_b M=\log_b N</m> if and only if <m>M=N</m>. Use this property to apply the logarithm to both sides of the rewritten equation from part a. What is that equation?
+          Use the one-to-one property of logarithms to apply the logarithm to both sides of the rewritten equation from part (a). What is that equation?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a-b)=\log_{10}\left(10^{x-y}\right)</m></li>
             <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}\left(10^{x-y}\right)</m></li>
@@ -206,7 +292,7 @@
     <task>
       <statement>
         <p>
-          Recall in part a, we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
+          Recall in part (a), we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
           <ol marker= "A." cols="2">
             <li><m>\log_{10}a=x</m></li>
             <li><m>\log_{x}a=10</m></li>
@@ -224,7 +310,7 @@
     <task>
       <statement>
         <p>
-          Using your solutions in part d, how can we rewrite the right side of the equation?
+          Using your solutions in part (d), how can we rewrite the right side of the equation?
           <ol marker= "A." cols="1">
             <li><m>10^{a+b}</m></li>
             <li><m>\log_{10}a-\log_{10}b</m></li>
@@ -240,7 +326,7 @@
     </task>
     <task>
       <statement>
-        <p> Combining parts a and d, which equation represents <m>\dfrac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
+        <p> Combining parts (a) and (d), which equation represents <m>\dfrac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a-b)=10^{a+b}</m></li>
             <li><m>\log_{10}(a-b)=\log_{10}a-\log_{10}b</m></li>
