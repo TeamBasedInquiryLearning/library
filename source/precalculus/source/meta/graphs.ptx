@@ -70,7 +70,8 @@
                 <figure xml:id="graph-x-minus-four">
                     <caption>Graph of <m>y=\dfrac{1}{x^4}</m></caption>
                     <image><sageplot>
-                        p=plot(1/x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p=plot(1/x^4,xmin=-5,xmax=-0.1,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
+                        p+=plot(1/x^4,xmin=0.1,xmax=5,ymin=-5,ymax=5,thickness=3)
                         p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
                         p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
                         p
