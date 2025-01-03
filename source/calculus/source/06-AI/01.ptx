@@ -219,25 +219,16 @@ For example, the following calculuation confirms the previous activity:
                 <caption>Plot of <m>f(x)</m>.</caption>
                     <image xml:id="piecewiseaverage" width="100%">
                         <description>A plot of f(x).</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-1.5,-1.5) grid (8.5,4.5);
-                              %axes
-                              \draw[very thick,->] (-1,0) -- (8,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-1) -- (0,4) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1,2,3,4,5,6, 7, 8}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {1,2,3,4}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] (0,1) -- (3,1);
-                               \draw[blue] (3,4) -- (6,4);
-                               \draw[blue] (6,2) -- (8,2);
-                               \draw[blue] (8,2)--node[right]{\tiny$y=f(x)$} (8,2);
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f= 1
+                            g = 4
+                            h = 2
+                            pf = plot(f,(x,0,3),thickness=2, axes_labels=('$x$','$f(x)$'))
+                            pg = plot(g,(x,3,6),thickness=2, axes_labels=('$x$','$f(x)$'))
+                            ph = plot(h,(x,6,8),thickness=2, axes_labels=('$x$','$f(x)$'))
+                            pf + pg + ph
+                        </sageplot>
                     </image>
             </figure>
                 </p>
