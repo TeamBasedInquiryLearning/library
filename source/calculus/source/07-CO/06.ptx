@@ -30,66 +30,45 @@
                 <caption>Finding the polar area differential</caption>
                     <image xml:id="polarAreaDifferential" width="100%">
                         <description>Illustration of polar area differential.</description>
-                        <latex-image>
-                          \begin{tikzpicture}[>=latex]
-
-% Draw the lines at multiples of pi/12
-\foreach \ang in {0,...,31} {
-  \draw [lightgray] (0,0) -- (\ang * 180 / 16:4);
-}
-
-% Concentric circles and radius labels
-\foreach \s in {0, 1, 2, 3} {
-  \draw [lightgray] (0,0) circle (\s + 0.5);
-  \draw (0,0) circle (\s);
-  \node [fill=white] at (\s, 0) [below] {\scriptsize $\s$};
-}
-
-% Add the labels at multiples of pi/4
-\foreach \ang/\lab/\dir in {
-  0/0/right,
-  1/{\pi/4}/{above right},
-  2/{\pi/2}/above,
-  3/{3\pi/4}/{above left},
-  4/{\pi}/left,
-  5/{5\pi/4}/{below left},
-  7/{7\pi/4}/{below right},
-  6/{3\pi/2}/below} {
-  \draw (0,0) -- (\ang * 180 / 4:4.1);
-  \node [fill=white] at (\ang * 180 / 4:4.2) [\dir] {\scriptsize $\lab$};
-}
-
-% The double-lined circle around the whole diagram
-\draw [style=double] (0,0) circle (4);
-
-\draw [fill=red!50!black, opacity=0.4] ({cos(30)},{sin(30)})--plot [domain=pi/6:pi/3]
-  (xy polar cs:angle=\x r, radius= {2+2*cos(\x r)})--plot [domain=pi/3:pi/6]
-  (xy polar cs:angle=\x r, radius= {1})--({cos(30)},{sin(30)});
-\draw [thick, color=red, domain=0:2*pi, samples=200, smooth]
-  plot (xy polar cs:angle=\x r, radius={2+2*cos(\x r)});
-\draw [thick, color=blue, domain=0:2*pi, samples=200, smooth]
-  plot (xy polar cs:angle=\x r, radius={1});  
-  
-\draw [fill=blue!50!black, opacity=0.4] ({cos(30)},{sin(30)})--plot [domain=pi/6:4*pi/18]
-  (xy polar cs:angle=\x r, radius= {2+2*cos(pi/6 r)})--plot [domain=4*pi/18:pi/6]
-  (xy polar cs:angle=\x r, radius= {1})--({cos(30)},{sin(30)});
-  
-\draw [fill=blue!50!black, opacity=0.4] ({cos(40)},{sin(40)})--plot [domain=4*pi/18:5*pi/18]
-  (xy polar cs:angle=\x r, radius= {2+2*cos(4*pi/18 r)})--plot [domain=5*pi/18:4*pi/18]
-  (xy polar cs:angle=\x r, radius= {1})--({cos(40)},{sin(40)});
-
-\draw [fill=blue!50!black, opacity=0.4] ({cos(50)},{sin(50)})--plot [domain=5*pi/18:6*pi/18]
-  (xy polar cs:angle=\x r, radius= {2+2*cos(5*pi/18 r)})--plot [domain=6*pi/18:5*pi/18]
-  (xy polar cs:angle=\x r, radius= {1})--({cos(50)},{sin(50)});  
-%\node [fill=white] at (2,1) {$r=1+\cos\theta$};
-
-\draw[purple, dashed] (0,0)--({cos(30)*(2+2*cos(30))}, {sin(30)*(2+2*cos(30))});
-\draw[purple, dashed] (0,0)--({cos(40)*(2+2*cos(30))}, {sin(40)*(2+2*cos(30))});
-\draw[purple, dashed] (0,0)--({cos(50)*(2+2*cos(40))}, {sin(50)*(2+2*cos(40))});
-\draw[purple, dashed] (0,0)--({cos(60)*(2+2*cos(50))}, {sin(60)*(2+2*cos(50))});
-
-\end{tikzpicture} 
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        f(x) = 2 + 2*cos(x)
+                        g(x) = 1
+                        plt = Graphics()
+                        circ_range = [1,..,5]
+                        for i in circ_range:
+                            plt += polar_plot(i,(x,0,2*pi), axes=False, thickness=1.5,figsize=10,color='black')
+                            bbox = {'boxstyle': 'square,pad=0.05','fc':"white", 'ec':"white"}
+                            lbl = text(i,(i,-.25),color='black',background_color='white',bounding_box = bbox,fontsize=13)
+                            plt += lbl
+                        for angle in [0,1,..,23]:
+                            plt += line(([(0,0),(5*cos(angle*pi/12),5*sin(angle*pi/12))]),color='black',thickness=0.5)
+                            actual_angle = angle*pi/12
+                            if denominator(actual_angle) != 1:
+                                plt += text(f"$\\dfrac{{{latex(numerator(actual_angle))}}}{{{denominator(actual_angle)}}}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+                            else:
+                                plt += text(f"${latex(angle*pi/12)}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
+                        xaxis = arrow((0,0),(5.25,0),arrowsize=0.5,color='black')
+                        def polar_rectangle(start,end):
+                            radius = f(start)
+                            a = arc((0,0),radius,sector=(start,end),thickness=2)
+                            a_side1 = line(([(0,0),(radius*cos(start),radius*sin(start))]),thickness=2,linestyle='dashed',color='darkblue')
+                            a_side2 = line(([(0,0),(radius*cos(end),radius*sin(end))]),thickness=2,linestyle='dashed',color='darkblue')
+                            pp = polar_plot(f,(x,start,end),fill=g,fillcolor='cyan')
+                            d = polar_plot(radius,(x,start,end),fill=g,fillcolor='grey',fillalpha=0.5)
+                            p = a + a_side1 + a_side2 + pp + d
+                            return p
+                        rec1 = polar_rectangle(pi/12,pi/6)
+                        rec2 = polar_rectangle(pi/6,pi/4)
+                        rec3 = polar_rectangle(pi/4,pi/3)
+                        plt += polar_plot(f(x),(x,0,2*pi),color = 'red',thickness=2)
+                        plt += polar_plot(g(x),(x,0,2*pi),color = 'blue',thickness=2)
+                        plt += rec1
+                        plt += rec2
+                        plt += rec3
+                        plt += xaxis
+                        plt
+                        </sageplot>
                     </image>
             </figure>
         
@@ -304,7 +283,7 @@ approximation <m>\sqrt 2\approx 0.707</m> to approximate coordinates as needed.)
             </p>
         </introduction>
         <task>
-            <p>Complete the folowing table.</p>
+            <p>Complete the following table.</p>
             <table>
                 <title>Chart of approximate <m>x</m> and <m>y</m> values</title>
                 <tabular>

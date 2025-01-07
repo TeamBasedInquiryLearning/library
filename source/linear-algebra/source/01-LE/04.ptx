@@ -26,7 +26,6 @@
         <p>
 Consider this simplified linear system found to be equivalent to the system
 from <xref ref="LE3-inf"/>:
-        </p>
     <md alignat-columns='3' alignment="alignat">
         <mrow>
         x_1 &amp;+ 2x_2 &amp; &amp;= 4
@@ -35,7 +34,6 @@ from <xref ref="LE3-inf"/>:
               &amp; &amp;\phantom{+}x_3 &amp;= -1
         </mrow>
     </md>
-        <p>
 Earlier, we determined this system has infinitely-many solutions.
         </p>
     </introduction>
@@ -88,20 +86,12 @@ Recall that the pivots of a matrix in <m>\RREF</m> form are the leading
 The pivot columns in an augmented matrix correspond to the
 <term>bound variables</term><idx>bound variables</idx> in the system of equations (<m>x_1,x_3</m> below).
 The remaining variables are called <term>free variables</term><idx>free variables</idx> (<m>x_2</m> below).
-        </p>
-<!-- <me>
-  \begin{array}{cccc}
-    x_1 &amp; x_2 &amp; x_3 &amp; \phantom{-1} \\
-    \downarrow &amp; \downarrow &amp; \downarrow &amp;
-  \end{array}
-</me> -->
 <me>
   \left[\begin{array}{ccc|c}
     \markedPivot{1} &amp; 2 &amp; 0 &amp; 4 \\
     0 &amp; 0 &amp; \markedPivot{1} &amp; -1
   \end{array}\right]
 </me>
-        <p>
 To efficiently solve a system in RREF form, assign letters to the free
 variables, and then solve for the bound variables.
         </p>
@@ -134,7 +124,7 @@ Row-reduce its augmented matrix.
     <task>
         <p>
 Assign letters to the free variables (given by the non-pivot columns):
-<p><me>\unknown = a</me> <me>\unknown = b</me></p>
+<me>\unknown = a</me> <me>\unknown = b</me>
         </p>
     </task>
     <task>
@@ -192,13 +182,11 @@ in the following set-builder notation.
 
 
 <remark>
-    <statement>
     <p>
 Don't forget to correctly express the solution set of a linear system.
 Systems with zero or one solutions may be written by listing their elements,
         while systems with infinitely-many solutions may be written using
         set-builder notation.
-    </p>
   <ul>
 <li><p> <em>Inconsistent</em>: <m>\emptyset</m> or <m>\{\}</m> 
   <ul><li>(not <m>0</m> or 
@@ -231,7 +219,7 @@ Systems with zero or one solutions may be written by listing their elements,
     </p>
   </li>
   </ul>
-    </statement>
+    </p>
 </remark>
 
 <activity estimated-time="15">
@@ -275,7 +263,7 @@ Explain how to describe this solution set using set notation.
     </task>
     
 </activity>
-    <activity checkit-seed="0019" checkit-slug="LE4" checkit-title="Linear Systems with Infinitely-Many Solutions" estimated-time="10">
+    <activity estimated-time="10">
   <introduction>
     <p>
 Consider the following
@@ -301,30 +289,6 @@ that has the same solution set.
 Explain how to describe this solution set using set notation.
         </p>
       </task>
-    
-  
-
-<!--  <answer>
-    <p>
-      <me>\mathrm{RREF}\left[\begin{array}{ccc|c}
-1 &amp; 0 &amp; -2 &amp; -3 \\
-5 &amp; 1 &amp; -7 &amp; -18 \\
-5 &amp; -1 &amp; -13 &amp; -12 \\
-1 &amp; 3 &amp; 7 &amp; -12
-\end{array}\right]=\left[\begin{array}{ccc|c}
-1 &amp; 0 &amp; -2 &amp; -3 \\
-0 &amp; 1 &amp; 3 &amp; -3 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right]</me>
-      The solution set is <m> \left\{ \left[\begin{array}{c}
-2 \, a - 3 \\
--3 \, a - 3 \\
-a
-\end{array}\right] \,\middle|\, a \in\mathbb R \right\} </m>.
-    </p>
-  </answer>-->
-        
 </activity>
     </subsection>
 
@@ -422,18 +386,17 @@ a
     <subsection>
         <title>Videos</title>
     <figure>
-		<video xml:id="video-LE4" youtube="_ievdPswLoE">
-			<!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-		</video>
         <caption>Video: Solving a system of linear equations with infinitely-many solutions</caption>
+		    <video xml:id="video-LE4" youtube="_ievdPswLoE"/>
     </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/LE4/"/>.</p>
-    </exercises>
+    </subsection>
     
     <subsection>
         <title>Mathematical Writing Explorations</title>
