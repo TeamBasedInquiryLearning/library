@@ -547,14 +547,9 @@ as a linear combination of polynomials from the set
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <p>
-                    Given a matrix <m>M</m>
-<ul>
-<li>the span of the set of all columns is the <term>column space</term><idx>column space</idx></li>
-
-<li>the span of the set of all rows is the <term>row space</term><idx>row space</idx></li>
-<li>the <term>rank</term><idx>rank</idx> of a matrix is the dimension of the column space.</li>
-</ul>
+                <statement>
+              <p>
+                    Given a matrix <m>M</m> the <term>rank</term><idx>rank</idx> of a matrix is the dimension of the column space.
 
 
     
@@ -567,6 +562,7 @@ Calculate the rank of these matrices.
 </ul>
                 
         </p>
+              </statement>
     </exploration>
     <exploration>
         <p>
