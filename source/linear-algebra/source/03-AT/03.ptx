@@ -84,6 +84,7 @@ the set of all vectors that transform into <m>\vec 0</m>?
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{z}</m> be the additive
 identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx> of <m>T</m>
+(also known as the <term>null space</term><idx>null space</idx> of <m>T</m>)
 is an important subspace of <m>V</m> defined by
 <me>
 \ker T = \left\{ \vec{v} \in V\ \big|\ T(\vec{v})=\vec{z}\right\}
@@ -243,7 +244,8 @@ Which of these subspaces of <m>\IR^3</m> describes the set of all vectors that a
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation.
-The <term>image</term> of <m>T</m> is an important subspace of <m>W</m> defined by
+The <term>image</term><idx>image</idx> of <m>T</m>
+is an important subspace of <m>W</m> defined by
 <me>
 \Im T = \left\{ \vec{w} \in W\ \big|\ \text{there is some }\vec v\in V \text{ with } T(\vec{v})=\vec{w}\right\}
 </me>
@@ -447,6 +449,11 @@ and only using the vectors corresponding to pivot columns:
   }
 </me>
         </p>
+        <p>
+          Note that, if the transformation <m>T</m> is represented by the matrix <m>A</m>,
+ then the image of <m>T</m> is the <term>column space</term><idx>column space</idx> of <m>A</m>.
+        </p>
+
 </observation>
 
 <fact>
