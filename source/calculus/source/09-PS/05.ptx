@@ -107,17 +107,17 @@
                     </li>
                     <li>
                         <p>
-                            It will be greater than both <m>R_3(4)</m> and <m>R_4(4)</m>.
+                            It will be greater than both <m>R_2(4)</m> and <m>R_3(4)</m>.
                         </p>
                     </li>
                     <li>
                         <p>
-                            It will be between <m>R_3(4)</m> and <m>R_4(4)</m>.
+                            It will be between <m>R_2(4)</m> and <m>R_3(4)</m>.
                         </p>
                     </li>
                     <li>
                         <p>
-                            It will be less than both <m>R_3(4)</m> and <m>R_4(4)</m>.
+                            It will be less than both <m>R_2(4)</m> and <m>R_3(4)</m>.
                         </p>
                     </li>
                 </ol>
@@ -146,16 +146,16 @@
         
         <statement>
             <p>
-                Let <m>f(x)</m> be an <m>(k+1)</m> times differentiable function on an interval <m>I</m> of <m>a</m>, and let <m>T_k(x)</m>
-                be its <m>k</m>th degree Taylor polynomial centered at <m>x=a</m>. Then for any <m>x</m> in the interval <m>I</m>, 
-                there exists <m>c</m> between <m>a</m> and <m>x</m> such that
+                Let <m>f(x)</m> be an <m>(k+1)</m> times differentiable function on an interval <m>I</m> of <m>c</m>, and let <m>T_k(x)</m>
+                be its <m>k</m>th degree Taylor polynomial centered at <m>x=c</m>. Then for any <m>x</m> in the interval <m>I</m>, 
+                there exists <m>p</m> between <m>c</m> and <m>x</m> such that
                 <me>
-                    R_k(x)=\dfrac{f^{(k+1)}(c)}{(k+1)!}(x-a)^{k+1}.
+                    R_k(x)=\dfrac{f^{(k+1)}(p)}{(k+1)!}(x-c)^{k+1}.
                 </me>
                 If there exists <m>M_k</m> such that <m>|f^{(k+1)}(x)|\leq M_k</m> for all <m>x</m> in <m>I</m>, then the error in 
                 the approximation <m>f(x)\approx T_k(x)</m> has an upper bound:
                 <me>
-                    |R_k(x)|\leq \dfrac{M_k}{(k+1)!}|x-a|^{k+1}.
+                    |R_k(x)|\leq \dfrac{M_k}{(k+1)!}|x-c|^{k+1}.
                 </me>               
                 
             </p>
@@ -196,7 +196,7 @@
                 <ol marker="A.">
                     <li>
                         <p>
-                            <m>|f'(x)|</m> and <m>|f'''(x)|</m> are increasing, while <m>|f''(x)|</m> and <m>|f''''(x)|</m> are decreasing.
+                            <m>|f'(x)|</m> and <m>|f'''(x)|</m> are increasing, while <m>|f''(x)|</m> and <m>|f^{(4)}(x)|</m> are decreasing.
                         </p>
                     </li>
                     <li>
@@ -211,7 +211,7 @@
                     </li>
                      <li>
                         <p>
-                            <m>|f'(x)|</m> and <m>|f'''(x)|</m> are decreasing, while <m>|f''(x)|</m> and <m>|f''''(x)|</m> are decreasing.
+                            <m>|f'(x)|</m> and <m>|f'''(x)|</m> are decreasing, while <m>|f''(x)|</m> and <m>|f^{(4)}(x)|</m> are decreasing.
                         </p>
                     </li>
                 </ol>
