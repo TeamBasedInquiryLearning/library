@@ -313,46 +313,47 @@
 
 <subsection>
     <title>Sample Problem</title>
-        <introduction>
-            <p>
-                Here you are tasked with approximating the value of <m>\cos(1)</m>.
-            </p>
-        </introduction>
-            <task>
-                <statement>
-                    <p>
-                Calculate the 4th degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
-                then use it to approximate the value of <m>\cos(1)</m> to three decimal places.    
-                    </p>
-                </statement>
-            </task>
+        <example>
+            <introduction>
+                <p>
+                    Here you are tasked with approximating the value of <m>\cos(1)</m>.
+                </p>
+            </introduction>
+                <task>
+                    <statement>
+                        <p>
+                    Calculate the 4th degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
+                    then use it to approximate the value of <m>\cos(1)</m> to three decimal places.    
+                        </p>
+                    </statement>
+                </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Apply Taylor's Theorem to find an upper bound for the error in this approximation. 
-                    </p>
-                </statement>
-            </task>
+                <task>
+                    <statement>
+                        <p>
+                            Apply Taylor's Theorem to find an upper bound for the error in this approximation. 
+                        </p>
+                    </statement>
+                </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Use technology to calculate <m>|R_4(1)|</m>. Is the error within the upper bound found
-                        in part (b)? 
-                    </p>
-                </statement>
-            </task>
+                <task>
+                    <statement>
+                        <p>
+                            Use technology to calculate <m>|R_4(1)|</m>. Is the error within the upper bound found
+                            in part (b)? 
+                        </p>
+                    </statement>
+                </task>
 
-            <task>
-                <statement>
-                    <p>
-                       Explain whether the approximation error <m>|R_{k}(1)|</m> increases or decreases as 
-                       <m>k\rightarrow\infty</m>.
-                    </p>
-                </statement>
-            </task>
-
+                <task>
+                    <statement>
+                        <p>
+                        Explain whether the approximation error <m>|R_{k}(1)|</m> increases or decreases as 
+                        <m>k\rightarrow\infty</m>.
+                        </p>
+                    </statement>
+                </task>
+        </example>
             
 </subsection>
 
