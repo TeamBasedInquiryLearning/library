@@ -181,7 +181,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                     x=var('x')
                     f = sin(x)
                     ticks = [pi/6, sorted({sin(a) for a in [-4*pi/6,-3*pi/6 .. 4*pi/6]})]
-                    p = plot(f, (x,-pi/2,pi/2), ticks = ticks, tick_formatter=[pi,None], thickness=2, axes_labels=('$x$','$y=\sin(x)$'),gridlines=False, aspect_ratio=1.5)
+                    p = plot(f, (x,-pi/2,pi/2), ticks = ticks, tick_formatter=[pi,None], thickness=2, axes_labels=('$x$',r'$y=\sin(x)$'),gridlines=False, aspect_ratio=1.5)
                     p
                 </sageplot>
             </image>
