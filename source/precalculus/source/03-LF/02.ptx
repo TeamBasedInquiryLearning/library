@@ -513,10 +513,10 @@
     </introduction>
     <task>
       <statement>
-        <p>
+        <p>The line whose graph is given below.
           <image>
             <sageplot>
-              p=plot(3/4*x+2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-6,ymax=6, color='blue', gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p=plot(3/4*x+2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-6,ymax=6, color='blue', gridlines=[[-6..6],[-6..6]],aspect_ratio=1)
               p+=point((-4,-1),pointsize=50,color='blue')
               p+=point((4,5),pointsize=50,color='blue')
               p
@@ -534,7 +534,7 @@
     <task>
       <statement>
         <p>
-          The slope is <m>-\dfrac{1}{2}</m> and <m>(1,-3)</m> is a point on the line.
+          The line whose slope is <m>-\dfrac{1}{2}</m> and passes through the point <m>(1,-3)</m>.
         </p>
   </statement>
   <answer>
@@ -547,7 +547,7 @@
     <task>
       <statement>
         <p>
-          Two points on the line are <m> (0,3)</m> and <m>(2,0)</m>.
+          The line that passes through the points <m> (0,3)</m> and <m>(2,0)</m>.
         </p>
   </statement>
   <answer>
