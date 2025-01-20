@@ -45,7 +45,7 @@
     </remark>
 
     <activity>
-        <introduction>
+        <task>
             <p>
                 In <xref ref="EV3"/>, we observed that if
                 <me>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</me>
@@ -68,7 +68,8 @@
                     </li>
                 </ul>
             </p>
-        </introduction>
+            </task>
+            <task>
             <p>
                 Based on this recollection, which of the following best describes the solution set to the homogeneous equation?
                 <ol marker="A.">
@@ -94,6 +95,7 @@
                       </li>
                     </ol>
             </p>
+        </task>
     </activity>
 </subsection>
 
@@ -417,23 +419,22 @@ Solve this system to describe these locations.
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-EV7" youtube="TbN3lvLaNOw">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Polynomial and matrix calculations</caption>
+            <video xml:id="video-EV7" youtube="TbN3lvLaNOw"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration xml:id="non-singular">
-                <statement><p> An <m>n \times n</m> matrix <m>M</m> is <term>non-singular</term><idx>non-singular</idx> if the associated homogeneous system with coefficient matrix <m>M</m> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.
-                    </p>         
+               <p> An <m>n \times n</m> matrix <m>M</m> is <term>non-singular</term><idx>non-singular</idx> if the associated homogeneous system with coefficient matrix <m>M</m> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.
+                     
 <ul>
 <li>Prove that the reduced row echelon form of <m>M</m> is the identity matrix.
 </li>
@@ -448,7 +449,7 @@ Prove that, for any column vector <m>\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ 
 <li>
     Prove that the rank of <m>M</m> is <m>n</m>.</li>
 </ul>  
-                </statement>
+                </p>
     </exploration>
     </subsection>
     <subsection>

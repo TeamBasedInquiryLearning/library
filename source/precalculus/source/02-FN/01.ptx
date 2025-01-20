@@ -414,7 +414,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice that when trying to determine if a relation is a function, we often have to rely on looking at the domain and range values. Thus, it is important to be able to idenfity the domain and range of any relation!
+    </p>
     </remark>
 
     <activity xml:id="FN1-determine-domain-and-range">
@@ -500,7 +502,9 @@
 
     <activity xml:id="FN1-determine-function-from-graph">
     <introduction>
+      <p>
       Determine whether each of the following relations is a function.
+      </p>
     </introduction>
 <task>
   <statement>
@@ -562,7 +566,9 @@
     </activity>
 
     <remark>
+    <p>
       You probably noticed (in <xref ref="FN1-determine-function-from-graph"/>) that when the graph has points that "line up" or are on top of each other, they have the same <m>x</m>-values. When this occurs, this shows that the same <m>x</m>-value has two different outputs (<m>y</m>-values) and that the relation is not a function.
+    </p>
     </remark>
     
     <definition xml:id="def-vertical-line-test">
@@ -671,7 +677,9 @@
     </p>
   </statement>
     <answer>
+      <p>
      If <m>x=4</m>, <m>y</m> could be <m>-2</m> or <m>2</m>. Given that there are two outputs for a given <m>x</m>, then <m>x=y^2</m> is not a function.
+     </p>
     </answer>
   </task>
   
@@ -692,7 +700,9 @@
   </p>
   </statement>
   <answer>
+    <p>
     If <m>x=4</m>, <m>y=50</m>. For every input (<m>x</m>-value), there is exactly one output (<m>y</m>-value) so <m>y=3x^2+2</m> is a function.
+    </p>
   </answer>
 </task>
 
@@ -713,7 +723,9 @@
   </p>
 </statement>
   <answer>
+    <p>
     If <m>x=4</m>, <m>y</m> could be <m>-3</m> or <m>3</m>. Given that there are two outputs for a given <m>x</m>, then <m>x^2+y^2=25</m> is not a function.
+    </p>
   </answer>
 </task>
 
@@ -734,7 +746,9 @@
   </p>
 </statement>
   <answer>
+    <p>
     If <m>x=4</m>, <m>y=-19</m>. For every input (<m>x</m>-value), there is exactly one output (<m>y</m>-value) so <m>y=-4x-3</m> is a function.
+    </p>
   </answer>
 </task>
 <task>
@@ -744,13 +758,17 @@
     </p>
   </statement>
     <answer>
+      <p>
       Students may have different answers. Ideally, you want students to see that they can check whether a given relation is a function in more than one way. They can test values (as this activity did by leading them to plug in values) or by using the vertical line test on a graph.
+      </p>
     </answer>
 </task>
 </activity>
 
 <remark xml:id="FN01-remark-square-nonfunction">
+<p>
   Notice that <xref ref="FN1-determine-if-function-from-equation"/> shows that equations with a <m>y^2</m> term generally do not define functions. This is because to solve for a squared variable, you must consider both positive and negative inputs. For example, both <m>2^2=4</m> and <m>(-2)^2=4</m>.
+</p>
 </remark>
 
 <activity xml:id="FN1-determine-domain-from-equation-square-root">
@@ -928,7 +946,9 @@
 </activity>
 
 <remark>
+<p>
   When determining the domain of an equation, it is often easier to first find values of <m>x</m> that make the function undefined. Once you have those values, then you know that <m>x</m> can be any value but those.
+</p>
 </remark>
     </subsection>
 

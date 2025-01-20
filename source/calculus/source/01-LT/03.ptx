@@ -13,9 +13,7 @@
     <title>Activities</title>
     
     <remark>
-         <statement>
             <p>Recall that in <xref ref="activity-limits-numerically4"/> we used numerical methods and table of values to find the limit of a relatively simple degree three polynomial at a point. This was inefficient, “there’s gotta be a better way!”</p>
-              </statement>
     </remark>
     
     <activity xml:id="activity-limits-analytically1">
@@ -145,7 +143,7 @@
             </ol>
     </activity>
     
-    <remark> <statement><p> In  <xref ref="activity-limits-analytically2"/> we observed that limits seem to be "well-behaved" when combined with standard operations on functions. The next theorems, known as <term>Limit Laws</term>, tell us how limits interact with combinations of functions. </p></statement></remark>
+    <remark><p> In  <xref ref="activity-limits-analytically2"/> we observed that limits seem to be "well-behaved" when combined with standard operations on functions. The next theorems, known as <term>Limit Laws</term>, tell us how limits interact with combinations of functions. </p></remark>
     <theorem xml:id="theorem-limit-laws-1">
         <title>Limit Laws, I</title>
             <statement>
@@ -325,7 +323,7 @@
     </activity>
     
     <remark xml:id="zero-over-zero">
-    <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
+    <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p>
     </remark>
     
 <definition xml:id="def-hole"><statement><p>A function <m>f(x)</m> has a <term>hole</term><idx>hole</idx> at <m>x=c</m> if <m>f(c)</m> does not exist but <m>\displaystyle \lim_{x \to c} f(x)</m> does exist and is equal to a real number. </p></statement></definition>    
@@ -336,17 +334,16 @@
     </p></statement></example>
 
 <activity xml:id="limits-alg-checkit">
-    <statement>
+    <introduction>
         <p>
             Determine the following limits and explain your reasoning.
         </p>
-        
-            <task><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></task>
-            <task><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></task>
-        <task><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></task>
        
-    </statement>
-    </activity>
+    </introduction>
+    <task><statement><p><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></p></statement></task>
+    <task><statement><p><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></p></statement></task>
+    <task><statement><p><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></p></statement></task>
+</activity>
 
 
     

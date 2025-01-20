@@ -9,16 +9,18 @@
                 \left[\begin{array}{c} 7 \\ 8 \\ -15 \\ 28 \end{array}\right] \right\}</me> </p>
         </introduction>
         <task>
+            <statement>
             <p> Write a statement involving the solutions of a vector equation that's equivalent to this claim: 
                 <q>The set of vectors spans <m>\mathbb R^4</m>.</q> </p>
+            </statement>
             <solution>
-                <p> <q>The vector equation <me>
+                <p> The vector equation <me>
                     x_1 \left[\begin{array}{c} -1 \\ 1 \\ 0 \\ 2 \end{array}\right] +
                     x_2 \left[\begin{array}{c} 0 \\ -1 \\ 1 \\ -3 \end{array}\right] +
                     x_3 \left[\begin{array}{c} 2 \\ -2 \\ 1 \\ -2 \end{array}\right] +
                     x_4 \left[\begin{array}{c} -3 \\ -1 \\ 4 \\ -5 \end{array}\right] +
                     x_5 \left[\begin{array}{c} 7 \\ 8 \\ -15 \\ 28 \end{array}\right] = \vec w
-                </me> has at least one solution for every <m>\vec w\in\mathbb R^4</m>.</q> </p>
+                </me> has at least one solution for every <m>\vec w\in\mathbb R^4</m>.</p>
             </solution>
         </task>
         <task>
@@ -51,15 +53,17 @@
                 \left[\begin{array}{c} 12 \\ 3 \\ -9 \\ -24 \end{array}\right] \right\}</me> </p>
         </introduction>
         <task>
+            <statement>
             <p> Write a statement involving the solutions of a vector equation that's equivalent to this claim: 
                 <q>The set of vectors spans <m>\mathbb R^4</m>.</q> </p>
+            </statement>
             <solution>
-                <p> <q>The vector equation <me>
+                <p> The vector equation <me>
                     x_1 \left[\begin{array}{c} 1 \\ 1 \\ -2 \\ 0 \end{array}\right] +
                     x_2 \left[\begin{array}{c} 0 \\ 1 \\ -2 \\ 3 \end{array}\right] +
                     x_3 \left[\begin{array}{c} -4 \\ -2 \\ 5 \\ 5 \end{array}\right] +
                     x_4 \left[\begin{array}{c} 12 \\ 3 \\ -9 \\ -24 \end{array}\right] = \vec w
-                </me> has at least one solution for every <m>\vec w\in\mathbb R^4</m>.</q> </p>
+                </me> has at least one solution for every <m>\vec w\in\mathbb R^4</m>.</p>
             </solution>
         </task>
         <task>
@@ -96,11 +100,11 @@
                     <q>The set of vectors spans <m>\mathbb R^4</m>.</q> </p>
             </statement>
             <solution>
-                <p> <q>The vector equation <me>
+                <p>The vector equation <me>
                     x_1 \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array}\right] +
                     x_2 \left[\begin{array}{c} -5 \\ 1 \\ -5 \\ -2 \end{array}\right] +
                     x_3 \left[\begin{array}{c} 12 \\ -2 \\ 12 \\ 6 \end{array}\right] = \vec w
-                </me> has at least one solution for every <m>\vec w\in\mathbb R^4</m>.</q> </p>
+                </me> has at least one solution for every <m>\vec w\in\mathbb R^4</m>. </p>
             </solution>
         </task>
         <task>

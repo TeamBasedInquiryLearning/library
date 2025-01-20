@@ -15,7 +15,7 @@
         <activity xml:id="activity-SQ6multipleofsequence">
             <introduction>
                 <p>
-                    Let <m>\{a_n\}_{n=1}^\infty</m> be a sequence, with infinite series <m>\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots </m>.  Suppose <m>\{b_n\}_{n=1}^\infty</m> is a sequence where each <m>b_n=3a_n</m>, whith infinite series <m>\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots </m>.
+                    Let <m>\{a_n\}_{n=1}^\infty</m> be a sequence, with infinite series <m>\displaystyle \sum_{n=1}^\infty a_n=a_1+a_2+\cdots </m>.  Suppose <m>\{b_n\}_{n=1}^\infty</m> is a sequence where each <m>b_n=3a_n</m>, with infinite series <m>\displaystyle \sum_{n=1}^\infty b_n=\sum_{n=1}^\infty 3a_n=3a_1+3a_2+\cdots </m>.
                 </p>
             </introduction>
             <task>
@@ -311,48 +311,33 @@
                 <caption>Plots of <m>\{a_n\}, \{b_n\}</m></caption>
                     <image xml:id="comparesequences" width="100%">
                         <description>Plots of sequences <m>\{a_n\}, \{b_n\}</m> where <m>a_n\geq b_n\geq 0</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                          \draw[->] (-1, 0) -- (10.2, 0) node[below right] {$x$};
-                          \draw[->] (0, -1) -- (0, 4.2) node[above] {$y$};
-                          
-                          
-                          \draw[blue] (0,4)\foreach \x in {0,...,9}{
-                          --({\x+1}, {4/(\x+1)})--({\x+1}, {4/(\x+2)})};
-                          \draw (0,0)--(0,4);
-                          \foreach \x in {0,...,9}{
-                          \draw[blue]  ({\x+1}, {4/(\x+2)})--({\x+1}, {0});}
-                          
-                          \draw[blue, fill, opacity=0.2] (0,0)--(0,4)\foreach \x in {0,...,9}{
-                          --({\x+1}, {4/(\x+1)})--({\x+1}, {4/(\x+2)})}
-                          --(10,0)
-                          --cycle;
-
-                          \draw[red] (0,4)\foreach \x in {0,...,9}{
-                          --({\x+1}, {4/(\x+1)^2})--({\x+1}, {4/(\x+2)^2})};
-                          \draw (0,0)--(0,4);
-                          \foreach \x in {0,...,9}{
-                          \draw[red]  ({\x+1}, {4/(\x+2)^2})--({\x+1}, {0});}
-                          
-                          \draw[red, fill, opacity=0.2] (0,0)--(0,4)\foreach \x in {0,...,9}{
-                          --({\x+1}, {4/(\x+1)^2})--({\x+1}, {4/(\x+2)^2})}
-                          --(10,0)
-                          --cycle;
-                          
-                          \draw[blue] (0,4)--node[left]{$a_0$} (0,4);
-                          \draw[red] (1,4)--node[right]{$b_0$} (1,4);
-                          
-                          \draw[blue] (2,4/2)--node[ right]{$a_1$} (2,4/2);
-                          \draw[red] (2,4/2^2)--node[ right]{$b_1$} (2,4/2^2);
-                          
-                          \draw[blue] (3,4/3)--node[ right]{$a_2$} (3,4/3);
-                          \draw[red] (3,4/3^2)--node[right]{$b_2$} (3,4/3^2);
-                          
-                          \draw (10,0)-- node[above right]{$\cdots$} (10,0);
-                          
-                             
-                    \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        plt = Graphics()
+                        f(x) = 4*0.8^(x+1)
+                        g(x) = 4*0.7^(x+1)
+                        for i in [0,..,10]:
+                            plt += polygon(([(i,0),(i,f(i)),(i+1,f(i)),(i+1,0)]),fill='blue',alpha=0.25,edgecolor='black',axes=False)
+                            plt += polygon(([(i,0),(i,g(i)),(i+1,g(i)),(i+1,0)]),color='red',alpha=0.25,edgecolor='black')
+                        a0 = text('$a_0$',(1.25,f(0)),color='blue',fontsize=12)
+                        b0 = text('$b_0$',(1.25,g(0)),color='red',fontsize=12)
+                        a1 = text('$a_1$',(2.25,f(1)),color='blue',fontsize=12)
+                        b1 = text('$b_1$',(2.25,g(1)),color='red',fontsize=12)
+                        a2 = text('$a_2$',(3.25,f(2)),color='blue',fontsize=12)
+                        b2 = text('$b_2$',(3.25,g(2)),color='red',fontsize=12)
+                        plt += a0
+                        plt += b0
+                        plt += a1
+                        plt += b1
+                        plt += a2
+                        plt += b2
+                        plt += text('$\\cdots$',(11.5,.1),color='black',fontsize=15)
+                        plt += arrow((0,0),(12.5,0),arrowsize=0.5,color='black')
+                        plt += text('$x$', (12.75,0), color='black',fontsize=13)
+                        plt += arrow((0,0),(0,4),arrowsize=0.5,color='black')
+                        plt += text('$y$', (0,4.25),color='black',fontsize=13)
+                        plt
+                        </sageplot>
                     </image>
             </figure> 
                 </p>
@@ -430,7 +415,7 @@
         <fact xml:id="fact-SQ6comparesequence">
             <statement>
             <p>
-                Supppose we have sequences <m>\{a_n\}, \{b_n\}</m> so that for some <m>k</m> we have that <m>0\leq b_n\leq a_n</m> for each <m>k\geq n</m>. Then we have the following results:
+                Suppose we have sequences <m>\{a_n\}, \{b_n\}</m> so that for some <m>k</m> we have that <m>0\leq b_n\leq a_n</m> for each <m>k\geq n</m>. Then we have the following results:
                 <ul>
                     <li>If <m>\displaystyle\sum_{k=n}^\infty a_n</m> converges, then so does  <m>\displaystyle\sum_{k=n}^\infty b_n</m>.</li>
                     <li>If <m>\displaystyle\sum_{k=n}^\infty b_n</m> diverges, then so does  <m>\displaystyle\sum_{k=n}^\infty a_n</m>.</li>
@@ -449,67 +434,26 @@
                 <caption>Plots of <m>\{a_n\}, \{b_n\}</m></caption>
                     <image xml:id="comparepartialsequences" width="100%">
                         <description>Plots of sequences <m>\{a_n\}, \{b_n\}</m> where <m>a_n\geq b_n\geq 0</m> initially but eventually <m>a_n\leq b_n\geq 0</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                          \draw[->] (-1, 0) -- (10.2, 0) node[below right] {$x$};
-                          \draw[->] (0, -1) -- (0, 4.2) node[above] {$y$};
-                          
-                          
-                          \draw[blue] (0,4)\foreach \x in {0,...,4}{
-                          --({\x+1}, {4*(0.8^(\x))})--({\x+1}, {4*0.8^(\x+1)})};
-                          \draw (0,0)--(0,4);
-                          \foreach \x in {0,...,4}{
-                          \draw[blue]  ({\x+1}, {4*0.8^(\x+1)})--({\x+1}, {0});}
-                          
-                          \draw[blue, fill, opacity=0.2] (0,0)--(0,4)\foreach \x in {0,...,4}{
-                          --({\x+1}, {4*0.8^(\x)})--({\x+1}, {4*0.8^(\x+1)})}
-                          --(5,0)
-                          --cycle;
-
-                          \draw[red] (0,4)\foreach \x in {0,...,4}{
-                          --({\x+1}, {4*(0.7^(\x))})--({\x+1}, {4*0.7^(\x+1)})};
-                          \draw (0,0)--(0,4);
-                          \foreach \x in {0,...,4}{
-                          \draw[red]  ({\x+1}, {4*0.7^(\x+1)})--({\x+1}, {0});}
-                          
-                          \draw[red, fill, opacity=0.2] (0,0)--(0,4)\foreach \x in {0,...,4}{
-                          --({\x+1}, {4*0.7^(\x)})--({\x+1}, {4*0.7^(\x+1)})}
-                          --(5,0)
-                          --cycle;
-                          
-                          \draw (5.5,0)--node[above]{$\cdots$} (5.5,0);
-
-                          \draw[blue] (6,4*0.75^9)\foreach \x in {6,...,9}{
-                          --({\x+1}, {4*(0.75^(\x+3))})--({\x+1}, {4*0.75^(\x+4)})};
-                          \draw[blue] (6,0)--(6,4*0.75^9);
-                          \foreach \x in {6,...,9}{
-                          \draw[blue]  ({\x+1}, {4*0.75^(\x+4)})--({\x+1}, {0});}
-                          
-                          \draw[blue, fill, opacity=0.2] (6,0)--(6,4*0.75^9)\foreach \x in {6,...,9}{
-                          --({\x+1}, {4*0.75^(\x+3)})--({\x+1}, {4*0.75^(\x+4)})}
-                          --(10,0)
-                          --cycle;
-                          
-                          
-                          \draw[red] (6,4*0.8^9)\foreach \x in {6,...,9}{
-                          --({\x+1}, {4*(0.8^(\x+3))})--({\x+1}, {4*0.8^(\x+4)})};
-                          \draw[blue] (6,0)--(6,4*0.8^9);
-                          \foreach \x in {6,...,9}{
-                          \draw[red]  ({\x+1}, {4*0.8^(\x+4)})--({\x+1}, {0});}
-                          
-                          \draw[red, fill, opacity=0.2] (6,0)--(6,4*0.8^9)\foreach \x in {6,...,9}{
-                          --({\x+1}, {4*0.8^(\x+3)})--({\x+1}, {4*0.8^(\x+4)})}
-                          --(10,0)
-                          --cycle;
-                          
-                          \draw (6,-0.1)--(6,0.1);
-                          \draw (6,-0.1)--node[below]{$100$} (6,-0.1);
-                          
-                          \draw (10.5,0)--node[above]{$\cdots$} (10.5,0);
-
-                             
-                    \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        plt = Graphics()
+                        f(x) = 4*0.8^(x+1)
+                        g(x) = 4*0.7^(x+1)
+                        for i in [0,..,4]:
+                            plt += polygon(([(i,0),(i,f(i)),(i+1,f(i)),(i+1,0)]),fill='blue',alpha=0.25,edgecolor='black',axes=False)
+                            plt += polygon(([(i,0),(i,g(i)),(i+1,g(i)),(i+1,0)]),color='red',alpha=0.25,edgecolor='black')                          
+                        plt += text('$\\cdots$',(5.5,.5),color='black',fontsize=15)
+                        for i in [6,..,10]:
+                            plt += polygon(([(i,0),(i,f(i)),(i+1,f(i)),(i+1,0)]),color='cyan',alpha=0.25,edgecolor='black',axes=False)
+                            plt += polygon(([(i,0),(i,g(i)),(i+1,g(i)),(i+1,0)]),color='red',alpha=0.25,edgecolor='black')
+                        plt += arrow((0,0),(12.5,0),arrowsize=0.5,color='black')
+                        plt += text('$x$', (12.75,0), color='black',fontsize=13)
+                        plt += arrow((0,0),(0,4),arrowsize=0.5,color='black')
+                        plt += text('$y$', (0,4.25),color='black',fontsize=13)
+                        plt += text('100', (6,-0.25),color='black',fontsize=15)
+                        plt += text('$\\cdots$',(11.5,0.2),color='black',fontsize=15)
+                        plt
+                        </sageplot>
                     </image>
             </figure> 
                 </p>

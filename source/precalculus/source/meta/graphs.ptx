@@ -3,280 +3,269 @@
     <title>Graphs of Common Functions</title>
     <paragraphs xml:id="polynomial-functions-graphs">
         <title>Polynomial Functions</title>
-        <p>
-            <sbsgroup>
-                <sidebyside>
-                    <figure xml:id="graph-x">
-                        <image><sageplot>
-                            plot(x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=x</m></caption>
-                    </figure>
-                    <figure xml:id="graph-x-squared">
-                        <image><sageplot>
-                            plot(x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=x^2</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-x-cubed">
-                        <image><sageplot>
-                            plot(x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=x^3</m></caption>
-                    </figure>
-                    <figure xml:id="graph-x-fourth">
-                        <image><sageplot>
-                            plot(x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=x^4</m></caption>
-                    </figure>
-                </sidebyside>
-            </sbsgroup>
-        </p>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="graph-x">
+                    <caption>Graph of <m>y=x</m></caption>
+                    <image><sageplot>
+                        plot(x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-x-squared">
+                    <caption>Graph of <m>y=x^2</m></caption>
+                    <image><sageplot>
+                        plot(x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-x-cubed">
+                    <caption>Graph of <m>y=x^3</m></caption>
+                    <image><sageplot>
+                        plot(x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-x-fourth">
+                    <caption>Graph of <m>y=x^4</m></caption>
+                    <image><sageplot>
+                        plot(x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
     </paragraphs>
     <paragraphs xml:id="rational-functions-graphs">
         <title>Rational Functions</title>
-        <p>
-            <sbsgroup>
-                <sidebyside>
-                    <figure xml:id="graph-x-minus-one">
-                        <image><sageplot>
-                            p=plot(1/x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\dfrac{1}{x}</m></caption>
-                    </figure>
-                    <figure xml:id="graph-x-minus-2">
-                        <image><sageplot>
-                            p=plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\dfrac{1}{x^2}</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-x-minus-three">
-                        <image><sageplot>
-                            p=plot(1/x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\dfrac{1}{x^3}</m></caption>
-                    </figure>
-                    <figure xml:id="graph-x-minus-four">
-                        <image><sageplot>
-                            p=plot(1/x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\dfrac{1}{x^4}</m></caption>
-                    </figure>
-                </sidebyside>
-            </sbsgroup>
-        </p>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="graph-x-minus-one">
+                    <caption>Graph of <m>y=\dfrac{1}{x}</m></caption>
+                    <image><sageplot>
+                        p=plot(1/x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-x-minus-2">
+                    <caption>Graph of <m>y=\dfrac{1}{x^2}</m></caption>
+                    <image><sageplot>
+                        p=plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-x-minus-three">
+                    <caption>Graph of <m>y=\dfrac{1}{x^3}</m></caption>
+                    <image><sageplot>
+                        p=plot(1/x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-x-minus-four">
+                    <caption>Graph of <m>y=\dfrac{1}{x^4}</m></caption>
+                    <image><sageplot>
+                        p=plot(1/x^4,xmin=-5,xmax=-0.1,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
+                        p+=plot(1/x^4,xmin=0.1,xmax=5,ymin=-5,ymax=5,thickness=3)
+                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
     </paragraphs>
     <paragraphs xml:id="other-functions-graphs">
         <title>Other Functions</title>
-        <p>
-            <sbsgroup>
-                <sidebyside>
-                    <figure xml:id="graph-absolute">
-                        <image><sageplot>
-                            plot(abs(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=|x|</m></caption>
-                    </figure>
-                    <figure xml:id="graph-sqrt">
-                        <image><sageplot>
-                            p=plot(sqrt(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p.SHOW_OPTIONS['xmin']=-5
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\sqrt{x}</m></caption>
-                    </figure>
-                </sidebyside>
-            </sbsgroup>
-        </p>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="graph-absolute">
+                    <caption>Graph of <m>y=|x|</m></caption>
+                    <image><sageplot>
+                        plot(abs(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-sqrt">
+                    <caption>Graph of <m>y=\sqrt{x}</m></caption>
+                    <image><sageplot>
+                        p=plot(sqrt(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p.SHOW_OPTIONS['xmin']=-5
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
     </paragraphs>
     <paragraphs xml:id="exponential-and-logarithmic-functions-graphs">
         <title>Exponential and Logarithmic Functions</title>
-        <p>
-            <sbsgroup>
-                <sidebyside>
-                    <figure xml:id="graph-exponential">
-                        <image><sageplot>
-                            p=plot(2^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=b^x</m>, with <m>b=2</m></caption>
-                    </figure>
-                    <figure xml:id="graph-log">
-                        <image><sageplot>
-                            p=plot(log(x)/log(2),xmin=0,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                            p.SHOW_OPTIONS['xmin']=-5
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\log_b x</m>, with <m>b=2</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-e">
-                        <image><sageplot>
-                            p=plot(e^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=e^x</m></caption>
-                    </figure>
-                    <figure xml:id="graph-ln">
-                        <image><sageplot>
-                            p=plot(log(x),xmin=0,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                            p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                            p.SHOW_OPTIONS['xmin']=-5
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\ln x</m></caption>
-                    </figure>
-                </sidebyside>
-            </sbsgroup>
-        </p>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="graph-exponential">
+                    <caption>Graph of <m>y=b^x</m>, with <m>b=2</m></caption>
+                    <image><sageplot>
+                        p=plot(2^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-log">
+                    <caption>Graph of <m>y=\log_b x</m>, with <m>b=2</m></caption>
+                    <image><sageplot>
+                        p=plot(log(x)/log(2),xmin=0,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                        p.SHOW_OPTIONS['xmin']=-5
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-e">
+                    <caption>Graph of <m>y=e^x</m></caption>
+                    <image><sageplot>
+                        p=plot(e^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-ln">
+                    <caption>Graph of <m>y=\ln x</m></caption>
+                    <image><sageplot>
+                        p=plot(log(x),xmin=0,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
+                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
+                        p.SHOW_OPTIONS['xmin']=-5
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
     </paragraphs>
     <paragraphs xml:id="trigonometric-functions-graphs">
         <title>Trigonometric Functions</title>
-        <p>
-            <sbsgroup>
-                <sidebyside>
-                    <figure xml:id="graph-sin">
-                        <image><sageplot>
-                            plot(sin(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\sin(x)</m></caption>
-                    </figure>
-                    <figure xml:id="graph-csc">
-                        <image><sageplot>
-                            p=plot(csc(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                            for i in [-2..2]:
-                                p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\csc x</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-cos">
-                        <image><sageplot>
-                            plot(cos(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\cos x</m></caption>
-                    </figure>
-                    <figure xml:id="graph-sec">
-                        <image><sageplot>
-                            p=plot(sec(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                            for i in [-2..1]:
-                                p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\sec x</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-tan">
-                        <image><sageplot>
-                            p=plot(tan(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                            for i in [-2..1]:
-                                p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\tan x</m></caption>
-                    </figure>
-                    <figure xml:id="graph-cot">
-                        <image><sageplot>
-                            p=plot(cot(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                            for i in [-2..2]:
-                                p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\cot x</m></caption>
-                    </figure>
-                </sidebyside>
-            </sbsgroup>
-        </p>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="graph-sin">
+                    <caption>Graph of <m>y=\sin(x)</m></caption>
+                    <image><sageplot>
+                        plot(sin(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-csc">
+                    <caption>Graph of <m>y=\csc x</m></caption>
+                    <image><sageplot>
+                        p=plot(csc(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                        for i in [-2..2]:
+                            p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-cos">
+                    <caption>Graph of <m>y=\cos x</m></caption>
+                    <image><sageplot>
+                        plot(cos(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-sec">
+                    <caption>Graph of <m>y=\sec x</m></caption>
+                    <image><sageplot>
+                        p=plot(sec(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                        for i in [-2..1]:
+                            p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-tan">
+                    <caption>Graph of <m>y=\tan x</m></caption>
+                    <image><sageplot>
+                        p=plot(tan(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                        for i in [-2..1]:
+                            p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-cot">
+                    <caption>Graph of <m>y=\cot x</m></caption>
+                    <image><sageplot>
+                        p=plot(cot(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+                        for i in [-2..2]:
+                            p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
     </paragraphs>
     <paragraphs xml:id="inverse-trigonometric-functions-graphs">
         <title>Inverse Trigonometric Functions</title>
-        <p>
-            <sbsgroup>
-                <sidebyside>
-                    <figure xml:id="graph-arcsin">
-                        <image><sageplot>
-                            p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p.SHOW_OPTIONS['xmin']=-pi
-                            p.SHOW_OPTIONS['xmax']=pi
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\sin^{-1}(x)</m></caption>
-                    </figure>
-                    <figure xml:id="graph-arccsc">
-                        <image><sageplot>
-                            p=plot(arccsc(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=plot(arccsc(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\csc^{-1}(x)</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-arccos">
-                        <image><sageplot>
-                            p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p.SHOW_OPTIONS['xmin']=-pi
-                            p.SHOW_OPTIONS['xmax']=pi
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\cos^{-1}(x)</m></caption>
-                    </figure>
-                    <figure xml:id="graph-arcsec">
-                        <image><sageplot>
-                            p=plot(arcsec(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=plot(arcsec(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\sec^{-1}(x)</m></caption>
-                    </figure>
-                </sidebyside>
-                <sidebyside>
-                    <figure xml:id="graph-arctan">
-                        <image><sageplot>
-                            p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
-                            p+=line([(-pi,-pi/2),(pi,-pi/2)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\tan^{-1}(x)</m></caption>
-                    </figure>
-                    <figure xml:id="graph-arccot">
-                        <image><sageplot>
-                            p=plot(arccot(x),xmin=-pi,xmax=-0.001,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=plot(arccot(x),xmin=0.001,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                            p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
-                            p
-                        </sageplot></image>
-                        <caption>Graph of <m>y=\cot^{-1}(x)</m></caption>
-                    </figure>
-                </sidebyside>
-            </sbsgroup>
-        </p>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="graph-arcsin">
+                    <caption>Graph of <m>y=\sin^{-1}(x)</m></caption>
+                    <image><sageplot>
+                        p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p.SHOW_OPTIONS['xmin']=-pi
+                        p.SHOW_OPTIONS['xmax']=pi
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-arccsc">
+                    <caption>Graph of <m>y=\csc^{-1}(x)</m></caption>
+                    <image><sageplot>
+                        p=plot(arccsc(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=plot(arccsc(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-arccos">
+                    <caption>Graph of <m>y=\cos^{-1}(x)</m></caption>
+                    <image><sageplot>
+                        p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p.SHOW_OPTIONS['xmin']=-pi
+                        p.SHOW_OPTIONS['xmax']=pi
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-arcsec">
+                    <caption>Graph of <m>y=\sec^{-1}(x)</m></caption>
+                    <image><sageplot>
+                        p=plot(arcsec(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=plot(arcsec(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="graph-arctan">
+                    <caption>Graph of <m>y=\tan^{-1}(x)</m></caption>
+                    <image><sageplot>
+                        p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
+                        p+=line([(-pi,-pi/2),(pi,-pi/2)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+                <figure xml:id="graph-arccot">
+                    <caption>Graph of <m>y=\cot^{-1}(x)</m></caption>
+                    <image><sageplot>
+                        p=plot(arccot(x),xmin=-pi,xmax=-0.001,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=plot(arccot(x),xmin=0.001,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
+                        p
+                    </sageplot></image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
     </paragraphs>
 </appendix>

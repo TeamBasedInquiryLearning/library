@@ -331,7 +331,9 @@
 </activity>
 
 <remark>
+<p>
   It would be nice if there was another form of the equation of a line that works for any points and does not require the <m>y</m>-intercept.
+</p>
 </remark>
 
 <definition xml:id="def-point-slope">
@@ -498,7 +500,9 @@
 </activity>
 
 <remark>
+<p>
   Notice that it was possible to use either point to find an equation of the line in point-slope form.  But, when rewritten in slope-intercept form the equation is unique.
+</p>
 </remark>
 
 <activity xml:id="activity-line-eq">
@@ -509,10 +513,10 @@
     </introduction>
     <task>
       <statement>
-        <p>
+        <p>The line whose graph is given below.
           <image>
             <sageplot>
-              p=plot(3/4*x+2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-6,ymax=6, color='blue', gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
+              p=plot(3/4*x+2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-6,ymax=6, color='blue', gridlines=[[-6..6],[-6..6]],aspect_ratio=1)
               p+=point((-4,-1),pointsize=50,color='blue')
               p+=point((4,5),pointsize=50,color='blue')
               p
@@ -530,7 +534,7 @@
     <task>
       <statement>
         <p>
-          The slope is <m>-\dfrac{1}{2}</m> and <m>(1,-3)</m> is a point on the line.
+          The line whose slope is <m>-\dfrac{1}{2}</m> and passes through the point <m>(1,-3)</m>.
         </p>
   </statement>
   <answer>
@@ -543,7 +547,7 @@
     <task>
       <statement>
         <p>
-          Two points on the line are <m> (0,3)</m> and <m>(2,0)</m>.
+          The line that passes through the points <m> (0,3)</m> and <m>(2,0)</m>.
         </p>
   </statement>
   <answer>
@@ -555,7 +559,9 @@
 </activity>
 
 <remark>
+<p>
   It is always possible to use both forms to write the equation of a line and they are both valid. Although, sometimes the given information lends itself to make one form easier.
+</p>
 </remark>
 
 <activity xml:id="activity-hor-vert">
@@ -646,7 +652,9 @@
 </definition>
 
 <remark>
+<p>
   It is possible to rearrange a line written in standard form to slope-intercept form by solving for <m>y</m>.
+</p>
 </remark>
 
 <activity xml:id="act-standard-form">
