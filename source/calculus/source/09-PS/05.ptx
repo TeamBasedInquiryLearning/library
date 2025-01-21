@@ -181,12 +181,12 @@
                 <p>
                     Calculate the derivatives <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>. 
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>f'(x)=-1/x^2</m>, <m>f''(x)=2/x^3</m>, <m>f'''(x)=-6/x^4</m>, <m>f^{(4)}(x)=24/x^5</m>
                     </p>
                 </answer>
-            </statement>
         </task>
         <task>
             <statement>
@@ -215,12 +215,13 @@
                         </p>
                     </li>
                 </ol>
+             </statement>
                 <answer>
                     <p>
                         B.
                     </p>
                 </answer>
-            </statement>
+
         </task>
 
         <task>
@@ -228,12 +229,13 @@
                 <p>
                     Calculate <m>M_k</m> for each <m>k=1,2,3,4</m> using your results from part (b).
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>M_1=1, M_2=2, M_3=6, M_4=24</m>
                     </p>
                 </answer>
-            </statement>
+
         </task>
 
         <task>
@@ -242,12 +244,13 @@
                     Use Taylor's Theorem to calculate <m>|R_k(1.5)|</m> for each <m>k=1,2,3,4</m>
                     to 3 decimal places. Use <m>a=1</m> as the center of the approximation.
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>0.125, 0.042, 0.016, 0.006</m>
                     </p>
                 </answer>
-            </statement>
+
         </task>
 
         <task>
