@@ -181,12 +181,12 @@
                 <p>
                     Calculate the derivatives <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>. 
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>f'(x)=-1/x^2</m>, <m>f''(x)=2/x^3</m>, <m>f'''(x)=-6/x^4</m>, <m>f^{(4)}(x)=24/x^5</m>
                     </p>
                 </answer>
-            </statement>
         </task>
         <task>
             <statement>
@@ -215,12 +215,13 @@
                         </p>
                     </li>
                 </ol>
+             </statement>
                 <answer>
                     <p>
                         B.
                     </p>
                 </answer>
-            </statement>
+
         </task>
 
         <task>
@@ -228,12 +229,13 @@
                 <p>
                     Calculate <m>M_k</m> for each <m>k=1,2,3,4</m> using your results from part (b).
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>M_1=1, M_2=2, M_3=6, M_4=24</m>
                     </p>
                 </answer>
-            </statement>
+
         </task>
 
         <task>
@@ -242,12 +244,13 @@
                     Use Taylor's Theorem to calculate <m>|R_k(1.5)|</m> for each <m>k=1,2,3,4</m>
                     to 3 decimal places. Use <m>a=1</m> as the center of the approximation.
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>0.125, 0.042, 0.016, 0.006</m>
                     </p>
                 </answer>
-            </statement>
+
         </task>
 
         <task>
@@ -313,46 +316,47 @@
 
 <subsection>
     <title>Sample Problem</title>
-        <introduction>
-            <p>
-                Here you are tasked with approximating the value of <m>\cos(1)</m>.
-            </p>
-        </introduction>
-            <task>
-                <statement>
-                    <p>
-                Calculate the 4th degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
-                then use it to approximate the value of <m>\cos(1)</m> to three decimal places.    
-                    </p>
-                </statement>
-            </task>
+        <example>
+            <introduction>
+                <p>
+                    Here you are tasked with approximating the value of <m>\cos(1)</m>.
+                </p>
+            </introduction>
+                <task>
+                    <statement>
+                        <p>
+                    Calculate the 4th degree Taylor polynomial for <m>f(x)=\cos x</m> centered at <m>\pi</m>, 
+                    then use it to approximate the value of <m>\cos(1)</m> to three decimal places.    
+                        </p>
+                    </statement>
+                </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Apply Taylor's Theorem to find an upper bound for the error in this approximation. 
-                    </p>
-                </statement>
-            </task>
+                <task>
+                    <statement>
+                        <p>
+                            Apply Taylor's Theorem to find an upper bound for the error in this approximation. 
+                        </p>
+                    </statement>
+                </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Use technology to calculate <m>|R_4(1)|</m>. Is the error within the upper bound found
-                        in part (b)? 
-                    </p>
-                </statement>
-            </task>
+                <task>
+                    <statement>
+                        <p>
+                            Use technology to calculate <m>|R_4(1)|</m>. Is the error within the upper bound found
+                            in part (b)? 
+                        </p>
+                    </statement>
+                </task>
 
-            <task>
-                <statement>
-                    <p>
-                       Explain whether the approximation error <m>|R_{k}(1)|</m> increases or decreases as 
-                       <m>k\rightarrow\infty</m>.
-                    </p>
-                </statement>
-            </task>
-
+                <task>
+                    <statement>
+                        <p>
+                        Explain whether the approximation error <m>|R_{k}(1)|</m> increases or decreases as 
+                        <m>k\rightarrow\infty</m>.
+                        </p>
+                    </statement>
+                </task>
+        </example>
             
 </subsection>
 
