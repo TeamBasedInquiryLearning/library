@@ -14,7 +14,7 @@ class Generator(BaseGenerator):
       scenario_params={"APR": Decimal(str(APR)).normalize(), 
                        "compounding": compounding,
                        "amount": amount,
-                       "f": f"A({variable})=P\left(1+\dfrac{{r}}{{n}}\\right)^{{ n{variable} }}",
+                       "f": f"A({variable})=P\\left(1+\dfrac{{r}}{{n}}\\right)^{{ n{variable} }}",
                        "var": variable,
                        "account": choice(["savings account", "529 college savings account", "certificate of deposit"]),
                       }
@@ -31,7 +31,7 @@ class Generator(BaseGenerator):
       scenario_params={"creatures": creatures,
                        "units": units,
                        "amount": amount,
-                       "f": f"P({variable})=a\cdot b^{variable}",
+                       "f": f"P({variable})=a\\cdot b^{variable}",
                        "x0": x0,
                        "y0": round(f.subs({variable:x0}),0),
                       }
@@ -45,7 +45,7 @@ class Generator(BaseGenerator):
       xrange = [5..25]
       scenario_params={"APR": Decimal(str(APR)).normalize(), 
                        "amount": amount,
-                       "f": f"A({variable})=A\left(1-r\\right)^{{ {variable} }}",
+                       "f": f"A({variable})=A\\left(1-r\\right)^{{ {variable} }}",
                        "var": variable,
                        "asset": choice(["car", "RV", "boat"]),
                       }
@@ -65,7 +65,7 @@ class Generator(BaseGenerator):
                        "amount": amount,
                        "half_life": half_life,
                        "time_units": time_units,
-                       "f": f"A({variable})=A\cdot \\left(\\frac{{1}}{{2}}\\right)^{{\\left( \\frac{{ {variable} }}{{h}} \\right)}}",
+                       "f": f"A({variable})=A\\cdot \\left(\\frac{{1}}{{2}}\\right)^{{\\left( \\frac{{ {variable} }}{{h}} \\right)}}",
                        #"x0": x0,
                        #"y0": round(f.subs({variable:x0}),0),
                       }

@@ -29,7 +29,7 @@ class Generator(BaseGenerator):
     return {
       "f": f,
       "f_string": f_string,
-      "domain": f"(-\infty,{c})" if reflection=="horizontal" else f"({c},\infty)",
+      "domain": f"(-\\infty,{c})" if reflection=="horizontal" else f"({c},\\infty)",
       "asymptote": c,
       "hshift": c,
       "base": b,
