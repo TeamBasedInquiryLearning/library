@@ -203,7 +203,7 @@
 
   <introduction>
     <p>
-      Completing the square (see <xref ref="EQ5"/>) is a very useful tool or method to convert the quadratic equation in standard form into vertex form. Let's start with the standard form of <m>y=x^2-4x+3</m> and convert it into vertex form.
+      Completing the square (see <xref ref="EQ5"/>) is a very useful tool or method to convert the quadratic equation in standard form into vertex form. Let's start with the standard form of <m>y=2x^2-4x+7</m> and convert it into vertex form.
     </p>
   </introduction>
 
@@ -215,7 +215,7 @@
     </statement>
     <answer>
       <p>
-        <m>y-3=x^2-4x</m>
+        <m>y-7=2x^2-4x</m>
       </p>
     </answer>
   </task>
@@ -223,22 +223,35 @@
   <task>
     <statement>
       <p>
-        Notice that because <m>a=1</m>, apply the "completing the square" steps to determine the constant term that is added to both sides of the equation.
+        Notice that the <m>a</m>-value is not <m>1</m>. Before we complete the square, we will want to factor out the GCF from the <m>x^2</m> and <m>x</m> terms. What does your equation look like when factoring out the GCF?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>y-7=2(x^2-2x)</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now apply the "completing the square" steps to determine the constant term that is added to both sides of the equation.
       </p>
     </statement>
     <hint>
       <p>
-        Refer back to <xref ref="def-completing-the-square"/> to help you determine how to find the constant term.
+        Refer back to <xref ref="def-completing-the-square"/> to help you determine how to find the constant term. Be careful with that GCF!
       </p>
     </hint>
     <answer>
       <p>
         By using the "completing the square" steps, students should get:
         <me>
-          y-3+(4)=x^2-4x+(4)
+          y-7+(2)=2(x^2-2x+(1))
         </me>
         <me>
-          y+1=x^2-4x+4
+          y-5=2(x^2-2x+1)
         </me>
       </p>
     </answer>
@@ -253,7 +266,7 @@
     <answer>
       <p>
         <me>
-          y+1=(x-2)^2
+          y-5=2(x-1)^2
         </me>
       </p>
     </answer>
@@ -267,18 +280,39 @@
     </statement>
     <answer>
       <p>
-        <m>y=(x-2)^2-1</m>
+        <m>y=2(x-1)^2+5</m>
       </p>
       <p>
-        Axis of Symmetry: <m>x=2</m>
+        Axis of Symmetry: <m>x=1</m>
       </p>
       <p>
-        Vertex: <m>(2,-1)</m>
+        Vertex: <m>(1,5)</m>
       </p>
     </answer>
   </task>
-    
   </activity>
+
+  <remark>
+    <p>In <xref ref="standard-to-vertex-form"/>, we were able to convert from standard form to vertex form. If you were to do this for the general form of <m>y=ax^2+bx+c</m>, you will see that the axis of symmetry will always be <m>\frac{-b}{2a}</m>. For instance, suppose we start with
+    <me>y=ax^2+bx+c</me>.
+    Following similar steps as we did in <xref ref="standard-to-vertex-form"/>, we would get:
+    <me>y-c=ax^2+bx</me>
+    
+    <me>y-c=a\left(x^2+\frac{b}{a}x\right)</me>
+    
+    <me>y-c+a\left(\frac{b}{2a}\right)^2=a\left(x^2+\frac{b}{a}x+\frac{b}{2a}\right)^2</me> 
+    
+    <me>y-c+a\left(\frac{b}{2a}\right)^2=a\left(x^2+\frac{b}{2a}\right)^2</me>
+    
+    <me>y=a\left(x^2+\frac{b}{2a}\right)^2+c-\frac{b^2}{4a}</me>
+
+    In the vertex form, <m>y=(x-h)^2+k</m>, the vertex <m>(h,k)</m> can be identified as: 
+
+    <me>h=-\frac{b}{2a}</me>
+    <me>k=c-\frac{b^2}{4a}</me>
+
+    </p>
+  </remark>
 
   <observation xml:id="standard-form-aos">
     <statement>
