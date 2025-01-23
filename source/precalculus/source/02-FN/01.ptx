@@ -152,11 +152,176 @@
       </task>
     </activity>
 
-    <remark>
-    <p>
-      Notice that in <xref ref="FN1-exploring-relations-1"/>, <xref ref="FN1-exploring-relations-2"/>, and <xref ref="FN1-exploring-relations-3"/>, each set represents a very different relationship. Many concepts in mathematics will depend on particular relationships, so it is important to be able to visualize relationships and compare them.
-    </p>
-    </remark>
+        <activity xml:id="FN1-exploring-relations-4">
+      <introduction>
+        <p>
+          Use mapping notation to create a visual representation of the following relation.
+          <me>(3,-2), (-4,-1), (3,5)</me> 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the domain?
+            <ol marker= "A." cols="1">
+              <li> {<m>-4,-2,-1,3,5</m>} </li>
+              <li> {<m>-4,3</m>}</li>
+              <li> {<m>-2,-1,5</m>} </li>
+              <li> {<m>-4,3,3</m>} </li></ol></p>
+        </statement>
+              <answer>
+                <p>
+                  B
+                </p>
+              </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the range?
+            <ol marker= "A." cols="1">
+              <li> {<m>-4,-2,-1,3,5</m>} </li>
+              <li> {<m>-4,3</m>}</li>
+              <li> {<m>-2,-1,5</m>} </li>
+              <li> {<m>-4,3,3</m>} </li></ol></p>
+        </statement>
+              <answer>
+                <p>
+                  C
+                </p>
+              </answer>
+      </task>
+      
+    </activity>
+
+    
+
+    <activity xml:id="FN1-exploring-relations-summary">
+        <statement>
+          <p>
+         Now that you have created a visual representation for each of <xref ref="FN1-exploring-relations-1"/>, <xref ref="FN1-exploring-relations-2"/>, <xref ref="FN1-exploring-relations-3"/>, and <xref ref="FN1-exploring-relations-4"/>, what similarities do you see? What differences?
+          </p>
+        </statement>
+              <answer>
+                <p>
+                  Students may mention that some have repeated <m>x</m>-values, some have repeated <m>y</m>-values, and some don't.
+                </p>
+              </answer>
+    </activity>
+
+    <activity xml:id="FN1-menu-as-function">
+      <introduction>
+        <p>
+          Consider the menus shown below for two different fast food restaurants. We'll consider the Items as inputs (<m>x</m>-values) and the Cost as outputs (<m>y</m>-values). 
+          <sidebyside>
+            <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell>McRonald's Item</cell> 
+                  <cell>Cost</cell>
+                </row>
+                <row halign="center">
+                  <cell>Nuggets</cell>FN1-menu-as-function
+                  <cell><m>\$5</m></cell>
+                </row>
+                <row halign="center">
+                  <cell>Burger</cell>
+                  <cell><m>\$6</m></cell>
+                </row>
+                <row halign="center">
+                  <cell>Fries</cell>
+                  <cell><m>\$3</m></cell>
+                </row>
+                <row halign="center">
+                  <cell>Nachos</cell>
+                  <cell><m>\$6</m></cell>
+                </row>
+              </tabular> 
+              <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell>Burger Queen's Item</cell> 
+                  <cell>Cost</cell>
+                </row>
+                <row halign="center">
+                  <cell>Nuggets</cell>
+                  <cell><m>\$4</m></cell>
+                </row>
+                <row halign="center">
+                  <cell>Burger</cell>
+                  <cell><m>\$8</m></cell>
+                </row>
+                <row halign="center">
+                  <cell>Fries</cell>
+                  <cell><m>\$2</m></cell>
+                </row>
+                <row halign="center">
+                  <cell>Nuggets</cell>
+                  <cell><m>\$7</m></cell>
+                </row>
+              </tabular> 
+          </sidebyside> 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            How much would it cost to get nuggets and fries at McRonald's?
+            <ol marker= "A." cols="4">
+              <li> <m>\$8</m> </li>
+              <li> <m>\$9</m> </li>
+              <li> <m>\$11</m> </li>
+              <li> <m>\$12</m> </li> 
+            </ol>             
+          </p>
+        </statement>
+              <answer>
+                <p>
+                  A
+                </p>
+              </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How much would it cost to get nuggets and fries at Burger Queen?
+            <ol marker= "A." cols="4">
+              <li> <m>\$6</m> </li>
+              <li> <m>\$9</m> </li>
+              <li> <m>\$10</m> </li>
+              <li> <m>\$12</m> </li> 
+            </ol>             
+          </p>
+        </statement>
+              <answer>
+                <p>
+                  A, B, or not able to be determined. Notice that that menu is not a function since nuggets are a repeated item.
+                </p>
+              </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Notice that burgers and nachos cost the same amount at McRonald's. Is that an issue? Explain your reasoning.         
+          </p>
+        </statement>
+              <answer>
+                <p>
+                  No. It's okay for two items to have the same price.
+                </p>
+              </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Notice on the Burger Queen menu that nuggets cost <m>\$4</m> in one spot but <m>\$7</m> in another spot. Is that an issue? Explain your reasoning.         
+          </p>
+        </statement>
+              <answer>
+                <p>
+                  Yes. It's not clear how much nuggets cost.
+                </p>
+              </answer>
+      </task>
+    </activity>
 
     <definition xml:id="def-function">
       <statement>
@@ -167,6 +332,12 @@
         </p>
       </statement>
     </definition>
+
+    <remark>
+      <p>
+        We see that in <xref ref="FN1-menu-as-function"/>, the McRonald's menu is a function. There is no confusion in determining the cost of a given menu item. However, Burger Queen's menu is not a function. There is a discrepancy in the cost of nuggets, and the menu could cause confusion.  
+      </p>
+    </remark>  
 
     <activity xml:id="FN1-determine-if-a-function">
       <introduction>
@@ -331,7 +502,9 @@
 
     <activity xml:id="FN1-determine-function-from-graph">
     <introduction>
+      <p>
       Determine whether each of the following relations is a function.
+      </p>
     </introduction>
 <task>
   <statement>
@@ -504,7 +677,9 @@
     </p>
   </statement>
     <answer>
+      <p>
      If <m>x=4</m>, <m>y</m> could be <m>-2</m> or <m>2</m>. Given that there are two outputs for a given <m>x</m>, then <m>x=y^2</m> is not a function.
+     </p>
     </answer>
   </task>
   
@@ -525,7 +700,9 @@
   </p>
   </statement>
   <answer>
+    <p>
     If <m>x=4</m>, <m>y=50</m>. For every input (<m>x</m>-value), there is exactly one output (<m>y</m>-value) so <m>y=3x^2+2</m> is a function.
+    </p>
   </answer>
 </task>
 
@@ -546,7 +723,9 @@
   </p>
 </statement>
   <answer>
+    <p>
     If <m>x=4</m>, <m>y</m> could be <m>-3</m> or <m>3</m>. Given that there are two outputs for a given <m>x</m>, then <m>x^2+y^2=25</m> is not a function.
+    </p>
   </answer>
 </task>
 
@@ -567,7 +746,9 @@
   </p>
 </statement>
   <answer>
+    <p>
     If <m>x=4</m>, <m>y=-19</m>. For every input (<m>x</m>-value), there is exactly one output (<m>y</m>-value) so <m>y=-4x-3</m> is a function.
+    </p>
   </answer>
 </task>
 <task>
@@ -577,7 +758,9 @@
     </p>
   </statement>
     <answer>
+      <p>
       Students may have different answers. Ideally, you want students to see that they can check whether a given relation is a function in more than one way. They can test values (as this activity did by leading them to plug in values) or by using the vertical line test on a graph.
+      </p>
     </answer>
 </task>
 </activity>

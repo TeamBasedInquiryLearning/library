@@ -97,13 +97,12 @@
     <activity estimated-time='5'>
         <introduction>
             <p>
-    Consider the homogeneous vector equation <m>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</m>.<abbr></abbr>
+    Consider the homogeneous vector equation <m>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</m>.
             </p>
         </introduction>
         <task>
             <p>
         Is this equation consistent?
-                </p>
         <ol marker="A.">
         <li>
             <p>
@@ -121,6 +120,7 @@
               </p>
             </li>
         </ol>
+                </p>
             </task>
         <task>
         <p>
@@ -136,7 +136,6 @@
         <p>
     we may conclude that the vector <m>\left[\begin{array}{c} a_1+ b_1 \\ \vdots \\ a_n+b_n \end{array}\right] </m> 
     is...
-        </p>
     <ol marker="A.">
     <li>
         <p>
@@ -154,6 +153,7 @@
           </p>
         </li>
     </ol>
+        </p>
         </task>
         <task>
         <p>
@@ -161,7 +161,6 @@
         (ca_1)\vec{v}_1+\cdots+(ca_n)\vec{v}_n=\vec{0},
     </me>
     we may conclude that the vector <m>\left[\begin{array}{c} ca_1 \\ \vdots \\ ca_n \end{array}\right] </m> is...
-        </p>
     <ol marker="A.">
     <li>
         <p>
@@ -184,6 +183,7 @@
         </p>
       </li>
     </ol>
+        </p>
         </task>
     </activity>
 
@@ -258,13 +258,13 @@
         <p>
 Note the similarities between a planar subspace spanned by two non-colinear vectors in <m>\IR^3</m>,
 and the Euclidean plane <m>\IR^2</m>. While they are not the same thing (and shouldn't be referred to
-interchangably), algebraists call such similar spaces <term>isomorphic</term><idx>isomorphic</idx>;
+interchangeably), algebraists call such similar spaces <term>isomorphic</term><idx>isomorphic</idx>;
 we'll learn what this means more carefully in a later chapter.
         </p>
         <figure xml:id="EV3-planar-subspace-vs-r2">
 			<caption>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</caption>
 			<image width="100%" xml:id="EV3-image-r2-in-r3">
-			    <description>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</description>
+			    <description><p>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</p></description>
 				<latex-image>
                 \begin{tikzpicture}[scale=0.5]
     \draw[-&gt;] (0,0,0) -- (6,0,0);
@@ -580,9 +580,6 @@ For all <m>\vec v\in W</m> and <m>c\in \IR</m> (not just specific values),
       <p> Consider the following two sets of Euclidean vectors: <me>U=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle|\,7 \, x + 4 \, y = 0\right\} \hspace{2em} W=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle|\,3 \, x y^{2} = 0\right\}</me> </p>
       <p> Explain why one of these sets is a subspace of <m>\mathbb{R}^2</m> and one is not. </p>
     </statement>
-    <!-- <answer>
-      <p><m>U</m> is a subspace of <m>\mathbb{R}^2</m> and <m>W</m> is not.</p>
-    </answer> -->
   </activity>
 
   <activity>
@@ -629,9 +626,6 @@ k(x+y)&amp;=k^2xy
             </ol>
         </p>
       </statement>
-      <!-- <answer>
-        <p><m>U</m> is a subspace of <m>\mathbb{R}^2</m> and <m>W</m> is not.</p>
-      </answer> -->
     </activity>
 
     <remark>
@@ -721,88 +715,6 @@ and it's not helpful to prove to someone that zero equals itself
         </p>
     </warning>
 
-<!-- <activity estimated-time='10'>
-    <introduction>
-        <p>
-  Consider these subsets of <m>M_{2 \times 2}</m>, the vector space of all <m> 2 \times 2</m> matrices with real entries. Show that each of these sets is or is not a subspace of <m>M_{2 \times 2}</m>.
-   
-           </p> 
-           </introduction>
-  <task>
-      <p>
-          <me>
-    \setBuilder{ \left[\begin{array}{cc}a&amp;0\\0&amp;b\end{array}\right]}{a,b \in \IR}
-              </me>.
-
-      </p>
-  </task>
-    <task>
-      <p>
-          <me>
-    \setBuilder{ \left[\begin{array}{cc}a&amp;0\\0&amp;b\end{array}\right]}{a + b = 0}
-              </me>.
-
-      </p>
-  </task>
-    <task>
-      <p>
-          <me>
-    \setBuilder{ \left[\begin{array}{cc}a&amp;0\\0&amp;b\end{array}\right]}{a + b = 5}
-              </me>.
-
-      </p>
-  </task>
-    <task>
-      <p>
-          <me>
-      \setBuilder{ \left[\begin{array}{cc}a&amp;c\\0&amp;b\end{array}\right]}{a + b = 0, c \in \IR}
-  </me>.
-
-      </p>
-  </task>
-
-</activity> -->
-
-
-
-<!-- <activity estimated-time='5'>
-    <statement>
-        <p>
-Let <m>W</m> be a subspace of a vector space <m>V</m>.  How are <m>\vspan W</m> and <m>W</m> related?
-        </p>
-<ol marker="A.">
-<li>
-    <p>
-    <m>\vspan W</m> may include vectors that aren't in <m>W</m>
-    </p>
-</li>
-<li>
-    <p>
-    <m>W</m> may include vectors that aren't in <m>\vspan W</m>
-    </p>
-</li>
-<li>
-    <p>
-    <m>W</m> and <m>\vspan W</m> always contain the same vectors
-    </p>
-</li>
-</ol>
-    </statement>
-</activity>
-
-<fact>
-    <statement>
-        <p>
-  If <m>S</m> is any subset of a vector space <m>V</m>, then
-  since <m>\vspan S</m> collects all possible linear combinations,
-  <m>\vspan S</m> is automatically a subspace of <m>V</m>.
-        </p>
-        <p>
-  In fact, <m>\vspan S</m> is always the smallest
-  subspace of <m>V</m> that contains all the vectors in <m>S</m>.
-        </p>
-    </statement>
-</fact>-->
     </subsection> 
 
     <subsection>
@@ -865,7 +777,7 @@ Let <m>W</m> be a subspace of a vector space <m>V</m>.  How are <m>\vspan W</m> 
                         Well, if <me>(x+a)+(y+b)=3(z+c)+2(w+d),</me>
                         then we know that <me>x+y-3z-2w+a+b-3c-2d=0</me>
                         by moving everything over to the left hand side. 
-                        Since we are assumming that <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m>, it follows that
+                        Since we are assuming that <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m>, it follows that
                         <m>0=0</m>, which is true, which proves that vector addition is closed.
                     </p>
                 </statement>
@@ -878,35 +790,32 @@ Let <m>W</m> be a subspace of a vector space <m>V</m>.  How are <m>\vspan W</m> 
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-EV3-a" youtube="ccXgu4NIzSA">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Showing that a subset of a vector space is a subspace</caption>
+            <video xml:id="video-EV3-a" youtube="ccXgu4NIzSA"/>
         </figure>
         <figure>
-            <video xml:id="video-EV3-b" youtube="7qv8-2GaE2A">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Showing that a subset of a vector space is not a subspace</caption>
+            <video xml:id="video-EV3-b" youtube="7qv8-2GaE2A"/>
         </figure>
     </subsection>
     
 
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV3/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     A square matrix <m>M</m> is <term>symmetric</term><idx>symmetric matrix</idx> if, for each index <m>i,j</m>, the entries <m>m_{ij} = m_{ji}</m>. That is, the matrix is itself when reflected over the diagonal from upper left to lower right.
  
 Prove that the set of <m>n \times n</m> symmetric matrices is a subspace of <m>M_{n \times n}</m>.
-                </statement>s
+                </p>
     </exploration>
     <exploration>
-    <statement>
+    <p>
         The space of all real-valued function of one real variable is a vector space. First, define <m>\oplus</m> and <m>\odot</m> for this vector space. Check that you have closure (both kinds!) and show what the zero vector is under your chosen addition.
 
 Decide if each of the following is a subspace. If so, prove it. If not, provide the counterexample.
@@ -914,20 +823,20 @@ Decide if each of the following is a subspace. If so, prove it. If not, provide 
 <li>The set of even functions, <m>\{f:\mathbb{R} \rightarrow \mathbb{R}: f(-x) = f(x) \mbox{ for all } x\}</m>.</li>
 <li>The set of odd functions, <m>\{f:\mathbb{R} \rightarrow \mathbb{R}: f(-x) = -f(x) \mbox{ for all } x\}</m>.</li>
         </ul>
-</statement></exploration>
+</p></exploration>
 <exploration>
-    <statement>
+    <p>
 Give an example of each of these, or explain why it's not possible that such a thing would exist.
 <ul> <li>A nonempty subset of <m>M_{2 \times 2}</m> that is not a subspace.</li>
 <li> A set of two vectors in <m>\mathbb{R}^2</m> that is not a spanning set.</li>
 </ul>
-</statement></exploration>
+</p></exploration>
 <exploration>
-    <statement>
+    <p>
 Let <m>V</m> be a vector space and <m>S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}</m> a subset of <m>V</m>. Show that the span of <m>S</m> is a subspace. 
 
 Is it possible that there is a subset of <m>V</m> containing fewer vectors than <m>S</m>, but whose span contains all of the vectors in the span of <m>S</m>?
-</statement></exploration>
+</p></exploration>
     </subsection>
     
     <subsection>

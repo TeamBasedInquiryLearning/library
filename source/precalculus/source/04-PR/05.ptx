@@ -14,9 +14,9 @@
       <introduction>
         <remark xml:id="x-intercepts">
          
-  <statement><p> Recall that to find the <m>x</m>-intercepts of a function <m>f(x)</m>, we need to find the values of <m>x</m> that make <m>f(x)=0</m>. We saw in <xref ref="EQ5"/> that the zero product property (<xref ref="def-zero-product-property"/>) was helpful when <m>f(x)</m> is a polynomial that we can factor. Let's consider how we approach polynomials which are not in factored form or easily factorable.
+  <p> Recall that to find the <m>x</m>-intercepts of a function <m>f(x)</m>, we need to find the values of <m>x</m> that make <m>f(x)=0</m>. We saw in <xref ref="EQ5"/> that the zero product property (<xref ref="def-zero-product-property"/>) was helpful when <m>f(x)</m> is a polynomial that we can factor. Let's consider how we approach polynomials which are not in factored form or easily factorable.
               </p>
-  </statement></remark></introduction>
+  </remark></introduction>
       <activity xml:id="motivate-remainder-theorem">
         <introduction>
           <p>
@@ -406,7 +406,7 @@
 <theorem>
   <title>Conjugate Zeros Theorem</title> 
   <statement> 
-    <p> Let <m>p(x)</m> be a polynomial function with real coefficients. If <m>a+bi</m>, is a complex zero of the function, 
+    <p> Let <m>p(x)</m> be a polynomial function with real coefficients. If <m>a+bi</m> is a complex zero of the function, 
       then the conjugate <m>a-bi</m> is also a zero of the function. 
       These two zeroes are called <term>conjugate zeros</term>, or a <term>conjugate pair of zeros</term>.
   </p>

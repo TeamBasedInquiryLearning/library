@@ -55,7 +55,9 @@
         </define>
         <define name="Author">
             <element name="author">
-                <ref name="XMLBase" />
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
                 <ref name="PersonName" />
                 <optional>
                     <ref name="Department" />
@@ -69,9 +71,28 @@
             </element>
         </define>
         <define name="Website">
-            <ref name="XMLBase" />
             <element name="website">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
                 <ref name="Url"/>
+            </element>
+        </define>
+        <define name="Paragraph">
+            <element name="p">
+                <optional>
+                    <ref name="XMLBase" />
+                </optional>
+                <optional>
+                    <ref name="UniqueID" />
+                </optional>
+                <optional>
+                    <ref name="LabelID" />
+                </optional>
+                <optional>
+                    <ref name="Component" />
+                </optional>
+                <ref name="TextParagraph" />
             </element>
         </define>
     </include>
@@ -81,6 +102,9 @@
             <ref name="Author" />
             <ref name="Website" />
             <ref name="Copyright" />
+            <ref name="Example" />
+            <ref name="IntroductionDivision" />
+            <ref name="Objectives" />
         </choice>
     </start>
     <define name="MetaDataTitleOptional" combine="interleave">
@@ -90,7 +114,9 @@
     </define>
     <define name="Copyright">
         <element name="copyright">
-            <ref name="XMLBase" />
+            <optional>
+                <ref name="XMLBase" />
+            </optional>
             <element name="year">
                 <ref name="TextShort" />
             </element>

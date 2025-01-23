@@ -494,37 +494,31 @@
 </activity>
 <remark>
 <p>
-  Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  Using the rules of exponents and the fact that exponents and logarithms are inverses, these properties hold for any base:
-  <me>
-    \log_{b}(b^{x})=x
-  </me>
-  <me>
-    \log_b(1)=0
-  </me>
-</p>
+  Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  
+  Using the rules of exponents and the fact that exponents and logarithms are inverses, the following properties hold for any base:
+  <ul>
+    <li>
+      <m>\log_{b}(b^{x})=x</m>
+    </li>
+    <li>
+      <m>b^{\log_{b}(x)}=x</m>
+    </li>
+  </ul>
+  In particular, note the following special cases:
+  <ul>
+    <li>
+      <p>
+        <m>\log_b(1)=0</m> (and therefore <m>\ln(1)=0</m>)
+      </p>
+    </li>
+    <li>
+      <m>\log_b(b)=1</m> (and therefore <m>\ln(e)=1</m>)
+    </li>
+  </ul>
+</p> 
 </remark>
 
-<remark>
-  <p>There are some logarithms that occur so often, we sometimes write them without noting the base.  They are the common logarithm and the natural logarithm.
-  </p>
-  <p>
-    The <term> common logarithm </term> is a logarithm with base <m>10</m> and is written without a base.
-    <me>
-      \log_{10}(x)=\log (x)
-    </me>
-  </p>
-  <p>
-    The <term> natural logarithm</term> is a logarithm with base <m>e</m> and has its own notation. <aside>
-      <p>Recall the number <m>e</m> was introduced in <xref ref="remark-number-e"/> </p>
-    </aside>
-    <me>
-      \log_{e}(x)=\ln (x)
-    </me>
-    
-  </p>
-  
-  
-</remark>
+
 
 <activity xml:id="act-log-calc">
   <introduction>

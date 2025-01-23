@@ -82,6 +82,7 @@
   is <term>linearly independent</term>.<idx>linearly independent</idx>
         </p>
         <figure xml:id="EV4-figure-linearly-dependent">
+			<caption>A linearly dependent set of three vectors</caption>
 			<image width="75%" xml:id="EV4-image-linearly-dependent">
 				<latex-image>
   \begin{tikzpicture}[x={(210:0.8cm)}, y={(0:1cm)}, z={(90:1cm)}]
@@ -96,7 +97,6 @@
   \end{tikzpicture}
 				</latex-image>
 			</image>
-			<caption>A linearly dependent set of three vectors</caption>
         </figure>
         <p>
   You can think of linearly dependent sets as containing a redundant vector,
@@ -307,10 +307,8 @@ equation solvable.
 </sage>
 
 <observation xml:id="def_of_LI">
-    <statement>
         <p>
   Compare the following results:
-        </p>
   <ul>
     <li>
         <p>
@@ -345,7 +343,7 @@ equation solvable.
           </p>
         </li>
   </ul>
-    </statement>
+        </p>
 </observation>
 
 <!-- <activity estimated-time='10'>
@@ -505,7 +503,7 @@ vectors that can form a linearly independent set?
     <activity>
         <introduction>
             <p>
-                The following exercises are designed to help develop your geometric intution around linear dependence.
+                The following exercises are designed to help develop your geometric intuition around linear dependence.
             </p>
         </introduction>
         <task>
@@ -540,24 +538,23 @@ vectors that can form a linearly independent set?
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-EV4" youtube="EZ9BX1z-H4Y">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Linear independence</caption>
+            <video xml:id="video-EV4" youtube="EZ9BX1z-H4Y"/>
         </figure>
     </subsection>
 
  
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV4/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     Prove the result of <xref ref="def_of_LI"></xref>, by showing that, given a set <m>S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}</m> of vectors, <m>S</m> is linearly independent iff the equation <m>x_1\vec{v}_1 + x_2\vec{v}_2 + \ldots\ + x_n\vec{v}_n = \vec{0}</m> is only true when <m>x_1 = x_2 = \cdots = x_n = 0</m>. 
-                </statement>
+                </p>
     </exploration>
     </subsection>
     

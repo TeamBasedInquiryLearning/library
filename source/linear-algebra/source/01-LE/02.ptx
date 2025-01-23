@@ -80,7 +80,6 @@
   Therefore these augmented matrices are equivalent
             (even though they're not <em>equal</em>),
   which we denote with <m>\sim</m>:
-        </p>
     <me>
       \left[\begin{array}{cc|c}
         3 &amp; -2 &amp; 1\\
@@ -103,6 +102,7 @@
         4 &amp;  2 &amp; 6\\
       \end{array}\right]
     </me>
+        </p>
     </statement>
 </definition>
 
@@ -495,7 +495,6 @@ most complicated to simplest (in your opinion).
     <p>
 Here we've written the sorted linear systems from <xref ref="LE2-activity-sort"/>
 as augmented matrices.
-    </p>
     <md alignment="alignat" alignat-columns='3'>
         <mrow>
 \left[\begin{array}{ccc|c} 
@@ -535,9 +534,9 @@ as augmented matrices.
 0 &amp; 0 &amp; -1 &amp; -3  \end{array}\right] 
         </mrow>
      </md>
-<p>
 Assign the following row operations to each step used to manipulate each
 matrix to the next:
+</p>
 <sidebyside>
     <p><me>R_3-1R_2\to R_3</me></p>
     <p><me>R_2+1R_1\to R_2</me></p>
@@ -547,7 +546,6 @@ matrix to the next:
     <p><me>R_3-2R_1\to R_3</me></p>
     <p><me>R_1-2R_3\to R_1</me></p>
 </sidebyside>
-        </p>
     </statement>
 </activity>
 
@@ -555,7 +553,6 @@ matrix to the next:
     <statement>
         <p>
 A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>Reduced row echelon form</idx> if
-        </p>
 <ol>
 <li> The leftmost nonzero term of each row is 1.
       We call these terms <term>pivots</term>.<idx>pivot</idx>
@@ -567,7 +564,6 @@ A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>Red
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
 </ol>
-    <p>
 Every matrix has a unique reduced row echelon form. If <m>A</m> is a matrix, we write <m>\RREF(A)</m> for the reduced row echelon form of that matrix.
     </p>
     </statement>
@@ -630,7 +626,6 @@ For the ones not in RREF, determine which rule is violated and how it might be f
 </activity>
 
 <remark>
-    <statement>
     <p>
 In practice, if we simply need to convert a matrix into reduced row echelon form, 
 we use technology to do so.
@@ -641,13 +636,11 @@ that a computer or calculator uses to convert a matrix (augmented or not) into r
 Understanding this algorithm will help us better understand how to interpret the results
 in many applications we use it for in <xref ref="EV"/>.
     </p>
-    </statement>
 </remark>
 
 
 
-<commentary component="instructor">
-<paragraphs>
+<paragraphs component="instructor">
    <title>Instructor Note</title>
     <p> 
         In the following 4-part activity, students make decisions about which row operations are most helpful for them in producing the RREF. 
@@ -660,14 +653,13 @@ in many applications we use it for in <xref ref="EV"/>.
         In turn, this helps students develop a more strategic approach, which is codified in the observation following the activity.  
     </p>
 </paragraphs>
-</commentary>
+
 <activity estimated-time='15'>
     <task>
     <p>
         Consider the matrix:
         <me>\left[\begin{array}{cccc}2 &amp; 6 &amp; -1 &amp; 6  \\ 1 &amp; 3 &amp; -1 &amp; 2 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
         Which row operation is the best choice for the first move in converting to RREF?
-    </p>
     <ol marker="A.">
         <li> Add row 3 to row 2 (<m>R_2+R_3 \rightarrow R_2</m>)
         </li>
@@ -678,6 +670,7 @@ in many applications we use it for in <xref ref="EV"/>.
         <li> Add -2 row 2 to row 1 (<m>R_1-2R_2 \rightarrow R_1</m>)
         </li>
     </ol>
+    </p>
     </task>
 
     <task>
@@ -685,7 +678,6 @@ in many applications we use it for in <xref ref="EV"/>.
             Consider the matrix:
             <me>\left[\begin{array}{cccc} \markedPivot{1} &amp; 3 &amp; -1 &amp; 2 \\ 2 &amp; 6 &amp; -1 &amp; 6 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
             Which row operation is the best choice for the next move in converting to RREF?
-        </p>
         <ol marker="A.">
             <li> Add row 1 to  row 3 (<m>R_3+R_1 \rightarrow R_3</m>)
             </li>
@@ -696,6 +688,7 @@ in many applications we use it for in <xref ref="EV"/>.
             <li> Add 2 row 3 to row 2 (<m>R_2+2R_3 \rightarrow R_2</m>)
             </li>
         </ol>
+        </p>
     </task>
 
     <task>
@@ -703,7 +696,6 @@ in many applications we use it for in <xref ref="EV"/>.
             Consider the matrix:
             <me>\left[\begin{array}{cccc}\markedPivot{1} &amp; 3 &amp; -1 &amp; 2  \\ 0 &amp; 0 &amp; 1 &amp; 2 \\ 0 &amp; 0 &amp; 1 &amp; 2 \end{array}\right].</me>
             Which row operation is the best choice for the next move in converting to RREF?
-        </p>
         <ol marker="A.">
             <li> Add row 1 to row 2 (<m>R_2+R_1 \rightarrow R_2</m>)
             </li>
@@ -714,6 +706,7 @@ in many applications we use it for in <xref ref="EV"/>.
             <li> Add row 2 to row 1 (<m>R_1+R_2 \rightarrow R_1</m>)
             </li>
         </ol>
+        </p>
     </task>
 
     <task>
@@ -722,7 +715,6 @@ in many applications we use it for in <xref ref="EV"/>.
             <me>\left[\begin{array}{cccc}2 &amp; 6 &amp; -1 &amp; 6  \\ 1 &amp; 3 &amp; -1 &amp; 2 \\ -1 &amp; -3 &amp; 2 &amp; 0 \end{array}\right].</me>
             Mark the position where the first pivot should be. 
             Which row operation is the best choice for the first move in converting to RREF?
-        </p>
         <ol marker="A.">
             <li> Add row 3 to row 2 (<m>R_2+R_3 \rightarrow R_2</m>)
             </li>
@@ -733,6 +725,7 @@ in many applications we use it for in <xref ref="EV"/>.
             <li> Add -2 row 2 to row 1 (<m>R_1-2R_2 \rightarrow R_1</m>)
             </li>
         </ol>
+        </p>
     </task>
 </activity>
 
@@ -888,16 +881,16 @@ rref(A)
             </p>
         </activity>
         <activity>
-            <introduction>
+            <statement>
                 <p>
                     Which of the following matrices are not in RREF?
                 </p>
-            </introduction>
             <sidebyside widths="33% 33% 33%">
                 <p><me> A=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 2 &amp; -3 \\ 0 &amp; 3 &amp; 3 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right]</me></p>
                 <p><me> B=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 0 &amp; 7 \\ 0 &amp; 1 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; 1 &amp; 3 \end{array}\right]</me></p>
                 <p><me> C=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 0 &amp; 4 \\ 0 &amp; 1 &amp; 0 &amp; 7 \\ 0 &amp; 0 &amp; 0 &amp; 4 \end{array}\right]</me></p>
                 </sidebyside>
+            </statement>
         </activity>
     </subsection>
 
@@ -905,18 +898,19 @@ rref(A)
     <subsection>
         <title>Videos</title>
     <figure>
+        <caption>Video: Row reduction</caption>
 		<video xml:id="video-LE2" youtube="6iGMPpD9Mf8">
 			<!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
 		</video>
-        <caption>Video: Row reduction</caption>
     </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/LE2/"/>.</p>
-    </exercises>
+    </subsection>
 
     <subsection>
         <title>Mathematical Writing Explorations</title>

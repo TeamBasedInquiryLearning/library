@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <example xml:id="sample-EV7"><title>EV7</title>
-<statement>
+<introduction>
     <p>
 Consider the homogeneous system of equations
         <md alignment="alignat" alignat-columns="6">
@@ -19,22 +19,14 @@ x_1 &amp;\,+\,&amp; x_2 &amp;\,+\,&amp; 3x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;
             </mrow>
         </md>
     </p>
-    <ol>
-        <li>
-            <p>
+</introduction>
+<task>
+    <statement>
+        <p>
 Find the solution space of the system.
-            </p>
-        </li>
-        <li>
-            <p>
-Find a basis of the solution space.
-            </p>
-        </li>
-    </ol>
-</statement>
-<solution>
-    <ol>
-        <li>
+        </p>
+    </statement>
+    <solution>
             <p>
 Observe that
 <me> \RREF
@@ -77,15 +69,21 @@ x_1 &amp;\,\,&amp;  &amp;\,+\,&amp; 2x_3 &amp;\,\,&amp;  &amp;\,+\,&amp; x_5 &am
 Thus, the solution set is
 <me> \setBuilder{\left[\begin{array}{c} -2a-b \\ -a \\ a \\ -b \\ b \end{array}\right]}{a,b \in \IR} .</me>
             </p>
-        </li>
-        <li>
+    </solution>
+</task>
+<task>
+    <statement>
+        <p>
+Find a basis of the solution space.
+        </p>
+    </statement>
+    <solution>
             <p>
 Since we can write <me>\left[\begin{array}{c} -2a-b \\ -a \\ a \\ -b \\ b \end{array}\right] =
 a \left[\begin{array}{c} -2 \\ -1 \\ 1 \\ 0 \\ 0 \end{array}\right] + b \left[\begin{array}{c} -1 \\ 0 \\ 0 \\ -1 \\ 1 \end{array}\right], </me>
 a basis for the solution space is
 <me> \left \{ \left[\begin{array}{c} -2 \\ -1 \\ 1 \\ 0 \\ 0 \end{array}\right] , \left[\begin{array}{c} -1 \\ 0 \\ 0 \\ -1 \\ 1 \end{array}\right] \right\}.</me>
             </p>
-        </li>
-    </ol>
-</solution>
+    </solution>
+</task>
 </example>

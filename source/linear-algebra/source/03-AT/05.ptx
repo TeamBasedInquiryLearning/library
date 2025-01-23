@@ -34,7 +34,6 @@
   <p>
 Consider the following applications of properties of the real numbers 
 <m>\mathbb R</m>:
-  </p>
 <ol>
 <li><p> <m>1+(2+3)=(1+2)+3</m>.
   </p>
@@ -65,6 +64,7 @@ Consider the following applications of properties of the real numbers
   </p>
 </li>
 </ol>
+  </p>
 </observation>
 
 <activity estimated-time='5'>
@@ -125,7 +125,6 @@ Which of the following properties of <m>\IR^2</m> Euclidean vectors is NOT true?
     <p>
       Consider the following applications of properties of the real numbers 
       <m>\mathbb R</m>:
-    </p>
     <ol>
     <li>
         <p>
@@ -155,6 +154,7 @@ Which of the following properties of <m>\IR^2</m> Euclidean vectors is NOT true?
         </p>
       </li>
     </ol>
+    </p>
   </observation>
 <activity estimated-time='5'>
     <statement>
@@ -200,7 +200,6 @@ Which of the following properties of <m>\IR^2</m> Euclidean vectors is NOT true?
         <p>
   Every Euclidean vector space <m>\mathbb R^n</m> satisfies the following properties, where
   <m>\vec u,\vec v,\vec w</m> are Euclidean vectors and <m>a,b</m> are scalars.
-        </p>
 <ol>
 <li><p> Vector addition is associative: <m>\vec u +  (\vec v +  \vec w)=
         (\vec u +  \vec v) +  \vec w</m>.
@@ -245,7 +244,7 @@ Which of the following properties of <m>\IR^2</m> Euclidean vectors is NOT true?
     </p>
   </li>
 </ol>
-
+        </p>
     </statement>
   </fact>
 
@@ -266,6 +265,7 @@ Which of the following properties of <m>\IR^2</m> Euclidean vectors is NOT true?
             vector spaces with scalars from other fields like the complex or rational numbers.
           </p>
         </aside>
+        <p>
 <ol>
 <li><p> Vector addition is associative: <m>\vec u\oplus (\vec v\oplus \vec w)=
         (\vec u\oplus \vec v)\oplus \vec w</m>.
@@ -310,7 +310,7 @@ Which of the following properties of <m>\IR^2</m> Euclidean vectors is NOT true?
     </p>
   </li>
 </ol>
-
+  </p>
     </statement>
 </definition>
 
@@ -379,11 +379,9 @@ is an example of a vector space.
 </remark>
 
 <remark>
-    <statement>
     <p>
   The following sets are just a few examples of vector spaces, with the usual/natural
   operations for addition and scalar multiplication.
-    </p>
   <ul>
 <li>
     <p>
@@ -417,7 +415,7 @@ is an example of a vector space.
     </p>
     </li>
   </ul>
-    </statement>
+    </p>
 </remark>
 
 <activity estimated-time='5'>
@@ -585,7 +583,6 @@ into just <m>(x,y)</m>.
 
 
 <remark>
-    <statement>
     <p>
   It turns out <m>V=\setBuilder{(x,y)}{y=2^x}</m> with
 operations <m>\oplus,\odot</m> defined by
@@ -594,12 +591,11 @@ operations <m>\oplus,\odot</m> defined by
       \hspace{3em}
     c\odot (x,y)=(cx,y^c)
         </me>
-satisifes all eight properties from <xref ref="AT5-properties"/>.
+satisfies all eight properties from <xref ref="AT5-properties"/>.
     </p>
     <p>
   Thus, <m>V</m> is a vector space.
     </p>
-    </statement>
 </remark>
 
 
@@ -705,24 +701,21 @@ for <em>all</em> <m>c\in \IR,\, (x_1,y_1),(x_2,y_2) \in V</m>.
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-AT5-1" youtube="7Qv5Sykdv0I">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Verifying that a vector space property holds</caption>
+            <video xml:id="video-AT5-1" youtube="7Qv5Sykdv0I"/>
         </figure>
         <figure>
-            <video xml:id="video-AT5-2" youtube="q6VSE54ogc4">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Showing something is not a vector space</caption>
+            <video xml:id="video-AT5-2" youtube="q6VSE54ogc4"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT5/"/>.</p>
-    </exercises>
+    </subsection>
             <subsection>
         <title>Mathematical Writing Explorations</title>
                 <exploration>

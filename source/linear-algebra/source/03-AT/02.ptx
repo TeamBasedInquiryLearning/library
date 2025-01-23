@@ -13,11 +13,9 @@
   <title>Warm Up</title>
 
   <remark>
-    <statement>
     <p>
 Recall that a linear map <m>T:V\rightarrow W</m>
 satisfies
-    </p>
 <ol>
 <li>
     <p>
@@ -32,12 +30,11 @@ satisfies
     </p>
 </li>
 </ol>
-    <p>
 In other words, a map is linear when vector space operations
 can be applied before or after the transformation without affecting the result.
     </p>
-    </statement>
 </remark>
+
   <activity>
     <introduction>
       <p>
@@ -291,12 +288,10 @@ Consider any basis <m>\{\vec b_1,\dots,\vec b_n\}</m> for <m>V</m>.  Since every
 vector <m>\vec v</m> can be written as a linear combination of
 basis vectors,  <m>\vec v = x_1\vec b_1+\dots+ x_n\vec b_n</m>, we may compute
 <m>T(\vec v)</m> as follows:
-        </p>
 <me>
   T(\vec v)=T(x_1\vec b_1+\dots+ x_n\vec b_n)=
   x_1T(\vec b_1)+\dots+x_nT(\vec b_n)
 .</me>
-        <p>
 Therefore any linear transformation <m>T:V \rightarrow W</m> can be defined
 by just describing the values of <m>T(\vec b_i)</m>.
         </p>
@@ -318,7 +313,6 @@ store this information in an <m>m\times n</m> matrix, called the <term>standard 
 For example,
 let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear map determined by
 the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
-        </p>
 <me>\scriptsize
   T\left(\vec e_1 \right)
 =
@@ -338,7 +332,6 @@ the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
 =
   \left[\begin{array}{c} -3 \\ 2\end{array}\right]
 </me>
-        <p>
 Then the standard matrix corresponding to <m>T</m> is
 <me>
   \left[\begin{array}{ccc}T(\vec e_1) &amp; T(\vec e_2) &amp; T(\vec e_3)\end{array}\right]
@@ -422,7 +415,7 @@ Find the standard matrix for <m>T</m>.
 Since the formula for a linear transformation <m>T</m> and
 its standard matrix <m>A</m> may both be used to compute the transformation
 of a vector <m>\vec x</m>, we will often write
-<m>T(\vec x)</m> and <m>A\vec x</m> interchangably:
+<m>T(\vec x)</m> and <m>A\vec x</m> interchangeably:
 <me>
   T\left(\left[\begin{array}{c}x_1\\x_2\\x_3\\x_4\end{array}\right]\right)
     =
@@ -547,18 +540,17 @@ Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-AT2" youtube="37YWYC4VOGk">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Using the standard matrix to compute the image of a vector</caption>
+            <video xml:id="video-AT2" youtube="37YWYC4VOGk"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT2/"/>.</p>
-    </exercises>
+    </subsection>
  <subsection>    
     <title>Mathematical Writing Explorations</title>
                          <p>We can represent images in the plane <m>\mathbb{R}^2</m> using vectors, and manipulate those images with linear transformations. We introduce some notation in these explorations that is needed for their completion, but is not essential to the rest of the text. These have a geometric flair to them, and can be understood by thinking of geometric transformations in terms of standard matrices.</p>
@@ -567,7 +559,7 @@ Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</
      <me>\vec{v}\cdot \vec{w} = v_1w_1 + v_2w_2 + \cdots v_nw_n.</me> 
 </p>     
 <exploration>
-     <statement>
+     <p>
     For each of the following properties, determine if it is held by the dot product. Either provide a proof that the property holds, or provide a counter-example if it does not.
 
 <ul>
@@ -575,14 +567,14 @@ Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</
 <li> Associative?</li>
 <li> Commutative?</li>
     </ul>
-</statement></exploration>
+</p></exploration>
     
-     <exploration><statement>
-         Given the properties you proved in the last exploration, could the dot product take the place of <m>\oplus</m> as a vector space operation on <m>\mathbb{R}^n</m>?</statement></exploration>
+     <exploration><p>
+         Given the properties you proved in the last exploration, could the dot product take the place of <m>\oplus</m> as a vector space operation on <m>\mathbb{R}^n</m>?</p></exploration>
 
-<exploration><statement>Is the dot product a linear operator? That is, given vectors <m>\vec{u}, \vec{v}, \vec{w} \in \mathbb{R}^n</m>, and <m>k,m \in \mathbb{R}</m>, is it true that
+<exploration><p>Is the dot product a linear operator? That is, given vectors <m>\vec{u}, \vec{v}, \vec{w} \in \mathbb{R}^n</m>, and <m>k,m \in \mathbb{R}</m>, is it true that
 <me>\vec{u} \cdot (k\vec{v} + m\vec{w}) = k(\vec{u} \cdot \vec{v}) + m(\vec{u}\cdot\vec{w}).</me> Prove or provide a counter-example.
-</statement></exploration>
+</p></exploration>
    
      <exploration>
          <statement>
@@ -592,7 +584,7 @@ Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</
      </exploration>
      
 <exploration>
-     <statement>
+     <p>
                     <ul>
     <li>A <term>dilation</term> is given by by mapping a vector <m>\vec{v} = \left[\begin{array}{c}x\\y\end{array}\right]</m> to some scalar multiple of <m>\vec{v}</m>.</li>
 
@@ -607,7 +599,7 @@ Represent each of the following transformations with respect to the standard bas
 <li>Dilation by some scalar <m>s</m>.</li>
 </ul>
 Prove that each transformation is linear, and that your matrix representations are correct.
-                </statement>
+                </p>
     </exploration>
     </subsection>
     <subsection>

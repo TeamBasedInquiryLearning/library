@@ -156,7 +156,6 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
     <statement>
         <p>
         A <term>basis</term><idx> basis </idx> of a vector space <m>V</m> is a set of vectors <m>S</m> contained in <m>V</m> for which 
-        </p>
         <ol>
             <li>
                 <p>
@@ -170,8 +169,7 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
                 </p>
             </li>
         </ol>
-
-        <p>These two properties may be expressed more succintly as the statement "Every vector in <m>V</m> can be expressed
+        These two properties may be expressed more succinctly as the statement "Every vector in <m>V</m> can be expressed
         <em>uniquely</em> as a linear combination of the vectors in <m>S</m>".
         </p>
     </statement>
@@ -538,43 +536,42 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-EV5" youtube="ayft2QhQ-xM">
-              <!--<track kind="subtitles" marker="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-            </video>
             <caption>Video: Verifying that a set of vectors is a basis of a vector space</caption>
+            <video xml:id="video-EV5" youtube="ayft2QhQ-xM"/>
         </figure>
     </subsection>
 
 
 
-    <exercises>
+    <subsection>
+        <title>Exercises</title>
         <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV5/"/>.</p>
-    </exercises>
+    </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration>
-                <statement>
+                <p>
                     <ul>
                     <li>What is a basis for <m>M_{2,2}</m>?</li>
 <li>What about <m>M_{3,3}</m>?</li>
-<li>Could we write each of these in a way that looks like the standard basis vectors in <m>\mathbb{R}^m</m> for some <m>m</m>? Make a conjecture about the relationship between these spaces of matrices and standard Eulidean space.</li>
+<li>Could we write each of these in a way that looks like the standard basis vectors in <m>\mathbb{R}^m</m> for some <m>m</m>? Make a conjecture about the relationship between these spaces of matrices and standard Euclidean space.</li>
 </ul>
-                </statement>
+                </p>
                 </exploration>
                 <exploration>
-<statement>
+<p>
 Recall our earlier definition of symmetric matrices. Find a basis for each of the following:
 <ul>
     <li>The space of <m>2 \times 2</m> symmetric matrices.</li>
     <li>The space of <m>3 \times 3</m> symmetric matrices.</li>
     <li>The space of <m>n \times n</m> symmetric matrices.</li>
 </ul>
-</statement>
+</p>
                     </exploration>
                 <exploration>
-<statement>
+<p>
 Must a basis for the space <m>P_2</m>, the space of all quadratic polynomials, contain a polynomial of each degree less than or equal to 2? Generalize your result to polynomials of arbitrary degree.
-                </statement>
+                </p>
     </exploration>
     </subsection>
     

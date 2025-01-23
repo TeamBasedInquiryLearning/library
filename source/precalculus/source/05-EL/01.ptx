@@ -360,7 +360,7 @@
     </activity>
     <remark>
       <p>
-        Notice that in <xref ref="act-evaluate-exp"/> part (a) the ouput value is larger than the base, 
+        Notice that in <xref ref="act-evaluate-exp"/> part (a) the output value is larger than the base, 
         while in part (b) the output value is smaller than the base.  This is similar to the difference 
         between a positive and negative slope for linear functions.
       </p>
@@ -509,11 +509,9 @@
       </p>
     </remark>
     <remark xml:id="remark-exp-growvsdec">
-      <statement>
         <p>
           An exponential function of the form <m>f(x)=ab^{x}</m> will grow (or increase) if <m>b \gt 1</m> and decay (or decrease) if <m>0\lt b \lt 1</m>.
         </p>
-      </statement>
     </remark>
     <activity xml:id="exp-growth-or-decay">
       <introduction>
@@ -908,13 +906,11 @@
 
         
     <remark xml:id="remark-number-e">
-      <statement>
         <p>
           Similar to how <m>\pi</m> arises naturally in geometry, there is an irrational number called <term><m>e</m></term> that
           arises naturally when working with exponentials.  We usually use the approximation  <m>e \approx 2.718282</m>.  
           <m>e</m> is also found on most scientific and graphing calculators. 
         </p> 
-      </statement> 
       <aside>
         <p> See <xref ref="activity-introducing-e"/> for an exploration of how <m>e</m> arises naturally.
         </p>
