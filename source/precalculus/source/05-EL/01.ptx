@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       Linear functions have a constant rate of change - that is a constant change in output for every change in input. Let's consider functions which do not fit this model - those which grow more rapidly and change by a varying amount for every change in input.
+    </p>
     </remark>
     <activity xml:id="act-job-expvslog">
       <introduction>
@@ -285,7 +287,9 @@
   </task>
     </activity>
     <remark>
+    <p>
       This idea of a function that grows very rapidly by a factor, ratio, or percent each time, like the second job in <xref ref="act-job-expvslog"/>,  is considered exponential growth. 
+    </p>
     </remark>
     <definition xml:id="def-exp-func">
       <statement>
@@ -294,7 +298,7 @@
           <me>
             f(x)=ab^{x}
           </me>
-          <m>a</m> is the initial value and <m>b</m> is the base.
+          where <m>a</m> is the initial value and <m>b</m> is the base.
   
         </p>
       </statement>
@@ -356,7 +360,7 @@
     </activity>
     <remark>
       <p>
-        Notice that in <xref ref="act-evaluate-exp"/> part (a) the ouput value is larger than the base, 
+        Notice that in <xref ref="act-evaluate-exp"/> part (a) the output value is larger than the base, 
         while in part (b) the output value is smaller than the base.  This is similar to the difference 
         between a positive and negative slope for linear functions.
       </p>
@@ -505,11 +509,9 @@
       </p>
     </remark>
     <remark xml:id="remark-exp-growvsdec">
-      <statement>
         <p>
           An exponential function of the form <m>f(x)=ab^{x}</m> will grow (or increase) if <m>b \gt 1</m> and decay (or decrease) if <m>0\lt b \lt 1</m>.
         </p>
-      </statement>
     </remark>
     <activity xml:id="exp-growth-or-decay">
       <introduction>
@@ -674,7 +676,9 @@
   
     </activity>
     <remark>
+    <p>
       In a linear function the differences are constant, while in an exponential function the ratios are constant.
+    </p>
     </remark>
 
     <activity xml:id="act-find-equation">
@@ -742,10 +746,12 @@
     </activity>
 
     <remark xml:id="neg-exp">
+    <p>
       Recall the negative rule of exponents which states that for any nonzero real number <m>a</m> and natural number <m>n</m>
     <me>
       a^{-n}=\dfrac{1}{a^n}
     </me>
+    </p>
     
     </remark>
     <activity xml:id="act-neg-exp">
@@ -900,13 +906,11 @@
 
         
     <remark xml:id="remark-number-e">
-      <statement>
         <p>
           Similar to how <m>\pi</m> arises naturally in geometry, there is an irrational number called <term><m>e</m></term> that
           arises naturally when working with exponentials.  We usually use the approximation  <m>e \approx 2.718282</m>.  
           <m>e</m> is also found on most scientific and graphing calculators. 
         </p> 
-      </statement> 
       <aside>
         <p> See <xref ref="activity-introducing-e"/> for an exploration of how <m>e</m> arises naturally.
         </p>
@@ -960,7 +964,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL1/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL1/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

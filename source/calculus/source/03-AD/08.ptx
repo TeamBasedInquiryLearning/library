@@ -29,18 +29,252 @@
             <p>Which of the following diagrams best illustrates how the box is created?</p>
             <ol marker="A." cols="2">
               <li>
-                <image source="thebox-1.png">
-                  <shortdescription>Square of side length 8 with square corners of side length <m>x</m> removed</shortdescription>
+                <image>
+                  <sageplot>
+                    # Import necessary library
+                    from sage.plot.graphics import Graphics
+
+                    # Define variables
+                    x = 2
+                    side_large_square = 8
+                    side_small_square = 2
+                    side_inner_square = side_large_square - 2 * side_small_square
+
+                    # Create the large square
+                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
+                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
+
+                    # Create the inner square
+                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
+                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
+
+                    # Create the small squares (one corner example, replicate for all corners)
+                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
+                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
+                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
+                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
+
+                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
+                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
+                    lass1 = line2d([(6,8.25), (6,8.75)])
+                    lass2 = line2d([(8,8.25), (8,8.75)])
+                    sll1 = line2d([(8.25,6),(8.75,6)])
+                    sll2 = line2d([(8.25,2),(8.75,2)])
+                    label_side = text("8-2x", (9.1,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
+
+                    # Combine all parts into one graphic
+                    geometry = Graphics()
+                    geometry += large_square
+                    geometry += inner_square
+                    geometry += inner_square2
+                    geometry += small_square_1
+                    geometry += small_square_2
+                    geometry += small_square_3
+                    geometry += small_square_4
+                    geometry += line_above_small_square
+                    geometry += lass1
+                    geometry += lass2
+                    geometry += label_x
+                    geometry += side_label_line
+                    geometry += sll1
+                    geometry += sll2
+                    geometry += label_side
+
+                    # Set axes and title
+                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
+                    geometry.axes(False)
+
+                    # Show the plot
+                    geometry
+                  </sageplot>
                 </image>
               </li>
               <li>
-                <image source="thebox-2.png" />
+                <image>
+                  <sageplot>
+                    # Import necessary library
+                    from sage.plot.graphics import Graphics
+
+                    # Define variables
+                    x = 2
+                    side_large_square = 8
+                    side_small_square = 2
+                    side_inner_square = side_large_square - 2 * side_small_square
+
+                    # Create the large square
+                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
+                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
+
+                    # Create the inner square
+                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
+                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
+
+                    # Create the small squares (one corner example, replicate for all corners)
+                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
+                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
+                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
+                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
+
+                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
+                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
+                    lass1 = line2d([(6,8.25), (6,8.75)])
+                    lass2 = line2d([(8,8.25), (8,8.75)])
+                    sll1 = line2d([(8.25,6),(8.75,6)])
+                    sll2 = line2d([(8.25,2),(8.75,2)])
+                    label_side = text("8-x", (9,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
+
+                    # Combine all parts into one graphic
+                    geometry = Graphics()
+                    geometry += large_square
+                    geometry += inner_square
+                    geometry += inner_square2
+                    geometry += small_square_1
+                    geometry += small_square_2
+                    geometry += small_square_3
+                    geometry += small_square_4
+                    geometry += line_above_small_square
+                    geometry += lass1
+                    geometry += lass2
+                    geometry += label_x
+                    geometry += side_label_line
+                    geometry += sll1
+                    geometry += sll2
+                    geometry += label_side
+
+                    # Set axes and title
+                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
+                    geometry.axes(False)
+
+                    # Show the plot
+                    geometry
+                  </sageplot>
+                </image>
               </li>
               <li>
-                <image source="thebox-3.png" />
+                <image>
+                  <sageplot>
+                    # Import necessary library
+                    from sage.plot.graphics import Graphics
+
+                    # Define variables
+                    x = 2
+                    side_large_square = 8
+                    side_small_square = 2
+                    side_inner_square = side_large_square - 2 * side_small_square
+
+                    # Create the large square
+                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
+                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
+
+                    # Create the inner square
+                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
+                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
+
+                    # Create the small squares (one corner example, replicate for all corners)
+                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
+                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
+                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
+                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
+
+                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
+                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
+                    lass1 = line2d([(6,8.25), (6,8.75)])
+                    lass2 = line2d([(8,8.25), (8,8.75)])
+                    sll1 = line2d([(8.25,6),(8.75,6)])
+                    sll2 = line2d([(8.25,2),(8.75,2)])
+                    label_side = text("y", (8.75,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
+
+                    # Combine all parts into one graphic
+                    geometry = Graphics()
+                    geometry += large_square
+                    geometry += inner_square
+                    geometry += inner_square2
+                    geometry += small_square_1
+                    geometry += small_square_2
+                    geometry += small_square_3
+                    geometry += small_square_4
+                    geometry += line_above_small_square
+                    geometry += lass1
+                    geometry += lass2
+                    geometry += label_x
+                    geometry += side_label_line
+                    geometry += sll1
+                    geometry += sll2
+                    geometry += label_side
+
+                    # Set axes and title
+                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
+                    geometry.axes(False)
+
+                    # Show the plot
+                    geometry
+                  </sageplot>
+                </image>
               </li>
               <li>
-                <image source="thebox-4.png" />
+                <image>
+                  <sageplot>
+                    # Import necessary library
+                    from sage.plot.graphics import Graphics
+
+                    # Define variables
+                    x = 2
+                    side_large_square = 8
+                    side_small_square = 2
+                    side_inner_square = side_large_square - 2 * side_small_square
+
+                    # Create the large square
+                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
+                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
+
+                    # Create the inner square
+                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
+                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
+
+                    # Create the small squares (one corner example, replicate for all corners)
+                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
+                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
+                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
+                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
+
+                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
+                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
+                    lass1 = line2d([(6,8.25), (6,8.75)])
+                    lass2 = line2d([(8,8.25), (8,8.75)])
+                    sll1 = line2d([(8.25,6),(8.75,6)])
+                    sll2 = line2d([(8.25,2),(8.75,2)])
+                    label_side = text("8", (8.75,4), fontsize=15,color='black')
+                    label_x = text("x", (7,8.75), fontsize=15, color='black')
+
+                    # Combine all parts into one graphic
+                    geometry = Graphics()
+                    geometry += large_square
+                    geometry += inner_square
+                    geometry += inner_square2
+                    geometry += small_square_1
+                    geometry += small_square_2
+                    geometry += small_square_3
+                    geometry += small_square_4
+                    geometry += line_above_small_square
+                    geometry += lass1
+                    geometry += lass2
+                    geometry += label_x
+                    geometry += side_label_line
+                    geometry += sll1
+                    geometry += sll2
+                    geometry += label_side
+
+                    # Set axes and title
+                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
+                    geometry.axes(False)
+
+                    # Show the plot
+                    geometry
+                  </sageplot>
+                </image>
               </li>
             </ol> 
           </statement>
@@ -199,7 +433,43 @@
 
         <figure xml:id="F-3-4-PA1" permid="RHW">
           <caption>A rectangular parcel with a square end.</caption>
-          <image width="47%" source="3_4_PA1" />
+          <image width="47%">
+            <sageplot>
+              from sage.plot.graphics import Graphics
+              geometry = Graphics()
+              front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
+              right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
+              front_bottom = polygon2d([(0,0),(2,0),(2,1)],color='cyan',alpha=1)
+              front = polygon2d([(0,0),(2,1),(2,2),(0,2)],color='powderblue')
+              left_top = polygon2d([(0,2),(2,2),(4,3),(4,4)],color='powderblue')
+              right_top = polygon2d([(4,3),(4,4),(6,4)],color='powderblue')
+              back = polygon2d([(4,3),(6,4),(6,2),(4,2)],color='powderblue')
+              middle = polygon2d([(2,1),(2,2),(4,3),(4,2)],color='powderblue')
+              bottom = polygon2d([(2,0),(2,1),(4,2),(6,2)],color='cyan',axes=False)
+              dash1 = line(([(0,0),(2,1)]),linestyle='dashed',color='black',thickness=2)
+              dash2 = line(([(2,1),(4,2)]),linestyle='dashed',color='black',thickness=2)
+              dash3 = line(([(4,2),(6,2)]),linestyle='dashed',color='black',thickness=2)
+              dash4 = line(([(4,2),(4,4)]),linestyle='dashed',color='black',thickness=2)
+              topline1 = line(([(4,4),(6,4)]),color='black',thickness=2)
+              topline2 = line(([(0,2),(4,4)]),color='black',thickness=2)
+              geometry += dash1
+              geometry += dash2
+              geometry += dash3
+              geometry += dash4
+              geometry += topline1
+              geometry += topline2
+              geometry += front_bottom
+              geometry += front
+              geometry += left_top
+              geometry += right_top
+              geometry += back
+              geometry += middle
+              geometry += bottom
+              geometry += front_border
+              geometry += right_border
+              geometry
+            </sageplot>
+          </image>
         </figure>
 </task>
     
@@ -379,7 +649,7 @@ Decrease the cost by <m>\$4</m>.
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/AD8/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AD8/"/>
       </p>
     </subsection>
 </section>

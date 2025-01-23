@@ -14,9 +14,9 @@
       <introduction>
         <remark xml:id="x-intercepts">
          
-  <statement><p> Recall that to find the <m>x</m>-intercepts of a function <m>f(x)</m>, we need to find the values of <m>x</m> that make <m>f(x)=0</m>. We saw in <xref ref="EQ5"/> that the zero product property (<xref ref="def-zero-product-property"/>) was helpful when <m>f(x)</m> is a polynomial that we can factor. Let's consider how we approach polynomials which are not in factored form or easily factorable.
+  <p> Recall that to find the <m>x</m>-intercepts of a function <m>f(x)</m>, we need to find the values of <m>x</m> that make <m>f(x)=0</m>. We saw in <xref ref="EQ5"/> that the zero product property (<xref ref="def-zero-product-property"/>) was helpful when <m>f(x)</m> is a polynomial that we can factor. Let's consider how we approach polynomials which are not in factored form or easily factorable.
               </p>
-  </statement></remark></introduction>
+  </remark></introduction>
       <activity xml:id="motivate-remainder-theorem">
         <introduction>
           <p>
@@ -96,7 +96,9 @@
       </theorem>
 
       <remark xml:id="remark-divide-to-find-zeros">
+      <p>
         If we know one zero, then we can divide by <m>x-a</m> where <m>a</m> is a zero. After this, the quotient will have smaller degree and we can work on factoring the rest. We can “chip away” at the polynomial one zero at a time.
+      </p>
       </remark>
 
       <activity xml:id="motivate-factor-fully">
@@ -146,7 +148,9 @@
       </activity>
     
       <remark xml:id="remark-intro-rational-root">
+      <p>
         We were able to find all the zeros of the polynomial in <xref ref="motivate-factor-fully"/> because we were given one of the zeros. If we don't have a zero to help us get started (or need more than one zero for a function of higher degree), we have a couple of options.
+      </p>
       </remark>
 
       <activity xml:id="motivate-rational-root">
@@ -231,7 +235,9 @@
       </activity>
 
       <remark>
+      <p>
         Using the graph to find an initial zero can be helpful, but they may not always be easy to identify.
+      </p>
       </remark>
 
    <activity xml:id="quad-rational-root">
@@ -267,7 +273,9 @@
    </activity>
    
    <remark>
+   <p>
     In <xref ref="quad-rational-root"/> we found that the roots were both factors of the constant term divided by factors of the leading coefficient.  This can be extended to polynomials of larger degree.
+    </p>
    </remark>
    <theorem xml:id="thm-rational-root">
    <title>Rational Root Theorem</title>
@@ -390,13 +398,15 @@
     </task>
    </activity>
 <remark>
+<p>
   Notice that the zeros of the quadratic factor were imaginary and are related. This also occured in <xref ref="quadratic-formula-imaginary"/>.
+</p>
 </remark>
 
 <theorem>
   <title>Conjugate Zeros Theorem</title> 
   <statement> 
-    <p> Let <m>p(x)</m> be a polynomial function with real coefficients. If <m>a+bi</m>, is a complex zero of the function, 
+    <p> Let <m>p(x)</m> be a polynomial function with real coefficients. If <m>a+bi</m> is a complex zero of the function, 
       then the conjugate <m>a-bi</m> is also a zero of the function. 
       These two zeroes are called <term>conjugate zeros</term>, or a <term>conjugate pair of zeros</term>.
   </p>
@@ -470,7 +480,7 @@
     </subsection>
     
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR5/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR5/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

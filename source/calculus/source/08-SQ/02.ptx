@@ -367,23 +367,23 @@
     
     
     <activity>
-        <statement>
+        <introduction>
             <p>
-                For each of the following sequences, determine which of the properties: <em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges.
-                <task>
-                    <m>\left\{\displaystyle 3n\right\}_{n=0}^\infty.</m>
-                </task>
-                <task>
-                    <m>\left\{\displaystyle \frac{n^3}{3^n}\right\}_{n=0}^\infty.</m>
-                </task>
-                <task>
-                    <m>\left\{\displaystyle \frac{n}{n+3}\right\}_{n=1}^\infty.</m>
-                </task>
-                <task>
-                    <m>\left\{\displaystyle \frac{(-1)^n}{n+3}\right\}_{n=1}^\infty.</m>
-                </task>
+For each of the following sequences, determine which of the properties: <em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges.
             </p>
-        </statement>
+        </introduction>
+        <task>
+            <p><m>\left\{\displaystyle 3n\right\}_{n=0}^\infty.</m></p>
+        </task>
+        <task>
+            <p><m>\left\{\displaystyle \frac{n^3}{3^n}\right\}_{n=0}^\infty.</m></p>
+        </task>
+        <task>
+            <p><m>\left\{\displaystyle \frac{n}{n+3}\right\}_{n=1}^\infty.</m></p>
+        </task>
+        <task>
+            <p><m>\left\{\displaystyle \frac{(-1)^n}{n+3}\right\}_{n=1}^\infty.</m></p>
+        </task>
     </activity>
     
     
@@ -419,7 +419,7 @@
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/SQ2/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/SQ2/"/>
         </p>
     </subsection>
     
