@@ -223,7 +223,7 @@
   <task>
     <statement>
       <p>
-        Notice that the <m>a</m>-value is not <m>1</m>. Before we complete the square, we will want to factor out the GCF from the <m>x^2</m> and <m>x</m> terms. What does your equation look like when factoring out the GCF?
+        Notice that the <m>a</m>-value is not <m>1</m>. Before we complete the square, we will want to factor out the coefficient of the <m>x^2</m> term. What does your equation look like when factoring out <m>2</m>?
       </p>
     </statement>
     <answer>
@@ -241,7 +241,7 @@
     </statement>
     <hint>
       <p>
-        Refer back to <xref ref="def-completing-the-square"/> to help you determine how to find the constant term. Be careful with that GCF!
+        Refer back to <xref ref="def-completing-the-square"/> to help you determine how to find the constant term. Be careful when the coefficient is not <m>1</m>!
       </p>
     </hint>
     <answer>
@@ -293,7 +293,7 @@
   </activity>
 
   <remark>
-    <p>In <xref ref="standard-to-vertex-form"/>, we were able to convert from standard form to vertex form. If you were to do this for the general form of <m>y=ax^2+bx+c</m>, you will see that the axis of symmetry will always be <m>-\frac{b}{2a}</m>. For instance, suppose we start with
+    <p>In <xref ref="standard-to-vertex-form"/>, we were able to convert from standard form to vertex form. If you were to do this for the general form of <m>y=ax^2+bx+c</m>, you will see that the <m>x</m>-value of the vertex will always be of the form <m>-\frac{b}{2a}</m>. For instance, suppose we start with
     <me>y=ax^2+bx+c</me>.
     Following similar steps as we did in <xref ref="standard-to-vertex-form"/>, we would get:
     <me>y-c=ax^2+bx</me>
@@ -306,7 +306,7 @@
     
     <me>y=a\left(x^2+\frac{b}{2a}\right)^2+c-\frac{b^2}{4a}</me>
 
-    In the vertex form, <m>y=(x-h)^2+k</m>, the vertex <m>(h,k)</m> can be identified as: 
+    In the vertex form, <m>y=a(x-h)^2+k</m>, the vertex <m>(h,k)</m> can be identified as: 
 
     <me>h=-\frac{b}{2a}</me>
     <me>k=c-\frac{b^2}{4a}</me>
@@ -316,7 +316,7 @@
 
   <observation xml:id="standard-form-aos">
     <statement>
-      <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=-\dfrac {b}{2a}</m> and the vertex is at the point <m> \left(-\dfrac{b}{2a},f\left(-\dfrac{b}{2a}\right)\right)</m>.
+      <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic<m>\left(f(x)=ax^2+bx+c\right)</m> to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=-\dfrac {b}{2a}</m> and the vertex is at the point <m> \left(-\dfrac{b}{2a},f\left(-\dfrac{b}{2a}\right)\right)</m>.
       </p>
     </statement>
   </observation>
