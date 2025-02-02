@@ -17,7 +17,7 @@
   Recall that when solving a linear equation, you use addition, subtraction, multiplication and division to isolate the variable.
 </p>
 </remark>
-<activity>
+<activity xml:id="basic-linear-equations">
   <introduction>
     <p>Solve the linear equations.
     </p>
@@ -55,7 +55,7 @@
     </answer>
   </task>
 </activity>
-<activity>
+<activity xml:id="linear-equation-with-fractions">
   <introduction>
     <p>Solve the linear equation.
       <me>\dfrac{2}{3}x-8=\dfrac{5x+1}{6}</me>
@@ -94,7 +94,8 @@
     </answer>
   </task>
 </activity>
-<activity>
+
+<activity xml:id="solutions-of-linear-equations">
   <introduction>
     <p>It is not always the case that a linear equation has exactly one solution.  Consider the following linear equations which appear similar, but their solutions are very different.
     </p>
@@ -157,12 +158,14 @@
     </answer>
   </task>
 </activity>
+
 <definition>
 <p>
   A linear equation with one unique solution is a <term>conditional equation.</term> A linear equation that is true for all values of the variable is an <term>identity equation</term>. A linear equation with no solutions is an <term>inconsistent equation.</term>
 </p>
 </definition>
-<activity>
+
+<activity xml:id="intro-to-linear-inequality">
   <introduction>
     <p>
       An inequality is a relationship between two values that are not equal.
@@ -277,7 +280,8 @@
   </answer>
   </task>
 </activity>
-<activity>
+
+<activity xml:id="linear-inequality-with-negative-coefficient">
   <introduction>
     <p>
       Let's consider what happens to the inequality when the variable has a negative coefficient.
@@ -393,12 +397,14 @@
 </answer>
 </task>
 </activity>
+
 <remark>
   <p>
   You can treat solving linear inequalities, just like solving an equation.  The one exception is when you multiply or divide by a negative value, reverse the inequality symbol.
   </p>
 </remark>
-<activity>
+
+<activity xml:id="linear-inequality-practice">
   <introduction>
     <p>Solve the following inequalities.  Express your solution in interval notation and graphically on a number line.
     </p>
@@ -479,8 +485,8 @@
     </p>
   </answer>
 </task>
-  
 </activity>
+
 <definition xml:id="def-compound_ineq">
   <statement>
     <p>
@@ -488,8 +494,8 @@
     </p>
   </statement>
 </definition>
-<activity>
-  
+
+<activity xml:id="intro-to-compound-inequality">  
   <introduction>
     <p>Consider the statement <m>3 \le x \lt 8</m>. This really means that <m>3 \le x</m> and <m>x \lt 8</m>.
     </p>
@@ -634,12 +640,14 @@
 </task>
   
 </activity>
+
 <remark>
 <p>
   Solving a compound linear inequality, uses the same methods as a single linear inequality ensuring that you perform the same operations on all three parts. Alternatively, you can break the compound inquality up into two and solve separately.
 </p>
 </remark>
-<activity>
+
+<activity xml:id="compound-inequality-practice">
   <introduction>
     <p>
       Solve the following inequalities. Express your solution in interval notation and graphically on a number line.
