@@ -519,6 +519,120 @@
       </answer>
     </activity> 
 
+    <remark>
+       <p> In the next couple of activities, we will explore linear applications in geometry.</p>
+    </remark>
+
+    <activity xml:id="length-and-perimeter-example">
+
+    <introduction>
+      <p>
+        A rectangular field is ten times as long as it is wide. If the perimeter of the field is <m>1{,}870</m> feet, what are the dimensions of the field?
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Let's first think about the relationship between the length and width of the rectangular field. How can we express the length of the field (<m>l</m>) if we let <m>w</m> represent the width of the field?
+
+            <ol marker= "A." cols="2">  
+              <li><m>l=\frac{1}{10}w</m></li>
+              <li><m>w=10l</m></li>
+              <li><m>l=10w</m></li>
+              <li><m>w=\frac{1}{10}l</m></li>
+            </ol>
+        </p>
+      </statement>
+
+    <answer>
+      <p>
+       C
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now that we can represent both the length and the width of the field, how can we represent the perimeter of the field in terms of <m>w</m>?
+
+          <ol marker= "A." cols="2">  
+              <li><m>P=10w+w+10w+w</m></li>
+              <li><m>P=20w+2w</m></li>
+              <li><m>P=11w</m></li>
+              <li><m>P=22w</m></li>
+              <li><m>P=10w^2</m></li>  
+            </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A, B, and D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+      Use your expression from part (b) and the fact that we know the perimeter is <m>1{,}870</m> feet to create an equation. Then solve for <m>w</m> to find the width of the field.
+
+       <ol marker= "A." cols="2">  
+              <li><m>w=850</m> feet</li>
+              <li><m>w=14</m> feet</li>
+              <li><m>w=13</m> feet</li>
+              <li><m>w=85</m> feet</li>  
+            </ol>
+          </p>
+      </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the value you got in part (c) to find the length of the field.
+            <ol marker= "A." cols="2">  
+              <li><m>l=850</m> feet</li>
+              <li><m>l=14</m> feet</li>
+              <li><m>l=13</m> feet</li>
+              <li><m>l=85</m> feet</li>  
+            </ol>
+
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <activity xml:id="perimeter-example-of-a-triangle">
+      <introduction>
+        <p>
+          Two sides of a triangle are <m>5</m> and <m>7</m> inches longer than the third side. If the perimeter measures <m>21</m> inches, find the length of each side.
+        </p>
+      </introduction>
+      <answer>
+        <p>
+          The three sides of the triangle measure <m>3</m> inches, <m>8</m> inches, and <m>10</m> inches.
+        </p>
+      </answer>
+    </activity>
+
+    <remark>
+      <statement>
+        <p> As you can see, there are many applications of linear equations! This section only highlights some of the more common types of applications - have you seen other types of linear applications in your life?</p>
+      </statement>
+    </remark>
+
     </subsection>
 
     <exercises>
