@@ -335,7 +335,7 @@
       <task>
         <statement>
           <p>
-            <m>f(x)=3\left( 5 \right)^{x}</m> for <m>f(-2)</m>
+            <m>f(x)=3\cdot \left( 5 \right)^{x}</m> for <m>f(-2)</m>
           </p>
         </statement>
         <answer>
@@ -360,9 +360,8 @@
     </activity>
     <remark>
       <p>
-        Notice that in <xref ref="act-evaluate-exp"/> part (a) the output value is larger than the base, 
-        while in part (b) the output value is smaller than the base.  This is similar to the difference 
-        between a positive and negative slope for linear functions.
+        Notice that in <xref ref="act-evaluate-exp"/> part (a) the output value is larger than the base, representing an increasing function, 
+        while in part (b) the output value is smaller than the base.  
       </p>
     </remark>
 
@@ -516,7 +515,7 @@
     <activity xml:id="exp-growth-or-decay">
       <introduction>
         <p>
-          For each year <m>t</m>, the population of a certain type of tree in a forest is represented by the function <m>F(t)=856(0.93)^t</m>.
+          For each year <m>t</m>, the population of a certain type of tree in a forest is represented by the function <m>F(t)=856\cdot (0.93)^t</m>.
         </p>
       </introduction>
       <task>
@@ -729,9 +728,9 @@
                 Find the equation.
                 <ol marker= "A." cols="2">
                   <li> <m>f(x)=6\left( \dfrac{3}{2} \right)^x</m> </li>
-                  <li> <m>f(x)=4\left( 6 \right)^x</m> </li>
+                  <li> <m>f(x)=4\cdot \left( 6 \right)^x</m> </li>
                   <li> <m>f(x)=4\left( \dfrac{2}{3} \right)^x</m> </li>
-                  <li> <m>f(x)=4\left( \dfrac{3}{2} \right)^x</m></li>
+                  <li> <m>f(x)=4\cdot \left( \dfrac{3}{2} \right)^x</m></li>
                 </ol>
               </p>
             </statement>
