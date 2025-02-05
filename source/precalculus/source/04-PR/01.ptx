@@ -12,8 +12,7 @@
     <subsection>
     <title>Activities</title>
     
-    <observation>Quadratic functions have many different applications in the real world. For example, say we want to identify a point at which the maximum profit or minimum cost occurs. Before we can interpret some of these situations, however, we will first need to understand how to read the graphs of quadratic functions to locate these least and greatest values. 
-       
+    <observation><p>Quadratic functions have many different applications in the real world. For example, say we want to identify a point at which the maximum profit or minimum cost occurs. Before we can interpret some of these situations, however, we will first need to understand how to read the graphs of quadratic functions to locate these least and greatest values. </p>
     </observation>
 
     <activity xml:id="PR1-activity-1">
@@ -200,9 +199,124 @@
     </statement>
   </definition>
 
+  <activity xml:id="standard-to-vertex-form">
+
+  <introduction>
+    <p>
+      Completing the square (see <xref ref="EQ5"/>) is a very useful tool or method to convert the quadratic equation in standard form into vertex form. Let's start with the standard form of <m>y=2x^2-4x+7</m> and convert it into vertex form.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Before we begin, isolate the terms with <m>x</m> on one side of the equation. What equation do you now have?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>y-7=2x^2-4x</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Notice that the <m>a</m>-value is not <m>1</m>. Before we complete the square, we will want to factor out the coefficient of the <m>x^2</m> term. What does your equation look like when factoring out <m>2</m>?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>y-7=2(x^2-2x)</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now apply the "completing the square" steps to determine the constant term that is added to both sides of the equation.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Refer back to <xref ref="def-completing-the-square"/> to help you determine how to find the constant term. Be careful when the coefficient is not <m>1</m>!
+      </p>
+    </hint>
+    <answer>
+      <p>
+        By using the "completing the square" steps, students should get:
+        <me>
+          y-7+(2)=2(x^2-2x+(1))
+        </me>
+        <me>
+          y-5=2(x^2-2x+1)
+        </me>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Factor the perfect square trinomial. 
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>
+          y-5=2(x-1)^2
+        </me>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now isolate <m>y</m> and then determine the vertex and axis of symmetry.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>y=2(x-1)^2+5</m>
+      </p>
+      <p>
+        Axis of Symmetry: <m>x=1</m>
+      </p>
+      <p>
+        Vertex: <m>(1,5)</m>
+      </p>
+    </answer>
+  </task>
+  </activity>
+
+  <remark>
+    <p>In <xref ref="standard-to-vertex-form"/>, we were able to convert from standard form to vertex form. If you were to do this for the general form of <m>y=ax^2+bx+c</m>, you will see that the <m>x</m>-value of the vertex will always be of the form <m>-\frac{b}{2a}</m>. For instance, suppose we start with
+    <me>y=ax^2+bx+c</me>.
+    Following similar steps as we did in <xref ref="standard-to-vertex-form"/>, we would get:
+    <me>y-c=ax^2+bx</me>
+    
+    <me>y-c=a\left(x^2+\frac{b}{a}x\right)</me>
+    
+    <me>y-c+a\left(\frac{b}{2a}\right)^2=a\left(x^2+\frac{b}{a}x+\left(\frac{b}{2a}\right)^2\right)</me> 
+    
+    <me>y-c+a\left(\frac{b}{2a}\right)^2=a\left(x+\frac{b}{2a}\right)^2</me>
+    
+    <me>y=a\left(x+\frac{b}{2a}\right)^2+c-\frac{b^2}{4a}</me>
+
+    In the vertex form, <m>y=a(x-h)^2+k</m>, the vertex <m>(h,k)</m> can be identified as: 
+
+    <me>h=-\frac{b}{2a}</me>
+    <me>k=c-\frac{b^2}{4a}</me>
+
+    </p>
+  </remark>
+
   <observation xml:id="standard-form-aos">
     <statement>
-      <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=\dfrac {-b}{2a}</m> and the vertex is at the point <m> \left(\dfrac{-b}{2a},f\left(\dfrac{-b}{2a}\right)\right)</m>.
+      <p> Just as with the vertex form of a quadratic, we can use the standard form of a quadratic <m>\left(f(x)=ax^2+bx+c\right)</m> to find the <term>axis of symmetry</term> <idx><h>quadratic function</h><h>axis of symmetry</h></idx> and the <term>vertex</term> <idx><h>quadratic function</h><h>vertex from standard form</h></idx>by using the values of <m>a, b </m>, and <m> c </m>. Given the standard form of a quadratic, the axis of symmetry is the vertical line <m> x=-\dfrac {b}{2a}</m> and the vertex is at the point <m> \left(-\dfrac{b}{2a},f\left(-\dfrac{b}{2a}\right)\right)</m>.
       </p>
     </statement>
   </observation>
@@ -497,7 +611,13 @@
   </answer> 
   </task>
 </activity>
-    </subsection> 
+
+<remark>
+  <p>
+    Notice that in <xref ref="PR1-activity-6"/>, two different functions could have the same vertex and axis of symmetry. When <m>|a|\gt0</m>, the graph narrows. When <m>0\lt|a|\lt1</m>, the graph widens (refer back to <xref ref="FN4"/>). 
+  </p>
+</remark>
+
 
     <activity xml:id="PR1-fluency">
       <introduction>
@@ -517,14 +637,22 @@
           <p> <m>f(x)=x^2+2x-3</m></p>
         </statement>
         <answer>
-          <p>
             <ol>
               <li> <p> upwards   </p> </li>
               <li> <p> <m>(-1,-4)</m>; minimum   </p> </li>
               <li> <p> <m>x=-1</m>   </p> </li>
-              <li> <p> (placeholder for graph)   </p> </li>
+              <li> 
+        <image xml:id="PR1-fluency-graph-1-image">
+          <sageplot>
+              f(x) = (x^2+2*x-3)
+              p=plot(f, (x, -6, 6), ymin=-5, ymax=20, color='blue', thickness=3)
+              for i in [-3..1]:
+                p+=point((i,f(i)),pointsize=50,color='blue')
+              p
+          </sageplot>
+        </image>
+       </li>
             </ol>
-          </p>
         </answer>
         </task>
      
@@ -533,14 +661,22 @@
           <p> <m>f(x)=-5(x-3)^2+20</m></p>
         </statement>
         <answer>
-          <p>
             <ol>
               <li> <p> downwards   </p> </li>
               <li> <p> <m>(3,20)</m>; maximum   </p> </li>
               <li> <p> <m>x=3</m>   </p> </li>
-              <li> <p> (placeholder for graph)   </p> </li>
+              <li> 
+        <image xml:id="PR1-fluency-graph-2-image">
+          <sageplot>
+              f(x) = (-5*(x-3)^2+20)
+              p=plot(f, (x, -1, 7), ymin=-5, ymax=30, color='blue', thickness=3)
+              for i in [1..5]:
+                p+=point((i,f(i)),pointsize=50,color='blue')
+              p
+          </sageplot>
+        </image>
+      </li>
             </ol>
-          </p>
         </answer>
         </task>
 
@@ -549,14 +685,22 @@
             <p> <m>f(x)=5x^2+30x+40</m></p>
           </statement>
           <answer>
-            <p>
               <ol>
                 <li> <p> upwards   </p> </li>
                 <li> <p> <m>(-3,-5)</m>; minimum   </p> </li>
                 <li> <p> <m>x=-3</m>   </p> </li>
-                <li> <p> (placeholder for graph)   </p> </li>
+                <li> 
+        <image xml:id="PR1-fluency-graph-3-image">
+          <sageplot>
+              f(x) = (5*x^2+30*x+40)
+              p=plot(f, (x, -6, 2), ymin=-10, ymax=30, color='blue', thickness=3)
+              for i in [-5..-1]:
+                p+=point((i,f(i)),pointsize=50,color='blue')
+              p
+          </sageplot>
+        </image>
+           </li>
               </ol>
-            </p>
           </answer>
           </task>
 
@@ -565,19 +709,26 @@
               <p> <m>f(x)=2(x+4)^2-3</m></p>
             </statement>
             <answer>
-              <p>
                 <ol>
                   <li> <p> upwards   </p> </li>
                   <li> <p> <m>(-4,-3)</m>; minimum   </p> </li>
                   <li> <p> <m>x=-4</m>   </p> </li>
-                  <li> <p> (placeholder for graph)   </p> </li>
+                  <li> 
+        <image xml:id="PR1-fluency-graph-4-image">
+          <sageplot>
+              f(x) = (2*(x+4)^2-3)
+              p=plot(f, (x, -8, 4), ymin=-5, ymax=30, color='blue', thickness=3)
+              for i in [-6..-2]:
+                p+=point((i,f(i)),pointsize=50,color='blue')
+              p
+          </sageplot>
+        </image> 
+ </li>
                 </ol>
-              </p>
             </answer>
             </task>
-
-
     </activity>
+    </subsection> 
 <exercises>
   <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR1/"/>. </p> 
 </exercises>
