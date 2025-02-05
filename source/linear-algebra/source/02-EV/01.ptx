@@ -128,7 +128,7 @@ we refer to this real number as a <term>scalar</term>.
     3\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}3\\6\end{array}\right],\hspace{1em}
     0\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}0\\0\end{array}\right],\hspace{1em}
     -2\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}-2\\-4\end{array}\right]</me> 
-    in the <m>xy</m> plane by placing a dot at the <m>(x,y)</m> coordinate associated with each vector.
+    in the same <m>xy</m> plane by drawing an arrow to the <m>(x,y)</m> coordinate associated with each vector.
       </p>
   </task>
   <task>
@@ -139,8 +139,8 @@ we refer to this real number as a <term>scalar</term>.
         =
       \setBuilder{a\left[\begin{array}{c}1\\2\end{array}\right]}{a\in\IR}
     </me>
-    in the <m>xy</m> plane by plotting their <m>(x,y)</m> coordinates as dots.
-    What best describes this sketch?
+    in the <m>xy</m> plane.
+    Which of the following geometrical objects best describes this sketch?
     <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
@@ -163,7 +163,7 @@ we refer to this real number as a <term>scalar</term>.
     </introduction>
   <task>
       <p>
-    Sketch the following five Euclidean vectors in the <m>xy</m> plane.
+    Sketch the following five Euclidean vectors in the same <m>xy</m> plane.
     <me>
     1\left[\begin{array}{c}1\\2\end{array}\right]+
     0\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown\hspace{2em}
@@ -182,12 +182,22 @@ we refer to this real number as a <term>scalar</term>.
   </task>
   <task>
       <p>
-    Sketch a representation of all the vectors belonging to
+    Correct the SageMath code cell below to generate
+    an illustration of several vectors belonging to
     <me>\vspan\left\{\left[\begin{array}{c}1\\2\end{array}\right],
      \left[\begin{array}{c}-1\\1\end{array}\right]\right\}=
      \setBuilder{a\left[\begin{array}{c}1\\2\end{array}\right]+
      b\left[\begin{array}{c}-1\\1\end{array}\right]}{a, b \in \IR}</me>
-    in the <m>xy</m> plane. What best describes this sketch?
+    in the <m>xy</m> plane.
+    </p>
+    <sage>
+      <input>
+<xi:include href="./code/ev1-planar-span.sage" parse="text" />
+      </input>
+    </sage>
+    <p>
+    Based on this illustration, which of these geometrical objects
+    best describes the span of these two vectors?
     <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
@@ -204,7 +214,12 @@ we refer to this real number as a <term>scalar</term>.
     Sketch a representation of all the vectors belonging to
     <m>\vspan\left\{\left[\begin{array}{c}6\\-4\end{array}\right],
      \left[\begin{array}{c}-3\\2\end{array}\right]\right\}</m>
-    in the <m>xy</m> plane. What best describes this sketch?
+    in the <m>xy</m> plane, or adapt the code in the previous
+    activity to illustrate this span.
+      </p>
+      <p>
+    Which of these geometrical objects
+    best describes the span of these two vectors?
     <ol marker="A.">
       <li>A line</li>
       <li>A plane</li>
