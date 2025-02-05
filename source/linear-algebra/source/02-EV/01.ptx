@@ -152,39 +152,6 @@ we refer to this real number as a <term>scalar</term>.
 </activity>
 
 
-<remark>
-  <p>
-It is important to remember that
-<me>\{\vec v_1,\vec v_2,\dots,\vec v_n\}\not=\vspan\{\vec v_1,\vec v_2,\dots,\vec v_n\}</me>.
-  </p>
-  <p>
-For example,
-<me>
-\setList
-{
-\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-}
-</me>
-is a set containing exactly two vectors, while
-<me>
-\vspan\setList
-{
-\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-} = \setBuilder
-{
-a\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right]+
-b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-}{
-a,b\in\IR
-}
-</me>
-is a set containing infinitely-many vectors.
-  </p>
-</remark>
-
-
  
 
 <activity estimated-time='10'>
@@ -457,6 +424,66 @@ x_2\left[\begin{array}{c}\unknown\\\unknown\\\unknown\\\unknown\end{array}\right
       </p>
   </task>
 </activity> -->
+
+<activity>
+  <statement>
+    <p>
+      Are the sets
+<me>
+\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}
+</me>
+and
+<me>
+\vspan\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}
+</me>
+      equal or nonequal to each other?
+      <ol marker="A." cols="2">
+        <li><p>Equal</p></li>
+        <li><p>Non-equal</p></li>
+      </ol>
+    </p>
+  </statement>
+</activity>
+
+<remark>
+  <p>
+It is important to remember that
+<me>\{\vec v_1,\vec v_2,\dots,\vec v_n\}\not=\vspan\{\vec v_1,\vec v_2,\dots,\vec v_n\}</me>.
+  </p>
+  <p>
+For example,
+<me>
+\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}
+</me>
+is a set containing exactly two vectors, while
+<me>
+\vspan\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+} = \setBuilder
+{
+a\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right]+
+b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}{
+a,b\in\IR
+}
+</me>
+is a set containing infinitely-many vectors.
+  </p>
+</remark>
 
     </subsection>
 
