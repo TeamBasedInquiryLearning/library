@@ -481,8 +481,14 @@ b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
 a,b\in\IR
 }
 </me>
-is a set containing infinitely-many vectors.
+is a set containing infinitely-many vectors. See the below
+Sage cell for an illustration.
   </p>
+<sage language="sage">
+<input>
+<xi:include href="./code/ev1-remark-span.sage" parse="text" />
+</input>
+</sage>
 </remark>
 
     </subsection>
