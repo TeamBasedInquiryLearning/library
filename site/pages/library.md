@@ -94,5 +94,5 @@ Older editions of our Calculus and Linear Algebra books are archived at these li
 ---
 
 ### Workshops
-Please see the following Google Folder for materials (Slideshows, RATs, Facilitation Guide) for conducting workshops introducing faculty to TBIL
-- [Team-Based Inquiry Learning Workshops](https://drive.google.com/drive/folders/1TEbrFzMZmtofVvAPxb7NM6slJlyDNoDs?usp=drive_link)
+Please see the `workshops` folder for materials (Slideshows, RATs, Facilitation Guide) for conducting workshops introducing faculty to TBIL
+- [Team-Based Inquiry Learning Workshops](./workshops)
