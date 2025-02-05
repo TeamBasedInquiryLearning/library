@@ -33,8 +33,16 @@ from <xref ref="LE3-inf"/>:
         <mrow>
               &amp; &amp;\phantom{+}x_3 &amp;= -1
         </mrow>
+        <mrow>
+              &amp; &amp; 0 &amp;= 0
+        </mrow>
+        <mrow>
+              &amp; &amp; 0 &amp;= 0
+        </mrow>
     </md>
-Earlier, we determined this system has infinitely-many solutions.
+Earlier, we determined this system has infinitely-many solutions, since <m>x_1</m>
+and <m>x_2</m> are not required by the RREF matrix to equal specific values
+(even though <m>x_3</m> is).
         </p>
     </introduction>
 <task>
@@ -69,7 +77,9 @@ Which of these was easier?  What features of the RREF matrix
 <m>
   \left[\begin{array}{ccc|c}
     \markedPivot{1} &amp; 2 &amp; 0 &amp; 4 \\
-    0 &amp; 0 &amp; \markedPivot{1} &amp; -1
+    0 &amp; 0 &amp; \markedPivot{1} &amp; -1 \\
+    0 &amp; 0 &amp; 0 &amp; 0 \\
+    0 &amp; 0 &amp; 0 &amp; 0 \\
   \end{array}\right]
 </m> caused this?
     </p>
