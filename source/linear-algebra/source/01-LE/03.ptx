@@ -275,8 +275,8 @@ and we may write
           </li>
           <li>
               <p>
-If the linear system given by <m>\RREF(A)</m> sets each variable of the system
-to a single value; that is we have:
+If the linear system given by <m>\RREF(A)</m> sets every variable of the system
+to a specific value; that is we have:
 
 <md alignat-columns='2' alignment="alignat">
     <mrow>
@@ -306,7 +306,7 @@ and we may write
           <li>
               <p>
 Otherwise, the system given by the <m>\RREF</m> matrix must <em>not include a <m>0=1</m> contradiction</em>
-while <em>including at least one equation with multiple variables</em>. This means it is
+while <em>at least one variable is not required to equal a specific value</em>. This means it is
 <em>consistent</em> with <em>infinitely-many</em>
 different solutions. We'll learn how to find such solution sets in 
 <xref ref="LE4"/>. 
