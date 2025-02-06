@@ -128,7 +128,7 @@ we refer to this real number as a <term>scalar</term>.
     3\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}3\\6\end{array}\right],\hspace{1em}
     0\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}0\\0\end{array}\right],\hspace{1em}
     -2\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}-2\\-4\end{array}\right]</me> 
-    in the <m>xy</m> plane by placing a dot at the <m>(x,y)</m> coordinate associated with each vector.
+    in the same <m>xy</m> plane by drawing an arrow to the <m>(x,y)</m> coordinate associated with each vector.
       </p>
   </task>
   <task>
@@ -139,8 +139,8 @@ we refer to this real number as a <term>scalar</term>.
         =
       \setBuilder{a\left[\begin{array}{c}1\\2\end{array}\right]}{a\in\IR}
     </me>
-    in the <m>xy</m> plane by plotting their <m>(x,y)</m> coordinates as dots.
-    What best describes this sketch?
+    in the <m>xy</m> plane.
+    Which of the following geometrical objects best describes this sketch?
     <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
@@ -150,39 +150,6 @@ we refer to this real number as a <term>scalar</term>.
       </p>
   </task>
 </activity>
-
-
-<remark>
-  <p>
-It is important to remember that
-<me>\{\vec v_1,\vec v_2,\dots,\vec v_n\}\not=\vspan\{\vec v_1,\vec v_2,\dots,\vec v_n\}</me>.
-  </p>
-  <p>
-For example,
-<me>
-\setList
-{
-\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-}
-</me>
-is a set containing exactly two vectors, while
-<me>
-\vspan\setList
-{
-\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-} = \setBuilder
-{
-a\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right]+
-b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-}{
-a,b\in\IR
-}
-</me>
-is a set containing infinitely-many vectors.
-  </p>
-</remark>
 
 
  
@@ -196,7 +163,7 @@ is a set containing infinitely-many vectors.
     </introduction>
   <task>
       <p>
-    Sketch the following five Euclidean vectors in the <m>xy</m> plane.
+    Sketch the following five Euclidean vectors in the same <m>xy</m> plane.
     <me>
     1\left[\begin{array}{c}1\\2\end{array}\right]+
     0\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown\hspace{2em}
@@ -215,12 +182,22 @@ is a set containing infinitely-many vectors.
   </task>
   <task>
       <p>
-    Sketch a representation of all the vectors belonging to
+    Correct the SageMath code cell below to generate
+    an illustration of several vectors belonging to
     <me>\vspan\left\{\left[\begin{array}{c}1\\2\end{array}\right],
      \left[\begin{array}{c}-1\\1\end{array}\right]\right\}=
      \setBuilder{a\left[\begin{array}{c}1\\2\end{array}\right]+
      b\left[\begin{array}{c}-1\\1\end{array}\right]}{a, b \in \IR}</me>
-    in the <m>xy</m> plane. What best describes this sketch?
+    in the <m>xy</m> plane.
+    </p>
+    <sage>
+      <input>
+<xi:include href="./code/ev1-planar-span.sage" parse="text" />
+      </input>
+    </sage>
+    <p>
+    Based on this illustration, which of these geometrical objects
+    best describes the span of these two vectors?
     <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
@@ -237,7 +214,12 @@ is a set containing infinitely-many vectors.
     Sketch a representation of all the vectors belonging to
     <m>\vspan\left\{\left[\begin{array}{c}6\\-4\end{array}\right],
      \left[\begin{array}{c}-3\\2\end{array}\right]\right\}</m>
-    in the <m>xy</m> plane. What best describes this sketch?
+    in the <m>xy</m> plane, or adapt the code in the previous
+    activity to illustrate this span.
+      </p>
+      <p>
+    Which of these geometrical objects
+    best describes the span of these two vectors?
     <ol marker="A.">
       <li>A line</li>
       <li>A plane</li>
@@ -457,6 +439,72 @@ x_2\left[\begin{array}{c}\unknown\\\unknown\\\unknown\\\unknown\end{array}\right
       </p>
   </task>
 </activity> -->
+
+<activity>
+  <statement>
+    <p>
+      Are the sets
+<me>
+\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}
+</me>
+and
+<me>
+\vspan\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}
+</me>
+      equal or nonequal to each other?
+      <ol marker="A." cols="2">
+        <li><p>Equal</p></li>
+        <li><p>Non-equal</p></li>
+      </ol>
+    </p>
+  </statement>
+</activity>
+
+<remark>
+  <p>
+It is important to remember that
+<me>\{\vec v_1,\vec v_2,\dots,\vec v_n\}\not=\vspan\{\vec v_1,\vec v_2,\dots,\vec v_n\}</me>.
+  </p>
+  <p>
+For example,
+<me>
+\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}
+</me>
+is a set containing exactly two vectors, while
+<me>
+\vspan\setList
+{
+\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+} = \setBuilder
+{
+a\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right]+
+b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+}{
+a,b\in\IR
+}
+</me>
+is a set containing infinitely-many vectors. See the below
+Sage cell for an illustration.
+  </p>
+<sage language="sage">
+<input>
+<xi:include href="./code/ev1-remark-span.sage" parse="text" />
+</input>
+</sage>
+</remark>
 
     </subsection>
 
