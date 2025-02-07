@@ -95,7 +95,7 @@ jobs:
 
             - name: build previews of all changed files
               id: changes
-              run: python scripts/quickbuild_changes.py
+              run: python -m scripts.quickbuild_changes
 
             - name: stage deployment
               run: pretext deploy --stage-only

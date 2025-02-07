@@ -161,9 +161,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
     </activity>
 
          <remark>
-        <statement>
             <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not defined at <m>x=a</m>. As <m>f(a)</m> does not exist, the function is NOT continuous at <m> x=a</m>. Moreover, the function's output tends to plus or minus infinity and so the limit is not equal to a number. </p>
-             </statement>
         </remark>
 
              <activity xml:id="infinity-divide-zero">
@@ -184,7 +182,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
             </ol>
     </activity>
     
-    <remark><statement><p>Informally, we say that the limit of "<m>\dfrac{1}{0}</m>" is infinite. Notice that this could be either positive or negative infinity, depending on how whether the outputs are becoming more and more positive or more and more negative as we approach zero.</p></statement></remark>
+    <remark><p>Informally, we say that the limit of "<m>\dfrac{1}{0}</m>" is infinite. Notice that this could be either positive or negative infinity, depending on how whether the outputs are becoming more and more positive or more and more negative as we approach zero.</p></remark>
 
   <activity xml:id="limits-vert-asymptote">
         <introduction>
@@ -206,9 +204,7 @@ Consider the rational function <m>f(x) = \dfrac{2}{x-3} </m>. Which of the follo
      </activity>
     
       <remark xml:id="vert-asymptote-den">
-        <statement>
             <p>When considering a ratio of functions <m>f(x)/g(x) </m>, the inputs <m> a</m> where <m> g(a)=0</m> are not in the domain of the ratio. If <m>g(a)=0 </m> but <m>f(a) </m> is not equal to 0, then <m> x=a</m> is a vertical asymptote. </p>
-             </statement>
         </remark>
 
 <activity xml:id="limits-intuition-hole">
@@ -229,7 +225,8 @@ Consider the function <m>f(x)=\dfrac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT
      </activity>
 
   <remark xml:id="rational-hole">
-      <statement><p>Recall the definition of a hole from <xref ref = "def-hole"/>. In <xref ref ="limits-intuition-hole"/> we have a hole at <m>x=1</m>. </p></statement></remark> 
+      <p>Recall the definition of a hole from <xref ref = "def-hole"/>. In <xref ref ="limits-intuition-hole"/> we have a hole at <m>x=1</m>. </p>
+  </remark> 
 
    <activity xml:id="rational-practice1">
         <introduction>
@@ -411,7 +408,7 @@ Explain and demonstrate how to find the value of each limit.
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT6/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT6/"/>
         </p>
     </subsection>
 

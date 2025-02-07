@@ -90,3 +90,9 @@ Older editions of our Calculus and Linear Algebra books are archived at these li
     - <https://tienchih.github.io/tbil-stats/>
     - TBIL activities designed by TBIL fellow Tien Chih
     - CheckIt exercise bank: <https://tienchih.github.io/checkit-stats/>
+
+---
+
+### Workshops
+Please see the `workshops` folder on our GitHub for materials (Slideshows, RATs, Facilitation Guide) for conducting workshops introducing faculty to TBIL
+- [Team-Based Inquiry Learning Workshops](https://github.com/TeamBasedInquiryLearning/library/tree/main/workshops)

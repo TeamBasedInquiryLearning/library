@@ -5,7 +5,6 @@
 <statement>
     <p>
 Let <m>V</m> be the set of all pairs of numbers <m>(x,y)</m> of real numbers together with the following operations:
-    </p>
     <md>
         <mrow>
 (x_1,y_1) \oplus (x_2,y_2) &amp;= (2x_1+2x_2,2y_1+2y_2)
@@ -18,8 +17,8 @@ c\odot (x,y) &amp;= (cx,c^2y)
         <li>
             <p>
 Show that scalar multiplication distributes over vector addition:
-            </p>
 <me>c\odot \left((x_1,y_1) \oplus (x_2,y_2) \right) = c \odot (x_1,y_1) \oplus c \odot (x_2,y_2)</me>
+            </p>
         </li>
         <li>
             <p>
@@ -27,13 +26,14 @@ Explain why <m>V</m> nonetheless is not a vector space.
             </p>
         </li>
     </ol>
+    </p>
 </statement>
 <solution>
+    <p>
     <ol>
         <li>
             <p>
 We compute both sides:
-            </p>
             <md>
                 <mrow>
   c \odot \left((x_1,y_1) \oplus (x_2,y_2) \right)
@@ -46,9 +46,7 @@ We compute both sides:
   &amp;= (2cx_1+2cx_2,2c^2y_1+2c^2y_2)
                 </mrow>
             </md>
-            <p>
 and
-            </p>
             <md>
                 <mrow>
   c\odot (x_1,y_1) \oplus c \odot (x_2,y_2) 
@@ -58,7 +56,6 @@ and
   &amp;= (2cx_1+2cx_2,2c^2y_1+2c^2y_2)
                 </mrow>
             </md>
-            <p>
 Since these are the same, we have shown that the property holds.
             </p>
         </li>
@@ -68,13 +65,11 @@ To show <m>V</m> is not a vector space, we must show that it fails one of the 8 
 We will show that scalar multiplication does not distribute over scalar addition, i.e., there are values
 such that
 <me> (c+d)\odot(x,y) \neq c \odot(x,y) \oplus d\odot(x,y) </me>
-            </p>
             <ul>
                 <li>
                     <p>
 (Solution method 1)
 First, we compute
-                    </p>
                         <md>
                             <mrow>
 (c+d)\odot(x,y) &amp;= ((c+d)x,(c+d)^2y)
@@ -83,9 +78,7 @@ First, we compute
 &amp;= ( (c+d)x, (c^2+2cd+d^2)y).
                             </mrow>
                         </md>
-                        <p>
 Then we compute
-                        </p>
                         <md>
                             <mrow>
 c\odot (x,y) \oplus d\odot(x,y) &amp;= (cx,c^2y) \oplus (dx,d^2y)
@@ -94,14 +87,12 @@ c\odot (x,y) \oplus d\odot(x,y) &amp;= (cx,c^2y) \oplus (dx,d^2y)
 &amp;= ( 2cx+2dx, 2c^2y+2d^2y).
                             </mrow>
                         </md>
-                        <p>
 Since <m>(c+d)x\not=2cx+2dy</m> when <m>c,d,x,y=1</m>, the property fails to hold.
                     </p>
                 </li>
                 <li>
                     <p>
 (Solution method 2) When we let <m>c,d,x,y=1</m>, we may simplify both sides as follows.
-                    </p>
                     <md>
                         <mrow>
 (c+d)\odot(x,y) &amp;= 2\odot(1,1)
@@ -128,12 +119,13 @@ c\odot (x,y) \oplus d\odot(x,y) &amp;= 1\odot(1,1)\oplus 1\odot(1,1)
 &amp;= (4,4)
                         </mrow>
                     </md>
-                    <p>
 Since these ordered pairs are different, the property fails to hold.
                     </p>
                 </li>
             </ul>
+            </p>
         </li>
     </ol>
+    </p>
 </solution>
 </example>

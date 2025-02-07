@@ -1,48 +1,48 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <introduction xml:id="AT-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <paragraphs xml:id="AT-readiness">
+    <assemblage xml:id="AT-readiness">
     <title>Readiness Assurance</title>
     <p>
         Before beginning this chapter, you should be able to...
-    </p>
     <ol marker="1.">
         <li>
-            <p>State the definition of a spanning set, and determine if a set of Euclidean vectors spans <m>\IR^n</m>.</p>
+            <p>State the definition of a spanning set, and determine if a set of Euclidean vectors spans <m>\IR^n</m>.
             <ul>
                 <li>
                     <p>Review: <xref ref="EV2"/></p>
                 </li>
-            </ul>
+            </ul></p>
         </li>
         <li>
-            <p>State the definition of linear independence, and determine if a set of Euclidean vectors is linearly dependent or independent.</p>
+            <p>State the definition of linear independence, and determine if a set of Euclidean vectors is linearly dependent or independent.
             <ul>
                 <li>
                     <p>Review: <xref ref="EV4"/></p>
                 </li>
-            </ul>
+            </ul></p>
         </li>
         <li>
             <p>
             State the definition of a basis, and determine if a set of Euclidean vectors is a basis.
-            </p>
             <ul>
                 <li>
                     <p>Review: <xref ref="EV5"/>,
                     <xref ref="EV6"/></p>
                 </li>
             </ul>
+            </p>
         </li>
         <li>
             <p>Find a basis of the solution space to a homogeneous system
-of linear equations.</p>
+of linear equations.
             <ul>
                 <li>
                     <p>Review: <xref ref="EV7"/></p>
                 </li>
-            </ul>
+            </ul></p>
         </li>
     </ol>
-    </paragraphs>
+    </p>
+    </assemblage>
 </introduction>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <example xml:id="sample-AT2"><title>AT2</title>
 <statement>
+    <p>
     <ol>
         <li>
             <p>
@@ -16,8 +17,10 @@ Compute <m> S\left( \left[\begin{array}{c} -2 \\ 1 \\ 3 \\ 2\end{array}\right] \
             </p>
         </li>
     </ol>
+    </p>
 </statement>
 <solution>
+    <p>
     <ol>
         <li>
             <p>
@@ -47,5 +50,6 @@ S\left(\left[\begin{array}{c} -2 \\ 1 \\ 3 \\ 2 \end{array}\right] \right) = -2S
             </p>
         </li>
     </ol>
+    </p>
 </solution>
 </example>

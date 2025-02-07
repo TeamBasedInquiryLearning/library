@@ -12,9 +12,9 @@
   <subsection>
     <title>Activities</title>
     
-    <remark><statement>
+    <remark>
     <p>A continuous function is one whose values change smoothly, with no jumps or gaps in the graph. We'll explore the idea first, and arrive at a mathematical definition soon.</p>
-</statement></remark>
+</remark>
     
     <activity estimated-time="5" xml:id="activity-continuous-scenarios">
         <statement>
@@ -48,11 +48,9 @@
     </activity>
 
     <remark xml:id="activity-continuity-def">
-        <statement>
      <p>
             How would you use the language of limits to clarify the definition of continuity? 
           </p>
-        </statement>
     </remark>
     <activity xml:id="activity-continuous-graph1" estimated-time="10">
       <introduction>
@@ -300,14 +298,12 @@
     </activity>
 
     <remark>
-      <statement>
         <p>
           When <m>\displaystyle\lim_{x \to a} f(x)</m> exists but is not equal to <m>f(a)</m>, we say that <m>f</m> has a <term>removable discontinuity</term><idx>removable discontinuity</idx> at <m>x = a</m>. This is because if <m>f(a)</m> were redefined to be equal to <m>\displaystyle\lim_{x \to a} f(x)</m>, the redefined function would be continuous at <m>x = a</m>, thus <q>removing</q> the discontinuity.
         </p>
         <p>
           When the left and right limit exist separately, but are not equal, the discontinuity is not removable and is called a <term>jump discontinuity</term><idx>jump discontinuity</idx>.
         </p>
-      </statement>
     </remark>
 
     
@@ -449,7 +445,7 @@ jump discontinuity.
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT4/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT4/"/>
       </p>
     </subsection>
 

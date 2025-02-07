@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       Pythagorean Identities, as we have seen in a previous section, are derived from the Pythagorean Theorem <m> \left( a^2+b^2=c^2 \right) </m>. Pythagorean Identities are used in solving many trigonometric problems where one trigonometric ratio is given and we are expected to find the other trigonometric ratios. The most commonly used Pythagorean Identity is: <me>\sin^2\theta + \cos^2\theta = 1</me>. The next two activities will lead us to find the other two Pythagorean Identities.
+    </p>
     </remark>
 
     <activity xml:id="deriving-pythagorean-identity-2">
@@ -130,7 +132,9 @@
     </activity>
 
     <remark>
+    <p>
       In <xref ref="deriving-pythagorean-identity-2"/>, we derived the second Pythagorean Identity: <m>\sec^2\theta-\tan^2\theta=1</m>. Note that we can rewrite what we got in the previous activity <m> \left( 1 + \tan^2\theta = \sec^2\theta \right) </m> to get to this form. 
+    </p>
     </remark> 
 
     <activity xml:id="deriving-pythagorean-identity-3">
@@ -168,7 +172,9 @@
     </activity>
 
     <remark>
+    <p>
       In <xref ref="deriving-pythagorean-identity-3"/>, we derived the third Pythagorean Identity: <m>\csc^2\theta-\cot^2\theta=1</m>. Note that we can rewrite what we got in the previous activity <m> \left( 1+ \cot^2\theta = \csc^2\theta \right)</m> to get to this form.
+    </p>
     </remark> 
 
     <theorem xml:id="thm-pythagorean-identities">
@@ -200,7 +206,9 @@
     </theorem>
 
     <remark>
+    <p>
       Other identities and formulas (in addition to the Pythagorean Identities) can be used to solve various mathematical problems. The next few activities will lead us through an exploration of other types of identities and formulas.
+    </p>
     </remark>
 
     <activity xml:id="exploration-of-sum-formula">
@@ -307,7 +315,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice that in <xref ref="exploration-of-sum-formula"/>, we saw that <m>\sin\left( \pi + \frac{\pi}{2}\right) \neq \sin \pi + \sin \frac{\pi}{2}</m>. This is also true for both cosine and tangent as well - that is, if we want to find the cosine or tangent of the sum of two angles, we cannot assume that it is equal to the sum of the two trigonometric functions of each angle. For example, <m>\cos\left( \pi + \frac{\pi}{2}\right) \neq \cos \pi + \cos \frac{\pi}{2}</m> and <m>\tan\left( \pi + \frac{\pi}{2}\right) \neq \tan \pi + \tan \frac{\pi}{2}</m>. The same is true for finding the difference of two angles.
+      </p>
     </remark>
 
     <activity xml:id="derive-difference-formula-for-cosine">
@@ -449,7 +459,9 @@
     </activity>
 
     <remark>
+    <p>
       In <xref ref="derive-difference-formula-for-cosine"/>, we derived the difference formula for cosine. The development of the sum/difference formulas are similar for sine and cosine and same for <m>\tan(\alpha-\beta)</m> compared to <m>\tan(\alpha+\beta)</m>. 
+    </p>
     </remark>
 
     <theorem xml:id="thm-sum-and-difference-formulas">
@@ -1031,7 +1043,9 @@
     </activity>
 
     <remark>
+    <p>
       The derivation for <m>\cos\left(\frac{\theta}{2}\right)</m> and <m>\tan\left(\frac{\theta}{2}\right)</m> is similar to that in <xref ref="deriving-half-angle-formulas"/> when starting with the power-reduction formulas for each trigonometric function.
+    </p>
     </remark>
 
     <theorem xml:id="thm-half-angle-formulas">
@@ -1189,7 +1203,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/TE1/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TE1/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

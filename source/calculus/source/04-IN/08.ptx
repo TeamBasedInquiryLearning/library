@@ -60,9 +60,30 @@
     <p>We now look for a general way of writing definite integrals for the area between two given curves, <m>f(x)</m> and <m>g(x)</m>. Consider this area, illustrated in <xref ref="area_concept_general"/>. </p>
     
      <figure xml:id="area_concept_general">
-    <caption> Area between <m>f(x)</m> and <m>g(x)</m>.</caption>
-    <image width="55%" source="area_between.png" />
-  </figure>
+        <caption> Area between <m>f(x)</m> and <m>g(x)</m>.</caption>
+        <image width="55%">
+            <sageplot>
+                x=var('x')
+                f(x) = 4*(.5*(x-1))-(.5*(x-1))^2+1
+                g(x) = (.5*(x-1))^2+1
+                pf1 = plot(f,(x,0,5.25), ticks=[[],[]], color='blue', aspect_ratio=1)
+                pg1 = plot(g,(x,0,5.25), ticks=[[],[]], color='red', aspect_ratio=1)
+                pf2 = plot(f,(x,1,5), fill=f, ticks=[[],[]], color='blue', aspect_ratio=1)
+                pg2 = plot(g,(x,1,5), fill=f, ticks=[[],[]], color='red', aspect_ratio=1)
+                t1 = text('$f(x)$', (2, f(2)+1), color='blue', fontsize=12)
+                t2 = text('$g(x)$', (3.5, g(3.5)-1), color='red', fontsize=12)
+                c1 = circle((1,f(1)), 0.1, fill=True, color='black', facecolor='black')
+                c2 = circle((5,f(5)), 0.1, fill=True, color='black', facecolor='black')
+                line1 = line(([1,f(1)],[1,0]), linestyle='dashed', color='black')
+                line2 = line(([5,f(5)],[5,0]), linestyle='dashed', color='black')
+                c3 = circle((1,0), 0.1, fill=True, color='black', facecolor='black')
+                c4 = circle((5,0), 0.1, fill=True, color='black', facecolor='black')
+                t3 = text('$a$',(1,-0.5), fontsize=12, color='black')
+                t4 = text('$b$',(5,-0.5), fontsize=12, color='black')
+                pf1+pf2+pg1+pg2+t1+t2+c1+c2+line1+line2+c3+c4+t3+t4
+            </sageplot>        
+        </image>
+    </figure>
     
     </introduction>    
 
@@ -187,7 +208,7 @@ As a definite integral with respect to <m>y</m>.
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/IN8/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/IN8/"/>
         </p>
     </subsection>
 </section>

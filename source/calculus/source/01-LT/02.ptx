@@ -13,6 +13,7 @@
     <title>Activities</title>
 
     <activity xml:id="activity-limits-numerically1">
+<statement>
         <table xml:id="table-limit-numerical1">
             <tabular>
                 <row bottom="minor">
@@ -71,6 +72,8 @@
         </table>
         
         
+        
+        
         <p>
         Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\displaystyle\lim_{x\to 7} f(x)</m>?
         <ol marker="A." cols="2">
@@ -80,14 +83,15 @@
             <li><p> the limit is approximately 0.1667</p></li>
             <li><p> the limit is approximately 6.9999</p></li>
         </ol>
+         
+        </p>
+</statement>
         
          <answer>
           <p>
             D. The limit is approximately 0.1667
           </p>
          </answer>
-         
-        </p>
     </activity>
     
             <remark>
@@ -170,6 +174,11 @@ the function as <m>x</m> tends to 2?
             C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
           </p>
          </answer> 
+         <answer>
+          <p>
+            C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
+          </p>
+         </answer> 
     </activity>
 
     <activity xml:id = "activity-limits-numerically3">
@@ -242,6 +251,11 @@ the function as <m>x</m> tends to 2?
             B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
           </p>
         </answer>
+        <answer>
+          <p>
+            B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
+          </p>
+        </answer>
     </activity>
 
 
@@ -250,6 +264,7 @@ the function as <m>x</m> tends to 2?
     <p>Consider the following function <m>f(x)= 3x^3 + 2x^2- 5x+20.</m></p>
            </introduction>
        <task>
+       <statement>
        <statement>
         <p> Of the following options, at which values given would you evaluate <m>f(x)</m> to best determine <m>\displaystyle \lim_{x \to 2}f(x)</m> numerically?</p>
         
@@ -265,11 +280,24 @@ the function as <m>x</m> tends to 2?
                   B. 1.98, 1.99, 2.0, 2.01, 2.02
                 </p>
               </answer>
+ </statement>
+              <answer>
+                <p>
+                  B. 1.98, 1.99, 2.0, 2.01, 2.02
+                </p>
+              </answer>
         </task>
 
 <task>  
 <statement>
+<statement>
         <p> Use the values that you chose in part (a) to calculate an approximation for <m>\displaystyle\lim_{x \to 2}f(x)</m>. </p>
+        </statement>
+        <answer>
+                <p>
+                  41.22, 41.61, 42, 42.39, 42.78
+                </p>
+              </answer>
         </statement>
         <answer>
                 <p>
@@ -286,6 +314,11 @@ the function as <m>x</m> tends to 2?
             <li><p> The approximate value is 41.75</p></li>
             <li><p> The approximate value is 42</p></li>
         </ol>
+        <answer>
+                <p>
+                  D. The approximate value is 42.
+                </p>
+              </answer>
         <answer>
                 <p>
                   D. The approximate value is 42.
@@ -384,6 +417,13 @@ the function as <m>x</m> tends to 2?
           </p>
          </answer>
          </task>   
+         </statement> 
+         <answer>
+          <p>
+            C. The limit does not exist because the function is oscillating between -1 and 1.
+          </p>
+         </answer>
+         </task>   
  <task> <statement>
         <p>Would your conclusion that resulted from <xref ref = "activity-limits-numerically5"/> change if the function was <m>f(x) = \cos(1/x)</m> or <m>f(x) = \tan(1/x)</m>?</p>
         </statement>
@@ -416,6 +456,9 @@ the limit <me>\displaystyle \lim_{ x\to -3 } \dfrac{ x^{2} - x - 12 }{ x^{2} + 1
    
     
     <answer>
+   
+    
+    <answer>
         <p>
             <me>
 \begin{array}{c|ccccccc}
@@ -427,6 +470,7 @@ f(x) &amp; -0.71717&amp; -0.7017&amp; -0.70017&amp; DNE&amp; -0.69983&amp; -0.69
         <p>
 The limit is <m>-0.7</m>.
         </p>
+    </answer> 
     </answer> 
 </activity>
     
@@ -571,7 +615,7 @@ The limit is <m>-0.7</m>.
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT2/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT2/"/>
       </p>
     </subsection>
 

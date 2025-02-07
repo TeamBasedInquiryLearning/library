@@ -99,7 +99,10 @@ class Generator(BaseGenerator):
             if xpoints[j]<=s and s<=xpoints[j+1]:
                 xvalues.add(round(s,1))
 
-
+    tasks2=[ {"findy": {"xvalue": c, "gx": gc} },
+             {"findx": {"result": b, "values": ",".join([ f"x={i:g}" for i in xvalues])}}
+            ]
+    shuffle(tasks2)
 
     return {
       "fname": fname,
@@ -108,11 +111,13 @@ class Generator(BaseGenerator):
       "gname": gname,
       "g_pieces":[((xpoints[i],xpoints[i+1]),lines[i]) for i in [0..len(lines)-1] ],
       "interval":f"[{xpoints[0]},{xpoints[-1]}]",
-      "xvalue":c, 
-      "gx":gc,
-      "result":b,
+      "tasks2":tasks2,
+      #"xvalue":c, 
+      #"gx":gc,
+      #"result":b,
       #Use the g (general format) to make sure 4 prints as 4, not 4.0
-      "values": [{"x": f"{i:g}"} for i in xvalues]
+      #"values": [{"x": f"{i:g}"} for i in xvalues]
+      #"values": ",".join([ f"x={i:g}" for i in xvalues])
     } 
 
 
