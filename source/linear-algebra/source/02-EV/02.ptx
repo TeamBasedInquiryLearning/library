@@ -203,6 +203,22 @@ The vector belongs to the span.
     <task>
         <statement>
             <p>
+ Given this result, do we now know whether every vector in <m>\mathbb R^3</m>
+ belongs to 
+ <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+No; we've checked one vector, but that doesn't mean some other
+vector can't fail to belong.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
                 Determine if <m>\left[\begin{array}{c} 0 \\ -4 \\ 3 \end{array}\right]</m> belongs to 
                 <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
                 \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
@@ -228,12 +244,36 @@ The vector does not belong to the span.
             </p>
         </answer>
     </task>
+    <task>
+        <statement>
+            <p>
+Fix the SageMath code below to visualize
+<m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
+            </p>
+            <sage>
+                <input>
+<xi:include href="./code/ev2-span-visual.sage" parse="text" />
+                </input>
+            </sage>
+        </statement>
+        <answer>
+            <program language="sage">
+                <code>
+v2 = vector([-2,0,1])
+v3 = vector([-2,-2,2])
+# ...
+linear_combo = a*v1 + b*v2 + c*v3
+                </code>
+            </program>
+        </answer>
+    </task>
 </activity>
 <activity>
     <introduction>
         <p>
 We'd prefer a more methodical method to decide if every vector in <m>\IR^n</m> belongs to
-some spanning set, compared to the guess-and-check method we used in <xref ref="EV2-activity-guess-check"/>.
+some spanning set, compared to the guess-and-check methods we used in <xref ref="EV2-activity-guess-check"/>.
         </p>
     </introduction>
     <task>
