@@ -72,8 +72,6 @@
         </table>
         
         
-        
-        
         <p>
         Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\displaystyle\lim_{x\to 7} f(x)</m>?
         <ol marker="A." cols="2">
@@ -174,11 +172,6 @@ the function as <m>x</m> tends to 2?
             C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
           </p>
          </answer> 
-         <answer>
-          <p>
-            C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
-          </p>
-         </answer> 
     </activity>
 
     <activity xml:id = "activity-limits-numerically3">
@@ -251,11 +244,6 @@ the function as <m>x</m> tends to 2?
             B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
           </p>
         </answer>
-        <answer>
-          <p>
-            B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
-          </p>
-        </answer>
     </activity>
 
 
@@ -264,7 +252,6 @@ the function as <m>x</m> tends to 2?
     <p>Consider the following function <m>f(x)= 3x^3 + 2x^2- 5x+20.</m></p>
            </introduction>
        <task>
-       <statement>
        <statement>
         <p> Of the following options, at which values given would you evaluate <m>f(x)</m> to best determine <m>\displaystyle \lim_{x \to 2}f(x)</m> numerically?</p>
         
@@ -280,24 +267,11 @@ the function as <m>x</m> tends to 2?
                   B. 1.98, 1.99, 2.0, 2.01, 2.02
                 </p>
               </answer>
- </statement>
-              <answer>
-                <p>
-                  B. 1.98, 1.99, 2.0, 2.01, 2.02
-                </p>
-              </answer>
         </task>
 
 <task>  
 <statement>
-<statement>
         <p> Use the values that you chose in part (a) to calculate an approximation for <m>\displaystyle\lim_{x \to 2}f(x)</m>. </p>
-        </statement>
-        <answer>
-                <p>
-                  41.22, 41.61, 42, 42.39, 42.78
-                </p>
-              </answer>
         </statement>
         <answer>
                 <p>
@@ -314,11 +288,6 @@ the function as <m>x</m> tends to 2?
             <li><p> The approximate value is 41.75</p></li>
             <li><p> The approximate value is 42</p></li>
         </ol>
-        <answer>
-                <p>
-                  D. The approximate value is 42.
-                </p>
-              </answer>
         <answer>
                 <p>
                   D. The approximate value is 42.
@@ -417,19 +386,12 @@ the function as <m>x</m> tends to 2?
           </p>
          </answer>
          </task>   
-         </statement> 
-         <answer>
-          <p>
-            C. The limit does not exist because the function is oscillating between -1 and 1.
-          </p>
-         </answer>
-         </task>   
  <task> <statement>
         <p>Would your conclusion that resulted from <xref ref = "activity-limits-numerically5"/> change if the function was <m>f(x) = \cos(1/x)</m> or <m>f(x) = \tan(1/x)</m>?</p>
         </statement>
         <answer>
           <p>
-            Yes, the limit of  <m>f(x) = \tan(1/x)</m> would be 0 as <m> x </m> tends to 0 however <m>f(x) = \cos(1/x)</m> oscillates as <m> x </m> tends to 0 . 
+            No, both <m>f(x) = \tan(1/x)</m> and <m>f(x) = \cos(1/x)</m> oscillate as <m> x </m> tends to 0. 
           </p>
         </answer>
          </task>   
@@ -456,9 +418,6 @@ the limit <me>\displaystyle \lim_{ x\to -3 } \dfrac{ x^{2} - x - 12 }{ x^{2} + 1
    
     
     <answer>
-   
-    
-    <answer>
         <p>
             <me>
 \begin{array}{c|ccccccc}
@@ -470,7 +429,6 @@ f(x) &amp; -0.71717&amp; -0.7017&amp; -0.70017&amp; DNE&amp; -0.69983&amp; -0.69
         <p>
 The limit is <m>-0.7</m>.
         </p>
-    </answer> 
     </answer> 
 </activity>
     
@@ -564,7 +522,7 @@ The limit is <m>-0.7</m>.
          </statement> 
          <answer>
           <p>
-            The average velocity on the first 50 meters is <m>10.95 </m> meter per second  and   <m>11.93 </m> meter per second on the second 50 meters.
+            The average velocity on the first 50 meters is <m>9.09</m> meters per second  and   <m>11.93 </m> meters per second on the second 50 meters.
           </p>
          </answer>
          </task>  
@@ -572,7 +530,7 @@ The limit is <m>-0.7</m>.
                   </statement>
                   <answer>
           <p>
-            The average velocity between 30 and 50 meters is   <m>11.62 </m> meter per second and   <m>12.19 </m> meter per second between 50 and 70 meters.
+            The average velocity between 30 and 50 meters is   <m>11.62 </m> meters per second and   <m>12.19 </m> meters per second between 50 and 70 meters.
           </p>
          </answer>
                    </task>    
@@ -580,7 +538,7 @@ The limit is <m>-0.7</m>.
          </statement>
           <answer>
           <p>
-            The average velocity between 40 and 50 meters is   <m>11.76 </m> meter per second and   <m>12.19 </m> meter per second between 50 and 70 meters.
+            The average velocity between 40 and 50 meters is   <m>11.76 </m> meters per second and   <m>12.20 </m> meters per second between 50 and 60 meters.
           </p>
          </answer>
           </task> 
@@ -588,7 +546,7 @@ The limit is <m>-0.7</m>.
          </statement> 
           <answer>
           <p>
-            <m>12</m> meter per second.
+            <m>12</m> meters per second.
           </p>
          </answer>
           </task> 
@@ -596,7 +554,7 @@ The limit is <m>-0.7</m>.
          </statement>
         <answer>
           <p>
-            <m>12</m> 
+            <m>60</m>, <m>70</m>, or <m>80</m> meters are all more reasonable.
           </p>
          </answer>
           </task> 
