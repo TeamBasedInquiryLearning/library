@@ -15,8 +15,11 @@
     <definition xml:id="def-quadratic-equation">
       <statement>
         <p>
-          A <term>quadratic equation</term> is of the form: <me>ax^2+bx+c=0</me> 
-          where <m>a</m> and <m>b</m> are coefficients (and <m>a</m> <m>\neq0</m>), <m>x</m> is the variable, and <m>c</m> is the constant term.
+          A <term>quadratic equation</term> is an equation that can be written in the form <me>ax^2+bx+c=0,</me> 
+          where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a\neq 0</m>). 
+        </p>
+        <p>
+          There are multiple ways to write a quadratic equation. When it is in the form above, we call it <term>standard form</term>.
         </p>
       </statement>
     </definition>
@@ -28,7 +31,7 @@
         </p>
       </introduction>
       <statement>
-        <p> Which of the following is a quadratic equation? 
+        <p> Which of the following is a quadratic equation? Select all that apply.
           <ol marker= "A." cols="2">
             <li> <m>6-x^2=3x</m> </li>
             <li> <m> (2x-1)(x+3)=0</m> </li>
@@ -46,7 +49,7 @@
     <definition xml:id="def-zero-product-property">
       <statement>
         <p>
-          To solve a quadratic equation, we will need to apply the <term>zero product property</term>, which states that if <m>a \cdot b=0</m>, then either <m>a=0</m> or <m>b=0</m>. In other words, you can only have a product of <m>0</m> if one (or both!) of the factors is <m>0</m>.
+          To solve a quadratic equation, one method we can use is called the <term>zero product property</term>. It states that if <m>a \cdot b=0</m>, then either <m>a=0</m> or <m>b=0</m>. In other words, you can only have a product of <m>0</m> if one (or both!) of the factors is <m>0</m>.
         </p>
       </statement>
     </definition>
@@ -59,16 +62,16 @@
       </introduction>
       <task>
         <statement>
-          <p> Which of the following equations can you apply <xref ref="def-zero-product-property"/> as your first step in solving?
+          <p> In which of the following equations can you apply the zero product property ( <xref ref="def-zero-product-property"/>) as your first step in solving?
             <ol marker= "A." cols="1">
               <li> <m>2x^2-3x+1=0</m> </li>
-              <li> <m>(2x+1)(x+1)=0</m></li>
+              <li> <m>(2x-1)(x-1)=0</m></li>
               <li> <m>3x^2-4=6x</m></li>
-              <li> <m>x(3x+5)=0</m></li></ol></p>
+              <li> <m>x(3x+5)=4</m></li></ol></p>
         </statement>
         <answer>
           <p>
-            B and D
+            B
           </p>
         </answer>
       </task>
@@ -112,17 +115,17 @@
     <activity xml:id="solve-equation-not-factored">
       <introduction>
         <p>
-          Suppose you want to solve the equation <m>2x^2+5x-12=0</m>, which is NOT in factored form.
+          Suppose you want to solve the equation <m>x^2-3x-10=0</m>, which is NOT in factored form.
         </p>
       </introduction>
       <task>
         <statement>
-          <p> Which of the following is the correct factored form of <m>2x^2+5x-12=0</m>?
+          <p> Which of the following is the correct factored form of <m>x^2-3x-10=0</m>?
             <ol marker= "A." cols="1">
-              <li> <m>(2x-3)(x-4)=0</m> </li>
-              <li> <m>(2x+3)(x-4)=0</m></li>
-              <li> <m>(2x+3)(x+4)=0</m></li>
-              <li> <m>(2x-3)(x+4)=0</m></li></ol></p>
+              <li> <m>(x+2)(x+5)=0</m> </li>
+              <li> <m>(x-2)(x-5)=0</m></li>
+              <li> <m>(x-2)(x+5)=0</m></li>
+              <li> <m>(x+2)(x-5)=0</m></li></ol></p>
         </statement>
         <answer>
           <p>
@@ -132,12 +135,13 @@
       </task>
       <task>
         <statement>
-          <p> After applying <xref ref="def-zero-product-property"/>, which of the following will be a solution to <m>2x^2+5x-12=0</m>?
+          <p> After applying <xref ref="def-zero-product-property"/>, which of the following will be a solution to <m>x^2-3x-10=0</m>?
             <ol marker= "A." cols="1">
-              <li> <m>x=-\dfrac{3}{2}</m> and <m>x=-4</m> </li>
-              <li> <m>x=\dfrac{3}{2}</m> and <m>x=4</m> </li>
-              <li> <m>x=-\dfrac{3}{2}</m> and <m>x=4</m></li>
-              <li> <m>x=\dfrac{3}{2}</m> and <m>x=-4</m></li></ol></p>
+              <li> <m>x=2</m> and <m>x=5</m> </li>
+              <li> <m>x=-2</m> and <m>x=-5</m> </li>
+              <li> <m>x=2</m> and <m>x=-5</m> </li>
+              <li> <m>x=-2</m> and <m>x=5</m> </li>
+                </ol></p>
         </statement>
         <answer>
           <p>
@@ -173,6 +177,16 @@
       </p>
     </answer>
     </task>
+          <task>
+        <statement>
+          <m>x^2-2x-24=0</m>
+    </statement>
+    <answer>
+      <p>
+        <m>x=6</m> and <m>x=-4</m>
+      </p>
+    </answer>
+    </task>
       <task>
         <statement>
           <m>3x^2-14x-5=0</m>
@@ -205,7 +219,7 @@
         <statement>
           <p>
             How many solutions does this equation have?
-            <ol marker= "A." cols="2">
+            <ol marker= "A." cols="4">
               <li> <m>0</m> </li>
               <li> <m>1</m> </li>
               <li> <m>2</m> </li>
@@ -222,7 +236,7 @@
         <statement>
           <p>
             What are the solutions to this equation?
-            <ol marker= "A." cols="2">
+            <ol marker= "A." cols="4">
               <li> <m>x=0</m> </li>
               <li> <m>x=3</m> </li>
               <li> <m>x=9,-9</m> </li>
@@ -511,7 +525,7 @@
     <statement>
       <p>
         Just like in <xref ref="complete-the-square-intro"/>, let's now try and create the perfect square trinomial (inside the parentheses) on the left side of the equation. Which of the following number(s) could we add to the left side of the equation to create a perfect square trinomial?
-        <ol marker= "A." cols="2">
+        <ol marker= "A." cols="4">
           <li><m>4</m></li>
           <li><m>8</m></li>
           <li><m>-8</m></li>
@@ -528,7 +542,7 @@
     <statement>
       <p>
         What would we need to add to the right-hand side of the equation to keep the equation balanced?
-        <ol marker= "A." cols="2">
+        <ol marker= "A." cols="4">
           <li><m>4</m></li>
           <li><m>8</m></li>
           <li><m>-8</m></li>
@@ -612,7 +626,7 @@
 
 <definition xml:id="def-quadratic-formula">
 <p>
-  The last method for solving quadratic equations is the <term>quadratic formula</term> - a formula that will solve all quadratic equations!
+  Another method for solving quadratic equations is called the <term>quadratic formula</term> - a formula that will solve all quadratic equations!
   </p>
   <p>
     A quadratic equation of the form <m>ax^2+bx+c=0</m> can be solved by the quadratic formula:
@@ -665,7 +679,7 @@
     <statement>
       <p>
         What is the solution(s) to <m>x^2+4x=-3</m>?
-        <ol marker= "A." cols="2">
+        <ol marker= "A." cols="4">
           <li><m>x=-1,3</m></li>
           <li><m>x=1,3</m></li>
           <li><m>x=-1,-3</m></li>
@@ -726,7 +740,7 @@
         What is the solution(s) to <m>2x^2-13=7x</m>?
         <ol marker= "A." cols="1">
           <li><m>x=\dfrac{7+\sqrt{73}}{4}</m> and <m>\dfrac{7-\sqrt{73}}{4}</m></li>
-          <li><m>x=\dfrac{7+\sqrt{153}}{4}</m> and <m>\dfrac{7-\sqrt{153}}{4}</m></li>
+          <li><m>x=\dfrac{7+3\sqrt{17}}{4}</m> and <m>\dfrac{7-3\sqrt{17}}{4}</m></li>
           <li><m>x=\dfrac{-7+\sqrt{55}}{4}</m> and <m>\dfrac{-7-\sqrt{55}}{4}</m></li>
           <li><m>x=\dfrac{-7+\sqrt{155}}{4}</m> and <m>\dfrac{-7-\sqrt{155}}{4}</m></li></ol>
       </p>
@@ -785,9 +799,9 @@
         Notice that the number under the square root is a negative. Recall that when you have a negative number under a square root, that gives an imaginary number <m>(\sqrt{-1}=i)</m>. What is the solution(s) to <m>x^2=6x-12</m>?
         <ol marker= "A." cols="1">
           <li><m>x=3+i\sqrt{3}</m> and <m>3-i\sqrt{3}</m></li>
-          <li><m>x=6+i\sqrt{12}</m> and <m>6-i\sqrt{12}</m></li>
+          <li><m>x=6+i\sqrt{3}</m> and <m>6-i\sqrt{3}</m></li>
           <li><m>x=-3+i\sqrt{3}</m> and <m>-3-i\sqrt{3}</m></li>
-          <li><m>x=-6+i\sqrt{12}</m> and <m>-6-i\sqrt{12}</m></li></ol>
+          <li><m>x=3+2i\sqrt{3}</m> and <m>3-2i\sqrt{3}</m></li></ol>
       </p>
     </statement>
     <answer>
@@ -836,11 +850,11 @@
   </task>
   <task>
     <statement>
-    <m>x^2-6x+12=0</m>
+    <m>2x^2-4x+3=0</m>
     </statement>
     <answer>
       <p>
-        <m>x=3+i\sqrt{3}, 3-i\sqrt{3}</m>
+        <m>x=\dfrac{2+i\sqrt{2}}{2}, \dfrac{2-i\sqrt{2}}{2} </m>
       </p>
     </answer>
   </task>
