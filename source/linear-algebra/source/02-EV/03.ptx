@@ -44,19 +44,56 @@
         </p>
     </observation>
     <activity>
-        <statement>
+        <introduction>
             <p>
-        Let <m>S</m> denote a set of vectors in <m>\IR^n</m> and suppose that <m>\vec{u},\vec{v}\in\vspan(S)</m>, 
-        <m>c\in\IR</m> and that <m>\vec{w}\in\IR^n</m>. Which of the following vectors might
-        <em>not</em> belong to <m>\vspan(S)</m>?
-        <ol marker="A.">
-          <li><m>\vec{0}</m></li>
-          <li><m>\vec{u}+\vec{w}</m></li>
-          <li><m>\vec{u}+\vec{v}</m></li>
-          <li><m>c\vec{u}</m></li>
-        </ol>
+                Let's consider the relationship between vectors within a spanning set.
             </p>
-        </statement>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+            Let <m>S</m> denote a set of vectors in <m>\IR^3</m> and suppose that
+            <m>\left[\begin{array}{c}1\\2\\3\end{array}\right],
+            \left[\begin{array}{c}4\\5\\6\end{array}\right]\in\vspan(S)</m>.
+            Which of the following vectors might
+            <em>not</em> belong to <m>\vspan(S)</m>?
+            <ol marker="A." cols="2">
+            <li><m>\left[\begin{array}{c}0\\0\\0\end{array}\right]</m></li>
+            <li><m>\left[\begin{array}{c}1\\2\\3\end{array}\right]+
+            \left[\begin{array}{c}4\\5\\6\end{array}\right]</m></li>
+            <li><m>\left[\begin{array}{c}1\\2\\3\end{array}\right]+
+            \left[\begin{array}{c}1\\1\\1\end{array}\right]</m></li>
+            <li><m>-2\left[\begin{array}{c}1\\2\\3\end{array}\right]</m></li>
+            </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    C
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+            More generally, let <m>S</m> denote a set of vectors in <m>\IR^n</m> and suppose that
+            <m>\vec v,\vec w\in\vspan(S)</m> and <m>c\in\mathbb R</m>.
+            Which of the following vectors
+            <em>must</em> belong to <m>\vspan(S)</m>?
+            <ol marker="A." cols="2">
+            <li><m>\vec 0</m></li>
+            <li><m>\vec v+\vec w</m></li>
+            <li><m>c\vec v</m></li>
+            <li><p>All of these</p></li>
+            </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    D
+                </p>
+            </answer>
+        </task>
     </activity>
 
     <definition>
@@ -97,7 +134,7 @@
     <activity estimated-time='5'>
         <introduction>
             <p>
-    Consider the homogeneous vector equation <m>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</m>.
+    Consider an arbitrary homogeneous vector equation <m>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</m>.
             </p>
         </introduction>
         <task>
@@ -106,17 +143,17 @@
         <ol marker="A.">
         <li>
             <p>
-                no.
+                No, it has no solutions.
             </p>
           </li>
         <li>
             <p>
-                yes.
+                Yes, it is guaranteed to have at least one solution.
             </p>
           </li>
           <li>
               <p>
-                  more information is required.
+                  More information is required.
               </p>
             </li>
         </ol>
@@ -124,8 +161,43 @@
             </task>
         <task>
         <p>
-    Note that if <m>\left[\begin{array}{c} a_1 \\ \vdots \\ a_n \end{array}\right] </m> and
-    <m>\left[\begin{array}{c} b_1 \\ \vdots \\ b_n \end{array}\right] </m> are both solutions,
+    Suppose that <m>\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array}\right] </m> and
+    <m>\left[\begin{array}{c} 4 \\ 5 \\ 6 \end{array}\right] </m> are both solutions
+    to the homogeneous vector equation <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{0}</m>.
+    This means that
+    <me>1 \vec{v}_1+2 \vec{v}_2+3\vec{v}_3 = \vec{0}
+    \text{ and }
+    4 \vec{v}_1+5 \vec{v}_2+6\vec{v}_3 = \vec{0} </me>.
+    Therefore by adding these equations:
+    <me>(1+4) \vec{v}_1+(2+5) \vec{v}_2+(3+6)\vec{v}_3= \vec{0},</me>
+            </p>
+        <p>
+    we may conclude that the vector <m>\left[\begin{array}{c} 1+4 \\ 2+5 \\ 3+6 \end{array}\right] </m> 
+    is...
+    <ol marker="A.">
+    <li>
+        <p>
+            another solution.
+        </p>
+      </li>
+    <li>
+        <p>
+            not a solution.
+        </p>
+      </li>
+      <li>
+          <p>
+              is equal to <m>\vec{0}</m>.
+          </p>
+        </li>
+    </ol>
+        </p>
+        </task>
+        <task>
+        <p>
+    More generally, if <m>\left[\begin{array}{c} a_1 \\ \vdots \\ a_n \end{array}\right] </m> and
+    <m>\left[\begin{array}{c} b_1 \\ \vdots \\ b_n \end{array}\right] </m> are both solutions
+    to <m>x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}</m>,
     we know that
     <me>a_1 \vec{v}_1+\cdots+a_n \vec{v}_n = \vec{0}
     \text{ and }
@@ -157,10 +229,18 @@
         </task>
         <task>
         <p>
-    Similarly, if <m>c \in \IR</m>, then since multiplying by <m>c</m> yields: <me>
-        (ca_1)\vec{v}_1+\cdots+(ca_n)\vec{v}_n=\vec{0},
+    Similarly, 
+    if <m>\left[\begin{array}{c} a_1 \\ \vdots \\ a_n \end{array}\right] </m> is a solution
+    and <m>c\in\mathbb R</m>,
+    we know first that
+    <me>
+        a_1\vec{v}_1+\cdots+a_n\vec{v}_n=\vec{0}
     </me>
-    we may conclude that the vector <m>\left[\begin{array}{c} ca_1 \\ \vdots \\ ca_n \end{array}\right] </m> is...
+    and by multiplying both sides by <m>c</m> we also know
+    <me>
+        (ca_1)\vec{v}_1+\cdots+(ca_n)\vec{v}_n=\vec{0}.
+    </me>
+    Thus we may conclude that the vector <m>\left[\begin{array}{c} ca_1 \\ \vdots \\ ca_n \end{array}\right] </m> is...
     <ol marker="A.">
     <li>
         <p>
@@ -177,11 +257,6 @@
           is equal to <m>\vec{0}</m>.
           </p>
         </li>
-    <li>
-        <p>
-        The empty set.
-        </p>
-      </li>
     </ol>
         </p>
         </task>
@@ -198,12 +273,12 @@
                 </li>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is closed under addition: for any <m>\vec{u},\vec{v}\in \vspan(S)</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>\vspan(S)</m>.
+                        the set <m>\vspan(S)</m> is <q>closed under addition</q>: for any <m>\vec{u},\vec{v}\in \vspan(S)</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>\vspan(S)</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is closed under scalar multiplication: for any <m>\vec{u}\in\vspan(S)</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>\vspan(S)</m>.    
+                        the set <m>\vspan(S)</m> is <q>closed under scalar multiplication</q>: for any <m>\vec{u}\in\vspan(S)</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>\vspan(S)</m>.    
                     </p>
                 </li>
             </ul>
@@ -216,12 +291,12 @@
                 </li>
                 <li>
                     <p>
-                        the set <m>W</m> is closed under addition: for any <m>\vec{u},\vec{v}\in W</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>W</m>.
+                        the set <m>W</m> is <q>closed under addition</q>: for any <m>\vec{u},\vec{v}\in W</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>W</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is closed under scalar multiplication: for any <m>\vec{u}\in W</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>W</m>.    
+                        the set <m>\vspan(S)</m> is <q>closed under scalar multiplication</q> : for any <m>\vec{u}\in W</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>W</m>.    
                     </p>
                 </li>
             </ul>
@@ -287,6 +362,137 @@ we'll learn what this means more carefully in a later chapter.
 			</image>
 		</figure>
 </observation>
+
+  <activity xml:id="EV3-invalid-proof">
+      <statement>
+        <p> 
+            To show that sets of Euclidean vectors form subspaces, we will
+            need to prove that certain equalities hold.
+        </p>
+        <p>
+            Consider the following argument that 
+            <m>5=7</m>:
+<md>
+    <mrow>
+&amp;&amp;    5&amp;=7
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  5-6&amp;=7-6
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  -1&amp;=1
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  (-1)^2&amp;=(1)^2
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  1&amp;=1
+    </mrow>
+</md>
+            </p>
+        <p>
+            Is this reasoning valid?
+            <ol marker="A." cols="2">
+                <li>
+                    <p>
+                        Yes
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        No
+                    </p>
+                </li>
+            </ol>
+        </p>
+      </statement>
+    </activity>
+
+    <remark>
+            <p>
+Proofs of an equality <m>\mathrm{LEFT}=\mathrm{RIGHT}</m> should generally be of one of these forms:
+<ol>
+    <li>
+        <p>
+            Using a chain of equalities:
+            <md>
+                <mrow>
+            \mathrm{LEFT} &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \mathrm{RIGHT}
+                    </mrow>
+            </md>
+            Alternatively:
+            <md>
+                <mrow>
+            \mathrm{LEFT} &amp;= \cdots &amp; \mathrm{RIGHT} &amp;=\cdots
+                </mrow>
+                <mrow>
+             &amp;= \cdots &amp; &amp;= \cdots
+                </mrow>
+                <mrow>
+              &amp;= \cdots &amp; &amp;= \cdots
+                </mrow>
+                <mrow>
+             &amp;= \mathrm{SAME}&amp; &amp;= \mathrm{SAME}
+                    </mrow>
+            </md>
+        </p>
+    </li>
+    <li>
+        <p>
+When the assumption <m>\mathrm{THIS}=\mathrm{THAT}</m> is already known or assumed to be true :
+            <md>
+                <mrow>
+                    &amp;&amp;    \mathrm{THIS} &amp;= \mathrm{THAT}
+                </mrow>
+                <mrow>
+                    &amp;  \Rightarrow&amp;  \cdots &amp;= \cdots
+                </mrow>
+                <mrow>
+                    &amp;  \Rightarrow&amp; \cdots &amp;= \cdots
+                </mrow>
+                <mrow>
+                 &amp;   \Rightarrow&amp; \mathrm{LEFT} &amp;= \mathrm{RIGHT}
+                </mrow>
+            </md>
+        </p>
+    </li>
+</ol>
+            </p>
+    </remark>
+
+    <warning>
+        <p>
+The following proof of <m>\mathrm{LEFT} = \mathrm{RIGHT}</m> is <em>invalid</em>.
+    <md>
+        <mrow>
+            &amp;&amp;    \mathrm{LEFT} &amp;= \mathrm{RIGHT}
+        </mrow>
+        <mrow>
+            &amp;  \Rightarrow&amp;  \cdots &amp;= \cdots
+        </mrow>
+        <mrow>
+            &amp;  \Rightarrow&amp; \cdots &amp;= \cdots
+        </mrow>
+        <mrow>
+         &amp;   \Rightarrow&amp; \mathrm{SAME} &amp;= \mathrm{SAME}
+        </mrow>
+    </md>
+This is instead a proof that <m>\mathrm{SAME}=\mathrm{SAME}</m>, assuming
+that <m>\mathrm{LEFT} = \mathrm{RIGHT}</m> is true in the first place. But
+the fact that <m>\mathrm{SAME}=\mathrm{SAME}</m> doesn't need a proof,
+and this work fails to guarantee that <m>\mathrm{LEFT} = \mathrm{RIGHT}</m> will be true,
+as we saw in <xref ref="EV3-invalid-proof"/>. 
+        </p>
+    </warning>
 
 
 
@@ -582,7 +788,7 @@ For all <m>\vec v\in W</m> and <m>c\in \IR</m> (not just specific values),
     </statement>
   </activity>
 
-  <activity>
+  <activity xml:id="EV3-invalid-proof-2">
       <statement>
         <p> 
             Consider the following attempted proof that 
@@ -627,93 +833,6 @@ k(x+y)&amp;=k^2xy
         </p>
       </statement>
     </activity>
-
-    <remark>
-            <p>
-Proofs of an equality <m>\mathrm{LEFT}=\mathrm{RIGHT}</m> should generally be of one of these forms:
-<ol>
-    <li>
-        <p>
-            Using a chain of equalities:
-            <md>
-                <mrow>
-            \mathrm{LEFT} &amp;= \cdots
-                </mrow>
-                <mrow>
-             &amp;= \cdots
-                </mrow>
-                <mrow>
-             &amp;= \cdots
-                </mrow>
-                <mrow>
-             &amp;= \mathrm{RIGHT}
-                    </mrow>
-            </md>
-            Alternatively:
-            <md>
-                <mrow>
-            \mathrm{LEFT} &amp;= \cdots &amp; \mathrm{RIGHT} &amp;=\cdots
-                </mrow>
-                <mrow>
-             &amp;= \cdots &amp; &amp;= \cdots
-                </mrow>
-                <mrow>
-              &amp;= \cdots &amp; &amp;= \cdots
-                </mrow>
-                <mrow>
-             &amp;= \mathrm{SAME}&amp; &amp;= \mathrm{SAME}
-                    </mrow>
-            </md>
-        </p>
-    </li>
-    <li>
-        <p>
-When the assumption <m>\mathrm{THIS}=\mathrm{THAT}</m> is already known or assumed to be true :
-            <md>
-                <mrow>
-                    &amp;&amp;    \mathrm{THIS} &amp;= \mathrm{THAT}
-                </mrow>
-                <mrow>
-                    &amp;  \Rightarrow&amp;  \cdots &amp;= \cdots
-                </mrow>
-                <mrow>
-                    &amp;  \Rightarrow&amp; \cdots &amp;= \cdots
-                </mrow>
-                <mrow>
-                 &amp;   \Rightarrow&amp; \mathrm{LEFT} &amp;= \mathrm{RIGHT}
-                </mrow>
-            </md>
-        </p>
-    </li>
-</ol>
-            </p>
-    </remark>
-
-    <warning>
-        <p>
-The following proof is <em>invalid</em>.
-    <md>
-        <mrow>
-            &amp;&amp;    \mathrm{LEFT} &amp;= \mathrm{RIGHT}
-        </mrow>
-        <mrow>
-            &amp;  \Rightarrow&amp;  \cdots &amp;= \cdots
-        </mrow>
-        <mrow>
-            &amp;  \Rightarrow&amp; \cdots &amp;= \cdots
-        </mrow>
-        <mrow>
-         &amp;   \Rightarrow&amp; 0 &amp;= 0
-        </mrow>
-        <mrow>
-         &amp;   \Rightarrow&amp; \mathrm{ANYTHING} &amp;= \mathrm{ANYTHING}
-        </mrow>
-    </md>
-Basically, you cannot prove something is true by assuming it's true,
-and it's not helpful to prove to someone that zero equals itself
-(they probably already know that).
-        </p>
-    </warning>
 
     </subsection> 
 
