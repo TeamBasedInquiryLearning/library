@@ -34,6 +34,10 @@ We recommend using Codespaces to propose changes to this repository or a fork,
 even for advanced users:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TeamBasedInquiryLearning/library)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TeamBasedInquiryLearning/library)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/TeamBasedInquiryLearning/library)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/TeamBasedInquiryLearning/library)
+
 
 If developing locally anyway, you are encouraged to review `.devcontainer.json`
 to learn our dependencies, and to install our `pre-commit` hook to prevent
