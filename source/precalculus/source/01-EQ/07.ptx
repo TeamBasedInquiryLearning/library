@@ -1088,7 +1088,7 @@
           <!--<xi:include parse="text" href="../../sage/common.sage"/> -->
           #p = TBILPrecal.numberline_plot()
           #p += TBILPrecal.inequality_plot(start=-2,end=7,label_endpoints=False)
-          p = arrow((-10,0),(12,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
+          p = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
           for i in range(-9,10):
             p += line([(i,-0.2),(i,0.2)],color="black")
             p += text(f"${i}$", (i,-0.6),color="black")
