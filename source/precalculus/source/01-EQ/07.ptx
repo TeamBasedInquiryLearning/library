@@ -1222,7 +1222,7 @@
           for i in range(-9,10):
             p += line([(i,-0.2),(i,0.2)],color="black")
             p += text(f"${i}$", (i,-0.6),color="black")
-          p += line([(-10,0),(-2,0)],color="#0088ff", thickness=3, aspect_ratio=1)
+          p += arrow((-2,0),(-10,0),color="#0088ff", thickness=3, arrowsize=3)
           p += line([(-1,0),(3,0)],color="#0088ff", thickness=3, aspect_ratio=1)
           p += text(")", (-2,0), color="#0088ff", fontsize=18)
           p += text("(", (-1,0), color="#0088ff", fontsize=18)
