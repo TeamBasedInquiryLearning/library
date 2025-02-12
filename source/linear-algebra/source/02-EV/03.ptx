@@ -907,7 +907,7 @@ For all <m>\vec v\in W</m> and <m>c\in \IR</m> (not just specific values),
   </activity>
 
   <activity xml:id="EV3-invalid-proof-2">
-      <statement>
+        <task>
         <p> 
             Consider the following attempted proof that 
             <me>U=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle| x+y=xy\right\}</me>
@@ -920,16 +920,16 @@ We want to show <m>k\left[\begin{array}{c} x \\ y \end{array}\right]=\left[\begi
 that is, <m>(kx)+(ky)=(kx)(ky)</m>. This is verified by the following calculation:
 <md>
     <mrow>
-(kx)+(ky)&amp;=(kx)(ky)
+&amp;&amp;(kx)+(ky)&amp;=(kx)(ky)
     </mrow>
     <mrow>
-k(x+y)&amp;=k^2xy
+&amp;\Rightarrow&amp;k(x+y)&amp;=k^2xy
     </mrow>
     <mrow>
-0[k(x+y)]&amp;=0[k^2xy]
+&amp;\Rightarrow&amp;0[k(x+y)]&amp;=0[k^2xy]
     </mrow>
     <mrow>
-0&amp;=0
+&amp;\Rightarrow&amp;0&amp;=0
     </mrow>
 </md>
             </p>
@@ -949,7 +949,39 @@ k(x+y)&amp;=k^2xy
                 </li>
             </ol>
         </p>
-      </statement>
+      </task>
+        <task>
+        <p>Does this fix the proof?</p>
+        <blockquote>
+            <p>
+<md>
+    <mrow>
+&amp;&amp;x+y&amp;=xy
+    </mrow>
+    <mrow>
+&amp;\Rightarrow&amp;k(x+y)&amp;=k(xy)
+    </mrow>
+    <mrow>
+&amp;\Rightarrow&amp;(kx)+(ky)&amp;=(kx)(ky)
+    </mrow>
+</md>
+            </p>
+        </blockquote>
+        <p>
+            <ol marker="A." cols="2">
+                <li>
+                    <p>
+                        Yes
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        No
+                    </p>
+                </li>
+            </ol>
+        </p>
+      </task>
     </activity>
 
     </subsection> 
