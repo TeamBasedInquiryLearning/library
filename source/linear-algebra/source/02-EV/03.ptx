@@ -338,37 +338,38 @@ we'll learn what this means more carefully in a later chapter.
         </p>
         <figure xml:id="EV3-planar-subspace-vs-r2">
 			<caption>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</caption>
-			<image width="100%" xml:id="EV3-image-r2-in-r3">
-			    <description><p>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</p></description>
-				<latex-image>
-                \begin{tikzpicture}[scale=0.5]
-    \draw[-&gt;] (0,0,0) -- (6,0,0);
-    \draw[-&gt;] (0,0,0) -- (0,6,0);
-    \draw[-&gt;] (0,0,0) -- (0,0,6);
-    \draw[fill=purple!20,fill opacity=0.5]
-      (-2,-2,2) -- (6,-2,-2) -- (2,2,-2) -- (-6,2,2) -- (-2,-2,2);
-    \draw[thick,blue,-&gt;] (0,0,0) -- (1,-1,0);
-    \draw[thick,red,-&gt;] (0,0,0) -- (-2,0,1);
-    \begin{scope}[shift={(12,2)}]
-    \draw (-4,0) -- (4,0);
-    \draw (0,-4) -- (0,4);
-    \draw[fill=purple!20,fill opacity=0.5]
-      (-3.8,-3.8) -- (-3.8,3.8) -- (3.8,3.8) -- (3.8,-3.8) -- (-3.8,-3.8);
-    \draw[very thick,blue,-&gt;] (0,0) -- (1,0);
-    \draw[very thick,red,-&gt;] (0,0) -- (0,1);
-    \end{scope}
-                \end{tikzpicture}
-				</latex-image>
-			</image>
+            <sidebyside>
+                <image xml:id="EV3-image-r2-in-r3">
+                    <description><p>A planar subset of <m>\IR^3</m>.</p></description>
+                    <sageplot variant="3d" aspect="1.0">
+p = implicit_plot3d(lambda x,y,z: x+2*y+z, [-5,5], [-5,5], [-5,5], color="cyan")
+p += plot(vector([1,2,-5]), color="purple", thickness=6)
+p += plot(vector([3,-1,-1]), color="yellow", thickness=6)
+p
+                    </sageplot>
+                </image>
+                <image xml:id="EV3-image-r2-itself">
+                    <description><p>The plane <m>\IR^2</m> itself.</p></description>
+                    <sageplot>
+p = plot(polygon([(-5,-5), (-5,5), (5,5), (5,-5)], color="cyan"))
+p += plot(vector([1,2]), color="purple")
+p += plot(vector([3,-1]), color="yellow")
+p
+                    </sageplot>
+                </image>
+            </sidebyside>
 		</figure>
 </observation>
 
   <activity xml:id="EV3-invalid-proof">
-      <statement>
+      <introduction>
         <p> 
             To show that sets of Euclidean vectors form subspaces, we will
             need to prove that certain equalities hold.
         </p>
+      </introduction>
+      <task>
+      <statement>
         <p>
             Consider the following argument that 
             <m>5=7</m>:
@@ -406,6 +407,49 @@ we'll learn what this means more carefully in a later chapter.
             </ol>
         </p>
       </statement>
+      <answer><p>B. No, this proves <m>1=1</m> from <m>5=7</m>, not the other way around.</p></answer>
+      </task>
+      <task>
+      <statement>
+        <p>
+            Consider the following argument that 
+            <m>5=7</m>:
+<md>
+    <mrow>
+ &amp;  &amp;  1&amp;=1
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  (-1)^2&amp;=(1)^2
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  -1&amp;=1
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  5-6&amp;=7-6
+    </mrow>
+    <mrow>
+ &amp;  \Rightarrow&amp;  5&amp;=7
+    </mrow>
+</md>
+            </p>
+        <p>
+            Is this reasoning valid?
+            <ol marker="A." cols="2">
+                <li>
+                    <p>
+                        Yes
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        No
+                    </p>
+                </li>
+            </ol>
+        </p>
+      </statement>
+      <answer><p>B. No, it's not true that <m>(-1)^2=(1)^2</m> implies <m>-1=1</m>.</p></answer>
+      </task>
     </activity>
 
     <remark>
