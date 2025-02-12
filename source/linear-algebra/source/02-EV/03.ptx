@@ -473,7 +473,11 @@ Proofs of an equality <m>\mathrm{LEFT}=\mathrm{RIGHT}</m> should generally be of
              &amp;= \mathrm{RIGHT}
                     </mrow>
             </md>
-            Alternatively:
+        </p>
+    </li>
+    <li>
+        <p>
+            Using two chains of equalities:
             <md>
                 <mrow>
             \mathrm{LEFT} &amp;= \cdots &amp; \mathrm{RIGHT} &amp;=\cdots
@@ -492,7 +496,7 @@ Proofs of an equality <m>\mathrm{LEFT}=\mathrm{RIGHT}</m> should generally be of
     </li>
     <li>
         <p>
-When the assumption <m>\mathrm{THIS}=\mathrm{THAT}</m> is already known or assumed to be true :
+Manipulating a known fact <m>\mathrm{THIS}=\mathrm{THAT}</m> into the desired equation:
             <md>
                 <mrow>
                     &amp;&amp;    \mathrm{THIS} &amp;= \mathrm{THAT}
@@ -544,20 +548,33 @@ as we saw in <xref ref="EV3-invalid-proof"/>.
     <introduction>
         <p>
 Let <m>W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2y+z=0}</m>.
+Consider the following questions to prove that <m>W</m> is a subspace.
         </p>
     </introduction>
     <task>
         <statement>
             <p>
-                Is <m>W</m> the empty set?
+                Is <m>W</m> non-empty?
+                <ol marker="A." cols='2'>
+                    <li>
+                        <p>
+                            Yes.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No.
+                        </p>
+                    </li>
+                </ol>
             </p>
         </statement>
     </task>
     <task>
         <p>
-    Let's assume that <m>\vec{v}=\left[\begin{array}{c} x \\ y \\ z \end{array}\right]</m> and
-    <m>\vec{w} = \left[\begin{array}{c} a \\ b \\ c \end{array}\right] </m> are in <m>W</m>.
-    What are we allowed to assume?
+    Let's assume that <m>\vec{u}=\left[\begin{array}{c} x \\ y \\ z \end{array}\right]</m> and
+    <m>\vec{v} = \left[\begin{array}{c} a \\ b \\ c \end{array}\right] </m> are in <m>W</m>.
+    What equations are we assuming to be true?
     <ol marker="A." cols='2'>
         <li>
             <p>
@@ -585,7 +602,7 @@ Let <m>W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2
     <task>
         <p>
       Which equation must be verified to show that
-      <m>\vec v+\vec w = \left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]</m>
+      <m>\vec u+\vec v = \left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]</m>
       also belongs to <m>W</m>?
             <ol marker="A.">
                 <li>
@@ -608,13 +625,28 @@ Let <m>W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2
     </task>
     <task>
         <p>
-Use the assumptions from (a) to verify the equation from (b).
+Use your assumptions to complete the following proof of
+<m>(x+a)+2(y+b)+(z+c)=0</m>.
+            <md>
+                <mrow>
+            (x+a)+2(y+b)+(z+c) &amp;= \unknown
+                </mrow>
+                <mrow>
+             &amp;= (\unknown)+(\unknown)
+                </mrow>
+                <mrow>
+             &amp;= 0 + 0
+                </mrow>
+                <mrow>
+             &amp;= 0
+                    </mrow>
+            </md>
         </p>
     </task>
     <task>
         <p>
-      Is <m>W</m> is a subspace of <m>\IR^3</m>?
-      <ol marker="A." cols="3">
+      Have we proven <m>W</m> is a subspace of <m>\IR^3</m>?
+      <ol marker="A." cols="2">
           <li>
               <p>
                   Yes
@@ -622,46 +654,76 @@ Use the assumptions from (a) to verify the equation from (b).
           </li>
           <li>
               <p>
-                  No
-              </p>
-          </li>
-          <li>
-              <p>
-                  Not enough information
+                  Not yet
               </p>
           </li>
       </ol>
         </p>
     </task>
+    <task>
+        <p>
+      Assume that 
+      <m>\vec u= \left[\begin{array}{c} x \\ y \\ z \end{array}\right]</m>
+      belongs to <m>W</m>, and <m>c\in\mathbb R</m>.
+      Which equation must be verified to show that
+      <m>c\vec u= \left[\begin{array}{c} cx \\ cy \\ cz \end{array}\right]</m>
+      also belongs to <m>W</m>?
+            <ol marker="A.">
+                <li>
+                    <p>
+                        <m>(cx)+2(cy)+(cz)=0</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x+2y+z=c</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x+2y+z+c=0</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </task>
 <task>
     <p>
-  Show that <m>k\vec v=\left[\begin{array}{c}kx\\ky\\kz\end{array}\right]</m> 
-  also belongs to <m>W</m> for any <m>k\in\IR</m> by verifying
-  <m>(kx)+2(ky)+(kz)=0</m> under these assumptions.
+Complete the following proof of
+<m>(cx)+2(cy)+(cz)=0</m> from the assumption <m>x+2y+z=0</m>.
+            <md>
+                <mrow>
+                    &amp;&amp;    x+2y+z &amp;= 0
+                </mrow>
+                <mrow>
+                    &amp;  \Rightarrow&amp;  \unknown[x+2y+z] &amp;= \unknown[0]
+                </mrow>
+                <mrow>
+                    &amp;  \Rightarrow&amp; \unknown &amp;= \unknown
+                </mrow>
+                <mrow>
+                 &amp;   \Rightarrow&amp; (cx)+2(cy)+(cz) &amp;= 0
+                </mrow>
+            </md>
     </p>
 </task>
-<task>
-    <p>
-  Is <m>W</m> is a subspace of <m>\IR^3</m>?
-  <ol marker="A." cols="3">
-      <li>
-          <p>
-              Yes
-          </p>
-      </li>
-      <li>
-          <p>
-              No
-          </p>
-      </li>
-      <li>
-          <p>
-              Not enough information
-          </p>
-      </li>
-  </ol>
-    </p>
-</task>
+    <task>
+        <p>
+      Have we proven <m>W</m> is a subspace of <m>\IR^3</m>?
+      <ol marker="A." cols="2">
+          <li>
+              <p>
+                  Yes
+              </p>
+          </li>
+          <li>
+              <p>
+                  Not yet
+              </p>
+          </li>
+      </ol>
+        </p>
+    </task>
 </activity>
 
 <activity estimated-time='10'>
@@ -673,7 +735,19 @@ Let <m>W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2
     <task>
         <statement>
             <p>
-                Is <m>W</m> the empty set?
+                Is <m>W</m> non-empty?
+                <ol marker="A." cols='2'>
+                    <li>
+                        <p>
+                            Yes.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No.
+                        </p>
+                    </li>
+                </ol>
             </p>
         </statement>
     </task>
@@ -747,6 +821,11 @@ In summary, <em>any one</em> of the following is enough to
 prove that a nonempty subset <m>W</m> is <em>not</em> a subspace:
 <ul>
     <li>
+      <p>
+Show that <m>W</m> is empty. (Or even just show <m>\vec 0\not\in W</m>.)
+      </p>
+    </li>
+    <li>
         <p>
 Find specific values for <m>\vec u,\vec v\in W</m>
 such that <m>\vec u+\vec v\not\in W</m>.
@@ -758,11 +837,6 @@ Find specific values for <m>c\in\IR,\vec v\in W</m>
 such that <m>c\vec v\not\in W</m>.
         </p>
     </li>
-    <li>
-      <p>
-Show that <m>\vec 0\not\in W</m>. 
-      </p>
-    </li>
 </ul>
 </p>
 <p>
@@ -771,12 +845,12 @@ by doing <em>all</em> of the following:
 <ol>
     <li>
         <p>
-            Show that <m>W</m> is non-empty.
+            Show that <m>W</m> is non-empty. (Usually by showing <m>\vec 0\in W</m>.)
         </p>
     </li>
   <li>
     <p>
-For all <m>\vec v,\vec w\in W</m> (not just specific values), 
+For all <m>\vec u,\vec v\in W</m> (not just specific values), 
 <m>\vec u+\vec v\in W</m>.
     </p>
   </li>
