@@ -25,6 +25,155 @@
     </statement>
   </definition>
 
+  <activity xml:id="graphs-of-quadratic-inequalities">
+
+  <introduction>
+    <p>
+      Consider the quadratic inequality <me> x^2-6x+5 \gt 0.</me>
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Use a graphing utility to graph the function <m>f(x)=x^2-6x+5</m>. What is the value of <m>f(0)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(3)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(5)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(6)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Notice from parts (a) - (d), that <m>f(x)</m> can either be positive, negative, or zero depending on the value of <m>x</m>. What are the <m>x</m>-intercept(s) of <m>f(x)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A and C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Based on what you see on the graph (and your solutions to parts (a) - (d)), for what values of <m>x</m> would <m>f(x)</m> be positive?
+        <ol marker="A." cols="2">
+            <li><m>x \lt 1</m></li>
+            <li><m>x \gt 1</m></li>
+            <li><m>x \gt 5</m></li>
+            <li><m>x \lt 5</m></li>
+              <li><m>1 \lt x \lt 5</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A and C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now use interval notation to express where <m>x^2-6x+5 \gt 0</m>.
+        <ol marker="A." cols="2">
+            <li><m>(\infty, 1] \cup [5, \infty)</m></li>
+            <li><m>[1,5]</m></li>
+            <li><m>(\infty, 1) \cup (5, \infty)</m></li>
+            <li><m>(1,5)</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+  </activity>
+
+  <remark>
+    <p>
+      From <xref ref="graphs-of-quadratic-inequalities"/>, we saw that a function could have <m>y</m>-values that are positive, negative, or zero, which can then help us find values of <m>x</m> to solve inequalities. Let's now look at how we can solve inequalities using algebra.
+      </p>
+  </remark>
+
   <activity xml:id="intro-to-quadratic-inequality">
     <introduction>
       <p>
