@@ -111,13 +111,44 @@ Given a matrix <m>M</m>
     Is <m>\left[\begin{array}{c}2\\1\\3\end{array}\right]</m> in the column space of <m>M</m>? 
     Is it in the row space of <m>M</m>?
     </p>
+    <ol marker="A.">
+      <li>
+        <p>
+          Yes.
+        </p>
+      </li>
+      <li>
+        <p>
+          No.
+        </p>
+      </li>
+    </ol>
+    <sage language="octave">
+<input></input>
+</sage>
     </task>
     <task>
     <p>
     Is <m>\left[\begin{array}{c}1\\10\\-3\end{array}\right]</m> in the column space of <m>M</m>? 
     Is it in the row space of <m>M</m>?
     </p>
+    <ol marker="A.">
+      <li>
+        <p>
+          Yes.
+        </p>
+      </li>
+      <li>
+        <p>
+          No.
+        </p>
+      </li>
+    </ol>
+    <sage language="octave">
+<input></input>
+</sage>
     </task>
+    
     </p>
     </statement>
     </activity>
@@ -128,6 +159,21 @@ Given a matrix <m>M</m>
     </me>
 Are the row space and column space of <m>M</m> both equal to <m>\mathbb{R}^3</m>?
     </p>
+    <ol marker="A.">
+      <li>
+        <p>
+          Yes.
+        </p>
+      </li>
+      <li>
+        <p>
+          No.
+        </p>
+      </li>
+    </ol>
+    <sage language="octave">
+<input></input>
+</sage>
     </statement>
     </activity>
 <definition>
