@@ -42,9 +42,14 @@ class Generator(BaseGenerator):
 
   @provide_data
   def graphics(data):
+    q=plot(data["f"],-2,2,ymin=-8,ymax=8,thickness=3,gridlines=[[-8..8],[-8..8]])
+    q.xmin(-8)
+    q.xmax(8)
     if data["hshift"]=="left":
-      p=plot(data["g"],-2-data["b"],2-data["b"],thickness=3,aspect_ratio=1)
+      p=plot(data["g"],-2-data["b"],2-data["b"],ymin=-8,ymax=8,thickness=3,gridlines=[[-8..8],[-8..8]])
     else:
       p=plot(data["g"],-2+data["b"],2+data["b"],thickness=3,aspect_ratio=1)
-    return {"plot1": plot(data["f"],-2,2,thickness=3,aspect_ratio=1),
-            "plot2": plot(p)}
+    p.xmin(-8)
+    p.xmax(8)
+    return {"plot1": q,
+            "plot2": p}

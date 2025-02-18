@@ -9,7 +9,8 @@ Consider these given integrals of trigonometric functions.
 <item><p><m>\int \tan^2\theta\,d\theta=\tan\theta-\theta+C</m></p></item>
 <!-- {{/hint0}} -->
 <!-- {{#hint1}} -->
-<item><p><m>\int \sec\theta\,d\theta=
+<item><p><m>\renewcommand{\log}{\ln}
+ \int \sec\theta\,d\theta=
 \log|\sec\theta+\tan\theta|+C</m></p></item>
 <!-- {{/hint1}} -->
 <!-- {{#hint2}} -->
@@ -29,13 +30,15 @@ integrals to find each of the following.
     <knowl>
         <content>
             <p>
-<me>\int {{integrand}}\,dx</me>
+<me>\renewcommand{\log}{\ln}
+ \int {{integrand}}\,dx</me>
             </p>
         </content>
         <outtro>
             <p>
-Substitute <m>{{sub}}</m> to find
-                <me>
+Substitute <m>\renewcommand{\log}{\ln}
+ {{sub}}</m> to find
+                <me> \renewcommand{\log}{\ln}
 \int {{integrand}}\,dx =
 {{result}} +C
                 </me>

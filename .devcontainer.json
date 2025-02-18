@@ -26,8 +26,8 @@
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
-  // Respect the project's designated dependencies
-  "postCreateCommand": "pip install -r requirements.txt && git config core.hooksPath .githooks",
+  // Respect the project's designated dependencies, and create codechat config file
+  "postCreateCommand": "bash scripts/setup.sh",
 
   // Port forwarding
   // ---------------
@@ -71,18 +71,18 @@
           "other": "off"
         },
         "editor.snippetSuggestions": "top",
-        "xml.validation.enabled": false,
+        "xml.validation.enabled": true,
+        "pretext-tools.schema.versionName": "Custom",
+        "pretext-tools.schema.customPath": "/workspaces/library/schema/tbil.rng",
+        "redhat.telemetry.enabled": false,
         "CodeChat.CodeChatServer.Command": "CodeChat_Server",
-        "files.eol": "\n",
-        "files.associations": {
-          "*.sage": "python"
-        }
+        "files.eol": "\n"
       },
       "extensions": [
-        "ms-vscode.live-server",
         "oscarlevin.pretext-tools",
         "CodeChat.codechat",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "lov3.sagemath-enhanced"
       ]
     }
   }

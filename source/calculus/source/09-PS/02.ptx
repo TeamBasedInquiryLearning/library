@@ -51,28 +51,25 @@
     </activity>
         
     <remark>
-        <statement>
-        <p>Consider a power series <m>\displaystyle\sum c_n(x-a)^n</m>.  Recall from <xref ref="fact-SQ7ratioTest"/> that if 
+        <p>Consider a power series <m>\displaystyle\sum a_n(x-c)^n</m>.  Recall from <xref ref="fact-SQ7ratioTest"/> that if 
             <md>
-                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1</mrow>
+                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{a_{n+1}(x-c)^{n+1}}{a_n(x-c)^n}\right| &amp; &lt; 1</mrow>
                 <!--<mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right| &amp; &lt; 1</mrow>
                 <mrow>\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| &amp; &lt; 1</mrow>
                 <mrow>\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &amp; &lt; 1</mrow>-->
             </md>
-            then <m>\displaystyle\sum c_n(x-a)^n</m> converges.
+            then <m>\displaystyle\sum a_n(x-c)^n</m> converges.
         </p>
         
         <p>Then recall:
             <md>
-                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|</mrow>
-                <mrow>&amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| </mrow>
-                <mrow>&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|. </mrow>
+                <mrow>\displaystyle \lim_{n\to \infty} \left|\frac{a_{n+1}(x-c)^{n+1}}{a_n(x-c)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{a_{n+1}(x-c)}{a_n}\right|</mrow>
+                <mrow>&amp;=\displaystyle \lim_{n\to \infty} |x-c|\left|\frac{a_{n+1}}{a_n}\right| </mrow>
+                <mrow>&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right|. </mrow>
             </md>
         
         
         </p>
-            
-            </statement>
     </remark>
     
     
@@ -84,14 +81,14 @@
         </introduction>
         <task>
             <p>
-                Letting <m>c_n=\frac{1}{n^2+1}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+                Letting <m>a_n=\frac{1}{n^2+1}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right|</m>.
             </p>
             
         </task>
         
         <task>
             <p>
-                For what values of <m>x</m> is <m>\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                For what values of <m>x</m> is <m>\displaystyle |x|\lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right| &lt; 1</m>?
                 <ol marker="A." cols="2">
                     <li><m>x &lt; 1</m>.</li>
                     <li><m>0\leq x &lt; 1</m>.</li>
@@ -136,14 +133,14 @@
         </introduction>
         <task>
             <p>
-                Letting <m>c_n=\frac{2^n}{5^n}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+                Letting <m>a_n=\frac{2^n}{5^n}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right|</m>.
             </p>
             
         </task>
         
         <task>
             <p>
-                For what values of <m>x</m> is <m>\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                For what values of <m>x</m> is <m>\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right| &lt; 1</m>?
                 <ol marker="A." cols="2">
                     <li><m>-\frac{2}{5} &lt; x &lt; \frac{2}{5}</m>.</li>
                     <li><m>\frac{8}{5} &lt; x &lt; \frac{12}{5}</m>.</li>
@@ -190,14 +187,14 @@
         </introduction>
         <task>
             <p>
-                Letting <m>c_n=\frac{n^2}{n!}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|</m>.
+                Letting <m>c_n=\frac{n^2}{n!}</m>, find <m>\displaystyle \lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right|</m>.
             </p>
             
         </task>
         
         <task>
             <p>
-                For what values of <m>x</m> is <m>\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
+                For what values of <m>x</m> is <m>\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{a_{n+1}}{a_n}\right| &lt; 1</m>?
                 <ol marker="A." cols="2">
                     <li><m>0\leq x &lt; \infty</m>.</li>
                     <li>All real numbers.</li>
@@ -219,19 +216,19 @@
     <fact xml:id="intervalofconvergence">
         <statement>
         <p>
-            Given the power series <m>\displaystyle\sum c_n(x-a)^n</m>, the <term>center of convergence</term><idx>center of convergence</idx> is <m>x=a</m>.  The <term>radius of convergence</term><idx>radius of convergence</idx> is <me>r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.</me>  If <m>\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|=0</m>, we say that <m>r=\infty</m>.
+            Given the power series <m>\displaystyle\sum a_n(x-c)^n</m>, the <term>center of convergence</term><idx>center of convergence</idx> is <m>x=a</m>.  The <term>radius of convergence</term><idx>radius of convergence</idx> is <me>r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right|}.</me>  If <m>\displaystyle\lim_{n\to\infty} \left| \frac{a_{n+1}}{a_n} \right|=0</m>, we say that <m>r=\infty</m>.
         </p>
         
         <p>
-            The <term>interval of convergence</term><idx>interval of convergence</idx> represents all possible values of <m>x</m> for which <m>\displaystyle\sum c_n(x-a)^n</m> converges, which is of the form:
+            The <term>interval of convergence</term><idx>interval of convergence</idx> represents all possible values of <m>x</m> for which <m>\displaystyle\sum a_n(x-c)^n</m> converges, which is of the form:
             <ul>
-                <li><m>(a-r, a+r)</m></li>
-                <li><m>[a-r, a+r)</m></li>
-                <li><m>(a-r, a+r]</m></li>
-                <li><m>[a-r, a+r]</m></li>
+                <li><m>(c-r, c+r)</m></li>
+                <li><m>[c-r, c+r)</m></li>
+                <li><m>(c-r, c+r]</m></li>
+                <li><m>[c-r, c+r]</m></li>
             </ul>
-            Depending on if <m>\displaystyle\sum c_n(x-a)^n</m> converges when <m>x=a-r</m> or <m>x=a+r</m>.</p>
-            <p>If <m>r=\infty</m> the interval of convergence is all real numbers.
+            Depending on if <m>\displaystyle\sum a_n(x-c)^n</m> converges when <m>x=c-r</m> or <m>x=c+r</m>.</p>
+            <p>If <m>r=\infty</m>, the interval of convergence is all real numbers.
         </p>
             </statement>
     </fact>
@@ -327,7 +324,7 @@
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/PS2/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/PS2/"/>
         </p>
     </subsection>
     

@@ -778,7 +778,7 @@ A=\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\5&amp;6&amp;7&amp;8\\9&amp;10&am
           <p> Let <m>B</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_1 - 5 R_3 \to R_1</m>.
           What is <m>\mathrm{det}\,B</m>?</p> 
           <p><ol marker="A" cols="4">
-            <li>-4</li>
+            <li>4</li>
             <li>-2</li>
             <li>2</li>
             <li>10</li>
@@ -790,7 +790,7 @@ A=\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\5&amp;6&amp;7&amp;8\\9&amp;10&am
           <p> Let <m>M</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_3 \leftrightarrow R_1</m>.
           What is <m>\mathrm{det}\,M</m>? </p>
           <p><ol marker="A" cols="4">
-            <li>-4</li>
+            <li>4</li>
             <li>-2</li>
             <li>2</li>
             <li>10</li>
@@ -802,7 +802,7 @@ A=\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\5&amp;6&amp;7&amp;8\\9&amp;10&am
           <p> Let <m>P</m> be the matrix obtained from <m>A</m> by applying the row operation <m>2 R_4 \to R_4</m>.
           What is <m>\mathrm{det}\,P</m>?</p>
           <p><ol marker="A" cols="4">
-            <li>-4</li>
+            <li>4</li>
             <li>-2</li>
             <li>2</li>
             <li>10</li>
@@ -1042,7 +1042,7 @@ Or we may use a formula:
 
 
     <exercises>
-        <p>Exercises available at <url href="https://tbil.org/linear-algebra/preview/exercises/#/bank/GT1/"/>.</p>
+        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/GT1/"/>.</p>
     </exercises>
  <subsection>    
     <title>Mathematical Writing Explorations</title>

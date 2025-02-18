@@ -1,214 +1,100 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <example xml:id="sample-EV1"><title>EV1</title>
-    <statement>
-        <ol>
-            <li>
+    <introduction>
+      <p>Consider each of these claims about a vector equation.</p>
+    </introduction>
+      <task>
+        <introduction>
+          <p><m>\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]</m>
+            is a linear combination of the vectors 
+            <m>\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , 
+                \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , 
+                \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } 
+                \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]</m>.</p>
+        </introduction>
+          <task>
+            <statement>
+              <p> Write a statement involving the solutions of a vector equation that's equivalent to this claim. </p>
+            </statement>
+            <solution>
+              <p>
+                The vector equation
+                <me>
+x_1\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right]  +
+x_2\left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right]  +
+x_3\left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right]  +
+x_4\left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]  =
+\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]
+                </me>
+                has at least one solution.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p> Determine if the statement you wrote is true or false. </p>
+            </statement>
+            <solution>
+              <p> <m>\mathrm{RREF}\, \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 3 &amp; -5 &amp; -15 \end{array}\right] = \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right]</m> </p>
+              <p> The bottom row requires <m>0=1</m>. Therefore the vector equation has no solutions, so <m>\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]</m> is not a linear combination. </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p> If your statement was true, explain and demonstrate how to construct a specific linear combination of <m>\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]</m> that equals <m>\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]</m>. </p>
+            </statement>
+            <solution>
+              <p> N/A </p>
+            </solution>
+          </task>
+      </task>
+      <task>
+        <introduction>
+          <p><m>\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]</m>is a linear combination of the vectors <m>\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]</m>.</p>
+        </introduction>
+          <task>
+            <statement>
+              <p> Write a statement involving the solutions of a vector equation that's equivalent to this claim. </p>
+            </statement>
+            <solution>
                 <p>
-Write a statement involving the solutions of a vector equation
-that's equivalent to each claim below.
+                  The vector equation
+                  <me>
+x_1\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right]  +
+x_2\left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right]  +
+x_3\left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right]  +
+x_4\left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]  =
+\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]
+                  </me>
+                  has at least one solution.
                 </p>
-                <ul>
-                        <li>
-                            <p>
-<m>\left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]</m>is a linear combination of the vectors <m>\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]</m>.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-<m>\left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right]</m>is a linear combination of the vectors <m>\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]</m>.
-                            </p>
-                        </li>
-                </ul>
-            </li>
-            <li>
-                <p>
-Use these statements to determine if each vector
-is or is not a linear combination.
-If it is, give an example of such a linear combination.
-                </p>
-            </li>
-        </ol>
-    </statement>
-    <solution>
-        <ul> 
-                <li> <p><m>\left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]</m>is a linear combination of the vectors <m>\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]</m> exactly when the vector equation <me>x_1\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] +x_2 \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] +x_3 \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] +x_4 \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right] = \left[\begin{array}{c}
--13 \\
-3 \\
--13
-                    \end{array}\right]</me> has a solution.  To solve this vector equation, we compute
-
-                        <me>
-\mathrm{RREF}\, \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -13
-\end{array}\right] = \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; 0 &amp; 2 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right]
-                        </me>.
-                         We see that this vector equation has solution set <m> \left\{\left[\begin{array}{c}2-2a-3b \\ a \\ b \\ 3 \end{array}\right]\ \middle|\ a,b \in \mathbb{R}\right\}</m>, so
-                        
-<m>\left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]</m> is a linear combination; for example,
-                            <m>
-2 \left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] + 3 \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right] = \left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]
-                            </m>
-                        </p>
-                </li>
-                <li><p> <m>\left[\begin{array}{c}
--13 \\
-3 \\
--15
-                    \end{array}\right]</m> is a linear combination of the vectors <m>\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]</m> exactly when the vector equation <me>x_1\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] +x_2 \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] +x_3 \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] +x_4  \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right] = \left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right] </me> has a solution.  To solve this vector equation, we compute
-                        <me>
-\mathrm{RREF}\, \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -15
-\end{array}\right] = \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right]
-                        </me>.
-                    
-                       This vector equation has no solution, so
-<m>\left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right]</m> is not a linear combination.
-                        </p>
-                </li>
-        </ul>
-    </solution>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p> Determine if the statement you wrote is true or false. </p>
+            </statement>
+            <solution>
+              <p> <m>\mathrm{RREF}\, \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \end{array}\right] = \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; 0 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</m> </p>
+              <p> No row requires <m>0=1</m>. Therefore vector equation has at least one solution, so <m>\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]</m> is a linear combination. </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p> If your statement was true, explain and demonstrate how to construct a specific linear combination of <m>\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]</m> that equals <m>\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]</m>. </p>
+            </statement>
+            <solution>
+              <p> By setting the free variables <m>x_2=0</m> and <m>x_3=0</m>, we
+                obtain the equations <m>x_1=2</m> and <m>x_4=3</m>.
+                Therefore we may construct <me>2 \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] + 3 \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right] = \left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]</me>.</p>
+            </solution>
+            <solution>
+              <p> By trial and error, we may find that
+                <me>1 \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] + 
+                    3 \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right] = 
+                    \left[\begin{array}{c} 2-15 \\ 0+3 \\ 2-15 \end{array}\right] = 
+                    \left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]</me>.</p>
+            </solution>
+          </task>
+      </task>
 </example>

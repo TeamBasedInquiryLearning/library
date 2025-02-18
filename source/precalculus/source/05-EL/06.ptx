@@ -13,7 +13,9 @@
     <title>Activities</title>
 
     <remark>
+    <p>
       Recall that we can convert between exponential and logarithmic forms. <me>\log_bx=y</me> is equivalent to <me>b^y=x</me>
+      </p>
     </remark>
 
     <activity xml:id="solve-by-converting">
@@ -59,7 +61,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solve-by-converting"/>, you were able to solve a logarithmic equation by converting it into an exponential equation. This is one method in solving logarithmic equations.
+    </p>
     </remark>
 
     <activity xml:id="solve-by-converting-2">
@@ -165,7 +169,7 @@
       <task>
         <statement>
           <p>
-            Notice that the "log" has disappeared and you now have an equation with just the variable <m>x</m>. Which of the following is equivalent to the equation you got in part b?
+            Notice that the "log" has disappeared and you now have an equation with just the variable <m>x</m>. Which of the following is equivalent to the equation you got in part (b)?
             <ol marker= "A." cols="1">
               <li><m>4x-5=2x-1</m></li>
               <li><m>4x-5=0</m></li>
@@ -181,7 +185,7 @@
       <task>
         <statement>
           <p>
-            Compare the answer you got in part c to the original equation given <m>\log(4x-5)=\log(2x-1)</m>. What do you notice?
+            Compare the answer you got in part (c) to the original equation given <m>\log(4x-5)=\log(2x-1)</m>. What do you notice?
           </p>
         </statement>
         <answer>
@@ -193,7 +197,7 @@
       <task>
         <statement>
           <p>
-            Solve the equation you got in part d to find the value of <m>x</m>.
+            Solve the equation you got in part (d) to find the value of <m>x</m>.
             <ol marker= "A." cols="2">
               <li><m>-3</m></li>
               <li><m>\dfrac{5}{4}</m></li>
@@ -210,21 +214,15 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solving-log-equations-with-logs-on-both-sides"/>, that you did not have to convert the logarithmic equation into an exponential equation. A faster method, when you have a log on both sides of the equals sign, is to "drop" the logs and set the arguments equal to one another. Be careful though - you can only have one log on each side before you can "drop" them!
+    </p>
     </remark> 
-
-    <definition xml:id="def-one-to-one-property">
-      <statement>
-        <p>
-          The <term>one-to-one property of logarithms</term> states that if both sides of an equation can be rewritten as a single logarithm with the same base, then the arguments can be set equal to each other (and then solved algebraically).
-        </p>
-      </statement>
-    </definition>
 
     <activity xml:id="solving-using-one-to-one-property">
       <introduction>
         <p>
-          Apply <xref ref="def-one-to-one-property"/> and other properties of logarithms (i.e., product, quotient, and power) to solve the following logarithmic equations.
+          Apply the one-to-one property of logarithms (see <xref ref="def-one-to-one-property"/>) and other properties of logarithms (i.e., product, quotient, and power) to solve the following logarithmic equations.
         </p>
       </introduction>
       <task>
@@ -351,7 +349,7 @@
     <task>
       <statement>
         <p>
-          Notice that the answer you got in part b is an exact answer for <m>x</m>. There will be times, though, that it will be helpful to also have an approximation for <m>x</m>. Which of the following is a good approximation for <m>x</m>?
+          Notice that the answer you got in part (b) is an exact answer for <m>x</m>. There will be times, though, that it will be helpful to also have an approximation for <m>x</m>. Which of the following is a good approximation for <m>x</m>?
           <ol marker= "A." cols="2">
             <li><m>x \approx 5.585</m></li>
             <li><m>x \approx 0.179</m></li>
@@ -368,7 +366,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solving-exponential-equations-by-converting"/> we started with an exponential equation and then solved by converting the equation into a logarithmic equation. Logarithms can help us get the variable out of the exponent.
+    </p>
     </remark>
 
     <activity xml:id="explore-using-logs-to-solve">
@@ -416,7 +416,7 @@
       <task>
         <statement>
           <p>
-            Using the change-of-base formula (<xref ref="def-change-of-base"/>), rewrite your answer from part c so that <m>x</m> is written as a single logarithm. What is the exact value of <m>x</m>?
+            Using the change-of-base formula (<xref ref="def-change-of-base"/>), rewrite your answer from part (c) so that <m>x</m> is written as a single logarithm. What is the exact value of <m>x</m>?
           </p>
         </statement>
         <answer>
@@ -440,12 +440,12 @@
       <task>
         <statement>
           <p>
-            What do you notice about your answer from parts d and e?
+            What do you notice about your answer from parts (d) and (e)?
           </p>
         </statement>
         <answer>
           <p>
-            Students should see that the two answers they got for parts d and e are the same. This might be a good time to discuss why taking the log of both sides is a valid method in solving an exponential equation.
+            Students should see that the two answers they got for parts (d) and (e) are the same. This might be a good time to discuss why taking the log of both sides is a valid method in solving an exponential equation.
           </p>
         </answer>
       </task>
@@ -572,7 +572,7 @@
       <task>
         <statement>
           <p>
-            Compare the equation you got in part c to the original equation given. What do you notice?
+            Compare the equation you got in part (c) to the original equation given. What do you notice?
           </p>
         </statement>
         <answer>
@@ -601,7 +601,9 @@
     </activity>
 
     <remark>
+    <p>
       Notice in <xref ref="solving-by-like-bases"/>, it is much faster to set the exponents equal to one another. Make sure to check that the bases are equal <em>before</em> you set the exponents equal! And if the bases are not equal, you might have to use properties of exponents to help you get the bases to be the same.
+    </p>
     </remark>
 
     <definition xml:id="def-one-to-one-property-of-exponentials">
@@ -657,12 +659,12 @@
       <task>
         <statement>
           <p>
-            Suppose you are given <me>6^{\dfrac{x-3}{4}}=\sqrt{6}</me>, how could you rewrite this equation so that both sides have a base of <m>6</m>? (Hint: you many need to revisit properties of exponents)
+            Suppose you are given <me>6^{\frac{x-3}{4}}=\sqrt{6}</me>, how could you rewrite this equation so that both sides have a base of <m>6</m>? (Hint: you many need to revisit properties of exponents)
           </p>
         </statement>
         <answer>
           <p>
-            <m>6^{\dfrac{x-3}{4}}=6^{\dfrac{1}{2}}</m>
+            <m>6^{\frac{x-3}{4}}=6^{\frac{1}{2}}</m>
           </p>
         </answer>
       </task>
@@ -715,7 +717,7 @@
             <ol marker= "A." cols="2">
               <li><m>e^4</m></li>
               <li><m>\dfrac{e^4}{9}</m></li>
-              <li><m>e^{\left(\dfrac{4}{9}\right)}</m></li>
+              <li><m>e^{\left(\frac{4}{9}\right)}</m></li>
               <li><m>\dfrac{4}{\ln9}</m></li></ol>
           </p>
         </statement>
@@ -794,7 +796,7 @@
       <task>
         <statement>
           <p>
-            <m>8^{\dfrac{x-6}{6}}=\sqrt8</m>
+            <m>8^{\frac{x-6}{6}}=\sqrt8</m>
           </p>
         </statement>
         <answer>
@@ -819,7 +821,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EL6/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EL6/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

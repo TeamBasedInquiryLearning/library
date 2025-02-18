@@ -3,33 +3,48 @@
     <knowl>
         <intro>
                 <p>
-    For each of the following matrices, explain why it is not in reduced row
-    echelon form.
+    For each of the following matrices, mark the entries
+    where pivots should appear, and either label the matrix as
+    in reduced row echelon form, or explain what should be done
+    to put the matrix in reduced row echelon form and why.
                 </p>
         </intro>
-        <!-- {{#non_rrefs}} -->
+        <!-- {{#scenarios}} -->
         <knowl>
             <content><p><me>{{label}} = {{matrix}}</me></p></content>
             <outtro>
                         <p>
-    <m>{{label}}={{matrix}}</m> is not in reduced row echelon form because
-                            <!-- {{#elementary}} -->
-    there is a non-zero entry above or below a pivot.
-                            <!-- {{/elementary}} -->
-                            <!-- {{#permutation}} -->
-    the pivots are not descending to the right.
-                            <!-- {{/permutation}} -->
-                            <!-- {{#diagonal}} -->
-    a leading term has a value besides <m>1</m>.
-                            <!-- {{/diagonal}} -->
+                            <!-- {{#rref}} -->
+    Is in reduced row echelon form
+                            <!-- {{/rref}} -->
+                            <!-- {{#add}} -->
+    Not in reduced row echelon form because
+    there is a non-zero entry above or below a pivot, which may be fixed
+    by <m>{{rowop}}</m>.
+                            <!-- {{/add}} -->
+                            <!-- {{#swap}} -->
+    Not in reduced row echelon form because
+    the pivots are not descending to the right, which may be fixed
+    by <m>{{rowop}}</m>.
+                            <!-- {{/swap}} -->
+                            <!-- {{#scale}} -->
+    Not in reduced row echelon form because
+    a leading term has a value besides <m>1</m>, which may be fixed 
+    by <m>{{rowop}}</m>.
+                            <!-- {{/scale}} -->
                         </p>
             </outtro>
         </knowl>
-        <!-- {{/non_rrefs}} -->
+        <!-- {{/scenarios}} -->
     </knowl>
     <knowl>
-        <content><p>Show step by step why
-        <me>\operatorname{RREF}{{A}} = {{rref}}</me></p></content>
-        <outtro><p><me>{{A}} \sim \cdots \sim {{rref}}</me></p></outtro>
+        <content><p>Use technology to compute
+        <m>\operatorname{RREF}{{A}}</m>.</p></content>
+        <outtro><p><me>{{Arref}}</me></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Show step by step how to compute
+        <me>\operatorname{RREF}{{A}}</me> without technology.</p></content>
+        <outtro><p><me>{{A}} \sim \cdots \sim {{Arref}}</me></p></outtro>
     </knowl>
 </knowl>

@@ -58,23 +58,23 @@ def build_books(slug:str, books=None):
     # # build and stage targets
     p = Project.parse("edition-sandbox")
     if "precalculus" in books:
-        p.get_target("precal-web").build(clean=True)
-        p.get_target("precal-web-instructor").build(clean=True)
-        p.get_target("precal-print").build(clean=True)
-        p.get_target("precal-print-instructor").build(clean=True)
-        p.get_target("precal-print-slides").build(clean=True)
+        p.get_target("precalculus-web").build(clean=True)
+        p.get_target("precalculus-web-instructor").build(clean=True)
+        p.get_target("precalculus-print").build(clean=True)
+        p.get_target("precalculus-print-instructor").build(clean=True)
+        p.get_target("precalculus-print-slides").build(clean=True)
     if "calculus" in books:
-        p.get_target("cal-web").build(clean=True)
-        p.get_target("cal-web-instructor").build(clean=True)
-        p.get_target("cal-print").build(clean=True)
-        p.get_target("cal-print-instructor").build(clean=True)
-        p.get_target("cal-print-slides").build(clean=True)
+        p.get_target("calculus-web").build(clean=True)
+        p.get_target("calculus-web-instructor").build(clean=True)
+        p.get_target("calculus-print").build(clean=True)
+        p.get_target("calculus-print-instructor").build(clean=True)
+        p.get_target("calculus-print-slides").build(clean=True)
     if "linear-algebra" in books:
-        p.get_target("la-web").build(clean=True)
-        p.get_target("la-web-instructor").build(clean=True)
-        p.get_target("la-print").build(clean=True)
-        p.get_target("la-print-instructor").build(clean=True)
-        p.get_target("la-print-slides").build(clean=True)
+        p.get_target("linear-algebra-web").build(clean=True)
+        p.get_target("linear-algebra-web-instructor").build(clean=True)
+        p.get_target("linear-algebra-print").build(clean=True)
+        p.get_target("linear-algebra-print-instructor").build(clean=True)
+        p.get_target("linear-algebra-print-slides").build(clean=True)
     p.stage_deployment()
     # save edition to site directory
     for book in books:

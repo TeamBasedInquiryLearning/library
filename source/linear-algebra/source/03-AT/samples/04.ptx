@@ -4,7 +4,6 @@
 <statement>
     <p>
 Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by the standard matrix <m>\left[\begin{array}{cccc} 1 &amp; 3 &amp; 2 &amp; -3 \\ 2 &amp; 4 &amp; 6 &amp; -10 \\ 1 &amp; 6 &amp; -1 &amp; 3 \end{array}\right]</m>.
-    </p>
     <ol>
         <li>
             <p>
@@ -17,11 +16,11 @@ Explain why <m>T</m> is or is not surjective.
             </p>
         </li>
     </ol>
+    </p>
 </statement>
 <solution>
     <p>
 Compute <me>\RREF\left[\begin{array}{cccc}1 &amp; 3 &amp; 2 &amp; -3 \\ 2 &amp; 4 &amp; 6 &amp; -10 \\ 1 &amp; 6 &amp; -1 &amp; 3 \end{array}\right] = \left[\begin{array}{cccc} 1 &amp; 0 &amp; 5 &amp; -9 \\ 0 &amp; 1 &amp; -1 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right].</me>
-    </p>
     <ol>
         <li>
             <p>
@@ -34,5 +33,6 @@ Since there are only two pivots, the image (i.e. the span of the columns) is a 2
             </p>
         </li>
     </ol>
+    </p>
 </solution>
 </example>

@@ -1,26 +1,198 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
+    <!-- {{#mixture_value}} -->
+    <!-- {{#scenarioA}} -->
     <intro>
         <p>
-            Question
+            In {{name}}'s candy shop, they purchase {{ingredient1}} from their distributor
+            at a cost of <m>\${{part1}}</m> per {{weight}}, and {{ingredient2}} at a cost of
+            <m>\${{part2}}</m> per {{weight}}.
+            {{name}} uses these to prepare a {{ingredient1}}-{{ingredient2}} candy, using a mixture that ends
+            up costing <m>\${{mixpart}}</m> per {{weight}}. 
+            They create <m>{{totalamount}}</m> {{weight}} of the mixture.
         </p>
     </intro>
-    
-    
+    <!--{{/scenarioA}}-->
+   <!-- {{#scenarioB}} -->
+    <intro>
+        <p>
+            {{name}} sells a candy using a {{ingredient1}}-{{ingredient2}}
+            mixture that they hope to produce
+            at a cost of <m>\${{mixpart}}</m> per {{weight}}.
+            It costs {{name}} <m>\${{part1}}</m> to produce one {{weight}}
+            of {{ingredient1}}, and <m>\${{part2}}</m> to produce one {{weight}}
+            of {{ingredient2}}. 
+            {{name}} plans to produce <m>{{totalamount}}</m> {{weight}} of this mixture.
+        </p>
+    </intro>
+    <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <intro>
+        <p>
+        {{name}}'s smoothie shop sells {{ingredient1}} puree for <m>\$0.{{part1}}</m> per {{weight}} 
+        and  {{ingredient2}} puree for <m>\$0.{{part2}}</m> per {{weight}}. If you ask nicely,
+        {{name}} will also sell a <m>{{totalamount}}</m> {{weight}} {{ingredient1}}-{{ingredient2}} 
+        puree mixture at cost for <m>\$0.{{mixpart}}</m> per {{weight}}. 
+        </p>
+    </intro>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} -->
+    <intro>
+        <p>
+The sorbet shop owned by {{name}} offers {{ingredient1}} sorbet for <m>\$0.{{part1}}</m> per
+{{weight}} and {{ingredient2}} sorbet for <m>\$0.{{part2}}</m> per {{weight}}. {{name}} will blend 
+different sorbets together for you, so you purchased <m>{{totalamount}}</m> {{weight}}
+of blended {{ingredient1}}-{{ingredient2}} sorbet at a cost of <m>\$0.{{mixpart}}</m> 
+per {{weight}}.
+        </p>
+    </intro>
+    <!--{{/scenarioD}}-->
+    <knowl>
+        <content>
+            <p>Set up a system of two equations modeling this scenario.</p>
+        </content>
+        <outtro>
+            <p><me>{{system}}</me></p>
+        </outtro>
+    </knowl>
+
     <knowl>
         <content>
             <p>
-                Task 
+                Solve your system to determine how much {{ingredient1}} and {{ingredient2}} 
+                {{name}} is needed to create the mixture.
             </p>
         </content>
         <outtro>
             <p>
-                Task answer
+                {{name}} used
+                <m>{{amount1}}</m> {{weight}} of {{ingredient1}}, and 
+                <m>{{amount2}}</m> {{weight}} of {{ingredient2}}.
+            </p>
+        </outtro> 
+    </knowl>
+    <!-- {{/mixture_value}} -->
+    
+    <!-- {{#mixture_percent}} -->
+    <!-- {{#scenarioA}} -->
+    <intro>
+        <p>
+            {{name}} has two investment accounts, one earning <m>{{apr1}}\%</m> annual interest and the 
+            other earning <m>{{apr2}}\%</m> annual interest. After one year, the original investment of 
+            <m>\${{totalinvestment}}</m> has earned <m>\${{totalinterest}}</m> in interest.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>Set up a system of two equations modeling this scenario</p>
+        </content>
+        <outtro>
+            <p><me>{{system}}</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Solve your system to determine how much {{name}} initially invested in each account.</p>
+        </content>
+        <outtro>
+            <p>
+                <m>\${{investment1}}</m> at <m>{{apr1}}\%</m>, and 
+                <m>\${{investment2}}</m> at <m>{{apr2}}\%</m>
             </p>
         </outtro>
-        
     </knowl>
-      
-    
+    <!-- {{/scenarioA}} -->
+    <!-- {{#scenarioB}} -->
+    <intro>
+        <p>
+{{name}} has two one-year loans, one costing <m>{{apr1}}\%</m> annual interest and the 
+other costing <m>{{apr2}}\%</m> annual interest. To pay off these loans, {{name}} must
+repay the total <m>\${{totalinvestment}}</m> loaned in addition to <m>\${{totalinterest}}</m>
+total interest. 
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>Set up a system of two equations modeling this scenario</p>
+        </content>
+        <outtro>
+            <p><me>{{system}}</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Solve your system of equations to determine much money was loaned at each rate.</p>
+        </content>
+        <outtro>
+            <p>
+                <m>\${{investment1}}</m> at <m>{{apr1}}\%</m>, and 
+                <m>\${{investment2}}</m> at <m>{{apr2}}\%</m>
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/scenarioB}} -->
+    <!-- {{#scenarioC}} -->
+    <intro>
+        <p>
+            A hamburger blend is made using ground {{meat1}} that has 
+            <m>{{percent1}}\%</m> fat content and  ground {{meat2}} 
+            that has <m>{{percent2}}\%</m> fat content.  
+            A total of {{totalamount}} lb of hamburger blend is produced
+            with a fat percentage of <m>{{mixpercent}}\%</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>Set up a system of two equations modeling this scenario.</p>
+        </content>
+        <outtro>
+            <p><me>{{system}}</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Solve your system of equations to determine how much
+            {{meat1}} and {{meat2}} were used to make this blend.
+            </p>
+        </content>
+    <outtro>
+        <p>
+<m>{{part1}}</m> lbs {{meat1}} and <m>{{part2}}</m> lbs {{meat2}}
+        </p>
+    </outtro>
+    </knowl>
+    <!-- {{/scenarioC}} -->
+    <!-- {{#scenarioD}} -->
+    <intro>
+        <p>
+            A juice cocktail mixes  {{juice1}} with
+            {{juice2}}. {{juice1}} contains <m>{{percent1}}\%</m>
+            sugar, and {{juice2}} contains <m>{{percent2}}\%</m> sugar.
+            A total of {{totalamount}} oz of juice cocktail is produced
+            with a sugar percentage of <m>{{mixpercent}}\%</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>Set up a system of two equations modeling this scenario</p>
+        </content>
+        <outtro>
+            <p><me>{{system}}</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Solve your system of equations to determine how much
+            {{juice1}} and {{juice2}} were used to make this juice cocktail.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{part1}}</m> oz of {{juice1}} and <m>{{part2}}</m> oz of {{juice2}}.
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/scenarioD}} -->
+    <!-- {{/mixture_percent}} -->
 </knowl>

@@ -20,10 +20,16 @@
             </p>
             <figure xml:id="vert-asymp">
                 <image width="50%" xml:id="graph-vertical-asymptote">
-                          <latex-image xml:id="vert-asymp-tikz"><xi:include href="./tikz/vert-asymp.tex" parse="text"/></latex-image>
-                    </image>
-                    <caption> The graph of <m>1/x^2</m>.</caption>
-                </figure>
+                    <sageplot>
+                        x = var('x')
+                        f = 1/x^2
+                        p1 = plot(f, (x,-2,-0.1), ymax = 100, gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio =.05)
+                        p2 = plot(f, (x,.1,2), ymax = 100, gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.05)
+                        p1+p2
+                    </sageplot>       
+                </image>
+                <caption> The graph of <m>1/x^2</m>.</caption>
+            </figure>
 
         </introduction>
         <task>
@@ -72,19 +78,90 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                 Select all of the following graphs which illustrate functions with vertical asymptotes.
 <!-- TO-DO make the graphs prettier-->
                      </p>
-            <figure xml:id="asymptote-vert-fig">
-                <image xml:id="asymptote-vert-img">
-                <latex-image><xi:include href="./tikz/asymptote-vert.tex" parse="text"/></latex-image>
-                </image>
-                <caption>Choices for vertical asymptotes</caption>
-            </figure>
+                    <sidebyside>
+                        <figure>
+                            <image xml:id="graph-vert-asymptotes-1">
+                                <sageplot>
+                                    x = var('x')
+                                    f = exp(x)
+                                    p1 = plot(f, (x,-4,4),gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.1)
+                                    p1
+                                </sageplot>
+                            </image>
+                            <caption>A</caption>
+                        </figure>
+    
+                        <figure>
+                            <image xml:id="graph-vert-asymptotes-2">
+                                <sageplot>
+                                    x = var('x')
+                                    f = ln(x)
+                                    p1 = plot(f, (x,0.05,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=1)
+                                    p1
+                                </sageplot>
+                            </image>
+                            <caption>B</caption>
+                        </figure>
+    
+                        <figure>
+                            <image xml:id="graph-vert-asymptotes-3">
+                                <sageplot>
+                                    x = var('x')
+                                    f = -1/x
+                                    p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
+                                    p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
+                                    p1+p2
+                                </sageplot>
+                            </image>
+                            <caption>C</caption>
+                        </figure>
+                    </sidebyside>
+    
+                    <sidebyside>
+                        <figure>
+                            <image xml:id="graph-vert-asymptotes-4">
+                                <sageplot>
+                                    x = var('x')
+                                    f = (.5*x+1)/(x-1)
+                                    p1 = plot(f,(x,-5,0.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
+                                    p2 = plot(f,(x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
+                                    p1+p2
+                                </sageplot>
+                            </image>
+                            <caption>D</caption>
+                        </figure>
+    
+                        <figure>
+                            <image xml:id="graph-vert-asymptotes-5">
+                                <sageplot>
+                                    x = var('x')
+                                    f = (exp(x)+1)/(exp(x)-1)
+                                    p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                    p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                    p1+p2
+                                </sageplot>
+                            </image>
+                            <caption>E</caption>
+                        </figure>
+    
+                        <figure>
+                            <image xml:id="graph-vert-asymptotes-6">
+                                <sageplot>
+                                    x = var('x')
+                                    f = (x^2+1)/(x-1)
+                                    p1 = plot(f, (x,-5,.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                    p2 = plot(f, (x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
+                                    p1+p2
+                                </sageplot>
+                            </image>
+                            <caption>F</caption>
+                        </figure>
+                    </sidebyside>
         </introduction>             
     </activity>
 
          <remark>
-        <statement>
             <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not defined at <m>x=a</m>. As <m>f(a)</m> does not exist, the function is NOT continuous at <m> x=a</m>. Moreover, the function's output tends to plus or minus infinity and so the limit is not equal to a number. </p>
-             </statement>
         </remark>
 
              <activity xml:id="infinity-divide-zero">
@@ -105,7 +182,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
             </ol>
     </activity>
     
-    <remark><statement><p>Informally, we say that the limit of "<m>\dfrac{1}{0}</m>" is infinite. Notice that this could be either positive or negative infinity, depending on how whether the outputs are becoming more and more positive or more and more negative as we approach zero.</p></statement></remark>
+    <remark><p>Informally, we say that the limit of "<m>\dfrac{1}{0}</m>" is infinite. Notice that this could be either positive or negative infinity, depending on how whether the outputs are becoming more and more positive or more and more negative as we approach zero.</p></remark>
 
   <activity xml:id="limits-vert-asymptote">
         <introduction>
@@ -127,9 +204,7 @@ Consider the rational function <m>f(x) = \dfrac{2}{x-3} </m>. Which of the follo
      </activity>
     
       <remark xml:id="vert-asymptote-den">
-        <statement>
             <p>When considering a ratio of functions <m>f(x)/g(x) </m>, the inputs <m> a</m> where <m> g(a)=0</m> are not in the domain of the ratio. If <m>g(a)=0 </m> but <m>f(a) </m> is not equal to 0, then <m> x=a</m> is a vertical asymptote. </p>
-             </statement>
         </remark>
 
 <activity xml:id="limits-intuition-hole">
@@ -150,7 +225,8 @@ Consider the function <m>f(x)=\dfrac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT
      </activity>
 
   <remark xml:id="rational-hole">
-      <statement><p>Recall the definition of a hole from <xref ref = "def-hole"/>. In <xref ref ="limits-intuition-hole"/> we have a hole at <m>x=1</m>. </p></statement></remark> 
+      <p>Recall the definition of a hole from <xref ref = "def-hole"/>. In <xref ref ="limits-intuition-hole"/> we have a hole at <m>x=1</m>. </p>
+  </remark> 
 
    <activity xml:id="rational-practice1">
         <introduction>
@@ -229,7 +305,14 @@ Explain and demonstrate how to find the value of each limit.
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\dfrac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
              <figure>
                     <image width="50%" xml:id="graph-rational-practice-2">
-                    <latex-image xml:id="rational-pratice2-tikz"><xi:include href="./tikz/rational-practice2.tex" parse="text"/></latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f = (x+2)*(x+4)/(x^2+3*x-4)
+                            p1 = plot(f, (x,-6,0.9), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+                            p2 = plot(f, (x,1.1,8), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+                            c = circle((-4,0.4),0.2,fill=True,facecolor='white',thickness=1)
+                            p1+p2+c
+                        </sageplot>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>
@@ -325,7 +408,7 @@ Explain and demonstrate how to find the value of each limit.
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT6/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT6/"/>
         </p>
     </subsection>
 

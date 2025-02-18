@@ -56,12 +56,12 @@
          <p>At any particular input <m>x=a</m>, the derivative function outputs <m>f'(a)</m>, the value of derivative at the point <m>x=a</m>. </p>
     </definition>
     
-    <remark xml:id="derivative-notation1">  <p>To specify the indendent variable of our function, we say that <m>f'(x)</m> is the derivative of <m>f(x)</m> with respect to <m>x</m>. For the derivative function of <m>y=f(x)</m> we also use the notation:</p>
+    <remark xml:id="derivative-notation1">  <p>To specify the independent variable of our function, we say that <m>f'(x)</m> is the derivative of <m>f(x)</m> with respect to <m>x</m>. For the derivative function of <m>y=f(x)</m> we also use the notation:</p>
         <me>f'(x)=y'(x)=\frac{dy}{dx}=\frac{df}{dx}.</me> 
         <p> The last type of notation is known as <em>differential</em> (or Leibniz) notation for the derivative.</p></remark>
     
    <remark xml:id="derivative-notation2"> 
-    <p>Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'(t)=\dfrac{dy}{dt}=\dfrac{dv}{dt}</m>.</p>
+    <p>Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for independent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'(t)=\dfrac{dy}{dt}=\dfrac{dv}{dt}</m>.</p>
     </remark>
     
     <activity xml:id="activity-derivative-analytically-algebraic1">
@@ -155,7 +155,7 @@
         </statement>
     </activity>
     
-    <remark><statement><p>The first derivative encodes information about the rate of change of the original function. In particular,
+    <remark><p>The first derivative encodes information about the rate of change of the original function. In particular,
 <ul>
 <li>If <m>f'\gt 0 </m>, then <m>f</m> is increasing;</li>
 <li>If <m>f'\lt 0 </m>, then <m>f</m> is decreasing;</li>
@@ -168,7 +168,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
 <li>If <m>f'' \gt 0 </m>, then <m>f'</m> is increasing;</li>
 <li>If <m>f'' \lt 0 </m>, then <m>f'</m> is decreasing;</li>
     <li>If <m>f'' = 0 </m>, then <m>f'</m> has a horizontal tangent line (and it might have a max or min or it might just be changing pace).</li>
-</ul> </p> </statement></remark>
+</ul> </p> </remark>
     
      <activity xml:id="second-first-der-graph">
     <statement><p>Consider the function <m>f(x)=-x^2+2x-4</m>. Earlier you saw that <m>f'(x)=-2x+2</m> and <m>f''(x)=-2</m>. What does this tell you about the graph of <m>f(x)</m> for <m>x \gt 1</m>?</p>
@@ -213,7 +213,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
        <activity xml:id = "DF2-activity-ball2">
               <introduction> 
                 <p>  In this activity you will study (again!) the velocity of a ball falling under gravity. A ball is tossed vertically in the air from a window. The height of the ball (in feet) is given by the formula
-<m> f(t) = 64-16(t-1)^2</m>, where <m>t</m> is the seconds after the ball is launched. Recall that in <xref ref="activity-ball1"/>, you used numerical methods to approxmiate the instantaneous velocity of <m>f(t)</m> to calculate <m>v(2)</m>! </p> </introduction>  
+<m> f(t) = 64-16(t-1)^2</m>, where <m>t</m> is the seconds after the ball is launched. Recall that in <xref ref="activity-ball1"/>, you used numerical methods to approximate the instantaneous velocity of <m>f(t)</m> to calculate <m>v(2)</m>! </p> </introduction>  
                   <task> <p> Using the limit definition of the derivative function, find the velocity function <m>v(t)=f'(t)</m>. </p></task>
              <task> <p> Using the velocity function <m>v(t)</m>, what is <m>v'(1)</m>, the instantaneous velocity at <m>t=1</m>? </p>   
             <ol marker="A." cols="2">
@@ -281,7 +281,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     <subsection>
         <title>Videos</title>
         <figure>
-            <video xml:id="video-DF2" youtube="4UErodf99UE"/>
+            <video xml:id="video-DF2" youtube="_e4F_lKOUII"/>
             <caption>Video for DF2</caption>
         </figure>
     </subsection> 
@@ -289,7 +289,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF2/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/DF2/"/>
         </p>
     </subsection>
 </section>

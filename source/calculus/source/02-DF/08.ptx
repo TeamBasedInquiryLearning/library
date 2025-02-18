@@ -80,48 +80,27 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     
 <activity xml:id="activity-df-inv-graph"> <introduction><p>In this problem you will apply the general formula for the derivative of the inverse function to find the values of some derivatives graphically.</p> 
     <figure>
-                    <image xml:id="graph-df-inv">
-                    <latex-image>  
-    \begin{tikzpicture}[scale=1]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=0, xmax=80,
-    ymin=0, ymax=25,
-    xtick={0,10,...,80},
-    ytick={0,4,...,24},
-    % yticklabels={0, 0.01, 0.02, 0.03, 0.04, 0.05},
-%   	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel={},
-	xlabel=$x$,
-        ]
-    \addplot[domain=0:80, blue, ultra thick] {(0.6*(x)^3)/(3*(60^2))} node [pos=0.8,above left, ultra thick] {$\boldsymbol{f(x)}$};
- \end{axis}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=1]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=0, xmax=80,
-    ymin=0, ymax=1.2,
-    xtick={0,10,...,80},
-    ytick={0,0.2,...,1.2},
-    % yticklabels={0, 0.0002, 0.0004, 0.0006, 0.0008, 0.001},
-%   	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel={},
-	xlabel=$x$,
-        ]
-    \addplot[domain=0:80, blue, ultra thick] {0.6*(x)^2/((60^2))} node [pos=0.8,above left, ultra thick] {$\boldsymbol{f'(x)}$};
- \end{axis}
-\end{tikzpicture}
-       </latex-image>
-                    </image>
-                    <caption>The graphs of <m> f(x)</m> and <m> f'(x)</m>.</caption>
-                </figure>                  
+        <sidebyside widths="50% 50%">
+            <image xml:id="graph-df-inv-img1">
+                <sageplot>
+                    x = var('x')
+                    f = 0.6*x^3/(3*60^2)
+                    p = plot(f,(x,0,80), ymax = 25, gridlines=True, thickness=2,axes_labels=('$x$','$f(x)$'), aspect_ratio=3)
+                    p
+                </sageplot>
+            </image>
+            <image xml:id="graph-df-inv-img2">
+                <sageplot>
+                    x = var('x')
+                    f = 0.6*x^2/60^2
+                    p = plot(f,(x,0,80), ymax = 1.2, gridlines=True, thickness=2, axes_labels=('$x$',"$f'(x)$"), aspect_ratio = 65)
+                    p
+                </sageplot>
+            </image>
+        </sidebyside>
+
+        <caption>The graphs of <m> f(x)</m> and <m> f'(x)</m>.</caption>
+    </figure>                  
        </introduction>
     <task><p>The derivative of the inverse function at <m>x=12</m> given by <m>(f^{-1})' (12) = \dfrac{1}{f'(f^{-1}(12))}</m>. Using the graphs, what is your best approximation for this quantity?</p>
       <ol marker="A." cols="2">
@@ -196,43 +175,27 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 </p></task>
     <task><p>From the graph of <m>y=\sin(x)</m> and your table above, graph the arcsine function  <m>y=\sin^{-1}(x)</m> </p>
      <figure>
-                    <image xml:id="graph-tan">
-                    <latex-image>  
-\begin{tikzpicture}
-\begin{axis}[
-    axis lines=middle,
-    xmin=-2,xmax=2,ymin=-1,ymax=1,
-   xtick={-1.57, -1.04,...,1.99},
-   ytick={-1, -0.75,...,1},
-   xticklabels={$-\pi/2$, $-\pi/3$, $-\pi/6$ , 0  , $\pi/6$, $\pi/3$, $\pi/2$, $2\pi/3$}, 
-    xlabel={$x$},
-    ylabel={$y$}
-    ]
-  \addplot[domain=-pi/2:pi/2,blue, thick, samples=500]  {sin(deg(x))} node [pos=0.65,below right] {$f(x)=\sin(x)$};
-    % \addplot[domain=-2*pi:2*pi,blue] {tan(deg(x))};
-    %  \addplot[domain=pi/2:3*pi/2,blue] {tan(deg(x))};
-\end{axis}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=1]
-\begin{axis}[
-    axis lines=middle,
-    xmin=-1,xmax=1,ymin=-2,ymax=2,
-   ytick={-1.57, -1.04 ,..., 1.99},
-   xtick={-1, -0.75,...,1},
-   yticklabels={$-\pi/2$, $-\pi/3$, $-\pi/6$ , 0  , $\pi/6$, $\pi/3$, $\pi/2$, $2\pi/3$}, 
-    xlabel={$x$},
-    ylabel={$y$}
-    ]
-%   \addplot[domain=-2*pi:2*pi,blue, samples=500]  {sin(deg(x))} ;
-    % \addplot[domain=-2*pi:2*pi,blue] {tan(deg(x))};
-    %  \addplot[domain=pi/2:3*pi/2,blue] {tan(deg(x))};
-     \addplot [only marks, blue] coordinates {(-1,-1.57)};
-\end{axis}
-\end{tikzpicture}
-     </latex-image>
-                    </image>
-                    <caption>The graphs of <m> \sin(x)</m> and one point on <m> \sin^{-1}(x)</m>.</caption>
-                </figure>                  
+        <sidebyside widths="50% 50%">
+            <image xml:id="graph-sin">
+                <sageplot>
+                    x=var('x')
+                    f = sin(x)
+                    ticks = [pi/6, sorted({sin(a) for a in [-4*pi/6,-3*pi/6 .. 4*pi/6]})]
+                    p = plot(f, (x,-pi/2,pi/2), ticks = ticks, tick_formatter=[pi,None], thickness=2, axes_labels=('$x$','$y=\sin(x)$'),gridlines=False, aspect_ratio=1.5)
+                    p
+                </sageplot>
+            </image>
+            <image xml:id="graph-invsin">
+                <sageplot>
+                    x = var('x')
+                    ticks = [[-1,-0.75,-0.5,-0.25,0.25,0.5,0.75,1],[-pi/2, -pi/3, -pi/6, pi/6, pi/3, pi/2]]
+                    p = plot(2, (x,-1,1), ymin = -pi/2, ymax = pi/2, ticks=ticks, tick_formatter=[None,pi], axes_labels=('$x$','$y$'), gridlines=False, aspect_ratio = .6)
+                    p
+                </sageplot>
+            </image>
+        </sidebyside>
+        <caption>The graphs of <m> \sin(x)</m> and a blank graph for <m> \sin^{-1}(x)</m>.</caption>
+    </figure>                  
   </task>
     <task><p>Let's now work with the function arccosine. Again, we need to restrict the domain of cosine to be able to invert the function (Why?). The convention is to restrict cosine to the domain <m>[0,\pi]</m> in order to define arccosine. Given this restriction, what are the domain and range of arccosine? Create a table of values and graph the function arccosine.</p></task>
      <task><p>Let's now work with the function arctangent. Again, we need to restrict the domain of tangent to be able to invert the function (Why?). The convention is to restrict tangent to the domain <m>(-\pi/2,\pi/2)</m> in order to define arctangent. Given this restriction, what are the domain and range of arctangent? Create a table of values and graph the function arctangent.</p></task>
@@ -305,50 +268,27 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
   <activity xml:id="derivative-inverses-in-context2">   
       <introduction><p>Let <m>y=f(v)</m> be the gas consumption (in ml/km) of a car at velocity <m>v</m> (in km/hr). We use the notation: ml for milliliters, km for kilometers, and hr for hours. Also consider the function <m>g(y)</m>, where <m>v=g(y)</m> is the function that gives the velocity <m>v</m> (in km/hr) when the gas consumption is <m>y</m> (in ml/km).
 You are given the graphs of <m>f(v), f'(v)</m> below. </p>
- <figure>
-                    <image xml:id="graph-inverses-in-context2">
-                    <latex-image>  
-      \begin{tikzpicture}[scale=0.8]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=0, xmax=80,
-    ymin=0, ymax=25,
-    xtick={0,10,...,80},
-    ytick={0,2,...,24},
-    % yticklabels={0, 0.01, 0.02, 0.03, 0.04, 0.05},
-%   	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel={},
-	xlabel=$v$,
-        ]
-    \addplot[domain=0:80, blue, ultra thick] {(0.6*(x)^3)/(3*(60^2))} node [pos=0.8,above left, ultra thick] {$\boldsymbol{f(v)}$};
- \end{axis}
-\end{tikzpicture}
-\begin{tikzpicture}[scale=0.8]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=0, xmax=80,
-    ymin=0, ymax=1.2,
-    xtick={0,10,...,80},
-    ytick={0,0.2,...,1.2},
-    % yticklabels={0, 0.0002, 0.0004, 0.0006, 0.0008, 0.001},
-%   	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel={},
-	xlabel=$v$,
-        ]
-    \addplot[domain=0:80, blue, ultra thick] {0.6*(x)^2/((60^2))} node [pos=0.8,above left, ultra thick] {$\boldsymbol{f'(v)}$};
- \end{axis}
-\end{tikzpicture}
-                        
-                         </latex-image>
-                    </image>
-                    <caption>The graphs of <m> f(v), f'(v)</m>.</caption>
-                </figure>                  
+<figure>
+    <sidebyside widths="50% 50%">
+        <image xml:id="graph-df-inv-img3">
+            <sageplot>
+                x = var('x')
+                f = 0.6*x^3/(3*60^2)
+                p = plot(f,(x,0,80), ymax = 25, gridlines=True, thickness=2,axes_labels=('$v$','$f(v)$'), aspect_ratio=3)
+                p
+            </sageplot>
+        </image>
+        <image xml:id="graph-df-inv-img4">
+            <sageplot>
+                x = var('x')
+                f = 0.6*x^2/60^2
+                p = plot(f,(x,0,80), ymax = 1.2, gridlines=True, thickness=2, axes_labels=('$v$',"$f'(v)$"), aspect_ratio = 65)
+                p
+            </sageplot>
+        </image>
+    </sidebyside>
+    <caption>The graphs of <m> f(v)</m> and <m> f'(v)</m>.</caption>
+</figure>                  
       </introduction>
 <task><p>
     Estimate <m>f^{-1}(6)</m>. What does this value mean in the context of the problem?
@@ -377,7 +317,7 @@ You are given the graphs of <m>f(v), f'(v)</m> below. </p>
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/DF8/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/DF8/"/>
         </p>
     </subsection>
 

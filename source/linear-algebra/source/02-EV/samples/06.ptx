@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <example xml:id="sample-EV6"><title>EV6</title>
-<statement>
+<introduction>
     <p>
 Consider the subspace 
 <me>
@@ -14,22 +14,14 @@ Consider the subspace
   \right\} .
 </me>
     </p>
-    <ol>
-        <li>
+    </introduction>
+    <task>
+        <statement>
             <p>
 Explain how to find a basis of <m>W</m>.
             </p>
-        </li>
-        <li>
-            <p>
-Explain how to find the dimension of <m>W</m>.
-            </p>
-        </li>
-    </ol>
-</statement>
-<solution>
-    <ol>
-        <li>
+        </statement>
+        <solution>
     <p>
 Observe that
 <me> \RREF
@@ -57,12 +49,18 @@ Therefore
 </me>
 is a basis of <m>W</m>.
     </p>
-        </li>
-        <li>
-    <p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+Explain how to find the dimension of <m>W</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
 Since this (and thus every other) basis has three vectors in it, the dimension of <m>W</m> is <m>3</m>.
-    </p>
-        </li>
-    </ol>
-</solution>
+            </p>
+        </solution>
+    </task>
 </example>

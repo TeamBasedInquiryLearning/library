@@ -24,9 +24,9 @@ We currently offer classroom-ready materials for **Calculus** and
 - [Slides](https://library.tbil.org/2024/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
 - [Exercises](https://library.tbil.org/2024/linear-algebra/exercises/)
 
-We have also just released a Preview edition of materials for pre-calculus classrooms. Note that these have not yet been used in classrooms; instructors are encouraged to join the conversation at <http://chat.tbil.org> to join others trialing these activities in their classrooms in Fall 2024.
+We have also just released a Trial edition of materials for pre-calculus classrooms. Note that these have not yet been used in classrooms; instructors are encouraged to join the conversation at <http://chat.tbil.org> to join others trialing these activities in their classrooms in Fall 2024.  You may wish to use this in conjunction with the Preview edition below, which is constantly changing as we make updates and fix things.  
 
-#### Precalculus 2024 Preview Edition
+#### Precalculus 2024 Trial Edition
 
 - [HTML](https://library.tbil.org/2024/precalculus/)
     - [Instructor Edition](https://library.tbil.org/2024/precalculus/instructor/)
@@ -90,3 +90,9 @@ Older editions of our Calculus and Linear Algebra books are archived at these li
     - <https://tienchih.github.io/tbil-stats/>
     - TBIL activities designed by TBIL fellow Tien Chih
     - CheckIt exercise bank: <https://tienchih.github.io/checkit-stats/>
+
+---
+
+### Workshops
+Please see the `workshops` folder on our GitHub for materials (Slideshows, RATs, Facilitation Guide) for conducting workshops introducing faculty to TBIL
+- [Team-Based Inquiry Learning Workshops](https://github.com/TeamBasedInquiryLearning/library/tree/main/workshops)

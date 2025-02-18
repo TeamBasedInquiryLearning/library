@@ -47,6 +47,12 @@ class Generator(BaseGenerator):
     #Pick endpoints of line segments
     xpoints=sample([2*n+choice([0,1]) for n in range(-4,4)],choice([4..5]))
     xpoints.sort()
+    #Ensure origin is included
+    if xpoints[-1] <=0:
+       xpoints[-1] = choice([1,3])
+    if xpoints[0] >=0:
+       xpoints[0] = choice([-1,-3])
+
     #Pick first point arbitrarily
     points=[(xpoints[0], choice([-8..8]))]
     lines=[]
@@ -93,7 +99,10 @@ class Generator(BaseGenerator):
             if xpoints[j]<=s and s<=xpoints[j+1]:
                 xvalues.add(round(s,1))
 
-
+    tasks2=[ {"findy": {"xvalue": c, "gx": gc} },
+             {"findx": {"result": b, "values": ",".join([ f"x={i:g}" for i in xvalues])}}
+            ]
+    shuffle(tasks2)
 
     return {
       "fname": fname,
@@ -102,17 +111,23 @@ class Generator(BaseGenerator):
       "gname": gname,
       "g_pieces":[((xpoints[i],xpoints[i+1]),lines[i]) for i in [0..len(lines)-1] ],
       "interval":f"[{xpoints[0]},{xpoints[-1]}]",
-      "xvalue":c, 
-      "gx":gc,
-      "result":b,
+      "tasks2":tasks2,
+      #"xvalue":c, 
+      #"gx":gc,
+      #"result":b,
       #Use the g (general format) to make sure 4 prints as 4, not 4.0
-      "values": [{"x": f"{i:g}"} for i in xvalues]
+      #"values": [{"x": f"{i:g}"} for i in xvalues]
+      #"values": ",".join([ f"x={i:g}" for i in xvalues])
     } 
 
 
   @provide_data
   def graphics(data):
     p=Graphics()
+    ymin=-1
+    ymax=1
     for piece in data["g_pieces"]:
-      p+=plot(piece[1],piece[0][0],piece[0][1],thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1)
+      ymin=min(piece[1].subs({x:piece[0][0]}), piece[1].subs({x:piece[0][1]}),ymin)
+      ymax=max(piece[1].subs({x:piece[0][0]}), piece[1].subs({x:piece[0][1]}),ymax)
+      p+=plot(piece[1],piece[0][0],piece[0][1],thickness=3,gridlines=True,ticks=[1,1],aspect_ratio=1,ymin=ymin,ymax=ymax)
     return {"plot": p}
