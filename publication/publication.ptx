@@ -96,13 +96,8 @@
       exercise-worksheet="no"
       exercise-readingquestion="no"
     />
-    <!-- Specify the style of the html by giving names to      -->
-    <!-- override defaults.  Ex: to use "style_oscarlevin.css" -->
-    <!-- put <css style="oscarlevin"/>                         -->
-    <!-- @colors now implemented                               -->
-    <!-- also @knowls, @toc, and @banner, although no          -->
-    <!-- alternative styles exist yet for those.               -->
-    <css style="default" colors="green_blue" toc="crc" navbar="crc" banner="crc" shell="crc"/>
+    
+    <css theme="denver" palette="leaves"/>
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
     <search variant="default" />
