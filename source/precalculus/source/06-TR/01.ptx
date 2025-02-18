@@ -12,7 +12,15 @@
     <subsection>
     <title>Activities</title>
 
-    <definition xml:id="angle"> An <term>angle</term> is formed by joining two rays at their starting points.  The point where they are joined is called the <term> vertex</term> of the angle. The measure of an angle is the amount of a circle between the two rays. </definition>
+    <definition xml:id="angle">
+      <statement>
+        <p>
+          An <term>angle</term> is formed by joining two rays at their starting points.
+          The point where they are joined is called the <term> vertex</term> of the angle.
+          The measure of an angle is the amount of a circle between the two rays. 
+        </p>
+      </statement>
+    </definition>
 
     <activity>
       <introduction>
@@ -23,7 +31,7 @@
       </introduction>
       <task>
         <statement>
-        <p> <figure xml:id="fig-90-degree-angle"><image width="50%">
+        <image width="50%">
           <sageplot>
             p=arrow((0,0),(3,3),aspect_ratio=1)
             p+=arrow((0,0),(-3,3))
@@ -31,7 +39,8 @@
             p.axes(False)
             p
           </sageplot>
-        </image></figure>
+        </image>
+        <p>
           <ol marker="A." cols="2">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
@@ -47,7 +56,7 @@
       </task>
       <task>
         <statement>
-        <figure><image width="50%">
+        <image width="50%">
           <sageplot>
             p=arrow((0,0),(-4,1),aspect_ratio=1)
             p+=arrow((0,0),(4,-1))
@@ -56,7 +65,7 @@
             p.axes(False)
             p
           </sageplot>
-        </image></figure>
+        </image>
         <p>
           <ol marker="A." cols="2">
             <li><p><m>45^{\circ}</m> </p></li>
@@ -73,7 +82,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="fig-135-degree-angle"><image width="50%">
+        <image width="50%">
           <sageplot>
             p=arrow((0,0),(0,4),aspect_ratio=1)
             p+=arrow((0,0),(-3,-3))
@@ -81,7 +90,8 @@
             p.axes(False)
             p
           </sageplot>
-        </image></figure>
+        </image>
+        <p>
           <ol marker="A." cols="2">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
@@ -101,29 +111,26 @@
         <p>
           An angle is in <term>standard position</term> if its vertex is located at the origin and its initial side extends along the positive <m>x</m>-axis. 
         </p>
-      </statement>
-      <figure xml:id="standard-position"><image width="50%">
+      <image width="50%">
         <sageplot>
           p=arrow((0,0),(4,0),aspect_ratio=1)
           p+=arrow((0,0),(-3,-3))
           p+=arc((0,0),0.5,sector=(0, 5*pi/4),color="black")
           p
         </sageplot>
-      </image></figure>
-<statement>
+      </image>
   <p>
     An angle measured counterclockwise from the initial side has a positive measure, while an angle measured clockwise from the initial side has a negative measure. 
   </p>
-</statement>
-<figure xml:id="standard-position-neg"><image width="50%">
+<image width="50%">
   <sageplot>
     p=arrow((0,0),(4,0),aspect_ratio=1)
     p+=arrow((0,0),(-3,-3))
     p+=arc((0,0),0.5,sector=(5*pi/4,2*pi),color="black")
     p
   </sageplot>
-</image></figure>
-     
+</image>
+     </statement>
     </definition>
     
     <activity>
@@ -134,7 +141,7 @@
       </introduction>
       <task>
         <statement>
-        <p> <figure xml:id="fig-45-degree-angle"><image width="50%">
+        <image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0), aspect_ratio=1)
             p+=arrow((0,0),(3,3))
@@ -142,7 +149,8 @@
             p.axes(False)
             p
           </sageplot>
-        </image></figure>
+        </image>
+        <p>
           <ol marker="A." cols="2">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
@@ -158,7 +166,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="fig-180-degree-angle"><image width="50%">
+        <image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(-4,0))
@@ -166,7 +174,8 @@
             p.axes(False)
             p
           </sageplot>
-        </image></figure>
+        </image>
+        <p>
           <ol marker="A." cols="2">
             <li><p><m>180^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
@@ -183,7 +192,7 @@
       </task>
       <task>
         <statement>
-        <p> <figure xml:id="fig-210-degree-angle"><image width="50%">
+        <image width="50%">
           <sageplot>
             p=arrow((0,0),(4,0),aspect_ratio=1)
             p+=arrow((0,0),(4*cos(7*pi/6),3*sin(7*pi/6)))
@@ -191,7 +200,8 @@
             p.axes(False)
             p
           </sageplot>
-        </image></figure>
+        </image>
+        <p>
           <ol marker="A." cols="2">
             <li><p><m>30^{\circ}</m> </p></li>
             <li><p> <m>-150^{\circ}</m> </p></li>
@@ -210,7 +220,7 @@
          <p> Draw an angle of measure <m>-225^{\circ} </m> in standard position.
          </p></statement>
         <answer>
-          <figure xml:id="fig-225-degree-angle"><image width="50%">
+          <image width="50%">
             <sageplot>
               p=arrow((0,0),(4,0),aspect_ratio=1)
               p+=arrow((0,0),(4*cos(3*pi/4),4*sin(3*pi/4)))
@@ -218,13 +228,15 @@
               p.axes(False)
               p
             </sageplot>
-          </image></figure>
+          </image>
         </answer>
       </task>
     </activity>
 
     <remark>
+    <p>
       Activity or remark - Something about the circumference of a circle being another way to measure the angle.  <m>C=2\pi r</m> divide both sides by the radius, so a full circle or <m>360^{\circ}=2\pi</m> radians
+    </p>
     </remark>
 
     <definition xml:id="def-radian">
@@ -316,9 +328,10 @@
     </activity>
     </subsection>
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
       <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TR1/"/>. </p> 
-    </exercises>
+    </subsection>
     
     <!-- <subsection>
         <title>Videos</title>
