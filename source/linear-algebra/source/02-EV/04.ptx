@@ -240,7 +240,9 @@
                 <ol marker="A.">
                     <li>
                         <p>
-A pivot column in the <em>augmented</em> matrix guarantees the linear independence
+A pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
+            \end{array}\right]</m> guarantees the linear independence
 of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
 by preventing contradictions.
                         </p>
