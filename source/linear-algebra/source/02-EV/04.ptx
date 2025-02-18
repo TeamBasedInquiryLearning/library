@@ -46,7 +46,7 @@
         </subsection>
 
 <subsection><title>Class Activities</title>
-<activity estimated-time='10'>
+<activity estimated-time='10' xml:id="EV4-motivation">
     <statement>
         <p>
   Consider the two sets
@@ -60,15 +60,16 @@
   \left[\begin{array}{c}1\\1\\4\end{array}\right],
   \left[\begin{array}{c}-1\\0\\-11\end{array}\right]
   \right\}
-            </me>.
+            </me>
+  where <m>T</m> contains a vector missing from <m>S</m>.
   Which of the following is true?
         </p>
     <ol marker="A.">
-<li> <m>\vspan S</m> is bigger than <m>\vspan T</m>.
+<li> <m>\vspan S</m> contains a vector missing from <m>\vspan T</m>.
     </li>
-<li> <m>\vspan S</m> and <m>\vspan T</m> are the same size.
+<li> <m>\vspan T</m> contains a vector missing from <m>\vspan S</m>.
     </li>
-<li> <m>\vspan S</m> is smaller than <m>\vspan T</m>.
+<li> <m>\vspan S</m> and <m>\vspan T</m> contain the same vectors.
     </li>
     </ol>
     </statement>
@@ -106,6 +107,46 @@
         </p>
     </statement>
 </definition>
+<remark>
+        <p>
+  In <xref ref="EV4-motivation"/> we had
+            <me>
+    S=\left\{
+  \left[\begin{array}{c}2\\3\\1\end{array}\right],
+  \left[\begin{array}{c}1\\1\\4\end{array}\right]
+  \right\} \hspace{1em} \not= \hspace{1em}
+    T=\left\{
+  \left[\begin{array}{c}2\\3\\1\end{array}\right],
+  \left[\begin{array}{c}1\\1\\4\end{array}\right],
+  \left[\begin{array}{c}-1\\0\\-11\end{array}\right]
+  \right\}
+            </me>
+  different, while
+            <me>
+    \vspan S=\left\{
+  a\left[\begin{array}{c}2\\3\\1\end{array}\right]+
+  b\left[\begin{array}{c}1\\1\\4\end{array}\right] \middle|
+  a,b\in\mathbb R
+  \right\} =
+            </me>
+            <me>
+    \vspan T=\left\{
+  a\left[\begin{array}{c}2\\3\\1\end{array}\right]+
+  b\left[\begin{array}{c}1\\1\\4\end{array}\right]+
+  c\left[\begin{array}{c}-1\\0\\-11\end{array}\right]\middle|
+  a,b,c\in\mathbb R
+  \right\}
+           </me>
+    were the same. This is possible because while
+    <m>S</m> is linearly independent,
+    <m>T</m>'s third vector made it linearly dependent:
+    <me>
+        1\left[\begin{array}{c}2\\3\\1\end{array}\right]
+  -3\left[\begin{array}{c}1\\1\\4\end{array}\right]=
+  \left[\begin{array}{c}-1\\0\\-11\end{array}\right]
+    </me>
+        </p>
+</remark>
 <activity estimated-time='10'>
     <introduction>
     <p>Consider the following three vectors in <m>\IR^3</m>:
@@ -128,13 +169,46 @@
     </task>
     <task> 
         <p>
-       Find <me>\RREF \left[\begin{array}{cccc}
+       Find <me>\RREF \left[\begin{array}{ccc|c}
         \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
             \end{array}\right]= 
-        \RREF \left[\begin{array}{cccc}
+        \RREF \left[\begin{array}{ccc|c}
         -2 &amp; 1 &amp;-2 &amp; \unknown \\
         0 &amp; 3  &amp; 5 &amp; \unknown  \\
         0 &amp;0 &amp;4 &amp; \unknown 
+            \end{array}\right]=  \unknown .</me>
+        </p>
+        <p>   
+            What does this tell you about solution set for the vector equation 
+            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 =\vec w</m>?
+            <ol marker="A.">
+                <li>
+                    <p>
+                    It is inconsistent.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    It is consistent with one solution.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    It is consistent with infinitely many solutions.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        </task>
+    <task> 
+        <p>
+       Find <me>\RREF \left[\begin{array}{cccc|c}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w  &amp; \vec 0\\
+            \end{array}\right]= 
+        \RREF \left[\begin{array}{cccc|c}
+        -2 &amp; 1 &amp;-2 &amp; \unknown  &amp; 0\\
+        0 &amp; 3  &amp; 5 &amp; \unknown   &amp; 0 \\
+        0 &amp;0 &amp;4 &amp; \unknown   &amp; 0
             \end{array}\right]=  \unknown .</me>
         </p>
         <p>   
@@ -161,30 +235,43 @@
         </task>
         <task> 
             <p>
-                Which of these might explain the connection?
+            Which of the following is the best conclusion obtained when we solved
+            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>?
                 <ol marker="A.">
                     <li>
                         <p>
-A pivot column establishes linear independence and creates a
-contradiction.
+A pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
+            \end{array}\right]</m> guarantees the linear independence
+of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
+by preventing contradictions.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column both describes a linear combination and
-reveals the number of solutions.
+A pivot column in the <em>coefficient</em>  <m>\RREF \left[\begin{array}{cccc}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
+            \end{array}\right]</m>matrix guarantees the linear independence
+of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
+by preventing contradictions.
                         </p>
                     </li>
                     <li>
                         <p>
-A pivot row describes the bound variables and prevents
-a contradiction.
+A non-pivot column in the <em>augmented</em> <m>\RREF \left[\begin{array}{cccc|c}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
+            \end{array}\right]</m> matrix guarantees the linear dependence
+of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
+by describing a linear combination of one vector in terms of the others.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot row prevents contradictions and makes the vector
-equation solvable.
+A non-pivot column in the <em>coefficient</em> <m>\RREF \left[\begin{array}{cccc}
+        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w  \\
+            \end{array}\right]</m> matrix guarantees the linear dependence
+of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
+by describing a linear combination of one vector in terms of the others.
                         </p>
                     </li>
                 </ol>
