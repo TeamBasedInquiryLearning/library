@@ -148,7 +148,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     </statement>
 </activity>
 
-<fact xml:id="EV2-n-vectors-span" >
+<fact xml:id="EV2-m-vectors-span" >
     <statement>
         <p>
   At least <m>m</m> vectors are required to span <m>\IR^m</m>.
@@ -485,7 +485,7 @@ What can you conclude about
     <activity>
         <introduction>
             <p>
-                One of our important results in this lesson is <xref ref="EV2-n-vectors-span"/>, which states that a set of <m>n</m> vectors is required to span <m>\IR^n</m>.
+                One of our important results in this lesson is <xref ref="EV2-m-vectors-span"/>, which states that a set of <m>n</m> vectors is required to span <m>\IR^n</m>.
                 While we developed some geometric intuition for why this true, we did not prove it in class.
                 Before coming to class next time, follow the steps outlined below to convince yourself of this fact using the concepts we learned in this lesson.
             </p>
