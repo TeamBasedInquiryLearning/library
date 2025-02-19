@@ -249,27 +249,27 @@ by preventing contradictions.
                     </li>
                     <li>
                         <p>
-A pivot column in the <em>coefficient</em>  <m>\RREF \left[\begin{array}{cccc}
+A pivot column in the <em>coefficient</em> matrix <m>\RREF \left[\begin{array}{cccc}
         \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
-            \end{array}\right]</m>matrix guarantees the linear independence
+            \end{array}\right]</m> guarantees the linear independence
 of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
 by preventing contradictions.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column in the <em>augmented</em> <m>\RREF \left[\begin{array}{cccc|c}
+A non-pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
         \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
-            \end{array}\right]</m> matrix guarantees the linear dependence
+            \end{array}\right]</m> guarantees the linear dependence
 of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
 by describing a linear combination of one vector in terms of the others.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column in the <em>coefficient</em> <m>\RREF \left[\begin{array}{cccc}
+A non-pivot column in the <em>coefficient</em> matrix <m>\RREF \left[\begin{array}{cccc}
         \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w  \\
-            \end{array}\right]</m> matrix guarantees the linear dependence
+            \end{array}\right]</m> guarantees the linear dependence
 of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
 by describing a linear combination of one vector in terms of the others.
                         </p>
