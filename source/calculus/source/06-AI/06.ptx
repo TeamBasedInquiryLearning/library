@@ -125,7 +125,7 @@
                         side_edges = side_edge1 + side_edge2 + side_edge3 + side_edge4
                         side_label1 = text('$\\Delta h = 5$ m', (-0.5,1),color='black',fontsize=13)
                         side_label2 = text('$\\Delta h = 5$ m', (-0.5,3),color='black',fontsize=13)
-                        side_label3 = text('$\\Delta h = 5$ in', (-0.5,5),color='black',fontsize=13)
+                        side_label3 = text('$\\Delta h = 5$ m', (-0.5,5),color='black',fontsize=13)
                         side_label4 = text('$\\Delta h = 5$ in', (-0.5,7),color='black',fontsize=13)
                         side_labels = side_label1+side_label2+side_label3+side_label4
                         h_label1 = text('$h_1 = 0$ m',(4.5,0),color='black',fontsize=13)
