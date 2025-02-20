@@ -366,7 +366,8 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fzero" width="50%">
+                    <image xml:id="fzero" width="100%">
+``` I'm not sure why this one was set to 50% instead of 100% like the first 2.  I think it made sense with the old graphs, but with the new ones, I think it should be 100%.
                         <sageplot>
                             x = var('x')
                             f(x) = 1/x
