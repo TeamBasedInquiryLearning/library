@@ -99,7 +99,7 @@
                             x = var('x')
                             f(x) = sqrt(x)
                             g(x) = -1*f(x)
-                            p1 = plot(f,(x,0,4),thickness=2,fill=g, fillalpha=0.25)
+                            p1 = plot(f,(x,0,4),thickness=2,fill=g, fillalpha=0.25,ticks=[1,0.5])
                             p2 = plot(g,(x,0,4),thickness=2,linestyle='dashed')
                             f0 = circle((0,0),0.05,fill=True,facecolor='black')
                             f2 = circle((2,f(2)),0.05,fill=True,facecolor='black')
