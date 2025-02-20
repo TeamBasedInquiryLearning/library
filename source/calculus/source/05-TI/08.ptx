@@ -400,7 +400,7 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fzero2" width="50%">
+                    <image xml:id="fzero2" width="100%">
                         <description>Plots of positive functions f(x), g(x) and h(x).</description>
                         <sageplot>
                             x = var('x')
