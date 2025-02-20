@@ -503,7 +503,7 @@
                         rec = polygon(([2,-3],[2,3],[2.2,3],[2.2,-3]), fill = False,thickness=2)
                         line1 = line(([0,f(0)],[0,g(0)]),color='black',thickness=2)
                         line2 = line(([4,f(4)],[4,g(4)]),color='black',thickness=2)
-                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis = arrow((-1,0),(5,0),width=1,color='black')
                         xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
                         label1 = text('$x_i$',(1.6,0.35),color='black', fontsize=13)
                         label2 = text('$\\Delta x$', (2.15,g(2.1)-.5),color='black',fontsize=13)
