@@ -43,27 +43,30 @@
                 <caption><m>10\times 10\times 20</m> prism sliced into 4 pieces.</caption>
                     <image xml:id="prism4pieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into 4 pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (0,0) rectangle (2,1);
-                            \draw [fill=blue, opacity=0.2] (0,1) rectangle (2,2);
-                            \draw [fill=blue, opacity=0.2] (0,2) rectangle (2,3);
-                            \draw [fill=blue, opacity=0.2] (0,3) rectangle (2,4);
-                            \draw (0,0) -- (2,0) -- (2,4) -- (0,4)--(0,0);
-
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2,1) -- (2,2) node [black,midway,xshift=1.2cm] {\footnotesize
-                            $\Delta h= 5$ m};
-                            \draw (0,0)--node[left]{\tiny $h_1=0$ m} (0,0);
-                            \draw (0,1)--node[left]{\tiny $h_2=5$ m} (0,1);
-                            \draw (0,2)--node[left]{\tiny $h_3=10$ m} (0,2);
-                            \draw (0,3)--node[left]{\tiny $h_4=15$ m} (0,3);
-
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-1.25,0) -- (-1.25,4) node [black,midway,xshift=-1cm] {\footnotesize
-                            $20$ m};
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        r1 = polygon(([0,0],[0,1],[2,1],[2,0]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r2 = polygon(([0,1],[0,2],[2,2],[2,1]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r3 = polygon(([0,2],[0,3],[2,3],[2,2]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r4 = polygon(([0,3],[0,4],[2,4],[2,3]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r = polygon(([0,0],[0,4],[2,4],[2,0]),thickness=2,fill=False,color='black')
+                        e1 = edger_x(-1.25,0,4)
+                        label_1 = text('$h_1 = 0$ m',(-.6,0),color='black',fontsize=12)
+                        label_2 = text('$h_2 = 5$ m',(-.6,1),color='black',fontsize=12)
+                        label_3 = text('$h_3 = 10$ m',(-.6,2),color='black',fontsize=12)
+                        label_4 = text('$h_4 = 15$ m',(-.6,3),color='black',fontsize=12)
+                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=12)
+                        e2 = edger_x(2.25,1,2)
+                        e2_label=text('$\\Delta h = 5$ m',(2.75,1.5), color='black',fontsize=12)
+                        r1+r2+r3+r4+r+label_1+label_2+label_3+label_4+e1+e1_label+e2+e2_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -103,29 +106,32 @@
                 <caption><m>10\times 10\times 20</m> prism sliced into 5 pieces.</caption>
                     <image xml:id="prism5pieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into 5 pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (0,0) rectangle (2,0.8);
-                            \draw [fill=blue, opacity=0.2] (0,0.8) rectangle (2,1.6);
-                            \draw [fill=blue, opacity=0.2] (0,1.6) rectangle (2,2.4);
-                            \draw [fill=blue, opacity=0.2] (0,2.4) rectangle (2,3.2);
-                            \draw [fill=blue, opacity=0.2] (0,3.2) rectangle (2,4);
-                            \draw (0,0) -- (2,0) -- (2,4) -- (0,4)--(0,0);
-
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2,0.8) -- (2,1.6) node [black,midway,xshift=1.2cm] {\footnotesize
-                            $\Delta h= 4$ m};
-                            \draw (0,0)--node[left]{\tiny $h_1=0$ m} (0,0);
-                            \draw (0,0.8)--node[left]{\tiny $h_2=4$ m} (0,0.8);
-                            \draw (0,1.6)--node[left]{\tiny $h_3=8$ m} (0,1.6);
-                            \draw (0,2.4)--node[left]{\tiny $h_4=12$ m} (0,2.4);
-                            \draw (0,3.2)--node[left]{\tiny $h_5=16$ m} (0,3.2);
-
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-1.25,0) -- (-1.25,4) node [black,midway,xshift=-1cm] {\footnotesize
-                            $20$ m};
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        r1 = polygon(([0,0],[0,.8],[2,.8],[2,0]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r2 = polygon(([0,0.8],[0,1.6],[2,1.6],[2,0.8]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r3 = polygon(([0,1.6],[0,2.4],[2,2.4],[2,1.6]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r4 = polygon(([0,2.4],[0,3.2],[2,3.2],[2,2.4]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r5 = polygon(([0,3.2],[0,4],[2,4],[2,3.2]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
+                        r = polygon(([0,0],[0,4],[2,4],[2,0]),thickness=2,fill=False,color='black')
+                        e1 = edger_x(-1.25,0,4)
+                        label_1 = text('$h_1 = 0$ m',(-.6,0),color='black',fontsize=12)
+                        label_2 = text('$h_2 = 4$ m',(-.6,0.8),color='black',fontsize=12)
+                        label_3 = text('$h_3 = 8$ m',(-.6,1.6),color='black',fontsize=12)
+                        label_4 = text('$h_4 = 12$ m',(-.6,2.4),color='black',fontsize=12)
+                        label_5 = text('$h_4 = 16$ m',(-.6,3.2),color='black',fontsize=12)
+                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=12)
+                        e2 = edger_x(2.25,1.6,2.4)
+                        e2_label=text('$\\Delta h = 4$ m',(2.75,2), color='black',fontsize=12)
+                        r1+r2+r3+r4+r5+r+label_1+label_2+label_3+label_4+label_5+e1+e1_label+e2+e2_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -182,23 +188,26 @@
                 <caption><m>10\times 10\times 20</m> prism sliced into many pieces.</caption>
                     <image xml:id="prismmanypieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into many pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (0,1.9) rectangle (2,2.1);
-                            \draw (0,0)--(2,0) -- (2,4)--(0,4)--(0,0);
-                            \node at (1, 0.95){$\vdots$};
-                            \node at (1, 3.05){$\vdots$};
-
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2,1.9) -- (2,2.1) node [black,midway,xshift=0.7cm] {\footnotesize
-                            $\Delta h$};
-                            \draw (0,1.9)--node[left]{\tiny $h_i$} (0,1.9);
-
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-.5,0) -- (-.5,4) node [black,midway,xshift=-1cm] {\footnotesize
-                            $20$ m};
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        r1 = polygon(([0,1.8],[0,2],[2,2],[2,1.8]),color='blue',alpha=0.5)
+                        r = polygon(([0,0],[0,4],[2,4],[2,0]),thickness=2,fill=False,color='black', axes=False)
+                        e1 = edger_x(-1.25,0,4)
+                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=12)
+                        e2 = edger_x(2.25,1.8,2)
+                        e2_label=text('$\\Delta h$ m',(2.8,1.9), color='black',fontsize=14)
+                        label_1 = text('$h_i$',(-.25,1.9),color='black',fontsize=14)
+                        vdots1 = text('$\\vdots$',(1,0.9),color='black',fontsize=24)
+                        vdots2 = text('$\\vdots$',(1,2.9),color='black',fontsize=24)
+                        r+r1+e1+e1_label+e2+e2_label+label_1+vdots1+vdots2
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -225,37 +234,42 @@
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
                     <image xml:id="conesliced" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (-2,0) rectangle (2,4);
-                            \draw[blue] (-2,0) -- (2,0) -- (2,4) -- (-2, 4) -- (-2,0);
-                            \draw [fill=blue, opacity=0.2] (-1,4) rectangle (1,8);
-                            \draw[blue] (-1,4) -- (1,4) -- (1,8) -- (-1, 8) -- (-1,4);
-                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2,0) -- (2,4) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=30$\ in};
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (1,4) -- (1,8) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=30$\ in};
-                            \draw[dashed] (0,8) -- (0,0);
-                            \draw[dashed] (0,0) --node[below]{\tiny $r_1=15$\ in} (2,0);
-                            \draw[dashed] (0,4) --node[below]{\tiny $r_2$} (1,4);
-                            \draw[fill] (0,0) circle (2pt);
-                            \draw (0,0) --node[below]{\tiny $B$} (0,0);
-                            \draw[fill] (2,0) circle (2pt);
-                            \draw (2,0) --node[below right]{\tiny $C$} (2,0);
-                            \draw[fill] (0,4) circle (2pt);
-                            \draw (0,4) --node[below left]{\tiny $B'$} (0,4);
-                            \draw[fill] (1,4) circle (2pt);
-                            \draw (1,4) --node[below right]{\tiny $C'$} (1,4);
-                            \draw[fill] (0,8) circle (2pt);
-                            \draw (0,8) --node[below right]{\tiny $C'$} (0,8);
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-2.25,0) -- (-2.25,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $60$ in};
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+
+                        r_bottom = polygon(([-2,0],[2,0],[2,4],[-2,4]),alpha=0.25,axes=False)
+                        rb = polygon(([-2,0],[2,0],[2,4],[-2,4]),fill=False,thickness=2,color='blue',axes=False)
+                        r_top = polygon(([-1,4],[1,4],[1,8],[-1,8]),alpha=0.25,axes=False)
+                        rt = polygon(([-1,4],[1,4],[1,8],[-1,8]),fill=False,thickness=2,color='blue',axes=False)
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        c1 = circle((0,0),0.1,fill=True,color='black')
+                        c2 = circle((2,0),0.1,fill=True,color='black')
+                        c3 = circle((0,4),0.1,fill=True,color='black')
+                        c4 = circle((1,4),0.1,fill=True,color='black')
+                        c5 = circle((0,8),0.1,fill=True,color='black')
+                        vert = line(([0,8],[0,0]),linestyle='dashed',color='black')
+                        A = text('$A$',(0.5,7.6),color='black',fontsize=13)
+                        B = text('$B$',(0,-.5),color='black',fontsize=13)
+                        Bp = text("$B'$",(-.35,3.6),color='black',fontsize=13)
+                        C = text('$C$',(2.2,-.5),color='black',fontsize=13)
+                        Cp = text("$C'$",(1.5,3.6),color='black',fontsize=13)
+                        rad1 = text('$r_1 = 15$ in',(1,-.25),color='black',fontsize=10)
+                        rad2 = text('$r_2$',(.5,3.75),color='black',fontsize=10)
+                        e1 = edger_x(-2.5,0,8)
+                        e1_label = text('60 in',(-3.25,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,4.1,8)
+                        e2_label = text('$\\Delta h = 30$ in', (2.75,6),color='black',fontsize=13)
+                        e3 = edger_x(2.5,0,4)
+                        e3_label = text('$\\Delta h = 30$ in', (3.75,2),color='black',fontsize=13)
+                        r_bottom + rb + r_top + rt + tri + c1 + c2 + c3 + c4 + c5 + vert + A + B + Bp + C + Cp + rad1 + rad2 + e1 + e1_label + e2 + e2_label + e3 + e3_label
+                        </sageplot>
                     </image>
             </figure>
                     
@@ -295,29 +309,34 @@
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
                     <image xml:id="conesliced2pieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (-2,0) rectangle (2,4);
-                            \draw[blue] (-2,0) -- (2,0) -- (2,4) -- (-2, 4) -- (-2,0);
-                            \draw [fill=blue, opacity=0.2] (-1,4) rectangle (1,8);
-                            \draw[blue] (-1,4) -- (1,4) -- (1,8) -- (-1, 8) -- (-1,4);
-                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2,0) -- (2,4) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=30$\ in};
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (1,4) -- (1,8) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=30$\ in};
-                            \draw[dashed] (0,8) -- (0,0);
-                            \draw[dashed] (0,0) --node[below]{\tiny $r_1=15$\ in} (2,0);
-                            \draw[dashed] (0,4) --node[below]{\tiny $r_2$} (1,4);
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $60$ in};
-                            \draw (-2,0) -- node[left]{\tiny $h_1=0$\ in} (-2,0);
-                            \draw (-2,4) -- node[left]{\tiny $h_2=30$\ in} (-2,4);
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+
+                        r_bottom = polygon(([-2,0],[2,0],[2,4],[-2,4]),alpha=0.25,axes=False)
+                        rb = polygon(([-2,0],[2,0],[2,4],[-2,4]),fill=False,thickness=2,color='blue',axes=False)
+                        r_top = polygon(([-1,4],[1,4],[1,8],[-1,8]),alpha=0.25,axes=False)
+                        rt = polygon(([-1,4],[1,4],[1,8],[-1,8]),fill=False,thickness=2,color='blue',axes=False)
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        vert = line(([0,8],[0,0]),linestyle='dashed',color='black')
+                        rad1 = text('$r_1 = 15$ in',(1,-.25),color='black',fontsize=10)
+                        rad2 = text('$r_2$',(.5,3.75),color='black',fontsize=10)
+                        e1 = edger_x(-4,0,8)
+                        e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,4.1,8)
+                        e2_label = text('$\\Delta h = 30$ in', (2.75,6),color='black',fontsize=13)
+                        e3 = edger_x(2.5,0,4)
+                        e3_label = text('$\\Delta h = 30$ in', (3.75,2),color='black',fontsize=13)
+                        h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=12)
+                        h2_label = text('$h_2 = 30$ in', (-3,4),color='black',fontsize=12)
+                        r_bottom + rb + r_top + rt + tri + vert + rad1 + rad2 + e1 + e1_label + e2 + e2_label + e3 + e3_label + h1_label + h2_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -355,36 +374,41 @@
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</caption>
                     <image xml:id="conesliced3pieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (-2,0) rectangle (2,8/3);
-                            \draw[blue] (-2,0) -- (2,0) -- (2,8/3) -- (-2, 8/3) -- (-2,0);
-                            \draw [fill=blue, opacity=0.2] (-4/3,8/3) rectangle (4/3,16/3);
-                            \draw[blue] (-4/3,8/3) -- (4/3,8/3) -- (4/3,16/3) -- (-4/3, 16/3) -- (-4/3,8/3);
-                            \draw [fill=blue, opacity=0.2] (-2/3,16/3) rectangle (2/3,8);
-                            \draw[blue] (-2/3,16/3) -- (2/3,16/3) -- (2/3,8) -- (-2/3, 8) -- (-2/3,16/3);
-                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2,0) -- (2,8/3) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=20$\ in};
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (4/3,8/3) -- (4/3,16/3) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=20$\ in};
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (2/3,16/3) -- (2/3,8) node [black,midway,xshift=1.4cm] {\footnotesize
-                            $\Delta h=20$\ in};
-                            \draw[dashed] (0,8) -- (0,0);
-                            \draw[dashed] (0,0) --node[below]{\tiny $r_1=15$\ in} (2,0);
-                            \draw[dashed] (0,8/3) --node[below]{\tiny $r_2=10$\ in} (4/3,8/3);
-                            \draw[dashed] (0,16/3) --node[below]{\tiny $r_3=5$\ in} (2/3,16/3);
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $60$ in};
-                            \draw (-2,0) -- node[left]{\tiny $h_1=0$\ in} (-2,0);
-                            \draw (-2,8/3) -- node[left]{\tiny $h_2=20$\ in} (-2,8/3);
-                            \draw (-4/3,16/3) -- node[left]{\tiny $h_3=40$\ in} (-4/3,16/3);
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+
+                        r_bottom = polygon(([-2,0],[2,0],[2,8/3],[-2,8/3]),alpha=0.25,axes=False)
+                        rb = polygon(([-2,0],[2,0],[2,8/3],[-2,8/3]),fill=False,thickness=2,color='blue',axes=False)
+                        r_mid = polygon(([-4/3,8/3],[-4/3,16/3],[4/3,16/3],[4/3,8/3]),alpha=0.25,axes=False)
+                        rm = polygon(([-4/3,8/3],[-4/3,16/3],[4/3,16/3],[4/3,8/3]),fill=False,thickness=2,color='blue',axes=False)
+                        r_top = polygon(([-2/3,16/3],[2/3,16/3],[2/3,8],[-2/3,8]),alpha=0.25,axes=False)
+                        rt = polygon(([-2/3,16/3],[2/3,16/3],[2/3,8],[-2/3,8]),fill=False,thickness=2,color='blue',axes=False)
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        vert = line(([0,8],[0,0]),linestyle='dashed',color='black')
+                        rad1 = text('$r_1 = 15$ in',(1,-.25),color='black',fontsize=10)
+                        rad2 = text('$r_2 = 10$ in',(.75,8/3-.25),color='black',fontsize=10)
+                        rad3 = text('$r_3 = 5$ in', (.3,16/3-.25),color='black',fontsize=10)
+                        e1 = edger_x(-4,0,8)
+                        e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,17/3,8)
+                        e2_label = text('$\\Delta h = 20$ in', (2.65,22/3-.5),color='black',fontsize=13)
+                        e3 = edger_x(1.9,8/3+.1,16/3)
+                        e3_label = text('$\\Delta h = 20$ in', (3.05,4),color='black',fontsize=13)
+                        e4 = edger_x(2.5,0,8/3)
+                        e4_label = text('$\\Delta h = 20$ in', (3.65,4/3), color='black', fontsize=13)
+
+                        h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=12)
+                        h2_label = text('$h_2 = 20$ in', (-3,8/3),color='black',fontsize=12)
+                        h3_label = text('$h_3 = 40$ in', (-2.5,16/3),color='black',fontsize=12)
+                        r_bottom + rb + r_mid + rm + r_top + rt + tri + vert + rad1 + rad2 + rad3 + e1 + e1_label + e2 + e2_label + e3 + e3_label + e4 + e4_label + h1_label + h2_label + h3_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -422,25 +446,28 @@
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</caption>
                     <image xml:id="coneslicedmanypieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw [fill=blue, opacity=0.2] (-1.025,3.9) rectangle (1.025, 4.1);
-                            \draw[blue] (-1.025,3.9) -- (1.025,3.9) -- (1.025,4.1) -- (-1.025, 4.1) -- (-1.025,3.9);
-                            
-                            \draw (-2,0) -- (2,0) -- (0,8) -- (-2,0);
-                            \draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
-                            (1.025,3.9) -- (1.025,4.1) node [black,midway,xshift=1.2cm] {\footnotesize
-                            $\Delta h$\ in};
-                            \node at (0, 2){$\vdots$};
-                            \node at (0, 6){$\vdots$};
-                            \draw[dashed] (0,3.9) --node[below]{\tiny $r_i$} (1.025,3.9);
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-3.25,0) -- (-3.25,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $60$ in};
-                            \draw (-1.025,3.9) -- node[left]{\tiny $h_i$} (-1.025,3.9);
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        r = polygon(([-1.025,3.9],[1.025,3.9],[1.025,4.1],[-1.025,4.1]),color='blue',alpha = 0.5,axes=False)
+                        rad = line(([0,3.9],[1.025,3.9]),color='red')
+                        rad_label = text('$r_i$',(0.5125,3.75),color='black',fontsize=12)
+                        e1 = edger_x(-4,0,8)
+                        e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
+                        e2 = edger_x(1.3,3.9,4.1)
+                        e2_label = text('$\\Delta h$ in',(2.25,4),color='black',fontsize=13)
+                        h_label = text('$h_i$',(-1.5,3.9),color='black',fontsize=13)
+                        vdots1 = text('$\\vdots$',(0,2),color='black',fontsize=24)
+                        vdots2 = text('$\\vdots$',(0,6),color='black',fontsize=24)
+                        tri + r + rad + rad_label + e1 + e1_label + e2 + e2_label + h_label + vdots1 + vdots2
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -467,28 +494,21 @@
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Generalsolidsliced" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x-1)^3-3*(\x-1)^2+5 });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{\x-5 });    
-                            \draw (0,-5)--(0,1);
-                            \draw (4,-1) -- (4,5);
-                            
-                            \draw[blue] (2,-3)--(2,3)--(2.2,3)--(2.2,-3)--(2,-3);
-                            \draw [fill=blue, opacity=0.2] (2,-3) rectangle (2.2,3);
-                            
-                            \draw(2,-.1)--node[above left]{\tiny$x_i$}(2,.1);
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-3) -- (2.2,-3) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-
-                        \end{tikzpicture}
-                        </latex-image>
+                       <sageplot>
+                        x=var('x')
+                        f(x) = (x-1)^3-3*(x-1)^2 + 5
+                        g(x) = x - 5
+                        p1 = plot([f,g],(x,0,4),thickness=2,axes=False,color='black')
+                        r = polygon(([2,-3],[2,3],[2.2,3],[2.2,-3]), alpha = 0.25)
+                        rec = polygon(([2,-3],[2,3],[2.2,3],[2.2,-3]), fill = False,thickness=2)
+                        line1 = line(([0,f(0)],[0,g(0)]),color='black',thickness=2)
+                        line2 = line(([4,f(4)],[4,g(4)]),color='black',thickness=2)
+                        xaxis = arrow((-1,0),(5,0),width=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        label1 = text('$x_i$',(1.6,0.35),color='black', fontsize=13)
+                        label2 = text('$\\Delta x$', (2.15,g(2.1)-.5),color='black',fontsize=13)
+                        p1 + r + rec + line1 + line2 + label1 + xaxis + xaxis_label + label2
+                       </sageplot>
                     </image>
             </figure>
                 </p>
@@ -514,29 +534,33 @@
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        a = 0       # Start of the interval
+                        b = 4       # End of the interval
+                        n = 20       # Number of rectangles
+                        dx = (b - a) / n
+                        rectangles = Graphics()
+                        for i in range(n):
+                            x_left = a + i * dx
+                            x_right = x_left + dx
+                            y_height = f(x_left) 
+                            vertices = [
+                                (x_left, -f(x_left)),          # Bottom left
+                                (x_left, y_height),   # Top left
+                                (x_right, y_height),  # Top right
+                                (x_right, -f(x_left)),         # Bottom right
+                            ]
+                            rectangles += polygon2d(vertices, fill=True, color='blue', alpha=0.25, edgecolor='black')
+                            rectangles += polygon2d(vertices, fill=False,color='black')
 
-                            \foreach \i in {0,...,20}{
-                                \draw (0.2*\i, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {sqrt(0.2*\i)})--(0.2*\i, {sqrt(0.2*\i)})--(0.2*\i, {-1*sqrt(0.2*\i)});
-                                \draw [fill=blue, opacity=0.2] (0.2*\i,{-1*sqrt(0.2*\i)}) rectangle (0.2*\i+0.2,{sqrt(0.2*\i)});
-                            };
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-1.414) -- (2.2,-1.414) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        dx_label = text('$\\Delta x$',(1.9,-f(2.5)),color='black',fontsize=13)
+                        p + xaxis + xaxis_label + rectangles + dx_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -546,29 +570,14 @@
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass2" width="50%">
                         <description>Solid mass.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
-
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {sqrt(\x)})
-                              --(4,-2)
-                              --plot ({\x}, {-1*sqrt(\x)})
-                              -- cycle;
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),fill=-f,fillcolor='blue', fillalpha = 0.25, color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        p + xaxis + xaxis_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -603,29 +612,27 @@
                 <caption>The right triangles in this figure are similar.</caption>
                     <image xml:id="similartrianglecone" width="50%">
                         <description>a 15 by 60 triangle, with a similar r by 60-h triangle.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-2,0)--(2,0)--(0,8)--(-2,0);
-                            \draw[dashed] (-1.5,2)--(1.5,2);
-                            \draw[dashed] (0,0)--(0,8);
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](0,0) -- (2,0) node[black,midway,yshift=-0.5cm] {\footnotesize $15$\ in};
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](0,2) -- (1.5,2) node[black,midway,yshift=-0.5cm] {\footnotesize $r$};
-                            
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-2,0) -- (-2,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $60$ in};
-                            
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (0,0) -- (0,2) node [black,midway,xshift=-1cm] {\footnotesize
-                            $h$};
-                            \draw [decorate,decoration={brace, mirror, amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1.5,2) -- (1.5,8) node [black,midway,xshift=1cm] {\footnotesize
-                            $60-h$};
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        vert = line(([0,8],[0,0]),linestyle='dashed',color='black')
+                        rad1 = text('15 in',(1,-.25),color='black',fontsize=13)
+                        rad2 = text('$r$',(.5,3.75),color='black',fontsize=13)
+                        e1 = edger_x(-4,0,8)
+                        e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,4.1,8)
+                        e2_label = text('$60-h$', (2.75,6),color='black',fontsize=13)
+                        dash = line(([(-1,4),(1,4)]), linestyle='dashed',color = 'black')
+                        h = text('$h$',(-.5,2),color='black',fontsize=13)
+                        tri + vert + rad1 + rad2 + e1 + e1_label + e2 + e2_label + dash + h
+                        </sageplot>
                     </image>
             </figure>
                     </p>
@@ -660,28 +667,28 @@
                 <caption>The  triangles in this figure are similar.</caption>
                     <image xml:id="similartrianglepyramid" width="50%">
                         <description>a 8 by 60 triangle, with a similar r by 16-h triangle.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-2,0)--(2,0)--(0,8)--(-2,0);
-                            \draw[dashed] (-1.5,2)--(1.5,2);
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](-2,0) -- (2,0) node[black,midway,yshift=-0.5cm] {\footnotesize $8$\ ft};
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](-1.5,2) -- (1.5,2) node[black,midway,yshift=-0.5cm] {\footnotesize $b$};
-                            
-                            \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-2,0) -- (-2,8) node [black,midway,xshift=-1cm] {\footnotesize
-                            $16$ ft};
-                            
-                            \draw [decorate,decoration={brace,mirror, amplitude=10pt,raise=4pt},yshift=0pt]
-                            (2,0) -- (2,2) node [black,midway,xshift=-1cm] {\footnotesize
-                            $h$};
-                            \draw [decorate,decoration={brace, mirror, amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1.5,2) -- (1.5,8) node [black,midway,xshift=1cm] {\footnotesize
-                            $16-h$};
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
 
-                        \end{tikzpicture}
-                        </latex-image>
+                        tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
+                        e1 = edger_x(-2.5,0,8)
+                        e1_label = text('16 ft',(-3.5,4),color='black',fontsize=13)
+                        e2 = edger_x(1.5,4.1,8)
+                        e2_label = text('$16-h$', (2.75,6),color='black',fontsize=13)
+                        dash = line(([(-1,4),(1,4)]), linestyle='dashed',color = 'black')
+                        dash_label = text('$b$',(0,3.75),color='black',fontsize=13)
+                        h_edge = edger_x(2.25,0,4)
+                        h = text('$h$',(2.5,2),color='black',fontsize=13)
+                        base_label = text('8 ft',(0,-.3),color='black',fontsize=13)
+                        tri + e1 + e1_label + e2 + e2_label + dash + dash_label + h + h_edge + base_label
+                        </sageplot>     
                     </image>
             </figure>
                     </p>
@@ -705,28 +712,35 @@
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
                     <image xml:id="blocksonaxis1" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[very thick,->] (0,0) -- (8.5,0) node[anchor=north west] {\tiny$x$};
-                            \foreach \x in {1,2,3,4,5,6,7,8}
-    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                            \draw (0.5,0)--(1.5,0)--(1.5,1)--(0.5,1)--(0.5,0);
-                            \draw [fill=blue, opacity=0.2] (0.5,0) rectangle (1.5,1);
-                            \draw (0.5,1)--(1.5,1)--(1.5,2)--(0.5,2)--(0.5,1);
-                            \draw [fill=blue, opacity=0.2] (0.5,1) rectangle (1.5,2);
-                            
-                            \draw (1.5,0)--(2.5,0)--(2.5,1)--(1.5,1)--(1.5,0);
-                            \draw [fill=blue, opacity=0.2] (1.5,0) rectangle (2.5,1);
-                            \draw (1.5,1)--(2.5,1)--(2.5,2)--(1.5,2)--(1.5,1);
-                            \draw [fill=blue, opacity=0.2] (1.5,1) rectangle (2.5,2);
-                            \draw (1.5,2)--(2.5,2)--(2.5,3)--(1.5,3)--(1.5,2);
-                            \draw [fill=blue, opacity=0.2] (1.5,2) rectangle (2.5,3);
-                            
-                            \draw (5.5,0)--(6.5,0)--(6.5,1)--(5.5,1)--(5.5,0);
-                            \draw [fill=blue, opacity=0.2] (5.5,0) rectangle (6.5,1);
+                        <sageplot>
+                        from sage.plot.graphics import Graphics
 
-                        \end{tikzpicture}
-                        </latex-image>
+                        img = Graphics()
+
+                        xaxis = arrow((0,0),(8.5,0),color='black',axes=False)
+                        xaxis_label = text('$x$',(8.7,0),color='black',fontsize=13)
+
+                        ticks = Graphics()
+                        for i in range(9):
+                            tick = line(([(i,0.05),(i,0)]),color='black')
+                            tick_label = text(i,(i,-0.25),color='black',fontsize=11)
+                            ticks += tick
+                            ticks += tick_label
+
+                        squares = Graphics()
+                        sq1 = polygon([(0.5,0),(1.5,0),(1.5,1),(0.5,1)],color='powderblue',edgecolor='black')
+                        sq2 = polygon([(1.5,0),(2.5,0),(2.5,1),(1.5,1)],color='powderblue',edgecolor='black')
+                        sq3 = polygon([(0.5,1),(1.5,1),(1.5,2),(0.5,2)],color='powderblue',edgecolor='black')
+                        sq4 = polygon([(1.5,1),(2.5,1),(2.5,2),(1.5,2)],color='powderblue',edgecolor='black')
+                        sq5 = polygon([(1.5,2),(2.5,2),(2.5,3),(1.5,3)],color='powderblue',edgecolor='black')
+                        sq6 = polygon([(5.5,0),(6.5,0),(6.5,1),(5.5,1)],color='powderblue',edgecolor='black')
+                        squares += sq1 + sq2 + sq3 + sq4 + sq5 + sq6
+                        img += xaxis
+                        img += xaxis_label
+                        img += ticks
+                        img += squares
+                        img
+                        </sageplot>
                     </image>
             </figure>
                     
@@ -751,28 +765,35 @@
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
                     <image xml:id="blocksonaxis2" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[very thick,->] (0,0) -- (8.5,0) node[anchor=north west] {\tiny$x$};
-                            \foreach \x in {1,2,3,4,5,6,7,8}
-    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                            \draw (0.5,0)--(1.5,0)--(1.5,1)--(0.5,1)--(0.5,0);
-                            \draw [fill=blue, opacity=0.2] (0.5,0) rectangle (1.5,1);
-                            \draw (0.5,1)--(1.5,1)--(1.5,2)--(0.5,2)--(0.5,1);
-                            \draw [fill=blue, opacity=0.2] (0.5,1) rectangle (1.5,2);
-                            
-                            \draw (1.5,0)--(2.5,0)--(2.5,1)--(1.5,1)--(1.5,0);
-                            \draw [fill=blue, opacity=0.2] (1.5,0) rectangle (2.5,1);
-                            \draw (1.5,1)--(2.5,1)--(2.5,2)--(1.5,2)--(1.5,1);
-                            \draw [fill=blue, opacity=0.2] (1.5,1) rectangle (2.5,2);
-                            \draw (1.5,2)--(2.5,2)--(2.5,3)--(1.5,3)--(1.5,2);
-                            \draw [fill=blue, opacity=0.2] (1.5,2) rectangle (2.5,3);
-                            
-                            \draw (7.5,0)--(8.5,0)--(8.5,1)--(7.5,1)--(7.5,0);
-                            \draw [fill=blue, opacity=0.2] (7.5,0) rectangle (8.5,1);
+                        <sageplot>
+                        from sage.plot.graphics import Graphics
 
-                        \end{tikzpicture}
-                        </latex-image>
+                        img = Graphics()
+
+                        xaxis = arrow((0,0),(8.5,0),color='black',axes=False)
+                        xaxis_label = text('$x$',(8.7,0),color='black',fontsize=13)
+
+                        ticks = Graphics()
+                        for i in range(9):
+                            tick = line(([(i,0.05),(i,0)]),color='black')
+                            tick_label = text(i,(i,-0.25),color='black',fontsize=11)
+                            ticks += tick
+                            ticks += tick_label
+
+                        squares = Graphics()
+                        sq1 = polygon([(0.5,0),(1.5,0),(1.5,1),(0.5,1)],color='powderblue',edgecolor='black')
+                        sq2 = polygon([(1.5,0),(2.5,0),(2.5,1),(1.5,1)],color='powderblue',edgecolor='black')
+                        sq3 = polygon([(0.5,1),(1.5,1),(1.5,2),(0.5,2)],color='powderblue',edgecolor='black')
+                        sq4 = polygon([(1.5,1),(2.5,1),(2.5,2),(1.5,2)],color='powderblue',edgecolor='black')
+                        sq5 = polygon([(1.5,2),(2.5,2),(2.5,3),(1.5,3)],color='powderblue',edgecolor='black')
+                        sq6 = polygon([(7.5,0),(8.5,0),(8.5,1),(7.5,1)],color='powderblue',edgecolor='black')
+                        squares += sq1 + sq2 + sq3 + sq4 + sq5 + sq6
+                        img += xaxis
+                        img += xaxis_label
+                        img += ticks
+                        img += squares
+                        img
+                        </sageplot>
                     </image>
             </figure>
                     
@@ -793,29 +814,33 @@
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
                     <image xml:id="Solidmassapproximation2" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        a = 0       # Start of the interval
+                        b = 4       # End of the interval
+                        n = 20       # Number of rectangles
+                        dx = (b - a) / n
+                        rectangles = Graphics()
+                        for i in range(n):
+                            x_left = a + i * dx
+                            x_right = x_left + dx
+                            y_height = f(x_left) 
+                            vertices = [
+                                (x_left, -f(x_left)),          # Bottom left
+                                (x_left, y_height),   # Top left
+                                (x_right, y_height),  # Top right
+                                (x_right, -f(x_left)),         # Bottom right
+                            ]
+                            rectangles += polygon2d(vertices, fill=True, color='blue', alpha=0.25, edgecolor='black')
+                            rectangles += polygon2d(vertices, fill=False,color='black')
 
-                            \foreach \i in {0,...,20}{
-                                \draw (0.2*\i, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {-1*sqrt(0.2*\i)})--(0.2*\i+0.2, {sqrt(0.2*\i)})--(0.2*\i, {sqrt(0.2*\i)})--(0.2*\i, {-1*sqrt(0.2*\i)});
-                                \draw [fill=blue, opacity=0.2] (0.2*\i,{-1*sqrt(0.2*\i)}) rectangle (0.2*\i+0.2,{sqrt(0.2*\i)});
-                            };
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt](2,-1.414) -- (2.2,-1.414) node[black,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        dx_label = text('$\\Delta x$',(1.9,-f(2.5)),color='black',fontsize=13)
+                        p + xaxis + xaxis_label + rectangles + dx_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -825,29 +850,14 @@
                 <caption>Solid mass.</caption>
                     <image xml:id="Solidmass" width="50%">
                         <description>Solid mass.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw[thick,->] (-1,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x)^(0.5) });
-                            \draw plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{-1*(\x)^(0.5) });   
-                            \draw (4,-2) -- (4,2);
-                            
-
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {sqrt(\x)})
-                              --(4,-2)
-                              --plot ({\x}, {-1*sqrt(\x)})
-                              -- cycle;
-
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        p = plot([f,-f],(x,0,4),fill=-f,fillcolor='blue', fillalpha = 0.25, color='black',thickness=2,axes=False)
+                        xaxis = arrow((-1,0),(5,0),thickness=1,color='black')
+                        xaxis_label = text('$x$',(5.2,0),color='black',fontsize=13)
+                        p + xaxis + xaxis_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>

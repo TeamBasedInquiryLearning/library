@@ -23,38 +23,30 @@
                 <caption>Plot of a frustum.</caption>
                     <image xml:id="frustum" width="50%">
                         <description>frustum</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-0.5,-2.5) grid (4.5,2.5);
-                              %axes
-                              \draw[very thick,->] (-0,0) -- (4,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-2) -- (0,2) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {0, 1, ...,4}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {-2, -1, ...,2}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw (0,0) --(4,2)--(4,-2)--(0,0);
-                            
-                            
-                            
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (2, 1)
-                              --(3,1.5)
-                              --(3,-1.5)
-                              --(2,-1)
-                              -- cycle;
-
-                            \draw [red, decorate, decoration={brace,amplitude=10pt},yshift=0.2pt](2,1) -- (3,1.5) node[midway,  left,yshift=0.5cm, xshift=-0.07cm, red] {\footnotesize $l$};
-
-                            \draw [decorate, decoration={brace,amplitude=10pt},xshift=0pt](2,0) -- (2,1) node[black, midway,xshift=-0.65cm] {\footnotesize $r$};
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt, mirror},xshift=0pt](3,0) -- (3,1.5) node[black, midway,xshift=0.65cm] {\footnotesize $R$};
-
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = 0.5*x
+                            g(x) = -0.5*x
+                            p = plot([f,g],(x,0,4),thickness=2,color='blue', ticks=[[],[]])
+                            p_shade = plot(f,(x,2,3),fill=g)
+                            small_r = line(([2,f(2)],[2,0]),thickness=3,color='red')
+                            small_r_label = text('$r$',(1.9,0.5*f(1.9)), color='black',fontsize=13)
+                            big_r = line(([3,f(3)],[3,0]),thickness=3,color='red')
+                            big_r_label = text('$R$',(3.1,0.5*f(3.1)), color='black',fontsize=13)
+                            length = line(([2,f(2)],[3,f(3)]),thickness=3,color='lightgreen')
+                            length_label= text('$l$',(2.5,f(2.5)+.2),color='black',fontsize=13)
+                            geometry += p
+                            geometry += p_shade
+                            geometry += small_r
+                            geometry += big_r
+                            geometry += small_r_label
+                            geometry += big_r_label
+                            geometry += length
+                            geometry += length_label
+                            geometry
+                        </sageplot>
                     </image>
             </figure>
             </p>
@@ -76,43 +68,18 @@
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
                     <image xml:id="rotatingrootxaboutx" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-0.5,-3.5) grid (5.5,3.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-3) -- (0,3) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1, 2, ..., 4}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {-3, -2,...,3}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x^(1/2) });
-                            
-                            \draw[blue, dashed] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(-1*\x^(1/2) });
-                            
-                            
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {(\x^(1/2)})
-                              --(4,0)
-                              -- cycle;
-                            
-                              \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {-1*(\x)^(1/2)})
-                              --(4,0)
-                              -- cycle;
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = sqrt(x)
+                            g(x) = -1*f(x)
+                            p1 = plot(f,(x,0,4),thickness=2,fill=g, fillalpha=0.25,ticks=[1,1])
+                            p2 = plot(g,(x,0,4),thickness=2,linestyle='dashed')
+                            geometry += p1
+                            geometry += p2
+                            geometry
+                        </sageplot> 
                     </image>
             </figure>
             </p>
@@ -126,49 +93,28 @@
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
                     <image xml:id="rotatingrootxaboutxtwopiece" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-0.5,-3.5) grid (5.5,3.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-3) -- (0,3) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1, 2, ..., 4}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {-3, -2,...,3}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x^(1/2) });
-                            
-                            \draw[blue, dashed] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(-1*\x^(1/2) });
-                            
-                            
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {(\x^(1/2)})
-                              --(4,0)
-                              -- cycle;
-                            
-                              \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- plot ({\x}, {-1*(\x)^(1/2)})
-                              --(4,0)
-                              -- cycle;
-                            
-                            \draw[dashed] (0,0)--(2,1.4142)--(4,2);
-                                
-                               \draw[fill] (0,0) circle (2pt);
-                               \draw[fill] (2,1.4142) circle (2pt);
-                               \draw[fill] (4,2) circle (2pt);
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = sqrt(x)
+                            g(x) = -1*f(x)
+                            p1 = plot(f,(x,0,4),thickness=2,fill=g, fillalpha=0.25,ticks=[1,0.5])
+                            p2 = plot(g,(x,0,4),thickness=2,linestyle='dashed')
+                            f0 = circle((0,0),0.05,fill=True,facecolor='black')
+                            f2 = circle((2,f(2)),0.05,fill=True,facecolor='black')
+                            f4 = circle((4,f(4)),0.05,fill=True,facecolor='black')
+                            line0 = line(([0,0],[2,f(2)]),linestyle='dashed',color='black')
+                            line2 = line(([2,f(2)],[4,f(4)]),linestyle='dashed',color='black')
+                            geometry += p1
+                            geometry += p2
+                            geometry += f0
+                            geometry += f2
+                            geometry += f4
+                            geometry += line0
+                            geometry += line2
+                            geometry
+                        </sageplot>
                     </image>
             </figure>
                 What is the  surface area of the frustum formed by rotating the line segment from <m>(0,0)</m> to <m>(2, \sqrt{2})</m> about the <m>x</m>-axis?
@@ -188,40 +134,36 @@
                 <caption>Plot of bounded region rotated about the <m>x</m>-axis.</caption>
                     <image xml:id="rotatingrootxaboutxtwopiece2" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-0.5,-3.5) grid (5.5,3.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-3) -- (0,3) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1, 2, ..., 4}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {-3, -2,...,3}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x^(1/2) });
-                            
-                            \draw[blue, dashed] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(-1*\x^(1/2) });
-                            
-                            
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (4,-2)--(2,-1.4142)--(0,0)--(2,1.4142)--(4,2)--cycle;
-                            
-                            \draw[dashed] (4,-2)--(2,-1.4142)--(0,0)--(2,1.4142)--(4,2);
-                                
-                               \draw[fill] (0,0) circle (2pt);
-                               \draw[fill] (2,1.4142) circle (2pt);
-                               \draw[fill] (4,2) circle (2pt);
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = sqrt(x)
+                            g(x) = -1*f(x)
+                            p1 = plot(f,(x,0,4),thickness=2,ticks=[1,0.5])
+                            p2 = plot(g,(x,0,4),thickness=2,linestyle='dashed')
+                            f0 = circle((0,0),0.05,fill=True,facecolor='black')
+                            f2 = circle((2,f(2)),0.05,fill=True,facecolor='black')
+                            f4 = circle((4,f(4)),0.05,fill=True,facecolor='black')
+                            h(x) = 0.5*sqrt(2)*x
+                            h1(x) = -1*h(x)
+                            j(x) = 0.5*(f(4)-f(2))*(x-4)+2
+                            j1(x) = -1*j(x)
+                            shade1 = plot(h,(x,0,2),thickness=1, fill=h1,linestyle='dashed',color='black',fillalpha=0.25)
+                            shade2 = plot(h1,(x,0,2),thickness=1,linestyle='dashed',color='black')
+                            shade3 = plot(j,(x,2,4),thickness=1,fill=j1,linestyle='dashed',color='black',fillalpha=0.25)
+                            shade4 = plot(j1,(x,2,4),thickness=1,linestyle='dashed',color='black',fillalpha=0.25)
+                            geometry += p1
+                            geometry += p2
+                            geometry += f0
+                            geometry += f2
+                            geometry += f4
+                            geometry += shade1
+                            geometry += shade2
+                            geometry += shade3
+                            geometry += shade4
+                            geometry
+                        </sageplot>
                     </image>
             </figure>
                 What is the  surface area of the frustum formed by rotating the line segment from <m>(2,\sqrt{2})</m> to <m>(4, 2)</m> about the <m>x</m>-axis?
@@ -243,44 +185,44 @@
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
                     <image xml:id="rotatingrootxaboutxfourpiece" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-0.5,-3.5) grid (5.5,3.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-3) -- (0,3) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1, 2, ..., 4}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {-3, -2,...,3}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x^(1/2) });
-                            
-                            \draw[blue, dashed] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(-1*\x^(1/2) });
-                            
-                            
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (0,0)--(1,1)--(2,1.4142)--(3,1.732)--(4,2)
-                            --(4,-2)--(3,-1.732)--(2,-1.4142)--(1,-1)--(0,0);
-                            
-                            \draw[dashed] (0,0)--(1,1)--(2,1.4142)--(3,1.732)--(4,2);
-                            \draw[dashed] (0,0)--(1,-1)--(2,-1.4142)--(3,-1.732)--(4,-2);
-                                
-                            \draw[fill] (0,0) circle (2pt);
-                            \draw[fill] (1,1) circle (2pt);
-                            \draw[fill] (2,1.4142) circle (2pt);
-                            \draw[fill] (3,1.732) circle (2pt);
-                            \draw[fill] (4,2) circle (2pt);
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        from sage.plot.graphics import Graphics
+                        geometry=Graphics()
+                        x = var('x')
+                        f(x) = sqrt(x)
+                        g(x) = -1*f(x)
+                        p1 = plot(f,(x,0,4),thickness=2,ticks=[1,0.5])
+                        p2 = plot(g,(x,0,4),thickness=2,linestyle='dashed')
+                        f0 = circle((0,0),0.05,fill=True,facecolor='black')
+                        f1 = circle((1,f(1)),0.05,fill=True,facecolor='black')
+                        f2 = circle((2,f(2)),0.05,fill=True,facecolor='black')
+                        f3 = circle((3,f(3)),0.05,fill=True,facecolor='black')
+                        f4 = circle((4,f(4)),0.05,fill=True,facecolor='black')
+                        h0(x) = x #first line segment
+                        h01(x) = -1*h0(x)
+                        h1(x) = (f(2)-f(1))*(x-1)+1 #second line segment
+                        h11(x) = -1*h1(x)
+                        h2(x) = (f(3)-f(2))*(x-2)+f(2) #third line segment
+                        h21(x) = -1*h2(x)
+                        h3(x) = (f(4)-f(3))*(x-4)+2 #fourth line segment
+                        h31(x) = -1*h3(x)
+                        shade0 = plot(h0,(x,0,1),thickness=1,fill=h01,linestyle='dashed',color='black', fillalpha=0.25)
+                        shade1 = plot(h1,(x,1,2),thickness=1,fill=h11,linestyle='dashed',color='black', fillalpha=0.25)
+                        shade2 = plot(h2,(x,2,3),thickness=1,fill=h21,linestyle='dashed',color='black', fillalpha=0.25)
+                        shade3 = plot(h3,(x,3,4),thickness=1,fill=h31,linestyle='dashed',color='black', fillalpha=0.25)
+                        geometry += p1
+                        geometry += p2
+                        geometry += f0
+                        geometry += f1
+                        geometry += f2
+                        geometry += f3
+                        geometry += f4
+                        geometry += shade0
+                        geometry += shade1
+                        geometry += shade2
+                        geometry += shade3
+                        geometry
+                        </sageplot>
                     </image>
             </figure>
                 
@@ -315,41 +257,32 @@
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
                     <image xml:id="rotatingrootxaboutxnpiece" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                             %grid
-                              \draw[step=1cm,gray!50,very thin] (-0.5,-3.5) grid (5.5,3.5);
-                              %axes
-                              \draw[very thick,->] (0,0) -- (5,0) node[anchor=north west] {\tiny$x$};
-                              \draw[very thick,->] (0,-3) -- (0,3) node[anchor=south east] {\tiny$y$};
-                              \foreach \x in {1, 2, ..., 4}
-                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
-                              \foreach \y in {-3, -2,...,3}
-                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
-                               %function
-                               \draw[blue] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(\x^(1/2) });
-                            
-                            \draw[blue, dashed] plot [
-                                samples=100,
-                                domain=0:4,
-                                ] (\x,{(-1*\x^(1/2) });
-                            
-                            
-                            \fill [blue, domain=0:4, variable=\x, opacity=0.2]
-                              (1.8, 1.34164)--(2.1, 1.449)--(2.1,-1.449)--(1.8,-1.34164)--(1.8, 1.34164);
-                            
-                            \draw[dashed, red] (1.8, 1.34164)--(2.1, 1.449)--(2.1,1.134164)--(1.8, 1.34164);
-                            \draw[fill, red] (1.8, 1.34164) circle (2pt);
-                            \draw[fill, red] (2.1, 1.449) circle (2pt);
-                            
-                            \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt, red](1.8, 1.34164)--(2.1, 1.34164) node[red,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-                                
-   
-                             \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            from sage.plot.graphics import Graphics
+                            geometry=Graphics()
+                            x = var('x')
+                            f(x) = sqrt(x)
+                            g(x) = -1*f(x)
+                            p1 = plot(f,(x,0,4),thickness=2,ticks=[1,0.5])
+                            p2 = plot(g,(x,0,4),thickness=2,linestyle='dashed')
+                            h(x) = 2*(f(2)-f(1.5))*(x-2)+f(2)
+                            h1(x) = -1*h(x)
+                            shade_line = plot(h,(x,1.5,2),linestyle='dashed',fill=h1,fillalpha=0.25,color='red')
+                            x_leg = line(([1.5,h(1.5)],[2,h(1.5)]),linestyle='dashed',color='red')
+                            y_leg = line(([2,h(1.5)],[2,h(2)]),linestyle='dashed',color='red')
+                            x_leg_label = text('$\\Delta x$',(1.75,h(1.5)-0.15),color='red',fontsize=13)
+                            c1 = circle((1.5,f(1.5)),0.05,facecolor='red',fill=True)
+                            c2 = circle((2,f(2)),0.05,facecolor='red',fill=True)
+                            geometry += p1
+                            geometry += p2
+                            geometry += shade_line
+                            geometry += x_leg
+                            geometry += y_leg
+                            geometry += x_leg_label
+                            geometry += c1
+                            geometry += c2
+                            geometry
+                        </sageplot>
                     </image>
             </figure>
                 

@@ -54,19 +54,26 @@
                 <caption>Bucket 5 m in the air, to be hoisted by another 5 meters.</caption>
                     <image xml:id="bucket5meters" width="50%">
                         <description>Bucket 5 m in the air, to be hoisted by another 5 meters.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (1,3)--(2,3)--(1.8,2)--(1.2,2)--(1,3);
-                        \draw[dashed] (1,5)--(2,5)--(1.8,4)--(1.2,4)--(1,5);
-                        \draw (1.5,3)--(1.5,9)--(3,9)--(3,0);
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1,2) -- (1,4) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=5$ m};
-                        
-                        \draw[dotted] (1.8,2) -- (-1,2);
-                        \draw (-1,2)--node[left]{\tiny$h_i=5$ m} (-1,2);
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        bucket1 = polygon(([(1,3),(2,3),(1.8,2),(1.2,2)]),fill=False,color='black')
+                        bucket2 = polygon(([(1,5),(2,5),(1.8,4),(1.2,4)]),fill=False,linestyle='dashed',color='black',axes=False)
+                        left = line(([(1.5,3),(1.5,9)]),color='black')
+                        top = line(([(1.5,9),(3,9)]),color='black')
+                        right = line(([(3,9),(3,0)]),color='black')
+                        side_edge = edger_x(.75,2,4)
+                        side_label = text('$\\Delta h = 5$ m', (-0.5,3),color='black',fontsize=13)
+                        h_label1 = text('$h_i = 5$ m',(4.5,2),color='black',fontsize=13)
+                        dash1 = line(([(1.8,2),(3.5,2)]),linestyle='dashed',color='black')
+                        bucket1 + bucket2 + left + top + right + side_edge + side_label + h_label1 + dash1
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -88,41 +95,51 @@
         <activity xml:id="activity-A5bucketestimate">
             <introduction>
                 <p>
-                    using the same the bucket from <xref ref="activity-A5bucket3"/>,  consider the bucket's mass at heights <m>h_i=0, 5, 10, 15</m> meters.
+                    Using the same the bucket from <xref ref="activity-A5bucket3"/>,  consider the bucket's mass at heights <m>h_i=0, 5, 10, 15</m> meters.
                     <figure>
                 <caption>Bucket lifted 5 m at a time.</caption>
                     <image xml:id="bucketestimate" width="50%">
                         <description>Bucket raised 5 m at a time, h_i are 0, 5, 10, 15 meters.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (1,1)--(2,1)--(1.8,0)--(1.2,0)--(1,1);
-                         \draw[dashed] (1,3)--(2,3)--(1.8,2)--(1.2,2)--(1,3);
-                        \draw[dashed] (1,5)--(2,5)--(1.8,4)--(1.2,4)--(1,5);
-                         \draw[dashed] (1,7)--(2,7)--(1.8,6)--(1.2,6)--(1,7);
-                        \draw[dashed] (1,9)--(2,9)--(1.8,8)--(1.2,8)--(1,9); 
-                        \draw (1.5,1)--(1.5,9)--(3,9)--(3,0);
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1,0) -- (1,2) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=5$ m};
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1,2) -- (1,4) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=5$ m};
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1,4) -- (1,6) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=5$ m};
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (1,6) -- (1,8) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=5$ m};    
-                        \draw[dotted] (1.2,0) -- (-1,0);
-                        \draw (-1,0)--node[left]{\tiny$h_1=0$ m} (-1,0);
-                        \draw[dotted] (1.2,2) -- (-1,2);
-                        \draw (-1,2)--node[left]{\tiny$h_2=5$ m} (-1,2);
-                        \draw[dotted] (1.2,4) -- (-1,4);
-                        \draw (-1,4)--node[left]{\tiny$h_3=10$ m} (-1,4);
-                        \draw[dotted] (1.2,6) -- (-1,6);
-                        \draw (-1,6)--node[left]{\tiny$h_4=15$ m} (-1,6);
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        bucket1 = polygon(([(1,1),(2,1),(1.8,0),(1.2,0)]),fill=False,color='black')
+                        bucket2 = polygon(([(1,3),(2,3),(1.8,2),(1.2,2)]),fill=False,linestyle='dashed',color='black',axes=False)
+                        bucket3 = polygon(([(1,5),(2,5),(1.8,4),(1.2,4)]),fill=False,linestyle='dashed',color='black',axes=False)
+                        bucket4 = polygon(([(1,7),(2,7),(1.8,6),(1.2,6)]),fill=False,linestyle='dashed',color='black',axes=False)
+                        bucket5 = polygon(([(1,9),(2,9),(1.8,8),(1.2,8)]),fill=False,linestyle='dashed',color='black',axes=False)
+                        buckets = bucket1 + bucket2 + bucket3 + bucket4 + bucket5
+                        left = line(([(1.5,1),(1.5,9)]),color='black')
+                        top = line(([(1.5,9),(3,9)]),color='black')
+                        right = line(([(3,9),(3,0)]),color='black')
+                        side_edge1 = edger_x(.75,0,2)
+                        side_edge2 = edger_x(.75,2,4)
+                        side_edge3 = edger_x(.75,0,6)
+                        side_edge4 = edger_x(.75,2,8)
+                        side_edges = side_edge1 + side_edge2 + side_edge3 + side_edge4
+                        side_label1 = text('$\\Delta h = 5$ m', (-0.5,1),color='black',fontsize=13)
+                        side_label2 = text('$\\Delta h = 5$ m', (-0.5,3),color='black',fontsize=13)
+                        side_label3 = text('$\\Delta h = 5$ m', (-0.5,5),color='black',fontsize=13)
+                        side_label4 = text('$\\Delta h = 5$ m', (-0.5,7),color='black',fontsize=13)
+                        side_labels = side_label1+side_label2+side_label3+side_label4
+                        h_label1 = text('$h_1 = 0$ m',(4.5,0),color='black',fontsize=13)
+                        h_label2 = text('$h_2 = 5$ m',(4.5,2),color='black',fontsize=13)
+                        h_label3 = text('$h_3 = 10$ m',(4.5,4),color='black',fontsize=13)
+                        h_label4 = text('$h_4 = 15$ m',(4.5,6),color='black',fontsize=13)
+                        h = h_label1 + h_label2 + h_label3 + h_label4
+                        dash1 = line(([(1.8,0),(3.5,0)]),linestyle='dashed',color='black')
+                        dash2 = line(([(1.8,2),(3.5,2)]),linestyle='dashed',color='black')
+                        dash3 = line(([(1.8,4),(3.5,4)]),linestyle='dashed',color='black')
+                        dash4 = line(([(1.8,6),(3.5,6)]),linestyle='dashed',color='black')
+                        dashes = dash1 + dash2 + dash3 + dash4
+                        buckets + left + top + right + side_labels + side_edges + h + dashes
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -216,19 +233,23 @@
                 <caption>2m thick slice of water lifted 4m.</caption>
                     <image xml:id="tankslicelift" width="50%">
                         <description>2m thick slice of water lifted 4m.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-1.5,0)--(1.5,0)--(1.5,5)--(-1.5,5)--(-1.5,0);
-                        \draw[dashed] (-1.5,3)--(1.5,3)--(1.5,4)--(-1.5,4)--(-1.5,3);
-                        \draw[fill, blue, opacity=0.2] (-1.5,3) rectangle (1.5,4);
-                        
-
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-1.5,3) -- (-1.5,4) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=2$ m};
-                        \draw (1.5, 3) --node[right]{\tiny$h_i=6$ m} (1.5,3);
-                            \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        tank = polygon(([(-1.5,0),(1.5,0),(1.5,5),(-1.5,5)]),fill=False,color='black',thickness=2,axes=False)
+                        water = polygon(([(-1.5,3),(-1.5,4),(1.5,4),(1.5,3)]),alpha=0.2,color='blue')
+                        water_box = polygon(([(-1.5,3),(-1.5,4),(1.5,4),(1.5,3)]),fill=False,linestyle='dashed',color='black')
+                        h = text('$h_i = 6$ m',(2.1,3),color='black',fontsize=13)
+                        dh = edger_x(-1.75,3,4)
+                        dh_label = text('$\\Delta h = 2$ m',(-2.5,3.5),color='black',fontsize=13)
+                        tank + water + water_box + h + dh + dh_label
+                        </sageplot>
                     </image>
             </figure>
                     <ol marker="A." cols="2">
@@ -252,21 +273,32 @@
                 <caption>2m thick slices of water.</caption>
                     <image xml:id="tanksliceliftpieces" width="50%">
                         <description>2m thick slice of water at 0, 2, 4, 6, 8m.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-1.5,0)--(1.5,0)--(1.5,5)--(-1.5,5)--(-1.5,0);
-                        
-                        \foreach \x in {1,2,3,4,5}{
-                        \draw[dashed] (-1.5,\x-1)--(1.5,\x-1)--(1.5,\x)--(-1.5,\x)--(-1.5,\x-1);
-                        \draw[fill, blue, opacity=0.2] (-1.5,\x-1) rectangle (1.5,\x);
-                        
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125
+                            right=x+0.125
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
 
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-1.5,\x-1) -- (-1.5,\x) node [black,midway,xshift=-1.2cm] {\footnotesize
-                            $\Delta h=2$ m};
-                        };    
-                            \end{tikzpicture}
-                        </latex-image>
+                        water = Graphics()
+                        waterbox = Graphics()
+                        edges = Graphics()
+                        labels = Graphics()
+                        tank = polygon(([(-1.5,0),(1.5,0),(1.5,5),(-1.5,5)]),fill=False,color='black',thickness=2,axes=False)
+                        for i in range(5):
+                            water_fill = polygon(([(-1.5,i),(-1.5,i+1),(1.5,i+1),(1.5,i)]),alpha=0.2,color='blue')
+                            water_box = polygon(([(-1.5,i),(-1.5,i+1),(1.5,i+1),(1.5,i)]),fill=False,linestyle='dashed',color='black')
+                            dh = edger_x(-1.75,i,i+1)
+                            dh_label = text('$\\Delta h = 2$ m',(-2.5,i+.5),color='black',fontsize=13)
+                            water += water_fill
+                            waterbox += water_box
+                            edges += dh
+                            labels += dh_label
+                        tank + water + waterbox + edges + labels
+                        </sageplot>
                     </image>
             </figure>
                 </p>
@@ -348,34 +380,31 @@
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
                     <image xml:id="coneslicelift" width="50%">
                         <description>A slice at height <m>h_i</m> of height <m>\Delta h</m>, with radius <m>r_i</m>.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-0.5,0)--(0.5,0)--(1,5)--(-1,5)--(-0.5,0);
-                        
-                        \draw[dashed] (-0.7,2)--(0.7,2)--(0.7, 2.2)--(-0.7,2.2)--(-0.7,2);
-                        
-                        \draw[fill, blue, opacity=0.2] (-0.7,2) rectangle (0.7,2.2);
-                        
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt, mirror},yshift=0pt]
-                            (0,2) -- (0.7,2) node [black,midway,yshift=-0.6cm] {\footnotesize
-                            $r_i$ };
-                        
-
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-0.7,2) -- (-0.7,2.2) node [black,midway,xshift=-0.8cm] {\footnotesize
-                            $\Delta h$ };
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-1.5,0) -- (-1.5,5) node [black,midway,xshift=-1cm] {\footnotesize
-                            $100$ m};    
-                        \draw (0.7, 2) --node[right]{\tiny$h_{i}$} (0.7,2);
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt, mirror},yshift=0pt]
-                            (0,0) -- (0.5,0) node [black,midway,yshift=-0.6cm] {\footnotesize
-                            $10$ m};
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt},yshift=0pt]
-                            (0,5) -- (1,5) node [black,midway,yshift=0.6cm] {\footnotesize
-                            $20$ m};
-                            \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125/2
+                            right=x+0.125/2
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        tank = polygon(([(-0.5,0),(0.5,0),(1,5),(-1,5)]),color='black',fill=False,axes=False)
+                        water = polygon(([(-0.7,2),(0.7,2),(0.7,2.2),(-0.7,2.2)]),alpha = 0.2,color='blue')
+                        waterbox = polygon(([(-0.7,2),(0.7,2),(0.7,2.2),(-0.7,2.2)]),fill=False,linestyle='dashed',color='black')
+                        height = edger_x(-1.25,0,5)
+                        height_label = text('100 m',(-1.75,2.5),color='black',fontsize=13)
+                        dh = edger_x(.9,2,2.2)
+                        dh_label = text('$\\Delta h$',(1.25,2.1),color='black',fontsize=13)
+                        h = text('$h_i$',(-.9,2),color='black',fontsize=13)
+                        big_rad = line(([(0,5),(1,5)]),color='red',thickness=2)
+                        big_rad_label = text('20 m',(0.5,5.25),color='black',fontsize=13)
+                        inner_rad = line(([(0,2),(0.7,2)]),color='red',thickness=2)
+                        inner_rad_label = text('$r_i$',(0.35,1.8),color='black',fontsize=13)
+                        small_rad = line(([(0,0),(0.5,0)]),color='red',thickness=2)
+                        small_rad_label = text('10 m',(0.25,-0.2),color='black',fontsize=13)
+                        tank + water + waterbox + height + height_label + dh + dh_label + h + big_rad + big_rad_label + inner_rad + inner_rad_label + small_rad + small_rad_label
+                        </sageplot>
                     </image>
             </figure>
                 </p>

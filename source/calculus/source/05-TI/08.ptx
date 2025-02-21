@@ -300,33 +300,19 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
                     <image xml:id="finfinity" width="100%">
                         <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                          \draw[->] (-1, 0) -- (4.2, 0) node[below right] {$x$};
-                          \draw[->] (0, -1) -- (0, 2.2) node[above] {$y$};
-                          \draw[orange] plot [
-                                samples=100,
-                                domain=1:4,
-                                ] (\x,{1/\x });
-                          \draw[dashed] (1,-1) -- (1,2);
-                          \fill [orange, domain=1:4, variable=\x, opacity=0.2]
-                              (1, 0)
-                              -- plot ({\x}, {1/\x})
-                              -- (4, 0)
-                              -- cycle;
-                             \draw[red] plot [
-                                samples=100,
-                                domain=1:4,
-                                ] (\x,{1/(\x)^2 });
-                            \draw[blue] plot [
-                                samples=100,
-                                domain=1:4,
-                                ] (\x,{1/(\x^(1/2)) });
-                            \draw[orange] (4, 1/4) --node[ right]{\tiny $f(x)$} (4,1/4); 
-                            \draw[red] (4, 1/16) --node[ right]{\tiny $g(x)$} (4,1/16);
-                            \draw[blue] (4, 1/2) --node[ right]{\tiny $h(x)$} (4,1/2);
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f(x) = 1/x
+                            g(x) = 1/x^2
+                            h(x) = 1/x^(1/2)
+                            p = plot([f,g,h], (x,1,4), ymax = 2, thickness=2, axes_labels=('$x$','$y$'))
+                            p1 = plot(f,(x,1,4),fill=True)
+                            f_label = text('$f(x)$', (4.1,f(4.1)), fontsize=12, color='blue')
+                            g_label = text('$g(x)$', (4.1,g(4.1)), fontsize=12, color='green')
+                            h_label = text('$h(x)$', (4.1,h(4.1)), fontsize=12, color='red')
+                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
+                            p+left+f_label+g_label+h_label+p1
+                        </sageplot>
                     </image>
             </figure>    
 	    <p>
@@ -348,33 +334,19 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
                     <image xml:id="finfinity2" width="100%">
                         <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                          \draw[->] (-1, 0) -- (4.2, 0) node[below right] {$x$};
-                          \draw[->] (0, -1) -- (0, 2.2) node[above] {$y$};
-                          \draw[orange] plot [
-                                samples=100,
-                                domain=1:4,
-                                ] (\x,{1/\x });
-                          \draw[dashed] (1,-1) -- (1,2);
-                          \fill [orange, domain=1:4, variable=\x, opacity=0.2]
-                              (1, 0)
-                              -- plot ({\x}, {1/\x})
-                              -- (4, 0)
-                              -- cycle;
-                             \draw[red] plot [
-                                samples=100,
-                                domain=1:4,
-                                ] (\x,{1/(\x)^2 });
-                            \draw[blue] plot [
-                                samples=100,
-                                domain=1:4,
-                                ] (\x,{1/(\x^(1/2)) });
-                            \draw[orange] (4, 1/4) --node[ right]{\tiny $f(x)$} (4,1/4); 
-                            \draw[red] (4, 1/16) --node[ right]{\tiny $g(x)$} (4,1/16);
-                            \draw[blue] (4, 1/2) --node[ right]{\tiny $h(x)$} (4,1/2);
-                        \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f(x) = 1/x
+                            g(x) = 1/x^2
+                            h(x) = 1/x^(1/2)
+                            p = plot([f,g,h], (x,1,4), ymax = 2, thickness=2, axes_labels=('$x$','$y$'))
+                            p1 = plot(f,(x,1,4),fill=True)
+                            f_label = text('$f(x)$', (4.1,f(4.1)), fontsize=12, color='blue')
+                            g_label = text('$g(x)$', (4.1,g(4.1)), fontsize=12, color='green')
+                            h_label = text('$h(x)$', (4.1,h(4.1)), fontsize=12, color='red')
+                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
+                            p+left+f_label+g_label+h_label+p1
+                        </sageplot>
                     </image>
             </figure>    
                 If <m>\displaystyle \int_1^\infty f(x)\, dx</m> is divergent, what can we say about <m>g(x), h(x)</m>?
@@ -394,37 +366,22 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fzero" width="50%">
-                        <description>Plots of positive functions f(x), g(x) and h(x).</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                          \draw[->] (-1, 0) -- (2.2, 0) node[below right] {$x$};
-                          \draw[->] (0, -1) -- (0, 4.2) node[above] {$y$};
-                          \draw[orange] plot [
-                                samples=100,
-                                domain=0.25:1,
-                                ] (\x,{1/\x });
-                          \draw[dashed] (1,-1) -- (1,4);
-                          \fill [orange, domain=0.25:1, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- (0, 4)
-                              -- plot ({\x}, {1/\x})
-                              --(1,0)
-                              -- cycle;
-                            \draw[orange] (1, 1) --node[ right]{\tiny $f(x)$} (1,1); 
-                            \draw[red] plot [
-                                samples=100,
-                                domain=0.175:1,
-                                ] (\x,{0.7/\x });
-                            \draw[blue] plot [
-                                samples=100,
-                                domain=0.325:1,
-                                ] (\x,{1.3/\x });  
-                            \draw[blue] (1, 1.3) --node[ right]{\tiny $h(x)$} (1,1.3);    
-                            \draw[red] (1, 0.7) --node[ right]{\tiny $g(x)$} (1,.7);
-    
-                            \end{tikzpicture}
-                        </latex-image>
+                    <image xml:id="fzero" width="100%">
+``` I'm not sure why this one was set to 50% instead of 100% like the first 2.  I think it made sense with the old graphs, but with the new ones, I think it should be 100%.
+                        <sageplot>
+                            x = var('x')
+                            f(x) = 1/x
+                            g(x) = .7/x
+                            h(x) = 1.3/x
+                            p = plot([f,g,h], (x,.25,1), thickness=2, axes_labels=('$x$','$y$'))
+                            p1 = plot(f,(x,.25,1),fill=True)
+                            a = 1.03
+                            f_label = text('$f(x)$', (a,f(a)), fontsize=12, color='blue')
+                            g_label = text('$g(x)$', (a,g(a)), fontsize=12, color='green')
+                            h_label = text('$h(x)$', (a,h(a)), fontsize=12, color='red')
+                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
+                            p+left+f_label+g_label+h_label+p1
+                        </sageplot>
                     </image>
             </figure>    
                 If <m>\displaystyle \int_0^1 f(x)\, dx</m> is convergent, what can we say about <m>g(x)</m> and <m>h(x)</m>?
@@ -443,37 +400,22 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
             <figure>
                 <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fzero2" width="50%">
+                    <image xml:id="fzero2" width="100%">
                         <description>Plots of positive functions f(x), g(x) and h(x).</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                          \draw[->] (-1, 0) -- (2.2, 0) node[below right] {$x$};
-                          \draw[->] (0, -1) -- (0, 4.2) node[above] {$y$};
-                          \draw[orange] plot [
-                                samples=100,
-                                domain=0.25:1,
-                                ] (\x,{1/\x });
-                          \draw[dashed] (1,-1) -- (1,4);
-                          \fill [orange, domain=0.25:1, variable=\x, opacity=0.2]
-                              (0, 0)
-                              -- (0, 4)
-                              -- plot ({\x}, {1/\x})
-                              --(1,0)
-                              -- cycle;
-                            \draw[orange] (1, 1) --node[ right]{\tiny$f(x)$} (1,1); 
-                            \draw[red] plot [
-                                samples=100,
-                                domain=0.175:1,
-                                ] (\x,{0.7/\x });
-                            \draw[blue] plot [
-                                samples=100,
-                                domain=0.325:1,
-                                ] (\x,{1.3/\x });  
-                            \draw[blue] (1, 1.3) --node[ right]{\tiny $h(x)$} (1,1.3);    
-                            \draw[red] (1, 0.7) --node[ right]{\tiny $g(x)$} (1,.7);
-    
-                            \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                            x = var('x')
+                            f(x) = 1/x
+                            g(x) = .7/x
+                            h(x) = 1.3/x
+                            p = plot([f,g,h], (x,.25,1), thickness=2, axes_labels=('$x$','$y$'))
+                            p1 = plot(f,(x,.25,1),fill=True)
+                            a = 1.03
+                            f_label = text('$f(x)$', (a,f(a)), fontsize=12, color='blue')
+                            g_label = text('$g(x)$', (a,g(a)), fontsize=12, color='green')
+                            h_label = text('$h(x)$', (a,h(a)), fontsize=12, color='red')
+                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
+                            p+left+f_label+g_label+h_label+p1
+                        </sageplot>
                     </image>
             </figure>    
                 If <m>\displaystyle \int_0^1 f(x)\, dx</m> is divergent, what can we say about <m>g(x)</m> and <m>h(x)</m>?
