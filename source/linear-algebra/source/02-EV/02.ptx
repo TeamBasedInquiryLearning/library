@@ -148,13 +148,13 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     </statement>
 </activity>
 
-<fact xml:id="EV2-n-vectors-span" >
+<fact xml:id="EV2-m-vectors-span" >
     <statement>
         <p>
-  At least <m>n</m> vectors are required to span <m>\IR^n</m>.
+  At least <m>m</m> vectors are required to span <m>\IR^m</m>.
         </p>
         <figure>
-            <caption>Failed attempts to span <m>\IR^n</m> by <m>&lt;n</m> vectors</caption>
+            <caption>Failed attempts to span <m>\IR^m</m> by <m>&lt;m</m> vectors</caption>
         <image width="75%" xml:id="EV2-image-span-r3">
             <latex-image>
   \begin{tikzpicture}[scale=0.5]
@@ -341,16 +341,16 @@ D.
 <fact>
     <statement>
         <p>
-  The set <m>\{\vec v_1,\dots,\vec v_n\}</m> spans all of <m>\IR^n</m>
+  The set <m>\{\vec v_1,\dots,\vec v_n\}</m> spans all of <m>\IR^m</m>
   exactly when the vector equation
   <me> x_1 \vec{v}_1 + \cdots + x_n\vec{v}_n = \vec{w} </me>
-  is consistent for <em>every</em> vector <m>\vec{w}</m>.
+  is consistent for <em>every</em> vector <m>\vec{w}\in\IR^m</m>.
         </p>
         <p>
-  Likewise, the set <m>\{\vec v_1,\dots,\vec v_n\}</m> fails to span all of <m>\IR^n</m>
+  Likewise, the set <m>\{\vec v_1,\dots,\vec v_n\}</m> fails to span all of <m>\IR^m</m>
   exactly when the vector equation
   <me> x_1 \vec{v}_1 + \cdots + x_n\vec{v}_n = \vec{w} </me>
-  is inconsistent for <em>some</em> vector <m>\vec{w}</m>.
+  is inconsistent for <em>some</em> vector <m>\vec{w}\in\IR^m</m>.
         </p>
         <p>
   Note these two possibilities are decided based on whether or not the RREF of the
@@ -485,7 +485,7 @@ What can you conclude about
     <activity>
         <introduction>
             <p>
-                One of our important results in this lesson is <xref ref="EV2-n-vectors-span"/>, which states that a set of <m>n</m> vectors is required to span <m>\IR^n</m>.
+                One of our important results in this lesson is <xref ref="EV2-m-vectors-span"/>, which states that a set of <m>n</m> vectors is required to span <m>\IR^n</m>.
                 While we developed some geometric intuition for why this true, we did not prove it in class.
                 Before coming to class next time, follow the steps outlined below to convince yourself of this fact using the concepts we learned in this lesson.
             </p>
