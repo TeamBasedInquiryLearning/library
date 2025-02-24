@@ -68,15 +68,29 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
     <task>
         <statement>
             <p>
+                Given <me>
+                \left[\begin{array}{ccccc|c}
+                3 &amp; 2 &amp; 0 &amp; 1 &amp; 3  &amp; 5\\
+                -2 &amp; 4 &amp; -16 &amp; 2 &amp; 3  &amp; 2\\
+                -1 &amp; 1 &amp; -5 &amp; 3 &amp; 0  &amp; 0\\
+                0 &amp; 1 &amp; -3 &amp; 0 &amp; 1 &amp; 1
+                \end{array}\right] \sim
+                \left[\begin{array}{ccccc|c}
+                1 &amp; 0 &amp; 2 &amp; 0 &amp; 0   &amp; 1\\
+                0 &amp; 1 &amp; -3 &amp; 0 &amp; 0  &amp; 1\\
+                0 &amp; 0 &amp; 0 &amp; 1 &amp; 0  &amp; 0\\
+                0 &amp; 0 &amp; 0 &amp; 0 &amp; 1  &amp; 0
+                \end{array}\right]
+                </me>
                 Express the vector <m>\left[\begin{array}{c} 5 \\ 2 \\ 0 \\ 1  \end{array} \right]</m> as a linear combination
                 of the vectors in <m>S</m>, i.e. find scalars such that
                 <me>
-                \left[\begin{array}{c} 5 \\ 2 \\ 0 \\ 1  \end{array} \right] = 
                 \unknown \left[\begin{array}{c} 3 \\ -2 \\ -1 \\ 0  \end{array} \right] + 
                 \unknown \left[\begin{array}{c} 2 \\ 4 \\ 1 \\ 1  \end{array} \right] + 
                 \unknown \left[\begin{array}{c} 0 \\ -16 \\ -5 \\ -3  \end{array} \right] +
                 \unknown \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 0  \end{array} \right] +
-                \unknown \left[\begin{array}{c} 3 \\ 3 \\ 0 \\ 1  \end{array} \right]
+                \unknown \left[\begin{array}{c} 3 \\ 3 \\ 0 \\ 1  \end{array} \right] =
+                \left[\begin{array}{c} 5 \\ 2 \\ 0 \\ 1  \end{array} \right]
                 </me>.
             </p>
         </statement>
@@ -85,7 +99,15 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
         <statement>
             <p>
                 Find a <em>different</em> way to express the vector <m>\left[\begin{array}{c} 5 \\ 2 \\ 0 \\ 1  \end{array} \right]</m> 
-                as a linear combination of the vectors in <m>S</m>.
+                as a linear combination of the vectors in <m>S</m>:
+                <me>
+                \unknown \left[\begin{array}{c} 3 \\ -2 \\ -1 \\ 0  \end{array} \right] + 
+                \unknown \left[\begin{array}{c} 2 \\ 4 \\ 1 \\ 1  \end{array} \right] + 
+                \unknown \left[\begin{array}{c} 0 \\ -16 \\ -5 \\ -3  \end{array} \right] +
+                \unknown \left[\begin{array}{c} 1 \\ 2 \\ 3 \\ 0  \end{array} \right] +
+                \unknown \left[\begin{array}{c} 3 \\ 3 \\ 0 \\ 1  \end{array} \right] =
+                \left[\begin{array}{c} 5 \\ 2 \\ 0 \\ 1  \end{array} \right]
+                </me>.
             </p>
         </statement>
     </task>    
@@ -93,21 +115,18 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
         <statement>
             <p>
                 Consider another vector <m>\left[\begin{array}{c} 8 \\ 6 \\ 7 \\ 5  \end{array} \right]</m>.
-                Without computing the RREF of another matrix,
+                Without computing the RREF of another matrix, do we already know
                 how many ways can this vector be written as a linear combination of the vectors in <m>S</m>?
                 <ol marker="A.">
-                    <li><p>Zero.</p></li>
-                    <li><p>One.</p></li>
-                    <li><p>Infinitely-many.</p></li>
-                    <li><p>Computing a new matrix RREF is necessary.</p></li>
+                    <li><p>Yes, zero.</p></li>
+                    <li><p>Yes, one.</p></li>
+                    <li><p>Yes, infinitely-many.</p></li>
+                    <li><p>No, computing a new matrix RREF is necessary.</p></li>
                 </ol>
             </p>
         </statement>
     </task> 
 </activity>
-
-<sage language="octave">
-</sage>
 
 <activity>
     <introduction>
