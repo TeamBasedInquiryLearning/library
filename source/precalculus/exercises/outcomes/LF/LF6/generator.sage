@@ -14,6 +14,6 @@ class Generator(BaseGenerator):
     line2 = lhs2 == lhs2.subs({x:solution[0],y:solution[1]})
 
     return {
-      "system": f"\\begin{{cases}} {latex(line1)} \\\\{latex(line2)} \\end{{cases}}",
+      "system": f"\\begin{{cases}} {latex(line1.lhs())}={latex(line1.rhs())} \\\\{latex(line2.lhs())}={latex(line2.rhs())} \\end{{cases}}",
       "solution": solution,
     } 
