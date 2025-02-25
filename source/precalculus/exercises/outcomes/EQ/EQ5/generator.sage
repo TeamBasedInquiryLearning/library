@@ -48,7 +48,7 @@ class Generator(BaseGenerator):
     imaginary_roots = f"{latex(r1)}\\text{{ and }}{latex(r2)}"
 
     return {
-      "equations": equations,
+      "equations": [ {"equation": f"{latex(eq['equation'].lhs())}={latex(eq['equation'].rhs())}", "method": eq['method']} for eq in equations],
       "imaginary_equation": imaginary_equation,
       "imaginary_roots": imaginary_roots
     } 
