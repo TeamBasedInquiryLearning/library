@@ -1,4 +1,4 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -64,15 +64,15 @@ class Generator(BaseGenerator):
 
     @provide_data
     def graphics(data):
-        # Q = TBILPrecal.numberline_plot()
+        # Q = TBIL.numberline_plot()
         # Q += circle((data["eq_center"]-data["eq_radius"],0),0.2,color="#0088ff",fill=True)
         # Q += circle((data["eq_center"]+data["eq_radius"],0),0.2,color="#0088ff",fill=True)
         # Q.axes(False)
 
         for datum in data["ineqs"]:
             if datum["ineq_inside"]:
-                Pi = TBILPrecal.numberline_plot()
-                Pi += TBILPrecal.inequality_plot(
+                Pi = TBIL.numberline_plot()
+                Pi += TBIL.inequality_plot(
                     start=datum["ineq_center"]-datum["ineq_radius"],
                     strict_start=datum["ineq_strict"],
                     end=datum["ineq_center"]+datum["ineq_radius"],
@@ -81,13 +81,13 @@ class Generator(BaseGenerator):
                 )
                 Pi.axes(False)
             else:
-                Po = TBILPrecal.numberline_plot()
-                Po += TBILPrecal.inequality_plot(
+                Po = TBIL.numberline_plot()
+                Po += TBIL.inequality_plot(
                     end=datum["ineq_center"]-datum["ineq_radius"],
                     strict_end=datum["ineq_strict"],
                     label_endpoints=False,
                 )
-                Po += TBILPrecal.inequality_plot(
+                Po += TBIL.inequality_plot(
                     start=datum["ineq_center"]+datum["ineq_radius"],
                     strict_start=datum["ineq_strict"],
                     label_endpoints=False,

@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -28,7 +29,7 @@ class Generator(BaseGenerator):
             coeffs[i]*pivot_columns[i]
             for i in range(number_of_pivots)
         ])
-        e_combo = linearCombination(
+        e_combo = TBIL.LinearCombination(
             [
                 coeffs[i]
                 for i in range(number_of_pivots)
@@ -38,7 +39,7 @@ class Generator(BaseGenerator):
                 for i in range(number_of_pivots)
             ],
         )
-        e_set = bracedSet(
+        e_set = TBIL.BracedSet(
             [column_matrix(c) for c in A.columns()]
         )
         aug_matrix = A.augment(column_matrix(e_vector), subdivide=True)
@@ -60,14 +61,14 @@ class Generator(BaseGenerator):
                 x^i*e_vector[i]
                 for i in range(rows)
             )
-            result["set"] = bracedSet([
+            result["set"] = TBIL.BracedSet([
                 sum(
                     x^i*v[i]
                     for i in range(rows)
                 )
                 for v in A.columns()
             ])
-            result["combo"] = linearCombination(
+            result["combo"] = TBIL.LinearCombination(
                 [
                     coeffs[i]
                     for i in range(number_of_pivots)
@@ -84,11 +85,11 @@ class Generator(BaseGenerator):
         elif roll==1:
             # matrix
             result["matrix"] = matrix(QQ,2,e_vector)
-            result["set"] = bracedSet([
+            result["set"] = TBIL.BracedSet([
                 matrix(QQ,2,v)
                 for v in A.columns()
             ])
-            result["combo"] = linearCombination(
+            result["combo"] = TBIL.LinearCombination(
                 [
                     coeffs[i]
                     for i in range(number_of_pivots)
@@ -107,14 +108,14 @@ class Generator(BaseGenerator):
                 units[i]*e_vector[i]
                 for i in range(rows)
             )
-            result["set"] = bracedSet([
+            result["set"] = TBIL.BracedSet([
                 sum(
                     units[i]*v[i]
                     for i in range(rows)
                 )
                 for v in A.columns()
             ])
-            result["combo"] = linearCombination(
+            result["combo"] = TBIL.LinearCombination(
                 [
                     coeffs[i]
                     for i in range(number_of_pivots)

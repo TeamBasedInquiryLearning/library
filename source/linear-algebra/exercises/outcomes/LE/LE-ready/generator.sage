@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -8,16 +9,16 @@ class Generator(BaseGenerator):
         a,b,c = sample([-6,-5,-4,-3,-2,2,3,4,5,6],3)
         equation = CheckIt.shuffled_equation(a*x,b*y,c)
         sets = [
-            setBuilder((x,y),CheckIt.shuffled_equation(a*x,b*y,c)),
-            setBuilder((a*x,b*y),CheckIt.shuffled_equation(a*x,b*y,c)),
-            setBuilder((x,y,c)),
-            setBuilder((a*x,b*y)),
+            TBIL.SetBuilder((x,y),CheckIt.shuffled_equation(a*x,b*y,c)),
+            TBIL.SetBuilder((a*x,b*y),CheckIt.shuffled_equation(a*x,b*y,c)),
+            TBIL.SetBuilder((x,y,c)),
+            TBIL.SetBuilder((a*x,b*y)),
         ]
 
         questions.append({
             "lineset": True,
             "equation": equation,
-            "choices": choices_from_list(sets),
+            "choices": TBIL.choices_from_list(sets),
         })
 
 
@@ -69,8 +70,8 @@ class Generator(BaseGenerator):
         d = (c+choice([-1,1]))*choice([-1,1])
         questions.append({
             "point_in_set": True,
-            "set": setBuilder((x,y),c*x+d*y==c*a+d*b),
-            "choices": choices_from_list(points),
+            "set": TBIL.SetBuilder((x,y),c*x+d*y==c*a+d*b),
+            "choices": TBIL.choices_from_list(points),
         })
 
 
@@ -99,7 +100,7 @@ class Generator(BaseGenerator):
             questions.append({
                 "solve_system": True,
                 "system": system,
-                "choices": choices_from_list(choices),
+                "choices": TBIL.choices_from_list(choices),
             })
 
 
@@ -124,7 +125,7 @@ class Generator(BaseGenerator):
         questions.append({
             "solve_system": True,
             "system": system,
-            "choices": choices_from_list(choices),
+            "choices": TBIL.choices_from_list(choices),
         })
 
 
@@ -148,7 +149,7 @@ class Generator(BaseGenerator):
         questions.append({
             "solve_system": True,
             "system": system,
-            "choices": choices_from_list(choices),
+            "choices": TBIL.choices_from_list(choices),
         })
 
         
