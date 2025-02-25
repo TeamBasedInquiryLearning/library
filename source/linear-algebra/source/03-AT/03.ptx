@@ -446,11 +446,12 @@ and only using the vectors corresponding to pivot columns:
   \setList{
     \left[\begin{array}{c}3\\-1\\2\end{array}\right],
     \left[\begin{array}{c}4\\1\\1\end{array}\right]
-  }
+  }.
 </me>
         </p>
         <p>
-          Note that, if the transformation <m>T</m> is represented by the matrix <m>A</m>,
+          In general, the <term>column space</term><idx>column space</idx> of a matrix <m>M</m> refers to the subspace obtained by considering the span of its column vectors. 
+          Using this terminology, if the transformation <m>T</m> is represented by the matrix <m>A</m>,
  then the image of <m>T</m> is the <term>column space</term><idx>column space</idx> of <m>A</m>.
         </p>
 
@@ -649,6 +650,86 @@ The dimension of the image is called the <term>rank</term> of <m>T</m> (or <m>A<
       </statement>
     </task>
   </activity>
+  <activity>
+<statement><p>
+We can use our notation of span in relation to a matrix, not just in relation to a set of vectors.
+Given a matrix <m>M</m>
+<ul>
+<li>the span of the set of all columns is the <term>column space</term><idx>column space</idx></li>
+
+<li>the span of the set of all rows is the <term>row space</term><idx>row space</idx></li>
+    </ul></p>
+<p>
+    <me>\mbox{Let } M = \left[\begin{array}{ccc|c}1&amp;-1&amp;0\\2&amp;2&amp;4\\-1&amp;0&amp;-1\end{array}\right]
+    </me>
+    <task>
+    <p>
+    Is <m>\left[\begin{array}{c}2\\1\\3\end{array}\right]</m> in the column space of <m>M</m>? 
+    Is it in the row space of <m>M</m>?
+    </p>
+    <ol marker="A.">
+      <li>
+        <p>
+          Yes.
+        </p>
+      </li>
+      <li>
+        <p>
+          No.
+        </p>
+      </li>
+    </ol>
+    <sage language="octave">
+<input></input>
+</sage>
+    </task>
+    <task>
+    <p>
+    Is <m>\left[\begin{array}{c}1\\10\\-3\end{array}\right]</m> in the column space of <m>M</m>? 
+    Is it in the row space of <m>M</m>?
+    </p>
+    <ol marker="A.">
+      <li>
+        <p>
+          Yes.
+        </p>
+      </li>
+      <li>
+        <p>
+          No.
+        </p>
+      </li>
+    </ol>
+    <sage language="octave">
+<input></input>
+</sage>
+    </task>
+    <task>
+      <p>
+    <me>\mbox{Let } N = \left[\begin{array}{ccc|c}1&amp;-1&amp;1\\2&amp;2&amp;-3\\-1&amp;0&amp;-1\end{array}\right]
+    </me>
+Are the row space and column space of <m>N</m> both equal to <m>\mathbb{R}^3</m>?
+    </p>
+    <ol marker="A.">
+      <li>
+        <p>
+          Yes.
+        </p>
+      </li>
+      <li>
+        <p>
+          No.
+        </p>
+      </li>
+    </ol>
+    <sage language="octave">
+<input></input>
+</sage>
+    </task>
+    
+    </p>
+    </statement>
+    </activity>
 </subsection>
 
     <subsection>
