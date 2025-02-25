@@ -84,7 +84,8 @@ class TBIL:
         return P
 
     @staticmethod
-    def intervals_from_inequality(inequality, partition_points,undefined_points=[],checkpoints=None):
+    def intervals_from_inequality(inequality, partition_points,undefined_points=None,checkpoints=None):
+        if undefined_points is None: undefined_points = []
         '''Generates a list of strings which are the intervals on which inequality is true.
          Note that you must supply the partition_points, and it is assumed that the inequality
           is defined between them. '''
