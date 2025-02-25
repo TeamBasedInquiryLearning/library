@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -11,16 +12,16 @@ class Generator(BaseGenerator):
         # random row scaling
         row = randrange(0,4)
         scale = randrange(2,6)*choice([-1,1])
-        tasks[0]["row_op"] = rowOp("diagonal",row+1,row+1,scale)
+        tasks[0]["row_op"] = TBIL.RowOp("diagonal",row+1,row+1,scale)
         tasks[0]["det"] = det*scale
         # random row swapping
         rows = sample([0,1,2,3],2)
-        tasks[1]["row_op"] = rowOp("permutation",rows[0]+1, rows[1]+1)
+        tasks[1]["row_op"] = TBIL.RowOp("permutation",rows[0]+1, rows[1]+1)
         tasks[1]["det"] = det*-1
         # random row adding 
         rows = sample([0,1,2,3],2)
         scale = randrange(2,6)*choice([-1,1])
-        tasks[2]["row_op"] = rowOp("elementary",rows[0]+1,rows[1]+1,scale)
+        tasks[2]["row_op"] = TBIL.RowOp("elementary",rows[0]+1,rows[1]+1,scale)
         tasks[2]["det"] = det
 
         shuffle(tasks)

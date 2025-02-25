@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -16,7 +17,7 @@ class Generator(BaseGenerator):
         if choice([True,False]):
             system = CheckIt.latex_system_from_matrix(m)
         else:
-            system = vectorEquation(m)
+            system = TBIL.VectorEquation(m)
         simplified_system = CheckIt.latex_system_from_matrix(m.rref())
         systems = [{
             "count": "one solution",
@@ -44,7 +45,7 @@ class Generator(BaseGenerator):
         if choice([True,False]):
             system = CheckIt.latex_system_from_matrix(m)
         else:
-            system = vectorEquation(m)
+            system = TBIL.VectorEquation(m)
         simplified_system = CheckIt.latex_system_from_matrix(m.rref())
         systems += [{
             "count": "infinitely-many solutions",
@@ -80,7 +81,7 @@ class Generator(BaseGenerator):
         if choice([True,False]):
             system = CheckIt.latex_system_from_matrix(m)
         else:
-            system = vectorEquation(m)
+            system = TBIL.VectorEquation(m)
         simplified_system = CheckIt.latex_system_from_matrix(m.rref())
         systems += [{
             "count": "no solutions",

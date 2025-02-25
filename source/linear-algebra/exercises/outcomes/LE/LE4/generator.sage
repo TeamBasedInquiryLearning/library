@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -22,7 +23,7 @@ class Generator(BaseGenerator):
             system = CheckIt.latex_system_from_matrix(m)
         else:
             system_label = "vec_eq"
-            system = vectorEquation(m)
+            system = TBIL.VectorEquation(m)
         solset = CheckIt.latex_solution_set_from_matrix(m)
         simplified_system = CheckIt.latex_system_from_matrix(m.rref())
         

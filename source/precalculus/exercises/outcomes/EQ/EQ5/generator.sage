@@ -1,7 +1,7 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
 
 class Generator(BaseGenerator):
-  irrational_dict = TBILPrecal.small_irrationals(rational_part=[-8..1,1..8],full_list=True)
+  irrational_dict = TBIL.small_irrationals(rational_part=[-8..1,1..8],full_list=True)
   def data(self):
     
 
