@@ -175,11 +175,12 @@ class TBIL:
 
     @staticmethod
     def small_rationals(numerators=range(-8,9), 
-                        denominators=[2,3,5],
+                        denominators=None,
                         dictionary=True,
                         length=1):
         '''Generates a list or dictionary of unique rational numbers with small numerators and denominators. 
         For a dictionary, keys are the rationals and values are the denominators.'''
+        if denominators is None: denominators = [2,3,5]
         fulldict = {m/n:n for m in numerators for n in denominators if m%n !=0}
         dict= { num:fulldict[num] for num in sample(list(fulldict.keys()),length)}
         if dictionary:
@@ -188,13 +189,15 @@ class TBIL:
 
     @staticmethod
     def small_irrationals(rational_part=range(-8,9), 
-                          irrational_part=[2,3,5,6,7,8],
-                          denominators=[i for i in range(-5,6) if i != 0],
+                          irrational_part=None,
+                          denominators=None,
                           dictionary=True,
                           length=1,
                           full_list=False):
         '''Generates a list or dictionary of uniqe irrational numbers of the form (a+sqrt(b))/c. 
         For a dictionary, keys are tuples of rationals and their conjugate, and values are the denominators.'''
+        if irrational_part is None: irrational_part = [2,3,5,6,7,8]
+        if denominators is None: denominators=[i for i in range(-5,6) if i != 0]
         fulldict = { ((a+sqrt(b))/c,(a-sqrt(b))/c):c for a in rational_part for b in irrational_part for c in denominators}
         if full_list:
             length=len(fulldict)
