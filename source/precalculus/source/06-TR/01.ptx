@@ -12,11 +12,300 @@
     <subsection>
     <title>Activities</title>
 
+    <definition xml:id="angle">
+      <statement>
+        <p>
+          An <term>angle</term> is formed by joining two rays at their starting points.
+          The point where they are joined is called the <term> vertex</term> of the angle.
+          The measure of an angle is the amount of a circle between the two rays. 
+        </p>
+      </statement>
+    </definition>
+
+    <activity>
+      <introduction>
+        <p>
+          We know that if you complete a full turn of the circle the angle created will be 360 degrees.  Use this to estimate the measure of the given angles.
+
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <image width="50%">
+          <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(pi/2,reference_angle=pi/4,show_axes=False)
+          </sageplot>
+        </image>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p><m>45^{\circ}</m> </p></li>
+            <li><p> <m>90^{\circ}</m> </p></li>
+            <li><p> <m>135^{\circ}</m> </p></li>
+            <li><p> <m>180^{\circ}</m></p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <image width="50%">
+          <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(pi,reference_angle=-pi/6,show_axes=False)
+          </sageplot>
+        </image>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p><m>45^{\circ}</m> </p></li>
+            <li><p> <m>90^{\circ}</m> </p></li>
+            <li><p> <m>135^{\circ}</m> </p></li>
+            <li><p> <m>180^{\circ}</m></p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <image width="50%">
+          <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(135*pi/180,reference_angle=pi/2,show_axes=False)
+          </sageplot>
+        </image>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p><m>45^{\circ}</m> </p></li>
+            <li><p> <m>90^{\circ}</m> </p></li>
+            <li><p> <m>135^{\circ}</m> </p></li>
+            <li><p> <m>180^{\circ}</m></p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
+    <definition>
+      <statement>
+        <p>
+          An angle is in <term>standard position</term> if its vertex is located at the origin and its initial side extends along the positive <m>x</m>-axis. 
+        </p>
+      <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(5*pi/4)
+        </sageplot>
+      </image>
+  <p>
+    An angle measured counterclockwise from the initial side has a positive measure, while an angle measured clockwise from the initial side has a negative measure. 
+  </p>
+<image width="50%">
+  <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(-3*pi/4)
+  </sageplot>
+</image>
+     </statement>
+    </definition>
+    
+    <activity>
+      <introduction>
+        <p>
+         Find the measure of the angles drawn in standard position.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <image width="50%">
+          <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(pi/4)
+          </sageplot>
+        </image>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p><m>45^{\circ}</m> </p></li>
+            <li><p> <m>90^{\circ}</m> </p></li>
+            <li><p> <m>135^{\circ}</m> </p></li>
+            <li><p> <m>180^{\circ}</m></p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <image width="50%">
+          <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(-pi)
+          </sageplot>
+        </image>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p><m>180^{\circ}</m> </p></li>
+            <li><p> <m>90^{\circ}</m> </p></li>
+            <li><p> <m>-180^{\circ}</m> </p></li>
+            <li><p> <m>-90^{\circ}</m></p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            
+            C
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <image width="50%">
+          <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(-5*pi/6)
+          </sageplot>
+        </image>
+        <p>
+          <ol marker="A." cols="2">
+            <li><p><m>30^{\circ}</m> </p></li>
+            <li><p> <m>-150^{\circ}</m> </p></li>
+            <li><p> <m>-210^{\circ}</m> </p></li>
+            <li><p> <m>210^{\circ}</m></p></li>
+        </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+      <task> 
+        <statement>
+         <p> Draw an angle of measure <m>-225^{\circ} </m> in standard position.
+         </p></statement>
+        <answer>
+          <image width="50%">
+            <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(-225*pi/180)
+            </sageplot>
+          </image>
+        </answer>
+      </task>
+    </activity>
+
+    <remark>
+    <p>
+      Activity or remark - Something about the circumference of a circle being another way to measure the angle.  <m>C=2\pi r</m> divide both sides by the radius, so a full circle or <m>360^{\circ}=2\pi</m> radians
+    </p>
+    </remark>
+
+    <definition xml:id="def-radian">
+      <statement>
+        <p>
+          One <term>radian</term> is the measure of a central angle of a circle that intersects an arc the same length as the radius.
+        </p>
+      </statement>
+    </definition>
+
+    <activity>
+      <introduction>
+        <p>
+        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in radians.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> <m>180^{\circ}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>\frac{\pi}{4}</m> </p></li>
+              <li><p> <m>\pi</m> </p></li>
+              <li><p> <m>\frac{3\pi}{4}</m> </p></li>
+              <li><p> <m>\frac{\pi}{2}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>45^{\circ}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>\frac{\pi}{4}</m> </p></li>
+              <li><p> <m>\pi</m> </p></li>
+              <li><p> <m>\frac{3\pi}{4}</m> </p></li>
+              <li><p> <m>\frac{\pi}{2}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity>
+      <introduction>
+        <p>
+        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in degrees.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> <m>\frac{\pi}{2}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>45^{\circ}</m> </p></li>
+              <li><p> <m>90^{\circ}</m> </p></li>
+              <li><p> <m>180^{\circ}</m> </p></li>
+              <li><p> <m>360^{\circ}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>\frac{3\pi}{4}</m>
+            <ol marker="A." cols="2">
+              <li><p> <m>45^{\circ}</m> </p></li>
+              <li><p> <m>90^{\circ}</m> </p></li>
+              <li><p> <m>135^{\circ}</m> </p></li>
+              <li><p> <m>180^{\circ}</m> </p></li>
+          </ol> </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+      </task>
+    </activity>
     </subsection>
 
-    <exercises>
+    <subsection>
+      <title>Exercises</title>
       <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TR1/"/>. </p> 
-    </exercises>
+    </subsection>
     
     <!-- <subsection>
         <title>Videos</title>
