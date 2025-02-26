@@ -20,7 +20,14 @@
   <definition xml:id="def-quadratic-inequality">
     <statement>
       <p>
-        A <term>quadratic inequality</term> is a mathematical statement that relates a quadratic expression (using <m>\lt, \le, \gt, \ge</m>) to another.
+        A <term>quadratic inequality</term> is an inequality that can be written in one of the following forms:
+        <ul>
+        <li><me>ax^2+bx+c \gt 0 </me> </li>
+        <li><me>ax^2+bx+c \lt 0 </me> </li>
+        <li><me>ax^2+bx+c \ge 0 </me> </li>
+        <li><me>ax^2+bx+c \le 0 </me> </li>
+        </ul>
+where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
         </p>
     </statement>
   </definition>
