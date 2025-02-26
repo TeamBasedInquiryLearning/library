@@ -774,59 +774,60 @@
 <activity xml:id="FN1-determine-domain-from-equation-square-root">
   <introduction>
     <p>
-      It's important to be able to determine the domain of any equation, especially when thinking about functions. Answer the following questions given the equation <m>y=\sqrt{x}</m>.
+      It's important to be able to determine the domain of any equation, especially when thinking about functions. Answer the following questions given the equation <m>y=\sqrt{x-2}</m>.
     </p>
   </introduction>
   <task>
     <statement>
     <p>
-      Which of the following values of <m>x</m> would give an error (if any)?
+      Which of the following values of <m>x</m> would cause <m>y</m> to be undefined (if any)?
       <ol marker= "A." cols="2">
         <li> <m>-2</m> </li>
         <li> <m> 0</m> </li>
+        <li> <m>2</m> </li>
         <li> <m>4</m> </li>
-        <li> <m>-5</m> </li>
         <li> none of the above </li></ol></p>
       </statement>
         <answer>
           <p>
-            A and D
+            A and B
           </p>
         </answer>
       </task>
   <task>
     <statement>
       <p>
-        Based on this information, for which of the following values of <m>x</m> would the equation exist? 
+        Based on this information, for which of the following values of <m>x</m> would <m>y</m> be defined? 
         <ol marker= "A." cols="2">
           <li> <m>-2</m> </li>
           <li> <m> 0</m> </li>
+          <li> <m>2</m> </li>
           <li> <m>4</m> </li>
-          <li> <m>-5</m> </li>
           <li> none of the above </li>
         </ol>
       </p>
     </statement>
       <answer>
         <p>
-          B and C
+          C and D
         </p>
       </answer>
     </task>
   <task>
     <statement>
       <p>
-        How can we represent the domain of this equation in interval notation?
+        There are many more <m>x</m>- values than just those found above that, when plugged in, give a defined value for <m>y</m>. How can we represent the domain of this equation in interval notation?
         <ol marker= "A." cols="2">
-          <li> <m>(-\infty,0)</m> </li>
-          <li> <m> [0,\infty)</m> </li>
-          <li> <m>(0, 0)</m> </li>
+          <li> <m>(-\infty,2)</m> </li>
+          <li> <m>(-\infty,2]</m> </li>  
+          <li> <m> [2,\infty)</m> </li>
+          <li> <m> (2,\infty)</m> </li>
           <li> <m>(-\infty,\infty)</m> </li></ol>
       </p>
     </statement>
       <answer>
         <p>
-          B
+          C
         </p>
       </answer>
   </task>
