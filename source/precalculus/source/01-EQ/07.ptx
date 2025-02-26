@@ -141,12 +141,13 @@
       <p>Draw a number line representing your solution.</p>
       </statement>
     <answer>
-      <image>
+    <image>
         <sageplot>
-          <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-          p = TBIL.numberline_plot()
-          p += TBIL.inequality_plot(start=-2,end=7,label_endpoints=False)
-          p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(start=-2,end=7,label_endpoints=False)
+p.axes(False)
+p
         </sageplot>
       </image>
     </answer>
@@ -176,10 +177,11 @@
   <answer>
     <image>
       <sageplot>
-        <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-        p = TBIL.numberline_plot()
-        p += TBIL.inequality_plot(start=-5, end=-3,strict_start=False,strict_end=False,label_endpoints=False)
-        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(start=-5, end=-3,strict_start=False,strict_end=False,label_endpoints=False)
+p.axes(False)
+p
       </sageplot>
     </image>
   </answer>
@@ -336,11 +338,12 @@
     <answer>
       <image>
         <sageplot>
-          <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-          p = TBIL.numberline_plot()
-          p += TBIL.inequality_plot(end=-12,strict_end=False,label_endpoints=False)
-          p += TBIL.inequality_plot(start=-5,end=2,label_endpoints=False)
-          p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot(radius=15)
+p += TBIL.inequality_plot(end=-12,strict_end=False,label_endpoints=False,scale=15)
+p += TBIL.inequality_plot(start=-5,end=2,label_endpoints=False,scale=15)
+p.axes(False)
+p
         </sageplot>
       </image>
     </answer>
