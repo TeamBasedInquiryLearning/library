@@ -95,9 +95,72 @@
   </task>
 </activity>
 
+<activity xml:id="investigating-different-solutions">
+<introduction>
+  <p>
+    It is not always the case that a linear equation has exactly one solution. Consider the equation <me>3+5x=5(x+2)-7</me>.
+  </p>
+</introduction>
+
+<task>
+  <statement>
+    <p>
+      Solve the linear equation. Which of the following is your last step?
+      <ol marker="A." cols="2">
+          <li><p><m>3+5x=5x+3</m> </p></li>
+          <li><p> <m>0=0</m> </p></li>
+          <li><p> <m>3=3</m> </p></li>
+          <li><p> <m>3=10</m></p></li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A, B, or C. Although choice A may not be the last step, some students may not need to continue solving because they can see the left side is the same as the right side.
+    </p>
+  </answer>
+</task>
+
+<task>
+  <statement>
+    <p>
+       Which of the following best describes the statement you got in part (a)?
+       <ol marker="A." cols="2">
+          <li>always true</li>
+          <li>sometimes true</li>
+          <li>never true</li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A. For students who chose choice A in part (a), ask how they can show the statement to always be true by considering different <m>x</m>-values.
+    </p>
+  </answer>
+</task>
+ 
+ <task>
+  <statement>
+    <p>
+      What do you think this means about the number of solutions?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      This equation has infinitely many solutions. Students might have trouble with this idea, so one way to help them to think about the solutions is to have them try different values of <m>x</m>.
+    </p>
+  </answer>
+ </task>
+</activity>
+
+<remark>
+  <p>In <xref ref="investigating-different-solutions"/>, we saw that a linear equation can have infinitely many solutions. Linear equations can also have a unique solution or no solution! 
+  </p>
+</remark>
+
 <activity xml:id="solutions-of-linear-equations">
   <introduction>
-    <p>It is not always the case that a linear equation has exactly one solution.  Consider the following linear equations which appear similar, but their solutions are very different.
+    <p> For each part in this activity, consider the conditions for when a linear equation has a unique solution, no solution, or infinitely many solutions. 
     </p>
   </introduction>
   <task>
@@ -165,10 +228,23 @@
 </p>
 </definition>
 
+<definition>
+  <p>
+    The remainder of this section will focus on <term>linear inequalities</term>. A linear inequality is an inequality that can be written in one of the following forms:
+        <ul>
+        <li><me>ax+b \gt 0 </me> </li>
+        <li><me>ax+b \lt 0 </me> </li>
+        <li><me>ax+b \ge 0 </me> </li>
+        <li><me>ax+b \le 0 </me> </li>
+        </ul>
+where <m>a</m> and <m>b</m> are real numbers and <m>a \neq 0</m>.
+  </p>
+</definition>
+
 <activity xml:id="intro-to-linear-inequality">
   <introduction>
     <p>
-      An inequality is a relationship between two values that are not equal.
+      In this activity, we explore the relationship between a linear equation and a linear inequality, as well as how to express solutions on a number line and in interval notation.
     </p>
   </introduction>
   <task>
@@ -183,7 +259,7 @@
   </task>
   <task>
     <statement>
-    <p> Which of these values is a solution of the inequality <m>3x-1 \ge 5</m>?
+    <p> Which of these values are solutions of the inequality <m>3x-1 \ge 5</m>?
       <ol marker="A." cols="2">
         <li><p><m>x=0</m> </p></li>
         <li><p> <m>x=2</m> </p></li>
@@ -197,22 +273,20 @@
       </p>
     </answer>
   </task>
+
   <task>
     <statement>
-    <p> Express the solution of the inequality <m>3x-1 \ge 5</m> in interval notation.
-      <ol marker="A." cols="2">
-        <li><p> <m>(-\infty, 2]</m> </p></li>
-        <li><p><m>(-\infty, 2)</m> </p></li>
-        <li><p> <m>(2,\infty) </m></p></li>
-        <li><p> <m>[2,\infty)</m> </p></li>
-    </ol> </p>
-  </statement>
-  <answer>
-    <p>
-      D
-    </p>
-  </answer>
+      <p>
+        There are more solutions to the inequality than the ones found in part (b). How would you characterize all of them?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        All numbers greater than <m>2</m> and <m>2</m> itself.
+      </p>
+    </answer>
   </task>
+  
   <task>
     <statement>
       <p>
@@ -273,6 +347,28 @@
     </ol> </p>
   
   </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+  </task>
+
+  <task>
+    <statement>
+    <p> Express the solution of the inequality <m>3x-1 \ge 5</m> in interval notation.
+      <ol marker="A." cols="2">
+        <li><p> <m>(-\infty, 2]</m> </p></li>
+        <li><p><m>(-\infty, 2)</m> </p></li>
+        <li><p> <m>(2,\infty) </m></p></li>
+        <li><p> <m>[2,\infty)</m> </p></li>
+    </ol> </p>
+  </statement>
+  <hint>
+    <p>
+      Use the graph from part (d) to help you write the solution in interval notation. 
+    </p>
+  </hint>
   <answer>
     <p>
       D
