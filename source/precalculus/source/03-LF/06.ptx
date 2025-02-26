@@ -94,7 +94,7 @@
 </definition>
 
 <activity xml:id="LF4-solution-to-system">
-  <introduction> 
+  <statement> 
   <p>
       Consider the following system of equations.
   <me> \begin{cases}
@@ -105,7 +105,7 @@
       <p>
         Which of the ordered pairs is a solution to the system?
       </p>
-  </introduction> 
+
       <p>
         <ol marker="A." cols="2">
           <li><p> <m>(3,10)</m></p></li>
@@ -113,6 +113,7 @@
           <li><p> <m>(1,-1)</m></p></li>
           <li><p> <m>(-1,2)</m></p></li>
       </ol> </p>
+    </statement>
     <answer>
       <p>
         D
