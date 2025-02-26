@@ -48,6 +48,8 @@ class TBIL:
             if i % label_skip == 0:
                 P += line([(i,-0.2),(i,0.2)],color="black")
                 P += text(f"${i}$", (i,-0.6),color="black")
+        
+        P.axes(False)
         return P
     
     @staticmethod
@@ -81,6 +83,7 @@ class TBIL:
                 P += text(")", (end,0), color="#0088ff", fontsize=18)
             else:
                 P += text("]", (end,0), color="#0088ff", fontsize=18)
+        P.axes(False)
         return P
 
     @staticmethod
