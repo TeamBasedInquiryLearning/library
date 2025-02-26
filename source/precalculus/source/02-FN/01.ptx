@@ -956,6 +956,49 @@
     </task>
 </activity>
 
+<activity xml:id="FN1-domain">
+    <introduction>
+      <p>
+       Find the domain of each of the following functions. Write your answer in interval notation
+      </p>
+    </introduction>
+    <task>
+      <statement>
+      <p>
+        <m>f(x)=\dfrac{x+3}{(x-2)(x+5)}</m></p>
+          </statement>
+          <answer>
+            <p>
+              <m>(-\infty,-5)\cup(-5,2)\cup(2,\infty)</m>
+            </p>
+          </answer>    
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(x)=\sqrt{2x-5}</m>
+        </p>
+      </statement>
+        <answer>
+          <p>
+            <m>\left[\dfrac{5}{2},\infty \right) </m>
+          </p>
+        </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(x)=\dfrac{2}{\sqrt{4-x}}</m>
+        </p>
+      </statement>
+        <answer>
+          <p>
+            <m>(-\infty,4)</m>
+          </p>
+        </answer>
+    </task>
+</activity>
+
 <remark>
 <p>
   When determining the domain of an equation, it is often easier to first find values of <m>x</m> that make the function undefined. Once you have those values, then you know that <m>x</m> can be any value but those.
