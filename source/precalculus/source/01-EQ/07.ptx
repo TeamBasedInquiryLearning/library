@@ -36,7 +36,16 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
 
   <introduction>
     <p>
-      Consider the quadratic inequality <me> x^2-6x+5 \gt 0.</me>
+      Consider the graph shown below.
+       <figure width="100%" xml:id="EQ7-quadratic">
+          <image xml:id="EQ7-quadratic-image">
+            <description>Graph of a quadratic</description>
+            <sageplot>
+              f(x) = (x^2-6*x+5)
+                p=plot(f, (x, -3, 9), ymin=-7, ymax=10, color='blue', thickness=3)
+            </sageplot>
+          </image>
+        </figure>
     </p>
   </introduction>
 
