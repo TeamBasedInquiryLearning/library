@@ -52,7 +52,7 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
   <task>
     <statement>
       <p>
-        Use a graphing utility to graph the function <m>f(x)=x^2-6x+5</m>. What is the value of <m>f(0)</m>?
+        What is the value of <m>f(0)</m>?
         <ol marker="A." cols="2">
             <li><m>1</m></li>
             <li><m>-4</m></li>
@@ -319,8 +319,20 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
     <task>
       <statement>
       <p> 
-        Recall that the values of <m>x</m> you found in part (b) are the <m>x</m>-intercepts, or solutions, to the quadratic equation, <m>x^2-4x-32=0</m>. How should we mark these values of <m>x</m> on a number line? 
+        These solutions (that you got in part (b)) correspond to all of the <m>x</m>-intercepts of the graph, and are the only spots where the <m>y</m>-values on either side might change from positive to negative or negative to positive. So, with our two <m>x</m>-intercepts, we have divided our graph into three intervals. What are these three intervals? 
       </p>
+      <answer>
+        <p>
+          <m>(-\infty, -4)</m>, <m>(-4,8)</m>, and <m>(8, \infty)</m>
+        </p>
+      </answer>
+      </statement>
+      </task>
+        
+      <task>
+      <statement>
+        <p> Notice that the <m>x</m>-intercepts are solutions to the quadratic equation <m>x^2-4x-32=0</m>. How should we mark these values of <m>x</m> on a number line? 
+        </p>
         <image xml:id="quad-ineq-number-line">
           <latex-image>
             \begin{tikzpicture}[scale=5]
@@ -338,7 +350,7 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
     <task>
       <statement>
         <p>
-          Notice that when placing the <m>x</m>-intercepts on the number line, we have now divided the number line into three regions. Choose a value of <m>x</m> within each region and substitute that value into the equation <m>x^2-4x-32</m> (or the factored form you found in part (a)). If you get a positive value, place an "+" sign above that region on the number line. Similarly, if you get a negative value, place a "-" sign above that region on the number line.
+          Choose a value of <m>x</m> within each interval and substitute that value into the equation <m>x^2-4x-32</m> (or the factored form you found in part (a)). If you get a positive value, place an "+" sign above that region on the number line. Similarly, if you get a negative value, place a "-" sign above that region on the number line.
         </p>
       </statement>
       <answer>
@@ -364,7 +376,7 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
     <task>
       <statement>
         <p>
-          Using the number line and what you determined in part (d), shade in areas on the number line that satisfies the quadratic inequality <m>x^2-4x-32 \ge 0</m>?
+          Using the number line and what you determined in part (e), shade in areas on the number line that satisfies the quadratic inequality <m>x^2-4x-32 \ge 0</m>?
         </p>
       </statement>
       <answer>
