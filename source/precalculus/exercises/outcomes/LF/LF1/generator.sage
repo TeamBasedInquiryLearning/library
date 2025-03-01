@@ -44,12 +44,12 @@ class Generator(BaseGenerator):
 
       #Table
       m=slopes.pop()
-      g=m*x+choice([-6..-1,1..6])
+      h=m*x+choice([-6..-1,1..6])
       if m.is_integer():
         xvals=sample([-7..7],choice([4..6]))
       else:
         xvals=sample([-3*d, -2*d, .., 3*d],choice([4..6]))
-      points=[(a, g.subs({x:a})) for a in sorted(xvals)]
+      points=[(a, h.subs({x:a})) for a in sorted(xvals)]
       tasks.append({"table_task":True,"table_rows": [{"x":p1, "y":p2} for (p1,p2) in points], "slope": m})
 
 

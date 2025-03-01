@@ -1,5 +1,40 @@
-# Library of helpful functions
-class TBILPrecal:
+class TBIL:
+
+    # Precal/Cal
+
+    @staticmethod
+    def plot_angle(
+        angle,
+        reference_angle=0,
+        show_axes=True,
+        show_unit_circle=False,
+        show_unit_point=False,
+        show_angle_value=False
+    ):
+        reference_coordinate = (cos(reference_angle),sin(reference_angle))
+        end_angle = reference_angle+angle
+        end_coordinate = (cos(end_angle),sin(end_angle))
+        mid_angle = reference_angle+angle/2
+        mid_coordinate = (cos(mid_angle),sin(mid_angle))
+        p=plot([],aspect_ratio=1,ticks=[[],[]])
+        p+=arrow((0,0),reference_coordinate)
+        p+=arrow((0,0),end_coordinate) #TODO hide arrowheads when show_unit_circle
+        p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
+        if show_angle_value:
+            p+=text(f"${latex(angle)}$",(0.2*c for c in mid_coordinate), fontsize="24")
+        if show_unit_point:
+            p+=point(end_coordinate,size="50",color="red")
+            p+=text(f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$", (1.4*c for c in end_coordinate),color="black",fontsize="18")
+        if show_unit_circle:
+            p+=circle((0,0),1,color="#ddd")
+        if not show_axes:
+            p.axes(False)
+        p.xmin(-1)
+        p.xmax(1)
+        p.ymin(-1)
+        p.ymax(1)
+        return p
+
     @staticmethod
     def numberline_plot(center=0, radius=10):
         P = arrow((center-radius,0),(center+radius,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
@@ -13,6 +48,8 @@ class TBILPrecal:
             if i % label_skip == 0:
                 P += line([(i,-0.2),(i,0.2)],color="black")
                 P += text(f"${i}$", (i,-0.6),color="black")
+        
+        P.axes(False)
         return P
     
     @staticmethod
@@ -46,10 +83,12 @@ class TBILPrecal:
                 P += text(")", (end,0), color="#0088ff", fontsize=18)
             else:
                 P += text("]", (end,0), color="#0088ff", fontsize=18)
+        P.axes(False)
         return P
 
     @staticmethod
-    def intervals_from_inequality(inequality, partition_points,undefined_points=[],checkpoints=None):
+    def intervals_from_inequality(inequality, partition_points,undefined_points=None,checkpoints=None):
+        if undefined_points is None: undefined_points = []
         '''Generates a list of strings which are the intervals on which inequality is true.
          Note that you must supply the partition_points, and it is assumed that the inequality
           is defined between them. '''
@@ -131,19 +170,20 @@ class TBILPrecal:
                 if abs(Rational(right))>= scale:
                     scale=abs(Rational(right))+3
 
-        P+=TBILPrecal.numberline_plot(radius=scale)
+        P+=TBIL.numberline_plot(radius=scale)
         for i in interval_dict_list:
-            P+=TBILPrecal.inequality_plot( start=i["left"], strict_start=i["left_strict"], 
+            P+=TBIL.inequality_plot( start=i["left"], strict_start=i["left_strict"], 
             end=i["right"], strict_end=i["right_strict"], label_endpoints=False,scale=scale)
         return P
 
     @staticmethod
     def small_rationals(numerators=range(-8,9), 
-                        denominators=[2,3,5],
+                        denominators=None,
                         dictionary=True,
                         length=1):
         '''Generates a list or dictionary of unique rational numbers with small numerators and denominators. 
         For a dictionary, keys are the rationals and values are the denominators.'''
+        if denominators is None: denominators = [2,3,5]
         fulldict = {m/n:n for m in numerators for n in denominators if m%n !=0}
         dict= { num:fulldict[num] for num in sample(list(fulldict.keys()),length)}
         if dictionary:
@@ -152,13 +192,15 @@ class TBILPrecal:
 
     @staticmethod
     def small_irrationals(rational_part=range(-8,9), 
-                          irrational_part=[2,3,5,6,7,8],
-                          denominators=[i for i in range(-5,6) if i != 0],
+                          irrational_part=None,
+                          denominators=None,
                           dictionary=True,
                           length=1,
                           full_list=False):
         '''Generates a list or dictionary of uniqe irrational numbers of the form (a+sqrt(b))/c. 
         For a dictionary, keys are tuples of rationals and their conjugate, and values are the denominators.'''
+        if irrational_part is None: irrational_part = [2,3,5,6,7,8]
+        if denominators is None: denominators=[i for i in range(-5,6) if i != 0]
         fulldict = { ((a+sqrt(b))/c,(a-sqrt(b))/c):c for a in rational_part for b in irrational_part for c in denominators}
         if full_list:
             length=len(fulldict)
@@ -183,9 +225,148 @@ class TBILPrecal:
             return y==point1[1]
         else:
             slope= (point2[1]-point1[1])/(point2[0]-point1[0])
-            return TBILPrecal.line_from_point_slope(point1,slope)
+            return TBIL.line_from_point_slope(point1,slope)
 
     @staticmethod
     def line_from_point_slope(point,slope):
         '''Returns the equation of a line from a point and slope'''
         return y==slope*x+point[1]-slope*point[0]
+
+    # Linear Algebra
+
+    @staticmethod
+    def config_matrix_typesetting():
+        # globally set display of matrices
+        latex.matrix_delimiters("[", "]")
+        latex.matrix_column_alignment("c")
+
+    class RowOp(SageObject):
+        def __init__(self,optype,row1, row2, scalar=1):
+            pm = "+"
+            if scalar < 0:
+                pm = "-"
+            if optype == "elementary":
+                self.string = f"R_{row1} {pm} {abs(scalar)} R_{row2} \\to R_{row1}"
+            if optype=="diagonal":
+                self.string = f"{scalar} R_{row1} \\to R_{row1}"
+            if optype=="permutation":
+                self.string = f"R_{row1} \\leftrightarrow R_{row2}"
+            
+        def _latex_(self):
+            return self.string
+
+    #Used for constructing things like solution sets of systems of equations
+    class SetBuilder(SageObject):
+        def __init__(self, element=None, predicate=None):
+            self.element=element
+            self.predicate=predicate
+            
+        def _latex_(self):
+            if self.element==None:
+                return r"\left\{\right\}"
+            string=r"\left\{"+latex(self.element)
+            if self.predicate==None:
+                string+=r"\right\}"
+            else:
+                try:
+                    iter(self.predicate)
+                except TypeError:
+                    pred = [self.predicate]
+                else:
+                    pred = self.predicate
+                string+=r"\middle|\,"+"".join([latex(p) for p in pred])+r"\right\}"
+            return string
+
+    #Used to force Sage to use {} around a set -- sometimes Sage is dumb about this with vectors and matrices
+    class BracedSet(SageObject):
+        def __init__(self,list):
+            self.list=list
+
+        def _latex_(self):
+            string=r"\left\{"
+            for i in range(0,len(self.list)-1):
+                string+= latex(self.list[i])+","
+            string+= latex(self.list[-1])+r"\right\}"
+            return string
+
+    #Special case of BracedSet for vectors -- forces them into our standard column vectors
+    class VectorSet(BracedSet):
+        def __init__(self,vectors):
+            self.list=[column_matrix(v) for v in vectors]
+
+    #Similar to VectorSet, but for typesetting in prose, e.g. "The vectors v1,v2, and v3..."
+    class VectorList(SageObject):
+        def __init__(self,vectors):
+            self.vecList=[column_matrix(v) for v in vectors]
+
+        def _latex_(self):
+            string=""
+            for i in range(0,len(self.vecList)-1):
+                string+= latex(self.vecList[i])+","
+            string+= r"\text{ and }" + latex(self.vecList[-1])
+            return string
+
+    #Typeset a linear combination without simplifying, as Sage likes to do automatically
+    class LinearCombination(SageObject):    
+        def __init__(self,coeffs,vecs,parentheses=false):
+            self.coefficients=[]
+            self.vectors=[]
+            self.length=min(len(coeffs),len(vecs))
+            for i in range(0,self.length):
+                self.coefficients.append(coeffs[i])
+                self.vectors.append(vecs[i])
+            self.parentheses=parentheses
+    
+        def _latex_(self):
+            string=""
+            for i in range(0,self.length-1):
+                string+= latex(self.coefficients[i])
+                if self.parentheses:
+                    string+= r"\left("+latex(self.vectors[i])+r"\right)"
+                else: 
+                    string+=latex(self.vectors[i])
+                string+="+"
+            string+= latex(self.coefficients[-1])
+            if self.parentheses:
+                string+= r"\left("+latex(self.vectors[-1])+r"\right)"
+            else: 
+                string+=latex(self.vectors[-1])
+            return string
+
+    #Generic equation, which could be used with polynomial or matrix equations. Often used with a LinearCombination passed as leftside
+    class Equation(SageObject):
+        def __init__(self,leftside,rightside):
+            self.lhs = leftside
+            self.rhs = rightside
+        def _latex_(self):
+            return latex(self.lhs)+"="+latex(self.rhs)
+
+    #Vector equation class
+    class VectorEquation(Equation):
+        def __init__(self,A,vars=None):
+            self.matrix=A
+            #Check if column subdivision exists
+            if not self.matrix.subdivisions()[1]:
+                self.matrix=self.matrix.augment(zero_vector(ZZ, len(self.matrix.columns())), subdivide=true)
+
+            #if vars were not supplied, create them
+            if not vars:
+                vars = vector([var("x_"+str(i+1)) for i in range(0,len(self.matrix.subdivision(0,0).columns()))])
+            
+            super().__init__(TBIL.LinearCombination(vars,[column_matrix(c) for c in self.matrix.subdivision(0,0).columns()]), column_matrix(A.column(-1)))
+
+    @staticmethod
+    def choices_from_list(lst):
+        """
+        Given a list, return a list of choices in a canonical way,
+        in a random order.
+        The first item of the list is the "correct" choice.
+        """
+        choices = [
+            {"item": lst[i],"correct":(i==0)} 
+            for i in range(len(lst))
+        ]
+        shuffle(choices)
+        for i in range(len(lst)):
+            choices[i]["letter"] = chr(ord('a')+i)
+        return choices

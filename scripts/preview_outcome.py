@@ -21,15 +21,14 @@ def build_preview(book:str, outcome:str, amount:int = 20):
         raise ValueError(error_message)
 
     # get path to sandbox
-    sandbox_path = Path("exercise-sandbox")
+    sandbox_path = Path("exercise-sandbox")/"subject"
     sandbox_bank_path = sandbox_path/"bank"
 
     # destroy any existing sandbox
     shutil.rmtree(sandbox_path, ignore_errors=True)
 
     # create new sandbox with that outcome
-    sandbox_path.mkdir()
-    sandbox_bank_path.mkdir()
+    sandbox_bank_path.mkdir(parents=True)
     (sandbox_bank_path/"bank.xml").write_text(f"""
     <?xml version='1.0' encoding='UTF-8'?>
     <bank xmlns="https://checkit.clontz.org" version="0.2">
@@ -47,9 +46,6 @@ def build_preview(book:str, outcome:str, amount:int = 20):
     </bank>
     """.strip())
     (sandbox_bank_path/"outcome").mkdir(exist_ok=True)
-    (sandbox_path/"sage").mkdir()
-    if book in ["linear-algebra", "precalculus"]:
-        shutil.copy(sage_library_path/"common.sage", sandbox_path/"sage"/"common.sage")
     outcome_path = (exercise_path/outcome_ele.find("{*}path").text)
     shutil.copy(outcome_path/"template.xml", sandbox_bank_path/"outcome"/"template.xml")
     shutil.copy(outcome_path/"generator.sage", sandbox_bank_path/"outcome"/"generator.sage")

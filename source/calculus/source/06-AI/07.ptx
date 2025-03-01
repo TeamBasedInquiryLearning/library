@@ -28,34 +28,28 @@
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
                     <image xml:id="damslice" width="50%">
                         <description>A slice at height <m>h_i</m> of width <m>\Delta h</m>, with base <m>b_i</m> of a damn with base 60 ft, top 90 ft, 20 ft tall.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                            \draw (-3,0)--(3,0)--(4.5,2)--(-4.5,2)--(-3,0);
-                        
-                        \draw[dashed] (-3.75,1)--(3.75,1)--(3.75, 1.2)--(-3.75,1.2)--(-3.75,1);
-                        
-                        \draw[fill, blue, opacity=0.2] (-3.75,1) rectangle (3.75,1.2);
-                        
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt, mirror},yshift=0pt]
-                            (-3.75,1) -- (3.75,1) node [black,midway,yshift=-0.6cm] {\footnotesize
-                            $b_i$ };
-                        
-
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-3.75,1) -- (-3.75,1.2) node [black,midway,xshift=-0.8cm] {\footnotesize
-                            $\Delta h$ };
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
-                            (-5,0) -- (-5,2) node [black,midway,xshift=-1cm] {\footnotesize
-                            $20$ ft};    
-                        \draw (3.75, 1) --node[right]{\tiny$h_{i}$} (3.75,1);
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt, mirror},yshift=0pt]
-                            (-3,0) -- (3,0) node [black,midway,yshift=-0.6cm] {\footnotesize
-                            $60$ ft};
-                        \draw [decorate,decoration={brace,amplitude=10pt,raise=2pt},yshift=0pt]
-                            (-4.5,2) -- (4.5,2) node [black,midway,yshift=0.6cm] {\footnotesize
-                            $90$ ft};
-                            \end{tikzpicture}
-                        </latex-image>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125/2
+                            right=x+0.125/2
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        dam = polygon(([(-3,0),(3,0),(4.5,2),(-4.5,2)]),fill=False,color='black',thickness=2,axes=False)
+                        water = polygon(([(-3.75,1),(3.75,1),(3.75,1.2),(-3.75,1.2)]),alpha=0.2,color='blue')
+                        waterbox = polygon(([(-3.75,1),(3.75,1),(3.75,1.2),(-3.75,1.2)]),fill=False,color='black',linestyle='dashed')
+                        height = edger_x(-4.75,0,2)
+                        height_label = text('20 ft',(-5.25,1),color='black',fontsize=13)
+                        top_label = text('90 ft',(0,2.25),color='black',fontsize=13)
+                        bottom_label = text('60 ft', (0,-.25),color='black',fontsize=13)
+                        dh = edger_x(4,1,1.2)
+                        dh_label = text('$\\Delta h$',(4.25,1.1),color='black',fontsize=13)
+                        h = text('$h_i$',(-4,1),color='black',fontsize=13)
+                        base_label = text('$b_i$',(0,.75),color='black',fontsize=13)
+                        dam + water + waterbox + height + height_label + top_label + bottom_label + dh + dh_label + h + base_label
+                        </sageplot>
                     </image>
             </figure>
                 

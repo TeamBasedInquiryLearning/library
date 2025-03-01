@@ -109,7 +109,7 @@
   <task>
     <statement>
       <p>
-        Since <m>P</m> has an inverse function, we know there exists some other function, say <m>L</m>, such that <m>y=P(t)</m> represent the same relationship between <m>t</m> and <m>y</m> as <m>t=L(y)</m>.  In words, this means that <m>L</m> reverses the process of raising to the power of 10, telling us the <em>power</em> to which we need to raise 10 to produce a desired result.
+        Since <m>P</m> has an inverse function, we know there exists some other function, say <m>L</m>, such that <m>y=P(t)</m> represent the same relationship between <m>t</m> and <m>y</m> as <m>t=L(y)</m>.  In words, this means that <m>L</m> reverses the process of raising to the power of <m>10</m>, telling us the <em>power</em> to which we need to raise <m>10</m> to produce a desired result.
         
         Fill in the table of values for <m>L(y)</m>.
         <tabular halign="right">
@@ -188,7 +188,10 @@
     </statement>
     <answer>
       <p>
-        Domain <m>(-\infty, \infty)</m> Range <m>(0,\infty)</m>
+        Domain: <m>(-\infty, \infty)</m>
+      </p>
+      <p>
+        Range: <m>(0,\infty)</m>
       </p>
     </answer>
   </task>
@@ -200,14 +203,19 @@
       </statement>
       <answer>
         <p>
-          Domain <m>(0,\infty)</m> Range <m>(-\infty, \infty)</m>
+          Domain: <m>(0,\infty)</m>
+        </p>
+        <p>
+          Range: <m>(-\infty, \infty)</m>
         </p>
       </answer>
   </task>
 </activity>
+
 <remark>
-  The powers of 10 function <m>P(t)</m> has an inverse <m>L</m>.  This new function <m>L</m> is called the base 10 logarithm.  But, we could have done a similar procedure with any base, which leads to the following definition.
+<p>  The powers of <m>10</m> function <m>P(t)</m> has an inverse <m>L</m>.  This new function <m>L</m> is called the base <m>10</m> logarithm.  But, we could have done a similar procedure with any base, which leads to the following definition. </p>
 </remark>
+
 <definition xml:id="def-log">
   <statement>
     <p>
@@ -219,11 +227,31 @@
   </statement>
 </definition>
 <remark>
-  We can use <xref ref="def-log"/> to express the relationship between logarithmic form and exponential form as follows:
+  <p>There are some logarithms that occur so often, we sometimes write them without noting the base.  They are the common logarithm and the natural logarithm.
+  </p>
+  <p>
+    The <term> common logarithm </term> is a logarithm with base <m>10</m> and is written without a base.
+    <me>
+      \log_{10}(x)=\log (x)
+    </me>
+  </p>
+  <p>
+    The <term> natural logarithm</term> is a logarithm with base <m>e</m> and has its own notation. <aside>
+      <p>Recall the number <m>e</m> was introduced in <xref ref="remark-number-e"/> </p>
+    </aside>
+    <me>
+      \log_{e}(x)=\ln (x)
+    </me>
+    
+  </p>
+</remark>
+
+<remark xml:id="remark-log-exp-form">
+<p>  We can use <xref ref="def-log"/> to express the relationship between logarithmic form and exponential form as follows:
   <me>
     \log_{b}(x)=y \iff b^{y}=x 
   </me>
-  whenever <m> b \gt 0, b \neq 1 </m>
+  whenever <m> b \gt 0, b \neq 1 </m>.</p>
 </remark>
 <activity xml:id="act-log-exp">
   <introduction>
@@ -485,38 +513,32 @@
   </task>
 </activity>
 <remark>
-  Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  Using the rules of exponents and the fact that exponents and logarithms are inverses, these properties hold for any base:
-  <me>
-    \log_{b}(b^{x})=x
-  </me>
-  <me>
-    \log_b(1)=0
-  </me>
-  
-  
+<p>
+  Consider the results of <xref ref="act-eval-logs"/> part (d) and (e).  
+  Using the rules of exponents and the fact that exponents and logarithms are inverses, the following properties hold for any base:
+  <ul>
+    <li>
+      <m>\log_{b}(b^{x})=x</m>
+    </li>
+    <li>
+      <m>b^{\log_{b}(x)}=x</m>
+    </li>
+  </ul>
+  In particular, note the following special cases:
+  <ul>
+    <li>
+      <p>
+        <m>\log_b(1)=0</m> (and therefore <m>\ln(1)=0</m>)
+      </p>
+    </li>
+    <li>
+      <m>\log_b(b)=1</m> (and therefore <m>\ln(e)=1</m>)
+    </li>
+  </ul>
+</p> 
 </remark>
 
-<remark>
-  <p>There are some logarithms that occur so often, we sometimes write them without noting the base.  They are the common logarithm and the natural logarithm.
-  </p>
-  <p>
-    The <term> common logarithm </term> is a logarithm with base <m>10</m> and is written without a base.
-    <me>
-      \log_{10}(x)=\log (x)
-    </me>
-  </p>
-  <p>
-    The <term> natural logarithm</term> is a logarithm with base <m>e</m> and has its own notation. <aside>
-      <p>Recall the number <m>e</m> was introduced in <xref ref="remark-number-e"/> </p>
-    </aside>
-    <me>
-      \log_{e}(x)=\ln (x)
-    </me>
-    
-  </p>
-  
-  
-</remark>
+
 
 <activity xml:id="act-log-calc">
   <introduction>
@@ -611,7 +633,9 @@
   </task>
 </activity>
 <remark>
+<p>
   Notice that in <xref ref="act-log-calc"/> part (g) you were unable to evaluate the logarithm. Given that exponentials and logarithms are inverses, their domain and range are related.  The range of an exponential function is <m>(0,\infty)</m> which becomes the domain of a logarithmic function.  This means that the argument of any logarithmic function must be greater than zero.
+</p>
 </remark>
 
 <activity xml:id="act-log-domain">

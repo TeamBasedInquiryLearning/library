@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+
 class Generator(BaseGenerator):
   def data(self):
 
@@ -39,7 +40,7 @@ class Generator(BaseGenerator):
       points1.append( (0,y_intercept) )
       task1.update( {"x_intercept": x_intercept, "y_intercept": y_intercept})
 
-    line1 = TBILPrecal.line_from_points(points1[0],points1[1])
+    line1 = TBIL.line_from_points(points1[0],points1[1])
 
     #Task 2   
     #Point and slope
@@ -58,7 +59,7 @@ class Generator(BaseGenerator):
       if task2["int_type"]=="y":
         task2["point"] = (0,task2["intercept"])
 
-    line2 = TBILPrecal.line_from_point_slope(task2["point"],slope)
+    line2 = TBIL.line_from_point_slope(task2["point"],slope)
 
     #Task 3
     variable = choice(["x","y"])

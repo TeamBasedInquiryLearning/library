@@ -553,19 +553,14 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
       </statement>
       <answer>
       <image>
+    <answer>
+    <image>
         <sageplot>
-          <!--<xi:include parse="text" href="../../sage/common.sage"/> -->
-          #p = TBILPrecal.numberline_plot()
-          #p += TBILPrecal.inequality_plot(start=-2,end=7,label_endpoints=False)
-          p = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
-          for i in range(-9,10):
-            p += line([(i,-0.2),(i,0.2)],color="black")
-            p += text(f"${i}$", (i,-0.6),color="black")
-          p += line([(-2,0),(7,0)],color="#0088ff", thickness=3, aspect_ratio=1)
-          p += text("(", (-2,0), color="#0088ff", fontsize=18)
-          p += text(")", (7,0), color="#0088ff", fontsize=18)
-          p.axes(False)
-          p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(start=-2,end=7,label_endpoints=False)
+p.axes(False)
+p
         </sageplot>
       </image>
     </answer>

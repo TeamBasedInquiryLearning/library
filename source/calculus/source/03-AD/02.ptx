@@ -12,12 +12,6 @@
   <subsection>
     <title>Activities</title>
 
-<!--   <activity>
-    <introduction>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </introduction>
-  </activity> -->
-
     
 <definition xml:id="defn-linear-approx"><p>
 The <em>linear approximation</em> (or tangent line approximation or linearization) of a function <m>f(x)</m> at <m>x=a</m> is the tangent line <m>L(x)</m> at <m>x=a</m>. In formulas, <m>L(x)</m> is the linear function
@@ -51,43 +45,16 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
     <task><p>Sketch the tangent line <m>L(x)</m> on the same plane as the graph of <m>\ln(x)</m>. What do you notice? 
 </p>
          <figure>
-                    <image width="50%" xml:id="graph-tangent-line-plane-ln">
-                    <latex-image>  
-\begin{minipage}{\textwidth}
-\begin{center}
-    \begin{tikzpicture}[scale=0.9]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=0, xmax=5,
-    ymin=-2, ymax=2,
-    % xtick={0,10,...,80},
-    % ytick={0,10,...,50},
-    % yticklabels={0, 0.01, 0.02, 0.03, 0.04, 0.05},
-  	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel=$y$,
-	xlabel=$x$,
-        ]
-    \addplot[domain=0.1:5, blue, ultra thick] {ln(x)} node [pos=0.8,above left , ultra thick] {$\boldsymbol{\ln(x)}$};
-%      \addplot [only marks, blue] table {
-% 40	20
-% };
-%  \addplot[only marks, color=blue, nodes near coords={$(40,20)$}] coordinates {(30,20)};
-%   \addplot[domain=20:70, black, thick] {(x-40)+20} node [pos=0.6, below right, ultra thick] {$\boldsymbol{L(x)}$};
-%      \addplot [only marks, black] table {
-% 20	0
-% };
-%  \addplot[only marks, color=black, nodes near coords={$(20,0)$}] coordinates {(30,0)};
- \end{axis}
-\end{tikzpicture}
-\end{center}
-                        \end{minipage}
-                          </latex-image>
-                    </image>
-                    <caption>The graph of <m> \ln(x)</m></caption>
-                    </figure>
+            <image width="50%" xml:id="graph-tangent-line-plane-ln">
+                <sageplot>
+                    x = var('x')
+                    f = ln(x)
+                    p = plot(f,(x,0.1,5), gridlines=True, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio = 1.25)
+                    p
+                </sageplot>
+            </image>
+        <caption>The graph of <m> \ln(x)</m></caption>
+        </figure>
         </task>
 </activity>
 
