@@ -81,8 +81,6 @@ class Generator(BaseGenerator):
         x=choice(domain)
         y=choice([z for z in codomain if z!= f[x]])
         p+= arrow( (-2,1.5-0.6*domain.index(x)), (2,1.5-0.6*codomain.index(y)))
-        print(f"f[{x}]={f[x]}")
-        print(f"Extra arrow from {x} to {y}")
 
       p.axes(False)
 
