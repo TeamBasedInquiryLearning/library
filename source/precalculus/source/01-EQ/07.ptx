@@ -1241,6 +1241,7 @@ p
         <p>
           <image>
         <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 p = TBIL.numberline_plot()
 p += TBIL.inequality_plot(end=2,strict_end=True,label_endpoints=False)
 p += TBIL.inequality_plot(start=4,strict_start=True,label_endpoints=False)
@@ -1363,6 +1364,7 @@ p
         <p>
           <image>
         <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 p = TBIL.numberline_plot()
 p += TBIL.inequality_plot(end=-2,strict_end=True,label_endpoints=False)
 p += TBIL.inequality_plot(start=-1,end=3,strict_start=True,strict_end=True,label_endpoints=False)
