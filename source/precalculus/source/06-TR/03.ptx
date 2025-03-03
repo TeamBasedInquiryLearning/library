@@ -210,7 +210,7 @@
 <definition xml:id="def-right-triangle-trigonometry">
   <statement>
     <p>
-      <term>Trigonometric ratios</term> such as sine, cosine, and tangent are based on the relationships between a given angle <m>\theta</m> and side lengths in a right triangle. Three trigonometric functions, sine, cosine, and tangent, are often used to understand the relationships between a given angle of a triangle and its sides. For acute angles, such as <m>\theta</m>, these functions can be defined as ratios between the sides of a right triangle. 
+      <term>Trigonometric Functions</term> such as sine, cosine, and tangent are based on the relationships between a given angle <m>\theta</m> and side lengths in a right triangle. Three trigonometric functions, sine, cosine, and tangent, are often used to understand the relationships between a given angle of a triangle and its sides. For acute angles, such as <m>\theta</m>, these functions can be defined as ratios between the sides of a right triangle. 
         <md> 
           <mrow>
             \sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}
@@ -229,10 +229,10 @@
   </statement>
 </definition>
 
-  <activity xml:id="determine-which-trig-ratio">
+  <activity xml:id="determine-which-trig-function">
     <introduction>
       <p>
-        For each triangle given, determine which trigonometric ratio would be the most helpful in determining the length of the side of a triangle. Be sure to draw a picture of the triangle to help you determine the relationship between the given angle and sides.
+        For each triangle given, determine which trigonometric function would be the most helpful in determining the length of the side of a triangle. Be sure to draw a picture of the triangle to help you determine the relationship between the given angle and sides.
       </p>
     </introduction>
 
@@ -285,7 +285,7 @@
     </task>
   </activity>
 
-  <activity xml:id="applying-trig-ratios">
+  <activity xml:id="applying-trig">
     <introduction>
         <p>The top of the Eiffel Tower is seen from a distance of <m>d = 500</m> meters at an angle of <m>\alpha=31</m><degree/>.
         </p>
@@ -323,7 +323,7 @@
     <task>
       <statement>
         <p>
-          How could we correctly set up the trigonometric ratio to find the height of the Eiffel Tower? 
+          How could we correctly set up the trigonometric function to find the height of the Eiffel Tower? 
           <ol marker= "A." cols="2">
             <li> <m>\sin{31^\circ}=\frac{x}{500}</m></li>
             <li> <m>\cos{31^\circ}=\frac{500}{x}</m> </li>
@@ -355,6 +355,25 @@
     </task>
     </activity> 
 
+    <definition xml:id="def-reciprocal-trig-functions">
+      <statement>
+        <p>
+          Although we have only worked with three trigonometric functions thus far, there are actually six trigonometric functions. The first three rations (sine, cosine, and tangent) are referred to as the <term>basic trigonometric functions</term>. The other three functions, <term>cosecant</term>, <term>secant</term>, and <term>cotangent</term> can be found by taking the reciprocal of the basic trigonometric functions. These three ratios are referred to as the <term>reciprocal trigonometric functions</term> and can be defined as follows:
+          <md> 
+          <mrow>
+            \csc\theta=\frac{\text{hypotenuse}}{\text{opposite}}=\frac{1}{\sin\theta}
+          </mrow>
+          <mrow>
+            \sec\theta=\frac{\text{hypotenuse}}{\text{adjacent}}=\frac{1}{\cos\theta}
+          </mrow>
+          <mrow>
+            \cot\theta=\frac{\text{adjacent}}{\text{opposite}}=\frac{1}{\tan\theta}
+          </mrow>
+        </md>
+        </p>
+      </statement>
+    </definition>
+
   <activity xml:id="finding-trig-ratios-when-given-all-sides">
     <introduction>
       <p>
@@ -365,12 +384,29 @@
     <task>
       <statement>
         <p>
-          Find the ratio of <m>\tan{B}</m>.
+          Find <m>\sin{A}</m>.
           <ol marker= "A." cols="1">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
             <li> <m>\frac{12}{37}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\csc{A}</m>.
+          <ol marker= "A." cols="1">
+            <li> <m>\frac{12}{35}</m> </li>
+            <li> <m>\frac{12}{37}</m> </li>
+            <li> <m>\frac{37}{35}</m> </li>
+            <li> <m>\frac{37}{12}</m> </li></ol></p>
       </statement>
       <answer>
         <p>
@@ -382,7 +418,7 @@
     <task>
       <statement>
         <p>
-          Find the ratio of <m>\cos{A}</m>.
+          Find <m>\cos{B}</m>.
           <ol marker= "A." cols="1">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
@@ -399,7 +435,7 @@
     <task>
       <statement>
         <p>
-          Find the ratio of <m>\sin{B}</m>.
+          Find <m>\cos{B}</m>.
           <ol marker= "A." cols="1">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
@@ -408,7 +444,110 @@
       </statement>
       <answer>
         <p>
-          D
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\cot{B}</m>.
+          <ol marker= "A." cols="1">
+            <li> <m>\frac{35}{12}</m> </li>
+            <li> <m>\frac{35}{37}</m> </li>
+            <li> <m>\frac{12}{35}</m> </li>
+            <li> <m>\frac{12}{37}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="using-ratios-to-find-other-ratios">
+  <introduction>
+    <p>
+      Suppose <m>\cos\theta=\frac{12}{13}</m>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Draw a triangle and label one of the angles <m>\theta</m>. Then, label each side as "opposite," "adjacent," and "hypotenuse."
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Students should draw a triangle where the side across from <m>\theta</m> is labeled "opposite", the side next to the angle <m>\theta</m> is labeled "adjacent", and the "hypotenuse" as the third side across from the <m>90</m>-degree angle.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Use the given information to determine the length of each side of the triangle.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Given that <m>\cos\theta=\frac{12}{13}</m>, we know that the side adjacent to <m>\theta</m> is <m>12</m> and the hypotenuse is <m>13</m>. Using the Pythagorean Theorem, the third side is <m>5</m>.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\csc\theta</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\csc\theta=\frac{13}{5}</m>
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\cot\theta</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\cot\theta=\frac{12}{5}</m>
+      </p>
+    </answer>
+  </task>
+    
+  </activity>
+
+  <activity xml:id="finding-angle">
+  <introduction>
+      <p>
+        Let's revisit the triangle <m>ABC</m>, where <m>a=35</m>, <m>b=12</m>, and <m>c=37</m>, with <m>c</m> being the hypotenuse of the triangle.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\cos{A}</m>.
+          <ol marker= "A." cols="1">
+            <li> <m>\frac{12}{35}</m> </li>
+            <li> <m>\frac{12}{37}</m> </li>
+            <li> <m>\frac{37}{35}</m> </li>
+            <li> <m>\frac{37}{12}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
         </p>
       </answer>
     </task>
