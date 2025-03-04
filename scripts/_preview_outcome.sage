@@ -198,7 +198,7 @@ def json_ready(obj):
 
 # this script should be called from the root directory of the bank
 # so loads in the generator file work as intended
-os.chdir("exercise-sandbox/bank")
+os.chdir("exercise-sandbox/subject/bank")
 generator_path = "outcome/generator.sage"
 load(generator_path) # must provide Generator class extending BaseGenerator
 generator = Generator()

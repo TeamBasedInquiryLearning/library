@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -16,7 +17,7 @@ class Generator(BaseGenerator):
         questions.append({
             "area_comp": True,
             "verts": verts,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 base*height,
                 base*slant,
                 slant*height,
@@ -35,7 +36,7 @@ class Generator(BaseGenerator):
         questions.append({
             "area_comp": True,
             "verts": verts,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 base*height,
                 base*slant,
                 slant*height,
@@ -57,7 +58,7 @@ class Generator(BaseGenerator):
             "area": area,
             "adjustment": adjustment,
             side: True,
-            "choices": choices_from_list(choices),
+            "choices": TBIL.choices_from_list(choices),
         })
 
         # area_adj
@@ -77,7 +78,7 @@ class Generator(BaseGenerator):
             "area": area,
             "adjustment": adjustment,
             side: True,
-            "choices": choices_from_list(choices),
+            "choices": TBIL.choices_from_list(choices),
         })
 
 
@@ -98,7 +99,7 @@ class Generator(BaseGenerator):
             "linearity": True,
             "v": v,
             "w": w,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 v+2*w,
                 w+2*v,
                 2*v+2*w,
@@ -110,7 +111,7 @@ class Generator(BaseGenerator):
         versions = sample(range(1,5),4)
         questions.append({
             "inv_def": True,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 {f"inv{versions[0]}":True},
                 {f"dst{versions[1]}":True},
                 {f"sur{versions[2]}":True},
@@ -131,7 +132,7 @@ class Generator(BaseGenerator):
         questions.append({
             "find_std_mx": True,
             "Tv": A*xs,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 A,
                 A.transpose(),
                 B,
@@ -147,7 +148,7 @@ class Generator(BaseGenerator):
             "polyroot": True,
             "var": x,
             "poly": poly,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 roots[0],
                 -roots[0],
                 roots[2],
@@ -164,7 +165,7 @@ class Generator(BaseGenerator):
             "polyroot": True,
             "var": l,
             "poly": poly,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 roots[0],
                 -roots[0],
                 roots[2],
@@ -180,7 +181,7 @@ class Generator(BaseGenerator):
             "polyroot": True,
             "var": x,
             "poly": poly,
-            "choices": choices_from_list([
+            "choices": TBIL.choices_from_list([
                 vals[0]+vals[1]*I,
                 vals[2]+vals[3]*I,
                 vals[4]+vals[5]*I,

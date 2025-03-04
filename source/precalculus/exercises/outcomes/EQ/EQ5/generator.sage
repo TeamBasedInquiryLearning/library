@@ -1,7 +1,7 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
 
 class Generator(BaseGenerator):
-  irrational_dict = TBILPrecal.small_irrationals(rational_part=[-8..1,1..8],full_list=True)
+  irrational_dict = TBIL.small_irrationals(rational_part=[-8..1,1..8],full_list=True)
   def data(self):
     
 
@@ -48,7 +48,7 @@ class Generator(BaseGenerator):
     imaginary_roots = f"{latex(r1)}\\text{{ and }}{latex(r2)}"
 
     return {
-      "equations": equations,
+      "equations": [ {"equation": f"{latex(eq['equation'].lhs())}={latex(eq['equation'].rhs())}", "method": eq['method']} for eq in equations],
       "imaginary_equation": imaginary_equation,
       "imaginary_roots": imaginary_roots
     } 

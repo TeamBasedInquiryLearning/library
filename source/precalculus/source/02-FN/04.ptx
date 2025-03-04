@@ -255,8 +255,73 @@
           </p>
         </answer>
       </task>
-      
     </activity>
+
+    <activity xml:id="activity-hv-mix-points">
+    <introduction>
+      <p>
+        For each of the following, use the information given to find another point on the graph.
+      </p>
+    </introduction>
+
+    <task>
+        <statement>
+          <p>
+            If <m>(2,3)</m> is a point on the graph of <m>f(x)</m>, what point must be on the graph of <m>f(x)+2</m>?
+            <ol marker="A." cols="2">
+            <li><p><m>(4,3)</m> </p></li>
+            <li><p> <m>(2,5)</m></p></li>
+            <li><p> <m>(4,5)</m> </p></li>
+            <li><p> <m>(2,1)</m></p></li>
+        </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            If <m>(-1,6)</m> is a point on the graph of  <m>g(x)</m>, what point must be on the graph of <m>g(x-4)</m>?
+            <ol marker="A." cols="2">
+            <li><p><m>(-1,10)</m> </p></li>
+            <li><p> <m>(3,6)</m></p></li>
+            <li><p> <m>(-1,2)</m> </p></li>
+            <li><p> <m>(-5,6)</m></p></li>
+        </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            If <m>(-2,-5)</m> is a point on the graph of <m>h(x)</m>, what point must be on the graph of <m>h(x+1)-5</m>?
+            <ol marker="A." cols="2">
+            <li><p><m>(-3,-10)</m> </p></li>
+            <li><p> <m>(-3,0)</m></p></li>
+            <li><p> <m>(-1,-10)</m> </p></li>
+            <li><p> <m>(-1,0)</m></p></li>
+        </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A
+          </p>
+        </answer>
+      </task>
+    </activity>
+
     <activity xml:id="activity-vertref">
       <introduction>
         <p>Consider the following two graphs.
@@ -522,8 +587,54 @@
             </p>
           </answer>
         </task>
-        
     </activity>
+
+<activity xml:id="activity-hvreflections-mix-points">
+    <introduction>
+      <p>
+        For each of the following, use the information given to find another point on the graph.
+      </p>
+    </introduction>
+
+    <task>
+        <statement>
+          <p>
+            If <m>(1,6)</m> is a point on the graph of <m>f(x)</m>, what point must be on the graph of <m>-f(x-2)</m>?
+            <ol marker="A." cols="2">
+            <li><p><m>(-3,6)</m> </p></li>
+            <li><p> <m>(-1,6)</m></p></li>
+            <li><p> <m>(-1,4)</m> </p></li>
+            <li><p> <m>(3,-6)</m></p></li>
+        </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            If <m>(-2,-4)</m> is a point on the graph of <m>g(x)</m>, what point must be on the graph of <m>g(-x)+3</m>?
+            <ol marker="A." cols="2">
+            <li><p><m>(-2,-7)</m> </p></li>
+            <li><p> <m>(2,-1)</m></p></li>
+            <li><p> <m>(2,-7)</m> </p></li>
+            <li><p> <m>(-2,7)</m></p></li>
+        </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p> 
+        </answer>
+      </task>
+    </activity>
+
     <activity xml:id="activity-vstretch">
       <introduction>
         <p>Consider the following two graphs.
@@ -865,6 +976,71 @@
           </p>
         </answer>
       </task>
+    </activity>
+
+    <activity xml:id="identify-transformed-function-from-description">
+    <introduction>
+      <p>
+        For each of the following, write a formula for the new function <m>g(x)</m> when the graph of <m>f(x)</m> is transformed as described.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>f(x) = |x|</m> is shifted <m>3</m> units down 
+          <ol marker="A." cols="1">
+            <li><p> <m>g(x)=|x-3|</m> </p></li>
+            <li><p> <m>g(x)=|x|+3</m> </p></li>
+            <li><p> <m>g(x)=|x|-3</m> </p></li>
+            <li><p> <m>g(x)=|x+3|</m> </p></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>f(x) = x^2</m> is shifted <m>2</m> units left and reflected over the <m>x</m>-axis
+          <ol marker="A." cols="1">
+            <li><p> <m>h(x)= -\sqrt{x-2}</m> </p></li>
+            <li><p> <m>h(x)=-(x-2)^2</m> </p></li>
+            <li><p> <m>h(x)=\sqrt{-x+2}</m> </p></li>
+            <li><p> <m>h(x)=-(x+2)^2</m> </p></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+<m>f(x) = x^3</m> is reflected over the <m>y</m>-axis, vertically stretched by a factor of <m>2</m>, and shifted <m>1</m> unit up
+          <ol marker="A." cols="1">
+            <li><p> <m>g(x)= 2(-x)^3+1</m> </p></li>
+            <li><p> <m>g(x)=(-2x)^3-1</m> </p></li>
+            <li><p> <m>g(x)=-(2x)^3+1</m> </p></li>
+            <li><p> <m>g(x)-2x^3+1</m> </p></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
     </activity>
 
     </subsection>
