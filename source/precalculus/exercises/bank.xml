@@ -50,24 +50,6 @@
                 Solve quadratic equations using factoring, the square root property, completing the square, and the quadratic formula and express these answers in exact form.
             </description>
         </outcome>  
-
-        <outcome>
-            <title>Rational Equations</title>
-            <slug>EQ6</slug>
-            <path>outcomes/EQ/EQ6</path>
-            <description>
-                Solve a rational equation.
-            </description>
-        </outcome>  
-
-        <outcome>
-            <title>Quadratic and Rational Inequalities</title>
-            <slug>EQ7</slug>
-            <path>outcomes/EQ/EQ7</path>
-            <description>
-                Solve quadratic inequalities and express the solution graphically and with interval notation. Solve rational inequalities and express the solution graphically and using interval notation.
-            </description>
-        </outcome> 
         
         <outcome>
             <title>Introduction to Functions</title>
@@ -233,16 +215,43 @@
 
             </description>
         </outcome>
-        
+
         <outcome>
-            <title>Graphs of Rational Functions</title>
+            <title>Rational Equations</title>
             <slug>PR6</slug>
             <path>outcomes/PR/PR6</path>
+            <description>
+                Solve a rational equation.
+            </description>
+        </outcome>  
+
+        <outcome>
+            <title>Graphs of Rational Functions</title>
+            <slug>PR7</slug>
+            <path>outcomes/PR/PR7</path>
             <description>
                 Find the domain and range, vertical and horizontal asymptotes, and intercepts of a rational function and use this information to sketch the graph.
 
             </description>
         </outcome>
+
+        <outcome>
+            <title>Quadratic Inequalities</title>
+            <slug>PR8</slug>
+            <path>outcomes/PR/PR8</path>
+            <description>
+                Solve quadratic inequalities and express the solution graphically and with interval notation. 
+            </description>
+        </outcome> 
+
+        <outcome>
+            <title>Quadratic and Rational Inequalities</title>
+            <slug>PR9</slug>
+            <path>outcomes/PR/PR9</path>
+            <description>
+                Solve rational inequalities and express the solution graphically and using interval notation.
+            </description>
+        </outcome> 
 
         <outcome>
             <title>Introduction to Exponentials </title>

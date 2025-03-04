@@ -1,123 +1,78 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     
-    
-    <intro>
-        <p>
-            Consider the rational function <m>\displaystyle f(x)=\frac{ {{num}} }{ {{denom}}  }</m>.
-        </p>
-    </intro>    
+    <knowl>
+        <intro>
+            <p>
+Solve the following rational equations. Give solutions as integers
+or fractions, not decimals or approximations.
+            </p>
+        </intro>
+        <!-- {{#eqs}} -->
+        <knowl>
+            <content>
+                <p>
+<m mode="display">{{eq}}</m>
+                </p>
+            </content>
+            <outtro>
+                <list>
+                    <!-- {{#sols}} -->
+                    <item><p><m>x={{sol}}</m></p></item>
+                    <!-- {{/sols}} -->
+                </list>
+            </outtro>
+        </knowl>
+        <!-- {{/eqs}} -->
+    </knowl>
+    <!-- {{#whatif}} -->
     <knowl>
         <content>
             <p>
-                Find the {{name1}} of the rational function <m>f(x)</m>.
+After eliminating the denominators of
+                <m mode="display">{{eq}}</m>
+and then simplifying and factoring, you would find
+                <m mode="display">{{simp}}</m>
+which has two solutions.
+Explain why the only solution of the original equation is
+<m>x={{sol}}</m>.
             </p>
         </content>
-
-    <!-- {{^root}} -->
         <outtro>
+            <!-- {{#explainA}} -->
             <p>
-                <m>f(x)=\displaystyle \frac{ {{num}} }{ {{denom}} }</m> has no {{name1}}.
+While <m>x={{notsol}}</m> is a solution of
+<m>{{simp}}</m>, since <m>({{notsol_term}})</m> appears in a
+denominator of <m>{{eq}}</m>, the value <m>{{notsol}}</m> cannot
+be a solution.
             </p>
-        </outtro>
-    <!-- {{/root}} -->   
-    <!--{{#root}}-->
-        <outtro>
+            <!-- {{/explainA}} -->
+            <!-- {{#explainB}} -->
             <p>
-                <m>x={{root}}</m>.
+The term <m>({{notsol_term}})</m> is in a
+denominator of <m>{{eq}}</m>, so <m>{{notsol}}</m> is not
+in its domain. Thus <m>x={{notsol}}</m> cannot be a solution,
+so <m>x={{sol}}</m> is the only solution.
             </p>
-        </outtro>
-    <!--{{/root}}-->
-    <!--{{#two}}-->
-        <outtro>
+            <!-- {{/explainB}} -->
+            <!-- {{#explainC}} -->
             <p>
-                <m>x={{root}}</m>.
+Solutions for <m>{{eq}}</m> must belong to its domain.
+Since <m>x={{notsol}}</m> is not in its domain
+(you cannot divide by zero), it is not a valid
+solution, even though it's a solution for <m>{{simp}}</m>.
             </p>
-        </outtro>
-    <!--{{/two}}-->
-    </knowl> 
-    
-    <knowl>
-        <content>
+            <!-- {{/explainC}} -->
+            <!-- {{#explainD}} -->
             <p>
-                Find the <m>y</m>-intercept of <m>y=f(x)</m>.
+Setting each factor of <m>{{simp}}</m> equal to zero, we find
+the potential solutions <m>x={{sol}}</m> and <m>x={{notsol}}</m>.
+But substituting <m>{{notsol}}</m> into <m>{{eq}}</m> causes division
+by zero, so only <m>x={{sol}}</m> is a solution.
             </p>
-        </content>
-
-        <outtro>
-            <p>
-                 <m>\left(0,{{yint}} \right)</m>
-            </p>
-        </outtro>
-        
-    </knowl> 
-    
-    <knowl>
-        <content>
-            <p>
-                Find any horizontal asymptotes of <m>y=f(x)</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-            <!--{{^two}}-->
-                <m>y={{horizontal}}</m>.
-            <!--{{/two}}-->
-            <!--{{#two}}-->
-            None.
-            <!--{{/two}}-->
-            </p>
+            <!-- {{/explainD}} -->
         </outtro>
     </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find any vertical asymptotes of <m>y=f(x)</m>.
-            </p>
-        </content>
+    <!-- {{/whatif}} -->
 
-        <outtro>
-            <p>
-                <m>x={{vertical}}</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Find any holes of <m>y=f(x)</m>.
-            </p>
-        </content>
-
-        <outtro>
-            <p>
-                <m>\left({{holex}}, {{holey}} \right)</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    <knowl>
-        <content>
-            <p>
-                Sketch the graph of <m>y=f(x)</m>. 
-                Be sure to include all important points and asymptotes you've found.
-            </p>
-            
-        </content>
-        <outtro>
-            <p>
-                <image
-                source="assets/PR6/generated/{{__seed__}}/plot.png"
-                description="The plot of y=f(x), along with special points."/>
-            </p>
-        </outtro>
-    </knowl>
-    
-        
-
-        
-    
 </knowl>
