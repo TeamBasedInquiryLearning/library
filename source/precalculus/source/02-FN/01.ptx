@@ -842,7 +842,7 @@
     <task>
       <statement>
       <p>
-        Which of the following values of <m>x</m> would give an error (if any)?
+       Which of the following values of <m>x</m> would cause <m>y</m> to be undefined (if any)?
         <ol marker= "A." cols="2">
           <li> <m>-2</m> </li>
           <li> <m> 0</m> </li>
@@ -860,7 +860,7 @@
     <task>
       <statement>
         <p>
-          Based on this information, for which of the following values of <m>x</m> would the equation exist? 
+          Based on this information, for which of the following values of <m>x</m> would <m>y</m> be defined? 
           <ol marker= "A." cols="2">
             <li> <m>-2</m> </li>
             <li> <m> 0</m> </li>
@@ -904,7 +904,7 @@
     <task>
       <statement>
       <p>
-        Which of the following values of <m>x</m> would give an error (if any)?
+       Which of the following values of <m>x</m> would cause <m>y</m> to be undefined (if any)?
         <ol marker= "A." cols="2">
           <li> <m>-3</m> </li>
           <li> <m> 0</m> </li>
@@ -922,7 +922,7 @@
     <task>
       <statement>
         <p>
-          Based on this information, for which of the following values of <m>x</m> would the equation exist? 
+          Based on this information, for which of the following values of <m>x</m> would <m>y</m> be defined?  
           <ol marker= "A." cols="2">
             <li> <m>-3</m> </li>
             <li> <m> 0</m> </li>
@@ -992,6 +992,11 @@
           <m>f(x)=\dfrac{2}{\sqrt{4-x}}</m>
         </p>
       </statement>
+      <hint>
+        <p>
+          Notice that this function has both a denominator and a root to consider!
+        </p>
+      </hint>
         <answer>
           <p>
             <m>(-\infty,4)</m>
