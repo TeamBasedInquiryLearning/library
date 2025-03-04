@@ -12,6 +12,289 @@
     <subsection>
     <title>Activities</title>
 
+    <remark>
+      <p> 
+        In <xref ref="TR4"/>, we learned how to find the exact values of the six trigonometric ratios for the special acute angles <m>30^\circ</m>, <m>45^\circ</m>, and <m>60^\circ</m>. In this section, we will use that knowledge and expand to finding the exact trig values of any multiple of those angles.
+      </p>
+    </remark>
+
+    <definition xml:id="def-unit-circle">
+      <statement>
+        <p>
+          The <term>unit circle</term> is the circle of radius <m>1</m> centered at the origin on the coordinate plane.
+        
+         <figure width="100%" xml:id="unit-circle">
+          <image xml:id="TR5-unit-circle">
+            <description>Unit circle</description>
+            <sageplot>
+              p=circle((0,0),1,color="blue")
+            </sageplot>
+          </image>
+        </figure>
+        </p>
+      </statement>
+    </definition>
+
+<activity xml:id="intro-unit-circle">
+  <introduction> 
+    <p>
+    Let <m>\theta</m> be the angle shown below in standard form. Notice that the terminal side intersects with the unit circle. We will label that point of intersection as <m>(x,y)</m>.
+        </p>
+<!-- <image>
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.plot_angle(
+    pi/4, 
+    reference_angle=0,
+    show_axes=True,
+    show_unit_circle=True,
+    show_unit_point=False,
+    show_angle_value=False
+)
+  </sageplot>
+</image> -->
+
+
+  </introduction>
+  
+  <task>
+    <statement>
+      <p>
+       What is the length of line segment <m>r</m>, whose endpoints are the origin and the point <m>(x,y)</m> ?
+
+       <ol marker= "A." cols="2">
+          <li> <m>1</m> </li>
+          <li> <m>2</m> </li>
+          <li> <m>3</m> </li>
+          <li> cannot be determined </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         A
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        We will now create a right triangle using the previous line segment <m>r</m> as the hypotenuse. Draw in a line segment of length <m>x</m> and another of length <m>y</m> to create such a triangle.
+        <ol marker= "A." cols="1">
+          <li> answer choices that are images </li>
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Using the triangle you've just created, find <m>\cos \theta</m>.
+        <ol marker= "A." cols="5">
+          <li> <m>\dfrac{x}{y}</m> </li>
+          <li> <m>\dfrac{1}{x}</m> </li>
+          <li> <m>\dfrac{x}{1}</m> </li>
+          <li> <m>\dfrac{1}{y}</m> </li>
+          <li> <m>\dfrac{y}{1}</m> </li>   
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+    <task>
+    <statement>
+      <p>
+        Using that same triangle, find <m>\sin \theta</m>.
+        <ol marker= "A." cols="5">
+          <li> <m>\dfrac{x}{y}</m> </li>
+          <li> <m>\dfrac{1}{x}</m> </li>
+          <li> <m>\dfrac{x}{1}</m> </li>
+          <li> <m>\dfrac{1}{y}</m> </li>
+          <li> <m>\dfrac{y}{1}</m> </li>   
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        E
+      </p>
+    </answer>
+  </task>
+</activity>
+
+<remark>
+  <p>
+    From the previous activity, we have found a connection between the sine and cosine values of an angle <m>\theta</m> and the coordinates <m>(x,y)</m> of the point at which that angle intersects the unit circle. Namely,
+
+    <me>x=\cos \theta \, \text{ and }\,  y = \sin \theta</me>
+  </p>
+</remark> 
+
+
+<activity xml:id="unit-circle-coords">
+  <introduction> 
+    <p>
+      Consider each angle <m>\theta</m> given below. Find the coordinates <m>(x,y)</m> for the point at which <m>\theta</m> intersects the unit circle.
+
+    </p>
+  </introduction>
+  
+  <task>
+    <statement>
+      <p> <m>\theta = \dfrac{\pi}{4}</m>
+
+       <ol marker= "A." cols="3">
+          <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
+          <li> <m>(0,1)</m> </li>
+          <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         B
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p> <m>\theta = 30^\circ</m>
+
+       <ol marker= "A." cols="3">
+          <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
+          <li> <m>(0,1)</m> </li>
+          <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         B
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p> <m>\theta = \dfrac{\pi}{3}</m>
+
+       <ol marker= "A." cols="3">
+          <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
+          <li> <m>(0,1)</m> </li>
+          <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         A
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p> <m>\theta = 0^\circ</m>
+
+       <ol marker= "A." cols="3">
+          <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
+          <li> <m>(0,1)</m> </li>
+          <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         E
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p> <m>\theta = \dfrac{\pi}{2}</m>
+
+       <ol marker= "A." cols="3">
+          <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
+          <li> <m>(0,1)</m> </li>
+          <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         D
+        </p>
+    </answer>
+  </task>
+
+
+</activity>
+
+<remark>
+  <p>
+    In <xref ref="unit-circle-coords"/>, we found <m>(x,y)</m>-coordinates (and thus the sine and cosine values) for angles that terminated either in Quadrant 1 or on an axis adjacent to Quadrant 1. We'll now expand to angles that terminate elsewhere, using our knowledge of the cosine and sine values of angles in the first quadrant along with how reflections over the <m>x</m> and <m>y</m> axes affect the signs of the coordinates. (See <xref ref="FN4"/> for a reminder on how these reflections work.)
+  </p>
+</remark>
+
+<activity xml:id="reference-angle-1">
+  <introduction> 
+    <p>
+      Consider each angle <m>\theta</m> given below. Find the coordinates <m>(x,y)</m> for the point at which <m>\theta</m> intersects the unit circle.
+
+    </p>
+  </introduction>
+  
+  <task>
+    <statement>
+      <p> <m>\theta = \dfrac{\pi}{4}</m>
+
+       <ol marker= "A." cols="3">
+          <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right)</m> </li>
+          <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
+          <li> <m>(0,1)</m> </li>
+          <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         B
+        </p>
+    </answer>
+  </task>
+
+
+</activity>
+
+
     </subsection>
 
     <exercises>
