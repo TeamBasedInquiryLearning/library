@@ -72,12 +72,15 @@ class Generator(BaseGenerator):
         p+=text(f"${y}$", (2,1.5-0.6*codomain.index(y)),fontsize=20,horizontal_alignment="left",color="black")
       
       #draw arrows randomly but make it a function
+      f={x:choice(codomain) for x in domain}
       for x in domain:
-        p+= arrow( (-2,1.5-0.6*domain.index(x)), (2,1.5-0.6*choice([0..5])))
+        p+= arrow( (-2,1.5-0.6*domain.index(x)), (2,1.5-0.6*codomain.index(f[x])))
 
       #If it's not supposed to be a function, draw an extra arrow
       if not data["map_function"]:
-        p+= arrow( (-2,1.5-0.6*choice([0..5])), (2,1.5-0.6*choice([0..5])))
+        x=choice(domain)
+        y=choice([z for z in codomain if z!= f[x]])
+        p+= arrow( (-2,1.5-0.6*domain.index(x)), (2,1.5-0.6*codomain.index(y)))
 
       p.axes(False)
 
