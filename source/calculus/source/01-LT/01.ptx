@@ -19,12 +19,12 @@
             <figure xml:id="limit_censored">
                 <image width="50%">
                     <sageplot>
-                        x = var('x')
-                        f(x) = -x^3+5*x^2-5.5*x
-                        p = plot(f,(x,-1,3.5),ymin=-2,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-                        q = line([(2,0.1),(2,3)],thickness=10,color='black')
-                        sh = p+q
-                        sh
+x = var('x')
+f(x) = -x^3+5*x^2-5.5*x
+p = plot(f,(x,-1,3.5),ymin=-2,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
+q = line([(2,0.1),(2,3)],thickness=10,color='black')
+sh = p+q
+sh
                     </sageplot>
                 </image>
                 <caption>A graph of a function that has not been rendered properly.</caption>
