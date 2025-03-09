@@ -27,7 +27,7 @@ jobs:
               run: pip install -r requirements.txt
 
             - name: activate sage
-              run: conda init && source ~/.bashrc && conda activate sage
+              run: conda init && source ~/.bashrc && conda activate sage && sage --version
 
             - name: build all deploy targets
               # if: steps.quickbuild.outcome == 'skipped'
@@ -94,7 +94,7 @@ jobs:
               run: pip install -r requirements.txt
 
             - name: activate sage
-              run: conda init && source ~/.bashrc && conda activate sage
+              run: conda init && source ~/.bashrc && conda activate sage && sage --version
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
