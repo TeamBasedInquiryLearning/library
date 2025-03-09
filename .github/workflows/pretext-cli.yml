@@ -26,8 +26,8 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            - name: activate sage
-              run: conda init && conda activate sage
+            - name: set sage alias
+              run: alias sage="mamba run -n sage sage"
 
             - name: build all deploy targets
               # if: steps.quickbuild.outcome == 'skipped'
@@ -93,8 +93,8 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            - name: activate sage
-              run: conda init && conda activate sage
+            - name: set sage alias
+              run: alias sage="mamba run -n sage sage"
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
