@@ -436,31 +436,6 @@ of a vector <m>\vec x</m>, we will often write
     </statement>
 </fact>
 
-<activity estimated-time='3'>
-    <statement>
-        <p>
-  Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by
-  <me>
-    T\left(\vec e_1 \right)
-  =
-    \left[\begin{array}{c} 0 \\ 3 \\ -2\end{array}\right]
-  \hspace{2em}
-    T\left(\vec e_2 \right)
-  =
-    \left[\begin{array}{c} -3 \\ 0 \\ 1\end{array}\right]
-  \hspace{2em}
-    T\left(\vec e_3 \right)
-  =
-    \left[\begin{array}{c} 4 \\ -2 \\ 1\end{array}\right]
-  \hspace{2em}
-    T\left(\vec e_4 \right)
-  =
-    \left[\begin{array}{c} 2 \\ 0 \\ 0\end{array}\right]
-  </me>
-Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</m>.
-        </p>
-    </statement>
-</activity>
 
 <activity>
   <task>
