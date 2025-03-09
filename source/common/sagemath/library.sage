@@ -9,7 +9,10 @@ class TBIL:
         show_axes=True,
         show_unit_circle=False,
         show_unit_point=False,
-        show_angle_value=False
+        label_unit_point=False,
+        show_angle_value=False,
+        show_triangle=False,
+        triangle_labels=False,
     ):
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
         end_angle = reference_angle+angle
@@ -24,9 +27,26 @@ class TBIL:
             p+=text(f"${latex(angle)}$",(0.2*c for c in mid_coordinate), fontsize="24")
         if show_unit_point:
             p+=point(end_coordinate,size="50",color="red")
-            p+=text(f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$", (1.4*c for c in end_coordinate),color="black",fontsize="18")
+        if label_unit_point:
+            if type(label_unit_point) is tuple and len(label_unit_point)==2:
+                label=f"$\\left({label_unit_point[0]},{label_unit_point[1]}\\right)$"
+            else:
+                label=f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$"
+            p+=text(label, (1.4*c for c in end_coordinate),color="black",fontsize="18")
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
+        if show_triangle:
+            p+=line([(0,0),(end_coordinate[0],0),end_coordinate],color="green",thickness=2)
+        if triangle_labels:
+            if type(triangle_labels) is tuple and len(triangle_labels)==2:
+                xlabel=triangle_labels[0]
+                ylabel=triangle_labels[1]
+            else:
+                xlabel=f"${latex(cos(end_angle))}$"
+                ylabel=f"${latex(sin(end_angle))}$"
+            p+=text(xlabel, (0.5*end_coordinate[0],0.2),color="green",fontsize="14")
+            p+=text(ylabel, (end_coordinate[0]+0.2, 0.5*end_coordinate[1]),color="green",fontsize="14")
+            
         if not show_axes:
             p.axes(False)
         p.xmin(-1)
