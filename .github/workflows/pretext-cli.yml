@@ -26,6 +26,9 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
+            - name: activate sage
+              run: conda activate sage
+
             - name: build all deploy targets
               # if: steps.quickbuild.outcome == 'skipped'
               run: pretext build --deploys
@@ -89,6 +92,9 @@ jobs:
 
             - name: install deps
               run: pip install -r requirements.txt
+
+            - name: activate sage
+              run: conda activate sage
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
@@ -99,12 +105,6 @@ jobs:
 
             - name: stage deployment
               run: pretext deploy --stage-only
-
-            # - name: build and stage all banks
-            #   run: |
-            #     python scripts/build_bank.py precalculus --full
-            #     python scripts/build_bank.py calculus --full
-            #     python scripts/build_bank.py linear-algebra --full
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
