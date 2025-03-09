@@ -120,7 +120,7 @@ class TBIL:
                         intervals.append(f"({partition_points[-1]}, \\infty)")
                 else:
                     s=""
-                    if partition_points[i] not in undefined_points and inequality.subs({x:partition_points[i]}):
+                    if partition_points[i-1] not in undefined_points and inequality.subs({x:partition_points[i-1]}):
                         s+="["
                     else:
                         s+="("
