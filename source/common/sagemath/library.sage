@@ -178,8 +178,17 @@ class TBIL:
 
     @staticmethod
     def trig_plot(f, *args, **kwds):
-        xmin=-2*pi
-        xmax=4*pi
+        if len(args)==0:
+            raise ValueError("Second positional argument should be a tuple of the form (var, min, max) or (xmin, xmax)")
+        if type(args[0]) is tuple and len(args[0])==2:
+            xmin=args[0][0]
+            xmax=args[0][1]
+        elif type(args[0]) is tuple and len(args[0])==3:
+            xmin=args[0][1]
+            xmax=args[0][2]
+        else:         
+            xmin=0
+            xmax=2*pi
         if 'ticks' not in kwds.keys() or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
             delta=pi/4
         else:
