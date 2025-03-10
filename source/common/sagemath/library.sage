@@ -177,6 +177,37 @@ class TBIL:
         return P
 
     @staticmethod
+    def trig_plot(f, *args, **kwds):
+        xmin=-2*pi
+        xmax=4*pi
+        if 'ticks' not in kwds.keys() or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
+            delta=pi/4
+        else:
+            delta=kwds['ticks']
+        custom_ticks=[]
+        custom_tick_labels=[]
+        for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
+            if denominator(x) != 1:
+                custom_tick_labels.append(f"$\\dfrac{{{latex(numerator(x))}}}{{{denominator(x)}}}$")
+                custom_ticks.append(x)
+            else:
+                custom_ticks.append(x)
+                custom_tick_labels.append(f"${latex(x)}$")
+                
+        #Default formatting
+        if 'color' not in kwds.keys():
+            kwds['color']='blue'
+        if 'thickness' not in kwds.keys():
+            kwds['thickness']=3
+            
+        kwds['ticks']=[custom_ticks,0.5]
+        kwds['tick_formatter']=[custom_tick_labels,"latex"]
+                
+        p=plot(f, *args, **kwds)
+        return p
+
+
+    @staticmethod
     def small_rationals(numerators=range(-8,9), 
                         denominators=None,
                         dictionary=True,
