@@ -18,7 +18,7 @@
                 Suppose we wanted to find the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>.
                 <figure>
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
-                    <image xml:id="parabolaarclength" width="50%">
+                    <image xml:id="parabolaarclength" width="75%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <sageplot>
                             x = var('x')
@@ -36,7 +36,7 @@
                 Suppose we wished to estimate this length with two line segments where <m>\Delta x=2</m>.
                 <figure>
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with two line segments where <m>\Delta x=2</m>.</caption>
-                    <image xml:id="parabolaarclengthtwopieces" width="50%">
+                    <image xml:id="parabolaarclengthtwopieces" width="75%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <sageplot>
                             from sage.plot.graphics import Graphics
@@ -76,7 +76,7 @@
                 Suppose we wished to estimate this length with four line segments where <m>\Delta x=1</m>.
                 <figure>
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with four line segments where <m>\Delta x=1</m>.</caption>
-                    <image xml:id="parabolaarclengthfourpieces" width="50%">
+                    <image xml:id="parabolaarclengthfourpieces" width="75%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <sageplot>
                             from sage.plot.graphics import Graphics
@@ -122,7 +122,7 @@
                 Suppose we wished to estimate this length with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.  Let <m>f(x)=-x^2+6x</m>.
                 <figure>
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.</caption>
-                    <image xml:id="parabolaarclengthnpieces" width="50%">
+                    <image xml:id="parabolaarclengthnpieces" width="75%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <sageplot>
                             from sage.plot.graphics import Graphics
