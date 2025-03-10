@@ -187,11 +187,10 @@ class TBIL:
         custom_ticks=[]
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
+            custom_ticks.append(x)
             if denominator(x) != 1:
                 custom_tick_labels.append(f"$\\dfrac{{{latex(numerator(x))}}}{{{denominator(x)}}}$")
-                custom_ticks.append(x)
             else:
-                custom_ticks.append(x)
                 custom_tick_labels.append(f"${latex(x)}$")
                 
         #Default formatting
