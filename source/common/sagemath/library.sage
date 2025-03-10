@@ -174,6 +174,7 @@ class TBIL:
         for i in interval_dict_list:
             P+=TBIL.inequality_plot( start=i["left"], strict_start=i["left_strict"], 
             end=i["right"], strict_end=i["right_strict"], label_endpoints=False,scale=scale)
+        P.axes(False)
         return P
 
     @staticmethod
