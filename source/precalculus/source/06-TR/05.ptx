@@ -35,24 +35,23 @@
       </statement>
     </definition>
 
+
+
 <activity xml:id="intro-unit-circle">
   <introduction> 
     <p>
-    Let <m>\theta</m> be the angle shown below in standard form. Notice that the terminal side intersects with the unit circle. We will label that point of intersection as <m>(x,y)</m>.
+    Let <m>\theta</m> be the angle shown below in standard form. Notice that the terminal side intersects with the unit circle. (Note: We will assume a circle drawn in the this context is the unit circle unless told otherwise.) We will label that point of intersection as <m>(x,y)</m>. 
         </p>
-<!-- <image>
+<image width="50%">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.plot_angle(
-    pi/4, 
-    reference_angle=0,
-    show_axes=True,
-    show_unit_circle=True,
-    show_unit_point=False,
-    show_angle_value=False
-)
-  </sageplot>
-</image> -->
+p=TBIL.plot_angle(pi/4,show_unit_circle=True)
+p+=text("$(x,y)$", (.8,.8), fontsize="15")
+p+=text("$r$", (.35,.45), fontsize="15")
+p+=point((1/sqrt(2),1/sqrt(2)),size="50",color="red",zorder=5)
+p
+  </sageplot> 
+</image> 
 
 
   </introduction>
@@ -81,17 +80,24 @@ TBIL.plot_angle(
     <statement>
       <p>
         We will now create a right triangle using the previous line segment <m>r</m> as the hypotenuse. Draw in a line segment of length <m>x</m> and another of length <m>y</m> to create such a triangle.
-        <ol marker= "A." cols="1">
-          <li> answer choices that are images </li>
-          
-        </ol>
       </p>
     </statement>
     <answer>
-      <p>
-        
-      </p>
-    </answer>
+      <image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(pi/4,show_unit_circle=True)
+p+=text("$(x,y)$", (.8,.8),fontsize="15")
+p+=text("$r$", (.35,.45), fontsize="15")
+p+=point((1/sqrt(2),1/sqrt(2)),size="70",color="red",zorder=5)
+p+=line([(1/sqrt(2),0),(1/sqrt(2),1/sqrt(2))],color="green",thickness=3)
+p+=line([(1/sqrt(2),0),(0,0)],color="green",zorder=5,thickness=3)
+p+=text("$x$", (.4,-.1),color="black",fontsize="15")
+p+=text("$y$", (.81,.4),color="black",fontsize="15")
+p
+  </sageplot> 
+</image> 
+    </answer> 
   </task>
 
   <task>
@@ -135,6 +141,51 @@ TBIL.plot_angle(
       </p>
     </answer>
   </task>
+
+  <task>
+    <statement>
+      <p>
+        Solve for <m>x</m> in one of the equations you've found above to determine an expression for the <m>x</m>-value of the point <m>(x,y)</m>  .
+        <ol marker= "A." cols="6">
+          <li> <m>y\cos \theta</m> </li>
+          <li> <m>y\sin \theta</m> </li>
+          <li> <m>\cos \theta</m> </li>
+          <li> <m>\sin \theta</m> </li> 
+          <li> <m>\dfrac{1}{\cos \theta}</m> </li>
+          <li> <m>\dfrac{1}{\sin \theta}</m> </li>  
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Solve for <m>y</m> in one of the equations you've found above to determine an expression for the <m>y</m>-value of the point <m>(x,y)</m>  .
+        <ol marker= "A." cols="6">
+          <li> <m>y\cos \theta</m> </li>
+          <li> <m>y\sin \theta</m> </li>
+          <li> <m>\cos \theta</m> </li>
+          <li> <m>\sin \theta</m> </li> 
+          <li> <m>\dfrac{1}{\cos \theta}</m> </li>
+          <li> <m>\dfrac{1}{\sin \theta}</m> </li>  
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+  </task>
+
 </activity>
 
 <remark>
@@ -263,17 +314,17 @@ TBIL.plot_angle(
   </p>
 </remark>
 
-<activity xml:id="reference-angle-1">
+<!-- <activity xml:id="pyth-thm-to-identity">
   <introduction> 
     <p>
-      Consider each angle <m>\theta</m> given below. Find the coordinates <m>(x,y)</m> for the point at which <m>\theta</m> intersects the unit circle.
+     Let's look back at part (b) of <xref ref="unit-circle-coords"/>, where we found the coordinates of the point at which the angle <m>\theta = 30^\circ</m> intersects the unit circle. 
 
     </p>
   </introduction>
   
   <task>
     <statement>
-      <p> <m>\theta = \dfrac{\pi}{4}</m>
+      <p> question
 
        <ol marker= "A." cols="3">
           <li> <m>\left( \dfrac{1}{2}, \dfrac{\sqrt{3}}{2} \right)</m> </li>
@@ -281,6 +332,54 @@ TBIL.plot_angle(
           <li> <m>\left( \dfrac{\sqrt{3}}{2}, \dfrac{1}{2} \right)</m> </li>
           <li> <m>(0,1)</m> </li>
           <li> <m>(1,0)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p> 
+         B
+        </p>
+    </answer>
+  </task>
+
+
+</activity> -->
+
+<activity xml:id="reference-angle-1">
+  <introduction> 
+    <p>
+      Let's consider the angle <m>\theta=150^\circ</m>, drawn below with the unit circle.</p>
+
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True)
+p
+  </sageplot> 
+</image> 
+    
+  </introduction>
+  
+  <task>
+    <statement>
+      <p> What is the measure of the angle between the terminal side of <m>\theta</m> and the <m>x</m>-axis, as drawn below?
+      </p>
+
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(pi/6,reference_angle=5*pi/6,show_unit_circle=True)
+p
+  </sageplot> 
+</image> 
+
+      <p>
+       <ol marker= "A." cols="5">    
+          <li> <m>0^\circ</m> </li>
+          <li> <m>3^\circ</m> </li>
+          <li> <m>45^\circ</m> </li>
+          <li> <m>60^\circ</m> </li>
+          <li> <m>75^\circ</m> </li>
         </ol>
       </p>
     </statement>
