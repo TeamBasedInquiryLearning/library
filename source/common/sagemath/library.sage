@@ -14,7 +14,15 @@ class TBIL:
         show_reference_angle_value=False,
         show_triangle=False,
         triangle_labels=False,
+        degree_labels=False,
     ):
+        if degree_labels:
+            angle_label = f"${latex(angle*180/pi)}^\\circ$"
+            reference_angle_label = f"${latex(reference_angle*180/pi)}^\\circ$"
+        else:
+            angle_label = f"${latex(angle)}$"
+            reference_angle_label = f"${latex(reference_angle)}$"
+
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
         mid_reference_angle=reference_angle/2
         mid_reference_coordinate = (cos(mid_reference_angle),sin(mid_reference_angle))
@@ -27,10 +35,10 @@ class TBIL:
         p+=arrow((0,0),end_coordinate) #TODO hide arrowheads when show_unit_circle
         p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
         if show_angle_value:
-            p+=text(f"${latex(angle)}$",(0.2*c for c in mid_coordinate), fontsize="16")
+            p+=text(angle_label,(0.2*c for c in mid_coordinate), fontsize="16")
         if show_reference_angle_value:
             p+=arc((0,0),0.1,sector=(0, reference_angle),color="black") 
-            p+=text(f"${latex(reference_angle)}$",(0.2*c for c in mid_reference_coordinate), fontsize="16")
+            p+=text(reference_angle_label,(0.2*c for c in mid_reference_coordinate), fontsize="16")
         if show_unit_point:
             p+=point(end_coordinate,size="50",color="red")
         if label_unit_point:
