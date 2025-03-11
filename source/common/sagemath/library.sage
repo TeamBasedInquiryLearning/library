@@ -11,10 +11,13 @@ class TBIL:
         show_unit_point=False,
         label_unit_point=False,
         show_angle_value=False,
+        show_reference_angle_value=False,
         show_triangle=False,
         triangle_labels=False,
     ):
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
+        mid_reference_angle=reference_angle/2
+        mid_reference_coordinate = (cos(mid_reference_angle),sin(mid_reference_angle))
         end_angle = reference_angle+angle
         end_coordinate = (cos(end_angle),sin(end_angle))
         mid_angle = reference_angle+angle/2
@@ -24,7 +27,10 @@ class TBIL:
         p+=arrow((0,0),end_coordinate) #TODO hide arrowheads when show_unit_circle
         p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
         if show_angle_value:
-            p+=text(f"${latex(angle)}$",(0.2*c for c in mid_coordinate), fontsize="24")
+            p+=text(f"${latex(angle)}$",(0.2*c for c in mid_coordinate), fontsize="16")
+        if show_reference_angle_value:
+            p+=arc((0,0),0.1,sector=(0, reference_angle),color="black") 
+            p+=text(f"${latex(reference_angle)}$",(0.2*c for c in mid_reference_coordinate), fontsize="16")
         if show_unit_point:
             p+=point(end_coordinate,size="50",color="red")
         if label_unit_point:
@@ -36,7 +42,13 @@ class TBIL:
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
         if show_triangle:
-            p+=line([(0,0),(end_coordinate[0],0),end_coordinate],color="green",thickness=2)
+            if cos(angle)*sin(angle)!=0:
+                p+=line([(0,0),(end_coordinate[0],0),end_coordinate],color="green",thickness=2)
+                #Little square in corner
+                delta=0.08
+                xdelta = -1*delta*cos(angle)/abs(cos(angle))
+                ydelta = delta*sin(angle)/abs(sin(angle))
+                p+=line([(end_coordinate[0],ydelta),(end_coordinate[0]+xdelta,ydelta),(end_coordinate[0]+xdelta,0)],color="green")
         if triangle_labels:
             if type(triangle_labels) is tuple and len(triangle_labels)==2:
                 xlabel=triangle_labels[0]
