@@ -35,7 +35,7 @@ class TBIL:
         p+=arrow((0,0),end_coordinate) #TODO hide arrowheads when show_unit_circle
         p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
         if show_angle_value:
-            if type(show_angle_value) is string:
+            if type(show_angle_value) is str:
                 angle_value_label = show_angle_value
             else:
                 angle_value_label = angle_label
