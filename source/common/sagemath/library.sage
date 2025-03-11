@@ -177,6 +177,17 @@ class TBIL:
         return P
 
     @staticmethod
+    def typeset_angle(theta):
+        if type(theta) is not sage.symbolic.expression.Expression:
+            return latex(theta)
+        elif not theta.is_rational_expression(): 
+            return latex(theta)
+        elif denominator(theta)==1:
+            return latex(theta)
+        else:
+            return f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+
+    @staticmethod
     def trig_plot(f, *args, **kwds):
         if len(args)==0:
             raise ValueError("Second positional argument should be a tuple of the form (var, min, max) or (xmin, xmax)")
@@ -198,7 +209,7 @@ class TBIL:
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
             custom_ticks.append(x)
             if denominator(x) != 1:
-                custom_tick_labels.append(f"$\\dfrac{{{latex(numerator(x))}}}{{{denominator(x)}}}$")
+                custom_tick_labels.append(TBIL.typeset_angle(x))
             else:
                 custom_tick_labels.append(f"${latex(x)}$")
                 
