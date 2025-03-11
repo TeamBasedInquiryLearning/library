@@ -208,10 +208,7 @@ class TBIL:
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
             custom_ticks.append(x)
-            if denominator(x) != 1:
-                custom_tick_labels.append(TBIL.typeset_angle(x))
-            else:
-                custom_tick_labels.append(f"${latex(x)}$")
+            custom_tick_labels.append(TBIL.typeset_angle(x))
                 
         #Default formatting
         if 'color' not in kwds.keys():
