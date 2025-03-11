@@ -179,11 +179,11 @@ class TBIL:
     @staticmethod
     def typeset_angle(theta):
         if type(theta) is not sage.symbolic.expression.Expression:
-            return latex(theta)
+            return f"${latex(theta)}$"
         elif not theta.is_rational_expression(): 
-            return latex(theta)
+            return f"${latex(theta)}$"
         elif denominator(theta)==1:
-            return latex(theta)
+            return f"${latex(theta)}$"
         else:
             return f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
 
