@@ -470,10 +470,8 @@ p
           <p>
             <image>
               <sageplot>
-f(x) = sin(x)
-p=Graphics()
-p+=plot(f, (x, -6.28, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/4,0.5], tick_formatter=pi)
-p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,-2*pi,4*pi),ticks=pi/2)
               </sageplot>
             </image> 
           </p>

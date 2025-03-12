@@ -221,6 +221,53 @@ class TBIL:
         return P
 
     @staticmethod
+    def typeset_angle(theta):
+        if type(theta) is not sage.symbolic.expression.Expression:
+            return f"${latex(theta)}$"
+        elif not theta.is_rational_expression(): 
+            return f"${latex(theta)}$"
+        elif denominator(theta)==1:
+            return f"${latex(theta)}$"
+        else:
+            return f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+
+    @staticmethod
+    def trig_plot(f, *args, **kwds):
+        if len(args)==0:
+            raise ValueError("Second positional argument should be a tuple of the form (var, min, max) or (xmin, xmax)")
+        if type(args[0]) is tuple and len(args[0])==2:
+            xmin=args[0][0]
+            xmax=args[0][1]
+        elif type(args[0]) is tuple and len(args[0])==3:
+            xmin=args[0][1]
+            xmax=args[0][2]
+        else:         
+            xmin=0
+            xmax=2*pi
+        if 'ticks' not in kwds.keys() or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
+            delta=pi/4
+        else:
+            delta=kwds['ticks']
+        custom_ticks=[]
+        custom_tick_labels=[]
+        for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
+            custom_ticks.append(x)
+            custom_tick_labels.append(TBIL.typeset_angle(x))
+                
+        #Default formatting
+        if 'color' not in kwds.keys():
+            kwds['color']='blue'
+        if 'thickness' not in kwds.keys():
+            kwds['thickness']=3
+            
+        kwds['ticks']=[custom_ticks,0.5]
+        kwds['tick_formatter']=[custom_tick_labels,"latex"]
+                
+        p=plot(f, *args, **kwds)
+        return p
+
+
+    @staticmethod
     def small_rationals(numerators=range(-8,9), 
                         denominators=None,
                         dictionary=True,
