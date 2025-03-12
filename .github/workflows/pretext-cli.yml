@@ -26,18 +26,13 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            - name: activate sage
-              run: conda init && source ~/.bashrc && unalias sage && conda activate sage && sage --version
-
             - name: build all deploy targets
-              # if: steps.quickbuild.outcome == 'skipped'
               run: pretext build --deploys
 
             - name: stage deployment
               run: pretext deploy --stage-only
 
             - name: build and stage all banks
-              # if: steps.quickbuild.outcome == 'skipped'
               run: |
                 python scripts/build_bank.py precalculus --full
                 python scripts/build_bank.py calculus --full
@@ -93,8 +88,8 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            - name: activate sage
-              run: conda init && source ~/.bashrc && unalias sage && conda activate sage && sage --version
+            # - name: activate sage
+            #   run: conda init && source ~/.bashrc && unalias sage && conda activate sage && sage --version
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
@@ -129,8 +124,6 @@ jobs:
                   path: deploy
             - name: Create 404.html
               run: echo "404 page not found" >> deploy/404.html
-            # - name: Delete CheckIt builds not supported by CloudFlare
-            #   run: find . -name "bank.json" -type f -delete
             - name: Publish to Cloudflare
               id: cloudflare_publish
               uses: cloudflare/pages-action@v1
