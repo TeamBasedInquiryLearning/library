@@ -9,6 +9,10 @@ on:
     # Runs on demand
     workflow_dispatch:
 
+defaults:
+  run:
+    shell: bash -l {0} # use login shell
+
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
