@@ -92,8 +92,11 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
-            # - name: activate sage
-            #   run: conda init && source ~/.bashrc && unalias sage && conda activate sage && sage --version
+            - name: activate sage
+              run: conda init && conda activate sage
+
+            - name: check sage version
+              run: sage --version
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
