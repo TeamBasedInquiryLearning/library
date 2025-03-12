@@ -92,6 +92,9 @@ jobs:
             - name: install deps
               run: pip install -r requirements.txt
 
+            - name: print out PATH
+              run: echo $PATH | tr : '\n'
+
             - name: activate sage
               run: conda init && conda activate sage
 
