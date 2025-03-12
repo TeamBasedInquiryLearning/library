@@ -82,12 +82,12 @@ the set of all vectors that transform into <m>\vec 0</m>?
 <definition xml:id="AT3-definition-kernel">
     <statement>
         <p>
-Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{z}</m> be the additive
-identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx> of <m>T</m>
+Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{0}</m> be the zero vector of <m>W</m>.  
+The <term>kernel</term><idx>kernel</idx> of <m>T</m>
 (also known as the <term>null space</term><idx>null space</idx> of <m>T</m>)
 is an important subspace of <m>V</m> defined by
 <me>
-\ker T = \left\{ \vec{v} \in V\ \big|\ T(\vec{v})=\vec{z}\right\}
+\ker T = \left\{ \vec{x} \in V\ \big|\ T(\vec{x})=\vec{0}\right\}
 </me>
         </p>
             <figure>
@@ -161,25 +161,26 @@ the set of all vectors that transform into <m>\vec 0</m>?
         <p>
 Let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear transformation given by the
 standard matrix
-<me>T\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right]\right) = \left[\begin{array}{c} 3x+4y-z \\ x+2y+z \end{array}\right]</me>
+<me>
+  A=\left[\begin{array}{ccc} 3 &amp; 4 &amp; -1 \\ 1 &amp; 2 &amp; 1 \end{array}\right].
+</me>
+
         </p>
     </introduction>
-<task>
-    <p>
-Set
-<m>
-  T\left(\left[\begin{array}{c}x\\y\\z\end{array}\right]\right)
-    =
-  \left[\begin{array}{c}0\\0\end{array}\right]
-</m> to find a linear system of equations whose solution set is the kernel.
-    </p>
-</task>
-<task>
-    <p>
-Use <m>\RREF(A)</m> to solve this homogeneous system of equations and find a basis
-for the kernel of <m>T</m>.
-    </p>
-</task>
+    <task>
+      <statement>
+        <p>
+          If <m>\vec{x}=\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]=x_1\vec{e}_1+x_2\vec{e}_2+x_3\vec{e}_3\in\IR^3</m>, write down a vector equation that is equivalent to the equation <m>T(\vec{x})=\vec{0}</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Solve this vector equation and, in doing so, find a basis for <m>\ker T</m>.
+        </p>
+      </statement>
+    </task>
 </activity>
 <sage language="octave">
 </sage>
@@ -370,12 +371,26 @@ the set of all vectors that are the result of using <m>T</m> to transform
       </p>
   </introduction>
   <task>
+    <statement>
+      <p>
+        Write down a vector equation equivalent to the equation <m>T(\vec{x})=\left[\begin{array}{c} 12 \\ 3 \\ 3 \end{array}\right]</m>.
+      </p>
+    </statement>
+  </task>
+  <task>
       <statement>
           <p>
               Determine if <m>\left[\begin{array}{c} 12 \\ 3 \\ 3 \end{array}\right]</m> belongs to 
               <m>\Im T</m>. 
           </p>
       </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Write down a vector equation equivalent to the equation <m>T(\vec{x})=\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]</m>.
+      </p>
+    </statement>
   </task>
   <task>
       <statement>
@@ -415,7 +430,7 @@ An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{ar
   </task>
 </activity>
 
-<observation>
+<observation xml:id="AT3-columnspace-observation">
         <p>
 Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by the
 standard matrix
@@ -464,16 +479,14 @@ Let  <m>T:\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A
 <ul>
 <li>
     <p>
-    The kernel of <m>T</m> is the solution set of the homogeneous system given
-by the augmented matrix <m>\left[\begin{array}{c|c}A&amp;\vec 0\end{array}\right]</m>.
-Use the coefficients of its free variables to get a basis for the kernel (as in <xref ref="fact-solution-space-basis"/>).
+      The kernel of <m>T</m> is the solution set of the equation <m>T(\vec{x})=\vec{0}</m> or, equivalently, the linear system given by the augmented matrix <m>\left[\begin{array}{c|c}A&amp;\vec 0\end{array}\right]</m>.
+      Use the coefficients of its free variables to get a basis for the kernel (as in <xref ref="fact-solution-space-basis"/>).
     </p>
 </li>
 <li>
     <p>
-    The image of <m>T</m> is the span of the columns of <m>A</m>. Remove
-the vectors creating non-pivot columns in <m>\RREF A</m> to get a basis
-for the image (as in <xref ref="observation-subspace-basis"/>).
+    The image of <m>T</m> is the set of vectors <m>\vec{b}\in \IR^m</m> for which <m>T(\vec{x})=\vec{b}</m> is consistent or, equivalently (by <xref ref="AT3-columnspace-observation"/>), the column space of <m>A</m>. 
+    Remove the vectors creating non-pivot columns in <m>\RREF A</m> to get a basis for the image (as in <xref ref="observation-subspace-basis"/>).
     </p>
 </li>
 </ul>
