@@ -89,8 +89,7 @@ jobs:
         steps:
             - uses: conda-incubator/setup-miniconda@v3
               with:
-                auto-activate-base: true
-                activate-environment: ""
+                activate-environment: sage
 
             - name: Checkout source
               uses: actions/checkout@v4
@@ -99,9 +98,6 @@ jobs:
 
             - name: install deps
               run: pip install -r requirements.txt
-
-            - name: activate sage
-              run:  conda activate sage
 
             - name: check sage version
               run: sage --version
