@@ -9,9 +9,9 @@ on:
     # Runs on demand
     workflow_dispatch:
 
-defaults:
-  run:
-    shell: bash -l {0} # use login shell
+# defaults:
+#   run:
+#     shell: bash -l {0} # use login shell
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
