@@ -20,8 +20,8 @@ class TBIL:
             angle_label = f"${latex(angle*180/pi)}^\\circ$"
             reference_angle_label = f"${latex(reference_angle*180/pi)}^\\circ$"
         else:
-            angle_label = f"${latex(angle)}$"
-            reference_angle_label = f"${latex(reference_angle)}$"
+            angle_label = TBIL.typeset_angle(angle)
+            reference_angle_label = TBIL.typeset_angle(reference_angle)
 
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
         mid_reference_angle=reference_angle/2
@@ -35,8 +35,8 @@ class TBIL:
         p+=arrow((0,0),end_coordinate) #TODO hide arrowheads when show_unit_circle
         p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
         if show_angle_value:
-            if type(show_angle_value) is string:
-                angle_value_label = show_angle_value:
+            if type(show_angle_value) is str:
+                angle_value_label = show_angle_value
             else:
                 angle_value_label = angle_label
             p+=text(angle_value_label,(0.2*c for c in mid_coordinate), fontsize="16")
@@ -222,14 +222,13 @@ class TBIL:
 
     @staticmethod
     def typeset_angle(theta):
-        if type(theta) is not sage.symbolic.expression.Expression:
-            return f"${latex(theta)}$"
-        elif not theta.is_rational_expression(): 
-            return f"${latex(theta)}$"
-        elif denominator(theta)==1:
-            return f"${latex(theta)}$"
-        else:
-            return f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+        angle_string=f"${latex(theta)}$"
+        if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
+            if numerator(theta)<0:
+                angle_string = f"$-\\dfrac{{{latex(-1*numerator(theta))}}}{{{denominator(theta)}}}$"
+            else:
+                angle_string = f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+        return angle_string
 
     @staticmethod
     def trig_plot(f, *args, **kwds):
