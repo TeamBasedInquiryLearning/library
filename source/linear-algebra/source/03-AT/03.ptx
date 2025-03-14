@@ -232,7 +232,8 @@ belongs to <m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\
         </p>
       <answer>
         <p>
-          B.
+          <m>\ker T=\left\{\left[\begin{array}{c}3a\\-2a\\a\end{array}\right]\middle|
+          a\in\IR\right\}</m>
         </p>
       </answer>
       </statement>
@@ -241,19 +242,28 @@ belongs to <m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\
 <sage language="octave">
 </sage>
 
-<fact xml:id="fact-kernel-homogeneous-solution">
+<observation xml:id="observation-kernel-homogeneous-solution">
   <statement>
     <p>
       The kernel of a transformation <m>T</m>
-      is exactly the solution subspace of
+      is exactly the solution space of
       the homogeneous equation <m>T(\vec{x})=\vec{0}</m>.
+      If its standard matrix is <m>A</m>, then we may write
+      <m>A\vec x=\vec 0</m> and use <m>\RREF[A\,|\,\vec 0]</m> to
+      find this kernel.
     </p>
     <p>
-      In particular, the kernel has a basis which may be found as in
-      <xref ref="fact-solution-space-basis"/>.
+      In particular, the kernel is a subspace of the transformation's
+      domain, and has a basis which may be found as in
+      <xref ref="fact-solution-space-basis"/>:
+      <me>
+        \ker T=\left\{\left[\begin{array}{c}3a\\-2a\\a\end{array}\right]\middle|
+          a\in\IR\right\} \hspace{2em}
+        \text{Basis for }\ker T=\left\{\left[\begin{array}{c}3\\-2\\1\end{array}\right]\right\}.
+      </me>
     </p>
   </statement>
-</fact>
+</observation>
 
 <activity estimated-time='10'>
     <statement>
@@ -316,9 +326,9 @@ Which of these subspaces of <m>\IR^3</m> describes the set of all vectors that a
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation.
 The <term>image</term><idx>image</idx> of <m>T</m>
-is an important subspace of <m>W</m> defined by
+is an important subset of <m>W</m> defined by
 <me>
-\Im T = \left\{ \vec{w} \in W\ \big|\ \text{there is some }\vec v\in V \text{ with } T(\vec{v})=\vec{w}\right\}
+\Im T = \left\{ T(\vec v) \in W\ \big| \vec v\in V \right\}
 </me>
         </p>
         <p>
@@ -394,7 +404,7 @@ Let <m>T: \IR^3 \rightarrow \IR^2</m> be given by
     \text{with standard matrix }
   \left[\begin{array}{ccc} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \end{array}\right]
 </me>
-Which of these subspaces of <m>\IR^2</m> describes <m>\Im T</m>,
+Which of these subsets of <m>\IR^2</m> describes <m>\Im T = \left\{ T(\vec v) \in \IR^2\ \big| \vec v\in \IR^3 \right\}</m>,
 the set of all vectors that are the result of using <m>T</m> to transform
 <m>\IR^3</m> vectors?
         </p>
@@ -437,13 +447,27 @@ the set of all vectors that are the result of using <m>T</m> to transform
         </p>
         <p>
           Consider the question: Which vectors <m>\vec{w}</m> in <m>\IR^3</m> belong to 
-  <m>\Im T</m>? 
+  <m>\Im T=\left\{ T(\vec v) \in \IR^3\ \big| \vec v\in \IR^4 \right\}</m>? 
       </p>
   </introduction>
   <task>
     <statement>
       <p>
-        Write down a vector equation equivalent to the equation <m>T(\vec{x})=\left[\begin{array}{c} 12 \\ 3 \\ 3 \end{array}\right]</m>.
+        Recall that
+        <me>
+          T\left(\left[\begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] \right) =
+          x_1T(\vec e_1)+x_2T(\vec e_2)+x_3T(\vec e_3)+x_4T(\vec e_4)
+        </me>.
+        Complete the following vector equation which must be consistent
+        in order for <m>\left[\begin{array}{c} 12 \\ 3 \\ 3 \end{array}\right]</m>
+        to belong to <m>\Im T</m>:
+        <me>
+          x_1 \left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]+
+          x_2 \left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]+
+          x_3\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]+
+          x_4\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]=
+          \left[\begin{array}{c} 12 \\ 3 \\ 3 \end{array}\right]
+        </me>
       </p>
     </statement>
   </task>
@@ -458,7 +482,9 @@ the set of all vectors that are the result of using <m>T</m> to transform
   <task>
     <statement>
       <p>
-        Write down a vector equation equivalent to the equation <m>T(\vec{x})=\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]</m>.
+        Write down the vector equation which must be consistent in
+        order for <m>\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]</m>
+        to belong to <m>\Im T</m>.
       </p>
     </statement>
   </task>
@@ -475,12 +501,13 @@ the set of all vectors that are the result of using <m>T</m> to transform
           <p>
 An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</m> belongs to
 <m>\Im T</m> provided the equation
-<me>x_1 T(\vec{e}_1)+x_2 T(\vec{e}_2)+x_3T(\vec{e}_3)+x_4T(\vec{e}_4)=\vec{w}</me> has...
+<me>x_1 T(\vec{e}_1)+x_2 T(\vec{e}_2)+x_3T(\vec{e}_3)+x_4T(\vec{e}_4)=
+\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</me> has...
   <ol marker="A.">
       <li>no solutions.</li>
+      <li>at most one solution.</li>
       <li>exactly one solution.</li>
       <li>at least one solution.</li>
-      <li>infinitely-many solutions.</li>
   </ol>
           </p>
       </statement>
@@ -488,12 +515,25 @@ An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{ar
   <task>
       <statement>
           <p>
-            Based on this, how do <m>\Im T</m>  and  <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> relate to each other?
+          Based on this, what do we know?
           <ol marker="A.">
-              <li>The set <m>\Im T</m> contains <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> but is not equal to it.</li>
-              <li>The set <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> contains <m>\Im T</m> but is not equal to it.</li>
+              <li>
+                The set <m>\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> spans
+                <m>\Im T</m> whenever
+                <m>\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m>
+                is linearly independent.
+              </li>
+              <li>
+                The set <m>\Im T</m> equals the codomain whenever
+                <m>\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m>
+                is linearly independent.
+              </li>
+              <li>
+                The set <m>\Im T</m> is simply <m>\{\vec 0\}</m> whenever
+                <m>\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m>
+                is linearly dependent.
+              </li>
               <li>The set <m>\Im T</m> and <m>\vspan\left\{T(\vec{e}_1),T(\vec{e}_2),T(\vec{e}_3),T(\vec{e}_4)\right\}</m> are equal to each other.</li>
-              <li>There is no relation between these two sets.</li>
           </ol>
       </p>
       </statement>
@@ -502,32 +542,41 @@ An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{ar
 
 <observation xml:id="AT3-columnspace-observation">
         <p>
-Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by the
+Let <m>T: \IR^n \rightarrow \IR^m</m> be the linear transformation given by the
 standard matrix
 <me>
   A
     =
-  \left[\begin{array}{cccc} 3 &amp; 4 &amp; 7 &amp; 1\\ -1 &amp; 1 &amp; 0 &amp; 2 \\ 2 &amp; 1 &amp; 3 &amp; -1 \end{array}\right]
+  \left[\begin{array}{ccc} T(\vec e_1) &amp; \cdots &amp; T(\vec e_n) \end{array}\right]
 .</me>
         </p>
         <p>
-Since the set
-<m>
-  \setList{
-    \left[\begin{array}{c}3\\-1\\2\end{array}\right],
-    \left[\begin{array}{c}4\\1\\1\end{array}\right],
-    \left[\begin{array}{c}7\\0\\3\end{array}\right],
-    \left[\begin{array}{c}1\\2\\-1\end{array}\right]
-  }
-</m>
-spans <m>\Im T</m>, we can obtain a basis for <m>\Im T</m> by finding
-<m>
-  \RREF A
-    =
-  \left[\begin{array}{cccc} 1 &amp; 0 &amp; 1 &amp; -1\\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
-</m>
-and only using the vectors corresponding to pivot columns:
+Then we have
 <me>
+  \Im T=\vspan\setList{
+    T(\vec e_1),
+    \cdots,
+    T(\vec e_n)
+  }
+</me>
+and in particular, see that <m>\Im T</m> is a subspace of the codomain, and thus
+has a kernel which may be found as in <xref ref="observation-subspace-basis"/>:
+given
+<me>
+  \RREF \left[\begin{array}{cccc} 3 &amp; 4 &amp; 7 &amp; 1\\ -1 &amp; 1 &amp; 0 &amp; 2 \\ 2 &amp; 1 &amp; 3 &amp; -1 \end{array}\right]
+    =
+  \left[\begin{array}{cccc} \markedPivot{1} &amp; 0 &amp; 1 &amp; -1\\ 0 &amp; \markedPivot{1} &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
+</me>
+we see that we have
+<me>
+\Im T=\vspan\left\{
+  \left[\begin{array}{c} 3 \\ -1 \\ 2  \end{array}\right],
+  \left[\begin{array}{c}  4 \\  1  \\  1  \end{array}\right],
+  \left[\begin{array}{c}  7\\  0  \\  3  \end{array}\right],
+  \left[\begin{array}{c} 1\\  2 \\ -1 \end{array}\right],
+  \right\}
+  </me> and <me>
+\text{Basis for }\Im T=
   \setList{
     \left[\begin{array}{c}3\\-1\\2\end{array}\right],
     \left[\begin{array}{c}4\\1\\1\end{array}\right]
@@ -535,9 +584,7 @@ and only using the vectors corresponding to pivot columns:
 </me>
         </p>
         <p>
-          In general, the <term>column space</term><idx>column space</idx> of a matrix <m>M</m> refers to the subspace obtained by considering the span of its column vectors. 
-          Using this terminology, if the transformation <m>T</m> is represented by the matrix <m>A</m>,
- then the image of <m>T</m> is the <term>column space</term><idx>column space</idx> of <m>A</m>.
+This justifies why the image of a transformation is also called the <term>column space</term><idx>column space</idx> of its standard matrix.
         </p>
 
 </observation>
@@ -545,7 +592,8 @@ and only using the vectors corresponding to pivot columns:
 <fact>
     <statement>
     <p>
-Let  <m>T:\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A</m>.
+To summarize,
+let <m>T:\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A</m>.
 <ul>
 <li>
     <p>
@@ -555,7 +603,8 @@ Let  <m>T:\IR^n\to\IR^m</m> be a linear transformation with standard matrix <m>A
 </li>
 <li>
     <p>
-    The image of <m>T</m> is the set of vectors <m>\vec{b}\in \IR^m</m> for which <m>T(\vec{x})=\vec{b}</m> is consistent or, equivalently (by <xref ref="AT3-columnspace-observation"/>), the column space of <m>A</m>. 
+    The image of <m>T</m> is the span of the columns of its standard matrix <m>A</m>,
+    a.k.a. its column space. 
     Remove the vectors creating non-pivot columns in <m>\RREF A</m> to get a basis for the image (as in <xref ref="observation-subspace-basis"/>).
     </p>
 </li>
