@@ -50,8 +50,11 @@ Let <m>T: \IR^2 \rightarrow \IR^3</m> be given by
     \text{with standard matrix }
   \left[\begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 1 \\ 0 &amp; 0 \end{array}\right]
 </me>
-Which of these subspaces of <m>\IR^2</m> describes
-the set of all vectors that transform into <m>\vec 0</m>?
+Which of these sets contain all vectors <m>\left[\begin{array}{c}x \\ y \end{array}\right]</m>
+that transform into <m>T\left(\left[\begin{array}{c}x \\ y \end{array}\right] \right)
+    =
+  \left[\begin{array}{c} x \\ y \\ 0 \end{array}\right]=
+  \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]</m>?
         </p>
 <ol marker="A." cols="2">
   <li>
@@ -128,8 +131,13 @@ Let <m>T: \IR^3 \rightarrow \IR^2</m> be given by
     \text{with standard matrix }
   \left[\begin{array}{ccc} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \end{array}\right]
 </me>
-Which of these subspaces of <m>\IR^3</m> describes <m>\ker T</m>,
-the set of all vectors that transform into <m>\vec 0</m>?
+Which of these subsets of <m>\IR^3</m> is equal to
+<m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\right\}</m>,
+the set of all vectors <m>\left[\begin{array}{c}x \\ y \\ z\end{array}\right]</m>
+that transform into <m>T\left(\left[\begin{array}{c}x \\ y \\ z \end{array}\right] \right)
+    =
+  \left[\begin{array}{c} x \\ y\end{array}\right]=
+  \left[\begin{array}{c} 0 \\ 0 \end{array}\right]</m>?
         </p>
 <ol marker='A.' cols="2">
 <li>
@@ -162,7 +170,8 @@ the set of all vectors that transform into <m>\vec 0</m>?
 Let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear transformation given by the
 standard matrix
 <me>
-  A=\left[\begin{array}{ccc} 3 &amp; 4 &amp; -1 \\ 1 &amp; 2 &amp; 1 \end{array}\right].
+  A=\left[\begin{array}{ccc} 3 &amp; 4 &amp; -1 \\ 1 &amp; 2 &amp; 1 \end{array}\right]
+  =\left[\begin{array}{ccc} T(\vec e_1) &amp; T(\vec e_2) &amp; T(\vec e_3)\end{array}\right].
 </me>
 
         </p>
@@ -170,15 +179,59 @@ standard matrix
     <task>
       <statement>
         <p>
-          If <m>\vec{x}=\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]=x_1\vec{e}_1+x_2\vec{e}_2+x_3\vec{e}_3\in\IR^3</m>, write down a vector equation that is equivalent to the equation <m>T(\vec{x})=\vec{0}</m>.
+Which of these is the most appropriate method to determine whether a <m>\mathbb R^3</m> vector
+<m>\vec{x}=\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]=x_1\vec{e}_1+x_2\vec{e}_2+x_3\vec{e}_3</m>,
+belongs to <m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\right\}</m>?
+          <ol marker="A.">
+            <li>
+              <p>
+                Determine if it belongs to the solution set of the vector equation
+                <me>T(\vec x)=T\left(\left[\begin{array}{c} x_1 \\ x_2\\ x_3\end{array}\right]\right)=
+                x_1T(\vec e_1)+x_2T(\vec e_2)+x_3T(\vec e_3)=
+                \left[\begin{array}{c} 3 \\ 1\end{array}\right]</me>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine if it belongs to the solution set of the vector equation
+                <me>T(\vec x)=T\left(\left[\begin{array}{c} x_1 \\ x_2\\ x_3\end{array}\right]\right)=
+                x_1T(\vec e_1)+x_2T(\vec e_2)+x_3T(\vec e_3)=
+                \left[\begin{array}{c} 0 \\ 0\end{array}\right]</me>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine if it belongs to the span of the vectors
+                <m>\left\{T(\vec e_1), T(\vec e_2), T(\vec e_3)\right\}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine if the set of vectors
+                <m>\left\{T(\vec e_1), T(\vec e_2), T(\vec e_3), \vec x\right\}</m>
+                is linearly independent.
+              </p>
+            </li>
+          </ol>
         </p>
       </statement>
+      <answer>
+        <p>
+          B. This is exactly the same as finding the solution space for the
+          homoegeneous vector equation <m>T(\vec x)=\vec 0</m>.
+        </p>
+      </answer>
     </task>
     <task>
       <statement>
         <p>
-          Solve this vector equation and, in doing so, find a basis for <m>\ker T</m>.
+          Use this method to find the kernel of <m>T</m>.
         </p>
+      <answer>
+        <p>
+          B.
+        </p>
+      </answer>
       </statement>
     </task>
 </activity>
