@@ -88,7 +88,7 @@ that transform into <m>T\left(\left[\begin{array}{c}x \\ y \end{array}\right] \r
 Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{0}</m> be the zero vector of <m>W</m>.  
 The <term>kernel</term><idx>kernel</idx> of <m>T</m>
 (also known as the <term>null space</term><idx>null space</idx> of <m>T</m>)
-is an important subspace of <m>V</m> defined by
+is an important subset of <m>V</m> defined by
 <me>
 \ker T = \left\{ \vec{x} \in V\ \big|\ T(\vec{x})=\vec{0}\right\}
 </me>
@@ -185,15 +185,23 @@ belongs to <m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\
           <ol marker="A.">
             <li>
               <p>
-                Determine if it belongs to the solution set of the vector equation
-                <me>T(\vec x)=
-                x_1T(\vec e_1)+x_2T(\vec e_2)+x_3T(\vec e_3)=
-                \left[\begin{array}{c} 3+4-1 \\ 1+2+1\end{array}\right]</me>.
+                Determine if the set of vectors
+                <m>\left\{T(\vec e_1), T(\vec e_2), T(\vec e_3), T(\vec x)\right\}</m>
+                spans <m>\IR^3</m>.
               </p>
             </li>
             <li>
               <p>
-                Determine if it belongs to the solution set of the vector equation
+                Determine if the set of vectors
+                <m>\left\{T(\vec e_1), T(\vec e_2), T(\vec e_3), T(\vec x)\right\}</m>
+                is linearly dependent.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine if 
+                <m>\vec x=\left[\begin{array}{c} x_1 \\ x_2\\ x_3\end{array}\right]</m>
+                belongs to the solution set of the vector equation
                 <me>T(\vec x)=T\left(\left[\begin{array}{c} x_1 \\ x_2\\ x_3\end{array}\right]\right)=
                 x_1T(\vec e_1)+x_2T(\vec e_2)+x_3T(\vec e_3)=
                 \left[\begin{array}{c} 0 \\ 0\end{array}\right]</me>.
@@ -201,15 +209,10 @@ belongs to <m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\
             </li>
             <li>
               <p>
-                Determine if it belongs to the span of the vectors
-                <m>\left\{T(\vec e_1), T(\vec e_2), T(\vec e_3)\right\}</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Determine if the set of vectors
-                <m>\left\{T(\vec e_1), T(\vec e_2), T(\vec e_3), \vec x\right\}</m>
-                is linearly independent.
+                Determine if the equation
+                <me>T(\vec 0)=T\left(\left[\begin{array}{c} 0 \\ 0\\ 0\end{array}\right]\right)=
+                0T(\vec e_1)+0T(\vec e_2)+0T(\vec e_3)=
+                T(\vec x)</me> is consistent.
               </p>
             </li>
           </ol>
@@ -237,6 +240,20 @@ belongs to <m>\ker T=\left\{ \vec{x} \in \mathbb R^3\ \big|\ T(\vec{x})=\vec{0}\
 </activity>
 <sage language="octave">
 </sage>
+
+<fact xml:id="fact-kernel-homogeneous-solution">
+  <statement>
+    <p>
+      The kernel of a transformation <m>T</m>
+      is exactly the solution subspace of
+      the homogeneous equation <m>T(\vec{x})=\vec{0}</m>.
+    </p>
+    <p>
+      In particular, the kernel has a basis which may be found as in
+      <xref ref="fact-solution-space-basis"/>.
+    </p>
+  </statement>
+</fact>
 
 <activity estimated-time='10'>
     <statement>
