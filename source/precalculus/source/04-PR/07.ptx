@@ -1,0 +1,1095 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PR7" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Properties and Graphs of Rational Functions (PR7) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/07.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+
+    <definition xml:id="def-rational-func">
+      <statement>
+        <p> A function <m>r</m> is <term>rational</term><idx>rational function</idx> provided that it is possible to write <m>r</m> as the ratio of two polynomials, <m>p</m> and <m>q</m>. That is, <m>r</m> is rational provided that for some polynomial functions <m>p</m> and <m>q</m>, we have <me>
+          r(x) = \dfrac{p(x)}{q(x)}\text{.}</me>
+        
+        </p>
+      </statement>
+    </definition>
+
+<observation>
+  <statement>
+    <p>
+      Rational functions occur in many applications, so our goal in this lesson is to learn about their properties and be able to graph them. In particular we want to investigate the domain, end behavior, and zeros of rational functions.
+    </p>
+  </statement>
+</observation>
+
+    <activity xml:id="activity-rf-domain-and-zeros">
+      <introduction>
+        <p>Consider the rational function <me>
+          r(x) = \dfrac{x^2-3x+2}{x^2-4x+3}\text{.}</me> </p>
+        
+      </introduction>
+      <task>
+        <statement>
+        <p>Find <m>r(1) </m>, <m>r(2) </m>, <m>r(3)</m>, and <m>r(4)</m>.  </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r(1)</m> and <m>r(3)</m> do not exist.
+          <m>r(2)=0</m>
+          <m>r(4)=2</m>
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+      <p> Label each of these four values as giving us information about the DOMAIN of <m>r(x)</m>, information about the ZEROES of <m>r(x)</m>, or NEITHER.    
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>r(1)</m> and <m>r(3)</m> give information about the domain.  <m>r(2)</m> gives information about the zeroes. <m>r(4)</m> does not give information about either.
+      </p>
+    </answer>
+    </task>
+      
+    </activity>
+
+
+
+    <observation xml:id="obs-rf-domain">
+      <statement>
+        <p>
+          Let <m>p</m> and <m>q</m> be polynomial functions so that <m>r(x) = \dfrac{p(x)}{q(x)}</m> is a rational function.  The domain<idx><h>rational function</h><h>domain</h></idx> of <m>r</m> is the set of all real numbers except those for which <m>q(x) = 0</m>.
+        </p>
+       
+      </statement>
+    <aside>
+      <p>Recall that the <term>domain</term> of a function was defined in <xref ref="def-relation"/>.</p>
+    </aside>
+    </observation>
+   
+    <activity xml:id="activity-rf-domain">
+      <introduction>
+        <p><p>  Let's investigate the domain of <m>r(x)</m> more closely. We will be using the same function from the previous activity:</p> <me>
+          r(x) = \dfrac{x^2-3x+2}{x^2-4x+3}\text{.}</me> </p>
+        
+      </introduction>
+      <task>
+        <statement>
+        <p>Rewrite <m>r(x)</m> by factoring the numerator and denominator, but do not try to simplify any further. What do you notice about the relationship between the values that are not in the domain and how the function is now written? </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r(x)=\dfrac{(x-2)(x-1)}{(x-3)(x-1)}</m> The values not in the domain are zeros of the denominator.
+        </p>
+      </answer>
+      </task>
+      
+      <task>
+        <statement>
+        <p> The function was not defined for <m>x=3</m>. Make a table for values of <m>r(x)</m> near <m>x=3</m>. 
+          <table>
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell><m>x</m></cell> 
+                <cell><m>r(x)</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>2</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>2.9</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>2.99</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>2.999</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>3</m></cell>
+                <cell>undefined</cell>
+              </row>
+              <row halign="center">
+                <cell><m>3.001</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>3.01</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>3.1</m></cell>
+              </row>
+            </tabular>
+          </table> </p>
+        </statement>
+        <answer>
+          <p>
+            
+              <tabular>
+                <row header="yes" bottom="minor" >
+                  <cell><m>x</m></cell> 
+                  <cell><m>r(x)</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2.9</m></cell>
+                  <cell><m>-9</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2.99</m></cell>
+                  <cell><m>-99</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>2.999</m></cell>
+                  <cell><m>-999</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>3</m></cell>
+                  <cell>undefined</cell>
+                </row>
+                <row halign="center">
+                  <cell><m>3.001</m></cell>
+                  <cell><m>1001</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>3.01</m></cell>
+                  <cell><m>101</m></cell>
+                </row>
+                <row halign="center">
+                  <cell><m>3.1</m></cell>
+                  <cell><m>11</m></cell>
+                </row>
+              </tabular>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Which of the following describe the behavior of the graph near <m>x=3</m>?
+        <ol marker= "A.">  
+        <li> As <m> x\to 3</m>, <m>r(x)</m> approaches a finite number</li>
+        <li> As <m> x\to 3</m> from the left, <m>r(x)\to\infty</m></li>
+        <li> As <m>x \to 3</m> from the left, <m>r(x)\to -\infty</m></li>
+        <li> As <m>x \to 3</m> from the right, <m>r(x)\to \infty</m></li>
+        <li> As <m>x \to 3</m> from the right, <m>r(x)\to -\infty</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C and D
+      </p>
+    </answer>
+      </task>
+      <task>
+        <statement>
+        <p> The function was also not defined for <m>x=1</m>. Make a table for values of <m>r(x)</m> near <m>x=1</m>. 
+          <table>
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell><m>x</m></cell> 
+                <cell><m>r(x)</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0.9</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0.99</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0.999</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1</m></cell>
+                <cell>undefined</cell>
+              </row>
+              <row halign="center">
+                <cell><m>1.001</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1.01</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1.1</m></cell>
+              </row>
+            </tabular>
+          </table> </p>
+      </statement>
+      <answer>
+        <p>
+          
+            <tabular>
+              <row header="yes" bottom="minor" >
+                <cell><m>x</m></cell> 
+                <cell><m>r(x)</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0</m></cell>
+                <cell><m>0.667</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0.9</m></cell>
+                <cell><m>0.524</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0.99</m></cell>
+                <cell><m>0.502</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>0.999</m></cell>
+                <cell><m>0.500</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1</m></cell>
+                <cell>undefined</cell>
+              </row>
+              <row halign="center">
+                <cell><m>1.001</m></cell>
+                <cell><m>0.499</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1.01</m></cell>
+                <cell><m>0.497</m></cell>
+              </row>
+              <row halign="center">
+                <cell><m>1.1</m></cell>
+                <cell><m>0.474</m></cell>
+              </row>
+            </tabular>
+          
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Which of the following describe the behavior of the graph near <m>x=1</m>?
+        <ol marker= "A.">  
+        <li> As <m> x\to 1</m>, <m>r(x)</m> approaches a finite number</li>
+        <li> As <m> x\to 1</m> from the left, <m>r(x)\to\infty</m></li>
+        <li> As <m>x \to 1</m> from the left, <m>r(x)\to -\infty</m></li>
+        <li> As <m>x \to 1</m> from the right, <m>r(x)\to \infty</m></li>
+        <li> As <m>x \to 1</m> from the right, <m>r(x)\to -\infty</m></li></ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+      </task>
+      <task>
+        <statement>
+        <p>The function is behaving differently near <m>x=1</m> than it is near <m>x=3</m>. Can you see anything in the factored form of <m>r(x)</m> that may help you account for the difference? </p>
+      </statement>
+      <answer>
+        <p>
+          The <m>x-1</m> factor occurs in the numerator and denominator.
+        </p>
+      </answer>
+      </task>
+    </activity>
+<!-- 
+    <observation xml:id="obs-rf-domain">
+      <statement>
+        <p>
+          When we are finding the domain of a rational function<idx><h>rational function</h><h>domain</h></idx>, <m>r(x) = \dfrac{p(x)}{q(x)}</m>, we look for all values that would make the denominator equal zero. Then the domain is the set of all real numbers except those for which <m>q(x) = 0</m>
+        </p>
+       
+      </statement>
+    </observation>
+    <definition xml:id="def-rf-va">
+      <statement>
+        <p>
+          DEFINITION OF VA WILL GO HERE
+          <term>vertical asymptote</term><idx><h>rational function</h><h>vertical asymptote</h></idx>
+          <term>vertical asymptote</term><idx><h>rational function</h><h>vertical asymptote</h></idx>
+        </p>
+       
+      </statement>
+    </definition> 
+     <observation>
+      <p>
+      
+      In the situation where a rational function is undefined at a point but does not have a vertical asymptote there, we'll say that the graph of the function has a <term>hole</term><idx><h>rational function</h><h>hole</h></idx>.
+      In the situation where a rational function is undefined at a point but does not have a vertical asymptote there, we'll say that the graph of the function has a <term>hole</term><idx><h>rational function</h><h>hole</h></idx>.
+    </p>
+    </observation>  -->
+
+    <!--<definition xml:id="def-rf-hole">
+      <statement>
+        <p>
+         DEFINITION OF HOLE WILL GO HERE
+         <term>hole</term><idx><h>rational function</h><h>hole</h></idx>
+         <term>hole</term><idx><h>rational function</h><h>hole</h></idx>
+        </p>
+       
+      </statement>
+    </definition> -->
+
+      
+  
+      <remark xml:id="rf-zeros-asymptotes-holes">
+        <title>Features of a rational function</title>
+       <p>
+         Let <m>r(x) = \dfrac{p(x)}{q(x)}</m> be a rational function.
+       </p>
+  
+       <p>
+         <ul>
+           <li>
+             <p>
+               If <m>p(a) = 0</m> and <m>q(a) \ne 0</m>, then <m>r(a) = 0</m>, so <m>r</m> has a <term>zero</term><idx><h>rational function</h><h><term>zero</term><idx><h>rational function</h><h>zero</h></idx></h></idx> at <m>x = a</m>.
+             </p>
+           </li>
+           <li>
+             <p>
+               If <m>q(a) = 0</m> and <m>p(a) \ne 0</m>, then <m>r(a)</m> is undefined and <m>r</m> has a <term>vertical asymptote</term><idx><h>rational function</h><h><term>vertical asymptote</term><idx><h>rational function</h><h>vertical asymptote</h></idx></h></idx> at <m>x = a</m>.
+             </p>
+           </li>
+           <li>
+             <p>
+               If <m>p(a) = 0</m> and <m>q(a) = 0</m> and we can show that there is a finite number <m>L</m> such that
+               <m>
+                 r(x) \to L
+               </m>,
+               then <m>r(a)</m> is not defined and <m>r</m> has a <term>hole</term><idx><h>rational function</h><h><term>hole</term><idx><h>rational function</h><h>hole</h></idx></h></idx> at the point <m>(a,L)</m>.
+             </p>
+           </li>
+         </ul>
+       </p>
+      </remark>
+    
+      <observation xml:id="obs-rf-end_behavior">
+      <statement>
+        <p>Another property of rational functions we want to explore is the end behavior. This means we want to explore what happens to a given rational function <m>r(x)</m> when <m>x</m> goes toward positive infinity or negative infinity.
+          
+        </p>
+       
+      </statement>
+      </observation>
+
+      <activity xml:id="activity-rf-ha">
+        <introduction>
+          <p> 
+          Consider the rational function <m>\displaystyle r(x)=\dfrac{1}{x^3}</m>.
+        </p>
+        </introduction> 
+        <task>
+          <statement>
+          <p>Plug in some very large positive numbers for <m>x</m> to see what <m>r(x)</m> is tending toward. Which of the following best describes the behavior of the graph as <m>x</m> approaches positive infinity? 
+            <ol marker= "A.">  
+              <li> As <m> x\to \infty</m>, <m>r(x)\to \infty</m>.</li>
+              <li> As <m> x\to \infty</m>, <m>r(x)\to -\infty</m>.</li>
+              <li> As <m> x\to \infty</m>, <m>r(x)\to 0</m>.</li>
+              <li> As <m> x\to \infty</m>, <m>r(x)\to 1</m>.</li> 
+            </ol> 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+        </task>
+
+
+
+        <task>
+          <statement>
+          <p>Now let's look at <m>r(x)</m> as <m>x</m> tends toward negative infinity. Plug in some very large negative numbers for <m>x</m> to see what <m>r(x)</m> is tending toward. Which of the following best describes the behavior of the graph as <m>x</m> approaches negative infinity? 
+            <ol marker= "A.">  
+              <li> As <m> x\to -\infty</m>, <m>r(x)\to \infty</m>.</li>
+              <li> As <m> x\to -\infty</m>, <m>r(x)\to -\infty</m>.</li>
+              <li> As <m> x\to -\infty</m>, <m>r(x)\to 0</m>.</li>
+              <li> As <m> x\to -\infty</m>, <m>r(x)\to 1</m>.</li> 
+            </ol> 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            C
+          </p>
+        </answer>
+        </task>
+      
+
+      </activity> 
+  
+      <observation xml:id="obs-rf-HA">
+        <statement>
+          <p>
+            We can generalize what we have just found to any function of the form <m>\dfrac{1}{x^n}</m>, where <m>n>0</m>. Since <m>x^n</m> increases without bound as <m>x \to \infty</m>, we find that <m>\dfrac{1}{x^n}</m> will tend to 0. In fact, the numerator can be any constant and the function will still tend to 0!
+          </p>
+           <p>
+            Similarly, as <m>x \to -\infty</m>, we find that <m>\dfrac{1}{x^n}</m> will tend to 0 too. 
+           </p>   
+          
+         
+        </statement>
+      </observation>
+
+      <activity xml:id="act-rf-ha2">
+        <introduction>
+          <p>
+            Consider the rational function <m>\displaystyle r(x) = \dfrac{3x^2 - 5x + 1}{7x^2 + 2x - 11}</m>.
+          </p>
+          <p>
+            Observe that the largest power of <m>x</m> that's present in <m>r(x)</m> is <m>x^2</m>.  In addition, because of the dominant terms of <m>3x^2</m> in the numerator and <m>7x^2</m> in the denominator, both the numerator and denominator of <m>r</m> increase without bound as <m>x</m> increases without bound.
+          </p>
+        </introduction>
+
+        <task>
+          <statement>
+          <p>
+              In order to understand the end behavior of <m>r</m>, we will start by writing the function in a different algebraic form.  
+          </p>
+          <p>
+            Multiply the numerator and denominator of <m>r</m> by <m>\dfrac{1}{x^2}</m>.  Then distribute and simplify as much as possible in both the numerator and denominator to write <m>r</m> in a different algebraic form. Which of the following is that new form? 
+
+            <ol marker= "A.">  
+              <li> <m>
+                \dfrac{3x^4 - 5x^3 +x^2}{7x^4+2x^3-11x^2}
+              </m>
+              </li>
+              <li> <m>
+                \dfrac{3 - \dfrac{5}{x} + \dfrac{1}{x^2}}{7 + \dfrac{2}{x} - \dfrac{11}{x^2}}
+              </m>
+              </li>
+              <li> <m>
+                \dfrac{\dfrac{3x^2}{x^2} - \dfrac{5x}{x^2} + \dfrac{1}{x^2}}{\dfrac{7x^2}{x^2} + \dfrac{2x}{x^2} - \dfrac{11}{x^2}}
+              </m>
+              </li>
+              <li>
+                <m>
+                  \dfrac{3x^2 - 5x +1}{7x^4+2x^3-11x^2}
+                </m>
+              </li>
+               
+            </ol> 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B
+          </p>
+        </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              Now determine the end behavior of each piece of the numerator and each piece of the denominator. 
+            </p>
+          </statement>
+              <hint>
+                <p>
+                  Use <xref ref="obs-rf-HA"></xref> to help!
+                </p>
+              </hint>
+              <answer>
+                <p>
+                  Numerator goes to <m>3</m> and denominator goes to <m>7</m>.
+                </p>
+              </answer>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+             Simplify your work from the previous step. Which of the following best describes the end behavior of <m>r(x)</m>?
+             <ol marker= "A.">  
+              <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>0</m>.
+              </li>
+              <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>\dfrac{3}{7}</m>.
+              </li>
+              <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>\infty</m>.
+              </li>
+              <li> As <m>x \to \pm \infty</m>, <m>r(x)</m> goes to <m>-\infty</m>.
+              </li> 
+               
+            </ol> 
+
+            </p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+      </activity>
+
+        <observation xml:id="obs-rf-HAdef">
+          <statement>
+            <p>
+             If the end behavior of a function tends toward a specific value <m>a</m>, then we say that the function has a <term>horizontal asymptote</term> at <m>y=a</m>.
+             </p>   
+            
+           
+          </statement>
+        </observation>  
+        
+    <activity xml:id="activity-rf-HA-fluency">
+      <introduction>
+        <p>
+         Find the horizontal asymptote (if one exists) of the following rational functions. Follow the same method we used in <xref ref="act-rf-ha2"/>. 
+        </p>
+      </introduction>
+
+      <task>       
+        <statement>
+          <p>
+           <m>f(x)=\dfrac{4x^3-3x^2+6}{9x^3+7x-5}</m>
+           <ol marker= "A.">  
+            <li> <m>y=0</m>
+            </li>
+            <li> <m>y=\dfrac{4}{9}</m>
+            </li>
+            <li> <m>y=-\dfrac{3}{7}</m>
+            </li>
+            <li> <m>y=-\dfrac{6}{5}</m>
+            </li>
+            <li> There is no horizontal asymptote.
+            </li>       
+          </ol>  
+          </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+      </task>
+      <task>       
+        <statement>
+        <p>
+         <m>g(x)=\dfrac{4x^3-3x^2+6}{9x^5+7x-5}</m> 
+        </p>
+        <ol marker= "A.">  
+          <li> <m>y=0</m>
+          </li>
+          <li> <m>y=\dfrac{4}{9}</m>
+          </li>
+          <li> <m>y=-\dfrac{3}{7}</m>
+          </li>
+          <li> <m>y=-\dfrac{6}{5}</m>
+          </li>
+          <li> There is no horizontal asymptote.
+          </li>       
+        </ol>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+    </task>
+      <task>       
+        <statement>
+        <p>
+         <m>h(x)=\dfrac{4x^5-3x^2+6}{9x^3+7x-5}</m> 
+         <ol marker= "A.">  
+          <li> <m>y=0</m>
+          </li>
+          <li> <m>y=\dfrac{4}{9}</m>
+          </li>
+          <li> <m>y=-\dfrac{3}{7}</m>
+          </li>
+          <li> <m>y=-\dfrac{6}{5}</m>
+          </li>
+          <li> There is no horizontal asymptote.
+          </li>       
+        </ol>
+        </p>
+    </statement>
+    <answer>
+      <p>
+        E
+      </p>
+    </answer>
+    </task>
+    
+    </activity> 
+    
+    <activity xml:id="activity-rf-HA-fluencypt2">
+      <introduction>
+        <p>
+         Some patterns have emerged from the previous problem. Fill in  the rest of the sentences below to describe how to find horizontal asymptotes of rational functions.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+           If the degree of the numerator is the same as the degree of the denominator, then... 
+          </p>
+      </statement>
+      <answer>
+        <p>
+          the horizontal asymptote is a non-zero number.
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <p>
+         If the degree of the numerator is less than the degree of the denominator, then... 
+        </p>
+      </statement>
+      <answer>
+        <p>
+          there is a horizontal asymptote at <m>0</m>.
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <p>
+         If the degree of the numerator is greater than the degree of the denominator, then... 
+        </p>
+      </statement>
+      <answer>
+        <p>
+          there is no horizontal asymptote.
+        </p>
+      </answer>
+      </task>
+    </activity>  
+
+    <activity xml:id="activity-rf-matching">
+      <introduction>
+        <p>Consider the following six graphs of rational functions:</p>
+        <sbsgroup>
+          <sidebyside width="30%">
+            <image>
+              <sageplot>
+                f(x) = 2*x/(x^2-2*x-8)
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph A', (0, 8), fontsize=18, color='black')
+                p
+              </sageplot>
+            </image>
+            <image>
+              <sageplot>
+                f(x) = (x^2+3)/(2*x^2-8)-1
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,-1),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph B', (0, 8), fontsize=18, color='black')
+                p
+              </sageplot>
+            </image>
+            <image>
+              <sageplot>
+                f(x) = 1-(x^2+3)/(2*x^2-8)
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,1),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph C', (0, 8), fontsize=18, color='black')
+                p
+              </sageplot>
+            </image>
+          </sidebyside>
+          <sidebyside width="30%">
+            <image>
+              <sageplot>
+                f(x) = 2*x/(x^2-2*x-8)-3
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,-3),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph D', (0, 8), fontsize=18, color='black')
+                p
+              </sageplot>
+            </image>
+            <image>
+              <sageplot>
+                f(x) = (x^2+3)/(2*x^2-8)
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph E', (0, 8), fontsize=18, color='black')
+                p 
+              </sageplot>
+            </image>
+            <image>
+              <sageplot>
+                f(x) = -2*x/(x^2-2*x-8)
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph F', (0, 8), fontsize=18, color='black')
+                p
+              </sageplot>
+            </image>
+          </sidebyside>
+        </sbsgroup>
+      </introduction>
+      <task>
+        <statement>
+        <p>Which of the graphs above represents the function <m>\displaystyle f(x)=\dfrac{2x}{x^2-2x-8}</m>?</p>
+      </statement>
+      <answer>
+        <p>
+          Graph A
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <p>Which of the graphs above represents the function <m>\displaystyle g(x)=\dfrac{x^2+3}{2x^2-8}</m>?</p>
+        </statement>
+        <answer>
+          <p>
+            Graph E
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+
+
+    <activity xml:id="activity-rf-graphs-with-holes">
+      <introduction>
+        <p>Consider the following six graphs of rational functions:</p>
+        <sbsgroup>
+          <sidebyside width="30%">
+            <image>
+              <sageplot>
+                f(x) = ((x+2)*(x+3))/((x+2)*(x-5)*(x+4))
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph A', (0, 8), fontsize=18, color='black')
+                p+=point((-2, -1/14), pointsize=50, markeredgecolor='blue',color='white',zorder=7)                
+                p
+              </sageplot>
+            </image>
+ 
+            <image>
+              <sageplot>
+                f(x) = ((x+2)*(x+3))/((x+2)*(x-5)*(x+4))
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph B', (0, 8), fontsize=18, color='black')
+                p+=point((-3, 0), pointsize=50, markeredgecolor='blue',color='white',zorder=7)                
+                p
+              </sageplot>
+            </image>
+ 
+            <image>
+              <sageplot>
+                f(x) = ((x+2))/((x+2)*(x-5)*(x+4))
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph C', (0, 8), fontsize=18, color='black')
+                p+=point((-2, 1/14), pointsize=50, markeredgecolor='blue',color='white',zorder=7)                
+                p
+              </sageplot>
+            </image>
+            </sidebyside>
+
+            <sidebyside width="30%">
+            <image>
+              <sageplot>
+                f(x) = ((x-5))/((x+2)*(x-5)*(x+4))
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph D', (0, 8), fontsize=18, color='black')
+                p+=point((5, 1/63), pointsize=50, markeredgecolor='blue',color='white',zorder=7)               
+                p
+              </sageplot>
+            </image>
+            <image>
+              <sageplot>
+                f(x) = ((x+2)*(x-5))/((x+2)*(x-5)*(x+4))
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph E', (0, 8), fontsize=18, color='black')
+                p+=point((-2, 1/2), pointsize=50, markeredgecolor='blue',color='white',zorder=7)  
+                p+=point((5, 1/9), pointsize=50, markeredgecolor='blue',color='white',zorder=7)               
+                p
+              </sageplot>
+            </image>
+            <image>
+              <sageplot>
+                f(x) = ((x+2)*(x+3))/((x+2)*(x-5)*(x+4))
+                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
+                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=text('Graph F', (0, 8), fontsize=18, color='black')               
+                p
+              </sageplot>
+            </image> 
+            
+            
+          </sidebyside>
+        </sbsgroup>
+      </introduction>
+      <task>
+        <statement>
+        <p>Which of the graphs above represents the function <m>\displaystyle f(x)=\dfrac{x^2+5x+6}{(x^2-3x-10)(x+4)}</m>?</p>
+        </statement>
+        <answer>
+          <p>
+            Graph A
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p>Which of the graphs above represents the function <m>\displaystyle g(x)=\dfrac{x^2-3x-10}{(x+2)(x^2-x-20)}</m>?</p>
+      </statement>
+      <answer>
+        <p>
+          Graph E
+        </p>
+      </answer>
+      </task>
+    </activity> 
+ 
+    <activity xml:id="activity-rf-domain-and-zeros-fluency">
+      <introduction>
+        <p>
+          Let <m>f(x)=\displaystyle \dfrac{ -{\left(x - 1\right)} {\left(x - 4\right)} }{ 2 \, {\left(x + 3\right)}^{2} {\left(x - 1\right)} }</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+        <p> Find the roots of <m>f(x)</m>. </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      </task>
+
+      <task>
+        <statement>
+        <p> Find the <m>y</m>-intercept of the graph of <m>f(x)</m>. </p>
+  
+        </statement>
+        <answer>
+          <p>
+            <m>\left(0,\dfrac{2}{9}\right)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Find any horizontal asymptotes on the graph of  <m>f(x)</m>. </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y=0</m>
+          </p>
+        </answer>
+       
+      </task>
+
+      <task>
+        <statement>
+          <p> Find any vertical asymptotes on the graph of <m>f(x)</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>x=-3</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Find any holes on the graph of <m>f(x)</m>. </p>
+        </statement>
+        <answer>
+          <p> There is a hole at <m>\left(1, \dfrac{3}{32} \right)</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Sketch the graph of <m>f(x)</m>. </p>
+        </statement>
+        <answer>
+          <p> <image>
+            <sageplot>
+              f(x) = (-(x-1)*(x-4))/(2*(x-1)*(x+3)^2)
+              p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
+              p+=parametric_plot((-3,x),(x,-8,8),color='red',linestyle="--")
+              p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+              p 
+            </sageplot>
+          </image>  </p>
+        </answer> 
+      </task>
+   
+    </activity> 
+
+<!-- the following activity is adapted from Active Prelude to Calculus: Exercise 9 
+https://activecalculus.org/prelude/sec-poly-rational-features.html#ez-poly-rational-features-multiplicities -->
+
+    <activity xml:id="activity-rf-holes-extension">
+      <introduction>
+        <p> For each of the following rational functions, identify the location of any potential hole in the graph.  Then, create a table of function values for input values near where the hole should be located.  Use your work to decide whether or not the graph indeed has a hole, with written justification. </p>
+        
+      </introduction>
+      <task>
+        <statement>
+        <p>
+          <m>\displaystyle r(x) = \dfrac{x^2-16}{x+4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Hole when <m>x=-4</m>.
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <p>
+          <m>\displaystyle s(x) = \dfrac{(x-2)^2(x+3)}{x^2 - 5x + 6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Hole when <m>x=2</m>. The graph near <m>x=2</m> behaves like <m>x=2</m> is a root with odd multiplicity.
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <p>
+          <m>\displaystyle u(x) = \dfrac{(x-2)^3(x+3)}{x^2 - 5x + 6}</m> 
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Hole when <m>x=2</m>. The graph near <m>x=2</m> behaves like <m>x=2</m> is a root with even multiplicity.
+        </p>
+      </answer>
+      </task>
+      <task>
+        <statement>
+        <p>
+          <m>\displaystyle w(x) = \dfrac{(x-2)(x+3)}{(x^2 - 5x + 6)^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Vertical asymptote at <m>x=2</m>. 
+        </p>
+      </answer>
+      </task>
+    </activity> 
+
+    <activity>
+      <statement>
+        <p>
+          Suppose you are given a function <m>r(x) = \dfrac{p(x)}{q(x)}</m>, and you know that <m>p(3) = 0</m> and <m>q(3) = 0</m>.
+          What can you conclude about the function <m>r(x)</m> at <m>x = 3</m>?
+        </p>
+        <ol marker="A.">
+          <li><m>r(x)</m> has a hole at <m>x=3</m>.</li>
+          <li><m>r(x)</m> has an asymptote at <m>x=3</m>.</li>
+          <li><m>r(x)</m> has either a hole or an asymptote at <m>x=3</m>.</li>
+          <li><m>r(x)</m> has neither a hole nor an asymptote at <m>x=3</m>.</li>
+        </ol>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </activity>
+
+    <!-- Extension question regarding holes -->
+    <!-- <exercise xml:id="ez-poly-rational-features-multiplicities">
+      <statement>
+        <p>
+          For each of the following rational functions, identify the location of any potential hole in the graph.  Then, create a table of function values for input values near where the hole should be located.  Use your work to decide whether or not the graph indeed has a hole, with written justification.
+        </p>
+  
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                  <m>\displaystyle r(x) = \dfrac{x^2-16}{x+4}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle s(x) = \dfrac{(x-2)^2(x+3)}{x^2 - 5x - 6}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle u(x) = \dfrac{(x-2)^3(x+3)}{(x^2 - 5x - 6)(x-7)}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle w(x) = \dfrac{x^2 + x - 6}{(x^2 + 5x + 6)(x+3)}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                True or false:  given <m>r(x) = \dfrac{p(x)}{q(x)}</m>, if <m>p(a) = 0</m> and <m>q(a) = 0</m>, then <m>r</m> has a hole at <m>x = a</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Exercise Answer
+        </p>
+      </answer>
+      <solution>
+        <p>
+          Exercise Solution
+        </p>
+      </solution> 
+    </exercise>-->
+
+
+  </subsection>
+
+  <exercises>
+    <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR7/"/>. </p> 
+  </exercises>
+  
+  <!-- <subsection>
+      <title>Videos</title>
+      <p>It would be great to include videos down here, like in the Calculus book!</p>
+  </subsection> -->
+  
+</section>
