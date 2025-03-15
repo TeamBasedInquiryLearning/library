@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <content>
+        <p>
+        Solve the following inequality.  Express your answer in both interval notation and graphically on a number line.
+            <me>{{rational_ineq}}</me> 
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>{{rational_interval_string}}</m>
+        </p>
+        <p>
+            <image
+                source="assets/PR9/generated/{{__seed__}}/rational_plot.png"
+                description="Solution to inequality."/>
+        </p>
+    </outtro>
+        
+</knowl>
