@@ -36,7 +36,7 @@ class TBIL:
         p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
         if show_angle_value:
             if type(show_angle_value) is string:
-                angle_value_label = show_angle_value:
+                angle_value_label = show_angle_value
             else:
                 angle_value_label = angle_label
             p+=text(angle_value_label,(0.2*c for c in mid_coordinate), fontsize="16")
