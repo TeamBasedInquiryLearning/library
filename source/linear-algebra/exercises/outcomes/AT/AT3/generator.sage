@@ -6,7 +6,6 @@ class Generator(BaseGenerator):
         # create a mxn standard matrix
         columns = 5
         rows = 4
-        maxrank = 4
         rank = choice([2,3])
         nullity = columns-rank
         A = CheckIt.simple_random_matrix_of_rank(rank,rows=rows,columns=columns)
