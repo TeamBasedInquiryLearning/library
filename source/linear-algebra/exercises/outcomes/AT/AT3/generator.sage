@@ -4,10 +4,10 @@ TBIL.config_matrix_typesetting()
 class Generator(BaseGenerator):
     def data(self):
         # create a mxn standard matrix
-        columns = choice([4,5])
-        rows = 8-columns
-        maxrank = min(columns,rows)
-        rank = choice([maxrank-2,maxrank-1])
+        columns = 5
+        rows = 4
+        maxrank = 4
+        rank = choice([2,3])
         nullity = columns-rank
         A = CheckIt.simple_random_matrix_of_rank(rank,rows=rows,columns=columns)
 
