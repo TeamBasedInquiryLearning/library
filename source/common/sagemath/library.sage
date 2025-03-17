@@ -244,10 +244,18 @@ class TBIL:
         else:         
             xmin=0
             xmax=2*pi
-        if 'ticks' not in kwds.keys() or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
+        if 'ticks' not in kwds.keys(): # or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
             delta=pi/4
-        else:
+            yticks=0.5
+        elif type(kwds['ticks']) is sage.symbolic.expression.Expression:
             delta=kwds['ticks']
+            yticks=0.5
+        elif type(kwds['ticks']) is list and len(kwds['ticks'])==2:
+            delta=kwds['ticks'][0]
+            yticks=kwds['ticks'][1]
+        else:
+            delta=pi/4
+            yticks=0.5
         custom_ticks=[]
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
@@ -260,8 +268,12 @@ class TBIL:
         if 'thickness' not in kwds.keys():
             kwds['thickness']=3
             
-        kwds['ticks']=[custom_ticks,0.5]
-        kwds['tick_formatter']=[custom_tick_labels,"latex"]
+        kwds['ticks']=[custom_ticks,yticks]
+        if yticks==1:
+            yticklabel = 1
+        else:
+            yticklabel = "latex"
+        kwds['tick_formatter']=[custom_tick_labels,yticklabel]
                 
         p=plot(f, *args, **kwds)
         return p

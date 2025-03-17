@@ -151,16 +151,18 @@
                 <figure xml:id="graph-sin">
                     <caption>Graph of <m>y=\sin(x)</m></caption>
                     <image><sageplot>
-                        plot(sin(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
                     </sageplot></image>
                 </figure>
                 <figure xml:id="graph-csc">
                     <caption>Graph of <m>y=\csc x</m></caption>
                     <image><sageplot>
-                        p=plot(csc(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..2]:
-                            p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(csc(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..2]:
+    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
             </sidebyside>
@@ -168,16 +170,18 @@
                 <figure xml:id="graph-cos">
                     <caption>Graph of <m>y=\cos x</m></caption>
                     <image><sageplot>
-                        plot(cos(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
                     </sageplot></image>
                 </figure>
                 <figure xml:id="graph-sec">
                     <caption>Graph of <m>y=\sec x</m></caption>
                     <image><sageplot>
-                        p=plot(sec(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..1]:
-                            p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..1]:
+    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
             </sidebyside>
@@ -185,19 +189,21 @@
                 <figure xml:id="graph-tan">
                     <caption>Graph of <m>y=\tan x</m></caption>
                     <image><sageplot>
-                        p=plot(tan(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..1]:
-                            p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..1]:
+    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
                 <figure xml:id="graph-cot">
                     <caption>Graph of <m>y=\cot x</m></caption>
                     <image><sageplot>
-                        p=plot(cot(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..2]:
-                            p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(cot(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..2]:
+    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
             </sidebyside>
