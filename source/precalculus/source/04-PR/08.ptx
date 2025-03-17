@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PR8" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title> Quadratic Inequalities (PR8) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/08.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+  <remark>
+    <p>In <xref ref="EQ5"/> we learned how to solve quadratic equations.  In this section, we use these skills to solve quadratic <em>inequalities</em>.
+    </p>
+  </remark>
+
+  <definition xml:id="def-quadratic-inequality">
+    <statement>
+      <p>
+        A <term>quadratic inequality</term> is an inequality that can be written in one of the following forms:
+        <ul>
+        <li><me>ax^2+bx+c \gt 0 </me> </li>
+        <li><me>ax^2+bx+c \lt 0 </me> </li>
+        <li><me>ax^2+bx+c \ge 0 </me> </li>
+        <li><me>ax^2+bx+c \le 0 </me> </li>
+        </ul>
+where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <activity xml:id="graphs-of-quadratic-inequalities">
+
+  <introduction>
+    <p>
+      Consider the graph shown below.
+       <figure width="100%" xml:id="PR8-quadratic">
+          <image xml:id="PR8-quadratic-image">
+            <description>Graph of a quadratic</description>
+            <sageplot>
+              f(x) = (x^2-6*x+5)
+                p=plot(f, (x, -3, 9), ymin=-7, ymax=10, color='blue', thickness=3)
+            </sageplot>
+          </image>
+        </figure>
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(0)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(3)</m>?
+        <ol marker="A." cols="4">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(5)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the value of <m>f(6)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Notice from parts (a) - (d), that <m>f(x)</m> can either be positive, negative, or zero depending on the value of <m>x</m>. What are the <m>x</m>-intercept(s) of <m>f(x)</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-4</m></li>
+            <li><m>5</m></li>
+            <li><m>0</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A and C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Based on what you see on the graph (and your solutions to parts (a) - (d)), for what values of <m>x</m> would <m>f(x)</m> be positive?
+        <ol marker="A." cols="2">
+            <li><m>x \lt 1</m></li>
+            <li><m>x \gt 1</m></li>
+            <li><m>x \gt 5</m></li>
+            <li><m>x \lt 5</m></li>
+              <li><m>1 \lt x \lt 5</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A and C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now use interval notation to express where <m>x^2-6x+5 \gt 0</m>.
+        <ol marker="A." cols="2">
+            <li><m>(\infty, 1] \cup [5, \infty)</m></li>
+            <li><m>[1,5]</m></li>
+            <li><m>(\infty, 1) \cup (5, \infty)</m></li>
+            <li><m>(1,5)</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+  </activity>
+
+  <remark>
+    <p>
+      From <xref ref="graphs-of-quadratic-inequalities"/>, we saw that a function could have <m>y</m>-values that are positive, negative, or zero, which can then help us find values of <m>x</m> to solve inequalities. Let's now look at how we can solve inequalities using algebra.
+      </p>
+  </remark>
+
+  <activity xml:id="intro-to-quadratic-inequality">
+    <introduction>
+      <p>
+      Use <xref ref="def-quadratic-inequality"/> and your knowledge of quadratic equations (see <xref ref="EQ5"/>) to help answer the following questions.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Which of the following inequalities are quadratic inequalities?
+          <ol marker="A." cols="2">
+            <li><m>(x-1)(x+3) \lt 7</m></li>
+            <li><m>-4x+3 \ge 10</m></li>
+            <li><m>2x^2-7x+3 \gt 0</m></li>
+            <li><m>5x-1 \le 4x</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given the quadratic equation, <m>x^2-x-6= 0</m>, determine whether <m>-1</m> is a solution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By plugging in <m>-1</m> into the quadratic equation, <m>x^2-x-6= 0</m>, students should see that it is NOT a solution. 
+        </p>
+        <p>
+          <m>(-1)^2-(-1)-6=-4</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given the quadratic inequality, <m>x^2-x-6 \le 0</m>, determine whether <m>-1</m> is a solution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By plugging in <m>-1</m> into the quadratic inequality, <m>x^2-x-6 \le 0</m>, students should see that it IS a solution as it produces a true statement. 
+        </p>
+        <p>
+          <m>(-1)^2-(-1)-6=-4</m> and <m>-4 \le 0</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Are there any other values of <m>x</m> that would satisfy the inequality, <m>x^2-x-6 \le 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Any value of <m>x</m> from <m>-2</m> to <m>3</m> (including both <m>-2</m> and <m>3</m>) will satisfy the inequality. In interval notation, the solution is <m>[-2,3]</m> (although students may not know this at this point in the section).
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    <p>
+      Notice from <xref ref="intro-to-quadratic-inequality"/>, a solution to a quadratic inequality is a real number that will produce a true statement when substituted for the variable. Quadratic inequalities will often have an infinite number of solutions, which we will express in interval notation. However, it is also possible for the inequality to have no solution.
+    </p>
+  </remark>
+
+  <activity xml:id="graphing-solutions-of-quadratics-on-number-line">
+    <introduction>
+      <p>
+        Let's look at how we can algebraically determine the solutions to a quadratic inequality using a number line. Consider the quadratic inequality <me>x^2-4x-32\ge 0</me>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          What is the factored form of the quadratic (left-hand side of the inequality)?
+          <ol marker="A." cols="2">
+            <li><m>(x-16)(x+2)</m></li>
+            <li><m>(x-4)(x+8)</m></li>
+            <li><m>(x+4)(x-8)</m></li>
+            <li><m>(x-4)(x-8)</m></li>
+          </ol>
+        </p>
+    </statement>
+    <answer>
+      <p>
+      C
+      </p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+      <p>
+        Rewrite the quadratic inequality with the answer you got from part (a). What values of <m>x</m> would give you <m>0</m>?
+      </p>
+        <ol marker="A." cols="2">
+            <li><m>x = 16, -2</m></li>
+            <li><m>x = 4, -8</m></li>
+            <li><m>x = 4, 8</m></li>
+            <li><m>x = -4, 8</m></li>
+        </ol>
+    </statement>
+    <hint>
+      <p>
+        Refer back to <xref ref="EQ5"/> and think about this as a quadratic equation (equal to <m>0</m>).
+      </p>
+    </hint>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+    
+    <task>
+      <statement>
+      <p> 
+        These solutions (that you got in part (b)) correspond to all of the <m>x</m>-intercepts of the graph, and are the only spots where the <m>y</m>-values on either side might change from positive to negative or negative to positive. So, with our two <m>x</m>-intercepts, we have divided our graph into three intervals. What are these three intervals? 
+      </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -4)</m>, <m>(-4,8)</m>, and <m>(8, \infty)</m>
+        </p>
+      </answer>
+      </task>
+        
+      <task>
+      <statement>
+        <p> Notice that the <m>x</m>-intercepts are solutions to the quadratic equation <m>x^2-4x-32=0</m>. How should we mark these values of <m>x</m> on a number line? 
+        </p>
+        <image xml:id="quad-ineq-number-line">
+          <latex-image>
+            \begin{tikzpicture}[scale=5]
+            \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0); \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10} \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};\end{tikzpicture}
+          </latex-image>
+      </image>
+    </statement>
+    <answer>
+      <p>
+        From <xref ref="EQ1"/>, students should recall that because it is a greater than or equal to statement, that the <m>x</m>-intercepts should be included on the number (with a bracket or solid dot).
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Choose a value of <m>x</m> within each interval and substitute that value into the equation <m>x^2-4x-32</m> (or the factored form you found in part (a)). If you get a positive value, place an "+" sign above that region on the number line. Similarly, if you get a negative value, place a "-" sign above that region on the number line.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <image>
+            <latex-image>
+             \begin{tikzpicture}[scale=5]
+              \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
+              \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
+              \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+              \draw[thick,red,dashed] (-0.4,-0.16) -- (-0.4,0.16);
+              \draw[thick,red,dashed] (0.8,-0.16) -- (0.8,0.16);
+            \node[above] at (0.2,0.02) {\Large \bf $-$};
+            \node[above] at (1,0.02) {\Large \bf $+$};
+            \node[above] at (-0.7,0.02) {\Large \bf $+$};
+            \end{tikzpicture}
+            </latex-image>
+          </image>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using the number line and what you determined in part (e), shade in areas on the number line that satisfies the quadratic inequality <m>x^2-4x-32 \ge 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <image>
+        <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(end=-4,strict_end=False,label_endpoints=False)
+p += TBIL.inequality_plot(start=8,strict_start=False,label_endpoints=False)
+p.axes(False)
+p 
+        </sageplot>
+      </image>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using your graph, express the solution of the inequality <m>x^2-4x-32 \ge 0</m> in interval notation.
+          <ol marker="A." cols="2">
+            <li><m>(-4,8)</m></li>
+            <li><m>[ -4,8]</m></li>
+            <li><m>(-\infty,-4)\cup(8,\infty)</m></li>
+           <li><m>(-\infty,-4]\cup[8,\infty)</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+</activity>
+
+<remark>
+  <p>
+    Notice in <xref ref="graphing-solutions-of-quadratics-on-number-line"/>, we had to begin with the solutions to the quadratic equation to determine regions of the number line to then test values of <m>x</m> that satisfy the inequality that was given. Creating a visual can help in determining the solutions to inequalities, especially when there are many solutions.
+  </p>
+</remark>
+
+<definition xml:id="def-sign-chart"> 
+  <p>A <term>sign chart</term> is a number line representing the <m>x</m>-axis that shows where a function is positive or negative by using a '+' or a '-' sign to indicate which regions are positive or negative.  For example, a sign chart for <m>f(x)=x^2-4x-32</m> (also seen in <xref ref="graphing-solutions-of-quadratics-on-number-line"/>) is shown below.
+  </p>
+   <figure xml:id="fig-sign-chart">
+   <image xml:id="sign-chart-example">
+    <latex-image>
+      \begin{tikzpicture}[scale=5]
+      \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
+      \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
+      \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+      \draw[thick,red,dashed] (-0.4,-0.16) -- (-0.4,0.16);
+      \draw[thick,red,dashed] (0.8,-0.16) -- (0.8,0.16);
+      \node[above] at (0.2,0.02) {\Large \bf $-$};
+      \node[above] at (1,0.02) {\Large \bf $+$};
+      \node[above] at (-0.7,0.02) {\Large \bf $+$};
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+  <caption> A sign chart for the function <m>f(x)=x^2-4x-32</m>.</caption>
+</figure>
+</definition>
+
+<definition xml:id="def-critical-numbers">
+  <statement>
+    <p>
+      In <xref ref="graphing-solutions-of-quadratics-on-number-line"/>, we saw that when we place the solutions to the quadratic equation, <m>x^2-4x-32=0</m>, on the number line, that it divided the number line into three regions.
+    </p>
+    <p>
+      The values in the domain of a function that separate regions that produce positive or negative results are called <term>critical points</term> or <term>boundary points</term>. These values bound the regions where the function is positive or negative.
+    </p>
+  </statement>
+</definition>
+
+  <activity xml:id="quadratic-inequality-coeff-less-than-0">
+    <introduction>
+      <p>For this activity, consider the quadratic inequality<me>2x^2-28 \lt 10x</me>.</p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Factor the quadratic equation <m>2x^2-28=10x</m> using methods discussed in <xref ref="EQ5"/>.
+          <ol marker="A." cols="2">
+            <li><m>(x-2)(x+7)</m></li>
+            <li><m>(2x+4)(x-7)</m></li>
+            <li><m>(x+2)(x-7)</m></li>
+            <li><m>2(x^2-14)</m></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B and C (although B is not completely factored)
+        </p>
+      </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Use the factors you found in part (a) to find the critical points.
+          <ol marker="A." cols="2">
+            <li><m>x = -2, 7</m></li>
+            <li><m>x = \sqrt{14}</m></li>
+            <li><m>x = -7, 2</m></li>
+            <li><m>x = 2, -12</m></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Plot the critical points you found in part (b) on a number line. Determine whether those should be included in your solution based on the inequality that was given.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Because the inequality is "less than", the critical points (or boundary points) should not be included in the solution.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Test values of <m>x</m> in each region that was created by the critical points and create a sign chart to show which regions are positive and negative.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <figure>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}[scale=5]
+                \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
+                \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
+                \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+                \draw[thick,red,dashed] (-0.2,-0.16) -- (-0.2,0.16);
+                \draw[thick,red,dashed] (0.7,-0.16) -- (0.7,0.16);
+                \node[above] at (0.2,0.02) {\Large \bf $-$};
+                \node[above] at (1,0.02) {\Large \bf $+$};
+                \node[above] at (-0.7,0.02) {\Large \bf $+$};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using the number line and what you determined in part (d), shade in areas on the number line that satisfies the quadratic inequality <m>2x^2-28 \lt 10x</m>?
+        </p>
+      </statement>
+      <answer>
+    <image>
+        <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(start=-2,end=7,label_endpoints=False)
+p.axes(False)
+p
+        </sageplot>
+      </image>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>Write your solution using interval notation.</p>
+        <ol marker="A." cols="2">
+          <li><m>\left(-\infty,-2\right)\cup\left(7,\infty\right)</m></li>
+          <li><m>\left(-\infty,-7\right)\cup\left(2,\infty\right)</m></li>
+          <li><m>\left(-7,2\right)</m></li>
+          <li><m>\left(-2,7\right)</m></li>
+        </ol> 
+      </statement>
+      <answer>
+        <p>D
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    <p>
+      When solving quadratic inequalities, be sure to get all your terms to one side of the inequality first! Then, apply the methods we learned in <xref ref="EQ5"/> to determine the critical points (boundary points). From there, you can then create your sign chart to help determine the solution to the inequality.
+      </p>
+  </remark>
+
+  <activity xml:id="quadratic-inequalities-mix">
+    <introduction>
+      <p>For each of the following, determine the critical points and use a number line (and sign chart) to then find the solutions. Write your answers in interval notation.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>x^2-1 \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1,1)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>x^2-5x-6 \ge 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty,-1]\cup [6,\infty\right)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>2x^2-7x+3 \gt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty,\frac{1}{2}]\cup [3,\infty\right)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>4x^2-6x-9 \lt x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1,3)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>-2x^2-10x-10 \ge 6x+20</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-5,-3]</m>
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  
+</subsection>
+
+<exercises>
+  <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR8/"/>. </p> 
+</exercises>
+
+  <!-- <subsection>
+    <title>Videos</title>
+    <p>It would be great to include videos down here, like in the Calculus book!</p>
+  </subsection> -->
+</section>
