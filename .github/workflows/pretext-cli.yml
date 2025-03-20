@@ -89,6 +89,7 @@ jobs:
               run: |
                 conda activate sage
                 conda info
+                sage --version
             - name: Conda list
               run: conda list
             - name: Conda info
