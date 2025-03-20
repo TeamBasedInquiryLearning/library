@@ -80,7 +80,7 @@ jobs:
           markdown: ${{ steps.changes.outputs.markdown }}
         defaults:
           run:
-            shell: bash -el {0}
+            shell: bash -l {0}
 
         steps:
             - name: inspect $PATH
