@@ -244,18 +244,17 @@ class TBIL:
         else:         
             xmin=0
             xmax=2*pi
-        if 'ticks' not in kwds.keys(): # or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
+        if 'ticks' not in kwds.keys():
             delta=pi/4
             yticks=0.5
-        elif type(kwds['ticks']) is sage.symbolic.expression.Expression:
-            delta=kwds['ticks']
-            yticks=0.5
-        elif type(kwds['ticks']) is list and len(kwds['ticks'])==2:
-            delta=kwds['ticks'][0]
-            yticks=kwds['ticks'][1]
         else:
-            delta=pi/4
-            yticks=0.5
+            try:
+                iter(kwds['ticks']) # raises TypeError if not iterable
+                delta=SR(kwds['ticks'][0])
+                yticks=SR(kwds['ticks'][1])
+            except TypeError:
+                delta=SR(kwds['ticks'])
+                yticks=0.5
         custom_ticks=[]
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
