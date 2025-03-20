@@ -83,8 +83,16 @@ jobs:
             shell: bash -el {0}
 
         steps:
+            - name: inspect $PATH
+              run: echo $PATH
             - name: Activate sage
-              run: conda activate sage
+              run: |
+                eval "$(conda shell.bash hook)"
+                conda activate sage
+            - name: Conda list
+              run: conda list
+            - name: Conda info
+              run: conda info
 
             - name: Checkout source
               uses: actions/checkout@v4
