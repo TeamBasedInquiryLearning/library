@@ -83,14 +83,8 @@ jobs:
             shell: bash -el {0}
 
         steps:
-            - uses: conda-incubator/setup-miniconda@v3
-              with:
-                activate-environment: sage
-
-            - name: Conda info
-              run: conda info
-            - name: Conda list
-              run: conda list
+            - name: Activate sage
+              run: conda activate sage
 
             - name: Checkout source
               uses: actions/checkout@v4
