@@ -91,9 +91,6 @@ jobs:
 
             - name: install deps
               run: pip install -r requirements.txt
-
-            - name: check sage version
-              run: sage --version
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
