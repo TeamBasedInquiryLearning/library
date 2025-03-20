@@ -87,6 +87,11 @@ jobs:
               with:
                 activate-environment: sage
 
+            - name: Conda info
+              run: conda info
+            - name: Conda list
+              run: conda list
+
             - name: Checkout source
               uses: actions/checkout@v4
               with:
