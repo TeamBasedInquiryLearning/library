@@ -244,7 +244,7 @@ class TBIL:
         else:         
             xmin=0
             xmax=2*pi
-        if 'ticks' not in kwds.keys(): # or type(kwds['ticks']) is not sage.symbolic.expression.Expression:
+        if 'ticks' not in kwds.keys():
             delta=pi/4
             yticks=0.5
         elif type(kwds['ticks']) is sage.symbolic.expression.Expression:
@@ -254,8 +254,7 @@ class TBIL:
             delta=kwds['ticks'][0]
             yticks=kwds['ticks'][1]
         else:
-            delta=pi/4
-            yticks=0.5
+            raise ValueError("Keywork argument ticks= should be either a symbolic expression or list of two symbolic expressions")
         custom_ticks=[]
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
