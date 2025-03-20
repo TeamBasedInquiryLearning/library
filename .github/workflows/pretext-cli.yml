@@ -83,19 +83,6 @@ jobs:
         #     shell: bash -l {0}
 
         steps:
-            - name: inspect $PATH
-              run: echo $PATH
-            - name: Activate sage
-              run: |
-                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate sage
-                conda list
-                conda info
-                sage --version
-            - name: Conda list
-              run: conda list
-            - name: Conda info
-              run: conda info
 
             - name: Checkout source
               uses: actions/checkout@v4
@@ -113,7 +100,10 @@ jobs:
 
             - name: build previews of all changed files
               id: changes
-              run: python -m scripts.quickbuild_changes
+              run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                python -m scripts.quickbuild_changes
 
             - name: stage deployment
               run: pretext deploy --stage-only
