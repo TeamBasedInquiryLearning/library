@@ -270,7 +270,7 @@ class TBIL:
             
         kwds['ticks']=[custom_ticks,yticks]
         if yticks==1:
-            yticklabel = 1
+            yticklabel = SR(1)
         else:
             yticklabel = "latex"
         kwds['tick_formatter']=[custom_tick_labels,yticklabel]
