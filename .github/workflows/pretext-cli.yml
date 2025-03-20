@@ -95,15 +95,14 @@ jobs:
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
 
-            - name: build previews of all changed files
+            - name: build previews of all changed files and stage
               id: changes
               run: |
                 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
                 conda activate sage
+                python -m pip install -r requirements.txt
                 python -m scripts.quickbuild_changes
-
-            - name: stage deployment
-              run: pretext deploy --stage-only
+                pretext deploy --stage-only
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
