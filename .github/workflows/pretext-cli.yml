@@ -23,17 +23,13 @@ jobs:
             - name: Checkout source
               uses: actions/checkout@v4
 
-            - name: install deps
-              run: pip install -r requirements.txt
-
-            - name: build all deploy targets
-              run: pretext build --deploys
-
-            - name: stage deployment
-              run: pretext deploy --stage-only
-
-            - name: build and stage all banks
+            - name: build and stage all deploy targets and banks
               run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                python -m pip install -r requirements.txt
+                pretext build --deploys
+                pretext deploy --stage-only
                 python scripts/build_bank.py precalculus --full
                 python scripts/build_bank.py calculus --full
                 python scripts/build_bank.py linear-algebra --full
@@ -78,9 +74,6 @@ jobs:
         if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
         outputs:
           markdown: ${{ steps.changes.outputs.markdown }}
-        # defaults:
-        #   run:
-        #     shell: bash -l {0}
 
         steps:
 
