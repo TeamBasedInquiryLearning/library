@@ -87,8 +87,8 @@ jobs:
               run: echo $PATH
             - name: Activate sage
               run: |
-                eval "$(conda shell.bash hook)"
                 conda activate sage
+                conda info
             - name: Conda list
               run: conda list
             - name: Conda info
