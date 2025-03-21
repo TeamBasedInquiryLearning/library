@@ -151,16 +151,18 @@
                 <figure xml:id="graph-sin">
                     <caption>Graph of <m>y=\sin(x)</m></caption>
                     <image><sageplot>
-                        plot(sin(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
                     </sageplot></image>
                 </figure>
                 <figure xml:id="graph-csc">
                     <caption>Graph of <m>y=\csc x</m></caption>
                     <image><sageplot>
-                        p=plot(csc(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..2]:
-                            p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(csc(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..2]:
+    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
             </sidebyside>
@@ -168,16 +170,18 @@
                 <figure xml:id="graph-cos">
                     <caption>Graph of <m>y=\cos x</m></caption>
                     <image><sageplot>
-                        plot(cos(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
                     </sageplot></image>
                 </figure>
                 <figure xml:id="graph-sec">
                     <caption>Graph of <m>y=\sec x</m></caption>
                     <image><sageplot>
-                        p=plot(sec(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..1]:
-                            p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..1]:
+    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
             </sidebyside>
@@ -185,19 +189,21 @@
                 <figure xml:id="graph-tan">
                     <caption>Graph of <m>y=\tan x</m></caption>
                     <image><sageplot>
-                        p=plot(tan(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..1]:
-                            p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..1]:
+    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
                 <figure xml:id="graph-cot">
                     <caption>Graph of <m>y=\cot x</m></caption>
                     <image><sageplot>
-                        p=plot(cot(x),xmin=-2*pi,xmax=2*pi,ymin=-2*pi,ymax=2*pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[pi/2,1],tick_formatter=[pi,1])
-                        for i in [-2..2]:
-                            p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-                        p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(cot(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..2]:
+    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
                     </sageplot></image>
                 </figure>
             </sidebyside>
@@ -210,7 +216,7 @@
                 <figure xml:id="graph-arcsin">
                     <caption>Graph of <m>y=\sin^{-1}(x)</m></caption>
                     <image><sageplot>
-                        p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
                         p.SHOW_OPTIONS['xmin']=-pi
                         p.SHOW_OPTIONS['xmax']=pi
                         p
@@ -219,8 +225,8 @@
                 <figure xml:id="graph-arccsc">
                     <caption>Graph of <m>y=\csc^{-1}(x)</m></caption>
                     <image><sageplot>
-                        p=plot(arccsc(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                        p+=plot(arccsc(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p=plot(arccsc(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+                        p+=plot(arccsc(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
                         p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
                         p
                     </sageplot></image>
@@ -230,7 +236,7 @@
                 <figure xml:id="graph-arccos">
                     <caption>Graph of <m>y=\cos^{-1}(x)</m></caption>
                     <image><sageplot>
-                        p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
                         p.SHOW_OPTIONS['xmin']=-pi
                         p.SHOW_OPTIONS['xmax']=pi
                         p
@@ -239,8 +245,8 @@
                 <figure xml:id="graph-arcsec">
                     <caption>Graph of <m>y=\sec^{-1}(x)</m></caption>
                     <image><sageplot>
-                        p=plot(arcsec(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                        p+=plot(arcsec(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p=plot(arcsec(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+                        p+=plot(arcsec(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
                         p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
                         p
                     </sageplot></image>
@@ -250,7 +256,7 @@
                 <figure xml:id="graph-arctan">
                     <caption>Graph of <m>y=\tan^{-1}(x)</m></caption>
                     <image><sageplot>
-                        p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
                         p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
                         p+=line([(-pi,-pi/2),(pi,-pi/2)],thickness=3,linestyle='dashed',color='red')
                         p
@@ -259,8 +265,8 @@
                 <figure xml:id="graph-arccot">
                     <caption>Graph of <m>y=\cot^{-1}(x)</m></caption>
                     <image><sageplot>
-                        p=plot(arccot(x),xmin=-pi,xmax=-0.001,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
-                        p+=plot(arccot(x),xmin=0.001,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[1,pi])
+                        p=plot(arccot(x),xmin=-pi,xmax=-0.001,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+                        p+=plot(arccot(x),xmin=0.001,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
                         p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
                         p
                     </sageplot></image>

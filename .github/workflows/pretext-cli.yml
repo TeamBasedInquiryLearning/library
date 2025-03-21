@@ -23,19 +23,13 @@ jobs:
             - name: Checkout source
               uses: actions/checkout@v4
 
-            - name: install deps
-              run: pip install -r requirements.txt
-
-            - name: build all deploy targets
-              # if: steps.quickbuild.outcome == 'skipped'
-              run: pretext build --deploys
-
-            - name: stage deployment
-              run: pretext deploy --stage-only
-
-            - name: build and stage all banks
-              # if: steps.quickbuild.outcome == 'skipped'
+            - name: build and stage all deploy targets and banks
               run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                python -m pip install -r requirements.txt
+                pretext build --deploys
+                pretext deploy --stage-only
                 python scripts/build_bank.py precalculus --full
                 python scripts/build_bank.py calculus --full
                 python scripts/build_bank.py linear-algebra --full
@@ -82,29 +76,23 @@ jobs:
           markdown: ${{ steps.changes.outputs.markdown }}
 
         steps:
+
             - name: Checkout source
               uses: actions/checkout@v4
               with:
                 fetch-depth: 0
-
-            - name: install deps
-              run: pip install -r requirements.txt
             
             - name: Set necessary Git permission
               run: git config --global --add safe.directory $(pwd)
 
-            - name: build previews of all changed files
+            - name: build previews of all changed files and stage
               id: changes
-              run: python -m scripts.quickbuild_changes
-
-            - name: stage deployment
-              run: pretext deploy --stage-only
-
-            # - name: build and stage all banks
-            #   run: |
-            #     python scripts/build_bank.py precalculus --full
-            #     python scripts/build_bank.py calculus --full
-            #     python scripts/build_bank.py linear-algebra --full
+              run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                python -m pip install -r requirements.txt
+                python -m scripts.quickbuild_changes
+                pretext deploy --stage-only
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
@@ -129,8 +117,6 @@ jobs:
                   path: deploy
             - name: Create 404.html
               run: echo "404 page not found" >> deploy/404.html
-            # - name: Delete CheckIt builds not supported by CloudFlare
-            #   run: find . -name "bank.json" -type f -delete
             - name: Publish to Cloudflare
               id: cloudflare_publish
               uses: cloudflare/pages-action@v1
