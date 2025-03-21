@@ -9,9 +9,23 @@ class TBIL:
         show_axes=True,
         show_unit_circle=False,
         show_unit_point=False,
-        show_angle_value=False
+        label_unit_point=False,
+        show_angle_value=False,
+        show_reference_angle_value=False,
+        show_triangle=False,
+        triangle_labels=False,
+        degree_labels=False,
     ):
+        if degree_labels:
+            angle_label = f"${latex(angle*180/pi)}^\\circ$"
+            reference_angle_label = f"${latex(reference_angle*180/pi)}^\\circ$"
+        else:
+            angle_label = TBIL.typeset_angle(angle)
+            reference_angle_label = TBIL.typeset_angle(reference_angle)
+
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
+        mid_reference_angle=reference_angle/2
+        mid_reference_coordinate = (cos(mid_reference_angle),sin(mid_reference_angle))
         end_angle = reference_angle+angle
         end_coordinate = (cos(end_angle),sin(end_angle))
         mid_angle = reference_angle+angle/2
@@ -21,12 +35,42 @@ class TBIL:
         p+=arrow((0,0),end_coordinate) #TODO hide arrowheads when show_unit_circle
         p+=arc((0,0),0.1,sector=(reference_angle, end_angle),color="black") #TODO add arrowhead
         if show_angle_value:
-            p+=text(f"${latex(angle)}$",(0.2*c for c in mid_coordinate), fontsize="24")
+            if type(show_angle_value) is str:
+                angle_value_label = show_angle_value
+            else:
+                angle_value_label = angle_label
+            p+=text(angle_value_label,(0.2*c for c in mid_coordinate), fontsize="16")
+        if show_reference_angle_value:
+            p+=arc((0,0),0.1,sector=(0, reference_angle),color="black") 
+            p+=text(reference_angle_label,(0.2*c for c in mid_reference_coordinate), fontsize="16")
         if show_unit_point:
             p+=point(end_coordinate,size="50",color="red")
-            p+=text(f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$", (1.4*c for c in end_coordinate),color="black",fontsize="18")
+        if label_unit_point:
+            if type(label_unit_point) is tuple and len(label_unit_point)==2:
+                label=f"$\\left({label_unit_point[0]},{label_unit_point[1]}\\right)$"
+            else:
+                label=f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$"
+            p+=text(label, (1.4*c for c in end_coordinate),color="black",fontsize="18")
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
+        if show_triangle:
+            if cos(angle)*sin(angle)!=0:
+                p+=line([(0,0),(end_coordinate[0],0),end_coordinate],color="green",thickness=2)
+                #Little square in corner
+                delta=0.08
+                xdelta = -1*delta*cos(angle)/abs(cos(angle))
+                ydelta = delta*sin(angle)/abs(sin(angle))
+                p+=line([(end_coordinate[0],ydelta),(end_coordinate[0]+xdelta,ydelta),(end_coordinate[0]+xdelta,0)],color="green")
+        if triangle_labels:
+            if type(triangle_labels) is tuple and len(triangle_labels)==2:
+                xlabel=triangle_labels[0]
+                ylabel=triangle_labels[1]
+            else:
+                xlabel=f"${latex(cos(end_angle))}$"
+                ylabel=f"${latex(sin(end_angle))}$"
+            p+=text(xlabel, (0.5*end_coordinate[0],0.2),color="green",fontsize="14")
+            p+=text(ylabel, (end_coordinate[0]+0.2, 0.5*end_coordinate[1]),color="green",fontsize="14")
+            
         if not show_axes:
             p.axes(False)
         p.xmin(-1)
@@ -120,7 +164,7 @@ class TBIL:
                         intervals.append(f"({partition_points[-1]}, \\infty)")
                 else:
                     s=""
-                    if partition_points[i] not in undefined_points and inequality.subs({x:partition_points[i]}):
+                    if partition_points[i-1] not in undefined_points and inequality.subs({x:partition_points[i-1]}):
                         s+="["
                     else:
                         s+="("
@@ -174,7 +218,65 @@ class TBIL:
         for i in interval_dict_list:
             P+=TBIL.inequality_plot( start=i["left"], strict_start=i["left_strict"], 
             end=i["right"], strict_end=i["right_strict"], label_endpoints=False,scale=scale)
+        P.axes(False)
         return P
+
+    @staticmethod
+    def typeset_angle(theta):
+        angle_string=f"${latex(theta)}$"
+        if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
+            if numerator(theta)<0:
+                angle_string = f"$-\\dfrac{{{latex(-1*numerator(theta))}}}{{{denominator(theta)}}}$"
+            else:
+                angle_string = f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+        return angle_string
+
+    @staticmethod
+    def trig_plot(f, *args, **kwds):
+        if len(args)==0:
+            raise ValueError("Second positional argument should be a tuple of the form (var, min, max) or (xmin, xmax)")
+        if type(args[0]) is tuple and len(args[0])==2:
+            xmin=args[0][0]
+            xmax=args[0][1]
+        elif type(args[0]) is tuple and len(args[0])==3:
+            xmin=args[0][1]
+            xmax=args[0][2]
+        else:         
+            xmin=0
+            xmax=2*pi
+        if 'ticks' not in kwds.keys():
+            delta=pi/4
+            yticks=0.5
+        elif type(kwds['ticks']) is sage.symbolic.expression.Expression:
+            delta=kwds['ticks']
+            yticks=0.5
+        elif type(kwds['ticks']) is list and len(kwds['ticks'])==2:
+            delta=kwds['ticks'][0]
+            yticks=kwds['ticks'][1]
+        else:
+            raise ValueError("Keywork argument ticks= should be either a symbolic expression or list of two symbolic expressions")
+        custom_ticks=[]
+        custom_tick_labels=[]
+        for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
+            custom_ticks.append(x)
+            custom_tick_labels.append(TBIL.typeset_angle(x))
+                
+        #Default formatting
+        if 'color' not in kwds.keys():
+            kwds['color']='blue'
+        if 'thickness' not in kwds.keys():
+            kwds['thickness']=3
+            
+        kwds['ticks']=[custom_ticks,yticks]
+        if yticks==1:
+            yticklabel = SR(1)
+        else:
+            yticklabel = "latex"
+        kwds['tick_formatter']=[custom_tick_labels,yticklabel]
+                
+        p=plot(f, *args, **kwds)
+        return p
+
 
     @staticmethod
     def small_rationals(numerators=range(-8,9), 

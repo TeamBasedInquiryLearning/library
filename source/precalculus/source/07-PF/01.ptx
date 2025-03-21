@@ -240,14 +240,13 @@
           <p> 
             <image>
               <sageplot>
-f(x) = sin(x)
-p=Graphics()
-p+=plot(f, (x, 0, 6.28), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/6)
 for i in [0..12]:
-    p+=point((pi*i/6,sin(pi*i/6)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+    P+=point((pi*i/6,sin(pi*i/6)),pointsize=50,color='blue')
 for i in [0..8]:
-    p+=point((pi*i/4,sin(pi*i/4)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
-p
+    P+=point((pi*i/4,sin(pi*i/4)),pointsize=50,color='blue')
+P
               </sageplot>
             </image> 
           </p>
@@ -470,10 +469,8 @@ p
           <p>
             <image>
               <sageplot>
-f(x) = sin(x)
-p=Graphics()
-p+=plot(f, (x, -6.28, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/4,0.5], tick_formatter=pi)
-p
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,-2*pi,4*pi),ticks=pi/2)
               </sageplot>
             </image> 
           </p>
@@ -523,45 +520,37 @@ p
             <ol marker= "A." cols="2"> 
               <li> <image>
                 <sageplot>
-                f(x) = 2*sin(x)
-                p=Graphics()
-                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                g(x) = sin(x)
-                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(2*sin(x),(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                 </sageplot> 
               </image>   </li>
               <li>
                 <image>
                   <sageplot>
-                  f(x) = sin(2*x)
-                  p=Graphics()
-                  p+=plot(f, (x, 0, 3.14), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                  g(x) = sin(x)
-                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                  p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(2*x),(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                   </sageplot>
                 </image> 
               </li> 
               <li> <image>
                 <sageplot>
-                f(x) = sin(0.5*x)
-                p=Graphics()
-                p+=plot(f, (x, 0, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                g(x) = sin(x)
-                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x/2),(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                 </sageplot> 
               </image>  </li>
             
               <li> <image>
                 <sageplot>
-                f(x) = sin(x)+2
-                p=Graphics()
-                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                g(x) = sin(x)
-                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x)+2,(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                 </sageplot> 
               </image>   </li>
               
@@ -612,45 +601,37 @@ p
             <ol marker= "A." cols="2"> 
               <li> <image>
                 <sageplot>
-                f(x) = 2*sin(x)
-                p=Graphics()
-                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                g(x) = sin(x)
-                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(2*sin(x),(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                 </sageplot> 
               </image>   </li>
               <li>
                 <image>
                   <sageplot>
-                  f(x) = sin(2*x)
-                  p=Graphics()
-                  p+=plot(f, (x, 0, 3.14), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                  g(x) = sin(x)
-                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                  p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(2*x),(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                   </sageplot>
                 </image> 
               </li> 
               <li> <image>
                 <sageplot>
-                f(x) = sin(0.5*x)
-                p=Graphics()
-                p+=plot(f, (x, 0, 12.56), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                g(x) = sin(x)
-                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x/2),(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                 </sageplot> 
               </image>  </li>
             
               <li> <image>
                 <sageplot>
-                f(x) = sin(x)+2
-                p=Graphics()
-                p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                g(x) = sin(x)
-                p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x)+2,(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                 </sageplot> 
               </image>   </li>
               
@@ -703,44 +684,36 @@ p
             <ol marker= "A." cols="2">  
                 <li> <image>
                   <sageplot>
-                  f(x) = sin(x-pi/2)
-                  p=Graphics()
-                  p+=plot(f, (x, pi/2, 7.85), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                  g(x) = sin(x)
-                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                  p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x-pi/2),(x,pi/2,5/2*pi),ticks=pi/2,thickness=3)
+P
                   </sageplot> 
                 </image>   </li>
 
                 <li> <image>
                   <sageplot>
-                  f(x) = sin(x+pi/2)
-                  p=Graphics()
-                  p+=plot(f, (x, -1*pi/2, 3*pi/2), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                  g(x) = sin(x)
-                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                  p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x+pi/2),(x,-pi/2,3/2*pi),ticks=pi/2,thickness=3)
+P
                   </sageplot> 
                 </image>   </li>
             
                 <li> <image>
                   <sageplot>
-                  f(x) = sin(x)+pi/2
-                  p=Graphics()
-                  p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                  g(x) = sin(x)
-                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                  p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x)+pi/2,(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                   </sageplot> 
                 </image>   </li>
                 <li> <image>
                   <sageplot>
-                  f(x) = sin(x)-pi/2
-                  p=Graphics()
-                  p+=plot(f, (x, 0, 6.28), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-                  g(x) = sin(x)
-                  p+=plot(g, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-                  p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(sin(x)-pi/2,(x,0,2*pi),ticks=pi/2,thickness=3)
+P
                   </sageplot> 
                 </image>   </li>
             
@@ -984,14 +957,13 @@ p
           <p>
             <image>
               <sageplot>
-f(x) = cos(x)
-p=Graphics()
-p+=plot(f, (x, 0, 6.28), ymin=-1.5, ymax=1.5, color='blue', thickness=3, detect_poles=True)
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(cos(x),(x,0,2*pi),ticks=pi/6)
 for i in [0..12]:
-    p+=point((pi*i/6,cos(pi*i/6)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
+    P+=point((pi*i/6,cos(pi*i/6)),pointsize=50,color='blue')
 for i in [0..8]:
-    p+=point((pi*i/4,cos(pi*i/4)),pointsize=50,color='blue',ticks=[pi/6,0.5], tick_formatter=pi)
-p
+    P+=point((pi*i/4,cos(pi*i/4)),pointsize=50,color='blue')
+P
               </sageplot>
             </image> 
           </p>
@@ -1027,16 +999,14 @@ p
    <observation xml:id="graphs-sin-cos">
     <statement>
       <p>
-        Now that we can graph both the standard sine and cosine curves, we can add them to our list of parent functions (INSERT LINK TO APPENDIX HERE). We also show them graphed below on the interval <m>[0,2\pi]</m>.</p>
+        Now that we can graph both the standard sine and cosine curves, we can add them to our list of parent functions in <xref ref="graphs-of-common-functions"/>. We also show them graphed below on the interval <m>[0,2\pi]</m>.</p>
 
         <p>
         <m>f(x)=\sin x</m>
         <image>
           <sageplot>
-          f(x) = sin(x)
-          p=Graphics()
-          p+=plot(f, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-          p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2)
           </sageplot> 
         </image>
       </p>
@@ -1044,10 +1014,8 @@ p
         <m>f(x)=\cos x</m>
         <image>
           <sageplot>
-          f(x) = cos(x)
-          p=Graphics()
-          p+=plot(f, (x, 0, 6.28), color='blue', thickness=1, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-          p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,0,2*pi),ticks=pi/2)
           </sageplot> 
         </image>
       </p>
@@ -1066,12 +1034,10 @@ p
         <p>
           <image>
             <sageplot>
-            f(x) = 2*sin(x-pi/2)
-            p=Graphics()
-            p+=plot(f, (x, -pi/2, 7.85), color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-            g(x) = sin(x)
-            p+=plot(g, (x, -pi/2, 7.85), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-            p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(-pi/2,5/2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(2*sin(x-pi/2), (-pi/2,5/2*pi),ticks=pi/2)
+P
             </sageplot> 
           </image> 
         </p>
@@ -1093,12 +1059,10 @@ p
         <p>
           <image>
             <sageplot>
-            f(x) = 0.5*sin(2*x+2*pi)
-            p=Graphics()
-            p+=plot(f, (x, -pi/2, 7.85),color='blue', thickness=3, detect_poles=True,ticks=[pi/2,0.5], tick_formatter=pi)
-            g(x) = sin(x)
-            p+=plot(g, (x, -pi/2, 7.85), color='blue', thickness=1, detect_poles=True,linestyle="--",ticks=[pi/2,0.5], tick_formatter=pi)
-            p 
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+P=TBIL.trig_plot(sin(x),(-pi/2,5/2*pi),ticks=pi/2,thickness=1,linestyle="--")
+P+=TBIL.trig_plot(1/2*sin(2*x+2*pi), (-pi/2,5/2*pi),ticks=pi/2)
+P
             </sageplot> 
           </image> 
         </p>
