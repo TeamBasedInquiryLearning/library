@@ -542,12 +542,12 @@
           <p>
             Notice there are two solutions <m>\sin\theta</m>, which corresponds to <m>4</m> values of <m>\theta</m> that satisfies the equation <m>\sin\theta=\pm\frac{\sqrt{2}}{2}</m>. What values of <m>\theta</m> satisfies that equation on the interval <m>[0, 2\pi)</m>?
             <ol marker= "A." cols="3">
-            <li> <m>\frac{\pi}{6}</m> </li>
+            <li> <m>\frac{\pi}{4}</m> </li>
             <li> <m>\frac{\pi}{3}</m> </li>
+            <li> <m>\frac{3\pi}{4}</m> </li>
             <li> <m>\frac{5\pi}{6}</m> </li>
-            <li> <m>\frac{2\pi}{3}</m> </li>
-            <li> <m>\frac{7\pi}{6}</m> </li>
-            <li> <m>\frac{11\pi}{6}</m> </li></ol>
+            <li> <m>\frac{5\pi}{4}</m> </li>
+            <li> <m>\frac{7\pi}{4}</m> </li></ol>
           </p>
         </statement>
         <answer>
@@ -885,7 +885,7 @@
     <task>
       <statement>
         <p>
-          Although we are given <m>\sin(2\theta)=\frac{1}{2}</m>, let's first think about values of <m>\theta</m> that would satisfy <m>\sin\theta=\frac{1}{2}</m>. What values of <m>\theta</m> would satisfy the equation <m>\sin\theta=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+          Although we are given <m>\sin(2\theta)=\frac{1}{2}</m>, let's replace <m>2\theta</m> with <m>\alpha</m> to help us think about what values of <m>\alpha</m> would satisfy <m>\sin\alpha=\frac{1}{2}</m>. What values of <m>\alpha</m> would satisfy the equation <m>\sin\alpha=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
           <ol marker= "A." cols="3">
             <li> <m>\frac{\pi}{6}</m> </li>
             <li> <m>\frac{\pi}{3}</m> </li>
@@ -905,7 +905,7 @@
     <task>
       <statement>
         <p>
-          What would the general solution of the equation <m>\sin\theta=\frac{1}{2}</m> be?
+          What would the general solution of the equation <m>\sin\alpha=\frac{1}{2}</m> be?
         </p>
       </statement>
       <answer>
@@ -921,7 +921,7 @@
     <task>
       <statement>
         <p>
-           For <m>\sin\theta=\frac{1}{2}</m>, we know the general solution is  <me>\theta=\frac{\pi}{6}+2\pi(n)</me> and <me>\theta=\frac{5\pi}{6}+2\pi(n)</me>. So, for <m>\sin(2\theta)=\frac{1}{2}</m>, we can say <me>2\theta=\frac{\pi}{6}+2\pi(n)</me> and <me>2\theta=\frac{5\pi}{6}+2\pi(n)</me>. Solve each general equation to find values of <m>\theta</m> that satisfies the equation <m>\sin(2\theta)=\frac{1}{2}</m>.
+           For <m>\sin\alpha=\frac{1}{2}</m>, we know the general solution is  <me>\alpha=\frac{\pi}{6}+2\pi(n)</me> and <me>\alpha=\frac{5\pi}{6}+2\pi(n)</me>. And because <m>\alpha=2\theta</m>, we can say <m>\sin(2\theta)=\frac{1}{2}</m>. Therefore, <me>2\theta=\frac{\pi}{6}+2\pi(n)</me> and <me>2\theta=\frac{5\pi}{6}+2\pi(n)</me>. Solve each general equation to find values of <m>\theta</m> that satisfies the equation <m>\sin(2\theta)=\frac{1}{2}</m>.
         </p>
       </statement>
       <hint>
@@ -963,7 +963,7 @@
     <task>
       <statement>
         <p>
-          Let's now test values of <m>n</m> to find all the values of <m>\theta</m>. Suppose <m>n=1</m>, what values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+           Suppose <m>n=1</m>, what values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
         </p>
       </statement>
       <answer>
@@ -979,7 +979,7 @@
     <task>
       <statement>
         <p>
-          Let's now test values of <m>n</m> to find all the values of <m>\theta</m>. Suppose <m>n=2</m>, what values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+           Suppose <m>n=2</m>, what values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
         </p>
       </statement>
       <answer>
