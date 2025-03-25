@@ -12,6 +12,319 @@
     <subsection>
     <title>Activities</title>
 
+    <remark>
+      <p>
+        In <xref ref="TR3"/> and <xref ref="TR4"/>, we learned how to solve right triangles (and special right triangles) using trigonometric ratios. In this section, we will learn how to solve oblique (non-right triangles).
+      </p>
+    </remark>
+
+    <activity xml:id="motivation-for-law-of-sines">
+
+    <introduction>
+      <p>
+        Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>.
+        <figure xml:id="Law-of-Sines-Triangle">
+          <image source="Images/Law-of-Sines-Triangle.png"/>
+        </figure>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\sin A</m>.
+          <ol marker= "A." cols="2">
+            <li><m>\sin A=\frac{a}{h}</m></li>
+            <li><m>\sin A=\frac{h}{b}</m></li>
+            <li><m>\sin A=\frac{h}{a}</m></li>
+            <li><m>\sin A=\frac{a}{b}</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\sin B</m>.
+          <ol marker= "A." cols="2">
+            <li><m>\sin B=\frac{a}{h}</m></li>
+            <li><m>\sin B=\frac{h}{b}</m></li>
+            <li><m>\sin B=\frac{h}{a}</m></li>
+            <li><m>\sin B=\frac{a}{b}</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Take your answers from parts (a) and (b) and solve each equation for <m>h</m> (the altitude). What does <m>h</m> equal in each case?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h=b \cdot \sin A</m>
+        </p>
+        <p>
+          <m>h=a \cdot \sin B</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Notice that we now have two ways to express <m>h</m>. Set the two expressions of <m>h</m> equal to one another and then rearrange this equation so that <m>a</m> and <m>\sin A</m> are on the same side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\sin A}{a}=\frac{\sin B}{b}</m> or <m>\frac{a}{\sin A}=\frac{b}{\sin B}</m>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <definition xml:id="def-law-of-sines">
+      <statement>
+        <p>
+          The <term>Law of Sines</term> defines the ratio of sides of a triangle and their respective sine angles are equivalent to each other. 
+          <me>\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}</me> or
+          <me>\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}</me>
+        </p>
+        <p>
+          When using the Law of Sines, you will only need to set one fraction to one other fraction. Note that these are proportions and so the reciprocals also hold true.
+        </p>
+      </statement>
+    </definition>
+
+    <remark>
+      <p>
+        The Law of Sines is helpful when we have
+        <ol>
+          <li>
+            <p>
+              two angles and one of their corresponding sides.
+            </p>
+          </li>
+          <li>
+            <p>
+              two sides and one of their corresponding angles.
+            </p>
+          </li>
+        </ol> 
+      </p>
+    </remark>
+
+    <activity xml:id="solving-a-AAS-triangle">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m> where <m>A=35</m><degree/>, <m>B=25</m><degree/>, and <m>a=10</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should be able to draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>C</m>, <m>b</m>, and <m>c</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>C</m>?
+          <ol marker= "A." cols="4">
+            <li><m>60</m><degree/></li>
+            <li><m>155</m><degree/></li>
+            <li><m>145</m><degree/></li>
+            <li><m>120</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to set up a proportion to find <m>c</m>. What does that proportion look like?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\sin 35}{10}=\frac{\sin 120}{c}</m> or <m>\frac{10}{\sin 35}=\frac{c}{\sin 120}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Solve the proportion you got in part (c) and solve for <m>c</m>. What is the value of <m>c</m> to the nearest tenth?
+          <ol marker= "A." cols="4">
+            <li><m>8.7</m></li>
+            <li><m>6.6</m></li>
+            <li><m>15.1</m></li>
+            <li><m>0.1</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          We now have side <m>b</m> left to find. Which method would be the best method to find <m>b</m>?
+          <ol marker= "A." cols="1">
+            <li>Use the Law of Sines again using side <m>c</m>.</li>
+            <li>Pythagorean Theorem</li>
+            <li>Use the Law of Sines again with angle <m>B</m>.</li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+         Use the Law of Sines to set up a proportion to find <m>b</m>. What is the value of <m>b</m> to the nearest tenth?
+         <ol marker= "A." cols="4">
+            <li><m>5.7</m></li>
+            <li><m>4.2</m></li>
+            <li><m>13.6</m></li>
+            <li><m>7.4</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>
+        The triangle you just drew in <xref ref="solving-a-AAS-triangle"/> is known as an AAS triangle, which means we know two angles and one side (which is NOT between the angles). This is just one type of triangle you might see when solving oblique triangles. The next activity will show another type of triangle you might encounter.
+      </p>
+    </remark>
+
+    <activity xml:id="solving-a-ASA-triangle">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m> where <m>A=76</m><degree/>, <m>B=34</m><degree/>, and <m>c=9</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>C</m>, <m>a</m>, and <m>b</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>C</m>?
+          <ol marker= "A." cols="4">
+            <li><m>70</m><degree/></li>
+            <li><m>110</m><degree/></li>
+            <li><m>104</m><degree/></li>
+            <li><m>146</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to set up a proportion to find <m>a</m>. What is the value of <m>a</m> to the nearest tenth?
+          <ol marker= "A." cols="4">
+            <li><m>8.7</m></li>
+            <li><m>9.3</m></li>
+            <li><m>8.5</m></li>
+            <li><m>9.1</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        B
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to set up a proportion to find <m>b</m>. What is the value of <m>b</m> to the nearest tenth?
+          <ol marker= "A." cols="4">
+            <li><m>5.0</m></li>
+            <li><m>8.5</m></li>
+            <li><m>15.1</m></li>
+            <li><m>5.4</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        D
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>
+        The triangle you just drew in <xref ref="solving-a-ASA-triangle"/> is known as an ASA triangle, which means we know two angles and a side BETWEEN the angles.
+      </p>
+    </remark>
+
     </subsection>
 
     <exercises>
