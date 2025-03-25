@@ -41,8 +41,8 @@ p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
 p.axes(False)
 p
-          </image>
           </sageplot>
+          </image>
         </figure>
       </p>
     </introduction>
