@@ -24,7 +24,25 @@
       <p>
         Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>.
         <figure xml:id="Law-of-Sines-Triangle">
-          <image source="Images/Law-of-Sines-Triangle.png"/>
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0),(0,3)],thickness=3,color="black")
+p += text("$a$", (2.1,1.6),color="black",fontsize=24)
+p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
+p += text("$c$", (1, -0.1), color="black", fontsize=24)
+p += text("$h$", (0.15,1.5), color="black",fontsize=24)
+p += line( [(-2,-0.1), (0.8,-0.1)], color="black")
+p += line( [(-2,-0.15), (-2,-0.05)], color="black")
+p += line( [(1.2,-0.1), (4,-0.1)], color="black")
+p += line( [(4,-0.15), (4,-0.05)], color="black")
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p.axes(False)
+p
+          </image>
+          </sageplot>
         </figure>
       </p>
     </introduction>
