@@ -1,4 +1,4 @@
 # Replace the contents of `codechat_config.yaml` with this file to edit Calculus
 output_path: output/calculus-web-instructor
-args: "{sys_executable} -m pretext build calculus-web-instructor --xmlid {xml_id} --no-knowls"
+args: "/conda/envs/sage/bin/python -m pretext build calculus-web-instructor --xmlid {xml_id} --no-knowls"
 project_type: PreTeXt
