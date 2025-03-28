@@ -334,6 +334,27 @@ class TBIL:
         '''Returns the equation of a line from a point and slope'''
         return y==slope*x+point[1]-slope*point[0]
 
+    #Functions to display powers of trig functions
+    def print_cosp(self,*args): return f"\\cos ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cosp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.sinp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*-1*TBIL.cosp(args[0],args[1]-1)*TBIL.sinp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+
+    cosp = function("cosp",nargs=2,print_latex_func=print_cosp,derivative_func=deriv_cosp)
+
+    def print_sinp(self,*args): return f"\\sin ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_sinp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.cosp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.sinp(args[0],args[1]-1)*TBIL.cosp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+
+    sinp = function("sinp",nargs=2,print_latex_func=print_sinp, derivative_func=deriv_sinp)
+
     # Linear Algebra
 
     @staticmethod
