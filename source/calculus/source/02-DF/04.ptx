@@ -19,9 +19,16 @@
     <me>f(t) = 2t^2 \, , \, g(t) = t^3 + 4t. </me>
      </p>
 </introduction> 
-   <task><p>
+      <task>
+        <p>
           Find <m>f'(t)</m> and <m>g'(t)</m>.
-        </p></task>
+        </p>
+        <answer>
+          <p>
+            <m>f'(t) = 4t</m> and <m>g'(t) = 3t^2 + 4</m>
+          </p>
+        </answer>
+      </task>
       <task>
         <p>
           Let <m>P(t) = 2t^2 \, (t^3 + 4t)</m> and observe that <m>P(t) = f(t) \cdot g(t)</m>.
@@ -29,12 +36,22 @@
           Then,
           compute <m>P'(t)</m> using the power, sum, and scalar multiple rules.
         </p>
+        <answer>
+          <p>
+            <m>P(t) = 2t^5 + 8t^3</m>   and <m>P'(t) = 10t^4 + 24t^2</m>
+          </p>
+        </answer>
       </task>
 
       <task>
         <p>
           True or false: <m>P'(t) = f'(t) \cdot g'(t)</m>.
         </p>
+        <answer>
+          <p>
+            False
+          </p>
+        </answer>
       </task>
 </activity>
     
@@ -55,23 +72,23 @@
  -->
     
        <activity xml:id="activity-df-product-rule-simplify">
-        <introduction>
+        <statement>
             <p>
               The product rule is a powerful tool, but sometimes it isn’t necessary; a more elementary rule may suffice. For which of the following functions can you find the derivative without using the product rule? Select all that apply.
-  
             </p>
-           
-
-        </introduction>
-        
-           
             <ol marker="A." cols="2">
                 <li><m>f(x)=e^x \sin x</m></li>
                 <li><m>f(x)=\sqrt{x}(x^3+3x-3)</m></li>
                 <li><m>f(x)=(4)(x^5)</m></li>
                 <li><m>f(x)=x \ln x</m></li>
-             
             </ol>
+            <answer>
+              <p>
+                B and C
+              </p>
+            </answer>
+        </statement>      
+             
     </activity>
 
  <activity xml:id="activity-df-product-rule-fluency">
@@ -80,9 +97,30 @@
               Find the derivative of the following functions using the product rule.
             </p>
         </introduction>
-       <task><m>f(x)=(x^2+3x)\sin x</m></task>
-     <task><m>f(x)=e^x \cos x</m></task>
-      <task><m>f(x)=x^2\ln x</m></task>
+        <task>
+          <m>f(x)=(x^2+3x)\sin x</m>
+          <answer>
+            <p>
+              <m>f'(x) = (2x+3)\sin x + (x^2+3x)\cos x</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <m>f(x)=e^x \cos x</m>
+          <answer>
+            <p>
+              <m>f'(x) = e^x\cos x - e^x\sin x</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <m>f(x)=x^2\ln x</m>
+          <answer>
+            <p>
+              <m>f'(x) = 2x\ln x + x</m>
+            </p>
+          </answer>
+        </task>
     </activity>
 
 <activity xml:id="activity-df-quotient-rule-intro">
@@ -92,9 +130,16 @@
            <me>f(t) = 2t^2 \, , \, g(t) = t^3 + 4t.</me>
      </p>
 </introduction> 
-   <task><p>
-       Determine <m>f'(t)</m> and <m>g'(t)</m>. (You found these previously in <xref ref="activity-df-product-rule-intro" />.) 
-        </p></task>
+    <task>
+      <p>
+        Determine <m>f'(t)</m> and <m>g'(t)</m>. (You found these previously in <xref ref="activity-df-product-rule-intro" />.) 
+      </p>
+      <answer>
+        <p>
+          <m>f'(t) = 4t</m> and <m>g'(t) = 3t^2 + 4</m>
+        </p>
+      </answer>
+    </task>
         
       
 
@@ -105,12 +150,22 @@
           Then,
           compute <m>Q'(t)</m> using the sum and scalar multiple rules.
         </p>
+        <answer>
+          <p>
+            <m>Q(t) = \dfrac{1}{2}t + 2t^{-1}</m> and <m>Q'(t) = \dfrac{1}{2} - 2t^{-2}</m>
+          </p>
+        </answer>
       </task>
 
       <task>
         <p>
           True or false: <m>Q'(t) = \dfrac{g'(t)}{f'(t)}</m>.
         </p>
+        <answer>
+          <p>
+            False
+          </p>
+        </answer>
       </task>
 </activity>
     
@@ -128,23 +183,24 @@
     </theorem>      
 
  <activity xml:id="activity-df-quotient-rule-simplify">
-        <introduction>
+        <statement>
             <p>
               Just like with the product rule, there are times when we can find the derivative of a quotient using elementary rules rather than the quotient rule. For which of the following functions can you find the derivative without using the quotient rule? Select all that apply.
   
             </p>
-           
-
-        </introduction>
-        
-           
             <ol marker="A." cols="2">
                 <li><m>f(x) = \dfrac{6}{x^3}</m></li>
                 <li><m>f(x) = \dfrac{2}{\ln x}</m></li>
                 <li><m>f(x) = \dfrac{e^x}{\sin x}</m></li>
                 <li><m>f(x) = \dfrac{x^3+3x}{x}</m></li>
-                
             </ol>
+        </statement>
+        <answer>
+          <p>
+            A and D
+          </p>
+        </answer>
+           
     </activity>    
 
  <activity xml:id="activity-df-quotient-rule-fluency">
@@ -154,10 +210,38 @@
 
             </p>
         </introduction>
-       <task><m>f(x) = \dfrac{6}{x^3}</m></task>
-                <task><m>f(x) = \dfrac{2}{\ln x}</m></task>
-                <task><m>f(x) = \dfrac{e^x}{\sin x}</m></task>
-                <task><m>f(x) = \dfrac{x^3+3x}{x}</m></task>
+        <task>
+          <m>f(x) = \dfrac{6}{x^3}</m>
+          <answer>
+            <p>
+              <m>f'(x) = -18x^{-4}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <m>f(x) = \dfrac{2}{\ln x}</m>
+          <answer>
+            <p>
+              <m>f'(x) = -\dfrac{2}{x(\ln x)^2}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <m>f(x) = \dfrac{e^x}{\sin x}</m>
+          <answer>
+            <p>
+              <m>f'(x) = \dfrac{e^x\sin x - e^x\cos x}{\sin^2x}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <m>f(x) = \dfrac{x^3+3x}{x}</m>
+          <answer>
+            <p>
+              <m>f'(x) = 2x</m>
+            </p>
+          </answer>
+        </task>
      
     </activity>
     
@@ -167,9 +251,30 @@
             Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
             </p></introduction>
         
-            <task><me>f(w)= -\dfrac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}</me></task>
-            <task><me>g(t)= \dfrac{t^{2} + 6 \, t + 1}{t^{2}}</me></task>
-            <task><me>h(t)= -2 \, {\left(t^{2} + 3 \, t + 3\right)} \cos\left(t\right)</me></task>
+            <task>
+              <me>f(w)= -\dfrac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}</me>
+              <answer>
+                <p>
+                  <m>f'(w) = -\dfrac{(6w+5)(\sin w) - (3w^2+5w-2)(\cos w)}{\sin^2w}</m>
+                </p>
+              </answer>
+            </task>
+            <task>
+              <me>g(t)= \dfrac{t^{2} + 6 \, t + 1}{t^{2}}</me>
+              <answer>
+                <p>
+                  <m>g'(t) = -6t^{-2} - 2t^{-3}</m>
+                </p>
+              </answer>
+            </task>
+            <task>
+              <me>h(t)= -2 \, {\left(t^{2} + 3 \, t + 3\right)} \cos\left(t\right)</me>
+              <answer>
+                <p>
+                  <m>h'(t) = -2(2t+3)\cos t + 2(t^2+3t+3)\sin t</m>
+                </p>
+              </answer>
+            </task>
         
  <!--   <answer>
         <ol>
@@ -200,69 +305,190 @@
 
             </p>
         </introduction>
-     <task> <p> What is the domain of <m>f</m>?</p></task>
-     <task> <p>  Use the quotient rule to show that one expression for <m>f'(x)</m> is
+      <task> 
+        <p> What is the domain of <m>f</m>?</p>
+        <answer>
+          <p>
+            <m>\left\lbrace x\mid x\neq \dfrac{\pi}{2}+\pi k, \right\rbrace</m> for some integer <m>k</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <p>  Use the quotient rule to show that one expression for <m>f'(x)</m> is
           <me>
             f'(x) = \dfrac{(\cos x)(\cos x) + (\sin x)(\sin x)}{(\cos x)^2}
-          </me>.</p> </task>
-     <task><p>Which trig identity might be useful here to simplify this expression?
-          How can this identity be used to find a simpler form for <m>f'(x)</m>?</p></task>
-     <task><p> Recall that <m>\sec x = \dfrac{1}{\cos x}</m>.
-          How can we express <m>f'(x)</m> in terms of the secant function?</p></task>
-     <task><p>  For what values of <m>x</m> is <m>f'(x)</m> defined?
-          How does this domain compare to the domain of <m>f</m>?</p></task>
+          </me>.</p>
+      </task>
+      <task>
+        <p>Which trig identity might be useful here to simplify this expression?
+          How can this identity be used to find a simpler form for <m>f'(x)</m>?</p>
+        <answer>
+          <p>
+            <m>\cos^2 x + \sin^2 x = 1</m>; this means that the numerator becomes 1.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <p> Recall that <m>\sec x = \dfrac{1}{\cos x}</m>.
+          How can we express <m>f'(x)</m> in terms of the secant function?</p>
+        <answer>
+          <p>
+            <m>f'(x) = \sec^2x</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <p>  For what values of <m>x</m> is <m>f'(x)</m> defined?
+          How does this domain compare to the domain of <m>f</m>?</p>
+        <answer>
+          <p>
+            <m>f'(x)</m> is defined on the same domain as <m>f(x)</m>
+          </p>
+        </answer>
+      </task>
      
     </activity>
 
     <activity xml:id="activity-df-quotient-rule-cotx">
         <introduction>
-            <p> Let <m>g(x) = \cot x </m>, and recall that
-    <m>\cot  x  = \dfrac{\cos x }{\sin x }</m>.
-
-
-            </p>
+          <p> Let <m>g(x) = \cot x </m>, and recall that
+              <m>\cot  x  = \dfrac{\cos x }{\sin x }</m>.
+          </p>
         </introduction>
-     <task> <p> What is the domain of <m>g(x)</m>?</p></task>
-     <task> <p>  Use the quotient rule to develop a formula for <m> g'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
-</p> </task>
-     <task><p>Use other relationships among trigonometric functions to write <m> g'(x)</m> only in terms of the cosecant function.</p></task>
-     <task><p>  What is the domain of <m>g'(x)</m>?
-          How does this domain compare to the domain of <m>g'(x)</m>?</p></task>
-     
+        <task> 
+          <p> 
+            What is the domain of <m>g(x)</m>?
+          </p>
+          <answer>
+            <p>
+              <m>\left\lbrace x\mid x\neq \pi k\right\rbrace</m> for some integer <m>k</m>
+            </p>
+          </answer>
+        </task>
+        <task> 
+          <p>  
+            Use the quotient rule to develop a formula for <m> g'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
+          </p>
+          <answer>
+            <p>
+              <m>g'(x) = \dfrac{-\sin^2x + \cos^2x}{\sin^2x}</m>
+            </p>
+          </answer> 
+        </task>
+        <task>
+          <p>
+            Use other relationships among trigonometric functions to write <m> g'(x)</m> only in terms of the cosecant function.
+          </p>
+          <answer>
+            <p>
+              <m>g'(x) = -\csc^2x</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p>
+            What is the domain of <m>g'(x)</m>? How does this domain compare to the domain of <m>g'(x)</m>?
+          </p>
+          <answer>
+            <p>
+              The domain of <m>g'(x)</m> is the same as the domain of <m>g(x)</m>
+            </p>
+          </answer>
+        </task>
     </activity>
 
     <activity xml:id="activity-df-quotient-rule-secx">
         <introduction>
-            <p> Let <m>h(x) = \sec x </m>, and recall that
-    <m>\sec x  = \dfrac{1}{\cos x }</m>.
-
-
+            <p> 
+              Let <m>h(x) = \sec x </m>, and recall that <m>\sec x  = \dfrac{1}{\cos x }</m>.
             </p>
         </introduction>
-     <task> <p> What is the domain of <m>h(x)</m>?</p></task>
-     <task> <p>  Use the quotient rule to develop a formula for <m> h'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
-</p> </task>
-     <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the tangent and secant functions.</p></task>
-     <task><p>  What is the domain of <m>h'(x)</m>?
-          How does this domain compare to the domain of <m>h'(x)</m>?</p></task>
+        <task>
+          <p> 
+            What is the domain of <m>h(x)</m>?
+          </p>
+          <answer>
+            <p>
+              <m>\left\lbrace x\mid x\neq \dfrac{\pi}{2} +\pi k\right\rbrace</m> for some integer <m>k</m>
+            </p>
+          </answer>  
+        </task>
+        <task>
+          <p>
+            Use the quotient rule to develop a formula for <m> h'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
+          </p>
+          <answer>
+            <p>
+              <m>h'(x) = \dfrac{-\sin x}{\cos^2x}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p>
+            Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the tangent and secant functions.
+          </p>
+          <answer>
+            <p>
+              <m>h'(x) = \sec x\tan x</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p>
+            What is the domain of <m>h'(x)</m>? How does this domain compare to the domain of <m>h'(x)</m>?
+          </p>
+          <answer>
+            <p>
+              The domain of <m>h'(x)</m> is the same as <m>h(x)</m>
+            </p>
+          </answer>
+        </task>
      
     </activity>
 
     <activity xml:id="activity-df-quotient-rule-cscx">
         <introduction>
-            <p> Let <m>p(x) = \csc x </m>, and recall that
-    <m>\csc x  = \dfrac{1}{\sin x }</m>.
-
-
+            <p> Let <m>p(x) = \csc x </m>, and recall that <m>\csc x  = \dfrac{1}{\sin x }</m>.
             </p>
         </introduction>
-     <task> <p> What is the domain of <m>p(x)</m>?</p></task>
-     <task> <p>  Use the quotient rule to develop a formula for <m> p'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
-</p> </task>
-     <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the cotangent and cosecant functions.</p></task>
-     <task><p>  What is the domain of <m>p'(x)</m>?
-          How does this domain compare to the domain of <m>p'(x)</m>?</p></task>
-     
+        <task> 
+          <p> What is the domain of <m>p(x)</m>?
+          </p>
+          <answer>
+            <p>
+              <m>\left\lbrace x\mid x\neq \pi k\right\rbrace</m> for some integer <m>k</m>
+            </p>
+          </answer>
+        </task>
+        <task> 
+          <p>  Use the quotient rule to develop a formula for <m> p'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
+          </p> 
+          <answer>
+            <p>
+              <m>p'(x) = -\dfrac{\cos x}{\sin^2x}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p>
+            Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the cotangent and cosecant functions.
+          </p>
+          <answer>
+            <p>
+              <m>p'(x) = -\csc x\cot x</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p>  
+            What is the domain of <m>p'(x)</m>? How does this domain compare to the domain of <m>p'(x)</m>?
+          </p>
+          <answer>
+            <p>
+              The domain of <m>p'(x)</m> is the same as the domain of <m>p(x)</m>
+            </p>
+          </answer>
+        </task>  
     </activity>
     
 <theorem xml:id="thm-df-other-trig-rules"> <p> We can now summarize the derivatives of all six trigonometric functions.</p>
@@ -295,32 +521,66 @@ In answering the following questions, be sure to explicitly denote which derivat
         </p></introduction>
  
       <task>
-                    <p>
-     Find the derivative of <m>f(x)\cdot g(x)</m>. 
+        <p>
+          Find the derivative of <m>f(x)\cdot g(x)</m>. 
         </p>
-                </task>
+        <answer>
+          <p>
+            <m>[f(x)\cdot g(x)]' = (-3\sin x)(x^2 + 3e^x) + (3\cos x)(2x+3e^x)</m>
+          </p>
+        </answer>
+      </task>
       <task>
-                    <p>
-     Find the derivative of <m>\displaystyle \frac{f(x)}{g(x)}</m>. 
+        <p>
+          Find the derivative of <m>\displaystyle \frac{f(x)}{g(x)}</m>. 
         </p>
-                </task>
+        <answer>
+          <p>
+            <m>\left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{(-3\sin x)(x^2+3e^x)-(3\cos x(2x+3e^x))}{(x^2+3e^x)^2}</m>
+          </p>
+        </answer>
+      </task>
       <task>
-                    <p>
-     Find the value of the derivative of <m>f(x) \cdot h(x) </m> at <m>x=-1</m>. 
+        <p>
+          Find the value of the derivative of <m>f(x) \cdot h(x) </m> at <m>x=-1</m>. 
         </p>
-                </task>
-     <task>
-                    <p>
-     Find the value of the derivative of <m> \displaystyle \frac{g(x)}{h(x)}</m> at <m>x=0</m>. 
+        <answer>
+          <p>
+            <m>[f(x)\cdot h(x)]'(-1) = 12\sin(1)</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <p>
+          Find the value of the derivative of <m> \displaystyle \frac{g(x)}{h(x)}</m> at <m>x=0</m>. 
         </p>
-                </task>
-         <task>
-                    <p>
-     Consider the function  
-                        <me>r(x) = 3 \, \cos\left(x\right) \cdot x .</me>
-    Find <m>r'(x)</m>, <m>r''(x)</m>, <m>r'''(x)</m>, and <m>r^{(4)}(x)</m> so the first, second, third, and fourth derivative of <m>r(x)</m>. What pattern do you notice? What do you expect the twelfth derivative of <m>r(x)</m> to be? 
+        <answer>
+          <p>
+            <m>\left[\dfrac{g(x)}{h(x)}\right]'(0) = 6</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <p>
+          Consider the function  
+          <me>r(x) = 3 \, \cos\left(x\right) \cdot x .</me>
+          Find <m>r'(x)</m>, <m>r''(x)</m>, <m>r'''(x)</m>, and <m>r^{(4)}(x)</m> so the first, second, third, and fourth derivative of <m>r(x)</m>. What pattern do you notice? What do you expect the twelfth derivative of <m>r(x)</m> to be? 
         </p>
-                </task>
+        <answer>
+          <p>
+            <md>
+              <mrow>r'(x) \amp = -3x\sin x + 3\cos x </mrow>
+              <mrow>r''(x) \amp = -3x\cos x - 6\sin x </mrow>
+              <mrow>r'''(x) \amp = 3x\sin x - 9\cos x </mrow>
+              <mrow>r^{(4)}(x) \amp = 3x\cos x + 12\sin x </mrow>
+            </md>
+            The terms alternate between sine and cosine, while the sign on the first term is negative twice before being positive twice; the coefficient on the second term is given by three times the derivative we're taking (e.g. the third derivative has 9, the fourth has 12). In particular, the pattern should repeat every 4 derivatives.
+          </p>
+          <p>
+            So, <m>r^{(12)}(x) = 3x\cos x +36\sin x</m>
+          </p>
+        </answer>
+      </task>
         
   <!--  <answer>
         <ol>
@@ -343,12 +603,46 @@ In answering the following questions, be sure to explicitly denote which derivat
 </activity>
     
       <activity xml:id="quotient-rule-graphs">
-    <task><p> Differentiate <m>y = \displaystyle  \frac{e^x}{x}, y = \displaystyle \frac{e^x}{x^2}, y = \displaystyle \frac{e^x}{x^3}</m>. Simplify your answers as much as possible.
-    </p></task>
-        <task><p> What do you expect the derivative of <m>y = \displaystyle \frac{e^x}{x^n}</m> to be? Prove your guess!
-    </p></task>
-        <task><p> What do your answers above tell you above the shape of the graph of <m>y = \displaystyle \frac{e^x}{x^n}</m>? Study how the sign of the numerator and the denominator change in the first derivative to determine when the behavior changes!
-    </p></task>
+        <task>
+          <p> 
+            Differentiate <m>y = \dfrac{e^x}{x}, y = \dfrac{e^x}{x^2}, y = \dfrac{e^x}{x^3}</m>. Simplify your answers as much as possible.
+          </p>
+          <answer>
+            <p>
+              <md>
+                <mrow>
+                  \dfrac{d}{dx}\left[\dfrac{e^x}{x}\right] \amp = \dfrac{xe^x-e^x}{x^2} \amp = \dfrac{(x-1)e^x}{x^2}
+                </mrow>
+                <mrow> 
+                  \dfrac{d}{dx}\left[\dfrac{e^x}{x^2}\right] \amp = \dfrac{x^2e^x - 2xe^x}{x^4} \amp = \dfrac{(x-2)e^x}{x^3}
+                </mrow>
+                <mrow>
+                  \dfrac{d}{dx}\left[\dfrac{e^x}{x^3}\right] \amp = \dfrac{x^3e^x - 3x^2e^x}{x^6} \amp = \dfrac{(x-3)e^x}{x^4}
+                </mrow>
+              </md>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p> 
+            What do you expect the derivative of <m>y = \dfrac{e^x}{x^n}</m> to be? Prove your guess!
+          </p>
+          <answer>
+            <p>
+              <me>\dfrac{d}{dx}\left[\dfrac{e^x}{x^n}\right] = \dfrac{x^ne^x - nx^{n-1}e^x}{x^{2n}} = \dfrac{(x-n)e^x}{x^{n+1}}</me>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <p> 
+            What do your answers above tell you above the shape of the graph of <m>y = \dfrac{e^x}{x^n}</m>? Study how the sign of the numerator and the denominator change in the first derivative to determine when the behavior changes!
+          </p>
+          <answer>
+            <p>
+              The derivative changes sign at <m>x = n</m>, so the function switches from decreasing to increasing at that point.
+            </p>
+          </answer>
+        </task>
     
     </activity>
     
@@ -361,17 +655,37 @@ In answering the following questions, be sure to explicitly denote which derivat
         <task> <p>
             What does the data provided tell you about the sales of skateboards?
             </p>
+            <answer>
+              <p>
+                When the sale price of a skateboard is 140, sales are decreasing by 100 skateboards per unit price
+              </p>
+            </answer>
         </task>
         <task> <p>
             The total revenue, <m>R</m>, earned by the sale of skateboards is given by <m>R=q \cdot p = f(p) \cdot p</m>. Explain why.
             </p>
+            <answer>
+              <p>
+                Revenue is price times quantity
+              </p>
+            </answer>
         </task>
             <task> <p>
       Find the derivative of the revenue when <m>p=140</m>, so find the value of
             <me> \frac{dR}{dp}\Big|_{p=140}. </me> </p>
+            <answer>
+              <p>
+                <m>\dfrac{dR}{dp}\bigg\rvert_{p=140} = 15000 -14000 = 1000</m>
+              </p>
+            </answer>
         </task>
             <task> <p>
       What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from  $140 to  $141? </p>
+      <answer>
+        <p>
+          The sign is positive, so we would expect the revenue to increase
+        </p>
+      </answer>
         </task>
     </activity>
  
@@ -381,11 +695,29 @@ In answering the following questions, be sure to explicitly denote which derivat
     <me>f(50)=0.04, \, \, \, f'(50)=0.0004</me>
     </p></introduction>
         <task><p> Let <m>g(v)</m> be the distance (in kilometers) that the same car covers per liter of gas at velocity <m>v</m>. What are the units of the output of <m>g(v)</m>? Use these units to infer how to write <m>g(v)</m> in terms of <m>f(v)</m>, then find <m>g(50)</m> and <m>g'(50)</m>.
-            </p></task>
+            </p>
+            <answer>
+              <p>
+                <m>g(v)</m> inputs velocity and outputs kilometers per liter. This means that <m>g(v) = \dfrac{1}{f(v)}</m>. So, <m>g(50) = 25</m> kilometers per liter. Further, <m>g'(v) = -\dfrac{1}{(f(v))^2}</m>, so <m>g'(50) = -6,250,000</m> kilometers per liter per liter
+              </p>
+            </answer>
+            </task>
         <task><p> Let <m>h(v)</m> be the gas consumption over time, so the liters of gas consumed per hour by the same car going at velocity <m>v</m>. What are the units of the output of <m>h(v)</m>? Use these units to infer how to write <m>h(v)</m> in terms of <m>f(v)</m>, then find <m>h(50)</m> and <m>h'(50)</m>.
-            </p></task>
+            </p>
+            <answer>
+              <p>
+                The units of <m>h(v)</m> are liters per hour, which means that <m>h(v) = v\cdot f(v)</m>. Then, <m>h(50) = 80</m> liters per hour and <m>h'(50) = 0.06</m> liters per hour per hour
+              </p>
+            </answer>
+            </task>
            <task><p> How would you explain the practical meaning of your findings to a driver who knows no calculus?
-            </p></task> 
+            </p>
+            <answer>
+              <p>
+                As velocity increases, distance covered per liter decreases and fuel efficiency increases
+              </p>
+            </answer>
+            </task> 
     </activity>
     
     </subsection>
