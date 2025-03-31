@@ -4,9 +4,12 @@ TBIL.config_matrix_typesetting()
 class Generator(BaseGenerator):
     def data(self):
         # create a mxn standard matrix
-        columns = 5
-        rows = 4
-        rank = choice([2,3])
+        columns = choice([4,5])
+        rows = 9-columns
+        if columns == 4:
+            rank = choice([1,3])
+        else:
+            rank = choice([2,3])
         nullity = columns-rank
         A = CheckIt.simple_random_matrix_of_rank(rank,rows=rows,columns=columns)
 
