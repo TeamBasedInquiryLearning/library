@@ -110,7 +110,7 @@ class Generator(BaseGenerator):
         P=plot(f(x), (a,b), ymin=c,ymax=d,detect_poles=True,aspect_ratio=1,gridlines=True,ticks=[int((d-c)/10),int((d-c)/10)])
 
         #Undefined point
-        P+=point((r1,f(r1)), color='red', size=22)
+        P+=point((r1,f(r1)), markeredgecolor='red', color='white',size=22,zorder=15)
 
         #y-intercept
         P+=point((0, yint), color='green', size=22)
