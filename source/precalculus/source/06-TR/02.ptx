@@ -12,6 +12,168 @@
     <subsection>
     <title>Activities</title>
 
+    <activity>
+      <statement>
+        <p> Consider the angle given below:</p>
+        <image>
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(pi/4,show_axes=True)
+        </sageplot>
+        </image>
+        <p>Which of the following angles describe the plotted angle?</p>
+          <ol marker="A." cols="4">
+            <li><m>-45^\circ</m></li>
+            <li><m>-135^\circ</m></li>
+            <li><m>-225^\circ</m></li>
+            <li><m>-315^\circ</m></li>
+          </ol>
+      </statement>
+      <answer>
+        <p>
+          D.
+        </p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-coterminal-angles">
+      <statement>
+        <p>
+          Two angles are called <term>coterminal angles</term> if they produce the same angle
+          measured from the positive <m>x</m>-axis.
+        </p>
+      </statement>
+    </definition>
+
+ <activity>
+      <introduction>
+        <p> Consider the angle given below:</p>
+        <image>
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+        <p>Find two angles larger than <m>60^\circ</m> that are coterminal to <m>60^\circ</m>.</p>
+        </statement>
+        <answer>
+          <p><m>420^\circ</m>, <m>780^\circ</m>, among others.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p>Find two angles smaller than <m>60^\circ</m> that are coterminal to <m>60^\circ</m>.</p>
+        </statement>
+        <answer>
+          <p><m>-300^\circ</m>, <m>-660^\circ</m>, among others.</p>
+        </answer>
+      </task>
+    </activity>
+
+    <observation>
+    <p>For any angle <m>\theta</m>, the angle <m>\theta + k\cdot 360^\circ</m> is coterminal to <m>\theta</m>
+      for any integer <m>k</m>.</p>
+    </observation>
+
+    <remark>
+    <p>Since there are many coterminal angles for any given angle, it is convenient to systematically
+    choose one for every angle.</p>
+    </remark>
+
+    <definition xml:id="def-reference-angle">
+      <statement>
+        <p>
+          If <m>\theta</m> is an angle, there is a unique angle <m>\alpha</m> with <m>0 \leq \alpha \lt 360^\circ</m> (or <m>0\leq \alpha \lt 2\pi</m>)
+          such that <m>\alpha</m> and <m>\theta</m> are coterminal.  This angle <m>\alpha</m> is called
+          the <term>reference angle</term> of <m>\theta</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <activity>
+    <introduction>
+      <p>
+        Find the reference angles for each of the following angles.
+      </p>
+    </introduction>
+    <task>
+    <statement><p><m>540^\circ</m></p></statement>
+    <answer><p><m>180^\circ</m></p></answer>
+    </task>
+    <task>
+    <statement><p><m>-600^\circ</m></p></statement>
+    <answer><p><m>120^\circ</m></p></answer>
+    </task>
+    <task>
+    <statement><p><m>\frac{11\pi}{3}</m></p></statement>
+    <answer><p><m>\frac{5\pi}{3}</m></p></answer>
+    </task>
+    <task>
+    <statement><p><m>\frac{-7\pi}{5}</m></p></statement>
+    <answer><p><m>\frac{3\pi}{5}</m></p></answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>Recall that the circumference of a circle of radius <m>r</m> is <m>2 \pi r</m>.
+      We will use this to determine the lengths of arcs on a circle.</p>
+    </remark>
+
+    <activity>
+    <introduction>
+      <p>Consider the portion of a circle of radius <m>1</m> graphed below.</p>
+        <image>
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
+p+=arc((0,0),1,sector=(0,pi/2),color="blue",thickness=3)
+p
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>What is the circumference of an entire circle of radius <m>1</m>?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+            <li><m>2\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>D.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>What proportion of an entire circle is the sector graphed above?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{1}{4}</m></li>
+            <li><m>\frac{1}{3}</m></li>
+            <li><m>\frac{1}{2}</m></li>
+            <li><m>\frac{3}{4}</m></li>
+          </ol>
+        </statement>
+        <answer><p>A.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>Use proportions to determine the length of the arc displayed above.</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+            <li><m>2\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>D.</p></answer>
+      </task>
+      </activity>
+
+
+
     </subsection>
 
     <exercises>
