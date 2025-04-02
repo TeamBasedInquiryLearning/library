@@ -246,6 +246,9 @@ p
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 p=TBIL.plot_angle(1,show_unit_circle=True,show_angle_value=False,degree_labels=False)
+p+=arc((0,0),1,sector=(0,1),color="blue",thickness=2)
+p+=text("$r$",(0.5,0.07),fontsize=20)
+p+=text("$r$",(0.87,0.6),fontsize=20)
 p
   </sageplot> 
 </image>  
