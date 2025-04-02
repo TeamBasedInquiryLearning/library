@@ -350,19 +350,19 @@ p
     <p>
       Let's consider the angle <m>\theta=150^\circ</m>, drawn below with the unit circle.</p>
 
-<image width="50%">
+<image width="50%" xml:id="ref-angle-ex1">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True)
+p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True)
 p
   </sageplot> 
-</image> 
+</image>  
     
   </introduction>
   
   <task>
     <statement>
-      <p> What is the measure of the angle between the terminal side of <m>\theta</m> and the <m>x</m>-axis, as drawn below?
+      <p> The angle below represents the reference angle for <m>\theta=150^\circ</m>, which is the smallest angle between the terminal side of <m>\theta</m> and the <m>x</m>-axis. What is the measure of this reference angle? 
       </p>
 
 <image width="50%">
@@ -376,7 +376,7 @@ p
       <p>
        <ol marker= "A." cols="5">    
           <li> <m>0^\circ</m> </li>
-          <li> <m>3^\circ</m> </li>
+          <li> <m>30^\circ</m> </li>
           <li> <m>45^\circ</m> </li>
           <li> <m>60^\circ</m> </li>
           <li> <m>75^\circ</m> </li>
@@ -390,6 +390,547 @@ p
     </answer>
   </task>
 
+    <task>
+    <statement>
+      <p> We can find the sine and cosines values of our original angle, <m>\theta=150^\circ</m>, by using the reference angle to help. Find the point <m>(x_1,y_1)</m>, where the terminal side of the <m>30^\circ</m> angle intersects the unit circle.
+      </p>
+ <sidebyside width="50%">
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x","y"))
+p
+  </sageplot> 
+
+</image> 
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x_1","y_1"))
+p
+  </sageplot> 
+</image>  
+</sidebyside>
+
+      <p>
+       <ol marker= "A." cols="3">    
+          <li> <m>\left(\dfrac{1}{2},\dfrac{\sqrt{3}}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{\sqrt{3}}{2},\dfrac{1}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{\sqrt{3}}{2},-\dfrac{1}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{-\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         B
+        </p>
+    </answer>
+  </task>
+
+    <task>
+    <statement>
+      <p> How does the point you've just found compare with the point <m>(x,y)</m>, where the terminal edge of   <m>\theta=150^\circ</m> intersects the unit circle?
+      </p>
+
+
+      <p>
+       <ol marker= "A." cols="1">    
+           <li> The <m>x</m>-values and the <m>y</m>-values are switched with each other. </li>
+          <li> The <m>x</m>-values will be the same, but the <m>y</m>-values will have opposite signs. </li>
+          <li> The <m>y</m>-values will be the same, but the <m>x</m>-values will have opposite signs. </li>
+          <li> The <m>x</m>-values and the <m>y</m>-values will both have opposite signs. </li>  
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         C
+        </p>
+    </answer>
+  </task>
+
+<task>
+    <statement>
+      <p> What are the sine and cosine of   <m>\theta=150^\circ</m>?
+      </p>
+
+
+      <p>
+       <ol marker= "A." cols="1">    
+           <li> <m>\sin 150^\circ = \dfrac{1}{2}</m> and <m>\cos 150^\circ = \dfrac{\sqrt{3}}{2}</m></li>
+           
+           <li> <m>\sin 150^\circ = \dfrac{\sqrt{3}}{2}</m> and <m>\cos 150^\circ = \dfrac{1}{2}</m></li> 
+          
+          <li> <m>\sin 150^\circ = -\dfrac{\sqrt{3}}{2}</m> and <m>\cos 150^\circ = \dfrac{1}{2}</m></li>
+          
+          <li> <m>\sin 150^\circ = \dfrac{1}{2}</m> and <m>\cos 150^\circ = -\dfrac{\sqrt{3}}{2}</m></li>  
+          
+          <li> <m>\sin 150^\circ = -\dfrac{1}{2}</m> and <m>\cos 150^\circ = \dfrac{\sqrt{3}}{2}</m></li>   
+            
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         D
+        </p>
+    </answer>
+  </task>
+
+
+</activity>
+
+<activity xml:id="reference-angle-2">
+  <introduction> 
+    <p>
+      Let's consider the angle <m>\theta=\dfrac{4\pi}{3}</m>, drawn below with the unit circle.</p>
+
+<image width="50%" xml:id="ref-angle-ex2">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(4*pi/3,show_unit_circle=True,show_angle_value=True)
+p
+  </sageplot> 
+</image>  
+    
+  </introduction>
+  
+  <task>
+    <statement>
+      <p> The angle below represents the reference angle for <m>\theta=\dfrac{4\pi}{3}</m>, which is the smallest angle between the terminal side of <m>\theta</m> and the <m>x</m>-axis. What is the measure of this reference angle? 
+      </p>
+
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(pi/3,reference_angle=pi,show_unit_circle=True)
+p
+  </sageplot> 
+</image> 
+
+      <p>
+       <ol marker= "A." cols="5">    
+          <li> <m>\dfrac{\pi}{2}</m> </li>
+          <li> <m>\dfrac{\pi}{3}</m> </li>
+          <li> <m>\dfrac{\pi}{4}</m> </li>
+          <li> <m>\dfrac{\pi}{5}</m> </li>
+          <li> <m>\dfrac{\pi}{6}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         B
+        </p>
+    </answer>
+  </task>
+
+    <task>
+    <statement>
+      <p> We can find the sine and cosines values of our original angle, <m>\theta=\dfrac{4\pi}{3}</m>, by using the reference angle to help. Find the point <m>(x_1,y_1)</m>, where the terminal side of the angle <m>\dfrac{\pi}{3}</m>  intersects the unit circle.
+      </p>
+ <sidebyside width="50%">
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(4*pi/3,show_unit_circle=True,show_angle_value=True,show_unit_point=True,label_unit_point=("x","y"))
+p
+  </sageplot> 
+
+</image> 
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(pi/3,show_unit_circle=True,show_angle_value=True,show_unit_point=True,label_unit_point=("x_1","y_1"))
+p
+  </sageplot> 
+</image>  
+</sidebyside>
+
+      <p>
+       <ol marker= "A." cols="3">    
+          <li> <m>\left(\dfrac{1}{2},\dfrac{\sqrt{3}}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{\sqrt{3}}{2},\dfrac{1}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{\sqrt{3}}{2},-\dfrac{1}{2}\right)</m> </li>
+          <li> <m>\left(\dfrac{-\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         A
+        </p>
+    </answer>
+  </task>
+
+    <task>
+    <statement>
+      <p> How does the point you've just found compare with the point <m>(x,y)</m>, where the terminal edge of   <m>\theta=\dfrac{4\pi}{3}</m> intersects the unit circle?
+      </p>
+
+
+      <p>
+       <ol marker= "A." cols="1">    
+           <li> The <m>x</m>-values and the <m>y</m>-values are switched with each other. </li>
+          <li> The <m>x</m>-values will be the same, but the <m>y</m>-values will have opposite signs. </li>
+          <li> The <m>y</m>-values will be the same, but the <m>x</m>-values will have opposite signs. </li>
+          <li> The <m>x</m>-values and the <m>y</m>-values will both have opposite signs. </li>  
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         C
+        </p>
+    </answer>
+  </task>
+<task>
+    <statement>
+      <p> What are the sine and cosine of <m>\theta=\dfrac{4\pi}{3}</m>?
+      </p>
+
+
+      <p>
+       <ol marker= "A." cols="1">    
+           <li> <m>\sin \dfrac{4\pi}{3} = \dfrac{1}{2}</m> and <m>\cos \dfrac{4\pi}{3} = \dfrac{\sqrt{3}}{2}</m></li>
+           
+           <li> <m>\sin \dfrac{4\pi}{3} = -\dfrac{\sqrt{3}}{2}</m> and <m>\cos \dfrac{4\pi}{3} = -\dfrac{1}{2}</m></li> 
+          
+          <li> <m>\sin \dfrac{4\pi}{3} = -\dfrac{\sqrt{3}}{2}</m> and <m>\cos \dfrac{4\pi}{3} = \dfrac{1}{2}</m></li>
+          
+          <li> <m>\sin \dfrac{4\pi}{3} = \dfrac{1}{2}</m> and <m>\cos \dfrac{4\pi}{3} = -\dfrac{\sqrt{3}}{2}</m></li>  
+          
+          <li> <m>\sin \dfrac{4\pi}{3} = -\dfrac{1}{2}</m> and <m>\cos \dfrac{4\pi}{3} = \dfrac{\sqrt{3}}{2}</m></li>   
+            
+          
+        </ol>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         B
+        </p>
+    </answer>
+  </task>
+</activity>
+
+
+<activity xml:id="reference-angle-fluency">
+  <introduction> 
+    <p>
+      Find <m>\sin \theta</m> and <m>\cos \theta</m> for each angle given.
+    </p>
+  </introduction>
+  
+  <task>
+    <statement>
+      <p> <m>\theta = \dfrac{\pi}{4}</m>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         <m>\sin \theta = \dfrac{\sqrt{2}}{2}</m> and <m>\cos \theta = \dfrac{\sqrt{2}}{2}</m>
+        </p>
+    </answer>
+  </task>
+
+<task>
+    <statement>
+      <p> <m>\theta = \dfrac{2\pi}{3}</m>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         <m>\sin \theta = \dfrac{\sqrt{3}}{2}</m> and <m>\cos \theta = -\dfrac{1}{2}</m>
+        </p>
+    </answer>
+  </task>
+
+<task>
+    <statement>
+      <p> <m>\theta = \dfrac{11\pi}{6}</m>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         <m>\sin \theta = -\dfrac{1}{2}</m> and <m>\cos \theta = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+    </answer>
+  </task>
+
+<task>
+    <statement>
+      <p> <m>\theta = 135^\circ</m>
+      </p>
+    </statement>
+    <answer>
+        <p>
+         <m>\sin \theta = \dfrac{sqrt{2}}{2}</m> and <m>\cos \theta = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+    </answer>
+  </task>
+
+</activity>
+
+
+<activity xml:id="angle-from-points">
+  <introduction> 
+    <p>
+      Find the following for each angle graphed below.
+
+      <ul>
+        <li> <m>\theta</m> in radians and degrees </li>
+        <li> <m>\sin \theta</m> </li>
+        <li> <m>\cos \theta</m> </li> 
+        <li> <m>\tan \theta</m> </li>
+        <li> <m>\sec \theta</m> </li>
+        <li> <m>\csc \theta</m> </li>
+        <li> <m>\cot \theta</m> </li>
+      </ul>
+    </p>
+  </introduction>
+  
+  <task>
+    <statement>
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=False,degree_labels=True,show_unit_point=True,label_unit_point=("-\dfrac{\sqrt{3}}{2}","\dfrac{1}{2}"))
+p
+  </sageplot> 
+
+</image> 
+    </statement>
+    <answer>
+        <p>
+         <ul>
+        <li> <m>\theta=\dfrac{5\pi}{6}</m> or <m>150^\circ</m> </li>
+        <li> <m>\sin \theta = \dfrac{1}{2}</m> </li>
+        <li> <m>\cos \theta = -\dfrac{\sqrt{3}}{2}</m> </li> 
+        <li> <m>\tan \theta = -\dfrac{\sqrt{3}}{3}</m> or <m>-\dfrac{1}{\sqrt{3}}</m> </li>
+        <li> <m>\sec \theta = -\sqrt{3}</m> </li>
+        <li> <m>\csc \theta = -\dfrac{2\sqrt{3}}{3}</m> </li>
+        <li> <m>\cot \theta = 2</m> </li>
+      </ul>
+        </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(5*pi/4,show_unit_circle=True,show_angle_value=False,degree_labels=True,show_unit_point=True,label_unit_point=("-\dfrac{\sqrt{2}}{2}","-\dfrac{\sqrt{2}}{2}"))
+p
+  </sageplot> 
+
+</image> 
+    </statement>
+    <answer>
+        <p>
+         <ul>
+        <li> <m>\theta=\dfrac{5\pi}{4}</m> or <m>225^\circ</m> </li>
+        <li> <m>\sin \theta = -\dfrac{\sqrt{2}}{2}</m> </li>
+        <li> <m>\cos \theta = -\dfrac{\sqrt{2}}{2}</m> </li> 
+        <li> <m>\tan \theta = 1</m> or <m>-\dfrac{1}{\sqrt{3}}</m> </li>
+        <li> <m>\sec \theta = -\sqrt{2}</m> </li>
+        <li> <m>\csc \theta = -\sqrt{2}</m> </li>
+        <li> <m>\cot \theta = 1</m> </li>
+      </ul>
+        </p>
+    </answer>
+  </task>
+
+
+
+</activity>
+
+<remark>
+  <p>
+    So far we've only dealt with angles that are part of a special right triangle (30-60-90 or 45-45-90) or are a multiple of one of these angles, but we can extend to other angles as well.
+  </p>
+</remark>
+
+<activity xml:id="non-special-angles-1">
+  <introduction> 
+    <p>
+      A point <m>(x,y)</m> lies on the unit circle in Quadrant IV. Its <m>x</m>-coordinate is <m>\dfrac{3}{4}</m>.
+    </p>
+  </introduction>
+  
+  <task>
+    <statement>
+      <p>
+      Draw a sketch of the angle <m>\theta</m> whose terminal side intersects the unit circle as described above. 
+      </p>
+
+    </statement>
+    <answer>
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(5.56,show_unit_circle=True,show_angle_value=False,degree_labels=True,show_unit_point=True,label_unit_point=("\dfrac{3}{4}","y"))
+p
+  </sageplot> 
+
+</image> 
+    </answer>
+  </task>
+
+<task>
+    <statement>
+      <p>
+      What sign will the <m>y</m>-coordinate be?
+      <ol marker= "A." cols="2">    
+           <li> positive</li>
+          <li> negative</li>
+        </ol>
+      </p>
+
+    </statement>
+    <answer>
+      <p>B</p>
+    </answer>
+  </task>
+
+<task>
+    <statement>
+      <p>
+      Find the exact value of the <m>y</m>-coordinate.
+      <ol marker= "A." cols="4">    
+          <li> <m>\dfrac{7}{16}</m> </li>
+          <li> <m>-\dfrac{7}{16}</m> </li>
+          <li> <m>\dfrac{\sqrt{7}}{4}</m> </li>
+          <li> <m>-\dfrac{\sqrt{7}}{4}</m> </li>
+        </ol>
+      </p>
+
+    </statement>
+    <answer>
+     <p>
+      D
+     </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+      Find <m>\sin \theta</m>, <m>\cos \theta</m>, <m>\tan \theta</m>, <m>\sec \theta</m>, <m>\csc \theta</m>, and <m>\cot \theta</m>.
+      </p>
+
+    </statement>
+    <answer>
+     <p>
+         <ul>
+        <li> <m>\sin \theta = -\dfrac{\sqrt{7}}{4}</m> </li>
+        <li> <m>\cos \theta = \dfrac{3}{4}</m> </li> 
+        <li> <m>\tan \theta = -\dfrac{\sqrt{7}}{3}</m> </li>
+        <li> <m>\sec \theta = \dfrac{4}{3}</m> </li>
+        <li> <m>\csc \theta = -\dfrac{4}{\sqrt{7}}</m> or <m>-\dfrac{4\sqrt{7}}{7}</m> </li>
+        <li> <m>\cot \theta = -\dfrac{3}{\sqrt{7}}</m> or <m>-\dfrac{3\sqrt{7}}{7}</m> </li>
+      </ul>
+     </p>
+    </answer>
+  </task> 
+</activity>
+
+
+<activity xml:id="non-special-angles-2">
+  <introduction> 
+      <p>
+      Let <m>\theta</m> be the angle whose terminal side intersects the unit circle at the point described in each situation below. Find <m>\sin \theta</m>, <m>\cos \theta</m>, <m>\tan \theta</m>, <m>\sec \theta</m>, <m>\csc \theta</m>, and <m>\cot \theta</m>.
+      </p>
+  </introduction>
+  
+  <task>
+    <statement>
+      <p>
+          The point <m>\left(\dfrac{4}{5},y\right)</m> that lies on the unit circle in Quadrant I. 
+      </p>
+
+    </statement>
+    <answer>
+      <p>
+         <ul>
+        <li> <m>\sin \theta = \dfrac{3}{5}</m> </li>
+        <li> <m>\cos \theta = \dfrac{4}{5}</m> </li> 
+        <li> <m>\tan \theta = \dfrac{3}{4}</m> </li>
+        <li> <m>\sec \theta = \dfrac{5}{4}</m> </li>
+        <li> <m>\csc \theta = \dfrac{5}{3}</m> </li>
+        <li> <m>\cot \theta = \dfrac{4}{3}</m> </li>
+      </ul>
+     </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+          The point <m>\left(-\dfrac{35}{37},\dfrac{12}{37}\right)</m>. 
+      </p>
+
+    </statement>
+    <answer>
+      <p>
+         <ul>
+        <li> <m>\sin \theta = \dfrac{12}{37}</m> </li>
+        <li> <m>\cos \theta = -\dfrac{35}{37}</m> </li> 
+        <li> <m>\tan \theta = -\dfrac{12}{35}</m> </li>
+        <li> <m>\sec \theta = -\dfrac{37}{35}</m> </li>
+        <li> <m>\csc \theta = \dfrac{37}{12}</m> </li>
+        <li> <m>\cot \theta = -\dfrac{35}{12}</m> </li>
+      </ul>
+     </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+            The point <m>\left(x,-\dfrac{\sqrt{11}}{6}\right)</m> that lies on the unit circle in Quadrant III.  
+      </p>
+
+    </statement>
+    <answer>
+      <p>
+         <ul>
+        <li> <m>\sin \theta = -\dfrac{\sqrt{11}}{6}</m> </li>
+        <li> <m>\cos \theta = -\dfrac{5}{6}</m> </li> 
+        <li> <m>\tan \theta = \dfrac{\sqrt{11}}{5}</m> </li>
+        <li> <m>\sec \theta = -\dfrac{6}{5}</m> </li>
+        <li> <m>\csc \theta = -\dfrac{6}{\sqrt{11}}</m> or <m>-\dfrac{6\sqrt{11}}{11}</m> </li>
+        <li> <m>\cot \theta = \dfrac{5}{\sqrt{11}}</m> or <m>\dfrac{5\sqrt{11}}{11}</m> </li>
+      </ul>
+     </p>
+    </answer>
+  </task>
+
+   <task>
+    <statement>
+      <p>
+          The point <m>\left(\dfrac{12}{13},-\dfrac{5}{13}\right)</m>. 
+      </p>
+
+    </statement>
+    <answer>
+      <p>
+         <ul>
+        <li> <m>\sin \theta = -\dfrac{5}{13}</m> </li>
+        <li> <m>\cos \theta = \dfrac{12}{13}</m> </li> 
+        <li> <m>\tan \theta = -\dfrac{5}{12}</m> </li>
+        <li> <m>\sec \theta = \dfrac{13}{12}</m> </li>
+        <li> <m>\csc \theta = -\dfrac{13}{5}</m> </li>
+        <li> <m>\cot \theta = -\dfrac{12}{5}</m> </li>
+      </ul>
+     </p>
+    </answer>
+  </task>
 
 </activity>
 
