@@ -15,7 +15,7 @@
     <activity>
       <statement>
         <p> Consider the angle given below:</p>
-        <image>
+        <image width="50%">
         <sageplot>
 <xi:include href="../../../common/sagemath/library.sage" parse="text" />
 TBIL.plot_angle(pi/4,show_axes=True)
@@ -48,7 +48,7 @@ TBIL.plot_angle(pi/4,show_axes=True)
  <activity>
       <introduction>
         <p> Consider the angle given below:</p>
-        <image>
+        <image width="50%">
         <sageplot>
 <xi:include href="../../../common/sagemath/library.sage" parse="text" />
 TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
@@ -125,7 +125,7 @@ TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
     <activity>
     <introduction>
       <p>Consider the portion of a circle of radius <m>1</m> graphed below.</p>
-        <image>
+        <image width="50%">
         <sageplot>
 <xi:include href="../../../common/sagemath/library.sage" parse="text" />
 p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
@@ -172,7 +172,87 @@ p
       </task>
       </activity>
 
+<activity>
+    <introduction>
+      <p>Consider the portion of a circle of radius <m>3</m> graphed below.</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+p=TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
+p+=arc((0,0),1,sector=(0,pi/3),color="blue",thickness=3)
+p+=text("$3$", (0.5,0.05),color="black")
+p
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>What is the circumference of an entire circle of radius <m>3</m>?</p>
+          <ol marker="A." cols="4">
+            <li><m>\pi</m></li>
+            <li><m>3\pi</m></li>
+            <li><m>6\pi</m></li>
+            <li><m>9\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>C.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>What proportion of an entire circle is the sector graphed above?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{1}{12}</m></li>
+            <li><m>\frac{1}{6}</m></li>
+            <li><m>\frac{1}{4}</m></li>
+            <li><m>\frac{1}{3}</m></li>
+          </ol>
+        </statement>
+        <answer><p>B.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>Use proportions to determine the length of the arc displayed above.</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>2\pi</m></li>
+            <li><m>3\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>B.</p></answer>
+      </task>
+      </activity>
 
+    <observation>
+    <p>For a sector of angle <m>\theta</m> and radius <m>r</m>, we can use proportions to find the length of
+    the arc.  If <m>\theta</m> is measured in degrees, we have <m>L=\frac{\theta}{360^\circ}\left(2\pi r\right)</m>,
+    which simplifies to <me>L=\frac{\theta}{180^\circ}\pi r</me>.
+    In radians, the formula is even nicer: <m>L=\frac{\theta}{2\pi}\left(2 \pi r\right)</m>, which simplifies to
+    <me>L=\theta r</me>.
+    </p>
+    </observation>
+
+    <activity>
+      <introduction>
+        <p>Find the lengths of the arcs described below.</p>
+      </introduction>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>120^\circ</m> of a circle of radius <m>4</m>.</p></statement>
+        <answer><p><m>\frac{8\pi}{3}</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>270^\circ</m> of a circle of radius <m>2</m>.</p></statement>
+        <answer><p><m>3\pi</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>\frac{5\pi}{6}</m> of a circle of radius <m>3</m>.</p></statement>
+        <answer><p><m>\frac{5\pi}{2}</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>\frac{11\pi}{12}</m> of a circle of radius <m>6</m>.</p></statement>
+        <answer><p><m>\frac{11\pi}{2}</m></p></answer>
+      </task>
+    </activity>
 
     </subsection>
 
