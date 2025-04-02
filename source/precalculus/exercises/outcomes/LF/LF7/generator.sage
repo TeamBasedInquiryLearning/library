@@ -126,8 +126,8 @@ class Generator(BaseGenerator):
             "part2": parts[1],
             "mixpercent": mixpercent,
             "totalamount":totalamount,
-            "amount1":amount1,
-            "amount2":amount2,
+            "amount1": float(amount1),
+            "amount2": float(amount2),
             "system": system 
     
         }
