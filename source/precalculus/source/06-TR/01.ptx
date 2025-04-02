@@ -209,21 +209,50 @@ TBIL.plot_angle(-225*pi/180)
 
     <remark>
     <p>
-      Degrees are not the only way to measure an angle. We can also describe the angle's measure by the amount of the circumference of the circle that the angle's rotation created. 
+      Degrees are not the only way to measure an angle. We can also describe the angle's measure by the amount of the circumference of the circle that the angle's rotation created. We'll need to define a few terms to help us come up with this new measurement. 
      </p>
-     <p>  
+     <!-- <p>  
       Recall that the circumference of a circle is given by <m>C=2\pi r</m>, where <m>r</m> is the radius of the circle. FINISH THIS!
       Activity or remark - Something about the circumference of a circle being another way to measure the angle.  <m>C=2\pi r</m> divide both sides by the radius, so a full circle or <m>360^{\circ}=2\pi</m> radians
-    </p>
+    </p> -->
     </remark>
+
+    <definition xml:id="def-central-angle">
+      <statement>
+        <p>
+          A <term>central angle</term> is an angle whose vertex is at the center of a circle.
+        </p>
+         
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(2*pi/3,show_unit_circle=True,show_angle_value=False,degree_labels=False)
+p
+  </sageplot> 
+</image>  
+      </statement>
+    </definition>
+
+
 
     <definition xml:id="def-radian">
       <statement>
         <p>
           One <term>radian</term> is the measure of a central angle of a circle that intersects an arc the same length as the radius.
         </p>
+
+         <!-- image below needs adjusting to highlight the length of the radius on the x-axis and the arc and label them as having the same distance s -->
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(1,show_unit_circle=True,show_angle_value=False,degree_labels=False)
+p
+  </sageplot> 
+</image>  
       </statement>
     </definition>
+
+    
 
     <activity>
       <introduction>
