@@ -241,11 +241,11 @@ p
           One <term>radian</term> is the measure of a central angle of a circle that intersects an arc the same length as the radius.
         </p>
 
-         <!-- image below needs adjusting to highlight the length of the radius on the x-axis and the arc and label them as having the same distance s -->
+         
 <image width="50%">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(1,show_unit_circle=True,show_angle_value=False,degree_labels=False)
+p=TBIL.plot_angle(1,show_unit_circle=True,show_angle_value=True,degree_labels=False)
 p+=arc((0,0),1,sector=(0,1),color="blue",thickness=2)
 p+=text("$r$",(0.5,0.07),fontsize=20)
 p+=text("$r$",(0.87,0.6),fontsize=20)
@@ -255,18 +255,27 @@ p
       </statement>
     </definition>
 
-    
+  <observation>
+     <p>  
+      Recall that the circumference of a circle is given by <m>C=2\pi r</m>, where <m>r</m> is the radius of the circle. That means if we rotate through an entire circle, the circumference is <m>2\pi r</m> which implies that the angle was <m>2\pi</m> radians. Thus <m>2\pi</m> radians is the same measure as <m>360^\circ</m>. 
+    </p>
+    </observation>  
 
     <activity>
       <introduction>
         <p>
-        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in radians.
+        We now know that one turn around the circle measures <m>360^{\circ}</m> and also <m>2\pi</m> radians. Use this information to set up a proportion to find the equivalent radian measure of the following angles that are given in degrees.
         </p>
       </introduction>
       <task>
         <statement>
           <p> <m>180^{\circ}</m>
-            <ol marker="A." cols="2">
+            <hint>
+              <p>
+                Try setting up a proportion! <m>\dfrac{180^\circ}{360^\circ}= \dfrac{x}{2\pi}</m>
+              </p>
+            </hint>
+            <ol marker="A." cols="4">
               <li><p> <m>\frac{\pi}{4}</m> </p></li>
               <li><p> <m>\pi</m> </p></li>
               <li><p> <m>\frac{3\pi}{4}</m> </p></li>
@@ -282,7 +291,7 @@ p
       <task>
         <statement>
           <p> <m>45^{\circ}</m>
-            <ol marker="A." cols="2">
+            <ol marker="A." cols="4">
               <li><p> <m>\frac{\pi}{4}</m> </p></li>
               <li><p> <m>\pi</m> </p></li>
               <li><p> <m>\frac{3\pi}{4}</m> </p></li>
@@ -300,13 +309,18 @@ p
     <activity>
       <introduction>
         <p>
-        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in degrees.
+        Continue using the fact that one turn around the circle measures <m>360^{\circ}</m> and also <m>2\pi</m> radians. Use this information to set up a proportion to find the equivalent degree measure of the following angles that are given in radians.
         </p>
       </introduction>
       <task>
         <statement>
-          <p> <m>\frac{\pi}{2}</m>
-            <ol marker="A." cols="2">
+          <p> <m>\dfrac{\pi}{2}</m>
+            <hint>
+              <p>
+                Try setting up a proportion! <m>\dfrac{x}{360^\circ}= \dfrac{\frac{\pi}{2}}{2\pi}</m>
+              </p>
+            </hint>
+            <ol marker="A." cols="4">
               <li><p> <m>45^{\circ}</m> </p></li>
               <li><p> <m>90^{\circ}</m> </p></li>
               <li><p> <m>180^{\circ}</m> </p></li>
@@ -322,7 +336,7 @@ p
       <task>
         <statement>
           <p> <m>\frac{3\pi}{4}</m>
-            <ol marker="A." cols="2">
+            <ol marker="A." cols="4">
               <li><p> <m>45^{\circ}</m> </p></li>
               <li><p> <m>90^{\circ}</m> </p></li>
               <li><p> <m>135^{\circ}</m> </p></li>
@@ -337,6 +351,118 @@ p
       </task>
     </activity>
     </subsection>
+
+  <activity xml:id="develop-conversions">
+    <introduction>
+        <p>
+        We'll now use the proportions from before to come up with a way to convert between degrees and radians for any given angle. We'll call <m>a</m> the angle's measure in degrees and <m>b</m> the angle's measure in radians. So, we have the following proportion that must hold:
+        <me>\dfrac{a}{360^\circ}= \dfrac{b}{2\pi}</me>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> Let's say we know an angle's measure in degrees, <m>a</m>, and need to find the angle's measure in radians, <m>b</m>. Solve for <m>b</m> in the proportion.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b=\dfrac{\pi}{180^\circ}\cdot a</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Use the formula you just developed to convert <m>60^\circ</m> to radians. Leave your answer in terms of <m>\pi</m>. Do not approximate!
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{\pi}{3}</m>
+          </p>
+        </answer>
+      </task>
+       <task>
+        <statement>
+          <p> Now let's assume we know an angle's measure in radians, <m>b</m>, and need to find the angle's measure in degrees, <m>a</m>. Solve for <m>a</m> in the proportion.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a=\dfrac{180^\circ}{\pi}\cdot b</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Use the formula you just developed to convert <m>\dfrac{\pi}{6}</m> to degrees. 
+          
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>30^\circ</m>
+          </p>
+        </answer>
+      </task>
+  </activity>
+
+  <remark>
+    <p>
+      We now have a way to convert back and forth between the two types of measurements. If we know the angle's measure in degrees, we multiply it by <m>\dfrac{\pi}{180^\circ}</m> to find the measure in radians. If we know the angle's measure in radians, we multiply it by <m>\dfrac{180^\circ}{\pi}</m> to find the measure in degrees.
+    </p>
+  </remark>
+
+<activity xml:id="conversion-fluency">
+    <introduction>
+        <p>
+        Convert each of the following angles. 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> <m>\dfrac{2\pi}{3}</m> radians to degrees
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>120^\circ</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>\dfrac{7\pi}{6}</m> radians to degrees
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>210^\circ</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m> 240^\circ </m> to radians 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{4\pi}{3}</m>
+          </p>
+        </answer>
+      </task>
+            <task>
+        <statement>
+          <p> <m> 315^\circ </m> to radians 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </task>
+    </activity>
 
     <subsection>
       <title>Exercises</title>
