@@ -83,12 +83,12 @@ TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
     choose one for every angle.</p>
     </remark>
 
-    <definition xml:id="def-reference-angle">
+    <definition xml:id="def-principal-angle">
       <statement>
         <p>
           If <m>\theta</m> is an angle, there is a unique angle <m>\alpha</m> with <m>0 \leq \alpha \lt 360^\circ</m> (or <m>0\leq \alpha \lt 2\pi</m>)
           such that <m>\alpha</m> and <m>\theta</m> are coterminal.  This angle <m>\alpha</m> is called
-          the <term>reference angle</term> of <m>\theta</m>.
+          the <term>principal angle</term> of <m>\theta</m>.
         </p>
       </statement>
     </definition>
@@ -96,7 +96,7 @@ TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
     <activity>
     <introduction>
       <p>
-        Find the reference angles for each of the following angles.
+        Find the principal angles for each of the following angles.
       </p>
     </introduction>
     <task>
