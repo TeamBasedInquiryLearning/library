@@ -29,7 +29,6 @@
           <p>
             Fill in the missing values in the table below for <m>f(x)=\tan(x)</m>. Find the exact values, then express as a decimal,  approximated to two decimal places if needed. (Notice that the values in the table are all the standard angles found on the unit circle!)
             
-            <!-- <sidebyside> -->
             <tabular halign="center">
               <row header="yes" bottom="medium" >
                 <cell> <m>x</m></cell>
@@ -81,13 +80,6 @@
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-            <!-- </tabular>
-            <tabular halign="center">
-              <row header="yes" bottom="minor" >
-                <cell> <m>x</m></cell>
-                <cell><m>f(x)</m> (exact)</cell>
-                <cell><m>f(x)</m> (approximate)</cell>
-              </row> -->
               <row bottom="minor">
                 <cell><m>\dfrac{7\pi}{6}</m></cell>
                 <cell> </cell>
@@ -129,7 +121,6 @@
                 <cell> </cell>               
               </row>
             </tabular>
-          <!-- </sidebyside> -->
           </p>
         </statement>
         <answer>
@@ -336,7 +327,6 @@ P
           <p>
             Fill in the missing values in the table below for <m>f(x)=\sec(x)</m>. Find the exact values, then express as a decimal,  approximated to two decimal places if needed. (Notice that the values in the table are all the standard angles found on the unit circle!)
             
-            <!-- <sidebyside> -->
             <tabular halign="center">
               <row header="yes" bottom="medium" >
                 <cell> <m>x</m></cell>
@@ -388,13 +378,6 @@ P
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-            <!-- </tabular>
-            <tabular halign="center">
-              <row header="yes" bottom="minor" >
-                <cell> <m>x</m></cell>
-                <cell><m>f(x)</m> (exact)</cell>
-                <cell><m>f(x)</m> (approximate)</cell>
-              </row> -->
               <row bottom="minor">
                 <cell><m>\dfrac{7\pi}{6}</m></cell>
                 <cell> <m>-\frac{2}{\sqrt{3}}</m></cell>
@@ -436,7 +419,6 @@ P
                 <cell> </cell>               
               </row>
             </tabular>
-          <!-- </sidebyside> -->
           </p>
         </statement>
         <answer>
@@ -671,7 +653,6 @@ p
             Find the exact values, then express as a decimal,  approximated to two decimal places if needed. 
             (Notice that the values in the table are all the standard angles found on the unit circle!)
             
-            <!-- <sidebyside> -->
             <tabular halign="center">
               <row header="yes" bottom="medium" >
                 <cell> <m>x</m></cell>
@@ -723,13 +704,6 @@ p
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-            <!-- </tabular>
-            <tabular halign="center">
-              <row header="yes" bottom="minor" >
-                <cell> <m>x</m></cell>
-                <cell><m>f(x)</m> (exact)</cell>
-                <cell><m>f(x)</m> (approximate)</cell>
-              </row> -->
               <row bottom="minor">
                 <cell><m>\dfrac{7\pi}{6}</m></cell>
                 <cell> </cell>
@@ -771,7 +745,6 @@ p
                 <cell> </cell>               
               </row>
             </tabular>
-          <!-- </sidebyside> -->
           </p>
         </statement>
         <answer>
@@ -993,7 +966,6 @@ p
             </sidebyside>
     </observation>
 
-
   <activity xml:id="activity-cot-table">
       <introduction>
         <p> Consider the cotangent function, <m>f(x)=\cot(x)</m>.
@@ -1007,7 +979,6 @@ p
             Find the exact values, then express as a decimal,  approximated to two decimal places if needed. 
             (Notice that the values in the table are all the standard angles found on the unit circle!)
             
-            <!-- <sidebyside> -->
             <tabular halign="center">
               <row header="yes" bottom="medium" >
                 <cell> <m>x</m></cell>
@@ -1059,13 +1030,6 @@ p
                 <cell> </cell>
                 <cell> </cell>               
               </row>
-            <!-- </tabular>
-            <tabular halign="center">
-              <row header="yes" bottom="minor" >
-                <cell> <m>x</m></cell>
-                <cell><m>f(x)</m> (exact)</cell>
-                <cell><m>f(x)</m> (approximate)</cell>
-              </row> -->
               <row bottom="minor">
                 <cell><m>\dfrac{7\pi}{6}</m></cell>
                 <cell> </cell>
@@ -1107,7 +1071,6 @@ p
                 <cell> </cell>               
               </row>
             </tabular>
-          <!-- </sidebyside> -->
           </p>
         </statement>
         <answer>
