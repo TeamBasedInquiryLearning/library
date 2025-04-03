@@ -66,6 +66,10 @@ class Generator(BaseGenerator):
         totalinvestment = sum(investments)
         interests = [investments[i]*aprs[i]/100 for i in range(2)]
         totalinterest = sum(interests)
+        system = r"\begin{matrix}"
+        system += f"x & + & y & = & {totalinvestment}"+r"\\"
+        system += LatexExpr(f"{float(aprs[0]/100):.2f}")+" x " + "& + &" + LatexExpr(f"{float(aprs[1]/100):.2f}")+" y " +  "& = &" + LatexExpr(f"{totalinterest}") + r"\\"
+        system += r"\end{matrix}"
         result = {
             "name": name,
             "apr1": aprs[0],
@@ -74,7 +78,7 @@ class Generator(BaseGenerator):
             "totalinterest": totalinterest,
             "investment1": investments[0],
             "investment2": investments[1],
-          "system": CheckIt.latex_system_from_matrix(matrix([[1,1],[aprs[0]/100,aprs[1]/100]]).augment(column_matrix([totalinvestment,totalinterest]),subdivide=True),alpha_mode=True)
+          "system": system
         }
       else:
         denominator = choice([4,10])
@@ -105,6 +109,11 @@ class Generator(BaseGenerator):
           totalamount = choice(range(50,200,10))
         amount1 = totalamount*parts[0]/100
         amount2 = totalamount*parts[1]/100
+
+        system = r"\begin{matrix}"
+        system += f"x & + & y & = & {totalamount}"+r"\\"
+        system += LatexExpr(f"{float(percents[0]/100):.2f}")+" x " + "& + &" + LatexExpr(f"{float(percents[1]/100):.2f}")+" y " +  "& = &" + LatexExpr(f"{float(mixpercent/100*totalamount):.2f}") + r"\\"
+        system += r"\end{matrix}"
         result = {
             "name": name,
             "meat1": meats[0],
@@ -117,9 +126,9 @@ class Generator(BaseGenerator):
             "part2": parts[1],
             "mixpercent": mixpercent,
             "totalamount":totalamount,
-            "amount1":amount1,
-            "amount2":amount2,
-            "system": CheckIt.latex_system_from_matrix(matrix([[1,1],[percents[0]/100,percents[1]/100]]).augment(column_matrix([totalamount,mixpercent/100*totalamount]),subdivide=True),alpha_mode=True)
+            "amount1": float(amount1),
+            "amount2": float(amount2),
+            "system": system 
     
         }
 
