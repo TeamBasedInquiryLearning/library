@@ -1377,7 +1377,7 @@ p
       <answer>
        <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(tan(2*x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+p=TBIL.trig_plot(tan(2*x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,thickness=2)
 for i in [-4..3]:
     p+=line([(i*pi/2+pi/4,-2*pi),(i*pi/2+pi/4,2*pi)],thickness=2,linestyle='dashed',color='red')
 p
