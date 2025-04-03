@@ -1295,8 +1295,120 @@ p
             </sidebyside>
     </observation>
 
+    <remark>
+    <p>The graphs of all six  <xref ref="trigonometric-functions-graphs" text="title"/> are listed in <xref ref="graphs-of-common-functions"/>.</p>
+    </remark>
 
+    <activity>
+    <introduction>
+      <p>Consider the function <m>g(x)=\sec(x+\pi)</m>.</p>
+    </introduction>
+    <task>
+    <statement>
+      <p>Which of the following is the graph of <m>g(x)=\sec(x+\pi)</m>?</p>
+      <ol marker="A." cols="2">
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..1]:
+    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
+        </sageplot></image></li>        
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x+pi),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..1]:
+    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x-pi/2),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..2]:
+    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
+        </sageplot></image></li>        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(sec(x+pi/2),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-2..2]:
+    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
+p
+        </sageplot></image></li>
+      </ol>
+    </statement>
+    <answer>
+      <p>B.</p>
+    </answer>
+    </task>
+    <task>
+      <statement>
+        <p>What is the domain of <m>g(x)=\sec(x+\pi)</m>?</p>
+      </statement>
+      <answer>
+        <p><m>\ldots \cup \left(-\dfrac{3\pi}{2},-\dfrac{\pi}{2}\right)\cup \left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right) \cup \left(\dfrac{\pi}{2},\dfrac{3\pi}{2}\right) \cup \ldots </m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>What is the range of <m>g(x)=\sec(x+\pi)</m>?</p>
+      </statement>
+      <answer>
+        <p><m>(-\infty,-1] \cup [1,\infty)</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>What is the period of <m>g(x)=\sec(x+\pi)</m>?</p>
+      </statement>
+      <answer>
+        <p><m>2\pi</m></p>
+      </answer>
+    </task>
+    </activity>
 
+    <activity>
+    <introduction>
+    <p>Consider the function <m>h(x)=\tan(2x)</m></p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Graph <m>h(x)=\tan(2x)</m>.</p>
+      </statement>
+      <answer>
+       <image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.trig_plot(tan(2*x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+for i in [-4..3]:
+    p+=line([(i*pi/2+pi/4,-2*pi),(i*pi/2+pi/4,2*pi)],thickness=2,linestyle='dashed',color='red')
+p
+        </sageplot></image>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>What is the domain of <m>h(x)=\tan(2x)</m>?</p>
+      </statement>
+      <answer>
+        <p><m>\ldots \left(-\dfrac{3\pi}{4},-\dfrac{\pi}{4}\right) \cup \left(-\dfrac{\pi}{4},\dfrac{\pi}{4}\right) \cup \left(\dfrac{\pi}{4},\dfrac{3\pi}{4}\right) \cup \ldots </m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>What is the range of <m>h(x)=\tan(2x)</m>?</p>
+      </statement>
+      <answer>
+        <p><m>(-\infty,\infty)</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>What is the period of <m>h(x)=\tan(2x)</m>?</p>
+      </statement>
+      <answer>
+        <p><m>\dfrac{\pi}{2}</m></p>
+      </answer>
+    </task>
+    </activity>
 
     </subsection>
 
