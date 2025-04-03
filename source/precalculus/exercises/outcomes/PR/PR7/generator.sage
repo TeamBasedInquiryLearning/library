@@ -99,27 +99,30 @@ class Generator(BaseGenerator):
         r2 = data['r2']
         r3 = data['r3']
         yint = data['yint']
-        a = -6
-        b = 6
+        a = -10
+        b = 10
         f(x) = data['f']
-        n = data['n']
         h = data['horizontal']
-        c = min(f(r2-0.2), f(r2+0.2), -10)
-        d = max(f(r2-0.2), f(r2+0.2), 10)
-    # updated by clontz, who is solely responsible for anything written here
-    
-        if scene == "zero":
-            return {"plot": plot(f(x), (a,r2-0.01), ymin=c, ymax=d) + plot(f(x), (r2+0.01, b), ymin=c, ymax=d)+point((r1,f(r1)), color='red', size=22)+point((0, yint), color='green', size=22)  + line([(r2,c), (r2,d)], linestyle = "dashed", color='purple') + line([(a,0), (b,0)], linestyle = "dashed", color='orange'),}
-        if scene == "one":
-            return {"plot": plot(f(x), (a,r2-0.01), ymin=c, ymax=d) + plot(f(x), (r2+0.01, b), ymin=c, ymax=d)+point((r1,f(r1)), color='red', size=22)+point((0, yint), color='green', size=22)+point(( r3, 0), color='green', size=22)  + line([(r2,c), (r2,d)], linestyle = "dashed", color='purple') + line([(a,h), (b,h)], linestyle = "dashed", color='orange'),}
+        c = min(min(find_local_maximum(f(x),r2-2,r2-0.2)[0], find_local_maximum(f(x),r2+0.2,r2+2)[0])-2,-10)
+        d = max(max(find_local_minimum(f(x),r2-2,r2-0.2)[0], find_local_minimum(f(x),r2+0.2,r2+2)[0])+2,10)
+
+        #Plot curve, skipping over asymptote
+        P=plot(f(x), (a,b), ymin=c,ymax=d,detect_poles=True,aspect_ratio=1,gridlines=True,ticks=[int((d-c)/10),int((d-c)/10)])
+
+        #Undefined point
+        P+=point((r1,f(r1)), markeredgecolor='red', color='white',size=22,zorder=15)
+
+        #y-intercept
+        P+=point((0, yint), color='green', size=22)
+        #x-intercept
+        if scene == "one" or scene == "two":
+            P+=point(( r3, 0), color='green', size=22)
         
-        if scene == "two":
-            return{"plot": plot(f(x), (a,r2-0.01), ymin=c, ymax=d) + plot(f(x), (r2+0.01, b), ymin=c, ymax=d)+point((r1,f(r1)), color='red', size=22)+point((0, yint), color='green', size=22)+point(( r3, 0), color='green', size=22) + line([(r2,c), (r2,d)], linestyle = "dashed", color='purple'),}
-                
-                
-                
-              
-        
-        
-        
-        
+        #Vertical asymptote
+        P+=line([(r2,c), (r2,d)], linestyle = "dashed", color='purple',thickness=2)
+
+        #Horizontal asymptote
+        if scene == "zero" or scene == "one":
+            P+=line([(a,h), (b,h)], linestyle = "dashed", color='orange',thickness=2)
+
+        return {"plot":P}
