@@ -158,7 +158,7 @@ total interest.
         </content>
     <outtro>
         <p>
-<m>{{part1}}</m> lbs {{meat1}} and <m>{{part2}}</m> lbs {{meat2}}
+<m>{{amount1}}</m> lbs {{meat1}} and <m>{{amount2}}</m> lbs {{meat2}}
         </p>
     </outtro>
     </knowl>
@@ -167,7 +167,7 @@ total interest.
     <intro>
         <p>
             A juice cocktail mixes  {{juice1}} with
-            {{juice2}}. {{juice1}} contains <m>{{percent1}}\%</m>
+            {{juice2}}. According to the nutritional labels, {{juice1}} contains <m>{{percent1}}\%</m>
             sugar, and {{juice2}} contains <m>{{percent2}}\%</m> sugar.
             A total of {{totalamount}} oz of juice cocktail is produced
             with a sugar percentage of <m>{{mixpercent}}\%</m>.
@@ -189,7 +189,7 @@ total interest.
         </content>
         <outtro>
             <p>
-                <m>{{part1}}</m> oz of {{juice1}} and <m>{{part2}}</m> oz of {{juice2}}.
+                <m>{{amount1}}</m> oz of {{juice1}} and <m>{{amount2}}</m> oz of {{juice2}}.
             </p>
         </outtro>
     </knowl>
