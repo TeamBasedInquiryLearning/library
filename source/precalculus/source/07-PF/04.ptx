@@ -170,12 +170,101 @@ TBIL.trig_plot(sin(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
           <p><m>\arcsin\left(-\dfrac{\sqrt{3}}{2}\right)</m></p>
         </statement>
         <answer>
-          <p><m>\-dfrac{\pi}{6}</m></p>
+          <p><m>\-dfrac{\pi}{3}</m></p>
         </answer>
       </task>
     </activity>
 
 
+    <activity>
+      <statement>
+        <p>Which of the following domain restrictions of <m>\cos(x)</m> is one-to-one?</p>
+        <ol marker="A." cols="2">
+          <li>
+            <p><m>0 \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,0,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,-pi/2,pi/2),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>0 \leq x \leq 2\pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,0,2*pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\pi \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+        </ol>
+      </statement>
+      <hint>
+        <p>Use the horizontal line test.</p>
+      </hint>
+      <answer>
+        <p>A.</p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-arccos">
+    <p>The <term>arccosine</term> function, denoted <m>\arccos(x)</m>, is the inverse of the
+    restriction of <m>\cos(x)</m> to the domain <m>[0,\pi]</m>.</p>
+    <p>In other words, <m>\arccos(x)</m> is the unique angle <m>\theta</m> with 
+    <m>0 \leq \theta \leq \pi</m> such that <m>\cos(\theta)=x</m>.</p>
+    </definition>
+  
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following, without the use of technology.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\arccos\left(\dfrac{1}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{3}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arccos\left(-1\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\pi</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arccos\left(\dfrac{\sqrt{2}}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{4}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arccos\left(-\dfrac{\sqrt{3}}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\frac{5\pi}{6}</m></p>
+        </answer>
+      </task>
+    </activity>
 
     </subsection>
 
