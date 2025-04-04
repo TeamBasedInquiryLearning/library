@@ -32,7 +32,7 @@
       </answer>
     </activity>
 
-    <activity>
+    <activity xml:id="activity-arcsin-application">
       <statement>
         <p>A carpenter is cutting a hand rail for a ramp on his mitre saw.
         The ramp goes up 4 feet, and the length of the hand rail is 48 feet long.
@@ -354,6 +354,38 @@ TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detec
           <p><m>\dfrac{\pi}{6}</m></p>
         </answer>
       </task>
+    </activity>
+
+    <activity>
+    <introduction>
+      <p>Sometimes, as in <xref ref="activity-arcsin-application"/>, we need to find an inverse
+      trigonometric function that does not produce one of our special angles.</p>
+      <p>Compute each of the following using technology (e.g. a calculator).</p>
+    </introduction>
+    <task>
+      <statement>
+        <p><m>\arcsin\left(\frac{1}{12}\right)</m></p>
+      </statement>
+      <answer>
+        <p><m> 4.78^\circ</m> or <m>0.083</m> radians</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>\arccos\left(-\dfrac{3}{5}\right)</m></p>
+      </statement>
+      <answer>
+        <p><m> 126.9^\circ</m> or <m>2.21</m> radians</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>\arctan\left(2\right)</m></p>
+      </statement>
+      <answer>
+        <p><m> 63.43^\circ</m> or <m>1.11</m> radians</p>
+      </answer>
+    </task>
     </activity>
 
 
