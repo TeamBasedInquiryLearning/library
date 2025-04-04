@@ -266,6 +266,97 @@ TBIL.trig_plot(cos(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
       </task>
     </activity>
 
+    <activity>
+      <statement>
+        <p>Which of the following domain restrictions of <m>\tan(x)</m> is one-to-one?</p>
+        <ol marker="A." cols="2">
+          <li>
+            <p><m>0 \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,0,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2, detect_poles=True)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,-pi/2,pi/2),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>0 \leq x \leq 2\pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,0,2*pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detect_poles=True)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\pi \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detect_poles=True)
+              </sageplot></image></p>
+          </li>
+        </ol>
+      </statement>
+      <hint>
+        <p>Use the horizontal line test.</p>
+      </hint>
+      <answer>
+        <p>A. and B.</p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-arctan">
+    <p>The <term>arctangent</term> function, denoted <m>\arctan(x)</m>, is the inverse of the
+    restriction of <m>\tan(x)</m> to the domain <m>(-\dfrac{\pi}{2},\dfrac{\pi}{2})</m>.</p>
+    <p>In other words, <m>\arctan(x)</m> is the unique angle <m>\theta</m> with 
+    <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m> such that <m>\tan(\theta)=x</m>.</p>
+    </definition>
+  
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following, without the use of technology.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\arctan\left(1\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{4}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arctan\left(-\sqrt{3}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>-\dfrac{\pi}{3}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arctan\left(0\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>0</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arctan\left(\dfrac{\sqrt{3}}{3}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\frac{\pi}{6}</m></p>
+        </answer>
+      </task>
+    </activity>
+
+
     </subsection>
 
     <exercises>
