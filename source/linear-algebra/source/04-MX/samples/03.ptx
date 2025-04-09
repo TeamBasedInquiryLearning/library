@@ -1,26 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-MX3"><title>MX3</title>
-<statement>
-    Use a matrix inverse to solve the following matrix-vector equation.
-    <me>\left[\begin{array}{ccc}
-        1&amp; 2&amp; 1\\
-        0&amp; 0&amp; 2\\
-        1&amp; 1&amp; 1\\
-        \end{array}\right] \vec{v} = \left[\begin{array}{c}4\\ -2 \\ 2 \end{array}\right]</me>
-</statement>
-<solution>
-    Using the techniques from section <xref ref="MX3"></xref>, and letting <m>M = \left[\begin{array}{ccc}
-        1&amp; 2&amp; 1\\
-        0&amp; 0&amp; 2\\
-        1&amp; 1&amp; 1\\
-        \end{array}\right]</m>, we find <m>M^{-1} = \left[\begin{array}{ccc}
-        -1&amp; -1/2&amp; 2\\
-        1&amp; 0&amp; -1\\
-        0&amp; 1/2&amp; 0\\
-        \end{array}\right]</m>.
-    Our equation can be written as <m>M\vec{v} = \left[\begin{array}{c}4\\ -2 \\ 2 \end{array}\right]</m>, and may therefore be solved via 
-    <me>\vec{v} = I\vec{v} = M^{-1}M\vec{v} = M^{-1}\left[\begin{array}{c}4\\ -2 \\ 2 \end{array}\right] = 
-        \left[\begin{array}{c}1\\ 2 \\ -1 \end{array}\right]</me>
-</solution>
+<example xml:id="sample-MX3">
+    <title>MX3</title>
+    <introduction>
+        <p> Consider the system of equations <me>\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; -
+            &amp; 3 \, x_{3} &amp; = &amp; -2 \\ 3 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; - &amp; 5
+            \, x_{3} &amp; = &amp; -10 \\ x_{1} &amp; - &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; =
+            &amp; -4 \\ \end{matrix}</me> with a unique solution. </p>
+    </introduction>
+    <task>
+        <statement>
+            <p> Explain and demonstrate how this problem can be restated using matrix
+                multiplication. </p>
+        </statement>
+        <answer>
+            <p>
+                This is equivalent to the vector equation
+                <m>T(\vec x)=\left[\begin{array}{c} -2 \\ -10 \\ -4 \end{array}\right]</m>
+                where <m>T</m> has the standard matrix
+                <m>\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
+                    -1 &amp; -2 \end{array}\right]</m>, so we may rewrite this as
+                <me>\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
+                    -1 &amp; -2 \end{array}\right]\left[\begin{array}{c} x_{1} \\ x_{2} \\ x_{3}
+                    \end{array}\right]=\left[\begin{array}{c} -2 \\ -10 \\ -4 \end{array}\right]</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p> Use the properties of matrix multiplication to find the unique solution. </p>
+        </statement>
+        <answer>
+            <p>
+                Using technology to find <m>\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
+                    -1 &amp; -2 \end{array}\right]^{-1}=
+                    \left[\begin{array}{ccc} -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -4 \\ -1 &amp; 0
+                    &amp; 1 \end{array}\right]</m>,
+                we have
+                <me>\left[\begin{array}{ccc} -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -4 \\ -1 &amp; 0
+                    &amp; 1 \end{array}\right]\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
+                    -1 &amp; -2 \end{array}\right]\left[\begin{array}{c} x_{1} \\ x_{2} \\ x_{3}
+                    \end{array}\right]=\left[\begin{array}{ccc} -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -4 \\ -1 &amp; 0
+                    &amp; 1 \end{array}\right]\left[\begin{array}{c} -2 \\ -10 \\ -4 \end{array}\right]</me>
+                and therefore see that (using technology to multiply matrices)
+                <me>\left[\begin{array}{c} x_{1} \\ x_{2} \\ x_{3}
+                    \end{array}\right]=\left[\begin{array}{c} -4 \\ 4 \\ -2 \end{array}\right]</me>.
+            </p>
+        </answer>
+    </task>
 </example>
