@@ -1,48 +1,65 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-MX4"><title>MX4</title>
-<statement>
-    <p>
-Let <m>A</m> be a <m>4\times4</m> matrix.
-    </p>
-    <ol>
-        <li>
+<example xml:id="sample-MX4">
+    <title>MX4</title>
+    <introduction>
+        <p>Let <m>A</m> be <em>any</em> <m>4 \times 4</m> matrix.</p>
+    </introduction>
+    <task>
+        <statement>
+            <p> Give a <m>4 \times 4</m> matrix <m>M</m> that may be used to perform the row
+                operation <m>R_4 \leftrightarrow R_2</m>. </p>
+        </statement>
+        <solution>
             <p>
-Give a <m>4\times 4</m> matrix <m>P</m> that may be used to perform the row
-      operation <m>{R_3} \to R_3+4 \, {R_1} </m>.
+                <m>I = \left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp;
+                    0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right] \stackrel{R_4 \leftrightarrow R_2}{\sim}
+                \left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp;
+                    1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end{array}\right] = M</m>
             </p>
-        </li>
-        <li>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p> Give a <m>4 \times 4</m> matrix <m>N</m> that may be used to perform the row
+                operation <m>-5 R_4 \to R_4</m>. </p>
+        </statement>
+        <solution>
             <p>
-Give a <m>4\times 4</m> matrix <m>Q</m> that may be used to perform the row
-      operation <m>{R_1} \to -4 \, {R_1}</m>.
+                <m>I = \left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp;
+                    0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right] \stackrel{-5 R_4 \to R_4}{\sim}
+                \left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp;
+                    0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -5 \end{array}\right] = N</m>
             </p>
-        </li>
-        <li>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p> Give a <m>4 \times 4</m> matrix <m>Q</m> that may be used to perform the row
+                operation <m>R_2 + 3 R_3 \to R_2</m>. </p>
+        </statement>
+        <solution>
             <p>
-Use matrix multiplication to describe the matrix obtained by applying 
-        <m>{R_3} \to 4 \, {R_1} + {R_3}</m> and then <m>{R_1} \to -4 \, {R_1}</m>
-      to <m>A</m> (note the order).
+                <m>I = \left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp;
+                    0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right] \stackrel{R_2 + 3 R_3 \to R_2}{\sim}
+                \left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 3 &amp;
+                    0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right] = Q</m>
             </p>
-        </li>
-    </ol>
-</statement>
-<solution>
-    <ol>
-        <li>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p> Use matrix multiplication to express the matrix obtained by first applying <m>R_2 +
+                3 R_3 \to R_2</m>, then <m>R_4 \leftrightarrow R_2</m>, and finally <m>-5 R_4 \to
+                R_4</m> to <m>A</m> (note the order). </p>
+        </statement>
+        <solution>
             <p>
-<m>P=\left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 4 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right]</m>
+                We left-multiply <m>A</m> by the matrix <m>Q</m> for <m>R_2 +
+                3 R_3 \to R_2</m>, then left-multiply <m>QA</m> by <m>M</m> for <m>R_4 \leftrightarrow R_2</m>, and
+                finally left-multiply <m>MQA</m> by <m>N</m> for <m>-5 R_4 \to
+                R_4</m>:
+                <me>NMQA</me>.
             </p>
-        </li>
-        <li>
-            <p>
-<m>Q=\left[\begin{array}{cccc} -4 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1\end{array}\right]</m>
-            </p>
-        </li>
-        <li>
-            <p>
-<m>QPA</m>
-            </p>
-        </li>
-    </ol>
-</solution>
+        </solution>
+    </task>
 </example>
