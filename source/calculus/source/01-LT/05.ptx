@@ -294,7 +294,9 @@
 
         <activity xml:id="infinity-rational2">
             <introduction>
+              <p>
                 In this activity we will examine functions whose limits as <m>x</m> approaches <m>\pm \infty</m> are nonzero constants.
+              </p>
             </introduction>
 
 
@@ -548,9 +550,11 @@
         </activity>
 
         <warning>
+          <p>
             For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long-term behavior, so the limit does not exist.
             Notice that this is different from the limit being <m>\infty</m> in which case the outputs have a clear behavior: they are getting larger and larger.
             Some authors apply <q>does not exist</q> for both of these cases. Beware!
+          </p>
         </warning>
 
         <activity xml:id="infinity-ext1">
