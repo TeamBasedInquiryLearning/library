@@ -388,6 +388,499 @@ TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detec
     </task>
     </activity>
 
+    <observation>
+      <p>Next, we look at the graphs of <m>\arcsin(x)</m>, <m>\arccos(x)</m>, and <m>\arctan(x)</m>.
+      </p>
+    </observation>
+
+    <activity xml:id="activity-graph-arcsin">
+      <introduction>
+        <p>Consider the function <m>f(x)=\arcsin(x)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Complete the table of values.</p>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arcsin(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> </cell>
+            </row>
+          </tabular>
+        </statement>
+        <hint>
+          <p>Recall that <m>\theta=\arcsin(x)</m> means <m>\sin(\theta)=x</m>.</p>
+        </hint>
+        <answer>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arcsin(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> <m>-\dfrac{\pi}{2}</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> <m>\dfrac{\pi}{2}</m></cell>
+            </row>
+          </tabular>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\arcsin(x)</m>.  
+            Then sketch in the graph of the arcsine curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+for xval in [-1,-sqrt(3)/2,-sqrt(2)/2,-1/2,0,1/2,sqrt(2)/2,sqrt(3)/2,1]:
+    p+=point((xval,arcsin(xval)),pointsize=50,color="blue")
+p.SHOW_OPTIONS['xmin']=-pi
+p.SHOW_OPTIONS['xmax']=pi
+p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>f(x)=\arcsin(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[-1,1]</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>f(x)=\arcsin(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[-\dfrac{\pi}{2},\dfrac{\pi}{2}]</m></p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-graph-arccos">
+      <introduction>
+        <p>Consider the function <m>f(x)=\arccos(x)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Complete the table of values.</p>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arccos(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> </cell>
+            </row>
+          </tabular>
+        </statement>
+        <hint>
+          <p>Recall that <m>\theta=\arccos(x)</m> means <m>\cos(\theta)=x</m>.</p>
+        </hint>
+        <answer>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arccos(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> <m>\pi</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>\dfrac{\5pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>\dfrac{3\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> <m>\dfrac{2\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell><m>\dfrac{\pi}{2}</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> <m>\dfrac{2\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> <m>0</m></cell>
+            </row>
+          </tabular>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\arccos(x)</m>.  
+            Then sketch in the graph of the arccosine curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+for xval in [-1,-sqrt(3)/2,-sqrt(2)/2,-1/2,0,1/2,sqrt(2)/2,sqrt(3)/2,1]:
+    p+=point((xval,arccos(xval)),pointsize=50,color="blue")
+p.SHOW_OPTIONS['xmin']=-pi
+p.SHOW_OPTIONS['xmax']=pi
+p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>f(x)=\arccos(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[-1,1]</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>f(x)=\arccos(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[0,\pi]</m></p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-graph-arctan">
+      <introduction>
+        <p>Consider the function <m>f(x)=\arctan(x)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Complete the table of values.</p>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arctan(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-\sqrt{3}</m></cell>
+              <cell> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-1</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>1</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\sqrt{3}</m> </cell>
+              <cell> </cell>               
+            </row>
+          </tabular>
+        </statement>
+        <hint>
+          <p>Recall that <m>\theta=\arcsin(x)</m> means <m>\sin(\theta)=x</m>.</p>
+        </hint>
+        <answer>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arctan(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-\sqrt{3}</m></cell>
+              <cell><m>-\dfrac{2\pi}{3}</m> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-1</m> </cell>
+              <cell> <m>-\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> <m>\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>1</m> </cell>
+              <cell> <m>\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\sqrt{3}</m> </cell>
+              <cell> <m>\dfrac{\pi}{3}</m></cell>               
+            </row>
+          </tabular>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\arctan(x)</m>.  
+            Then sketch in the graph of the arctangent curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+for xval in [-sqrt(3),-1,-1/sqrt(3),0,1/sqrt(3),1,sqrt(3)]:
+    p+=point((xval,arctan(xval)),pointsize=50,color="blue")
+p.SHOW_OPTIONS['xmin']=-pi
+p.SHOW_OPTIONS['xmax']=pi
+p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>f(x)=\arctan(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>(-\infty,\infty)</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>f(x)=\arctan(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)</m></p>
+        </answer>
+      </task>
+    </activity>   
+
+    <activity>
+      <introduction>
+        <p>Sometimes when solving applied problems, we need to exactly (not approximately) evaluate
+          expressions like <m>\sin\left(\arccos\left(\frac{5}{13}\right)\right)</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Which of the following sentences describe the expression <m>\sin\left(\arccos\left(\frac{5}{13}\right)\right)</m>?
+          </p>
+          <ol marker="A.">
+            <li><p>The angle whose cosine is the same as the sine of <m>\frac{5}{13}</m>.</p></li>
+            <li><p>The angle whose sine is the same as the cosine of <m>\frac{5}{13}</m>.</p></li>
+            <li><p>The cosine of the angle whose sine is <m>\frac{5}{13}</m>.</p></li>
+            <li><p>The sine of the angle whose cosine is <m>\frac{5}{13}</m>.</p></li>
+          </ol>
+        </statement>
+        <answer>
+          <p>D.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Let <m>\theta = \arccos(\frac{5}{13})</m>.  Draw a right triangle with an angle of <m>\theta</m>,
+            and find the lengths of its three sides.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+            p=Graphics()
+            p+=line([(0,0),(12,0),(12,5),(0,0)],thickness="1",color="black")
+            p+=text(r"$\theta$", (11.5,3.8),fontsize=15,color="black")
+            p+=arc((12,5),1,sector=(3*pi/2-arccos(5/12),3*pi/2),color="black")
+            p+=text("$5$",(12.2,2.5),fontsize=15,color="black")
+            p+=text("$13$",(6,2.8),fontsize=15,color="black")
+            p+=text("$12$",(6,-0.3),fontsize=15,color="blue")
+            p.axes(False)
+            p.set_aspect_ratio(1)
+            p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Find <m>\sin(\theta)</m>.  Since we defined <m>\theta = \arccos(\frac{5}{13})</m>, this gives us 
+            <m>\sin(\arccos(\frac{5}{13}))</m>.
+          </p>
+          <ol marker="A.">
+            <li><p><m>\dfrac{5}{13}</m></p></li>
+            <li><p><m>\dfrac{12}{13}</m></p></li>
+            <li><p><m>\dfrac{5}{12}</m></p></li>
+            <li><p><m>\dfrac{13}{12}</m></p></li>
+          </ol>
+        </statement>
+        <answer>
+          <p>B.</p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\tan(\arcsin(\frac{8}{17}))</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{8}{15}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\sec(\arctan(\frac{24}{7}))</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{25}{7}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\tan(\arcsin(\frac{3}{4}))</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{3}{\sqrt{7}}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\cos(\arcsin(x))</m></p>
+        </statement>
+        <hint>
+          <p>Draw an appropriate right triangle with two sides as <m>x</m> and <m>1</m>.
+          </p>
+        </hint>
+        <answer>
+          <p><m>\sqrt{1-x^2}</m></p>
+        </answer>
+      </task>
+    </activity>
+
+
 
     </subsection>
 
