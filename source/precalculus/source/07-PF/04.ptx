@@ -124,7 +124,7 @@ TBIL.trig_plot(sin(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
     <p>The <term>arcsine</term> function, denoted <m>\arcsin(x)</m>, is the inverse of the
     restriction of <m>\sin(x)</m> to the domain <m>[-\dfrac{\pi}{2},\dfrac{\pi}{2}]</m>.</p>
     <p>In other words, <m>\arcsin(x)</m> is the unique angle <m>\theta</m> with 
-    <m>-\dfrac{\pi}{2} \leq \theta \dfrac{\pi}{2}</m> such that <m>\sin(\theta)=x</m>.</p>
+    <m>-\dfrac{\pi}{2} \leq \theta \leq \dfrac{\pi}{2}</m> such that <m>\sin(\theta)=x</m>.</p>
     </definition>
 
     <aside>
