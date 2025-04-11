@@ -129,6 +129,7 @@ TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
 <xi:include href="../../../common/sagemath/library.sage" parse="text" />
 p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
 p+=arc((0,0),1,sector=(0,pi/2),color="blue",thickness=3)
+p+=text("$1$", (0.5,0.05),color="black")
 p
         </sageplot>
         </image>
