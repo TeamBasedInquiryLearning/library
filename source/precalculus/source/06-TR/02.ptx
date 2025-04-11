@@ -18,7 +18,7 @@
         <image width="50%">
         <sageplot>
 <xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(pi/4,show_axes=True)
+TBIL.plot_angle(-7*pi/4,show_axes=True)
         </sageplot>
         </image>
         <p>Which of the following angles describe the plotted angle?</p>
