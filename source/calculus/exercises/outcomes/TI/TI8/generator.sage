@@ -96,8 +96,12 @@ class Generator(BaseGenerator):
         p = choice([pl1s[2],pg1s[2]])
         x_0 = choice([-1,1])*x_0s[4]
         task["integrand"] = k/(x-x_0)^p
-        task["bottom"] = x_0 - randrange(1,5)
-        task["top"] = x_0 + randrange(1,5)
+        if choice([True, False]):
+            task["bottom"] = x_0 + randrange(1,5)
+            task["top"] = task["bottom"] + randrange(1,5)
+        else:
+            task["top"] = x_0 - randrange(1,5)
+            task["bottom"] = task["top"] - randrange(1,5)
         task["proper"] = True
         tasks.append(task)
 
