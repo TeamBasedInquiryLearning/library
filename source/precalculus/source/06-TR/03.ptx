@@ -241,6 +241,81 @@
   </statement>
 </definition>
 
+<activity xml:id="find-trig-function">
+  <introduction>
+    <p>
+      Let <m>ABC</m> be a right triangle with lengths <m>a=12</m>, <m>b=35</m>, and <m>c=37</m>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Draw a right triangle and label it with angles <m>A</m>, <m>B</m>, and <m>C</m> as well as with the lengths given above. </p>
+    </statement>
+    <answer>
+      <p>
+        Students should draw a triangle so that <m>C</m> is the hypotenuse and each angle is across from the correct measure.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\sin A</m>.
+        <ol marker= "A." cols="3">
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{12}{37}</m> </li>
+          <li> <m>\dfrac{12}{35}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\cos A</m>.
+        <ol marker= "A." cols="3">
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{12}{37}</m> </li>
+          <li> <m>\dfrac{12}{35}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\tan A</m>.
+        <ol marker= "A." cols="3">
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{12}{37}</m> </li>
+          <li> <m>\dfrac{12}{35}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+  </task>
+
+</activity>
+
   <activity xml:id="determine-which-trig-function">
     <introduction>
       <p>
