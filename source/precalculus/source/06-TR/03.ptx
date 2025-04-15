@@ -175,6 +175,12 @@
   </task>
 </activity>
 
+<remark>
+  <p>
+  The Pythagorean Theorem can be very helpful in finding the third side of a right triangle as long as we know the length of two other sides. In <xref ref="intro-to-using-trig"/>, only one side and one angle were given. In this case, the Pythagorean Theorem is not enough to help us find another side of the right triangle. 
+  </p>
+</remark>
+
 <definition xml:id="def-sides-of-right-triangles">
   <statement>
     <p>
@@ -200,7 +206,7 @@
       </li>
     </ul>
     <p>
-      When given an angle, all sides of a triangle can be labeled. For example, suppose angle <m>A</m> is given, then the sides of a right triangle can be labeled as:
+      When given an angle, all sides of a triangle can be labeled from that angle's perspective. For example, from angle <m>A</m>'s perspective, the sides of a right triangle are labeled as:
       <figure xml:id="labeling-sides-of-right-triangle">
         <image source="Images/Defining-sides-of-a-triangle.png"/>
         <caption> From the perspective of angle <m>A</m>, all sides of a right triangle can be labeled.</caption>
@@ -211,16 +217,12 @@
 
 
 
-<remark>
-  <p>
-  The Pythagorean Theorem can be very helpful in finding the third side of a right triangle as long as we know the length of two other sides. In <xref ref="intro-to-using-trig"/>, only one side and one angle were given. In this case, the Pythagorean Theorem is not enough to help us find another side of the right triangle. 
-  </p>
-</remark>
+
 
 <definition xml:id="def-right-triangle-trigonometry">
   <statement>
     <p>
-      <term>Trigonometric Functions</term> such as sine, cosine, and tangent are based on the relationships between a given angle <m>\theta</m> and side lengths in a right triangle. Three trigonometric functions, sine, cosine, and tangent, are often used to understand the relationships between a given angle of a triangle and its sides. For acute angles, such as <m>\theta</m>, these functions can be defined as ratios between the sides of a right triangle. 
+      We will define <term>trigonometric functions</term> for a given angle <m>\theta</m> as ratios between the side lengths of a right triangle. The first three trigonometric functions we will discuss are the sine function, the cosine function, and the tangent function.
         <md> 
           <mrow>
             \sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}
@@ -234,7 +236,7 @@
         </md> 
     </p>
     <p>
-      Notice that these are defined according to the sides of a triangle - which is why it is important to be able to label correctly!
+      Notice that these are defined according to the sides of a triangle from the perspective of an angle <m>\theta</m>. This is why it is important to be able to label the triangle correctly!
     </p>
   </statement>
 </definition>
