@@ -21,10 +21,17 @@
 <definition xml:id="def-pythagorean-theorem">
   <statement>
     <p>
-      The <term>Pythagorean Theorem</term> is <me>a^2+b^2=c^2</me>, where <m>a</m> and <m>b</m> are lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse. If we know the lengths of any two sides of a right triangle, we can find the length of the third side. 
+      Given a right triangle with legs of length <m>a</m> and <m>b</m> and hypotenuse of length <m>c</m>, the following equation holds:
+      <me>a^2+b^2=c^2</me> This is called the <term>Pythagorean Theorem</term>. 
     </p>
   </statement>
 </definition>
+
+<remark>
+  <p>
+    The Pythagorean Theorem is helpful because if we know the lengths of any two sides of a right triangle, we can always find the length of the third side. 
+  </p>
+</remark>
 
 <activity xml:id="finding-length-of-3-4-5-triangle">
   <introduction> 
