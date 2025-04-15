@@ -2,35 +2,65 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-For each of the following integrals, identify if the integral is proper or improper.
-If improper, then compute the integral by computing an appropriate limit.
+Consider each of the following definite integrals.
         </p>
     </intro>
     <!-- {{#tasks}} -->
     <knowl>
-        <content>
+        <intro>
             <p>
                 <m>
 \displaystyle\int_{ {{bottom}} }^{ {{top}} }
 {{integrand}} dx
                 </m>.
             </p>
-        </content>
-        <outtro>
-            <!-- {{#proper}} -->
-                <p>This integral is proper.</p>
-            <!-- {{/proper}} -->
-            <!-- {{^proper}} -->
+        </intro>
+        <knowl>
+            <content>
+                <p>Demonstrate how to determine whether this integral is proper or improper.</p>
+            </content>
+            <outtro>
+                <!-- {{#proper}} -->
+                    <p>This integral is proper.</p>
+                <!-- {{/proper}} -->
+                <!-- {{^proper}} -->
+                    <p>This integral is improper.</p>
+                <!-- {{/proper}} -->
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>If the integral is improper, show how to express it as a limit.</p>
+            </content>
+            <outtro>
+                <!-- {{#proper}} -->
+                    <p>N/A</p>
+                <!-- {{/proper}} -->
+                <!-- {{^proper}} -->
+                    <p>TODO</p>
+                <!-- {{/proper}} -->
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>If the integral is improper, demonstrate how to evaluate this limit to compute the value of the integral.</p>
+            </content>
+            <outtro>
+                <!-- {{#proper}} -->
+                    <p>N/A</p>
+                <!-- {{/proper}} -->
+                <!-- {{^proper}} -->
                 <p><m>
-\renewcommand{\log}{\ln}
-\displaystyle\int_{ {{bottom}} }^{ {{top}} }
-{{integrand}} dx = {{value}}
-<!-- {{#approx}} -->
-\approx {{approx}}
-<!-- {{/approx}} -->
-                </m>.</p>
-            <!-- {{/proper}} -->
-        </outtro>
+                    \renewcommand{\log}{\ln}
+                    \displaystyle\int_{ {{bottom}} }^{ {{top}} }
+                    {{integrand}} dx = {{value}}
+                    <!-- {{#approx}} -->
+                    \approx {{approx}}
+                    <!-- {{/approx}} -->
+                                    </m>.</p>
+                <!-- {{/proper}} -->
+            </outtro>
+        </knowl>
     </knowl>
     <!-- {{/tasks}} -->
 </knowl>
