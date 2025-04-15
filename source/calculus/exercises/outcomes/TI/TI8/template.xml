@@ -37,7 +37,13 @@ Consider each of the following definite integrals.
                     <p>N/A</p>
                 <!-- {{/proper}} -->
                 <!-- {{^proper}} -->
-                    <p>TODO</p>
+                    <p>
+                        <m>
+\displaystyle\lim_{ a \to {{limit}} }
+\int_{ {{limit_bottom}} }^{ {{limit_top}} }
+{{integrand}} dx
+                        </m>.
+                    </p>
                 <!-- {{/proper}} -->
             </outtro>
         </knowl>
@@ -51,13 +57,11 @@ Consider each of the following definite integrals.
                 <!-- {{/proper}} -->
                 <!-- {{^proper}} -->
                 <p><m>
-                    \renewcommand{\log}{\ln}
-                    \displaystyle\int_{ {{bottom}} }^{ {{top}} }
-                    {{integrand}} dx = {{value}}
+                    {{value}}
                     <!-- {{#approx}} -->
                     \approx {{approx}}
                     <!-- {{/approx}} -->
-                                    </m>.</p>
+                </m>.</p>
                 <!-- {{/proper}} -->
             </outtro>
         </knowl>

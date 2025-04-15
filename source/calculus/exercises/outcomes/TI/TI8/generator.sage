@@ -22,10 +22,16 @@ class Generator(BaseGenerator):
             task["bottom"] = x_0 + randrange(1,8)
             task["top"] = oo
             task["value"] = -k/(1-p)*(task["bottom"]-x_0)^(1-p)
+            task["limit"] = oo
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
         else:
             task["top"] = x_0 - randrange(1,8)
             task["bottom"] = -oo
             task["value"] = -k/(1-p)*(x_0-task["top"])^(1-p)
+            task["limit"] = -oo
+            task["limit_bottom"] = " a "
+            task["limit_top"] = task["top"]
         task["approx"] = round(task["value"], ndigits=5)
         tasks.append(task)
         # divergent
@@ -41,6 +47,9 @@ class Generator(BaseGenerator):
                 task["value"] = -oo
             else:
                 task["value"] = oo
+            task["limit"] = oo
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
         else:
             task["integrand"] = k/(x-x_0)^p
             task["top"] = x_0 - randrange(1,8)
@@ -49,6 +58,9 @@ class Generator(BaseGenerator):
                 task["value"] = -oo
             else:
                 task["value"] = oo
+            task["limit"] = -oo
+            task["limit_bottom"] = " a "
+            task["limit_top"] = task["top"]
         tasks.append(task)
 
         # improper, finite bounds
@@ -62,10 +74,16 @@ class Generator(BaseGenerator):
             task["bottom"] = x_0
             task["top"] = x_0 + randrange(1,8)
             task["value"] = k/(1-p)*(task["top"]-x_0)^(1-p)
+            task["limit"] = latex(x_0) + "^{+} "
+            task["limit_top"] = task["top"]
+            task["limit_bottom"] = " a "
         else:
             task["top"] = x_0
             task["bottom"] = x_0 - randrange(1,8)
             task["value"] = k/(1-p)*(x_0-task["bottom"])^(1-p)
+            task["limit"] = latex(x_0) + "^{-} "
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
         task["approx"] = round(task["value"], ndigits=5)
         tasks.append(task)
         # divergent
@@ -81,6 +99,9 @@ class Generator(BaseGenerator):
                 task["value"] = -oo
             else:
                 task["value"] = oo
+            task["limit"] = latex(x_0) + "^{-} "
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
         else:
             task["bottom"] = x_0
             task["top"] = x_0 + randrange(1,8)
@@ -88,6 +109,9 @@ class Generator(BaseGenerator):
                 task["value"] = -oo
             else:
                 task["value"] = oo
+            task["limit"] = latex(x_0) + "^{+} "
+            task["limit_top"] = task["top"]
+            task["limit_bottom"] = " a "
         tasks.append(task)
 
         # proper
