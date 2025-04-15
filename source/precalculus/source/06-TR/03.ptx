@@ -244,7 +244,7 @@
 <activity xml:id="find-trig-function">
   <introduction>
     <p>
-      Let <m>ABC</m> be a right triangle with lengths <m>a=12</m>, <m>b=35</m>, and <m>c=37</m>.
+      Let <m>ABC</m> be a right triangle with lengths <m>a=35</m>, <m>b=12</m>, and <m>c=37</m>.
     </p>
   </introduction>
 
@@ -265,9 +265,9 @@
       <p>
         Find <m>\sin A</m>.
         <ol marker= "A." cols="3">
-          <li> <m>\dfrac{35}{37}</m> </li>
           <li> <m>\dfrac{12}{37}</m> </li>
-          <li> <m>\dfrac{12}{35}</m> </li>
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{35}{12}</m> </li>
         </ol>
       </p>
     </statement>
@@ -283,9 +283,9 @@
       <p>
         Find <m>\cos A</m>.
         <ol marker= "A." cols="3">
-          <li> <m>\dfrac{35}{37}</m> </li>
           <li> <m>\dfrac{12}{37}</m> </li>
-          <li> <m>\dfrac{12}{35}</m> </li>
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{35}{12}</m> </li>
         </ol>
       </p>
     </statement>
@@ -301,15 +301,15 @@
       <p>
         Find <m>\tan A</m>.
         <ol marker= "A." cols="3">
-          <li> <m>\dfrac{35}{37}</m> </li>
           <li> <m>\dfrac{12}{37}</m> </li>
-          <li> <m>\dfrac{12}{35}</m> </li>
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{35}{12}</m> </li>
         </ol>
       </p>
     </statement>
     <answer>
       <p>
-        D
+        C
       </p>
     </answer>
   </task>
@@ -445,7 +445,7 @@
     <definition xml:id="def-reciprocal-trig-functions">
       <statement>
         <p>
-          Although we have only worked with three trigonometric functions thus far, there are actually six trigonometric functions. The first three rations (sine, cosine, and tangent) are referred to as the <term>basic trigonometric functions</term>. The other three functions, <term>cosecant</term>, <term>secant</term>, and <term>cotangent</term> can be found by taking the reciprocal of the basic trigonometric functions. These three ratios are referred to as the <term>reciprocal trigonometric functions</term> and can be defined as follows:
+         The three trigonometric ratios we have worked with so far (sine, cosine, and tangent) are referred to as the <term>basic trigonometric functions</term>. There are three additional functions, <term>cosecant</term>, <term>secant</term>, and <term>cotangent</term> that are found by taking the reciprocal of the basic trigonometric functions. These three ratios are referred to as the <term>reciprocal trigonometric functions</term> and can be defined as follows:
           <md> 
           <mrow>
             \csc\theta=\frac{\text{hypotenuse}}{\text{opposite}}=\frac{1}{\sin\theta}
@@ -472,7 +472,7 @@
       <statement>
         <p>
           Find <m>\sin{A}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
@@ -489,7 +489,7 @@
       <statement>
         <p>
           Find <m>\csc{A}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{12}{35}</m> </li>
             <li> <m>\frac{12}{37}</m> </li>
             <li> <m>\frac{37}{35}</m> </li>
@@ -506,7 +506,7 @@
       <statement>
         <p>
           Find <m>\cos{B}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
@@ -523,7 +523,7 @@
       <statement>
         <p>
           Find <m>\cos{B}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
