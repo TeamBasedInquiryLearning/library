@@ -717,18 +717,22 @@ Consider the row operation <m>R_1+4R_3\to R_1</m> applied as follows to show
 <m>A\sim B</m>:
         </p>
 <me>
-A=\left[\begin{array}{cccc}1&amp;2&amp;3 &amp; 4\\5&amp;6 &amp; 7 &amp; 8\\9 &amp; 10 &amp; 11 &amp; 12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right] 
+A=\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] 
   \sim
-\left[\begin{array}{cccc}1+4(9)&amp;2+4(10)&amp;3+4(11) &amp; 4+4(12) \\5&amp;6 &amp; 7 &amp; 8\\9 &amp; 10 &amp; 11 &amp; 12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right]=B
+\left[\begin{array}{cccc}1+4(9)1+4(0)&amp;2+4(0)&amp;0+4(-3)&amp;-3+4(-5)\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right]=B
 </me>
     </introduction>
 <task><p> Find a matrix <m>R</m> such that <m>B=RA</m>, by applying the same row operation to 
 <m>I=\left[\begin{array}{cccc}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{array}\right]</m>.
 </p></task>
-<task><p> Find <m>\det R</m> by comparing with the previous slide.
-</p></task>
-<task><p> If <m>C \in M_{4,4}</m> is a matrix with <m>\det(C)= -3</m>, find 
-<me>\det(RC)=\det(R)\det(C).</me>
+<task><p>
+The determinant of <m>A</m> is <m>70</m>. Complete the following computation to calculate the determinant of <m>B</m>:
+<md>
+<mrow>\det(B) &amp;= \det(RA)</mrow>
+<mrow> &amp;= \det(R)\det(A)</mrow>
+<mrow> &amp;= (\unknown)(\unknown)</mrow>
+<mrow> &amp;= \unknown</mrow>
+</md>
 </p></task>
 </activity>
 
