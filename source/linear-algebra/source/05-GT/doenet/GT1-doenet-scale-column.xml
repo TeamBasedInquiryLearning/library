@@ -33,6 +33,7 @@
     </constraints>
     </point>
     <lineSegment endpoints="(0,0) $cv" styleNumber="4"/>
+    <polygon vertices="(0,0) $cv $cv+$w $w" draggable="false" styleNumber="6"/>
     <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="3"/>
   </graph>
   <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
