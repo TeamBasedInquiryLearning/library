@@ -324,18 +324,17 @@ the area of the generated parallelogram, what is the value of <m>\det([\vec{v}\h
       </slate>
     </interactive>
     <p>
-Describe the value of <m>\det([c\vec{v}\hspace{0.5em} \vec{w}])</m>:
-      <ol marker="A." cols="2">
-        <li><p><m>\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
-        <li><p><m>c\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
-        <li><p><m>c^2\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
-        <li><p>Cannot be determined from this information.</p></li>
+Which of the following is true?
+      <ol marker="A.">
+        <li><p><m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
+        <li><p><m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=c\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
+        <li><p><m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=c^2\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
       </ol>
     </p>
   </statement>
   <answer>
     <p>
-B. <m>c\det([\vec{v}\hspace{0.5em} \vec{w}])</m>: the value of <m>c</m>
+B. <m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=c\det([\vec{v}\hspace{0.5em} \vec{w}])</m>: the value of <m>c</m>
 directly scales the determinant area because it scales the base of the
 parallelogram.
     </p>
@@ -350,27 +349,33 @@ parallelogram.
       </slate>
     </interactive>
     <p>
-Describe the value of <m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])</m>.
-    <ol marker="A." cols="2">
+Which of the following is true?
+    <ol marker="A.">
       <li>
         <p>
-<m>\det([\vec{u}\hspace{0.5em} \vec{w}])=\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])=\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
         </p>
       </li>
       <li>
         <p>
-<m>\det([\vec{u}\hspace{0.5em} \vec{w}])+\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])+\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
         </p>
       </li>
       <li>
         <p>
-<m>\det([\vec{u}\hspace{0.5em} \vec{w}])\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
         </p>
       </li>
-      <li><p>Cannot be determined from this information.</p></li>
     </ol>
   </p>
   </statement>
+  <answer>
+    <p>
+B.
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])+\det([\vec{v}\hspace{0.5em} \vec{w}])</m>:
+the areas on the left may be partitioned and reorganized into the area on the right.
+    </p>
+  </answer>
 </activity>
 
 
