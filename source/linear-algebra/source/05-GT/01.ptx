@@ -281,36 +281,17 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
 
 <activity estimated-time='2'>
     <statement>
-        <p>
-The transformation of the unit square by the
-standard matrix <m>[\vec{v}\hspace{0.5em} \vec{v}]</m> is illustrated below: both
-<m>T(\vec{e}_1)=T(\vec{e}_2)=\vec{v}</m>.
-If <m>\det([\vec{v}\hspace{0.5em} \vec{v}])</m> is 
-the area of the generated parallelogram, what is the value of <m>\det([\vec{v}\hspace{0.5em} \vec{v}])</m>?
-        </p>
-<figure>
-	<image width="75%" xml:id="GT1-image-duplicate-column-determinant">
-		<latex-image>
-\begin{tikzpicture}
-%\fill[red!50!white] (0,0) rectangle (1,1);
-\draw[thin,gray,&lt;-&gt;] (-1,0)-- (4,0);
-\draw[thin,gray,&lt;-&gt;] (0,-1)-- (0,4);
-\draw[thick,blue,-&gt;] (0,0) -- node[below] {\(\vec{v}\)} (3,2);
-\end{tikzpicture}
-		</latex-image>
-	</image>
-	<caption>Transformation of the unit square by a matrix with identical columns.</caption>
-</figure>
-        <p>The value of <m>\det([\vec{v}\hspace{0.5em} \vec{v}])</m> is:</p>
+      <interactive label="GT1-interactive-add-column-multiples" platform="doenetml" width="100%" aspect="3:2">
+        <slate surface="doenetml">
+          <xi:include parse="text" href="doenet/GT1-doenet-add-column-multiples.xml"/>
+        </slate>
+      </interactive>
+        <p>Which of the following is true?</p>
   <ol marker="A." cols="2">
-<li><p> 0
-    </p></li>
-<li><p> 1
-    </p></li>
-<li><p> 2
-    </p></li>
-<li><p> 4
-    </p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=0</m></p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=1</m></p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=2</m></p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=4</m></p></li>
   </ol>
     </statement>
 </activity>
