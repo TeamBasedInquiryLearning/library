@@ -32,6 +32,7 @@
       \text{Area }= <math simplify>$te1.x*$te2.y-$te1.y*$te2.x</math>
     </m>
     <m anchor="(5,6)">
-      A= \left[\begin{array}{cc} $v.x & $v.x \\ $v.y & $v.y \end{array}\right]
+      A= \left[\begin{array}{cc} $v.x \amp $v.x \\ $v.y \amp $v.y \end{array}\right]
     </m>
   </graph>
+  
