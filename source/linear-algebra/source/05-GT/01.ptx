@@ -37,6 +37,22 @@ Consider the linear transformation <m>T\colon \IR^2\to\IR^2</m> corresponding to
 
 <subsection><title>Class Activities</title>
 
+<observation>
+  <p>
+The tool in <xref ref="GT1-figure-transformation"/> can be used to visualize the effect of
+a linear transformation (defined by its standard matrix) on the geometry of the unit square
+defined by the standard basic vectors <m>\vec e_1,\vec e_2</m>.
+  </p>
+  <figure xml:id="GT1-figure-transformation">
+    <caption>Tool to visualize a linear transformation from <m>\mathbb R^2</m> to <m>\mathbb R^2</m></caption>
+    <interactive label="GT1-interactive-transformation" platform="doenetml" width="100%" aspect="3:2">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="doenet/GT1-doenet-transformation.xml"/>
+      </slate>
+    </interactive>
+  </figure>
+</observation>
+
 <activity estimated-time='5'>
     <introduction>
         <p>
