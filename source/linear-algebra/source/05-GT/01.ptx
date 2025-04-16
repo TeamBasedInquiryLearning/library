@@ -281,9 +281,9 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
 
 <activity estimated-time='2'>
     <statement>
-      <interactive label="GT1-interactive-add-column-multiples" platform="doenetml" width="100%" aspect="3:2">
+      <interactive label="GT1-interactive-duplicate-column" platform="doenetml" width="100%" aspect="3:2">
         <slate surface="doenetml">
-          <xi:include parse="text" href="doenet/GT1-doenet-add-column-multiples.xml"/>
+          <xi:include parse="text" href="doenet/GT1-doenet-duplicate-column.xml"/>
         </slate>
       </interactive>
         <p>Which of the following is true?</p>
