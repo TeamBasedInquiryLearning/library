@@ -1,45 +1,96 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <example xml:id="sample-GT1"><title>GT1</title>
-<statement>
-    <p>
-Let <m>A</m> be a <m>4 \times 4</m> matrix with determinant <m>-7</m>.
-    </p>
-    <ol>
-        <li>
-            <p>
-Let <m>B</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_3+3R_4 \to R_3</m>. What is <m>\det(B)</m>?
-            </p>
-        </li>
-        <li>
-            <p>
-Let <m>C</m> be the matrix obtained from <m>A</m> by applying the row operation <m>-3R_2 \to R_2</m>. What is <m>\det(C)</m>?
-            </p>
-        </li>
-        <li>
-            <p>
-Let <m>D</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_3 \leftrightarrow R_4</m>. What is <m>\det(D)</m>?
-            </p>
-        </li>
-    </ol>
-</statement>
-<solution>
-    <ol>
-        <li>
-            <p>
-Adding a multiple of one row to another row does not change the determinant, so <m>\det(B)=\det(A)=-7</m>.
-            </p>
-        </li>
-        <li>
-            <p>
-Scaling a row scales the determinant by the same factor, so so <m>\det(B)=-3\det(A)=-3(-7)=21</m>.
-            </p>
-        </li>
-        <li>
-            <p>
-Swaping rows changes the sign of the determinant, so <m>\det(B)=-\det(A)=7</m>.
-            </p>
-        </li>
-    </ol>
-</solution>
+    <introduction>
+      <p>
+Let <m>A</m> be <em>any</em> <m>4 \times 4</m> matrix with determinant
+<m>4</m>. </p>
+    </introduction>
+      <task>
+        <statement>
+              <p> Let <m>Q</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_4 \leftrightarrow R_1</m>. Explain and demonstrate how to find <m>\mathrm{det}\,Q</m> without knowing the terms of <m>A</m>. </p>
+        </statement>
+        <solution>
+          <p>
+We apply this row operation to the identity matrix
+<me>
+    I=\left[\begin{array}{cccc}
+    1&amp;0&amp;0&amp;0 \\
+    0&amp;1&amp;0&amp;0 \\
+    0&amp;0&amp;1&amp;0 \\
+    0&amp;0&amp;0&amp;1 \\
+    \end{array}\right] \sim
+    \left[\begin{array}{cccc}
+    0&amp;0&amp;0&amp;1 \\
+    0&amp;1&amp;0&amp;0 \\
+    0&amp;0&amp;1&amp;0 \\
+    1&amp;0&amp;0&amp;0 \\
+    \end{array}\right] = R
+</me>
+so that <m>Q=RA</m>. It follows that
+<me>
+    \mathrm{det}\,Q=\mathrm{det}(RA)=\mathrm{det}(R)\mathrm{det}(A)=
+    (-1)(4)=-4
+</me>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p> Let <m>N</m> be the matrix obtained from <m>A</m> by applying the row operation <m>3 R_4 \to R_4</m>. Explain and demonstrate how to find <m>\mathrm{det}\,N</m> without knowing the terms of <m>A</m>. </p>
+        </statement>
+        <solution>
+          <p>
+We apply this row operation to the identity matrix
+<me>
+    I=\left[\begin{array}{cccc}
+    1&amp;0&amp;0&amp;0 \\
+    0&amp;1&amp;0&amp;0 \\
+    0&amp;0&amp;1&amp;0 \\
+    0&amp;0&amp;0&amp;1 \\
+    \end{array}\right] \sim
+    \left[\begin{array}{cccc}
+    1&amp;0&amp;0&amp;0 \\
+    0&amp;1&amp;0&amp;0 \\
+    0&amp;0&amp;1&amp;0 \\
+    0&amp;0&amp;0&amp;3 \\
+    \end{array}\right] = R
+</me>
+so that <m>N=RA</m>. It follows that
+<me>
+    \mathrm{det}\,N=\mathrm{det}(RA)=\mathrm{det}(R)\mathrm{det}(A)=
+    (3)(4)=12
+</me>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p> Let <m>M</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_4 - 3 R_2 \to R_4</m>. Explain and demonstrate how to find <m>\mathrm{det}\,M</m> without knowing the terms of <m>A</m>. </p>
+        </statement>
+        <solution>
+          <p>
+We apply this row operation to the identity matrix
+<me>
+    I=\left[\begin{array}{cccc}
+    1&amp;0&amp;0&amp;0 \\
+    0&amp;1&amp;0&amp;0 \\
+    0&amp;0&amp;1&amp;0 \\
+    0&amp;0&amp;0&amp;1 \\
+    \end{array}\right] \sim
+    \left[\begin{array}{cccc}
+    1&amp;0&amp;0&amp;0 \\
+    0&amp;1&amp;0&amp;0 \\
+    0&amp;0&amp;1&amp;0 \\
+    0&amp;-3&amp;0&amp;1 \\
+    \end{array}\right] = R
+</me>
+so that <m>M=RA</m>. It follows that
+<me>
+    \mathrm{det}\,M=\mathrm{det}(RA)=\mathrm{det}(R)\mathrm{det}(A)=
+    (1)(4)=4
+</me>.
+          </p>
+        </solution>
+      </task>
 </example>
