@@ -10,7 +10,7 @@
       \det[\vec v\hspace{0.5em}\vec w]
     </m>
     <point name="v" styleNumber="3">
-      (10,4)
+      (9,3)
       <label><m>\vec v</m></label>
     </point>
     <point name="w" styleNumber="3">
@@ -18,7 +18,7 @@
       <label><m>\vec w</m></label>
     </point>
     <point name="wcv" styleNumber="2">
-      (5,7.2)
+      (5,7)
       <label><m>c\vec v</m></label>
       <constraints>
         <constrainTo>
@@ -26,7 +26,8 @@
         </constrainTo/>
       </constraints>
     </point>
-    <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="3"/>
+    <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="4"/>
+    <polygon vertices="(0,0) $v $v+$wcv $wcv" draggable="false" styleNumber="6"/>
     <lineSegment draggable="false" endpoints="$w $wcv" styleNumber="2"/>
     <m anchor="(12,14)">
       c = <math simplify>($wcv.x-$w.x)/$v.x</math>

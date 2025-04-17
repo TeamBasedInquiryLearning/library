@@ -9,6 +9,7 @@
         </ul>
     </objectives>
 
+
     <subsection>
       <title>Warm Up</title>
       <activity>
@@ -35,6 +36,22 @@ Consider the linear transformation <m>T\colon \IR^2\to\IR^2</m> corresponding to
     </subsection>
 
 <subsection><title>Class Activities</title>
+
+<observation>
+  <p>
+The tool in <xref ref="GT1-figure-transformation"/> can be used to visualize the effect of
+a linear transformation (defined by its standard matrix) on the geometry of the unit square
+defined by the standard basic vectors <m>\vec e_1,\vec e_2</m>.
+  </p>
+  <figure xml:id="GT1-figure-transformation">
+    <caption>Tool to visualize a linear transformation from <m>\mathbb R^2</m> to <m>\mathbb R^2</m></caption>
+    <interactive label="GT1-interactive-transformation" platform="doenetml" width="90%" aspect="3:4">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="doenet/GT1-doenet-transformation.xml"/>
+      </slate>
+    </interactive>
+  </figure>
+</observation>
 
 <activity estimated-time='5'>
     <introduction>
@@ -280,36 +297,17 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
 
 <activity estimated-time='2'>
     <statement>
-        <p>
-The transformation of the unit square by the
-standard matrix <m>[\vec{v}\hspace{0.5em} \vec{v}]</m> is illustrated below: both
-<m>T(\vec{e}_1)=T(\vec{e}_2)=\vec{v}</m>.
-If <m>\det([\vec{v}\hspace{0.5em} \vec{v}])</m> is 
-the area of the generated parallelogram, what is the value of <m>\det([\vec{v}\hspace{0.5em} \vec{v}])</m>?
-        </p>
-<figure>
-	<image width="75%" xml:id="GT1-image-duplicate-column-determinant">
-		<latex-image>
-\begin{tikzpicture}
-%\fill[red!50!white] (0,0) rectangle (1,1);
-\draw[thin,gray,&lt;-&gt;] (-1,0)-- (4,0);
-\draw[thin,gray,&lt;-&gt;] (0,-1)-- (0,4);
-\draw[thick,blue,-&gt;] (0,0) -- node[below] {\(\vec{v}\)} (3,2);
-\end{tikzpicture}
-		</latex-image>
-	</image>
-	<caption>Transformation of the unit square by a matrix with identical columns.</caption>
-</figure>
-        <p>The value of <m>\det([\vec{v}\hspace{0.5em} \vec{v}])</m> is:</p>
+      <interactive label="GT1-interactive-duplicate-column" platform="doenetml" width="90%" aspect="3:4">
+        <slate surface="doenetml">
+          <xi:include parse="text" href="doenet/GT1-doenet-duplicate-column.xml"/>
+        </slate>
+      </interactive>
+        <p>Which of the following is true?</p>
   <ol marker="A." cols="2">
-<li><p> 0
-    </p></li>
-<li><p> 1
-    </p></li>
-<li><p> 2
-    </p></li>
-<li><p> 4
-    </p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=0</m></p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=1</m></p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=2</m></p></li>
+<li><p><m>\det([\vec{v}\hspace{0.5em} \vec{v}])=4</m></p></li>
   </ol>
     </statement>
 </activity>
@@ -323,18 +321,17 @@ the area of the generated parallelogram, what is the value of <m>\det([\vec{v}\h
       </slate>
     </interactive>
     <p>
-Describe the value of <m>\det([c\vec{v}\hspace{0.5em} \vec{w}])</m>:
-      <ol marker="A." cols="2">
-        <li><p><m>\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
-        <li><p><m>c\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
-        <li><p><m>c^2\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
-        <li><p>Cannot be determined from this information.</p></li>
+Which of the following is true?
+      <ol marker="A.">
+        <li><p><m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
+        <li><p><m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=c\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
+        <li><p><m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=c^2\det([\vec{v}\hspace{0.5em} \vec{w}])</m></p></li>
       </ol>
     </p>
   </statement>
   <answer>
     <p>
-B. <m>c\det([\vec{v}\hspace{0.5em} \vec{w}])</m>: the value of <m>c</m>
+B. <m>\det([c\vec{v}\hspace{0.5em} \vec{w}])=c\det([\vec{v}\hspace{0.5em} \vec{w}])</m>: the value of <m>c</m>
 directly scales the determinant area because it scales the base of the
 parallelogram.
     </p>
@@ -349,27 +346,33 @@ parallelogram.
       </slate>
     </interactive>
     <p>
-Describe the value of <m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])</m>.
-    <ol marker="A." cols="2">
+Which of the following is true?
+    <ol marker="A.">
       <li>
         <p>
-<m>\det([\vec{u}\hspace{0.5em} \vec{w}])=\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])=\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
         </p>
       </li>
       <li>
         <p>
-<m>\det([\vec{u}\hspace{0.5em} \vec{w}])+\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])+\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
         </p>
       </li>
       <li>
         <p>
-<m>\det([\vec{u}\hspace{0.5em} \vec{w}])\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])\det([\vec{v}\hspace{0.5em} \vec{w}])</m>
         </p>
       </li>
-      <li><p>Cannot be determined from this information.</p></li>
     </ol>
   </p>
   </statement>
+  <answer>
+    <p>
+B.
+<m>\det([\vec{u}+\vec{v}\hspace{0.5em} \vec{w}])=\det([\vec{u}\hspace{0.5em} \vec{w}])+\det([\vec{v}\hspace{0.5em} \vec{w}])</m>:
+the areas on the left may be partitioned and reorganized into the area on the right.
+    </p>
+  </answer>
 </activity>
 
 
@@ -394,6 +397,10 @@ The <term>determinant</term> is the unique function
     </p>
         <p>
 Note that these last two properties together can be phrased as <q>The determinant is linear in each column.</q>
+        </p>
+        <p>
+Essentially, the determinant measures the change in <q>size</q> caused by a transformation,
+where <q>size</q> means area for <m>2\times 2</m> matrices and volume for <m>3\times 3</m> matrices.
         </p>
     </statement>
 </definition>
@@ -716,36 +723,41 @@ Consider the row operation <m>R_1+4R_3\to R_1</m> applied as follows to show
 <m>A\sim B</m>:
         </p>
 <me>
-A=\left[\begin{array}{cccc}1&amp;2&amp;3 &amp; 4\\5&amp;6 &amp; 7 &amp; 8\\9 &amp; 10 &amp; 11 &amp; 12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right] 
+A=\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] 
   \sim
-\left[\begin{array}{cccc}1+4(9)&amp;2+4(10)&amp;3+4(11) &amp; 4+4(12) \\5&amp;6 &amp; 7 &amp; 8\\9 &amp; 10 &amp; 11 &amp; 12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right]=B
+\left[\begin{array}{cccc}1+4(0)&amp;2+4(0)&amp;0+4(-3)&amp;-3+4(-5)\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right]=B
 </me>
     </introduction>
 <task><p> Find a matrix <m>R</m> such that <m>B=RA</m>, by applying the same row operation to 
 <m>I=\left[\begin{array}{cccc}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{array}\right]</m>.
 </p></task>
-<task><p> Find <m>\det R</m> by comparing with the previous slide.
-</p></task>
-<task><p> If <m>C \in M_{4,4}</m> is a matrix with <m>\det(C)= -3</m>, find 
-<me>\det(RC)=\det(R)\det(C).</me>
+<task><p>
+The determinant of <m>A</m> is <m>70</m>. Complete the following computation to calculate the determinant of <m>B</m>:
+<md>
+<mrow>\det(B) &amp;= \det(RA)</mrow>
+<mrow> &amp;= \det(R)\det(A)</mrow>
+<mrow> &amp;= (\unknown)(\unknown)</mrow>
+<mrow> &amp;= \unknown</mrow>
+</md>
 </p></task>
 </activity>
 
 <activity estimated-time='5'>
     <introduction>
         <p>
-Consider the row operation <m>R_1\leftrightarrow R_3</m> applied as follows to show
+Consider the row operation <m>R_1\leftrightarrow R_4</m> applied as follows to show
 <m>A\sim B</m>:
         </p>
 <me>
-A=\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\5&amp;6&amp;7&amp;8\\9&amp;10&amp;11&amp;12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right]
+A=\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] 
   \sim
-\left[\begin{array}{cccc}9&amp;10&amp;11&amp;12\\5&amp;6&amp;7&amp;8\\1&amp;2&amp;3&amp;4 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right]=B
+\left[\begin{array}{cccc}1&amp;1&amp;1&amp;3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;2&amp;0&amp;-3\end{array}\right]=B
 </me>
     </introduction>
 <task><p> Find a matrix <m>R</m> such that <m>B=RA</m>, by applying the same row operation to <m>I</m>.
 </p></task>
-<task><p> If <m>C \in M_{4,4}</m> is a matrix with <m>\det(C)= 5</m>, find <m>\det(RC)</m>.
+<task><p>
+The determinant of <m>A</m> is <m>70</m>. Show how to compute the determinant of <m>B</m>.
 </p></task>
 </activity>
 
@@ -756,16 +768,17 @@ Consider the row operation <m>3R_2\to R_2</m> applied as follows to show
 <m>A\sim B</m>:
         </p>
 <me>
-A=\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\5&amp;6&amp;7&amp;8\\9&amp;10&amp;11&amp;12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right]
+A=\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] 
   \sim
-\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\3(5)&amp;3(6)&amp;3(7)&amp;3(8)\\9&amp;10&amp;11&amp;12 \\ 13 &amp; 14 &amp; 15 &amp; 16\end{array}\right]=B
+\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\3(4)&amp;3(1)&amp;3(3)&amp;3(0)\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] =B
 </me>
     </introduction>
     <task>
         <p> Find a matrix <m>R</m> such that <m>B=RA</m>.</p>
     </task>
-    <task><p> If <m>C \in M_{4,4}</m> is a matrix with <m>\det(C)= -7</m>, find <m>\det(RC)</m>.
-    </p></task>
+<task><p>
+The determinant of <m>A</m> is <m>70</m>. Show how to compute the determinant of <m>B</m>.
+</p></task>
 </activity>
 
 
