@@ -4,13 +4,7 @@
   "features": {},
 
   // Comment or uncomment lines below if you don't or do need that feature.
-  "postCreateCommand": {
-    "install sagemath": "bash ./.devcontainer/installSage.sh",
-    "install latex": "bash ./.devcontainer/installLatex.sh",
-    "mark repo as safe": "git config --global --add safe.directory $(pwd)",
-    "tbil setup": "bash scripts/setup.sh"
-    },
-
+  "postCreateCommand": "bash scripts/setup.sh",
 
   // Port forwarding
   // ---------------
