@@ -12,14 +12,19 @@
   <subsection>
     <title>Activities</title>
     <observation xml:id="obs-df-implicit1">
-    Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <m>x</m> and <m>y</m> is given explicitly, such as <m>y = f(x)</m>.  In this section we will examine when the relationship between <m>x</m> and <m>y</m> is given implicitly. An implicit equation looks like <m>f(x,y) = g(x,y)</m> where both sides of the equation may depend on both <m>x</m> and <m>y</m>.
+    <p>
+    Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <m>x</m> and <m>y</m> is given explicitly, such as <m>y = f(x)</m>.  In this section we will examine when the relationship between <m>x</m> and <m>y</m> is given implicitly. An implicit equation looks like <m>f(x,y) = g(x,y)</m> where both sides of the equation may depend on both <m>x</m> and <m>y</m>.      
+    </p>
     </observation>
     
     <observation xml:id="obs-df-implicit2">
+    <p>
+      
     Note that if we are taking the derivative of <m>f(x)</m> with respect to <m>x</m>, then  
         <me>\frac{d}{dx}(f(x)) = f'(x).</me>
         However, if we are taking the derivative of <m>g(y(x))</m> with respect to <m>x</m>, then 
           <me>\frac{d}{dx}(g(y)) = g'(y) \cdot \frac{dy}{dx}.</me>
+    </p>
     </observation>
     
   <activity xml:id="activity-derivative-implicit1">
@@ -38,6 +43,11 @@
                 <li><p><m>2x + 2\dfrac{dy}{dx} = 25</m></p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+              C
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -49,14 +59,30 @@
                 <li><p><m>\dfrac{dy}{dx} = \dfrac{25-2x}{2}</m></p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+              C
+            </p>
+          </answer>
       </task>
       <task>
-      <statement> <p>Plug the point <m>(-3,-4)</m> into the expression found above for the derivative to get the slope of the tangent line.</p>
+      <statement> 
+        <p>Plug the point <m>(-3,-4)</m> into the expression found above for the derivative to get the slope of the tangent line.</p>
+          <answer>
+            <p>
+              <m>\dfrac{dy}{dx} = -\dfrac{3}{4}</m>
+            </p>
+          </answer>
           </statement>
       </task>
       <task>
       <statement>
           <p>Use the value for the slope of the tangent line to obtain the equation of the tangent line.</p>
+          <answer>
+            <p>
+              <m>y = \dfrac{3}{4}x-\dfrac{7}{4}</m>
+            </p>
+          </answer>
           </statement>
       </task>
   </activity>
@@ -81,6 +107,11 @@
                 <li><p><m>\frac{dy}{dx} = \frac{3^{-1/3}-x^{-1/3}}{y^{-1/3}}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = -\frac{x^{-1/3}}{y^{-1/3}}</m></p></li>
             </ol>
+            <answer>
+              <p>
+                D
+              </p>
+            </answer>
     </activity>
     
     <activity xml:id="activity-derivative-implicit3">
@@ -103,6 +134,11 @@
                 <li><p><m>\frac{dy}{dx} = \frac{y(1+2(x^2+y^2))}{x(1-2(x^2+y^2))}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{y+2(x^2+y^2)}{x(1-2(x^2+y^2))}</m></p></li>
             </ol>
+            <answer>
+              <p>
+                B
+              </p>
+            </answer>
     </activity>
     
     <activity xml:id="checkit-df7">
@@ -115,12 +151,12 @@ Explain how to use implicit differentiation to find
                 <task><p><me>-5 \, x^{5} - 5 \, \cos\left(y\right) = 3 \, y^{4} + 2</me></p></task>
                 <task><p><me>-5 \, y e^{x} + 5 \, \sin\left(x\right) = 0</me></p></task>
         
-  <!--  <answer>
+ <answer>
         <ol>
                 <li><p><me>\frac{dy}{dx}=-\frac{25 \, x^{4}}{12 \, y^{3} - 5 \, \sin\left(y\right)}</me></p></li>
                 <li><p><me>\frac{dy}{dx}=-{\left(y e^{x} - \cos\left(x\right)\right)} e^{\left(-x\right)}</me></p></li>
         </ol>
-    </answer>-->
+    </answer>
         
 </activity>
     <activity xml:id="activity-derivative-implicit4">
@@ -133,11 +169,19 @@ Explain how to use implicit differentiation to find
                 <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
                 <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+x)}{x^x}</m></p></li>
             </ol>
+            <answer>
+              <p>
+                B
+              </p>
+            </answer>
      </activity> 
     
  <activity xml:id="activity-derivative-implicit-in-context1">
-    <introduction>    
+    <introduction>  
+    <p>
+      
     Valerie is building a square chicken coop with side length <m>x</m>.  Because she needs a separate place for the rooster, she needs to put fence around the square and also along the diagonal line shown.  The fence costs  $20 per linear meter, and she has a budget of  $900.  
+    </p>  
   <figure xml:id="figure-chicken-coop">
        <image width="50%">
           <sageplot>
@@ -161,9 +205,26 @@ Explain how to use implicit differentiation to find
                 <li><p><m>80x + \frac{20x}{\sin(y)}=900</m></p></li>
                 <li><p><m>20x + \frac{80x}{\sin(y)}=900</m></p></li>
             </ol>
+            <answer>
+              <p>
+                B
+              </p>
+            </answer>
      </task>
-     <task><p>If Valerie builds the coop with <m>y=\pi/3</m> (and wants to use her whole budget), find what side length <m>x</m> she needs to use.</p></task>
-       <task><p>Find the slope of the curve at this point and interpret what this value tells Valerie.</p></task>
+     <task><p>If Valerie builds the coop with <m>y=\pi/3</m> (and wants to use her whole budget), find what side length <m>x</m> she needs to use.</p>
+      <answer>
+        <p>
+          <m>x = \dfrac{45}{6}</m> feet
+        </p>
+      </answer>
+     </task>
+       <task><p>Find the slope of the curve at this point and interpret what this value tells Valerie.</p>
+        <answer>
+          <p>
+            <m>\dfrac{dy}{dx} = -\dfrac{2}{5\sqrt{3}}</m> radians per foot. The angle for the diagonal fence is decreasing by <m>-\dfrac{2}{5\sqrt{3}}</m> radians per foot of side length
+          </p>
+        </answer>
+       </task>
    </activity> 
 
     </subsection>
