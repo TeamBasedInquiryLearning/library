@@ -1,99 +1,133 @@
 class Generator(BaseGenerator):
     def data(self):
-        from sage.symbolic.integration.integral import definite_integral
-
         x=var("x")
         tasks = []
-       
-        bs = sample([choice([-1,1])*n for n in range(2,10)],5)
 
-        coeff = [2,3,4,5,6,7,8]
+        # randomize appropriate powers
+        pg1s = [4/3, 5/3, 6/5, 7/5, 8/5, 9/5]
+        shuffle(pg1s)
+        pl1s = [1/3, 2/3, 1/5, 2/5, 3/5, 4/5]
+        shuffle(pl1s)
+        x_0s = list(range(1,10))
+        shuffle(x_0s)
 
-        case1 = choice([0,1])
+        # improper, infinite bounds
+        # convergent
+        task = {}
+        k = SR(choice([-1,1])*randrange(1,8)/randrange(1,8))
+        p = pg1s[0]
+        x_0 = choice([-1,1])*x_0s[0]
+        task["integrand"] = k/(x-x_0)^p
+        if choice([True,False]):
+            task["bottom"] = x_0 + randrange(1,8)
+            task["top"] = oo
+            task["value"] = -k/(1-p)*(task["bottom"]-x_0)^(1-p)
+            task["limit"] = oo
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
+        else:
+            task["top"] = x_0 - randrange(1,8)
+            task["bottom"] = -oo
+            task["value"] = -k/(1-p)*(x_0-task["top"])^(1-p)
+            task["limit"] = -oo
+            task["limit_bottom"] = " a "
+            task["limit_top"] = task["top"]
+        task["approx"] = round(task["value"], ndigits=5)
+        tasks.append(task)
+        # divergent
+        task = {}
+        k = SR(choice([-1,1])*randrange(1,8)/randrange(1,8))
+        p = pl1s[0]
+        x_0 = choice([-1,1])*x_0s[1]
+        if choice([True,False]):
+            task["integrand"] = k/(x-x_0)^p
+            task["bottom"] = x_0 + randrange(1,8)
+            task["top"] = oo
+            if k < 0:
+                task["value"] = -oo
+            else:
+                task["value"] = oo
+            task["limit"] = oo
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
+        else:
+            task["integrand"] = k/(x-x_0)^p
+            task["top"] = x_0 - randrange(1,8)
+            task["bottom"] = -oo
+            if k*(-1)^(1-p) < 0:
+                task["value"] = -oo
+            else:
+                task["value"] = oo
+            task["limit"] = -oo
+            task["limit_bottom"] = " a "
+            task["limit_top"] = task["top"]
+        tasks.append(task)
 
-        # converges with infinite bound
-        if case1 == 0:
-            p = randrange(3,10)
-            q = randrange(3,10)
-            bottom = bs[0] + randrange(1,6)
-            shuffle(coeff)
-            antidiff(x) = -1*(coeff[0]/coeff[1])/(x-bs[0])^(SR(p)/q)
-            tasks.append({
-                "integrand": antidiff(x).diff(x),
-                "converges": True,
-                "top": oo,
-                "bottom": bottom,
-                "proper": False,
-                "improper": True,
-                "int": 0-antidiff(bottom),
-            })
+        # improper, finite bounds
+        # convergent
+        task = {}
+        k = SR(choice([-1,1])*randrange(1,8)/randrange(1,8))
+        p = pl1s[1]
+        x_0 = choice([-1,1])*x_0s[2]
+        task["integrand"] = k/(x-x_0)^p
+        if choice([True,False]):
+            task["bottom"] = x_0
+            task["top"] = x_0 + randrange(1,8)
+            task["value"] = k/(1-p)*(task["top"]-x_0)^(1-p)
+            task["limit"] = latex(x_0) + "^{+} "
+            task["limit_top"] = task["top"]
+            task["limit_bottom"] = " a "
+        else:
+            task["top"] = x_0
+            task["bottom"] = x_0 - randrange(1,8)
+            task["value"] = k/(1-p)*(x_0-task["bottom"])^(1-p)
+            task["limit"] = latex(x_0) + "^{-} "
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
+        task["approx"] = round(task["value"], ndigits=5)
+        tasks.append(task)
+        # divergent
+        task = {}
+        k = SR(choice([-1,1])*randrange(1,8)/randrange(1,8))
+        p = pg1s[0]
+        x_0 = choice([-1,1])*x_0s[3]
+        task["integrand"] = k/(x-x_0)^p
+        if choice([True,False]):
+            task["top"] = x_0
+            task["bottom"] = x_0 - randrange(1,8)
+            if k < 0:
+                task["value"] = -oo
+            else:
+                task["value"] = oo
+            task["limit"] = latex(x_0) + "^{-} "
+            task["limit_top"] = " a "
+            task["limit_bottom"] = task["bottom"]
+        else:
+            task["bottom"] = x_0
+            task["top"] = x_0 + randrange(1,8)
+            if k < 0:
+                task["value"] = -oo
+            else:
+                task["value"] = oo
+            task["limit"] = latex(x_0) + "^{+} "
+            task["limit_top"] = task["top"]
+            task["limit_bottom"] = " a "
+        tasks.append(task)
 
-        # diverges with infinite bound
-        if case1 == 1:
-            p = randrange(1,5)
-            q = randrange(p+1,p+5)
-            bottom = bs[1]+randrange(1,6)
-            shuffle(coeff)
-            antidiff(x) = choice([(coeff[0]/coeff[1])*(x-bs[1])^(SR(p)/q), (coeff[0]/coeff[1])*log(x-bs[1]) ])
-            tasks.append({
-                "integrand": antidiff(x).diff(x),
-                "converges": False,
-                "top": oo,
-                "bottom": bottom,
-                "proper": False,
-                "improper": True,
-                "int": r"\infty",
-            })
-
-        # converges with finite bounds
-        if case1 == 1:
-            case1 = randrange(0,2)
-            p = randrange(1,5)
-            q = randrange(p+1,p+5)
-            top = bs[2]+randrange(1,6)
-            shuffle(coeff)
-            antidiff(x) = (coeff[0]/coeff[1])*(x-bs[2])^(SR(p)/q)
-            tasks.append({
-                "integrand": antidiff(x).diff(x),
-                "converges": True,
-                "top": top,
-                "bottom": bs[2],
-                "proper": False,
-                "improper": True,
-                "int": antidiff(top),
-            })
-
-        # diverges with finite bounds
-        if case1 == 0:
-            p = randrange(3,10)
-            q = randrange(3,10)
-            top = bs[3]+randrange(1,6)
-            shuffle(coeff)
-            antidiff(x) = choice([-1*(coeff[0]/coeff[1])/(x-bs[3])^(SR(p)/q), (coeff[0]/coeff[1])*log(x-bs[3]) ])
-            tasks.append({
-                "integrand": 1/(x-bs[3])^(SR(p)/q),
-                "converges": False,
-                "top": top,
-                "bottom": bs[3],
-                "proper": False,
-                "improper": True,
-                "int": r"\infty",
-            })
-        
-        
         # proper
-        p = randrange(3,10)
-        q = randrange(3,10)
-        bottom = bs[4]+randrange(1,6)
-        top = bottom + randrange(1,6)
-        tasks.append({
-            "integrand": 1/(x-bs[4])^(SR(p)/q),
-            "converges": True,
-            "top": top,
-            "bottom": bottom,
-            "proper": True,
-            "improper": False,
-        })    
+        task = {}
+        k = SR(choice([-1,1])*randrange(1,8)/randrange(1,8))
+        p = choice([pl1s[2],pg1s[2]])
+        x_0 = choice([-1,1])*x_0s[4]
+        task["integrand"] = k/(x-x_0)^p
+        if choice([True, False]):
+            task["bottom"] = x_0 + randrange(1,5)
+            task["top"] = task["bottom"] + randrange(1,5)
+        else:
+            task["top"] = x_0 - randrange(1,5)
+            task["bottom"] = task["top"] - randrange(1,5)
+        task["proper"] = True
+        tasks.append(task)
 
         shuffle(tasks)
 
