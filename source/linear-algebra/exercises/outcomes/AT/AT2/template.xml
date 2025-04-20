@@ -8,7 +8,7 @@ Consider the linear transformation
 <me>S\left( {{varvector}} \right) = {{varmap}}.</me>
             </p>
         </intro>
-        <task>
+        <knowl>
             <content>
                 <p>
 Compute the transformation of each vector from the standard
@@ -22,8 +22,8 @@ S(\vec e_{ {{i}} }) = {{col}}
 <!-- {{/Scols}} -->
 </me></p>
             </outtro>
-        </task>
-        <task>
+        </knowl>
+        <knowl>
             <content>
                 <p>
 Explain and demonstrate how these are used to
@@ -33,7 +33,7 @@ form the standard matrix for this transformation.
             <outtro>
                 <p><me>{{Sstandardmatrix}}</me></p>
             </outtro>
-        </task>
+        </knowl>
     </knowl>
     <knowl>
         <intro>
@@ -43,7 +43,7 @@ Consider the linear transformation
 defined by the standard matrix <me>{{Tstandardmatrix}}.</me>
             </p>
         </intro>
-        <task>
+        <knowl>
             <content>
                 <p>
 Describe how this map transforms each of the vectors for the
@@ -57,8 +57,8 @@ T(\vec e_{ {{i}} }) = {{col}}
 <!-- {{/Tcols}} -->
 </me></p>
             </outtro>
-        </task>
-        <task>
+        </knowl>
+        <knowl>
             <content>
                 <p>
 Explain and demonstrate how to use these to compute
@@ -68,6 +68,6 @@ Explain and demonstrate how to use these to compute
             <outtro>
 <p><me>T\left({{vector}}\right)={{Tvector}}</me></p>
             </outtro>
-        </task>
+        </knowl>
     </knowl>
 </knowl>
