@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <knowl>
-        <introduction>
+        <intro>
             <p>
 Consider the linear transformation
 <m>S:\mathbb{R}^{{Scols}} \to \mathbb{R}^{{Srows}}</m> given by
 <me>S\left( {{varvector}} \right) = {{varmap}}.</me>
             </p>
-        </introduction>
+        </intro>
         <task>
             <content>
                 <p>
@@ -36,13 +36,13 @@ form the standard matrix for this transformation.
         </task>
     </knowl>
     <knowl>
-        <introduction>
+        <intro>
             <p>
 Consider the linear transformation
 <m>T:\mathbb{R}^{{Tcols}} \to \mathbb{R}^{{Trows}}</m>
 defined by the standard matrix <me>{{Tstandardmatrix}}.</me>
             </p>
-        </introduction>
+        </intro>
         <task>
             <content>
                 <p>
