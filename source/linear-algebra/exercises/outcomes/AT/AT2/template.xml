@@ -1,28 +1,73 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <knowl>
-        <content>
-            <p>Explain and demonstrate how to compute
-                the standard matrix for the linear transformation
-                <m>S:\mathbb{R}^{{Scols}} \to \mathbb{R}^{{Srows}}</m> given by
-                <me>S\left( {{varvector}} \right) = {{varmap}}</me>
-                by computing transformations of the standard basic vectors.</p>
-        </content>
-        <outtro>
-            <p><me>{{Sstandardmatrix}}</me></p>
-        </outtro>
+        <introduction>
+            <p>
+Consider the linear transformation
+<m>S:\mathbb{R}^{{Scols}} \to \mathbb{R}^{{Srows}}</m> given by
+<me>S\left( {{varvector}} \right) = {{varmap}}.</me>
+            </p>
+        </introduction>
+        <task>
+            <content>
+                <p>
+Compute the transformation of each vector from the standard
+basis for <m>\mathbb R^{{Scols}}</m>.
+                </p>
+            </content>
+            <outtro>
+<p><me>
+<!-- {{#Scols}} -->
+S(\vec e_{ {{i}} }) = {{col}}
+<!-- {{/Scols}} -->
+</me></p>
+            </outtro>
+        </task>
+        <task>
+            <content>
+                <p>
+Explain and demonstrate how these are used to
+form the standard matrix for this transformation.
+                </p>
+            </content>
+            <outtro>
+                <p><me>{{Sstandardmatrix}}</me></p>
+            </outtro>
+        </task>
     </knowl>
     <knowl>
-        <content>
-            <p>Let <m>T:\mathbb{R}^{{Tcols}} \to \mathbb{R}^{{Trows}}</m>
-              be the linear transformation given by the standard matrix
-              <me>{{Tstandardmatrix}}.</me>
-              Explain and demonstrate how to compute
-              <m>T\left({{vector}}\right)</m> by using the values of
-              transformed standard basic vectors.</p>
-        </content>
-        <outtro>
-            <p><me>T\left({{vector}}\right)={{Tvector}}</me></p>
-        </outtro>
+        <introduction>
+            <p>
+Consider the linear transformation
+<m>T:\mathbb{R}^{{Tcols}} \to \mathbb{R}^{{Trows}}</m>
+defined by the standard matrix <me>{{Tstandardmatrix}}.</me>
+            </p>
+        </introduction>
+        <task>
+            <content>
+                <p>
+Describe how this map transforms each of the vectors for the
+standard basis of <m>\mathbb R^{{Tcols}}</m>.
+                </p>
+            </content>
+            <outtro>
+<p><me>
+<!-- {{#Tcols}} -->
+T(\vec e_{ {{i}} }) = {{col}}
+<!-- {{/Tcols}} -->
+</me></p>
+            </outtro>
+        </task>
+        <task>
+            <content>
+                <p>
+Explain and demonstrate how to use these to compute
+<m>T\left({{vector}}\right)</m>.
+                </p>
+            </content>
+            <outtro>
+<p><me>T\left({{vector}}\right)={{Tvector}}</me></p>
+            </outtro>
+        </task>
     </knowl>
 </knowl>

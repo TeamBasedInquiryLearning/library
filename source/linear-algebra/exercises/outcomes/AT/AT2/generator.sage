@@ -35,10 +35,12 @@ class Generator(BaseGenerator):
             "varmap": A*xs,
             "varvector": xs,
             "Sstandardmatrix": A,
+            "Scols": [{"i": i+1, "col": A.col(i)}],
             "Trows": Trows,
             "Tcols": Tcolumns,
             "Tstandardmatrix": B,
             "vector": v,
-            "Tvector": B*v
+            "Tvector": B*v,
+            "Tcols": [{"i": i+1, "col": B.col(i)}],
         }
 
