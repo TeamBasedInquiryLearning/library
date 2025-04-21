@@ -27,7 +27,7 @@ class Generator(BaseGenerator):
 
     #Completing the square
 
-    a=choice([-7..7])
+    a=choice([-7..-1,1..7])
     b=choice([i for i in [-1*a^2+5,..,10] if not (i+a^2).is_square()])
     r1=-1*a+sqrt(b+a^2)
     r2=-1*a-sqrt(b+a^2)
