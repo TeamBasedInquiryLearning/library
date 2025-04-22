@@ -615,29 +615,21 @@ P
 
     <observation>
       <p>Since <m>\sec(x)=\dfrac{1}{\cos(x)}</m>, we can see that their graphs are related:
-      <m>\sec(x)</m> has a vertical asymptote everywhere <m>\cos(x)</m> has a zero, and
+      <m>\sec(x)</m> (solid blue curve) has a vertical asymptote everywhere <m>\cos(x)</m> (dotted green curve) has a zero, and
       for every point <m>(a,b)</m> on the graph of <m>\cos(x)</m>, the point <m>(a,\frac{1}{b})</m>
-      is on the graph of <m>\sec(x)</m>.
+      is on the graph of <m>\sec(x)</m>. 
       </p>
-            <sidebyside>
-                <figure xml:id="graph-cos-PF3">
-                    <caption><m>y=\cos(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
-                    </sageplot></image>
-                </figure>
                 <figure xml:id="graph-sec-PF3">
                     <caption><m>y=\sec(x)</m></caption>
                     <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+p+=TBIL.trig_plot(cos(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,color="green",linestyle="dotted")
 for i in [-2..1]:
     p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
 p
                     </sageplot></image>
                 </figure>
-            </sidebyside>
     </observation>
 
 
@@ -942,29 +934,21 @@ P
 
     <observation>
       <p>Since <m>\csc(x)=\dfrac{1}{\sin(x)}</m>, we can see that their graphs are related:
-      <m>\csc(x)</m> has a vertical asymptote everywhere <m>\sin(x)</m> has a zero, and
+      <m>\csc(x)</m> (solid blue) has a vertical asymptote everywhere <m>\sin(x)</m> (dotted green) has a zero, and
       for every point <m>(a,b)</m> on the graph of <m>\sin(x)</m>, the point <m>(a,\frac{1}{b})</m>
-      is on the graph of <m>\csc(x)</m>.
+      is on the graph of <m>\csc(x)</m>. 
       </p>
-            <sidebyside>
-                <figure xml:id="graph-sin-PF3">
-                    <caption><m>y=\sin(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
-                    </sageplot></image>
-                </figure>
                 <figure xml:id="graph-csc-PF3">
                     <caption><m>y=\csc(x)</m></caption>
                     <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 p=TBIL.trig_plot(csc(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
+p+=TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,color="green",linestyle="dotted")
 for i in [-2..2]:
     p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
 p
                     </sageplot></image>
                 </figure>
-            </sidebyside>
     </observation>
 
   <activity xml:id="activity-cot-table">
