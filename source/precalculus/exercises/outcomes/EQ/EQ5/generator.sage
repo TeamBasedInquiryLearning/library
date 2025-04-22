@@ -34,10 +34,12 @@ class Generator(BaseGenerator):
     equations.append( { "equation":  x^2+2*a*x== b , "method":"completing the square", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)} "})
 
     #Quadratic Equation
-    irrational = choice(list(self.irrational_dict.keys()))
-    r1,r2=irrational
-    c=self.irrational_dict[irrational]
-    equations.append( { "equation": c^2*x^2-(r1+r2)*c^2*x == expand(-1*c^2*r1*r2), 
+    a=choice([1..3])
+    b=choice([2*i+1 for i in [-3..3]])*a
+    c=choice([i for i in [-6..6] if b^2-4*a*i>0 and not (b^2-4*a*i).is_square()])
+    r1=(-b+sqrt(b^2-4*a*c))/(2*a)
+    r2=(-b-sqrt(b^2-4*a*c))/(2*a)
+    equations.append( { "equation": a*x^2+b*x == -1*c, 
                        "method":"the quadratic formula", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
     shuffle(equations)
 
