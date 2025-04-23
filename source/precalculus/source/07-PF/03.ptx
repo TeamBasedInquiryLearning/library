@@ -671,20 +671,20 @@ P=TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-pi,ymax=pi,ticks=[pi/4,1],aspect_ra
       </task>
       <task>
         <statement>
-          <p>Where does <m>\sin(x)</m> have maximal and minimal values?</p>
+          <p>Where does <m>\sin(x)</m> have local maximum and minimum values?</p>
         </statement>
         <answer>
-          <p>Maxima are at <m>\ldots,-\dfrac{3\pi}{2},\dfrac{\pi}{2},\dfrac{5\pi}{2},\ldots</m>.</p>
-          <p>Minima are at <m>\ldots,-\dfrac{\pi}{2},\dfrac{3\pi}{2},\dfrac{7\pi}{2},\ldots</m>.</p>
+          <p>Local maxima are at <m>\ldots,-\dfrac{3\pi}{2},\dfrac{\pi}{2},\dfrac{5\pi}{2},\ldots</m>.</p>
+          <p>Local minima are at <m>\ldots,-\dfrac{\pi}{2},\dfrac{3\pi}{2},\dfrac{7\pi}{2},\ldots</m>.</p>
         </answer>
       </task>
       <task>
         <statement>
-          <p>Where does <m>\csc(x)</m> have relative maximum and minimum values?</p>
+          <p>Where does <m>\csc(x)</m> have local maximum and minimum values?</p>
         </statement>
         <answer>
-          <p>Relative minima are at <m>\ldots,-\dfrac{3\pi}{2},\dfrac{\pi}{2},\dfrac{5\pi}{2},\ldots</m>.</p>
-          <p>Relative maxima are at <m>\ldots,-\dfrac{\pi}{2},\dfrac{3\pi}{2},\dfrac{7\pi}{2},\ldots</m>.</p>
+          <p>Local minima are at <m>\ldots,-\dfrac{3\pi}{2},\dfrac{\pi}{2},\dfrac{5\pi}{2},\ldots</m>.</p>
+          <p>Local maxima are at <m>\ldots,-\dfrac{\pi}{2},\dfrac{3\pi}{2},\dfrac{7\pi}{2},\ldots</m>.</p>
         </answer>
       </task>
       <task>
@@ -712,6 +712,7 @@ P=TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-pi,ymax=pi,ticks=[pi/4,1],aspect_ra
           Use your answers to the previous tasks to plot the graph of <m>y=\csc(x)</m>.
           </p>
         </statement>
+        <hint><p>It may be helpful to first sketch the graph of <m>\sin(x)</m>.</p></hint>
         <answer>
           <p> 
             <image>
