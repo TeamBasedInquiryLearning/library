@@ -1078,6 +1078,64 @@ p
     </introduction>
     <task>
       <statement>
+        <p>What sort of transformation of <m>\tan(x)</m> is <m>\tan(2x)</m>?</p>
+        <ol marker="A.">
+          <li>Horizontal stretch</li>
+          <li>Horizontal compression</li>
+          <li>Vertical stretch</li>
+          <li>Vertical compression</li>
+        </ol>
+      </statement>
+      <answer>
+        <p>B.</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Which of the following are different for <m>\tan(2x)</m> than for <m>\tan(x)</m>? Select all that apply.</p>
+        <ol marker="A.">
+          <li>Location of vertical asymptotes</li>
+          <li>Period</li>
+          <li>Domain</li>
+          <li>Range</li>
+        </ol>
+      </statement>
+      <answer>
+        <p>The vertical asymptotes, period, and domain all change, while the range is still <m>(-\infty,\infty)</m>.</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Where are the vertical asymptotes of <m>h(x)=\tan(2x)</m>?</p>
+        <ol marker="A.">
+          <li><m>\ldots,-2\pi,-\pi,0,\pi,2\pi,\ldots</m></li>
+          <li><m>\ldots,-3\pi,-\pi,\pi,3\pi,\ldots</m></li>
+          <li><m>\ldots,-\dfrac{3\pi}{2},-\dfrac{\pi}{2},\dfrac{\pi}{2},\dfrac{3\pi}{2},\ldots</m></li>
+          <li><m>\ldots,-\dfrac{3\pi}{4},-\dfrac{\pi}{4},\dfrac{\pi}{4},\dfrac{3\pi}{4},\ldots</m></li>
+        </ol>
+      </statement>
+      <hint><p>Recall that <m>\tan(x)</m> has vertical asymptotes at <m>\dfrac{\pi}{2}+\pi k</m> for each integer <m>k</m>.</p></hint>
+      <answer>
+        <p>D.</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Where are the zeros of <m>h(x)=\tan(2x)</m>?</p>
+        <ol marker="A.">
+          <li><m>\ldots,-2\pi,-\pi,0,\pi,2\pi,\ldots</m></li>
+          <li><m>\ldots,-3\pi,-\pi,\pi,3\pi,\ldots</m></li>
+          <li><m>\ldots,,-\dfrac{\pi}{2},0,\dfrac{\pi}{2},\ldots</m></li>
+          <li><m>\ldots,-\dfrac{\pi}{4},0,\dfrac{\pi}{4},,\ldots</m></li>
+        </ol>
+      </statement>
+      <hint><p>Recall that <m>\tan(x)</m> has zeroes asymptotes at <m>\pi k</m> for each integer <m>k</m>.</p></hint>
+      <answer>
+        <p>C.</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
         <p>Graph <m>h(x)=\tan(2x)</m>.</p>
       </statement>
       <answer>
@@ -1086,7 +1144,7 @@ p
 p=TBIL.trig_plot(tan(2*x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,thickness=2)
 for i in [-4..3]:
     p+=line([(i*pi/2+pi/4,-2*pi),(i*pi/2+pi/4,2*pi)],thickness=2,linestyle='dashed',color='red')
-p
+p 
         </sageplot></image>
       </answer>
     </task>
