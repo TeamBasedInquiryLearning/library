@@ -1174,6 +1174,76 @@ p
     </task>
     </activity>
 
+
+    <activity>
+      <introduction>
+        <p>Consider the function <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Where are the vertical asymptotes for <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m> located?</p>
+        </statement>
+        <answer>
+          <p><m>\ldots,-4\pi,-2\pi,0,2\pi,4\pi,\ldots</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Where are the local minima and local maxima for <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m> located?</p>
+        </statement>
+        <answer>
+          <p>Local minima are at <m>\ldots,-3\pi,\pi,5\pi,\ldots</m>.</p>
+          <p>Local maxima are at <m>\ldots,-5\pi,-\pi,3\pi,\ldots</m>.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What are the local minimum and local maximum values for <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>?</p>
+        </statement>
+        <answer>
+          <p>The local minimum values are <m>3</m> and the local maximum values are <m>-3</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Graph <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>.</p>
+        </statement>
+        <answer>
+         <image><sageplot>
+  <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+  p=TBIL.trig_plot(3*csc(x/2),(x,-4*pi,4*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,thickness=2)
+  for i in [-2..2]:
+      p+=line([(i*2*pi,-2*pi),(i*2*pi,2*pi)],thickness=2,linestyle='dashed',color='red')
+  p 
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>\ldots \cup (-4\pi,-2\pi) \cup (-2\pi,0) \cup (0,2\pi) \cup (2\pi,4\pi) \cup \ldots</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>(-\infty,-3] \cup [3,\infty])</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the period of <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>4\pi</m></p>
+        </answer>
+      </task>
+    </activity>
+
     </subsection>
 
     <exercises>
