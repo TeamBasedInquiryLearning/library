@@ -993,16 +993,30 @@ p
 
     <activity>
     <introduction>
-      <p>Consider the function <m>g(x)=\sec(x+\pi)</m>.</p>
+      <p>Consider the function <m>g(x)=\sec\left(x+\dfrac{\pi}{2}\right)</m>.</p>
     </introduction>
     <task>
+      <statement>
+        <p>How is this graph related to the graph of <m>\sec(x)</m>?</p>
+        <ol marker="A.">
+          <li>It is shifted left <m>\dfrac{\pi}{2}</m>.</li>
+          <li>It is shifted right <m>\dfrac{\pi}{2}</m>.</li>
+          <li>It is shifted up <m>\dfrac{\pi}{2}</m>.</li>
+          <li>It is shifted down <m>\dfrac{\pi}{2}</m>.</li>
+        </ol>
+      </statement>
+      <answer>
+        <p>A.</p>
+      </answer>
+    </task>
+    <task>
     <statement>
-      <p>Which of the following is the graph of <m>g(x)=\sec(x+\pi)</m>?</p>
+      <p>Which of the following is the graph of <m>g(x)=\sec\left(x+\dfrac{\pi}{2}\right)</m>?</p>
       <ol marker="A." cols="2">
         <li><image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]:
+for i in [-2..1]: 
     p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
 p
         </sageplot></image></li>        
@@ -1029,20 +1043,20 @@ p
       </ol>
     </statement>
     <answer>
-      <p>B.</p>
+      <p>D.</p>
     </answer>
     </task>
     <task>
       <statement>
-        <p>What is the domain of <m>g(x)=\sec(x+\pi)</m>?</p>
+        <p>What is the domain of <m>g(x)=\sec\left(x+\dfrac{\pi}{2}\right)</m>?</p>
       </statement>
       <answer>
-        <p><m>\ldots \cup \left(-\dfrac{3\pi}{2},-\dfrac{\pi}{2}\right)\cup \left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right) \cup \left(\dfrac{\pi}{2},\dfrac{3\pi}{2}\right) \cup \ldots </m></p>
+        <p><m>\ldots \left(-2\pi,-\pi\right) \cup \left(-\pi,0\right)\cup \left(0,\pi\right) \cup \left(\pi,2\pi\right) \cup \ldots </m></p>
       </answer>
     </task>
     <task>
       <statement>
-        <p>What is the range of <m>g(x)=\sec(x+\pi)</m>?</p>
+        <p>What is the range of <m>g(x)=\sec\left(x+\dfrac{\pi}{2}\right)</m>?</p>
       </statement>
       <answer>
         <p><m>(-\infty,-1] \cup [1,\infty)</m></p>
@@ -1050,7 +1064,7 @@ p
     </task>
     <task>
       <statement>
-        <p>What is the period of <m>g(x)=\sec(x+\pi)</m>?</p>
+        <p>What is the period of <m>g(x)=\sec\left(x+\dfrac{\pi}{2}\right)</m>?</p>
       </statement>
       <answer>
         <p><m>2\pi</m></p>
