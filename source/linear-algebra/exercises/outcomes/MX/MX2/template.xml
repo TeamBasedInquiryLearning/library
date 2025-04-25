@@ -25,10 +25,10 @@ discussing its corresponding linear transformation.
                 </p>
                 <p>
 <!-- {{#invertible}} -->
-<m>{{label}}</m> is invertible.
+<m>{{label}}</m> is invertible because it is a bijective transformation.
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
-<m>{{label}}</m> is not invertible.
+<m>{{label}}</m> is not invertible because it is not a bijective transformation.
 <!-- {{/invertible}} -->
                 </p>
             </outtro>
