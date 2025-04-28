@@ -115,18 +115,18 @@ p
     </task>
     </activity>
 
-    <definition xml:id="def-law-of-sines">
-      <statement>
-        <p>
-          The <term>Law of Sines</term> defines the ratio of sides of a triangle and their respective sine angles are equivalent to each other. 
+   <theorem xml:id="thm-law-of-sines">
+    <statement>
+      <p>
+        The <term>Law of Sines</term> defines the ratio of sides of a triangle and their respective sine angles are equivalent to each other. 
           <me>\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}</me> or
           <me>\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}</me>
         </p>
         <p>
           When using the Law of Sines, you will only need to set one fraction to one other fraction. Note that these are proportions and so the reciprocals also hold true.
-        </p>
-      </statement>
-    </definition>
+      </p>
+    </statement>
+   </theorem>
 
     <remark>
       <p>
@@ -558,7 +558,8 @@ p
     </task>
     </activity>
 
-    <definition xml:id="ambiguous-case-of-law-of-sines">
+
+    <observation>
       <p>
       In the previous three activities, we saw that when we use the Law of Sines to find an angle, an ambiguity can arise due to the sine function being positive in Quadrant I and Quadrant II. In other words, if two sides and the non-included angle are given (SSA), three situations may occur.
       <ol>
@@ -568,7 +569,7 @@ p
       </ol>
        The <term>Ambiguous Case of the Law of Sines</term> states that when using the Law of Sines to find a missing side length, the possibility of two solutions for the measure of the same side may occur.
       </p>
-    </definition>
+    </observation>
 
     <activity xml:id="law-of-sines-fluency">
 
@@ -811,7 +812,7 @@ p
     </task>
     </activity>
 
-    <definition xml:id="def-law-of-cosines">
+    <theorem xml:id="thm-law-of-cosines">
       <statement>
         <p>
           The <term>Law of Cosines</term> relates the lengths of the sides of a triangle to the cosine of one of its angles. In other words, the square of any one side of a triangle is equal to the difference between the sum of squares of the other two sides and double the product of other sides and cosine angle included between them.
@@ -822,7 +823,7 @@ p
             <me> c^2=a^2+b^2-2ab\cos C </me>
           </p>
       </statement>
-    </definition>
+    </theorem>
 
     <activity xml:id="revisit-SAS-example">
 
