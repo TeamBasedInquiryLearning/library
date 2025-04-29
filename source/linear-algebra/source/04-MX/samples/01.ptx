@@ -1,40 +1,98 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <example xml:id="sample-MX1"><title>MX1</title>
-<statement>
-    <p>
+    <introduction>
+        <p>
 Of the following three matrices, only two may be multiplied.
-    </p>
-    <md>
-        <mrow>
-A &amp;= \left[\begin{array}{cc} 1 &amp; -3 \\ 0 &amp; 1 \end{array}\right] &amp;
-B&amp;= \left[\begin{array}{ccc} 4 &amp; 1 &amp; 2 \end{array}\right] &amp;
-C&amp;= \left[\begin{array}{ccc} 0 &amp; 1 &amp; 3 \\ 1 &amp; -2 &amp; 5 \end{array}\right]
-        </mrow>
-    </md>
-    <p>
-Explain which two may be multiplied and why. Then show how to find their product.
-    </p>
-</statement>
-<solution>
-    <p>
-<m>AC</m> is the only one that can be computed, since <m>C</m> corresponds to a linear transformation <m>\mathbb{R}^3 \rightarrow \mathbb{R}^2</m> and <m>A</m> corresponds to a linear transfromation <m>\mathbb{R}^2 \rightarrow \mathbb{R}^2</m>. Thus the composition <m>AC</m> corresponds to a linear transformation <m>\mathbb{R}^3 \rightarrow \mathbb{R}^2</m> with a  <m>2\times 3</m> standard matrix.
-We compute
-    </p>
-    <md>
-        <mrow>
-AC\left( \vec{e}_1 \right) &amp;= A \left( \left[\begin{array}{c} 0 \\ 1 \end{array}\right] \right) = 0 \left[\begin{array}{c} 1 \\ 0 \end{array}\right] + 1\left[\begin{array}{c} -3 \\ 1 \end{array}\right] = \left[\begin{array}{c} -3 \\ 1 \end{array}\right] \\
-        </mrow>
-        <mrow>
-AC\left( \vec{e}_2 \right) &amp;= A \left( \left[\begin{array}{c} 1 \\ -2 \end{array}\right] \right) = 1 \left[\begin{array}{c} 1 \\ 0 \end{array}\right] -2\left[\begin{array}{c} -3 \\ 1 \end{array}\right] = \left[\begin{array}{c} 7 \\ -2 \end{array}\right] \\
-        </mrow>
-        <mrow>
-AC\left( \vec{e}_3 \right) &amp;= A \left( \left[\begin{array}{c} 3 \\ 5 \end{array}\right] \right) = 3 \left[\begin{array}{c} 1 \\ 0 \end{array}\right] + 5\left[\begin{array}{c} -3 \\ 1 \end{array}\right] = \left[\begin{array}{c} -12 \\ 5 \end{array}\right] \\
-        </mrow>
-    </md>.
-    <p>
-Thus
-<me>AC = \left[\begin{array}{ccc} -3 &amp; 7 &amp; -12 \\ 1 &amp; -2 &amp; 5 \end{array}\right].</me>
-    </p>
-</solution>
+<me>A=\left[\begin{array}{cccc} -1 &amp; 3 &amp; -2 &amp; -3 \\ 1 &amp; -4 &amp; 2 &amp; 3 \end{array}\right] 
+\hspace{1em} B=\left[\begin{array}{ccc} 1 &amp; -6 &amp; -1 \\ 0 &amp; 1 &amp; 0 \end{array}\right] 
+\hspace{1em} C=\left[\begin{array}{ccc} 1 &amp; -1 &amp; -1 \\ 0 &amp; 1 &amp; -2 \\ -2 &amp; 4 &amp; -1 \\ -2 &amp; 3 &amp; -1 \end{array}\right]</me> 
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>Explain which two can be multiplied and why.</p>
+        </statement>
+        <solution>
+            <p>
+                <m>C</m> is the <m>4\times 3</m> standard matrix
+                for a transformation of <m>\mathbb R^3</m> vectors
+                into <m>\mathbb R^4</m> vectors, and <m>A</m> is the <m>2\times 4</m> matrix
+                for a transformation of <m>\mathbb R^4</m> vectors into <m>\mathbb R^2</m> vectors, so
+                <m>AC</m> will be the <m>2\times 3</m> standard matrix for their composition,
+                a transformation of <m>\mathbb R^3</m> vectors into <m>\mathbb R^2</m> vectors.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>Find their product using technology.</p>
+        </statement>
+        <solution>
+            <sage language="octave">
+                <input>
+A = [
+-1 3 -2 -3
+1  4  2  3
+]
+C = [
+1 -1 -1
+0  1 -2
+-2 4 -1
+-2 3 -1
+]
+A*C
+                </input>
+                <output>
+A =
+
+-1 3 -2 -3
+1 4 2 3
+
+C =
+
+1 -1 -1
+0 1 -2
+-2 4 -1
+-2 3 -1
+
+ans =
+
+9 -13 0
+-9 20 -14
+                </output>
+            </sage>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>Show how to find this product without technology.</p>
+        </statement>
+        <solution>
+            <p>
+                We may compute each <m>AC\vec e_i</m> to obtain each column of <m>AC</m>:
+                <me>
+                    AC\vec e_1 =
+                    A\left[\begin{array}{c}1\\0\\-2\\-2\end{array}\right] =
+                    1 \left[\begin{array}{c}-1\\1\end{array}\right] + 0 \left[\begin{array}{c}-1\\1\end{array}\right]
+                    -2 \left[\begin{array}{c}-1\\1\end{array}\right] - 2 \left[\begin{array}{c}-1\\1\end{array}\right] =
+                    \left[\begin{array}{c} 9 \\ -9 \end{array}\right]
+                </me>
+                <me>
+                    AC\vec e_2 =
+                    A\left[\begin{array}{c}-1\\1\\4\\3\end{array}\right] =
+                    -1 \left[\begin{array}{c}-1\\1\end{array}\right] + 1 \left[\begin{array}{c}-1\\1\end{array}\right]
+                    +4 \left[\begin{array}{c}-1\\1\end{array}\right] + 3 \left[\begin{array}{c}-1\\1\end{array}\right] =
+                    \left[\begin{array}{c} -13 \\ 12 \end{array}\right]
+                </me>
+                <me>
+                    AC\vec e_3 =
+                    A\left[\begin{array}{c}-1\\-2\\-1\\-1\end{array}\right] =
+                    -1 \left[\begin{array}{c}-1\\1\end{array}\right] - 1 \left[\begin{array}{c}-1\\1\end{array}\right]
+                    -2 \left[\begin{array}{c}-1\\1\end{array}\right] - 1 \left[\begin{array}{c}-1\\1\end{array}\right] =
+                    \left[\begin{array}{c} 0 \\ 2 \end{array}\right]
+                </me>
+            </p>
+        </solution>
+    </task>
 </example>
