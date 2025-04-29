@@ -15,11 +15,12 @@ Of the following three matrices, only two may be multiplied.
         </statement>
         <solution>
             <p>
-                <m>C</m> is a <m>4\times 3</m> matrix transforming <m>\mathbb R^3</m> vectors
-                into <m>\mathbb R^4</m> vectors, and <m>A</m> is a <m>2\times 4</m> matrix
-                transforming <m>\mathbb R^4</m> vectors into <m>\mathbb R^2</m> vectors, so
-                <m>AC</m> will be a <m>2\times 3</m> matrix transforming <m>\mathbb R^3</m>
-                vectors into <m>\mathbb R^2</m> vectors.
+                <m>C</m> is the <m>4\times 3</m> standard matrix
+                for a transformation of <m>\mathbb R^3</m> vectors
+                into <m>\mathbb R^4</m> vectors, and <m>A</m> is the <m>2\times 4</m> matrix
+                for a transformation of <m>\mathbb R^4</m> vectors into <m>\mathbb R^2</m> vectors, so
+                <m>AC</m> will be the <m>2\times 3</m> standard matrix for their composition,
+                a transformation of <m>\mathbb R^3</m> vectors into <m>\mathbb R^2</m> vectors.
             </p>
         </solution>
     </task>
@@ -44,6 +45,20 @@ Of the following three matrices, only two may be multiplied.
                     1 \left[\begin{array}{c}-1\\1\end{array}\right] + 0 \left[\begin{array}{c}-1\\1\end{array}\right]
                     -2 \left[\begin{array}{c}-1\\1\end{array}\right] - 2 \left[\begin{array}{c}-1\\1\end{array}\right] =
                     \left[\begin{array}{c} 9 \\ -9 \end{array}\right]
+                </me>
+                <me>
+                    AC\vec e_2 =
+                    A\left[\begin{array}{c}-1\\1\\4\\3\end{array}\right] =
+                    -1 \left[\begin{array}{c}-1\\1\end{array}\right] + 1 \left[\begin{array}{c}-1\\1\end{array}\right]
+                    +4 \left[\begin{array}{c}-1\\1\end{array}\right] + 3 \left[\begin{array}{c}-1\\1\end{array}\right] =
+                    \left[\begin{array}{c} -13 \\ 12 \end{array}\right]
+                </me>
+                <me>
+                    AC\vec e_3 =
+                    A\left[\begin{array}{c}-1\\-2\\-1\\-1\end{array}\right] =
+                    -1 \left[\begin{array}{c}-1\\1\end{array}\right] - 1 \left[\begin{array}{c}-1\\1\end{array}\right]
+                    -2 \left[\begin{array}{c}-1\\1\end{array}\right] - 1 \left[\begin{array}{c}-1\\1\end{array}\right] =
+                    \left[\begin{array}{c} 0 \\ 2 \end{array}\right]
                 </me>
             </p>
         </solution>
