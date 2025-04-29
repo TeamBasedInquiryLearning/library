@@ -27,6 +27,11 @@ class Generator(BaseGenerator):
             "A": matrices[0],
             "B": matrices[1],
             "C": matrices[2],
+#            "leftMatrix": letters[indices.index("L")],
+#            "rightMatrix": letters[indices.index("R")],
+#            "leftDim": dims[0],
+#            "middleDim": dims[1],
+#            "rightDim": dims[2],
             "productName": productName,
-            "product": product
+            "product": product,
         }
