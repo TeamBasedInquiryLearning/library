@@ -310,7 +310,7 @@ TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detec
 
     <definition xml:id="def-arctan">
     <p>The <term>arctangent</term> function, denoted <m>\arctan(x)</m>, is the inverse of the
-    restriction of <m>\tan(x)</m> to the domain <m>(-\dfrac{\pi}{2},\dfrac{\pi}{2})</m>.</p>
+    restriction of <m>\tan(x)</m> to the domain <m>/left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)</m>.</p>
     <p>In other words, <m>\arctan(x)</m> is the unique angle <m>\theta</m> with 
     <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m> such that <m>\tan(\theta)=x</m>.</p>
     </definition>
