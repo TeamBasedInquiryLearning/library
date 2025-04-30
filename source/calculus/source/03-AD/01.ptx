@@ -30,6 +30,11 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
        <li><p>  <m>L(x)= -x + 1</m> </p></li>               
     </ol>      
+    <answer>
+        <p>
+            C
+        </p>
+    </answer>
           </task>
            <task> <p> Find the tangent line to <m>f(x) = e^x</m> at <m>x=0</m></p>
                <ol marker="A." cols="2">
@@ -38,15 +43,26 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
        <li><p>  <m>L(x)= -x + 1</m> </p></li>               
     </ol>      
+    <answer>
+        <p>
+            B
+        </p>
+    </answer>
           </task>
   </activity>
     
 <activity xml:id="activity-tangent-lines2">
- 
-                <p>
-                Let <m>f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5</m>. Find an equation of the line tangent to the graph at the point <m>(-2, -9)</m>.
-                </p>
-    </activity>
+    <statement>
+        <p>
+            Let <m>f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5</m>. Find an equation of the line tangent to the graph at the point <m>(-2, -9)</m>.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <m>y = 47x+85</m>
+        </p>
+    </answer>    
+</activity>
 
     <definition xml:id="defn-motion"><p>
         If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then the derivative of the position function tells us how the position is changing over time, so <m>f'(t)</m> gives us the (instantaneous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so <m>f''(t)</m> gives us the (instantaneous) acceleration in meters per second squared. Summarizing, 
@@ -63,11 +79,49 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
 <me> y = t^{3}-9t^{2}+24t + 3 </me>
 <p>for <m>t\geq 0</m>. Here <m>t</m> is measured in seconds and <m>y</m> is measured in feet. </p>
 </introduction>
-    <task><p>Find the velocity and acceleration functions.</p></task>
-     <task><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p></task>
-    <task><p>When is the particle moving upward and when is it moving downward?</p></task>
-    <task><p>When is the particle's velocity increasing?</p></task>
-    <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down. </p></task>
+    <task><p>Find the velocity and acceleration functions.</p>
+    <answer>
+        <p>
+            <m>v(t) = 3t^2-18t + 24</m> and <m>a(t) = 6t-18</m>
+        </p>
+    </answer></task>
+     <task><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p>
+    <answer>
+        <image width = "50%">
+            <sageplot>
+                x = var('x')
+                plot(x^3-9*x^2+24*x + 3,(x,0,5), axes_labels=("$t$","$s(t)$"))
+            </sageplot>
+        </image>
+        <image width = "50%">
+            <sageplot>
+                x = var('x')
+                plot(3*x^2-18*x + 24,(x,0,5),axes_labels = ("$t$","$v(t)$"))
+            </sageplot>
+        </image>
+        <image width = "50%">
+                x = var('x')
+                plot(6*x - 18,(x,0,5),axes_labels=("$t$","$a(t)$"))
+        </image>
+    </answer></task>
+    <task><p>When is the particle moving upward and when is it moving downward?</p>
+    <answer>
+        <p>
+            
+        </p>
+    </answer></task>
+    <task><p>When is the particle's velocity increasing?</p>
+    <answer>
+        <p>
+            
+        </p>
+    </answer></task>
+    <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down. </p>
+    <answer>
+        <p>
+            
+        </p>
+    </answer></task>
      </activity>   
 
     <activity xml:id="motion-fluency-checkit">
