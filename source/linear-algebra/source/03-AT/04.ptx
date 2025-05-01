@@ -352,6 +352,26 @@ can never equal
     </statement>
 </activity>
 
+<observation>
+  <statement>
+    <p>
+      Given a linear transformation <m>T\colon V\to W</m>, we can restate injectivity and surjectivity as statement about solutions to particular equations:
+      <ul>
+        <li>
+          <p>
+            The transformation <m>T</m> is injective precisely when the equation <m>T(\vec{x})=\vec{b}</m> has <em>at most</em> one solution for each <m>\vec{b}\in W</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The transformation <m>T</m> is surjective precisely when the equation <m>T(\vec{x})=\vec{b}</m> has <em>at least</em> one solution for each <m>\vec{b}\in W</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </statement>
+</observation>
+
 <!-- <observation>
         <p>
 As we will see, it's no coincidence that the <m>\RREF</m> of the
