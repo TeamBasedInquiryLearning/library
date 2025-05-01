@@ -21,10 +21,17 @@
 <definition xml:id="def-pythagorean-theorem">
   <statement>
     <p>
-      The <term>Pythagorean Theorem</term> is <me>a^2+b^2=c^2</me>, where <m>a</m> and <m>b</m> are lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse. If we know the lengths of any two sides of a right triangle, we can find the length of the third side. 
+      Given a right triangle with legs of length <m>a</m> and <m>b</m> and hypotenuse of length <m>c</m>, the following equation holds:
+      <me>a^2+b^2=c^2</me> This is called the <term>Pythagorean Theorem</term>. 
     </p>
   </statement>
 </definition>
+
+<remark>
+  <p>
+    The Pythagorean Theorem is helpful because if we know the lengths of any two sides of a right triangle, we can always find the length of the third side. 
+  </p>
+</remark>
 
 <activity xml:id="finding-length-of-3-4-5-triangle">
   <introduction> 
@@ -54,7 +61,9 @@
           <li> <m>5</m> inches </li>
           <li> <m>\sqrt{5}</m> inches </li>
           <li> <m>25</m> inches </li>
-          <li> <m>16</m> inches </li></ol>
+          <li> <m>16</m> inches </li>
+          <li> <m>\sqrt{7}</m> inches </li>
+          </ol>
       </p>
     </statement>
     <answer>
@@ -92,7 +101,7 @@
     <statement>
       <p>
         What is the value of <m>x</m> (i.e., the length of the third side)?
-        <ol marker= "A." cols="1">
+        <ol marker= "A." cols="4">
           <li> <m>144</m> </li>
           <li> <m>12</m></li>
           <li> <m>194</m> </li>
@@ -111,40 +120,6 @@
   <statement>
     <p>
       <term>Pythagorean triples</term> are integers <m>a</m>, <m>b</m>, and <m>c</m> that satisfy the Pythagorean Theorem. <xref ref="finding-length-of-3-4-5-triangle"/> and <xref ref="finding-length-of-5-12-13-triangle"/> highlight some of the most common types of Pythagorean triples: <m>3-4-5</m> and <m>5-12-13</m>. All triangles similar to the <m>3-4-5</m> triangle will also have side lengths that are multiples of <m>3-4-5</m> (like <m>6-8-10</m>). Similarly, this is true for all triangles similar to the <m>5-12-13</m> triangle.
-    </p>
-  </statement>
-</definition>
-
-<definition xml:id="def-sides-of-right-triangles">
-  <statement>
-    <p>
-      When working with right triangles, it is often helpful to refer to specific angles and sides. One way this is done is by using letters, such as <m>A</m> and <m>a</m> to show that these are an angle-side pair because every angle has a side opposite the angle in a triangle. Note that the capital letter indicates the angle, and the lower case letter indicates the side. </p>
-
-      <p>Another way to label the sides of a triangle is to use the relationships between a given angle within a triangle and the sides. 
-    </p>
-    <ul>
-      <li>
-        <p>
-          The <term>hypotenuse</term> of a right triangle is always the side opposite the right angle. This side also happens to be the longest side of the triangle.
-        </p>
-      </li>
-      <li>
-        <p>
-          The <term>opposite side</term> is the non-hypotenuse side across from a given angle.
-        </p>
-      </li>
-      <li>
-        <p>
-          The <term>adjacent side</term> is the non-hypotenuse side that is next to a given angle.
-        </p>
-      </li>
-    </ul>
-    <p>
-      When given an angle, all sides of a triangle can be labeled. For example, suppose angle <m>A</m> is given, then the sides of a right triangle can be labeled as:
-      <figure xml:id="labeling-sides-of-right-triangle">
-        <image source="Images/Defining-sides-of-a-triangle.png"/>
-        <caption> From the perspective of angle <m>A</m>, all sides of a right triangle can be labeled.</caption>
-      </figure>
     </p>
   </statement>
 </definition>
@@ -173,7 +148,7 @@
     <statement>
       <p>
         What is the measure of the third angle?
-        <ol marker= "A." cols="1">
+        <ol marker= "A." cols="4">
           <li> <m>90</m><degree/> </li>
           <li> <m>60</m><degree/> </li>
           <li> <m>30</m><degree/> </li>
@@ -203,14 +178,52 @@
 
 <remark>
   <p>
-  The Pythagorean Theorem can be very helpful in finding the third side of a right triangle as long as we know the length of two other sides. In <xref ref="intro-to-using-trig"/>, only one side and one angle were given. In this case, the Pythagorean Theorem is not enough to help us find another side of the right triangle (unless it is one of the triples!). 
+  The Pythagorean Theorem can be very helpful in finding the third side of a right triangle as long as we know the length of two other sides. In <xref ref="intro-to-using-trig"/>, only one side and one angle were given. In this case, the Pythagorean Theorem is not enough to help us find another side of the right triangle. 
   </p>
 </remark>
+
+<definition xml:id="def-sides-of-right-triangles">
+  <statement>
+    <p>
+      When working with right triangles, it is often helpful to refer to specific angles and sides. One way this is done is by using letters, such as <m>A</m> and <m>a</m> to show that these are an angle-side pair because every angle has a side opposite the angle in a triangle. Note that the capital letter indicates the angle, and the lower case letter indicates the side. </p>
+
+      <p>Another way to label the sides of a triangle is to use the relationships between a given angle within a triangle and the sides. 
+    </p>
+    <ul>
+      <li>
+        <p>
+          The <term>hypotenuse</term> of a right triangle is always the side opposite the right angle. This side also happens to be the longest side of the triangle.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <term>opposite side</term> is the non-hypotenuse side across from a given angle.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <term>adjacent side</term> is the non-hypotenuse side that is next to a given angle.
+        </p>
+      </li>
+    </ul>
+    <p>
+      When given an angle, all sides of a triangle can be labeled from that angle's perspective. For example, from angle <m>A</m>'s perspective, the sides of a right triangle are labeled as:
+      <figure xml:id="labeling-sides-of-right-triangle">
+        <image source="Images/Defining-sides-of-a-triangle.png"/>
+        <caption> From the perspective of angle <m>A</m>, all sides of a right triangle can be labeled.</caption>
+      </figure>
+    </p>
+  </statement>
+</definition>
+
+
+
+
 
 <definition xml:id="def-right-triangle-trigonometry">
   <statement>
     <p>
-      <term>Trigonometric Functions</term> such as sine, cosine, and tangent are based on the relationships between a given angle <m>\theta</m> and side lengths in a right triangle. Three trigonometric functions, sine, cosine, and tangent, are often used to understand the relationships between a given angle of a triangle and its sides. For acute angles, such as <m>\theta</m>, these functions can be defined as ratios between the sides of a right triangle. 
+      We will define <term>trigonometric functions</term> for a given angle <m>\theta</m> as ratios between the side lengths of a right triangle. The first three trigonometric functions we will discuss are the sine function, the cosine function, and the tangent function.
         <md> 
           <mrow>
             \sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}
@@ -224,15 +237,90 @@
         </md> 
     </p>
     <p>
-      Notice that these are defined according to the sides of a triangle - which is why it is important to be able to label correctly!
+      Notice that these are defined according to the sides of a triangle from the perspective of an angle <m>\theta</m>. This is why it is important to be able to label the triangle correctly!
     </p>
   </statement>
 </definition>
 
+<activity xml:id="find-trig-function">
+  <introduction>
+    <p>
+      Let <m>ABC</m> be a right triangle with lengths <m>a=35</m>, <m>b=12</m>, and <m>c=37</m>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Draw a right triangle and label it with angles <m>A</m>, <m>B</m>, and <m>C</m> as well as with the lengths given above. </p>
+    </statement>
+    <answer>
+      <p>
+        Students should draw a triangle so that <m>C</m> is the hypotenuse and each angle is across from the correct measure.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\sin A</m>.
+        <ol marker= "A." cols="3">
+          <li> <m>\dfrac{12}{37}</m> </li>
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{35}{12}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\cos A</m>.
+        <ol marker= "A." cols="3">
+          <li> <m>\dfrac{12}{37}</m> </li>
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{35}{12}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find <m>\tan A</m>.
+        <ol marker= "A." cols="3">
+          <li> <m>\dfrac{12}{37}</m> </li>
+          <li> <m>\dfrac{35}{37}</m> </li>
+          <li> <m>\dfrac{35}{12}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+</activity>
+
   <activity xml:id="determine-which-trig-function">
     <introduction>
       <p>
-        For each triangle given, determine which trigonometric function would be the most helpful in determining the length of the side of a triangle. Be sure to draw a picture of the triangle to help you determine the relationship between the given angle and sides.
+        For each triangle given, determine which trigonometric function would be the most helpful in determining the length of the side of a triangle. Be sure to draw a picture of the triangle to help you determine the relationship between the given angle and sides. In each case assume angle <m>C</m> is the right angle.
       </p>
     </introduction>
 
@@ -240,7 +328,7 @@
       <statement>
         <p>
           In triangle <m>ABC</m>, <m>B=37</m><degree/> and <m>a=11</m>. Which trigonometric function will best help determine the length of side <m>c</m>?
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="3">
             <li> sine </li>
             <li> cosine </li>
             <li> tangent </li></ol></p>
@@ -256,7 +344,7 @@
       <statement>
         <p>
           In triangle <m>ABC</m>, <m>A=32</m><degree/> and <m>b=13</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="3">
             <li> sine </li>
             <li> cosine </li>
             <li> tangent </li></ol></p>
@@ -271,8 +359,8 @@
     <task>
       <statement>
         <p>
-          In triangle <m>ABC</m>, angle <m>A=24</m><degree/> and the hypotenuse is <m>14</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
-          <ol marker= "A." cols="1">
+          In triangle <m>ABC</m>, angle <m>A=24</m><degree/> and the hypotenuse has length <m>14</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
+          <ol marker= "A." cols="3">
             <li> sine </li>
             <li> cosine </li>
             <li> tangent </li></ol></p>
@@ -358,7 +446,7 @@
     <definition xml:id="def-reciprocal-trig-functions">
       <statement>
         <p>
-          Although we have only worked with three trigonometric functions thus far, there are actually six trigonometric functions. The first three rations (sine, cosine, and tangent) are referred to as the <term>basic trigonometric functions</term>. The other three functions, <term>cosecant</term>, <term>secant</term>, and <term>cotangent</term> can be found by taking the reciprocal of the basic trigonometric functions. These three ratios are referred to as the <term>reciprocal trigonometric functions</term> and can be defined as follows:
+         The three trigonometric ratios we have worked with so far (sine, cosine, and tangent) are referred to as the <term>basic trigonometric functions</term>. There are three additional functions, <term>cosecant</term>, <term>secant</term>, and <term>cotangent</term> that are found by taking the reciprocal of the basic trigonometric functions. These three ratios are referred to as the <term>reciprocal trigonometric functions</term> and can be defined as follows:
           <md> 
           <mrow>
             \csc\theta=\frac{\text{hypotenuse}}{\text{opposite}}=\frac{1}{\sin\theta}
@@ -385,7 +473,7 @@
       <statement>
         <p>
           Find <m>\sin{A}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
@@ -402,7 +490,7 @@
       <statement>
         <p>
           Find <m>\csc{A}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{12}{35}</m> </li>
             <li> <m>\frac{12}{37}</m> </li>
             <li> <m>\frac{37}{35}</m> </li>
@@ -419,7 +507,7 @@
       <statement>
         <p>
           Find <m>\cos{B}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
@@ -436,7 +524,7 @@
       <statement>
         <p>
           Find <m>\cos{B}</m>.
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="4">
             <li> <m>\frac{35}{12}</m> </li>
             <li> <m>\frac{35}{37}</m> </li>
             <li> <m>\frac{12}{35}</m> </li>
@@ -470,7 +558,7 @@
   <activity xml:id="using-ratios-to-find-other-ratios">
   <introduction>
     <p>
-      Suppose <m>\cos\theta=\frac{12}{13}</m>.
+      Suppose <m>\cos\theta=\dfrac{12}{13}</m>.
     </p>
   </introduction>
 
@@ -495,7 +583,7 @@
     </statement>
     <answer>
       <p>
-        Given that <m>\cos\theta=\frac{12}{13}</m>, we know that the side adjacent to <m>\theta</m> is <m>12</m> and the hypotenuse is <m>13</m>. Using the Pythagorean Theorem, the third side is <m>5</m>.
+        Given that <m>\cos\theta=\dfrac{12}{13}</m>, we know that the side adjacent to <m>\theta</m> is <m>12</m> and the hypotenuse is <m>13</m>. Using the Pythagorean Theorem, the third side is <m>5</m>.
       </p>
     </answer>
   </task>
@@ -508,7 +596,7 @@
     </statement>
     <answer>
       <p>
-        <m>\csc\theta=\frac{13}{5}</m>
+        <m>\csc\theta=\dfrac{13}{5}</m>
       </p>
     </answer>
   </task>
@@ -521,7 +609,7 @@
     </statement>
     <answer>
       <p>
-        <m>\cot\theta=\frac{12}{5}</m>
+        <m>\cot\theta=\dfrac{12}{5}</m>
       </p>
     </answer>
   </task>
