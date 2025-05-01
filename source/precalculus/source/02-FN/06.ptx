@@ -251,7 +251,78 @@
     A function must be one-to-one in order to have an inverse.
   </p>
   </remark>
+
+  <activity xml:id="activity-horizontal-line">
+    <introduction>
+      <p>For each of the following graphs, determine if they represent a function that is one-to-one or not.
+        If they are not one-to-one, what outputs have the same input?
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <image width="50%"><sageplot>
+          p=plot(x^2,xmin=-2,xmax=2,ymin=-1,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
+        </sageplot></image>
+      </statement>
+      <answer>
+        <p>This graph is not one-to-one</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <image width="50%"><sageplot>
+          p=plot(1/2*x^3,xmin=-2,xmax=2,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
+        </sageplot></image>
+      </statement>
+      <answer>
+        <p>This graph is one-to-one</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <image width="50%"><sageplot>
+          p=plot(e^x,xmin=-2,xmax=2,ymin=-1,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
+        </sageplot></image>
+      </statement>
+      <answer>
+        <p>This graph is one-to-one</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <image width="50%"><sageplot>
+          p=plot(x^3-2*x,xmin=-2,xmax=2,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
+        </sageplot></image>
+      </statement>
+      <answer>
+        <p>This graph is not one-to-one</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>For each graph that was not one-to-one, draw a line connecting the points where two inputs had the same output.
+          What do you notice about the lines?
+        </p>
+      </statement>
+      <answer>
+        <p>A line between two points whose output is the same have the same <m>y</m>-value, so the line is horizontal.</p>
+      </answer>
+    </task>
+  </activity>
   
+  <observation>
+    <p>When two outputs have the same input, this means that a horizontal line intersects the graph in two places.
+      This leads us to the <term>horizontal line test</term> for one-to-one functions.
+    </p>
+  </observation>
+
+  <theorem xml:id="theorem-horizontal-line-test">
+    <title>Horizontal Line Test</title>
+    <p>A function is one-to-one precisely when its graph intersects horizontal lines at most once.</p>
+    <p>If a graph intersects a horizontal line two or more times, the function is not a one-to-one function.</p>
+  </theorem>
+
+
   <activity xml:id="activity-inverse-operations">
     <introduction>
       <p> Consider the function <m>f(x)=\dfrac{x-5}{3}</m>.
