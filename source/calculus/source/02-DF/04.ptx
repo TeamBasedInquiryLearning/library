@@ -698,7 +698,7 @@ In answering the following questions, be sure to explicitly denote which derivat
             </p>
             <answer>
               <p>
-                <m>g(v)</m> inputs velocity and outputs kilometers per liter. This means that <m>g(v) = \dfrac{1}{f(v)}</m>. So, <m>g(50) = 25</m> kilometers per liter. Further, <m>g'(v) = -\dfrac{1}{(f(v))^2}</m>, so <m>g'(50) = -6,250,000</m> kilometers per liter per liter
+                <m>g(v)</m> inputs velocity and outputs kilometers per liter. This means that <m>g(v) = \dfrac{1}{f(v)}</m>. So, <m>g(50) = 25</m> kilometers per liter. Further, <m>g'(v) = -\dfrac{-f'(v)}{(f(v))^2}</m>, so <m>g'(50) = -0.25</m> kilometers per liter per liter.
               </p>
             </answer>
             </task>
