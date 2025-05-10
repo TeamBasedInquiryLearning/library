@@ -363,7 +363,7 @@ you are using in your work.
           <p>
             The chain rule (along with the power, constant multiple, and sum/difference rules) gives the derivative of the first function <m>-5(5x^4-7x^3)^4(25x^3-21x^2)</m>. From the product rule, the first term becomes
             <me>
-              -5(5x^4-7x^3)^4(25x^3-21x^2)x^{1/4}
+              -5(5x^4-7x^3)^4(20x^3-21x^2)x^{1/4}
             </me>
             The derivative of the second function is <m>\dfrac{1}{4}x^{-3/4}</m>, which gives the second product rule term
             <me>
