@@ -112,8 +112,10 @@
 
     <definition xml:id="general-solution">
       <p>
-        In many cases, you will be asked to find the solution to a trigonometric equation within a given interval (such as <m>[0, 2\pi)</m>). If, however, you are asked to find the <term>general solution</term> of a trigonometric equation (like in <xref ref="intro-to-trig-equations"/>), it will require you to think more broadly (beyond <m>2\pi</m>), where <m>n=0, \pm1, \pm2,...</m> and represents the number of complete revolutions.
-      </p>
+        In many cases, you will be asked to find the solution to a trigonometric equation within a given interval (such as <m>[0, 2\pi)</m>). If, however, you are asked to find the <term>general solution</term> of a trigonometric equation (like in <xref ref="intro-to-trig-equations"/>), you need to include all solutions. This requires the notation below, which includes all angles coterminal with the solutions in the interval <m>[0, 2\pi)</m>.  If <m> \alpha</m> is a solution to a trigonometric equation, then the general solution would be 
+       <me>\theta = \alpha + 2\pi n, n \in \mathbb{Z} </me> 
+      where <m>\mathbb{Z} </m> represents the set of integers.
+</p>
     </definition>
 
     <activity xml:id="solving-factored-form">
