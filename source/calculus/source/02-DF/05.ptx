@@ -23,9 +23,20 @@
            <li><p> <m>-2x^2 +9 </m> </p></li>
                <li><p> <m>-2x^2 +4 </m> </p></li>
               </ol>
+              <answer>
+                <p>
+                    A
+                </p>
+              </answer>
                </task>
            <task>
-               <p> One of the options above is a formula for <m>g(f(x))</m>. Which one? </p> </task>
+               <p> One of the options above is a formula for <m>g(f(x))</m>. Which one? </p> 
+                <answer>
+                    <p>
+                        C
+                    </p>
+                </answer>
+                </task>
                    </activity>
 
   <activity xml:id="decomposition">
@@ -37,11 +48,26 @@
                 <li><p> <m>f(x)=e^x \, , \, g(x)=\sqrt{x} </m> </p></li>
                <li><p> <m>f(x)=e^x \, , \, g(x)=x^2 </m> </p></li>
               </ol>
+              <answer>
+                <p>
+                    B
+                </p>
+              </answer>
                </task>
            <task>
-               <p> Using properties of exponents, we can rewrite the original function as <m> \displaystyle e^{\frac{x}{2}}</m>. Using this new expression, what is your new inside function and your new outside function?</p> </task>
+               <p> Using properties of exponents, we can rewrite the original function as <m> \displaystyle e^{\frac{x}{2}}</m>. Using this new expression, what is your new inside function and your new outside function?</p>
+                <answer>
+                    <p>
+                        <m>f(x) = e^x</m> and <m>g(x) = \dfrac{x}{2}</m>
+                    </p>
+                </answer> </task>
         <task>
-               <p> Consider the function <m>\displaystyle e^{\sqrt{x}}</m>. In this case, what are the inside and outside functions? </p> </task>
+               <p> Consider the function <m>\displaystyle e^{\sqrt{x}}</m>. In this case, what are the inside and outside functions? </p>
+                <answer>
+                    <p>
+                        <m>f(x) = e^x</m> and <m>g(x) = \sqrt{x}</m>
+                    </p>
+                </answer> </task>
                    </activity>
   <activity xml:id="chain-rule-in-context1">
       <introduction> <p>In this activity we will build the intuition for the chain rule using a real-world scenario and differential notation for derivatives. Consider the following scenario. </p>
@@ -55,6 +81,11 @@
                 <li><p> 200 </p></li>
                <li><p> 50 </p></li>
               </ol>
+              <answer>
+                <p>
+                    A
+                </p>
+              </answer>
                </task>
         <task>
         <p> The scenario gives you information regarding the rate of growth of <m>a(t)</m>, the acorn availability as a function of time (measured in weeks). What is the current value of <m>\dfrac{da}{dt}</m>? </p>
@@ -64,6 +95,11 @@
                 <li><p> 200 </p></li>
                <li><p> 50 </p></li>
               </ol>
+              <answer>
+                <p>
+                    B
+                </p>
+              </answer>
                </task>
        <task>
         <p> Given all the information provided, what is your best guess for the value of  <m>\dfrac{ds}{dt}</m>, the rate at which the squirrel population is growing per week? </p>
@@ -73,9 +109,19 @@
                 <li><p> 200 </p></li>
                <li><p> 50 </p></li>
               </ol>
+              <answer>
+                <p>
+                    C
+                </p>
+              </answer>
                </task>
              <task>
         <p> Given your answers above, what is the relationship between <m>\dfrac{ds}{da}, \dfrac{da}{dt}, \dfrac{ds}{dt}</m>? </p>
+            <answer>
+                <p>
+                    <m>\dfrac{ds}{dt} = \dfrac{ds}{da}\cdot \dfrac{da}{dt}</m>
+                </p>
+            </answer>
                </task>
                    </activity>
 
@@ -102,9 +148,21 @@
            <li><p> <m>-2x </m> </p></li>
                <li><p> <m>2 </m> </p></li>
               </ol>
+              <answer>
+                <p>
+                    A
+                </p>
+              </answer>
                </task>
            <task>
-               <p> One of the options above is a formula for <m>f'(x) \cdot g'(x) </m>. Which one? Notice that this is not the same as the derivative of <m>f(g(x))</m>! </p> </task>
+               <p> One of the options above is a formula for <m>f'(x) \cdot g'(x) </m>. Which one? Notice that this is not the same as the derivative of <m>f(g(x))</m>! </p> 
+                <answer>
+                    <p>
+                        B
+                    </p>
+                </answer>
+                </task>
+                
                    </activity>
 
     <activity xml:id="chain-rule-practice1">
@@ -117,6 +175,11 @@
            <li><p> <m>\displaystyle \frac{1}{2} \sqrt{e^x}  </m> </p></li>
                <li><p> <m> \displaystyle\sqrt{e^x} \cdot e^x </m> </p></li>
               </ol>
+              <answer>
+                <p>
+                    D, E
+                </p>
+              </answer>
                                  </activity>
 
   <activity xml:id="chain-rule-practice-graphs">
@@ -137,8 +200,8 @@
                 <image xml:id="graph-chain-rule-practice-img2">
                     <sageplot>
                         x = var('x')
-                        f = -2*abs(x)+2
-                        p = plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'), aspect_ratio=.5)
+                        f = -abs(x)+2
+                        p = plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'), aspect_ratio=1)
                         p
                     </sageplot>
                 </image>
@@ -153,10 +216,15 @@
                 <li><p> <m> 0 </m> </p></li>
                    <li><p> <m> -1 </m> </p></li>
                  <li><p> <m> 1 </m> </p></li>
-         <li><p> <m>  </m> -2</p></li>
-           <li><p> <m> </m> 2 </p></li>
+         <li><p> <m> -2</m> </p></li>
+           <li><p> <m>2</m>  </p></li>
                <li><p> The derivative does not exist at this point.  </p></li>
               </ol>
+              <answer>
+                <p>
+                    A
+                </p>
+              </answer>
                </task>
       <task>
         <p> Which of the following values is the derivative of <m>a \circ b</m> at <m> x=2 </m>? </p>
@@ -164,10 +232,15 @@
                               <li><p> <m> 0 </m> </p></li>
                    <li><p> <m> -1 </m> </p></li>
                  <li><p> <m> 1 </m> </p></li>
-         <li><p> <m>  </m> -2</p></li>
-           <li><p> <m> </m> 2 </p></li>
+         <li><p> <m> -2 </m> </p></li>
+           <li><p> <m> 2 </m>  </p></li>
                <li><p> The derivative does not exist at this point.  </p></li>
               </ol>
+              <answer>
+                <p>
+                    F
+                </p>
+              </answer>
                </task>
        <task>
         <p> Which of the following values is the derivative of <m>b \circ a</m> (different order!) at <m>x=-2 </m>? </p>
@@ -179,6 +252,11 @@
            <li><p> <m> </m> 2 </p></li>
                <li><p> The derivative does not exist at this point.  </p></li>
               </ol>
+              <answer>
+                <p>
+                    A
+                </p>
+              </answer>
                </task>
   </activity>
 
@@ -193,9 +271,26 @@
            <li><p> <m>2\cos(x)\sin(x) </m> </p></li>
            <li><p> <m>- 2\cos(x)\sin(x) </m> </p></li>
               </ol>
+              <answer>
+                <p>
+                    D
+                </p>
+              </answer>
      </task>
-     <task> <p>Consider the function <m>\cos^3(x)</m>. Find its derivative. </p></task>
-          <task> <p>Consider the function <m>\cos^n(x)</m>, for <m>n</m> any number. Find the general formula for its derivative. </p></task>
+     <task> <p>Consider the function <m>\cos^3(x)</m>. Find its derivative. </p>
+                <answer>
+                    <p>
+                        <m>-3\cos^2(x)\sin (x)</m>
+                    </p>
+                </answer>
+     </task>
+          <task> <p>Consider the function <m>\cos^n(x)</m>, for <m>n</m> any number. Find the general formula for its derivative. </p>
+                <answer>
+                    <p>
+                        <m>-n\cos^{n-1}(x)\sin(x)</m>
+                    </p>
+                </answer>
+          </task>
     </activity>
 
 
@@ -210,9 +305,26 @@
              <li><p> <m>e^{-\sin(x)} </m> </p></li>
            <li><p> <m>e^{\cos(x)}\sin(x) </m> </p></li>
         </ol>
+        <answer>
+            <p>
+                B
+            </p>
+        </answer>
      </task>
-     <task> <p>Consider the function <m>2^{\cos(x)}</m>. Find its derivative. </p></task>
-          <task> <p>Consider the function <m>b^{\cos(x)}</m>, for <m>b</m> any positive number. Find the general formula for its derivative. </p></task>
+     <task> <p>Consider the function <m>2^{\cos(x)}</m>. Find its derivative. </p>
+        <answer>
+            <p>
+                <m>-\ln(2)\cdot2^{\cos(x)}\sin(x)</m>
+            </p>
+        </answer>
+     </task>
+          <task> <p>Consider the function <m>b^{\cos(x)}</m>, for <m>b</m> any positive number. Find the general formula for its derivative. </p>
+          <answer>
+            <p>
+                <m>-\ln(b)\cdot b^{\cos (x)}\sin (x)</m>
+            </p>
+          </answer>
+          </task>
     </activity>
 
 <remark xml:id="chain-rule-power-vs-exp"> <p>Remember that exponential and power functions obey very different differentiation rules. This behavior continues when we consider composite function. The composite power function <m>f(x)^3</m> has derivative </p>
@@ -250,6 +362,16 @@
 \left( f(x)\cdot g(x)^{-1}\right) </me>        
     Use this observation, the chain rule, the product rule, and the power rule (plus some fraction algebra) to deduce the quotient rule in a new way!
 </p>
+<answer>
+    <p>
+        <md>
+            <mrow> \displaystyle\left(\frac{f(x)}{g(x)}\right)'\amp =  \left( f(x)\cdot g(x)^{-1}\right)'</mrow>
+            <mrow> \amp = f'(x)g(x)^{-1} - f(x)g'(x)g(x)^{-2} </mrow>
+            <mrow> \amp = f'(x)g(x)g(x)^{-2} - f(x)g'(x)g(x)^{-2}</mrow>
+            <mrow> \amp = \dfrac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}</mrow>
+        </md>
+    </p>
+</answer>
      </activity>
     
 <activity xml:id="chain-rule-in-context2">
@@ -258,14 +380,27 @@
 = 2\left(50\sin(2t)+60\right)+10. </me>
           </introduction>
            <task>
-        <p> Check that the model satisfies the data <m>\dfrac{ds}{da}=2</m> and <m>\dfrac{da}{dt}\big|_{t=0} = 100 </m></p>
+        <p> Check that the model satisfies the data <m>\dfrac{ds}{da}=2</m> and <m>\dfrac{da}{dt}\bigg\rvert_{t=0} = 100 </m></p>
 
                </task>
            <task>
-        <p> Find the derivative function <m>\dfrac{ds}{dt}</m> and check that <m>\dfrac{ds}{dt}|_{t=0} = 200</m>.  </p>
+        <p> Find the derivative function <m>\dfrac{ds}{dt}</m> and check that <m>\dfrac{ds}{dt}\bigg\rvert_{t=0} = 200</m>.  </p>
+            <answer>
+                <p>
+                    <m>\dfrac{ds}{dt} = 200\cos(2t)</m> and <m>\dfrac{ds}{dt}\bigg\rvert_{t=0} = 200</m>
+                </p>
+            </answer>
                </task>
        <task>
         <p> According to this model, what is the maximum and minimum squirrel population? What is the fastest rate of increase and decrease of the squirrel population? When will these extremal scenarios occur?</p>
+            <answer>
+                <p>
+                    The maximum population is 230, and the minimum is 30. These occur periodically at times <m> \dfrac{\pi}{4}+\pi k</m> and <m> \dfrac{3\pi}{4}+\pi k</m>, respectively, where <m> k </m> is a positive integer.
+                </p>
+                <p>
+                    The fastest rate of increase is 200 squirrels per week, and the fastest rate of decrease is <m>-200</m> squirrels per week. These occur periodically at times <m> 0+\pi k</m> and <m> \dfrac{\pi}{2}+\pi k</m>, respectively, where <m> k </m> is a positive integer. 
+                </p>
+            </answer>
                </task>
                    </activity>
 
@@ -277,9 +412,19 @@
            <task>
         <p>   Find <m>P(10)</m> and use units to explain what this value tells us about the population.
     </p>
+    <answer>
+        <p>
+            <m>P(10) = 200</m>. There are 200 fish in month 10.
+        </p>
+    </answer>
                </task>
         <task>
-            <p> Find <m>P'(10)</m> and use units to explain what this value tells us about the population. (If you want to avoid using a calculator, you can use the approximation <m>\ln(4) = 1.4</m>.)  </p>  </task>
+            <p> Find <m>P'(10)</m> and use units to explain what this value tells us about the population. (If you want to avoid using a calculator, you can use the approximation <m>\ln(4) = 1.4</m>.)  </p>  
+                <answer>
+                    <p>
+                        <m>P'(10) = 13.8629</m>. In month 10, the number of fish is increasing by 13.8629 fish per month.
+                    </p>
+                </answer></task>
                    </activity>
      
     </subsection>
