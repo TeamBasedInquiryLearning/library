@@ -1283,7 +1283,7 @@ TBIL.trig_plot(3*sin(2*(x-pi/2))-3,(-2*pi,2*pi))
         <image>
           <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(2*sin(3*x-pi)+4,(-2*pi,2*pi))
+TBIL.trig_plot(2*sin(3*x-pi)+4,(-2*pi,2*pi),ymin=0)
           </sageplot>
         </image>
       </answer>
@@ -1296,7 +1296,7 @@ TBIL.trig_plot(2*sin(3*x-pi)+4,(-2*pi,2*pi))
         <image>
           <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(4*cos(2*x+2pi)+1,(-2*pi,2*pi))
+TBIL.trig_plot(4*cos(2*x+2*pi)+1,(-2*pi,2*pi))
           </sageplot>
         </image>
       </answer>
