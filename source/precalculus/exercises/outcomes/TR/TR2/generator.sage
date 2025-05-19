@@ -11,12 +11,12 @@ class Generator(BaseGenerator):
         if degree_task_first:
           coterminal1=str((angle1+2*pi)*360/(2*pi))+r"^\circ"
           coterminal2=str((angle2-2*pi)*360/(2*pi))+r"^\circ"
-          angle1=latex(angle2*360/(2*pi))+r"^\circ"
+          angle1=latex(angle1*360/(2*pi))+r"^\circ"
           angle2=TBIL.typeset_angle(angle2)
         else:
           coterminal1 = TBIL.typeset_angle(angle1+2*pi)
           coterminal2 = TBIL.typeset_angle(angle1-2*pi)
-          angle_1 = TBIL.typeset_angle(angle1)
+          angle1 = TBIL.typeset_angle(angle1)
           angle2=latex(angle2*360/(2*pi))+r"^\circ"
 
 
