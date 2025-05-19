@@ -348,7 +348,15 @@ The second derivative is the derivative of the derivative. It encodes informatio
             </p>
             <answer>
                 <p>
-                    The derivative function for values greater than 2 is <m>2x</m>. This means that at <m>x=2</m>, <m>g'(2) = 4\neq 1</m>
+                    On the left-hand side, we have 
+                    <me>
+                        \lim_{h\to 0^-} \dfrac{g(2+h) - g(2)}{h} = \lim_{h\to 0^-} \dfrac{4 + h - 4}{h} = 1
+                    </me>
+                    but 
+                    <me>
+                        \lim_{h\to 0^+} \dfrac{g(2+h) - g(2)}{h} = \lim_{h\to 0^-} \dfrac{4 + 4h + h^2- 4}{h} = 4
+                    </me>
+                    since the left and the right-hand limits disagree, <m>\displaystyle \lim_{h\to 0} \dfrac{g(2+h)-g(2)}{h}</m> does not exist, which means that <m>g'(2)</m> does not exist.
                 </p>
             </answer>
             </task>
