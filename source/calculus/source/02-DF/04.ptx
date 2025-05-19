@@ -309,7 +309,7 @@
         <p> What is the domain of <m>f</m>?</p>
         <answer>
           <p>
-            <m>\left\lbrace x\mid x\neq \dfrac{\pi}{2}+\pi k, \right\rbrace</m> for some integer <m>k</m>
+            <m>\left\lbrace x\mid x\neq \dfrac{\pi}{2}+\pi k, \text{ for some integer }k\right\rbrace</m>
           </p>
         </answer>
       </task>
@@ -342,7 +342,7 @@
           How does this domain compare to the domain of <m>f</m>?</p>
         <answer>
           <p>
-            <m>f'(x)</m> is defined on the same domain as <m>f(x)</m>
+            <m>f'(x)</m> is defined on the same domain as <m>f(x)</m>.
           </p>
         </answer>
       </task>
@@ -361,7 +361,7 @@
           </p>
           <answer>
             <p>
-              <m>\left\lbrace x\mid x\neq \pi k\right\rbrace</m> for some integer <m>k</m>
+              <m>\left\lbrace x\mid x\neq \pi k \text{ for some integer }k\right\rbrace</m>
             </p>
           </answer>
         </task>
@@ -391,7 +391,7 @@
           </p>
           <answer>
             <p>
-              The domain of <m>g'(x)</m> is the same as the domain of <m>g(x)</m>
+              The domain of <m>g'(x)</m> is the same as the domain of <m>g(x)</m>.
             </p>
           </answer>
         </task>
@@ -409,7 +409,7 @@
           </p>
           <answer>
             <p>
-              <m>\left\lbrace x\mid x\neq \dfrac{\pi}{2} +\pi k\right\rbrace</m> for some integer <m>k</m>
+              <m>\left\lbrace x\mid x\neq \dfrac{\pi}{2} +\pi k \text{ for some integer }k\right\rbrace</m>
             </p>
           </answer>  
         </task>
@@ -419,7 +419,7 @@
           </p>
           <answer>
             <p>
-              <m>h'(x) = \dfrac{-\sin x}{\cos^2x}</m>
+              <m>h'(x) = \dfrac{\sin x}{\cos^2x}</m>
             </p>
           </answer>
         </task>
@@ -439,7 +439,7 @@
           </p>
           <answer>
             <p>
-              The domain of <m>h'(x)</m> is the same as <m>h(x)</m>
+              The domain of <m>h'(x)</m> is the same as <m>h(x)</m>.
             </p>
           </answer>
         </task>
@@ -456,7 +456,7 @@
           </p>
           <answer>
             <p>
-              <m>\left\lbrace x\mid x\neq \pi k\right\rbrace</m> for some integer <m>k</m>
+              <m>\left\lbrace x\mid x\neq \pi k \text{ for some integer }k\right\rbrace</m>
             </p>
           </answer>
         </task>
@@ -485,7 +485,7 @@
           </p>
           <answer>
             <p>
-              The domain of <m>p'(x)</m> is the same as the domain of <m>p(x)</m>
+              The domain of <m>p'(x)</m> is the same as the domain of <m>p(x)</m>.
             </p>
           </answer>
         </task>  
@@ -546,7 +546,7 @@ In answering the following questions, be sure to explicitly denote which derivat
         </p>
         <answer>
           <p>
-            <m>[f(x)\cdot h(x)]'(-1) = 12\sin(1)</m>
+            <m>[f(x)\cdot h(x)]'(-1) = 12\sin(-1)</m>
           </p>
         </answer>
       </task>
@@ -556,7 +556,7 @@ In answering the following questions, be sure to explicitly denote which derivat
         </p>
         <answer>
           <p>
-            <m>\left[\dfrac{g(x)}{h(x)}\right]'(0) = 6</m>
+            <m>\left[\dfrac{g(x)}{h(x)}\right]'(0) = 0</m>
           </p>
         </answer>
       </task>
@@ -577,7 +577,7 @@ In answering the following questions, be sure to explicitly denote which derivat
             The terms alternate between sine and cosine, while the sign on the first term is negative twice before being positive twice; the coefficient on the second term is given by three times the derivative we're taking (e.g. the third derivative has 9, the fourth has 12). In particular, the pattern should repeat every 4 derivatives.
           </p>
           <p>
-            So, <m>r^{(12)}(x) = 3x\cos x +36\sin x</m>
+            So, <m>r^{(12)}(x) = 3x\cos x +3(12)\sin x= 3x\cos x +36\sin x</m>
           </p>
         </answer>
       </task>
@@ -657,7 +657,7 @@ In answering the following questions, be sure to explicitly denote which derivat
             </p>
             <answer>
               <p>
-                When the sale price of a skateboard is 140, sales are decreasing by 100 skateboards per unit price
+                When the sale price of a skateboard is 140, 15000 skateboards are sold, while sales are decreasing by 100 skateboards per unit price.
               </p>
             </answer>
         </task>
@@ -714,7 +714,7 @@ In answering the following questions, be sure to explicitly denote which derivat
             </p>
             <answer>
               <p>
-                As velocity increases, distance covered per liter decreases and fuel efficiency increases
+                When you speed up past 50km/h, your fuel economy goes down, which makes sense because the rate your are burning fuel goes up.
               </p>
             </answer>
             </task> 
