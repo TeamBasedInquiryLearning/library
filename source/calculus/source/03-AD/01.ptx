@@ -107,19 +107,19 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     <task><p>When is the particle moving upward and when is it moving downward?</p>
     <answer>
         <p>
-            
+            The particle is moving upward on the interval <m>[0,2)</m> and <m>(4,5]</m>, and downward on <m>(2,4)</m>.
         </p>
     </answer></task>
     <task><p>When is the particle's velocity increasing?</p>
     <answer>
         <p>
-            
+            The velocity is increasing on the interval <m>(3,5]</m>.
         </p>
     </answer></task>
     <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down. </p>
     <answer>
         <p>
-            
+            The total distance traveled is <m>23 + 4 + 4 = 31</m> miles
         </p>
     </answer></task>
      </activity>   
@@ -141,6 +141,11 @@ seconds. Use appropriate units for each.
                 </p>
             
     </statement>
+    <answer>
+        <p>
+            The position is given by <m>s(2) = -22</m> miles. Its velocity is given by <m>s'(2) = -29</m> miles per unit of time and its acceleration is given by <m>s''(2) = -18</m> miles per unit of time per unit of time.
+        </p>
+    </answer>
 <!--    <answer>
         <ol>
            
@@ -190,6 +195,11 @@ Acceleration: <m>-18</m> miles per <m>s^2</m>
              <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs. </p></li>
            
     </ol>      
+    <answer>
+        <p>
+            A: The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.
+        </p>
+    </answer>
     </activity>
   
 <definition xml:id = "defn-rate-parametric"> <p> In a parametric motion on a curve <m>C</m> given by <m>x=f(t)</m> and <m>y=g(t)</m> we have that </p>
@@ -206,13 +216,31 @@ Acceleration: <m>-18</m> miles per <m>s^2</m>
         <p>where <m>x, y</m> have units of miles, and <m>t</m> is in hours.  </p></introduction>
         <task>
         <p>Find the slope of the curve.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{-4t^3 + 4}{4} = 1-t^3</m> miles per hour
+            </p>
+        </answer>
+        </task>
           <task>
         <p>What is the slope of the curve at <m>(0,-1)</m>.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                When <m>x = 0</m>, we have <m>0 = 4t</m> so <m>t = 0</m>. This means that the slope is given by <m>1</m> mile per hour.
+            </p>
+        </answer>
+        </task>
          <task>
         <p>Write the equation of the tangent line to the curve at  <m>(0,-1)</m>.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>y = x + 1</m>
+            </p>
+        </answer>
+        </task>
     </activity>
 
 <definition xml:id = "def-marginals"><p>
@@ -234,16 +262,40 @@ be <m>C</m> dollars, where
 </p></introduction>
      <task>
         <p> What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>C(0) = 210,000</m> dollars.
+            </p>
+        </answer>
+        </task>
           <task>
         <p>Find the marginal cost
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>C'(x) = 30x^2 - 1800x + 16000</m> dollars per computer.
+            </p>
+        </answer>
+        </task>
          <task>
         <p>Now suppose that <m>x</m> computers give revenue <m>R(x) = 1000x</m>. What is the marginal revenue? What is the real world interpretation of your finding?
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>R'(x) = 1000</m>. For every additional computer, the revenue increases by 1000 dollars.
+            </p>
+        </answer>
+        </task>
     <task>
         <p>Find a formula for the profit function <m>P(x)</m> and find the marginal profit using the marginal revenue and the marginal cost (assuming the number of items produced and sold is equal and given by <m>x</m>).
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>P'(x) = R'(x) - C'(x) = -30x^2 + 1800x - 15000</m>
+            </p>
+        </answer>
+        </task>
     </activity>
 
 <activity xml:id="marginals-fluency-checkit">
@@ -261,6 +313,11 @@ in this situation.
                 </p>
         
     </statement>
+    <answer>
+        <p>
+            The marginal cost is <m>C'(x) = 12x^2 + 10x + 7</m> dollars per gizmo, the marginal revenue is 63 dollars per gizmo, and the marginal profit is <m>-12x^2-20x + 56</m> dollars per gizmo.
+        </p>
+    </answer>
 <!--    <answer>
        
                 <p>
@@ -286,20 +343,44 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
 
 <activity xml:id = "activity-temp1">
     <introduction>
-    <p> Consider a cup of coffee initially at <m> 100^\circ</m>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <m>72^\circ</m>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <m>3.8</m> degrees per minute.
+    <p> Consider a cup of coffee initially at <m> 110^\circ</m>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <m>72^\circ</m>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <m>3.8</m> degrees per minute.
         </p></introduction>
     <task>
         <p> In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <m>y=ae^{-kt}+c</m> to determine the value of <m>c</m>.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                The temperature should tend to <m>72^\circ</m>F
+            </p>
+        </answer>
+        </task>
     <task>
         <p> Using the initial temperature of the coffee and your value of <m>c</m>, find the value of <m>a</m> in the model <m>y=ae^{-kt}t+c</m>.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+               <m>a = 28</m> 
+            </p>
+        </answer>
+        </task>
      <task>
         <p> The scenario also gives you information about the value of the rate of change at <m>t=0</m>. Use this additional information to determine the model <m>y=ae^{-kt}t+c</m> completely.
-            </p></task>
+            </p>
+        <answer>
+            <p>
+                <m>y = 28e^{-0.1t} + 72</m>
+            </p>
+        </answer>
+        </task>
      <task>
         <p>  You should find that the temperature model for this coffee cup is <m>y= 72 + 38 e^{-0.1t}</m>. Explain how the values of each parameter connects to the information given.
-    </p></task>
+    </p>
+        <answer>
+            <p>
+                <m>c = 72</m> because as <m>t\to \infty</m>, the coffee will settle around the ambient temperature, which is <m>72^\circ</m>F. <m>a = e8</m> because when <m>t = 0</m>, the temperature of the coffee should be <m>110^\circ</m>F. <m>b = 0.1</m> because <m>y'(0) = 3.8</m>.
+            </p>
+        </answer>
+    </task>
     </activity>    
 
     </subsection>
