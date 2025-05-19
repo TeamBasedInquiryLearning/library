@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    <!--{{#tasks}}-->
+    <knowl>
+        <knowl>
+            <content>
+                <p>
+                    Draw the angle <m>{{angle}}</m> in standard position.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <image
+                    source="assets/TR1/generated/{{__seed__}}/{{plot}}.png"
+                    description="."/>
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+                    Convert the angle <m>{{angle}}</m> to <!--{{#degrees}}-->radians<!--{{/degrees}}--><!--{{^degrees}}-->degrees<!--{{/degrees}}-->.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{angle}}={{angle2}}</m>
+                </p>
+            </outtro>
+        </knowl>
+    </knowl>
+    <!--{{/tasks}}-->
+    
+</knowl>

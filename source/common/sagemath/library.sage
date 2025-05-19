@@ -1,6 +1,22 @@
 class TBIL:
 
     # Precal/Cal
+    @staticmethod
+    def special_angles(n=0,min=0,max=2*pi,include_min=True,include_max=False,list=False):
+        angle_min = floor(min*12/pi)
+        if  angle_min < min*12/pi or include_min:
+            lower=angle_min
+        else:
+            lower=angle_min+1
+        angle_max = ceil(max*12/pi)
+        if  angle_max < max*12/pi or include_max:
+            upper=angle_max
+        else:
+            upper=angle_max-1
+        if list or not isinstance(n,sage.rings.integer.Integer) or n<=0:
+            return [pi*i/12 for i in range(lower,upper+1) if not Zmod(12)(i).is_unit()]
+        else:
+            return sample([pi*i/12 for i in range(lower,upper+1) if not Zmod(12)(i).is_unit()],n)
 
     @staticmethod
     def plot_angle(
@@ -20,8 +36,8 @@ class TBIL:
             angle_label = f"${latex(angle*180/pi)}^\\circ$"
             reference_angle_label = f"${latex(reference_angle*180/pi)}^\\circ$"
         else:
-            angle_label = TBIL.typeset_angle(angle)
-            reference_angle_label = TBIL.typeset_angle(reference_angle)
+            angle_label = TBIL.typeset_angle(angle,latex_delimiters=True)
+            reference_angle_label = TBIL.typeset_angle(reference_angle,latex_delimiters=True)
 
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
         mid_reference_angle=reference_angle/2
@@ -222,13 +238,15 @@ class TBIL:
         return P
 
     @staticmethod
-    def typeset_angle(theta):
-        angle_string=f"${latex(theta)}$"
+    def typeset_angle(theta,latex_delimiters=False):
+        angle_string=f"{latex(theta)}"
         if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
             if numerator(theta)<0:
-                angle_string = f"$-\\dfrac{{{latex(-1*numerator(theta))}}}{{{denominator(theta)}}}$"
+                angle_string = f"-\\dfrac{{{latex(-1*numerator(theta))}}}{{{denominator(theta)}}}"
             else:
-                angle_string = f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+                angle_string = f"\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}"
+        if latex_delimiters:
+            angle_string="$"+angle_string+"$"
         return angle_string
 
     @staticmethod
@@ -259,7 +277,7 @@ class TBIL:
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
             custom_ticks.append(x)
-            custom_tick_labels.append(TBIL.typeset_angle(x))
+            custom_tick_labels.append(TBIL.typeset_angle(x,latex_delimiters=True))
                 
         #Default formatting
         if 'color' not in kwds.keys():
