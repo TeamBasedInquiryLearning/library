@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+      <knowl>
+          <content>
+              <p>
+                  Find two angles, one positive and one negative, that are coterminal
+                  with the angle <m>{{angle1}}</m>.
+              </p>
+          </content>
+          <outtro>
+              <p><m>{{coterminal1}}</m> and <m>{{coterminal2}}</m>
+              </p>
+          </outtro>
+      </knowl>
+      <knowl>
+          <content>
+              <p>
+                  Find the length of the arc of a circle of radius <m>{{radius}}</m> intercepted by
+                  an angle of <m>{{angle2}}</m>
+              </p>
+          </content>
+          <outtro>
+              <p>
+                  <m>{{arclength}}</m>
+              </p>
+          </outtro>
+      </knowl>
+</knowl>
