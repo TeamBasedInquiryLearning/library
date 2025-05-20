@@ -19,3 +19,6 @@ conda init
 echo 'conda activate sage' >> ~/.bashrc
 
 source ~/.bashrc
+
+export SAGE_PATH=$(which sage)
+echo "<executables sage=\"${SAGE_PATH}\"/>" > ./executables.ptx
