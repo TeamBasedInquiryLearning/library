@@ -46,7 +46,7 @@
     </activity>
 
 <activity xml:id="activity-df-inv-general">
-    <introduction><p>In this activity we will try to find a general formula for the derivative of the inverse function.  Let <m>g</m> be the inverse function of <m>f</m>. We have also used the notation <m>f^{-1}</m> before, but for the purpose of this problem, let us use <m>g</m> to avoid too many exponents. We can express the relationship <q><m>g</m> is the inverse of <m>f</m></q> with the equation from <xref ref = "rmk-inverse-function-identity"/> </p> 
+    <introduction><p>In this activity we will try to find a general formula for the derivative of the inverse function.  Let <m>g</m> be the inverse function of <m>f</m>. We have also used the notation <m>f^{-1}</m> before, but for the purpose of this problem, let us use <m>g</m> to avoid too many superscripts. We can express the relationship <q><m>g</m> is the inverse of <m>f</m></q> with the equation from <xref ref = "rmk-inverse-function-identity"/> </p> 
 <me>f(g(x))=x.</me></introduction>
     <task><p>
         Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the right hand side of the equation?
