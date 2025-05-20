@@ -14,7 +14,7 @@
 
       <remark>
         <p>
-          Recall from the previous section that we can find values of trigonometric functions of right triangles. In this section, we can take what we know about right triangles and find exact values of trigonometric functions of special angles.
+          Recall from the previous section that we can find values of trigonometric functions of any angle. In this section, we can take what we know about right triangles and find exact values of trigonometric functions of special angles.
         </p>
       </remark>
       
@@ -164,10 +164,10 @@
           <statement>
             <p>
               In triangle <m>ABC</m>, <m>A=90^\circ</m>, <m>c=3</m>, and <m>B=45^\circ</m>. What is the length of <m>a</m>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>6</m> </li>
                 <li> <m>5</m></li>
-                <li> <m>4</m> </li>
+                <li> <m>3</m> </li>
                 <li> <m>3\sqrt{2}</m> </li></ol>
               </p>
           </statement>
@@ -182,7 +182,7 @@
           <statement>
             <p>
               In triangle <m>ABC</m>, <m>B=90^\circ</m>, <m>b=6\sqrt{2}</m>, and <m>C=45^\circ</m>. What is the length of <m>c</m>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>6</m> </li>
                 <li> <m>5</m></li>
                 <li> <m>4</m> </li>
@@ -200,11 +200,11 @@
           <statement>
             <p>
               In triangle <m>ABC</m>, <m>B=90^\circ</m>, <m>b=4</m>, and <m>A=45^\circ</m>. What is the length of <m>c</m>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\sqrt{6}</m> </li>
                 <li> <m>2\sqrt{2}</m></li>
-                <li> <m>3</m> </li>
-                <li> <m>6</m> </li></ol>
+                <li> <m>4</m> </li>
+                <li> <m>4\sqrt{2}</m> </li></ol>
             </p>
           </statement>
           <answer>
@@ -348,7 +348,7 @@
           <statement>
             <p>
               In triangle <m>ABC</m>, <m>B=90</m>,<degree/>, <m>c=6</m>, and <m>C=30</m><degree/>. What is the length of <m>a</m>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>6\sqrt{3}</m> </li>
                 <li> <m>4</m></li>
                 <li> <m>3</m> </li>
@@ -366,7 +366,7 @@
           <statement>
             <p>
               In triangle <m>ABC</m>, <m>C=90</m>,<degree/>, <m>a=4\sqrt{3}</m>, and <m>B=30</m><degree/>. What is the length of <m>b</m>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>3</m> </li>
                 <li> <m>6</m></li>
                 <li> <m>4\sqrt{2}</m> </li>
@@ -384,7 +384,7 @@
           <statement>
             <p>
               In triangle <m>ABC</m>, <m>B=90</m>,<degree/>, <m>a=8\sqrt{3}</m>, and <m>A=60</m><degree/>. What is the length of <m>b</m>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>4</m> </li>
                 <li> <m>16</m></li>
                 <li> <m>12</m> </li>
@@ -415,12 +415,12 @@
         <task>
           <statement>
             <p>
-              Solve triangle <m>ABC</m> using the <m>45-45-90</m> triangle rule and other properties of right triangles.
+              Find the measures of sides <m>b</m> and <m>c</m>.
             </p>
           </statement>
           <answer>
             <p>
-              <m>a=5</m>, <m>b=5\sqrt{2}</m>, and <m>c=5</m>
+              <m>b=5\sqrt{2}</m> and <m>c=5</m>
             </p>
           </answer>
         </task>
@@ -429,7 +429,7 @@
           <statement>
             <p>
               Now that you have found all the sides and angles of triangle <m>ABC</m>, find the ratio that represents <m>\tan{A}</m>.
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{5}{5\sqrt{2}}</m> </li>
                 <li> <m>\frac{5\sqrt{2}}{5}</m></li>
                 <li> <m>\sqrt{2}</m> </li>
@@ -447,7 +447,7 @@
           <statement>
             <p>
               Find the ratio that represents <m>\sin{A}</m>.
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{5}{5\sqrt{2}}</m> </li>
                 <li> <m>\frac{5\sqrt{2}}{5}</m></li>
                 <li> <m>\frac{1}{\sqrt{2}}</m> </li>
@@ -477,7 +477,7 @@
 
       <remark>
       <p>
-        In <xref ref="finding-trig-values-of-45-45-90-triangle"/>, notice that when finding a value of a trigonometric ratio, sometimes the values are "not nice." For example, the ratio for <m>\sin{A}</m> was <m>\frac{1}{\sqrt{2}}</m> (or <m>\frac{\sqrt{2}}{2}</m>), which gives an approximate value of <m>0.707</m>.
+        In <xref ref="finding-trig-values-of-45-45-90-triangle"/>, notice that when finding a value of a trigonometric ratio, sometimes the values are decimal approximations. For example, the ratio for <m>\sin{A}</m> was <m>\frac{1}{\sqrt{2}}</m> (or <m>\frac{\sqrt{2}}{2}</m>), which gives an approximate value of <m>0.707</m>.
         </p>
       </remark>
 
@@ -498,7 +498,7 @@
           <statement>
             <p>
               Given the triangle, <m>ABC</m>, with <m>B=90</m><degree/>, <m>C=45</m><degree/>, and <m>a=7</m>, find <m>\cos{A}</m>.
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{7}{7\sqrt{2}}</m></li>
                 <li> <m>\frac{7\sqrt{2}}{7}</m></li>
                 <li> <m>\frac{1}{\sqrt{2}}</m> </li>
@@ -529,7 +529,7 @@
           <statement>
             <p>
               Which of the following is equivalent to the value of <m>\cos{45}</m><degree/> that you found in part (b)?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{7}{7\sqrt{2}}</m></li>
                 <li> <m>\frac{7\sqrt{2}}{7}</m></li>
                 <li> <m>\frac{1}{\sqrt{2}}</m> </li>
@@ -559,7 +559,7 @@
 
       <remark>
       <p>
-        Notice that if you know the relationships of the sides of special right triangles, it can help you find the exact value of special angles (i.e., <m>30</m><degree/>, <m>45</m><degree/>, and <m>60</m><degree/>).
+        Notice that if you know the relationships of the sides of special right triangles, it can help you find the exact value of special angles (i.e., <m>30</m><degree/>, <m>45</m><degree/>, and <m>60</m><degree/>). In addition, notice that the trig values of the angles were the same regardless of the size of the triangle.
       </p>
       </remark>
 
@@ -574,7 +574,7 @@
           <statement>
             <p>
               What is <m>\tan45</m><degree/>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{1}{\sqrt{2}}</m></li>
                 <li> <m>\sqrt{2}</m></li>
                 <li> <m>1</m> </li>
@@ -592,11 +592,11 @@
           <statement>
             <p>
               What is <m>\cos60</m><degree/>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{1}{2}</m></li>
                 <li> <m>\sqrt{3}</m></li>
                 <li> <m>2</m> </li>
-                <li> <m>1</m> </li></ol>
+                <li> <m>\frac{\sqrt{3}}{2}</m> </li></ol>
             </p>
           </statement>
           <answer>
@@ -610,8 +610,8 @@
           <statement>
             <p>
               What is <m>\sin30</m><degree/>?
-              <ol marker= "A." cols="2">
-                <li> <m>\sqrt{2}</m></li>
+              <ol marker= "A." cols="4">
+                <li> <m>\frac{\sqrt{3}}{2}</m></li>
                 <li> <m>\sqrt{3}</m></li>
                 <li> <m>2</m> </li>
                 <li> <m>\frac{1}{2}</m> </li></ol>
@@ -628,7 +628,7 @@
           <statement>
             <p>
               What is <m>\cos45</m><degree/>?
-              <ol marker= "A." cols="2">
+              <ol marker= "A." cols="4">
                 <li> <m>\frac{1}{\sqrt{2}}</m></li>
                 <li> <m>\sqrt{2}</m></li>
                 <li> <m>1</m> </li>
@@ -637,12 +637,50 @@
           </statement>
           <answer>
             <p>
-              D
+              A and D
             </p>
           </answer>
         </task>
-
       </activity>
+
+      <task>
+        <statement>
+          <p>
+            Now that you have determined <m>\tan45</m><degree/> (part a), what is <m>\cot45</m><degree/>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is <m>\csc30</m><degree/>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is <m>\sec30</m><degree/>?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\sqrt{3}}{3}</m>
+          </p>
+        </answer>
+      </task>
     </subsection>
 
     <exercises>
