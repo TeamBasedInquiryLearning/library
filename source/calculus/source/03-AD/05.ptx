@@ -36,7 +36,11 @@ To find the extreme values of a function we can consider all its <em>local extre
                 <li><p>A local extremum always occurs at a critical point. </p></li>
                 <li><p>A local extremum might occur at a critical point or at an endpoint of a closed interval. </p></li>
             </ol>
-    
+        <answer>
+            <p>
+                E: A local extremum always occurs at a critical point.
+            </p>
+        </answer>
     </activity>  
 <!--     
   <activity xml:id="activity-derivative-derivativetests1">
@@ -63,6 +67,11 @@ To find the extreme values of a function we can consider all its <em>local extre
       <p>
         Sketch the graph of a continuous function that is increasing on <m>(-\infty, -2)</m>, constant on the interval <m>(3,5)</m>, and decreasing on the interval <m>(-2,3)</m>.  
       </p>
+        <answer>
+            <p>
+                Answers vary.
+            </p>
+        </answer>
         </task>
       <task>
       <statement>
@@ -74,6 +83,11 @@ To find the extreme values of a function we can consider all its <em>local extre
                <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &lt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) </m> is constant.</p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                C: For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x)=0 </m>.
+            </p>
+          </answer>
       </task>
   </activity>
     
@@ -89,6 +103,11 @@ To find the extreme values of a function we can consider all its <em>local extre
                 <li><p> The derivative is undefined. </p></li>
                 <li><p> The derivative is equal to zero. </p></li>
             </ol>
+            <answer>
+                <p>
+                    D: The derivative is equal to zero.
+                </p>
+            </answer>
   </activity>
     
     
@@ -116,18 +135,57 @@ To find the extreme values of a function we can consider all its <em>local extre
         </introduction>
         <task> 
             <p>Find all critical points of <m>f(x)</m>. Draw them on the same number line.</p>
+            <answer>
+                <p>
+                    The critical points are <m>x = 0, 1, 2</m>. On the number line, we have
+                </p>
+                <image>
+                    <sageplot>
+                        g = Graphics()
+                        g += line([(-1,0),(3,0)], axes=False, color = 'black')
+                        g += line([(1,.25),(1,-.25)], color='black')
+                        g += line([(0,.25),(0,-.25)], color = 'black')
+                        g += line([(2,.25),(2,-.25)], color = 'black')
+                        g += plot(0,ymin = -2,ymax = 2,color='black')
+                        g += text("$0$", (0,-.5), color= 'black', fontsize=15)
+                        g += text("$1$", (1,-.5), color='black', fontsize =15)
+                        g += text("$2$", (2, -.5), color= 'black', fontsize=15)
+                        g
+                    </sageplot>
+                </image>
+            </answer>
         </task>
         <task> 
             <p>What intervals have been created by subdividing the number line at the critical points?</p>
+            <answer>
+                <p>
+                    We've created the intervals <m>(-\infty,0)</m>, <m>(0,1)</m>, <m>(1,2)</m>, and <m>(2,\infty)</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative at each point.</p>
+            <answer>
+                <p>
+                    <m>f'(x) \lt 0</m> on <m>(-\infty,0)</m> and <m>(1,2)</m>, and <m>f'(x)\gt 0</m> on <m>(0,1)</m> and <m>(2,\infty)</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p>
+            <answer>
+                <p>
+                    <m>f(x)</m> is increasing on <m>(0,1)\cup (2,\infty)</m> and decreasing on <m>(-\infty,0)\cup (1,2) </m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>List all local extrema.</p>
+            <answer>
+                <p>
+                    <m>f(x)</m> has a local minimum at <m>x = 0</m> and <m>x = 2</m>, and a local maximum at <m>x=1</m>.
+                </p>
+            </answer>
         </task>
     </activity>
     
@@ -152,17 +210,21 @@ To find the extreme values of a function we can consider all its <em>local extre
         <p> Consider the function <m>f(x)=-x^{3} + 3 \, x + 4</m>.</p></introduction>
         
             <task> <p>Find the open intervals where <m>f(x)</m> is increasing or decreasing.
-            </p></task>
+            </p>
+            <answer>
+                <p>
+                    <m>f(x)</m> is increasing on <m>(-1,1)</m> and decreasing on <m>(-\infty,-1)\cup (1,\infty)</m>
+                </p>
+            </answer>
+        </task>
         
     <task> <p>Find the local extrema of <m>f(x)</m>.
+        <answer>
+            <p>
+                There is a local minimum at <m>x = -1</m> and a local maximum at <m>x=1</m>
+            </p>
+        </answer>
         </p></task>
-        
-            
-            
- <!--           <answer><p>The function decreases on <m>(-\infty,-1)</m>,
-increases on <m>(-1,1)</m>, and decreases on
-<m>.(1,\infty)</m>. The point <m>(x,y)=(-1,2)</m> is a local minimum,
-and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
      </activity>
             
     <remark xml:id="rmk-derivativetests-disc"> <title>Dealing with discontinuities</title>
@@ -172,7 +234,16 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
     </remark>
     
       <activity xml:id="activity-derivatives-derviativetests-disc">
-     <p> Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1,</m> such that <m>f(1)=\displaystyle \lim_{x \to 1^+}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?</p>
+        <statement>
+            <p>
+                Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1,</m> such that <m>f(1)=\displaystyle \lim_{x \to 1^+}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Answers vary for the specific graph, but the derivative does not exist at <m>x=1</m>, but there is a local maximum at <m>x=1</m>.
+            </p>
+        </answer>
   </activity>
     
     <activity xml:id="activity-derivatives-derviativetest5">
@@ -180,22 +251,57 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
             <p>Let <m>f(x)=\frac{x}{(x-2)^2}</m>.</p>
     
         </introduction>
-    <task>        <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. But the function may be increasing on one side of <m>x=2</m> and decreasing on the other! So we include <m>x=2</m> on your number line.</p></task>
+    <task>        <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. But the function may be increasing on one side of <m>x=2</m> and decreasing on the other! So we include <m>x=2</m> on your number line.</p>
+    </task>
         <task>
             <p> Find all critical points of <m>f(x)</m>. Plot them and any discontinuities for <m>f(x)</m> on the same number line.</p>
+        <answer>
+            <image>
+                <sageplot>
+                    g = Graphics()
+                    g += line([(-1,0),(3,0)], axes=False, color = 'black')
+                    g += line([(0,.25),(0,-.25)], color='black')
+                    g += line([(2,.25),(2,-.25)], color = 'black')
+                    g += plot(0,ymin = -2,ymax = 2,color='black')
+                    g += text("$-2$", (0,-.5), color= 'black', fontsize=15)
+                    g += text("$2$", (2, -.5), color= 'black', fontsize=15)
+                    g
+                </sageplot>
+            </image>
+        </answer>
         </task>
         <task>
             <p> What intervals have been created by subdividing the number line at the critical points and at the discontinuities?</p>
+        <answer>
+            <p>
+                <m>(-\infty,-2)</m>, <m>(-2,2)</m>, and <m>(2,\infty)</m>.
+            </p>
+        </answer>
         </task>
         <task>
             <p> Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative each point.</p>
+        <answer>
+            <p>
+                <m>f'(x)</m> is positive on <m>(-2,2)</m> and negative on <m>(-\infty,-2)\cup (2,\infty)</m>
+            </p>
+        </answer>
         </task>
         <task>
             <p> On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p>
+        <answer>
+            <p>
+                <m>f(x)</m> is increasing on <m>(-2,2)</m> and decreasing on <m>(-\infty,-2)\cup (2,\infty)</m>
+            </p>
+        </answer>
         </task>
         <task>
             <p> List all local maxima and local minima. </p>
         </task>
+        <answer>
+            <p>
+                There is a local minimum at <m>x=-2</m>
+            </p>
+        </answer>
     </activity>
     
     <activity xml:id="activity-derivative-derivativetest6">
@@ -204,18 +310,43 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
         </introduction>
         <task>
             <p><m>f(x)=x^3+3x^2+3x+1</m></p>
+            <answer>
+                <p>
+                    The function is increasing on <m>(-\infty,-1)\cup (-1,\infty)</m> and never decreasing. It has no local max or local min.
+                </p>
+            </answer>
         </task>
         <task>
             <p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
+            <answer>
+                <p>
+                    The function is increasing on <m>(0,\pi/6)\cup (5\pi/6,2\pi)</m> and decreasing on <m>(\pi/6,5\pi/6)</m>. It has a local max at <m>x = \pi/6</m> and a local min at <m>x = 5\pi/6</m>. 
+                </p>
+            </answer>
         </task>
         <task>
             <p><m>f(x)=(x^2-9)^{2/3}</m></p>
+            <answer>
+                <p>
+                    The function is increasing on <m>(-3,0)\cup (3,\infty)</m> and decreasing on <m>(-\infty,-3)\cup (0,3)</m>. It has a local max at <m>x = 0</m> and no local min.
+                </p>
+            </answer>
         </task>
         <task>
             <p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p>
+            <answer>
+                <p>
+                    The function is always increasing, and has no local extrema.
+                </p>
+            </answer>
         </task>
         <task>
             <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
+            <answer>
+                <p>
+                    The function is increasing on <m>(0,2)\cup (2,\infty)</m> and decreasing on <m>(-\infty,-2)\cup (-2,0)</m>. It has a local min at <m>x = 0</m> and no local max.
+                </p>
+            </answer>
         </task>
     </activity>
     
@@ -227,8 +358,19 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
     </theorem>
 
 <activity xml:id="activity-connection-MVT">
-        <task> <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p> </task>
-       <task> <p> Use part (a) to show with the MVT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> </task>
+        <task> <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p>
+        <answer>
+            <p>
+                The average rate of change is 0, so the MVT says that there is at least one input between <m>x =a</m> and <m>x = b</m> such that <m>f'(c) = 0</m>.
+            </p>
+        </answer> </task>
+       <task> <p> Use part (a) to show with the MVT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> 
+    <answer>
+        <p>
+            <m>f(0) = f(2) = 4</m>, so part (a) combined with the fact that <m>f(x)</m> is differentiable (and thus continuous) everywhere since it's a polynomial, tells us that there is a spot where <m>f'(c) = 0</m> on <m>[0,2}</m>; in particular, this means we have a critical point on the interval.
+        </p>
+    </answer>
+    </task>
     </activity>   
 
     </subsection>
