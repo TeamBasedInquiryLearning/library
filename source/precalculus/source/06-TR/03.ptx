@@ -57,7 +57,7 @@
     <statement>
       <p>
         What is the value of <m>x</m> (i.e., the length of the third side)?
-        <ol marker= "A." cols="1">
+        <ol marker= "A." cols="3">
           <li> <m>5</m> inches </li>
           <li> <m>\sqrt{5}</m> inches </li>
           <li> <m>25</m> inches </li>
@@ -134,7 +134,7 @@
   <task>
     <statement>
       <p>
-        Draw a picture of this right triangle and label the sides (refer back to <xref ref="def-sides-of-right-triangles"/> to help you label the sides).
+        Draw a picture of this right triangle and label the parts of the triangle given.
       </p>
     </statement>
     <answer>
@@ -177,12 +177,6 @@
 </activity>
 
 <remark>
-  <p>
-  The Pythagorean Theorem can be very helpful in finding the third side of a right triangle as long as we know the length of two other sides. In <xref ref="intro-to-using-trig"/>, only one side and one angle were given. In this case, the Pythagorean Theorem is not enough to help us find another side of the right triangle. 
-  </p>
-</remark>
-
-<definition xml:id="def-sides-of-right-triangles">
   <statement>
     <p>
       When working with right triangles, it is often helpful to refer to specific angles and sides. One way this is done is by using letters, such as <m>A</m> and <m>a</m> to show that these are an angle-side pair because every angle has a side opposite the angle in a triangle. Note that the capital letter indicates the angle, and the lower case letter indicates the side. </p>
@@ -214,11 +208,7 @@
       </figure>
     </p>
   </statement>
-</definition>
-
-
-
-
+</remark>
 
 <definition xml:id="def-right-triangle-trigonometry">
   <statement>
@@ -252,11 +242,11 @@
   <task>
     <statement>
       <p>
-        Draw a right triangle and label it with angles <m>A</m>, <m>B</m>, and <m>C</m> as well as with the lengths given above. </p>
+        Draw a right triangle and label it with angles <m>A</m>, <m>B</m>, and <m>C</m>, with <m>c</m> being the hypotenuse of the triangle. </p>
     </statement>
     <answer>
       <p>
-        Students should draw a triangle so that <m>C</m> is the hypotenuse and each angle is across from the correct measure.
+        Students should draw a triangle so that <m>c</m> is the hypotenuse and each angle is across from the correct measure.
       </p>
     </answer>
   </task>
@@ -314,134 +304,7 @@
       </p>
     </answer>
   </task>
-
-</activity>
-
-  <activity xml:id="determine-which-trig-function">
-    <introduction>
-      <p>
-        For each triangle given, determine which trigonometric function would be the most helpful in determining the length of the side of a triangle. Be sure to draw a picture of the triangle to help you determine the relationship between the given angle and sides. In each case assume angle <m>C</m> is the right angle.
-      </p>
-    </introduction>
-
-    <task>
-      <statement>
-        <p>
-          In triangle <m>ABC</m>, <m>B=37</m><degree/> and <m>a=11</m>. Which trigonometric function will best help determine the length of side <m>c</m>?
-          <ol marker= "A." cols="3">
-            <li> sine </li>
-            <li> cosine </li>
-            <li> tangent </li></ol></p>
-      </statement>
-      <answer>
-        <p>
-          B
-        </p>
-      </answer>
-    </task>
-
-    <task>
-      <statement>
-        <p>
-          In triangle <m>ABC</m>, <m>A=32</m><degree/> and <m>b=13</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
-          <ol marker= "A." cols="3">
-            <li> sine </li>
-            <li> cosine </li>
-            <li> tangent </li></ol></p>
-      </statement>
-      <answer>
-        <p>
-          C
-        </p>
-      </answer>
-    </task>
-  
-    <task>
-      <statement>
-        <p>
-          In triangle <m>ABC</m>, angle <m>A=24</m><degree/> and the hypotenuse has length <m>14</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
-          <ol marker= "A." cols="3">
-            <li> sine </li>
-            <li> cosine </li>
-            <li> tangent </li></ol></p>
-      </statement>
-      <answer>
-        <p>
-          A
-        </p>
-      </answer>
-    </task>
-  </activity>
-
-  <activity xml:id="applying-trig">
-    <introduction>
-        <p>The top of the Eiffel Tower is seen from a distance of <m>d = 500</m> meters at an angle of <m>\alpha=31</m><degree/>.
-        </p>
-    </introduction> 
-    
-    <task>
-      <statement>
-        <p>
-          Draw a diagram to represent the situation. Use <m>x</m> to refer to the missing side.
-        </p>
-      </statement>
-      <answer>
-        <p>
-          Students should draw a right triangle where <m>\theta</m> is the angle formed with the ground, <m>500</m> meters as the side adjacent to <m>\theta</m>, and the height of the Eiffel Tower (side opposite <m>\theta</m>) as <m>x</m>.
-        </p>
-      </answer>
-    </task>
-    
-    <task>
-      <statement>
-        <p>
-          Which trig function could we use to find the height of the tower? 
-          <ol marker= "A." cols="1">
-            <li> sine </li>
-            <li> cosine </li>
-            <li> tangent </li></ol></p>
-      </statement>
-      <answer>
-        <p>
-          C
-        </p>
-      </answer>
-    </task>
-  
-    <task>
-      <statement>
-        <p>
-          How could we correctly set up the trigonometric function to find the height of the Eiffel Tower? 
-          <ol marker= "A." cols="2">
-            <li> <m>\sin{31^\circ}=\frac{x}{500}</m></li>
-            <li> <m>\cos{31^\circ}=\frac{500}{x}</m> </li>
-            <li> <m>\cos{31^\circ}=\frac{500}{x}</m> </li>
-            <li> <m>\tan{31^\circ}=\frac{x}{500}</m> </li></ol></p> 
-      </statement>
-      <answer>
-        <p>
-          D
-        </p>
-      </answer>
-    </task>
-  
-    <task>
-      <statement>
-        <p>
-          Find the height of the tower to the nearest hundredth.
-          <ol marker= "A." cols="1">
-            <li> <m>428.58</m> meters </li>
-            <li> <m>300.43</m> meters </li>
-            <li> <m>220.85</m> meters </li>
-            <li> <m>257.52</m> meters </li></ol></p>
-      </statement>
-      <answer>
-        <p>
-          B
-        </p>
-      </answer>
-    </task>
-    </activity> 
+</activity> 
 
     <definition xml:id="def-reciprocal-trig-functions">
       <statement>
@@ -465,7 +328,7 @@
   <activity xml:id="finding-trig-ratios-when-given-all-sides">
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>a=35</m>, <m>b=12</m>, and <m>c=37</m>, with <m>c</m> being the hypotenuse of the triangle.
+        Suppose you are given triangle <m>ABC</m>, where <m>a=24</m>, <m>b=32</m>, and <m>c=40</m>, with <m>c</m> being the hypotenuse of the triangle.
       </p>
     </introduction>
 
@@ -474,10 +337,10 @@
         <p>
           Find <m>\sin{A}</m>.
           <ol marker= "A." cols="4">
-            <li> <m>\frac{35}{12}</m> </li>
-            <li> <m>\frac{35}{37}</m> </li>
-            <li> <m>\frac{12}{35}</m> </li>
-            <li> <m>\frac{12}{37}</m> </li></ol></p>
+            <li> <m>\frac{4}{5}</m> </li>
+            <li> <m>\frac{3}{5}</m> </li>
+            <li> <m>\frac{5}{3}</m> </li>
+            <li> <m>\frac{5}{4}</m> </li></ol></p>
       </statement>
       <answer>
         <p>
@@ -491,10 +354,10 @@
         <p>
           Find <m>\csc{A}</m>.
           <ol marker= "A." cols="4">
-            <li> <m>\frac{12}{35}</m> </li>
-            <li> <m>\frac{12}{37}</m> </li>
-            <li> <m>\frac{37}{35}</m> </li>
-            <li> <m>\frac{37}{12}</m> </li></ol></p>
+            <li> <m>\frac{4}{5}</m> </li>
+            <li> <m>\frac{3}{5}</m> </li>
+            <li> <m>\frac{5}{3}</m> </li>
+            <li> <m>\frac{5}{4}</m> </li></ol></p>
       </statement>
       <answer>
         <p>
@@ -508,10 +371,27 @@
         <p>
           Find <m>\cos{B}</m>.
           <ol marker= "A." cols="4">
-            <li> <m>\frac{35}{12}</m> </li>
-            <li> <m>\frac{35}{37}</m> </li>
-            <li> <m>\frac{12}{35}</m> </li>
-            <li> <m>\frac{12}{37}</m> </li></ol></p>
+            <li> <m>\frac{4}{5}</m> </li>
+            <li> <m>\frac{3}{5}</m> </li>
+            <li> <m>\frac{5}{3}</m> </li>
+            <li> <m>\frac{5}{4}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\sec{B}</m>.
+          <ol marker= "A." cols="4">
+            <li> <m>\frac{4}{5}</m> </li>
+            <li> <m>\frac{3}{5}</m> </li>
+            <li> <m>\frac{5}{3}</m> </li>
+            <li> <m>\frac{5}{4}</m> </li></ol></p>
       </statement>
       <answer>
         <p>
@@ -523,33 +403,16 @@
     <task>
       <statement>
         <p>
-          Find <m>\cos{B}</m>.
-          <ol marker= "A." cols="4">
-            <li> <m>\frac{35}{12}</m> </li>
-            <li> <m>\frac{35}{37}</m> </li>
-            <li> <m>\frac{12}{35}</m> </li>
-            <li> <m>\frac{12}{37}</m> </li></ol></p>
-      </statement>
-      <answer>
-        <p>
-          B
-        </p>
-      </answer>
-    </task>
-
-    <task>
-      <statement>
-        <p>
           Find <m>\cot{B}</m>.
-          <ol marker= "A." cols="1">
-            <li> <m>\frac{35}{12}</m> </li>
-            <li> <m>\frac{35}{37}</m> </li>
-            <li> <m>\frac{12}{35}</m> </li>
-            <li> <m>\frac{12}{37}</m> </li></ol></p>
+          <ol marker= "A." cols="4">
+            <li> <m>\frac{4}{5}</m> </li>
+            <li> <m>\frac{4}{3}</m> </li>
+            <li> <m>\frac{5}{4}</m> </li>
+            <li> <m>\frac{3}{4}</m> </li></ol></p>
       </statement>
       <answer>
         <p>
-          A
+          D
         </p>
       </answer>
     </task>
@@ -613,8 +476,202 @@
       </p>
     </answer>
   </task>
-    
   </activity>
+
+  <activity xml:id="determine-trig-function">
+    <introduction>
+      <p>
+        For each triangle given, determine which trigonometric function would be the most helpful in determining the length of the side of a triangle. Be sure to draw a picture of the triangle to help you determine the relationship between the given angle and sides. In each case assume angle <m>C</m> is the right angle.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          In triangle <m>ABC</m>, <m>B=37</m><degree/> and <m>a=11</m>. Which trigonometric function will best help determine the length of side <m>c</m>?
+          <ol marker= "A." cols="3">
+            <li> sine </li>
+            <li> cosine </li>
+            <li> tangent </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          In triangle <m>ABC</m>, <m>A=32</m><degree/> and <m>b=13</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
+          <ol marker= "A." cols="3">
+            <li> sine </li>
+            <li> cosine </li>
+            <li> tangent </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+  
+    <task>
+      <statement>
+        <p>
+          In triangle <m>ABC</m>, angle <m>A=24</m><degree/> and the hypotenuse has length <m>14</m>. Which trigonometric function will best help determine the length of side <m>a</m>?
+          <ol marker= "A." cols="3">
+            <li> sine </li>
+            <li> cosine </li>
+            <li> tangent </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="intro-to-solving">
+
+    <introduction>
+      <p>
+        In triangle <m>ABC</m>, <m>B=37</m><degree/>, <m>a=11</m>, and <m>c</m> is the hypotenuse. 
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw a right triangle and label the angles/sides with the information given.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw a right triangle where <m>c</m> is the hypotenuse, angle <m>B</m> is <m>37</m><degree/>, and the side adjacent to <m>b</m> is <m>11</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement> 
+        <p>
+           Which trigonometric equation will best help determine the length of side <m>b</m>?
+          <ol marker= "A." cols="3">
+            <li> <m>\sin{37^\circ} = \frac{b}{11}</m> </li>
+            <li> <m>\tan{37^\circ} = \frac{b}{11}</m> </li>
+            <li> <m>\cos{37^\circ} = \frac{b}{11}</m> </li></ol></p> 
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the equation from part (b) and solve for <m>b</m>. Round to the nearest tenth.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Multiply by <m>11</m> on both sides and make sure you are in degree mode on your calculator.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>b = 8.3</m>
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="applying-trig">
+    <introduction>
+        <p>Sarah is standing <m>500</m> meters from the base of the Eiffel Tower. She looks at the top of the tower at an angle of <m>31</m><degree/>.
+        </p>
+    </introduction> 
+    
+    <task>
+      <statement>
+        <p>
+          Draw a diagram to represent the situation. Use <m>x</m> to refer to the missing side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw a right triangle where the <m>31</m><degree/> is the angle formed with the ground, <m>500</m> meters as the side adjacent to the angle, and the height of the Eiffel Tower (side opposite <m>31</m><degree/>) as <m>x</m>.
+        </p>
+      </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Which trig function could we use to find the height of the tower? 
+          <ol marker= "A." cols="3">
+            <li> sine </li>
+            <li> cosine </li>
+            <li> tangent </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+  
+    <task>
+      <statement>
+        <p>
+          How could we correctly set up the trigonometric function to find the height of the Eiffel Tower? 
+          <ol marker= "A." cols="2">
+            <li> <m>\sin{31^\circ}=\frac{x}{500}</m></li>
+            <li> <m>\cos{31^\circ}=\frac{500}{x}</m> </li>
+            <li> <m>\cos{31^\circ}=\frac{500}{x}</m> </li>
+            <li> <m>\tan{31^\circ}=\frac{x}{500}</m> </li></ol></p> 
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Take your equation in part (c) and solve for <m>x</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=500 \cdot \tan{31^\circ}</m>
+        </p>
+      </answer>
+    </task>
+  
+    <task>
+      <statement>
+        <p>
+          Find the height of the tower to the nearest hundredth.
+          <ol marker= "A." cols="2">
+            <li> <m>428.58</m> meters </li>
+            <li> <m>300.43</m> meters </li>
+            <li> <m>220.85</m> meters </li>
+            <li> <m>257.52</m> meters </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+    </activity>
 
   <activity xml:id="finding-angle">
   <introduction>
