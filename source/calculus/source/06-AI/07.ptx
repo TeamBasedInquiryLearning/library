@@ -137,7 +137,7 @@
                 </p>
                 <figure>
                 <caption>A horizontally submerged trapezoidal plate.</caption>
-                    <image xml:id="horztrap" width="50%">
+                    <image xml:id="verttrap" width="50%">
                         <description>A vertically submerged trapezoidal plate with top side 5 ft, bottom side 3 ft, and with a height of 2 ft, which is 4 feet under water.</description>
                         <sageplot>
                         def edger_x (x,y1,y2):
