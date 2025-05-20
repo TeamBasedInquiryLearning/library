@@ -12,6 +12,884 @@
     <subsection>
     <title>Activities</title>
 
+    <activity xml:id="activity-cosine-two-angles">
+      <statement>
+        <p>Which of the following angles satisfy <m>\cos(\theta)=\frac{1}{2}</m>?
+        </p>
+          <ol marker="A." cols="4">
+            <li><m>\dfrac{\pi}{6}</m></li>
+            <li><m>\dfrac{\pi}{3}</m></li>
+            <li><m>\dfrac{2\pi}{3}</m></li>
+            <li><m>\dfrac{5\pi}{6}</m></li>
+            <li><m>\dfrac{7\pi}{6}</m></li>
+            <li><m>\dfrac{4\pi}{3}</m></li>
+            <li><m>\dfrac{5\pi}{3}</m></li>
+            <li><m>\dfrac{11\pi}{6}</m></li>
+          </ol>
+      </statement>
+      <answer>
+        <p>B,G</p>
+      </answer>
+    </activity>
+
+    <activity xml:id="activity-arcsin-application">
+      <statement>
+        <p>A carpenter is cutting a hand rail for a ramp on his mitre saw.
+        The ramp goes up 4 feet, and the length of the hand rail is 48 feet long.
+        Which of the following equations determines the angle of the ramp,
+        which the carpenter will use to set his saw?
+        </p>
+        <image><sageplot>
+p=Graphics()
+p+=line([(0,0),(48,0),(48,4),(0,0)],thickness="1",color="black")
+p+=text(r"$\theta$", (15,0.6),fontsize=10,color="black")
+p+=arc((0,0),14.3,sector=(0,arctan(1/12)),color="black")
+p+=text("$4$",(48.5,2),fontsize=10,color="black")
+p+=text("$48$",(24,2.6),fontsize=10,color="black")
+p.axes(False)
+p.set_aspect_ratio(1)
+p
+        </sageplot></image>
+        <ol marker="A.">
+          <li><m>\sin(\theta)=\frac{1}{12}</m></li>
+          <li><m>\cos(\theta)=\frac{1}{12}</m></li>
+          <li><m>\tan(\theta)=\frac{1}{12}</m></li>
+          <li><m>\cot(\theta)=\frac{1}{12}</m></li>
+        </ol>
+      </statement>
+      <answer>
+        <p>A.</p>
+      </answer>
+    </activity>
+
+    <observation>
+    <p>Often in applications, in addition to finding the sine or cosine of an angle,
+    we need to find an angle with a given sine or cosine or tangent.  In other words,
+    we need to have <xref ref="def-inverse-function" text="custom">inverse functions</xref> of our six trigonometric functions.
+    </p>
+    </observation>
+
+    <remark>
+      <p>In  <xref ref="activity-cosine-two-angles"/>, we saw that there are many angles with a 
+      given sine or cosine.  We must systematically choose one of these to define an inverse function.
+      </p>
+    </remark>
+
+    <activity>
+      <statement>
+        <p>By restricting the domain, we can find a part of the sine function which is 
+        <xref ref="def-one-to-one" text="custom">one-to-one</xref>,
+        and thus allows us to define an inverse function.</p>
+        <p>Which of the following domain restrictions is one-to-one?</p>
+        <ol marker="A." cols="2">
+          <li>
+            <p><m>0 \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,0,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,-pi/2,pi/2),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>0 \leq x \leq 2\pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,0,2*pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\pi \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+        </ol>
+      </statement>
+      <hint>
+        <p>Use the horizontal line test.</p>
+      </hint>
+      <answer>
+        <p>B.</p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-arcsin">
+    <p>The <term>arcsine</term> function, denoted <m>\arcsin(x)</m>, is the inverse of the
+    restriction of <m>\sin(x)</m> to the domain <m>[-\dfrac{\pi}{2},\dfrac{\pi}{2}]</m>.</p>
+    <p>In other words, <m>\arcsin(x)</m> is the unique angle <m>\theta</m> with 
+    <m>-\dfrac{\pi}{2} \leq \theta \leq \dfrac{\pi}{2}</m> such that <m>\sin(\theta)=x</m>.</p>
+    </definition>
+
+    <aside>
+    <p>Since the inverse of a function <m>f(x)</m> is usually denoted <m>f^{-1}(x)</m>, 
+    some authors and calculators like to use the (more compact) notation <m>\sin^{-1}(x)</m> 
+    instead of <m>\arcsin(x)</m>.  This should not be confused with <m>\left(\sin(x)\right)^{-1}</m>, 
+    i.e. <m>\csc(x)</m>.
+    </p>
+    </aside>
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following, without the use of technology.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\arcsin\left(\dfrac{1}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{6}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arcsin\left(-1\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>-\dfrac{\pi}{2}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arcsin\left(\dfrac{\sqrt{2}}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{4}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arcsin\left(-\dfrac{\sqrt{3}}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>-\dfrac{\pi}{3}</m></p>
+        </answer>
+      </task>
+    </activity>
+
+
+    <activity>
+      <statement>
+        <p>Which of the following domain restrictions of <m>\cos(x)</m> is one-to-one?</p>
+        <ol marker="A." cols="2">
+          <li>
+            <p><m>0 \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,0,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,-pi/2,pi/2),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>0 \leq x \leq 2\pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,0,2*pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\pi \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(cos(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+        </ol>
+      </statement>
+      <hint>
+        <p>Use the horizontal line test.</p>
+      </hint>
+      <answer>
+        <p>A.</p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-arccos">
+    <p>The <term>arccosine</term> function, denoted <m>\arccos(x)</m>, is the inverse of the
+    restriction of <m>\cos(x)</m> to the domain <m>[0,\pi]</m>.</p>
+    <p>In other words, <m>\arccos(x)</m> is the unique angle <m>\theta</m> with 
+    <m>0 \leq \theta \leq \pi</m> such that <m>\cos(\theta)=x</m>.</p>
+    </definition>
+  
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following, without the use of technology.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\arccos\left(\dfrac{1}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{3}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arccos\left(-1\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\pi</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arccos\left(\dfrac{\sqrt{2}}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{4}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arccos\left(-\dfrac{\sqrt{3}}{2}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\frac{5\pi}{6}</m></p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity>
+      <statement>
+        <p>Which of the following domain restrictions of <m>\tan(x)</m> is one-to-one?</p>
+        <ol marker="A." cols="2">
+          <li>
+            <p><m>0 \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,0,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2, detect_poles=True)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,-pi/2,pi/2),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>0 \leq x \leq 2\pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,0,2*pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detect_poles=True)
+              </sageplot></image></p>
+          </li>
+          <li>
+            <p><m>-\pi \leq x \leq \pi</m></p>
+              <p><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detect_poles=True)
+              </sageplot></image></p>
+          </li>
+        </ol>
+      </statement>
+      <hint>
+        <p>Use the horizontal line test.</p>
+      </hint>
+      <answer>
+        <p>A. and B.</p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-arctan">
+    <p>The <term>arctangent</term> function, denoted <m>\arctan(x)</m>, is the inverse of the
+    restriction of <m>\tan(x)</m> to the domain <m>\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)</m>.</p>
+    <p>In other words, <m>\arctan(x)</m> is the unique angle <m>\theta</m> with 
+    <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m> such that <m>\tan(\theta)=x</m>.</p>
+    </definition>
+
+    <observation>
+      <p>Note that while <m>\arcsin(x)</m> and <m>\arccos(x)</m> were defined by restricting the domain
+        to a closed interval, since <m>\tan(x)</m>is not defined at <m>-\dfrac{pi}{2}</m> or <m>\dfrac{pi}{2}</m>,
+        we define <m>\arctan(x)</m> by restricting the domain to the open interval <m>\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)</m>.
+      </p>
+    </observation>
+  
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following, without the use of technology.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\arctan\left(1\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{4}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arctan\left(-\sqrt{3}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>-\dfrac{\pi}{3}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arctan\left(0\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>0</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\arctan\left(\dfrac{\sqrt{3}}{3}\right)</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{\pi}{6}</m></p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity>
+    <introduction>
+      <p>Sometimes, as in <xref ref="activity-arcsin-application"/>, we need to find an inverse
+      trigonometric function that does not produce one of our special angles.</p>
+      <p>Compute each of the following using technology (e.g. a calculator).</p>
+      <aside><p>Note that most calculators use the shorter notation, e.g. <m>\sin^{-1}</m>, for this operation.</p></aside>
+    </introduction>
+    <task>
+      <statement>
+        <p><m>\arcsin\left(\frac{1}{12}\right)</m></p>
+      </statement>
+      <answer>
+        <p><m> 4.78^\circ</m> or <m>0.083</m> radians</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>\arccos\left(-\dfrac{3}{5}\right)</m></p>
+      </statement>
+      <answer>
+        <p><m> 126.9^\circ</m> or <m>2.21</m> radians</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>\arctan\left(2\right)</m></p>
+      </statement>
+      <answer>
+        <p><m> 63.43^\circ</m> or <m>1.11</m> radians</p>
+      </answer>
+    </task>
+    </activity>
+
+    <observation>
+      <p>Next, we look at the graphs of <m>\arcsin(x)</m>, <m>\arccos(x)</m>, and <m>\arctan(x)</m>.
+      </p>
+    </observation>
+
+    <activity xml:id="activity-graph-arcsin">
+      <introduction>
+        <p>Consider the function <m>f(x)=\arcsin(x)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Complete the table of values.</p>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arcsin(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> </cell>
+            </row>
+          </tabular>
+        </statement>
+        <hint>
+          <p>Recall that <m>\theta=\arcsin(x)</m> means <m>\sin(\theta)=x</m>.</p>
+        </hint>
+        <answer>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arcsin(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> <m>-\dfrac{\pi}{2}</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> <m>\dfrac{\pi}{2}</m></cell>
+            </row>
+          </tabular>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\arcsin(x)</m>.  
+            Then sketch the graph of the arcsine curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+for xval in [-1,-sqrt(3)/2,-sqrt(2)/2,-1/2,0,1/2,sqrt(2)/2,sqrt(3)/2,1]:
+    p+=point((xval,arcsin(xval)),pointsize=50,color="blue")
+p.SHOW_OPTIONS['xmin']=-pi
+p.SHOW_OPTIONS['xmax']=pi
+p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>f(x)=\arcsin(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[-1,1]</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>f(x)=\arcsin(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[-\dfrac{\pi}{2},\dfrac{\pi}{2}]</m></p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-graph-arccos">
+      <introduction>
+        <p>Consider the function <m>f(x)=\arccos(x)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Complete the table of values.</p>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arccos(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> </cell>
+            </row>
+          </tabular>
+        </statement>
+        <hint>
+          <p>Recall that <m>\theta=\arccos(x)</m> means <m>\cos(\theta)=x</m>.</p>
+        </hint>
+        <answer>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arccos(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-1</m></cell>
+              <cell> <m>\pi</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>\dfrac{5\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>\dfrac{3\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{1}{2}</m> </cell>
+              <cell> <m>\dfrac{2\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell><m>\dfrac{\pi}{2}</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{1}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{3}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{2}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{2}</m> </cell>
+              <cell> <m>\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>1</m></cell>
+              <cell> <m>0</m></cell>
+            </row>
+          </tabular>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\arccos(x)</m>.  
+            Then sketch the graph of the arccosine curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+for xval in [-1,-sqrt(3)/2,-sqrt(2)/2,-1/2,0,1/2,sqrt(2)/2,sqrt(3)/2,1]:
+    p+=point((xval,arccos(xval)),pointsize=50,color="blue")
+p.SHOW_OPTIONS['xmin']=-pi
+p.SHOW_OPTIONS['xmax']=pi
+p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>f(x)=\arccos(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[-1,1]</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>f(x)=\arccos(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>[0,\pi]</m></p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-graph-arctan">
+      <introduction>
+        <p>Consider the function <m>f(x)=\arctan(x)</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Complete the table of values.</p>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arctan(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-\sqrt{3}</m></cell>
+              <cell> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-1</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>1</m> </cell>
+              <cell> </cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\sqrt{3}</m> </cell>
+              <cell> </cell>               
+            </row>
+          </tabular>
+        </statement>
+        <hint>
+          <p>Recall that <m>\theta=\arctan(x)</m> means <m>\tan(\theta)=x</m>.</p>
+        </hint>
+        <answer>
+          <tabular halign="center">
+            <row header="yes" bottom="medium" >
+              <cell> <m>x</m></cell>
+              <cell><m>\arctan(x)</m> </cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>-\sqrt{3}</m></cell>
+              <cell><m>-\dfrac{\pi}{3}</m> </cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-1</m> </cell>
+              <cell> <m>-\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>-\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> <m>-\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor">
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\dfrac{\sqrt{3}}{3}</m> </cell>
+              <cell> <m>\dfrac{\pi}{6}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>1</m> </cell>
+              <cell> <m>\dfrac{\pi}{4}</m></cell>               
+            </row>
+            <row bottom="minor"> 
+              <cell> <m>\sqrt{3}</m> </cell>
+              <cell> <m>\dfrac{\pi}{3}</m></cell>               
+            </row>
+          </tabular>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Plot these values on a coordinate plane to approximate the graph of <m>f(x)=\arctan(x)</m>.  
+            Then sketch the graph of the arctangent curve using the points as a guide.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
+for xval in [-sqrt(3),-1,-1/sqrt(3),0,1/sqrt(3),1,sqrt(3)]:
+    p+=point((xval,arctan(xval)),pointsize=50,color="blue")
+p.SHOW_OPTIONS['xmin']=-pi
+p.SHOW_OPTIONS['xmax']=pi
+p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the domain of <m>f(x)=\arctan(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>(-\infty,\infty)</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What is the range of <m>f(x)=\arctan(x)</m>?</p>
+        </statement>
+        <answer>
+          <p><m>\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)</m></p>
+        </answer>
+      </task>
+    </activity>   
+
+    <activity>
+      <introduction>
+        <p>Sometimes when solving applied problems, we need to exactly (not approximately) evaluate
+          expressions like <m>\sin\left(\arccos\left(\frac{5}{13}\right)\right)</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Which of the following sentences describe the expression <m>\sin\left(\arccos\left(\frac{5}{13}\right)\right)</m>?
+          </p>
+          <ol marker="A.">
+            <li><p>The angle whose cosine is the same as the sine of <m>\frac{5}{13}</m>.</p></li>
+            <li><p>The angle whose sine is the same as the cosine of <m>\frac{5}{13}</m>.</p></li>
+            <li><p>The cosine of the angle whose sine is <m>\frac{5}{13}</m>.</p></li>
+            <li><p>The sine of the angle whose cosine is <m>\frac{5}{13}</m>.</p></li>
+          </ol>
+        </statement>
+        <answer>
+          <p>D.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Let <m>\theta = \arccos(\frac{5}{13})</m>.  Draw a right triangle with an angle of <m>\theta</m>,
+            and find the lengths of its three sides.
+          </p>
+        </statement>
+        <answer>
+          <image><sageplot>
+            p=Graphics()
+            p+=line([(0,0),(12,0),(12,5),(0,0)],thickness="1",color="black")
+            p+=text(r"$\theta$", (11.5,3.8),fontsize=15,color="black")
+            p+=arc((12,5),1,sector=(3*pi/2-arccos(5/12),3*pi/2),color="black")
+            p+=text("$5$",(12.2,2.5),fontsize=15,color="black")
+            p+=text("$13$",(6,2.8),fontsize=15,color="black")
+            p+=text("$12$",(6,-0.3),fontsize=15,color="blue")
+            p.axes(False)
+            p.set_aspect_ratio(1)
+            p
+          </sageplot></image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Find <m>\sin(\theta)</m>.  Since we defined <m>\theta = \arccos(\frac{5}{13})</m>, this gives us 
+            <m>\sin(\arccos(\frac{5}{13}))</m>.
+          </p>
+          <ol marker="A.">
+            <li><p><m>\dfrac{5}{13}</m></p></li>
+            <li><p><m>\dfrac{12}{13}</m></p></li>
+            <li><p><m>\dfrac{5}{12}</m></p></li>
+            <li><p><m>\dfrac{13}{12}</m></p></li>
+          </ol>
+        </statement>
+        <answer>
+          <p>B.</p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity>
+      <introduction>
+        <p>
+          Compute each of the following.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p><m>\tan(\arcsin(\frac{8}{17}))</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{8}{15}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\sec(\arctan(\frac{24}{7}))</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{25}{7}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\tan(\arcsin(\frac{3}{4}))</m></p>
+        </statement>
+        <answer>
+          <p><m>\dfrac{3}{\sqrt{7}}</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>\cos(\arcsin(x))</m></p>
+        </statement>
+        <hint>
+          <p>Draw an appropriate right triangle with two sides as <m>x</m> and <m>1</m>.
+          </p>
+        </hint>
+        <answer>
+          <p><m>\sqrt{1-x^2}</m></p>
+        </answer>
+      </task>
+    </activity>
+
+
+
     </subsection>
 
     <exercises>
