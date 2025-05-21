@@ -555,6 +555,7 @@ Use substitution to solve the integral.
                 <mrow>
 &amp;\phantom{==} du = dx
                 </mrow>
+                <mrow>&amp;</mrow>
                 <mrow>
 \int x\sqrt{4x+4}\,dx &amp;= \int (u-1)\sqrt{4u}\,du
                 </mrow>
@@ -594,6 +595,7 @@ Use substitution to solve the integral.
                 <mrow>
 &amp;\phantom{==} dx=\dfrac{1}{2}u\,du
                 </mrow>
+                <mrow>&amp;</mrow>
                 <mrow> 
 \int x\sqrt{4x+4}\,dx &amp;= \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)
                 </mrow>
