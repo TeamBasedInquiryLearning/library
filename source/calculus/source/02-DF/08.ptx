@@ -161,32 +161,34 @@
                 </answer>
             </task>
             <task>
-                <p>
-                    Setting the two sides of the equation equal after differentiating, we can solve
-                    for <m>g'(x)</m>. What do you get?
-                    <ol marker="A." cols="2">
-                        <li>
-                            <p>
-                                <m>g'(x) = \frac{x}{f(g(x))}</m>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <m>g'(x) = \frac{x}{f'(g(x))}</m>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <m>g'(x) = \frac{1}{f(g(x))}</m>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <m>g'(x) = \frac{1}{f'(g(x))}</m>
-                            </p>
-                        </li>
-                    </ol>
-                </p>
+                <statement>
+                    <p>
+                        Setting the two sides of the equation equal after differentiating, we can solve
+                        for <m>g'(x)</m>. What do you get?
+                        <ol marker="A." cols="2">
+                            <li>
+                                <p>
+                                    <m>g'(x) = \frac{x}{f(g(x))}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>g'(x) = \frac{x}{f'(g(x))}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>g'(x) = \frac{1}{f(g(x))}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>g'(x) = \frac{1}{f'(g(x))}</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
                 <answer>
                     <p>
                         D
@@ -699,8 +701,9 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                 <p>In this activity you will find a formula for the derivative of arctangent.</p>
             </introduction>
             <task>
+                <statement>
                 <p>Differentiate the implicit equation <m> \tan(y) = x</m>, what do you get for <m>
-                    \dfrac{dy}{dx}</m>?</p>
+                    \dfrac{dy}{dx}</m>?
                 <ol marker="A." cols="2">
                     <li>
                         <p>
@@ -723,6 +726,8 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                         </p>
                     </li>
                 </ol>
+            </p>
+        </statement>
                 <answer>
                     <p>
                         D

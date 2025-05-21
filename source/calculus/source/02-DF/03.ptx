@@ -342,12 +342,14 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
 </activity>
 
         <activity xml:id="der-exp-context">
-            <p>
-                Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m>
-                minutes after forgetting it on a bench outside, is given by the function <me>f(t) =
-                40 \, (0.5)^t + 50</me> Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your
-                result in the context of this problem.
-            </p>
+            <statement>
+                <p>
+                    Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m>
+                    minutes after forgetting it on a bench outside, is given by the function <me>f(t) =
+                    40 \, (0.5)^t + 50</me> Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your
+                    result in the context of this problem.
+                </p>
+            </statement>
             <answer>
                 <p>
                     <m>f(1) = 70</m>. This means that: 1 minute after forgetting a cup of coffee on

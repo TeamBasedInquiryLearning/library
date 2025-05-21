@@ -408,15 +408,17 @@ The second derivative is the derivative of the derivative. It encodes informatio
         <p>
          In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.  </p> </introduction>
      <task>
-            <p>
-              Consider the following continuous function </p><me>
-                g(x) = \begin{cases}
-                  x + 2 \amp x \leq 2 \\
-                  x^2   \amp x \gt  2
-                \end{cases}
-              </me>
-         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>. 
-            </p>
+            <statement>
+                <p>
+                  Consider the following continuous function </p><me>
+                    g(x) = \begin{cases}
+                      x + 2 \amp x \leq 2 \
+                      x^2   \amp x \gt  2
+                    \end{cases}
+                  </me>
+                         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>.
+                </p>
+            </statement>
             <answer>
                 <p>
                     On the left-hand side, we have 
