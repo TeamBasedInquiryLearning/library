@@ -44,6 +44,11 @@
 
             </ol>
     </statement>
+    <answer>
+      <p>
+        A. <m> \sin x </m>
+      </p>
+    </answer>
         </activity>
 
 
@@ -58,6 +63,11 @@
 
             </ol>
     </statement>
+    <answer>
+      <p>
+        B. <m> \frac{1}{3} x^3 </m>
+      </p>
+    </answer>
         </activity>  
          
        <remark>
@@ -186,7 +196,11 @@
             </ol>
           </statement>
    
-     
+     <answer>
+      <p>
+        C. <m> F(x)= -5 \cos (x)- \frac{4}{3} x^3 </m>.
+      </p>
+     </answer>
     
     </activity>
 
@@ -204,9 +218,28 @@ Find the general antiderivative for each function.
         </introduction>
         
         
-                <task><me>f(x) = -4 \, \sec^2\left(x\right)</me></task>
-                <task><me>f(x) = \frac{8}{\sqrt{x}}</me></task>
-
+                <task> <statement>
+                 
+                  <me>f(x) = -4 \, \sec^2\left(x\right)</me>
+                </statement>
+                <answer>
+      <p>
+         <m>  -4 \tan (x)+C </m>.
+      </p>
+     
+    </answer>
+                </task>
+                <task> <statement>
+                
+                  <me>f(x) = \frac{8}{\sqrt{x}}</me>
+                </statement>
+                <answer>
+      
+      <p>
+         <m> 16 \sqrt x +C </m>.
+      </p>
+    </answer>
+    </task>
           </activity>
     
     
@@ -220,8 +253,26 @@ Find each indefinite integral.
         </introduction>
         
 
-                <task><me>\int (-9 \, x^{4} - 7 \, x^{2} + 4) \, dx</me></task>
-                <task><me>\int 3 \, e^{x}\, dx</me></task>
+                <task> <statement>
+                 
+                  <me>\int (-9 \, x^{4} - 7 \, x^{2} + 4) \, dx</me>
+                </statement>
+                  <answer>
+                    <p>
+                      <m> -\frac{9}{5} x^5 - \frac{7}{3} x^3+ 4x + C </m>
+                    </p>
+                  </answer>
+                </task>
+                <task> <statement>
+            
+                  <me>\int 3 \, e^{x}\, dx</me>
+                </statement>
+                <answer>
+                  <p>
+                    <m> 3 e^x + C </m>
+                  </p>
+                </answer>
+                </task>
           </activity>
     </subsection>
     <subsection>
