@@ -3,6 +3,10 @@
 # This file was automatically generated with PreTeXt 2.17.1.
 # If you modify this file, PreTeXt will no longer automatically update it.
 
+# conda activate within a bash script doesn't play nice unless we do this
+CONDA_BASE=$(conda info --base)  
+source $CONDA_BASE/etc/profile.d/conda.sh
+
 # Conda should already be installed in the codespace.  We need to add the conda-forge channel
 
 conda config --add channels conda-forge
