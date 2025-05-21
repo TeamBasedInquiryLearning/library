@@ -425,15 +425,15 @@ other properties of the determinant:
         </p>
         <md>
             <mrow>
-  \det([\vec{v}\hspace{1em}\vec{w}+c\vec{v}])
+  \det([\vec{v}+c\vec{w}\hspace{1em}\vec{w}])
 &amp;=
   \det([\vec{v}\hspace{1em}\vec{w}])+
-  \det([\vec{v}\hspace{1em}c\vec{v}])
+  \det([c\vec{w}\hspace{1em}\vec{w}])
             </mrow>
             <mrow>
 &amp;=
   \det([\vec{v}\hspace{1em}\vec{w}])+
-  c\det([\vec{v}\hspace{1em}\vec{v}])
+  c\det([\vec{w}\hspace{1em}\vec{w}])
             </mrow>
             <mrow>
 &amp;=
