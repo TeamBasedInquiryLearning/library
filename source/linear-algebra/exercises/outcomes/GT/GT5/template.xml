@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Let <m>\mathcal{B}= {{vecset}}</m>, and <m>\vec{v}= {{v}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate how to verify that <m>\mathcal{B}</m> is a basis of <m>\mathbb R^3</m>
+and how to calculate <m>M_\mathcal{B}</m>, the change-of-basis matrix from the standard basis of
+<m>\mathbb R^3</m> to <m>\mathcal{B}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p><m>M_{\mathcal B} = {{M_B}}</m></p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate how to use <m>M_\mathcal{B}</m> to express <m>\vec{v}</m> in terms of
+<m>\mathcal{B}</m>-basis vectors. 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{v}} = {{lin_combo_exp}}</m>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>
