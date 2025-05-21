@@ -3,7 +3,7 @@ TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
-        # shuffle 2,3,4,5 to get dimensions
+        # shuffle 2,3,4 to get dimensions
         dims = [2,3,4]
         shuffle(dims)
 
@@ -27,6 +27,11 @@ class Generator(BaseGenerator):
             "A": matrices[0],
             "B": matrices[1],
             "C": matrices[2],
+#            "leftMatrix": letters[indices.index("L")],
+#            "rightMatrix": letters[indices.index("R")],
+#            "leftDim": dims[0],
+#            "middleDim": dims[1],
+#            "rightDim": dims[2],
             "productName": productName,
-            "product": product
+            "product": product,
         }

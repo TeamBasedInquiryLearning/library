@@ -36,13 +36,35 @@ discussing its corresponding linear transformation.
         <knowl>
             <content>
                 <p>
-If the matrix is invertible, explain how to find its inverse.
+If the matrix is invertible, use technology to find its inverse.
                 </p>
             </content>
             <outtro>
                 <p>
 <!-- {{#invertible}} -->
 Its inverse is <m>{{inverse}}</m>.
+<!-- {{/invertible}} -->
+<!-- {{^invertible}} -->
+N/A
+<!-- {{/invertible}} -->
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+If the matrix is invertible, explain how to find its inverse
+using techniques that don't require technology. (You may use
+technology to perform those techniques, as long as they *could*
+be done without using technology.)
+                </p>
+            </content>
+            <outtro>
+                <p>
+<!-- {{#invertible}} -->
+Show how to compute each column of the inverse matrix
+by solving an appropriate vector equation (that is, computing RREF
+of an appropriate augmented matrix).
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
 N/A

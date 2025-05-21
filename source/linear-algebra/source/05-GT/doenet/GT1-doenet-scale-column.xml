@@ -1,36 +1,47 @@
 <!-- https://www.doenet.org/portfolioeditor/_reS8KHCS5aolabDuf5xOK/_KHPpBhqTZbn4sgISMfZyC -->
 <p>
-    Adjust the vectors <m>\vec v</m>, <m>c\vec v</m>, and <m>\vec w</m> in the
-    left graph to visualize the area calculated by
-    <m>\det[\vec v\hspace{0.5em}\vec w]</m> in comparison to
-    <m>\det[c\vec v\hspace{0.5em}\vec w]</m>.
-  </p>
-  <setup><line through="(0,0) $v" name="vLine"/><math simplify  name="c">$cv.x/$v.x</math></setup>
-  <sideBySide>
-    <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
-      <m draggable="false" anchor="(12,14)">\det[\vec v\hspace{0.5em}\vec w]</m>
-      <point name="v" styleNumber="3">
-        (4,1)
-        <label><m>\vec v</m></label>
-      </point>
-      <point name="w" styleNumber="3">
-        (2,3)
-        <label><m>\vec w</m></label>
-      </point>
-      <point name="cv" styleNumber="4" labelPosition="lowerleft">
-        (6,1.5)
-        <label><m>c\vec v</m></label>
-      <constraints>
-        <constrainTo>$vLine</constrainTo>
-      </constraints>
-      </point>
-      <lineSegment endpoints="(0,0) $cv" styleNumber="4"/>
-      <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="3"/>
-    </graph>
-    <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
-      <m draggable="false" anchor="(12,14)">\det[c\vec v\hspace{0.5em}\vec w]</m>
-      <m draggable="false" anchor="(12,12)">c= $c</m>
-      <polygon vertices="(0,0) $v $v+$w $w" draggable="false" styleNumber="6"/>
-      <polygon vertices="(0,0) $cv $cv+$w $w" filled draggable="false" styleNumber="4"/>
-    </graph>
-  </sideBySide>
+  Adjust the vectors <m>\vec v</m>, <m>c\vec v</m>, and <m>\vec w</m> in the
+  left graph to visualize the area calculated by
+  <m>\det[\vec v\hspace{0.5em}\vec w]</m> in comparison to
+  <m>\det[c\vec v\hspace{0.5em}\vec w]</m>.
+</p>
+<setup>
+  <line through="(0,0) $v" name="vLine"/>
+  <math simplify  name="c">$cv.x/$v.x</math>
+  <math simplify name="oldDet">$v.x*$w.y-$v.y*$w.x</math>
+  <math simplify name="newDet">$cv.x*$w.y-$cv.y*$w.x</math>
+</setup>
+<sideBySide>
+  <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
+    <m draggable="false" anchor="(12,14)">
+      \det[\vec v\hspace{0.5em}\vec w]
+      = $oldDet
+    </m>
+    <point name="v" styleNumber="3">
+      (4,1)
+      <label><m>\vec v</m></label>
+    </point>
+    <point name="w" styleNumber="3">
+      (2,3)
+      <label><m>\vec w</m></label>
+    </point>
+    <point name="cv" styleNumber="4" labelPosition="lowerleft">
+      (6,1.5)
+      <label><m>c\vec v</m></label>
+    <constraints>
+      <constrainTo>$vLine</constrainTo>
+    </constraints>
+    </point>
+    <lineSegment endpoints="(0,0) $cv" styleNumber="4"/>
+    <polygon vertices="(0,0) $cv $cv+$w $w" draggable="false" styleNumber="6"/>
+    <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="3"/>
+  </graph>
+  <graph xmin="-4" ymin="-4" xmax="16" ymax="16">
+    <m draggable="false" anchor="(12,14)">
+      \det[c\vec v\hspace{0.5em}\vec w] = $newDet
+    </m>
+    <m draggable="false" anchor="(12,12)">c= $c</m>
+    <polygon vertices="(0,0) $v $v+$w $w" draggable="false" styleNumber="6"/>
+    <polygon vertices="(0,0) $cv $cv+$w $w" filled draggable="false" styleNumber="4"/>
+  </graph>
+</sideBySide>

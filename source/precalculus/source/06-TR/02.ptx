@@ -12,6 +12,386 @@
     <subsection>
     <title>Activities</title>
 
+    <activity>
+      <statement>
+        <p> Consider the angle given below:</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(-7*pi/4,show_axes=True)
+        </sageplot>
+        </image>
+        <p>Which of the following angles describe the plotted angle?</p>
+          <ol marker="A." cols="4">
+            <li><m>-45^\circ</m></li>
+            <li><m>-135^\circ</m></li>
+            <li><m>-225^\circ</m></li>
+            <li><m>-315^\circ</m></li>
+          </ol>
+      </statement>
+      <answer>
+        <p>
+          D.
+        </p>
+      </answer>
+    </activity>
+
+    <definition xml:id="def-coterminal-angles">
+      <statement>
+        <p>
+          Two angles are called <term>coterminal angles</term> if they have the same terminal side when drawn in standard position.
+        </p>
+      </statement>
+    </definition>
+
+ <activity>
+      <introduction>
+        <p> Consider the angle given below:</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+        <p>Find two angles larger than <m>60^\circ</m> that are coterminal to <m>60^\circ</m>.</p>
+        </statement>
+        <answer>
+          <p><m>420^\circ</m>, <m>780^\circ</m>, among others.</p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+        <p>Find two angles smaller than <m>60^\circ</m> that are coterminal to <m>60^\circ</m>.</p>
+        </statement>
+        <answer>
+          <p><m>-300^\circ</m>, <m>-660^\circ</m>, among others.</p>
+        </answer>
+      </task>
+    </activity>
+
+    <observation>
+    <p>For any angle <m>\theta</m>, the angle <m>\theta + k\cdot 360^\circ</m> is coterminal to <m>\theta</m>
+      for any integer <m>k</m>.</p>
+    </observation>
+
+    <remark>
+    <p>Since there are many coterminal angles for any given angle, it is convenient to systematically
+    choose one for every angle.  For a given angle, we typically choose the smallest positive coterminal angle to work with instead.</p>
+    </remark>
+
+    <definition xml:id="def-principal-angle">
+      <statement>
+        <p>
+          If <m>\theta</m> is an angle, there is a unique angle <m>\alpha</m> with <m>0 \leq \alpha \lt 360^\circ</m> (or <m>0\leq \alpha \lt 2\pi</m>)
+          such that <m>\alpha</m> and <m>\theta</m> are coterminal.  This angle <m>\alpha</m> is called
+          the <term>principal angle</term> of <m>\theta</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <activity>
+    <introduction>
+      <p>
+        Find the principal angles for each of the following angles.
+      </p>
+    </introduction>
+    <task>
+    <statement><p><m>540^\circ</m></p></statement>
+    <answer><p><m>180^\circ</m></p></answer>
+    </task>
+    <task>
+    <statement><p><m>-600^\circ</m></p></statement>
+    <answer><p><m>120^\circ</m></p></answer>
+    </task>
+    <task>
+    <statement><p><m>\dfrac{11\pi}{3}</m></p></statement>
+    <answer><p><m>\dfrac{5\pi}{3}</m></p></answer>
+    </task>
+    <task>
+    <statement><p><m>\dfrac{-7\pi}{5}</m></p></statement>
+    <answer><p><m>\dfrac{3\pi}{5}</m></p></answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>Recall that the circumference of a circle of radius <m>r</m> is <m>2 \pi r</m>.
+      We will use this to determine the lengths of arcs on a circle.</p>
+    </remark>
+
+    <activity>
+    <introduction>
+      <p>Consider the portion of a circle of radius <m>1</m> graphed below.</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
+p+=arc((0,0),1,sector=(0,pi/2),color="blue",thickness=3)
+p+=text("$1$", (0.5,0.05),color="black")
+p
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>What is the circumference of an entire circle of radius <m>1</m>?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+            <li><m>2\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>D.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>What portion of the entire circle is the sector graphed above?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{1}{4}</m></li>
+            <li><m>\frac{1}{3}</m></li>
+            <li><m>\frac{1}{2}</m></li>
+            <li><m>\frac{3}{4}</m></li>
+          </ol>
+        </statement>
+        <answer><p>A.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>Use proportions to determine the length of the arc displayed above.</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+            <li><m>2\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>A</p></answer>
+      </task>
+      </activity>
+
+<activity>
+    <introduction>
+      <p>Consider the portion of a circle of radius <m>3</m> graphed below.</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+p=TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
+p+=arc((0,0),1,sector=(0,pi/3),color="blue",thickness=3)
+p+=text("$3$", (0.5,0.05),color="black")
+p
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>What is the circumference of an entire circle of radius <m>3</m>?</p>
+          <ol marker="A." cols="4">
+            <li><m>\pi</m></li>
+            <li><m>3\pi</m></li>
+            <li><m>6\pi</m></li>
+            <li><m>9\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>C.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>What portion of the entire circle is the sector graphed above?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{1}{12}</m></li>
+            <li><m>\frac{1}{6}</m></li>
+            <li><m>\frac{1}{4}</m></li>
+            <li><m>\frac{1}{3}</m></li>
+          </ol>
+        </statement>
+        <answer><p>B.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>Use proportions to determine the length of the arc displayed above.</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>2\pi</m></li>
+            <li><m>3\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>B.</p></answer>
+      </task>
+      </activity>
+
+    <observation>
+    <p>For a sector of angle <m>\theta</m> and radius <m>r</m>, we can use proportions to find the length of
+    the arc, <m>s</m>.  If <m>\theta</m> is measured in degrees, we have <m>s=\frac{\theta}{360^\circ}\left(2\pi r\right)</m>,
+    which simplifies to <me>s=\frac{\theta}{180^\circ}\pi r</me>.
+    In radians, the formula is even nicer: <m>s=\frac{\theta}{2\pi}\left(2 \pi r\right)</m>, which simplifies to
+    <me>s=\theta r</me>.
+    </p>
+    </observation>
+
+    <activity>
+      <introduction>
+        <p>Find the lengths of the arcs described below.</p>
+      </introduction>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>120^\circ</m> of a circle of radius <m>4</m>.</p></statement>
+        <answer><p><m>\frac{8\pi}{3}</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>270^\circ</m> of a circle of radius <m>2</m>.</p></statement>
+        <answer><p><m>3\pi</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>\dfrac{5\pi}{6}</m> of a circle of radius <m>3</m>.</p></statement>
+        <answer><p><m>\frac{5\pi}{2}</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The length of the arc of a sector of measure <m>\dfrac{11\pi}{12}</m> of a circle of radius <m>6</m>.</p></statement>
+        <answer><p><m>\frac{11\pi}{2}</m></p></answer>
+      </task>
+    </activity>
+
+    <remark>
+    <p>Recalling that the area of a circle of radius <m>r</m> is <m>\pi r^2</m>, we can use this same idea of proportions
+    to find the area of a sector of a circle.</p>
+    </remark>
+
+    <activity>
+    <introduction>
+      <p>Consider the portion of a circle of radius <m>1</m> graphed below.</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
+p+=arc((0,0),1,sector=(0,pi/2),color="blue",thickness=3)
+p+=text("$1$", (0.5,0.05),color="black")
+p
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>What is the area of an entire circle of radius <m>1</m>?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+            <li><m>2\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>B.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>What portion of the entire circle is the sector graphed above?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{1}{4}</m></li>
+            <li><m>\frac{1}{3}</m></li>
+            <li><m>\frac{1}{2}</m></li>
+            <li><m>\frac{3}{4}</m></li>
+          </ol>
+        </statement>
+        <answer><p>A.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>Use proportions to determine the area of the arc displayed above.</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{4}</m></li>
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+          </ol>
+        </statement>
+        <answer><p>A.</p></answer>
+      </task>
+      </activity>
+
+<activity>
+    <introduction>
+      <p>Consider the portion of a circle of radius <m>3</m> graphed below.</p>
+        <image width="50%">
+        <sageplot>
+<xi:include href="../../../common/sagemath/library.sage" parse="text" />
+p=TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
+p+=arc((0,0),1,sector=(0,pi/3),color="blue",thickness=3)
+p+=text("$3$", (0.5,0.05),color="black")
+p
+        </sageplot>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>What is the area of an entire circle of radius <m>3</m>?</p>
+          <ol marker="A." cols="4">
+            <li><m>\pi</m></li>
+            <li><m>3\pi</m></li>
+            <li><m>6\pi</m></li>
+            <li><m>9\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>D.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>What portion of the entire circle is the sector graphed above?</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{1}{12}</m></li>
+            <li><m>\frac{1}{6}</m></li>
+            <li><m>\frac{1}{4}</m></li>
+            <li><m>\frac{1}{3}</m></li>
+          </ol>
+        </statement>
+        <answer><p>B.</p></answer>
+      </task>
+      <task>
+        <statement>
+          <p>Use proportions to determine the area of the sector displayed above.</p>
+          <ol marker="A." cols="4">
+            <li><m>\frac{\pi}{2}</m></li>
+            <li><m>\pi</m></li>
+            <li><m>\frac{3\pi}{2}</m></li>
+            <li><m>2\pi</m></li>
+          </ol>
+        </statement>
+        <answer><p>C.</p></answer>
+      </task>
+      </activity>
+
+    <observation>
+    <p>For a sector of angle <m>\theta</m> and radius <m>r</m>, we can use proportions to find the area of
+    the arc.  If <m>\theta</m> is measured in degrees, we have <m>A=\frac{\theta}{360^\circ}\left(\pi r^2\right)</m>.
+    In radians, the formula is even nicer: <m>A=\frac{\theta}{2\pi}\left(\pi r^2\right)</m>, which simplifies to
+    <me>A=\frac{1}{2}\theta r^2</me>.
+    </p>
+    </observation>
+
+    <activity>
+      <introduction>
+        <p>Find the areas of each sector described below.</p>
+      </introduction>
+      <task>
+        <statement><p>The sector with central angle <m>120^\circ</m> in a circle of radius <m>4</m>.</p></statement>
+        <answer><p><m>\dfrac{16\pi}{3}</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The sector with central angle <m>270^\circ</m> in a circle of radius <m>2</m>.</p></statement>
+        <answer><p><m>3\pi</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The sector with central angle <m>\dfrac{5\pi}{6}</m> in a circle of radius <m>3</m>.</p></statement>
+        <answer><p><m>\dfrac{15\pi}{4}</m></p></answer>
+      </task>
+      <task>
+        <statement><p>The sector with central angle <m>\dfrac{11\pi}{12}</m> in a circle of radius <m>6</m>.</p></statement>
+        <answer><p><m>\dfrac{33\pi}{2}</m></p></answer>
+      </task>
+    </activity>
+
+
     </subsection>
 
     <exercises>

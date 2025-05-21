@@ -12,13 +12,29 @@
         <content>
             <p>Explain which two can be multiplied and why.</p>
         </content>
+        <outtro>
+            <p><m>{{productName}}</m></p>
+        </outtro>
     </knowl>
     <knowl>
         <content>
-            <p>Show how to find their product.</p>
+            <p>Find their product using technology.</p>
         </content>
+        <outtro>
+            <p>
+                <me>{{productName}} = {{product}}</me>
+            </p>
+        </outtro>
     </knowl>
-    <outtro>
-        <p><me>{{productName}}={{product}}</me></p>
-    </outtro>
+    <knowl>
+        <content>
+            <p>Show how to find this product without technology.</p>
+        </content>
+        <outtro>
+            <p>
+                Compute each <m>{{productName}}\vec e_i</m> to obtain
+                each column.
+            </p>
+        </outtro>
+    </knowl>
 </knowl>

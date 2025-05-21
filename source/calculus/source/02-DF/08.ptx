@@ -31,12 +31,22 @@
                 <li><p><m>\frac{dy}{dx} = \frac{x}{e^y}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{1}{e^y}</m></p></li>
             </ol>
+        <answer>
+            <p>
+                D
+            </p>
+        </answer>
     </task>
-    <task><p>Notice that we started with the relationship <m>e^y=x</m>. Use this to simplify <m>\dfrac{dy}{dx}</m>. You should get that when <m>y=\ln(x)</m> we have that <m>\dfrac{dy}{dx} = \dfrac{1}{x}</m>... as expected!</p></task>
+    <task><p>Notice that we started with the relationship <m>e^y=x</m>. Use this to simplify <m>\dfrac{dy}{dx}</m>. You should get that when <m>y=\ln(x)</m> we have that <m>\dfrac{dy}{dx} = \dfrac{1}{x}</m>... as expected!</p>
+    <answer>
+        <p>
+            If <m>y = \ln x</m>, we have <m>\dfrac{dy}{dx} = \dfrac{1}{e^{\ln x}} = \dfrac{1}{x}</m>.
+        </p>
+    </answer></task>
     </activity>
 
 <activity xml:id="activity-df-inv-general">
-    <introduction><p>In this activity we will try to find a general formula for the derivative of the inverse function.  Let <m>g</m> be the inverse function of <m>f</m>. We have also used the notation <m>f^{-1}</m> before, but for the purpose of this problem, let us use <m>g</m> to avoid too many exponents. We can express the relationship <q><m>g</m> is the inverse of <m>f</m></q> with the equation from <xref ref = "rmk-inverse-function-identity"/> </p> 
+    <introduction><p>In this activity we will try to find a general formula for the derivative of the inverse function.  Let <m>g</m> be the inverse function of <m>f</m>. We have also used the notation <m>f^{-1}</m> before, but for the purpose of this problem, let us use <m>g</m> to avoid too many superscripts. We can express the relationship <q><m>g</m> is the inverse of <m>f</m></q> with the equation from <xref ref = "rmk-inverse-function-identity"/> </p> 
 <me>f(g(x))=x.</me></introduction>
     <task><p>
         Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the right hand side of the equation?
@@ -47,6 +57,11 @@
                 <li><p><m>0</m></p></li>
                 <li><p><m>x^2</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    B
+                </p>
+            </answer>
     </task>
     <task><p>
    Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the left hand side of the equation?
@@ -57,6 +72,11 @@
                 <li><p><m>f(g(x))\, g'(x) </m></p></li>
                 <li><p><m>f'(g(x))\, g'(x)</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    D
+                </p>
+            </answer>
     </task>
  <task><p>
    Setting the two sides of the equation equal after differentiating, we can solve for <m>g'(x)</m>. What do you get?
@@ -67,6 +87,11 @@
          <li><p><m>g'(x) = \frac{1}{f(g(x))}</m></p></li>
          <li><p><m>g'(x) = \frac{1}{f'(g(x))}</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    D
+                </p>
+            </answer>
     </task>
     </activity>    
 
@@ -108,7 +133,12 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.6} \approx 1.67 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.4} = 2.5 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.1} = 10 </m> </p></li>          
-    </ol>      
+    </ol> 
+    <answer>
+        <p>
+            B
+        </p>
+    </answer>     
     </task>
     <task><p>What is your best estimate for <m>(f^{-1})' (6) </m> ?</p> 
       <ol marker="A." cols="2">
@@ -116,14 +146,29 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.6} \approx 1.67 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.4} = 2.5 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.1} = 10 </m> </p></li>          
-    </ol>      
+    </ol>   
+    <answer>
+        <p>
+            C
+        </p>
+    </answer>   
     </task>
     </activity>    
 
 
 <activity xml:id="activity-df-inv2"> <introduction><p>Use the general formula for the derivative of the inverse function from <xref ref ="rmk-df-inv-general"/>  to find...</p></introduction>
-    <task><p>The derivative of the inverse function of <m>f(x) = e^x</m>... This should match the result of <xref ref ="activity-df-inv-ln"/>!</p></task>
-      <task><p>The derivative of the inverse function of <m>f(x) = \dfrac{1}{x}</m>... This should match a derative that you have seen before! See if you can explain why.</p></task>
+    <task><p>The derivative of the inverse function of <m>f(x) = e^x</m>... This should match the result of <xref ref ="activity-df-inv-ln"/>!</p>
+    <answer>
+        <p>
+            <m>f'(x) = \dfrac{1}{x}</m>
+        </p>
+    </answer></task>
+      <task><p>The derivative of the inverse function of <m>f(x) = \dfrac{1}{x}</m>... This should match a derivative that you have seen before! See if you can explain why.</p>
+    <answer>
+        <p>
+           <m>f'(x) = -\dfrac{1}{x^2}</m>
+        </p>
+    </answer></task>
     </activity>
 
 
@@ -172,7 +217,75 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                 </row>
             </tabular>
         </table>
-</p></task>
+</p>
+<answer>
+    <tabular>
+        <row bottom="minor">
+             <cell>
+                 <m> y = \sin(x) </m>
+             </cell>
+            <cell>
+               <m>-1</m>
+             </cell>
+             <cell>
+               <m>-\sqrt{3}/2</m>
+             </cell>  
+           <cell>
+               <m>-1/2</m>
+             </cell>
+             <cell>
+               <m>0</m>
+           </cell>
+             <cell>
+               <m>1/2</m>
+             </cell>
+             <cell>
+               <m>\sqrt{3}/2</m>
+             </cell>
+           <cell>
+               <m>1</m>
+             </cell>
+           </row>
+           <row>
+             <cell>
+                 <m>x = \sin^{-1}(y)</m>
+             </cell>
+               <cell>
+             <m>-\pi/2</m>
+             </cell>
+             <cell>
+                <m>
+                    -\pi/3
+                </m>
+             </cell>
+             <cell>
+                <m>
+                    -\pi/6
+                </m>
+             </cell>
+             <cell>
+                <m>
+                    0
+                </m>
+             </cell>
+             <cell>
+                <m>
+                    \pi/6
+                </m>
+             </cell>
+             <cell>
+                <m>
+                    \pi/3
+                </m>
+             </cell>
+             <cell>
+                <m>
+                    \pi/2
+                </m>
+             </cell>
+           </row>
+       </tabular>
+</answer></task>
     <task><p>From the graph of <m>y=\sin(x)</m> and your table above, graph the arcsine function  <m>y=\sin^{-1}(x)</m> </p>
      <figure>
         <sidebyside widths="50% 50%">
@@ -195,10 +308,174 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
             </image>
         </sidebyside>
         <caption>The graphs of <m> \sin(x)</m> and a blank graph for <m> \sin^{-1}(x)</m>.</caption>
-    </figure>                  
+    </figure>  
+    <answer>
+        <image xml:id="graph-invsin-ans" width="50%">
+            <sageplot>
+                x = var('x')
+                ticks = [[-1,-0.75,-0.5,-0.25,0.25,0.5,0.75,1],[-pi/2, -pi/3, -pi/6, pi/6, pi/3, pi/2]]
+                p = plot(asin(x), (x,-1,1), ymin = -pi/2, ymax = pi/2, ticks=ticks, tick_formatter=[None,pi], axes_labels=('$x$','$y$'), gridlines=False, aspect_ratio = .6)
+                p
+            </sageplot>
+        </image>
+    </answer>                
   </task>
-    <task><p>Let's now work with the function arccosine. Again, we need to restrict the domain of cosine to be able to invert the function (Why?). The convention is to restrict cosine to the domain <m>[0,\pi]</m> in order to define arccosine. Given this restriction, what are the domain and range of arccosine? Create a table of values and graph the function arccosine.</p></task>
-     <task><p>Let's now work with the function arctangent. Again, we need to restrict the domain of tangent to be able to invert the function (Why?). The convention is to restrict tangent to the domain <m>(-\pi/2,\pi/2)</m> in order to define arctangent. Given this restriction, what are the domain and range of arctangent? Create a table of values and graph the function arctangent.</p></task>
+    <task><p>Let's now work with the function arccosine. Again, we need to restrict the domain of cosine to be able to invert the function (Why?). The convention is to restrict cosine to the domain <m>[0,\pi]</m> in order to define arccosine. Given this restriction, what are the domain and range of arccosine? Create a table of values and graph the function arccosine.</p>
+        <answer>
+            <tabular>
+                <row bottom="minor">
+                     <cell>
+                         <m> y = \cos(x) </m>
+                     </cell>
+                    <cell>
+                       <m>1</m>
+                     </cell>
+                     <cell>
+                       <m>\sqrt{3}/2</m>
+                     </cell>  
+                   <cell>
+                       <m>1/2</m>
+                     </cell>
+                     <cell>
+                       <m>0</m>
+                   </cell>
+                     <cell>
+                       <m>-1/2</m>
+                     </cell>
+                     <cell>
+                       <m>-\sqrt{3}/2</m>
+                     </cell>
+                   <cell>
+                       <m>-1</m>
+                     </cell>
+                   </row>
+                   <row>
+                     <cell>
+                         <m>x = \cos^{-1}(y)</m>
+                     </cell>
+                       <cell>
+                     <m>0</m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi/6
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi/3
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi/2
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            2\pi/3
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            5\pi/6
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi
+                        </m>
+                     </cell>
+                   </row>
+               </tabular>
+               <image xml:id="graph-invcos-ans" width="50%">
+                <sageplot>
+                    x = var('x')
+                    ticks = [[-1,-0.75,-0.5,-0.25,0.25,0.5,0.75,1],[0, pi/6, pi/3, pi/2, 2*pi/3,5*pi/6, pi]]
+                    p = plot(acos(x), (x,-1,1), ymin = 0, ymax = pi, ticks=ticks, tick_formatter=[None,pi], axes_labels=('$x$','$y$'), gridlines=False, aspect_ratio = .6)
+                    p
+                </sageplot>
+            </image>
+        </answer>
+    </task>
+     <task><p>Let's now work with the function arctangent. Again, we need to restrict the domain of tangent to be able to invert the function (Why?). The convention is to restrict tangent to the domain <m>(-\pi/2,\pi/2)</m> in order to define arctangent. Given this restriction, what are the domain and range of arctangent? Create a table of values and graph the function arctangent.</p>
+        <answer>
+            <tabular>
+                <row bottom="minor">
+                     <cell>
+                         <m> y = \tan(x) </m>
+                     </cell>
+                    <cell>
+                       Und
+                     </cell>
+                     <cell>
+                       <m>-\sqrt{3}</m>
+                     </cell>  
+                   <cell>
+                       <m>-1/\sqrt{3}</m>
+                     </cell>
+                     <cell>
+                       <m>0</m>
+                   </cell>
+                     <cell>
+                       <m>1/\sqrt{3}</m>
+                     </cell>
+                     <cell>
+                       <m>\sqrt{3}</m>
+                     </cell>
+                   <cell>
+                       Und
+                     </cell>
+                   </row>
+                   <row>
+                     <cell>
+                         <m>x = \tan^{-1}(y)</m>
+                     </cell>
+                       <cell>
+                        <m>-\pi/2</m>
+                     </cell>
+                     <cell>
+                        <m>
+                            -\pi/3
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            -\pi/6
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            0
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi/6
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi/3
+                        </m>
+                     </cell>
+                     <cell>
+                        <m>
+                            \pi/2
+                        </m>
+                     </cell>
+                   </row>
+               </tabular>
+               <image xml:id="graph-invtan-ans" width="50%">
+                <sageplot>
+                    x = var('x')
+                    ticks = [[-3, -2, -1, 0, 1, 2, 3],[-pi/2, -pi/3, -pi/6, 0, pi/6, pi/3, pi/2]]
+                    p = plot(atan(x), (x,-3,3), ymin = -pi/2+.01, ymax = pi/2-.01, ticks=ticks, tick_formatter=[None,pi], axes_labels=('$x$','$y$'), gridlines=False, aspect_ratio = 1)
+                    p
+                </sageplot>
+            </image>
+        </answer>
+    </task>
     </activity>
 
 <activity>
@@ -210,9 +487,19 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                 <li><p><m>\dfrac{dy}{dx} = \dfrac{x}{\sec^2(y)}</m></p></li>
                 <li><p><m>\dfrac{dy}{dx} = \dfrac{1}{\sec^2(y)}</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    D
+                </p>
+            </answer>
     </task>
     <task>
     <p>For what function <m>y=g(x)</m> have you found the derivative <m>\dfrac{dy}{dx}</m>?</p>
+    <answer>
+        <p>
+            <m>y = \tan^{-1}(x)</m>
+        </p>
+    </answer>
     </task>
     <task><p>We want to rewrite <m>\dfrac{dy}{dx}</m> only in terms of <m>x</m>. Notice that </p>
     <me> \tan^2(y) = \dfrac{\sin^2(y)}{\cos^2(y)} = \dfrac{1 - \cos^2(y)}{\cos^2(y)}. </me>
@@ -223,8 +510,19 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                <li><p><m>\cos^2(y) = \frac{1- \cos^2(y)}{\tan^2(y)}</m></p></li>
               <li><p><m>\cos^2(y) = \frac{1}{\tan^2(y) -1 }</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    B
+                </p>
+            </answer>
     </task>
-    <task><p>Finally, rewrite <m>\dfrac{dy}{dx}</m> as <m>\dfrac{dy}{dx} = \cos^2(y)</m> and use the fact that <m>\tan(y)=x</m> to get a nice formula for the derivative of the arctangent function of <m>x</m>.</p></task>
+    <task><p>Finally, rewrite <m>\dfrac{dy}{dx}</m> as <m>\dfrac{dy}{dx} = \cos^2(y)</m> and use the fact that <m>\tan(y)=x</m> to get a nice formula for the derivative of the arctangent function of <m>x</m>.</p>
+        <answer>
+            <p>
+                <m>\dfrac{1}{1+x^2}</m>
+            </p>
+        </answer>
+    </task>
     </activity>
 
 
@@ -260,9 +558,27 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 </activity>   
     
         <activity xml:id="derivative-inverses-in-context1">
-        <task><p>Find the equation of the tangent line to <m>y=\tan^{-1}(x)</m> at <m>x=0</m>. Draw the function and the tangent on a graphing calculator to check your work!</p></task>
-                    <task><p>Find the equation of the tangent line to <m>y=\sin^{-1}(x)</m> at <m>x=0.5</m>. Draw the function and the tangent on a graphing calculator to check your work!</p></task>
-            <task><p>Find the equation of the tangent line to <m>y=\cos^{-1}(x)</m> at <m>x=-0.5</m>. Draw the function and the tangent on a graphing calculator to check your work! </p></task>
+        <task><p>Find the equation of the tangent line to <m>y=\tan^{-1}(x)</m> at <m>x=0</m>. Draw the function and the tangent on a graphing calculator to check your work!</p>
+        <answer>
+            <p>
+                <m>y=x</m>
+            </p>
+        </answer>
+        </task>
+                    <task><p>Find the equation of the tangent line to <m>y=\sin^{-1}(x)</m> at <m>x=0.5</m>. Draw the function and the tangent on a graphing calculator to check your work!</p>
+        <answer>
+            <p>
+                <m>y = \dfrac{2}{\sqrt{3}}x - \dfrac{1}{\sqrt{3}}+ \dfrac{\pi}{6}</m>
+            </p>
+        </answer>
+        </task>
+            <task><p>Find the equation of the tangent line to <m>y=\cos^{-1}(x)</m> at <m>x=-0.5</m>. Draw the function and the tangent on a graphing calculator to check your work! </p>
+        <answer>
+            <p>
+                <m>y = -\dfrac{2}{\sqrt{3}}x - \dfrac{1}{\sqrt{3}}+ \dfrac{2\pi}{3}</m>
+            </p>
+        </answer>    
+        </task>
     </activity>
     
   <activity xml:id="derivative-inverses-in-context2">   
@@ -292,16 +608,43 @@ You are given the graphs of <m>f(v), f'(v)</m> below. </p>
       </introduction>
 <task><p>
     Estimate <m>f^{-1}(6)</m>. What does this value mean in the context of the problem?
-    </p></task>
+    </p>
+<answer>
+    <p>
+        <m>f^{-1}(6)\approx 46</m>. This means that when the gas consumption is 6 ml/km, the velocity is 46 km/hr.
+    </p>
+</answer>
+</task>
       <task><p>
    Using your answer from part (a), estimate the derivative of the inverse function of <m>f(x)</m> at <m>x=6</m> i.e., compute <m>(f^{-1})'(6)</m>.
-    </p></task>
+    </p>
+<answer>
+    <p>
+        <m>(f^{-1})'(6) \approx 2.86</m>
+    </p>
+</answer>
+</task>
  <task><p>
   What is the relationship between the functions <m>f</m> and <m>g</m>?
-    </p></task>
+    </p>
+<answer>
+    <p>
+        They are inverses.
+    </p>
+</answer>
+</task>
       <task><p>
  Use the relationship between the functions <m>f</m> and <m>g</m> to estimate <m>g(12)</m> and <m>g'(12)</m>. What do these values mean in the context of the problem?
-    </p></task>
+    </p>
+<answer>
+    <p>
+       <m>g(12) = f^{-1}(12)\approx 60</m>, so that when the gas consumption is 12 ml/km, the velocity is 60 km/hr
+    </p>
+    <p>
+        <m>g'(12) = (f^{-1})'(12)\approx 1.67</m>, so that when gas consumption is at 12 ml/km, the velocity is changing by 1.67 km/hr per ml/km.
+    </p>
+</answer>
+</task>
    </activity>
 
 

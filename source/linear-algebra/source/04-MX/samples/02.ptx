@@ -1,106 +1,142 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 
-
-<example xml:id="sample-MX2"><title>MX2</title>
-  <statement>
-      <p>
-Explain why each of the following matrices is or is not invertible by
-disussing its corresponding linear transformation.
-If the matrix is invertible, explain how to find its inverse.
-        <me>
-\hspace{2em}
-D = \left[\begin{array}{cccc}
--1 &amp; 1 &amp; 0 &amp; 2 \\
--2 &amp; 5 &amp; 5 &amp; -4 \\
-2 &amp; -3 &amp; -2 &amp; 0 \\
-4 &amp; -4 &amp; -3 &amp; 5
-\end{array}\right]
-\hspace{2em}
-N = \left[\begin{array}{cccc}
--3 &amp; 9 &amp; 1 &amp; -11 \\
-3 &amp; -9 &amp; -2 &amp; 13 \\
-3 &amp; -9 &amp; -3 &amp; 15 \\
--4 &amp; 12 &amp; 2 &amp; -16
-\end{array}\right]
-\hspace{2em}
-        </me>
-      </p>
-  </statement>
-  <solution>
-      <p> We compute 
-<me>\mathrm{RREF}\left(D\right)=\left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right]</me>.
-We see <m>D</m> is  bijective, and therefore invertible.  To compute the inverse, we solve <m>D\vec{x}=\vec{e}_1</m> by computing
-<me>\mathrm{RREF}\,\left[\begin{array}{cccc|c}
--1 &amp; 1 &amp; 0 &amp; 2 &amp; 1\\
--2 &amp; 5 &amp; 5 &amp; -4 &amp; 0  \\
-2 &amp; -3 &amp; -2 &amp; 0 &amp; 0\\
-4 &amp; -4 &amp; -3 &amp; 5 &amp; 0
-\end{array}\right]=\left[\begin{array}{cccc|c}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; 21 \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 38\\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; -36\\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -8
-\end{array}\right]</me>.
-      </p><p>          
-Similarly, we solve <m>D\vec{x}=\vec{e}_2</m> by computing
-<me>\mathrm{RREF}\,\left[\begin{array}{cccc|c}
--1 &amp; 1 &amp; 0 &amp; 2 &amp; 0\\
--2 &amp; 5 &amp; 5 &amp; -4 &amp; 1  \\
-2 &amp; -3 &amp; -2 &amp; 0 &amp; 0\\
-4 &amp; -4 &amp; -3 &amp; 5 &amp; 0
-\end{array}\right]=\left[\begin{array}{cccc|c}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; 8 \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 14\\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; -13\\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -3
-\end{array}\right]</me>. 
-      </p><p>          
-          Similarly, we solve <m>D\vec{x}=\vec{e}_3</m> by computing
-<me>\mathrm{RREF}\,\left[\begin{array}{cccc|c}
--1 &amp; 1 &amp; 0 &amp; 2 &amp; 0\\
--2 &amp; 5 &amp; 5 &amp; -4 &amp; 0  \\
-2 &amp; -3 &amp; -2 &amp; 0 &amp; 1\\
-4 &amp; -4 &amp; -3 &amp; 5 &amp; 0
-\end{array}\right]=\left[\begin{array}{cccc|c}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; 23 \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 41\\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; -39\\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -9
-\end{array}\right]</me>. 
-      </p><p> Similarly, we solve <m>D\vec{x}=\vec{e}_4</m> by computing
-<me>\mathrm{RREF}\,\left[\begin{array}{cccc|c}
--1 &amp; 1 &amp; 0 &amp; 2 &amp; 0\\
--2 &amp; 5 &amp; 5 &amp; -4 &amp; 0  \\
-2 &amp; -3 &amp; -2 &amp; 0 &amp; 0\\
-4 &amp; -4 &amp; -3 &amp; 5 &amp; 1
-\end{array}\right]=\left[\begin{array}{cccc|c}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -4\\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; 4\\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 1
-\end{array}\right]</me>.
-      </p><p>     
-Combining these, we obtain <me>D^{-1}=\left[\begin{array}{cccc}
-21 &amp; 8 &amp; 23 &amp; -2 \\
-38 &amp; 14 &amp; 41 &amp; -4 \\
--36 &amp; -13 &amp; -39 &amp; 4 \\
--8 &amp; -3 &amp; -9 &amp; 1
-\end{array}\right]</me>.
-</p>
-      <p>We compute
-<me>\mathrm{RREF}\left(N\right)=\left[\begin{array}{cccc}
-1 &amp; -3 &amp; 0 &amp; 3 \\
-0 &amp; 0 &amp; 1 &amp; -2 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right]</me>.
-We see <m>N</m> is not bijective and thus is <em>not</em>  invertible.
-</p>
-  </solution>
+<example xml:id="sample-MX2">
+      <title>MX2</title>
+      <introduction>
+            <p> Consider each of the following matrices. </p>
+      </introduction>
+      <task>
+            <introduction>
+                  <p>
+                        <me>A = \left[\begin{array}{cccc} 1 &amp; 2 &amp; -1 &amp; -4 \\ -2 &amp; -3
+                              &amp; 1 &amp; 5 \\ -2 &amp; -1 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; -1
+                              &amp; -4 \end{array}\right]</me>
+                  </p>
+            </introduction>
+            <task>
+                  <statement>
+                        <p> Explain why this matrix is or is not invertible by discussing its
+                              corresponding linear transformation. </p>
+                  </statement>
+                  <solution>
+                        <p>
+                              <me>\mathrm{RREF}\,\left[\begin{array}{cccc} 1 &amp; 2 &amp; -1 &amp;
+                                    -4 \\ -2 &amp; -3 &amp; 1 &amp; 5 \\ -2 &amp; -1 &amp; 0 &amp; 4
+                                    \\ 0 &amp; 0 &amp; -1 &amp; -4
+                                    \end{array}\right]=\left[\begin{array}{cccc} 1 &amp; 0 &amp; 0
+                                    &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp;
+                                    0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right]</me>
+                        </p>
+                        <p>
+                              <m>A</m> is invertible because its linear transformation is a bijection.
+                        </p>
+                  </solution>
+            </task>
+            <task>
+                  <statement>
+                        <p>
+                              If the matrix is invertible, use technology to find its inverse.
+                        </p>
+                  </statement>
+                  <solution>
+                        <p>Technology shows us that <m>\left[\begin{array}{cccc} -11 &amp; -8 &amp; 2 &amp; 3
+                              \\ 6 &amp; 4 &amp; -1 &amp; -2 \\ 16 &amp; 12 &amp; -4 &amp; -5 \\ -4
+                              &amp; -3 &amp; 1 &amp; 1 \end{array}\right]</m>. </p>
+                  </solution>
+            </task>
+            <task>
+                  <statement>
+                        <p>
+                              If the matrix is invertible, explain how to find its inverse
+                              using techniques that don't require technology. (You may use
+                              technology to perform those techniques, as long as they *could*
+                              be done without using technology.) </p>
+                  </statement>
+                  <solution>
+                        <p>
+                              Since the columns of its inverse are of the form <m>A^{-1}\vec e_i</m>
+                              for each <m>i=1,2,3,4</m>, they may be found by solving <m>A\vec x=\vec e_i</m>
+                              for <m>i=1,2,3,4</m>:
+                              <me>\mathrm{RREF}\,\left[\begin{array}{cccc|c} 1 &amp; 2 &amp; -1 &amp;
+                                    -4 &amp; 1 \\ -2 &amp; -3 &amp; 1 &amp; 5 &amp; 0 \\ -2 &amp; -1 &amp; 0 &amp; 
+                                    4 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; -4 &amp; 0
+                                    \end{array}\right]=\left[\begin{array}{cccc|c} 1 &amp; 0 &amp; 0
+                                    &amp; 0 &amp; -11 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 6 \\ 0 &amp; 0 &amp; 1 &amp;
+                                    0 &amp; 16 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; -4 \end{array}\right]</me>
+                              <me>\mathrm{RREF}\,\left[\begin{array}{cccc|c} 1 &amp; 2 &amp; -1 &amp;
+                                    -4 &amp; 0 \\ -2 &amp; -3 &amp; 1 &amp; 5 &amp; 1 \\ -2 &amp; -1 &amp; 0 &amp; 
+                                    4 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; -4 &amp; 0
+                                    \end{array}\right]=\left[\begin{array}{cccc|c} 1 &amp; 0 &amp; 0
+                                    &amp; 0 &amp; -8 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; 1 &amp;
+                                    0 &amp; 12 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; -3 \end{array}\right]</me>
+                              <me>\mathrm{RREF}\,\left[\begin{array}{cccc|c} 1 &amp; 2 &amp; -1 &amp;
+                                    -4 &amp; 0 \\ -2 &amp; -3 &amp; 1 &amp; 5 &amp; 0 \\ -2 &amp; -1 &amp; 0 &amp; 
+                                    4 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; -4 &amp; 0
+                                    \end{array}\right]=\left[\begin{array}{cccc|c} 1 &amp; 0 &amp; 0
+                                    &amp; 0 &amp; 2 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp;
+                                    0 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \end{array}\right]</me>
+                              <me>\mathrm{RREF}\,\left[\begin{array}{cccc|c} 1 &amp; 2 &amp; -1 &amp;
+                                    -4 &amp; 0 \\ -2 &amp; -3 &amp; 1 &amp; 5 &amp; 0 \\ -2 &amp; -1 &amp; 0 &amp; 
+                                    4 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; -4 &amp; 1
+                                    \end{array}\right]=\left[\begin{array}{cccc|c} 1 &amp; 0 &amp; 0
+                                    &amp; 0 &amp; 3 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; -2 \\ 0 &amp; 0 &amp; 1 &amp;
+                                    0 &amp; -5 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \end{array}\right]</me>
+                        </p>
+                        <p>Therefore its inverse is <m>\left[\begin{array}{cccc} -11 &amp; -8 &amp; 2 &amp; 3
+                              \\ 6 &amp; 4 &amp; -1 &amp; -2 \\ 16 &amp; 12 &amp; -4 &amp; -5 \\ -4
+                              &amp; -3 &amp; 1 &amp; 1 \end{array}\right]</m>. </p>
+                  </solution>
+            </task>
+      </task>
+      <task>
+            <introduction>
+                  <p>
+                        <me>D = \left[\begin{array}{cccc} 1 &amp; 1 &amp; 4 &amp; 9 \\ -1 &amp; -1
+                              &amp; -3 &amp; -6 \\ 1 &amp; 1 &amp; 0 &amp; -3 \\ -1 &amp; -1 &amp;
+                              -2 &amp; -3 \end{array}\right]</me>
+                  </p>
+            </introduction>
+            <task>
+                  <statement>
+                        <p> Explain why this matrix is or is not invertible by discussing its
+                              corresponding linear transformation. </p>
+                  </statement>
+                  <solution>
+                        <p>
+                              <me>\mathrm{RREF}\,\left[\begin{array}{cccc} 1 &amp; 1 &amp; 4 &amp; 9
+                                    \\ -1 &amp; -1 &amp; -3 &amp; -6 \\ 1 &amp; 1 &amp; 0 &amp; -3
+                                    \\ -1 &amp; -1 &amp; -2 &amp; -3
+                                    \end{array}\right]=\left[\begin{array}{cccc} 1 &amp; 1 &amp; 0
+                                    &amp; -3 \\ 0 &amp; 0 &amp; 1 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp;
+                                    0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</me>
+                        </p>
+                        <p>
+                              <m>A</m> is not invertible because its linear transformation is not a bijection.
+                        </p>
+                  </solution>
+            </task>
+            <task>
+                  <statement>
+                        <p>
+                              If the matrix is invertible, use technology to find its inverse.
+                        </p>
+                  </statement>
+                  <solution>
+                        <p> N/A </p>
+                  </solution>
+            </task>
+            <task>
+                  <statement>
+                        <p>
+                              If the matrix is invertible, explain how to find its inverse
+                              using techniques that don't require technology. (You may use
+                              technology to perform those techniques, as long as they *could*
+                              be done without using technology.) </p>
+                  </statement>
+                  <solution>
+                        <p> N/A </p>
+                  </solution>
+            </task>
+      </task>
 </example>
