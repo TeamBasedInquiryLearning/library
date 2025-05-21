@@ -317,7 +317,7 @@ TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detec
 
     <observation>
       <p>Note that while <m>\arcsin(x)</m> and <m>\arccos(x)</m> were defined by restricting the domain
-        to a closed interval, since <m>\tan(x)</m>is not defined at <m>-\dfrac{pi}{2}</m> or <m>\dfrac{pi}{2}</m>,
+        to a closed interval, since <m>\tan(x)</m> is not defined at <m>-\dfrac{\pi}{2}</m> or <m>\dfrac{\pi}{2}</m>,
         we define <m>\arctan(x)</m> by restricting the domain to the open interval <m>\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)</m>.
       </p>
     </observation>
