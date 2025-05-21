@@ -22,5 +22,6 @@ class Generator(BaseGenerator):
             result["system"] = CheckIt.latex_system_from_matrix(m)
         else:
             result["vector_eq"] = TBIL.VectorEquation(m)
+            
         return result
 
