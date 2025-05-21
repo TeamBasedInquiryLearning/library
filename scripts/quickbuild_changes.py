@@ -56,7 +56,8 @@ def main():
         changed_outcomes = set()
         for f in changed_files:
             if Path("source", b, "exercises", "outcomes") in f.parents:
-                changed_outcomes.add(f.parent.name)
+                if f.parent.name not in changed_outcomes:
+                    changed_outcomes.add(f.parent.name)
         # build changed outcomes
         for o in changed_outcomes:
             sandbox_bank_path = preview_outcome.build_preview(b, o)
@@ -64,7 +65,7 @@ def main():
             output_path.mkdir(parents=True)
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
             preview_links.append({
-                "file": f,
+                "file": Path("source", b, "exercises", "outcomes", o),
                 "path": f"/preview/{b}/instructor/exercises/{o}/"
             })
 
