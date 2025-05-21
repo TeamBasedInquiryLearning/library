@@ -99,151 +99,155 @@
         </remark>
 
     <activity xml:id = "activity-limits-numerically2">
+      <statement>
         <table xml:id="table-limit-numerical2">
-        <tabular>
-                <row bottom="minor">
-                  <cell>
-                      <m>x</m>
-                  </cell>
-                  <cell>
-                    <m>1.25</m>
-                  </cell>
-                  <cell>
-                    <m>1.5</m>
-                  </cell>
-                  <cell>
-                    <m>1.75</m>
-                  </cell>
-                  <cell>
-                    <m>2</m>
-                  </cell>
-                  <cell>
-                    <m>2.25</m>
-                  </cell>
-                  <cell>
-                    <m>2.5</m>
-                  </cell>
-                  <cell>
-                    <m>2.75</m>
-                  </cell>
-                </row>
-                <row>
-                  <cell>
-                      <m>f(x)</m>
-                  </cell>
-                  <cell>
-                    <m>-0.7606</m>
-                  </cell>
-                  <cell>
-                    <m>-0.13</m>
-                  </cell>
-                  <cell>
-                    <m>0.4881</m>
-                  </cell>
-                  <cell>
-                   <m>\unknown</m>
-                  </cell>
-                  <cell>
-                    <m> 1.3119</m>
-                  </cell>
-                  <cell>
-                    <m> 1.33</m>
-                  </cell>
-                  <cell>
-                    <m> 0.9606</m>
-                  </cell>
-                </row>
-            </tabular>
+          <tabular>
+            <row bottom="minor">
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell>
+                <m>1.25</m>
+              </cell>
+              <cell>
+                <m>1.5</m>
+              </cell>
+              <cell>
+                <m>1.75</m>
+              </cell>
+              <cell>
+                <m>2</m>
+              </cell>
+              <cell>
+                <m>2.25</m>
+              </cell>
+              <cell>
+                <m>2.5</m>
+              </cell>
+              <cell>
+                <m>2.75</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>f(x)</m>
+              </cell>
+              <cell>
+                <m>-0.7606</m>
+              </cell>
+              <cell>
+                <m>-0.13</m>
+              </cell>
+              <cell>
+                <m>0.4881</m>
+              </cell>
+              <cell>
+                <m>\unknown</m>
+              </cell>
+              <cell>
+                <m> 1.3119</m>
+              </cell>
+              <cell>
+                <m> 1.33</m>
+              </cell>
+              <cell>
+                <m> 0.9606</m>
+              </cell>
+            </row>
+          </tabular>
         </table>
-      <p>
-In <xref ref = "activity-limits-graphically1"/>'s <xref ref="limit_censored" /> we found an approximation to the limit of the function as <m>x</m> tends to 2. 
-Now let us say you are also given a table of numerical values 
-(<xref ref="table-limit-numerical2"/>) for the function. Given this new information which of the choices below best describes the limit of 
-the function as <m>x</m> tends to 2?  
-    </p>
-    <ol marker="A.">
-            <li><p> There is not enough information because we do not know the value of the function at <m>x = 2</m>.</p></li>
-            <li><p> The limit can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <m>x</m> goes to 2. </p></li>
-            <li><p> The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure. </p></li>
-            <li><p> The limit cannot be approximated because the function might not exist at <m>x = 2</m>.</p></li>
+        <p>
+          In <xref ref = "activity-limits-graphically1"/>'s <xref ref="limit_censored" /> we found an approximation to the limit of the function as <m>x</m> tends to 2. 
+          Now let us say you are also given a table of numerical values 
+          (<xref ref="table-limit-numerical2"/>) for the function. Given this new information which of the choices below best describes the limit of 
+          the function as <m>x</m> tends to 2?  
+        </p>
+        <ol marker="A.">
+          <li><p> There is not enough information because we do not know the value of the function at <m>x = 2</m>.</p></li>
+          <li><p> The limit can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <m>x</m> goes to 2. </p></li>
+          <li><p> The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure. </p></li>
+          <li><p> The limit cannot be approximated because the function might not exist at <m>x = 2</m>.</p></li>
         </ol>
-         <answer>
-          <p>
-            C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
-          </p>
-         </answer> 
+      </statement>
+      <answer>
+      <p>
+        C. The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.
+      </p>
+      </answer> 
     </activity>
 
     <activity xml:id = "activity-limits-numerically3">
-    <table xml:id="table-limit-numerical3">
-        <tabular>
+      <statement>
+        <table xml:id="table-limit-numerical3">
+          <tabular>
             <row bottom="minor">
-                  <cell>
-                      <m>x</m>
-                  </cell>
-                  <cell><m>
-                    0.9
-                  </m></cell>
-                  <cell><m>
-                    0.99
-                  </m></cell>
-                  <cell><m>
-                    0.999
-                  </m></cell>
-                  <cell><m>
-                    1
-                  </m></cell>
-                  <cell><m>
-                    1.001
-                  </m></cell>
-                  <cell><m>
-                    1.01
-                  </m></cell>
-                  <cell><m>
-                    1.1
-                  </m></cell>
-                </row>
-                <row>
-                  <cell>
-                      <m>f(x)</m>
-                  </cell>
-                  <cell><m>
-                    -0.4
-                  </m></cell>
-                  <cell><m>
-                    -0.49
-                  </m></cell>
-                  <cell><m>
-                    -0.499
-                  </m></cell>
-                  <cell>
-                    <m>\unknown</m>
-                  </cell>
-                  <cell><m>
-                    0.499
-                  </m></cell>
-                  <cell><m>
-                    0.49
-                  </m></cell>
-                  <cell><m>
-                    0.4
-                  </m></cell>
-                </row>
-        </tabular>
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell><m>
+                0.9
+              </m></cell>
+              <cell><m>
+                0.99
+              </m></cell>
+              <cell><m>
+                0.999
+              </m></cell>
+              <cell><m>
+                1
+              </m></cell>
+              <cell><m>
+                1.001
+              </m></cell>
+              <cell><m>
+                1.01
+              </m></cell>
+              <cell><m>
+                1.1
+              </m></cell>
+            </row>
+            <row>
+              <cell>
+                <m>f(x)</m>
+              </cell>
+              <cell><m>
+                -0.4
+              </m></cell>
+              <cell><m>
+                -0.49
+              </m></cell>
+              <cell><m>
+                -0.499
+              </m></cell>
+              <cell>
+                <m>\unknown</m>
+              </cell>
+              <cell><m>
+                0.499
+              </m></cell>
+              <cell><m>
+                0.49
+              </m></cell>
+              <cell><m>
+                0.4
+              </m></cell>
+            </row>
+          </tabular>
         </table>
-    <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\displaystyle \lim_{x\to 1^-}f(x)</m>, <m>\displaystyle \lim_{x\to 1^+}f(x)</m>, and <m>\displaystyle \lim_{x\to 1}f(x)</m>?
-</p>
+        <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\displaystyle \lim_{x\to 1^-}f(x)</m>, <m>\displaystyle \lim_{x\to 1^+}f(x)</m>, and <m>\displaystyle \lim_{x\to 1}f(x)</m>?
+        </p>
         <ol marker="A.">
-            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
-            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
-            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
-            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+          <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+          <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
+          <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
+          <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
         </ol>
-        <answer>
-          <p>
-            B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
-          </p>
-        </answer>
+      </statement>
+      <answer>
+        <p>
+          B. <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaystyle\lim_{x\rightarrow 1}f(x)</m> does not exist
+        </p>
+      </answer>
     </activity>
 
 
@@ -270,31 +274,33 @@ the function as <m>x</m> tends to 2?
         </task>
 
 <task>  
-<statement>
-        <p> Use the values that you chose in part (a) to calculate an approximation for <m>\displaystyle\lim_{x \to 2}f(x)</m>. </p>
-        </statement>
-        <answer>
-                <p>
-                  41.22, 41.61, 42, 42.39, 42.78
-                </p>
-              </answer>
-        </task>
-<task>
-        <p> Which value best describes the limit that you obtained in part (b)?</p>
-        
-            <ol marker="A.">
-            <li><p> The approximate value is 41.25</p></li>
-            <li><p> The approximate value is 41.5 </p></li>
-            <li><p> The approximate value is 41.75</p></li>
-            <li><p> The approximate value is 42</p></li>
-        </ol>
-        <answer>
-                <p>
-                  D. The approximate value is 42.
-                </p>
-              </answer>
+  <statement>
+    <p> Use the values that you chose in part (a) to calculate an approximation for <m>\displaystyle\lim_{x \to 2}f(x)</m>. </p>
+  </statement>
+  <answer>
+    <p>
+      41.22, 41.61, 42, 42.39, 42.78
+    </p>
+  </answer>
 </task>
-    </activity>
+<task>
+  <statement>
+    <p> Which value best describes the limit that you obtained in part (b)?
+      <ol marker="A.">
+        <li><p> The approximate value is 41.25</p></li>
+        <li><p> The approximate value is 41.5 </p></li>
+        <li><p> The approximate value is 41.75</p></li>
+        <li><p> The approximate value is 42</p></li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      D. The approximate value is 42.
+    </p>
+  </answer>
+</task>
+</activity>
 
 
     <activity xml:id = "activity-limits-numerically5">

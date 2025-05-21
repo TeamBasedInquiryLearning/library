@@ -80,31 +80,46 @@
     </remark>
     
     <activity xml:id="activity-derivative-analytically-algebraic1">
-        <introduction> <p> In this activity you will consider  <m>f(x)=-x^2+4</m> and compute its derivative function <m>f'(x)</m> using the limit definition of the derivative function  <xref ref="def-derivative-function"/>.
+        <introduction> 
+            <p> 
+                In this activity you will consider  
+                <m>f(x)=-x^2+4</m>
+                and compute its derivative function <m>f'(x)</m> using the 
+                limit definition of the derivative function  
+                <xref ref="def-derivative-function"/>.
             </p>
-            </introduction>
-        <task> <p> What expression do you get when you simplify the difference quotient  </p>
-            <me>\frac{f(x+h)-f(x)}{h}= \frac{(-(x+h)^2+4)-(-x^2+4)}{h}?</me>
-              
-            <ol marker="A." >
-                <li><m>\frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}</m></li>
-                  <li><m>\frac{-x^2 - h^2 +4 +x^2 -4}{h} = \frac{-h^2}{h}</m></li>
-                 <li><m>\frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}</m></li>
-                 <li><m>\frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}</m></li>
-            </ol>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    What expression do you get when you simplify the difference quotient
+                    <me>\frac{f(x+h)-f(x)}{h}= \frac{(-(x+h)^2+4)-(-x^2+4)}{h}?</me>
+                <ol marker="A." >
+                    <li><m>\frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}</m></li>
+                      <li><m>\frac{-x^2 - h^2 +4 +x^2 -4}{h} = \frac{-h^2}{h}</m></li>
+                     <li><m>\frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}</m></li>
+                     <li><m>\frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}</m></li>
+                </ol>
+                </p>
+            </statement>
             <answer>
                 <p>
                     C: <m>\dfrac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \dfrac{-2xh - h^2}{h}</m>
                 </p>
             </answer>    
         </task>
-        <task> <p>After taking the limit as <m>h \to 0</m>, which of the following is your result for the derivative function <m>f'(x)</m>? </p>
-            <ol marker="A." cols="2">
-                <li><m>f'(x)=x </m></li>
-                <li><m>f'(x)=-x </m></li>
-                <li><m>f'(x)=2x </m></li>
-                <li><m>f'(x)=-2x </m></li>
-            </ol>
+        <task>
+            <statement>
+                <p>
+                    After taking the limit as <m>h \to 0</m>, which of the following is your result for the derivative function <m>f'(x)</m>?
+                    <ol marker="A." cols="2">
+                        <li><m>f'(x)=x </m></li>
+                        <li><m>f'(x)=-x </m></li>
+                        <li><m>f'(x)=2x </m></li>
+                        <li><m>f'(x)=-2x </m></li>
+                    </ol>
+                </p>
+            </statement>
             <answer>
                 <p>
                     D: <m>f'(x)=-2x </m>
@@ -113,53 +128,70 @@
         </task>
    
     </activity>
-        <activity xml:id="activity-derivative-analytically-algebraic2">
-          <statement>
-            <p>Using the limit definition of the derivative, find <m>f'(x)</m> for <m>f(x)=-x^2+2x-4</m>. Which of the following is an accurate expression for <m>f'(x)</m>? </p>
-           <ol marker="A." cols="2">
-                <li><m>f'(x)=2x +2</m></li>
-                <li><m>f'(x)=-2x </m></li>
-                <li><m>f'(x)=-2x+2 </m></li>
-                <li><m>f'(x)=-2x -2 </m></li>
-            </ol>
+    <activity xml:id="activity-derivative-analytically-algebraic2">
+        <statement>
+            <p>
+                Using the limit definition of the derivative, find 
+                <m>f'(x)</m> for <m>f(x)=-x^2+2x-4</m>. Which of the following is 
+                an accurate expression for <m>f'(x)</m>?
+                <ol marker="A." cols="2">
+                    <li><m>f'(x)=2x +2</m></li>
+                    <li><m>f'(x)=-2x </m></li>
+                    <li><m>f'(x)=-2x+2 </m></li>
+                    <li><m>f'(x)=-2x -2 </m></li>
+                </ol>
+            </p>
         </statement>
     </activity>
-          <activity xml:id="activity-derivative-analytically-algebraic3">
-          <introduction>
+    <activity xml:id="activity-derivative-analytically-algebraic3">
+        <introduction>
             <p>
-                Using the limit definition of the derivative, you want to find <m>f'(x)</m> for <m>f(x)=\frac{1}{x}</m>. We will do this by first simplifying the difference quotient and then taking the limit as <m>h\to 0</m>.   
+                Using the limit definition of the derivative, you want to 
+                find <m>f'(x)</m> for <m>f(x)=\frac{1}{x}</m>. We will do this by
+                first simplifying the difference quotient and then taking the 
+                limit as <m>h\to 0</m>.   
             </p>   
-          </introduction>
-            <task> <p> What expression do you get when you simplify the difference quotient  
-            </p>
-                <me>\frac{f(x+h)-f(x)}{h}= \frac{\frac{1}{x+h}-\frac{1}{x}}{h}?</me>
-                <ol marker="A." >
-                    <li><m>\frac{\frac{1}{x+h}}{h} = \frac{1}{(x+h)h}</m></li>
-                    <li><m>\frac{\frac{h}{x+h}}{h} = \frac{h}{h(x+h)}</m></li>
-                    <li><m>\frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h}{h(x+h)x}</m></li>
-                    <li><m>\frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h^2}{(x+h)x}</m></li>
-                    <li><m>\frac{\frac{h}{(x+h)x}}{h} = \frac{h}{h(x+h)x}</m></li>
-                </ol>
-                <answer>
-                    <p>
-                        C: <m>\dfrac{\frac{x-(x+h)}{(x+h)x}}{h} = \dfrac{-h}{h(x+h)x}</m>
-                    </p>
-                </answer>
-            </task>
-            <task> <p>After taking the limit as <m>h \to 0</m>, which of the following is your result for the derivative function <m>f'(x)</m>? </p>
-                <ol marker="A." cols="2">
-                    <li><m>f'(x)=0 </m></li>
-                    <li><m>f'(x)=1/x </m></li>
-                    <li><m>f'(x)=-1/x </m></li>
-                    <li><m>f'(x)=1/x^2 </m></li>
-                    <li><m>f'(x)=-1/x^2 </m></li>
-                </ol>
-                <answer>
-                    <p>
-                        E: <m>f'(x)=-1/x^2 </m>
-                    </p>
-                </answer>
-            </task>
+        </introduction>
+        <task> 
+            <statement>
+                <p>
+                    What expression do you get when you simplify the difference quotient
+                    <me>\frac{f(x+h)-f(x)}{h}= \frac{\frac{1}{x+h}-\frac{1}{x}}{h}</me>?
+                    <ol marker="A.">
+                        <li><m>\frac{\frac{1}{x+h}}{h} = \frac{1}{(x+h)h}</m></li>
+                        <li><m>\frac{\frac{h}{x+h}}{h} = \frac{h}{h(x+h)}</m></li>
+                        <li><m>\frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h}{h(x+h)x}</m></li>
+                        <li><m>\frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h^2}{(x+h)x}</m></li>
+                        <li><m>\frac{\frac{h}{(x+h)x}}{h} = \frac{h}{h(x+h)x}</m></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    C: <m>\dfrac{\frac{x-(x+h)}{(x+h)x}}{h} = \dfrac{-h}{h(x+h)x}</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    After taking the limit as <m>h \to 0</m>, which of the following
+                    is your result for the derivative function <m>f'(x)</m>?
+                    <ol marker="A." cols="2">
+                        <li><m>f'(x)=0 </m></li>
+                        <li><m>f'(x)=1/x </m></li>
+                        <li><m>f'(x)=-1/x </m></li>
+                        <li><m>f'(x)=1/x^2 </m></li>
+                        <li><m>f'(x)=-1/x^2 </m></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    E: <m>f'(x)=-1/x^2 </m>
+                </p>
+            </answer>
+        </task>
     </activity>  
 
 <activity xml:id="activity-df2-checkit">
@@ -243,15 +275,17 @@ The second derivative is the derivative of the derivative. It encodes informatio
                 </p>   
             </introduction>
                  <task> 
-                    <p> 
-                        Using the limit definition of the derivative at a point, compute the difference quotient on the interval <m>[1,1+h]</m> and then take the limit as <m>h\to 0</m>. What do you get? 
-                    </p> 
-                    <ol marker="A." cols="2">
-                        <li><p> <m>-1</m> </p></li>
-                        <li><p> 1 </p></li>  
-                        <li><p> 2 </p></li>  
-                        <li><p> <m>-2</m> </p></li>    
-                    </ol> 
+                    <statement>
+                        <p>
+                            Using the limit definition of the derivative at a point, compute the difference quotient on the interval <m>[1,1+h]</m> and then take the limit as <m>h\to 0</m>. What do you get?
+                            <ol marker="A." cols="2">
+                                <li><p> <m>-1</m> </p></li>
+                                <li><p> 1 </p></li>
+                                <li><p> 2 </p></li>
+                                <li><p> <m>-2</m> </p></li>
+                            </ol>
+                        </p>
+                    </statement>
                     <answer>
                         <p>
                             D: <m>-2</m>
@@ -259,15 +293,17 @@ The second derivative is the derivative of the derivative. It encodes informatio
                     </answer>         
                 </task>
                 <task> 
-                    <p> 
-                        Now, using the limit definition of the derivative function, find <m>f'(x)</m>. Which of the following is your result for the derivative function <m>f'(x)</m>? 
-                    </p>
-                    <ol marker="A." cols="2">
-                        <li><m>f'(x)=-1/x^3 </m></li>
-                        <li><m>f'(x)=1/x^3 </m></li>
-                        <li><m>f'(x)=-2/x^3 </m></li>
-                        <li><m>f'(x)=2/x^3 </m></li>
-                    </ol>
+                    <statement>
+                        <p>
+                            Now, using the limit definition of the derivative function, find <m>f'(x)</m>. Which of the following is your result for the derivative function <m>f'(x)</m>?
+                            <ol marker="A." cols="2">
+                                <li><m>f'(x)=-1/x^3 </m></li>
+                                <li><m>f'(x)=1/x^3 </m></li>
+                                <li><m>f'(x)=-2/x^3 </m></li>
+                                <li><m>f'(x)=2/x^3 </m></li>
+                            </ol>
+                        </p>
+                    </statement>
                     <answer>
                         <p>
                             C: <m>f'(x)=-2/x^3 </m>
@@ -275,59 +311,94 @@ The second derivative is the derivative of the derivative. It encodes informatio
                     </answer>
                 </task>
                 <task> 
-                    <p> 
-                        Make sure that your answers match! So if you plug in <m>x=1</m> in <m>f'(x)</m>, you should get the same number you got when you computed <m>f'(1)</m>. 
-                    </p> 
-                </task>
-      </activity>  
-    
-    
-       <activity xml:id = "DF2-activity-ball2">
-              <introduction> 
-                <p>  In this activity you will study (again!) the velocity of a ball falling under gravity. A ball is tossed vertically in the air from a window. The height of the ball (in feet) is given by the formula
-<m> f(t) = 64-16(t-1)^2</m>, where <m>t</m> is the seconds after the ball is launched. Recall that in <xref ref="activity-ball1"/>, you used numerical methods to approximate the instantaneous velocity of <m>f(t)</m> to calculate <m>v(2)</m>! </p> </introduction>  
-                    <task> 
-                        <p> 
-                            Using the limit definition of the derivative function, find the velocity function <m>v(t)=f'(t)</m>. 
+                    <statement>
+                        <p>
+                            Make sure that your answers match! So if you plug in <m>x=1</m> in <m>f'(x)</m>, you should get the same number you got when you computed <m>f'(1)</m>.
                         </p>
-                        <answer>
-                            <p>
-                                <m>v'(t) = -32t</m>
-                            </p>
-                        </answer>
-                    </task>
-                    <task> 
-                        <p> 
-                            Using the velocity function <m>v(t)</m>, what is <m>v'(1)</m>, the instantaneous velocity at <m>t=1</m>? 
-                        </p>   
+                    </statement>
+                </task>
+      </activity>
+
+        <activity xml:id="DF2-activity-ball2">
+            <introduction>
+                <p> In this activity you will study (again!) the velocity of a ball falling under
+                    gravity. A ball is tossed vertically in the air from a window. The height of the
+                    ball (in feet) is given by the formula <m> f(t) = 64-16(t-1)^2</m>, where <m>t</m>
+                    is the seconds after the ball is launched. Recall that in <xref
+                        ref="activity-ball1" />, you used numerical methods to approximate the
+                    instantaneous velocity of <m>f(t)</m> to calculate <m>v(2)</m>! </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p> Using the limit definition of the derivative function, find the velocity
+                        function <m>v(t)=f'(t)</m>. </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>v'(t) = -32t</m>
+                    </p>
+                </answer>
+            </task>
+            <task>
+                <statement>
+                    <p> Using the velocity function <m>v(t)</m>, what is <m>v'(1)</m>, the instantaneous
+                        velocity at <m>t=1</m>?
                         <ol marker="A." cols="2">
-                            <li><p>-32 feet per second </p></li>
-                            <li><p>32 feet per second </p></li>
-                            <li><p>0 feet per second </p></li>
-                            <li><p>-16 feet per second </p></li>
-                            <li><p>16 feet per second </p></li>
+                            <li>
+                                <p>-32 feet per second </p>
+                            </li>
+                            <li>
+                                <p>32 feet per second </p>
+                            </li>
+                            <li>
+                                <p>0 feet per second </p>
+                            </li>
+                            <li>
+                                <p>-16 feet per second </p>
+                            </li>
+                            <li>
+                                <p>16 feet per second </p>
+                            </li>
                         </ol>
-                        <answer>
-                            <p>
-                                A: -32 feet per second
-                            </p>
-                        </answer>
-                    </task>  
-       <task> <p> What behavior would explain your finding? </p>   
-            <ol marker="A." cols="2">
-                <li><p> After 1 second the ball is falling at a speed of 32 feet per second. </p></li>
-                 <li><p> After 1 second the ball is moving upwards at a speed of 32 feet per second. </p></li>
-                <li><p> After 1 second the ball reaches its highest point and it stops for an instant. </p></li>
-                  <li><p> After 1 second the ball is falling at a speed of 16 feet per second. </p></li>
-                 <li><p> After 1 second the ball is moving upwards at a speed of 16 feet per second. </p></li>
-            </ol>
-            <answer>
-                <p>
-                    A: After 1 second the ball is falling at a speed of 32 feet per second.
-                </p>
-            </answer>
-  </task>              
-    </activity>
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        A: -32 feet per second
+                    </p>
+                </answer>
+            </task>
+            <task>
+                <statement>
+                    <p> What behavior would explain your finding? </p>
+                </statement>
+                <ol marker="A." cols="2">
+                    <li>
+                        <p> After 1 second the ball is falling at a speed of 32 feet per second. </p>
+                    </li>
+                    <li>
+                        <p> After 1 second the ball is moving upwards at a speed of 32 feet per
+                            second. </p>
+                    </li>
+                    <li>
+                        <p> After 1 second the ball reaches its highest point and it stops for an
+                            instant. </p>
+                    </li>
+                    <li>
+                        <p> After 1 second the ball is falling at a speed of 16 feet per second. </p>
+                    </li>
+                    <li>
+                        <p> After 1 second the ball is moving upwards at a speed of 16 feet per
+                            second. </p>
+                    </li>
+                </ol>
+                <answer>
+                    <p>
+                        A: After 1 second the ball is falling at a speed of 32 feet per second.
+                    </p>
+                </answer>
+            </task>
+        </activity>
 
     
  <observation xml:id="continuity-differentiability"> <p>A function can only be differentiable at <m>x=a</m> if it is also continuous at <m>x=a</m>. But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point! </p> </observation>
@@ -337,15 +408,17 @@ The second derivative is the derivative of the derivative. It encodes informatio
         <p>
          In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.  </p> </introduction>
      <task>
-            <p>
-              Consider the following continuous function </p><me>
-                g(x) = \begin{cases}
-                  x + 2 \amp x \leq 2 \\
-                  x^2   \amp x \gt  2
-                \end{cases}
-              </me>
-         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>. 
-            </p>
+            <statement>
+                <p>
+                  Consider the following continuous function </p><me>
+                    g(x) = \begin{cases}
+                      x + 2 \amp x \leq 2 \
+                      x^2   \amp x \gt  2
+                    \end{cases}
+                  </me>
+                         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>.
+                </p>
+            </statement>
             <answer>
                 <p>
                     On the left-hand side, we have 
@@ -361,36 +434,57 @@ The second derivative is the derivative of the derivative. It encodes informatio
             </answer>
             </task>
           <task>
-            <p>
-              Consider the following discontinuous function </p><me>
-                g(x) = \begin{cases}
-                  x + 2 \amp x \leq 2 \\
-                  x   \amp x \gt  2
-                \end{cases}
-              </me>
-         <p> On both sides of <m>x=2</m> it seems that the slope is the same, but this function is still not differentiable at <m>x=2</m>. Notice that <m>g(2)=4</m>. When <m> h \gt 0 </m>, the interval <m>[2,2+h]</m> falls under the second definition of <m>g(x)</m>, but <m>g(2)</m> is always fixed at 4. Compute the difference quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that <m>h \gt 0 </m> and notice that this does not simplify as expected! Moreover, if you take the limit as <m>h\to 0</m>, you will get infinity and not the expected slope of 1! 
-            </p>
+            <statement>
+                <p>
+                    Consider the following discontinuous function:
+                    <me>
+                        g(x) = \begin{cases}
+                        x + 2 \amp x \leq 2 \
+                        x   \amp x \gt  2
+                        \end{cases}
+                    </me>
+                    On both sides of <m>x=2</m> it seems that the slope is the
+                    same, but this function is still not differentiable at <m>x=2</m>.
+                    Notice that <m>g(2)=4</m>. When <m> h \gt 0 </m>, the interval
+                    <m>[2,2+h]</m> falls under the second definition of <m>g(x)</m>,
+                    but <m>g(2)</m> is always fixed at 4. Compute the difference
+                    quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that
+                    <m>h \gt 0 </m> and notice that this does not simplify as expected!
+                    Moreover, if you take the limit as <m>h\to 0</m>, you will get
+                    infinity and not the expected slope of 1!
+                </p>
+            </statement>
             <answer>
                 <p>
                     <m>\dfrac{g(2+h)-g(2)}{h} = \dfrac{2+h-4}{h} = \dfrac{h-2}{h}= 1-\dfrac{2}{h}</m>
                 </p>
             </answer>
             </task>
-         <task>
-            <p>
-              Consider the following function </p><me>
-                g(x) = \begin{cases}
-                  ax + 2 \amp x \leq 2 \\
-                  bx^2   \amp x \gt  2
-                \end{cases}
-              </me>
-         <p> where <m>a,b</m> are some nonzero parameters you will find. Find an equation in <m>a,b</m> that needs to be true if we want the function to be continuous at <m>x=2</m>. Also, find an equation in <m>a,b</m> that needs to be true if we want the function to be differentiable at <m>x=2</m>. Solve the system of two linear equations... you should find that <m>a=-2</m> and <m>b=-1/2</m> are the only values that make the function differentiable (and continuous!).
-            </p>
-            <answer>
-                <p>
-                    <me>\begin{cases}a \amp = 4b \\ 2a + 2 \amp = 4b\end{cases}</me>
-                </p>
-            </answer>
+            <task>
+                <statement>
+                    <p>
+                        Consider the following function
+                        <me>
+                            g(x) = \begin{cases}
+                            ax + 2 \amp x \leq 2 \
+                            bx^2   \amp x \gt  2
+                            \end{cases}
+                        </me>
+                        where <m>a,b</m> are some nonzero parameters you will find.
+                        Find an equation in <m>a,b</m> that needs to be true if we
+                        want the function to be continuous at <m>x=2</m>. Also, find
+                        an equation in <m>a,b</m> that needs to be true if we want
+                        the function to be differentiable at <m>x=2</m>. Solve the
+                        system of two linear equations... you should find that
+                        <m>a=-2</m> and <m>b=-1/2</m> are the only values that make
+                        the function differentiable (and continuous!).
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <me>\begin{cases}a \amp = 4b \\ 2a + 2 \amp = 4b\end{cases}</me>
+                    </p>
+                </answer>
             </task>
     </activity>
 

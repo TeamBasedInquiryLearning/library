@@ -284,9 +284,11 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
         </p></introduction>
         
                 <task>
-                    <p>
-<me>g(x) = 2 \, \cos\left(x\right) - 3 \, e^x</me>
-                    </p>
+                    <statement>
+                        <p>
+                        <me>g(x) = 2 \, \cos\left(x\right) - 3 \, e^x</me>
+                        </p>
+                    </statement>
                     <answer>
                         <p>
                             <m>-2\sin(x) -3e^x</m>
@@ -294,9 +296,11 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
                     </answer>
                 </task>
                 <task>
-                    <p>
-<me>h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}</me>
-                    </p>
+                    <statement>
+                        <p>
+                        <me>h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}</me>
+                        </p>
+                    </statement>
                     <answer>
                         <p>
                             <m>\dfrac{7}{5}w^{2/5} -30w^{-6}=\dfrac{7\sqrt[5]{w^2}}{5}-\dfrac{30}{w^6}</m>
@@ -304,9 +308,11 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
                     </answer>
                 </task>
                 <task>
-                    <p>
-<me>f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8</me>
-                    </p>
+                    <statement>
+                        <p>
+                        <me>f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8</me>
+                        </p>
+                    </statement>
                     <answer>
                         <p>
                             <m>-20t^4 + 15t^2 + 1</m>
@@ -334,59 +340,95 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
         </ol>
     </answer>-->
 </activity>
-    
-      <activity xml:id="der-exp-context">
-<p>
-  Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m> minutes after forgetting it on a bench outside, is given by the function
-    <me>f(t) = 40 \, (0.5)^t + 50</me>
-    Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your result in the context of this problem. </p>
-    <answer>
-        <p>
-            <m>f(1) = 70</m>. This means that: 1 minute after forgetting a cup of coffee on the bench outside, the temperature of the cup of coffee is given by 70 degrees Fahrenheit.
-        </p>
-        <p>
-            <m>f'(1) = 20\ln(0.5)\approx -13.86</m>. This means that: 1 minute after forgetting a cup of coffee on the bench outside, the temperature of the cup of coffee is decreasing by 13.86 degrees Fahrenheit per minute.
-        </p>
-    </answer>
-</activity>
-    
-   
-    <activity xml:id="polynomials-tangent-slope"><introduction><p>In this activity you will use our first derivative rules to study the slope of tangent lines. </p></introduction>
-        <task><p> The graph of <m>y=x^3-9x^2-16x+1</m> has a slope of 5 at two points.  Find the coordinates of these points. </p>
-        <answer>
-            <p>
-                The <m>x-</m>coordinates are <m>x=-1, x=7</m>; so, the coordinates are <m>(-1,7)</m> and <m>(7,-209)</m>.
-            </p>
-        </answer>
-        </task>
-<task><p>        
-Find the equations of the two lines tangent to the parabola <m>y=(x-2)^2</m> which pass through the origin. You will want to think about slope in two ways: as the derivative at <m>x=a</m> and the rise over the run in a linear function through the origin and the point <m>(a, f(a))</m>. Use a graph to check your work and sketch the tangent lines on your graph.
-    </p>
-    <answer>
-        <p>
-            <m>y = 0</m> and <m>y = -8x</m>
-        </p>
-    </answer>
-    </task>
-    </activity>
-    
-   
-    <activity xml:id="approx-shape-der">
-<p>
-Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial
-<m> q(x) = ax^2 +bx +c </m> that best approximates the graph of <m>f(x)=e^x</m> at <m>x=0</m>. This means choosing <m>a,b,c</m> such that </p>
-<ul>
-    <li><m>q(0) = f(0)</m></li>
-    <li><m>q'(0) = f'(0)</m></li>
-    <li><m>q''(0) = f''(0)</m></li>
-    </ul> 
-  <p>Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m> at zero will involve some parameters. You can solve for these parameters using the equations above.</p>
-        <answer>
-            <p>
-                <m>a = \dfrac{1}{2}</m>, <m>b = c = 1</m>
-            </p>
-        </answer>
-      </activity>
+
+        <activity xml:id="der-exp-context">
+            <statement>
+                <p>
+                    Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m>
+                    minutes after forgetting it on a bench outside, is given by the function <me>f(t) =
+                    40 \, (0.5)^t + 50</me> Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your
+                    result in the context of this problem.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>f(1) = 70</m>. This means that: 1 minute after forgetting a cup of coffee on
+                    the bench outside, the temperature of the cup of coffee is given by 70 degrees
+                    Fahrenheit.
+                </p>
+                <p>
+                    <m>f'(1) = 20\ln(0.5)\approx -13.86</m>. This means that: 1 minute after
+                    forgetting a cup of coffee on the bench outside, the temperature of the cup of
+                    coffee is decreasing by 13.86 degrees Fahrenheit per minute.
+                </p>
+            </answer>
+        </activity>
+
+
+        <activity xml:id="polynomials-tangent-slope">
+            <introduction>
+                <p>In this activity you will use our first derivative rules to study the slope of
+                    tangent lines. </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p> The graph of <m>y=x^3-9x^2-16x+1</m> has a slope of 5 at two points. Find
+                        the coordinates of these points. </p>
+                </statement>
+                <answer>
+                    <p> The <m>x-</m>coordinates are <m>x=-1, x=7</m>; so, the coordinates are <m>
+                        (-1,7)</m> and <m>(7,-209)</m>. </p>
+                </answer>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Find the equations of the two lines tangent to the parabola <m>y=(x-2)^2</m>
+                        which pass through the origin. You will want to think about slope in two ways:
+                        as the derivative at <m>x=a</m> and the rise over the run in a linear function
+                        through the origin and the point <m>(a, f(a))</m>. Use a graph to check your
+                        work and sketch the tangent lines on your graph.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>y = 0</m> and <m>y = -8x</m>
+                    </p>
+                </answer>
+            </task>
+        </activity>
+
+
+        <activity xml:id="approx-shape-der">
+            <statement>
+                <p>
+                    Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial <m> q(x)
+                    = ax^2 +bx +c </m> that best approximates the graph of <m>f(x)=e^x</m> at <m>x=0</m>.
+                    This means choosing <m>a,b,c</m> such that
+                    <ul>
+                        <li>
+                            <m>q(0) = f(0)</m>
+                        </li>
+                        <li>
+                            <m>q'(0) = f'(0)</m>
+                        </li>
+                        <li>
+                            <m>q''(0) = f''(0)</m>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m>
+                    at zero will involve some parameters. You can solve for these parameters using the
+                    equations above.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>a = \dfrac{1}{2}</m>, <m>b = c = 1</m>
+                </p>
+            </answer>
+        </activity>
          
 
     </subsection>

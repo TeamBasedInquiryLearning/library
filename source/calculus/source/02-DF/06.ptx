@@ -12,44 +12,56 @@
   <subsection>
     <title>Activities</title>
 
- <activity xml:id="activity-df-strat-intro">
- <introduction>
-  <p> Consider the functions defined below: </p>
+    <activity xml:id="activity-df-strat-intro">
+      <introduction>
+        <p> Consider the functions defined below: </p>
 
         <me>f(x)=\sin((x^2+3x)\cos(2x))</me>
-      <me>g(x)=\sin(x^2+3x)\cos(2x)</me>
-</introduction> 
-   <task><p>
-      What do you notice that is similar about these two functions?
-        </p>
-        <answer>
+        <me>g(x)=\sin(x^2+3x)\cos(2x)</me>
+      </introduction>
+      <task>
+        <statement>
           <p>
-            Both functions require the chain rule to find their derivatives, and both involve <m>\sin x</m>, <m>x^2+3x</m>, <m>\cos x</m>, and <m>2x</m>
+            What do you notice that is similar about these two functions?
+          </p>
+        </statement>
+        <answer>
+          <p> Both functions require the chain rule to find their derivatives, and both involve <m>\sin
+            x</m>, <m>x^2+3x</m>, <m>\cos x</m>, and <m>2x</m>
           </p>
         </answer>
-        </task>
-   <task><p>
-      What do you notice that is different about these two functions?
-        </p>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What do you notice that is different about these two functions?
+          </p>
+        </statement>
         <answer>
           <p>
-            <m>f(x)</m> has one outer function, <m>\sin x</m>, and two inner functions, <m>x^2+3x</m> and <m>\cos(2x)</m>; <m>g(x)</m> has two outside functions, <m>\sin x</m> and <m>\cos 2x</m>, with <m>x^2+3x</m> being an inside function for <m>\sin x</m>
+            <m>f(x)</m> has one outer function, <m>\sin x</m>, and two inner functions, <m>x^2+3x</m>
+            and <m>\cos(2x)</m>; <m>g(x)</m> has two outside functions, <m>\sin x</m> and <m>\cos 2x</m>,
+            with <m>x^2+3x</m> being an inside function for <m>\sin x</m>
           </p>
         </answer>
-        </task>
-   <task><p>
-    Imagine that you are sorting functions into different categories based on how you would differentiate them. In what category (or categories) might these functions fall?
-        </p>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Imagine that you are sorting functions into different categories based on how you would
+            differentiate them. In what category (or categories) might these functions fall?
+          </p>
+        </statement>
         <answer>
           <p>
-            <m>f(x)</m> requires the chain rule then the product rule, while <m>g(x)</m> requires the product rule then chain rule.
-          </p>
+            <m>f(x)</m> requires the chain rule then the product rule, while <m>g(x)</m> requires
+            the product rule then chain rule. </p>
         </answer>
-        </task>     
-</activity>   
+      </task>
+    </activity>   
     
     <remark  xml:id="rmk-df-combining-rules">
-    <!-- 
+      <!-- 
         <p> We have learned a lot of rules to help us take derivatives of functions. These rules depend on the algebraic structure of the function and often we see that algebraic structures come up in the names of the rules (e.g., sum/difference, power, product, quotient, ...). To take a derivative, we need to examine how the function is built and then proceed accordingly. Up until now we have not seen many situations where these rules were mixed together. Now we turn our attention to those types of situations. </p>
 -->
 <p> To take a derivative, we need to examine how the function is built and then proceed accordingly. Below are some questions you might ask yourself as you take the derivative of a function, especially one where multiple rules might need to be used:
@@ -64,265 +76,338 @@
      </p>   
         
     </remark>
-    
- 
 
- <activity xml:id="activity-df-strat1">
- <introduction>
-  <p> Consider the function <m>f(x)=x^3\sqrt{3-8x^2}</m>.</p>
-   
-</introduction> 
-   <task><p>
-       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+
+    <activity xml:id="activity-df-strat1">
+      <introduction>
+        <p> Consider the function <m>f(x)=x^3\sqrt{3-8x^2}</m>.</p>
+
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to
+            be applied first? In other words, what is the big picture here?
+            <ol marker="A." cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             C
           </p>
         </answer>
-        </task>
- 
-        <task><p>
-         What other rules would be needed along the way? Select all that apply.
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What other rules would be needed along the way? Select all that apply.
+            <ol marker="A."
+              cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             A, B, E
           </p>
         </answer>
-        </task>
-     
-     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p>
-     <answer>
-      <p>
-        Use the product rule on the functions <m>x^3</m> and <m>\sqrt{3-8x^2}</m>; the derivative of <m>x^3</m> requires the power rule, while <m>\sqrt{3-8x^2}</m> requires the chain rule, power rule, and sum/difference rules. 
-      </p>
-     </answer>
-     </task>
+      </task>
 
-    
-</activity>
-    
- <activity xml:id="activity-df-strat2">
- <introduction>
-  <p> Consider the function <m>f(x)= \left(\dfrac{\ln x}{(3x-4)^3} \right)^5</m>.</p>
-   
-</introduction> 
-   <task><p>
-       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      <task>
+        <statement>
+          <p>
+            Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p> Use the product rule on the functions <m>x^3</m> and <m>\sqrt{3-8x^2}</m>; the
+            derivative of <m>x^3</m> requires the power rule, while <m>\sqrt{3-8x^2}</m> requires
+            the chain rule, power rule, and sum/difference rules. </p>
+        </answer>
+      </task>
+
+
+    </activity>
+
+    <activity xml:id="activity-df-strat2">
+      <introduction>
+        <p> Consider the function <m>f(x)= \left(\dfrac{\ln x}{(3x-4)^3} \right)^5</m>.</p>
+
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to
+            be applied first? In other words, what is the big picture here?
+            <ol marker="A." cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             B
           </p>
         </answer>
-        </task>
- 
-        <task><p>
-         What other rules would be needed along the way? Select all that apply.
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What other rules would be needed along the way? Select all that apply.
+            <ol marker="A."
+              cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             A,B,D,E
           </p>
         </answer>
-        </task>
-     
-     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p>
-     <answer>
-      <p>
-        First use the power rule for the derivative of the outside function. Then, we need to use the quotient rule for the inside function, which will require use of the chain rule for the derivative of the bottom function (as well as the power rule and sum/difference rule)
-      </p>
-     </answer>
-     </task>
+      </task>
 
-    
-</activity>
-    
- <activity xml:id="activity-df-strat3">
- <introduction>
-  <p> Consider the function <m>f(x)= \sin(\cos(\tan(2x^3-1)))</m>.</p>
-   
-</introduction> 
-   <task><p>
-       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      <task>
+        <statement>
+          <p>
+            Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            First use the power rule for the derivative of the outside function. Then, we need to
+            use the quotient rule for the inside function, which will require use of the chain rule
+            for the derivative of the bottom function (as well as the power rule and sum/difference
+            rule)
+          </p>
+        </answer>
+      </task>
+
+
+    </activity>
+
+    <activity xml:id="activity-df-strat3">
+      <introduction>
+        <p> Consider the function <m>f(x)= \sin(\cos(\tan(2x^3-1)))</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to
+            be applied first? In other words, what is the big picture here?
+            <ol marker="A." cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             A
           </p>
         </answer>
-        </task>
- 
-        <task><p>
-         What other rules would be needed along the way? Select all that apply.
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      </task>
+
+      <task>
+        <statement>
+          <p> What other rules would be needed along the way? Select all that apply. <ol marker="A."
+              cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             A, B, E
           </p>
         </answer>
-        </task>
-     
-     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p>
-     <answer>
-      <p>
-        We would need to use the chain rule three times, then use the power rule and sum/difference rules for the derivative of the innermost function.
-      </p>
-     </answer>
-     </task>
+      </task>
 
-</activity>    
-    
- <activity xml:id="activity-df-strat4">
- <introduction>
-  <p> Consider the function <m>f(x)= \dfrac{x^2 e^x}{2x^3-5x+\sqrt{x}}</m>.</p>
-   
-</introduction> 
-   <task><p>
-       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      <task>
+        <statement>
+          <p>
+            Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            We would need to use the chain rule three times, then use the power rule and
+            sum/difference rules for the derivative of the innermost function.
+          </p>
+        </answer>
+      </task>
+
+    </activity>
+
+    <activity xml:id="activity-df-strat4">
+      <introduction>
+        <p> Consider the function <m>f(x)= \dfrac{x^2 e^x}{2x^3-5x+\sqrt{x}}</m>.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to
+            be applied first? In other words, what is the big picture here?
+            <ol marker="A." cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             D
           </p>
         </answer>
-        </task>
- 
-        <task><p>
-         What other rules would be needed along the way? Select all that apply.
-       <ol marker="A." cols="2">
-           <li>Chain rule</li>
-           <li>Power rule</li>
-           <li>Product rule</li>
-           <li>Quotient rule</li>
-           <li>Sum/difference rule</li>
+      </task>
+
+      <task>
+        <statement>
+          <p> What other rules would be needed along the way? Select all that apply.
+            <ol marker="A."
+              cols="2">
+              <li>Chain rule</li>
+              <li>Power rule</li>
+              <li>Product rule</li>
+              <li>Quotient rule</li>
+              <li>Sum/difference rule</li>
             </ol>
-        </p>
+          </p>
+        </statement>
         <answer>
           <p>
             B, C, E
           </p>
         </answer>
-        </task>
-     
-     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p>
-     <answer>
-      <p>
-        First we would use the quotient rule; for the derivative of the top function, we need the power rule and product rules. For the derivative of the bottom, we would need the power rule and the sum/difference rules.
-      </p>
-     </answer>
-     </task>
+      </task>
 
-    
-</activity>
-    
- <activity xml:id="activity-df-strat-fluency">
- <introduction>
-  <p> Find the derivative of the following functions. For each, include an explanation of the steps involved that references the algebraic structure of the function.</p>
-   
-</introduction> 
-   <task> <m> f(x) = e^{5x}(x^2+7^x)^3</m>
-   <answer>
-    <p>
-      <m>f'(x) = 5e^{5x}(x^2+7^x)^3 + 3e^{5x}(x^2+7^x)^2(2x + (\ln 7)7^x)</m>
-    </p>
-    <p>
-      First note the product rule structure; this gives the first term. For the second term, we need the chain rule for the derivative of <m>(x^2+7^x)^3</m>.
-    </p>
-   </answer>
-   </task>        
-   <task> <m> f(x) = \left( \dfrac{3x + 1}{2x^{6} - 1} \right)^{ 5 } </m>
-   <answer>
-    <p>
-      <m>f'(x) = 5\left(\dfrac{3x+1}{2x^6-1}\right)^4\left(\dfrac{(2x^6-1)(3)-(3x+1)(12x^5)}{(2x^6-1)^2}\right)</m>
-    </p>
-    <p>
-      The outermost function is a power function, so we write the power rule derivative before the chain rule piece. Since the inner function is a fraction, its derivative has a quotient rule structure.
-    </p>
-   </answer>
-   </task>
-   <task> <m> f(x) = \sqrt{\cos\left(2 \, x^{2} + x\right)}</m>
-   <answer>
-    <p>
-      <m>f'(x) = \dfrac{1}{2}(\cos(2x^2+x))^{-1/2}(-\sin(2x^2+x))(4x+1)</m>
-    </p>
-    <p>
-      We have a composition of three functions, so we have the power rule first for the derivative of the root term. Then, we apply the chain rule to <m>\cos(2x^2+x)</m>.
-    </p>
-   </answer>
-   </task>    
-   <task> <m> f(x) = \tan(xe^x)</m>
-   <answer>
-    <p>
-      <m>f'(x) = \sec^2(xe^x)(e^x+xe^x)</m>
-    </p>
-    <p>
-      We first apply the chain rule, then use the product rule for the derivative of the inside term.
-    </p>
-   </answer>
-   </task>       
+      <task>
+        <statement>
+          <p>
+            Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            First we would use the quotient rule; for the derivative of the top function, we need
+            the power rule and product rules. For the derivative of the bottom, we would need the
+            power rule and the sum/difference rules.
+          </p>
+        </answer>
+      </task>
 
-    
-</activity>
 
-<activity xml:id="activity-df-strat-checkit">
-    <introduction>
-      <p>
-Demonstrate and explain how to find the derivative of the following functions.
-Be sure to explicitly denote which derivative rules (constant multiple, sum/difference, etc.) 
-you are using in your work.
-      </p>
-    </introduction>
+    </activity>
+
+    <activity xml:id="activity-df-strat-fluency">
+      <introduction>
+        <p> Find the derivative of the following functions. For each, include an explanation of the
+          steps involved that references the algebraic structure of the function.</p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m> f(x) = e^{5x}(x^2+7^x)^3</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f'(x) = 5e^{5x}(x^2+7^x)^3 + 3e^{5x}(x^2+7^x)^2(2x + (\ln 7)7^x)</m>
+          </p>
+          <p> First note the product rule structure; this gives the first term. For the second term,
+            we need the chain rule for the derivative of <m>(x^2+7^x)^3</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m> f(x) = \left( \dfrac{3x + 1}{2x^{6} - 1} \right)^{ 5 } </m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>
+              f'(x) =
+              5\left(\dfrac{3x+1}{2x^6-1}\right)^4\left(\dfrac{(2x^6-1)(3)-(3x+1)(12x^5)}{(2x^6-1)^2}\right)</m>
+          </p>
+          <p>
+            The outermost function is a power function, so we write the power rule derivative before
+            the chain rule piece. Since the inner function is a fraction, its derivative has a
+            quotient rule structure.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m> f(x) = \sqrt{\cos\left(2 \, x^{2} + x\right)}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f'(x) = \dfrac{1}{2}(\cos(2x^2+x))^{-1/2}(-\sin(2x^2+x))(4x+1)</m>
+          </p>
+          <p> We have a composition of three functions, so we have the power rule first for the
+            derivative of the root term. Then, we apply the chain rule to <m>\cos(2x^2+x)</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m> f(x) = \tan(xe^x)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f'(x) = \sec^2(xe^x)(e^x+xe^x)</m>
+          </p>
+          <p>
+            We first apply the chain rule, then use the product rule for the derivative of the
+            inside term.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="activity-df-strat-checkit">
+      <introduction>
+        <p>
+          Demonstrate and explain how to find the derivative of the following functions.
+          Be sure to explicitly denote which derivative rules (constant multiple, sum/difference,
+          etc.)
+          you are using in your work.
+        </p>
+      </introduction>
       <task>
         <statement>
           <p>
@@ -330,10 +415,11 @@ you are using in your work.
           </p>
         </statement>
         <answer>
-          <p>
-            First we use the power rule to get <m>\dfrac{1}{2}(\cos(6y^4-6y))^{-1/2}</m>. From the chain rule, we get the next term <m>-\sin(6y^4-6y)</m>. Applying the chain rule again as well as the constant multiple and sum/difference rules gives <m>(24y^3-6)</m>. All together, this gives our derivative
-            <me>
-              \dfrac{1}{2}(\cos(6y^4-6y))^{-1/2}(-\sin(6y^4-6y))(24y^3-6).
+          <p> First we use the power rule to get <m>\dfrac{1}{2}(\cos(6y^4-6y))^{-1/2}</m>. From the
+            chain rule, we get the next term <m>-\sin(6y^4-6y)</m>. Applying the chain rule again as
+            well as the constant multiple and sum/difference rules gives <m>(24y^3-6)</m>. All
+            together, this gives our derivative <me>
+            \dfrac{1}{2}(\cos(6y^4-6y))^{-1/2}(-\sin(6y^4-6y))(24y^3-6).
             </me>
           </p>
         </answer>
@@ -345,10 +431,11 @@ you are using in your work.
           </p>
         </statement>
         <answer>
-          <p>
-            First use the power rule to get <m>4\left(\dfrac{5t^3+2}{4t^4-3}\right)^3</m>. Next we need to use the quotient rule on the inside function, which gives <m>\dfrac{(4t^4-3)(15t^2)-(5t^3+2)(16t^3)}{(4t^4-3)^2}</m> (we also use the constant multiple and sum/difference rules here). All together, this gives
-            <me>
-              4\left(\dfrac{5t^3+2}{4t^4-3}\right)^3\left(\dfrac{(4t^4-3)(15t^2)-(5t^3+2)(16t^3)}{(4t^4-3)^2}\right).
+          <p> First use the power rule to get <m>4\left(\dfrac{5t^3+2}{4t^4-3}\right)^3</m>. Next we
+            need to use the quotient rule on the inside function, which gives <m>
+            \dfrac{(4t^4-3)(15t^2)-(5t^3+2)(16t^3)}{(4t^4-3)^2}</m> (we also use the constant
+            multiple and sum/difference rules here). All together, this gives <me>
+            4\left(\dfrac{5t^3+2}{4t^4-3}\right)^3\left(\dfrac{(4t^4-3)(15t^2)-(5t^3+2)(16t^3)}{(4t^4-3)^2}\right).
             </me>
           </p>
         </answer>
@@ -360,23 +447,22 @@ you are using in your work.
           </p>
         </statement>
         <answer>
-          <p>
-            The chain rule (along with the power, constant multiple, and sum/difference rules) gives the derivative of the first function <m>-5(5x^4-7x^3)^4(25x^3-21x^2)</m>. From the product rule, the first term becomes
-            <me>
+          <p> The chain rule (along with the power, constant multiple, and sum/difference rules)
+            gives the derivative of the first function <m>-5(5x^4-7x^3)^4(25x^3-21x^2)</m>. From the
+            product rule, the first term becomes <me>
               -5(5x^4-7x^3)^4(20x^3-21x^2)x^{1/4}
-            </me>
-            The derivative of the second function is <m>\dfrac{1}{4}x^{-3/4}</m>, which gives the second product rule term
-            <me>
+            </me> The derivative of
+            the second function is <m>\dfrac{1}{4}x^{-3/4}</m>, which gives the second product rule
+            term <me>
               -(5x^4-7x^3)^5\left(\dfrac{1}{4}x^{-3/4}\right)
-            </me>
-            so that the entire derivative is
-            <me>
-            -5(5x^4-7x^3)^4(20x^3-21x^2)x^{1/4} - (5x^4-7x^3)^5\left(\dfrac{1}{4}x^{-3/4}\right)
+            </me> so that
+            the entire derivative is <me>
+              -5(5x^4-7x^3)^4(20x^3-21x^2)x^{1/4} - (5x^4-7x^3)^5\left(\dfrac{1}{4}x^{-3/4}\right)
             </me>
           </p>
         </answer>
       </task>
-  </activity>
+    </activity>
 
     </subsection>
     <subsection>
