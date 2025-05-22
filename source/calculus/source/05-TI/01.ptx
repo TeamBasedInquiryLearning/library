@@ -23,6 +23,11 @@ Using the chain rule, which of these is the derivative of <m>e^{x^3}</m> with re
                 <li><p><m>3x^2e^{x^3}</m></p></li>
                 <li><p><m>\dfrac{1}{4}e^{x^4}</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    C: <m>3x^2e^{x^3}</m>
+                </p>
+            </answer>
         </task>
         <task>
             <p>
@@ -34,6 +39,11 @@ Based on this result, which of these would you suspect to equal <m>\displaystyle
                 <li><p><m>3e^{x^3}+C</m></p></li>
                 <li><p><m>\dfrac{1}{3}e^{x^3}+C</m></p></li>
             </ol>
+            <answer>
+                <p>
+                    D: <m>\dfrac{1}{3}e^{x^3}+C</m>
+                </p>
+            </answer>
         </task>
     </activity>
     <activity estimated-time="99">
@@ -52,16 +62,31 @@ Based on this result, which of these would you suspect to equal <m>\displaystyle
             <statement>
                 <p>What is <m>\displaystyle \int 7u^6 u'\,dx</m>?</p>
             </statement>
+            <answer>
+                <p>
+                    B: <m>u^7 + C</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p>What is <m>\displaystyle \int u^6 u'\,dx</m>?</p>
             </statement>
+            <answer>
+                <p>
+                    A: <m>\dfrac{1}{7}u^7 + C</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
                 <p>What is <m>\displaystyle \int 6u^6 u'\,dx</m>?</p>
             </statement>
+            <answer>
+                <p>
+                    D: <m>\dfrac{6}{7}u^7 + C</m>
+                </p>
+            </answer>
         </task>
     </activity>
     <activity estimated-time="99">
@@ -73,15 +98,19 @@ Based on this result, which of these would you suspect to equal <m>\displaystyle
                 <li><p>Keep differentiating functions until you come across the function you want to integrate.</p></li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                B: Attempt to rewrite the integral in the form <m>\displaystyle \int g'(u)u'\,dx=g(u)+C</m>.
+            </p>
+        </answer>
     </activity>
     <fact>
         <statement>
             <p>
-By the chain rule, <me>\dfrac{d}{dx}[g(u)+C]=g'(u)u'</me>. There is a dual integration technique reversing this process, known as the <term>substitution method</term>.
+                By the chain rule, <me>\dfrac{d}{dx}[g(u)+C]=g'(u)u'</me>. There is a dual integration technique reversing this process, known as the <term>substitution method</term>.
             </p>
             <p>
-This technique involves choosing an appropriate function <m>u</m> in terms of <m>x</m>
-to rewrite the integral as follows:
+                This technique involves choosing an appropriate function <m>u</m> in terms of <m>x</m> to rewrite the integral as follows:
                 <me>\displaystyle \int f(x)\,dx=\dots=\displaystyle \int g'(u)u'\,dx=g(u)+C</me>.
             </p>
         </statement>
@@ -89,188 +118,194 @@ to rewrite the integral as follows:
     <observation>
         <statement>
             <p>
-Recall that <m>\dfrac{du}{dx}=u'</m>, and so <m>du=u'\,dx</m>. This allows for the following common notation:
+                Recall that <m>\dfrac{du}{dx}=u'</m>, and so <m>du=u'\,dx</m>. This allows for the following common notation:
                 <me>\displaystyle \int f(x)\,dx=\dots=\displaystyle \int g'(u)\, du=g(u)+C</me>.
             </p>
             <p>
-Therefore, rather than dealing with equations like <m>u'=\dfrac{du}{dx}=x^2</m>, we will prefer to write
-<m>du=x^2\, dx</m>.
+                Therefore, rather than dealing with equations like <m>u'=\dfrac{du}{dx}=x^2</m>, we will prefer to write <m>du=x^2\, dx</m>.
             </p>
         </statement>
     </observation>
     <activity estimated-time="99">
         <introduction>
             <p>
-Consider <m>\displaystyle \int x^2e^{x^3}\,dx</m>, which we conjectured earlier
-to be <m>\dfrac{1}{3}e^{x^3}+C</m>.
+                Consider <m>\displaystyle \int x^2e^{x^3}\,dx</m>, which we conjectured earlier to be <m>\dfrac{1}{3}e^{x^3}+C</m>.
             </p>
             <p>
-Suppose we decided to let <m>u=x^3</m>.
+                Suppose we decided to let <m>u=x^3</m>.
             </p>
         </introduction>
         <task>
             <p>
-Compute <m>\dfrac{du}{dx}=\unknown</m>,
-and rewrite it as <m>du=\unknown\,dx</m>.
+                Compute <m>\dfrac{du}{dx}=\unknown</m>, and rewrite it as <m>du=\unknown\,dx</m>.
+            </p>
+            <answer>
+                <p>
+                    <m>\dfrac{du}{dx} = 3u^2</m>, so <m>du = 3u^2\, dx</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <p>
+                This <m>\unknown\,dx</m> doesn't appear in <m>\displaystyle \int x^2e^{x^3}\,dx</m> exactly, so use algebra to solve for <m>x^2\,dx</m> in terms of <m>du</m>.
+            </p>
+            <answer>
+                <p>
+                    <m>\dfrac{1}{3}\, du = x^2\, dx</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <p>
+                Replace <m>x^2\, dx</m> and <m>x^3</m> with <m>u\,du</m> terms to rewrite <m>\displaystyle \int x^2e^{x^3}\,dx</m> as <m>\displaystyle \int \dfrac{1}{3}e^u\,du</m>.
             </p>
         </task>
         <task>
             <p>
-This <m>\unknown\,dx</m> doesn't appear in <m>\displaystyle \int x^2e^{x^3}\,dx</m>
-exactly, so use algebra to solve for <m>x^2\,dx</m> in terms of <m>du</m>.
+                Solve <m>\displaystyle \int \dfrac{1}{3}e^u\,du</m> in terms of <m>u</m>, then replace <m>u</m> with <m>x^3</m> to confirm our original conjecture.
             </p>
-        </task>
-        <task>
-            <p>
-Replace <m>x^2\, dx</m> and <m>x^3</m> with <m>u\,du</m> terms to rewrite
-<m>\displaystyle \int x^2e^{x^3}\,dx</m> as
-<m>\displaystyle \int \dfrac{1}{3}e^u\,du</m>.
-            </p>
-        </task>
-        <task>
-            <p>
-Solve <m>\displaystyle \int \dfrac{1}{3}e^u\,du</m> in terms of <m>u</m>,
-then replace <m>u</m> with <m>x^3</m> to confirm our original
-conjecture.
-            </p>
+            <answer>
+                <p>
+                    <m>\displaystyle \int \dfrac{1}{3}e^u\, du = \dfrac{1}{3}e^u + C = \dfrac{1}{3}e^{x^3} + C</m>
+                </p>
+            </answer>
         </task>
     </activity>
     <example>
         <statement>
             <p>
-Here is how one might write out the explanation
-of how to find
-<m>\displaystyle \int x^2e^{x^3}\,dx</m> from start to finish:
+                Here is how one might write out the explanation of how to find <m>\displaystyle \int x^2e^{x^3}\,dx</m> from start to finish:
             </p>
             <md>
                 <mrow>
-\displaystyle \int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                    \displaystyle \int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; du = 3x^2\,dx
+                    &amp;&amp;&amp; du = 3x^2\,dx
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; \dfrac{1}{3}du = x^2\,dx
+                    &amp;&amp;&amp; \dfrac{1}{3}du = x^2\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int x^2e^{x^3}\,dx &amp;= \displaystyle \int e^{(x^3)} (x^2\,dx)
+                    \displaystyle \int x^2e^{x^3}\,dx &amp;= \displaystyle \int e^{(x^3)} (x^2\,dx)
                 </mrow>
                 <mrow>
-&amp;= \displaystyle \int e^{u} \dfrac{1}{3}\,du
+                    &amp;= \displaystyle     \int e^{u} \dfrac{1}{3}\,du
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{3}e^{u}+C
+                    &amp;= \dfrac{1}{3}e^{u}+C
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{3}e^{x^3}+C
+                    &amp;= \dfrac{1}{3}e^{x^3}+C
                 </mrow>
             </md>
         </statement>
     </example>
+
     <activity estimated-time="99">
         <statement>
             <p>
-Which step of the previous example do you think was
-the most important?
+                Which step of the previous example do you think was the most important?
             </p>
             <ol marker="A.">
                 <li>
                     <p>
-Choosing <m>u=x^3</m>.
+                        Choosing <m>u=x^3</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-Finding <m>du=3x^2\,dx</m> and <m>\dfrac{1}{3}du=x^2\,dx</m>.
+                        Finding <m>du=3x^2\,dx</m> and <m>\dfrac{1}{3}du=x^2\,dx</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-Substituting <m>\displaystyle \int x^2e^{x^3}\,dx</m>
-with <m>\displaystyle \int\dfrac{1}{3}e^u\,du</m>.
+                        Substituting <m>\displaystyle \int x^2e^{x^3}\,dx</m> with <m>\displaystyle \int\dfrac{1}{3}e^u\,du</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-Integrating <m>\displaystyle \int\dfrac{1}{3}e^u\,du=\dfrac{1}{3}e^u+C</m>.
+                        Integrating <m>\displaystyle \int\dfrac{1}{3}e^u\,du=\dfrac{1}{3}e^u+C</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-Unsubstituting <m>\dfrac{1}{3}e^u+C</m>
-to get <m>\dfrac{1}{3}e^{x^3}+C</m>.
+                        Unsubstituting <m>\dfrac{1}{3}e^u+C</m> to get <m>\dfrac{1}{3}e^{x^3}+C</m>.
                     </p>
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                Answers might vary, as the question asks the student's opinion.
+            </p>
+        </answer>
     </activity>
     <activity estimated-time="99">
         <statement>
             <p>
-Below are two correct solutions to the same integral, using
-two different choices for <m>u</m>. Which method would you prefer
-to use yourself?
+                Below are two correct solutions to the same integral, using two different choices for <m>u</m>. Which method would you prefer to use yourself?
             </p>
             <sidebyside widths="48% 48%">
                 <p>
             <md>
                 <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=x+1
+                    \displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=x+1
                 </mrow>
                 <mrow>
-&amp;\phantom{=} 4u=4x+4
+                    &amp;\phantom{=} 4u=4x+4
                 </mrow>
                 <mrow>
-&amp;\phantom{=} x=u-1
+                    &amp;\phantom{=} x=u-1
                 </mrow>
                 <mrow>
-&amp;\phantom{=} du = dx
+                    &amp;\phantom{=} du = dx
                 </mrow>
                 <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int (u-1)\sqrt{4u}\,du
+                    \displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int (u-1)\sqrt{4u}\,du
                 </mrow>
                 <mrow>
-&amp;= \displaystyle \int (2u^{3/2}-2u^{1/2})\,du
+                    &amp;= \displaystyle \int (2u^{3/2}-2u^{1/2})\,du
                 </mrow>
                 <mrow>
-&amp;= \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C
+                    &amp;= \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C
                 </mrow>
                 <mrow>
-&amp;= \dfrac{4}{5}(x+1)^{5/2}
+                    &amp;= \dfrac{4}{5}(x+1)^{5/2}
                 </mrow>
                 <mrow>
-&amp;\phantom{=}-\dfrac{4}{3}(x+1)^{3/2}+C
+                    &amp;\phantom{=}-\dfrac{4}{3}(x+1)^{3/2}+C
                 </mrow>
             </md>
                 </p>
                 <p>
             <md>
                 <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=\sqrt{4x+4}
+                    \displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=\sqrt{4x+4}
                 </mrow>
                 <mrow>
-&amp;\phantom{=} u^2=4x+4
+                    &amp;\phantom{=} u^2=4x+4
                 </mrow>
                 <mrow>
-&amp;\phantom{=} x=\dfrac{1}{4}u^2-1
+                    &amp;\phantom{=} x=\dfrac{1}{4}u^2-1
                 </mrow>
                 <mrow>
-&amp;\phantom{=} dx=\dfrac{1}{2}u\,du
+                    &amp;\phantom{=} dx=\dfrac{1}{2}u\,du
                 </mrow>
                 <mrow> 
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)
+                    \displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)
                 </mrow>
                 <mrow>
-&amp;= \displaystyle \int \left(\dfrac{1}{8}u^4-\dfrac{1}{2}u^2\right)\,du
+                    &amp;= \displaystyle \int \left(\dfrac{1}{8}u^4-\dfrac{1}{2}u^2\right)\,du
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{40}u^5-\dfrac{1}{6}u^3+C
+                    &amp;= \dfrac{1}{40}u^5-\dfrac{1}{6}u^3+C
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{40}(4x+4)^{5/2}
+                    &amp;= \dfrac{1}{40}(4x+4)^{5/2}
                 </mrow>
                 <mrow>
-&amp;\phantom{=}-\dfrac{1}{6}(4x+4)^{3/2}+C
+                    &amp;\phantom{=}-\dfrac{1}{6}(4x+4)^{3/2}+C
                 </mrow>
             </md>
                 </p>
@@ -280,99 +315,139 @@ to use yourself?
     <activity estimated-time="99">
         <statement>
             <p>
-Suppose we wanted to try the substitution method to find <m>\displaystyle \int e^x\cos(e^x+3)\,dx</m>. Which of these choices for <m>u</m> appears to be most useful?
+                Suppose we wanted to try the substitution method to find <m>\displaystyle \int e^x\cos(e^x+3)\,dx</m>. Which of these choices for <m>u</m> appears to be most useful?
             </p>
             <ol marker="A." cols="2">
                 <li>
                     <p>
-<m>u=x</m>, so <m>du=dx</m>
+                        <m>u=x</m>, so <m>du=dx</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>u=e^x</m>, so <m>du=e^x\,dx</m>
+                        <m>u=e^x</m>, so <m>du=e^x\,dx</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>u=e^x+3</m>, so <m>du=e^x\,dx</m>
+                        <m>u=e^x+3</m>, so <m>du=e^x\,dx</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>u=\cos(x)</m>, so <m>du=-\sin(x)\,dx</m>
+                        <m>u=\cos(x)</m>, so <m>du=-\sin(x)\,dx</m>
                     </p>
                 </li>
                 <li>
                     <p>
-<m>u=\cos(e^x+3)</m>, so <m>du=e^x\sin(e^x+3)\,dx</m>
+                        <m>u=\cos(e^x+3)</m>, so <m>du=e^x\sin(e^x+3)\,dx</m>
                     </p>
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                C: <m>u=e^x+3</m>, so <m>du=e^x\,dx</m>
+            </p>
+        </answer>
     </activity>
     <activity estimated-time="99">
         <statement>
             <p>
-Complete the following solution using your choice from
-the previous activity to find <m>\displaystyle \int e^x\cos(e^x+3)\,dx</m>.
+                Complete the following solution using your choice from the previous activity to find <m>\displaystyle \int e^x\cos(e^x+3)\,dx</m>.
             </p>
             <md>
                 <mrow>
-\displaystyle \int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                    \displaystyle \int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; du = \unknown\,dx
+                    &amp;&amp;&amp; du = \unknown\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int e^x\cos(e^x+3)\,dx &amp;= \displaystyle \int \unknown\, du
+                    \displaystyle \int e^x\cos(e^x+3)\,dx &amp;= \displaystyle \int \unknown\, du
                 </mrow>
                 <mrow>
-&amp;= \cdots
+                    &amp;= \cdots
                 </mrow>
                 <mrow>
-&amp;= \sin(e^x+3)+C
+                    &amp;= \sin(e^x+3)+C
                 </mrow>
             </md>
         </statement>
+        <answer>
+            <md>
+                <mrow>
+                    \displaystyle \int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=e^x + 3
+                </mrow>
+                <mrow>
+                    &amp;&amp;&amp; du = e^x\,dx
+                </mrow>
+                <mrow>
+                    \displaystyle \int e^x\cos(e^x+3)\,dx &amp;= \displaystyle \int \cos(u)\, du
+                </mrow>
+                <mrow>
+                    &amp;= \sin(u) + C
+                </mrow>
+                <mrow>
+                    &amp;= \sin(e^x+3)+C
+                </mrow>
+            </md>
+        </answer>
     </activity>
     <activity estimated-time="99">
         <statement>
             <p>
-Complete the following integration by substitution
-to find <m>\displaystyle \int \dfrac{x^3}{x^4+4}\,dx</m>.
+                Complete the following integration by substitution to find <m>\displaystyle \int \dfrac{x^3}{x^4+4}\,dx</m>.
             </p>
             <md>
                 <mrow>
-\displaystyle \int \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                    \displaystyle \int \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; du = \unknown\,dx
+                    &amp;&amp;&amp; du = \unknown\,dx
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; \unknown \, du = \unknown\,dx
+                    &amp;&amp;&amp; \unknown \, du = \unknown\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int \dfrac{\unknown}{\unknown}\, du
+                    \displaystyle \int \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int \dfrac{\unknown}{\unknown}\, du
                 </mrow>
                 <mrow>
-&amp;= \cdots
+                    &amp;= \cdots
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{4}\ln|x^4+4|+C
+                    &amp;= \dfrac{1}{4}\ln|x^4+4|+C
                 </mrow>
             </md>
         </statement>
+        <answer>
+            <md>
+                <mrow>
+                    \displaystyle \int \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4 + 4
+                </mrow>
+                <mrow>
+                    &amp;&amp;&amp; du = 4x^3 \,dx
+                </mrow>
+                <mrow>
+                    &amp;&amp;&amp; \dfrac{1}{4} \, du = x^3\,dx
+                </mrow>
+                <mrow>
+                    \displaystyle \int \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int \dfrac{1/4}{u}\, du
+                </mrow>
+                <mrow>
+                    &amp;= \dfrac{1}{4}\ln|u| + C
+                </mrow>
+                <mrow>
+                    &amp;= \dfrac{1}{4}\ln|x^4+4|+C
+                </mrow>
+            </md>
+        </answer>
     </activity>
+
     <activity estimated-time="99">
         <statement>
             <p>
-Given that <m>
-\displaystyle \int \dfrac{x^3}{x^4+4}\,dx
-= \dfrac{1}{4}\ln|x^4+4|+C
-</m>, what is the value of <m>
-\displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx
-</m>?
+                Given that <m> \displaystyle \int \dfrac{x^3}{x^4+4}\,dx = \dfrac{1}{4}\ln|x^4+4|+C </m>, what is the value of <m> \displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx</m>?
             </p>
             <ol marker="A." cols="2">
                 <li><p><m>\dfrac{8}{20}</m></p></li>
@@ -381,6 +456,11 @@ Given that <m>
                 <li><p><m>\dfrac{1}{4}\ln(4)-\dfrac{1}{4}\ln(20)</m></p></li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                C: <m>\dfrac{1}{4}\ln(20)-\dfrac{1}{4}\ln(4)</m>
+            </p>
+        </answer>
     </activity>
     <activity>
         <statement>
@@ -389,70 +469,74 @@ What's wrong with the following computation?
             </p>
             <md>
                 <mrow>
-\displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                    \displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; du = 4x^3\,dx
+                    &amp;&amp;&amp; du = 4x^3\,dx
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; \dfrac{1}{4} du = x^3\,dx
+                    &amp;&amp;&amp; \dfrac{1}{4} du = x^3\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int_0^2 \dfrac{1/4}{u}\, du
+                    \displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int_0^2 \dfrac{1/4}{u}\, du
                 </mrow>
                 <mrow>
-&amp;= \left[\dfrac{1}{4}\ln|u|\right]_0^2
+                    &amp;= \left[\dfrac{1}{4}\ln|u|\right]_0^2
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{4}\ln 2-\dfrac{1}{4}\ln 0
+                    &amp;= \dfrac{1}{4}\ln 2-\dfrac{1}{4}\ln 0
                 </mrow>
             </md>
             <ol marker="A.">
                 <li>
                     <p>
-The wrong <m>u</m> substitution was made.
+                        The wrong <m>u</m> substitution was made.
                     </p>
                 </li>
                 <li>
                     <p>
-The antiderivative of <m>\dfrac{1/4}{u}</m> was wrong.
+                        The antiderivative of <m>\dfrac{1/4}{u}</m> was wrong.
                     </p>
                 </li>
                 <li>
                     <p>
-The <m>x</m> values <m>0,2</m> were plugged in for the variable <m>u</m>.
+                        The <m>x</m> values <m>0,2</m> were plugged in for the variable <m>u</m>.
                     </p>
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                C: The <m>x</m> values <m>0,2</m> were plugged in for the variable <m>u</m>.
+            </p>
+        </answer>
     </activity>
     <example>
         <statement>
             <p>
-Here's one way to show the computation of this definite integral by
-tracking <m>x</m> values in the bounds.
+                Here's one way to show the computation of this definite integral by tracking <m>x</m> values in the bounds.
             </p>
             <md>
                 <mrow>
-\displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
+                    \displaystyle \int_0^2 \dfrac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; du = 4x^3\,dx
+                    &amp;&amp;&amp; du = 4x^3\,dx
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; \dfrac{1}{4} du = x^3\,dx
+                    &amp;&amp;&amp; \dfrac{1}{4} du = x^3\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int_{x=0}^{x=2} \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int_{x=0}^{x=2} \dfrac{1/4}{u}\, du
+                    \displaystyle \int_{x=0}^{x=2} \dfrac{x^3}{x^4+4}\,dx &amp;= \displaystyle \int_{x=0}^{x=2} \dfrac{1/4}{u}\, du
                 </mrow>
                 <mrow>
-&amp;= \left[ \dfrac{1}{4}\ln|u|\right]_{x=0}^{x=2}
+                    &amp;= \left[ \dfrac{1}{4}\ln|u|\right]_{x=0}^{x=2}
                 </mrow>
                 <mrow>
-&amp;= \left[ \dfrac{1}{4}\ln|x^4+4|\right]_{x=0}^{x=2}
+                    &amp;= \left[ \dfrac{1}{4}\ln|x^4+4|\right]_{x=0}^{x=2}
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{4}\ln(20)-\dfrac{1}{4}\ln(4)
+                    &amp;= \dfrac{1}{4}\ln(20)-\dfrac{1}{4}\ln(4)
                 </mrow>
             </md>
         </statement>
@@ -460,71 +544,92 @@ tracking <m>x</m> values in the bounds.
     <example>
         <statement>
             <p>
-Instead of unsubstituting <m>u</m> values for <m>x</m> values,
-definite integrals may be computed by also substituting <m>x</m> values in
-the bounds with <m>u</m> values. Use this idea to complete
-the following solution:
+                Instead of unsubstituting <m>u</m> values for <m>x</m> values, definite integrals may be computed by also substituting <m>x</m> values in the bounds with <m>u</m> values. Use this idea to complete the following solution:
             </p>
             <md>
                 <mrow>
-\displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                    \displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
                 </mrow>
                 <mrow>
-&amp;&amp;&amp;du = 3x^2\,dx
+                    &amp;&amp;&amp;du = 3x^2\,dx
                 </mrow>
                 <mrow>
-&amp;&amp;&amp;\dfrac{1}{3}du = x^2\,dx
+                    &amp;&amp;&amp;\dfrac{1}{3}du = x^2\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;= \displaystyle \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                    \displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;= \displaystyle \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
                 </mrow>
                 <mrow>
-&amp;= \displaystyle \int_{u=\unknown}^{u=\unknown} e^{u} \dfrac{1}{3}\, du
-                </mrow> -->
-                <mrow>
-&amp;= \left[\dfrac{1}{3}e^{u}\right]_{\unknown}^{\unknown}
+                    &amp;= \displaystyle \int_{u=\unknown}^{u=\unknown} e^{u} \dfrac{1}{3}\, du
                 </mrow>
                 <mrow>
-&amp;= \unknown
+                    &amp;= \left[\dfrac{1}{3}e^{u}\right]_{\unknown}^{\unknown}
+                </mrow>
+                <mrow>
+                    &amp;= \unknown
                 </mrow>
             </md>
         </statement>
+        <answer>
+            <p>
+                <md>
+                <mrow>
+                    \displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                </mrow>
+                <mrow>
+                    &amp;&amp;&amp;du = 3x^2\,dx
+                </mrow>
+                <mrow>
+                    &amp;&amp;&amp;\dfrac{1}{3}du = x^2\,dx
+                </mrow>
+                <mrow>
+                    \displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;= \displaystyle \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                </mrow>
+                <mrow>
+                    &amp;= \displaystyle \int_{u=1}^{u=27} e^{u} \dfrac{1}{3}\, du
+                </mrow>
+                <mrow>
+                    &amp;= \left[\dfrac{1}{3}e^{u}\right]_{1}^{27}
+                </mrow>
+                <mrow>
+                    &amp;= \dfrac{1}{3}e^{27} - \dfrac{1}{3}e
+                </mrow>
+            </md>
+            </p>
+        </answer>
     </example>
     <example>
         <statement>
             <p>
-Here is how one might write out the explanation
-of how to find
-<m>\displaystyle \int_1^3 x^2e^{x^3}\,dx</m> from start to finish by
-leaving bounds in terms of <m>x</m> instead:
+                Here is how one might write out the explanation of how to find <m>\displaystyle \int_1^3 x^2e^{x^3}\,dx</m> from start to finish by leaving bounds in terms of <m>x</m> instead:
             </p>
             <md>
                 <mrow>
-\displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
+                    \displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; du = 3x^2\,dx
+                    &amp;&amp;&amp; du = 3x^2\,dx
                 </mrow>
                 <mrow>
-&amp;&amp;&amp; \dfrac{1}{3}du = x^2\,dx
+                    &amp;&amp;&amp; \dfrac{1}{3}du = x^2\,dx
                 </mrow>
                 <mrow>
-\displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;= \displaystyle \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                    \displaystyle \int_1^3 x^2e^{x^3}\,dx &amp;= \displaystyle \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
                 </mrow>
                 <mrow>
-&amp;= \displaystyle \int_{x=1}^{x=3} e^{u} \dfrac{1}{3}\, du
+                    &amp;= \displaystyle \int_{x=1}^{x=3} e^{u} \dfrac{1}{3}\, du
                 </mrow>
                 <mrow>
-&amp;= \left[\dfrac{1}{3}e^{u}\right]_{x=1}^{x=3}
+                    &amp;= \left[\dfrac{1}{3}e^{u}\right]_{x=1}^{x=3}
                 </mrow>
                 <mrow>
-&amp;= \left[\dfrac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
+                    &amp;= \left[\dfrac{1}{3}e^{x^3}\right]_{x=1}^{x=3}
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{3}e^{3^3} - \dfrac{1}{3}e^{1^3}
+                    &amp;= \dfrac{1}{3}e^{3^3} - \dfrac{1}{3}e^{1^3}
                 </mrow>
                 <mrow>
-&amp;= \dfrac{1}{3}e^{27} - \dfrac{1}{3}e
+                    &amp;= \dfrac{1}{3}e^{27} - \dfrac{1}{3}e
                 </mrow>
             </md>
         </statement>
@@ -532,71 +637,101 @@ leaving bounds in terms of <m>x</m> instead:
     <activity estimated-time="99">
         <statement>
             <p>
-Use substitution to show that
-<me>\displaystyle \int_1^4 \dfrac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e</me>.
+                Use substitution to show that
+                <me>\displaystyle \int_1^4 \dfrac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e</me>.
             </p>
         </statement>
     </activity>
     <activity estimated-time="99">
         <statement>
             <p>
-Use substitution to show that
-<me>\displaystyle \int_0^{\pi/4} \sin(2\theta)\,d\theta=\dfrac{1}{2}</me>.
+                Use substitution to show that
+                <me>\displaystyle \int_0^{\pi/4} \sin(2\theta)\,d\theta=\dfrac{1}{2}</me>.
             </p>
         </statement>
     </activity>
+
     <activity estimated-time="99">
         <statement>
             <p>
-Use substitution to show that
+                Use substitution to show that
                 <me>
-\displaystyle \int u^5(u^3+1)^{1/3}\,du=
-\dfrac{1}{7}(u^3+1)^{7/3}-
-\dfrac{1}{4}(u^3+1)^{4/3}+C
+                    \displaystyle \int u^5(u^3+1)^{1/3}\,du= \dfrac{1}{7}(u^3+1)^{7/3} - \dfrac{1}{4}(u^3+1)^{4/3}+C
                 </me>.
             </p>
         </statement>
     </activity>
+
     <activity estimated-time="99">
         <introduction>
             <p>
-Consider <m>\displaystyle \int (3x-5)^2\,dx</m>.
+                Consider <m>\displaystyle \int (3x-5)^2\,dx</m>.
             </p>
         </introduction>
         <task>
-            <p>
-Solve this integral using substitution.
-            </p>
+            <statement>
+                <p>
+                    Solve this integral using substitution.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int (3x-5)^2\, dx = \dfrac{1}{9}(3x-5)^3 + C</m>
+                </p>
+            </answer>
         </task>
         <task>
-            <p>
-Replace <m>(3x-5)^2</m> with <m>(9x^2-30x+25)</m>
-in the original integral, the solve using
-the reverse power rule.
-            </p>
+            <statement>
+                <p>
+                    Replace <m>(3x-5)^2</m> with <m>(9x^2-30x+25)</m> in the original integral, the solve using the reverse power rule.
+                </p>
+            </statement>   
+            <answer>
+                <p>
+                    <m>\displaystyle \int 9x^2 - 30x + 25\, dx = 3x^3 - 15x^2 + 25x + C</m>
+                </p>
+            </answer>         
         </task>
         <task>
+            <statement>
+                <p>
+                    Which method did you prefer?    
+                </p>
+            </statement>
             <p>
-Which method did you prefer?
+
             </p>
         </task>
     </activity>
     <activity estimated-time="99">
         <introduction>
             <p>
-Consider <m>\displaystyle \int \tan(x)\,dx</m>.
+                Consider <m>\displaystyle \int \tan(x)\,dx</m>.
             </p>
         </introduction>
         <task>
-            <p>
-Replace <m>\tan(x)</m> in the integral with
-a fraction involving sine and cosine.
-            </p>
+            <statement>
+                <p>
+                    Replace <m>\tan(x)</m> in the integral with a fraction involving sine and cosine.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int \tan(x)\, dx = \int \dfrac{\sin(x)}{\cos(x)}\, dx</m>
+                </p>
+            </answer>
         </task>
         <task>
-            <p>
-Use substitution to solve the integral.
-            </p>
+            <statement>
+                <p>
+                    Use substitution to solve the integral.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int \dfrac{\sin(x)}{\cos(x)}\, dx = -\ln |\cos(x)| + C</m> or <m>\ln |\sec(x)| + C</m>
+                </p>
+            </answer>
         </task>
     </activity>
     
