@@ -72,6 +72,24 @@ N/A
                 </p>
             </outtro>
         </knowl>
+        <knowl>
+            <content>
+                <p>
+If the matrix is invertible, explain how to use it with
+technology to solve the vector equation <me>{{vector_eq}}.</me>
+                </p>
+            </content>
+            <outtro>
+                <p>
+<!-- {{#invertible}} -->
+<me>{{inverse}}{{constant_vector}}={{solution}}</me>
+<!-- {{/invertible}} -->
+<!-- {{^invertible}} -->
+N/A
+<!-- {{/invertible}} -->
+                </p>
+            </outtro>
+        </knowl>
     </knowl>
     <!-- {{/matrices}} -->
 </knowl>
