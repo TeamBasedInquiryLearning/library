@@ -240,19 +240,30 @@
             <task>
                 <statement>
                     <p>
-                        Using <m>\rho=62.4</m> lb/ft<m>^3</m>, calculate <m>P_i</m>.
+                        Using <m>\rho=62.4</m> lb/ft<m>^3</m>, 
+                        write <m>P_i</m> in terms of <m>x_i</m>.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m>P_i=62.4x_i</m>
+                    </p>
+                </answer>
             </task>
 
             <task>
                 <statement>
                     <p>
                         Recall that <m>A_i=l_i\Delta x_i</m>. The value of <m>l_i</m> should change linearly according
-                        to an equation <m>l=f(x)</m> where <m>l(4)=5</m> and <m>l(6)=3</m>. Find the point-slope form
-                        of this linear equation. 
+                        to an equation <m>l(x)</m>, where <m>l(4)=5</m> and <m>l(6)=3</m>. Find the point-slope form
+                        of this linear equation. Then replace <m>x</m> with <m>x_i</m> to get <m>l_i</m>.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m>l_i=9-x_i</m>
+                    </p>
+                </answer>
             </task>
 
             <task>
@@ -262,23 +273,58 @@
                         only <m>x_i</m> and <m>\Delta x_i</m>.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m>F_i=(62.4x_i)(9-x_i)\Delta x_i</m>
+                    </p>
+                </answer>
             </task>
 
             <task>
                 <statement>
                     <p>
-                        Find <m>F=\displaystyle\int_a^b F(x)\,dx</m> by replacing <m>x_i</m> with <m>x</m> and <m>\Delta x_i</m> with <m>\Delta x</m> within the approximation formula
-                        <m>F\approx \displaystyle\sum_i F_i</m>. You will also have to choose appropriate value for <m>a</m> and <m>b</m>.
+                        Find <m>F=\displaystyle\int_a^b F(x)\,dx</m> using the approximation formula
+                        <m>F\approx \displaystyle\sum_i F_i</m> by converting it to an integral through replacing <m>x_i</m> with <m>x</m> and <m>\Delta x_i</m> with <m>dx</m>.
+                        You will also have to choose appropriate value for <m>a</m> and <m>b</m>.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m>F=\displaystyle\int_4^6(62.4x)(9-x)\,dx=2454.4</m> lb
+                    </p>
+                </answer>
             </task>
         </activity>
+
+        <observation xml:id="forceobs">
+            <!-- <title>Hydrostatic Force Formula</title>
+             -->
+            <p>
+             For a vertically submerged flat plate, the total force exerted on one side of the plate is approximated by         
+            <me>
+                F\approx \displaystyle\sum_iF_i=\displaystyle\sum P_iA_i=\displaystyle\sum \rho x_il_i\Delta x_i,
+            </me>
+            and the exact force is given by
+            <me>
+                F=\int_a^b \rho x l(x)\,dx,
+            </me>
+            where <m>\rho</m> is the weight density of the fluid, and <m>l(x)</m> is the function that gives the length of the approximating rectangle at location <m>x</m>.            
+            </p>
+        </observation>
+
+        <warning>
+            <p>
+                When using <xref ref="forceobs"/>, it is required that the coordinate system be set up with the origin at the water level and 
+                with the positive direction pointing downward. Other setups will require a complete re-derivation of the formula.
+            </p>
+        </warning>
 
         
         <activity xml:id="activity-AI5dam">
             <introduction>
             <p>
-                Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top. Assume the dam is 20 feet tall with water that rises to its top. Water weighs 62.4 pounds per cubic foot and exerts <m>P=62.4d</m> lbs/ft<m>^2</m> of pressure at depth <m>d</m> ft. Consider a rectangular slice of this dam at height <m>h_i</m> feet and width <m>b_i</m>.
+                Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top. Assume the dam is 20 feet tall with water that rises to its top. 
+                Water weighs 62.4 pounds per cubic foot and exerts <m>P=62.4d</m> lbs/ft<m>^2</m> of pressure at depth <m>d</m> ft. Consider a rectangular slice of this dam at height <m>h_i</m> feet and width <m>b_i</m>.
                 <figure>
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
                     <image xml:id="damslice" width="50%">
