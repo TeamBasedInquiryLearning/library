@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <intro>
+            <p>
+            Let <m>\alpha</m> be the angle given in the triangle below.
+            </p>
+            <p>
+                <image
+                source="assets/TR3/generated/{{__seed__}}/triangle.png"
+                description="."
+                width="50%"/>
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p>Compute <m>\{{f1}}(\alpha)</m>.</p>
+            </content>
+            <outtro>
+                <p><m>\{{f1}}(\alpha)={{f1value}}</m>
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>Compute <m>\{{f2}}(\alpha)</m>.</p>
+            </content>
+            <outtro>
+                <p><m>\{{f2}}(\alpha)={{f2value}}</m>
+                </p>
+            </outtro>
+        </knowl>
+    </knowl>
+    <knowl>
+        <intro>
+            <p>Let <m>\theta</m> be an acute angle with <m>\{{g1}}(\theta)={{g1value}}</m>.
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p>Compute <m>\{{g2}}(\theta)</m>.</p>
+            </content>
+            <outtro>
+                <p><m>\{{g2}}(\theta)={{g2value}}</m>
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>Compute <m>\{{g3}}(\theta)</m>.</p>
+            </content>
+            <outtro>
+                <p><m>\{{g3}}(\theta)={{g3value}}</m>
+                </p>
+            </outtro>
+        </knowl>
+    </knowl>
+</knowl>
