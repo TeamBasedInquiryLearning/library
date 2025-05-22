@@ -214,17 +214,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     <task>
     <p>For what function <m>y=g(x)</m> have you found the derivative <m>\dfrac{dy}{dx}</m>?</p>
     </task>
-    <task><p>We want to rewrite <m>\dfrac{dy}{dx}</m> only in terms of <m>x</m>. Notice that </p>
-    <me> \tan^2(y) = \dfrac{\sin^2(y)}{\cos^2(y)} = \dfrac{1 - \cos^2(y)}{\cos^2(y)}. </me>
-      <p> Multiplying out by the denominator, isolating, and solving for <m>\cos^2(y)</m>, we get that </p>
-         <ol marker="A." cols="2">
-                <li><p><m>\cos^2(y) = \frac{\tan^2(y)}{\cos^2(y)}</m></p></li>
-               <li><p><m>\cos^2(y) = \frac{1}{\tan^2(y) + 1 }</m></p></li>
-               <li><p><m>\cos^2(y) = \frac{1- \cos^2(y)}{\tan^2(y)}</m></p></li>
-              <li><p><m>\cos^2(y) = \frac{1}{\tan^2(y) -1 }</m></p></li>
-            </ol>
-    </task>
-    <task><p>Finally, rewrite <m>\dfrac{dy}{dx}</m> as <m>\dfrac{dy}{dx} = \cos^2(y)</m> and use the fact that <m>\tan(y)=x</m> to get a nice formula for the derivative of the arctangent function of <m>x</m>.</p></task>
+    <task><p>Use the facts that <m>\sec^2(y) = 1 + \tan^2(y)</m> that <m>\tan(y)=x</m> to get a nice formula for the derivative of the arctangent function of <m>x</m>.</p></task>
     </activity>
 
 
