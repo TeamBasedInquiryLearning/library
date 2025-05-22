@@ -24,6 +24,11 @@
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    A or B
+                </p>
+            </answer>
     </activity>
     
     <activity>
@@ -38,6 +43,11 @@
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    A: <m>u = \sin(x)</m>
+                </p>
+            </answer>
     </activity>
     
     <activity>
@@ -52,76 +62,106 @@
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    D: Substitution is not effective
+                </p>
+            </answer>
     </activity>
     
     <activity>
             <statement>
                 <p>
-                    It's possible to use substitution to evaluate <m>\displaystyle\int \sin^4(x)\cos^3(x) \, dx</m>,
-                    by taking advantage of the trigonometric identity <m>\sin^2(x)+\cos^2(x)=1</m>.
+                    It's possible to use substitution to evaluate <m>\displaystyle\int \sin^4(x)\cos^3(x) \, dx</m>, by taking advantage of the trigonometric identity <m>\sin^2(x)+\cos^2(x)=1</m>.
                 </p>
                 <p>
-                    Complete the following substitution of <m>u=\sin(x),\, du=\cos(x)\,dx</m>
-                    by filling in the missing <m>\unknown</m>s.
+                    Complete the following substitution of <m>u=\sin(x),\, du=\cos(x)\,dx</m> by filling in the missing <m>\unknown</m>s.
                 </p>
             <md>
                 <mrow>
-\int \sin^4(x)\cos^3(x)\,dx &amp;=\int\sin^4(x)(\,\unknown\,)\cos(x)\,dx
+                    \int \sin^4(x)\cos^3(x)\,dx &amp;=\int\sin^4(x)(\,\unknown\,)\cos(x)\,dx
                 </mrow>
                 <mrow>
-&amp;=\int\sin^4(x)(1-\unknown)\cos(x)\,dx
+                    &amp;=\int\sin^4(x)(1-\unknown)\cos(x)\,dx
                 </mrow>
                 <mrow>
-&amp;= \int\unknown(1-\unknown)\,du
+                    &amp;= \int\unknown(1-\unknown)\,du
                 </mrow>
                 <mrow>
-&amp;= \int (u^4-u^6)\,du
+                    &amp;= \int (u^4-u^6)\,du
                 </mrow>
                 <mrow>
-&amp;= \frac{1}{5}u^5-\frac{1}{7}u^7+C
+                    &amp;= \frac{1}{5}u^5-\frac{1}{7}u^7+C
                 </mrow>
                 <mrow>
-&amp;= \unknown
+                    &amp;= \unknown
                 </mrow>
             </md>
             </statement>
+            <answer>
+                <md>
+                <mrow>
+                    \int \sin^4(x)\cos^3(x)\,dx &amp;=\int\sin^4(x)(\cos^2(x))\cos(x)\,dx
+                </mrow>
+                <mrow>
+                    &amp;=\int\sin^4(x)(1-\sin^2(x))\cos(x)\,dx
+                </mrow>
+                <mrow>
+                    &amp;= \int u^4(1-u^2)\,du
+                </mrow>
+                <mrow>
+                    &amp;= \int (u^4-u^6)\,du
+                </mrow>
+                <mrow>
+                    &amp;= \frac{1}{5}u^5-\frac{1}{7}u^7+C
+                </mrow>
+                <mrow>
+                    &amp;= \dfrac{1}{5}\sin^5(x) - \dfrac{1}{7}\sin^7(x) + C
+                </mrow>
+            </md>
+            </answer>
     </activity>
     
     <activity>
             <statement>
                 <p>
-Trying to substitute <m>u=\cos(x),du=-\sin(x)\,dx</m> in the previous example is less successful.
+                    Trying to substitute <m>u=\cos(x),du=-\sin(x)\,dx</m> in the previous example is less successful.
                 </p>
             <md>
                 <mrow>
-\int \sin^4(x)\cos^3(x)\,dx &amp;=-\int\sin^3(x)\cos^3(x)(-\sin(x)\,dx)
+                    \int \sin^4(x)\cos^3(x)\,dx &amp;=-\int\sin^3(x)\cos^3(x)(-\sin(x)\,dx)
                 </mrow>
                 <mrow>
-&amp;=-\int\sin^3(x)u^3\,du
+                    &amp;=-\int\sin^3(x)u^3\,du
                 </mrow>
                 <mrow>
-&amp;= \cdots?
+                    &amp;= \cdots?
                 </mrow>
             </md>
                 <p>
-Which feature of <m>\sin^4(x)\cos^3(x)</m> made <m>u=\sin(x)</m> the better choice?
+                    Which feature of <m>\sin^4(x)\cos^3(x)</m> made <m>u=\sin(x)</m> the better choice?
                     <ol marker="A." cols="2">
                         <li>The even power of <m>\sin^4(x)</m></li>
                         <li>The odd power of <m>\cos^3(x)</m></li>
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    B: The odd power of <m>\cos^3(x)</m>
+                </p>
+            </answer>
     </activity>
     
     <activity>
             <statement>
                 <p>
-Try to show <me>\int \sin^5(x)\cos^2(x)\,dx=
--\frac{1}{7} \, \cos^{7}\left(x\right) + \frac{2}{5} \, \cos^{5}\left(x\right) - \frac{1}{3} \, \cos^{3}\left(x\right)+C</me>
-by first trying <m>u=\sin(x)</m>, and then trying <m>u=\cos(x)</m> instead.
+                    Try to show 
+                    <me>\int \sin^5(x)\cos^2(x)\,dx= -\frac{1}{7} \, \cos^{7}\left(x\right) + \frac{2}{5} \, \cos^{5}\left(x\right) - \frac{1}{3} \, \cos^{3}\left(x\right)+C</me>
+                    by first trying <m>u=\sin(x)</m>, and then trying <m>u=\cos(x)</m> instead.
                 </p>
                 <p>
-Which substitution worked better and why?
+                    Which substitution worked better and why?
                     <ol marker="A." cols="2">
                         <li><m>u=\sin(x)</m> due to <m>\sin^5(x)</m>'s odd power.</li>
                         <li><m>u=\sin(x)</m> due to <m>\cos^2(x)</m>'s even power.</li>
@@ -130,24 +170,27 @@ Which substitution worked better and why?
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    C: <m>u=\cos(x)</m> due to <m>\sin^5(x)</m>'s odd power.
+                </p>
+            </answer>
     </activity>    
 
     <observation>
         <statement>
             <p>
-When integrating the form <m>\displaystyle \int \sin^m(x)\cos^n(x)\,dx</m>:
+                When integrating the form <m>\displaystyle \int \sin^m(x)\cos^n(x)\,dx</m>:
             </p>
             <ul>
                 <li>
                     <p>
-If <m>\sin</m>'s power is odd, rewrite the integral as
-<m>\displaystyle \int g(\cos(x))\sin(x)\,dx</m> and use <m>u=\cos(x)</m>.
+                        If <m>\sin</m>'s power is odd, rewrite the integral as <m>\displaystyle \int g(\cos(x))\sin(x)\,dx</m> and use <m>u=\cos(x)</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-If <m>\cos</m>'s power is odd, rewrite the integral as
-<m>\displaystyle \int h(\sin(x))\cos(x)\,dx</m> and use <m>u=\sin(x)</m>.
+                        If <m>\cos</m>'s power is odd, rewrite the integral as <m>\displaystyle \int h(\sin(x))\cos(x)\,dx</m> and use <m>u=\sin(x)</m>.
                     </p>
                 </li>
             </ul>
@@ -163,6 +206,11 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                     <statement>
                         <p>Use the fact that <m>\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos(2x)</m>.</p>
                     </statement>
+                    <answer>
+                        <p>
+                            <m>\displaystyle \int \sin^2(x)\, dx = \int \dfrac{1}{2}(1-\cos (2x))\, dx</m>
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <statement>
@@ -179,11 +227,21 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                     <statement>
                         <p>Use the fact that <m>\cos^2(\theta)=\displaystyle\frac{1+\cos(2\theta)}{2}</m> and <m>\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos^2(2x)</m>.</p>
                     </statement>
+                    <answer>
+                        <p>
+                            <m>\displaystyle \int \sin^2(x)\cos^2(x)\, dx = \int \dfrac{1}{4}(1-\cos(2x))(1+\cos(2x))\, dx</m>
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <statement>
                         <p>Use the above identities to rewrite this new integrand as one involving <m>\cos(4x)</m>.</p>
                     </statement>
+                    <answer>
+                        <p>
+                            <m>\displaystyle \int \dfrac{1}{4}(1-\cos(2x))(1+\cos(2x))\, dx = \dfrac{1}{4}\int 1-\cos^2(2x)\, dx = \dfrac{1}{4}\int 1-\dfrac{1}{2}(1+\cos(4x))\, dx</m>
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <statement>
@@ -204,6 +262,11 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    C: <m>\displaystyle\int \left(\frac{1-\cos(2x)}{2}\right)^2\left(\frac{1+\cos(2x)}{2}\right)^2 \, dx</m>
+                </p>
+            </answer>
     </activity>
     
     
@@ -218,6 +281,11 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
                     </ol>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    A or C
+                </p>
+            </answer>
     </activity>
     
     
@@ -239,13 +307,40 @@ We might also use some other trigonometric identities to manipulate our integran
                 </p>
             </introduction>
             <task>
-                <p>Find an identity from <xref ref="trig-table"/> which could be used to transform our integrand.</p>
+                <statement>
+                    <p>
+                        Find an identity from <xref ref="trig-table"/> which could be used to transform our integrand.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>\sin(\alpha)\sin(\beta) = \dfrac{\cos(\alpha-\beta) - \cos(\alpha + \beta)}{2}</m>
+                    </p>
+                </answer>>
             </task>
             <task>
-                <p>Rewrite the integrand using the selected identity.</p>
+                <statement>
+                    <p>
+                        Rewrite the integrand using the selected identity.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>\sin(\theta)\sin(3\theta) = \dfrac{1}{2}(\cos(\theta - 3\theta) - \cos(\theta + 3\theta) = \dfrac{1}{2}(\cos (-2\theta) - \cos(4\theta))</m>
+                    </p>
+                </answer>
             </task>
             <task>
-                <p>Evaluate the integral.</p>           
+                <statement>
+                    <p>
+                        Evaluate the integral.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>\displaystyle \int \sin(\theta)\sin(3\theta)\, d\theta = \int \dfrac{1}{2}(\cos (-2\theta) - \cos(4\theta)) = \dfrac{1}{4}\sin(2\theta) - \dfrac{1}{8}\sin(4\theta) + C</m>
+                    </p>
+                </answer>>        
             </task>
     </activity>
     
