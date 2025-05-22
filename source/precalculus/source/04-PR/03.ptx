@@ -667,7 +667,7 @@ xml:id="intro-to-multiplicities">
     <task> 
       <statement>
         <p> Estimate where any local maximums and minimums may occur.</p>
-        </statement>
+      </statement>
         <answer>
           <p>
             Minimum occurs between <m>x=-1</m> and <m>x=2</m>.  Then a maximum at <m>x=3</m>
@@ -677,13 +677,18 @@ xml:id="intro-to-multiplicities">
   </activity>
 
   <activity xml:id="use-information-to-sketch-graph-of-polynomial">
-    <introduction>
-      <p> Sketch the graph of a function <m>f(x) </m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph. </p>
-    </introduction>
-    <ul><li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
-    <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
-    <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
-    </ul>
+    <statement>
+      <p>
+        Sketch the graph of a function <m>f(x) </m> that meets all of the 
+        following criteria. Be sure to scale your axes and label any important 
+        features of your graph.
+        <ul>
+          <li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
+          <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
+          <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
+        </ul>
+      </p>
+    </statement>
     <answer>
       <p>
         One such graph is

@@ -26,33 +26,12 @@ def build_preview(book:str, outcome:str, amount:int = 20):
 
     # destroy any existing sandbox
     shutil.rmtree(sandbox_path, ignore_errors=True)
+    shutil.copytree(exercise_path, sandbox_bank_path, dirs_exist_ok=True)
 
-    # create new sandbox with that outcome
-    sandbox_bank_path.mkdir(parents=True)
-    (sandbox_bank_path/"bank.xml").write_text(f"""
-    <?xml version='1.0' encoding='UTF-8'?>
-    <bank xmlns="https://checkit.clontz.org" version="0.2">
-        <title>Preview: {book} {outcome}</title>
-        <slug>preview</slug>
-        <url>https://tbil.org</url>
-        <outcomes>
-            <outcome>
-                <title>{outcome_ele.find("{*}title").text}</title>
-                <slug>{outcome}</slug>
-                <path>outcome</path>
-                <description>{outcome_ele.find("{*}description").text}</description>
-            </outcome>
-        </outcomes>
-    </bank>
-    """.strip())
-    (sandbox_bank_path/"outcome").mkdir(exist_ok=True)
-    outcome_path = (exercise_path/outcome_ele.find("{*}path").text)
-    shutil.copy(outcome_path/"template.xml", sandbox_bank_path/"outcome"/"template.xml")
-    shutil.copy(outcome_path/"generator.sage", sandbox_bank_path/"outcome"/"generator.sage")
-
+    outcome_path = outcome_ele.find("{*}path").text
 
     # quick and dirty validation
-    template_root = ET.parse(sandbox_bank_path/"outcome"/"template.xml")
+    template_root = ET.parse(sandbox_bank_path/outcome_path/"template.xml")
     valid_tags = ["knowl", "title", "intro", "content", "outtro", "p", "list", "item", "m", "me",
                 "q", "c", "em", "url", "image"]
     for b in template_root.xpath('//*'):
@@ -61,29 +40,12 @@ def build_preview(book:str, outcome:str, amount:int = 20):
             raise Exception(f"Template includes an invalid SpaTeXt tag: ${b.tag}")
 
 
-    b = Bank(str(sandbox_path/"bank"))
-    print(f"Generating {amount} exercises")
-
-    # build {amount} seeds and images
-    cmds = [
-        "sage",
-        os.path.join("scripts", "_preview_outcome.sage"),
-        outcome, 
-        f"{amount}"
-    ]
-    subprocess.run(cmds,check=True)
-
+    b = Bank(str(sandbox_bank_path))
+    b._outcomes = [o for o in b._outcomes if o.slug.lower() == outcome.lower()]
+    b.title = f"Preview of {b.title}: {outcome}"
+    b.generate_exercises(regenerate=True,images=True,amount=amount)
     b.write_json()
-
-    # b.build_viewer() # <-- broken, reimplemented below
-    docs_path = os.path.join(b.abspath(), "docs")
-    if os.path.exists(docs_path) and os.path.isdir(docs_path):
-        shutil.rmtree(docs_path)
-    os.makedirs(docs_path)
-    archive = zipfile.ZipFile(static.open_resource("viewer.zip"))
-    archive.extractall(docs_path)
-    # copy assets
-    shutil.copytree(b.build_path(), os.path.join(docs_path, "assets"), dirs_exist_ok=True)
+    b.build_viewer()
 
     return sandbox_bank_path
 

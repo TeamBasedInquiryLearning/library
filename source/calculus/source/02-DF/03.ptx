@@ -12,7 +12,11 @@
   <subsection>
     <title>Activities</title>
     
-    <observation> We know how to find the derivative function using the limit definition of the derivative.  From the activities in the previous section, we have seen that this process gets cumbersome when the functions are more complicated.  In this section we will discuss shortcuts to calculate derivatives, known as <q>differentiation rules</q>.</observation>
+    <observation> 
+        <p> 
+            We know how to find the derivative function using the limit definition of the derivative.  From the activities in the previous section, we have seen that this process gets cumbersome when the functions are more complicated.  In this section we will discuss shortcuts to calculate derivatives, known as <q>differentiation rules</q>.
+        </p>
+    </observation>
     
   <activity xml:id="activity-derivative-elementary1">
     <introduction>
@@ -29,6 +33,11 @@
                 <li><p>Does not exist</p></li>
             </ol>
       </statement>
+      <answer>
+        <p>
+            B: 1
+        </p>
+      </answer>
       </task>
       
       <task>
@@ -41,6 +50,11 @@
                 <li><p><m>2x+1</m> </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                C: <m>2x</m>
+            </p>
+          </answer>
       </task>
       
       <task>
@@ -53,6 +67,11 @@
                 <li><p><m>-3x^2+3x</m></p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                A: <m>3x^2</m>
+            </p>
+          </answer>
       </task>
       
       <task>
@@ -65,7 +84,12 @@
                 <li><p><m>4x^3</m></p></li>
             </ol>
           </statement>
-      </task>
+          <answer>
+        <p>
+            D: <m>4x^3</m>
+        </p>
+      </answer>
+        </task>
   </activity>
     
 <theorem xml:id="thm-power-rule-derivative">
@@ -89,6 +113,14 @@
                 <li>The derivative of <m>y = x^{-17}</m> is <m>y' = -17x^{-16}.</m></li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                The statements B and C are true.
+            </p>
+            <p>
+                A should be <m>y' = 10x^9</m> and D should be <m>-17x^{-18}</m>.
+            </p>
+        </answer>
     </activity>
     <theorem  xml:id="def-constant-derivative">
     <title>The Derivative of a Constant Function</title><p> If <m>f(x) = c</m>, for some constant real number <m>c</m>, then <m>f'(x) = 0</m>.
@@ -105,6 +137,11 @@
             </ol>
         </p>
         </statement>
+        <answer>
+            <p>
+                Only B is true.
+            </p>
+        </answer>
     </activity>
     <theorem xml:id="def-constmult-derivative">
    <title>The Scalar Multiple Rule</title> <p>If <m>c</m> is a real number and <m>f(x)</m> is a differentiable function, then using the Scalar Multiple Law for limits, we have that
@@ -122,6 +159,11 @@
             </ol>
         </p>
         </statement>
+        <answer>
+            <p>
+                C: <m>y'(x) = 8x^{-1/3}.</m>
+            </p>
+        </answer>
     </activity>
     <theorem xml:id="def-sumdiff-derivative">
     <title>The Sum/Difference Rule</title> <p>If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then using the Sum/Differences Law for limits, we have that
@@ -138,15 +180,26 @@
                 <li><m>f'(x) = ax + b, \, f''(x)=a.</m></li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                C: <m>f'(x) = 2ax + b , \, f''(x)=2a.</m>
+            </p>
+        </answer>
     </activity>
     
-    <activity xml:id="neg-fract-powers"><introduction><p>We can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \dfrac{1}{x^4}</m>. What is the derivative of these two functions?</p></introduction>
-     <ol marker="A." cols="2">
+    <activity xml:id="neg-fract-powers"><statement><p>We can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \dfrac{1}{x^4}</m>. What is the derivative of these two functions?</p>
+    <ol marker="A." cols="2">
                 <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^3}.</m></li>
                  <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^5}.</m></li>
                 <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^3}.</m></li>
                 <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^5}.</m></li>
             </ol>
+    </statement>
+    <answer>
+        <p>
+            D: <m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^5}.</m>
+        </p>
+    </answer>
     </activity>
     
     <theorem xml:id="thm-expon-derivative">
@@ -174,6 +227,11 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
                 <li><m>g''(x) = e^x.</m></li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                B: <m>g''(x) = e(e-1)x^{e-2} + e^x.</m>
+            </p>
+        </answer>
     </activity>
     
     <theorem xml:id="def-trig-derivative">
@@ -191,6 +249,11 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
             </ol>
             
         </statement>
+        <answer>
+            <p>
+                E: <m>f'(x) = 7\cos(x) + 2e^x + x^{-2/3}.</m>
+            </p>
+        </answer>
     </activity>
     
     <theorem xml:id="def-log-derivative">
@@ -206,6 +269,11 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
                 <li>The derivative of <m>y = \ln(x^{2})</m> is <m>y' = \dfrac{2}{x}</m>.</li>
         </ol>
         </statement>
+        <answer>
+            <p>
+                C: The derivative of <m>y = \dfrac{2}{3}\ln(x)</m> is <m>y' = \dfrac{3}{2x}.</m>
+            </p>
+        </answer>
     </activity>
     
     <activity xml:id="checkit-DF3">
@@ -216,19 +284,40 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
         </p></introduction>
         
                 <task>
-                    <p>
-<me>g(x) = 2 \, \cos\left(x\right) - 3 \, e^x</me>
-                    </p>
+                    <statement>
+                        <p>
+                        <me>g(x) = 2 \, \cos\left(x\right) - 3 \, e^x</me>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p>
+                            <m>-2\sin(x) -3e^x</m>
+                        </p>
+                    </answer>
                 </task>
                 <task>
-                    <p>
-<me>h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}</me>
-                    </p>
+                    <statement>
+                        <p>
+                        <me>h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}</me>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p>
+                            <m>\dfrac{7}{5}w^{2/5} -30w^{-6}=\dfrac{7\sqrt[5]{w^2}}{5}-\dfrac{30}{w^6}</m>
+                        </p>
+                    </answer>
                 </task>
                 <task>
-                    <p>
-<me>f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8</me>
-                    </p>
+                    <statement>
+                        <p>
+                        <me>f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8</me>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p>
+                            <m>-20t^4 + 15t^2 + 1</m>
+                        </p>
+                    </answer>
                 </task>
        
   <!--  <answer>
@@ -251,34 +340,95 @@ While <m>\log</m> is sometimes used to denote the <q>common logarithm</q> base <
         </ol>
     </answer>-->
 </activity>
-    
-      <activity xml:id="der-exp-context">
-<p>
-  Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m> minutes after forgetting it on a bench outside, is given by the function
-    <me>f(t) = 40 \, (0.5)^t + 50</me>
-    Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your result in the context of this problem. </p>
-</activity>
-    
-   
-    <activity xml:id="polynomials-tangent-slope"><introduction><p>In this activity you will use our first derivative rules to study the slope of tangent lines. </p></introduction>
-        <task><p> The graph of <m>y=x^3-9x^2-16x+1</m> has a slope of 5 at two points.  Find the coordinates of these points. </p></task>
-<task><p>        
-Find the equations of the two lines tangent to the parabola <m>y=(x-2)^2</m> which pass through the origin. You will want to think about slope in two ways: as the derivative at <m>x=a</m> and the rise over the run in a linear function through the origin and the point <m>(a, f(a))</m>. Use a graph to check your work and sketch the tangent lines on your graph.
-    </p></task>
-    </activity>
-    
-   
-    <activity xml:id="approx-shape-der">
-<p>
-Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial
-<m> q(x) = ax^2 +bx +c </m> that best approximates the graph of <m>f(x)=e^x</m> at <m>x=0</m>. This means choosing <m>a,b,c</m> such that </p>
-<ul>
-    <li><m>q(0) = f(0)</m></li>
-    <li><m>q'(0) = f'(0)</m></li>
-    <li><m>q''(0) = f''(0)</m></li>
-    </ul> 
-  <p>Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m> at zero will involve some parameters. You can solve for these parameters using the equations above.</p>
-      </activity>
+
+        <activity xml:id="der-exp-context">
+            <statement>
+                <p>
+                    Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m>
+                    minutes after forgetting it on a bench outside, is given by the function <me>f(t) =
+                    40 \, (0.5)^t + 50</me> Find <m>f(1)</m> and <m>f'(1)</m> and try to interpret your
+                    result in the context of this problem.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>f(1) = 70</m>. This means that: 1 minute after forgetting a cup of coffee on
+                    the bench outside, the temperature of the cup of coffee is given by 70 degrees
+                    Fahrenheit.
+                </p>
+                <p>
+                    <m>f'(1) = 20\ln(0.5)\approx -13.86</m>. This means that: 1 minute after
+                    forgetting a cup of coffee on the bench outside, the temperature of the cup of
+                    coffee is decreasing by 13.86 degrees Fahrenheit per minute.
+                </p>
+            </answer>
+        </activity>
+
+
+        <activity xml:id="polynomials-tangent-slope">
+            <introduction>
+                <p>In this activity you will use our first derivative rules to study the slope of
+                    tangent lines. </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p> The graph of <m>y=x^3-9x^2-16x+1</m> has a slope of 5 at two points. Find
+                        the coordinates of these points. </p>
+                </statement>
+                <answer>
+                    <p> The <m>x-</m>coordinates are <m>x=-1, x=7</m>; so, the coordinates are <m>
+                        (-1,7)</m> and <m>(7,-209)</m>. </p>
+                </answer>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Find the equations of the two lines tangent to the parabola <m>y=(x-2)^2</m>
+                        which pass through the origin. You will want to think about slope in two ways:
+                        as the derivative at <m>x=a</m> and the rise over the run in a linear function
+                        through the origin and the point <m>(a, f(a))</m>. Use a graph to check your
+                        work and sketch the tangent lines on your graph.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>y = 0</m> and <m>y = -8x</m>
+                    </p>
+                </answer>
+            </task>
+        </activity>
+
+
+        <activity xml:id="approx-shape-der">
+            <statement>
+                <p>
+                    Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial <m> q(x)
+                    = ax^2 +bx +c </m> that best approximates the graph of <m>f(x)=e^x</m> at <m>x=0</m>.
+                    This means choosing <m>a,b,c</m> such that
+                    <ul>
+                        <li>
+                            <m>q(0) = f(0)</m>
+                        </li>
+                        <li>
+                            <m>q'(0) = f'(0)</m>
+                        </li>
+                        <li>
+                            <m>q''(0) = f''(0)</m>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m>
+                    at zero will involve some parameters. You can solve for these parameters using the
+                    equations above.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>a = \dfrac{1}{2}</m>, <m>b = c = 1</m>
+                </p>
+            </answer>
+        </activity>
          
 
     </subsection>
