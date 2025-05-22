@@ -103,6 +103,41 @@
       An inverse is a function that "undoes" another function. For any input in the domain, the function <m>g</m> will reverse the process of <m>f</m>.
     </p>
     </remark>
+
+    <activity>
+      <introduction>
+        <p>Let <m>f(x)=2x+7</m> and <m>g(x)=\dfrac{x-7}{2}</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>Compute <m>f(g(x))</m>.
+          </p>
+        </statement>
+        <answer>
+          <p><m>f(g(x))=x</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Compute <m>g(f(x))</m>.
+          </p>
+        </statement>
+        <answer>
+          <p><m>g(f(x))=x</m></p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>What can you conclude about <m>f(x)</m> and <m>g(x)</m>?
+          </p>
+        </statement>
+        <answer>
+          <p><m>f(x)</m> and <m>g(x)</m> are inverses of each other.</p>
+        </answer>
+      </task>
+    </activity>
+
     <activity xml:id="activity-inverse-exist">
       <introduction>
         <p> It is important to note that in  <xref ref="def-inverse-function" /> we say "if there exists a function," but we don't guarantee that this is always the case. How can we determine whether a function has a corresponding inverse or not?
