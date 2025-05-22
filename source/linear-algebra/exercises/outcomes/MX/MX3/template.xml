@@ -2,7 +2,9 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Let <m>\mathcal{B}= {{vecset}}</m>, and <m>\vec{v}= {{v}}</m>.
+Let <m>\vec{v}= {{v}}</m> and <m>\mathcal B=\{\vec b_1,\vec b_2,\vec b_3\}</m>
+where <m>\vec b_1 = {{b_1}}</m>, <m>\vec b_2= {{b_2}}</m>,
+and <m>\vec b_3 = {{b_3}}</m>.
         </p>
     </intro>
     <knowl>
@@ -27,7 +29,7 @@ Explain and demonstrate how to use <m>M_\mathcal{B}</m> to express <m>\vec{v}</m
         </content>
         <outtro>
             <p>
-                <m>{{v}} = {{lin_combo_exp}}</m>
+                <m>\vec v = {{lin_combo_exp}}</m>
             </p>
         </outtro>
     </knowl>

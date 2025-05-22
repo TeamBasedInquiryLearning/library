@@ -15,7 +15,7 @@ class Generator(BaseGenerator):
                 for i in range(3)
             ],
             [
-                column_matrix(A.column(i))
+                LatexExpr(f"\\vec b_{i+1}")
                 for i in range(3)
             ],
         )
@@ -23,5 +23,7 @@ class Generator(BaseGenerator):
             "M_B": A^(-1),
             "v": old_vector,
             "lin_combo_exp": lin_combo_exp,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "b_1": column_matrix(A.columns()[0]),
+            "b_2": column_matrix(A.columns()[1]),
+            "b_3": column_matrix(A.columns()[2]),
         }
