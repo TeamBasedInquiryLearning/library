@@ -90,18 +90,7 @@
       </answer>
     </task>
 
-    <task>
-    <statement>
-      <p>
-        Recall that one complete revolution is <m>2\pi</m>, so the positive <m>x</m>-axis can correspond to either an angle of <m>0</m> or <m>2\pi</m> radians (or <m>4\pi</m>, or <m>6\pi</m>, or <m>-2\pi</m>, or <m>-4\pi</m>, etc. depending on the direction of rotation). How can we represent all the possible solutions to the equation if there are <m>n</m> complete revolutions (where <m>n=0, \pm1, \pm2,...</m>)?
-      </p>
-    </statement>
-    <answer>
-      <p>
-        <m>\theta=\frac{\pi}{6}+2\pi(n)</m> and <m>\theta=\frac{5\pi}{6}+2\pi(n)</m>
-      </p>
-    </answer>
-    </task>
+  
     </activity>
 
     <remark>
@@ -110,13 +99,103 @@
     </p>
     </remark>
 
-    <definition xml:id="general-solution">
+    <definition xml:id="def-general-solution">
       <p>
         In many cases, you will be asked to find the solution to a trigonometric equation within a given interval (such as <m>[0, 2\pi)</m>). If, however, you are asked to find the <term>general solution</term> of a trigonometric equation (like in <xref ref="intro-to-trig-equations"/>), you need to include all solutions. This requires the notation below, which includes all angles coterminal with the solutions in the interval <m>[0, 2\pi)</m>.  If <m> \alpha</m> is a solution to a trigonometric equation, then the general solution would be 
        <me>\theta = \alpha + 2\pi n, n \in \mathbb{Z} </me> 
       where <m>\mathbb{Z} </m> represents the set of integers.
 </p>
     </definition>
+
+    <activity xml:id="finding-general-solution">
+
+      <introduction>
+        <p>
+          From <xref ref="intro-to-trig-equations"/>, we were able to determine two values (<m>\frac{\pi}{6}</m> and <m>\frac{5\pi}{6}</m>) that satisfy the equation <m>2\sin\theta-1=0</m> within the interval <m>[0,2\pi)</m>. In this activity, we will explore other values of <m>\theta</m> that also satisfy the equation.
+        </p>
+      </introduction>
+
+      <task>
+    <statement>
+      <p>
+         If we know that <m>\frac{\pi}{6}</m> is a solution to <m>2\sin\theta-1=0</m>, determine whether <m>\frac{\pi}{6}+2\pi</m> is a solution.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Recall that one complete revolution is <m>2\pi</m>, so the positive <m>x</m>-axis can correspond to either an angle of <m>0</m> or <m>2\pi</m> radians (or <m>4\pi</m>, or <m>6\pi</m>, or <m>-2\pi</m>, or <m>-4\pi</m>, etc. depending on the direction of rotation).
+      </p>
+    </hint>
+    <answer>
+      <p>
+        <m>\frac{\pi}{6}+2\pi</m> is a solution to the equation <m>2\sin\theta-1=0</m>.
+      </p>
+      <p>
+        Students can think of this in a couple different ways. They can use the idea that <m>2\pi</m> is one revolution, which means that <m>\frac{\pi}{6}+2\pi</m> is just one revolution from <m>\frac{\pi}{6}</m>. Hence, the sine value will yield the same <m>y</m>-value.
+      </p>
+      <p>
+        Students may also find the value of <m>\frac{\pi}{6}+2\pi</m>, which is <m>\frac{13\pi}{6}</m>. Then, they can plug this value in for <m>\theta</m> to determine if <m>\frac{\pi}{6}+2\pi</m> is a solution.
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Determine if <m>\frac{\pi}{6}-2\pi</m> is a solution to the equation <m>2\sin\theta-1=0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\pi}{6}-2\pi</m> is a solution to the equation <m>2\sin\theta-1=0</m>. Students may use similar reasoning as part (a), but in this case, subtracting <m>2\pi</m> means that one revolution is in the counter clockwise direction.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Determine if <m>\frac{\pi}{6}+\frac{\pi}{2}</m> is a solution to the equation <m>2\sin\theta-1=0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\pi}{6}+\frac{\pi}{2}</m> is NOT a solution to the equation <m>2\sin\theta-1=0</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What other solutions can you find to the equation <m>2\sin\theta-1=0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should see that any coterminal angle will yield the same value and thus, there will be an infinite number of solutions to this equation.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+        <statement>
+          <p>
+            Refer back to parts (a) and (b) and use <xref ref="def-general-solution"/> to find the general solution to <m>2\sin\theta-1=0</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            As we see in parts (a) and (b), there are more angles that solve the equation. In fact, any angle coterminal with the either of the angles we found will also be solutions. That means, we can add or subtract any multiple of <m>2\pi</m> to the solutions to find another solution.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            The notation we use for this is <m>\theta = \dfrac{\pi}{6}+2\pi n</m> and <m>\theta = \dfrac{5\pi}{6}+2\pi n</m> where <m>n</m> is an integer.
+          </p>
+        </answer>
+      </task>
+    </activity>
 
     <activity xml:id="solving-factored-form">
     <introduction>
@@ -128,7 +207,7 @@
     <task>
     <statement>
     <p>
-    Refer back to the Zero Product Property <xref ref="def-zero-product-property"/>. What equations do we need to solve?
+      Refer back to the Zero Product Property <xref ref="def-zero-product-property"/>. What equations do we need to solve?
     </p>
     </statement>
     <answer>
@@ -201,10 +280,10 @@
           <m>\theta=0+2\pi(n)</m>
         </p>
         <p>
-          <m>\theta=\frac{4\pi}{3}+2\pi(n)</m>
+          <m>\theta=\frac{4\pi}{3}+2\pi(n) n \in \mathbb{Z}</m>
         </p>
         <p>
-          <m>\theta=\frac{5\pi}{3}+2\pi(n)</m>
+          <m>\theta=\frac{5\pi}{3}+2\pi(n) n \in \mathbb{Z}</m>
         </p>
       </answer>
     </task>
@@ -506,7 +585,7 @@
       <task>
         <statement>
           <p>
-            To undo a squared term, you will need to take the square root (recall square root property). Take the square root of <m>\sin^2\theta</m> to get <m>\sin\theta</m>. What does <m>\sin\theta</m> equal?
+            To undo a squared term, you will need to take the square root (recall <xref ref="def-square-root-property"/>). Take the square root of <m>\sin^2\theta</m> to get <m>\sin\theta</m>. What does <m>\sin\theta</m> equal?
             <ol marker= "A." cols="4">
             <li> <m>\pm\sqrt{\frac{1}{2}}</m> </li>
             <li> <m>\pm\frac{1}{\sqrt{2}}</m> </li>
@@ -705,16 +784,16 @@
             Solve each of the equations you got in part (c). What value(s) of <m>\theta</m> satisfy both equations on the interval <m>[0, 2\pi)</m>?
             <ol marker= "A." cols="3">
             <li> <m>0</m> </li>
-            <li> <m>\frac{5\pi}{6}</m> </li>
-            <li> <m>\frac{3\pi}{4}</m> </li>
-            <li> <m>\frac{\pi}{4}</m> </li>
-            <li> <m>\frac{7\pi}{4}</m> </li>
-            <li> <m>2\pi</m> </li></ol>
+            <li> <m>\dfrac{\pi}{2}</m> </li>
+            <li> <m>\pi</m> </li>
+            <li> <m>\dfrac{3\pi}{2}</m> </li>
+            <li> <m>\dfrac{\pi}{4}</m> </li>
+            <li> <m>\dfrac{3\pi}{4}</m> </li></ol>
           </p>
         </statement>
         <answer>
           <p>
-            A, C, and D
+            B, D, E, and F
           </p>
         </answer>
       </task>
@@ -724,14 +803,14 @@
 
     <introduction>
       <p>
-        Consider the equation <m>2\cos^2\theta-5\cos\theta+3=0</m>.
+        Consider the equation <m>2\cos^2\theta-5\cos\theta-3=0</m>.
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
-           Suppose we replace every <m>\cos\theta</m> with <m>x</m> to get <m>2x^2-5x+3=0</m>. What are the factors of this equation?
+           Notice that this trigonometric equation looks similar to a quadratic equation. Let's we replace every <m>\cos\theta</m> with <m>x</m> to get <m>2x^2-5x-3=0</m>. What are the factors of the left hand side of this equation?
            <ol marker= "A." cols="2">
             <li> <m>(2x+1)</m> </li>
             <li> <m>(x+3)</m> </li>
@@ -828,7 +907,7 @@
     <task>
       <statement>
         <p>
-          <m>\cos^2\theta-\cos\theta=4</m>
+          <m>2\cos^2\theta-\cos\theta=3</m>
         </p>
       </statement>
       <hint>
@@ -846,12 +925,12 @@
     <task>
       <statement>
         <p>
-          <m>2\cos^2\theta-4=7\cos\theta</m>
+          <m>2\sin^2\theta-4=7\sin\theta</m>
         </p>
       </statement>
       <answer>
         <p>
-          <m>\theta=\frac{2\pi}{3}, \frac{4\pi}{3}</m>
+          <m>\theta=\frac{7\pi}{6}, \frac{11\pi}{6}</m>
         </p>
       </answer>
     </task>
@@ -931,11 +1010,6 @@
           Solve for <m>\theta</m>.
         </p>
       </hint>
-      <aside>
-        <p>
-        Recall that  <m>y=\sin(2\theta)</m> is a horizontal compression by a factor of <m>2</m> of the function  <m>y=\sin\theta</m>. On an interval of <m>2\pi</m>, we can graph two periods of  <m>y=\sin(2\theta)</m>, as opposed to one cycle of <m>y=\sin\theta</m>. This compression of the graph suggests there may be twice as many <m>x</m>-intercepts or solutions to  <m>\sin(2\theta)=\frac{1}{2}</m> compared to  <m>\sin\theta=\frac{1}{2}</m>.
-        </p>
-      </aside>
       <answer>
         <p>
           <m>\theta=\frac{\pi}{12}+\pi(n)</m>
@@ -949,7 +1023,7 @@
     <task>
       <statement>
         <p>
-         We now need to find all values of <m>\theta</m> that satisfy our original equation  on the interval <m>[0, 2\pi)</m>. We can find these angles by substituting values of <m>n</m> in the general solution. We will start with <m>n=0</m>. What values of <m>\theta</m> result when $n=0$? Are these angles on the interval <m>[0, 2\pi)</m>?
+         We now need to find all values of <m>\theta</m> that satisfy our original equation  on the interval <m>[0, 2\pi)</m>. We can find these angles by substituting values of <m>n</m> in the general solution. We will start with <m>n=0</m>. What values of <m>\theta</m> result when <m>n=0</m>? Are these angles on the interval <m>[0, 2\pi)</m>?
         </p>
       </statement>
       <answer>
@@ -997,7 +1071,23 @@
     <task>
       <statement>
         <p>
-          Look back at parts (d)-(f). What are all the solutions to <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+           Let's now try negative values of <m>n</m>. Suppose <m>n=-1</m>. What values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+      <p>
+          <m>\theta=\frac{\pi}{12}+\pi(-1)=\frac{-11\pi}{12}</m>, but this value is too small!
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{12}+\pi(-1)=\frac{-7\pi}{12}</m>, but this value is too small!
+        </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Look back at parts (d)-(g). Notice that that once we reach values outside of <m>[0,2\pi)</m> in either direction, we can stop substituting values of <m>n</m> in that direction. What are all the solutions to <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
         </p>
       </statement>
       <answer>
@@ -1007,6 +1097,12 @@
       </answer>
     </task>
 </activity>
+
+<observation>
+        <p>
+        Recall that  <m>y=\sin(2\theta)</m> is a horizontal compression by a factor of <m>2</m> of the function  <m>y=\sin\theta</m>. On an interval of <m>2\pi</m>, we can graph two periods of  <m>y=\sin(2\theta)</m>, as opposed to one cycle of <m>y=\sin\theta</m>. This compression of the graph suggests there may be twice as many <m>x</m>-intercepts or solutions to  <m>\sin(2\theta)=\frac{1}{2}</m> compared to  <m>\sin\theta=\frac{1}{2}</m>.
+        </p>
+</observation>
 
     </subsection>
 
