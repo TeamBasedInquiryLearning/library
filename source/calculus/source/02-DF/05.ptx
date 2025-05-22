@@ -355,9 +355,9 @@
                                 x = var('x')
                                 f = 2*sgn(x)
                                 p1 = plot(f,(x,-4,-0.05), gridlines=True,
-                                axes_labels=('$x$','$a(x)$'), thickness=2)
+                                    axes_labels=('$x$','$a(x)$'), thickness=2)
                                 p2 = plot(f,(x,.05,4), gridlines=True, axes_labels=('$x$','$a(x)$'),
-                                thickness=2)
+                                    thickness=2)
                                 c1 = circle((0,-2),0.05,fill=True,facecolor='white',thickness=1)
                                 c2 = circle((0,2),0.05, fill=True,facecolor='blue', thickness=1)
                                 p1+p2+c1+c2
@@ -367,9 +367,8 @@
                             <sageplot>
                                 x = var('x')
                                 f = -abs(x)+2
-                                p =
-                                plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'),
-                                aspect_ratio=1)
+                                p = plot(f,(x,-4,4),gridlines=True,thickness=2,axes_labels=('$x$','$b(x)$'),
+                                    aspect_ratio=1)
                                 p
                             </sageplot>
                         </image>

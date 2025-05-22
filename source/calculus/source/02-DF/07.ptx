@@ -148,8 +148,7 @@
           <image width="70%">
             <sageplot>
               x = var('x')
-              p =
-              parametric_plot((cos(x)/(1+(sin(x))^2),(cos(x)*sin(x))/(1+(sin(x))^2)),(x,0,2*pi),thickness=2,axes_labels=('$x$','$y$'))
+              p = parametric_plot((cos(x)/(1+(sin(x))^2),(cos(x)*sin(x))/(1+(sin(x))^2)),(x,0,2*pi),thickness=2,axes_labels=('$x$','$y$'))
               p
             </sageplot>
           </image>
