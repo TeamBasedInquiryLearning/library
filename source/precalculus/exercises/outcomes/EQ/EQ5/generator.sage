@@ -1,7 +1,7 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
 
 class Generator(BaseGenerator):
-  irrational_dict = TBILPrecal.small_irrationals(rational_part=[-8..1,1..8],full_list=True)
+  irrational_dict = TBIL.small_irrationals(rational_part=[-8..-1,1..8],full_list=True)
   def data(self):
     
 
@@ -27,17 +27,19 @@ class Generator(BaseGenerator):
 
     #Completing the square
 
-    a=choice([-7..7])
+    a=choice([-7..-1,1..7])
     b=choice([i for i in [-1*a^2+5,..,10] if not (i+a^2).is_square()])
     r1=-1*a+sqrt(b+a^2)
     r2=-1*a-sqrt(b+a^2)
     equations.append( { "equation":  x^2+2*a*x== b , "method":"completing the square", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)} "})
 
     #Quadratic Equation
-    irrational = choice(list(self.irrational_dict.keys()))
-    r1,r2=irrational
-    c=self.irrational_dict[irrational]
-    equations.append( { "equation": c^2*x^2-(r1+r2)*c^2*x == expand(-1*c^2*r1*r2), 
+    a=choice([1..3])
+    b=choice([2*i+1 for i in [-3..3]])*a
+    c=choice([i for i in [-6..6] if b^2-4*a*i>0 and not (b^2-4*a*i).is_square()])
+    r1=(-b+sqrt(b^2-4*a*c))/(2*a)
+    r2=(-b-sqrt(b^2-4*a*c))/(2*a)
+    equations.append( { "equation": a*x^2+b*x == -1*c, 
                        "method":"the quadratic formula", "roots": f"{latex(r1)}\\text{{ and }}{latex(r2)}"})
     shuffle(equations)
 
@@ -48,7 +50,7 @@ class Generator(BaseGenerator):
     imaginary_roots = f"{latex(r1)}\\text{{ and }}{latex(r2)}"
 
     return {
-      "equations": equations,
+      "equations": [ {"equation": f"{latex(eq['equation'].lhs())}={latex(eq['equation'].rhs())}", "method": eq['method'], "roots": eq['roots']} for eq in equations],
       "imaginary_equation": imaginary_equation,
       "imaginary_roots": imaginary_roots
     } 

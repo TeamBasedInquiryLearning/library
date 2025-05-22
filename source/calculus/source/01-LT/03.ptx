@@ -13,22 +13,28 @@
     <title>Activities</title>
     
     <remark>
-         <statement>
             <p>Recall that in <xref ref="activity-limits-numerically4"/> we used numerical methods and table of values to find the limit of a relatively simple degree three polynomial at a point. This was inefficient, “there’s gotta be a better way!”</p>
-              </statement>
     </remark>
     
     <activity xml:id="activity-limits-analytically1">
+      <statement>
             <p>Given <m>f(x)=3x^2-\dfrac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\displaystyle \lim_{x\to2}f(x)</m> numerically (or graphically). What do you think is more likely?</p>
       <ol marker="A." cols="2">
                 <li><m>\displaystyle \lim_{x \to 2}f(x)=f(2)</m></li>
                 <li><m>\displaystyle \lim_{x \to 2}f(x) \approx f(2)</m></li>
                 <li><m>\displaystyle \lim_{x \to 2}f(x) \neq f(2)</m></li>
             </ol>
+      </statement>
+            <answer>
+              <p>
+                <m> f(2)= 15 </m> and 
+                  <m>\displaystyle \lim_{x \to 2}f(x)=f(2)</m>
+              </p>
+            </answer>
     </activity>
     
     <activity xml:id="activity-limits-analytically2">
-        <introduction> 
+        <statement> 
             <p>The table below gives values of a few different functions.</p>
             <table xml:id="table-activity-limits-analytically2">
               <tabular>
@@ -136,16 +142,22 @@
                 </row>
               </tabular>
             </table>
-            <p>Using the table above, which of the following is <em>least</em> likely to be true?</p> </introduction>
+            <p>Using the table above, which of the following is <em>least</em> likely to be true?</p> 
       <ol marker="A.">
                 <li><m>\displaystyle \lim_{x\to 7}f(x)= 14</m> and <m>\displaystyle \lim_{x\to 7}g(x)= 23</m></li>
                 <li><m>\displaystyle \lim_{x \to 7}3f(x) = 3  \lim_{x\to 7}f(x)</m></li>
                 <li><m>\displaystyle \lim_{x\to 7}\left( f(x)+g(x) \right) = \lim_{x\to 7}f(x) + \lim_{x\to 7}g(x)</m></li>
                 <li><m>\displaystyle \lim_{x\to 7}\left( f(x)g(x) \right) =f(7)   \left( \lim_{x\to 7}g(x) \right)</m></li>
             </ol>
+        </statement>
+            <answer>
+              <p>
+                D. <m>\displaystyle \lim_{x\to 7}\left( f(x)g(x) \right) =f(7)   \left( \lim_{x\to 7}g(x) \right)</m>
+              </p>
+            </answer>
     </activity>
     
-    <remark> <statement><p> In  <xref ref="activity-limits-analytically2"/> we observed that limits seem to be "well-behaved" when combined with standard operations on functions. The next theorems, known as <term>Limit Laws</term>, tell us how limits interact with combinations of functions. </p></statement></remark>
+    <remark><p> In  <xref ref="activity-limits-analytically2"/> we observed that limits seem to be "well-behaved" when combined with standard operations on functions. The next theorems, known as <term>Limit Laws</term>, tell us how limits interact with combinations of functions. </p></remark>
     <theorem xml:id="theorem-limit-laws-1">
         <title>Limit Laws, I</title>
             <statement>
@@ -176,7 +188,18 @@
                 <li><m>\displaystyle \lim_{x\to 2} (f(x) - g(x)) = -2</m></li>
                 <li><m>\displaystyle \lim_{x\to 2} (f(x)/g(x)) = -2/3</m></li>
             </ol>
-        </statement>
+            </statement>
+            <answer>
+              <p>
+                A. <m>\displaystyle \lim_{x\to 2} (f(x) \cdot g(x)) = -6</m>
+              </p>
+              <p>
+                B. <m>\displaystyle \lim_{x\to 2} (f(x) + g(x)) = -1</m>
+              </p> 
+              <p>
+                D. <m>\displaystyle \lim_{x\to 2} (f(x)/g(x)) = -2/3</m>
+              </p>
+            </answer>
     </activity>
 
     
@@ -187,12 +210,12 @@
                 <me>
                 \lim_{x \to c} f(x) = L, \,  \, \, \, \lim_{x \to L} g(x) = K,  \text{and} \, g(L)=K.
                 </me> Then we have the following limits as well.
-            </p>
             <ol>
                 <li>Power Law: <m>\displaystyle \lim_{x \to c} f(x)^n = L^n</m>, for  <m>n</m> a positive integer;</li>
                 <li>Root Law: <m>\displaystyle \lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}</m>, for  <m>n</m> a positive integer;</li>
                 <li>Composition Law: <m>\displaystyle \lim_{x \to c} g(f(x)) = K. </m></li>
             </ol>
+            </p>
         </statement>
     </theorem>
    
@@ -244,15 +267,44 @@
                   </sidebyside>
         </introduction>
  <task> <statement> <p> <m>\displaystyle \lim_{x \to 1} f(x) + g(x) </m>. </p>
-         </statement> </task>    
+ </statement>
+         <answer>
+          <p>
+            <m>\displaystyle \lim_{x \to 1} f(x) + g(x) = 2 </m>
+          </p>
+         </answer>
+          </task>    
  <task> <statement> <p> <m>\displaystyle \lim_{x \to 5^+} 3f(x)  </m>. </p>
-         </statement> </task>    
+ </statement>
+        <answer>
+          <p>
+            <m>\displaystyle \lim_{x \to 5^+} 3f(x)= 0 </m>
+          </p>
+         </answer>
+          </task>    
           <task> <statement> <p> <m>\displaystyle \lim_{x \to 0^+ } f(x)g(x)  </m>. </p>
-         </statement> </task>
-          <task> <statement> <p> (Challenge) <m>\displaystyle \lim_{x \to 1} g(x) / f(x) </m>. </p>
-         </statement> </task>
-             <task> <statement> <p> (Challenge) <m>\displaystyle \lim_{x \to 0^+} f(g(x)) </m>. </p>
-         </statement> </task>
+          </statement>
+         <answer>
+          <p>
+            <m>\displaystyle \lim_{x \to 0^+ } f(x)g(x) = 0 </m>
+          </p>
+         </answer>
+          </task>
+          <task> <statement> <p> (Challenge) <m>\displaystyle \lim_{x \to 1} g(x) / f(x) </m>. </p></statement>
+         <answer>
+          <p>
+            <m>\displaystyle \lim_{x \to 1} g(x) / f(x) </m> does not exist
+          </p>
+         </answer>
+          </task>
+             
+            <task> <statement> <p> (Challenge) <m>\displaystyle \lim_{x \to 0^+} f(g(x)) </m>. </p></statement>
+        <answer>
+          <p>
+           <m>\displaystyle \lim_{x \to 0^+} f(g(x))  </m> does not exist
+          </p>
+        </answer>
+          </task>
                   </activity>
     
     <activity xml:id="activity-limits-analytically4">
@@ -266,7 +318,23 @@
                 <li>Power Law</li>
                 <li>Constant Law</li>
             </ol>
-        </statement>
+            </statement>
+            <answer>
+              <p>
+                A. Sums/Difference Law
+              </p>
+              <p>
+                B. Scalar Multiple Law
+              </p>
+              <p>
+               D. Identity Law
+              </p>
+              <p>
+               F. Constant Law
+              </p>
+              
+            </answer>
+        
     </activity>
     
     
@@ -276,6 +344,7 @@
         <statement>
             <p>If  <m>p(x)</m> is a polynomial and <m>c</m> is a real number, then <m>\displaystyle \lim_{x \to c} p(x) = p(c)</m>. This is also known as the <term>Direct Substitution Property</term><idx>Direct Substitution Property</idx> for polynomials.
             </p>
+            
         </statement>
     </theorem>
     
@@ -290,7 +359,13 @@
                 <li>Quotient and root law</li>
 
             </ol>
-        </statement>
+            </statement>
+            <answer>
+              <p>
+                B.  <xref ref="theorem-limits-polynomials"/> and the quotient law.
+              </p>
+            </answer> 
+        
     </activity>
     
     <theorem xml:id="theorem-limits-rationals">
@@ -309,6 +384,12 @@
             <li>Yes, because we can use  <xref ref="theorem-limits-rationals"/>.</li>
         </ol>
         </statement>
+        <answer>
+          <p>
+           B.  Yes, because if you graph <m>f(x)=\dfrac{x^2-1}{x-1}</m>, the value <m>f(1)</m> is not defined, but the graph shows that the limit of <m>f(x)</m> does exist as <m>x \to 1</m>.
+          </p>
+        </answer>
+        
     </activity>
 
         
@@ -321,11 +402,17 @@
           <li><m>\displaystyle \lim_{x\to 0} (f(x)/g(x))</m> cannot be determined </li>
          <li><m>\displaystyle \lim_{x\to 0} (f(x)/g(x))</m> does not exist </li>
             </ol>
-        </statement>
+            </statement>
+            <answer>
+              <p>
+                B. <m>\displaystyle \lim_{x\to 0} (f(x)/g(x)) = 2 </m>
+              </p>
+            </answer>
+        
     </activity>
     
     <remark xml:id="zero-over-zero">
-    <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
+    <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\dfrac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p>
     </remark>
     
 <definition xml:id="def-hole"><statement><p>A function <m>f(x)</m> has a <term>hole</term><idx>hole</idx> at <m>x=c</m> if <m>f(c)</m> does not exist but <m>\displaystyle \lim_{x \to c} f(x)</m> does exist and is equal to a real number. </p></statement></definition>    
@@ -336,16 +423,31 @@
     </p></statement></example>
 
 <activity xml:id="limits-alg-checkit">
-    <statement>
+    <introduction>
         <p>
             Determine the following limits and explain your reasoning.
         </p>
-        
-            <task><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></task>
-            <task><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></task>
-        <task><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></task>
+        </introduction>
+            <task><statement><p><me>\lim_{x\to-6 } \dfrac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></p></statement>
+            <answer>
+              <p>
+                <m>\dfrac{77}{36}</m>
+              </p>
+            </answer></task>
+            <task><statement><p><me>\lim_{x\to-1 } \dfrac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></p></statement>
+            <answer>
+              <p>
+                <m>-2</m>
+              </p>
+            </answer></task>
+        <task><statement><p><me>\lim_{x\to5 } \dfrac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></p></statement>
+         <answer>
+              <p>
+                <m>12</m>
+              </p>
+            </answer>
+        </task>
        
-    </statement>
     </activity>
 
 
@@ -355,21 +457,52 @@
                 <p> In <xref ref = "activity-bolt1"/> you studied the velocity of Usain Bolt in his Beijing 100 meters dash. We will now study this situation analytically. To make our computations simpler, we will approximate that he could run 100 meters in 10 seconds and we will consider the model <m>d=f(t)=t^2</m>, where <m>d</m> is the distance in meters and <m>t</m> is the time in seconds. </p>
                   
                   <note xml:id="inst-velocity">
-                  <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m>\displaystyle  \dfrac{f(a+h)-f(a)}{(a+h) - a} = \dfrac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: </p>
-       <me> \lim_{h \to 0} \dfrac{f(a+h)-f(a)}{h}</me>. </note>
+                  <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m>\displaystyle  \dfrac{f(a+h)-f(a)}{(a+h) - a} = \dfrac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: 
+       <me> \lim_{h \to 0} \dfrac{f(a+h)-f(a)}{h}</me>.</p> </note>
     </introduction>
              <task> <statement> <p> Compute the average velocity on the interval <m>[5,6]</m>. We think of this interval as <m>[5,5+h]</m> for the value of <m>h=1</m>.</p>
-         </statement> </task>    
-              <task> <statement> <p> Compute the average velocity starting at 5 seconds, but now with <m>h=0.5</m> seconds. </p>
-         </statement> </task>  
-                      <task> <statement> <p>We want to study the instantaneous velocity at <m>a=5</m> seconds. Find an expression for the average velocity on the interval <m>[5,5+h]</m>, where <m>h</m> is an unspecified value.</p>
-         </statement> </task>
-                      <task> <statement> <p>Expand your expression. When <m>h \neq 0</m>, you can simplify it!</p>
-         </statement> </task>
-          <task> <statement> <p>Recall that the instantaneous velocity is the limit of your expression as <m>h\to 0</m>. Find the instantaneous velocity given by this model at <m>t=5</m> seconds.</p>
-         </statement> </task>
-            <task> <statement> <p> The model <m>d=f(t)=t^2</m> does not really capture the real-world situation. Think of at least one reason why this model does not fit the scenario of Usain Bolt's 100 meters dash. </p>
-         </statement> </task>
+         </statement> 
+         <answer>
+          <p>
+            11
+          </p>
+         </answer>
+         </task>    
+              <task> <statement> <p> Compute the average velocity starting at 5 seconds, but now with <m>h=0.5</m> seconds. </p></statement> 
+        <answer>
+          <p>
+            10.5
+          </p>
+        </answer>
+         </task>  
+                      <task> <statement> <p>We want to study the instantaneous velocity at <m>a=5</m> seconds. Find an expression for the average velocity on the interval <m>[5,5+h]</m>, where <m>h</m> is an unspecified value.</p></statement>
+         <answer>
+          <p>
+            <m> \dfrac{(5+h)^{2}-5^{2}}{h}  </m>
+          </p>
+         </answer>
+          </task>
+                      <task> <statement> <p>Expand your expression. When <m>h \neq 0</m>, you can simplify it!</p></statement>
+         <answer>
+          <p>
+            <m> 10+h </m>
+          </p>
+         </answer>
+          </task>
+          <task> <statement> <p>Recall that the instantaneous velocity is the limit of your expression as <m>h\to 0</m>. Find the instantaneous velocity given by this model at <m>t=5</m> seconds.</p></statement> 
+         <answer>
+          <p>
+            <m> 10 </m>
+          </p>
+         </answer>
+         </task>
+            <task> <statement> <p> The model <m>d=f(t)=t^2</m> does not really capture the real-world situation. Think of at least one reason why this model does not fit the scenario of Usain Bolt's 100 meters dash. </p></statement>
+        <answer>
+          <p>
+          With this model, instantaneous rate of change increases as time passes and  it doesn't capture that he slows down at the end, which is  not   a real-world situation. 
+          </p>
+        </answer>
+          </task>
     </activity>
     
     </subsection>
@@ -384,7 +517,7 @@
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/LT3/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/LT3/"/>
       </p>
     </subsection>
     

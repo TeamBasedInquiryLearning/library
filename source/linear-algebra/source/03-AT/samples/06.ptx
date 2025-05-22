@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <example xml:id="sample-AT6"><title>AT6</title>
     <statement>
+        <p>
         <ol>
             <li>
                 <p>
@@ -10,7 +11,6 @@ write a statement involving the solutions to a
 
 polynomial
 equation that's equivalent to each claim below.
-                </p>
                 <ul>
                     <li>
                         <p>
@@ -29,6 +29,7 @@ is linearly <em>dependent</em>.
                         </p>
                     </li>
                 </ul>
+                </p>
             </li>
             <li>
                 <p>
@@ -36,6 +37,7 @@ Explain how to determine which of these statements is true.
                 </p>
             </li>
         </ol>
+        </p>
     </statement>
     <solution>
                 <p>The set of polynomials <me>\left\{ x^{3} - 2 \, x^{2} + x + 2 , 2 \, x^{2} - 1 , -x^{3} + 3 \, x^{2} + 3 \, x - 2 , x^{3} - 6 \, x^{2} + 9 \, x + 5 \right\}</me>

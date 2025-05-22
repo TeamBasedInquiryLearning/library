@@ -1,4 +1,5 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
@@ -61,6 +62,7 @@ class Generator(BaseGenerator):
         R_eq_alt = R_eq.subs({x:a,y:b,z:c})
         R_eq_sum = R_eq.subs({x:x+a,y:y+b,z:z+c})
         R_eq_mul = R_eq.subs({x:k*x,y:k*y,z:k*z})
+
 
         return {
             "U_eq": U_eq,

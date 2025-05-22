@@ -12,11 +12,8 @@
     <subsection>
     <title>Activities</title>
     
-  <remark
-    xml:id="zeros-and-x-intercepts">
-      <statement>
+  <remark xml:id="zeros-and-x-intercepts">
         <p>Just like with quadratic functions, we should be able to determine key characteristics that will help guide us in creating a sketch of any polynomial function. We can start by finding both <m> x </m> and <m> y </m>-intercepts and then explore other characteristics polynomial functions can have. Recall that the <term>zeros</term> of a function are the <term><m>x</m>-intercepts </term> - i.e., the values of <m>x</m> that cross or touch the <m>x</m>-axis. Just like with quadratic functions, we can find the zeros of a function by setting the function equal to <m>0</m> and solving for <m>x</m>.</p>
-      </statement>
     </remark>
 
     <activity
@@ -72,7 +69,7 @@
         </task>
 <task> <statement><p> Now that we have found both the <m>x</m> and <m>y</m>-intercepts of <m>f(x)</m>, do we have enough information to draw a possible sketch of <m>f(x)</m>? What other characteristics would be useful to help us draw an accurate sketch of <m> f(x) </m>?</p></statement><answer>
   <p>
-    Answers may include, <m>x</m>-intercepts, end behaviour, max and min
+    Answers may include, <m>x</m>-intercepts, end behavior, max and min
   </p>
 </answer>
 </task>
@@ -199,15 +196,14 @@ Use the graphs of the following polynomial functions to answer the questions bel
   </statement>
 </definition>
 
-<activity
-    xml:id="degree-and-leading-coefficient-of-polynomial-graphs">
-      <introduction>
+<activity xml:id="degree-and-leading-coefficient-of-polynomial-graphs">
+      <introduction> <p>
 Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-functions"/> and look at the equations of those polynomial functions. Let's apply <xref ref="def-degree-and-leading-coefficient"/> to see if we can determine how the degree and leading coefficients of those graphs affect their end behavior.
 <ul><li> Graph A: <m>f(x)=-11x^3+32+42x^2+x^4-64x</m> </li>
   <li> Graph B: <m>g(x)=2x^2+3-4x^3</m></li>
   <li> Graph C: <m>h(x)=x^7+2x^3-5x^2+2</m></li>
   <li> Graph D: <m>j(x)=3x^2-2x^4-5</m></li> 
-</ul>
+</ul></p>
 <sbsgroup>
   <sidebyside width="50%">
     <image>
@@ -332,12 +328,10 @@ Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-func
     </activity>
 
     <remark xml:id="remark-end-behavior-chart">
-      <statement>
         <p> From <xref ref="degree-and-leading-coefficient-of-polynomial-graphs"/>, we saw that the degree and leading coefficient of a polynomial function can give us more clues about the behavior of the function. In summary, we know: 
           <ul><li>If the degree is even, the ends of the polynomial function will be going in the same direction. If the leading coefficient is positive, both ends will be pointing up. If the leading coefficient is negative, both ends will be pointing down. </li>
           <li> If the degree is odd, the ends of the polynomial function will be going in opposite directions. If the leading coefficient is positive, the left end will fall and the right end will rise. If the leading coefficient is negative, the left end will rise and the right end will fall.</li></ul>
         </p>
-      </statement>
     </remark>
 
     <definition xml:id="arrow-notation">
@@ -468,7 +462,7 @@ xml:id="intro-to-multiplicities">
           <statement><p> Using <xref ref="the-multiplicity-of-a-polynomial-function"/>, determine the multiplicities of the zeros you found in part (a).</p></statement>
           <answer>
             <p>
-              <m>3</m> has multiplicity 2. <m>1</m> has multiplicty 1.
+              <m>3</m> has multiplicity 2. <m>1</m> has multiplicity 1.
             </p>
           </answer>
           </task>
@@ -486,12 +480,9 @@ xml:id="intro-to-multiplicities">
           </task>
       </activity>
 
-      <remark
-  xml:id="zeros-and-multiplicities">
-        <statement>
+      <remark xml:id="zeros-and-multiplicities">
           <p> Refer back to <xref ref="intro-to-multiplicities"/> and <xref ref="PR5-finding-multiplicity-from-equation-and-graph"/>. Notice that when the graph crosses the <m> x </m>-axis at the zero, the mulitplicity of that zero is odd. When the graph touches the <m> x </m>-axis at the zero, the multiplicity is even. In other words, factors of <m> f(x)</m> with odd exponents will cross the <m> x </m>-axis and factors of <m> f(x)</m> with even exponents will touch the <m> x</m>-axis. </p>
-        </statement>
-</remark>
+      </remark>
 
 <definition xml:id="max-and-min">
   <statement>
@@ -501,7 +492,7 @@ xml:id="intro-to-multiplicities">
 
 <activity xml:id="activity-characteristics-from-polynomial-graph">
   <introduction>
-    <p> Now that we know all the different characterisitics of polynomials, we should also be able to identify them from a graph. Use the graph below to find the given charactertistics. </p>
+    <p> Now that we know all the different characteristics of polynomials, we should also be able to identify them from a graph. Use the graph below to find the given characteristics. </p>
     <figure width="100%" xml:id="PR1-polynomial">
       <image xml:id="PR1-polynomial-image">
         <description>Polynomial Function</description>
@@ -649,7 +640,7 @@ xml:id="intro-to-multiplicities">
           </statement>
           <answer>
             <p>
-              <m>2</m> and <m>-1</m> multiplicty 1 and crosses axis. <m>3</m> multiplicity 2 and touches the axis and turns around
+              <m>2</m> and <m>-1</m> multiplicity 1 and crosses axis. <m>3</m> multiplicity 2 and touches the axis and turns around
             </p>
           </answer>
       </task>
@@ -676,7 +667,7 @@ xml:id="intro-to-multiplicities">
     <task> 
       <statement>
         <p> Estimate where any local maximums and minimums may occur.</p>
-        </statement>
+      </statement>
         <answer>
           <p>
             Minimum occurs between <m>x=-1</m> and <m>x=2</m>.  Then a maximum at <m>x=3</m>
@@ -686,13 +677,18 @@ xml:id="intro-to-multiplicities">
   </activity>
 
   <activity xml:id="use-information-to-sketch-graph-of-polynomial">
-    <introduction>
-      <p> Sketch the graph of a function <m>f(x) </m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph. </p>
-    </introduction>
-    <ul><li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
-    <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
-    <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
-    </ul>
+    <statement>
+      <p>
+        Sketch the graph of a function <m>f(x) </m> that meets all of the 
+        following criteria. Be sure to scale your axes and label any important 
+        features of your graph.
+        <ul>
+          <li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
+          <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
+          <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
+        </ul>
+      </p>
+    </statement>
     <answer>
       <p>
         One such graph is
@@ -735,14 +731,14 @@ xml:id="intro-to-multiplicities">
       <statement>
         <p> What are the multiplicities at each zero? 
           <ol marker= "A." cols="1">
-            <li> <p> At <m> x=-1</m>, the mulitplicity is even. </p>
-            <p> At <m> x=5</m>, the mulitplicity is even. </p> </li>
-            <li> <p> At <m> x=-1</m>, the mulitplicity is even. </p>
-              <p> At <m> x=5</m>, the mulitplicity is odd. </p></li>
-            <li> <p> At <m> x=-1</m>, the mulitplicity is odd. </p>
-              <p> At <m> x=5</m>, the mulitplicity is even. </p> </li>
-            <li> <p> At <m> x=-1</m>, the mulitplicity is odd. </p>
-              <p> At <m> x=5</m>, the mulitplicity is odd. </p>  </li></ol>
+            <li> <p> At <m> x=-1</m>, the multiplicity is even. </p>
+            <p> At <m> x=5</m>, the multiplicity is even. </p> </li>
+            <li> <p> At <m> x=-1</m>, the multiplicity is even. </p>
+              <p> At <m> x=5</m>, the multiplicity is odd. </p></li>
+            <li> <p> At <m> x=-1</m>, the multiplicity is odd. </p>
+              <p> At <m> x=5</m>, the multiplicity is even. </p> </li>
+            <li> <p> At <m> x=-1</m>, the multiplicity is odd. </p>
+              <p> At <m> x=5</m>, the multiplicity is odd. </p>  </li></ol>
         </p>
       </statement>
       <answer>
@@ -793,18 +789,16 @@ xml:id="intro-to-multiplicities">
   </activity>
 
   <remark xml:id="remark-estimating-max-and-min-values">
-    <statement>
       <p> We can estimate where these local maxima and minima occur by looking at other characteristics, such as multiplicities and end behavior.
       </p>
       
       <p> From <xref ref="PR5-finding-max-and-min"/>, we saw that when the function touches the <m>x</m>-axis at a zero, then that zero could be either a local maximum or a local minimum of the graph. When the function crosses the <m>x</m>-axis, however, the local maximum or local minimum occurs between the zeros. 
       </p>
-    </statement>
   </remark>
 </subsection>
 
 <exercises>
-  <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/PR3/"/>. </p> 
+  <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR3/"/>. </p> 
 </exercises>
 
 <!-- <subsection>

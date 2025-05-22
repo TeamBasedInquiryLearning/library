@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="TE5" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Applications of Trigonometry (TE5) </title>
+    <title>Trigonometric Laws (TE4) </title>
     <objectives>
     <ul>
       <li>
@@ -14,453 +14,1133 @@
 
     <remark>
       <p>
-      Trigonometry is the branch of mathematics that focuses on the relationships between the angles and sides of triangles. It has a wide range of applications across various fields, including science, engineering, architecture, and more. In this section, we will look at some common ways trigonometry is used.
+        In <xref ref="TR3"/> and <xref ref="TR4"/>, we learned how to solve right triangles (and special right triangles) using trigonometric ratios. In this section, we will learn how to solve oblique (non-right triangles).
       </p>
     </remark>
 
-    <activity xml:id="right-triangles-1">
-      <introduction>
-        <p>
-          A pilot signals to an air traffic controller that she wants to land. She wants to know what angle of fall to take when she is currently at <m>40{,}000</m> feet. Her plane is <m>750{,}000</m> feet from the runway, as the air traffic controller can see on the radar.
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            Draw a diagram to represent this situation.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Students should draw a right triangle where the height is <m>40{,}000</m> and the base is <m>750{,}000</m>.
-          </p>
-        </answer>
-      </task>
+    <activity xml:id="motivation-for-law-of-sines">
 
-      <task>
-        <statement>
-          <p>
-            The pilot wants to know what angle of descent to take in order to reach the runway. Where is this angle located in your diagram?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Students may notice that the angle they are looking for is not inside the triangle and the line of sight of the pilot is looking down at the ground.
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Draw a line that represents the line of sight of the pilot. What do you notice about this line and the base of your triangle?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            The pilot's line of sight is parallel to the base of the triangle. 
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            If we know that the pilot's line of sight is parallel to the base of the triangle you created in part (a), then the hypotenuse of the triangle could also be considered a transversal that cuts the two parallel lines.  What angle of the triangle is congruent to the "angle of descent" the pilot wants to take in order to descend the plane <m>750{,}000</m> feet from the runway?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            The "angle of descent" is congruent to the same angle that is created with the base of the triangle (not the right angle). 
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Now that we know which angle is congruent to the "angle of descent" the pilot needs, which of the <m>6</m> trig functions could we use to find the angle at which the pilot should descend?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            If students label the triangle correctly, they should see that they can now use <m>\tan^{-1}</m> to find the measure of the angle because they have <m>40{,}000</m> as the opposite side and <m>750{,}000</m> as the adjacent side.
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Find the measure of the angle the pilot needs to make her initial descent.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Approximately <m>3.05</m><degree/>.
-          </p>
-        </answer>
-      </task>
-    </activity>
-
-    <remark>
+    <introduction>
       <p>
-      Notice that <xref ref="right-triangles-1"/>, the angle that we needed to find was an angle that was not inside the right triangle. In these cases, it would be helpful to use prior knowledge of parallel lines and angle relationships to determine which other angle is congruent to that given angle.
+        Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>.
+        <figure xml:id="Law-of-Sines-Triangle">
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0),(0,3)],thickness=3,color="black")
+p += text("$a$", (2.1,1.6),color="black",fontsize=24)
+p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
+p += text("$c$", (1, -0.1), color="black", fontsize=24)
+p += text("$h$", (0.15,1.5), color="black",fontsize=24)
+p += line( [(-2,-0.1), (0.8,-0.1)], color="black")
+p += line( [(-2,-0.15), (-2,-0.05)], color="black")
+p += line( [(1.2,-0.1), (4,-0.1)], color="black")
+p += line( [(4,-0.15), (4,-0.05)], color="black")
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p.axes(False)
+p
+          </sageplot>
+          </image>
+        </figure>
       </p>
-    </remark>
-    
-    <definition xml:id="def-angle-of-depression-and-elevation">
+    </introduction>
+
+    <task>
       <statement>
         <p>
-          Many applications of trigonometry will include the angle of elevation and the angle of depression which are formed by two parallel lines cut by a transversal. 
-          <ul>
-            <li>
-              <p>
-                An <term>angle of elevation</term> is the angle formed by a horizontal line and a line of sight to a point above the line.
-              </p>
-            </li>
-            <li>
-              <p>
-                An <term>angle of depression</term> is the angle formed by a horizontal line and a line of sight to a point below the line.
-              </p>
-            </li>
-          </ul>
-        </p>
-        <p> 
-          <figure xml:id="angle-of-elevation-and-depression">
-            <image source="Images/depression-elevation-angle.jpg"/>
-            <caption> The angle of elevation and the angle of depression are congruent.</caption>
-          </figure>
-        </p>
-        <p>
-          Notice that because both the angle of elevation and the angle of depression are formed by horizontal lines that are parallel, the angle of elevation is congruent to the angle of depression (by the alternate interior angles theorem).
+          Find <m>\sin A</m>.
+          <ol marker= "A." cols="2">
+            <li><m>\sin A=\frac{a}{h}</m></li>
+            <li><m>\sin A=\frac{h}{b}</m></li>
+            <li><m>\sin A=\frac{h}{a}</m></li>
+            <li><m>\sin A=\frac{a}{b}</m></li>
+          </ol>
         </p>
       </statement>
-    </definition>
-
-    <activity xml:id="right-triangles-2">
-      <introduction>
+      <answer>
         <p>
-          An observer is standing <m>67</m> meters away from the Seattle Space Needle.
+          B
         </p>
-      </introduction>
-      
-      <task>
-        <statement>
-          <p>
-            Draw a diagram to represent this situation.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Students should draw a right triangle so that the base of the triangle is <m>67</m> meters, as it represents the distance the observer is from the Space Needle.
-          </p>
-        </answer>
-      </task>
-        
-        <task>
-        <statement>
-          <p>
-            If the angle of elevation from where the observers stands to the top of the Space Needle is <m>70</m><degree/>, which trig function could you use to find the height of the Space Needle?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            The tangent function would be the best to use because the opposite of the given angle (angle of elevation) is the height of the Space Needle and the distance from the Space Needle to the observer would be the adjacent side.
-          </p>
-        </answer>
-      </task>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            How tall is the Space Needle (to the nearest meter)?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Approximately <m>184</m> meters.
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Find <m>\sin B</m>.
+          <ol marker= "A." cols="2">
+            <li><m>\sin B=\frac{a}{h}</m></li>
+            <li><m>\sin B=\frac{h}{b}</m></li>
+            <li><m>\sin B=\frac{h}{a}</m></li>
+            <li><m>\sin B=\frac{a}{b}</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Take your answers from parts (a) and (b) and solve each equation for <m>h</m> (the altitude). What does <m>h</m> equal in each case?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h=b \cdot \sin A</m>
+        </p>
+        <p>
+          <m>h=a \cdot \sin B</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Notice that we now have two ways to express <m>h</m>. Set the two expressions of <m>h</m> equal to one another and then rearrange this equation so that <m>a</m> and <m>\sin A</m> are on the same side.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\sin A}{a}=\frac{\sin B}{b}</m> or <m>\frac{a}{\sin A}=\frac{b}{\sin B}</m>
+        </p>
+      </answer>
+    </task>
     </activity>
 
-    <activity xml:id="right-triangles-practice">
-      <introduction>
-        <p>
-          Use <xref ref="def-angle-of-depression-and-elevation"/> and your knowledge of right triangles to solve each of the following. It might be helpful to draw a diagram to represent the situation before solving.
+   <theorem xml:id="thm-law-of-sines">
+    <statement>
+      <p>
+        The <term>Law of Sines</term> defines the ratio of sides of a triangle and their respective sine angles are equivalent to each other. 
+          <me>\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}</me> or
+          <me>\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}</me>
         </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            Sarah's kite is flying above a field at the end of <m>65</m> meters of string. If the angle of elevation to the kite measures <m>70</m>, how high is the kite above Sarah's head?  
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>61</m> meters
-          </p>
-        </answer>
-      </task>
+        <p>
+          When using the Law of Sines, you will only need to set one fraction to one other fraction. Note that these are proportions and so the reciprocals also hold true.
+      </p>
+    </statement>
+   </theorem>
 
-      <task>
-        <statement>
-          <p>
-            Standing on a cliff <m>380</m> meters above the sea, Sean sees an approaching ship and measures its angle of depression, obtaining <m>9</m> degrees. How far from shore is the ship (to the nearest meter)? 
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>2{,}399</m> meters
-          </p>
-        </answer>
-      </task>
+    <remark>
+      <p>
+        The Law of Sines is helpful when we have
+        <ol>
+          <li>
+            <p>
+              two angles and one of their corresponding sides.
+            </p>
+          </li>
+          <li>
+            <p>
+              two sides and one of their corresponding angles.
+            </p>
+          </li>
+        </ol> 
+      </p>
+    </remark>
 
-      <task>
-        <statement>
-          <p>
-            A <m>14</m>-foot ladder is used to scale a <m>13</m>-foot wall. At what angle of elevation (to the nearest degree) must the ladder be situated in order to reach the top of the wall? 
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>68</m><degree/>
-          </p>
-        </answer>
-      </task>
+    <activity xml:id="solving-a-AAS-triangle">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m> where <m>A=35</m><degree/>, <m>B=25</m><degree/>, and <m>a=10</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should be able to draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>C</m>, <m>b</m>, and <m>c</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>C</m>?
+          <ol marker= "A." cols="4">
+            <li><m>60^\circ</m></li>
+            <li><m>155^\circ</m></li>
+            <li><m>145^\circ</m></li>
+            <li><m>120^\circ</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to set up a proportion to find <m>c</m>. What does that proportion look like?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\sin 35^\circ}{10}=\frac{\sin 120^\circ}{c}</m> or <m>\frac{10}{\sin 35^\circ}=\frac{c}{\sin 120^\circ}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Solve the proportion you got in part (c) and solve for <m>c</m>. What is the value of <m>c</m> to the nearest tenth?
+          <ol marker= "A." cols="4">
+            <li><m>8.7</m></li>
+            <li><m>6.6</m></li>
+            <li><m>15.1</m></li>
+            <li><m>0.1</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          We now have side <m>b</m> left to find. Which method would be the best method to find <m>b</m>?
+          <ol marker= "A." cols="1">
+            <li>Use the Law of Sines again using side <m>c</m>.</li>
+            <li>Pythagorean Theorem</li>
+            <li>Use the Law of Sines again with angle <m>B</m>.</li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+         Use the method you identified in the previous part to find <m>b</m>. What is the value of <m>b</m> to the nearest tenth?
+         <ol marker= "A." cols="4">
+            <li><m>5.7</m></li>
+            <li><m>4.2</m></li>
+            <li><m>13.6</m></li>
+            <li><m>7.4</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
     </activity>
 
     <remark>
       <p>
-        All applications we have done so far have involved right triangles. Let's now look at some examples of non-right triangle applications.
+        The triangle you just drew in <xref ref="solving-a-AAS-triangle"/> is known as an AAS triangle, which means we know two angles and one side (which is NOT between the angles). This is just one type of triangle you might see when solving oblique triangles. The next activity will show another type of triangle you might encounter.
       </p>
     </remark>
 
-    <activity xml:id="law-of-sines-example">
-      <introduction>
-        <p>
-          Airplane A is flying directly towards the airport which is <m>20</m> miles away. The pilot notices Airplane B <m>45</m> degrees to her right. Airplane B is also flying directly towards the airport. The pilot of Airplane B calculates that Airplane A is <m>50</m> degrees to his left.
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            Draw a diagram to represent this situation.
-          </p>
-        </statement>
-      </task>
+    <activity xml:id="solving-a-ASA-triangle">
 
-      <task>
-        <statement>
-          <p>
-            Based on the information given and your diagram, how far is Airplane B from the airport (to the nearest tenth of a mile)?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>18.5</m> miles
-          </p>
-        </answer>
-      </task>
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m> where <m>A=76</m><degree/>, <m>B=34</m><degree/>, and <m>c=9</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>C</m>, <m>a</m>, and <m>b</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>C</m>?
+          <ol marker= "A." cols="4">
+            <li><m>70</m><degree/></li>
+            <li><m>110</m><degree/></li>
+            <li><m>104</m><degree/></li>
+            <li><m>146</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to set up a proportion to find <m>a</m>. What is the value of <m>a</m> to the nearest tenth?
+          <ol marker= "A." cols="4">
+            <li><m>8.7</m></li>
+            <li><m>9.3</m></li>
+            <li><m>8.5</m></li>
+            <li><m>9.1</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        B
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to set up a proportion to find <m>b</m>. What is the value of <m>b</m> to the nearest tenth?
+          <ol marker= "A." cols="4">
+            <li><m>5.0</m></li>
+            <li><m>8.5</m></li>
+            <li><m>15.1</m></li>
+            <li><m>5.4</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        D
+      </answer>
+    </task>
     </activity>
+
+    <remark>
+      <p>
+        The triangle you just drew in <xref ref="solving-a-ASA-triangle"/> is known as an ASA triangle, which means we know two angles and a side BETWEEN the angles.
+      </p>
+    </remark>
+
+    <activity xml:id="SSA-no-solution">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 7</m>, and <m>b = 16</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
+        </p>
+      </answer>
+    </task>
     
-    <activity xml:id="law-of-cosines-and-sines-example">
-      <introduction>
+    <task>
+      <statement>
         <p>
-          Carlos, Jean, and Travis are camping in their tents. The distance between Carlos and Jean is <m>153</m> feet, the distance between Carlos and Travis is <m>201</m> feet, and the distance between Jean and Travis is <m>175</m> feet.
+          What is the value of <m>\sin B</m>?
+          <ol marker= "A." cols="4">
+            <li><m>8.0</m></li>
+            <li><m>1.14</m></li>
+            <li><m>0.875</m></li>
+            <li><m>0.031</m></li>
+          </ol>
         </p>
-      </introduction>
-      
-      <task>
-        <statement>
-          <p>
-            Draw a diagram to represent this situation.
-          </p>
-        </statement>
-        <hint>
-          <p>
-            It might be helpful to label your triangle in terms of A, B, and C for the angles and a, b, and c for the sides of the triangle.
-          </p>
-        </hint>
-        <answer>
-          <p>
-            In their diagram, students should see that this is a non-right triangle with all three sides given.
-          </p>
-        </answer>
-      </task>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            Refer back to the previous section. Which trigonometric law (the Law of Sines or the Law of Cosines) would be the best one to use if we wanted to find the angle at which Carlos is from his friends?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Because we are given all sides of this non-right triangle, the best trigonometric law to use would be the Law of Cosines.
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Find the angle at which Carlos is located from his friends to the nearest degree.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>57</m><degree/>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Now that we know the angle at which Carlos is located from Jean and Travis, determine the angle (to the nearest degree) at which Travis is located from his friends by using the Law of Sines.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>47</m><degree/>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Find the remaining angle left of the triangle.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>76</m><degree/>
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Use part (b) to determine the value of <m>B</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students will see that when finding <m>\sin^{-1}(\frac{8}{7})</m>, that the value does not exist.
+        </p>
+      </answer>
+    </task>
     </activity>
 
     <remark>
       <p>
-        Trigonometric functions can model relationships between different quantities that follow a periodic nature: height over time, distance over time, temperature over time and so on. Scientists observe this back-and-forth movement and collect data so they can model them using an equation or a graph. They then use this information to make predictions for the future.
+        In <xref ref="SSA-no-solution"/>, we can see that no triangle can be created because <m>\sin B</m> was equal to a value greater than <m>1</m>. This is because the largest value that the sine of an angle can have is <m>1</m> (refer back to <xref ref="TR5"/>).
       </p>
     </remark>
 
-    <activity xml:id="periodic-example-1">
-      <introduction>
+    <activity xml:id="SSA-two-solutions">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 10</m>, and <m>b = 16</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
         <p>
-          The depth of the water in meters at a certain pier varies with the tide and is modeled by the equation <m>d(t)=2+\frac{1}{2}\sin{\frac{\pi}{6}}t</m> where <m>t</m> is the number of hours after <m>10</m> a.m.
+          Use the Law of Sines to determine the value of <m>B</m> (to the nearest degree).
+          <ol marker= "A." cols="4">
+            <li><m>143</m><degree/></li>
+            <li><m>53</m><degree/></li>
+            <li><m>80</m><degree/></li>
+            <li><m>37</m><degree/></li>
+          </ol>
         </p>
-      </introduction>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            How deep will the water be at high tide?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the maximum value <m>d(t)</m> is <m>2+ \frac{1}{2}</m>, or <m>2.5</m> meters deep at high tide.
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Continue solving triangle <m>ABC</m>. What are the missing values (to the nearest degree/whole number)?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C\approx 97</m><degree/>
+        </p>
+        <p>
+          <m>c \approx 20</m>
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            How deep will it be at low tide?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the minimum value <m>d(t)</m> is <m>2- \frac{1}{2}</m>, or <m>1.5</m> meters deep at low tide.
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Let's go back to part (a) when we were asked to solve for <m>B</m>. There is another value of <m>B</m> that exists. Which of the following values could also be <m>B</m>?
+          <ol marker= "A." cols="4">
+            <li><m>143</m><degree/></li>
+            <li><m>37</m><degree/></li>
+            <li><m>80</m><degree/></li>
+            <li><m>127</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            How many hours are there between two successive high tides?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            This is really asking for the period. The period of a sine function is <m>\frac{2pi}{b}</m>. In the equation given, the <m>b</m> value is <m>\frac{pi}{6}</m>. Therefore, the period is <m>\frac{2pi}{\frac{pi}{6}}</m>, which is equal to <m>12</m>. So, the time between successive high tides is <m>12</m> hours. 
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Why do you think there are two values of <m>B</m> for this triangle?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Because <m>\sin \theta</m> exists in both Quadrant I and Quadrant II, there exists two possible values of <m>\theta</m>. <m>\sin 30</m><degree/> and <m>\sin 150</m><degree/>, for example, are both equal to <m>\frac{1}{2}</m>. 
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            How many of these tide cycles are there in a <m>24</m> hour day?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            From part (c), we know the period is <m>12</m> hours. So, that means one cycle is <m>12</m> hours, so there are <m>2</m> cycles in a <m>24</m>-hour day.
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Continue solving this other triangle <m>ABC</m>. What are the missing values (to the nearest degree/whole number)?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C \approx 23</m><degree/>
+        </p>
+        <p>
+          <m>c \approx 8</m>
+        </p>
+      </answer>
+    </task>
     </activity>
 
-    <activity xml:id="periodic-example-2">
-      <introduction>
+    <remark>
+      <p>
+        So far we have seen that when given two sides and an angle (also known as a SSA triangle), we can have no solution (i.e., no triangle can be created) or two solutions (i.e., there are two possible triangles). There is still one more case we need to explore.
+      </p>
+    </remark>
+
+    <activity xml:id="SSA-one-solution">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 20</m>, and <m>b = 16</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
         <p>
-          A circular Ferris wheel is <m>120</m> meters in diameter and contains several carriages. Jesus and Allison enter a carriage at the bottom of the wheel and get off <m>24</m> minutes later after having gone around <m>8</m> times. When a carriage is at the bottom of the wheel, it is <m>1</m> meter off the ground.
+          Use the Law of Sines to determine the value of <m>B</m> (to the nearest degree).
+          <ol marker= "A." cols="4">
+            <li><m>24</m><degree/></li>
+            <li><m>39</m><degree/></li>
+            <li><m>141</m><degree/></li>
+            <li><m>156</m><degree/></li>
+          </ol>
         </p>
-      </introduction>
+      </statement>
+      <answer>
+        <p>
+          A and D
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            What is the maximum and minimum height of Jesus and Allison's carriage?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Because the diameter of the Ferris wheel is <m>120</m> meters and that the carriage is at its lowest height off the ground at the bottom of the wheel (<m>1</m> meter), the minimum height is <m>1</m> and the maximum height is <m>1+120 = 121</m> meters.
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Choose the smaller value of <m>B</m> and solve triangle <m>ABC</m>. What are the missing values (to the nearest degree/whole number)?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C \approx 126</m><degree/>
+        </p>
+        <p>
+          <m>c \approx 32</m>
+        </p>
+      </answer>
+    </task>
 
-      <task>
-        <statement>
-          <p>
-            What is the period of the function <m>h(t)</m>, the height of the carriage <m>t</m> minutes after it has started moving?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            The period is the amount of time it takes to complete one revolution (or one cycle around the Ferris wheel). We know that it takes <m>24</m> minutes to go around <m>8</m> times, so it must take <m>3</m> minutes to go around once.
-          </p>
-        </answer>
-      </task>
+    <task>
+      <statement>
+        <p>
+          Choose the larger value of <m>B</m> and solve triangle <m>ABC</m>. What are the missing values (to the nearest degree/whole number)?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Another triangle does not exist because if <m>B</m> is equal to <m>156</m><degree/>, then that would mean the third angle, <m>C</m>, would have to be <m>-6</m><degree/>.
+        </p>
+      </answer>
+    </task>
+    </activity>
 
-      <task>
-        <statement>
-          <p>
-            Which trigonometric function would be the best to use to model this situation?
+
+    <observation>
+      <p>
+      In the previous three activities, we saw that when we use the Law of Sines to find an angle, an ambiguity can arise due to the sine function being positive in Quadrant I and Quadrant II. In other words, if two sides and the non-included angle are given (SSA), three situations may occur.
+      <ol>
+        <li>NO triangle exists (no solution)</li>
+        <li>TWO different triangle exist (2 solutions)</li>
+        <li>Exactly ONE triangle exists (1 solution)</li>
+      </ol>
+       The <term>Ambiguous Case of the Law of Sines</term> states that when using the Law of Sines to find a missing side length, the possibility of two solutions for the measure of the same side may occur.
+      </p>
+    </observation>
+
+    <activity xml:id="law-of-sines-fluency">
+
+    <introduction>
+      <p>
+        State the number of possible triangles that can be formed with the given measurements. Then, solve each triangle. Round your answers to the nearest tenth.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>C=145</m><degree/>, <m>b=7</m>, <m>c=33</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          One triangle: <m>A=28</m><degree/>, <m>B=7</m><degree/>, <m>a=27</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>B=84</m><degree/>, <m>a=18</m>, <m>b=9</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Not a triangle
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>B=45</m><degree/>, <m>a=28</m>, <m>b=27</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Two triangles exist:
+        </p>
+        <p>
+          <m>C=87.8</m><degree/>, <m>A=47.2</m><degree/>, <m>c=38.2</m>
+        </p>
+        <p>
+          <m>C=2.2</m><degree/>, <m>A=132.8</m><degree/>, <m>c=1.5</m>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <activity xml:id="SAS-example">
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 70</m><degree/>, <m>b = 14</m>, and <m>c = 7</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the Law of Sines to solve triangle <m>ABC</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should recognize that the Law of Sines cannot be used to solve this triangle. 
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>
+        Notice in <xref ref="SAS-example"/>, we do not currently have enough information to be able to solve for triangle <m>ABC</m> since the Law of Sines cannot be used. In the next activity, we will explore another method that can be used to solve oblique triangles. 
+      </p>
+    </remark>
+
+    <activity xml:id="law-of-cosines-intro">
+
+    <introduction>
+      <p>
+        Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>.
+        <figure xml:id="Law-of-Cosines-Triangle">
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0),(0,3)],thickness=3,color="black")
+p += text("$a$", (2.1,1.6),color="black",fontsize=24)
+p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
+p += text("$m$", (-1, 0.2), color="black",fontsize=24)
+p += text("$c$", (1, -0.1), color="black", fontsize=24)
+p += text("$h$", (0.15,1.5), color="black",fontsize=24)
+p += text("$D$", (0.15,0.2), color="black",fontsize=24)
+p += line( [(-2,-0.1), (0.8,-0.1)], color="black")
+p += line( [(-2,-0.15), (-2,-0.05)], color="black")
+p += line( [(1.2,-0.1), (4,-0.1)], color="black")
+p += line( [(4,-0.15), (4,-0.05)], color="black")
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p.axes(False)
+p
+          </sageplot>
+          </image>
+        </figure>
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Using right triangle trigonometry, find <m>\sin A</m>.
+          <ol marker= "A." cols="2">
+            <li><m>\sin A=\frac{b}{h}</m></li>
+            <li><m>\sin A=\frac{h}{b}</m></li>
+            <li><m>\sin A=\frac{m}{b}</m></li>
+            <li><m>\sin A=\frac{b}{m}</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using right triangle trigonometry, find <m>\cos A</m>.
+          <ol marker= "A." cols="2">
+            <li><m>\cos A=\frac{b}{h}</m></li>
+            <li><m>\cos A=\frac{h}{b}</m></li>
+            <li><m>\cos A=\frac{m}{b}</m></li>
+            <li><m>\cos A=\frac{b}{m}</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Take your equation in part (a) and solve for <m>h</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h=b \sin A</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Take your equation in part (b) and solve for <m>m</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>m=b \cos A</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall that we can use the Pythagorean Theorem to represent the relationship between the sides of a right triangle. For example, <m>h^2+ (c-m)^2 = a^2</m> can be used to represent the relationship of the sides of triangle <m>BCD</m>. Take your equations from parts (c) and (d) to substitute <m>m</m> and <m>h</m> into that equation.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          When simplifying the term <m>(c-b \cos A)^2</m>, it might be easier to multiply <m>(c-b \cos A)*(c-b \cos A)</m>.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>h^2+ (c-m)^2 = a^2</m>
+        </p>
+        <p>
+          <m>(b \sin A)^2+ (c-(b \cos A))^2=a^2</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Simplify your equation from part (e).
+        </p>
+      </statement>
+      <hint>
+        <p>
+          You may have to use a trig identity to simplify!
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>(b \sin A)^2+ (c-(b \cos A))^2=a^2</m>
+        </p>
+        <p>
+          <m>b^2 \sin^2 A + c^2 -2bc \cos A + b^2 \cos^2 A = a^2</m>
+        </p>
+        <p>
+          <m>b^2 \sin^2 A + b^2 \cos^2 A + c^2 -2bc \cos A= a^2</m>
+        </p>
+        <p>
+          <m>b^2 (\sin^2 A + \cos^2 A) + c^2 -2bc \cos A= a^2</m>
+        </p>
+        <p>
+          <m>b^2 + c^2 -2bc \cos A= a^2</m>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <theorem xml:id="thm-law-of-cosines">
+      <statement>
+        <p>
+          The <term>Law of Cosines</term> relates the lengths of the sides of a triangle to the cosine of one of its angles. In other words, the square of any one side of a triangle is equal to the difference between the sum of squares of the other two sides and double the product of other sides and cosine angle included between them.
           </p>
-        </statement>
-        <answer>
           <p>
-            The cosine function would be the best to use because when people get on a Ferris wheel, they are starting at the minimum of a curve and then does a complete revolution when they ride the Ferris wheel. Because it starts at a minimum, it is really an upside down cosine graph (because the parent function starts at a maximum).
+            Let <m>a</m>, <m>b</m>, and <m>c</m> be the lengths of the three sides of a triangle and <m>A</m>, <m>B</m>, and <m>C</m> be the three angles of the triangle. Then, the Law of Cosines states that: <me> a^2=b^2+c^2-2bc\cos A </me>
+            <me> b^2=a^2+c^2-2ac\cos B </me>
+            <me> c^2=a^2+b^2-2ab\cos C </me>
           </p>
-        </answer>
-      </task>
+      </statement>
+    </theorem>
+
+    <activity xml:id="revisit-SAS-example">
+
+    <introduction>
+      <p>
+        Let's revisit <xref ref="SAS-example"/> to see how we can apply the Law of Cosines to solve for this triangle. Recall that we were given triangle <m>ABC</m>, where <m>A = 70</m><degree/>, <m>b = 14</m>, and <m>c = 7</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
+        </p>
+      </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Use the Law of Cosines to find <m>a</m> (to the nearest tenth).
+          <ol marker= "A." cols="4">
+            <li><m>178.0</m></li>
+            <li><m>17.7</m></li>
+            <li><m>13.3</m></li>
+            <li><m>7.8</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now that we have another side of triangle <m>ABC</m>, what would you use to find angle <m>B</m>?
+          <ol marker= "A." cols="1">
+            <li>Law of Sines</li>
+            <li>Law of Cosines</li>
+            <li>Pythagorean Theorem</li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A or B. Students should discuss how either method can used, but that there is a possibility of the ambiguous case for the Law of Sines.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find the measure of <m>B</m> and <m>C</m> (to the nearest degree).
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>B \approx 82</m><degree/> and <m>C \approx 28</m><degree/>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <activity xml:id="SSS-example">
+
+    <introduction>
+      <p>
+        Suppose you are given triangle <m>ABC</m>, where <m>a = 30</m>, <m>b = 20</m>, and <m>c = 17</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>A</m>, <m>B</m>, and <m>C</m>.
+        </p>
+      </answer>
+    </task>
+    
+    <task>
+      <statement>
+        <p>
+          Which law should you start with to solve triangle <m>ABC</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Law of Cosines
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>A</m> (to the nearest degree)?
+          <ol marker= "A." cols="4">
+            <li><m>109</m><degree/></li>
+            <li><m>39</m><degree/></li>
+            <li><m>108</m><degree/></li>
+            <li><m>33</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now that you have found angle <m>A</m>, which law would be the best to use to find the measure of angle <m>B</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The Law of Sines might be the easiest method to use, but students could also use the Law of Cosines.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>B</m> (to the nearest degree)?
+          <ol marker= "A." cols="4">
+            <li><m>109</m><degree/></li>
+            <li><m>39</m><degree/></li>
+            <li><m>108</m><degree/></li>
+            <li><m>33</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>C</m> (to the nearest degree)?
+          <ol marker= "A." cols="4">
+            <li><m>109</m><degree/></li>
+            <li><m>39</m><degree/></li>
+            <li><m>108</m><degree/></li>
+            <li><m>33</m><degree/></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>
+        Notice in <xref ref="SSS-example"/>, you were given a triangle with three known sides. This type of triangle is known as a side-side-side (SSS) triangle.
+      </p>
+    </remark>
+
+    <activity xml:id="determine-best-law-to-use">
+
+    <introduction>
+      <p>
+        State whether the Law of Sines or the Law of Cosines is the best choice to use to determine the indicated angle/side.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Given <m>B=112</m><degree/>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
+        </p>
+      </statement>
+      <hint>
+      <p>
+        It might help to draw a picture!
+      </p>
+    </hint>
+      <answer>
+        <p>
+          Law of Sines
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>B=87</m><degree/>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Law of Cosines
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>a=37</m>, <m>b=55</m>, and <m>c=30</m>, find <m>C</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Law of Cosines
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>A=108</m><degree/>, <m>B=40</m><degree/>, and <m>b=20</m>, find <m>c</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Law of Sines
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+<activity xml:id="solve-mix">
+
+    <introduction>
+      <p>
+        Now that we can determine which laws to use, let's go back to <xref ref="determine-best-law-to-use"/> to solve each triangle (to the nearest degree/whole number).
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>B=112</m><degree/>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>A \approx 26</m><degree/>, <m>C \approx 42</m><degree/>, and <m>c \approx 18</m> 
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>B=87</m><degree/>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>b \approx 21</m>, <m>A \approx 46</m><degree/>, and <m>C \approx 47</m><degree/>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>a=37</m>, <m>b=55</m>, and <m>c=30</m>, find <m>C</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C \approx 31</m><degree/>, <m>A \approx 39</m><degree/>, and <m>B \approx 110</m><degree/>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given <m>A=108</m><degree/>, <m>B=40</m><degree/>, and <m>b=20</m>, find <m>c</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C \approx 38</m><degree/>, <m>b \approx 82</m>, and <m>c \approx 52</m>
+        </p>
+      </answer>
+    </task>
     </activity>
 
 
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/TE5/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TE5/"/>. </p> 
     </exercises>
     
     <!-- <subsection>

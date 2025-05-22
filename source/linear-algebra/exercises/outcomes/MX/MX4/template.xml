@@ -1,13 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    <intro>
-        <p>Let <m>A</m> be <em>any</em> <m>4 \times 4</m> matrix.</p>
-    </intro>
     <!-- {{#tasks}} -->
     <knowl>
         <content>
             <p>
-Give a <m>4 \times 4</m> matrix <m>{{name}}</m> that may be used to
+Give a <m>3 \times 3</m> matrix <m>{{name}}</m> that may be used to
 perform the row operation <m>{{row_op}}</m>.
             </p>
         </content>
@@ -19,14 +16,29 @@ perform the row operation <m>{{row_op}}</m>.
     <knowl>
         <content>
             <p>
-Use matrix multiplication to express the matrix obtained by 
-first applying <m>{{first_op}}</m>, then <m>{{second_op}}</m>,
-and finally <m>{{third_op}}</m> to <m>A</m> (note the order).
+Give a <m>3\times 3</m> matrix that may be used to 
+first apply <m>{{first_op}}</m>, then <m>{{second_op}}</m>,
+and finally <m>{{third_op}}</m> (note the order).
             </p>
         </content>
         <outtro>
             <p>
-                <m>{{matrix_product}}A</m>
+                <m>{{matrices}}={{matrix_product}}</m>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Show how to manually apply those row operations to <m>A= {{A}}</m>,
+then use technology to verify that your matrix in the previous task
+gives the same result.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>{{A}}\sim\cdots\sim{{manip_A}}</me>
+                <me>{{matrices}}A={{manip_A}}</me>
             </p>
         </outtro>
     </knowl>

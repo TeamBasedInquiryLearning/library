@@ -1,0 +1,827 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PR9" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title> Rational Inequalities (PR9) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/09.ptx" />
+      </li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Activities</title>
+
+  <remark>
+    <p>In <xref ref="PR6"/> we learned how to solve rational equations.  In this section, we use these skills to solve rational <em>inequalities</em>.
+    </p>
+  </remark>
+
+
+  <definition xml:id="def-rational-inequality">
+    <statement>
+      <p>
+        A <term>rational inequality</term> is an inequality that contains a rational expression. Some examples of a rational inequality are shown below:
+      </p>
+      <p>
+        <me>\frac{3}{2x} \gt 1</me> 
+        <me>\frac{2x-3}{x-6}\le x</me>
+      </p>
+    </statement>
+  </definition>
+
+  <activity xml:id="intro-to-rational-inequality">
+    <introduction>
+      <p>
+      Use <xref ref="def-rational-inequality"/> and your knowledge of quadratic equations (see <xref ref="PR6"/>) to help answer the following questions.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Which of the following inequalities are rational inequalities?
+          <ol marker="A." cols="2">
+            <li><m>\frac{4x+7}{5} \lt -1</m></li>
+            <li><m>\frac{4x-1}{3x+2} \ge 0</m></li>
+            <li><m>2x^2-7x \gt -3</m></li>
+            <li><m>5x-1 \le 4x</m></li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given the rational equation, <m>\frac{x-1}{x+3}= 0</m>, determine whether <m>1</m> is a solution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By plugging in <m>1</m> into the rational equation, <m>\frac{x-1}{x+3}= 0</m>, students should see that it IS a solution. 
+        </p>
+        <p>
+          <m>\frac{1-1}{1+3}=\frac{0}{4} = 0</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given the rational equation, <m>\frac{x-1}{x+3}= 0</m>, determine whether <m>-4</m> is a solution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By plugging in <m>-4</m> into the rational equation, <m>\frac{x-1}{x+3}= 0</m>, students should see that it is NOT a solution. 
+        </p>
+        <p>
+          <m>\frac{-4-1}{-4+3}=\frac{-5}{-1}=5</m>, which is NOT equal to <m>0</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given the rational inequality, <m>\frac{x-1}{x+3} \ge 0</m>, determine whether <m>-4</m> is a solution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By plugging in <m>-4</m> into the rational inequality, <m>\frac{x-1}{x+3} \ge 0</m>, students should see that it IS a solution. 
+        </p>
+        <p>
+          <m>\frac{-4-1}{-4+3}=\frac{-5}{-1}=5</m>, which IS a solution to the inequality because it is greater than <m>0</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Given the rational equation, <m>\frac{x-1}{x+3}= 0</m>, determine whether <m>-3</m> is a solution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          By plugging in <m>-3</m> into the rational inequality, <m>\frac{x-1}{x+3} \ge 0</m>, students should see that it is NOT a solution. 
+        </p>
+        <p>
+          <m>\frac{-3-1}{-3+3}=\frac{-4}{0}</m>, which is undefined.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Are there any other values of <m>x</m> that would satisfy the inequality, <m>\frac{x-1}{x+3} \ge 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Any value of <m>x</m> less than <m>-3</m> or greater than or equal to <m>1</m> will satisfy the inequality. In interval notation, the solution is <m>(-\infty, -3) \cup [1, \infty)</m> (although students may not know this at this point in the section).
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    <p>
+      In <xref ref="intro-to-rational-inequality"/>, we saw that there can be solutions to the rational inequality <m>\frac{x-1}{x+3} \ge 0</m> that does NOT satisfy the rational equation <m>\frac{x-1}{x+3}= 0</m>. Just like with linear and quadratic inequalities, we can have many solutions that can satisfy rational inequalities. We do, however, need to be careful about our critical points, as we will see in the next activity.
+    </p>
+  </remark>
+
+  <activity xml:id="graphing-solutions-of-rationals-on-number-line">
+  <introduction>
+    <p>
+      For this activity, let's consider the inequality
+      <me>\frac{x-1}{x+3} \ge 0</me>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Focus on the rational equation <m>\frac{x-1}{x+3}</m> (the left-hand side of the inequality). What value(s) should be excluded as possible solutions to that rational expression?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-1</m></li>
+            <li><m>-3</m></li>
+            <li><m>3</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        The value you got in part (a) is a critical value for this rational expression because it is a value of <m>x</m> where the rational expression is undefined. Critical points for rational expressions also include values that make the rational expression equal to <m>0</m>. What value of <m>x</m> would make this rational expression equal to <m>0</m>?
+        <ol marker="A." cols="2">
+            <li><m>1</m></li>
+            <li><m>-1</m></li>
+            <li><m>-3</m></li>
+            <li><m>3</m></li>
+          </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Use the critical points you found in parts (a) and (b) and plot them on a number line. Determine whether those should be included in your solution based on the inequality that was given.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        The value <m>1</m> IS a solution to the inequality because although it makes the rational expression equal to <m>0</m>, the inequality states "greater than or equal to <m>0</m>." The other critical value, <m>-3</m>, however should be in the solution as it makes the rational expression undefined. So, on a number line, <m>-3</m> should have a parentheses and <m>1</m> should have a bracket.
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Notice that  your number line has now been divided into three regions. Test values of <m>x</m> in each region that was created by the critical points and create a sign chart to show which regions are positive and negative.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Make sure you substitute values into BOTH <m>x</m>s in the rational expression.
+      </p>
+    </hint>
+    <answer>
+        <p>
+          <figure>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}[scale=5]
+                \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
+                \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
+                \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+                \draw[thick,red,dashed] (-0.3,-0.16) -- (-0.3,0.16);
+                \draw[thick,red,dashed] (0.1,-0.16) -- (0.1,0.16);
+                \node[above] at (-0.05,0.01) {\Large \bf $-$};
+                \node[above] at (0.6,0.02) {\Large \bf $+$};
+                \node[above] at (-0.6,0.02) {\Large \bf $+$};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </p>
+      </answer>
+  </task>
+
+  <task>
+      <statement> 
+        <p>
+          Using the number line and what you determined in part (d), shade in areas on the number line that satisfies the quadratic inequality <m>\frac{x-1}{x+3} \ge 0</m>?
+        </p>
+      </statement>
+      <answer>
+      <image>
+        <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(end=-3,strict_end=True,label_endpoints=False)
+p += TBIL.inequality_plot(start=1,strict_start=False,label_endpoints=False)
+p.axes(False)
+p 
+        </sageplot>
+      </image>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>Write your solution using interval notation.</p>
+        <ol marker="A." cols="2">
+          <li><m>\left(-\infty,-3\right)\cup\left(1,\infty\right)</m></li>
+          <li><m>(-\infty,-3)\cup [1,\infty)</m></li>
+          <li><m>(-3,1)</m></li>
+          <li><m>(-3,1)</m></li>
+        </ol> 
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    <p>
+      When looking for critical points of rational inequalities, remember to look for points where the rational expression will be zero or undefined.
+    </p>
+  </remark>
+
+  <activity xml:id="fluency-with-zero-on-one-side">
+    <introduction>
+      <p>
+        For each of the following, determine the critical points and use a number line (and sign chart) to then find the solutions. Write your answers in interval notation.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>\frac{x+5}{x-4} \le 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-5,4)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\frac{(x+3)(x+5)}{x+2} \gt 0</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Notice for this rational inequality there are <m>3</m> critical points! Be sure to test all four regions on your number line.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>(-5,-3)</m>
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="rational-inequality-clearing-fractions-method">
+    <introduction>
+      <p>
+        When solving an inequality, the goal is to first get <m>x</m> (or whatever the variable is) on its own on one side of the inequality sign and <m>0</m> on the other side. To do this, we have to be careful of the actions we take as some actions can change the direction of the inequality. Let's revisit some of the actions we have taken previously and see how we can apply these same actions to solve the rational inequality <me>\frac{3x-10}{x-4} \gt 2</me>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          When solving rational equations in <xref ref="PR6"/>, we often started by "clearing the fractions" by multiplying the denominator to both sides of the equation. Suppose we have the equation <m>\frac{3x-10}{x-4} = 2</m>. What can we multiply each term by that will clear the fraction?
+          <ol marker="A." cols="2">
+          <li><m>x+4</m></li>
+          <li><m>3x-10</m></li>
+          <li><m>x-4</m></li>
+          <li><m>x-2</m></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Multiply each term by the expression you chose and simplify. Which of the following linear equations does the rational equation simplify to?
+          <ol marker="A." cols="1">
+          <li><m>(x+4)(3x-10)=2(x+4)</m></li>
+          <li><m>(3x-10)=2(x-4)</m></li>
+          <li><m>2(3x-10)=(x-4)</m></li>
+          <li><m>(3x-10)=2(x+4)</m></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What values of <m>x</m> would make the denominator of the rational expression positive?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Any value of <m>x</m> greater than or equal to <m>4</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What values of <m>x</m> would make the denominator of the rational expression negative?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Any value of <m>x</m> less than <m>4</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now suppose we applied the same actions as we did in parts (a) and (b) to the rational inequality <m>\frac{3x-10}{x-4} \gt 2</m>. If the denominator of the rational expression <m>\frac{3x-10}{x-4}</m> was positive, how would you write the inequality as a linear inequality?
+          <ol marker="A." cols="1">
+          <li><m>(x+4)(3x-10)\gt 2(x+4)</m></li>
+          <li><m>(3x-10) \gt 2(x-4)</m></li>
+          <li><m>2(3x-10) \gt(x-4)</m></li>
+          <li><m>(3x-10) \gt (x+4)</m></li>
+        </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+           If the denominator of the rational expression <m>\frac{3x-10}{x-4}</m> was negative, how would you write the inequality as a linear inequality?
+          <ol marker="A." cols="1">
+          <li><m>(x+4)(3x-10)\lt 2(x+4)</m></li>
+          <li><m>(3x-10) \gt 2(x-4)</m></li>
+          <li><m>2(3x-10) \lt(x-4)</m></li>
+          <li><m>(3x-10) \lt 2(x-4)</m></li>
+        </ol>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          What happens to the inequality symbol when multiplying or dividing by a negative number?
+        </p>
+      </hint>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Look at your answers in parts (e) and (f). Which inequality would help us solve <m>\frac{3x-10}{x-4} \gt 2</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should see that it is not clear which linear inequality to use because there are values of <m>x</m> that can make the denominator of the rational expression positive or negative.
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <remark>
+    <p>
+      In <xref ref="rational-inequality-clearing-fractions-method"/>, we saw that it is not clear whether the denominator of a rational expression would yield a positive or negative value. Because we do not actually know whether the denominator is positive or negative, we cannot multiply the denominator to "clear the fractions" as we did before when solving rational equations. In the next activity, we will look at how we can solve rational inequalities.
+    </p>
+  </remark>
+
+  <activity>
+  <introduction>
+    <p>
+      Let's reconsider the rational inequality <me>\frac{3x-10}{x-4} \gt 2</me>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        From <xref ref="rational-inequality-clearing-fractions-method"/>, we saw that we cannot multiply by the denominator to "clear the fraction." Our goal, however, is still to get all the <m>x</m>s to one side and <m>0</m> on the other side. What action can we take to get <m>0</m> on one side?
+        <ol marker="A." cols="1">
+          <li>Add <m>2</m> to each side</li>
+          <li>Subtract <m>2</m> from each side</li>
+          <li>Multiply by <m>2</m> on each side</li>
+          <li>Multiply by <m>4</m> on each side</li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What rational inequality do you now have?
+        <ol marker="A." cols="2">
+          <li><m>\frac{3x-10}{x-4}+2 \lt 0</m></li>
+          <li><m>\frac{3x-10}{x-4}-2 \lt 0</m></li>
+          <li><m>\frac{3x-10}{x-4}+2 \gt 0</m></li>
+          <li><m>\frac{3x-10}{x-4}-2 \gt 0</m></li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        What is the common denominator of <m>\frac{3x-10}{x-4}</m> and <m>2</m>?
+        <ol marker="A." cols="2">
+          <li> <m>x+4</m></li>
+          <li><m>x-4</m></li>
+          <li><m>3x-10</m></li>
+          <li><m>3x+10</m></li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Multiply <m>2</m> by the common denominator and simplify the rational expression. What rational inequality do you now have?
+        <ol marker="A." cols="2">
+          <li><m>\frac{x-18}{x-4} \gt 0</m></li>
+          <li><m>\frac{x-2}{x-4} \gt 0</m></li>
+          <li><m>\frac{x-2}{x-4} \gt 0</m></li>
+          <li><m>\frac{2x-6}{x-4} \gt 0</m></li>
+        </ol>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+  </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the inequality you got in part (d) to determine the critical points. 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Remember that for a rational inequality, the critical points are the values of <m>x</m> that make the rational expression equal to <m>0</m> or undefined.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>2</m> and <m>4</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the critical points you found in part (e) and plot them on a number line. Determine whether those should be included in your solution based on the inequality that was given.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Both values of <m>x</m> should be excluded from the solution. On the number line, they would have parentheses (or open circles).
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the critical points to create regions on the number line for you to test values of <m>x</m> and create a sign chart to show which regions are positive and negative.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <figure>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}[scale=5]
+                \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
+                \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
+                \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+                \draw[thick,red,dashed] (0.2,-0.16) -- (0.2,0.16);
+                \draw[thick,red,dashed] (0.4,-0.16) -- (0.4,0.16);
+                \node[above] at (0.3,0.01) {\Large \bf $-$};
+                \node[above] at (0.6,0.02) {\Large \bf $+$};
+                \node[above] at (-0.6,0.02) {\Large \bf $+$};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using the number line and what you determined in part (d), shade in areas on the number line that satisfies the rational inequality <m>\frac{3x-10}{x-4} \gt 2</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <image>
+        <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(end=2,strict_end=True,label_endpoints=False)
+p += TBIL.inequality_plot(start=4,strict_start=True,label_endpoints=False)
+p.axes(False)
+p 
+        </sageplot>
+      </image>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>Write your solution using interval notation.</p>
+        <ol marker="A." cols="2">
+          <li><m>(-\infty,2) \cup (4,\infty)</m></li>
+          <li><m>(-\infty,2] \cup [4,\infty)</m></li>
+          <li><m>(2,4)</m></li>
+          <li><m>[2,4]</m></li>
+        </ol> 
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+  </activity>
+
+  <activity xml:id="rational-inequality-2">
+    <introduction>
+      <p>Consider the rational inequality <me>\dfrac{4x+3}{x+2} \gt x</me>.
+      </p>
+    </introduction>
+    
+    <task>
+      <statement>
+      <p> Subtract <m>x</m> on both sides of the inequality to get <m>0</m> on one side. Simplify <m>\dfrac{4x+3}{x+2} - x</m> into a single rational expression. 
+        <ol marker="A." cols="2">
+          <li><p><m>\dfrac{4x+3}{x+2}</m> </p></li>
+          <li><p> <m>\dfrac{3x+3}{x+2}</m> </p></li>
+          <li><p> <m>\dfrac{x^2+6x+3}{x+2}</m> </p></li>
+          <li><p> <m>\dfrac{-x^2+2x+3}{x+2}</m></p></li>
+      </ol> </p>
+    </statement>
+    <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+      <p> What are the critical points of this rational inequality? 
+        </p>
+    </statement>
+    <hint>
+      <p>
+        Factor the numerator.
+      </p>
+    </hint>
+    <answer>
+      <p>
+      <m>x = -2, -1, 3</m>
+      </p>
+    </answer> 
+    </task> 
+
+    <task>
+      <statement>
+        <p>
+          Use the critical points you found in part (b) and plot them on a number line. Determine whether those should be included in your solution based on the inequality that was given.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          All critical points are not included in the solution.
+        </p>
+      </answer>
+    </task> 
+
+    <task>
+      <statement>
+        <p>
+          Use the critical points to create regions on the number line for you to test values of <m>x</m> and create a sign chart to show which regions are positive and negative.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <figure>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}[scale=5]
+                \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
+                \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
+                \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
+                \draw[thick,red,dashed] (-0.2,-0.16) -- (-0.2,0.16);
+                \draw[thick,red,dashed] (-0.1,-0.16) -- (-0.1,0.16);
+                \draw[thick,red,dashed] (0.3,-0.16) -- (0.3,0.16);
+                \node[above] at (-0.15,0.01) {\Large \bf $-$};
+                \node[above] at (0.1,0.02) {\Large \bf $+$};
+                \node[above] at (-0.6,0.02) {\Large \bf $+$};
+                \node[above] at (0.7,0.01) {\Large \bf $-$};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </p>
+      </answer>
+    </task> 
+
+    <task>
+      <statement>
+        <p>
+          Using the number line and what you determined in part (d), shade in areas on the number line that satisfies the rational inequality <m>\dfrac{4x+3}{x+2} \gt x</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <image>
+        <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p = TBIL.numberline_plot()
+p += TBIL.inequality_plot(end=-2,strict_end=True,label_endpoints=False)
+p += TBIL.inequality_plot(start=-1,end=3,strict_start=True,strict_end=True,label_endpoints=False)
+p.axes(False)
+p 
+        </sageplot>
+      </image>
+        </p>
+      </answer>
+    </task>
+    
+    <task>
+    <statement>
+    <p> How can we express the answers to part (e) for the rational inequality using interval notation?</p>
+    <ol marker="A." cols="1">
+      <li><m>\left(1,3\right) </m></li>
+      <li><m>\left(-2,-1\right) \cup (3,\infty)</m></li>
+      <li><m>\left(-2,-1\right) </m></li>
+      <li><m>\left(-\infty,-2\right) \cup (-1,3)</m></li>
+  </ol>
+</statement>
+<answer>
+  <p>
+    A
+  </p>
+</answer>
+</task>
+  </activity>
+
+  <activity xml:id="rational-inequality-practice">
+    <introduction>
+      <p>
+       For each of the following, solve the rational inequality by bringing all <m>x</m> terms to one side (and <m>0</m> on the other) and simplify the rational expression. Then, use critical points and the sign chart/number line to determine the solution.
+      </p>
+    </introduction>
+    
+    <task>
+      <statement>
+        <p>
+          <m>\frac{x+68}{x+8} \ge 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-8,7]</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\frac{x^2-4x+4}{x-2} \gt 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(3,\infty)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\frac{x-8}{x} \le 3-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -2] \cup (0,4]</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\dfrac{x+8}{x-2} \le \dfrac{x+10}{x+5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -12]\cup(-5,2)</m>
+        </p>
+      </answer>
+    </task>
+  </activity>
+  
+</subsection>
+
+<exercises>
+  <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/PR9/"/>. </p> 
+</exercises>
+
+  <!-- <subsection>
+    <title>Videos</title>
+    <p>It would be great to include videos down here, like in the Calculus book!</p>
+  </subsection> -->
+</section>

@@ -162,6 +162,25 @@ and we call this <m>\lambda</m> an <term>eigenvalue</term><idx>eigenvalue</idx> 
     </statement>
 </definition>
 
+<activity>
+  <statement>
+    <interactive label="GT3-interactive-eigenvector" platform="doenetml" width="95%" aspect="3:5">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="doenet/GT3-doenet-eigenvector.xml"/>
+      </slate>
+    </interactive>
+    <p>
+      What are the eigenvalues for this matrix?
+      <ol marker="A." cols="2">
+        <li><m>1,-2</m></li>
+        <li><m>-1,3</m></li>
+        <li><m>2,-3</m></li>
+        <li><m>-1,-2</m></li>
+      </ol>
+    </p>
+  </statement>
+</activity>
+
 <activity estimated-time='5'>
     <introduction>
         <p>
@@ -359,7 +378,7 @@ Set this characteristic polynomial equal to zero and factor to determine the eig
 
 
     <exercises>
-        <p>Exercises available at <url href="https://tbil.org/linear-algebra/preview/exercises/#/bank/GT3/"/>.</p>
+        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/GT3/"/>.</p>
     </exercises>
  <subsection>    
     <title>Mathematical Writing Explorations</title>

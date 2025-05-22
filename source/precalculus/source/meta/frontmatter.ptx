@@ -4,7 +4,7 @@
 <!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
-  <titlepage>
+  <bibinfo>
     <author>
       <personname>TBIL Community</personname>
       <email>sclontz+tbil@southalabama.edu</email>
@@ -37,12 +37,15 @@
     <date>
       <today />
     </date>
-  </titlepage>
-
-  <colophon xml:id="colophon">
     <xi:include href="../../../common/website.ptx"/>
     <xi:include href="../../../common/copyright.ptx" />
+  </bibinfo>
+  <titlepage><titlepage-items/></titlepage>
 
+  <colophon/>
+
+  <preface xml:id="attribution">
+    <title>Attribution and Acknowledgements</title>
     <p>
 This work includes materials used under license from the following works:
     </p>
@@ -60,11 +63,11 @@ This work includes materials used under license from the following works:
         </li>
     </ul> 
   
-    <p>The authors would like to acknowledge the contributions of Wendy Sheppard to drafts of <xref ref="EQ7"/>, <xref ref="PR3"/>, and <xref ref="PR4"/>.</p> 
+    <p>The authors would like to acknowledge the contributions of Wendy Sheppard to drafts of <xref ref="PR"/>.</p> 
     <p>This work is supported in part by a grant from Affordable Learning Georgia.</p>
   
     <xi:include href="../../../common/nsf.ptx" />
-  </colophon>
+  </preface>
 
   <xi:include href="../../../common/resource-library.ptx"/>
 

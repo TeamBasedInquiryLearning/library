@@ -35,13 +35,11 @@
     </activity>
 
   <remark>
-    <statement>
     <p> In <xref ref = "activity-in-ivp-1"/> there are more than one solution that satisfies the differential equation.  In fact their is a family of functions that satisfies the differential equation, that is
         <me>f(x) = \frac{x^3}{3} + x^2 + c_1,</me>
         where <m>c_1</m> is an arbitrary constant yet to be defined.  To find <m>c_1</m> we have to have some initial value for the differential equation, <m>y(x_0) = y_0</m>, where the point <m>(x_0,y_0)</m> is the starting point for the differential equation.  In general this section we will focus on solving initial value problems (differential equation with an initial condition) of the form,
         <me>\frac{dy}{dx} = f(x), \;\;\; y(x_0) = y_0.</me>
         </p>
-    </statement>
   </remark>
     
     <activity xml:id="activity-in-ivp-2">
@@ -77,7 +75,7 @@
 
 <activity xml:id="activity-in-ivp-4">
     <statement>
-    <p>One of the applications of initial value problems is calculating the distance traveled from a point based on the velocity of the object.  Given that the velocity of the of an object in km/hr is approximated by <m>v(t) = \cos(t) + 1</m>, what is the approximate distance travelled by the object after 1 hour?</p>
+    <p>One of the applications of initial value problems is calculating the distance traveled from a point based on the velocity of the object.  Given that the velocity of the of an object in km/hr is approximated by <m>v(t) = \cos(t) + 1</m>, what is the approximate distance traveled by the object after 1 hour?</p>
         <ol marker="A." cols="2">
         <li><p>  <m>s(1) \approx 1</m> km </p></li>
         <li><p>  <m>s(1) \approx 0.1585</m> km </p></li> 
@@ -88,28 +86,27 @@
     </activity>
 
   <activity xml:id="activity-in-ivp-5">
-    <statement>
-        <p>So far we have only been going from velocity to position of an object.  Recall that to find the acceleration of an object, you can take the derivative of the velocity of an object.  Let use say we have the acceleration of a falling object in m/s<m>^2</m> given by <m>a(t) = -9.8</m>.</p>
-          <task>
-          <p>What is the velocity of the falling object, if the initial velocity is given by <m>v(0) = 0</m> m/s.</p>
+    <introduction>
+      <p>So far we have only been going from velocity to position of an object.  Recall that to find the acceleration of an object, you can take the derivative of the velocity of an object.  Let use say we have the acceleration of a falling object in m/s<m>^2</m> given by <m>a(t) = -9.8</m>.</p>
+    </introduction>
+    <task>
+      <p>What is the velocity of the falling object, if the initial velocity is given by <m>v(0) = 0</m> m/s.</p>
         <ol marker="A." cols="2">
         <li><p>  <m>v(t) = -9.8t</m> m </p></li>
         <li><p>  <m>v(t) = -9.8t</m> m/s </p></li> 
         <li><p>  <m>v(t) = 9.8t</m> m/s </p></li>     
         <li><p>  <m>v(t) = 9.8t+1</m> m </p></li> 
-    </ol>
-          </task>
-        <task>
-          <p>What is the position of the object, if the initial position is given by <m>s(0) = 10</m> m.</p>
+      </ol>
+    </task>
+    <task>
+      <p>What is the position of the object, if the initial position is given by <m>s(0) = 10</m> m.</p>
         <ol marker="A." cols="2">
-        <li><p>  <m>s(t) = 4.9t + 10</m> m </p></li>
-        <li><p>  <m>s(t) = -4.9t^2 + 14.9</m> m </p></li> 
-        <li><p>  <m>s(t) = -4.9t^2 + 10</m> m </p></li>     
-        <li><p>  <m>s(t) = 4.9t + 5.1</m> m </p></li> 
-    </ol>
-          </task>
-        
-      </statement>
+          <li><p>  <m>s(t) = 4.9t + 10</m> m </p></li>
+          <li><p>  <m>s(t) = -4.9t^2 + 14.9</m> m </p></li> 
+          <li><p>  <m>s(t) = -4.9t^2 + 10</m> m </p></li>     
+          <li><p>  <m>s(t) = 4.9t + 5.1</m> m </p></li> 
+        </ol>
+      </task>
     </activity>  
 
 <activity xml:id="ivp-fluency-checkit">
@@ -137,7 +134,7 @@
     <subsection>
       <title>Exercises</title>
       <p>
-          Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/IN4/"/>
+          Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/IN4/"/>
       </p>
     </subsection>
 </section>

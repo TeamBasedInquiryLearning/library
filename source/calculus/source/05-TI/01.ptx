@@ -207,79 +207,6 @@ to get <m>\dfrac{1}{3}e^{x^3}+C</m>.
     <activity estimated-time="99">
         <statement>
             <p>
-Below are two correct solutions to the same integral, using
-two different choices for <m>u</m>. Which method would you prefer
-to use yourself?
-            </p>
-            <sidebyside widths="48% 48%">
-                <p>
-            <md>
-                <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=x+1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} 4u=4x+4
-                </mrow>
-                <mrow>
-&amp;\phantom{=} x=u-1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} du = dx
-                </mrow>
-                <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int (u-1)\sqrt{4u}\,du
-                </mrow>
-                <mrow>
-&amp;= \displaystyle \int (2u^{3/2}-2u^{1/2})\,du
-                </mrow>
-                <mrow>
-&amp;= \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C
-                </mrow>
-                <mrow>
-&amp;= \dfrac{4}{5}(x+1)^{5/2}
-                </mrow>
-                <mrow>
-&amp;\phantom{=}-\dfrac{4}{3}(x+1)^{3/2}+C
-                </mrow>
-            </md>
-                </p>
-                <p>
-            <md>
-                <mrow>
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=\sqrt{4x+4}
-                </mrow>
-                <mrow>
-&amp;\phantom{=} u^2=4x+4
-                </mrow>
-                <mrow>
-&amp;\phantom{=} x=\dfrac{1}{4}u^2-1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} dx=\dfrac{1}{2}u\,du
-                </mrow>
-                <mrow> 
-\displaystyle \int x\sqrt{4x+4}\,dx &amp;= \displaystyle \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)
-                </mrow>
-                <mrow>
-&amp;= \displaystyle \int \left(\dfrac{1}{8}u^4-\dfrac{1}{2}u^2\right)\,du
-                </mrow>
-                <mrow>
-&amp;= \dfrac{1}{40}u^5-\dfrac{1}{6}u^3+C
-                </mrow>
-                <mrow>
-&amp;= \dfrac{1}{40}(4x+4)^{5/2}
-                </mrow>
-                <mrow>
-&amp;\phantom{=}-\dfrac{1}{6}(4x+4)^{3/2}+C
-                </mrow>
-            </md>
-                </p>
-            </sidebyside>
-        </statement>
-    </activity>
-    <activity estimated-time="99">
-        <statement>
-            <p>
 Suppose we wanted to try the substitution method to find <m>\displaystyle \int e^x\cos(e^x+3)\,dx</m>. Which of these choices for <m>u</m> appears to be most useful?
             </p>
             <ol marker="A." cols="2">
@@ -529,6 +456,7 @@ leaving bounds in terms of <m>x</m> instead:
             </md>
         </statement>
     </example>
+    
     <activity estimated-time="99">
         <statement>
             <p>
@@ -542,18 +470,6 @@ Use substitution to show that
             <p>
 Use substitution to show that
 <me>\displaystyle \int_0^{\pi/4} \sin(2\theta)\,d\theta=\dfrac{1}{2}</me>.
-            </p>
-        </statement>
-    </activity>
-    <activity estimated-time="99">
-        <statement>
-            <p>
-Use substitution to show that
-                <me>
-\displaystyle \int u^5(u^3+1)^{1/3}\,du=
-\dfrac{1}{7}(u^3+1)^{7/3}-
-\dfrac{1}{4}(u^3+1)^{4/3}+C
-                </me>.
             </p>
         </statement>
     </activity>
@@ -599,7 +515,138 @@ Use substitution to solve the integral.
             </p>
         </task>
     </activity>
-    
+    <remark>
+        <statement>
+            <p>
+                As you've noticed by now, sometimes it's not so easy to 
+                see the substitution that will
+                <q>work</q>. It doesn't jump out at us. It's important to look
+                for deeper possibilities for substitution, subexpressions that
+                may result in a tractable integral, and explore what happens
+                when we try them out.
+            </p>
+            <p>
+                Sometimes the <q>right</q> choice of <m>u</m> is
+                quite unexpected. It's important to think about unusual 
+                possibilities in times of desperation. And of course, there
+                is often more than one way to do a problem.
+            </p>
+        </statement>
+    </remark>
+    <activity estimated-time="99">
+        <introduction>
+            <p>
+                Below are two possible solutions to the same integral, using
+                two different choices for <m>u</m>. Read each one carefully and
+                answer the question that follows.
+            </p>
+        </introduction>
+        <task>
+            <md>
+                <mrow>
+\int x\sqrt{4x+4}\,dx &amp;\phantom{==}\text{Let }u=x+1
+                </mrow>
+                <mrow>
+&amp;\phantom{==} 4u=4x+4
+                </mrow>
+                <mrow>
+&amp;\phantom{==} x=u-1
+                </mrow>
+                <mrow>
+&amp;\phantom{==} du = dx
+                </mrow>
+                <mrow>&amp;</mrow>
+                <mrow>
+\int x\sqrt{4x+4}\,dx &amp;= \int (u-1)\sqrt{4u}\,du
+                </mrow>
+                <mrow>
+&amp;= \int (2u^{3/2}-2u^{1/2})\,du
+                </mrow>
+                <mrow>
+&amp;= \dfrac{4}{5}u^{5/2}-\dfrac{4}{3}u^{3/2}+C
+                </mrow>
+                <mrow>
+&amp;= \dfrac{4}{5}(x+1)^{5/2}
+                </mrow>
+                <mrow>
+&amp;\phantom{==}-\dfrac{4}{3}(x+1)^{3/2}+C
+                </mrow>
+            </md>
+            <p>
+                Is this calculation valid?
+            </p>
+            <ol marker="A.">
+                <li>Yes</li>
+                <li>No</li>
+                <li>More information is needed</li>
+            </ol>
+        </task>
+        <task>
+            <md>
+                <mrow>
+\int x\sqrt{4x+4}\,dx &amp;\phantom{==}\text{Let }u=\sqrt{4x+4}
+                </mrow>
+                <mrow>
+&amp;\phantom{==} u^2=4x+4
+                </mrow>
+                <mrow>
+&amp;\phantom{==} x=\dfrac{1}{4}u^2-1
+                </mrow>
+                <mrow>
+&amp;\phantom{==} dx=\dfrac{1}{2}u\,du
+                </mrow>
+                <mrow>&amp;</mrow>
+                <mrow> 
+\int x\sqrt{4x+4}\,dx &amp;= \int \left(\dfrac{1}{4}u^2-1\right)(u)\left(\dfrac{1}{2}u\,du\right)
+                </mrow>
+                <mrow>
+&amp;= \int \left(\dfrac{1}{8}u^4-\dfrac{1}{2}u^2\right)\,du
+                </mrow>
+                <mrow>
+&amp;= \dfrac{1}{40}u^5-\dfrac{1}{6}u^3+C
+                </mrow>
+                <mrow>
+&amp;= \dfrac{1}{40}(4x+4)^{5/2}
+                </mrow>
+                <mrow>
+&amp;\phantom{==}-\dfrac{1}{6}(4x+4)^{3/2}+C
+                </mrow>
+            </md>
+            <p>
+                Is this calculation valid?
+            </p>
+            <ol marker="A.">
+                <li>Yes</li>
+                <li>No</li>
+                <li>More information is needed</li>
+            </ol>
+        </task>
+    </activity>
+    <activity estimated-time="99">
+        <statement>
+            <p>
+Use substitution to show that
+                <me>
+\displaystyle \int t^5(t^3+1)^{1/3}\,dt=
+\dfrac{1}{7}(t^3+1)^{7/3}-
+\dfrac{1}{4}(t^3+1)^{4/3}+C
+                </me>.
+            </p>
+        </statement>
+    </activity>
+    <activity estimated-time="99">
+        <introduction>
+            <p>
+                Use substitution to evaluate the integrals.
+            </p>
+        </introduction>
+        <task>
+            <m>\int x^2 \sqrt{x-1} \, dx</m>
+        </task>
+        <task>
+            <m>\int x \sqrt{x^2 - 1} \, dx</m>
+        </task>
+    </activity>
     </subsection>
     <subsection>
         <title>Videos</title>
@@ -613,7 +660,7 @@ Use substitution to solve the integral.
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/TI1/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/TI1/"/>
         </p>
     </subsection>
     

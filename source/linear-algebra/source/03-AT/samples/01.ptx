@@ -2,7 +2,7 @@
 
 <example xml:id="sample-AT1"><title>AT1</title>
 <statement>
-    <p> Answer the following questions about transformations. </p>
+    <p> Answer the following questions about transformations.
     <ol>
         <li>
             <p> Consider the following maps of Euclidean vectors <m>P:\mathbb R^3\rightarrow\mathbb R^3</m> and 
@@ -25,10 +25,10 @@
                 <me>T\left( \left[\begin{array}{c} x \\ y \end{array}\right] \right)=\left[\begin{array}{c} -4 \, x - 5 \, y \\ 2 \, x - 4 \, y \end{array}\right].</me> 
                 Prove that <m>T</m> <em>is</em> a linear transformation. </p>
         </li>
-    </ol>
+    </ol></p>
 </statement>
 <solution>
-    <ol>
+    <p><ol>
         <li>
             <p>A linear map between Euclidean spaces must consist of linear polynomials in each component.  
                 All three components of <m>P</m> are linear so <m>P</m> is likely to be linear; however, the 
@@ -41,41 +41,40 @@
                that <m>S</m> fails to preserve scalar multiplication. 
             </p>
             <p>
-               For example, for a scalar <m>c \in \IR</m> and a vector <m>\left[\begin{array}{c}x \\y \end{array}\right] \in \IR^2</m>,
-               we can compute
+               We can test if <m>S</m> preserves scalar multiplication for <m>c = -1</m> and <m>\left[\begin{array}{c}1 \\1 \end{array}\right] \in \IR^2</m>. We compute
+    
                <me>
-                S\left(c\left[\begin{array}{c} x \\ y \end{array} \right]\right) = 
-                S\left(\left[\begin{array}{c} cx \\ cy \end{array} \right]\right) = 
-                \left[\begin{array}{c}cx+2cy \\ -3c^2xy \end{array} \right]
+                S\left(-1\left[\begin{array}{c} 1 \\ 1\end{array} \right]\right) = 
+                S\left(\left[\begin{array}{c} -1 \\ -1\end{array} \right]\right) = 
+                \left[\begin{array}{c} -1-2 \\ -3 \end{array} \right]
+                = \left[\begin{array}{c} -3 \\ -3 \end{array}\right]
                </me>
                whereas
                <me>
-                cS\left(\left[\begin{array}{c} x \\ y \end{array} \right]\right) = 
-                c\left[\begin{array}{c}x+2y \\ -3xy \end{array} \right] =
-                \left[\begin{array}{c}cx+2cy \\ -3cxy \end{array} \right].
+                -1S\left(\left[\begin{array}{c} 1 \\ 1 \end{array} \right]\right) = 
+                -1\left[\begin{array}{c}1+2 \\ -3 \end{array} \right] =
+                \left[\begin{array}{c}-3 \\ 3 \end{array} \right].
                </me>
-               Since <m> -3c^2xy \neq -3cxy</m>, we see that <m>S\left(c\left[\begin{array}{c} x \\ y \end{array} \right]\right) \neq cS\left(\left[\begin{array}{c} x \\ y \end{array} \right]\right)</m>,
-               so <m>S</m> fails to preserve scalar multiplication and cannot be a linear transformation.
+               Since <m>\left[\begin{array}{c}-3 \\ -3 \end{array}\right] \neq \left[\begin{array}{c} -3 \\ 3\end{array}\right]</m>, <m>S</m> fails to preserve scalar multiplication and thus cannot be a linear transformation.
             </p>
             <p>
-                Alternatively, we could instead take two vectors <m>\left[\begin{array}{c}x_1 \\y_1 \end{array}\right], \left[\begin{array}{c}x_2 \\y_2 \end{array}\right] \in \IR^2</m>
-                and compute
+                Alternatively, we could test preservation of vector addition for <m>\left[\begin{array}{c}1 \\1 \end{array}\right], \left[\begin{array}{c}2 \\2 \end{array}\right] \in \IR^2</m>.
                 <me>
-                    S \left( \left[\begin{array}{c}x_1 \\y_1 \end{array}\right] + \left[\begin{array}{c}x_2 \\y_2 \end{array}\right]\right) = 
-                    S \left( \left[\begin{array}{c}x_1 +x_2 \\y_1 + y_2 \end{array}\right] \right) =
-                    \left[\begin{array}{c} (x_1+x_2)+2(y_1+y_2) \\ -3(x_1+x_2)(y_1+y_2) \end{array} \right]
+                    S \left( \left[\begin{array}{c}1 \\1 \end{array}\right] + \left[\begin{array}{c}2 \\2 \end{array}\right]\right) = 
+                    S \left( \left[\begin{array}{c}3 \\ 3 \end{array}\right] \right) =
+                    \left[\begin{array}{c} 3 +2(3) \\ -3(3)(3) \end{array} \right] = 
+                    \left[\begin{array}{c}9 \\ -27 \end{array}\right]
                 </me>
                 whereas 
                 <me>
-                    S \left( \left[\begin{array}{c}x_1 \\y_1 \end{array}\right]\right) +S\left( \left[\begin{array}{c}x_2 \\y_2 \end{array}\right]\right) = 
-                    \left[\begin{array}{c} x_1+2y_1 \\ -3x_1y_1 \end{array}\right] + 
-                    \left[\begin{array}{c} x_2+2y_2 \\ -3x_2y_2 \end{array}\right] = 
-                    \left[\begin{array}{c} x_1+2y_1+x_2+2y_2 \\ -3x_1y_1-3x_2y_2 \end{array} \right]
+                    S \left( \left[\begin{array}{c}1 \\1 \end{array}\right]\right) +S\left( \left[\begin{array}{c}2 \\2 \end{array}\right]\right) = 
+                    \left[\begin{array}{c} 1 + 2(1) \\ -3(1)(1) \end{array}\right] + 
+                    \left[\begin{array}{c} 2 + 2(2) \\ -3(2)(2) \end{array}\right] = 
+                    \left[\begin{array}{c} 3 \\ -3 \end{array}\right] + 
+                    \left[\begin{array}{c} 6 \\-12 \end{array}\right] = 
+                    \left[\begin{array}{c} 9\\ -15 \end{array} \right].
                 </me>
-                Since <m>-3(x_1+x_2)(y_1+y_2) \neq -3x_1y_1-3x_2y_2 </m>, we see that <m>S \left( \left[\begin{array}{c}x_1 \\y_1 \end{array}\right] + \left[\begin{array}{c}x_2 \\y_2 \end{array}\right]\right) \neq 
-                    S \left( \left[\begin{array}{c}x_1 \\y_1 \end{array}\right]\right) +S\left( \left[\begin{array}{c}x_2 \\y_2 \end{array}\right]\right) 
-                    </m>,
-                    so <m>S</m> fails to preserve addition and cannot be a linear transformation.
+                Since <m>\left[\begin{array}{c} 9 \\ -27\end{array}\right]\neq \left[\begin{array}{c} 9 \\ -15 \end{array}\right] </m>, <m>S</m> fails to preserve addition and thus cannot be a linear transformation.
             </p>
         </li>
         <li>            
@@ -123,6 +122,6 @@
                 Since <m>T</m> preserves both addition and scalar multiplication, we have proven that <m>T</m> is a linear transformation.
             </p>
         </li>
-    </ol>
+    </ol></p>
 </solution>
 </example>

@@ -1,10 +1,15 @@
-load("../sage/common.sage")
+load("../../../source/common/sagemath/library.sage")
+TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
-        l1,l2 = sample( list(range(-6,-1))+list(range(1,7)),2)
-        S=matrix([[1,0],[randint(1,3),1]])
-        A=S.inverse()*matrix([[l1,randint(1,2)],[0,l2]])*S
+        while True:
+            ls = [choice([-1,1])*i for i in range(2,7)]
+            l1,l2 = sample(ls,2)
+            S=random_matrix(QQ, 2, 2, algorithm='echelonizable', rank=2, upper_bound=2)
+            A=S.inverse()*matrix([[l1,1],[0,l2]])*S
+            if all(a!=0 for a in A.list()):
+                break
 
         return {
             "matrix": A,

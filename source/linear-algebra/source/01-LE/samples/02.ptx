@@ -39,7 +39,29 @@
       </task>
       <task>
         <statement>
-          <p>Show step by step why <me>\operatorname{RREF}\left[\begin{array}{ccccc} 4 &amp; 4 &amp; 3 &amp; 18 &amp; -11 \\ -3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 \end{array}\right] = \left[\begin{array}{ccccc} 1 &amp; 1 &amp; 0 &amp; 3 &amp; -2 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</me></p>
+          <p>Use technology to find <me>\operatorname{RREF}\left[\begin{array}{ccccc} 4 &amp; 4 &amp; 3 &amp; 18 &amp; -11 \\ -3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 \end{array}\right]</me></p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+\left[\begin{array}{ccccc} 
+4 &amp; 4 &amp; 3 &amp; 18 &amp; -11 \\ 
+-3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 
+3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 
+\end{array}\right]
+{\sim}
+\left[\begin{array}{ccccc} 
+\markedPivot 1 &amp; 1 &amp; 0 &amp; 3 &amp; -2 \\ 
+0 &amp; 0 &amp; \markedPivot 1 &amp; 2 &amp; -1 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 
+\end{array}\right]
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>Show step by step how to find <me>\operatorname{RREF}\left[\begin{array}{ccccc} 4 &amp; 4 &amp; 3 &amp; 18 &amp; -11 \\ -3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 \end{array}\right]</me></p>
         </statement>
         <solution>
           <p>

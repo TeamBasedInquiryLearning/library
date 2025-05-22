@@ -65,6 +65,7 @@
                         e1_label = text('20 m',(-1.75,2),color='black',fontsize=14)
                         e2 = edger_x(2.25,1,2)
                         e2_label=text('$\\Delta h = 5$ m',(2.75,1.5), color='black',fontsize=14)
+
                         r1+r2+r3+r4+r+label_1+label_2+label_3+label_4+e1+e1_label+e2+e2_label
                         </sageplot>
                     </image>
@@ -101,7 +102,7 @@
         <activity xml:id="activity-AI4rectangularprism5pieces">
             <introduction>
                 <p>
-                    Suppose instead that we sliced the prism from <xref ref="activity-AI4rectangularprism"/> into 5 pices of height 4 meters.
+                    Suppose instead that we sliced the prism from <xref ref="activity-AI4rectangularprism"/> into 5 pieces of height 4 meters.
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into 5 pieces.</caption>
                     <image xml:id="prism5pieces" width="50%">
@@ -348,9 +349,9 @@
                         \hline
                         h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
                         \hline
-                        h_2=30\ \text{m} &amp; \delta(30)=15+\sqrt{30}\ \text{oz/in}^3 &amp; \pi(7.5)^2\cdot30\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        h_2=30\ \text{in} &amp; \delta(30)=15+\sqrt{30}\ \text{oz/in}^3 &amp; \pi(7.5)^2\cdot30\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
                         \hline
-                        h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot30\ \text{in}^3 &amp; \\
+                        h_1=0\ \text{in} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot30\ \text{in}^3 &amp; \\
                         \hline
                         \end{array}
                     </me>
@@ -403,7 +404,6 @@
                         e3_label = text('$\\Delta h = 20$ in', (3.05,4),color='black',fontsize=13)
                         e4 = edger_x(2.5,0,8/3)
                         e4_label = text('$\\Delta h = 20$ in', (3.65,4/3), color='black', fontsize=13)
-
                         h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=14)
                         h2_label = text('$h_2 = 20$ in', (-3,8/3),color='black',fontsize=14)
                         h3_label = text('$h_3 = 40$ in', (-2.5,16/3),color='black',fontsize=14)
@@ -420,11 +420,11 @@
                         \hline
                         h_i &amp; \delta(h_i) &amp; \text{Volume} &amp; \text{Estimated Mass}\\
                         \hline
-                        h_2=40\ \text{m} &amp; \delta(40)=15+\sqrt{40}\ \text{oz/in}^3 &amp; \pi(5)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        h_2=40\ \text{in} &amp; \delta(40)=15+\sqrt{40}\ \text{oz/in}^3 &amp; \pi(5)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
                         \hline
-                        h_2=20\ \text{m} &amp; \delta(20)=15+\sqrt{20}\ \text{oz/in}^3 &amp; \pi(10)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
+                        h_2=20\ \text{in} &amp; \delta(20)=15+\sqrt{20}\ \text{oz/in}^3 &amp; \pi(10)^2\cdot20\ \text{in}^3 &amp; \phantom{6500\ \text{kg}}\\
                         \hline
-                        h_1=0\ \text{m} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot20\ \text{in}^3 &amp; \\
+                        h_1=0\ \text{in} &amp; \delta(0)=15\ \text{oz/in}^3 &amp; \pi(15)^2\cdot20\ \text{in}^3 &amp; \\
                         \hline
                         \end{array}
                     </me>
@@ -925,7 +925,7 @@
     <subsection>
         <title>Exercises</title>
         <p>
-            Exercises available at <url href="https://tbil.org/calculus/preview/exercises/#/bank/AI5/"/>
+            Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AI5/"/>
         </p>
     </subsection>
     

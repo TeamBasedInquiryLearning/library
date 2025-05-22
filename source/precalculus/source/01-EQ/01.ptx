@@ -13,9 +13,11 @@
     <title>Activities</title>
     
 <remark>
+<p>
   Recall that when solving a linear equation, you use addition, subtraction, multiplication and division to isolate the variable.
+</p>
 </remark>
-<activity>
+<activity xml:id="basic-linear-equations">
   <introduction>
     <p>Solve the linear equations.
     </p>
@@ -53,7 +55,7 @@
     </answer>
   </task>
 </activity>
-<activity>
+<activity xml:id="linear-equation-with-fractions">
   <introduction>
     <p>Solve the linear equation.
       <me>\dfrac{2}{3}x-8=\dfrac{5x+1}{6}</me>
@@ -92,9 +94,73 @@
     </answer>
   </task>
 </activity>
-<activity>
+
+<activity xml:id="investigating-different-solutions">
+<introduction>
+  <p>
+    It is not always the case that a linear equation has exactly one solution. Consider the equation <me>3+5x=5(x+2)-7</me>.
+  </p>
+</introduction>
+
+<task>
+  <statement>
+    <p>
+      Solve the linear equation. Which of the following is your last step?
+      <ol marker="A." cols="2">
+          <li><p><m>3+5x=5x+3</m> </p></li>
+          <li><p> <m>0=0</m> </p></li>
+          <li><p> <m>3=3</m> </p></li>
+          <li><p> <m>3=10</m></p></li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A, B, or C. Although choice A may not be the last step, some students may not need to continue solving because they can see the left side is the same as the right side.
+    </p>
+  </answer>
+</task>
+
+<task>
+  <statement>
+    <p>
+       Which of the following best describes the statement you got in part (a)?
+       <ol marker="A." cols="2">
+          <li>always true</li>
+          <li>sometimes true</li>
+          <li>never true</li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A. For students who chose choice A in part (a), ask how they can show the statement to always be true by considering different <m>x</m>-values.
+    </p>
+  </answer>
+</task>
+ 
+ <task>
+  <statement>
+    <p>
+      What do you think this means about the number of solutions?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      This equation has infinitely many solutions. Students might have trouble with this idea, so one way to help them to think about the solutions is to have them try different values of <m>x</m>.
+    </p>
+  </answer>
+ </task>
+</activity>
+
+<remark>
+  <p>In <xref ref="investigating-different-solutions"/>, we saw that a linear equation can have infinitely many solutions. Linear equations can also have a unique solution or no solution! 
+  </p>
+</remark>
+
+<activity xml:id="solutions-of-linear-equations">
   <introduction>
-    <p>It is not always the case that a linear equation has exactly one solution.  Consider the following linear equations which appear similar, but their solutions are very different.
+    <p> For each part in this activity, consider the conditions for when a linear equation has a unique solution, no solution, or infinitely many solutions. 
     </p>
   </introduction>
   <task>
@@ -155,13 +221,30 @@
     </answer>
   </task>
 </activity>
+
 <definition>
+<p>
   A linear equation with one unique solution is a <term>conditional equation.</term> A linear equation that is true for all values of the variable is an <term>identity equation</term>. A linear equation with no solutions is an <term>inconsistent equation.</term>
+</p>
 </definition>
-<activity>
+
+<definition>
+  <p>
+    The remainder of this section will focus on <term>linear inequalities</term>. A linear inequality is an inequality that can be written in one of the following forms:
+        <ul>
+        <li><me>ax+b \gt 0 </me> </li>
+        <li><me>ax+b \lt 0 </me> </li>
+        <li><me>ax+b \ge 0 </me> </li>
+        <li><me>ax+b \le 0 </me> </li>
+        </ul>
+where <m>a</m> and <m>b</m> are real numbers and <m>a \neq 0</m>.
+  </p>
+</definition>
+
+<activity xml:id="intro-to-linear-inequality">
   <introduction>
     <p>
-      An inequality is a relationship between two values that are not equal.
+      In this activity, we explore the relationship between a linear equation and a linear inequality, as well as how to express solutions on a number line and in interval notation.
     </p>
   </introduction>
   <task>
@@ -176,7 +259,7 @@
   </task>
   <task>
     <statement>
-    <p> Which of these values is a solution of the inequality <m>3x-1 \ge 5</m>?
+    <p> Which of these values are solutions of the inequality <m>3x-1 \ge 5</m>?
       <ol marker="A." cols="2">
         <li><p><m>x=0</m> </p></li>
         <li><p> <m>x=2</m> </p></li>
@@ -190,6 +273,51 @@
       </p>
     </answer>
   </task>
+
+  <task>
+    <statement>
+      <p>
+        There are more solutions to the inequality than the ones found in part (b). How would you characterize all of them?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        All numbers greater than <m>2</m> and <m>2</m> itself.
+      </p>
+    </answer>
+  </task>
+  
+  <task>
+    <statement>
+      <p>
+        Draw the solution to the inequality on a number line. 
+      <ol marker="A." cols="1">
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-\\infty,2]"])
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-\\infty,2)"])
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(2,\\infty)"])
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[2,\\infty)"])
+        </sageplot></image></li>
+    </ol> </p>
+  
+  </statement>
+  <answer>
+    <p>
+      D
+    </p>
+  </answer>
+  </task>
+
   <task>
     <statement>
     <p> Express the solution of the inequality <m>3x-1 \ge 5</m> in interval notation.
@@ -200,72 +328,11 @@
         <li><p> <m>[2,\infty)</m> </p></li>
     </ol> </p>
   </statement>
-  <answer>
+  <hint>
     <p>
-      D
+      Use the graph from part (d) to help you write the solution in interval notation. 
     </p>
-  </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        Draw the solution to the inequality on a number line. 
-      <ol marker="A." cols="1">
-        <li><p> 
-          <image>
-              <latex-image>
-                \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
-    \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
-\end{tikzpicture}
-              </latex-image>
-          </image>
-      </p></li>
-      <li><p> 
-        <image>
-            <latex-image>
-              \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
-  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{-)}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
-\end{tikzpicture}
-            </latex-image>
-        </image>
-    </p></li>
-    <li><p> 
-      <image>
-          <latex-image>
-            \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
-\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{(-}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
-\end{tikzpicture}
-          </latex-image>
-      </image>
-  </p></li>
-  <li><p> 
-    <image>
-        <latex-image>
-          \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-1,0.2/0,0.4/1,0.6/2,0.8/3, 1/4}
-\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
-\end{tikzpicture}
-        </latex-image>
-    </image>
-</p></li>
-    </ol> </p>
-  
-  </statement>
+  </hint>
   <answer>
     <p>
       D
@@ -273,7 +340,8 @@
   </answer>
   </task>
 </activity>
-<activity>
+
+<activity xml:id="linear-inequality-with-negative-coefficient">
   <introduction>
     <p>
       Let's consider what happens to the inequality when the variable has a negative coefficient.
@@ -327,58 +395,22 @@
     <p>
       Draw the solution to the inequality on a number line. 
     <ol marker="A." cols="1">
-      <li><p> 
-        <image>
-            <latex-image>
-              \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
-  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{-]}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
-\end{tikzpicture}
-            </latex-image>
-        </image>
-    </p></li>
-    <li><p> 
-      <image>
-          <latex-image>
-            \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
-\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{-)}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (-.1,-.16ex) -- (0.6, -.16ex) -- (0.6, .16ex) -- (-.1,.16ex) -- cycle;
-\end{tikzpicture}
-          </latex-image>
-      </image>
-  </p></li>
-  <li><p> 
-    <image>
-        <latex-image>
-          \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
-\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{(-}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
-\end{tikzpicture}
-        </latex-image>
-    </image>
-</p></li>
-<li><p> 
-  <image>
-      <latex-image>
-        \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.1,0);
-\foreach \x/\xtext in {0/-11,0.2/-10,0.4/-9,0.6/-8,0.8/-7, 1/-6}
-\draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
-\end{tikzpicture}
-</latex-image>
-</image>
-</p></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-\\infty,-8]"])
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-\\infty,-8)"])
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-8,\\infty)"])
+        </sageplot></image></li>
+        <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[-8,\\infty)"])
+        </sageplot></image></li>
 </ol> </p>
 
 </statement>
@@ -389,11 +421,14 @@
 </answer>
 </task>
 </activity>
+
 <remark>
-  
+  <p>
   You can treat solving linear inequalities, just like solving an equation.  The one exception is when you multiply or divide by a negative value, reverse the inequality symbol.
+  </p>
 </remark>
-<activity>
+
+<activity xml:id="linear-inequality-practice">
   <introduction>
     <p>Solve the following inequalities.  Express your solution in interval notation and graphically on a number line.
     </p>
@@ -407,19 +442,10 @@
     <answer>
       <p>
         <m>x \ge -2</m>, <m>[-2,\infty]</m>
-        <image>
-          <sageplot>
-            P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
-            P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
-            for i in range(-9,10):
-              P += line([(i,-0.2),(i,0.2)],color="black")
-              P += text(f"${i}$", (i,-0.6),color="black")
-            P+= arrow((-2,0),(10,0),color="#0088ff", width=3, arrowsize=3)
-            P += text("[", (-2,0), color="#0088ff", fontsize=16)
-            P.axes(False)
-            P
-          </sageplot>
-        </image>
+        <image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[-2,\\infty)"])
+        </sageplot></image>
       </p>
     </answer>
     </task>
@@ -432,20 +458,10 @@
     <answer>
       <p>
         <m>x \gt -13</m>, <m>(-13,\infty)</m>
-        <image>
-        <sageplot>
-          P = arrow((0,0),(20,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
-          P += arrow((0,0),(-20,0),color="black", width=1, arrowsize=1)
-          for i in range(-19,20):
-            P += line([(i,-0.2),(i,0.2)],color="black")
-          for i in range(-9,10):
-            P += text(f"${2*i}$", (2*i,-0.6),color="black")
-          P+= arrow((-13,0),(20,0),color="#0088ff", width=3, arrowsize=3)
-          P += text("(", (-13,0), color="#0088ff", fontsize=16)
-          P.axes(False)
-          P
-        </sageplot>
-      </image>
+        <image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-13,\\infty)"])
+        </sageplot></image>
       </p>
     </answer>
   </task>
@@ -458,24 +474,15 @@
   <answer>
     <p>
       <m>x \le \dfrac{3}{7}</m>, <m>\left(-\infty, \dfrac{3}{7} \right]</m>
-      <image>
-      <sageplot>
-        P = arrow((0,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1)
-        P += arrow((0,0),(-10,0),color="black", width=1, arrowsize=1)
-        for i in range(-9,10):
-          P += line([(i,-0.2),(i,0.2)],color="black")
-          P += text(f"${i}$", (i,-0.6),color="black")
-        P+= arrow((3/7,0),(-10,0),color="#0088ff", width=3, arrowsize=3)
-        P += text("]", (3/7,0), color="#0088ff", fontsize=16)
-        P.axes(False)
-        P
-      </sageplot>
-      </image>
+      <image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(-\\infty, 3/7]"])
+        </sageplot></image>
     </p>
   </answer>
 </task>
-  
 </activity>
+
 <definition xml:id="def-compound_ineq">
   <statement>
     <p>
@@ -483,8 +490,8 @@
     </p>
   </statement>
 </definition>
-<activity>
-  
+
+<activity xml:id="intro-to-compound-inequality">  
   <introduction>
     <p>Consider the statement <m>3 \le x \lt 8</m>. This really means that <m>3 \le x</m> and <m>x \lt 8</m>.
     </p>
@@ -562,62 +569,22 @@
     <p>
       Draw the solution to the inequality on a number line. 
     <ol marker="A." cols="1">
-      <li><p> 
-        <image>
-            <latex-image>
-              \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.3,0);
-\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
-  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{[-}, ultra thick, blue] (-0.01,0) -- (0,0);
-\draw[{-)}, ultra thick, blue] (1.09,0) -- (1.1,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0,.16ex) -- cycle;
-\end{tikzpicture}
-            </latex-image>
-        </image>
-    </p></li>
-    <li><p> 
-      <image>
-          <latex-image>
-            \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.3,0);
-\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
-  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-  \draw[{[-}, ultra thick, blue] (-0.01,0) -- (0,0);
-  \draw[{-)}, ultra thick, blue] (.49,0) -- (.5,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0,-.16ex) -- (0.5, -.16ex) -- (0.5, .16ex) -- (0,.16ex) -- cycle;
-\end{tikzpicture}
-          </latex-image>
-      </image>
-  </p></li>
-  <li><p> 
-    <image>
-        <latex-image>
-          \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.3,0);
-\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
-  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-\draw[{(-}, ultra thick, blue] (0.29,0) -- (0.3,0);
-\draw[{-]}, ultra thick, blue] (0.39,0) -- (0.4,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0.3,-.16ex) -- (0.4, -.16ex) -- (0.4, .16ex) -- (0.3,.16ex) -- cycle;
-\end{tikzpicture}
-        </latex-image>
-    </image>
-</p></li>
-<li><p> 
-  <image>
-      <latex-image>
-        \begin{tikzpicture}[scale=7]
-\draw[->, thick] (-0.1,0) -- (1.3,0);
-\foreach \x/\xtext in {0/0,0.2/1,0.4/2,0.6/3,0.8/4, 1/5, 1.2/6}
-  \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-  \draw[{[-}, ultra thick, blue] (0.59,0) -- (0.6,0);
-  \draw[{-)}, ultra thick, blue] (1.09,0) -- (1.1,0);
-\fill[opacity = 0.2, blue,rounded corners=1ex] (0.6,-.16ex) -- (1.1, -.16ex) -- (1.1, .16ex) -- (0.6,.16ex) -- cycle;
-\end{tikzpicture}
-</latex-image>
-</image>
-</p></li>
+      <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[0,11/2)"])
+        </sageplot></image></li>
+      <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[0,5/2)"])
+        </sageplot></image></li>
+      <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["(5/2,3]"])
+        </sageplot></image></li>
+      <li><image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[3,11/2)"])
+        </sageplot></image></li>
 </ol> </p>
 
 </statement>
@@ -629,10 +596,14 @@
 </task>
   
 </activity>
+
 <remark>
+<p>
   Solving a compound linear inequality, uses the same methods as a single linear inequality ensuring that you perform the same operations on all three parts. Alternatively, you can break the compound inquality up into two and solve separately.
+</p>
 </remark>
-<activity>
+
+<activity xml:id="compound-inequality-practice">
   <introduction>
     <p>
       Solve the following inequalities. Express your solution in interval notation and graphically on a number line.
@@ -647,19 +618,10 @@
   <answer>
     <p>
       <m>-4 \le x \lt -3</m>, <m>[-4,-3)</m>
-      <image>
-        <sageplot>
-          P = arrow((-10,0),(10,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
-          for i in range(-9,10):
-            P += line([(i,-0.2),(i,0.2)],color="black")
-            P += text(f"${i}$", (i,-0.6),color="black")
-          P+= line([(-4,0),(-3,0)],color="#0088ff", thickness=3)
-          P += text("[", (-4,0), color="#0088ff", fontsize=16)
-          P += text(")", (-3,0), color="#0088ff", fontsize=16)
-          P.axes(False)
-          P
-        </sageplot>
-      </image>
+      <image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[-4,-3)"])
+        </sageplot></image>
     </p>
   </answer>
   </task>
@@ -672,19 +634,10 @@
   <answer>
     <p>
       <m>-12 \le x \lt 4</m>, <m>[-12,4)</m>
-      <image>
-        <sageplot>
-          P = arrow((-14,0),(13,0),color="black", width=1, arrowsize=1, aspect_ratio=1,head=2)
-          for i in range(-13,13):
-            P += line([(i,-0.2),(i,0.2)],color="black")
-            P += text(f"${i}$", (i,-0.6),color="black")
-          P+= line([(-12,0),(4,0)],color="#0088ff", thickness=3)
-          P += text("[", (-12,0), color="#0088ff", fontsize=16)
-          P += text(")", (4,0), color="#0088ff", fontsize=16)
-          P.axes(False)
-          P
-        </sageplot>
-      </image>
+      <image><sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.numberline_from_intervals(["[-12,4)"])
+        </sageplot></image>
     </p>
   </answer>
   </task>
@@ -693,7 +646,7 @@
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/EQ1/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/EQ1/"/>. </p> 
     </exercises>
 
     <!-- <subsection>

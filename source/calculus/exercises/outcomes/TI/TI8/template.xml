@@ -2,21 +2,69 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Explain and demonstrate how to write each of the following improper integrals
-as a limit, and why this limit converges or diverges.
+Consider each of the following definite integrals.
         </p>
     </intro>
     <!-- {{#tasks}} -->
     <knowl>
-        <content><p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx.</m></p></content>
-        <outtro>
-            <!-- {{#converges}} -->
-            <p>Converges.</p>
-            <!-- {{/converges}} -->
-            <!-- {{^converges}} -->
-            <p>Diverges.</p>
-            <!-- {{/converges}} -->
-        </outtro>
+        <intro>
+            <p>
+                <m>
+\displaystyle\int_{ {{bottom}} }^{ {{top}} }
+{{integrand}} dx
+                </m>.
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p>Demonstrate how to determine whether this integral is proper or improper.</p>
+            </content>
+            <outtro>
+                <!-- {{#proper}} -->
+                    <p>This integral is proper.</p>
+                <!-- {{/proper}} -->
+                <!-- {{^proper}} -->
+                    <p>This integral is improper.</p>
+                <!-- {{/proper}} -->
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>If the integral is improper, show how to express it as a limit.</p>
+            </content>
+            <outtro>
+                <!-- {{#proper}} -->
+                    <p>N/A</p>
+                <!-- {{/proper}} -->
+                <!-- {{^proper}} -->
+                    <p>
+                        <m>
+\displaystyle\lim_{ a \to {{limit}} }
+\int_{ {{limit_bottom}} }^{ {{limit_top}} }
+{{integrand}} dx
+                        </m>.
+                    </p>
+                <!-- {{/proper}} -->
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>If the integral is improper, demonstrate how to evaluate this limit to compute the value of the integral.</p>
+            </content>
+            <outtro>
+                <!-- {{#proper}} -->
+                    <p>N/A</p>
+                <!-- {{/proper}} -->
+                <!-- {{^proper}} -->
+                <p><m>
+                    {{value}}
+                    <!-- {{#approx}} -->
+                    \approx {{approx}}
+                    <!-- {{/approx}} -->
+                </m>.</p>
+                <!-- {{/proper}} -->
+            </outtro>
+        </knowl>
     </knowl>
     <!-- {{/tasks}} -->
 </knowl>

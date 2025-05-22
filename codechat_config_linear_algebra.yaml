@@ -1,4 +1,4 @@
 # Replace the contents of `codechat_config.yaml` with this file to edit Linear Algebra
 output_path: output/linear-algebra-web-instructor
-args: "{sys_executable} -m pretext build linear-algebra-web-instructor --xmlid {xml_id} --no-knowls"
+args: "/opt/conda/envs/sage/bin/python -m pretext build linear-algebra-web-instructor --xmlid {xml_id} --no-knowls"
 project_type: PreTeXt

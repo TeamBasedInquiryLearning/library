@@ -1,0 +1,79 @@
+<!-- https://doenet.org/portfolioeditor/_44BSIXqrvpzFajHnG2c6B/_5cg9Bze1z2h4YjUCrmpX7 -->
+<p>
+  The below graph visualizes the transformation of the
+  vectors <m>\vec v,\vec w</m> by the matrix
+  <me>A=\left[\begin{array}{cc} -\frac{1}{7} \amp -\frac{10}{7} \\ 
+  -\frac{30}{7} \amp -\frac{6}{7} \end{array}\right]</me>
+  into the vectors <m>A\vec v,A\vec w</m>.
+</p>
+<p>
+  Move the endpoints of <m>\vec v,\vec w</m> so that they form a set of
+  linearly independent eigenvectors. What are their eigenvalues?
+</p>
+  <graph xmin="-11" ymin="-11" xmax="11" ymax="11">
+    
+    <lineSegment styleNumber="1" endpoints="(0,0) $v"/>
+    <point name="v" styleNumber="1" >
+      (0,0)
+      <label><m>\vec v</m></label>
+      <constraints>
+        <attractToGrid/>
+        <attractTo>
+          <line through="(0,0) (1,2)"/>
+        </attractTo>
+        <attractTo>
+          <line through="(0,0) (-2,3)"/>
+        </attractTo>
+      </constraints>
+    </point>
+    
+    <lineSegment styleNumber="6" endpoints="(0,0) $Tv"/>
+    <point name="Tv" styleNumber="1" draggable="false">
+      (-$v.x/7-10*$v.y/7,-30*$v.x/7-6*$v.y/7)
+      <label><m>A\vec v</m></label>
+    </point>
+    
+    <lineSegment styleNumber="2" endpoints="(0,0) $w"/>
+    <point name="w" styleNumber="2" >
+      (0,0)
+      <label><m>\vec w</m></label>
+      <constraints>
+        <attractToGrid/>
+        <attractTo>
+          <line through="(0,0) (1,2)"/>
+        </attractTo>
+        <attractTo>
+          <line through="(0,0) (-2,3)"/>
+        </attractTo>
+      </constraints>
+    </point>
+    
+    <lineSegment styleNumber="6" endpoints="(0,0) $Tw"/>
+    <point name="Tw" styleNumber="2" draggable="false">
+      (-$w.x/7-10*$w.y/7,-30*$w.x/7-6*$w.y/7)
+      <label><m>A\vec w</m></label>
+    </point>
+  </graph>
+<p hide="$v.x*$w.y=$v.y*$w.x">
+  ✔️ Vectors are linearly independent.
+</p>
+<p hide="$v.x*$w.y!=$v.y*$w.x">
+  ❌ Vectors are linearly dependent.
+</p>
+<p hide="$v.x*$Tv.y!=$v.y*$Tv.x or $w.x*$Tw.y!=$w.y*$Tw.x">
+  ✔️ Vectors are both eigenvectors.
+</p>
+<p hide="$v.x*$Tv.y=$v.y*$Tv.x and $w.x*$Tw.y=$w.y*$Tw.x">
+  ❌ Vectors are not both eigenvectors.
+</p>
+<p>
+<me>
+\vec v = \left[\begin{array}{c}$v.x\\$v.y\end{array}\right]
+\hspace{1em}
+A\vec v = \left[\begin{array}{c}$Tv.x\\$Tv.y\end{array}\right]
+\hspace{3em}
+\vec w = \left[\begin{array}{c}$w.x\\$w.y\end{array}\right]
+\hspace{1em}
+A\vec w = \left[\begin{array}{c}$Tw.x\\$Tw.y\end{array}\right]
+</me>
+</p>

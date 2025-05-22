@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="TE4" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Trigonometric Laws (TE4) </title>
+    <title>Solving Right Triangles (TE4) </title>
     <objectives>
     <ul>
       <li>
@@ -12,10 +12,245 @@
     <subsection>
     <title>Activities</title>
 
+    <activity xml:id="finding-angle">
+      <introduction>
+          <p>
+            Let's revisit the triangle <m>ABC</m> from <xref ref="find-trig-function"/>, where <m>a=35</m>, <m>b=12</m>, and <m>c=37</m>, with <m>c</m> being the hypotenuse of the triangle.
+          </p>
+        </introduction>
+    
+        <task>
+          <statement>
+            <p>
+              Find <m>\cos{A}</m>.
+              <ol marker= "A." cols="1">
+                <li> <m>\frac{12}{35}</m> </li>
+                <li> <m>\frac{12}{37}</m> </li>
+                <li> <m>\frac{37}{35}</m> </li>
+                <li> <m>\frac{37}{12}</m> </li></ol></p>
+          </statement>
+          <answer>
+            <p>
+              B
+            </p>
+          </answer>
+        </task>
+    
+        <task>
+          <statement>
+            <p>
+              Suppose we want to know the measure of angle <m>A</m>. We can find the measure of angle <m>A</m> in three different ways by using either sine, cosine, or tangent (since all side lengths are given). For each trigonometric function, write the trigonometric ratio that can be used to find the measure of angle <m>A</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+             Students should be able to write all three trigonometric functions: <m>\cos{A}=\frac{12}{37}</m>, <m>\sin{A}=\frac{35}{37}</m>, and <m>\tan{A}=\frac{35}{12}</m>.
+            </p>
+          </answer>
+        </task>
+    
+        <task>
+          <statement>
+            <p>
+              Now that we have set up a trigonometric ratio to help find the measure of angle <m>A</m>, how can we use these ratios to determine how big <m>A</m> is?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Give students the opportunity to discuss with one another on how they would try to determine the measure of angle <m>A</m>. Instructors might want to give a hint about how to "undo" the trigonometric function.
+            </p>
+          </answer>
+        </task>
+      </activity>
+    
+      <remark>
+      <p>Sometimes you will need to use trigonometric functions to find the measure of an angle. In these cases, you will need to use the inverse trig function key on your calculator, such as <m>\sin^{-1}</m>, to find the angle that yields that trig value.
+      </p>
+      <p> For example, the sine function takes an angle and gives us the ratio <m>\frac{\text{opposite}}{\text{hypotenuse}}</m>, but <m>\sin^{-1}</m> (called "inverse sine") takes the ratio <m>\frac{\text{opposite}}{\text{hypotenuse}}</m> and gives us an angle.
+      </p>
+      </remark> 
+    
+      <activity xml:id="finding-angle-measures">
+     <introduction>
+      <p>
+        Refer back to <xref ref="finding-trig-ratios-when-given-all-sides"/>, where you were given all the sides of a right triangle, but no angle measures. (In triangle <m>ABC</m>, <m>a=35</m>, <m>b=12</m>, and <m>c=37</m>, with <m>c</m> being the hypotenuse of the triangle).
+      </p>
+     </introduction>
+     
+     <task>
+      <statement>
+        <p>
+          What is the trigonometric ratio for <m>\cos{A}</m>?
+          <ol marker= "A." cols="1">
+            <li> <m>\frac{35}{12}</m> </li>
+            <li> <m>\frac{35}{37}</m> </li>
+            <li> <m>\frac{12}{35}</m> </li>
+            <li> <m>\frac{12}{37}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          Use the inverse trig function, <m>\cos^{-1}</m> to find the measure of angle <m>A</m>. (Make sure your calculator is in degree mode!)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should get approximately <m>71.08</m><degree/>.
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          What is the trigonometric ratio for <m>\sin{A}</m>?
+          <ol marker= "A." cols="1">
+            <li> <m>\frac{35}{12}</m> </li>
+            <li> <m>\frac{35}{37}</m> </li>
+            <li> <m>\frac{12}{35}</m> </li>
+            <li> <m>\frac{12}{37}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          B
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          Use the inverse trig function, <m>\sin^{-1}</m> to find the measure of angle <m>A</m>. (Make sure your calculator is in degree mode!)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should get approximately <m>71.08</m><degree/>.
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          What is the trigonometric ratio for <m>\tan{A}</m>?
+          <ol marker= "A." cols="1">
+            <li> <m>\frac{35}{12}</m> </li>
+            <li> <m>\frac{35}{37}</m> </li>
+            <li> <m>\frac{12}{35}</m> </li>
+            <li> <m>\frac{12}{37}</m> </li></ol></p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          Use the inverse trig function, <m>\tan^{-1}</m> to find the measure of angle <m>A</m>. (Make sure your calculator is in degree mode!)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should get approximately <m>71.08</m><degree/>.
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          Refer back to parts (b), (d), and (f). What do you notice about your answers from those parts?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should notice that they got the same angle measure for <m>A</m> regardless of which trigonometric function they used.
+        </p>
+      </answer>
+     </task>
+    
+     <task>
+      <statement>
+        <p>
+          Now that we know the measure of angle <m>A</m>, find the measure of angle <m>B</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Angle <m>B</m> is approximately <m>18.92</m><degree/>.
+        </p>
+      </answer>
+     </task>
+      </activity>
+    
+    <remark>
+      <p>
+        Determining all of the side lengths and angle measures of a right triangle is known as <term>solving</term> a right triangle. In <xref ref="finding-trig-ratios-when-given-all-sides"/> and <xref ref="finding-angle-measures"/>, we were given all the sides of the triangle and used trigonometric ratios to determine the measure of the angles.
+      </p>
+    </remark>
+    
+    <activity xml:id="solving-right-triangles">
+      <introduction>
+        <p>
+          Solve the following triangles using your knowledge of right triangles, the Pythagorean Theorem and trigonometric functions. Be sure to draw a picture to help you determine the relationship between the angles and sides.
+        </p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>
+            In triangle <m>ABC</m>, <m>B=53</m><degree/> and <m>c=5</m> meters (with <m>c</m> being the hypotenuse).
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A=37</m><degree/>, <m>C=90</m><degree/>, <m>a=3</m> meters, and <m>b=4</m> meters.
+          </p>
+        </answer>
+      </task>
+    
+      <task>
+        <statement>
+          <p>
+            In triangle <m>ABC</m>, <m>A=28</m><degree/> and <m>b=29.3</m> miles (with <m>c</m> being the hypotenuse).
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>B=62</m><degree/>, <m>C=90</m><degree/>, <m>a=15.6</m> miles, and <m>c=33.2</m> miles.
+          </p>
+        </answer>
+      </task>
+    
+      <task>
+        <statement>
+          <p>
+            In triangle <m>ABC</m>, <m>a=8</m> feet, <m>b=17</m> feet, and <m>c=15</m> feet (with <m>b</m> being the hypotenuse).
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A=28.07</m><degree/>, <m>B=90</m><degree/>, and <m>C=61.93</m><degree/>.
+          </p>
+        </answer>
+      </task>
+    
+    </activity>
     </subsection>
 
     <exercises>
-      <p>Exercises available at <url href="https://tbil.org/precalculus/preview/exercises/#/bank/TE4/"/>. </p> 
+      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TE4/"/>. </p> 
     </exercises>
     
     <!-- <subsection>
