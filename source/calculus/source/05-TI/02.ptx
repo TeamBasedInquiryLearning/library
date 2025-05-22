@@ -11,63 +11,121 @@
     </objectives>
   <subsection>
     <title>Activities</title>
-        <activity epretexstimated-time="99" xml:id="activity-TI2ProductRuleParts">
+
+        <activity estimated-time="99" xml:id="activity-TI2ProductRuleParts">
         <introduction><p>Answer the following.</p></introduction>
+            
         <task>
-            <p>Using the product rule, which of these is derivative of <m>x^3e^x</m> with respect to <m>x</m>?</p>
-            <ol marker="A." cols="2">
-                <li><p><m>3x^2e^x</m></p></li>
-                <li><p><m>3x^2e^{x}+x^3e^x</m></p></li>
-                <li><p><m>3x^2e^{x-1}</m></p></li>
-                <li><p><m>\dfrac{1}{4}x^4 e^x</m></p></li>
-            </ol>
+            <statement>
+                <p>
+                    Using the product rule, which of these is derivative of <m>x^3e^x</m> with respect to <m>x</m>?
+                    <ol marker="A." cols="2">
+                        <li><p><m>3x^2e^x</m></p></li>
+                        <li><p><m>3x^2e^{x}+x^3e^x</m></p></li>
+                        <li><p><m>3x^2e^{x-1}</m></p></li>
+                        <li><p><m>\dfrac{1}{4}x^4 e^x</m></p></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    B: <m>3x^2 e^x + x^3e^x</m>
+                </p>
+            </answer>            
         </task>
         <task>
-            <p>Based on this result, which of these would you suspect to equal <m>\displaystyle \int 3x^2e^x+x^3e^x\,dx</m>?</p>
-            <ol marker="A." cols="2">
-                <li><p><m>x^3e^x+C</m></p></li>
-                <li><p><m>x^3e^x+\dfrac{1}{4}x^4e^x+C</m></p></li>
-                <li><p><m>6xe^x+3x^2e^x+C</m></p></li>
-                <li><p><m>6xe^x+3x^2e^x+3x^2e^x+x^3e^x+C</m></p></li>
-            </ol>
+            <statement>
+                <p>
+                    Based on this result, which of these would you suspect to equal <m>\displaystyle \int 3x^2e^x+x^3e^x\,dx</m>? 
+                    <ol marker="A." cols="2">
+                        <li><p><m>x^3e^x+C</m></p></li>
+                        <li><p><m>x^3e^x+\dfrac{1}{4}x^4e^x+C</m></p></li>
+                        <li><p><m>6xe^x+3x^2e^x+C</m></p></li>
+                        <li><p><m>6xe^x+3x^2e^x+3x^2e^x+x^3e^x+C</m></p></li>
+                    </ol>
+                </p>
+            </statement>  
+            <answer>
+                <p>
+                    A: <m>x^3e^x + C</m>
+                </p>
+            </answer>      
         </task>
         </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2RulePreferences">
     <introduction><p>Answer the following.</p></introduction>
         <task>
-            <p>Which differentiation rule is easier to implement?</p>
-            <ol marker="A." cols="2">
-                <li><p>Product Rule</p></li>
-                <li><p>Chain Rule</p></li>
-            </ol>
+            <statement>
+                <p>
+                    Which differentiation rule is easier to implement?
+                    <ol marker="A." cols="2">
+                        <li><p>Product Rule</p></li>
+                        <li><p>Chain Rule</p></li>
+                    </ol>
+                </p>
+            </statement>  
+            <answer>
+                <p>
+                    Answers vary, but probably A: Product Rule.
+                </p>
+            </answer>          
         </task>
         <task>
-            <p>Which differentiation strategy do you expect to be easier to reverse?</p>
-            <ol marker="A." cols="2">
-                <li><p>Product Rule</p></li>
-                <li><p>Chain Rule</p></li>
-            </ol>
+            <statement>
+                <p>
+                    Which differentiation strategy do you expect to be easier to reverse?
+                    <ol marker="A." cols="2">
+                        <li><p>Product Rule</p></li>
+                        <li><p>Chain Rule</p></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    Answers vary, but likely A: Product Rule.
+                </p>
+            </answer>            
         </task>
         </activity>
+
         <activity estimated-time="99" xml:id="activity-TI2PDeriveParts">
         <introduction><p>Answer the following.</p></introduction>
         <task>
-            <p>Which of the following equations is equivalent to the formula <m>\dfrac{d}{dx}[uv]=u'v+uv'</m>?</p>
-            <ol marker="A." cols="2">
-                <li><p><m>uv'=-\dfrac{d}{dx}(uv)-vu'</m></p></li>
-                <li><p><m>uv'=-\dfrac{d}{dx}(uv)+vu'</m></p></li>
-                <li><p><m>uv'=\dfrac{d}{dx}(uv)+vu'</m></p></li>
-                <li><p><m>uv'=\dfrac{d}{dx}(uv)-vu'</m></p></li>
-            </ol>
+            <statement>
+                <p>
+                    Which of the following equations is equivalent to the formula <m>\dfrac{d}{dx}[uv]=u'v+uv'</m>?
+                    <ol marker="A." cols="2">
+                        <li><p><m>uv'=-\dfrac{d}{dx}(uv)-vu'</m></p></li>
+                        <li><p><m>uv'=-\dfrac{d}{dx}(uv)+vu'</m></p></li>
+                        <li><p><m>uv'=\dfrac{d}{dx}(uv)+vu'</m></p></li>
+                        <li><p><m>uv'=\dfrac{d}{dx}(uv)-vu'</m></p></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    D: <m>uv'=\dfrac{d}{dx}(uv)-vu'</m>
+                </p>
+            </answer>
         </task>
         <task>
-            <p>Which of these is the most concise result of integrating both sides with respect to <m>x</m>?</p>
-            <ol marker="A.">
-                <li><p><m>\displaystyle \int(uv')\,dx=uv-\int(vu')\,dx</m></p></li>
-                <li><p><m>\displaystyle \int(u)\,dv=uv-\int(v)\,du</m></p></li>
-                <li><p><m>\displaystyle \int(uv')\,dx=uv-\int(vu')\,dx+C</m></p></li>
-                <li><p><m>\displaystyle \int(u)\,dv=uv-\int(v)\,du+C</m></p></li>
-            </ol>
+            <statement>
+                <p>
+                    Which of these is the most concise result of integrating both sides with respect to <m>x</m>?
+                    <ol marker="A.">
+                        <li><p><m>\displaystyle \int(uv')\,dx=uv-\int(vu')\,dx</m></p></li>
+                        <li><p><m>\displaystyle \int(u)\,dv=uv-\int(v)\,du</m></p></li>
+                        <li><p><m>\displaystyle \int(uv')\,dx=uv-\int(vu')\,dx+C</m></p></li>
+                        <li><p><m>\displaystyle \int(u)\,dv=uv-\int(v)\,du+C</m></p></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    B: <m>\displaystyle \int(u)\,dv=uv-\int(v)\,du</m>
+                </p>
+            </answer>
         </task>
         </activity>
     <fact>
@@ -84,51 +142,100 @@
             <p>Consider <m>\displaystyle \int xe^{x}\,dx</m>. Suppose we decided to let <m>u=x</m>.</p>
         </introduction>
         <task>
-            <p>Compute <m>\dfrac{du}{dx}=\unknown</m>, and rewrite it as <m>du=\unknown\,dx</m>.</p>
+            <statement>
+                <p>
+                    Compute <m>\dfrac{du}{dx}=\unknown</m>, and rewrite it as <m>du=\unknown\,dx</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\dfrac{du}{dx} = 1</m>, so <m>du = 1\, dx</m>.
+                </p>
+            </answer>
         </task>
         <task>
-            <p>What is the best candidate for <m>dv</m>?</p>
-            <ol marker="A." cols="2">
-                <li><p><m>dv=x\,dx</m></p></li>
-                <li><p><m>dv=e^x</m></p></li>
-                <li><p><m>dv=x</m></p></li>
-                <li><p><m>dv=e^x\,dx</m></p></li>
-            </ol>
+            <statement>
+                <p>
+                    What is the best candidate for <m>dv</m>?
+                    <ol marker="A." cols="2">
+                        <li><p><m>dv=x\,dx</m></p></li>
+                        <li><p><m>dv=e^x</m></p></li>
+                        <li><p><m>dv=x</m></p></li>
+                        <li><p><m>dv=e^x\,dx</m></p></li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    D: <m>dv=e^x\,dx</m>
+                </p>
+            </answer>
         </task>
         <task>
-            <p>Given that <m>dv=e^x\,dx</m>, find <m>v=\unknown</m>.</p>
+            <statement>
+                <p>
+                    Given that <m>dv=e^x\,dx</m>, find <m>v=\unknown</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>v = e^x</m>
+                </p>
+            </answer>
         </task>
 
         <task>
-            <p>Show why <m>\displaystyle \int xe^{x}\,dx</m> may now be rewritten as <m>\displaystyle xe^x-\int e^x\,dx</m>.</p>
+            <statement>
+                <p>
+                    Show why <m>\displaystyle \int xe^{x}\,dx</m> may now be rewritten as <m>\displaystyle xe^x-\int e^x\,dx</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    Since <m>u = x</m>, <m>du = dx</m>, <m>dv = e^x\, dx</m>, and <m>v = e^x</m>, the formula for integration by parts gives us 
+                    <me>\int xe^x\, dx = xe^x-\int e^x\, dx</me>
+                </p>
+            </answer>
         </task>
         <task>
-            <p>Solve <m>\displaystyle \int e^x\,dx</m>, and then give the most general antiderivative of <m>\displaystyle \int xe^{x}\,dx</m>.</p>
+            <statement>
+                <p>
+                    Solve <m>\displaystyle \int e^x\,dx</m>, and then give the most general antiderivative of <m>\displaystyle \int xe^{x}\,dx</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int e^x\, dx = e^x</m> so that <m>\displaystyle \int xe^x\, dx = xe^x - e^x + C</m>
+                </p>
+            </answer>
         </task>
     </activity>
+
     <example>
         <statement>
-            <p>Here is how one might write out the explanation of how to find <m>\displaystyle \int xe^{x}\,dx</m> from start to finish:
+            <p>
+                Here is how one might write out the explanation of how to find <m>\displaystyle \int xe^{x}\,dx</m> from start to finish:
             </p>
             <md>
                 <mrow>
-\displaystyle \int xe^{x}\,dx
+                    \displaystyle \int xe^{x}\,dx
                 </mrow>
                 <mrow>
-&amp; u=x &amp; dv = e^x\,dx
+                    &amp; u=x &amp; dv = e^x\,dx
                 </mrow>
                 <mrow>
-&amp; du=1\cdot\,dx &amp; v=e^x
+                    &amp; du=1\cdot\,dx &amp; v=e^x
                 </mrow>
                 <mrow>
-\displaystyle \int xe^x \,dx &amp;= xe^x-\int e^x \,dx
+                    \displaystyle \int xe^x \,dx &amp;= xe^x-\int e^x \,dx
                 </mrow>
                 <mrow>
-&amp;= xe^{x}-e^x+C
+                    &amp;= xe^{x}-e^x+C
                 </mrow>
             </md>
         </statement>
     </example>
+
     <activity estimated-time="99" xml:id="activity-TI2MostImportantStepForParts">
         <statement>
             <p>Which step of the previous example do you think was the most important?</p>
@@ -148,29 +255,74 @@
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                A: Choosing <m>u=x</m> and <m>dv = e^x\, dx</m>
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2GoodPartsChoice">
         <introduction>
-            <p>Consider the integral <m>\displaystyle \int x^9\ln(x) \,dx</m>. Suppose we proceed using integration by parts. We choose <m>u=\ln(x)</m> and <m>dv=x^9\,dx</m>.</p>
+            <p>
+                Consider the integral <m>\displaystyle \int x^9\ln(x) \,dx</m>. Suppose we proceed using integration by parts. We choose <m>u=\ln(x)</m> and <m>dv=x^9\,dx</m>.
+            </p>
         </introduction>
             <task>
-                <p>What is <m>du</m>?</p>
+                <statement>
+                    <p>
+                        What is <m>du</m>?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        
+                    </p>
+                </answer>>
             </task>
             <task>
-                <p>What is <m>v</m>?</p>
+                <statement>
+                    <p>
+                       What is <m>v</m>? 
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        
+                    </p>
+                </answer>>
             </task>
             <task>
-                <p>What do you get when plugging these pieces into integration by parts?</p>
+                <statement>
+                    <p>
+                        What do you get when plugging these pieces into integration by parts? 
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        
+                    </p>
+                </answer>>
             </task>
             <task>
-                <p>Does the new integral <m>\displaystyle \int v\,du</m> seem easier or harder to compute than the original integral <m>\displaystyle \int x^9\ln(x) \,dx</m>?</p>
-                    <ol marker="A.">
-                    <li><p>The original integral is easier to compute.</p></li>
-                    <li><p>The new integral is easier to compute.</p></li>
-                    <li><p>Neither integral seems harder than the other one.</p></li>
-                    </ol>
+                <statement>
+                    <p>
+                        Does the new integral <m>\displaystyle \int v\,du</m> seem easier or harder to compute than the original integral <m>\displaystyle \int x^9\ln(x) \,dx</m>?
+                        <ol marker="A.">
+                            <li><p>The original integral is easier to compute.</p></li>
+                            <li><p>The new integral is easier to compute.</p></li>
+                            <li><p>Neither integral seems harder than the other one.</p></li>
+                        </ol>
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        B: The new integral is easier to compute.
+                    </p>
+                </answer>
             </task>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2WorseSubChoice">
         <statement>
             <p>Consider the integral <m>\displaystyle \int x^9\ln(x) \,dx</m> once more. Suppose we still proceed using integration by parts. However, this time we choose <m>u=x^9</m> and <m>dv=\ln(x)\,dx</m>. Do you prefer this choice or the choice we made in <xref ref="activity-TI2GoodPartsChoice"/>?</p>
@@ -180,10 +332,16 @@
                 <li><p>We do not have a strong preference, since these choices are of the same difficulty.</p></li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                A: We prefer the substitution choice of <m>u=\ln(x)</m> and <m>dv=x^9\,dx</m>.
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2LinearCosineProductChoices">
         <statement>
-            <p>Consider the integral <m>\int x\cos(x)\,dx</m>. Suppose we proceed using integration by parts. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to evaluate this integral?</p>
+            <p>Consider the integral <m>\displaystyle \int x\cos(x)\,dx</m>. Suppose we proceed using integration by parts. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to evaluate this integral?</p>
             <ol marker="A." cols="2">
                 <li>
                     <p><m>u=\cos(x)</m>, <m>dv=x\, dx</m></p>
@@ -199,17 +357,35 @@
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                D: <m>u=x</m>, <m>dv=\cos(x)\,dx</m>
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2LinearCosineProduct">
         <statement>
             <p>Evaluate the integral <m>\displaystyle \int x\cos(x)\,dx</m> using integration by parts.</p>
         </statement>
+        <answer>
+            <p>
+                <m>\displaystyle \int x\cos(x)\, dx = x\sin x + \cos(x) + C </m>
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2DefiniteLinearCosineProduct">
         <statement>
             <p>Now use integration by parts to evaluate the integral <m>\displaystyle \int_{\pi/6}^{\pi} x\cos(x)\,dx</m>.</p>
         </statement>
+        <answer>
+            <p>
+                <m>\displaystyle \int_{\pi/6}^{\pi} x\cos(x)\,dx = -\dfrac{\pi}{12} - \sqrt{3}{2}</m>
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2ExtensionArctangent">
         <statement>
             <p>Consider the integral <m>\displaystyle \int x\arctan(x)\,dx</m>. Suppose we proceed using integration by parts. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to evaluate this integral?</p>
@@ -228,7 +404,13 @@
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                B: <m>u=\arctan(x)</m>, <m>dv=x\,dx</m>
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2ExtensionExpTrigStep1">
         <statement>
             <p>Consider the integral <m>\displaystyle \int e^x\cos(x)\,dx</m>. Suppose we proceed using integration by parts. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to evaluate this integral?</p>
@@ -247,25 +429,30 @@
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                Answers vary
+            </p>
+        </answer>
     </activity>
      <activity estimated-time="99" xml:id="activity-TI2ExtensionExpTrigStep2">
         <statement>
             <p>Suppose we started using integration by parts to solve the integral <m>\displaystyle \int e^x\cos(x)\,dx</m> as follows:</p>
             <md>
                 <mrow>
-\int e^x\cos(x)\,dx
+                    \int e^x\cos(x)\,dx
                 </mrow>
                 <mrow>
-&amp; u=\cos(x) &amp; dv = e^x\,dx
+                    &amp; u=\cos(x) &amp; dv = e^x\,dx
                 </mrow>
                 <mrow>
-&amp; du=-\sin(x) \,dx &amp; v=e^x
+                    &amp; du=-\sin(x) \,dx &amp; v=e^x
                 </mrow>
                 <mrow>
-\int e^x\cos(x)\,dx &amp;= \cos(x)e^x-\int e^x(-\sin(x) \,dx)
+                    \int e^x\cos(x)\,dx &amp;= \cos(x)e^x-\int e^x(-\sin(x) \,dx)
                 </mrow>
                 <mrow>
-&amp;= \cos(x)e^x+\int e^x\sin(x) \,dx
+                    &amp;= \cos(x)e^x+\int e^x\sin(x) \,dx
                 </mrow>
             </md>
                 <p>We will have to use integration by parts a second time to evaluate the integral <m>\displaystyle \int e^x\sin(x) \,dx</m>. Which of the following candidates for <m>u</m> and <m>dv</m> would best allow you to continue evaluating the original integral <m>\displaystyle \int e^x\cos(x)\,dx</m>?</p>
@@ -284,35 +471,86 @@
                 </li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                B: <m>u=\sin(x)</m>, <m>dv=e^x\,dx</m>
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2DefiniteSinePoly">
         <statement>
             <p>Use integration by parts to show that <m>\displaystyle \int_0^{\pi/4} x\sin(2x)\,dx=\dfrac{1}{4}</m>.</p>
         </statement>
+        <answer>
+            <p>
+                Use <m>u = x</m> and <m>dv = \sin (2x)\, dx</m> to get the result.
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2ExtensionProductChain">
         <introduction>
             <p>Consider the integral <m>\displaystyle \int t^5 \sin(t^3)\,dt</m>.</p>
         </introduction>
         <task>
-            <p>Use the substitution <m>x=t^3</m> to rewrite the integral in terms of <m>x</m>.</p>
+            <statement>
+                <p>
+                    Use the substitution <m>x=t^3</m> to rewrite the integral in terms of <m>x</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int t^5\sin(t^3)\, dt = \int \dfrac{1}{3}x\sin(x)\, dx</m>
+                </p>
+            </answer>>
         </task>
         <task>
-            <p>Use integration by parts to evaluate the integral in terms of <m>x</m>.</p>
+            <statement>
+                <p>
+                    Use integration by parts to evaluate the integral in terms of <m>x</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int \dfrac{1}{3}x\sin(x) = -\dfrac{1}{3}x\cos(x) + \dfrac{1}{3}\sin(x) + C</m>
+                </p>
+            </answer>>
         </task>
         <task>
-            <p>Replace <m>x</m> with <m>t^3</m> to finish evaluating the original integral.</p>
+            <statement>
+                <p>
+                    Replace <m>x</m> with <m>t^3</m> to finish evaluating the original integral.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int t^5\sin(t^3)\, dt = -\dfrac{1}{3}t^3\cos(t^3) + \dfrac{1}{3}\sin(t^3) + C</m>
+                </p>
+            </answer>>
         </task>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLog">
         <statement>
             <p>Use integration by parts to show that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>.</p>
         </statement>
+        <answer>
+            <p>
+                Use <m>u = \ln z</m> and <m>dv = dz</m> to get the result.
+            </p>
+        </answer>
     </activity>
+
     <activity estimated-time="99" xml:id="activity-TI2ExtensionNatLogSquared">
         <statement>
             <p>Given that that <m>\displaystyle \int \ln(z)\,dz=z \ln(z) - z + C</m>, evaluate <m>\displaystyle \int (\ln(z))^2\,dz</m>.</p>
         </statement>
+        <answer>
+            <p>
+                <m>\displaystyle \int (\ln(x))^2\, dz = z(\ln(z))^2 - 2z\ln(z) + 2z + C</m>
+            </p>
+        </answer>
     </activity>
     
     
@@ -323,27 +561,48 @@
             </p>
         </introduction>
         <task>
-            <p>
-                Noting that <m>\displaystyle\int (\sin(x))^2\, dx=\int (\sin(x))(\sin(x))dx</m> and letting <m>u=\sin(x), dv=\sin(x)\, dx</m>, what equality does integration by parts yield?
+            <statement>
+                <p>
+                    Noting that <m>\displaystyle\int (\sin(x))^2\, dx=\int (\sin(x))(\sin(x))dx</m> and letting <m>u=\sin(x), dv=\sin(x)\, dx</m>, what equality does integration by parts yield?
                 <ol marker='A'>
                     <li><m>\displaystyle\int (\sin(x))^2dx=\sin(x)\cos(x)+\int (\cos(x))^2\, dx.</m></li>
                     <li><m>\displaystyle\int (\sin(x))^2dx=-\sin(x)\cos(x)+\int (\cos(x))^2\, dx.</m></li>
                     <li><m>\displaystyle\int (\sin(x))^2dx=\sin(x)\cos(x)-\int (\cos(x))^2\, dx.</m></li>
                     <li><m>\displaystyle\int (\sin(x))^2dx=-\sin(x)\cos(x)-\int (\cos(x))^2\, dx.</m></li>
                 </ol>
-            </p>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    B: <m>\displaystyle\int (\sin(x))^2dx=-\sin(x)\cos(x)+\int (\cos(x))^2\, dx.</m>
+                </p>
+            </answer>
         </task>
         
         <task>
-            <p>
-                Use the fact that <m>(\cos(x))^2=1-(\sin(x))^2</m> to rewrite the above equality.
-            </p>
+            <statement>
+                <p>
+                    Use the fact that <m>(\cos(x))^2=1-(\sin(x))^2</m> to rewrite the above equality.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle\int (\sin(x))^2dx=-\sin(x)\cos(x)+\int 1-(\sin(x))^2\, dx.</m>
+                </p>
+            </answer>
         </task>
         
         <task>
-            <p>
-                Solve algebraically for <m>\displaystyle\int (\sin(x))^2\, dx.</m>
-            </p>
+            <statement>
+                <p>
+                    Solve algebraically for <m>\displaystyle\int (\sin(x))^2\, dx.</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle \int (\sin(x))^2\, dx = \dfrac{1}{2}x - \dfrac{1}{2}\sin(x)\cos(x)</m>
+                </p>
+            </answer>
         </task>
         
         
@@ -356,6 +615,11 @@
                 Modifying the approach from <xref ref="activity-partssinsquare"/>, use parts to find <m>\displaystyle\int (\cos(x))^2\, dx.</m>
             </p>
         </statement>
+        <answer>
+            <p>
+                <m>\displaystyle \int (\sin(x))^2\, dx = \dfrac{1}{2}x + \dfrac{1}{2}\sin(x)\cos(x)</m>
+            </p>
+        </answer>
     </activity>
     
     </subsection>
