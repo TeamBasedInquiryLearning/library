@@ -224,10 +224,12 @@ For example, the following calculuation confirms the previous activity:
                             f= 1
                             g = 4
                             h = 2
+                            k = 0
                             pf = plot(f,(x,0,3),thickness=2, axes_labels=('$x$','$f(x)$'))
                             pg = plot(g,(x,3,6),thickness=2, axes_labels=('$x$','$f(x)$'))
                             ph = plot(h,(x,6,8),thickness=2, axes_labels=('$x$','$f(x)$'))
-                            pf + pg + ph
+                            pk = plot(k,(x,0,1),thickness=0)
+                            pf + pg + ph + pk
                         </sageplot>
                     </image>
             </figure>
