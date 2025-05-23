@@ -25,7 +25,7 @@
 
     <introduction>
       <p>
-        Follow the steps to verify the identity <m>\tan\theta\cdot\cos\theta=\sin\theta</m>
+        Follow the steps to verify the identity <m>\tan\theta\cdot\cos\theta=\sin\theta</m>.
       </p>
     </introduction>
 
@@ -37,7 +37,7 @@
       </statement>
       <answer>
         <p>
-          <m>\tan\theta\cos\theta</m> can be rewritten as <m>\frac{\sin\theta}{\cos\theta}\cdot\cos\theta</m>
+          <m>\tan\theta\cos\theta</m> can be rewritten as <m>\dfrac{\sin\theta}{\cos\theta}\cdot\cos\theta</m>
         </p>
       </answer>
     </task>
@@ -50,7 +50,20 @@
       </statement>
       <answer>
         <p>
-          <m>\frac{\sin\theta}{\cos\theta}\cdot\cos\theta</m> simplifies to <m>\sin\theta</m>
+          <m>\dfrac{\sin\theta}{\cos\theta}\cdot\cos\theta</m> simplifies to <m>\sin\theta</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Compare the simplified version of the left hand side to the original right hand side of the identity. What do you notice?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should notice that when we simplified the left hand side, we were able to get the right hand side. Instructors should emphasize that we were able to do this by focusing on one side (rather than trying to apply operations to both sides).
         </p>
       </answer>
     </task>
@@ -58,14 +71,14 @@
 
   <remark>
   <p>
-    As we saw in <xref ref="verify-identity-practice-1"/>, sometimes it is easier to rewrite everything in terms of sine and cosine to see if one side of the equation simplifies.
+    As we saw in <xref ref="verify-identity-practice-1"/>, one method that often helps in verifying identities is to rewrite everything in terms of sine and cosine to see if one side of the equation simplifies.
   </p>
   </remark>
 
   <activity xml:id="verify-identity-practice-2">
     <introduction>
       <p>
-        Verify the identity <m>\cos\theta + \sin\theta\tan\theta = \sec\theta</m>
+        Verify the identity <m>\cos\theta + \sin\theta\tan\theta = \sec\theta</m>.
       </p>
     </introduction>
 
@@ -77,7 +90,7 @@
       </statement>
       <answer>
         <p>
-          <m>\cos\theta + \sin\theta\tan\theta</m> can be rewritten as <m>\cos\theta+\sin\theta \left(\frac{\sin\theta}{\cos\theta} \right) </m>
+          <me>\cos\theta + \sin\theta\tan\theta</me> can be rewritten as <me>\cos\theta+\sin\theta \left(\dfrac{\sin\theta}{\cos\theta} \right) </me>
         </p>
       </answer>
     </task>
@@ -90,7 +103,7 @@
       </statement>
       <answer>
         <p>
-          The common denominator is <m>\cos\theta</m>. If we rewrite the left-hand side as two fractions with a common denominator, we would get <m>\frac{\cos^2\theta}{\cos\theta}+\frac{\sin^2\theta}{\cos\theta}</m>, which then combines to <m>\frac{\cos^2\theta+\sin^2\theta}{\cos\theta}</m>.
+          The common denominator is <m>\cos\theta</m>. If we rewrite the left-hand side as two fractions with a common denominator, we would get <me>\dfrac{\cos^2\theta}{\cos\theta}+\dfrac{\sin^2\theta}{\cos\theta}</me>, which then combines to <me>\dfrac{\cos^2\theta+\sin^2\theta}{\cos\theta}</me>.
         </p>
       </answer>
     </task>
@@ -103,7 +116,7 @@
       </statement>
       <answer>
         <p>
-          The numerator, <m>\cos^2\theta+\sin^2\theta</m>, is equal to <m>1</m>, which then gives us <m>\frac{1}{\cos\theta}</m>. This term is the same as <m>\sec\theta</m>.
+          The numerator, <m>\cos^2\theta+\sin^2\theta</m>, is equal to <m>1</m>, which then gives us <m>\dfrac{1}{\cos\theta}</m>. This term is the same as <m>\sec\theta</m>. 
         </p>
       </answer>
     </task>
@@ -113,7 +126,7 @@
 
     <introduction>
       <p>
-        Verify the following identity: <m>\frac{\tan\theta - \cot\theta}{\sin\theta\cos\theta} = \sec^2\theta - \csc^2\theta</m>
+        Verify the following identity: <me>\dfrac{\tan\theta - \cot\theta}{\sin\theta\cos\theta} = \sec^2\theta - \csc^2\theta</me>
       </p>
     </introduction>
 
@@ -125,7 +138,7 @@
       </statement>
       <answer>
         <p>
-          <m>\frac{\tan\theta - \cot\theta}{\sin\theta\cos\theta}</m> can be rewritten as <m>\frac{\tan\theta}{\sin\theta\cos\theta}-\frac{\cot\theta}{\sin\theta\cos\theta}</m>
+          <me>\dfrac{\tan\theta - \cot\theta}{\sin\theta\cos\theta}</me> can be rewritten as <me>\dfrac{\tan\theta}{\sin\theta\cos\theta}-\dfrac{\cot\theta}{\sin\theta\cos\theta}</me>
         </p>
       </answer>
     </task>
@@ -138,7 +151,7 @@
       </statement>
       <answer>
         <p>
-          <m>\frac{\frac{\sin\theta}{\cos\theta}}{\sin\theta\cos\theta}-\frac{\frac{\cos\theta}{\sin\theta}}{\sin\theta\cos\theta}</m>
+          <m>\dfrac{\dfrac{\sin\theta}{\cos\theta}}{\sin\theta\cos\theta}-\dfrac{\dfrac{\cos\theta}{\sin\theta}}{\sin\theta\cos\theta}</m>
         </p>
       </answer>
     </task>
@@ -151,7 +164,7 @@
       </statement>
       <answer>
         <p>
-          <m>\frac{\frac{\sin\theta}{\cos\theta}}{\sin\theta\cos\theta}</m> simplifies to <m>\frac{1}{\cos^2\theta}</m>, which is equivalent to <m>\sec^2\theta</m>. <m>-\frac{\frac{\cos\theta}{\sin\theta}}{\sin\theta\cos\theta}</m> simplifies to <m>\frac{1}{\sin^2\theta}</m>, which is equivalent to <m>\csc^2\theta</m>.
+          <m>\dfrac{\dfrac{\sin\theta}{\cos\theta}}{\sin\theta\cos\theta}</m> simplifies to <m>\dfrac{1}{\cos^2\theta}</m>, which is equivalent to <m>\sec^2\theta</m>. <m>-\dfrac{\dfrac{\cos\theta}{\sin\theta}}{\sin\theta\cos\theta}</m> simplifies to <m>\dfrac{1}{\sin^2\theta}</m>, which is equivalent to <m>\csc^2\theta</m>. 
         </p>
       </answer>
     </task>
@@ -167,15 +180,15 @@
 
     <statement>
       <p>
-        Refer back to <xref ref="verify-identity-practice-3"/> to help you verify the identity: <m>\frac{\csc\theta-\sin\theta}{\sin\theta\csc\theta} = \csc\theta - \sin\theta</m>
+        Refer back to <xref ref="verify-identity-practice-3"/> to help you verify the identity: <me>\dfrac{\csc\theta-\sin\theta}{\sin\theta\csc\theta} = \csc\theta - \sin\theta</me>. Justify each step by listing what you used, such as algebra, Pythagorean identity, reciprocal identities, etc.
       </p>
     </statement>
     <answer>
       <p>
       We can simplify the left-hand side in the following way:
-            <me>\frac{\csc\theta-\sin\theta}{\sin\theta\csc\theta}</me>
-            <me>\frac{\csc\theta}{\sin\theta\csc\theta}-\frac{\sin\theta}{\sin\theta\csc\theta}</me> 
-            <me>\frac{1}{\sin\theta}-\frac{1}{\csc\theta}</me>
+            <me>\dfrac{\csc\theta-\sin\theta}{\sin\theta\csc\theta}</me>
+            <me>\dfrac{\csc\theta}{\sin\theta\csc\theta}-\dfrac{\sin\theta}{\sin\theta\csc\theta}</me> 
+            <me>\dfrac{1}{\sin\theta}-\dfrac{1}{\csc\theta}</me>
             <me>\csc\theta-\sin\theta</me>
       </p>
     </answer>    
@@ -184,14 +197,14 @@
   <activity xml:id="verify-identity-practice-5">
     <introduction>
       <p>
-        Verify the following identity: <m>\frac{\cos^2\theta}{1+\sin\theta}=1-\sin\theta</m>
+        Verify the following identity: <m>\dfrac{\cos^2\theta}{1+\sin\theta}=1-\sin\theta</m>
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
-          Since the left side of the identity is more complicated, we should probably start there. To simplify this, we will have to reduce the fraction, which would require the numerator to have a factor in common with the denominator. Additionally, we notice that the right side only involves sine. Both of these suggest that we need to convert the cosine into something involving sine. Which identity could help us rewrite <m>\cos^2\theta</m> into sine?
+          Since the left side of the identity is more complicated, we should probably start there. We notice that the right side only involves sine. We will start by converting the cosine into something involving sine. Which identity could help us rewrite <m>\cos^2\theta</m> into sine?
         </p>
       </statement>
       <answer>
@@ -209,7 +222,7 @@
       </statement>
       <answer>
         <p>
-          <m>\frac{\cos^2\theta}{1+\sin\theta}</m> can be rewritten as <m>\frac{1-\sin^2\theta}{1+\sin\theta}</m>
+          <m>\dfrac{\cos^2\theta}{1+\sin\theta}</m> can be rewritten as <m>\dfrac{1-\sin^2\theta}{1+\sin\theta}</m>
         </p>
       </answer>
     </task>
@@ -235,7 +248,7 @@
       </statement>
       <answer>
         <p>
-          From part (c), we can see that the left-hand side can be simplified to <m>\frac{(1-\sin\theta)(1+\sin\theta)}{1+\sin\theta}</m> and that the <m>1+\sin\theta</m> will cancel from the numerator and denominator. The result is <m>1-\sin\theta</m>, which is equal to the right-hand side.
+          From part (c), we can see that the left-hand side can be simplified to <m>\dfrac{(1-\sin\theta)(1+\sin\theta)}{1+\sin\theta}</m> and that the <m>1+\sin\theta</m> will cancel from the numerator and denominator. The result is <m>1-\sin\theta</m>, which is equal to the right-hand side.
         </p>
       </answer>
     </task>
@@ -256,7 +269,7 @@
   <activity xml:id="verify-identity-practice-6">
     <introduction>
       <p>
-        Verify the following identity: <m>\frac{\cos\theta}{1-\sin\theta}=\frac{1+\sin\theta}{\cos\theta}</m>
+        Verify the following identity: <m>\dfrac{\cos\theta}{1-\sin\theta}=\dfrac{1+\sin\theta}{\cos\theta}</m>
       </p>
     </introduction>
 
@@ -273,7 +286,7 @@
       </hint>
       <answer>
         <p>
-          If we multiply by <m>1+\sin\theta</m>, we will get <m>\frac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m>.
+          If we multiply by <m>1+\sin\theta</m>, we will get <m>\dfrac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m>.
         </p>
       </answer>
     </task>
@@ -291,7 +304,7 @@
       </hint>
       <answer>
         <p>
-          Using the Pythagorean Identity, <m>\sin^2\theta+\cos^2\theta=1</m>, <m>\frac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m> can simplify to <m>\frac{\cos\theta(1+\sin\theta)}{\cos^2\theta}</m>.
+          Using the Pythagorean Identity, <m>\sin^2\theta+\cos^2\theta=1</m>, <me>\dfrac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</me> can simplify to <me>\dfrac{\cos\theta(1+\sin\theta)}{\cos^2\theta}</me>.
         </p>
       </answer>
     </task>
@@ -304,7 +317,7 @@
       </statement>
       <answer>
         <p>
-          By canceling out the <m>\cos\theta</m> from the numerator and denominator, <m>\frac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</m> simplifies to <m>\frac{1+\sin\theta}{\cos\theta}</m>.
+          By canceling out the <m>\cos\theta</m> from the numerator and denominator, <me>\dfrac{\cos\theta(1+\sin\theta)}{1-\sin^2\theta}</me> simplifies to <me>\dfrac{1+\sin\theta}{\cos\theta}</me>.
         </p>
       </answer>
     </task>
@@ -312,12 +325,12 @@
 
   <remark>
   <p>
-    As we've seen from the activities from this section, there are some basic tools that can be helpful when verifying trigonometric identities. Here are just some suggestions as you continue to work through these types of problems.
+    As we've seen from the activities from this section, there are some basic tools that can be helpful when verifying trigonometric identities. Here are some suggestions as you continue to work through these types of problems.
   </p>
     <ul>
       <li>
         <p>
-          Work on one side of the equation. It is usually better to start with the more complex side, as it is easier to simplify than to build.
+          Work on one side of the identity. It is usually better to start with the more complex side, as it is easier to simplify than to build.
         </p>
       </li>
       <li>
@@ -326,17 +339,32 @@
           <ul>
             <li>
               <p>
-                Multiply expressions out and combine like terms or factor expressions and cancel
+                Multiply expressions out and combine like terms.
               </p>
             </li>
             <li>
               <p>
-                Split apart fractions or rewrite fractions with a common denominator, and combine fractions into a single fraction
+                Factor expressions in a fraction and to cancel common factors.
               </p>
             </li>
             <li>
               <p>
-                Simplify two term denominators by using a Pythagorean substitution or simplify two term denominators by multiplying numerator and denominator by the conjugate of the binomial denominator.
+                Split apart fractions.
+              </p>
+            </li>
+            <li>
+              <p>
+                Rewrite multiple fractions using a common denominator, and combine the fractions into a single fraction.
+              </p>
+            </li>
+            <li>
+              <p>
+                Simplify two term denominators by substituting with a Pythagorean identity.
+              </p>
+            </li>
+            <li>
+              <p>
+                Simplify two term denominators by multiplying numerator and denominator by the conjugate of the binomial denominator.
               </p>
             </li>
           </ul> 
@@ -344,7 +372,7 @@
       </li>
       <li>
         <p>
-          Observe which functions are in the final expression, and look for opportunities to use identities
+          Observe which functions are in the final expression, and look for opportunities to use identities that would lead to those functions.
         </p>
       </li>
       <li>
@@ -366,28 +394,51 @@
     <task>
       <statement>
         <p>
-          <m>2\tan\theta\sec\theta=\frac{2\sin\theta}{1-\sin^2\theta}</m>
+          <m>2\tan\theta\sec\theta=\dfrac{2\sin\theta}{1-\sin^2\theta}</m>
         </p>
       </statement>
+      <answer>
+        <p>
+          Starting on the right-hand side: <m>
+          \dfrac{2\sin\theta}{1-\sin^2\theta}=
+          \dfrac{2\sin\theta}{\cos^2\theta}=
+            2\left(\dfrac{\sin\theta}{\cos\theta}\cdot \left(\dfrac{1}{\cos\theta})\right\right)=
+              2\tan\theta\sec\theta</m>
+        </p>
+      </answer>
     </task>
 
     <task>
       <statement>
         <p>
-          <m>\frac{\sec^2\theta-1}{\sec^2\theta}=\sin^2\theta</m>
+          <m>\dfrac{\sec^2\theta-1}{\sec^2\theta}=\sin^2\theta</m>
         </p>
       </statement>
+      <answer>
+        <p>
+          Starting on the left-hand side: <m>\dfrac{\sec^2\theta-1}{\sec^2\theta}=
+            \dfrac{\tan^2\theta}{\sec^2\theta}=
+              \dfrac{\frac{\sin^2\theta}{\cos^2\theta}}{\frac{1}{\cos^2\theta}}=
+              \sin^2\theta</m>
+        </p>
+      </answer>
     </task>
 
     <task>
       <statement>
         <p>
-          <m>\frac{\tan\theta}{1-\cos\theta}=\frac{1-\cos\theta}{\sin\theta\cos\theta}</m>
+          <m>\tan\theta+\dfrac{\cos\theta}{1+\sin\theta}=\sec\theta</m>
         </p>
       </statement>
+      <answer>
+        <p>
+          Starting on the left-hand side:
+          <m>\tan\theta+\dfrac{\cos\theta}{1+\sin\theta}=\dfrac{\sin\theta}{\cos\theta}+\dfrac{\cos\theta}{1+\sin\theta}=\dfrac{\sin\theta+\sin^2\theta+\cos^2\theta}{(\cos\theta)(1+\sin\theta)}=\dfrac{1+\sin\theta}{(\cos\theta)(1+\sin\theta)}=\sec\theta</m>
+        </p>
+      </answer>
     </task>
   </activity>
-
+ 
 
     </subsection>
 
