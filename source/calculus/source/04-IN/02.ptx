@@ -21,6 +21,9 @@
  </introduction>
 
       <task permid="IYe">
+        <statement>
+          
+      
         <p permid="NHX">
           On the left-hand axes provided in <xref ref="F-4-2-IN1">Figure</xref>,
           sketch a labeled graph of the velocity function <m>v(t) = 3</m>.
@@ -59,37 +62,78 @@
           the units on the right-hand axes differ from those on the left.
           The right-hand axes will be used in question (d).
         </p>
+       </statement>
+       <answer>
+        <p>
+          The velocity function <m> v(t)= 3</m> is a horizontal line at 
+    <m>y = 3</m> since the velocity is constant.
+        </p>
+       </answer>
       </task>
 
       <task permid="pfn">
+        <statement>
+       
         <p permid="Gdy">
           How far did the person travel during the two hours?
           How is this distance related to the area of a certain region under the graph of <m>y = v(t)</m>?
         </p>
+          </statement>
+      <answer>
+        <p>
+          6
+        </p>
+      </answer>
       </task>
 
       <task permid="Vmw">
+        <statement>
+       
         <p permid="mkH">
           Find an algebraic formula, <m>s(t)</m>,
           for the position of the person at time <m>t</m>,
           assuming that <m>s(0) = 0</m>.
           Explain your thinking.
         </p>
+         </statement>
+      <answer>
+        <p>
+          <m> S(t) = 3t </m>
+        </p>
+      </answer>
       </task>
 
       <task permid="BtF">
+        <statement>
+         
         <p permid="SrQ">
           On the right-hand axes provided in <xref ref="F-4-2-IN1" />,
           sketch a labeled graph of the position function <m>y = s(t)</m>.
         </p>
+             </statement>
+      <answer>
+        <p>
+          It is a line  with constant slope of 3
+        </p>
+      </answer>
       </task>
 
       <task permid="hAO">
+        <statement>
+         
         <p permid="yyZ">
           For what values of <m>t</m> is the position function <m>s</m> increasing?
           Explain why this is the case using relevant information about the velocity function <m>v</m>.
         </p>
+         </statement>
+      <answer>
+        <p>
+          <m> S(t) </m> is increasing for all <m> t \geq 0</m>
+        </p>
+      </answer>
       </task>
+      
+      
   </activity> 
 
 <activity xml:id="act-4-1-1" permid="gon">
@@ -175,7 +219,8 @@
     </sidebyside>
   </introduction>
 
-        <task permid="JWp">
+        <task permid="JWp"> <statement>
+         
           <p permid="Ehd">
             Using the grid, graph,
             and given data appropriately,
@@ -183,30 +228,58 @@
             You should use time intervals of width <m>\Delta t = 0.5</m>,
             choosing a way to use the function consistently to determine the height of each rectangle in order to approximate distance traveled.
           </p>
+            </statement>
+      <answer>
+        <p>
+         Distance <m> \approx </m> 3.7505 miles.
+        </p>
+      </answer>
         </task>
 
-        <task permid="qdy">
+        <task permid="qdy"> <statement>
+      
           <p permid="kom">
             How could you get a better approximation of the distance traveled on <m>[0,2]</m>?
             Explain, and then find this new estimate.
           </p>
+            </statement>
+      <answer>
+        <p>
+         Use smaller intervals with <m> \Delta t = 0.25</m> instead of <m> 0.5</m>  and new the estimate   will be <m> 3.87575</m>.
+        </p>
+      </answer>
         </task>
 
-        <task permid="WkH">
+        <task permid="WkH"> <statement>
+         
           <p permid="Qvv">
             Now suppose that you know that <m>v</m> is given by <m>v(t) = 0.5t^3-1.5t^2+1.5t+1.5</m>.
             Remember that <m>v</m> is the derivative of the walker's position function,
             <m>s</m>.
             Find a formula for <m>s</m> so that <m>s' = v</m>.
           </p>
+                </statement>
+      <answer>
+        <p>
+          <m> S(t) = \frac{1}{8}t^4 -\frac{1}{2}t^3 + \frac{3}{4}t^2+ \frac{3}{2}t + C </m> 
+        </p>
+      </answer>
         </task>
 
-        <task permid="CrQ">
+        <task permid="CrQ"> <statement>
+     
           <p permid="wCE">
             Based on your work in (c),
             what is the value of <m>s(2) - s(0)</m>?
             What is the meaning of this quantity?
           </p>
+                </statement>
+      <answer>
+        <p>
+         <m> s(2) - s(0) = 2 </m>. It means The walker traveled exactly 2 miles between time <m> t = 2 </m> and <m> t = 0 </m> hrs. 
+
+        </p>
+      </answer>
         </task>
 </activity>
     
@@ -246,7 +319,7 @@
   </statement>
   <solution>
     <p>
-      Some of the values <m>f(s_i)</m> are negative.
+      C. Some of the values <m>f(s_i)</m> are negative.
     </p>
   </solution>
 </activity>
@@ -330,7 +403,7 @@
   </statement>
   <solution>
     <p>
-      Some of the values <m>f(s_i)</m> are negative.
+      C. Some of the values <m>f(s_i)</m> are negative.
     </p>
   </solution>
 </activity>
@@ -351,31 +424,74 @@
       on the interval <m>[2, 4]</m> with 3 subintervals.
     </p>
   </introduction>
-  <task>
+  <task> <statement>
+    
       <p>What are <m>a</m> and <m>b</m> in this case?</p>
+        </statement>
+      <answer>
+        <p>
+         <m> a = 2 </m> and <m> b = 4 </m>.
+        </p>
+      </answer>
   </task>
-  <task>
+  <task> <statement>
+   
     <p>
       What is the value of <m>n</m>?
     </p>
+      </statement>
+      <answer>
+        <p>
+         <m> n = 3 </m>. 
+        </p>
+      </answer>
   </task>
-  <task>
+  <task> <statement>
+   
     <p>
       What are the values of the <m>x_i</m>?
     </p>
+      </statement>
+      <answer>
+        <p>
+         <m> x_0 = 2  </m>, <m> x_1=  \frac{8}{3} </m>,  <m> x_2=  \frac{10}{3} </m>,  and <m> x_3=  4 </m> 
+        </p>
+      </answer>
   </task>
-  <task>
+  <task> <statement>
+    
     <p>
       What are the values of the <m>s_i</m>?
     </p>
+    </statement>
+      <answer>
+        <p>
+         <m> s_1= x_0 = 2  </m>, <m> s_2 = x_1=  \frac{8}{3} </m>, and  <m> s_3= x_2=  \frac{10}{3} </m> 
+        </p>
+      </answer>
   </task>
-  <task>
+  <task> <statement>
+    
     <p>What do you notice about the subinterval widths <m>x_{i} - x_{i-1}</m>?</p>
+    </statement>
+      <answer>
+        <p>
+           Each subinterval has same width of <m> \frac{2}{3} </m>
+        </p>
+      </answer>
+    
   </task>
-  <task>
+  <task> <statement>
+    
     <p>
       What is the value of the left Riemann sum?
     </p>
+    </statement>
+      <answer>
+        <p>
+         The left Riemann sum is approximately  <m> 3.995 </m>
+        </p>
+      </answer>
   </task>
 </activity>
 
