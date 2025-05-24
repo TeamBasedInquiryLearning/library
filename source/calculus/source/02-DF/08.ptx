@@ -472,7 +472,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                     </p>
                     <figure>
                         <sidebyside widths="50% 50%">
-                            <image xml:id="graph-sin">
+                            <image>
                                 <sageplot>
                                     x=var('x')
                                     f = sin(x)

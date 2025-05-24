@@ -9,16 +9,16 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-    <chunking level="2" />
+    <chunking level="3" />
     <!-- Depth for table of contents.  0 means no TOC -->
     <tableofcontents level="2" />
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project). Some examples:                                            -->
-    <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
     <exercise-divisional statement="yes" hint="yes" />
-    <exercise-project statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
     <!-- You can set a watermark: -->
@@ -30,12 +30,12 @@
   <!-- stored or created.  Directories are relative to the main -->
   <!-- source PreTeXt file                                      -->
   <source>
-    <directories external="../../../assets" generated="../generated-assets" />
+    <directories external="../assets" generated="../generated-assets" />
     <!-- Set which marked elements are included in this version: -->
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
     <!-- <version include="videos labs"/> -->
-    <version include="main"/> 
+    <version include="instructor"/>
   </source>
 
   <numbering>
@@ -96,7 +96,6 @@
       exercise-worksheet="no"
       exercise-readingquestion="no"
     />
-    
     <css theme="denver" palette="leaves"/>
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->

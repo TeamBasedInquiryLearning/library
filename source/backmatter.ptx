@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
+  <title>Backmatter</title>
+
+    <appendix xml:id="appendix">
+        <title>Precalculus Appendix</title>
+        <xi:include href="./precalculus/source/meta/graphs.ptx"/>
+        <xi:include href="./precalculus/source/meta/identities.ptx"/>
+    </appendix>
+
+   <appendix xml:id="calc-appendix-extras">
+        <title>Calculus Appendix</title>
+        <xi:include href="./calculus/source/meta/integral-table.ptx"/>
+        <xi:include href="./calculus/source/meta/trig-table.ptx"/>
+   </appendix>
+
+  
+    <appendix xml:id="la-appendix-extras">
+        <title>Linear Algebra Appendix</title>
+        <xi:include href="./linear-algebra/source/meta/sample-exercises.ptx"/>
+        <xi:include href="./linear-algebra/source/meta/definitions.ptx"/>
+    </appendix>
+
+</backmatter>

@@ -33,6 +33,7 @@ jobs:
                 python scripts/build_bank.py precalculus --full
                 python scripts/build_bank.py calculus --full
                 python scripts/build_bank.py linear-algebra --full
+                bash scripts/stage-cache.sh
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
