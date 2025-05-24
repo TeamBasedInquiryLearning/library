@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="docinfo.ptx"/>
+    <book xml:id="preview-of-team-based-inquiry-learning">
+        <title>Preview of Team-Based Inquiry Learning Library</title>
+
+        <xi:include href="linear-algebra/source/meta/frontmatter.ptx"/>
+
+        <part xml:id="part-precalculus">
+            <title>Precalculus</title>
+            <xi:include href="precalculus/source/01-EQ/main.ptx" />
+            <xi:include href="precalculus/source/02-FN/main.ptx" />
+            <xi:include href="precalculus/source/03-LF/main.ptx" />
+            <xi:include href="precalculus/source/04-PR/main.ptx" />
+            <xi:include href="precalculus/source/05-EL/main.ptx" />
+            <xi:include href="precalculus/source/06-TR/main.ptx" />
+            <xi:include href="precalculus/source/07-PF/main.ptx" />
+            <xi:include href="precalculus/source/08-TE/main.ptx" />
+        </part>
+        <part xml:id="part-calculus">
+            <title>Calculus</title>
+            <xi:include href="calculus/source/01-LT/main.ptx" />
+            <xi:include href="calculus/source/02-DF/main.ptx" />
+            <xi:include href="calculus/source/03-AD/main.ptx" />
+            <xi:include href="calculus/source/04-IN/main.ptx" />
+            <xi:include href="calculus/source/05-TI/main.ptx" />
+            <xi:include href="calculus/source/06-AI/main.ptx" />
+            <xi:include href="calculus/source/07-CO/main.ptx" />
+            <xi:include href="calculus/source/08-SQ/main.ptx" />
+            <xi:include href="calculus/source/09-PS/main.ptx" />
+        </part>
+        <part xml:id="part-linear-algebra">
+            <title>Linear Algebra</title>
+            <xi:include href="linear-algebra/source/01-LE/main.ptx"/>
+            <xi:include href="linear-algebra/source/02-EV/main.ptx"/>
+            <xi:include href="linear-algebra/source/03-AT/main.ptx"/>
+            <xi:include href="linear-algebra/source/04-MX/main.ptx"/>
+            <xi:include href="linear-algebra/source/05-GT/main.ptx"/>
+        </part>
+        <xi:include href="backmatter.ptx"/>
+    </book>
+</pretext>
+

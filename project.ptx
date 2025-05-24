@@ -3,6 +3,12 @@
 <project ptx-version="2">
   <targets>
     <target
+      name="authoring-preview"
+      format="html"
+      publication="preview.ptx" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    <target
       name="precalculus-web"
       format="html"
       source="precalculus/source/main.ptx"
