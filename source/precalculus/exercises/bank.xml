@@ -320,7 +320,16 @@
 
             </description>
         </outcome>
-        
+                
+        <outcome>
+            <title>Degree and Radian Measure </title>
+            <slug>TR1</slug>
+            <path>outcomes/TR/TR1</path>
+            <description>
+                Convert between degrees and radians. Draw angles in standard position.
+            </description>
+        </outcome>
+
         <outcome>
             <title>Angle Position and Arc Length</title>
             <slug>TR2</slug>
@@ -329,13 +338,112 @@
                 Identify and find coterminal angles. Find the length of a circular arc.
             </description>
         </outcome>
+
+        <outcome>
+            <title>Trigonometric Ratios</title>
+            <slug>TR3</slug>
+            <path>outcomes/TR/TR3</path>
+            <description>
+                Use a right triangle to evaluate trigonometric functions.
+            </description>
+        </outcome>
+        
+        <outcome>
+            <title>Special Right Triangles</title>
+            <slug>TR4</slug>
+            <path>outcomes/TR/TR4</path>
+            <description>
+               Find exact values of trigonometric functions of special angles (30, 45, and 60). 
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>The Unit Circle</title>
+            <slug>TR5</slug>
+            <path>outcomes/TR/TR5</path>
+            <description>
+               Use reference angles, signs, and definitions to determine exact values of trigonometric functions.
+            </description>
+        </outcome>
+        
+        <outcome>
+            <title>Properties of Sine and Cosine Graphs</title>
+            <slug>PF1</slug>
+            <path>outcomes/PF/PF1</path>
+            <description>
+               Determine the basic properties of the graphs of sine and cosine, including amplitude, period, and phase shift.
+            </description>
+        </outcome>
             
         <outcome>
-            <title>Degree and Radian Measure </title>
-            <slug>TR1</slug>
-            <path>outcomes/TR/TR1</path>
+            <title>Additional Trigonometric Functions</title>
+            <slug>PF2</slug>
+            <path>outcomes/PF/PF2</path>
             <description>
-                Convert between degrees and radians. Draw angles in standard position.
+               Graph trigonometric functions including tangent, cotangent, secant, and cosecant functions and transformations of these functions, and determine the domain and range.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Inverse Trigonometric Functions</title>
+            <slug>PF3</slug>
+            <path>outcomes/PF/PF3</path>
+            <description>
+               Determine the inverse sine, cosine, and tangent values; graph inverse trig functions and determine the limitations on the domain and range.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Trigonometric Identities</title>
+            <slug>TE1</slug>
+            <path>outcomes/TE/TE1</path>
+            <description>
+               Use the sum and difference, the double-angle, and power-reducing formulas for cosine, sine, and tangent and the Pythagorean identities.
+            </description>
+        </outcome>
+                
+        <outcome>
+            <title>Verifying Identities</title>
+            <slug>TE2</slug>
+            <path>outcomes/TE/TE2</path>
+            <description>
+               Symbolically verify identities by using various trig identities.
+            </description>
+        </outcome>
+        
+        <outcome>
+            <title>Trigonometric Equations</title>
+            <slug>TE3</slug>
+            <path>outcomes/TE/TE3</path>
+            <description>
+               Find all solutions to a trigonometric equation.
+            </description>
+        </outcome>
+        
+        <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>TE4</slug>
+            <path>outcomes/TE/TE4</path>
+            <description>
+               Use trigonometric functions and the Pythagorean Theorem to solve right triangles.
+            </description>
+        </outcome>
+        
+        <outcome>
+            <title>Trigonometric Laws</title>
+            <slug>TE5</slug>
+            <path>outcomes/TE/TE5</path>
+            <description>
+               Use the law of sines and/or the law of cosines to solve non-right triangles.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Applications of Trigonometry</title>
+            <slug>TE6</slug>
+            <path>outcomes/TE/TE6</path>
+            <description>
+               Solve applications that require the use of trigonometry to find a side or angle.
             </description>
         </outcome>
         

@@ -348,6 +348,21 @@ class TBIL:
             return TBIL.line_from_point_slope(point1,slope)
 
     @staticmethod
+    def pythagorean_triples(max_length=100):
+        '''Returns the set of Pythagorean triples with all sides less than or equal to max_length'''
+        l=max_length
+        triples=set()
+        for n in [1..floor(sqrt(l/2))]:
+            for m in [n+r for r in [1..(sqrt(l+n^2)-n)]]:
+                triple = [m^2-n^2,2*m*n,m^2+n^2]
+                triple.sort()
+                if triple[2]<l:
+                    triples |= set([ (r*triple[0],r*triple[1],r*triple[2]) for r in [1..floor(l/triple[2])]])
+    
+        return triples
+
+
+    @staticmethod
     def line_from_point_slope(point,slope):
         '''Returns the equation of a line from a point and slope'''
         return y==slope*x+point[1]-slope*point[0]
