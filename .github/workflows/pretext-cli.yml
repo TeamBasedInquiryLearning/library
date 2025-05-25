@@ -27,10 +27,10 @@ jobs:
                 bash scripts/setup.sh
                 pretext build --deploys
                 pretext deploy --stage-only
-                python scripts/build_bank.py precalculus --full
-                python scripts/build_bank.py calculus --full
-                python scripts/build_bank.py linear-algebra --full
                 bash scripts/stage-cache.sh
+                # python scripts/build_bank.py precalculus --full
+                # python scripts/build_bank.py calculus --full
+                # python scripts/build_bank.py linear-algebra --full
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
