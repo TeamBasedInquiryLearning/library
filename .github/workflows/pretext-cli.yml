@@ -24,13 +24,17 @@ jobs:
 
             - name: build and stage all deploy targets and banks
               run: |
+                bash scripts/download-cache.sh
                 bash scripts/setup.sh
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                pretext build # for caching preview target
                 pretext build --deploys
                 pretext deploy --stage-only
                 bash scripts/stage-cache.sh
-                # python scripts/build_bank.py precalculus --full
-                # python scripts/build_bank.py calculus --full
-                # python scripts/build_bank.py linear-algebra --full
+                python scripts/build_bank.py precalculus --full
+                python scripts/build_bank.py calculus --full
+                python scripts/build_bank.py linear-algebra --full
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
@@ -85,7 +89,10 @@ jobs:
             - name: build previews of all changed files and stage
               id: changes
               run: |
+                bash scripts/download-cache.sh
                 bash scripts/setup.sh
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
                 python -m scripts.quickbuild_changes
                 pretext deploy --stage-only
 
