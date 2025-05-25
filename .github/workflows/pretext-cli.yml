@@ -28,8 +28,8 @@ jobs:
                 bash scripts/setup.sh
                 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
                 conda activate sage
-                pretext build # for caching preview target
-                pretext build --deploys
+                pretext build -g # for caching preview target
+                pretext build -g --deploys
                 pretext deploy --stage-only
                 bash scripts/stage-cache.sh
                 python scripts/build_bank.py precalculus --full
