@@ -223,7 +223,7 @@
       <statement>
         <p>
           What is the value of <m>\sin \pi</m>?
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="3">
             <li> <m>-1</m> </li>
             <li> <m>0</m> </li>
             <li> <m>1</m> </li></ol></p>
@@ -239,7 +239,7 @@
       <statement>
         <p>
           What is the value of <m>\sin \frac{\pi}{2}</m>? 
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="3">
             <li> <m>-1</m> </li>
             <li> <m>0</m> </li>
             <li> <m>1</m> </li></ol></p>
@@ -286,7 +286,7 @@
       <statement>
         <p>
           What is the value of <m>\sin \left( \frac{3\pi}{2} \right)</m>?
-          <ol marker= "A." cols="1">
+          <ol marker= "A." cols="3">
             <li> <m>-1</m> </li>
             <li> <m>0</m> </li>
             <li> <m>1</m> </li></ol>
@@ -387,10 +387,10 @@
           <p>
             Begin simplifying your answer from part (c) by applying the algebraic identity <m>\left(a-b\right)^2=a^2-2ab+b^2</m>. What do you get when squaring the two binomials under the radical?
             <ol marker= "A." cols="1">
-              <li> <m>d=\sqrt{\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta+\cos^2\alpha-2\cos\alpha\cos\beta+cos^2\beta}</m> </li>
-              <li>  <m>d=\sqrt{\cos^2\alpha+2\cos\alpha\cos\beta+cos^2\beta+\sin^2\alpha+2\sin\alpha\sin\beta+\sin^2\beta}</m></li>
-              <li>  <m>d=\sqrt{\cos^2\alpha-\cos\alpha\cos\beta+cos^2\beta+\sin^2\alpha-\sin\alpha\sin\beta+\sin^2\beta}</m> </li>
-              <li> <m>d=\sqrt{\cos^2\alpha-2\cos\alpha\cos\beta+cos^2\beta+\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta}</m> </li></ol>
+              <li> <m>d=\sqrt{\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta+\cos^2\alpha-2\cos\alpha\cos\beta+\cos^2\beta}</m> </li>
+              <li>  <m>d=\sqrt{\cos^2\alpha+2\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha+2\sin\alpha\sin\beta+\sin^2\beta}</m></li>
+              <li>  <m>d=\sqrt{\cos^2\alpha-\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha-\sin\alpha\sin\beta+\sin^2\beta}</m> </li>
+              <li> <m>d=\sqrt{\cos^2\alpha-2\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta}</m> </li></ol>
           </p>
         </statement>
         <answer>
@@ -524,7 +524,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos75= \cos\left(30 + 40\right)</m>
+            <m>\cos75^\circ= \cos\left(30^\circ + 40^\circ\right)</m>
           </p>
         </answer>
       </task>
@@ -537,7 +537,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos75=\cos30\cos45-\sin30\sin45</m>
+            <m>\cos75^\circ=\cos30^\circ\cos45^\circ-\sin30^\circ\sin45^\circ</m>
           </p>
         </answer>
       </task>

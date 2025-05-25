@@ -300,8 +300,8 @@ p += text("$c=9$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$34$", (3.4,.2), color="black", fontsize=20)
-p += text("$76$", (-1.6,.2), color="black", fontsize=20)
+p += text("$34^\circ$", (3.4,.2), color="black", fontsize=20)
+p += text("$76^\circ$", (-1.6,.2), color="black", fontsize=20)
 p.axes(False)
 p 
           </sageplot>
@@ -328,10 +328,10 @@ p
         <p>
           What is the value of <m>C</m>?
           <ol marker= "A." cols="4">
-            <li><m>70</m><degree/></li>
-            <li><m>110</m><degree/></li>
-            <li><m>104</m><degree/></li>
-            <li><m>146</m><degree/></li>
+            <li><m>70^\circ</m></li>
+            <li><m>110^\circ</m></li>
+            <li><m>104^\circ</m></li>
+            <li><m>146^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -403,8 +403,8 @@ p += text("$c$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$34$", (3.4,.2), color="black", fontsize=20)
-p += text("$30$", (-1.6,.2), color="black", fontsize=20)
+p += text("$34^\circ$", (3.4,.2), color="black", fontsize=20)
+p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
 p.axes(False) 
 p
           </sageplot>
@@ -469,7 +469,7 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 10</m>, and <m>b = 16</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30^\circ</m>, <m>a = 10</m>, and <m>b = 16</m>.
       </p>
     </introduction>
 
@@ -492,7 +492,7 @@ p += text("$c$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$30$", (-1.6,.2), color="black", fontsize=20)
+p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
 p.axes(False)
 p 
           </sageplot>
@@ -507,10 +507,10 @@ p
         <p>
           Use the Law of Sines to determine the value of <m>B</m> (to the nearest degree).
           <ol marker= "A." cols="4">
-            <li><m>143</m><degree/></li>
-            <li><m>53</m><degree/></li>
-            <li><m>80</m><degree/></li>
-            <li><m>37</m><degree/></li>
+            <li><m>143^\circ</m></li>
+            <li><m>53^\circ</m></li>
+            <li><m>80^\circ</m></li>
+            <li><m>37^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -529,7 +529,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C\approx 97</m><degree/>
+          <m>C\approx 97^\circ</m>
         </p>
         <p>
           <m>c \approx 20</m>
@@ -540,12 +540,12 @@ p
     <task>
       <statement>
         <p>
-          Let's go back to part (b) when we were asked to solve for <m>B</m>. We needed to solve <m>\sin B=\frac{4}{5}</m>. Using the inverse sine function on our calculator, we got that <m>B \approx 53</m><degree/>. However, there is another angle between <m>0</m><degree/> and <m>180</m><degree/> whose sine is <m>\frac{4}{5}</m>. Which of the following values could also be <m>B</m>?
+          Let's go back to part (b) when we were asked to solve for <m>B</m>. We needed to solve <m>\sin B=\frac{4}{5}</m>. Using the inverse sine function on our calculator, we got that <m>B \approx 53</m><degree/>. However, there is another angle between <m>0^\circ</m> and <m>180^\circ</m> whose sine is <m>\frac{4}{5}</m>. Which of the following values could also be <m>B</m>?
           <ol marker= "A." cols="4">
-            <li><m>143</m><degree/></li>
-            <li><m>37</m><degree/></li>
-            <li><m>80</m><degree/></li>
-            <li><m>127</m><degree/></li>
+            <li><m>143^\circ</m></li>
+            <li><m>37^\circ</m></li>
+            <li><m>80^\circ</m></li>
+            <li><m>127^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -564,7 +564,7 @@ p
       </statement>
       <answer>
         <p>
-          Because <m>\sin \theta</m> exists in both Quadrant I and Quadrant II, there exists two possible values of <m>\theta</m>. <m>\sin 30</m><degree/> and <m>\sin 150</m><degree/>, for example, are both equal to <m>\frac{1}{2}</m>. 
+          Because <m>\sin \theta</m> exists in both Quadrant I and Quadrant II, there exists two possible values of <m>\theta</m>. <m>\sin 30^\circ</m> and <m>\sin 150^\circ</m>, for example, are both equal to <m>\frac{1}{2}</m>. 
         </p>
       </answer>
     </task>
@@ -577,7 +577,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C \approx 23</m><degree/>
+          <m>C \approx 23^\circ</m>
         </p>
         <p>
           <m>c \approx 8</m>
@@ -596,7 +596,7 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 20</m>, and <m>b = 16</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30^\circ</m>, <m>a = 20</m>, and <m>b = 16</m>.
       </p>
     </introduction>
 
@@ -619,7 +619,7 @@ p += text("$c$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$30$", (-1.6,.2), color="black", fontsize=20)
+p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
 p.axes(False)
 p  
           </sageplot>
@@ -634,10 +634,10 @@ p
         <p>
           Use the Law of Sines to determine the value of <m>B</m> (to the nearest degree).
           <ol marker= "A." cols="4">
-            <li><m>24</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>141</m><degree/></li>
-            <li><m>156</m><degree/></li>
+            <li><m>24^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>141^\circ</m></li>
+            <li><m>156^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -656,7 +656,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C \approx 126</m><degree/>
+          <m>C \approx 126^\circ</m>
         </p>
         <p>
           <m>c \approx 32</m>
@@ -672,7 +672,7 @@ p
       </statement>
       <answer>
         <p>
-          Another triangle does not exist because if <m>B</m> is equal to <m>156</m><degree/>, then that would mean the third angle, <m>C</m>, would have to be <m>-6</m><degree/>. In other words, the sum of those two angles is already greater than <m>180</m>, so no triangle can exist.
+          Another triangle does not exist because if <m>B</m> is equal to <m>156^\circ</m>, then that would mean the third angle, <m>C</m>, would have to be <m>-6^\circ</m>. In other words, the sum of those two angles is already greater than <m>180^\circ</m>, so no triangle can exist.
         </p>
       </answer>
     </task>
@@ -702,12 +702,12 @@ p
     <task>
       <statement>
         <p>
-          <m>C=145</m><degree/>, <m>b=7</m>, <m>c=33</m>
+          <m>C=145^\circ</m>, <m>b=7</m>, <m>c=33</m>
         </p>
       </statement>
       <answer>
         <p>
-          One triangle: <m>A=28</m><degree/>, <m>B=7</m><degree/>, <m>a=27</m>
+          One triangle: <m>A=28^\circ</m>, <m>B=7^\circ</m>, <m>a=27</m>
         </p>
       </answer>
     </task>
@@ -715,7 +715,7 @@ p
     <task>
       <statement>
         <p>
-          <m>B=84</m><degree/>, <m>a=18</m>, <m>b=9</m>
+          <m>B=84^\circ</m>, <m>a=18</m>, <m>b=9</m>
         </p>
       </statement>
       <answer>
@@ -728,7 +728,7 @@ p
     <task>
       <statement>
         <p>
-          <m>B=45</m><degree/>, <m>a=28</m>, <m>b=27</m>
+          <m>B=45^\circ</m>, <m>a=28</m>, <m>b=27</m>
         </p>
       </statement>
       <answer>
@@ -736,10 +736,10 @@ p
           Two triangles exist:
         </p>
         <p>
-          <m>C=87.8</m><degree/>, <m>A=47.2</m><degree/>, <m>c=38.2</m>
+          <m>C=87.8^\circ</m>, <m>A=47.2^\circ</m>, <m>c=38.2</m>
         </p>
         <p>
-          <m>C=2.2</m><degree/>, <m>A=132.8</m><degree/>, <m>c=1.5</m>
+          <m>C=2.2^\circ</m>, <m>A=132.8^\circ</m>, <m>c=1.5</m>
         </p>
       </answer>
     </task>
@@ -748,7 +748,7 @@ p
     <activity xml:id="SAS-example">
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 70</m><degree/>, <m>b = 14</m>, and <m>c = 7</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 70^\circ</m>, <m>b = 14</m>, and <m>c = 7</m>.
       </p>
     </introduction>
 
@@ -771,7 +771,7 @@ p += text("$c=7$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$70$", (-1.6,.2), color="black", fontsize=20)
+p += text("$70^\circ$", (-1.6,.2), color="black", fontsize=20)
 p.axes(False) 
 p 
           </sageplot>
@@ -960,7 +960,7 @@ p
 
     <introduction>
       <p>
-        Let's revisit <xref ref="SAS-example"/> to see how we can apply the Law of Cosines to solve for this triangle. Recall that we were given triangle <m>ABC</m>, where <m>A = 70</m><degree/>, <m>b = 14</m>, and <m>c = 7</m>.
+        Let's revisit <xref ref="SAS-example"/> to see how we can apply the Law of Cosines to solve for this triangle. Recall that we were given triangle <m>ABC</m>, where <m>A = 70^\circ</m>, <m>b = 14</m>, and <m>c = 7</m>.
       </p>
     </introduction>
 
@@ -983,7 +983,7 @@ p += text("$c=7$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$70$", (-1.6,.2), color="black", fontsize=20)
+p += text("$70^\circ$", (-1.6,.2), color="black", fontsize=20)
 p.axes(False)
 p 
           </sageplot>
@@ -1038,7 +1038,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>B \approx 81</m><degree/> and <m>C \approx 29</m><degree/>
+          <m>B \approx 81</m><degree/> and <m>C \approx 29^\circ</m>
         </p>
       </answer>
     </task>
@@ -1098,10 +1098,10 @@ p
         <p>
           What is the value of <m>A</m> (to the nearest degree)?
           <ol marker= "A." cols="4">
-            <li><m>109</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>108</m><degree/></li>
-            <li><m>33</m><degree/></li>
+            <li><m>109^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>108^\circ</m></li>
+            <li><m>33^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -1130,10 +1130,10 @@ p
         <p>
           What is the value of <m>B</m> (to the nearest degree)?
           <ol marker= "A." cols="4">
-            <li><m>109</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>108</m><degree/></li>
-            <li><m>33</m><degree/></li>
+            <li><m>109^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>108^\circ</m></li>
+            <li><m>33^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -1149,10 +1149,10 @@ p
         <p>
           What is the value of <m>C</m> (to the nearest degree)?
           <ol marker= "A." cols="4">
-            <li><m>109</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>108</m><degree/></li>
-            <li><m>33</m><degree/></li>
+            <li><m>109^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>108^\circ</m></li>
+            <li><m>33^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -1182,7 +1182,7 @@ p
     <task>
       <statement>
         <p>
-          Given <m>B=112</m><degree/>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
+          Given <m>B=112^\circ</m>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
         </p>
       </statement>
       <hint>
@@ -1200,7 +1200,7 @@ p
     <task>
       <statement>
         <p>
-          Given <m>B=87</m><degree/>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
+          Given <m>B=87^\circ</m>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
         </p>
       </statement>
       <answer>
@@ -1226,7 +1226,7 @@ p
     <task>
       <statement>
         <p>
-          Given <m>A=108</m><degree/>, <m>B=40</m><degree/>, and <m>b=20</m>, find <m>c</m>.
+          Given <m>A=108^\circ</m>, <m>B=40^\circ</m>, and <m>b=20</m>, find <m>c</m>.
         </p>
       </statement>
       <answer>
@@ -1248,12 +1248,12 @@ p
     <task>
       <statement>
         <p>
-          <m>B=112</m><degree/>, <m>a=12</m>, and <m>b=25</m>.
+          <m>B=112^\circ</m>, <m>a=12</m>, and <m>b=25</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>A \approx 26</m><degree/>, <m>C \approx 42</m><degree/>, and <m>c \approx 18</m> 
+          <m>A \approx 26^\circ</m>, <m>C \approx 42^\circ</m>, and <m>c \approx 18</m> 
         </p>
       </answer>
     </task>
@@ -1261,12 +1261,12 @@ p
     <task>
       <statement>
         <p>
-          <m>B=87</m><degree/>, <m>a=15</m>, and <m>c=16</m>.
+          <m>B=87^\circ</m>, <m>a=15</m>, and <m>c=16</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>b \approx 21</m>, <m>A \approx 45</m><degree/>, and <m>C \approx 48</m><degree/>
+          <m>b \approx 21</m>, <m>A \approx 45^\circ</m>, and <m>C \approx 48^\circ</m>
         </p>
       </answer>
     </task>
@@ -1279,7 +1279,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C \approx 31</m><degree/>, <m>A \approx 39</m><degree/>, and <m>B \approx 110</m><degree/>
+          <m>C \approx 31^\circ</m>, <m>A \approx 39^\circ</m>, and <m>B \approx 110^\circ</m>
         </p>
       </answer>
     </task>
@@ -1287,12 +1287,12 @@ p
     <task>
       <statement>
         <p>
-          <m>A=108</m><degree/>, <m>B=40</m><degree/>, and <m>b=20</m>.
+          <m>A=108^\circ</m>, <m>B=40^\circ</m>, and <m>b=20</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>C \approx 32</m><degree/>, <m>a \approx 30</m>, and <m>c \approx 16</m>
+          <m>C \approx 32^\circ</m>, <m>a \approx 30</m>, and <m>c \approx 16</m>
         </p>
       </answer>
     </task>
