@@ -58,13 +58,14 @@
                         r4 = polygon(([0,3],[0,4],[2,4],[2,3]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
                         r = polygon(([0,0],[0,4],[2,4],[2,0]),thickness=2,fill=False,color='black')
                         e1 = edger_x(-1.25,0,4)
-                        label_1 = text('$h_1 = 0$ m',(-.6,0),color='black',fontsize=12)
-                        label_2 = text('$h_2 = 5$ m',(-.6,1),color='black',fontsize=12)
-                        label_3 = text('$h_3 = 10$ m',(-.6,2),color='black',fontsize=12)
-                        label_4 = text('$h_4 = 15$ m',(-.6,3),color='black',fontsize=12)
-                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=12)
+                        label_1 = text('$h_1 = 0$ m',(-.6,0),color='black',fontsize=14)
+                        label_2 = text('$h_2 = 5$ m',(-.6,1),color='black',fontsize=14)
+                        label_3 = text('$h_3 = 10$ m',(-.6,2),color='black',fontsize=14)
+                        label_4 = text('$h_4 = 15$ m',(-.6,3),color='black',fontsize=14)
+                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=14)
                         e2 = edger_x(2.25,1,2)
-                        e2_label=text('$\\Delta h = 5$ m',(2.75,1.5), color='black',fontsize=12)
+                        e2_label=text('$\\Delta h = 5$ m',(2.75,1.5), color='black',fontsize=14)
+
                         r1+r2+r3+r4+r+label_1+label_2+label_3+label_4+e1+e1_label+e2+e2_label
                         </sageplot>
                     </image>
@@ -122,14 +123,14 @@
                         r5 = polygon(([0,3.2],[0,4],[2,4],[2,3.2]),thickness=2,alpha=0.5,color='blue',edgecolor='black',axes=False)
                         r = polygon(([0,0],[0,4],[2,4],[2,0]),thickness=2,fill=False,color='black')
                         e1 = edger_x(-1.25,0,4)
-                        label_1 = text('$h_1 = 0$ m',(-.6,0),color='black',fontsize=12)
-                        label_2 = text('$h_2 = 4$ m',(-.6,0.8),color='black',fontsize=12)
-                        label_3 = text('$h_3 = 8$ m',(-.6,1.6),color='black',fontsize=12)
-                        label_4 = text('$h_4 = 12$ m',(-.6,2.4),color='black',fontsize=12)
-                        label_5 = text('$h_4 = 16$ m',(-.6,3.2),color='black',fontsize=12)
-                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=12)
+                        label_1 = text('$h_1 = 0$ m',(-.6,0),color='black',fontsize=14)
+                        label_2 = text('$h_2 = 4$ m',(-.6,0.8),color='black',fontsize=14)
+                        label_3 = text('$h_3 = 8$ m',(-.6,1.6),color='black',fontsize=14)
+                        label_4 = text('$h_4 = 12$ m',(-.6,2.4),color='black',fontsize=14)
+                        label_5 = text('$h_4 = 16$ m',(-.6,3.2),color='black',fontsize=14)
+                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=14)
                         e2 = edger_x(2.25,1.6,2.4)
-                        e2_label=text('$\\Delta h = 4$ m',(2.75,2), color='black',fontsize=12)
+                        e2_label=text('$\\Delta h = 4$ m',(2.75,2), color='black',fontsize=14)
                         r1+r2+r3+r4+r5+r+label_1+label_2+label_3+label_4+label_5+e1+e1_label+e2+e2_label
                         </sageplot>
                     </image>
@@ -200,7 +201,7 @@
                         r1 = polygon(([0,1.8],[0,2],[2,2],[2,1.8]),color='blue',alpha=0.5)
                         r = polygon(([0,0],[0,4],[2,4],[2,0]),thickness=2,fill=False,color='black', axes=False)
                         e1 = edger_x(-1.25,0,4)
-                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=12)
+                        e1_label = text('20 m',(-1.75,2),color='black',fontsize=14)
                         e2 = edger_x(2.25,1.8,2)
                         e2_label=text('$\\Delta h$ m',(2.8,1.9), color='black',fontsize=14)
                         label_1 = text('$h_i$',(-.25,1.9),color='black',fontsize=14)
@@ -333,8 +334,8 @@
                         e2_label = text('$\\Delta h = 30$ in', (2.75,6),color='black',fontsize=13)
                         e3 = edger_x(2.5,0,4)
                         e3_label = text('$\\Delta h = 30$ in', (3.75,2),color='black',fontsize=13)
-                        h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=12)
-                        h2_label = text('$h_2 = 30$ in', (-3,4),color='black',fontsize=12)
+                        h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=14)
+                        h2_label = text('$h_2 = 30$ in', (-3,4),color='black',fontsize=14)
                         r_bottom + rb + r_top + rt + tri + vert + rad1 + rad2 + e1 + e1_label + e2 + e2_label + e3 + e3_label + h1_label + h2_label
                         </sageplot>
                     </image>
@@ -392,9 +393,9 @@
                         rt = polygon(([-2/3,16/3],[2/3,16/3],[2/3,8],[-2/3,8]),fill=False,thickness=2,color='blue',axes=False)
                         tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
                         vert = line(([0,8],[0,0]),linestyle='dashed',color='black')
-                        rad1 = text('$r_1 = 15$ in',(1,-.25),color='black',fontsize=10)
-                        rad2 = text('$r_2 = 10$ in',(.75,8/3-.25),color='black',fontsize=10)
-                        rad3 = text('$r_3 = 5$ in', (.3,16/3-.25),color='black',fontsize=10)
+                        rad1 = text('$r_1 = 15$ in',(1,-.25),color='black',fontsize=13)
+                        rad2 = text('$r_2 = 10$ in',(.75,8/3-.25),color='black',fontsize=13)
+                        rad3 = text('$r_3 = 5$ in', (.3,16/3-.25),color='black',fontsize=13)
                         e1 = edger_x(-4,0,8)
                         e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
                         e2 = edger_x(1.5,17/3,8)
@@ -403,10 +404,9 @@
                         e3_label = text('$\\Delta h = 20$ in', (3.05,4),color='black',fontsize=13)
                         e4 = edger_x(2.5,0,8/3)
                         e4_label = text('$\\Delta h = 20$ in', (3.65,4/3), color='black', fontsize=13)
-
-                        h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=12)
-                        h2_label = text('$h_2 = 20$ in', (-3,8/3),color='black',fontsize=12)
-                        h3_label = text('$h_3 = 40$ in', (-2.5,16/3),color='black',fontsize=12)
+                        h1_label = text('$h_1 = 0$ in',(-3,0),color='black',fontsize=14)
+                        h2_label = text('$h_2 = 20$ in', (-3,8/3),color='black',fontsize=14)
+                        h3_label = text('$h_3 = 40$ in', (-2.5,16/3),color='black',fontsize=14)
                         r_bottom + rb + r_mid + rm + r_top + rt + tri + vert + rad1 + rad2 + rad3 + e1 + e1_label + e2 + e2_label + e3 + e3_label + e4 + e4_label + h1_label + h2_label + h3_label
                         </sageplot>
                     </image>
@@ -458,7 +458,7 @@
                         tri = polygon(([-2,0],[2,0],[0,8]),fill=False,color='black',axes=False)
                         r = polygon(([-1.025,3.9],[1.025,3.9],[1.025,4.1],[-1.025,4.1]),color='blue',alpha = 0.5,axes=False)
                         rad = line(([0,3.9],[1.025,3.9]),color='red')
-                        rad_label = text('$r_i$',(0.5125,3.75),color='black',fontsize=12)
+                        rad_label = text('$r_i$',(0.5125,3.75),color='black',fontsize=14)
                         e1 = edger_x(-4,0,8)
                         e1_label = text('60 in',(-4.75,4),color='black',fontsize=13)
                         e2 = edger_x(1.3,3.9,4.1)

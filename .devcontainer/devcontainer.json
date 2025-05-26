@@ -3,8 +3,8 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {},
 
-  // Comment or uncomment lines below if you don't or do need that feature.
   "postCreateCommand": "bash scripts/setup.sh",
+  "postAttachCommand": "bash scripts/download-cache.sh",
 
   // Port forwarding
   // ---------------
@@ -45,6 +45,9 @@
     },
     "vscode": {
       "settings": {
+        "workbench.editorAssociations": {
+          "codespace-welcome.md": "vscode.markdown.preview.editor"
+        },
         "editor.quickSuggestions": {
           "other": "off"
         },
@@ -54,7 +57,8 @@
         "pretext-tools.schema.customPath": "/workspaces/library/schema/tbil.rng",
         "redhat.telemetry.enabled": false,
         "CodeChat.CodeChatServer.Command": "CodeChat_Server",
-        "files.eol": "\n"
+        "files.eol": "\n",
+        "git.autofetch": true
       },
       "extensions": [
         "oscarlevin.pretext-tools",

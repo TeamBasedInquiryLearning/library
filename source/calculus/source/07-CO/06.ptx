@@ -1,5 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
-
 <section xml:id="CO6" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Polar Area (CO6)</title>
     <objectives>
@@ -13,22 +11,66 @@
     <title>Activities</title>
     
     
-    
-    
-    
-      <fact xml:id="fact-CO6polarIntegral">
-          
-      <p permid="QCd">
-        The area of the <q>fan-shaped</q> region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
-          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
+        <activity>
+            <introduction>
+                <p>
+                    Consider the regions bounded by polar coordinates <m>0\leq r \leq r_0</m> and <m>0\leq \theta \leq \theta_0</m> for various values of <m>r_0, \theta_0</m>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Sketch the region bound by polar coordinates <m>0\leq r \leq 1</m> and <m>0\leq \theta \leq \dfrac{\pi}{3}</m>.  What is the area of this region?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch the region bound by polar coordinates <m>0\leq r \leq 2</m> and <m>0\leq \theta \leq \dfrac{\pi}{3}</m>.  What is the area of this region?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch the region bound by polar coordinates <m>0\leq r \leq 5</m> and <m>0\leq \theta \leq \dfrac{\pi}{3}</m>.  What is the area of this region?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch the region bound by polar coordinates <m>0\leq r \leq 1</m> and <m>0\leq \theta \leq \dfrac{\pi}{4}</m>.  What is the area of this region?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch the region bound by polar coordinates <m>0\leq r \leq 5</m> and <m>0\leq \theta \leq \dfrac{\pi}{4}</m>.  What is the area of this region?
+                    </p>
+                </statement>
+            </task>
+        </activity>
 
-      </p>
-        </fact>
-    
-    
-        <figure>
+        <activity>
+            <statement>
+                <p>
+                    What in general is the area of the region bound by polar coordinates <m>0\leq r \leq r_0</m> and <m>0\leq \theta \leq \theta_0</m>?
+                </p>
+                <ol marker="A." cols="2">
+                    <li><p><m>\displaystyle \pi \frac{r_0^2}{\theta_0}</m></p></li>
+                    <li><p><m>\displaystyle  \frac{r_0^2}{\pi \theta_0}</m></p></li>
+                    <li><p><m>\displaystyle \theta_0 \frac{r_0^2}{\pi}</m></p></li>
+                    <li><p><m>\displaystyle \theta\frac{r_0^2}{2}</m></p></li>
+                </ol>
+            </statement>
+        </activity>
+        
+        <figure xml:id="polarAreaDifferential">
                 <caption>Finding the polar area differential</caption>
-                    <image xml:id="polarAreaDifferential" width="100%">
+                    <image  width="100%">
                         <description>Illustration of polar area differential.</description>
                         <sageplot>
                         x = var('x')
@@ -71,6 +113,52 @@
                         </sageplot>
                     </image>
             </figure>
+
+            <activity>
+                <introduction>
+                    <p>
+                        Consider the <q>fan-shaped</q> region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> as depicted in <xref ref="polarAreaDifferential"/>.
+                    </p>
+                </introduction>
+                <task>
+                    <statement>
+                        <p>
+                            Which of the following best describes a Riemann sum which approximates the area of this region?
+                        </p>
+                        <ol marker="A." cols="2">
+                            <li><p><m>\displaystyle \sum_{k=1}^n f(\theta_k)\Delta \theta</m></p></li>
+                            <li><p><m>\displaystyle \sum_{k=1}^n f(\theta_k)^2\Delta \theta</m></p></li>
+                            <li><p><m>\displaystyle \sum_{k=1}^n \frac{f(\theta_k)^2}{2}\Delta \theta</m></p></li>
+                            <li><p><m>\displaystyle \sum_{k=1}^n \pi f(\theta_k)^2\Delta \theta</m></p></li>
+                        </ol>
+                    </statement>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            Which of the following describes an integral which computes the area of this region?
+                        </p>
+                        <ol marker="A." cols="2">
+                            <li><p><m>\displaystyle \int_{\theta=\alpha}^{\theta=\beta} f(\theta)d\theta</m></p></li>
+                            <li><p><m>\displaystyle \int_{\theta=\alpha}^{\theta=\beta}f(\theta)^2 d\theta</m></p></li>
+                            <li><p><m>\displaystyle \int_{\theta=\alpha}^{\theta=\beta} \frac{f(\theta)^2}{2}d\theta</m></p></li>
+                            <li><p><m>\displaystyle \int_{\theta=\alpha}^{\theta=\beta} \pi f(\theta)^2 d\theta</m></p></li>
+                        </ol>
+                    </statement>
+                </task>
+            </activity>
+    
+      <fact xml:id="fact-CO6polarIntegral">
+          
+      <p permid="QCd">
+        The area of the <q>fan-shaped</q> region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
+          <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
+
+      </p>
+        </fact>
+    
+    
+        
         
         
     
