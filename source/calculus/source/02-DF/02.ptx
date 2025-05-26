@@ -241,16 +241,23 @@ The second derivative is the derivative of the derivative. It encodes informatio
  <activity xml:id="activity-differentiability-piecewise" estimated-time="10">
        <introduction>
         <p>
-         In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.  </p> </introduction>
+         In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In particular, this means that 
+        <me>
+            \lim_{h\to 0^-} \dfrac{f(a+h) - f(a)}{h}\text{ and } \lim_{h\to 0^+} \dfrac{f(a+h)-f(a)}{h}
+        </me>
+        must be the same. If the limits are not the same, then the function is not differentiable at <m>x = a</m>. In this activity we will study differentiability analytically.  </p> </introduction>
      <task>
             <p>
-              Consider the following continuous function </p><me>
+              Consider the following continuous function 
+              <me>
                 g(x) = \begin{cases}
-                  x + 2 \amp x \leq 2 \\
-                  x^2   \amp x \gt  2
+                  x + 2 \amp x \leq 1 \\
+                  3x   \amp x \gt  1
                 \end{cases}
               </me>
-         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>. 
+            </p>
+            <p> 
+                Compute <m>\displaystyle \lim_{h\to 0^-} \dfrac{g(1+h)-g(1)}{h}</m> and <m>\displaystyle \lim_{h\to 0^+} \dfrac{g(1+h)-g(1)}{h}</m>. Is this continuous function differentiable at <m>x = 1</m>? Why or why not?
             </p>
             </task>
           <task>
@@ -261,9 +268,10 @@ The second derivative is the derivative of the derivative. It encodes informatio
                   x   \amp x \gt  2
                 \end{cases}
               </me>
-         <p> On both sides of <m>x=2</m> it seems that the slope is the same, but this function is still not differentiable at <m>x=2</m>. Notice that <m>g(2)=4</m>. When <m> h \gt 0 </m>, the interval <m>[2,2+h]</m>falls under the second definition of <m>g(x)</m>, but <m>g(2)</m> is always fixed at 4. Compute the difference quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that <m>h \gt 0 </m> and notice that this does not simplify as expected! Moreover, if you take the limit as <m>h\to 0</m>, you will get infinity and not the expected slope of 1! 
+         <p> On both sides of <m>x=2</m> it seems that the slope is the same, but this function is still not differentiable at <m>x=2</m>. Compute the difference quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that <m>h \gt 0 </m> and then assuming that <m>h \lt 0</m>. Use your answers to explain why the function is not differentiable at <m>x=2</m>.
             </p>
             </task>
+            
          <task>
             <p>
               Consider the following function </p><me>
