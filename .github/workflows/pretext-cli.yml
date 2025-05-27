@@ -23,21 +23,24 @@ jobs:
               uses: actions/checkout@v4
             
             - name: Setup requirements
-              run: bash scripts/setup.sh
+              run: |
+                bash scripts/setup.sh
+                bash scripts/download-cache.sh
 
-            - name: build and stage preview target
+            - name: Build and stage preview target
               run: |
                 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
                 conda activate sage
-                bash scripts/download-cache.sh
                 pretext build -g
                 pretext deploy --stage-only
-                bash scripts/stage-cache.sh
+
+            - name: Stage updated cache
+              run: bash scripts/stage-cache.sh
 
             - name: build and stage banks
               run: |
                 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate 
+                conda activate sage
                 echo "Precalculus bank"
                 python scripts/build_bank.py precalculus --full
                 echo "Calculus bank"
@@ -92,18 +95,16 @@ jobs:
               with:
                 fetch-depth: 0
             
-            - name: Set necessary Git permission
-              run: git config --global --add safe.directory $(pwd)
-            
             - name: Setup requirements
-              run: bash scripts/setup.sh
+              run: |
+                bash scripts/setup.sh
+                bash scripts/download-cache.sh
 
             - name: build previews of all changed files and stage
               id: changes
               run: |
                 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
                 conda activate sage
-                bash scripts/download-cache.sh
                 python -m scripts.quickbuild_changes
                 pretext deploy --stage-only
 
