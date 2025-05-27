@@ -22,7 +22,7 @@ def main():
     # collect changed xml_ids
     xml_ids = []
     for f in changed_files:
-        if Path("source", b) in f.parents and f.suffix == ".ptx":
+        if Path("source") in f.parents and f.suffix == ".ptx":
             root = etree.parse(f).getroot()
             if root.tag in ["section", "chapter", "preface", "appendix", "frontmatter"]:
                 xml_id = root.get(r"{http://www.w3.org/XML/1998/namespace}id")
