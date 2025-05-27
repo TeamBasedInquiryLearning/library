@@ -290,6 +290,49 @@ p
             <caption> Image of the unit circle used to derive the difference formula.</caption>
           </figure>
         </p>
+        <figure>
+          <sidebyside widths="50% 50%">
+          <image>
+            <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+beta=pi/8
+alpha=3*pi/4
+q=plot([],aspect_ratio=1,ticks=[[],[]])
+q+=circle((0,0),1,color="#ddd")
+q+=line([(0,0),(cos(beta),sin(beta))],color="blue",thickness=2)
+q+=arc((0,0),0.2,sector=(0,beta),color="black")
+q+=text(r"$\beta$", (0.3*cos(beta/2),0.3*sin(beta/2)),color="black",fontsize=14)
+q+=line([(0,0),(cos(alpha),sin(alpha))],color="blue",thickness=2)
+q+=arc((0,0),0.15,sector=(0,alpha),color="black")
+q+=text(r"$\alpha$", (0.2*cos(alpha/2),0.2*sin(alpha/2)),color="black",fontsize=14)
+q+=line([(cos(beta),sin(beta)),(cos(alpha),sin(alpha))],color="blue",thickness=2)
+q+=text(r"$P$",(1.1*cos(alpha),1.1*sin(alpha)),color="black",fontsize=14)
+q+=text(r"$Q$",(1.1*cos(beta),1.1*sin(beta)),color="black",fontsize=14)
+q+=text(r"$O$",(-0.1,-0.1),color="black",fontsize=14)
+q
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+beta=pi/8
+alpha=3*pi/4
+p=plot([],aspect_ratio=1,ticks=[[],[]])
+p+=circle((0,0),1,color="#ddd")
+p+=line([(0,0),(cos(0),sin(0))],color="blue",thickness=2)
+p+=line([(0,0),(cos(alpha-beta),sin(alpha-beta))],color="blue",thickness=2)
+p+=arc((0,0),0.1,sector=(0,alpha-beta),color="black")
+p+=text(r"$\alpha-\beta$", (0.15*cos((alpha-beta)/2)+0.1,0.15*sin((alpha-beta)/2)),color="black",fontsize=14)
+p+=line([(cos(alpha-beta),sin(alpha-beta)),(cos(0),sin(0))],color="blue",thickness=2)
+p+=text(r"$A$",(1.1*cos(alpha-beta),1.1*sin(alpha-beta)),color="black",fontsize=14)
+p+=text(r"$B$",(1.1*cos(0),1.1*sin(0)+0.05),color="black",fontsize=14)
+p+=text(r"$O$",(-0.1,-0.1),color="black",fontsize=14)
+p
+            </sageplot>
+          </image>
+        </sidebyside>
+        <caption>Fill this in</caption>
+        </figure>
       </introduction>
 
       <task>
