@@ -16,41 +16,41 @@ def main():
     preview_links = []
 
     p = Project.parse()
-    BOOKS = ['precalculus', 'calculus', 'linear-algebra']
+    t = p.get_target(f"authoring-preview")
 
     # for each .ptx file, try to build subtree of document
-    for b in BOOKS:
-        # collect changed xml_ids
-        xml_ids = []
-        for f in changed_files:
-            if Path("source", b) in f.parents and f.suffix == ".ptx":
-                root = etree.parse(f).getroot()
-                if root.tag in ["section", "chapter", "preface", "appendix", "frontmatter"]:
-                    xml_id = root.get(r"{http://www.w3.org/XML/1998/namespace}id")
-                    xml_ids.append({
-                        "file": f,
-                        "id": xml_id,
-                    })
-        t = p.get_target(f"{b}-web-instructor")
-        if len(xml_ids) > 0:
-            print(f"Building book `{b}`, skipping images")
-            path = f"/preview/{b}/instructor"
-            t.build(xmlid=None, no_knowls=True, generate=False)
-            preview_links.append({
-                "file": b,
-                "path": path
-            })
-        built_ids = set()
-        for xml_id in xml_ids:
-            if xml_id["id"] not in built_ids:
-                print(f"Building book `{b}` with ID `{xml_id["id"]}`")
-                t.build(xmlid=xml_id["id"], no_knowls=True, generate=True)
-                built_ids.add(xml_id["id"])
-            preview_links.append({
-                "file": xml_id["file"],
-                "path": f"/preview/{b}/instructor/{xml_id["id"]}.html"
-            })
+    # collect changed xml_ids
+    xml_ids = []
+    for f in changed_files:
+        if Path("source") in f.parents and f.suffix == ".ptx":
+            root = etree.parse(f).getroot()
+            if root.tag in ["section", "chapter", "preface", "appendix", "frontmatter"]:
+                xml_id = root.get(r"{http://www.w3.org/XML/1998/namespace}id")
+                xml_ids.append({
+                    "file": f,
+                    "id": xml_id,
+                })
+    if len(xml_ids) > 0:
+        print(f"Building authoring preview, skipping images")
+        path = f"/preview/"
+        t.build(xmlid=None, no_knowls=True, generate=False)
+        preview_links.append({
+            "file": b,
+            "path": path
+        })
+    built_ids = set()
+    for xml_id in xml_ids:
+        if xml_id["id"] not in built_ids:
+            print(f"Building ID `{xml_id["id"]}` with assets")
+            t.build(xmlid=xml_id["id"], no_knowls=True, generate=True)
+            built_ids.add(xml_id["id"])
+        preview_links.append({
+            "file": xml_id["file"],
+            "path": f"/preview/{xml_id["id"]}.html"
+        })
+
     # for each CheckIt file, build its preview
+    BOOKS = ['precalculus', 'calculus', 'linear-algebra']
     for b in BOOKS:
         # collect changed outcomes
         changed_outcomes = set()
@@ -61,12 +61,12 @@ def main():
         # build changed outcomes
         for o in changed_outcomes:
             sandbox_bank_path = preview_outcome.build_preview(b, o)
-            output_path = Path("output", f"{b}-web-instructor", "exercises", o)
+            output_path = Path("output", f"authoring-preview", "exercises", b, o)
             output_path.mkdir(parents=True)
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
             preview_links.append({
                 "file": Path("source", b, "exercises", "outcomes", o),
-                "path": f"/preview/{b}/instructor/exercises/{o}/"
+                "path": f"/preview/exercises/{b}/{o}/"
             })
 
 
