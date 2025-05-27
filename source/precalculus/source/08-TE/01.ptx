@@ -294,7 +294,6 @@ p
           <sidebyside widths="50% 50%">
           <image>
             <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 beta=pi/8
 alpha=3*pi/4
 q=plot([],aspect_ratio=1,ticks=[[],[]])
@@ -314,7 +313,6 @@ q
           </image>
           <image>
             <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 beta=pi/8
 alpha=3*pi/4
 p=plot([],aspect_ratio=1,ticks=[[],[]])
@@ -331,7 +329,7 @@ p
             </sageplot>
           </image>
         </sidebyside>
-        <caption>Fill this in</caption>
+        <caption>Triangle <m>POQ</m> and its rotation counterclockwise by <m>\beta</m>, Triangle <m>AOB</m> </caption>
         </figure>
       </introduction>
 
