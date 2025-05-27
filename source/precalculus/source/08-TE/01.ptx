@@ -21,7 +21,6 @@
       <figure xml:id="Deriving-Pythagorean-Identity">
         <image>
           <sageplot>
-          p=Graphics()
 p=circle ((0,0), 1)
 p += line([(0,0),(.707,.707), (.707,0), (0,0)],thickness=3,color="black")
 p += text("$x$", (0.3,-0.1),color="black", fontsize=14)
