@@ -4,7 +4,7 @@ slug: library
 ---
 
 We currently offer classroom-ready materials for **Calculus** and
-**Linear Algebra**. New editions are released twice annually around January (our "Early" edition) and August.
+**Linear Algebra**. New editions are released annually around May/June.
 
 #### Calculus 2024 Edition
 
@@ -37,37 +37,20 @@ We have also just released a Trial edition of materials for pre-calculus classro
 
 ---
 
-### Preview Editions
+### Previews
 
 Previews of upcoming editions of our library are available to the public,
 but be warned - these are under active development and can change at any time!
 
-#### Precalculus PREVIEW Edition
-
-- [HTML](../preview/precalculus/)
-    - [Instructor Edition](../preview/precalculus/instructor/)
-- [PDF](../preview/precalculus/print/TBIL-Precalculus.pdf)
-    - [Instructor Edition](../preview/precalculus/print/TBIL-Precalculus-Instructor.pdf)
-- [Slides](../preview/precalculus/print/TBIL-Precalculus-Slides.pdf)
-- [Exercises](../preview/precalculus/exercises/)
-
-#### Calculus PREVIEW Edition
-
-- [HTML](../preview/calculus/)
-    - [Instructor Edition](../preview/calculus/instructor/)
-- [PDF](../preview/calculus/print/TBIL-Calculus.pdf)
-    - [Instructor Edition](../preview/calculus/print/TBIL-Calculus-Instructor.pdf)
-- [Slides](../preview/calculus/print/TBIL-Calculus-Slides.pdf)
-- [Exercises](../preview/calculus/exercises/)
-
-#### Linear Algebra PREVIEW Edition
-
-- [HTML](../preview/linear-algebra/)
-    - [Instructor Edition](../preview/linear-algebra/instructor/)
-- [PDF](../preview/linear-algebra/print/TBIL-Linear-Algebra.pdf)
-    - [Instructor Edition](../preview/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
-- [Slides](../preview/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
-- [Exercises](../preview/linear-algebra/exercises/)
+- Precalculus
+    - [Activities](../preview/part-precalculus.html)
+    - [Exercises](../preview/exercises/precalculus)
+- Calculus
+    - [Activities](../preview/part-calculus.html)
+    - [Exercises](../preview/exercises/calculus)
+- Linear Algebra
+    - [Activities](../preview/part-linear-algebra.html)
+    - [Exercises](../preview/exercises/linear-algebra)
 
 ---
 
