@@ -69,6 +69,11 @@
               <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                C: The slopes of the tangent lines increase as you move from left to right.
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -79,6 +84,11 @@
               <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                B: The slopes of the tangent lines remain constant as you move from left to right.
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -89,6 +99,11 @@
               <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                A: The slopes of the tangent lines decrease as you move from left to right.
+            </p>
+          </answer>
       </task>
     </activity>
     
@@ -161,6 +176,11 @@
               <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                C: The slopes of the tangent lines increase as you move from left to right.
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -171,6 +191,11 @@
               <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                B: The slopes of the tangent lines remain constant as you move from left to right.
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -181,6 +206,11 @@
               <li><p> The slopes of the tangent lines increase as you move from left to right. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                A: The slopes of the tangent lines decrease as you move from left to right. 
+            </p>
+          </answer>
       </task>
         
     </activity>
@@ -203,7 +233,7 @@
 <!-- Maybe insert examples like in the commented text     -->
 
     <activity xml:id="activity-derivative-concavity3a">
-    <statement><p>Look at in <xref ref="concavity-3"/>. Which curve is concave up? Which one is concave down? Why? Try to explain using the graph!</p>
+    <statement><p>Look at the curves in <xref ref="concavity-3"/>. Which curve is concave up? Which one is concave down? Why? Try to explain using the graph!</p>
 
         <figure xml:id="concavity-3" permid="vQo">
         <caption>Two concavities, which is which? </caption>
@@ -252,7 +282,13 @@
         
         </figure>
         
-    </statement></activity>
+    </statement>
+    <answer>
+        <p>
+            The curve on the left is concave up because it bends up from its tangent lines, while the curve on the right is concave down because it bends down from its tangent lines.
+        </p>
+    </answer>
+    </activity>
     
     <definition xml:id="concavity-and-first-derivative" permid="hcP">
       <statement>
@@ -286,6 +322,11 @@
               <li><p> The slopes of the tangent lines go from decreasing to increasing as you move from right to left.  </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                B: The slopes of the tangent lines increase as you move from left to right.
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -297,6 +338,11 @@
               <li><p> <m> f''(x) &lt; 0 </m> on the entire interval shown. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                C: <m> f''(x) &gt; 0 </m> on the entire interval shown.
+            </p>
+          </answer>
       </task>        
       <task>
       <statement>
@@ -308,6 +354,11 @@
               <li><p> The slopes of the tangent lines go from decreasing to increasing as you move from right to left.  </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                A: The slopes of the tangent lines decrease as you move from left to right.
+            </p>
+          </answer>
       </task>
       <task>
       <statement>
@@ -319,6 +370,11 @@
               <li><p> <m> f''(x) &lt; 0 </m> on the entire interval shown. </p></li>
             </ol>
           </statement>
+          <answer>
+            <p>
+                D: <m> f''(x) &lt; 0 </m> on the entire interval shown.
+            </p>
+          </answer>
       </task>
     </activity>
 
@@ -350,18 +406,43 @@
         </introduction>
         <task> 
             <p>Find all the zeros of <m>f''(x)</m>. </p>
+            <answer>
+                <p>
+                    <m>x = \pm 3</m>
+                </p>
+            </answer>
         </task>
         <task> 
             <p>What intervals have been created by subdividing the number line at zeros of <m>f''(x)</m>?</p>
+            <answer>
+                <p>
+                    <m>(-\infty,-3)</m>, <m>(-3,3)</m>, and <m>(3,\infty)</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f''(x)</m> is positive or negative at each point.</p>
+            <answer>
+                <p>
+                    <m>f''(x)</m> is positive on <m>(-\infty,-3)\cup (3,\infty)</m> and negative on <m>(-3,3)</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>On which intervals is <m>f'(x)</m> increasing? On which intervals is <m>f'(x)</m> decreasing?</p>
+            <answer>
+                <p>
+                    <m>f'(x)</m> is increasing on <m>(-\infty,-3)\cup(3,\infty)</m> and decreasing on <m>(-3,3)</m>
+                </p>
+            </answer>
         </task>
         <task> 
             <p>List all the intervals where <m>f(x)</m> is concave up and all the intervals where <m>f(x)</m> is concave down.</p>
+            <answer>
+                <p>
+                    <m>f(x)</m> is concave up on <m>(-\infty,-3)\cup (3,\infty)</m> and concave down on <m>(-3,3)</m>
+                </p>
+            </answer>
         </task>
     </activity>
      
@@ -375,11 +456,16 @@
     </definition>
     
     <activity xml:id="activity-derivative-concavity5">
-        <introduction>
+        <statement>
             <p>
              Use the results from <xref ref="activity-derivative-concavity4"/> to identify all of the inflection points of <m>f(x)=x^4-54x^2</m>.
             </p>
-        </introduction>
+        </statement>
+        <answer>
+            <p>
+                The inflection points occur at <m>x = \pm 3</m>
+            </p>
+        </answer>
     </activity>
 
 <activity xml:id="concavity-fluency-checkit">
@@ -392,16 +478,31 @@ where it is concave up or concave down, and any inflection points.
 
                 <task>
                     <p><m>f(x)=-\frac{1}{4} \, x^{5} - \frac{5}{2} \, x^{4} - \frac{15}{2} \, x^{3}</m></p>
+                    <answer>
+                        <p>
+                            <m>f(x)</m> is concave up on <m>(-\infty,0)</m> and concave down on <m>(0,\infty)</m>. It has an inflection point at <m>x = 0</m>.
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <p><m>f(x)=\frac{3}{20} \, x^{5} + x^{4} - \frac{5}{2} \, x^{3}</m></p>
+                    <answer>
+                        <p>
+                            <m>f(x)</m> is concave down on <m>(-\infty,-5)\cup (0,1)</m> and concave up on <m>(-5,0)\cup (1,\infty)</m>. It has inflection points at <m>x = -5</m>, <m>x = 0</m>, and <m>x = 1</m>. 
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <statement>
                         <p>
-                            <m>g(x) = x - \cos\left(\dfrac{\pi}{2}x\right)</m>
+                            <m>g(x) = x - \cos\left(\dfrac{\pi}{2}x\right)</m> on <m>(0,2\pi)</m>
                         </p>
                     </statement>
+                    <answer>
+                        <p>
+                            <m>g(x)</m> is concave up on <m>(0,1)\cup (3,5)</m> and concave down on <m>(1,3)\cup (5,2\pi)</m>. It has inflection points at <m>x = 1</m>, <m>x = 3</m>, and <m>x = 5</m>.
+                        </p>
+                    </answer>
                 </task>
         
  <!--   <answer>
@@ -540,24 +641,59 @@ f''(x)
         </introduction>
         <task> 
             <p>List all the critical points of <m>f(x)</m> that you can find using the table above. </p>
+            <answer>
+                <p>
+                    The critical points are at <m>x = 1</m>, <m>x = 3</m>, and <m>x = 6</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>Use the First Derivative Test to classify the critical numbers (decide if they are a max or min). Write full sentence stating the conclusion of the test for each critical number. </p>
+            <answer>
+                <p>
+                    There are local maxima at <m>x = 1</m> and <m>x = 6</m> and a local minimum at <m>x = 3</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>On which interval(s) is <m>f(x)</m> increasing? On which interval(s) is <m>f(x)</m> decreasing? List all the critical points of <m>f(x)</m> that you can find using the table above. </p>
+            <answer>
+                <p>
+                    <m>f(x)</m> is increasing on <m>(0,1)\cup (3,6)</m> and decreasing on <m>(1,3)\cup (6,7)</m>
+                </p>
+            </answer>
         </task>
         <task> 
             <p>There is one critical number for which the Second Derivative Test is inconclusive. Which one? You can still determine if it is a max or min using the First Derivative Test! </p>
+            <answer>
+                <p>
+                    The Second Derivative Test is inconclusive at <m>x = 6</m>
+                </p>
+            </answer>
         </task>
         <task> 
             <p>List all the critical points of <m>f'(x)</m> that you can find using the table above. </p>
+            <answer>
+                <p>
+                    <m>f'(x)</m> has critical points at <m>x=2</m>, <m>x = 4</m>, and <m>x = 6</m>.
+                </p>
+            </answer>
         </task>
          <task> 
             <p>On which intervals is <m>f(x)</m> concave up? On which intervals is <m>f(x)</m>  concave down? </p>
+            <answer>
+                <p>
+                    <m>f(x)</m> is concave up on <m>(2,4)\cup (6,7)</m> and concave down on <m>(0,2)\cup (4,6)</m>.
+                </p>
+            </answer>
         </task>
         <task> 
             <p>List all the inflection points of <m>f(x)</m> that you can find using the table above. </p>
+            <answer>
+                <p>
+                    The inflection points are at <m>x = 2</m>, <m>x=4</m>, and <m>x=6</m>.
+                </p>
+            </answer>
         </task>
  </activity>
 
