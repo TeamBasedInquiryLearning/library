@@ -37,7 +37,7 @@ def main():
             path = f"/preview/{b}/instructor"
             t.build(xmlid=None, no_knowls=True, generate=False)
             preview_links.append({
-                "file": b,
+                "file": Path("source", b),
                 "path": path
             })
         built_ids = set()
