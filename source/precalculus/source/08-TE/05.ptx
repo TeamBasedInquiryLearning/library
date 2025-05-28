@@ -689,6 +689,96 @@ p
       </ol>
        The <term>Ambiguous Case of the Law of Sines</term> states that when using the Law of Sines to find a missing side length, the possibility of two solutions for the measure of the same side may occur.
       </p>
+
+      <figure>
+        <image>
+          <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
+p+=text("$C$",(2,2.1),color="black",fontsize=14)
+p+=arc((2,2),1.75,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2+1.75*cos(5*pi/3),2+1.75*sin(5*pi/3))],color="blue",thickness=2)
+p+=text("$a$",(2.7,1.1),fontsize=14)
+p.axes(False)
+p
+          </sageplot>
+        </image>
+        <caption>If <m>a</m> is too short for a given angle <m>A</m> and side <m>b</m>, no matter
+          how that leg is swung around the dashed circle, it will not meet a third side of any
+          length along the dotted line.
+        </caption>
+      </figure>
+      <figure>
+        <image>
+          <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
+p+=text("$C$",(2,2.1),color="black",fontsize=14)
+a=pi/12
+r=2/cos(a)
+p+=arc((2,2),r,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2+r*cos(3*pi/2+a),2+r*sin(3*pi/2+a))],color="blue",thickness=2)
+p+=line([(2,2),(2+r*cos(3*pi/2-a),2+r*sin(3*pi/2-a))],color="blue",thickness=2)
+p+=text("$a$",(2.4,1.1),fontsize=14)
+p+=text("$a$",(1.6,1.1),fontsize=14)
+p.axes(False)
+p
+          </sageplot>
+        </image>
+        <caption>
+          If <m>a</m> is larger, the circle of radius <m>a</m> centered at <m>C</m> intersects the
+          horizontal dashed line in two places, giving two possible solutions.
+        </caption>
+      </figure>
+      <figure>
+        <sidebyside widths="50% 50%">
+          <image>
+            <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
+p+=arc((2,2),2,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2,0)],color="blue",thickness=2)
+p+=text("$a$",(2.1,1.1),fontsize=14)
+p.axes(False)
+p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(6,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.2,-0.1),color="black",fontsize=14)
+a=pi/3
+r=2/cos(a)
+p+=arc((2,2),r,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2+r*cos(3*pi/2+a),2+r*sin(3*pi/2+a))],color="blue",thickness=2)
+p+=text("$a$",(4.1,1.1),fontsize=14)
+p.axes(False)
+p
+            </sageplot>
+          </image>
+        </sidebyside>
+        <caption>
+          If the length of <m>a</m> is the same as the height of the triangle, the two possibilities converge
+          and there is a single solution of a right triangle.  On the other hand, if the length of <m>a</m> increases
+          enough, the potential second solution swings past the angle <m>A</m> and thus does not exist.
+        </caption>
+      </figure>
     </observation>
 
     <activity xml:id="law-of-sines-fluency">
