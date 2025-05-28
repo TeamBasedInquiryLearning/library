@@ -16,13 +16,15 @@ def main(book:str, full:bool, sandbox=False, stage=True):
     print(f"Building exercises from `{bank_path}`")
 
     b = Bank(bank_path)
+    for o in b.outcomes():
+        o.download_cache(f"https://tbil.org/preview/exercises/{book}")
     b.generate_exercises(regenerate=full, images=full)
     b.write_json()
 
-    b.build_viewer()
+    b.build_viewer(with_cache=True)
 
     if stage:
-        stage_path = base_path / "output" / "stage" / "preview" / book / "exercises"
+        stage_path = base_path / "output" / "stage" / "preview" / "exercises" / book
         print(f"Staging bank at `{stage_path}`")
         # stage bank
         shutil.copytree(

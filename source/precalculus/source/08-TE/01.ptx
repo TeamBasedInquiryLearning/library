@@ -14,42 +14,44 @@
 
     <remark>
     <p>
-      Pythagorean Identities, as we have seen in a previous section, are derived from the Pythagorean Theorem <m> \left( a^2+b^2=c^2 \right) </m>. Pythagorean Identities are used in solving many trigonometric problems where one trigonometric ratio is given and we are expected to find the other trigonometric ratios. The most commonly used Pythagorean Identity is: <me>\sin^2\theta + \cos^2\theta = 1</me>. The next two activities will lead us to find the other two Pythagorean Identities.
+      Pythagorean Identities, as we have seen in a previous section, are derived from the Pythagorean Theorem <m>\left(a^2+b^2=c^2 \right) </m>. 
+    </p>
+    <p>
+      For example, consider a point <m>P</m> on the unit circle, with coordinates <m>(x,y)</m>. If we draw a right triangle (as shown in the figure below), the Pythagorean Theorem says that <m>x^2+y^2=1</m>. 
+      <figure xml:id="Deriving-Pythagorean-Identity">
+        <image>
+          <sageplot>
+p=circle ((0,0), 1)
+p += line([(0,0),(.707,.707), (.707,0), (0,0)],thickness=3,color="black",ticks=[SR(1),SR(1)])
+p += text("$x$", (0.3,-0.1),color="black", fontsize=14)
+p += text("$y$", (.8, 0.4), color="black",fontsize=14)
+p += text("$P=(x,y)$", (.9, .8), color="black",fontsize=14)
+p += text("$1$", (.3, .4), color="black",fontsize=14)
+p.axes(True)
+p
+          </sageplot>
+        </image>
+      </figure>
+      But, remember, that the <m>x</m>-coordinate of the point corresponds to <m>\cos\theta</m> and the <m>y</m>-coordinate corresponds to <m>\sin\theta</m>. Thus, we get: <me>\sin^2\theta + \cos^2\theta = 1</me>. Pythagorean Identities are used in solving many trigonometric problems where one trigonometric ratio is given and we are expected to find the other trigonometric ratios. The next two activities will lead us to find the other two Pythagorean Identities.
     </p>
     </remark>
 
     <activity xml:id="deriving-pythagorean-identity-2">
       <introduction>
         <p>
-          Consider the triangle <m>ABC</m>, where <m>C</m> is the right angle and angle <m>B</m> is <m>\theta</m>.
+          Let's begin with the Pythagorean Identity, <m>\cos^2\theta+\sin^2\theta=1</m>.
         </p>
       </introduction>
 
       <task>
         <statement>
           <p>
-            Let's begin with the Pythagorean Theorem, <m>a^2+b^2=c^2</m>. If we divide each term by <m>a^2</m>, what would the resulting equation be?
+            If we divide each term by <m>\cos^2\theta</m>, what would the resulting equation be?
           </p>
         </statement>
         <answer>
           <p>
-            <me>\frac{a^2}{a^2}+\frac{b^2}{a^2}=\frac{c^2}{a^2}</me>, which simplifies to
-            <me>
-              1+\frac{b^2}{a^2}=\frac{c^2}{a^2}
-            </me>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            How could we rewrite the equation we got in part (b) so that each term with a fraction can be represented as a fraction squared?
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>1+ \left( \frac{b}{a} \right) ^2 = \left( \frac{c}{a} \right) ^2</m>
+            <me>\dfrac{\cos^2\theta}{\cos^2\theta}+\dfrac{\sin^2\theta}{\cos^2\theta}=\dfrac{1}{\cos^2\theta}</me>
           </p>
         </answer>
       </task>
@@ -57,70 +59,27 @@
       <task>
         <statement>
           <p>
-            Let's now try and think of the relationships of the angle and sides (i.e., our trigonometric ratios). Label the sides of the triangle in terms of its relationship with <m>\theta</m> (i.e., angle <m>B</m>).
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Students should label the sides so that the following sides should be labeled as:
-            <ul>
-              <li>
-                <p>
-                  <m>a</m> is the adjacent side of <m>\theta</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>b</m> is the opposite side of <m>\theta</m>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <m>c</m> is the hypotenuse
-                </p>
-              </li>
-            </ul>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
-            Replace <m>a</m>, <m>b</m>, and <m>c</m> in the equation we got in part (c) with how you labeled the sides in part (d).
-          </p>
-        </statement>
-        <answer>
-          <p>
-            Replacing the <m>a</m>, <m>b</m>, and <m>c</m> in the equation <me>1+ \left( \frac{b}{a} \right)^2= \left( \frac{c}{a} \right)^2</me> with the labels from part (d) gives <me>1+ \left( \frac{\text{opposite}}{\text{adjacent}} \right)^2=\left( \frac{\text{hypotenuse}}{\text{adjacent}} \right)^2</me>
-          </p>
-        </answer>
-      </task>
-
-      <task>
-        <statement>
-          <p>
             Recall the following trigonometric functions:
             <ul cols="2"> 
-              <li><m>\sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}
+              <li><m>\sin\theta
               </m></li>
               <li><m>
-                \csc\theta=\frac{\text{hypotenuse}}{\text{opposite}}
+                \csc\theta=\frac{1}{\sin\theta}
               </m></li>
               <li><m>
-                \cos\theta=\frac{\text{adjacent}}{\text{hypotenuse}}
+                \cos\theta
               </m></li>
               <li><m>
-                \sec\theta=\frac{\text{hypotenuse}}{\text{adjacent}}
+                \sec\theta=\frac{1}{\cos\theta}
               </m></li>
               <li><m>
-                \tan\theta=\frac{\text{opposite}}{\text{adjacent}}
+                \tan\theta
               </m></li>
               <li><m>
-                \cot\theta=\frac{\text{adjacent}}{\text{opposite}}
+                \cot\theta=\frac{\sin\theta}{\cos\theta}
               </m></li>
             </ul>
-            Using these trigonometric ratios, how can we rewrite the equation in part (e)?
+            Using these trigonometric relationships, rewrite each fractional term in the equation you got in part (a) as a single trigonometric function.
           </p>
         </statement>
         <answer>
@@ -133,14 +92,14 @@
 
     <remark>
     <p>
-      In <xref ref="deriving-pythagorean-identity-2"/>, we derived the second Pythagorean Identity: <m>\sec^2\theta-\tan^2\theta=1</m>. Note that we can rewrite what we got in the previous activity <m> \left( 1 + \tan^2\theta = \sec^2\theta \right) </m> to get to this form. 
+      In <xref ref="deriving-pythagorean-identity-2"/>, we derived the second Pythagorean Identity: <me>1 + \tan^2\theta = \sec^2\theta</me> 
     </p>
     </remark> 
 
     <activity xml:id="deriving-pythagorean-identity-3">
       <introduction>
         <p>
-         We can also derive identities from previous identities. Let's begin with <m>\sin^2\theta+\cos^2\theta=1</m>.
+         We can also derive the third Pythagorean identity from <m>\sin^2\theta+\cos^2\theta=1</m>.
         </p>
       </introduction>
 
@@ -152,7 +111,7 @@
         </statement>
         <answer>
           <p>
-            <m>1+\frac{\cos^2\theta}{\sin^2\theta}=\frac{1}{\sin^2\theta}</m>
+            <m>\dfrac{\sin^2\theta}{\sin^2\theta}+\dfrac{\cos^2\theta}{\sin^2\theta}=\dfrac{1}{\sin^2\theta}</m>
           </p>
         </answer>
       </task>
@@ -173,7 +132,7 @@
 
     <remark>
     <p>
-      In <xref ref="deriving-pythagorean-identity-3"/>, we derived the third Pythagorean Identity: <m>\csc^2\theta-\cot^2\theta=1</m>. Note that we can rewrite what we got in the previous activity <m> \left( 1+ \cot^2\theta = \csc^2\theta \right)</m> to get to this form.
+      In <xref ref="deriving-pythagorean-identity-3"/>, we derived the third Pythagorean Identity: <me>1+ \cot^2\theta = \csc^2\theta</me>
     </p>
     </remark> 
 
@@ -189,12 +148,12 @@
             </li>
             <li>
               <p>
-                <m>\sec^2\theta - \tan^2\theta = 1</m>
+                <m>1 + \tan^2\theta = \sec^2\theta </m>
               </p>
             </li>
             <li>
               <p>
-                <m>\csc^2\theta - \cot^2\theta = 1</m>
+                <m> 1 + \cot^2\theta = \csc^2\theta</m>
               </p>
             </li>
             </ul>
@@ -215,7 +174,7 @@
       
     <introduction>
       <p>
-        Refer back to the unit circle to determine the exact value of <m>\sin\left( \pi + \frac{\pi}{2}\right)</m>. 
+        Refer back to the unit circle to determine the exact value of <m>\sin\left( \pi + \dfrac{\pi}{2}\right)</m>. 
       </p>
     </introduction>
     
@@ -238,7 +197,7 @@
     <task>
       <statement>
         <p>
-          What is the value of <m>\sin \frac{\pi}{2}</m>? 
+          What is the value of <m>\sin \left(\dfrac{\pi}{2}\right)</m>? 
           <ol marker= "A." cols="3">
             <li> <m>-1</m> </li>
             <li> <m>0</m> </li>
@@ -254,12 +213,12 @@
     <task>
       <statement>
         <p>
-          Based on your answers from parts (a) and (b), what do you think the value of <m>\sin\left( \pi + \frac{\pi}{2}\right)</m> is?
+          Based on your answers from parts (a) and (b), what do you think the value of <m>\sin\left( \pi + \dfrac{\pi}{2}\right)</m> is?
         </p>
       </statement>
       <answer>
         <p>
-          Students will probably make the conjecture that the value of <m>\sin\left( \pi + \frac{\pi}{2}\right)</m> is just <m>\sin \pi + \sin \left( \frac{\pi}{2} \right)</m>, which equals <m>1</m>.
+          Students will probably make the conjecture that the value of <m>\sin\left( \pi + \dfrac{\pi}{2}\right)</m> is just <m>\sin \pi + \sin \left( \dfrac{\pi}{2} \right)</m>, which equals <m>1</m>.
         </p>
       </answer>
     </task>
@@ -267,12 +226,12 @@
     <task>
       <statement>
         <p>
-          Let's test your conjecture from part (c). What is the value of <m>\pi + \frac{\pi}{2}</m>?
+          Let's test your conjecture from part (c). What is the value of <m>\pi + \dfrac{\pi}{2}</m>?
           <ol marker= "A." cols="2">
-            <li> <m>\frac{2\pi}{2}</m> </li>
+            <li> <m>\dfrac{2\pi}{2}</m> </li>
             <li> <m>\pi</m> </li>
-            <li> <m>\frac{3\pi}{2}</m> </li>
-          <li> <m>\frac{2\pi}{3}</m></li></ol>
+            <li> <m>\dfrac{3\pi}{2}</m> </li>
+          <li> <m>\dfrac{2\pi}{3}</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -285,7 +244,7 @@
     <task>
       <statement>
         <p>
-          What is the value of <m>\sin \left( \frac{3\pi}{2} \right)</m>?
+          What is the value of <m>\sin \left( \dfrac{3\pi}{2} \right)</m>?
           <ol marker= "A." cols="3">
             <li> <m>-1</m> </li>
             <li> <m>0</m> </li>
@@ -302,13 +261,13 @@
     <task>
       <statement>
         <p>
-          Is it safe to assume that <m>\sin\left( \pi + \frac{\pi}{2}\right) = \sin \pi + \sin \left( \frac{\pi}{2} \right)</m>?
+          Is it safe to assume that <m>\sin\left( \pi + \dfrac{\pi}{2}\right) = \sin \pi + \sin \left( \dfrac{\pi}{2} \right)</m>?
         </p>
       </statement>
       <answer>
         <p>
-          From the previous parts, students should see that <me>\sin \pi + \sin \frac{\pi}{2} = 1</me> and 
-          <me>\sin\left( \pi + \frac{\pi}{2}\right) = -1</me>. So from this example, we can see that it is NOT safe to assume that <m>\sin\left( \pi + \frac{\pi}{2}\right) = \sin \pi + \sin \left( \frac{\pi}{2} \right)</m>.
+          From the previous parts, students should see that <me>\sin \pi + \sin \dfrac{\pi}{2} = 1</me> and 
+          <me>\sin\left( \pi + \dfrac{\pi}{2}\right) = -1</me>. So from this example, we can see that it is NOT safe to assume that <m>\sin\left( \pi + \dfrac{\pi}{2}\right) = \sin \pi + \sin \left( \dfrac{\pi}{2} \right)</m>.
         </p>
       </answer>
     </task>
@@ -316,21 +275,60 @@
 
     <remark>
     <p>
-      Notice that in <xref ref="exploration-of-sum-formula"/>, we saw that <m>\sin\left( \pi + \frac{\pi}{2}\right) \neq \sin \pi + \sin \frac{\pi}{2}</m>. This is also true for both cosine and tangent as well - that is, if we want to find the cosine or tangent of the sum of two angles, we cannot assume that it is equal to the sum of the two trigonometric functions of each angle. For example, <m>\cos\left( \pi + \frac{\pi}{2}\right) \neq \cos \pi + \cos \frac{\pi}{2}</m> and <m>\tan\left( \pi + \frac{\pi}{2}\right) \neq \tan \pi + \tan \frac{\pi}{2}</m>. The same is true for finding the difference of two angles.
+      Notice that in <xref ref="exploration-of-sum-formula"/>, we saw that <m>\sin\left( \pi + \dfrac{\pi}{2}\right) \neq \sin \pi + \sin \dfrac{\pi}{2}</m>. This is also true for both cosine and tangent as well - that is, if we want to find the cosine or tangent of the sum of two angles, we cannot assume that it is equal to the sum of the two trigonometric functions of each angle. For example, <m>\cos\left( \pi + \dfrac{\pi}{2}\right) \neq \cos \pi + \cos \dfrac{\pi}{2}</m> and <m>\tan\left( \pi + \dfrac{\pi}{2}\right) \neq \tan \pi + \tan \dfrac{\pi}{2}</m>. The same is true for finding the difference of two angles.
       </p>
     </remark>
 
     <activity xml:id="derive-difference-formula-for-cosine">
       <introduction>
         <p>
-          Recall that the coordinates of points on the unit circle are given by <m>(\cos\theta, \sin\theta)</m>. In the unit circle shown below, point <m>P</m> makes an angle <m>\alpha</m> with the positive <m>x</m>-axis and has coordinates <m>(\cos\alpha, \sin\alpha)</m> and point <m>Q</m> makes an angle <m>\beta</m> with the positive <m>x</m>-axis and has coordinates <m>(\cos\beta, \sin\beta)</m>. Point <m>B</m> has coordinates <m>(1,0)</m>.
+          Recall that the coordinates of points on the unit circle are given by <m>(\cos\theta, \sin\theta)</m>. 
+          In the first unit circle shown below, point <m>P</m> makes an angle <m>\alpha</m> with the positive <m>x</m>-axis 
+          and has coordinates <m>(\cos\alpha, \sin\alpha)</m> and point <m>Q</m> makes an angle <m>\beta</m> with the 
+          positive <m>x</m>-axis and has coordinates <m>(\cos\beta, \sin\beta)</m>. 
+          In the second figure, the triangle is rotated so that point <m>B</m> has coordinates <m>(1,0)</m>.
         </p>
-        <p> 
-          <figure xml:id="unit-circle-with-alpha-and-beta">
-            <image source="Images/unit-circle-image-for-difference-formula.jpg"/>
-            <caption> Image of the unit circle used to derive the difference formula.</caption>
-          </figure>
-        </p>
+        <figure>
+          <sidebyside widths="50% 50%">
+          <image>
+            <sageplot>
+beta=pi/8
+alpha=3*pi/4
+q=plot([],aspect_ratio=1,ticks=[[],[]])
+q+=circle((0,0),1,color="#ddd")
+q+=line([(0,0),(cos(beta),sin(beta))],color="blue",thickness=2)
+q+=arc((0,0),0.2,sector=(0,beta),color="black")
+q+=text(r"$\beta$", (0.3*cos(beta/2),0.3*sin(beta/2)),color="black",fontsize=14)
+q+=line([(0,0),(cos(alpha),sin(alpha))],color="blue",thickness=2)
+q+=arc((0,0),0.15,sector=(0,alpha),color="black")
+q+=text(r"$\alpha$", (0.2*cos(alpha/2),0.2*sin(alpha/2)),color="black",fontsize=14)
+q+=line([(cos(beta),sin(beta)),(cos(alpha),sin(alpha))],color="blue",thickness=2)
+q+=text(r"$P$",(1.1*cos(alpha),1.1*sin(alpha)),color="black",fontsize=14)
+q+=text(r"$Q$",(1.1*cos(beta),1.1*sin(beta)),color="black",fontsize=14)
+q+=text(r"$O$",(-0.1,-0.1),color="black",fontsize=14)
+q
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+beta=pi/8
+alpha=3*pi/4
+p=plot([],aspect_ratio=1,ticks=[[],[]])
+p+=circle((0,0),1,color="#ddd")
+p+=line([(0,0),(cos(0),sin(0))],color="blue",thickness=2)
+p+=line([(0,0),(cos(alpha-beta),sin(alpha-beta))],color="blue",thickness=2)
+p+=arc((0,0),0.1,sector=(0,alpha-beta),color="black")
+p+=text(r"$\alpha-\beta$", (0.15*cos((alpha-beta)/2)+0.1,0.15*sin((alpha-beta)/2)),color="black",fontsize=14)
+p+=line([(cos(alpha-beta),sin(alpha-beta)),(cos(0),sin(0))],color="blue",thickness=2)
+p+=text(r"$A$",(1.1*cos(alpha-beta),1.1*sin(alpha-beta)),color="black",fontsize=14)
+p+=text(r"$B$",(1.1*cos(0),1.1*sin(0)+0.05),color="black",fontsize=14)
+p+=text(r"$O$",(-0.1,-0.1),color="black",fontsize=14)
+p
+            </sageplot>
+          </image>
+        </sidebyside>
+        <caption>Triangle <m>POQ</m> and its rotation clockwise by <m>\beta</m>, Triangle <m>AOB</m> </caption>
+        </figure>
       </introduction>
 
       <task>
@@ -500,18 +498,18 @@
     <activity xml:id="application-of-sum-formula">
       <introduction>
         <p>
-          Use the unit circle and <xref ref="thm-sum-and-difference-formulas"/> to find the exact value of <m>\cos75</m><degree/>.
+          Use the unit circle and <xref ref="thm-sum-and-difference-formulas"/> to find the exact value of <m>\cos75^\circ</m>. 
         </p>
       </introduction>
       <task>
         <statement>
           <p>
-            Split <m>75</m><degree/> into the sum of two angles which can be found on the unit circle (use unique angles such as <m>0</m><degree/>, <m>30</m><degree/>, <m>45</m><degree/>, <m>60</m><degree/>, <m>90</m><degree/>, and <m>180</m><degree/>, etc.).
+            Split <m>75^\circ</m> into the sum of two angles which can be found on the unit circle (use unique angles such as <m>0^\circ</m>, <m>30^\circ</m>, <m>45^\circ</m>, <m>60^\circ</m>, <m>90^\circ</m>, and <m>180^\circ</m>, etc.).
           </p>
         </statement>
         <answer>
           <p>
-            <m>30</m><degree/> and <m>45</m><degree/>
+            <m>30^\circ</m> and <m>45^\circ</m>
           </p>
         </answer>
       </task>
@@ -519,7 +517,7 @@
       <task>
         <statement>
           <p>
-            Rewrite <m>\cos75</m><degree/> as <m>\cos\left(\alpha+\beta\right)</m> where <m>\alpha</m> and <m>\beta</m> are the two angles you found in part (a).
+            Rewrite <m>\cos75^\circ</m> as <m>\cos\left(\alpha+\beta\right)</m> where <m>\alpha</m> and <m>\beta</m> are the two angles you found in part (a).
           </p>
         </statement>
         <answer>
@@ -532,7 +530,7 @@
       <task>
         <statement>
           <p>
-            Apply <xref ref="thm-sum-and-difference-formulas"/> to rewrite <m>\cos75</m><degree/> with four trigonometric functions.
+            Apply <xref ref="thm-sum-and-difference-formulas"/> to rewrite <m>\cos75^\circ</m> with four trigonometric functions.
           </p>
         </statement>
         <answer>
@@ -550,7 +548,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos75</m><degree/><m>=\left(\frac{\sqrt3}{2}\right)\left(\frac{\sqrt2}{2}\right) - \left(\frac{1}{2}\right) \left(\frac{\sqrt2}{2}\right)</m>
+            <m>\cos75^\circ=\left(\dfrac{\sqrt3}{2}\right)\left(\dfrac{\sqrt2}{2}\right) - \left(\dfrac{1}{2}\right) \left(\dfrac{\sqrt2}{2}\right)</m>
           </p>
         </answer>
       </task>
@@ -563,7 +561,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos75</m><degree/><m>=\frac{\sqrt6-\sqrt2}{4}</m>
+            <m>\cos75^\circ=\dfrac{\sqrt6-\sqrt2}{4}</m>
           </p>
         </answer>
       </task>
@@ -579,7 +577,7 @@
       <task>
         <statement>
           <p>
-            <m>\sin(45°- 30°) =  \sin45°- \sin30°</m>
+            <m>\sin(45^\circ- 30^\circ) =  \sin45^\circ- \sin30^\circ</m>
           </p>
         </statement>
         <answer>
@@ -592,7 +590,7 @@
       <task>
         <statement>
           <p>
-            <m>\cos15° = \cos60°\cos45° + \sin60°\sin45°</m>
+            <m>\cos15^\circ = \cos60^\circ\cos45^\circ + \sin60^\circ\sin45^\circ</m>
           </p>
         </statement>
         <answer>
@@ -605,12 +603,12 @@
       <task>
         <statement>
           <p>
-            <m>\tan 225° = \frac{\tan180° - \tan45°}{1+\tan180°\tan45°}</m>
+            <m>\tan 75^\circ = \dfrac{\tan120^\circ - \tan45^\circ}{1+\tan120^\circ\tan45^\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            False
+            True
           </p>
         </answer>
       </task>
@@ -627,12 +625,12 @@
       <task>
         <statement>
           <p>
-            <m>\sin165</m><degree/>
+            <m>\sin165^\circ</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt6-\sqrt2}{4}</m>
+            <m>\dfrac{\sqrt6-\sqrt2}{4}</m>
           </p>
         </answer>
       </task>
@@ -640,7 +638,7 @@
       <task>
         <statement>
           <p>
-            <m>\tan195</m><degree/>
+            <m>\tan195^\circ</m>
           </p>
         </statement>
         <answer>
@@ -653,12 +651,12 @@
       <task>
         <statement>
           <p>
-            <m>\cos\left(\frac{7\pi}{12}\right)</m>
+            <m>\cos\left(\dfrac{7\pi}{12}\right)</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt2-\sqrt6}{4}</m>
+            <m>\dfrac{\sqrt2-\sqrt6}{4}</m>
           </p>
         </answer>
       </task>
@@ -666,7 +664,7 @@
       <task>
         <statement>
           <p>
-            <m>\tan\left(\frac{11\pi}{12}\right)</m>
+            <m>\tan\left(\dfrac{11\pi}{12}\right)</m>
           </p>
         </statement>
         <answer>
@@ -687,12 +685,12 @@
       <task>
         <statement>
           <p>
-            <m>\cos87</m><degree/><m>\cos33</m><degree/><m>-\sin87</m><degree/><m>\sin33</m><degree/>
+            <m>\cos87^\circ\cos33^\circ-\sin87^\circ\sin33^\circ</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>-\frac{1}{2}</m>
+            <m>-\dfrac{1}{2}</m>
           </p>
         </answer>
       </task>
@@ -700,12 +698,12 @@
       <task>
         <statement>
           <p>
-            <m>\sin20</m><degree/><m>\cos80</m><degree/><m>-\cos20</m><degree/><m>\sin80</m><degree/>
+            <m>\sin20^\circ\cos80^\circ-\cos20^\circ\sin80^\circ</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>-\frac{\sqrt3}{2}</m>
+            <m>-\dfrac{\sqrt3}{2}</m>
           </p>
         </answer>
       </task>
@@ -713,7 +711,7 @@
       <task>
         <statement>
           <p>
-            <m>\sin\frac{\pi}{12}\cos\frac{5\pi}{12}+\sin\frac{5\pi}{12}\cos\frac{\pi}{12}</m>
+            <m>\sin\dfrac{\pi}{12}\cos\dfrac{5\pi}{12}+\sin\dfrac{5\pi}{12}\cos\dfrac{\pi}{12}</m>
           </p>
         </statement>
         <answer>
@@ -726,12 +724,12 @@
       <task>
         <statement>
           <p>
-            <m>\frac{\tan40°-\tan10°}{1+\tan40°\tan10°}</m>
+            <m>\dfrac{\tan40^\circ-\tan10^\circ}{1+\tan40^\circ\tan10^\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt3}{3}</m>
+            <m>\dfrac{\sqrt3}{3}</m>
           </p>
         </answer>
       </task>
@@ -767,7 +765,7 @@
         </statement>
         <answer>
           <p>
-            <m>\left(\cos\alpha+\alpha\right)=\cos\alpha\cos\alpha-\sin\alpha\sin\alpha</m>
+            <m>\cos\left(\alpha+\alpha\right)=\cos\alpha\cos\alpha-\sin\alpha\sin\alpha</m>
           </p>
           <p>
             <m>\cos(2\alpha)=\cos^2\alpha-sin^2\alpha</m>
@@ -807,17 +805,26 @@
                 <m>\cos(2\theta)=\cos^2\theta-\sin^2\theta=1-2\sin^2\theta=2\cos^2\theta-1</m>
             </li>
             <li>
-              <m>\tan(2\theta)=\frac{2\tan\theta}{1-\tan^2\theta}</m>
+              <m>\tan(2\theta)=\dfrac{2\tan\theta}{1-\tan^2\theta}</m>
             </li>
           </ul>
         </p>
       </statement>
     </theorem>
 
+    <observation>
+      <p>
+        You may have noticed that <m>\cos(2\theta)</m> has three different forms. This is because we can use Pythagorean Identities to obtain the other forms.
+      </p>
+      <p>
+        For example, suppose we start with <m>\cos(2\theta)=\cos^2\theta-\sin^2\theta</m>. We can substitute the first <m>\cos^2\theta</m> with <m>1-\sin^2\theta</m> (think about how you can rewrite the first Pythagorean Identity, <m>\cos^2\theta+\sin^2\theta=1</m>). We will then have <m>1-\sin^2\theta-\sin^2\theta</m>, which simplifies to <m>1-2\sin^2\theta</m>. Thus, <m>\cos(2\theta)=1-2\sin^2\theta</m>. Using the same method, you can get <m>2\cos^2\theta-1</m>.
+      </p>
+    </observation>
+
     <activity xml:id="application-of-double-angle-identity">
       <introduction>
         <p>
-          Suppose <m>\sin\alpha=\frac{2}{3}</m> and <m>\alpha</m> lies in Quadrant I.
+          Suppose <m>\sin\alpha=\dfrac{2}{3}</m> and <m>\alpha</m> lies in Quadrant I.
         </p>
       </introduction>
 
@@ -829,7 +836,7 @@
         </statement>
         <answer>
           <p>
-            Use <m>\sin^2\theta+\cos^2\theta=1</m> to find the value of <m>\cos\alpha</m>, which is equal to <m>\frac{\sqrt5}{3}</m>. Then, use the double angle formula to find that <m>\sin2\alpha=\frac{4\sqrt5}{9}</m>.
+            Use <m>\sin^2\theta+\cos^2\theta=1</m> to find the value of <m>\cos\alpha</m>, which is equal to <m>\dfrac{\sqrt5}{3}</m>. Then, use the double angle formula to find that <m>\sin2\alpha=\dfrac{4\sqrt5}{9}</m>.
           </p>
         </answer>
       </task>
@@ -842,7 +849,7 @@
         </statement>
         <answer>
           <p>
-            From part (a), we know that <m>\cos\alpha = \frac{\sqrt5}{3}</m> and <m>\sin\alpha = \frac{2}{3}</m>. So, by using the double angle formula <m>\cos^2\alpha - \sin^2\alpha</m>, we know that <m>\cos2\alpha = \frac{5}{9} - \frac{4}{9}</m>, which equals <m>\frac{1}{9}</m>.
+            From part (a), we know that <m>\cos\alpha = \dfrac{\sqrt5}{3}</m> and <m>\sin\alpha = \dfrac{2}{3}</m>. So, by using the double angle formula <m>\cos^2\alpha - \sin^2\alpha</m>, we know that <m>\cos2\alpha = \dfrac{5}{9} - \dfrac{4}{9}</m>, which equals <m>\dfrac{1}{9}</m>.
           </p>
         </answer>
       </task>
@@ -855,7 +862,7 @@
         </statement>
         <answer>
           <p>
-            From part (a), we know that <m>\cos\alpha = \frac{\sqrt5}{3}</m> and <m>\sin\alpha = \frac{2}{3}</m>. So, <m>\tan\alpha = \frac{\frac{2}{3}}{\frac{\sqrt5}{3}}</m>, which is equal to <m>\frac{2}{\sqrt5}</m>. By using the double angle formula <m>\frac{2\tan\alpha}{1-\tan^2\alpha}</m>, we know that <m>\tan2\alpha = \frac{\frac{4}{\sqrt5}}{1-\frac{4}{5}}</m>, which equals <m>-4\sqrt5</m>.
+            From part (a), we know that <m>\cos\alpha = \dfrac{\sqrt5}{3}</m> and <m>\sin\alpha = \dfrac{2}{3}</m>. So, <m>\tan\alpha = \dfrac{\dfrac{2}{3}}{\dfrac{\sqrt5}{3}}</m>, which is equal to <m>\dfrac{2}{\sqrt5}</m>. By using the double angle formula <m>\dfrac{2\tan\alpha}{1-\tan^2\alpha}</m>, we know that <m>\tan2\alpha = \dfrac{\dfrac{4}{\sqrt5}}{1-\dfrac{4}{5}}</m>, which equals <m>4\sqrt5</m>.
           </p>
         </answer>
       </task>
@@ -877,7 +884,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sin^2\theta=\frac{1-\cos2\theta}{2}</m>
+            <m>\sin^2\theta=\dfrac{1-\cos2\theta}{2}</m>
           </p>
         </answer>
       </task>
@@ -890,7 +897,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos^2\theta=\frac{1+\cos2\theta}{2}</m>
+            <m>\cos^2\theta=\dfrac{1+\cos2\theta}{2}</m>
           </p>
         </answer>
       </task>
@@ -898,12 +905,12 @@
       <task>
         <statement>
           <p>
-            To generate the power reduction formula for tangent, let's begin with its definition: <m>\tan^2\theta=\frac{\sin^2\theta}{\cos^2\theta}</m>. Use the formulas you created in parts (a) and (b) to rewrite <m>\tan^2\theta</m>.
+            To generate the power reduction formula for tangent, let's begin with its definition: <m>\tan^2\theta=\dfrac{\sin^2\theta}{\cos^2\theta}</m>. Use the formulas you created in parts (a) and (b) to rewrite <m>\tan^2\theta</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>\tan^2\theta=\frac{1-\cos2\theta}{1+cos2\theta}</m>
+            <m>\tan^2\theta=\dfrac{1-\cos2\theta}{1+\cos2\theta}</m>
           </p>
         </answer>
       </task>
@@ -917,17 +924,17 @@
         <ul>
           <li>
             <p>
-              <m>\sin^2\theta=\frac{1-\cos2\theta}{2}</m>
+              <m>\sin^2\theta=\dfrac{1-\cos2\theta}{2}</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\cos^2\theta=\frac{1+\cos2\theta}{2}</m>
+              <m>\cos^2\theta=\dfrac{1+\cos2\theta}{2}</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\tan^2\theta=\frac{1-\cos2\theta}{1+\cos2\theta}</m>
+              <m>\tan^2\theta=\dfrac{1-\cos2\theta}{1+\cos2\theta}</m>
             </p>
           </li>
         </ul>
@@ -938,7 +945,7 @@
 
       <introduction>
         <p>
-          Rewrite <m>\sin^4\beta</m> as an expression without powers greater than one using.
+          Rewrite <m>\sin^4\beta</m> as an expression without powers greater than one.
         </p>
       </introduction> 
 
@@ -963,7 +970,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sin^4\beta=\left(\frac{1-\cos2\beta}{2}\right)^2</m>
+            <m>\sin^4\beta=\left(\dfrac{1-\cos2\beta}{2}\right)^2</m>
           </p>
         </answer>
       </task>
@@ -976,7 +983,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sin^4\beta=\frac{1-2\cos2\beta+\cos^22\beta}{4}</m>
+            <m>\sin^4\beta=\dfrac{1-2\cos2\beta+\cos^22\beta}{4}</m>
           </p>
         </answer>
       </task>
@@ -989,7 +996,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{2-4\cos\beta+1+\cos4\beta}{8}</m> or <m>\frac{3-4\cos2\beta+\cos4\beta}{8}</m>
+            <m>\dfrac{2-4\cos\beta+1+\cos4\beta}{8}</m> or <m>\dfrac{3-4\cos2\beta+\cos4\beta}{8}</m>
           </p>
         </answer> 
       </task>
@@ -998,19 +1005,19 @@
     <activity xml:id="deriving-half-angle-formulas">
       <introduction>
         <p>
-          The next set of identities is the set of half-angle formulas, which can be derived from the reduction formulas. Let's derive the half-angle formula for <m>\sin\frac{\theta}{2}</m>.
+          The next set of identities is the set of half-angle formulas, which can be derived from the reduction formulas. Let's derive the half-angle formula for <m>\sin\dfrac{\theta}{2}</m>.
         </p>
       </introduction>
 
       <task>
         <statement>
           <p>
-            Recall the power reduction formula: <m>\sin^2\theta=\frac{1-\cos2\theta}{2}</m>. Replace <m>\theta</m> with <m>\frac{\theta}{2}</m>.
+            Recall the power reduction formula: <m>\sin^2\theta=\dfrac{1-\cos2\theta}{2}</m>. Replace <m>\theta</m> with <m>\dfrac{\theta}{2}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin^2\left(\frac{\theta}{2}\right)=\frac{1-\cos2\left(\frac{\theta}{2}\right)}{2}</m>
+            <m>\sin^2\left(\dfrac{\theta}{2}\right)=\dfrac{1-\cos2\left(\dfrac{\theta}{2}\right)}{2}</m>
           </p>
         </answer>
       </task>
@@ -1023,7 +1030,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sin^2\left(\frac{\theta}{2}\right)=\frac{1-\cos\theta}{2}</m>
+            <m>\sin^2\left(\dfrac{\theta}{2}\right)=\dfrac{1-\cos\theta}{2}</m>
           </p>
         </answer>
       </task>
@@ -1036,7 +1043,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{\theta}{2}\right)=\pm\sqrt{\frac{1-\cos\theta}{2}}</m>
+            <m>\sin\left(\dfrac{\theta}{2}\right)=\pm\sqrt{\dfrac{1-\cos\theta}{2}}</m>
           </p>
         </answer>
       </task>
@@ -1044,7 +1051,7 @@
 
     <remark>
     <p>
-      The derivation for <m>\cos\left(\frac{\theta}{2}\right)</m> and <m>\tan\left(\frac{\theta}{2}\right)</m> is similar to that in <xref ref="deriving-half-angle-formulas"/> when starting with the power-reduction formulas for each trigonometric function.
+      The derivation for <m>\cos\left(\dfrac{\theta}{2}\right)</m> and <m>\tan\left(\dfrac{\theta}{2}\right)</m> is similar to that in <xref ref="deriving-half-angle-formulas"/> when starting with the power-reduction formulas for each trigonometric function.
     </p>
     </remark>
 
@@ -1055,17 +1062,17 @@
           <ul>
             <li>
               <p>
-                <m>\sin\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{2}}</m> or <m>\sin\frac{\theta}{2}=-\sqrt{\frac{1-\cos\theta}{2}}</m> depending on which quadrant <m>\theta</m> is in.
+                <m>\sin\dfrac{\theta}{2}=\sqrt{\dfrac{1-\cos\theta}{2}}</m> or <m>\sin\dfrac{\theta}{2}=-\sqrt{\dfrac{1-\cos\theta}{2}}</m> depending on which quadrant <m>\theta</m> is in.
               </p>
             </li>
             <li>
               <p>
-                <m>\cos\frac{\theta}{2}=\sqrt{\frac{1+\cos\theta}{2}}</m> or <m>\cos\frac{\theta}{2}=-\sqrt{\frac{1+\cos\theta}{2}}</m> depending on which quadrant <m>\theta</m> is in.
+                <m>\cos\dfrac{\theta}{2}=\sqrt{\dfrac{1+\cos\theta}{2}}</m> or <m>\cos\dfrac{\theta}{2}=-\sqrt{\dfrac{1+\cos\theta}{2}}</m> depending on which quadrant <m>\theta</m> is in.
               </p>
             </li>
             <li>
               <p>
-                <m>\tan\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m> or <m>\tan\frac{\theta}{2}=-\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}=\frac{1-\cos\theta}{\sin\theta}</m> depending on which quadrant <m>\theta</m> is in.
+                <m>\tan\dfrac{\theta}{2}=\sqrt{\dfrac{1-\cos\theta}{1+\cos\theta}}=\dfrac{\sin\theta}{1+\cos\theta}=\dfrac{1-\cos\theta}{\sin\theta}</m> or <m>\tan\dfrac{\theta}{2}=-\sqrt{\dfrac{1-\cos\theta}{1+\cos\theta}}=\dfrac{\sin\theta}{1+\cos\theta}=\dfrac{1-\cos\theta}{\sin\theta}</m> depending on which quadrant <m>\theta</m> is in.
               </p>
             </li>
           </ul>
@@ -1076,14 +1083,14 @@
     <activity xml:id="half-angle-example">
       <introduction>
         <p>
-          Find  <m>\sin15°</m> using a half-angle formula in <xref ref="thm-half-angle-formulas"/>.
+          Find  <m>\sin15^\circ</m> using a half-angle formula in <xref ref="thm-half-angle-formulas"/>.
         </p>
       </introduction>
 
       <task>
         <statement>
           <p>
-            Which quadrant is the angle <m>15</m><degree/> in?
+            Which quadrant is the angle <m>15^\circ</m> in?
           </p>
         </statement>
         <answer>
@@ -1096,12 +1103,12 @@
       <task>
         <statement>
           <p>
-            What angle is <m>15</m><degree/> half of?
+            What angle is <m>15^\circ</m> half of?
           </p>
         </statement>
         <answer>
           <p>
-            <m>30</m><degree/>
+            <m>30^\circ</m>
           </p>
         </answer>
       </task>
@@ -1109,12 +1116,12 @@
       <task>
         <statement>
           <p>
-            Which half angle formula should we use to determine <m>\sin15°</m>?
+            Which half angle formula should we use to determine <m>\sin15^\circ</m>?
           </p>
         </statement>
         <answer>
           <p>
-            Because the angle <m>15</m><degree/> lies in Quadrant I, we should use the formula: <m>\sin\frac{\theta}{2}=\sqrt{\frac{1-\cos\theta}{2}}</m>. 
+            Because the angle <m>15^\circ</m> lies in Quadrant I, we should use the formula: <m>\sin\dfrac{\theta}{2}=\sqrt{\dfrac{1-\cos\theta}{2}}</m>. 
           </p>
         </answer>
       </task>
@@ -1122,12 +1129,12 @@
       <task>
         <statement>
           <p>
-            Substitute <m>\theta</m> with <m>30</m><degree/> in the half-angle formula for sine.
+            Substitute <m>\theta</m> with <m>30^\circ</m> in the half-angle formula for sine.
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{1-\cos30}{2}}</m>
+            <m>\sin\left(\dfrac{30^\circ}{2}\right)=\sqrt{\dfrac{1-\cos30^\circ}{2}}</m>
           </p>
         </answer>
       </task>
@@ -1135,12 +1142,12 @@
       <task>
         <statement>
           <p>
-            Use the unit circle to find the exact value of <m>\cos30</m><degree/> and substitute that into the equation you got in part (d).
+            Use the unit circle to find the exact value of <m>\cos30^\circ</m> and substitute that into the equation you got in part (d).
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{1-\frac{\sqrt3}{2}}{2}}</m>
+            <m>\sin\left(\dfrac{30^\circ}{2}\right)=\sqrt{\dfrac{1-\dfrac{\sqrt3}{2}}{2}}</m>
           </p>
         </answer>
       </task>
@@ -1148,18 +1155,18 @@
       <task>
         <statement>
           <p>
-            Simplify your equation in part (e) to find the exact value of <m>\sin\left(\frac{30}{2}\right)</m>.
+            Simplify your equation in part (e) to find the exact value of <m>\sin15^\circ</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{\frac{2-\sqrt{3}}{2}}{2}}</m>
+            <m>\sin\left(\dfrac{30^\circ}{2}\right)=\sqrt{\dfrac{\dfrac{2-\sqrt{3}}{2}}{2}}</m>
           </p>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\sqrt{\frac{2-\sqrt{3}}{4}}</m>
+            <m>\sin\left(\dfrac{30^\circ}{2}\right)=\sqrt{\dfrac{2-\sqrt{3}}{4}}</m>
           </p>
           <p>
-            <m>\sin\left(\frac{30}{2}\right)=\frac{\sqrt{2-\sqrt{3}}}{2}</m> 
+            <m>\sin\left(\dfrac{30^\circ}{2}\right)=\dfrac{\sqrt{2-\sqrt{3}}}{2}</m> 
           </p>
         </answer>
       </task>
@@ -1176,12 +1183,12 @@
       <task>
         <statement>
           <p>
-            <m>\cos75°</m> 
+            <m>\cos75^\circ</m> 
           </p>
         </statement>
         <answer>
           <p>
-            <m>\cos75°=\cos\left(\frac{150}{2}\right)=-\frac{\sqrt{2-\sqrt{3}}}{2}</m> 
+            <m>\cos75^\circ=\cos\left(\dfrac{150^\circ}{2}\right)=-\dfrac{\sqrt{2-\sqrt{3}}}{2}</m> 
           </p>
         </answer>
       </task>
@@ -1189,12 +1196,12 @@
       <task>
         <statement>
           <p>
-            <m>\sin165°</m> 
+            <m>\sin165^\circ</m> 
           </p>
         </statement>
         <answer>
           <p>
-            <m>\sin165°=\sin\left(\frac{330}{2}\right)=\frac{\sqrt{2-\sqrt{3}}}{2}</m>  
+            <m>\sin165^\circ=\sin\left(\dfrac{330^\circ}{2}\right)=\dfrac{\sqrt{2-\sqrt{3}}}{2}</m>  
           </p>
         </answer>
       </task>

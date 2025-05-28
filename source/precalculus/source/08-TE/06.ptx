@@ -21,7 +21,7 @@
     <activity xml:id="right-triangles-1">
       <introduction>
         <p>
-          A pilot signals to an air traffic controller that she wants to land. She wants to know what angle of fall to take when she is currently at <m>40{,}000</m> feet. Her plane is <m>750{,}000</m> feet from the runway, as the air traffic controller can see on the radar.
+          A pilot signals to an air traffic controller that she wants to land. She wants to know what angle of descent to take when she is currently at <m>40{,}000</m> feet. Her plane is a horizontal distance of <m>750{,}000</m> feet from the runway, as the air traffic controller can see on the radar.
         </p>
       </introduction>
       <task>
@@ -40,7 +40,7 @@
       <task>
         <statement>
           <p>
-            The pilot wants to know what angle of descent to take in order to reach the runway. Where is this angle located in your diagram?
+            The pilot wants to know what angle of descent to take in order to reach the runway. The angle of descent is the angle between the flight path and the ground. In other words, it is an angle that is formed by the horizontal line and the pilot's line of sight to the runway. Where is this angle located in your diagram?
           </p>
         </statement>
         <answer>
@@ -128,7 +128,17 @@
         </p>
         <p> 
           <figure xml:id="angle-of-elevation-and-depression">
-            <image source="Images/depression-elevation-angle.jpg"/>
+            <image>
+              <sageplot>
+p=line([(0,8),(10,8),(0,0),(10,0)],color="black",thickness=3)
+p+=arc((0,0),1,sector=(0, arctan(8/10)),color="black")             
+p+=arc((10,8),1,sector=(pi, pi+arctan(8/10)),color="black")
+p+=text("Angle of elevation",(3,0.5),color="black",fontsize=16)
+p+=text("Angle of depression",(6.5,7.5),color="black",fontsize=16)
+p.axes(False)
+p
+              </sageplot>
+            </image>
             <caption> The angle of elevation and the angle of depression are congruent.</caption>
           </figure>
         </p>
@@ -141,7 +151,7 @@
     <activity xml:id="right-triangles-2">
       <introduction>
         <p>
-          An observer is standing <m>67</m> meters away from the Seattle Space Needle.
+          An observer who is <m>1.5</m> meters tall is standing <m>67</m> meters away from the Seattle Space Needle.
         </p>
       </introduction>
       
@@ -177,9 +187,14 @@
             How tall is the Space Needle (to the nearest meter)?
           </p>
         </statement>
+        <hint>
+          <p>
+            Don't forget to account for the height of the observer!
+          </p>
+        </hint>
         <answer>
           <p>
-            Approximately <m>184</m> meters.
+            Approximately <m>185.5</m> meters.
           </p>
         </answer>
       </task>
@@ -194,7 +209,7 @@
       <task>
         <statement>
           <p>
-            Sarah's kite is flying above a field at the end of <m>65</m> meters of string. If the angle of elevation to the kite measures <m>70</m>, how high is the kite above Sarah's head?  
+            Sarah's kite is flying above a field at the end of <m>65</m> meters of string. If the angle of elevation to the kite measures <m>70</m><degree/>, how high is the kite above Sarah's head?  
           </p>
         </statement>
         <answer>
@@ -229,6 +244,19 @@
           </p>
         </answer>
       </task>
+
+      <task>
+        <statement>
+          <p>
+            A submarine starts on the surface, and dives at an angle of <m>13</m><degree/> to the surface. It goes diagonally a distance of <m>890</m> meters before reaching the bottom. How far is it along the ocean surface from the point where the submarine started to the point directly above where it reached the bottom?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Approximately <m>867</m> meters.
+          </p>
+        </answer>
+      </task>
     </activity>
 
     <remark>
@@ -240,7 +268,7 @@
     <activity xml:id="law-of-sines-example">
       <introduction>
         <p>
-          Airplane A is flying directly towards the airport which is <m>20</m> miles away. The pilot notices Airplane B <m>45</m> degrees to her right. Airplane B is also flying directly towards the airport. The pilot of Airplane B calculates that Airplane A is <m>50</m> degrees to his left.
+          Airplane A is flying directly towards the airport which is <m>20</m> miles away. From Airplane A's point of view, the angle between the airport and Airplane B is <m>45</m><degree/> and from Airplane B's point of view, the angle between the airport and Airplane A is <m>50</m><degree/>.
         </p>
       </introduction>
       <task>
@@ -280,12 +308,25 @@
         </statement>
         <hint>
           <p>
-            It might be helpful to label your triangle in terms of A, B, and C for the angles and a, b, and c for the sides of the triangle.
+            It might be helpful to label your triangle in terms of C, J, and T for the angles and c, j, and t for the sides of the triangle.
           </p>
         </hint>
         <answer>
           <p>
-            In their diagram, students should see that this is a non-right triangle with all three sides given.
+            In their diagram, students should draw a triangle with all three sides labeled with the side lengths <m>153</m>, <m>201</m>, and <m>175</m>.
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What type of triangle represents this situation? How can you determine whether this triangle is a right triangle?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Students might try to use the Pythagorean Theorem to determine if this is a right triangle. After some time, students should see that this is a non-right triangle with all three sides given.
           </p>
         </answer>
       </task>
@@ -364,7 +405,7 @@
         </statement>
         <answer>
           <p>
-            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the maximum value <m>d(t)</m> is <m>2+ \frac{1}{2}</m>, or <m>2.5</m> meters deep at high tide.
+            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{\pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the maximum value <m>d(t)</m> is <m>2+ \frac{1}{2}</m>, or <m>2.5</m> meters deep at high tide.
           </p>
         </answer>
       </task>
@@ -377,7 +418,7 @@
         </statement>
         <answer>
           <p>
-            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the minimum value <m>d(t)</m> is <m>2- \frac{1}{2}</m>, or <m>1.5</m> meters deep at low tide.
+            Given that the amplitude of <m>\frac{1}{2}\sin{\frac{\pi}{6}}t</m> is <m>\frac{1}{2}</m>, the function will always be between <m>\frac{1}{2}</m> and <m>-\frac{1}{2}</m>. So, the minimum value <m>d(t)</m> is <m>2- \frac{1}{2}</m>, or <m>1.5</m> meters deep at low tide.
           </p>
         </answer>
       </task>
@@ -390,7 +431,7 @@
         </statement>
         <answer>
           <p>
-            This is really asking for the period. The period of a sine function is <m>\frac{2pi}{b}</m>. In the equation given, the <m>b</m> value is <m>\frac{pi}{6}</m>. Therefore, the period is <m>\frac{2pi}{\frac{pi}{6}}</m>, which is equal to <m>12</m>. So, the time between successive high tides is <m>12</m> hours. 
+            This is really asking for the period. The period of a sine function is <m>\frac{2\pi}{b}</m>. In the equation given, the <m>b</m> value is <m>\frac{\pi}{6}</m>. Therefore, the period is <m>\frac{2\pi}{\frac{\pi}{6}}</m>, which is equal to <m>12</m>. So, the time between successive high tides is <m>12</m> hours. 
           </p>
         </answer>
       </task>
@@ -432,7 +473,7 @@
       <task>
         <statement>
           <p>
-            What is the period of the function <m>h(t)</m>, the height of the carriage <m>t</m> minutes after it has started moving?
+            Let <m>h(t)</m> be a function that represents the height of the carriage <m>t</m> minutes after it has started moving. What is the period of <m>h(t)</m>?
           </p>
         </statement>
         <answer>

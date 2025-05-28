@@ -3,8 +3,8 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {},
 
-  // Comment or uncomment lines below if you don't or do need that feature.
   "postCreateCommand": "bash scripts/setup.sh",
+  "postAttachCommand": "bash scripts/download-cache.sh",
 
   // Port forwarding
   // ---------------

@@ -27,22 +27,7 @@ future boot-ups of your Codespace will be ready to show live previews instantly.
 ### Live CodeChat Previews
 
 Once this software is installed, you can edit a book with live previews
-by first opening the appropriate file:
-
-- Calculus: [`codechat_config_calculus.yaml`](codechat_config_calculus.yaml)
-- Precalculus: [`codechat_config_precalculus.yaml`](codechat_config_precalculus.yaml)
-- Linear Algebra: [`codechat_config_linear_algebra.yaml`](codechat_config_linear_algebra.yaml)
-
-Copy its entire contents (`Ctrl`+`A` then `Ctrl`+`C`), then open and overwrite *ALL* the contents of
-the [`codechat_config.yaml`](codechat_config.yaml) file (`Ctrl`+`A` then `Ctrl`+`V`).
-
-> Alternatively, open a terminal and run this command to copy eveything for you.
-> 
-> - Calculus: `cp codechat_config_calculus.yaml codechat_config.yaml`
-> - Precalculus: `cp codechat_config_precalculus.yaml codechat_config.yaml`
-> - Linear Algebra: `cp codechat_config_linear_algebra.yaml codechat_config.yaml`
-
-Then select "Preview file with CodeChat" from the PreTeXt menu in the bottom toolbar.
+by selecting "Preview file with CodeChat" from the PreTeXt menu in the bottom toolbar.
 You will now be able to see live previews of most `.ptx` files for that book in a side panel.
 
 ### Learn more
