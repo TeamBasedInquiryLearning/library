@@ -27,15 +27,30 @@ jobs:
                 bash scripts/setup.sh
                 bash scripts/download-cache.sh
 
-            - name: Build and stage preview target
+            - name: Build precalculus activities
               run: |
                 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
                 conda activate sage
-                pretext build -g
-                pretext deploy --stage-only
+                pretext build -g precalculus-web-instructor
 
-            - name: Stage updated cache
-              run: bash scripts/stage-cache.sh
+            - name: Build calculus activities
+              run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                pretext build -g calculus-web-instructor
+
+            - name: Build linear algebra activities
+              run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                pretext build -g linear-algebra-web-instructor
+
+            - name: Stage builds and updated cache
+              run: |
+                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
+                conda activate sage
+                pretext deploy --stage-only
+                bash scripts/stage-cache.sh
 
             - name: build and stage banks
               run: |

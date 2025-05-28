@@ -24,7 +24,7 @@ def main(book:str, full:bool, sandbox=False, stage=True):
     b.build_viewer(with_cache=True)
 
     if stage:
-        stage_path = base_path / "output" / "stage" / "preview" / "exercises" / book
+        stage_path = base_path / "output" / "stage" / "preview" / book / "exercises"
         print(f"Staging bank at `{stage_path}`")
         # stage bank
         shutil.copytree(
