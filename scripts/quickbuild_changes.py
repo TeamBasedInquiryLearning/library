@@ -34,7 +34,7 @@ def main():
         t = p.get_target(f"{b}-web-instructor")
         if len(xml_ids) > 0:
             print(f"Building book `{b}`, skipping images")
-            path = f"/preview/{b}/instructor"
+            path = f"/preview/{b}"
             t.build(xmlid=None, no_knowls=True, generate=False)
             preview_links.append({
                 "file": Path("source", b),
