@@ -1,5 +1,6 @@
 class Generator(BaseGenerator):
     def data(self):
+
         x = var("x")
         y = var("y")
         f="f"

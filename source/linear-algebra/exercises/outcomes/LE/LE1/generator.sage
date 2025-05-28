@@ -3,6 +3,7 @@ TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
+
         # create a 3x5 or 4x4 matrix
         rows = randrange(3,5)
         columns = 8-rows
