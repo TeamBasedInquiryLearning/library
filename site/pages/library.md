@@ -43,14 +43,14 @@ Previews of upcoming editions of our library are available to the public,
 but be warned - these are under active development and can change at any time!
 
 - Precalculus
-    - [Activities](../preview/part-precalculus.html)
-    - [Exercises](../preview/exercises/precalculus)
+    - [Activities](../preview/precalculus/)
+    - [Exercises](../preview/precalculus/exercises/)
 - Calculus
-    - [Activities](../preview/part-calculus.html)
-    - [Exercises](../preview/exercises/calculus)
+    - [Activities](../preview/calculus/)
+    - [Exercises](../preview/calculus/exercises/)
 - Linear Algebra
-    - [Activities](../preview/part-linear-algebra.html)
-    - [Exercises](../preview/exercises/linear-algebra)
+    - [Activities](../preview/linear-algebra/)
+    - [Exercises](../preview/linear-algebra/exercises/)
 
 ---
 

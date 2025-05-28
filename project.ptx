@@ -5,8 +5,7 @@
     <target
       name="authoring-preview"
       format="html"
-      publication="preview.ptx"
-      deploy-dir="preview" >
+      publication="preview.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -26,7 +25,8 @@
       name="precalculus-web-instructor"
       format="html"
       source="precalculus/source/main.ptx"
-      publication="instructor.ptx" >
+      publication="instructor.ptx"
+      deploy-dir="preview/precalculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -62,7 +62,8 @@
       name="calculus-web-instructor"
       format="html"
       source="calculus/source/main.ptx"
-      publication="instructor.ptx" >
+      publication="instructor.ptx"
+      deploy-dir="preview/calculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -98,7 +99,8 @@
       name="linear-algebra-web-instructor"
       format="html"
       source="linear-algebra/source/main.ptx"
-      publication="instructor.ptx" >
+      publication="instructor.ptx"
+      deploy-dir="preview/linear-algebra" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
