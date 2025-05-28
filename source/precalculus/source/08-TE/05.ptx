@@ -14,7 +14,7 @@
 
     <remark>
       <p>
-        In <xref ref="TR3"/> and <xref ref="TR4"/>, we learned how to solve right triangles (and special right triangles) using trigonometric ratios. In this section, we will learn how to solve oblique (non-right triangles).
+        In <xref ref="TR4"/> and <xref ref="TE4"/>, we learned how to solve right triangles (and special right triangles) using trigonometric ratios. In this section, we will learn how to solve oblique (non-right triangles).
       </p>
     </remark>
 
@@ -22,7 +22,7 @@
 
     <introduction>
       <p>
-        Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>.
+        Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>. By drawing the altitude, we've now created two right triangles. If we label the point where the altitude intersects <m>C</m> as point <m>D</m>, then we can call the triangles <m>ACD</m> and <m>BCD</m>. 
         <figure xml:id="Law-of-Sines-Triangle">
           <image>
           <sageplot>
@@ -39,6 +39,7 @@ p += line( [(4,-0.15), (4,-0.05)], color="black")
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$D$", (0.1,-0.4), color="black", fontsize=24)
 p.axes(False)
 p
           </sageplot>
@@ -109,8 +110,8 @@ p
       </statement>
       <answer>
         <p>
-          <m>\frac{\sin A}{a}=\frac{\sin B}{b}</m> or <m>\frac{a}{\sin A}=\frac{b}{\sin B}</m>
-        </p>
+          <me>\dfrac{\sin A}{a}=\frac{\sin B}{b}</me> or <me>\dfrac{a}{\sin A}=\frac{b}{\sin B}</me>
+        </p> 
       </answer>
     </task>
     </activity>
@@ -150,19 +151,37 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m> where <m>A=35</m><degree/>, <m>B=25</m><degree/>, and <m>a=10</m>.
+        Suppose you are given triangle <m>ABC</m> where <m>A=35</m><degree/>, <m>B=25</m><degree/>, and <m>a=10</m> as shown in the figure below.
+        <figure xml:id="AAS-Triangle"> 
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a=10$", (2.5,1.8),color="black",fontsize=24)
+p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
+p += text("$c$", (1, -0.1), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$25^\circ$", (3.3,.2), color="black", fontsize=20)
+p += text("$35^\circ$", (-1.5,.2), color="black", fontsize=20)
+p.axes(False)
+p 
+          </sageplot>
+          </image>
+        </figure>
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
-          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+          What parts of the triangle are missing?
         </p>
       </statement>
       <answer>
         <p>
-          Students should be able to draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>C</m>, <m>b</m>, and <m>c</m>.
+          The following parts of the triangle are missing: <m>C</m>, <m>b</m>, and <m>c</m>.
         </p>
       </answer>
     </task>
@@ -179,6 +198,9 @@ p
           </ol>
         </p>
       </statement>
+      <hint>
+        The sum of the angles of a triangle is <m>180</m><degree/>.
+      </hint>
       <answer>
         <p>
           D
@@ -194,7 +216,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>\frac{\sin 35^\circ}{10}=\frac{\sin 120^\circ}{c}</m> or <m>\frac{10}{\sin 35^\circ}=\frac{c}{\sin 120^\circ}</m>
+          <me>\dfrac{\sin 35^\circ}{10}=\dfrac{\sin 120^\circ}{c}</me> or <me>\dfrac{10}{\sin 35^\circ}=\dfrac{c}{\sin 120^\circ}</me>
         </p>
       </answer>
     </task>
@@ -202,7 +224,7 @@ p
     <task>
       <statement>
         <p>
-          Solve the proportion you got in part (c) and solve for <m>c</m>. What is the value of <m>c</m> to the nearest tenth?
+          Solve for <m>c</m> from the proportion you got in part (c). What is the value of <m>c</m> to the nearest tenth?
           <ol marker= "A." cols="4">
             <li><m>8.7</m></li>
             <li><m>6.6</m></li>
@@ -223,9 +245,9 @@ p
         <p>
           We now have side <m>b</m> left to find. Which method would be the best method to find <m>b</m>?
           <ol marker= "A." cols="1">
-            <li>Use the Law of Sines again using side <m>c</m>.</li>
-            <li>Pythagorean Theorem</li>
-            <li>Use the Law of Sines again with angle <m>B</m>.</li>
+            <li>Use the Law of Sines again with angle <m>B</m>, angle <m>C</m>, and side <m>c</m>.</li>
+            <li>Use the Pythagorean Theorem</li>
+            <li>Use the Law of Sines again with angle <m>A</m>, side <m>a</m>, and angle <m>B</m>.</li>
           </ol>
         </p>
       </statement>
@@ -258,7 +280,7 @@ p
 
     <remark>
       <p>
-        The triangle you just drew in <xref ref="solving-a-AAS-triangle"/> is known as an AAS triangle, which means we know two angles and one side (which is NOT between the angles). This is just one type of triangle you might see when solving oblique triangles. The next activity will show another type of triangle you might encounter.
+        The triangle in <xref ref="solving-a-AAS-triangle"/> is known as an <m>AAS</m> (Angle-Angle-Side) triangle, which means we know two angles and one side (which is NOT between the angles) in that order. This is just one type of triangle you might see when solving oblique triangles. The next activity will show another type of triangle you might encounter.
       </p>
     </remark>
 
@@ -266,19 +288,37 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m> where <m>A=76</m><degree/>, <m>B=34</m><degree/>, and <m>c=9</m>.
+        Suppose you are given triangle <m>ABC</m> where <m>A=76</m><degree/>, <m>B=34</m><degree/>, and <m>c=9</m> as shown in the figure below.
+        <figure xml:id="ASA-Triangle"> 
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a$", (2,1.8),color="black",fontsize=24)
+p += text("$b$", (-1.2, 1.6), color="black",fontsize=24)
+p += text("$c=9$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$34^\circ$", (3.3,.2), color="black", fontsize=20)
+p += text("$76^\circ$", (-1.5,.2), color="black", fontsize=20)
+p.axes(False)
+p 
+          </sageplot>
+          </image>
+        </figure>
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
-          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+          What parts of the triangle are missing?
         </p>
       </statement>
       <answer>
         <p>
-          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>C</m>, <m>a</m>, and <m>b</m>.
+          The following parts of the triangle are missing: <m>C</m>, <m>a</m>, and <m>b</m>.
         </p>
       </answer>
     </task>
@@ -288,10 +328,10 @@ p
         <p>
           What is the value of <m>C</m>?
           <ol marker= "A." cols="4">
-            <li><m>70</m><degree/></li>
-            <li><m>110</m><degree/></li>
-            <li><m>104</m><degree/></li>
-            <li><m>146</m><degree/></li>
+            <li><m>70^\circ</m></li>
+            <li><m>110^\circ</m></li>
+            <li><m>104^\circ</m></li>
+            <li><m>146^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -315,7 +355,9 @@ p
         </p>
       </statement>
       <answer>
-        B
+        <p>
+          B
+        </p>
       </answer>
     </task>
 
@@ -332,14 +374,16 @@ p
         </p>
       </statement>
       <answer>
+        <p>
         D
+        </p>
       </answer>
     </task>
     </activity>
 
     <remark>
       <p>
-        The triangle you just drew in <xref ref="solving-a-ASA-triangle"/> is known as an ASA triangle, which means we know two angles and a side BETWEEN the angles.
+        The triangle in <xref ref="solving-a-ASA-triangle"/> is known as an <m>ASA</m> (Angle-Side-Angle) triangle, which means we know two angles and a side BETWEEN the angles.
       </p>
     </remark>
 
@@ -347,19 +391,37 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 7</m>, and <m>b = 16</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 7</m>, and <m>b = 16</m> as shown in the figure below.
+        <figure xml:id="SSA-no-solution-Triangle"> 
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a=7$", (2.2,1.8),color="black",fontsize=24)
+p += text("$b=16$", (-1.7, 1.6), color="black",fontsize=24)
+p += text("$c$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$34^\circ$", (3.3,.2), color="black", fontsize=20)
+p += text("$30^\circ$", (-1.5,.2), color="black", fontsize=20)
+p.axes(False) 
+p
+          </sageplot>
+          </image>
+        </figure>
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
-          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+          What parts of the triangle are missing?
         </p>
       </statement>
       <answer>
         <p>
-          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
+          The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
         </p>
       </answer>
     </task>
@@ -367,7 +429,7 @@ p
     <task>
       <statement>
         <p>
-          What is the value of <m>\sin B</m>?
+          Use the Law of Sines to set up a proportion to find <m>\sin B</m>. What is the value of <m>\sin B</m>?
           <ol marker= "A." cols="4">
             <li><m>8.0</m></li>
             <li><m>1.14</m></li>
@@ -407,19 +469,48 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 10</m>, and <m>b = 16</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30^\circ</m>, <m>a = 10</m>, and <m>b = 16</m>.
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should be able to draw a triangle like this: 
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a=10$", (2.3,1.8),color="black",fontsize=24)
+p += text("$b=16$", (-1.7, 1.6), color="black",fontsize=24)
+p += text("$c$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
+p.axes(False)
+p 
+          </sageplot>
+          </image>
+          The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
           Use the Law of Sines to determine the value of <m>B</m> (to the nearest degree).
           <ol marker= "A." cols="4">
-            <li><m>143</m><degree/></li>
-            <li><m>53</m><degree/></li>
-            <li><m>80</m><degree/></li>
-            <li><m>37</m><degree/></li>
+            <li><m>143^\circ</m></li>
+            <li><m>53^\circ</m></li>
+            <li><m>80^\circ</m></li>
+            <li><m>37^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -438,7 +529,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C\approx 97</m><degree/>
+          <m>C\approx 97^\circ</m>
         </p>
         <p>
           <m>c \approx 20</m>
@@ -449,12 +540,12 @@ p
     <task>
       <statement>
         <p>
-          Let's go back to part (a) when we were asked to solve for <m>B</m>. There is another value of <m>B</m> that exists. Which of the following values could also be <m>B</m>?
+          Let's go back to part (b) when we were asked to solve for <m>B</m>. We needed to solve <m>\sin B=\frac{4}{5}</m>. Using the inverse sine function on our calculator, we got that <m>B \approx 53</m><degree/>. However, there is another angle between <m>0^\circ</m> and <m>180^\circ</m> whose sine is <m>\frac{4}{5}</m>. Which of the following values could also be <m>B</m>?
           <ol marker= "A." cols="4">
-            <li><m>143</m><degree/></li>
-            <li><m>37</m><degree/></li>
-            <li><m>80</m><degree/></li>
-            <li><m>127</m><degree/></li>
+            <li><m>143^\circ</m></li>
+            <li><m>37^\circ</m></li>
+            <li><m>80^\circ</m></li>
+            <li><m>127^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -473,7 +564,7 @@ p
       </statement>
       <answer>
         <p>
-          Because <m>\sin \theta</m> exists in both Quadrant I and Quadrant II, there exists two possible values of <m>\theta</m>. <m>\sin 30</m><degree/> and <m>\sin 150</m><degree/>, for example, are both equal to <m>\frac{1}{2}</m>. 
+          Because <m>\sin \theta</m> exists in both Quadrant I and Quadrant II, there exists two possible values of <m>\theta</m>. <m>\sin 30^\circ</m> and <m>\sin 150^\circ</m>, for example, are both equal to <m>\frac{1}{2}</m>. 
         </p>
       </answer>
     </task>
@@ -486,7 +577,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C \approx 23</m><degree/>
+          <m>C \approx 23^\circ</m>
         </p>
         <p>
           <m>c \approx 8</m>
@@ -497,7 +588,7 @@ p
 
     <remark>
       <p>
-        So far we have seen that when given two sides and an angle (also known as a SSA triangle), we can have no solution (i.e., no triangle can be created) or two solutions (i.e., there are two possible triangles). There is still one more case we need to explore.
+        So far we have seen that when given two sides and an angle (also known as a <m>SSA</m> (Side-Side-Angle) triangle), we can have no solution (i.e., no triangle can be created) or two solutions (i.e., there are two possible triangles). There is still one more case we need to explore.
       </p>
     </remark>
 
@@ -505,19 +596,48 @@ p
 
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 20</m>, and <m>b = 16</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 30^\circ</m>, <m>a = 20</m>, and <m>b = 16</m>.
       </p>
     </introduction>
 
     <task>
       <statement>
         <p>
+          Draw triangle <m>ABC</m> and label what is known. What parts of the triangle are missing?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should be able to draw a triangle like this:
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a=20$", (2.3,1.8),color="black",fontsize=24)
+p += text("$b=16$", (-1.7, 1.6), color="black",fontsize=24)
+p += text("$c$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
+p.axes(False)
+p  
+          </sageplot>
+          </image>
+          The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
           Use the Law of Sines to determine the value of <m>B</m> (to the nearest degree).
           <ol marker= "A." cols="4">
-            <li><m>24</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>141</m><degree/></li>
-            <li><m>156</m><degree/></li>
+            <li><m>24^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>141^\circ</m></li>
+            <li><m>156^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -536,7 +656,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>C \approx 126</m><degree/>
+          <m>C \approx 126^\circ</m>
         </p>
         <p>
           <m>c \approx 32</m>
@@ -552,7 +672,7 @@ p
       </statement>
       <answer>
         <p>
-          Another triangle does not exist because if <m>B</m> is equal to <m>156</m><degree/>, then that would mean the third angle, <m>C</m>, would have to be <m>-6</m><degree/>.
+          Another triangle does not exist because if <m>B</m> is equal to <m>156^\circ</m>, then that would mean the third angle, <m>C</m>, would have to be <m>-6^\circ</m>. In other words, the sum of those two angles is already greater than <m>180^\circ</m>, so no triangle can exist.
         </p>
       </answer>
     </task>
@@ -569,6 +689,96 @@ p
       </ol>
        The <term>Ambiguous Case of the Law of Sines</term> states that when using the Law of Sines to find a missing side length, the possibility of two solutions for the measure of the same side may occur.
       </p>
+
+      <figure>
+        <image>
+          <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
+p+=text("$C$",(2,2.1),color="black",fontsize=14)
+p+=arc((2,2),1.75,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2+1.75*cos(5*pi/3),2+1.75*sin(5*pi/3))],color="blue",thickness=2)
+p+=text("$a$",(2.7,1.1),fontsize=14)
+p.axes(False)
+p
+          </sageplot>
+        </image>
+        <caption>If <m>a</m> is too short for a given angle <m>A</m> and side <m>b</m>, no matter
+          how that leg is swung around the dashed circle, it will not meet a third side of any
+          length along the dotted line.
+        </caption>
+      </figure>
+      <figure>
+        <image>
+          <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
+p+=text("$C$",(2,2.1),color="black",fontsize=14)
+a=pi/12
+r=2/cos(a)
+p+=arc((2,2),r,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2+r*cos(3*pi/2+a),2+r*sin(3*pi/2+a))],color="blue",thickness=2)
+p+=line([(2,2),(2+r*cos(3*pi/2-a),2+r*sin(3*pi/2-a))],color="blue",thickness=2)
+p+=text("$a$",(2.4,1.1),fontsize=14)
+p+=text("$a$",(1.6,1.1),fontsize=14)
+p.axes(False)
+p
+          </sageplot>
+        </image>
+        <caption>
+          If <m>a</m> is larger, the circle of radius <m>a</m> centered at <m>C</m> intersects the
+          horizontal dashed line in two places, giving two possible solutions.
+        </caption>
+      </figure>
+      <figure>
+        <sidebyside widths="50% 50%">
+          <image>
+            <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
+p+=arc((2,2),2,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2,0)],color="blue",thickness=2)
+p+=text("$a$",(2.1,1.1),fontsize=14)
+p.axes(False)
+p
+            </sageplot>
+          </image>
+          <image>
+            <sageplot>
+p=Graphics()
+p+=line([(0,0),(2,2)],thickness=2,color="black")
+p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
+p+=line([(0,0),(6,0)],linestyle="dotted",color="black")
+p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
+p+=text("$A$",(-0.2,-0.1),color="black",fontsize=14)
+a=pi/3
+r=2/cos(a)
+p+=arc((2,2),r,sector=(pi,2*pi),color="blue",linestyle="dashed")
+p+=line([(2,2),(2+r*cos(3*pi/2+a),2+r*sin(3*pi/2+a))],color="blue",thickness=2)
+p+=text("$a$",(4.1,1.1),fontsize=14)
+p.axes(False)
+p
+            </sageplot>
+          </image>
+        </sidebyside>
+        <caption>
+          If the length of <m>a</m> is the same as the height of the triangle, the two possibilities converge
+          and there is a single solution of a right triangle.  On the other hand, if the length of <m>a</m> increases
+          enough, the potential second solution swings past the angle <m>A</m> and thus does not exist.
+        </caption>
+      </figure>
     </observation>
 
     <activity xml:id="law-of-sines-fluency">
@@ -582,12 +792,12 @@ p
     <task>
       <statement>
         <p>
-          <m>C=145</m><degree/>, <m>b=7</m>, <m>c=33</m>
+          <m>C=145^\circ</m>, <m>b=7</m>, <m>c=33</m>
         </p>
       </statement>
       <answer>
         <p>
-          One triangle: <m>A=28</m><degree/>, <m>B=7</m><degree/>, <m>a=27</m>
+          One triangle: <m>A=28^\circ</m>, <m>B=7^\circ</m>, <m>a=27</m>
         </p>
       </answer>
     </task>
@@ -595,7 +805,7 @@ p
     <task>
       <statement>
         <p>
-          <m>B=84</m><degree/>, <m>a=18</m>, <m>b=9</m>
+          <m>B=84^\circ</m>, <m>a=18</m>, <m>b=9</m>
         </p>
       </statement>
       <answer>
@@ -608,7 +818,7 @@ p
     <task>
       <statement>
         <p>
-          <m>B=45</m><degree/>, <m>a=28</m>, <m>b=27</m>
+          <m>B=45^\circ</m>, <m>a=28</m>, <m>b=27</m>
         </p>
       </statement>
       <answer>
@@ -616,10 +826,10 @@ p
           Two triangles exist:
         </p>
         <p>
-          <m>C=87.8</m><degree/>, <m>A=47.2</m><degree/>, <m>c=38.2</m>
+          <m>C=87.8^\circ</m>, <m>A=47.2^\circ</m>, <m>c=38.2</m>
         </p>
         <p>
-          <m>C=2.2</m><degree/>, <m>A=132.8</m><degree/>, <m>c=1.5</m>
+          <m>C=2.2^\circ</m>, <m>A=132.8^\circ</m>, <m>c=1.5</m>
         </p>
       </answer>
     </task>
@@ -628,7 +838,7 @@ p
     <activity xml:id="SAS-example">
     <introduction>
       <p>
-        Suppose you are given triangle <m>ABC</m>, where <m>A = 70</m><degree/>, <m>b = 14</m>, and <m>c = 7</m>.
+        Suppose you are given triangle <m>ABC</m>, where <m>A = 70^\circ</m>, <m>b = 14</m>, and <m>c = 7</m>.
       </p>
     </introduction>
 
@@ -640,7 +850,23 @@ p
       </statement>
       <answer>
         <p>
-          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
+          Students should draw the triangle like this:
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a$", (2.3,1.8),color="black",fontsize=24)
+p += text("$b=14$", (-1.7, 1.6), color="black",fontsize=24)
+p += text("$c=7$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$70^\circ$", (-1.6,.2), color="black", fontsize=20)
+p.axes(False) 
+p 
+          </sageplot>
+          </image>
+           The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
         </p>
       </answer>
     </task>
@@ -766,11 +992,6 @@ p
           Recall that we can use the Pythagorean Theorem to represent the relationship between the sides of a right triangle. For example, <m>h^2+ (c-m)^2 = a^2</m> can be used to represent the relationship of the sides of triangle <m>BCD</m>. Take your equations from parts (c) and (d) to substitute <m>m</m> and <m>h</m> into that equation.
         </p>
       </statement>
-      <hint>
-        <p>
-          When simplifying the term <m>(c-b \cos A)^2</m>, it might be easier to multiply <m>(c-b \cos A)*(c-b \cos A)</m>.
-        </p>
-      </hint>
       <answer>
         <p>
           <m>h^2+ (c-m)^2 = a^2</m>
@@ -789,7 +1010,7 @@ p
       </statement>
       <hint>
         <p>
-          You may have to use a trig identity to simplify!
+          When simplifying the term <m>(c-b \cos A)^2</m>, don't forget that  <m>(c-b \cos A)^2=(c-b \cos A)*(c-b \cos A)</m>. You may also have to use a trig identity to simplify!
         </p>
       </hint>
       <answer>
@@ -829,7 +1050,7 @@ p
 
     <introduction>
       <p>
-        Let's revisit <xref ref="SAS-example"/> to see how we can apply the Law of Cosines to solve for this triangle. Recall that we were given triangle <m>ABC</m>, where <m>A = 70</m><degree/>, <m>b = 14</m>, and <m>c = 7</m>.
+        Let's revisit <xref ref="SAS-example"/> to see how we can apply the Law of Cosines to solve for this triangle. Recall that we were given triangle <m>ABC</m>, where <m>A = 70^\circ</m>, <m>b = 14</m>, and <m>c = 7</m>.
       </p>
     </introduction>
 
@@ -841,7 +1062,23 @@ p
       </statement>
       <answer>
         <p>
-          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
+          Students should draw the triangle like this:
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a$", (2.3,1.8),color="black",fontsize=24)
+p += text("$b=14$", (-1.7, 1.6), color="black",fontsize=24)
+p += text("$c=7$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p += text("$70^\circ$", (-1.6,.2), color="black", fontsize=20)
+p.axes(False)
+p 
+          </sageplot>
+          </image>
+           The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
         </p>
       </answer>
     </task>
@@ -891,7 +1128,7 @@ p
       </statement>
       <answer>
         <p>
-          <m>B \approx 82</m><degree/> and <m>C \approx 28</m><degree/>
+          <m>B \approx 81</m><degree/> and <m>C \approx 29^\circ</m>
         </p>
       </answer>
     </task>
@@ -913,7 +1150,22 @@ p
       </statement>
       <answer>
         <p>
-          Students should draw the triangle and label the appropriate sides/angles. The following parts of the triangle are missing: <m>A</m>, <m>B</m>, and <m>C</m>.
+          Students should draw the triangle like this: 
+          <image>
+          <sageplot>
+p=Graphics()
+p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
+p += text("$a=30$", (2.3,1.8),color="black",fontsize=24)
+p += text("$b=20$", (-1.7, 1.6), color="black",fontsize=24)
+p += text("$c=17$", (1, -0.2), color="black", fontsize=24)
+p += text("$A$", (-2.2,0), color="black", fontsize=24)
+p += text("$B$", (4.2,0), color="black", fontsize=24)
+p += text("$C$", (0,3.2), color="black", fontsize=24)
+p.axes(False)
+p 
+          </sageplot>
+          </image>
+          The following parts of the triangle are missing: <m>A</m>, <m>B</m>, and <m>C</m>.
         </p>
       </answer>
     </task>
@@ -936,10 +1188,10 @@ p
         <p>
           What is the value of <m>A</m> (to the nearest degree)?
           <ol marker= "A." cols="4">
-            <li><m>109</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>108</m><degree/></li>
-            <li><m>33</m><degree/></li>
+            <li><m>109^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>108^\circ</m></li>
+            <li><m>33^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -968,10 +1220,10 @@ p
         <p>
           What is the value of <m>B</m> (to the nearest degree)?
           <ol marker= "A." cols="4">
-            <li><m>109</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>108</m><degree/></li>
-            <li><m>33</m><degree/></li>
+            <li><m>109^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>108^\circ</m></li>
+            <li><m>33^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -987,10 +1239,10 @@ p
         <p>
           What is the value of <m>C</m> (to the nearest degree)?
           <ol marker= "A." cols="4">
-            <li><m>109</m><degree/></li>
-            <li><m>39</m><degree/></li>
-            <li><m>108</m><degree/></li>
-            <li><m>33</m><degree/></li>
+            <li><m>109^\circ</m></li>
+            <li><m>39^\circ</m></li>
+            <li><m>108^\circ</m></li>
+            <li><m>33^\circ</m></li>
           </ol>
         </p>
       </statement>
@@ -1020,7 +1272,7 @@ p
     <task>
       <statement>
         <p>
-          Given <m>B=112</m><degree/>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
+          Given <m>B=112^\circ</m>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
         </p>
       </statement>
       <hint>
@@ -1038,7 +1290,7 @@ p
     <task>
       <statement>
         <p>
-          Given <m>B=87</m><degree/>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
+          Given <m>B=87^\circ</m>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
         </p>
       </statement>
       <answer>
@@ -1064,7 +1316,7 @@ p
     <task>
       <statement>
         <p>
-          Given <m>A=108</m><degree/>, <m>B=40</m><degree/>, and <m>b=20</m>, find <m>c</m>.
+          Given <m>A=108^\circ</m>, <m>B=40^\circ</m>, and <m>b=20</m>, find <m>c</m>.
         </p>
       </statement>
       <answer>
@@ -1086,12 +1338,12 @@ p
     <task>
       <statement>
         <p>
-          Given <m>B=112</m><degree/>, <m>a=12</m>, and <m>b=25</m>, find <m>A</m>.
+          <m>B=112^\circ</m>, <m>a=12</m>, and <m>b=25</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>A \approx 26</m><degree/>, <m>C \approx 42</m><degree/>, and <m>c \approx 18</m> 
+          <m>A \approx 26^\circ</m>, <m>C \approx 42^\circ</m>, and <m>c \approx 18</m> 
         </p>
       </answer>
     </task>
@@ -1099,12 +1351,12 @@ p
     <task>
       <statement>
         <p>
-          Given <m>B=87</m><degree/>, <m>a=15</m>, and <m>c=16</m>, find <m>b</m>.
+          <m>B=87^\circ</m>, <m>a=15</m>, and <m>c=16</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>b \approx 21</m>, <m>A \approx 46</m><degree/>, and <m>C \approx 47</m><degree/>
+          <m>b \approx 21</m>, <m>A \approx 45^\circ</m>, and <m>C \approx 48^\circ</m>
         </p>
       </answer>
     </task>
@@ -1112,12 +1364,12 @@ p
     <task>
       <statement>
         <p>
-          Given <m>a=37</m>, <m>b=55</m>, and <m>c=30</m>, find <m>C</m>.
+          <m>a=37</m>, <m>b=55</m>, and <m>c=30</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>C \approx 31</m><degree/>, <m>A \approx 39</m><degree/>, and <m>B \approx 110</m><degree/>
+          <m>C \approx 31^\circ</m>, <m>A \approx 39^\circ</m>, and <m>B \approx 110^\circ</m>
         </p>
       </answer>
     </task>
@@ -1125,17 +1377,16 @@ p
     <task>
       <statement>
         <p>
-          Given <m>A=108</m><degree/>, <m>B=40</m><degree/>, and <m>b=20</m>, find <m>c</m>.
+          <m>A=108^\circ</m>, <m>B=40^\circ</m>, and <m>b=20</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>C \approx 38</m><degree/>, <m>b \approx 82</m>, and <m>c \approx 52</m>
+          <m>C \approx 32^\circ</m>, <m>a \approx 30</m>, and <m>c \approx 16</m>
         </p>
       </answer>
     </task>
     </activity>
-
 
     </subsection>
 
