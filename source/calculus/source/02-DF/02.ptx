@@ -430,7 +430,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
               Consider the following discontinuous function </p><me>
                 g(x) = \begin{cases}
                   x + 2 \amp x \leq 2 \\
-                  x   \amp x \gt  2
+                  x   \amp x \gt  2.
                 \end{cases}
               </me>
          <p> On both sides of <m>x=2</m> it seems that the slope is the same, but this function is still not differentiable at <m>x=2</m>. Compute the difference quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that <m>h \gt 0 </m> and then assuming that <m>h \lt 0</m>. Use your answers to explain why the function is not differentiable at <m>x=2</m>.
