@@ -163,8 +163,8 @@ p += text("$c$", (1, -0.1), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$25^\circ$", (3.4,.2), color="black", fontsize=20)
-p += text("$35^\circ$", (-1.6,.2), color="black", fontsize=20)
+p += text("$25^\circ$", (3.3,.2), color="black", fontsize=20)
+p += text("$35^\circ$", (-1.5,.2), color="black", fontsize=20)
 p.axes(False)
 p 
           </sageplot>
@@ -300,8 +300,8 @@ p += text("$c=9$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$34^\circ$", (3.4,.2), color="black", fontsize=20)
-p += text("$76^\circ$", (-1.6,.2), color="black", fontsize=20)
+p += text("$34^\circ$", (3.3,.2), color="black", fontsize=20)
+p += text("$76^\circ$", (-1.5,.2), color="black", fontsize=20)
 p.axes(False)
 p 
           </sageplot>
@@ -403,8 +403,8 @@ p += text("$c$", (1, -0.2), color="black", fontsize=24)
 p += text("$A$", (-2.2,0), color="black", fontsize=24)
 p += text("$B$", (4.2,0), color="black", fontsize=24)
 p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$34^\circ$", (3.4,.2), color="black", fontsize=20)
-p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
+p += text("$34^\circ$", (3.3,.2), color="black", fontsize=20)
+p += text("$30^\circ$", (-1.5,.2), color="black", fontsize=20)
 p.axes(False) 
 p
           </sageplot>
