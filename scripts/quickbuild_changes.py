@@ -48,7 +48,7 @@ def main():
                 built_ids.add(xml_id["id"])
             preview_links.append({
                 "file": xml_id["file"],
-                "path": f"/preview/{b}/instructor/{xml_id["id"]}.html"
+                "path": f"/preview/{b}/{xml_id["id"]}.html"
             })
     # for each CheckIt file, build its preview
     for b in BOOKS:
@@ -66,7 +66,7 @@ def main():
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
             preview_links.append({
                 "file": Path("source", b, "exercises", "outcomes", o),
-                "path": f"/preview/{b}/instructor/exercises/{o}/"
+                "path": f"/preview/{b}/exercises/{o}/"
             })
 
 
