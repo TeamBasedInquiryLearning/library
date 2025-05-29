@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <intro>
+            <p>
+            Compute an exact value (not a decimal approximation) for each of the following.
+            </p>
+        </intro>
+        <!--{{#task1}}-->
+        <knowl>
+            <content>
+                <p><m>\{{f}}\left({{angle}}\right)</m>.</p>
+            </content>
+            <outtro>
+                <p><m>\{{f}}\left({{angle}}\right)={{value}}</m>
+                </p>
+            </outtro>
+        </knowl>
+        <!--{{/task1}}-->
+    </knowl>
+    <knowl>
+        <intro>
+            <p>Let <m>\theta</m> be an angle drawn in standard position that intersects the unit circle at
+                 <m>{{point2}}</m>.
+            </p>
+            <p>
+                <image
+                source="assets/TR5/generated/{{__seed__}}/plot2.png"
+                description="."
+                width="50%"/>
+            </p>
+            <p>
+            Compute an exact value (not a decimal approximation) for each of the following.
+            </p>
+        </intro>
+        <!--{{#task2}}-->
+        <knowl>
+            <content>
+                <p><m>\{{f}}(\theta)</m>.</p>
+            </content>
+            <outtro>
+                <p><m>\{{f}}(\theta)={{value}}</m>
+                </p>
+            </outtro>
+        </knowl>
+        <!--{{/task2}}-->
+    </knowl>
+    <knowl>
+        <content>
+            <p>Let <m>(x,y)</m> be a point on the unit circle that lies in Quadrant {{quadrant3}} with 
+            an <m>{{coordinate3}}</m>-value of <m>{{coordinate3_value}}</m>.  Let <m>\alpha</m> be the angle 
+            in standard position that intersects the unit circle at this point.</p> 
+            <p>
+                <image
+                source="assets/TR5/generated/{{__seed__}}/plot3.png"
+                description="."
+                width="50%"/>
+            </p>
+            <p>Compute <m>\{{f3}}(\alpha)</m>.</p>
+        </content>
+        <outtro>
+            <p><m>\{{f3}}(\alpha)={{value3}}</m></p>
+        </outtro>
+    </knowl>
+</knowl>
