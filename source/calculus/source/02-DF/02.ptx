@@ -406,85 +406,48 @@ The second derivative is the derivative of the derivative. It encodes informatio
  <activity xml:id="activity-differentiability-piecewise" estimated-time="10">
        <introduction>
         <p>
-         In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.  </p> </introduction>
+         In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In particular, this means that 
+        <me>
+            \lim_{h\to 0^-} \dfrac{f(a+h) - f(a)}{h}\text{ and } \lim_{h\to 0^+} \dfrac{f(a+h)-f(a)}{h}
+        </me>
+        must be the same. If the limits are not the same, then the function is not differentiable at <m>x = a</m>. In this activity we will study differentiability analytically.  </p> </introduction>
      <task>
-            <statement>
-                <p>
-                  Consider the following continuous function </p><me>
-                    g(x) = \begin{cases}
-                      x + 2 \amp x \leq 2 \\
-                      x^2   \amp x \gt  2
-                    \end{cases}
-                  </me>
-                         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>.
-                </p>
-            </statement>
-            <answer>
-                <p>
-                    On the left-hand side, we have 
-                    <me>
-                        \lim_{h\to 0^-} \dfrac{g(2+h) - g(2)}{h} = \lim_{h\to 0^-} \dfrac{4 + h - 4}{h} = 1
-                    </me>
-                    but 
-                    <me>
-                        \lim_{h\to 0^+} \dfrac{g(2+h) - g(2)}{h} = \lim_{h\to 0^-} \dfrac{4 + 4h + h^2- 4}{h} = 4
-                    </me>
-                    since the left and the right-hand limits disagree, <m>\displaystyle \lim_{h\to 0} \dfrac{g(2+h)-g(2)}{h}</m> does not exist, which means that <m>g'(2)</m> does not exist.
-                </p>
-            </answer>
+            <p>
+              Consider the following continuous function 
+              <me>
+                g(x) = \begin{cases}
+                  x + 2 \amp x \leq 1 \\
+                  3x   \amp x \gt  1.
+                \end{cases}
+              </me>
+            </p>
+            <p> 
+                Compute <m>\displaystyle \lim_{h\to 0^-} \dfrac{g(1+h)-g(1)}{h}</m> and <m>\displaystyle \lim_{h\to 0^+} \dfrac{g(1+h)-g(1)}{h}</m>. Is this continuous function differentiable at <m>x = 1</m>? Why or why not?
+            </p>
             </task>
           <task>
-            <statement>
-                <p>
-                    Consider the following discontinuous function:
-                    <me>
-                        g(x) = \begin{cases}
-                        x + 2 \amp x \leq 2 \\
-                        x   \amp x \gt  2
-                        \end{cases}
-                    </me>
-                    On both sides of <m>x=2</m> it seems that the slope is the
-                    same, but this function is still not differentiable at <m>x=2</m>.
-                    Notice that <m>g(2)=4</m>. When <m> h \gt 0 </m>, the interval
-                    <m>[2,2+h]</m> falls under the second definition of <m>g(x)</m>,
-                    but <m>g(2)</m> is always fixed at 4. Compute the difference
-                    quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that
-                    <m>h \gt 0 </m> and notice that this does not simplify as expected!
-                    Moreover, if you take the limit as <m>h\to 0</m>, you will get
-                    infinity and not the expected slope of 1!
-                </p>
-            </statement>
-            <answer>
-                <p>
-                    <m>\dfrac{g(2+h)-g(2)}{h} = \dfrac{2+h-4}{h} = \dfrac{h-2}{h}= 1-\dfrac{2}{h}</m>
-                </p>
-            </answer>
+            <p>
+              Consider the following discontinuous function </p><me>
+                g(x) = \begin{cases}
+                  x + 2 \amp x \leq 2 \\
+                  x   \amp x \gt  2.
+                \end{cases}
+              </me>
+         <p> On both sides of <m>x=2</m> it seems that the slope is the same, but this function is still not differentiable at <m>x=2</m>. Compute the difference quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that <m>h \gt 0 </m> and then assuming that <m>h \lt 0</m>. Use your answers to explain why the function is not differentiable at <m>x=2</m>.
+            </p>
             </task>
-            <task>
-                <statement>
-                    <p>
-                        Consider the following function
-                        <me>
-                            g(x) = \begin{cases}
-                            ax + 2 \amp x \leq 2 \\
-                            bx^2   \amp x \gt  2
-                            \end{cases}
-                        </me>
-                        where <m>a,b</m> are some nonzero parameters you will find.
-                        Find an equation in <m>a,b</m> that needs to be true if we
-                        want the function to be continuous at <m>x=2</m>. Also, find
-                        an equation in <m>a,b</m> that needs to be true if we want
-                        the function to be differentiable at <m>x=2</m>. Solve the
-                        system of two linear equations... you should find that
-                        <m>a=-2</m> and <m>b=-1/2</m> are the only values that make
-                        the function differentiable (and continuous!).
-                    </p>
-                </statement>
-                <answer>
-                    <p>
-                        <me>\begin{cases}a \amp = 4b \\ 2a + 2 \amp = 4b\end{cases}</me>
-                    </p>
-                </answer>
+            
+         <task>
+            <p>
+              Consider the following function </p><me>
+                g(x) = \begin{cases}
+                  ax + 2 \amp x \leq 2 \\
+                  bx^2   \amp x \gt  2,
+                \end{cases}
+              </me>
+         <p> where <m>a,b</m> are some nonzero parameters you will find. Find an equation in <m>a,b</m> that needs to be true if we want the function to be continuous at <m>x=2</m>. Also, find an equation in <m>a,b</m> that needs to be true if we want the function to be differentiable at <m>x=2</m>. Solve the system of two linear equations... you should find that <m>a=-2</m> and <m>b=-1/2</m> are the only values that make the function differentiable (and continuous!).
+            </p>
+
             </task>
     </activity>
 
