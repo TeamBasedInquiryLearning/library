@@ -442,7 +442,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
               Consider the following function </p><me>
                 g(x) = \begin{cases}
                   ax + 2 \amp x \leq 2 \\
-                  bx^2   \amp x \gt  2.
+                  bx^2   \amp x \gt  2,
                 \end{cases}
               </me>
          <p> where <m>a,b</m> are some nonzero parameters you will find. Find an equation in <m>a,b</m> that needs to be true if we want the function to be continuous at <m>x=2</m>. Also, find an equation in <m>a,b</m> that needs to be true if we want the function to be differentiable at <m>x=2</m>. Solve the system of two linear equations... you should find that <m>a=-2</m> and <m>b=-1/2</m> are the only values that make the function differentiable (and continuous!).
