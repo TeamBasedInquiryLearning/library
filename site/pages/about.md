@@ -90,4 +90,8 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Apoorva Mate† presented "Flipping the Script: Collaborative Learning Made Easy with Team-Based Inquiry" at the Fall 2024 New England COMMIT meeting
 
+- Drew Lewis presented a workshop on "Team-Based Inquiry Learning" at the 2025 New York Medical College Teaching and Learning Symposium
+
+- Joe Hibdon† presented a Team-Based Inquiry Learning workshop for ChiCOMMMIT (May 2025)
+
 († TBIL Fellows)
