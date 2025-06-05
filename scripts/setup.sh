@@ -15,6 +15,3 @@ eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
 conda activate sage
 python -m pip install -r requirements.txt
 
-playwright install-deps
-playwright install
-
