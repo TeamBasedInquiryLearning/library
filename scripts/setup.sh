@@ -11,6 +11,7 @@ bash ./.devcontainer/installLatex.sh
 tlmgr install tikz-cd
 git config --global --add safe.directory $(pwd)
 
+python -m pip install CodeChat-Server
 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
 conda activate sage
 python -m pip install -r requirements.txt
