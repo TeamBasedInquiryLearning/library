@@ -53,7 +53,7 @@
         "pretext-tools.schema.versionName": "Custom",
         "pretext-tools.schema.customPath": "/workspaces/library/schema/tbil.rng",
         "redhat.telemetry.enabled": false,
-        "CodeChat.CodeChatServer.Command": "CodeChat_Server",
+        "CodeChat.CodeChatServer.Command": "/opt/conda/envs/sage/bin/CodeChat_Server",
         "files.eol": "\n",
         "git.autofetch": true
       },
