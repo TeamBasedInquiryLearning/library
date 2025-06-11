@@ -2,39 +2,120 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-            For <m>\displaystyle f(x) = {{f}} </m>, identify the regions where <m>f(x)</m> is concave up and concave down (if any) as well as all inflection points.
+            For <m>\displaystyle f(x) = {{f}} </m>, identify the open intervals where <m>f(x)</m> is concave up and concave down (if any) as well as all inflection points.
         </p>
     </intro>
     
     <outtro>
         <!-- {{#case1}} -->
         <p>
-            We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
-            When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
-            When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
-            When <m>{{cc2}} &lt; x &lt; {{cc3}}, f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
-            When <m>{{cc3}} &lt; x, f''(x) {{sign24}}</m> and <m>y</m> is {{change4}}.  There are inflection points <m>{{ip1}}</m> and <m>{{ip2}}</m>.
+            <ul>
+                <li>
+                    <p>
+                        
+                        We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc2}} &lt; x &lt; {{cc3}}, f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc3}} &lt; x, f''(x) {{sign24}}</m> and <m>y</m> is {{change4}}.  There are inflection points <m>{{ip1}}</m> and <m>{{ip2}}</m>.
+                    </p>
+                </li>
+            </ul>
         </p>
         <!-- {{/case1}} -->
         
         <!-- {{#case2}} -->
         <p>
-            We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
-            When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
-            When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
-            When <m>{{cc2}} &lt; x &lt; {{cc3}}, f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
-            When <m>{{cc3}} &lt; x, f''(x) {{sign24}}</m> and <m>y</m> is {{change4}}.  There are inflection points <m>{{ip1}}</m>, <m>{{ip2}}</m> and <m>{{ip3}}</m>.
+            <ul>
+                <li>
+                    <p>
+                        
+                        We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc2}} &lt; x &lt; {{cc3}}, f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc3}} &lt; x, f''(x) {{sign24}}</m> and <m>y</m> is {{change4}}.  There are inflection points <m>{{ip1}}</m>, <m>{{ip2}}</m> and <m>{{ip3}}</m>.
+                    </p>
+                </li>
+            </ul>
         </p>
         <!-- {{/case2}} -->
         
         
         <!-- {{#case3}} -->
         <p>
-            We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
-            When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
-            When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
-            When <m>{{cc2}} &lt; x &lt; {{cc3}}, f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
-            When <m>{{cc3}} &lt; x, f''(x) {{sign24}}</m> and <m>y</m> is {{change4}}.  There is an inflection point <m>{{ip1}}</m>.
+            <ul>
+                <li>
+                    <p>
+                        
+                        We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc2}} &lt; x &lt; {{cc3}}, f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc3}} &lt; x, f''(x) {{sign24}}</m> and <m>y</m> is {{change4}}.  There is an inflection point <m>{{ip1}}</m>.
+                    </p>
+                </li>
+            </ul>
         </p>
         <!-- {{/case3}} -->
         
@@ -42,11 +123,38 @@
         <!-- {{#case4}} -->
         
         <p>
-            We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
-            When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
-            When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
-            When <m>{{cc2}} &lt; x,  f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
-            There is an inflection point <m>{{ip1}}</m>.
+            <ul>
+                <li>
+                    <p>
+                        
+                        We have that <m>\displaystyle f''(x) = {{fpp}}</m>.  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>x &lt; {{cc1}}, f''(x) {{sign21}}</m> and <m>y</m> is {{concave1}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc1}} &lt; x &lt; {{cc2}}, f''(x) {{sign22}}</m> and <m>y</m> is {{concave2}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        When <m>{{cc2}} &lt; x,  f''(x) {{sign23}}</m> and <m>y</m> is {{concave3}}.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                        There is an inflection point <m>{{ip1}}</m>.
+                    </p>
+                </li>
+            </ul>
         </p>
         <!-- {{/case4}} -->
         
