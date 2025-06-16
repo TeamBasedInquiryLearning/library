@@ -1,0 +1,14 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#tasks}} -->
+    <knowl>
+        <content>
+          <p>Draw the graph of <m>f(x)={{f}}</m>, including at least two full periods.</p>
+        </content>
+        <outtro>
+          <p>
+            <image source="assets/PF2/generated/{{__seed__}}/{{plot}}.png"/>
+          </p>
+        </outtro>
+    </knowl>
+    <!-- {{/tasks}} -->
+</knowl>
