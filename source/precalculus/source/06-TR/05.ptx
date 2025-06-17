@@ -362,13 +362,15 @@ p
   
   <task>
     <statement>
-      <p> The angle below represents the reference angle for <m>\theta=150^\circ</m>, which is the smallest angle between the terminal side of <m>\theta</m> and the <m>x</m>-axis. What is the measure of this reference angle? 
+      <p> If we reflect this angle across the <m>y</m>-axis, we can obtain an angle <m>\alpha</m> in the first quadrant.
+        What is the measure of <m>\alpha</m>?
       </p>
 
 <image width="50%">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/6,reference_angle=5*pi/6,show_unit_circle=True)
+p=TBIL.plot_angle(5*pi/6,reference_angle=pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True)
+p+=TBIL.plot_angle(pi/6,show_unit_circle=True,show_angle_value=r"$\alpha$")
 p
   </sageplot> 
 </image> 
@@ -392,7 +394,9 @@ p
 
     <task>
     <statement>
-      <p> We can find the sine and cosines values of our original angle, <m>\theta=150^\circ</m>, by using the reference angle to help. Find the point <m>(x_1,y_1)</m>, where the terminal side of the <m>30^\circ</m> angle intersects the unit circle.
+      <p> We can find the sine and cosines values of our original angle, <m>\theta=150^\circ</m>, by using the 
+         angle <m>\alpha=30^\circ</m> to help. Find the point <m>(x_1,y_1)</m>, where the terminal side of the 
+         <m>30^\circ</m> angle intersects the unit circle.
       </p>
  <sidebyside width="50%">
 <image width="50%">
@@ -482,6 +486,15 @@ p
 
 
 </activity>
+
+<definition xml:id="definition-reference-angle">
+  <statement>
+    <p>The <term>reference angle</term> for a given angle <m>\theta</m> is the angle in the first quadrant obtained
+      from reflecting <m>\theta</m>. Equivalently, it is the smallest angle between the terminal side of <m>\theta</m>
+      and the <m>x</m>-axis.
+    </p>
+  </statement>
+</definition>
 
 <activity xml:id="reference-angle-2">
   <introduction> 
