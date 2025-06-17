@@ -402,7 +402,7 @@ p
 <image width="50%">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x","y"))
+p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x","y"),show_triangle=True)
 p
   </sageplot> 
 
@@ -410,7 +410,7 @@ p
 <image width="50%">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x_1","y_1"))
+p=TBIL.plot_angle(pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x_1","y_1"),show_triangle=True)
 p
   </sageplot> 
 </image>  
