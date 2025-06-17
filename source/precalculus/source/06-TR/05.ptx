@@ -45,7 +45,7 @@
 <image width="50%">
   <sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/4,show_unit_circle=True,show_angle_value="$\theta$")
+p=TBIL.plot_angle(pi/4,show_unit_circle=True,show_angle_value=r"$\theta$")
 p+=text("$(x,y)$", (.8,.8), fontsize="15")
 p+=text("$r$", (.35,.45), fontsize="15")
 p+=point((1/sqrt(2),1/sqrt(2)),size="50",color="red",zorder=5)
