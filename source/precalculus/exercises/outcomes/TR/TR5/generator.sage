@@ -26,7 +26,7 @@ class Generator(BaseGenerator):
         return {
             "task1": [ {"angle": angle_strings[i], "value": values[i], "f":functions[i].name()} for i in [0,1]],
             "angle2": angles[2],
-            "point2": (cos(angles[2]),sin(angles[2])),
+            "point2": f"\\left({TBIL.typeset_angle(cos(angles[2]))},{TBIL.typeset_angle(sin(angles[2]))}\\right)",
             "task2": [ {"value": values[i], "f":functions[i].name()} for i in [2,3]], 
             "angle3": angles[3],
             "quadrant3": quadrant,
