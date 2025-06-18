@@ -59,6 +59,6 @@ class Generator(BaseGenerator):
     @provide_data
     def graphics(data):
         ymins=[1/2*(data["xmaxs"][i]-data["xmins"][i]) for i in [0,1]]
-        return {"plot1": TBIL.trig_plot(data["t"][0],(data["xmins"][0],data["xmaxs"][0]),ymin=max(-10,-1*ymins[0]-1),ymax=min(10,ymins[0]+1),aspect_ratio=1,ticks=[data["ticks"][0],SR(1)],detect_poles=True),
-                "plot2": TBIL.trig_plot(data["t"][1],(data["xmins"][1],data["xmaxs"][1]),ymin=max(-10,-1*ymins[1]-1),ymax=min(10,ymins[1]+1),aspect_ratio=1,ticks=[data["ticks"][1],SR(1)],detect_poles=True),
+        return {"plot1": TBIL.trig_plot(data["t"][0],(data["xmins"][0],data["xmaxs"][0]),ymin=max(-10,-1*ymins[0]-1),ymax=min(10,ymins[0]+1),ticks=[data["ticks"][0],SR(1)],detect_poles=True),
+                "plot2": TBIL.trig_plot(data["t"][1],(data["xmins"][1],data["xmaxs"][1]),ymin=max(-10,-1*ymins[1]-1),ymax=min(10,ymins[1]+1),ticks=[data["ticks"][1],SR(1)],detect_poles=True),
                 }
