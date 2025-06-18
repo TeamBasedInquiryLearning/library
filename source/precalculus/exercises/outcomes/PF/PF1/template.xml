@@ -1,0 +1,47 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Consider the function <m>{{fname}}(x)={{fstring}}</m>.</p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+                What is the amplitude of <m>{{fname}}(x)</m>?
+            </p>
+        </content>
+        <outtro>
+            <p>The amplitude is <m>{{amplitude}}</m>.</p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                What is the period of <m>{{fname}}(x)</m>?
+            </p>
+        </content>
+        <outtro>
+            <p>The period is <m>{{period}}</m>.</p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+                What is the phase shift <m>{{fname}}(x)</m>?
+            </p>
+        </content>
+        <outtro>
+            <p>The phase shift is <m>{{phase_shift}}</m> to the {{direction}}.</p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Draw a graph of <m>{{fname}}(x)</m>, including at least two full periods.</p>
+        </content>
+        <outtro>
+            <p>
+                <image
+                source="assets/PF1/generated/{{__seed__}}/plot.png"
+                description="."/>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>
