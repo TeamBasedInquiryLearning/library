@@ -1,0 +1,19 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+      <p>Solve each of the following triangles. State whether you used the law of sines 
+        or the law of cosines and explain your choice. In the case where there may be two 
+        solutions, give sufficient work/explanation to show that you checked for that 
+        possibility and give both solutions when appropriate.
+      </p>
+    </intro>
+    {{#tasks}}
+    <knowl>
+      <content>
+        <p>In triangle <m>ABC</m>, <m>{{given}}.</m> Solve the triangle, i.e. find all remaining sides and angles.</p>
+      </content>
+      <outtro>
+        <p><m>{{found}}</m></p>
+      </outtro>
+    </knowl>
+    {{/tasks}}
+</knowl>
