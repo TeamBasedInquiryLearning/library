@@ -9,7 +9,7 @@ class Generator(BaseGenerator):
         tasks=[ {"f": f[0], "a": TBIL.typeset_angle(f[1](angles[i])), "value": TBIL.typeset_angle(angles[i])} for i,f in enumerate(t)]
         shuffle(tasks)
 
-        itrig,domain,image = choice( [(arcsin,"[-1,1]", r"\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]"), (arccos, "[-1,1]", r"[0,\pi]"), (arctan, r"(-\infty,\infty)", r"\left(-\dfrac{\pi}{4}, \dfrac{\pi}{4}\right)") ])
+        itrig,domain,image = choice( [(arcsin,"[-1,1]", r"\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]"), (arccos, "[-1,1]", r"[0,\pi]"), (arctan, r"(-\infty,\infty)", r"\left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)") ])
 
 
         return {
