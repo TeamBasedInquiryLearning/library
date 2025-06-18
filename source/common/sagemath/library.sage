@@ -66,7 +66,7 @@ class TBIL:
                 label=f"$\\left({label_unit_point[0]},{label_unit_point[1]}\\right)$"
             else:
                 label=f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$"
-            p+=text(label, (1.4*c for c in end_coordinate),color="black",fontsize="18")
+            p+=text(label, (1.2*c for c in end_coordinate),color="black",fontsize="18")
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
         if show_triangle:
