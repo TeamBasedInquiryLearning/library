@@ -1,14 +1,27 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <!-- {{#tasks}} -->
     <knowl>
-        <content>
-          <p>Draw the graph of <m>f(x)={{f}}</m>, including at least two full periods.</p>
-        </content>
-        <outtro>
-          <p>
-            <image source="assets/PF2/generated/{{__seed__}}/{{plot}}.png"/>
-          </p>
-        </outtro>
+        <intro>
+          <p>Consider the function <m>{{fname}}(x)={{f}}</m>.</p>
+        </intro>
+        <knowl>
+          <content>
+            <p>Draw the graph of <m>{{fname}}(x)</m>, including at least two full periods.</p>
+          </content>
+          <outtro>
+            <p>
+              <image source="assets/PF2/generated/{{__seed__}}/{{plot}}.png"/>
+            </p>
+          </outtro>
+        </knowl>
+        <knowl>
+          <content>
+            <p>What is the domain and range of <m>{{fname}}(x)</m>?</p>
+          </content>
+          <outtro>
+            <p>The domain is <m>{{domain}}</m> and the range is <m>{{range}}</m>.</p>
+          </outtro>
+        </knowl>
     </knowl>
     <!-- {{/tasks}} -->
 </knowl>
