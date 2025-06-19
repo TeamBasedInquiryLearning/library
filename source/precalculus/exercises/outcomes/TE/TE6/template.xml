@@ -1,0 +1,88 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+  <!--{{#tasks}}-->
+  <knowl>
+    <!-- First task options -->
+      <!--{{#ladder}}-->
+        <content>
+          <p>A <m>{{ladder}}\ \text{ft}</m> ladder is leaned against a wall that is
+            <m>{{height}}\ \text{ft}</m> tall.  What angle does the ladder make with the ground?</p>
+        </content>
+        <outtro>
+          <p><m>{{angle}}^\circ</m></p>
+        </outtro>
+      <!--{{/ladder}}-->
+      <!--{{#elevation}}-->
+        <!--{{#scenarioA}}-->
+        <content>
+          <p>{{name}} is standing on top of a cliff <m>{{height}}</m> {{units}} above a lake.
+             They see a boat on the lake, and measure an angle of depression from the horizon
+             to the boat of <m>{{angle}}^\circ</m>.  How far away from {{name}} is the boat?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance}}</m> {{units}}</p>
+        </outtro>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+          <p>{{name}} sees a person on top of a <m>{{height}}</m> {{units}} tall cliff.
+             They measure an angle of elevation from the ground to the person of <m>{{angle}}^\circ</m>.  
+             How far away from {{name}} is the other person?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance}}</m> {{units}}</p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+      <!--{{/elevation}}-->
+      <!--{{#angleofclimb}}-->
+        <content>
+          <p>An airplane takes off from a runway and climbs at angle of <m>{{angle}}^\circ</m>. 
+            How far along the ground does the plane need to travel to reach an altitude of 
+            <m>{{height}}\ \text{ft}</m>? 
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance}}\ \text{ft}</m>, or about <m>{{distance_miles}}</m> miles</p>
+        </outtro>
+      <!--{{/angleofclimb}}-->
+    <!-- Second task options -->
+      <!--{{#airport}}-->
+        <content>
+          <p>A{{plane1}} is heading directly away from an airport on a heading of <m>{{heading1}}^\circ</m>,
+            and is <m>{{distance1}}</m> {{units}} away from the airport.
+            The pilot hears over the radio that there is a{{plane2}} flying at a heading of <m>{{heading2}}^\circ</m> 
+            that is currently <m>{{distance2}}</m> {{units}} from the airport.
+            How far apart are the two planes?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance3}}</m> {{units}}</p>
+        </outtro>
+      <!--{{/airport}}-->
+      <!--{{#hiker}}-->
+        <content>
+          <p>A hiker walks in a straight line for <m>{{distance1}}</m> {{units}}.  They turn <m>{{angle}}^\circ</m>
+            to their {{direction}} and walk another <m>{{distance2}}</m> {{units}}.  If they then want to walk
+            in a straight line back to their starting place, how far must they walk?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance3}}</m> {{units}}</p>
+        </outtro>
+      <!--{{/hiker}}-->
+      <!--{{#boats}}-->
+        <content>
+          <p>A boat is lost, but sees two lighthouses on the shore.  The boat measures an angle of <m>{{angle1}}^\circ</m>
+            between the two lighthouses, and fortunately establishes radio contact with a person in the {{specifier}} lighthouse.
+            They report that the lighthouses are <m>{{distance1}}</m> {{units}} apart, and they see an angle of 
+            <m>{{angle2}}^\circ</m> betwen the boat and the other lighthouse.  How far is the boat from each lighthouse?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance3}}</m> {{units}} from the {{specifier}} lighthouse, and <m>{{distance2}}</m> {{units}} from the other lighthouse.</p>
+        </outtro>
+      <!--{{/boats}}-->
+  </knowl>
+  <!--{{/tasks}}-->
+</knowl>
