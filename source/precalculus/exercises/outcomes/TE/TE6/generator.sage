@@ -91,5 +91,5 @@ class Generator(BaseGenerator):
 
 
         tasks=[ {scenario1: {**variables1}}, {scenario2: {**variables2}}]
-        #shuffle(tasks)
+        shuffle(tasks)
         return { "tasks": tasks }
