@@ -32,7 +32,7 @@ class Generator(BaseGenerator):
                     delta=pi
             ticks[i]=delta/2
             xmins[i]=min(-1*delta,start-delta)
-            domains[i]=f"\\ldots \\cup \\left({TBIL.typeset_angle(start)}, {TBIL.typeset_angle(start+delta)}\\right) \\cup \\left({TBIL.typeset_angle(start+delta)},{TBIL.typeset_angle(start+2*delta)}\right) \\cup \\ldots"
+            domains[i]=f"\\ldots \\cup \\left({TBIL.typeset_angle(start)}, {TBIL.typeset_angle(start+delta)}\\right) \\cup \\left({TBIL.typeset_angle(start+delta)},{TBIL.typeset_angle(start+2*delta)}\\right) \\cup \\ldots"
             if t[i]==tan or t[i]==cot:
                 ranges[i]=r"(-\infty,\infty)"
                 xmaxs[i]=max(0,start+2*delta)
