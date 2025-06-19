@@ -46,7 +46,7 @@ class Generator(BaseGenerator):
 
 
 
-        scenario2=choice(["airport","hiker","boats","ceiling"])
+        scenario2=choice(["airport","hiker","boats","ceiling","carpentersquare"])
         #SAS, Law of cosines
         if scenario2=="airport":
             plane1,plane2=sample([" Boeing 737", " Boeing 747", " Boeing 767", "n Airbus A320", "n Airbus A330", 
@@ -98,6 +98,21 @@ class Generator(BaseGenerator):
             variables2={ "angle": angle,
                          "distance1": d,
                          "distance2": e,
+                         "units": units,
+                       }
+        #SSS
+        elif scenario2=="carpentersquare":
+            angle=choice([85,..,89]+[91..95])
+            d1,d2=sample([4,4.5,..,20],2)
+            d3=round(sqrt(d1^2+d2^2-2*d1*d2*cos(angle*pi/180)),1)
+            angle=round(arccos((d3^2-d1^2-d2^2)/(-2*d1*d2))*180/pi,1)
+            units=choice(["inches","centimeters"])
+            if units=="centimeters":
+                d1,d2,d3=(2*d1,2*d2,2*d3)
+            variables2={ "angle": angle,
+                         "distance1": round(d1,1),
+                         "distance2": round(d2,1),
+                         "distance3": d3,
                          "units": units,
                        }
 

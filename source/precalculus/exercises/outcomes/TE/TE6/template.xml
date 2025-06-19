@@ -94,6 +94,18 @@
           <p><m>{{distance3}}</m> {{units}} from the {{specifier}} lighthouse, and <m>{{distance2}}</m> {{units}} from the other lighthouse.</p>
         </outtro>
       <!--{{/boats}}-->
+      <!--{{#carpentersquare}}-->
+        <content>
+          <p>A carpenter is trying to determine if two pieces of wood meet at a right angle, and does not have a square.
+             One piece of wood is <m>{{distance1}}</m> {{units}} long, and the other is <m>{{distance2}}</m> {{units}} long.
+             She measures the distance between the other ends of the pieces of wood as <m>{{distance3}}</m> {{units}}.
+             What angle do the two pieces of wood make with each other?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{angle}}^\circ</m></p>
+        </outtro>
+      <!--{{/carpentersquare}}-->
   </knowl>
   <!--{{/tasks}}-->
 </knowl>
