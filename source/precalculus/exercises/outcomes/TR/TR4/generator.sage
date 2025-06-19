@@ -12,7 +12,7 @@ class Generator(BaseGenerator):
 
 
         return {
-                "tasks": [ {"angle": angle_strings[i], "value": values[i], "f":functions[i].name()} for i in [0,1,2]]
+                "tasks": [ {"angle": angle_strings[i], "value": TBIL.typeset_angle(values[i]), "f":functions[i].name()} for i in [0,1,2]]
         }
 
   
