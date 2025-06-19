@@ -46,7 +46,7 @@ class Generator(BaseGenerator):
 
 
 
-        scenario2=choice(["airport","hiker","boats"])
+        scenario2=choice(["airport","hiker","boats","ceiling"])
         #SAS, Law of cosines
         if scenario2=="airport":
             plane1,plane2=sample([" Boeing 737", " Boeing 747", " Boeing 767", "n Airbus A320", "n Airbus A330", 
@@ -87,6 +87,18 @@ class Generator(BaseGenerator):
                          "distance3": d3,
                          "specifier": choice(["taller", "newer", "red"]),
                          "units": choice(["nautical miles", "miles", "kilometers"])
+                       }
+        elif scenario2=="ceiling":
+            angle=choice([85,..,89]+[91..95])
+            d=round(choice([2,2.25,..,5]),2)
+            units=choice(["inches","centimeters"])
+            if units=="centimeters":
+                d=2*d
+            e=round(d*sin(angle*pi/180)/sin((pi-angle*pi/180)/2),2)
+            variables2={ "angle": angle,
+                         "distance1": d,
+                         "distance2": e,
+                         "units": units,
                        }
 
 

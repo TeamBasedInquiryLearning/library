@@ -60,6 +60,17 @@
           <p><m>{{distance3}}</m> {{units}}</p>
         </outtro>
       <!--{{/airport}}-->
+      <!--{{#ceiling}}-->
+        <content>
+          <p>In a particular room, the ceiling meets the wall at a <m>{{angle}}^\circ</m>angle.  A trim carpenter wants 
+            to fit a piece of crown moulding that meets the ceiling and the wall both <m>{{distance1}}</m> {{units}} from the corner.
+            How wide should this piece of crown moulding be?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance2}}</m> {{units}}</p>
+        </outtro>
+      <!--{{/ceiling}}-->
       <!--{{#hiker}}-->
         <content>
           <p>A hiker walks in a straight line for <m>{{distance1}}</m> {{units}}.  They turn <m>{{angle}}^\circ</m>
