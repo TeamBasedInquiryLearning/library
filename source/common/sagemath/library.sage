@@ -239,6 +239,8 @@ class TBIL:
 
     @staticmethod
     def typeset_angle(theta,latex_delimiters=False):
+        if isinstance(theta,str):
+            return theta
         angle_string=f"{latex(theta)}"
         if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
             if numerator(theta)<0:
