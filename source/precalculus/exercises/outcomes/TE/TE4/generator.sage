@@ -5,8 +5,8 @@ class Generator(BaseGenerator):
         #Nice sides
         if choice([True,False]):
             a,b,c=choice(list(TBIL.pythagorean_triples(max_length=50)))
-            A=round(arctan(b/a)*180/pi,1)
-            B=round(arctan(a/b)*180/pi,1)
+            A=round(arctan(a/b)*180/pi,1)
+            B=round(arctan(b/a)*180/pi,1)
             C=90
         #Nice angles
         else:
