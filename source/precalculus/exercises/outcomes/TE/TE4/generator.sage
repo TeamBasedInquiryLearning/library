@@ -8,14 +8,18 @@ class Generator(BaseGenerator):
             A=round(arctan(a/b)*180/pi,1)
             B=round(arctan(b/a)*180/pi,1)
             C=90
+            sides_rounding="integer"
+            angles_rounding="tenth of a degree"
         #Nice angles
         else:
             C=90
             A=choice([10,15,..80])
             B=90-A
-            c=choice([5..15])
+            c=round(choice([5..15]),1)
             b=round(c*cos(B*pi/180),1)
             a=round(c*cos(A*pi/180),1)
+            sides_rounding="tenth"
+            angles_rounding="degree"
 
         
 
@@ -47,4 +51,6 @@ class Generator(BaseGenerator):
         return {
             "given": ",".join(given[:-1])+r",\text{ and }"+given[-1],
             "found": ",".join(found[:-1])+r",\text{ and }"+found[-1],
+            "sides_rounding": sides_rounding,
+            "angles_rounding": angles_rounding,
         }
