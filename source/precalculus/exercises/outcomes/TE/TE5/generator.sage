@@ -44,7 +44,7 @@ class Generator(BaseGenerator):
         angles=[a*pi/180 for a in sample([10,15,..,80],2)]
         angles.append(pi-angles[0]-angles[1])
         sides=[choice([5..15])]
-        sides.extend([round(sides[0]/sin(angles[0])*angles[i],1) for i in [1,2]])
+        sides.extend([round(sides[0]/sin(angles[0])*sin(angles[i]),1) for i in [1,2]])
         labels=[("a","A"),("b","B"),("c","C")]
         shuffle(labels)
         if choice([True,False]):
@@ -83,7 +83,6 @@ class Generator(BaseGenerator):
         shuffle(labels)
         if choice([True,False]):
             #Two solutions
-            print(f"b={b},A={angles[0]}, sin(A)={round(sin(angles[0]),2)}")
             a=choice([floor(b*sin(angles[0]))+1..b-1])
             sides=[a,b]
             B=arcsin(sides[1]/sides[0]*sin(angles[0]))
