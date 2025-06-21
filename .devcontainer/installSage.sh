@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# This file was automatically generated with PreTeXt 2.17.1.
-# If you modify this file, PreTeXt will no longer automatically update it.
+# This file is based upon PreTeXt 2.19.1.
 
 # Conda should already be installed in the codespace.  We need to add the conda-forge channel
 
@@ -13,10 +12,13 @@ conda config --set auto_activate_base false
 
 # Now create a conda environment for sage (called sage):
 conda create --yes -n sage sage python=3.12
+
 conda init
+
 echo 'conda activate sage' >> ~/.bashrc
 
 eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
 conda activate sage
 export SAGE_PATH=$(which sage)
 echo "<executables sage=\"${SAGE_PATH}\"/>" > ./executables.ptx
+
