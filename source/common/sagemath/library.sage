@@ -65,8 +65,8 @@ class TBIL:
             if type(label_unit_point) is tuple and len(label_unit_point)==2:
                 label=f"$\\left({label_unit_point[0]},{label_unit_point[1]}\\right)$"
             else:
-                label=f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$"
-            p+=text(label, (1.4*c for c in end_coordinate),color="black",fontsize="18")
+                label=f"$\\left({TBIL.typeset_angle(cos(end_angle))},{TBIL.typeset_angle(sin(end_angle))}\\right)$"
+            p+=text(label, (1.25*c for c in end_coordinate),color="black",fontsize="18")
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
         if show_triangle:
@@ -239,6 +239,8 @@ class TBIL:
 
     @staticmethod
     def typeset_angle(theta,latex_delimiters=False):
+        if isinstance(theta,str):
+            return theta
         angle_string=f"{latex(theta)}"
         if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
             if numerator(theta)<0:

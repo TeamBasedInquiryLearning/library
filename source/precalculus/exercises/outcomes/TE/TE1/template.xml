@@ -1,0 +1,28 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+  <knowl>
+    <content>
+      <p>Find the exact value of <m>{{trig1}}\left({{angle1}}\right)</m>.</p>
+    </content>
+    <outtro>
+      <p><m>{{trig1}}\left({{angle1}}\right)={{answer1}}</m></p>
+    </outtro>
+  </knowl>
+  <knowl>
+    <content>
+      <p>If <m>{{trig2}}(\theta)={{given2}}</m> and <m>\theta</m> lies in Quadrant {{quadrant}},
+        compute <m>{{trig22}}(\theta)</m>.</p>
+    </content>
+    <outtro>
+      <p><m>{{trig22}}(\theta)={{answer2}}</m></p>
+    </outtro>
+  </knowl>
+  <knowl>
+    <content>
+      <p>Rewrite <m>{{expr}}</m> using only first powers of sine and cosine.</p>
+    </content>
+    <outtro>
+      <p><m>{{expr}}={{answer3}}</m></p>
+    </outtro>
+  </knowl>
+
+</knowl>
