@@ -472,7 +472,7 @@ class TBIL:
 
     cscp = function("cscp",nargs=2,print_latex_func=print_cscp, derivative_func=deriv_cscp,power_func=power_cscp)
 
-    def trig_print(f):
+    def typeset_trigpowers(f):
         return f.substitute_function(sin(x)==TBIL.sinp(x,1)).substitute_function(cos(x)==TBIL.cosp(x,1)).substitute_function(tan(x)==TBIL.tanp(x,1)).substitute_function(sec(x)==TBIL.secp(x,1)).substitute_function(csc(x)==TBIL.cscp(x,1))
 
     # Linear Algebra

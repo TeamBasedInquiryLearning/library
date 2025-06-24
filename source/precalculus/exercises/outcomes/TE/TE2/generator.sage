@@ -14,8 +14,8 @@ class Generator(BaseGenerator):
         shuffle(identity2)
 
         return {
-            "expression1A": TBIL.trig_print(identity1[0]),
-            "expression1B": TBIL.trig_print(identity1[1]),
-            "expression2A": TBIL.trig_print(identity2[0]),
-            "expression2B": TBIL.trig_print(identity2[1]),
+            "expression1A": TBIL.typeset_trigpowers(identity1[0]),
+            "expression1B": TBIL.typeset_trigpowers(identity1[1]),
+            "expression2A": TBIL.typeset_trigpowers(identity2[0]),
+            "expression2B": TBIL.typeset_trigpowers(identity2[1]),
         }
