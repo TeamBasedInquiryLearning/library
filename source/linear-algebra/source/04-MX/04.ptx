@@ -315,24 +315,52 @@ Check your work using technology.
 <sage language="octave"/>
 
 <activity>
-    <introduction>
-      <p>Let <m>A</m> be <em>any</em> <m>4 \times 4</m> matrix.</p>
-    </introduction>
-      <task>
-        <statement>
-          <p> Give a <m>4 \times 4</m> matrix <m>M</m> that may be used to perform the row operation <m>-5 R_2 \to R_2</m>. </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p> Give a <m>4 \times 4</m> matrix <m>Y</m> that may be used to perform the row operation <m>R_2 \leftrightarrow R_3</m>. </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p> Use matrix multiplication to describe the matrix obtained by applying   <m>-5 R_2 \to R_2</m> and then <m>R_2 \leftrightarrow R_3</m>  to <m>A</m> (note the order). </p>
-        </statement>
-      </task>
+    <task>
+      <statement>
+        <p> Give a <m>3 \times 3</m> matrix <m>B</m> that may be used to perform the row operation <m>R_1 \leftrightarrow R_3</m>. </p>
+      </statement>
+      <answer>
+        <p>
+          <m>B=\left[\begin{array}{ccc} 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \end{array}\right]</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Give a <m>3 \times 3</m> matrix <m>C</m> that may be used to perform the row operation <m>R_3 + 5 R_2 \to R_3</m>. </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C=\left[\begin{array}{ccc} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 5 &amp; 1 \end{array}\right]</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Give a <m>3 \times 3</m> matrix <m>P</m> that may be used to perform the row operation <m>-4 R_1 \to R_1</m>. </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P=\left[\begin{array}{ccc} -4 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{array}\right]</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Give a single <m>3\times 3</m> matrix that may be used to first apply <m>R_1 \leftrightarrow R_3</m>, then <m>-4 R_1 \to R_1</m>, and finally <m>R_3 + 5 R_2 \to R_3</m> (note the order). </p>
+      </statement>
+      <answer>
+        <p> <m>CPB=\left[\begin{array}{ccc} 0 &amp; 0 &amp; -4 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 5 &amp; 0 \end{array}\right]</m> </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p> Show how to manually apply those row operations to <m>A= \left[\begin{array}{ccc} 0 &amp; 1 &amp; 2 \\ 2 &amp; -5 &amp; -8 \\ 1 &amp; -4 &amp; -7 \end{array}\right]</m>, then use technology to verify that your matrix in the previous task gives the same result. </p>
+      </statement>
+      <answer>
+        <p> <me>\left[\begin{array}{ccc} 0 &amp; 1 &amp; 2 \\ 2 &amp; -5 &amp; -8 \\ 1 &amp; -4 &amp; -7 \end{array}\right]\sim\cdots\sim\left[\begin{array}{ccc} -4 &amp; 16 &amp; 28 \\ 2 &amp; -5 &amp; -8 \\ 10 &amp; -24 &amp; -38 \end{array}\right]</me> <me>CPBA=\left[\begin{array}{ccc} -4 &amp; 16 &amp; 28 \\ 2 &amp; -5 &amp; -8 \\ 10 &amp; -24 &amp; -38 \end{array}\right]</me> </p>
+      </answer>
+    </task>
   </activity>
 
 <sage language="octave"/>

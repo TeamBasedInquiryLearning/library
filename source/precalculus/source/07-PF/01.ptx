@@ -217,7 +217,7 @@
               </row>
               <row bottom="minor">
                 <cell><m>\dfrac{11\pi}{6}</m></cell>
-                <cell> <m>-\dfrac{\sqrt{1}}{2}</m></cell>
+                <cell> <m>-\dfrac{1}{2}</m></cell>
                 <cell> <m>-0.5</m> </cell>               
               </row>
               <row bottom="minor">
@@ -1163,7 +1163,158 @@ P
     
   </activity>
 
+  <activity>
+    <introduction>
+      <p>Find an expression for each of the following transformations of the sine and cosine functions.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p><m>\sin(x)</m> with a phase shift left by <m>\pi</m> and an amplitude of <m>3</m>.
+        </p>
+      </statement>
+      <answer>
+        <p><m>3\sin(x+\pi)</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>\cos(x)</m> with a phase shift right by <m>\dfrac{\pi}{2}</m> and a period of <m>\pi</m>.
+        </p>
+      </statement>
+      <answer>
+        <p><m>\cos\left(2\left(x-\dfrac{\pi}{2}\right)\right)</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>\sin(x)</m> with a phase shift right by <m>\dfrac{\pi}{6}</m>, 
+          a period of <m>\dfrac{\pi}{3}</m>,
+          and an amplitude of <m>5</m>.
+        </p>
+      </statement>
+      <answer>
+        <p><m>5\sin\left(6\left(x+\dfrac{\pi}{6}\right)\right)</m></p>
+      </answer>
+    </task>
+  </activity>
 
+  <activity>
+    <introduction>
+      <p>To graph <m>f(x)=3\sin(2x-\pi)-3</m>, lets apply one transformation at a time.</p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Which of the following is equivalent to <m>f(x)=3\sin(2x-\pi)-3</m>?</p>
+        <ol marker="A.">
+          <li><m>3\sin\left(2\left(x-\pi\right)\right)-3</m></li>
+          <li><m>3\sin\left(2\left(x-\dfrac{\pi}{2}\right)\right)-3</m></li>
+          <li><m>3\sin\left(2\left(x-\dfrac{\pi}{3}\right)\right)-2</m></li>
+          <li><m>3\sin\left(2\left(x-2\pi\right)\right)-3</m></li>
+        </ol>
+      </statement>
+      <answer>
+        <p>B.</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Graph the function <m>f_1(x) = \sin\left(2x\right)</m>.</p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(2*x),(-2*pi,2*pi))
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Graph the function <m>f_2(x) = \sin\left(2\left(x-\dfrac{\pi}{2}\right)\right)</m>.</p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(sin(2*(x-pi/2)),(-2*pi,2*pi))
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Graph the function <m>f_3(x) = 3\sin\left(2\left(x-\dfrac{\pi}{2}\right)\right)</m>.</p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(3*sin(2*(x-pi/2)),(-2*pi,2*pi))
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>Graph the function <m>f_4(x) = 3\sin\left(2\left(x-\dfrac{\pi}{2}\right)\right)-3</m>.</p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(3*sin(2*(x-pi/2))-3,(-2*pi,2*pi))
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+  </activity>
+   
+  <activity>
+    <introduction>
+      <p>Graph each of the following functions.</p>
+    </introduction>
+    <task>
+      <statement>
+        <p><m>2\sin\left(3x-\pi\right)+4</m></p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(2*sin(3*x-pi)+4,(-2*pi,2*pi),ymin=0)
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>4\cos\left(2x+2\pi\right)+1</m></p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(4*cos(2*x+2*pi)+1,(-2*pi,2*pi))
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p><m>-3\sin\left(4x-\dfrac{\pi}{2}\right)+1</m></p>
+      </statement>
+      <answer>
+        <image>
+          <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+TBIL.trig_plot(-3*sin(4*x-pi/2)+1,(-2*pi,2*pi))
+          </sageplot>
+        </image>
+      </answer>
+    </task>
+  </activity>
 
     </subsection>
 

@@ -692,7 +692,7 @@
                 p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
                 p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
                 p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,-1),(x,-7,7),color='red',linestyle="--")
+                p+=parametric_plot((x,-0.5),(x,-7,7),color='red',linestyle="--")
                 p+=text('Graph B', (0, 8), fontsize=18, color='black')
                 p
               </sageplot>
@@ -703,7 +703,7 @@
                 p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
                 p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
                 p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,1),(x,-7,7),color='red',linestyle="--")
+                p+=parametric_plot((x,0.5),(x,-7,7),color='red',linestyle="--")
                 p+=text('Graph C', (0, 8), fontsize=18, color='black')
                 p
               </sageplot>
@@ -727,7 +727,7 @@
                 p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
                 p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
                 p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
+                p+=parametric_plot((x,0.5),(x,-7,7),color='red',linestyle="--")
                 p+=text('Graph E', (0, 8), fontsize=18, color='black')
                 p 
               </sageplot>

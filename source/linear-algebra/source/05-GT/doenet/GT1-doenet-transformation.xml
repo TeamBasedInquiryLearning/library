@@ -1,0 +1,51 @@
+<!-- https://doenet.org/portfolioeditor/_oFYLXyVTH7BX69oGFuIwo/_7HL4O4ZpoUxWoUVMW9IfH -->
+<p>
+  Use the slider to visualize the transformation
+  of the unit square by a <m>2\times 2</m> matrix.
+</p>
+<slider from="0" to="1" showValue="false" name="t" step="0.01">
+  <label>Drag from 0 to 1 to view transformation.</label>
+</slider>
+<setup>
+  <math simplify  name="c">$cv.x/$v.x</math>
+  <point name="te1">((1-$t)+$v.x*$t,$v.y*$t)</point>
+  <point name="te2">($w.x*$t,(1-$t)+$w.y*$t)</point>
+<number name="area">
+  $te1.x*$te2.y-$te1.y*$te2.x
+</number>
+<number name="polygonStyle">
+  <conditionalContent>
+    <case condition="$area<0">3</case>
+    <case condition="$area>=0">4</case>
+  </conditionalContent>
+</number>
+</setup>
+  <graph xmin="-1" ymin="-1" xmax="7" ymax="7">
+    <lineSegment styleNumber="1" endpoints="(0,0) $v"/>
+    <point name="v" styleNumber="1" >
+      (3,2)
+      <label><m>\vec v</m></label>
+      <constraints>
+        <constrainToGrid dx="0.2" dy="0.2"/>
+      </constraints>
+    </point>
+    <lineSegment styleNumber="2" endpoints="(0,0) $w"/>
+    <point name="w" styleNumber="2" >
+      (1,4)
+      <label><m>\vec w</m></label>
+      <constraints>
+        <constrainToGrid dx="0.2" dy="0.2"/>
+      </constraints>
+    </point>
+    <polygon vertices="(0,0) (1,0) (1,1) (0,1)" draggable="false" styleNumber="6"/>
+    <polygon vertices="(0,0) $v $v+$w $w" draggable="false" styleNumber="6"/>
+    <polygon vertices="(0,0) $te1 $te1+$te2 $te2" filled draggable="false" styleNumber="$polygonStyle"/>
+    <lineSegment styleNumber="1" endpoints="(0,0) $te1"/>
+    <lineSegment styleNumber="2" endpoints="(0,0) $te2"/>
+    <m anchor="(5,5)">
+      \text{Area }= $area
+    </m>
+    <m anchor="(5,6)">
+      A= \left[\begin{array}{cc} $v.x \amp $w.x \\ $v.y \amp $w.y \end{array}\right]
+    </m>
+  </graph>

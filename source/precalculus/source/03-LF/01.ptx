@@ -768,13 +768,15 @@
 </task>
 
 <task>
-  <image xml:id="horizontal-line">
-    <sageplot>
-      f(x) = 0*x+5
-      p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]])
-      p
-    </sageplot>
-  </image>
+  <statement>
+    <image xml:id="horizontal-line">
+      <sageplot>
+        f(x) = 0*x+5
+        p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]])
+        p
+      </sageplot>
+    </image>
+  </statement>
   <answer>
     <p>
       <m>m=0</m>

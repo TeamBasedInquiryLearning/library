@@ -1,0 +1,11 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+      <content>
+        <p>In triangle <m>ABC</m>, <m>{{given}}.</m> Solve the triangle, i.e. find all remaining sides and angles.
+        Round side lengths to the nearest {{sides_rounding}}, and angles to the nearest {{angles_rounding}}.</p>
+      </content>
+      <outtro>
+        <p><m>{{found}}</m></p>
+      </outtro>
+    </knowl>
+</knowl>

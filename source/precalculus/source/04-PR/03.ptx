@@ -196,15 +196,14 @@ Use the graphs of the following polynomial functions to answer the questions bel
   </statement>
 </definition>
 
-<activity
-    xml:id="degree-and-leading-coefficient-of-polynomial-graphs">
-      <introduction>
+<activity xml:id="degree-and-leading-coefficient-of-polynomial-graphs">
+      <introduction> <p>
 Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-functions"/> and look at the equations of those polynomial functions. Let's apply <xref ref="def-degree-and-leading-coefficient"/> to see if we can determine how the degree and leading coefficients of those graphs affect their end behavior.
 <ul><li> Graph A: <m>f(x)=-11x^3+32+42x^2+x^4-64x</m> </li>
   <li> Graph B: <m>g(x)=2x^2+3-4x^3</m></li>
   <li> Graph C: <m>h(x)=x^7+2x^3-5x^2+2</m></li>
   <li> Graph D: <m>j(x)=3x^2-2x^4-5</m></li> 
-</ul>
+</ul></p>
 <sbsgroup>
   <sidebyside width="50%">
     <image>
@@ -668,7 +667,7 @@ xml:id="intro-to-multiplicities">
     <task> 
       <statement>
         <p> Estimate where any local maximums and minimums may occur.</p>
-        </statement>
+      </statement>
         <answer>
           <p>
             Minimum occurs between <m>x=-1</m> and <m>x=2</m>.  Then a maximum at <m>x=3</m>
@@ -678,13 +677,18 @@ xml:id="intro-to-multiplicities">
   </activity>
 
   <activity xml:id="use-information-to-sketch-graph-of-polynomial">
-    <introduction>
-      <p> Sketch the graph of a function <m>f(x) </m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph. </p>
-    </introduction>
-    <ul><li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
-    <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
-    <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
-    </ul>
+    <statement>
+      <p>
+        Sketch the graph of a function <m>f(x) </m> that meets all of the 
+        following criteria. Be sure to scale your axes and label any important 
+        features of your graph.
+        <ul>
+          <li> The <m> x</m>-intercepts of <m> f(x)</m> are <m> 0, 2,</m> and <m> 5 </m>. </li>
+          <li> <m>0</m> and <m>2</m> have even multiplicity and <m>5</m> has odd multiplicity. </li>
+          <li> The end behavior of <m> f(x)</m> is given as: As <m> x\to \infty</m>, <m>f(x)\to\infty</m> and As <m> x\to -\infty</m>, <m>f(x)\to-\infty</m></li>
+        </ul>
+      </p>
+    </statement>
     <answer>
       <p>
         One such graph is

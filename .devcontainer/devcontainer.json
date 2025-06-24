@@ -1,0 +1,71 @@
+// This file was originally generated with PreTeXt 2.17.1.
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {},
+
+  "postCreateCommand": "bash scripts/setup.sh",
+  "postAttachCommand": "bash scripts/download-cache.sh",
+
+  // Port forwarding
+  // ---------------
+  // This is needed by the CodeChat Server.
+  "forwardPorts": [
+    // The port used for a Thrift connection between the VSCode CodeChat
+    // extension and the CodeChat Server.
+    27376,
+    // The port used for an HTTP connection from the CodeChat Client to
+    // the CodeChat Server.
+    27377,
+    // The port used by a websocket connection between the CodeChat
+    // Server and the CodeChat Client.
+    27378
+  ],
+  // See the [docs](https://containers.dev/implementors/json_reference/#port-attributes).
+  "portsAttributes": {
+    "27376": {
+      "label": "VSCode extension <-> CodeChat Server",
+      "requireLocalPort": true
+    },
+    "27377": {
+      "label": "CodeChat Client",
+      "requireLocalPort": true
+    },
+    "27378": {
+      "label": "CodeChat Client<->Server websocket",
+      "requireLocalPort": true
+      // This port needs to be public; however, there's no way to specify port visibility here. See `server.py` in the CodeChat Server for details.
+    }
+  },
+
+  
+  // Configure tool-specific properties.
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["codespace-welcome.md"]
+    },
+    "vscode": {
+      "settings": {
+        "workbench.editorAssociations": {
+          "codespace-welcome.md": "vscode.markdown.preview.editor"
+        },
+        "editor.quickSuggestions": {
+          "other": "off"
+        },
+        "editor.snippetSuggestions": "top",
+        "xml.validation.enabled": false,
+        "pretext-tools.schema.versionName": "Custom",
+        "pretext-tools.schema.customPath": "/workspaces/library/schema/tbil.rng",
+        "redhat.telemetry.enabled": false,
+        "CodeChat.CodeChatServer.Command": "CodeChat_Server",
+        "files.eol": "\n",
+        "git.autofetch": true
+      },
+      "extensions": [
+        "oscarlevin.pretext-tools",
+        "CodeChat.codechat",
+        "streetsidesoftware.code-spell-checker",
+        "lov3.sagemath-enhanced"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+      <p>Solve each of the following equations.</p>
+    </intro>
+    <knowl>
+      <content>
+        <p>Find all solutions of the equation <me>{{equation1}}.</me></p>
+      </content>
+      <outtro>
+        <p><m>{{solutions1}}</m></p>
+      </outtro>
+    </knowl>
+    <knowl>
+      <content>
+        <p>Find all solutions in the interval <m>[0,2\pi)</m> of the equation <me>{{equation2}}.</me></p>
+      </content>
+      <outtro>
+        <p><m>{{solutions2}}</m></p>
+      </outtro>
+    </knowl>
+    <knowl>
+      <content>
+        <p>Find all solutions in the interval <m>[0,2\pi)</m> of the equation <me>{{equation3}}.</me></p>
+      </content>
+      <outtro>
+        <p><m>{{solutions3}}</m></p>
+      </outtro>
+    </knowl>
+</knowl>

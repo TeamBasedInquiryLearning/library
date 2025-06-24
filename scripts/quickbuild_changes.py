@@ -34,10 +34,10 @@ def main():
         t = p.get_target(f"{b}-web-instructor")
         if len(xml_ids) > 0:
             print(f"Building book `{b}`, skipping images")
-            path = f"/preview/{b}/instructor"
+            path = f"/preview/{b}"
             t.build(xmlid=None, no_knowls=True, generate=False)
             preview_links.append({
-                "file": b,
+                "file": Path("source", b),
                 "path": path
             })
         built_ids = set()
@@ -48,7 +48,7 @@ def main():
                 built_ids.add(xml_id["id"])
             preview_links.append({
                 "file": xml_id["file"],
-                "path": f"/preview/{b}/instructor/{xml_id["id"]}.html"
+                "path": f"/preview/{b}/{xml_id["id"]}.html"
             })
     # for each CheckIt file, build its preview
     for b in BOOKS:
@@ -56,7 +56,8 @@ def main():
         changed_outcomes = set()
         for f in changed_files:
             if Path("source", b, "exercises", "outcomes") in f.parents:
-                changed_outcomes.add(f.parent.name)
+                if f.parent.name not in changed_outcomes:
+                    changed_outcomes.add(f.parent.name)
         # build changed outcomes
         for o in changed_outcomes:
             sandbox_bank_path = preview_outcome.build_preview(b, o)
@@ -64,8 +65,8 @@ def main():
             output_path.mkdir(parents=True)
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
             preview_links.append({
-                "file": f,
-                "path": f"/preview/{b}/instructor/exercises/{o}/"
+                "file": Path("source", b, "exercises", "outcomes", o),
+                "path": f"/preview/{b}/exercises/{o}/"
             })
 
 
@@ -80,4 +81,3 @@ def main():
         
 if __name__ == "__main__":
     main()
-

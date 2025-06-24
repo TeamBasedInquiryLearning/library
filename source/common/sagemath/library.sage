@@ -1,6 +1,22 @@
 class TBIL:
 
     # Precal/Cal
+    @staticmethod
+    def special_angles(n=0,min=0,max=2*pi,include_min=True,include_max=False,list=False):
+        angle_min = floor(min*12/pi)
+        if  angle_min < min*12/pi or include_min:
+            lower=angle_min
+        else:
+            lower=angle_min+1
+        angle_max = ceil(max*12/pi)
+        if  angle_max < max*12/pi or include_max:
+            upper=angle_max
+        else:
+            upper=angle_max-1
+        if list or not isinstance(n,sage.rings.integer.Integer) or n<=0:
+            return [pi*i/12 for i in range(lower,upper+1) if not Zmod(12)(i).is_unit()]
+        else:
+            return sample([pi*i/12 for i in range(lower,upper+1) if not Zmod(12)(i).is_unit()],n)
 
     @staticmethod
     def plot_angle(
@@ -20,8 +36,8 @@ class TBIL:
             angle_label = f"${latex(angle*180/pi)}^\\circ$"
             reference_angle_label = f"${latex(reference_angle*180/pi)}^\\circ$"
         else:
-            angle_label = TBIL.typeset_angle(angle)
-            reference_angle_label = TBIL.typeset_angle(reference_angle)
+            angle_label = TBIL.typeset_angle(angle,latex_delimiters=True)
+            reference_angle_label = TBIL.typeset_angle(reference_angle,latex_delimiters=True)
 
         reference_coordinate = (cos(reference_angle),sin(reference_angle))
         mid_reference_angle=reference_angle/2
@@ -49,8 +65,8 @@ class TBIL:
             if type(label_unit_point) is tuple and len(label_unit_point)==2:
                 label=f"$\\left({label_unit_point[0]},{label_unit_point[1]}\\right)$"
             else:
-                label=f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$"
-            p+=text(label, (1.4*c for c in end_coordinate),color="black",fontsize="18")
+                label=f"$\\left({TBIL.typeset_angle(cos(end_angle))},{TBIL.typeset_angle(sin(end_angle))}\\right)$"
+            p+=text(label, (1.25*c for c in end_coordinate),color="black",fontsize="18")
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
         if show_triangle:
@@ -222,13 +238,17 @@ class TBIL:
         return P
 
     @staticmethod
-    def typeset_angle(theta):
-        angle_string=f"${latex(theta)}$"
+    def typeset_angle(theta,latex_delimiters=False):
+        if isinstance(theta,str):
+            return theta
+        angle_string=f"{latex(theta)}"
         if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
             if numerator(theta)<0:
-                angle_string = f"$-\\dfrac{{{latex(-1*numerator(theta))}}}{{{denominator(theta)}}}$"
+                angle_string = f"-\\dfrac{{{latex(-1*numerator(theta))}}}{{{denominator(theta)}}}"
             else:
-                angle_string = f"$\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}$"
+                angle_string = f"\\dfrac{{{latex(numerator(theta))}}}{{{denominator(theta)}}}"
+        if latex_delimiters:
+            angle_string="$"+angle_string+"$"
         return angle_string
 
     @staticmethod
@@ -259,7 +279,7 @@ class TBIL:
         custom_tick_labels=[]
         for x in [xmin+delta*i for i in [0.. int((xmax-xmin)/delta)]]:
             custom_ticks.append(x)
-            custom_tick_labels.append(TBIL.typeset_angle(x))
+            custom_tick_labels.append(TBIL.typeset_angle(x,latex_delimiters=True))
                 
         #Default formatting
         if 'color' not in kwds.keys():
@@ -328,6 +348,21 @@ class TBIL:
         else:
             slope= (point2[1]-point1[1])/(point2[0]-point1[0])
             return TBIL.line_from_point_slope(point1,slope)
+
+    @staticmethod
+    def pythagorean_triples(max_length=100):
+        '''Returns the set of Pythagorean triples with all sides less than or equal to max_length'''
+        l=max_length
+        triples=set()
+        for n in [1..floor(sqrt(l/2))]:
+            for m in [n+r for r in [1..(sqrt(l+n^2)-n)]]:
+                triple = [m^2-n^2,2*m*n,m^2+n^2]
+                triple.sort()
+                if triple[2]<l:
+                    triples |= set([ (r*triple[0],r*triple[1],r*triple[2]) for r in [1..floor(l/triple[2])]])
+    
+        return triples
+
 
     @staticmethod
     def line_from_point_slope(point,slope):
