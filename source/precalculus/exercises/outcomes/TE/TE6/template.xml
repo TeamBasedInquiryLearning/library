@@ -46,6 +46,19 @@
           <p><m>{{distance}}\ \text{ft}</m>, or about <m>{{distance_miles}}</m> miles</p>
         </outtro>
       <!--{{/angleofclimb}}-->
+      <!--{{#fire}}-->
+        <content>
+          <p>In {{park}}, two fire towers are located <m>{{distance}}</m> miles apart.  Ranger {{ranger1}}
+             is in one tower, and measures that the fire is <m>{{angle1}}^\circ</m> to the {{direction1}} of
+             the other tower.  Ranger {{ranger2}} is in the other tower, and measures that the fire is 
+             <m>{{angle2}}^\circ</m> to the {{direction2}} of the first tower.  Which ranger is closer to the 
+             fire, and how far away are they from the fire? 
+          </p>
+        </content>
+        <outtro>
+          <p>Ranger {{ranger_answer}} is <m>{{answer}}</m> miles from the fire. </p>
+        </outtro>
+      <!--{{/fire}}-->
     <!-- Second task options -->
       <!--{{#airport}}-->
         <content>

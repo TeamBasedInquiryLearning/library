@@ -4,7 +4,7 @@ class Generator(BaseGenerator):
 
         names=["Mateo", "Nina", "Ophelia", "Pierre", "Quinn", "Rosa", "Serena", "Thad", "Ursula","Victor"]
 
-        scenario1=choice(["ladder","elevation","angleofclimb"])
+        scenario1=choice(["ladder","elevation","angleofclimb","fire"])
         #Ladder against a building
         if scenario1=="ladder":
             ladder_length=choice([12,16,..,48])
@@ -43,6 +43,42 @@ class Generator(BaseGenerator):
                           "distance": distance,
                           "distance_miles": round(distance/5280,0),
                        }
+        elif scenario1=="fire":
+            angles=sample([40..70],2)
+            angles.sort()
+            angle3 = 180-angles[0]-angles[1]
+            distance=choice([10..40])
+            d=round(sin(angle3*pi/180)/sin(angles[0]*pi/180)*distance,1)
+
+            rangers=sample(["Arata", "Botha", "Chang", "Dinh", "Emerson", "Fabian", "Hernandez", "Ishikawa", 
+                            "Jones", "Khoury", "Lee", "Martinez", "Naser", "Okpara", "Rodriguez", 
+                            "Shalhoub", "Thomas", "Williams", "Zhang"],2)
+            ranger_answer=rangers[0]
+            if choice([True,False]):
+                angles.reverse()
+                rangers.reverse()
+
+            directions=["left","right"]
+            shuffle(directions)
+
+            variables1 = {
+                            "park": choice(["Yosemite National Park", "the Sierra National Forest", 
+                                            "Sequoia National Park", "Kings Canyon National Park",
+                                            "the Stanislaus National Forest", "the Tahoe National Forest",
+                                            "Pinnacles National Park", "the Inyo National Forest",
+                                            "the Sequoia National Forest"]),
+                            "distance": distance,
+                            "angle1": angles[0],
+                            "angle2": angles[1],
+                            "ranger1": rangers[0],
+                            "ranger2": rangers[1],
+                            "direction1": directions[0],
+                            "direction2": directions[1],
+                            "answer": d,
+                            "ranger_answer": ranger_answer,
+                         }
+
+
 
 
 
