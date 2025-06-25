@@ -59,6 +59,19 @@
           <p>Ranger {{ranger_answer}} is <m>{{answer}}</m> miles from the fire. </p>
         </outtro>
       <!--{{/fire}}-->
+      <!--{{#scuba}}-->
+        <content>
+          <p>{{name1}} and {{name2}} are scuba diving and are <m>{{depth}}</m> meters below the surface of the water,
+            and are horizontally <m>{{distance}}</m> meters apart.
+            They spot a {{animal}} swimming below them.  The angle of depression from {{name1}} to the {{animal}} is 
+            <m>{{angle1}}^\circ</m> and the angle of depression from {{name2}} to the {{animal}} is <m>{{angle2}}^\circ</m>.
+            How far is each diver from the {{animal}}?
+          </p>
+        </content>
+        <outtro>
+          <p>{{name1}} is <m>{{distance1}}</m> meters away and {{name2}} is <m>{{distance2}}</m> meters away. </p>
+        </outtro>
+      <!--{{/scuba}}-->
     <!-- Second task options -->
       <!--{{#airport}}-->
         <content>

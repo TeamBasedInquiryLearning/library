@@ -4,7 +4,7 @@ class Generator(BaseGenerator):
 
         names=["Mateo", "Nina", "Ophelia", "Pierre", "Quinn", "Rosa", "Serena", "Thad", "Ursula","Victor"]
 
-        scenario1=choice(["ladder","elevation","angleofclimb","fire"])
+        scenario1=choice(["ladder","elevation","angleofclimb","fire","scuba"])
         #Ladder against a building
         if scenario1=="ladder":
             ladder_length=choice([12,16,..,48])
@@ -53,7 +53,7 @@ class Generator(BaseGenerator):
             rangers=sample(["Arata", "Botha", "Chang", "Dinh", "Emerson", "Fabian", "Hernandez", "Ishikawa", 
                             "Jones", "Khoury", "Lee", "Martinez", "Naser", "Okpara", "Rodriguez", 
                             "Shalhoub", "Thomas", "Williams", "Zhang"],2)
-            ranger_answer=rangers[0]
+            ranger_answer=rangers[1]
             if choice([True,False]):
                 angles.reverse()
                 rangers.reverse()
@@ -77,6 +77,43 @@ class Generator(BaseGenerator):
                             "answer": d,
                             "ranger_answer": ranger_answer,
                          }
+        elif scenario1=="scuba":
+            angles=sample([40..70],2)
+            #angles.sort()
+            angle3 = 180-angles[0]-angles[1]
+            distance=choice([10..40])
+            d1=round(sin(angle3*pi/180)/sin(angles[1]*pi/180)*distance,1)
+            d2=round(sin(angle3*pi/180)/sin(angles[0]*pi/180)*distance,1)
+
+            names=sample([
+                        "Astera", "Alexi",
+                        "Boudica", "Byron",
+                        "Claudette", "Carlos",
+                        "Devonta", "Deborah",
+                        "Evie", "Envita",
+                        "Federico", "Frankie",
+                        "Greny", "Greta",
+                        "Hani", "Harlin",
+                        "Inigo", "Imogene",
+                        "Jun Young", "Jarvis",
+                        "Khalil", "Kiara",
+                        "Lisandro","Leslie",
+                        "Marcelo", "Melissa",
+                        "Nicolas", "Nicole",
+                        "Pedro", "Pham",
+                        "Raquel", "Rodrigo" ],2)
+
+            variables1 = {
+                            "depth": choice([5..25]),
+                            "animal": choice(["leopard shark", "green moray", "manta ray", "sea turtle"]),
+                            "distance": distance,
+                            "angle1": angles[0],
+                            "angle2": angles[1],
+                            "name1": names[0],
+                            "name2": names[1],
+                            "distance1": d1,
+                            "distance2": d2,
+                         } 
 
 
 
