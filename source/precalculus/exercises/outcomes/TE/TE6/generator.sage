@@ -66,7 +66,7 @@ class Generator(BaseGenerator):
         elif scenario2=="hiker":
             d1,d2=sample([2..10],2)
             angle=choice([20,25,..,80]+[100,105..,140])
-            distance=round(sqrt(d1^2+d2^2-2*d1*d2*cos(angle*pi/180)),1)
+            distance=round(sqrt(d1^2+d2^2-2*d1*d2*cos(pi-angle*pi/180)),1)
             variables2={ "distance1": d1,
                         "distance2": d2,
                         "angle": angle,
