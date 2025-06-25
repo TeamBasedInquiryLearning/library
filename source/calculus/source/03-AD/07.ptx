@@ -42,9 +42,11 @@
                <li><p>Decreasing and concave up</p></li>
                <li><p>Decreasing and concave down</p></li>
             </ol>
-
-     
-        
+            <answer>
+              <p>
+                D: Decreasing and concave down.
+              </p>
+            </answer>
     </activity>
     
  <activity xml:id="activity-graphing-der-signs">
@@ -74,10 +76,16 @@
                <li><p><m>f'&lt;0</m> and <m>f''&gt;0</m></p></li>
                <li><p><m>f'&lt;0</m> and <m>f''&lt;0 </m></p></li>
             </ol>
+            <answer>
+              <p>
+                B: <m>f'&gt;0</m> and <m>f''&lt;0 </m>
+              </p>
+            </answer>
 </task>
      
      <task>
     <p>For each of the <em>other</em> three answer choices, sketch a curve that matches that description.</p> 
+
      </task>
      
         
@@ -199,14 +207,32 @@ Assume that <m>f(x)</m> has vertical asymptotes at each
         
         <task><p>
 List all the asymptotes of <m>f(x)</m> and mark them on the graph.
-        </p></task>
+        </p>
+        <answer>
+          <p>
+            The asymptotes occur at <m>x = -3</m>, <m>x = 0</m>, <m>x = 2</m>, and <m>x = 8</m>.
+          </p>
+        </answer>
+      </task>
  
                 <task><p>
 Does <m>f(x)</m> have any local maxima or local minima? If so, at what point(s)?
-        </p></task>
+        </p>
+        <answer>
+          <p>
+            There is a local maximum at <m>x = -6</m> and a local minimum at <m>x=5</m>.
+          </p>
+        </answer>
+      </task>
                         <task><p>
 Does <m>f(x)</m> have any inflection points? If so, at what point(s)?
-        </p></task>
+        </p>
+        <answer>
+          <p>
+            There are inflection points at <m>x = -8</m> and <m>x=0</m>.
+          </p>
+        </answer>
+      </task>
  
         
         <task><p>
@@ -240,12 +266,63 @@ Use the information provided to sketch a reasonable graph of <m>f(x)</m>. Watch 
 Note that some of the graphs below are definitely hard... might want to tell this to instructors or break in two
      -->    
     <introduction>Sketch the graph of each of the following functions using the guide to curve sketching found in <xref ref="guide-curve-sketching"/></introduction>
-                <task><m>f(x)=x^4-4x^3+10</m></task>
-                <task><m>f(x)=\frac{x^2-4}{x^2-9}</m></task>
-            <task><p><m>f(x)=x+2\cos x</m> on the interval <m>[0,2\pi]</m></p></task>
-                <task><m>f(x)=\frac{x^2+x-2}{x+3}</m></task>
-                <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m></task>
-                <task><m>f(x)=x^6+\frac{12}{5}x^5-12x^4+10</m></task>  
+                <task><m>f(x)=x^4-4x^3+10</m>
+                <answer>
+                  <image>
+                    <sageplot>
+                      x = var('x')
+                      plot(x^4-4*x^3+10,(x,-2,4),color='black')
+                    </sageplot>
+                  </image>
+                </answer>
+                </task>
+                <task><m>f(x)=\frac{x^2-4}{x^2-9}</m>
+                <answer>
+                  <image>
+                    <sageplot>
+                      x = var('x')
+                      plot((x^2-4)/(x^2-9),(x,-4,4),color='black', ymax = 10, ymin = -10)
+                    </sageplot>
+                  </image>
+                </answer>
+                </task>
+            <task><p><m>f(x)=x+2\cos x</m> on the interval <m>[0,2\pi]</m></p>
+            <answer>
+              <image>
+                    <sageplot>
+                      x = var('x')
+                      plot(x+2*cos(x),(x,0,2*pi),color='black')
+                    </sageplot>
+                  </image>
+            </answer></task>
+                <task><m>f(x)=\frac{x^2+x-2}{x+3}</m>
+                <answer>
+                  <image>
+                    <sageplot>
+                      x = var('x')
+                      plot((x^2+x-2)/(x+3),(x,-5,2),color='black', ymax = 10, ymin = -20)
+                    </sageplot>
+                  </image>
+                </answer></task>
+                <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m>
+                <answer>
+                  <image>
+                    <sageplot>
+                      x = var('x')
+                      plot(x/sqrt(x^2+2),(x,-5,5),color='black')
+                    </sageplot>
+                  </image>
+                </answer></task>
+                <task><m>f(x)=x^6+\frac{12}{5}x^5-12x^4+10</m>
+                <answer>
+                  <image>
+                    <sageplot>
+                      x = var('x')
+                      plot(x^6 + (12/5)*x^5-12*x^4 + 10, (x,-5,3),color='black')
+                    </sageplot>
+                  </image>
+                </answer>
+                </task>  
     </activity>
     </subsection>
     <subsection>
