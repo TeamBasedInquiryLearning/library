@@ -1,0 +1,148 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+  <!--{{#tasks}}-->
+  <knowl>
+    <!-- First task options -->
+      <!--{{#ladder}}-->
+        <content>
+          <p>A <m>{{ladder}}\ \text{ft}</m> ladder is leaned against a wall that is
+            <m>{{height}}\ \text{ft}</m> tall.  What angle does the ladder make with the ground?</p>
+        </content>
+        <outtro>
+          <p><m>{{angle}}^\circ</m></p>
+        </outtro>
+      <!--{{/ladder}}-->
+      <!--{{#elevation}}-->
+        <!--{{#scenarioA}}-->
+        <content>
+          <p>{{name}} is standing on top of a cliff <m>{{height}}</m> {{units}} above a lake.
+             They see a boat on the lake, and measure an angle of depression from the horizon
+             to the boat of <m>{{angle}}^\circ</m>.  How far away from {{name}} is the boat?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance}}</m> {{units}}</p>
+        </outtro>
+        <!--{{/scenarioA}}-->
+        <!--{{#scenarioB}}-->
+        <content>
+          <p>{{name}} sees a person on top of a <m>{{height}}</m> {{units}} tall cliff.
+             They measure an angle of elevation from the ground to the person of <m>{{angle}}^\circ</m>.  
+             How far away from {{name}} is the other person?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance}}</m> {{units}}</p>
+        </outtro>
+        <!--{{/scenarioB}}-->
+      <!--{{/elevation}}-->
+      <!--{{#angleofclimb}}-->
+        <content>
+          <p>An airplane takes off from a runway and climbs at angle of <m>{{angle}}^\circ</m>. 
+            How far along the ground does the plane need to travel to reach an altitude of 
+            <m>{{height}}\ \text{ft}</m>? 
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance}}\ \text{ft}</m>, or about <m>{{distance_miles}}</m> miles</p>
+        </outtro>
+      <!--{{/angleofclimb}}-->
+      <!--{{#fire}}-->
+        <content>
+          <p>In {{park}}, two fire towers are located <m>{{distance}}</m> miles apart.  Ranger {{ranger1}}
+             is in one tower, and measures that the fire is <m>{{angle1}}^\circ</m> to the {{direction1}} of
+             the other tower.  Ranger {{ranger2}} is in the other tower, and measures that the fire is 
+             <m>{{angle2}}^\circ</m> to the {{direction2}} of the first tower.  Which ranger is closer to the 
+             fire, and how far away are they from the fire? 
+          </p>
+        </content>
+        <outtro>
+          <p>Ranger {{ranger_answer}} is <m>{{answer}}</m> miles from the fire. </p>
+        </outtro>
+      <!--{{/fire}}-->
+      <!--{{#scuba}}-->
+        <content>
+          <p>{{name1}} and {{name2}} are scuba diving and are <m>{{depth}}</m> meters below the surface of the water,
+            and are horizontally <m>{{distance}}</m> meters apart.
+            They spot a {{animal}} swimming below them.  The angle of depression from {{name1}} to the {{animal}} is 
+            <m>{{angle1}}^\circ</m> and the angle of depression from {{name2}} to the {{animal}} is <m>{{angle2}}^\circ</m>.
+            How far is each diver from the {{animal}}?
+          </p>
+        </content>
+        <outtro>
+          <p>{{name1}} is <m>{{distance1}}</m> meters away and {{name2}} is <m>{{distance2}}</m> meters away. </p>
+        </outtro>
+      <!--{{/scuba}}-->
+    <!-- Second task options -->
+      <!--{{#airport}}-->
+        <content>
+          <p>A{{plane1}} is heading directly away from an airport on a heading of <m>{{heading1}}^\circ</m>,
+            and is <m>{{distance1}}</m> {{units}} away from the airport.
+            The pilot hears over the radio that there is a{{plane2}} flying at a heading of <m>{{heading2}}^\circ</m> 
+            that is currently <m>{{distance2}}</m> {{units}} from the airport.
+            How far apart are the two planes?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance3}}</m> {{units}}</p>
+        </outtro>
+      <!--{{/airport}}-->
+      <!--{{#ceiling}}-->
+        <content>
+          <p>In a particular room, the ceiling meets the wall at a <m>{{angle}}^\circ</m>angle.  A trim carpenter wants 
+            to fit a piece of crown moulding that meets the ceiling and the wall both <m>{{distance1}}</m> {{units}} from the corner.
+            How wide should this piece of crown moulding be?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance2}}</m> {{units}}</p>
+        </outtro>
+      <!--{{/ceiling}}-->
+      <!--{{#hiker}}-->
+        <content>
+          <p>A hiker walks in a straight line for <m>{{distance1}}</m> {{units}}.  They turn <m>{{angle}}^\circ</m>
+            to their {{direction}} and walk another <m>{{distance2}}</m> {{units}}.  If they then want to walk
+            in a straight line back to their starting place, how far must they walk?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance3}}</m> {{units}}</p>
+        </outtro>
+      <!--{{/hiker}}-->
+      <!--{{#boats}}-->
+        <content>
+          <p>A boat is lost, but sees two lighthouses on the shore.  The boat measures an angle of <m>{{angle1}}^\circ</m>
+            between the two lighthouses, and fortunately establishes radio contact with a person in the {{specifier}} lighthouse.
+            They report that the lighthouses are <m>{{distance1}}</m> {{units}} apart, and they see an angle of 
+            <m>{{angle2}}^\circ</m> between the boat and the other lighthouse.  How far is the boat from each lighthouse?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{distance3}}</m> {{units}} from the {{specifier}} lighthouse, and <m>{{distance2}}</m> {{units}} from the other lighthouse.</p>
+        </outtro>
+      <!--{{/boats}}-->
+      <!--{{#carpentersquare}}-->
+        <content>
+          <p>A carpenter is trying to determine if two pieces of wood meet at a right angle, and does not have a square.
+             One piece of wood is <m>{{distance1}}</m> {{units}} long, and the other is <m>{{distance2}}</m> {{units}} long.
+             She measures the distance between the other ends of the pieces of wood as <m>{{distance3}}</m> {{units}}.
+             What angle do the two pieces of wood make with each other?
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{angle}}^\circ</m></p>
+        </outtro>
+      <!--{{/carpentersquare}}-->
+      <!--{{#bridge}}-->
+        <content>
+          <p>A bridge is supported by triangular braces. If the sides of each brace have lengths 
+            <m>{{d1}}</m> {{units}}, <m>{{d2}}</m> {{units}}, and <m>{{d3}}</m> {{units}}, find the 
+            measure of the {{angle_choice}} angle created by the sides of the brace.
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{angle}}^\circ</m></p>
+        </outtro>
+      <!--{{/bridge}}-->
+  </knowl>
+  <!--{{/tasks}}-->
+</knowl>
