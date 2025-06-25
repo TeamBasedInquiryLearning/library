@@ -33,7 +33,7 @@ class Generator(BaseGenerator):
         return {
             "equation1": eq,
             "solutions1": solution_string,
-            "equation2": eq2,
+            "equation2": TBIL.typeset_trigpowers(eq2),
             "solutions2": solution_string2,
             "equation3": eq3,
             "solutions3": solution_string3,
