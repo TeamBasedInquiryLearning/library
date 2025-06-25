@@ -106,6 +106,17 @@
           <p><m>{{angle}}^\circ</m></p>
         </outtro>
       <!--{{/carpentersquare}}-->
+      <!--{{#bridge}}-->
+        <content>
+          <p>A bridge is supported by triangular braces. If the sides of each brace have lengths 
+            <m>{{d1}}</m> {{units}}, <m>{{d2}}</m> {{units}}, and <m>{{d3}}</m> {{units}}, find the 
+            measure of the {{angle_choice}} angle created by the sides of the brace.
+          </p>
+        </content>
+        <outtro>
+          <p><m>{{angle}}^\circ</m></p>
+        </outtro>
+      <!--{{/bridge}}-->
   </knowl>
   <!--{{/tasks}}-->
 </knowl>
