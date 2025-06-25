@@ -476,9 +476,20 @@
       </activity>
 
       <remark>
-      <p>
-        In <xref ref="finding-trig-values-of-45-45-90-triangle"/>, notice that when finding a value of a trigonometric ratio, sometimes the values are decimal approximations. For example, the ratio for <m>\sin{A}</m> was <m>\frac{1}{\sqrt{2}}</m> (or <m>\frac{\sqrt{2}}{2}</m>), which gives an approximate value of <m>0.707</m>.
+      <aside>
+          <p>Some textbooks insist on <term>rationalizing the denominator</term> and will always convert to 
+            expressions like <m>\dfrac{\sqrt{2}}{2}</m>.  However, it is useful to be able to use
+            both, and to recognize that <m>\dfrac{1}{\sqrt{2}}</m> and <m>\dfrac{\sqrt{2}}{2}</m>
+            are the same value.
+          </p>
+        </aside>
+        <p>
+        In <xref ref="finding-trig-values-of-45-45-90-triangle"/>, notice that when finding a value of a 
+        trigonometric ratio, sometimes the values are decimal approximations. For example, the ratio for 
+        <m>\sin{A}</m> was <m>\frac{1}{\sqrt{2}}</m> (or <m>\frac{\sqrt{2}}{2}</m>), which gives an 
+        approximate value of <m>0.707</m>.
         </p>
+
       </remark>
 
       <definition xml:id="exact-values-of-trig-functions">
