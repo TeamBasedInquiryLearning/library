@@ -1,9 +1,10 @@
-// This file was originally generated with PreTeXt 2.17.1.
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "oscarlevin/pretext-full:2.20.0",
   "features": {},
 
-  "postCreateCommand": "bash scripts/setup.sh",
+  "postCreateCommand": {
+    "mark repo as safe": "git config --global --add safe.directory $(pwd)"
+  },
   "postAttachCommand": "bash scripts/download-cache.sh",
 
   // Port forwarding
