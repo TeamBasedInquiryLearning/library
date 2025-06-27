@@ -12,7 +12,9 @@
 If you see this message, your Codespace should already be configured with
 all the necessary software.
 
-You may see a terminal that downloads a cache of 
+A terminal will open to download a cache of assets (several lines of
+`inflating: .cache/foobar/etc123.svg`). You can safely close this terminal if it
+doesn't close itself.
 
 ### Live CodeChat Previews
 

@@ -6,7 +6,7 @@
     "mark repo as safe": "git config --global --add safe.directory $(pwd)",
     "setup script": "bash .devcontainer/setup.sh"
   },
-  "postAttachCommand": "bash scripts/download-cache.sh",
+  "postAttachCommand": "bash scripts/download-cache.sh && exit",
 
   // Port forwarding
   // ---------------
