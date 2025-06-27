@@ -3,7 +3,8 @@
   "features": {},
 
   "postCreateCommand": {
-    "mark repo as safe": "git config --global --add safe.directory $(pwd)"
+    "mark repo as safe": "git config --global --add safe.directory $(pwd)",
+    "setup script": "bash .devcontainer/setup.sh"
   },
   "postAttachCommand": "bash scripts/download-cache.sh",
 
@@ -46,9 +47,6 @@
     },
     "vscode": {
       "settings": {
-        "workbench.editorAssociations": {
-          "codespace-welcome.md": "vscode.markdown.preview.editor"
-        },
         "editor.quickSuggestions": {
           "other": "off"
         },
