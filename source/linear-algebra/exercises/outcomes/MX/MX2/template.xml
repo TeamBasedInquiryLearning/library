@@ -64,9 +64,9 @@ exercise).
 <!-- {{#invertible}} -->
 Since
 <me>
-{{ord_matrix}} = {{ord_RREF}}
+\operatorname{RREF} {{ord_matrix}} = {{ord_rref}}
 </me>
-the {{ordinal}} column is <m>{{ord_col}}</m>.
+the {{ordinal}} column of the inverse is <m>{{ord_col}}</m>.
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
 N/A
