@@ -116,6 +116,7 @@ jobs:
               run: |
                 bash .devcontainer/setup.sh
                 bash scripts/download-cache.sh
+                git config --global --add safe.directory $(pwd)
 
             - name: build previews of all changed files and stage
               id: changes
