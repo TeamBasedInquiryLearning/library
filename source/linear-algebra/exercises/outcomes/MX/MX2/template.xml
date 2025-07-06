@@ -53,18 +53,20 @@ N/A
         <knowl>
             <content>
                 <p>
-If the matrix is invertible, explain how to find its inverse
-using techniques that don't require technology. (You may use
-technology to perform those techniques, as long as they *could*
-be done without using technology.)
+If the matrix is invertible, explain and demonstrate how to find the
+{{ordinal}} column of this inverse using a technique that could be
+performed without technology (though you may use technology for this
+exercise).
                 </p>
             </content>
             <outtro>
                 <p>
 <!-- {{#invertible}} -->
-Show how to compute each column of the inverse matrix
-by solving an appropriate vector equation (that is, computing RREF
-of an appropriate augmented matrix).
+Since
+<me>
+{{ord_matrix}} = {{ord_RREF}}
+</me>
+the {{ordinal}} column is <m>{{ord_col}}</m>.
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
 N/A
