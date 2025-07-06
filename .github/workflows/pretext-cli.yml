@@ -27,36 +27,27 @@ jobs:
               run: |
                 bash scripts/setup.sh
                 bash scripts/download-cache.sh
+                git config --global --add safe.directory $(pwd)
 
             - name: Build precalculus activities
               run: |
-                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate sage
                 pretext build -g precalculus-web-instructor
 
             - name: Build calculus activities
               run: |
-                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate sage
                 pretext build -g calculus-web-instructor
 
             - name: Build linear algebra activities
               run: |
-                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate sage
                 pretext build -g linear-algebra-web-instructor
 
             - name: Stage builds and updated cache
               run: |
-                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate sage
                 pretext deploy --stage-only
                 bash scripts/stage-cache.sh
 
             - name: build and stage banks
               run: |
-                eval "$('conda' 'shell.bash' 'hook' 2> /dev/null)"
-                conda activate sage
                 echo "Precalculus bank"
                 python scripts/build_bank.py precalculus --full
                 echo "Calculus bank"
