@@ -11,7 +11,36 @@
 
 <subsection>
     <title>Warm Up</title>
-    
+    <activity>
+        <introduction>
+            <p>
+                Let <m>T\colon\IR^4\to\IR^4</m> be the linear bijection given by the standard matrix:
+<me>A=\left[\begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; -1 &amp; -4 \\ 1 &amp; 1 &amp; 0 &amp; -4 \\ 1 &amp; -1 &amp; -1 &amp; 2 \end{array}\right].</me> 
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    If <m>\vec{b}=\begin{bmatrix}1\\0\\-1\\2\end{bmatrix}</m>, what is the meaning of the vector <m>T^{-1}(\vec{b})</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to find the third column of <m>A^{-1}</m>.
+                </p>
+            </statement>
+        </task>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
+    </activity>
 </subsection>
 
 <subsection><title>Class Activities</title>
@@ -54,7 +83,11 @@
                 The map <m>C_{\mathcal{B}}</m> is a linear map. 
             </p>
             <p>
-                Compute <m>C_{\mathcal{B}}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right).</m>
+                Compute <m>C_{\mathcal{B}}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right)</m>, the unique solution to 
+                <me>
+                    x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\begin{bmatrix}1\\1\\1\end{bmatrix}.
+                </me>
+                
             </p>
     </task>
     <task>
@@ -73,19 +106,6 @@
     
 </activity>
 
-<observation>
-    <p>
-        Note that one way to compute <m>M_{\mathcal{B}}</m> is calculate the RREF of the following matrix:
-        <me>\left[\begin{array}{ccc|ccc}1&amp;1&amp;0&amp;1&amp;0&amp;0\\
-            0&amp;-1&amp;1&amp;0&amp;1&amp;0\\
-            1&amp;1&amp;1&amp;0&amp;0&amp;1\end{array}\right]\sim\left[\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;2&amp;1&amp;-1\\
-            0&amp;1&amp;0&amp;-1&amp;-1&amp;1\\
-            0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right]</me>
-            Thus, the matrix <m>M_{\mathcal{B}}</m> is the inverse of the matrix <m>[\vec{v}_1\ \vec{v}_2\ \vec{v}_3]</m>.
-            That is:
-            <me>M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \vec{v}_2\ \vec{v}_3].</me>
-    </p>
-</observation>
 <definition xml:id="def-change-of-basis">
     <statement>
         <p>
@@ -93,7 +113,7 @@
             <me>x_1\vec{v}_1+\dots+x_n\vec{v}_n=\vec{v}.</me>
             Its standard matrix is called the change-of-basis matrix from the standard basis to <m>\mathcal{B}</m> and is denoted by <m>M_{\mathcal{B}}</m>.
             It satisfies the following:
-            <me>M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \cdots\ \vec{v}_n].</me>
+            <me>M_{\mathcal{B}}=[\vec{v}_1\ \cdots\ \vec{v}_n]^{-1}.</me>
         </p>
     </statement>
 </definition>
@@ -180,11 +200,39 @@
         </p>
     </task>
 </activity>
+
+<definition xml:id="def-similar-matrices">
+    <statement>
+        <p>
+            Suppose that <m>A</m> and <m>B</m> are two <m>n\times n</m> matrix. 
+            We say that <m>A</m> is <term>similar</term>  to <m>B</m> if there exists an invertible matrix <m>P</m> that satisfies:
+            <me>
+                PAP^{-1}=B.
+            </me>
+            The results of this section demonstrate that similar matrices can be viewed as describing the same linear transformation with respect to different bases. 
+            Specifically, if <m>A</m> describes a transformation with respect to the standard basis of <m>\IR^n</m>, then the matrix <m>B</m> describes the same linear transformation with respect to the basis consisting of the columns of <m>P^{-1}</m>.
+        </p>
+    </statement>
+</definition>
+
 </subsection>
 
 <subsection>
     <title>Individual Practice</title>
-    
+    <activity>
+        <introduction>
+            <p>
+                Suppose that <m>T\colon\IR^3\to\IR^3</m> is a linear transformation and you knew that <m>\mathcal{B}=\{\vec{v}_1,\vec{v}_2,\vec{v}_3\}</m> was a basis of <m>\IR^3</m> that satisfied:
+                <me>
+                    T(\vec{v}_1)=3\vec{v}_1,\ T(\vec{v}_2)=-5\vec{v}_2,\ T(\vec{v}_3)=7\vec{v}_3.
+                </me>
+            </p>
+            <p>
+                If <m>A</m> is the standard matrix of <m>T</m>, do you have enough information to determine the matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m>?
+                If yes, write it down; if not, describe what additional information is needed. 
+            </p>
+        </introduction>
+    </activity>
 </subsection>
     <subsection>
         <title>Videos</title>
@@ -207,7 +255,15 @@ Video coming soon to
     
      <subsection>    
         <title>Mathematical Writing Explorations</title>
-         
+         <activity>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is similar to <m>B</m>. 
+                    Prove that <m>B</m> is also similar to <m>A</m>. 
+                    Thus, we may simply that <m>A</m> and <m>B</m> are similar matrices. 
+                </p>
+            </introduction>
+         </activity>
     </subsection>
 
 

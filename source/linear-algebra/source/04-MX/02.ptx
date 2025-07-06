@@ -195,20 +195,74 @@ T^{-1}(\vec e_2)\hspace{1em}T^{-1}(\vec e_3)]
 
 
 <activity estimated-time='5'>
-    <statement>
+    <introduction>
         <p>
-Find the inverse <m>A^{-1}</m> of the matrix
-<me>A=\left[\begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; -1 &amp; -4 \\ 1 &amp; 1 &amp; 0 &amp; -4 \\ 1 &amp; -1 &amp; -1 &amp; 2 \end{array}\right]</me>
-by computing how it transforms each of the standard
-basis vectors for <m>\mathbb R^4</m>:
-<m>T^{-1}(\vec e_1)</m>, <m>T^{-1}(\vec e_2)</m>, <m>T^{-1}(\vec e_3)</m>,
-and <m>T^{-1}(\vec e_4)</m>. 
+Let <m>T\colon\IR^4\to\IR^4</m> be the linear bijection given by the standard matrix:
+<me>A=\left[\begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; -1 &amp; -4 \\ 1 &amp; 1 &amp; 0 &amp; -4 \\ 1 &amp; -1 &amp; -1 &amp; 2 \end{array}\right].</me> 
         </p>
-    </statement>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Calculate <m>T^{-1}(\vec e_2)</m> by row reducing an appropriate augmented matrix. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate <m>T^{-1}(\vec e_4)</m> by row reducing an appropriate augmented matrix. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                 Suppose we completed the previous two tasks by hand.
+                 Which of the following statements best describes the row operations we would use?
+            </p>
+            <ol marker="A.">
+            <li>
+                <p>
+                    We had to use the same row operations in (a) as we did in (b).
+                </p>
+            </li>
+            <li>
+                <p>
+                    We could have used the same row operation in (a) as we did in (b).
+                </p>
+            </li>
+            <li>
+                <p>
+                    The row operations used in (a) have nothing to do with with the row operations used in part (b).
+                </p>
+            </li>
+        </ol>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                So far, we have only considered augmented matrices with a single augmented column.
+                Write down an augmented matrix with more than one augmented column whose RREF would help us find <m>A^{-1}.</m>
+            </p>
+        </statement>
+    </task>
 </activity>
 
 <sage language="octave">
 </sage>
+
+<observation>
+    <p>
+        Our exploration above yields a succinct way to calculate the inverse of a matrix. 
+        Indeed, if <m>A</m> is an invertible matrix, then we have
+        <me>
+            \RREF\left[A|I\right]=\left[I|A^{-1}\right].
+        </me>
+        
+    </p>
+</observation>
 
 <activity estimated-time='5'>
     <statement>
