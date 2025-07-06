@@ -75,7 +75,7 @@ def main():
     markdown = f"## 🚀 Preview available 🚀\n\n<${{cf_url}}>\n\n"
     for link in preview_links:
         # ${{cf_url}} is provided by action Javascript
-        markdown += f"- \\`{link["file"]}\\`: <${{cf_url}}{link["path"]}>\n"
+        markdown += f"- \\`{link['file']}\\`: <${{cf_url}}{link['path']}>\n"
     with open(os.environ["GITHUB_OUTPUT"], 'a') as fh:
         fh.write(f"markdown<<MARKDOWN\n{markdown}\nMARKDOWN\n")
         
