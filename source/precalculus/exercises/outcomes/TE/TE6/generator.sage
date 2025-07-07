@@ -48,7 +48,7 @@ class Generator(BaseGenerator):
             angles.sort()
             angle3 = 180-angles[0]-angles[1]
             distance=choice([10..40])
-            d=round(sin(angle3*pi/180)/sin(angles[0]*pi/180)*distance,1)
+            d=round(sin(angles[0]*pi/180)/sin(angle3*pi/180)*distance,1)
 
             rangers=sample(["Arata", "Botha", "Chang", "Dinh", "Emerson", "Fabian", "Hernandez", "Ishikawa", 
                             "Jones", "Khoury", "Lee", "Martinez", "Naser", "Okpara", "Rodriguez", 
@@ -82,8 +82,8 @@ class Generator(BaseGenerator):
             #angles.sort()
             angle3 = 180-angles[0]-angles[1]
             distance=choice([10..40])
-            d1=round(sin(angle3*pi/180)/sin(angles[1]*pi/180)*distance,1)
-            d2=round(sin(angle3*pi/180)/sin(angles[0]*pi/180)*distance,1)
+            d1=round(sin(angles[1]*pi/180)/sin(angle3*pi/180)*distance,1)
+            d2=round(sin(angles[0]*pi/180)/sin(angle3*pi/180)*distance,1)
 
             names=sample([
                         "Astera", "Alexi",
