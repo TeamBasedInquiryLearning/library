@@ -97,11 +97,6 @@ venv/
 .dropbox.attr
 .dropbox.cache
 
-# Don't track deprecated workflows
-.github/workflows/deploy.yml
-.github/workflows/test-build.yml
-
-
 # CheckIt
 
 source/**/exercises/assets
@@ -115,3 +110,6 @@ edition-sandbox
 # image cache
 .cache
 cache.zip
+
+# codechat
+codechat_config.yaml

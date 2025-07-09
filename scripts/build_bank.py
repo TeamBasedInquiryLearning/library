@@ -17,7 +17,7 @@ def main(book:str, full:bool, sandbox=False, stage=True):
 
     b = Bank(bank_path)
     for o in b.outcomes():
-        o.download_cache(f"https://tbil.org/preview/exercises/{book}")
+        o.download_cache(f"https://tbil.org/preview/{book}/exercises")
     b.generate_exercises(regenerate=full, images=full)
     b.write_json()
 
