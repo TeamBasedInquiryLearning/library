@@ -380,7 +380,7 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
     </p>
         <answer>
             <p>
-                <m>c = 72</m> because as <m>t\to \infty</m>, the coffee will settle around the ambient temperature, which is <m>72^\circ</m>F. <m>a = e8</m> because when <m>t = 0</m>, the temperature of the coffee should be <m>110^\circ</m>F. <m>b = 0.1</m> because <m>y'(0) = 3.8</m>.
+              First,  <m>c = 72</m> because as <m>t\to \infty</m>, the coffee will settle around the ambient temperature, which is <m>72^\circ</m>F. Second,  <m>a = 38</m> because when <m>t = 0</m>, the temperature of the coffee should be <m>110^\circ</m>F. Third, <m>k = 0.1</m> because <m>y'(0) = -3.8 = -ka = -38k</m>.
             </p>
         </answer>
     </task>
