@@ -103,6 +103,7 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
              <sageplot>        
                 x = var('x')
                 plot(6*x - 18,(x,0,5),axes_labels=("$t$","$a(t)$"))
+     </sageplot>
         </image>
     </answer></task>
     <task><p>When is the particle moving upward and when is it moving downward?</p>
