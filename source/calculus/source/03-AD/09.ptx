@@ -332,7 +332,7 @@ L'H&#244;ptial's Rule does not apply.
     <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'H&#xF4;pital's Rule... what happens? What if you use it again? </p>
     <answer>
         <p>
-            Repeated application of the rule does not help because the root will always persist and limit to infinity.
+            Repeated application of the rule does not help because the fraction will alternate between <m>r(x)</m> and <m>\dfrac{1}{r(x)}</m>, which are both <m>\frac{\infty}{\infty}</m> indeterminate forms.
         </p>
     </answer>
     </task>
