@@ -298,6 +298,7 @@ Note that some of the graphs below are definitely hard... might want to tell thi
             </answer></task>
                 <task><m>f(x)=\frac{x^2+x-2}{x+3}</m>
                 <answer>
+                Note that this graph has a slant asymptote of <m>y=x</m>.
                   <image>
                     <sageplot>
                       x = var('x')
