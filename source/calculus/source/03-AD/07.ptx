@@ -278,6 +278,7 @@ Note that some of the graphs below are definitely hard... might want to tell thi
                 </task>
                 <task><m>f(x)=\frac{x^2-4}{x^2-9}</m>
                 <answer>
+                Note that there is a horizontal asymptote at <m>y=1</m>.
                   <image>
                     <sageplot>
                       x = var('x')
