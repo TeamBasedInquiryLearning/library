@@ -308,6 +308,7 @@ Note that some of the graphs below are definitely hard... might want to tell thi
                 </answer></task>
                 <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m>
                 <answer>
+                Note that this graph has horizontal asymptotes at <m>y=\pm 1</m>.
                   <image>
                     <sageplot>
                       x = var('x')
