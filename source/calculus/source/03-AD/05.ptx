@@ -367,7 +367,7 @@ To find the extreme values of a function we can consider all its <em>local extre
        <task> <p> Use part (a) to show with the MVT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> 
     <answer>
         <p>
-            <m>f(0) = f(2) = 4</m>, so part (a) combined with the fact that <m>f(x)</m> is differentiable (and thus continuous) everywhere since it's a polynomial, tells us that there is a spot where <m>f'(c) = 0</m> on <m>[0,2}</m>; in particular, this means we have a critical point on the interval.
+            <m>f(0) = f(2) = 4</m>, so part (a) combined with the fact that <m>f(x)</m> is differentiable (and thus continuous) everywhere since it's a polynomial, tells us that there is a spot where <m>f'(c) = 0</m> on <m>[0,2]</m>; in particular, this means we have a critical point on the interval.
         </p>
     </answer>
     </task>
