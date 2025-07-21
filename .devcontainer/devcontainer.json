@@ -1,6 +1,6 @@
 {
   "image": "pretextbook/pretext-full:1.2",
-  "features": {},
+  "features": {"ghcr.io/devcontainers/features/github-cli": {}},
 
   "postCreateCommand": {
     "mark repo as safe": "git config --global --add safe.directory $(pwd)",
