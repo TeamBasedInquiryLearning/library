@@ -22,7 +22,13 @@
 <me> \lim_{x\to 1} \frac{4x - 4}{x^2 -1} .</me> </introduction>
     <task>
     <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{0}{0}</m>.
-        </p></task>
+        </p>
+    <answer>
+        <p>
+            When inputting 1 to the function, we get 0/0.
+        </p>
+    </answer>
+    </task>
     <task>
     <p> As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?
         </p>
@@ -32,6 +38,11 @@
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
        <li><p> The limit does not exist. </p></li>               
     </ol>      
+    <answer>
+        <p>
+            B: 2
+        </p>
+    </answer>
     </task>
     
     </activity>
@@ -53,7 +64,12 @@
                   <li><p>  <m>e</m> </p></li> 
                   <li><p>  <m>e^2</m> </p></li>     
        <li><p> The limit does not exist. </p></li>               
-    </ol>      
+    </ol>    
+    <answer>
+        <p>
+            C: <m>e^2</m>
+        </p>
+    </answer>  
     </task>
     <task>
     <p>  Consider <m>\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}</m>. This limit is also the limit definition of some derivative at some point. What is the value of this limit?
@@ -64,13 +80,33 @@
                   <li><p>  <m>\ln(2)</m> </p></li>     
        <li><p> The limit does not exist. </p></li>               
     </ol>      
+    <answer>
+        <p>
+            A: 1
+        </p>
+    </answer>
     </task>
     
      </activity>
     <activity><introduction><p> Compute the following limits using the limit definition of the derivative at a point.</p> </introduction>
-    <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p></task>
-     <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}</m></p></task>
-      <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}</m></p></task>  
+    <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p>
+    <answer>
+        <p>
+            1
+        </p>
+    </answer></task>
+     <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}</m></p>
+    <answer>
+        <p>
+            1
+        </p>
+    </answer></task>
+      <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}</m></p>
+    <answer>
+        <p>
+            <m>-\dfrac{\sqrt{3}}{2}</m>
+        </p>
+    </answer></task>  
     
     </activity>
 
@@ -83,7 +119,13 @@
 <me> \lim_{x\to +\infty} \frac{2x^2 + 1}{x^2 -1} .</me> </introduction>
     <task>
     <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{\infty}{\infty}</m>.
-        </p></task>
+        </p>
+    <answer>
+        <p>
+            When taking the limit of numerator and denominator as <m>x\to\infty</m>, we get <m>\infty/\infty</m>.
+        </p>
+    </answer>
+    </task>
     <task>
     <p> You can manipulate this fraction algebraically by dividing numerator and denominator by <m>x^2</m>. Then, notice that <m>\pm \frac{1}{x^2} \to 0</m> as <m>x \to \infty </m>. Given these observations, what is the given limit equal to?
         </p>
@@ -93,6 +135,11 @@
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
        <li><p> The limit does not exist. </p></li>               
     </ol>      
+    <answer>
+        <p>
+            A: 2
+        </p>
+    </answer>
     </task>
     
     </activity>
@@ -115,9 +162,22 @@
         </introduction>
     <task>
     <p>Thinking about <m>x</m> as the length of an interval <m>h</m>, this limit is actually equal to the value of some derivative, so <m>f'(a) = \displaystyle \lim_{h\to 0} \frac{\sin(h)}{h}</m>. What function <m>f(x)</m> and what point <m>x=a</m> would lead to this limit? Use these to find <m>f'(a)</m>, the value of this limit (in a new way!).</p>
+    <answer>
+        <p>
+            <m>f(x) = \sin(x)</m> at the input <m>x = 0</m>. Then, <m>f'(0) = \cos(0) = 1</m>
+        </p>
+    </answer>
     </task>
        <task>
     <p>Verify, one more time, that this limit is indeed an indeterminate form. Then use L'H&#xF4;pital's Rule to find this limit (again, in another way!).</p>
+    <answer>
+        <p>
+            As <m>h\to 0</m>, the numerator and denominator approach 0, so we have 0/0. By L'H&#xF4;pital's Rule, we have 
+            <me>
+                \lim_{h\to 0} \dfrac{\sin(h)}{h} = \lim_{h\to 0} \dfrac{\cos(h)}{1} = 1.
+            </me>
+        </p>
+    </answer>
     </task>
     </activity>
 
@@ -127,22 +187,52 @@
     </introduction>
     <task>
     <p><m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p>
-    </task>
+        <answer>
+            <p>
+                <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x} = 1</m>
+            </p>
+        </answer>
+</task>
     <task>
     <p><m>\displaystyle \lim_{x\to 0} \frac{e^x-1}{x}</m></p>
-    </task>
+        <answer>
+            <p>
+                <m>\displaystyle \lim_{x\to 0} \frac{e^x-1}{x} = 1</m>
+            </p>
+        </answer>
+</task>
      <task>
     <p><m>\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}</m></p>
-    </task>
+        <answer>
+            <p>
+                <m>\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x} = 3</m>
+            </p>
+        </answer>
+</task>
      <task>
     <p><m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}</m></p>
-    </task>
+        <answer>
+            <p>
+                <m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x} = -\infty</m>         
+            </p>
+        </answer>
+</task>
     <task>
     <p><m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}</m></p>
-    </task>
+        <answer>
+            <p>
+                <m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x} = 0</m>
+            </p>
+        </answer>
+</task>
      <task>
     <p><m>\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}</m></p>
-    </task>
+        <answer>
+            <p>
+                <m>\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2} = -3</m>
+            </p>
+        </answer>
+</task>
     </activity>
 
     <activity xml:id="checkit-ad9">
@@ -158,6 +248,11 @@ If it can, explain how to use this rule to find the limit.
 \lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} }
                         </me>
                     </p>
+                    <answer>
+                        <p>
+                            The rule can be applied since we have an <m>\infty/\infty</m> indeterminate form. The limit is -1.
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <p>
@@ -165,6 +260,11 @@ If it can, explain how to use this rule to find the limit.
 \lim_{x\to 0 } \frac{ 6 \, \cos\left(8 \, x\right) }{ 4 \, x - 7 }
                         </me>
                     </p>
+                    <answer>
+                        <p>
+                            The rule can't be applied since we don't have an indeterminate form.
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <p>
@@ -172,6 +272,11 @@ If it can, explain how to use this rule to find the limit.
 \lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x }
                         </me>
                     </p>
+                    <answer>
+                        <p>
+                            The rule can be used since we have a <m>0/0</m> indeterminate form. The limit is 0.
+                        </p>
+                    </answer>
                 </task>
                 <task>
                     <p>
@@ -179,6 +284,11 @@ If it can, explain how to use this rule to find the limit.
 \lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 }
                         </me>
                     </p>
+                    <answer>
+                        <p>
+                            The rule can be used since we have a <m>0/0</m> indeterminate form. The limit is <m>-1.4</m>.
+                        </p>
+                    </answer>
                 </task>
       
  <!--   <answer>
@@ -220,6 +330,11 @@ L'H&#244;ptial's Rule does not apply.
     </introduction>
     <task>
     <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'H&#xF4;pital's Rule... what happens? What if you use it again? </p>
+    <answer>
+        <p>
+            Repeated application of the rule does not help because the fraction will alternate between <m>r(x)</m> and <m>\dfrac{1}{r(x)}</m>, which are both <m>\frac{\infty}{\infty}</m> indeterminate forms.
+        </p>
+    </answer>
     </task>
     <task>
     <p>We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <m>\sqrt{x^2 +2}</m>. We want to factor out an <m>x^2</m> under the square root. What do you get? </p>
@@ -229,12 +344,23 @@ L'H&#244;ptial's Rule does not apply.
                   <li><p>  <m>\sqrt{ x^2\left(1 + x \right)} </m>  </p></li> 
                     <li><p>  <m>\sqrt{ x^2\left(1 + x^2 \right)} </m>  </p></li>          
     </ol>       
+    <answer>
+        <p>
+            B: <m>\sqrt{ x^2\left(1 +\frac{2}{x^2}\right) } </m>
+        </p>
+    </answer>
     </task>
      <task>
     <p>Now we need to be careful when computing <m>\sqrt{x^2}</m> as <m>\sqrt{x^2}=|x|</m>. The absolute value function <m>|x|</m> equals <m>+x</m> when we have a positive input and <m>-x</m> when we have a negative output. So we have the two limits.
        <me> \lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me> 
         <me> \lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me>  
         Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... The two limits have different values! </p>
+    <answer>
+        <p>
+            <me> \lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }} = 1</me> 
+        <me> \lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }} = -1</me>  
+        </p>
+    </answer>
     </task>
     </activity>
         </subsection>
