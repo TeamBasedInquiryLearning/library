@@ -32,7 +32,6 @@ First opening the appropriate file:
 Copy its entire contents (`Ctrl`+`A` then `Ctrl`+`C`), then open and overwrite *ALL* the contents of
 the [`codechat_config.yaml`](codechat_config.yaml) file (`Ctrl`+`A` then `Ctrl`+`V`).
 
-
 #### Option 2
 
 Alternatively, open a terminal and run this command to copy everything for you.
@@ -45,6 +44,12 @@ Alternatively, open a terminal and run this command to copy everything for you.
 
 Then select "Preview file with CodeChat" from the PreTeXt menu in the bottom toolbar.
 You will now be able to see live previews of most `.ptx` files for that book in a side panel.
+
+### Note for local (non-Codespace) usage of devcontainer
+
+We [have a report](https://github.com/TeamBasedInquiryLearning/library/pull/832#issuecomment-3099019003)
+that when using this devcontainer on a local installation of VS Code, the
+extensions specified in `devcontainer.json` may need to be installed manually.
 
 ### Learn more
 
