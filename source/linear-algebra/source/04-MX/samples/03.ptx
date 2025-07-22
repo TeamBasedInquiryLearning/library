@@ -1,51 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-MX3">
-    <title>MX3</title>
+<example xml:id="sample-MX3"><title>MX3</title>
     <introduction>
-        <p> Consider the system of equations <me>\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; -
-            &amp; 3 \, x_{3} &amp; = &amp; -2 \\ 3 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; - &amp; 5
-            \, x_{3} &amp; = &amp; -10 \\ x_{1} &amp; - &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; =
-            &amp; -4 \\ \end{matrix}</me> with a unique solution. </p>
+        <p>
+            Let <m>\mathcal{B}=\setList{\begin{bmatrix}-2\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\-2\\-1\end{bmatrix},\begin{bmatrix}1\\3\\2\end{bmatrix}}</m>, and <m>\vec{v}=\begin{bmatrix}1\\2\\3\end{bmatrix}</m>.
+        </p>
     </introduction>
-    <task>
-        <statement>
-            <p> Explain and demonstrate how this problem can be restated using matrix
-                multiplication. </p>
-        </statement>
-        <answer>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to verify that <m>\mathcal{B}</m> is a basis of <m>\IR^3</m> and how to calculate <m>M_\mathcal{B}</m>, the change-of-basis matrix from the standard basis of <m>\IR^3</m> to <m>\mathcal{B}</m>.
+                </p>
+            </statement>
+            <solution>
             <p>
-                This is equivalent to the vector equation
-                <m>T(\vec x)=\left[\begin{array}{c} -2 \\ -10 \\ -4 \end{array}\right]</m>
-                where <m>T</m> has the standard matrix
-                <m>\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
-                    -1 &amp; -2 \end{array}\right]</m>, so we may rewrite this as
-                <me>\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
-                    -1 &amp; -2 \end{array}\right]\left[\begin{array}{c} x_{1} \\ x_{2} \\ x_{3}
-                    \end{array}\right]=\left[\begin{array}{c} -2 \\ -10 \\ -4 \end{array}\right]</me>
+                We can accomplish both tasks by calculating the RREF of the following matrix:
+                <me>\RREF\left[\begin{array}{ccc|ccc}-2&amp;-1&amp;1&amp;1&amp;0&amp;0\\
+                        -2&amp;-2&amp;3&amp;0&amp;1&amp;0\\1&amp;-1&amp;2&amp;0&amp;0&amp;1\end{array}\right]
+                    =
+                \left[\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;-1&amp;1\\
+                    0&amp;1&amp;0&amp;-7&amp;5&amp;-4\\
+                    0&amp;0&amp;1&amp;-4&amp; 3&amp;-2\end{array}\right].</me>
+                    The fact that the matrix to the left of the vertical bar is the identity matrix tells that <m>\mathcal{B}</m> is a basis. 
+                    The matrix on the right hand side of the bar is equal to the change-of-basis matrix:
+                    <me>M_\mathcal{B}=\left[\begin{array}{ccc}1&amp;-1&amp;1\\
+                        -7&amp;5&amp;-4\\
+                        -4&amp; 3&amp;-2\end{array}\right].</me>
             </p>
-        </answer>
-    </task>
-    <task>
-        <statement>
-            <p> Use the properties of matrix multiplication to find the unique solution. </p>
-        </statement>
-        <answer>
-            <p>
-                Using technology to find <m>\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
-                    -1 &amp; -2 \end{array}\right]^{-1}=
-                    \left[\begin{array}{ccc} -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -4 \\ -1 &amp; 0
-                    &amp; 1 \end{array}\right]</m>,
-                we have
-                <me>\left[\begin{array}{ccc} -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -4 \\ -1 &amp; 0
-                    &amp; 1 \end{array}\right]\left[\begin{array}{ccc} 1 &amp; -1 &amp; -3 \\ 3 &amp; -2 &amp; -5 \\ 1 &amp;
-                    -1 &amp; -2 \end{array}\right]\left[\begin{array}{c} x_{1} \\ x_{2} \\ x_{3}
-                    \end{array}\right]=\left[\begin{array}{ccc} -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -4 \\ -1 &amp; 0
-                    &amp; 1 \end{array}\right]\left[\begin{array}{c} -2 \\ -10 \\ -4 \end{array}\right]</me>
-                and therefore see that (using technology to multiply matrices)
-                <me>\left[\begin{array}{c} x_{1} \\ x_{2} \\ x_{3}
-                    \end{array}\right]=\left[\begin{array}{c} -4 \\ 4 \\ -2 \end{array}\right]</me>.
-            </p>
-        </answer>
-    </task>
+            </solution>
+        </task>
+        
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to use <m>M_\mathcal{B}</m> to express <m>\vec{v}</m> in terms of <m>\mathcal{B}</m>-basis vectors. 
+                </p>
+            </statement>
+            <solution>
+                <p>
+                By definition of the change of basis matrix, if <m>\vec{v}=\begin{bmatrix}1\\2\\3\end{bmatrix}</m>, then the coordinates of <m>\vec{v}</m> with respect to <m>\mathcal{B}</m> are given by:
+                <me>M_\mathcal{B}\vec{v}=M_\mathcal{B}=\left[\begin{array}{ccc}1&amp;-1&amp;1\\
+                -7&amp;5&amp;-4\\
+                -4&amp; 3&amp;-2\end{array}\right]\begin{bmatrix}1\\2\\3\end{bmatrix}=\begin{bmatrix}2\\-9\\-4\end{bmatrix}.</me>
+                It follows that:
+                <me>\begin{bmatrix}1\\2\\3\end{bmatrix}=2\begin{bmatrix}-2\\-2\\1\end{bmatrix} -9\begin{bmatrix}-1\\-2\\-1\end{bmatrix} -4\begin{bmatrix}1\\3\\2\end{bmatrix}. </me>
+                </p>
+            </solution>
+        </task>
 </example>

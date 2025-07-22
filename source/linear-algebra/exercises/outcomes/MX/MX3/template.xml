@@ -2,39 +2,34 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Consider the
-<!-- {{#system}} -->
-system of equations <me>{{system}}</me>
-<!-- {{/system}} -->
-<!-- {{#vector_eq}} -->
-vector equation <me>{{vector_eq}}</me>
-<!-- {{/vector_eq}} -->
-with a unique solution.
+Let <m>\vec{v}= {{v}}</m> and <m>\mathcal B=\{\vec b_1,\vec b_2,\vec b_3\}</m>
+where <m>\vec b_1 = {{b_1}}</m>, <m>\vec b_2= {{b_2}}</m>,
+and <m>\vec b_3 = {{b_3}}</m>.
         </p>
     </intro>
     <knowl>
         <content>
             <p>
-Explain and demonstrate how this problem can be restated
-using matrix multiplication.
+Explain and demonstrate how to verify that <m>\mathcal{B}</m> is a basis of <m>\mathbb R^3</m>
+and how to calculate <m>M_\mathcal{B}</m>, the change-of-basis matrix from the standard basis of
+<m>\mathbb R^3</m> to <m>\mathcal{B}</m>.
             </p>
         </content>
         <outtro>
-            <p>
-<me>{{matrix}}{{vars}}={{constant_vector}}</me>
-            </p>
+            <p><m>M_{\mathcal B} = {{M_B}}</m></p>
         </outtro>
     </knowl>
+
     <knowl>
         <content>
             <p>
-Use the properties of matrix multiplication to find the
-unique solution.
+Explain and demonstrate how to use <m>M_\mathcal{B}</m> to express <m>\vec{v}</m> in terms of
+<m>\mathcal{B}</m>-basis vectors. 
             </p>
         </content>
         <outtro>
             <p>
-<me>{{inverse}}{{constant_vector}}={{solution}}</me>
+                <m>\vec v = {{lin_combo_exp}}</m>
             </p>
         </outtro>
     </knowl>
