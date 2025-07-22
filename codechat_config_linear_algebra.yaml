@@ -1,0 +1,4 @@
+source_path: source
+output_path: output/linear-algebra-web-instructor
+args: "{sys_executable} -m pretext build linear-algebra-web-instructor --xmlid {xml_id} --no-knowls -g"
+project_type: PreTeXt
