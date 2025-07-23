@@ -2,6 +2,31 @@
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2">
   <targets>
+
+    <!-- Preview targets -->
+    <target
+      name="precalculus-preview"
+      format="html"
+      publication="instructor.ptx"
+      source="precalculus/source/preview.ptx" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    <target
+      name="calculus-preview"
+      format="html"
+      publication="instructor.ptx"
+      source="calculus/source/preview.ptx" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    <target
+      name="linear-algebra-preview"
+      format="html"
+      publication="instructor.ptx"
+      source="linear-algebra/source/preview.ptx" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    
+    <!-- Precalculus targets -->
     <target
       name="precalculus-web"
       format="html"
@@ -39,6 +64,8 @@
       output-filename="TBIL-Precalculus-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+
+    <!-- Calculus targets -->
     <target
       name="calculus-web"
       format="html"
@@ -76,6 +103,8 @@
       output-filename="TBIL-Calculus-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+
+    <!-- Linear algebra targets -->
     <target
       name="linear-algebra-web"
       format="html"
@@ -113,5 +142,6 @@
       output-filename="TBIL-Linear-Algebra-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+
   </targets>
 </project>

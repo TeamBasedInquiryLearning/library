@@ -36,15 +36,15 @@ jobs:
 
             - name: Build precalculus activities
               run: |
-                pretext -v debug build -g precalculus-web-instructor
+                pretext -v debug build -g precalculus-preview
 
             - name: Build calculus activities
               run: |
-                pretext -v debug build -g calculus-web-instructor
+                pretext -v debug build -g calculus-preview
 
             - name: Build linear algebra activities
               run: |
-                pretext -v debug build -g linear-algebra-web-instructor
+                pretext -v debug build -g linear-algebra-preview
 
             - name: Stage builds and updated cache
               run: |

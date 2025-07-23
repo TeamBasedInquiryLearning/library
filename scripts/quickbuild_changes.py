@@ -31,7 +31,7 @@ def main():
                         "file": f,
                         'id': xml_id,
                     })
-        t = p.get_target(f"{b}-web-instructor")
+        t = p.get_target(f"{b}-preview")
         if len(xml_ids) > 0:
             print(f"Building book `{b}`, skipping images")
             path = f"/preview/{b}"
@@ -61,7 +61,7 @@ def main():
         # build changed outcomes
         for o in changed_outcomes:
             sandbox_bank_path = preview_outcome.build_preview(b, o)
-            output_path = Path("output", f"{b}-web-instructor", "exercises", o)
+            output_path = Path("output", f"{b}-preview", "exercises", o)
             output_path.mkdir(parents=True)
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
             preview_links.append({
