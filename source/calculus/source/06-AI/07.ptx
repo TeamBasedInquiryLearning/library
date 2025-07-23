@@ -19,11 +19,330 @@
                 </p>
             </statement>
         </fact>
+
+
+        <fact xml:id="fact-AI5pascal">
+            <statement>
+                <p>
+                    Pascal's principle states that the pressure on a submerged object depends only on its depth and not its orientation.
+                </p>
+            </statement>
+        </fact>
+
+        <activity xml:id="activity-AI5trapplate">
+            <introduction>
+                <p>
+                Suppose you submerge a trapezoidal plate laying horizontally 4 feet under freshwater. Your goal 
+                is to determine the total force of the water on the top of the trapezoidal plate.    
+                </p>
+                <figure>
+                <caption>A trapezoidal plate.</caption>
+                    <image xml:id="horztrap" width="50%">
+                        <description>A trapezoidal plate with top side 5 ft, bottom side 3 ft, and with a height of 2 ft.</description>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125/2
+                            right=x+0.125/2
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        plate = polygon(([(-1.5,0),(1.5,0),(2.5,2),(-2.5,2)]),fill=False,color='black',thickness=2,axes=False)
+                        height = edger_x(-2.75,0,2)
+                        height_label = text('2 ft',(-3.0,1),color='black',fontsize=13)
+                        top_label = text('5 ft',(0,2.25),color='black',fontsize=13)
+                        bottom_label = text('3 ft', (0,-.25),color='black',fontsize=13)
+                        plate  + height + height_label + top_label + bottom_label
+                        </sageplot>
+                    </image>
+            </figure>
+            </introduction> 
+            <task>
+                <statement>
+                    <p>
+                        What is the area <m> A </m> of the trapezoid? Be sure to give the correct units.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m> A=\dfrac{5+3}{2}\cdot 2=8 </m> ft<m>^2</m>
+                    </p>
+                </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        The weight density of fresh water is <m>\rho= 62.4 </m> pounds per cubic foot.
+                        What unit of measure is needed to convert from weight density <m> \rho </m> to 
+                        pressure <m> P </m> in this context? 
+                    </p>
+                    <ol marker="A." cols="2">
+                <li><p>pounds</p></li>
+                <li><p>feet</p></li>
+                <li><p>square feet</p></li>
+                <li><p>square inch</p></li>
+                    </ol>
+                </statement>
+            <answer>
+                <p>
+                    B
+                </p>
+            </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        What physical quantity achieves the required unit from part (b)?
+                    </p>
+                    <ol marker="A." cols="2">
+                <li><p>force</p></li>
+                <li><p>length</p></li>
+                <li><p>height</p></li>
+                <li><p>depth</p></li>
+                 </ol>
+                </statement>
+            <answer>
+                <p>
+                    D
+                </p>
+            </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Using the results of parts (a), (b), and (c), calculate the force on the plate <m> F</m> using the formula <m> F=PA</m>.
+                    </p>
+                </statement>
+            <answer>
+                <p>
+                <md>
+                    <mrow> F=PA=(\text{depth})(\text{weight density})A=(4)\rho A\amp =4(62.4)(8)</mrow>
+                    <mrow> \amp =32(62.4)</mrow>
+                    <mrow> \amp \approx 1996.8\text{ lb}</mrow>
+                </md>   
+                </p>
+            </answer>
+            </task>
+        </activity>
+
+        <activity xml:id="activity-AI5verttrapplate">
+            <introduction>
+                <p>
+                    Now consider that the trapezoidal plate from the previous activity is submerged vertically into freshwater so that the top side of the trapezoid
+                    is 4 feet under water. 
+                </p>
+                <figure>
+                <caption>A horizontally submerged trapezoidal plate.</caption>
+                    <image xml:id="verttrap" width="50%">
+                        <description>A vertically submerged trapezoidal plate with top side 5 ft, bottom side 3 ft, and with a height of 2 ft, which is 4 feet under water.</description>
+                        <sageplot>
+                        def edger_x (x,y1,y2):
+                            left=x-0.125/2
+                            right=x+0.125/2
+                            edge1 = line(([left,y1],[right,y1]),color='black')
+                            edge2 = line(([left,y2],[right,y2]),color='black')
+                            edge3 = line(([x,y1],[x,y2]),color='black')
+                            p = edge1+edge2+edge3
+                            return p
+                        plate = polygon(([(-1.5,0),(1.5,0),(2.5,2),(-2.5,2)]),fill=False,color='black',thickness=2,axes=False)
+                        water = polygon(([(-4,0),(3.6,0),(3.6,6),(-4,6)]),fill=True,color='turquoise',thickness=2,axes=False)
+                        height = edger_x(-2.75,0,2)
+                        depth = edger_x(-2.75,2,6)
+                        depth_label = text('4 ft',(-3.1,4),color='black',fontsize=13)
+                        height_label = text('2 ft',(-3.1,1),color='black',fontsize=13)
+                        top_label = text('5 ft',(0,2.25),color='black',fontsize=13)
+                        bottom_label = text('3 ft', (0,.25),color='black',fontsize=13)
+                        height + height_label + top_label + bottom_label + depth + depth_label + water + plate
+                        </sageplot>
+                    </image>
+            </figure>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Draw and label a horizontal rectangle across the middle of the plate of width <m> l_i</m>
+                        and height <m> x_i</m>. What is the area <m>A_i</m> of this rectangle?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>A_i=l_ix_i</m>
+                    </p>
+                </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>F_i=P_iA_i</m> represent the force on any such rectangle. Which of the following represent
+                        an approximation of the total force on the plate?
+                    </p>
+                    <ol marker="A." cols="2">
+                <li><p><m>F\approx \displaystyle\sum_iP_iA_i</m></p></li>
+                <li><p><m>F\approx \displaystyle\int_0^2P_iA_i</m></p></li>
+                <li><p><m>F\approx \displaystyle\int_0^6P_iA_i</m></p></li>
+                <li><p><m>F\approx P_1A_1</m></p></li>
+                    </ol>
+                </statement>
+                <answer>
+                    <p>
+                        A
+                    </p>
+                </answer>
+            </task>
+        </activity>
+
+        
+        <commentary component="instructor">
+            <paragraphs>
+                <title>Instructor Note</title>
+                <p>
+                    In <xref ref="task-AI5fullscaffold-coord"/>, 
+                    each team should have an axis that has the downward direction as positive.
+                </p>
+            </paragraphs>
+        </commentary>
+
+        <activity xml:id="activity-AI5fullscaffold">
+            <introduction>
+                <p>
+                    Again, consider a trapezoidal plate that is submerged vertically into freshwater so that the top side of the trapezoid
+                    is 4 feet under water. 
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Draw a picture of this situation, being sure to show the correct orientation and the correct side lengths.
+                    </p>
+                </statement>
+            </task>
+
+            <task xml:id="task-AI5fullscaffold-coord">
+                <statement>
+                    <p>
+                        Create a one-dimensional coordinate system with the origin at the water level and positive direction corresponding to positive depth.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        As done in <xref ref="activity-AI5verttrapplate"/>, draw and label a rectangle to approximate
+                        the force on a small portion of the plate located at <m>x_i</m>. Use <m>\Delta x_i</m> to represent 
+                        the height of the rectangle. According to your coordinate system, what is the depth <m>d_i</m> of this rectangle?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Using <m>\rho=62.4</m> lb/ft<m>^3</m>, 
+                        write <m>P_i</m> in terms of <m>x_i</m>.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>P_i=62.4x_i</m>
+                    </p>
+                </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Recall that <m>A_i=l_i\Delta x_i</m>. The value of <m>l_i</m> should change linearly according
+                        to an equation <m>l(x)</m>, where <m>l(4)=5</m> and <m>l(6)=3</m>. Find the point-slope form
+                        of this linear equation. Then replace <m>x</m> with <m>x_i</m> to get <m>l_i</m>.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>l_i=9-x_i</m>
+                    </p>
+                </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Now, combine the results of parts (d) and (e) to calculate <m>F_i=P_iA_i</m> in terms of 
+                        only <m>x_i</m> and <m>\Delta x_i</m>.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>F_i=(62.4x_i)(9-x_i)\Delta x_i</m>
+                    </p>
+                </answer>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find <m>F=\displaystyle\int_a^b F(x)\,dx</m> using the approximation formula
+                        <m>F\approx \displaystyle\sum_i F_i</m> by converting it to an integral through replacing <m>x_i</m> with <m>x</m> and <m>\Delta x_i</m> with <m>dx</m>.
+                        You will also have to choose appropriate value for <m>a</m> and <m>b</m>.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                        <m>F=\displaystyle\int_4^6(62.4x)(9-x)\,dx=2454.4</m> lb
+                    </p>
+                </answer>
+            </task>
+        </activity>
+
+        <observation xml:id="forceobs">
+            <!-- <title>Hydrostatic Force Formula</title>
+             -->
+            <p>
+             For a vertically submerged flat plate, the total force exerted on one side of the plate is approximated by         
+            <me>
+                F\approx \displaystyle\sum_iF_i=\displaystyle\sum P_iA_i=\displaystyle\sum \rho x_il_i\Delta x_i,
+            </me>
+            and the exact force is given by
+            <me>
+                F=\int_a^b \rho x l(x)\,dx,
+            </me>
+            where <m>\rho</m> is the weight density of the fluid, and <m>l(x)</m> is the function that gives the length of the approximating rectangle at location <m>x</m>.            
+            </p>
+        </observation>
+
+        <warning>
+            <p>
+                When using <xref ref="forceobs"/>, it is required that the coordinate system be set up with the origin at the water level and 
+                with the positive direction pointing downward. Other setups will require a complete re-derivation of the formula (see: <xref ref="activity-AI5dam"/>).
+            </p>
+        </warning>
+
+        <activity>
+            <statement>
+                <p>
+                    Suppose a trapezoidal dam has height 40 feet, top width of 115 feet and bottom width of 70 feet. Water is pressed against the entire surface of the dam. 
+                    Find an integral which computes the force exerted against this dam. Recall that the weight density of freshwater is <m>\rho=62.4</m> lb/ft<m>^3</m>.
+                </p>
+                <answer>
+                    <p>
+                        <m>F=\displaystyle\int_0^{40} 62.4x\left(-\dfrac{9}{8}x+115\right)dx</m>
+                    </p>
+                </answer>
+            </statement>
+        </activity>
         
         <activity xml:id="activity-AI5dam">
             <introduction>
             <p>
-                Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top. Assume the dam is 20 feet tall with water that rises to its top. Water weighs 62.4 pounds per cubic foot and exerts <m>P=62.4d</m> lbs/ft<m>^2</m> of pressure at depth <m>d</m> ft. Consider a rectangular slice of this dam at height <m>h_i</m> feet and width <m>b_i</m>.
+                Consider a trapezoid-shaped dam that is 60 feet wide at its base and 90 feet wide at its top. Assume the dam is 20 feet tall with water that rises to its top. 
+                Water weighs 62.4 pounds per cubic foot and exerts <m>P=62.4d</m> lbs/ft<m>^2</m> of pressure at depth <m>d</m> ft. Consider a rectangular slice of this dam at height <m>h_i</m> feet and width <m>b_i</m>.
                 <figure>
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
                     <image xml:id="damslice" width="50%">
