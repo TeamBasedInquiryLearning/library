@@ -8,21 +8,24 @@
       name="precalculus-preview"
       format="html"
       publication="instructor.ptx"
-      source="precalculus/source/preview.ptx" >
+      source="precalculus/source/preview.ptx"
+      deploy-dir="preview/precalculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="calculus-preview"
       format="html"
       publication="instructor.ptx"
-      source="calculus/source/preview.ptx" >
+      source="calculus/source/preview.ptx"
+      deploy-dir="preview/calculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="linear-algebra-preview"
       format="html"
       publication="instructor.ptx"
-      source="linear-algebra/source/preview.ptx" >
+      source="linear-algebra/source/preview.ptx"
+      deploy-dir="preview/linear-algebra" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     
@@ -44,8 +47,7 @@
       name="precalculus-web-instructor"
       format="html"
       source="precalculus/source/main.ptx"
-      publication="instructor.ptx"
-      deploy-dir="preview/precalculus" >
+      publication="instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -83,8 +85,7 @@
       name="calculus-web-instructor"
       format="html"
       source="calculus/source/main.ptx"
-      publication="instructor.ptx"
-      deploy-dir="preview/calculus" >
+      publication="instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -122,8 +123,7 @@
       name="linear-algebra-web-instructor"
       format="html"
       source="linear-algebra/source/main.ptx"
-      publication="instructor.ptx"
-      deploy-dir="preview/linear-algebra" >
+      publication="instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
