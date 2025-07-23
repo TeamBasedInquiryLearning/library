@@ -197,6 +197,17 @@
             </task>
         </activity>
 
+        
+        <commentary component="instructor">
+            <paragraphs>
+                <title>Instructor Note</title>
+                <p>
+                    In <xref ref="task-AI5fullscaffold-coord"/>, 
+                    each team should have an axis that has the downward direction as positive.
+                </p>
+            </paragraphs>
+        </commentary>
+
         <activity xml:id="activity-AI5fullscaffold">
             <introduction>
                 <p>
@@ -213,17 +224,11 @@
                 </statement>
             </task>
 
-            <task>
+            <task xml:id="task-AI5fullscaffold-coord">
                 <statement>
                     <p>
                         Create a one-dimensional coordinate system with the origin at the water level and positive direction corresponding to positive depth.
                     </p>
-                    <commentary component="instructor">
-                    <paragraphs>
-                    <title>Instructor Note</title>
-                    <p> Each team should have an axis that has the downward direction as positive.</p>
-                    </paragraphs>
-                    </commentary>
                 </statement>
             </task>
 
