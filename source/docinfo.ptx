@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+    <document-id>tbilpreview</document-id>
+    <initialism>TBIL-P</initialism>
+    <blurb shelf="math">Preview of Team-Based Inquiry Learning Resource library</blurb>
+    <macros><xi:include href="./common/macros.tex" parse="text"/></macros>
+    <latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tikz-cd}
+    </latex-image-preamble>
+    <rename element="objectives" xml:lang="en-US">Learning Outcomes</rename>
+    <numbering><figures level="0"/></numbering>
+<!-- Specify the default type of cross reference:           -->
+    <cross-references text="type-global" />
+    <brandlogo source="learning.png"/>
+</docinfo>

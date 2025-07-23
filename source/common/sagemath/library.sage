@@ -65,8 +65,8 @@ class TBIL:
             if type(label_unit_point) is tuple and len(label_unit_point)==2:
                 label=f"$\\left({label_unit_point[0]},{label_unit_point[1]}\\right)$"
             else:
-                label=f"$\\left({latex(cos(end_angle))},{latex(sin(end_angle))}\\right)$"
-            p+=text(label, (1.4*c for c in end_coordinate),color="black",fontsize="18")
+                label=f"$\\left({TBIL.typeset_angle(cos(end_angle))},{TBIL.typeset_angle(sin(end_angle))}\\right)$"
+            p+=text(label, (1.25*c for c in end_coordinate),color="black",fontsize="18")
         if show_unit_circle:
             p+=circle((0,0),1,color="#ddd")
         if show_triangle:
@@ -239,6 +239,8 @@ class TBIL:
 
     @staticmethod
     def typeset_angle(theta,latex_delimiters=False):
+        if isinstance(theta,str):
+            return theta
         angle_string=f"{latex(theta)}"
         if type(theta) is sage.symbolic.expression.Expression and theta.is_rational_expression() and denominator(theta)!=1:
             if numerator(theta)<0:
@@ -348,9 +350,130 @@ class TBIL:
             return TBIL.line_from_point_slope(point1,slope)
 
     @staticmethod
+    def pythagorean_triples(max_length=100):
+        '''Returns the set of Pythagorean triples with all sides less than or equal to max_length'''
+        l=max_length
+        triples=set()
+        for n in [1..floor(sqrt(l/2))]:
+            for m in [n+r for r in [1..(sqrt(l+n^2)-n)]]:
+                triple = [m^2-n^2,2*m*n,m^2+n^2]
+                triple.sort()
+                if triple[2]<l:
+                    triples |= set([ (r*triple[0],r*triple[1],r*triple[2]) for r in [1..floor(l/triple[2])]])
+    
+        return triples
+
+
+    @staticmethod
     def line_from_point_slope(point,slope):
         '''Returns the equation of a line from a point and slope'''
         return y==slope*x+point[1]-slope*point[0]
+
+    #Functions to display powers of trig functions
+    def print_cosp(self,*args): 
+        if args[1]==1:
+            return f"\\cos({latex(args[0])})"
+        else:
+            return f"\\cos ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cosp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.sinp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*-1*TBIL.cosp(args[0],args[1]-1)*TBIL.sinp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+    
+    def power_cosp(self,x,n,power_param):
+        return cosp(x,n*power_param)
+
+    cosp = function("cosp",nargs=2,print_latex_func=print_cosp,derivative_func=deriv_cosp,power_func=power_cosp)
+
+    def print_sinp(self,*args): 
+        if args[1]==1:
+            return f"\\sin({latex(args[0])})"
+        else:
+            return f"\\sin ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_sinp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.cosp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.sinp(args[0],args[1]-1)*TBIL.cosp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_sinp(self,x,n,power_param):
+        return sinp(x,n*power_param)
+
+    sinp = function("sinp",nargs=2,print_latex_func=print_sinp, derivative_func=deriv_sinp,power_func=power_sinp)
+
+    def print_tanp(self,*args): 
+        if args[1]==1:
+            return f"\\tan({latex(args[0])})"
+        else:
+            return f"\\tan ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_tanp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.secp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.tanp(args[0],args[1]-1)*TBIL.secp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_tanp(self,x,n,power_param):
+        return tanp(x,n*power_param)
+
+    tanp = function("tanp",nargs=2,print_latex_func=print_tanp, derivative_func=deriv_tanp,power_func=power_tanp)
+
+    def print_cotp(self,*args): 
+        if args[1]==1:
+            return f"\\cot({latex(args[0])})"
+        else:
+            return f"\\cot ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cotp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.cscp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return -1*args[1]*TBIL.cotp(args[0],args[1]-1)*TBIL.cscp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_cotp(self,x,n,power_param):
+        return cotp(x,n*power_param)
+
+    cotp = function("cotp",nargs=2,print_latex_func=print_cotp, derivative_func=deriv_cotp,power_func=power_cotp)
+
+    def print_secp(self,*args): 
+        if args[1]==1:
+            return f"\\sec({latex(args[0])})"
+        else:
+            return f"\\sec ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_secp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.secp(args[0],1)*TBIL.tanp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.secp(args[0],args[1])*TBIL.tanp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_secp(self,x,n,power_param):
+        return secp(x,n*power_param)
+
+    secp = function("secp",nargs=2,print_latex_func=print_secp, derivative_func=deriv_secp,power_func=power_secp)
+
+    def print_cscp(self,*args): 
+        if args[1]==1:
+            return f"\\csc({latex(args[0])})"
+        else:
+            return f"\\csc ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cscp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.csc(args[0],1)*TBIL.cotp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return -1*args[1]*TBIL.cscp(args[0],args[1])*TBIL.cotp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_cscp(self,x,n,power_param):
+        return cscp(x,n*power_param)
+
+    cscp = function("cscp",nargs=2,print_latex_func=print_cscp, derivative_func=deriv_cscp,power_func=power_cscp)
+
+    def typeset_trigpowers(f):
+        return f.substitute_function(sin(x)==TBIL.sinp(x,1)).substitute_function(cos(x)==TBIL.cosp(x,1)).substitute_function(tan(x)==TBIL.tanp(x,1)).substitute_function(sec(x)==TBIL.secp(x,1)).substitute_function(csc(x)==TBIL.cscp(x,1))
 
     # Linear Algebra
 

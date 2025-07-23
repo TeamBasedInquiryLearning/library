@@ -16,25 +16,19 @@ def main(book:str, full:bool, sandbox=False, stage=True):
     print(f"Building exercises from `{bank_path}`")
 
     b = Bank(bank_path)
+    for o in b.outcomes():
+        o.download_cache(f"https://tbil.org/preview/{book}/exercises")
     b.generate_exercises(regenerate=full, images=full)
     b.write_json()
 
-    # b.build_viewer() # <-- broken, reimplemented below
-    docs_path = Path(b.abspath()) / "docs"
-    if docs_path.exists() and docs_path.is_dir():
-        shutil.rmtree(docs_path)
-    docs_path.mkdir()
-    archive = zipfile.ZipFile(static.open_resource("viewer.zip"))
-    archive.extractall(docs_path)
-    # copy assets
-    shutil.copytree(b.build_path(), docs_path / "assets", dirs_exist_ok=True)
+    b.build_viewer(with_cache=True)
 
     if stage:
         stage_path = base_path / "output" / "stage" / "preview" / book / "exercises"
         print(f"Staging bank at `{stage_path}`")
         # stage bank
         shutil.copytree(
-            docs_path, 
+            bank_path / "docs", 
             stage_path, 
             dirs_exist_ok=True
         )

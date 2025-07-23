@@ -68,77 +68,122 @@
       <task>
       <statement> 
         <p>Plug the point <m>(-3,-4)</m> into the expression found above for the derivative to get the slope of the tangent line.</p>
+          </statement>
           <answer>
             <p>
               <m>\dfrac{dy}{dx} = -\dfrac{3}{4}</m>
             </p>
           </answer>
-          </statement>
       </task>
       <task>
       <statement>
           <p>Use the value for the slope of the tangent line to obtain the equation of the tangent line.</p>
+          </statement>
           <answer>
             <p>
               <m>y = -\dfrac{3}{4}x-\dfrac{25}{4}</m>
             </p>
           </answer>
-          </statement>
       </task>
   </activity>
 
     <activity xml:id="activity-derivative-implicit2">
-    <introduction>
-        <p>The curve given in <xref ref = "figure-derivative-implicit2"/> is an example of an astroid.  The equation of this astroid is <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.  What is the derivative with respect <m>x</m> for this astroid? (Solve for <m>\dfrac{dy}{dx}</m>).</p>
-        </introduction>
-         <figure xml:id="figure-derivative-implicit2">
+      <statement>
+        <p>
+          The curve given in <xref ref="figure-derivative-implicit2" /> is an example of an
+          astroid. The equation of this astroid is <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>. What is the
+          derivative with respect <m>x</m> for this astroid? (Solve for <m>\dfrac{dy}{dx}</m>).
+        </p>
+        <figure xml:id="figure-derivative-implicit2">
           <image width="70%">
             <sageplot>
               x = var('x')
-              p = parametric_plot((3*(cos(x))^3,3*(sin(x))^3), (x,0,2*pi),thickness=2, axes_labels=('$x$','$y$'))
+              p = parametric_plot((3*(cos(x))^3,3*(sin(x))^3), (x,0,2*pi),thickness=2,
+              axes_labels=('$x$','$y$'))
               p
             </sageplot>
           </image>
           <caption>Graph of <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.</caption>
         </figure>
-         <ol marker="A." cols="2">
-                <li><p><m>\frac{dy}{dx} = \frac{x^{-1/3}}{y^{-1/3}}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{y^{-1/3}}{x^{-1/3}}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{3^{-1/3}-x^{-1/3}}{y^{-1/3}}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = -\frac{x^{-1/3}}{y^{-1/3}}</m></p></li>
-            </ol>
-            <answer>
+        <p>
+          <ol marker="A." cols="2">
+            <li>
               <p>
-                D
+                <m>\frac{dy}{dx} = \frac{x^{-1/3}}{y^{-1/3}}</m>
               </p>
-            </answer>
+            </li>
+            <li>
+              <p>
+                <m>\frac{dy}{dx} = \frac{y^{-1/3}}{x^{-1/3}}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{dy}{dx} = \frac{3^{-1/3}-x^{-1/3}}{y^{-1/3}}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{dy}{dx} = -\frac{x^{-1/3}}{y^{-1/3}}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
     </activity>
-    
+
     <activity xml:id="activity-derivative-implicit3">
-    <introduction>
-        <p>An example of a lemniscate is given in <xref ref = "figure-derivative-implicit3"/>.  The equation of this lemniscate is <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.  What is the derivative with respect <m>x</m> for this lemniscate? (Solve for <m>\dfrac{dy}{dx}</m>).</p>
-        </introduction>
-         <figure xml:id="figure-derivative-implicit3">
-        <image width="70%">
-          <sageplot>
-            x = var('x')
-            p = parametric_plot((cos(x)/(1+(sin(x))^2),(cos(x)*sin(x))/(1+(sin(x))^2)),(x,0,2*pi),thickness=2,axes_labels=('$x$','$y$'))
-            p
-          </sageplot>
-        </image>
-        <caption>Graph of <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.</caption>
+      <statement>
+        <p>
+          An example of a lemniscate is given in <xref ref="figure-derivative-implicit3" />. The
+          equation of this lemniscate is <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>. What is the
+          derivative with respect <m>x</m> for this lemniscate? (Solve for <m>\dfrac{dy}{dx}</m>).
+        </p>
+        <figure xml:id="figure-derivative-implicit3">
+          <image width="70%">
+            <sageplot>
+              x = var('x')
+              p = parametric_plot((cos(x)/(1+(sin(x))^2),(cos(x)*sin(x))/(1+(sin(x))^2)),(x,0,2*pi),thickness=2,axes_labels=('$x$','$y$'))
+              p
+            </sageplot>
+          </image>
+          <caption>Graph of <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.</caption>
         </figure>
-         <ol marker="A." cols="2">
-                <li><p><m>\frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y+2(x^2+y^2)}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y(1+2(x^2+y^2))}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{y(1+2(x^2+y^2))}{x(1-2(x^2+y^2))}</m></p></li>
-                <li><p><m>\frac{dy}{dx} = \frac{y+2(x^2+y^2)}{x(1-2(x^2+y^2))}</m></p></li>
-            </ol>
-            <answer>
+        <p>
+          <ol marker="A." cols="2">
+            <li>
               <p>
-                B
+                <m>\frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y+2(x^2+y^2)}</m>
               </p>
-            </answer>
+            </li>
+            <li>
+              <p>
+                <m>\frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y(1+2(x^2+y^2))}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{dy}{dx} = \frac{y(1+2(x^2+y^2))}{x(1-2(x^2+y^2))}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{dy}{dx} = \frac{y+2(x^2+y^2)}{x(1-2(x^2+y^2))}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+        <answer>
+        <p>
+          B
+        </p>
+      </answer>
     </activity>
     
     <activity xml:id="checkit-df7">
@@ -174,72 +219,103 @@
         
     </activity>
     <activity xml:id="activity-derivative-implicit4">
-    <introduction>
-        <p>To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\dfrac{dy}{dx}</m>? This process to find a derivative is known as logarithmic differentiation. </p>
-        </introduction>
-         <ol marker="A." cols="2">
-                <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + 1)</m></p></li>
-                <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+1)}{x^x}</m></p></li>
-                <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
-                <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+x)}{x^x}</m></p></li>
-            </ol>
-            <answer>
-              <p>
-                A
-              </p>
-            </answer>
-     </activity> 
-    
- <activity xml:id="activity-derivative-implicit-in-context1">
-    <introduction>  
-    <p>
-      
-    Valerie is building a square chicken coop with side length <m>x</m>.  Because she needs a separate place for the rooster, she needs to put fence around the square and also along the diagonal line shown.  The fence costs  $20 per linear meter, and she has a budget of  $900.  
-    </p>  
-  <figure xml:id="figure-chicken-coop">
-       <image width="50%">
-          <sageplot>
-            sq = polygon([(-1,-1),(-1,1),(1,1),(1,-1)], fill=False, axes=False, color='black',thickness=2)
-            a = arc((1,1),1, sector=(pi,pi+.36),color='black')
-            tri = polygon([(-1,1),(-1,0.25),(1,1)],thickness=2,alpha = 0.5, color='grey',edgecolor='black')
-            l = line([(-1,.25),(1,1)],color='black')
-            x1 = text('$x$', (1.1,0), fontsize=20, color='black')
-            x2 = text('$x$', (0,-1.1), fontsize=20, color='black')
-            y = text('$y$', (-.1,.8), fontsize=20, color='black')
-            sq+a+tri+x1+x2+y+l
-          </sageplot>
-       </image>
-                <caption> A diagram of the chicken coop.</caption>
-        </figure>
-        </introduction>
-<task><p> Which of the following equations gives the relationship between <m>x</m> and <m>y</m>? Make sure you can explain why!</p>
-     <ol marker="A." cols="2">
-                <li><p><m>20x + \frac{80x}{\cos(y)}=900</m></p></li>
-                <li><p><m>80x + \frac{20x}{\cos(y)}=900</m></p></li>
-                <li><p><m>80x + \frac{20x}{\sin(y)}=900</m></p></li>
-                <li><p><m>20x + \frac{80x}{\sin(y)}=900</m></p></li>
-            </ol>
-            <answer>
-              <p>
-                B
-              </p>
-            </answer>
-     </task>
-     <task><p>If Valerie builds the coop with <m>y=\pi/3</m> (and wants to use her whole budget), find what side length <m>x</m> she needs to use.</p>
+      <statement>
+        <p>
+          To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\dfrac{dy}{dx}</m>? This process to find a derivative is known as logarithmic differentiation.
+          <ol marker="A." cols="2">
+            <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + 1)</m></p></li>
+            <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+1)}{x^x}</m></p></li>
+            <li><p><m>\dfrac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
+            <li><p><m>\dfrac{dy}{dx} = \dfrac{(\ln(x)+x)}{x^x}</m></p></li>
+          </ol>
+        </p>
+      </statement>
       <answer>
         <p>
-          <m>x = 7.5</m> meters
+          A
         </p>
       </answer>
-     </task>
-       <task><p>Find the slope of the curve at this point and interpret what this value tells Valerie.</p>
+    </activity>
+
+    <activity xml:id="activity-derivative-implicit-in-context1">
+      <introduction>
+        <p> Valerie is building a square chicken coop with side length <m>x</m>. Because she needs a
+          separate place for the rooster, she needs to put fence around the square and also along
+          the diagonal line shown. The fence costs $20 per linear meter, and she has a budget of
+          $900. </p>
+        <figure xml:id="figure-chicken-coop">
+          <image width="50%">
+            <sageplot>
+              sq = polygon([(-1,-1),(-1,1),(1,1),(1,-1)], fill=False, axes=False,
+              color='black',thickness=2)
+              a = arc((1,1),1, sector=(pi,pi+.36),color='black')
+              tri = polygon([(-1,1),(-1,0.25),(1,1)],thickness=2,alpha = 0.5,
+              color='grey',edgecolor='black')
+              l = line([(-1,.25),(1,1)],color='black')
+              x1 = text('$x$', (1.1,0), fontsize=20, color='black')
+              x2 = text('$x$', (0,-1.1), fontsize=20, color='black')
+              y = text('$y$', (-.1,.8), fontsize=20, color='black')
+              sq+a+tri+x1+x2+y+l
+            </sageplot>
+          </image>
+          <caption> A diagram of the chicken coop.</caption>
+        </figure>
+      </introduction>
+      <task>
+        <statement>
+          <p> Which of the following equations gives the relationship between <m>x</m> and <m>y</m>?
+            Make sure you can explain why!
+            <ol marker="A." cols="2">
+              <li>
+                <p>
+                  <m>20x + \frac{80x}{\cos(y)}=900</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>80x + \frac{20x}{\cos(y)}=900</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>80x + \frac{20x}{\sin(y)}=900</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>20x + \frac{80x}{\sin(y)}=900</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
         <answer>
           <p>
-            <m>\dfrac{dy}{dx} = -\dfrac{2}{5\sqrt{3}}</m> radians per meter. The angle for the diagonal fence is decreasing by about <m>13.2</m> degrees per meter of side length.
+            B
           </p>
         </answer>
-       </task>
-   </activity> 
+      </task>
+      <task>
+        <statement>
+          <p>If Valerie builds the coop with <m>y=\pi/3</m> (and wants to use her whole budget), find
+            what side length <m>x</m> she needs to use.</p>
+        </statement>
+        <answer>
+          <p>
+            <m>x = 7.5</m> meters </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>Find the slope of the curve at this point and interpret what this value tells Valerie.</p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{dy}{dx} = -\dfrac{2}{5\sqrt{3}}</m> radians per meter. The angle for the
+            diagonal fence is decreasing by about <m>13.2</m> degrees per meter of side length. </p>
+        </answer>
+      </task>
+    </activity> 
 
     </subsection>
     <subsection>

@@ -1,0 +1,38 @@
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+      <intro>
+        <p>Compute each of the following.</p>
+      </intro>
+      <!-- {{#tasks}} -->
+      <knowl>
+          <content>
+            <p><m>{{f}}\left({{a}}\right)</m></p>
+          </content>
+          <outtro>
+            <p><m>{{value}}</m> </p>
+          </outtro>
+      </knowl>
+      <!-- {{/tasks}} -->
+    </knowl>
+    <knowl>
+      <intro>
+        <p>Consider the function <m>{{fname}}(x)={{itrig}}(x)</m>.</p>
+      </intro>
+      <knowl>
+        <content>
+          <p>What is the domain and range of <m>{{fname}}(x)</m>?</p>
+        </content>
+        <outtro>
+          <p>The domain is <m>{{domain}}</m> and the range is <m>{{range}}</m>.</p>
+        </outtro>
+      </knowl>
+      <knowl>
+        <content>
+          <p>Draw a graph of <m>{{fname}}(x)</m>.</p>
+        </content>
+        <outtro>
+          <p><image source="assets/PF3/generated/{{__seed__}}/plot.png"/></p>
+        </outtro>
+      </knowl>
+    </knowl>
+</knowl>

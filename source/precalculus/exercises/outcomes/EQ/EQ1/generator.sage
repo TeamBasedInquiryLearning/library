@@ -4,6 +4,7 @@ class Generator(BaseGenerator):
     def data(self):
         eqvar, ineqvar = sample([var('x'),var('y'),var('z')],2)
 
+
         a,b,c,d,f = sample([n*choice([-1,1]) for n in range(2,7)], 5)
 
         # ensure a*b-d != 0

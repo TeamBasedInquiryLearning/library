@@ -1,4 +1,4 @@
-# Replace the contents of `codechat_config.yaml` with this file to edit Precalculus
+source_path: source
 output_path: output/precalculus-web-instructor
-args: "/opt/conda/envs/sage/bin/python -m pretext build precalculus-web-instructor --xmlid {xml_id} --no-knowls"
+args: "{sys_executable} -m pretext build precalculus-web-instructor --xmlid {xml_id} --no-knowls -g"
 project_type: PreTeXt

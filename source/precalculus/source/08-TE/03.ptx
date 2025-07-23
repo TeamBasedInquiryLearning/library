@@ -12,6 +12,1098 @@
     <subsection>
     <title>Activities</title>
 
+    <remark>
+    <p>
+    Now that we've learned about properties of and identities involving trigonometric functions, we will now turn to solving equations that include trigonometric functions.
+    </p>
+    </remark>
+
+    <activity xml:id="intro-to-trig-equations">
+    <introduction>
+      <p>
+      Consider the equation <m>2\sin\theta-1=0</m>.
+      </p>
+    </introduction>
+
+    <task>
+    <statement>
+    <p>
+    What first step would you take to isolate <m>\sin\theta</m>?
+    <ol marker= "A." cols="1">
+            <li> Divide both sides by <m>2</m>. </li>
+            <li> Add <m>1</m> to both sides. </li>
+            <li> Subtract <m>2\sin\theta</m> from both sides. </li></ol>
+    </p>
+    </statement>
+    <hint>
+    <p>
+    If given the equation <m>2x-1=0</m>, what would your first step be?
+    </p>
+    </hint>
+    <answer>
+        <p>
+          B
+        </p>
+      </answer>
+    </task>
+
+    <task>
+    <statement>
+    <p>
+    Continue using algebra to isolate <m>\sin\theta</m>. What equation would you have left?
+    <ol marker= "A." cols="2">
+            <li> <m>\sin\theta=\frac{1}{2}</m> </li>
+            <li> <m>\sin\theta=-\frac{1}{2}</m> </li>
+            <li> <m>\sin\theta=1</m> </li>
+            <li> <m>\sin\theta=-1</m> </li></ol>
+    </p>
+    </statement>
+    <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+    <statement>
+    <p>
+    For what values of <m>\theta</m>, on the interval  <m>[0,2\pi)</m>, is the equation true?
+    <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{6}</m> </li>
+            <li> <m>\frac{\pi}{3}</m> </li>
+            <li> <m>\frac{2\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{6}</m> </li>
+            <li> <m>\frac{7\pi}{6}</m> </li>
+            <li> <m>\frac{4\pi}{3}</m> </li></ol>
+    </p>
+    </statement>
+    <hint>
+      <p>
+        Use the unit circle to help you find all the values of <m>\theta</m>.
+      </p>
+    </hint>
+    <answer>
+        <p>
+          A and D
+        </p>
+      </answer>
+    </task>
+
+  
+    </activity>
+
+    <remark>
+    <p>
+    One way to solve a trigonometric equation is to isolate the trigonometric term on one side. Once it has been isolated, you can then determine values of <m>\theta</m> that satisfies the equation.
+    </p>
+    </remark>
+
+    <definition xml:id="def-general-solution">
+      <p>
+        In many cases, you will be asked to find the solution to a trigonometric equation within a given interval (such as <m>[0, 2\pi)</m>). If, however, you are asked to find the <term>general solution</term> of a trigonometric equation (like in <xref ref="intro-to-trig-equations"/>), you need to include all solutions. This requires the notation below, which includes all angles coterminal with the solutions in the interval <m>[0, 2\pi)</m>.  If <m> \alpha</m> is a solution to a trigonometric equation, then the general solution would be 
+       <me>\theta = \alpha + 2\pi n, n \in \mathbb{Z} </me> 
+      where <m>\mathbb{Z} </m> represents the set of integers.
+</p>
+    </definition>
+
+    <activity xml:id="finding-general-solution">
+
+      <introduction>
+        <p>
+          From <xref ref="intro-to-trig-equations"/>, we were able to determine two values (<m>\frac{\pi}{6}</m> and <m>\frac{5\pi}{6}</m>) that satisfy the equation <m>2\sin\theta-1=0</m> within the interval <m>[0,2\pi)</m>. In this activity, we will explore other values of <m>\theta</m> that also satisfy the equation.
+        </p>
+      </introduction>
+
+      <task>
+    <statement>
+      <p>
+         If we know that <m>\frac{\pi}{6}</m> is a solution to <m>2\sin\theta-1=0</m>, determine whether <m>\frac{\pi}{6}+2\pi</m> is a solution.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Recall that one complete revolution is <m>2\pi</m>, so the positive <m>x</m>-axis can correspond to either an angle of <m>0</m> or <m>2\pi</m> radians (or <m>4\pi</m>, or <m>6\pi</m>, or <m>-2\pi</m>, or <m>-4\pi</m>, etc. depending on the direction of rotation).
+      </p>
+    </hint>
+    <answer>
+      <p>
+        <m>\frac{\pi}{6}+2\pi</m> is a solution to the equation <m>2\sin\theta-1=0</m>.
+      </p>
+      <p>
+        Students can think of this in a couple different ways. They can use the idea that <m>2\pi</m> is one revolution, which means that <m>\frac{\pi}{6}+2\pi</m> is just one revolution from <m>\frac{\pi}{6}</m>. Hence, the sine value will yield the same <m>y</m>-value.
+      </p>
+      <p>
+        Students may also find the value of <m>\frac{\pi}{6}+2\pi</m>, which is <m>\frac{13\pi}{6}</m>. Then, they can plug this value in for <m>\theta</m> to determine if <m>\frac{\pi}{6}+2\pi</m> is a solution.
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Determine if <m>\frac{\pi}{6}-2\pi</m> is a solution to the equation <m>2\sin\theta-1=0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\pi}{6}-2\pi</m> is a solution to the equation <m>2\sin\theta-1=0</m>. Students may use similar reasoning as part (a), but in this case, subtracting <m>2\pi</m> means that one revolution is in the counter clockwise direction.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Determine if <m>\frac{\pi}{6}+\frac{\pi}{2}</m> is a solution to the equation <m>2\sin\theta-1=0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{\pi}{6}+\frac{\pi}{2}</m> is NOT a solution to the equation <m>2\sin\theta-1=0</m>.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What other solutions can you find to the equation <m>2\sin\theta-1=0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Students should see that any coterminal angle will yield the same value and thus, there will be an infinite number of solutions to this equation.
+        </p>
+      </answer>
+    </task>
+
+    <task>
+        <statement>
+          <p>
+            Refer back to parts (a) and (b) and use <xref ref="def-general-solution"/> to find the general solution to <m>2\sin\theta-1=0</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            As we see in parts (a) and (b), there are more angles that solve the equation. In fact, any angle coterminal with the either of the angles we found will also be solutions. That means, we can add or subtract any multiple of <m>2\pi</m> to the solutions to find another solution.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            The notation we use for this is <m>\theta = \dfrac{\pi}{6}+2\pi n</m> and <m>\theta = \dfrac{5\pi}{6}+2\pi n</m> where <m>n</m> is an integer.
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="solving-factored-form">
+    <introduction>
+    <p>
+    Consider the equation <m>(2\sin\theta+\sqrt{3})(\cos\theta-1)=0</m>.
+    </p>
+    </introduction>
+
+    <task>
+    <statement>
+    <p>
+      Refer back to the Zero Product Property <xref ref="def-zero-product-property"/>. What equations do we need to solve?
+    </p>
+    </statement>
+    <answer>
+    <p>
+    <m>2\sin\theta+\sqrt{3}=0</m> and <m>\cos\theta-1=0</m>
+    </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Solve <m>2\sin\theta+\sqrt{3}=0</m> on the interval <m>[0, 2\pi)</m>. What values of <m>\theta</m> satisfies that equation?
+          <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{6}</m> </li>
+            <li> <m>\frac{5\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{6}</m> </li>
+            <li> <m>\frac{7\pi}{6}</m> </li>
+            <li> <m>\frac{4\pi}{3}</m> </li>
+            <li> <m>\frac{11\pi}{6}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+      <p>
+        B and E
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Solve <m>\cos\theta-1=0</m> on the interval <m>[0, 2\pi)</m>. What values of <m>\theta</m> satisfies that equation?
+          <ol marker= "A." cols="3">
+            <li> <m>0</m> </li>
+            <li> <m>\frac{\pi}{2}</m> </li>
+            <li> <m>\pi</m> </li>
+            <li> <m>\frac{3\pi}{2}</m> </li>
+            <li> <m>2\pi</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Refer back to parts (b) and (c). What are all the solutions that satisfy the equation <m>(2\sin\theta+\sqrt{3})(\cos\theta-1)=0</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=0, \frac{4\pi}{3}, \frac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find the general solution of <m>(2\sin\theta+\sqrt{3})(\cos\theta-1)=0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=0+2\pi(n)</m>
+        </p>
+        <p>
+          <m>\theta=\frac{4\pi}{3}+2\pi(n) n \in \mathbb{Z}</m>
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{3}+2\pi(n) n \in \mathbb{Z}</m>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <activity xml:id="linear-equation-with-tangent">
+    <introduction>
+      <p>
+        Trigonometric equations can also include other trig functions. Consider the equation <m>4=5+\tan\theta</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Use algebra to isolate <m>\tan\theta</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\theta=-1</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          For what values of <m>\theta</m>, on the interval  <m>[0,2\pi)</m>, is the equation true?
+          <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{4}</m> </li>
+            <li> <m>\frac{3\pi}{4}</m> </li>
+            <li> <m>\pi</m> </li>
+            <li> <m>\frac{5\pi}{4}</m> </li>
+            <li> <m>\frac{3\pi}{2}</m> </li>
+            <li> <m>\frac{7\pi}{4}</m> </li></ol>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Recall that <m>\tan\theta = \frac{\sin\theta}{\cos\theta}</m>.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          B and F
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the general solution of <m>4=5+\tan\theta</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{3\pi}{4}+2\pi(n)</m>
+        </p>
+        <p>
+          <m>\theta=\frac{7\pi}{4}+2\pi(n)</m>
+        </p>
+      </answer>
+    </task> 
+    </activity>
+
+    <activity xml:id="trig-equation-with-csc">
+    <introduction>
+      <p>
+        Consider the equation <m>(\sin\theta-1)(\csc\theta+2)=0</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Refer back to the Zero Product Property. What two equations do we solve?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\theta-1=0</m> and <m>\csc\theta+2=0</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Solve <m>\sin\theta-1=0</m> on the interval <m>[0, 2\pi)</m>. What value(s) of <m>\theta</m> satisfy that equation?
+          <ol marker= "A." cols="4">
+            <li> <m>0</m> </li>
+            <li> <m>\frac{\pi}{2}</m> </li>
+            <li> <m>\pi</m> </li>
+            <li> <m>\frac{3\pi}{2}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+      <p>
+        B
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          To solve <m>\csc\theta+2=0</m>, isolate the <m>\csc\theta</m> term. What does <m>\csc\theta</m> equal?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\theta=-2</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall that <m>\csc\theta=\frac{1}{\sin\theta}</m>. If <m>\csc\theta=-2</m>, what does <m>\sin\theta</m> equal? 
+          <ol marker= "A." cols="2">
+            <li> <m>\sin\theta=2</m> </li>
+            <li> <m>\sin\theta=-2</m> </li>
+            <li> <m>\sin\theta=\frac{1}{2}</m> </li>
+            <li> <m>\sin\theta=-\frac{1}{2}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+      <p>
+        D
+      </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using what you know from part (d), what value(s) of <m>\theta</m> satisfy that equation <m>\csc\theta=-2</m> on the interval <m>[0, 2\pi)</m>?
+          <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{6}</m> </li>
+            <li> <m>\frac{2\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{6}</m> </li>
+            <li> <m>\frac{7\pi}{6}</m> </li>
+            <li> <m>\frac{4\pi}{3}</m> </li>
+            <li> <m>\frac{11\pi}{6}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D and F
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Refer back to parts (b) and (e). What are all the solutions that satisfy the equation <m>(\sin\theta-1)(\csc\theta+2)=0</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{2}, \frac{7\pi}{6}, \frac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Find the general solution of <m>(\sin\theta-1)(\csc\theta+2)=0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{2}+2\pi(n)</m>
+        </p>
+        <p>
+          <m>\theta=\frac{7\pi}{6}+2\pi(n)</m>
+        </p>
+        <p>
+          <m>\theta=\frac{11\pi}{6}+2\pi(n)</m>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <activity xml:id="solve-linear-trig-equations-practice">
+      <introduction>
+      <p>
+      Solve each equation on the interval <m>[0,2\pi)</m>.
+      </p>
+      </introduction>
+
+      <task>
+      <statement>
+      <p>
+      <m>3+\sin\theta=2</m>
+      </p>
+      </statement>
+      <answer>
+      <p>
+      <m>\theta=\frac{3\pi}{2}</m>
+      </p>
+      </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>\sin\theta(\tan\theta-1)=0</m>
+          </p>
+        </statement>
+        <hint>
+        <p>
+          Recall that <m>\tan\theta = \frac{\sin\theta}{\cos\theta}</m>.
+        </p>
+      </hint>
+        <answer>
+          <p>
+            <m>\theta=0, \frac{\pi}{4}, \frac{5\pi}{4}</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+      <statement>
+      <p>
+      <m>3\tan\theta=3\sqrt{3}</m>
+      </p>
+      </statement>
+      <answer>
+      <p>
+      <m>\theta=\frac{\pi}{3}, \frac{4\pi}{3}</m>
+      </p>
+      </answer>
+      </task>
+      
+      <task>
+      <statement>
+      <p>
+      <m>\cos\theta+\sqrt{3}=-\cos\theta</m>
+      </p>
+      </statement>
+      <answer>
+      <p>
+      <m>\theta=\frac{5\pi}{6}, \frac{7\pi}{6}</m>
+      </p>
+      </answer>
+      </task>
+
+      <task>
+      <statement>
+      <p>
+      <m>(\sec\theta-1)(2\cos\theta+1)=0</m>
+      </p>
+      </statement>
+      <hint>
+        <p>
+          Recall that <m>\sec\theta = \frac{1}{\cos\theta}</m>.
+        </p>
+      </hint>
+      <answer>
+      <p>
+      <m>\theta=0, \frac{2\pi}{3}, \frac{4\pi}{3}</m>
+      </p>
+      </answer>
+      </task>
+    </activity>
+
+    <remark>
+      <p>
+        In some cases, it is not easy to isolate the trigonometric term like we have been doing so far. The next few activities will help us learn how to apply methods we have used before when solving algebraic equations to solve trigonometric equations.
+      </p>
+    </remark>
+
+    <activity xml:id="trig-square-root-property">
+      <introduction>
+        <p>
+          Consider the equation <m>4\sin^2\theta-2=0</m>.
+        </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Use algebra to isolate the <m>\sin^2\theta</m> term.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sin^2\theta=\frac{1}{2}</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            To undo a squared term, you will need to take the square root (recall <xref ref="def-square-root-property"/>). Take the square root of <m>\sin^2\theta</m> to get <m>\sin\theta</m>. What does <m>\sin\theta</m> equal?
+            <ol marker= "A." cols="4">
+            <li> <m>\pm\sqrt{\frac{1}{2}}</m> </li>
+            <li> <m>\pm\frac{1}{\sqrt{2}}</m> </li>
+            <li> <m>\pm\frac{1}{2}</m> </li>
+            <li> <m>\pm\frac{\sqrt{2}}{2}</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A, B, and D
+          </p>
+        </answer>
+      </task>
+  
+      <task>
+        <statement>
+         <p>
+          Although there are multiple ways to represent <m>\sin\theta</m>, which solution(s) from part (b) do you see on the unit circle?
+          <ol marker= "A." cols="4">
+            <li> <m>\pm\sqrt{\frac{1}{2}}</m> </li>
+            <li> <m>\pm\frac{1}{\sqrt{2}}</m> </li>
+            <li> <m>\pm\frac{1}{2}</m> </li>
+            <li> <m>\pm\frac{\sqrt{2}}{2}</m> </li></ol>
+         </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Notice there are two values of <m>\sin\theta</m> to consider, which corresponds to four values of <m>\theta</m> that satisfy the equation <m>\sin\theta=\pm\frac{\sqrt{2}}{2}</m> on the interval <m>[0, 2\pi)</m>. What are these values of <m>\theta</m>?
+            <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{4}</m> </li>
+            <li> <m>\frac{\pi}{3}</m> </li>
+            <li> <m>\frac{3\pi}{4}</m> </li>
+            <li> <m>\frac{5\pi}{6}</m> </li>
+            <li> <m>\frac{5\pi}{4}</m> </li>
+            <li> <m>\frac{7\pi}{4}</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A, C, E, and F
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="square-root-property-with-secant">
+    <introduction>
+      <p>
+        Consider the equation <m>3\sec^2\theta-4=0</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Using algebra, isolate the <m>\sec^2\theta</m> term.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec^2\theta=\frac{4}{3}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Use the square root property to solve for <m>\sec\theta</m>. What does <m>\sec\theta</m> equal?
+          <ol marker= "A." cols="4">
+            <li> <m>\pm\frac{4}{3}</m> </li>
+            <li> <m>\pm\frac{2}{3}</m> </li>
+            <li> <m>\pm\frac{2}{\sqrt{3}}</m> </li>
+            <li> <m>\pm\frac{\sqrt{3}}{2}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Recall that <m>\sec\theta=\frac{1}{\cos\theta}</m>. Knowing this relationship, what does <m>\cos\theta</m> equal?
+          <ol marker= "A." cols="4">
+            <li> <m>\pm\frac{3}{2}</m> </li>
+            <li> <m>\pm\frac{2}{3}</m> </li>
+            <li> <m>\pm\frac{2}{\sqrt{3}}</m> </li>
+            <li> <m>\pm\frac{\sqrt{3}}{2}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What values of <m>\theta</m> satisfy this equation on the interval <m>[0,2\pi)</m>?
+          <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{6}</m> </li>
+            <li> <m>\frac{\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{6}</m> </li>
+            <li> <m>\frac{7\pi}{6}</m> </li>
+            <li> <m>\frac{4\pi}{3}</m> </li>
+            <li> <m>\frac{11\pi}{6}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A, C, D, and F
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>
+        Notice in <xref ref="trig-square-root-property"/> and <xref ref="square-root-property-with-secant"/>, we had to use the square root property to isolate the trigonometric term. The next few activities will highlight another tool to solve trigonometric equations.
+      </p>
+    </remark>
+
+    <activity xml:id="factor-by-gcf">
+      <introduction>
+      <p>
+      In this activity, we will solve trigonometric equations by first factoring. Consider the equation <me>2\sin\theta\cos\theta-\sqrt{2}\cos\theta=0</me>.
+      </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            One of the first methods of factoring you should always start with is GCF (Greatest Common Factor). Look at each term in the equation. What is the GCF?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\cos\theta</m>
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Factor out the GCF. What equation do you now have?
+            <ol marker= "A." cols="1">
+            <li> <m>2\sin\theta-\sqrt{2}=0</m> </li>
+            <li> <m>\cos\theta(2\sin\theta-\sqrt{2}\cos\theta)=0</m> </li>
+            <li> <m>\sin\theta(2\cos\theta-\sqrt{2}\cos\theta)=0</m> </li>
+            <li> <m>\cos\theta(2\sin\theta-\sqrt{2})=0</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now use the Zero Product Property to create two equations. What two equations do you now have?
+            <ol marker= "A." cols="1">
+            <li> <m>2\sin\theta-\sqrt{2}=0</m> </li>
+            <li> <m>\sin\theta=0</m> </li>
+            <li> <m>\cos\theta=0</m> </li>
+            <li> <m>2\sin\theta-\sqrt{2}\cos\theta=0</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            A and C
+          </p>
+        </answer>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Solve each of the equations you got in part (c). What value(s) of <m>\theta</m> satisfy both equations on the interval <m>[0, 2\pi)</m>?
+            <ol marker= "A." cols="3">
+            <li> <m>0</m> </li>
+            <li> <m>\dfrac{\pi}{2}</m> </li>
+            <li> <m>\pi</m> </li>
+            <li> <m>\dfrac{3\pi}{2}</m> </li>
+            <li> <m>\dfrac{\pi}{4}</m> </li>
+            <li> <m>\dfrac{3\pi}{4}</m> </li></ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            B, D, E, and F
+          </p>
+        </answer>
+      </task>
+    </activity>
+
+    <activity xml:id="factor-quadratic-form">
+
+    <introduction>
+      <p>
+        Consider the equation <m>2\cos^2\theta-5\cos\theta-3=0</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+           Notice that this trigonometric equation looks similar to a quadratic equation. Let's we replace every <m>\cos\theta</m> with <m>x</m> to get <m>2x^2-5x-3=0</m>. What are the factors of the left hand side of this equation?
+           <ol marker= "A." cols="2">
+            <li> <m>(2x+1)</m> </li>
+            <li> <m>(x+3)</m> </li>
+            <li> <m>(2x-1)</m> </li>
+            <li> <m>(x-3)</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and D
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+           Now use the Zero Product Property to create two equations in terms of <m>\cos\theta</m>. What two equations do you now have?
+            <ol marker= "A." cols="2">
+            <li> <m>(2\cos\theta+1)</m> </li>
+            <li> <m>(\cos\theta+3)</m> </li>
+            <li> <m>(2\cos\theta-1)</m> </li>
+            <li> <m>(\cos\theta-3)</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and D
+        </p>
+      </answer>
+    </task>    
+
+    <task>
+      <statement>
+        <p>
+           Solve each of the equations you got in part (b). What values of <m>\theta</m> satisfies both equations on the interval <m>[0, 2\pi)</m>?
+           <ol marker= "A." cols="3">
+            <li> <m>0</m> </li>
+            <li> <m>\frac{\pi}{3}</m> </li>
+            <li> <m>\frac{2\pi}{3}</m> </li>
+            <li> <m>\frac{4\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{3}</m> </li>
+            <li> <m>2\pi</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          C and D
+        </p>
+      </answer>
+    </task>  
+    </activity>
+
+    <remark>
+      <p>
+        Notice in <xref ref="factor-quadratic-form"/>, one of the equations did not provide a value of <m>\theta</m> that satisfies the equation. This can happen sometimes!
+      </p>
+    </remark>
+
+    <activity xml:id="factoring-practice">
+
+    <introduction>
+      <p>
+        Solve each of the following trigonometric equations on the interval <m>[0, 2\pi)</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>2\cos^2\theta+\cos\theta=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{2}, \frac{2\pi}{3}, \frac{4\pi}{3},\frac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>\sin^2\theta-1=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{2},\frac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>2\cos^2\theta-\cos\theta=3</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Get everything over to one side before you factor!
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>\theta=\pi</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>2\sin^2\theta-4=7\sin\theta</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{7\pi}{6}, \frac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>2\sec^2\theta-2\sec\theta-4=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{3}, \pi, \frac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </task>
+    </activity>
+
+    <remark>
+      <p>
+        In this last activity, let's look at trigonometric equations that involve multiple angles. 
+      </p>
+    </remark>
+
+    <activity xml:id="multiple-angle-example">
+
+    <introduction>
+      <p>
+        Solve the equation <m>\sin(2\theta)=\frac{1}{2}</m>. Find the general solution, then find all solutions on the interval <m>[0, 2\pi)</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Notice that this equation involves  <m>\sin(2\theta)</m>, a multiple angle, rather that <m>\sin(2\theta)</m> like we have been dealing with. Let's replace <m>2\theta</m> with <m>\alpha</m> so it looks more like the equations we've been solving so far. What values of <m>\alpha</m> would satisfy the new equation <m>\sin\alpha=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+          <ol marker= "A." cols="3">
+            <li> <m>\frac{\pi}{6}</m> </li>
+            <li> <m>\frac{\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{6}</m> </li>
+            <li> <m>\frac{4\pi}{3}</m> </li>
+            <li> <m>\frac{5\pi}{3}</m> </li>
+            <li> <m>\frac{11\pi}{6}</m> </li></ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A and C
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What would the general solution of the equation <m>\sin\alpha=\frac{1}{2}</m> be?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{6}+2\pi(n)</m>
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{6}+2\pi(n)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+           For <m>\sin\alpha=\frac{1}{2}</m>, we know the general solution is  <me>\alpha=\frac{\pi}{6}+2\pi(n)</me> and <me>\alpha=\frac{5\pi}{6}+2\pi(n)</me>. And because <m>\alpha=2\theta</m>, we can replace <m>\alpha</m> with  <m>2\theta</m> in those solutions. Therefore, <me>2\theta=\frac{\pi}{6}+2\pi(n)</me> and <me>2\theta=\frac{5\pi}{6}+2\pi(n)</me>. Solve each general equation to find values of <m>\theta</m> that satisfies the equation <m>\sin(2\theta)=\frac{1}{2}</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Solve for <m>\theta</m>.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{12}+\pi(n)</m>
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{12}+\pi(n)</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+         We now need to find all values of <m>\theta</m> that satisfy our original equation  on the interval <m>[0, 2\pi)</m>. We can find these angles by substituting values of <m>n</m> in the general solution. We will start with <m>n=0</m>. What values of <m>\theta</m> result when <m>n=0</m>? Are these angles on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{12}+\pi(0)=\frac{\pi}{12}</m>
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{12}+\pi(0)=\frac{5\pi}{12}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+           Now let <m>n=1</m>. What values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{12}+\pi(1)=\frac{13\pi}{12}</m>
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{12}+\pi(1)=\frac{17\pi}{12}</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+           Suppose <m>n=2</m>. What values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+      <p>
+          <m>\theta=\frac{\pi}{12}+\pi(2)=\frac{25\pi}{12}</m>, but this value is too big!
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{12}+\pi(2)=\frac{29\pi}{12}</m>, but this value is too big!
+        </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+           Let's now try negative values of <m>n</m>. Suppose <m>n=-1</m>. What values of <m>\theta</m> would satisfy the equation <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+      <p>
+          <m>\theta=\frac{\pi}{12}+\pi(-1)=\frac{-11\pi}{12}</m>, but this value is too small!
+        </p>
+        <p>
+          <m>\theta=\frac{5\pi}{12}+\pi(-1)=\frac{-7\pi}{12}</m>, but this value is too small!
+        </p>
+    </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Look back at parts (d)-(g). Notice that that once we reach values outside of <m>[0,2\pi)</m> in either direction, we can stop substituting values of <m>n</m> in that direction. What are all the solutions to <m>\sin(2\theta)=\frac{1}{2}</m> on the interval <m>[0, 2\pi)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta=\frac{\pi}{12}, \frac{5\pi}{12}, \frac{13\pi}{12}, \frac{17\pi}{12}</m>
+        </p>
+      </answer>
+    </task>
+</activity>
+
+<observation>
+        <p>
+        Recall that  <m>y=\sin(2\theta)</m> is a horizontal compression by a factor of <m>2</m> of the function  <m>y=\sin\theta</m>. On an interval of <m>2\pi</m>, we can graph two periods of  <m>y=\sin(2\theta)</m>, as opposed to one cycle of <m>y=\sin\theta</m>. This compression of the graph suggests there may be twice as many <m>x</m>-intercepts or solutions to  <m>\sin(2\theta)=\frac{1}{2}</m> compared to  <m>\sin\theta=\frac{1}{2}</m>.
+        </p>
+</observation>
+
     </subsection>
 
     <exercises>
