@@ -34,7 +34,7 @@ jobs:
               with:
                 node-version: '22'
 
-            - name: Build activities
+            - name: Build precalculus activities
               run: |
                 pretext -v debug build -g precalculus-web-instructor
 
