@@ -29,7 +29,12 @@ jobs:
                 bash scripts/download-cache.sh
                 git config --global --add safe.directory $(pwd)
 
-            - name: Build activities
+            - name: set up node
+              uses: actions/setup-node@v4
+              with:
+                node-version: '22'
+
+            - name: Build precalculus activities
               run: |
                 pretext -v debug build -g precalculus-web-instructor
 
@@ -111,6 +116,11 @@ jobs:
                 bash .devcontainer/setup.sh
                 bash scripts/download-cache.sh
                 git config --global --add safe.directory $(pwd)
+
+            - name: set up node
+              uses: actions/setup-node@v4
+              with:
+                node-version: '22'
 
             - name: build previews of all changed files and stage
               id: changes
