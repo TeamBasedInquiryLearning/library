@@ -1,10 +1,16 @@
-from pretext.project import Project
-from git import Repo
 from pathlib import Path
-from lxml import etree
+import logging
 import os
 import shutil
+from git import Repo
+from lxml import etree
+from pretext.project import Project
+from pretext import logger
 from . import preview_outcome
+
+log = logging.getLogger("ptxlogger")
+logger.add_log_stream_handler()
+log.setLevel(logging.DEBUG)
 
 def main():
     repo = Repo()
