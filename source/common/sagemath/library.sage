@@ -369,6 +369,112 @@ class TBIL:
         '''Returns the equation of a line from a point and slope'''
         return y==slope*x+point[1]-slope*point[0]
 
+    #Functions to display powers of trig functions
+    def print_cosp(self,*args): 
+        if args[1]==1:
+            return f"\\cos({latex(args[0])})"
+        else:
+            return f"\\cos ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cosp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.sinp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*-1*TBIL.cosp(args[0],args[1]-1)*TBIL.sinp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+    
+    def power_cosp(self,x,n,power_param):
+        return cosp(x,n*power_param)
+
+    cosp = function("cosp",nargs=2,print_latex_func=print_cosp,derivative_func=deriv_cosp,power_func=power_cosp)
+
+    def print_sinp(self,*args): 
+        if args[1]==1:
+            return f"\\sin({latex(args[0])})"
+        else:
+            return f"\\sin ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_sinp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.cosp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.sinp(args[0],args[1]-1)*TBIL.cosp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_sinp(self,x,n,power_param):
+        return sinp(x,n*power_param)
+
+    sinp = function("sinp",nargs=2,print_latex_func=print_sinp, derivative_func=deriv_sinp,power_func=power_sinp)
+
+    def print_tanp(self,*args): 
+        if args[1]==1:
+            return f"\\tan({latex(args[0])})"
+        else:
+            return f"\\tan ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_tanp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.secp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.tanp(args[0],args[1]-1)*TBIL.secp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_tanp(self,x,n,power_param):
+        return tanp(x,n*power_param)
+
+    tanp = function("tanp",nargs=2,print_latex_func=print_tanp, derivative_func=deriv_tanp,power_func=power_tanp)
+
+    def print_cotp(self,*args): 
+        if args[1]==1:
+            return f"\\cot({latex(args[0])})"
+        else:
+            return f"\\cot ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cotp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.cscp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return -1*args[1]*TBIL.cotp(args[0],args[1]-1)*TBIL.cscp(args[0],2)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_cotp(self,x,n,power_param):
+        return cotp(x,n*power_param)
+
+    cotp = function("cotp",nargs=2,print_latex_func=print_cotp, derivative_func=deriv_cotp,power_func=power_cotp)
+
+    def print_secp(self,*args): 
+        if args[1]==1:
+            return f"\\sec({latex(args[0])})"
+        else:
+            return f"\\sec ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_secp(self,*args,**kwds): 
+        if args[1]==1:
+            return TBIL.secp(args[0],1)*TBIL.tanp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return args[1]*TBIL.secp(args[0],args[1])*TBIL.tanp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_secp(self,x,n,power_param):
+        return secp(x,n*power_param)
+
+    secp = function("secp",nargs=2,print_latex_func=print_secp, derivative_func=deriv_secp,power_func=power_secp)
+
+    def print_cscp(self,*args): 
+        if args[1]==1:
+            return f"\\csc({latex(args[0])})"
+        else:
+            return f"\\csc ^{{{args[1]}}}({latex(args[0])})"
+
+    def deriv_cscp(self,*args,**kwds): 
+        if args[1]==1:
+            return -1*TBIL.csc(args[0],1)*TBIL.cotp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        else:
+            return -1*args[1]*TBIL.cscp(args[0],args[1])*TBIL.cotp(args[0],1)*args[0].derivative(args[kwds['diff_param']])
+        
+    def power_cscp(self,x,n,power_param):
+        return cscp(x,n*power_param)
+
+    cscp = function("cscp",nargs=2,print_latex_func=print_cscp, derivative_func=deriv_cscp,power_func=power_cscp)
+
+    def typeset_trigpowers(f):
+        return f.substitute_function(sin(x)==TBIL.sinp(x,1)).substitute_function(cos(x)==TBIL.cosp(x,1)).substitute_function(tan(x)==TBIL.tanp(x,1)).substitute_function(sec(x)==TBIL.secp(x,1)).substitute_function(csc(x)==TBIL.cscp(x,1))
+
     # Linear Algebra
 
     @staticmethod
