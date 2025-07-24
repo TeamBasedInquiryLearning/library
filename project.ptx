@@ -7,7 +7,7 @@
     <target
       name="precalculus-preview"
       format="html"
-      publication="instructor.ptx"
+      publication="preview.ptx"
       source="precalculus/source/main.ptx"
       deploy-dir="preview/precalculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -15,7 +15,7 @@
     <target
       name="calculus-preview"
       format="html"
-      publication="instructor.ptx"
+      publication="preview.ptx"
       source="calculus/source/main.ptx"
       deploy-dir="preview/calculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -23,7 +23,7 @@
     <target
       name="linear-algebra-preview"
       format="html"
-      publication="instructor.ptx"
+      publication="preview.ptx"
       source="linear-algebra/source/main.ptx"
       deploy-dir="preview/linear-algebra" >
       <stringparams debug.project.number="the-way-it-should-be"/>
