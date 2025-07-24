@@ -6,12 +6,6 @@ import subprocess
 from pretext.project import Project
 from . import build_bank
 
-def clean_edition_sandbox():
-    # delete subdirectory
-    subprocess.run(["rm", "-rf", "edition-sandbox"])
-    # copy repo to subdirectory
-    subprocess.run(["git", "clone", ".", "edition-sandbox"])
-
 def update_edition_source(name:str, slug:str):
     # update edition name
     files = glob.glob('edition-sandbox/source/**/source/main.ptx')
