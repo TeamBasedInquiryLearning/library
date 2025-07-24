@@ -1,6 +1,6 @@
 # Copyright and Licensing
 
-All contents of this repository are copyright 2017-2024 Steven Clontz and Drew Lewis.
+All contents of this repository are copyright 2017-2025 Steven Clontz and Drew Lewis
 and are licensed for free public use under the following licenses.
 Contributions are warmly welcomed and encouraged; see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
