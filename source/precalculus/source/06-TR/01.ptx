@@ -463,14 +463,14 @@ p
         </answer>
       </task>
     </activity>
-
-    <subsection>
-      <title>Exercises</title>
-      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TR1/"/>. </p> 
-    </subsection>
     
-    <!-- <subsection>
-        <title>Videos</title>
-        <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection> -->
+    <subsection>
+        <title>Exercises</title>
+        <p component="preview">
+            Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TR1/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2025/precalculus/exercises/#/bank/TR1/"/>
+        </p>
+    </subsection>
 </section>
