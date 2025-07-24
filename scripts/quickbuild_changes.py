@@ -38,7 +38,7 @@ def main():
                         'id': xml_id,
                     })
         t = p.get_target(f"{b}-preview")
-        if len(xml_ids) > 0:
+        if 0 < len(xml_ids) < 10:
             print(f"Building book `{b}`, skipping images")
             path = f"/preview/{b}"
             t.build(xmlid=None, no_knowls=True, generate=False)
@@ -46,15 +46,23 @@ def main():
                 "file": Path("source", b),
                 "path": path
             })
-        built_ids = set()
-        for xml_id in xml_ids:
-            if xml_id['id'] not in built_ids:
-                print(f"Building book `{b}` with ID `{xml_id['id']}`")
-                t.build(xmlid=xml_id['id'], no_knowls=True, generate=True)
-                built_ids.add(xml_id['id'])
+            built_ids = set()
+            for xml_id in xml_ids:
+                if xml_id['id'] not in built_ids:
+                    print(f"Building book `{b}` with ID `{xml_id['id']}`")
+                    t.build(xmlid=xml_id['id'], no_knowls=True, generate=True)
+                    built_ids.add(xml_id['id'])
+                preview_links.append({
+                    "file": xml_id["file"],
+                    "path": f"/preview/{b}/{xml_id['id']}.html"
+                })
+        elif 10 <= len(xml_ids):
+            print(f"Building book `{b}`, including images")
+            path = f"/preview/{b}"
+            t.build(xmlid=None, no_knowls=True, generate=True)
             preview_links.append({
-                "file": xml_id["file"],
-                "path": f"/preview/{b}/{xml_id['id']}.html"
+                "file": Path("source", b),
+                "path": path
             })
     # for each CheckIt file, build its preview
     for b in BOOKS:
