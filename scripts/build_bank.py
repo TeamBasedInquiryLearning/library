@@ -5,7 +5,7 @@ import zipfile
 from checkit.bank import Bank
 from checkit import static
 
-def main(book:str, full:bool, stage_preview=True):
+def main(book:str, full:bool, stage_directory=None):
 
     bank_path = Path() / "source" / book / "exercises"
 
@@ -19,8 +19,8 @@ def main(book:str, full:bool, stage_preview=True):
 
     b.build_viewer(with_cache=True)
 
-    if stage_preview:
-        stage_path = Path() / "output" / "stage" / "preview" / book / "exercises"
+    if stage_directory is not None:
+        stage_path = Path() / "output" / "stage" / stage_directory / book / "exercises"
         print(f"Staging bank at `{stage_path}`")
         # stage bank
         shutil.copytree(
