@@ -9,9 +9,9 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-    <chunking level="3" />
+    <chunking level="2" />
     <!-- Depth for table of contents.  0 means no TOC -->
-    <tableofcontents level="3" />
+    <tableofcontents level="2" />
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
@@ -30,12 +30,12 @@
   <!-- stored or created.  Directories are relative to the main -->
   <!-- source PreTeXt file                                      -->
   <source>
-    <directories external="../assets" generated="../generated-assets" />
+    <directories external="../../../assets" generated="../generated-assets" />
     <!-- Set which marked elements are included in this version: -->
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
     <!-- <version include="videos labs"/> -->
-    <version include="instructor"/>
+    <version include="instructor preview"/>
   </source>
 
   <numbering>

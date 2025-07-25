@@ -27,7 +27,7 @@ To find the extreme values of a function we can consider all its <em>local extre
       
            
     <activity xml:id="activity-extrema-terminology">
-        <introduction><p>We have encountered several terms recently, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
+        <statement><p>We have encountered several terms recently, so we should make sure that we understand how they are related. Which of the following statements are true?
         <ol marker="A." >
                 <li><p>In a closed interval an endpoint is always a local extremum but it might or might not be a global extremum.</p></li>
                 <li><p>In a closed interval an endpoint is always a global extremum.</p></li>
@@ -35,7 +35,7 @@ To find the extreme values of a function we can consider all its <em>local extre
              <li><p>A local extremum only occurs where the first derivative is equal to zero.</p></li>
                 <li><p>A local extremum always occurs at a critical point. </p></li>
                 <li><p>A local extremum might occur at a critical point or at an endpoint of a closed interval. </p></li>
-            </ol>
+            </ol></p></statement>
         <answer>
             <p>
                 F: A local extremum might occur at a critical point or at an endpoint of a closed interval.
@@ -64,9 +64,11 @@ To find the extreme values of a function we can consider all its <em>local extre
  -->
       <activity xml:id="activity-derivative-derivativetests2">
     <task>
+        <statement>
       <p>
         Sketch the graph of a continuous function that is increasing on <m>(-\infty, -2)</m>, constant on the interval <m>(3,5)</m>, and decreasing on the interval <m>(-2,3)</m>.  
       </p>
+    </statement>
         <answer>
             <p>
                 Answers vary.
@@ -92,17 +94,18 @@ To find the extreme values of a function we can consider all its <em>local extre
   </activity>
     
       <activity xml:id="activity-derivative-derivativetests3">
-
+        <statement>
       <p>
        Look back at the graph you made for <xref ref="activity-derivative-derivativetests2"/>.  
       </p>
-          <p>Which of the following best describes what is occurring when graph changes behavior?</p>
+          <p>Which of the following best describes what is occurring when graph changes behavior?
           <ol marker="A." cols="2">
               <li><p> There is a critical point.</p></li>
                 <li><p> There is a local maximum or minimum. </p></li>
                 <li><p> The derivative is undefined. </p></li>
                 <li><p> The derivative is equal to zero. </p></li>
-            </ol>
+            </ol></p>
+        </statement>
             <answer>
                 <p>
                     A: There is a critical point.
@@ -134,7 +137,9 @@ To find the extreme values of a function we can consider all its <em>local extre
             <p> Let <m>f(x)=x^4-4x^3+4x^2</m></p>
         </introduction>
         <task> 
+            <statement>
             <p>Find all critical points of <m>f(x)</m>. Draw them on the same number line.</p>
+            </statement>
             <answer>
                 <p>
                     The critical points are <m>x = 0, 1, 2</m>. On the number line, we have
@@ -156,7 +161,9 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task> 
+            <statement>
             <p>What intervals have been created by subdividing the number line at the critical points?</p>
+            </statement>
             <answer>
                 <p>
                     We've created the intervals <m>(-\infty,0)</m>, <m>(0,1)</m>, <m>(1,2)</m>, and <m>(2,\infty)</m>.
@@ -164,7 +171,9 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task> 
+            <statement>
             <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative at each point.</p>
+            </statement>
             <answer>
                 <p>
                     <m>f'(x) \lt 0</m> on <m>(-\infty,0)</m> and <m>(1,2)</m>, and <m>f'(x)\gt 0</m> on <m>(0,1)</m> and <m>(2,\infty)</m>.
@@ -172,7 +181,9 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task> 
+            <statement>
             <p>On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p>
+            </statement>
             <answer>
                 <p>
                     <m>f(x)</m> is increasing on <m>(0,1)\cup (2,\infty)</m> and decreasing on <m>(-\infty,0)\cup (1,2) </m>.
@@ -180,7 +191,9 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task> 
+            <statement>
             <p>List all local extrema.</p>
+            </statement>
             <answer>
                 <p>
                     <m>f(x)</m> has a local minimum at <m>x = 0</m> and <m>x = 2</m>, and a local maximum at <m>x=1</m>.
@@ -196,6 +209,7 @@ To find the extreme values of a function we can consider all its <em>local extre
        Suppose that <m>x=c</m> is a critical point of <m>f(x)</m> and that <m>f''(x)</m> is continuous at <m>x=c</m>.   
       </p>
       </introduction>
+      <statement>
     <p>
     <ol>   
     <li>If <m>f'(c) = 0</m> and <m>f''(c) &lt; 0  </m>, then a <b>local maximum</b> occurs when <m>x=c</m>. </li>
@@ -203,14 +217,15 @@ To find the extreme values of a function we can consider all its <em>local extre
          <li>If <m>f'(c) = 0</m> and <m>f''(c) = 0  </m>, then this test is inconclusive. </li>
      </ol> </p>
      <p>In case of an inconclusive Second Derivative Test, we need to go back to the First Derivative Test to classify the critical point.</p>   
+    </statement>
     </theorem>
     
         <activity xml:id="activity-derivativetests-checkit">
     <introduction>
         <p> Consider the function <m>f(x)=-x^{3} + 3 \, x + 4</m>.</p></introduction>
         
-            <task> <p>Find the open intervals where <m>f(x)</m> is increasing or decreasing.
-            </p>
+            <task> <statement><p>Find the open intervals where <m>f(x)</m> is increasing or decreasing.
+            </p></statement>
             <answer>
                 <p>
                     <m>f(x)</m> is increasing on <m>(-1,1)</m> and decreasing on <m>(-\infty,-1)\cup (1,\infty)</m>.
@@ -218,13 +233,12 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         
-    <task> <p>Find the local extrema of <m>f(x)</m>.
+    <task><statement><p>Find the local extrema of <m>f(x)</m>.</p></statement>
         <answer>
             <p>
                 There is a local minimum at <m>x = -1</m> and a local maximum at <m>x=1</m>.
             </p>
-        </answer>
-        </p></task>
+        </answer></task>
      </activity>
             
     <remark xml:id="rmk-derivativetests-disc"> <title>Dealing with discontinuities</title>
@@ -254,7 +268,7 @@ To find the extreme values of a function we can consider all its <em>local extre
     <task>        <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. But the function may be increasing on one side of <m>x=2</m> and decreasing on the other! So we include <m>x=2</m> on your number line.</p>
     </task>
         <task>
-            <p> Find all critical points of <m>f(x)</m>. Plot them and any discontinuities for <m>f(x)</m> on the same number line.</p>
+            <statement><p> Find all critical points of <m>f(x)</m>. Plot them and any discontinuities for <m>f(x)</m> on the same number line.</p></statement>
         <answer>
             <image>
                 <sageplot>
@@ -271,15 +285,17 @@ To find the extreme values of a function we can consider all its <em>local extre
         </answer>
         </task>
         <task>
+            <statement>
             <p> What intervals have been created by subdividing the number line at the critical points and at the discontinuities?</p>
-        <answer>
+            </statement>
+            <answer>
             <p>
                 <m>(-\infty,-2)</m>, <m>(-2,2)</m>, and <m>(2,\infty)</m>.
             </p>
         </answer>
         </task>
         <task>
-            <p> Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative each point.</p>
+           <statement> <p> Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative each point.</p></statement>
         <answer>
             <p>
                 <m>f'(x)</m> is positive on <m>(-2,2)</m> and negative on <m>(-\infty,-2)\cup (2,\infty)</m>
@@ -287,7 +303,7 @@ To find the extreme values of a function we can consider all its <em>local extre
         </answer>
         </task>
         <task>
-            <p> On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p>
+<statement><p> On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p></statement>
         <answer>
             <p>
                 <m>f(x)</m> is increasing on <m>(-2,2)</m> and decreasing on <m>(-\infty,-2)\cup (2,\infty)</m>
@@ -295,13 +311,15 @@ To find the extreme values of a function we can consider all its <em>local extre
         </answer>
         </task>
         <task>
+            <statement>
             <p> List all local maxima and local minima. </p>
-        </task>
+            </statement>
         <answer>
             <p>
                 There is a local minimum at <m>x=-2</m>
             </p>
         </answer>
+        </task>
     </activity>
     
     <activity xml:id="activity-derivative-derivativetest6">
@@ -309,7 +327,7 @@ To find the extreme values of a function we can consider all its <em>local extre
             <p>For each of the following functions, find the intervals on which <m>f(x)</m> is increasing or decreasing. Then identify any local extrema using either the First or Second Derivative Test.</p>
         </introduction>
         <task>
-            <p><m>f(x)=x^3+3x^2+3x+1</m></p>
+            <statement><p><m>f(x)=x^3+3x^2+3x+1</m></p></statement>
             <answer>
                 <p>
                     The function is increasing on <m>(-\infty,-1)\cup (-1,\infty)</m> and never decreasing. It has no local max or local min.
@@ -317,7 +335,7 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task>
-            <p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
+            <statement><p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p></statement>
             <answer>
                 <p>
                     The function is increasing on <m>(0,\pi/6)\cup (5\pi/6,2\pi)</m> and decreasing on <m>(\pi/6,5\pi/6)</m>. It has a local max at <m>x = \pi/6</m> and a local min at <m>x = 5\pi/6</m>. 
@@ -325,7 +343,7 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task>
-            <p><m>f(x)=(x^2-9)^{2/3}</m></p>
+            <statement><p><m>f(x)=(x^2-9)^{2/3}</m></p></statement>
             <answer>
                 <p>
                     The function is increasing on <m>(-3,0)\cup (3,\infty)</m> and decreasing on <m>(-\infty,-3)\cup (0,3)</m>. It has a local max at <m>x = 0</m> and a local min at <m>x=\pm 3</m>.
@@ -333,7 +351,7 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task>
-            <p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p>
+            <statement><p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p></statement>
             <answer>
                 <p>
                     The function is always increasing and has no local extrema.
@@ -341,7 +359,7 @@ To find the extreme values of a function we can consider all its <em>local extre
             </answer>
         </task>
         <task>
-            <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
+            <statement><p><m>f(x)=\frac{x^2}{x^2-4}</m></p></statement>
             <answer>
                 <p>
                     The function is decreasing on <m>(0,2)\cup (2,\infty)</m> and increasing on <m>(-\infty,-2)\cup (-2,0)</m>. It has a local max at <m>x = 0</m> and no local min.
@@ -358,14 +376,20 @@ To find the extreme values of a function we can consider all its <em>local extre
     </theorem>
 
 <activity xml:id="activity-connection-MVT">
-        <task> <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p>
+        <task>
+            <statement>
+                <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p>
+            </statement>
         <answer>
             <p>
                 The average rate of change is 0, so the MVT says that there is at least one input between <m>x =a</m> and <m>x = b</m> such that <m>f'(c) = 0</m>.
             </p>
         </answer> </task>
-       <task> <p> Use part (a) to show with the MVT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m>. </p> 
-    <answer>
+       <task> 
+        <statement>
+        <p> Use part (a) to show with the MVT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m>. </p> 
+        </statement>
+        <answer>
         <p>
             <m>f(0) = f(2) = 4</m>, so part (a) combined with the fact that <m>f(x)</m> is differentiable (and thus continuous) everywhere since it's a polynomial, tells us that there is a spot where <m>f'(c) = 0</m> on <m>[0,2]</m>; in particular, this means we have a critical point on the interval.
         </p>
@@ -384,8 +408,11 @@ To find the extreme values of a function we can consider all its <em>local extre
 
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AD5/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2025/calculus/exercises/#/bank/AD5/"/>
         </p>
     </subsection>
 
