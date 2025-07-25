@@ -270,11 +270,6 @@ p
       <task>
         <statement>
           <p> <m>180^{\circ}</m>
-            <hint>
-              <p>
-                Try setting up a proportion! <m>\dfrac{180^\circ}{360^\circ}= \dfrac{x}{2\pi}</m>
-              </p>
-            </hint>
             <ol marker="A." cols="4">
               <li><p> <m>\frac{\pi}{4}</m> </p></li>
               <li><p> <m>\pi</m> </p></li>
@@ -282,6 +277,11 @@ p
               <li><p> <m>\frac{\pi}{2}</m> </p></li>
           </ol> </p>
         </statement>
+        <hint>
+          <p>
+            Try setting up a proportion! <m>\dfrac{180^\circ}{360^\circ}= \dfrac{x}{2\pi}</m>
+          </p>
+        </hint>
         <answer>
           <p>
             B
@@ -315,11 +315,6 @@ p
       <task>
         <statement>
           <p> <m>\dfrac{\pi}{2}</m>
-            <hint>
-              <p>
-                Try setting up a proportion! <m>\dfrac{x}{360^\circ}= \dfrac{\frac{\pi}{2}}{2\pi}</m>
-              </p>
-            </hint>
             <ol marker="A." cols="4">
               <li><p> <m>45^{\circ}</m> </p></li>
               <li><p> <m>90^{\circ}</m> </p></li>
@@ -327,6 +322,11 @@ p
               <li><p> <m>360^{\circ}</m> </p></li>
           </ol> </p>
         </statement>
+            <hint>
+              <p>
+                Try setting up a proportion! <m>\dfrac{x}{360^\circ}= \dfrac{\frac{\pi}{2}}{2\pi}</m>
+              </p>
+            </hint>
         <answer>
           <p>
             B
