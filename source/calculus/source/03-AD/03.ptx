@@ -64,10 +64,12 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
      <task>
+      <statement>
         <p>
           Recall that the volume of a sphere of radius <m>r</m> is <m>V = \frac{4}{3} \pi r^3</m>. Note as well that in the setting of this problem, <em>both</em> <m>V</m> <em>and </em> <m>r</m> are changing with time <m>t</m>. Hence both <m>V</m> and <m>r</m> may be viewed as <em>implicit</em> functions of <m>t</m>, with respective derivatives <m>\frac{dV}{dt}</m> and <m>\frac{dr}{dt}</m>. Differentiate both sides of the equation <m>V = \frac{4}{3} \pi r^3</m> with respect to <m>t</m> (using the chain rule on the right) to find a formula for
           <m>\frac{dV}{dt}</m> that depends on both <m>r</m> and <m>\frac{dr}{dt}</m>.
         </p>
+      </statement>
         <answer>
           <p>
             <m>\dfrac{dV}{dt} = 4\pi r^2\cdot \dfrac{dr}{dt}</m>
@@ -76,10 +78,12 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
      <task>
+      <statement>
         <p>
           At this point in the problem, by differentiating we have <q>related the rates</q> of change of <m>V</m> and <m>r</m>. Recall that we are given in the problem that the balloon is being inflated at a constant <em>rate</em> of 20 cubic inches per second. Is this rate the value of <m>\frac{dr}{dt}</m> or <m>\frac{dV}{dt}</m>?
           Why?
         </p>
+      </statement>
         <answer>
           <p>
             <m>\dfrac{dV}{dt}</m>
@@ -88,9 +92,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
      <task>
+      <statement>
         <p>
           From part (c), we know the value of <m>\frac{dV}{dt}</m> at every value of <m>t</m>. Next, observe that when the diameter of the balloon is 12, we know the value of the radius. In the equation <m>\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}</m>, substitute these values for the relevant quantities and solve for the remaining unknown quantity, which is <m>\frac{dr}{dt}</m>. How fast is the radius changing at the instant <m>d = 12</m>?
         </p>
+      </statement>
         <answer>
           <p>
             <m>\dfrac{dr}{dt} = \dfrac{5}{36\pi}</m> inches per second.
@@ -99,9 +105,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
      <task>
+      <statement>
         <p>
           How is the situation different when <m>d = 16</m>? When is the radius changing more rapidly, when <m>d = 12</m> or when <m>d = 16</m>?
         </p>
+      </statement>
         <answer>
           <p>
             When <m>d = 16</m>, <m>\dfrac{dr}{dt} = \dfrac{5}{64\pi}</m> inches per second, so the radius is changing more rapidly when <m>d = 12</m>.
@@ -152,9 +160,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
 </introduction>
    
      <task>
+      <statement>
         <p>
           Draw a figure to represent the situation. Introduce variables that measure the radius of the water's surface, the water's depth in the tank, and the volume of the water. Label your diagram.
         </p>
+      </statement>
         <answer>
           <image>
             <sageplot>
@@ -182,7 +192,7 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
           
         </answer>
       </task>
-    <task> <p>What information about rates of changes does the problem give you?  </p> 
+    <task><statement><p>What information about rates of changes does the problem give you?  </p> </statement>
     <answer>
       <p>
         It tells us that <m>\dfrac{dV}{dt} = 3</m> cubic meters per minute, and that we're looking for <m>\dfrac{dh}{dt}</m>.
@@ -190,16 +200,17 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
     </answer>
     </task>
      <task>
+      <statement>
         <p>
           Recall that the volume of a cylinder of radius <m>r</m> and height <m> h</m> is <m>V = \pi r^2 h</m>. What is the related rates equation in the context of the vertical cylindrical tank? What derivative rules did you use to find this equation?
-          </p>
               <ol marker="A." cols="2">
                 <li> <m> \frac{dV}{dt}= \pi 2 r \frac{dh}{dt}</m></li>
                    <li> <m> \frac{dV}{dt}= \pi r^2 \frac{dh}{dt}</m></li>
                    <li> <m> \frac{dV}{dt}= \pi \frac{dr}{dt} h</m></li>
                             <li> <m> \frac{dV}{dt}= \pi 2r \frac{dr}{dt} h + \pi r^2 \frac{dh}{dt}</m></li>
                                <li> <m> \frac{dV}{dt}= \pi 2r h + \pi r^2 </m></li>
-              </ol>   
+              </ol>   </p>
+            </statement>
         <answer>
           <p>
             D: <m>\frac{dV}{dt}= \pi 2r \frac{dr}{dt} h + \pi r^2 \frac{dh}{dt}</m>. We must use the product rule here.
@@ -208,15 +219,17 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
          <task>
+          <statement>
         <p>
          Which variable(s) have a constant value in this situation? Why?
-        </p>
               <ol marker="A." cols="2">
                 <li><p> The variable measuring the radius of the water's surface </p></li>
                   <li><p> The variable measuring the depth of the water </p></li> 
                   <li><p> The variable measuring the volume of the water </p></li>
                            
               </ol>   
+        </p>
+            </statement>
               <answer>
                 <p>
                   A: The variable measuring the radius of the water's surface.
@@ -224,14 +237,16 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
               </answer>      
       </task>
      <task>
+      <statement>
         <p>
     Which variable(s) have a constant rate of change in this situation? Why?
-        </p>
               <ol marker="A." cols="2">
                 <li><p> The variable measuring the radius of the water's surface </p></li>
                   <li><p> The variable measuring the depth of the water </p></li> 
                   <li><p> The variable measuring the volume of the water </p></li>                           
               </ol>  
+        </p>
+            </statement>
               <answer>
                 <p>
                   All variables have a constant rate of change.
@@ -239,9 +254,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
               </answer>       
       </task>
      <task>
+      <statement>
         <p>
           Using your finding above, find at what rate the water level is dropping.
         </p>
+      </statement>
         <answer>
           <p>
             <m>\dfrac{dh}{dt} = \dfrac{3}{\pi}</m> meters per minute
@@ -250,9 +267,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
  <task>
+  <statement>
         <p>
           If the full tank contains 12 cubic meters of water, how long does it take to empty the tank?
         </p>
+      </statement>
         <answer>
           <p>
             It takes 4 minutes to empty the tank.
@@ -260,9 +279,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
         </answer>
       </task>
      <task>
+      <statement>
         <p>
           Confirm your finding in the previous part by finding the initial water level for 12 cubic meters of water and determine how long it takes for the water level to reach 0.
         </p>
+      </statement>
         <answer>
           <p>
             At <m>V = 12</m> cubic meters, <m>h = \dfrac{12}{\pi}</m> meters. This means that it will take 4 minutes for the height to reach 0.
@@ -281,9 +302,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </p>
     </introduction>
       <task>
+        <statement>
           <p>
             Draw a picture of the conical tank, including a sketch of the water level at a point in time when the tank is not yet full. Introduce variables that measure the radius of the water's surface and the water's depth in the tank, and label them on your figure.
           </p>
+        </statement>
           <answer>
             <image>
               <sageplot>
@@ -310,9 +333,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
           </answer>
       </task>
        <task>
+        <statement>
           <p>
             Say that <m>r</m> is the radius and <m>h</m> the depth of the water at a given time, <m>t</m>. Notice that at any point of time there is a fixed proportion between the depth and the radius of the volume of water, forced by the shape of the tank. What proportional equation relates the radius and height of the water, and why?
           </p>
+        </statement>
           <answer>
             <p>
               <m>\dfrac{r}{h} = \dfrac{6}{8}</m> by using similar triangles.
@@ -320,9 +345,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
           </answer>
       </task>
         <task>
+          <statement>
           <p>
             Determine an equation that gives the volume of water in the tank as a function of only the depth <m>h</m> of the water (so eliminate the radius from the volume equation using the previous part).
           </p>
+        </statement>
           <answer>
             <p>
               <m>V = \dfrac{1}{3}\pi \left(\dfrac{3}{4}h\right)^2h</m>
@@ -330,9 +357,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
           </answer>
       </task>
         <task>
+          <statement>
           <p>
             Through differentiation, find an equation that relates the instantaneous rate of change of water volume with respect to time to the instantaneous rate of change of water depth at time <m>t</m>.
           </p>
+        </statement>
           <answer>
             <p>
               <m>\dfrac{dV}{dt} = \dfrac{9\pi}{16}h^2\cdot \dfrac{dh}{dt}</m>
@@ -341,9 +370,11 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
         <task>
+          <statement>
           <p>
             Find the instantaneous rate at which the water level is rising when the water in the tank is 3 feet deep.
          </p>
+        </statement>
          <answer>
           <p>
             <m>\dfrac{dh}{dt} = \dfrac{64}{81\pi}</m> feet per minute
@@ -352,15 +383,17 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </task>
 
          <task>
+          <statement>
           <p>
             When is the water rising most rapidly?
-          </p>
              <ol marker="A." cols="2">
                 <li><p>  <m>h = 3</m> </p></li>
                   <li><p>  <m>h = 4</m></p></li> 
                   <li><p>  <m>h = 5</m> </p></li>     
                   <li><p> The water level rises at a constant rate </p></li>   
-              </ol>      
+              </ol> 
+          </p>
+            </statement>     
               <answer>
                 <p>
                   A: <m>h = 3</m>
@@ -431,11 +464,6 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
                     Suppose a car was <m>75</m> miles east of a town, traveling west at <m>75</m> mph.  A second car was <m>120</m> miles north of the same town, traveling south at <m>70</m> mph.  At this exact moment, how fast is the distance between the cars changing?
                 </p>
             </statement>
- <!--           <answer>
-                <p>
-                    <m>\frac{ -14025 }{ 15 \, \sqrt{89} }\approx -99.11</m> mph.
-                </p>
-            </answer>-->
             <answer>
               <p>
                 <m>\dfrac{ -14025 }{ 15 \, \sqrt{89} }\approx -99.11</m> miles per hour

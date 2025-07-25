@@ -16,13 +16,11 @@
     </remark>
    
     <activity xml:id="activity-graphing-words">
-      <introduction>
+      <statement>
       <p>
        Which of the following features best describe the curve graphed below?  </p>
      
 
-      <figure xml:id="dec-cdown">
-<!--       <caption>A curve</caption> -->
         <image width="30%">
           <sageplot>
             x = var('x')
@@ -32,16 +30,16 @@
             p
           </sageplot>
         </image>
-      </figure> 
-    </introduction>
     
-          
+          <p>
           <ol marker="A." cols="2">
                <li><p>Increasing and concave up</p></li>
                <li><p>Increasing and concave down</p></li>
                <li><p>Decreasing and concave up</p></li>
                <li><p>Decreasing and concave down</p></li>
             </ol>
+          </p>
+        </statement>
             <answer>
               <p>
                 D: Decreasing and concave down.
@@ -51,12 +49,11 @@
     
  <activity xml:id="activity-graphing-der-signs">
       <task>
+        <statement>
       <p>
        Which of the following features best describe the curve graphed below?  </p>
      
 
-       <figure xml:id="inc-cdown">
-<!--       <caption>A curve</caption> -->
         <image width="30%">
           <sageplot>
             x = var('x')
@@ -66,16 +63,15 @@
             p
           </sageplot>
         </image>
-    </figure> 
     
-    
-          
+          <p>
           <ol marker="A." cols="2">
                <li><p><m>f'&gt;0</m> and <m>f''&gt;0</m></p></li>
                <li><p><m>f'&gt;0</m> and <m>f''&lt;0 </m></p></li>
                <li><p><m>f'&lt;0</m> and <m>f''&gt;0</m></p></li>
                <li><p><m>f'&lt;0</m> and <m>f''&lt;0 </m></p></li>
-            </ol>
+            </ol></p>
+        </statement>
             <answer>
               <p>
                 B: <m>f'&gt;0</m> and <m>f''&lt;0 </m>
@@ -84,8 +80,9 @@
 </task>
      
      <task>
+      <statement>
     <p>For each of the <em>other</em> three answer choices, sketch a curve that matches that description.</p> 
-
+      </statement>
      </task>
      
         

@@ -80,7 +80,7 @@
     <p>For each of the following figures, decide where the global extrema are located.</p>
 </introduction>
     <task>
-        <figure xml:id="figure-evt-int">
+        <statement>
             <image width="25%">
                 <sageplot>
                     x = var('x')
@@ -92,15 +92,14 @@
                     p+c1+c2
                 </sageplot>
             </image>
-        <!--                 <caption>A.</caption> -->
-        </figure>
+        </statement>
         <answer>
             <p>
                 The global maximum is at <m>x = \dfrac{\pi}{2}</m> and the global minimum is at <m>x = \dfrac{3\pi}{2}</m>.
             </p>
         </answer>
     </task>
-    <task><figure xml:id="figure-evt-endpoints">
+    <task><statement>
        <image width="25%">
             <sageplot>
                 x=var('x')
@@ -112,15 +111,14 @@
                 p+c1+c2+q
             </sageplot>
        </image>
-<!--                 <caption>B.</caption> -->
-        </figure>
+    </statement>
         <answer>
             <p>
                 The global maximum is at <m>x = 0</m> and the global minimum is at <m>x = 3</m>.
             </p>
         </answer>
     </task>
-<task><figure xml:id="figure-evt-mixed">
+<task><statement>
        <image width="25%">
             <sageplot>
                 x=var('x')
@@ -132,8 +130,7 @@
                 c1+c2+p+q
             </sageplot>
        </image>
-<!--                 <caption>C.</caption> -->
-        </figure>
+    </statement>
         <answer>
             <p>
                 The global maximum occurs at about <m>x = 1.25</m> and the global minimum occurs at about <m>x = 2.25</m>.
@@ -141,7 +138,7 @@
         </answer>
     </task>
 <task>
-   <figure xml:id="figure-evt-mixed2">
+   <statement>
         <image width="25%">
             <sageplot>
                 x=var('x')
@@ -153,8 +150,7 @@
                 c1+c2+p+q
             </sageplot>
         </image>
-<!--                 <caption>D.</caption> -->
-        </figure>
+    </statement>
         <answer>
             <p>
                 The global maximum occurs at <m>x = 3</m> and the global minimum occurs at <m>x = 1</m>.
@@ -307,7 +303,7 @@ x^2 -4x +2 &amp; x\geq 0
 \right.
                </me>
 </p> </introduction>
-<task><p>What can you say about the point <m>x=0</m>?</p>
+<task><statement><p>What can you say about the point <m>x=0</m>?</p></statement>
 <answer>
     <p>
         The function is discontinuous at this point, so the derivative does not exist; thus, 0 is a critical point.
@@ -315,8 +311,7 @@ x^2 -4x +2 &amp; x\geq 0
 </answer>
 </task>
     
-<task><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points of <m>g(x)</m>?
-    </p>
+<task><statement><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points of <m>g(x)</m>?
     <ol marker="A." cols="2">
     <li><m>x=0, \, x=1, \, x= 2</m></li>
         
@@ -326,25 +321,27 @@ x^2 -4x +2 &amp; x\geq 0
         
     <li><m>x=0, \, x=1, \, x= -2</m></li>
     </ol>
+    </p>
+</statement>
     <answer>
         <p>
             B: <m>x=0, \, x=-1, \, x= 2</m>
         </p>
     </answer>
     </task>
-    <task><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the global max and min. If you can't, explain why.</p>
+    <task><statement><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the global max and min. If you can't, explain why.</p></statement>
     <answer>
         <p>
             The global maximum is at <m>x = -1</m> and the global minimum is at <m>x = -4</m>.
         </p>
     </answer></task>
-        <task><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the global max and min. If you can't, explain why.</p>
+        <task><statement><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the global max and min. If you can't, explain why.</p></statement>
         <answer>
             <p>
                 The global maximum is at <m>x=4</m> and the global minimum is at <m>x = 2</m>.
             </p>
         </answer></task>
-        <task><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the global max and min. If you can't, explain why.</p>
+        <task><statement><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the global max and min. If you can't, explain why.</p></statement>
         <answer>
             <p>
                 No. The function is not continuous on the interval.

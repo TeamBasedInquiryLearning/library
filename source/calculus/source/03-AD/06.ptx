@@ -405,7 +405,7 @@
             </p>
         </introduction>
         <task> 
-            <p>Find all the zeros of <m>f''(x)</m>. </p>
+            <statement><p>Find all the zeros of <m>f''(x)</m>. </p></statement>
             <answer>
                 <p>
                     <m>x = \pm 3</m>
@@ -413,7 +413,9 @@
             </answer>
         </task>
         <task> 
+            <statement>
             <p>What intervals have been created by subdividing the number line at zeros of <m>f''(x)</m>?</p>
+            </statement>
             <answer>
                 <p>
                     <m>(-\infty,-3)</m>, <m>(-3,3)</m>, and <m>(3,\infty)</m>.
@@ -421,7 +423,9 @@
             </answer>
         </task>
         <task> 
+            <statement>
             <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f''(x)</m> is positive or negative at each point.</p>
+            </statement>
             <answer>
                 <p>
                     <m>f''(x)</m> is positive on <m>(-\infty,-3)\cup (3,\infty)</m> and negative on <m>(-3,3)</m>.
@@ -429,7 +433,9 @@
             </answer>
         </task>
         <task> 
+            <statement>
             <p>On which intervals is <m>f'(x)</m> increasing? On which intervals is <m>f'(x)</m> decreasing?</p>
+            </statement>
             <answer>
                 <p>
                     <m>f'(x)</m> is increasing on <m>(-\infty,-3)\cup(3,\infty)</m> and decreasing on <m>(-3,3)</m>.
@@ -437,7 +443,9 @@
             </answer>
         </task>
         <task> 
+            <statement>
             <p>List all the intervals where <m>f(x)</m> is concave up and all the intervals where <m>f(x)</m> is concave down.</p>
+            </statement>
             <answer>
                 <p>
                     <m>f(x)</m> is concave up on <m>(-\infty,-3)\cup (3,\infty)</m> and concave down on <m>(-3,3)</m>.
@@ -477,7 +485,9 @@ where it is concave up or concave down, and any inflection points.
         </p></introduction>
 
                 <task>
+                    <statement>
                     <p><m>f(x)=-\frac{1}{4} \, x^{5} - \frac{5}{2} \, x^{4} - \frac{15}{2} \, x^{3}</m></p>
+                    </statement>
                     <answer>
                         <p>
                             <m>f(x)</m> is concave up on <m>(-\infty,0)</m> and concave down on <m>(0,\infty)</m>. It has an inflection point at <m>x = 0</m>.
@@ -485,7 +495,9 @@ where it is concave up or concave down, and any inflection points.
                     </answer>
                 </task>
                 <task>
+                    <statement>
                     <p><m>f(x)=\frac{3}{20} \, x^{5} + x^{4} - \frac{5}{2} \, x^{3}</m></p>
+                    </statement>
                     <answer>
                         <p>
                             <m>f(x)</m> is concave down on <m>(-\infty,-5)\cup (0,1)</m> and concave up on <m>(-5,0)\cup (1,\infty)</m>. It has inflection points at <m>x = -5</m>, <m>x = 0</m>, and <m>x = 1</m>. 
@@ -504,96 +516,6 @@ where it is concave up or concave down, and any inflection points.
                         </p>
                     </answer>
                 </task>
-        
- <!--   <answer>
-         <ol>
-                <li>
-                    <p><m>f''(x)=-5 \, {\left(x + 3\right)}^{2} x</m></p>
-                    <ul>
-                                <li>
-                                    <p>
-<m>(-\infty, -3 )</m> is concave <em>down</em>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>-3</m>
-
-is <em>not</em>
-an inflection point
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>( -3 , 0 )</m> is concave <em>down</em>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>0</m>
-<em>is</em>
-
-an inflection point
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>( 0, \infty )</m> is concave <em>up</em>
-                                    </p>
-                                </li>
-                    </ul>
-                </li>
-                <li>
-                    <p><m>f''(x)=3 \, {\left(x + 5\right)} {\left(x - 1\right)} x</m></p>
-                    <ul>
-                                <li>
-                                    <p>
-<m>(-\infty, -5 )</m> is concave <em>down</em>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>-5</m>
-<em>is</em>
-
-an inflection point
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>( -5 , 0 )</m> is concave <em>up</em>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>0</m>
-<em>is</em>
-
-an inflection point
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>( 0 , 1 )</m> is concave <em>down</em>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>1</m>
-<em>is</em>
-
-an inflection point
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-<m>( 1 , \infty )</m> is concave <em>up</em>
-                                    </p>
-                                </li>
-                    </ul>
-                </li>
-        </ol>
-    </answer>-->
  </activity>
 
     <activity xml:id="derivative-tests-concavity-extension">
@@ -640,7 +562,9 @@ f''(x)
         </p>
         </introduction>
         <task> 
+            <statement>
             <p>List all the critical points of <m>f(x)</m> that you can find using the table above. </p>
+            </statement>
             <answer>
                 <p>
                     The critical points are at <m>x = 1</m>, <m>x = 3</m>, and <m>x = 6</m>.
@@ -648,15 +572,19 @@ f''(x)
             </answer>
         </task>
         <task> 
+            <statement>
             <p>Use the First Derivative Test to classify the critical numbers (decide if they are a max or min). Write full sentence stating the conclusion of the test for each critical number. </p>
+            </statement>
             <answer>
                 <p>
                     There are local maxima at <m>x = 1</m> and <m>x = 6</m> and a local minimum at <m>x = 3</m>.
                 </p>
             </answer>
         </task>
-        <task> 
+        <task>
+            <statement>
             <p>On which interval(s) is <m>f(x)</m> increasing? On which interval(s) is <m>f(x)</m> decreasing? List all the critical points of <m>f(x)</m> that you can find using the table above. </p>
+            </statement>
             <answer>
                 <p>
                     <m>f(x)</m> is increasing on <m>(0,1)\cup (3,6)</m> and decreasing on <m>(1,3)\cup (6,7)</m>.
@@ -664,7 +592,9 @@ f''(x)
             </answer>
         </task>
         <task> 
+            <statement>
             <p>There is one critical number for which the Second Derivative Test is inconclusive. Which one? You can still determine if it is a max or min using the First Derivative Test! </p>
+            </statement>
             <answer>
                 <p>
                     The Second Derivative Test is inconclusive at <m>x = 6</m>.
@@ -672,7 +602,9 @@ f''(x)
             </answer>
         </task>
         <task> 
+            <statement>
             <p>List all the critical points of <m>f'(x)</m> that you can find using the table above. </p>
+            </statement>
             <answer>
                 <p>
                     <m>f'(x)</m> has critical points at <m>x=2</m>, <m>x = 4</m>, and <m>x = 6</m>.
@@ -680,7 +612,9 @@ f''(x)
             </answer>
         </task>
          <task> 
+            <statement>
             <p>On which intervals is <m>f(x)</m> concave up? On which intervals is <m>f(x)</m>  concave down? </p>
+            </statement>
             <answer>
                 <p>
                     <m>f(x)</m> is concave up on <m>(2,4)\cup (6,7)</m> and concave down on <m>(0,2)\cup (4,6)</m>.
@@ -688,7 +622,9 @@ f''(x)
             </answer>
         </task>
         <task> 
+            <statement>
             <p>List all the inflection points of <m>f(x)</m> that you can find using the table above. </p>
+            </statement>
             <answer>
                 <p>
                     The inflection points are at <m>x = 2</m>, <m>x=4</m>, and <m>x=6</m>.

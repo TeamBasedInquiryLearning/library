@@ -25,36 +25,36 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
 <p>Without using a calculator, we will use calculus to approximate <m>\ln(1.1)</m>. </p>
     </introduction>
 
-<task>    
+<task> <statement>   
    <p> Find the equation of the tangent line to <m>\ln(x)</m> at <m>x=1</m>. This will be your linear approximation <m>L(x)</m>. What do you get for <m>L(x)</m>? </p>
   <ol marker="A." cols="2">
                 <li><p>  <m>L(x) = x</m> </p></li>
                   <li><p>  <m>L(x) = x+1</m></p></li> 
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
        <li><p>  <m>L(x)= -x + 1</m> </p></li>               
-    </ol>    
+    </ol> </statement>   
     <answer>
         <p>
             C: <m>L(x)= x - 1</m>
         </p>
     </answer>  
     </task>
-    <task><p>As 1.1 is close to 1, we can use <m>L(1.1)</m> to approximate <m>\ln(1.1)</m>. What approximation do you get? </p> 
+    <task>
+        <statement><p>As 1.1 is close to 1, we can use <m>L(1.1)</m> to approximate <m>\ln(1.1)</m>. What approximation do you get?
   <ol marker="A." cols="2">
                 <li><p>  <m>\ln(1.1) \approx 1.1 </m> </p></li>
                  <li><p>  <m>\ln(1.1) \approx 2.1 </m> </p></li>
                  <li><p>  <m>\ln(1.1) \approx 0.1 </m> </p></li>
                  <li><p>  <m>\ln(1.1) \approx -0.1 </m> </p></li>             
-    </ol>      
+    </ol></p></statement>  
     <answer>
         <p>
             C: <m>\ln(1.1) \approx 0.1 </m>
         </p>
     </answer>
     </task>
-    <task><p>Sketch the tangent line <m>L(x)</m> on the same plane as the graph of <m>\ln(x)</m>. What do you notice? 
+    <task><statement><p>Sketch the tangent line <m>L(x)</m> on the same plane as the graph of <m>\ln(x)</m>. What do you notice? 
 </p>
-         <figure>
             <image width="50%" xml:id="graph-tangent-line-plane-ln">
                 <sageplot>
                     x = var('x')
@@ -63,8 +63,7 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
                     p
                 </sageplot>
             </image>
-        <caption>The graph of <m> \ln(x)</m></caption>
-        </figure>
+        </statement>
         <answer>
             <image>
                 <sageplot>
@@ -84,18 +83,18 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
   Using the equation of the tangent line to the graph of <m>\ln(x)</m> at <m>x=1</m> and the shape of this graph, you can show that for all values of <m>x</m>, we have that
 <m>\ln(x) \leq x-1</m>.</p>
     </introduction>
-    <task><p>
+    <task><statement><p>
 Compute the second derivative of <m>\ln(x)</m>. What do you notice about the sign of the second derivative of <m>\ln(x)</m>? What does this tell you about the shape of the graph?
-</p>
+</p></statement>
     <answer>
         <p>
             The second derivative is given by <m>-\dfrac{1}{x^2}</m>. The sign is always negative, so the shape of the graph is concave down.
         </p>
     </answer>
 </task>
-    <task><p>
+    <task><statement><p>
 Conclude that because the graph of <m>\ln(x)</m> has a certain shape, the graph will bend below the tangent line and so that <m>\ln(x)</m> will always be smaller than the tangent line approximation <m>L(x)= x -1 </m>.
-</p>
+</p></statement>
     
 </task>
 </activity>
@@ -103,21 +102,24 @@ Conclude that because the graph of <m>\ln(x)</m> has a certain shape, the graph 
     <activity xml:id="activity-linear-approx-power-functions">
 <!--  Approximating powers -->
         <introduction><p>In this activity you will approximate power functions near <m>x=1</m>.</p></introduction>
-<task> <p>
-Find the tangent line approximation to <m>x^2</m> at  <m>x=1</m>.</p>
+<task><statement> <p>
+Find the tangent line approximation to <m>x^2</m> at  <m>x=1</m>.
     <ol marker="A." cols="2">
                 <li><p>  <m>L(x) = 2x</m> </p></li>
                   <li><p>  <m>L(x) = 2x+1</m></p></li> 
                   <li><p>  <m>L(x)= 2x - 1</m> </p></li>     
        <li><p>  <m>L(x)= -2x + 1</m> </p></li>               
-    </ol>
+    </ol></p></statement>
     <answer>
         <p>
             C: <m>L(x)= 2x - 1</m>
         </p>
     </answer>      
  </task>
-<task> <p>Show that for any constant <m>k</m>, the tangent line approximation to <m>x^k</m> at <m>x=1</m> is <m>L(x) = k(x -1) + 1</m>. </p> 
+<task> 
+    <statement>
+        <p>Show that for any constant <m>k</m>, the tangent line approximation to <m>x^k</m> at <m>x=1</m> is <m>L(x) = k(x -1) + 1</m>. </p> 
+    </statement>
 <answer>
     <p>
         If <m>f(x) = x^k</m>, then <m>f'(x) = kx^{k-1}</m>. So, <m>f'(1) = k</m>, and we have
@@ -131,13 +133,16 @@ Find the tangent line approximation to <m>x^2</m> at  <m>x=1</m>.</p>
     </p>
 </answer>
 </task>
-<task> <p> Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not? </p> 
+<task>
+    <statement>
+        <p> Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not? </p> 
+    </statement>
 <answer>
     <p>
         The linearization is given by <m>L(x) = \dfrac{1}{2}(x-1) + 1</m>, so <m>L(1.1) = \dfrac{1}{2}(1.1-1)+1 = 1.05</m>. The estimate should be approximately correct, since 1.1 is close to 1.
     </p>
 </answer></task>
-<task> <p>  Is the actual value <m>\sqrt{1.1}</m> above or below 1.05? What feature of the graph of <m>\sqrt{x}</m> makes this an over or under estimate? </p> 
+<task><statement><p>  Is the actual value <m>\sqrt{1.1}</m> above or below 1.05? What feature of the graph of <m>\sqrt{x}</m> makes this an over or under estimate? </p> </statement>
 <answer>
     <p>
         The actual value is 1.0488, so the approximation is an overestimate. This is an overestimate because the function bends downward, away from its tangent line.
@@ -151,10 +156,12 @@ If a function <m>f(x)</m> is <em>concave up</em> around <m>x=a</m>, then the fun
 </p></remark>
     
 <activity xml:id="activity-linear-approx-differentials">
+    <statement>
 <p> Suppose <m>f</m> has a continuous positive second derivative and <m>\Delta x</m> is a small increment in <m>x</m> (like <m>h</m> in the limit definition of the derivative).
  Which one is larger...
-   </p>
    <me>f(1 + \Delta x ) \quad \text{or} \quad  f'(1) \Delta x + f(1) \quad? </me>
+   </p>
+</statement>
    <answer>
     <p>
         The function is concave up, so <m>f(1+\Delta x)</m> is larger. 
@@ -215,32 +222,33 @@ graph of <m>y=p(x)</m> near <m>x=7</m>.
     <p> where <m>a,b,c</m> are parameters to be determined so that <m>q(x)</m> best approximates the graph of <m>f(x)=\ln(x)</m> at <m>x=1</m>. 
     </p>
     </introduction>
-    <task><p>We want to choose <m>a,b,c</m> such that our quadratic polynomial resembles <m>f(x)</m> at <m>x=1</m>. First thing, we want <m>f(1)=q(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p> 
+    <task><statement><p>We want to choose <m>a,b,c</m> such that our quadratic polynomial resembles <m>f(x)</m> at <m>x=1</m>. First thing, we want <m>f(1)=q(1)</m>. What equation in <m>a,b,c</m> does this condition give you?
       <ol marker="A." cols="2">
                 <li><p>  <m>a+b+c = 1</m> </p></li>
                   <li><p>  <m>a+b+c = 0</m></p></li> 
                   <li><p>  <m>c = 0</m> </p></li>     
        <li><p>  <m>c = 1</m> </p></li>               
-    </ol>    
+    </ol></p></statement>
     <answer>
         <p>
             B: <m>a+b+c = 0</m>
         </p>
     </answer>  
     </task>
-    <task><p>We also want <m>f'(1)=q'(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p>
+    <task>
+        <statement><p>We also want <m>f'(1)=q'(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p></statement>
     <answer>
         <p>
             <m>2a + b = 1</m>
         </p>
     </answer></task>
-       <task><p>Finally, we want <m>f''(1)=q''(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p>
+       <task><statement><p>Finally, we want <m>f''(1)=q''(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p></statement>
     <answer>
         <p>
             <m>2a = -1</m>
         </p>
     </answer></task>
-    <task><p>Find a solution to this system of linear equations! Your answer will give you values of <m>a,b,c</m> that can be used to draw a quadratic approximating the natural logarithm. You can check your answer on Desmos <url href = "https://www.desmos.com/calculator/bad2xrwmvl"/> </p>
+    <task><statement><p>Find a solution to this system of linear equations! Your answer will give you values of <m>a,b,c</m> that can be used to draw a quadratic approximating the natural logarithm. You can check your answer on Desmos <url href = "https://www.desmos.com/calculator/bad2xrwmvl"/> </p></statement>
     <answer>
         <p>
             <m>a = -\dfrac{1}{2}, b = 2, c= -\dfrac{3}{2}</m>
@@ -282,9 +290,11 @@ Suppose the function <m>p(x)</m> satisfies <m>p(-2) = 5</m>, <m>p'(-2) = 1</m>, 
         </p>
     </introduction>
     <task>
+        <statement>
         <p>
 Explain and demonstrate how to find the linearization <m>L(x)</m> of <m>p(x)</m> at <m>x =-2</m>.
         </p>
+    </statement>
         <answer>
             <p>
                 <m>L(x) = x+7</m>
@@ -292,9 +302,11 @@ Explain and demonstrate how to find the linearization <m>L(x)</m> of <m>p(x)</m>
         </answer>
     </task>
     <task>
+        <statement>
         <p>
 Explain and demonstrate how to estimate the value of <m>p(-2.03)</m> using this linearization.
         </p>
+    </statement>
         <answer>
             <p>
                 <m>p(-2.03)\approx 4.97</m>
@@ -302,9 +314,11 @@ Explain and demonstrate how to estimate the value of <m>p(-2.03)</m> using this 
         </answer>
     </task>
     <task>
+        <statement>
         <p>
 Explain why your estimate of <m>p(-2.03)</m> is greater than or less than the actual value.
         </p>
+    </statement>
         <answer>
             <p>
                 The function is concave down, so the estimate is greater than the actual value.
@@ -312,9 +326,11 @@ Explain why your estimate of <m>p(-2.03)</m> is greater than or less than the ac
         </answer>
     </task>
     <task>
+        <statement>
         <p>
 Sketch a possible graph of <m>p(x)</m> and its linearization <m>L(x)</m> nearby <m>x =-2</m> to illustrate your findings.
         </p>
+    </statement>
         <answer>
             <p>
                 Answers vary.
