@@ -17,11 +17,16 @@ def build_books(stage_directory=None, books=None):
         books = ["calculus", "linear-algebra", "precalculus"]
     p = Project.parse()
     for book in books:
-        p.get_target(f"{book}-web").build(clean=True)
-        p.get_target(f"{book}-web-instructor").build(clean=True)
-        p.get_target(f"{book}-print").build(clean=True)
-        p.get_target(f"{book}-print-instructor").build(clean=True)
-        p.get_target(f"{book}-print-slides").build(clean=True)
+        p.get_target(f"{book}-web").generate_assets(all_formats=True)
+        p.get_target(f"{book}-web-instructor").generate_assets(all_formats=True)
+        p.get_target(f"{book}-print").generate_assets(all_formats=True)
+        p.get_target(f"{book}-print-instructor").generate_assets(all_formats=True)
+        p.get_target(f"{book}-print-slides").generate_assets(all_formats=True)
+        p.get_target(f"{book}-web").build(clean=True,generate=False)
+        p.get_target(f"{book}-web-instructor").build(clean=True,generate=False)
+        p.get_target(f"{book}-print").build(clean=True,generate=False)
+        p.get_target(f"{book}-print-instructor").build(clean=True,generate=False)
+        p.get_target(f"{book}-print-slides").build(clean=True,generate=False)
         if stage_directory is not None:
             stage_path = Path() / "output" / "stage" / stage_directory / book
             print(f"Staging book at `{stage_path}`")
