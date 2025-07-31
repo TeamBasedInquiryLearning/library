@@ -64,7 +64,7 @@ def main(stage_directory=None):
     build_banks(stage_directory=stage_directory)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Build fixed editions of books.')
+    parser = argparse.ArgumentParser(description='Build final editions of books.')
     parser.add_argument('stage_directory')
     args = parser.parse_args()
     main(stage_directory=args.stage_directory)
