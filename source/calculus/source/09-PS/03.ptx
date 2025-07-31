@@ -455,9 +455,41 @@ Let's investigate the power series
                 <p>
                     Which of the following best represents a degree 10 polynomial that approximates <m>n(x)</m>?
                 <ol marker="A.">
-                        <li><m>n_{10}(x)=\displaystyle -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6-\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}</m>.</li>
-                        <li><m>n_{10}(x)=\displaystyle x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6-\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}</m>.</li>
-                        <li><m>n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}</m>.</li>
+                        <li>
+                            <md>
+                                <mrow>
+                                    n_{10}(x)=
+                                    &amp;\,
+                                    -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6
+                                </mrow>
+                                <mrow>
+                                    &amp;\,
+                                    -\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}
+                                </mrow>
+                            </md>
+                        </li>
+                        <li>
+                            <md>
+                                <mrow>
+                                    n_{10}(x)=
+                                    &amp;\,
+                                    x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6
+                                </mrow>
+                                <mrow>
+                                    &amp;\,
+                                    -\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}
+                                </mrow>
+                            </md>
+                        </li>
+                        <li>
+                            <md>
+                                <mrow>
+                                    n_{10}(x)=
+                                    &amp;\,
+                                    1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}
+                                </mrow>
+                            </md>
+                        </li>
                     </ol>
                 </p>
                 

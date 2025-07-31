@@ -292,10 +292,10 @@
                 <m>V(x) = x^3</m>
               </li>
               <li>
-                <m>V(x) = x^2 \cdot (8 - x)</m>
+                <m>V(x) = x^2 (8 - x)</m>
               </li>
               <li>
-                <m>V(x) = x^2 \cdot (8 - 2x)</m>
+                <m>V(x) = x^2 (8 - 2x)</m>
               </li>
               <li>
                 <m>V(x) = x(8 - x)^2</m>
@@ -304,13 +304,10 @@
           </statement>
           <answer>
             <p>
-              C. V(x)=x\cdot (8-2x)^2
+              C. <m>V(x) = x^2 (8 - 2x)</m>
             </p>
           </answer>
         </task>
-        <!-- <task>
-         <p>Express the volume of the box <m>V</m> as a function of the length of the cuts <m>x</m>.</p>
-        </task> -->
         <task>
           <statement>
             <p>For this problem, what is the best choice of domain for the function <m>V(x)</m>?</p>
