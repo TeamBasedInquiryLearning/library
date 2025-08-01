@@ -198,15 +198,13 @@
         </activity>
 
         
-        <commentary component="instructor">
-            <paragraphs>
-                <title>Instructor Note</title>
-                <p>
-                    In <xref ref="task-AI5fullscaffold-coord"/>, 
-                    each team should have an axis that has the downward direction as positive.
-                </p>
-            </paragraphs>
-        </commentary>
+        <paragraphs component="instructor">
+            <title>Instructor Note</title>
+            <p>
+                In <xref ref="task-AI5fullscaffold-coord"/>, 
+                each team should have an axis that has the downward direction as positive.
+            </p>
+        </paragraphs>
 
         <activity xml:id="activity-AI5fullscaffold">
             <introduction>
@@ -330,12 +328,12 @@
                     Suppose a trapezoidal dam has height 40 feet, top width of 115 feet and bottom width of 70 feet. Water is pressed against the entire surface of the dam. 
                     Find an integral which computes the force exerted against this dam. Recall that the weight density of freshwater is <m>\rho=62.4</m> lb/ft<m>^3</m>.
                 </p>
+            </statement>
                 <answer>
                     <p>
                         <m>F=\displaystyle\int_0^{40} 62.4x\left(-\dfrac{9}{8}x+115\right)dx</m>
                     </p>
                 </answer>
-            </statement>
         </activity>
         
         <activity xml:id="activity-AI5dam">
@@ -443,8 +441,11 @@
 
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AI7/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2025/calculus/exercises/#/bank/AI7/"/>
         </p>
     </subsection>
     

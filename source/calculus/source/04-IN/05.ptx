@@ -198,7 +198,6 @@
         <task>
             <p><m>y=\frac{1}{x^2}</m></p>
             <figure xml:id="in5-figure-8">
-          <image width="50%" source="defintarea1.png" />
           <image width="50%">
             <sageplot>
                 x = var('x')
@@ -278,8 +277,11 @@ Leave all answers in exact form, with no decimal approximations.
 
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/IN5/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2025/calculus/exercises/#/bank/IN5/"/>
         </p>
     </subsection>
 </section>
