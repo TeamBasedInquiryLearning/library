@@ -1,4 +1,4 @@
 source_path: source
-output_path: output/precalculus-web-instructor
-args: "{sys_executable} -m pretext build precalculus-web-instructor --xmlid {xml_id} --no-knowls -g"
+output_path: output/precalculus-preview
+args: "{sys_executable} -m pretext -v debug build precalculus-preview --xmlid {xml_id} --no-knowls -g"
 project_type: PreTeXt

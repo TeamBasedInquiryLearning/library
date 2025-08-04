@@ -1,10 +1,16 @@
-from pretext.project import Project
-from git import Repo
 from pathlib import Path
-from lxml import etree
+import logging
 import os
 import shutil
+from git import Repo
+from lxml import etree
+from pretext.project import Project
+from pretext import logger
 from . import preview_outcome
+
+log = logging.getLogger("ptxlogger")
+logger.add_log_stream_handler()
+log.setLevel(logging.DEBUG)
 
 def main():
     repo = Repo()
@@ -31,8 +37,8 @@ def main():
                         "file": f,
                         'id': xml_id,
                     })
-        t = p.get_target(f"{b}-web-instructor")
-        if len(xml_ids) > 0:
+        t = p.get_target(f"{b}-preview")
+        if 0 < len(xml_ids) < 10:
             print(f"Building book `{b}`, skipping images")
             path = f"/preview/{b}"
             t.build(xmlid=None, no_knowls=True, generate=False)
@@ -40,15 +46,23 @@ def main():
                 "file": Path("source", b),
                 "path": path
             })
-        built_ids = set()
-        for xml_id in xml_ids:
-            if xml_id['id'] not in built_ids:
-                print(f"Building book `{b}` with ID `{xml_id['id']}`")
-                t.build(xmlid=xml_id['id'], no_knowls=True, generate=True)
-                built_ids.add(xml_id['id'])
+            built_ids = set()
+            for xml_id in xml_ids:
+                if xml_id['id'] not in built_ids:
+                    print(f"Building book `{b}` with ID `{xml_id['id']}`")
+                    t.build(xmlid=xml_id['id'], no_knowls=True, generate=True)
+                    built_ids.add(xml_id['id'])
+                preview_links.append({
+                    "file": xml_id["file"],
+                    "path": f"/preview/{b}/{xml_id['id']}.html"
+                })
+        elif 10 <= len(xml_ids):
+            print(f"Building book `{b}`, including images")
+            path = f"/preview/{b}"
+            t.build(xmlid=None, no_knowls=True, generate=True)
             preview_links.append({
-                "file": xml_id["file"],
-                "path": f"/preview/{b}/{xml_id['id']}.html"
+                "file": Path("source", b),
+                "path": path
             })
     # for each CheckIt file, build its preview
     for b in BOOKS:
@@ -61,7 +75,7 @@ def main():
         # build changed outcomes
         for o in changed_outcomes:
             sandbox_bank_path = preview_outcome.build_preview(b, o)
-            output_path = Path("output", f"{b}-web-instructor", "exercises", o)
+            output_path = Path("output", f"{b}-preview", "exercises", o)
             output_path.mkdir(parents=True)
             shutil.copytree(sandbox_bank_path / "docs", output_path, dirs_exist_ok=True)
             preview_links.append({
