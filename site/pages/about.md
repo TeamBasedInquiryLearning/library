@@ -41,7 +41,8 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 #### Selected mentions in other literature
 
-- Muhammad, R. A., & Saidi, R. (2024). Applications in Linear Algebra: Bridging Data Science with Mathematical Foundations. Scatterplot, 1(1). <https://doi.org/10.1080/29932955.2024.2370620>
+- Kostiuk, J. (2026). Righting My Relationship With Teaching Mathematics: A Critical Reflection. In _Culturally Sustaining Pedagogies in Mathematics and Technology Education: Research, Practices, and Critical Reflections_, edited by Karen L. Terrell and Diane Silva Pimentel, IGI Global Scientific Publishing, 1--26. <https://doi.org/10.4018/979-8-3373-5337-1.ch001>
+- Muhammad, R. A., & Saidi, R. (2024). Applications in Linear Algebra: Bridging Data Science with Mathematical Foundations. _Scatterplot_, 1(1). <https://doi.org/10.1080/29932955.2024.2370620>
 
 ### Presentations
 
@@ -99,3 +100,4 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 - Joe Hibdon† presented a Team-Based Inquiry Learning workshop for ChiCOMMMIT (May 2025)
 
 († TBIL Fellows)
+
