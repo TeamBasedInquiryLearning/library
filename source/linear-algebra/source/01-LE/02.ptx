@@ -593,25 +593,25 @@ Assign the following row operations to each step used to manipulate each
 matrix to the next:
 <ol marker="A." cols="2">
                     <li>
-    <p><m>R_1\leftrightarrow R_2</m></p>
-                    </li>
-                    <li>
-    <p><m>R_2+2R_2\to R_2</m></p>
-                    </li>
-                    <li>
-    <p><m>\frac{1}{2}R_2\to R_2</m></p>
-                    </li>
-                    <li>
     <p><m>R_3-5R_2\to R_3</m></p>
                     </li>
                     <li>
     <p><m>R_1+3R_3\to R_1</m></p>
                     </li>
                     <li>
-    <p><m>R_2+1R_3\to R_2</m></p>
+    <p><m>R_1+2R_2\to R_1</m></p>
                     </li>
                     <li>
-    <p><m>R_1+2R_2\to R_1</m></p>
+    <p><m>R_2+2R_1\to R_2</m></p>
+                    </li>
+                    <li>
+    <p><m>\frac{1}{2}R_2\to R_2</m></p>
+                    </li>
+                    <li>
+    <p><m>R_1\leftrightarrow R_2</m></p>
+                    </li>
+                    <li>
+    <p><m>R_2+1R_3\to R_2</m></p>
                     </li>
 </ol>
 </p>
