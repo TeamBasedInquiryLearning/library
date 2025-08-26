@@ -673,14 +673,15 @@ matrix to the next:
 <definition>
     <statement>
         <p>
+The <term>leading term</term> of a row is its first nonzero term (if it exists).
 A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>Reduced row echelon form</idx> if
 <ol>
-<li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.<idx>pivot</idx>
+<li> The leading term of each row has value <m>1</m>.
+      (We call these terms <term>pivots</term>.)<idx>pivot</idx>
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is anywhere above or below a pivot is 0.
+<li> Every term in the same column as a pivot is zero (besides the pivot itself).
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -696,12 +697,12 @@ Every matrix has a unique reduced row echelon form. If <m>A</m> is a matrix, we 
 Recall that a matrix is in <term>reduced row echelon form</term> (<term>RREF</term>) if
         </p>
 <ol>
-<li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.
+<li> The leading term of each row has value <m>1</m>.
+      (We call these terms <term>pivots</term>.)
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is anywhere above or below a pivot is 0.
+<li> Each pivot is the only nonzero term in its column.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -736,12 +737,12 @@ For the ones not in RREF, determine which rule is violated and how it might be f
 Recall that a matrix is in <term>reduced row echelon form</term> (<term>RREF</term>) if
         </p>
 <ol>
-<li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.
+<li> The leading term of each row has value <m>1</m>.
+      (We call these terms <term>pivots</term>.)
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is anywhere above or below a pivot is 0.
+<li> Each pivot is the only nonzero term in its column.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
