@@ -680,7 +680,7 @@ A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>Red
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is either above or below a pivot is 0.
+<li> Each term that is anywhere above or below a pivot is 0.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -701,7 +701,7 @@ Recall that a matrix is in <term>reduced row echelon form</term> (<term>RREF</te
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is either above or below a pivot is 0.
+<li> Each term that is anywhere above or below a pivot is 0.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -711,9 +711,21 @@ For each matrix, mark the leading terms, and label it as RREF or not RREF.
 For the ones not in RREF, determine which rule is violated and how it might be fixed.
     </p>
       <sidebyside widths="33% 33% 33%">
-<p><me> A=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 1 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</me></p>
-<p><me> B=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 4 &amp; 3 \\ 0 &amp; 1 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 2 \end{array}\right]</me></p>
-<p><me> C=\left[\begin{array}{ccc|c} 0 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 1 &amp; -1  \end{array}\right]</me></p>
+<p><me> A=\left[\begin{array}{ccc|c}
+1 &amp; -4 &amp; 0 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 
+\end{array}\right]</me></p>
+<p><me> B=\left[\begin{array}{ccc|c} 
+1 &amp; 0 &amp; 4 &amp; 3 \\ 
+0 &amp; 1 &amp; 0 &amp; -1 \\ 
+0 &amp; 0 &amp; 1 &amp; 2 
+\end{array}\right]</me></p>
+<p><me> C=\left[\begin{array}{ccc|c} 
+0 &amp; 0 &amp; 0 &amp; 0 \\ 
+1 &amp; 2 &amp; 0 &amp; 3 \\ 
+0 &amp; 0 &amp; 1 &amp; -1  
+\end{array}\right]</me></p>
         </sidebyside>
     </statement>
 </activity>
@@ -729,7 +741,7 @@ Recall that a matrix is in <term>reduced row echelon form</term> (<term>RREF</te
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is either above or below a pivot is 0.
+<li> Each term that is anywhere above or below a pivot is 0.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
