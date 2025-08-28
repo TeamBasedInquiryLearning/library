@@ -400,90 +400,122 @@ notation: (Combination of old rows) <m>\rightarrow</m> (New row).
         <p>
 Each of the following linear systems has the same solution set.
         </p>
-      <sidebyside widths="33% 33% 33%">
+        <sbsgroup>
+          <sidebyside>
           <p> A)
         <md alignment="alignat" alignat-columns='4'>
 <mrow>  
-             x &amp;\,+\,&amp; 2y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 3 
+             x &amp;\,-\,&amp; 2y  &amp;\,-\,&amp; 3z &amp;\,=\,&amp; -12 
 </mrow>
 <mrow>  
-             -x &amp;\,-\,&amp; y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 1 
+             -2x &amp;\,+\,&amp; 6y  &amp;\,+\,&amp; 4z &amp;\,=\,&amp; 28 
 </mrow>
 <mrow>  
-             2x &amp;\,+\,&amp; 5y  &amp;\,+\,&amp; 3z &amp;\,=\,&amp; 7   
+              &amp;\,\,&amp; 5y  &amp;\,-\,&amp; 4z &amp;\,=\,&amp; 11   
 </mrow>
            </md>
           </p>
           <p> B)
         <md alignment="alignat" alignat-columns='4'>
 <mrow>  
-             2x &amp;\,+\,&amp; 5y  &amp;\,+\,&amp; 3z &amp;\,=\,&amp; 7 
+             x &amp;\,-\,&amp; 2y  &amp;\,-\,&amp; 3z &amp;\,=\,&amp; -12 
 </mrow>
 <mrow>  
-             -x &amp;\,-\,&amp; y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 1 
+              &amp;\,\,&amp; y  &amp;\,-\,&amp; z &amp;\,=\,&amp; 2 
 </mrow>
 <mrow>  
-             x &amp;\,+\,&amp; 2y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 3  
+              &amp;\,\,&amp; 5y  &amp;\,-\,&amp; 4z &amp;\,=\,&amp; 11   
 </mrow>
            </md>
           </p>
+          </sidebyside>
+          <sidebyside>
           <p> C)
         <md alignment="alignat" alignat-columns='4'>
 <mrow>  
-             x &amp; &amp;   &amp;\,-\,&amp; z &amp;\,=\,&amp; 1 
+             x &amp;\,\,&amp;   &amp;\,\,&amp;  &amp;\,=\,&amp; -3
 </mrow>
 <mrow>  
-              &amp; &amp; y  &amp;\,+\,&amp; 2z &amp;\,=\,&amp; 4   
+              &amp;\,\,&amp; y  &amp;\,\,&amp;  &amp;\,=\,&amp; 3
 </mrow>
 <mrow>  
-              &amp; &amp; y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 1 
+              &amp;\,\,&amp;   &amp;\,\,&amp; z &amp;\,=\,&amp; 1   
 </mrow>
            </md>
           </p>
-        </sidebyside>
-      <sidebyside widths="33% 33% 33%">
           <p> D)
         <md alignment="alignat" alignat-columns='4'>
 <mrow>  
-             x &amp;\,+\,&amp; 2y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 3 
+             x &amp;\,-\,&amp; 2y  &amp;\,-\,&amp; 3z &amp;\,=\,&amp; -12 
 </mrow>
 <mrow>  
-              &amp; &amp; y  &amp;\,+\,&amp; 2z &amp;\,=\,&amp; 4 
+              &amp;\,\,&amp; y  &amp;\,-\,&amp; z &amp;\,=\,&amp; 2
 </mrow>
 <mrow>  
-             2x &amp;\,+\,&amp; 5y  &amp;\,+\,&amp; 3z &amp;\,=\,&amp; 7   
+              &amp;\,\,&amp;   &amp;\,\,&amp; z &amp;\,=\,&amp; 1   
 </mrow>
            </md>
           </p>
+          </sidebyside>
+          <sidebyside>
           <p> E)
         <md alignment="alignat" alignat-columns='4'>
 <mrow>  
-             x &amp; &amp;   &amp;\,-\,&amp; z &amp;\,=\,&amp; 1 
+             -2x &amp;\,+\,&amp; 6y  &amp;\,+\,&amp; 4z &amp;\,=\,&amp; 28 
 </mrow>
 <mrow>  
-              &amp; &amp; y  &amp;\,+\,&amp; 2z &amp;\,=\,&amp; 4 
+             x &amp;\,-\,&amp; 2y  &amp;\,-\,&amp; 3z &amp;\,=\,&amp; -12 
 </mrow>
 <mrow>  
-              &amp; &amp;   &amp; &amp; z &amp;\,=\,&amp; 3   
+              &amp;\,\,&amp; 5y  &amp;\,-\,&amp; 4z &amp;\,=\,&amp; 11   
 </mrow>
            </md>
           </p>
           <p> F)
         <md alignment="alignat" alignat-columns='4'>
 <mrow>  
-             x &amp;\,+\,&amp; 2y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 3 
+             x &amp;\,-\,&amp; 2y  &amp;\,\,&amp;  &amp;\,=\,&amp; -9 
 </mrow>
 <mrow>  
-              &amp; &amp; y  &amp;\,+\,&amp; 2z &amp;\,=\,&amp; 4 
+              &amp;\,\,&amp; y  &amp;\,-\,&amp; z &amp;\,=\,&amp; 2
 </mrow>
 <mrow>  
-              &amp; &amp; y  &amp;\,+\,&amp; z &amp;\,=\,&amp; 1   
-            </mrow>
+              &amp;\,\,&amp;   &amp;\,\,&amp; z &amp;\,=\,&amp; 1   
+</mrow>
            </md>
           </p>
-        </sidebyside>
+          </sidebyside>
+          <sidebyside>
+          <p> G)
+        <md alignment="alignat" alignat-columns='4'>
+<mrow>  
+             x &amp;\,-\,&amp; 2y  &amp;\,-\,&amp; 3z &amp;\,=\,&amp; -12 
+</mrow>
+<mrow>  
+              &amp;\,\,&amp; 2y  &amp;\,-\,&amp; 2z &amp;\,=\,&amp; 4 
+</mrow>
+<mrow>  
+              &amp;\,\,&amp; 5y  &amp;\,-\,&amp; 4z &amp;\,=\,&amp; 11   
+</mrow>
+           </md>
+          </p>
+          <p> H)
+        <md alignment="alignat" alignat-columns='4'>
+<mrow>  
+             x &amp;\,-\,&amp; 2y  &amp;\,\,&amp;  &amp;\,=\,&amp; -9 
+</mrow>
+<mrow>  
+              &amp;\,\,&amp; y  &amp;\,\,&amp;  &amp;\,=\,&amp; 3
+</mrow>
+<mrow>  
+              &amp;\,\,&amp;   &amp;\,\,&amp; z &amp;\,=\,&amp; 1   
+</mrow>
+           </md>
+          </p>
+          </sidebyside>
+        </sbsgroup>
         <p>
-Sort these six equivalent linear systems from
+Sort these eight equivalent linear systems from
 most complicated to simplest (in your opinion).
         </p>
     </statement>
@@ -491,75 +523,165 @@ most complicated to simplest (in your opinion).
 
 
 <activity estimated-time='5'>
-    <statement>
+    <introduction>
     <p>
 Here we've written the sorted linear systems from <xref ref="LE2-activity-sort"/>
 as augmented matrices.
-    <md alignment="alignat" alignat-columns='3'>
+    <md>
         <mrow>
 \left[\begin{array}{ccc|c} 
-     2 &amp; 5 &amp; 3 &amp; 7 \\ 
-    -1 &amp; -1 &amp; 1 &amp; 1 \\ 
-     1 &amp; 2 &amp; 1 &amp; 3 
-\end{array}\right] &amp; \sim &amp;
+    -2 &amp; 6 &amp; 4 &amp; 28 \\ 
+     1 &amp; -2 &amp; -3 &amp; -12 \\ 
+     0 &amp; 5 &amp; -4 &amp; 11
+\end{array}\right] &amp; \sim
 
 \left[\begin{array}{ccc|c} 
-\markedPivot{1} &amp; 2 &amp; 1 &amp; 3 \\ 
--1 &amp; -1 &amp; 1 &amp; 1 \\ 
-2 &amp; 5 &amp;  3 &amp; 7  
-\end{array}\right] &amp; \sim &amp;
-
-\left[\begin{array}{ccc|c} 
-\markedPivot{1} &amp; 2 &amp; 1 &amp; 3 \\ 
-0 &amp; 1 &amp; 2 &amp; 4 \\ 
-2 &amp; 5 &amp; 3 &amp; 7  
-\end{array}\right]\sim 
+     1 &amp; -2 &amp; -3 &amp; -12 \\ 
+    -2 &amp; 6 &amp; 4 &amp; 28 \\ 
+     0 &amp; 5 &amp; -4 &amp; 11
+\end{array}\right]
         </mrow>
         <mrow>
-\sim \left[\begin{array}{ccc|c} 
-\markedPivot{1} &amp; 2 &amp; 1 &amp; 3 \\ 
-0 &amp; \markedPivot{1} &amp; 2 &amp; 4 \\ 
-0 &amp; 1 &amp; 1 &amp; 1  
-\end{array}\right] &amp; \sim &amp;
+\sim
+\left[\begin{array}{ccc|c} 
+     1 &amp; -2 &amp; -3 &amp; -12 \\ 
+     0 &amp; 2 &amp; -2 &amp; 4 \\ 
+     0 &amp; 5 &amp; -4 &amp; 11
+\end{array}\right] &amp; \sim
 
 \left[\begin{array}{ccc|c} 
-\markedPivot{1} &amp; 0 &amp; -1 &amp; 1 \\ 
-0 &amp; \markedPivot{1} &amp; 2 &amp; 4 \\ 
-0 &amp; 1 &amp; 1 &amp; 1  
-\end{array}\right] &amp; \sim &amp;
+     1 &amp; -2 &amp; -3 &amp; -12 \\ 
+     0 &amp; 1 &amp; -1 &amp; 2 \\ 
+     0 &amp; 5 &amp; -4 &amp; 11
+\end{array}\right]
+        </mrow>
+        <mrow>
+\sim
+\left[\begin{array}{ccc|c} 
+     1 &amp; -2 &amp; -3 &amp; -12 \\ 
+     0 &amp; 1 &amp; -1 &amp; 2 \\ 
+     0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] &amp; \sim
 
 \left[\begin{array}{ccc|c} 
-\markedPivot{1} &amp; 0 &amp; -1 &amp; 1 \\ 
-0 &amp; \markedPivot{1} &amp; 2 &amp; 4 \\ 
-0 &amp; 0 &amp; -1 &amp; -3  \end{array}\right] 
+     1 &amp; -2 &amp; 0 &amp; -9 \\ 
+     0 &amp; 1 &amp; -1 &amp; 2 \\ 
+     0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right]
+        </mrow>
+        <mrow>
+\sim
+\left[\begin{array}{ccc|c} 
+     1 &amp; -2 &amp; 0 &amp; -9 \\ 
+     0 &amp; 1 &amp; 0 &amp; 3 \\ 
+     0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] &amp; \sim 
+
+\left[\begin{array}{ccc|c} 
+     1 &amp; 0 &amp; 0 &amp; -3 \\ 
+     0 &amp; 1 &amp; 0 &amp; 3 \\ 
+     0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right]
         </mrow>
      </md>
+    </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
 Assign the following row operations to each step used to manipulate each
 matrix to the next:
+<ol marker="A." cols="2">
+                    <li>
+    <p><m>R_3-5R_2\to R_3</m></p>
+                    </li>
+                    <li>
+    <p><m>R_1+3R_3\to R_1</m></p>
+                    </li>
+                    <li>
+    <p><m>R_1+2R_2\to R_1</m></p>
+                    </li>
+                    <li>
+    <p><m>R_2+2R_1\to R_2</m></p>
+                    </li>
+                    <li>
+    <p><m>\frac{1}{2}R_2\to R_2</m></p>
+                    </li>
+                    <li>
+    <p><m>R_1\leftrightarrow R_2</m></p>
+                    </li>
+                    <li>
+    <p><m>R_2+1R_3\to R_2</m></p>
+                    </li>
+</ol>
 </p>
-<sidebyside>
-    <p><me>R_3-1R_2\to R_3</me></p>
-    <p><me>R_2+1R_1\to R_2</me></p>
-    <p><me>R_1\leftrightarrow R_3</me></p>
-</sidebyside>
-<sidebyside>
-    <p><me>R_3-2R_1\to R_3</me></p>
-    <p><me>R_1-2R_3\to R_1</me></p>
-</sidebyside>
-    </statement>
+        </statement>
+        <answer>
+            <p>
+                <ol>
+                    <li>
+    <p><me>R_1\leftrightarrow R_2</me></p>
+                    </li>
+                    <li>
+    <p><me>R_2+2R_2\to R_2</me></p>
+                    </li>
+                    <li>
+    <p><me>\frac{1}{2}R_2\to R_2</me></p>
+                    </li>
+                    <li>
+    <p><me>R_3-5R_2\to R_3</me></p>
+                    </li>
+                    <li>
+    <p><me>R_1+3R_3\to R_1</me></p>
+                    </li>
+                    <li>
+    <p><me>R_2+1R_3\to R_2</me></p>
+                    </li>
+                    <li>
+    <p><me>R_1+2R_2\to R_1</me></p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the solution set for the following system?
+        <md alignment="alignat" alignat-columns='4'>
+<mrow>  
+             -2x &amp;\,+\,&amp; 6y  &amp;\,+\,&amp; 4z &amp;\,=\,&amp; 28 
+</mrow>
+<mrow>  
+             x &amp;\,-\,&amp; 2y  &amp;\,-\,&amp; 3z &amp;\,=\,&amp; -12 
+</mrow>
+<mrow>  
+              &amp;\,\,&amp; 5y  &amp;\,-\,&amp; 4z &amp;\,=\,&amp; 11   
+</mrow>
+           </md>
+           <ol marker="A.">
+            <li><m>\emptyset</m></li>
+            <li><m>\left\{\left[\begin{array}{c}-3\\3\\1\end{array}\right]\right\}</m></li>
+            <li><m>\left\{ \left[\begin{array}{c} a + 1 \\ -3 \, a - 2  \\ a \end{array}\right] \,\middle|\, a \in\mathbb R \right\}</m></li>
+            <li><m>\left\{ \left[\begin{array}{c} a + 3 \, b - 2 \\ a  \\ b \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}</m></li>
+           </ol>
+            </p>
+        </statement>
+    </task>
 </activity>
 
 <definition>
     <statement>
         <p>
+The <term>leading term</term> of a row is its first nonzero term (if it exists).
 A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>Reduced row echelon form</idx> if
 <ol>
-<li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.<idx>pivot</idx>
+<li> The leading term of each row has value <m>1</m>.
+      (We call these terms <term>pivots</term>.)<idx>pivot</idx>
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is either above or below a pivot is 0.
+<li> Every term in the same column as a pivot is zero (besides the pivot itself).
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -575,12 +697,12 @@ Every matrix has a unique reduced row echelon form. If <m>A</m> is a matrix, we 
 Recall that a matrix is in <term>reduced row echelon form</term> (<term>RREF</term>) if
         </p>
 <ol>
-<li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.
+<li> The leading term of each row has value <m>1</m>.
+      (We call these terms <term>pivots</term>.)
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is either above or below a pivot is 0.
+<li> Each pivot is the only nonzero term in its column.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -590,9 +712,21 @@ For each matrix, mark the leading terms, and label it as RREF or not RREF.
 For the ones not in RREF, determine which rule is violated and how it might be fixed.
     </p>
       <sidebyside widths="33% 33% 33%">
-<p><me> A=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 1 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</me></p>
-<p><me> B=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; 4 &amp; 3 \\ 0 &amp; 1 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 2 \end{array}\right]</me></p>
-<p><me> C=\left[\begin{array}{ccc|c} 0 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 1 &amp; -1  \end{array}\right]</me></p>
+<p><me> A=\left[\begin{array}{ccc|c}
+1 &amp; -4 &amp; 0 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 
+\end{array}\right]</me></p>
+<p><me> B=\left[\begin{array}{ccc|c} 
+1 &amp; 0 &amp; 4 &amp; 3 \\ 
+0 &amp; 1 &amp; 0 &amp; -1 \\ 
+0 &amp; 0 &amp; 1 &amp; 2 
+\end{array}\right]</me></p>
+<p><me> C=\left[\begin{array}{ccc|c} 
+0 &amp; 0 &amp; 0 &amp; 0 \\ 
+1 &amp; 2 &amp; 0 &amp; 3 \\ 
+0 &amp; 0 &amp; 1 &amp; -1  
+\end{array}\right]</me></p>
         </sidebyside>
     </statement>
 </activity>
@@ -603,12 +737,12 @@ For the ones not in RREF, determine which rule is violated and how it might be f
 Recall that a matrix is in <term>reduced row echelon form</term> (<term>RREF</term>) if
         </p>
 <ol>
-<li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.
+<li> The leading term of each row has value <m>1</m>.
+      (We call these terms <term>pivots</term>.)
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
-<li> Each term that is either above or below a pivot is 0.
+<li> Each pivot is the only nonzero term in its column.
 </li>
 <li> All zero rows (rows whose terms are all 0) are at the bottom of the matrix.
 </li>
@@ -748,13 +882,20 @@ that does not already have a marked pivot.
     </li>
     <li>
         <p>
-Mark this pivot, then use row operations to change all values above and below the
+Mark this pivot, then use row operations to change all values below the
 marked pivot to <m>0</m>.
         </p>
     </li>
     <li>
         <p>
-Repeat these steps until the matrix is in RREF. 
+Repeat these steps until the lowest non-zero row has a pivot, and all
+zero rows are at the bottom.
+        </p>
+    </li>
+    <li>
+        <p>
+Finally, moving right to left, use row operations to change all values above
+each pivot to zero, which should result in an RREF matrix.
         </p>
     </li>
 </ol>
@@ -765,25 +906,182 @@ This will keep you from undoing your progress towards an RREF matrix.
     </p>
 </observation>
 
+<activity estimated-time='10' xml:id="LE2-rref-tech">
+    <introduction>
+        <p>
+Since Gauss-Jordan elimination is an algorithm that could be
+performed the same way every time, computers can be programmed to
+do this calculation for us.
+        </p>
+        <p>
+Free browser-based technologies for computing RREF
+are available online. Let's explore how these can be used to show
+<me>
+\left[\begin{array}{ccc}
+1&amp; 4&amp; 6 \\ 
+2&amp; 5&amp; 7
+\end{array}\right]
+\sim
+\left[\begin{array}{ccc}
+1&amp; 0&amp; -2/3 \\ 
+0&amp; 1&amp; 5/3
+\end{array}\right]
+</me>
+        </p>
+    </introduction>
+    <task>
+        <p>
+Go to <url href="https://sagecell.sagemath.org/"/>.
+        </p>
+    </task>
+    <task>
+        <p>
+In the dropdown on the right, you can select a number of different languages.
+Select "Octave" for the open-source Matlab-compatible syntax used by this text.
+        </p>
+    </task>
+    <task>
+        <p>
+Type <c>rref([1,4,6;2,5,7])</c> and then press the <kbd>Evaluate</kbd> button to compute the <m>\RREF</m> of 
+<m>\left[\begin{array}{ccc} 1 &amp; 4 &amp; 6 \\ 2 &amp; 5 &amp; 7 \end{array}\right]</m>.
+        </p>
+    </task>
+    <task>
+        <p>
+Now try using whitespace to write out the matrix and compute <m>\RREF</m> instead:
+        </p>
+        <program>
+            <code>
+A = [1 4 6
+    2 5 7]
+
+rref(A)
+            </code>
+        </program>
+    </task>
+    <task>
+        <p>
+Try using <c>format rat</c> to <c>format</c> the numbers as <c>rat</c>ional
+fractions in the output, rather than decimal approximations.
+        </p>
+        <program>
+            <code>
+format rat
+
+A = [
+1 4 6
+2 5 7
+]
+
+rref(A)
+            </code>
+        </program>
+    </task>
+</activity>
+
+<sage language="octave">
+</sage>
+
+<activity>
+    <introduction>
+        <p>
+Because the algorithm used to find RREF matrices as quickly as possible
+in Octave is different than the one we would use by hand, sometimes
+the output is slightly different than expected.
+        </p>
+    </introduction>
+    <task>
+        <p>
+Use Octave to compute <me>
+\RREF \left[\begin{array}{cccc}
+-6&amp; 8&amp; -9&amp; 22 \\
+4&amp; -3&amp; 5&amp; -5 \\
+-9&amp; 7&amp; -8&amp; 19 \\
+4&amp; -3&amp; 3&amp; -9
+\end{array}\right]
+</me>
+both with and without the <c>format rat</c> command.
+        </p>
+    </task>
+    <task>
+        <p>
+What number do you think the <c>*</c> (with <c>format rat</c>)
+and <c>1.38778e-17</c> (without <c>format rat</c>) outputs you
+found represent?
+            <ol marker="A.">
+                <li><m>1.38</m></li>
+                <li><m>1.38^{-17}</m></li>
+                <li><m>0</m></li>
+                <li><m>\infty</m></li>
+            </ol>
+        </p>
+    </task>
+</activity>
+
 <activity estimated-time='10'>
-    <statement>
+    <task>
         <p>
 Complete the following RREF calculation (multiple row operations may be needed
 for certain steps):
-<me>
-    A=
-    \left[\begin{array}{cccc}2 &amp; 3 &amp; 2 &amp; 3 \\ -2 &amp; 1 &amp; 6 &amp; 1 \\ -1 &amp; -3 &amp; -4 &amp; 1 \end{array}\right]
-    \sim \left[\begin{array}{cccc}\markedPivot{1} &amp; \unknown &amp; \unknown &amp; \unknown \\ -2 &amp; 1 &amp; 6 &amp; 1 \\ -1 &amp; -3 &amp; -4 &amp; 1 \end{array}\right]
-    \sim \left[\begin{array}{cccc}\markedPivot{1} &amp; \unknown &amp; \unknown &amp; \unknown \\ 0 &amp; \unknown &amp; \unknown &amp; \unknown \\ 0 &amp; \unknown &amp; \unknown &amp; \unknown \end{array}\right]
-</me>
-<me>
-    \sim \left[\begin{array}{cccc}\markedPivot{1} &amp; \unknown &amp; \unknown &amp; \unknown \\ 0 &amp; \markedPivot{1} &amp; \unknown &amp; \unknown \\ 0 &amp; \unknown &amp; \unknown &amp; \unknown \end{array}\right]
-    \sim \left[\begin{array}{cccc}\markedPivot{1} &amp; 0 &amp; \unknown &amp; \unknown \\ 0 &amp; \markedPivot{1} &amp; \unknown &amp; \unknown \\ 0 &amp; 0 &amp; \unknown &amp; \unknown \end{array}\right]
-    \sim \cdots
-    \sim \left[\begin{array}{cccc}\markedPivot{1} &amp; 0 &amp; -2 &amp; 0 \\ 0 &amp; \markedPivot{1} &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right]
-</me>
+<md>
+    <mrow> 
+\left[\begin{array}{cccc}
+2 &amp; 3 &amp; 2 &amp; 3 \\ 
+-2 &amp; 1 &amp; 6 &amp; 1 \\ 
+-1 &amp; -3 &amp; -4 &amp; 1 
+\end{array}\right] 
+    &amp;\sim
+\left[\begin{array}{cccc}
+\unknown &amp; \unknown &amp; \unknown &amp; \unknown \\
+-2 &amp; 1 &amp; 6 &amp; 1 \\ 
+2 &amp; 3 &amp; 2 &amp; 3 \\ 
+\end{array}\right] 
+    </mrow>
+    <mrow>\sim
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; \unknown &amp; \unknown &amp; \unknown \\
+-2 &amp; 1 &amp; 6 &amp; 1 \\ 
+2 &amp; 3 &amp; 2 &amp; 3 \\ 
+\end{array}\right] 
+    &amp;\sim
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; \unknown &amp; \unknown &amp; \unknown \\
+0 &amp; \unknown&amp; \unknown&amp; \unknown \\ 
+0 &amp; \unknown&amp; \unknown&amp; \unknown \\ 
+\end{array}\right] 
+    </mrow>
+    <mrow>\sim
+\hspace{3em}\cdots\hspace{3em}
+        &amp;\sim
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; 3 &amp; 4 &amp; -1 \\
+0 &amp; \markedPivot{1} &amp; 2 &amp; -1 \\ 
+0 &amp; 0 &amp; 0 &amp; \markedPivot{1} \\ 
+\end{array}\right]
+    </mrow>
+    <mrow>\sim
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; 3 &amp; 4 &amp; \unknown \\
+0 &amp; \markedPivot{1} &amp; 2 &amp; \unknown \\ 
+0 &amp; 0 &amp; 0 &amp; \markedPivot{1} \\ 
+\end{array}\right] 
+        &amp;\sim
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; \unknown &amp; \unknown &amp; \unknown \\
+0 &amp; \markedPivot{1} &amp; 2 &amp; \unknown \\ 
+0 &amp; 0 &amp; 0 &amp; \markedPivot{1} \\ 
+\end{array}\right]
+    </mrow>
+</md>
 </p>
-    </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Check your work using technology.
+            </p>
+        </statement>
+    </task>
 </activity>
 
 <activity estimated-time='10'>
@@ -793,7 +1091,8 @@ Consider the matrix
 <me>A=\left[\begin{array}{cccc} 2 &amp; 4 &amp; 2 &amp; -4 \\ -2 &amp; -4 &amp; 1 &amp; 1 \\ 3 &amp; 6 &amp; -1 &amp; -4 \end{array}\right].</me>
         </p>
         <p>
-Compute <m>\RREF(A)</m>.
+Compute <m>\RREF(A)</m> using technology, then show how to compute
+this by hand.
         </p>
     </statement>
 </activity>
@@ -815,60 +1114,6 @@ Can <m>\RREF(A)</m> be used to find <m>\RREF(B)</m>?
         </p>
     </statement>
 </activity>
-
-<activity estimated-time='10' xml:id="LE2-rref-tech">
-    <introduction>
-        <p>
-Free browser-based technologies for mathematical computation
-are available online.
-        </p>
-    </introduction>
-    <task>
-        <p>
-Go to <url href="https://sagecell.sagemath.org/"/>.
-        </p>
-    </task>
-    <task>
-        <p>
-In the dropdown on the right, you can select a number of different languages.
-Select "Octave" for the Matlab-compatible syntax used by this text.
-        </p>
-    </task>
-    <task>
-        <p>
-Type <c>rref([1,4,6;2,5,7])</c> and then press the <kbd>Evaluate</kbd> button to compute the <m>\RREF</m> of 
-<m>\left[\begin{array}{ccc} 1 &amp; 4 &amp; 6 \\ 2 &amp; 5 &amp; 7 \end{array}\right]</m>.
-        </p>
-    </task>
-    <task>
-        <p>
-Now try using whitespace to write out the matrix and compute <m>\RREF</m> instead:
-        </p>
-        <program>
-            <code>
-A = [1 3 2
-    2 5 7]
-
-rref(A)
-            </code>
-        </program>
-    </task>
-</activity>
-
-<sage language="octave">
-</sage>
-<sage language="octave">
-    <input>
-format rat
-
-A = [
-    1 4 6
-    2 5 7
-]
-
-rref(A)
-    </input>
-</sage>
 
     </subsection>
 
