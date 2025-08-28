@@ -882,13 +882,20 @@ that does not already have a marked pivot.
     </li>
     <li>
         <p>
-Mark this pivot, then use row operations to change all values above and below the
+Mark this pivot, then use row operations to change all values below the
 marked pivot to <m>0</m>.
         </p>
     </li>
     <li>
         <p>
-Repeat these steps until the matrix is in RREF. 
+Repeat these steps until the lowest non-zero row has a pivot, and all
+zero rows are at the bottom.
+        </p>
+    </li>
+    <li>
+        <p>
+Finally, use row operations to change all values above each pivot to zero,
+which should result in an RREF matrix.
         </p>
     </li>
 </ol>
