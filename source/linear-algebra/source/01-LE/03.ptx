@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="LE3" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Counting Solutions for Linear Systems (LE3)</title>
+    <title>My new awesome title</title>
     <objectives>
         <ul>
             <li>
@@ -119,6 +119,21 @@ A = [ 3 -2 13  6
 
 rref(A)
 </input>
+<output>
+  A =
+
+ 3 -2 13 6
+ 2 -2 10 2
+ -1 3 -6 11
+ 4 1 1 1
+
+ans =
+
+ 1 0 0 -2
+ 0 1 0 7
+ 0 0 1 2
+ 0 0 0 0
+</output>
 </sage>
 
 
