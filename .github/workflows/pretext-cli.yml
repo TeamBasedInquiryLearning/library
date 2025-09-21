@@ -53,15 +53,15 @@ jobs:
 
             - name: build and stage precalculus bank
               run: |
-                python scripts/build_bank.py precalculus --full
+                python scripts/build_bank.py precalculus --full --stage
 
             - name: build and stage calculus bank
               run: |
-                python scripts/build_bank.py calculus --full
+                python scripts/build_bank.py calculus --full --stage
 
             - name: build and stage linear-algebra bank
               run: |
-                python scripts/build_bank.py linear-algebra --full
+                python scripts/build_bank.py linear-algebra --full --stage
 
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4

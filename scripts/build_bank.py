@@ -34,5 +34,10 @@ if __name__ == "__main__":
     parser.add_argument('book', choices=['precalculus', 'calculus', 'linear-algebra'])
     parser.add_argument('-f', '--full',
                         action='store_true')
+    parser.add_argument('-s', '--stage',
+                        action='store_true')
     args = parser.parse_args()
-    main(book=args.book, full=args.full)
+    stage_directory = None
+    if args.stage:
+        stage_directory = "preview"
+    main(book=args.book, full=args.full, stage_directory=stage_directory)
