@@ -30,21 +30,18 @@
 
   <graph xmin="-8" ymin="-8" xmax="8" ymax="8" displayXAxis="$standardBasis" displayYAxis="$standardBasis">
     <line draggable="false" through="(0,0) $b1" styleNumber="2" hide="$standardBasis"/>
-    <line draggable="false" through="$b2 $b2+$b1" styleNumber="6" hide="$standardBasis"/>
-    <line draggable="false" through="2*$b2 2*$b2+$b1" styleNumber="6" hide="$standardBasis"/>
-    <line draggable="false" through="-$b2 -$b2+$b1" styleNumber="6" hide="$standardBasis"/>
-    <line draggable="false" through="-2*$b2 -2*$b2+$b1" styleNumber="6" hide="$standardBasis"/>
     <line draggable="false" through="(0,0) $b2" styleNumber="3" hide="$standardBasis"/>
-    <line draggable="false" through="$b1 $b1+$b2" styleNumber="6" hide="$standardBasis"/>
-    <line draggable="false" through="2*$b1 2*$b1+$b2" styleNumber="6" hide="$standardBasis"/>
-    <line draggable="false" through="-$b1 -$b1+$b2" styleNumber="6" hide="$standardBasis"/>
-    <line draggable="false" through="-2*$b1 -2*$b1+$b2" styleNumber="6" hide="$standardBasis"/>
     <lineSegment endpoints="(0,0) $v" styleNumber="1"/>
-    <point hide="not $standardBasis" coords="$v" styleNumber="1">
-      <label><m>\vec v = $v.x\vec e_1+$v.y\vec e_2</m></label>
+    <point coords="$v" styleNumber="1">
+      <label><m>\vec v</m></label>
     </point>
-    <point hide="$standardBasis" coords="$v" styleNumber="1">
-      <label><m>\vec v = $x\vec b_1+$y\vec b_2</m></label>
+    <point hide="$standardBasis" coords="$x*$b1" styleNumber="1">
+      <label><m>$x\vec b_1</m></label>
+    </point>
+    <lineSegment hide="$standardBasis" endpoints="$x*$b1 $v" styleNumber="6"/>
+    <lineSegment hide="$standardBasis" endpoints="$y*$b2 $v" styleNumber="6"/>
+    <point hide="$standardBasis" coords="$y*$b2" styleNumber="1">
+      <label><m>$y\vec b_2</m></label>
     </point>
     <lineSegment endpoints="(0,0) $b1" styleNumber="2"/>
     <point coords="$b1" styleNumber="2">
@@ -55,3 +52,4 @@
       <label><m>\vec b_2</m></label>
     </point>
   </graph>
+  
