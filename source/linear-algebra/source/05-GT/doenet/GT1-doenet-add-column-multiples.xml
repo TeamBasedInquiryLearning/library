@@ -23,7 +23,7 @@
       <constraints>
         <constrainTo>
           <line slope="$v.y/$v.x" through="$w"/>
-        </constrainTo/>
+        </constrainTo>
       </constraints>
     </point>
     <polygon vertices="(0,0) $v $v+$w $w" filled draggable="false" styleNumber="4"/>

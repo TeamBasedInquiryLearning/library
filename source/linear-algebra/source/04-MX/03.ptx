@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="MX3" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Solving Systems with Matrix Inverses (MX3)</title>
+    <title>Change of Basis (MX3)</title>
     <objectives>
         <ul>
             <li>
@@ -13,322 +13,225 @@
     <title>Warm Up</title>
     <activity>
         <introduction>
-            <task><p>
-                Which of the following matrices is invertible? Find the inverse for the one that is invertible.
-                <ol marker="A.">
-                    <li>
-                        <p>
-                            <m>\left[\begin{matrix}1 &amp; -1 &amp; 0\\
-                                -1 &amp; 1 &amp; 0\\
-                                1 &amp; 0 &amp; 1\end{matrix}\right]</m>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <m>\left[\begin{matrix}1 &amp; -1 &amp; 3\\
-                                -1 &amp; 1 &amp; -1\\
-                                1 &amp; 0 &amp; -2\end{matrix}\right]</m>
-                        </p>
-                    </li>
-                </ol>
+            <p>
+                Let <m>T\colon\IR^4\to\IR^4</m> be the linear bijection given by the standard matrix:
+<me>A=\left[\begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; -1 &amp; -4 \\ 1 &amp; 1 &amp; 0 &amp; -4 \\ 1 &amp; -1 &amp; -1 &amp; 2 \end{array}\right].</me> 
             </p>
-            </task>
-  
+        </introduction>
         <task>
-    <p>
-  Check your work using technology. Read the examples carefully, and
-   run them in the Octave cell below.
-    </p>
-    <p>
-        Recall the syntax for entering and multiplying matrices.
-    </p>
-    <cd>
-A = [1 -1 0 ; -1 1 0 ; 1 0 1]
-B = [1 -1 3 ; -1 1 -1  ; 1 0 2]
-A*B
-    </cd>
-
-<p>
-    To invert a matrix <m>A</m>, the syntax is
-<cd>
-inv(A)
-</cd>
-When you run this code, does it match your work from part (a)?
-</p>
-</task>
-</introduction>
-</activity>
-<sage language="octave">
-<input>
-A = [1 -1 0 ; -1 1 0 ; 1 0 1]
-B = [1 -1 3 ; -1 1 -1  ; 1 0 2]
-A*B
-inv(A)
-inv(B)
-</input>
-</sage>
-      
+            <statement>
+                <p>
+                    If <m>\vec{b}=\begin{bmatrix}1\\0\\-1\\2\end{bmatrix}</m>, what is the meaning of the vector <m>T^{-1}(\vec{b})</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to find the third column of <m>A^{-1}</m>.
+                </p>
+            </statement>
+        </task>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
+    </activity>
 </subsection>
 
 <subsection><title>Class Activities</title>
-    <activity estimated-time='15'>
-        <introduction>
+<remark>
+    <p>
+        So far, when working with the Euclidean vector space <m>\IR^n</m>, we have primarily worked with the standard basis <m>\mathcal{E}=\setList{\vec{e}_1,\dots, \vec{e}_n}</m>.
+        We can explore alternative perspectives more easily if we expand our toolkit to analyze different bases.    
+    </p>
+</remark>
+<activity>
+    <introduction>
+        <p>
+            Let <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</m>.
+        </p>
+    </introduction>        
+    <task>
             <p>
-Consider the following linear system with a unique solution:
-<me>
-\begin{matrix}
-3x_{1} &amp; - &amp; 2x_{2} &amp; - &amp; 2x_{3} &amp; - &amp; 4x_{4} &amp; = &amp; -7 \\
-2x_{1} &amp; - &amp; x_{2}  &amp; - &amp;  x_{3} &amp; - &amp; x_{4} &amp; = &amp; -1 \\
--x_{1} &amp;   &amp;        &amp; + &amp;  x_{3} &amp;   &amp;        &amp; = &amp; -1 \\
-       &amp; - &amp; x_{2}  &amp;   &amp;        &amp; - &amp; 2x_{4} &amp; = &amp; -5 \\
-\end{matrix}
-</me>
+                Is <m>\cal{B}</m> a basis of <m>\IR^3</m>?
             </p>
-        </introduction>
-        <task>
             <p>
-Suppose we let
-<me>
-T\left(\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]\right)=
-\left[\begin{matrix}
-3x_{1} &amp; - &amp; 2x_{2} &amp; - &amp; 2x_{3} &amp; - &amp; 4x_{4} \\
-2x_{1} &amp; - &amp; x_{2}  &amp; - &amp;  x_{3} &amp; - &amp; x_{4} \\
--x_{1} &amp;   &amp;        &amp; + &amp;  x_{3} &amp;   &amp;        \\
-       &amp; - &amp; x_{2}  &amp;   &amp;        &amp; - &amp; 2x_{4} \\
-\end{matrix}\right]
-</me>.
-Which of these choices would help us solve the given system?
                 <ol marker="A.">
                     <li>
-Compute
-<m>T\left(
-\left[\begin{matrix}
--7 \\
- -1 \\
- -1 \\
- -5 \\
-\end{matrix}\right]\right)</m>
+                        <p>
+                            Yes.
+                        </p>
                     </li>
                     <li>
-Find <m>\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]</m> where
-<m>T\left(\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]\right)=
-\left[\begin{matrix}
--7 \\
- -1 \\
- -1 \\
- -5 \\
-\end{matrix}\right]</m>
+                        <p>
+                            No.
+                        </p>
                     </li>
                 </ol>
             </p>
-        </task>
-        <task>
+    </task>
+    <task>
             <p>
-How can we express this in terms of matrix multiplication?
+                Since <m>\cal{B}</m> is a basis, we know that if <m>\vec{v}\in \IR^3</m>, the following vector equation will have a unique solution:
+                <me>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{v}</me>
+                Given this, we define a map <m>C_{\mathcal{B}}\colon\IR^3\to\IR^3</m> via the rule that <m>C_{\mathcal{B}}(\vec{v})</m> is equal to the unique solution to the above vector equation. 
+                The map <m>C_{\mathcal{B}}</m> is a linear map. 
             </p>
-            <ol marker="A.">
-                <li>
-<m>
-\left[\begin{matrix}
-3 &amp; -2 &amp; -2 &amp; - 4 \\
-2 &amp; -1 &amp; -1 &amp; -1  \\
--1 &amp; 0 &amp; 1 &amp; 0  \\
-0 &amp; -1 &amp; 0  &amp; -2 \\
-\end{matrix}\right]
-\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
-=
-\left[\begin{matrix}
--7 \\
- -1 \\
- -1 \\
- -5 \\
-\end{matrix}\right]
-</m>
-                </li>
-                <li>
-                <m>
-\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
-=
-\left[\begin{matrix}
-3 &amp; -2 &amp; -2 &amp; - 4 \\
-2 &amp; -1 &amp; -1 &amp; -1  \\
--1 &amp; 0 &amp; 1 &amp; 0  \\
-0 &amp; -1 &amp; 0  &amp; -2 \\
-\end{matrix}\right]
-\left[\begin{matrix}
--7 \\
-    -1 \\
-    -1 \\
-    -5 \\
-\end{matrix}\right]
-                </m>
-            </li>
-                <li>
-<m>
-\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
-\left[\begin{matrix}
-3 &amp; -2 &amp; -2 &amp; - 4 \\
-2 &amp; -1 &amp; -1 &amp; -1  \\
--1 &amp; 0 &amp; 1 &amp; 0  \\
-0 &amp; -1 &amp; 0  &amp; -2 \\
-\end{matrix}\right]
-=
-\left[\begin{matrix}
--7 \\
- -1 \\
- -1 \\
- -5 \\
-\end{matrix}\right]
-</m>
-                </li>
-                <li>
-                <m>
-\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
-=
-\left[\begin{matrix}
--7 \\
-    -1 \\
-    -1 \\
-    -5 \\
-\end{matrix}\right]
-\left[\begin{matrix}
-3 &amp; -2 &amp; -2 &amp; - 4 \\
-2 &amp; -1 &amp; -1 &amp; -1  \\
--1 &amp; 0 &amp; 1 &amp; 0  \\
-0 &amp; -1 &amp; 0  &amp; -2 \\
-\end{matrix}\right]
-                </m>
-                                </li>
-            </ol>
-        </task>
-        <task>
             <p>
-How could a matrix equation of the form <m>A\vec x=\vec b</m>
-be solved for <m>\vec x</m>?
-                <ol marker="A.">
-                    <li>Multiply: <m>(\RREF A)(A\vec x)=(\RREF A)\vec b</m></li>
-                    <li>Add: <m>(\RREF A) + A\vec x=(\RREF A)+\vec b</m></li>
-                    <li>Multiply: <m>(A^{-1})(A\vec x)=(A^{-1})\vec b</m></li>
-                    <li>Add: <m>(A^{-1}) + A\vec x=(A^{-1})+\vec b</m></li>
-                </ol>
+                Compute <m>C_{\mathcal{B}}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right)</m>, the unique solution to 
+                <me>
+                    x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\begin{bmatrix}1\\1\\1\end{bmatrix}.
+                </me>
+                
             </p>
-        </task>
-        <task>
+    </task>
+    <task>
             <p>
-Find <m>
-    \left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
-</m> using the method you chose in (c).
+                Compute <m>C_\mathcal{B}(\vec{e}_1),C_\mathcal{B}(\vec{e}_2), C_\mathcal{B}(\vec{e}_3)</m> and, in doing so, write down the standard matrix <m>M_\mathcal{B}</m> of <m>C_\mathcal{B}</m>.
             </p>
-        </task>
-    </activity>
+            <sage language="octave">
+                <input>
+                    
+                </input>
+                <output>
+                    
+                </output>
+            </sage>    
+    </task>
+    
+</activity>
 
-    <remark>
+<definition xml:id="def-change-of-basis">
+    <statement>
         <p>
-The linear system described by the augmented matrix
-<m>[A \mid \vec b]</m> has exactly the same solution set as
-the matrix equation <m>A\vec x=\vec b</m>.
+            Given a basis <m>\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}</m> of <m>\IR^n</m>, the <term>change of basis/coordinate</term> transformation <em>from</em> the standard basis <em>to</em> <m>\mathcal{B}</m> is the transformation <m>C_\mathcal{B}\colon\IR^n\to\IR^n</m> defined by the property that, for any vector <m>\vec{v}\in\IR^n</m>, the vector <m>C_\mathcal{B}(\vec{v})</m> is the unique solution to the vector equation:
+            <me>x_1\vec{v}_1+\dots+x_n\vec{v}_n=\vec{v}.</me>
+            Its standard matrix is called the change-of-basis matrix from the standard basis to <m>\mathcal{B}</m> and is denoted by <m>M_{\mathcal{B}}</m>.
+            It satisfies the following:
+            <me>M_{\mathcal{B}}=[\vec{v}_1\ \cdots\ \vec{v}_n]^{-1}.</me>
         </p>
+    </statement>
+</definition>
+
+<remark>
+    <p>
+        The vector <m>C_\mathcal{B}(\vec{v})</m> is the <m>\mathcal{B}</m>-coordinates of <m>\vec{v}</m>.
+        If you work with standard coordinates, and I work with <m>\mathcal{B}</m>-coordinates, then to build the vector that you call <m>\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n</m>, I would first compute <m>C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m> and then build <m>\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n</m>.
+    </p>
+    <p>
+        In particular, notation as above, we would have:
+        <me>a_1\vec{e}_1+\cdots a_n\vec{e}_n=\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n.</me>
+    </p>
+</remark>
+
+
+<activity>
+    <introduction>
         <p>
-When <m>A</m> is invertible, then we have both
-<m>[A \mid \vec b]\sim[I \mid \vec x]</m> and
-<m>\vec x=A^{-1}\vec b</m>, which can be seen as
-<md>
-    <mrow>&amp;&amp; A\vec x&amp;=\vec b</mrow>
-    <mrow>&amp;\Rightarrow &amp; A^{-1}A\vec x&amp;=A^{-1}\vec b</mrow>
-    <mrow>&amp;\Rightarrow &amp;\vec x&amp;=A^{-1}\vec b</mrow> 
-</md>
-
+            Let <m>\vec{v}_1=\begin{bmatrix}1\\-2\\1\end{bmatrix},\ \vec{v}_2=\begin{bmatrix}-1\\0\\3\end{bmatrix},\ \vec{v}_3=\begin{bmatrix}0\\1\\-1\end{bmatrix}</m>, and <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m>
         </p>
-    </remark>
+    </introduction>
+    <task>
+        <p>
+            Calculate <m>M_{\mathcal{B}}</m> using technology. 
+        </p>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
+    </task>
+    <task>
+        <p>
+            Use your result to calculate <m>C_\mathcal{B}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right)</m> and express the vector <m>\begin{bmatrix}1\\1\\1\end{bmatrix}</m> as a linear combination of <m>\vec{v}_1,\vec{v}_2,\vec{v}_3</m>.
+        </p>
+    </task>
+</activity>
+<observation>
+    <p>
+        Let <m>T\colon\IR^n\to\IR^n</m> be a linear transformation and let <m>A</m> denote its standard matrix. 
+        If <m>\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}</m> is some other basis, then we have:
+        <md>
+            <mrow>M_\mathcal{B}AM_{\mathcal{B}}^{-1} \amp= M_\mathcal{B}A[\vec{v_1}\cdots\vec{v}_n] </mrow>
+            <mrow> \amp= M_\mathcal{B}[T(\vec{v}_1)\cdots T(\vec{v}_n)]</mrow>
+            <mrow> \amp= [C_\mathcal{B}(T(\vec{v}_1))\cdots C_\mathcal{B}(T(\vec{v}_n))]</mrow>
+        </md>
+        In other words, the matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is the matrix whose columns consist of <em><m>\mathcal{B}</m>-coordinate</em> vectors of the image vectors <m>T(\vec{v}_i)</m>.
+        The matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is called the <alert>matrix of <m>T</m> with respect to <m>\mathcal{B}</m>-coordinates</alert>.
+    </p>
+</observation>
 
-    <activity>
-        <introduction>
-          <p> Consider the vector equation <me>x_{1} \left[\begin{array}{c} 1 \\ 2 \\ -2 \end{array}\right] + x_{2} \left[\begin{array}{c} -2 \\ -3 \\ 3 \end{array}\right] + x_{3} \left[\begin{array}{c} 1 \\ 4 \\ -3 \end{array}\right] = \left[\begin{array}{c} -3 \\ 5 \\ -1 \end{array}\right]</me>  with a unique solution. </p>
-        </introduction>
-          <task>
-            <statement>
-              <p> Explain and demonstrate how this problem can be restated using matrix multiplication. </p>
-            </statement>
-          </task>
-          <task>
-            <statement>
-              <p> Use the properties of matrix multiplication to find the unique solution. </p>
-            </statement>
-          </task>
-    </activity>
+<activity>
+    <introduction>
+        <p>
+            Let <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\0\\3\end{bmatrix},\begin{bmatrix}0\\1\\-1\end{bmatrix}}</m> be basis from the previous Activity. 
+            Let <m>T</m> denote the linear transformation whose standard matrix is given by:
+            <me>A=\begin{bmatrix}9&amp;4&amp;4\\6&amp;9&amp;2\\-18&amp;-16&amp;-9\end{bmatrix}.</me>
+        </p>
+    </introduction>
+    <task>
+        <p>
+            Calculate the matrix <m>M_\mathcal{B}AM_{\mathcal{B}}^{-1}</m>.
+        </p>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
+    </task>
+    <task>
+        <p>
+            The matrix <m>A</m> describes how <m>T</m> transforms the standard basis of <m>\IR^3</m>.
+            The matrix <m>M_\mathcal{B}AM_{\mathcal{B}}^{-1}</m> describes how <m>T</m> transforms the basis <m>\mathcal{B}</m> (in <m>\mathcal{B}</m>-coordinates).
+        </p>
+        <p>         
+            Which of these two descriptions of <m>T</m> is most helpful to you in describing/understanding/visualizing the transformation <m>T</m> and why?
+        </p>
+    </task>
+</activity>
+
+<definition xml:id="def-similar-matrices">
+    <statement>
+        <p>
+            Suppose that <m>A</m> and <m>B</m> are two <m>n\times n</m> matrix. 
+            We say that <m>A</m> is <term>similar</term>  to <m>B</m> if there exists an invertible matrix <m>P</m> that satisfies:
+            <me>
+                PAP^{-1}=B.
+            </me>
+            The results of this section demonstrate that similar matrices can be viewed as describing the same linear transformation with respect to different bases. 
+            Specifically, if <m>A</m> describes a transformation with respect to the standard basis of <m>\IR^n</m>, then the matrix <m>B</m> describes the same linear transformation with respect to the basis consisting of the columns of <m>P^{-1}</m>.
+        </p>
+    </statement>
+</definition>
+
 </subsection>
+
 <subsection>
     <title>Individual Practice</title>
     <activity>
         <introduction>
             <p>
-                Solving linear systems using matrix multiplication is most useful when we are working with one common coefficient matrix, and varying the right-hand side. 
-                That is, when we have <m>A\vec{x}=\vec{b}</m> for several different values of <m>\vec{b}</m>. 
+                Suppose that <m>T\colon\IR^3\to\IR^3</m> is a linear transformation and you knew that <m>\mathcal{B}=\{\vec{v}_1,\vec{v}_2,\vec{v}_3\}</m> was a basis of <m>\IR^3</m> that satisfied:
+                <me>
+                    T(\vec{v}_1)=3\vec{v}_1,\ T(\vec{v}_2)=-5\vec{v}_2,\ T(\vec{v}_3)=7\vec{v}_3.
+                </me>
             </p>
             <p>
-                In the following, let <m>A=\left[\begin{matrix}2 &amp; -1 &amp; -6\\ 2 &amp; 1 &amp; 3\\ 1 &amp; 1 &amp; 4\end{matrix}\right]</m> and consider the following questions about various equations of the form <m>A\vec{x}=\vec{b}</m>?
+                If <m>A</m> is the standard matrix of <m>T</m>, do you have enough information to determine the matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m>?
+                If yes, write it down; if not, describe what additional information is needed. 
             </p>
         </introduction>
-        <task>
-            <statement>
-                <p>
-                    Suppose that <m>\vec{b}=\left[\begin{matrix} 1\\1\\1\end{matrix}\right]</m>. 
-                    If asked to solve the equation <m>A\vec{x}=\vec{b}</m>, which of the following approaches do you prefer?
-                    <ol marker="A.">
-                        <li>
-                            <p>
-                                Calculate <m>\RREF[A|\vec{b}]</m>.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Calculate <m>A^{-1}</m> and then compute <m>\vec{x}=A^{-1}\vec{b}</m>
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Suppose that <m>\vec{b}_1,\vec{b}_2,\vec{b}_3=\left[\begin{matrix} 1\\1\\1\end{matrix}\right],\left[\begin{matrix} 2\\1\\3\end{matrix}\right],\left[\begin{matrix} -1\\3\\5\end{matrix}\right]</m>. 
-                    If asked to solve each of the equations <m>A\vec{x}=\vec{b}_1, A\vec{x}=\vec{b}_2, A\vec{x}=\vec{b}_3</m>, which of the following approaches do you prefer?
-                    <ol marker="A.">
-                        <li>
-                            <p>
-                                Calculate <m>\RREF[A|\vec{b}_1]</m>, <m>\RREF[A|\vec{b}_2]</m>, and <m>\RREF[A|\vec{b}_3]</m>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Calculate <m>A^{-1}</m> and then compute <m>\vec{x}=A^{-1}\vec{b}_1</m>, <m>\vec{x}=A^{-1}\vec{b}_2</m>, and <m>\vec{x}=A^{-1}\vec{b}_3</m>
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Suppose that <m>\vec{b}_1,\dots, \vec{b}_{10}</m> are 10 distinct vectors. 
-                    If asked to solve each of the equations <m>A\vec{x}=\vec{b}_1, \dots,  A\vec{x}=\vec{b}_{10}</m>, which of the following approaches do you prefer?
-                    <ol marker="A.">
-                        <li>
-                            <p>
-                                Calculate <m>\RREF[A|\vec{b}_1]</m>, ... <m>\RREF[A|\vec{b}_{10}]</m>.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Calculate <m>A^{-1}</m> and then compute <m>\vec{x}=A^{-1}\vec{b}_1</m>, ... <m>\vec{x}=A^{-1}\vec{b}_{10}</m>.
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </statement>
-        </task>
     </activity>
 </subsection>
     <subsection>
@@ -346,38 +249,28 @@ Video coming soon to
 
     </subsection>
 
-    <exercises>
-        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/MX3/"/>.</p>
-    </exercises>
+
+     <subsection>
+        <title>Exercises</title>
+        <p component="preview">
+            Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/MX3/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/linear-algebra/exercises/#/bank/MX3/"/>
+        </p>
+    </subsection>
     
      <subsection>    
         <title>Mathematical Writing Explorations</title>
-         <exploration>
-            <statement>
-                Use row reduction to find the inverse of the following general matrix. Give conditions on which this inverse exists.
-                <me>\left[\begin{array}{ccc}1 &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{array}\right]</me>
-             </statement>
-         </exploration>
-
-<exploration>
-            <statement>Assume that <m>H</m> is invertible, and that <m>HG</m> is the zero matrix. Prove that <m>G</m> must be the zero matrix. Would this still be true if <m>H</m> were not invertible?
-                </statement>
-         </exploration>
-
-<exploration>
-            <statement>If <m>H</m> is invertible and <m>r \in \mathbb{R}</m>, what is the inverse of <m>rH</m>?
-                </statement>
-         </exploration>
-
-<exploration>
-            <statement>If <m>H</m> and <m>G</m> are invertible, is <m>H^{-1} + G^{-1} = (H+G)^{-1}</m>?
-                </statement>
-         </exploration>
-
-<exploration>
-            <statement>Prove that if <m>A</m>, <m>P</m>, and <m>Q</m> are invertible with <m>PAQ = I</m>, then <m>A^{-1} = QP</m>.
-             </statement>
-         </exploration>
+         <activity>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is similar to <m>B</m>. 
+                    Prove that <m>B</m> is also similar to <m>A</m>. 
+                    Thus, we may simply that <m>A</m> and <m>B</m> are similar matrices. 
+                </p>
+            </introduction>
+         </activity>
     </subsection>
 
 

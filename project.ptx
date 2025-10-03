@@ -2,12 +2,34 @@
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2">
   <targets>
+
+    <!-- Preview targets -->
     <target
-      name="authoring-preview"
+      name="precalculus-preview"
       format="html"
-      publication="preview.ptx" >
+      publication="preview.ptx"
+      source="precalculus/source/main.ptx"
+      deploy-dir="preview/precalculus" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+    <target
+      name="calculus-preview"
+      format="html"
+      publication="preview.ptx"
+      source="calculus/source/main.ptx"
+      deploy-dir="preview/calculus" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    <target
+      name="linear-algebra-preview"
+      format="html"
+      publication="preview.ptx"
+      source="linear-algebra/source/main.ptx"
+      deploy-dir="preview/linear-algebra" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
+    
+    <!-- Precalculus targets -->
     <target
       name="precalculus-web"
       format="html"
@@ -25,8 +47,7 @@
       name="precalculus-web-instructor"
       format="html"
       source="precalculus/source/main.ptx"
-      publication="instructor.ptx"
-      deploy-dir="preview/precalculus" >
+      publication="instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -45,6 +66,8 @@
       output-filename="TBIL-Precalculus-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+
+    <!-- Calculus targets -->
     <target
       name="calculus-web"
       format="html"
@@ -62,8 +85,7 @@
       name="calculus-web-instructor"
       format="html"
       source="calculus/source/main.ptx"
-      publication="instructor.ptx"
-      deploy-dir="preview/calculus" >
+      publication="instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -82,6 +104,8 @@
       output-filename="TBIL-Calculus-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+
+    <!-- Linear algebra targets -->
     <target
       name="linear-algebra-web"
       format="html"
@@ -99,8 +123,7 @@
       name="linear-algebra-web-instructor"
       format="html"
       source="linear-algebra/source/main.ptx"
-      publication="instructor.ptx"
-      deploy-dir="preview/linear-algebra" >
+      publication="instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
@@ -119,5 +142,6 @@
       output-filename="TBIL-Linear-Algebra-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+
   </targets>
 </project>

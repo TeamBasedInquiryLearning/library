@@ -278,6 +278,11 @@
               </li>
             </ol> 
           </statement>
+          <answer>
+            <p>
+              A
+            </p>
+          </answer>
         </task>
         <task>
           <statement>
@@ -287,20 +292,22 @@
                 <m>V(x) = x^3</m>
               </li>
               <li>
-                <m>V(x) = x^2 \cdot (8 - x)</m>
+                <m>V(x) = x^2 (8 - x)</m>
               </li>
               <li>
-                <m>V(x) = x^2 \cdot (8 - 2x)</m>
+                <m>V(x) = x^2 (8 - 2x)</m>
               </li>
               <li>
                 <m>V(x) = x(8 - x)^2</m>
               </li>
             </ol>
           </statement>
+          <answer>
+            <p>
+              C. <m>V(x) = x^2 (8 - 2x)</m>
+            </p>
+          </answer>
         </task>
-        <!-- <task>
-         <p>Express the volume of the box <m>V</m> as a function of the length of the cuts <m>x</m>.</p>
-        </task> -->
         <task>
           <statement>
             <p>For this problem, what is the best choice of domain for the function <m>V(x)</m>?</p>
@@ -319,6 +326,11 @@
               </li>
             </ol>
           </statement>
+          <answer>
+            <p>
+              A: <m>0 \le x \le 4</m>
+            </p>
+          </answer>
         </task>
         <task>
          <statement>
@@ -339,6 +351,11 @@
             </li>
           </ol>
          </statement>
+         <answer>
+          <p>
+            <m>D: \left(8-2x\right)^2+2x\left(8-2x\right)\left(-2\right)=0</m>
+          </p>
+         </answer>
         </task>
         <task>
           <statement>
@@ -346,6 +363,11 @@
               What is the cut value that yields the box of maximum volume?
             </p>
           </statement>
+          <answer>
+            <p>
+              <m>x=\dfrac{4}{3}</m> inches
+            </p>
+          </answer>
         </task>
     </activity>
     
@@ -471,6 +493,47 @@
             </sageplot>
           </image>
         </figure>
+        <answer>
+          <image>
+            <sageplot>
+              geometry = Graphics()
+              front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
+              right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
+              front_bottom = polygon2d([(0,0),(2,0),(2,1)],color='cyan',alpha=1)
+              front = polygon2d([(0,0),(2,1),(2,2),(0,2)],color='powderblue')
+              left_top = polygon2d([(0,2),(2,2),(4,3),(4,4)],color='powderblue')
+              right_top = polygon2d([(4,3),(4,4),(6,4)],color='powderblue')
+              back = polygon2d([(4,3),(6,4),(6,2),(4,2)],color='powderblue')
+              middle = polygon2d([(2,1),(2,2),(4,3),(4,2)],color='powderblue')
+              bottom = polygon2d([(2,0),(2,1),(4,2),(6,2)],color='cyan',axes=False)
+              dash1 = line(([(0,0),(2,1)]),linestyle='dashed',color='black',thickness=2)
+              dash2 = line(([(2,1),(4,2)]),linestyle='dashed',color='black',thickness=2)
+              dash3 = line(([(4,2),(6,2)]),linestyle='dashed',color='black',thickness=2)
+              dash4 = line(([(4,2),(4,4)]),linestyle='dashed',color='black',thickness=2)
+              topline1 = line(([(4,4),(6,4)]),color='black',thickness=2)
+              topline2 = line(([(0,2),(4,4)]),color='black',thickness=2)
+              geometry += dash1
+              geometry += dash2
+              geometry += dash3
+              geometry += dash4
+              geometry += topline1
+              geometry += topline2
+              geometry += front_bottom
+              geometry += front
+              geometry += left_top
+              geometry += right_top
+              geometry += back
+              geometry += middle
+              geometry += bottom
+              geometry += front_border
+              geometry += right_border
+              geometry += text("$y$",(3.5,3),color="red", fontsize=15)
+              geometry += text("$x$", (1,-.25),color="red",fontsize=15)
+              geometry += text("$x$", (2.25,.75),color='red', fontsize=15)
+              geometry
+            </sageplot>
+          </image>
+        </answer>
 </task>
     
 
@@ -485,6 +548,11 @@
             <li><p>  minimize volume (call this <m>V</m>) </p></li>
                     <li><p>  minimize the girth plus length (call this <m>P</m>) </p></li>
     </ol>  
+    <answer>
+      <p>
+        A: maximize volume (call this <m>V</m>)
+      </p>
+    </answer>
 </task>
  <task><p>  Which formula below represents the quantity you want to optimize in terms of <m>x</m> and <m>y</m>?</p>
         <ol marker="A.">
@@ -493,7 +561,11 @@
             <li><p>  <m>P=2x+y</m> </p></li>
                     <li><p>   <m>P=4x+y</m> </p></li>
     </ol>  
-      
+      <answer>
+        <p>
+          A: <m>V = x^2y</m>
+        </p>
+      </answer>
       </task>
       <task>
         <p>
@@ -508,6 +580,11 @@
             <li><p>  <m>108 = x^2 +y</m> </p></li>
                     <li><p>   <m>108 = xy^2</m> </p></li>
     </ol>  
+    <answer>
+      <p>
+        A: <m>108 = 4x + y</m>
+      </p>
+    </answer>
 </task>
 <task><p>The equation above gives the relationship between  <m>x</m> and <m>y</m>. For ease of notation, solve this equation for <m>y</m> as a function on <m>x</m> and then find a formula for the volume of the parcel as a function of the single variable <m>x</m>. What is the formula for <m>V(x)</m>? </p>
        <ol marker="A.">
@@ -516,7 +593,11 @@
             <li><p> <m>V(x) =x ^2 (108-2x)</m> </p></li>
                     <li><p>  <m>V(x) =x (108-2x)^2</m> </p></li>
     </ol>  
-      
+      <answer>
+        <p>
+          A: <m>V(x) = x^2 (108-4x)</m>
+        </p>
+      </answer>
       </task>
   
    <task><p> Over what domain should we consider this function? To answer this question, notice that the problem gives us the constraint that <m>P</m> (girth plus length) is 108 inches. This constraint produces intervals of possible values for <m>x</m> and <m>y</m>.</p>
@@ -526,11 +607,21 @@
                 <li><p>  <m>0 \leq x \leq 27 </m> </p></li>
               <li><p>  <m>0 \leq y \leq 27 </m> </p> </li>
     </ol>  
+    <answer>
+      <p>
+        C: <m>0 \leq x\leq 27</m>
+      </p>
+    </answer>
          </task>   
 <task>
         <p>
           Use <em>calculus</em> to find the global maximum of the volume of the parcel on the domain you just determined. Justify that you have found the global maximum using either the Closed Interval Method, the First Derivative Test, or the Second Derivative Test!
         </p>
+        <answer>
+          <p>
+            The global maximum is 11664 cubic inches.
+          </p>
+        </answer>
    </task>   
   </activity>
 
@@ -547,28 +638,63 @@
         </introduction>
         <task>
             <p>If the price of a movie ticket is increased by <m>d</m> dollars, write a formula for the price <m>P</m> in terms of <m>d</m>.</p>
+            <answer>
+              <p>
+                <m>P = 8 + d</m>
+              </p>
+            </answer>
         </task>
         <task>
          <p> If the price of a ticket is increased by one dollar, how many many customers will the theater lose?</p>
+         <answer>
+          <p>
+            20
+          </p>
+         </answer>
         </task>
         <task>
          <p>Write a formula for the number of tickets sold <m>T</m> as a function of a price increase of <m>d</m> dollars.</p>
+         <answer>
+          <p>
+            <m>T = 200-20d</m>
+          </p>
+         </answer>
         </task>
         <task>
          <p>Consider the new price of a ticket <m>P(d)</m> and the new number of tickets sold <m>T(d)</m>. Write a formula for the
 revenue earned by ticket sales <m>R(d)</m> as a function of a price increase of <m>d</m> dollars.</p>
+          <answer>
+            <p>
+              <m>R(d) = (8+d)(200-20d)</m>
+            </p>
+          </answer>
         </task>
         <task>
          <p>What is a realistic domain for the function <m>R(d)</m>?</p>
+         <answer>
+          <p>
+            <m>0\leq d\leq 10</m>
+          </p>
+         </answer>
         </task>
         <task>
          <p>What increase in price <m>d</m> should the general manager choose to maximize the revenue? What price would a movie ticket cost then and what would the revenue be at that price?</p>
+         <answer>
+          <p>
+            <m>d = \$1</m>, so <m>P(1)=\$9</m> and <m>R(1) = \$1620</m>
+          </p>
+         </answer>
         </task>
         <task>
          <p>Suppose now that the cost of running the business when the price is increased by <m>d</m> dollars is given by
 <m>C(d) = 10d^3 −40d^2 +40d+600</m>.
 If the manager decides that they will definitely increase the price, what price increase <m>d</m> maximizes the
 profit? (Recall that Profit = Revenue - Cost).</p>
+          <answer>
+            <p>
+              <m>d = \$1.33</m>
+            </p>
+          </answer>
         </task>
     </activity>
 
@@ -582,9 +708,19 @@ profit? (Recall that Profit = Revenue - Cost).</p>
         </introduction>
         <task>
             <p>What choice of dimensions will make the rectangular area in the center as large as possible?</p>
+            <answer>
+              <p>
+                <m>\ell = 100</m>m and <m>w = \dfrac{200}{\pi}\approx 63.66</m>m.
+              </p>
+            </answer>
         </task>
         <task>
          <p> What should the dimensions so the total area enclosed by the running track is maximized?</p>
+         <answer>
+          <p>
+            <m>w = \dfrac{400}{\pi}\approx 127.32</m>m and <m>\ell = 0</m>m, so that the sports ground is a circle.
+          </p>
+         </answer>
         </task>
 
     </activity>
@@ -592,9 +728,19 @@ profit? (Recall that Profit = Revenue - Cost).</p>
     <activity xml:id="activity-ad8-5"> <title>Modeling in algebraic situations</title>
         <task>
             <p>Find the coordinates of the point on the curve <m>y=\sqrt{x}</m> closest to the point <m>(1,0)</m>.</p>
+            <answer>
+              <p>
+                <m>\left(\dfrac{1}{2},\dfrac{\sqrt{2}}{2}\right)</m>
+              </p>
+            </answer>
         </task>
         <task>
          <p> The sum of two positive numbers is 48. What is the smallest possible value of the sum of their squares?</p>
+         <answer>
+          <p>
+            1152
+          </p>
+         </answer>
         </task>
 
     </activity>
@@ -615,8 +761,12 @@ maximize the revenue (widgets sold times price). Write an explanation
 of what this change in price should be and why.
             </p>
 
-
     </statement>
+            <answer>
+              <p>
+                The optimal price change is to decrease the price by 4 dollars.
+              </p>
+            </answer>
  <!--   <answer>
 
 
@@ -648,8 +798,11 @@ Decrease the cost by <m>\$4</m>.
 
     <subsection>
       <title>Exercises</title>
-      <p>
+      <p component="preview">
           Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AD8/"/>
+      </p>
+      <p component="nonpreview">
+          Exercises available at <url href="https://library.tbil.org/2026/calculus/exercises/#/bank/AD8/"/>
       </p>
     </subsection>
 </section>

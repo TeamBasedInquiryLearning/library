@@ -370,8 +370,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
             </task>
             <task>
                 <statement>
-                    <p> What behavior would explain your finding? </p>
-                </statement>
+                    <p> What behavior would explain your finding? 
                 <ol marker="A." cols="2">
                     <li>
                         <p> After 1 second the ball is falling at a speed of 32 feet per second. </p>
@@ -391,7 +390,8 @@ The second derivative is the derivative of the derivative. It encodes informatio
                         <p> After 1 second the ball is moving upwards at a speed of 16 feet per
                             second. </p>
                     </li>
-                </ol>
+                </ol></p>
+                </statement>
                 <answer>
                     <p>
                         A: After 1 second the ball is falling at a speed of 32 feet per second.
@@ -462,8 +462,11 @@ The second derivative is the derivative of the derivative. It encodes informatio
     
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/DF2/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/calculus/exercises/#/bank/DF2/"/>
         </p>
     </subsection>
 </section>

@@ -232,7 +232,7 @@ Suppose we wanted to try the substitution method to find <m>\displaystyle \int e
                 </li>
                 <li>
                     <p>
-<m>u=\cos(e^x+3)</m>, so <m>du=e^x\sin(e^x+3)\,dx</m>
+<m>u=\cos(e^x+3)</m>, so <m>du=-e^x\sin(e^x+3)\,dx</m>
                     </p>
                 </li>
             </ol>
@@ -659,16 +659,13 @@ Use substitution to show that
 
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/TI1/"/>
         </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/calculus/exercises/#/bank/TI1/"/>
+        </p>
     </subsection>
-    
-    
-    <!-- <subsection>
-        <title>Slideshow</title>
-        <p>Slideshow of activities available at <url href="TI1.slides.html"/>.</p>
-    </subsection> -->
 
     
 </section>

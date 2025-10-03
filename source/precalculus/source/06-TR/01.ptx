@@ -17,7 +17,7 @@
         <p>
           An <term>angle</term> is formed by joining two rays at their starting points.
           The point where they are joined is called the <term> vertex</term> of the angle.
-          The measure of an angle is the amount of a circle between the two rays. 
+          The measure of an angle describes the amount of rotation between the two rays. 
         </p>
       </statement>
     </definition>
@@ -25,7 +25,7 @@
     <activity>
       <introduction>
         <p>
-          We know that if you complete a full turn of the circle the angle created will be 360 degrees.  Use this to estimate the measure of the given angles.
+          An angle that is rotated all the way around back to its starting point measures <m>360^\circ</m>, like a circle.  Use this to estimate the measure of the given angles.
 
         </p>
       </introduction>
@@ -38,7 +38,7 @@ TBIL.plot_angle(pi/2,reference_angle=pi/4,show_axes=False)
           </sageplot>
         </image>
         <p>
-          <ol marker="A." cols="2">
+          <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
             <li><p> <m>135^{\circ}</m> </p></li>
@@ -60,7 +60,7 @@ TBIL.plot_angle(pi,reference_angle=-pi/6,show_axes=False)
           </sageplot>
         </image>
         <p>
-          <ol marker="A." cols="2">
+          <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
             <li><p> <m>135^{\circ}</m> </p></li>
@@ -82,7 +82,7 @@ TBIL.plot_angle(135*pi/180,reference_angle=pi/2,show_axes=False)
           </sageplot>
         </image>
         <p>
-          <ol marker="A." cols="2">
+          <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
             <li><p> <m>135^{\circ}</m> </p></li>
@@ -122,7 +122,7 @@ TBIL.plot_angle(-3*pi/4)
     <activity>
       <introduction>
         <p>
-         Find the measure of the angles drawn in standard position.
+         Estimate the measure of the angles drawn in standard position.
         </p>
       </introduction>
       <task>
@@ -134,7 +134,7 @@ TBIL.plot_angle(pi/4)
           </sageplot>
         </image>
         <p>
-          <ol marker="A." cols="2">
+          <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
             <li><p> <m>135^{\circ}</m> </p></li>
@@ -156,7 +156,7 @@ TBIL.plot_angle(-pi)
           </sageplot>
         </image>
         <p>
-          <ol marker="A." cols="2">
+          <ol marker="A." cols="4">
             <li><p><m>180^{\circ}</m> </p></li>
             <li><p> <m>90^{\circ}</m> </p></li>
             <li><p> <m>-180^{\circ}</m> </p></li>
@@ -179,7 +179,7 @@ TBIL.plot_angle(-5*pi/6)
           </sageplot>
         </image>
         <p>
-          <ol marker="A." cols="2">
+          <ol marker="A." cols="4">
             <li><p><m>30^{\circ}</m> </p></li>
             <li><p> <m>-150^{\circ}</m> </p></li>
             <li><p> <m>-210^{\circ}</m> </p></li>
@@ -188,7 +188,7 @@ TBIL.plot_angle(-5*pi/6)
         </statement>
         <answer>
           <p>
-            D
+            B
           </p>
         </answer>
       </task>
@@ -209,34 +209,79 @@ TBIL.plot_angle(-225*pi/180)
 
     <remark>
     <p>
+      Degrees are not the only way to measure an angle. We can also describe the angle's measure by the amount of the circumference of the circle that the angle's rotation created. We'll need to define a few terms to help us come up with this new measurement. 
+     </p>
+     <!-- <p>  
+      Recall that the circumference of a circle is given by <m>C=2\pi r</m>, where <m>r</m> is the radius of the circle. FINISH THIS!
       Activity or remark - Something about the circumference of a circle being another way to measure the angle.  <m>C=2\pi r</m> divide both sides by the radius, so a full circle or <m>360^{\circ}=2\pi</m> radians
-    </p>
+    </p> -->
     </remark>
+
+    <definition xml:id="def-central-angle">
+      <statement>
+        <p>
+          A <term>central angle</term> is an angle whose vertex is at the center of a circle.
+        </p>
+         
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(2*pi/3,show_unit_circle=True,show_angle_value=False,degree_labels=False)
+p
+  </sageplot> 
+</image>  
+      </statement>
+    </definition>
+
+
 
     <definition xml:id="def-radian">
       <statement>
         <p>
           One <term>radian</term> is the measure of a central angle of a circle that intersects an arc the same length as the radius.
         </p>
+
+         
+<image width="50%">
+  <sageplot>
+<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
+p=TBIL.plot_angle(1,show_unit_circle=True,show_angle_value=True,degree_labels=False)
+p+=arc((0,0),1,sector=(0,1),color="blue",thickness=2)
+p+=text("$r$",(0.5,0.07),fontsize=20)
+p+=text("$r$",(0.87,0.6),fontsize=20)
+p
+  </sageplot> 
+</image>  
       </statement>
     </definition>
+
+  <observation>
+     <p>  
+      Recall that the circumference of a circle is given by <m>C=2\pi r</m>, where <m>r</m> is the radius of the circle. That means if we rotate through an entire circle, the circumference is <m>2\pi r</m> which implies that the angle was <m>2\pi</m> radians. Thus <m>2\pi</m> radians is the same measure as <m>360^\circ</m>. 
+    </p>
+    </observation>  
 
     <activity>
       <introduction>
         <p>
-        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in radians.
+        We now know that one turn around the circle measures <m>360^{\circ}</m> and also <m>2\pi</m> radians. Use this information to set up a proportion to find the equivalent radian measure of the following angles that are given in degrees.
         </p>
       </introduction>
       <task>
         <statement>
           <p> <m>180^{\circ}</m>
-            <ol marker="A." cols="2">
+            <ol marker="A." cols="4">
               <li><p> <m>\frac{\pi}{4}</m> </p></li>
               <li><p> <m>\pi</m> </p></li>
               <li><p> <m>\frac{3\pi}{4}</m> </p></li>
               <li><p> <m>\frac{\pi}{2}</m> </p></li>
           </ol> </p>
         </statement>
+        <hint>
+          <p>
+            Try setting up a proportion! <m>\dfrac{180^\circ}{360^\circ}= \dfrac{x}{2\pi}</m>
+          </p>
+        </hint>
         <answer>
           <p>
             B
@@ -246,7 +291,7 @@ TBIL.plot_angle(-225*pi/180)
       <task>
         <statement>
           <p> <m>45^{\circ}</m>
-            <ol marker="A." cols="2">
+            <ol marker="A." cols="4">
               <li><p> <m>\frac{\pi}{4}</m> </p></li>
               <li><p> <m>\pi</m> </p></li>
               <li><p> <m>\frac{3\pi}{4}</m> </p></li>
@@ -264,19 +309,24 @@ TBIL.plot_angle(-225*pi/180)
     <activity>
       <introduction>
         <p>
-        Using the fact that one turn around the circle is <m>360^{\circ}</m> and also <m>2\pi</m> radians. Find the measure of the following angles in degrees.
+        Continue using the fact that one turn around the circle measures <m>360^{\circ}</m> and also <m>2\pi</m> radians. Use this information to set up a proportion to find the equivalent degree measure of the following angles that are given in radians.
         </p>
       </introduction>
       <task>
         <statement>
-          <p> <m>\frac{\pi}{2}</m>
-            <ol marker="A." cols="2">
+          <p> <m>\dfrac{\pi}{2}</m>
+            <ol marker="A." cols="4">
               <li><p> <m>45^{\circ}</m> </p></li>
               <li><p> <m>90^{\circ}</m> </p></li>
               <li><p> <m>180^{\circ}</m> </p></li>
               <li><p> <m>360^{\circ}</m> </p></li>
           </ol> </p>
         </statement>
+            <hint>
+              <p>
+                Try setting up a proportion! <m>\dfrac{x}{360^\circ}= \dfrac{\frac{\pi}{2}}{2\pi}</m>
+              </p>
+            </hint>
         <answer>
           <p>
             B
@@ -286,7 +336,7 @@ TBIL.plot_angle(-225*pi/180)
       <task>
         <statement>
           <p> <m>\frac{3\pi}{4}</m>
-            <ol marker="A." cols="2">
+            <ol marker="A." cols="4">
               <li><p> <m>45^{\circ}</m> </p></li>
               <li><p> <m>90^{\circ}</m> </p></li>
               <li><p> <m>135^{\circ}</m> </p></li>
@@ -302,13 +352,125 @@ TBIL.plot_angle(-225*pi/180)
     </activity>
     </subsection>
 
-    <subsection>
-      <title>Exercises</title>
-      <p>Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TR1/"/>. </p> 
-    </subsection>
+  <activity xml:id="develop-conversions">
+    <introduction>
+        <p>
+        We'll now use the proportions from before to come up with a way to convert between degrees and radians for any given angle. We'll call <m>a</m> the angle's measure in degrees and <m>b</m> the angle's measure in radians. So, we have the following proportion that must hold:
+        <me>\dfrac{a}{360^\circ}= \dfrac{b}{2\pi}</me>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> Let's say we know an angle's measure in degrees, <m>a</m>, and need to find the angle's measure in radians, <m>b</m>. Solve for <m>b</m> in the proportion.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b=\dfrac{\pi}{180^\circ}\cdot a</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Use the formula you just developed to convert <m>60^\circ</m> to radians. Leave your answer in terms of <m>\pi</m>. Do not approximate!
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{\pi}{3}</m>
+          </p>
+        </answer>
+      </task>
+       <task>
+        <statement>
+          <p> Now let's assume we know an angle's measure in radians, <m>b</m>, and need to find the angle's measure in degrees, <m>a</m>. Solve for <m>a</m> in the proportion.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a=\dfrac{180^\circ}{\pi}\cdot b</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Use the formula you just developed to convert <m>\dfrac{\pi}{6}</m> to degrees. 
+          
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>30^\circ</m>
+          </p>
+        </answer>
+      </task>
+  </activity>
+
+  <remark>
+    <p>
+      We now have a way to convert back and forth between the two types of measurements. If we know the angle's measure in degrees, we multiply it by <m>\dfrac{\pi}{180^\circ}</m> to find the measure in radians. If we know the angle's measure in radians, we multiply it by <m>\dfrac{180^\circ}{\pi}</m> to find the measure in degrees.
+    </p>
+  </remark>
+
+<activity xml:id="conversion-fluency">
+    <introduction>
+        <p>
+        Convert each of the following angles. 
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p> <m>\dfrac{2\pi}{3}</m> radians to degrees
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>120^\circ</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>\dfrac{7\pi}{6}</m> radians to degrees
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>210^\circ</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m> 240^\circ </m> to radians 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{4\pi}{3}</m>
+          </p>
+        </answer>
+      </task>
+            <task>
+        <statement>
+          <p> <m> 315^\circ </m> to radians 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\dfrac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </task>
+    </activity>
     
-    <!-- <subsection>
-        <title>Videos</title>
-        <p>It would be great to include videos down here, like in the Calculus book!</p>
-    </subsection> -->
+    <subsection>
+        <title>Exercises</title>
+        <p component="preview">
+            Exercises available at <url href="https://tbil.org/preview/precalculus/exercises/#/bank/TR1/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/precalculus/exercises/#/bank/TR1/"/>
+        </p>
+    </subsection>
 </section>

@@ -62,7 +62,7 @@
             <li><m>\left[\begin{array}{c}1\\2\\3\end{array}\right]+
             \left[\begin{array}{c}4\\5\\6\end{array}\right]</m></li>
             <li><m>\left[\begin{array}{c}1\\2\\3\end{array}\right]+
-            \left[\begin{array}{c}1\\1\\1\end{array}\right]</m></li>
+            \left[\begin{array}{c}1\\0\\-2\end{array}\right]</m></li>
             <li><m>-2\left[\begin{array}{c}1\\2\\3\end{array}\right]</m></li>
             </ol>
                 </p>
@@ -1072,7 +1072,12 @@ that is, <m>(kx)+(ky)=(kx)(ky)</m>. This is verified by the following calculatio
 
     <subsection>
         <title>Exercises</title>
-        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV3/"/>.</p>
+        <p component="preview">
+            Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV3/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/linear-algebra/exercises/#/bank/EV3/"/>
+        </p>
     </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>

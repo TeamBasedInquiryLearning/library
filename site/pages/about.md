@@ -31,13 +31,18 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
     - This article examines how student learning is affected by the use of team-based inquiry learning, a novel pedagogy in mathematics that uses team-based learning to implement inquiry-based learning. We conducted quasi-experimental and observational studies in intermediate level mathematics courses, finding that team-based inquiry learning led to increased content mastery and that students took a more flexible approach to solving problems. We also found that in the courses using this pedagogy, women (but not men) had a reduction in communication apprehension over the course of a semester. We conclude that team-based inquiry learning effectively enhances student learning and problem solving, preparing students for future academic success and fostering career readiness.
 
 
-- Lewis, D., Clontz, S., Parrish, C., Estis, J., and Chaudhury, S.R. 2024. Supporting Instructors in Implementing Team-Based Inquiry Learning. _Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education_, 1152-1157. <http://sigmaa.maa.org/rume/crume2024/papers/117.pdf>
+- Lewis, D., Clontz, S., Parrish, C., Estis, J., and Chaudhury, S.R. (2024). Supporting Instructors in Implementing Team-Based Inquiry Learning. _Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education_, 1152-1157. <http://sigmaa.maa.org/rume/crume2024/papers/117.pdf>
 
     - Team-Based Inquiry Learning (TBIL) is a novel active learning pedagogy designed to facilitate the use of inquiry-based learning in lower division courses. This preliminary report examines supports provided by the TBIL project to instructors, as well as the fidelity of implementation of TBIL by participants of the project. Initial findings suggest that classroom-ready materials and ongoing support, both synchronous and asynchronous, were most helpful to faculty in their TBIL implementations.
+ 
+- Kostiuk, J., Lewis, D., Borges, T., Brandt, M., Chang-Lee, M., Creech, S., Freedman, S., Griffith, S., and Hashimoto, S. (2025) Promoting Students' Sense-Making in Row Reducing Matrices: A Lesson Analysis Manuscript. _PRIMUS_. <https://doi.org/10.1080/10511970.2025.2518531>
+
+    - In this lesson analysis, the topic of the lesson is using operations to calculate the Reduced Row Echelon Form of a matrix. The course context is an introductory linear algebra course taught using Team-Based Inquiry Learning. The instructional challenges we seek to address are: (1) Students often do not see the reasons for why the RREF is a desirable form for a matrix, or why performing row operations is a reasonable thing to do to a matrix; and (2) Students tend to think about row reduction as a computation/algorithm, and we want to shift them into a reasoning/sense making stance about the problem. To address these challenges, we use an approach grounded in Inquiry-Based Learning. Students begin by identifying a set of operations that preserves the solution set of a linear system, and then build intuition around the idea that one linear system may look easier to solve than another even though they have the same solution set, motivating the definition of reduced row echelon form. Students then practice determining if a matrix is in RREF and, if not, identifying row operations that bring it closer to its final RREF.
 
 #### Selected mentions in other literature
 
-- Muhammad, R. A., & Saidi, R. (2024). Applications in Linear Algebra: Bridging Data Science with Mathematical Foundations. Scatterplot, 1(1). <https://doi.org/10.1080/29932955.2024.2370620>
+- Kostiuk, J. (2026). Righting My Relationship With Teaching Mathematics: A Critical Reflection. In _Culturally Sustaining Pedagogies in Mathematics and Technology Education: Research, Practices, and Critical Reflections_, edited by Karen L. Terrell and Diane Silva Pimentel, IGI Global Scientific Publishing, 1--26. <https://doi.org/10.4018/979-8-3373-5337-1.ch001>
+- Muhammad, R. A., & Saidi, R. (2024). Applications in Linear Algebra: Bridging Data Science with Mathematical Foundations. _Scatterplot_, 1(1). <https://doi.org/10.1080/29932955.2024.2370620>
 
 ### Presentations
 
@@ -90,4 +95,9 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Apoorva Mate† presented "Flipping the Script: Collaborative Learning Made Easy with Team-Based Inquiry" at the Fall 2024 New England COMMIT meeting
 
+- Drew Lewis presented a workshop on "Team-Based Inquiry Learning" at the 2025 New York Medical College Teaching and Learning Symposium
+
+- Joe Hibdon† presented a Team-Based Inquiry Learning workshop for ChiCOMMMIT (May 2025)
+
 († TBIL Fellows)
+

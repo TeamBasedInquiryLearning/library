@@ -7,6 +7,8 @@ class Generator(BaseGenerator):
       shift = choice(["north", "south", "east", "west"])
     
     b, s = sample([2,3,4,5,6], 2)
+    if choice(range(4)) == 0:
+      b = exp(1)
 
     if flip == "horizontal":
       if shift == "north":

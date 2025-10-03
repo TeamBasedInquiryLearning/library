@@ -42,3 +42,10 @@ accidentally committing to the main branch:
 ```
 git config core.hooksPath .githooks
 ```
+
+## Deployment
+
+```
+aws configure
+aws s3 cp [path/to/year] s3://BUCKET_NAME/[year]/ --recursive
+```

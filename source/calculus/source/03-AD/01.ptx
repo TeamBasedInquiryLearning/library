@@ -23,30 +23,46 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     <introduction>
       <p>For the following functions, find the required tangent line.</p>
     </introduction>
-          <task> <p> Find the tangent line to <m>f(x) = \ln(x)</m> at <m>x=1</m></p>
+          <task><statement><p> Find the tangent line to <m>f(x) = \ln(x)</m> at <m>x=1</m>.
                <ol marker="A." cols="2">
                 <li><p>  <m>L(x) = x</m> </p></li>
                   <li><p>  <m>L(x) = x+1</m></p></li> 
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
        <li><p>  <m>L(x)= -x + 1</m> </p></li>               
-    </ol>      
+    </ol></p></statement>  
+    <answer>
+        <p>
+            C
+        </p>
+    </answer>
           </task>
-           <task> <p> Find the tangent line to <m>f(x) = e^x</m> at <m>x=0</m></p>
+           <task><statement><p> Find the tangent line to <m>f(x) = e^x</m> at <m>x=0</m>.
                <ol marker="A." cols="2">
                 <li><p>  <m>L(x) = x</m> </p></li>
                   <li><p>  <m>L(x) = x+1</m></p></li> 
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
        <li><p>  <m>L(x)= -x + 1</m> </p></li>               
-    </ol>      
+    </ol></p></statement>
+    <answer>
+        <p>
+            B
+        </p>
+    </answer>
           </task>
   </activity>
     
 <activity xml:id="activity-tangent-lines2">
- 
-                <p>
-                Let <m>f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5</m>. Find an equation of the line tangent to the graph at the point <m>(-2, -9)</m>.
-                </p>
-    </activity>
+    <statement>
+        <p>
+            Let <m>f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5</m>. Find an equation of the line tangent to the graph at the point <m>(-2, -9)</m>.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <m>y = 47x+85</m>
+        </p>
+    </answer>    
+</activity>
 
     <definition xml:id="defn-motion"><p>
         If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then the derivative of the position function tells us how the position is changing over time, so <m>f'(t)</m> gives us the (instantaneous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so <m>f''(t)</m> gives us the (instantaneous) acceleration in meters per second squared. Summarizing, 
@@ -63,11 +79,54 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
 <me> y = t^{3}-9t^{2}+24t + 3 </me>
 <p>for <m>t\geq 0</m>. Here <m>t</m> is measured in seconds and <m>y</m> is measured in feet. </p>
 </introduction>
-    <task><p>Find the velocity and acceleration functions.</p></task>
-     <task><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p></task>
-    <task><p>When is the particle moving upward and when is it moving downward?</p></task>
-    <task><p>When is the particle's velocity increasing?</p></task>
-    <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down. </p></task>
+    <task><statement><p>Find the velocity and acceleration functions.</p></statement>
+    <answer>
+        <p>
+            <m>v(t) = 3t^2-18t + 24</m> and <m>a(t) = 6t-18</m>
+        </p>
+    </answer></task>
+     <task><statement><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p></statement>
+    <answer>
+        <image width = "50%">
+            <sageplot>
+                x = var('x')
+                plot(x^3-9*x^2+24*x + 3,(x,0,5), axes_labels=("$t$","$s(t)$"))
+            </sageplot>
+        </image>
+        <image width = "50%">
+            <sageplot>
+                x = var('x')
+                plot(3*x^2-18*x + 24,(x,0,5),axes_labels = ("$t$","$v(t)$"))
+            </sageplot>
+        </image>
+        <image width = "50%">
+             <sageplot>        
+                x = var('x')
+                plot(6*x - 18,(x,0,5),axes_labels=("$t$","$a(t)$"))
+     </sageplot>
+        </image>
+    </answer></task>
+    <task><statement><p>When is the particle moving upward and when is it moving downward?</p></statement>
+    <answer>
+        <p>
+            The particle is moving upward on the interval <m>[0,2)</m> and <m>(4,5]</m> and downward on <m>(2,4)</m>.
+        </p>
+    </answer></task>
+    <task><statement><p>When is the particle's velocity increasing?</p></statement>
+    <answer>
+        <p>
+            The velocity is increasing on the interval <m>(3,5]</m>.
+        </p>
+    </answer></task>
+    <task>
+        <statement>
+            <p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down. </p>
+        </statement>
+    <answer>
+        <p>
+            The total distance traveled is <m>23 + 4 + 4 = 31</m> feet.
+        </p>
+    </answer></task>
      </activity>   
 
     <activity xml:id="motion-fluency-checkit">
@@ -87,6 +146,11 @@ seconds. Use appropriate units for each.
                 </p>
             
     </statement>
+    <answer>
+        <p>
+            The position is given by <m>s(2) = -22</m> miles. Its velocity is given by <m>s'(2) = -29</m> miles per unit of time, and its acceleration is given by <m>s''(2) = -18</m> miles per unit of time per unit of time.
+        </p>
+    </answer>
 <!--    <answer>
         <ol>
            
@@ -125,17 +189,21 @@ Acceleration: <m>-18</m> miles per <m>s^2</m>
     <observation xml:id = "obs-speed"> <p>In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols <m>|v(t)|= |f'(t)|</m> is the speed of the particle. A particle is speeding up when the speed is increasing. </p></observation>
     
       <activity xml:id = "speed">
-    <introduction>
+    <statement>
       <p>
-          Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration? </p>
-    </introduction>
+          Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?
     <ol marker="A." cols="2">
                 <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have the same sign. </p></li>
                 <li><p>  The speed is positive when the velocity is positive and negative when the velocity is negative. </p></li>
                 <li><p>  The speed is positive when the acceleration is positive and negative when the acceleration is negative. </p></li>
              <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs. </p></li>
-           
-    </ol>      
+    </ol></p>
+    </statement>   
+    <answer>
+        <p>
+            A: The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.
+        </p>
+    </answer>
     </activity>
   
 <definition xml:id = "defn-rate-parametric"> <p> In a parametric motion on a curve <m>C</m> given by <m>x=f(t)</m> and <m>y=g(t)</m> we have that </p>
@@ -150,15 +218,33 @@ Acceleration: <m>-18</m> miles per <m>s^2</m>
     <introduction><p>An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations</p>
         <me>x = 4 t , \quad  y = -t^4 + 4t - 1 , </me>
         <p>where <m>x, y</m> have units of miles, and <m>t</m> is in hours.  </p></introduction>
-        <task>
+        <task><statement>
         <p>Find the slope of the curve.
-            </p></task>
+            </p></statement>
+        <answer>
+            <p>
+                <m>\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{-4t^3 + 4}{4} = 1-t^3</m> 
+            </p>
+        </answer>
+        </task>
           <task>
-        <p>What is the slope of the curve at <m>(0,-1)</m>.
-            </p></task>
+        <statement><p>What is the slope of the curve at <m>(0,-1)</m>.
+            </p></statement>
+        <answer>
+            <p>
+                When <m>x = 0</m>, we have <m>0 = 4t</m> so <m>t = 0</m>. This means that the slope is given by <m>\dfrac{dy}{dx}=1</m>.
+            </p>
+        </answer>
+        </task>
          <task>
-        <p>Write the equation of the tangent line to the curve at  <m>(0,-1)</m>.
-            </p></task>
+        <statement><p>Write the equation of the tangent line to the curve at  <m>(0,-1)</m>.
+            </p></statement>
+        <answer>
+            <p>
+                <m>y = x - 1</m>
+            </p>
+        </answer>
+        </task>
     </activity>
 
 <definition xml:id = "def-marginals"><p>
@@ -178,18 +264,43 @@ stores <m>x</m> computers, the storage and handling costs will
 be <m>C</m> dollars, where
 <me>C(x) = 10x^{3}-900x^{2}+16000x+210000 </me>
 </p></introduction>
-     <task>
+     <task><statement>
         <p> What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.
-            </p></task>
-          <task>
+            </p></statement>
+        <answer>
+            <p>
+                <m>C(0) = 210,000</m> dollars.
+            </p>
+        </answer>
+        </task>
+          <task><statement>
         <p>Find the marginal cost
-            </p></task>
-         <task>
+            </p></statement>
+        <answer>
+            <p>
+                <m>C'(x) = 30x^2 - 1800x + 16000</m> dollars per computer.
+            </p>
+        </answer>
+        </task>
+         <task><statement>
         <p>Now suppose that <m>x</m> computers give revenue <m>R(x) = 1000x</m>. What is the marginal revenue? What is the real world interpretation of your finding?
-            </p></task>
-    <task>
+            </p></statement>
+        <answer>
+            <p>
+                <m>R'(x) = 1000</m>. For every additional computer, the revenue increases by 1000 dollars.
+            </p>
+        </answer>
+        </task>
+    <task><statement>
         <p>Find a formula for the profit function <m>P(x)</m> and find the marginal profit using the marginal revenue and the marginal cost (assuming the number of items produced and sold is equal and given by <m>x</m>).
-            </p></task>
+            </p></statement>
+        <answer>
+            <p>
+                <me>P(x) = R(x) - C(x) = -10x^3+900x^2-15000x-210000</me>
+                <me>P'(x) = R'(x) - C'(x) = -30x^2 + 1800x - 15000</me>
+            </p>
+        </answer>
+        </task>
     </activity>
 
 <activity xml:id="marginals-fluency-checkit">
@@ -207,6 +318,11 @@ in this situation.
                 </p>
         
     </statement>
+    <answer>
+        <p>
+            The marginal cost is <m>C'(x) = 12x^2 + 20x + 7</m> dollars per gizmo, the marginal revenue is 63 dollars per gizmo, and the marginal profit is <m>-12x^2-20x + 56</m> dollars per gizmo.
+        </p>
+    </answer>
 <!--    <answer>
        
                 <p>
@@ -232,20 +348,44 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
 
 <activity xml:id = "activity-temp1">
     <introduction>
-    <p> Consider a cup of coffee initially at <m> 100^\circ</m>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <m>72^\circ</m>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <m>3.8</m> degrees per minute.
+    <p> Consider a cup of coffee initially at <m> 110^\circ</m>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <m>72^\circ</m>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <m>3.8</m> degrees per minute.
         </p></introduction>
-    <task>
+    <task><statement>
         <p> In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <m>y=ae^{-kt}+c</m> to determine the value of <m>c</m>.
-            </p></task>
-    <task>
-        <p> Using the initial temperature of the coffee and your value of <m>c</m>, find the value of <m>a</m> in the model <m>y=ae^{-kt}t+c</m>.
-            </p></task>
-     <task>
-        <p> The scenario also gives you information about the value of the rate of change at <m>t=0</m>. Use this additional information to determine the model <m>y=ae^{-kt}t+c</m> completely.
-            </p></task>
-     <task>
+            </p></statement>
+        <answer>
+            <p>
+                The temperature should tend to <m>72^\circ</m>F, which is also the value of <m>c</m>.
+            </p>
+        </answer>
+        </task>
+    <task><statement>
+        <p> Using the initial temperature of the coffee and your value of <m>c</m>, find the value of <m>a</m> in the model <m>y=ae^{-kt}+c</m>.
+            </p></statement>
+        <answer>
+            <p>
+               <m>a = 38</m> 
+            </p>
+        </answer>
+        </task>
+     <task><statement>
+        <p> The scenario also gives you information about the value of the rate of change at <m>t=0</m>. Use this additional information to determine the model <m>y=ae^{-kt}+c</m> completely.
+            </p></statement>
+        <answer>
+            <p>
+                <m>y = 38e^{-0.1t} + 72</m>
+            </p>
+        </answer>
+        </task>
+     <task><statement>
         <p>  You should find that the temperature model for this coffee cup is <m>y= 72 + 38 e^{-0.1t}</m>. Explain how the values of each parameter connects to the information given.
-    </p></task>
+    </p></statement>
+        <answer>
+            <p>
+              First,  <m>c = 72</m> because as <m>t\to \infty</m>, the coffee will settle around the ambient temperature, which is <m>72^\circ</m>F. Second,  <m>a = 38</m> because when <m>t = 0</m>, the temperature of the coffee should be <m>110^\circ</m>F. Third, <m>k = 0.1</m> because <m>y'(0) = -3.8 = -ka = -38k</m>.
+            </p>
+        </answer>
+    </task>
     </activity>    
 
     </subsection>
@@ -259,8 +399,11 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
 
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AD1/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/calculus/exercises/#/bank/AD1/"/>
         </p>
     </subsection>
 

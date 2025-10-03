@@ -14,15 +14,13 @@
     <remark>
     <p>
       In many different settings,
-      we are interested in knowing where a function achieves its least and greatest values.
-      These can be important in applications<mdash />say to identify a point at which maximum profit or minimum cost occurs<mdash />or in theory to characterize the behavior of a function or a family of related functions.
+      we are interested in knowing where a function achieves its least and greatest values. These can be important in applications<mdash />say to identify a point at which maximum profit or minimum cost occurs<mdash />or in theory to characterize the behavior of a function or a family of related functions.
     </p>
 </remark>
     
 <example>    
     <p>
-      Consider the familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>. This function
-      represents the height of an object tossed  vertically straight up: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph and we can notice that the function changes from increasing to decreasing at this point.
+      Consider the familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>. This function represents the height of an object tossed  vertically straight up: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph and we can notice that the function changes from increasing to decreasing at this point.
     </p>
 
  <figure xml:id="height-function">
@@ -41,20 +39,11 @@
      <definition xml:id="defn-global-extrema">
       <statement>
         <p>
-         We say that <m>f(x)</m> has a <term>global maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m>
-         in the domain of the function.
-         We also say that <m>f(c)</m> is a global maximum value for the function.
-         On the other hand, we say that <m>f(x)</m> has a <term>global minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m>
-         in the domain of the function.
-         We also say that <m>f(c)</m> is a global minimum value for the function.
-         The global maxima and minima are also known as the <term>global extrema</term> (or extreme values or absolute extrema) of the function. 
+         We say that <m>f(x)</m> has a <term>global maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> in the domain of the function. We also say that <m>f(c)</m> is a global maximum value for the function. On the other hand, we say that <m>f(x)</m> has a <term>global minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> in the domain of the function. We also say that <m>f(c)</m> is a global minimum value for the function. The global maxima and minima are also known as the <term>global extrema</term> (or extreme values or absolute extrema) of the function. 
         </p>
       </statement>
     </definition>
     
-   
-
-
     <activity xml:id="activity-ad-extrema-1">
 <statement>
     <P>According to <xref ref="defn-global-extrema"/>, which of the following statements best describes the global extrema of the function in <xref ref="height-function"/>?</P>
@@ -65,6 +54,11 @@
                 <li><p> The graph has no global minimum. </p></li>
             </ol>
     </statement>
+    <answer>
+        <p>
+            B: The global maximum is <m>s(1) = 64</m>, because <m>s(t)\leq 64</m> for every other input <m>t</m>.
+        </p>
+    </answer>
 </activity>
 
 <observation>
@@ -86,7 +80,7 @@
     <p>For each of the following figures, decide where the global extrema are located.</p>
 </introduction>
     <task>
-        <figure xml:id="figure-evt-int">
+        <statement>
             <image width="25%">
                 <sageplot>
                     x = var('x')
@@ -98,10 +92,14 @@
                     p+c1+c2
                 </sageplot>
             </image>
-        <!--                 <caption>A.</caption> -->
-        </figure>
+        </statement>
+        <answer>
+            <p>
+                The global maximum is at <m>x = \dfrac{\pi}{2}</m> and the global minimum is at <m>x = \dfrac{3\pi}{2}</m>.
+            </p>
+        </answer>
     </task>
-    <task><figure xml:id="figure-evt-endpoints">
+    <task><statement>
        <image width="25%">
             <sageplot>
                 x=var('x')
@@ -113,9 +111,14 @@
                 p+c1+c2+q
             </sageplot>
        </image>
-<!--                 <caption>B.</caption> -->
-        </figure></task>
-<task><figure xml:id="figure-evt-mixed">
+    </statement>
+        <answer>
+            <p>
+                The global maximum is at <m>x = 0</m> and the global minimum is at <m>x = 3</m>.
+            </p>
+        </answer>
+    </task>
+<task><statement>
        <image width="25%">
             <sageplot>
                 x=var('x')
@@ -127,10 +130,15 @@
                 c1+c2+p+q
             </sageplot>
        </image>
-<!--                 <caption>C.</caption> -->
-        </figure></task>
+    </statement>
+        <answer>
+            <p>
+                The global maximum occurs at about <m>x = 1.25</m> and the global minimum occurs at about <m>x = 2.25</m>.
+            </p>
+        </answer>
+    </task>
 <task>
-   <figure xml:id="figure-evt-mixed2">
+   <statement>
         <image width="25%">
             <sageplot>
                 x=var('x')
@@ -142,8 +150,12 @@
                 c1+c2+p+q
             </sageplot>
         </image>
-<!--                 <caption>D.</caption> -->
-        </figure>
+    </statement>
+        <answer>
+            <p>
+                The global maximum occurs at <m>x = 3</m> and the global minimum occurs at <m>x = 1</m>.
+            </p>
+        </answer>
     </task>
 </activity>
 
@@ -157,6 +169,11 @@
                 <li><m>f(x)=\dfrac{x^{2}}{x^{2}-4x-5}</m> on <m>[6,10]</m>.</li>
             </ol>
         </statement>
+        <answer>
+            <p>
+                B and D
+            </p>
+        </answer>
 </activity>
 
 <activity xml:id = "activity-ad-extrema-4">
@@ -187,6 +204,11 @@
                 <li><m>x = 2</m>. </li>
             </ol>
     </statement>
+    <answer>
+        <p>
+            A: <m>x = \sqrt{2}</m> and <m>x = -\sqrt{2}</m>
+        </p>
+    </answer>
 </activity>
     
 
@@ -217,6 +239,11 @@
                 <li>Global maximum is when <m>x = 0</m> and global minimum when <m>x = -1</m>. </li>
             </ol>
     </statement>
+    <answer>
+        <p>
+            C: Global maximum is when <m>x = 2</m> and global minimum when <m>x = 1</m>.
+        </p>
+    </answer>
     </activity>
 
     <activity xml:id = "activity-ad-extrema-7">
@@ -230,6 +257,11 @@
                 <li>Global maximum is when <m>x = 4</m> and global minimum when <m>x = -2</m>. </li>
             </ol>
     </statement>
+    <answer>
+        <p>
+            C: Global maximum is when <m>x = \frac{8}{3}</m> and global minimum when <m>x = -2</m>.
+        </p>
+    </answer>
     </activity>
 
 <activity xml:id="global-extrema-fluency-checkit">
@@ -239,7 +271,7 @@ Explain how to find the global minimum and global maximum values of the
 function <m>f(x)=-2 \, x^{3} + 18 \, x^{2} + 42 \, x + 33</m> on the interval <m>[-2,2]</m>.
         </p>
     </statement>
- <!--   <answer>
+ <answer>
         <p>
 The global extrema may occur at these <m>x</m>-values:
 <m>-2, -1, 2</m>.
@@ -257,7 +289,7 @@ maximum is <m>173</m>.
 (The value <m>f(7)=523</m>
 is ignored as <m>7</m> isn't in the given interval.)
         </p>
-    </answer>-->
+    </answer>
     </activity>
     
     
@@ -271,10 +303,15 @@ x^2 -4x +2 &amp; x\geq 0
 \right.
                </me>
 </p> </introduction>
-<task><p>What can you say about the point <m>x=0</m>?</p></task>
-    
-<task><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points of <m>g(x)</m>?
+<task><statement><p>What can you say about the point <m>x=0</m>?</p></statement>
+<answer>
+    <p>
+        The function is discontinuous at this point, so the derivative does not exist; thus, 0 is a critical point.
     </p>
+</answer>
+</task>
+    
+<task><statement><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points of <m>g(x)</m>?
     <ol marker="A." cols="2">
     <li><m>x=0, \, x=1, \, x= 2</m></li>
         
@@ -284,10 +321,32 @@ x^2 -4x +2 &amp; x\geq 0
         
     <li><m>x=0, \, x=1, \, x= -2</m></li>
     </ol>
+    </p>
+</statement>
+    <answer>
+        <p>
+            B: <m>x=0, \, x=-1, \, x= 2</m>
+        </p>
+    </answer>
     </task>
-    <task><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the global max and min. If you can't, explain why.</p></task>
-        <task><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the global max and min. If you can't, explain why.</p></task>
-        <task><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the global max and min. If you can't, explain why.</p></task>
+    <task><statement><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the global max and min. If you can't, explain why.</p></statement>
+    <answer>
+        <p>
+            The global maximum is at <m>x = -1</m> and the global minimum is at <m>x = -4</m>.
+        </p>
+    </answer></task>
+        <task><statement><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the global max and min. If you can't, explain why.</p></statement>
+        <answer>
+            <p>
+                The global maximum is at <m>x=4</m> and the global minimum is at <m>x = 2</m>.
+            </p>
+        </answer></task>
+        <task><statement><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the global max and min. If you can't, explain why.</p></statement>
+        <answer>
+            <p>
+                No. The function is not continuous on the interval.
+            </p>
+        </answer></task>
     </activity>  
     
 
@@ -302,8 +361,11 @@ x^2 -4x +2 &amp; x\geq 0
     
     <subsection>
         <title>Exercises</title>
-        <p>
+        <p component="preview">
             Exercises available at <url href="https://tbil.org/preview/calculus/exercises/#/bank/AD4/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/calculus/exercises/#/bank/AD4/"/>
         </p>
     </subsection>
 

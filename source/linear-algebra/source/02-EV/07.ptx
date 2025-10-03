@@ -307,7 +307,7 @@ Find its solution space.
         <p>
 Which of these is the best choice of basis for this
 solution space?
-<ol marker="A" cols="3">
+<ol marker="A." cols="3">
     <li><m>\{\}</m></li>
     <li><m>\{\vec 0\}</m></li>
     <li>The basis does not exist</li>
@@ -428,7 +428,12 @@ Solve this system to describe these locations.
 
     <subsection>
         <title>Exercises</title>
-        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/"/>.</p>
+        <p component="preview">
+            Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/linear-algebra/exercises/#/bank/EV7/"/>
+        </p>
     </subsection>
 <subsection>    
     <title>Mathematical Writing Explorations</title>
@@ -447,7 +452,7 @@ Prove that, for any column vector <m>\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ 
     Prove that the columns of <m>M</m> form a basis for <m>\mathbb{R}^n</m>.</li>
 
 <li>
-    Prove that the rank of <m>M</m> is <m>n</m>.</li>
+    Prove that the reduced row echelon form of <m>M</m> has <m>n</m> pivots.</li>
 </ul>  
                 </p>
     </exploration>

@@ -195,20 +195,74 @@ T^{-1}(\vec e_2)\hspace{1em}T^{-1}(\vec e_3)]
 
 
 <activity estimated-time='5'>
-    <statement>
+    <introduction>
         <p>
-Find the inverse <m>A^{-1}</m> of the matrix
-<me>A=\left[\begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; -1 &amp; -4 \\ 1 &amp; 1 &amp; 0 &amp; -4 \\ 1 &amp; -1 &amp; -1 &amp; 2 \end{array}\right]</me>
-by computing how it transforms each of the standard
-basis vectors for <m>\mathbb R^4</m>:
-<m>T^{-1}(\vec e_1)</m>, <m>T^{-1}(\vec e_2)</m>, <m>T^{-1}(\vec e_3)</m>,
-and <m>T^{-1}(\vec e_4)</m>. 
+Let <m>T\colon\IR^4\to\IR^4</m> be the linear bijection given by the standard matrix:
+<me>A=\left[\begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; -1 \\ 1 &amp; 0 &amp; -1 &amp; -4 \\ 1 &amp; 1 &amp; 0 &amp; -4 \\ 1 &amp; -1 &amp; -1 &amp; 2 \end{array}\right].</me> 
         </p>
-    </statement>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Calculate <m>T^{-1}(\vec e_2)</m> by row reducing an appropriate augmented matrix. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate <m>T^{-1}(\vec e_4)</m> by row reducing an appropriate augmented matrix. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                 Suppose we completed the previous two tasks by hand.
+                 Which of the following statements best describes the row operations we would use?
+            </p>
+            <ol marker="A.">
+            <li>
+                <p>
+                    We had to use the same row operations in (a) as we did in (b).
+                </p>
+            </li>
+            <li>
+                <p>
+                    We could have used the same row operation in (a) as we did in (b).
+                </p>
+            </li>
+            <li>
+                <p>
+                    The row operations used in (a) have nothing to do with with the row operations used in part (b).
+                </p>
+            </li>
+        </ol>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                So far, we have only considered augmented matrices with a single augmented column.
+                Write down an augmented matrix with more than one augmented column whose RREF would help us find <m>A^{-1}.</m>
+            </p>
+        </statement>
+    </task>
 </activity>
 
 <sage language="octave">
 </sage>
+
+<observation>
+    <p>
+        Our exploration above yields a succinct way to calculate the inverse of a matrix. 
+        Indeed, if <m>A</m> is an invertible matrix, then we have
+        <me>
+            \RREF\left[A|I\right]=\left[I|A^{-1}\right].
+        </me>
+        
+    </p>
+</observation>
 
 <activity estimated-time='5'>
     <statement>
@@ -233,6 +287,36 @@ Is the matrix <m>\left[\begin{array}{ccc} 2 &amp; 3 &amp; 1 \\ -1 &amp; -4 &amp;
     </p>
     </statement>
 </observation>
+
+<observation>
+    <statement>
+        <p>
+            Let <m>T:\IR^n\to\IR^n</m> be a linear bijection with standard matrix <m>A</m> and suppose <m>\vec{b}\in\IR^n</m>.
+            By definition of the inverse map and inverse matrix, the vector <m>\vec{x}=A^{-1}\vec{b}</m> is the unique solution to the equation <m>A\vec{x}=\vec{b}</m>. 
+        </p>
+        <p>
+            In other words, when the matrix <m>A</m> is invertible, we have a new method for solving the equation <m>A\vec{x}=\vec{b}</m>: we can first calculate <m>A^{-1}</m> and then calculate the product <m>\vec{x}=A^{-1}\vec{b}</m>.
+        </p>
+    </statement>
+</observation>
+
+ <activity>
+        <introduction>
+          <p> Consider the vector equation <me>x_{1} \left[\begin{array}{c} 0 \\ 1 \\ 1\\1 \end{array}\right] + x_{2} \left[\begin{array}{c} 0 \\ 0 \\ 1\\-1 \end{array}\right] + x_{3} \left[\begin{array}{c} 0 \\ -1 \\ 0\\-1 \end{array}\right] +x_{4}\left[\begin{array}{c} -1 \\ -4 \\ -4\\2 \end{array}\right]= \left[\begin{array}{c} 1 \\ 1 \\ 1 \\ 1\end{array}\right]</me>  with a unique solution. </p>
+        </introduction>
+          <task>
+            <statement>
+              <p> Use technology to both verify that the coefficient matrix is invertible and calculate its inverse.</p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p> Explain and demonstrate how to use the inverse to find the unique solution to the given vector equation. </p>
+            </statement>
+          </task>
+    </activity>
+<sage language="octave">
+</sage>
 
 <activity estimated-time='10'>
     <introduction>
@@ -308,6 +392,77 @@ Is the matrix <m>\left[\begin{array}{ccc} 2 &amp; 3 &amp; 1 \\ -1 &amp; -4 &amp;
             </statement>
         </task>
     </activity>
+    <activity>
+        <introduction>
+            <p>
+                Solving linear systems using matrix multiplication is most useful when we are working with one common coefficient matrix, and varying the right-hand side. 
+                That is, when we have <m>A\vec{x}=\vec{b}</m> for several different values of <m>\vec{b}</m>. 
+            </p>
+            <p>
+                In the following, let <m>A=\left[\begin{matrix}2 &amp; -1 &amp; -6\\ 2 &amp; 1 &amp; 3\\ 1 &amp; 1 &amp; 4\end{matrix}\right]</m> and consider the following questions about various equations of the form <m>A\vec{x}=\vec{b}</m>?
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Suppose that <m>\vec{b}=\left[\begin{matrix} 1\\1\\1\end{matrix}\right]</m>. 
+                    If asked to solve the equation <m>A\vec{x}=\vec{b}</m>, which of the following approaches do you prefer?
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                Calculate <m>\RREF[A|\vec{b}]</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Calculate <m>A^{-1}</m> and then compute <m>\vec{x}=A^{-1}\vec{b}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Suppose that <m>\vec{b}_1,\vec{b}_2,\vec{b}_3=\left[\begin{matrix} 1\\1\\1\end{matrix}\right],\left[\begin{matrix} 2\\1\\3\end{matrix}\right],\left[\begin{matrix} -1\\3\\5\end{matrix}\right]</m>. 
+                    If asked to solve each of the equations <m>A\vec{x}=\vec{b}_1, A\vec{x}=\vec{b}_2, A\vec{x}=\vec{b}_3</m>, which of the following approaches do you prefer?
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                Calculate <m>\RREF[A|\vec{b}_1]</m>, <m>\RREF[A|\vec{b}_2]</m>, and <m>\RREF[A|\vec{b}_3]</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Calculate <m>A^{-1}</m> and then compute <m>\vec{x}=A^{-1}\vec{b}_1</m>, <m>\vec{x}=A^{-1}\vec{b}_2</m>, and <m>\vec{x}=A^{-1}\vec{b}_3</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Suppose that <m>\vec{b}_1,\dots, \vec{b}_{10}</m> are 10 distinct vectors. 
+                    If asked to solve each of the equations <m>A\vec{x}=\vec{b}_1, \dots,  A\vec{x}=\vec{b}_{10}</m>, which of the following approaches do you prefer?
+                    <ol marker="A.">
+                        <li>
+                            <p>
+                                Calculate <m>\RREF[A|\vec{b}_1]</m>, ... <m>\RREF[A|\vec{b}_{10}]</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Calculate <m>A^{-1}</m> and then compute <m>\vec{x}=A^{-1}\vec{b}_1</m>, ... <m>\vec{x}=A^{-1}\vec{b}_{10}</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </task>
+    </activity>
 </subsection>
     <subsection>
         <title>Videos</title>
@@ -327,9 +482,16 @@ Is the matrix <m>\left[\begin{array}{ccc} 2 &amp; 3 &amp; 1 \\ -1 &amp; -4 &amp;
 
 
 
-    <exercises>
-        <p>Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/MX2/"/>.</p>
-    </exercises>
+
+     <subsection>
+        <title>Exercises</title>
+        <p component="preview">
+            Exercises available at <url href="https://tbil.org/preview/linear-algebra/exercises/#/bank/MX2/"/>
+        </p>
+        <p component="nonpreview">
+            Exercises available at <url href="https://library.tbil.org/2026/linear-algebra/exercises/#/bank/MX2/"/>
+        </p>
+    </subsection>
  <subsection>    
     <title>Mathematical Writing Explorations</title>
      <exploration>
@@ -355,6 +517,33 @@ Is the matrix <m>\left[\begin{array}{ccc} 2 &amp; 3 &amp; 1 \\ -1 &amp; -4 &amp;
              </ul>
          </statement>
      </exploration>
+<exploration>
+            <statement>
+                Use row reduction to find the inverse of the following general matrix. Give conditions on which this inverse exists.
+                <me>\left[\begin{array}{ccc}1 &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{array}\right]</me>
+             </statement>
+         </exploration>
+
+<exploration>
+            <statement>Assume that <m>H</m> is invertible, and that <m>HG</m> is the zero matrix. Prove that <m>G</m> must be the zero matrix. Would this still be true if <m>H</m> were not invertible?
+                </statement>
+         </exploration>
+
+<exploration>
+            <statement>If <m>H</m> is invertible and <m>r \in \mathbb{R}</m>, what is the inverse of <m>rH</m>?
+                </statement>
+         </exploration>
+
+<exploration>
+            <statement>If <m>H</m> and <m>G</m> are invertible, is <m>H^{-1} + G^{-1} = (H+G)^{-1}</m>?
+                </statement>
+         </exploration>
+
+<exploration>
+            <statement>Prove that if <m>A</m>, <m>P</m>, and <m>Q</m> are invertible with <m>PAQ = I</m>, then <m>A^{-1} = QP</m>.
+             </statement>
+         </exploration>
+     
     </subsection>
     <subsection>
         <title>Sample Problem and Solution</title>
