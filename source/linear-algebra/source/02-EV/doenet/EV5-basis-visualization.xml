@@ -2,7 +2,7 @@
 
 <setup>
   <boolean name="standardBasis">$basisChoice.selectedIndices = 1</boolean>
-  <point name="v">(2,3)
+  <point name="v">(-2,-3)
     <constraints>
       <constrainToGrid/>
     </constraints>
@@ -28,29 +28,38 @@
 </choiceInput>
 </p>
 
-  <graph xmin="-8" ymin="-8" xmax="8" ymax="8" displayXAxis="$standardBasis" displayYAxis="$standardBasis">
-    <line draggable="false" through="(0,0) $b1" styleNumber="2" hide="$standardBasis"/>
-    <line draggable="false" through="(0,0) $b2" styleNumber="3" hide="$standardBasis"/>
-    <lineSegment endpoints="(0,0) $v" styleNumber="1"/>
-    <point coords="$v" styleNumber="1">
-      <label><m>\vec v</m></label>
-    </point>
-    <point hide="$standardBasis" coords="$x*$b1" styleNumber="1">
-      <label><m>$x\vec b_1</m></label>
-    </point>
-    <lineSegment hide="$standardBasis" endpoints="$x*$b1 $v" styleNumber="6"/>
-    <lineSegment hide="$standardBasis" endpoints="$y*$b2 $v" styleNumber="6"/>
-    <line draggable="false" through="($v.x,0) $v" styleNumber="6" hide="$notStandardBasis"/>
-    <line draggable="false" through="($v.y,0) $v" styleNumber="6" hide="$notStandardBasis"/>
-    <point hide="$standardBasis" coords="$y*$b2" styleNumber="1">
-      <label><m>$y\vec b_2</m></label>
-    </point>
-    <lineSegment endpoints="(0,0) $b1" styleNumber="2"/>
-    <point coords="$b1" styleNumber="2">
-      <label><m>\vec b_1</m></label>
-    </point>
-    <lineSegment endpoints="(0,0) $b2" styleNumber="3"/>
-    <point coords="$b2" styleNumber="3">
-      <label><m>\vec b_2</m></label>
-    </point>
-  </graph>
+<graph xmin="-8" ymin="-8" xmax="8" ymax="8" displayXAxis="$standardBasis" displayYAxis="$standardBasis">
+  <!-- both views -->
+  <point coords="$v" styleNumber="1">
+    <label><m>\vec v</m></label>
+  </point>
+  <lineSegment draggable="false" endpoints="(0,0) $v" styleNumber="1"/>
+  <point coords="$b1" styleNumber="2">
+    <label><m>\vec b_1</m></label>
+  </point>
+  <lineSegment draggable="false" endpoints="(0,0) $b1" styleNumber="2"/>
+  <point coords="$b2" styleNumber="3">
+    <label><m>\vec b_2</m></label>
+  </point>
+  <lineSegment draggable="false" endpoints="(0,0) $b2" styleNumber="3"/>
+  <!-- standard basis -->
+  <point draggable="false" hide="not $standardBasis" coords="($v.x,0)" styleNumber="1">
+    <label><m>$v.x\vec e_1</m></label>
+  </point>
+  <lineSegment draggable="false" hide="not $standardBasis" endpoints="($v.x,0) $v" styleNumber="6"/>
+  <point draggable="false" hide="not $standardBasis" coords="(0,$v.y)" styleNumber="1">
+    <label><m>$v.y\vec e_2</m></label>
+  </point>
+  <lineSegment draggable="false" hide="not $standardBasis" endpoints="($0,$v.y) $v" styleNumber="6"/>
+  <!-- nonstandard basis -->
+  <line draggable="false" through="(0,0) $b1" styleNumber="2" hide="$standardBasis"/>
+  <line draggable="false" through="(0,0) $b2" styleNumber="3" hide="$standardBasis"/>
+  <point draggable="false" hide="$standardBasis" coords="$x*$b1" styleNumber="1">
+    <label><m>$x\vec b_1</m></label>
+  </point>
+  <lineSegment draggable="false" hide="$standardBasis" endpoints="$x*$b1 $v" styleNumber="6"/>
+  <point draggable="false" hide="$standardBasis" coords="$y*$b2" styleNumber="1">
+    <label><m>$y\vec b_2</m></label>
+  </point>
+  <lineSegment draggable="false" hide="$standardBasis" endpoints="$y*$b2 $v" styleNumber="6"/>
+</graph>
