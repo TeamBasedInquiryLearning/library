@@ -40,6 +40,8 @@
     </point>
     <lineSegment hide="$standardBasis" endpoints="$x*$b1 $v" styleNumber="6"/>
     <lineSegment hide="$standardBasis" endpoints="$y*$b2 $v" styleNumber="6"/>
+    <line draggable="false" through="($v.x,0) $v" styleNumber="6" hide="$notStandardBasis"/>
+    <line draggable="false" through="($v.y,0) $v" styleNumber="6" hide="$notStandardBasis"/>
     <point hide="$standardBasis" coords="$y*$b2" styleNumber="1">
       <label><m>$y\vec b_2</m></label>
     </point>
@@ -52,4 +54,3 @@
       <label><m>\vec b_2</m></label>
     </point>
   </graph>
-  
