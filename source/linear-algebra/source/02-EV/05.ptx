@@ -489,6 +489,32 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </statement>
     </fact>
 
+    <activity>
+        <statement>
+            <p>
+A basis for a Euclidean vector space can be used to create alternative coordinate systems.
+Using the below tool, find the unique way to write the vector
+<m>\vec v = \left[\begin{array}{c}-7\\5\end{array}\right]</m>
+as a linear combination of vectors from the basis <m>\{\vec b_1,\vec b_2\}</m> where
+<m>\left[\begin{array}{c}-2\\2\end{array}\right]</m> and
+<m>\left[\begin{array}{c}3\\-1\end{array}\right]</m>.
+            </p>
+            <interactive label="EV5-basis-visualization" platform="doenetml" width="90%" aspect="3:4">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="doenet/EV5-basis-visualization.xml"/>
+                </slate>
+            </interactive>
+            <p>
+                <ol marker="A.">
+                    <li><m>\vec v = 2\vec b_1-\vec b_2</m></li>
+                    <li><m>\vec v = -2\vec b_1-2\vec b_2</m></li>
+                    <li><m>\vec v = -\vec b_1+2\vec b_2</m></li>
+                    <li><m>\vec v = \vec b_1-\vec b_2</m></li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+
     </subsection>
 
     <subsection>
