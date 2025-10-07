@@ -8,7 +8,6 @@
     
     <outtro>
         <!-- {{#case1}} -->
-        <p>
             <list>
                 <item>
                     <p>
@@ -34,12 +33,10 @@
                     </p>
                 </item>
             </list>
-        </p>
         
         <!-- {{/case1}} -->
         
         <!-- {{#case2}} -->
-        <p>
             <list>
                 <item>
                     <p>
@@ -66,12 +63,10 @@
                     </p>
                 </item>
             </list>
-        </p>
         <!-- {{/case2}} -->
         
         
         <!-- {{#case3}} -->
-        <p>
             <list>
                 <item>
                     <p>
@@ -98,14 +93,12 @@
                     </p>
                 </item>
             </list>
-        </p>
         <!-- {{/case3}} -->
         
         
         <!-- {{#case4}} -->
         
         <!-- {{#odd}} -->
-        <p>
             <list>
                 <item>
                     <p>
@@ -132,10 +125,8 @@
                     </p>
                 </item>
             </list>
-        </p>
         <!-- {{/odd}} -->
         <!-- {{#even}} -->
-        <p>
             <list>
                 <item>
                     <p>
@@ -162,7 +153,6 @@
                     </p>
                 </item>
             </list>
-        </p>
         <!-- {{/even}} -->
         
         
