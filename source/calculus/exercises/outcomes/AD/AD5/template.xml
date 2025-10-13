@@ -2,58 +2,157 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-            For <m>\displaystyle f(x) = {{f}} </m>, identify the regions for which <m>f(x)</m> is increasing and decreasing (if any).   Additionally, identify and classify all local extrema.
+            For <m>\displaystyle f(x) = {{f}} </m>, identify the open intervals for which <m>f(x)</m> is increasing and decreasing (if any).   Additionally, identify and classify all local extrema.
         </p>
     </intro>
     
     <outtro>
         <!-- {{#case1}} -->
-        <p>
-            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
-            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
-            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
-            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is neither a max nor min.
-        </p>
+            <list>
+                <item>
+                    <p>
+                        
+                        We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+                    </p>
+                </item>
+                <item>
+                    <p>                       
+                        When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is neither a max nor min.
+                    </p>
+                </item>
+            </list>
         
         <!-- {{/case1}} -->
         
         <!-- {{#case2}} -->
-        <p>
-            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
-            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
-            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
-            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is a local minimum and a critical point <m>{{cp2}}</m> is a local maximum.
-        </p>
+            <list>
+                <item>
+                    <p>
+                        
+                        We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is a local minimum and a critical point <m>{{cp2}}</m> is a local maximum.
+                    </p>
+                </item>
+            </list>
         <!-- {{/case2}} -->
         
         
         <!-- {{#case3}} -->
-        <p>
-            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
-            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
-            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
-            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There are no critical points.
-        </p>
+            <list>
+                <item>
+                    <p>
+                        
+                        We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There are no critical points.
+                    </p>
+                </item>
+            </list>
         <!-- {{/case3}} -->
         
         
         <!-- {{#case4}} -->
         
         <!-- {{#odd}} -->
-        <p>
-            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
-            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
-            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
-            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is a local minimum.
-        </p>
+            <list>
+                <item>
+                    <p>
+                        
+                        We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There is a critical point <m>{{cp1}}</m> which is a local minimum.
+                    </p>
+                </item>
+            </list>
         <!-- {{/odd}} -->
         <!-- {{#even}} -->
-        <p>
-            We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
-            When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
-            When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
-            When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There are critical points <m>{{cp1}}</m> which is a local maximum and <m>{{cp2}}</m> which is a local minimum.
-        </p>
+            <list>
+                <item>
+                    <p>
+                        
+                        We have that <m>\displaystyle f'(x) = {{fp}}</m>.  
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>x &lt; {{cv1}}, f'(x) {{sign11}}</m> and <m>y</m> is {{change1}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv1}} &lt; x &lt; {{cv2}}, f'(x) {{sign12}}</m> and <m>y</m> is {{change2}}.
+                    </p>
+                </item>
+                <item>
+                    <p>
+                        
+                        When <m>{{cv2}} &lt; x, f'(x) {{sign13}}</m> and <m>y</m> is {{change3}}.  There are critical points <m>{{cp1}}</m> which is a local maximum and <m>{{cp2}}</m> which is a local minimum.
+                    </p>
+                </item>
+            </list>
         <!-- {{/even}} -->
         
         
