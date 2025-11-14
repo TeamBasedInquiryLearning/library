@@ -36,23 +36,6 @@ discussing its corresponding linear transformation.
         <knowl>
             <content>
                 <p>
-If the matrix is invertible, use technology to find its inverse.
-                </p>
-            </content>
-            <outtro>
-                <p>
-<!-- {{#invertible}} -->
-Its inverse is <m>{{inverse}}</m>.
-<!-- {{/invertible}} -->
-<!-- {{^invertible}} -->
-N/A
-<!-- {{/invertible}} -->
-                </p>
-            </outtro>
-        </knowl>
-        <knowl>
-            <content>
-                <p>
 If the matrix is invertible, explain and demonstrate how to find the
 {{ordinal}} column of this inverse by solving an appropriate linear system
 or vector equation.
@@ -66,6 +49,23 @@ Since
 \operatorname{RREF} {{ord_matrix}} = {{ord_rref}}
 </me>
 the {{ordinal}} column of the inverse is <m>{{ord_col}}</m>.
+<!-- {{/invertible}} -->
+<!-- {{^invertible}} -->
+N/A
+<!-- {{/invertible}} -->
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+If the matrix is invertible, use technology to find its inverse.
+                </p>
+            </content>
+            <outtro>
+                <p>
+<!-- {{#invertible}} -->
+Its inverse is <m>{{inverse}}</m>.
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
 N/A
