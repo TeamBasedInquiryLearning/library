@@ -25,10 +25,33 @@ discussing its corresponding linear transformation.
                 </p>
                 <p>
 <!-- {{#invertible}} -->
-<m>{{label}}</m> is invertible.
+<m>{{label}}</m> is invertible because its transformation is bijective.
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
-<m>{{label}}</m> is not invertible.
+<m>{{label}}</m> is not invertible because its transformation is not bijective.
+<!-- {{/invertible}} -->
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+If the matrix is invertible, explain and demonstrate how to find the
+{{ordinal}} column of this inverse by solving an appropriate linear system
+or vector equation.
+                </p>
+            </content>
+            <outtro>
+                <p>
+<!-- {{#invertible}} -->
+Since
+<me>
+\operatorname{RREF} {{ord_matrix}} = {{ord_rref}}
+</me>
+the {{ordinal}} column of the inverse is <m>{{ord_col}}</m>.
+<!-- {{/invertible}} -->
+<!-- {{^invertible}} -->
+N/A
 <!-- {{/invertible}} -->
                 </p>
             </outtro>
@@ -43,30 +66,6 @@ If the matrix is invertible, use technology to find its inverse.
                 <p>
 <!-- {{#invertible}} -->
 Its inverse is <m>{{inverse}}</m>.
-<!-- {{/invertible}} -->
-<!-- {{^invertible}} -->
-N/A
-<!-- {{/invertible}} -->
-                </p>
-            </outtro>
-        </knowl>
-        <knowl>
-            <content>
-                <p>
-If the matrix is invertible, explain and demonstrate how to find the
-{{ordinal}} column of this inverse using a technique that could be
-performed without technology (though you may use technology for this
-exercise).
-                </p>
-            </content>
-            <outtro>
-                <p>
-<!-- {{#invertible}} -->
-Since
-<me>
-\operatorname{RREF} {{ord_matrix}} = {{ord_rref}}
-</me>
-the {{ordinal}} column of the inverse is <m>{{ord_col}}</m>.
 <!-- {{/invertible}} -->
 <!-- {{^invertible}} -->
 N/A

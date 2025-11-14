@@ -14,7 +14,7 @@ class Generator(BaseGenerator):
         constants = A*solution
         m = A.augment(constants, subdivide=True)
         ordinal = randrange(1,4)
-        ordinal_string = ["1st", "2nd", "3rd", "4th"][ordinal]
+        ordinal_string = ["first", "second", "third", "fourth"][ordinal]
         ord_matrix = A.augment(column_matrix(
             identity_matrix(4).column(ordinal)),
             subdivide=True)
@@ -43,6 +43,7 @@ class Generator(BaseGenerator):
             "invertible": False,
             "label": labels[1],
             "vector_eq": TBIL.VectorEquation(m),
+            "ordinal": ordinal_string,
         }]
 
         shuffle(matrices)
