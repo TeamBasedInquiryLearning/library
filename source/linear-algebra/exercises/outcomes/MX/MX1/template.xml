@@ -18,22 +18,23 @@
     </knowl>
     <knowl>
         <content>
+            <p>Show how to find the {{ordinal}} column of this product without technology.</p>
+        </content>
+            <outtro>
+                <p>
+<me>
+{{productName}}\vec e_{ {{ord_value}} } = {{ord_col}}
+</me>
+                </p>
+            </outtro>
+    </knowl>
+    <knowl>
+        <content>
             <p>Find their product using technology.</p>
         </content>
         <outtro>
             <p>
                 <me>{{productName}} = {{product}}</me>
-            </p>
-        </outtro>
-    </knowl>
-    <knowl>
-        <content>
-            <p>Show how to find this product without technology.</p>
-        </content>
-        <outtro>
-            <p>
-                Compute each <m>{{productName}}\vec e_i</m> to obtain
-                each column.
             </p>
         </outtro>
     </knowl>

@@ -22,16 +22,17 @@ class Generator(BaseGenerator):
         productName = letters[indices.index("L")] + letters[indices.index("R")]
         product = matrices[indices.index("L")] * matrices[indices.index("R")]
 
+        
+        ordinal = randrange(product.ncols())
+        ordinal_string = ["first", "second", "third", "fourth"][ordinal]
 
         return {
             "A": matrices[0],
             "B": matrices[1],
             "C": matrices[2],
-#            "leftMatrix": letters[indices.index("L")],
-#            "rightMatrix": letters[indices.index("R")],
-#            "leftDim": dims[0],
-#            "middleDim": dims[1],
-#            "rightDim": dims[2],
             "productName": productName,
             "product": product,
+            "ord_value": ordinal+1,
+            "ordinal": ordinal_string,
+            "ord_col": column_matrix(product.column(ordinal)),
         }
