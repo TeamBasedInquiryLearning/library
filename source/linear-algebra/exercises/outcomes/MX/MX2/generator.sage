@@ -43,6 +43,7 @@ class Generator(BaseGenerator):
             "invertible": False,
             "label": labels[1],
             "vector_eq": TBIL.VectorEquation(m),
+            "ordinal": ordinal_string,
         }]
 
         shuffle(matrices)
