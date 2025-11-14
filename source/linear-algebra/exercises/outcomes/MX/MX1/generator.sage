@@ -24,7 +24,7 @@ class Generator(BaseGenerator):
 
         
         ordinal = randrange(product.ncols())
-        ordinal_string = ["1st", "2nd", "3rd", "4th"][ordinal]
+        ordinal_string = ["first", "second", "third", "fourth"][ordinal]
 
         return {
             "A": matrices[0],
