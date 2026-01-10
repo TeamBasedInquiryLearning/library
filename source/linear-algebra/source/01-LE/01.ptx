@@ -771,6 +771,42 @@ Augmented matrix:
         </p>
         </statement>
     </example>
+
+     <activity>
+    <introduction>
+      <p> Consider the vector equation <me>x_{1} \left[\begin{array}{c} -2 \\ -1 \\ 0 \\ -2 \end{array}\right] + x_{2} \left[\begin{array}{c} -1 \\ -1 \\ -2 \\ 0 \end{array}\right] + x_{3} \left[\begin{array}{c} 5 \\ 3 \\ 3 \\ 5 \end{array}\right] = \left[\begin{array}{c} -10 \\ -6 \\ -5 \\ -9 \end{array}\right]</me></p>
+    </introduction>
+      <task>
+        <statement>
+          <p> Write a corresponding system of equations.</p>
+        </statement>
+        <answer>
+          <p>
+            <me>\begin{matrix} -2 \, x_{1} &amp; - &amp; x_{2} &amp; + &amp; 5 \, x_{3} &amp; = &amp; -10 \\ -x_{1} &amp; - &amp; x_{2} &amp; + &amp; 3 \, x_{3} &amp; = &amp; -6 \\ &amp; - &amp; 2 \, x_{2} &amp; + &amp; 3 \, x_{3} &amp; = &amp; -5 \\ -2 \, x_{1} &amp; &amp; &amp; + &amp; 5 \, x_{3} &amp; = &amp; -9 \\ \end{matrix}</me>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Write a corresponding augmented matrix. </p>
+        </statement>
+        <answer>
+          <p>
+            <me>\left[\begin{array}{ccc|c} -2 &amp; -1 &amp; 5 &amp; -10 \\ -1 &amp; -1 &amp; 3 &amp; -6 \\ 0 &amp; -2 &amp; 3 &amp; -5 \\ -2 &amp; 0 &amp; 5 &amp; -9 \end{array}\right]</me>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> Write the corresponding coefficient matrix.</p>
+        </statement>
+        <answer>
+          <p>
+            <me>\left[\begin{array}{ccc} -2 &amp; -1 &amp; 5 \\ -1 &amp; -1 &amp; 3 \\ 0 &amp; -2 &amp; 3 \\ -2 &amp; 0 &amp; 5 \end{array}\right]</me>
+          </p>
+        </answer>
+      </task>
+  </activity>
     </subsection>
 
     <subsection>
