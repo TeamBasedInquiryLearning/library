@@ -20,22 +20,26 @@
 
         <!-- {{^sys}} -->
             <knowl>
-                <content><p> Write a corresponding system of equations.</p></content>
+                <content><p> Write the corresponding system of equations.</p></content>
                 <outtro><p><me>{{system}}</me></p></outtro>
             </knowl>
         <!-- {{/sys}} -->
         <!-- {{^mat}} -->
             <knowl>
-                <content><p> Write a corresponding augmented matrix. </p></content>
+                <content><p> Write the corresponding augmented matrix. </p></content>
                 <outtro><p><me>{{matrix}}</me></p></outtro>
             </knowl>
         <!-- {{/mat}} -->
         <!-- {{^vec}} -->
             <knowl>
-                <content><p> Write a corresponding vector equation.</p></content>
+                <content><p> Write the corresponding vector equation.</p></content>
                 <outtro><p><me>{{vectorequation}}</me></p></outtro>
             </knowl>
         <!-- {{/vec}} -->
 
+            <knowl>
+                <content><p> Write the corresponding coefficient matrix.</p></content>
+                <outtro><p><me>{{coeffmatrix}}</me></p></outtro>
+            </knowl>
     <!-- {{/prompt}} -->
 </knowl>
