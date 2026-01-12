@@ -82,7 +82,7 @@
 Consider the linear transformation <m>A : \IR^2 \rightarrow \IR^2</m> 
 given by the matrix <m>A = \left[\begin{array}{cc} 2 &amp; 2 \\ 0 &amp; 3 \end{array}\right]</m>.
         </p>
-<figure>
+<figure xml:id="fig-GT3-image-unit-square-transform">
 	<image width="75%" xml:id="GT3-image-unit-square-transform">
 		<latex-image>
 \begin{tikzpicture}
@@ -98,6 +98,16 @@ given by the matrix <m>A = \left[\begin{array}{cc} 2 &amp; 2 \\ 0 &amp; 3 \end{a
 \draw[purple!50!red,thick,-&gt;] (0,0) -- (2,1);
 \end{tikzpicture}
 		</latex-image>
+    <description>
+      A figure in the <m>xy</m>-plane.  
+      A blue vector pointing right along the <m>x</m>-axis is labeled <m>A\vec{e}_1</m>.
+      A blue vector pointing up and right is labeled <m>A\vec{e}_2</m>.
+      Dotted blue lines complete the parallelogram spanned by these two vectors.
+      A red horizontal vector labeled <m>\vec{e}_1</m> and a red vertical vector labeled <m>\vec{e}_2</m> 
+      form the edges of a red square.
+      A red vector points up and to the right through the middle of the parallelogram,
+      and a purple, longer vector parallel to this vector extends out further.
+    </description>
 	</image>
 	<caption>Transformation of the unit square by the linear transformation <m>A</m></caption>
 </figure>
@@ -151,6 +161,12 @@ is a vector <m>\vec{x} \in \IR^n</m> such that <m>A\vec{x}</m> is parallel to <m
   node [above] {\(\left[\begin{array}{c}2\\1\end{array}\right]\)};
 \end{tikzpicture}
 		</latex-image>
+    <description>
+      The image from <xref ref="fig-GT3-image-unit-square-transform"/> is reproduced with most of the parts grayed out.
+      The red vector pointing up and to the right is now labeled <m>\left[\begin{array}{c}2 \\ 1 \end{array}\right]</m>,
+      and the purple parallel vector remains; it is labeled to the right with <m>A\left[\begin{array}{c}2 \\ 1\end{array}\right]=3\left[\begin{array}{c}2 \\ 1\end{array}\right]</m>.
+      The red vector <m>\vec{e}_1</m> remains, and the parallel blue vector is now labeled <m>A\vec{e}_1=2\vec{e}_1</m>.
+      </description>
 	</image>
 	<caption>The map <m>A</m> stretches out the eigenvector <m>\left[\begin{array}{c}2 \\ 1 \end{array}\right]</m> by a factor of <m>3</m> (the corresponding eigenvalue).</caption>
 </figure>
