@@ -11,14 +11,24 @@ In engineering, a <term>truss</term> is a structure designed from several beams
 of material called <term>struts</term>, assembled to behave as a single object.
         </p>
         <figure>
-            <image xml:id="truss-image" width="75%" source="truss.jpg"/>
+            <image xml:id="truss-image" width="75%" source="truss.jpg">
+                <description>
+                    A photograph of a bridge, with the steel girders forming triangles.
+                </description>
+            </image>
             <caption>A simple truss</caption>
         </figure>
-        <figure>
+        <figure xml:id="fig-simple-truss">
             <image xml:id="truss-image-simple" width="75%">
                 <latex-image>
 \drawtruss{}
                 </latex-image>
+                <description>
+                    A diagram representing a simple truss.  Points are labeled A,B,C,D,E, with A and B on the same level on top,
+                    and C,D, and E below.  The truss is represented by three adjacent triangles: ACD, ADB, and BDE.
+                    Below points C and E are small blue triangles, representing where the bridge is anchored to the ground.
+                    A red arrow points downward from D in the middle of the truss, representing the load put on the truss.
+                </description>
             </image>
             <caption>A simple truss</caption>
         </figure>
@@ -38,6 +48,9 @@ with a <m>10000 N</m> load applied to the node given by <m>D</m>.
                 <latex-image>
 \drawtruss{}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced.
+            </description>
             </image>
             <caption>A simple truss</caption>
         </figure>
@@ -69,6 +82,12 @@ some of the struts will be compressed, while others will be tensioned.
                 <latex-image>
 \drawtruss{\trussCompletion}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, but with additional decorations.
+                A blue arrow points up and to the right from C, and up and to the left from E.
+                Edges AB, AC and BE are decorated with red double sided outward arrows indicating tension.
+                Edges AD and BD are decorated with red double sided inward arrows indicating compression.
+            </description>
             </image>
             <caption>Completed truss</caption>
         </figure>
@@ -89,6 +108,10 @@ For example, at the bottom left node, 3 forces are acting.
                 <latex-image>
 \drawtruss{\trussCForces}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, but with additional decorations.
+                At C, red arrows point parallel to the struts towards A and D.  A blue arrow points up and to the right from C.
+            </description>
             </image>
             <caption>Truss with forces</caption>
         </figure>
@@ -118,6 +141,9 @@ that must be satisfied for each of the other four nodes of the truss.
                 <latex-image>
 \drawtruss{}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced.
+            </description>
             </image>
             <caption>A simple truss</caption>
         </figure>
@@ -249,6 +275,9 @@ how many scalar variables will be required?
                 <latex-image>
 \drawtruss{}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced.
+            </description>
             </image>
             <caption>A simple truss</caption>
         </figure>
@@ -267,6 +296,10 @@ one variable may be used to represent each.
                 <latex-image>
 \drawtruss{\trussStrutVariables}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, but now each strut is labeled with a variable.
+                Struts AB, AC, AD, BD, BE, CD, and DE are labeled <m>x_1, \ldots, x_7</m> respectively.
+            </description>
             </image>
             <caption>Variables for the truss</caption>
         </figure>
@@ -295,6 +328,10 @@ two variables may be used to represent each.
                 <latex-image>
 \drawtruss{\trussNormalForces}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, but with additional decorations.
+                Blue arrows representing normal forces point up and to the right from C, and up and to the left from E.
+            </description>
             </image>
             <caption>Truss with normal forces</caption>
         </figure>
@@ -324,6 +361,9 @@ one for the horizontal component and one for the vertical.
                 <latex-image>
 \drawtruss{\trussStrutVariables}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, with the variables labeling each strut.
+            </description> 
             </image>
             <caption>Variables for the truss</caption>
         </figure>
@@ -359,6 +399,9 @@ then compute each component (approximating <m>\sqrt{3}/2\approx 0.866</m>).
                 <latex-image>
 \drawtruss{\trussStrutVariables}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, with the variables labeling each strut.
+            </description> 
             </image>
             <caption>Variables for the truss</caption>
         </figure>
@@ -463,6 +506,11 @@ The vertical normal forces <m>y_2+z_2</m> counteract the <m>10000</m> load.
                 <latex-image>
 \drawtruss{\trussCompletion}
                 </latex-image>
+            <description>
+                The simple truss in <xref ref="fig-simple-truss"/> is reproduced, with the red decorations indicationg 
+                tension on struts AC, AB, and BE and compression on struts AD and BD.  
+                The blue normal force vectors pointing up and right from C and up and left from E are also shown.
+            </description> 
             </image>
             <caption>Completed truss</caption>
         </figure>
