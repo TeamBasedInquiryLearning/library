@@ -15,7 +15,7 @@ The $2,110,000,000,000 Problem
 In the picture below, each circle represents a webpage, and each arrow
 represents a link from one page to another.
             </p>
-        <figure>
+        <figure xml:id="fig-pagerank-7p-network">
         <image width="75%" xml:id="pagerank-7p-network">
             <latex-image>
 \begin{tikzpicture}
@@ -45,6 +45,40 @@ represents a link from one page to another.
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+          <description>
+            <p>A network consisting of seven numbered circles connected by red arrows. The circles are arranged in two rows: the top row
+            from left to right is circles 1, 4, 5, and 6.  The bottom row, from left to right, is circles 2, 3, and 7.  Circles 2, 3, and 7 are
+            directly below circles 1,4, and 5 respectively; no circle is below circle 6.</p> 
+            <p>
+            Circle 1 has arrows pointing right to circle 4 and down to circle 2.
+            An incoming arrow arrives upward from circle 2.
+            </p>
+            <p>
+            Circle 2 has two arrows pointing out, one back up to circle 1, and one to the right to circle 3.
+            Arrows come in from circle 1 above, from circle 4 which is above and to the right, and from 
+            circle 7 which is to the right past circle 3.
+            </p>
+            <p>
+            Circle 3 has a single arrow coming in from the left from circle 2.  
+            Two arrows go outward: one up to circle 4, and one to the right to circle 7.
+            </p>
+            <p>
+            Circle 4 has arrows come in from circle 1 on the left, circle 3 below, and circle 7 below and right.  
+            A single arrow points out, down and to the left to circle 2.
+            </p>
+            <p>
+            Circle 5 has one arrow arriving: from the right from circle 6.
+            Two arrows point out: one to the right to circle 6 and one down to circle 7.
+            </p>
+            <p>
+            Circle 6 has one arrow coming in from the left from circle 5.  
+            Two arrows point out: to the left to circle 5 and down and left to circle 7.
+            </p>
+            <p>
+            Circle 7 has two arrows pointing out: left to circle 2 and up and left to circle 4.
+            Three arrows point in: from the left from circle 3, from above from circle 5, and from above and right from circle 6.
+            </p>
+        </description>
         </image>
             <caption>A seven-webpage network</caption>
     </figure>
@@ -85,7 +119,7 @@ A webpage distributes its importance equally among all the pages it links to
         <p>
 Consider this small network with only three pages.  Let <m>x_1, x_2, x_3</m> be the importance of the three pages respectively.
         </p>
-        <figure>
+        <figure xml:id="fig-pagerank-3p-network">
         <image width="75%" xml:id="pagerank-3p-network">
             <latex-image>
 \begin{tikzpicture}
@@ -102,6 +136,11 @@ Consider this small network with only three pages.  Let <m>x_1, x_2, x_3</m> be 
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+            <description>
+                A network consisting of three numbered circles connected by 4 red arrows.  
+                Arrows point from circle 1 to both circle 2 and circle 3.  
+                An arrow points from circle 2 to circle 1, and the final arrow points from circle 3 to circle 2.
+            </description>
         </image>
             <caption>A three-webpage network</caption>
     </figure>
@@ -143,6 +182,9 @@ This corresponds to the <term>page rank system</term>:
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+                <description>
+                    The image from <xref ref="fig-pagerank-3p-network"/> is reproduced.
+                </description>
         </image>
             <caption>A three-webpage network</caption>
         </figure>
@@ -232,6 +274,9 @@ That is, find the eigenspace associated with <m>\lambda=1</m> for the matrix
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+                <description>
+                    The image from <xref ref="fig-pagerank-3p-network"/> is reproduced.
+                </description>
         </image>
             <caption>A three-webpage network</caption>
         </figure>
@@ -314,6 +359,9 @@ and both pages are twice as important as page <m>3</m>.
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+                <description>
+                    The network from <xref ref="fig-pagerank-7p-network"/> is reproduced.
+                </description>
         </image>
             <caption>A seven-webpage network</caption>
     </figure>
@@ -373,6 +421,9 @@ A=\left[\begin{array}{ccccccc}
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+                <description>
+                    The network from <xref ref="fig-pagerank-7p-network"/> is reproduced.
+                </description>
         </image>
             <caption>A seven-webpage network</caption>
     </figure>
@@ -431,6 +482,9 @@ here is a complete ranking of all seven pages from most important to least impor
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+                <description>
+                    The network from <xref ref="fig-pagerank-7p-network"/> is reproduced.
+                </description>
         </image>
             <caption>A seven-webpage network</caption>
             </figure>
@@ -476,6 +530,18 @@ from most important to least important.
 \end{scope}
 \end{tikzpicture}
                 </latex-image>
+            <description>
+                <p>A different network with seven numbered circles connected by red arrows.</p>
+                    <ul>
+                        <li>Circle 1 has arrows outward to circles 2 and 5, and inward from circle 3.</li>
+                        <li>Circle 2 has arrows outward to circles 5 and 7, and inward from circles 1,3,6, and 7.</li>
+                        <li>Circle 3 has arrows outward to circles 1 and 2, and a single arrow inward from circle 4.</li>
+                        <li>Circle 4 has a single arrow outward to circle 3, and a single arrow inward from circle 7.</li>
+                        <li>Circle 5 has a single arrow outward to circle 6, and arrows inward from circles 1,2, and 6.</li>
+                        <li>Circle 6 has arrows outward to circles 5 and 2, and a single arrow inward from circle 6.</li>
+                        <li>Circle 7 has arrows outward to circles 2 and 4, and a single arrow inward from circle 2.</li>
+                    </ul>
+            </description>
         </image>
             <caption>Another seven-webpage network</caption>
             </figure>
