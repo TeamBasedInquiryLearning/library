@@ -79,6 +79,16 @@ into the determinant of a smaller matrix.
   \draw[purple,dashed,very thick] (0,0,0) -- node[left] {\tiny\(h=1\)} (0,1,0);
   \end{tikzpicture}
 		</latex-image>
+    <description>
+      Three vectors in <m>\IR^3</m> are shown in red: 
+      <m>\left[\begin{array}{c}1 \\ 1 \\ 0 \end{array}\right]</m>,
+      <m>\left[\begin{array}{c}1 \\ 3 \\ 0 \end{array}\right]</m>, and
+      <m>\left[\begin{array}{c}0 \\ 1 \\ 1 \end{array}\right]</m>.
+      The parallelogram formed by <m>\left[\begin{array}{c}1 \\ 1 \\ 0 \end{array}\right]</m> and 
+      <m>\left[\begin{array}{c}1 \\ 3 \\ 0 \end{array}\right]</m>, lying in the <m>xy</m>-plane, is shaded red.
+      The parallelepiped formed by the three vectors is shown in blue.
+      Additionally, a dashed red line segment along the <m>z</m> axis spanning the apparent height of the parallelepiped is labeled <m>h=1</m>.
+    </description>
 	</image>
 	<caption>Transformation of the unit cube by the linear transformation.</caption>
   </figure>
