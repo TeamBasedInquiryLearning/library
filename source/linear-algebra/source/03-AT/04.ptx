@@ -88,6 +88,18 @@ distinct vectors to the same place.  More precisely, <m>T</m> is injective if
   \node[anchor=north] at (5,-1) {not injective};
 \end{tikzpicture}
 				</latex-image>
+        <description>
+          <p>Two examples are shown.  The one on the left illustrates a transformation from <m>\IR^2</m> to <m>\IR^3</m>
+          with the <m>xy</m> coordinate axes (with two distinct vectors labeled <m>\vec{v}</m> and <m>\vec{w}</m> shown) 
+          connected by a curved dashed arrow to the right to an image of the <m>xyz</m> coordinate axes.  The images of 
+          the individual vectors are shown and are distinct, labeled <m>T(\vec{v})</m> and <m>T(\vec{w})</m>. This example
+          is labeled below as "injective".</p>
+          <p>The example on the right illustrates a transformation from <m>\IR^3</m>to <m>\IR^3</m>
+          with the <m>xyz</m> coordinate axes (with two distinct vectors labeled <m>\vec{v}</m> and <m>\vec{w}</m> shown) 
+          connected by a curved dashed arrow to the right to an image of the <m>xy</m> coordinate axes.  The images of 
+          the individual vectors are shown and are the same, labeled <m>T(\vec{v})=T(\vec{w})</m>. This example
+          is labeled below as "not injective".</p>
+        </description>
 			</image>
         </figure>
     </statement>
@@ -252,6 +264,18 @@ Let <m>T: V \rightarrow W</m> be a linear transformation.
   \node[anchor=north] at (5,-2) {not surjective};
 \end{tikzpicture}
 			</latex-image>
+        <description>
+          <p>Two examples are shown.  The one on the left illustrates a transformation from <m>\IR^3</m> to <m>\IR^2</m>
+          with the <m>xyz</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xy</m>-plane.  The images of the individual arbitrary vectors are shown,
+          and the entire <m>xy</m> plane is shaded, representing that they span the entire space <m>\IR^2</m>.  This example is
+          labeled below as "surjective".</p>
+          <p>The example on the right illustrates a transformation from <m>\IR^2</m>to <m>\IR^3</m>
+          with the <m>xy</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xyz</m> coordinate axes.  The images of the individual arbitrary vectors are 
+          shown, all lying in a two dimensional plane which is shaded.  This example is labeled below as "not surjective".
+          </p>
+        </description>
 		</image>
     </figure>
     </statement>
@@ -435,6 +459,12 @@ recognized by its <term>trivial</term> kernel.
   \end{scope}
 \end{tikzpicture}
 				</latex-image>
+        <description>
+          The <m>xy</m>-plane on the left, with the zero vector <m>\vec{0}</m> and two distinct, non-parallel arbitrary vectors
+          labeled <m>\vec{v}</m> and <m>\vec{w}</m>, connected by a curved dashed arrow to the right to the <m>xyz</m> coordinate axes,
+          representing <m>\IR^3</m>.  Three vectors are shown in <m>\IR^3</m>: the zero vector, labeled <m>T(\vec{0})=\vec{0}</m>; 
+          and nonzero, non-parallel vectors <m>T(\vec{v})</m> and <m>T(\vec{w})</m>.
+        </description>
 			</image>
         </figure>
     </statement>
@@ -537,6 +567,19 @@ recognized by its identical codomain and image.
   \node[anchor=north] at (5,-2) {not surjective, \(\Im T\not=\IR^3\)};
 \end{tikzpicture}
 			</latex-image>
+        <description>
+          <p>Two examples are shown.  The one on the left illustrates a transformation from <m>\IR^3</m> to <m>\IR^2</m>
+          with the <m>xyz</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xy</m>-plane.  The images of the individual arbitrary vectors are shown,
+          and the entire <m>xy</m> plane is shaded, representing that they span the entire space <m>\IR^2</m>.  This example is
+          labeled below as "surjective, <m>\Im T = \IR^2</m>".</p>
+          <p>The example on the right illustrates a transformation from <m>\IR^2</m>to <m>\IR^3</m>
+          with the <m>xy</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xyz</m> coordinate axes.  The images of the individual arbitrary vectors are 
+          shown, all lying in a two dimensional plane which is shaded.  This example is labeled below as "not surjective, 
+          <m>\Im T \neq \IR^3</m>".
+          </p>
+        </description>
 		</image>
     </figure>
     </statement>
@@ -756,6 +799,18 @@ dimension than its codomain, and is therefore not surjective.
       \node[anchor=north] at (5,-2) {not surjective, \(2&lt;3\)};
     \end{tikzpicture}
 			</latex-image>
+        <description>
+          <p>Two examples are shown.  The one on the left illustrates a transformation from <m>\IR^3</m> to <m>\IR^2</m>
+          with the <m>xyz</m> coordinate axes (with two non-parallel vectors <m>\vec{v}</m> and <m>\vec{w}</m> shown) connected by a curved dashed
+          arrow to the right to an image of the <m>xy</m>-plane.  A single vector is shown in the <m>xy</m>-plane, labeled
+          <m>T(\vec{v})=T(\vec{w})</m>.  This example is labeled below as "not injective, <m>3&gt;2</m>".</p>
+          <p>The example on the right illustrates a transformation from <m>\IR^2</m>to <m>\IR^3</m>
+          with the <m>xy</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xyz</m> coordinate axes.  The images of the individual arbitrary vectors are 
+          shown, all lying in a two dimensional plane which is shaded.  This example is labeled below as "not surjective, 
+          <m>2 &lt;3</m>".
+          </p>
+        </description>
 		</image>
     </figure>
     <p>
