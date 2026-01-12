@@ -76,6 +76,14 @@ transforms the unit square.
 \draw[red,dashed] (1,0) -- (1,1) -- (0,1);
 \end{tikzpicture}
 		</latex-image>
+    <description>
+      Two vectors are shown in the <m>xy</m>-plane: 
+      A blue vector a long the <m>x</m>-axis is labeled <m>A\vec{e}_1 =\left[\begin{array}{c}2 \\ 0 \end{array}\right]</m> and 
+      a blue vector a long the <m>y</m>-axis is labeled <m>A\vec{e}_2 =\left[\begin{array}{c}0 \\ 3 \end{array}\right]</m>.
+      Dashed blue lines extend vertically and horizontally from the ends of these vectors to illustrate a rectangle formed
+      with those two vectors as two of the sides.  Additionally, a shaded red unit square is similarly illustrated by the
+      red vectors <m>\left[\begin{array}{c}1 \\ 0\end{array}\right]</m> and <m>\left[\begin{array}{c}0 \\ 1\end{array}\right]</m>. 
+    </description>
 	</image>
 	<caption>Transformation of the unit square by the matrix <m>A</m>.</caption>
 </figure>
@@ -97,7 +105,7 @@ The image below illustrates how the linear transformation
 standard matrix <m>B = \left[\begin{array}{cc} 2 &amp; 3 \\ 0 &amp; 4 \end{array}\right]</m>
 transforms the unit square.
         </p>
-<figure>
+<figure xml:id="fig-GT1-image-unit-square-transform2">
 	<image width="75%" xml:id="GT1-image-unit-square-transform2">
 		<latex-image>
 \begin{tikzpicture}
@@ -112,6 +120,14 @@ transforms the unit square.
 \draw[red,dashed] (1,0) -- (1,1) -- (0,1);
 \end{tikzpicture}
 		</latex-image>
+    <description>
+      Two vectors are shown in the <m>xy</m>-plane: 
+      A blue vector a long the <m>x</m>-axis is labeled <m>B\vec{e}_1 =\left[\begin{array}{c}2 \\ 0 \end{array}\right]</m> and 
+      a blue vector extending upwards to the right is labeled <m>B\vec{e}_2 =\left[\begin{array}{c}3 \\ 4 \end{array}\right]</m>.
+      Dashed blue lines extend from the ends of these vectors parallel to the other vector to illustrate a parallelogram formed
+      with those two vectors as two of the sides.  Additionally, a shaded red unit square is similarly illustrated by the
+      red vectors <m>\left[\begin{array}{c}1 \\ 0\end{array}\right]</m> and <m>\left[\begin{array}{c}0 \\ 1\end{array}\right]</m>. 
+    </description>
 	</image>
 	<caption>Transformation of the unit square by the matrix <m>B</m></caption>
 </figure>
@@ -146,7 +162,7 @@ What is the area of the transformed unit square?
       =
     4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]
   </me>
-  <figure>
+  <figure xml:id="fig-GT1-image-scale-not-rotate">
 	<image width="75%" xml:id="GT1-image-scale-not-rotate">
 		<latex-image>
   \begin{tikzpicture}
@@ -161,6 +177,14 @@ What is the area of the transformed unit square?
   \draw[blue,dashed] (2,0) -- (5,2) -- (3,2);
   \end{tikzpicture}
 		</latex-image>
+    <description>
+      Two vectors are shown in the <m>xy</m>-plane: 
+      A blue vector a long the <m>x</m>-axis is labeled <m>B\left[\begin{array}{c}1 \\ 0 \end{array}\right] =2\left[\begin{array}{c}1 \\ 0 \end{array}\right]</m> and 
+      a blue vector extending to the right and upwards is labeled <m>B\left[\begin{array}{c}\frac{3}{4} \\ \frac{1}{2} \end{array}\right] =4\left[\begin{array}{c}\frac{3}{4} \\ \frac{1}{2} \end{array}\right]</m>.
+      Dashed blue lines extend from the ends of these vectors parallel to the other vector to illustrate a parallelogram formed
+      with those two vectors as two of the sides.  Additionally, a shaded red parallelogram is similarly illustrated by the
+      red vectors <m>\left[\begin{array}{c}1 \\ 0\end{array}\right]</m> and <m>\left[\begin{array}{c}\frac{3}{4} \\ \frac{1}{2}\end{array}\right]</m>. 
+    </description>
 	</image>
 	<caption>Certain vectors are stretched out without being rotated.</caption>
   </figure>
@@ -206,6 +230,9 @@ What is the area of the transformed unit square?
   \draw[blue,dashed] (2,0) -- (5,2) -- (3,2);
   \end{tikzpicture}
 		</latex-image>
+  <description>
+    The images from <xref ref="fig-GT1-image-unit-square-transform2"/> and <xref ref="fig-GT1-image-scale-not-rotate"/> are shown side by side.
+  </description>
 	</image>
 	<caption>A linear map transforming parallelograms into parallelograms.</caption>
 </figure>
@@ -250,6 +277,9 @@ In order to figure out how to compute it, we first figure out the properties it 
   \draw[blue,dashed] (2,0) -- (5,2) -- (3,2);
   \end{tikzpicture}
 		</latex-image>
+  <description>
+    The images from <xref ref="fig-GT1-image-unit-square-transform2"/> and <xref ref="fig-GT1-image-scale-not-rotate"/> are shown side by side.
+  </description>
 	</image>
 	<caption>The linear transformation <m>B</m> scaling areas by a constant factor, which we call the <term>determinant</term></caption>
 </figure>
@@ -277,7 +307,13 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
 \draw[dashed,blue] (1,0) -- (1,1);
 \draw[dashed,blue] (0,1) -- (1,1);
 \end{tikzpicture}
-		</latex-image>
+		</latex-image>    <description>
+      Two vectors are shown in the <m>xy</m>-plane: 
+      A blue vector a long the <m>x</m>-axis is labeled <m>\vec{e}_1=\left[\begin{array}{c}1 \\ 0 \end{array}\right]</m> and 
+      a blue vector extending along the <m>y</m>-axis is labeled <m>\vec{e}_2 =\left[\begin{array}{c}0 \\ 1 \end{array}\right]</m>.
+      Dashed blue lines extend from the ends of these vectors parallel to the other vector to illustrate a square formed
+      with those two vectors as two of the sides.  This square is shaded red. 
+    </description>
 	</image>
 	<caption>The transformation of the unit square by the identity matrix.</caption>
 </figure>
@@ -485,6 +521,14 @@ the same parallelogram, but the second matrix reflects its orientation.
 \draw[red,dashed] (1,0) -- (1,1) -- (0,1);
 \end{tikzpicture}
 		</latex-image>
+    <description>
+      Two images are shown.  Both show the <m>xy</m>-plane along with two blue vectors (one extending right, and one extending
+      upwards and to the right), with dotted lines completing the parallelogram they span.  Both images also contain the red unit
+      square.  The image on the left labels the blue vectors as 
+      <m>A\vec{e}_1=\left[\begin{array}{c}2 \\ 0 \end{array}\right]</m> and <m>A\vec{e}_2=\left[\begin{array}{c}3 \\ 4 \end{array}\right]</m>,
+      while the image on the right labels the two vectors as
+      <m>B\vec{e}_2=\left[\begin{array}{c}2 \\ 0 \end{array}\right]</m> and <m>B\vec{e}_1=\left[\begin{array}{c}3 \\ 4 \end{array}\right]</m>.
+    </description>
 	</image>
 	<caption>Reflection of a parallelogram as a result of swapping columns.</caption>
 </figure>
@@ -584,6 +628,11 @@ may be verified by adding and subtracting columns.
 \end{scope}
 \end{tikzpicture}
 		</latex-image>
+    <description>
+      A red square, a larger purple parallelogram, and an even larger blue rectangle are arranged from left to right horizontally.
+      A curved arrow labeled <m>B</m> points from the red square to the purple parallelogram, and a curved arrow labeled <m>A</m>
+      points from the purple parallelogram to the blue rectangle.
+    </description>
 	</image>
 	<caption>Area changing under the composition of two linear maps</caption>
 </figure>
