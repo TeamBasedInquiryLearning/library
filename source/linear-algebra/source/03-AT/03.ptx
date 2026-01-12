@@ -110,6 +110,12 @@ is an important subspace of <m>V</m> defined by
     \end{scope}
   \end{tikzpicture}
 					</latex-image>
+          <description>Two Euclidean spaces are shown, connected by a curved dashed arrow to the right.
+            The space on the left is <m>\IR^3</m>, represented by the <m>xyz</m> coordinate axes.  A blue
+            line representing a one dimensional subspace is shown and labeled <m>\ker T</m>.  The space on the 
+            right is <m>\IR^2</m>, represented by the <m>xy</m>-plane. The zero vector <m>\vec{0}</m> is shown
+            and labeled.
+          </description>
 				</image>
             </figure>
     </statement>
@@ -307,6 +313,17 @@ right example's image is a planar subspace of <m>\IR^3</m>.
   \end{scope}
 \end{tikzpicture}
 				</latex-image>
+        <description>
+          <p>Two examples are shown.  The one on the left illustrates a transformation from <m>\IR^3</m> to <m>\IR^2</m>
+          with the <m>xyz</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xy</m>-plane.  The images of the individual arbitrary vectors are shown,
+          and the entire <m>xy</m> plane is shaded, representing that they span the entire space <m>\IR^2</m>.</p>
+          <p>The example on the right illustrates a transformation from <m>\IR^2</m>to <m>\IR^3</m>
+          with the <m>xy</m> coordinate axes (with several arbitrary vectors illustrated) connected by a curved dashed
+          arrow to the right to an image of the <m>xyz</m> coordinate axes.  The images of the individual arbitrary vectors are 
+          shown, all lying in a two dimensional plane which is shaded.
+          </p>
+        </description>
 			</image>
         </figure>
     </statement>
