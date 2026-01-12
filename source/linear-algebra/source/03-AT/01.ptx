@@ -105,6 +105,11 @@ Given a linear transformation <m>T:V\to W</m>,
   \end{scope}
 \end{tikzpicture}
 			</latex-image>
+      <description>
+        The domain <m>\IR^3</m> is represented on the left by the <m>xyz</m> coordinate axes, along with an arbitrary vector <m>\vec{v}</m>.
+        A curved dotted arrow to the right points to the co-domain, <m>\IR^2</m>, represented by the <m>xy</m> coordinate axes, along with
+        an arbitrary vector labeled <m>T(\vec{v})</m>.
+      </description>
 		</image>
     </figure>
     </statement>
@@ -118,7 +123,12 @@ as is necessary for computer animation in film or video games.
         </p>
     <figure xml:id="figure-teapot-projection">
     <caption>A projection of a <m>3D</m> teapot onto a <m>2D</m> screen</caption>
-		<image source="teapot.png" xml:id="AT1-image-teapot"/>
+		<image source="teapot.png" xml:id="AT1-image-teapot">
+      <description>A computer generated image of a three dimensional teapot sitting in front of a screen that shows a 
+        flattened, two dimensional image of the same teapot.  Several parallel black arrows point from identifiable points on the three 
+        dimensional teapot (such as the spout and handle) to the corresponding places on the two dimensional image.
+      </description>
+    </image>
     </figure>
 </observation>
 
