@@ -50,6 +50,9 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     \draw (0,-0.2) -- (0,0.2) node[above] {0};
 \end{tikzpicture}
                     </latex-image>
+                <description>The real line, with a blue vector pointing to the right beginning at <m>0</m> and ending at <m>x</m>,
+                                representing an arbitrary vector in <m>\IR^1</m>.
+                </description>
             </image>
     </figure>
 </observation>
@@ -69,6 +72,8 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     \draw[&lt;-&gt;] (0,-4) -- (0,4);
 \end{tikzpicture}
                 </latex-image>
+                <shortdescription>The x-y plane.</shortdescription>
+                <description>The <m>xy</m>-plane.</description>.
             </image>
         </figure>
   <ol marker="A." cols="2">
@@ -116,6 +121,8 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     \draw[-&gt;] (0,0,0) -- (0,0,6);
   \end{tikzpicture}
             </latex-image>
+            <shortdescription>The coordinate axes representing three dimensional space.</shortdescription>
+            <description>Coordinate axes representing <m>\IR^3</m>.</description>
         </image>
         </figure>
   <ol marker="A." cols="2">
@@ -173,6 +180,10 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
     \draw[thick,red,-&gt;] (0,0,0) -- (-2,0,1);
   \end{tikzpicture}
             </latex-image>
+        <description><p>Two images side by side. The left image is the <m>xy</m>-plane, with a single vector pointing down and to the right.
+                    Its spanning set, the line parallel to it, is also shown.</p>
+                    <p>The right image illustrates two non-parallel vectors in three dimensional space, as well as the two-dimensional plane they span.</p>
+        </description>
         </image>
         </figure>
     </statement>

@@ -50,6 +50,12 @@ is a linear map from <m>\IR^n \rightarrow \IR^k</m>.
 \IR^n \arrow[rr, bend right, "S\circ T"']  \arrow[r,"T"] \&amp; \IR^m  \arrow[r,"S"]  \&amp;\IR^k 
 \end{tikzcd}
 				</latex-image>
+                <description>
+                    A representation of the composition of maps.  The chain <m>\IR^n \rightarrow \IR^m \rightarrow \IR^k</m> is
+                    adorned with a <m>T</m> labeling the arrow from <m>\IR^n</m> to <m>\IR^m</m>, and a <m>S</m> labeling the arrow
+                    from <m>\IR^m \rightarrow \IR^k</m>.  Below this is a curved arrow connecting <m>\IR^n</m> on the left to <m>\IR^k</m>
+                    on the right, which is labeled <m>S \circ T</m>.
+                </description>
 			</image>
 			<caption>The composition of two linear maps.</caption>
         </figure>
