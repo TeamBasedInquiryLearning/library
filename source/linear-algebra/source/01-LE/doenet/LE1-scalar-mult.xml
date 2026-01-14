@@ -1,0 +1,21 @@
+<p>
+  Move the vector and slider to visualize a scalar multiple of a vector.
+</p>
+<slider name="c" step="0.5" displayDigits="true" from="-5" to="5" initialValue="2"/>
+<setup><math name="cv" simplify="true">$c*$v</math></setup>
+<graph xmin="-10" ymin="-10" xmax="10" ymax="10">
+<point name="v" styleNumber="1" >
+    (1,2)
+    <label><m>\vec v=\left[\begin{array}{c} $v.x \\ $v.y\end{array}\right]</m></label>
+    <constraints>
+    <constrainToGrid dx="0.5" dy="0.5"/>
+    </constraints>
+</point>
+<point draggable="false" styleNumber="2" >
+    $cv
+    <label><m>c\vec v=\left[\begin{array}{c} $c($v.x) \\ $c($v.y)\end{array}\right]
+    =\left[\begin{array}{c} $cv.x \\ $cv.y \end{array}\right]</m></label>
+</point>
+<lineSegment draggable="false" styleNumber="1" endpoints="(0,0) $v"/>
+<lineSegment draggable="false" styleNumber="2" endpoints="(0,0) $cv"/>
+</graph>
