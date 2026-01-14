@@ -422,7 +422,8 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
             <ol>
     <li><em>Consistent with one solution:</em>
           its solution set contains a single vector, e.g.
-          <m>\setList{\left[\begin{array}{c}1\\2\\3\end{array}\right]}</m>
+          <m>\setList{\left[\begin{array}{c}1\\2\\3\end{array}\right]}</m>,
+          <xref ref="figure-intersecting-planes-one"/>
                 </li>
                 <li>
                     <em>Consistent with infinitely-many solutions</em>:
@@ -434,15 +435,53 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
             }{
               a\in\IR
             }
-          </m>
+          </m>,
+          <xref ref="figure-intersecting-planes-inf"/>
                 </li>
                 <li><em>Inconsistent</em>:
-          its solution set is the empty set, denoted by either <m>\{\}</m> or <m>\emptyset</m>.
+          its solution set is the empty set, denoted by either <m>\{\}</m> or <m>\emptyset</m>, e.g.
+          <xref ref="figure-intersecting-planes-zero"/>
                 </li>
             </ol>
             </p>
         </statement>
     </fact>
+
+    <figure xml:id="figure-intersecting-planes-one">
+        <caption>Intersection of three planes at one point</caption>
+        <image xml:id="LE1-image-intersection-planes-one">
+            <sageplot variant="3d" aspect="1.0">
+<xi:include href="./sage/LE1-image-intersection-planes-one.sage" parse="text"/>
+            </sageplot>
+            <description>
+                <p>Three planes are shown to intersect at a single point. An arrow points to the point of intersection at coordinates <m>(1,2,3)</m>.</p>
+            </description>
+        </image>
+    </figure>
+
+    <figure xml:id="figure-intersecting-planes-inf">
+        <caption>Intersection of three planes at a line</caption>
+        <image xml:id="LE1-image-intersection-planes-inf">
+            <sageplot variant="3d" aspect="1.0">
+<xi:include href="./sage/LE1-image-intersection-planes-inf.sage" parse="text"/>
+            </sageplot>
+            <description>
+                <p>Three planes are shown to intersect along a line of points.</p>
+            </description>
+        </image>
+    </figure>
+
+    <figure xml:id="figure-intersecting-planes-zero">
+        <caption>Three non-mutually-intersecting planes</caption>
+        <image xml:id="LE1-image-intersection-planes-zero">
+            <sageplot variant="3d" aspect="1.0">
+<xi:include href="./sage/LE1-image-intersection-planes-zero.sage" parse="text"/>
+            </sageplot>
+            <description>
+                <p>Three planes are shown to intersect at no common point, although each pair of planes intersects along a line of points.</p>
+            </description>
+        </image>
+    </figure>
 
     <activity estimated-time="10">
         <statement>
