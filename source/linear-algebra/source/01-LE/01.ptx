@@ -406,7 +406,8 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
             <ol>
     <li><em>Consistent with one solution:</em>
           its solution set contains a single vector, e.g.
-          <m>\setList{\left[\begin{array}{c}1\\2\\3\end{array}\right]}</m>
+          <m>\setList{\left[\begin{array}{c}1\\2\\3\end{array}\right]}</m>,
+          <xref ref="figure-intersecting-planes-one"/>
                 </li>
                 <li>
                     <em>Consistent with infinitely-many solutions</em>:
@@ -418,15 +419,41 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
             }{
               a\in\IR
             }
-          </m>
+          </m>,
+          <xref ref="figure-intersecting-planes-inf"/>
                 </li>
                 <li><em>Inconsistent</em>:
-          its solution set is the empty set, denoted by either <m>\{\}</m> or <m>\emptyset</m>.
+          its solution set is the empty set, denoted by either <m>\{\}</m> or <m>\emptyset</m>, e.g.
+          <xref ref="figure-intersecting-planes-zero"/>
                 </li>
             </ol>
             </p>
         </statement>
     </fact>
+
+    <figure xml:id="figure-intersecting-planes-one">
+        <caption>Intersection of three planes at one point</caption>
+        <interactive
+            xml:id="calcplot3d-intersection-planes-one"
+            calcplot3d="type=implicit;equation=x+y+z~6;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=x+2z~7;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=-2x+y+3z~9;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=vector;vector=&lt;1,2,3&gt;;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0);dashed=undefined&amp;type=window;showfunnot=false;hsrmode=0;nomidpts=true;anaglyph=-1;center=5.7317299798287955,-6.7245419132242255,-4.682713689264047,1;focus=0,0,0,1;up=-0.5376122051596625,-0.7078557560588468,0.4581630119048497,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;shownormals=false;shownormalsatpts=false;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);lastaddedsurfaceactive=true;disabletrace=false;activefun=-1;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.2"
+            variant="minimal"/>
+    </figure>
+
+    <figure xml:id="figure-intersecting-planes-inf">
+        <caption>Intersection of three planes at a line</caption>
+        <interactive
+            xml:id="calcplot3d-intersection-planes-inf"
+            calcplot3d="type=implicit;equation=3x~3;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=2x-y-3z~0;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=x+y+3z~3;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=window;showfunnot=false;hsrmode=0;nomidpts=true;anaglyph=-1;center=1.3275336005688918,-9.895764635092304,0.5581190072153721,1;focus=0,0,0,1;up=-0.7336715206727663,-0.15556594535769894,0.6614569800060137,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;shownormals=false;shownormalsatpts=false;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);lastaddedsurfaceactive=true;disabletrace=false;activefun=-1;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.2"
+            variant="minimal"/>
+    </figure>
+
+    <figure xml:id="figure-intersecting-planes-zero">
+        <caption>Three non-intersecting planes</caption>
+        <interactive
+            xml:id="calcplot3d-intersection-planes-zero"
+            calcplot3d="type=implicit;equation=x+y+3z~-10;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=constant;constcol=rgb(255,0,0)&amp;type=implicit;equation=x+y+3z~0;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=constant;constcol=rgb(0,154,255)&amp;type=implicit;equation=x+y+3z~14;cubes=16;visible=true;fixdomain=false;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;alpha=-1;revorient=false;showvf=false;shownormals=false;numnormals=10;normalscale=0.5;normalwidth=1;hidemyedges=false;view=0;format=constant;constcol=rgb(255,0,255)&amp;type=window;showfunnot=false;hsrmode=0;nomidpts=true;anaglyph=-1;center=-1.6292664522892755,-9.600206523613563,2.2762964506869823,1;focus=0,0,0,1;up=-0.8182948572562144,0.26037871914933775,0.5124416544370509,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;shownormals=false;shownormalsatpts=false;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);lastaddedsurfaceactive=true;disabletrace=false;activefun=-1;xmin=-10;xmax=10;ymin=-10;ymax=10;zmin=-10;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.2"
+            variant="minimal"/>
+    </figure>
 
     <activity estimated-time="10">
         <statement>
