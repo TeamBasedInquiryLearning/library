@@ -16,14 +16,14 @@
       <introduction>
         <p> The points <m> A </m> and <m> B </m> are shown in the graph below. Use the graph to answer the following questions:
         </p>
-        <figure xml:id="line-segment"><image>
-        <sageplot>
-          A = point((2,6),size=40)+text('A',(2.05,6),horizontal_alignment="left", gridlines=[[2,2.5,3.0,3.5,4],[2,2.5,3.0,3.5,4,4.5,5.0,5.5,6]])
-          B = point((4,2),size=40)+text('B',(4.05,2),horizontal_alignment="left")
-          L=line([(2,6),(4,2)],color="purple")
-          A+B+L
-        </sageplot>
-      </image></figure>
+        <figure xml:id="figure-eq3-right-triangle">
+          <caption>Interactive for constructing a right triangle</caption>
+          <interactive label="EQ3-interactive-right-triangle" platform="doenetml" width="100%">
+            <slate surface="doenetml">
+              <xi:include parse="text" href="doenet/EQ3-distance-pythagorean.xml"/>
+            </slate>
+          </interactive>
+        </figure>
       </introduction>
       <task>
         <statement>
@@ -179,16 +179,14 @@
     <introduction>
       <p> Two line segments are shown in the graph below. Use the graph to answer the following questions:
       </p>
-      <figure xml:id="two-line-segments"><image>
-      <sageplot>
-        A = point((8,2),size=40)+text('A',(8.1,2),horizontal_alignment="left", gridlines=[[2,3,4,5,6,7,8],[2,2.5,3,3.5,4,4.5,5,5.5,6]])
-        B = point((8,6),size=40)+text('B',(8.1,6),horizontal_alignment="left")
-        C = point ((2,2),size=40)+text('C',(2,2.1),horizontal_alignment="center")
-        L=line([(8,2),(2,2)],color="black")
-        M=line([(8,2),(8,6)],color="purple")
-        A+B+C+L+M
-      </sageplot>
-    </image></figure>
+      <figure xml:id="figure-eq3-midpoint">
+          <caption>Interactive for finding a midpoint</caption>
+          <interactive label="EQ3-interactive-midpoint" platform="doenetml" width="100%">
+            <slate surface="doenetml">
+              <xi:include parse="text" href="doenet/EQ3-midpoint.xml"/>
+            </slate>
+          </interactive>
+        </figure>
     </introduction>
     <task>
       <statement>
