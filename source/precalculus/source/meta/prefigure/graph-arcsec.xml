@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=acos(1/x)</definition>
+  <coordinates bbox="(-3,-pi,3,pi)">
+    <grid-axes v-pi-format="yes"/>
+    <graph at="function" function="f"/>
+    <line at="asymptote-h" endpoints="((-3,pi/2),(3,pi/2))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function y equals inverse secant of x">
+      <annotation ref="graph-function" text="The graph of y equals inverse secant of x and its asymptote">
+        <annotation ref="function" text="The function y equals inverse secant of x" sonify="yes"/>
+        <annotation ref="asymptote-h" text="The horizontal asymptote y equals pi over 2"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

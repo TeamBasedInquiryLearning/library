@@ -1,0 +1,24 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=1/tan(x)</definition>
+  <coordinates bbox="(-2*pi,-5,2*pi,5)">
+    <grid-axes h-pi-format="yes"/>
+    <graph at="function" function="f"/>
+    <line at="asymptote-v1" endpoints="((-2*pi,-5),(-2*pi,5))" stroke="red" infinite = "yes" dash="9 9"/>
+    <line at="asymptote-v2" endpoints="((-pi,-5),(-pi,5))" stroke="red" infinite = "yes" dash="9 9"/>
+    <line at="asymptote-v3" endpoints="((0,-5),(0,5))" stroke="red" infinite = "yes" dash="9 9"/>
+    <line at="asymptote-v4" endpoints="((pi,-5),(pi,5))" stroke="red" infinite = "yes" dash="9 9"/>
+    <line at="asymptote-v5" endpoints="((2*pi,-5),(2*pi,5))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function y equals cotangent of x">
+      <annotation ref="graph-function" text="The graph of y equals cotangent of x and its asymptotes">
+        <annotation ref="function" text="The function y equals cotangent of x" sonify="yes"/>
+        <annotation ref="asymptote-v1" text="The vertical asymptote x equals negative 2 pi"/>
+        <annotation ref="asymptote-v2" text="The vertical asymptote x equals negative pi"/>
+        <annotation ref="asymptote-v3" text="The vertical asymptote x equals zero"/>
+        <annotation ref="asymptote-v4" text="The vertical asymptote x equals pi"/>
+        <annotation ref="asymptote-v5" text="The vertical asymptote x equals 2 pi"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
