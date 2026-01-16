@@ -240,6 +240,9 @@ Following are some examples of addition and scalar multiplication in <m>\mathbb 
           <slate surface="doenetml">
             <xi:include parse="text" href="doenet/LE1-add-vectors.xml"/>
           </slate>
+          <description>
+            <p>An interactive that shows that the sum of any two vectors in the plane results in a vector which is obtained by placing the two vectors end-to-end.</p>
+          </description>
         </interactive>
     </figure>
     <figure xml:id="figure-le1-scalar-mult">
@@ -248,6 +251,9 @@ Following are some examples of addition and scalar multiplication in <m>\mathbb 
           <slate surface="doenetml">
             <xi:include parse="text" href="doenet/LE1-scalar-mult.xml"/>
           </slate>
+          <description>
+            <p>An interactive that shows that the scalar multiple of any vector in the plane is the result of lengthening the vector by that factor, and reversing its direction in the case of a negative multiple.</p>
+          </description>
         </interactive>
     </figure>
     <definition>
