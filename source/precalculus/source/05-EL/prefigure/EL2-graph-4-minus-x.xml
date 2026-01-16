@@ -1,0 +1,28 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=4^(-x)</definition>
+  <coordinates bbox="(-5,-5,5,20)">
+    <grid-axes/>
+    <graph at="function" function="f"/>
+    <group at="points">
+    <point p="(-2,16)" at="p1"/>
+    <point p="(-1,4)" at="p2"/>
+    <point p="(0,1)" at="p3"/>
+    <point p="(1,1/4)" at="p4"/>
+    <point p="(2,1/16)" at="p5"/>
+    </group>
+    <line at="asymptote-h" endpoints="((-5,0),(5,0))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+    <annotations>
+    <annotation ref="figure" text="The graph of a function, selected points, and its asymptote">
+      <annotation ref="function" text="The function" sonify="yes"/>
+      <annotation ref="asymptote-h" text="The horizontal asymptote y equals 1"/>
+      <annotation ref="points" text="Selected points on the graph">
+        <annotation ref="p1" text="The point -2 comma 16"/>
+        <annotation ref="p2" text="The point -1 comma 4"/>
+        <annotation ref="p3" text="The point 0 comma 1"/>
+        <annotation ref="p4" text="The point 1 comma one fourth"/>
+        <annotation ref="p5" text="The point 2 comma one sixteenth"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

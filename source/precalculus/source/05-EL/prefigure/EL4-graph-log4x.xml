@@ -1,0 +1,26 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=log(x)/log(4)</definition>
+  <coordinates bbox="(-5,-5,10,5)">
+    <grid-axes/>
+    <graph at="function" function="f"/>
+    <group at="points">
+    <point p="(1,0)" at="p1"/>
+    <point p="(2,0.5)" at="p2"/>
+    <point p="(4,1)" at="p3"/>
+    <point p="(8,1.5)" at="p4"/>
+    </group>
+    <line at="asymptote" endpoints="((0,-5),(0,5))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="Points on the graph of the function y equals log base 4 of x">
+      <annotation ref="function" text="The function y equals log base 4 of x" sonify="yes"/>
+      <annotation ref="asymptote" text="The vertical asymptote x equals 0"/>
+      <annotation ref="points" text="Selected points on the graph of y equals log base 4 of x">
+        <annotation ref="p1" text="The point 1 comma 0"/>
+        <annotation ref="p2" text="The point 2 comma 0.5"/>
+        <annotation ref="p3" text="The point 4 comma 1"/>
+        <annotation ref="p4" text="The point 8 comma 1.5"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

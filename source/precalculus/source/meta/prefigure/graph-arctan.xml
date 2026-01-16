@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=atan(x)</definition>
+  <coordinates bbox="(-3,-pi,3,pi)">
+    <grid-axes v-pi-format="yes"/>
+    <graph at="function" function="f"/>
+    <line at="asymptote-h1" endpoints="((-3,-pi/2),(3,-pi/2))" stroke="red" infinite = "yes" dash="9 9"/>
+    <line at="asymptote-h2" endpoints="((-3,pi/2),(3,pi/2))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function y equals inverse tangent of x">
+      <annotation ref="graph-function" text="The graph of y equals inverse tangent of x and its asymptotes">
+        <annotation ref="function" text="The function y equals inverse cosecant of x" sonify="yes"/>
+        <annotation ref="asymptote-h1" text="The horizontal asymptote y equals negative pi over 2"/>
+        <annotation ref="asymptote-h2" text="The horizontal asymptote y equals pi over 2"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

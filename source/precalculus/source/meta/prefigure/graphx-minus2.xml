@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=x^(-2)</definition>
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes/>
+    <graph at="function" function="f"/>
+    <line at="asymptote-h" endpoints="((-5,0),(5,0))" stroke="red" infinite = "yes" dash="9 9"/>
+    <line at="asymptote-v" endpoints="((0,-5),(0,5))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function y equals 1 over x squared">
+      <annotation ref="graph-function" text="The graph of y equals 1 over x squared and its asymptotes">
+        <annotation ref="function" text="The function y equals 1 over x squared" sonify="yes"/>
+        <annotation ref="asymptote-h" text="The horizontal asymptote y equals 0"/>
+        <annotation ref="asymptote-v" text="The vertical asymptote x equals 0"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
