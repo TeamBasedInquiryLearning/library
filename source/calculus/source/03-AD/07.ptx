@@ -275,7 +275,7 @@ Note that some of the graphs below are definitely hard... might want to tell thi
                 </task>
                 <task><m>f(x)=\frac{x^2-4}{x^2-9}</m>
                 <answer>
-                Note that there is a horizontal asymptote at <m>y=1</m>.
+                <p>Note that there is a horizontal asymptote at <m>y=1</m>.</p>
                   <image>
                     <sageplot>
                       x = var('x')
@@ -295,7 +295,7 @@ Note that some of the graphs below are definitely hard... might want to tell thi
             </answer></task>
                 <task><m>f(x)=\frac{x^2+x-2}{x+3}</m>
                 <answer>
-                Note that this graph has a slant asymptote of <m>y=x</m>.
+                <p>Note that this graph has a slant asymptote of <m>y=x</m>.</p>
                   <image>
                     <sageplot>
                       x = var('x')
@@ -305,7 +305,7 @@ Note that some of the graphs below are definitely hard... might want to tell thi
                 </answer></task>
                 <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m>
                 <answer>
-                Note that this graph has horizontal asymptotes at <m>y=\pm 1</m>.
+                <p>Note that this graph has horizontal asymptotes at <m>y=\pm 1</m>.</p>
                   <image>
                     <sageplot>
                       x = var('x')
