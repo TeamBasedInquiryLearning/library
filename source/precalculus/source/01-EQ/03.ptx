@@ -22,6 +22,9 @@
             <slate surface="doenetml">
               <xi:include parse="text" href="doenet/EQ3-distance-pythagorean.xml"/>
             </slate>
+            <description><p>Interactive allowing users to drag a point to make a right triangle
+                            with the given line segment as its hypotenuse.
+            </p></description>
           </interactive>
         </figure>
       </introduction>
@@ -185,6 +188,7 @@
             <slate surface="doenetml">
               <xi:include parse="text" href="doenet/EQ3-midpoint.xml"/>
             </slate>
+            <description><p>Interactive allowing users to drag points to find the midpoint of a line segment.</p></description>
           </interactive>
         </figure>
     </introduction>
