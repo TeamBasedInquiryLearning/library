@@ -1,0 +1,26 @@
+<diagram dimensions="(300,300)" margins="5">
+  <definition>f(x)=2.5-x^2/2</definition>
+  <definition>a = 1</definition>
+  <coordinates bbox="(-1,-1,10,10)">
+    <line at="l1" endpoints="((0,9),(9,9))"/>
+    <line at="l2" endpoints="((9,9),(0,0))"/>
+    <line at="l3" endpoints="((0,0),(9,0))"/>
+    <group at="d">
+    <arc center="(9,9)" radius="1" range="(pi,5*pi/4)" thickness="1" degrees="no" stroke="blue"/>
+    <label p="(9,9)" alignment="southwest" offset="(-60,-2)">Angle of depression</label>
+    </group>
+    <group at="e">
+    <arc center="(0,0)" radius="1" range="(0,pi/4)" degrees="no" thickness="1" stroke="blue"/>
+    <label p="(0,0)" alignment="northeast" offset="(50,2)">Angle of elevation</label>
+    </group>
+  </coordinates>
+<annotations>
+    <annotation ref="figure" text="Diagram showing the angle of depression and the angle of inclination">
+      <annotation ref="l1" text="A horizontal line"/>
+      <annotation ref="l2" text="A line angling down and to the left"/>
+      <annotation ref="l3" text="A horizontal line"/>
+      <annotation ref="d" text="The angle a line makes below the horizontal is labeled the angle of depression"/>
+      <annotation ref="e" text="The angle a line makes above the horizontal is labeled the angle of elevation"/>
+    </annotation>
+  </annotations>
+</diagram>
