@@ -257,19 +257,47 @@
       <li><image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["[7,9]"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded between <m>7</m> and <m>9</m>.
+            <m>7</m> is marked with a <m>[</m> and <m>9</m> is marked with a <m>]</m>.
+          </p>
+        </description>
+      </image></li>
       <li><image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["[5,9]"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded between <m>5</m> and <m>9</m>.
+            <m>5</m> is marked with a <m>[</m> and <m>9</m> is marked with a <m>]</m>.
+          </p>
+        </description>
+      </image></li>
       <li><image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["[5,7]"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded between <m>5</m> and <m>7</m>.
+            <m>5</m> is marked with a <m>[</m> and <m>7</m> is marked with a <m>]</m>.
+          </p>
+        </description>
+      </image></li>
       <li><image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["[2,7]"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded between <m>2</m> and <m>7</m>.
+            <m>2</m> is marked with a <m>[</m> and <m>7</m> is marked with a <m>]</m>.
+          </p>
+        </description>
+      </image></li>
 </ol> </p>
 
 </statement>
@@ -326,22 +354,50 @@ TBIL.numberline_from_intervals(["[2,7]"])
         <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["(-\\infty,7]","[9,\\infty)"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded from the left until <m>7</m>, and then onwards to the right from <m>9</m>.
+            <m>7</m> is marked with a <m>]</m> and <m>9</m> is marked with a <m>[</m>.
+          </p>
+        </description>
+      </image></li>
       <li><p><m>(-\infty,5] \cup [9,\infty)</m></p>
         <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["(-\\infty,5]","[9,\\infty)"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded from the left until <m>5</m>, and then onwards to the right from <m>9</m>.
+            <m>5</m> is marked with a <m>]</m> and <m>9</m> is marked with a <m>[</m>.
+          </p>
+        </description>
+      </image></li>
       <li><p><m>(-\infty,5] \cup [7,\infty)</m></p>
         <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["(-\\infty,5]","[7,\\infty)"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded from the left until <m>5</m>, and then onwards to the right from <m>7</m>.
+            <m>5</m> is marked with a <m>]</m> and <m>7</m> is marked with a <m>[</m>.
+          </p>
+        </description>
+      </image></li>
       <li><p><m>(-\infty,2] \cup [7,\infty)</m></p>
         <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["(-\\infty,2]","[7,\\infty)"])
-        </sageplot></image></li>
+        </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded from the left until <m>2</m>, and then onwards to the right from <m>7</m>.
+            <m>2</m> is marked with a <m>]</m> and <m>7</m> is marked with a <m>[</m>.
+          </p>
+        </description>
+      </image></li>
       </ol> 
     </statement>
     <answer>
@@ -376,7 +432,14 @@ TBIL.numberline_from_intervals(["(-\\infty,2]","[7,\\infty)"])
       <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["(-14/3,2)"])
-      </sageplot></image>
+      </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded between <m>-\frac{14}{3}</m> and <m>2</m>.
+            <m>-\frac{14}{3}</m> is marked with a <m>(</m> and <m>2</m> is marked with a <m>)</m>.
+          </p>
+        </description>
+    </image>
     </p>
   </answer>
   </task>
@@ -391,7 +454,14 @@ TBIL.numberline_from_intervals(["(-14/3,2)"])
       <image><sageplot>
 <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
 TBIL.numberline_from_intervals(["(-\\infty,5)","(9,\\infty)"])
-      </sageplot></image>
+      </sageplot>
+        <description>
+          <p>A numberline from <m>-9</m> to <m>9</m>.  
+            The line is shaded from the left until <m>5</m>, and then onwards to the right from <m>9</m>.
+            <m>5</m> is marked with a <m>)</m> and <m>9</m> is marked with a <m>(</m>.
+          </p>
+        </description>
+    </image>
       </p>
     </answer>
   </task>
