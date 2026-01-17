@@ -1,0 +1,30 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+<definition>A=(-2,0)</definition>
+<definition>B=(4,0)</definition>
+<definition>C=(0,3)</definition>
+<definition>D=(0,0)</definition>
+  <coordinates bbox="(-3,-1,5,4)">
+    <group at="ABC">
+    <line at="CD" endpoints="(C,D)" stroke="blue" rotate="90" offset="(0,4)"><m>h</m></line>
+    <line at="AC" endpoints="(A,C)" stroke="black" rotate="-60" offset="(0,4)" tactile-offset="(0,20)"><m>b</m></line>
+    <line at="BC" endpoints="(C,B)" stroke="black" rotate="50" offset="(0,2)"><m>a</m></line>
+    <line at="AB" endpoints="(A,B)" stroke="black" offset="(0,-20)"><m>c</m></line>
+    <line at="AD" endpoints="(A,D)" stroke="black" ><m>d</m></line>
+    <point p="A" alignment="southwest"><m>A</m></point>
+    <point p="B" alignment="east"><m>B</m></point>
+    <point p="C" alignment="north"><m>C</m></point>
+    <point at="D" p="D" alignment="south"><m>D</m></point>
+    </group>
+  </coordinates>
+<annotations>
+  <annotation ref="figure" text="Triangle ABC with an altitude from C to D.">
+      <annotation ref="AC" text="The side from A to C is labeled b"/>
+      <annotation ref="BC" text="The side from B to C is labeled a"/>
+      <annotation ref="AB" text="The side from A to B is labeled c"/>
+      <annotation ref="CD" text="The altitude from C to D is labeled h">
+        <annotation ref="D" text="The point labeled D lies along AB and directly below C so that the sides labeled c and h are at a right angle."/>
+          </annotation>
+      <annotation ref="AD" text="The length from A to D is labeled d"/>
+  </annotation>
+ </annotations>
+</diagram>

@@ -1,0 +1,24 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+<definition>A=(0,0)</definition>
+<definition>B=(3.5,0)</definition>
+<definition>b=(2+1.75*cos(5*pi/3),2+1.75*sin(5*pi/3))</definition>
+<definition>C=(2,2)</definition>
+<definition>t=45</definition>
+  <coordinates bbox="(-1,-1,4,4)">
+    <line at="AC" endpoints="(A,C)" stroke="black" rotate="-55" offset="(0,5)" tactile-offset="(0,20)"><m>b</m></line>
+    <line at="BC" endpoints="(C,b)" stroke="blue" rotate="70"  offset="(0,5)"><m>a</m></line>
+    <line at="AB" endpoints="(A,B)" stroke="black" dash="9 9" />
+    <point p="A" alignment="southwest"><m>A</m></point>
+    <point p="C" alignment="north"><m>C</m></point>
+    <angle-marker at="beta" points="(B,A,C)" thickness="1"/>
+    <arc at="circle" center="C" radius="1.75" range="(190,350)" stroke="blue" dash="9 9" thickness="1" />
+  </coordinates>
+<annotations>
+  <annotation ref="figure" text="An incomplete triangle diagram">
+    <annotation ref="AC" text="A line segment from A to C is labeled b"/>
+    <annotation ref="AB" text="The side extending horizontally from A is dashed."/>
+    <annotation ref="BC" text="A blue line segment extending from C is labeled a"/>
+    <annotation ref="circle" text="A part of a dashed blue circle centered at C with radius of length a. It does not meet the dashed line labeled c."/>
+  </annotation>
+ </annotations>
+</diagram>

@@ -1,0 +1,32 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+<definition>alpha=3*pi/4</definition>
+<definition>beta=pi/6</definition>
+<definition>q=(cos(beta),sin(beta))</definition>
+<definition>p=(cos(alpha),sin(alpha))</definition>
+<definition>o=(0,0)</definition>
+  <coordinates bbox="(-1.1,-1.1,1.2,1.1)">
+    <axes vticks="(-1,1,1)" vlabels="(-1,1,1)" />
+    <circle center="(0,0)" radius="1" thickness="1" stroke="gray"/>
+    <point at="q" p="q" scale="0.8"><m>Q</m></point>
+    <point at="p" p="p" scale="0.8" alignment="northwest"><m>P</m></point>
+    <point at="o" p="o" scale="0.8" alignment="southwest"><m>O</m></point>
+    <group at="triangle">
+    <line at="l1" endpoints="(o,q)" stroke="blue"/>
+    <line at="l2" endpoints="(o,p)" stroke="blue"/>
+    <line at="l3" endpoints="(p,q)" stroke="blue"/>
+    </group>
+    <angle-marker at="alpha" points="((1,0),o,p)" thickness="1"><m>\alpha</m></angle-marker>
+    <angle-marker at="beta" points="((1,0),o,q)" thickness="1"><m>\beta</m></angle-marker>
+  </coordinates>
+<annotations>
+    <annotation ref="figure" text="Diagram showing a point on the unit circle">
+      <annotation ref="triangle" text="A triangle with vertices P, Q, and the origin O">
+        <annotation ref="p" text="A point on the unit circle in the second quadrant labeled P"/>
+        <annotation ref="q" text="A point on the unit circle in the first quadrant labeled Q"/>
+        <annotation ref="o" text="A point on the unit circle in the first quadrant labeled O"/>
+      </annotation>
+      <annotation ref="alpha" text="The angle between the positive x-axis and the line from O to P is labeled alpha"/>
+      <annotation ref="beta" text="The angle between the positive x-axis and the line from O to Q is labeled beta"/>
+    </annotation>
+  </annotations>
+</diagram>

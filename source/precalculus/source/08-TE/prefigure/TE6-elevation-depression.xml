@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-1,-1,10,10)">
+    <line at="l1" endpoints="((0,9),(9,9))"/>
+    <line at="l2" endpoints="((9,9),(0,0))"/>
+    <line at="l3" endpoints="((0,0),(9,0))"/>
+    <angle-marker at="d" thickness="1" stroke="blue" points="((0,9),(9,9),(0,0))">Angle of depression</angle-marker>
+    <angle-marker at="e" thickness="1" stroke="blue" points="((9,0),(0,0),(9,9))">Angle of elevation</angle-marker>
+  </coordinates>
+<annotations>
+    <annotation ref="figure" text="Diagram showing the angle of depression and the angle of inclination">
+      <annotation ref="l1" text="A horizontal line"/>
+      <annotation ref="l2" text="A line angling down and to the left"/>
+      <annotation ref="l3" text="A horizontal line"/>
+      <annotation ref="d" text="The angle a line makes below the horizontal is labeled the angle of depression"/>
+      <annotation ref="e" text="The angle a line makes above the horizontal is labeled the angle of elevation"/>
+    </annotation>
+  </annotations>
+</diagram>
