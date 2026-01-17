@@ -24,26 +24,12 @@
       <p>
         Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>. By drawing the altitude, we've now created two right triangles. If we label the point where the altitude intersects <m>C</m> as point <m>D</m>, then we can call the triangles <m>ACD</m> and <m>BCD</m>. 
         <figure xml:id="Law-of-Sines-Triangle">
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0),(0,3)],thickness=3,color="black")
-p += text("$a$", (2.1,1.6),color="black",fontsize=24)
-p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
-p += text("$c$", (1, -0.1), color="black", fontsize=24)
-p += text("$h$", (0.15,1.5), color="black",fontsize=24)
-p += line( [(-2,-0.1), (0.8,-0.1)], color="black")
-p += line( [(-2,-0.15), (-2,-0.05)], color="black")
-p += line( [(1.2,-0.1), (4,-0.1)], color="black")
-p += line( [(4,-0.15), (4,-0.05)], color="black")
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$D$", (0.1,-0.4), color="black", fontsize=24)
-p.axes(False)
-p
-          </sageplot>
-          </image>
+          <caption>Triangle <m>ABC</m> with sides <m>a</m>, <m>b</m>, and <m>c</m>, with an altitude <m>h</m> drawn from <m>C</m> to <m>D</m>.</caption>
+                          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines">
+                <xi:include href="prefigure/TE5-law-of-sines.xml"/>
+            </prefigure>
+        </image>
         </figure>
       </p>
     </introduction>
@@ -154,20 +140,9 @@ p
         Suppose you are given triangle <m>ABC</m> where <m>A=35</m><degree/>, <m>B=25</m><degree/>, and <m>a=10</m> as shown in the figure below.
         <figure xml:id="AAS-Triangle"> 
           <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a=10$", (2.5,1.8),color="black",fontsize=24)
-p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
-p += text("$c$", (1, -0.1), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$25^\circ$", (3.3,.2), color="black", fontsize=20)
-p += text("$35^\circ$", (-1.5,.2), color="black", fontsize=20)
-p.axes(False)
-p 
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-fluency1">
+              <xi:include href="prefigure/TE5-law-of-sines-fluency1.xml"/>
+            </prefigure>
           </image>
         </figure>
       </p>
@@ -290,22 +265,8 @@ p
       <p>
         Suppose you are given triangle <m>ABC</m> where <m>A=76</m><degree/>, <m>B=34</m><degree/>, and <m>c=9</m> as shown in the figure below.
         <figure xml:id="ASA-Triangle"> 
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a$", (2,1.8),color="black",fontsize=24)
-p += text("$b$", (-1.2, 1.6), color="black",fontsize=24)
-p += text("$c=9$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$34^\circ$", (3.3,.2), color="black", fontsize=20)
-p += text("$76^\circ$", (-1.5,.2), color="black", fontsize=20)
-p.axes(False)
-p 
-          </sageplot>
-          </image>
+
+  
         </figure>
       </p>
     </introduction>
@@ -393,22 +354,11 @@ p
       <p>
         Suppose you are given triangle <m>ABC</m>, where <m>A = 30</m><degree/>, <m>a = 7</m>, and <m>b = 16</m> as shown in the figure below.
         <figure xml:id="SSA-no-solution-Triangle"> 
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a=7$", (2.2,1.8),color="black",fontsize=24)
-p += text("$b=16$", (-1.7, 1.6), color="black",fontsize=24)
-p += text("$c$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$34^\circ$", (3.3,.2), color="black", fontsize=20)
-p += text("$30^\circ$", (-1.5,.2), color="black", fontsize=20)
-p.axes(False) 
-p
-          </sageplot>
-          </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-fluency2">
+              <xi:include href="prefigure/TE5-law-of-sines-fluency2.xml"/>
+            </prefigure>
+        </image>
         </figure>
       </p>
     </introduction>
@@ -482,21 +432,12 @@ p
       <answer>
         <p>
           Students should be able to draw a triangle like this: 
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a=10$", (2.3,1.8),color="black",fontsize=24)
-p += text("$b=16$", (-1.7, 1.6), color="black",fontsize=24)
-p += text("$c$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
-p.axes(False)
-p 
-          </sageplot>
-          </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-fluency3">
+              <xi:include href="prefigure/TE5-law-of-sines-fluency3.xml"/>
+            </prefigure>
+        </image>
+   
           The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
         </p>
       </answer>
@@ -609,21 +550,11 @@ p
       <answer>
         <p>
           Students should be able to draw a triangle like this:
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a=20$", (2.3,1.8),color="black",fontsize=24)
-p += text("$b=16$", (-1.7, 1.6), color="black",fontsize=24)
-p += text("$c$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$30^\circ$", (-1.6,.2), color="black", fontsize=20)
-p.axes(False)
-p  
-          </sageplot>
-          </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-fluency4">
+              <xi:include href="prefigure/TE5-law-of-sines-fluency4.xml"/>
+            </prefigure>
+        </image>
           The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>c</m>.
         </p>
       </answer>
@@ -692,20 +623,9 @@ p
 
       <figure>
         <image>
-          <sageplot>
-p=Graphics()
-p+=line([(0,0),(2,2)],thickness=2,color="black")
-p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
-p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
-p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
-p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
-p+=text("$C$",(2,2.1),color="black",fontsize=14)
-p+=arc((2,2),1.75,sector=(pi,2*pi),color="blue",linestyle="dashed")
-p+=line([(2,2),(2+1.75*cos(5*pi/3),2+1.75*sin(5*pi/3))],color="blue",thickness=2)
-p+=text("$a$",(2.7,1.1),fontsize=14)
-p.axes(False)
-p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-ambiguous1">
+              <xi:include href="prefigure/TE5-law-of-sines-ambiguous1.xml"/>
+            </prefigure>
         </image>
         <caption>If <m>a</m> is too short for a given angle <m>A</m> and side <m>b</m>, no matter
           how that leg is swung around the dashed circle, it will not meet a third side of any
@@ -714,24 +634,9 @@ p
       </figure>
       <figure>
         <image>
-          <sageplot>
-p=Graphics()
-p+=line([(0,0),(2,2)],thickness=2,color="black")
-p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
-p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
-p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
-p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
-p+=text("$C$",(2,2.1),color="black",fontsize=14)
-a=pi/12
-r=2/cos(a)
-p+=arc((2,2),r,sector=(pi,2*pi),color="blue",linestyle="dashed")
-p+=line([(2,2),(2+r*cos(3*pi/2+a),2+r*sin(3*pi/2+a))],color="blue",thickness=2)
-p+=line([(2,2),(2+r*cos(3*pi/2-a),2+r*sin(3*pi/2-a))],color="blue",thickness=2)
-p+=text("$a$",(2.4,1.1),fontsize=14)
-p+=text("$a$",(1.6,1.1),fontsize=14)
-p.axes(False)
-p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-ambiguous2">
+              <xi:include href="prefigure/TE5-law-of-sines-ambiguous2.xml"/>
+            </prefigure>
         </image>
         <caption>
           If <m>a</m> is larger, the circle of radius <m>a</m> centered at <m>C</m> intersects the
@@ -740,38 +645,16 @@ p
       </figure>
       <figure>
         <sidebyside widths="50% 50%">
-          <image>
-            <sageplot>
-p=Graphics()
-p+=line([(0,0),(2,2)],thickness=2,color="black")
-p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
-p+=line([(0,0),(3.5,0)],linestyle="dotted",color="black")
-p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
-p+=text("$A$",(-0.1,-0.1),color="black",fontsize=14)
-p+=arc((2,2),2,sector=(pi,2*pi),color="blue",linestyle="dashed")
-p+=line([(2,2),(2,0)],color="blue",thickness=2)
-p+=text("$a$",(2.1,1.1),fontsize=14)
-p.axes(False)
-p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-p=Graphics()
-p+=line([(0,0),(2,2)],thickness=2,color="black")
-p+=text("$b$",(0.89,1.1),color="black",fontsize=14)
-p+=line([(0,0),(6,0)],linestyle="dotted",color="black")
-p+=arc((0,0),0.2,sector=(0,pi/4),color="black")
-p+=text("$A$",(-0.2,-0.1),color="black",fontsize=14)
-a=pi/3
-r=2/cos(a)
-p+=arc((2,2),r,sector=(pi,2*pi),color="blue",linestyle="dashed")
-p+=line([(2,2),(2+r*cos(3*pi/2+a),2+r*sin(3*pi/2+a))],color="blue",thickness=2)
-p+=text("$a$",(4.1,1.1),fontsize=14)
-p.axes(False)
-p
-            </sageplot>
-          </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-ambiguous3">
+              <xi:include href="prefigure/TE5-law-of-sines-ambiguous3.xml"/>
+            </prefigure>
+        </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-ambiguous4">
+              <xi:include href="prefigure/TE5-law-of-sines-ambiguous4.xml"/>
+            </prefigure>
+        </image>
         </sidebyside>
         <caption>
           If the length of <m>a</m> is the same as the height of the triangle, the two possibilities converge
@@ -851,21 +734,11 @@ p
       <answer>
         <p>
           Students should draw the triangle like this:
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a$", (2.3,1.8),color="black",fontsize=24)
-p += text("$b=14$", (-1.7, 1.6), color="black",fontsize=24)
-p += text("$c=7$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$70^\circ$", (-1.6,.2), color="black", fontsize=20)
-p.axes(False) 
-p 
-          </sageplot>
-          </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-fluency5">
+              <xi:include href="prefigure/TE5-law-of-sines-fluency5.xml"/>
+            </prefigure>
+        </image>
            The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
         </p>
       </answer>
@@ -897,27 +770,14 @@ p
       <p>
         Suppose you are given the following triangle, where <m>h</m> is the altitude of triangle <m>ABC</m>.
         <figure xml:id="Law-of-Cosines-Triangle">
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0),(0,3)],thickness=3,color="black")
-p += text("$a$", (2.1,1.6),color="black",fontsize=24)
-p += text("$b$", (-1.1, 1.6), color="black",fontsize=24)
-p += text("$m$", (-1, 0.2), color="black",fontsize=24)
-p += text("$c$", (1, -0.1), color="black", fontsize=24)
-p += text("$h$", (0.15,1.5), color="black",fontsize=24)
-p += text("$D$", (0.15,0.2), color="black",fontsize=24)
-p += line( [(-2,-0.1), (0.8,-0.1)], color="black")
-p += line( [(-2,-0.15), (-2,-0.05)], color="black")
-p += line( [(1.2,-0.1), (4,-0.1)], color="black")
-p += line( [(4,-0.15), (4,-0.05)], color="black")
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p.axes(False)
-p
-          </sageplot>
-          </image>
+          <caption><p>Triangle <m>ABC</m> with sides <m>a</m>, <m>b</m>, and <m>c</m>, with an 
+            altitude <m>h</m> drawn from <m>C</m> to <m>D</m>. The segment <m>AD</m> is labeled <m>d</m>.
+          </p></caption>
+                          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-cosines">
+                <xi:include href="prefigure/TE5-law-of-cosines.xml"/>
+            </prefigure>
+        </image>
         </figure>
       </p>
     </introduction>
@@ -1063,21 +923,11 @@ p
       <answer>
         <p>
           Students should draw the triangle like this:
-          <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a$", (2.3,1.8),color="black",fontsize=24)
-p += text("$b=14$", (-1.7, 1.6), color="black",fontsize=24)
-p += text("$c=7$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p += text("$70^\circ$", (-1.6,.2), color="black", fontsize=20)
-p.axes(False)
-p 
-          </sageplot>
-          </image>
+                          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-sines-fluency5-2">
+                <xi:include href="prefigure/TE5-law-of-sines-fluency5.xml"/>
+            </prefigure>
+        </image>
            The following parts of the triangle are missing: <m>B</m>, <m>C</m>, and <m>a</m>.
         </p>
       </answer>
@@ -1152,18 +1002,9 @@ p
         <p>
           Students should draw the triangle like this: 
           <image>
-          <sageplot>
-p=Graphics()
-p += line([(0,0),(4,0), (0,3), (-2,0),(0,0)],thickness=3,color="black")
-p += text("$a=30$", (2.3,1.8),color="black",fontsize=24)
-p += text("$b=20$", (-1.7, 1.6), color="black",fontsize=24)
-p += text("$c=17$", (1, -0.2), color="black", fontsize=24)
-p += text("$A$", (-2.2,0), color="black", fontsize=24)
-p += text("$B$", (4.2,0), color="black", fontsize=24)
-p += text("$C$", (0,3.2), color="black", fontsize=24)
-p.axes(False)
-p 
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-law-of-cosines-fluency1">
+                <xi:include href="prefigure/TE5-law-of-cosines-fluency1.xml"/>
+            </prefigure>
           </image>
           The following parts of the triangle are missing: <m>A</m>, <m>B</m>, and <m>C</m>.
         </p>
