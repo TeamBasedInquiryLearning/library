@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-5,-6,6,8)">
+    <grid-axes spacings="((-5,1,6),(-6,1,8))"/>
+    <group at="L">
+    <line at="L3" endpoints="((5,-1),(4,-5))" stroke="blue"/>
+    <line at="L2" endpoints="((4,-5),(-1,6))" stroke="blue"/>
+    <line at="L1" endpoints="((-1,6),(-3,1))" stroke="blue"/>
+    </group>
+    <point p="(5,-1)" fill="white" stroke="blue"/>
+    <point p="(-3,1)" fill="blue" stroke="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The coordinate plane with a graph">
+      <annotation ref="L" sonify="yes" text="A piecewise graph starting with a filled dot at -3 comma 1 and terminating in an open dot at 5 comma -1.">
+        <annotation ref="L1" text="A line segment from -3 comma 1 to -1 comma 6"/>
+        <annotation ref="L2" text="A line segment from -1 comma 6 to 4 comma -5"/>
+        <annotation ref="L3" text="A line segment from 4 comma -5 to 5 comma -1"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

@@ -32,24 +32,18 @@
         <p>
           Use the following graphs to answer the questions.
         </p>
-              <sidebyside width="50%">
-                <image>
-                  <sageplot>
-                    f(x) = -1/2*x-2
-                    p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3) 
-                    p+=text('f(x)', (4,-2), fontsize=18, color='black')
-                    p
-                  </sageplot>
-                </image>
-                <image>
-                  <sageplot>
-                    f(x) = (x+1)*(x-3)
-                    p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3)
-                    p+=text('g(x)', (4, 1), fontsize=18, color='black')
-                    p
-                  </sageplot>
-                </image>
-            </sidebyside>
+        <sidebyside width="50%">
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-intercept1">
+              <xi:include href="prefigure/FN3-graph-intercept1.xml"/>
+            </prefigure>
+          </image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-intercept2">
+              <xi:include href="prefigure/FN3-graph-intercept2.xml"/>
+            </prefigure>
+          </image>
+        </sidebyside>
       </introduction>
       <task>
         <statement>
@@ -178,13 +172,9 @@
         </p>
         <figure xml:id="graph-of-line-segment">
           <image>
-            <sageplot>
-              f(x) = 9/8*(x-4)+4
-              p=plot(f, (x, -4, 4), ymin=-7, ymax=7, xmin=-5,xmax=5,color='blue', thickness=3,gridlines=[[-8..8],[-8..8]])
-              p+=point((4,4),pointsize=75,color='blue')
-              p+=point((-4,-5),pointsize=75,color='blue')
-              p
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-segment-domain">
+              <xi:include href="prefigure/FN3-graph-segment-domain.xml"/>
+            </prefigure>
           </image>
         </figure>
       </introduction>
@@ -253,11 +243,9 @@
         </p>
         <figure xml:id="graph-of-ray">
           <image>
-            <sageplot>
-              p=arrow((0,4), (9,-2),xmin=-2,xmax=9,ymin=-5,ymax=6, gridlines=[[-8..8],[-8..8]])
-              p+=point((0,4),pointsize=75,color='blue')
-              p
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-ray1">
+              <xi:include href="prefigure/FN3-graph-ray-domain1.xml"/>
+            </prefigure>
           </image>
         </figure>
       </introduction>
@@ -310,12 +298,10 @@
           Use the following graph to answer the questions below.
         </p>
         <figure xml:id="graph-of-ray-with-open-endpoint">
-            <image>
-            <sageplot>
-              p=arrow((3,-4), (-4,8),xmin=-6,xmax=5,ymin=-6,ymax=8, gridlines=[[-8..8],[-8..8]])
-              p+=point((3,-4), pointsize=75, markeredgecolor='blue',color='white',zorder=2)
-              p
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-ray2">
+              <xi:include href="prefigure/FN3-graph-ray-domain2.xml"/>
+            </prefigure>
           </image>
         </figure>
       </introduction>
@@ -359,17 +345,10 @@
           Use the following graph to answer the questions below.
         </p>
         <figure xml:id="graph-of-nonlinear-function">
-            <image>
-            <sageplot>
-              p=line([(5,-1), (4,-5)],thickness=3,xmin=-6,xmax=8,ymin=-6,ymax=8, gridlines=[[-8..8],[-8..8]])
-              p+=line([(4,-5),(-1,6)],thickness=3)
-              p+=line([(-1,6),(-3,1)],thickness=3)
-
-              p+=point((-3,1),pointsize=75,color='blue')
-              p+=point((5,-1),pointsize=75,markeredgecolor='blue',color='white',zorder=2)
-
-              p
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-piecewise-domain">
+              <xi:include href="prefigure/FN3-graph-piecewise-domain.xml"/>
+            </prefigure>
           </image>
         </figure>
       </introduction>
