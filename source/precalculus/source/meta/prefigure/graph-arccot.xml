@@ -1,0 +1,19 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=atan(1/x)</definition>
+  <coordinates bbox="(-3,-pi,3,pi)">
+    <grid-axes v-pi-format="yes"/>
+    <group at="function">
+      <graph function="f" domain="(-5,-0.01)"/>
+      <graph function="f" domain="(0.01,5)"/>
+    </group>
+    <line at="asymptote-h" endpoints="((-3,0),(3,0))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function y equals inverse cotangent of x">
+      <annotation ref="graph-function" text="The graph of y equals inverse cotangent of x and its asymptote">
+        <annotation ref="function" text="The function y equals inverse cotangent of x" sonify="yes"/>
+        <annotation ref="asymptote-h" text="The horizontal asymptote y equals 0"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
