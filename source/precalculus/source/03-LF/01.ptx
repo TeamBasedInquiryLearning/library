@@ -273,12 +273,10 @@
       <p>
         Use the graph to calculate the average rate of change on the given intervals.
       </p>
-      <image xml:id="square-root-function">
-        <sageplot>
-          f(x) = sqrt(4+x)
-          p=plot(f, (x, -5, 15), ymin=-15, ymax=15, color='blue', thickness=3, gridlines=[[-10..15],[-10..10]])+ point((-4,0),size=40,xmin=-10,xmax=15,ymin=-10,ymax=10)+ point((0,2),size=40,xmin=-10,xmax=15,ymin=-10,ymax=10)+point((12,4),size=40,xmin=-10,xmax=15,ymin=-10,ymax=10)
-          p
-        </sageplot>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-rate-of-change">
+          <xi:include href="prefigure/LF1-graph-avg-rate-of-change.xml"/>
+        </prefigure>
       </image>
     </introduction>
     <task>

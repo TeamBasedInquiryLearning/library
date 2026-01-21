@@ -1,0 +1,25 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition> f(x)=sqrt(4+x)</definition>
+  <coordinates bbox="(-5,-10,15,10)">
+    <grid-axes spacings="((-5,1,15),(-10,1,10))"/>
+    <group ref="fp">
+    <graph function="f"/>
+    <point at="p1" p="(-4,0)" stroke="blue" fill="blue"/>
+    <point at="p2" p="(0,2)" stroke="blue" fill="blue"/>
+    <point at="p3" p="(5,3)" stroke="blue" fill="blue"/>
+    <point at="p4" p="(12,4)" stroke="blue" fill="blue"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function">
+        <annotation ref="f" text="A function starting at -4 comma 0 and curving up and to the right in a concave down manner">
+          <annotation ref="p1" text="The point -4 comma 0 lying on the graph"/>
+          <annotation ref="p2" text="The point 0 comma 2 lying on the graph"/>
+          <annotation ref="p3" text="The point 5 comma 3 lying on the graph"/>
+          <annotation ref="p4" text="The point 12 comma 4 lying on the graph"/>
+        </annotation>
+    </annotation>
+  </annotations>
+</diagram>
