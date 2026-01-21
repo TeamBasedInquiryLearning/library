@@ -573,17 +573,11 @@
     <p>
      Now that we know how to find the slope (or steepness) of a line, let's look at other properties of slope. Use the graph below to answer the following questions. 
     </p>
-    <image xml:id="comparing-direction-of-lines">
-      <sageplot>
-        f(x) = (1/2)*x-1
-        g(x) = -(1/2)*x-1
-        p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]]) 
-        p+=text("$f(x)$", (7.5,4.5), color="blue", fontsize=20)
-        p+=plot(g, (x, -10, 10), ymin=-10, ymax=10, color='green', thickness=3, gridlines=[[-10..10],[-10..10]])
-        p+=text("$g(x)$", (-7.5,4.5), color="green", fontsize=20)
-        p
-      </sageplot>
-    </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf1-two-lines2">
+          <xi:include href="prefigure/LF1-graph-two-lines2.xml"/>
+        </prefigure>
+      </image>
   </introduction>
   <task>
     <statement>
@@ -757,13 +751,11 @@
 
 <task>
   <statement>
-    <image xml:id="horizontal-line">
-      <sageplot>
-        f(x) = 0*x+5
-        p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]])
-        p
-      </sageplot>
-    </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf1-horizontal">
+          <xi:include href="prefigure/LF1-graph-horizontal-line.xml"/>
+        </prefigure>
+      </image>
   </statement>
   <answer>
     <p>
