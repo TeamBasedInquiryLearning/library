@@ -398,10 +398,9 @@
           In this activity, we will look at where the function is increasing and decreasing. Use the following graph to answer the questions below.
         </p>
           <image>
-            <sageplot>
-              f(x) = (-x^2-2*x+3)
-              p=plot(f, (x, -4, 2),  ymin=-1, ymax=5, color='blue', thickness=3, gridlines=[[-8..8],[-8..8]])
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-increasing-decreasing1">
+              <xi:include href="prefigure/FN3-graph-increasing-decreasing1.xml"/>
+            </prefigure>
           </image>
       </introduction>
       <task>
@@ -508,13 +507,10 @@
           Use the following graph to answer the questions below.
         </p>
         <figure xml:id="graph-with-max-and-min-values">
-            <image>
-            <sageplot>
-              p=plot(spline([(-4,4),(-2,7),(2,-4),(5,10)]),(x,-4,5),thickness=3, gridlines=[[-8..11],[-8..11]])
-              p+=point((-4,4),pointsize=50,color='blue',xmin=-7,xmax=8,ymin=-5,ymax=10)
-              p+=point((5,10),pointsize=50,color='blue')
-              p
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-max-min">
+              <xi:include href="prefigure/FN3-graph-max-min.xml"/>
+            </prefigure>
           </image>
         </figure>
       </introduction>
@@ -524,7 +520,7 @@
             At what value of <m>x</m> is there a global maximum?
             <ol marker= "A." cols="4">
               <li> <m>x=-4</m> </li>
-              <li> <m>x=-2</m> </li>
+              <li> <m>x=-3</m> </li>
               <li> <m>x=2</m> </li>
               <li> <m>x=5</m> </li></ol></p>
         </statement>
@@ -540,9 +536,9 @@
             What is the global maximum value?
             <ol marker= "A." cols="4">
               <li> <m>10</m> </li>
-              <li> <m>7</m> </li>
+              <li> <m>8</m> </li>
               <li> <m>4</m> </li>
-              <li> <m>-4</m> </li></ol></p>
+              <li> <m>-5</m> </li></ol></p>
         </statement>
         <answer>
           <p>
@@ -556,7 +552,7 @@
             At approximately what value of <m>x</m> is there a global minimum?
             <ol marker= "A." cols="4">
               <li> <m>x\approx -4</m> </li>
-              <li> <m>x\approx -2</m> </li>
+              <li> <m>x\approx -3</m> </li>
               <li> <m>x\approx 2</m> </li>
               <li> <m>x\approx 5</m> </li></ol></p>
         </statement>
@@ -572,9 +568,9 @@
             What is the global minimum value?
             <ol marker= "A." cols="4">
               <li> <m>10</m> </li>
-              <li> <m>7</m> </li>
+              <li> <m>8</m> </li>
               <li> <m>4</m> </li>
-              <li> <m>-4</m> </li></ol></p>
+              <li> <m>-5</m> </li></ol></p>
         </statement>
         <answer>
           <p>
@@ -588,7 +584,7 @@
             At approximately what value of <m>x</m> is there a local maximum?
             <ol marker= "A." cols="4">
               <li> <m>x \approx -4</m> </li>
-              <li> <m>x \approx -2</m> </li>
+              <li> <m>x \approx -3</m> </li>
               <li> <m>x \approx 2</m> </li>
               <li> <m>x \approx 5</m> </li></ol></p>
         </statement>
@@ -604,9 +600,9 @@
             What is the local maximum value?
             <ol marker= "A." cols="4">
               <li> <m>10</m> </li>
-              <li> <m>7</m> </li>
+              <li> <m>8</m> </li>
               <li> <m>4</m> </li>
-              <li> <m>-4</m> </li></ol></p>
+              <li> <m>-5</m> </li></ol></p>
         </statement>
         <answer>
           <p>
@@ -620,7 +616,7 @@
             At approximately what value of <m>x</m> is there a local minimum?
             <ol marker= "A." cols="4">
               <li> <m>x \approx -4</m> </li>
-              <li> <m>x \approx -2</m> </li>
+              <li> <m>x \approx -3</m> </li>
               <li> <m>x \approx 2</m> </li>
               <li> <m>x \approx 5</m> </li></ol></p>
         </statement>
@@ -636,9 +632,9 @@
             What is the local minimum value?
             <ol marker= "A." cols="4">
               <li> <m>10</m> </li>
-              <li> <m>7</m> </li>
+              <li> <m>8</m> </li>
               <li> <m>4</m> </li>
-              <li> <m>-4</m> </li></ol></p>
+              <li> <m>-5</m> </li></ol></p>
         </statement>
         <answer>
           <p>
@@ -661,15 +657,11 @@
   <p>
     Sometimes, it is not always clear what the maxima or minima are or if they exist. Consider the following graph of <m>f(x)</m>:
   </p>
-  <image>
-    <sageplot>
-      f(x) = abs(1*x)
-      p=plot(f, (x, -5, 5), ymin=-5, ymax=5, color='blue', thickness=3) 
-      p+=point((0,0), pointsize=75, markeredgecolor='blue',color='white',zorder=3)
-      p+=point((0,1),pointsize=75,color='blue')
-      p
-    </sageplot>
-  </image>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-no-min">
+        <xi:include href="prefigure/FN3-graph-no-min.xml"/>
+      </prefigure>
+    </image>
 </introduction>
 <task>
   <statement>
@@ -725,14 +717,10 @@
           Use the following graph to answer the questions below.
         </p>
         <figure xml:id="graph-with-all-characteristics">
-            <image>
-            <sageplot>
-              p=line([(-8,4),(-2,4)],thickness=3, gridlines=[[-8..11],[-8..11]])
-              p+=plot(spline([(-2,4.1),(-0.5,8),(2,-3),(4.9,9.4)]),(x,-2,5),thickness=3)
-              p+=arrow((4.9,9.4),(5,10),thickness=3)
-              p+=point((-8,4),pointsize=50,color='blue',xmin=-9,xmax=6,ymin=-5,ymax=10)
-              p
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn3-increasing-decreasing2">
+              <xi:include href="prefigure/FN3-graph-increasing-decreasing2.xml"/>
+            </prefigure>
           </image>
         </figure>
       </introduction>
@@ -756,7 +744,7 @@
         </statement>
         <answer>
           <p>
-            <m>[-3.5, \infty)</m>
+            <m>[-5, \infty)</m>
           </p>
         </answer>
       </task>
@@ -768,7 +756,7 @@
         </statement>
         <answer>
           <p>
-            <m>(1.25,0)</m> and <m>(3.5,0)</m>
+            Approximately <m>(0.5,0)</m> and <m>(3.5,0)</m>
           </p>
         </answer>
       </task>
@@ -780,7 +768,7 @@
         </statement>
         <answer>
           <p>
-            <m>(0, 6.5)</m>
+            Approximately <m>(0, 2.5)</m>
           </p>
         </answer>
       </task>
@@ -792,7 +780,7 @@
         </statement>
         <answer>
           <p>
-            <m>(-2,-0.5)\cup(2.25,\infty)</m>
+            <m>(-4,-2)\cup(2,\infty)</m>
           </p>
         </answer>
       </task>
@@ -804,7 +792,7 @@
         </statement>
         <answer>
           <p>
-            <m>(-0.5,2.25)</m>
+            <m>(-2,2)</m>
           </p>
         </answer>
       </task>
@@ -816,7 +804,7 @@
         </statement>
         <answer>
           <p>
-            <m>(-8,-2)</m>
+            <m>(-8,-4)</m>
           </p>
         </answer>
       </task>
@@ -828,7 +816,7 @@
         </statement>
         <answer>
           <p>
-            <m>x=-0.5</m>
+            <m>x=-2</m>
           </p>
         </answer>
       </task>
@@ -840,7 +828,7 @@
         </statement>
         <answer>
           <p>
-            <m>x=2.25</m>
+            <m>x=2</m>
           </p>
         </answer>
       </task>
@@ -852,7 +840,7 @@
         </statement>
         <answer>
           <p>
-            Global minimum is <m>-3.5</m>. There is no global maximum.
+            Global minimum is <m>-5</m>. There is no global maximum.
           </p>
         </answer>
       </task>
