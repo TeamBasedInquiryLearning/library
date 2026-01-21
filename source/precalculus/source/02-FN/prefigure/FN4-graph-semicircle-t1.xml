@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(t)=(3*cos(t)-2,-3*sin(t)+3)</definition>
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes/>
+    <parametric-curve at="f" function="f" domain="(0,pi)" stroke="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="The bottom half of a circle of radius 3 centered at -2 comma 3"/>
+    </annotation>
+  </annotations>
+</diagram>
