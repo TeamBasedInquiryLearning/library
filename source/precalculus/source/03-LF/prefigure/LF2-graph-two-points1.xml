@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=5</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <point at="p1" p="(2,1)" fill="blue" stroke="blue"/>
+    <point at="p2" p="(-3,4)" fill="blue" stroke="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of two point">
+        <annotation at="p1"  text="The point 2 comma 1"/>
+        <annotation at="p2"  text="The point -3 comma 4"/>
+    </annotation>
+  </annotations>
+</diagram>

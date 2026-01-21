@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <point at="p1" p="(-4,-1)" fill="blue" stroke="blue"/>
+    <point at="p2" p="(4,5)" fill="blue" stroke="blue"/>
+    <line at="L" endpoints="((-4,-1),(4,5))" stroke="blue" infinite="yes"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of two points lying on a line">
+        <annotation at="L"  text="A line sloping up three units for every four units moved to the right"/>
+        <annotation at="p1"  text="The point -4 comma -1 lying on the line"/>
+        <annotation at="p2"  text="The point 4 comma 5 lying on the line"/>
+    </annotation>
+  </annotations>
+</diagram>
