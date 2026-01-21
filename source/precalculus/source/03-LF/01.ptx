@@ -364,13 +364,11 @@
     <p>
       Use the given graph of the function, <m>f(x)=3x-4</m>, to investigate the average rate of change of a linear function.
     </p>
-    <image xml:id="AROC-linear-function">
-      <sageplot>
-        f(x) = 3*x-4
-        p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3, gridlines=[[-10..10],[-10..10]])
-        p
-      </sageplot>
-    </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf1-linear1">
+          <xi:include href="prefigure/LF1-graph-linear1.xml"/>
+        </prefigure>
+      </image>
   </introduction>
   <task>
     <statement>
@@ -439,19 +437,11 @@
   <p>
     The steepness of a line depends on the vertical and horizontal distances between two points on the line. Use the graph below to compare the steepness, or slope, of the two lines.
   </p>
-  <image xml:id="comparing-slopes-of-lines">
-    <sageplot>
-      f(x) = (1/2)*x-1
-      g(x) = 4*x-3
-      p=plot(f, (x, -10, 10), ymin=-10, ymax=10, color='blue', thickness=3,  gridlines=[[-10..10],[-10..10]])
-      p+=point((0,-1),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)+ point((4,1),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)
-      p+=text("$f(x)$", (7.5,1.5), color="blue", fontsize=20)
-      p+=plot(g, (x, -10, 10), ymin=-10, ymax=10, color='red', thickness=3) 
-      p+=point((0,-3),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10, color='red')+ point((2,5),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10, color='red')
-      p+=text("$g(x)$", (1,6), color="red", fontsize=20)
-      p
-    </sageplot>
-  </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf1-two-lines">
+          <xi:include href="prefigure/LF1-graph-two-lines.xml"/>
+        </prefigure>
+      </image>
 </introduction>
 <task>
   <statement>
