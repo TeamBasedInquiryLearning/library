@@ -172,11 +172,9 @@
   <answer>
     <p>
       <image>
-        <sageplot>
-          p=plot(3*x-2,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]])
-          p+=plot(-0.25*x+1.25,(x,-5,5),thickness=3, color='red')
-          p
-        </sageplot>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf6-intersection">
+          <xi:include href="prefigure/LF6-graph-intersection.xml"/>
+        </prefigure>
       </image>
     </p>
     <p>The point of intersection is <m>(1,1)</m>.</p>
@@ -222,11 +220,9 @@
       <answer>
         <p>
           <image>
-            <sageplot>
-              p=plot(-3*x+4,(x,-5,5),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, color='blue', gridlines=[[-4..4],[-4..4]])
-              p+=plot((-1/3)*x+(10/3),(x,-5,5),thickness=3, color='red')
-              p
-            </sageplot> 
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf6-intersection2">
+              <xi:include href="prefigure/LF6-graph-intersection2.xml"/>
+            </prefigure>
           </image>
         </p>
         <p>The point of intersection is not at a "nice" point, making it hard to see exactly where it is.</p>
