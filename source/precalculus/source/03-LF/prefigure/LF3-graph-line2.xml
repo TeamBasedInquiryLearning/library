@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=9</definition>
+  <definition>p1=(-3,0)</definition>
+  <definition>p2=(0,8)</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <line at="L" endpoints="(p1,p2)" stroke="blue" infinite="yes"/>
+    <point at="p1" p="p1" stroke="blue" fill="blue"/>
+    <point at="p2" p="p2" stroke="blue" fill="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of two points lying on a line">
+        <annotation at="L"  text="A line sloping up eight units for every three units moved to the right"/>
+        <annotation at="p1" text="The point -3 comma 0"/>
+        <annotation at="p2" text="The point 0 comma 8"/>
+    </annotation>
+  </annotations>
+</diagram>
