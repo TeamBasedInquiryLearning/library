@@ -1,0 +1,20 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=5</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <group at="L1">
+    <line  endpoints="((-2,-1),(0,3))" stroke="blue" infinite="yes"/>
+    <label anchor="(2,4)" color="blue">Line B</label>
+    </group>
+    <group at="L2">
+    <line endpoints="((-4,3),(2,0))" stroke="red" infinite="yes"/>
+    <label anchor="(4,-2)" color="red">Line A</label>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+        <annotation ref="L1" sonify="yes" text="A line labeled Line B sloping up two units for every unit moved to the right"/>
+        <annotation ref="L2" sonify="yes" text="A line labeled Line A sloping up one unit for every two units moved to the left"/>
+    </annotation>
+  </annotations>
+</diagram>
