@@ -9,8 +9,8 @@
   </coordinates>
   <annotations>
     <annotation ref="figure" text="A graph of two points lying on a line">
-        <annotation at="L"  text="A line sloping up one unit for every  three units moved to the left"/>
-        <annotation at="p2" text="The point 0 comma 4"/>
+        <annotation ref="L"  text="A line sloping up one unit for every  three units moved to the left"/>
+        <annotation ref="p2" text="The point 0 comma 4"/>
     </annotation>
   </annotations>
 </diagram>

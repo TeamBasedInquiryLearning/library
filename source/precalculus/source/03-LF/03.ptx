@@ -24,7 +24,7 @@
             Draw a line that goes through the point <m>(1,4)</m>.
           </p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-point">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-point">
               <xi:include href="prefigure/LF3-graph-point.xml"/>
             </prefigure>
           </image>
@@ -59,7 +59,7 @@
             Now draw a line that goes through the points <m>(1,4)</m> and <m>(-3,-2)</m>.
           </p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-two-points">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-two-points">
               <xi:include href="prefigure/LF3-graph-two-points.xml"/>
             </prefigure>
           </image>
@@ -110,7 +110,7 @@
         <answer>
           <p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-line1">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line1">
               <xi:include href="prefigure/LF3-graph-line1.xml"/>
             </prefigure>
           </image>
@@ -127,7 +127,7 @@
         <answer>
           <p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-line2">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line2">
               <xi:include href="prefigure/LF3-graph-line2.xml"/>
             </prefigure>
           </image>
@@ -178,7 +178,7 @@
         <answer>
           <p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-line3">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line3">
               <xi:include href="prefigure/LF3-graph-line3.xml"/>
             </prefigure>
           </image>
@@ -271,7 +271,7 @@
         <answer>
           <p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-line4">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line4">
               <xi:include href="prefigure/LF3-graph-line4.xml"/>
             </prefigure>
           </image>
@@ -332,7 +332,7 @@
           <answer>
             <p>
           <image>
-            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf2-line5">
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line5">
               <xi:include href="prefigure/LF3-graph-line5.xml"/>
             </prefigure>
           </image>
@@ -349,38 +349,34 @@
           <p> A line contains the point <m>(-3,-2)</m> and has slope <m>\dfrac{1}{5} </m>. Which of the following is the graph of that line?
           </p> 
           <ol marker= "A." cols="2">  
-            <li> <image>
-              <sageplot>
-                f(x) = (-.2*(x+3)-2)
-                p=point({(-3,-2),(2,-3)},pointsize=50,color='blue')
-                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-                p
-              </sageplot>
-            </image> </li>
-            <li> <image>
-              <sageplot>
-                f(x) = (.2*(x+3)-2)
-                p=point({(-3,-2),(2,-1)},pointsize=50,color='blue')
-                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-                p
-              </sageplot>
-            </image> </li>
-            <li> <image>
-              <sageplot>
-                f(x) = (5*(x+3)-2)
-                p=point({(-3,-2),(-2,3)},pointsize=50,color='blue')
-                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-                p
-              </sageplot>
-            </image> </li>
-            <li> <image>
-              <sageplot>
-                f(x) = (-5*(x+3)-2)
-                p=point({(-3,-2),(-2,-7)},pointsize=50,color='blue')
-                p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-                p
-              </sageplot>
-            </image> </li>
+            <li> 
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line6">
+                  <xi:include href="prefigure/LF3-graph-line6.xml"/>
+                </prefigure>
+              </image>
+            </li>
+            <li> 
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line7">
+                  <xi:include href="prefigure/LF3-graph-line7.xml"/>
+                </prefigure>
+              </image>
+            </li>
+            <li> 
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line8">
+                  <xi:include href="prefigure/LF3-graph-line8.xml"/>
+                </prefigure>
+              </image>
+            </li>
+            <li> 
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line9">
+                  <xi:include href="prefigure/LF3-graph-line9.xml"/>
+                </prefigure>
+              </image>
+            </li>
           </ol>
         </statement>
         <answer>
@@ -445,12 +441,9 @@
           <answer>
             <p>
               <image>
-                <sageplot>
-                  f(x) = ((-4)*(x+2)+6)
-                  p=point({(-2,6)},pointsize=50,color='blue')
-                  p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-                  p
-                </sageplot>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line10">
+                  <xi:include href="prefigure/LF3-graph-line10.xml"/>
+                </prefigure>
               </image>
             </p>
           </answer>
@@ -505,14 +498,13 @@
       </p>
     </statement>
     <answer>
-      <p> <image>
-        <sageplot>
-          f(x) = (7/2*(x)+7)
-          p=point({(4,-2)},pointsize=50,color='blue')
-          p+=line([(4,-8),(4,8)], xmin=-8, xmax=8, ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-          p
-        </sageplot>
-      </image> </p> 
+      <p> 
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line11">
+            <xi:include href="prefigure/LF3-graph-line11.xml"/>
+          </prefigure>
+        </image>
+      </p> 
       </answer>
   </task>
   <task>
@@ -540,14 +532,13 @@
       </p>
     </statement>
     <answer>
-      <p> <image>
-        <sageplot>
-          f(x) = -2
-          p=point({(4,-2)},pointsize=50,color='blue')
-          p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-          p
-        </sageplot>
-      </image> </p> 
+      <p> 
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line12">
+            <xi:include href="prefigure/LF3-graph-line12.xml"/>
+          </prefigure>
+        </image>
+       </p> 
       </answer>
   </task>
   <task>
@@ -582,15 +573,14 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (-3/4*(x+3)+4)
-              p=point({(-3,4),(5,-2)},pointsize=50,color='blue')
-              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
-          </answer>
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency1">
+                <xi:include href="prefigure/LF3-graph-line-fluency1.xml"/>
+              </prefigure>
+            </image>
+          </p> 
+        </answer>
       </task>
       <task>
         <statement>
@@ -599,14 +589,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (7/2*(x)+7)
-              p=point({(-2,0),(0,7)},pointsize=50,color='blue')
-              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency2">
+                <xi:include href="prefigure/LF3-graph-line-fluency2.xml"/>
+              </prefigure>
+            </image>
+           </p> 
           </answer>
       </task>
       <task>
@@ -616,14 +605,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (2/5*(x-4)+6)
-              p=point({(4,6)},pointsize=50,color='blue')
-              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency3">
+                <xi:include href="prefigure/LF3-graph-line-fluency3.xml"/>
+              </prefigure>
+            </image>
+           </p> 
           </answer>
       </task>
       <task>
@@ -633,14 +621,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (-1/3*(x)-4)
-              p=point({(0,-4)},pointsize=50,color='blue')
-              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency4">
+                <xi:include href="prefigure/LF3-graph-line-fluency4.xml"/>
+              </prefigure>
+            </image>
+           </p> 
           </answer>
       </task>
       <task>
@@ -650,13 +637,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              p=point({(-2,-7)},pointsize=50,color='blue')
-              p+=line([(-2,-8),(-2,8)], xmin=-8,xmax=8,ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency5">
+                <xi:include href="prefigure/LF3-graph-line-fluency5.xml"/>
+              </prefigure>
+            </image>
+           </p> 
           </answer>
       </task>
       <task>
@@ -666,14 +653,13 @@
           </p>  
         </statement>
         <answer>
-          <p>  <image>
-            <sageplot>
-              f(x) = 3
-              p=point({(-6,3)},pointsize=50,color='blue')
-              p+=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p>  
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency6">
+                <xi:include href="prefigure/LF3-graph-line-fluency6.xml"/>
+              </prefigure>
+            </image>
+       </p> 
           </answer>
       </task>
       <task>
@@ -683,13 +669,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (-5/3*x-6)
-              p=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency7">
+                <xi:include href="prefigure/LF3-graph-line-fluency7.xml"/>
+              </prefigure>
+            </image>
+          </p> 
           </answer>
       </task>
       <task>
@@ -699,13 +685,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (7/2*(x-2)+5)
-              p=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency8">
+                <xi:include href="prefigure/LF3-graph-line-fluency8.xml"/>
+              </prefigure>
+            </image>
+          </p> 
           </answer>
       </task>
       <task>
@@ -715,13 +701,13 @@
           </p>  
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (1/2*x-(4/3))
-              p=plot(f, (x, -8, 8), ymin=-8, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])                
-              p
-            </sageplot>
-          </image> </p> 
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-lf3-line-fluency9">
+                <xi:include href="prefigure/LF3-graph-line-fluency9.xml"/>
+              </prefigure>
+            </image>
+           </p> 
           </answer>
       </task>
       </activity>

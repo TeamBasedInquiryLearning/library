@@ -8,9 +8,9 @@
   </coordinates>
   <annotations>
     <annotation ref="figure" text="A graph of two points lying on a line">
-        <annotation at="L"  text="A line sloping up three units for every four units moved to the right"/>
-        <annotation at="p1"  text="The point -4 comma -1 lying on the line"/>
-        <annotation at="p2"  text="The point 4 comma 5 lying on the line"/>
+        <annotation ref="L"  text="A line sloping up three units for every four units moved to the right"/>
+        <annotation ref="p1"  text="The point -4 comma -1 lying on the line"/>
+        <annotation ref="p2"  text="The point 4 comma 5 lying on the line"/>
     </annotation>
   </annotations>
 </diagram>

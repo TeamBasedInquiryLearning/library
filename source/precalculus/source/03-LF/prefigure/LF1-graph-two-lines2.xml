@@ -15,8 +15,8 @@
   <annotations>
     <annotation ref="figure"
                 text="The graph of a function">
-        <annotation at="f" sonify="yes" text="A line labeled f of x sloping upwards 1 for every two units moved to the right"/>
-        <annotation at="g" sonify="yes" text="A line labeled g of x sloping upwards 1 for every two units moved to the left"/>
+        <annotation ref="f" sonify="yes" text="A line labeled f of x sloping upwards 1 for every two units moved to the right"/>
+        <annotation ref="g" sonify="yes" text="A line labeled g of x sloping upwards 1 for every two units moved to the left"/>
     </annotation>
   </annotations>
 </diagram>

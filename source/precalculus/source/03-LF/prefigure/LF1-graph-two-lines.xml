@@ -20,12 +20,12 @@
   <annotations>
     <annotation ref="figure"
                 text="The graph of a function">
-        <annotation at="f" sonify="yes" text="A line labeled f of x sloping upwards 1 for every two units moved to the right"/>
-        <annotation at="p1" text="The point 4 comma 1, lying on the blue line labeled f of x"/>
-        <annotation at="p2" text="The point 0 comma -1, lying on the blue line labeled f of x"/>
-        <annotation at="g" sonify="yes" text="A line sloping upwards 3 for every unit moved to the right"/>
-        <annotation at="p3" text="The point 2 comma 5, lying on the red line labeled g of x"/>
-        <annotation at="p4" text="The point 0 comma -3, lying on the red line labeled g of x"/>
+        <annotation ref="f" sonify="yes" text="A line labeled f of x sloping upwards 1 for every two units moved to the right"/>
+        <annotation ref="p1" text="The point 4 comma 1, lying on the blue line labeled f of x"/>
+        <annotation ref="p2" text="The point 0 comma -1, lying on the blue line labeled f of x"/>
+        <annotation ref="g" sonify="yes" text="A line sloping upwards 3 for every unit moved to the right"/>
+        <annotation ref="p3" text="The point 2 comma 5, lying on the red line labeled g of x"/>
+        <annotation ref="p4" text="The point 0 comma -3, lying on the red line labeled g of x"/>
     </annotation>
   </annotations>
 </diagram>

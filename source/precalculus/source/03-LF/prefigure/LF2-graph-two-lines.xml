@@ -9,8 +9,8 @@
   </coordinates>
   <annotations>
     <annotation ref="figure" text="The graph of a function">
-        <annotation at="L1" sonify="yes" text="A line labeled Line A sloping up two units for every unit moved to the right"/>
-        <annotation at="L2" sonify="yes" text="A line labeled Line B sloping up two units for every unit moved to the right"/>
+        <annotation ref="L1" sonify="yes" text="A line labeled Line A sloping up two units for every unit moved to the right"/>
+        <annotation ref="L2" sonify="yes" text="A line labeled Line B sloping up two units for every unit moved to the right"/>
     </annotation>
   </annotations>
 </diagram>
