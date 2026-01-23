@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=25</definition>
+  <definition>f(x)=x^2-4*x+20</definition>
+  <definition>g(x)=2*x^2-8*x+24</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes />
+    <graph at="f" function="f"/>
+    <graph at="g" function="g" stroke="green"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of two parabolas ">
+        <annotation ref="f"  sonify="yes" text="A parabola that slopes down to the point 2 comma 16"/>
+        <annotation ref="g"  sonify="yes" text="A narrower parabola that slopes down to the point 2 comma 16"/>
+    </annotation>
+  </annotations>
+</diagram>

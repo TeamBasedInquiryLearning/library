@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <definition>f(x)=-(x-2)^2+4</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+      <axes >
+        <ylabel alignment="north">Graph D</ylabel>
+      </axes>
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a parabola labeled Graph D">
+        <annotation ref="f"  sonify="yes" text="A parabola that slopes up to the point 2 comma 4 and then slopes down"/>
+    </annotation>
+  </annotations>
+</diagram>
