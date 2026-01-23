@@ -1,0 +1,20 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=10</definition>
+  <definition>f(x) = -(x-4)/(2*(x+3)^2)</definition>
+  <coordinates bbox="(-width,-10,width,10)">
+    <grid-axes spacings="(-width,1,width),(-10,1,10)"  hlabels="(-width+2,2,width-2)" vlabels="(-width+2,2,width-2)"/>
+    <graph at="f" function="f" />
+    <group>
+    <line at="l1" endpoints="((-3,0),(-3,1))" stroke="red" dash="9 9" infinite="yes"/>
+    <line at="l3" endpoints="((0,0),(1,0))" stroke="red" dash="9 9" infinite="yes"/>
+    </group>
+    <point at="p" p="(1,f(1))" stroke="blue" fill="white"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a rational function and its asymptotes">
+        <annotation ref="f"  sonify="yes" text="A rational function"/>
+        <annotation ref="l1" text="The vertical asymptote x equals -4"/>
+        <annotation ref="l3" text="The horizontal asymptote y equals 0"/>
+    </annotation>
+  </annotations>
+</diagram>
