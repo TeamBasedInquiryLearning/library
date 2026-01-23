@@ -37,15 +37,11 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
   <introduction>
     <p>
       Consider the graph shown below.
-       <figure width="100%" xml:id="PR8-quadratic">
-          <image xml:id="PR8-quadratic-image">
-            <description>Graph of a quadratic</description>
-            <sageplot>
-              f(x) = (x^2-6*x+5)
-                p=plot(f, (x, -3, 9), ymin=-7, ymax=10, color='blue', thickness=3)
-            </sageplot>
-          </image>
-        </figure>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR8-parabola">
+          <xi:include href="prefigure/PR8-parabola.xml"/>
+        </prefigure>
+      </image>
     </p>
   </introduction>
 
@@ -333,11 +329,10 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
       <statement>
         <p> Notice that the <m>x</m>-intercepts are solutions to the quadratic equation <m>x^2-4x-32=0</m>. How should we mark these values of <m>x</m> on a number line? 
         </p>
-        <image xml:id="quad-ineq-number-line">
-          <latex-image>
-            \begin{tikzpicture}[scale=5]
-            \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0); \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10} \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};\end{tikzpicture}
-          </latex-image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR8-number-line1">
+          <xi:include href="prefigure/PR8-number-line1.xml"/>
+        </prefigure>
       </image>
     </statement>
     <answer>
@@ -355,20 +350,11 @@ where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
       </statement>
       <answer>
         <p>
-          <image>
-            <latex-image>
-             \begin{tikzpicture}[scale=5]
-              \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
-              \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
-              \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-              \draw[thick,red,dashed] (-0.4,-0.16) -- (-0.4,0.16);
-              \draw[thick,red,dashed] (0.8,-0.16) -- (0.8,0.16);
-            \node[above] at (0.2,0.02) {\Large \bf $-$};
-            \node[above] at (1,0.02) {\Large \bf $+$};
-            \node[above] at (-0.7,0.02) {\Large \bf $+$};
-            \end{tikzpicture}
-            </latex-image>
-          </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR8-sign-chart1">
+          <xi:include href="prefigure/PR8-sign-chart1.xml"/>
+        </prefigure>
+      </image>
         </p>
       </answer>
     </task>
@@ -390,6 +376,12 @@ p += TBIL.inequality_plot(start=8,strict_start=False,label_endpoints=False)
 p.axes(False)
 p 
         </sageplot>
+        <description>
+          <p>A numberline from -10 to 10. 
+            The portion to the left of -4 is shaded, with a ] at -4.
+            The portion to the right of 8 is shaded, with a [ at 8.
+          </p>
+        </description>
       </image>
         </p>
       </answer>
@@ -425,20 +417,11 @@ p
   <p>A <term>sign chart</term> is a number line representing the <m>x</m>-axis that shows where a function is positive or negative by using a '+' or a '-' sign to indicate which regions are positive or negative.  For example, a sign chart for <m>f(x)=x^2-4x-32</m> (also seen in <xref ref="graphing-solutions-of-quadratics-on-number-line"/>) is shown below.
   </p>
    <figure xml:id="fig-sign-chart">
-   <image xml:id="sign-chart-example">
-    <latex-image>
-      \begin{tikzpicture}[scale=5]
-      \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
-      \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
-      \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-      \draw[thick,red,dashed] (-0.4,-0.16) -- (-0.4,0.16);
-      \draw[thick,red,dashed] (0.8,-0.16) -- (0.8,0.16);
-      \node[above] at (0.2,0.02) {\Large \bf $-$};
-      \node[above] at (1,0.02) {\Large \bf $+$};
-      \node[above] at (-0.7,0.02) {\Large \bf $+$};
-      \end{tikzpicture}
-    </latex-image>
-  </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR8-sign-chart">
+          <xi:include href="prefigure/PR8-sign-chart1.xml"/>
+        </prefigure>
+      </image>
   <caption> A sign chart for the function <m>f(x)=x^2-4x-32</m>.</caption>
 </figure>
 </definition>
@@ -518,22 +501,11 @@ p
       </statement>
       <answer>
         <p>
-          <figure>
-            <image>
-              <latex-image>
-                \begin{tikzpicture}[scale=5]
-                \draw[&lt;-&gt;, thick] (-1.1,0) -- (1.1,0);
-                \foreach \x/\xtext in {-1/-10,-0.8/-8,-0.6/-6,-0.4/-4,-0.2/-2,0/0,0.2/2,0.4/4,0.6/6,0.8/8, 1/10}
-                \draw[thick] (\x,0.5pt) -- (\x,-0.5pt) node[below] {\xtext};
-                \draw[thick,red,dashed] (-0.2,-0.16) -- (-0.2,0.16);
-                \draw[thick,red,dashed] (0.7,-0.16) -- (0.7,0.16);
-                \node[above] at (0.2,0.02) {\Large \bf $-$};
-                \node[above] at (1,0.02) {\Large \bf $+$};
-                \node[above] at (-0.7,0.02) {\Large \bf $+$};
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR8-sign-chart2">
+              <xi:include href="prefigure/PR8-sign-chart2.xml"/>
+            </prefigure>
+          </image>
         </p>
       </answer>
     </task>
@@ -553,6 +525,11 @@ p += TBIL.inequality_plot(start=-2,end=7,label_endpoints=False)
 p.axes(False)
 p
         </sageplot>
+        <description>
+          <p>A number line from -10 to 10.
+            The portion between -2 and 7 is shaded, with a ( at -2 and a ) at 7.
+          </p>
+        </description>
       </image>
     </answer>
     </task>
