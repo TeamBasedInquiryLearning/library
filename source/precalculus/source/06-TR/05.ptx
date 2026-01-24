@@ -24,12 +24,12 @@
           The <term>unit circle</term> is the circle of radius <m>1</m> centered at the origin on the coordinate plane.
         
          <figure width="100%" xml:id="unit-circle">
-          <image xml:id="TR5-unit-circle">
-            <description>Unit circle</description>
-            <sageplot>
-              p=circle((0,0),1,color="blue")
-            </sageplot>
-          </image>
+          <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-unit-circle">
+                    <xi:include href="prefigure/TR5-unit-circle.xml"/>
+                </prefigure>
+                <description>A circle of radius 1 centered at the origin</description>
+            </image>
         </figure>
         </p>
       </statement>
@@ -42,18 +42,11 @@
     <p>
     Let <m>\theta</m> be the angle shown below in standard form. Notice that the terminal side intersects with the unit circle. (Note: We will assume a circle drawn in this context is the unit circle unless told otherwise.) We will label that point of intersection as <m>(x,y)</m>. 
         </p>
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/4,show_unit_circle=True,show_angle_value=r"$\theta$")
-p+=text("$(x,y)$", (.8,.8), fontsize="15")
-p+=text("$r$", (.35,.45), fontsize="15")
-p+=point((1/sqrt(2),1/sqrt(2)),size="50",color="red",zorder=5)
-p
-  </sageplot> 
-</image> 
-
-
+      <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-point-unit-circle">
+                <xi:include href="prefigure/TR5-point-unit-circle.xml"/>
+            </prefigure>
+        </image>
   </introduction>
   
   <task>
@@ -83,20 +76,11 @@ p
       </p>
     </statement>
     <answer>
-      <image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/4,show_unit_circle=True)
-p+=text("$(x,y)$", (.8,.8),fontsize="15")
-p+=text("$r$", (.35,.45), fontsize="15")
-p+=point((1/sqrt(2),1/sqrt(2)),size="70",color="red",zorder=5)
-p+=line([(1/sqrt(2),0),(1/sqrt(2),1/sqrt(2))],color="green",thickness=3)
-p+=line([(1/sqrt(2),0),(0,0)],color="green",zorder=5,thickness=3)
-p+=text("$x$", (.4,-.1),color="black",fontsize="15")
-p+=text("$y$", (.81,.4),color="black",fontsize="15")
-p
-  </sageplot> 
-</image> 
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-triangle">
+          <xi:include href="prefigure/TR5-triangle.xml"/>
+        </prefigure>
+      </image>
     </answer> 
   </task>
 
@@ -349,15 +333,11 @@ p
   <introduction> 
     <p>
       Let's consider the angle <m>\theta=150^\circ</m>, drawn below with the unit circle.</p>
-
-<image width="50%" xml:id="ref-angle-ex1">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True)
-p
-  </sageplot> 
-</image>  
-    
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle1">
+          <xi:include href="prefigure/TR5-angle1.xml"/>
+        </prefigure>
+      </image>
   </introduction>
   
   <task>
@@ -366,14 +346,11 @@ p
         What is the measure of <m>\alpha</m>?
       </p>
 
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/6,reference_angle=pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True)
-p+=TBIL.plot_angle(pi/6,show_unit_circle=True,show_angle_value=r"$\alpha$")
-p
-  </sageplot> 
-</image> 
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle2">
+          <xi:include href="prefigure/TR5-angle2.xml"/>
+        </prefigure>
+      </image>
 
       <p>
        <ol marker= "A." cols="5">    
@@ -398,23 +375,18 @@ p
          angle <m>\alpha=30^\circ</m> to help. Find the point <m>(x_1,y_1)</m>, where the terminal side of the 
          <m>30^\circ</m> angle intersects the unit circle.
       </p>
- <sidebyside width="50%">
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x","y"),show_triangle=True)
-p
-  </sageplot> 
-
-</image> 
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/6,show_unit_circle=True,show_angle_value=True,degree_labels=True,show_unit_point=True,label_unit_point=("x_1","y_1"),show_triangle=True)
-p
-  </sageplot> 
-</image>  
-</sidebyside>
+     <sidebyside width="50%">
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-triangle2">
+            <xi:include href="prefigure/TR5-triangle2.xml"/>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-triangle3">
+            <xi:include href="prefigure/TR5-triangle3.xml"/>
+          </prefigure>
+        </image>
+      </sidebyside>
 
       <p>
        <ol marker= "A." cols="3">    

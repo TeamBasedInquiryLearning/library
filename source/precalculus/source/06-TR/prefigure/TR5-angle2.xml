@@ -1,0 +1,30 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=1.2</definition>
+  <definition>t1=0</definition>
+  <definition>t2=pi/6</definition>
+  <definition>t3=pi</definition>
+  <definition>p1=(cos(t1),sin(t1))</definition>
+  <definition>p2=(cos(t2),sin(t2))</definition>
+  <definition>p3=(cos(t3),sin(t3))</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <axes decorations="no"/>
+    <circle at="c" center="(0,0)" radius="1" stroke="gray" thickness="1"/>
+    
+    <angle-marker at="a" points="(p1,(0,0),p2)" alignment="east"><m>\alpha</m></angle-marker>
+    <angle-marker at="a" points="(p2,(0,0),p3)" alignment="northwest"><m>150^\circ</m></angle-marker>
+    <vector at="v1" v="p1" stroke="blue" thickness="2"/>
+    <vector at="v2" v="p2" stroke="blue" thickness="2"/>
+    <vector at="v3" v="p3" stroke="blue" thickness="2"/>
+    
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="Angles formed by three arrows in the coordinate plane beginning at the origin and terminating along a unit circle.">
+      <annotation ref="v1" text="An arrow from the origin pointing directly right along the x-axis"/>
+      <annotation ref="v2" text="An arrow from the origin pointing up and right"/>
+      <annotation ref="v3" text="An arrow from the origin pointing directly left"/>
+      <annotation ref="a" text="The smaller angle is labeled alpha"/>
+      <annotation ref="b" text="The larger angle is labeled 150 degrees"/>
+      <annotation ref="c" text="A circle of radius 1 centered at the origin.  The ends of both arrows lie on the circle."/>
+     </annotation>
+  </annotations>
+</diagram>
