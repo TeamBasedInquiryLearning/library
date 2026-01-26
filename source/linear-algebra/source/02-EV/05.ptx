@@ -497,6 +497,7 @@ A basis for a Euclidean vector space can be used to create alternative coordinat
             <slate surface="doenetml">
                 <xi:include parse="text" href="doenet/EV5-basis-visualization.xml"/>
             </slate>
+            <description><p>Interactive that can toggle between standard coordinates and an alternative basis. A given vector is shown to be the sum of the standard basic vectors in standard coordiantes, and the sum of basis vectors when toggled to the alternative basis.</p></description>
         </interactive>
     </remark>
 
