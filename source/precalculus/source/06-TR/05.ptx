@@ -472,14 +472,11 @@
   <introduction> 
     <p>
       Let's consider the angle <m>\theta=\dfrac{4\pi}{3}</m>, drawn below with the unit circle.</p>
-
-<image width="50%" xml:id="ref-angle-ex2">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(4*pi/3,show_unit_circle=True,show_angle_value=True)
-p
-  </sageplot> 
-</image>  
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle3">
+        <xi:include href="prefigure/TR5-angle3.xml"/>
+      </prefigure>
+    </image>
     
   </introduction>
   
@@ -488,13 +485,11 @@ p
       <p> The angle below represents the reference angle for <m>\theta=\dfrac{4\pi}{3}</m>, which is the smallest angle between the terminal side of <m>\theta</m> and the <m>x</m>-axis. What is the measure of this reference angle? 
       </p>
 
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/3,reference_angle=pi,show_unit_circle=True)
-p
-  </sageplot> 
-</image> 
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle4">
+          <xi:include href="prefigure/TR5-angle4.xml"/>
+        </prefigure>
+      </image>
 
       <p>
        <ol marker= "A." cols="5">    
@@ -517,23 +512,18 @@ p
     <statement>
       <p> We can find the sine and cosines values of our original angle, <m>\theta=\dfrac{4\pi}{3}</m>, by using the reference angle to help. Find the point <m>(x_1,y_1)</m>, where the terminal side of the angle <m>\dfrac{\pi}{3}</m>  intersects the unit circle.
       </p>
- <sidebyside width="50%">
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(4*pi/3,show_unit_circle=True,show_angle_value=True,show_unit_point=True,label_unit_point=("x","y"))
-p
-  </sageplot> 
-
-</image> 
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(pi/3,show_unit_circle=True,show_angle_value=True,show_unit_point=True,label_unit_point=("x_1","y_1"))
-p
-  </sageplot> 
-</image>  
-</sidebyside>
+      <sidebyside width="50%">
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle5">
+            <xi:include href="prefigure/TR5-angle5.xml"/>
+          </prefigure>
+        </image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle6">
+            <xi:include href="prefigure/TR5-angle6.xml"/>
+          </prefigure>
+        </image>
+      </sidebyside>
 
       <p>
        <ol marker= "A." cols="3">    
@@ -681,14 +671,11 @@ p
   
   <task>
     <statement>
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/6,show_unit_circle=True,show_angle_value=False,degree_labels=True,show_unit_point=True,label_unit_point=("-\dfrac{\sqrt{3}}{2}","\dfrac{1}{2}"))
-p
-  </sageplot> 
-
-</image> 
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle7">
+            <xi:include href="prefigure/TR5-angle7.xml"/>
+          </prefigure>
+        </image>
     </statement>
     <answer>
         <p>
@@ -707,14 +694,11 @@ p
 
   <task>
     <statement>
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5*pi/4,show_unit_circle=True,show_angle_value=False,degree_labels=True,show_unit_point=True,label_unit_point=("-\dfrac{\sqrt{2}}{2}","-\dfrac{\sqrt{2}}{2}"))
-p
-  </sageplot> 
-
-</image> 
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle8">
+            <xi:include href="prefigure/TR5-angle8.xml"/>
+          </prefigure>
+        </image>
     </statement>
     <answer>
         <p>
@@ -756,14 +740,11 @@ p
 
     </statement>
     <answer>
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(5.56,show_unit_circle=True,show_angle_value=False,degree_labels=True,show_unit_point=True,label_unit_point=("\dfrac{3}{4}","y"))
-p
-  </sageplot> 
-
-</image> 
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR5-angle9">
+            <xi:include href="prefigure/TR5-angle9.xml"/>
+          </prefigure>
+        </image>
     </answer>
   </task>
 
