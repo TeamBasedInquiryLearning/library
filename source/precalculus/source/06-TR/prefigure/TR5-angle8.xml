@@ -1,0 +1,25 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>width=1.2</definition>
+  <definition>t1=0</definition>
+  <definition>t2=5*pi/4</definition>
+  <definition>p1=(cos(t1),sin(t1))</definition>
+  <definition>p2=(cos(t2),sin(t2))</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <axes decorations="no"/>
+    <circle at="c" center="(0,0)" radius="1" stroke="gray" thickness="1"/>
+    
+    <angle-marker at="a" points="(p1,(0,0),p2)"/>
+    <vector at="v1" v="p1" stroke="blue" thickness="2"/>
+    <vector at="v2" v="p2" stroke="blue" thickness="2"/>
+    <point at="p" p="p2" alignment="southwest" scale="0.75"><m>\left(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m></point>
+    
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="Angle formed by two arrows in the coordinate plane beginning at the origin and terminating along a unit circle.">
+      <annotation ref="v1" text="An arrow from the origin pointing directly right along the x-axis"/>
+      <annotation ref="v2" text="An arrow from the origin pointing down and left"/>
+      <annotation ref="p" text="The point at the end of the arrow is labeled negative square root of 2 over 2 comma negative square root of 2 over 2"/>
+      <annotation ref="c" text="A circle of radius 1 centered at the origin.  The ends of both arrows lie on the circle."/>
+     </annotation>
+  </annotations>
+</diagram>
