@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="30" xmlns="https://prefigure.org">
+  <definition>f(x)=1/cos(x+pi/2)</definition>
+  <coordinates bbox="(-2*pi-0.2,-3.1,2*pi+0.2,3.1)">
+    <grid-axes spacings="(-2*pi,pi/2,2*pi),(-3,1,3)" h-pi-format="yes"  vlabels="(-3,1,3)"/>
+    <graph at="f" function="f" />
+
+    <group at="asymptotes">
+      <line at="L1" endpoints="((-2*pi,0),(-2*pi,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L2" endpoints="((-pi,0),(-pi,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L3" endpoints="((0,0),(0,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L4" endpoints="((pi,0),(pi,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L5" endpoints="((2*pi,0),(2*pi,1))" dash="9 9" stroke="red" infinite="yes"/>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A transformation of the secant graph and its asymptotes">
+      <annotation ref="f" sonify="yes" text="A transformation of the secant graph"/>
+      <annotation ref="asymptotes" text="The vertical asymptotes"/>
+    </annotation>
+  </annotations>
+</diagram>
