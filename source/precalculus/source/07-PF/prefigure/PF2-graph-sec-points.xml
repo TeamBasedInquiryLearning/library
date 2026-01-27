@@ -4,10 +4,10 @@
     <grid-axes spacings="(0,pi/6,2*pi),(-3,0.5,3)" h-pi-format="yes" hlabels="(0,pi/3,2*pi)" vlabels="(-3,1,3)"/>
     <group at="points">
       <repeat at="points1" parameter="i=0..12" annotate="yes" text="Points">
-        <point at="p" p="(i*pi/6,f(i*pi/6))" annotate="yes" text="The point ${i*pi/6} comma ${sec(i*pi/6)}"/>
+        <point at="p" p="(i*pi/6,f(i*pi/6))" annotate="yes" text="The point ${i*pi/6} comma ${1/cos(i*pi/6)}"/>
       </repeat>
       <repeat at="points2" parameter="i=0..3" annotate="yes" text="Points">
-        <point at="p2" p="(i*pi/2+pi/4,f(i*pi/2+pi/4))" annotate="yes" text="The point ${i*pi/2+pi/4} comma ${sec(i*pi/2+pi/4)}"/>
+        <point at="p2" p="(i*pi/2+pi/4,f(i*pi/2+pi/4))" annotate="yes" text="The point ${i*pi/2+pi/4} comma ${1/cos(i*pi/2+pi/4)}"/>
       </repeat>
     </group>
     <graph at="f" function="f" />
