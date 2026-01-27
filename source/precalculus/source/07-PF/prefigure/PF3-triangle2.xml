@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5">
+  <definition>p1=(0,0)</definition>
+  <definition>p2=(12,0)</definition>
+  <definition>p3=(12,5)</definition>
+  <coordinates bbox="(-1,-1,13,6)">
+    
+    <line endpoints="(p1,p2)" offset="(0,-22)"><m>12</m></line>
+    <line endpoints="(p1,p3)" rotate="-40" offset="(0,5)"><m>13</m></line>
+    <line endpoints="(p2,p3)" rotate="-90" offset="(0,-12)"><m>5</m></line>
+    <angle-marker at="a" points="(p1,p3,p2)" radius="65" ><m>\theta</m></angle-marker>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A right triangle with hypotenuse 12, a horizontal unlabeled leg labeled 12, and a vertical leg labeled 5">
+        <annotation ref="a" text="The angle opposite the side of length 12 is labeled theta"/>
+    </annotation>
+  </annotations>
+</diagram>
