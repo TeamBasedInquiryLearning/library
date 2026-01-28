@@ -45,7 +45,7 @@ defined by the standard basic vectors <m>\vec e_1,\vec e_2</m>.
   </p>
   <figure xml:id="GT1-figure-transformation">
     <caption>Tool to visualize a linear transformation from <m>\mathbb R^2</m> to <m>\mathbb R^2</m></caption>
-    <interactive label="GT1-interactive-transformation" platform="doenetml" width="90%" aspect="3:4">
+    <interactive label="GT1-interactive-transformation" platform="doenetml" width="90%">
       <slate surface="doenetml">
         <xi:include parse="text" href="doenet/GT1-doenet-transformation.xml"/>
       </slate>
@@ -333,7 +333,7 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
 
 <activity estimated-time='2'>
     <statement>
-      <interactive label="GT1-interactive-duplicate-column" platform="doenetml" width="90%" aspect="3:4">
+      <interactive label="GT1-interactive-duplicate-column" platform="doenetml" width="90%">
         <slate surface="doenetml">
           <xi:include parse="text" href="doenet/GT1-doenet-duplicate-column.xml"/>
         </slate>
@@ -351,7 +351,7 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
 
 <activity estimated-time='5' xml:id="GT1-activity-scale-column">
   <statement>
-    <interactive label="GT1-interactive-scale-column" platform="doenetml" width="100%" aspect="3:2">
+    <interactive label="GT1-interactive-scale-column" platform="doenetml" width="100%">
       <slate surface="doenetml">
         <xi:include parse="text" href="doenet/GT1-doenet-scale-column.xml"/>
       </slate>
@@ -376,7 +376,7 @@ parallelogram.
 
 <activity estimated-time='5' xml:id="GT1-activity-add-column">
   <statement>
-    <interactive label="GT1-interactive-add-column" platform="doenetml" width="100%" aspect="3:2">
+    <interactive label="GT1-interactive-add-column" platform="doenetml" width="100%">
       <slate surface="doenetml">
         <xi:include parse="text" href="doenet/GT1-doenet-add-column.xml"/>
       </slate>
@@ -449,7 +449,7 @@ The determinant must also satisfy other properties.
 Consider <m>\det([\vec v \hspace{1em}\vec w+c \vec{v}])</m> and
 <m>\det([\vec v\hspace{1em}\vec w])</m>.
       </p>
-      <interactive label="GT1-interactive-add-column-multiples" platform="doenetml" width="100%" aspect="3:2">
+      <interactive label="GT1-interactive-add-column-multiples" platform="doenetml" width="100%">
         <slate surface="doenetml">
           <xi:include parse="text" href="doenet/GT1-doenet-add-column-multiples.xml"/>
         </slate>
