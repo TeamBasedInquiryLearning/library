@@ -4,7 +4,7 @@
   <definition>f3(x)=x^2+1/2*x-4</definition>
   <definition>f4(x)=-2.5</definition>
   <definition>f5(x)=sin(pi/(x-2))-3</definition>
-  <coordinates bbox="(-4.1,-5.1,4.1,5.1)" hlabels="(-4,1,4)" vlabels="(-4,1,4)">
+  <coordinates bbox="(-4.1,-5.1,4.1,5.1)" >
     <grid-axes />
     <label p="(0,5.5)"><m>f(x)</m></label>
     <graph at="f1" function="f1" stroke="blue" domain="(-4,-3)"/>
