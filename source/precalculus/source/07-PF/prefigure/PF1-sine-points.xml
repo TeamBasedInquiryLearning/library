@@ -1,20 +1,16 @@
 <diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
   <definition>f(x)=sin(x)</definition>
+  <definition> xs=[0,pi/6,pi/4,pi/3,pi/2,2*pi/3,3*pi/4,5*pi/6,pi,7*pi/6,5*pi/4,4*pi/3,3*pi/2,5*pi/3,7*pi/4,11*pi/6,2*pi]</definition>
   <coordinates bbox="(-1,-1.1,2*pi+0.2,1.1)">
     <grid-axes spacings="(0,pi/6,2*pi),(-1,0.25,1)" h-pi-format="yes" hlabels="(0,pi/3,2*pi)"/>
-    <group at="points">
-      <repeat at="points1" parameter="i=0..12" annotate="yes" text="Points">
-        <point at="p" p="(i*pi/6,f(i*pi/6))" annotate="yes" text="The point ${i*pi/6} comma ${sin(i*pi/6)}"/>
-      </repeat>
-      <repeat at="points2" parameter="i=0..3" annotate="yes" text="Points">
-        <point at="p2" p="(i*pi/2+pi/4,f(i*pi/2+pi/4))" annotate="yes" text="The point ${i*pi/2+pi/4} comma ${sin(i*pi/2+pi/4)}"/>
-      </repeat>
-    </group>
+    <repeat at="points" parameter="i=0..16" annotate="yes"  text="Points along the graph">
+      <point at="p" p="(xs[i],f(xs[i]))" annotate="yes" text="The point ${round(xs[i],2)} comma ${round(f(xs[i]),2)}"/>
+    </repeat>
     <graph at="f" function="f" />
   </coordinates>
   <annotations>
     <annotation ref="figure" text="The sine curve and points along it">
-      <annotation ref="points" />
+      <annotation ref="points"/>
       <annotation ref="f" sonify="yes" text="The curve sine of x"/>
     </annotation>
   </annotations>
