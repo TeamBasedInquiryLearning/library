@@ -1,0 +1,36 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f1(x)=2*x^2+16*x+33</definition>
+  <definition>f2(x)=-x</definition>
+  <definition>f3(x)=x^2+1/2*x-4</definition>
+  <definition>f4(x)=-2.5</definition>
+  <definition>f5(x)=sin(pi/(x-2))-3</definition>
+  <coordinates bbox="(-4.1,-5.1,4.1,5.1)" hlabels="(-4,1,4)" vlabels="(-4,1,4)">
+    <grid-axes />
+    <label p="(0,5.5)"><m>f(x)</m></label>
+    <graph at="f1" function="f1" stroke="blue" domain="(-4,-3)"/>
+    <graph at="f2" function="f2" stroke="blue" domain="(-3,-2)"/>
+    <graph at="f3" function="f3" stroke="blue" domain="(-2,1)"/>
+    <graph at="f4" function="f4" stroke="blue" domain="(1,2)"/>
+    <graph at="f5" function="f5" stroke="blue" domain="(2,4)" N="1000"/>
+    <point at="hole1" p="(-2,2)" stroke="blue" fill="white"/>
+    <point at="p1" p="(-2,-1)" stroke="blue" fill="blue"/>
+    <point at="hole2" p="(-1,f3(-1))" stroke="blue" fill="white"/>
+    <point at="p2" p="(-1,1)" stroke="blue" fill="blue"/>
+    <point at="hole3" p="(3,f5(3))" stroke="blue" fill="white"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the piece-wise function f of x consisting of five pieces">
+      <annotation ref="f1" sonify="yes" text="The left-most piece of f curves up towards the point -3 comma 3"/>
+      <annotation ref="f2" sonify="yes" text="The next piece of f descends linearly from -3 comma 3 to the point -2 comma 2"/>
+      <annotation ref="hole1" text="An open circle representing a hole in the graph at -2 comma 2"/>
+      <annotation ref="p1" text="A filled circle at -2 comma -1"/>
+      <annotation ref="f3" sonify="yes" text="The next piece is an upward opening parabola connecting the points -2 comma 1 with 1 comma -2.5"/>
+      <annotation ref="hole2" text="An open circle representing a hole in the graph at -1 comma -3.5"/>
+      <annotation ref="p2" text="A filled circle at -1 comma 1"/>
+      <annotation ref="f4" sonify="yes" text="The next piece of f is a horizontal line segment at y equals -2.5"/>
+      <annotation ref="f5" sonify="yes" text="The right most piece of f begins at x equals -2 and oscillates rapidly before smoothing out"/>
+      <annotation ref="hole3" text="An open circle representing a hole in the graph at 3 comma -3 "/>
+    </annotation>
+  </annotations>
+</diagram>
