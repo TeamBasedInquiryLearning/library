@@ -53,27 +53,23 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
         </p>
     </answer>
     </task>
-    <task><statement><p>Sketch the tangent line <m>L(x)</m> on the same plane as the graph of <m>\ln(x)</m>. What do you notice? 
-</p>
-            <image width="50%" xml:id="graph-tangent-line-plane-ln">
-                <sageplot>
-                    x = var('x')
-                    f = ln(x)
-                    p = plot(f,(x,0.1,5), gridlines=True, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio = 1.25)
-                    p
-                </sageplot>
-            </image>
+    <task>
+        <statement>
+            <p>Sketch the tangent line <m>L(x)</m> on the same plane as the graph of <m>\ln(x)</m>. 
+            What do you notice? 
+            </p>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD2-graph">
+                    <xi:include href="prefigure/AD2-graph.xml"/>
+                </prefigure>
+            </image>  
         </statement>
         <answer>
             <image>
-                <sageplot>
-                    x = var('x')
-                    p1 = plot(ln(x),(x,0.1,5), gridlines=True, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio = 1.25)
-                    p2 = plot(x-1,(x,0.1,5), ymax = 2, color = "red",thickness=2)
-                    p1+p2
-                </sageplot>
-                <caption>The graph of <m>\ln(x)</m> with its tangent line</caption>
-            </image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD2-graph-tangent">
+                    <xi:include href="prefigure/AD2-graph-tangent.xml"/>
+                </prefigure>
+            </image>  
         </answer>
         </task>
 </activity>
