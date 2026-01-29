@@ -1,0 +1,20 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <coordinates bbox="(-4.1,-4.1,4.1,4.1)">
+    <grid-axes />
+    <label p="(0,4.5)"><m>b(x)</m></label>
+    <group at="f">
+        <line endpoints="((-4.1,-2),(0,-2))" stroke="blue"/>
+        <line endpoints="((4.1,2),(0,2))" stroke="blue"/>
+        <point at="hole" p="(0,-2)"  stroke="blue" fill="white"/>
+        <point at="point" p="(0,2)" stroke="blue" fill="blue"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the function a of x">
+      <annotation ref="f" sonify="yes" text="A piecewise function consisting of two pieces: a piece to the left of the y-axis which is a horizontal line at y equals -2, and a piece to the right of the y-axis which is a horizonatl line at y equals 2"/>
+      <annotation ref="hole" text="An open circle at 0 comma -2"/>
+      <annotation ref="point" text="A closed circle at 0 comma 2"/>
+    </annotation>
+  </annotations>
+</diagram>
