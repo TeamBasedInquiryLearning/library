@@ -167,29 +167,10 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
       </statement>
         <answer>
           <image>
-            <sageplot>
-              g = Graphics()
-              def edger_x (x,y1,y2):
-                  left=x-0.125/2
-                  right=x+0.125/2
-                  edge1 = line(([left,y1],[right,y1]),color='black')
-                  edge2 = line(([left,y2],[right,y2]),color='black')
-                  edge3 = line(([x,y1],[x,y2]),color='black')
-                  p = edge1+edge2+edge3
-                  return p
-              g += ellipse((0,3),1,.5, axes=False, color='black')
-              g += ellipse((0,0),1,.5, color='black')
-              g += line([(-1,0),(-1,3)], color = 'black')
-              g += line([(1,0),(1,3)], color = 'black')
-              g += ellipse((0,2),1,.5, linestyle = "dashed", color='blue')
-              g += line([(0,2),(1,2)],color="red")
-              g += text("$r$",(.5,2.1), fontsize=13, color="black")
-              g += edger_x(1.2,0,2)
-              g += text("$h$",(1.35,1), fontsize=13, color='black')
-              g
-            </sageplot>
-          </image>
-          
+              <prefigure xmlns="https://prefigure.org" label="prefigure-AD3-cylinder">
+                  <xi:include href="prefigure/AD3-cylinder.xml"/>
+              </prefigure>
+          </image>  
         </answer>
       </task>
     <task><statement><p>What information about rates of changes does the problem give you?  </p> </statement>
@@ -309,27 +290,10 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
         </statement>
           <answer>
             <image>
-              <sageplot>
-                g = Graphics()
-                def edger_x (x,y1,y2):
-                    left=x-0.125/2
-                    right=x+0.125/2
-                    edge1 = line(([left,y1],[right,y1]),color='black')
-                    edge2 = line(([left,y2],[right,y2]),color='black')
-                    edge3 = line(([x,y1],[x,y2]),color='black')
-                    p = edge1+edge2+edge3
-                    return p
-                g += ellipse((0,3),1,.5, axes=False, color='black')
-                g += line([(0,0),(1,3)], color='black')
-                g += line([(0,0),(-1,3)], color='black')
-                g += ellipse((0,2),.667, .333, color='blue', linestyle = 'dashed')
-                g += line([(0,2),(.667,2)], color='red')
-                g += text("$r$", (.333,2.1), fontsize=13, color='black')
-                g += edger_x(1,0,2)
-                g += text("$h$", (1.1,1), fontsize=13, color='black')
-                g
-              </sageplot>
-            </image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD3-cylinder">
+                    <xi:include href="prefigure/AD3-cylinder.xml"/>
+                </prefigure>
+            </image>  
           </answer>
       </task>
        <task>
