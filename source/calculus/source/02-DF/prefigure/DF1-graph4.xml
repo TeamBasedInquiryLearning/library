@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=2-x^2</definition>
+  <definition>f2(x)=5*0.0625*(x-5)^2-5</definition>
+  <definition>f3(x)=5*(x-6)^2</definition>
+  <coordinates bbox="(-1.1,-6.1,3.1,3.1)">
+    <grid-axes />
+    <label p="(1,3.4)"><m>f(x)</m></label>
+    <graph at="f" function="f" />
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the function f of x">
+      <annotation ref="ff" sonify="yes" text="A downward facing parabola with vertex at 0 comma 2 and passing through the points 1 commma 1 and 2 comma -2"/>
+    </annotation>
+  </annotations>
+</diagram>
