@@ -1,0 +1,23 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=(x^2-4)/(x^2-9)</definition>
+  <coordinates bbox="(-5.1,-21,5.1,21)">
+    <grid-axes />
+    <graph at="f" function="f" N="1000"/>
+    <group ref="asymptotes">
+      <line at="L1" endpoints="((-3,-1),(-3,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L2" endpoints="((3,-1),(3,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L3" endpoints="((0,1),(1,1))" dash="9 9" stroke="red" infinite="yes"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function and its asymptotes">
+      <annotation ref="f" sonify="yes" text="A curve in 3 pieces. The left-most piece increases from nearly flat above y equals 1 to nearly vertical approaching x equals -3. The middle piece starts off nearly vertical and increases to an apparent maximum at 0 commma 4 over 9, then decreases symmetrically to nearly vertical near x equals 3.  The right most-piece is a mirror image of the left-most piece, descending from near vertical near x equals 3 to flatten out near y equals 1"/>
+      <annotation ref="asymptotes" text="The asymptotes of the function">
+        <annotation ref="L1" text="The vertical asymptote x equals -3"/>
+        <annotation ref="L2" text="The vertical asymptote x equals 3"/>
+        <annotation ref="L3" text="The horizontal asymptote y equals 1"/>
+      </annotation>
+    <annotation>
+  </annotations>
+</diagram>

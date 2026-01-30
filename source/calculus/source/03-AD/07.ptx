@@ -17,20 +17,13 @@
    
     <activity xml:id="activity-graphing-words">
       <statement>
-      <p>
-       Which of the following features best describe the curve graphed below?  </p>
-     
-
-        <image width="30%">
-          <sageplot>
-            x = var('x')
-            f = -(x)^3+2.5
-            ticks=[[],[]]
-            p = plot(f,(x,.25,1.25), ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.25)
-            p
-          </sageplot>
-        </image>
-    
+        <p>
+        Which of the following features best describe the curve graphed below?  </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-decreasing-concave-down.xml">
+                <xi:include href="prefigure/AD6-decreasing-concave-down.xml"/>
+            </prefigure>
+        </image>   
           <p>
           <ol marker="A." cols="2">
                <li><p>Increasing and concave up</p></li>
@@ -39,45 +32,37 @@
                <li><p>Decreasing and concave down</p></li>
             </ol>
           </p>
-        </statement>
-            <answer>
-              <p>
-                D: Decreasing and concave down.
-              </p>
-            </answer>
+      </statement>
+      <answer>
+        <p>
+          D: Decreasing and concave down.
+        </p>
+      </answer>
     </activity>
     
  <activity xml:id="activity-graphing-der-signs">
-      <task>
-        <statement>
-      <p>
-       Which of the following features best describe the curve graphed below?  </p>
-     
-
-        <image width="30%">
-          <sageplot>
-            x = var('x')
-            f = (x-1.5)^3+2.5
-            ticks=[[],[]]
-            p = plot(f,(x,.25,1.25), ymin = -1, ymax = 3, gridlines=True,thickness=2, ticks=ticks, aspect_ratio=.25)
-            p
-          </sageplot>
-        </image>
-    
-          <p>
+    <task>
+      <statement>
+        <p> Which of the following features best describe the curve graphed below?  </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-increasing-concave-down.xml">
+                <xi:include href="prefigure/AD6-increasing-concave-down.xml"/>
+            </prefigure>
+        </image>   
+        <p>
           <ol marker="A." cols="2">
                <li><p><m>f'&gt;0</m> and <m>f''&gt;0</m></p></li>
                <li><p><m>f'&gt;0</m> and <m>f''&lt;0 </m></p></li>
                <li><p><m>f'&lt;0</m> and <m>f''&gt;0</m></p></li>
                <li><p><m>f'&lt;0</m> and <m>f''&lt;0 </m></p></li>
             </ol></p>
-        </statement>
-            <answer>
-              <p>
-                B: <m>f'&gt;0</m> and <m>f''&lt;0 </m>
-              </p>
-            </answer>
-</task>
+      </statement>
+      <answer>
+        <p>
+          B: <m>f'&gt;0</m> and <m>f''&lt;0 </m>
+        </p>
+      </answer>
+    </task>
      
      <task>
       <statement>
@@ -263,66 +248,81 @@ Use the information provided to sketch a reasonable graph of <m>f(x)</m>. Watch 
 Note that some of the graphs below are definitely hard... might want to tell this to instructors or break in two
      -->    
     <introduction>Sketch the graph of each of the following functions using the guide to curve sketching found in <xref ref="guide-curve-sketching"/></introduction>
-                <task><m>f(x)=x^4-4x^3+10</m>
-                <answer>
-                  <image>
-                    <sageplot>
-                      x = var('x')
-                      plot(x^4-4*x^3+10,(x,-2,4),color='black')
-                    </sageplot>
-                  </image>
-                </answer>
-                </task>
-                <task><m>f(x)=\frac{x^2-4}{x^2-9}</m>
-                <answer>
-                <p>Note that there is a horizontal asymptote at <m>y=1</m>.</p>
-                  <image>
-                    <sageplot>
-                      x = var('x')
-                      plot((x^2-4)/(x^2-9),(x,-4,4),color='black', ymax = 10, ymin = -10)
-                    </sageplot>
-                  </image>
-                </answer>
-                </task>
-            <task><p><m>f(x)=x+2\cos x</m> on the interval <m>[0,2\pi]</m></p>
-            <answer>
-              <image>
-                    <sageplot>
-                      x = var('x')
-                      plot(x+2*cos(x),(x,0,2*pi),color='black')
-                    </sageplot>
-                  </image>
-            </answer></task>
-                <task><m>f(x)=\frac{x^2+x-2}{x+3}</m>
-                <answer>
-                <p>Note that this graph has a slant asymptote of <m>y=x</m>.</p>
-                  <image>
-                    <sageplot>
-                      x = var('x')
-                      plot((x^2+x-2)/(x+3),(x,-5,2),color='black', ymax = 10, ymin = -20)
-                    </sageplot>
-                  </image>
-                </answer></task>
-                <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m>
-                <answer>
-                <p>Note that this graph has horizontal asymptotes at <m>y=\pm 1</m>.</p>
-                  <image>
-                    <sageplot>
-                      x = var('x')
-                      plot(x/sqrt(x^2+2),(x,-5,5),color='black')
-                    </sageplot>
-                  </image>
-                </answer></task>
-                <task><m>f(x)=x^6+\frac{12}{5}x^5-12x^4+10</m>
-                <answer>
-                  <image>
-                    <sageplot>
-                      x = var('x')
-                      plot(x^6 + (12/5)*x^5-12*x^4 + 10, (x,-5,3),color='black')
-                    </sageplot>
-                  </image>
-                </answer>
-                </task>  
+      <task>
+        <statement>
+          <m>f(x)=x^4-4x^3+10</m>
+        </statement>
+        <answer>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-fluency1.xml">
+              <xi:include href="prefigure/AD7-fluency1.xml"/>
+            </prefigure>
+          </image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <m>f(x)=\frac{x^2-4}{x^2-9}</m>
+        </statement>
+        <answer>
+          <p>Note that there is a horizontal asymptote at <m>y=1</m>.</p>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-fluency2.xml">
+              <xi:include href="prefigure/AD7-fluency2.xml"/>
+            </prefigure>
+          </image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p><m>f(x)=x+2\cos x</m> on the interval <m>[0,2\pi]</m></p>
+        </statement>
+        <answer>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-fluency3.xml">
+              <xi:include href="prefigure/AD7-fluency3.xml"/>
+            </prefigure>
+          </image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <m>f(x)=\frac{x^2+x-2}{x+3}</m>
+        </statement>
+        <answer>
+          <p>Note that this graph has a slant asymptote of <m>y=x+2</m>.</p>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-fluency4.xml">
+              <xi:include href="prefigure/AD7-fluency4.xml"/>
+            </prefigure>
+          </image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <m>f(x)=\frac{x}{\sqrt{x^2+2}}</m>
+        </statement>
+        <answer>
+          <p>Note that this graph has horizontal asymptotes at <m>y=\pm 1</m>.</p>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-fluency5.xml">
+              <xi:include href="prefigure/AD7-fluency5.xml"/>
+            </prefigure>
+          </image>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <m>f(x)=x^6+\frac{12}{5}x^5-12x^4+10</m>
+        </statement>
+        <answer>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD7-fluency5.xml">
+              <xi:include href="prefigure/AD7-fluency6.xml"/>
+            </prefigure>
+          </image>
+        </answer>
+      </task>  
     </activity>
     </subsection>
     <subsection>
