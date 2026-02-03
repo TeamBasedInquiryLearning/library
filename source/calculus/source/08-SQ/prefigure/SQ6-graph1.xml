@@ -1,0 +1,24 @@
+<diagram dimensions="(600,300)" margins="45" xmlns="https://prefigure.org">
+  <definition>f(x) = 4*0.8^(x+1) </definition>
+  <definition>g(x) = 4*0.7^(x+1)</definition>
+  <coordinates bbox="(0,0,11.2,4)">
+    <axes decorations="no" arrows="1">
+      <xlabel alignment="east"><m>x</m></xlabel>
+      <ylabel alignment="north"><m>y</m></ylabel>
+    </axes>
+    <riemann-sum at="f" function="f" N="10" domain="(0,10)" stroke="blue" fill="blue" fill-opacity="0.3"/>
+    <riemann-sum at="g" function="g" N="10" domain="(0,10)" fill="red" fill-opacity="0.3"/>
+    <repeat parameter="k=0..3">
+      <label anchor="(k+1,f(k))" alignment="east" color="blue"> <m>a_${k}</m></label>
+      <label anchor="(k+1,g(k))" alignment="east" color="red"> <m>b_${k}</m></label>
+    </repeat>
+    <label anchor="(10.5,0)" alignment="north"><m>\ldots</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Two sequences of rectangles of decreasing heights">
+      <annotation ref="f" text="A sequence of rectangles of descending height, colored blue.  The first few heights are labeled a sub 0, a sub 1, a sub2, and a sub 3."/>
+      <annotation ref="g" text="A sequence of rectangles of descending height, colored red, each of which is nested inside the corresponding blue rectangle but shorter.  The first few heights are labeled b sub 0, b sub 1, b sub2, and b sub 3."/>
+    </annotation>
+  </annotations>
+</diagram>
