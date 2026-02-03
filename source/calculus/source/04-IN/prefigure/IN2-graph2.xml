@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) =  0.2*(x-4)*(x-10)*(x-12) </definition>
+  <coordinates bbox="(3,-0.5,10.5,10)">
+    <grid-axes spacings="((0,1,10),(0,2,10))" hlabels="(4,1,10)"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at 4 comma 0, increasing to about 6.3 comma 9.7, then decreasing to 10 comma 0"/>
+    </annotation>
+  </annotations>
+</diagram>
