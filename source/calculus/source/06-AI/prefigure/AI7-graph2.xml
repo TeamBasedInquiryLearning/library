@@ -1,0 +1,24 @@
+<diagram dimensions="(500,600)" margins="(25,25,25,0)" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-0.5,0,5.1,6.1)">
+    <rectangle lower-left="(-1,-1)" dimensions="(7,7)" fill="cyan" fill-opacity="0.7" stroke="none"/>
+    <group at="trapezoid">
+      <polygon points="((0,2),(5,2),(4,0),(1,0))" closed="yes" stroke="black" />
+      <label anchor="(2.5,0)" alignment="south"><m>3\ \text{ft}</m></label>
+      <label anchor="(2.5,2)" alignment="north"><m>5\ \text{ft}</m></label>
+    </group>
+    <group at="h">
+      <line endpoints="((-0.2,0),(-0.2,2))" rotate="-90" offset="(0,13)"><m>2\ \text{ft}</m></line>
+      <line endpoints="((-0.3,0),(-0.1,0))"/>
+      <line endpoints="((-0.3,2),(-0.1,2))"/>
+      <line endpoints="((-0.2,2),(-0.2,6))" rotate="-90" offset="(0,13)"><m>4\ \text{ft}</m></line>
+      <line endpoints="((-0.3,6),(-0.1,6))"/>
+    </group> 
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A trapezoid on a blue background">
+      <annotation ref="trapezoid" text="A trapezoid with the parallel sides labeled 3 feet and 5 feet, with the longer side on top"/>
+      <annotation ref="h" text="A vertical bar showing the height of the trapezoid to be 2 feet and the water level to be 4 feet above the top of the trapezoid"/>
+    </annotation>
+  </annotations>
+</diagram>
