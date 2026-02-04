@@ -1,0 +1,31 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>f(x) = sqrt(x) </definition>
+  <definition>g(x) = -1*sqrt(x) </definition>
+  <coordinates bbox="(-0.1,-2.1,4.1,2.1)">  
+    <graph ref="f" function="f" domain="(0,4)"/>
+    <graph ref="g" function="g" domain="(0,4)" dash="9 9"/>
+    <definition>n=4</definition>
+    <definition>d=4/n</definition>
+    <repeat ref="r1" annotate="yes" parameter="k=0..(n-1)" text="The area bounded by the piecewise linear approximations">
+      <polygon points="((k*d,f((k)*d)),((k+1)*d,f((k+1)*d)),((k+1)*d,-f((k+1)*d)),(k*d,-f((k)*d)))" fill="lightgray" stroke="none"/>
+    </repeat>
+    <grid-axes/>
+    <repeat ref="r2" annotate="yes" parameter="k=0..(n-1)" text="A piecewise linear approximation of the curve with two pieces">
+      
+      <line endpoints="((k*d,f((k)*d)),((k+1)*d,f((k+1)*d)))" stroke="red" dash="9 9"/>
+      <line endpoints="((k*d,-f((k)*d)),((k+1)*d,-f((k+1)*d)))" stroke="red" dash="9 9"/>
+      <point p="((k+1)*d,f((k+1)*d))"/>
+    </repeat>
+    <point p="(0,0)"/>
+    
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The area between the square root of x and its negative, from x equals 0 to 4">
+      <annotation ref="f" text="The function square root of x from 0 to 4"/>
+      <annotation ref="g" text="The reflection of the square root function across the x axis"/>
+      <annotation ref="r1"/>
+      <annotation ref="r2"/>
+    </annotation>
+  </annotations>
+</diagram>

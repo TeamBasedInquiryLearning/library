@@ -1,0 +1,27 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>f(x) = sqrt(x) </definition>
+  <definition>g(x) = -1*sqrt(x) </definition>
+  <coordinates bbox="(-0.1,-2.1,4.1,2.1)">
+    <area-between-curves functions="(g,f)" domain="(1.5,2)" fill="lightgray" stroke="none"/>
+    <grid-axes/>  
+    <graph ref="f" function="f" domain="(0,4)"/>
+    <graph ref="g" function="g" domain="(0,4)" dash="9 9"/>
+    <group ref="triangle">
+      <polygon points="((1.5,f(1.5)),(2,f(1.5)),(2,f(2)))" stroke="red" dash="9 9" closed="yes"/>
+      <point p="(1.5,f(1.5))"/>
+      <point p="(2,f(2))"/>
+      <label anchor="(1.75,f(1.5))" alignment="south" color="red" scale="0.7"><m>\Delta x</m></label>
+    </group>
+
+
+    
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A slice of the area between the square root of x and its negative, from x equals 0 to 4">
+      <annotation ref="f" text="The function square root of x from 0 to 4"/>
+      <annotation ref="g" text="The reflection of the square root function across the x axis"/>
+      <annotation ref="triangle" text="A small right triangle whose hypotenuse is a secant of the curve with a horizontal leg labeled delta x "/>
+    </annotation>
+  </annotations>
+</diagram>
