@@ -214,26 +214,12 @@ For example, the following calculuation confirms the previous activity:
             <statement>
                 <p>
                     Which of the following is the average value of <m>f(x)</m> over the interval <m>[0,8]</m>?
-                    
-                    <figure>
-                <caption>Plot of <m>f(x)</m>.</caption>
-                    <image xml:id="piecewiseaverage" width="100%">
-                        <description>A plot of f(x).</description>
-                        <sageplot>
-                            x = var('x')
-                            f= 1
-                            g = 4
-                            h = 2
-                            k = 0
-                            pf = plot(f,(x,0,3),thickness=2, axes_labels=('$x$','$f(x)$'))
-                            pg = plot(g,(x,3,6),thickness=2, axes_labels=('$x$','$f(x)$'))
-                            ph = plot(h,(x,6,8),thickness=2, axes_labels=('$x$','$f(x)$'))
-                            pk = plot(k,(x,0,1),thickness=0)
-                            pf + pg + ph + pk
-                        </sageplot>
-                    </image>
-            </figure>
                 </p>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-AI1-graph1">
+                        <xi:include href="prefigure/AI1-graph1.xml"/>
+                    </prefigure>
+                </image>
                 <p>
                     Note <m>f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}</m>.
                 </p>
