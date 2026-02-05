@@ -1,0 +1,17 @@
+<diagram dimensions="(300,120)" margins="25"  xmlns="https://prefigure.org" >
+  <coordinates bbox="(-0.2,-0.5,8.5,3)" aspect-ratio="1">
+    <definition>points=((1,0.5),(1,1.5),(2,0.5),(2,1.5),(2,2.5),(8,0.5))</definition>
+    <axes axes="horizontal" arrows="1"  hlabels="(0,1,8)"/>
+
+    <repeat at="r" parameter="p in points" annotate="yes" text="The collection of squares">
+      <rectangle at="rectangle" center="p" dimensions="(1,1)" fill="teal" fill-opacity="0.5" stroke="black" thickness="1" annotate="yes" text="A square at x equals ${round(p[0])} "/>
+    </repeat>
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A series of squares stacked along a number line">
+      <annotation ref="r"/>
+    </annotation>
+  </annotations>
+</diagram>

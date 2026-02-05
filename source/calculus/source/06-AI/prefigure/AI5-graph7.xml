@@ -1,0 +1,38 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-18,0,45.1,60.1)">
+
+    <group at="h1">
+      <line endpoints="((-15,0),(-15,60))" rotate="-90" offset="(0,20)" scale="0.7" thickness="1"><m>60\ \text{in}</m></line>
+      <line endpoints="((-16,0),(-14,0))" thickness="1"/>
+      <line endpoints="((-16,60),(-14,60))" thickness="1"/>
+    </group> 
+
+    <rectangle at="rectangle" lower-left="(7.5,30)" dimensions="(15,2)" fill="blue" fill-opacity="30%" stroke="none"/>
+    <label anchor="(5,30)"  scale="0.7"><m>h_i</m></label>
+    <group at="h2">
+      <line endpoints="((25,30),(25,32))" rotate="-90" offset="(-5,-28)" scale="0.7" thickness="1"><m>\Delta h\ \text{in}</m></line>
+      <line endpoints="((24, 30),(26,30))" thickness="1"/>
+      <line endpoints="((24,32),(26,32))" thickness="1"/>
+    </group> 
+
+    <group at="radius">
+      <line endpoints="((15,30),(22.5,30))" stroke="red"/>
+      <label anchor="(18.375, 30)" alignment="south" scale="0.7"><m>r_i</m></label>
+    </group>
+    
+    <polygon ref="cone" points="((0,0),(30,0),(15,60))" closed="yes" stroke="black"/>
+    
+
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a cone with a slice">
+      <annotation ref="cone" text="A triangle representing a cross section of a cone"/>
+      <annotation ref="rectangle" text="A rectangle representing a slice of the cone."/>
+      <annotation ref="radius" text="A line segment labeling the radius of the cone along the bottom of the slice to be r sub i, which is half the length of the rectangle"/>
+      <annotation ref="h1" text="A vertical bar showing the height of the cone to be 60 inches"/>
+      <annotation ref="h2" text="A vertical bar showing the slice at height h sub i with a thickness of  delta h inches"/>
+    </annotation>
+  </annotations>
+</diagram>
