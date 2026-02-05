@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=1</definition>
+  <definition>p1=(cos(-pi/6),sin(-pi/6))</definition>
+  <definition>p2=(cos(5*pi/6),sin(5*pi/6))</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <angle-marker points="p1,(0,0),p2" />
+    <vector at="v1" v="p1" stroke="blue" thickness="2"/>
+    <vector at="v2" v="p2" stroke="blue" thickness="2"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="Two arrows joined at their base. One points down and right, and the other points up and left in the exact opposite direction.">
+    </annotation>
+  </annotations>
+</diagram>

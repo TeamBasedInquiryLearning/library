@@ -7,29 +7,37 @@
             <sidebyside>
                 <figure xml:id="graph-x">
                     <caption>Graph of <m>y=x</m></caption>
-                    <image><sageplot>
-                        plot(x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x">
+                            <xi:include href="prefigure/graphx.xml"/>
+                        </prefigure>
+                </image>
                 </figure>
                 <figure xml:id="graph-x-squared">
                     <caption>Graph of <m>y=x^2</m></caption>
-                    <image><sageplot>
-                        plot(x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x2">
+                            <xi:include href="prefigure/graphx2.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-x-cubed">
                     <caption>Graph of <m>y=x^3</m></caption>
-                    <image><sageplot>
-                        plot(x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x3">
+                            <xi:include href="prefigure/graphx3.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-x-fourth">
                     <caption>Graph of <m>y=x^4</m></caption>
-                    <image><sageplot>
-                        plot(x^4,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x4">
+                            <xi:include href="prefigure/graphx4.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
         </sbsgroup>
@@ -40,42 +48,37 @@
             <sidebyside>
                 <figure xml:id="graph-x-minus-one">
                     <caption>Graph of <m>y=\dfrac{1}{x}</m></caption>
-                    <image><sageplot>
-                        p=plot(1/x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x-minus1">
+                            <xi:include href="prefigure/graphx-minus1.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-x-minus-2">
                     <caption>Graph of <m>y=\dfrac{1}{x^2}</m></caption>
-                    <image><sageplot>
-                        p=plot(1/x^2,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x-minus2">
+                            <xi:include href="prefigure/graphx-minus2.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-x-minus-three">
                     <caption>Graph of <m>y=\dfrac{1}{x^3}</m></caption>
-                    <image><sageplot>
-                        p=plot(1/x^3,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x-minus3">
+                            <xi:include href="prefigure/graphx-minus3.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-x-minus-four">
                     <caption>Graph of <m>y=\dfrac{1}{x^4}</m></caption>
-                    <image><sageplot>
-                        p=plot(1/x^4,xmin=-5,xmax=-0.1,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,gridlines=True, ticks=[1,1])
-                        p+=plot(1/x^4,xmin=0.1,xmax=5,ymin=-5,ymax=5,thickness=3)
-                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x-minus4">
+                            <xi:include href="prefigure/graphx-minus4.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
         </sbsgroup>
@@ -86,17 +89,19 @@
             <sidebyside>
                 <figure xml:id="graph-absolute">
                     <caption>Graph of <m>y=|x|</m></caption>
-                    <image><sageplot>
-                        plot(abs(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-absolute">
+                            <xi:include href="prefigure/graph-absolute.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-sqrt">
                     <caption>Graph of <m>y=\sqrt{x}</m></caption>
-                    <image><sageplot>
-                        p=plot(sqrt(x),xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p.SHOW_OPTIONS['xmin']=-5
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-square-root">
+                            <xi:include href="prefigure/graph-square-root.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
         </sbsgroup>
@@ -107,39 +112,37 @@
             <sidebyside>
                 <figure xml:id="graph-exponential">
                     <caption>Graph of <m>y=b^x</m>, with <m>b=2</m></caption>
-                    <image><sageplot>
-                        p=plot(2^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-exponential">
+                            <xi:include href="prefigure/graph-exponential.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-log">
                     <caption>Graph of <m>y=\log_b x</m>, with <m>b=2</m></caption>
-                    <image><sageplot>
-                        p=plot(log(x)/log(2),xmin=0,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                        p.SHOW_OPTIONS['xmin']=-5
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-logarithm">
+                            <xi:include href="prefigure/graph-logarithm.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-e">
                     <caption>Graph of <m>y=e^x</m></caption>
-                    <image><sageplot>
-                        p=plot(e^x,xmin=-5,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(-5,0),(5,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-exponential-e">
+                            <xi:include href="prefigure/graph-exponentiale.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-ln">
                     <caption>Graph of <m>y=\ln x</m></caption>
-                    <image><sageplot>
-                        p=plot(log(x),xmin=0,xmax=5,ymin=-5,ymax=5,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,1])
-                        p+=line([(0,-5),(0,5)],thickness=3,linestyle='dashed',color='red')
-                        p.SHOW_OPTIONS['xmin']=-5
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-logarithm-natural">
+                            <xi:include href="prefigure/graph-logarithm-natural.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
         </sbsgroup>
@@ -150,61 +153,55 @@
             <sidebyside>
                 <figure xml:id="graph-sin">
                     <caption>Graph of <m>y=\sin(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-sine">
+                            <xi:include href="prefigure/graph-sin.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-csc">
                     <caption>Graph of <m>y=\csc x</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(csc(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..2]:
-    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-csc">
+                            <xi:include href="prefigure/graph-csc.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-cos">
                     <caption>Graph of <m>y=\cos x</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True)
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-cosine">
+                            <xi:include href="prefigure/graph-cos.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-sec">
                     <caption>Graph of <m>y=\sec x</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]:
-    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-sec">
+                            <xi:include href="prefigure/graph-sec.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-tan">
                     <caption>Graph of <m>y=\tan x</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(tan(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]:
-    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-tan">
+                            <xi:include href="prefigure/graph-tan.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-cot">
                     <caption>Graph of <m>y=\cot x</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(cot(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..2]:
-    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-cot">
+                            <xi:include href="prefigure/graph-cot.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
         </sbsgroup>
@@ -215,61 +212,55 @@ p
             <sidebyside>
                 <figure xml:id="graph-arcsin">
                     <caption>Graph of <m>y=\sin^{-1}(x)</m></caption>
-                    <image><sageplot>
-                        p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p.SHOW_OPTIONS['xmin']=-pi
-                        p.SHOW_OPTIONS['xmax']=pi
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-arcsin">
+                            <xi:include href="prefigure/graph-arcsin.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-arccsc">
                     <caption>Graph of <m>y=\csc^{-1}(x)</m></caption>
-                    <image><sageplot>
-                        p=plot(arccsc(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=plot(arccsc(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-arccsc">
+                            <xi:include href="prefigure/graph-arccsc.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-arccos">
                     <caption>Graph of <m>y=\cos^{-1}(x)</m></caption>
-                    <image><sageplot>
-                        p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p.SHOW_OPTIONS['xmin']=-pi
-                        p.SHOW_OPTIONS['xmax']=pi
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-arccos">
+                            <xi:include href="prefigure/graph-arccos.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-arcsec">
                     <caption>Graph of <m>y=\sec^{-1}(x)</m></caption>
-                    <image><sageplot>
-                        p=plot(arcsec(x),xmin=-pi,xmax=-1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=plot(arcsec(x),xmin=1,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-arcsec">
+                            <xi:include href="prefigure/graph-arcsec.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
             <sidebyside>
                 <figure xml:id="graph-arctan">
                     <caption>Graph of <m>y=\tan^{-1}(x)</m></caption>
-                    <image><sageplot>
-                        p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=line([(-pi,pi/2),(pi,pi/2)],thickness=3,linestyle='dashed',color='red')
-                        p+=line([(-pi,-pi/2),(pi,-pi/2)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-arctan">
+                            <xi:include href="prefigure/graph-arctan.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
                 <figure xml:id="graph-arccot">
                     <caption>Graph of <m>y=\cot^{-1}(x)</m></caption>
-                    <image><sageplot>
-                        p=plot(arccot(x),xmin=-pi,xmax=-0.001,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=plot(arccot(x),xmin=0.001,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-                        p+=line([(-pi,0),(pi,0)],thickness=3,linestyle='dashed',color='red')
-                        p
-                    </sageplot></image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-arccot">
+                            <xi:include href="prefigure/graph-arccot.xml"/>
+                        </prefigure>
+                    </image>
                 </figure>
             </sidebyside>
         </sbsgroup>
