@@ -142,6 +142,15 @@
       output-filename="TBIL-Linear-Algebra-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
+    <!-- For printing by 619 Wreath-->
+    <target
+      name="linear-algebra-print-619"
+      format="pdf"
+      source="linear-algebra/source/main.ptx"
+      publication="publication-619.ptx"
+      output-filename="TBIL-Linear-Algebra-619.pdf" >
+      <stringparams debug.project.number="the-way-it-should-be"/>
+    </target>
 
   </targets>
 </project>
