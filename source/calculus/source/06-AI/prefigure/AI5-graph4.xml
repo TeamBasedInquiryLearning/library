@@ -1,0 +1,42 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-18,0,45.1,60.1)">
+
+    <group at="h1">
+      <line endpoints="((-15,0),(-15,60))" rotate="-90" offset="(0,20)" scale="0.7"><m>60\ \text{in}</m></line>
+      <line endpoints="((-16,0),(-14,0))"/>
+      <line endpoints="((-16,60),(-14,60))"/>
+    </group> 
+
+    <definition>n=2</definition>
+    <repeat ref="r" parameter="k=0..n-1">
+      <rectangle center="(15,60/(2*n)+(60/n)*k)" dimensions="(30-k*60/(2*n),60/n)" fill="blue" fill-opacity="30%" stroke="blue"/>
+      <label anchor="(-1,60/n*k)" alignment="west" scale="0.7"><m>h_${k+1}=${20*k}\ \text{in}</m></label>
+      <group at="h2">
+        <line endpoints="((32,60/n*k),(32,60/n*(k+1)))" rotate="-90" offset="(0,-40)" scale="0.7"><m>\Delta h = 20\ \text{in}</m></line>
+        <line endpoints="((32-1, 60/n*k),(32+1,60/n*k))"/>
+        <line endpoints="((32-1, 60/n*(k+1)),(32+1,60/n*(k+1)))"/>
+      </group> 
+      <label anchor="(15+(n-k)/n*7.5, 60/n*k)" alignment="south" scale="0.7"><m>r_{${k+1}}</m></label>
+    </repeat>
+    <polygon ref="cone" points="((0,0),(30,0),(15,60))" closed="yes" stroke="black"/>
+    <line endpoints="((15,0),(15,60))" dash="9 9" stroke="black"/>
+
+    <group>
+      <point p="(15,60)"><m>A</m></point>
+      <point p="(15,0)" alignment="south"><m>B</m></point>
+      <point p="(30,0)" alignment="south"><m>C</m></point>
+      <point p="(15,30)" alignment="southwest"><m>B^\prime</m></point>
+      <point p="(22.5,30)" alignment="northeast"><m>C^\prime</m></point>
+    </group>
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a cone with three estimating rectangles">
+      <annotation ref="cone" text="A triangle representing a cross section of a cone"/>
+      <annotation ref="r" text="A sequence of rectangles stacked vertically.  The bottom of each rectangle aligns with the cone at each height."/>
+      <annotation ref="h1" text="A vertical bar showing the height of the cone to be 60 inches"/>
+      <annotation ref="h2" text="A vertical bar showing the height of each rectangle to be delta h equals 20 inches"/>
+    </annotation>
+  </annotations>
+</diagram>
