@@ -245,19 +245,11 @@
         </statement>
         <answer>
           <p> 
-            <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(tan(x),(x,0,2*pi),ymin=-pi,ymax=pi,ticks=[pi/6,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-#Be sure to skip (2k+1)pi/2 
-xvals=[pi*i/6 for i in [0..12] if (i-3) % 6 != 0] + [pi*i/4 for i in [0..8] if (i-2) % 4 != 0]
-for xval in xvals:
-    P+=point((xval,tan(xval)),pointsize=50,color='blue')
-P+=line([(pi/2,-pi),(pi/2,pi)],color="red", linestyle="dashed",thickness=2)
-P+=line([(3*pi/2,-pi),(3*pi/2,pi)],color="red", linestyle="dashed",thickness=2)
-P
-              </sageplot>
-            </image> 
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-tan-points">
+              <xi:include href="prefigure/PF2-graph-tan-points.xml"/>
+            </prefigure>
+           </image>
           </p>
         </answer>
       </task>
@@ -543,19 +535,11 @@ P
         </statement>
         <answer>
           <p> 
-            <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sec(x),(x,0,2*pi),ymin=-pi,ymax=pi,ticks=[pi/6,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-#Be sure to skip (2k+1)pi/2 
-xvals=[pi*i/6 for i in [0..12] if (i-3) % 6 != 0] + [pi*i/4 for i in [0..8] if (i-2) % 4 != 0]
-for xval in xvals:
-    P+=point((xval,sec(xval)),pointsize=50,color='blue')
-P+=line([(pi/2,-pi),(pi/2,pi)],color="red", linestyle="dashed",thickness=2)
-P+=line([(3*pi/2,-pi),(3*pi/2,pi)],color="red", linestyle="dashed",thickness=2)
-P
-              </sageplot>
-            </image> 
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-sec-points">
+              <xi:include href="prefigure/PF2-graph-sec-points.xml"/>
+            </prefigure>
+           </image>
           </p>
         </answer>
       </task>
@@ -619,17 +603,14 @@ P
       for every point <m>(a,b)</m> on the graph of <m>\cos(x)</m>, the point <m>(a,\frac{1}{b})</m>
       is on the graph of <m>\sec(x)</m>. 
       </p>
-                <figure xml:id="graph-sec-PF3">
-                    <caption><m>y=\sec(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-p+=TBIL.trig_plot(cos(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,color="green",linestyle="dotted")
-for i in [-2..1]:
-    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
-                </figure>
+      <figure xml:id="graph-sec-PF3">
+        <caption><m>y=\sec(x)</m></caption>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-sec-cos">
+            <xi:include href="prefigure/PF2-graph-sec-cos.xml"/>
+          </prefigure>
+        </image>
+      </figure>
     </observation>
 
 
@@ -649,11 +630,10 @@ p
         <hint>
           <p>Recall the graph of <m>\sin(x)</m></p>
           <figure>
-            <image width="50%">
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-pi,ymax=pi,ticks=[pi/4,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-              </sageplot>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-sine">
+                <xi:include href="prefigure/PF1-sine.xml"/>
+              </prefigure>
             </image>
           </figure>
         </hint>
@@ -716,15 +696,10 @@ P=TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-pi,ymax=pi,ticks=[pi/4,1],aspect_ra
         <answer>
           <p> 
             <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(csc(x),(x,0,2*pi),ymin=-pi,ymax=pi,ticks=[pi/6,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-P+=line([(0,-pi),(0,pi)],color="red", linestyle="dashed",thickness=2)
-P+=line([(pi,-pi),(pi,pi)],color="red", linestyle="dashed",thickness=2)
-P+=line([(2*pi,-pi),(2*pi,pi)],color="red", linestyle="dashed",thickness=2)
-P
-              </sageplot>
-            </image> 
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-csc">
+                <xi:include href="prefigure/PF2-graph-csc.xml"/>
+              </prefigure>
+            </image>
           </p>
         </answer>
       </task>
@@ -788,17 +763,14 @@ P
       for every point <m>(a,b)</m> on the graph of <m>\sin(x)</m>, the point <m>(a,\frac{1}{b})</m>
       is on the graph of <m>\csc(x)</m>. 
       </p>
-                <figure xml:id="graph-csc-PF3">
-                    <caption><m>y=\csc(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(csc(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-p+=TBIL.trig_plot(sin(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,color="green",linestyle="dotted")
-for i in [-2..2]:
-    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
-                </figure>
+      <figure xml:id="graph-csc-PF3">
+        <caption><m>y=\csc(x)</m></caption>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-csc-sin">
+            <xi:include href="prefigure/PF2-graph-csc-sin.xml"/>
+          </prefigure>
+        </image>
+      </figure>
     </observation>
 
   <activity xml:id="activity-cot-table">
@@ -813,17 +785,7 @@ p
         </statement>
         <hint>
           <p>Recall the graph of <m>\tan(x)</m></p>
-          <figure>
-            <image width="50%">
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(tan(x),(x,-2*pi,2*pi),ymin=-pi,ymax=pi,ticks=[pi/4,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]:
-  P+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-P
-              </sageplot>
-            </image>
-          </figure>
+          <xref ref="graph-tan"/>
         </hint>
         <answer>
           <p><m>\ldots,-2\pi,-\pi,0,\pi,2\pi,\ldots</m></p>
@@ -885,16 +847,11 @@ P
         <hint><p>It may be helpful to first sketch the graph of <m>\tan(x)</m>.</p></hint>
         <answer>
           <p> 
-            <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(cot(x),(x,0,2*pi),ymin=-pi,ymax=pi,ticks=[pi/4,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-P+=line([(0,-pi),(0,pi)],color="red", linestyle="dashed",thickness=2)
-P+=line([(pi,-pi),(pi,pi)],color="red", linestyle="dashed",thickness=2)
-P+=line([(2*pi,-pi),(2*pi,pi)],color="red", linestyle="dashed",thickness=2)
-P
-              </sageplot>
-            </image> 
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-cot">
+              <xi:include href="prefigure/PF2-graph-cot.xml"/>
+            </prefigure>
+          </image>
           </p>
         </answer>
       </task>
@@ -958,28 +915,24 @@ P
       for every point <m>(a,b)</m> on the graph of <m>\tan(x)</m>, the point <m>(a,\frac{1}{b})</m>
       is on the graph of <m>\cot(x)</m>.
       </p>
-            <sidebyside>
-                <figure xml:id="graph-tan-PF3">
-                    <caption><m>y=\tan(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(tan(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]:
-    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
-                </figure>
-                <figure xml:id="graph-cot-PF3">
-                    <caption><m>y=\cot(x)</m></caption>
-                    <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(cot(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..2]:
-    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-                    </sageplot></image>
-                </figure>
-            </sidebyside>
+      <sidebyside>
+        <figure xml:id="graph-tan-PF3">
+          <caption><m>y=\tan(x)</m></caption>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-tan2">
+              <xi:include href="prefigure/PF2-graph-tan2.xml"/>
+            </prefigure>
+          </image>
+        </figure>
+        <figure xml:id="graph-cot-PF3">
+          <caption><m>y=\cot(x)</m></caption>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-cot2">
+              <xi:include href="prefigure/PF2-graph-cot2.xml"/>
+            </prefigure>
+          </image>
+        </figure>
+      </sidebyside>
     </observation>
 
     <remark>
@@ -1013,33 +966,34 @@ p
     <statement>
       <p>Which of the following is the graph of <m>g(x)=\sec\left(x+\dfrac{\pi}{2}\right)</m>?</p>
       <ol marker="A." cols="2">
-        <li><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(sec(x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]: 
-    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-        </sageplot></image></li>        
-        <li><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(sec(x+pi),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..1]:
-    p+=line([(i*pi+pi/2,-2*pi),(i*pi+pi/2,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-        </sageplot></image></li>
-        <li><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(sec(x-pi/2),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..2]:
-    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-        </sageplot></image></li>        <li><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(sec(x+pi/2),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True)
-for i in [-2..2]:
-    p+=line([(i*pi,-2*pi),(i*pi,2*pi)],thickness=3,linestyle='dashed',color='red')
-p
-        </sageplot></image></li>
+        <li>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-sec-transform1">
+              <xi:include href="prefigure/PF2-sec-transform1.xml"/>
+            </prefigure>
+          </image>
+        </li>
+        <li>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-sec-transform2">
+              <xi:include href="prefigure/PF2-sec-transform2.xml"/>
+            </prefigure>
+          </image>
+        </li>
+        <li>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-sec-transform3">
+              <xi:include href="prefigure/PF2-sec-transform3.xml"/>
+            </prefigure>
+          </image>
+        </li>
+        <li>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-sec-transform4">
+              <xi:include href="prefigure/PF2-sec-transform4.xml"/>
+            </prefigure>
+          </image>
+        </li>
       </ol>
     </statement>
     <answer>
@@ -1139,13 +1093,11 @@ p
         <p>Graph <m>h(x)=\tan(2x)</m>.</p>
       </statement>
       <answer>
-       <image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.trig_plot(tan(2*x),(x,-2*pi,2*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,thickness=2)
-for i in [-4..3]:
-    p+=line([(i*pi/2+pi/4,-2*pi),(i*pi/2+pi/4,2*pi)],thickness=2,linestyle='dashed',color='red')
-p 
-        </sageplot></image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-tan2x">
+            <xi:include href="prefigure/PF2-tan2x.xml"/>
+          </prefigure>
+        </image>
       </answer>
     </task>
     <task>
@@ -1209,13 +1161,11 @@ p
           <p>Graph <m>k(x)=3\csc\left(\dfrac{x}{2}\right)</m>.</p>
         </statement>
         <answer>
-         <image><sageplot>
-  <xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-  p=TBIL.trig_plot(3*csc(x/2),(x,-4*pi,4*pi),ymin=-2*pi,ymax=2*pi,ticks=[pi/2,1],aspect_ratio=1,gridlines=True,detect_poles=True,thickness=2)
-  for i in [-2..2]:
-      p+=line([(i*2*pi,-2*pi),(i*2*pi,2*pi)],thickness=2,linestyle='dashed',color='red')
-  p 
-          </sageplot></image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-PF2-graph-fluency">
+            <xi:include href="prefigure/PF2-graph-fluency.xml"/>
+          </prefigure>
+        </image>
         </answer>
       </task>
       <task>

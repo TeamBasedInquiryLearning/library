@@ -1,0 +1,24 @@
+<diagram dimensions="(300,300)" margins="30" xmlns="https://prefigure.org">
+  <definition>f(x)=sec(x)</definition>
+  <definition>g(x)=cos(x)</definition>
+  <coordinates bbox="(-2*pi-0.2,-3.1,2*pi+0.2,3.1)">
+    <grid-axes spacings="(-2*pi,pi/2,2*pi),(-3,1,3)" h-pi-format="yes"  vlabels="(-3,1,3)"/>
+
+    <graph at="f" function="f" />
+    <graph at="g" function="g" stroke="green" dash="5 5"/>
+
+    <group at="asymptotes">
+      <line at="L1" endpoints="((-3*pi/2,0),(-3*pi/2,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L2" endpoints="((-pi/2,0),(-pi/2,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L3" endpoints="((pi/2,0),(pi/2,1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L4" endpoints="((3*pi/2,0),(3*pi/2,1))" dash="9 9" stroke="red" infinite="yes"/>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The secant curve, its asymptotes, and the cosine curve">
+      <annotation ref="f" sonify="yes" text="The curve secant of x"/>
+      <annotation ref="asymptotes" text="The vertical asymptotes of secant of x"/>
+      <annotation ref="g" sonify="yes" text="The curve cosine of x"/>
+    </annotation>
+  </annotations>
+</diagram>

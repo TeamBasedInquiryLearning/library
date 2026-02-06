@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="50" xmlns="https://prefigure.org">
+  <definition>f(x)=cos(x)</definition>
+  <coordinates bbox="(0,-1.1,2*pi+0.2,1.1)">
+    <grid-axes spacings="(0,pi/2,2*pi),(-3,0.25,3)" h-pi-format="yes" />
+    <graph at="f" function="f"  domain="(0,2*pi)"/>
+    <label p="(pi,1.2)"><m>f(x)=\cos(x)</m></label>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The cosine curve ">
+      <annotation ref="f" sonify="yes" text="The curve cosine of x between 0 and 2 pi"/>
+    </annotation>
+  </annotations>
+</diagram>
