@@ -1,0 +1,22 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=log(-x)/log(6)</definition>
+  <coordinates bbox="(-10,-5,5,5)">
+    <grid-axes/>
+    <graph at="function" function="f"/>
+    <group at="points">
+    <point p="(-1,0)" at="p1"/>
+    <point p="(-6,1)" at="p2"/>
+    </group>
+    <line at="asymptote" endpoints="((0,-5),(0,5))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="Points on the graph of the function y equals log base negative 6 of x">
+      <annotation ref="function" text="The function y equals log base negative 6 of x" sonify="yes"/>
+      <annotation ref="asymptote" text="The vertical asymptote x equals 0"/>
+      <annotation ref="points" text="Selected points on the graph of y equals log base negative 6 of x">
+        <annotation ref="p2" text="The point -6 comma 1"/>
+        <annotation ref="p1" text="The point -1 comma 0"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
