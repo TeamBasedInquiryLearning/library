@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="20" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <definition>f(x)=x^7+2*x^3-5*x^2+2</definition>
+  <coordinates bbox="(-width,-10,width,10)">
+    <grid-axes spacings="(-width,1,width),(-10,1,10)"/>
+      <axes >
+        <ylabel alignment="north">Graph C</ylabel>
+      </axes>
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a polynomial labeled Graph C">
+        <annotation ref="f"  sonify="yes" text="A polynomial function"/>
+    </annotation>
+  </annotations>
+</diagram>

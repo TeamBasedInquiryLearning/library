@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <definition>f(x)=(x-2)*(x+1)*(x-3)^2</definition>
+  <coordinates bbox="(-width,-22,width,12)">
+    <grid-axes spacings="(-width,1,width),(-40,5,25)" vlabels="(-30,5,30)"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a polynomial">
+        <annotation ref="f"  sonify="yes" text="A polynomial function"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <definition>f(x)=5*x^2+30*x+40</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes />
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a parabola ">
+        <annotation ref="f"  sonify="yes" text="A parabola that slopes down to the point -3 comma -5 and then slopes up"/>
+    </annotation>
+  </annotations>
+</diagram>

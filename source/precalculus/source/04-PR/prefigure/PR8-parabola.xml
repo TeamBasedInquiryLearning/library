@@ -1,0 +1,26 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=7</definition>
+  <definition>f(x)=x^2-6*x+5</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <group>
+      <graph at="f" function="f"/>
+      <point at="p1" p="(0,f(0))" stroke="blue" fill="blue"/>
+      <point at="p2" p="(1,f(1))" stroke="blue" fill="blue"/>
+      <point at="p3" p="(3,f(3))" stroke="blue" fill="blue"/>
+      <point at="p4" p="(5,f(5))" stroke="blue" fill="blue"/>
+      <point at="p5" p="(6,f(6))" stroke="blue" fill="blue"/>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a parabola ">
+        <annotation ref="f"  sonify="yes" text="A parabola that slopes down to the point 3 comma -4 and then slopes up">
+        <annotation ref="p1" text="The point 0 comma 5 lying on the parabola"/>
+        <annotation ref="p2" text="The point 1 comma 0 lying on the parabola"/>
+        <annotation ref="p3" text="The point 3 comma -4 lying on the parabola"/>
+        <annotation ref="p4" text="The point 5 comma 0 lying on the parabola"/>
+        <annotation ref="p5" text="The point 6 comma 5 lying on the parabola"/>
+        </annotation>
+    </annotation>
+  </annotations>
+</diagram>

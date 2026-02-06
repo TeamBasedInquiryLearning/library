@@ -1,0 +1,26 @@
+<diagram dimensions="(300,300)" margins="20" xmlns="https://prefigure.org">
+  <definition>width=10</definition>
+  <definition>f(x) = 1/((x-5)*(x+4)) </definition>
+  <coordinates bbox="(-width,-10,width,10)">
+    <grid spacings="(-width,1,width),(-10,1,10)"  />
+      <axes decorations="no" hlabels="(-width+2,2,width-2)" vlabels="(-width+2,2,width-2)">
+        <ylabel alignment="north">Graph C</ylabel>
+      </axes>
+    <graph at="f" function="f" />
+    <point at="p" p="(-2,-1/14)" fill="white" stroke="blue"/>
+    <group>
+    <line at="l1" endpoints="((-4,0),(-4,1))" stroke="red" dash="9 9" infinite="yes"/>
+    <line at="l2" endpoints="((5,0),(5,1))" stroke="red" dash="9 9" infinite="yes"/>
+    <line at="l3" endpoints="((0,0),(1,0))" stroke="red" dash="9 9" infinite="yes"/>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a rational function and its asymptotes labeled Graph C">
+        <annotation ref="f"  sonify="yes" text="A rational function"/>
+        <annotation ref="p" text="An open circle at approximately -2 comma 0 representing a hole in the graph"/>
+        <annotation ref="l1" text="The vertical asymptote x equals -4"/>
+        <annotation ref="l2" text="The vertical asymptote x equals 5"/>
+        <annotation ref="l3" text="The horizontal asymptote y equals 0"/>
+    </annotation>
+  </annotations>
+</diagram>

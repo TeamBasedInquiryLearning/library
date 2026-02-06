@@ -91,38 +91,26 @@ Use the graphs of the following polynomial functions to answer the questions bel
 <sbsgroup>
   <sidebyside width="50%">
     <image>
-      <sageplot>
-        f(x) = x^4-11*x^3+42*x^2-64*x+32
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
-        p+=text('Graph A', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial1">
+        <xi:include href="prefigure/PR3-polynomial1.xml"/>
+      </prefigure>
     </image>
     <image>
-      <sageplot>
-        f(x) = -4*x^3+2*x^2+3
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
-        p+=text('Graph B', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial2">
+        <xi:include href="prefigure/PR3-polynomial2.xml"/>
+      </prefigure>
     </image>
   </sidebyside>
   <sidebyside width="50%">
     <image>
-      <sageplot>
-        f(x) = x^7+2*x^3-5*x^2+2
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
-        p+=text('Graph C', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial3">
+        <xi:include href="prefigure/PR3-polynomial3.xml"/>
+      </prefigure>
     </image>
     <image>
-      <sageplot>
-        f(x) = -2*x^4+3*x^2-5
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
-        p+=text('Graph D', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial4">
+        <xi:include href="prefigure/PR3-polynomial4.xml"/>
+      </prefigure>
     </image>
   </sidebyside>
 </sbsgroup>
@@ -207,38 +195,26 @@ Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-func
 <sbsgroup>
   <sidebyside width="50%">
     <image>
-      <sageplot>
-        f(x) = x^4-11*x^3+42*x^2-64*x+32
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
-        p+=text('Graph A', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial12">
+        <xi:include href="prefigure/PR3-polynomial1.xml"/>
+      </prefigure>
     </image>
     <image>
-      <sageplot>
-        f(x) = -4*x^3+2*x^2+3
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
-        p+=text('Graph B', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial22">
+        <xi:include href="prefigure/PR3-polynomial2.xml"/>
+      </prefigure>
     </image>
   </sidebyside>
   <sidebyside width="50%">
     <image>
-      <sageplot>
-        f(x) = x^7+2*x^3-5*x^2+2
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3) 
-        p+=text('Graph C', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial32">
+        <xi:include href="prefigure/PR3-polynomial3.xml"/>
+      </prefigure>
     </image>
     <image>
-      <sageplot>
-        f(x) = -2*x^4+3*x^2-5
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
-        p+=text('Graph D', (0, 8), fontsize=18, color='black')
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial42">
+        <xi:include href="prefigure/PR3-polynomial4.xml"/>
+      </prefigure>
     </image>
   </sidebyside>
 </sbsgroup>
@@ -345,15 +321,11 @@ Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-func
     <activity xml:id="using-arrow-notation">
       <introduction>
         <p>Use the graph of <m>f(x)</m> to answer the questions below.</p>
-      <figure width="100%" xml:id="PR5-polynomial-function-2">
-        <image xml:id="PR5-polynomial-image-2">
-          <description>A polynomial function with one even and one odd multiplicity</description>
-          <sageplot>
-            f(x) = (x-5)*(x+1)^2
-              p=plot(f, (x, -10, 10), ymin=-40, ymax=20, color='blue', thickness=3)
-          </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial5">
+            <xi:include href="prefigure/PR3-polynomial5.xml"/>
+          </prefigure>
         </image>
-      </figure>
       </introduction>
     <task>
       <statement>
@@ -396,15 +368,11 @@ Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-func
 xml:id="intro-to-multiplicities">
   <introduction>
     <p>Let's now look at the graph of <m>f(x)=(x-2)(x+1)(x-3)^2</m> to answer the questions below.</p>
-  <figure width="100%" xml:id="PR5-polynomial-function">
-    <image xml:id="PR5-polynomial-image">
-      <description>A polynomial function with different multiplicities</description>
-      <sageplot>
-        f(x) = (x-2)*(x+1)*(x-3)^2
-          p=plot(f, (x, -5, 5), ymin=-20, ymax=10, color='blue', thickness=3, detect_poles=True)
-      </sageplot>
-    </image>
-  </figure>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial6">
+            <xi:include href="prefigure/PR3-polynomial6.xml"/>
+          </prefigure>
+        </image>
   </introduction>
   <task>
       <statement><p> What are the zeros of <m> f(x) </m>?
@@ -493,15 +461,11 @@ xml:id="intro-to-multiplicities">
 <activity xml:id="activity-characteristics-from-polynomial-graph">
   <introduction>
     <p> Now that we know all the different characteristics of polynomials, we should also be able to identify them from a graph. Use the graph below to find the given characteristics. </p>
-    <figure width="100%" xml:id="PR1-polynomial">
-      <image xml:id="PR1-polynomial-image">
-        <description>Polynomial Function</description>
-        <sageplot>
-          f(x) = (1*x^3-3*x-2)
-            p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3)
-        </sageplot>
-      </image>
-    </figure>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial7">
+            <xi:include href="prefigure/PR3-polynomial7.xml"/>
+          </prefigure>
+        </image>
   </introduction>
   <task> 
     <statement>
@@ -692,16 +656,11 @@ xml:id="intro-to-multiplicities">
     <answer>
       <p>
         One such graph is
-        <figure width="100%" xml:id="PR1-polynomial-2">
-          <image xml:id="PR1-polynomial-image-2">
-            <description>Polynomial Function</description>
-            <sageplot>
-              f(x) = 1*x^5-9*x^4+24*x^3-20*x^2
-              p=plot(f, (x, -5, 10), ymin=-100, ymax=10, color='blue', thickness=3)
-              p
-            </sageplot>
-          </image>
-        </figure>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-polynomial8">
+            <xi:include href="prefigure/PR3-polynomial8.xml"/>
+          </prefigure>
+        </image>
       </p>
     </answer>
 </activity>

@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=8</definition>
+  <definition>f(x)=2*(x+4)^2-3</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a parabola ">
+        <annotation ref="f"  sonify="yes" text="A parabola that slopes down to the point -5 comma -3 and then slopes up"/>
+    </annotation>
+  </annotations>
+</diagram>

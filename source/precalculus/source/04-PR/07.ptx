@@ -676,72 +676,36 @@
         <sbsgroup>
           <sidebyside width="30%">
             <image>
-              <sageplot>
-                f(x) = 2*x/(x^2-2*x-8)
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph A', (0, 8), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational1">
+                <xi:include href="prefigure/PR7-rational1.xml"/>
+              </prefigure>
             </image>
             <image>
-              <sageplot>
-                f(x) = (x^2+3)/(2*x^2-8)-1
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,-0.5),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph B', (0, 8), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational2">
+                <xi:include href="prefigure/PR7-rational2.xml"/>
+              </prefigure>
             </image>
             <image>
-              <sageplot>
-                f(x) = 1-(x^2+3)/(2*x^2-8)
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0.5),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph C', (0, 8), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational3">
+                <xi:include href="prefigure/PR7-rational3.xml"/>
+              </prefigure>
             </image>
           </sidebyside>
           <sidebyside width="30%">
             <image>
-              <sageplot>
-                f(x) = 2*x/(x^2-2*x-8)-3
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,-3),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph D', (0, 8), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational4">
+                <xi:include href="prefigure/PR7-rational4.xml"/>
+              </prefigure>
             </image>
             <image>
-              <sageplot>
-                f(x) = (x^2+3)/(2*x^2-8)
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0.5),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph E', (0, 8), fontsize=18, color='black')
-                p 
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational5">
+                <xi:include href="prefigure/PR7-rational5.xml"/>
+              </prefigure>
             </image>
             <image>
-              <sageplot>
-                f(x) = -2*x/(x^2-2*x-8)
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph F', (0, 8), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational6">
+                <xi:include href="prefigure/PR7-rational6.xml"/>
+              </prefigure>
             </image>
           </sidebyside>
         </sbsgroup>
@@ -773,88 +737,42 @@
     <activity xml:id="activity-rf-graphs-with-holes">
       <introduction>
         <p>Consider the following six graphs of rational functions:</p>
-        <sbsgroup>
+          <sbsgroup>
           <sidebyside width="30%">
             <image>
-              <sageplot>
-                f(x) = ((x+2)*(x+3))/((x+2)*(x-5)*(x+4))
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph A', (0, 8), fontsize=18, color='black')
-                p+=point((-2, -1/14), pointsize=50, markeredgecolor='blue',color='white',zorder=7)                
-                p
-              </sageplot>
-            </image>
- 
-            <image>
-              <sageplot>
-                f(x) = ((x+2)*(x+3))/((x+2)*(x-5)*(x+4))
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph B', (0, 8), fontsize=18, color='black')
-                p+=point((-3, 0), pointsize=50, markeredgecolor='blue',color='white',zorder=7)                
-                p
-              </sageplot>
-            </image>
- 
-            <image>
-              <sageplot>
-                f(x) = ((x+2))/((x+2)*(x-5)*(x+4))
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph C', (0, 8), fontsize=18, color='black')
-                p+=point((-2, 1/14), pointsize=50, markeredgecolor='blue',color='white',zorder=7)                
-                p
-              </sageplot>
-            </image>
-            </sidebyside>
-
-            <sidebyside width="30%">
-            <image>
-              <sageplot>
-                f(x) = ((x-5))/((x+2)*(x-5)*(x+4))
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((-2,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph D', (0, 8), fontsize=18, color='black')
-                p+=point((5, 1/63), pointsize=50, markeredgecolor='blue',color='white',zorder=7)               
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational7">
+                <xi:include href="prefigure/PR7-rational7.xml"/>
+              </prefigure>
             </image>
             <image>
-              <sageplot>
-                f(x) = ((x+2)*(x-5))/((x+2)*(x-5)*(x+4))
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph E', (0, 8), fontsize=18, color='black')
-                p+=point((-2, 1/2), pointsize=50, markeredgecolor='blue',color='white',zorder=7)  
-                p+=point((5, 1/9), pointsize=50, markeredgecolor='blue',color='white',zorder=7)               
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational8">
+                <xi:include href="prefigure/PR7-rational8.xml"/>
+              </prefigure>
             </image>
             <image>
-              <sageplot>
-                f(x) = ((x+2)*(x+3))/((x+2)*(x-5)*(x+4))
-                p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-                p+=parametric_plot((5,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((-4,x),(x,-8,8),color='red',linestyle="--")
-                p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-                p+=text('Graph F', (0, 8), fontsize=18, color='black')               
-                p
-              </sageplot>
-            </image> 
-            
-            
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational9">
+                <xi:include href="prefigure/PR7-rational9.xml"/>
+              </prefigure>
+            </image>
           </sidebyside>
-        </sbsgroup>
+          <sidebyside width="30%">
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational10">
+                <xi:include href="prefigure/PR7-rational10.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational11">
+                <xi:include href="prefigure/PR7-rational11.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational12">
+                <xi:include href="prefigure/PR7-rational12.xml"/>
+              </prefigure>
+            </image>
+          </sidebyside>
+        </sbsgroup>           
       </introduction>
       <task>
         <statement>
@@ -939,15 +857,13 @@
           <p> Sketch the graph of <m>f(x)</m>. </p>
         </statement>
         <answer>
-          <p> <image>
-            <sageplot>
-              f(x) = (-(x-1)*(x-4))/(2*(x-1)*(x+3)^2)
-              p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3, detect_poles=True)
-              p+=parametric_plot((-3,x),(x,-8,8),color='red',linestyle="--")
-              p+=parametric_plot((x,0),(x,-7,7),color='red',linestyle="--")
-              p 
-            </sageplot>
-          </image>  </p>
+          <p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-PR7-rational13">
+                <xi:include href="prefigure/PR7-rational13.xml"/>
+              </prefigure>
+            </image>
+             </p>
         </answer> 
       </task>
    
