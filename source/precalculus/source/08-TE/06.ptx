@@ -129,15 +129,9 @@
         <p> 
           <figure xml:id="angle-of-elevation-and-depression">
             <image>
-              <sageplot>
-p=line([(0,8),(10,8),(0,0),(10,0)],color="black",thickness=3)
-p+=arc((0,0),1,sector=(0, arctan(8/10)),color="black")             
-p+=arc((10,8),1,sector=(pi, pi+arctan(8/10)),color="black")
-p+=text("Angle of elevation",(3,0.5),color="black",fontsize=16)
-p+=text("Angle of depression",(6.5,7.5),color="black",fontsize=16)
-p.axes(False)
-p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-elevation-depression">
+                  <xi:include href="prefigure/TE6-elevation-depression.xml"/>
+              </prefigure>
             </image>
             <caption> The angle of elevation and the angle of depression are congruent.</caption>
           </figure>
