@@ -1,0 +1,26 @@
+<diagram dimensions="(300,300)" margins="45" xmlns="https://prefigure.org">
+  <definition>f(x) = 1/x </definition>
+  <definition>g(x) = 1/x^2</definition>
+  <definition>h(x) = 1/sqrt(x)</definition>
+  <coordinates bbox="(-0.1,-0.1,5.5,1.6)">
+    
+    <area-under-curve at="under" function="f" domain="(1,5.5)" fill="lightgray" stroke="lightgray" />
+    <grid-axes/>
+    <line endpoints="((1,0),(1,1))" dash="9 9"/>
+    <graph at="f" function="f" domain="(1,5.5)"/>
+    <label anchor="(6,0.2)" color="blue"><m>f(x)</m></label>
+    <graph at="g" function="g" stroke="green" domain="(1,5.5)"/>
+    <label anchor="(6,0)" color="green"><m>g(x)</m></label>
+    <graph at="h" function="h" stroke="red" domain="(1,5.5)"/>
+    <label anchor="(6,0.4)" color="red"><m>h(x)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of three functions">
+      <annotation ref="h" sonify="yes" text="A curve labeled h of x that begins at 1 comma 1 and decreases.  It is always above f and g"/>
+      <annotation ref="f" sonify="yes" text="A curve labeled f of x that begins at 1 comma 1 and decreases.  It is always above g and below h"/>
+      <annotation ref="g" sonify="yes" text="A curve labeled g of x that begins at 1 comma 1 and decreases.  It is always below f"/>
+      <annotation ref="under" text="The area below f and above the x-axis, which starts at 1 on the left and extends completely to the right, is shaded gray"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,22 @@
+<diagram dimensions="(300,300)" margins="45" xmlns="https://prefigure.org">
+  <definition>f(x) = e^x </definition>
+  <definition>g(x) = 1 + x + x^2/2 + x^3/6 + x^4/24 + x^5/120</definition>
+  <coordinates bbox="(-2.1,-0.1,2.1,8)">
+    <grid-axes/>
+    <graph at="f" function="f" />
+    <graph at="g" function="g" stroke="red" dash="9 9"/>
+    <legend anchor="(bbox[0], bbox[3])"
+            alignment="se" opacity="0.9"
+            scale="0.9" vertical-skip="10">
+      <item ref="f"><m>y=e^x</m></item>
+      <item ref="g"><m>y=f_5(x)</m></item>
+    </legend>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of two curves">
+      <annotation ref="f" sonify="yes" text="The curve e to the x"/>
+      <annotation ref="g" sonify="yes" text="A fifth degree polynomial approximation of e to the x"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,34 @@
+<diagram dimensions="(300,500)" margins="50"  xmlns="https://prefigure.org" >
+  <coordinates bbox="(-1,0,22,101)" >
+    <polygon at="tank" points="((5,0),(15,0),(20,100),(0,100))" stroke="black" closed="yes"/>
+
+    <group at="h">
+      <line endpoints="((-1,0),(-1,100))" thickness="1" stroke="black"><m>100\ \text{m}</m></line>
+      <line endpoints="((-1.3,100),(-0.7,100))" stroke="black" thickness="1"/>
+      <line endpoints="((-1.3,0),(-0.7,0))" stroke="black" thickness="1"/>
+    </group>
+
+    <group at="r">
+      <line endpoints="((10,0),(15,0))" stroke="red" offset="(0,-20)"><m>10\ \text{m}</m></line>
+      <line endpoints="((10,40),(17,40))" stroke="red" offset="(0,-20)"><m>r_i</m></line>
+      <line endpoints="((10,100),(20,100))" stroke="red" ><m>20\ \text{m}</m></line>
+    </group>
+
+    <group at="rectangle">
+      <rectangle center="(10,45)" dimensions="(14,10)" fill="blue" fill-opacity="40%"/>
+      <line endpoints="((19,40),(19,50))" thickness="1" rotate="-90" offset="(-2,-20)"><m>\Delta h</m></line>
+      <line endpoints="((18.5,40),(19.5,40))" thickness="1"/>
+      <line endpoints="((18.5,50),(19.5,50))" thickness="1"/>
+      <label anchor="(3,40)" alignment="west"><m>h_i</m></label>
+    </group>
+   </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a frustum-shaped tank with a slice of water">
+      <annotation ref="tank" text="A trapezoid representing a cross section of a frustum-shaped tank"/>
+      <annotation ref="h" text="A line segment showing the height of the tank to be 100 meters"/>
+      <annotation ref="rectangle" text="A blue rectangle representing a slice of water at height h sub i with thickness Delta h."/>
+      <annotation ref="r" text="Red line segments showing the radius of the tank at the bottom to be 10 meters, the radius at the top to be 20 meters, and the radius of the slice to be r sub i"/>
+    </annotation>
+  </annotations>
+</diagram>

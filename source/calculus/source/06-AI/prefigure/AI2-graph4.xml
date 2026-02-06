@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>f(x)=-x^2+6*x</definition>
+  <coordinates bbox="(-0.1,-0.1,4.1,9.1)">
+    <grid-axes/>
+    <graph at="f" function="f"/>
+
+    <group at="triangle">
+      <point p="(2,f(2))" color="red" scale="0.5" alignment="west"><m>(x_0,f(x_0))</m></point>
+      <point p="(2.5,f(2.5))" color="red" scale="0.5" alignment="northwest" offset="(2,2)"><m>(x_0+\Delta x,f(x_0+\Delta x))</m></point>
+      <polygon points="(2,f(2)),(2.5,f(2)),(2.5,f(2.5))" closed="yes" stroke="red" dash="5 5"/>
+      <label anchor="(2.25,f(2))" color="red" scale="0.5" alignment="south"><m>\Delta x</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="A downward facing parabola passing through the origin, with a maximum at 3 comma 9 and also passing through 4 comma 8"/>
+      <annotation ref="triangle" text="A small right triangle is drawn with a horizontal leg labeled delta x and a hypotenuse connecting a point labeled x nought comma f of x nought to a point labeled x nought plus delta x comma f of x nought plus delta x"/>
+    </annotation>
+  </annotations>
+</diagram>

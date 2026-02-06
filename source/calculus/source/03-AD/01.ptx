@@ -87,24 +87,21 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     </answer></task>
      <task><statement><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p></statement>
     <answer>
-        <image width = "50%">
-            <sageplot>
-                x = var('x')
-                plot(x^3-9*x^2+24*x + 3,(x,0,5), axes_labels=("$t$","$s(t)$"))
-            </sageplot>
-        </image>
-        <image width = "50%">
-            <sageplot>
-                x = var('x')
-                plot(3*x^2-18*x + 24,(x,0,5),axes_labels = ("$t$","$v(t)$"))
-            </sageplot>
-        </image>
-        <image width = "50%">
-             <sageplot>        
-                x = var('x')
-                plot(6*x - 18,(x,0,5),axes_labels=("$t$","$a(t)$"))
-     </sageplot>
-        </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD1-graph-s">
+                <xi:include href="prefigure/AD1-graph-s.xml"/>
+            </prefigure>
+        </image>     
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD1-graph-v">
+                <xi:include href="prefigure/AD1-graph-v.xml"/>
+            </prefigure>
+        </image>     
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD1-graph-a">
+                <xi:include href="prefigure/AD1-graph-a.xml"/>
+            </prefigure>
+        </image>     
     </answer></task>
     <task><statement><p>When is the particle moving upward and when is it moving downward?</p></statement>
     <answer>

@@ -1,0 +1,21 @@
+<diagram dimensions="(400,300)" margins="25" xmlns="https://prefigure.org">
+  <coordinates bbox="(-0.1,-2.1,4.1,2.1)">   
+    <axes decorations="no"/>
+    <polygon at="area" points="((2,1),(2,-1),(3,-1.5),(3,1.5))" closed="yes" fill="gray" fill-opacity="0.6"/>
+    <polygon at="wedge" points="((4,2),(0,0),(4,-2))" stroke="blue"/>
+    <line at="L1" endpoints="((2,0),(2,1))" stroke="red" rotate="-90" offset="(0,5)"><m>r</m></line>
+    <line at="L2" endpoints="((3,0),(3,1.5))" stroke="red" rotate="-90" offset="(0,-12)"><m>R</m></line>
+    <line at="L3" endpoints="((2,1),(3,1.5))" stroke="green" rotate="-20" offset="(0,5)"><m>l</m></line>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="An illustration of a cross-section of a frustum">
+      <annotation ref="wedge" text="A triangular wedge in the plane with its point at the origin and openening to the right"/>
+      <annotation ref="area" text="The trapezoidal area inside the wedge and to the right of one vertical line and the left of another is shaded gray">
+        <annotation ref="L1" text="The portion of the left vertical piece above the x axis and below the wedge is labeled lower-case r"/>
+        <annotation ref="L2" text="The portion of the right vertical piece above the x axis and below the wedge is labeled upper-case R"/>
+        <annotation ref="L1" text="The slanted edge of the trapezoidal region is labeled l"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

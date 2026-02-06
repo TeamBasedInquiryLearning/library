@@ -1,0 +1,19 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) = (x-2)*(x-4)</definition>
+  <coordinates bbox="(-0.1,-1.1,5.1,9.1)">
+    <grid-axes />
+    <group at="rs">
+    <riemann-sum function="f" domain="(0,2)" N="12" fill="blue" fill-opacity="0.6"/>
+    <riemann-sum function="f" domain="(2,4)" N="12" fill="red" fill-opacity="0.6"/>
+    <riemann-sum function="f" domain="(4,5)" N="6" fill="blue" fill-opacity="0.6"/>
+    </group>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="A parabolic curve passing throuh 0 comma 8, with a minimum at 3 comma -1."/>
+      <annotation ref="rs" text="Rectangles approximating the area under the curve.  Initially they are above the x-axis, then dip below the axis between 2 and 4 before returning above the x-axis"/>
+    </annotation>
+  </annotations>
+</diagram>

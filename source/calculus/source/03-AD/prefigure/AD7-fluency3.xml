@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) = x+2*cos(x)</definition>
+  <coordinates bbox="(-0.1,-0.1,2*pi+0.1,9)">
+    <grid-axes spacings="((0,pi/4,2*pi),(0,1,10))" vlabels="(0,1,9)" h-pi-format="yes"/>
+    <graph at="f" function="f" />
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at 0 comma 2 and increasing, with a local maximimum before pi over 4, decreasing until just before pi, then increasing"/>
+    </annotation>
+  </annotations>
+</diagram>

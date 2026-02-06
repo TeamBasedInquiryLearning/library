@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=1/x^3</definition>
+  <coordinates bbox="(-4.1,-60,4.1,60)" >
+    <grid-axes hlabels="(-4,1,4)"/>
+    <label p="(0,65)"><m>f(x)</m></label>
+    <graph at="f" function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function f of x equals 1 over x cubed">
+      <annotation ref="f" sonify="yes" text="The function is flat, then turns down almost vertical at the y-axis.  Then the function descends vertically on the right side of the y-axis, flattening out along the x-axis"/>
+    </annotation>
+  </annotations>
+</diagram>

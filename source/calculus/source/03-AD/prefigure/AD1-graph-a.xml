@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=x^3-9*x^2+24*x + 3</definition>
+  <definition>v(x)=deriv(f,x)</definition>
+  <definition>a(x)=deriv(v,x)</definition>
+  <coordinates bbox="(-0.1,-22,5.1,17)">
+    <grid-axes />
+    <graph at="f" function="a" domain="(0,5)"/>
+    <label p="(2.5,19)"><m>a(t)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the function a of t">
+      <annotation ref="f" text="A line starting at 0 comma -18 and sloping up, passing through 3 comma 0"/>
+    </annotation>
+  </annotations>
+</diagram>

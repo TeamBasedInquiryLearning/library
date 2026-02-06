@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) = 3*x^2-x^3</definition>
+  <coordinates bbox="(-1.1,-2.1,4.1,4.1)">
+    <grid-axes />
+    <area-under-curve function="f" domain="(0,2)"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="A cubic curve. The area below the curve, above the x-axis, to the right of 0, and to the left of 2 is shaded."/>
+    </annotation>
+  </annotations>
+</diagram>

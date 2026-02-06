@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=x^3-9*x^2+24*x + 3</definition>
+  <coordinates bbox="(-0.1,-1,5.1,27)">
+    <grid-axes />
+    <graph at="f" function="f" domain="(0,5)"/>
+    <label p="(2.5,29)"><m>s(t)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the function s of t">
+      <annotation ref="f" text="A curve starting near 0 comma 3 and increasing past a y value of 20, decreasing between 2 and 4 to just below 20, and then increasing again"/>
+    </annotation>
+  </annotations>
+</diagram>

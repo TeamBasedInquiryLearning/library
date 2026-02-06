@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=0.6*x^3/(3*60^2)</definition>
+  <definition>fp(x)=deriv(f,x)</definition>
+  <coordinates bbox="(-2,-0.05,85,2)">
+    <grid-axes/>
+    <graph function="fp"/>
+    <label p="(40,2.1)"><m>f^\prime (v)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the function f prime of v">
+      <annotation ref="f" sonify="yes" text="A curve beginning at the origin and then sloping upwards"/>
+    </annotation>
+  </annotations>
+</diagram>

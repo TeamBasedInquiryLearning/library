@@ -196,14 +196,11 @@
                 <p> In this activity you will study the slope of a graph at a point. The graph of the function <m>g(x)</m> is given below. For your convenience, below you will find a table of values for <m>g(x)</m>.
 </p>
                    <figure>
-                    <image width="50%" xml:id="graph-parabola">
-                      <sageplot>
-                        x = var('x')
-                        f = 0.5*x^2 - 2
-                        p = plot(f, (x,0,4), ymax = 5, gridlines=True, axes_labels=('$x$','$g(x)$'), thickness=2, aspect_ratio=.5)
-                        p
-                      </sageplot>
-                    </image>
+                      <image>
+                          <prefigure xmlns="https://prefigure.org" label="prefigure-DF1-graph1">
+                              <xi:include href="prefigure/DF1-graph1.xml"/>
+                          </prefigure>
+                      </image>
                     <caption>The graph of <m> g(x)</m></caption>
                 </figure>
         <table xml:id="table-der-graph1">
@@ -381,14 +378,11 @@
               <introduction> 
                 <p> In this activity you will study the absolute value function <m>f(x)=|x|</m>. The absolute value function is a piecewise defined function which outputs <m>x</m> when <m>x</m> is positive (or zero) and outputs <m>-x</m> when <m>x</m> is negative. So the absolute value always outputs a number which is positive (or zero). Here is the graph of this function. </p>
                    <figure>
-                    <image width="50%" xml:id="graph-absolute-value">
-                      <sageplot>
-                        x = var('x')
-                        f = abs(x)
-                        p = plot(f,(x,-4,4), gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=2)
-                        p
-                      </sageplot>
-                    </image>
+                      <image>
+                          <prefigure xmlns="https://prefigure.org" label="prefigure-DF1-graph2">
+                              <xi:include href="prefigure/DF1-graph2.xml"/>
+                          </prefigure>
+                      </image>
                     <caption>The graph of <m> |x|</m></caption>
                     </figure>         
 </introduction>
@@ -442,23 +436,10 @@
       <introduction>
         <p>Consider the graph of function <m>h(x)</m>. </p>
         <figure xml:id="nice-piecewise-graph">
-          <image width="50%" xml:id="graph-derivative-features">
-            <sageplot>
-              x = var('x')
-              f1 = 5*(1/3)*(x-1)
-              f2 = 5*0.0625*(x-5)^2-5
-              f3 = 5*(x-6)^2
-              p1 = plot(f1, (x,-2,1), gridlines=True, axes_labels=('$x$','$h(x)$'), thickness=2)
-              p2 = plot(f2, (x,1,5), gridlines=True, axes_labels=('$x$','$h(x)$'), thickness=2)
-              p3 = plot(f3, (x,5,7), gridlines=True, axes_labels=('$x$', '$h(x)$'), thickness=2)
-              c1 = circle((1,0), 0.1, fill=True, thickness=1, facecolor='white')
-              c2 = circle((1,5), 0.1, fill=True, thickness=1, facecolor='blue')
-              c3 = circle((5,-5), 0.1, fill=True, thickness=1, facecolor='white')
-              c4 = circle((5,5), 0.1, fill=True, thickness=1, facecolor='blue')
-              p = p1+p2+p3
-              c = c1+c2+c3+c4
-              p+c
-            </sageplot>
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-DF1-graph3">
+                  <xi:include href="prefigure/DF1-graph3.xml"/>
+              </prefigure>
           </image>
           <caption>The graph of <m> h(x)</m>.</caption>
         </figure>
@@ -626,14 +607,11 @@ The rate of change of <m>f(x)</m> when <m>x=-1</m> is positive
         <introduction>
         <p>You are given the graph of the function <m>f(x)</m>.</p>
             <figure>
-                <image width="50%" xml:id="graph-tangent-line-estimate">
-                  <sageplot>
-                    x = var('x')
-                    f = -x^2+2
-                    p = plot(f,(x,-1,3), gridlines=True, thickness=2, axes_labels=('$x$','$f(x)$'), aspect_ratio=.5)
-                    p
-                  </sageplot>
-                </image>
+              <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-DF1-graph4">
+                      <xi:include href="prefigure/DF1-graph4.xml"/>
+                  </prefigure>
+              </image>
                 <caption>The graph of <m> f(x)</m></caption>
             </figure>
             </introduction>

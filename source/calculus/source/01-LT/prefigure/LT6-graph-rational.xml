@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=(x+2)*(x+4)/(x^2+3*x-4)</definition>
+  <definition>h=11</definition>
+  <coordinates bbox="(-10.1,-h,10.1,h)" >
+    <grid-axes/>
+    <graph at="f" function="f" />
+    <point at="hole" p="(-4,2/5)" fill="white" stroke="blue"/>
+    <label p="(0,1.1*h)"><m>f(x)</m></label>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of f of x">
+      <annotation ref="f" sonify="yes" text="The function decreases to almost vertical near x equals 1, and resumes from the right of 1 from near vertical and decreasing"/>
+      <annotation ref="hole" text="An open circle representing a hole in the graph at -4 comma 2 fifths"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,28 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition> f(x) =  -0.0019378058*x^5+0.0272617825*x^4-0.0281391103*x^3-0.6767556453*x^2 + 1.6980068882*x-0.0048902147</definition>
+  <coordinates bbox="(-0.1,-1.1,11,5.11)">
+    <grid-axes hlabels="(0,3,9)"/>
+    <group at="A1">
+      <area-under-curve  function="f" domain="(0,3)"/>
+      <label p="(1.55,0.3)" scale="0.8"><m>A_1 = 2</m></label>
+    </group>
+    <group at="A2">
+      <area-under-curve  function="f" domain="(3,6)"/>
+      <label p="(4.55,-0.3)" scale="0.8"><m>A_2 = 2.5</m></label>
+    </group>
+    <group at="A3">
+      <area-under-curve  function="f" domain="(6,10)"/>
+      <label p="(8.5,2)" scale="0.8"><m>A_3 = 9</m></label>
+    </group>
+    <graph at="f" function="f" domain="(0,10)" stroke="blue"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A function curving above and below the x-axis">
+      <annotation ref="f" sonify="yes" text="The function begins at the origin and increases, returns and passes through 3 comma 0 below the x-axis, turns and passes through 6 comma 0 and increases, then turns and returns to the x-axis at 10 comma 0."/>
+      <annotation ref="A1" text="The area above the x-axis and under the curve between x equals 0 and x equals 3 is shaded and labeled A sub 1 equals 2"/>
+      <annotation ref="A2" text="The area above the x-axis and under the curve between x equals 3 and x equals 6 is shaded and labeled A sub 2 equals 2.5"/>
+      <annotation ref="A3" text="The area above the x-axis and under the curve between x equals 6 and x equals 10 is shaded and labeled A sub 3 equals 9"/>
+    </annotation>
+  </annotations>
+</diagram>

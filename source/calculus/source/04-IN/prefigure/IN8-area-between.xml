@@ -1,0 +1,29 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>  f(x) = 4*(.5*(x-1))-(.5*(x-1))^2+1 </definition>
+  <definition>g(x) = (.5*(x-1))^2+1</definition>
+  <definition>a=intersect((f,g),1)</definition>
+  <definition>b=intersect((f,g),4)</definition>
+  <definition>x1 = 2.5</definition>
+  <coordinates bbox="(-0.1,-1.5,5.5,6)">
+    <area-between-curves at="between" functions="(f,g)" domain="(a,b)" fill="lightgray"/>
+    <area-under-curve at="under" function="g" domain="(a,b)" fill="lightgray" fill-opacity="0.4" dash="9 9"/>
+    <axes decorations="no"/>
+    <tick-mark at="a" location="a"> <m>a</m></tick-mark>
+    <tick-mark at="b" location="b"> <m>b</m></tick-mark>
+    <graph at="f" function="f"/>
+    <label anchor="(2,4)" color="blue"><m>f(x)</m></label>
+    <graph at="g" function="g" stroke="red"/>
+    <label anchor="(4,2)" color="red"><m>g(x)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of two intersecting functions">
+      <annotation ref="f" sonify="yes" text="A curve labeled f of x that crosses g in two places.  Between the x values a and b, it lies above g"/>
+      <annotation ref="g" sonify="yes" text="A curve labeled g of x that crosses f in two places.  Between the x values a and b, it lies below g"/>
+      <annotation ref="between" text="The area above g and below f, which starts at a on the left and ends at b on the right, is shaded dark gray"/>
+      <annotation ref="under" text="The area below g and above the x-axis, which starts at a on the left and ends at b on the right, is shaded light gray"/>
+      <annotation ref="a" text="A tickmark on the x-axis below the first point of intersection is labeled a"/>
+      <annotation ref="b" text="A tickmark on the x-axis below the second point of intersection is labeled b"/>
+    </annotation>
+  </annotations>
+</diagram>

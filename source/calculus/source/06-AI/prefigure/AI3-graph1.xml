@@ -1,0 +1,18 @@
+<diagram dimensions="(400,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>f(x)=(x-3)*(x-5)*(x-7)+40</definition>
+  <coordinates bbox="(-0.5,-5,9,70)">   
+    <group at="f">
+      <area-under-curve function="f" domain="(2,8)" stroke="gray"/>
+      <graph  function="f"/>
+      <line endpoints="(6,0),(6,f(6))" stroke="blue" rotate="-90" scale="0.7" offset="(0,40)"><m>\text{Length}=f(x)</m></line>
+      <label anchor="(4,55)" scale="0.7"><m>\displaystyle \text{Area}=\int _a ^b f(x)\ dx</m></label>
+    </group>
+    <axes decorations="no" arrows="2"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of the area below a function">
+      <annotation ref="f" sonify="yes" text="A generic curve in the first quadrant.  The area below it is shaded gray, and an arbitrary height is labeled length equals f of x"/>
+    </annotation>
+  </annotations>
+</diagram>

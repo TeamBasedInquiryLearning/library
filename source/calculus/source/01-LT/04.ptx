@@ -57,30 +57,12 @@
         <p>
           A function <m>f</m> defined on <m>-4 \lt x \lt 4</m> has the graph pictured below. Use the graph to answer each of the following questions.
         </p>
-        <figure xml:id="figure-limits-different-kinds">
-          <image width="50%">
-            <sageplot>
-              x = var('x')
-              f = 2*x^2 + 16*x + 33
-              g = -x
-              h = x^2 + 0.5*x - 4
-              j = -2.5
-              k = sin(pi/(x-2))-3
-              p1 = plot(f,(x,-4,-3),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p2 = plot(g,(x,-3,-2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p3 = plot(h,(x,-2,1),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p4 = plot(j,(x,1,2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p5 = plot(k,(x,2.01,4),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              c1 = circle((-2,2),0.1,fill=True,facecolor='white',thickness=1)
-              c2 = circle((-2,-1),0.1,fill=True,facecolor='blue',thickness=1)
-              c3 = circle((-1,1),0.1,fill=True,facecolor='blue',thickness=1)
-              c4 = circle((-1,-3.5),0.1,fill=True,facecolor='white',thickness=1)
-              c5 = circle((3,-3),0.1,fill=True,facecolor='white',thickness=1)
-              p1+p2+p3+p4+p5+c1+c2+c3+c4+c5
-            </sageplot>
-          </image>
-        </figure>
-          </introduction>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-LT4-graph1">
+            <xi:include href="prefigure/LT4-graph1.xml"/>
+          </prefigure>
+        </image>
+      </introduction>
         <task>
             <p>
               For each of the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>, determine whether the limit <m>\displaystyle\lim_{x \to a} f(x)</m> exists. If the limit does not exist, be ready to explain why not.
@@ -169,29 +151,11 @@
           Consider the function <m>f</m> whose graph is pictured below (it's the same graph from <xref ref="activity-continuous-graph1"/>). In the
             questions below, consider the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>.
         </p>
-        <figure xml:id="figure-continuous-graph2">
-          <image width="50%">
-            <sageplot>
-              x = var('x')
-              f = 2*x^2 + 16*x + 33
-              g = -x
-              h = x^2 + 0.5*x - 4
-              j = -2.5
-              k = sin(pi/(x-2))-3
-              p1 = plot(f,(x,-4,-3),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p2 = plot(g,(x,-3,-2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p3 = plot(h,(x,-2,1),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p4 = plot(j,(x,1,2),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              p5 = plot(k,(x,2.01,4),ymin=-4,ymax=4, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-              c1 = circle((-2,2),0.1,fill=True,facecolor='white',thickness=1)
-              c2 = circle((-2,-1),0.1,fill=True,facecolor='blue',thickness=1)
-              c3 = circle((-1,1),0.1,fill=True,facecolor='blue',thickness=1)
-              c4 = circle((-1,-3.5),0.1,fill=True,facecolor='white',thickness=1)
-              c5 = circle((3,-3),0.1,fill=True,facecolor='white',thickness=1)
-              p1+p2+p3+p4+p5+c1+c2+c3+c4+c5
-            </sageplot>
-          </image>
-        </figure>
+          <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-LT4-graph12">
+            <xi:include href="prefigure/LT4-graph1.xml"/>
+          </prefigure>
+        </image>
       </introduction>
         <task>
             <p>
@@ -270,27 +234,11 @@
         <p>
           Consider the function <m>f</m> whose graph is pictured below.
         </p>
-        <figure>
-          <image width="50%">
-            <sageplot>
-              x=var('x')
-              f = (1/3)*x-1/3
-              g= -0.5*x+0.5
-              h = x-5
-              p1 = plot(f,(x,-2,1), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
-              p2 = plot(g,(x,1,5), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
-              p3 = plot(h,(x,5,7), ymin=-3,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2,color='blue',aspect_ratio=1)
-              c1 = circle((1,0),0.1,fill=True,facecolor='white',thickness=1)
-              c2 = circle((1,2),0.1,fill=True,facecolor='blue',thickness=1)
-              c3 = circle((5,-2),0.1,fill=True,facecolor='white',thickness=1)
-              c4 = circle((5,0),0.1,fill=True,facecolor='blue', thickness=1)
-              c5 = circle((7,2),0.1,fill=True,facecolor='white',thickness=1)
-              c6 = circle((8,2),0.1,fill=True,facecolor='blue',thickness=1)
-              p1+p2+p3+c1+c2+c3+c4+c5+c6
-            </sageplot>
-          </image>
-          <caption> The graph of <m>f(x)</m>.</caption>
-        </figure> 
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-LT4-piecewise1">
+            <xi:include href="prefigure/LT3-piecewise1.xml"/>
+          </prefigure>
+        </image>
         <p>
           Give a list of <m>x</m>-values where <m>f(x)</m> is not continuous. Be prepared to defend your answer based on <xref ref="definition-continuity"/>.
         </p>

@@ -23,18 +23,15 @@
       Consider the familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>. This function represents the height of an object tossed  vertically straight up: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph and we can notice that the function changes from increasing to decreasing at this point.
     </p>
 
- <figure xml:id="height-function">
-    <image width="50%" xml:id="graph-parabolic-height-function">
-        <sageplot>
-            x = var('x')
-            f = -16*x^2+32*x+48
-            p = plot(f,(x,0,3), gridlines=True, axes_labels=('$t$','$s(t)$'), thickness=2, aspect_ratio = .05)
-            p
-        </sageplot>
-    </image>
-    <caption>The graph of <m>s(t) = -16t^2 + 32t + 48</m></caption>
-  </figure>
-    </example>
+     <figure xml:id="height-function">
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-AD4-parabola">
+                <xi:include href="prefigure/AD4-parabola.xml"/>
+            </prefigure>
+        </image>  
+        <caption>The graph of <m>s(t) = -16t^2 + 32t + 48</m></caption>
+    </figure>
+</example>
     
      <definition xml:id="defn-global-extrema">
       <statement>
@@ -81,17 +78,11 @@
 </introduction>
     <task>
         <statement>
-            <image width="25%">
-                <sageplot>
-                    x = var('x')
-                    f = sin(x)
-                    ticks = [[-pi/2, 0, pi/2, pi, 3*pi/2, 2*pi, 5*pi/2],[-1.5,-1,-0.5,0,0.5,1,1.5]]
-                    p = plot(f,(x,0,2*pi), xmin = -pi/2, xmax = 5*pi/2, ymin = -1.5, ymax=1.5, ticks=ticks, tick_formatter=[pi,None], thickness=2, gridlines=True, aspect_ratio=1.5)
-                    c1 = circle((0,0),0.05,fill=True)
-                    c2 = circle((2*pi,0),0.05,fill=True)
-                    p+c1+c2
-                </sageplot>
-            </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD4-graph1">
+                    <xi:include href="prefigure/AD4-graph1.xml"/>
+                </prefigure>
+            </image>  
         </statement>
         <answer>
             <p>
@@ -99,58 +90,42 @@
             </p>
         </answer>
     </task>
-    <task><statement>
-       <image width="25%">
-            <sageplot>
-                x=var('x')
-                f(x) = exp(-x) + 1
-                p = plot(f,(x,0,3), ymin = -1, ymax = 3, gridlines=True, thickness=2, aspect_ratio=1)
-                q = plot(4,(x,-1,4), ymin=-1, ymax=3, gridlines=True, thickness=2, aspect_ratio=1)
-                c1 = circle((0,f(0)), 0.05, fill=True)
-                c2 = circle((3,f(3)),0.05, fill=True)
-                p+c1+c2+q
-            </sageplot>
-       </image>
-    </statement>
+    <task>
+        <statement>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD4-graph2">
+                    <xi:include href="prefigure/AD4-graph2.xml"/>
+                </prefigure>
+            </image>  
+        </statement>
         <answer>
             <p>
                 The global maximum is at <m>x = 0</m> and the global minimum is at <m>x = 3</m>.
             </p>
         </answer>
     </task>
-<task><statement>
-       <image width="25%">
-            <sageplot>
-                x=var('x')
-                f(x) = -x^3+2*x^2
-                c1 = circle((-0.5,f(-0.5)),0.05,fill=True)
-                c2 = circle((2.2,f(2.2)),0.05,fill=True)
-                p = plot(f,(x,-0.5,2.2),ymin=-2,ymax=2,thickness=2,gridlines=True,aspect_ratio=1)
-                q = plot(3,(x,-1,3),ymin=-2,ymax=2,aspect_ratio=1)
-                c1+c2+p+q
-            </sageplot>
-       </image>
-    </statement>
+    <task>
+        <statement>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD4-graph3">
+                    <xi:include href="prefigure/AD4-graph3.xml"/>
+                </prefigure>
+            </image>  
+        </statement>
         <answer>
             <p>
-                The global maximum occurs at about <m>x = 1.25</m> and the global minimum occurs at about <m>x = 2.25</m>.
+                The global maximum occurs at about <m>x = 1</m> and the global minimum occurs at about <m>x = 1.75</m>.
             </p>
         </answer>
     </task>
-<task>
-   <statement>
-        <image width="25%">
-            <sageplot>
-                x=var('x')
-                f(x) = abs(-(x-1)^(1/3))
-                c1 = circle((0,f(0)),0.05,fill=True)
-                c2 = circle((3,f(3)),0.05,fill=True)
-                p = plot(f,(x,0,3),ymin=-1,ymax=2,thickness=2,gridlines=True,aspect_ratio=1)
-                q = plot(3,(x,-1,3.5),ymin=-1,ymax=2,aspect_ratio=1)
-                c1+c2+p+q
-            </sageplot>
-        </image>
-    </statement>
+    <task>
+        <statement>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AD4-graph4">
+                    <xi:include href="prefigure/AD4-graph4.xml"/>
+                </prefigure>
+            </image>  
+        </statement>
         <answer>
             <p>
                 The global maximum occurs at <m>x = 3</m> and the global minimum occurs at <m>x = 1</m>.

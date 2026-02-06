@@ -1,0 +1,36 @@
+<diagram dimensions="(300,500)" margins="25"  xmlns="https://prefigure.org" >
+  <coordinates bbox="(-1,0,5,10)" aspect-ratio="1">
+    <polygon at="rope" points="(1.5,3),(1.5,9),(3,9),(3,0)" stroke="black"/>
+    <group at="bucket">
+      <polygon  points="((1,1),(2,1),(1.8,0),(1.2,0))" closed="yes" stroke="blue"/>
+      <line endpoints="((1.8,0),(3.5,0))" stroke="red" dash="9 9"/>
+      <label anchor="(3.5,0)" alignment="east" scale="0.7"><m>h_1 = 0\ \text{m}</m></label>
+    </group>
+    <group at="h">
+      <line endpoints="((0.5,0),(0.5,2))" thickness="1" scale="0.7" rotate="-90" offset="(0,30)"><m>\Delta h = 5\ \text{m}</m></line>
+      <line endpoints="((0.4,0),(0.6,0))" thickness="1"/>
+      <line endpoints="((0.4,2),(0.6,2))" thickness="1"/>
+    </group>
+    <repeat at="r" parameter="k=1..4" annotate="yes" text="A series of dashed trapezoids representing the bucket being lifted">
+      <group at="buckets" annotate="yes" text="A dashed blue trapezoid representing the bucket being lifted. The bottom of the bucket is labeled h sub ${k+1} equals ${5*k} meters">
+        <polygon points="((1,2*k+1),(2,2*k+1),(1.8,2*k),(1.2,2*k))" closed="yes" stroke="blue" dash="5 5"/>
+        <line endpoints="((1.8,2*k),(3.5,2*k))" stroke="red" dash="9 9"/>
+        <label anchor="(3.5,2*k)" alignment="east" scale="0.7"><m>h_${k+1} = ${5*k}\ \text{m}</m></label>
+      </group>
+      <group at="hs" annotate="yes" text="A line segment showing the bucket has been lifted Delta h equals 5  more meters">
+        <line endpoints="((0.5,2*(k-1)),(0.5,2*(k)))" thickness="1" scale="0.7" rotate="-90" offset="(0,30)"><m>\Delta h = 5\ \text{m}</m></line>
+        <line endpoints="((0.4,2*(k-1)),(0.6,2*(k-1))" thickness="1"/>
+        <line endpoints="((0.4,2*k),(0.6,2*k))" thickness="1"/>
+      </group>
+    </repeat>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A diagram of a bucket being hoisted">
+      <annotation ref="bucket" text="A blue trapezoid representing a bucket. The bottom of the bucket is labeled h sub 1 equals 0 meters"/>
+      <annotation ref="h" text="A line segment showing the bucket has been lifted Delta h equals 5 meters"/>
+      <annotation ref="r"/>
+      <annotation ref="rope" text="A representation of the rope lifting the bucket"/>
+    </annotation>
+  </annotations>
+</diagram>

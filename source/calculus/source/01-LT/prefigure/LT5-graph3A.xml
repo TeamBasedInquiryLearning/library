@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=e^x</definition>
+  <definition>h=60</definition>
+  <coordinates bbox="(-4.1,-h,4.1,h)" >
+    <grid-axes hlabels="(-4,1,4)"/>
+    <label p="(0,h+5)">Graph A</label>
+    <graph at="f" function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="The function is flat, then slowly turns upward"/>
+    </annotation>
+  </annotations>
+</diagram>

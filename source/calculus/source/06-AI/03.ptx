@@ -18,10 +18,10 @@
 Consider the following visualization to decide which of these statements is most appropriate for
 describing the relationship of lengths and areas.
                 </p>
-                <image xml:id="AI3-length-area-relationship">
-                    <sageplot>
-<xi:include href="../sage/AI3-length-area-relationship.sage" parse="text" />
-                    </sageplot>
+                <image width="50%">
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-AI3-graph1">
+                        <xi:include href="prefigure/AI3-graph1.xml"/>
+                    </prefigure>
                 </image>
                 <ol marker="A.">
                     <li>Length is the integral of areas.</li>
@@ -39,10 +39,14 @@ We define the <term>volume</term> of a solid with cross sectional area given by 
 laying between <m>a\leq x\leq b</m> to be the definite integral
 <me>\mathrm{Volume}=\int_a^b A(x)\,dx</me>.
                 </p>
-                <image xml:id="AI3-volume-definition">
+                <image xml:id="AI3-volume-definition" width="90%">
                     <sageplot variant="3d" aspect="1.0">
 <xi:include href="../sage/AI3-volume-definition.sage" parse="text"/>
                     </sageplot>
+                    <description>
+                        <p>A three dimensional interactive showing a (half of a) circular cone, with a circular
+                            cross section.</p>
+                        </description>
                 </image>
             </statement> 
         </definition>
@@ -53,10 +57,10 @@ laying between <m>a\leq x\leq b</m> to be the definite integral
 We will be focused on the volumes of solids obtained by revolving a region around an axis.
 Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x^2</m>.
                 </p>
-                <image width="50%" xml:id="AI3-x0-y4-yx2">
-                    <sageplot>
-<xi:include href="../sage/AI3-x0-y4-yx2.sage" parse="text"/>
-                    </sageplot>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-AI3-graph2">
+                        <xi:include href="prefigure/AI3-graph2.xml"/>
+                    </prefigure>
                 </image>
             </introduction>
             <task>
@@ -64,10 +68,17 @@ Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a horizontal line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-x0-y4-yx2-revolution-1">
+                <image xml:id="AI3-x0-y4-yx2-revolution-1" width="90%">
                     <sageplot variant="3d" aspect="1.0">
 <xi:include href="../sage/AI3-x0-y4-yx2-revolution-1.sage" parse="text"/>
                     </sageplot>
+                <description>
+                    <p>A 3D interactive showing the solid region formed by rotating the region around the <m>y</m>-axis.  
+                        The parabola <m>y=x^2</m> is highlighted in red along the outside of the solid.
+                        A circular cross section is shown, with its radius also drawn in red, extending from
+                        the <m>y</m>-axis to the parabola.
+                    </p>
+                </description>
                 </image>
                 <ol marker="A.">
                     <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
@@ -92,10 +103,17 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a vertical line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-x0-y4-yx2-revolution-2">
+                <image xml:id="AI3-x0-y4-yx2-revolution-2" width="90%">
                     <sageplot variant="3d" aspect="1.0">
 <xi:include href="../sage/AI3-x0-y4-yx2-revolution-2.sage" parse="text"/>
                     </sageplot>
+                    <description>
+                        <p>A 3D interactive showing the solid region formed by rotating the region around the <m>y</m>-axis.  
+                            The parabola <m>y=x^2</m> is highlighted in red along the outside of the solid.
+                            A cylindrical cross section parallel to the <m>y</m>-axis is shownis shown, with its 
+                            height also drawn in red, extending from the parabola to the line <m>y=4</m>.
+                        </p>
+                    </description>
                 </image>
                 <ol marker="A.">
                     <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
@@ -120,10 +138,17 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a horizontal line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-x0-y4-yx2-revolution-3">
+                <image xml:id="AI3-x0-y4-yx2-revolution-3" width="90%">
                     <sageplot variant="3d" aspect="1.0">
 <xi:include href="../sage/AI3-x0-y4-yx2-revolution-3.sage" parse="text"/>
                     </sageplot>
+                    <description>
+                        <p>A 3D interactive showing the solid region formed by rotating the region around the <m>x</m>-axis.  
+                            The parabola <m>y=x^2</m> is highlighted in red along the outside of the solid.
+                            A cylindrical cross section parallel to the <m>x</m>-axis is shown, with its 
+                            height also drawn in red, extending from the <m>y</m>-axis to the parabola.
+                        </p>
+                    </description>
                 </image>
                 <ol marker="A.">
                     <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>
@@ -148,10 +173,17 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a vertical line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-x0-y4-yx2-revolution-4">
+                <image xml:id="AI3-x0-y4-yx2-revolution-4" width="90%">
                     <sageplot variant="3d" aspect="1.0">
 <xi:include href="../sage/AI3-x0-y4-yx2-revolution-4.sage" parse="text"/>
                     </sageplot>
+                    <description>
+                        <p>A 3D interactive showing the solid region formed by rotating the region around the <m>x</m>-axis.  
+                            The parabola <m>y=x^2</m> is highlighted in red along the outside of the solid.
+                            An annular cross section orthogonal to the <m>x</m>-axis is shown, with its 
+                            radial difference also drawn in red, extending from the parabola to the line <m>y=4</m>.
+                        </p>
+                    </description>
                 </image>
                 <ol marker="A.">
                     <li>Region is rotated around the <m>x</m>-axis; the cross-sectional area is determined by the line segment's <m>x</m>-value.</li>

@@ -1,0 +1,20 @@
+<diagram dimensions="(300,300)" margins="45" xmlns="https://prefigure.org">
+  <definition>f(t) = (t^2,t^3) </definition>
+  <definition>points=(f(1),f(4/3),f(5/3),f(2))</definition>
+  <coordinates bbox="(-0.1,-0.1,4.1,8.1)">
+    <grid-axes />
+    <parametric-curve at="f" function="f" domain="(1,2)"/>
+    <polygon at="L" points="points" stroke="red" dash="9 9"/>
+    <repeat at="r" parameter="p in points">
+      <point p="p" fill="blue" stroke="blue"/>
+    </repeat>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A curve in the plane and a line segment connecting its endpoints">
+      <annotation ref="f" sonify="yes" text="The parametric curve stretching from 1 comma 1 to 4 comma 8"/>
+      <annotation ref="L" text="A sequence of line segments connecting 1 comma 1 to 4 comma 8"/>
+      <annotation ref="r" text="Points defining the ends of the line segments"/>
+    </annotation>
+  </annotations>
+</diagram>

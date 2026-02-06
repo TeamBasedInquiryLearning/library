@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=sin(x)</definition>
+  <coordinates bbox="(-pi/2,-1.1,pi/2,1.1)">
+    <grid-axes h-pi-format="yes" hlabels="(-pi/2,pi/4,pi/2)"/>
+    <graph function="f"/>
+    <label p="(0,1.2)"><m>y=\sin(x)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of sine of x between -pi over 2 and pi over 2">
+      <annotation ref="f" sonify="yes" text="A curve beginning -pi over 2 comma -1, sloping up through the origin, and ending at pi over 2 comma 1"/>
+    </annotation>
+  </annotations>
+</diagram>

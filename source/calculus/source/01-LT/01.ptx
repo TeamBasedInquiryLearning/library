@@ -18,15 +18,10 @@
                 In <xref ref="limit_censored" /> the graph of a function is given, but something is wrong. The graphic card failed and one portion did not render properly. We can’t see what is happening in the neighborhood of <m>x=2</m>. 
             </p>
             <figure xml:id="limit_censored">
-                <image width="50%">
-                    <sageplot>
-x = var('x')
-f(x) = -x^3+5*x^2-5.5*x
-p = plot(f,(x,-1,3.5),ymin=-2,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-q = line([(2,0.1),(2,3)],thickness=10,color='black')
-sh = p+q
-sh
-                    </sageplot>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-LT1-graph-obscured">
+                        <xi:include href="prefigure/LT1-graph-obscured.xml"/>
+                    </prefigure>
                 </image>
                 <caption>A graph of a function that has not been rendered properly.</caption>
             </figure>
@@ -78,15 +73,10 @@ sh
                 In <xref ref="limit_uncensored" /> the graphic card is working again and we can see more clearly what is happening in the neighborhood of <m>x=2</m>. 
             </p>
             <figure xml:id="limit_uncensored">
-                <image width="50%">
-                    <sageplot>
-                        x = var('x')
-                        f(x) = -x^3+5*x^2-5.5*x
-                        p = plot(f,(x,-1,3.5),ymin=-2,ymax=3, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-                        q = circle((2,1), .1,thickness=2, fill=True, facecolor="white")
-                        sh=p+q
-                        sh
-                    </sageplot>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-LT1-graph-hole">
+                        <xi:include href="prefigure/LT1-graph-hole.xml"/>
+                    </prefigure>
                 </image>
                 <caption>A graph of a function that has rendered properly</caption>
             </figure>
@@ -182,23 +172,13 @@ sh
                 
             </p>
             <figure xml:id="limit-left-and-right">
-                <image width="50%">
-                    <sageplot>
-                        x = var('x')
-                        f(x) = piecewise([((-3,-0.05),-1),((0.05,3),1)])
-                        p = plot(f,(x,-3,3),ymin=-2,ymax=2, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2)
-                        q = circle((0,-1), .1,thickness=1, fill=True, facecolor="white")
-                        r = circle((0,1), .1,thickness=1, fill=True, facecolor="white")
-                        s = circle((0,0), .1,thickness=1, fill=True, facecolor="blue")
-                        sh = p+q+r+s
-                        sh
-                    </sageplot>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-LT1-graph-step">
+                        <xi:include href="prefigure/LT1-graph-step.xml"/>
+                    </prefigure>
                 </image>
                 <caption>A piecewise-defined function</caption>
             </figure>
-            <!-- 
-            
-            -->
         </introduction>
      <task>
         <statement>
@@ -291,17 +271,10 @@ sh
              Consider the following graph: 
             </p>
             <figure xml:id="limits-one-sided-fluency">
-                <image width="50%">
-                    <sageplot>
-                        x=var('x')
-                        f(x) = piecewise([((-7,-1),-0.5*x+1.5),((-0.95,1.95),1/(x+1)),((1.96,7),-3*cos(pi*x))])
-                        c1 = circle((-1,2), 0.1,thickness=1,fill=True, facecolor="white")
-                        c2 = circle((2,1/3),0.1,thickness=1,fill=True, facecolor="white")
-                        c3 = circle((2,-3),0.1,thickness=1, fill=True, facecolor="blue")
-                        p=plot(f, (x,-7,7), ymin=-4, ymax=6, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2)
-                        sh=p+c1+c2+c3
-                        sh
-                    </sageplot> 
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-LT1-graph-piecewise">
+                        <xi:include href="prefigure/LT1-graph-piecewise.xml"/>
+                    </prefigure>
                 </image>
                 <caption>Another piecewise-defined function</caption>
             </figure>
@@ -427,20 +400,9 @@ sh
                 <p> Let’s see an example of the application of this theorem. First examine the following picture. Explain why, from the picture, it seems that both assumptions of the theorem hold. </p>
                 <figure xml:id="squeeze">
                     <image>
-                        <sageplot>
-                            x=var('x')
-                            h(x) = 1
-                            g(x) = cos(0.5*x)
-                            f(x) = cos(x)
-                            p1=plot(f, (x,-pi,pi), ymin=-1.5, ymax=1.5, gridlines=True, axes_labels=('$x$',''), thickness=2, color="blue")
-                            p2=plot(g, (x,-pi,pi), ymin=-1.5, ymax=1.5, gridlines=True, axes_labels=('$x$',''), thickness=2, color="red")
-                            p3=plot(h, (x,-pi,pi), ymin=-1.5, ymax=1.5, gridlines=True, axes_labels=('$x$',''), thickness=2, color="green")
-                            label1 = text('$h(x)$', (2,1.25), color="green", fontsize="xx-large")
-                            label2 = text('$g(x)$', (2,.75), color = "red", fontsize="xx-large")
-                            label3 = text('$f(x)$', (2,-.75),color = "blue", fontsize="xx-large")
-                            sh = p1+p2+p3+label1+label2+label3
-                            sh
-                        </sageplot>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT1-squeeze">
+                            <xi:include href="prefigure/LT1-squeeze.xml"/>
+                        </prefigure>
                     </image>
                 <caption>A pictorial example of the Squeeze Theorem.</caption>
             </figure>

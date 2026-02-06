@@ -22,14 +22,11 @@
                     We want to think about what the long term behavior of this function might be.
                     Which of the following best describes its behavior?
                 </p>
-
                 <figure>
-                    <image width="50%" xml:id="LT5-infinity-intuition1-img">
-                        <sageplot>
-                            x = var('x')
-                            f = x^3
-                            plot(f,(x,-4,4),ymin=-60,ymax=60,gridlines=False, axes_labels=('$x$','$f(x)$'),thickness=2, aspect_ratio=0.05)
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph1">
+                            <xi:include href="prefigure/LT5-graph1.xml"/>
+                        </prefigure>
                     </image>
                     <caption> The graph of <m>x^3</m>.</caption>
                 </figure>
@@ -87,14 +84,10 @@
                 </p>
 
                 <figure>
-                    <image width="50%" xml:id="LT5-infinity-intuition2-img">
-                        <sageplot>
-                            x = var('x')
-                            f = 1/x^3
-                            p1 = plot(f,(x,-2,-0.05),ymin=-60,ymax=60,gridlines=False, axes_labels=('$x$','$f(x)$'),thickness=2, aspect_ratio=0.025)
-                            p2 = plot(f,(x,0.05,2),ymin=-60,ymax=60,gridlines=False, axes_labels=('$x$','$f(x)$'),thickness=2, aspect_ratio=0.025)
-                            p1+p2
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph2">
+                            <xi:include href="prefigure/LT5-graph2.xml"/>
+                        </prefigure>
                     </image>
                     <caption> The graph of <m>1/x^3</m>.</caption>
                 </figure>
@@ -175,85 +168,42 @@
                     Which of the following functions have horizontal asymptotes? Select all! <!-- TO-DO make the graphs prettier-->
                 </p>
 
-                <sidebyside>
-                    <figure>
-                        <image xml:id="graph-horizontal-asymptotes-1">
-                            <sageplot>
-                                x = var('x')
-                                f = exp(x)
-                                p1 = plot(f, (x,-4,4),gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.1)
-                                p1
-                            </sageplot>
+                <sbsgroup>
+                    <sidebyside>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph3A">
+                                <xi:include href="prefigure/LT5-graph3A.xml"/>
+                            </prefigure>
                         </image>
-                        <caption>A</caption>
-                    </figure>
-
-                    <figure>
-                        <image xml:id="graph-horizontal-asymptotes-2">
-                            <sageplot>
-                                x = var('x')
-                                f = ln(x)
-                                p1 = plot(f, (x,0.05,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=1)
-                                p1
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph3B">
+                                <xi:include href="prefigure/LT5-graph3B.xml"/>
+                            </prefigure>
                         </image>
-                        <caption>B</caption>
-                    </figure>
-
-                    <figure>
-                        <image xml:id="graph-horizontal-asymptotes-3">
-                            <sageplot>
-                                x = var('x')
-                                f = -1/x
-                                p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
-                                p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
-                                p1+p2
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graphC">
+                                <xi:include href="prefigure/LT5-graph3C.xml"/>
+                            </prefigure>
                         </image>
-                        <caption>C</caption>
-                    </figure>
-                </sidebyside>
-
-                <sidebyside>
-                    <figure>
-                        <image xml:id="graph-horizontal-asymptotes-4">
-                            <sageplot>
-                                x = var('x')
-                                f = (.5*x+1)/(x-1)
-                                p1 = plot(f,(x,-5,0.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
-                                p2 = plot(f,(x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
-                                p1+p2
-                            </sageplot>
+                    </sidebyside>
+                    <sidebyside>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph3D">
+                                <xi:include href="prefigure/LT5-graph3D.xml"/>
+                            </prefigure>
                         </image>
-                        <caption>D</caption>
-                    </figure>
-
-                    <figure>
-                        <image xml:id="graph-horizontal-asymptotes-5">
-                            <sageplot>
-                                x = var('x')
-                                f = (exp(x)+1)/(exp(x)-1)
-                                p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                p1+p2
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph3E">
+                                <xi:include href="prefigure/LT5-graph3E.xml"/>
+                            </prefigure>
                         </image>
-                        <caption>E</caption>
-                    </figure>
-
-                    <figure>
-                        <image xml:id="graph-horizontal-asymptotes-6">
-                            <sageplot>
-                                x = var('x')
-                                f = (x^2+1)/(x-1)
-                                p1 = plot(f, (x,-5,.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                p2 = plot(f, (x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                p1+p2
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graphF">
+                                <xi:include href="prefigure/LT5-graph3F.xml"/>
+                            </prefigure>
                         </image>
-                        <caption>F</caption>
-                    </figure>
-                </sidebyside>
+                    </sidebyside>
+                </sbsgroup>
             </introduction>
         </activity>
 
@@ -504,13 +454,10 @@
                 </p>
 
                 <figure>
-                    <image width="50%" xml:id="graph-limit-guess">
-                        <sageplot>
-                            x = var('x')
-                            f(x) = sin(x)
-                            p = plot(f, (x,-10,10), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=7)
-                            p
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph-periodic">
+                            <xi:include href="prefigure/LT5-graph-periodic.xml"/>
+                        </prefigure>
                     </image>
                     <caption> A mysterious periodic function.</caption>
                 </figure>
@@ -614,15 +561,10 @@
                 </p>
 
                 <figure>
-                    <image width="50%" xml:id="graph-rational-function">
-                        <sageplot>
-                            x = var('x')
-                            f = 2*(x+3)*(x+1)/(x^2-2*x-3)
-                            p1 = plot(f, (x,-10,2.9), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-                            p2 = plot(f, (x,3.1, 10), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-                            c = circle((-1,-1), 0.2, fill=True, facecolor="white",thickness=1)
-                            p1+p2+c
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT5-graph-rational">
+                            <xi:include href="prefigure/LT5-graph-rational.xml"/>
+                        </prefigure>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>

@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) = sqrt(x)</definition>
+  <coordinates bbox="(-0.1,-0.5,6.1,2.75)">
+    <grid-axes spacings = "((0,1,36),(0,0.5,3))"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at the origin and increasing in a concave down shape"/>
+    </annotation>
+  </annotations>
+</diagram>

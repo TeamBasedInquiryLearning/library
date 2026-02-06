@@ -1,0 +1,23 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-1,-5,5,7)">
+    <definition>f(x) = (x-1)^3-3*(x-1)^2 + 5</definition>
+    <definition>g(x) = x - 5 </definition>
+    <area-between-curves at="cross section" functions="(f,g)" domain="(0,4)" stroke="none"/>
+    
+    <axes axes="horizontal" arrows="1" decorations="no" xlabel="x"/>
+
+    <group at="rectangle">
+      <rectangle lower-left="(2,-3)" dimensions="(0.2,6)" fill="blue" opacity="0.4"/>
+      <label anchor="(2,-3)" alignment="south" scale="0.7" offset="(5,0)"><m>\Delta x</m></label>
+      <label anchor="(2,0)" alignment="northwest" scale="0.7" ><m>x_i</m></label>
+    </group>
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a solid with a slice">
+      <annotation ref="cross-section" text="A cross section of a solid oriented orthogonal to the x axis"/>
+      <annotation ref="rectangle" text="A rectangle representing a slice of the cross section. It's width is labeled Delta x and it is located at x sub i along the x axis."/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,36 @@
+<diagram dimensions="(600,300)" margins="45" xmlns="https://prefigure.org">
+  <definition>f(x) = 4*0.8^(x+1) </definition>
+  <definition>g(x) = 4*0.7^(x+1)</definition>
+  <coordinates bbox="(0,0,16,4)">
+    <axes decorations="no" arrows="1">
+      <xlabel alignment="east"><m>x</m></xlabel>
+      <ylabel alignment="north"><m>y</m></ylabel>
+    </axes>
+    <riemann-sum at="f" function="f" N="5" domain="(0,5)" stroke="blue" fill="blue" fill-opacity="0.3"/>
+    <riemann-sum at="g" function="g" N="5" domain="(0,5)" fill="red" fill-opacity="0.3"/>
+
+    <riemann-sum at="f2" function="g" N="5" domain="(9,14)" stroke="blue" fill="blue" fill-opacity="0.3"/>
+    <riemann-sum at="g2" function="f" N="5" domain="(9,14)" fill="red" fill-opacity="0.3"/>
+
+    <repeat parameter="k=0..2">
+      <label anchor="(k+1,f(k))" alignment="east" color="blue"> <m>a_${k}</m></label>
+      <label anchor="(k+1,g(k))" alignment="east" color="red"> <m>b_${k}</m></label>
+    </repeat>
+    <repeat parameter="k=0..2">
+      <label anchor="(k+10,f(k+9))" alignment="north" color="red"> <m>b_{${k+100}}</m></label>
+      <label anchor="(k+10,g(k+9))" alignment="north" color="blue"> <m>a_{${k+100}}</m></label>
+    </repeat>
+    <tick-mark location="(9,0)"> <m>100</m></tick-mark>
+    <label anchor="(7,0.25)" ><m>\ldots</m></label>
+    <label anchor="(15,0)" alignment="north"><m>\ldots</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Two pairs of sequences of rectangles of decreasing heights, separated by ellilpses">
+      <annotation ref="f" text="A sequence of rectangles of descending height, colored blue.  The first few heights are labeled a sub 0, a sub 1, a sub 2, and a sub 3."/>
+      <annotation ref="g" text="A sequence of rectangles of descending height, colored red, each of which is nested inside the corresponding blue rectangle but shorter.  The first few heights are labeled b sub 0, b sub 1, b sub2, and b sub 3."/>
+      <annotation ref="g2" text="A sequence of rectangles of descending height, colored red.  The first few heights are labeled b sub 100, b sub 101, and b sub 102."/>
+      <annotation ref="f2" text="A sequence of rectangles of descending height, colored blue, each of which is nested inside the corresponding red rectangle but shorter.  The first few heights are labeled a sub 100, a sub 101, and a sub 102."/>
+    </annotation>
+  </annotations>
+</diagram>

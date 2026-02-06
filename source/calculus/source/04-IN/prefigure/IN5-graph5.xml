@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) = cos(x)</definition>
+  <coordinates bbox="(-pi/2-0.1,-1.1,pi+0.1,1.1)">
+    <grid-axes  h-pi-format="yes"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="The cosine curve beginning at -pi over 2 comma 0, increasing to a maximum at 0 comma 1, and then decreasing to pi comma -1"/>
+    </annotation>
+  </annotations>
+</diagram>

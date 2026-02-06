@@ -1,0 +1,17 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition> f(x) = -2*x^3+3*x^2</definition>
+  <coordinates bbox="(-1.1,-2.1,2.1,2.1)">
+    <grid-axes spacings="((-1,0.25,3),(-2,0.25,4))"/>
+    <group at="f">
+      <graph function="f" domain="(-0.25,1.75)"/>
+      <point p="(-0.25,f(-0.25))" fill="blue" stroke="blue"/>
+      <point p="(1.75,f(1.75))" fill="blue" stroke="blue"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at -0.25 comma approximately 0.25 and decreasing to the origin, then increasing to a  1 comma 1, then decreasing to the point 1.75 comma -1.5. The ends of the curve have filled dots"/>
+    </annotation>
+  </annotations>
+</diagram>

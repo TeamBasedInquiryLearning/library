@@ -1,0 +1,24 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f1(x)=1/2*x</definition>
+  <definition>f2(x)=2^x</definition>
+  <definition>f3(x)=1/2*x+3</definition>
+  <coordinates bbox="(-6.1,-3.1,6.1,6.1)">
+    <grid-axes />
+    <label p="(0,6.6)"><m>g(x)</m></label>
+    <graph at="f1" function="f1" stroke="blue" domain="(-6,0)"/>
+    <graph at="f2" function="f2" stroke="blue" domain="(0,2)"/>
+    <graph at="f3" function="f3" stroke="blue" domain="(2,6)"/>
+    <point at="hole1" p="(0,0)" stroke="blue" fill="white"/>
+    <point at="p1" p="(0,1)" stroke="blue" fill="blue"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the piece-wise function g of x consisting of three pieces">
+      <annotation ref="f1" sonify="yes" text="The left-most piece of g increases linearly towards the point 0 comma 0"/>
+      <annotation ref="hole1" text="An open circle representing a hole in the graph at 0 comma 0"/>
+      <annotation ref="p1" text="A filled circle at 0 comma 1"/>
+      <annotation ref="f2" sonify="yes" text="The middle piece of g curves upward from 0 comma 1 to 2 comma 4"/>
+      <annotation ref="f3" sonify="yes" text="The right-most piece of g increases linearly from 2 comma 4"/>
+    </annotation>
+  </annotations>
+</diagram>

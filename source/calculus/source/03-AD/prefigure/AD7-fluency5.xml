@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x) = x/sqrt(x^2+2) </definition>
+  <coordinates bbox="(-5.1,-1.5,5.1,1.5)">
+    <grid-axes  />
+    <graph at="f" function="f" />
+    <group ref="asymptotes">
+      <line at="L1" endpoints="((-1,-1),(1,-1))" dash="9 9" stroke="red" infinite="yes"/>
+      <line at="L2" endpoints="((-1,1),(1,1))" dash="9 9" stroke="red" infinite="yes"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve increasing from the horizontal asymptote y equals -1 passing through the origin and then approaching the horizontal asymptote y equals 1"/>
+      <annotation ref="asymptotes" text="The asymptotes of the function">
+        <annotation ref="L1" text="The horizontal asymptote y equals -1"/>
+        <annotation ref="L2" text="The horizontal asymptote y equals 1"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

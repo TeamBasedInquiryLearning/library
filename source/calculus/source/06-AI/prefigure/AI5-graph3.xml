@@ -1,0 +1,28 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-10,0,17.1,20.1)">
+
+    <group at="h1">
+      <line endpoints="((-7,0),(-7,20))" rotate="-90" offset="(0,20)"><m>20\ \text{m}</m></line>
+      <line endpoints="((-7.4,0),(-6.6,0))"/>
+      <line endpoints="((-7.4,20),(-6.6,20))"/>
+    </group> 
+    <group at="h2">
+      <line endpoints="((11,10),(11,11))" rotate="-90" offset="(-6,-40)"><m>\Delta h\  \text{m}</m></line>
+      <line endpoints="((10.6,10),(11.4,10))"/>
+      <line endpoints="((10.6,11),(11.4,11))"/>
+    </group> 
+    <rectangle lower-left="(0,0)" dimensions="(10,20)"  stroke="black"/>
+    <rectangle lower-left="(0,10)" dimensions="(10,1)" fill="blue" fill-opacity="50%" stroke="black"/>
+    <label anchor="(0,10)" alignment="west" scale="0.7"><m>h_i</m></label>
+
+    
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A rectangle with a horizontal slice">
+      <annotation ref="r" text="A rectangle twice as tall as it is wide, with a horizontal slice at height h sub i"/>
+      <annotation ref="h1" text="A vertical bar showing the height of the rectangle to be 20 meters"/>
+      <annotation ref="h2" text="A vertical bar showing the thickness of the slice to be delta h meters"/>
+    </annotation>
+  </annotations>
+</diagram>

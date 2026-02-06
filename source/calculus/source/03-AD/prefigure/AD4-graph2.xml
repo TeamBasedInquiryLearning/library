@@ -1,0 +1,17 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition> f(x) = e^(-x)+1</definition>
+  <coordinates bbox="(-0.1,-1.1,3.1,2.6)">
+    <grid-axes />
+    <group at="f">
+      <graph function="f" domain="(0,3)"/>
+      <point p="(0,f(0))" fill="blue" stroke="blue"/>
+      <point p="(3,f(3))" fill="blue" stroke="blue"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at 0 comma 2 and decreasing to a point just above 3 comma 1. The ends of the curve have filled dots"/>
+    </annotation>
+  </annotations>
+</diagram>

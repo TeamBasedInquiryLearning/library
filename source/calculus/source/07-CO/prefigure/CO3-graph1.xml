@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="45" xmlns="https://prefigure.org">
+  <definition>f(t) = (t^2,t^3) </definition>
+  <coordinates bbox="(-0.1,-0.1,4.1,8.1)">
+    <grid-axes />
+    <parametric-curve at="f" function="f" domain="(1,2)"/>
+    <line at="L" endpoints="f(1),f(2)" stroke="red" dash="9 9"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A curve in the plane and a line segment connecting its endpoints">
+      <annotation ref="f" sonify="yes" text="The parametric curve stretching from 1 comma 1 to 4 comma 8"/>
+      <annotation ref="L" text="A line segment connecting 1 comma 1 and 4 comma 8"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="30"  xmlns="https://prefigure.org">
+  <definition>f(x)=sin(1/x)</definition>
+  <coordinates bbox="(-1.1,-1.1,1.1,1.1)">
+    <grid-axes />
+    <graph at="f" function="f" stroke="blue" N="10000"/>
+    <label p="(0,1.2)"><m>f(x)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the function f of x">
+      <annotation ref="f" sonify="yes" text="The function f of x, oscillating rapidly between -1 and 1 as the graph approaches 0"/>
+    </annotation>
+  </annotations>
+</diagram>

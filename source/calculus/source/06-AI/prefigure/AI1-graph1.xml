@@ -1,0 +1,19 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>f1(x)=1</definition>
+  <definition>f2(x)=4</definition>
+  <definition>f3(x)=2</definition>
+  <coordinates bbox="(-0.1,-0.1,8.1,4.1)">
+    <grid-axes/>
+    <group at="f">
+      <graph function="f1" domain="(0,3)"/>
+      <graph function="f2" domain="(3,6)"/>
+      <graph function="f3" domain="(6,8)"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A piecewise linear function">
+      <annotation ref="f" sonify="yes" text="A function consisting of three horizontal pieces at heights 1, 4, and 2, respectively"/>
+    </annotation>
+  </annotations>
+</diagram>

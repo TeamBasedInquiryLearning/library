@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)= (cos(x)/(1+(sin(x))^2),(cos(x)*sin(x))/(1+(sin(x))^2))</definition>
+  <definition>h=1</definition>
+  <coordinates bbox="(-h-0.1,-h-0.1,h+0.1,h+0.1)">
+    <grid-axes hlabels="(-h,0.5,h)" vlabels="(-h,0.5,h)"/>
+    <parametric-curve function="f" domain="(0,2*pi)"
+                      N="1000" closed="yes"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A lemniscate curve">
+      <annotation ref="f" sonify="yes" text="A closed curve consisting of two symmetric loops extending left and right of the origin, where they meet"/>"
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition> f(x) = sin(x)</definition>
+  <coordinates bbox="(-0.1,-1.1,2*pi+0.1,1.1)">
+    <grid-axes h-pi-format="yes"/>
+    <graph at="f" function="f" domain="(0,2*pi)"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at the origin and increasing until pi over 2 comma 1, then decreasing until the point 3 pi over 2 comma -1, then increasing again to the point 2 pi comma 0"/>
+    </annotation>
+  </annotations>
+</diagram>

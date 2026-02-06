@@ -213,23 +213,15 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                 </p>
                 <figure>
                     <sidebyside widths="50% 50%">
-                        <image xml:id="graph-df-inv-img1">
-                            <sageplot>
-                                x = var('x')
-                                f = 0.6*x^3/(3*60^2)
-                                p = plot(f,(x,0,80), ymax = 25, gridlines=True,
-                                thickness=2,axes_labels=('$x$','$f(x)$'), aspect_ratio=3)
-                                p
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph1">
+                                <xi:include href="prefigure/DF8-graph1.xml"/>
+                            </prefigure>
                         </image>
-                        <image xml:id="graph-df-inv-img2">
-                            <sageplot>
-                                x = var('x')
-                                f = 0.6*x^2/60^2
-                                p = plot(f,(x,0,80), ymax = 1.2, gridlines=True, thickness=2,
-                                axes_labels=('$x$',"$f'(x)$"), aspect_ratio = 65)
-                                p
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph1-deriv">
+                                <xi:include href="prefigure/DF8-graph1-deriv.xml"/>
+                            </prefigure>
                         </image>
                     </sidebyside>
                     <caption>The graphs of <m> f(x)</m> and <m> f'(x)</m>.</caption>
@@ -472,45 +464,26 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                     </p>
                     <figure>
                         <sidebyside widths="50% 50%">
-                            <image>
-                                <sageplot>
-                                    x=var('x')
-                                    f = sin(x)
-                                    ticks = [pi/6, sorted({sin(a) for a in [-4*pi/6,-3*pi/6 ..
-                                    4*pi/6]})]
-                                    p = plot(f, (x,-pi/2,pi/2), ticks = ticks, tick_formatter=[pi,None],
-                                    thickness=2, axes_labels=('$x$','$y=\sin(x)$'),gridlines=False,
-                                    aspect_ratio=1.5)
-                                    p
-                                </sageplot>
-                            </image>
-                            <image xml:id="graph-invsin">
-                                <sageplot>
-                                    x = var('x')
-                                    ticks = [[-1,-0.75,-0.5,-0.25,0.25,0.5,0.75,1],[-pi/2, -pi/3, -pi/6,
-                                    pi/6, pi/3, pi/2]]
-                                    p = plot(2, (x,-1,1), ymin = -pi/2, ymax = pi/2, ticks=ticks,
-                                    tick_formatter=[None,pi], axes_labels=('$x$','$y$'),
-                                    gridlines=False, aspect_ratio = .6)
-                                    p
-                                </sageplot>
-                            </image>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph2">
+                                <xi:include href="prefigure/DF8-graph2.xml"/>
+                            </prefigure>
+                        </image>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph2-blank">
+                                <xi:include href="prefigure/DF8-graph2-blank.xml"/>
+                            </prefigure>
+                        </image>
                         </sidebyside>
                         <caption>The graphs of <m>\sin(x)</m> and a blank graph for
                             <m>\sin^{-1}(x)</m>.</caption>
                     </figure>
                 </statement>
                 <answer>
-                    <image xml:id="graph-invsin-ans" width="50%">
-                        <sageplot>
-                            x = var('x')
-                            ticks = [[-1,-0.75,-0.5,-0.25,0.25,0.5,0.75,1],[-pi/2, -pi/3, -pi/6,
-                            pi/6, pi/3, pi/2]]
-                            p = plot(asin(x), (x,-1,1), ymin = -pi/2, ymax = pi/2, ticks=ticks,
-                            tick_formatter=[None,pi], axes_labels=('$x$','$y$'), gridlines=False,
-                            aspect_ratio = .6)
-                            p
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph2-inverse">
+                            <xi:include href="prefigure/DF8-graph2-inverse.xml"/>
+                        </prefigure>
                     </image>
                 </answer>
             </task>
@@ -591,16 +564,10 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                             </cell>
                         </row>
                     </tabular>
-                    <image xml:id="graph-invcos-ans" width="50%">
-                        <sageplot>
-                            x = var('x')
-                            ticks = [[-1,-0.75,-0.5,-0.25,0.25,0.5,0.75,1],[0, pi/6, pi/3, pi/2,
-                            2*pi/3,5*pi/6, pi]]
-                            p = plot(acos(x), (x,-1,1), ymin = 0, ymax = pi, ticks=ticks,
-                            tick_formatter=[None,pi], axes_labels=('$x$','$y$'), gridlines=False,
-                            aspect_ratio = .6)
-                            p
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph3">
+                            <xi:include href="prefigure/DF8-graph3.xml"/>
+                        </prefigure>
                     </image>
                 </answer>
             </task>
@@ -681,16 +648,10 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                             </cell>
                         </row>
                     </tabular>
-                    <image xml:id="graph-invtan-ans" width="50%">
-                        <sageplot>
-                            x = var('x')
-                            ticks = [[-3, -2, -1, 0, 1, 2, 3],[-pi/2, -pi/3, -pi/6, 0, pi/6, pi/3,
-                            pi/2]]
-                            p = plot(atan(x), (x,-3,3), ymin = -pi/2+.01, ymax = pi/2-.01,
-                            ticks=ticks, tick_formatter=[None,pi], axes_labels=('$x$','$y$'),
-                            gridlines=False, aspect_ratio = 1)
-                            p
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph4">
+                            <xi:include href="prefigure/DF8-graph4.xml"/>
+                        </prefigure>
                     </image>
                 </answer>
             </task>
@@ -835,23 +796,15 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                     y</m> (in ml/km). You are given the graphs of <m>f(v), f'(v)</m> below. </p>
                 <figure>
                     <sidebyside widths="50% 50%">
-                        <image xml:id="graph-df-inv-img3">
-                            <sageplot>
-                                x = var('x')
-                                f = 0.6*x^3/(3*60^2)
-                                p = plot(f,(x,0,80), ymax = 25, gridlines=True,
-                                thickness=2,axes_labels=('$v$','$f(v)$'), aspect_ratio=3)
-                                p
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph5">
+                                <xi:include href="prefigure/DF8-graph5.xml"/>
+                            </prefigure>
                         </image>
-                        <image xml:id="graph-df-inv-img4">
-                            <sageplot>
-                                x = var('x')
-                                f = 0.6*x^2/60^2
-                                p = plot(f,(x,0,80), ymax = 1.2, gridlines=True, thickness=2,
-                                axes_labels=('$v$',"$f'(v)$"), aspect_ratio = 65)
-                                p
-                            </sageplot>
+                        <image>
+                            <prefigure xmlns="https://prefigure.org" label="prefigure-DF8-graph5-deriv">
+                                <xi:include href="prefigure/DF8-graph5-deriv.xml"/>
+                            </prefigure>
                         </image>
                     </sidebyside>
                     <caption>The graphs of <m> f(v)</m> and <m> f'(v)</m>.</caption>

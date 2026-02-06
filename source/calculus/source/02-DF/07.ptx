@@ -95,13 +95,10 @@
           derivative with respect <m>x</m> for this astroid? (Solve for <m>\dfrac{dy}{dx}</m>).
         </p>
         <figure xml:id="figure-derivative-implicit2">
-          <image width="70%">
-            <sageplot>
-              x = var('x')
-              p = parametric_plot((3*(cos(x))^3,3*(sin(x))^3), (x,0,2*pi),thickness=2,
-              axes_labels=('$x$','$y$'))
-              p
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-DF7-graph-implicit1">
+                <xi:include href="prefigure/DF7-graph-implicit1.xml"/>
+            </prefigure>
           </image>
           <caption>Graph of <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.</caption>
         </figure>
@@ -145,12 +142,10 @@
           derivative with respect <m>x</m> for this lemniscate? (Solve for <m>\dfrac{dy}{dx}</m>).
         </p>
         <figure xml:id="figure-derivative-implicit3">
-          <image width="70%">
-            <sageplot>
-              x = var('x')
-              p = parametric_plot((cos(x)/(1+(sin(x))^2),(cos(x)*sin(x))/(1+(sin(x))^2)),(x,0,2*pi),thickness=2,axes_labels=('$x$','$y$'))
-              p
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-DF7-graph-implicit2">
+                <xi:include href="prefigure/DF7-graph-implicit2.xml"/>
+            </prefigure>
           </image>
           <caption>Graph of <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.</caption>
         </figure>
@@ -244,19 +239,10 @@
           the diagonal line shown. The fence costs $20 per linear meter, and she has a budget of
           $900. </p>
         <figure xml:id="figure-chicken-coop">
-          <image width="50%">
-            <sageplot>
-              sq = polygon([(-1,-1),(-1,1),(1,1),(1,-1)], fill=False, axes=False,
-              color='black',thickness=2)
-              a = arc((1,1),1, sector=(pi,pi+.36),color='black')
-              tri = polygon([(-1,1),(-1,0.25),(1,1)],thickness=2,alpha = 0.5,
-              color='grey',edgecolor='black')
-              l = line([(-1,.25),(1,1)],color='black')
-              x1 = text('$x$', (1.1,0), fontsize=20, color='black')
-              x2 = text('$x$', (0,-1.1), fontsize=20, color='black')
-              y = text('$y$', (-.1,.8), fontsize=20, color='black')
-              sq+a+tri+x1+x2+y+l
-            </sageplot>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-DF7-diagram">
+                <xi:include href="prefigure/DF7-diagram.xml"/>
+            </prefigure>
           </image>
           <caption> A diagram of the chicken coop.</caption>
         </figure>
