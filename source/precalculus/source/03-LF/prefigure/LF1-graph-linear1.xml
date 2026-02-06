@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=3*x-4</definition>
+  <coordinates bbox="[-10,-10,10,10]">
+    <grid-axes spacings="(-10,1,10),(-10,1,10)"/>
+    <graph at="f" function="f"/>
+    <repeat parameter="x=-2..4">
+      <point at="p" p="(x,f(x))" annotate="yes" fill="blue" stroke="blue"
+             text="The point ${x} comma ${f(x)}"/>/>
+    </repeat>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a line">
+        <annotation ref="f" sonify="yes" text="A line sloping upwards 3 for every unit moved to the right"/>
+    </annotation>
+  </annotations>
+</diagram>

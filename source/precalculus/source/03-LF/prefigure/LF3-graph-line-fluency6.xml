@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=8</definition>
+  <definition>p1=(-6,3)</definition>
+  <definition>p2=(0,3)</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+    <group>
+    <line at="L" endpoints="(p1,p2)" stroke="blue" infinite="yes"/>
+    <point at="p1" p="p1" stroke="blue" fill="blue"/>
+     </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a point lying on a line">
+        <annotation ref="L"  text="A horizontal line"/>
+        <annotation ref="p1" text="The point -6 comma 3 lying on the line"/>
+    </annotation>
+  </annotations>
+</diagram>

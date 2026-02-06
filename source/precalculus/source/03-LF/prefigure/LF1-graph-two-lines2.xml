@@ -1,0 +1,22 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=1/2*x-1</definition>
+  <definition>g(x)=-1/2*x-1</definition>
+  <coordinates bbox="[-10,-10,10,10]">
+    <grid-axes spacings="(-10,1,10),(-10,1,10)"/>
+    <group>
+    <graph at="f" function="f"/>
+    <label anchor="(8,5)"  color="blue"><m>f(x)</m></label>
+    </group>
+    <group>
+    <graph at="g" function="g" stroke="green"/>
+    <label anchor="(-8,5)"  color="green"><m>g(x)</m></label>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of two lines">
+        <annotation ref="f" sonify="yes" text="A line labeled f of x sloping upwards 1 for every two units moved to the right"/>
+        <annotation ref="g" sonify="yes" text="A line labeled g of x sloping upwards 1 for every two units moved to the left"/>
+    </annotation>
+  </annotations>
+</diagram>
