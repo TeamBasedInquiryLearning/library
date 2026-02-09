@@ -1,0 +1,23 @@
+<diagram dimensions="(300,100)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=12</definition>
+  <definition>spacing=2</definition>
+  <coordinates bbox="(-width,-2,width,2)">
+    <axes axes="horizontal" arrows="2" hticks="(-width+spacing,spacing,width-spacing)" hlabels="(-width+spacing,spacing,width-spacing)"/>
+    <line at="L1" endpoints="((-2,-1.5),(-2,2))" stroke="red" dash="9 9"/>
+    <line at="L2" endpoints="((7,-1.5),(7,2))" stroke="red" dash="9 9"/>
+    <group>
+      <label at="l1" anchor="(-7,1)" font-size="30"><m>+</m></label>
+      <label at="l2" anchor="(2,1)" font-size="30"><m>-</m></label>
+      <label at="l3" anchor="(10,1)" font-size="30"><m>+</m></label>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A number line from -10 to 10 ">
+      <annotation ref="L1" text="A dashed vertical red line at -2"/>
+      <annotation ref="L2" text="A dashed vertical red line at 7"/>
+      <annotation ref="l1" text="A plus over the portion of the number line to the left of -2"/>
+      <annotation ref="l2" text="A minus over the portion of the number line between -2 and 7"/>
+      <annotation ref="l3" text="A plus over the portion of the number line to the right of 7"/>
+    </annotation>
+  </annotations>
+</diagram>
