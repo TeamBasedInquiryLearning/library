@@ -20,11 +20,9 @@
           <p>Use the graph of the quadratic function <m>f(x)=3(x-2)^2-4</m> to answer the questions below.</p>
         <figure width="100%" xml:id="PR1-quadratic">
           <image xml:id="PR1-quadratic-image">
-            <description>Quadratic function that opens upward</description>
-            <sageplot>
-              f(x) = (3*(x-2)^2-4)
-                p=plot(f, (x, -1, 5), ymin=-7, ymax=10, color='blue', thickness=3)
-            </sageplot>
+             <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola1">
+              <xi:include href="prefigure/PR1-graph-parabola1.xml"/>
+            </prefigure>
           </image>
         </figure>
         </introduction>
@@ -326,11 +324,9 @@
       <p>Use the graph of the quadratic function to answer the questions below.</p>
     <figure width="100%" xml:id="PR1-quadratic-function-2">
       <image xml:id="PR1-quadratic-image-2">
-        <description>Quadratic function that opens downward with vertex (-1,4)</description>
-        <sageplot>
-          f(x) = (-x^2-2*x+3)
-          p=plot(f, (x, -4, 2),  ymin=-1, ymax=5, color='blue', thickness=3)
-        </sageplot>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola2">
+          <xi:include href="prefigure/PR1-graph-parabola2.xml"/>
+        </prefigure>
       </image>
     </figure>
     </introduction>
@@ -375,38 +371,26 @@
       <sbsgroup>
         <sidebyside width="50%">
           <image>
-            <sageplot>
-              f(x) = -2*(x+3)^2+1
-              p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3) 
-              p+=text('Graph A', (0, 8), fontsize=18, color='black')
-              p
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola3">
+              <xi:include href="prefigure/PR1-graph-parabola3.xml"/>
+            </prefigure>
           </image>
           <image>
-            <sageplot>
-              f(x) = (x+3)^2+2
-              p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3)
-              p+=text('Graph B', (0, 8), fontsize=18, color='black')
-              p
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola4">
+              <xi:include href="prefigure/PR1-graph-parabola4.xml"/>
+            </prefigure>
           </image>
         </sidebyside>
         <sidebyside width="50%">
           <image>
-            <sageplot>
-              f(x) = 1*(x-2)^2-3
-              p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3)
-              p+=text('Graph C', (0, 8), fontsize=18, color='black')
-              p
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola5">
+              <xi:include href="prefigure/PR1-graph-parabola5.xml"/>
+            </prefigure>
           </image>
           <image>
-            <sageplot>
-              f(x) = -1*(x-2)^2+4
-              p=plot(f, (x, -7, 7), ymin=-7, ymax=7, color='blue', thickness=3)
-              p+=text('Graph D', (0, 8), fontsize=18, color='black')
-              p
-            </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola6">
+              <xi:include href="prefigure/PR1-graph-parabola6.xml"/>
+            </prefigure>
           </image>
         </sidebyside>
       </sbsgroup>
@@ -511,15 +495,11 @@
              </statement>
              <answer>
               <p> Note that this is just one possible sketch students might draw.
-                <figure width="100%" xml:id="possible-quadratic">
-                  <image xml:id="one-possible-quadratic">
-                    <description>A sketch of one possible quadratic that fits the criteria</description>
-                    <sageplot>
-                      f(x) = (-1*(x+2)^2+7)
-                        p=plot(f, (x, -8, 5), ymin=-7, ymax=10, color='blue', thickness=3)
-                    </sageplot>
-                  </image>
-                </figure>
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola7">
+                  <xi:include href="prefigure/PR1-graph-parabola7.xml"/>
+                </prefigure>
+              </image>
               </p>
              </answer>
         </task>
@@ -598,15 +578,11 @@
   <answer>
     <p>
       By graphing the two functions, students should be able to see that although <m>f(x)</m> and <m>g(x)</m> have the same vertex and axis of symmetry, they are different functions/graphs. The graph of <m>g(x)</m> is "skinnier."
-      <figure width="100%" xml:id="comparing-two-quadratic-graphs">
-        <image xml:id="comparing-f-and-g">
-          <sageplot>
-            f(x) = (x^2-4*x+20)
-            g(x) = (2*x^2-8*x+24)
-              p=plot(f, (x, -3, 7), ymin=-2, ymax=30, color='blue', thickness=3)+ plot(g, (x, -3, 7), ymin=-2, ymax=30, color='green', thickness=3)
-          </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-two-parabolas">
+            <xi:include href="prefigure/PR1-graph-two-parabolas.xml"/>
+          </prefigure>
         </image>
-      </figure>
     </p>
   </answer> 
   </task>
@@ -642,15 +618,11 @@
               <li> <p> <m>(-1,-4)</m>; minimum   </p> </li>
               <li> <p> <m>x=-1</m>   </p> </li>
               <li> 
-        <image xml:id="PR1-fluency-graph-1-image">
-          <sageplot>
-              f(x) = (x^2+2*x-3)
-              p=plot(f, (x, -6, 6), ymin=-5, ymax=20, color='blue', thickness=3)
-              for i in [-3..1]:
-                p+=point((i,f(i)),pointsize=50,color='blue')
-              p
-          </sageplot>
-        </image>
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola8">
+                  <xi:include href="prefigure/PR1-graph-parabola8.xml"/>
+                </prefigure>
+              </image>
        </li>
             </ol>
         </answer>
@@ -666,15 +638,11 @@
               <li> <p> <m>(3,20)</m>; maximum   </p> </li>
               <li> <p> <m>x=3</m>   </p> </li>
               <li> 
-        <image xml:id="PR1-fluency-graph-2-image">
-          <sageplot>
-              f(x) = (-5*(x-3)^2+20)
-              p=plot(f, (x, -1, 7), ymin=-5, ymax=30, color='blue', thickness=3)
-              for i in [1..5]:
-                p+=point((i,f(i)),pointsize=50,color='blue')
-              p
-          </sageplot>
-        </image>
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola9">
+                  <xi:include href="prefigure/PR1-graph-parabola9.xml"/>
+                </prefigure>
+              </image>
       </li>
             </ol>
         </answer>
@@ -690,15 +658,11 @@
                 <li> <p> <m>(-3,-5)</m>; minimum   </p> </li>
                 <li> <p> <m>x=-3</m>   </p> </li>
                 <li> 
-        <image xml:id="PR1-fluency-graph-3-image">
-          <sageplot>
-              f(x) = (5*x^2+30*x+40)
-              p=plot(f, (x, -6, 2), ymin=-10, ymax=30, color='blue', thickness=3)
-              for i in [-5..-1]:
-                p+=point((i,f(i)),pointsize=50,color='blue')
-              p
-          </sageplot>
-        </image>
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola10">
+                  <xi:include href="prefigure/PR1-graph-parabola10.xml"/>
+                </prefigure>
+              </image>
            </li>
               </ol>
           </answer>
@@ -714,15 +678,11 @@
                   <li> <p> <m>(-4,-3)</m>; minimum   </p> </li>
                   <li> <p> <m>x=-4</m>   </p> </li>
                   <li> 
-        <image xml:id="PR1-fluency-graph-4-image">
-          <sageplot>
-              f(x) = (2*(x+4)^2-3)
-              p=plot(f, (x, -8, 4), ymin=-5, ymax=30, color='blue', thickness=3)
-              for i in [-6..-2]:
-                p+=point((i,f(i)),pointsize=50,color='blue')
-              p
-          </sageplot>
-        </image> 
+              <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-parabola11">
+                  <xi:include href="prefigure/PR1-graph-parabola11.xml"/>
+                </prefigure>
+              </image>
  </li>
                 </ol>
             </answer>

@@ -373,20 +373,11 @@ https://activecalculus.org/prelude/sec-changing-composite.html#act-changing-comp
     <p>
 Let functions <m>p</m> and <m>q</m> be given by the graphs below. </p>
 
-<image>
-  <sageplot>
-    p=line([(-4,5), (-1,-1)],color="blue",thickness=3,aspect_ratio=1,xmin=-3.5,xmax=3.5,ymin=-3.5,ymax=3.5,gridlines=[[-4,-3,..,4],[-4,-3,..,4]])
-    p+=line([(-1,-1),(1,0)],color="blue",thickness=3)
-    p+=line([(1,0),(4,6)],color="blue",thickness=3)
-    p+=line([(-3,-4),(-1,2)],color="#080",thickness=3)
-    p+=line([(-1,2),(1,2)],color="#080",thickness=3)
-    p+=line([(1,2),(4,-1)],color="#080",thickness=3)
-    p+=text('$p(x)$', (-2, 3), fontsize=18, color='blue')
-    p+=text('$q(x)$', (3, 1), fontsize=18, color='#080')
-    p
-  </sageplot>
-</image>
-
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn5-graph-composition">
+        <xi:include href="prefigure/FN5-graph-composition.xml"/>
+      </prefigure>
+    </image>
       
   <p>
         Find each of the following. If something is not defined, explain why. 

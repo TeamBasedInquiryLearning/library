@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes/>
+    <group>
+      <spline at="f" points="((-3,-2),(-1,2),(0,1),(1,3))" t-values="(-3,-1.6,0,1)" stroke="blue"/>
+      <label anchor="(0,0)" alignment="north" color="blue"><m>f(x+1)</m></label>
+    </group> 
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A function that starts at -3 comma -2, increases to -1 comma 2, then decreases to 0 comma 1, then increases again to 1 comma 3"/>
+    </annotation>
+  </annotations>
+</diagram>

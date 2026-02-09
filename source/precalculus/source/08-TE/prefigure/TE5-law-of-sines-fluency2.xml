@@ -1,0 +1,24 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+<definition>A=(-2,0)</definition>
+<definition>B=(4,0)</definition>
+<definition>C=(0,3)</definition>
+  <coordinates bbox="(-3,-1,5,4)">
+    <line at="AC" endpoints="(A,C)" stroke="black" rotate="-68" offset="(0,25)" tactile-offset="(0,20)"><m>b=16</m></line>
+    <line at="BC" endpoints="(C,B)" stroke="black" rotate="50"  offset="(0,20)"><m>a=7</m></line>
+    <line at="AB" endpoints="(A,B)" stroke="black" offset="(0,-20)" tactile-offset="(0,-50)"><m>c</m></line>
+    <point p="A" alignment="southwest"><m>A</m></point>
+    <point p="B" alignment="east"><m>B</m></point>
+    <point p="C" alignment="north"><m>C</m></point>
+    <angle-marker at="alpha" points="(C,B,A)" thickness="1"><m>34^\circ</m></angle-marker>
+    <angle-marker at="beta" points="(B,A,C)" thickness="1"><m>30^\circ</m></angle-marker>
+  </coordinates>
+<annotations>
+  <annotation ref="figure" text="Triangle ABC">
+    <annotation ref="AC" text="The side from A to C is labeled b equals 16"/>
+    <annotation ref="BC" text="The side from B to C is labeled a equals 7"/>
+    <annotation ref="AB" text="The side from A to B is labeled c"/>
+    <annotation ref="alpha" text="Angle B is labeled 25 degrees"/>
+    <annotation ref="beta" text="Angle A is labeled 30 degrees"/>
+  </annotation>
+ </annotations>
+</diagram>

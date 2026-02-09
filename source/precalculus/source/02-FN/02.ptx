@@ -394,12 +394,10 @@
       <activity xml:id="activity-fn-graphical">
         <introduction>
           <p> Let <m>f(x)</m> be the function graphed below. 
-            <image>
-              <sageplot>
-                f(x) = (.5*(x-2)*(x-4)*(x+1)+1)
-                p=plot(f, (x, -3, 5.5), ymin=-6, ymax=12, color='blue', thickness=3, gridlines=[[-5,-4,..,6],[-5,-4,..,12]])                
-                p
-              </sageplot>
+                        <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn2">
+                <xi:include href="prefigure/FN2-graph.xml"/>
+              </prefigure>
             </image>
           </p>
         </introduction>

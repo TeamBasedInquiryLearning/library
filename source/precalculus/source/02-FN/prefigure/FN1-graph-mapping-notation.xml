@@ -1,0 +1,33 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(1,1,11,9)">
+    <ellipse at="e1" center="(3,5)" axes="(1.5,3)" fill="blue" fill-opacity="0.5"/>
+    <ellipse at="e2" center="(9,5)" axes="(1.5,3)" fill="blue" fill-opacity="0.5"/>
+    <label anchor="(3,8)" alignment="north">Input</label>
+    <label anchor="(9,8)" alignment="north">Output</label>
+    <group at="a1">
+      <label anchor="(3,6)"><m>2</m></label>
+      <line endpoints="((3,6),(9,4))" endpoint-offsets="((10,0),(-15,0))"  arrows="1"/>
+      <label anchor="(9,4)"><m>-1</m></label>
+    </group>
+    <group at="a2">
+      <label anchor="(3,5)"><m>3</m></label>
+      <line endpoints="((3,5),(9,6))" endpoint-offsets="((10,0),(-15,0))"  arrows="1"/>
+      <label anchor="(9,6)"><m>-8</m></label>
+    </group>
+    <group at="a3">
+      <label anchor="(3,4)"><m>4</m></label>
+      <line endpoints="((3,4),(9,5))" endpoint-offsets="((10,0),(-15,0))"  arrows="1"/>
+      <label anchor="(9,5)"><m>6</m></label>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="Two ellipses, with numbers in them, and arrows pointing from numbers
+                                    in the left ellipse to numbers in the right ellipse">
+      <annotation ref="e1" text="The ellipse on the left containing the numbers 2,3, and 4. The label above it says Input."/>
+      <annotation ref="e2" text="The ellipse on the right containing the numbers -8, 6, and -1. The label above it says Output"/>
+      <annotation ref="a1" text="An arrow pointing from 2 in the left ellipse to -1 in the right ellipse."/>
+      <annotation ref="a2" text="An arrow pointing from 3 in the left ellipse to -8 in the right ellipse."/>
+      <annotation ref="a3" text="An arrow pointing from 4 in the left ellipse to 6 in the right ellipse."/>
+    </annotation>
+  </annotations>
+</diagram>

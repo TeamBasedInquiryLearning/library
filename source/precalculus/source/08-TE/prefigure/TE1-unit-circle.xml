@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-1.1,-1.1,1.2,1.1)">
+    <axes vticks="(-1,1,1)" vlabels="(-1,1,1)" />
+    <circle center="(0,0)" radius="1" thickness="2" stroke="blue"/>
+    <point at="p" p="(1/sqrt(2),1/sqrt(2))" scale="0.8"><m>P=(x,y)</m></point>
+    <line at="l1" endpoints="((0,0),(1/sqrt(2),1/sqrt(2)))" scale="0.8"><m>1</m></line>
+    <line at="l2" endpoints="((0,0),(1/sqrt(2),0))" offset="(0,-15)" scale="0.8"><m>x</m></line>
+    <line at="l3" endpoints="((1/sqrt(2),0),(1/sqrt(2),1/sqrt(2)))" rotate="270" offset="(-5,-12)" scale="0.8"><m>y</m></line>
+  </coordinates>
+<annotations>
+    <annotation ref="figure" text="Diagram showing a point on the unit circle">
+      <annotation ref="p" text="A point on the unit circle"/>
+      <annotation ref="l1" text="A line from the origin to the point P"/>
+      <annotation ref="l2" text="A horizontal line along the x axis"/>
+      <annotation ref="l3" text="A vertical line from the x axis to P"/>
+    </annotation>
+  </annotations>
+</diagram>

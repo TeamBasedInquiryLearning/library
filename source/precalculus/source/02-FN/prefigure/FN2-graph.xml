@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x) = (.5*(x-2)*(x-4)*(x+1)+1)</definition>
+  <coordinates bbox="(-3,-5,5,11)">
+    <grid spacings="((-3,1,5),(-5,1,11))"/>
+    <axes hticks="(-3,1,5)" hlabels="(-3,1,5)" vticks="(-5,1,10)" />
+    <graph function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The coordinate plane with a graph">
+      <annotation ref="f" sonify="yes" text="The graph of a function"/>
+    </annotation>
+  </annotations>
+</diagram>

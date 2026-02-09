@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+    <coordinates bbox="(-5,-10,6,11)">
+    <grid-axes spacings="((-5,1,6),(-10,1,11))"/>
+    <spline at="f" points="(-4,4),(-1.6,4.9),(1.5,-4.75),(5,10)" stroke="blue"/>
+    <point at="p1" p="(-4,4)" fill="blue" stroke="blue"/>
+    <point at="p2" p="(5,10)" fill="blue" stroke="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The coordinate plane with a graph">
+      <annotation ref="f" sonify="yes" text="A function curving up then down then up again. Its left endpoint at -4 comma 4 is a solid dot. Its right endpoint at 5 comma 10 is a solid dot."/>
+    </annotation>
+  </annotations>
+</diagram>

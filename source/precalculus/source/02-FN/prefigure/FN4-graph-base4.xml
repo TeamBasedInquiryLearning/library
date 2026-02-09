@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition> f(x)=sqrt(x)</definition>
+  <coordinates bbox="(-1,-1,5,5)">
+    <grid-axes spacings="((-1,1,5),(-1,1,5))"/>
+    <group at="g">
+      <graph function="f"/>
+      <label anchor="(3,1)" color="blue"><m>f(x)=\sqrt{x}</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function labeled f of x equals the square root of x">
+      <annotation ref="f" text="A curve starting at 0 comma 0 and curving up and to the right in a concave down manner"/>
+     
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="20" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <definition>f(x)=-2*(x+3)^2+1</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    <grid-axes spacings="(-width,1,width),(-width,1,width)"/>
+      <axes >
+        <ylabel alignment="north">Graph A</ylabel>
+      </axes>
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a parabola labeled Graph A">
+        <annotation ref="f"  sonify="yes" text="A parabola that slopes up to the point -3 comma 2 and then slopes down"/>
+    </annotation>
+  </annotations>
+</diagram>
