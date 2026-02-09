@@ -31,12 +31,11 @@
       </introduction>
       <task>
         <statement>
-        <image width="50%">
-          <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(pi/2,reference_angle=pi/4,show_axes=False)
-          </sageplot>
-        </image>
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle1">
+                  <xi:include href="prefigure/TR1-angle1.xml"/>
+              </prefigure>
+          </image>
         <p>
           <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
@@ -53,12 +52,11 @@ TBIL.plot_angle(pi/2,reference_angle=pi/4,show_axes=False)
       </task>
       <task>
         <statement>
-        <image width="50%">
-          <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(pi,reference_angle=-pi/6,show_axes=False)
-          </sageplot>
-        </image>
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle2">
+                  <xi:include href="prefigure/TR1-angle2.xml"/>
+              </prefigure>
+          </image>
         <p>
           <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
@@ -75,12 +73,11 @@ TBIL.plot_angle(pi,reference_angle=-pi/6,show_axes=False)
       </task>
       <task>
         <statement>
-        <image width="50%">
-          <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(135*pi/180,reference_angle=pi/2,show_axes=False)
-          </sageplot>
-        </image>
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle3">
+                  <xi:include href="prefigure/TR1-angle3.xml"/>
+              </prefigure>
+          </image>
         <p>
           <ol marker="A." cols="4">
             <li><p><m>45^{\circ}</m> </p></li>
@@ -101,21 +98,19 @@ TBIL.plot_angle(135*pi/180,reference_angle=pi/2,show_axes=False)
         <p>
           An angle is in <term>standard position</term> if its vertex is located at the origin and its initial side extends along the positive <m>x</m>-axis. 
         </p>
-      <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(5*pi/4)
-        </sageplot>
-      </image>
-  <p>
-    An angle measured counterclockwise from the initial side has a positive measure, while an angle measured clockwise from the initial side has a negative measure. 
-  </p>
-<image width="50%">
-  <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(-3*pi/4)
-  </sageplot>
-</image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle4">
+                <xi:include href="prefigure/TR1-angle4.xml"/>
+            </prefigure>
+        </image>
+        <p>
+          An angle measured counterclockwise from the initial side has a positive measure, while an angle measured clockwise from the initial side has a negative measure. 
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle5">
+                <xi:include href="prefigure/TR1-angle5.xml"/>
+            </prefigure>
+        </image>
      </statement>
     </definition>
     
@@ -127,11 +122,10 @@ TBIL.plot_angle(-3*pi/4)
       </introduction>
       <task>
         <statement>
-        <image width="50%">
-          <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(pi/4)
-          </sageplot>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle6">
+                <xi:include href="prefigure/TR1-angle6.xml"/>
+            </prefigure>
         </image>
         <p>
           <ol marker="A." cols="4">
@@ -149,11 +143,10 @@ TBIL.plot_angle(pi/4)
       </task>
       <task>
         <statement>
-        <image width="50%">
-          <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(-pi)
-          </sageplot>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle7">
+                <xi:include href="prefigure/TR1-angle7.xml"/>
+            </prefigure>
         </image>
         <p>
           <ol marker="A." cols="4">
@@ -172,11 +165,10 @@ TBIL.plot_angle(-pi)
       </task>
       <task>
         <statement>
-        <image width="50%">
-          <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(-5*pi/6)
-          </sageplot>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle8">
+                <xi:include href="prefigure/TR1-angle8.xml"/>
+            </prefigure>
         </image>
         <p>
           <ol marker="A." cols="4">
@@ -197,12 +189,11 @@ TBIL.plot_angle(-5*pi/6)
          <p> Draw an angle of measure <m>-225^{\circ} </m> in standard position.
          </p></statement>
         <answer>
-          <image width="50%">
-            <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(-225*pi/180)
-            </sageplot>
-          </image>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-angle9">
+                <xi:include href="prefigure/TR1-angle9.xml"/>
+            </prefigure>
+        </image>
         </answer>
       </task>
     </activity>
@@ -223,13 +214,11 @@ TBIL.plot_angle(-225*pi/180)
           A <term>central angle</term> is an angle whose vertex is at the center of a circle.
         </p>
          
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(2*pi/3,show_unit_circle=True,show_angle_value=False,degree_labels=False)
-p
-  </sageplot> 
-</image>  
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-central-angle">
+                <xi:include href="prefigure/TR1-central-angle.xml"/>
+            </prefigure>
+        </image>
       </statement>
     </definition>
 
@@ -241,17 +230,12 @@ p
           One <term>radian</term> is the measure of a central angle of a circle that intersects an arc the same length as the radius.
         </p>
 
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR1-radian">
+                <xi:include href="prefigure/TR1-radian.xml"/>
+            </prefigure>
+        </image>
          
-<image width="50%">
-  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-p=TBIL.plot_angle(1,show_unit_circle=True,show_angle_value=True,degree_labels=False)
-p+=arc((0,0),1,sector=(0,1),color="blue",thickness=2)
-p+=text("$r$",(0.5,0.07),fontsize=20)
-p+=text("$r$",(0.87,0.6),fontsize=20)
-p
-  </sageplot> 
-</image>  
       </statement>
     </definition>
 

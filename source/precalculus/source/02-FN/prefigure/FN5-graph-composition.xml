@@ -1,0 +1,29 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes/>
+    <group at="p">
+      <path start="(-4,5)" stroke="blue">
+        <lineto point="(-1,-1)"/>
+        <lineto point="(1,0)"/>
+        <lineto point="(4,6)"/>
+      </path>
+      <label anchor="(3,3)" alignment="east" color="blue"><m>p(x)</m></label>
+    </group>
+    <group at="q">
+      <path start="(-3,-4)" stroke="green">
+        <lineto point="(-1,2)"/>
+        <lineto point="(1,2)"/>
+        <lineto point="(3,1)"/>
+      </path>
+      <label anchor="(3,0.5)" alignment="east" color="green"><m>q(x)</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of two piecewise linear functions labeled p of x and q of x">
+      <annotation ref="p" text="A function labeled p of x consisting of line segments from -3 comma 3 to -1 comma -1, to 1 comma 0, to 3 comma 4"/>
+      <annotation ref="q" text="A function labeled q of x consisting of line segments from -3 comma -4 to -1 comma 2, to 1 comma 2, to 3 comma 1"/>
+    </annotation>
+  </annotations>
+</diagram>

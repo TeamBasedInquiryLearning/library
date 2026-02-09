@@ -20,16 +20,9 @@
       For example, consider a point <m>P</m> on the unit circle, with coordinates <m>(x,y)</m>. If we draw a right triangle (as shown in the figure below), the Pythagorean Theorem says that <m>x^2+y^2=1</m>. 
       <figure xml:id="Deriving-Pythagorean-Identity">
         <image>
-          <sageplot>
-p=circle ((0,0), 1)
-p += line([(0,0),(.707,.707), (.707,0), (0,0)],thickness=3,color="black",ticks=[SR(1),SR(1)])
-p += text("$x$", (0.3,-0.1),color="black", fontsize=14)
-p += text("$y$", (.8, 0.4), color="black",fontsize=14)
-p += text("$P=(x,y)$", (.9, .8), color="black",fontsize=14)
-p += text("$1$", (.3, .4), color="black",fontsize=14)
-p.axes(True)
-p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-te1-unit-circle">
+                <xi:include href="prefigure/TE1-unit-circle.xml"/>
+            </prefigure>
         </image>
       </figure>
       But, remember, that the <m>x</m>-coordinate of the point corresponds to <m>\cos\theta</m> and the <m>y</m>-coordinate corresponds to <m>\sin\theta</m>. Thus, we get: <me>\sin^2\theta + \cos^2\theta = 1</me>. Pythagorean Identities are used in solving many trigonometric problems where one trigonometric ratio is given and we are expected to find the other trigonometric ratios. The next two activities will lead us to find the other two Pythagorean Identities.
@@ -290,42 +283,16 @@ p
         </p>
         <figure>
           <sidebyside widths="50% 50%">
-          <image>
-            <sageplot>
-beta=pi/8
-alpha=3*pi/4
-q=plot([],aspect_ratio=1,ticks=[[],[]])
-q+=circle((0,0),1,color="#ddd")
-q+=line([(0,0),(cos(beta),sin(beta))],color="blue",thickness=2)
-q+=arc((0,0),0.2,sector=(0,beta),color="black")
-q+=text(r"$\beta$", (0.3*cos(beta/2),0.3*sin(beta/2)),color="black",fontsize=14)
-q+=line([(0,0),(cos(alpha),sin(alpha))],color="blue",thickness=2)
-q+=arc((0,0),0.15,sector=(0,alpha),color="black")
-q+=text(r"$\alpha$", (0.2*cos(alpha/2),0.2*sin(alpha/2)),color="black",fontsize=14)
-q+=line([(cos(beta),sin(beta)),(cos(alpha),sin(alpha))],color="blue",thickness=2)
-q+=text(r"$P$",(1.1*cos(alpha),1.1*sin(alpha)),color="black",fontsize=14)
-q+=text(r"$Q$",(1.1*cos(beta),1.1*sin(beta)),color="black",fontsize=14)
-q+=text(r"$O$",(-0.1,-0.1),color="black",fontsize=14)
-q
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-beta=pi/8
-alpha=3*pi/4
-p=plot([],aspect_ratio=1,ticks=[[],[]])
-p+=circle((0,0),1,color="#ddd")
-p+=line([(0,0),(cos(0),sin(0))],color="blue",thickness=2)
-p+=line([(0,0),(cos(alpha-beta),sin(alpha-beta))],color="blue",thickness=2)
-p+=arc((0,0),0.1,sector=(0,alpha-beta),color="black")
-p+=text(r"$\alpha-\beta$", (0.15*cos((alpha-beta)/2)+0.1,0.15*sin((alpha-beta)/2)),color="black",fontsize=14)
-p+=line([(cos(alpha-beta),sin(alpha-beta)),(cos(0),sin(0))],color="blue",thickness=2)
-p+=text(r"$A$",(1.1*cos(alpha-beta),1.1*sin(alpha-beta)),color="black",fontsize=14)
-p+=text(r"$B$",(1.1*cos(0),1.1*sin(0)+0.05),color="black",fontsize=14)
-p+=text(r"$O$",(-0.1,-0.1),color="black",fontsize=14)
-p
-            </sageplot>
-          </image>
+                    <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TE1-difference1">
+                <xi:include href="prefigure/TE1-difference-1.xml"/>
+            </prefigure>
+        </image>
+                <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TE1-difference2">
+                <xi:include href="prefigure/TE1-difference-2.xml"/>
+            </prefigure>
+        </image>
         </sidebyside>
         <caption>Triangle <m>POQ</m> and its rotation clockwise by <m>\beta</m>, Triangle <m>AOB</m> </caption>
         </figure>

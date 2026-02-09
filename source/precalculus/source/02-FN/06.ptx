@@ -295,9 +295,11 @@
       </introduction>
       <task>
         <statement>
-          <image width="50%"><sageplot>
-            p=plot(x^2,xmin=-2,xmax=2,ymin=-1,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph1">
+              <xi:include href="prefigure/FN6-graph1.xml"/>
+            </prefigure>
+          </image>
         </statement>
         <answer>
           <p>This graph is not one-to-one</p>
@@ -305,9 +307,11 @@
       </task>
       <task>
         <statement>
-          <image width="50%"><sageplot>
-            p=plot(1/2*x^3,xmin=-2,xmax=2,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph2">
+              <xi:include href="prefigure/FN6-graph2.xml"/>
+            </prefigure>
+          </image>
         </statement>
         <answer>
           <p>This graph is one-to-one</p>
@@ -315,9 +319,11 @@
       </task>
       <task>
         <statement>
-          <image width="50%"><sageplot>
-            p=plot(e^x,xmin=-2,xmax=2,ymin=-1,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph3">
+              <xi:include href="prefigure/FN6-graph3.xml"/>
+            </prefigure>
+          </image>
         </statement>
         <answer>
           <p>This graph is one-to-one</p>
@@ -325,9 +331,11 @@
       </task>
       <task>
         <statement>
-          <image width="50%"><sageplot>
-            p=plot(x^3-2*x,xmin=-2,xmax=2,gridlines=True,ticks=[1,1],aspect_ratio=1,thickness=2)
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph4">
+              <xi:include href="prefigure/FN6-graph4.xml"/>
+            </prefigure>
+          </image>
         </statement>
         <answer>
           <p>This graph is not one-to-one</p>

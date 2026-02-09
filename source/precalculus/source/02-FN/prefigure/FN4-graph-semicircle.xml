@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(t)=(3*cos(t),3*sin(t))</definition>
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes/>
+    <group>
+      <parametric-curve at="f" function="f" domain="(0,pi)" stroke="blue"/>
+      <label anchor="(3,3)" alignment="north" color="blue"><m>f(x)</m></label>
+    </group> 
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="The top half of a circle of radius 3 centered at the origin"/>
+    </annotation>
+  </annotations>
+</diagram>

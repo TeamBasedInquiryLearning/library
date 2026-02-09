@@ -23,7 +23,11 @@
         <p>
           <term>Mapping Notation</term> <idx><h>function</h><h>mapping notation</h></idx> (also known as an arrow diagram) is a way to show relationships visually between sets.  For example, suppose you are given the following ordered pairs: <m>(3, -8), (4,6)</m>, and <m>(2,-1)</m>. Each of the <m>x</m>-values "map onto" a <m>y</m>-value and can be visualized in the following way: </p>
           <figure xml:id="mapping-notation-example">
-            <image source="Images/Mapping-notation-example.jpg"/>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-mapping-notation">
+                <xi:include href="prefigure/FN1-graph-mapping-notation.xml"/>
+              </prefigure>
+            </image>
             <caption>Every <m>x</m>-value from the ordered pair list is listed in the input set and every <m>y</m>-value is listed in the output set. An arrow is drawn from every <m>x</m>-value to its corresponding <m>y</m>-value.</caption>
           </figure>
          <p> Notice that an arrow is used to indicate which <m>x</m>-value is mapped onto its corresponding <m>y</m>-value.
@@ -441,7 +445,11 @@
       <task>
         <statement>
         <p>
-          <image source="Images/Mapping-notation-example.jpg"/>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-mapping-notation2">
+              <xi:include href="prefigure/FN1-graph-mapping-notation.xml"/>
+            </prefigure>
+          </image>
         </p>
         </statement>
         <answer>
@@ -509,13 +517,10 @@
 <task>
   <statement>
     <p>
-      <image xml:id="ordered-pair-example-1">
-        <sageplot>
-          A = point((-1,5),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)
-          B = point((2,6),size=40)
-          C = point((4,-2),size=40)
-          A+B+C
-        </sageplot>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-graph-points1">
+          <xi:include href="prefigure/FN1-graph-points1.xml"/>
+        </prefigure>
       </image>
     </p>
     </statement>
@@ -528,13 +533,10 @@
 <task>
   <statement>
   <p>
-    <image xml:id="ordered-pair-example-2">
-      <sageplot>
-        A = point((6,4),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)
-        B = point((3,4),size=40)
-        C = point((6,5),size=40)
-        A+B+C
-      </sageplot>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-points2">
+        <xi:include href="prefigure/FN1-graph-points2.xml"/>
+      </prefigure>
     </image>
   </p>
 </statement>
@@ -547,13 +549,10 @@
 <task>
   <statement>
   <p>
-    <image xml:id="ordered-pair-example-3">
-      <sageplot>
-        A = point((1,2),size=40,xmin=-10,xmax=10,ymin=-10,ymax=10)
-        B = point((-5,2),size=40)
-        C = point((-7,2),size=40)
-        A+B+C
-      </sageplot>
+    <image>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph-points3">
+        <xi:include href="prefigure/FN1-graph-points3.xml"/>
+      </prefigure>
     </image>
   </p>
 </statement>
@@ -589,12 +588,9 @@
   <task>
     <statement>
     <image>
-      <sageplot>
-        f(x)=sqrt(9-x^2)
-        g(x)=-(sqrt(9-x^2))
-        p=plot(f, (x, -3, 3), ymin=-4, ymax=4, color='blue', thickness=3)+ plot(g, (x, -3, 3), ymin=-4, ymax=4, color='blue', thickness=3)
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph1">
+        <xi:include href="prefigure/FN1-graph1.xml"/>
+      </prefigure>
     </image>
   </statement>
     <answer>
@@ -606,11 +602,9 @@
   <task>
     <statement>
     <image>
-      <sageplot>
-        f(x) = -4*x^3+2*x^2+3
-        p=plot(f, (x, -5, 5), ymin=-15, ymax=15, color='blue', thickness=3)
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph2">
+        <xi:include href="prefigure/FN1-graph2.xml"/>
+      </prefigure>
     </image>
     </statement>
     <answer>
@@ -622,11 +616,9 @@
   <task>
     <statement>
     <image>
-      <sageplot>
-        f(x)=5*x-1
-        p=plot(f, (x, -5, 5), ymin=-10, ymax=10, color='blue', thickness=3)
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph3">
+        <xi:include href="prefigure/FN1-graph3.xml"/>
+      </prefigure>
     </image>
     </statement>
     <answer>
@@ -638,12 +630,9 @@
   <task>
     <statement>
     <image>
-      <sageplot>
-        f(x)=sqrt(x)
-        g(x)=-(sqrt(x))
-        p=plot(f, (x, 0, 5), ymin=-10, ymax=10, color='blue', thickness=3)+ plot(g, (x, 0, 5), ymin=-10, ymax=10, color='blue', thickness=3)
-        p
-      </sageplot>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-graph4">
+        <xi:include href="prefigure/FN1-graph4.xml"/>
+      </prefigure>
     </image>
     </statement>
     <answer>

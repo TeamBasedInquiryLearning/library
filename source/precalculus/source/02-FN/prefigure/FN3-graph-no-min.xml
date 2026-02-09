@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+    <definition>f(x)=fabs(x)</definition>
+    <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes/>
+    <graph at="f" function="f" />
+    <point at="p1" p="(0,0)" fill="white" stroke="blue"/>
+    <point at="p2" p="(0,1)" fill="blue" stroke="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The coordinate plane with a graph">
+      <annotation ref="f" sonify="yes" text="A function that slopes down to the origin and then back up. However and open dot is at the origin and there is a filled dot at 0 comma 1"/>
+    </annotation>
+  </annotations>
+</diagram>

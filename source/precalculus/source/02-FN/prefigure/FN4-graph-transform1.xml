@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition> f(x)=3*sqrt(-x)+2</definition>
+  <coordinates bbox="(-5,-1,1,10)">
+    <grid-axes spacings="((-5,1,5),(-10,1,10))"/>
+    <group at="g">
+      <graph function="f"/>
+      <label anchor="(-2,3)" color="blue"><m>f(x)=3\sqrt{-x}+2</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function labeled f of x equals 3 times the square root of negative x, plus 2">
+      <annotation ref="f" text="A curve starting at 0 comma 2 and curving up and to the left in a concave down manner"/>
+     
+    </annotation>
+  </annotations>
+</diagram>

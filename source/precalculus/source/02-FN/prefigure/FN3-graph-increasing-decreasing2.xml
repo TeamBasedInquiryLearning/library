@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+    <definition>f(x)=fabs(x)</definition>
+    <coordinates bbox="(-10,-10,10,10)">
+    <grid-axes spacings="(-10,1,10),(-10,1,10)"/>
+    <group at="f">
+    <line endpoints="((-8,4),(-4,4))" stroke="blue"/>
+    <spline points="(-4,4),(-0.5,5),(1.7,-4.7),(4.9,9.4)" stroke="blue" arrows="1"/>
+    </group>
+    <point at="p2" p="(-8,4)" fill="blue" stroke="blue"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The coordinate plane with a graph">
+      <annotation ref="f" sonify="yes" text="A function that is horizontal between -8 and -4, then increases peaking at -2 comma 8, then decreases to 2 comma -5, then increases again. There is a filled dot at -8 comma 4"/>
+    </annotation>
+  </annotations>
+</diagram>

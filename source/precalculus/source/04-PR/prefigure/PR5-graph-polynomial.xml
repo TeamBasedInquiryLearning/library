@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>width=15</definition>
+  <definition>f(x)=x^5+3*x^4+4*x^3+8*x^2-16</definition>
+  <coordinates bbox="(-5,-20,5,12)">
+    <grid-axes />
+    <graph at="f" function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a polynomial ">
+        <annotation ref="f"  sonify="yes" text="The graph of the function"/>
+    </annotation>
+  </annotations>
+</diagram>

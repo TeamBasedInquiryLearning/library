@@ -1,0 +1,24 @@
+<diagram dimensions="(300,300)" margins="20" xmlns="https://prefigure.org">
+  <definition>width=10</definition>
+  <definition>f(x) =2*x/(x^2-2*x-8)-3</definition>
+  <coordinates bbox="(-width,-10,width,10)">
+    <grid spacings="(-width,1,width),(-10,1,10)"  />
+      <axes decorations="no" hlabels="(-width+2,2,width-2)" vlabels="(-width+2,2,width-2)">
+        <ylabel alignment="north">Graph D</ylabel>
+      </axes>
+    <graph at="f" function="f"/>
+    <group>
+    <line at="l1" endpoints="((-2,0),(-2,1))" stroke="red" dash="9 9" infinite="yes"/>
+    <line at="l2" endpoints="((4,0),(4,1))" stroke="red" dash="9 9" infinite="yes"/>
+    <line at="l3" endpoints="((0,-3),(1,-3))" stroke="red" dash="9 9" infinite="yes"/>
+    </group>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A graph of a rational function and its asymptotes labeled Graph D">
+        <annotation ref="f"  sonify="yes" text="A rational function"/>
+        <annotation ref="l1" text="The vertical asymptote x equals -2"/>
+        <annotation ref="l2" text="The vertical asymptote x equals 4"/>
+        <annotation ref="l3" text="The horizontal asymptote y equals -3"/>
+    </annotation>
+  </annotations>
+</diagram>
