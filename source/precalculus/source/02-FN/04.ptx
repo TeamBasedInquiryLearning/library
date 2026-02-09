@@ -20,23 +20,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(spline([(-2,-1),(0,3),(1,2),(2,4)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-1),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,4),pointsize=50,color='blue')
-              p+=text('$f(x)+1$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base1">
+                <xi:include href="prefigure/FN4-graph-base.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base-translate-up">
+                <xi:include href="prefigure/FN4-graph-base-translate-up.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -63,23 +55,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(spline([(-2,-4),(0,0),(1,-1),(2,1)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-4),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,1),pointsize=50,color='blue')
-              p+=text('$f(x)-2$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base21">
+                <xi:include href="prefigure/FN4-graph-base.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base-translate-down">
+                <xi:include href="prefigure/FN4-graph-base-translate-down.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -120,23 +104,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(spline([(-3,-2),(-1,2),(0,1),(1,3)]),(x,-3,1),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-3,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((1,3),pointsize=50,color='blue')
-              p+=text('$f(x+1)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base31">
+                <xi:include href="prefigure/FN4-graph-base.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base-translate-left">
+                <xi:include href="prefigure/FN4-graph-base-translate-left.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -163,34 +139,26 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-5, -4,-3,-2,-1,1,2,3,4,5],[-5, -4,-3,-2,-1,1,2,3,4, 5]])
-              p+=point((-2,-2),pointsize=50,color='blue',xmin=-5,xmax=5,ymin=-5,ymax=5)
-              p+=point((2,3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(spline([(1,-2),(3,2),(4,1),(5,3)]),(x,1,5),thickness=3, gridlines=[[-5, -4,-3,-2,-1,1,2,3,4,5],[-5,-4,-3,-2,-1,1,2,3,4,5]])
-              p+=point((1,-2),pointsize=50,color='blue',xmin=-5,xmax=5,ymin=-5,ymax=5)
-              p+=point((5,3),pointsize=50,color='blue')
-              p+=text('$f(x-3)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn4-graph-base42">
+                <xi:include href="prefigure/FN4-graph-base.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base-translate-right">
+                <xi:include href="prefigure/FN4-graph-base-translate-right.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
       <task>
         <statement>
-        <p> How is the graph of <m>f(x-3)</m> related to that of <m>f(x)</m>?
+        <p> How is the graph of <m>f(x-2)</m> related to that of <m>f(x)</m>?
           <ol marker="A." cols="1">
-            <li><p>Shifted up by 3 units </p></li>
-            <li><p> Shifted left 3 units </p></li>
-            <li><p> Shifted down 3 units </p></li>
-            <li><p> Shifted right 3 units </p></li>
+            <li><p>Shifted up by 2 units </p></li>
+            <li><p> Shifted left 2 units </p></li>
+            <li><p> Shifted down 2 units </p></li>
+            <li><p> Shifted right 2 units </p></li>
         </ol> </p>
         </statement>
         <answer>
@@ -327,23 +295,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(spline([(-2,2),(0,-2),(1,-1),(2,-3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,-3),pointsize=50,color='blue')
-              p+=text('$-f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base5">
+                <xi:include href="prefigure/FN4-graph-base.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base-reflect-vert">
+                <xi:include href="prefigure/FN4-graph-base-reflect-vert.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -371,23 +331,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(spline([(-2,-2),(0,2),(1,1),(2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((2,3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(spline([(2,-2),(0,2),(-1,1),(-2,3)]),(x,-2,2),thickness=3, gridlines=[[-4,-3,-2,-1,1,2,3,4],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((2,-2),pointsize=50,color='blue',xmin=-4,xmax=4,ymin=-5,ymax=5)
-              p+=point((-2,3),pointsize=50,color='blue')
-              p+=text('$f(-x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base6">
+                <xi:include href="prefigure/FN4-graph-base.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base-reflect-horiz">
+                <xi:include href="prefigure/FN4-graph-base-reflect-horiz.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -434,17 +386,11 @@
     <activity xml:id="activity-graph-move">
       <introduction>
         <p>Consider the following graph of the function <m>f(x)</m>.
-          
             <image>
-            <sageplot>
-              p=plot(sqrt(-1*x**2+9),(x,-3,3),thickness=3)
-              p+=point((-3,0),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
-              p+=point((3,0),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-semicircle">
+                <xi:include href="prefigure/FN4-graph-semicircle.xml"/>
+              </prefigure>
+            </image>
         </p>
       </introduction>
       <task>
@@ -469,38 +415,34 @@
         <statement>
         <p> Which of the following represents the graph of the transformed function <m>g(x)=-f(x+2)+3</m>?
           <ol marker="A." cols="2">
-            <li><p> <image>
-              <sageplot>
-                p=plot(-1*sqrt(-1*(x+2)**2+9)+3,(x,-5,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-                p+=point((-5,3),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
-                p+=point((1,3),pointsize=50,color='blue')
-                p
-              </sageplot>
-            </image> </p></li>
-            <li><p> <image>
-              <sageplot>
-                p=plot(sqrt(-1*(x+2)**2+9)-3,(x,-5,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-                p+=point((-5,-3),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
-                p+=point((1,-3),pointsize=50,color='blue')
-                p
-              </sageplot>
-            </image> </p></li>
-            <li><p> <image>
-              <sageplot>
-                p=plot(-1*sqrt(-1*(x-2)**2+9)+3,(x,-1,5),thickness=3,gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-                p+=point((-1,3),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
-                p+=point((5,3),pointsize=50,color='blue')
-                p
-              </sageplot>
-            </image> </p></li>
-            <li><p> <image>
-              <sageplot>
-                p=plot(-1*sqrt(-1*(x-2)**2+9),(x,-1,5),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-                p+=point((-1,0),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-4,ymax=4)
-                p+=point((5,0),pointsize=50,color='blue')
-                p
-              </sageplot>
-            </image> </p></li>
+            <li><p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-semicircle-t1">
+                <xi:include href="prefigure/FN4-graph-semicircle-t1.xml"/>
+              </prefigure>
+            </image>
+            </p></li>
+            <li><p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-semicircle-t2">
+                <xi:include href="prefigure/FN4-graph-semicircle-t2.xml"/>
+              </prefigure>
+            </image>
+            </p></li>
+            <li><p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-semicircle-t3">
+                <xi:include href="prefigure/FN4-graph-semicircle-t3.xml"/>
+              </prefigure>
+            </image>
+            </p></li>
+            <li><p> 
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-semicircle-t4">
+                <xi:include href="prefigure/FN4-graph-semicircle-t4.xml"/>
+              </prefigure>
+            </image>
+            </p></li>
         </ol> </p>
         </statement>
         <answer>
@@ -521,23 +463,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(abs(x+2)-4,(x,-5,-1),thickness=3, gridlines=[[-5,-4,-3,-2,-1,1,2,3,4,5],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((-5,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
-              p+=point((-1,-3),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(abs(-x+2)-1,(x,1,5),thickness=3,gridlines=[[-5,-4,-3,-2,-1,1,2,3,4,5],[-4,-3,-2,-1,1,2,3,4]])
-              p+=point((1,0),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
-              p+=point((5,2),pointsize=50,color='blue')
-              p+=text('$g(x)$', (1, 4), fontsize=18, color='black')
-              p              
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base22">
+                <xi:include href="prefigure/FN4-graph-base2.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base2-translated">
+                <xi:include href="prefigure/FN4-graph-base2-translated.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -640,27 +574,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(2,(x,-1,1),thickness=3, gridlines=[[-6, -5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-              p+=plot(-x+3,(x,1,4), thickness =3)
-              p+=plot(x+3,(x,-4,-1), thickness =3)
-              p+=point((-4,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
-              p+=point((4,-1),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(4,(x,-1,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-              p+=plot(2*(-x+3),(x,1,4), thickness =3)
-              p+=plot(2*(x+3),(x,-4,-1), thickness =3)
-              p+=point((-4,-2),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
-              p+=point((4,-2),pointsize=50,color='blue')
-              p+=text('$2f(x)$', (3, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base32">
+                <xi:include href="prefigure/FN4-graph-base3.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base3-stretch-vert">
+                <xi:include href="prefigure/FN4-graph-base3-stretch-vert.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -702,27 +624,15 @@
         <p>Consider the following two graphs.
           <sidebyside width="50%">
             <image>
-            <sageplot>
-              p=plot(2,(x,-1,1),thickness=3, gridlines=[[-6,-5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-              p+=plot(-x+3,(x,1,4), thickness =3)
-              p+=plot(x+3,(x,-4,-1), thickness =3)
-              p+=point((-4,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
-              p+=point((4,-1),pointsize=50,color='blue')
-              p+=text('$f(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
-          <image>
-            <sageplot>
-              p=plot(2,(x,-.5,.5),thickness=3, gridlines=[[-6, -5,-4,-3,-2,-1,1,2,3,4,5,6],[-4,-3,-2,-1,1,2,3,4]])
-              p+=plot((-2*x+3),(x,.5,2), thickness =3)
-              p+=plot((2*x+3),(x,-2,-.5), thickness =3)
-              p+=point((-2,-1),pointsize=50,color='blue',xmin=-6,xmax=6,ymin=-5,ymax=5)
-              p+=point((2,-1),pointsize=50,color='blue')
-              p+=text('$f(2x)$', (3, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base33">
+                <xi:include href="prefigure/FN4-graph-base3.xml"/>
+              </prefigure>
+            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-base3-stretch-horiz">
+                <xi:include href="prefigure/FN4-graph-base3-stretch-horiz.xml"/>
+              </prefigure>
+            </image>
         </sidebyside>
         </p>
       </introduction>
@@ -781,58 +691,66 @@
     </definition>
 
     <remark>
-      <p> We often use a set of basic functions with which to begin transformations. We call these parent functions.
-        <sidebyside width="50%">
-          <image>
-          <sageplot>
-            p=plot(x,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
-            p+=text('$f(x)=x$', (1, 4), fontsize=18, color='black')
-            p
-          </sageplot>
-        </image>
-        <image>
-          <sageplot>
-            p=plot(x**2,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
-            p+=text('$f(x)=x^2$', (1, 4), fontsize=18, color='black')
-            p
-          </sageplot>
-        </image>
-      </sidebyside>
-
-      <sidebyside width="50%">
-        <image>
-        <sageplot>
-          p=plot(abs(x),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
-          p+=text('$f(x)=|x|$', (1, 4), fontsize=18, color='black')
-          p
-        </sageplot>
-      </image>
-      <image>
-        <sageplot>
-          p=plot(sqrt(x),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
-          p+=text(r"$f(x)=\sqrt{x}$", (1, 4), fontsize=18, color='black')
-          p
-        </sageplot>
-      </image>
-    </sidebyside>
-
-    <sidebyside width="50%">
-      <image>
-      <sageplot>
-        p=plot(x**3,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
-        p+=text('$f(x)=x^3$', (-2, 4), fontsize=18, color='black')
-        p
-      </sageplot>
-    </image>
-    <image>
-      <sageplot>
-        p=plot(1/x, thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5, detect_poles=True)
-        p+=text(r"$f(x)=\frac{1}{x}$", (-2, 4), fontsize=18, color='black')
-        p
-      </sageplot>
-    </image>
-  </sidebyside>
+      <p> We often use a set of basic functions with which to begin transformations. 
+        We call these parent functions. A library of these is collected in <xref ref="graphs-of-common-functions"/>,
+        but here are a few of the most common ones.
       </p>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="graph-x-intext">
+            <caption>Graph of <m>f(x)=x</m></caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x-intext">
+                    <xi:include href="../meta/prefigure/graphx.xml"/>
+                </prefigure>
+            </image>
+          </figure>
+          <figure xml:id="graph-x-squared-intext">
+            <caption>Graph of <m>f(x)=x^2</m></caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x2-intext">
+                    <xi:include href="../meta/prefigure/graphx2.xml"/>
+                </prefigure>
+            </image>
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="graph-absolute-intext">
+            <caption>Graph of <m>f(x)=|x|</m></caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-absolute-intext">
+                    <xi:include href="../meta/prefigure/graph-absolute.xml"/>
+                </prefigure>
+            </image>
+          </figure>
+          <figure xml:id="graph-square-root-intext">
+            <caption>Graph of <m>f(x)=\sqrt{x}</m></caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-square-root-intext">
+                    <xi:include href="../meta/prefigure/graph-square-root.xml"/>
+                </prefigure>
+            </image>
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="graph-x-cubed-intext">
+            <caption>Graph of <m>f(x)=x^3</m></caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-xcubed-intext">
+                    <xi:include href="../meta/prefigure/graphx3.xml"/>
+                </prefigure>
+            </image>
+          </figure>
+          <figure xml:id="graph-x-minus1-intext">
+            <caption>Graph of <m>f(x)=\dfrac{1}{x}</m></caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-graph-x-minus1-intext">
+                    <xi:include href="../meta/prefigure/graphx-minus1.xml"/>
+                </prefigure>
+            </image>
+          </figure>
+        </sidebyside>
+      </sbsgroup>
     </remark>
 
     <activity xml:id="activity-peq">
@@ -865,11 +783,9 @@
         <answer>
           <p>
             <image>
-              <sageplot>
-                p=plot(sqrt(x),thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=5)
-                p+=text(r"$f(x)=\sqrt{x}$", (1, 4), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn4-graph-base4">
+                <xi:include href="prefigure/FN4-graph-base4.xml"/>
+              </prefigure>
             </image>
           </p>
         </answer>
@@ -901,11 +817,9 @@
         <answer>
           <p>
             <image>
-              <sageplot>
-                p=plot(3*sqrt(-1*x)+2,thickness=3, xmin=-5,xmax=5,ymin=-5,ymax=8)
-                p+=text(r"$f(x)=3\sqrt{-x}+2$", (1, 4), fontsize=18, color='black')
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-transform1">
+                <xi:include href="prefigure/FN4-graph-transform1.xml"/>
+              </prefigure>
             </image>
           </p>
         </answer>
@@ -917,12 +831,10 @@
         <p>Consider the following graph of the function <m>g(x)</m>.
           
             <image>
-            <sageplot>
-              p=plot(-1*(x+2)**2-3,thickness=3, xmin=-6,xmax=6,ymin=-10,ymax=10, gridlines=[[-6,-6,-4,-3,-2,-1,1,2,3,4,5,6],[-10,-8,-6,-4,-2,2,4,6,8,10]])
-              p+=text('$g(x)$', (1, 4), fontsize=18, color='black')
-              p
-            </sageplot>
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-fn6-graph-transform2">
+                <xi:include href="prefigure/FN4-graph-transform2.xml"/>
+              </prefigure>
+            </image>
           
         </p>
       </introduction>

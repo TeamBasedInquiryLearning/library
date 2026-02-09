@@ -104,12 +104,10 @@
                 
               </row>
             </tabular>
-
-            <image xml:id="stuff">
-              <sageplot>
-p=point([(.25,-2),(.5,-1),(1,0),(2,1),(4,2)],pointsize=50,color='blue',ymin=-8, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-p
-              </sageplot>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log2-points">
+                <xi:include href="prefigure/EL4-graph-log2x-points.xml"/>
+              </prefigure>
             </image>
  
           </sidebyside>
@@ -134,7 +132,7 @@ p
           </p>  
         </statement>
         <answer>
-          D
+          <p>D</p>
         </answer>
       </task>
 
@@ -153,7 +151,7 @@ p
           </p>  
         </statement>
         <answer>
-          E
+          <p>E</p>
         </answer>
       </task>
 
@@ -171,7 +169,7 @@ p
           </p>  
         </statement>
         <answer>
-          A
+          <p>A</p>
         </answer>
       </task>
 
@@ -189,7 +187,7 @@ p
           </p>  
         </statement>
         <answer>
-          D
+          <p>D</p>
         </answer>
       </task>
 
@@ -201,14 +199,10 @@ p
         </statement>
         <answer>
           <p>
-            <image xml:id="log-2-graph">
-              <sageplot>
-                f(x) = log(x)/log(2)
-                p=point([(.25,-2),(.5,-1),(1,0),(2,1),(4,2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log2">
+                <xi:include href="prefigure/EL4-graph-log2x.xml"/>
+              </prefigure>
             </image>
             
           </p>
@@ -409,14 +403,10 @@ p
           <answer>
             <p>
               <image>
-                <sageplot>
-                  f(x) = log(x)/log(4)
-                  p=point([(1,0),(2,1/2),(4,1),(8,3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image> 
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log4">
+                <xi:include href="prefigure/EL4-graph-log4x.xml"/>
+              </prefigure>
+              </image>             
             </p>
           </answer>
         </task> 
@@ -434,56 +424,40 @@ p
             
               <ol marker= "A." cols="2">  
                 <li> <p> 
-                    <image>
-                      <sageplot>
-                        f(x) = -log(x)/log(4)
-                        p=point([(1,0),(2,-1/2),(4,-1),(8,-3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                        p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                        p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                        p
-                      </sageplot>
-                    </image> 
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log4-vertical-reflection">
+                    <xi:include href="prefigure/EL4-graph-log4x-vertical-reflection.xml"/>
+                  </prefigure>
+                </image>             
                  </p>  </li>
 
                  <li>
                   <p>
-                    <image>
-                      <sageplot>
-                        f(x) = log(x)/log(4) +1
-                        p=point([(1,1),(2,3/2),(4,2),(8,5/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                        p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                        p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                        p
-                      </sageplot>
-                    </image> 
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log4-vertical-shift">
+                    <xi:include href="prefigure/EL4-graph-log4x-vertical-shift.xml"/>
+                  </prefigure>
+                </image>             
                   </p>
                  </li>
 
                  <li>
                   <p>
-                    <image>
-                      <sageplot>
-                        f(x) = log(-x)/log(4) 
-                        p=point([(-1,0),(-2,1/2),(-4,1),(-8,3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                        p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                        p+=plot(f, (x, -9, -.00001), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                        p
-                      </sageplot>
-                    </image> 
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log4-horizontal-reflection">
+                    <xi:include href="prefigure/EL4-graph-log4x-horizontal-reflection.xml"/>
+                  </prefigure>
+                </image>             
                   </p>
                  </li>
 
                  <li>
                   <p>
-                    <image>
-                      <sageplot>
-                        f(x) = log(x+1)/log(4) 
-                        p=point([(0,0),(1,1/2),(3,1),(7,3/2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                        p+=line([(-1,-9),(-1,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                        p+=plot(f, (x, -.99999, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                        p
-                      </sageplot>
-                    </image> 
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log4-horizontal-shift">
+                    <xi:include href="prefigure/EL4-graph-log4x-horizontal-shift.xml"/>
+                  </prefigure>
+                </image>             
                   </p>
                  </li>
   
@@ -626,15 +600,11 @@ p
             </p>
           </statement>
           <answer>
-              <image xml:id="graph-log-1-e">
-                <sageplot>
-                  f(x) = log(x)/log(e)
-                  p=point([(1,0),(e,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image>
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-ln-x">
+                    <xi:include href="prefigure/EL4-graph-ln-x.xml"/>
+                  </prefigure>
+                </image>             
             <p>
               <ul>
                 <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
@@ -653,15 +623,11 @@ p
           </statement>
           <answer>
             
-              <image xml:id="graph-log-x-3"> 
-                <sageplot>
-                  f(x) = log(x-3)/log(e)
-                  p=point([(4,0),(e+3,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(3,-9),(3,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, 3.0000001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image>
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-ln-x-horizontal-shift">
+                    <xi:include href="prefigure/EL4-graph-ln-x-horizontal-shift.xml"/>
+                  </prefigure>
+                </image>             
               <p>
                 <ul>
                   <li> <p>Transformation: shift right 3 </p> </li>
@@ -680,15 +646,11 @@ p
             </p>
           </statement>
           <answer>
-              <image xml:id="graph-3-log">
-                <sageplot>
-                  f(x) = 3*log(x)/log(e)
-                  p=point([(1,0),(e,3)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image>
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-ln-x-stretch">
+                    <xi:include href="prefigure/EL4-graph-ln-x-stretch.xml"/>
+                  </prefigure>
+                </image>             
               <p>
                 <ul>
                   <li> <p>Transformation: vertical stretch with factor of three. </p> </li>
@@ -716,15 +678,11 @@ p
             </p>
           </statement>
           <answer>
-              <image xml:id="graph-log-base-3">
-                <sageplot>
-                  f(x) = log(x)/log(3)
-                  p=point([(1,0),(3,1),(9,2)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, .00001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image>
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log3x">
+                    <xi:include href="prefigure/EL4-graph-log3x.xml"/>
+                  </prefigure>
+                </image>             
               <p> 
                 <ul>
                   <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
@@ -742,15 +700,11 @@ p
             </p>
           </statement>
           <answer>
-              <image xml:id="graph-log-base-6">
-                <sageplot>
-                  f(x) = log(-x)/log(6)
-                  p=point([(-1,0),(-6,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, -9, -.000001), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image> 
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log6-minusx">
+                    <xi:include href="prefigure/EL4-graph-log6-minusx.xml"/>
+                  </prefigure>
+                </image>             
               <p> 
                 <ul>
                   <li> <p>Domain: <m>(-\infty,0)</m> </p> </li>
@@ -768,15 +722,11 @@ p
             </p>
           </statement>
           <answer>
-              <image xml:id="graph-log-base-1-5">
-                <sageplot>
-                  f(x) = log(x)/log(1/5)
-                  p=point([(1,0),(5,-1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                  p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, .000001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                  p
-                </sageplot>
-              </image>
+                <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log-onefifth-x">
+                    <xi:include href="prefigure/EL4-graph-log-onefifth-x.xml"/>
+                  </prefigure>
+                </image>             
               <p> 
                 <ul>
                   <li> <p>Domain: <m>(0,\infty)</m> </p> </li>
@@ -794,15 +744,11 @@ p
             </p>
           </statement>
           <answer>
-            <image xml:id="graph-log-base-1-3">
-              <sageplot>
-                f(x) = log(x)/log(1/3) +2
-                p=point([(1,2),(3,1)],pointsize=50,color='blue', xmin=-8, xmax=8, ymin=-8, ymax=8)
-                p+=line([(0,-9),(0,9)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                p+=plot(f, (x, .000001, 9), color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
-            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-log-onethird-x-plus2">
+                <xi:include href="prefigure/EL4-graph-log-onethird-x-plus2.xml"/>
+              </prefigure>
+            </image>             
             <p> 
               <ul>
                 <li> <p>Domain: <m>(0,\infty)</m> </p> </li>

@@ -1,0 +1,22 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=e^(x-2)</definition>
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes/>
+    <graph at="function" function="f"/>
+    <group at="points">
+    <point p="(2,1)" at="p1"/>
+    <point p="(3,e)" at="p2"/>
+    </group>
+    <line at="asymptote-h" endpoints="((-5,0),(5,0))" stroke="red" infinite = "yes" dash="9 9"/>
+  </coordinates>
+    <annotations>
+    <annotation ref="figure" text="The graph of the function y equals e to the quantity x minus 2, selected points, and its asymptote">
+      <annotation ref="function" text="The function y equals e to the quantity x minus 2" sonify="yes"/>
+      <annotation ref="asymptote-h" text="The horizontal asymptote y equals 0"/>
+      <annotation ref="points" text="Selected points on the graph of y equals e to the quantity x minus 2">
+        <annotation ref="p1" text="The point 2 comma 1"/>
+        <annotation ref="p2" text="The point 3 comma approximately 2.72"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

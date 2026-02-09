@@ -16,14 +16,17 @@
       <introduction>
         <p> The points <m> A </m> and <m> B </m> are shown in the graph below. Use the graph to answer the following questions:
         </p>
-        <figure xml:id="line-segment"><image>
-        <sageplot>
-          A = point((2,6),size=40)+text('A',(2.05,6),horizontal_alignment="left", gridlines=[[2,2.5,3.0,3.5,4],[2,2.5,3.0,3.5,4,4.5,5.0,5.5,6]])
-          B = point((4,2),size=40)+text('B',(4.05,2),horizontal_alignment="left")
-          L=line([(2,6),(4,2)],color="purple")
-          A+B+L
-        </sageplot>
-      </image></figure>
+        <figure xml:id="figure-eq3-right-triangle">
+          <caption>Interactive for constructing a right triangle</caption>
+          <interactive label="EQ3-interactive-right-triangle" platform="doenetml" width="100%">
+            <slate surface="doenetml">
+              <xi:include parse="text" href="doenet/EQ3-distance-pythagorean.xml"/>
+            </slate>
+            <description><p>Interactive allowing users to drag a point to make a right triangle
+                            with the given line segment as its hypotenuse.
+            </p></description>
+          </interactive>
+        </figure>
       </introduction>
       <task>
         <statement>
@@ -32,7 +35,7 @@
           </p>
         </statement>
           <answer>
-            Point <m>C</m> should be at the point <m>(2,2)</m>.
+            <p>Point <m>C</m> should be at the point <m>(2,2)</m>.</p>
           </answer>
       </task>
       <task>
@@ -42,9 +45,9 @@
           </p>
         </statement>
           <answer>
-            <m>AC</m> is <m>4</m> units long.
-            <m>BC</m> is <m>2</m> units long.
-            Make sure students pay attention to the scale.
+            <p><m>AC</m> is <m>4</m> units long.
+            <m>BC</m> is <m>2</m> units long.</p>
+            <p>Make sure students pay attention to the scale.</p>
           </answer>
       </task>
       <task>
@@ -54,7 +57,8 @@
           </p>
         </statement>
           <answer>
-            Students should see that they can use the Pythagorean Theorem to find the length of side <m>AB</m> (which is <m>\sqrt{20}</m> or approximately <m>4.5</m>).
+            <p>Students should see that they can use the Pythagorean Theorem to find the length of 
+              side <m>AB</m> (which is <m>\sqrt{20}</m> or approximately <m>4.5</m>).</p>
           </answer>
       </task>
     </activity>
@@ -76,7 +80,8 @@
           </p>
         </statement>
           <answer>
-            Students may need help in their drawing. Make sure the hypotenuse is the line segment that connects the two points.
+            <p>Students may need help in their drawing. Make sure the hypotenuse is the line segment that 
+              connects the two points.</p>
           </answer>
       </task>
       <task>
@@ -86,7 +91,9 @@
           </p>
         </statement>
           <answer>
-            The lengths of the legs of the triangle should be <m>y_{2}-y_{1}</m> and <m>x_{2}-x_{1}</m> (or <m>y_{1}-y_{2}</m> and <m>x_{1}-x_{2}</m> depending on how students created their drawing).
+            <p>The lengths of the legs of the triangle should be <m>y_{2}-y_{1}</m> and 
+              <m>x_{2}-x_{1}</m> (or <m>y_{1}-y_{2}</m> and <m>x_{1}-x_{2}</m> depending on 
+              how students created their drawing).</p>
           </answer>
       </task>
       <task>
@@ -96,7 +103,10 @@
           </p>
         </statement>
           <answer>
-            Students should see the connection to the previous activity and apply the Pythagorean Theorem. They should get either <m>\sqrt{(x_{2}-x_{1})^2+(y_{2}-y_{1})^2}</m> or <m>\sqrt{(x_{1}-x_{2})^2+(y_{1}-y_{2})^2}</m> to represent the length of the side that connects the two points.
+            <p>Students should see the connection to the previous activity and apply the Pythagorean 
+              Theorem. They should get either <m>\sqrt{(x_{2}-x_{1})^2+(y_{2}-y_{1})^2}</m> or 
+              <m>\sqrt{(x_{1}-x_{2})^2+(y_{1}-y_{2})^2}</m> to represent the length of the side 
+              that connects the two points.</p>
           </answer>
       </task>
     </activity>
@@ -125,7 +135,7 @@
             <li> <m>\sqrt{56}</m> </li></ol></p>
         </statement>
           <answer>
-            B and C
+            <p>B and C</p>
           </answer>
         </task>
         <task>
@@ -138,7 +148,7 @@
               <li> <m>\sqrt{61}</m> </li></ol></p>
           </statement>
               <answer>
-                B and D
+                <p>B and D</p>
               </answer>
           </task>
           <task>
@@ -152,7 +162,7 @@
                   <li> <m>(-5,-5)</m> </li></ol></p>
           </statement>
                   <answer>
-                    B
+                    <p>B</p>
                   </answer>
           </task>
     </activity>
@@ -172,16 +182,15 @@
     <introduction>
       <p> Two line segments are shown in the graph below. Use the graph to answer the following questions:
       </p>
-      <figure xml:id="two-line-segments"><image>
-      <sageplot>
-        A = point((8,2),size=40)+text('A',(8.1,2),horizontal_alignment="left", gridlines=[[2,3,4,5,6,7,8],[2,2.5,3,3.5,4,4.5,5,5.5,6]])
-        B = point((8,6),size=40)+text('B',(8.1,6),horizontal_alignment="left")
-        C = point ((2,2),size=40)+text('C',(2,2.1),horizontal_alignment="center")
-        L=line([(8,2),(2,2)],color="black")
-        M=line([(8,2),(8,6)],color="purple")
-        A+B+C+L+M
-      </sageplot>
-    </image></figure>
+      <figure xml:id="figure-eq3-midpoint">
+          <caption>Interactive for finding a midpoint</caption>
+          <interactive label="EQ3-interactive-midpoint" platform="doenetml" width="100%">
+            <slate surface="doenetml">
+              <xi:include parse="text" href="doenet/EQ3-midpoint.xml"/>
+            </slate>
+            <description><p>Interactive allowing users to drag points to find the midpoint of a line segment.</p></description>
+          </interactive>
+        </figure>
     </introduction>
     <task>
       <statement>
@@ -193,7 +202,7 @@
           <li> <m>(10,2)</m> </li></ol></p>
         </statement>
           <answer>
-            B
+            <p>B</p>
           </answer>
       </task>
       <task>
@@ -206,7 +215,7 @@
             <li> <m>(5,2)</m> </li></ol></p>
           </statement>
             <answer>
-              D
+              <p>D</p>
             </answer>
         </task>
         <task>
@@ -219,7 +228,7 @@
               <li> <m>(5,2)</m> </li></ol></p>
           </statement>
               <answer>
-                C
+                <p>C</p>
               </answer>
           </task>
           <task>
@@ -260,7 +269,7 @@
             <li> <m>(1,4)</m> </li></ol></p>
         </statement>
             <answer>
-              B
+              <p>B</p>
             </answer>
         </task>
         <task>
@@ -273,7 +282,7 @@
             <li> <m>(4,7)</m> </li></ol></p>
         </statement>
             <answer>
-              C
+              <p>C</p>
             </answer>
         </task>
         <task>
@@ -286,7 +295,7 @@
               <li> <m>(8,6)</m> </li></ol></p>
           </statement>
               <answer>
-                D
+                <p>D</p>
               </answer>
           </task>
     </activity>
@@ -304,7 +313,7 @@
           </p>
         </statement>
           <answer>
-            <m>\sqrt{113}</m> or <m>10.6</m>
+            <p><m>\sqrt{113}</m> or <m>10.6</m></p>
           </answer>
       </task>
       <task>
@@ -314,7 +323,7 @@
           </p>
         </statement>
           <answer>
-            <m>(2,1.5)</m>
+            <p><m>(2,1.5)</m></p>
           </answer>
       </task>
 </activity>

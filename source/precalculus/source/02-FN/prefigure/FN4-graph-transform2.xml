@@ -1,0 +1,18 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition> g(x)=-1*(x+2)^2-3</definition>
+  <coordinates bbox="(-5,-10,5,10)">
+    <grid-axes spacings="((-5,1,5),(-10,1,10))"/>
+    <group at="g">
+      <graph function="g"/>
+      <label anchor="(-2,-5)" color="blue"><m>g(x)</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function labeled fg(x)">
+      <annotation ref="f" text="A downward facing parabola with a maximum at -2 comma -3"/>
+     
+    </annotation>
+  </annotations>
+</diagram>

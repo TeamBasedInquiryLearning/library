@@ -15,11 +15,10 @@
     <activity>
       <statement>
         <p> Consider the angle given below:</p>
-        <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(-7*pi/4,show_axes=True)
-        </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR2-angle1">
+              <xi:include href="prefigure/TR2-angle1.xml"/>
+          </prefigure>
         </image>
         <p>Which of the following angles describe the plotted angle?</p>
           <ol marker="A." cols="4">
@@ -47,11 +46,10 @@ TBIL.plot_angle(-7*pi/4,show_axes=True)
  <activity>
       <introduction>
         <p> Consider the angle given below:</p>
-        <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
-        </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR2-angle2">
+              <xi:include href="prefigure/TR2-angle2.xml"/>
+          </prefigure>
         </image>
       </introduction>
       <task>
@@ -124,14 +122,10 @@ TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True)
     <activity>
     <introduction>
       <p>Consider the portion of a circle of radius <m>1</m> graphed below.</p>
-        <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
-p+=arc((0,0),1,sector=(0,pi/2),color="blue",thickness=3)
-p+=text("$1$", (0.5,0.05),color="black")
-p
-        </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR2-arc-length1">
+              <xi:include href="prefigure/TR2-arc-length1.xml"/>
+          </prefigure>
         </image>
       </introduction>
       <task>
@@ -175,14 +169,10 @@ p
 <activity>
     <introduction>
       <p>Consider the portion of a circle of radius <m>3</m> graphed below.</p>
-        <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-p=TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
-p+=arc((0,0),1,sector=(0,pi/3),color="blue",thickness=3)
-p+=text("$3$", (0.5,0.05),color="black")
-p
-        </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR2-arc-length2">
+              <xi:include href="prefigure/TR2-arc-length2.xml"/>
+          </prefigure>
         </image>
       </introduction>
       <task>
@@ -262,14 +252,10 @@ p
     <activity>
     <introduction>
       <p>Consider the portion of a circle of radius <m>1</m> graphed below.</p>
-        <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-p=TBIL.plot_angle(pi/2,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
-p+=arc((0,0),1,sector=(0,pi/2),color="blue",thickness=3)
-p+=text("$1$", (0.5,0.05),color="black")
-p
-        </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR2-arc-length12">
+              <xi:include href="prefigure/TR2-arc-length1.xml"/>
+          </prefigure>
         </image>
       </introduction>
       <task>
@@ -313,14 +299,10 @@ p
 <activity>
     <introduction>
       <p>Consider the portion of a circle of radius <m>3</m> graphed below.</p>
-        <image width="50%">
-        <sageplot>
-<xi:include href="../../../common/sagemath/library.sage" parse="text" />
-p=TBIL.plot_angle(pi/3,show_axes=True,show_angle_value=True,degree_labels=True,show_unit_circle=True)
-p+=arc((0,0),1,sector=(0,pi/3),color="blue",thickness=3)
-p+=text("$3$", (0.5,0.05),color="black")
-p
-        </sageplot>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR2-arc-length22">
+              <xi:include href="prefigure/TR2-arc-length2.xml"/>
+          </prefigure>
         </image>
       </introduction>
       <task>

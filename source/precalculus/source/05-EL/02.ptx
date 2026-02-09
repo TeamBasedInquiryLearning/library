@@ -76,11 +76,9 @@
             </tabular>
 
             <image>
-              <sageplot>
-                p=point([(-2,.25),(-1,.5),(0,1),(1,2),(2,4)],pointsize=50,color='blue',ymin=-2, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
-              
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-2x-points">
+                <xi:include href="prefigure/EL2-graph-2x-points.xml"/>
+              </prefigure>
             </image>
           
           </sidebyside>
@@ -105,7 +103,7 @@
           </p>  
         </statement>
         <answer>
-          E
+          <p>E</p>
         </answer>
       </task>
 
@@ -124,7 +122,7 @@
           </p>  
         </statement>
         <answer>
-          C
+          <p>C</p>
         </answer>
       </task>
 
@@ -137,14 +135,10 @@
         <answer>
           <p>
             <image>
-              <sageplot>
-                f(x) = 2^x
-                p=point([(-2,.25),(-1,.5),(0,1),(1,2),(2,4)],pointsize=50,color='blue')
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-2x">
+                <xi:include href="prefigure/EL2-graph-2x.xml"/>
+              </prefigure>
             </image>
-            
           </p>
         </answer>
       </task>
@@ -301,13 +295,10 @@
                 <cell><m>\dfrac{1}{4}</m></cell> 
               </row>
             </tabular>
-
             <image>
-              <sageplot>
-                p=point([(-2,4),(-1,2),(0,1),(1,.5),(2,.25)],pointsize=50,color='blue',ymin=-2, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
-              
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-halfx-points">
+                <xi:include href="prefigure/EL2-graph-halfx-points.xml"/>
+              </prefigure>
             </image>
           
           </sidebyside>
@@ -332,7 +323,7 @@
           </p>  
         </statement>
         <answer>
-          C
+          <p>C</p>
         </answer>
       </task>
 
@@ -351,7 +342,7 @@
           </p>  
         </statement>
         <answer>
-          E
+          <p>E</p>
         </answer>
       </task>
 
@@ -364,13 +355,9 @@
         <answer>
           <p>
             <image>
-              <sageplot>
-                f(x) = (.5)^x
-                p=point([(-2,4),(-1,2),(0,1),(1,.5),(2,.25)],pointsize=50,color='blue')
-                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-halfx">
+                <xi:include href="prefigure/EL2-graph-halfx.xml"/>
+              </prefigure>
             </image>
             
           </p>
@@ -552,12 +539,10 @@
           </tabular>
 
           <image>
-            <sageplot>
-              p=point([(-2,4),(-1,2),(0,1),(1,.5),(2,.25)],pointsize=50,color='blue',ymin=-2, ymax=8, xmin=-8,xmax=8, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-              p
-            </sageplot>
-            
-          </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-halfx-points2">
+                <xi:include href="prefigure/EL2-graph-halfx-points.xml"/>
+              </prefigure>
+           </image>
         
         </sidebyside>
         
@@ -627,16 +612,12 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image>
-              <sageplot>
-                f(x) = (4)^x
-                p=point([(-2,1/8),(-1,1/4),(0,1),(1,4),(2,16)],pointsize=50,color='blue')
-                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
-                p
-              </sageplot>
-            </image> 
+          <p> 
+          <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-graph-4x-2">
+                <xi:include href="prefigure/EL2-graph-4x.xml"/>
+              </prefigure>
+           </image>
           </p>
         </answer>
       </task> 
@@ -653,47 +634,37 @@
             </ul>
           
             <ol marker= "A." cols="2">  
-              <li> <p> <image>
-                <sageplot>
-                  f(x) = (4)^x +1
-                  p=point([(-2,9/8),(-1,5/4),(0,2),(1,5),(2,17)],pointsize=50,color='blue')
-                  p+=line([(-9,1),(9,1)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                  p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
-                  p
-                </sageplot>
-              </image> </p>  </li>
+              <li> <p> 
+              <image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-graph-4x-plus-one">
+                    <xi:include href="prefigure/EL2-graph-4x-plus-one.xml"/>
+                  </prefigure>
+              </image>
+                 </p>  </li>
 
-              <li> <p> <image>
-                  <sageplot>
-                    f(x) = (4)^(-x)
-                    p=point([(2,1/8),(1,1/4),(0,1),(-1,4),(-2,16)],pointsize=50,color='blue')
-                    p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                    p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
-                    p
-                  </sageplot>
-                </image> </p>  </li>
+              <li> <p>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-graph-4-minus-x">
+                      <xi:include href="prefigure/EL2-graph-4-minus-x.xml"/>
+                    </prefigure>
+                </image>
+               </p>  </li>
 
-                <li> <p> <image>
-                  <sageplot>
-                    f(x) = (4)^(x+1)
-                    p=point([(-3,1/8),(-2,1/4),(-1,1),(0,4),(1,16)],pointsize=50,color='blue')
-                    p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                    p+=plot(f, (x, -9, 8), ymin=-2, ymax=20, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,20]])
-                    p
-                  </sageplot>
-                </image> </p>  </li>
+                <li> <p> 
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-graph-4-x-plus-one">
+                      <xi:include href="prefigure/EL2-graph-4-x-plus-one.xml"/>
+                    </prefigure>
+                </image>
+                </p>  </li>
 
-                <li> <p> <image>
-                  <sageplot>
-                    f(x) = -4^(x)
-                    p=point([(-2,-1/8),(-1,-1/4),(0,-1),(1,-4),(2,-16)],pointsize=50,color='blue')
-                    p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3) 
-                    p+=plot(f, (x, -9, 8), ymin=-20, ymax=2, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-20,-19,..,2]])
-                    p
-                  </sageplot>
-                </image> </p>  </li>
-              
-              
+                <li> <p> 
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-graph-minus-4x">
+                      <xi:include href="prefigure/EL2-graph-minus-4x.xml"/>
+                    </prefigure>
+                </image> 
+                </p>  </li>
             </ol>
           </p>
         </statement>
@@ -834,13 +805,9 @@
     </statement>
     <answer>
         <image>
-          <sageplot>
-            f(x) = e^(x)
-            p=point([(0,1),(1,e)],pointsize=50,color='blue')
-            p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-            p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-            p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-ex">
+              <xi:include href="prefigure/EL2-graph-ex.xml"/>
+            </prefigure>
         </image>
       <p>
         <ul>
@@ -862,14 +829,12 @@
     <answer>
       
         <image>
-          <sageplot>
-            f(x) = e^(x-2)
-            p=point([(2,1),(3,e)],pointsize=50,color='blue')
-            p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-            p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-            p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-ex-minus2">
+              <xi:include href="prefigure/EL2-graph-ex-minus2.xml"/>
+            </prefigure>
         </image>
+ 
+
 
         <p>
           <ul>
@@ -891,13 +856,9 @@
     </statement>
     <answer>
         <image>
-          <sageplot>
-            f(x) = -1*3*e^x
-            p=point([(0,f(x=0)),(1,f(x=1))],pointsize=50,color='blue')
-            p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-            p+=plot(f, (x, -9, 8), ymin=-10, ymax=2, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-10,-9,..,2]])
-            p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-minus3-ex">
+              <xi:include href="prefigure/EL2-graph-minus3-ex.xml"/>
+            </prefigure>
         </image>
         <p>
           <ul>
@@ -919,15 +880,10 @@
     <answer>
       
         <image>
-          <sageplot>
-            f(x) = e^(-x)-4
-            p=point([(0,f(x=0)),(-1,f(x=-1))],pointsize=50,color='blue')
-            p+=line([(-9,-4),(9,-4)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-            p+=plot(f, (x, -9, 8), ymin=-6, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-            p
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-eminusx-minus4">
+              <xi:include href="prefigure/EL2-graph-e-minusx-minus4.xml"/>
+            </prefigure>
         </image>
-
         <p>
           <ul>
             <li> <p>Transformations: reflection over <m>y</m>-axis, shift down 4 </p> </li>
@@ -957,16 +913,11 @@
         </statement>
         <answer>
 
-            <image>
-              <sageplot>
-                f(x) = (3)^x
-                p=point([(0,1),(1,3)],pointsize=50,color='blue')
-                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3)
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p 
-              </sageplot>
-            </image> 
-            
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-3x">
+              <xi:include href="prefigure/EL2-graph-3x.xml"/>
+            </prefigure>
+        </image>
             <p> 
               <ul>
                 <li> <p>Exponential growth </p> </li>
@@ -987,15 +938,11 @@
         </statement>
         <answer>
           
-            <image>
-              <sageplot>
-                f(x) = (6)^(-x)
-                p=point([(0,1),(-1,6)],pointsize=50,color='blue')
-                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3) 
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
-            </image>  
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-6-minusx">
+              <xi:include href="prefigure/EL2-graph-6-minusx.xml"/>
+            </prefigure>
+        </image>
           
             <p> 
               <ul>
@@ -1016,15 +963,11 @@
         </statement>
         <answer>
           
-            <image>
-              <sageplot>
-                f(x) = (1/5)^(x-2)
-                p=point([(1,5),(2,1)],pointsize=50,color='blue')
-                p+=line([(-9,0),(9,0)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=8, thickness=3) 
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=8, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,8]])
-                p
-              </sageplot>
-            </image>  
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-one-fifth-x-minus2 ">
+              <xi:include href="prefigure/EL2-graph-one-fifth-x-minus2.xml"/>
+            </prefigure>
+        </image>
           
             <p> 
               <ul>
@@ -1045,16 +988,11 @@
         </statement>
         <answer>
           
-            <image>
-              <sageplot>
-                f(x) = (1/3)^(x)+4
-                p=point([(0,5),(-1,7)],pointsize=50,color='blue')
-                p+=line([(-9,4),(9,4)], linestyle="--", color='red',xmin=-8, xmax=8, ymin=-8, ymax=12, thickness=2)
-                p+=plot(f, (x, -9, 8), ymin=-2, ymax=12, color='blue', thickness=3, gridlines=[[-8,-7,..,8],[-8,-7,..,12]]) 
-                p
-              </sageplot>
-            </image>  
-          
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-one-third-x-plus4">
+              <xi:include href="prefigure/EL2-graph-one-third-x-plus4.xml"/>
+            </prefigure>
+        </image>
             <p> 
               <ul>
                 <li> <p>Exponential decay </p> </li>
