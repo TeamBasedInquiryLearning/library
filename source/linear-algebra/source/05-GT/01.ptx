@@ -49,6 +49,10 @@ defined by the standard basic vectors <m>\vec e_1,\vec e_2</m>.
       <slate surface="doenetml">
         <xi:include parse="text" href="doenet/GT1-doenet-transformation.xml"/>
       </slate>
+      <description>
+        <p>Interactive applet allowing users to drag two vectors and geometrically observe the result of applying
+          the linear transformation defined mapping the standard basis vectors to those two vectors.</p>
+      </description>
     </interactive>
   </figure>
 </observation>
@@ -337,6 +341,9 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
         <slate surface="doenetml">
           <xi:include parse="text" href="doenet/GT1-doenet-duplicate-column.xml"/>
         </slate>
+        <description>
+          <p>Interactive displaying the geometric effect of a linear transformation with two identical columns.</p>
+        </description>
       </interactive>
         <p>Which of the following is true?</p>
   <ol marker="A." cols="2">
@@ -355,6 +362,9 @@ area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{
       <slate surface="doenetml">
         <xi:include parse="text" href="doenet/GT1-doenet-scale-column.xml"/>
       </slate>
+        <description>
+          <p>Interactive displaying the geometric effect of scaling a column.</p>
+        </description>
     </interactive>
     <p>
 Which of the following is true?
@@ -380,6 +390,9 @@ parallelogram.
       <slate surface="doenetml">
         <xi:include parse="text" href="doenet/GT1-doenet-add-column.xml"/>
       </slate>
+      <description>
+        <p>Interactive applet illustrating the geometric effect of adding a column to another column.</p>
+      </description>
     </interactive>
     <p>
 Which of the following is true?
@@ -453,6 +466,9 @@ Consider <m>\det([\vec v \hspace{1em}\vec w+c \vec{v}])</m> and
         <slate surface="doenetml">
           <xi:include parse="text" href="doenet/GT1-doenet-add-column-multiples.xml"/>
         </slate>
+      <description>
+        <p>Interactive applet illustrating the geometric effect of adding a multiple of a column to another column.</p>
+      </description>
       </interactive>
 <p>
 The base of both parallelograms is <m>\vec{v}</m>, while the height has not changed,

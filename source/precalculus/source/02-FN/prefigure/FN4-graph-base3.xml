@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes/>
+    <group at="f">
+      <path start="(-4,-1)" stroke="blue">
+        <lineto point="(-1,2)"/>
+        <lineto point="(1,2)"/>
+        <lineto point="(4,-1)"/>
+      </path>
+      <label anchor="(2,3)" color="blue"><m>f(x)</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a piecewise linear function labeled f of x">
+      <annotation ref="f" text="A function increasing linearly from -4 comma -1 to -1 comma 2, then horizontally to 1 comma 2, then decreases to 4 comma -1"/>
+     
+    </annotation>
+  </annotations>
+</diagram>

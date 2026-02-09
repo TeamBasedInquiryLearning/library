@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=fabs(x+2)-4</definition>
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes/>
+    <group>
+      <graph at="f" function="f" domain="(-5,-1)" stroke="blue"/>
+      <label anchor="(-2,-2)"  color="blue"><m>f(x)</m></label>
+    </group> 
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A graph decreasing linearly from -5 comma -1 to -2 comma 0, then increasing linearly to -1 comma -3"/>
+    </annotation>
+  </annotations>
+</diagram>
