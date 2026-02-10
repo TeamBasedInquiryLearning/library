@@ -36,13 +36,6 @@ We recommend using Codespaces within your browser to propose changes to this rep
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TeamBasedInquiryLearning/library)
 
-If developing locally anyway, you are encouraged to review `.devcontainer.json`
-to learn our dependencies, and to install our `pre-commit` hook to prevent
-accidentally committing to the main branch:
-
-```
-git config core.hooksPath .githooks
-```
 
 ## Deployment
 
