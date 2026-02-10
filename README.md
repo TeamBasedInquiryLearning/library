@@ -36,10 +36,3 @@ We recommend using Codespaces within your browser to propose changes to this rep
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TeamBasedInquiryLearning/library)
 
-
-## Deployment
-
-```
-aws configure
-aws s3 cp [path/to/year] s3://BUCKET_NAME/[year]/ --recursive
-```
