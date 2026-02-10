@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="50" xmlns="https://prefigure.org">
+  <definition>f(x)=sin(x)</definition>
+  <definition>h(x)=sin(x-pi/2)</definition>
+  <coordinates bbox="(0,-1.1,2*pi+pi/2+0.2,1.1)">
+    <grid-axes spacings="(0,pi/2,2*pi+pi/2),(-2,0.25,3)" h-pi-format="yes" />
+    <graph at="f" function="f" dash="9 9" domain="(0,2*pi)"/>
+    <graph at="h" function="h" domain="(pi/2,2*pi+pi/2)"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The sine curve (dashed) and a transformation of it">
+      <annotation ref="f" sonify="yes" text="The curve sine of x"/>
+      <annotation ref="h" sonify="yes" text="The sine curve shifted horizontally to the right"/>
+    </annotation>
+  </annotations>
+</diagram>

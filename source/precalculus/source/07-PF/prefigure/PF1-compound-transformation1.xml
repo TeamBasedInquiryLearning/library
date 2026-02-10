@@ -1,0 +1,12 @@
+<diagram dimensions="(300,300)" margins="20" xmlns="https://prefigure.org">
+  <definition>f(x)=sin(2*x)</definition>
+  <coordinates bbox="(-2*pi-0.1,-1.1,2*pi+0.2,1.1)">
+    <grid-axes spacings="(-2*pi,pi/2,2*pi),(-3,0.5,3)" h-pi-format="yes" />
+    <graph at="f" function="f"  />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A transformation of the sine curve">
+      <annotation ref="f" sonify="yes" text="The curve sine of x compressed horizontally"/>
+    </annotation>
+  </annotations>
+</diagram>
