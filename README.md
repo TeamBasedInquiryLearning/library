@@ -19,7 +19,7 @@ You're directed to these resources:
   what needs to be changed? Start a
   [discussion](https://github.com/TeamBasedInquiryLearning/library/discussions)
   instead!
-- [Chat](http://chat.tbil.org): our Slack channels are welcome to
+- [Chat](http://chat.tbil.org): our Zulip channels are welcome to
   any discussion related to TBIL. "Live" discussion happens here for the most
   part.
 - And finally, we welcome direct edits to these material via pull request!
@@ -30,8 +30,9 @@ You're directed to these resources:
 
 ## Contributing for Advanced Users
 
-We recommend using Codespaces to propose changes to this repository or a fork,
-even for advanced users:
+This repository is equipped with a devcontainer image so that users do not need to install software to contribute.
+We recommend using Codespaces within your browser to propose changes to this repository or a fork, or 
+[installing Docker locally](https://pretextbook.org/doc/guide/html/tutorial-install.html#subsec-installing-a-docker-container) to use the devcontainer.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TeamBasedInquiryLearning/library)
 
