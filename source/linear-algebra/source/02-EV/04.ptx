@@ -151,134 +151,203 @@
 <activity estimated-time='10'>
     <introduction>
     <p>Consider the following three vectors in <m>\IR^3</m>:
-        <me>\vec v_1=\left[\begin{array}{c}-2 \\ 0 \\ 0\end{array}\right],
+        <me>\vec v_1=\left[\begin{array}{c}-2 \\ 0 \\ 3\end{array}\right],
     \vec v_2=\left[\begin{array}{c}1 \\ 3 \\ 0\end{array}\right],
    \text{ and }
-    \vec v_3=\left[\begin{array}{c}-2 \\ 5 \\ 4\end{array}\right]
+    \vec v_3=\left[\begin{array}{c}-2 \\ 6 \\ 6\end{array}\right]
   </me>.
         </p>
     </introduction>
     <task>
-        <p>
-            Let <m> \vec w = 3\vec v_1 - \vec v_2 - 5 \vec v_3 = \left[\begin{array}{c}\unknown \\ \unknown \\ \unknown\end{array}\right]</m>. 
-            The set <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m> is...
-            <ol marker="A.">
-                <li><p>linearly dependent: at least one vector is a linear combination of others</p></li>
-                <li><p>linearly independent: no vector is a linear combination of others</p></li>
-            </ol>
-        </p>
+        <statement>
+            <p>
+                Let <m> \vec v_4 = 3\vec v_1 - \vec v_2 - 2 \vec v_3 =
+                \left[\begin{array}{c}-3 \\ -15 \\ -3\end{array}\right]</m>. 
+                The set <m>\{\vec v_1,\vec v_2,\vec v_3,\vec v_4\}</m> is...
+                <ol marker="A.">
+                    <li><p>linearly dependent: at least one vector is a linear combination of others</p></li>
+                    <li><p>linearly independent: no vector is a linear combination of others</p></li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                A. We explicitly constructed <m>\vec v_4</m> as a linear combination of the others.
+                (It turns out <m>\vec v_3</m> is a linear combo as well.)
+            </p>
+        </answer>
     </task>
     <task> 
-        <p>
-       Find <me>\RREF \left[\begin{array}{ccc|c}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
-            \end{array}\right]= 
-        \RREF \left[\begin{array}{ccc|c}
-        -2 &amp; 1 &amp;-2 &amp; \unknown \\
-        0 &amp; 3  &amp; 5 &amp; \unknown  \\
-        0 &amp;0 &amp;4 &amp; \unknown 
-            \end{array}\right]=  \unknown .</me>
-        </p>
-        <p>   
-            What does this tell you about solution set for the vector equation 
-            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 =\vec w</m>?
-            <ol marker="A.">
-                <li>
-                    <p>
-                    It is inconsistent.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                    It is consistent with one solution.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                    It is consistent with infinitely many solutions.
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </task>
-    <task> 
-        <p>
-       Find <me>\RREF \left[\begin{array}{cccc|c}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w  &amp; \vec 0\\
-            \end{array}\right]= 
-        \RREF \left[\begin{array}{cccc|c}
-        -2 &amp; 1 &amp;-2 &amp; \unknown  &amp; 0\\
-        0 &amp; 3  &amp; 5 &amp; \unknown   &amp; 0 \\
-        0 &amp;0 &amp;4 &amp; \unknown   &amp; 0
-            \end{array}\right]=  \unknown .</me>
-        </p>
-        <p>   
-            What does this tell you about solution set for the vector equation 
-            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>?
-            <ol marker="A.">
-                <li>
-                    <p>
-                    It is inconsistent.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                    It is consistent with one solution.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                    It is consistent with infinitely many solutions.
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </task>
-        <task> 
+        <statement>
             <p>
-            Which of the following is the best conclusion obtained when we solved
-            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>?
+            Find <me>\RREF \left[\begin{array}{ccc|c}
+            \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec v_4 \\
+                \end{array}\right]= 
+            \RREF \left[\begin{array}{ccc|c}
+            -2 &amp; 1 &amp;-2 &amp; -3 \\
+            0 &amp; 3  &amp; 6 &amp; -15  \\
+            3 &amp;0 &amp;6 &amp; -3 
+                \end{array}\right]=  \unknown .</me>
+            </p>
+            <p>   
+                What does this guarantee about the solution set for the vector equation 
+                <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 =\vec v_4</m>?
                 <ol marker="A.">
                     <li>
                         <p>
-A pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
-            \end{array}\right]</m> guarantees the linear independence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by preventing contradictions.
+                        It is inconsistent.
                         </p>
                     </li>
                     <li>
                         <p>
-A pivot column in the <em>coefficient</em> matrix <m>\RREF \left[\begin{array}{cccc}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
-            \end{array}\right]</m> guarantees the linear independence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by preventing contradictions.
+                        It is consistent with one solution.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
-            \end{array}\right]</m> guarantees the linear dependence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by describing a linear combination of one vector in terms of the others.
+                        It is consistent with infinitely many solutions.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column in the <em>coefficient</em> matrix <m>\RREF \left[\begin{array}{cccc}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w  \\
-            \end{array}\right]</m> guarantees the linear dependence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by describing a linear combination of one vector in terms of the others.
+                        None of these.
                         </p>
                     </li>
                 </ol>
             </p>
-            </task>
-    </activity>
+        </statement>
+        <answer>
+            <p>
+            C. Since <me>
+            \RREF \left[\begin{array}{ccc|c}
+            -2 &amp; 1 &amp;-2 &amp; -3 \\
+            0 &amp; 3  &amp; 6 &amp; -15  \\
+            3 &amp;0 &amp;6 &amp; -3 
+                \end{array}\right] =
+            \RREF \left[\begin{array}{ccc|c}
+            1 &amp; 0 &amp;2 &amp; -1 \\
+            0 &amp; 1  &amp; 2 &amp; -5  \\
+            0 &amp;0 &amp;0 &amp; 0
+                \end{array}\right]</me>
+            has no contradiction and a free variable, it has infinitely-many solutions.
+            </p>
+        </answer>
+    </task>
+    <task> 
+        <statement>
+            <p>
+            Let <m>\vec w=\left[\begin{array}{c}\unknown \\ \unknown \\ \unknown\end{array}\right]</m>
+            be some arbitrary vector in <m>\mathbb R^3</m>.
+        Consider <me>\RREF \left[\begin{array}{cccc}
+            \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec v_4 \\
+                \end{array}\right]= 
+            \RREF \left[\begin{array}{cccc}
+            -2 &amp; 1 &amp;-2 &amp; -3 \\
+            0 &amp; 3  &amp; 6 &amp; -15  \\
+            3 &amp;0 &amp;6 &amp; -3 
+                \end{array}\right]=  \unknown .</me>
+            </p>
+            <p>   
+                What does this guarantee about the solution set for the vector equation 
+                <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec v_4=\vec w</m>?
+                <ol marker="A.">
+                    <li>
+                        <p>
+                        It is inconsistent.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        It is consistent with exactly one solution.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        It is not consistent with exactly one solution.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        It is consistent with infinitely many solutions.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                D. Due to the row of zeros, it might be inconsistent. But if it is consistent,
+                the free variable column guarantees it will have infinitely-many solutions.
+            </p>
+        </answer>
+    </task>
+    <task> 
+        <statement>
+            <p>
+            Which of the following describes any solution to the equation
+            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec v_4=\vec{w}</m>
+            for any <em>linearly dependent</em> set <m>\{\vec v_1,\vec v_2,\vec v_3,\vec v_4\}</m>
+            and some vector <m>\vec w\in \mathbb R^n</m>?
+                <ol marker="A.">
+                    <li>
+                        <p>
+No such solution can exist.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+It cannot be unique.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+It must be unique.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                B. If we assume the solution exists, the previous answer shows us that it cannot be the only one,
+                due to the free variable column.
+            </p>
+        </answer>
+    </task>
+    <task> 
+        <statement>
+            <p>
+            Which of the following describes any solution to the equation
+            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec v_4=\vec{w}</m>
+            for any <em>linearly independent</em> set <m>\{\vec v_1,\vec v_2,\vec v_3,\vec v_4\}</m>
+            and some vector <m>\vec w\in \mathbb R^n</m>?
+                <ol marker="A.">
+                    <li>
+                        <p>
+No such solution can exist.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+It cannot be unique.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+It must be unique.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                C. If we assume the solution exists, it must be the only one,
+                due to the lack of a free variable column.
+            </p>
+        </answer>
+    </task>
+</activity>
 <sage language="octave">
 </sage>
 
@@ -287,18 +356,15 @@ by describing a linear combination of one vector in terms of the others.
         <p>
   For any vector space,
   the set <m>\{\vec v_1,\dots\vec v_n\}</m> is linearly dependent if and only
-  if the vector equation <m>x_1\vec v_1+ x_2 \vec v_2+\dots+x_n\vec v_n=\vec{0}</m> is consistent with
-  infinitely many solutions.
+  if the vector equation <m>x_1\vec v_1+ x_2 \vec v_2+\dots+x_n\vec v_n=\vec w</m> cannot have
+  a unique solution for any <m>\vec w</m>.
         </p>
         <p>
-   Likewise, the set of vectors
+   On the other hand, the set of vectors
         <m>\{\vec v_1,\dots\vec v_n\}</m> is linearly independent 
-        if and only the vector equation <me>x_1\vec v_1+ x_2 \vec v_2 + \cdots + x_n\vec v_n = \vec{0}</me> 
-        has exactly one solution: <m>\left[\begin{array}{c}
-            x_1 \\ \vdots  \\ x_n
-                \end{array}\right]=\left[\begin{array}{c}
-                0 \\ \vdots  \\ 0
-                    \end{array}\right]</m>.
+        if and only if any solution to the vector equation
+        <me>x_1\vec v_1+ x_2 \vec v_2 + \cdots + x_n\vec v_n = \vec w</me> 
+        must be unique for any <m>\vec w</m>.
         </p>
     </statement>
 </fact>
@@ -323,8 +389,8 @@ by describing a linear combination of one vector in terms of the others.
   \left[\begin{array}{c}4\\3\\0\\1\end{array}\right]
   \right\}
   </me>
-  is linearly dependent (the part that shows its linear system has
-  infinitely many solutions).
+  is linearly dependent (the part that shows its linear system cannot have
+  a unique solution).
         </p>
     </statement>
 </activity>
