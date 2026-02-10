@@ -1,0 +1,31 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=1/2*x-1</definition>
+  <definition>g(x)=4*x-3</definition>
+  <coordinates bbox="[-6,-6,6,6]">
+    <grid-axes spacings="(-10,1,10),(-10,1,10)"/>
+    <group>
+    <graph at="f" function="f"/>
+    <point at="p1" p="(4,1)" fill="blue" stroke="blue"/>
+    <point at="p2" p="(0,-1)" fill="blue" stroke="blue"/>
+    <label anchor="(4,2)"  color="blue"><m>f(x)</m></label>
+    </group>
+    <group>
+    <graph at="g" function="g" stroke="red"/>
+    <point at="p3" p="(2,5)" fill="red" stroke="red"/>
+    <point at="p4" p="(0,-3)" fill="red" stroke="red"/>
+    <label anchor="(3,5)"  color="red"><m>g(x)</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="The graph of two lines">
+        <annotation ref="f" sonify="yes" text="A line labeled f of x sloping upwards 1 for every two units moved to the right"/>
+        <annotation ref="p1" text="The point 4 comma 1, lying on the blue line labeled f of x"/>
+        <annotation ref="p2" text="The point 0 comma -1, lying on the blue line labeled f of x"/>
+        <annotation ref="g" sonify="yes" text="A line sloping upwards 3 for every unit moved to the right"/>
+        <annotation ref="p3" text="The point 2 comma 5, lying on the red line labeled g of x"/>
+        <annotation ref="p4" text="The point 0 comma -3, lying on the red line labeled g of x"/>
+    </annotation>
+  </annotations>
+</diagram>
