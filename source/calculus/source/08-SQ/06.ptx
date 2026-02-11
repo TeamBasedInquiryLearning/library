@@ -33,7 +33,7 @@
 
     <fact xml:id="fact-SQ6sumAndMultipleRules">
             <statement>
-      <p permid="QCd">
+      <p>
         If <m>\displaystyle\sum a_n=A</m>,
           <m>\displaystyle\sum b_n=B</m>, and
           <m>c</m> is a real number, then
@@ -132,10 +132,10 @@
         <fact xml:id="fact-SQ6limitcomparisontest">
             <title>The Limit Comparison Test</title>
             <statement>
-      <p permid="QCd">
+      <p >
         Let <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> be series with positive terms.
         If
-        <me permid="RlX">
+        <me>
           \lim_{n \to \infty} \frac{b_n}{a_n} = c
         </me>
         for some positive (finite) constant <m>c</m>,
@@ -475,7 +475,7 @@
         <fact xml:id="fact-SQ6directcomparisontest">
             <title>The Direct Comparison Test</title>
             <statement>
-      <p permid="QCd">
+      <p>
         Let <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> be series with positive terms.
         If there is a <m>k</m> such that <m>b_n\leq a_n</m> for each <m>n\geq k</m>, then:
         <ul>

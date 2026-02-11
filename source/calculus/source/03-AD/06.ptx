@@ -133,7 +133,7 @@
       <p>
         Sketch a sequence of tangent lines at various points to each of the following curves in <xref ref="concavity-2"/>. 
       </p>
-          <figure xml:id="concavity-2" permid="PJf">
+          <figure xml:id="concavity-2">
       <caption>From left to right, three functions that are all decreasing.</caption>
       <sidebyside widths="30% 30% 30%">
         <image xml:id="concavity-2-up">
@@ -217,7 +217,7 @@
     
 
 <remark xml:id="activity-remark-concavity-terminology"><p>Recall the terminology of concavity: when a curve bends upward, we say its shape is concave up. When a curve bends downwards, we say its shape is concave down.</p></remark>
-<!--     <p permid="KZm">
+<!--     <p>
       We now introduce the notion of <em>concavity</em>
           <idx><h>concavity</h></idx>
       which provides simpler language to describe these behaviors.
@@ -235,7 +235,7 @@
     <activity xml:id="activity-derivative-concavity3a">
     <statement><p>Look at the curves in <xref ref="concavity-3"/>. Which curve is concave up? Which one is concave down? Why? Try to explain using the graph!</p>
 
-        <figure xml:id="concavity-3" permid="vQo">
+        <figure xml:id="concavity-3">
         <caption>Two concavities, which is which? </caption>
         <sidebyside widths="45% 45%">
             <image>
@@ -290,9 +290,9 @@
     </answer>
     </activity>
     
-    <definition xml:id="concavity-and-first-derivative" permid="hcP">
+    <definition xml:id="concavity-and-first-derivative">
       <statement>
-        <p permid="slO">
+        <p >
           Let <m>f</m> be a differentiable function on some interval <m>(a,b)</m>.
           Then <m>f</m> is <term>concave up</term>
               <idx><h>concave up</h></idx>
