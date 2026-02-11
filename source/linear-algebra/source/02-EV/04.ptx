@@ -299,7 +299,7 @@ The <em>non-pivot</em> column in the <em>coefficient</em> matrix
                 <p>
 (D). <m>\RREF \left[\begin{array}{cccc} 
   \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
-\end{array}\right]</m> (or <m>\RREF \left[\begin{array}{cccc|0} 
+\end{array}\right]</m> (or <m>\RREF \left[\begin{array}{cccc|c} 
   \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0
 \end{array}\right]</m>) can be used to solve
 <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>,
