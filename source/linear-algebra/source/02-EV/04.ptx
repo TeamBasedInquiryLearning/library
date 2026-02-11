@@ -170,11 +170,12 @@
             </ol>
         </p>
       </statement>
-      <solution>
+      <answer>
+        <p>A.</p>
         <p>
-(A). <m>\vec w</m> is a linear combination of the others, so the set is dependent.
+<m>\vec w</m> is a linear combination of the others, so the set is dependent.
         </p>
-      </solution>
+      </answer>
     </task>
     <task> 
       <statement>
@@ -210,9 +211,10 @@
             </ol>
         </p>
       </statement>
-      <solution>
-        <p>(B). Each variable is set equal to a specific value.</p>
-      </solution>
+      <answer>
+        <p>B.</p>
+        <p>Each variable is set equal to a specific value.</p>
+      </answer>
     </task>
     <task> 
       <statement>
@@ -248,9 +250,10 @@
             </ol>
         </p>
         </statement>
-      <solution>
-        <p>(C). <m>\vec w</m>'s column is not a pivot, revealing a free variable and infinitely-many solutions.</p>
-      </solution>
+      <answer>
+        <p>C.</p>
+        <p><m>\vec w</m>'s column is not a pivot, revealing a free variable and infinitely-many solutions.</p>
+      </answer>
         </task>
         <task>
             <statement>
@@ -295,9 +298,10 @@ The <em>non-pivot</em> column in the <em>coefficient</em> matrix
                 </ol>
             </p>
             </statement>
-            <solution>
+            <answer>
+                <p>D.</p>
                 <p>
-(D). <m>\RREF \left[\begin{array}{cccc} 
+<m>\RREF \left[\begin{array}{cccc} 
   \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
 \end{array}\right]</m> (or <m>\RREF \left[\begin{array}{cccc|c} 
   \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0
@@ -310,7 +314,7 @@ Note that (C) technically represents the equation
 <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 =\vec w</m>
 which isn't what was asked about.
                 </p>
-            </solution>
+            </answer>
             </task>
     </activity>
 
