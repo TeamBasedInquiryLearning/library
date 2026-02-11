@@ -1,0 +1,20 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=acos(x)</definition>
+  <coordinates bbox="(-2.1,-pi-0.1,2.1,pi+0.1)">
+    <grid-axes spacings="(-3,1,3),(-pi,pi/4,pi)" v-pi-format="yes" />
+    <group at="points">
+      <repeat at="points1" parameter="i=0..6" >
+        <point at="p" p="(cos(i*pi/6),i*pi/6)" annotate="yes" text="The point ${cos(i*pi/6)} comma ${i*pi/6}"/>
+      </repeat>
+      <point at="point3" p="(-1/sqrt(2),3*pi/4)" annotate="yes" text="The point - square root of two over two comma 3pi over 4 "/>
+      <point at="point4" p="(1/sqrt(2),pi/4)" annotate="yes" text="The point square root of two over two comma pi over 4 "/>
+    </group>
+    <graph at="f" function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The arccosine curve and points along it">
+      <annotation ref="points"/>
+      <annotation ref="f" sonify="yes" text="The curve arccosine of x"/>
+    </annotation>
+  </annotations>
+</diagram>

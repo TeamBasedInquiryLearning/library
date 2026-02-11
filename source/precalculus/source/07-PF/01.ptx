@@ -239,16 +239,10 @@
         <answer>
           <p> 
             <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/6)
-for i in [0..12]:
-    P+=point((pi*i/6,sin(pi*i/6)),pointsize=50,color='blue')
-for i in [0..8]:
-    P+=point((pi*i/4,sin(pi*i/4)),pointsize=50,color='blue')
-P
-              </sageplot>
-            </image> 
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-points">
+                    <xi:include href="prefigure/PF1-sine-points.xml"/>
+                </prefigure>
+            </image>
           </p>
         </answer>
       </task>
@@ -468,10 +462,9 @@ P
         <answer>
           <p>
             <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,-2*pi,4*pi),ticks=pi/2)
-              </sageplot>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine">
+                    <xi:include href="prefigure/PF1-sine.xml"/>
+                </prefigure>
             </image> 
           </p>
         </answer>
@@ -518,43 +511,34 @@ TBIL.trig_plot(sin(x),(x,-2*pi,4*pi),ticks=pi/2)
         <statement>
           <p>Which of the following graphs represents one cycle of <m>h(x)=\sin 2x</m>. (To help compare the functions, one cycle of <m>f(x)=\sin x</m> is shown as a dashed line on each graph.)  
             <ol marker= "A." cols="2"> 
-              <li> <image>
-                <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(2*sin(x),(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                </sageplot> 
-              </image>   </li>
               <li>
                 <image>
-                  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(2*x),(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                  </sageplot>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation1">
+                        <xi:include href="prefigure/PF1-sine-transformation1.xml"/>
+                    </prefigure>
                 </image> 
-              </li> 
-              <li> <image>
-                <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x/2),(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                </sageplot> 
-              </image>  </li>
-            
-              <li> <image>
-                <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x)+2,(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                </sageplot> 
-              </image>   </li>
-              
-            
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation2">
+                        <xi:include href="prefigure/PF1-sine-transformation2.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation3">
+                        <xi:include href="prefigure/PF1-sine-transformation3.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation4">
+                        <xi:include href="prefigure/PF1-sine-transformation4.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
             </ol>  
           </p>
         </statement>
@@ -599,43 +583,34 @@ P
         <statement>
           <p>Which of the following graphs represents one cycle of <m>j(x)=\sin \frac{1}{2}x</m>. (To help compare the functions, one cycle of <m>f(x)=\sin x</m> is shown as a dashed line on each graph.) 
             <ol marker= "A." cols="2"> 
-              <li> <image>
-                <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(2*sin(x),(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                </sageplot> 
-              </image>   </li>
               <li>
                 <image>
-                  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(2*x),(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                  </sageplot>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation1-2">
+                        <xi:include href="prefigure/PF1-sine-transformation1.xml"/>
+                    </prefigure>
                 </image> 
-              </li> 
-              <li> <image>
-                <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x/2),(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                </sageplot> 
-              </image>  </li>
-            
-              <li> <image>
-                <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x)+2,(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                </sageplot> 
-              </image>   </li>
-              
-            
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation2-2">
+                        <xi:include href="prefigure/PF1-sine-transformation2.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation3-2">
+                        <xi:include href="prefigure/PF1-sine-transformation3.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation4-2">
+                        <xi:include href="prefigure/PF1-sine-transformation4.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
             </ol> 
           </p>
         </statement>
@@ -682,41 +657,34 @@ P
         <statement>
           <p>Which of the following graphs represents one cycle of <m>k(x)=\sin \left(x+\dfrac{\pi}{2}\right)</m>. (To help compare the functions, one cycle of <m>f(x)=\sin x</m> is shown as a dashed line on each graph.) 
             <ol marker= "A." cols="2">  
-                <li> <image>
-                  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x-pi/2),(x,pi/2,5/2*pi),ticks=pi/2,thickness=3)
-P
-                  </sageplot> 
-                </image>   </li>
-
-                <li> <image>
-                  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x+pi/2),(x,-pi/2,3/2*pi),ticks=pi/2,thickness=3)
-P
-                  </sageplot> 
-                </image>   </li>
-            
-                <li> <image>
-                  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x)+pi/2,(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                  </sageplot> 
-                </image>   </li>
-                <li> <image>
-                  <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(sin(x)-pi/2,(x,0,2*pi),ticks=pi/2,thickness=3)
-P
-                  </sageplot> 
-                </image>   </li>
-            
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation5">
+                        <xi:include href="prefigure/PF1-sine-transformation5.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation6">
+                        <xi:include href="prefigure/PF1-sine-transformation6.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation7">
+                        <xi:include href="prefigure/PF1-sine-transformation7.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
+              <li>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-transformation8">
+                        <xi:include href="prefigure/PF1-sine-transformation8.xml"/>
+                    </prefigure>
+                </image> 
+              </li>
             </ol>  
           </p>
         </statement>
@@ -956,16 +924,10 @@ P
         <answer>
           <p>
             <image>
-              <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(cos(x),(x,0,2*pi),ticks=pi/6)
-for i in [0..12]:
-    P+=point((pi*i/6,cos(pi*i/6)),pointsize=50,color='blue')
-for i in [0..8]:
-    P+=point((pi*i/4,cos(pi*i/4)),pointsize=50,color='blue')
-P
-              </sageplot>
-            </image> 
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-cosine-points">
+                    <xi:include href="prefigure/PF1-cosine-points.xml"/>
+                </prefigure>
+            </image>
           </p>
         </answer>
       </task>
@@ -1002,22 +964,18 @@ P
         Now that we can graph both the standard sine and cosine curves, we can add them to our list of parent functions in <xref ref="graphs-of-common-functions"/>. We also show them graphed below on the interval <m>[0,2\pi]</m>.</p>
 
         <p>
-        <m>f(x)=\sin x</m>
-        <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,0,2*pi),ticks=pi/2)
-          </sageplot> 
-        </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-sine-one-period">
+                    <xi:include href="prefigure/PF1-sine-one-period.xml"/>
+                </prefigure>
+            </image>
       </p>
       <p> 
-        <m>f(x)=\cos x</m>
-        <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,0,2*pi),ticks=pi/2)
-          </sageplot> 
-        </image>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-cosine-one-period">
+                    <xi:include href="prefigure/PF1-cosine-one-period.xml"/>
+                </prefigure>
+            </image>
       </p>
     </statement>
      
@@ -1032,14 +990,11 @@ TBIL.trig_plot(cos(x),(x,0,2*pi),ticks=pi/2)
     <task>
       <statement>
         <p>
-          <image>
-            <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(-pi/2,5/2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(2*sin(x-pi/2), (-pi/2,5/2*pi),ticks=pi/2)
-P
-            </sageplot> 
-          </image> 
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-fluency1">
+                    <xi:include href="prefigure/PF1-fluency1.xml"/>
+                </prefigure>
+            </image>
         </p>
       </statement>
       <answer>
@@ -1057,14 +1012,11 @@ P
     <task>
       <statement>
         <p>
-          <image>
-            <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-P=TBIL.trig_plot(sin(x),(-pi/2,5/2*pi),ticks=pi/2,thickness=1,linestyle="--")
-P+=TBIL.trig_plot(1/2*sin(2*x+2*pi), (-pi/2,5/2*pi),ticks=pi/2)
-P
-            </sageplot> 
-          </image> 
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-fluency2">
+                    <xi:include href="prefigure/PF1-fluency2.xml"/>
+                </prefigure>
+            </image>
         </p>
       </statement>
       <answer>
@@ -1075,7 +1027,7 @@ P
           Period: <m>\pi</m>
         </p>
         <p>
-          Phase shift: <m>-\pi</m> or <m>\pi</m>
+          Phase shift: <m>-\frac{\pi}{2}</m> or <m>\frac{\pi}{2}</m>
         </p>
       </answer>
     </task>
@@ -1223,10 +1175,9 @@ P
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(2*x),(-2*pi,2*pi))
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-compound-transformation1">
+                <xi:include href="prefigure/PF1-compound-transformation1.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>
@@ -1236,10 +1187,9 @@ TBIL.trig_plot(sin(2*x),(-2*pi,2*pi))
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(2*(x-pi/2)),(-2*pi,2*pi))
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-compound-transformation2">
+                <xi:include href="prefigure/PF1-compound-transformation2.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>
@@ -1249,10 +1199,9 @@ TBIL.trig_plot(sin(2*(x-pi/2)),(-2*pi,2*pi))
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(3*sin(2*(x-pi/2)),(-2*pi,2*pi))
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-compound-transformation3">
+                <xi:include href="prefigure/PF1-compound-transformation3.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>
@@ -1262,10 +1211,9 @@ TBIL.trig_plot(3*sin(2*(x-pi/2)),(-2*pi,2*pi))
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(3*sin(2*(x-pi/2))-3,(-2*pi,2*pi))
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-compound-transformation4">
+                <xi:include href="prefigure/PF1-compound-transformation4.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>
@@ -1281,10 +1229,9 @@ TBIL.trig_plot(3*sin(2*(x-pi/2))-3,(-2*pi,2*pi))
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(2*sin(3*x-pi)+4,(-2*pi,2*pi),ymin=0)
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-graph-activity1">
+                <xi:include href="prefigure/PF1-graph-activity1.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>
@@ -1294,10 +1241,9 @@ TBIL.trig_plot(2*sin(3*x-pi)+4,(-2*pi,2*pi),ymin=0)
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(4*cos(2*x+2*pi)+1,(-2*pi,2*pi))
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-graph-activity2">
+                <xi:include href="prefigure/PF1-graph-activity2.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>
@@ -1307,10 +1253,9 @@ TBIL.trig_plot(4*cos(2*x+2*pi)+1,(-2*pi,2*pi))
       </statement>
       <answer>
         <image>
-          <sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(-3*sin(4*x-pi/2)+1,(-2*pi,2*pi))
-          </sageplot>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF1-graph-activity3">
+                <xi:include href="prefigure/PF1-graph-activity3.xml"/>
+            </prefigure>
         </image>
       </answer>
     </task>

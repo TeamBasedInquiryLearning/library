@@ -1,0 +1,12 @@
+<diagram dimensions="(300,300)" margins="30" xmlns="https://prefigure.org">
+  <definition>f(x)=tan(x)</definition>
+  <coordinates bbox="(-0.2,-1.1,pi+0.2,1.1)">
+    <grid-axes spacings="(-2*pi,pi/4,2*pi),(-1,0.5,13)" h-pi-format="yes" hlabels="(0,pi/4,pi)" vlabels="(-3,1,3)"/>
+    <graph at="f" function="f" domain="(0,pi)" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The tangent curve between 0 and pi">
+      <annotation ref="f" sonify="yes" text="The tangent curve between 0 and pi"/>
+    </annotation>
+  </annotations>
+</diagram>

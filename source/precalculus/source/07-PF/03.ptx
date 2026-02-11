@@ -39,17 +39,11 @@
         Which of the following equations determines the angle of the ramp,
         which the carpenter will use to set his saw?
         </p>
-        <image><sageplot>
-p=Graphics()
-p+=line([(0,0),(48,0),(48,4),(0,0)],thickness="1",color="black")
-p+=text(r"$\theta$", (15,0.6),fontsize=10,color="black")
-p+=arc((0,0),14.3,sector=(0,arctan(1/12)),color="black")
-p+=text("$4$",(48.5,2),fontsize=10,color="black")
-p+=text("$48$",(24,2.6),fontsize=10,color="black")
-p.axes(False)
-p.set_aspect_ratio(1)
-p
-        </sageplot></image>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-triangle">
+            <xi:include href="prefigure/PF3-triangle.xml"/>
+          </prefigure>
+        </image>
         <ol marker="A.">
           <li><m>\sin(\theta)=\frac{1}{12}</m></li>
           <li><m>\cos(\theta)=\frac{1}{12}</m></li>
@@ -84,31 +78,35 @@ p
         <ol marker="A." cols="2">
           <li>
             <p><m>0 \leq x \leq \pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,0,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-sin-restriction1">
+                <xi:include href="prefigure/PF3-sin-restriction1.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,-pi/2,pi/2),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-sin-restriction2">
+                <xi:include href="prefigure/PF3-sin-restriction2.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>0 \leq x \leq 2\pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,0,2*pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-sin-restriction3">
+                <xi:include href="prefigure/PF3-sin-restriction3.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>-\pi \leq x \leq \pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(sin(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-sin-restriction4">
+                <xi:include href="prefigure/PF3-sin-restriction4.xml"/>
+              </prefigure>
+            </image>
           </li>
         </ol>
       </statement>
@@ -182,31 +180,35 @@ TBIL.trig_plot(sin(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
         <ol marker="A." cols="2">
           <li>
             <p><m>0 \leq x \leq \pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,0,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-cos-restriction1">
+                <xi:include href="prefigure/PF3-cos-restriction1.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,-pi/2,pi/2),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-cos-restriction2">
+                <xi:include href="prefigure/PF3-cos-restriction2.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>0 \leq x \leq 2\pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,0,2*pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-cos-restriction3">
+                <xi:include href="prefigure/PF3-cos-restriction3.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>-\pi \leq x \leq \pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(cos(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-cos-restriction4">
+                <xi:include href="prefigure/PF3-cos-restriction4.xml"/>
+              </prefigure>
+            </image>
           </li>
         </ol>
       </statement>
@@ -272,31 +274,35 @@ TBIL.trig_plot(cos(x),(x,-pi,pi),ymin=-1,ymax=1,ticks=[pi/2,1],thickness=2)
         <ol marker="A." cols="2">
           <li>
             <p><m>0 \leq x \leq \pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(tan(x),(x,0,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2, detect_poles=True)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-tan-restriction1">
+                <xi:include href="prefigure/PF3-tan-restriction1.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>-\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2}</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(tan(x),(x,-pi/2,pi/2),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-tan-restriction2">
+                <xi:include href="prefigure/PF3-tan-restriction2.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>0 \leq x \leq 2\pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(tan(x),(x,0,2*pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detect_poles=True)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-tan-restriction3">
+                <xi:include href="prefigure/PF3-tan-restriction3.xml"/>
+              </prefigure>
+            </image>
           </li>
           <li>
             <p><m>-\pi \leq x \leq \pi</m></p>
-              <p><image><sageplot>
-<xi:include parse="text" href="../../../common/sagemath/library.sage"/>
-TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detect_poles=True)
-              </sageplot></image></p>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-tan-restriction4">
+                <xi:include href="prefigure/PF3-tan-restriction4.xml"/>
+              </prefigure>
+            </image>
           </li>
         </ol>
       </statement>
@@ -506,14 +512,11 @@ TBIL.trig_plot(tan(x),(x,-pi,pi),ymin=-3,ymax=3,ticks=[pi/2,1],thickness=2,detec
           </p>
         </statement>
         <answer>
-          <image><sageplot>
-p=plot(arcsin(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-for xval in [-1,-sqrt(3)/2,-sqrt(2)/2,-1/2,0,1/2,sqrt(2)/2,sqrt(3)/2,1]:
-    p+=point((xval,arcsin(xval)),pointsize=50,color="blue")
-p.SHOW_OPTIONS['xmin']=-pi
-p.SHOW_OPTIONS['xmax']=pi
-p
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-graph-arcsin">
+              <xi:include href="prefigure/PF3-graph-arcsin.xml"/>
+            </prefigure>
+          </image>
         </answer>
       </task>
       <task>
@@ -639,14 +642,11 @@ p
           </p>
         </statement>
         <answer>
-          <image><sageplot>
-p=plot(arccos(x),xmin=-1,xmax=1,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-for xval in [-1,-sqrt(3)/2,-sqrt(2)/2,-1/2,0,1/2,sqrt(2)/2,sqrt(3)/2,1]:
-    p+=point((xval,arccos(xval)),pointsize=50,color="blue")
-p.SHOW_OPTIONS['xmin']=-pi
-p.SHOW_OPTIONS['xmax']=pi
-p
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-graph-arccos">
+              <xi:include href="prefigure/PF3-graph-arccos.xml"/>
+            </prefigure>
+          </image>
         </answer>
       </task>
       <task>
@@ -756,14 +756,11 @@ p
           </p>
         </statement>
         <answer>
-          <image><sageplot>
-p=plot(arctan(x),xmin=-pi,xmax=pi,ymin=-pi,ymax=pi,thickness=3,aspect_ratio=1,detect_poles=True,gridlines=True, ticks=[1,pi/4],tick_formatter=[SR(1),pi])
-for xval in [-sqrt(3),-1,-1/sqrt(3),0,1/sqrt(3),1,sqrt(3)]:
-    p+=point((xval,arctan(xval)),pointsize=50,color="blue")
-p.SHOW_OPTIONS['xmin']=-pi
-p.SHOW_OPTIONS['xmax']=pi
-p
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-graph-arctan">
+              <xi:include href="prefigure/PF3-graph-arctan.xml"/>
+            </prefigure>
+          </image>
         </answer>
       </task>
       <task>
@@ -812,18 +809,11 @@ p
           </p>
         </statement>
         <answer>
-          <image><sageplot>
-            p=Graphics()
-            p+=line([(0,0),(12,0),(12,5),(0,0)],thickness="1",color="black")
-            p+=text(r"$\theta$", (11.5,3.8),fontsize=15,color="black")
-            p+=arc((12,5),1,sector=(3*pi/2-arccos(5/12),3*pi/2),color="black")
-            p+=text("$5$",(12.2,2.5),fontsize=15,color="black")
-            p+=text("$13$",(6,2.8),fontsize=15,color="black")
-            p+=text("$12$",(6,-0.3),fontsize=15,color="blue")
-            p.axes(False)
-            p.set_aspect_ratio(1)
-            p
-          </sageplot></image>
+          <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-PF3-triangle2">
+              <xi:include href="prefigure/PF3-triangle2.xml"/>
+            </prefigure>
+          </image>
         </answer>
       </task>
       <task>
