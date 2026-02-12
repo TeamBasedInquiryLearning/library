@@ -570,14 +570,14 @@
     </p>
     </remark>
     
-    <definition xml:id="def-vertical-line-test">
+    <fact xml:id="def-vertical-line-test">
       <statement>
-        <p>
-          The <term>vertical line test</term> is a method used to determine whether a relation on a graph is a function. </p>
-          <p>Start by drawing a vertical line anywhere on the graph and observe the number of times the relation on the graph intersects with the vertical line. If every possible vertical line intersects the graph at only one point, then the relation is a function. If, however, the graph of the relation intersects a vertical line more than once (anywhere on the graph), then the relation is not a function.
+        <p> The <term>vertical line test</term> is a method used to determine whether a relation described by a graph is a function. 
+        </p>
+        <p>If there is any vertical line that intersects the graph in multiple places, the relation described by that graph is not a function.
         </p>
       </statement>
-    </definition>
+    </fact>
 
     <activity xml:id="FN1-determine-if-function-using-vertical-line-test">
   <introduction>
