@@ -1,0 +1,25 @@
+<diagram dimensions="(300,100)" margins="(50,10,10,10)" xmlns="https://prefigure.org">
+  <definition>width=4</definition>
+  <definition>spacing=1</definition>
+  <coordinates bbox="(-width,-2,width,2)">
+    <axes axes="horizontal" arrows="2" hticks="(-width+spacing,spacing,width-spacing)" hlabels="(-width+1,spacing,width-1)"/>
+    <line at="L1" endpoints="((-2,-0.2),(-2,2.2))" stroke="red" dash="9 9"/>
+    <line at="L2" endpoints="((2,-0.2),(2,2.2))" stroke="red" dash="9 9"/>
+    <group>
+      <label at="l1" anchor="(-3,1)" font-size="30"><m>-</m></label>
+      <label at="l2" anchor="(0,1)" font-size="30"><m>+</m></label>
+      <label at="l3" anchor="(3,1)" font-size="30"><m>-</m></label>
+    </group>
+    <label at="f" anchor="(-4.5,1)"><m>f^\prime(x)</m></label>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A number line from -3 to 3 ">
+      <annotation ref="L1" text="A dashed vertical red line at -2"/>
+      <annotation ref="L2" text="A dashed vertical red line at 2"/>
+      <annotation ref="l1" text="A minus over the portion of the number line to the left of -2"/>
+      <annotation ref="l2" text="A plus over the portion of the number line between -2 and 2"/>'
+      <annotation ref="l3" text="A plus over the portion of the number line to the right of 2"/>
+      <annotation ref="f" text="The row of signs is labeled f prime of x"/>
+    </annotation>
+  </annotations>
+</diagram>

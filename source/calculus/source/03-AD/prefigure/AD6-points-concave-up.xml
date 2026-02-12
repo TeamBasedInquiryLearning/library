@@ -1,0 +1,26 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>f(x)=(x-1)^2 + 1</definition>
+  <definition>xs=(-0.5,0.5,1.5,2.5)</definition>
+  <coordinates bbox="(-1.1,-0.1,3.1,5.1)">
+    <grid-axes />
+    <graph at="f" function="f"/>
+    <repeat at="r" parameter="k=0..4">
+      <group at="p">
+        <tangent-line at="tangent" function="f" point="xs[k]" domain="(xs[k]-0.25,xs[k]+0.25)" stroke="green"/>
+        <point at="point" p="(xs[k],f(xs[k]))" />
+      </group>
+    </repeat>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a parabola and tangent line segments at four points along">
+      <annotation ref="f" sonify="yes" text="A parabola opening upwards"/>
+      <annotation ref="r" text="Four points on the parabola and their tangent line segments">
+        <annotation ref="p-1" text="The point at x equals -0.5 and a piece of its tangent line, which slopes down steeply" />
+        <annotation ref="p-2" text="The point at x equals 0.5 and a piece of its tangent line, which slopes down shallowly" />
+        <annotation ref="p-3" text="The point at x equals 1.5 and a piece of its tangent line, which slopes up shallowly" />
+        <annotation ref="p-4" text="The point at x equals 2.5 and a piece of its tangent line, which slopes up steeply" />
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>f(x)=-x^2+6*x</definition>
+  <coordinates bbox="(-0.1,-0.1,4.1,9.1)">
+    <grid-axes/>
+    <graph at="f" function="f"/>
+    <point p="(0,0)"/>
+    <definition>n=4</definition>
+    <definition>d=4/n</definition>
+    <repeat ref="r" annotate="yes" parameter="k=0..(n-1)" text="A piecewise linear approximation of the curve with two pieces">
+      <point p="((k+1)*d,f((k+1)*d))"/>
+      <line endpoints="((k*d,f((k)*d)),((k+1)*d,f((k+1)*d)))" stroke="red" dash="9 9"/>
+    </repeat>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a function">
+      <annotation ref="f" sonify="yes" text="A downward facing parabola passing through the origin, with a maximum at 3 comma 9 and also passing through 4 comma 8"/>
+      <annotation ref="r"/>
+    </annotation>
+  </annotations>
+</diagram>

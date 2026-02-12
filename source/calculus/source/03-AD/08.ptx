@@ -30,251 +30,31 @@
             <ol marker="A." cols="2">
               <li>
                 <image>
-                  <sageplot>
-                    # Import necessary library
-                    from sage.plot.graphics import Graphics
-
-                    # Define variables
-                    x = 2
-                    side_large_square = 8
-                    side_small_square = 2
-                    side_inner_square = side_large_square - 2 * side_small_square
-
-                    # Create the large square
-                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
-                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
-
-                    # Create the inner square
-                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
-                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
-
-                    # Create the small squares (one corner example, replicate for all corners)
-                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
-                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
-                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
-                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
-
-                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
-                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
-                    lass1 = line2d([(6,8.25), (6,8.75)])
-                    lass2 = line2d([(8,8.25), (8,8.75)])
-                    sll1 = line2d([(8.25,6),(8.75,6)])
-                    sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("8-2x", (9.1,4), fontsize=15,color='black')
-                    label_x = text("x", (7,8.75), fontsize=15, color='black')
-
-                    # Combine all parts into one graphic
-                    geometry = Graphics()
-                    geometry += large_square
-                    geometry += inner_square
-                    geometry += inner_square2
-                    geometry += small_square_1
-                    geometry += small_square_2
-                    geometry += small_square_3
-                    geometry += small_square_4
-                    geometry += line_above_small_square
-                    geometry += lass1
-                    geometry += lass2
-                    geometry += label_x
-                    geometry += side_label_line
-                    geometry += sll1
-                    geometry += sll2
-                    geometry += label_side
-
-                    # Set axes and title
-                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
-                    geometry.axes(False)
-
-                    # Show the plot
-                    geometry
-                  </sageplot>
-                </image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-AD8-box1">
+                    <xi:include href="prefigure/AD8-box1.xml"/>
+                  </prefigure>
+                </image>   
               </li>
               <li>
                 <image>
-                  <sageplot>
-                    # Import necessary library
-                    from sage.plot.graphics import Graphics
-
-                    # Define variables
-                    x = 2
-                    side_large_square = 8
-                    side_small_square = 2
-                    side_inner_square = side_large_square - 2 * side_small_square
-
-                    # Create the large square
-                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
-                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
-
-                    # Create the inner square
-                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
-                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
-
-                    # Create the small squares (one corner example, replicate for all corners)
-                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
-                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
-                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
-                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
-
-                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
-                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
-                    lass1 = line2d([(6,8.25), (6,8.75)])
-                    lass2 = line2d([(8,8.25), (8,8.75)])
-                    sll1 = line2d([(8.25,6),(8.75,6)])
-                    sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("8-x", (9,4), fontsize=15,color='black')
-                    label_x = text("x", (7,8.75), fontsize=15, color='black')
-
-                    # Combine all parts into one graphic
-                    geometry = Graphics()
-                    geometry += large_square
-                    geometry += inner_square
-                    geometry += inner_square2
-                    geometry += small_square_1
-                    geometry += small_square_2
-                    geometry += small_square_3
-                    geometry += small_square_4
-                    geometry += line_above_small_square
-                    geometry += lass1
-                    geometry += lass2
-                    geometry += label_x
-                    geometry += side_label_line
-                    geometry += sll1
-                    geometry += sll2
-                    geometry += label_side
-
-                    # Set axes and title
-                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
-                    geometry.axes(False)
-
-                    # Show the plot
-                    geometry
-                  </sageplot>
-                </image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-AD8-box2">
+                    <xi:include href="prefigure/AD8-box2.xml"/>
+                  </prefigure>
+                </image>   
               </li>
               <li>
                 <image>
-                  <sageplot>
-                    # Import necessary library
-                    from sage.plot.graphics import Graphics
-
-                    # Define variables
-                    x = 2
-                    side_large_square = 8
-                    side_small_square = 2
-                    side_inner_square = side_large_square - 2 * side_small_square
-
-                    # Create the large square
-                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
-                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
-
-                    # Create the inner square
-                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
-                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
-
-                    # Create the small squares (one corner example, replicate for all corners)
-                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
-                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
-                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
-                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
-
-                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
-                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
-                    lass1 = line2d([(6,8.25), (6,8.75)])
-                    lass2 = line2d([(8,8.25), (8,8.75)])
-                    sll1 = line2d([(8.25,6),(8.75,6)])
-                    sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("y", (8.75,4), fontsize=15,color='black')
-                    label_x = text("x", (7,8.75), fontsize=15, color='black')
-
-                    # Combine all parts into one graphic
-                    geometry = Graphics()
-                    geometry += large_square
-                    geometry += inner_square
-                    geometry += inner_square2
-                    geometry += small_square_1
-                    geometry += small_square_2
-                    geometry += small_square_3
-                    geometry += small_square_4
-                    geometry += line_above_small_square
-                    geometry += lass1
-                    geometry += lass2
-                    geometry += label_x
-                    geometry += side_label_line
-                    geometry += sll1
-                    geometry += sll2
-                    geometry += label_side
-
-                    # Set axes and title
-                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
-                    geometry.axes(False)
-
-                    # Show the plot
-                    geometry
-                  </sageplot>
-                </image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-AD8-box3">
+                    <xi:include href="prefigure/AD8-box3.xml"/>
+                  </prefigure>
+                </image>   
               </li>
               <li>
                 <image>
-                  <sageplot>
-                    # Import necessary library
-                    from sage.plot.graphics import Graphics
-
-                    # Define variables
-                    x = 2
-                    side_large_square = 8
-                    side_small_square = 2
-                    side_inner_square = side_large_square - 2 * side_small_square
-
-                    # Create the large square
-                    large_square = polygon2d([(0, 0), (side_large_square, 0), 
-                                              (side_large_square, side_large_square),(0, side_large_square)], fill=True, color='lightgray', edgecolor="black")
-
-                    # Create the inner square
-                    inner_square = polygon2d([(x, x), (side_large_square - x, x), (side_large_square - x, side_large_square - x), (x, side_large_square - x)], fill=True, color='lightgray')
-                    inner_square2 = polygon2d([(x,x), (side_large_square - x,x), (side_large_square - x, side_large_square -x), (x, side_large_square - x)], thickness=2, color='darkgray')
-
-                    # Create the small squares (one corner example, replicate for all corners)
-                    small_square_1 = polygon2d([(0, 0), (x, 0), (x, x), (0, x)], fill=True, color='gray', edgecolor="black")
-                    small_square_2 = polygon2d([(side_large_square - x, 0), (side_large_square, 0), (side_large_square, x), (side_large_square - x, x)], fill=True, color='gray', edgecolor="black", )
-                    small_square_3 = polygon2d([(0, side_large_square - x), (x, side_large_square - x), (x, side_large_square), (0, side_large_square)], fill=True, color='gray', edgecolor="black")
-                    small_square_4 = polygon2d([(side_large_square - x, side_large_square - x), (side_large_square, side_large_square - x), (side_large_square, side_large_square), (side_large_square - x, side_large_square)], fill=True, color='gray', edgecolor="black")
-
-                    line_above_small_square = line2d([(6, 8.5), (8, 8.5)], color='black')
-                    side_label_line = line2d([(8.5,6), (8.5,2)], color="black")
-                    lass1 = line2d([(6,8.25), (6,8.75)])
-                    lass2 = line2d([(8,8.25), (8,8.75)])
-                    sll1 = line2d([(8.25,6),(8.75,6)])
-                    sll2 = line2d([(8.25,2),(8.75,2)])
-                    label_side = text("8", (8.75,4), fontsize=15,color='black')
-                    label_x = text("x", (7,8.75), fontsize=15, color='black')
-
-                    # Combine all parts into one graphic
-                    geometry = Graphics()
-                    geometry += large_square
-                    geometry += inner_square
-                    geometry += inner_square2
-                    geometry += small_square_1
-                    geometry += small_square_2
-                    geometry += small_square_3
-                    geometry += small_square_4
-                    geometry += line_above_small_square
-                    geometry += lass1
-                    geometry += lass2
-                    geometry += label_x
-                    geometry += side_label_line
-                    geometry += sll1
-                    geometry += sll2
-                    geometry += label_side
-
-                    # Set axes and title
-                    geometry.set_axes_range(-1, side_large_square + 1, -1, side_large_square + 1)
-                    geometry.axes(False)
-
-                    # Show the plot
-                    geometry
-                  </sageplot>
-                </image>
+                  <prefigure xmlns="https://prefigure.org" label="prefigure-AD8-box4">
+                    <xi:include href="prefigure/AD8-box4.xml"/>
+                  </prefigure>
+                </image>   
               </li>
             </ol> 
           </statement>
@@ -447,97 +227,33 @@
 
    
   <task>
-     
-        <p>
-          Let <m>x</m> represent the length of one side of the square end and <m>y</m> the length of the longer side.
-          Label these quantities appropriately on the image shown in <xref ref="F-3-4-PA1">Figure</xref>.
-        </p>
+    <statement>
+      <p>
+        Let <m>x</m> represent the length of one side of the square end and <m>y</m> the length of the longer side.
+        Label these quantities appropriately on the image shown in <xref ref="F-3-4-PA1">Figure</xref>.
+      </p>
 
-        <figure xml:id="F-3-4-PA1" permid="RHW">
-          <caption>A rectangular parcel with a square end.</caption>
-          <image width="47%">
-            <sageplot>
-              from sage.plot.graphics import Graphics
-              geometry = Graphics()
-              front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
-              right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
-              front_bottom = polygon2d([(0,0),(2,0),(2,1)],color='cyan',alpha=1)
-              front = polygon2d([(0,0),(2,1),(2,2),(0,2)],color='powderblue')
-              left_top = polygon2d([(0,2),(2,2),(4,3),(4,4)],color='powderblue')
-              right_top = polygon2d([(4,3),(4,4),(6,4)],color='powderblue')
-              back = polygon2d([(4,3),(6,4),(6,2),(4,2)],color='powderblue')
-              middle = polygon2d([(2,1),(2,2),(4,3),(4,2)],color='powderblue')
-              bottom = polygon2d([(2,0),(2,1),(4,2),(6,2)],color='cyan',axes=False)
-              dash1 = line(([(0,0),(2,1)]),linestyle='dashed',color='black',thickness=2)
-              dash2 = line(([(2,1),(4,2)]),linestyle='dashed',color='black',thickness=2)
-              dash3 = line(([(4,2),(6,2)]),linestyle='dashed',color='black',thickness=2)
-              dash4 = line(([(4,2),(4,4)]),linestyle='dashed',color='black',thickness=2)
-              topline1 = line(([(4,4),(6,4)]),color='black',thickness=2)
-              topline2 = line(([(0,2),(4,4)]),color='black',thickness=2)
-              geometry += dash1
-              geometry += dash2
-              geometry += dash3
-              geometry += dash4
-              geometry += topline1
-              geometry += topline2
-              geometry += front_bottom
-              geometry += front
-              geometry += left_top
-              geometry += right_top
-              geometry += back
-              geometry += middle
-              geometry += bottom
-              geometry += front_border
-              geometry += right_border
-              geometry
-            </sageplot>
-          </image>
-        </figure>
-        <answer>
-          <image>
-            <sageplot>
-              geometry = Graphics()
-              front_border=polygon2d([(0,0), (0,2), (2,2), (2,0)], fill=False,color='black',thickness=2)
-              right_border = polygon2d([(2,0), (2,2), (6,4),(6,2)],fill=False, color='black', thickness=2)
-              front_bottom = polygon2d([(0,0),(2,0),(2,1)],color='cyan',alpha=1)
-              front = polygon2d([(0,0),(2,1),(2,2),(0,2)],color='powderblue')
-              left_top = polygon2d([(0,2),(2,2),(4,3),(4,4)],color='powderblue')
-              right_top = polygon2d([(4,3),(4,4),(6,4)],color='powderblue')
-              back = polygon2d([(4,3),(6,4),(6,2),(4,2)],color='powderblue')
-              middle = polygon2d([(2,1),(2,2),(4,3),(4,2)],color='powderblue')
-              bottom = polygon2d([(2,0),(2,1),(4,2),(6,2)],color='cyan',axes=False)
-              dash1 = line(([(0,0),(2,1)]),linestyle='dashed',color='black',thickness=2)
-              dash2 = line(([(2,1),(4,2)]),linestyle='dashed',color='black',thickness=2)
-              dash3 = line(([(4,2),(6,2)]),linestyle='dashed',color='black',thickness=2)
-              dash4 = line(([(4,2),(4,4)]),linestyle='dashed',color='black',thickness=2)
-              topline1 = line(([(4,4),(6,4)]),color='black',thickness=2)
-              topline2 = line(([(0,2),(4,4)]),color='black',thickness=2)
-              geometry += dash1
-              geometry += dash2
-              geometry += dash3
-              geometry += dash4
-              geometry += topline1
-              geometry += topline2
-              geometry += front_bottom
-              geometry += front
-              geometry += left_top
-              geometry += right_top
-              geometry += back
-              geometry += middle
-              geometry += bottom
-              geometry += front_border
-              geometry += right_border
-              geometry += text("$y$",(3.5,3),color="red", fontsize=15)
-              geometry += text("$x$", (1,-.25),color="red",fontsize=15)
-              geometry += text("$x$", (2.25,.75),color='red', fontsize=15)
-              geometry
-            </sageplot>
-          </image>
-        </answer>
+      <figure xml:id="F-3-4-PA1" permid="RHW">
+        <caption>A rectangular parcel with a square end.</caption>
+        <image>
+          <prefigure xmlns="https://prefigure.org" label="prefigure-AD8-parcel1">
+            <xi:include href="prefigure/AD8-parcel1.xml"/>
+          </prefigure>
+        </image>   
+      </figure>
+    </statement>
+    <answer>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-AD8-parcel2">
+          <xi:include href="prefigure/AD8-parcel2.xml"/>
+        </prefigure>
+      </image>   
+    </answer>
 </task>
     
 
 <task>
+  <statement>
         <p>
           What is the quantity to be optimized in this problem?
 <!--           Find a formula for this quantity in terms of <m>x</m> and <m>y</m>. -->
@@ -548,19 +264,21 @@
             <li><p>  minimize volume (call this <m>V</m>) </p></li>
                     <li><p>  minimize the girth plus length (call this <m>P</m>) </p></li>
     </ol>  
+  </statement>
     <answer>
       <p>
         A: maximize volume (call this <m>V</m>)
       </p>
     </answer>
 </task>
- <task><p>  Which formula below represents the quantity you want to optimize in terms of <m>x</m> and <m>y</m>?</p>
+ <task><statement><p>  Which formula below represents the quantity you want to optimize in terms of <m>x</m> and <m>y</m>?</p>
         <ol marker="A.">
                 <li><p>  <m>V=x^2y</m> </p></li>
 <li><p> <m>V=xy^2</m> </p></li>
             <li><p>  <m>P=2x+y</m> </p></li>
                     <li><p>   <m>P=4x+y</m> </p></li>
     </ol>  
+  </statement>
       <answer>
         <p>
           A: <m>V = x^2y</m>
@@ -568,6 +286,7 @@
       </answer>
       </task>
       <task>
+        <statement>
         <p>
           The problem statement tells us that the parcel's girth plus length (<m>P</m>) may not exceed 108 inches.
           In order to maximize volume,
@@ -580,19 +299,23 @@
             <li><p>  <m>108 = x^2 +y</m> </p></li>
                     <li><p>   <m>108 = xy^2</m> </p></li>
     </ol>  
+  </statement>
     <answer>
       <p>
         A: <m>108 = 4x + y</m>
       </p>
     </answer>
 </task>
-<task><p>The equation above gives the relationship between  <m>x</m> and <m>y</m>. For ease of notation, solve this equation for <m>y</m> as a function on <m>x</m> and then find a formula for the volume of the parcel as a function of the single variable <m>x</m>. What is the formula for <m>V(x)</m>? </p>
+<task>
+  <statement>
+  <p>The equation above gives the relationship between  <m>x</m> and <m>y</m>. For ease of notation, solve this equation for <m>y</m> as a function on <m>x</m> and then find a formula for the volume of the parcel as a function of the single variable <m>x</m>. What is the formula for <m>V(x)</m>? </p>
        <ol marker="A.">
                 <li><p>  <m>V(x) = x^2 (108-4x)</m> </p></li>
 <li><p> <m>V(x) = x(108-4x)^2</m> </p></li>
             <li><p> <m>V(x) =x ^2 (108-2x)</m> </p></li>
                     <li><p>  <m>V(x) =x (108-2x)^2</m> </p></li>
     </ol>  
+  </statement>
       <answer>
         <p>
           A: <m>V(x) = x^2 (108-4x)</m>
@@ -600,13 +323,16 @@
       </answer>
       </task>
   
-   <task><p> Over what domain should we consider this function? To answer this question, notice that the problem gives us the constraint that <m>P</m> (girth plus length) is 108 inches. This constraint produces intervals of possible values for <m>x</m> and <m>y</m>.</p>
+   <task>
+    <statement>
+    <p> Over what domain should we consider this function? To answer this question, notice that the problem gives us the constraint that <m>P</m> (girth plus length) is 108 inches. This constraint produces intervals of possible values for <m>x</m> and <m>y</m>.</p>
   <ol marker="A.">
                 <li><p>  <m>0 \leq x \leq 108 </m> </p></li>
    <li><p>  <m>0 \leq y \leq 108 </m> </p></li>
                 <li><p>  <m>0 \leq x \leq 27 </m> </p></li>
               <li><p>  <m>0 \leq y \leq 27 </m> </p> </li>
     </ol>  
+  </statement>
     <answer>
       <p>
         C: <m>0 \leq x\leq 27</m>
@@ -614,9 +340,11 @@
     </answer>
          </task>   
 <task>
+  <statement>
         <p>
           Use <em>calculus</em> to find the global maximum of the volume of the parcel on the domain you just determined. Justify that you have found the global maximum using either the Closed Interval Method, the First Derivative Test, or the Second Derivative Test!
         </p>
+  </statement>
         <answer>
           <p>
             The global maximum is 11664 cubic inches.
@@ -637,7 +365,9 @@
             </p>
         </introduction>
         <task>
+          <statement>
             <p>If the price of a movie ticket is increased by <m>d</m> dollars, write a formula for the price <m>P</m> in terms of <m>d</m>.</p>
+          </statement>
             <answer>
               <p>
                 <m>P = 8 + d</m>
@@ -645,7 +375,9 @@
             </answer>
         </task>
         <task>
+          <statement>
          <p> If the price of a ticket is increased by one dollar, how many many customers will the theater lose?</p>
+          </statement>
          <answer>
           <p>
             20
@@ -653,7 +385,9 @@
          </answer>
         </task>
         <task>
+          <statement>
          <p>Write a formula for the number of tickets sold <m>T</m> as a function of a price increase of <m>d</m> dollars.</p>
+          </statement>
          <answer>
           <p>
             <m>T = 200-20d</m>
@@ -661,8 +395,10 @@
          </answer>
         </task>
         <task>
+          <statement>
          <p>Consider the new price of a ticket <m>P(d)</m> and the new number of tickets sold <m>T(d)</m>. Write a formula for the
 revenue earned by ticket sales <m>R(d)</m> as a function of a price increase of <m>d</m> dollars.</p>
+         </statement>
           <answer>
             <p>
               <m>R(d) = (8+d)(200-20d)</m>
@@ -670,7 +406,9 @@ revenue earned by ticket sales <m>R(d)</m> as a function of a price increase of 
           </answer>
         </task>
         <task>
+          <statement>
          <p>What is a realistic domain for the function <m>R(d)</m>?</p>
+          </statement>
          <answer>
           <p>
             <m>0\leq d\leq 10</m>
@@ -678,7 +416,9 @@ revenue earned by ticket sales <m>R(d)</m> as a function of a price increase of 
          </answer>
         </task>
         <task>
+          <statement>
          <p>What increase in price <m>d</m> should the general manager choose to maximize the revenue? What price would a movie ticket cost then and what would the revenue be at that price?</p>
+          </statement>
          <answer>
           <p>
             <m>d = \$1</m>, so <m>P(1)=\$9</m> and <m>R(1) = \$1620</m>
@@ -686,10 +426,12 @@ revenue earned by ticket sales <m>R(d)</m> as a function of a price increase of 
          </answer>
         </task>
         <task>
+          <statement>
          <p>Suppose now that the cost of running the business when the price is increased by <m>d</m> dollars is given by
 <m>C(d) = 10d^3 −40d^2 +40d+600</m>.
 If the manager decides that they will definitely increase the price, what price increase <m>d</m> maximizes the
 profit? (Recall that Profit = Revenue - Cost).</p>
+         </statement>
           <answer>
             <p>
               <m>d = \$1.33</m>
@@ -707,7 +449,9 @@ profit? (Recall that Profit = Revenue - Cost).</p>
             </p>
         </introduction>
         <task>
+          <statement>
             <p>What choice of dimensions will make the rectangular area in the center as large as possible?</p>
+          </statement>
             <answer>
               <p>
                 <m>\ell = 100</m>m and <m>w = \dfrac{200}{\pi}\approx 63.66</m>m.
@@ -715,7 +459,9 @@ profit? (Recall that Profit = Revenue - Cost).</p>
             </answer>
         </task>
         <task>
+          <statement>
          <p> What should the dimensions so the total area enclosed by the running track is maximized?</p>
+          </statement>
          <answer>
           <p>
             <m>w = \dfrac{400}{\pi}\approx 127.32</m>m and <m>\ell = 0</m>m, so that the sports ground is a circle.
@@ -727,7 +473,9 @@ profit? (Recall that Profit = Revenue - Cost).</p>
     
     <activity xml:id="activity-ad8-5"> <title>Modeling in algebraic situations</title>
         <task>
+          <statement>
             <p>Find the coordinates of the point on the curve <m>y=\sqrt{x}</m> closest to the point <m>(1,0)</m>.</p>
+          </statement>
             <answer>
               <p>
                 <m>\left(\dfrac{1}{2},\dfrac{\sqrt{2}}{2}\right)</m>
@@ -735,7 +483,9 @@ profit? (Recall that Profit = Revenue - Cost).</p>
             </answer>
         </task>
         <task>
+          <statement>
          <p> The sum of two positive numbers is 48. What is the smallest possible value of the sum of their squares?</p>
+          </statement>
          <answer>
           <p>
             1152

@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=2*(x+3)*(x+1)/(x^2-2*x-3)</definition>
+  <definition>h=11</definition>
+  <coordinates bbox="(-10.1,-h,10.1,h)" >
+    <grid-axes/>
+    <graph at="f" function="f" />
+    <point at="hole" p="(-1,-1)" fill="white" stroke="blue"/>
+    <label p="(0,1.1*h)"><m>f(x)</m></label>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of f of x">
+      <annotation ref="f" sonify="yes" text="The function decreases to almost vertical near x equals 3, and resumes from the right of 3 from near vertical and decreasing"/>
+      <annotation ref="hole" text="An open circle representing a hole in the graph at -1 comma -1"/>
+    </annotation>
+  </annotations>
+</diagram>

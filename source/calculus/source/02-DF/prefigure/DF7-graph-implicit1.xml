@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(t)= (3*(cos(t))^3, 3*(sin(t))^3)</definition>
+  <definition>h=3</definition>
+  <coordinates bbox="(-h-0.1,-h-0.1,h+0.1,h+0.1)">
+    <grid-axes hlabels="(-h,1,h)" vlabels="(-h,1,h)"/>
+    <parametric-curve function="f" domain="(0,2*pi)"
+                      N="1000" closed="yes"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="An astroid curve">
+      <annotation ref="f" sonify="yes" text="A closed curve with symmetry across the x and y axes. A piece curving inward from 3 comma 0 slopes up to 0 comma 3. This piece is reflected in all four quadrants."/>"
+    </annotation>
+  </annotations>
+</diagram>

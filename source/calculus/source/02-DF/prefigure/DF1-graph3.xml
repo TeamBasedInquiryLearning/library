@@ -1,0 +1,28 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f1(x)=5/3*(x-1)</definition>
+  <definition>f2(x)=5*0.0625*(x-5)^2-5</definition>
+  <definition>f3(x)=5*(x-6)^2</definition>
+  <coordinates bbox="(-2.1,-6.1,7.1,6.1)">
+    <grid-axes />
+    <label p="(2.5,6.6)"><m>h(x)</m></label>
+    <graph at="f1" function="f1" stroke="blue" domain="(-2,1)"/>
+    <graph at="f2" function="f2" stroke="blue" domain="(1,5)"/>
+    <graph at="f3" function="f3" stroke="blue" domain="(5,7)"/>
+    <point at="hole1" p="(1,0)" stroke="blue" fill="white"/>
+    <point at="p1" p="(1,5)" stroke="blue" fill="blue"/>
+    <point at="hole2" p="(5,-5)" stroke="blue" fill="white"/>
+    <point at="p2" p="(5,5)" stroke="blue" fill="blue"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the piece-wise function h of x consisting of three pieces">
+      <annotation ref="f1" sonify="yes" text="The left-most piece of h increases linearly towards the point 1 comma 0"/>
+      <annotation ref="hole1" text="An open circle representing a hole in the graph at 1 comma 0"/>
+      <annotation ref="p1" text="A filled circle at 1 comma 5"/>
+      <annotation ref="f2" sonify="yes" text="The middle piece of h curves down from 1 comma 0 to 5 comma -5"/>
+      <annotation ref="hole1" text="An open circle representing a hole in the graph at 5 comma -5"/>
+      <annotation ref="p1" text="A filled circle at 5 comma 5"/>
+      <annotation ref="f3" sonify="yes" text="The right-most piece of h has a parabolic shape descending from 5 comma 5 down to the vertex at 6 comma zero and then back up"/>
+    </annotation>
+  </annotations>
+</diagram>

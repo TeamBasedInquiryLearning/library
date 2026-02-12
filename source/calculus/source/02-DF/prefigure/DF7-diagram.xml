@@ -1,0 +1,21 @@
+<diagram dimensions="(300,300)" margins="5" xmlns="https://prefigure.org">
+  <definition>h=1.2</definition>
+  <definition>points=((-1,0.25),(-1,1),(1,1))</definition>
+  <coordinates bbox="(-h,-h,h,h)">
+    <rectangle at="square" lower-left="(-1,-1)" dimensions="(2,2)" stroke="black"/>
+    <label p="(1,0)" alignment="east"><m>x</m></label>
+    <label p="(0,-1)" alignment="south"><m>x</m></label>
+    <polygon at="triangle" points="points" closed="yes" stroke="black" fill="gray" fill-opacity="0.5"/>
+    <angle-marker at="marker" points="roll(roll(points))" radius="70" alignment="west" offset="(-5,0)"><m>y</m></angle-marker>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A diagram of a square with an inset triangle">
+      <annotation ref="square" text="A square with sides labeled x">
+        <annotation ref="triangle" text="A line cuts from the top right corner of the square to a point along the left side, forming a triangle that is shaded gray">
+          <annotation ref="marker" text="The angle in the triangle in the top right corner, cut out by the line, is labeled y"/>
+        </annotation>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,17 @@
+<diagram dimensions="(300,100)" margins="(10,10,10,10)" xmlns="https://prefigure.org">
+  <definition>width=3</definition>
+  <definition>spacing=1</definition>
+  <coordinates bbox="(-width,-2,width,2)">
+    <axes axes="horizontal" arrows="2" hticks="(-width+spacing,spacing,width-spacing)" hlabels="(-width+1,spacing,width-1)"/>
+    <line at="L1" endpoints="((0,-0.2),(0,2.2))" stroke="red" dash="9 9"/>
+    <line at="L2" endpoints="((1,-0.2),(1,2.2))" stroke="red" dash="9 9"/>
+    <line at="L3" endpoints="((2,-0.2),(2,2.2))" stroke="red" dash="9 9"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="A number line from -2 to 2 ">
+      <annotation ref="L1" text="A dashed vertical red line at 0"/>
+      <annotation ref="L2" text="A dashed vertical red line at 1"/>
+      <annotation ref="L2" text="A dashed vertical red line at 2"/>
+    </annotation>
+  </annotations>
+</diagram>

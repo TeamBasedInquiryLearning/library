@@ -1,0 +1,16 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=2-fabs(x)</definition>
+  <definition>f2(x)=5*0.0625*(x-5)^2-5</definition>
+  <definition>f3(x)=5*(x-6)^2</definition>
+  <coordinates bbox="(-4.1,-4.1,4.1,4.1)">
+    <grid-axes />
+    <label p="(0,4.5)"><m>b(x)</m></label>
+    <graph at="f" function="f" />
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of the function b of x">
+      <annotation ref="f" sonify="yes" text="A function ascending linearly with a slope of 1 to the point 0 comma 2, then descending linearly with a slope of -1"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,30 @@
+<diagram dimensions="(300,300)" margins="30"  xmlns="https://prefigure.org">
+  <definition>f1(x)=-1/2*x+3/2</definition>
+  <definition>f2(x)=1/(x+1)</definition>
+  <definition>f3(x)=-3*cos(pi*x)</definition>
+  <coordinates bbox="(-7,-5,7,5)">
+    <grid-axes spacings="(-7,1,7),(-6,1,6)" hlabels="(-6,2,6)" vlabels="(-6,2,6)"/>
+    <label p="(0,5.5)"><m>f(x)</m></label>
+    <group at="f">
+    <graph at="f1" function="f1" domain="(-7,-1)"/>
+    <graph at="f2" function="f2" domain="(-1,2)"/>
+    <graph at="f3" function="f3" domain="(2,7)"/>
+    <point at="p1" p="(-1,2)" stroke="blue" fill="white"/>
+    <point at="p2" p="(2,1/3)" stroke="blue" fill="white"/>
+    <point at="p3" p="(2,-3)" stroke="blue" fill="blue"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a piecewise-defined function labeled f of x">
+      <annotation ref="f" text="The function f, defined in 3 pieces">
+        <annotation ref="f1" text="The left-most piece decends in a line towards the point -1 comma 2"/>
+        <annotation ref="p1" text="An open circle at the point -1 comma 2"/>
+        <annotation ref="f2" text="The middle piece descends, curving and flattening out while approaching the point 2 comma one third"/>
+        <annotation ref="p2" text="An open circle at the point 2 comma one third"/>
+        <annotation ref="p3" text="A filled circle at the point 2 comma -3"/>
+        <annotation ref="f3" text="The right-most piece begins at 2 comma -3 and oscillates like a sine curve with magniutde 3, centered on the x-axis"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=sin(x)</definition>
+  <definition>h=2</definition>
+  <coordinates bbox="(-10.1,-h,10.1,h)" >
+    <grid-axes/>
+    <graph at="f" function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="The function oscillates between -1 and 1"/>
+    </annotation>
+  </annotations>
+</diagram>

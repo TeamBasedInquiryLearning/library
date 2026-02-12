@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=ln(x)</definition>
+  <coordinates bbox="(-0.1,-3.1,5.1,3.1)">
+    <grid-axes vlabels="(-3,1,3)"/>
+    <graph at="f" function="f" domain="(0,5)"/>
+    <tangent-line at="L" function="f" point="1" domain="(0,5)"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the natural log function and its tangent at 1">
+      <annotation ref="f" text="A curve increasing from near vertical but with a decreasing slope"/>
+      <annotation ref="L" text="A red line starting at 0 comma -1 and passing through the point 1 comma 0 where it is tangent to the curve"/>
+    </annotation>
+  </annotations>
+</diagram>

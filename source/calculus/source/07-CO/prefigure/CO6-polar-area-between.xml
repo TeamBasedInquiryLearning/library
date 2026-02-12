@@ -1,0 +1,47 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>width=6</definition>
+  <definition>l=(1,2,3,4,6)</definition>
+  <definition>m=(5,7,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23)</definition>
+  <definition>f(x)=2+2*cos(x)</definition>
+  <definition>g(x)=1</definition>
+  <definition>h1(x)=f(pi/12)</definition>
+  <definition>h2(x)=f(pi/6)</definition>
+  <definition>h3(x)=f(pi/4)</definition>
+  <coordinates bbox="(-width,-width,width,width)">
+    
+    <grid coordinates="polar" spacings="((0,1,5),(0,pi/12,2*pi))" stroke="gray"/>
+
+    <group at="labels" annotate="yes" text="The angles that are multiples of pi over 12 are marked around the outside of the circles">
+    <label anchor="(6*cos(0),6*sin(0))" scale="0.7"><m>0</m></label>
+    <repeat parameter="k in l">
+      <label anchor="(5.5*cos(k/12*pi),5.5*sin(k/12*pi))" scale="0.7"><m>\frac{\pi}{${trunc(12/k)}}</m></label>
+    </repeat>
+    <label anchor="(5.5*cos(pi),5.5*sin(pi))" scale="0.7"><m>\pi</m></label>
+    <repeat parameter="k in m">
+      <label anchor="(5.5*cos(k/12*pi),5.5*sin(k/12*pi))" scale="0.7"><m>\frac{${trunc(k/gcd(k,12))}\pi}{${trunc(12/gcd(k,12))}}</m></label>
+    </repeat>
+    </group>
+
+    <vector v="(5.5,0)" thickness="2"/>
+    <repeat parameter="k=1..5">
+      <tick-mark location="(k,0)" scale="0.7"> <m>${k}</m></tick-mark>
+    </repeat>
+    
+    
+    <area-between-curves functions="(h1,g)" coordinates="polar" dash="9 9" fill="teal" fill-opacity="0.4" domain="(pi/12,pi/6)"/>
+    <area-between-curves functions="(f,h1)" coordinates="polar" dash="9 9"  domain="(pi/12,pi/6)"/>
+    <area-between-curves functions="(h2,g)" coordinates="polar" dash="9 9" fill="teal" fill-opacity="0.4" domain="(pi/6,pi/4)"/>
+    <area-between-curves functions="(f,h2)" coordinates="polar" dash="9 9" domain="(pi/6,pi/4)"/>
+    <area-between-curves functions="(h3,g)" coordinates="polar" dash="9 9" fill="teal" opacity="0.4" domain="(pi/4,pi/3)"/>
+    <area-between-curves functions="(f,h3)" coordinates="polar" dash="9 9" domain="(pi/4,pi/3)"/>
+    
+    <graph function="f" coordinates="polar" closed="yes"/>
+    <graph function="g" coordinates="polar" closed="yes" stroke="red"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The polar grid">
+      <annotation ref="labels"/>
+    </annotation>
+  </annotations>
+</diagram>
