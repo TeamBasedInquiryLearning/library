@@ -13,20 +13,20 @@
     <title>Activities</title>
 
     <!--Preview Activity 4.1.1 from Active Calculus -->
- <activity xml:id="integration-riemann-1" permid="KNr">
+ <activity xml:id="integration-riemann-1" >
  <introduction>
-  <p permid="eGi">
+  <p>
     Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.
     </p>
  </introduction>
 
-      <task permid="IYe">
-        <p permid="NHX">
+      <task>
+        <p>
           On the left-hand axes provided in <xref ref="F-4-2-IN1">Figure</xref>,
           sketch a labeled graph of the velocity function <m>v(t) = 3</m>.
         </p>
 
-        <figure xml:id="F-4-2-IN1" permid="ZWp">
+        <figure xml:id="F-4-2-IN1">
           <caption>At left,
           axes for plotting <m>y = v(t)</m>;
           at right, for plotting
@@ -45,22 +45,22 @@
           </sidebyside>
         </figure>
 
-        <p permid="tPg">
+        <p>
           Note that while the scale on the two sets of axes is the same,
           the units on the right-hand axes differ from those on the left.
           The right-hand axes will be used in question (d).
         </p>
       </task>
 
-      <task permid="pfn">
-        <p permid="Gdy">
+      <task>
+        <p>
           How far did the person travel during the two hours?
           How is this distance related to the area of a certain region under the graph of <m>y = v(t)</m>?
         </p>
       </task>
 
-      <task permid="Vmw">
-        <p permid="mkH">
+      <task>
+        <p>
           Find an algebraic formula, <m>s(t)</m>,
           for the position of the person at time <m>t</m>,
           assuming that <m>s(0) = 0</m>.
@@ -68,30 +68,30 @@
         </p>
       </task>
 
-      <task permid="BtF">
-        <p permid="SrQ">
+      <task>
+        <p>
           On the right-hand axes provided in <xref ref="F-4-2-IN1" />,
           sketch a labeled graph of the position function <m>y = s(t)</m>.
         </p>
       </task>
 
-      <task permid="hAO">
-        <p permid="yyZ">
+      <task>
+        <p>
           For what values of <m>t</m> is the position function <m>s</m> increasing?
           Explain why this is the case using relevant information about the velocity function <m>v</m>.
         </p>
       </task>
   </activity> 
 
-<activity xml:id="act-4-1-1" permid="gon">
+<activity xml:id="act-4-1-1">
   <introduction>
-    <p permid="WUB">
+    <p>
       Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in 
       the table and graph below.
     </p>
 
-    <sidebyside widths="47% 47%" margins="auto" valign="middle" permid="nSM">
-      <tabular permid="HLD">
+    <sidebyside widths="47% 47%" margins="auto" valign="middle">
+      <tabular>
         <row bottom="minor" halign="center">
           <cell><m>t</m></cell>
           <cell><m>v(t)</m></cell>
@@ -141,8 +141,8 @@
     </sidebyside>
   </introduction>
 
-        <task permid="JWp">
-          <p permid="Ehd">
+        <task>
+          <p>
             Using the grid, graph,
             and given data appropriately,
             estimate the distance traveled by the walker during the two hour interval from <m>t = 0</m> to <m>t = 2</m>.
@@ -151,15 +151,15 @@
           </p>
         </task>
 
-        <task permid="qdy">
-          <p permid="kom">
+        <task>
+          <p>
             How could you get a better approximation of the distance traveled on <m>[0,2]</m>?
             Explain, and then find this new estimate.
           </p>
         </task>
 
-        <task permid="WkH">
-          <p permid="Qvv">
+        <task>
+          <p >
             Now suppose that you know that <m>v</m> is given by <m>v(t) = 0.5t^3-1.5t^2+1.5t+1.5</m>.
             Remember that <m>v</m> is the derivative of the walker's position function,
             <m>s</m>.
@@ -167,8 +167,8 @@
           </p>
         </task>
 
-        <task permid="CrQ">
-          <p permid="wCE">
+        <task >
+          <p >
             Based on your work in (c),
             what is the value of <m>s(2) - s(0)</m>?
             What is the meaning of this quantity?

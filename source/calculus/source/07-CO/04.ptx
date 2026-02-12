@@ -14,7 +14,7 @@
 
     <fact xml:id="fact-CO4polar">
           
-      <p permid="QCd">
+      <p>
         
     <q>As the crow flies</q> is an idiom used to describe the most direct path between two points.
     The <term>polar coordinate system</term><idx>polar coordinate system</idx> is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction.
@@ -137,7 +137,7 @@ Graph each of the following.
     
     <fact xml:id="fact-CO4symmetryTestX">
           
-      <p permid="QCd">
+      <p>
         If a polar graph is symmetric about the <m>x</m>-axis, then if the point <m>(r,\theta)</m> lies on the graph, then the point <m>(r,-\theta)</m> or <m>(-r, \pi-\theta)</m> also lies on the graph.
 
       </p>
@@ -146,7 +146,7 @@ Graph each of the following.
     
     <fact xml:id="fact-CO4symmetryTestY">
           
-      <p permid="QCd">
+      <p>
         If a polar graph is symmetric about the <m>y</m>-axis, then if the point <m>(r,\theta)</m> lies on the graph, then the point <m>(r,\pi-\theta)</m> or <m>(-r,-\theta)</m> also lies on the graph.
 
       </p>
@@ -155,7 +155,7 @@ Graph each of the following.
     
     <fact xml:id="fact-CO4symmetryTestOrigin">
           
-      <p permid="QCd">
+      <p>
         If a polar graph is rotationally symmetric about the origin, then if the point <m>(r,\theta)</m> lies on the graph, then the point <m>(-r,\theta)</m> or <m>(r,\pi+\theta)</m> also lies on the graph.
 
       </p>
@@ -196,7 +196,7 @@ Find a Cartesian form of each of the given polar equations.
         
         <fact xml:id="fact-CO4slopePolarCurve">
           
-      <p permid="QCd">
+      <p >
         The slope of a polar curve <m>r=f(\theta)</m>is <m>\displaystyle\frac{dy}{dx}=\displaystyle\frac{dy/d\theta}{dx/d\theta}=\displaystyle\frac{f^\prime(\theta)\sin(\theta)+f(\theta)\cos(\theta)}{f^\prime(\theta)\cos(\theta)-f(\theta)\sin(\theta)}</m>, provided that <m>dx/d\theta\neq 0</m> at <m>(r,\theta)</m>.
           Vertical tangents occur when <m>dy/d\theta=0</m> and <m>dx/d\theta\neq 0</m>;
           horizontal tangents occur when <m>dx/d\theta=0</m> and <m>dy/d\theta\neq 0</m>.
