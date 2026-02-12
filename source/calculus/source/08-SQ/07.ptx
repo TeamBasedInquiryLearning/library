@@ -208,7 +208,7 @@
     <fact xml:id="fact-SQ7ratioTest">
         <title>The Ratio Test</title>
           <statement>
-      <p permid="QCd">
+      <p>
         Let <m>\displaystyle\sum a_n</m> be a series 
           and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_n}\right|=\rho</m>.
           Then
@@ -227,7 +227,7 @@
     <fact xml:id="fact-SQ7rootTest">
         <title>The Root Test</title>
           <statement>
-      <p permid="QCd">
+      <p>
         Let <m>N</m> be an integer and let <m>\displaystyle\sum a_n</m> be a series with <m>a_n\geq 0</m> for <m>n\geq N</m>,
           and suppose that <m>\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}=\rho</m>.
           Then

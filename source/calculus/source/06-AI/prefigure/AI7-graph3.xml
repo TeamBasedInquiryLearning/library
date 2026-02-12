@@ -1,0 +1,27 @@
+<diagram dimensions="(900,200)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-0.5,0,9.1,2.1)">
+    <group at="trapezoid">
+      <polygon points="((0,2),(9,2),(7.5,0),(1.5,0))" closed="yes" stroke="black" />
+      <label anchor="(4.5,0)" alignment="south"><m>60\ \text{ft}</m></label>
+      <label anchor="(4.5,2)" alignment="north"><m>90\ \text{ft}</m></label>
+    </group>
+    <group at="h">
+      <line endpoints="((-0.2,0),(-0.2,2))" rotate="-90" offset="(0,17)"><m>20\ \text{ft}</m></line>
+      <line endpoints="((-0.3,0),(-0.1,0))"/>
+      <line endpoints="((-0.3,2),(-0.1,2))"/>
+    </group> 
+    <group at="rectangle">
+      <rectangle lower-left="(0.75,1)" dimensions="(7.5,0.1)" fill="blue" fill-opacity="50%" dash="9 9" stroke="black"/>
+      <label anchor="(0.75,1)" alignment="southwest"><m>h_i</m></label>
+      <label anchor="(8.25,1.05)" alignment="east"><m>\Delta h</m></label>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A trapezoid">
+      <annotation ref="trapezoid" text="A trapezoid with the parallel sides labeled 60 feet and 90 feet, with the longer side on top"/>
+      <annotation ref="h" text="A vertical bar showing the height of the trapezoid to be 20 feet and the water level to be 4 feet above the top of the trapezoid"/>
+      <annotation ref="rectangle" text="A rectangle representing a slice of the trapezoid of thickness delta h, located h_i units above the bottom of the trapezoid"/>
+    </annotation>
+  </annotations>
+</diagram>

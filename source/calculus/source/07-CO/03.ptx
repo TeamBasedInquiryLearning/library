@@ -22,15 +22,11 @@ The red dashed line is the straight line segment connecting these points.
             </p>
         <figure xml:id="CO3-parametric-curve">
             <caption>A parametric curve and segment from <m>(1,1)</m> to <m>(4,8)</m></caption>
-            <image xml:id="CO3-parametric-curve-image" width="50%">
-                <description>A parametric curve and segment from (1,1) to (4,8).</description>
-                <sageplot>
-g = line([(1,1),(4,8)],color="red",linestyle="dashed")+parametric_plot((x^2,x^3),(x,1,2))
-g.set_aspect_ratio(0.5)
-g.set_axes_range(xmin=0,xmax=5,ymin=0,ymax=10)
-g
-                </sageplot>
-            </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-CO3-graph1">
+                <xi:include href="prefigure/CO3-graph1.xml"/>
+              </prefigure>
+            </image>  
         </figure>
         </statement>
     </example>
@@ -120,19 +116,11 @@ out to be about <m>7.6337</m>.
             </p>
             <figure xml:id="CO3-parametric-subdivide">
                 <caption>Subdividing a parametric curve where <m>N=3</m></caption>
-                <image xml:id="CO3-parametric-subdivide-sageplot" width="50%">
-                    <description>Subdividing a parametric curve with three segments</description>
-                    <sageplot>
-points = [[n(1+t/3)^2,n(1+t/3)^3] for t in range(4)]
-segs = line(points,color="red",linestyle="dashed")
-ppoints = list_plot(points,color="black")
-para = parametric_plot((x^2,x^3),(x,1,2))
-g = para+segs+ppoints
-g.set_aspect_ratio(0.5)
-g.set_axes_range(xmin=0,xmax=5,ymin=0,ymax=10)
-g
-                    </sageplot>
-                </image>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-CO3-graph2">
+                <xi:include href="prefigure/CO3-graph2.xml"/>
+              </prefigure>
+            </image>  
             </figure>
         </statement>
     </observation>

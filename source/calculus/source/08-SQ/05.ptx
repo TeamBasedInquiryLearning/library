@@ -32,7 +32,7 @@
     
     <fact xml:id="fact-SQ5convergenceTheorem">
           <statement>
-      <p permid="QCd">
+      <p >
         If the series <m>\displaystyle\sum a_n</m> is convergent,
         then  <m>\displaystyle\lim_{n\rightarrow\infty} a_n=0</m>.
       </p>
@@ -44,7 +44,7 @@
     <fact xml:id="fact-SQ5divergenceTest">
             <title>The Divergence (<m>n^{th}</m> term) Test</title>
         <statement>
-      <p permid="QCd">
+      <p>
         If the  <m>\displaystyle\lim_{n\rightarrow\infty} a_n\neq 0</m>,
         then <m>\displaystyle\sum a_n</m> diverges.
       </p>
@@ -57,7 +57,7 @@
     
     <fact xml:id="fact-SQ5boundedPartialSums">
            <statement>
-      <p permid="QCd">
+      <p >
         If <m>a_n>0</m> for all <m>n</m>, then <m>\displaystyle\sum a_n</m> is convergent if and only if the sequence of partial sums is bounded from above.
         </p>
                </statement>
@@ -172,7 +172,7 @@
     <fact xml:id="fact-SQ5integralTest">
                       <title>The Integral Test</title> 
         <statement>
-      <p permid="QCd">
+      <p >
         Let <m>\{a_n\}</m> be a sequence of positive numbers.
           If <m>f(x)</m> is continuous, positive, and decreasing,
           and there is some positive integer <m>N</m> such that <m>f(n)=a_n</m> for all <m>n\geq N</m>,
@@ -212,7 +212,7 @@
     <fact xml:id="fact-SQ5pTest">
                                  <title>The <m>p</m>-Test</title> 
         <statement>
-      <p permid="QCd">
+      <p>
 The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> converges for <m>p\gt 1</m>, and diverges otherwise.
         </p>
             </statement>
@@ -262,7 +262,7 @@ The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> con
     <fact xml:id="fact-SQ8alternatingSeriesTest">
                       <title>The Alternating Series Test (Leibniz's Theorem)</title>
          <statement>
-      <p permid="QCd">
+      <p>
         The series <m>\displaystyle\sum (-1)^{n+1}u_n</m> converges if all of the following conditions are satisfied:
           <ol>
           <li><m>u_n</m> is always positive,</li>
@@ -328,7 +328,7 @@ The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> con
                       <title>The Alternating Series Estimation Theorem</title> 
          
          <statement>
-      <p permid="QCd">
+      <p>
         If the alternating series <m>\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n</m> converges to <m>L</m> and has <m>n^{th}</m> partial sum <m>S_n</m>,
           then for <m>n\geq N</m> (as in the alternating series test):
           <ol>

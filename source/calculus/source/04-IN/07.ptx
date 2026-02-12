@@ -20,11 +20,23 @@ between the graph of <m>y=f(x)</m> and the <m>x</m>-axis. By net area, we mean t
 (when <m>f(x)</m> is positive) minus the area below the <m>x</m>-axis (when <m>f(x)</m> is negative).
   </p>
     <figure>
-        <image xml:id="IN7-image-integral-as-net-area">
-            <sageplot><xi:include href="./sageplot/integral-as-net-area.sage" parse="text"/></sageplot>
-            <description>As the number of subdivisions increases, the Riemann sum more closely appears to measure the
-            net area between a curve and the x-axis.</description>
-        </image>
+        <sidebyside>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN7-riemann-sum1">
+                <xi:include href="prefigure/IN7-riemann-sum1.xml"/>
+              </prefigure>
+            </image>              
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN7-riemann-sum2">
+                <xi:include href="prefigure/IN7-riemann-sum2.xml"/>
+              </prefigure>
+            </image>              
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN7-riemann-sum3">
+                <xi:include href="prefigure/IN7-riemann-sum3.xml"/>
+              </prefigure>
+            </image>  
+        </sidebyside>
         <caption>Improving approximations of <m>\int_0^5(x-2)(x-4)dx</m></caption>
     </figure>
   </remark>
@@ -55,11 +67,18 @@ must break up the definite integral at points where <m>f(x)=0</m>, that is,
 wherever <m>f(x)</m> may change from positive to negative, or vice versa.
   </p>
     <figure>
-        <image xml:id="IN7-image-integral-as-total-area">
-            <sageplot><xi:include href="./sageplot/integral-as-total-area.sage" parse="text"/></sageplot>
-            <description>The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4
-            where (x-2) and (x-4) are equal to 0.</description>
-        </image>
+        <sidebyside>
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN7-riemann-sum32">
+                <xi:include href="prefigure/IN7-riemann-sum3.xml"/>
+              </prefigure>
+            </image>  
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN7-riemann-sum4">
+                <xi:include href="prefigure/IN7-riemann-sum4.xml"/>
+              </prefigure>
+            </image>  
+        </sidebyside>
         <caption>Partitioning <m>\int_0^5(x-2)(x-4)dx</m> at <m>x=2</m> and <m>x=4</m>.</caption>
     </figure>
     <p>

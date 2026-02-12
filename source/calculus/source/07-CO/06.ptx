@@ -69,50 +69,14 @@
         </activity>
         
         <figure xml:id="polarAreaDifferential">
-                <caption>Finding the polar area differential</caption>
-                    <image  width="100%">
-                        <description>Illustration of polar area differential.</description>
-                        <sageplot>
-                        x = var('x')
-                        f(x) = 2 + 2*cos(x)
-                        g(x) = 1
-                        plt = Graphics()
-                        circ_range = [1,..,5]
-                        for i in circ_range:
-                            plt += polar_plot(i,(x,0,2*pi), axes=False, thickness=1.5,figsize=10,color='black')
-                            bbox = {'boxstyle': 'square,pad=0.05','fc':"white", 'ec':"white"}
-                            lbl = text(i,(i,-.25),color='black',background_color='white',bounding_box = bbox,fontsize=13)
-                            plt += lbl
-                        for angle in [0,1,..,23]:
-                            plt += line(([(0,0),(5*cos(angle*pi/12),5*sin(angle*pi/12))]),color='black',thickness=0.5)
-                            actual_angle = angle*pi/12
-                            if denominator(actual_angle) != 1:
-                                plt += text(f"$\\dfrac{{{latex(numerator(actual_angle))}}}{{{denominator(actual_angle)}}}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
-                            else:
-                                plt += text(f"${latex(angle*pi/12)}$",(5.5*cos(angle*pi/12),5.5*sin(angle*pi/12)),color='black',fontsize=13)
-                        xaxis = arrow((0,0),(5.25,0),arrowsize=0.5,color='black')
-                        def polar_rectangle(start,end):
-                            radius = f(start)
-                            a = arc((0,0),radius,sector=(start,end),thickness=2)
-                            a_side1 = line(([(0,0),(radius*cos(start),radius*sin(start))]),thickness=2,linestyle='dashed',color='darkblue')
-                            a_side2 = line(([(0,0),(radius*cos(end),radius*sin(end))]),thickness=2,linestyle='dashed',color='darkblue')
-                            pp = polar_plot(f,(x,start,end),fill=g,fillcolor='cyan')
-                            d = polar_plot(radius,(x,start,end),fill=g,fillcolor='grey',fillalpha=0.5)
-                            p = a + a_side1 + a_side2 + pp + d
-                            return p
-                        rec1 = polar_rectangle(pi/12,pi/6)
-                        rec2 = polar_rectangle(pi/6,pi/4)
-                        rec3 = polar_rectangle(pi/4,pi/3)
-                        plt += polar_plot(f(x),(x,0,2*pi),color = 'red',thickness=2)
-                        plt += polar_plot(g(x),(x,0,2*pi),color = 'blue',thickness=2)
-                        plt += rec1
-                        plt += rec2
-                        plt += rec3
-                        plt += xaxis
-                        plt
-                        </sageplot>
-                    </image>
-            </figure>
+            <caption>Finding the polar area differential</caption>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-CO6-polar-area-between">
+                    <xi:include href="prefigure/CO6-polar-area-between.xml"/>
+                </prefigure>
+                <description>Illustration of polar area differential.</description>
+            </image>  
+        </figure>
 
             <activity>
                 <introduction>
@@ -150,7 +114,7 @@
     
       <fact xml:id="fact-CO6polarIntegral">
           
-      <p permid="QCd">
+      <p >
         The area of the <q>fan-shaped</q> region between the pole and <m>r=f(\theta)</m> as the angle <m>\theta</m> ranges from <m>\alpha</m> to <m>\beta</m> is given by
           <me>\int_{\theta=\alpha}^{\theta=\beta} \frac{r^2}{2}d\theta</me>.
 

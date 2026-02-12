@@ -15,7 +15,7 @@
     <!--DEFINITION OF ANTIDERIVATIVE from Active Calculus -->
     <definition xml:id="def-antiderivative">
       <statement>
-        <p permid="ctJ">
+        <p>
           If <m>g</m> and <m>G</m> are functions such that <m>G' = g</m>,
           we say that <m>G</m> is an <term>antiderivative</term>
               <idx><h>antiderivative</h></idx>
@@ -72,12 +72,12 @@
          
        <remark>
 
-    <p permid="cfB">
+    <p>
       We now note that whenever we know the derivative of a function,
       we have a <em>function-derivative pair</em>,
       so we also know the antiderivative of a function.
       For instance, in <xref ref="elem-antider-intro"/> we could use our prior knowledge that 
-      <me permid="YfC">
+      <me>
         \frac{d}{dx}[\sin(x)] = \cos(x)
       </me>,
      to determine that <m>F(x) = \sin(x)</m> is an antiderivative of <m>f(x) = \cos(x)</m>.
@@ -87,24 +87,24 @@
     </p>
 
 
-      <p permid="MWD">
+      <p>
       In the following activity,
       we work to build a list of basic functions whose antiderivatives we already know.
     </p>  
     </remark>
     
-<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-4-4-2" permid="ovP">
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-4-4-2" >
   <statement>
-    <p permid="yUU">
+    <p>
       Use your knowledge of derivatives of basic functions to complete <xref ref="T-4-4-Act2">Table</xref> of antiderivatives.
       For each entry,
       your task is to find a function <m>F</m> whose derivative is the given function <m>f</m>.
     
     </p>
 
-    <table xml:id="T-4-4-Act2" permid="PTf">
+    <table xml:id="T-4-4-Act2">
       <title>Familiar basic functions and their antiderivatives.</title>
-      <tabular top="minor" bottom="minor" permid="wao">
+      <tabular top="minor" bottom="minor">
         <row bottom="medium">
           <cell>given function, <m>f(x)</m></cell>
           <cell>antiderivative, <m>F(x)</m>   <nbsp /></cell>
@@ -176,7 +176,7 @@
 
 <activity xml:id="act-antider-const-mult">
     
-  <introduction> <p permid="ImK">
+  <introduction> <p>
       In <xref ref="act-4-4-2">Activity</xref>,
       we constructed a list of the basic antiderivatives we know at this time.
       Those rules will help us  antidifferentiate sums and constant multiples of basic functions. For example,

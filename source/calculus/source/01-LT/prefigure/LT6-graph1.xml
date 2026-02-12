@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=1/x^2</definition>
+  <definition>h=110</definition>
+  <coordinates bbox="(-4.1,-0.1*h,4.1,h)" >
+    <grid-axes hlabels="(-4,1,4)"/>
+    <label p="(0,1.1*h)"><m>f(x)</m></label>
+    <graph at="f" function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of the function f of x equals 1 over x squared">
+      <annotation ref="f" sonify="yes" text="The function is flat, then turns up almost vertical at the y-axis.  Then the function descends vertically on the right side of the y-axis, flattening out along the x-axis"/>
+    </annotation>
+  </annotations>
+</diagram>

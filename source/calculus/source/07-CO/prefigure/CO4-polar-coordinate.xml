@@ -1,0 +1,32 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>width=1.2</definition>
+  <definition>t=pi/4</definition>
+  <definition>p=(cos(t),sin(t))</definition>
+  <coordinates bbox="(0,0,width,width)">
+    <axes decorations="no" arrows="1"/>
+    <arc at="c" center="(0,0)" radius="1" range="(0,pi/2)" degrees="no" stroke="gray" thickness="1"/>
+    <angle-marker at="a" points="((1,0),(0,0),p)" alignment="east" ><m>\theta</m></angle-marker>
+
+    <vector at="v" v="p" stroke="blue" thickness="2"/>
+    <label anchor="(0.35,0.35)" alignment="northwest" color="blue"><m>r</m></label>
+
+    <line at="l1" endpoints="((0,sin(t)),(cos(t),sin(t)))" stroke="green" dash="9 9"/>
+    <line at="l2" endpoints="((cos(t),0),(cos(t),sin(t)))" stroke="green" dash="9 9"/>
+    <tick-mark location="cos(t)"> <m>x</m></tick-mark>
+    <tick-mark location="sin(t)" axis="vertical"> <m>y</m></tick-mark>
+    
+    <point at="p" p="p"><m>(r,\theta)</m></point>
+   
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The point r comma theta in the polar coordinate system">
+      <annotation ref="p" text="The point r comma theta lying in the first quadrant"/>
+      <annotation ref="v" text="An arrow from the origin pointing up and right to the point, with its length labeled r"/>
+      <annotation ref="a" text="The angle between the x-axis and the arrow is labeled theta"/>
+      <annotation ref="l2" text="A vertical dashed line segment from the x-axis to the point, labeled to be a distance of x horizontally from the origin."/>
+      <annotation ref="l1" text="A horizontal dashed line segment from the y-axis to the point, labeled to be a distance of y vertically from the origin."/>
+      <annotation ref="c" text="The arc of a circle centered at the origin, on which the point lies"/>
+    </annotation>
+  </annotations>
+</diagram>

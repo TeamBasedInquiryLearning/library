@@ -1,0 +1,19 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition> f2(x) = fabs(-1*(x-1)^(1/3))</definition>
+  <definition> f1(x) = fabs(-1*(1-x)^(1/3))</definition>
+  <coordinates bbox="(-1.1,-1.1,3.1,2.1)">
+    <grid-axes spacings="((-1,0.25,3),(-2,0.25,2))"/>
+    <group at="f">
+      <graph function="f1" domain="(0,1)"/>
+      <graph function="f2" domain="(1,3)"/>
+      <point p="(0,f1(0))" fill="blue" stroke="blue"/>
+      <point p="(3,f2(3))" fill="blue" stroke="blue"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="A curve beginning at 0 comma 1 and decreasing to a cusp at 1 comma 0, then increasing to 3 comma 1.25. The ends of the curve have filled dots"/>
+    </annotation>
+  </annotations>
+</diagram>
