@@ -414,19 +414,12 @@
                     <me>f_5(x)=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}</me>
                     alongside the graph of <m>e^x</m> reveals the illustration given in the following figure.
                 </p>                    
-               <figure>
-                <caption>Plots of <m>y=f_5(x), y=e^x</m>.</caption>
-                    <image xml:id="plotf5exp" width="75%">
-                        <description>Plots of <m>y=f_5(x), y=e^x</m>.</description>
-                        <sageplot>
-                        g = Graphics()
-                        taylor = 1 + x + x^2/2 + x^3/6 + x^4/24 + x^5/120
-                        g += plot(exp(x),(x,-2,2),color='blue',thickness=2,axes_labels=('$x$','$y$'),legend_label = '$y = e^x$')
-                        g += plot(taylor,(x,-2,2),color='red',thickness=1.5, linestyle='dashed',legend_label = '$y = f_5(x)$')
-                        g
-                        </sageplot>
-                    </image>
-            </figure> 
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-PS1-graph">
+                        <xi:include href="prefigure/PS1-graph.xml"/>
+                    </prefigure>
+                </image>  
+                 
             <p>What might we conclude?</p>
                     <ol marker="A.">
                         <li><m>e^x\approx 1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}</m> near <m>x=0</m>.</li>

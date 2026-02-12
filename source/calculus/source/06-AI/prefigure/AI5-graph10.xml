@@ -1,0 +1,23 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-0.5,-2,5,2)">
+    <definition>f(x) = sqrt(x)</definition>
+    <definition>g(x) = -1*sqrt(x) </definition>
+    
+    <axes axes="horizontal" arrows="1" decorations="no" xlabel="x"/>
+
+    <area-between-curves at="area" functions="(f,g)" fill="blue" fill-opacity="0.4" domain="(0.0001,4)" stroke="none"/>
+    <group at="f">
+      <graph function="f" domain="(0,4)" N="1000"/>
+      <graph function="g" domain="(0,4)" N="1000"/>
+    </group>
+
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a solid with vertical slices">
+      <annotation ref="f" text="A horizontal parabola bounding the cross section"/>
+      <annotation ref="area" text="The area inside the parabola is now shaded completely"/>
+    </annotation>
+  </annotations>
+</diagram>

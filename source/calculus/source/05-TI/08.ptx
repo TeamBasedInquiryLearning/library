@@ -296,25 +296,11 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
             <p>
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
 	</p>
-            <figure>
-                <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="finfinity" width="100%">
-                        <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
-                        <sageplot>
-                            x = var('x')
-                            f(x) = 1/x
-                            g(x) = 1/x^2
-                            h(x) = 1/x^(1/2)
-                            p = plot([f,g,h], (x,1,4), ymax = 2, thickness=2, axes_labels=('$x$','$y$'))
-                            p1 = plot(f,(x,1,4),fill=True)
-                            f_label = text('$f(x)$', (4.1,f(4.1)), fontsize=12, color='blue')
-                            g_label = text('$g(x)$', (4.1,g(4.1)), fontsize=12, color='green')
-                            h_label = text('$h(x)$', (4.1,h(4.1)), fontsize=12, color='red')
-                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
-                            p+left+f_label+g_label+h_label+p1
-                        </sageplot>
-                    </image>
-            </figure>    
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-TI8-graph1">
+                <xi:include href="prefigure/TI8-graph1.xml"/>
+              </prefigure>
+            </image>  
 	    <p>
                 If <m>\displaystyle \int_1^\infty f(x)\, dx</m> is convergent, what can we say about <m>g(x), h(x)</m>?
                 <ol marker="A.">
@@ -330,25 +316,11 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
         <activity xml:id="activity-TI8finfinityunbounded">
             <p>
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
-            <figure>
-                <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="finfinity2" width="100%">
-                        <description>Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).</description>
-                        <sageplot>
-                            x = var('x')
-                            f(x) = 1/x
-                            g(x) = 1/x^2
-                            h(x) = 1/x^(1/2)
-                            p = plot([f,g,h], (x,1,4), ymax = 2, thickness=2, axes_labels=('$x$','$y$'))
-                            p1 = plot(f,(x,1,4),fill=True)
-                            f_label = text('$f(x)$', (4.1,f(4.1)), fontsize=12, color='blue')
-                            g_label = text('$g(x)$', (4.1,g(4.1)), fontsize=12, color='green')
-                            h_label = text('$h(x)$', (4.1,h(4.1)), fontsize=12, color='red')
-                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
-                            p+left+f_label+g_label+h_label+p1
-                        </sageplot>
-                    </image>
-            </figure>    
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-TI8-graph12">
+                <xi:include href="prefigure/TI8-graph1.xml"/>
+              </prefigure>
+            </image>  
                 If <m>\displaystyle \int_1^\infty f(x)\, dx</m> is divergent, what can we say about <m>g(x), h(x)</m>?
                 <ol marker="A.">
                     <li><m>\displaystyle \int_1^\infty g(x)\, dx</m> and <m>\displaystyle \int_1^\infty h(x)\, dx</m> are both convergent.</li>
@@ -364,26 +336,11 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
         <activity xml:id="activity-TI8zerobounded">
             <p>
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
-            <figure>
-                <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fzero" width="100%">
-``` I'm not sure why this one was set to 50% instead of 100% like the first 2.  I think it made sense with the old graphs, but with the new ones, I think it should be 100%.
-                        <sageplot>
-                            x = var('x')
-                            f(x) = 1/x
-                            g(x) = .7/x
-                            h(x) = 1.3/x
-                            p = plot([f,g,h], (x,.25,1), thickness=2, axes_labels=('$x$','$y$'))
-                            p1 = plot(f,(x,.25,1),fill=True)
-                            a = 1.03
-                            f_label = text('$f(x)$', (a,f(a)), fontsize=12, color='blue')
-                            g_label = text('$g(x)$', (a,g(a)), fontsize=12, color='green')
-                            h_label = text('$h(x)$', (a,h(a)), fontsize=12, color='red')
-                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
-                            p+left+f_label+g_label+h_label+p1
-                        </sageplot>
-                    </image>
-            </figure>    
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-TI8-graph2">
+                <xi:include href="prefigure/TI8-graph2.xml"/>
+              </prefigure>
+            </image>  
                 If <m>\displaystyle \int_0^1 f(x)\, dx</m> is convergent, what can we say about <m>g(x)</m> and <m>h(x)</m>?
                 <ol marker="A.">
                     <li><m>\displaystyle \int_0^1 g(x)\, dx</m> and <m>\displaystyle \int_0^1 h(x)\, dx</m> are both convergent.</li>
@@ -398,26 +355,11 @@ we let <m>\displaystyle \int_c^b f(x)\, dx</m> denote <me>\int_c^b f(x)\, dx=\li
         <activity xml:id="activity-TI8zerounbounded">
             <p>
                 Consider the plots of <m>f(x), g(x), h(x) </m> where <m>0 &lt; g(x) &lt; f(x) &lt; h(x)</m>.
-            <figure>
-                <caption>Plots of <m>f(x), g(x), h(x)</m></caption>
-                    <image xml:id="fzero2" width="100%">
-                        <description>Plots of positive functions f(x), g(x) and h(x).</description>
-                        <sageplot>
-                            x = var('x')
-                            f(x) = 1/x
-                            g(x) = .7/x
-                            h(x) = 1.3/x
-                            p = plot([f,g,h], (x,.25,1), thickness=2, axes_labels=('$x$','$y$'))
-                            p1 = plot(f,(x,.25,1),fill=True)
-                            a = 1.03
-                            f_label = text('$f(x)$', (a,f(a)), fontsize=12, color='blue')
-                            g_label = text('$g(x)$', (a,g(a)), fontsize=12, color='green')
-                            h_label = text('$h(x)$', (a,h(a)), fontsize=12, color='red')
-                            left = line(([1,2],[1,0]), linestyle='dashed', color='black')
-                            p+left+f_label+g_label+h_label+p1
-                        </sageplot>
-                    </image>
-            </figure>    
+            <image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-TI8-graph21">
+                <xi:include href="prefigure/TI8-graph2.xml"/>
+              </prefigure>
+            </image>  
                 If <m>\displaystyle \int_0^1 f(x)\, dx</m> is divergent, what can we say about <m>g(x)</m> and <m>h(x)</m>?
                 <ol marker="A.">
                     <li><m>\displaystyle \int_0^1 g(x)\, dx</m> and <m>\displaystyle \int_0^1 h(x)\, dx</m> are both convergent.</li>

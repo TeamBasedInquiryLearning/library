@@ -1,0 +1,14 @@
+<diagram dimensions="(300,300)" margins="35"  xmlns="https://prefigure.org">
+  <definition>f(x)=ln(x)</definition>
+  <definition>h=5</definition>
+  <coordinates bbox="(-4.1,-h,4.1,h)" >
+    <grid-axes hlabels="(-4,1,4)"/>
+    <label p="(0,h*1.1)">Graph B</label>
+    <graph at="f" function="f" />
+  </coordinates>
+  <annotations>
+    <annotation ref="figure" text="The graph of a function">
+      <annotation ref="f" sonify="yes" text="The function increases almost vertically to the right of the y-axis, then increases with a decreasing slope"/>
+    </annotation>
+  </annotations>
+</diagram>

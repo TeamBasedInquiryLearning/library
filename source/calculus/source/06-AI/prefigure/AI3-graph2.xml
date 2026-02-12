@@ -1,0 +1,18 @@
+<diagram dimensions="(200,400)" margins="25" xmlns="https://prefigure.org">
+  <definition>f(x)=x^2</definition>
+  <coordinates bbox="(-0.1,-0.1,2.1,4.1)">   
+    <grid-axes spacings="((0,0.5,2),(0,0.5,4))" hlabels="(0,1,2)"/>
+    <group at="region">
+      <graph function="f" stroke="red" domain="(0,2)"/>
+      <line endpoints="((0,0),(0,4))" stroke="red"/>
+      <line endpoints="((2,4),(0,4))" stroke="red"/>
+    </group>
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A graph of a region in the plane">
+      <annotation ref="region" text="The area bounded by the curve y equals x squared, the vertical line x equals 0, and the horizontal line y equals 4"/>
+    </annotation>
+  </annotations>
+</diagram>

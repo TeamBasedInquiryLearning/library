@@ -1,0 +1,26 @@
+<diagram dimensions="(300,500)" margins="25"  xmlns="https://prefigure.org" >
+  <coordinates bbox="(-1,0,5,10)" aspect-ratio="1">
+    <polygon at="rope" points="(1.5,3),(1.5,9),(3,9),(3,0)" stroke="black"/>
+    
+    <polygon at="bucket2" points="((1,5),(2,5),(1.8,4),(1.2,4))" closed="yes" stroke="blue" dash="5 5"/>
+    <group at="bucket">
+      <polygon  points="((1,3),(2,3),(1.8,2),(1.2,2))" closed="yes" stroke="blue"/>
+      <line endpoints="((1.8,2),(3.5,2))" stroke="red" dash="9 9"/>
+      <label anchor="(3.5,2)" alignment="east" scale="0.7"><m>h_i = 5\ \text{m}</m></label>
+    </group>
+    <group at="h">
+      <line endpoints="((0.5,2),(0.5,4))" thickness="1" scale="0.7" rotate="-90" offset="(0,30)"><m>\Delta h = 5\ \text{m}</m></line>
+      <line endpoints="((0.4,2),(0.6,2))" thickness="1"/>
+      <line endpoints="((0.4,4),(0.6,4))" thickness="1"/>
+    </group>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A diagram of a bucket being hoisted">
+      <annotation ref="bucket" text="A blue trapezoid representing a bucket. The bottom of the bucket is labeled h sub i equals 5 meters"/>
+      <annotation ref="bucket2" text="A blue dashed trapezoid representing the bucket, but now raised higher"/>
+      <annotation ref="h" text="A line segment showing the bucket has been lifted Delta h equals 5 meters"/>
+      <annotation ref="rope" text="A representation of the rope lifting the bucket"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,38 @@
+<diagram dimensions="(300,300)" margins="40" xmlns="https://prefigure.org">
+  <coordinates bbox="(-4,-4,4,4)">
+    <definition>f(x) = 2*exp(x/4)*sin(2*x)</definition>
+    <definition>samples=(-2.5, -1.2, 0.3, 1, 2.8)</definition>
+    <definition>alignments=("northwest","southwest", "northwest", "north", "east")</definition>
+    <grid-axes decorations="no"/>
+    <definition>
+      ordinals=('first', 'second', 'third', 'fourth', 'fifth', 'sixth')
+    </definition>
+    <riemann-sum at="rs" function="f"
+                 fill="lightblue" stroke="black"
+                 partition="(-3, -1.5, -1, 0.5, 2, 3)"
+                 samples="samples"
+                 miterlimit="1"
+                 annotate="yes" circular="yes"
+                 text="A Riemann sum for the function f over the interval from
+                       -3 to 3 with six subintervals defined by the partition
+                       attribute."
+                 subinterval-text="The ${ordinals[_interval]} interval
+                                   starts at x=${_left} and ends at
+                                   x=${_right} with height ${_height}"/>
+    <graph at="graph" function="f"/>
+    <repeat at="r" parameter="k=0..6" annotate="yes" text="The sample points">
+      <point p="(samples[k],f(samples[k]))" alignment="alignments[k]" annotate="yes" text="The point s sub ${k+1} comma f of s sub ${k+1}"><m>(s_${k+1},f(s_${k+1}))</m></point>
+    </repeat>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="A representation of a generic Riemann sum with arbitrary sample points">
+      <annotation ref="graph"
+                  text="The graph of the function f"
+                  sonify="yes"/>
+      <annotation ref="rs"/>
+      <annotationo ref="r"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=atan(x)</definition>
+  <coordinates bbox="(-3.1,-pi/2-0.1,3.1,pi/2+0.1)">
+    <grid-axes v-pi-format="yes" hlabels="(-3,1,3)" vlabels="(-1*pi/2,pi/4,pi)"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the inverse tangent function">
+      <annotation ref="f" text="A curve of an odd function that rises through the third quadrant to the origin and appears to flatten out towards positive and negative infinity"/>
+    </annotation>
+  </annotations>
+</diagram>

@@ -148,7 +148,8 @@
     </me>
         </p>
 </remark>
-<activity estimated-time='10'>
+
+<activity>
     <introduction>
     <p>Consider the following three vectors in <m>\IR^3</m>:
         <me>\vec v_1=\left[\begin{array}{c}-2 \\ 0 \\ 0\end{array}\right],
@@ -159,6 +160,7 @@
         </p>
     </introduction>
     <task>
+      <statement>
         <p>
             Let <m> \vec w = 3\vec v_1 - \vec v_2 - 5 \vec v_3 = \left[\begin{array}{c}\unknown \\ \unknown \\ \unknown\end{array}\right]</m>. 
             The set <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m> is...
@@ -167,8 +169,16 @@
                 <li><p>linearly independent: no vector is a linear combination of others</p></li>
             </ol>
         </p>
+      </statement>
+      <answer>
+        <p>A.</p>
+        <p>
+<m>\vec w</m> is a linear combination of the others, so the set is dependent.
+        </p>
+      </answer>
     </task>
     <task> 
+      <statement>
         <p>
        Find <me>\RREF \left[\begin{array}{ccc|c}
         \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
@@ -200,8 +210,14 @@
                 </li>
             </ol>
         </p>
-        </task>
+      </statement>
+      <answer>
+        <p>B.</p>
+        <p>Each variable is set equal to a specific value.</p>
+      </answer>
+    </task>
     <task> 
+      <statement>
         <p>
        Find <me>\RREF \left[\begin{array}{cccc|c}
         \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w  &amp; \vec 0\\
@@ -233,52 +249,75 @@
                 </li>
             </ol>
         </p>
+        </statement>
+      <answer>
+        <p>C.</p>
+        <p><m>\vec w</m>'s column is not a pivot, revealing a free variable and infinitely-many solutions.</p>
+      </answer>
         </task>
-        <task> 
+        <task>
+            <statement>
             <p>
-            Which of the following is the best conclusion obtained when we solved
-            <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>?
+It follows that <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
+is linearly dependent because <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>
+had the number of solutions you found in the previous task.
+Which feature of which RREF matrix best reveals this?
                 <ol marker="A.">
                     <li>
                         <p>
-A pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
-            \end{array}\right]</m> guarantees the linear independence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by preventing contradictions.
+The <em>pivot</em> column in the <em>augmented</em> matrix
+<m>\RREF \left[\begin{array}{ccc|c} 
+  \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
+\end{array}\right]</m>.
                         </p>
                     </li>
                     <li>
                         <p>
-A pivot column in the <em>coefficient</em> matrix <m>\RREF \left[\begin{array}{cccc}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
-            \end{array}\right]</m> guarantees the linear independence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by preventing contradictions.
+The <em>pivot</em> column in the <em>coefficient</em> matrix
+<m>\RREF \left[\begin{array}{cccc} 
+  \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
+\end{array}\right]</m>.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column in the <em>augmented</em> matrix <m>\RREF \left[\begin{array}{cccc|c}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
-            \end{array}\right]</m> guarantees the linear dependence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by describing a linear combination of one vector in terms of the others.
+The <em>non-pivot</em> column in the <em>augmented</em> matrix
+<m>\RREF \left[\begin{array}{ccc|c} 
+  \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
+\end{array}\right]</m>.
                         </p>
                     </li>
                     <li>
                         <p>
-A non-pivot column in the <em>coefficient</em> matrix <m>\RREF \left[\begin{array}{cccc}
-        \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w  \\
-            \end{array}\right]</m> guarantees the linear dependence
-of <m>\{\vec v_1,\vec v_2,\vec v_3,\vec w\}</m>
-by describing a linear combination of one vector in terms of the others.
+The <em>non-pivot</em> column in the <em>coefficient</em> matrix
+<m>\RREF \left[\begin{array}{cccc} 
+  \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
+\end{array}\right]</m>.
                         </p>
                     </li>
                 </ol>
             </p>
+            </statement>
+            <answer>
+                <p>D.</p>
+                <p>
+<m>\RREF \left[\begin{array}{cccc} 
+  \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w 
+\end{array}\right]</m> (or <m>\RREF \left[\begin{array}{cccc|c} 
+  \vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0
+\end{array}\right]</m>) can be used to solve
+<m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}</m>,
+and the non-pivot column reveals it has infinitely-many solutions.
+                </p>
+                <p>
+Note that (C) technically represents the equation
+<m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 =\vec w</m>
+which isn't what was asked about.
+                </p>
+            </answer>
             </task>
     </activity>
+
 <sage language="octave">
 </sage>
 

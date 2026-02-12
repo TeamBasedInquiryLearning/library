@@ -1,0 +1,15 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=x^3-9*x^2+24*x + 3</definition>
+  <definition>v(x)=deriv(f,x)</definition>
+  <coordinates bbox="(-0.1,-6,5.1,27)">
+    <grid-axes />
+    <graph at="f" function="v" domain="(0,5)"/>
+    <label p="(2.5,29)"><m>v(t)</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the function v of t">
+      <annotation ref="f" text="A parabolic curve starting near 0 comma 24 and decreasing, with x intercepts at 2 and 4 and a minimum at x equals 3"/>
+    </annotation>
+  </annotations>
+</diagram>

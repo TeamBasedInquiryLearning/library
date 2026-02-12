@@ -1,0 +1,28 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-10,0,17.1,20.1)">
+
+    <group at="h1">
+      <line endpoints="((-7,0),(-7,20))" rotate="-90" offset="(0,20)"><m>20\ \text{m}</m></line>
+      <line endpoints="((-7.4,0),(-6.6,0))"/>
+      <line endpoints="((-7.4,20),(-6.6,20))"/>
+    </group> 
+    <group at="h2">
+      <line endpoints="((11,8),(11,12))" rotate="-90" offset="(0,-50)"><m>\Delta h = 4\ \text{m}</m></line>
+      <line endpoints="((10.6,8),(11.4,8))"/>
+      <line endpoints="((10.6,12),(11.4,12))"/>
+    </group> 
+    <repeat ref="r" parameter="k=0..4">
+      <rectangle lower-left="(0,4*k)" dimensions="(10,4)" fill="blue" fill-opacity="50%" stroke="black"/>
+      <label anchor="(0,4*k)" alignment="west" scale="0.7"><m>h_${k+1}=${4*k}\ \text{m}</m></label>
+    </repeat>
+    
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A rectangle sliced into five pieces">
+      <annotation ref="r" text="A rectangle twice as tall as it is wide, sliced horizontally into five equal subrectangles. The bottoms of the rectangles are labeled h sub 1 equals 0 meters, h sub 2 equals 4 meters, ... h sub 5 equals 16 meters"/>
+      <annotation ref="h1" text="A vertical bar showing the height of the rectangle to be 20 meters"/>
+      <annotation ref="h2" text="A vertical bar showing the height of a subrectangle to be delta h equals 4 meters"/>
+    </annotation>
+  </annotations>
+</diagram>

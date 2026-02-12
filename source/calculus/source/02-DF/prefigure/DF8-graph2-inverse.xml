@@ -1,0 +1,13 @@
+<diagram dimensions="(300,300)" margins="35" xmlns="https://prefigure.org">
+  <definition>f(x)=asin(x)</definition>
+  <coordinates bbox="(-1.1,-pi/2-0.1,1.1,pi/2+0.1)">
+    <grid-axes v-pi-format="yes" vlabels="(-1*pi/2,pi/4,pi/2)"/>
+    <graph at="f" function="f"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="Graph of the inverse sine function">
+      <annotation ref="f" text="A curve beginning at -1 comma -pi over 2 and curving up through the origin to 1 comma pi over 2"/>
+    </annotation>
+  </annotations>
+</diagram>

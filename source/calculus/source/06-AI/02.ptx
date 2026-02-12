@@ -16,51 +16,28 @@
         <introduction>
             <p>
                 Suppose we wanted to find the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>.
-                <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
-                    <image xml:id="parabolaarclength" width="75%">
-                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <sageplot>
-                            x = var('x')
-                            f(x) = -x^2+6*x
-                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'), aspect_ratio=.5)
-                            p
-                        </sageplot> 
-                    </image>
-            </figure>
             </p>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AI2-graph1">
+                    <xi:include href="prefigure/AI2-graph1.xml"/>
+                </prefigure>
+                <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
+            </image>
         </introduction>
         
         <task>
             <p>
                 Suppose we wished to estimate this length with two line segments where <m>\Delta x=2</m>.
-                <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with two line segments where <m>\Delta x=2</m>.</caption>
-                    <image xml:id="parabolaarclengthtwopieces" width="75%">
-                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <sageplot>
-                            from sage.plot.graphics import Graphics
-                            geometry=Graphics()
-                            x = var('x')
-                            f(x) = -x^2+6*x
-                            segment_1 = line(([0,0],[2,f(2)]),linestyle='dashed')
-                            segment_2 = line(([2,f(2)],[4,f(4)]),linestyle='dashed')
-                            f0 = ellipse((0,f(0)),0.05,0.1,facecolor='black',fill=True)
-                            f2 = ellipse((2,f(2)),0.05,0.1,facecolor='black',fill=True)
-                            f4 = ellipse((4,f(4)),.05,0.1,facecolor='black',fill=True)
-                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'))
-                            geometry += f0
-                            geometry += f2
-                            geometry += f4
-                            geometry += segment_1
-                            geometry += segment_2
-                            geometry += p
-                            geometry.set_aspect_ratio(0.5)
-                            geometry
-                        </sageplot>     
-                    </image>
-            </figure>
-                    </p>
+            </p>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AI2-graph2">
+                    <xi:include href="prefigure/AI2-graph2.xml"/>
+                </prefigure>
+                <description>
+                    <p>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with a piecewise linear approximation
+                    consisting of two pieces.</p>
+                </description>
+            </image>
             <p>Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(2,8)</m> and  <m>(4,8)</m>?</p>
                 
                 <ol marker="A." cols="2">
@@ -74,41 +51,16 @@
         <task>
             <p>
                 Suppose we wished to estimate this length with four line segments where <m>\Delta x=1</m>.
-                <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with four line segments where <m>\Delta x=1</m>.</caption>
-                    <image xml:id="parabolaarclengthfourpieces" width="75%">
-                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <sageplot>
-                            from sage.plot.graphics import Graphics
-                            geometry=Graphics()
-                            x = var('x')
-                            f(x) = -x^2+6*x
-                            segment_0 = line(([0,0],[1,f(1)]),linestyle='dashed')
-                            segment_1 = line(([1,f(1)],[2,f(2)]),linestyle='dashed')
-                            segment_2 = line(([2,f(2)],[3,f(3)]),linestyle='dashed')
-                            segment_3 = line(([3,f(3)],[4,f(4)]),linestyle='dashed')
-                            f0 = ellipse((0,f(0)),0.05,0.1,facecolor='black',fill=True)
-                            f1 = ellipse((1,f(1)),0.05,0.1,facecolor='black',fill=True)
-                            f2 = ellipse((2,f(2)),0.05,0.1,facecolor='black',fill=True)
-                            f3 = ellipse((3,f(3)),0.05,0.1,facecolor='black',fill=True)
-                            f4 = ellipse((4,f(4)),0.05,0.1,facecolor='black',fill=True)
-                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'))
-                            geometry += f0
-                            geometry += f1
-                            geometry += f2
-                            geometry += f3
-                            geometry += f4
-                            geometry += segment_0
-                            geometry += segment_1
-                            geometry += segment_2
-                            geometry += segment_3
-                            geometry += p
-                            geometry.set_aspect_ratio(0.5)
-                            geometry
-                        </sageplot>
-                    </image>
-            </figure>
             </p>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AI2-graph3">
+                    <xi:include href="prefigure/AI2-graph3.xml"/>
+                </prefigure>
+                <description>
+                    <p>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with a piecewise linear approximation
+                    consisting of four pieces.</p>
+                </description>
+            </image>
             <p>Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(1,5)</m>, <m>(2,8)</m>, <m>(3,9)</m> and <m>(4,8)</m>?</p>
                 <ol marker='A'>
                     <li><m>\sqrt{4^2+8^2}</m></li>
@@ -120,39 +72,12 @@
         <task>
             <p>
                 Suppose we wished to estimate this length with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.  Let <m>f(x)=-x^2+6x</m>.
-                <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.</caption>
-                    <image xml:id="parabolaarclengthnpieces" width="75%">
-                        <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
-                        <sageplot>
-                            from sage.plot.graphics import Graphics
-                            geometry=Graphics()
-                            x = var('x')
-                            f(x) = -x^2+6*x
-                            f0 = ellipse((2,f(2)),0.05,0.1,fill=True,facecolor='red')
-                            f1 = ellipse((2.5,f(2.5)),0.05,0.1,fill=True,facecolor='red')
-                            x_leg = line(([2,f(2)],[2.5,f(2)]),linestyle='dashed',color='red')
-                            y_leg = line(([2.5,f(2)],[2.5,f(2.5)]),linestyle='dashed',color='red')
-                            hyp = line(([2,f(2)],[2.5,f(2.5)]),linestyle='dashed',color='red')
-                            p = plot(f,(x,0,4),thickness=2,gridlines=True,axes_labels=('$x$','$y$'))
-                            deltaX = text('$\\Delta x$',(2.25,f(1.8)),color='red',fontsize=12)
-                            f0_label = text('$(x_0,f(x_0))$',(1.25,f(2)), color='red',fontsize=12)
-                            f1_label = text('$(x_0+\\Delta x,f(x_0+\\Delta x))$',(3.5,9.5), color='red',fontsize=12)
-                            geometry += f0
-                            geometry += f1
-                            geometry += x_leg
-                            geometry += y_leg
-                            geometry += hyp
-                            geometry += p
-                            geometry += deltaX
-                            geometry += f0_label
-                            geometry += f1_label
-                            geometry.set_aspect_ratio(0.5)
-                            geometry
-                        </sageplot>     
-                    </image>
-            </figure>
             </p>
+            <image>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-AI2-graph4">
+                    <xi:include href="prefigure/AI2-graph4.xml"/>
+                </prefigure>
+            </image>
             <p>Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(x_0+\Delta x, f(x_0+\Delta x))</m>?</p>
                 <ol marker="A." cols="2">
                     <li><m>\sqrt{x_0^2+f(x_0)^2}</m></li>

@@ -33,23 +33,15 @@
           <m>y = s(t)</m>.</caption>
           <sidebyside widths="50% 50%">
             <image>
-              <sageplot>
-                x = var('x')
-                f = 0
-                ticks = [True,[a for a in (1..8)]]
-                p = plot(f,(x,0,2.25), thickness=0, ymin = 0.25, ymax = 8.25, gridlines='minor', axes_labels=('hrs','mph'), axes_labels_size=1, aspect_ratio=.25, ticks=ticks)
-                p
-              </sageplot>
-            </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN2-blank1">
+                <xi:include href="prefigure/IN2-blank1.xml"/>
+              </prefigure>
+            </image>  
             <image>
-              <sageplot>
-                x = var('x')
-                f = 0
-                ticks = [True,[a for a in (1..8)]]
-                p = plot(f,(x,0,2.25), thickness=0, ymin = 0.25, ymax = 8.25, gridlines='minor', axes_labels=('hrs','miles'), axes_labels_size=1, aspect_ratio=.25, ticks=ticks)
-                p
-              </sageplot>
-            </image>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-IN2-blank2">
+                <xi:include href="prefigure/IN2-blank2.xml"/>
+              </prefigure>
+            </image>  
           </sidebyside>
         </figure>
 
@@ -94,83 +86,58 @@
 <activity xml:id="act-4-1-1">
   <introduction>
     <p>
-      Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in <xref ref="T-4-1-Act1">Table</xref>
-      and graph given in <xref ref="F-4-1-Act1">Figure</xref>.
+      Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in 
+      the table and graph below.
     </p>
 
-    <sidebyside widths="47% 47%" margins="auto" valign="middle">
-
-      <table xml:id="T-4-1-Act1" >
-        <title>Velocity data for the person walking.</title>
-        <tabular >
-          <row bottom="minor" halign="center">
-            <cell><m>t</m></cell>
-            <cell><m>v(t)</m></cell>
-          </row>
-          <row>
-            <cell><m>0.00</m></cell>
-            <cell><m>1.500</m></cell>
-          </row>
-          <row>
-            <cell><m>0.25</m></cell>
-            <cell><m>1.789</m></cell>
-          </row>
-          <row>
-            <cell><m>0.50</m></cell>
-            <cell><m>1.938</m></cell>
-          </row>
-          <row>
-            <cell><m>0.75</m></cell>
-            <cell><m>1.992</m></cell>
-          </row>
-          <row>
-            <cell><m>1.00</m></cell>
-            <cell><m>2.000</m></cell>
-          </row>
-          <row>
-            <cell><m>1.25</m></cell>
-            <cell><m>2.008</m></cell>
-          </row>
-          <row>
-            <cell><m>1.50</m></cell>
-            <cell><m>2.063</m></cell>
-          </row>
-          <row>
-            <cell><m>1.75</m></cell>
-            <cell><m>2.211</m></cell>
-          </row>
-          <row>
-            <cell><m>2.00</m></cell>
-            <cell><m>2.500</m></cell>
-          </row>
-        </tabular>
-
-      </table>
-
-      <figure xml:id="F-4-1-Act1" >
-        <caption>The graph of <m>y = v(t)</m>.</caption>
-          <image>
-          <sageplot>
-            x = var('x')
-            f = (x-1)^3 + 2.5
-            p = plot(f, (x,-.25,2.25), thickness=2, ymin=0, ymax = 3.5, gridlines=True, axes_labels=('hrs','mph'), axes_labels_size=1, aspect_ratio=.6)
-            a = text("$y = v(t)$",(1, 2.65), fontsize=12, color='black')
-            p + a
-          </sageplot>
-        </image>
-        <!--
-        <image>
-          <sageplot>
-            x = var('x')
-            f = (x-1)^3 + 2.5
-            ticks = [[a for a in (.25,.5..3.5)],[a for a in (.25,.5..3.5)]]
-            p = plot(f, (x,-.25,2.25), thickness=2, ymin=0, ymax = 3.5, gridlines=True, axes_labels=('hrs','mph'), axes_labels_size=1, aspect_ratio=.6, ticks=ticks)
-            a = text("$y = v(t)$",(1, 2.65), fontsize=12, color='black')
-            p + a
-          </sageplot>
-        </image>
-        -->
-      </figure>
+    <sidebyside widths="47% 47%" margins="auto" valign="middle" permid="nSM">
+      <tabular>
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell><m>v(t)</m></cell>
+        </row>
+        <row>
+          <cell><m>0.00</m></cell>
+          <cell><m>1.500</m></cell>
+        </row>
+        <row>
+          <cell><m>0.25</m></cell>
+          <cell><m>1.789</m></cell>
+        </row>
+        <row>
+          <cell><m>0.50</m></cell>
+          <cell><m>1.938</m></cell>
+        </row>
+        <row>
+          <cell><m>0.75</m></cell>
+          <cell><m>1.992</m></cell>
+        </row>
+        <row>
+          <cell><m>1.00</m></cell>
+          <cell><m>2.000</m></cell>
+        </row>
+        <row>
+          <cell><m>1.25</m></cell>
+          <cell><m>2.008</m></cell>
+        </row>
+        <row>
+          <cell><m>1.50</m></cell>
+          <cell><m>2.063</m></cell>
+        </row>
+        <row>
+          <cell><m>1.75</m></cell>
+          <cell><m>2.211</m></cell>
+        </row>
+        <row>
+          <cell><m>2.00</m></cell>
+          <cell><m>2.500</m></cell>
+        </row>
+      </tabular>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-IN2-graph1">
+          <xi:include href="prefigure/IN2-graph1.xml"/>
+        </prefigure>
+      </image>  
     </sidebyside>
   </introduction>
 
@@ -252,66 +219,11 @@
 
 <figure xml:id="fig-riemann-sum-generic">
   <caption>A generic Riemann sum.</caption>
-  <image width="100%">
-    <sageplot>
-      # Import necessary library
-      from sage.plot.graphics import Graphics
-
-      # Create a new graphics object
-      geometry = Graphics()
-
-      # Add rectangles
-      rectangles = [
-          ((0, 0), (0.8, 1)),
-          ((0.8, 0), (1.9, 1.75)),
-          ((1.9, 0), (3.4, -1.2)),
-          ((3.4, 0), (4.2, 0.85)),
-          ((4.2, 0), (5.7, 0.35)),
-          ((5.7, 0), (6, -0.5)),
-      ]
-      for rect in rectangles:
-          geometry += polygon2d(
-              [rect[0], (rect[1][0], rect[0][1]), rect[1], (rect[0][0], rect[1][1])],
-              fill=True, color='lightgray', edgecolor='black'
-          )
-
-      # Add points and their labels
-      points = [
-          (0.2, 1.0, "$(s_1, f(s_1))$", "above"),
-          (1.55, 1.75, "$(s_2, f(s_2))$", "above"),
-          (2.15, -1.2, "$(s_3, f(s_3))$", "below"),
-          (3.8, 0.85, "$(s_4, f(s_4))$", "above"),
-          (4.5, 0.35, "$(s_5, f(s_5))$", "above"),
-          (6.0, -0.5, "$(s_6, f(s_6))$", "below"),
-      ]
-      for (x, y, label, position) in points:
-          geometry += point((x, y), color="black", size=20)
-          geometry += text(label, (x, y + (0.2 if position == "above" else -0.2)), fontsize=12, color="black")
-
-      # Add x-axis labels
-      x_labels = [
-          (0, "$x_0$"), (0.8, "$x_1$"), (1.9, "$x_2$"), (3.4, "$x_3$"),
-          (4.2, "$x_4$"), (5.7, "$x_5$"), (6, "$x_6$")
-      ]
-      for (x, label) in x_labels:
-          geometry += text(label, (x, -0.15), fontsize=12, color="black")
-
-      # Define the Bézier path
-      bezier_segments = [
-          bezier_path([[(0, 0.8), (0.1, 0.9), (0.1, 1.1), (0.2, 1.0)]], alpha=0.75, color = 'blue', thickness=2, linestyle='dashed'),
-          bezier_path([[(0.2, 1.0), (1, 2), (1, -1.0), (1.55, 1.75)]], alpha=0.75, color = 'blue', thickness=2, linestyle='dashed'),
-          bezier_path([[(1.55, 1.75), (1.8, -0.42), (2.1, 1.9), (2.15, -1.2)]], alpha=0.75, color = 'blue', thickness=2, linestyle='dashed'),
-          bezier_path([[(2.15, -1.2), (2.6, -1.3), (3.2, -1.1), (3.8, 0.85)]], alpha=0.75, color = 'blue', thickness=2, linestyle='dashed'),
-          bezier_path([[(3.8, 0.85), (3.9, 0.9), (3.9, 0.8), (4.5, 0.35)]], alpha=0.75, color = 'blue', thickness=2, linestyle='dashed'),
-          bezier_path([[(4.5, 0.35), (4.6, 0.4), (4.6, 0.3), (6.0, -0.5)]], alpha=0.75, color = 'blue', thickness=2, linestyle='dashed')
-      ]
-
-      # Add the Bézier curves to the graphics
-      geometry += sum(bezier_segments, Graphics())
-      geometry.axes(False)
-      geometry
-    </sageplot>
-  </image>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-IN2-generic-riemann-sum">
+          <xi:include href="prefigure/IN2-generic-riemann-sum.xml"/>
+        </prefigure>
+      </image>  
 </figure>
 
 <activity>
@@ -431,18 +343,16 @@
           interval <m>[4,10]</m> using a right Riemann
           sum with 3 subintervals.
         </p>
-        <image>
-          <description>The graph of the function <m>f(x) = 1/5 (x-4)(x-10)(x-12)</m>
+      <image>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-IN2-graph2">
+          <xi:include href="prefigure/IN2-graph2.xml"/>
+        </prefigure>
+        <description>
+          <p>The graph of the function <m>f(x) = 1/5 (x-4)(x-10)(x-12)</m>
           crosses the <m>x</m>-axis upward at <m>(4,0)</m> and downward at <m>(10,0)</m>
-          with a maximum at about <m>(6.3, 9.7)</m>.
+          with a maximum at about <m>(6.3, 9.7)</m>.</p>
         </description>
-          <sageplot>
-            x = var('x')
-            f = 0.2*(x-4)*(x-10)*(x-12)
-            p = plot(f,(x,3,10.5),gridlines=True,ymin = -1, ymax = 11, thickness=2, axes_labels=('$x$','$y$'))
-            p
-          </sageplot>
-        </image>
+      </image>  
     </statement>
     <solution>
       <p>

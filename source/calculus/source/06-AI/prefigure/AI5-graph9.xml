@@ -1,0 +1,25 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org" >
+  <coordinates bbox="(-0.5,-2,5,2)">
+    <definition>f(x) = sqrt(x)</definition>
+    <definition>g(x) = -1*sqrt(x) </definition>
+    
+    <axes axes="horizontal" arrows="1" decorations="no" xlabel="x"/>
+    <group at="rs">
+      <riemann-sum function="f" N="20" domain="(0.2,4)" fill="blue" fill-opacity="0.4" thickness="1"/>
+      <riemann-sum function="g" N="20" domain="(0.2,4)" fill="blue" fill-opacity="0.4" thickness="1"/>
+    </group>
+    <group at="f">
+      <graph function="f" domain="(0,4)" N="1000"/>
+      <graph function="g" domain="(0,4)" N="1000"/>
+    </group>
+
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a solid with vertical slices">
+      <annotation ref="f" text="A horizontal parabola bounding the cross section"/>
+      <annotation ref="rs" text="A series of narrow rectangles stretching across the parabola estimating its area"/>
+    </annotation>
+  </annotations>
+</diagram>

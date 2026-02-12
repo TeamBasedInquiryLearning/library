@@ -19,15 +19,11 @@
                 Consider the graph in <xref ref="vert-asymp" />.
             </p>
             <figure xml:id="vert-asymp">
-                <image width="50%" xml:id="graph-vertical-asymptote">
-                    <sageplot>
-                        x = var('x')
-                        f = 1/x^2
-                        p1 = plot(f, (x,-2,-0.1), ymax = 100, gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio =.05)
-                        p2 = plot(f, (x,.1,2), ymax = 100, gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.05)
-                        p1+p2
-                    </sageplot>       
-                </image>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graph1">
+                        <xi:include href="prefigure/LT6-graph1.xml"/>
+                    </prefigure>
+                </image>  
                 <caption> The graph of <m>1/x^2</m>.</caption>
             </figure>
 
@@ -67,7 +63,11 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
             <me>
     \lim_{x\to a} f(x) = - \infty
             </me>
-   <p> The limit being equal to positive infinity means that we can make the output of <m>f(x)</m> as large a positive number as we want as long as we are sufficiently close to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can make the output of <m>f(x)</m> as large a negative number as we want as long as we are sufficiently close to <m>x=a</m>.</p>
+   <p> The limit being equal to positive infinity means that we can make the output of 
+    <m>f(x)</m> as large a positive number as we want as long as we are sufficiently close 
+    to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can 
+    make the output of <m>f(x)</m> as large a negative number as we want as long as we are 
+    sufficiently close to <m>x=a</m>.</p>
         </statement>
     </definition>
 
@@ -76,87 +76,44 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
         <introduction>
             <p>
                 Select all of the following graphs which illustrate functions with vertical asymptotes.
-<!-- TO-DO make the graphs prettier-->
-                     </p>
-                    <sidebyside>
-                        <figure>
-                            <image xml:id="graph-vert-asymptotes-1">
-                                <sageplot>
-                                    x = var('x')
-                                    f = exp(x)
-                                    p1 = plot(f, (x,-4,4),gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.1)
-                                    p1
-                                </sageplot>
-                            </image>
-                            <caption>A</caption>
-                        </figure>
-    
-                        <figure>
-                            <image xml:id="graph-vert-asymptotes-2">
-                                <sageplot>
-                                    x = var('x')
-                                    f = ln(x)
-                                    p1 = plot(f, (x,0.05,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=1)
-                                    p1
-                                </sageplot>
-                            </image>
-                            <caption>B</caption>
-                        </figure>
-    
-                        <figure>
-                            <image xml:id="graph-vert-asymptotes-3">
-                                <sageplot>
-                                    x = var('x')
-                                    f = -1/x
-                                    p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
-                                    p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.5)
-                                    p1+p2
-                                </sageplot>
-                            </image>
-                            <caption>C</caption>
-                        </figure>
-                    </sidebyside>
-    
-                    <sidebyside>
-                        <figure>
-                            <image xml:id="graph-vert-asymptotes-4">
-                                <sageplot>
-                                    x = var('x')
-                                    f = (.5*x+1)/(x-1)
-                                    p1 = plot(f,(x,-5,0.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
-                                    p2 = plot(f,(x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.4)
-                                    p1+p2
-                                </sageplot>
-                            </image>
-                            <caption>D</caption>
-                        </figure>
-    
-                        <figure>
-                            <image xml:id="graph-vert-asymptotes-5">
-                                <sageplot>
-                                    x = var('x')
-                                    f = (exp(x)+1)/(exp(x)-1)
-                                    p1 = plot(f, (x,-5,-0.1), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                    p2 = plot(f, (x,0.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                    p1+p2
-                                </sageplot>
-                            </image>
-                            <caption>E</caption>
-                        </figure>
-    
-                        <figure>
-                            <image xml:id="graph-vert-asymptotes-6">
-                                <sageplot>
-                                    x = var('x')
-                                    f = (x^2+1)/(x-1)
-                                    p1 = plot(f, (x,-5,.9), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                    p2 = plot(f, (x,1.1,5), gridlines=False, axes_labels=('$x$','$y$'), thickness=2, aspect_ratio=.25)
-                                    p1+p2
-                                </sageplot>
-                            </image>
-                            <caption>F</caption>
-                        </figure>
-                    </sidebyside>
+            </p>
+                    
+            <sbsgroup>
+                <sidebyside>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graph3A">
+                            <xi:include href="prefigure/LT5-graph3A.xml"/>
+                        </prefigure>
+                    </image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graph3B">
+                            <xi:include href="prefigure/LT5-graph3B.xml"/>
+                        </prefigure>
+                    </image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graphC">
+                            <xi:include href="prefigure/LT5-graph3C.xml"/>
+                        </prefigure>
+                    </image>
+                </sidebyside>
+                <sidebyside>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graph3D">
+                            <xi:include href="prefigure/LT5-graph3D.xml"/>
+                        </prefigure>
+                    </image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graph3E">
+                            <xi:include href="prefigure/LT5-graph3E.xml"/>
+                        </prefigure>
+                    </image>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graphF">
+                            <xi:include href="prefigure/LT5-graph3F.xml"/>
+                        </prefigure>
+                    </image>
+                </sidebyside>
+            </sbsgroup>
         </introduction>             
     </activity>
 
@@ -304,15 +261,10 @@ Explain and demonstrate how to find the value of each limit.
         <introduction>
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\dfrac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
              <figure>
-                    <image width="50%" xml:id="graph-rational-practice-2">
-                        <sageplot>
-                            x = var('x')
-                            f = (x+2)*(x+4)/(x^2+3*x-4)
-                            p1 = plot(f, (x,-6,0.9), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-                            p2 = plot(f, (x,1.1,8), ymin = -5, ymax = 8, gridlines=True, axes_labels=('$x$','$f(x)$'), thickness=2, aspect_ratio=1)
-                            c = circle((-4,0.4),0.2,fill=True,facecolor='white',thickness=1)
-                            p1+p2+c
-                        </sageplot>
+                    <image>
+                        <prefigure xmlns="https://prefigure.org" label="prefigure-LT6-graph-rational">
+                            <xi:include href="prefigure/LT6-graph-rational.xml"/>
+                        </prefigure>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>

@@ -1,0 +1,21 @@
+<diagram dimensions="(300,400)" margins="50"  xmlns="https://prefigure.org" >
+  <coordinates bbox="(-1,0,7,10)" aspect-ratio="1">
+    <rectangle at="tank" lower-left="(0,0)" dimensions="(6,10)" stroke="black"/>
+
+    <repeat at="r" parameter="k=0..4" annotate="yes" text="A series of slices of water">
+      <rectangle at="slice" lower-left="(0,2*k)" dimensions="(6,2)" fill="blue" fill-opacity="0.4" stroke="black" dash="9 9" annotate="yes" text="A blue rectangle representing a slice of water. Its thickness is labeled Delta h equals 2 meters"/>
+      <group at="h" annotate="yes" text="A line segment labeling the thickness of the slice to be 2 meters">
+        <line endpoints="((-0.3,2*k),(-0.3,2*(k+1)))" thickness="1" scale="0.7" rotate="-90" offset="(0,30)"><m>\Delta h = 2\ \text{m}</m></line>
+        <line endpoints="((-0.2,2*k),(-0.4,2*k))" thickness="1"/>
+        <line endpoints="((-0.2,2*(k+1)),(-0.4,2*(k+1)))" thickness="1"/>
+      </group>
+    </repeat>
+
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A cross section of a cylindrical tank with a slice of water">
+      <annotation ref="r"/>
+    </annotation>
+  </annotations>
+</diagram>
