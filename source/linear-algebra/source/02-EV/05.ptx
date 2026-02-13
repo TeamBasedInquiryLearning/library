@@ -268,6 +268,7 @@ In particular, the standard basis for <m>\mathbb R^3</m> is <m>\{\vec e_1,\vec e
         </p>
     </introduction>
     <task>
+        <statement>
         <p>
         <me>
       \left\{
@@ -300,8 +301,24 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </li>
     </ol>
 </p>
+</statement>
+<answer>
+<p>A.</p>
+<p>All pivot rows and columns: <md>\left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \sim \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]</md></p>
+</answer>
 </task>
 <task>
+    <statement>
     <p>
     <me>
         \left\{
@@ -334,8 +351,24 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </li>
     </ol>
 </p>
+</statement>
+<answer>
+<p>D.</p>
+<p>Both a non-pivot row and non-pivot column: <md>\left[\begin{array}{cccc}
+2 &amp; 2 &amp; 4 &amp; -3 \\
+3 &amp; 0 &amp; 3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+-1 &amp; 3 &amp; 2 &amp; 3
+\end{array}\right] \sim \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]</md></p>
+</answer>
 </task>
 <task>
+    <statement>
     <p>
     <me>
         \left\{
@@ -369,8 +402,24 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </li>
     </ol>
 </p>
+</statement>
+<answer>
+<p>D.</p>
+<p>Both a non-pivot row and non-pivot column<md>\left[\begin{array}{rrrrr}
+2 &amp; 2 &amp; 3 &amp; -1 &amp; 4 \\
+3 &amp; 0 &amp; 13 &amp; 10 &amp; 3 \\
+0 &amp; 0 &amp; 7 &amp; 7 &amp; 0 \\
+-1 &amp; 3 &amp; 16 &amp; 14 &amp; 2
+\end{array}\right] \sim \left[\begin{array}{rrrrr}
+1 &amp; 0 &amp; 0 &amp; -1 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]</md></p>
+</answer>
 </task>
 <task>
+    <statement>
     <p>
     <me>
         \left\{
@@ -403,8 +452,24 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </li>
     </ol>
 </p>
+</statement>
+<answer>
+<p>A.</p>
+<p>All pivot rows and columns: <md>\left[\begin{array}{cccc}
+2 &amp; 4 &amp; -3 &amp; 3 \\
+3 &amp; 3 &amp; 0 &amp; 6 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+-1 &amp; 2 &amp; 3 &amp; 5
+\end{array}\right] \sim \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]</md></p>
+</answer>
 </task>
 <task>
+    <statement>
     <p>
     <me>
         \left\{
@@ -436,6 +501,21 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </li>
     </ol>
 </p>
+</statement>
+<answer>
+<p>C.</p>
+<p>All pivot columns, but a non-pivot row: <md>\left[\begin{array}{rrr}
+5 &amp; -2 &amp; 4 \\
+3 &amp; 1 &amp; 5 \\
+0 &amp; 0 &amp; 1 \\
+-1 &amp; 3 &amp; 3
+\end{array}\right] \sim \left[\begin{array}{rrr}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right]</md></p>
+</answer>
 </task>
 </activity>
 
