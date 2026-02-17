@@ -11,7 +11,7 @@
     <circle at="c" center="(0,0)" radius="1" stroke="gray" thickness="1"/>
     
     <angle-marker at="a" points="(p1,(0,0),p2)" alignment="east"><m>\alpha</m></angle-marker>
-    <angle-marker at="a" points="(p2,(0,0),p3)" alignment="northwest"><m>150^\circ</m></angle-marker>
+    <angle-marker at="b" points="(p2,(0,0),p3)" alignment="northwest"><m>150^\circ</m></angle-marker>
     <vector at="v1" v="p1" stroke="blue" thickness="2"/>
     <vector at="v2" v="p2" stroke="blue" thickness="2"/>
     <vector at="v3" v="p3" stroke="blue" thickness="2"/>
