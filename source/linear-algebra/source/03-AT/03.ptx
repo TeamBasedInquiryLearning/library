@@ -459,7 +459,7 @@ the set of all vectors that are the result of using <m>T</m> to transform
           <p>
 In general, an arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</m> belongs to
 <m>\Im T</m> provided the equation
-<me>x_1 T(\vec{e}_1)+x_2 T(\vec{e}_2)+x_3T(\vec{e}_3)+x_4T(\vec{e}_4)=\vec{w}</me> has...
+<me>x_1 T(\vec{e}_1)+x_2 T(\vec{e}_2)+x_3T(\vec{e}_3)+x_4T(\vec{e}_4)=\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</me> has...
   <ol marker="A.">
       <li>no solutions.</li>
       <li>exactly one solution.</li>
