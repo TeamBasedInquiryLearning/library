@@ -232,56 +232,13 @@ Thus a given basis for a subspace need not be unique.
         </p>
 </observation>
 
-
-<fact>
+<definition>
     <statement>
         <p>
   Any non-trivial real vector space has infinitely-many different bases, but all
   the bases for a given vector space are exactly the same size.
-        </p>
-        <p>
-  For example,
-  <me>
-    \setList{\vec e_1,\vec e_2,\vec e_3}
-      \text{ and }
-    \setList{
-      \left[\begin{array}{c}1\\0\\0\end{array}\right],
-      \left[\begin{array}{c}0\\1\\0\end{array}\right],
-      \left[\begin{array}{c}1\\1\\1\end{array}\right]
-    }
-      \text{ and }
-    \setList{
-      \left[\begin{array}{c}1\\0\\-3\end{array}\right],
-      \left[\begin{array}{c}2\\-2\\1\end{array}\right],
-      \left[\begin{array}{c}3\\-2\\5\end{array}\right]
-    }
-  </me>
-  are all valid bases for <m>\IR^3</m>, and they all contain three vectors.
-        </p>
-        <p>
-  Similarly,
-  <me>
-    \setList{
-      \left[\begin{array}{c}1\\2\\3\end{array}\right],
-      \left[\begin{array}{c}-2\\0\\5\end{array}\right]
-    }
-      \text{ and }
-    \setList{
-      \left[\begin{array}{c}-1\\2\\8\end{array}\right],
-      \left[\begin{array}{c}0\\4\\11\end{array}\right]
-    }
-  </me>
-  are both valid bases for the same planar subspace of <m>\IR^3</m>,
-  and they both contain two vectors.
-        </p>
-    </statement>
-</fact>
-
-<definition>
-    <statement>
-        <p>
-  The <term>dimension</term> of a vector space or subspace is equal to the size
-  of any basis for the vector space.
+  So we say the <term>dimension</term> of a vector space or subspace is equal to the
+  size of any basis for the vector space.
         </p>
         <p>
   As you'd expect, <m>\IR^n</m> has dimension <m>n</m>.
