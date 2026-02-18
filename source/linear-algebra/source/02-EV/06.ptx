@@ -258,6 +258,22 @@ Thus a given basis for a subspace need not be unique.
   </me>
   are all valid bases for <m>\IR^3</m>, and they all contain three vectors.
         </p>
+        <p>
+  Similarly,
+  <me>
+    \setList{
+      \left[\begin{array}{c}1\\2\\3\end{array}\right],
+      \left[\begin{array}{c}-2\\0\\5\end{array}\right]
+    }
+      \text{ and }
+    \setList{
+      \left[\begin{array}{c}-1\\2\\8\end{array}\right],
+      \left[\begin{array}{c}0\\4\\11\end{array}\right]
+    }
+  </me>
+  are both valid bases for the same planar subspace of <m>\IR^3</m>,
+  and they both contain two vectors.
+        </p>
     </statement>
 </fact>
 
@@ -287,6 +303,22 @@ Thus a given basis for a subspace need not be unique.
     }
   </me>
   contains exactly three vectors.
+        </p>
+        <p>
+  Likewise, the planar subspace with the following two bases
+  <me>
+    \setList{
+      \left[\begin{array}{c}1\\2\\3\end{array}\right],
+      \left[\begin{array}{c}-2\\0\\5\end{array}\right]
+    }
+      \text{ and }
+    \setList{
+      \left[\begin{array}{c}-1\\2\\8\end{array}\right],
+      \left[\begin{array}{c}0\\4\\11\end{array}\right]
+    }
+  </me>
+  has dimension <m>2</m> because any basis for the subspace
+  will have exactly two vectors.
         </p>
     </statement>
 </definition>
