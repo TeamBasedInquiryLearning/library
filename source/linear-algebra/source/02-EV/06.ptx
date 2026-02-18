@@ -43,19 +43,20 @@
 </subsection>
 
 <subsection><title>Class Activities</title>
+
 <observation>
         <p>
-Recall from section <xref ref="EV3"></xref> that a <term>subspace</term> of a vector space is
-the result of spanning a set of vectors from that vector space.
+In <xref ref="EV3-planar-subspace-vs-r2" /> we saw an example of
+two linearly independent vectors spanning a planar subspace of <m>\IR^3</m>.
         </p>
         <p>
-Recall also that a linearly dependent set contains <q>redundant</q> vectors. For example,
-only two of the three vectors in <xref ref="EV4-figure-linearly-dependent"/> are needed to span
-the planar subspace.
+Because these independent vectors fail to span <m>\IR^3</m>, they are not
+a basis for <m>\IR^3</m>. However, they still span a <em>subspace</em> of
+<m>\IR^3</m>...
         </p>
 </observation>
 
-<activity estimated-time='10'>
+<activity>
     <introduction>
         <p>
   Consider the subspace of <m>\IR^4</m> given by <m>W=\vspan\left\{
@@ -68,27 +69,59 @@ the planar subspace.
         </p>
     </introduction>
   <task>
-      <p>
-    Mark the column of <m>\RREF\left[\begin{array}{cccc}
-    2&amp;2&amp;2&amp;1\\
-    3&amp;0&amp;-3&amp;5\\
-    0&amp;1&amp;2&amp;-1\\
-    1&amp;-1&amp;-3&amp;0
-    \end{array}\right]</m> that shows that <m>W</m>'s spanning set
-    is linearly dependent.
-      </p>
+        <statement>
+            <p>
+Which feature of <md>\RREF\left[\begin{array}{cccc}
+2&amp;2&amp;2&amp;1\\
+3&amp;0&amp;-3&amp;5\\
+0&amp;1&amp;2&amp;-1\\
+1&amp;-1&amp;-3&amp;0
+\end{array}\right]=
+\left[\begin{array}{cccc}
+1&amp;0&amp;-1&amp;0\\
+0&amp;1&amp; 2&amp;0\\
+0&amp;0&amp; 0&amp;1\\
+0&amp;0&amp; 0&amp;0
+\end{array}\right]</md> that shows that <m>W</m>'s spanning set
+is linearly dependent?
+                <ol marker="A." cols="2">
+<li>The third column.</li>
+<li>The fourth column.</li>
+<li>The third row.</li>
+<li>The fourth row.</li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>A.</p>
+            <p>
+The third columns lacks a pivot, introducing a free variable that
+prevents uniqueness of linear combinations.
+            </p>
+        </answer>
   </task>
   <task>
-      <p>
-What would be the result of removing the vector that gave us this column?
-        <ol marker="A.">
-          <li>The set still spans <m>W</m>, and remains linearly dependent.</li>
-          <li>The set still spans <m>W</m>, but is now also linearly independent.</li>
-          <li>The set no longer spans <m>W</m>, and remains linearly dependent.</li>
-          <li>The set no longer spans <m>W</m>, but is now linearly independent.</li>
-        </ol>
-      </p>
-  </task>
+        <statement>
+            <p>
+If we removed the vector that causes this issue,
+what could we say about that set of three vectors?
+                <ol marker="A.">
+<li>The set spans the vector space <m>\IR^4</m>, but remains linearly dependent.</li>
+<li>The set spans subspace <m>W\subset \IR^4</m>, but remains linearly dependent.</li>
+<li>The set spans subspace <m>W\subset \IR^4</m>, and is now linearly independent.</li>
+<li>The set not longer spans the subspace <m>W\subset \IR^4</m>, but is now linearly independent.</li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>C.</p>
+            <p>
+Because the removed vector was already a linear combination of the others,
+we still span <m>W</m>. Now that all vectors yield pivot columns, the set
+is now independent.
+            </p>
+        </answer>
+    </task>
 </activity>
 
 <sage language="octave">
