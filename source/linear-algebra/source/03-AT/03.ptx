@@ -193,9 +193,11 @@ Let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear transformation with the foll
         <p>
           In general, <m>\ker T</m> is the set of solutions to the equation:
           <me>
-            T\left(\vec{x}\right)=T\left(\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]\right)=\left[\begin{array}{c}0\\0\end{array}\right].
+            T\left(\vec{x}\right)=T\left(\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]\right)
+            =x_1\left[\begin{array}{c}\unknown\\\unknown\end{array}\right]
+            +x_2\left[\begin{array}{c}\unknown\\\unknown\end{array}\right]+x_3\left[\begin{array}{c}\unknown\\\unknown\end{array}\right]=\left[\begin{array}{c}0\\0\end{array}\right].
           </me>
-          Write down an equivalent <em>vector equation</em>, solve it, and describe <m>\ker T</m>. 
+          Complete and solve this vector equation to find <m>\ker T</m>. 
         </p>
       </statement>
     </task>
