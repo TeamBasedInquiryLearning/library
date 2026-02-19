@@ -569,6 +569,37 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
         </statement>
     </fact>
 
+    <remark xml:id="EV5-basis-visualization-tool">
+        <p>
+A basis for a Euclidean vector space can be used to create alternative coordinate systems. This is visualized in the following interactive. As you drag the vector <m>\vec{v}</m> around the plane, the interactive shows how <m>\vec{v}</m> is expressed as a linear combination of the basis vectors <m>\vec{e}_1</m> and <m>\vec{e}_2</m>. If you click the toggle for the custom basis <m>\{\vec{b}_1,\vec{b}_2\}, the interactive will now show how to express the vector <m>\vec{v}</m> as a linear combination of the vectors <m>\vec{b}_1</m> and <m>\vec{b}_2</m>. You may also drag the vectors <m>\vec{b}_1</m> and <m>\vec{b}_2</m> to see how the results vary with different choices of custom bases. 
+        </p>
+        <interactive label="EV5-basis-visualization" platform="doenetml" width="90%" aspect="3:4">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="doenet/EV5-basis-visualization.xml"/>
+            </slate>
+            <description><p>Interactive that can toggle between standard coordinates and an alternative basis. A given vector is shown to be the sum of the standard basic vectors in standard coordiantes, and the sum of basis vectors when toggled to the alternative basis.</p></description>
+        </interactive>
+    </remark>
+
+    <activity>
+        <statement>
+            <p>
+Using the tool from <xref ref="EV5-basis-visualization-tool"/>,
+find the unique way to write the vector
+<m>\vec v = \left[\begin{array}{c}-7\\3\end{array}\right]</m>
+as a linear combination of vectors from the basis <m>\{\vec b_1,\vec b_2\}</m> where
+<m>\vec b_1=\left[\begin{array}{c}-2\\2\end{array}\right]</m> and
+<m>\vec b_2=\left[\begin{array}{c}3\\1\end{array}\right]</m>.
+                <ol marker="A." cols="2">
+                    <li><m>\vec v = 2\vec b_1-\vec b_2</m></li>
+                    <li><m>\vec v = -2\vec b_1-2\vec b_2</m></li>
+                    <li><m>\vec v = -\vec b_1+2\vec b_2</m></li>
+                    <li><m>\vec v = \vec b_1-\vec b_2</m></li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+
     </subsection>
 
     <subsection>
