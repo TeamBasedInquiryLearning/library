@@ -1,0 +1,22 @@
+<diagram dimensions="(700,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>a=11/cos(pi/3)</definition>
+  <definition>b=11/sin(pi/3)</definition>
+  <coordinates bbox="(0,0,b,a)">
+
+    <line at="b" endpoints="((0,0),(b,0))"/>
+    <line at="a"  endpoints="((0,0),(0,a))"/>
+    <line at="h" endpoints="((b,0),(0,a))" offset="(0,-20)" rotate="203"><m>11</m></line>
+    <angle-marker at="angle" points="((b,0),(0,0),(0,a))" annotate="yes" text="An angle marker showing the legs labeled ${a} and x meet at a right angle"/>
+    <angle-marker at="angle2" points="((0,0),(0,a),(b,0))"><m>60^\circ</m></angle-marker>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A right triangle with labeled sides">
+        <annotation ref="h" text="The hypotenuse is labeled 11"/>
+        <annotation ref="angle2" text="An angle marker showing one angle of the triangle to be 60 degrees"/>
+        <annotation ref="a" text="The vertical leg"/>
+        <annotation ref="b" text="The horizontal leg"/>    
+        <annotation ref="angle" />
+    </annotation>
+  </annotations>
+</diagram>
