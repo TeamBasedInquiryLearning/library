@@ -1,0 +1,23 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>a=500*tan(31*pi/180)</definition>
+  <definition>b=500</definition>
+  <definition>scale=0.5</definition>
+  <definition>aa=a*scale</definition>
+  <definition>bb=b*scale</definition>
+  <coordinates bbox="(0,0,bb,aa)">
+
+    <line at="b" endpoints="((0,0),(bb,0))" offset="(0,-20)"  annotate="yes" text="The horizontal leg is labeled 300"><m>300</m></line>
+    <line at="a"  endpoints="((0,0),(0,aa))" annotate="yes" rotate="90" offset="(0,5)" text="The vertical leg is labeled x"><m>x</m></line>
+    <line at="h" endpoints="((bb,0),(0,aa))" offset="(0,-10)" rotate="180"/>
+    <angle-marker at="angle" points="((bb,0),(0,0),(0,aa))"/>
+    <angle-marker at="angle2" points="((0,aa),(bb,0),(0,0))"><m>31^\circ</m></angle-marker>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A right triangle with labeled sides">
+      <annotation ref="b"/>
+      <annotation ref="a"/> 
+      <annotation ref="angle2" text="The angle in the lower right is labeled 31 degrees"/>
+    </annotation>
+  </annotations>
+</diagram>

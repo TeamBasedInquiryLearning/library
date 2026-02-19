@@ -1,0 +1,28 @@
+<diagram dimensions="(300,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>a=3</definition>
+  <definition>b=4</definition>
+  <coordinates bbox="(0,0,b,a)">
+
+    <line at="b" endpoints="((0,0),(b,0))" offset="(0,-20)">opposite</line>
+    <line at="a"  endpoints="((0,0),(0,a))">adjacent</line>
+    <line at="h" endpoints="((b,0),(0,a))" offset="(0,-10)" rotate="180">hypotenuse</line>
+    <angle-marker at="angle" points="((b,0),(0,0),(0,a))"/>
+    <angle-marker at="angle2" points="((0,0),(0,a),(b,0))"/>
+    <label at="A" anchor="(0,a)" alignment="north"><m>A</m></label>
+    <label at="B" anchor="(b,0)" alignment="east"><m>B</m></label>
+    <label at="C" anchor="(0,0)" alignment="southwest"><m>C</m></label>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A right triangle with labeled sides">
+      <annotation ref="angle2" text="An angle marker for angle A in the upper left"/>
+      <annotation ref="A" text="The angle in the upper left is labeled A"/>
+        <annotation ref="h" text="The hypotenuse is labeled hypotenuse"/>
+        <annotation ref="a" text="The vertical leg is labeled adjacent"/>
+        <annotation ref="b" text="The horizontal leg is labeled opposite"/>  
+        <annotation ref="B" text="The angle in the lower right is labeled B"/> 
+        <annotation ref="C" text="The right angle in the lower left is labeled C"/>   
+        <annotation ref="angle" />
+    </annotation>
+  </annotations>
+</diagram>
