@@ -16,8 +16,25 @@
                 </p>
             </content>
             <outtro>
-                <p>
-                    <q>The vector equation <m>(...)=\vec 0</m> has exactly one solution.</q>
+                <p>Here's an example of one such statement:
+                <!-- {{#statementA}} -->
+                    <q>The vector equation <m>{{veceqleft}}=\vec 0</m> has exactly one solution.</q>
+                <!-- {{/statementA}} -->
+                <!-- {{#statementB}} -->
+                    <q>The following vector equation is consistent with a unique solution: <m>{{veceqleft}}=\vec 0</m>.</q>
+                <!-- {{/statementB}} -->
+                <!-- {{#statementC}} -->
+                    <q>Exactly one solution exists for the equation <m>{{veceqleft}}=\vec 0</m>.</q>
+                <!-- {{/statementC}} -->
+                <!-- {{#statementD}} -->
+                    <q><m>{{veceqleft}}=\vec 0</m> can only be solved by the solution vector <m>\vec 0</m>.</q>
+                <!-- {{/statementD}} -->
+                <!-- {{#statementE}} -->
+                    <q>The unique solution for <m>{{veceqleft}}=\vec 0</m> is the zero vector.</q>
+                <!-- {{/statementE}} -->
+                <!-- {{#statementF}} -->
+                    <q>There is no vector besides <m>\vec 0</m> which solves the equation <m>{{veceqleft}}=\vec 0</m>.</q>
+                <!-- {{/statementF}} -->
                 </p>
             </outtro>
         </knowl>

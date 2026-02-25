@@ -16,7 +16,26 @@ that's equivalent to this claim.
                 </p>
             </content>
             <outtro>
-                <p><q>The vector equation (...) has at least one solution.</q></p>
+                <p>Here's an example of one such statement:
+                <!-- {{#statementA}} -->
+                    <q>The vector equation <m>{{veceq}}</m> has at least one solution.</q>
+                <!-- {{/statementA}} -->
+                <!-- {{#statementB}} -->
+                    <q>The following vector equation is consistent: <m>{{veceq}}</m>.</q>
+                <!-- {{/statementB}} -->
+                <!-- {{#statementC}} -->
+                    <q>At least one solution exists for the equation <m>{{veceq}}</m>.</q>
+                <!-- {{/statementC}} -->
+                <!-- {{#statementD}} -->
+                    <q><m>{{veceq}}</m> has at least one solution vector.</q>
+                <!-- {{/statementD}} -->
+                <!-- {{#statementE}} -->
+                    <q>A minimum of one solution for <m>{{veceq}}</m> can be found.</q>
+                <!-- {{/statementE}} -->
+                <!-- {{#statementF}} -->
+                    <q>We can find at least one vector which solves the equation <m>{{veceq}}</m>.</q>
+                <!-- {{/statementF}} -->
+                </p>
             </outtro>
         </knowl>
         <knowl>

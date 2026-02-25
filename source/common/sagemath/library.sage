@@ -576,6 +576,18 @@ class TBIL:
                 string+=latex(self.vectors[-1])
             return string
 
+    #Vector equation class
+    class LinearCombinationFromMatrix(LinearCombination):
+        def __init__(self,A,vars=None):
+            A=A.subdivision(0,0)  # ignores augmented matrices
+            if vars is None:
+                self.coefficients=[var(f"x_{i}") for i in range(1,len(A.columns())+1)]
+            else:
+                self.coefficients=[vars[:len(A.columns())]]
+            self.vectors=[column_matrix(v) for v in A.columns()]
+            self.length=min(len(self.coefficients),len(self.vectors))
+            self.parentheses=False
+
     #Generic equation, which could be used with polynomial or matrix equations. Often used with a LinearCombination passed as leftside
     class Equation(SageObject):
         def __init__(self,leftside,rightside):

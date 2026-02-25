@@ -9,6 +9,10 @@ class Generator(BaseGenerator):
         a,b,c,d = var("a b c d")
         ls = [a,b,c,d][:rows]
 
+        # roll different statements
+        statements = [f"statement{l}" for l in "ABCDEF"]
+        shuffle(statements)
+
         #start with nice RREF
         number_of_pivots = 2
         A = CheckIt.simple_random_matrix_of_rank(number_of_pivots,rows=rows,columns=columns)
@@ -32,14 +36,16 @@ class Generator(BaseGenerator):
                 for i in range(number_of_pivots)
             ],
         )
-        matrix = A.augment(column_matrix(lin_combo), subdivide=True)
+        A_aug = A.augment(column_matrix(lin_combo), subdivide=True)
         vectors = [
             {
                 "v": column_matrix(lin_combo),
                 "lin_combo": True,
                 "lin_combo_exp": lin_combo_exp,
-                "A": matrix,
-                "rref": matrix.rref(),
+                "A": A_aug,
+                "rref": A_aug.rref(),
+                "veceq": TBIL.VectorEquation(A_aug),
+                statements[0]: True,
             }
         ]
 
@@ -53,13 +59,15 @@ class Generator(BaseGenerator):
                 choice([-1,1])
                 for _ in range(rows)
             ])
-        matrix = A.augment(column_matrix(non_lin_combo), subdivide=True)
+        A_aug = A.augment(column_matrix(non_lin_combo), subdivide=True)
         vectors += [
             {
                 "v": column_matrix(non_lin_combo),
                 "lin_combo": False,
-                "A": matrix,
-                "rref": matrix.rref(),
+                "A": A_aug,
+                "rref": A_aug.rref(),
+                "veceq": TBIL.VectorEquation(A_aug),
+                statements[1]: True,
             }
         ]
 
@@ -72,7 +80,6 @@ class Generator(BaseGenerator):
             "vectors": vectors,
             # "combovector": column_matrix(A.column(-1)),
             # "statement": choice([True,False]),
-            # "veceq": TBIL.VectorEquation(A),
             # "matrix": A,
             # "rref": A.rref(),
             # "pivots": A.pivots(),

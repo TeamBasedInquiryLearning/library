@@ -16,8 +16,25 @@
                 </p>
             </content>
             <outtro>
-                <p>
-                    <q>The vector equation <m>(...)=\vec w</m> has exactly one solution for every <m>\vec w\in\mathbb R^4</m>.</q>
+                <p>Here's an example of one such statement:
+                <!-- {{#statementA}} -->
+                    <q>The vector equation <m>{{veceqleft}}=\vec w</m> has a unique solution for any <m>\vec w\in\mathbb R^4</m>.</q>
+                <!-- {{/statementA}} -->
+                <!-- {{#statementB}} -->
+                    <q>For any <m>\vec w\in\mathbb R^4</m>, the following vector equation has exactly one solution: <m>{{veceqleft}}=\vec w</m>.</q>
+                <!-- {{/statementB}} -->
+                <!-- {{#statementC}} -->
+                    <q>One and only one solution exists for the equation <m>{{veceqleft}}=\vec w</m> for every vector <m>\vec w</m> in <m>\mathbb R^4</m>.</q>
+                <!-- {{/statementC}} -->
+                <!-- {{#statementD}} -->
+                    <q><m>{{veceqleft}}=\vec w</m> has a unique solution regardless of how <m>\vec w</m> is chosen from <m>\mathbb R^4</m>.</q>
+                <!-- {{/statementD}} -->
+                <!-- {{#statementE}} -->
+                    <q>Given any <m>\vec w</m> from <m>\mathbb R^4</m>, exactly one solution for <m>{{veceqleft}}=\vec w</m> can be found.</q>
+                <!-- {{/statementE}} -->
+                <!-- {{#statementF}} -->
+                    <q>We can find a unique vector which solves the equation <m>{{veceqleft}}=\vec w</m> no matter what <m>\vec w\in\mathbb R^4</m> is.</q>
+                <!-- {{/statementF}} -->
                 </p>
             </outtro>
         </knowl>
