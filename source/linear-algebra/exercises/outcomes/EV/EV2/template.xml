@@ -17,7 +17,24 @@
             </content>
             <outtro>
                 <p>
-                    <q>The vector equation <m>(...)=\vec w</m> has at least one solution for every <m>\vec w\in\mathbb R^4</m>.</q>
+                <!-- {{#statementA}} -->
+                    <q>The vector equation <m>{{veceqleft}}=\vec w</m> has at least one solution for any <m>\vec w\in\mathbb R^4</m>.</q>
+                <!-- {{/statementA}} -->
+                <!-- {{#statementB}} -->
+                    <q>For any <m>\vec w\in\mathbb R^4</m>, the following vector equation is consistent: <m>{{veceqleft}}=\vec w</m>.</q>
+                <!-- {{/statementB}} -->
+                <!-- {{#statementC}} -->
+                    <q>At least one solution exists for the equation <m>{{veceqleft}}=\vec w</m> where <m>\vec w</m> is any <m>\mathbb R^4</m> vector.</q>
+                <!-- {{/statementC}} -->
+                <!-- {{#statementD}} -->
+                    <q><m>{{veceqleft}}=\vec w</m> has at least one solution vector regardless of how <m>\vec v</m> is chosen from <m>\mathbb R^4</m>.</q>
+                <!-- {{/statementD}} -->
+                <!-- {{#statementE}} -->
+                    <q>Given any <m>\vec w</m> from <m>\mathbb R^4</m>, a minimum of one solution for <m>{{veceqleft}}=\vec w</m> can be found.</q>
+                <!-- {{/statementE}} -->
+                <!-- {{#statementF}} -->
+                    <q>We can find at least one vector which solves the equation <m>{{veceqleft}}=\vec w</m> no matter what <m>\vec w\in\mathbb R^4</m> is.</q>
+                <!-- {{/statementF}} -->
                 </p>
             </outtro>
         </knowl>
