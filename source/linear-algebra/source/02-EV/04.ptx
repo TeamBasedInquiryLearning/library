@@ -433,7 +433,8 @@ On the other hand,
 the set <m>\{\vec v_1,\dots,\vec v_n\}</m> is <em>linearly independent</em>
 exactly when the vector equation
 <me> x_1 \vec{v}_1 + \cdots + x_n\vec{v}_n = \vec{w} </me>
-has at most one solution for <em>every</em> vector <m>\vec{w}\in\IR^m</m>.
+has at most one solution for <em>every</em> vector <m>\vec{w}\in\IR^m</m>
+(and exactly one for <m>\vec w=\vec 0</m>).
         </p>
     </statement>
 </fact>
