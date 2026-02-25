@@ -82,7 +82,10 @@ Prove that <m>R</m> <em>is</em> a subspace.
         </content>
         <outtro>
             <p>
-First show that <m>R</m> is closed under
+                First note that <m>\vec{0} \in R</m>, so the set is nonempty.
+            </p>
+            <p>
+Next, show that <m>R</m> is closed under
 vector addition. Let <m>{{v}}\in R</m> so that
 <m>{{R_eq}}</m>, and let <m>{{valt}}\in R</m> so that
 <m>{{R_eq_alt}}</m>. Then use those assumptions to show
