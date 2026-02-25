@@ -125,48 +125,74 @@ Find its solution set (a subspace of <m>\IR^4</m>).
 </task>
 <task>
     <p>
-Rewrite this solution space in the form <me>\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.</me>
+Rewrite this solution space in the following forms
+<md>\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}</md><md>=
+\vspan \left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}</md>.
     </p>
 </task>
 <task>
 <statement>
     <p>
-Which of these choices best describes the set of two vectors
-<m>\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}</m>
-used in this solution space?
+So, how can we use this to find a basis for the solution space?
 <ol marker="A.">
 <li>
     <p>
-    The set is linearly dependent.
+Take RREF of an appropriate matrix and remove the vectors that caused
+a non-pivot row.
     </p>
-  </li>
+</li>
 <li>
     <p>
-        The set is linearly independent.
+Take RREF of an appropriate matrix and remove the vectors that caused
+a non-pivot column.
     </p>
-  </li>
-  <li>
-      <p>
-        The set spans the solution space.
-      </p>
-    </li>
-  <li>
+</li>
+<li>
     <p>
-        The set is a basis of the solution space. 
+Take RREF of an appropriate matrix and remove the vectors that caused
+a non-pivot row or column.
     </p>
-  </li>
+</li>
+<li>
+    <p>
+This set cannot be a basis for the solution space because it will always
+have in a zero row in the RREF.
+    </p>
+</li>
 </ol>
     </p>
 </statement>    
 <answer>
     <p>
-        D.
+        B.
+    </p>
+    <p>
+This is exactly the technique used in <xref ref="EV6"/> to find
+a basis from a set of spanning vectors.
     </p>
 </answer>
 </task>
-
-    
 </activity>
+
+<observation>
+    <p>
+To find a basis for the subspace
+<md>
+\vspan \left\{\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right], \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right]\right\}
+</md>
+we may compute
+<md>
+\left[\begin{array}{cc} -2 &amp; -1 \\ 1 &amp; 0 \\ 0 &amp; -4 \\ 0 &amp; 1\end{array}\right] \sim
+\left[\begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 1 \\ 0 &amp; 0 \\ 0 &amp; 0\end{array}\right]
+</md>.
+Because all columns are pivot columns, the set
+<md>
+\left\{\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right], \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right]\right\}
+</md>
+is already linearly independent and therefore already a basis for the subspace.
+    </p>
+</observation>
+
 
 
 <sage language="octave">
@@ -195,44 +221,18 @@ Find its solution set (a subspace of <m>\IR^7</m>).
 </task>
 <task>
     <p>
-Rewrite this solution space in the form <me>\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.</me>
+Rewrite this solution space in the following forms: <md>\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.</md>
+<md>
+=\vspan\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}
+</md>.
     </p>
 </task>
 <task>
 <statement>
     <p>
-Which of these choices best describes the set of vectors
-<m>\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}</m>
-used in this solution space?
-<ol marker="A.">
-<li>
-    <p>
-    The set is linearly dependent.
-    </p>
-  </li>
-<li>
-    <p>
-        The set is linearly independent.
-    </p>
-  </li>
-  <li>
-      <p>
-        The set spans the solution space.
-      </p>
-    </li>
-  <li>
-    <p>
-        The set is a basis for the solution space. 
-    </p>
-  </li>
-</ol>
+Find a basis for this solution space.
     </p>
 </statement>
-<answer>
-    <p>
-        D.
-    </p>
-</answer>    
 </task>
 </activity>
 
@@ -318,6 +318,10 @@ solution space?
     <p>
         A.
     </p>
+    <p>
+In <xref ref="EV4"/> we established that sets that contain the zero
+vector cannot be independent.
+    </p>
 </answer>
     </task>
 </activity>
@@ -333,29 +337,44 @@ To create a computer-animated film, an animator first models a scene
 as a subset of <m>\mathbb R^3</m>. Then to transform this three-dimensional
 visual data for display on a two-dimensional movie screen or television set,
 the computer could apply a linear transformation that maps visual information
-at the point <m>(x,y,z)\in\mathbb R^3</m> onto the pixel located at
-<m>(x+y,y-z)\in\mathbb R^2</m>.
+at the vector <m>\left[\begin{array}{c}x\\y\\z\end{array}\right]\in\mathbb R^3</m> onto the pixel located at
+<m>\left[\begin{array}{c}x+y\\y-z\end{array}\right]\in\mathbb R^2</m>.
         </p>
     </introduction>
     <task>
         <statement>
         <p>
-What homogeneous linear system describes the positions <m>(x,y,z)</m>
+What homogeneous linear system describes the positions
+<m>\left[\begin{array}{c}x\\y\\z\end{array}\right]</m>
 within the original scene that would be aligned with the
-pixel <m>(0,0)</m> on the screen?
+pixel <m>\left[\begin{array}{c}0\\0\end{array}\right]</m> on the screen?
         </p>
         </statement>
+        <answer>
+            <p><md>x+y=0</md><md>y-z=0</md></p>
+        </answer>
     </task>
     <task>
         <statement>
         <p>
-Solve this system to describe these locations.
+Find a basis for the solution set of this system. What best describes the
+shape of the data that gets projected onto this single point of the screen?
+    <ol marker="A.">
+        <li><p>A point</p></li>
+        <li><p>A line</p></li>
+        <li><p>A plane</p></li>
+    </ol>
         </p>
         </statement>
+        <answer>
+            <p>B.</p>
+            <p>The basis <m>\left\{\left[\begin{array}{c}-1\\1\\1\end{array}\right]\right\}</m> describes a one-dimensional line.</p>
+        </answer>
     </task>
 </activity>
 <sage language="octave">
 </sage>
+
 
 
     </subsection>
