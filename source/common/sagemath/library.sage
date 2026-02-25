@@ -579,7 +579,7 @@ class TBIL:
     #Vector equation class
     class LinearCombinationFromMatrix(LinearCombination):
         def __init__(self,A,vars=None):
-            A=A.subdivision(0,0)
+            A=A.subdivision(0,0)  # ignores augmented matrices
             if vars is None:
                 self.coefficients=[var(f"x_{i}") for i in range(1,len(A.columns())+1)]
             else:
