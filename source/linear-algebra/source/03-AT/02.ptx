@@ -59,6 +59,7 @@ can be applied before or after the transformation without affecting the result.
  
 </subsection>
 <subsection><title>Class Activities</title>
+
 <activity estimated-time='5'>
     <statement>
         <p>
@@ -227,7 +228,7 @@ create a spanning and linearly independent set along with
 <m>\left[\begin{array}{c} 0 \\ 0 \\ 1 \end{array}\right]</m>, they each may be used
 to compute
 <m>T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)</m>:
-<me>
+<md>
   T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
   =
   T\left(\left[\begin{array}{c}0\\4\\0\end{array}\right]\right)
@@ -239,8 +240,8 @@ to compute
   \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
   =
   \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
-</me>
-<me>
+</md>
+<md>
   T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
   =
   4
@@ -254,8 +255,8 @@ to compute
   \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
   =
   \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
-</me>
-<me>
+</md>
+<md>
   T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
   =
   4
@@ -264,8 +265,8 @@ to compute
   T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
   -4
   T\left(\left[\begin{array}{c}1\\0\\0\end{array}\right]\right)
-</me>
-<me>
+</md>
+<md>
   =
   4
   \left[\begin{array}{c} -2 \\ 7\end{array}\right]
@@ -277,7 +278,7 @@ to compute
   \left[\begin{array}{c} -8+15-8 \\ 28-10-4 \end{array}\right]
   =
   \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
-</me>
+</md>
   </p>
 </observation>
 
@@ -288,10 +289,10 @@ Consider any basis <m>\{\vec b_1,\dots,\vec b_n\}</m> for <m>V</m>.  Since every
 vector <m>\vec v</m> can be written as a linear combination of
 basis vectors,  <m>\vec v = x_1\vec b_1+\dots+ x_n\vec b_n</m>, we may compute
 <m>T(\vec v)</m> as follows:
-<me>
+<md>
   T(\vec v)=T(x_1\vec b_1+\dots+ x_n\vec b_n)=
   x_1T(\vec b_1)+\dots+x_nT(\vec b_n)
-.</me>
+.</md>
 Therefore any linear transformation <m>T:V \rightarrow W</m> can be defined
 by just describing the values of <m>T(\vec b_i)</m>.
         </p>
@@ -313,7 +314,7 @@ store this information in an <m>m\times n</m> matrix, called the <term>standard 
 For example,
 let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear map determined by
 the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
-<me>\scriptsize
+<md>\scriptsize
   T\left(\vec e_1 \right)
 =
   T\left(\left[\begin{array}{c} 1 \\ 0 \\ 0 \end{array}\right] \right)
@@ -331,13 +332,13 @@ the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
   T\left(\left[\begin{array}{c} 0 \\ 0 \\ 1 \end{array}\right] \right)
 =
   \left[\begin{array}{c} -3 \\ 2\end{array}\right]
-</me>
+</md>
 Then the standard matrix corresponding to <m>T</m> is
-<me>
+<md>
   \left[\begin{array}{ccc}T(\vec e_1) &amp; T(\vec e_2) &amp; T(\vec e_3)\end{array}\right]
 =
   \left[\begin{array}{ccc}2 &amp; -1 &amp; -3 \\ 1 &amp; 4 &amp; 2 \end{array}\right]
-.</me>
+.</md>
         </p>
     </statement>
 </definition>
@@ -346,23 +347,23 @@ Then the standard matrix corresponding to <m>T</m> is
     <statement>
         <p>
   Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by
-  <me>
+  <md>
     T\left(\vec e_1 \right)
   =
     \left[\begin{array}{c} 0 \\ 3 \\ -2\end{array}\right]
-  \hspace{2em}
+  \hspace{1em}
     T\left(\vec e_2 \right)
   =
     \left[\begin{array}{c} -3 \\ 0 \\ 1\end{array}\right]
-  \hspace{2em}
+  \hspace{1em}
     T\left(\vec e_3 \right)
   =
     \left[\begin{array}{c} 4 \\ -2 \\ 1\end{array}\right]
-  \hspace{2em}
+  \hspace{1em}
     T\left(\vec e_4 \right)
   =
     \left[\begin{array}{c} 2 \\ 0 \\ 0\end{array}\right]
-  </me>
+  </md>
 Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</m>.
         </p>
     </statement>
@@ -372,7 +373,7 @@ Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</
     <introduction>
         <p>
   Let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear transformation given by
-<me>T\left(\left[\begin{array}{c} x\\ y \\ z \end{array}\right] \right) = \left[\begin{array}{c} x+3z \\ 2x-y-4z \end{array}\right]</me>
+<md>T\left(\left[\begin{array}{c} x\\ y \\ z \end{array}\right] \right) = \left[\begin{array}{c} x+3z \\ 2x-y-4z \end{array}\right]</md>
         </p>
     </introduction>
 <task>
@@ -395,7 +396,7 @@ Find the standard matrix for <m>T</m>.
   <m>T(\vec e_i)</m> yields exactly the coefficients of <m>x_i</m>,
   the standard matrix for <m>T</m> is simply an array of
   the coefficients of the <m>x_i</m>:
-  <me>
+  <md>
     T\left(\left[\begin{array}{c}x\\y\\z\\w\end{array}\right]\right)
       =
     \left[\begin{array}{c}
@@ -409,14 +410,14 @@ Find the standard matrix for <m>T</m>.
       a &amp; b &amp; c &amp; d \\
       e &amp; f &amp; g &amp; h
     \end{array}\right]
-  </me>
+  </md>
         </p>
         <p>
 Since the formula for a linear transformation <m>T</m> and
 its standard matrix <m>A</m> may both be used to compute the transformation
 of a vector <m>\vec x</m>, we will often write
 <m>T(\vec x)</m> and <m>A\vec x</m> interchangeably:
-<me>
+<md>
   T\left(\left[\begin{array}{c}x_1\\x_2\\x_3\\x_4\end{array}\right]\right)
     =
   \left[\begin{array}{c}
@@ -425,42 +426,208 @@ of a vector <m>\vec x</m>, we will often write
   \end{array}\right]
     =
   A\left[\begin{array}{c}x_1\\x_2\\x_3\\x_4\end{array}\right]
+</md>
+<md>
     =
   \left[\begin{array}{cccc}
     a &amp; b &amp; c &amp; d \\
     e &amp; f &amp; g &amp; h
   \end{array}\right]
   \left[\begin{array}{c}x_1\\x_2\\x_3\\x_4\end{array}\right]
-</me>
+    =
+  x_1
+  \left[\begin{array}{c}
+    a \\
+    e
+  \end{array}\right]
+  +x_2
+  \left[\begin{array}{c}
+    b \\
+    f
+  \end{array}\right]
+  +x_3
+  \left[\begin{array}{c}
+    c \\
+    g
+  \end{array}\right]
+  +x_4
+  \left[\begin{array}{c}
+    d \\
+    h
+  \end{array}\right]
+</md>
         </p>
     </statement>
 </fact>
+
+<activity>
+    <introduction>
+        <p>
+The convention of writing <m>T(\vec v)=A\vec v</m> for a transformation <m>T</m>
+and its standard matrix <m>A</m> also matches how transformations are implemented
+in mathematics software such as Octave. Let's use Octave to compute a transformation
+for us.
+        </p>
+    </introduction>
+<task>
+    <statement>
+        <p>
+Find the standard matrix for
+<md>T\left(\left[\begin{array}{c} x\\ y \end{array}\right] \right) = \left[\begin{array}{c} -x+2y \\ -3y \\ 4x+y \end{array}\right]</md>
+and assign it to the variable <c>A</c> in Octave.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <md>
+A = \left[\begin{array}{cc} -1 &amp; 2 \\ 0 &amp; -3 \\ 4 &amp; 1 \end{array}\right]
+            </md>
+        </p>
+<program><input>
+A = [
+-1  2
+ 0 -3
+ 4  1
+]
+</input></program>
+    </answer>
+</task>
+<task>
+    <statement>
+        <p>
+Assign the vector <m>\left[\begin{array}{c} -2 \\ 5 \end{array}\right]</m>
+to the variable <c>v</c>, then compute <c>A*v</c>.
+        </p>
+    </statement>
+    <answer>
+<sage language="octave">
+    <input>
+format rat
+A = [
+-1  2
+ 0 -3
+ 4  1
+]
+v = [-2;5]
+A*v
+    </input>
+    <output>
+A =
+
+         -1          2
+          0         -3
+          4          1
+
+v =
+
+         -2
+          5
+
+ans =
+
+         12
+        -15
+         -3
+    </output>
+</sage>
+    </answer>
+</task>
+<task>
+    <statement>
+        <p>
+Confirm that the resulting vector <m>A\vec v</m> is correct by
+computing <m>T\left(\left[\begin{array}{c} -2 \\ 5 \end{array}\right]\right)</m>
+by hand.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <md>
+T\left(\left[\begin{array}{c} -2 \\ 5 \end{array}\right]\right)
+= -2\left[\begin{array}{c} -1 \\ 0 \\ 4 \end{array}\right]
+ + 5\left[\begin{array}{c} 2 \\ -3 \\ 1 \end{array}\right]
+= \left[\begin{array}{c} 12 \\ -15 \\ -3 \end{array}\right]
+            </md>
+        </p>
+    </answer>
+</task>
+</activity>
+<sage language="octave"/>
 
 
 <activity>
   <task>
     <statement>
-      <p>Explain and demonstrate how to compute the standard matrix for the linear transformation <m>S:\mathbb{R}^2 \to \mathbb{R}^4</m> given by <me>S\left( \left[\begin{array}{c} x_{1} \\ x_{2} \end{array}\right] \right) = \left[\begin{array}{c} 9 \, x_{1} - 2 \, x_{2} \\ -3 \, x_{1} \\ 5 \, x_{1} - x_{2} \\ -6 \, x_{2} \end{array}\right]</me> by computing transformations of the standard basic vectors:</p>
-      <p><me>S(\vec e_1)=\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\hspace{1em}S(\vec e_2)=\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right]\hspace{1em}\rightarrow\hspace{1em}\left[\begin{array}{cc} \unknown &amp; \unknown \\ \unknown &amp; \unknown \\ \unknown &amp; \unknown \\\unknown &amp; \unknown \end{array}\right]</me></p>
+      <p>Explain and demonstrate how to compute the standard matrix for the linear transformation <m>S:\mathbb{R}^2 \to \mathbb{R}^4</m> given by <md>S\left( \left[\begin{array}{c} x_{1} \\ x_{2} \end{array}\right] \right) = \left[\begin{array}{c} 9 \, x_{1} - 2 \, x_{2} \\ -3 \, x_{1} \\ 5 \, x_{1} - x_{2} \\ -6 \, x_{2} \end{array}\right]</md> by computing transformations of the standard basic vectors:</p>
+      <p><md>S(\vec e_1)=\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\hspace{1em}S(\vec e_2)=\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right]\hspace{1em}\rightarrow\hspace{1em}\left[\begin{array}{cc} \unknown &amp; \unknown \\ \unknown &amp; \unknown \\ \unknown &amp; \unknown \\\unknown &amp; \unknown \end{array}\right]</md></p>
     </statement>
     <answer>
       <p>
-        <me>\left[\begin{array}{cc} 9 &amp; -2 \\ -3 &amp; 0 \\ 5 &amp; -1 \\ 0 &amp; -6 \end{array}\right]</me>
+        <md>\left[\begin{array}{cc} 9 &amp; -2 \\ -3 &amp; 0 \\ 5 &amp; -1 \\ 0 &amp; -6 \end{array}\right]</md>
       </p>
     </answer>
   </task>
   <task>
     <statement>
-      <p>Let <m>T:\mathbb{R}^4 \to \mathbb{R}^3</m> be the linear transformation given by the standard matrix <me>\left[\begin{array}{cccc} -2 &amp; -4 &amp; 2 &amp; -2 \\ -4 &amp; 3 &amp; -3 &amp; 2 \\ 5 &amp; 0 &amp; 2 &amp; -6 \end{array}\right].</me> Explain and demonstrate how to compute <m>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)</m> by using the values of transformed standard basic vectors:</p>
-      <p><me>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)=\unknown T(\vec e_1)+\unknown T(\vec e_2)+\unknown T(\vec e_3)+\unknown T(\vec e_4)</me></p>
+      <p>Let <m>T:\mathbb{R}^4 \to \mathbb{R}^3</m> be the linear transformation given by the standard matrix <md>\left[\begin{array}{cccc} -2 &amp; -4 &amp; 2 &amp; -2 \\ -4 &amp; 3 &amp; -3 &amp; 2 \\ 5 &amp; 0 &amp; 2 &amp; -6 \end{array}\right].</md></p>
+      <p>Compute <m>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)</m> using technology.</p>
+    </statement>
+    <answer>
+<sage language="octave">
+    <input>
+format rat
+A = [
+-2 -4 2 -2
+-4 3 -3 2
+5 0 2 -6
+]
+v = [-5;0;-3;-2]
+A*v
+    </input>
+    <output>
+A =
+
+         -2         -4          2         -2
+         -4          3         -3          2
+          5          0          2         -6
+
+v =
+
+         -5
+          0
+         -3
+         -2
+
+ans =
+
+          8
+         25
+        -19
+    </output>
+</sage>
+    </answer>
+  </task>
+  <task>
+    <statement>
+    <p>
+      Now explain and demonstrate how to compute <m>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)</m> by using the values of transformed standard basic vectors:</p>
+      <p><md>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)=\unknown T(\vec e_1)+\unknown T(\vec e_2)+\unknown T(\vec e_3)+\unknown T(\vec e_4)</md></p>
     </statement>
     <answer>
       <p>
-        <me>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)=\left[\begin{array}{c} 8 \\ 25 \\ -19 \end{array}\right]</me>
+        <md>
+T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)
+=-5\left[\begin{array}{c} -2 \\ -4 \\ -3 \end{array}\right]
++0\left[\begin{array}{c} -4 \\ 3 \\ 0 \end{array}\right]
+-3\left[\begin{array}{c} 2 \\ -3 \\ 2 \end{array}\right]
+-2\left[\begin{array}{c} -2 \\ 2 \\ -6 \end{array}\right]
+=\left[\begin{array}{c} 8 \\ 25 \\ -19 \end{array}\right]
+        </md>
       </p>
     </answer>
   </task>
 </activity>
+
 
 </subsection>
 
