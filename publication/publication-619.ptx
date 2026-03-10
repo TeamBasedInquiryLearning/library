@@ -35,7 +35,7 @@
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
     <!-- <version include="videos labs"/> -->
-    <version include="main nonpreview html"/> 
+    <version include="main nonpreview"/> 
   </source>
 
   <numbering>
@@ -62,9 +62,9 @@
   <!-- for printing; set @sides="two" if the printing woudl be two- -->
   <!-- sided.  @pageref="yes/no" controls whether page number are   -->
   <!-- included in cross-references                                 -->
-  <latex print="no" sides="one" font-size="12" draft="no">
+  <latex print="yes" font-size="12" draft="no">
     <page>
-      <geometry>letterpaper,margin=1in</geometry>
+      <geometry>papersize={7in,10in},margin=1in</geometry>
     </page>
     <asymptote links="no" />
 
