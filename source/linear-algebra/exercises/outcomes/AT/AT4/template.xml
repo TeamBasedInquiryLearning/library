@@ -1,32 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    <knowl>
-        <content>
-            <p>
-                Explain how to determine if a transformation is an injection
-                and/or surjection in terms of spanning and independence of a particular set.
-            </p>
-        </content>
-        <outtro>
-            <p>
-                Consider the set of vectors taken from the columns of
-                the transformation's standard matrix.
-                The transformation is an injection if this set (...)
-                and the transformation is a surjection if this set (...).
-            </p>
-        </outtro>
-    </knowl>
-    <knowl>
-        <intro>
-            <p>
-    Determine if the transformation defined by each of the
-    following standard matrices is an injection and/or surjection.
-            </p>
-        </intro>
+    <intro>
+        <p>
+For each of the following standard matrices, discuss the requested property
+to determine its transformation's surjectivity and/or injectivity.
+        </p>
+    </intro>
 <!-- {{#tasks}} -->
         <knowl>
             <content>
-                <p><me>{{matrix}}</me></p>
+                <p>
+Explain whether the transformation with standard matrix
+<me>{{matrix}}</me> is 
+<!-- {{#surj}} -->
+surjective
+<!-- {{/surj}} -->
+<!-- {{#inj}} -->
+injective
+<!-- {{/inj}} -->
+by discussing
+<!-- {{#columns}} -->
+the spanning and/or independence of its column vectors.
+<!-- {{/columns}} -->
+<!-- {{#kerimg}} -->
+its kernel and/or image.
+<!-- {{/kerimg}} -->
+</p>
             </content>
             <outtro>
                 <p>
@@ -35,46 +34,93 @@
                     </m>
                 </p>
                 <p>
-        The set of vectors is (...), and thus
-        the transformation
-                <!-- {{#injective}} -->
-                    <em>is</em>
-                <!-- {{/injective}} -->
-                <!-- {{^injective}} -->
-                    is <em>not</em>
-                <!-- {{/injective}} -->
-        injective.
-                </p>
-                <p>
-        The set of vectors is (...), and thus
-        the transformation
-                <!-- {{#surjective}} -->
-                    <em>is</em>
-                <!-- {{/surjective}} -->
-                <!-- {{^surjective}} -->
-                    is <em>not</em>
-                <!-- {{/surjective}} -->
-        surjective.
-                </p>
+                    The matrix is
+                    <!-- {{#surj}} -->
+                        <!-- {{#value}} -->
+                        <em>surjective</em>
+                        <!-- {{/value}} -->
+                        <!-- {{^value}} -->
+                        <em>not surjective</em>
+                        <!-- {{/value}} -->
+                    <!-- {{/surj}} -->
+                    <!-- {{#inj}} -->
+                        <!-- {{#value}} -->
+                        <em>injective</em>
+                        <!-- {{/value}} -->
+                        <!-- {{^value}} -->
+                        <em>not injective</em>
+                        <!-- {{/value}} -->
+                    <!-- {{/inj}} -->
+                    because
+                    <!-- {{#columns}} -->
+                    <!-- {{#surj}} -->
+                        <!-- {{#value}} -->
+                        its column vectors span the codomain.
+                        <!-- {{/value}} -->
+                        <!-- {{^value}} -->
+                        its column vectors fail to span the codomain.
+                        <!-- {{/value}} -->
+                    <!-- {{/surj}} -->
+                    <!-- {{#inj}} -->
+                        <!-- {{#value}} -->
+                        its column vectors are linearly independent.
+                        <!-- {{/value}} -->
+                        <!-- {{^value}} -->
+                        its column vectors are linearly dependent.
+                        <!-- {{/value}} -->
+                    <!-- {{/inj}} -->
+                    <!-- {{/columns}} -->
+                    <!-- {{#kerimg}} -->
+                    <!-- {{#surj}} -->
+                        <!-- {{#value}} -->
+                        its image is its entire codomain.
+                        <!-- {{/value}} -->
+                        <!-- {{^value}} -->
+                        its image is not its entire codomain.
+                        <!-- {{/value}} -->
+                    <!-- {{/surj}} -->
+                    <!-- {{#inj}} -->
+                        <!-- {{#value}} -->
+                        its kernel contains only the zero vector.
+                        <!-- {{/value}} -->
+                        <!-- {{^value}} -->
+                        its kernel contains more than the zero vector.
+                        <!-- {{/value}} -->
+                    <!-- {{/inj}} -->
+                    <!-- {{/kerimg}} -->
+                    </p>
             </outtro>
         </knowl>
 <!-- {{/tasks}} -->
-    </knowl>
     <knowl>
         <content>
             <p>
-Explain which of the above transformations was bijective.
+Explain whether the transformation with standard matrix
+<me>{{last_matrix}}</me> is bijective by discussing the pivots of
+its reduced row echelon form.
             </p>
         </content>
         <outtro>
             <p>
-            <!-- {{#tasks}} -->
-                <!-- {{#injective}} -->
-                    <!-- {{#surjective}} -->
-The transformation with matrix <m>{{matrix}}</m> because...
-                    <!-- {{/surjective}} -->
-                <!-- {{/injective}} -->
-            <!-- {{/tasks}} -->
+                <m>
+    \mathrm{RREF}\, {{last_matrix}} = {{last_rref}}
+                </m>
+            </p>
+            <p>
+The transformation is
+<!-- {{#last_value}} -->
+<em>bijective</em>
+<!-- {{/last_value}} -->
+<!-- {{^last_value}} -->
+<em>not bijective</em>
+<!-- {{/last_value}} -->
+because
+<!-- {{#last_value}} -->
+every row and column of its standard matrix's RREF contains a pivot.
+<!-- {{/last_value}} -->
+<!-- {{^last_value}} -->
+it has a non-pivot row or column in its standard matrix's RREF.
+<!-- {{/last_value}} -->
             </p>
         </outtro>
     </knowl>
