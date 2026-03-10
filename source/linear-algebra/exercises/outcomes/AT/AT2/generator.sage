@@ -39,6 +39,7 @@ class Generator(BaseGenerator):
             "Tcols": Tcolumns,
             "Tstandardmatrix": B,
             "vector": v,
-            "Tvector": B*v
+            "Tvector": B*v,
+            "Tcombo": TBIL.LinearCombinationFromMatrix(B,coefficients=list(v))
         }
 

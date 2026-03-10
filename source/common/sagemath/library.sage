@@ -578,12 +578,12 @@ class TBIL:
 
     #Vector equation class
     class LinearCombinationFromMatrix(LinearCombination):
-        def __init__(self,A,vars=None):
+        def __init__(self,A,coefficients=None):
             A=A.subdivision(0,0)  # ignores augmented matrices
-            if vars is None:
+            if coefficients is None:
                 self.coefficients=[var(f"x_{i}") for i in range(1,len(A.columns())+1)]
             else:
-                self.coefficients=[vars[:len(A.columns())]]
+                self.coefficients=coefficients[:len(A.columns())]
             self.vectors=[column_matrix(v) for v in A.columns()]
             self.length=min(len(self.coefficients),len(self.vectors))
             self.parentheses=False
