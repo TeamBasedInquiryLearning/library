@@ -1,0 +1,20 @@
+<diagram dimensions="(700,300)" margins="25" xmlns="https://prefigure.org">
+  <definition>a=5</definition>
+  <definition>b=12</definition>
+  <coordinates bbox="(0,0,b,a)">
+
+    <line at="b" endpoints="((0,0),(b,0))" offset="(0,-20)"><m>x</m></line>
+    <line at="a" annotate="yes" text="The vertical leg is labeled ${a}" endpoints="((0,0),(0,a))" rotate="-90" offset="(0,5)"><m>${a}</m></line>
+    <line at="h" endpoints="((b,0),(0,a))" offset="(0,-20)" rotate="203"><m>13</m></line>
+    <angle-marker at="angle" points="((b,0),(0,0),(0,a))" annotate="yes" text="An angle marker showing the legs labeled ${a} and x meet at a right angle"/>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure" text="A right triangle with labeled sides">
+        <annotation ref="a"/>
+        <annotation ref="b" text="The horizontal leg is labeled x"/>
+        <annotation ref="h" text="The hypotenuse is labeled 13"/>
+        <annotation ref="angle" />
+    </annotation>
+  </annotations>
+</diagram>

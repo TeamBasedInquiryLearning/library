@@ -2,7 +2,7 @@
   <coordinates bbox="(-1,-5,5,7)">
     <definition>f(x) = (x-1)^3-3*(x-1)^2 + 5</definition>
     <definition>g(x) = x - 5 </definition>
-    <area-between-curves at="cross section" functions="(f,g)" domain="(0,4)" stroke="none"/>
+    <area-between-curves at="cross-section" functions="(f,g)" domain="(0,4)" stroke="none"/>
     
     <axes axes="horizontal" arrows="1" decorations="no" xlabel="x"/>
 
