@@ -236,25 +236,8 @@
     <task>
       <statement>
         <p>
-          Let <m>a=10^x</m> and <m>b=10^y</m>. How could you rewrite the left side of the equation <m>\dfrac{10^x}{10^y}</m>?
-          <ol marker= "A." cols="2">
-            <li><m>a+b</m></li>
-            <li><m>a-b</m></li>
-            <li><m>10^{x+y}</m></li>
-            <li><m>a \cdot b</m></li></ol>
-        </p>
-      </statement>
-      <answer>
-        <p>
-          B
-        </p>
-      </answer>
-    </task>
-
-    <task>
-      <statement>
-        <p>
-          Use the one-to-one property of logarithms to apply the logarithm to both sides of the rewritten equation from part (a). What is that equation?
+          If we let <m>a=10^x</m> and <m>b=10^y</m> and apply a logarithm
+          to both sides of the equation, what would be the result?
           <ol marker= "A." cols="1">
             <li><m>\log_{10}(a-b)=\log_{10}\left(10^{x-y}\right)</m></li>
             <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}\left(10^{x-y}\right)</m></li>
@@ -276,10 +259,10 @@
             Recall that this property was covered in <xref ref="EL3"/>.
           </aside>
           <ol marker= "A." cols="2">
-            <li><m>\log_{10}(a-b)</m></li>
-            <li><m>\log_{10}(x-y)</m></li>
-            <li><m>x-y</m></li>
-            <li><m>a-b</m></li></ol>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}(a-b)</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}(x-y)</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=x-y</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=a-b</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -292,12 +275,12 @@
     <task>
       <statement>
         <p>
-          Recall in part (a), we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form?
+          Recall in part (a), we defined <m>10^x=a</m> and <m>10^y=b</m>. What would these look like in logarithmic form? (Choose two.)
           <ol marker= "A." cols="2">
-            <li><m>\log_{10}a=x</m></li>
-            <li><m>\log_{x}a=10</m></li>
-            <li><m>\log_{10}b=y</m></li>
-            <li><m>\log_{y}b=10</m></li></ol>
+            <li><m>x=\log_{10}a</m></li>
+            <li><m>x=\log_{a}10</m></li>
+            <li><m>y=\log_{10}b</m></li>
+            <li><m>y=\log_{b}10</m></li></ol>
         </p>
       </statement>
       <answer>
@@ -306,32 +289,14 @@
         </p>
       </answer>
     </task>
-
     <task>
       <statement>
-        <p>
-          Using your solutions in part (d), how can we rewrite the right side of the equation?
+        <p> Combining these results, which equation represents <m>\dfrac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
           <ol marker= "A." cols="1">
-            <li><m>10^{a+b}</m></li>
-            <li><m>\log_{10}a-\log_{10}b</m></li>
-            <li><m>\log_{10}a-\log_{10}b</m></li>
-            <li><m>10^{x-y}</m></li></ol>
-        </p>
-      </statement>
-      <answer>
-        <p>
-          B
-        </p>
-      </answer>
-    </task>
-    <task>
-      <statement>
-        <p> Combining parts (a) and (d), which equation represents <m>\dfrac{10^x}{10^y}=10^{x-y}</m> in terms of logarithms?
-          <ol marker= "A." cols="1">
-            <li><m>\log_{10}(a-b)=10^{a+b}</m></li>
-            <li><m>\log_{10}(a-b)=\log_{10}a-\log_{10}b</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}a+\log_{10}b</m></li>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=10^{x-y}</m></li>
             <li><m>\log_{10}\left(\dfrac{a}{b}\right)=\log_{10}a-\log_{10}b</m></li>
-            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=10^{x-y}</m></li></ol>
+            <li><m>\log_{10}\left(\dfrac{a}{b}\right)=10^{x+y}</m></li></ol>
         </p>
       </statement>
       <answer>
