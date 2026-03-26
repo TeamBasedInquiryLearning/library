@@ -49,7 +49,12 @@
     <answer>
         <p>
           Students should draw a triangle with <m>x</m> representing the hypotenuse and the two legs <m>3</m> and <m>4</m> inches respectively.
-          </p>
+        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle1">
+                <xi:include href="prefigure/TR3-triangle1.xml"/>
+            </prefigure>
+        </image>
     </answer>
   </task>
 
@@ -88,12 +93,11 @@
       </p>
     </statement>
     <answer>
-        <p>
-        <figure xml:id="drawing-of-5-12-13-triangle">
-          <image source="Images/5-12-13-triangle.png"/>
-          <caption> One example of how a student can draw the triangle.</caption>
-        </figure>
-      </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle2">
+                <xi:include href="prefigure/TR3-triangle2.xml"/>
+            </prefigure>
+        </image>
     </answer>
   </task>
   
@@ -138,9 +142,11 @@
       </p>
     </statement>
     <answer>
-      <p>
-        Students should draw a right triangle with the hypotenuse labeled as <m>11</m> cm and one of the other angles (not the angle opposite the hypotenuse) is labeled <m>60</m><degree/>.
-      </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle3">
+                <xi:include href="prefigure/TR3-triangle3.xml"/>
+            </prefigure>
+        </image>
     </answer>
   </task>
   
@@ -203,7 +209,11 @@
     <p>
       When given an angle, all sides of a triangle can be labeled from that angle's perspective. For example, from angle <m>A</m>'s perspective, the sides of a right triangle are labeled as:
       <figure xml:id="labeling-sides-of-right-triangle">
-        <image source="Images/Defining-sides-of-a-triangle.png"/>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle4">
+                <xi:include href="prefigure/TR3-triangle4.xml"/>
+            </prefigure>
+        </image>
         <caption> From the perspective of angle <m>A</m>, all sides of a right triangle can be labeled.</caption>
       </figure>
     </p>
@@ -245,9 +255,11 @@
         Draw a right triangle and label it with angles <m>A</m>, <m>B</m>, and <m>C</m>, with <m>c</m> being the hypotenuse of the triangle. </p>
     </statement>
     <answer>
-      <p>
-        Students should draw a triangle so that <m>c</m> is the hypotenuse and each angle is across from the correct measure.
-      </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle5">
+                <xi:include href="prefigure/TR3-triangle5.xml"/>
+            </prefigure>
+        </image>
     </answer>
   </task>
 
@@ -549,9 +561,11 @@
         </p>
       </statement>
       <answer>
-        <p>
-          Students should draw a right triangle where <m>c</m> is the hypotenuse, angle <m>B</m> is <m>37</m><degree/>, and the side adjacent to <m>b</m> is <m>11</m>.
-        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle6">
+                <xi:include href="prefigure/TR3-triangle6.xml"/>
+            </prefigure>
+        </image>
       </answer>
     </task>
 
@@ -603,9 +617,11 @@
         </p>
       </statement>
       <answer>
-        <p>
-          Students should draw a right triangle where the <m>31</m><degree/> is the angle formed with the ground, <m>500</m> meters as the side adjacent to the angle, and the height of the Eiffel Tower (side opposite <m>31</m><degree/>) as <m>x</m>.
-        </p>
+        <image>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-graph-TR3-triangle7">
+                <xi:include href="prefigure/TR3-triangle7.xml"/>
+            </prefigure>
+        </image>
       </answer>
     </task>
     
