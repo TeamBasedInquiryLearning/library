@@ -15,7 +15,7 @@ class Generator(BaseGenerator):
 
         def verify(plus,times,hardfalseproperties=[]):
             trueproperties={}
-            falseproperties=hardfalseproperties
+            falseproperties={}
             for prop in true_property_options:
                     if prop == "add_assoc":
                         LHS = plus(v1,plus(v2,v3))
@@ -38,9 +38,9 @@ class Generator(BaseGenerator):
                     LHS = vectorsimplify(LHS)
                     RHS = vectorsimplify(RHS)
                     if LHS == RHS:
-                        trueproperties[prop]=vectorsimplify(LHS)
+                        trueproperties[prop]=LHS
                     else:
-                        falseproperties.append(prop)
+                        falseproperties[prop]={"LHS": LHS, "RHS": RHS}
             for prop in false_only_property_options:
                 if "dist_s" in trueproperties and "mul_id" in trueproperties:
                     if prop == "add_id":
@@ -145,5 +145,5 @@ class Generator(BaseGenerator):
             "trueproperty": {
                 trueproperty: verification
             },
-            "falseproperties": {f: True for f in falseproperties},
+            "falseproperties": falseproperties,
         }
