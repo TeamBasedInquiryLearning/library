@@ -125,11 +125,11 @@ class Generator(BaseGenerator):
         otimes = lambda c,v : theta(times(c,untheta(v)))
 
         trueproperties, falseproperties = verify(oplus,otimes)
+        
         for prop in true_no_check_properties:
-            if prop in trueproperties.keys():
-                trueproperties.pop(prop)
-            else:
-                print("WARNING:  Property "+prop + " was false.")
+            assert prop in trueproperties.keys()
+            trueproperties.pop(prop)
+        
         trueproperty, verification = choice(list(trueproperties.items()))
 
         return {
