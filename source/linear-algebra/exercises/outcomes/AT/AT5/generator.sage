@@ -8,6 +8,11 @@ class Generator(BaseGenerator):
         v2 = vector([x2,y2])
         v3 = vector([x3,y3])
         v = vector([x,y])
+        cs, ds, xs, ys = range(2,6)
+        v1s = vector([1,2])
+        v2s = vector([2,3])
+        v3s = vector([3,4])
+        vs = vector([1,2])
         vectorsimplify = lambda v : vector([simplify(expand(x)) for x in v])
 
         true_property_options = ["add_assoc","add_comm","mul_assoc","dist_v","dist_s","mul_id"]
@@ -20,27 +25,44 @@ class Generator(BaseGenerator):
                     if prop == "add_assoc":
                         LHS = plus(v1,plus(v2,v3))
                         RHS = plus(plus(v1,v2),v3)
+                        LHS_sample = plus(v1s,plus(v2s,v3s))
+                        RHS_sample = plus(plus(v1s,v2s),v3s)
                     elif prop == "add_comm":
                         LHS = plus(v1,v2)
                         RHS = plus(v2,v1)
+                        LHS_sample = plus(v1s,v2s)
+                        RHS_sample = plus(v2s,v1s)
                     elif prop == "mul_assoc":
                         LHS = times(c*d,v)
                         RHS = times(c,times(d,v))
+                        LHS_sample = times(cs*ds,vs)
+                        RHS_sample = times(cs,times(ds,vs))
                     elif prop == "mul_id":
                         LHS = times(1,v)
                         RHS = v
+                        LHS_sample = times(1,vs)
+                        RHS_sample = vs
                     elif prop == "dist_v":
                         LHS = times(c,plus(v1,v2))
                         RHS = plus(times(c,v1),times(c,v2))
+                        LHS_sample = times(cs,plus(v1s,v2s))
+                        RHS_sample = plus(times(cs,v1s),times(cs,v2s))
                     elif prop == "dist_s":
                         LHS = times(c+d,v)
                         RHS = plus(times(c,v),times(d,v))
+                        LHS_sample = times(cs+ds,vs)
+                        RHS_sample = plus(times(cs,vs),times(ds,vs))
                     LHS = vectorsimplify(LHS)
                     RHS = vectorsimplify(RHS)
                     if LHS == RHS:
                         trueproperties[prop]=LHS
                     else:
-                        falseproperties[prop]={"LHS": LHS, "RHS": RHS}
+                        falseproperties[prop]={
+                            "LHS": LHS, 
+                            "RHS": RHS, 
+                            "LHS_sample": LHS_sample,
+                            "RHS_sample": RHS_sample
+                        }
             for prop in false_only_property_options:
                 if "dist_s" in trueproperties and "mul_id" in trueproperties:
                     if prop == "add_id":

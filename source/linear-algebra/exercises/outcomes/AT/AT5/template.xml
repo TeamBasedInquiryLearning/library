@@ -138,6 +138,8 @@ any one of the following properties does not hold:
                     <p>
 Vector addition is not associative: <me>(x_1,y_1)\oplus((x_2,y_2)\oplus(x_3,y_3))={{LHS}}</me>
 <me>((x_1,y_1)\oplus(x_2,y_2))\oplus(x_3,y_3)={{RHS}}</me>
+For example: <me>(1,2)\oplus((2,3)\oplus(3,4))={{LHS_sample}}</me>
+<me>((1,2)\oplus(2,3))\oplus(3,4)={{RHS_sample}}</me>
                     </p>
                 </item>
                 <!-- {{/add_assoc}} -->
@@ -146,6 +148,8 @@ Vector addition is not associative: <me>(x_1,y_1)\oplus((x_2,y_2)\oplus(x_3,y_3)
                     <p>
 Vector addition is not commutative: <me>(x_1,y_1)\oplus(x_2,y_2)={{LHS}}</me>
 <me>(x_2,y_2)\oplus(x_1,y_1)={{RHS}}</me>
+For example: <me>(1,2)\oplus(2,3)={{LHS_sample}}</me>
+<me>(2,3)\oplus(1,2)={{RHS_sample}}</me>
                     </p>
                 </item>
                 <!-- {{/add_comm}} -->
@@ -168,6 +172,8 @@ Additive inverses do not always exist.
                     <p>
 Scalar multiplication is not associative: <me>c\odot(d\odot(x,y))={{LHS}}</me>
 <me>(cd)\odot(x,y)={{RHS}}</me>
+For example: <me>2\odot(3\odot(1,2))={{LHS_sample}}</me>
+<me>(2\cdot 3)\odot(1,2)={{RHS_sample}}</me>
                     </p>
                 </item>
                 <!-- {{/mul_assoc}} -->
@@ -175,6 +181,7 @@ Scalar multiplication is not associative: <me>c\odot(d\odot(x,y))={{LHS}}</me>
                 <item>
                     <p>
 <m>1</m> is not a scalar multiplication identity: <me>1\odot(x,y)={{LHS}} \neq (x,y)</me>
+For example: <me>1\odot(1,2)={{LHS_sample}} \neq (1,2)</me>
                     </p>
                 </item>
                 <!-- {{/mul_id}} -->
@@ -184,6 +191,9 @@ Scalar multiplication is not associative: <me>c\odot(d\odot(x,y))={{LHS}}</me>
 Scalar multiplication does not distribute over vector addition:
 <me>c\odot((x_1,y_1)\oplus(x_2,y_2))={{LHS}}</me>
 <me>(c\odot(x_1,y_1))\oplus(c\odot(x_2,y_2))={{RHS}}</me>
+For example:
+<me>2\odot((1,2)\oplus(2,3))={{LHS_sample}}</me>
+<me>(2\odot(1,2))\oplus(2\odot(2,3))={{RHS_sample}}</me>
                     </p>
                 </item>
                 <!-- {{/dist_v}} -->
@@ -193,6 +203,9 @@ Scalar multiplication does not distribute over vector addition:
 Scalar multiplication does not distribute over scalar addition:
 <me>(c+d)\odot(x,y)={{LHS}}</me>
 <me>(c\odot(x,y))\oplus(d\odot(x,y))={{RHS}}</me>
+For example:
+<me>(2+3)\odot(1,2)={{LHS_sample}}</me>
+<me>(2\odot(1,2))\oplus(3\odot(1,2))={{RHS_sample}}</me>
                     </p>
                 </item>
                 <!-- {{/dist_s}} -->
