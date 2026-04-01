@@ -8,7 +8,7 @@ class Generator(BaseGenerator):
         v2 = vector([x2,y2])
         v3 = vector([x3,y3])
         v = vector([x,y])
-        cs, ds, xs, ys = range(2,6)
+        cs, ds = 2,3
         v1s = vector([1,2])
         v2s = vector([2,3])
         v3s = vector([3,4])
