@@ -13,7 +13,7 @@ class Generator(BaseGenerator):
         true_property_options = ["add_assoc","add_comm","mul_assoc","dist_v","dist_s","mul_id"]
         false_only_property_options = ["add_id","add_inv"]
 
-        def verify(plus,times,hardfalseproperties=[]):
+        def verify(plus,times):
             trueproperties={}
             falseproperties={}
             for prop in true_property_options:
@@ -54,9 +54,6 @@ class Generator(BaseGenerator):
                             if vectorsimplify(LHS) != vectorsimplify(RHS):
                                 falseproperties.append("add_inv")
             return (trueproperties, falseproperties)
-        
-        #Use this to code in false properties that cannot be checked automatically ("add_id" and "add_inv")
-        hardfalseproperties=[]
 
         #Use this to list a property that is true, but you don't want students to check
         #because it is too easy (usually "add_comm") or too hard
@@ -72,8 +69,6 @@ class Generator(BaseGenerator):
             b=randrange(1,8)
             theta = lambda v : vector([v[0]+a,v[1]+b])
             untheta = lambda v : vector([v[0]-a,v[1]-b])
-
-            hardfalseproperties += ["add_id","add_inv"]
 
         elif n==1:
             plus = lambda v1,v2 : vector([v1[0]+v2[0], v1[1]+v2[1]])
@@ -129,7 +124,7 @@ class Generator(BaseGenerator):
         oplus = lambda v1,v2 : theta(plus(untheta(v1),untheta(v2)))
         otimes = lambda c,v : theta(times(c,untheta(v)))
 
-        trueproperties, falseproperties = verify(oplus,otimes,hardfalseproperties)
+        trueproperties, falseproperties = verify(oplus,otimes)
         for prop in true_no_check_properties:
             if prop in trueproperties.keys():
                 trueproperties.pop(prop)
