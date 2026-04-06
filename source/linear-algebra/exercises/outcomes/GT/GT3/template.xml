@@ -1,10 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    <content>
-        <p>Explain and demonstrate how to find the eigenvalues of the matrix <m>{{matrix}}</m>.</p>
-    </content>
-    <outtro>
-        <p>The characteristic polynomial of <m>{{matrix}}</m> is <m>{{charpoly}}</m>.</p>
-        <p>The eigenvalues of <m>{{matrix}}</m> are <m>{{e1}}</m> and <m>{{e2}}</m>.</p>
-    </outtro>
+    <knowl>
+        <content>
+            <p>Explain and demonstrate how to find the eigenvalues of the matrix <m>{{matrix}}</m>.</p>
+        </content>
+        <outtro>
+            <p>The characteristic polynomial of <m>{{matrix}}</m> is <m>{{charpoly}}</m>.</p>
+            <p>The eigenvalues of <m>{{matrix}}</m> are <m>{{e1}}</m> and <m>{{e2}}</m>.</p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>Explain and demonstrate which of these eigenvalues is associated to the eigenvector <m>{{eigenvector}}</m>.</p>
+        </content>
+        <outtro>
+            <p>
+                <m>{{eigenvector}}</m> is associated with the eigenvalue <m>{{e1}}</m> because
+                <me>{{matrix}}{{eigenvector}}={{scaled_eigenvector}}={{e1}}{{eigenvector}}</me>
+            </p>
+        </outtro>
+    </knowl>
 </knowl>

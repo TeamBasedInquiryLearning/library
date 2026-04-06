@@ -1,20 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
+<example xml:id="sample-GT3">
+  <title>GT3</title>
+
+  <task>
+    <statement>
+      <p>
+        Explain and demonstrate how to find the eigenvalues of the matrix <m>\left[\begin{array}{cc} -2 &amp; -2 \\ 10 &amp; 7 \end{array}\right] </m>.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Compute the characteristic polynomial:
+        <me>
+          \det(A-\lambda I) = \det \left[\begin{array}{cc} -2 - \lambda &amp; -2 \\ 10 &amp; 7-\lambda \end{array}\right]
+        </me>
+        <me>
+          = (-2-\lambda)(7-\lambda)+20 = \lambda ^2 -5\lambda +6 = (\lambda -2)(\lambda -3)
+        </me>
+        The eigenvalues are the roots of the characteristic polynomial, namely <m>2</m> and <m>3</m>.
+      </p>
+    </solution>
+  </task>
 
 
+  <task>
+    <statement>
+      <p>
+        Explain and demonstrate which of these eigenvalues is associated to the eigenvector <m>\left[\begin{array}{cc} -1 \\ 2 \end{array}\right]</m>.
+      </p>
+    </statement>
 
-<example xml:id="sample-GT3"><title>GT3</title>
-<statement>
-    <p>
-Explain how to find the eigenvalues of the matrix <m>\left[\begin{array}{cc} -2 &amp; -2 \\ 10 &amp; 7 \end{array}\right] </m>.
-    </p>
-</statement>
-<solution>
-    <p>
-Compute the characteristic polynomial: 
-<me>\det(A-\lambda I) = \det \left[\begin{array}{cc} -2 - \lambda &amp; -2 \\ 10 &amp; 7-\lambda \end{array}\right]
-</me><me>= (-2-\lambda)(7-\lambda)+20 = \lambda ^2 -5\lambda +6 = (\lambda -2)(\lambda -3)</me>
-The eigenvalues are the roots of the characteristic polynomial, namely <m>2</m> and <m>3</m>.
-    </p>
-</solution>
+    <solution>
+        <p>
+            We can compute
+            <md>
+\left[\begin{array}{cc} -2 &amp; -2 \\ 10 &amp; 7 \end{array}\right]
+\left[\begin{array}{cc} -1 \\ 2 \end{array}\right] =
+\left[\begin{array}{cc} -2 \\ 4 \end{array}\right]
+            </md> and <md>
+2\left[\begin{array}{cc} -1 \\ 2 \end{array}\right] =
+\left[\begin{array}{cc} -2 \\ 4 \end{array}\right]
+            </md>
+            which shows that <m>\left[\begin{array}{cc} -1 \\ 2 \end{array}\right]</m> is an
+            eigenvector associated with the eigenvalue <m>2</m>.
+        </p>
+    </solution>
+  </task>
 </example>
