@@ -294,6 +294,19 @@ Thus the characteristic polynomial of <m>A</m> is
 </me>
 and its eigenvalues are the solutions <m>-1,6</m> to <m>\lambda^2-5\lambda-6=0</m>.
         </p>
+        <p>
+          In particular, we can see by
+          <md>
+            \left[\begin{array}{cc}1 &amp; 2 \\ 5 &amp; 4\end{array}\right]
+            \left[\begin{array}{c}1 \\-1\end{array}\right]
+            =
+            \left[\begin{array}{c}-1 \\1\end{array}\right]
+            =
+            -1\left[\begin{array}{c}1 \\-1\end{array}\right]
+          </md>
+          that <m>\left[\begin{array}{c}1 \\-1\end{array}\right]</m> is an eigenvector
+          associated with the eigenvalue <m>-1</m>.
+        </p>
     </statement>
 </definition>
 
@@ -304,14 +317,44 @@ Let <m>A = \left[\begin{array}{cc} 5 &amp; 2 \\ -3 &amp; -2 \end{array}\right]</
         </p>
     </introduction>
 <task>
+  <statement>
     <p>
 Compute <m>\det (A-\lambda I)</m> to determine the characteristic polynomial of <m>A</m>.
     </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\lambda^2-3\lambda-4</m>
+    </p>
+  </answer>
 </task>
 <task>
+  <statement>
     <p>
 Set this characteristic polynomial equal to zero and factor to determine the eigenvalues of <m>A</m>.
     </p>
+  </statement>
+  <answer>
+    <p>
+      Solve <m>\lambda^2-3\lambda-4=(\lambda-4)(\lambda+1)=0</m>
+      to find <m>\lambda=4,-1</m>.
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+Use technology to calculate <m>\left[\begin{array}{cc} 5 &amp; 2 \\ -3 &amp; -2 \end{array}\right]\left[\begin{array}{c} 2 \\ -1 \end{array}\right]</m> to determine
+which of these eigenvalues is associated to the eigenvector <m>\left[\begin{array}{c} 2 \\ -1 \end{array}\right]</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      Since
+      <md>\left[\begin{array}{cc} 5 &amp; 2 \\ -3 &amp; -2 \end{array}\right]\left[\begin{array}{c} 2 \\ -1 \end{array}\right]=\left[\begin{array}{c} 8 \\ -4 \end{array}\right]=4\left[\begin{array}{c} 2 \\ -1 \end{array}\right]</md>
+      the associated eigenvalue is <m>\lambda=4</m>.
+    </p>
+  </answer>
 </task>
 </activity>
 
