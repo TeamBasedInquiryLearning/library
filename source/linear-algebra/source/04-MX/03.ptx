@@ -49,83 +49,146 @@
         So far, when working with the Euclidean vector space <m>\IR^n</m>, we have primarily worked with the standard basis <m>\mathcal{E}=\setList{\vec{e}_1,\dots, \vec{e}_n}</m>.
         We can explore alternative perspectives more easily if we expand our toolkit to analyze different bases.    
     </p>
+    <figure xml:id="MX3-fig-doenet-change-basis">
+      <caption>Visualization of the change of basis in <m>\mathbb R^2</m></caption>
+        <interactive label="MX3-interactive-doenet-change-basis" platform="doenetml" width="100%">
+          <slate surface="doenetml">
+            <xi:include parse="text" href="doenet/MX3-doenet-change-basis.xml"/>
+          </slate>
+          <description>
+            <p>An interactive that visualizes the change of basis from the standard basis to a custom basis in the plane.</p>
+          </description>
+        </interactive>
+    </figure>
 </remark>
 <activity>
     <introduction>
         <p>
-            Let <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</m>.
+            Consider the non-standard basis <md>\mathcal{B}=\setList{\vec{b}_1,\vec{b}_2,\vec{b}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</md> for <m>\mathbb R^3</m>.
         </p>
-    </introduction>        
+    </introduction>
     <task>
+      <statement>
             <p>
-                Is <m>\cal{B}</m> a basis of <m>\IR^3</m>?
-            </p>
-            <p>
-                <ol marker="A.">
-                    <li>
-                        <p>
-                            Yes.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            No.
-                        </p>
-                    </li>
+                Since <m>\mathcal{B}</m> is a basis, how many ways can we write some
+                arbitrary <m>\vec v\in \IR^3</m> in terms of <m>\mathcal B</m> vectors?
+                <md>
+                  \vec v= x_1\vec{b}_1+x_2\vec{b}_2+x_3\vec{b}_3=
+                  x_1\begin{bmatrix}1\\0\\1\end{bmatrix}+
+                  x_2\begin{bmatrix}1\\-1\\1\end{bmatrix}+
+                  x_3\begin{bmatrix}0\\1\\1\end{bmatrix}
+                </md>
+                <ol label="A." cols="3">
+                  <li><p>Zero</p></li>
+                  <li><p>At most one</p></li>
+                  <li><p>Exactly one</p></li>
+                  <li><p>At least one</p></li>
+                  <li><p>Infinitely-many</p></li>
                 </ol>
             </p>
+      </statement>
+      <answer>
+        <p>
+          C.
+        </p>
+        <p>
+          Exactly one
+        </p>
+      </answer>
     </task>
     <task>
-            <p>
-                Since <m>\cal{B}</m> is a basis, we know that if <m>\vec{v}\in \IR^3</m>, the following vector equation will have a unique solution:
-                <me>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{v}</me>
-                Given this, we define a map <m>C_{\mathcal{B}}\colon\IR^3\to\IR^3</m> via the rule that <m>C_{\mathcal{B}}(\vec{v})</m> is equal to the unique solution to the above vector equation. 
-                The map <m>C_{\mathcal{B}}</m> is a linear map. 
-            </p>
-            <p>
-                Compute <m>C_{\mathcal{B}}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right)</m>, the unique solution to 
-                <me>
-                    x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\begin{bmatrix}1\\1\\1\end{bmatrix}.
-                </me>
-                
-            </p>
+      <statement>
+        <p>
+            If <m>\vec x=\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]</m>
+            and <m>B = \left[\begin{array}{ccc}\vec b_1&amp; \vec b_2&amp;\vec b_3\end{array}\right]=\left[\begin{array}{ccc}1&amp;1&amp;0\\0&amp;-1&amp;1\\1&amp;1&amp;1\end{array}\right]</m>,
+            which of these matrix equations can be used to find <m>x_1,x_2,x_3</m>?
+            <ol label="A." cols="3">
+              <li><p><m>\vec v=B\vec x</m></p></li>
+              <li><p><m>B\vec v=\vec x</m></p></li>
+              <li><p><m>\vec v=B^{-1}\vec x</m></p></li>
+              <li><p><m>B^{-1}\vec v=\vec x</m></p></li>
+              <li><p>A or D</p></li>
+              <li><p>B or C</p></li>
+            </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          E.
+        </p>
+        <p>
+          <m>B\vec v=\vec x</m> can be rewritten as <m>\vec v=B^{-1}\vec x</m>
+        </p>
+      </answer>
     </task>
     <task>
-            <p>
-                Compute <m>C_\mathcal{B}(\vec{e}_1),C_\mathcal{B}(\vec{e}_2), C_\mathcal{B}(\vec{e}_3)</m> and, in doing so, write down the standard matrix <m>M_\mathcal{B}</m> of <m>C_\mathcal{B}</m>.
-            </p>
-            <sage language="octave">
-                <input>
-                    
-                </input>
-                <output>
-                    
-                </output>
-            </sage>    
+      <statement>
+        <p>
+          Let <m>\vec v=\begin{bmatrix}1\\2\\3\end{bmatrix}</m> and
+          use this equation to find
+          <md>x_1=\unknown,x_2=\unknown,x_3=\unknown</md>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x_1=1,x_2=0,x_3=2</m> so
+          <md>\begin{bmatrix}1\\2\\3\end{bmatrix}=
+                  1\begin{bmatrix}1\\0\\1\end{bmatrix}+
+                  0\begin{bmatrix}1\\-1\\1\end{bmatrix}+
+                  2\begin{bmatrix}0\\1\\1\end{bmatrix}</md>
+        </p>
+      </answer>
     </task>
-    
 </activity>
 
 <definition xml:id="def-change-of-basis">
     <statement>
         <p>
-            Given a basis <m>\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}</m> of <m>\IR^n</m>, the <term>change of basis/coordinate</term> transformation <em>from</em> the standard basis <em>to</em> <m>\mathcal{B}</m> is the transformation <m>C_\mathcal{B}\colon\IR^n\to\IR^n</m> defined by the property that, for any vector <m>\vec{v}\in\IR^n</m>, the vector <m>C_\mathcal{B}(\vec{v})</m> is the unique solution to the vector equation:
-            <me>x_1\vec{v}_1+\dots+x_n\vec{v}_n=\vec{v}.</me>
-            Its standard matrix is called the change-of-basis matrix from the standard basis to <m>\mathcal{B}</m> and is denoted by <m>M_{\mathcal{B}}</m>.
-            It satisfies the following:
-            <me>M_{\mathcal{B}}=[\vec{v}_1\ \cdots\ \vec{v}_n]^{-1}.</me>
+            Given a basis <m>\mathcal{B}=\setList{\vec{b}_1,\dots, \vec{b}_n}</m> of <m>\IR^n</m> and corresponding matrix <m>B=\begin{bmatrix}\vec b_1&amp;\cdots&amp;\vec b_n\end{bmatrix}</m>, the <term>change of basis/coordinate</term> transformation <em>from</em> the standard basis <em>to</em> <m>\mathcal{B}</m> is the transformation <m>C_\mathcal{B}\colon\IR^n\to\IR^n</m> defined by the property that, for any vector <m>\vec{v}\in\IR^n</m>, the vector <m>C_\mathcal{B}(\vec{v})</m> describes the unique way to write
+            <m>\vec v</m> in terms of the basis, that is,
+            the unique solution to the vector equation:
+            <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n</md>.
+        </p>
+        <p>
+          Since the solution vector
+          <m>C_{\mathcal B}(\vec v)=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m>
+          describes the <q><m>\mathcal B</m>-coordinates</q> of <m>\vec v</m>,
+          we will write
+            <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n=
+              B\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}=
+              \begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}_{\mathcal B}</md>
         </p>
     </statement>
 </definition>
 
 <remark>
     <p>
-        The vector <m>C_\mathcal{B}(\vec{v})</m> is the <m>\mathcal{B}</m>-coordinates of <m>\vec{v}</m>.
-        If you work with standard coordinates, and I work with <m>\mathcal{B}</m>-coordinates, then to build the vector that you call <m>\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n</m>, I would first compute <m>C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m> and then build <m>\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n</m>.
+        As was just shown, the standard matrix <m>M_{\mathcal B}</m> for this
+        transformation is exactly the inverse matrix <m>B^{-1}</m>.
     </p>
     <p>
-        In particular, notation as above, we would have:
-        <me>a_1\vec{e}_1+\cdots a_n\vec{e}_n=\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n.</me>
+        The vector <m>C_\mathcal{B}(\vec{v})</m> describes the
+        <q><m>\mathcal{B}</m>-coordinates</q> of <m>\vec{v}</m>.
+        If you work with standard coordinates, and I work with
+        <m>\mathcal{B}</m>-coordinates, then you might write
+        <md>\vec{v}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}</md>
+        and I might instead write
+        <md>\vec{v}=x_1\vec{b}_1+\cdots+x_n\vec{b}_n=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}_{\mathcal B}=B\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</md>
+    </p>
+    <p>
+        To convert from your standard coordinates to my <m>\mathcal B</m>-coordinates,
+        we need simply compute:
+        <md>\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}=
+          C_{\mathcal B}\left(\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}\right)=
+          M_{\mathcal B}\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=
+          B^{-1}\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}</md>.
+    </p>
+    <p>
+        And similarly we can convert backwards:
+        <md>\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=
+          C_{\mathcal B}^{-1}\left(\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}\right)=
+          M_{\mathcal B}^{-1}\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}=
+          B\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</md>.
     </p>
 </remark>
 
@@ -133,12 +196,12 @@
 <activity>
     <introduction>
         <p>
-            Let <m>\vec{v}_1=\begin{bmatrix}1\\-2\\1\end{bmatrix},\ \vec{v}_2=\begin{bmatrix}-1\\0\\3\end{bmatrix},\ \vec{v}_3=\begin{bmatrix}0\\1\\-1\end{bmatrix}</m>, and <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m>
+            Let <m>\vec{b}_1=\begin{bmatrix}-1\\1\\2\end{bmatrix},\ \vec{b}_2=\begin{bmatrix}0\\-1\\-5\end{bmatrix},\ \vec{b}_3=\begin{bmatrix}-4\\2\\-1\end{bmatrix}</m>, and <m>\mathcal{B}=\setList{\vec{b}_1,\vec{b}_2,\vec{b}_3}</m>
         </p>
     </introduction>
     <task>
         <p>
-            Calculate <m>M_{\mathcal{B}}</m> using technology. 
+            Calculate <m>M_{\mathcal{B}}=B^{-1}</m> using technology. 
         </p>
         <sage language="octave">
             <input>
@@ -151,18 +214,20 @@
     </task>
     <task>
         <p>
-            Use your result to calculate <m>C_\mathcal{B}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right)</m> and express the vector <m>\begin{bmatrix}1\\1\\1\end{bmatrix}</m> as a linear combination of <m>\vec{v}_1,\vec{v}_2,\vec{v}_3</m>.
+            Use this matrix to write
+            <md>\begin{bmatrix}-1\\0\\3\end{bmatrix}=\begin{bmatrix}\unknown\\\unknown\\\unknown\end{bmatrix}_{\mathcal B}=\unknown\vec b_1+\unknown\vec b_2+\unknown\vec b_3</md> 
+            as a linear combination of <m>\vec{b}_1,\vec{b}_2,\vec{b}_3</m>.
         </p>
     </task>
 </activity>
 <observation>
     <p>
         Let <m>T\colon\IR^n\to\IR^n</m> be a linear transformation and let <m>A</m> denote its standard matrix. 
-        If <m>\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}</m> is some other basis, then we have:
+        If <m>\mathcal{B}=\setList{\vec{b}_1,\dots, \vec{v}_n}</m> is some other basis, then we have:
         <md>
             <mrow>M_\mathcal{B}AM_{\mathcal{B}}^{-1} \amp= M_\mathcal{B}A[\vec{v_1}\cdots\vec{v}_n] </mrow>
-            <mrow> \amp= M_\mathcal{B}[T(\vec{v}_1)\cdots T(\vec{v}_n)]</mrow>
-            <mrow> \amp= [C_\mathcal{B}(T(\vec{v}_1))\cdots C_\mathcal{B}(T(\vec{v}_n))]</mrow>
+            <mrow> \amp= M_\mathcal{B}[T(\vec{b}_1)\cdots T(\vec{v}_n)]</mrow>
+            <mrow> \amp= [C_\mathcal{B}(T(\vec{b}_1))\cdots C_\mathcal{B}(T(\vec{v}_n))]</mrow>
         </md>
         In other words, the matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is the matrix whose columns consist of <em><m>\mathcal{B}</m>-coordinate</em> vectors of the image vectors <m>T(\vec{v}_i)</m>.
         The matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is called the <alert>matrix of <m>T</m> with respect to <m>\mathcal{B}</m>-coordinates</alert>.
@@ -172,7 +237,7 @@
 <activity>
     <introduction>
         <p>
-            Let <m>\mathcal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\0\\3\end{bmatrix},\begin{bmatrix}0\\1\\-1\end{bmatrix}}</m> be basis from the previous Activity. 
+            Let <m>\mathcal{B}=\setList{\vec{b}_1,\vec{b}_2,\vec{b}_3}=\setList{\begin{bmatrix}1\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\0\\3\end{bmatrix},\begin{bmatrix}0\\1\\-1\end{bmatrix}}</m> be basis from the previous Activity. 
             Let <m>T</m> denote the linear transformation whose standard matrix is given by:
             <me>A=\begin{bmatrix}9&amp;4&amp;4\\6&amp;9&amp;2\\-18&amp;-16&amp;-9\end{bmatrix}.</me>
         </p>
