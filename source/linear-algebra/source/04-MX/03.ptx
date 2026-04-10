@@ -220,17 +220,83 @@
         </p>
     </task>
 </activity>
+
+<activity>
+    <introduction>
+        <p>
+            While defining linear transformations in terms of their standard
+            matrix <m>A</m> is convenient when working with standard coordinates, it
+            would be helpful to be able to apply transformations directly to
+            non-standard bases/coordinates as well.
+        </p>
+        <p>
+Let <m>\mathcal B=\setList\vec b_1,\cdots\vec b_n</m> be a basis, and consider the matrix
+<m>B=\begin{bmatrix}\vec b_1&amp;\cdots&amp;\vec b_n\end{bmatrix}</m>
+<m>M_{\mathcal B}=B^{-1}</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+        <p>
+Given <m>\vec v</m> representing <m>\mathcal B</m>-coordinates, which of these
+expressions would correctly compute the transformation of <m>\vec v</m> by a 
+<em>standard</em> matrix <m>A</m> with output in <em>standard</em> coordinates?
+          <ol marker="A.">
+            <li><p><m>AB^{-1}\vec v=AM_{\mathcal B}\vec v</m></p></li>
+            <li><p><m>AB\vec v=AM_{\mathcal B}^{-1}\vec v</m></p></li>
+            <li><p><m>B^{-1}A\vec v=M_{\mathcal B}A\vec v</m></p></li>
+            <li><p><m>BA\vec v=M_{\mathcal B}^{-1}A\vec v</m></p></li>
+          </ol>
+        </p>
+        </statement>
+        <answer>
+            <p>
+                B.
+            </p>
+            <p>
+                Since <m>\vec v</m> represents <m>\mathcal B</m>-coordinates,
+                the vector <m>B\vec v=M_{\mathcal B}^{-1}\vec v</m> represents
+                its standard coordinates.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+        <p>
+Therefore, which matrix would directly calculate the transformation of
+vectors by a linear map with standard matrix <m>A</m>,
+but where inputs and outputs are all given in <m>\mathcal B</m>-coordinates?
+          <ol marker="A.">
+            <li><p><m>B^{-1}AB=M_{\mathcal B}AM_{\mathcal B}^{-1}</m></p></li>
+            <li><p><m>BAB^{-1}=M_{\mathcal B}^{-1}AM_{\mathcal B}</m></p></li>
+            <li><p><m>AB^{-1}B=AM_{\mathcal B}M_{\mathcal B}^{-1}</m></p></li>
+            <li><p><m>ABB^{-1}=AM_{\mathcal B}^{-1}M_{\mathcal B}</m></p></li>
+          </ol>
+        </p>
+        </statement>
+        <answer>
+            <p>
+                A.
+            </p>
+            <p>
+                We saw <m>AB</m> transforms <m>\mathcal B</m>-coordinates by the
+                transformation, but outputs standard coordinates. Applying
+                <m>B^{-1}=M_{\mathcal B}</m> on the left corrects the outputs to be
+                in <m>\mathcal B</m>-coordinates.
+            </p>
+        </answer>
+    </task>
+</activity>
+
 <observation>
     <p>
         Let <m>T\colon\IR^n\to\IR^n</m> be a linear transformation and let <m>A</m> denote its standard matrix. 
-        If <m>\mathcal{B}=\setList{\vec{b}_1,\dots, \vec{v}_n}</m> is some other basis, then we have:
-        <md>
-            <mrow>M_\mathcal{B}AM_{\mathcal{B}}^{-1} \amp= M_\mathcal{B}A[\vec{v_1}\cdots\vec{v}_n] </mrow>
-            <mrow> \amp= M_\mathcal{B}[T(\vec{b}_1)\cdots T(\vec{v}_n)]</mrow>
-            <mrow> \amp= [C_\mathcal{B}(T(\vec{b}_1))\cdots C_\mathcal{B}(T(\vec{v}_n))]</mrow>
-        </md>
-        In other words, the matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is the matrix whose columns consist of <em><m>\mathcal{B}</m>-coordinate</em> vectors of the image vectors <m>T(\vec{v}_i)</m>.
-        The matrix <m>M_{\mathcal{B}}AM_{\mathcal{B}}^{-1}</m> is called the <alert>matrix of <m>T</m> with respect to <m>\mathcal{B}</m>-coordinates</alert>.
+        If <m>\mathcal{B}=\setList{\vec{b}_1,\dots, \vec{v}_n}</m> is some other basis
+        and <m>B=\begin{bmatrix}\vec b_1&amp;\cdots&amp;\vec b_n\end{bmatrix}</m>,
+        then <m>M_{\mathcal B}AM_{\mathcal B}^{-1}=B^{-1}AB</m> is the
+        <term><m>\mathcal B</m>-coordinate matrix</term> for <m>T</m>,
+        which applies the transformation <m>T</m> where inputs and outputs are
+        all given in <m>\mathcal B</m>-coordinates.
     </p>
 </observation>
 
