@@ -7,25 +7,25 @@ class Generator(BaseGenerator):
     # b^(x-a)=c => x = log_b(c)+a
     eqs = [{
       "var": xs[0],
-      "eq": bases[0]^(x-nums[0]) == nums[1],
+      "eq": bases[0]^(xs[0]-nums[0]) == nums[1],
       "sol": f"\\log_ { {bases[0]} }({nums[1]})+{nums[0]}"
     }]
     # b^x - a = c => x = log_b(c+a)
     eqs += [{
-      "var": xs[0],
-      "eq": bases[0]^x-nums[0] == nums[1],
+      "var": xs[1],
+      "eq": bases[0]^xs[1]-nums[0] == nums[1],
       "sol": f"\\log_ { {bases[0]} }({nums[1]+nums[0]})"
     }]
     # a log_b(cx) = ad => b^d/c
     eqs += [{
-      "var": xs[1],
-      "eq": f"{nums[2]}\\log_ { {bases[1]} }({nums[3]}{xs[1]}) = {nums[2]*d}",
+      "var": xs[2],
+      "eq": f"{nums[2]}\\log_ { {bases[1]} }({nums[3]}{xs[2]}) = {nums[2]*d}",
       "sol": bases[1]^d/nums[3]
     }]
     # a + log_b(cx) = d2+a => b^d2/c
     eqs += [{
-      "var": xs[1],
-      "eq": f"{nums[2]} + \\log_ { {bases[1]} }({nums[3]}{xs[1]}) = {nums[2]+d2}",
+      "var": xs[3],
+      "eq": f"{nums[2]} + \\log_ { {bases[1]} }({nums[3]}{xs[3]}) = {nums[2]+d2}",
       "sol": bases[1]^d2/nums[3]
     }]
     # shuffle a bit
