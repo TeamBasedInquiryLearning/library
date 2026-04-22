@@ -348,7 +348,7 @@ in terms of matrix multiplication.</p>
     <title>Mathematical Writing Explorations</title>
      <exploration>
      <statement>
-         Construct 3 matrices, <m>A,B,\mbox{ and } C</m>, such that
+         <p>Construct 3 matrices, <m>A,B,\mbox{ and } C</m>, such that</p>
          <ul>
             <li><m>AB:\mathbb{R}^4\rightarrow\mathbb{R}^2</m></li>
             <li><m>BC:\mathbb{R}^2\rightarrow\mathbb{R}^3</m></li>
@@ -358,7 +358,7 @@ in terms of matrix multiplication.</p>
          </statement></exploration>
             <exploration>
                 <statement>
-                    Construct 3 examples of matrix multiplication, with all matrix dimensions at least 2.
+                    <p>Construct 3 examples of matrix multiplication, with all matrix dimensions at least 2.</p>
 <ul>
 <li>Where <m>A</m> and <m>B</m> are not square, but <m>AB</m> is square.</li>
 <li>Where <m>AB = BA</m>.</li>
@@ -368,7 +368,7 @@ in terms of matrix multiplication.</p>
      </exploration>
 <exploration>
                 <statement>
-Use the included map in this problem.
+<p>Use the included map in this problem.</p>
                     <figure xml:id="MX1-adjacency">
             <caption>Adjacency map, showing roads between 5 cities</caption>
             <image xml:id="MX1-image-adjacency" width="50%">

@@ -475,20 +475,21 @@ Based on the previous activities, which technique is easier for computing determ
     <title>Mathematical Writing Explorations</title>
             <exploration>
                 <statement>  
-                    Prove that the equation of a line in the plane, through points <m>(x_1,y_1), (x_2,y_2)</m>, when <m>x_1 \neq x_2</m> is given by the equation
+                    <p>Prove that the equation of a line in the plane, through points <m>(x_1,y_1), (x_2,y_2)</m>, when <m>x_1 \neq x_2</m> is given by the equation
 <m>\mbox{det}\left(\begin{array}{ccc}x&amp;y&amp;1\\x_1&amp;y_1&amp;1\\x_2&amp;y_2&amp;1\end{array}\right) = 0.</m>
+                    </p>
                 </statement>
                 
      </exploration>
                  <exploration>
                 <statement>  
-                    Show that, if an <m>n \times n</m> matrix <m>M</m> has a non-zero determinant, then any <m>\vec{v} \in \mathbb{R}^n</m> can be represented as a linear combination of the columns of <m>M</m>.
+                    <p>Show that, if an <m>n \times n</m> matrix <m>M</m> has a non-zero determinant, then any <m>\vec{v} \in \mathbb{R}^n</m> can be represented as a linear combination of the columns of <m>M</m>.</p>
                 </statement>
                 
      </exploration>
                       <exploration>
                 <statement> 
-                    What is the smallest number of zeros necessary to place in a <m>4 \times 4</m> matrix, and the placement of those zeros, such that the matrix has a zero determinant?
+                    <p>What is the smallest number of zeros necessary to place in a <m>4 \times 4</m> matrix, and the placement of those zeros, such that the matrix has a zero determinant?</p>
                 </statement>
                 
      </exploration>
