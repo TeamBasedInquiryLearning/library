@@ -252,7 +252,7 @@ begins with area <m>1</m>).
 <remark>
     <statement>
     <p>
-We will define the <term>determinant</term> of a square matrix <m>B</m>,
+We will define the <term>determinant</term><idx>determinant</idx> of a square matrix <m>B</m>,
 or <m>\det(B)</m> for short, to be the factor by which <m>B</m> scales areas.
 In order to figure out how to compute it, we first figure out the properties it must satisfy.
     </p>
@@ -286,7 +286,7 @@ In order to figure out how to compute it, we first figure out the properties it 
     The images from <xref ref="fig-GT1-image-unit-square-transform2"/> and <xref ref="fig-GT1-image-scale-not-rotate"/> are shown side by side.
   </description>
 	</image>
-	<caption>The linear transformation <m>B</m> scaling areas by a constant factor, which we call the <term>determinant</term></caption>
+	<caption>The linear transformation <m>B</m> scaling areas by a constant factor, which we call the <term>determinant</term><idx>determinant</idx></caption>
 </figure>
     </statement>
 </remark>
@@ -429,7 +429,7 @@ the areas on the left may be partitioned and reorganized into the area on the ri
 <definition>
     <statement>
     <p>
-The <term>determinant</term> is the unique function
+The <term>determinant</term><idx>determinant</idx> is the unique function
 <m>\det:M_{n,n}\to\IR</m> satisfying these  properties:
 <ol>
 	<li><m>\det(I)=1</m></li>

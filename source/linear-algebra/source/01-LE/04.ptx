@@ -95,8 +95,8 @@ Recall that the pivots of a matrix in <m>\RREF</m> form are the leading
         </p>
         <p>
 The pivot columns in an augmented matrix correspond to the
-<term>bound variables</term><idx>bound variables</idx> in the system of equations (<m>x_1,x_3</m> below).
-The remaining variables are called <term>free variables</term><idx>free variables</idx> (<m>x_2</m> below).
+<term>bound variables</term><idx>bound variables</idx><idx><h>variables</h><h>bound</h></idx> in the system of equations (<m>x_1,x_3</m> below).
+The remaining variables are called <term>free variables</term><idx>free variables</idx><idx><h>variables</h><h>free</h></idx> (<m>x_2</m> below).
 <me>
   \left[\begin{array}{ccc|c}
     \markedPivot{1} &amp; 2 &amp; 0 &amp; 4 \\

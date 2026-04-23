@@ -308,7 +308,7 @@ Put another way, the images of the basis vectors completely determine the transf
         <p>
 Since a linear transformation <m>T:\IR^n\to\IR^m</m> is determined by its action on
 the standard basis <m>\{\vec e_1,\dots,\vec e_n\}</m>, it is convenient to
-store this information in an <m>m\times n</m> matrix, called the <term>standard matrix</term><idx>standard matrix</idx> of <m>T</m>, given by
+store this information in an <m>m\times n</m> matrix, called the <term>standard matrix</term><idx>standard matrix</idx><idx><h>matrix</h><h>standard</h></idx><idx><h>linear transformation</h><h>standard matrix</h></idx> of <m>T</m>, given by
 <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m>.
         </p>
         <p>

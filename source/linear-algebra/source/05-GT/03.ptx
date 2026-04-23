@@ -173,7 +173,7 @@ is a vector <m>\vec{x} \in \IR^n</m> such that <m>A\vec{x}</m> is parallel to <m
 </figure>
 <p>
 In other words, <m>A\vec{x}=\lambda \vec{x}</m> for some scalar <m>\lambda</m>. 
-If <m>\vec x\not=\vec 0</m>, then we say <m>\vec x</m> is a <term>nontrivial eigenvector</term><idx><h>eigenvector</h></idx><idx>nontrivial</idx>
+If <m>\vec x\not=\vec 0</m>, then we say <m>\vec x</m> is a <term>nontrivial eigenvector</term><idx><h>nontrivial</h><h>eigenvector</h></idx>
 and we call this <m>\lambda</m> an <term>eigenvalue</term><idx>eigenvalue</idx> of <m>A</m>.
     </p>
     </statement>
@@ -272,7 +272,7 @@ And what else?
     <statement>
         <p>
 The expression <m>\det(A-\lambda I)</m> is called the
-<term>characteristic polynomial</term> of <m>A</m>.
+<term>characteristic polynomial</term><idx>characteristic polynomial</idx> of <m>A</m>.
         </p>
         <p>
 For example, when
