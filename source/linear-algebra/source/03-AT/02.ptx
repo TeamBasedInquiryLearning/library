@@ -484,13 +484,13 @@ and assign it to the variable <c>A</c> in Octave.
 A = \left[\begin{array}{cc} -1 &amp; 2 \\ 0 &amp; -3 \\ 4 &amp; 1 \end{array}\right]
             </md>
         </p>
-<program><input>
+<program><code>
 A = [
 -1  2
  0 -3
  4  1
 ]
-</input></program>
+</code></program>
     </answer>
 </task>
 <task>
