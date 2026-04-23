@@ -127,7 +127,7 @@ When order is irrelevant, we will use set notation:
     <definition>
         <statement>
             <p>
-A <term>Euclidean vector</term><idx>Euclidean vector</idx><idx><h>vector</h><h>Euclidean</h></idx> is an ordered
+A <term>Euclidean vector</term><idx><h>Euclidean</h><h>vector</h></idx><idx><h>vector</h><h>Euclidean</h></idx> is an ordered
 list of real numbers
 <me>
   \left[\begin{array}{c}
@@ -260,7 +260,7 @@ Following are some examples of addition and scalar multiplication in <m>\mathbb 
     <definition>
         <statement>
             <p>
-A <term>linear equation</term><idx>linear equation</idx> is an equation of the variables <m>x_i</m> of the form
+A <term>linear equation</term><idx>linear equation</idx><idx><h>equation</h><h>linear</h></idx> is an equation of the variables <m>x_i</m> of the form
 <me>
 a_1x_1+a_2x_2+\dots+a_nx_n=b
 </me>.
@@ -390,7 +390,7 @@ is a collection of one or more linear equations.
 
     <remark>
         <p>
-It will often be convenient to think of a system of equations as a vector equation.<idx>vector equation</idx>
+It will often be convenient to think of a system of equations as a vector equation.<idx>vector equation</idx><idx><h>equation</h><h>vector</h></idx>
         </p>
         <p>
 By applying vector operations and equating components, it is straightforward to see that the vector equation
@@ -782,7 +782,7 @@ Then use these to describe the solution set
             Sometimes, we will find it useful to refer only to the coefficients of the linear system
             (and ignore its constant terms).
             We call the <m>m\times n</m> array consisting of these coefficients 
-            a <term>coefficient matrix</term><idx>coeefficient matrix</idx>.
+            a <term>coefficient matrix</term><idx>coefficient matrix</idx>.
             <me>
                 \left[\begin{array}{cccc}
                   a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
