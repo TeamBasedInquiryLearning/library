@@ -79,7 +79,7 @@
                   x_2\begin{bmatrix}1\\-1\\1\end{bmatrix}+
                   x_3\begin{bmatrix}0\\1\\1\end{bmatrix}
                 </md>
-                <ol label="A." cols="3">
+                <ol marker="A." cols="3">
                   <li><p>Zero</p></li>
                   <li><p>At most one</p></li>
                   <li><p>Exactly one</p></li>
@@ -103,7 +103,7 @@
             If <m>\vec x=\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]</m>
             and <m>B = \left[\begin{array}{ccc}\vec b_1&amp; \vec b_2&amp;\vec b_3\end{array}\right]=\left[\begin{array}{ccc}1&amp;1&amp;0\\0&amp;-1&amp;1\\1&amp;1&amp;1\end{array}\right]</m>,
             which of these matrix equations can be used to find <m>x_1,x_2,x_3</m>?
-            <ol label="A." cols="3">
+            <ol marker="A." cols="3">
               <li><p><m>\vec v=B\vec x</m></p></li>
               <li><p><m>B\vec v=\vec x</m></p></li>
               <li><p><m>\vec v=B^{-1}\vec x</m></p></li>
