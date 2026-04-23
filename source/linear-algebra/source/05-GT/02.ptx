@@ -411,7 +411,7 @@ Based on the previous activities, which technique is easier for computing determ
     </statement>
 </activity>
 
-<insight>You can check your answers using technology.
+<insight component="html"><p>You can check your answers using technology.</p>
 <sage language="octave">
 <input>det([4,-3,0,0; 1,-3,2,-1; 3,2,0,3; 0,-3,2,-2])</input>
 </sage>

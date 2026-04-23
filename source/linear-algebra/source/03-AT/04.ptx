@@ -897,7 +897,7 @@ Which of the following must be true?
     </statement>
 </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 <input>rref([2,1,-1; 4,1,1; 6,2,1])</input>
 </sage>
 
@@ -921,7 +921,7 @@ Which of the following must be true?
 </ol>
     </statement>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 <input>rref([2,1,-1; 4,1,1; 6,2,0])</input>
 </sage>
 
@@ -945,7 +945,7 @@ Which of the following must be true?
 </ol>
     </statement>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 <input>rref([2,3;1,-1;1,3])</input>
 </sage>
 
@@ -969,7 +969,7 @@ Which of the following must be true?
 </ol>
     </statement>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 <input>rref([2,1,-1;4,1,1])</input>
 </sage>
 

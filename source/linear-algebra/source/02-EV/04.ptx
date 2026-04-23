@@ -319,7 +319,7 @@ which isn't what was asked about.
             </task>
     </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 <fact>
@@ -369,7 +369,7 @@ which isn't what was asked about.
     </statement>
 </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 
@@ -431,7 +431,7 @@ which isn't what was asked about.
       </task>
 </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 <observation xml:id="def_of_LI">
@@ -474,28 +474,6 @@ which isn't what was asked about.
         </p>
 </observation>
 
-<!-- <activity estimated-time='10'>
-    <introduction>
-        <p>
-  Consider whether the set of polynomials <m>\left\{
-  x^3+1,x^2+2x,x^2+7x+4
-  \right\}</m> is linearly dependent or linearly independent.
-        </p>
-    </introduction>
-<task>
-    <p>
-Reinterpret this question as an appropriate question about solutions to a polynomial equation.
-    </p>
-</task>
-<task>
-    <p>
-Use the solution to this question to answer the original question.
-    </p>
-</task>
-</activity>
-
-<sage language="octave">
-</sage> -->
 
 <activity estimated-time='5'>
     <statement>

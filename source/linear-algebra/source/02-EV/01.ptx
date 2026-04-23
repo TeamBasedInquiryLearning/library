@@ -182,7 +182,7 @@ we refer to this real number as a <term>scalar</term>.
       </p>
   </task>
   <task>
-      <p>
+      <p component="html">
     Correct the SageMath code cell below to generate
     an illustration of several vectors belonging to
     <me>\vspan\left\{\left[\begin{array}{c}1\\2\end{array}\right],
@@ -191,43 +191,53 @@ we refer to this real number as a <term>scalar</term>.
      b\left[\begin{array}{c}-1\\1\end{array}\right]}{a, b \in \IR}</me>
     in the <m>xy</m> plane.
     </p>
-    <sage>
+    <sage component="html">
       <input>
 <xi:include href="./code/ev1-planar-span.sage" parse="text" />
       </input>
     </sage>
-    <p>
+    <p component="html">
     Based on this illustration, which of these geometrical objects
     best describes the span of these two vectors?
+    </p>
+    <p component="print">
+    Which of these geometrical objects
+    best describes the span of these two vectors?
+    </p>
     <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
       <li>A parabola</li>
       <li>A circle</li>
     </ol>
-      </p>
   </task>
 </activity>
 
 <activity estimated-time='5'>
     <statement>
-        <p>
+        <p component="html">
     Sketch a representation of all the vectors belonging to
     <m>\vspan\left\{\left[\begin{array}{c}6\\-4\end{array}\right],
      \left[\begin{array}{c}-3\\2\end{array}\right]\right\}</m>
     in the <m>xy</m> plane, or adapt the code in the previous
     activity to illustrate this span.
       </p>
+        <p component="print">
+    Sketch a representation of all the vectors belonging to
+    <m>\vspan\left\{\left[\begin{array}{c}6\\-4\end{array}\right],
+     \left[\begin{array}{c}-3\\2\end{array}\right]\right\}</m>
+    in the <m>xy</m> plane.
+    </p>
       <p>
     Which of these geometrical objects
     best describes the span of these two vectors?
-    <ol marker="A.">
+      </p>
+    <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
       <li>A parabola</li>
       <li>A cube</li>
     </ol>
-        </p>
     </statement>
 </activity>
 
@@ -286,7 +296,7 @@ x_3\left[\begin{array}{c}1\\0\\-3\end{array}\right]=0</m>
   </task>
 </activity>
 
-<sage language="octave"/>
+<sage language="octave" component="html"/>
 
     <observation>
             <p>
@@ -351,7 +361,7 @@ The following are all equivalent statements:
         </answer> -->
 </activity>
 
-<sage language="octave"/>
+<sage language="octave" component="html"/>
 
  <activity estimated-time="10">
     <introduction>
@@ -376,7 +386,7 @@ The following are all equivalent statements:
         </answer> -->
   </activity>
 
-<sage language="octave"/>
+<sage language="octave" component="html"/>
 
 <!-- <activity estimated-time='10'>
     <introduction>
@@ -497,10 +507,11 @@ b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
 a,b\in\IR
 }
 </me>
-is a set containing infinitely-many vectors. See the below
+is a set containing infinitely-many vectors. </p>
+<p component="html">See the below
 Sage cell for an illustration.
   </p>
-<sage language="sage">
+<sage language="sage" component="html">
 <input>
 <xi:include href="./code/ev1-remark-span.sage" parse="text" />
 </input>

@@ -209,7 +209,7 @@ Let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear transformation with the foll
       </statement>
     </task>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 <observation xml:id="observation-kernel-homogeneous-solution">
@@ -247,7 +247,7 @@ Find a basis for the kernel of <m>T</m>.
         </p>
     </statement>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 
@@ -503,7 +503,7 @@ In general, an arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\un
       </statement>
   </task>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 <observation>
@@ -589,7 +589,7 @@ Find a basis for the kernel and a basis for the image of <m>T</m>.
         </p>
     </statement>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 <activity estimated-time='5'>
@@ -696,7 +696,7 @@ The dimension of the image is called the <term>rank</term> of <m>T</m> (or <m>A<
     </answer> -->
   </task>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 </subsection>
@@ -770,7 +770,7 @@ Given a matrix <m>M</m>
         </p>
       </li>
     </ol>
-    <sage language="octave">
+    <sage language="octave" component="html">
 <input></input>
 </sage>
     </task>
@@ -791,7 +791,7 @@ Given a matrix <m>M</m>
         </p>
       </li>
     </ol>
-    <sage language="octave">
+    <sage language="octave" component="html">
 <input></input>
 </sage>
     </task>
@@ -813,7 +813,7 @@ Are the row space and column space of <m>N</m> both equal to <m>\mathbb{R}^3</m>
         </p>
       </li>
     </ol>
-    <sage language="octave">
+    <sage language="octave" component="html">
 <input></input>
 </sage>
     </task>
