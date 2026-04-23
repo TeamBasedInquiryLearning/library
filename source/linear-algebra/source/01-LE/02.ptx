@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="LE2" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Row Reduction of Matrices (LE2)</title>
+    <title component="html">Row Reduction of Matrices (LE2)</title>
+    <title component="print">Row Reduction of Matrices</title>
     <objectives>
         <ul>
             <li>
@@ -944,7 +945,7 @@ rref(A)
             </statement></exploration>
     </subsection>
     
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-LE2"/>.

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="LE4" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Linear Systems with Infinitely-Many Solutions (LE4)</title>
+    <title component="print">Linear Systems with Infinitely Many Solutions (LE4)</title>
+    <title component="html">Linear Systems with Infinitely Many Solutions</title>
     <objectives>
         <ul>
             <li>
@@ -437,7 +438,7 @@ Explain how to describe this solution set using set notation.
 <li> Suppose that a linear system has five equations and three unknowns and that the coefficient matrix has a pivot in every column. Then the linear system is consistent and has a unique solution.</li></ul></p></statement></exploration>
     </subsection>    
     
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-LE4"/>.

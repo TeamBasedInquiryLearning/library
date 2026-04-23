@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="AT3" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Image and Kernel (AT3)</title>
+    <title component="html">Image and Kernel (AT3)</title>
+    <title component="print">Image and Kernel</title>
     <objectives>
         <ul>
             <li>
@@ -887,7 +888,7 @@ Let <m>\{\vec{v_1},\vec{v_2},\ldots,\vec{v_n}\}</m> be a set of vectors in <m>V<
                 </p>
     </exploration>
     </subsection>
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-AT3"/>.

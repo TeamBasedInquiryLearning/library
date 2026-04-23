@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="EV2" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Spanning Sets (EV2)</title>
+    <title component="html">Spanning Sets (EV2)</title>
+    <title component="print">Spanning Sets</title>
     <objectives>
         <ul>
             <li>
@@ -556,7 +557,7 @@ Given no additional information about the vectors <m>\vec{v}_1,\dots, \vec{v}_m<
         </p>
     </exploration>
     </subsection>
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-EV2"/>.

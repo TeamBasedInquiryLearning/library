@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="MX2" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>The Inverse of a Matrix (MX2)</title>
+    <title component="html">The Inverse of a Matrix (MX2)</title>
+    <title component="print">The Inverse of a Matrix</title>
     <objectives>
         <ul>
             <li>
@@ -545,7 +546,7 @@ Is the matrix <m>\left[\begin{array}{ccc} 2 &amp; 3 &amp; 1 \\ -1 &amp; -4 &amp;
          </exploration>
      
     </subsection>
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-MX2"/>.

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="EV7" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Homogeneous Linear Systems (EV7)</title>
+    <title component="html">Homogeneous Linear Systems (EV7)</title>
+    <title component="print">Homogeneous Linear Systems</title>
     <objectives>
         <ul>
             <li>
@@ -476,7 +477,7 @@ Prove that, for any column vector <m>\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ 
                 </p>
     </exploration>
     </subsection>
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-EV7"/>.

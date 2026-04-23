@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="EV3" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Subspaces (EV3)</title>
+    <title component="html">Subspaces (EV3)</title>
+    <title component="print">Subspaces</title>
     <objectives>
         <ul>
             <li>
@@ -1113,7 +1114,7 @@ Is it possible that there is a subset of <m>V</m> containing fewer vectors than 
 </p></exploration>
     </subsection>
     
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-EV3"/>.

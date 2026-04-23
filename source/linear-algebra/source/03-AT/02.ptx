@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="AT2" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Standard Matrices (AT2)</title>
+    <title component="html">Standard Matrices (AT2)</title>
+    <title component="print">Standard Matrices</title>
     <objectives>
         <ul>
             <li>
@@ -749,7 +750,7 @@ Prove that each transformation is linear, and that your matrix representations a
                 </p>
     </exploration>
     </subsection>
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-AT2"/>.

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <section xml:id="AT1" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Linear Transformations (AT1)</title>
+    <title component="html">Linear Transformations (AT1)</title>
+    <title component="print">Linear Transformations</title>
     <objectives>
         <ul>
             <li>
@@ -787,7 +788,7 @@ and <m>T(cf(x))=cT(f(x))</m>.
     </exploration>
     </subsection>
     
-    <subsection>
+    <subsection component="html">
         <title>Sample Problem and Solution</title>
         <p>
             Sample problem <xref ref="sample-AT1"/>.
