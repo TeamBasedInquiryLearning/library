@@ -84,7 +84,7 @@ the set of all vectors that transform into <m>\vec 0</m>?
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{z}</m> be the additive
-identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx><idx><h>linear transformation</h><h>kernel</h></idx>of <m>T</m>
+identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx>of <m>T</m>
 (also known as the <term>null space</term><idx>null space</idx> of <m>T</m>)
 is an important subspace of <m>V</m> defined by
 <me>
@@ -295,7 +295,7 @@ Which of these subspaces of <m>\IR^3</m> describes the set of all vectors that a
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation.
-The <term>image</term><idx>image</idx><idx><h>linear transformation</h><h>image</h></idx> of <m>T</m>
+The <term>image</term><idx>image</idx> of <m>T</m>
 is an important subspace of <m>W</m> defined by
 <me>
 \Im T = \left\{ \vec{w} \in W\ \big|\ \text{there is some }\vec v\in V \text{ with } T(\vec{v})=\vec{w}\right\}
@@ -664,7 +664,7 @@ The dimension of the domain of <m>T</m> equals <m>\dim(\ker T)+\dim(\Im T)</m>.
         </p>
         </blockquote>
         <p>
-The dimension of the image is called the <term>rank</term><idx>rank</idx><idx><h>linear transformation</h><h>rank</h></idx> of <m>T</m> (or <m>A</m>) and the dimension of the kernel is called the <term>nullity</term><idx>nullity</idx><idx><h>linear transformation</h><h>nullity</h></idx>. 
+The dimension of the image is called the <term>rank</term><idx><h>rank</h><h>of a linear transformation</h></idx> of <m>T</m> (or <m>A</m>) and the dimension of the kernel is called the <term>nullity</term><idx>nullity</idx>. 
         </p>
 </observation>
 

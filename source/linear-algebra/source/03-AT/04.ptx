@@ -39,7 +39,7 @@
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation.
-<m>T</m> is called <term>injective</term><idx>injective</idx><idx><h>linear transformation</h><h>injective</h></idx> or <term>one-to-one</term> if <m>T</m> does not map two
+<m>T</m> is called <term>injective</term><idx>injective</idx> or <term>one-to-one</term><idx><seealso>injective</seealso></idx> if <m>T</m> does not map two
 distinct vectors to the same place.  More precisely, <m>T</m> is injective if
 <m>T(\vec{v}) \neq T(\vec{w})</m> whenever <m>\vec{v} \neq \vec{w}</m>.
         </p>
@@ -208,7 +208,7 @@ Is <m>T</m> injective?
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation.
-<m>T</m> is called <term>surjective</term><idx>surjective</idx><idx><h>linear transformation</h><h>surjective</h></idx> or <term>onto</term> if every element of <m>W</m> is mapped to by an element of <m>V</m>.  More precisely, for every <m>\vec{w} \in W</m>, there is some <m>\vec{v} \in V</m> with <m>T(\vec{v})=\vec{w}</m>.
+<m>T</m> is called <term>surjective</term><idx>surjective</idx> or <term>onto</term><idx><seealso>surjective</seealso></idx> if every element of <m>W</m> is mapped to by an element of <m>V</m>.  More precisely, for every <m>\vec{w} \in W</m>, there is some <m>\vec{v} \in V</m> with <m>T(\vec{v})=\vec{w}</m>.
         </p>
     <figure>
 		<caption>A surjective transformation and a non-surjective transformation</caption>

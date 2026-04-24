@@ -108,7 +108,7 @@ Let <m>T: \IR^n \rightarrow \IR^n</m> be a linear bijection with standard matrix
         </p>
         <p>
 By item (B) from <xref ref="MX2-card-sort"/>
-we may define an <term>inverse map</term><idx>inverse map</idx><idx><h>linear transformation</h><h>invertible</h></idx>
+we may define an <term>inverse map</term><idx>inverse map</idx><idx><h>invertible</h><h>linear transformation</h></idx>
 <m>T^{-1} : \IR^n \rightarrow \IR^n</m> 
 that defines <m>T^{-1}(\vec b)</m> as the unique solution <m>\vec x</m> satisfying
 <m>T(\vec x)=\vec b</m>, that is, <m>T(T^{-1}(\vec b))=\vec b</m>.
@@ -118,7 +118,7 @@ Furthermore, let
 <me>A^{-1}=[T^{-1}(\vec e_1)\hspace{1em}\cdots\hspace{1em}T^{-1}(\vec e_n)]</me>
 be the standard matrix for <m>T^{-1}</m>. We call <m>A^{-1}</m> the
 <term>inverse matrix</term><idx>inverse matrix</idx> of <m>A</m>,
-and we also say that <m>A</m> is an <term>invertible</term><idx>invertible</idx><idx><h>matrix</h><h>invertible</h></idx>
+and we also say that <m>A</m> is an <term>invertible</term><idx><h>invertible</h><h>matrix</h></idx>
 matrix.
         </p>
     </statement>

@@ -244,7 +244,7 @@ that equals the vector
 <definition>
     <statement>
         <p>
-  The <term>standard basis</term><idx><h>basis</h><h>standard</h></idx><idx>standard basis</idx> of <m>\IR^n</m> is the set <m>\{\vec{e}_1, \ldots, \vec{e}_n\}</m> where
+  The <term>standard basis</term><idx><h>standard</h><h>basis</h></idx> of <m>\IR^n</m> is the set <m>\{\vec{e}_1, \ldots, \vec{e}_n\}</m> where
             <md>
                 <mrow>
   \vec{e}_1 &amp;= \left[\begin{array}{c}1 \\ 0 \\ 0 \\ \vdots \\ 0 \\  0 \end{array}\right] &amp;
@@ -563,7 +563,7 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
             </p>
             <p>
   That is, a basis for <m>\IR^n</m> must have exactly <m>n</m> vectors and
-  its square matrix must row-reduce to the so-called <term>identity matrix</term><idx>identity matrix</idx><idx><h>matrix</h><h>identity</h></idx>
+  its square matrix must row-reduce to the so-called <term>identity matrix</term><idx>identity matrix</idx>
   containing all zeros except for a downward diagonal of ones.
   (We will learn where the identity matrix gets its name in a later module.)
             </p>
