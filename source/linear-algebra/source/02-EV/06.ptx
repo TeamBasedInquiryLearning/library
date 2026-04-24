@@ -212,21 +212,28 @@ T=\left\{
   Even though we found different bases for them,
   <m>\vspan S</m> and <m>\vspan T</m> are exactly the same subspace of <m>\IR^4</m>,
   since
-  <me>
-    S=\left\{
-    \left[\begin{array}{c}2\\3\\0\\1\end{array}\right],
-    \left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
-    \left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
-    \left[\begin{array}{c}1\\5\\-1\\0\end{array}\right]
-    \right\}
-      =
-    \left\{
-    \left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
-    \left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
-    \left[\begin{array}{c}1\\5\\-1\\0\end{array}\right],
-    \left[\begin{array}{c}2\\3\\0\\1\end{array}\right]
-    \right\}=T
-  </me>.
+  <md>
+    <mrow>
+      S\amp=\left\{
+      \left[\begin{array}{c}2\\3\\0\\1\end{array}\right],
+      \left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+      \left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+      \left[\begin{array}{c}1\\5\\-1\\0\end{array}\right]
+      \right\}
+    </mrow>
+    <mrow>
+        \amp=
+      \left\{
+      \left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+      \left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+      \left[\begin{array}{c}1\\5\\-1\\0\end{array}\right],
+      \left[\begin{array}{c}2\\3\\0\\1\end{array}\right]
+      \right\}
+    </mrow>
+    <mrow>
+      \amp=T
+    </mrow>
+  </md>.
         </p>
         <p>
 Thus a given basis for a subspace need not be unique.
@@ -253,7 +260,7 @@ Thus a given basis for a subspace need not be unique.
       \left[\begin{array}{c}0\\1\\0\end{array}\right],
       \left[\begin{array}{c}1\\1\\1\end{array}\right]
     }
-      \text{ and }
+      \text{ and }</me><me>
     \setList{
       \left[\begin{array}{c}1\\0\\-3\end{array}\right],
       \left[\begin{array}{c}2\\-2\\1\end{array}\right],
