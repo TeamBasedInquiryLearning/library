@@ -148,6 +148,7 @@
       format="pdf"
       source="linear-algebra/source/main.ptx"
       publication="publication-619.ptx"
+      xsl="print.xsl"
       output-filename="TBIL-Linear-Algebra-619.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
