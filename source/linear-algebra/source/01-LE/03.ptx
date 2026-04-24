@@ -111,7 +111,7 @@ How many solutions must this system have?
   </task>
 </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 <input>
 A = [ 3 -2 13  6
       2 -2 10  2
@@ -182,7 +182,7 @@ How many solutions must this system have?
   </task>
 </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 <input>rref([3,-2,13,6;2,-2,10,2;-1,0,-3,1;3,7,0,-2])</input>
 </sage>
 
@@ -251,7 +251,7 @@ How many solutions must this system have?
   </task>
 </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
 <fact xml:id="LE3-fact-scenarios">
@@ -399,7 +399,7 @@ different solutions. We'll learn how to find such solution sets in
     </task>
   </activity>
 
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
     </subsection>
 

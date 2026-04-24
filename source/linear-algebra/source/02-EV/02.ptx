@@ -205,7 +205,7 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
                 <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
                 \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
             </p>
-            <sage language="octave">
+            <sage language="octave" component="html">
             </sage>
         </statement>
         <answer>
@@ -237,7 +237,7 @@ vector can't fail to belong.
                 <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
                 \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
             </p>
-            <sage language="octave">
+            <sage language="octave" component="html">
             </sage>
         </statement>
         <answer>
@@ -253,7 +253,7 @@ The vector belongs to the span.
                 <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
                 \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
             </p>
-            <sage language="octave">
+            <sage language="octave" component="html">
             </sage>
         </statement>
         <answer>
@@ -262,7 +262,7 @@ The vector does not belong to the span.
             </p>
         </answer>
     </task>
-    <task>
+    <task component="html">
         <statement>
             <p>
 Fix the SageMath code below to visualize
@@ -392,71 +392,9 @@ D.
         </p>
   </task>
 </activity>
-<sage language="octave">
+<sage language="octave" component="html">
 </sage>
 
-
-<!-- <activity estimated-time='10'>
-    <introduction>
-        <p>
-  Consider the set of third-degree polynomials 
-            <md>
-                <mrow>
-  S=\{
-  &amp;2x^3+3x^2-1,
-  2x^3+3,
-  3x^3+13x^2+7x+16,
-                </mrow>
-                <mrow>
-  &amp;-x^3+10x^2+7x+14,
-  4x^3+3x^2+2 \} .
-                </mrow>
-            </md>
-            and the question
-            <q>
-  Does
-  <m>\P_3=\vspan S</m>?
-            </q>
-        </p>
-    </introduction>
-  <task><p>Rewrite this question to be about the solutions to a polynomial equation.
-      </p>
-  </task>
-  <task>
-      <p>
-      Answer your new question, and use this to answer the original question.
-      </p>
-  </task>
-</activity>
-<sage language="octave">
-</sage>
-
-
-<activity estimated-time='5'>
-    <introduction>
-    <p>
-Consider the set of matrices
-<me> S = \left\{
-    \left[\begin{array}{cc} 1 &amp; 3 \\ 0 &amp; 1 \end{array}\right],
-    \left[\begin{array}{cc} 1 &amp; -1 \\ 1 &amp; 0 \end{array}\right],
-    \left[\begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 2 \end{array}\right]
-    \right\} </me>
-and the question <q>Does <m>M_{2,2} = \vspan S</m>?</q>
-    </p>
-    </introduction>
-  <task>
-      <p>
-      Rewrite this as a question about the solutions to a matrix equation.
-      </p>
-  </task>
-  <task>
-      <p>
-      Answer your new question, and use this to answer the original question.
-      </p>
-  </task>
-</activity>
-<sage language="octave">
-</sage> -->
 
 
 <activity estimated-time='5'>

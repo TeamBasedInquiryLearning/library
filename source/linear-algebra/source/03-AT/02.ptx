@@ -501,7 +501,7 @@ to the variable <c>v</c>, then compute <c>A*v</c>.
         </p>
     </statement>
     <answer>
-<sage language="octave">
+<sage language="octave" component="html">
     <input>
 format rat
 A = [
@@ -553,7 +553,7 @@ T\left(\left[\begin{array}{c} -2 \\ 5 \end{array}\right]\right)
     </answer>
 </task>
 </activity>
-<sage language="octave"/>
+<sage language="octave" component="html"/>
 
 
 <activity>
@@ -574,7 +574,7 @@ T\left(\left[\begin{array}{c} -2 \\ 5 \end{array}\right]\right)
       <p>Compute <m>T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)</m> using technology.</p>
     </statement>
     <answer>
-<sage language="octave">
+<sage language="octave" component="html">
     <input>
 format rat
 A = [
