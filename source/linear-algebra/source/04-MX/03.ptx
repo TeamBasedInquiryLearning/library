@@ -145,7 +145,7 @@
 <definition xml:id="def-change-of-basis">
     <statement>
         <p>
-            Given a basis <m>\mathcal{B}=\setList{\vec{b}_1,\dots, \vec{b}_n}</m> of <m>\IR^n</m> and corresponding matrix <m>B=\begin{bmatrix}\vec b_1&amp;\cdots&amp;\vec b_n\end{bmatrix}</m>, the <term>change of basis/coordinate</term> transformation <em>from</em> the standard basis <em>to</em> <m>\mathcal{B}</m> is the transformation <m>C_\mathcal{B}\colon\IR^n\to\IR^n</m> defined by the property that, for any vector <m>\vec{v}\in\IR^n</m>, the vector <m>C_\mathcal{B}(\vec{v})</m> describes the unique way to write
+            Given a basis <m>\mathcal{B}=\setList{\vec{b}_1,\dots, \vec{b}_n}</m> of <m>\IR^n</m> and corresponding matrix <m>B=\begin{bmatrix}\vec b_1&amp;\cdots&amp;\vec b_n\end{bmatrix}</m>, the <term>change of basis/coordinate</term><idx>change of basis</idx> transformation <em>from</em> the standard basis <em>to</em> <m>\mathcal{B}</m> is the transformation <m>C_\mathcal{B}\colon\IR^n\to\IR^n</m> defined by the property that, for any vector <m>\vec{v}\in\IR^n</m>, the vector <m>C_\mathcal{B}(\vec{v})</m> describes the unique way to write
             <m>\vec v</m> in terms of the basis, that is,
             the unique solution to the vector equation:
             <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n</md>.

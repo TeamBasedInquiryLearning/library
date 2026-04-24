@@ -258,7 +258,7 @@ How many solutions must this system have?
     <statement>
       <p>
 By finding <m>\RREF(A)</m> from a linear system's corresponding augmented matrix <m>A</m>,
-we can immediately tell how many solutions the system has.
+we can immediately tell how many solutions the system has. <idx>consistent linear system</idx><idx>inconsistent linear system</idx><idx><h>solution</h><h>set</h></idx>
       <ul>
           <li>
               <p>
@@ -467,7 +467,7 @@ different solutions. We'll learn how to find such solution sets in
         <title>Mathematical Writing Explorations</title>
                 <exploration>
             <statement>
-                <p> A system of equations with all constants equal to 0 is called <term> homogeneous</term>. These are addressed in detail in section <xref ref="EV7"></xref>
+                <p> A system of equations with all constants equal to 0 is called <term> homogeneous</term><idx>homogeneous</idx>. These are addressed in detail in section <xref ref="EV7"></xref>
                 <ul>
                     <li> Choose three systems of equations from this chapter that you have already solved. Replace the constants with 0 to make the systems homogeneous. Solve the homogeneous systems and make a conjecture about the relationship between the earlier solutions you found and the associated homogeneous systems.
                     </li>

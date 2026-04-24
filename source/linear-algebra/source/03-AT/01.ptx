@@ -51,7 +51,7 @@
 <definition xml:id="AT1-definition-map">
     <statement>
         <p>
-A <term>linear transformation</term> <idx>linear transformation</idx>(also called a <term>linear map</term>)
+A <term>linear transformation</term> <idx><h>linear</h><h>transformation</h></idx>(also called a <term>linear map</term>)
 is a map between vector spaces that preserves the vector space operations.
 More precisely, if <m>V</m> and <m>W</m> are vector spaces, a map
 <m>T:V\rightarrow W</m> is called a linear transformation if
@@ -79,8 +79,8 @@ can be applied before or after the transformation without affecting the result.
     <statement>
         <p>
 Given a linear transformation <m>T:V\to W</m>,
-<m>V</m> is called the <term>domain</term> of <m>T</m> and
-<m>W</m> is called the <term>co-domain</term> of <m>T</m>.
+<m>V</m> is called the <term>domain</term><idx><h>domain</h></idx> of <m>T</m> and
+<m>W</m> is called the <term>co-domain</term><idx><h>co-domain</h></idx> of <m>T</m>.
         </p>
     <figure>
     <caption>A linear transformation with a domain of <m>\IR^3</m> and a co-domain of <m>\IR^2</m></caption>

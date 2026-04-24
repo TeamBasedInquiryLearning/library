@@ -175,7 +175,7 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
 <definition xml:id="EV5-definition-basis">
     <statement>
         <p>
-        A <term>basis</term><idx> basis </idx> of a vector space <m>V</m> is a set of vectors <m>S</m> contained in <m>V</m> for which 
+        A <term>basis</term><idx><h>basis</h><h sortby="vector space">of a vector space</h></idx> of a vector space <m>V</m> is a set of vectors <m>S</m> contained in <m>V</m> for which 
         <ol>
             <li>
                 <p>
@@ -244,7 +244,7 @@ that equals the vector
 <definition>
     <statement>
         <p>
-  The <term>standard basis</term><idx><h>basis</h></idx><idx>standard</idx> of <m>\IR^n</m> is the set <m>\{\vec{e}_1, \ldots, \vec{e}_n\}</m> where
+  The <term>standard basis</term><idx><h>standard</h><h>basis</h></idx> of <m>\IR^n</m> is the set <m>\{\vec{e}_1, \ldots, \vec{e}_n\}</m> where
             <md>
                 <mrow>
   \vec{e}_1 &amp;= \left[\begin{array}{c}1 \\ 0 \\ 0 \\ \vdots \\ 0 \\  0 \end{array}\right] &amp;

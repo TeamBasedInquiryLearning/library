@@ -84,7 +84,7 @@ the set of all vectors that transform into <m>\vec 0</m>?
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{z}</m> be the additive
-identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx> of <m>T</m>
+identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx>of <m>T</m>
 (also known as the <term>null space</term><idx>null space</idx> of <m>T</m>)
 is an important subspace of <m>V</m> defined by
 <me>
@@ -225,7 +225,7 @@ Let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear transformation with the foll
     <p>
       In particular, the kernel is a subspace of the transformation's
       domain, and has a basis which may be found as in
-      <xref ref="fact-solution-space-basis"/>:
+      <xref ref="fact-solution-space-basis"/>: <idx><h>basis</h><h sortby="kernel">of a kernel</h></idx>
       <me>
         \ker T=\left\{\left[\begin{array}{c}3a\\-2a\\a\end{array}\right]\middle|
           a\in\IR\right\} \hspace{2em}
@@ -532,7 +532,7 @@ spans <m>\Im T</m>, we can obtain a basis for <m>\Im T</m> by finding
     =
   \left[\begin{array}{cccc} 1 &amp; 0 &amp; 1 &amp; -1\\ 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
 </m>
-and only using the vectors corresponding to pivot columns:
+and only using the vectors corresponding to pivot columns: <idx><h>basis</h><h sortby="image">of an image</h></idx>
 <me>
   \setList{
     \left[\begin{array}{c}3\\-1\\2\end{array}\right],
@@ -656,7 +656,7 @@ Which of the following is equal to the dimension of the image of <m>T</m>?
 
 <observation>
         <p>
-Combining these with the observation that the number of columns is the dimension of the domain of <m>T</m>, we have the <term>rank-nullity theorem</term>:
+Combining these with the observation that the number of columns is the dimension of the domain of <m>T</m>, we have the <term>rank-nullity theorem</term><idx>rank-nullity theorem</idx>:
         </p>
         <blockquote>
         <p>
@@ -664,7 +664,7 @@ The dimension of the domain of <m>T</m> equals <m>\dim(\ker T)+\dim(\Im T)</m>.
         </p>
         </blockquote>
         <p>
-The dimension of the image is called the <term>rank</term> of <m>T</m> (or <m>A</m>) and the dimension of the kernel is called the <term>nullity</term>. 
+The dimension of the image is called the <term>rank</term><idx><h>rank</h><h>of a linear transformation</h></idx> of <m>T</m> (or <m>A</m>) and the dimension of the kernel is called the <term>nullity</term><idx>nullity</idx>. 
         </p>
 </observation>
 
@@ -744,11 +744,11 @@ The dimension of the image is called the <term>rank</term> of <m>T</m> (or <m>A<
   <activity>
 <statement><p>
 We can use our notation of span in relation to a matrix, not just in relation to a set of vectors.
-Given a matrix <m>M</m>
+Given a matrix <m>M</m><idx>column space</idx><idx><h>row</h><h>space</h></idx>
 <ul>
-<li>the span of the set of all columns is the <term>column space</term><idx>column space</idx></li>
+<li>the span of the set of all columns is the <term>column space</term></li>
 
-<li>the span of the set of all rows is the <term>row space</term><idx>row space</idx></li>
+<li>the span of the set of all rows is the <term>row space</term></li>
     </ul></p>
 <p>
     <me>\mbox{Let } M = \left[\begin{array}{ccc|c}1&amp;-1&amp;0\\2&amp;2&amp;4\\-1&amp;0&amp;-1\end{array}\right]

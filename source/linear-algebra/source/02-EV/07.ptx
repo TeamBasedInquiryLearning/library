@@ -274,7 +274,7 @@ Find a basis for this solution space.
         \left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
     }
   </me>
-  is a basis for the solution space.
+is a basis for the solution space.<idx><h>basis</h><h sortby="solution space">of a solution space</h></idx>
     </p>
     </statement>
 </fact>
@@ -458,7 +458,7 @@ shape of the data that gets projected onto this single point of the screen?
 <subsection>    
     <title>Mathematical Writing Explorations</title>
             <exploration xml:id="non-singular">
-               <p> An <m>n \times n</m> matrix <m>M</m> is <term>non-singular</term><idx>non-singular</idx> if the associated homogeneous system with coefficient matrix <m>M</m> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.
+               <p> An <m>n \times n</m> matrix <m>M</m> is <term>non-singular</term><idx>non-singular matrix</idx> if the associated homogeneous system with coefficient matrix <m>M</m> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.
                      
 <ul>
 <li>Prove that the reduced row echelon form of <m>M</m> is the identity matrix.

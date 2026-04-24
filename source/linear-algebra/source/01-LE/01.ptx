@@ -76,7 +76,7 @@ with <m>m</m> rows and <m>n</m> columns:
 \left[\begin{array}{cccc} \vec v_1 &amp; \vec v_2 &amp; \cdots &amp; \vec v_n\end{array}\right]
 </me>.
 Frequently we will use matrices to describe an ordered list of
-its <term>column vectors</term>:
+its <term>column vectors</term><idx>vector</idx>:
 <me>
     \left[\begin{array}{c}
       a_{11}  \\
@@ -127,7 +127,7 @@ When order is irrelevant, we will use set notation:
     <definition>
         <statement>
             <p>
-A <term>Euclidean vector</term><idx>Euclidean vector</idx><idx><h>vector</h><h>Euclidean</h></idx> is an ordered
+A <term>Euclidean vector</term><idx><h>Euclidean</h><h>vector</h></idx> is an ordered
 list of real numbers
 <me>
   \left[\begin{array}{c}
@@ -260,13 +260,13 @@ Following are some examples of addition and scalar multiplication in <m>\mathbb 
     <definition>
         <statement>
             <p>
-A <term>linear equation</term><idx>linear equation</idx> is an equation of the variables <m>x_i</m> of the form
+A <term>linear equation</term><idx><h>linear</h><h>equation</h></idx> is an equation of the variables <m>x_i</m> of the form
 <me>
 a_1x_1+a_2x_2+\dots+a_nx_n=b
 </me>.
             </p>
             <p>
-                A <term>solution</term><idx><h>linear equation</h><h>solution</h></idx> for a linear equation is a Euclidean vector
+                A <term>solution</term><idx><h>solution</h><h>of a linear equation</h></idx> for a linear equation is a Euclidean vector
 <me>
   \left[\begin{array}{c}
     s_1 \\
@@ -298,7 +298,7 @@ variables, we will often write our variables as <m>x_i</m>, and assume
 <statement>
     <p>
         A <term>system of linear equations</term>
-        <idx>system of linear equations</idx><idx>linear system</idx> (or a <term>linear system</term> for short)
+        <idx>system of linear equations</idx><idx><h>linear</h><h>system</h></idx> (or a <term>linear system</term> for short)
 is a collection of one or more linear equations.
         <md alignment="alignat" alignat-columns="5">
             <mrow>
@@ -315,7 +315,7 @@ is a collection of one or more linear equations.
             </mrow>
         </md>
     </p><p>
-        Its <term>solution set</term><idx>solution set</idx> is given by
+        Its <term>solution set</term><idx><h>solution</h><h>set</h></idx> is given by
 <me>
   \setBuilder
   {
@@ -340,7 +340,7 @@ is a collection of one or more linear equations.
 <remark>
     <p>
   When variables in a large linear system are missing, we prefer to
-  write the system in one of the following standard forms:
+  write the system in one of the following standard forms:<idx><h>standard</h><h>form of a linear system</h></idx>
     </p>
     <sidebyside widths="33% 33% 33%" margins="auto" valign="middle">
         <p>
@@ -415,9 +415,9 @@ is equivalent to the system of equations
     <definition>
         <statement>
             <p>
-A linear system is <term>consistent</term><idx><h>linear system</h><h>consistent</h></idx> if its solution set
+A linear system is <term>consistent</term><idx><h>consistent linear system</h></idx> if its solution set
   is non-empty (that is, there exists a solution for the
-system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>inconsistent</h></idx>
+system). Otherwise it is <term>inconsistent</term>.<idx><h>inconsistent linear system</h></idx>
             </p>
         </statement>
     </definition>
@@ -425,7 +425,7 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>linear system</h><h>i
     <fact xml:id="linearsystemsfact">
         <statement>
             <p>
-  All linear systems are one of the following:
+  All linear systems are one of the following:<idx>consistent linear system</idx><idx>inconsistent linear system</idx>
             <ol>
     <li><em>Consistent with one solution:</em>
           its solution set contains a single vector, e.g.
@@ -782,7 +782,7 @@ Then use these to describe the solution set
             Sometimes, we will find it useful to refer only to the coefficients of the linear system
             (and ignore its constant terms).
             We call the <m>m\times n</m> array consisting of these coefficients 
-            a <term>coefficient matrix</term><idx>coeefficient matrix</idx>.
+            a <term>coefficient matrix</term><idx>coefficient matrix</idx>.
             <me>
                 \left[\begin{array}{cccc}
                   a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\

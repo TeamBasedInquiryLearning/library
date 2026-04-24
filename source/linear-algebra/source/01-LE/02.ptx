@@ -360,7 +360,7 @@ solution set?
 <definition>
     <statement>
         <p>
-  The following three <term>row operations</term><idx>row operations</idx> produce equivalent
+  The following three <term>row operations</term><idx><h>row</h><h>operations</h></idx> produce equivalent
   augmented matrices.
   <ol>
 <li><p>
@@ -556,10 +556,10 @@ matrix to the next:
 <definition>
     <statement>
         <p>
-A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>Reduced row echelon form</idx> if
+A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>reduced row echelon form</idx> if <idx>pivot</idx>
 <ol>
 <li> The leftmost nonzero term of each row is 1.
-      We call these terms <term>pivots</term>.<idx>pivot</idx>
+      We call these terms <term>pivots</term>.
 </li>
 <li> Each pivot is to the right of every higher pivot.
 </li>
@@ -638,7 +638,7 @@ we use technology to do so.
 However, it is also important to understand the <term>Gauss-Jordan elimination</term><idx>Gauss-Jordan elimination</idx> algorithm
 that a computer or calculator uses to convert a matrix (augmented or not) into reduced row echelon form.
 Understanding this algorithm will help us better understand how to interpret the results
-in many applications we use it for in <xref ref="EV"/>.
+in many applications we use it for in <xref ref="EV"/>.<idx><h>row</h><h>reduction</h></idx>
     </p>
 </remark>
 
@@ -841,7 +841,7 @@ Select "Octave" for the Matlab-compatible syntax used by this text.
     <task>
         <p>
 Type <c>rref([1,4,6;2,5,7])</c> and then press the <kbd>Evaluate</kbd> button to compute the <m>\RREF</m> of 
-<m>\left[\begin{array}{ccc} 1 &amp; 4 &amp; 6 \\ 2 &amp; 5 &amp; 7 \end{array}\right]</m>.
+<m>\left[\begin{array}{ccc} 1 &amp; 4 &amp; 6 \\ 2 &amp; 5 &amp; 7 \end{array}\right]</m>.<idx><h>row</h><h>reduction</h></idx>
         </p>
     </task>
     <task>

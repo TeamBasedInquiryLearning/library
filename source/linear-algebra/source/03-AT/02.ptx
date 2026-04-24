@@ -286,7 +286,7 @@ to compute
 <fact>
     <statement>
         <p>
-Consider any basis <m>\{\vec b_1,\dots,\vec b_n\}</m> for <m>V</m>.  Since every
+Consider any basis <m>\{\vec b_1,\dots,\vec b_n\}</m> for <m>V</m>.<idx>basis</idx>  Since every
 vector <m>\vec v</m> can be written as a linear combination of
 basis vectors,  <m>\vec v = x_1\vec b_1+\dots+ x_n\vec b_n</m>, we may compute
 <m>T(\vec v)</m> as follows:
@@ -298,7 +298,7 @@ Therefore any linear transformation <m>T:V \rightarrow W</m> can be defined
 by just describing the values of <m>T(\vec b_i)</m>.
         </p>
         <p>
-Put another way, the images of the basis vectors completely <term>determine</term><idx>determine</idx> the transformation <m>T</m>.
+Put another way, the images of the basis vectors completely determine the transformation <m>T</m>.
         </p>
     </statement>
 </fact>
@@ -308,7 +308,7 @@ Put another way, the images of the basis vectors completely <term>determine</ter
         <p>
 Since a linear transformation <m>T:\IR^n\to\IR^m</m> is determined by its action on
 the standard basis <m>\{\vec e_1,\dots,\vec e_n\}</m>, it is convenient to
-store this information in an <m>m\times n</m> matrix, called the <term>standard matrix</term><idx>standard matrix</idx> of <m>T</m>, given by
+store this information in an <m>m\times n</m> matrix, called the <term>standard matrix</term><idx><h>standard</h><h>matrix</h></idx> of <m>T</m>, given by
 <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m>.
         </p>
         <p>
