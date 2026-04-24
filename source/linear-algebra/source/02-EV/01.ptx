@@ -125,10 +125,20 @@ we refer to this real number as a <term>scalar</term>.
   <task>
       <p>
     Sketch the four Euclidean vectors
-    <me>1\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}1\\2\end{array}\right],\hspace{1em}
+    <me component="html">1\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}1\\2\end{array}\right],\hspace{1em}
     3\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}3\\6\end{array}\right],\hspace{1em}
     0\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}0\\0\end{array}\right],\hspace{1em}
     -2\left[\begin{array}{c}1\\2\end{array}\right]=\left[\begin{array}{c}-2\\-4\end{array}\right]</me> 
+    <md component="print">
+      <mrow>
+        1\left[\begin{array}{c}1\\2\end{array}\right]\amp=\left[\begin{array}{c}1\\2\end{array}\right], \amp
+        3\left[\begin{array}{c}1\\2\end{array}\right]\amp=\left[\begin{array}{c}3\\6\end{array}\right],
+      </mrow>
+      <mrow>
+        0\left[\begin{array}{c}1\\2\end{array}\right]\amp=\left[\begin{array}{c}0\\0\end{array}\right],\amp
+        -2\left[\begin{array}{c}1\\2\end{array}\right]\amp\left[\begin{array}{c}-2\\-4\end{array}\right]
+      </mrow> 
+    </md>
     in the same <m>xy</m> plane by drawing an arrow to the <m>(x,y)</m> coordinate associated with each vector.
       </p>
   </task>
@@ -163,22 +173,51 @@ we refer to this real number as a <term>scalar</term>.
         </p>
     </introduction>
   <task>
-      <p>
+      <p component="html">
     Sketch the following five Euclidean vectors in the same <m>xy</m> plane.
-    <me>
-    1\left[\begin{array}{c}1\\2\end{array}\right]+
-    0\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown\hspace{2em}
-    0\left[\begin{array}{c}1\\2\end{array}\right]+
-    1\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown\hspace{2em}
-    1\left[\begin{array}{c}1\\2\end{array}\right]+
-    1\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown
-    </me>
-    <me>
-    -2\left[\begin{array}{c}1\\2\end{array}\right]+
-    1\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown\hspace{2em}
-    -1\left[\begin{array}{c}1\\2\end{array}\right]+
-    -2\left[\begin{array}{c}-1\\1\end{array}\right]=\unknown
-    </me>
+    <md>
+      <mrow>
+        1\left[\begin{array}{c}1\\2\end{array}\right]+
+        0\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown\amp
+        0\left[\begin{array}{c}1\\2\end{array}\right]+
+        1\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown\amp
+        1\left[\begin{array}{c}1\\2\end{array}\right]+
+        1\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown
+     </mrow>
+    </md>
+    <md>
+      <mrow>
+        -2\left[\begin{array}{c}1\\2\end{array}\right]+
+        1\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown\amp
+        -1\left[\begin{array}{c}1\\2\end{array}\right]+
+        -2\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown
+      </mrow>
+    </md>
+      </p>
+       <p component="print">
+    Sketch the following five Euclidean vectors in the same <m>xy</m> plane.
+    <md>
+      <mrow>
+        1\left[\begin{array}{c}1\\2\end{array}\right]+
+        0\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown\amp
+        0\left[\begin{array}{c}1\\2\end{array}\right]+
+        1\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown
+      </mrow>
+    </md>
+    <md>
+      <mrow>
+        1\left[\begin{array}{c}1\\2\end{array}\right]+
+        1\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown \amp
+        -2\left[\begin{array}{c}1\\2\end{array}\right]+
+        1\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown
+   .  </mrow>
+    </md>
+    <md>
+      <mrow> 
+        -1\left[\begin{array}{c}1\\2\end{array}\right]+
+        -2\left[\begin{array}{c}-1\\1\end{array}\right]\amp=\unknown
+      </mrow>
+    </md>
       </p>
   </task>
   <task>
