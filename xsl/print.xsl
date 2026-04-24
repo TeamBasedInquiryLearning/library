@@ -42,5 +42,11 @@
     </xsl:for-each>
   </xsl:template>
 
+  <!--Put definitions in boxes-->
+  <xsl:template match="definition" mode="tcb-style">
+    <xsl:text>colframe=black!30!white,</xsl:text>
+    <xsl:text>coltitle=black,</xsl:text>
+    <xsl:text>fonttitle=\bfseries,</xsl:text>
+  </xsl:template>
 
 </xsl:stylesheet>
