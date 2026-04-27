@@ -360,21 +360,24 @@ Then the standard matrix corresponding to <m>T</m> is
         <p>
   Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by
   <md>
+    <mrow>
     T\left(\vec e_1 \right)
-  =
+  \amp=
     \left[\begin{array}{c} 0 \\ 3 \\ -2\end{array}\right]
-  \hspace{1em}
+    \amp
     T\left(\vec e_2 \right)
-  =
+  \amp=
     \left[\begin{array}{c} -3 \\ 0 \\ 1\end{array}\right]
-  \hspace{1em}
+    </mrow>
+    <mrow>
     T\left(\vec e_3 \right)
-  =
+  \amp=
     \left[\begin{array}{c} 4 \\ -2 \\ 1\end{array}\right]
-  \hspace{1em}
+    \amp
     T\left(\vec e_4 \right)
-  =
+  \amp=
     \left[\begin{array}{c} 2 \\ 0 \\ 0\end{array}\right]
+    </mrow>
   </md>
 Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</m>.
         </p>
