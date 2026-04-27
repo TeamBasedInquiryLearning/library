@@ -29,7 +29,7 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
             <task>
                 <statement>
                     <p>
-                        Does "pizza" live inside of <m>\vspan(S)</m>?
+                        Does <q>pizza</q> live inside of <m>\vspan(S)</m>?
                     </p>
                 </statement>
             </task>
@@ -43,7 +43,7 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
             <task>
                 <statement>
                     <p>
-                        Can you think of a subset <m>S'</m> of <m>S</m> that is linearly independent and for which "pizza" is still in <m>\vspan{S'}</m>?
+                        Can you think of a subset <m>S'</m> of <m>S</m> that is linearly independent and for which <q>pizza</q> is still in <m>\vspan{S'}</m>?
                     </p>
                 </statement>
             </task>
@@ -189,8 +189,8 @@ In this analogy, a <em>recipe</em> was defined to be a list of amounts of each i
                 </p>
             </li>
         </ol>
-        These two properties may be expressed more succinctly as the statement "Every vector in <m>V</m> can be expressed
-        <em>uniquely</em> as a linear combination of the vectors in <m>S</m>".
+        These two properties may be expressed more succinctly as the statement <q>Every vector in <m>V</m> can be expressed
+        <em>uniquely</em> as a linear combination of the vectors in <m>S</m></q>.
         </p>
     </statement>
 </definition>
@@ -611,21 +611,21 @@ Not a basis, because not only does it fail to span <m>\IR^4</m>, it's also linea
             <task>
                 <statement>
                     <p>
-                        Give an example of such a set of items <m>S</m> that you would say "spans" everything you need, but is linearly dependent.
+                        Give an example of such a set of items <m>S</m> that you would say <q>spans</q> everything you need, but is linearly dependent.
                     </p>
                 </statement>
             </task>
             <task>
                 <statement>
                     <p>
-                        Give an example of such a set of items <m>S</m> that is linearly independent, but does not "span" everything you need.
+                        Give an example of such a set of items <m>S</m> that is linearly independent, but does not <q>span</q> everything you need.
                     </p>
                 </statement>
             </task>
             <task>
                 <statement>
                     <p>
-                        Give an example of such a set <m>S</m> that you might reasonably consider to be a "basis" for what you need?
+                        Give an example of such a set <m>S</m> that you might reasonably consider to be a <q>basis</q> for what you need?
                     </p>
                 </statement>
             </task>
