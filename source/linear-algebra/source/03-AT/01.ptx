@@ -600,10 +600,17 @@ space is or is not a subspace: <xref ref="EV3-subspace-check"/>.)
       <statement>
         <p> Consider the following maps of Euclidean vectors <m>P:\mathbb R^3\rightarrow\mathbb R^3</m> and 
           <m>Q:\mathbb R^3\rightarrow\mathbb R^3</m> defined by 
-          <me>P\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)= 
-            \left[\begin{array}{c} -2 \, x - 3 \, y - 3 \, z \\ 3 \, x + 4 \, y + 4 \, z \\ 3 \, x + 4 \, y + 5 \, z \end{array}\right] 
-            \hspace{1em} \text{and} \hspace{1em} Q\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)= 
-            \left[\begin{array}{c} x - 4 \, y + 9 \, z \\ y - 2 \, z \\ 8 \, y^{2} - 3 \, x z \end{array}\right].</me> 
+          <md>
+            <mrow>
+              P\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)\amp= 
+              \left[\begin{array}{c} -2 \, x - 3 \, y - 3 \, z \\ 3 \, x + 4 \, y + 4 \, z \\ 3 \, x + 4 \, y + 5 \, z \end{array}\right] 
+              \hspace{1em} \text{and}
+            </mrow>
+            <mrow>
+              Q\left( \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \right)\amp= 
+              \left[\begin{array}{c} x - 4 \, y + 9 \, z \\ y - 2 \, z \\ 8 \, y^{2} - 3 \, x z \end{array}\right]. 
+            </mrow>
+          </md>
             Which do you <em>suspect</em>?
             <ol marker="A." cols="2">
               <li>
