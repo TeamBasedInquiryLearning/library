@@ -78,7 +78,7 @@ and
 </m>.
 What is <m>T\left(\left[\begin{array}{c} 3 \\ 0 \\ 0 \end{array}\right]\right)</m>?
         </p>
-<ol marker="A." cols="2">
+<ol marker="A." cols="4">
 <li> <m>\left[\begin{array}{c} 6 \\ 3\end{array}\right]</m>
 </li>
 <li> <m>\left[\begin{array}{c} -9 \\ 6 \end{array}\right]</m>
@@ -108,7 +108,7 @@ and
 </m>.
 What is <m>T\left(\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right]\right)</m>?
         </p>
-<ol marker="A." cols="2">
+<ol marker="A." cols="4">
 <li>
     <p>
     <m>\left[\begin{array}{c} 2 \\ 1\end{array}\right]</m>
@@ -150,7 +150,7 @@ and
 </m>.
 What is <m>T\left(\left[\begin{array}{c} -2 \\ 0 \\ -3 \end{array}\right]\right)</m>?
         </p>
-<ol marker="A." cols="2">
+<ol marker="A." cols="4">
 <li>
     <p>
     <m>\left[\begin{array}{c} 2 \\ 1\end{array}\right]</m>
@@ -192,7 +192,7 @@ and
 </m>.
 What piece of information would help you compute <m>T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)</m>?
         </p>
-<ol marker="A." cols="2">
+<ol marker="A.">
 <li>
     <p>
     The value of <m>T\left(\left[\begin{array}{c} 0\\4\\0\end{array}\right]\right)=
@@ -230,55 +230,63 @@ create a spanning and linearly independent set along with
 to compute
 <m>T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)</m>:
 <md>
+  <mrow>
   T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
-  =
+  \amp=
   T\left(\left[\begin{array}{c}0\\4\\0\end{array}\right]\right)
   -
   T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
-  =
+  </mrow>
+  <mrow>
+    \amp=
   \left[\begin{array}{c} -4 \\ 16\end{array}\right]
   -
   \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
   =
   \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
-</md>
-<md>
+  </mrow>
+  <mrow>
   T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
-  =
+  \amp=
   4
   T\left(\left[\begin{array}{c}0\\1\\0\end{array}\right]\right)
   -
   T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
-  =
+  </mrow>
+  <mrow>
+  \amp=
   4
   \left[\begin{array}{c} -1 \\ 4\end{array}\right]
   -
   \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
   =
   \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
-</md>
-<md>
+  </mrow>
+  <mrow>
   T\left(\left[\begin{array}{c}0\\4\\-1\end{array}\right]\right)
-  =
+  \amp=
   4
   T\left(\left[\begin{array}{c}1\\1\\1\end{array}\right]\right)
   -5
   T\left(\left[\begin{array}{c}0\\0\\1\end{array}\right]\right)
   -4
   T\left(\left[\begin{array}{c}1\\0\\0\end{array}\right]\right)
-</md>
-<md>
-  =
+  </mrow>
+  <mrow>
+  \amp=
   4
   \left[\begin{array}{c} -2 \\ 7\end{array}\right]
   -5
   \left[\begin{array}{c} -3 \\ 2 \end{array}\right]
   -4
   \left[\begin{array}{c} 2 \\ 1 \end{array}\right]
-  =
+  </mrow>
+  <mrow>
+  \amp =
   \left[\begin{array}{c} -8+15-8 \\ 28-10-4 \end{array}\right]
   =
   \left[\begin{array}{c} -1 \\ 14 \end{array}\right]
+  </mrow>
 </md>
   </p>
 </observation>
@@ -315,19 +323,22 @@ store this information in an <m>m\times n</m> matrix, called the <term>standard 
 For example,
 let <m>T: \IR^3 \rightarrow \IR^2</m> be the linear map determined by
 the following values for <m>T</m> applied to the standard basis of <m>\IR^3</m>.
-<md>\scriptsize
+<md>
+  <mrow>
   T\left(\vec e_1 \right)
-=
+\amp=
   T\left(\left[\begin{array}{c} 1 \\ 0 \\ 0 \end{array}\right] \right)
 =
   \left[\begin{array}{c} 2 \\ 1\end{array}\right]
-\hspace{2em}
+ \amp 
   T\left(\vec e_2 \right)
-=
+\amp=
   T\left(\left[\begin{array}{c} 0 \\ 1 \\ 0 \end{array}\right] \right)
 =
   \left[\begin{array}{c} -1 \\ 4\end{array}\right]
-\hspace{2em}
+  </mrow>
+</md>
+<md>
   T\left(\vec e_3 \right)
 =
   T\left(\left[\begin{array}{c} 0 \\ 0 \\ 1 \end{array}\right] \right)
@@ -349,21 +360,24 @@ Then the standard matrix corresponding to <m>T</m> is
         <p>
   Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by
   <md>
+    <mrow>
     T\left(\vec e_1 \right)
-  =
+  \amp=
     \left[\begin{array}{c} 0 \\ 3 \\ -2\end{array}\right]
-  \hspace{1em}
+    \amp
     T\left(\vec e_2 \right)
-  =
+  \amp=
     \left[\begin{array}{c} -3 \\ 0 \\ 1\end{array}\right]
-  \hspace{1em}
+    </mrow>
+    <mrow>
     T\left(\vec e_3 \right)
-  =
+  \amp=
     \left[\begin{array}{c} 4 \\ -2 \\ 1\end{array}\right]
-  \hspace{1em}
+    \amp
     T\left(\vec e_4 \right)
-  =
+  \amp=
     \left[\begin{array}{c} 2 \\ 0 \\ 0\end{array}\right]
+    </mrow>
   </md>
 Write the standard matrix <m>[T(\vec e_1) \,\cdots\, T(\vec e_n)]</m> for <m>T</m>.
         </p>

@@ -120,7 +120,7 @@ A webpage distributes its importance equally among all the pages it links to
 Consider this small network with only three pages.  Let <m>x_1, x_2, x_3</m> be the importance of the three pages respectively.
         </p>
         <figure xml:id="fig-pagerank-3p-network">
-        <image width="75%" xml:id="pagerank-3p-network">
+        <image width="50%" xml:id="pagerank-3p-network">
             <latex-image>
 \begin{tikzpicture}
 \begin{scope}[every node/.style={circle,thick,draw}]
@@ -168,7 +168,7 @@ This corresponds to the <term>page rank system</term>:
 <observation>
     <statement>
         <figure>
-        <image width="75%"  xml:id="pagerank-3p-network2">
+        <image width="50%"  xml:id="pagerank-3p-network2">
             <latex-image>
 \begin{tikzpicture}
 \begin{scope}[every node/.style={circle,thick,draw}]

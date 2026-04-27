@@ -342,7 +342,7 @@ is a collection of one or more linear equations.
   When variables in a large linear system are missing, we prefer to
   write the system in one of the following standard forms:<idx><h>standard</h><h>form of a linear system</h></idx>
     </p>
-    <sidebyside widths="33% 33% 33%" margins="auto" valign="middle">
+    <sidebyside widths="33% 33% 33%" margins="auto" valign="middle" component="html">
         <p>
     Original linear system:
             <md alignment="alignat" alignat-columns="2">
@@ -357,6 +357,52 @@ is a collection of one or more linear equations.
                 </mrow>
             </md>
         </p>
+        <p>
+    Verbose standard form:
+            <md alignment="alignat" alignat-columns="4">
+                <mrow>
+      1x_1 &amp;\,+\,&amp; 0x_2 &amp;\,+\,&amp; 3x_3 &amp;\,=\,&amp; 3
+                </mrow>
+                <mrow>
+      3x_1 &amp;\,-\,&amp; 2x_2 &amp;\,+\,&amp; 4x_3 &amp;\,=\,&amp; 0
+                </mrow>
+                <mrow>
+      0x_1 &amp;\,-\,&amp; 1x_2 &amp;\,+\,&amp; 1x_3 &amp;\,=\,&amp; -2
+                </mrow>
+            </md>
+        </p>
+        <p>
+    Concise standard form:
+            <md alignment="alignat" alignat-columns="4">
+                <mrow>
+       x_1 &amp;     &amp;      &amp;\,+\,&amp; 3x_3 &amp;\,=\,&amp; 3
+                </mrow>
+                <mrow>
+      3x_1 &amp;\,-\,&amp; 2x_2 &amp;\,+\,&amp; 4x_3 &amp;\,=\,&amp; 0
+                </mrow>
+                <mrow>
+           &amp;\,-\,&amp;  x_2 &amp;\,+\,&amp;  x_3 &amp;\,=\,&amp; -2
+                </mrow>
+            </md>
+        </p>
+    </sidebyside>
+    <sidebyside widths="45%" margins="auto" valign="middle" component="print">
+        <p>
+    Original linear system:
+            <md alignment="alignat" alignat-columns="2">
+                <mrow>
+       x_1 + 3x_3 &amp;\,=\,&amp; 3
+                </mrow>
+                <mrow>
+      3x_1 - 2x_2 + 4x_3 &amp;\,=\,&amp; 0
+                </mrow>
+                <mrow>
+      -x_2 +  x_3 &amp;\,=\,&amp; -2
+                </mrow>
+            </md>
+        </p>
+    </sidebyside>
+    <sidebyside widths="45% 45%" margins="auto" valign="middle" component="print">
         <p>
     Verbose standard form:
             <md alignment="alignat" alignat-columns="4">
@@ -456,7 +502,15 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>inconsistent linear s
 
     <figure xml:id="figure-intersecting-planes-one">
         <caption>Intersection of three planes at one point</caption>
-        <image xml:id="LE1-image-intersection-planes-one">
+        <image xml:id="LE1-image-intersection-planes-one" width="50%" component="print">
+            <sageplot variant="3d" aspect="1.0">
+<xi:include href="./sage/LE1-image-intersection-planes-one.sage" parse="text"/>
+            </sageplot>
+            <description>
+                <p>Three planes are shown to intersect at a single point. An arrow points to the point of intersection at coordinates <m>(1,2,3)</m>.</p>
+            </description>
+        </image>
+        <image xml:id="LE1-image-intersection-planes-one" component="html">
             <sageplot variant="3d" aspect="1.0">
 <xi:include href="./sage/LE1-image-intersection-planes-one.sage" parse="text"/>
             </sageplot>
@@ -468,7 +522,15 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>inconsistent linear s
 
     <figure xml:id="figure-intersecting-planes-inf">
         <caption>Intersection of three planes at a line</caption>
-        <image xml:id="LE1-image-intersection-planes-inf">
+        <image xml:id="LE1-image-intersection-planes-inf" width="50%" component="print">
+            <sageplot variant="3d" aspect="1.0">
+<xi:include href="./sage/LE1-image-intersection-planes-inf.sage" parse="text"/>
+            </sageplot>
+            <description>
+                <p>Three planes are shown to intersect along a line of points.</p>
+            </description>
+        </image>
+        <image xml:id="LE1-image-intersection-planes-inf" component="html">
             <sageplot variant="3d" aspect="1.0">
 <xi:include href="./sage/LE1-image-intersection-planes-inf.sage" parse="text"/>
             </sageplot>
@@ -480,7 +542,15 @@ system). Otherwise it is <term>inconsistent</term>.<idx><h>inconsistent linear s
 
     <figure xml:id="figure-intersecting-planes-zero">
         <caption>Three non-mutually-intersecting planes</caption>
-        <image xml:id="LE1-image-intersection-planes-zero">
+        <image xml:id="LE1-image-intersection-planes-zero" width="50%" component="print">
+            <sageplot variant="3d" aspect="1.0">
+<xi:include href="./sage/LE1-image-intersection-planes-zero.sage" parse="text"/>
+            </sageplot>
+            <description>
+                <p>Three planes are shown to intersect at no common point, although each pair of planes intersects along a line of points.</p>
+            </description>
+        </image>
+        <image xml:id="LE1-image-intersection-planes-zero" component="html">
             <sageplot variant="3d" aspect="1.0">
 <xi:include href="./sage/LE1-image-intersection-planes-zero.sage" parse="text"/>
             </sageplot>
@@ -704,7 +774,7 @@ Then use these to describe the solution set
   The only important information in a linear system are its coefficients and
   constants.
         </p>
-        <sidebyside widths="33% 33% 33%" margins="auto" valign="middle">
+        <sidebyside widths="33% 33% 33%" margins="auto" valign="middle" component="html">
             <p>
     Original linear system:
             <md alignment="alignat" alignat-columns="2">
@@ -748,6 +818,52 @@ Then use these to describe the solution set
             </md>
         </p>
         </sidebyside>
+        <sidebyside widths="45%" margins="auto" valign="middle" component="print">
+            <p>
+    Original linear system:
+            <md alignment="alignat" alignat-columns="2">
+                <mrow>
+       x_1 + 3x_3 &amp;\,=\,&amp; 3
+                </mrow>
+                <mrow>
+      3x_1 - 2x_2 + 4x_3 &amp;\,=\,&amp; 0
+                </mrow>
+                <mrow>
+      -x_2 +  x_3 &amp;\,=\,&amp; -2
+                </mrow>
+            </md>
+        </p>
+    </sidebyside>
+      <sidebyside widths="45% 45%" margins="auto" valign="middle" component="print">
+        <p>
+    Verbose standard form:
+            <md alignment="alignat" alignat-columns="4">
+                <mrow>
+      1x_1 &amp;\,+\,&amp; 0x_2 &amp;\,+\,&amp; 3x_3 &amp;\,=\,&amp; 3
+                </mrow>
+                <mrow>
+      3x_1 &amp;\,-\,&amp; 2x_2 &amp;\,+\,&amp; 4x_3 &amp;\,=\,&amp; 0
+                </mrow>
+                <mrow>
+      0x_1 &amp;\,-\,&amp; 1x_2 &amp;\,+\,&amp; 1x_3 &amp;\,=\,&amp; -2
+                </mrow>
+            </md>
+        </p>
+        <p>
+    Coefficients/constants:
+            <md alignment="alignat" alignat-columns="4">
+                <mrow>
+       1 &amp;     &amp;  0 &amp;\,\,&amp; 3 &amp;\,|\,&amp; 3
+                </mrow>
+                <mrow>
+       3 &amp;\, \,&amp; -2 &amp;\,\,&amp; 4 &amp;\,|\,&amp; 0
+                </mrow>
+                <mrow>
+       0 &amp;\, \,&amp; -1 &amp;\,\,&amp; 1 &amp;\,|\,&amp; -2
+                </mrow>
+            </md>
+        </p>
+    </sidebyside>
     </remark>
 
     <definition>

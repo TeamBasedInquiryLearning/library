@@ -788,11 +788,15 @@ by manipulating columns to reduce each matrix to the identity:
 Consider the row operation <m>R_1+4R_3\to R_1</m> applied as follows to show
 <m>A\sim B</m>:
         </p>
-<me>
-A=\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] 
-  \sim
-\left[\begin{array}{cccc}1+4(0)&amp;2+4(0)&amp;0+4(-3)&amp;-3+4(-5)\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right]=B
-</me>
+<md>
+  <mrow>
+A\amp=\left[\begin{array}{cccc}1&amp;2&amp;0&amp;-3\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right] 
+  </mrow>
+  <mrow>
+    \amp\sim
+  \left[\begin{array}{cccc}1+4(0)&amp;2+4(0)&amp;0+4(-3)&amp;-3+4(-5)\\4&amp;1&amp;3&amp;0\\0&amp;0&amp;-3&amp;-5\\1&amp;1&amp;1&amp;3\end{array}\right]=B
+  </mrow>
+</md>
     </introduction>
 <task><p> Find a matrix <m>R</m> such that <m>B=RA</m>, by applying the same row operation to 
 <m>I=\left[\begin{array}{cccc}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{array}\right]</m>.
