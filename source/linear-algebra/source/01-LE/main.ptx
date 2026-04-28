@@ -2,6 +2,19 @@
 <chapter xml:id="LE" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Systems of Linear Equations (LE)</title>
     <title component="print">Systems of Linear Equations</title>
+    <introduction>
+        <p>One of the fundamental lessons of calculus is that many complicated problems
+            can be solved by taking linear approximations to complicated functions.  This
+            often produces several linear equations for which we want to know when they are simultaneously
+            true; that is, we would like to solve this <term>system</term> of linear equations.
+            This chapter centers around that fundamental question, building off of your intuition
+            for what happens in the simplest case of two equations in two variables.  Geometrically,
+            this corresponds to finding the intersection of two lines.  As we introduce more variables,
+            we quickly lose our ability to visualize this process geometrically, so we will introduce
+            a tool called a <term>matrix</term> to help us solve these.
+        </p>
+        <question><xi:include href="./outcomes/question.ptx"/></question>
+    </introduction>
     <xi:include href="outcomes/main.ptx"/>
     <xi:include href="./readiness.ptx"/>
     <xi:include href="01.ptx"/>
