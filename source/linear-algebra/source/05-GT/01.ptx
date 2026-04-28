@@ -70,7 +70,7 @@ transforms the unit square.
 	<image width="75%" xml:id="GT1-image-unit-square-transform">
 		<latex-image>
 \begin{tikzpicture}
-\fill[red!50!white] (0,0) rectangle (1,1);`
+\fill[red!50!white] (0,0) rectangle (1,1);
 \draw[thin,gray,&lt;-&gt;] (-4,0)-- (4,0);
 \draw[thin,gray,&lt;-&gt;] (0,-4)-- (0,4);
 \draw[thick,blue,-&gt;] (0,0) -- node[below] {\(A \vec{e}_1= \left[\begin{array}{c}2 \\ 0 \end{array}\right]\)}++ (2,0);
