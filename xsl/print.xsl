@@ -49,4 +49,28 @@
     <xsl:text>fonttitle=\bfseries,</xsl:text>
   </xsl:template>
 
+  <!--Tweak display of references-->
+  <xsl:template match="xref" mode="latex-page-number">
+      <xsl:param name="target"/>
+
+      <xsl:choose>
+          <!-- looks bad when bibliographic number gets wrapped in [] -->
+          <!-- and the number should suffice on its own               -->
+          <xsl:when test="$target/self::biblio"/>
+          <!-- and trailing a () for an equation number is overkill -->
+          <xsl:when test="$target/self::mrow|$target/self::md"/>
+          <!-- and it is really bad for an xref inside a title -->
+          <xsl:when test="ancestor::title"/>
+          <!-- off by default electronic PDF, -->
+          <!-- or on by default for print PDF -->
+          <xsl:when test="not($b-pageref)"/>
+          <!-- OK, requested and helps, let's add it -->
+          <xsl:otherwise>
+              <xsl:text> (p.\,\pageref{</xsl:text>
+              <xsl:apply-templates select="$target" mode="unique-id"/>
+              <xsl:text>})</xsl:text>
+          </xsl:otherwise>
+      </xsl:choose>
+  </xsl:template>
+
 </xsl:stylesheet>
