@@ -55,14 +55,20 @@
                  <q>The set of vectors is linearly independent.</q> </p>
           </statement>
           <solution>
-            <p> The vector equation <me>
+            <p> The vector equation 
+              <md>
+                <mrow>
                 x_1\left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 1 \end{array}\right] + 
-                x_2\left[\begin{array}{c}  -3 \\ 4 \\ 3 \\ 1 \end{array}\right] + 
+                x_2\left[\begin{array}{c}  -3 \\ 4 \\ 3 \\ 1 \end{array}\right] \amp + 
                 x_3\left[\begin{array}{c} -5 \\ 5 \\ 1 \\ -2 \end{array}\right] + 
-                x_4\left[\begin{array}{c} -15 \\ 17 \\ 8 \\ -1 \end{array}\right] +
-                x_5\left[\begin{array}{c}  2 \\ -5 \\ -7 \\ -4 \end{array}\right]=
+                  </mrow>
+                  <mrow>
+                 x_4\left[\begin{array}{c} -15 \\ 17 \\ 8 \\ -1 \end{array}\right] \amp +
+                x_5\left[\begin{array}{c}  2 \\ -5 \\ -7 \\ -4 \end{array}\right] =
                 \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right]
-            </me> has exactly one solution:
+                  </mrow>
+            </md> 
+            has exactly one solution:
             <m>\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{array}\right]</m>. </p>
           </solution>
         </task>

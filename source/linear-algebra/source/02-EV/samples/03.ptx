@@ -8,10 +8,16 @@
       <statement>
         <p>
           Consider the following subsets of Euclidean space <m>\mathbb R^4</m> defined by
-          <me>U=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+          <md>
+            <mrow>
+            U\amp=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
             y^{2} - 7 \, z^{2} = x \right\} \hspace{1em} \text{and} 
-            \hspace{1em} W=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
-            -5 \, w - 7 \, x - y = -7 \, z \right\}</me>
+            </mrow>
+            <mrow>
+             W\amp=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+            -5 \, w - 7 \, x - y = -7 \, z \right\}
+            </mrow>
+          </md>
           Without writing a proof, explain why only one of these subsets is likely to be a subspace.
         </p>
       </statement>
