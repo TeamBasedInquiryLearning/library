@@ -2,6 +2,20 @@
 <chapter xml:id="GT" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Geometric Properties of Linear Maps (GT)</title>
     <title component="print">Geometric Properties of Linear Maps</title>
+    <introduction>
+        <p>
+            In this chapter, we continue our study of linear transformations by studying
+            them from a geometric perspective.  The tools we explore in this chapter,
+            namely <term>determinants</term> and <term>eigenvectors</term> are incredibly
+            pervasive in mathematics and applications thereof (in fact, it is likely you 
+            have already used determinants as a computational tool in other courses prior 
+            to fully understanding them).
+        </p>
+        <assemblage>
+            <title>Motivating Question</title>
+            <xi:include href="./outcomes/question.ptx"/>
+        </assemblage>
+    </introduction>
     <xi:include href="outcomes/main.ptx"/>
     <xi:include href="readiness.ptx"/>
     <xi:include href="01.ptx"/>
