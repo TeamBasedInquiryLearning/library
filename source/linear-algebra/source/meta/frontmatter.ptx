@@ -79,26 +79,55 @@ This work includes materials used under license from the following works:
             </ul>
         </li>
     </ul>
-    <xi:include href="../../../common/nsf.ptx" />
+    <xi:include href="../../../common/resource-library.ptx"/>
   </preface>
 
-  <xi:include href="../../../common/resource-library.ptx"/>
 
   <preface xml:id="instructor-notes">
     <title>For Instructors</title>
-    <xi:include href="../../../common/features.ptx"/>
-    <xi:include href="../../../common/community.ptx"/>
-  </preface>
+    <xi:include href="../../../common/TBIL.ptx"/>
+    <paragraphs xml:id="extra-features">
+      <title>Features of the text</title>
+      <p>
+        Each section of this text also includes a brief set of Warm Up activities before the Class Activities,
+        and follows them with Individual Practice.  Some instructors use only the Class Activities, while
+        others assign their students to complete the Warm Up and Individual Practice activities 
+        before and after class, respectively.
+      </p>
+      <p>
+        This text also includes Mathematical Writing Explorations at the end of each section.
+        These are used by some instructors to help their students gain experience with
+        writing some proofs.  
+      </p>
+      <p>
+        Instructors should begin with the intention of having students collaboratively
+        solve the Class Activities (during synchronous meeting times), and pick and choose
+        from the other parts as suits their instructional needs.  We have seen the complete range
+        from some instructors using only the Class Activities to others using all parts
+        due to varying instructional contexts.
+      </p>
+      <p component="print">
+        This book is also freely available in HTML form at <url href="https://tbil.org" visual="tbil.org"/>. 
+        We have endeavored to keep this print version aligned as closely as possible
+        with the HTML version, with any deviations due to practical necessities.
+        The HTML version includes some additional features such as interactive applets,
+        embedded code cells for matrix computations, and hyperlinks to readiness resources.
+      </p>
+    </paragraphs>
 
-  <preface xml:id="video-resources">
-    <title>Video Resources</title>
-    <p>
-Videos are available at the end of each section. A complete playlist of videos 
-aligned with this text is 
-<url href="https://www.youtube.com/watch?v=kpOK7RhFEiQ&amp;list=PLwXCBkIf7xBMo3zMnD7WVt39rANLlSdmj">
-  available on YouTube
-</url>.
-    </p>
+    <xi:include href="../../../common/instructor-version.ptx"/>
+    <xi:include href="../../../common/community.ptx"/>
+
+    <paragraphs xml:id="video-resources" component="html">
+      <title>Video Resources</title>
+      <p>
+  Videos are available at the end of each section. A complete playlist of videos 
+  aligned with this text is 
+  <url href="https://www.youtube.com/watch?v=kpOK7RhFEiQ&amp;list=PLwXCBkIf7xBMo3zMnD7WVt39rANLlSdmj">
+    available on YouTube
+  </url>.
+      </p>
+    </paragraphs>
   </preface>
 
 </frontmatter>

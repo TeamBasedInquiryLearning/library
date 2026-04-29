@@ -104,27 +104,27 @@ This work includes materials used under license from the following works:
             </ul>
         </li>
     </ul>
-    <xi:include href="../../../common/nsf.ptx" />
+    <xi:include href="../../../common/resource-library.ptx"/>
   </preface>
 
-  <xi:include href="../../../common/resource-library.ptx"/>
 
   <preface xml:id="instructor-notes">
     <title>For Instructors</title>
-    <xi:include href="../../../common/features.ptx"/>
+    <xi:include href="../../../common/TBIL.ptx"/>
+    <xi:include href="../../../common/instructor-version.ptx"/>
     <xi:include href="../../../common/community.ptx"/>
-  </preface>
 
-  <preface xml:id="video-resources">
-    <title>Video Resources</title>
-    <p>
-      Videos are available at the end of each section. A complete playlist of videos 
-      aligned with this text is available in two parts on YouTube:
-      <ul>
-        <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">Chapters LT through IN</url></p></li>
-        <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBMrS1eTKOhX4FfZ7D1U07Ly">Chapters TI through PS</url></p></li>
-      </ul>
-    </p>
+    <paragraphs xml:id="video-resources">
+      <title>Video Resources</title>
+      <p>
+        Videos are available at the end of each section. A complete playlist of videos 
+        aligned with this text is available in two parts on YouTube:
+        <ul>
+          <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBODPeQxULagMeWSK4YtLYog">Chapters LT through IN</url></p></li>
+          <li><p><url href="https://youtube.com/playlist?list=PLwXCBkIf7xBMrS1eTKOhX4FfZ7D1U07Ly">Chapters TI through PS</url></p></li>
+        </ul>
+      </p>
+    </paragraphs>
   </preface>
 
 </frontmatter>
