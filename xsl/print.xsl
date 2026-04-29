@@ -49,5 +49,25 @@
     <xsl:text>fonttitle=\bfseries,</xsl:text>
   </xsl:template>
 
+  <!--Remove thin rule from assemblage-->
+  <xsl:template match="assemblage" mode="tcb-style">
+    <xsl:text>size=normal, colback=white, colbacktitle=white, coltitle=black, colframe=black, rounded corners, center title, fonttitle=\blocktitlefont\bfseries, blockspacingstyle, </xsl:text>
+    <xsl:text>titlerule=-1pt,</xsl:text>
+  </xsl:template>
+  
+  <!--Style outcomes-->
+  <xsl:template match="objectives" mode="tcb-style">
+    <xsl:text>colframe=black,</xsl:text>
+    <xsl:text>colback=white,</xsl:text>
+    <xsl:text>coltitle=black,</xsl:text>
+    <xsl:text>colbacktitle=white,</xsl:text>
+    <xsl:text>fonttitle=\bfseries,</xsl:text>
+    <xsl:text>halign title=flush center,</xsl:text>
+    <!--I don't know why 0pt still leaves a thin rule, but -1pt eliminates it-->
+    <xsl:text>boxrule=-1pt,</xsl:text>
+    <xsl:text>titlerule=2pt,</xsl:text>
+    <!--<xsl:text>enhanced jigsaw</xsl:text>-->
+  </xsl:template>
+
 
 </xsl:stylesheet>
