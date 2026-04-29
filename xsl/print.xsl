@@ -49,9 +49,5 @@
     <xsl:text>fonttitle=\bfseries,</xsl:text>
   </xsl:template>
 
-  <!--Style for Big Motivating Question for the chapter-->
-  <xsl:template match="question" mode="tcb-style">
-    <xsl:text>title={Question}, bwminimalstyle, fonttitle={\blocktitlefont\upshape\bfseries\large}, blockspacingstyle, after title={\space}, before upper app={\setparstyle},</xsl:text>
-  </xsl:template>
 
 </xsl:stylesheet>

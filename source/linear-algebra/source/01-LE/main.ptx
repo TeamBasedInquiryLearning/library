@@ -9,11 +9,14 @@
             true; that is, we would like to solve this <term>system</term> of linear equations.
             This chapter centers around that fundamental question, building off of your intuition
             for what happens in the simplest case of two equations in two variables.  Geometrically,
-            this corresponds to finding the intersection of two lines.  As we introduce more variables,
-            we quickly lose our ability to visualize this process geometrically, so we will introduce
-            a tool called a <term>matrix</term> to help us solve these.
+            this corresponds to finding the intersection of two lines in the plane.  As we introduce more 
+            variables, we quickly lose our ability to visualize this process geometrically, so we will 
+            introduce a tool called a <term>matrix</term> to help us solve these.
         </p>
-        <question><xi:include href="./outcomes/question.ptx"/></question>
+        <assemblage>
+            <title>Motivating Question</title>
+            <xi:include href="./outcomes/question.ptx"/>
+        </assemblage>
     </introduction>
     <xi:include href="outcomes/main.ptx"/>
     <xi:include href="./readiness.ptx"/>
