@@ -1,0 +1,29 @@
+<diagram dimensions="(600,600)" margins="5">
+  <definition>graph={"A":["B"],"B":["C"],"C":["D","E"],"D":["E"]}</definition>
+  <coordinates bbox="(-1,-1,1,1)">
+    <network graph="graph" 
+             scale="0.8" node-fill="#ccf" node-stroke="black"
+             seed="1" labels="yes" layout="bfs" start="A"
+             tactile-node-size="40">
+    </network>
+  </coordinates>
+
+ <annotations>
+    <annotation ref="figure" text="A network with five vertices">
+      <annotation ref="node-A" text="The node labeled A">
+        <annotation ref="edge-A-B" text="An edge connecting A and B"/>
+      </annotation>
+      <annotation ref="node-B" text="The node labeled B">
+        <annotation ref="edge-B-C" text="An edge connecting B and C"/>
+      </annotation>
+      <annotation ref="node-C" text="The node labeled C">
+        <annotation ref="edge-C-D" text="An edge connecting C and D"/>
+        <annotation ref="edge-C-E" text="An edge connecting C and E"/>
+      </annotation>
+      <annotation ref="node-D" text="The node labeled D">
+        <annotation ref="edge-D-DD" text="An edge connecting D and E"/>
+      </annotation>
+      <annotation ref="node-E" text="The node labeled E"/>
+    </annotation>
+  </annotations>
+</diagram>
