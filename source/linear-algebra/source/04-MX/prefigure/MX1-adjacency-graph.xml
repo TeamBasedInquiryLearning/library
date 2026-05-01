@@ -1,29 +1,37 @@
-<diagram dimensions="(600,600)" margins="5" xmlns="https://prefigure.org">
-  <definition>graph={"A":["B"],"B":["C"],"C":["D","E"],"D":["E"]}</definition>
-  <coordinates bbox="(-1,-1,1,1)">
-    <network graph="graph" 
-             scale="0.8" node-fill="#ccf" node-stroke="black"
-             seed="1" labels="yes" layout="bfs" start="A"
+<diagram dimensions="(600,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-1,-0.5,1,0.5)">
+    <network scale="0.8" node-fill="#ccf" node-stroke="black"
+             seed="1" labels="yes" layout="bfs" start="0"
              tactile-node-size="40">
+      <node at="0">A</node>
+      <node at="1">B</node>
+      <node at="2">C</node>
+      <node at="3">D</node>
+      <node at="4">E</node>
+      <edge vertices="[0,1]"/>
+      <edge vertices="[1,2]"/>
+      <edge vertices="[2,3]"/>
+      <edge vertices="[2,4]"/>
+      <edge vertices="[3,4]"/>
     </network>
   </coordinates>
 
  <annotations>
     <annotation ref="figure" text="A network with five vertices">
-      <annotation ref="node-A" text="The node labeled A">
-        <annotation ref="edge-A-B" text="An edge connecting A and B"/>
+      <annotation ref="node-0" text="The node labeled A">
+        <annotation ref="edge-0-1" text="An edge connecting A and B"/>
       </annotation>
-      <annotation ref="node-B" text="The node labeled B">
-        <annotation ref="edge-B-C" text="An edge connecting B and C"/>
+      <annotation ref="node-1" text="The node labeled B">
+        <annotation ref="edge-1-2" text="An edge connecting B and C"/>
       </annotation>
-      <annotation ref="node-C" text="The node labeled C">
-        <annotation ref="edge-C-D" text="An edge connecting C and D"/>
-        <annotation ref="edge-C-E" text="An edge connecting C and E"/>
+      <annotation ref="node-2" text="The node labeled C">
+        <annotation ref="edge-2-3" text="An edge connecting C and D"/>
+        <annotation ref="edge-2-4" text="An edge connecting C and E"/>
       </annotation>
-      <annotation ref="node-D" text="The node labeled D">
-        <annotation ref="edge-D-DD" text="An edge connecting D and E"/>
+      <annotation ref="node-3" text="The node labeled D">
+        <annotation ref="edge-3-4" text="An edge connecting D and E"/>
       </annotation>
-      <annotation ref="node-E" text="The node labeled E"/>
+      <annotation ref="node-4" text="The node labeled E"/>
     </annotation>
   </annotations>
 </diagram>
