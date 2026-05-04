@@ -2,6 +2,20 @@
 <chapter xml:id="AT" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Algebraic Properties of Linear Maps (AT)</title>
     <title component="print">Algebraic Properties of Linear Maps</title>
+    <introduction>
+        <p>
+            In this chapter, we deepen our exploration of vector spaces through
+            a widespread technique in mathematics: in order to understand the structure
+            of mathematical objects, we study functions between those objects.  In this case,
+            we introduce <term>linear transformations</term> as structure-preserving functions
+            between spaces of vectors.  We begin here by taking a mostly algebraic approach,
+            deferring geometric explorations for later chapters.
+        </p>
+        <assemblage>
+            <title>Motivating Question</title>
+            <xi:include href="./outcomes/question.ptx"/>
+        </assemblage>
+    </introduction>
     <xi:include href="outcomes/main.ptx"/>
     <xi:include href="readiness.ptx"/>
     <xi:include href="01.ptx"/>
