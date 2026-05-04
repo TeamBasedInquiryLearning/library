@@ -163,27 +163,32 @@ you can cancel both the column and row containing the <m>1</m>.
   <p>
 If the <m>1</m> is not on the main diagonal, you'll need to use row or column
 swaps in order to cancel.
-<me>
+<md>
+  <mrow>
   \det \left[\begin{array}{cccc}
     3 &amp; {\color{red} 0} &amp; -1 &amp; 5 \\
     -1 &amp; {\color{red} 0} &amp; 1 &amp; 11 \\
     {\color{red} 2} &amp; {\color{red} 1} &amp; {\color{red} 4} &amp; 
        {\color{red} 0} \\
     3 &amp; {\color{red} 0} &amp; 0 &amp; 1
-  \end{array}\right] =
+  \end{array}\right] \amp=
   -\det \left[\begin{array}{cccc}
     3 &amp; {\color{red} 0} &amp; -1 &amp; 5 \\
     {\color{red} 2} &amp; {\color{red} 1} &amp; {\color{red} 4} &amp; 
        {\color{red} 0} \\
     -1 &amp; {\color{red} 0} &amp; 1 &amp; 11 \\
     3 &amp; {\color{red} 0} &amp; 0 &amp; 1
-  \end{array}\right] =
+  \end{array}\right] 
+  </mrow>
+  <mrow>
+    \amp=
   -\det \left[\begin{array}{ccc}
     3 &amp; -1 &amp; 5 \\
     -1 &amp; 1 &amp; 11 \\
     3 &amp; 0 &amp; 1
   \end{array}\right]
-</me>
+  </mrow>
+</md>
         </p>
 </warning>
 
@@ -241,7 +246,7 @@ matrix to a determinant of a smaller matrix.
       -1 &amp; 4 &amp; 1 &amp; 5 \\ 
       2 &amp; 8 &amp; 0 &amp; 3 
     \end{array}\right]
-  &amp;=
+  \amp=
     \det\left[\begin{array}{cccc}
       4 &amp; 3 &amp; {\color{red} 0} &amp; 1 \\ 
       6 &amp; -18 &amp; {\color{red} 0} &amp; -20 \\ 
@@ -249,7 +254,9 @@ matrix to a determinant of a smaller matrix.
         {\color{red} 1} &amp; {\color{red} 5} \\ 
       2 &amp; 8 &amp; {\color{red} 0} &amp; 3 
     \end{array}\right]
-  =
+        </mrow>
+        <mrow>
+  \amp=
     \det\left[\begin{array}{ccc}
       4 &amp; 3 &amp; 1 \\ 
       6 &amp; -18 &amp; -20 \\ 
@@ -257,25 +264,29 @@ matrix to a determinant of a smaller matrix.
     \end{array}\right]
         </mrow>
         <mrow>
-  &amp;=\dots=
+  \amp=\dots=
     -2\det\left[\begin{array}{ccc}
       {\color{red} 1} &amp; {\color{red} 3} &amp; {\color{red} 4} \\
       {\color{red} 0} &amp; 21 &amp; 43 \\ 
       {\color{red} 0} &amp; -1 &amp; -10 
     \end{array}\right]
-  =
+        </mrow>
+        <mrow>
+  \amp=
     -2\det\left[\begin{array}{cc} 21 &amp; 43 \\ -1 &amp; -10 \end{array}\right]
         </mrow>
         <mrow>
-  &amp;= \dots=
+  \amp= \dots=
     -2\det\left[\begin{array}{cc}
       -167 &amp; {\color{red}{21}} \\
       {\color{red} 0} &amp; {\color{red} 1}
     \end{array}\right]
-   = -2\det[-167]
         </mrow>
         <mrow>
-  &amp;=-2(-167)\det(I)=
+   \amp= -2\det[-167]
+        </mrow>
+        <mrow>
+  \amp=-2(-167)\det(I)=
     334
         </mrow>
     </md>
@@ -317,7 +328,7 @@ in each row or column.  This approach is called
         </p>
         <p>
 For example, since 
-<m>
+<me>
         \color{blue}{
   \left[\begin{array}{ccc} 1 &amp; 2 &amp; 4 \end{array}\right]
 =
@@ -326,26 +337,32 @@ For example, since
   2\left[\begin{array}{ccc} 0 &amp; 1 &amp;  0 \end{array}\right]
 +
   4\left[\begin{array}{ccc} 0  &amp; 0 &amp; 1 \end{array}\right]}
-</m>,
+</me>,
         </p>
         <md>
             <mrow>
-\det \left[\begin{array}{ccc} 2 &amp; 3 &amp; 5  \\ -1 &amp; 3 &amp; 5 \\ {\color{blue} 1} &amp; {\color{blue} 2} &amp; {\color{blue} 4} \end{array}\right] &amp;=
+\det \left[\begin{array}{ccc} 2 &amp; 3 &amp; 5  \\ -1 &amp; 3 &amp; 5 \\ {\color{blue} 1} &amp; {\color{blue} 2} &amp; {\color{blue} 4} \end{array}\right] 
+\amp =
 {\color{blue} 1}\det \left[\begin{array}{ccc} 2 &amp; 3 &amp; 5  \\ -1 &amp; 3 &amp; 5 \\ {\color{blue} 1} &amp; {\color{blue} 0} &amp; {\color{blue} 0} \end{array}\right] +
 {\color{blue} 2}\det \left[\begin{array}{ccc} 2 &amp; 3 &amp; 5  \\ -1 &amp; 3 &amp; 5 \\ {\color{blue} 0} &amp; {\color{blue} 1} &amp; {\color{blue} 0} \end{array}\right] +
+            </mrow>
+            <mrow>\amp \phantom{=~}
 {\color{blue} 4}\det \left[\begin{array}{ccc} 2 &amp; 3 &amp; 5  \\ -1 &amp; 3 &amp; 5 \\ {\color{blue} 0} &amp; {\color{blue} 0} &amp; {\color{blue} 1} \end{array}\right]
             </mrow>
             <mrow>
-&amp;= -1\det \left[\begin{array}{ccc}  5 &amp; 3 &amp; 2 \\ 5 &amp; 3 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{array}\right] 
+\amp= -1\det \left[\begin{array}{ccc}  5 &amp; 3 &amp; 2 \\ 5 &amp; 3 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{array}\right] 
 -2\det \left[\begin{array}{ccc} 2 &amp; 5 &amp; 3  \\ -1 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 1 \end{array}\right] +
+            </mrow>
+            <mrow>
+              \amp \phantom{=~}
 4\det \left[\begin{array}{ccc} 2 &amp; 3 &amp; 5  \\ -1 &amp; 3 &amp; 5 \\ 0 &amp; 0 &amp; 1 \end{array}\right]
             </mrow>
             <mrow>
-&amp;= -\det \left[\begin{array}{cc} 5 &amp; 3 \\ 5 &amp; 3 \end{array}\right] 
+\amp= -\det \left[\begin{array}{cc} 5 &amp; 3 \\ 5 &amp; 3 \end{array}\right] 
 -2 \det \left[\begin{array}{cc} 2 &amp; 5 \\ -1 &amp; 5 \end{array}\right]
 +4 \det \left[\begin{array}{cc} 2 &amp; 3 \\ -1 &amp; 3 \end{array}\right]
             </mrow>
-        </md>
+        </md>.
     </statement>
 </observation>
 
@@ -364,7 +381,7 @@ There are formulas and algorithms for the determinants of larger matrices,
 but they can be pretty tedious to use. For example, writing out a
 formula for a <m>4\times 4</m> determinant would require 24 different terms!
         </p>
-<me>
+<me component="html">
    \det\left[\begin{array}{cccc}
      a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\
      a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\

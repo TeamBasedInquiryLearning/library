@@ -869,16 +869,34 @@ For all <m>\vec v\in W</m> and <m>c\in \IR</m> (not just specific values),
     <introduction>
         <p>
   Consider these subsets of <m>\IR^3</m>:
-  <me>
-    R=
+  <md component="html">
+    <mrow>
+    R\amp=
     \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=z+1}
-    \hspace{2em}
-    S=
+    \amp
+    S\amp=
     \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=|z|}
-    \hspace{2em}
-    T=
+    \amp
+    T\amp=
     \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{z=xy}
-  </me>.
+    </mrow>
+  </md>
+  <md component="print">
+    <mrow>
+    R\amp=
+    \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=z+1}
+    \amp
+    S\amp=
+    \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=|z|}
+    </mrow>
+  </md>
+  <md component="print">
+    <mrow>
+    T\amp=
+    \setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{z=xy}
+    </mrow>
+  </md>
+  .
         </p>
     </introduction>
   <task>
@@ -999,7 +1017,7 @@ that is, <m>(kx)+(ky)=(kx)(ky)</m>. This is verified by the following calculatio
             <task>
                 <statement>
                     <p>
-                        Given the set of ingredients <m>S=\{\textrm{flour}, \textrm{yeast}, \textrm{salt}, \textrm{water}, \textrm{sugar}, \textrm{milk}\}</m>, how should we think of the subspace <m>\vspan(S)</m>? 
+                        Given the set of ingredients <me>S=\{\textrm{flour}, \textrm{yeast}, \textrm{salt}, \textrm{water}, \textrm{sugar}, \textrm{milk}\}</me>, how should we think of the subspace <m>\vspan(S)</m>? 
                     </p>
                 </statement>
             </task>

@@ -186,7 +186,7 @@ Consider the matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
     <task>
         <statement>
             <p> Does the set <m>S</m> span <m>M_{2,2}</m>?
-                <ol marker="A." cols="2">
+                <ol marker="A." >
                     <li>
                         <p>
                             No; the matrix <m>\left[\begin{array}{cc}1&amp;3\\2&amp;4\end{array}\right]</m> is not a linear combination of the matrices in <m>S</m>.
@@ -214,7 +214,7 @@ Consider the matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
     <task>
         <statement>
             <p> Is the set <m>S</m> linearly independent?
-                <ol marker="A." cols="2">
+                <ol marker="A.">
                     <li>
                         <p>
                             No; the matrix <m>\left[\begin{array}{cc}1&amp;0\\0&amp;0\end{array}\right]\in S</m> is a linear combination of the other matrices in <m>S</m>.
@@ -271,7 +271,7 @@ Consider the matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
     <task>
         <statement>
             <p> What is the dimension of <m>M_{2,2}</m>?
-                <ol marker="A." cols="2">
+                <ol marker="A." cols="4">
                     <li>2</li>
                     <li>3</li>
                     <li>4</li>
@@ -284,7 +284,7 @@ Consider the matrix space <m>M_{2,2}=\left\{\left[\begin{array}{cc}
         <statement>
             <p>
                 Which Euclidean space is <m>M_{2,2}</m> isomorphic to?
-                <ol marker="A." cols="2">
+                <ol marker="A." cols="4">
                     <li><m>\IR^2</m></li>
                     <li><m>\IR^3</m></li>
                     <li><m>\IR^4</m></li>
@@ -321,7 +321,7 @@ S=\setList{1,y,y^2,y^3,y^4}.
     <task>
         <statement>
             <p> Does the set <m>S</m> span <m>\P^4</m>?
-                <ol marker="A." cols="2">
+                <ol marker="A.">
                     <li>
                         <p>
                             No; the polynomial <m>1+y^2+2y^3</m> is not a linear combination of the polynomials in <m>S</m>.
@@ -349,7 +349,7 @@ S=\setList{1,y,y^2,y^3,y^4}.
     <task>
         <statement>
             <p> Is the set <m>S</m> linearly independent?
-                <ol marker="A." cols="2">
+                <ol marker="A.">
                     <li>
                         <p>
                             No; the polynomial <m>y^2</m> is a linear combination of the other polynomials in <m>S</m>.
@@ -382,7 +382,7 @@ S=\setList{1,y,y^2,y^3,y^4}.
                     S=\left\{
                     1,y,y^2,y^3,y^4\right\}?
                 </me>
-                <ol marker="A." cols="2">
+                <ol marker="A." >
                     <li><m>S</m> is linearly independent</li>
                     <li><m>S</m> spans <m>\P^4</m></li>
                     <li><m>S</m> is a basis of <m>\P^4</m></li>
@@ -393,7 +393,7 @@ S=\setList{1,y,y^2,y^3,y^4}.
     <task>
         <statement>
             <p> What is the dimension of <m>\P^4</m>?
-                <ol marker="A." cols="2">
+                <ol marker="A." cols="4">
                     <li>2</li>
                     <li>3</li>
                     <li>4</li>
@@ -406,7 +406,7 @@ S=\setList{1,y,y^2,y^3,y^4}.
         <statement>
             <p>
                 Which Euclidean space is <m>\P^4</m> isomorphic to?
-                <ol marker="A." cols="2">
+                <ol marker="A." cols="4">
                     <li><m>\IR^2</m></li>
                     <li><m>\IR^3</m></li>
                     <li><m>\IR^4</m></li>

@@ -36,11 +36,17 @@ and the 5 phases:
 Geologists already know (or can easily deduce) that
 <md>
     <mrow>
-\vec{p}_1 &amp;= 3\vec{c}_1 + \vec{c}_2 + 2 \vec{c}_3 &amp; \vec{p}_2 &amp;= \vec{c}_1 +\vec{c}_2 + \vec{c}_3  &amp;
-\vec{p}_3 &amp;= \vec{c}_1 + 0\vec{c}_2 +  \vec{c}_3
+\vec{p}_1 \amp= 3\vec{c}_1 + \vec{c}_2 + 2 \vec{c}_3 \amp 
+\vec{p}_2 \amp= \vec{c}_1 +\vec{c}_2 + \vec{c}_3 
     </mrow>
     <mrow>
-\vec{p}_4 &amp;= \vec{c}_1 +\vec{c}_2 + 2\vec{c}_3 &amp;  \vec{p}_5 &amp;= 2\vec{c}_1 + \vec{c}_2 + 2 \vec{c}_3 
+\vec{p}_3 \amp= \vec{c}_1 + 0\vec{c}_2 +  \vec{c}_3 \amp
+\vec{p}_4 \amp= \vec{c}_1 +\vec{c}_2 + 2\vec{c}_3 
+    </mrow> 
+</md>
+<md>
+    <mrow>
+        \vec{p}_5 &amp;= 2\vec{c}_1 + \vec{c}_2 + 2 \vec{c}_3 
     </mrow>
 </md>
 since, for example:
@@ -72,11 +78,21 @@ Determine if the set of phases is linearly dependent or linearly independent.
     <introduction>
         <p>
 Geologists are interested in knowing all the possible chemical reactions among the 5 phases:
-<me> \vec{p}_1 = \mathrm{Ca_3MgSi_2O_8} = \left[\begin{array}{c} 3 \\ 1 \\ 2 \end{array}\right] \hspace{1em}
-\vec{p}_2 = \mathrm{CaMgSiO_4} = \left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right] \hspace{1em}
-\vec{p}_3 = \mathrm{CaSiO_3} =  \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right]</me>
-<me>\vec{p}_4 = \mathrm{CaMgSi_2O_6} = \left[\begin{array}{c} 1 \\ 1 \\ 2 \end{array}\right] \hspace{1em}
-\vec{p}_5 = \mathrm{Ca_2MgSi_2O_7} = \left[\begin{array}{c} 2 \\ 1 \\ 2 \end{array}\right].</me>
+<md> 
+    <mrow>
+        \vec{p}_1 \amp = \mathrm{Ca_3MgSi_2O_8} = \left[\begin{array}{c} 3 \\ 1 \\ 2 \end{array}\right] \amp
+\vec{p}_2 \amp = \mathrm{CaMgSiO_4} = \left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right] 
+    </mrow> 
+    <mrow>
+\vec{p}_3 \amp = \mathrm{CaSiO_3} =  \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] \amp 
+\vec{p}_4 \amp = \mathrm{CaMgSi_2O_6} = \left[\begin{array}{c} 1 \\ 1 \\ 2 \end{array}\right]
+    </mrow>
+</md>
+<md>
+    <mrow>
+\vec{p}_5 = \mathrm{Ca_2MgSi_2O_7} = \left[\begin{array}{c} 2 \\ 1 \\ 2 \end{array}\right].
+    </mrow>
+</md>
 
 That is, they want to find numbers <m>x_1,x_2,x_3,x_4,x_5</m> such that 
 <me>x_1\vec{p}_1+x_2\vec{p}_2+x_3\vec{p}_3+x_4\vec{p}_4+x_5\vec{p}_5 = 0.</me>
