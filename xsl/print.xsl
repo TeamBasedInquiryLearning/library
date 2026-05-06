@@ -73,4 +73,12 @@
       </xsl:choose>
   </xsl:template>
 
+  <!-- Import custom copyright page -->
+  <xsl:template match="book" mode="copyright-page" >
+    <xsl:text>%% begin: copyright-page&#xa;</xsl:text>
+    <xsl:text>\input{external/frontmatter/copyright-page}&#xa;</xsl:text>
+    <xsl:text>%% end:   copyright-page&#xa;</xsl:text>
+  </xsl:template>
+
+
 </xsl:stylesheet>
