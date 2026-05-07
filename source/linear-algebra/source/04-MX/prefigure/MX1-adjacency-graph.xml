@@ -1,0 +1,37 @@
+<diagram dimensions="(600,300)" margins="5" xmlns="https://prefigure.org">
+  <coordinates bbox="(-1,-0.5,1,0.5)">
+    <network scale="0.8" node-fill="#ccf" node-stroke="black"
+             seed="1" labels="yes" layout="bfs" start="0"
+             tactile-node-size="40">
+      <node at="0">A</node>
+      <node at="1">B</node>
+      <node at="2">C</node>
+      <node at="3">D</node>
+      <node at="4">E</node>
+      <edge vertices="[0,1]"/>
+      <edge vertices="[1,2]"/>
+      <edge vertices="[2,3]"/>
+      <edge vertices="[2,4]"/>
+      <edge vertices="[3,4]"/>
+    </network>
+  </coordinates>
+
+ <annotations>
+    <annotation ref="figure" text="A network with five vertices">
+      <annotation ref="node-0" text="The node labeled A">
+        <annotation ref="edge-0-1" text="An edge connecting A and B"/>
+      </annotation>
+      <annotation ref="node-1" text="The node labeled B">
+        <annotation ref="edge-1-2" text="An edge connecting B and C"/>
+      </annotation>
+      <annotation ref="node-2" text="The node labeled C">
+        <annotation ref="edge-2-3" text="An edge connecting C and D"/>
+        <annotation ref="edge-2-4" text="An edge connecting C and E"/>
+      </annotation>
+      <annotation ref="node-3" text="The node labeled D">
+        <annotation ref="edge-3-4" text="An edge connecting D and E"/>
+      </annotation>
+      <annotation ref="node-4" text="The node labeled E"/>
+    </annotation>
+  </annotations>
+</diagram>

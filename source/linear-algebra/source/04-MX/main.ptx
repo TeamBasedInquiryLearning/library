@@ -2,6 +2,18 @@
 <chapter xml:id="MX" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Matrices (MX)</title>
     <title component="print">Matrices</title>
+    <introduction>
+        <p>
+            In Chapter <xref ref="AT"/>, we saw that matrices are fundamentally just
+            a representation of linear transformations (with respect to a choice of basis).
+            Here, we explore the algebraic structure of the set of matrices of a given size,
+            which will provide us further tools for understanding linear transformations.
+        </p>
+        <assemblage>
+            <title>Motivating Question</title>
+            <xi:include href="./outcomes/question.ptx"/>
+        </assemblage>
+    </introduction>
     <xi:include href="outcomes/main.ptx"/>
     <xi:include href="readiness.ptx"/>
     <xi:include href="01.ptx"/>

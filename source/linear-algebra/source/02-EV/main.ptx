@@ -2,6 +2,20 @@
 <chapter xml:id="EV" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Euclidean Vectors (EV)</title>
     <title component="print">Euclidean Vectors</title>
+    <introduction>
+        <p>
+            In <xref ref="LE"/>, we saw how matrices and vectors were useful tools in solving
+            systems of linear equations.  In this chapter, we will explore the structure of
+            the <term>space</term> of vectors, and in particular see how solving systems
+            of linear equations helps us understand this structure.  Finally, in <xref ref="EV7"/>
+            we will see how our newfound knowledge of this structure applies back to more
+            fully understanding solution sets of linear systems.
+        </p>
+        <assemblage>
+            <title>Motivating Question</title>
+            <xi:include href="./outcomes/question.ptx"/>
+        </assemblage>
+    </introduction>
     <xi:include href="outcomes/main.ptx"/>
     <xi:include href="readiness.ptx"/>
     <xi:include href="01.ptx"/>

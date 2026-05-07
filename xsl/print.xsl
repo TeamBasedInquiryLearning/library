@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
   <xsl:import href="./core/pretext-latex.xsl" />
 
 
@@ -49,6 +49,26 @@
     <xsl:text>fonttitle=\bfseries,</xsl:text>
   </xsl:template>
 
+  <!--Remove thin rule from assemblage-->
+  <xsl:template match="assemblage" mode="tcb-style">
+    <xsl:text>size=normal, colback=white, colbacktitle=white, coltitle=black, colframe=black, rounded corners, center title, fonttitle=\blocktitlefont\bfseries, blockspacingstyle, </xsl:text>
+    <xsl:text>titlerule=-1pt,</xsl:text>
+  </xsl:template>
+  
+  <!--Style outcomes-->
+  <xsl:template match="objectives" mode="tcb-style">
+    <xsl:text>colframe=black,</xsl:text>
+    <xsl:text>colback=white,</xsl:text>
+    <xsl:text>coltitle=black,</xsl:text>
+    <xsl:text>colbacktitle=white,</xsl:text>
+    <xsl:text>fonttitle=\bfseries,</xsl:text>
+    <xsl:text>halign title=flush center,</xsl:text>
+    <!--I don't know why 0pt still leaves a thin rule, but -1pt eliminates it-->
+    <xsl:text>boxrule=-1pt,</xsl:text>
+    <xsl:text>titlerule=2pt,</xsl:text>
+    <!--<xsl:text>enhanced jigsaw</xsl:text>-->
+  </xsl:template>
+
   <!--Tweak display of references-->
   <xsl:template match="xref" mode="latex-page-number">
       <xsl:param name="target"/>
@@ -80,5 +100,94 @@
     <xsl:text>%% end:   copyright-page&#xa;</xsl:text>
   </xsl:template>
 
+  <!--Controls display of videos and interactives-->
+  <xsl:template match="video|interactive[not(static)]" mode="representations">
+    <xsl:choose>
+        <xsl:when test="$exercise-style = 'static'">
+            <!-- panel widths are experimental -->
+            <sidebyside margins="7.5% 7.5%" widths="45% 25%" valign="middle" halign="center">
+                <!-- copy over @xml:id, which may be in use by -->
+                <!-- page-breaking mechanism for LaTeX output  -->
+                <xsl:copy-of select="@xml:id"/>
+                <!-- A @label could mask an authored @xml:id           -->
+                <!-- Note: this may be manufactured by an earlier pass -->
+                <xsl:copy-of select="@label"/>
+                <xsl:choose>
+                    <!-- @preview present, so author provides a static image  -->
+                    <!--                                                      -->
+                    <!-- "video" is exceptional, we allow for a generic image -->
+                    <xsl:when test="self::video and (@preview = 'generic')">
+                        <image>
+                            <xsl:attribute name="pi:generated">
+                                <xsl:text>play-button/play-button.png</xsl:text>
+                            </xsl:attribute>
+                        </image>
+                    </xsl:when>
+                    <!--  -->
+                    <xsl:when test="@preview">
+                        <image>
+                            <xsl:attribute name="source">
+                                <xsl:value-of select="@preview"/>
+                            </xsl:attribute>
+                        </image>
+                    </xsl:when>
+                    <!-- semi-automatic images vary by format     -->
+                    <!--                                          -->
+                    <!-- interactive: screenshots with playwright -->
+                    <!-- video: we scrape YouTube, only           -->
+                    <!--        YouTube playlist gets generic     -->
+                    <!-- audio: immature                          -->
+                    <xsl:when test="self::interactive">
+                        <image>
+                            <xsl:attribute name="pi:generated">
+                                <xsl:text>preview/</xsl:text>
+                                <xsl:apply-templates select="." mode="assembly-id"/>
+                                <xsl:text>-preview.png</xsl:text>
+                            </xsl:attribute>
+                        </image>
+                    </xsl:when>
+                    <!--  -->
+                    <xsl:when test="self::video and @youtube">
+                        <image>
+                            <xsl:attribute name="pi:generated">
+                                <xsl:text>youtube/</xsl:text>
+                                <xsl:apply-templates select="." mode="assembly-id"/>
+                                <xsl:text>.jpg</xsl:text>
+                            </xsl:attribute>
+                        </image>
+                    </xsl:when>
+                    <!--  -->
+                    <xsl:when test="self::video and @youtubeplaylist">
+                        <image>
+                            <xsl:attribute name="pi:generated">
+                                <xsl:text>play-button/play-button.png</xsl:text>
+                            </xsl:attribute>
+                        </image>
+                    </xsl:when>
+                    <!--  -->
+                    <xsl:otherwise>
+                        <p>BUG: PREVIEW NOT HANDLED</p>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <stack>
+                    <!-- Remove bit of code including urls, keep only image of QR code-->
+                    <image>
+                        <xsl:attribute name="pi:generated">
+                            <xsl:text>qrcode/</xsl:text>
+                            <xsl:apply-templates select="." mode="assembly-id"/>
+                            <xsl:text>.png</xsl:text>
+                        </xsl:attribute>
+                    </image>
+                </stack>
+            </sidebyside>
+        </xsl:when>
+        <xsl:when test="($exercise-style = 'dynamic') or ($exercise-style = 'pg-problems')">
+            <!-- duplicate authored content for the non-static conversions -->
+            <xsl:copy>
+                <xsl:apply-templates select="node()|@*" mode="representations"/>
+            </xsl:copy>
+        </xsl:when>
+    </xsl:choose>
+</xsl:template>
 
 </xsl:stylesheet>
