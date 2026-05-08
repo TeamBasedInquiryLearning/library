@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-EV6"><title>EV6</title>
+<exercise xml:id="sample-EV6">
+    <title component="html">EV6</title>
+    <title component="print"><xref ref="EV6" text="global"/></title>
 <introduction>
     <p>
 Consider the subspace 
@@ -63,4 +65,4 @@ Since this (and thus every other) basis has three vectors in it, the dimension o
             </p>
         </solution>
     </task>
-</example>
+</exercise>

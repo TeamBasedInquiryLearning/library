@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-LE2"><title>LE2</title>
+<exercise xml:id="sample-LE2">
+  <title component="html">LE2</title>
+  <title component="print"><xref ref="LE2" text="global"/></title>
     <task>
         <introduction>
           <p> For each of the following matrices, explain why it is not in reduced row echelon form. </p>
@@ -107,4 +109,4 @@
           </p>
         </solution>
       </task>
-</example>
+    </exercise>

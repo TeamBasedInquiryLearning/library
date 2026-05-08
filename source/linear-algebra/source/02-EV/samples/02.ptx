@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-EV2"><title>EV2</title>
+<exercise xml:id="sample-EV2">
+    <title component="html">EV2</title>
+    <title component="print"><xref ref="EV2" text="global"/></title>
     <task>
         <introduction>
             <p> Consider the set of vectors <me>\left\{ \left[\begin{array}{c} -1 \\ 1 \\ 0 \\ 2 \end{array}\right] , 
@@ -137,4 +139,4 @@
             </solution>
         </task>
     </task>
-</example>
+</exercise>

@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-AT2"><title>AT2</title>
+<exercise xml:id="sample-AT2">
+    <title component="html">AT2</title>
+    <title component="print"><xref ref="AT2" text="global"/></title>
 <statement>
     <p>
     <ol>
@@ -52,4 +54,4 @@ S\left(\left[\begin{array}{c} -2 \\ 1 \\ 3 \\ 2 \end{array}\right] \right) = -2S
     </ol>
     </p>
 </solution>
-</example>
+</exercise>

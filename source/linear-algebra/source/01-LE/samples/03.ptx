@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-LE3"><title>LE3</title>
+<exercise xml:id="sample-LE3">
+  <title component="html">LE3</title>
+  <title component="print"><xref ref="LE3" text="global"/></title>
   <introduction>
     <p> Consider each of the following systems of linear equations or vector equations. </p>
   </introduction>
@@ -130,4 +132,4 @@
         </solution>
       </task>
   </task>
-</example>
+</exercise>

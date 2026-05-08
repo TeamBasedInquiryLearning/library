@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 
-<example xml:id="sample-AT5"><title>AT5</title>
+<exercise xml:id="sample-AT5">
+    <title component="html">AT5</title>
+    <title component="print"><xref ref="AT5" text="global"/></title>
 <statement>
     <p>
 Let <m>V</m> be the set of all pairs of numbers <m>(x,y)</m> of real numbers together with the following operations:
@@ -128,4 +130,4 @@ Since these ordered pairs are different, the property fails to hold.
     </ol>
     </p>
 </solution>
-</example>
+</exercise>

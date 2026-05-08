@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-AT3"><title>AT3</title>
+<exercise xml:id="sample-AT3">
+    <title component="html">AT3</title>
+    <title component="print"><xref ref="AT3" text="global"/></title>
 <statement>
     <p>
 Let <m>T: \IR^4 \rightarrow \IR^3</m> be the linear transformation given by
@@ -99,4 +101,4 @@ of the rank and nullity of <m>T</m> is the dimension of the domain of <m>T</m>.
     </ol>
     </p>
 </solution>
-</example>
+</exercise>

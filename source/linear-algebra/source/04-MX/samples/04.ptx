@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-MX4">
-    <title>MX4</title>
+<exercise xml:id="sample-MX4">
+    <title component="html">MX4</title>
+    <title component="print"><xref ref="MX4" text="global"/></title>
     <task>
       <statement>
         <p> Give a <m>3 \times 3</m> matrix <m>C</m> that may be used to perform the row operation <m>-5 R_1 \to R_1</m>. </p>
@@ -123,4 +124,4 @@ ans =
             </sage>
       </answer>
     </task>
-</example>
+  </exercise>

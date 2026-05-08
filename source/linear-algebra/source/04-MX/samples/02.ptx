@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 
-<example xml:id="sample-MX2">
-      <title>MX2</title>
+<exercise xml:id="sample-MX2">
+      <title component="html">MX2</title>
+      <title component="print"><xref ref="MX2" text="global"/></title>
       <introduction>
       <p> Consider each of the following matrices. </p>
     </introduction>
@@ -90,4 +91,4 @@
             </solution>
           </task>
       </task>
-</example>
+    </exercise>

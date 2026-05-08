@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 
-    <example xml:id="sample-GT4"><title>GT4</title>
+    <exercise xml:id="sample-GT4">
+        <title component="html">GT4</title>
+        <title component="print"><xref ref="GT4" text="global"/></title>
 <statement>
     <p>
 Explain how to find a basis for the eigenspace associated to the eigenvalue <m>3</m> in the matrix <me>\left[\begin{array}{ccc} -7 &amp; -8 &amp; 2 \\ 8 &amp; 9 &amp; -1 \\ \frac{13}{2} &amp; 5 &amp; 2 \end{array}\right].</me>
@@ -16,4 +18,4 @@ Thus we see the kernel is <me>\setBuilder{\left[\begin{array}{c} -a \\ \frac{3}{
 which has a basis of <m>\left\{ \left[\begin{array}{c} -1 \\ \frac{3}{2} \\ 1 \end{array}\right] \right\}</m>.
     </p>
 </solution>
-</example>
+</exercise>

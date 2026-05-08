@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-LE4"><title>LE4</title>
+<exercise xml:id="sample-LE4">
+  <title component="html">LE4</title>
+  <title component="print"><xref ref="LE4" text="global"/></title>
   <introduction>
     <p> Consider the following vector equation. <me>x_{1} \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array}\right] + x_{2} \left[\begin{array}{c} -2 \\ 0 \\ -2 \\ -2 \end{array}\right] + x_{3} \left[\begin{array}{c} -5 \\ 1 \\ -5 \\ -2 \end{array}\right] + x_{4} \left[\begin{array}{c} 13 \\ -2 \\ 13 \\ 7 \end{array}\right] + x_{5} \left[\begin{array}{c} -14 \\ 3 \\ -14 \\ -5 \end{array}\right] = \left[\begin{array}{c} 18 \\ -3 \\ 18 \\ 9 \end{array}\right]</me> </p>
   </introduction>
@@ -47,4 +49,4 @@
         <p>Therefore, the solution set is <m>\left\{ \left[\begin{array}{c} 2 \, a - 3 \, b - c + 3 \\ a \\ 2 \, b - 3 \, c - 3 \\ b \\ c \end{array}\right] \,\middle|\, a,b,c \in\mathbb R \right\}</m>.</p>
       </solution>
     </task>
-</example>    
+  </exercise>    

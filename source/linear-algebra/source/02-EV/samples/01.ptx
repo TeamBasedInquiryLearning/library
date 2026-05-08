@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-EV1"><title>EV1</title>
+<exercise xml:id="sample-EV1">
+  <title component="html">EV1</title>
+  <title component="print"><xref ref="EV1" text="global"/></title>
     <introduction>
       <p>Consider each of these claims about a vector equation.</p>
     </introduction>
@@ -97,4 +99,4 @@ x_4\left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]  =
             </solution>
           </task>
       </task>
-</example>
+</exercise>

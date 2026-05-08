@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-EV3"><title>EV3</title>
+<exercise xml:id="sample-EV3">
+  <title component="html">EV3</title>
+  <title component="print"><xref ref="EV3" text="global"/></title>
   <introduction>
     <p> Answer the following questions about Euclidean subspaces. </p>
   </introduction>
@@ -95,4 +97,4 @@
         </p>
       </solution>
     </task>
-</example>
+  </exercise>

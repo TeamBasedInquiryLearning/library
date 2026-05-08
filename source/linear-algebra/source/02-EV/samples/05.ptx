@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-EV5"><title>EV5</title>
+<exercise xml:id="sample-EV5">
+  <title component="html">EV5</title>
+  <title component="print"><xref ref="EV5" text="global"/></title>
       <task>
         <introduction>
           <p> Consider the set of vectors <me>\left\{ \left[\begin{array}{c} 1 \\ -2 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ -4 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ -6 \\ 0 \\ 3 \end{array}\right] , \left[\begin{array}{c} 5 \\ -5 \\ -2 \\ 4 \end{array}\right] \right\}</me> </p>
@@ -79,4 +81,4 @@
             </solution>
           </task>
       </task>
-</example>
+    </exercise>

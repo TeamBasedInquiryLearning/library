@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-GT1"><title>GT1</title>
+<exercise xml:id="sample-GT1">
+  <title component="html">GT1</title>
+  <title component="print"><xref ref="GT1" text="global"/></title>
     <introduction>
       <p>
 Let <m>A</m> be <em>any</em> <m>4 \times 4</m> matrix with determinant
@@ -93,4 +95,4 @@ so that <m>M=RA</m>. It follows that
           </p>
         </solution>
       </task>
-</example>
+    </exercise>

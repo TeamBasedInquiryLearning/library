@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--Copied from entities.ent, used to redefine exercise-->
+<!DOCTYPE xsl:stylesheet [
+    <!ENTITY INLINE-EXERCISE-FILTER "parent::article|parent::paragraphs|parent::chapter|parent::section|parent::subsection|parent::subsubsection|parent::handout">
+]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
   <xsl:import href="./core/pretext-latex.xsl" />
 
@@ -189,5 +193,20 @@
         </xsl:when>
     </xsl:choose>
 </xsl:template>
+
+
+    <!-- Customize appearance of exercises by redefining the tcolorbox-->
+    <!-- We don't use any for now, but this does not affect exercises within exercise groups, -->
+    <!-- which have their own tcolorbox definition. -->
+    <xsl:param name="latex.preamble.late">
+        <xsl:text>% Renew tcolorbox for exercise&#xa;</xsl:text>
+        <xsl:text>\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, before skip={3 ex}, breakable, before upper app={\setparstyle} } }&#xa;</xsl:text>
+        <xsl:text>\renewtcolorbox{divisionexercise}[4]</xsl:text>
+        <xsl:text>{divisionexercisestyle, before title={}, title={\notblank{#2}{#2}{}}, after title={\notblank{#2}{\space}{}}, phantom={</xsl:text>
+        <xsl:if test="$b-pageref">
+            <xsl:text>\label{#4}</xsl:text>
+        </xsl:if>
+        <xsl:text>\hypertarget{#4}{}}, after={\notblank{#3}{\par\rule{\workspacestrutwidth}{#3}\par\vfill}{\par}}}&#xa;</xsl:text>
+    </xsl:param>
 
 </xsl:stylesheet>

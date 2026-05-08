@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-MX1"><title>MX1</title>
+<exercise xml:id="sample-MX1">
+    <title component="html">MX1</title>
+    <title component="print"><xref ref="MX1" text="global"/></title>
     <introduction>
         <p>
 Of the following three matrices, only two may be multiplied.
@@ -95,4 +97,4 @@ ans =
             </p>
         </solution>
     </task>
-</example>
+</exercise>

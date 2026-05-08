@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<example xml:id="sample-AT6"><title>AT6</title>
+<exercise xml:id="sample-AT6">
+    <title component="html">AT6</title>
+    <title component="print"><xref ref="AT6" text="global"/></title>
     <statement>
         <p>
         <ol>
@@ -76,4 +78,4 @@ The system has (infintely many) nontrivial solutions, so we that the set of poly
     is linearly <em>dependent</em>.
         </p>
     </solution>
-</example>
+</exercise>

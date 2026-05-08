@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<example xml:id="sample-EV7"><title>EV7</title>
+<exercise xml:id="sample-EV7">
+    <title component="html">EV7</title>
+    <title component="print"><xref ref="EV7" text="global"/></title>
 <introduction>
     <p>
 Consider the homogeneous system of equations
@@ -86,4 +88,4 @@ a basis for the solution space is
             </p>
     </solution>
 </task>
-</example>
+</exercise>
