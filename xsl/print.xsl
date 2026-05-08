@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--Copied from entities.ent, used to redefine exercise-->
-<!DOCTYPE xsl:stylesheet [
-    <!ENTITY INLINE-EXERCISE-FILTER "parent::article|parent::paragraphs|parent::chapter|parent::section|parent::subsection|parent::subsubsection|parent::handout">
-]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
   <xsl:import href="./core/pretext-latex.xsl" />
 
