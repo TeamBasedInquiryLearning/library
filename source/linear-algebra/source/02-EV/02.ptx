@@ -202,8 +202,8 @@ since <m>\IR^1=\setBuilder{cx}{c\in\IR}</m>.
         <statement>
             <p>
                 Determine if <m>\left[\begin{array}{c} 7 \\ -3 \\ -2 \end{array}\right]</m> belongs to 
-                <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
-                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
+                <md>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</md>. 
             </p>
             <sage language="octave" component="html">
             </sage>
@@ -234,8 +234,8 @@ vector can't fail to belong.
         <statement>
             <p>
                 Determine if <m>\left[\begin{array}{c} 0 \\ -4 \\ 3 \end{array}\right]</m> belongs to 
-                <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
-                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
+                <md>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</md>. 
             </p>
             <sage language="octave" component="html">
             </sage>
@@ -250,8 +250,8 @@ The vector belongs to the span.
         <statement>
             <p>
                 Determine if <m>\left[\begin{array}{c} 2 \\ 5 \\ 7 \end{array}\right]</m> belongs to 
-                <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
-                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
+                <md>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+                \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</md>. 
             </p>
             <sage language="octave" component="html">
             </sage>
@@ -298,8 +298,8 @@ some spanning set, compared to the guess-and-check methods we used in <xref ref=
         <statement>
             <p>
 An arbitrary vector <m>\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</m> belongs to
-<m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
-\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m> provided the equation
+<md>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</md> provided the equation
 <me>x_1\left[\begin{array}{c}1\\-1\\0\end{array}\right]+
     x_2\left[\begin{array}{c}-2\\0\\1\end{array}\right]+
     x_3\left[\begin{array}{c}-2\\-2\\2\end{array}\right]=\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]</me> has...
