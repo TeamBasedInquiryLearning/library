@@ -21,7 +21,7 @@
     <definition xml:id="def-mapping-notation">
       <statement>
         <p>
-          <term>Mapping Notation</term> <idx><h>function</h><h>mapping notation</h></idx> (also known as an arrow diagram) is a way to show relationships visually between sets.  For example, suppose you are given the following ordered pairs: <m>(3, -8), (4,6)</m>, and <m>(2,-1)</m>. Each of the <m>x</m>-values "map onto" a <m>y</m>-value and can be visualized in the following way: </p>
+          <term>Mapping Notation</term> <idx><h>function</h><h>mapping notation</h></idx> (also known as an arrow diagram) is a way to show relationships visually between sets.  For example, suppose you are given the following ordered pairs: <m>(3, -8), (4,6)</m>, and <m>(2,-1)</m>. Each of the <m>x</m>-values <q>map onto</q> a <m>y</m>-value and can be visualized in the following way: </p>
           <figure xml:id="mapping-notation-example">
             <image>
               <prefigure xmlns="https://prefigure.org" label="prefigure-graph-mapping-notation">
@@ -566,7 +566,7 @@
 
     <remark>
     <p>
-      You probably noticed (in <xref ref="FN1-determine-function-from-graph"/>) that when the graph has points that "line up" or are on top of each other, they have the same <m>x</m>-values. When this occurs, this shows that the same <m>x</m>-value has two different outputs (<m>y</m>-values) and that the relation is not a function.
+      You probably noticed (in <xref ref="FN1-determine-function-from-graph"/>) that when the graph has points that <q>line up</q> or are on top of each other, they have the same <m>x</m>-values. When this occurs, this shows that the same <m>x</m>-value has two different outputs (<m>y</m>-values) and that the relation is not a function.
     </p>
     </remark>
     

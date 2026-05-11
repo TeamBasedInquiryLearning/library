@@ -94,13 +94,13 @@
           </me>
           for all <m>x</m>, then we say <m>f</m> has an <term>inverse function</term>, or that <m>g</m> is the <term>inverse of</term> <m>f</m>.
 
-          When a given function <m>f</m> has an inverse function, we usually denote it as <m>f^{-1}</m>, which is read as "<m>f</m> inverse".
+          When a given function <m>f</m> has an inverse function, we usually denote it as <m>f^{-1}</m>, which is read as <q><m>f</m> inverse</q>.
         </p>
       </statement>
     </definition>
     <remark>
     <p>
-      An inverse is a function that "undoes" another function. For any input in the domain, the function <m>g</m> will reverse the process of <m>f</m>.
+      An inverse is a function that <q>undoes</q> another function. For any input in the domain, the function <m>g</m> will reverse the process of <m>f</m>.
     </p>
     </remark>
 
@@ -140,7 +140,7 @@
 
     <activity xml:id="activity-inverse-exist">
       <introduction>
-        <p> It is important to note that in  <xref ref="def-inverse-function" /> we say "if there exists a function," but we don't guarantee that this is always the case. How can we determine whether a function has a corresponding inverse or not?
+        <p> It is important to note that in  <xref ref="def-inverse-function" /> we say <q>if there exists a function,</q> but we don't guarantee that this is always the case. How can we determine whether a function has a corresponding inverse or not?
 
           Consider the following two functions <m>f</m> and <m>g</m> represented by the tables.
           <table xml:id="table-not-func">
@@ -392,7 +392,7 @@
       </task>
       <task>
         <statement>
-          <p> When you "undo" this expression to solve for a given output value of <m>y</m>, what operations do you perform and in what order?
+          <p> When you <q>undo</q> this expression to solve for a given output value of <m>y</m>, what operations do you perform and in what order?
         <ol marker= "A." cols="1">  
         <li> divide by <m>3</m>, subtract <m>5</m></li>
         <li> subtract <m>5</m>, divide by <m>3</m></li>
