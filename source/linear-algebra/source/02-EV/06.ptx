@@ -450,7 +450,7 @@ Thus a given basis for a subspace need not be unique.
         </p></exploration>
     <exploration>
     <p>
-        Suppose you have the vector space <m>V = \left\{\left(\begin{array}{c}x\\y\\z\end{array}\right)\in \mathbb{R}^3: x + y + z =  1\right\}</m> with the operations <m>\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) \oplus \left(\begin{array}{c}x_2\\y_2\\z_2\end{array}\right) = \left(\begin{array}{c}x_1 + x_2 - 1\\y_1 + y_2\\z_1+z_2\end{array}\right) \mbox{ and } \alpha\odot\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) = \left(\begin{array}{c}\alpha x_1 - \alpha +1\\\alpha y_1\\\alpha z_1\end{array}\right).</m> Find a basis for <m>V</m> and determine it's dimension.
+        Suppose you have the vector space <m>V = \left\{\left(\begin{array}{c}x\\y\\z\end{array}\right)\in \mathbb{R}^3: x + y + z =  1\right\}</m> with the operations <m>\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) \oplus \left(\begin{array}{c}x_2\\y_2\\z_2\end{array}\right) = \left(\begin{array}{c}x_1 + x_2 - 1\\y_1 + y_2\\z_1+z_2\end{array}\right) \mbox{ and } \alpha\odot\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) = \left(\begin{array}{c}\alpha x_1 - \alpha +1\\\alpha y_1\\\alpha z_1\end{array}\right).</m> Find a basis for <m>V</m> and determine its dimension.
         </p></exploration>
     </subsection>
     
