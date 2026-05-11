@@ -77,9 +77,9 @@
 
 <definition xml:id="def-end-behavior">
   <statement>
-    <p> The <term>end behavior</term> <idx><h>polynomial function</h><h>end behavior</h></idx> of a polynomial function describes the behavior of the graph at the "ends" of the function. In other words, as we move to the right of the graph (as the <m>x</m> values increase), what happens to the <m> y </m> values? Similarly, as we move to the left of the graph (as the <m>x</m> values decrease), what happens to the <m> y </m> values? </p>
+    <p> The <term>end behavior</term> <idx><h>polynomial function</h><h>end behavior</h></idx> of a polynomial function describes the behavior of the graph at the <q>ends</q> of the function. In other words, as we move to the right of the graph (as the <m>x</m> values increase), what happens to the <m> y </m> values? Similarly, as we move to the left of the graph (as the <m>x</m> values decrease), what happens to the <m> y </m> values? </p>
     <aside>
-      <p>Although we are looking at the "ends" to determine the end behavior, note that polynomials do not actually have ends. In other words, polynomial functions have <m>y</m>-values that exist for every <m>x</m>-value.</p>
+      <p>Although we are looking at the <q>ends</q> to determine the end behavior, note that polynomials do not actually have ends. In other words, polynomial functions have <m>y</m>-values that exist for every <m>x</m>-value.</p>
     </aside>
   </statement>
 </definition>
@@ -314,7 +314,7 @@ Let's refer back to the graphs in <xref ref="act-end-behavior-of-polynomial-func
       <statement>
         <p> When describing end behavior, mathematicians typically use <term>arrow notation</term>. Just as the name suggests, arrows are used to indicate the behavior of certain values on a graph.
         </p>
-        <p> For end behavior, students are often asked to determine the behavior of <m>y</m>-values as <m>x</m>-values either increase or decrease. The statement "As <m> x\to \infty</m>, <m>f(x)\to -\infty</m>" can be translated to "As <m>x</m> approaches infinity (or as <m>x</m> increases), <m>f(x)</m> (or the <m>y</m>-values) go to negative infinity (i.e., it decreases)." </p>
+        <p> For end behavior, students are often asked to determine the behavior of <m>y</m>-values as <m>x</m>-values either increase or decrease. The statement <q>As <m> x\to \infty</m>, <m>f(x)\to -\infty</m></q> can be translated to <q>As <m>x</m> approaches infinity (or as <m>x</m> increases), <m>f(x)</m> (or the <m>y</m>-values) go to negative infinity (i.e., it decreases).</q> </p>
       </statement>
     </definition>
 
@@ -454,7 +454,7 @@ xml:id="intro-to-multiplicities">
 
 <definition xml:id="max-and-min">
   <statement>
-    <p> When graphing polynomial functions, you may notice that these functions have some "hills" and "valleys." These characteristics of the graph are known as the <term> local maxima </term> and <term> local minima </term> of the graph - similar to what we've already seen with quadratic functions. Unlike quadratic functions, however, a polynomial graph can have many local maxima/minima (quadratic functions only have one).</p>
+    <p> When graphing polynomial functions, you may notice that these functions have some <q>hills</q> and <q>valleys.</q> These characteristics of the graph are known as the <term> local maxima </term> and <term> local minima </term> of the graph - similar to what we've already seen with quadratic functions. Unlike quadratic functions, however, a polynomial graph can have many local maxima/minima (quadratic functions only have one).</p>
   </statement>
 </definition>
 

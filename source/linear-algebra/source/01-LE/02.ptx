@@ -599,7 +599,7 @@ matrix to the next:
     </statement>
 </activity>
 
-<definition>
+<definition xml:id="def-RREF">
     <statement>
         <p>
 A matrix is in <term>reduced row echelon form</term> (<term>RREF</term>)<idx>reduced row echelon form</idx> if <idx>pivot</idx>
@@ -881,7 +881,7 @@ Go to <url href="https://sagecell.sagemath.org/"/>.
     <task>
         <p>
 In the dropdown on the right, you can select a number of different languages.
-Select "Octave" for the Matlab-compatible syntax used by this text.
+Select <q>Octave</q> for the Matlab-compatible syntax used by this text.
         </p>
     </task>
     <task>
