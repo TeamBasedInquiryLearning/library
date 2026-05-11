@@ -25,11 +25,13 @@
                 <p>
                     Which, if any, of the following matrices are in RREF? You may refer to the Activity Book now for criteria that you may have forgotten.
                 </p>
-                <sidebyside widths="33% 33% 33%">
-                    <p><me> P=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; \frac{2}{3} &amp; -3 \\ 0 &amp; 3 &amp; 3 &amp; -\frac{3}{5} \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</me></p>
-                    <p><me> Q=\left[\begin{array}{ccc|c} 0 &amp; 1 &amp; 0 &amp; 7 \\ 1 &amp; 0 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</me></p>
-                    <p><me> R=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; \frac{1}{2} &amp; 4 \\ 0 &amp; 1 &amp; 0 &amp; 7 \\ 0 &amp; 0 &amp; 1 &amp; 0 \end{array}\right]</me></p>
-                    </sidebyside>
+                <md>
+                    <mrow>
+                      P \amp =\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; \frac{2}{3} &amp; -3 \\ 0 &amp; 3 &amp; 3 &amp; -\frac{3}{5} \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right] \amp
+                      Q \amp =\left[\begin{array}{ccc|c} 0 &amp; 1 &amp; 0 &amp; 7 \\ 1 &amp; 0 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right] \amp
+                      R \amp =\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; \frac{1}{2} &amp; 4 \\ 0 &amp; 1 &amp; 0 &amp; 7 \\ 0 &amp; 0 &amp; 1 &amp; 0 \end{array}\right]
+                    </mrow>
+                </md>
             </statement>
         </task>
     </activity>
