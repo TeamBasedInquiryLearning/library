@@ -166,9 +166,13 @@
     <m>\left[\begin{array}{c} 4 \\ 5 \\ 6 \end{array}\right] </m> are both solutions
     to the homogeneous vector equation <m>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{0}</m>.
     This means that
-    <me>1 \vec{v}_1+2 \vec{v}_2+3\vec{v}_3 = \vec{0}
-    \text{ and }
-    4 \vec{v}_1+5 \vec{v}_2+6\vec{v}_3 = \vec{0} </me>.
+    <md>
+        <mrow>
+            1 \vec{v}_1+2 \vec{v}_2+3\vec{v}_3 \amp = \vec{0}
+            \amp \amp \text{and} \amp
+            4 \vec{v}_1+5 \vec{v}_2+6\vec{v}_3 \amp= \vec{0} 
+        </mrow>
+    </md>.
     Therefore by adding these equations:
     <me>(1+4) \vec{v}_1+(2+5) \vec{v}_2+(3+6)\vec{v}_3= \vec{0},</me>
             </p>
