@@ -253,7 +253,7 @@ Following are some examples of addition and scalar multiplication in <m>\mathbb 
         </p>
     </paragraphs>
     <figure xml:id="figure-le1-scalar-mult">
-        <caption>Visualization of adding vectors</caption>
+        <caption>Visualization of scaling vectors</caption>
         <interactive label="LE1-interactive-scalar-mult" platform="doenetml" width="100%">
           <slate surface="doenetml">
             <xi:include parse="text" href="doenet/LE1-scalar-mult.xml"/>
@@ -1135,8 +1135,8 @@ Augmented matrix:
                     
                     <p> For each of the following relations, show that it is or is not an equivalence relation.
                     <ul>
-                        <li>For <m>a,b, \in \mathbb{R}</m>, <m>a \sim b</m> if an only if <m>a \leq b</m>.</li>
-                        <li>For <m>a,b, \in \mathbb{R}</m>, <m>a \sim b</m> if an only if <m>|a|=|b|</m>.</li>
+                        <li>For <m>a,b, \in \mathbb{R}</m>, <m>a \sim b</m> if and only if <m>a \leq b</m>.</li>
+                        <li>For <m>a,b, \in \mathbb{R}</m>, <m>a \sim b</m> if and only if <m>|a|=|b|</m>.</li>
                         </ul></p></statement></exploration>
     </subsection>
     <subsection component="html">
