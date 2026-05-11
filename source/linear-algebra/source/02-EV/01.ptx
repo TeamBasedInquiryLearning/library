@@ -494,21 +494,21 @@ x_2\left[\begin{array}{c}\unknown\\\unknown\\\unknown\\\unknown\end{array}\right
   <statement>
     <p>
       Are the sets
-<me>
-\setList
-{
-\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-}
-</me>
-and
-<me>
-\vspan\setList
-{
-\left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
-}
-</me>
+<md>
+  <mrow>
+    \amp \setList
+    {
+    \left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+    \left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+    }
+    \amp \amp \text{and} \amp \amp
+    \vspan\setList
+    {
+    \left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
+    \left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
+    }
+  </mrow>
+</md>
       equal or nonequal to each other?
       <ol marker="A." cols="2">
         <li><p>Equal</p></li>
