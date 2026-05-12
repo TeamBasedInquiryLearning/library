@@ -84,7 +84,7 @@ the set of all vectors that transform into <m>\vec 0</m>?
     <statement>
         <p>
 Let <m>T: V \rightarrow W</m> be a linear transformation, and let <m>\vec{z}</m> be the additive
-identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx>of <m>T</m>
+identity (the <q>zero vector</q>) of <m>W</m>.  The <term>kernel</term><idx>kernel</idx> of <m>T</m>
 (also known as the <term>null space</term><idx>null space</idx> of <m>T</m>)
 is an important subspace of <m>V</m> defined by
 <me>
@@ -107,7 +107,7 @@ is an important subspace of <m>V</m> defined by
       \draw (-2,0) -- (2,0);
       \draw (0,-2) -- (0,2);
       \fill[blue] (0,0) circle (0.2)
-            node[anchor=south east] {\(\vec{0}\)};
+            node[anchor=south east] {\(\vec{z}\)};
     \end{scope}
   \end{tikzpicture}
 					</latex-image>
