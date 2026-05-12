@@ -221,7 +221,24 @@ we refer to this real number as a <term>scalar</term>.
       </p>
   </task>
   <task>
-      <p component="html">
+    <p>In addition to the combinations above, use the interactive below to graph an additional
+      5 or more vectors belonging to 
+      <me>\vspan\left\{\left[\begin{array}{c}1\\2\end{array}\right],
+      \left[\begin{array}{c}-1\\1\end{array}\right]\right\}=
+      \setBuilder{a\left[\begin{array}{c}1\\2\end{array}\right]+
+      b\left[\begin{array}{c}-1\\1\end{array}\right]}{a, b \in \IR}</me>
+      in the <m>xy</m> plane.
+      </p>
+      <interactive label="EV1-interactive-span" platform="doenetml" width="100%">
+          <slate surface="doenetml">
+            <xi:include parse="text" href="doenet/EV2-span-two-vectors.xml"/>
+          </slate>
+          <description>
+            <p>An interactive that graphs linear combinations of the vectors <m>\left[\begin{array}{c}1\\2\end{array}\right]</m> and 
+              <m> \left[\begin{array}{c}-1\\1\end{array}\right]</m>.</p>
+          </description>
+      </interactive>
+      <!--<p component="html">
     Correct the SageMath code cell below to generate
     an illustration of several vectors belonging to
     <me>\vspan\left\{\left[\begin{array}{c}1\\2\end{array}\right],
@@ -242,7 +259,7 @@ we refer to this real number as a <term>scalar</term>.
     <p component="print">
     Which of these geometrical objects
     best describes the span of these two vectors?
-    </p>
+    </p>-->
     <ol marker="A." cols="4">
       <li>A line</li>
       <li>A plane</li>
