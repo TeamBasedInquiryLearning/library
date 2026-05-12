@@ -343,7 +343,7 @@ we'll learn what this means more carefully in a later chapter.
         </p>
         <figure xml:id="EV3-planar-subspace-vs-r2">
 			<caption>A planar subset of <m>\IR^3</m> compared with the plane <m>\IR^2</m>.</caption>
-            <sidebyside>
+            <sidebyside component="html">
                 <image xml:id="EV3-image-r2-in-r3">
                     <description><p>A planar subset of <m>\IR^3</m>.</p></description>
                     <sageplot variant="3d" aspect="1.0">
@@ -361,6 +361,18 @@ p += plot(vector([1,2]), color="purple")
 p += plot(vector([3,-1]), color="yellow")
 p
                     </sageplot>
+                </image>
+            </sidebyside>
+            <sidebyside component="print">
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-EV3-planar-subset">
+                        <xi:include href="prefigure/EV3-planar-subset.xml"/>
+                    </prefigure>
+                </image>
+                <image>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-EV3-R2">
+                        <xi:include href="prefigure/EV3-R2.xml"/>
+                    </prefigure>
                 </image>
             </sidebyside>
 		</figure>
@@ -1108,7 +1120,7 @@ that is, <m>(kx)+(ky)=(kx)(ky)</m>. This is verified by the following calculatio
                 <p>
                     A square matrix <m>M</m> is <term>symmetric</term><idx>symmetric matrix</idx> if, for each index <m>i,j</m>, the entries <m>m_{ij} = m_{ji}</m>. That is, the matrix is itself when reflected over the diagonal from upper left to lower right.
  
-Prove that the set of <m>n \times n</m> symmetric matrices is a subspace of <m>M_{n \times n}</m>.
+Prove that the set of <m>n \times n</m> symmetric matrices is a subspace of <m>M_{n,n}</m>.
                 </p>
     </exploration>
     <exploration>
@@ -1124,7 +1136,7 @@ Decide if each of the following is a subspace. If so, prove it. If not, provide 
 <exploration>
     <p>
 Give an example of each of these, or explain why it's not possible that such a thing would exist.
-<ul> <li>A nonempty subset of <m>M_{2 \times 2}</m> that is not a subspace.</li>
+<ul> <li>A nonempty subset of <m>M_{2,2}</m> that is not a subspace.</li>
 <li> A set of two vectors in <m>\mathbb{R}^2</m> that is not a spanning set.</li>
 </ul>
 </p></exploration>
