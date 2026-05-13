@@ -40,8 +40,8 @@
 
     <observation>
         <p>
-            Recall that if <m>S=\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> is subset of vectors in <m>\IR^n</m>, then <m>\vspan(S)</m> is the set of all linear combinations of vectors in <m>S</m>.
-            In <xref ref="EV2"/>, we learned how to decide whether <m>\vspan(S)</m> was equal to all of <m>\IR^n</m> or something strictly smaller. 
+            Recall that if <m>S=\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> is subset of vectors in <m>\IR^n</m>, then <m>\vspan S</m> is the set of all linear combinations of vectors in <m>S</m>.
+            In <xref ref="EV2"/>, we learned how to decide whether <m>\vspan S</m> was equal to all of <m>\IR^n</m> or something strictly smaller. 
         </p>
     </observation>
     <activity>
@@ -55,9 +55,9 @@
                 <p>
             Let <m>S</m> denote a set of vectors in <m>\IR^3</m> and suppose that
             <m>\left[\begin{array}{c}1\\2\\3\end{array}\right],
-            \left[\begin{array}{c}4\\5\\6\end{array}\right]\in\vspan(S)</m>.
+            \left[\begin{array}{c}4\\5\\6\end{array}\right]\in\vspan S</m>.
             Which of the following vectors might
-            <em>not</em> belong to <m>\vspan(S)</m>?
+            <em>not</em> belong to <m>\vspan S</m>?
             <ol marker="A." cols="2">
             <li><m>\left[\begin{array}{c}0\\0\\0\end{array}\right]</m></li>
             <li><m>\left[\begin{array}{c}1\\2\\3\end{array}\right]+
@@ -78,9 +78,9 @@
             <statement>
                 <p>
             More generally, let <m>S</m> denote a set of vectors in <m>\IR^n</m> and suppose that
-            <m>\vec v,\vec w\in\vspan(S)</m> and <m>c\in\mathbb R</m>.
+            <m>\vec v,\vec w\in\vspan S</m> and <m>c\in\mathbb R</m>.
             Which of the following vectors
-            <em>must</em> belong to <m>\vspan(S)</m>?
+            <em>must</em> belong to <m>\vspan S</m>?
             <ol marker="A." cols="2">
             <li><m>\vec 0</m></li>
             <li><m>\vec v+\vec w</m></li>
@@ -269,21 +269,21 @@
 
     <observation>
         <p>
-            If <m>S</m> is any set of vectors in <m>\IR^n</m>, then the set <m>\vspan(S)</m> has the following properties:
+            If <m>S</m> is any set of vectors in <m>\IR^n</m>, then the set <m>\vspan S</m> has the following properties:
             <ul>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is non-empty.
+                        the set <m>\vspan S</m> is non-empty.
                     </p>
                 </li>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is <q>closed under addition</q>: for any <m>\vec{u},\vec{v}\in \vspan(S)</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>\vspan(S)</m>.
+                        the set <m>\vspan S</m> is <q>closed under addition</q>: for any <m>\vec{u},\vec{v}\in \vspan S</m>, the sum <m>\vec{u}+\vec{v}</m> is also in <m>\vspan S</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        the set <m>\vspan(S)</m> is <q>closed under scalar multiplication</q>: for any <m>\vec{u}\in\vspan(S)</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>\vspan(S)</m>.    
+                        the set <m>\vspan S</m> is <q>closed under scalar multiplication</q>: for any <m>\vec{u}\in\vspan S</m> and scalar <m>c\in\IR</m>, the product <m>c\vec{u}</m> is also in <m>\vspan S</m>.    
                     </p>
                 </li>
             </ul>
@@ -1033,21 +1033,21 @@ that is, <m>(kx)+(ky)=(kx)(ky)</m>. This is verified by the following calculatio
             <task>
                 <statement>
                     <p>
-                        Given the set of ingredients <me>S=\{\textrm{flour}, \textrm{yeast}, \textrm{salt}, \textrm{water}, \textrm{sugar}, \textrm{milk}\}</me>, how should we think of the subspace <m>\vspan(S)</m>? 
+                        Given the set of ingredients <me>S=\{\textrm{flour}, \textrm{yeast}, \textrm{salt}, \textrm{water}, \textrm{sugar}, \textrm{milk}\}</me>, how should we think of the subspace <m>\vspan S</m>? 
                     </p>
                 </statement>
             </task>
             <task>
                 <statement>
                     <p>
-                        What is one meal that lives in the subspace <m>\vspan(S)</m>?
+                        What is one meal that lives in the subspace <m>\vspan S</m>?
                     </p>
                 </statement>
             </task>
             <task>
                 <statement>
                     <p>
-                        What is one meal that does not live in the subspace <m>\vspan(S)</m>?
+                        What is one meal that does not live in the subspace <m>\vspan S</m>?
                     </p>
                 </statement>
             </task>
