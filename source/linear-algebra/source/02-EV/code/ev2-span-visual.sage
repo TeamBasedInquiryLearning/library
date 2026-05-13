@@ -15,7 +15,7 @@ for _ in range(100):
     # create linear combination
     linear_combo = a*v1 + b*v2 + c*v3
     # add it to the plot
-    p += plot(linear_combo,thickness=5)
+    p += plot(linear_combo,thickness=2)
 
 # show the plot
 p
