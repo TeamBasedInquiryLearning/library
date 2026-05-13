@@ -1,0 +1,41 @@
+<p>
+  Enter several pairs of coefficients, separated by commas:
+  <mathInput name="in" minwidth="500" prefill="(1,1),(-2,1),(-1,-2)" />
+</p>
+<setup><mathList name="l">$in</mathList></setup>
+
+<graph xmin="-10" ymin="-10" xmax="10" ymax="10">
+  <description>Graph</description>
+  <point name="v" styleNumber="1" labelPosition="right" draggable="false">
+     (1,2) <label>
+      <m>\left[\begin{array}{c} $v.x \\ $v.y\end{array}\right]</m>
+    </label>
+  </point>
+  <point name="w" styleNumber="2" labelPosition="left" draggable="false">
+     (-1,1) <label>
+      <m>\left[\begin{array}{c} $w.x \\ $w.y\end{array}\right]</m>
+    </label>
+  </point>
+  <lineSegment draggable="false" styleNumber="1" endpoints="(0,0) $v" />
+  <lineSegment draggable="false" styleNumber="2" endpoints="(0,0) $w" />
+
+  <repeat for="$l" valueName="c">
+     <point styleNumber="3"> <math simplify>$c.x*$v+$c.y*$w</math> </point> 
+      <lineSegment draggable="false" styleNumber="3" endpoints="(0,0) $c.x*$v+$c.y*$w"/>
+
+
+  </repeat>
+</graph>
+
+<p>
+  The vectors
+  <repeat for="$l" valueName="c">
+     <setup><math simplify name="p">$c.x*$v+$c.y*$w</math></setup> 
+      <m>\left[\begin{array}{c} $p.x \\ $p.y \end{array}\right]</m>,
+  </repeat>
+  all belong to
+  <m>
+    {\rm span}\ \left\{\left[\begin{array}{c} $v.x \\ $v.y\end{array}\right], 
+    \left[\begin{array}{c}$w.x \\ $w.y\end{array}\right]\right\}
+  </m>.
+</p>
