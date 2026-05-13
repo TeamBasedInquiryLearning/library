@@ -525,7 +525,7 @@ It is important to remember that
   </p>
   <p>
 For example,
-<me>
+<me>S=
 \setList
 {
 \left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
@@ -533,7 +533,7 @@ For example,
 }
 </me>
 is a set containing exactly two vectors, while
-<me>
+<me>\vspan S = 
 \vspan\setList
 {
 \left[\begin{array}{c} 1 \\ -1 \\ 2 \end{array}\right],
@@ -546,15 +546,34 @@ b\left[\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right]
 a,b\in\IR
 }
 </me>
-is a set containing infinitely-many vectors. </p>
-<p component="html">See the below
-Sage cell for an illustration.
-  </p>
-<sage language="sage" component="html">
-<input>
-<xi:include href="./code/ev1-remark-span.sage" parse="text" />
-</input>
-</sage>
+is a set containing infinitely-many vectors. 
+</p>
+  <figure>
+    <sidebyside widths="45% 45%">
+    <image>
+      <sageplot variant="3d" aspect="1.0">
+<xi:include href="./code/ev1-remark-span1.sage" parse="text" />
+      </sageplot>
+      <description><p>An interactive 3-D plot showing the two vectors in <m>S</m></p></description>
+    </image>
+    <image>
+      <sageplot variant="3d" aspect="1.0">
+<xi:include href="./code/ev1-remark-span2.sage" parse="text" />
+      </sageplot>
+      <description><p>An interactive 3-D plot showing the vectors in <m>\vspan S</m></p></description>
+    </image>
+    </sidebyside>
+    <caption>
+      <p component="html">
+        Two interactive 3-D plots showing the two vectors in <m>S</m> on the
+        left and <m>\vspan S</m> on the right.
+      </p>
+      <p component="print">
+        Two  plots showing the two vectors in <m>S</m> on the
+        left and <m>\vspan S</m> on the right.
+      </p>
+    </caption>
+  </figure>
 </remark>
 
     </subsection>
