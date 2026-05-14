@@ -1,0 +1,10 @@
+<latex print="no" sides="one" font-size="12" draft="no">
+<!-- LaTeX specific options: set @print="yes" to get pdf set up   -->
+<!-- for printing; set @sides="two" if the printing woudl be two- -->
+<!-- sided.  @pageref="yes/no" controls whether page number are   -->
+<!-- included in cross-references                                 -->
+    <page>
+        <geometry>letterpaper,margin=1in</geometry>
+    </page>
+    <asymptote links="no" />
+</latex>

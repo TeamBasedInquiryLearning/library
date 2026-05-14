@@ -33,12 +33,14 @@
     <target
       name="precalculus-web"
       format="html"
+      publication="main.ptx"
       source="precalculus/source/main.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="precalculus-print"
       format="pdf"
+      publication="main.ptx"
       source="precalculus/source/main.ptx"
       output-filename="TBIL-Precalculus.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -63,6 +65,7 @@
       format="pdf"
       source="precalculus/source/main.ptx"
       xsl="slides.xsl"
+      publication="slides.ptx"
       output-filename="TBIL-Precalculus-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
@@ -71,12 +74,14 @@
     <target
       name="calculus-web"
       format="html"
+      publication="main.ptx"
       source="calculus/source/main.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="calculus-print"
       format="pdf"
+      publication="main.ptx"
       source="calculus/source/main.ptx"
       output-filename="TBIL-Calculus.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -101,6 +106,7 @@
       format="pdf"
       source="calculus/source/main.ptx"
       xsl="slides.xsl"
+      publication="slides.ptx"
       output-filename="TBIL-Calculus-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
@@ -109,12 +115,14 @@
     <target
       name="linear-algebra-web"
       format="html"
+      publication="main.ptx"
       source="linear-algebra/source/main.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="linear-algebra-print"
       format="pdf"
+      publication="main.ptx"
       source="linear-algebra/source/main.ptx"
       output-filename="TBIL-Linear-Algebra.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -139,6 +147,7 @@
       format="pdf"
       source="linear-algebra/source/main.ptx"
       xsl="slides.xsl"
+      publication="slides.ptx"
       output-filename="TBIL-Linear-Algebra-Slides.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
