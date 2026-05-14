@@ -33,14 +33,14 @@
     <target
       name="precalculus-web"
       format="html"
-      publication="main.ptx"
+      publication="precalculus.ptx"
       source="precalculus/source/main.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="precalculus-print"
       format="pdf"
-      publication="main.ptx"
+      publication="precalculus.ptx"
       source="precalculus/source/main.ptx"
       output-filename="TBIL-Precalculus.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -49,14 +49,14 @@
       name="precalculus-web-instructor"
       format="html"
       source="precalculus/source/main.ptx"
-      publication="instructor.ptx" >
+      publication="precalculus-instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="precalculus-print-instructor"
       format="pdf"
       source="precalculus/source/main.ptx"
-      publication="instructor.ptx"
+      publication="precalculus-instructor.ptx"
       output-filename="TBIL-Precalculus-Instructor.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
@@ -74,14 +74,14 @@
     <target
       name="calculus-web"
       format="html"
-      publication="main.ptx"
+      publication="calculus.ptx"
       source="calculus/source/main.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="calculus-print"
       format="pdf"
-      publication="main.ptx"
+      publication="calculus.ptx"
       source="calculus/source/main.ptx"
       output-filename="TBIL-Calculus.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -90,14 +90,14 @@
       name="calculus-web-instructor"
       format="html"
       source="calculus/source/main.ptx"
-      publication="instructor.ptx" >
+      publication="calculus-instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="calculus-print-instructor"
       format="pdf"
       source="calculus/source/main.ptx"
-      publication="instructor.ptx"
+      publication="calculus-instructor.ptx"
       output-filename="TBIL-Calculus-Instructor.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
@@ -115,14 +115,14 @@
     <target
       name="linear-algebra-web"
       format="html"
-      publication="main.ptx"
+      publication="linear-algebra.ptx"
       source="linear-algebra/source/main.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="linear-algebra-print"
       format="pdf"
-      publication="main.ptx"
+      publication="linear-algebra.ptx"
       source="linear-algebra/source/main.ptx"
       output-filename="TBIL-Linear-Algebra.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
@@ -131,14 +131,14 @@
       name="linear-algebra-web-instructor"
       format="html"
       source="linear-algebra/source/main.ptx"
-      publication="instructor.ptx" >
+      publication="linear-algebra-instructor.ptx" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <target
       name="linear-algebra-print-instructor"
       format="pdf"
       source="linear-algebra/source/main.ptx"
-      publication="instructor.ptx"
+      publication="linear-algebra-instructor.ptx"
       output-filename="TBIL-Linear-Algebra-Instructor.pdf" >
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>

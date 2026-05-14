@@ -1,0 +1,34 @@
+<html>
+    <platform host="web"/>
+    <!-- The host above could also be "runestone" -->
+
+    <!-- Whether to knowl a particular elements is set here    -->
+    <!-- Lots of elements have this possibility; see the guide -->
+    <knowl
+        theorem="no"
+        proof="yes"
+        definition="no"
+        example="no"
+        example-solution="yes"
+        project="no"
+        task="no"
+        remark="no"
+        objectives="no"
+        outcomes="no"
+        figure="no"
+        table="no"
+        listing="no"
+        list="no"
+        exercise-inline="yes"
+        exercise-divisional="no"
+        exercise-worksheet="no"
+        exercise-readingquestion="no"
+    />
+    
+    <css theme="denver" palette="leaves"/>
+    <!-- Search can be default or none, or you can use a Google-cx number to use google's search
+    feature (but then variant should be set to none to avoid conflict) -->
+    <search variant="default" />
+    <!-- Set the base URL of where the online version is hosted to have links in other formats -->
+    <baseurl href="https://library.tbil.org/2026/precalculus/"/>
+</html>

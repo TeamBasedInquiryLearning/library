@@ -1,0 +1,17 @@
+<common>
+    <!-- Level at which are html files generated (chapter/section/etc): -->
+    <chunking level="2" />
+    <!-- Depth for table of contents.  0 means no TOC -->
+    <tableofcontents level="2" />
+    <!-- Visibility of exercise components where they first appear.          -->
+    <!-- There are four components (statement/hint/answer/solution) for each -->
+    <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
+    <!-- project). Some examples:                                            -->
+    <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-divisional statement="yes" hint="yes" />
+    <exercise-project statement="yes" hint="yes" answer="no" solution="no" />
+    <!-- Style of fill-in-the-blanks: -->
+    <fillin textstyle="underline" mathstyle="shade" />
+    <!-- You can set a watermark: -->
+    <!-- <watermark scale="0.5">DRAFT</watermark> -->
+</common>
