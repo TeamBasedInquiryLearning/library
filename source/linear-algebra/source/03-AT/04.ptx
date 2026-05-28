@@ -1000,7 +1000,7 @@ Which of the following must be true?
         </li>
         <li>
           <p>
-            The system of equations given by <m>[A|\vec{0}]</m> has a unique solution. 
+            The system of equations given by <m>[A\,|\,\vec{0}]</m> has a unique solution. 
           </p>
         </li>
       </ol>
@@ -1046,7 +1046,7 @@ Which of the following must be true?
         </li>
         <li>
           <p>
-            The system of equations given by <m>[A|\vec{b}]</m> is always consistent. 
+            The system of equations given by <m>[A\,|\,\vec{b}]</m> is always consistent. 
           </p>
         </li>
       </ol>
@@ -1108,7 +1108,7 @@ Which of the following must be true?
  <exploration><statement>
      <p>Start with an <m>n</m>-dimensional vector space <m>V</m>. We can define the <term>dual</term> of <m>V</m>, denoted <m>V^*</m>, by 
 <me>V^* = \{h:V \rightarrow \mathbb{R}: h \mbox{ is linear}\}.</me>
-Prove that <m>V</m> is isomorphic to<m>V^*</m>. Here are some things to think about as you work through this.
+Prove that <m>V</m> is isomorphic to <m>V^*</m>. Here are some things to think about as you work through this.
 <ul>
 <li>Start by assuming you have a basis for <m>V</m>. How many basis vectors should you have?</li>
 <li>For each basis vector in <m>V</m>, define a function that returns 1 if it's given that basis vector, and returns 0 if it's given any other basis vector. For example, if <m>\vec{b_i}</m> and <m>\vec{b_j}</m> are each members of the basis for <m>V</m>, and you'll need a function <m>f_i:V \rightarrow \{0,1\}</m>, where <m>f_i(b_i) = 1</m> and <m>f_i(b_j)= 0</m> for all <m> j \neq i</m>.</li>

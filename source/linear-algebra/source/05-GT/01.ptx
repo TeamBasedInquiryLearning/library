@@ -158,7 +158,7 @@ What is the area of the transformed unit square?
   <me>B\vec e_1=\left[\begin{array}{cc} 2 &amp; 3 \\ 0 &amp; 4 \end{array}\right]\left[\begin{array}{c}1\\0\end{array}\right]
   =\left[\begin{array}{c}2\\0\end{array}\right]=2\vec e_1</me>
 
-  <me>
+  <me>\def\arraystretch{1.25}
     B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]
       =
     \left[\begin{array}{cc} 2 &amp; 3 \\ 0 &amp; 4 \end{array}\right]\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]
@@ -175,7 +175,7 @@ What is the area of the transformed unit square?
   \draw[thin,gray,&lt;-&gt;] (-4,0)-- (4,0);
   \draw[thin,gray,&lt;-&gt;] (0,-4)-- (0,4);
   \draw[thick,blue,-&gt;] (0,0) -- node[below] {\(B\left[\begin{array}{c}1\\0\end{array}\right]=2\left[\begin{array}{c}1\\0\end{array}\right]\)}++ (2,0);
-  \draw[thick,blue,-&gt;] (0,0) -- ++(3,2) node[above] {\(B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]=4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]\)};
+  \draw[thick,blue,-&gt;] (0,0) -- ++(3,2) node[above] {\(\def\arraystretch{1.25} B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]=4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]\)};
   \draw[thick,red,-&gt;] (0,0) -- (1,0);
   \draw[thick,red,-&gt;] (0,0) -- (0.75,0.5);
   \draw[red,dashed] (1,0) -- (1.75,0.5) -- (0.75,0.5);
@@ -228,7 +228,7 @@ What is the area of the transformed unit square?
   \draw[thin,gray,&lt;-&gt;] (-4,0)-- (4,0);
   \draw[thin,gray,&lt;-&gt;] (0,-4)-- (0,4);
   \draw[thick,blue,-&gt;] (0,0) -- node[below] {\(B\left[\begin{array}{c}1\\0\end{array}\right]=2\left[\begin{array}{c}1\\0\end{array}\right]\)}++ (2,0);
-  \draw[thick,blue,-&gt;] (0,0) -- ++(3,2) node[above] {\(B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]=4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]\)};
+  \draw[thick,blue,-&gt;] (0,0) -- ++(3,2) node[above] {\(\def\arraystretch{1.25} B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]=4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]\)};
   \draw[thick,red,-&gt;] (0,0) -- (1,0);
   \draw[thick,red,-&gt;] (0,0) -- (0.75,0.5);
   \draw[red,dashed] (1,0) -- (1.75,0.5) -- (0.75,0.5);
@@ -275,7 +275,7 @@ In order to figure out how to compute it, we first figure out the properties it 
   \draw[thin,gray,&lt;-&gt;] (-4,0)-- (4,0);
   \draw[thin,gray,&lt;-&gt;] (0,-4)-- (0,4);
   \draw[thick,blue,-&gt;] (0,0) -- node[below] {\(B\left[\begin{array}{c}1\\0\end{array}\right]=2\left[\begin{array}{c}1\\0\end{array}\right]\)}++ (2,0);
-  \draw[thick,blue,-&gt;] (0,0) -- ++(3,2) node[above] {\(B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]=4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]\)};
+  \draw[thick,blue,-&gt;] (0,0) -- ++(3,2) node[above] {\(\def\arraystretch{1.25} B\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]=4\left[\begin{array}{c}\frac{3}{4}\\\frac{1}{2}\end{array}\right]\)};
   \draw[thick,red,-&gt;] (0,0) -- (1,0);
   \draw[thick,red,-&gt;] (0,0) -- (0.75,0.5);
   \draw[red,dashed] (1,0) -- (1.75,0.5) -- (0.75,0.5);
@@ -301,7 +301,7 @@ If <m>\det([\vec{e}_1\hspace{0.5em} \vec{e}_2])=\det(I)</m> is the
 area of resulting parallelogram, what is the value of <m>\det([\vec{e}_1\hspace{0.5em} \vec{e}_2])=\det(I)</m>?
         </p>
 <figure>
-	<image width="75%" xml:id="GT1-image-identity-determinant">
+	<image width="50%" xml:id="GT1-image-identity-determinant">
 		<latex-image>
 \begin{tikzpicture}
 \fill[red!50!white] (0,0) rectangle (1,1);

@@ -262,31 +262,21 @@ The vector does not belong to the span.
             </p>
         </answer>
     </task>
-    <task component="html">
-        <statement>
-            <p>
-Fix the SageMath code below to visualize
+</activity>
+<observation>
+    <p>We can use technology to visualize 
 <m>\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
 \left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}</m>. 
-            </p>
-            <sage>
-                <input>
+        </p>
+    <image width="70%">
+        <sageplot variant="3d" aspect="1.0">
 <xi:include href="./code/ev2-span-visual.sage" parse="text" />
-                </input>
-            </sage>
-        </statement>
-        <answer>
-            <program language="sage">
-                <code>
-v2 = vector([-2,0,1])
-v3 = vector([-2,-2,2])
-# ...
-linear_combo = a*v1 + b*v2 + c*v3
-                </code>
-            </program>
-        </answer>
-    </task>
-</activity>
+        </sageplot>
+        <description><p>An interactive 3-D plot showing the span</p></description>
+    </image>
+    <p component="html">Rotate the plot to see that the vectors all lie in the same plane.</p>
+    <p component="print">Note that the vectors all lie in the same plane.</p>
+</observation>
 <activity>
     <introduction>
         <p>

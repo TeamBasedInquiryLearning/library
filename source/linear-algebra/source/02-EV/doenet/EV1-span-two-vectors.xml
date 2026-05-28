@@ -1,0 +1,59 @@
+<p>
+  Enter several pairs of coefficients <m>(a,b)</m>, separated by commas:
+  <mathInput name="in" minwidth="500" prefill="(1,1),(-2,1),(-1,-2)" />
+</p>
+
+<setup>
+  <math name="v"> (1,2)</math>
+  <math name="w"> (-1,1)</math>
+  <mathList name="l">$in</mathList>
+  <sampleRandomNumbers numSamples="10" from="-6" to="6" name="a" asList="true"/>
+  <sampleRandomNumbers numSamples="10" from="-6" to="6" name="b" asList="true"/>
+</setup>
+
+<triggerSet>
+  <!--<callAction actionName="deleteChildren" target="$g" number="1000"/>-->
+  <callAction actionName="addChildren" target="$g">
+    <vector draggable="false" styleNumber="1" head="$v" />
+    <label anchor="$v" positionFromAnchor="right">
+      <m>\left[\begin{array}{c} $v.x \\ $v.y\end{array}\right]</m>
+    </label>
+    <vector draggable="false" styleNumber="2" head="$w" />
+    <label anchor="$w" positionFromAnchor="left">
+      <m>\left[\begin{array}{c} $w.x \\ $w.y\end{array}\right]</m>
+    </label>
+    <repeat for="$l" valueName="c">
+      <vector draggable="false" styleNumber="3" head="$c.x*$v+$c.y*$w"/>
+    </repeat>
+  </callAction>
+
+    <label>Plot the above linear combinations</label>
+</triggerSet>
+
+<callAction actionName="deleteChildren" target="$g" number="1000"><label>Reset plot</label></callAction>
+
+<triggerSet>
+  <label>Add 10 random linear combinations</label>
+
+  <callAction target="$a" actionName="resample"/>
+  <callAction target="$b" actionName="resample"/>
+  <callAction actionName="addChildren" target="$g">
+    <repeatForSequence from="0" to="10" step="1" valueName="i">
+       <vector draggable="false" styleNumber="4" head="$a[$i]*$v+$b[$i]*$w"/>
+    </repeatForSequence>
+  </callAction>
+</triggerSet>
+
+<graph name="g" xmin="-10" ymin="-10" xmax="10" ymax="10">
+  <description>Graph of two vectors and linear combinations thereof</description>
+
+    <vector draggable="false" styleNumber="1" head="$v" />
+    <label anchor="$v" positionFromAnchor="right">
+      <m>\left[\begin{array}{c} $v.x \\ $v.y\end{array}\right]</m>
+    </label>
+    <vector draggable="false" styleNumber="2" head="$w" />
+    <label anchor="$w" positionFromAnchor="left">
+      <m>\left[\begin{array}{c} $w.x \\ $w.y\end{array}\right]</m>
+    </label> 
+
+</graph>

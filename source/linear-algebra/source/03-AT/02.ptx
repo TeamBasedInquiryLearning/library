@@ -752,7 +752,7 @@ T\left(\left[\begin{array}{c} -5 \\ 0 \\ -3 \\ -2 \end{array}\right]\right)
 
 <li>A <term>rotation</term> is given by <m>\vec{v} \mapsto \left[\begin{array}{c} \cos(\theta)x - \sin(\theta)y\\ \cos(\theta)y + \sin(\theta)x\end{array}\right].</m></li>
 
-<li>A <term>reflection</term> of <m>\vec{v}</m> over a line <m>l</m> can be found by first finding a vector <m>\vec{l} = \left[\begin{array}{c} l_x\\l_y\end{array}\right]</m> along <m>l</m>, then <m>\vec{v} \mapsto 2\frac{\vec{l}\cdot\vec{v}}{\vec{l}\cdot\vec{l}}\vec{l} - \vec{v}.</m></li>
+<li>A <term>reflection</term> of <m>\vec{v}</m> over a line <m>l</m> can be found by first finding a vector <m>\vec{l} = \left[\begin{array}{c} l_x\\l_y\end{array}\right]</m> along <m>l</m>, then <m>\vec{v} \mapsto 2 \left(\dfrac{\vec{l}\cdot\vec{v}}{\vec{l}\cdot\vec{l}}\right) \vec{l} - \vec{v}.</m></li>
 </ul>
 Represent each of the following transformations with respect to the standard basis in <m>\mathbb{R}^2</m>.
 <ul>

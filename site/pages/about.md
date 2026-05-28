@@ -16,7 +16,7 @@ aligned for use with TBIL.
 
 ### Join the Community
 
-If you're planning to use TBIL in your classroom, you can get a link to join our Slack community by [completing this survey](https://forms.gle/bgf8dEH9mrWg1cvm9). Joining our Slack allows you to chat with other community members and TBIL experts.
+If you're planning to use TBIL in your classroom, you can get a link to join our Zulip community by [completing this survey](https://forms.gle/bgf8dEH9mrWg1cvm9). Joining our Zulip allows you to chat with other community members and TBIL experts.
 
 
 ### Publications
@@ -71,7 +71,7 @@ If you're planning to use TBIL in your classroom, you can get a link to join our
 
 - Raj Chaudhury presented a poster "[Actors, Scripts and Orchestration: a framework for understanding Team-Based Inquiry Learning](https://drive.google.com/file/d/17f2bvjhRxPK6xFbu_BemDwdKe72LKxl4/view?usp=drive_link)" at the 2023 Physics Education Research Conference.
 
-- Francesca Gandini† & Joe Hibdon† presented "Making Student Thinking Visible with Team-Based Inquiry Learning" at the 2024 Joint Mathematics Meeting 
+- Francesca Gandini† & Joe Hibdon† presented "[Making Student Thinking Visible with Team-Based Inquiry Learning](https://docs.google.com/presentation/d/1jEJSPBxKAmE-3l5SpF2AWEdSJpXed5Pp9NFBp43PoUo/edit?usp=sharing)" at the 2024 Joint Mathematics Meeting 
 
 - Drew Lewis presented  "[Team-Based Inquiry Learning in Lower Division Mathematics Courses](https://docs.google.com/presentation/d/11Ssh8PXw233QkBK3M17togEX0y6PE2_yaC9j4Z0OPYM/edit?usp=sharing)" at the 2024 Joint Mathematics Meeting
 
