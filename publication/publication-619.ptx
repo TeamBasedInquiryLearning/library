@@ -67,6 +67,10 @@
       <geometry>papersize={7in,10in},margin=1in</geometry>
     </page>
     <asymptote links="no" />
+    <insertions pagebreaks="LE1-individual-practice LE2-activity-identify-row-ops LE2-activity-complete-RREF"/>
+    <insertions pagebreaks="EV1-activity-sketch3 EV3-activity-arbitrary EV3-p-two-chains EV6-observation-dimension"/>
+    <insertions pagebreaks="AT2-exercises AT3-activity-basis-kernel AT4-activity-not-surjective-dim"/>
+    <insertions pagebreaks="GT1-individual-practice GT4-individual-practice"/>
 
   </latex>
 

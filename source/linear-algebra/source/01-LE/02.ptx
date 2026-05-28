@@ -540,7 +540,7 @@ most complicated to simplest (in your opinion).
 </activity>
 
 
-<activity estimated-time='5'>
+<activity estimated-time='5' xml:id="LE2-activity-identify-row-ops">
     <statement>
     <p>
 Here we've written the sorted linear systems from <xref ref="LE2-activity-sort"/>
@@ -815,7 +815,7 @@ This will keep you from undoing your progress towards an RREF matrix.
     </p>
 </observation>
 
-<activity estimated-time='10'>
+<activity estimated-time='10' xml:id="LE2-activity-complete-RREF">
     <statement>
         <p>
 Complete the following RREF calculation (multiple row operations may be needed

@@ -168,7 +168,7 @@ This corresponds to the <term>page rank system</term>:
 <observation>
     <statement>
         <figure>
-        <image width="50%"  xml:id="pagerank-3p-network2">
+        <image width="40%"  xml:id="pagerank-3p-network2">
             <latex-image>
 \begin{tikzpicture}
 \begin{scope}[every node/.style={circle,thick,draw}]
@@ -260,7 +260,7 @@ That is, find the eigenspace associated with <m>\lambda=1</m> for the matrix
             </p>
             <sidebyside widths="45% 45%">
         <figure>
-        <image width="75%" xml:id="pagerank-3p-network3">
+        <image width="60%" xml:id="pagerank-3p-network3">
             <latex-image>
 \begin{tikzpicture}
 \begin{scope}[every node/.style={circle,thick,draw}]

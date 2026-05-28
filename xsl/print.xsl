@@ -203,6 +203,10 @@
             <xsl:text>\label{#4}</xsl:text>
         </xsl:if>
         <xsl:text>\hypertarget{#4}{}}, after={\notblank{#3}{\par\rule{\workspacestrutwidth}{#3}\par\vfill}{\par}}}&#xa;</xsl:text>
+        <!--Start sections (except for first section of each chapter) on new page-->
+        <!--<xsl:text>\setlength\extrarowheight{5pt} &#xa; \newcommand{\sectionbreak}{\ifnum\value{section}>1\clearpage\thispagestyle{plain}\fi\phantomsection}&#xa;</xsl:text>-->
+        <!--Start sections on new page-->
+        <xsl:text>\setlength\extrarowheight{5pt} &#xa; \newcommand{\sectionbreak}{\clearpage\thispagestyle{plain}}&#xa;</xsl:text>
     </xsl:param>
 
 </xsl:stylesheet>

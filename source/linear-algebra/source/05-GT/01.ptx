@@ -67,7 +67,7 @@ standard matrix <m>A = \left[\begin{array}{cc} 2 &amp; 0 \\ 0 &amp; 3 \end{array
 transforms the unit square.
         </p>
 <figure xml:id="GT1-unit-square-transform">
-	<image width="75%" xml:id="GT1-image-unit-square-transform">
+	<image width="65%" xml:id="GT1-image-unit-square-transform">
 		<latex-image>
 \begin{tikzpicture}
 \fill[red!50!white] (0,0) rectangle (1,1);
@@ -1073,7 +1073,7 @@ Or we may use a formula:
 </observation>
 </subsection>
     
-<subsection>
+<subsection xml:id="GT1-individual-practice">
   <title>Individual Practice</title>
   <activity>
     <introduction>
