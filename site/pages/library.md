@@ -6,32 +6,32 @@ slug: library
 We currently offer classroom-ready materials for **Precalculus**, **Calculus**, and
 **Linear Algebra**. New editions are released annually each summer.
 
-#### Precalculus 2025 Edition
+#### Precalculus 2026 Edition
 
-- [HTML](https://library.tbil.org/2025/precalculus/)
-    - [Instructor Edition](https://library.tbil.org/2025/precalculus/instructor/)
-- [PDF](https://library.tbil.org/2025/precalculus/print/TBIL-Precalculus.pdf)
-    - [Instructor Edition](https://library.tbil.org/2025/precalculus/print/TBIL-Precalculus-Instructor.pdf)
-- [Slides](https://library.tbil.org/2025/precalculus/print/TBIL-Precalculus-Slides.pdf)
-- [Exercises](https://library.tbil.org/2025/precalculus/exercises/)
+- [HTML](https://library.tbil.org/2026/precalculus/)
+    - [Instructor Edition](https://library.tbil.org/2026/precalculus/instructor/)
+- [PDF](https://library.tbil.org/2026/precalculus/print/TBIL-Precalculus.pdf)
+    - [Instructor Edition](https://library.tbil.org/2026/precalculus/print/TBIL-Precalculus-Instructor.pdf)
+- [Slides](https://library.tbil.org/2026/precalculus/print/TBIL-Precalculus-Slides.pdf)
+- [Exercises](https://library.tbil.org/2026/precalculus/exercises/)
 
-#### Calculus 2025 Edition
+#### Calculus 2026 Edition
 
-- [HTML](https://library.tbil.org/2025/calculus/)
-    - [Instructor Edition](https://library.tbil.org/2025/calculus/instructor/)
-- [PDF](https://library.tbil.org/2025/calculus/print/TBIL-Calculus.pdf)
-    - [Instructor Edition](https://library.tbil.org/2025/calculus/print/TBIL-Calculus-Instructor.pdf)
-- [Slides](https://library.tbil.org/2025/calculus/print/TBIL-Calculus-Slides.pdf)
-- [Exercises](https://library.tbil.org/2025/calculus/exercises/)
+- [HTML](https://library.tbil.org/2026/calculus/)
+    - [Instructor Edition](https://library.tbil.org/2026/calculus/instructor/)
+- [PDF](https://library.tbil.org/2026/calculus/print/TBIL-Calculus.pdf)
+    - [Instructor Edition](https://library.tbil.org/2026/calculus/print/TBIL-Calculus-Instructor.pdf)
+- [Slides](https://library.tbil.org/2026/calculus/print/TBIL-Calculus-Slides.pdf)
+- [Exercises](https://library.tbil.org/2026/calculus/exercises/)
 
-#### Linear Algebra 2025 Edition
+#### Linear Algebra 2026 Edition
 
-- [HTML](https://library.tbil.org/2025/linear-algebra/)
-    - [Instructor Edition](https://library.tbil.org/2025/linear-algebra/instructor/)
-- [PDF](https://library.tbil.org/2025/linear-algebra/print/TBIL-Linear-Algebra.pdf)
-    - [Instructor Edition](https://library.tbil.org/2025/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
-- [Slides](https://library.tbil.org/2025/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
-- [Exercises](https://library.tbil.org/2025/linear-algebra/exercises/)
+- [HTML](https://library.tbil.org/2026/linear-algebra/)
+    - [Instructor Edition](https://library.tbil.org/2026/linear-algebra/instructor/)
+- [PDF](https://library.tbil.org/2026/linear-algebra/print/TBIL-Linear-Algebra.pdf)
+    - [Instructor Edition](https://library.tbil.org/2026/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
+- [Slides](https://library.tbil.org/2026/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
+- [Exercises](https://library.tbil.org/2026/linear-algebra/exercises/)
 
 ---
 
@@ -57,11 +57,14 @@ but be warned - these are under active development and can change at any time!
 Older editions of our books are archived at these links:
 
 - Precalculus
+    - [2025 Edition](https://library.tbil.org/2025/precalculus/)
     - [2024 Trial Edition](https://library.tbil.org/2024/precalculus/)
 - Calculus
+    - [2025 Edition](https://library.tbil.org/2025/calculus/)
     - [2024 Edition](https://library.tbil.org/2024/calculus/)
     - [Pre-2024 archive](https://teambasedinquirylearning.github.io/calculus/)
 - Linear Algebra
+    - [2025 Edition](https://library.tbil.org/2025/linear-algebra/)
     - [2024 Edition](https://library.tbil.org/2024/linear-algebra/)
     - [Pre-2024 archive](https://teambasedinquirylearning.github.io/linear-algebra/)
 
