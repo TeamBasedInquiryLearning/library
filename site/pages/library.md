@@ -32,6 +32,7 @@ We currently offer classroom-ready materials for **Precalculus**, **Calculus**, 
     - [Instructor Edition](https://library.tbil.org/2026/linear-algebra/print/TBIL-Linear-Algebra-Instructor.pdf)
 - [Slides](https://library.tbil.org/2026/linear-algebra/print/TBIL-Linear-Algebra-Slides.pdf)
 - [Exercises](https://library.tbil.org/2026/linear-algebra/exercises/)
+- [Purchase a printed activity book](https://www.619wreath.com/store/p56/Lin-alg-TBIL.html)
 
 ---
 
