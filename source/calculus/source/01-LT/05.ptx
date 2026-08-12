@@ -57,6 +57,11 @@
                     </p>
                 </li>
             </ol>
+            <answer>
+                <p>
+                  D. As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller.
+                </p>
+            </answer>
         </activity>
 
         <remark>
@@ -118,6 +123,11 @@
                     </p>
                 </li>
             </ol>
+            <answer>
+                <p>
+                 B.   As <m>x</m> tends to <m>-\infty</m>, the function <m>1/x^3</m> tends to 0.  
+                </p>
+            </answer>
         </activity>
 
         <definition>
@@ -205,6 +215,11 @@
                     </sidebyside>
                 </sbsgroup>
             </introduction>
+            <answer>
+                <p>
+                    C, D and E
+                </p>
+            </answer>
         </activity>
 
         <activity xml:id="infinity-rational1">
@@ -240,6 +255,11 @@
                     </p>
                 </li>
             </ol>
+            <answer>
+                <p>
+                    D. The only possible limits are any constant number or <m>\pm \infty</m>..
+                </p>
+            </answer>
         </activity>
 
         <activity xml:id="infinity-rational2">
@@ -287,6 +307,12 @@
                         </p>
                     </li>
                 </ol>
+            <answer>
+                <p>  A. <m> \frac{1}{2} </m> </p>
+            
+                <p> D. <m> 2 </m> </p>
+                <p> E. <m> -4 </m> </p>
+            </answer>
             </task>
 
 
@@ -337,6 +363,11 @@
                         </p>
                     </li>
                 </ol>
+                <answer>
+                    <p>
+                     C. When the degree of the numerator is less than the degree of the denominator.
+                    </p>
+                </answer>
             </task>
 
 
@@ -371,6 +402,11 @@
                         </p>
                     </li>
                 </ol>
+                <answer>
+                    <p>
+                     B.  When the degree of the numerator is greater than the degree of the denominator.
+                    </p>
+                </answer> 
             </task>
 
 
@@ -380,6 +416,15 @@
                     Test your rules by creating a rational function whose limit as <m>x \to \infty</m> equals 0 and another whose limit as <m>x \to \infty</m> is infinite.
                     Then check them graphically.
                 </p>
+<answer>
+    
+        <p>
+                    <m>\displaystyle  \lim_{x\to \infty} \dfrac{x^2-x+3}{ 2x^3-3x+5} = 0 </m>
+                </p>
+    <p>
+                    <m>\displaystyle  \lim_{x\to \infty} \dfrac{2x^3-3x^2+5}{ 5x^2-x+1}  </m> is infinite.
+                </p>
+</answer>
             </task>
         </activity>
 
@@ -397,6 +442,17 @@
                         \lim_{x\to-\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} \,\text{ and }\, \lim_{x\to+\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
                     </me>
                 </p>
+            <answer>
+                    
+                
+                    
+                        <p>
+                            <me>
+                                \lim_{x\to-\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6 \,\text{ and }\, \lim_{x\to+\infty } -\dfrac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6
+                            </me>
+                        </p>
+                    
+                </answer>
             </task>
 
 
@@ -406,6 +462,13 @@
                         \lim_{x\to-\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} \,\text{ and }\, \lim_{x\to+\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
                     </me>
                 </p>
+                <answer>
+                    <p>
+                       <me>
+                                \lim_{x\to-\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} = 0 \,\text{ and }\, \lim_{x\to+\infty } -\dfrac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}} = 0
+                            </me> 
+                    </p>
+                </answer>
             </task>
 
 
@@ -415,6 +478,13 @@
                         \lim_{x\to-\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} \,\text{ and }\, \lim_{x\to+\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
                     </me>
                 </p>
+                <answer>
+                    <p>
+                        <me>
+                                \lim_{x\to-\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = +\infty \,\text{ and }\, \lim_{x\to+\infty } \dfrac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = -\infty
+                         </me>   
+                    </p>
+                </answer>
             </task>
             <!--
             <answer>
@@ -494,6 +564,11 @@
                     </p>
                 </li>
             </ol>
+            <answer>
+                <p>
+                    E. The limit does not exist.
+                </p>
+            </answer>
         </activity>
 
         <warning>
@@ -516,6 +591,11 @@
                 <p>
                     <m>\displaystyle  \lim_{x\to -\infty} \dfrac{x^3-x+83}{1} </m>
                 </p>
+                <answer>
+                    <p>
+                        <m>-\infty</m>
+                    </p>
+                </answer>
             </task>
 
 
@@ -523,6 +603,11 @@
                 <p>
                     <m>\displaystyle  \lim_{x\to -\infty} \dfrac{1}{x^3-x+83} </m>
                 </p>
+                <answer>
+                    <p>
+                        0
+                    </p>
+                </answer>
             </task>
 
 
@@ -530,6 +615,11 @@
                 <p>
                     <m>\displaystyle  \lim_{x\to +\infty} \dfrac{x+3}{2-x}</m>
                 </p>
+                <answer>
+                    <p>
+                        -1
+                    </p>
+                </answer>
             </task>
 
 
@@ -537,6 +627,11 @@
                 <p>
                     <m>\displaystyle  \lim_{x\to -\infty} \dfrac{\pi-3x}{\pi x-3}</m>
                 </p>
+                <answer>
+                    <p>
+                      <m>\frac{-3}{\pi}</m>  
+                    </p>
+                </answer>
             </task>
 
 
@@ -544,6 +639,11 @@
                 <p>
                     (Challenge) <m>\displaystyle  \lim_{x\to + \infty} \dfrac{3e^x+2}{2e^x+3}</m>
                 </p>
+                <answer>
+                    <p>
+                         <m>\frac{3}{2}</m> 
+                    </p>
+                </answer>
             </task>
 
 
@@ -551,6 +651,11 @@
                 <p>
                     (Challenge) <m>\displaystyle  \lim_{x\to - \infty} \dfrac{3e^x+2}{2e^x+3}</m>
                 </p>
+                <answer>
+                    <p>
+                       <m>\frac{2}{3}</m>   
+                    </p>
+                </answer>
             </task>
         </activity>
 
@@ -579,6 +684,11 @@
                         Then, prove that your guess is right using algebra.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m> f(x)= 2</m>
+                    </p>
+                </answer>
             </task>
 
 
@@ -588,6 +698,11 @@
                         Use limit notation to describe the behavior of <m>f(x)</m> at its horizontal asymptotes.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m> \displaystyle \lim_{x \rightarrow \infty }f(x)= 2</m>
+                    </p>
+                </answer>
             </task>
             <!--
             <task>
@@ -606,6 +721,11 @@
                         Come up with the formula of a rational function that has horizontal asymptote <m>y=3</m>.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m> \displaystyle \lim_{x \rightarrow \infty }\frac{3x^2 -x +1 }{x^2+2 }</m>
+                    </p>
+                </answer>
             </task>
 
 
@@ -615,6 +735,11 @@
                         What do you think is happening around <m>x=3</m>? We will come back to this in the next section!
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                         Around <m>x= 3 </m>, <m>f(x)</m> is either going toward <m>- \infty </m> or <m> \infty </m> 
+                    </p>
+                </answer>
             </task>
         </activity>
         <!-- application activity  -->
@@ -648,6 +773,11 @@
                         In the long run, what temperature do you expect the coffee to tend to? Write your observation with limit notation.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m> \lim_{ t \rightarrow \infty}Q(t) = 72 </m> degrees Fahrenheit, where <m>Q(t)</m> is the temperature of coffee at anytime <m>t</m>.
+                    </p>
+                </answer>
             </task>
 
 
@@ -658,6 +788,11 @@
                         Which one?
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m>c = 72 </m>
+                    </p>
+                </answer>
             </task>
 
 
@@ -669,6 +804,11 @@
                         Use this to find the value of <m>b</m> for the exponential model described in this scenario.
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m>b = 0.9 </m>
+                    </p>
+                </answer>
             </task>
 
 
@@ -679,6 +819,11 @@
                         Use the data about the initial temperature to find the value of the parameter <m>a</m> in the model <m> Q(t) = a \, b^t + c</m>.
                     </p>
                 </statement>
+                 <answer>
+                    <p>
+                        <m> Q(t) = 100 (0.9)^t + 72 </m>.
+                    </p>
+                </answer>
             </task>
 
 
@@ -689,6 +834,11 @@
                         If you go back to drink the cup of coffee 30 minutes after it was left on the counter, what temperature will the coffee have reached?
                     </p>
                 </statement>
+                <answer>
+                    <p>
+                        <m> Q(30) = 76.23 </m>.
+                    </p>
+                </answer>
             </task>
         </activity>
     </subsection>
