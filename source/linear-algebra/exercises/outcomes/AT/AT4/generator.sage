@@ -3,58 +3,75 @@ TBIL.config_matrix_typesetting()
 
 class Generator(BaseGenerator):
     def data(self):
-        surjective = choice([True,False])
-        if surjective:
-            rank = 4
+        flip = choice([True,False])
+        # surjection
+        A=CheckIt.simple_random_matrix_of_rank(4,rows=4,columns=5)
+        if flip:
+            scenario = "columns"
         else:
-            rank = choice([2,3])
-        A=CheckIt.simple_random_matrix_of_rank(rank,rows=4,columns=5)
- 
-        tasks =  [{
-            "injective": False,
-            "surjective": surjective,
-            "vecset": TBIL.VectorSet(A.columns()),
+            scenario = "kerimg"
+        tasks = [{
+            "surj": True,
+            "value": True,
+            scenario: True,
             "matrix": A,
             "rref": A.rref(),
         }]
-
-        injective = choice([True,False])
-        if injective:
-            rank = 3
+        # non surjection
+        A=CheckIt.simple_random_matrix_of_rank(choice([2,3]),rows=4,columns=5)
+        if flip:
+            scenario = "kerimg"
         else:
-            rank = 2
-        A=CheckIt.simple_random_matrix_of_rank(rank,rows=4,columns=3)
- 
-        tasks +=  [{
-            "injective": injective,
-            "surjective": False,
-            "vecset": TBIL.VectorSet(A.columns()),
+            scenario = "columns"
+        tasks += [{
+            "surj": True,
+            "value": False,
+            scenario: True,
             "matrix": A,
             "rref": A.rref(),
         }]
 
-        rank = choice([2,3])
-        A=CheckIt.simple_random_matrix_of_rank(rank,rows=4,columns=4)
- 
-        tasks +=  [{
-            "injective": False,
-            "surjective": False,
-            "vecset": TBIL.VectorSet(A.columns()),
+
+        flip = choice([True,False])
+        # injection
+        A=CheckIt.simple_random_matrix_of_rank(3,rows=4,columns=3)
+        if flip:
+            scenario = "columns"
+        else:
+            scenario = "kerimg"
+        tasks += [{
+            "inj": True,
+            "value": True,
+            scenario: True,
             "matrix": A,
             "rref": A.rref(),
         }]
-
-        rank = 4
-        A=CheckIt.simple_random_matrix_of_rank(rank,rows=4,columns=4)
- 
-        tasks +=  [{
-            "injective": True,
-            "surjective": True,
-            "vecset": TBIL.VectorSet(A.columns()),
+        # non surjection
+        A=CheckIt.simple_random_matrix_of_rank(2,rows=4,columns=3)
+        if flip:
+            scenario = "kerimg"
+        else:
+            scenario = "columns"
+        tasks += [{
+            "inj": True,
+            "value": False,
+            scenario: True,
             "matrix": A,
             "rref": A.rref(),
         }]
 
         shuffle(tasks)
 
-        return {"tasks": tasks}
+        flip = choice([True, False])
+        if flip:
+            rank = 4
+        else:
+            rank = choice([2,3])
+        A=CheckIt.simple_random_matrix_of_rank(rank,rows=4,columns=4)
+
+        return {
+            "tasks": tasks,
+            "last_value": flip,
+            "last_matrix": A,
+            "last_rref": A.rref(),
+        }
