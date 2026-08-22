@@ -576,7 +576,7 @@ class TBIL:
                 string+=latex(self.vectors[-1])
             return string
 
-    #Vector equation class
+    #Linear combination class
     class LinearCombinationFromMatrix(LinearCombination):
         def __init__(self,A,coefficients=None):
             A=A.subdivision(0,0)  # ignores augmented matrices
@@ -602,13 +602,14 @@ class TBIL:
             self.matrix=A
             #Check if column subdivision exists
             if not self.matrix.subdivisions()[1]:
-                self.matrix=self.matrix.augment(zero_vector(ZZ, len(self.matrix.columns())), subdivide=true)
+                self.matrix=self.matrix.augment(zero_vector(ZZ, len(self.matrix.rows())), subdivide=true)
 
             #if vars were not supplied, create them
             if not vars:
                 vars = vector([var("x_"+str(i+1)) for i in range(0,len(self.matrix.subdivision(0,0).columns()))])
             
-            super().__init__(TBIL.LinearCombination(vars,[column_matrix(c) for c in self.matrix.subdivision(0,0).columns()]), column_matrix(A.column(-1)))
+            super().__init__(TBIL.LinearCombination(vars,[column_matrix(c) for c in self.matrix.subdivision(0,0).columns()]), column_matrix(self.matrix.column(-1)))
+
 
     @staticmethod
     def choices_from_list(lst):
