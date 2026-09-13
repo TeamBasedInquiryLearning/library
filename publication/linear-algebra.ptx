@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publication xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- For the complete documentation of publication-file options, see      -->                              -->
+<!-- https://pretextbook.org/doc/guide/html/publisher-file-reference.html -->
+    <xi:include href="./includes/common.ptx"/>
+    <xi:include href="./includes/html-linear-algebra.ptx"/>
+    <xi:include href="./includes/latex.ptx"/>
+    <xi:include href="./includes/numbering.ptx"/>
+    <!-- must be in actual file for CLI compatibility -->
+    <source>                                  -->
+        <directories external="../../../assets" generated="../generated-assets" />
+        <version include="main nonpreview html"/> 
+    </source>
+</publication>
