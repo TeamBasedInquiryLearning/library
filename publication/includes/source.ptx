@@ -1,0 +1,11 @@
+<source>
+    <!-- Set where external assets and generated assets will be   -->
+    <!-- stored or created.  Directories are relative to the main -->
+    <!-- source PreTeXt file                                      -->
+    <directories external="../../../assets" generated="../generated-assets" />
+    <!-- Set which marked elements are included in this version: -->
+    <!-- See
+    https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
+    <!-- <version include="videos labs"/> -->
+    <version include="main nonpreview html"/> 
+</source>
