@@ -31,6 +31,6 @@ class Generator(BaseGenerator):
             "alignCols": A.ncols(),
             "matrix": A, 
             "coeffmatrix": A.submatrix(0,0,rows,columns-1),
-            "vectorequation": TBIL.VectorEquation(A),
+            "vectorequation": TBIL.VectorEquation(A,vars=xs),
             "prompt": prompt
         }
