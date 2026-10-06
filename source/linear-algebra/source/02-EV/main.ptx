@@ -2,7 +2,7 @@
 <chapter xml:id="EV" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Euclidean Vectors (EV)</title>
     <title component="print">Euclidean Vectors</title>
-    <introduction>
+    <introduction xml:id="EV-intro">
         <p>
             In <xref ref="LE"/>, we saw how matrices and vectors were useful tools in solving
             systems of linear equations.  In this chapter, we will explore the structure of
@@ -15,8 +15,8 @@
             <title>Motivating Question</title>
             <xi:include href="./outcomes/question.ptx"/>
         </assemblage>
-    <xi:include href="outcomes/main.ptx"/>
-    <xi:include href="readiness.ptx"/>
+        <xi:include href="outcomes/main.ptx"/>
+        <xi:include href="readiness.ptx"/>
     </introduction>
     <xi:include href="01.ptx"/>
     <xi:include href="02.ptx"/>

@@ -2,7 +2,7 @@
 <chapter xml:id="AT" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Algebraic Properties of Linear Maps (AT)</title>
     <title component="print">Algebraic Properties of Linear Maps</title>
-    <introduction>
+    <introduction xml:id="AT-intro">
         <p>
             In this chapter, we deepen our exploration of vector spaces through
             a widespread technique in mathematics: in order to understand the structure
@@ -15,8 +15,8 @@
             <title>Motivating Question</title>
             <xi:include href="./outcomes/question.ptx"/>
         </assemblage>
-    <xi:include href="outcomes/main.ptx"/>
-    <xi:include href="readiness.ptx"/>
+        <xi:include href="outcomes/main.ptx"/>
+        <xi:include href="readiness.ptx"/>
     </introduction>
     <xi:include href="01.ptx"/>
     <xi:include href="02.ptx"/>
