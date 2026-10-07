@@ -2,7 +2,7 @@
 <chapter xml:id="MX" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Matrices (MX)</title>
     <title component="print">Matrices</title>
-    <introduction>
+    <introduction xml:id="MX-intro">
         <p>
             In <xref ref="AT"/>, we saw that matrices are fundamentally just
             a representation of linear transformations (with respect to a choice of basis).
@@ -13,8 +13,8 @@
             <title>Motivating Question</title>
             <xi:include href="./outcomes/question.ptx"/>
         </assemblage>
-    <xi:include href="outcomes/main.ptx"/>
-    <xi:include href="readiness.ptx"/>
+        <xi:include href="outcomes/main.ptx"/>
+        <xi:include href="readiness.ptx"/>
     </introduction>
     <xi:include href="01.ptx"/>
     <xi:include href="02.ptx"/>
