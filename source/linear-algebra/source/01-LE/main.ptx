@@ -2,7 +2,7 @@
 <chapter xml:id="LE" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Systems of Linear Equations (LE)</title>
     <title component="print">Systems of Linear Equations</title>
-    <introduction>
+    <introduction xml:id="LE-intro">
         <p>One of the fundamental lessons of calculus is that many complicated problems
             can be solved by taking linear approximations to complicated functions.  This
             often produces several linear equations for which we want to know when they are simultaneously
@@ -17,9 +17,9 @@
             <title>Motivating Question</title>
             <xi:include href="./outcomes/question.ptx"/>
         </assemblage>
+        <xi:include href="outcomes/main.ptx"/>
+        <xi:include href="./readiness.ptx"/>
     </introduction>
-    <xi:include href="outcomes/main.ptx"/>
-    <xi:include href="./readiness.ptx"/>
     <xi:include href="01.ptx"/>
     <xi:include href="02.ptx"/>
     <xi:include href="03.ptx"/>
