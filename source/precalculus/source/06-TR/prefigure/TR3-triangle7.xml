@@ -6,7 +6,7 @@
   <definition>bb=b*scale</definition>
   <coordinates bbox="(0,0,bb,aa)">
 
-    <line at="b" endpoints="((0,0),(bb,0))" offset="(0,-20)"  annotate="yes" text="The horizontal leg is labeled 300"><m>300</m></line>
+    <line at="b" endpoints="((0,0),(bb,0))" offset="(0,-20)"  annotate="yes" text="The horizontal leg is labeled ${b}"><m>${b}</m></line>
     <line at="a"  endpoints="((0,0),(0,aa))" annotate="yes" rotate="90" offset="(0,5)" text="The vertical leg is labeled x"><m>x</m></line>
     <line at="h" endpoints="((bb,0),(0,aa))" offset="(0,-10)" rotate="180"/>
     <angle-marker at="angle" points="((bb,0),(0,0),(0,aa))"/>
