@@ -50,14 +50,10 @@ class Generator(BaseGenerator):
             heightperson=round(uniform(4.8,6.5),1)
             personspeed=round(uniform(1,3),1)
 
-            shadowdirection="up"
-            persondirection=choice(["light", "wall"])
-            if persondirection=="wall":
-                shadowdirection="down"
+            path, shadowdirection = choice([("from a light on the ground towards a wall", "down"), 
+                                            ("away from a wall towards a light on the ground", "up") ])
 
             dHdtround=round(lighttowall*personspeed*heightperson/disttolight^2,2)
-    #         numshadow=lighttowall*personspeed
-    #         denomshadow=disttolight^2
 
             name = choice(["Cory","Mr. Feeny","Amy","Eric","Shawn","Morgan","Topanga"])
             if choice([True, False, False]):
@@ -78,11 +74,9 @@ class Generator(BaseGenerator):
                 "disttowall": disttowall,
                 "heightperson": heightperson,
                 "personspeed": personspeed,
-                "persondirection": persondirection,
+                "path": path,
                 "shadowdirection": shadowdirection,
                 "dHdtround": dHdtround,
-    #             "numshadow": numshadow,
-    #             "denomshadow": denomshadow,
                 "name": name,
                 "pronoun1": pronoun1,
                 "pronoun2": pronoun2
