@@ -149,15 +149,16 @@
             <m>\vec v</m> in terms of the basis, that is,
             the unique solution to the vector equation:
             <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n</md>.
+            A common alternate notation is <m>[\vec{v}]_\mathcal{B}=C_{\mathcal{B}}(\vec{v})</m> to denote this vector. 
         </p>
         <p>
-          Since the solution vector
-          <m>C_{\mathcal B}(\vec v)=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m>
+          The solution vector
+          <m>C_{\mathcal B}(\vec v)=[\vec{v}]_{\mathcal{B}}=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m>
           describes the <q><m>\mathcal B</m>-coordinates</q> of <m>\vec v</m>,
-          we will write
+          and satisfies
             <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n=
-              B\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}=
-              \begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}_{\mathcal B}</md>
+              BC_{\mathcal{B}}(\vec{v})=
+              B[\vec{v}]_{\mathcal{B}}</md>
         </p>
     </statement>
 </definition>
@@ -174,7 +175,7 @@
         <m>\mathcal{B}</m>-coordinates, then you might write
         <md>\vec{v}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}</md>
         and I might instead write
-        <md>\vec{v}=x_1\vec{b}_1+\cdots+x_n\vec{b}_n=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}_{\mathcal B}=B\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</md>
+        <md>\vec{v}=x_1\vec{b}_1+\cdots+x_n\vec{b}_n=BC_{\mathcal{B}}(\vec{v})</md>
     </p>
     <p>
         To convert from your standard coordinates to my <m>\mathcal B</m>-coordinates,
@@ -215,9 +216,9 @@
     </task>
     <task>
         <p>
-            Use this matrix to write
-            <md>\begin{bmatrix}-1\\0\\3\end{bmatrix}=\begin{bmatrix}\unknown\\\unknown\\\unknown\end{bmatrix}_{\mathcal B}=\unknown\vec b_1+\unknown\vec b_2+\unknown\vec b_3</md> 
-            as a linear combination of <m>\vec{b}_1,\vec{b}_2,\vec{b}_3</m>.
+            Use this matrix to calculate <m>C_{\mathcal{B}}(\vec{v})</m> where
+            <md>\vec{v}=\begin{bmatrix}-1\\0\\3\end{bmatrix}</md> 
+            and use this to express <m>\vec{v}</m> as a linear combination of <m>\vec{b}_1,\vec{b}_2,\vec{b}_3</m>.
         </p>
     </task>
 </activity>
@@ -239,14 +240,14 @@ Let <m>\mathcal B=\setList{\vec b_1,\cdots,\vec b_n}</m> be a basis, and conside
     <task>
         <statement>
         <p>
-Given <m>\vec v</m> representing <m>\mathcal B</m>-coordinates, which of these
+Given <m>[\vec{v}]_{\mathcal{B}}</m>, the coordinate vector representing a vector <m>\vec{v}</m> in <m>\mathcal B</m>-coordinates, which of these
 expressions would correctly compute the transformation of <m>\vec v</m> by a 
 <em>standard</em> matrix <m>A</m> with output in <em>standard</em> coordinates?
           <ol marker="A.">
-            <li><p><m>AB^{-1}\vec v=AM_{\mathcal B}\vec v</m></p></li>
-            <li><p><m>AB\vec v=AM_{\mathcal B}^{-1}\vec v</m></p></li>
-            <li><p><m>B^{-1}A\vec v=M_{\mathcal B}A\vec v</m></p></li>
-            <li><p><m>BA\vec v=M_{\mathcal B}^{-1}A\vec v</m></p></li>
+            <li><p><m>AB^{-1}[\vec{v}]_{\mathcal{B}}=AM_{\mathcal B}\vec v</m></p></li>
+            <li><p><m>AB[\vec{v}]_{\mathcal{B}}=AM_{\mathcal B}^{-1}\vec v</m></p></li>
+            <li><p><m>B^{-1}A[\vec{v}]_{\mathcal{B}}=M_{\mathcal B}A\vec v</m></p></li>
+            <li><p><m>BA[\vec{v}]_{\mathcal{B}}=M_{\mathcal B}^{-1}A\vec v</m></p></li>
           </ol>
         </p>
         </statement>
@@ -255,8 +256,8 @@ expressions would correctly compute the transformation of <m>\vec v</m> by a
                 B.
             </p>
             <p>
-                Since <m>\vec v</m> represents <m>\mathcal B</m>-coordinates,
-                the vector <m>B\vec v=M_{\mathcal B}^{-1}\vec v</m> represents
+                Since <m>[\vec{v}]_{\mathcal{B}}</m> represents <m>\mathcal B</m>-coordinates,
+                the vector <m>B[\vec{v}]_{\mathcal{B}}=M_{\mathcal B}^{-1}[\vec{v}]_{\mathcal{B}}</m> represents
                 its standard coordinates.
             </p>
         </answer>
