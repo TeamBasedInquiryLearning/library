@@ -2,7 +2,7 @@
 <chapter xml:id="GT" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title component="html">Geometric Properties of Linear Maps (GT)</title>
     <title component="print">Geometric Properties of Linear Maps</title>
-    <introduction>
+    <introduction xml:id="GT-intro">
         <p>
             In this chapter, we continue our study of linear transformations by studying
             them from a geometric perspective.  The tools we explore in this chapter,
@@ -15,9 +15,9 @@
             <title>Motivating Question</title>
             <xi:include href="./outcomes/question.ptx"/>
         </assemblage>
+        <xi:include href="outcomes/main.ptx"/>
+        <xi:include href="readiness.ptx"/>
     </introduction>
-    <xi:include href="outcomes/main.ptx"/>
-    <xi:include href="readiness.ptx"/>
     <xi:include href="01.ptx"/>
     <xi:include href="02.ptx"/>
     <xi:include href="03.ptx"/>

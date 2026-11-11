@@ -196,7 +196,7 @@
     <!-- which have their own tcolorbox definition. -->
     <xsl:param name="latex.preamble.late">
         <xsl:text>% Renew tcolorbox for exercise&#xa;</xsl:text>
-        <xsl:text>\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, before skip={3 ex}, breakable, before upper app={\setparstyle} } }&#xa;</xsl:text>
+        <xsl:text>\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, before skip={3 ex}, breakable, before upper app={\ptxsetparstyle} } }&#xa;</xsl:text>
         <xsl:text>\renewtcolorbox{divisionexercise}[4]</xsl:text>
         <xsl:text>{divisionexercisestyle, before title={}, title={\notblank{#2}{#2}{}}, after title={\notblank{#2}{\space}{}}, phantom={</xsl:text>
         <xsl:if test="$b-pageref">
