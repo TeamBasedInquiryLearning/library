@@ -32,7 +32,7 @@
     <label hide="not $standardBasis"><m>\vec v=\left[\begin{array}{c} $v.x \\ $v.y \end{array}\right]</m></label>
   </point>
   <point coords="$v" styleNumber="1" hide="$standardBasis">
-    <label hide="$standardBasis"><m>\vec v=\left[\begin{array}{c} $x \\ $y \end{array}\right]_{\mathcal B}</m></label>
+    <label hide="$standardBasis"><m>[\vec v]_{\mathcal{B}}=\left[\begin{array}{c} $x \\ $y \end{array}\right]</m></label>
   </point>
   <lineSegment draggable="false" endpoints="(0,0) $v" styleNumber="1"/>
   <point coords="$b1" styleNumber="2">
