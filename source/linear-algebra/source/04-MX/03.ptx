@@ -149,16 +149,16 @@
             <m>\vec v</m> in terms of the basis, that is,
             the unique solution to the vector equation:
             <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n</md>.
-            A common alternate notation is <m>[\vec{v}]_\mathcal{B}=C_{\mathcal{B}}(\vec{v})</m> to denote this vector. 
+            A common alternate notation is <m>\{\vec{v}\}_\mathcal{B}=C_{\mathcal{B}}(\vec{v})</m> to denote this vector. 
         </p>
         <p>
           The solution vector
-          <m>C_{\mathcal B}(\vec v)=[\vec{v}]_{\mathcal{B}}=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m>
+          <m>C_{\mathcal B}(\vec v)=\{\vec{v}\}_{\mathcal{B}}=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}</m>
           describes the <q><m>\mathcal B</m>-coordinates</q> of <m>\vec v</m>,
           and satisfies
             <md>\vec v=x_1\vec{b}_1+\dots+x_n\vec{b}_n=
               BC_{\mathcal{B}}(\vec{v})=
-              B[\vec{v}]_{\mathcal{B}}</md>
+              B\{\vec{v}\}_{\mathcal{B}}</md>
         </p>
     </statement>
 </definition>
@@ -240,14 +240,14 @@ Let <m>\mathcal B=\setList{\vec b_1,\cdots,\vec b_n}</m> be a basis, and conside
     <task>
         <statement>
         <p>
-Given <m>[\vec{v}]_{\mathcal{B}}</m>, the coordinate vector representing a vector <m>\vec{v}</m> in <m>\mathcal B</m>-coordinates, which of these
+Given <m>\{\vec{v}\}_{\mathcal{B}}</m>, the coordinate vector representing a vector <m>\vec{v}</m> in <m>\mathcal B</m>-coordinates, which of these
 expressions would correctly compute the transformation of <m>\vec v</m> by a 
 <em>standard</em> matrix <m>A</m> with output in <em>standard</em> coordinates?
           <ol marker="A.">
-            <li><p><m>AB^{-1}[\vec{v}]_{\mathcal{B}}=AM_{\mathcal B}\vec v</m></p></li>
-            <li><p><m>AB[\vec{v}]_{\mathcal{B}}=AM_{\mathcal B}^{-1}\vec v</m></p></li>
-            <li><p><m>B^{-1}A[\vec{v}]_{\mathcal{B}}=M_{\mathcal B}A\vec v</m></p></li>
-            <li><p><m>BA[\vec{v}]_{\mathcal{B}}=M_{\mathcal B}^{-1}A\vec v</m></p></li>
+            <li><p><m>AB^{-1}\{\vec{v}\}_{\mathcal{B}}=AM_{\mathcal B}\vec v</m></p></li>
+            <li><p><m>AB\{\vec{v}\}_{\mathcal{B}}=AM_{\mathcal B}^{-1}\vec v</m></p></li>
+            <li><p><m>B^{-1}A\{\vec{v}\}_{\mathcal{B}}=M_{\mathcal B}A\vec v</m></p></li>
+            <li><p><m>BA\{\vec{v}\}_{\mathcal{B}}=M_{\mathcal B}^{-1}A\vec v</m></p></li>
           </ol>
         </p>
         </statement>
@@ -256,8 +256,8 @@ expressions would correctly compute the transformation of <m>\vec v</m> by a
                 B.
             </p>
             <p>
-                Since <m>[\vec{v}]_{\mathcal{B}}</m> represents <m>\mathcal B</m>-coordinates,
-                the vector <m>B[\vec{v}]_{\mathcal{B}}=M_{\mathcal B}^{-1}[\vec{v}]_{\mathcal{B}}</m> represents
+                Since <m>\{\vec{v}\}_{\mathcal{B}}</m> represents <m>\mathcal B</m>-coordinates,
+                the vector <m>B\{\vec{v}\}_{\mathcal{B}}=M_{\mathcal B}^{-1}\{\vec{v}\}_{\mathcal{B}}</m> represents
                 its standard coordinates.
             </p>
         </answer>
